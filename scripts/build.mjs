@@ -16,6 +16,8 @@ const inputs = [
   'assets',
   'src',
   'graph',
+  'docs',
+  'curation',
 ];
 
 rmSync(dist, { recursive: true, force: true });

@@ -991,5 +991,213 @@
         "type": "official"
       }
     ]
+  },
+  {
+    "id": "domain.constructive_quantum_field_theory",
+    "kind": "domain",
+    "title": "Constructive quantum field theory",
+    "summary": "Rigorous construction and analysis of interacting quantum field theories through measures, Gaussian estimates, renormalization, cluster expansions, locality and reconstruction criteria, with every uniformity assumption made explicit.",
+    "confidence": "literature",
+    "tags": [
+      "constructive-qft",
+      "cluster-expansion",
+      "renormalization",
+      "rigorous-qft"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib"
+      ],
+      "declarations": [],
+      "targets": [
+        "Isolate finite Gaussian, locality and cluster-expansion interfaces before making any continuum claim."
+      ]
+    },
+    "questions": [
+      "Which finite estimates can be proved uniformly in volume, cutoff and renormalization scale?"
+    ]
+  },
+  {
+    "id": "domain.renormalization_group",
+    "kind": "domain",
+    "title": "Renormalization group",
+    "summary": "Multiscale transformations that replace microscopic degrees of freedom by effective actions while tracking relevant, marginal and irrelevant structures across changing resolutions.",
+    "confidence": "literature",
+    "tags": [
+      "renormalization-group",
+      "multiscale",
+      "effective-action",
+      "scaling"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib"
+      ],
+      "declarations": [],
+      "targets": [
+        "Model a finite renormalization step with explicit scale maps, supports and preserved quantities."
+      ]
+    },
+    "questions": [
+      "Which estimates survive iteration with constants uniform in the number of renormalization steps?"
+    ]
+  },
+  {
+    "id": "bridge.cluster_expansion_with_holes",
+    "kind": "bridge",
+    "title": "Cluster expansion with holes and active skeletons",
+    "summary": "Transforms raw local activities into renormalized polymer activities by connected Mayer covers, ultralocal integration and a second Ursell expansion. The active skeleton controls connectivity and incompatibility, while the full target controls union and locality.",
+    "confidence": "literature",
+    "tags": [
+      "cluster-expansion",
+      "polymers",
+      "modified-metric",
+      "active-skeleton"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib"
+      ],
+      "declarations": [],
+      "targets": [
+        "Prove the two-support target-family identity, metric stitching, connected-cover summation, K-sharp integration and H-sharp decay with explicit losses."
+      ]
+    },
+    "questions": [
+      "Can the final modified-metric loss and all smallness constants be derived from explicit rooted summability hypotheses?"
+    ]
+  },
+  {
+    "id": "bridge.ward_defect_weight_variation",
+    "kind": "bridge",
+    "title": "Ward defect from variation of a Berezin weight",
+    "summary": "Under an exact unweighted Ward identity and a Leibniz rule, the weighted defect satisfies Ber_w(QF) = -Ber((Qw)F). A coefficient norm then bounds the defect by the regulator variation instead of introducing an unexplained error parameter.",
+    "confidence": "formal",
+    "tags": [
+      "ward-identity",
+      "berezin",
+      "exterior-algebra",
+      "regulator"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib"
+      ],
+      "declarations": [],
+      "targets": [
+        "Formalize the weighted Ward identity and the coefficient-l1 product estimate in a finite exterior algebra."
+      ]
+    },
+    "questions": [
+      "Which concrete gauge-compatible regulator makes the weight variation small in the required polymer norm?"
+    ]
+  },
+  {
+    "id": "bridge.gaussian_covariance_collar",
+    "kind": "bridge",
+    "title": "Gaussian covariance decay to collar factorization",
+    "summary": "Combines support locality, exponential covariance decay and Gaussian interpolation or integration by parts to convert geometric separation into a quantitative factorization defect. The defect must become a local activity rather than being mistaken for exact independence.",
+    "confidence": "literature",
+    "tags": [
+      "gaussian",
+      "covariance",
+      "factorization",
+      "collar"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib"
+      ],
+      "declarations": [],
+      "targets": [
+        "Prove a finite exponential-linear factorization defect, then generalize it through covariance interpolation and local derivatives."
+      ]
+    },
+    "questions": [
+      "Can derivative growth and cross-covariance tails be combined without losing the coupling power needed by the raw activity bound?"
+    ]
+  },
+  {
+    "id": "bridge.lattice_physical_scaling",
+    "kind": "bridge",
+    "title": "Lattice units to physical distance and mass",
+    "summary": "Separates graph distance from physical scale through d_phys = a n and m_phys = m_lat / a, giving the exact exponent identity m_lat n = m_phys d_phys. Continuum conclusions additionally require calibrated spacing and convergence of renormalized correlators.",
+    "confidence": "formal",
+    "tags": [
+      "lattice",
+      "physical-units",
+      "mass-gap",
+      "continuum-limit"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib"
+      ],
+      "declarations": [],
+      "targets": [
+        "Prove the exact exponent identity, ceiling discretization bounds and block-scale invariance of physical mass."
+      ]
+    },
+    "questions": [
+      "How should the lattice spacing be tied to the renormalization trajectory rather than chosen as an arbitrary coordinate scale?"
+    ]
+  },
+  {
+    "id": "bridge.block_average_coercivity",
+    "kind": "bridge",
+    "title": "Block-average mass term as a coercivity bridge",
+    "summary": "A block Poincare estimate turns a nonnegative kinetic operator K plus a positive term a Q†Q into a coercive precision with lower bound min(1,a)/C_P. The abstract lemma isolates the model-specific task of proving the gauge block estimate.",
+    "confidence": "formal",
+    "tags": [
+      "coercivity",
+      "block-average",
+      "adjoint",
+      "poincare"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib"
+      ],
+      "declarations": [],
+      "targets": [
+        "Prove the finite-dimensional coercivity lemma and a perturbation-stability corollary for self-adjoint precision operators."
+      ]
+    },
+    "questions": [
+      "Which gauge slice and weighted inner products make the source block Poincare estimate true uniformly in volume?"
+    ]
+  },
+  {
+    "id": "problem.uniform_yang_mills_rg_activity",
+    "kind": "problem",
+    "title": "Uniform one-step Yang-Mills RG activity bound",
+    "summary": "Define the local activity produced by the actual gauge-fixed one-step renormalization integral and prove support, coupling-power and modified-metric decay estimates with constants uniform in volume, cutoff, scale, background and admissible hole geometry.",
+    "confidence": "literature",
+    "status": "unsolved",
+    "tags": [
+      "yang-mills",
+      "renormalization-group",
+      "polymer",
+      "raw-activity"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib"
+      ],
+      "declarations": [],
+      "targets": [
+        "Specify the one-step fluctuation identity, gauge precision, localized covariance and the concrete raw activity before proving its decay profile."
+      ]
+    },
+    "questions": [
+      "Can the source Hessian, covariance localization, cutoff terms and local R-operation be formalized without hiding the desired estimate inside a package field?"
+    ],
+    "references": [
+      {
+        "label": "PhysMath Knowledge Tree — constructive Yang-Mills RG target",
+        "url": "https://github.com/lluiseriksson/physmath-knowledge-tree",
+        "type": "official"
+      }
+    ]
   }
 ]

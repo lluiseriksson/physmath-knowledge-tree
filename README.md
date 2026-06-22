@@ -16,7 +16,7 @@ A computable, evidence-labelled graph for exploring connections between physics,
 
 The research interface reads the canonical JSON graph directly. It includes:
 
-- 36 domain, bridge and problem nodes connected by 61 typed, evidence-labelled edges.
+- 44 domain, bridge and problem nodes connected by 81 typed, evidence-labelled edges.
 - Search across titles, IDs, tags, summaries and live questions.
 - Curated collections, kind/evidence filters, graph and accessible list views.
 - Directed or undirected shortest-path search.
@@ -45,6 +45,12 @@ graph/
 The graph is designed for humans, scripts and research agents. Every node has a stable ID, summary, tags, live questions and one or more bounded Lean targets. Every edge states a mechanism rather than merely asserting that two subjects are “related”.
 
 Generated Markdown projections in `views/` are derived artifacts; JSON remains canonical.
+
+## Source curation
+
+Raw research TXT, Markdown and PNG files are treated as temporary inbox material. The repository stores SHA-256 provenance, atomic decisions and concise mathematical extracts instead of transcript dumps. See [`docs/CURATION_WORKFLOW.md`](./docs/CURATION_WORKFLOW.md) and [`curation/`](./curation/README.md).
+
+A source becomes deletion-safe only after every unique claim is promoted, quarantined or discarded with a reason and all destinations pass validation.
 
 ## Lean package
 
@@ -94,6 +100,8 @@ npm run build
 | Command | Purpose |
 | --- | --- |
 | `npm run validate:graph` | Check graph IDs, endpoint integrity, evidence rules, references, collections and index statistics. |
+| `npm run validate:curation` | Check source hashes, line ranges, review decisions and promoted destinations. |
+| `npm run curation:register -- <file> [id]` | Create a draft TXT/Markdown/PNG provenance record without copying the source. |
 | `npm run validate:learning` | Check bilingual curriculum taxonomies, prerequisites and DAG structure. |
 | `npm run validate:views` | Confirm generated Markdown/Mermaid projections match canonical JSON. |
 | `npm test` | Run graph, search, layout, path, persistence and data tests. |
@@ -113,7 +121,8 @@ npm run build
 ├── scripts/                      # Validators, generator, build and local server
 ├── views/                        # Generated human-readable projections
 ├── prompts/                      # Agent discovery, hypothesis and Lean prompts
-├── docs/                         # Protocol, ontology, architecture and audit notes
+├── docs/                         # Protocol, curated extracts, architecture and audit notes
+├── curation/                     # Source hashes, decisions and deletion-safe provenance
 └── .github/                      # CI, CodeQL, Pages, templates and maintenance
 ```
 

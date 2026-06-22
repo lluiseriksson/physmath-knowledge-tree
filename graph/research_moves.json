@@ -179,5 +179,52 @@
       "The functor may forget exactly the hard information."
     ],
     "lean_test": "Define a small functor and prove preservation of one property."
+  },
+  {
+    "id": "move.cancel_before_majorizing",
+    "title": "Cancel before majorizing",
+    "description": "Preserve signed, graded or symmetry-related contributions long enough to apply an exact or defective Ward identity before taking norms and triangle inequalities.",
+    "good_for": [
+      "bridge.ward_defect_weight_variation",
+      "bridge.cluster_expansion_with_holes",
+      "problem.uniform_yang_mills_rg_activity"
+    ],
+    "output": "a decomposition into an exact sector, a quantified defect and a residual activity profile",
+    "risks": [
+      "An abstract differential may not act on the actual measure or regulator.",
+      "Taking absolute values too early destroys the cancellation being tested."
+    ],
+    "lean_test": "Prove the finite weighted Ward identity and derive a norm bound controlled only by the weight variation."
+  },
+  {
+    "id": "move.separate_support_roles",
+    "title": "Separate support roles",
+    "description": "Use distinct support maps for connectivity or incompatibility and for full target union or locality, then prove the comparison theorem explicitly.",
+    "good_for": [
+      "bridge.cluster_expansion_with_holes",
+      "domain.renormalization_group",
+      "problem.uniform_yang_mills_rg_activity"
+    ],
+    "output": "two support maps, an active-target comparison and a target-fiber identity without lost multiplicity",
+    "risks": [
+      "Collapsing the supports can create false factorization or erase multiple connected covers with the same target."
+    ],
+    "lean_test": "Prove target-map injectivity only inside admissible families and retain a fiber sum for duplicate targets."
+  },
+  {
+    "id": "move.rescale_physical_units",
+    "title": "Rescale physical units",
+    "description": "Separate dimensionless lattice quantities from physical units and track exact invariants before taking continuum or thermodynamic limits.",
+    "good_for": [
+      "bridge.lattice_physical_scaling",
+      "domain.renormalization_group",
+      "problem.yang_mills_mass_gap"
+    ],
+    "output": "an exact unit-conversion identity plus explicit convergence and finite-volume obligations",
+    "risks": [
+      "An arbitrarily chosen lattice spacing can manufacture a meaningless physical scale.",
+      "A decay-rate witness need not equal the optimal spectral mass."
+    ],
+    "lean_test": "Prove the exponent identity, ceiling approximation error and block-scale invariance of the physical mass ratio."
   }
 ]

@@ -1,4 +1,4 @@
-const CACHE = 'physmath-knowledge-tree-v2';
+const CACHE = 'physmath-knowledge-tree-v2-1';
 const SHELL = [
   './',
   './index.html',

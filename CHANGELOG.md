@@ -2,6 +2,26 @@
 
 All notable changes are documented here. The project follows semantic versioning for its application and schema releases.
 
+## [2.1.0] — 2026-06-22
+
+### Added
+
+- Deletion-safe TXT/Markdown/PNG curation workflow with SHA-256 records, line ranges, promotion, quarantine and discard decisions.
+- Registration and validation scripts that never copy raw sources into the repository.
+- Curated mathematical extract and quarantine report for `ideas(12).txt`.
+- Constructive QFT and renormalization-group domains; five reusable bridges; one concrete Yang-Mills RG subproblem.
+- Three research moves: cancel before majorizing, separate support roles and rescale physical units.
+- Constructive Yang-Mills RG curated collection.
+
+### Changed
+
+- Research graph expanded to 44 nodes, 81 edges, 15 moves and 6 collections.
+- Static builds now include documentation and curation provenance.
+
+### Verification
+
+- New curation validator checks hashes, ranges, record uniqueness and destination integrity.
+
 ## [2.0.0] — 2026-06-22
 
 ### Added

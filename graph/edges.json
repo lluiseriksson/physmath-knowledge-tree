@@ -487,5 +487,165 @@
     "relation": "suggests",
     "confidence": "heuristic",
     "mechanism": "Algebraic and geometric invariants can encode selected proof-complexity obstructions."
+  },
+  {
+    "id": "edge.qft.constructive_qft",
+    "source": "domain.quantum_field_theory",
+    "target": "domain.constructive_quantum_field_theory",
+    "relation": "specializes",
+    "confidence": "literature",
+    "mechanism": "Constructive QFT restricts quantum field theory to models built and controlled by explicit analytic and probabilistic estimates."
+  },
+  {
+    "id": "edge.analysis.constructive_qft",
+    "source": "domain.analysis",
+    "target": "domain.constructive_quantum_field_theory",
+    "relation": "uses",
+    "confidence": "literature",
+    "mechanism": "Constructive field theory relies on integration, functional inequalities, operator bounds and convergence estimates."
+  },
+  {
+    "id": "edge.probability.constructive_qft",
+    "source": "domain.probability_stochastics",
+    "target": "domain.constructive_quantum_field_theory",
+    "relation": "uses",
+    "confidence": "literature",
+    "mechanism": "Euclidean field measures, Gaussian integration and stochastic estimates provide the probabilistic substrate for constructive models."
+  },
+  {
+    "id": "edge.qft.renormalization_group",
+    "source": "domain.quantum_field_theory",
+    "target": "domain.renormalization_group",
+    "relation": "uses",
+    "confidence": "literature",
+    "mechanism": "Renormalization organizes how effective field-theory parameters and interactions change across scales."
+  },
+  {
+    "id": "edge.analysis.renormalization_group",
+    "source": "domain.analysis",
+    "target": "domain.renormalization_group",
+    "relation": "uses",
+    "confidence": "literature",
+    "mechanism": "Multiscale estimates and stability bounds are the analytic core of rigorous renormalization iterations."
+  },
+  {
+    "id": "edge.constructive_qft.cluster_holes",
+    "source": "domain.constructive_quantum_field_theory",
+    "target": "bridge.cluster_expansion_with_holes",
+    "relation": "uses",
+    "confidence": "literature",
+    "mechanism": "Cluster expansions with holes provide a locality-preserving compiler from raw activities to connected effective activities."
+  },
+  {
+    "id": "edge.rg.cluster_holes",
+    "source": "domain.renormalization_group",
+    "target": "bridge.cluster_expansion_with_holes",
+    "relation": "uses",
+    "confidence": "literature",
+    "mechanism": "The holes and active skeletons encode scale-dependent excluded regions and the local geometry of an RG step."
+  },
+  {
+    "id": "edge.cluster_holes.ym_rg_activity",
+    "source": "bridge.cluster_expansion_with_holes",
+    "target": "problem.uniform_yang_mills_rg_activity",
+    "relation": "transfers_via",
+    "confidence": "literature",
+    "mechanism": "Once a raw gauge activity is bounded, the connected-cover and Ursell machinery transfers it to a renormalized modified-metric profile."
+  },
+  {
+    "id": "edge.gauge.ym_rg_activity",
+    "source": "domain.gauge_theory",
+    "target": "problem.uniform_yang_mills_rg_activity",
+    "relation": "uses",
+    "confidence": "literature",
+    "mechanism": "The concrete activity must be derived from gauge fields, gauge fixing, background minimization and the Yang-Mills fluctuation operator."
+  },
+  {
+    "id": "edge.rg.ym_rg_activity",
+    "source": "domain.renormalization_group",
+    "target": "problem.uniform_yang_mills_rg_activity",
+    "relation": "uses",
+    "confidence": "literature",
+    "mechanism": "The desired activity is a local output of one renormalization step and must be stable under subsequent scale iteration."
+  },
+  {
+    "id": "edge.ym_rg_activity.yang_mills",
+    "source": "problem.uniform_yang_mills_rg_activity",
+    "target": "problem.yang_mills_mass_gap",
+    "relation": "suggests",
+    "confidence": "heuristic",
+    "mechanism": "A uniform lattice RG activity bound would close a major lattice-stage input, while continuum existence and reconstruction would still remain separate obligations."
+  },
+  {
+    "id": "edge.algebra.ward_defect",
+    "source": "domain.algebra",
+    "target": "bridge.ward_defect_weight_variation",
+    "relation": "formalizes_as",
+    "confidence": "formal",
+    "mechanism": "Exterior-algebra coefficients, graded derivations and a Leibniz identity make the finite weighted Ward defect an exact algebraic statement."
+  },
+  {
+    "id": "edge.ward_defect.ym_rg_activity",
+    "source": "bridge.ward_defect_weight_variation",
+    "target": "problem.uniform_yang_mills_rg_activity",
+    "relation": "suggests",
+    "confidence": "heuristic",
+    "mechanism": "A concrete Ward decomposition could cancel exact sectors before norms and reduce the amplitude that the RG activity estimate must control."
+  },
+  {
+    "id": "edge.probability.gaussian_collar",
+    "source": "domain.probability_stochastics",
+    "target": "bridge.gaussian_covariance_collar",
+    "relation": "uses",
+    "confidence": "literature",
+    "mechanism": "Gaussian expectations and covariance interpolation express factorization defects through cross-covariance contractions."
+  },
+  {
+    "id": "edge.gaussian_collar.ym_rg_activity",
+    "source": "bridge.gaussian_covariance_collar",
+    "target": "problem.uniform_yang_mills_rg_activity",
+    "relation": "suggests",
+    "confidence": "heuristic",
+    "mechanism": "Localized covariance decay can supply the spatial part of a polymer activity estimate once the actual gauge precision and derivative bounds are available."
+  },
+  {
+    "id": "edge.functional.block_coercivity",
+    "source": "domain.functional_analysis",
+    "target": "bridge.block_average_coercivity",
+    "relation": "formalizes_as",
+    "confidence": "formal",
+    "mechanism": "Adjoints, positive operators and Poincare inequalities turn block averaging into a quantitative lower bound for the precision."
+  },
+  {
+    "id": "edge.block_coercivity.ym_rg_activity",
+    "source": "bridge.block_average_coercivity",
+    "target": "problem.uniform_yang_mills_rg_activity",
+    "relation": "suggests",
+    "confidence": "heuristic",
+    "mechanism": "Coercivity is a prerequisite for a bounded covariance, but the source gauge slice and block Poincare estimate must still be proved."
+  },
+  {
+    "id": "edge.rg.lattice_scaling",
+    "source": "domain.renormalization_group",
+    "target": "bridge.lattice_physical_scaling",
+    "relation": "formalizes_as",
+    "confidence": "formal",
+    "mechanism": "A renormalization step changes lattice spacing and dimensionless decay rates while preserving the corresponding physical exponent when scales are transformed consistently."
+  },
+  {
+    "id": "edge.lattice_scaling.yang_mills",
+    "source": "bridge.lattice_physical_scaling",
+    "target": "problem.yang_mills_mass_gap",
+    "relation": "obstructs",
+    "confidence": "formal",
+    "mechanism": "A positive decay rate at fixed lattice spacing is not yet a finite physical mass; calibrated spacing, thermodynamic control and correlator convergence are additionally required."
+  },
+  {
+    "id": "edge.constructive_qft.ym_rg_activity",
+    "source": "domain.constructive_quantum_field_theory",
+    "target": "problem.uniform_yang_mills_rg_activity",
+    "relation": "uses",
+    "confidence": "literature",
+    "mechanism": "The problem asks for a constructive, support-local and quantitatively uniform realization of a gauge-theory RG step."
   }
 ]

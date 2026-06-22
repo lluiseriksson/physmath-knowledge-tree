@@ -3,11 +3,15 @@
 > This is a lossy projection of the graph. Cross-links and evidence labels remain canonical in `graph/edges.json`.
 
 - **Analysis** `domain.analysis`
+  - **Constructive quantum field theory** `domain.constructive_quantum_field_theory`
+    - **Cluster expansion with holes and active skeletons** `bridge.cluster_expansion_with_holes`
+    - **Uniform one-step Yang-Mills RG activity bound** `problem.uniform_yang_mills_rg_activity`
   - **Functional analysis** `domain.functional_analysis`
     - **Spectral theory** `domain.spectral_theory`
   - **Harmonic analysis** `domain.harmonic_analysis`
     - **Navier-Stokes existence and smoothness** `problem.navier_stokes`
     - **Partial differential equations** `domain.pde`
+  - **Renormalization group** `domain.renormalization_group`
 - **Complexity theory** `domain.complexity_theory`
   - **P vs NP** `problem.p_vs_np`
 - **Foundations, logic and type theory** `domain.foundation_logic`
@@ -24,6 +28,7 @@
     - **Yang-Mills existence and mass gap** `problem.yang_mills_mass_gap`
 - **Optimal transport** `domain.optimal_transport`
 - **Probability and stochastic processes** `domain.probability_stochastics`
+  - **Gaussian covariance decay to collar factorization** `bridge.gaussian_covariance_collar`
 - **Symplectic geometry** `domain.symplectic_geometry`
 - **Topology** `domain.topology`
   - **Differential geometry** `domain.differential_geometry`
@@ -33,7 +38,9 @@
 
 ## Cross-linked or cyclic-projection nodes
 
+- **Block-average mass term as a coercivity bridge** `bridge.block_average_coercivity`
 - **Geometric Langlands transfer** `bridge.geometric_langlands_transfer`
+- **Lattice units to physical distance and mass** `bridge.lattice_physical_scaling`
 - **Motives, periods and Hodge structures** `bridge.motives_periods_hodge`
 - **Number theory** `domain.number_theory`
 - **Proof complexity and geometry** `bridge.proof_complexity_geometry`
@@ -41,3 +48,4 @@
 - **Riemann Hypothesis** `problem.riemann_hypothesis`
 - **Scaling and renormalization for critical PDE** `bridge.renormalization_scaling_pde`
 - **Trace formula as spectral arithmetic bridge** `bridge.trace_formula_spectral_arithmetic`
+- **Ward defect from variation of a Berezin weight** `bridge.ward_defect_weight_variation`

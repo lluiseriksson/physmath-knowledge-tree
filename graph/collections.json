@@ -95,5 +95,22 @@
       "problem.p_vs_np",
       "problem.poincare_conjecture"
     ]
+  },
+  {
+    "id": "collection.constructive_yang_mills_rg",
+    "title": "Constructive Yang-Mills RG route",
+    "description": "A curated dependency path from finite analytic tools and polymer geometry to the lattice-stage Yang-Mills activity problem, with continuum caveats kept explicit.",
+    "nodes": [
+      "domain.constructive_quantum_field_theory",
+      "domain.renormalization_group",
+      "domain.gauge_theory",
+      "bridge.block_average_coercivity",
+      "bridge.gaussian_covariance_collar",
+      "bridge.cluster_expansion_with_holes",
+      "bridge.ward_defect_weight_variation",
+      "problem.uniform_yang_mills_rg_activity",
+      "bridge.lattice_physical_scaling",
+      "problem.yang_mills_mass_gap"
+    ]
   }
 ]

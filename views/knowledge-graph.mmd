@@ -35,6 +35,14 @@ flowchart LR
   problem_birch_swinnerton_dyer["Birch and Swinnerton-Dyer Conjecture"]
   problem_p_vs_np["P vs NP"]
   problem_poincare_conjecture["Poincare Conjecture"]
+  domain_constructive_quantum_field_theory["Constructive quantum field theory"]
+  domain_renormalization_group["Renormalization group"]
+  bridge_cluster_expansion_with_holes["Cluster expansion with holes and active skeletons"]
+  bridge_ward_defect_weight_variation["Ward defect from variation of a Berezin weight"]
+  bridge_gaussian_covariance_collar["Gaussian covariance decay to collar factorization"]
+  bridge_lattice_physical_scaling["Lattice units to physical distance and mass"]
+  bridge_block_average_coercivity["Block-average mass term as a coercivity bridge"]
+  problem_uniform_yang_mills_rg_activity["Uniform one-step Yang-Mills RG activity bound"]
   domain_foundation_logic -->|uses| domain_category_theory
   domain_category_theory -->|generalizes| domain_algebra
   domain_category_theory -->|uses| domain_algebraic_geometry
@@ -96,3 +104,23 @@ flowchart LR
   domain_spectral_theory -->|transfers_via| bridge_random_matrix_zeta_spectra
   domain_complexity_theory -->|transfers_via| bridge_proof_complexity_geometry
   domain_algebraic_geometry -->|suggests| bridge_proof_complexity_geometry
+  domain_quantum_field_theory -->|specializes| domain_constructive_quantum_field_theory
+  domain_analysis -->|uses| domain_constructive_quantum_field_theory
+  domain_probability_stochastics -->|uses| domain_constructive_quantum_field_theory
+  domain_quantum_field_theory -->|uses| domain_renormalization_group
+  domain_analysis -->|uses| domain_renormalization_group
+  domain_constructive_quantum_field_theory -->|uses| bridge_cluster_expansion_with_holes
+  domain_renormalization_group -->|uses| bridge_cluster_expansion_with_holes
+  bridge_cluster_expansion_with_holes -->|transfers_via| problem_uniform_yang_mills_rg_activity
+  domain_gauge_theory -->|uses| problem_uniform_yang_mills_rg_activity
+  domain_renormalization_group -->|uses| problem_uniform_yang_mills_rg_activity
+  problem_uniform_yang_mills_rg_activity -->|suggests| problem_yang_mills_mass_gap
+  domain_algebra -->|formalizes_as| bridge_ward_defect_weight_variation
+  bridge_ward_defect_weight_variation -->|suggests| problem_uniform_yang_mills_rg_activity
+  domain_probability_stochastics -->|uses| bridge_gaussian_covariance_collar
+  bridge_gaussian_covariance_collar -->|suggests| problem_uniform_yang_mills_rg_activity
+  domain_functional_analysis -->|formalizes_as| bridge_block_average_coercivity
+  bridge_block_average_coercivity -->|suggests| problem_uniform_yang_mills_rg_activity
+  domain_renormalization_group -->|formalizes_as| bridge_lattice_physical_scaling
+  bridge_lattice_physical_scaling -->|obstructs| problem_yang_mills_mass_gap
+  domain_constructive_quantum_field_theory -->|uses| problem_uniform_yang_mills_rg_activity

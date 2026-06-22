@@ -12,7 +12,7 @@ Grafo computable y etiquetado por evidencia para explorar conexiones entre físi
 
 La interfaz consume directamente el JSON canónico e incorpora:
 
-- 36 nodos de dominio, puente y problema unidos por 61 aristas tipadas.
+- 44 nodos de dominio, puente y problema unidos por 81 aristas tipadas.
 - Búsqueda por títulos, IDs, etiquetas, resúmenes y preguntas abiertas.
 - Colecciones curadas, filtros de tipo/evidencia y vistas de grafo o lista accesible.
 - Camino mínimo dirigido o no dirigido.
@@ -31,6 +31,17 @@ Incluye 90 temas bilingües y 199 prerrequisitos, desde aritmética hasta matem�
 `graph/nodes/core.json`, `graph/edges.json`, `graph/research_moves.json` y `graph/collections.json` son la fuente de verdad. Los esquemas JSON 2020-12 están en `graph/schemas/`; las vistas de `views/` se generan automáticamente.
 
 Cada nodo tiene ID estable, resumen, etiquetas, preguntas vivas y objetivos Lean acotados. Cada arista declara un mecanismo concreto y un nivel de evidencia.
+
+## Curación de fuentes
+
+Los TXT, Markdown y PNG de investigación se tratan como material temporal de entrada. La repo conserva hashes SHA-256, decisiones atómicas y extractos matemáticos concisos, no volcados de conversaciones. Consulta [`docs/CURATION_WORKFLOW.md`](./docs/CURATION_WORKFLOW.md) y [`curation/`](./curation/README.md).
+
+Una fuente solo es segura para borrar cuando toda idea única está promovida, en cuarentena o descartada con un motivo y todos los destinos pasan validación.
+
+```bash
+npm run curation:register -- /ruta/al/archivo.png identificador
+npm run validate:curation
+```
 
 ## Lean
 
