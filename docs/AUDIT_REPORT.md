@@ -1,59 +1,78 @@
-# Delivery and Audit Report
+# Delivery and audit report
 
-## Baseline
+Audit date: **2026-06-22**
 
-At the start of this work, the GitHub repository contained no branch, commits, or files. There was therefore no existing implementation to patch, migrate, or preserve. This release establishes the complete initial product and engineering baseline.
+## Baseline reviewed
 
-## Delivered scope
+The repository baseline contained a valuable seed: canonical research JSON, documentation, scripts and a minimal Lean/mathlib package. It did not include a deployable web frontend tied to that canonical graph or a GitHub Pages deployment workflow in the inspected source tree. A separate earlier learning-map package existed, but it duplicated a different 90-topic graph and did not preserve the repository's research/Lean layers.
 
-### Learning product
+The public application URL could not be independently fetched from the restricted audit environment. Deployment readiness was therefore assessed from source, workflow configuration, static build output and local browser execution rather than from a live production response.
 
-- 90 bilingual topics and 199 directed prerequisite relationships.
-- Three domains, 22 subject areas, and three difficulty levels.
-- Deterministic interactive SVG graph and equivalent card-based list view.
-- Search across titles, translations, summaries, concepts, and keywords.
-- Domain, level, readiness/status, and favorites filters.
-- Topic details, direct prerequisite and unlock navigation, target paths, and neighborhood focus.
-- Progress statuses, readiness logic, recommendations, favorites, shareable state, and local import/export.
-- Responsive interface, theme support, keyboard shortcuts, reduced motion, and offline installation.
+## Principal risks found
 
-### Repository engineering
+1. **Two disconnected products:** the research graph and educational map had separate data models and no navigation between them.
+2. **No canonical web projection:** the research JSON was readable by scripts but not interactively explorable.
+3. **Generated-view drift:** Markdown projections had no deterministic staleness gate.
+4. **Limited provenance structure:** many graph records had useful mechanisms but few direct reference objects.
+5. **Deployment gap:** the inspected baseline did not provide a Pages build/deploy path for the canonical project.
+6. **Documentation mismatch:** earlier audit and architecture text described only the learning app and incorrectly characterized the repository as initially empty.
+7. **Formal-status ambiguity:** Lean metadata could be mistaken for formalization of the surrounding research claim without a clear boundary.
 
-- Zero runtime and development package dependencies.
-- Versioned package metadata and lockfile.
-- Pure graph, search, storage, URL, internationalization, and DOM modules.
-- Data-integrity, syntax, local-link, service-worker, formatting, unit-test, and build checks.
-- Reproducible static build and a secure local development server.
-- GitHub Actions for Node.js 22/24 CI, CodeQL, and Pages deployment.
-- Dependabot, CODEOWNERS, issue forms, pull-request template, and release-note grouping.
-- README files in English and Spanish, architecture guide, content guide, roadmap, security policy, contribution guide, code of conduct, changelog, and MIT license.
+## Delivered improvements
 
-## Verification evidence
+### Unified product
 
-The final quality gate reports:
+- Canonical research graph as the home page.
+- Learning map retained at `learning.html` and linked bidirectionally.
+- Shared theme, manifest, service worker, icons, 404 handling and static build.
 
-- 90 valid topic records;
-- 199 valid prerequisite edges;
-- one root and maximum graph depth 15;
-- 20 JavaScript files parsed successfully;
-- 17 unit tests passed, zero failed;
-- no broken local application or service-worker asset links;
-- no formatting invariant violations;
-- successful production build into `dist/`.
+### Research functionality
 
-An isolated Chromium interaction test additionally exercised:
+- Search across IDs, titles, summaries, tags and questions.
+- Kind, confidence and curated-collection filtering.
+- Deterministic SVG graph plus an accessible list alternative.
+- Directed/undirected shortest paths and node-neighborhood focus.
+- Node dossiers with evidence, references, mechanisms and Lean targets.
+- Visible-subgraph JSON export and shareable URL state.
+- Bridge-card generator that labels exploratory output and requires a falsifier.
 
-1. Spanish localization on startup;
-2. rendering all 90 graph nodes;
-3. translated search and result selection;
-4. details drawer navigation;
-5. a 25-topic focused learning path;
-6. local progress persistence;
-7. live switch to English;
-8. list-view parity with the focused graph.
+### Data integrity
 
-The reference image is stored at `docs/screenshot.png`.
+- 36 canonical research nodes, 61 edges, 12 moves and 5 collections.
+- Strict endpoint, identifier, confidence, status, reference and speculative-falsifier validation.
+- JSON Schema contracts for each canonical collection.
+- Deterministic Markdown/Mermaid generation with a CI staleness check.
+- Added provenance/input edges so every canonical node is connected.
 
-## Deliberate boundaries
+### Engineering and governance
 
-The core does not include analytics, accounts, remote APIs, third-party resources, advertising, cloud synchronization, or mandatory assessment. These are design choices rather than missing implementation. Future optional work is tracked in `ROADMAP.md` and should be adopted only with clear learner benefit, privacy protection, accessibility coverage, and maintenance ownership.
+- Node 22/24 quality-gate matrix.
+- Separate Lean build using pinned Lean/mathlib v4.31.0.
+- CodeQL and least-privilege GitHub Pages deployment.
+- Agent protocol, ontology, research playbooks, formalization guide and deployment runbook.
+- Citation metadata, dual-license notice, maintenance automation and contribution templates specialized for research graph, learning content and Lean changes.
+- A structured bridge-proposal issue form requiring IDs, evidence, a translation dictionary, confidence and a falsifier.
+
+## Verification performed
+
+The complete local gate validates:
+
+- research graph counts and cross-file integrity;
+- 90 learning topics and 199 prerequisite relations;
+- one learning root and maximum prerequisite depth 15;
+- JavaScript syntax;
+- local application links, CSP restrictions and service-worker assets;
+- generated-view freshness and formatting;
+- 26 unit tests;
+- independent JSON Schema and GitHub YAML parsing;
+- zero npm audit findings;
+- production build generation and static-server response checks.
+
+Browser smoke tests run both applications from in-memory production-equivalent documents because direct localhost navigation is blocked in this execution environment. The research test verifies startup, all canonical graph nodes, search/details, path discovery, bridge-card safeguards, language switching, list parity and screenshot rendering. The learning test verifies all 90 nodes, Spanish search/details, a persisted progress transition and list parity.
+
+## Deliberate boundaries and remaining checks
+
+- Lean is pinned and configured for CI, but the toolchain is not installed in this container; local `lake build` was therefore not claimed. The dedicated workflow performs that check after push.
+- External reference URLs are validated structurally as HTTPS, not exhaustively crawled during every build.
+- The bridge-card generator is deterministic scaffolding, not an AI solver and not evidence of a new theorem.
+- No backend, analytics, account system, cloud synchronization or third-party runtime resources were added.

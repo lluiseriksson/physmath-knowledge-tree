@@ -1,0 +1,84 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lluiseriksson.github.io/physmath-knowledge-tree/schemas/edge.schema.json",
+  "title": "PhysMath edge list",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "id",
+      "source",
+      "target",
+      "relation",
+      "confidence",
+      "mechanism"
+    ],
+    "properties": {
+      "id": {
+        "type": "string",
+        "pattern": "^edge\\.[a-z0-9_\\.]+$"
+      },
+      "source": {
+        "type": "string",
+        "pattern": "^(domain|problem|bridge)\\.[a-z0-9_\\.]+$"
+      },
+      "target": {
+        "type": "string",
+        "pattern": "^(domain|problem|bridge)\\.[a-z0-9_\\.]+$"
+      },
+      "relation": {
+        "type": "string",
+        "enum": [
+          "depends_on",
+          "generalizes",
+          "specializes",
+          "analogy",
+          "dual",
+          "formalizes_as",
+          "transfers_via",
+          "obstructs",
+          "suggests",
+          "tests",
+          "uses",
+          "bridge"
+        ]
+      },
+      "confidence": {
+        "type": "string",
+        "enum": [
+          "formal",
+          "literature",
+          "heuristic",
+          "speculative"
+        ]
+      },
+      "mechanism": {
+        "type": "string",
+        "minLength": 12,
+        "maxLength": 600
+      },
+      "notes": {
+        "type": "string",
+        "minLength": 12,
+        "maxLength": 600
+      }
+    },
+    "allOf": [
+      {
+        "if": {
+          "properties": {
+            "confidence": {
+              "const": "speculative"
+            }
+          }
+        },
+        "then": {
+          "required": [
+            "notes"
+          ]
+        }
+      }
+    ]
+  }
+}

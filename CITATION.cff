@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+title: PhysMath Knowledge Tree
+message: If you use this repository, please cite it as an evolving knowledge graph and learning tool.
+type: software
+authors:
+  - family-names: Eriksson
+    given-names: Lluis
+repository-code: https://github.com/lluiseriksson/physmath-knowledge-tree
+url: https://lluiseriksson.github.io/physmath-knowledge-tree/
+license: MIT
+version: 2.0.0
+date-released: 2026-06-22
+keywords:
+  - mathematics
+  - mathematical physics
+  - knowledge graph
+  - Lean 4
+  - mathlib
+  - education

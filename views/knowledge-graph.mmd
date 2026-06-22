@@ -1,0 +1,98 @@
+flowchart LR
+  domain_foundation_logic["Foundations, logic and type theory"]
+  domain_category_theory["Category theory"]
+  domain_algebra["Algebra"]
+  domain_topology["Topology"]
+  domain_analysis["Analysis"]
+  domain_functional_analysis["Functional analysis"]
+  domain_harmonic_analysis["Harmonic analysis"]
+  domain_spectral_theory["Spectral theory"]
+  domain_probability_stochastics["Probability and stochastic processes"]
+  domain_pde["Partial differential equations"]
+  domain_differential_geometry["Differential geometry"]
+  domain_symplectic_geometry["Symplectic geometry"]
+  domain_algebraic_geometry["Algebraic geometry"]
+  domain_arithmetic_geometry["Arithmetic geometry"]
+  domain_number_theory["Number theory"]
+  domain_automorphic_forms["Automorphic forms"]
+  domain_representation_theory["Representation theory"]
+  domain_quantum_field_theory["Quantum field theory"]
+  domain_gauge_theory["Gauge theory"]
+  domain_general_relativity["General relativity"]
+  domain_complexity_theory["Complexity theory"]
+  domain_noncommutative_geometry["Noncommutative geometry"]
+  domain_optimal_transport["Optimal transport"]
+  bridge_trace_formula_spectral_arithmetic["Trace formula as spectral arithmetic bridge"]
+  bridge_renormalization_scaling_pde["Scaling and renormalization for critical PDE"]
+  bridge_motives_periods_hodge["Motives, periods and Hodge structures"]
+  bridge_geometric_langlands_transfer["Geometric Langlands transfer"]
+  bridge_random_matrix_zeta_spectra["Random matrices, zeta zeros and spectra"]
+  bridge_proof_complexity_geometry["Proof complexity and geometry"]
+  problem_riemann_hypothesis["Riemann Hypothesis"]
+  problem_yang_mills_mass_gap["Yang-Mills existence and mass gap"]
+  problem_navier_stokes["Navier-Stokes existence and smoothness"]
+  problem_hodge_conjecture["Hodge Conjecture"]
+  problem_birch_swinnerton_dyer["Birch and Swinnerton-Dyer Conjecture"]
+  problem_p_vs_np["P vs NP"]
+  problem_poincare_conjecture["Poincare Conjecture"]
+  domain_foundation_logic -->|uses| domain_category_theory
+  domain_category_theory -->|generalizes| domain_algebra
+  domain_category_theory -->|uses| domain_algebraic_geometry
+  domain_algebra -->|uses| domain_representation_theory
+  domain_topology -->|uses| domain_differential_geometry
+  domain_analysis -->|uses| domain_functional_analysis
+  domain_functional_analysis -->|uses| domain_spectral_theory
+  domain_analysis -->|uses| domain_harmonic_analysis
+  domain_harmonic_analysis -->|uses| domain_pde
+  domain_probability_stochastics -->|bridge| domain_pde
+  domain_optimal_transport -->|bridge| domain_pde
+  domain_differential_geometry -->|uses| domain_gauge_theory
+  domain_symplectic_geometry -->|suggests| domain_quantum_field_theory
+  domain_gauge_theory -->|uses| domain_quantum_field_theory
+  domain_differential_geometry -->|uses| domain_general_relativity
+  domain_algebraic_geometry -->|uses| domain_arithmetic_geometry
+  domain_number_theory -->|bridge| domain_arithmetic_geometry
+  domain_representation_theory -->|uses| domain_automorphic_forms
+  domain_automorphic_forms -->|bridge| domain_number_theory
+  domain_spectral_theory -->|suggests| problem_riemann_hypothesis
+  domain_number_theory -->|uses| problem_riemann_hypothesis
+  domain_automorphic_forms -->|suggests| problem_riemann_hypothesis
+  domain_noncommutative_geometry -->|suggests| problem_riemann_hypothesis
+  bridge_random_matrix_zeta_spectra -->|suggests| problem_riemann_hypothesis
+  bridge_trace_formula_spectral_arithmetic -->|suggests| problem_riemann_hypothesis
+  domain_pde -->|uses| problem_navier_stokes
+  domain_harmonic_analysis -->|uses| problem_navier_stokes
+  bridge_renormalization_scaling_pde -->|suggests| problem_navier_stokes
+  domain_probability_stochastics -->|suggests| problem_navier_stokes
+  domain_gauge_theory -->|uses| problem_yang_mills_mass_gap
+  domain_quantum_field_theory -->|uses| problem_yang_mills_mass_gap
+  domain_representation_theory -->|suggests| problem_yang_mills_mass_gap
+  domain_spectral_theory -->|suggests| problem_yang_mills_mass_gap
+  domain_algebraic_geometry -->|uses| problem_hodge_conjecture
+  domain_topology -->|uses| problem_hodge_conjecture
+  bridge_motives_periods_hodge -->|suggests| problem_hodge_conjecture
+  domain_arithmetic_geometry -->|uses| problem_birch_swinnerton_dyer
+  domain_automorphic_forms -->|suggests| problem_birch_swinnerton_dyer
+  domain_number_theory -->|uses| problem_birch_swinnerton_dyer
+  domain_complexity_theory -->|uses| problem_p_vs_np
+  bridge_proof_complexity_geometry -->|suggests| problem_p_vs_np
+  domain_category_theory -->|suggests| problem_p_vs_np
+  domain_topology -->|uses| problem_poincare_conjecture
+  domain_differential_geometry -->|uses| problem_poincare_conjecture
+  problem_poincare_conjecture -->|tests| problem_navier_stokes
+  bridge_geometric_langlands_transfer -->|bridge| domain_automorphic_forms
+  bridge_geometric_langlands_transfer -->|suggests| problem_hodge_conjecture
+  domain_noncommutative_geometry -->|bridge| domain_quantum_field_theory
+  domain_spectral_theory -->|transfers_via| bridge_trace_formula_spectral_arithmetic
+  domain_automorphic_forms -->|transfers_via| bridge_trace_formula_spectral_arithmetic
+  domain_number_theory -->|transfers_via| bridge_trace_formula_spectral_arithmetic
+  domain_pde -->|transfers_via| bridge_renormalization_scaling_pde
+  domain_quantum_field_theory -->|transfers_via| bridge_renormalization_scaling_pde
+  domain_algebraic_geometry -->|transfers_via| bridge_motives_periods_hodge
+  domain_arithmetic_geometry -->|transfers_via| bridge_motives_periods_hodge
+  domain_representation_theory -->|transfers_via| bridge_geometric_langlands_transfer
+  domain_algebraic_geometry -->|transfers_via| bridge_geometric_langlands_transfer
+  domain_probability_stochastics -->|transfers_via| bridge_random_matrix_zeta_spectra
+  domain_spectral_theory -->|transfers_via| bridge_random_matrix_zeta_spectra
+  domain_complexity_theory -->|transfers_via| bridge_proof_complexity_geometry
+  domain_algebraic_geometry -->|suggests| bridge_proof_complexity_geometry

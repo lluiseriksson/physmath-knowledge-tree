@@ -1,0 +1,99 @@
+[
+  {
+    "id": "collection.millennium",
+    "title": "Millennium problem boards",
+    "description": "The six open Clay problems plus the solved Poincare calibration case.",
+    "nodes": [
+      "problem.riemann_hypothesis",
+      "problem.yang_mills_mass_gap",
+      "problem.navier_stokes",
+      "problem.hodge_conjecture",
+      "problem.birch_swinnerton_dyer",
+      "problem.p_vs_np",
+      "problem.poincare_conjecture"
+    ]
+  },
+  {
+    "id": "collection.spectral_arithmetic",
+    "title": "Spectral–arithmetic route",
+    "description": "A compact route from operators and automorphic forms to zeta problems.",
+    "nodes": [
+      "domain.functional_analysis",
+      "domain.spectral_theory",
+      "domain.number_theory",
+      "domain.automorphic_forms",
+      "bridge.trace_formula_spectral_arithmetic",
+      "bridge.random_matrix_zeta_spectra",
+      "problem.riemann_hypothesis"
+    ]
+  },
+  {
+    "id": "collection.critical_pde",
+    "title": "Critical PDE and scale",
+    "description": "Analysis, harmonic analysis, transport and renormalization routes around nonlinear regularity.",
+    "nodes": [
+      "domain.analysis",
+      "domain.harmonic_analysis",
+      "domain.pde",
+      "domain.probability_stochastics",
+      "domain.optimal_transport",
+      "bridge.renormalization_scaling_pde",
+      "problem.navier_stokes"
+    ]
+  },
+  {
+    "id": "collection.geometry_topology",
+    "title": "Geometry, topology and flow",
+    "description": "A solved calibration route and adjacent geometric physics domains.",
+    "nodes": [
+      "domain.topology",
+      "domain.differential_geometry",
+      "domain.gauge_theory",
+      "domain.general_relativity",
+      "problem.poincare_conjecture"
+    ]
+  },
+  {
+    "id": "collection.formalization_frontier",
+    "title": "Lean formalization frontier",
+    "description": "Nodes with concrete mathlib imports and deliberately small formalization targets.",
+    "nodes": [
+      "domain.foundation_logic",
+      "domain.category_theory",
+      "domain.algebra",
+      "domain.topology",
+      "domain.analysis",
+      "domain.functional_analysis",
+      "domain.harmonic_analysis",
+      "domain.spectral_theory",
+      "domain.probability_stochastics",
+      "domain.pde",
+      "domain.differential_geometry",
+      "domain.symplectic_geometry",
+      "domain.algebraic_geometry",
+      "domain.arithmetic_geometry",
+      "domain.number_theory",
+      "domain.automorphic_forms",
+      "domain.representation_theory",
+      "domain.quantum_field_theory",
+      "domain.gauge_theory",
+      "domain.general_relativity",
+      "domain.complexity_theory",
+      "domain.noncommutative_geometry",
+      "domain.optimal_transport",
+      "bridge.trace_formula_spectral_arithmetic",
+      "bridge.renormalization_scaling_pde",
+      "bridge.motives_periods_hodge",
+      "bridge.geometric_langlands_transfer",
+      "bridge.random_matrix_zeta_spectra",
+      "bridge.proof_complexity_geometry",
+      "problem.riemann_hypothesis",
+      "problem.yang_mills_mass_gap",
+      "problem.navier_stokes",
+      "problem.hodge_conjecture",
+      "problem.birch_swinnerton_dyer",
+      "problem.p_vs_np",
+      "problem.poincare_conjecture"
+    ]
+  }
+]

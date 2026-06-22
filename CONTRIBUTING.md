@@ -1,50 +1,85 @@
 # Contributing
 
-Thank you for improving PhysMath Knowledge Tree. Contributions may change application code, curriculum content, translations, accessibility, tests, or documentation.
+Thank you for improving PhysMath Knowledge Tree. Contributions may change canonical research data, Lean metadata, the web applications, curriculum content, translations, accessibility, tests or documentation.
 
 ## Before opening a change
 
-1. Search existing issues and pull requests for related work.
+1. Search existing issues and pull requests.
 2. Keep each pull request focused on one coherent improvement.
-3. For a large curriculum redesign or architectural change, open a proposal issue first.
-4. Never include secrets, personal progress exports, generated `dist/`, or dependency folders.
+3. For ontology changes, large data migrations or new runtime dependencies, open a proposal issue first.
+4. Do not commit secrets, personal progress exports, `.lake/`, `node_modules/` or generated `dist/` files.
 
 ## Local workflow
 
 ```bash
 npm ci
-npm run dev
+npm run check
+lake build
+```
+
+The web gate runs on supported Node versions in CI. Lean changes must also compile against the pinned toolchain. When Lean is unavailable locally, say so explicitly in the pull request and rely on the dedicated CI job rather than claiming success.
+
+## Canonical research-graph changes
+
+Read `docs/ontology.md` and `docs/agent-protocol.md` first.
+
+Every node must:
+
+- use a stable lowercase dotted ID whose prefix matches its kind;
+- have an operational summary, at least two tags and a live question;
+- declare a confidence level;
+- include bounded Lean metadata, even when the relevant library support is preliminary;
+- use `status` only for problem nodes;
+- attach authoritative HTTPS references when making source-sensitive claims.
+
+Every edge must:
+
+- connect existing nodes;
+- use one defined relation;
+- explain a mechanism rather than merely say “related”;
+- carry its own confidence label;
+- include an explicit falsifier note when speculative.
+
+After editing canonical JSON:
+
+```bash
+npm run generate:views
 npm run check
 ```
 
-All checks must pass on Node.js 22 and 24. Because the project intentionally has no third-party runtime dependencies, adding one requires a written justification covering bundle impact, maintenance, accessibility, and the security trade-off.
+Commit the regenerated `views/` files in the same pull request. Do not edit those projections manually.
 
-## Curriculum changes
+## Learning-map changes
 
 Read `docs/CONTENT_GUIDE.md`. Every topic must:
 
 - have a stable kebab-case ID;
-- include English and Spanish titles, summaries, and at least three concepts;
+- include English and Spanish titles, summaries and concepts;
 - reference only existing prerequisites;
-- preserve an acyclic graph;
-- use an existing taxonomy value unless the taxonomy is deliberately extended;
-- include a plausible positive study-time estimate;
-- remain in topological source order.
+- preserve an acyclic graph and topological source order;
+- use a valid taxonomy value and positive study-time estimate.
 
-Run `npm run validate:data` after every content edit.
+Run `npm run validate:learning` after content edits.
 
-## Code changes
+## Lean changes
 
-- Use browser standards and small pure modules where possible.
-- Construct user-visible dynamic content with DOM APIs rather than unsanitized HTML.
-- Preserve the content security policy and avoid third-party network requests.
-- Keep graph algorithms deterministic and covered by tests.
-- Add or update tests for every bug fix and behavior change.
-- Make the list view and keyboard experience equivalent to graphical interactions.
-- Respect system theme and reduced-motion preferences.
+- Prefer a small complete theorem over a large scaffold.
+- Do not use `sorry`, `admit`, hidden axioms or an open-problem conclusion as an assumption disguised by notation.
+- Minimize imports after the proof works.
+- State what a toy result does not establish about the motivating research problem.
+- Keep warnings at zero.
 
-## Commit and pull-request quality
+## Application changes
 
-Use an imperative summary, for example `Add prerequisite validation for new topics`. The pull request should explain the problem, the chosen solution, test evidence, and accessibility or content implications. Include screenshots for visible changes at desktop and mobile widths.
+- Use browser standards and small deterministic modules where practical.
+- Create dynamic content with safe DOM APIs; do not insert untrusted markup.
+- Preserve CSP, offline behavior and same-origin runtime operation.
+- Add tests for bug fixes and behavior changes.
+- Maintain list-view and keyboard parity with graphical interactions.
+- Respect reduced-motion, contrast and responsive-layout requirements.
 
-By contributing, you agree that your work is distributed under the repository's MIT License.
+The project intentionally has no third-party runtime dependencies. Adding one requires a written security, accessibility, maintenance and bundle-size justification.
+
+## Pull-request evidence
+
+Explain the problem, solution, data/ontology implications, test output and accessibility impact. Include before/after screenshots for visible changes. By contributing, you agree that code is distributed under MIT and original graph/documentation content under CC BY 4.0 as described in `LICENSE.md`.

@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lluiseriksson.github.io/physmath-knowledge-tree/schemas/research_move.schema.json",
+  "title": "PhysMath research move list",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "id",
+      "title",
+      "description",
+      "good_for",
+      "output",
+      "risks",
+      "lean_test"
+    ],
+    "properties": {
+      "id": {
+        "type": "string",
+        "pattern": "^move\\.[a-z0-9_]+$"
+      },
+      "title": {
+        "type": "string",
+        "minLength": 2
+      },
+      "description": {
+        "type": "string",
+        "minLength": 16
+      },
+      "good_for": {
+        "type": "array",
+        "minItems": 1,
+        "uniqueItems": true,
+        "items": {
+          "type": "string"
+        }
+      },
+      "output": {
+        "type": "string",
+        "minLength": 8
+      },
+      "risks": {
+        "type": "array",
+        "minItems": 1,
+        "uniqueItems": true,
+        "items": {
+          "type": "string",
+          "minLength": 8
+        }
+      },
+      "lean_test": {
+        "type": "string",
+        "minLength": 8
+      }
+    }
+  }
+}

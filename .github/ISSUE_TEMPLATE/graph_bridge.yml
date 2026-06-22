@@ -1,0 +1,76 @@
+name: Graph bridge proposal
+description: Propose a testable cross-domain edge or bridge without presenting speculation as theorem.
+title: '[Bridge]: '
+labels: [graph, research, triage]
+body:
+  - type: input
+    id: source
+    attributes:
+      label: Source node ID
+      placeholder: domain.spectral_theory
+    validations:
+      required: true
+  - type: input
+    id: target
+    attributes:
+      label: Target node ID
+      placeholder: problem.riemann_hypothesis
+    validations:
+      required: true
+  - type: dropdown
+    id: confidence
+    attributes:
+      label: Proposed confidence
+      options:
+        - formal
+        - literature
+        - heuristic
+        - speculative
+    validations:
+      required: true
+  - type: textarea
+    id: mechanism
+    attributes:
+      label: Transfer mechanism
+      description: Explain what mathematical structure moves between the nodes; “related” is not sufficient.
+    validations:
+      required: true
+  - type: textarea
+    id: dictionary
+    attributes:
+      label: Translation dictionary
+      description: Name the objects, maps, invariants, or assumptions on both sides and what is preserved or lost.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and sources
+      description: Cite primary or authoritative sources and distinguish established results from analogy.
+    validations:
+      required: true
+  - type: textarea
+    id: falsifier
+    attributes:
+      label: Falsifier or demotion condition
+      description: State what evidence would invalidate the bridge or lower its confidence.
+    validations:
+      required: true
+  - type: textarea
+    id: lean
+    attributes:
+      label: Minimal Lean or computational target
+      description: Give a small reproducible target, likely imports, or explain why no formal target is yet sensible.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I searched the existing graph and issues for a duplicate.
+          required: true
+        - label: I have not claimed that this proposal solves an open problem.
+          required: true
+        - label: I identified assumptions and possible information loss.
+          required: true

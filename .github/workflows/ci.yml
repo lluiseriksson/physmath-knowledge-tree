@@ -14,8 +14,8 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  verify:
-    name: Verify on Node ${{ matrix.node }}
+  web:
+    name: Web · Node ${{ matrix.node }}
     runs-on: ubuntu-latest
     timeout-minutes: 10
     strategy:
@@ -25,7 +25,7 @@ jobs:
 
     steps:
       - name: Check out repository
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Set up Node.js
         uses: actions/setup-node@v6
@@ -36,5 +36,26 @@ jobs:
       - name: Install locked project metadata
         run: npm ci
 
-      - name: Run complete quality gate
+      - name: Run complete web quality gate
         run: npm run check
+
+  lean:
+    name: Lean · mathlib
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Build and check Lean package
+        uses: leanprover/lean-action@v1
+        with:
+          auto-config: false
+          build: true
+          test: false
+          lint: false
+          mk_all-check: true
+          build-args: --wfail
+          use-mathlib-cache: true
+          leanchecker: true

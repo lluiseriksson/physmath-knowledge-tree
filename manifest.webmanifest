@@ -1,17 +1,30 @@
 {
   "name": "PhysMath Knowledge Tree",
   "short_name": "PhysMath Tree",
-  "description": "Interactive bilingual prerequisite map for mathematics and physics.",
+  "description": "Explore a traceable research graph for physics, mathematics and Lean, plus a bilingual learning map.",
   "lang": "en",
   "start_url": "./",
   "scope": "./",
+  "id": "./",
   "display": "standalone",
-  "background_color": "#f5f7fb",
-  "theme_color": "#315dd8",
-  "categories": ["education", "productivity"],
+  "background_color": "#f4f7fb",
+  "theme_color": "#285bd6",
+  "categories": ["education", "productivity", "science"],
+  "shortcuts": [
+    {
+      "name": "Research graph",
+      "short_name": "Research",
+      "url": "./"
+    },
+    {
+      "name": "Learning map",
+      "short_name": "Learn",
+      "url": "./learning.html"
+    }
+  ],
   "icons": [
-    {"src":"./assets/icons/icon-192.png","sizes":"192x192","type":"image/png","purpose":"any"},
-    {"src":"./assets/icons/icon-512.png","sizes":"512x512","type":"image/png","purpose":"any"},
-    {"src":"./assets/icons/maskable-512.png","sizes":"512x512","type":"image/png","purpose":"maskable"}
+    {"src": "./assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "./assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "./assets/icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
   ]
 }

@@ -1,13 +1,27 @@
-name: Curriculum correction
-description: Correct a topic, translation, taxonomy, estimate, or prerequisite edge.
+name: Knowledge or content correction
+description: Correct the research graph, learning map, translation, taxonomy, estimate, or prerequisite edge.
 title: '[Content]: '
 labels: [content, triage]
 body:
-  - type: input
-    id: topic
+  - type: dropdown
+    id: surface
     attributes:
-      label: Topic ID or title
-      placeholder: quantum-field-theory
+      label: Affected layer
+      options:
+        - Research graph (graph/)
+        - Learning map (src/data/)
+        - Lean metadata or formalization
+        - Documentation or prompt
+        - Translation
+        - Multiple layers
+    validations:
+      required: true
+  - type: input
+    id: identifier
+    attributes:
+      label: Stable ID, declaration, or page
+      description: Use a dotted graph ID, learning topic ID, Lean declaration, or repository path when possible.
+      placeholder: problem.riemann_hypothesis
     validations:
       required: true
   - type: dropdown
@@ -15,13 +29,14 @@ body:
     attributes:
       label: Type of correction
       options:
-        - Prerequisite relationship
         - Scientific or mathematical accuracy
+        - Research-graph edge or confidence
+        - Learning prerequisite relationship
+        - Lean import or declaration
         - English wording
         - Spanish wording
-        - Classification or level
-        - Study-time estimate
-        - Missing topic
+        - Classification, level, or estimate
+        - Missing node, topic, or source
         - Other
     validations:
       required: true
@@ -29,21 +44,21 @@ body:
     id: current
     attributes:
       label: Current problem
-      description: State exactly what is inaccurate, unclear, or incomplete.
+      description: State exactly what is inaccurate, unclear, untraceable, or incomplete.
     validations:
       required: true
   - type: textarea
     id: correction
     attributes:
       label: Proposed correction
-      description: Include both language variants when changing learner-visible content.
+      description: Include confidence, mechanism, falsifier, and both language variants when those fields apply.
     validations:
       required: true
   - type: textarea
     id: sources
     attributes:
       label: Supporting sources
-      description: Cite a reputable textbook, syllabus, standard, or peer-reviewed source when relevant.
+      description: Cite primary literature, an authoritative textbook, official Lean/mathlib documentation, or another reviewable source.
     validations:
       required: true
   - type: checkboxes
@@ -51,7 +66,9 @@ body:
     attributes:
       label: Checks
       options:
-        - label: I read the curriculum content guide.
+        - label: I read the relevant content or graph guide.
           required: true
         - label: I searched existing issues for a duplicate.
+          required: true
+        - label: I am not presenting a heuristic or speculative claim as established fact.
           required: true

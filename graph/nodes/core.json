@@ -1,0 +1,995 @@
+[
+  {
+    "id": "domain.foundation_logic",
+    "kind": "domain",
+    "title": "Foundations, logic and type theory",
+    "summary": "Logical foundations, dependent type theory, proof terms and the formal substrate used by Lean.",
+    "confidence": "literature",
+    "tags": [
+      "logic",
+      "type-theory",
+      "lean",
+      "foundations"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib"
+      ],
+      "declarations": [
+        "Prop",
+        "Sort"
+      ],
+      "targets": [
+        "Map graph node semantics to Lean structures and metadata."
+      ]
+    },
+    "questions": [
+      "Which informal mathematical structures need explicit universe or typeclass control?"
+    ]
+  },
+  {
+    "id": "domain.category_theory",
+    "kind": "domain",
+    "title": "Category theory",
+    "summary": "Language of objects, morphisms, functors, natural transformations, adjunctions and universal properties.",
+    "confidence": "literature",
+    "tags": [
+      "category-theory",
+      "functor",
+      "duality",
+      "structure"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib.CategoryTheory.Category.Basic"
+      ],
+      "declarations": [
+        "CategoryTheory.Category",
+        "CategoryTheory.Functor"
+      ],
+      "targets": [
+        "Use functoriality as a formal bridge pattern."
+      ]
+    },
+    "questions": [
+      "Can a proposed analogy be upgraded into a functor, adjunction or equivalence?"
+    ]
+  },
+  {
+    "id": "domain.algebra",
+    "kind": "domain",
+    "title": "Algebra",
+    "summary": "Groups, rings, modules, fields, algebras and their structure-preserving maps.",
+    "confidence": "literature",
+    "tags": [
+      "algebra",
+      "groups",
+      "rings",
+      "modules"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib.Algebra.Group.Basic",
+        "Mathlib.RingTheory.Ideal.Basic"
+      ],
+      "declarations": [
+        "Group",
+        "Ring",
+        "Module"
+      ],
+      "targets": [
+        "Connect algebraic structure nodes to mathlib typeclass hierarchies."
+      ]
+    },
+    "questions": [
+      "Which bridge requires structure, representation or invariant theory?"
+    ]
+  },
+  {
+    "id": "domain.topology",
+    "kind": "domain",
+    "title": "Topology",
+    "summary": "Continuity, compactness, connectedness, homotopy and global qualitative structure.",
+    "confidence": "literature",
+    "tags": [
+      "topology",
+      "homotopy",
+      "compactness"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib.Topology.Basic"
+      ],
+      "declarations": [
+        "TopologicalSpace",
+        "Continuous"
+      ],
+      "targets": [
+        "Track compactness and continuity assumptions in cross-domain arguments."
+      ]
+    },
+    "questions": [
+      "When does a local construction fail to glue globally?"
+    ]
+  },
+  {
+    "id": "domain.analysis",
+    "kind": "domain",
+    "title": "Analysis",
+    "summary": "Limits, differentiability, integration, measure and analytic estimates.",
+    "confidence": "literature",
+    "tags": [
+      "analysis",
+      "measure",
+      "integration",
+      "estimates"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib.Analysis.Calculus.Deriv.Basic",
+        "Mathlib.MeasureTheory.Measure.MeasureSpace"
+      ],
+      "declarations": [
+        "HasDerivAt",
+        "MeasureTheory.Measure"
+      ],
+      "targets": [
+        "Create toy estimates that can be reused by PDE and spectral nodes."
+      ]
+    },
+    "questions": [
+      "Which estimate is the actual bottleneck of a proposed proof route?"
+    ]
+  },
+  {
+    "id": "domain.functional_analysis",
+    "kind": "domain",
+    "title": "Functional analysis",
+    "summary": "Normed spaces, Banach and Hilbert spaces, operators and weak convergence.",
+    "confidence": "literature",
+    "tags": [
+      "functional-analysis",
+      "hilbert",
+      "banach",
+      "operators"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib.Analysis.Normed.Module.Basic",
+        "Mathlib.Analysis.InnerProductSpace.Basic"
+      ],
+      "declarations": [
+        "NormedSpace",
+        "InnerProductSpace"
+      ],
+      "targets": [
+        "Formalize operator-theoretic toy bridges."
+      ]
+    },
+    "questions": [
+      "Can a nonlinear problem be embedded into a linear or spectral setting?"
+    ]
+  },
+  {
+    "id": "domain.harmonic_analysis",
+    "kind": "domain",
+    "title": "Harmonic analysis",
+    "summary": "Fourier analysis, singular integrals, oscillation and scale-sensitive decomposition.",
+    "confidence": "literature",
+    "tags": [
+      "fourier",
+      "harmonic-analysis",
+      "scales"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib.Analysis.Fourier.FourierTransform"
+      ],
+      "declarations": [],
+      "targets": [
+        "Identify available Fourier transform infrastructure for toy estimates."
+      ]
+    },
+    "questions": [
+      "Which hidden frequency interaction blocks a global estimate?"
+    ]
+  },
+  {
+    "id": "domain.spectral_theory",
+    "kind": "domain",
+    "title": "Spectral theory",
+    "summary": "Eigenvalues, spectra of operators, spectral gaps and trace information.",
+    "confidence": "literature",
+    "tags": [
+      "spectra",
+      "operators",
+      "eigenvalues",
+      "trace"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib.Analysis.InnerProductSpace.Spectrum"
+      ],
+      "declarations": [
+        "spectrum"
+      ],
+      "targets": [
+        "State finite-dimensional spectral gap toy problems."
+      ]
+    },
+    "questions": [
+      "Can a zero, obstruction or phase transition be reinterpreted as spectral data?"
+    ]
+  },
+  {
+    "id": "domain.probability_stochastics",
+    "kind": "domain",
+    "title": "Probability and stochastic processes",
+    "summary": "Random variables, stochastic dynamics, concentration and probabilistic method.",
+    "confidence": "literature",
+    "tags": [
+      "probability",
+      "stochastic",
+      "randomness"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib.Probability.ProbabilityMassFunction.Basic"
+      ],
+      "declarations": [
+        "ProbabilityTheory.ProbabilityMassFunction"
+      ],
+      "targets": [
+        "Build finite probabilistic toy models for analytic or complexity barriers."
+      ]
+    },
+    "questions": [
+      "Does randomness reveal the typical obstruction or only average it away?"
+    ]
+  },
+  {
+    "id": "domain.pde",
+    "kind": "domain",
+    "title": "Partial differential equations",
+    "summary": "Equations involving functions and derivatives across space, time and boundary data.",
+    "confidence": "literature",
+    "tags": [
+      "pde",
+      "regularity",
+      "weak-solutions",
+      "energy"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib.Analysis.Calculus.FDeriv.Basic"
+      ],
+      "declarations": [
+        "ContDiff"
+      ],
+      "targets": [
+        "Represent weak and strong toy PDE statements with explicit assumptions."
+      ]
+    },
+    "questions": [
+      "Where does regularity transfer fail: estimates, compactness or uniqueness?"
+    ]
+  },
+  {
+    "id": "domain.differential_geometry",
+    "kind": "domain",
+    "title": "Differential geometry",
+    "summary": "Manifolds, tangent structures, connections, curvature and geometric flows.",
+    "confidence": "literature",
+    "tags": [
+      "manifolds",
+      "curvature",
+      "geometry",
+      "flows"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib.Geometry.Manifold.Basic.SmoothManifoldWithCorners"
+      ],
+      "declarations": [
+        "ChartedSpace"
+      ],
+      "targets": [
+        "Catalog which manifold prerequisites are already formalized."
+      ]
+    },
+    "questions": [
+      "Can an analytic obstruction be rephrased as curvature or geometry?"
+    ]
+  },
+  {
+    "id": "domain.symplectic_geometry",
+    "kind": "domain",
+    "title": "Symplectic geometry",
+    "summary": "Hamiltonian geometry, phase space, symplectic forms and quantization shadows.",
+    "confidence": "literature",
+    "tags": [
+      "symplectic",
+      "hamiltonian",
+      "quantization"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib.Geometry.Manifold.Algebra.SmoothFunctions"
+      ],
+      "declarations": [],
+      "targets": [
+        "Locate and extend formal symplectic primitives."
+      ]
+    },
+    "questions": [
+      "Does a bridge preserve the phase-space structure or only the equations?"
+    ]
+  },
+  {
+    "id": "domain.algebraic_geometry",
+    "kind": "domain",
+    "title": "Algebraic geometry",
+    "summary": "Varieties, schemes, sheaves, cohomology and geometric encoding of algebraic data.",
+    "confidence": "literature",
+    "tags": [
+      "schemes",
+      "sheaves",
+      "cohomology",
+      "geometry"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib.AlgebraicGeometry.Scheme"
+      ],
+      "declarations": [
+        "AlgebraicGeometry.Scheme"
+      ],
+      "targets": [
+        "Connect geometric objects to cohomological bridge nodes."
+      ]
+    },
+    "questions": [
+      "Which algebraic statement becomes simpler after adding geometry?"
+    ]
+  },
+  {
+    "id": "domain.arithmetic_geometry",
+    "kind": "domain",
+    "title": "Arithmetic geometry",
+    "summary": "Number theory through geometric objects over fields, rings and schemes.",
+    "confidence": "literature",
+    "tags": [
+      "arithmetic",
+      "geometry",
+      "elliptic-curves",
+      "galois"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib.AlgebraicGeometry.Scheme",
+        "Mathlib.NumberTheory.NumberField.Basic"
+      ],
+      "declarations": [
+        "NumberField"
+      ],
+      "targets": [
+        "Map elliptic curve and L-function prerequisites."
+      ]
+    },
+    "questions": [
+      "Can analytic rank information be represented as geometric or cohomological data?"
+    ]
+  },
+  {
+    "id": "domain.number_theory",
+    "kind": "domain",
+    "title": "Number theory",
+    "summary": "Integers, primes, zeta functions, arithmetic functions and Diophantine structure.",
+    "confidence": "literature",
+    "tags": [
+      "number-theory",
+      "primes",
+      "zeta",
+      "diophantine"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib.NumberTheory.ArithmeticFunction",
+        "Mathlib.NumberTheory.LSeries.RiemannZeta"
+      ],
+      "declarations": [
+        "riemannZeta"
+      ],
+      "targets": [
+        "Formalize finite Euler product and explicit-formula toy models."
+      ]
+    },
+    "questions": [
+      "Which arithmetic object has a spectral, geometric or probabilistic avatar?"
+    ]
+  },
+  {
+    "id": "domain.automorphic_forms",
+    "kind": "domain",
+    "title": "Automorphic forms",
+    "summary": "Symmetries, representations and analytic functions connecting geometry and arithmetic.",
+    "confidence": "literature",
+    "tags": [
+      "automorphic",
+      "modular-forms",
+      "langlands",
+      "l-functions"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib.NumberTheory.ModularForms.Basic"
+      ],
+      "declarations": [],
+      "targets": [
+        "Find formal islands around modular forms and characters."
+      ]
+    },
+    "questions": [
+      "Can a number-theoretic question be moved into representation theory?"
+    ]
+  },
+  {
+    "id": "domain.representation_theory",
+    "kind": "domain",
+    "title": "Representation theory",
+    "summary": "Study of algebraic structures through their actions on spaces.",
+    "confidence": "literature",
+    "tags": [
+      "representations",
+      "groups",
+      "symmetry"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib.RepresentationTheory.Basic"
+      ],
+      "declarations": [],
+      "targets": [
+        "Use actions as a bridge between algebra, geometry and physics."
+      ]
+    },
+    "questions": [
+      "What symmetry is invisible in the original formulation?"
+    ]
+  },
+  {
+    "id": "domain.quantum_field_theory",
+    "kind": "domain",
+    "title": "Quantum field theory",
+    "summary": "Fields, quantization, path integrals, operator algebras and renormalization heuristics.",
+    "confidence": "heuristic",
+    "tags": [
+      "qft",
+      "fields",
+      "renormalization",
+      "path-integral"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib"
+      ],
+      "declarations": [],
+      "targets": [
+        "Replace informal path-integral claims with finite or algebraic toy models."
+      ]
+    },
+    "questions": [
+      "Which physical heuristic has a finite, constructive or operator-algebraic version?"
+    ]
+  },
+  {
+    "id": "domain.gauge_theory",
+    "kind": "domain",
+    "title": "Gauge theory",
+    "summary": "Connections, curvature, principal bundles, gauge symmetry and Yang-Mills functionals.",
+    "confidence": "literature",
+    "tags": [
+      "gauge",
+      "connections",
+      "curvature",
+      "yang-mills"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib.Geometry.Manifold.VectorBundle.Basic"
+      ],
+      "declarations": [],
+      "targets": [
+        "Create finite gauge-action models before continuous field theories."
+      ]
+    },
+    "questions": [
+      "Can a gauge-invariant observable expose a spectral gap?"
+    ]
+  },
+  {
+    "id": "domain.general_relativity",
+    "kind": "domain",
+    "title": "General relativity",
+    "summary": "Lorentzian geometry, curvature, Einstein equations and geometric analysis.",
+    "confidence": "literature",
+    "tags": [
+      "relativity",
+      "lorentzian",
+      "curvature",
+      "geometry"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib.Geometry.Manifold.Basic.SmoothManifoldWithCorners"
+      ],
+      "declarations": [],
+      "targets": [
+        "Track formal prerequisites for semi-Riemannian toy geometry."
+      ]
+    },
+    "questions": [
+      "Which geometric PDE tools transfer between relativity and other flows?"
+    ]
+  },
+  {
+    "id": "domain.complexity_theory",
+    "kind": "domain",
+    "title": "Complexity theory",
+    "summary": "Resources needed for computation, reductions, circuits, proof systems and barriers.",
+    "confidence": "literature",
+    "tags": [
+      "complexity",
+      "computation",
+      "circuits",
+      "reductions"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib.Computability.Basic"
+      ],
+      "declarations": [],
+      "targets": [
+        "Formalize finite languages, reductions and toy circuit classes."
+      ]
+    },
+    "questions": [
+      "Which lower-bound barrier is structural rather than technical?"
+    ]
+  },
+  {
+    "id": "domain.noncommutative_geometry",
+    "kind": "domain",
+    "title": "Noncommutative geometry",
+    "summary": "Geometric reasoning where coordinate algebras need not commute.",
+    "confidence": "literature",
+    "tags": [
+      "noncommutative",
+      "operator-algebras",
+      "spectral-triples"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib.Analysis.CStarAlgebra.Basic"
+      ],
+      "declarations": [],
+      "targets": [
+        "Find operator algebra primitives for spectral triple toy models."
+      ]
+    },
+    "questions": [
+      "Is a missing geometric space better represented by a noncommutative algebra?"
+    ]
+  },
+  {
+    "id": "domain.optimal_transport",
+    "kind": "domain",
+    "title": "Optimal transport",
+    "summary": "Geometry of probability measures, transport cost, Wasserstein spaces and curvature-like flow ideas.",
+    "confidence": "literature",
+    "tags": [
+      "optimal-transport",
+      "probability",
+      "geometry",
+      "flow"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib.MeasureTheory.Measure.MeasureSpace"
+      ],
+      "declarations": [],
+      "targets": [
+        "Build finite transport problems as formal toy models."
+      ]
+    },
+    "questions": [
+      "Can measure geometry reveal monotonicity or compactness missing in PDE?"
+    ]
+  },
+  {
+    "id": "bridge.trace_formula_spectral_arithmetic",
+    "kind": "bridge",
+    "title": "Trace formula as spectral arithmetic bridge",
+    "summary": "Relates spectral data, orbital/geometric data and arithmetic counting through trace identities.",
+    "confidence": "literature",
+    "tags": [
+      "trace-formula",
+      "spectral",
+      "arithmetic",
+      "automorphic"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib"
+      ],
+      "declarations": [],
+      "targets": [
+        "Formalize finite trace identities before analytic trace formulas."
+      ]
+    },
+    "questions": [
+      "Which toy trace formula preserves enough structure to test RH-style analogies?"
+    ]
+  },
+  {
+    "id": "bridge.renormalization_scaling_pde",
+    "kind": "bridge",
+    "title": "Scaling and renormalization for critical PDE",
+    "summary": "Uses scaling, compactness and energy flow across scales to compare PDE and field-theoretic phenomena.",
+    "confidence": "heuristic",
+    "tags": [
+      "renormalization",
+      "scaling",
+      "pde",
+      "qft"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib.Analysis.Normed.Module.Basic"
+      ],
+      "declarations": [],
+      "targets": [
+        "State a toy scale-invariant norm estimate."
+      ]
+    },
+    "questions": [
+      "Can the critical obstruction be isolated as a monotone quantity or fixed point?"
+    ]
+  },
+  {
+    "id": "bridge.motives_periods_hodge",
+    "kind": "bridge",
+    "title": "Motives, periods and Hodge structures",
+    "summary": "Connects algebraic cycles, cohomology, periods and arithmetic shadows.",
+    "confidence": "literature",
+    "tags": [
+      "motives",
+      "periods",
+      "hodge",
+      "cohomology"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib.AlgebraicGeometry.Scheme"
+      ],
+      "declarations": [],
+      "targets": [
+        "Represent a tiny cycle/cohomology dictionary as data."
+      ]
+    },
+    "questions": [
+      "Which conjectural bridge can be tested on low-dimensional varieties?"
+    ]
+  },
+  {
+    "id": "bridge.geometric_langlands_transfer",
+    "kind": "bridge",
+    "title": "Geometric Langlands transfer",
+    "summary": "Transforms arithmetic and representation-theoretic questions into geometric categorical language.",
+    "confidence": "literature",
+    "tags": [
+      "langlands",
+      "geometry",
+      "representation",
+      "category"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib.CategoryTheory.Category.Basic"
+      ],
+      "declarations": [],
+      "targets": [
+        "Use finite categorical analogues to model transfer."
+      ]
+    },
+    "questions": [
+      "Which part of a problem becomes functorial after geometric translation?"
+    ]
+  },
+  {
+    "id": "bridge.random_matrix_zeta_spectra",
+    "kind": "bridge",
+    "title": "Random matrices, zeta zeros and spectra",
+    "summary": "Compares statistical behavior of zeta zeros with eigenvalue statistics from random matrix ensembles.",
+    "confidence": "heuristic",
+    "tags": [
+      "random-matrix",
+      "zeta",
+      "spectra",
+      "statistics"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib.Probability.ProbabilityMassFunction.Basic",
+        "Mathlib.LinearAlgebra.Matrix.Spectrum"
+      ],
+      "declarations": [],
+      "targets": [
+        "Formalize finite eigenvalue-statistic toy examples."
+      ]
+    },
+    "questions": [
+      "What part of the analogy is structural, and what part is only statistical?"
+    ]
+  },
+  {
+    "id": "bridge.proof_complexity_geometry",
+    "kind": "bridge",
+    "title": "Proof complexity and geometry",
+    "summary": "Studies computational lower bounds through algebraic, geometric and proof-system obstructions.",
+    "confidence": "literature",
+    "tags": [
+      "proof-complexity",
+      "geometry",
+      "circuits",
+      "barriers"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib.Computability.Basic"
+      ],
+      "declarations": [],
+      "targets": [
+        "Formalize tiny proof systems and reductions."
+      ]
+    },
+    "questions": [
+      "Can a barrier be represented as an invariant that survives reductions?"
+    ]
+  },
+  {
+    "id": "problem.riemann_hypothesis",
+    "kind": "problem",
+    "title": "Riemann Hypothesis",
+    "summary": "Nontrivial zeros of the Riemann zeta function are expected to lie on the critical line.",
+    "confidence": "literature",
+    "tags": [
+      "millennium",
+      "zeta",
+      "number-theory",
+      "spectral"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib.NumberTheory.LSeries.RiemannZeta"
+      ],
+      "declarations": [
+        "riemannZeta"
+      ],
+      "targets": [
+        "Formalize finite Euler-product and explicit-formula toy statements."
+      ]
+    },
+    "questions": [
+      "Can a spectral or cohomological avatar force critical-line symmetry?"
+    ],
+    "status": "unsolved",
+    "references": [
+      {
+        "label": "Clay Mathematics Institute — Millennium Prize Problems",
+        "url": "https://www.claymath.org/millennium-problems/",
+        "type": "official"
+      }
+    ]
+  },
+  {
+    "id": "problem.yang_mills_mass_gap",
+    "kind": "problem",
+    "title": "Yang-Mills existence and mass gap",
+    "summary": "Construct quantum Yang-Mills theory on four-dimensional space-time and prove a positive mass gap.",
+    "confidence": "literature",
+    "tags": [
+      "millennium",
+      "yang-mills",
+      "gauge",
+      "qft",
+      "mass-gap"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib"
+      ],
+      "declarations": [],
+      "targets": [
+        "Model finite gauge systems and spectral gaps before continuum theory."
+      ]
+    },
+    "questions": [
+      "Which finite or constructive model preserves the gap mechanism?"
+    ],
+    "status": "unsolved",
+    "references": [
+      {
+        "label": "Clay Mathematics Institute — Millennium Prize Problems",
+        "url": "https://www.claymath.org/millennium-problems/",
+        "type": "official"
+      }
+    ]
+  },
+  {
+    "id": "problem.navier_stokes",
+    "kind": "problem",
+    "title": "Navier-Stokes existence and smoothness",
+    "summary": "Determine global existence and smoothness, or finite-time breakdown, for 3D incompressible Navier-Stokes.",
+    "confidence": "literature",
+    "tags": [
+      "millennium",
+      "pde",
+      "fluid",
+      "regularity"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib.Analysis.Calculus.FDeriv.Basic"
+      ],
+      "declarations": [],
+      "targets": [
+        "Formalize a simplified energy inequality with explicit norms."
+      ]
+    },
+    "questions": [
+      "Can critical-scale energy cascade be blocked by a hidden monotonicity?"
+    ],
+    "status": "unsolved",
+    "references": [
+      {
+        "label": "Clay Mathematics Institute — Millennium Prize Problems",
+        "url": "https://www.claymath.org/millennium-problems/",
+        "type": "official"
+      }
+    ]
+  },
+  {
+    "id": "problem.hodge_conjecture",
+    "kind": "problem",
+    "title": "Hodge Conjecture",
+    "summary": "Certain rational cohomology classes on smooth projective complex varieties should come from algebraic cycles.",
+    "confidence": "literature",
+    "tags": [
+      "millennium",
+      "hodge",
+      "algebraic-geometry",
+      "cycles"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib.AlgebraicGeometry.Scheme"
+      ],
+      "declarations": [],
+      "targets": [
+        "Represent toy algebraic cycles and cohomology classes as explicit data."
+      ]
+    },
+    "questions": [
+      "Which cycle-detection problem survives in finite toy geometries?"
+    ],
+    "status": "unsolved",
+    "references": [
+      {
+        "label": "Clay Mathematics Institute — Millennium Prize Problems",
+        "url": "https://www.claymath.org/millennium-problems/",
+        "type": "official"
+      }
+    ]
+  },
+  {
+    "id": "problem.birch_swinnerton_dyer",
+    "kind": "problem",
+    "title": "Birch and Swinnerton-Dyer Conjecture",
+    "summary": "The rank of an elliptic curve over the rationals should equal the order of vanishing of its L-function at one.",
+    "confidence": "literature",
+    "tags": [
+      "millennium",
+      "elliptic-curves",
+      "l-functions",
+      "arithmetic"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib.NumberTheory.EllipticCurve.Basic"
+      ],
+      "declarations": [],
+      "targets": [
+        "Map current elliptic curve formalization and finite-rank toy analogues."
+      ]
+    },
+    "questions": [
+      "Can analytic rank be approximated by a formal finite or modular proxy?"
+    ],
+    "status": "unsolved",
+    "references": [
+      {
+        "label": "Clay Mathematics Institute — Millennium Prize Problems",
+        "url": "https://www.claymath.org/millennium-problems/",
+        "type": "official"
+      }
+    ]
+  },
+  {
+    "id": "problem.p_vs_np",
+    "kind": "problem",
+    "title": "P vs NP",
+    "summary": "Determine whether every efficiently verifiable problem is efficiently solvable.",
+    "confidence": "literature",
+    "tags": [
+      "millennium",
+      "complexity",
+      "computation",
+      "barriers"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib.Computability.Basic"
+      ],
+      "declarations": [],
+      "targets": [
+        "Formalize reductions and tiny circuit/proof systems."
+      ]
+    },
+    "questions": [
+      "Which lower-bound barrier can be encoded as a robust invariant?"
+    ],
+    "status": "unsolved",
+    "references": [
+      {
+        "label": "Clay Mathematics Institute — Millennium Prize Problems",
+        "url": "https://www.claymath.org/millennium-problems/",
+        "type": "official"
+      }
+    ]
+  },
+  {
+    "id": "problem.poincare_conjecture",
+    "kind": "problem",
+    "title": "Poincare Conjecture",
+    "summary": "Every closed simply connected 3-manifold is homeomorphic to the 3-sphere; solved by Perelman.",
+    "confidence": "literature",
+    "tags": [
+      "millennium",
+      "topology",
+      "geometry",
+      "ricci-flow",
+      "calibration"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib.Geometry.Manifold.Basic.SmoothManifoldWithCorners"
+      ],
+      "declarations": [],
+      "targets": [
+        "Use as a calibration case for topology, geometry and flow interactions."
+      ]
+    },
+    "questions": [
+      "Can the graph recover why geometric flow was the decisive language?"
+    ],
+    "status": "solved",
+    "references": [
+      {
+        "label": "Clay Mathematics Institute — Millennium Prize Problems",
+        "url": "https://www.claymath.org/millennium-problems/",
+        "type": "official"
+      }
+    ]
+  }
+]

@@ -50,7 +50,7 @@ Levels indicate expected mathematical maturity, not importance. Study hours are 
 2. Insert the entry after all of its prerequisites.
 3. Add complete English and Spanish content.
 4. Add enough search keywords for common names and terminology.
-5. Run `npm run validate:data` and `npm test`.
+5. Run `npm run validate:learning` and `npm test`.
 6. Inspect both graph and list views at desktop and mobile widths.
 7. Explain the prerequisite choices in the pull request.
 
@@ -61,3 +61,8 @@ IDs are referenced by URLs and saved progress. Renaming or deleting one is a dat
 ## Scientific review
 
 Content corrections should cite a reputable textbook, syllabus, standards document, or peer-reviewed source in the pull request discussion. Sources need not be shipped in the user interface unless the product deliberately introduces a resources field.
+
+
+## Relationship to the research graph
+
+The learning catalog is a pedagogical prerequisite model. It is intentionally separate from the evidence-labelled research graph in `graph/`. A learning prerequisite says that material is useful before study; it does not assert a scientific transfer mechanism. Do not copy edges between the two models without rewriting their semantics and confidence.

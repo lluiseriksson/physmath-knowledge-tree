@@ -1,43 +1,74 @@
 # PhysMath Knowledge Tree
 
-[Versión en español](./README.es.md)
+[Versión en español](./README.es.md) · [Live research graph](https://lluiseriksson.github.io/physmath-knowledge-tree/) · [Learning map](https://lluiseriksson.github.io/physmath-knowledge-tree/learning.html)
 
-An accessible, bilingual, offline-first prerequisite map for learning mathematics and physics.
+A computable, evidence-labelled graph for exploring connections between physics, mathematics, open problems and Lean formalization targets. The repository also ships a bilingual prerequisite map for structured study.
 
-![Focused learning path in the interactive graph](./docs/screenshot.png)
+![Research graph interface](./docs/research-screenshot.png)
 
 ![CI](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/workflows/ci.yml/badge.svg)
 ![CodeQL](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/workflows/codeql.yml/badge.svg)
-![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+![License: MIT + CC BY 4.0](https://img.shields.io/badge/license-MIT%20%2B%20CC%20BY%204.0-blue)
 
-## What this repository contains
+## Two complementary experiences
 
-PhysMath Knowledge Tree turns a curriculum into an interactive directed acyclic graph. Its 90 curated topics connect mathematical foundations, cross-cutting scientific methods, and physics, from arithmetic to quantum field theory and cosmology.
+### Research graph — `index.html`
 
-The application has no runtime dependencies or build framework. It runs as standards-based HTML, CSS, SVG, and JavaScript, which keeps the repository easy to audit, quick to load, and inexpensive to maintain.
+The research interface reads the canonical JSON graph directly. It includes:
 
-### Product features
+- 36 domain, bridge and problem nodes connected by 61 typed, evidence-labelled edges.
+- Search across titles, IDs, tags, summaries and live questions.
+- Curated collections, kind/evidence filters, graph and accessible list views.
+- Directed or undirected shortest-path search.
+- Node dossiers with questions, references, incoming/outgoing mechanisms and Lean targets.
+- A bridge-card generator that produces explicitly exploratory Markdown scaffolds.
+- Visible-subgraph export, shareable URL state, bilingual UI, dark mode and offline caching.
 
-- Interactive prerequisite graph with pan, zoom, fit, search, filters, and a list alternative.
-- English and Spanish topic titles, summaries, concepts, and interface text.
-- Learning statuses, favorites, readiness checks, recommendations, and target-specific study paths.
-- Local progress storage with JSON import and export; no account, analytics, or third-party requests.
-- Responsive light and dark themes, keyboard shortcuts, reduced-motion support, and semantic controls.
-- Installable progressive web app with an offline application shell.
-- Shareable topic and focused-path URLs.
+Evidence labels are part of the data model: `formal`, `literature`, `heuristic` and `speculative`. A visual connection is never intended to imply a theorem.
 
-### Engineering features
+### Learning map — `learning.html`
 
-- Referential-integrity, translation, taxonomy, and cycle validation for the curriculum graph.
-- Unit tests for graph traversal, search, recommendations, and progress serialization.
-- Local-link, service-worker asset, syntax, and formatting checks.
-- Reproducible zero-dependency build into `dist/`.
-- GitHub Actions for CI, CodeQL scanning, and GitHub Pages deployment.
-- Issue templates, pull-request guidance, Dependabot configuration, security policy, and contribution docs.
+The learning interface contains 90 bilingual topics and 199 prerequisite edges, from arithmetic through advanced mathematics and physics. It provides search, filters, graph/list views, local progress, favorites, readiness recommendations, target paths, JSON import/export and offline support.
+
+## Canonical data
+
+```text
+graph/
+├── index.json                    # Version, paths, roots and generated statistics
+├── nodes/core.json               # Canonical knowledge nodes
+├── edges.json                    # Typed claims with mechanisms and confidence
+├── research_moves.json           # Reusable hypothesis-generation moves
+├── collections.json              # Curated subgraphs
+└── schemas/                      # JSON Schema 2020-12 contracts
+```
+
+The graph is designed for humans, scripts and research agents. Every node has a stable ID, summary, tags, live questions and one or more bounded Lean targets. Every edge states a mechanism rather than merely asserting that two subjects are “related”.
+
+Generated Markdown projections in `views/` are derived artifacts; JSON remains canonical.
+
+## Lean package
+
+The Lean spine mirrors the stable ontology without pretending to formalize the underlying research claims:
+
+```text
+PhysMathKnowledgeTree/
+├── Foundation.lean               # Typed node, edge, evidence and target structures
+├── Metadata.lean                 # Schema/repository metadata
+├── Bridges/Examples.lean         # Example bridge records
+└── Problems/Millennium.lean      # Typed problem cards and calibration case
+```
+
+The project is pinned to Lean/mathlib `v4.31.0`.
+
+```bash
+lake build
+```
+
+CI builds the package with warnings treated as failures and runs Lean's independent environment checker.
 
 ## Run locally
 
-Requirements: Node.js 22 or newer. There are no third-party packages to download.
+Requirements: Node.js 22 or newer. The web application has no runtime npm dependencies.
 
 ```bash
 npm ci
@@ -52,7 +83,7 @@ Run the complete quality gate:
 npm run check
 ```
 
-Create the deployable static output:
+Build the GitHub Pages artifact:
 
 ```bash
 npm run build
@@ -62,58 +93,53 @@ npm run build
 
 | Command | Purpose |
 | --- | --- |
-| `npm run dev` | Serve the repository locally with security headers and no caching. |
-| `npm test` | Run the Node.js test suite. |
-| `npm run validate:data` | Validate IDs, translations, taxonomies, prerequisites, and DAG structure. |
-| `npm run validate:links` | Check local HTML links and service-worker cache entries. |
-| `npm run validate:syntax` | Parse every JavaScript file with Node.js. |
-| `npm run validate:format` | Enforce LF endings, final newlines, and no trailing whitespace. |
-| `npm run build` | Copy the verified static application to `dist/`. |
-| `npm run check` | Run every validation, all tests, and a production build. |
+| `npm run validate:graph` | Check graph IDs, endpoint integrity, evidence rules, references, collections and index statistics. |
+| `npm run validate:learning` | Check bilingual curriculum taxonomies, prerequisites and DAG structure. |
+| `npm run validate:views` | Confirm generated Markdown/Mermaid projections match canonical JSON. |
+| `npm test` | Run graph, search, layout, path, persistence and data tests. |
+| `npm run generate:views` | Regenerate deterministic projections in `views/`. |
+| `npm run build` | Produce a deployable static site in `dist/`. |
+| `npm run check` | Run syntax, data, link, CSP, formatting, tests, generated-view and build checks. |
 
 ## Repository map
 
 ```text
 .
-├── index.html                    # Accessible application shell
-├── src/
-│   ├── app.js                    # UI state and interaction orchestration
-│   ├── data/topics.js            # Bilingual curriculum and taxonomy
-│   ├── lib/                      # Pure graph, search, storage, URL, and DOM modules
-│   └── styles.css                # Responsive visual system
-├── tests/                        # Node test runner suites
-├── scripts/                      # Build, server, and validators
-├── assets/icons/                 # PWA and favicon assets
-├── docs/                         # Architecture and content authoring guides
-├── .github/                      # CI, deployment, security, and contribution automation
-├── sw.js                         # Offline application shell
-└── manifest.webmanifest          # Installable PWA metadata
+├── index.html / learning.html    # Research and education applications
+├── graph/                        # Canonical research graph and schemas
+├── PhysMathKnowledgeTree/        # Lean package
+├── src/                          # Dependency-free web modules and styles
+├── tests/                        # Node test suites
+├── scripts/                      # Validators, generator, build and local server
+├── views/                        # Generated human-readable projections
+├── prompts/                      # Agent discovery, hypothesis and Lean prompts
+├── docs/                         # Protocol, ontology, architecture and audit notes
+└── .github/                      # CI, CodeQL, Pages, templates and maintenance
 ```
 
-See [Architecture](./docs/ARCHITECTURE.md) for design decisions and [Content guide](./docs/CONTENT_GUIDE.md) before editing the curriculum.
+## Research-agent protocol
 
-## Progress data and privacy
+Start with [`AGENTS.md`](./AGENTS.md) and [`docs/agent-protocol.md`](./docs/agent-protocol.md). The core rules are:
 
-Progress is stored only in the browser under a versioned `localStorage` key. Exported JSON is human-readable and validated during import. The app contains no analytics, advertising, cookies, remote fonts, embedded content, or API calls. Clearing site data removes local progress unless it has been exported.
+1. Retrieve the smallest relevant subgraph.
+2. Separate sourced facts from graph-supported inferences and new hypotheses.
+3. Never promote an evidence label without an auditable reason.
+4. Attach a falsifier to every speculative edge.
+5. Reduce promising ideas to a finite calculation or bounded Lean target.
+6. Record negative results and broken analogies, not only successes.
 
-## Accessibility
+## Accessibility, privacy and security
 
-The graph is an enhancement, not the sole way to navigate the curriculum. Every visible node is keyboard focusable, the list view exposes the same content as ordinary cards, dialogs and drawers have labeled controls, and status is communicated by text rather than color alone. The interface respects the operating system's reduced-motion and color-scheme preferences.
+Both applications have keyboard-accessible alternatives to the SVG graph, visible focus states, text labels in addition to color, reduced-motion support and responsive layouts. No analytics, accounts, cookies, remote fonts or third-party runtime scripts are used. Learning progress remains in browser storage unless explicitly exported.
 
-Accessibility changes should be tested with keyboard-only navigation, 200% zoom, and at least one screen reader before merging.
+The application applies a restrictive Content Security Policy, validates import data, uses no `innerHTML` for canonical graph content and is scanned by CodeQL. See [`SECURITY.md`](./SECURITY.md). The reproducible local results are recorded in [`docs/VERIFICATION.md`](./docs/VERIFICATION.md).
 
-## Deploy to GitHub Pages
+## GitHub Pages
 
-1. Open **Settings → Pages** in the repository.
-2. Select **GitHub Actions** as the source.
-3. Push to `main` or run the `Deploy to GitHub Pages` workflow manually.
+The Pages workflow validates the repository, builds `dist/`, uploads the static artifact and deploys it using least-privilege permissions. In repository settings, select **GitHub Actions** as the Pages source, then push to `main` or run the workflow manually.
 
-The workflow validates the repository, builds `dist/`, uploads it as a Pages artifact, and deploys it with the minimum required permissions.
+## Contributing and attribution
 
-## Contributing
+Read [`CONTRIBUTING.md`](./CONTRIBUTING.md) before editing data. Canonical graph changes must include a mechanism, confidence level, Lean target implications and passing tests.
 
-Read [CONTRIBUTING.md](./CONTRIBUTING.md). Curriculum changes must preserve a valid DAG, include both language variants, and pass `npm run check`.
-
-## License
-
-Released under the [MIT License](./LICENSE).
+Source code is MIT-licensed. Curated graph/documentation content is available under CC BY 4.0; see [`LICENSE.md`](./LICENSE.md). Citation metadata is in [`CITATION.cff`](./CITATION.cff).

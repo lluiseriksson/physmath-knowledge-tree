@@ -1,40 +1,50 @@
 # Árbol de conocimiento Físico-Matemático
 
-[English version](./README.md)
+[English version](./README.md) · [Grafo de investigación](https://lluiseriksson.github.io/physmath-knowledge-tree/) · [Mapa de aprendizaje](https://lluiseriksson.github.io/physmath-knowledge-tree/learning.html)
 
-Mapa accesible, bilingüe y disponible sin conexión de los prerrequisitos necesarios para aprender matemáticas y física.
+Grafo computable y etiquetado por evidencia para explorar conexiones entre física, matemáticas, problemas abiertos y objetivos de formalización en Lean. La repo también incluye un mapa bilingüe de prerrequisitos para estudiar de forma estructurada.
 
-![Ruta de aprendizaje enfocada en el grafo interactivo](./docs/screenshot.png)
+![Interfaz del grafo de investigación](./docs/research-screenshot.png)
 
-## Qué incluye
+## Dos experiencias complementarias
 
-La aplicación representa un currículo como grafo acíclico dirigido. Sus 90 temas conectan fundamentos matemáticos, métodos científicos transversales y física, desde aritmética hasta teoría cuántica de campos y cosmología.
+### Grafo de investigación — `index.html`
 
-No tiene dependencias de ejecución ni requiere un framework: utiliza HTML, CSS, SVG y JavaScript estándar. Esto reduce la superficie de mantenimiento y hace que el código sea fácil de revisar y desplegar.
+La interfaz consume directamente el JSON canónico e incorpora:
 
-### Funciones principales
+- 36 nodos de dominio, puente y problema unidos por 61 aristas tipadas.
+- Búsqueda por títulos, IDs, etiquetas, resúmenes y preguntas abiertas.
+- Colecciones curadas, filtros de tipo/evidencia y vistas de grafo o lista accesible.
+- Camino mínimo dirigido o no dirigido.
+- Fichas con preguntas, referencias, mecanismos entrantes/salientes y objetivos Lean.
+- Generador de *bridge cards* que produce borradores Markdown explícitamente exploratorios.
+- Exportación del subgrafo visible, estado compartible por URL, interfaz bilingüe, modo oscuro y caché offline.
 
-- Grafo interactivo con desplazamiento, zoom, ajuste automático, búsqueda y filtros.
-- Vista alternativa en lista, completamente navegable con teclado.
-- Interfaz y contenido en español e inglés.
-- Estados de aprendizaje, favoritos, temas desbloqueados, recomendaciones y rutas hacia objetivos concretos.
-- Progreso local con importación y exportación JSON; sin cuenta, analítica ni peticiones a terceros.
-- Temas claro, oscuro y automático; diseño adaptable y soporte de movimiento reducido.
-- Aplicación web instalable y disponible sin conexión.
-- Enlaces compartibles a temas y rutas enfocadas.
+Los niveles `formal`, `literature`, `heuristic` y `speculative` forman parte del modelo. Una conexión visual nunca equivale por sí sola a un teorema.
 
-### Calidad del repositorio
+### Mapa de aprendizaje — `learning.html`
 
-- Validación de referencias, traducciones, taxonomías y ausencia de ciclos.
-- Pruebas unitarias de recorrido del grafo, búsqueda, recomendaciones y persistencia.
-- Comprobaciones de sintaxis, formato, enlaces locales y caché offline.
-- Compilación estática reproducible en `dist/`.
-- CI, análisis CodeQL y despliegue automático a GitHub Pages.
-- Plantillas de incidencias y PR, Dependabot, política de seguridad y guía de contribución.
+Incluye 90 temas bilingües y 199 prerrequisitos, desde aritmética hasta matemáticas y física avanzadas. Ofrece búsqueda, filtros, grafo/lista, progreso local, favoritos, recomendaciones, rutas hacia objetivos, importación/exportación JSON y funcionamiento offline.
+
+## Datos canónicos
+
+`graph/nodes/core.json`, `graph/edges.json`, `graph/research_moves.json` y `graph/collections.json` son la fuente de verdad. Los esquemas JSON 2020-12 están en `graph/schemas/`; las vistas de `views/` se generan automáticamente.
+
+Cada nodo tiene ID estable, resumen, etiquetas, preguntas vivas y objetivos Lean acotados. Cada arista declara un mecanismo concreto y un nivel de evidencia.
+
+## Lean
+
+La capa Lean refleja la ontología estable sin fingir que formaliza las conjeturas de investigación. Está fijada a Lean/mathlib `v4.31.0`.
+
+```bash
+lake build
+```
+
+CI compila con los avisos tratados como errores y verifica el entorno Lean.
 
 ## Uso local
 
-Se necesita Node.js 22 o posterior. No se descargan paquetes de terceros.
+Se necesita Node.js 22 o posterior. La web no tiene dependencias npm de ejecución.
 
 ```bash
 npm ci
@@ -43,34 +53,28 @@ npm run dev
 
 Abre `http://127.0.0.1:4173`.
 
-Ejecuta toda la batería de calidad:
+Batería completa de calidad:
 
 ```bash
 npm run check
 ```
 
-Genera la versión desplegable:
+Build para GitHub Pages:
 
 ```bash
 npm run build
 ```
 
-## Estructura
+## Calidad y seguridad
 
-- `src/data/topics.js`: currículo bilingüe y taxonomía.
-- `src/lib/`: algoritmos puros de grafo, búsqueda, almacenamiento y URL.
-- `src/app.js`: estado e interacciones de la interfaz.
-- `tests/`: pruebas con el runner integrado de Node.js.
-- `scripts/`: servidor, compilación y validadores.
-- `docs/`: arquitectura y guía de edición de contenido.
-- `.github/`: automatización, seguridad y colaboración.
+La repo valida IDs, referencias, endpoints, niveles de evidencia, colecciones, estadísticas, traducciones, taxonomías y ausencia de ciclos. Las pruebas cubren recorridos, caminos mínimos, búsqueda, layout, persistencia y datos. También se verifican enlaces locales, CSP, caché offline, formato, build, CodeQL y despliegue Pages.
 
-Antes de modificar el currículo, consulta la [guía de contenido](./docs/CONTENT_GUIDE.md). Para cambios de código, lee [CONTRIBUTING.md](./CONTRIBUTING.md).
+No hay analítica, cuentas, cookies, fuentes remotas ni scripts de terceros. El progreso educativo permanece en el navegador salvo exportación explícita. Los resultados reproducibles están en [`docs/VERIFICATION.md`](./docs/VERIFICATION.md).
 
-## Privacidad
+## Protocolo de investigación
 
-El progreso se guarda únicamente en el navegador, bajo una clave versionada de `localStorage`. La aplicación no incorpora analítica, anuncios, cookies, fuentes remotas, contenido embebido ni llamadas a API. Borrar los datos del sitio elimina el progreso salvo que se haya exportado antes.
+Consulta [`AGENTS.md`](./AGENTS.md) y [`docs/agent-protocol.md`](./docs/agent-protocol.md). Toda hipótesis nueva debe distinguir hechos, inferencias y especulación; conservar el nivel de evidencia; incluir un posible falsador; y terminar en una prueba finita o un objetivo Lean delimitado.
 
-## Licencia
+## Licencias
 
-Proyecto publicado bajo la [licencia MIT](./LICENSE).
+El código fuente usa MIT. El contenido curado del grafo y la documentación usa CC BY 4.0. Consulta [`LICENSE.md`](./LICENSE.md) y [`CITATION.cff`](./CITATION.cff).

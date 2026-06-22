@@ -3,12 +3,22 @@ changelog:
     labels:
       - skip-changelog
   categories:
-    - title: Curriculum
+    - title: Research graph
+      labels:
+        - graph
+        - research
+    - title: Lean formalization
+      labels:
+        - lean
+        - formalization
+    - title: Learning content
       labels:
         - content
-    - title: Features
+        - curriculum
+    - title: Features and accessibility
       labels:
         - enhancement
+        - accessibility
     - title: Fixes
       labels:
         - bug

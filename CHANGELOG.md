@@ -1,21 +1,42 @@
 # Changelog
 
-All notable changes to this project will be documented here. The format follows Keep a Changelog principles and the project uses semantic versioning.
+All notable changes are documented here. The project follows semantic versioning for its application and schema releases.
 
-## [Unreleased]
-
-### Planned
-
-- Community review of curriculum dependencies and translations.
-- Optional user-defined learning goals and printable plans.
-
-## [1.0.0] - 2026-06-22
+## [2.0.0] — 2026-06-22
 
 ### Added
 
-- Initial production-ready application with 90 bilingual mathematics and physics topics.
-- Interactive SVG prerequisite graph and accessible list view.
-- Search, filters, themes, progress tracking, favorites, recommendations, and focused learning paths.
-- Local JSON import/export, shareable URL state, and offline PWA support.
-- Data, graph, search, storage, link, syntax, formatting, and build validation.
-- CI, CodeQL, GitHub Pages deployment, Dependabot, security, contribution, and issue-management files.
+- Canonical research application backed directly by `graph/` JSON.
+- 36 evidence-labelled research nodes, 61 typed edges, 12 research moves and 5 curated collections.
+- Search, filters, graph/list parity, shortest-path exploration, node dossiers and visible-subgraph export.
+- Bridge-card generator with explicit confidence, falsifier and Lean-target fields.
+- Stable shareable URL state, bilingual interface, responsive design, dark mode and offline caching.
+- Dedicated `learning.html` experience with 90 bilingual topics and 199 prerequisite relations.
+- Strict JSON schemas and validation for nodes, edges, moves and collections.
+- Deterministic generated Markdown and Mermaid projections with staleness checks.
+- Lean 4 ontology package pinned to Lean/mathlib v4.31.0.
+- CI matrix, independent Lean job, CodeQL, GitHub Pages deployment and dependency maintenance.
+- Agent protocol, ontology, playbooks, deployment guide, citation metadata and dual-license notice.
+- Research-aware issue forms, bridge proposal template, CODEOWNERS and expanded pull-request/release governance.
+
+### Changed
+
+- The research graph is now the canonical home page; the learning map remains a complementary route.
+- Security policy, service worker, manifest, 404 page and build pipeline cover both applications.
+- Documentation now separates formal facts, literature, heuristics and speculation.
+
+### Verification
+
+- Node and graph data validators.
+- Syntax, formatting, local-link and CSP checks.
+- Unit tests for research graph, search, paths, layout, curriculum, persistence and hardened static-server logic.
+- Independent JSON Schema/YAML parsing, npm audit and served-build smoke checks.
+- Reproducible static build to `dist/`.
+
+## [1.0.0] — 2026-06-22
+
+- Initial bilingual prerequisite-map application and repository engineering baseline.
+
+## [0.1.0] — 2026-06-22
+
+- Initial research-graph and Lean seed.

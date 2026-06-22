@@ -1,30 +1,211 @@
 <!doctype html>
 <html lang="en" data-theme="system">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="description" content="Interactive bilingual prerequisite map for learning mathematics and physics.">
-<meta name="theme-color" content="#f5f7fb" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#0b1020" media="(prefers-color-scheme: dark)">
-<meta name="color-scheme" content="light dark"><meta name="referrer" content="no-referrer">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self';script-src 'self';style-src 'self';img-src 'self' data:;font-src 'self';connect-src 'self';worker-src 'self';manifest-src 'self';object-src 'none';base-uri 'none';form-action 'none'">
-<title>PhysMath Knowledge Tree</title><link rel="icon" href="./assets/icons/icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="./assets/icons/icon-192.png"><link rel="manifest" href="./manifest.webmanifest"><link rel="stylesheet" href="./src/styles.css"><script type="module" src="./src/app.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Explore a computable physics-mathematics research graph with Lean targets, evidence labels, problem boards and bridge-generation tools.">
+  <meta name="theme-color" content="#f4f7fb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#09111f" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>PhysMath Knowledge Tree — Research graph</title>
+  <link rel="canonical" href="https://lluiseriksson.github.io/physmath-knowledge-tree/">
+  <link rel="icon" href="./assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./assets/icons/icon-192.png">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./src/research.css">
+  <script type="module" src="./src/research-app.js"></script>
 </head>
 <body>
-<a class="skip-link" href="#workspace" data-i18n="nav.skip">Skip to the knowledge graph</a>
-<header class="topbar"><a class="brand" href="./"><img src="./assets/icons/icon.svg" width="42" height="42" alt=""><span><strong data-i18n="app.name">PhysMath Knowledge Tree</strong><small data-i18n="app.tagline">See what to learn next—and why.</small></span></a><div class="header-progress"><span id="progress-label"></span><div><i id="progress-bar"></i></div></div><nav class="header-actions"><button class="icon mobile" id="open-filters" data-i18n-aria="header.filters">☰</button><select id="language" data-i18n-aria="header.language"><option value="en">EN</option><option value="es">ES</option></select><button class="icon" id="theme" data-i18n-aria="header.theme">◐</button><button class="icon" id="help" data-i18n-aria="header.help">?</button></nav></header>
-<div class="shell">
-<aside class="sidebar" id="sidebar"><div class="mobile sidebar-mobile"><strong data-i18n="filters.title">Filters</strong><button class="icon" id="close-filters">×</button></div>
-<section><div class="section-title"><h2 data-i18n="search.title">Find a topic</h2><kbd>/</kbd></div><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" autocomplete="off" data-i18n-placeholder="search.placeholder"></label><div id="search-results"></div></section>
-<section><div class="section-title"><h2 data-i18n="filters.title">Filters</h2><button class="link-button" id="clear-filters" data-i18n="filters.clear">Clear</button></div><fieldset><legend data-i18n="filters.domains">Domains</legend><div class="chips" id="domain-filters"></div></fieldset><fieldset><legend data-i18n="filters.levels">Levels</legend><div class="chips" id="level-filters"></div></fieldset><fieldset><legend data-i18n="filters.statuses">Progress</legend><div class="chips" id="status-filters"></div></fieldset><label class="favorite-filter"><input id="favorites-only" type="checkbox"><span data-i18n="filters.favorites">Favorites only</span>★</label></section>
-<section><h2 data-i18n="recommendations.title">Recommended next</h2><div id="recommendations" class="recommendations"></div></section>
-<section><h2 data-i18n="data.title">Your data</h2><div class="data-actions"><button id="export" class="secondary" data-i18n="data.export">Export progress</button><button id="import" class="secondary" data-i18n="data.import">Import progress</button><button id="reset" class="danger" data-i18n="data.reset">Reset progress</button></div><input id="import-file" type="file" accept="application/json,.json" hidden></section>
-</aside>
-<main class="workspace" id="workspace"><div class="toolbar"><div class="segmented"><button id="graph-view" aria-pressed="true" data-i18n="view.graph">Graph</button><button id="list-view-button" aria-pressed="false" data-i18n="view.list">List</button></div><span id="toolbar-status"></span><div id="graph-controls"><button class="icon" id="zoom-out" data-i18n-aria="toolbar.zoomOut">−</button><button class="icon" id="zoom-in" data-i18n-aria="toolbar.zoomIn">+</button><button class="secondary compact" id="fit" data-i18n="toolbar.fit">Fit visible topics</button><button class="secondary compact" id="show-all" hidden data-i18n="toolbar.showAll">Show full graph</button></div></div>
-<section class="graph-stage" id="graph-stage"><p class="sr-only" id="graph-help" data-i18n="graph.instructions"></p><svg id="graph" role="group" aria-labelledby="graph-help" tabindex="0"><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8z"></path></marker></defs><g id="viewport"><g id="edges"></g><g id="nodes"></g></g></svg><div class="empty" id="empty" hidden><strong data-i18n="empty.title">No visible topics</strong><p data-i18n="empty.body"></p></div></section>
-<section id="list" class="list-view" hidden></section><footer class="legend" id="legend"><strong data-i18n="legend.title">Legend</strong><span><i class="dot math"></i><span data-i18n="legend.math">Mathematics</span></span><span><i class="dot bridge"></i><span data-i18n="legend.bridge">Cross-cutting</span></span><span><i class="dot physics"></i><span data-i18n="legend.physics">Physics</span></span><span><i class="ring locked"></i><span data-i18n="legend.locked">Locked</span></span><span><i class="ring mastered"></i><span data-i18n="legend.mastered">Mastered</span></span></footer></main>
-<aside class="details" id="details" aria-hidden="true"><header><div><small id="detail-eyebrow"></small><h2 id="detail-title"></h2></div><button class="icon" id="close-details" data-i18n-aria="details.close">×</button></header><div id="detail-content"></div></aside>
-</div>
-<dialog id="onboarding" class="modal"><h2 data-i18n="onboarding.title"></h2><p data-i18n="onboarding.body"></p><form method="dialog"><button class="primary" data-i18n="onboarding.start">Explore</button></form></dialog>
-<dialog id="shortcuts" class="modal"><h2 data-i18n="shortcuts.title"></h2><dl><div><dt><kbd>/</kbd></dt><dd data-i18n="shortcuts.search"></dd></div><div><dt><kbd>Esc</kbd></dt><dd data-i18n="shortcuts.escape"></dd></div><div><dt><kbd>F</kbd></dt><dd data-i18n="shortcuts.fit"></dd></div><div><dt><kbd>G</kbd></dt><dd data-i18n="shortcuts.graph"></dd></div><div><dt><kbd>L</kbd></dt><dd data-i18n="shortcuts.list"></dd></div></dl><form method="dialog"><button class="secondary" data-i18n="shortcuts.close">Close</button></form></dialog>
-<dialog id="reset-dialog" class="modal"><h2 data-i18n="reset.title"></h2><p data-i18n="reset.body"></p><form method="dialog"><button class="secondary" value="cancel" data-i18n="reset.cancel"></button><button class="danger" value="confirm" data-i18n="reset.confirm"></button></form></dialog>
-<div id="toasts" class="toasts" aria-live="polite"></div>
-</body></html>
+  <a class="skip-link" href="#research-workspace" data-i18n="nav.skip">Skip to the research graph</a>
+
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="PhysMath Knowledge Tree home">
+      <img src="./assets/icons/icon.svg" width="42" height="42" alt="">
+      <span>
+        <strong>PhysMath Knowledge Tree</strong>
+        <small data-i18n="app.tagline">Traceable bridges for physics, mathematics and Lean</small>
+      </span>
+    </a>
+    <nav class="primary-nav" aria-label="Primary navigation">
+      <a href="./" aria-current="page" data-i18n="nav.research">Research graph</a>
+      <a href="./learning.html" data-i18n="nav.learning">Learning map</a>
+      <a href="https://github.com/lluiseriksson/physmath-knowledge-tree" rel="noreferrer" data-i18n="nav.repository">Repository</a>
+    </nav>
+    <div class="header-actions">
+      <button id="open-panel" class="icon-button mobile-only" type="button" aria-label="Open controls">☰</button>
+      <select id="language" aria-label="Interface language">
+        <option value="en">EN</option>
+        <option value="es">ES</option>
+      </select>
+      <button id="theme" class="icon-button" type="button" aria-label="Change theme">◐</button>
+      <button id="help" class="icon-button" type="button" aria-label="Keyboard shortcuts">?</button>
+    </div>
+  </header>
+
+  <div id="loading" class="loading" role="status" aria-live="polite">
+    <span class="spinner" aria-hidden="true"></span>
+    <span data-i18n="loading">Loading canonical graph…</span>
+  </div>
+
+  <div id="app-shell" class="app-shell" hidden>
+    <aside id="control-panel" class="control-panel" aria-label="Graph controls">
+      <div class="panel-mobile-head mobile-only">
+        <strong data-i18n="controls.title">Explore</strong>
+        <button id="close-panel" class="icon-button" type="button" aria-label="Close controls">×</button>
+      </div>
+
+      <section>
+        <div class="section-heading">
+          <h2 data-i18n="search.title">Find a node</h2>
+          <kbd>/</kbd>
+        </div>
+        <label class="search-box">
+          <span aria-hidden="true">⌕</span>
+          <input id="search" type="search" autocomplete="off" data-i18n-placeholder="search.placeholder" placeholder="Search titles, tags, questions…">
+        </label>
+        <div id="search-results" class="search-results" aria-live="polite"></div>
+      </section>
+
+      <section>
+        <div class="section-heading">
+          <h2 data-i18n="collections.title">Curated view</h2>
+          <button id="clear-view" class="text-button" type="button" data-i18n="filters.reset">Reset</button>
+        </div>
+        <label class="field-label" for="collection" data-i18n="collections.label">Collection</label>
+        <select id="collection"></select>
+      </section>
+
+      <section>
+        <h2 data-i18n="filters.title">Filters</h2>
+        <fieldset>
+          <legend data-i18n="filters.kind">Node kind</legend>
+          <div id="kind-filters" class="filter-grid"></div>
+        </fieldset>
+        <fieldset>
+          <legend data-i18n="filters.confidence">Evidence level</legend>
+          <div id="confidence-filters" class="filter-grid"></div>
+        </fieldset>
+      </section>
+
+      <section>
+        <h2 data-i18n="path.title">Shortest path</h2>
+        <label class="field-label" for="path-source" data-i18n="path.source">From</label>
+        <select id="path-source"></select>
+        <label class="field-label" for="path-target" data-i18n="path.target">To</label>
+        <select id="path-target"></select>
+        <label class="check-row">
+          <input id="path-directed" type="checkbox">
+          <span data-i18n="path.directed">Respect edge direction</span>
+        </label>
+        <div class="button-row">
+          <button id="find-path" class="primary-button" type="button" data-i18n="path.find">Find path</button>
+          <button id="clear-path" class="secondary-button" type="button" data-i18n="path.clear">Clear</button>
+        </div>
+        <div id="path-result" class="path-result" aria-live="polite"></div>
+      </section>
+
+      <section>
+        <h2 data-i18n="moves.title">Bridge-card generator</h2>
+        <label class="field-label" for="move" data-i18n="moves.move">Research move</label>
+        <select id="move"></select>
+        <label class="field-label" for="move-target" data-i18n="moves.target">Target node</label>
+        <select id="move-target"></select>
+        <button id="generate-card" class="secondary-button full-width" type="button" data-i18n="moves.generate">Generate bridge card</button>
+      </section>
+
+      <section>
+        <h2 data-i18n="export.title">Portable data</h2>
+        <div class="stacked-actions">
+          <button id="export-visible" class="secondary-button" type="button" data-i18n="export.subgraph">Export visible subgraph</button>
+          <a class="secondary-button link-button" href="./graph/index.json" download data-i18n="export.index">Download graph index</a>
+        </div>
+      </section>
+    </aside>
+
+    <main id="research-workspace" class="workspace">
+      <div class="workspace-toolbar">
+        <div class="segmented" aria-label="View mode">
+          <button id="graph-view-button" type="button" aria-pressed="true" data-i18n="view.graph">Graph</button>
+          <button id="list-view-button" type="button" aria-pressed="false" data-i18n="view.list">List</button>
+        </div>
+        <span id="visible-summary" class="visible-summary"></span>
+        <div id="graph-controls" class="graph-controls">
+          <button id="zoom-out" class="icon-button" type="button" aria-label="Zoom out">−</button>
+          <button id="zoom-in" class="icon-button" type="button" aria-label="Zoom in">+</button>
+          <button id="fit" class="secondary-button compact" type="button" data-i18n="view.fit">Fit</button>
+        </div>
+      </div>
+
+      <section id="graph-stage" class="graph-stage" aria-label="Interactive knowledge graph">
+        <p id="graph-instructions" class="sr-only" data-i18n="graph.instructions">Use the mouse or touch to pan and zoom. Select a node to open its evidence, questions and Lean targets.</p>
+        <svg id="graph" role="group" aria-labelledby="graph-instructions" tabindex="0">
+          <defs>
+            <marker id="edge-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
+              <path d="M0 0 L8 4 L0 8 z"></path>
+            </marker>
+          </defs>
+          <g id="viewport">
+            <g id="edge-layer"></g>
+            <g id="node-layer"></g>
+          </g>
+        </svg>
+        <div id="graph-empty" class="empty-state" hidden>
+          <strong data-i18n="empty.title">No nodes match</strong>
+          <p data-i18n="empty.body">Reset the filters or choose another collection.</p>
+        </div>
+      </section>
+
+      <section id="list-view" class="list-view" hidden aria-label="Knowledge nodes"></section>
+
+      <footer class="legend" aria-label="Graph legend">
+        <strong data-i18n="legend.title">Legend</strong>
+        <span><i class="legend-shape domain"></i><span data-i18n="kind.domain">Domain</span></span>
+        <span><i class="legend-shape bridge"></i><span data-i18n="kind.bridge">Bridge</span></span>
+        <span><i class="legend-shape problem"></i><span data-i18n="kind.problem">Problem</span></span>
+        <span><i class="legend-line literature"></i><span data-i18n="confidence.literature">Literature</span></span>
+        <span><i class="legend-line heuristic"></i><span data-i18n="confidence.heuristic">Heuristic</span></span>
+        <span><i class="legend-line speculative"></i><span data-i18n="confidence.speculative">Speculative</span></span>
+      </footer>
+    </main>
+
+    <aside id="details" class="details" aria-hidden="true" aria-label="Node details">
+      <header>
+        <div>
+          <small id="detail-eyebrow"></small>
+          <h2 id="detail-title"></h2>
+        </div>
+        <button id="close-details" class="icon-button" type="button" aria-label="Close details">×</button>
+      </header>
+      <div id="detail-content" class="detail-content"></div>
+    </aside>
+  </div>
+
+  <dialog id="shortcuts" class="modal">
+    <h2 data-i18n="shortcuts.title">Keyboard shortcuts</h2>
+    <dl>
+      <div><dt><kbd>/</kbd></dt><dd data-i18n="shortcuts.search">Focus search</dd></div>
+      <div><dt><kbd>Esc</kbd></dt><dd data-i18n="shortcuts.escape">Close details or clear search</dd></div>
+      <div><dt><kbd>F</kbd></dt><dd data-i18n="shortcuts.fit">Fit graph</dd></div>
+      <div><dt><kbd>G</kbd></dt><dd data-i18n="shortcuts.graph">Graph view</dd></div>
+      <div><dt><kbd>L</kbd></dt><dd data-i18n="shortcuts.list">List view</dd></div>
+    </dl>
+    <form method="dialog"><button class="secondary-button" data-i18n="shortcuts.close">Close</button></form>
+  </dialog>
+
+  <dialog id="bridge-card-dialog" class="bridge-card-dialog">
+    <header>
+      <h2 data-i18n="moves.cardTitle">Generated bridge card</h2>
+      <form method="dialog"><button class="icon-button" aria-label="Close">×</button></form>
+    </header>
+    <textarea id="bridge-card-output" readonly></textarea>
+    <div class="button-row end">
+      <button id="download-card" class="secondary-button" type="button" data-i18n="moves.download">Download Markdown</button>
+      <button id="copy-card" class="primary-button" type="button" data-i18n="moves.copy">Copy</button>
+    </div>
+  </dialog>
+
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+</body>
+</html>

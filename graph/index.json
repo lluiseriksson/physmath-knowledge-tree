@@ -1,0 +1,58 @@
+{
+  "schema_version": "0.2.0",
+  "created": "2026-06-22",
+  "updated": "2026-06-22",
+  "name": "PhysMath Knowledge Tree",
+  "purpose": "A computable graph of physics-mathematics concepts, bridges, problems and Lean targets for research agents.",
+  "canonical_files": {
+    "nodes": "graph/nodes/core.json",
+    "edges": "graph/edges.json",
+    "research_moves": "graph/research_moves.json",
+    "collections": "graph/collections.json"
+  },
+  "schemas": {
+    "nodes": "graph/schemas/node.schema.json",
+    "edges": "graph/schemas/edge.schema.json",
+    "research_moves": "graph/schemas/research_move.schema.json",
+    "collections": "graph/schemas/collection.schema.json"
+  },
+  "stats": {
+    "nodes": 36,
+    "edges": 61,
+    "research_moves": 12,
+    "collections": 5,
+    "by_kind": {
+      "bridge": 6,
+      "domain": 23,
+      "problem": 7
+    },
+    "by_confidence": {
+      "heuristic": 3,
+      "literature": 33
+    }
+  },
+  "root_nodes": [
+    "domain.foundation_logic",
+    "domain.category_theory",
+    "domain.analysis",
+    "domain.algebra",
+    "domain.topology",
+    "domain.number_theory",
+    "domain.pde",
+    "domain.quantum_field_theory",
+    "domain.complexity_theory"
+  ],
+  "confidence_levels": [
+    "formal",
+    "literature",
+    "heuristic",
+    "speculative"
+  ],
+  "agent_entrypoints": [
+    "AGENTS.md",
+    "docs/agent-protocol.md",
+    "prompts/agent-discovery.md",
+    "prompts/hypothesis-generation.md",
+    "prompts/lean-formalization.md"
+  ]
+}
