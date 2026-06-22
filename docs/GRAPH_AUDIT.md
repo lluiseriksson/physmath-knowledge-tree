@@ -11,8 +11,8 @@ Generated deterministically from the canonical graph and curation ledger. This r
 ## Evidence coverage
 
 - Nodes with direct references: **15/58**.
-- Edges with direct references: **0/112**.
-- Formal nodes with named Lean declarations: **3**.
+- Edges with direct references: **45/112**.
+- Formal nodes with named Lean declarations: **8**.
 - Open source-verification requests in the curation ledger: **18**.
 - Curation records awaiting explicit user review: **3**.
 
@@ -76,103 +76,59 @@ Generated deterministically from the canonical graph and curation ledger. This r
 - `domain.symplectic_geometry`
 - `domain.topology`
 
-## Edge citation debt (95)
+## Edge citation debt (51)
 
 Edges currently state mechanisms and evidence classes, but most inherit their source context from node references and curation records. Direct edge references should be added during primary-source verification.
 
 - `edge.algebra.representation`
 - `edge.algebra.ward_defect`
 - `edge.algebraic.arithmetic`
-- `edge.algebraic.hodge`
 - `edge.algebraic.langlands_bridge`
 - `edge.algebraic.motives_bridge`
 - `edge.analysis.constructive_qft`
 - `edge.analysis.functional_analysis`
 - `edge.analysis.harmonic`
-- `edge.analysis.renormalization_group`
 - `edge.aqft.no_signalling`
-- `edge.aqft.reeh_nonfactorization`
-- `edge.arithmetic.bsd`
 - `edge.arithmetic.motives_bridge`
-- `edge.automorphic.bsd`
 - `edge.automorphic.number`
-- `edge.automorphic.riemann`
 - `edge.automorphic.trace_bridge`
-- `edge.catalan.rate_budget`
 - `edge.category.algebra`
 - `edge.category.algebraic_geometry`
-- `edge.cluster_holes.target_preserving_ursell`
 - `edge.cluster_holes.ym_rg_activity`
-- `edge.complexity.pnp`
 - `edge.complexity.proof_geometry_bridge`
-- `edge.constructive_qft.cluster_holes`
-- `edge.constructive_qft.polymer_expansions`
 - `edge.constructive_qft.ym_rg_activity`
 - `edge.foundation.category`
-- `edge.functional.aqft`
 - `edge.functional.block_coercivity`
 - `edge.functional.spectral`
 - `edge.gauge.qft`
-- `edge.gauge.yang_mills`
-- `edge.gauge.ym_critical_dimension`
 - `edge.gauge.ym_rg_activity`
 - `edge.gaussian_markov.collar`
 - `edge.geometry.gauge`
-- `edge.geometry.poincare`
 - `edge.geometry.relativity`
-- `edge.harmonic.navier`
 - `edge.harmonic.pde`
 - `edge.langlands.automorphic`
 - `edge.lattice_scaling.yang_mills`
-- `edge.motives.hodge`
 - `edge.ncg.qft`
 - `edge.number.arithmetic`
-- `edge.number.bsd`
-- `edge.number.riemann`
 - `edge.number.trace_bridge`
 - `edge.optimal_transport.pde`
-- `edge.pde.navier`
 - `edge.pde.renormalization_bridge`
-- `edge.polymer.catalan_closure`
-- `edge.polymer.cluster_holes`
 - `edge.polymer.target_erasure_diagnostic`
-- `edge.polymer.target_preserving_ursell`
 - `edge.probability.constructive_qft`
 - `edge.probability.gaussian_collar`
 - `edge.probability.gaussian_markov_blanket`
 - `edge.probability.pde`
 - `edge.probability.random_matrix_bridge`
-- `edge.proof_geometry.pnp`
-- `edge.qft.aqft`
 - `edge.qft.constructive_qft`
-- `edge.qft.renormalization_group`
-- `edge.qft.yang_mills`
-- `edge.qinfo.cmi_recovery`
 - `edge.qinfo.no_signalling`
-- `edge.rate_budget.cluster_holes`
 - `edge.representation.automorphic`
 - `edge.representation.langlands_bridge`
-- `edge.representation.yang_mills`
-- `edge.rg.cluster_holes`
 - `edge.rg.lattice_scaling`
 - `edge.rg.localized_homotopy_defect`
-- `edge.rg.polymer_expansions`
-- `edge.rg.rooted_leaf`
-- `edge.rg.ym_critical_dimension`
 - `edge.rg.ym_rg_activity`
-- `edge.rooted_leaf.catalan_closure`
-- `edge.rooted_leaf.rate_budget`
 - `edge.spectral.random_matrix_bridge`
 - `edge.spectral.trace_bridge`
-- `edge.spectral.yang_mills`
 - `edge.target_erasure.cluster_holes`
 - `edge.target_erasure.target_preserving`
-- `edge.target_preserving.rooted_leaf`
-- `edge.target_preserving.yang_mills`
 - `edge.topology.geometry`
-- `edge.topology.hodge`
-- `edge.topology.poincare`
-- `edge.trace.riemann`
-- `edge.ym_critical_dimension.mass_gap`
-- `edge.ym_critical_dimension.rg_activity`
 

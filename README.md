@@ -23,6 +23,7 @@ The research interface reads the canonical JSON graph directly. It includes:
 - Node dossiers with questions, references, incoming/outgoing mechanisms and Lean targets.
 - A bridge-card generator that produces explicitly exploratory Markdown scaffolds.
 - Visible-subgraph export, shareable URL state, bilingual UI, dark mode and offline caching.
+- Direct primary or stable references on 45 high-value edges, including Millennium-problem routes, constructive RG/polymer mechanisms and AQFT/QI bridges.
 
 Evidence labels are part of the data model: `formal`, `literature`, `heuristic` and `speculative`. A visual connection is never intended to imply a theorem.
 
@@ -44,7 +45,7 @@ graph/
 
 The graph is designed for humans, scripts and research agents. Every node has a stable ID, summary, tags, live questions and one or more bounded Lean targets. Every edge states a mechanism rather than merely asserting that two subjects are “related”.
 
-Generated Markdown projections in `views/` are derived artifacts; JSON remains canonical. [`docs/GRAPH_AUDIT.md`](./docs/GRAPH_AUDIT.md) exposes topology, direct-reference coverage and unresolved citation debt.
+Generated Markdown projections in `views/` are derived artifacts; JSON remains canonical. [`docs/GRAPH_AUDIT.md`](./docs/GRAPH_AUDIT.md) exposes topology, direct-reference coverage and unresolved citation debt. [`docs/SCIENTIFIC_REFERENCE_UPGRADE.md`](./docs/SCIENTIFIC_REFERENCE_UPGRADE.md) records the first targeted hardening pass. Current evidence coverage is 15/58 nodes with direct references, 45/112 edges with direct references and 8 formal nodes with named Lean declarations.
 
 ## Source curation
 
@@ -61,10 +62,13 @@ PhysMathKnowledgeTree/
 ├── Foundation.lean               # Typed node, edge, evidence and target structures
 ├── Metadata.lean                 # Schema/repository metadata
 ├── Bridges/Examples.lean         # Example bridge records
+├── Formal/Microtheorems.lean     # Small checked lemmas tied to formal graph nodes
 └── Problems/Millennium.lean      # Typed problem cards and calibration case
 ```
 
 The project is pinned to Lean/mathlib `v4.31.0`.
+
+The formal layer now includes modest but real microtheorems for rate-budget algebra, lattice/physical scaling, target-erasure detection, finite nonselective-operation collapse, rooted child-factorial products and localized homotopy boundary defects. These are proof-bearing toy mechanisms, not claims that the surrounding research programs are solved.
 
 ```bash
 lake build

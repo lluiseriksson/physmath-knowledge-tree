@@ -7,6 +7,8 @@ This release consolidates the complete research graph, bilingual learning map an
 ## Main improvements
 
 - deterministic topology and evidence audit for the canonical graph;
+- direct references added to 45 high-value graph edges, reducing formal/literature edge citation debt from 95 to 51;
+- Lean microtheorems linked from formal graph nodes, raising formal nodes with named declarations from 3 to 8;
 - curation schema 1.2.0 with TXT/Markdown/PNG verification, bounded image regions, explicit user approval and a conservative deletion gate;
 - generated curation report exposing every unresolved primary-source request;
 - route-aware PWA caching, dedicated offline fallback and version-scoped cache cleanup;
@@ -20,10 +22,11 @@ This release consolidates the complete research graph, bilingual learning map an
 
 - research graph: **58 nodes, 112 edges, 23 moves, 8 collections**;
 - topology: **1 connected component, 0 isolated nodes, 58/58 root-reachable**;
+- evidence coverage: **15 directly referenced nodes, 45 directly referenced edges and 8 formal nodes with named Lean declarations**;
 - learning graph: **90 topics and 199 prerequisite edges**;
 - curation: **3 records, 45 decisions, 18 open source-verification requests, 3 pending user reviews**;
 - automated tests: **33 passed, 0 failed**;
-- production build: **70 files**, each verified against `dist/build-manifest.json`;
+- production build: **71 files**, each verified against `dist/build-manifest.json`;
 - dependency audit: **0 known npm vulnerabilities**.
 
 ## Deliberate boundaries

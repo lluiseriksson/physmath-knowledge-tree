@@ -11,6 +11,8 @@ Release notes: [`docs/RELEASE_2_4_0.md`](./docs/RELEASE_2_4_0.md).
 - Curation schema 1.2 with machine-readable PNG crop regions, explicit user-review state and a conservative deletion gate.
 - Local source re-verification, UTF-8/PNG structural checks and a deterministic curation deletion-gate report.
 - Deterministic graph integrity/evidence audit with explicit citation debt.
+- Direct references for 45 high-value graph edges across Millennium-problem routes, constructive RG/polymer mechanisms and AQFT/QI bridges.
+- Lean microtheorems for exact rate-budget algebra, physical/lattice exponent conversion, target-erasure detection, finite nonselective-operation collapse, child-factorial congruence and localized homotopy boundary defects.
 - Static accessibility, PWA shell and SHA-pinned workflow validators.
 - Dedicated offline page, route-aware service-worker fallback and version-aligned cache.
 - Deterministic SHA-256 build manifest with post-build verification.
@@ -21,6 +23,7 @@ Release notes: [`docs/RELEASE_2_4_0.md`](./docs/RELEASE_2_4_0.md).
 - Release, graph-count, Lean metadata and service-worker versions are synchronized.
 - Drawer/detail focus management, accessible search names, progress semantics and keyboard graph navigation are improved.
 - Edge schema now accepts direct reference objects for incremental citation-debt reduction.
+- Formal graph nodes now link to named declarations in `PhysMathKnowledgeTree/Formal/Microtheorems.lean`.
 - The complete quality gate validates generated audits, pinned workflow dependencies and the built artifact.
 
 ### Fixed

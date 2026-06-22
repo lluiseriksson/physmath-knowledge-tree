@@ -23,9 +23,18 @@ lake build
 
 ## Current formal scope
 
-`PhysMathKnowledgeTree/Foundation.lean` defines typed metadata for confidence levels, node kinds, edge kinds, Lean targets, knowledge nodes and knowledge edges. Other modules provide representative bridge and problem cards plus schema metadata.
+`PhysMathKnowledgeTree/Foundation.lean` defines typed metadata for confidence levels, node kinds, edge kinds, Lean targets, knowledge nodes and knowledge edges. Other modules provide representative bridge and problem cards, schema metadata and small proof-bearing mechanisms.
 
-This formal layer guarantees that the examples are well-typed records. It does **not** prove the informal scientific mechanisms represented by JSON edges.
+`PhysMathKnowledgeTree/Formal/Microtheorems.lean` contains deliberately small lemmas tied to formal graph nodes:
+
+- `appendixFRateBudgetIdentity` for exact decay-budget bookkeeping;
+- `physicalExponentIdentity` for lattice/physical exponent conversion;
+- `coarseBudgetEqualOfSameMasses` for target-erasure diagnostics;
+- `nonselectiveExpectationCollapse` for the finite completeness-collapse step in no-signalling arguments;
+- `childFactorialProductCongr` for rooted child-factorial products;
+- `localizedHomotopyBoundaryDefect` for the ungraded projector-localization identity.
+
+This formal layer proves these bounded mechanisms and guarantees that the examples are well-typed records. It does **not** prove the informal scientific mechanisms represented by JSON edges.
 
 ## Adding a formal target
 

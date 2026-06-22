@@ -25,9 +25,10 @@ Validated:
 - static accessibility invariants across 4 pages;
 - PWA shell: application version 2.4.0 with 31 explicitly cached entries and a dedicated offline fallback;
 - 5 generated research views;
+- evidence hardening: 45 directly referenced edges and 8 formal nodes with named Lean declarations;
 - formatting invariants;
 - automated tests: 33 passed, 0 failed;
-- static production build: 70 files verified byte-for-byte against `dist/build-manifest.json`.
+- static production build: 71 files verified byte-for-byte against `dist/build-manifest.json`.
 
 `npm audit --omit=dev` reported **0 vulnerabilities**.
 
@@ -48,7 +49,9 @@ All three current deletion gates remain awaiting explicit user review; no raw or
 
 ## Lean layer
 
-The repository retains its pinned Lean 4.31.0/mathlib configuration and Lean source files. The local execution environment used for this release did not provide the `lake` executable, so no local `lake build` result is claimed. The pinned GitHub Actions job runs `lake build --wfail`, `mk_all` and `leanchecker` through `leanprover/lean-action`.
+The repository retains its pinned Lean 4.31.0/mathlib configuration and Lean source files. No local Lean pass is claimed in this record; the pinned GitHub Actions job runs `lake build --wfail`, `mk_all` and `leanchecker` through `leanprover/lean-action`.
+
+The current formal layer includes checked microtheorem targets for six graph mechanisms: rate-budget bookkeeping, physical/lattice exponent conversion, target-erasure detection, finite nonselective-operation collapse, child-factorial products and localized homotopy boundary defects.
 
 ## Reproducibility boundary
 

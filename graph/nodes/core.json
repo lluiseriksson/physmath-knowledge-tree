@@ -1134,9 +1134,12 @@
     ],
     "lean": {
       "imports": [
-        "Mathlib"
+        "Mathlib",
+        "PhysMathKnowledgeTree.Formal.Microtheorems"
       ],
-      "declarations": [],
+      "declarations": [
+        "physicalExponentIdentity"
+      ],
       "targets": [
         "Prove the exact exponent identity, ceiling discretization bounds and block-scale invariance of physical mass."
       ]
@@ -1251,10 +1254,12 @@
     ],
     "lean": {
       "imports": [
-        "Mathlib.Data.Finset.Basic"
+        "Mathlib.Data.Finset.Basic",
+        "PhysMathKnowledgeTree.Formal.Microtheorems"
       ],
       "declarations": [
-        "Finset.sum_pow'"
+        "Finset.sum_pow'",
+        "coarseBudgetEqualOfSameMasses"
       ],
       "targets": [
         "Formalize the root-marked factorization rootedMass * totalMass^n for a finite vertex-product sum.",
@@ -1366,9 +1371,12 @@
     ],
     "lean": {
       "imports": [
-        "Mathlib.Data.Real.Basic"
+        "Mathlib.Data.Real.Basic",
+        "PhysMathKnowledgeTree.Formal.Microtheorems"
       ],
-      "declarations": [],
+      "declarations": [
+        "appendixFRateBudgetIdentity"
+      ],
       "targets": [
         "Prove the exact algebraic rate identity and monotonicity corollaries under nonnegative residual rate.",
         "Parameterize how much decay is reserved for target extraction, leaf moments, cardinality tilts and convergence margins.",
@@ -1499,9 +1507,12 @@
     ],
     "lean": {
       "imports": [
-        "Mathlib"
+        "Mathlib",
+        "PhysMathKnowledgeTree.Formal.Microtheorems"
       ],
-      "declarations": [],
+      "declarations": [
+        "nonselectiveExpectationCollapse"
+      ],
       "targets": [
         "Prove the finite matrix identity sum_i omega(K_i† Y K_i) = omega(Y) from commutation and sum_i K_i†K_i = 1."
       ]
@@ -1588,9 +1599,12 @@
     ],
     "lean": {
       "imports": [
-        "Mathlib"
+        "Mathlib",
+        "PhysMathKnowledgeTree.Formal.Microtheorems"
       ],
-      "declarations": [],
+      "declarations": [
+        "childFactorialProductCongr"
+      ],
       "targets": [
         "Prove the exact normalized rooted child-factorial tree sum equals the Catalan number under the repository tree convention.",
         "Derive the closed majorant B = (1 - sqrt(1 - 4 M^2 epsilon)) / (2 M) and its quadratic fixed-point equation."
@@ -1614,9 +1628,12 @@
     ],
     "lean": {
       "imports": [
-        "Mathlib"
+        "Mathlib",
+        "PhysMathKnowledgeTree.Formal.Microtheorems"
       ],
-      "declarations": [],
+      "declarations": [
+        "localizedHomotopyBoundaryDefect"
+      ],
       "targets": [
         "Prove the ungraded projector-localization identity in finite linear algebra.",
         "Add the graded Koszul-sign version only after the degree conventions are fixed."

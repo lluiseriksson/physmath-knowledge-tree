@@ -1,4 +1,5 @@
 import PhysMathKnowledgeTree.Bridges.Examples
+import PhysMathKnowledgeTree.Formal.Microtheorems
 import PhysMathKnowledgeTree.Foundation
 import PhysMathKnowledgeTree.Metadata
 import PhysMathKnowledgeTree.Problems.Millennium
