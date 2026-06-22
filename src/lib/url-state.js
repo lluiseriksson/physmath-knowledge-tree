@@ -1,0 +1,3 @@
+// @ts-check
+export function readUrlState(url=new URL(window.location.href)){const topic=url.searchParams.get('topic'),focus=url.searchParams.get('focus'),view=url.searchParams.get('view');return {topic,focus:focus==='path'||focus==='neighborhood'?focus:null,view:view==='list'?'list':'graph'};}
+export function writeUrlState(state,mode='replace'){const url=new URL(window.location.href);state.topic?url.searchParams.set('topic',state.topic):url.searchParams.delete('topic');state.focus?url.searchParams.set('focus',state.focus):url.searchParams.delete('focus');state.view==='list'?url.searchParams.set('view','list'):url.searchParams.delete('view');history[mode==='push'?'pushState':'replaceState']({},'',url);}

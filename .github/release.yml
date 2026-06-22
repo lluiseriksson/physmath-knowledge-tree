@@ -1,0 +1,21 @@
+changelog:
+  exclude:
+    labels:
+      - skip-changelog
+  categories:
+    - title: Curriculum
+      labels:
+        - content
+    - title: Features
+      labels:
+        - enhancement
+    - title: Fixes
+      labels:
+        - bug
+    - title: Dependencies and automation
+      labels:
+        - dependencies
+        - github-actions
+    - title: Other changes
+      labels:
+        - '*'

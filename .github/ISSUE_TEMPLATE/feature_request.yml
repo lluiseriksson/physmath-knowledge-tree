@@ -1,0 +1,33 @@
+name: Feature request
+description: Propose a learner-focused product or engineering improvement.
+title: '[Feature]: '
+labels: [enhancement, triage]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: Describe the learner or maintainer need, not only the proposed interface.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed approach
+      description: Explain how the feature would work and what would remain unchanged.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives and trade-offs
+      description: Include accessibility, privacy, offline, dependency, and maintenance considerations when relevant.
+  - type: checkboxes
+    id: principles
+    attributes:
+      label: Project principles
+      options:
+        - label: The proposal can preserve a usable keyboard and list-view experience.
+        - label: The proposal does not require tracking or mandatory accounts.
+        - label: I searched existing issues for related proposals.
+          required: true

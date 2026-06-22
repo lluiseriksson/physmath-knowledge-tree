@@ -1,33 +1,32 @@
 # Roadmap
 
-## Phase 0: Seed atlas
+The repository starts with a complete, maintainable core. Future work should be guided by learner evidence rather than feature count.
 
-- Define the ontology of nodes, edges and moves.
-- Seed core domains of mathematics and physics-mathematics.
-- Create initial maps for the Millennium Problems.
-- Keep validation scripts free of heavy dependencies.
+## Near term
 
-## Phase 1: Lean spine
+- Review all 90 topics with mathematics and physics educators.
+- Add content provenance and optional high-quality resource links through a separately validated data field.
+- Run accessibility testing with VoiceOver, NVDA, keyboard-only navigation, and high-contrast settings.
+- Add browser-level interaction tests when a dependency-free or clearly justified test harness is selected.
+- Improve graph layout for very narrow viewports and unusually large focused paths.
 
-- Map nodes to mathlib imports and declarations.
-- Create small formalization targets for each domain.
-- Add examples of equivalences, functors, dualities and structures.
-- Run Lean CI on every PR.
+## Medium term
 
-## Phase 2: Problem boards
+- Let learners define a target date and weekly study budget.
+- Generate printable, ordered study plans from selected targets.
+- Add optional notes per topic while keeping all data local-first.
+- Support additional languages through complete catalog translations.
+- Introduce versioned curriculum migrations for stable imported progress.
 
-- One board per open problem.
-- Separate established facts, obstacles, heuristics and bridges.
-- Maintain lists of falsifiers and computational experiments.
+## Longer term
 
-## Phase 3: Bridge mining
+- Community-maintained curriculum variants for different degrees and examination systems.
+- Evidence-based diagnostic quizzes that never block manual progress.
+- Optional encrypted synchronization through a separately reviewed architecture.
 
-- Generate candidates from short graph paths.
-- Score bridges by novelty, rigor, transferability and testability.
-- Create indexes for external vector search without coupling the repository.
+## Explicit non-goals for the core
 
-## Phase 4: Compute campaigns
-
-- Convert promising bridge cards into parallelizable tasks.
-- Run Lean searches, symbolic experiments and simulations.
-- Record negative results as useful knowledge.
+- Mandatory accounts or cloud storage.
+- Advertising, tracking, engagement manipulation, or opaque recommendations.
+- Replacing textbooks, instructors, experiments, or formal assessment.
+- Adding dependencies solely for convenience when browser standards are sufficient.

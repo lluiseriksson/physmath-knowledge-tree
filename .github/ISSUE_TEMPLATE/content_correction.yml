@@ -1,0 +1,57 @@
+name: Curriculum correction
+description: Correct a topic, translation, taxonomy, estimate, or prerequisite edge.
+title: '[Content]: '
+labels: [content, triage]
+body:
+  - type: input
+    id: topic
+    attributes:
+      label: Topic ID or title
+      placeholder: quantum-field-theory
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Type of correction
+      options:
+        - Prerequisite relationship
+        - Scientific or mathematical accuracy
+        - English wording
+        - Spanish wording
+        - Classification or level
+        - Study-time estimate
+        - Missing topic
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Current problem
+      description: State exactly what is inaccurate, unclear, or incomplete.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Proposed correction
+      description: Include both language variants when changing learner-visible content.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Supporting sources
+      description: Cite a reputable textbook, syllabus, standard, or peer-reviewed source when relevant.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I read the curriculum content guide.
+          required: true
+        - label: I searched existing issues for a duplicate.
+          required: true

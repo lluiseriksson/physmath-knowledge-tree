@@ -1,0 +1,56 @@
+name: Bug report
+description: Report reproducible incorrect behavior.
+title: '[Bug]: '
+labels: [bug, triage]
+body:
+  - type: markdown
+    attributes:
+      value: Thank you for helping improve the knowledge tree. Do not include private progress exports or security vulnerabilities here.
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the observed behavior and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      placeholder: |
+        1. Open …
+        2. Select …
+        3. Observe …
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and operating system
+      placeholder: Firefox 128 on Ubuntu 24.04
+    validations:
+      required: true
+  - type: dropdown
+    id: input
+    attributes:
+      label: Input method
+      options:
+        - Mouse or touchpad
+        - Keyboard only
+        - Touchscreen
+        - Screen reader
+        - Other
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots or console output
+      description: Remove personal information before attaching evidence.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I searched existing issues for a duplicate.
+          required: true
+        - label: This is not a security vulnerability.
+          required: true

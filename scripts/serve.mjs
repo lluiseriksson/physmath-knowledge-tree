@@ -1,0 +1,8 @@
+import {createReadStream,existsSync,statSync} from 'node:fs';
+import {createServer} from 'node:http';
+import {fileURLToPath} from 'node:url';
+import {extname,join,normalize,resolve} from 'node:path';
+const root=resolve(process.argv[2]||fileURLToPath(new URL('..',import.meta.url))),port=Number(process.env.PORT||4173);
+const mime={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.mjs':'text/javascript; charset=utf-8','.json':'application/json; charset=utf-8','.webmanifest':'application/manifest+json; charset=utf-8','.svg':'image/svg+xml','.png':'image/png','.txt':'text/plain; charset=utf-8'};
+const server=createServer((req,res)=>{try{const url=new URL(req.url||'/',`http://${req.headers.host||'localhost'}`);let pathname=decodeURIComponent(url.pathname);if(pathname.endsWith('/'))pathname+='index.html';const file=normalize(join(root,pathname));if(!file.startsWith(root)){res.writeHead(403);res.end('Forbidden');return}if(!existsSync(file)||!statSync(file).isFile()){res.writeHead(404,{'Content-Type':'text/plain; charset=utf-8'});res.end('Not found');return}res.writeHead(200,{'Content-Type':mime[extname(file)]||'application/octet-stream','Cache-Control':'no-store','X-Content-Type-Options':'nosniff','Referrer-Policy':'no-referrer','Content-Security-Policy':"default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"});createReadStream(file).pipe(res)}catch(error){res.writeHead(500);res.end('Internal server error');console.error(error)}});
+server.listen(port,'127.0.0.1',()=>console.log(`PhysMath Knowledge Tree: http://127.0.0.1:${port}`));
