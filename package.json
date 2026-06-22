@@ -12,6 +12,7 @@
     "dev": "node scripts/serve.mjs",
     "build": "node scripts/build.mjs",
     "test": "node --test --test-reporter=spec",
+    "test:coverage": "node --experimental-test-coverage --test-coverage-lines=100 --test --test-reporter=spec",
     "generate:views": "node scripts/generate-views.mjs",
     "generate:audit": "node scripts/generate-graph-audit.mjs",
     "generate:curation-report": "node scripts/generate-curation-report.mjs",
@@ -30,7 +31,7 @@
     "curation:verify-source": "node scripts/verify-curation-source.mjs",
     "curation:report": "node scripts/generate-curation-report.mjs",
     "validate:curation": "node scripts/validate-curation.mjs",
-    "check": "npm run validate:syntax && npm run validate:graph && npm run validate:curation && npm run validate:curation-report && npm run validate:learning && npm run validate:links && npm run validate:accessibility && npm run validate:pwa && npm run validate:views && npm run validate:audit && npm run validate:workflows && npm run validate:format && npm test && npm run build && npm run validate:dist",
+    "check": "npm run validate:syntax && npm run validate:graph && npm run validate:curation && npm run validate:curation-report && npm run validate:learning && npm run validate:links && npm run validate:accessibility && npm run validate:pwa && npm run validate:views && npm run validate:audit && npm run validate:workflows && npm run validate:format && npm run test:coverage && npm run build && npm run validate:dist",
     "validate:workflows": "node scripts/check-workflows.mjs"
   }
 }

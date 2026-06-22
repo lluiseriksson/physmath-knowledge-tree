@@ -2,6 +2,22 @@
 
 All notable changes are documented here. The project follows semantic versioning for its application and schema releases.
 
+## [Unreleased]
+
+### Added
+
+- A `test:coverage` quality gate that fails below 100% line coverage for the instrumented Node-tested modules.
+- Regression tests for malformed/traversal requests, safe 500 responses, preference-storage failures and coincident graph-layout points.
+
+### Changed
+
+- The complete `npm run check` gate now enforces line coverage instead of running the non-threshold test command.
+- Static-server startup is exposed through testable helpers and reports the actual ephemeral port when `PORT=0`.
+
+### Fixed
+
+- The development server no longer logs port `0` after the operating system assigns an ephemeral port.
+
 ## [2.4.0] — 2026-06-22
 
 Release notes: [`docs/RELEASE_2_4_0.md`](./docs/RELEASE_2_4_0.md).

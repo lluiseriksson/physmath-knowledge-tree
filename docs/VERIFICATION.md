@@ -27,8 +27,9 @@ Validated:
 - 5 generated research views;
 - evidence hardening: 45 directly referenced edges and 8 formal nodes with named Lean declarations;
 - formatting invariants;
-- automated tests: 33 passed, 0 failed;
-- static production build: 71 files verified byte-for-byte against `dist/build-manifest.json`.
+- automated tests: 38 passed, 0 failed;
+- line coverage: 100.00% for the production modules instrumented by the Node 22.16.0 and Node 24.17.0 test runners;
+- static production build: 73 files total, with 72 payload entries verified byte-for-byte against `dist/build-manifest.json`.
 
 `npm audit --omit=dev` reported **0 vulnerabilities**.
 

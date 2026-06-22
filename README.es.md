@@ -69,6 +69,7 @@ Abre `http://127.0.0.1:4173`.
 Batería completa de calidad:
 
 ```bash
+npm run test:coverage
 npm run check
 ```
 

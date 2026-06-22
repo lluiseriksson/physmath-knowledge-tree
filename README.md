@@ -112,7 +112,8 @@ npm run build
 | `npm run validate:workflows` | Require explicit permissions and full-SHA pins for external GitHub Actions. |
 | `npm run validate:learning` | Check bilingual curriculum taxonomies, prerequisites and DAG structure. |
 | `npm run validate:views` | Confirm generated Markdown/Mermaid projections match canonical JSON. |
-| `npm test` | Run graph, search, layout, path, persistence and data tests. |
+| `npm test` | Run graph, search, layout, path, persistence, server and data tests. |
+| `npm run test:coverage` | Run the test suite and enforce 100% line coverage for instrumented Node-tested modules. |
 | `npm run generate:views` | Regenerate deterministic projections in `views/`. |
 | `npm run build` | Produce a deployable static site in `dist/`. |
 | `npm run check` | Run syntax, schemas, curation, links, accessibility, PWA, workflows, tests and reproducible-build checks. |

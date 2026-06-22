@@ -56,3 +56,16 @@ test('layout is deterministic and finite', () => {
     assert.ok(Number.isFinite(point.y));
   }
 });
+
+
+test('layout handles coincident node positions without non-finite forces', () => {
+  const coincident = [
+    { id: 'same', kind: 'domain', title: 'First' },
+    { id: 'same', kind: 'domain', title: 'Second' },
+  ];
+  const layout = createResearchLayout(coincident, [], { iterations: 1 });
+  const point = layout.positions.get('same');
+  assert.ok(point);
+  assert.ok(Number.isFinite(point.x));
+  assert.ok(Number.isFinite(point.y));
+});

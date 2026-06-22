@@ -5,8 +5,11 @@ import {
   exportProgress,
   importProgress,
   loadProgress,
+  loadPreference,
   MAX_IMPORT_BYTES,
+  PREFERENCE_KEY,
   sanitizeProgress,
+  savePreference,
   saveProgress,
   STORAGE_KEY,
   validateProgressFile,
@@ -67,4 +70,25 @@ test('malformed storage falls back safely', () => {
   const storage = new MemoryStorage();
   storage.setItem(STORAGE_KEY, '{bad');
   assert.equal(loadProgress(ids, storage).schemaVersion, 1);
+});
+
+
+test('preferences persist strings and degrade safely when storage is unavailable', () => {
+  const previous = globalThis.localStorage;
+  const storage = new MemoryStorage();
+  globalThis.localStorage = storage;
+  try {
+    assert.equal(loadPreference('theme', 'system'), 'system');
+    savePreference('theme', 'dark');
+    assert.equal(loadPreference('theme', 'system'), 'dark');
+
+    storage.setItem(PREFERENCE_KEY, JSON.stringify({ theme: 7 }));
+    assert.equal(loadPreference('theme', 'system'), 'system');
+
+    storage.setItem(PREFERENCE_KEY, '{bad');
+    assert.equal(loadPreference('theme', 'system'), 'system');
+    assert.doesNotThrow(() => savePreference('theme', 'light'));
+  } finally {
+    previous === undefined ? delete globalThis.localStorage : (globalThis.localStorage = previous);
+  }
 });

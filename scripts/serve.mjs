@@ -77,12 +77,23 @@ export function createStaticServer(root = defaultRoot) {
   });
 }
 
-const isMain = process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href;
-if (isMain) {
-  const root = resolve(process.argv[2] || defaultRoot);
-  const port = Number(process.env.PORT || 4173);
-  if (!Number.isInteger(port) || port < 0 || port > 65535) throw new Error(`Invalid PORT: ${process.env.PORT}`);
-  createStaticServer(root).listen(port, '127.0.0.1', () => {
-    console.log(`PhysMath Knowledge Tree: http://127.0.0.1:${port}`);
-  });
+/** Parse and validate the development server port. */
+export function parsePort(value = process.env.PORT) {
+  const port = Number(value || 4173);
+  if (!Number.isInteger(port) || port < 0 || port > 65535) throw new Error(`Invalid PORT: ${value}`);
+  return port;
 }
+
+/** Start the local server and report the actual bound port (including ephemeral port 0). */
+export function startStaticServer(root = defaultRoot, port = parsePort(), log = console.log) {
+  const server = createStaticServer(root);
+  server.listen(port, '127.0.0.1', () => {
+    const address = server.address();
+    const boundPort = address && typeof address === 'object' ? address.port : port;
+    log(`PhysMath Knowledge Tree: http://127.0.0.1:${boundPort}`);
+  });
+  return server;
+}
+
+const isMain = process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href;
+if (isMain) startStaticServer(resolve(process.argv[2] || defaultRoot), parsePort(process.env.PORT));
