@@ -48,6 +48,15 @@ flowchart LR
   bridge_target_preserving_ursell_summation["Target-preserving Ursell summation"]
   bridge_rooted_leaf_factorial_moments["Rooted leaf elimination by factorial moments"]
   bridge_appendix_f_rate_budget_split["Appendix-F rate-budget decomposition"]
+  domain_algebraic_quantum_field_theory["Algebraic quantum field theory"]
+  domain_quantum_information_theory["Quantum information theory"]
+  bridge_reeh_schlieder_vacuum_nonfactorization["Reeh–Schlieder vacuum nonfactorization"]
+  bridge_local_operations_no_signalling["Local complete operations preserve spacelike statistics"]
+  bridge_conditional_mutual_information_recovery["Conditional mutual information to uniform recovery"]
+  bridge_gaussian_precision_markov_blanket["Sparse Gaussian precision as an exact Markov blanket"]
+  bridge_rooted_tree_catalan_closure["Exact Catalan closure of rooted child-factorial tree sums"]
+  bridge_localized_homotopy_boundary_defect["Boundary defect from localizing a homotopy"]
+  bridge_yang_mills_critical_dimension["Four-dimensional Yang–Mills as the marginal dimension"]
   domain_foundation_logic -->|uses| domain_category_theory
   domain_category_theory -->|generalizes| domain_algebra
   domain_category_theory -->|uses| domain_algebraic_geometry
@@ -142,3 +151,21 @@ flowchart LR
   bridge_rooted_leaf_factorial_moments -->|transfers_via| bridge_appendix_f_rate_budget_split
   bridge_appendix_f_rate_budget_split -->|transfers_via| bridge_cluster_expansion_with_holes
   bridge_target_preserving_ursell_summation -->|suggests| problem_yang_mills_mass_gap
+  domain_quantum_field_theory -->|specializes| domain_algebraic_quantum_field_theory
+  domain_functional_analysis -->|uses| domain_algebraic_quantum_field_theory
+  domain_algebraic_quantum_field_theory -->|uses| bridge_reeh_schlieder_vacuum_nonfactorization
+  domain_algebraic_quantum_field_theory -->|uses| bridge_local_operations_no_signalling
+  domain_quantum_information_theory -->|uses| bridge_local_operations_no_signalling
+  domain_quantum_information_theory -->|uses| bridge_conditional_mutual_information_recovery
+  domain_algebraic_quantum_field_theory -->|suggests| bridge_conditional_mutual_information_recovery
+  domain_probability_stochastics -->|uses| bridge_gaussian_precision_markov_blanket
+  bridge_gaussian_precision_markov_blanket -->|transfers_via| bridge_gaussian_covariance_collar
+  bridge_rooted_leaf_factorial_moments -->|uses| bridge_rooted_tree_catalan_closure
+  domain_polymer_cluster_expansions -->|uses| bridge_rooted_tree_catalan_closure
+  bridge_rooted_tree_catalan_closure -->|transfers_via| bridge_appendix_f_rate_budget_split
+  domain_renormalization_group -->|uses| bridge_localized_homotopy_boundary_defect
+  bridge_localized_homotopy_boundary_defect -->|suggests| problem_uniform_yang_mills_rg_activity
+  domain_gauge_theory -->|uses| bridge_yang_mills_critical_dimension
+  domain_renormalization_group -->|uses| bridge_yang_mills_critical_dimension
+  bridge_yang_mills_critical_dimension -->|uses| problem_yang_mills_mass_gap
+  bridge_yang_mills_critical_dimension -->|uses| problem_uniform_yang_mills_rg_activity

@@ -1,8 +1,11 @@
 {
   "id": "curation.ideas_12",
-  "schema_version": "1.0.0",
+  "schema_version": "1.2.0",
   "processed": "2026-06-22",
   "status": "curated",
+  "review": {
+    "status": "pending"
+  },
   "source": {
     "filename": "ideas(12).txt",
     "media_type": "text/plain",
@@ -19,15 +22,36 @@
       "classification": "literature",
       "rationale": "This is the most stable repeated dependency: connected Mayer covers, active-skeleton incompatibility, full-target locality, ultralocal integration and a second Ursell expansion.",
       "source_ranges": [
-        {"start_line": 354, "end_line": 3411},
-        {"start_line": 5371, "end_line": 6415},
-        {"start_line": 10889, "end_line": 12417},
-        {"start_line": 17428, "end_line": 19710}
+        {
+          "start_line": 354,
+          "end_line": 3411
+        },
+        {
+          "start_line": 5371,
+          "end_line": 6415
+        },
+        {
+          "start_line": 10889,
+          "end_line": 12417
+        },
+        {
+          "start_line": 17428,
+          "end_line": 19710
+        }
       ],
       "destinations": [
-        {"type": "graph_node", "value": "bridge.cluster_expansion_with_holes"},
-        {"type": "research_move", "value": "move.separate_support_roles"},
-        {"type": "document", "value": "docs/curated/IDEAS-12-MATHEMATICAL-EXTRACT.md"}
+        {
+          "type": "graph_node",
+          "value": "bridge.cluster_expansion_with_holes"
+        },
+        {
+          "type": "research_move",
+          "value": "move.separate_support_roles"
+        },
+        {
+          "type": "document",
+          "value": "docs/curated/IDEAS-12-MATHEMATICAL-EXTRACT.md"
+        }
       ]
     },
     {
@@ -36,13 +60,28 @@
       "classification": "formal",
       "rationale": "The identity follows algebraically from an exact unweighted Ward identity and a stated Leibniz rule; physical use remains a separate instantiation problem.",
       "source_ranges": [
-        {"start_line": 1, "end_line": 353},
-        {"start_line": 7590, "end_line": 7698}
+        {
+          "start_line": 1,
+          "end_line": 353
+        },
+        {
+          "start_line": 7590,
+          "end_line": 7698
+        }
       ],
       "destinations": [
-        {"type": "graph_node", "value": "bridge.ward_defect_weight_variation"},
-        {"type": "research_move", "value": "move.cancel_before_majorizing"},
-        {"type": "document", "value": "docs/curated/IDEAS-12-MATHEMATICAL-EXTRACT.md"}
+        {
+          "type": "graph_node",
+          "value": "bridge.ward_defect_weight_variation"
+        },
+        {
+          "type": "research_move",
+          "value": "move.cancel_before_majorizing"
+        },
+        {
+          "type": "document",
+          "value": "docs/curated/IDEAS-12-MATHEMATICAL-EXTRACT.md"
+        }
       ]
     },
     {
@@ -51,12 +90,24 @@
       "classification": "literature",
       "rationale": "The source repeatedly separates exact independence from an interpolation defect and identifies a finite-dimensional theorem ladder that is mathematically reusable.",
       "source_ranges": [
-        {"start_line": 4221, "end_line": 4669},
-        {"start_line": 14996, "end_line": 15594}
+        {
+          "start_line": 4221,
+          "end_line": 4669
+        },
+        {
+          "start_line": 14996,
+          "end_line": 15594
+        }
       ],
       "destinations": [
-        {"type": "graph_node", "value": "bridge.gaussian_covariance_collar"},
-        {"type": "document", "value": "docs/curated/IDEAS-12-MATHEMATICAL-EXTRACT.md"}
+        {
+          "type": "graph_node",
+          "value": "bridge.gaussian_covariance_collar"
+        },
+        {
+          "type": "document",
+          "value": "docs/curated/IDEAS-12-MATHEMATICAL-EXTRACT.md"
+        }
       ]
     },
     {
@@ -65,11 +116,20 @@
       "classification": "formal",
       "rationale": "Once the block Poincare hypothesis and adjoint energy identity are stated, the lower bound is an elementary finite-dimensional inequality.",
       "source_ranges": [
-        {"start_line": 3790, "end_line": 4220}
+        {
+          "start_line": 3790,
+          "end_line": 4220
+        }
       ],
       "destinations": [
-        {"type": "graph_node", "value": "bridge.block_average_coercivity"},
-        {"type": "document", "value": "docs/curated/IDEAS-12-MATHEMATICAL-EXTRACT.md"}
+        {
+          "type": "graph_node",
+          "value": "bridge.block_average_coercivity"
+        },
+        {
+          "type": "document",
+          "value": "docs/curated/IDEAS-12-MATHEMATICAL-EXTRACT.md"
+        }
       ]
     },
     {
@@ -78,13 +138,28 @@
       "classification": "formal",
       "rationale": "The definitions d_phys = a n and m_phys = m_lat / a yield an exact exponent identity; the source also correctly separates this from the unresolved continuum limit.",
       "source_ranges": [
-        {"start_line": 3497, "end_line": 3790},
-        {"start_line": 4700, "end_line": 5370}
+        {
+          "start_line": 3497,
+          "end_line": 3790
+        },
+        {
+          "start_line": 4700,
+          "end_line": 5370
+        }
       ],
       "destinations": [
-        {"type": "graph_node", "value": "bridge.lattice_physical_scaling"},
-        {"type": "research_move", "value": "move.rescale_physical_units"},
-        {"type": "document", "value": "docs/curated/IDEAS-12-MATHEMATICAL-EXTRACT.md"}
+        {
+          "type": "graph_node",
+          "value": "bridge.lattice_physical_scaling"
+        },
+        {
+          "type": "research_move",
+          "value": "move.rescale_physical_units"
+        },
+        {
+          "type": "document",
+          "value": "docs/curated/IDEAS-12-MATHEMATICAL-EXTRACT.md"
+        }
       ]
     },
     {
@@ -93,12 +168,24 @@
       "classification": "literature",
       "rationale": "The source consistently relies on these two domains, which were implicit but absent from the canonical graph.",
       "source_ranges": [
-        {"start_line": 5371, "end_line": 6415},
-        {"start_line": 6476, "end_line": 9435}
+        {
+          "start_line": 5371,
+          "end_line": 6415
+        },
+        {
+          "start_line": 6476,
+          "end_line": 9435
+        }
       ],
       "destinations": [
-        {"type": "graph_node", "value": "domain.constructive_quantum_field_theory"},
-        {"type": "graph_node", "value": "domain.renormalization_group"}
+        {
+          "type": "graph_node",
+          "value": "domain.constructive_quantum_field_theory"
+        },
+        {
+          "type": "graph_node",
+          "value": "domain.renormalization_group"
+        }
       ]
     },
     {
@@ -107,13 +194,28 @@
       "classification": "literature",
       "rationale": "The source repeatedly distinguishes a defined gauge fluctuation activity from an opaque predicate carrying the desired estimate, yielding a precise project problem.",
       "source_ranges": [
-        {"start_line": 4090, "end_line": 4669},
-        {"start_line": 15324, "end_line": 15530},
-        {"start_line": 15806, "end_line": 17427}
+        {
+          "start_line": 4090,
+          "end_line": 4669
+        },
+        {
+          "start_line": 15324,
+          "end_line": 15530
+        },
+        {
+          "start_line": 15806,
+          "end_line": 17427
+        }
       ],
       "destinations": [
-        {"type": "graph_node", "value": "problem.uniform_yang_mills_rg_activity"},
-        {"type": "document", "value": "docs/curated/IDEAS-12-MATHEMATICAL-EXTRACT.md"}
+        {
+          "type": "graph_node",
+          "value": "problem.uniform_yang_mills_rg_activity"
+        },
+        {
+          "type": "document",
+          "value": "docs/curated/IDEAS-12-MATHEMATICAL-EXTRACT.md"
+        }
       ]
     }
   ],
@@ -124,12 +226,24 @@
       "classification": "speculative",
       "rationale": "No exact auxiliary representation or uniform polymer-profile decoupling theorem is supplied; the proposal can change the target theory and normalization.",
       "source_ranges": [
-        {"start_line": 299, "end_line": 353},
-        {"start_line": 677, "end_line": 753},
-        {"start_line": 15595, "end_line": 15684}
+        {
+          "start_line": 299,
+          "end_line": 353
+        },
+        {
+          "start_line": 677,
+          "end_line": 753
+        },
+        {
+          "start_line": 15595,
+          "end_line": 15684
+        }
       ],
       "destinations": [
-        {"type": "document", "value": "docs/curated/IDEAS-12-QUARANTINE.md"}
+        {
+          "type": "document",
+          "value": "docs/curated/IDEAS-12-QUARANTINE.md"
+        }
       ]
     },
     {
@@ -138,11 +252,20 @@
       "classification": "speculative",
       "rationale": "The source contains an interface and potential payoff, but no construction, locality proof, inverse or pure-measure identity.",
       "source_ranges": [
-        {"start_line": 737, "end_line": 753},
-        {"start_line": 22552, "end_line": 22703}
+        {
+          "start_line": 737,
+          "end_line": 753
+        },
+        {
+          "start_line": 22552,
+          "end_line": 22703
+        }
       ],
       "destinations": [
-        {"type": "document", "value": "docs/curated/IDEAS-12-QUARANTINE.md"}
+        {
+          "type": "document",
+          "value": "docs/curated/IDEAS-12-QUARANTINE.md"
+        }
       ]
     },
     {
@@ -151,10 +274,16 @@
       "classification": "speculative",
       "rationale": "The representation-theoretic degeneracy is real, but its transfer to a background-covariant RG shell pairing and improved polymer bound is only an analogy.",
       "source_ranges": [
-        {"start_line": 22704, "end_line": 23312}
+        {
+          "start_line": 22704,
+          "end_line": 23312
+        }
       ],
       "destinations": [
-        {"type": "document", "value": "docs/curated/IDEAS-12-QUARANTINE.md"}
+        {
+          "type": "document",
+          "value": "docs/curated/IDEAS-12-QUARANTINE.md"
+        }
       ]
     },
     {
@@ -163,10 +292,16 @@
       "classification": "speculative",
       "rationale": "Recovery maps reconstruct states or observables under hypotheses; they do not provide matter transport, spacetime geometry or a stress-energy solution.",
       "source_ranges": [
-        {"start_line": 23413, "end_line": 24369}
+        {
+          "start_line": 23413,
+          "end_line": 24369
+        }
       ],
       "destinations": [
-        {"type": "document", "value": "docs/curated/IDEAS-12-QUARANTINE.md"}
+        {
+          "type": "document",
+          "value": "docs/curated/IDEAS-12-QUARANTINE.md"
+        }
       ]
     },
     {
@@ -175,10 +310,16 @@
       "classification": "speculative",
       "rationale": "The proposed mechanism lacks a defined operator, norm, contraction theorem and verified comparison to the existing positive tree majorant.",
       "source_ranges": [
-        {"start_line": 22266, "end_line": 23344}
+        {
+          "start_line": 22266,
+          "end_line": 23344
+        }
       ],
       "destinations": [
-        {"type": "document", "value": "docs/curated/IDEAS-12-QUARANTINE.md"}
+        {
+          "type": "document",
+          "value": "docs/curated/IDEAS-12-QUARANTINE.md"
+        }
       ]
     },
     {
@@ -187,10 +328,16 @@
       "classification": "speculative",
       "rationale": "The elementary Ward identity is promoted separately, but the proposed contraction, cohomology split and nonlinear Mayer transgression are not established on the actual activity space.",
       "source_ranges": [
-        {"start_line": 24370, "end_line": 26014}
+        {
+          "start_line": 24370,
+          "end_line": 26014
+        }
       ],
       "destinations": [
-        {"type": "document", "value": "docs/curated/IDEAS-12-QUARANTINE.md"}
+        {
+          "type": "document",
+          "value": "docs/curated/IDEAS-12-QUARANTINE.md"
+        }
       ]
     }
   ],

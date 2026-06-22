@@ -2,6 +2,52 @@
 
 All notable changes are documented here. The project follows semantic versioning for its application and schema releases.
 
+## [2.4.0] — 2026-06-22
+
+Release notes: [`docs/RELEASE_2_4_0.md`](./docs/RELEASE_2_4_0.md).
+
+### Added
+
+- Curation schema 1.2 with machine-readable PNG crop regions, explicit user-review state and a conservative deletion gate.
+- Local source re-verification, UTF-8/PNG structural checks and a deterministic curation deletion-gate report.
+- Deterministic graph integrity/evidence audit with explicit citation debt.
+- Static accessibility, PWA shell and SHA-pinned workflow validators.
+- Dedicated offline page, route-aware service-worker fallback and version-aligned cache.
+- Deterministic SHA-256 build manifest with post-build verification.
+- Progress-import size/type limits and storage-failure resilience.
+
+### Changed
+
+- Release, graph-count, Lean metadata and service-worker versions are synchronized.
+- Drawer/detail focus management, accessible search names, progress semantics and keyboard graph navigation are improved.
+- Edge schema now accepts direct reference objects for incremental citation-debt reduction.
+- The complete quality gate validates generated audits, pinned workflow dependencies and the built artifact.
+
+### Fixed
+
+- README and historical audit count drift.
+- Query-string cache misses falling back from the learning map to the research page.
+- Immediate object-URL revocation during progress export.
+
+## [2.3.0] — 2026-06-22
+
+### Added
+
+- Curated provenance, mathematical extract, source queue and quarantine report for `ideas3(8).txt`.
+- Algebraic QFT and quantum-information domains; vacuum nonfactorization, no-signalling, CMI recovery and Gaussian Markov-blanket bridges.
+- Exact rooted-tree Catalan closure, localized-homotopy boundary defect and four-dimensional Yang–Mills marginality bridges.
+- Research moves for parent-kernel normalization, exact generating-function closure, separator conditioning, uniform recovery and homotopy localization.
+- AQFT locality/recovery collection and proof playbook.
+
+### Changed
+
+- Research graph expanded to 58 nodes, 112 edges, 23 moves and 8 collections.
+- The target-sensitive Appendix-F playbook now distinguishes the exact Catalan closure from the robust `4^n` fallback.
+
+### Verification
+
+- Three curation records and all promoted destinations are included in the quality gate.
+
 ## [2.2.0] — 2026-06-22
 
 ### Added

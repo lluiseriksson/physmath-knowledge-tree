@@ -12,7 +12,7 @@ Grafo computable y etiquetado por evidencia para explorar conexiones entre físi
 
 La interfaz consume directamente el JSON canónico e incorpora:
 
-- 49 nodos de dominio, puente y problema unidos por 94 aristas tipadas.
+- 58 nodos de dominio, puente y problema unidos por 112 aristas tipadas.
 - Búsqueda por títulos, IDs, etiquetas, resúmenes y preguntas abiertas.
 - Colecciones curadas, filtros de tipo/evidencia y vistas de grafo o lista accesible.
 - Camino mínimo dirigido o no dirigido.
@@ -34,12 +34,14 @@ Cada nodo tiene ID estable, resumen, etiquetas, preguntas vivas y objetivos Lean
 
 ## Curación de fuentes
 
-Los TXT, Markdown y PNG de investigación se tratan como material temporal de entrada. La repo conserva hashes SHA-256, decisiones atómicas y extractos matemáticos concisos, no volcados de conversaciones. Consulta [`docs/CURATION_WORKFLOW.md`](./docs/CURATION_WORKFLOW.md) y [`curation/`](./curation/README.md).
+Los TXT, Markdown y PNG de investigación se tratan como material temporal de entrada. La auditoría generada de integridad y deuda de citas está en [`docs/GRAPH_AUDIT.md`](./docs/GRAPH_AUDIT.md). La repo conserva hashes SHA-256, decisiones atómicas y extractos matemáticos concisos, no volcados de conversaciones. Consulta [`docs/CURATION_WORKFLOW.md`](./docs/CURATION_WORKFLOW.md) y [`curation/`](./curation/README.md).
 
-Una fuente solo es segura para borrar cuando toda idea única está promovida, en cuarentena o descartada con un motivo y todos los destinos pasan validación.
+Una fuente solo es segura para borrar cuando toda idea única tiene destino, todos los destinos validan, la cola de verificación está cerrada y `review.status` registra la aprobación explícita del usuario.
 
 ```bash
 npm run curation:register -- /ruta/al/archivo.png identificador
+npm run curation:verify-source -- /ruta/al/original.png
+npm run curation:report
 npm run validate:curation
 ```
 
@@ -78,7 +80,7 @@ npm run build
 
 ## Calidad y seguridad
 
-La repo valida IDs, referencias, endpoints, niveles de evidencia, colecciones, estadísticas, traducciones, taxonomías y ausencia de ciclos. Las pruebas cubren recorridos, caminos mínimos, búsqueda, layout, persistencia y datos. También se verifican enlaces locales, CSP, caché offline, formato, build, CodeQL y despliegue Pages.
+La repo valida IDs, referencias, endpoints, niveles de evidencia, colecciones, estadísticas, traducciones, taxonomías y ausencia de ciclos. Las pruebas cubren recorridos, caminos mínimos, búsqueda, layout, persistencia y datos. También se verifican enlaces, accesibilidad estática, PWA, CSP, acciones fijadas por SHA, formato, build reproducible, CodeQL y despliegue Pages.
 
 No hay analítica, cuentas, cookies, fuentes remotas ni scripts de terceros. El progreso educativo permanece en el navegador salvo exportación explícita. Los resultados reproducibles están en [`docs/VERIFICATION.md`](./docs/VERIFICATION.md).
 

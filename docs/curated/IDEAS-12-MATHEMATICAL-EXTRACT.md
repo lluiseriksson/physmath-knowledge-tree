@@ -112,4 +112,4 @@ Before literature claims receive references or exact constants, verify:
 
 ## Deletion status
 
-The source is marked `delete-after-user-review`, not deleted. Its SHA-256 and all curation decisions are recorded. After review, the record can be changed to `reviewed` and `deleted-after-review` without storing the raw 26,014-line transcript in the repository.
+The source is marked `delete-after-user-review`, not deleted. Its SHA-256 and all curation decisions are recorded. After review and source-queue closure, the record can be changed to `reviewed`, `review.status: approved` and `deleted-after-review` without storing the raw 26,014-line transcript in the repository.

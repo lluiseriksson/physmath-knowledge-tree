@@ -751,5 +751,150 @@
     "relation": "suggests",
     "confidence": "literature",
     "mechanism": "A uniform target-sensitive H-sharp estimate would close a lattice RG input once the separate gauge-specific raw activity producer is supplied; continuum construction remains separate."
+  },
+  {
+    "id": "edge.qft.aqft",
+    "source": "domain.quantum_field_theory",
+    "target": "domain.algebraic_quantum_field_theory",
+    "relation": "specializes",
+    "confidence": "literature",
+    "mechanism": "AQFT specializes relativistic quantum field theory to a net of local operator algebras with causal and covariance axioms."
+  },
+  {
+    "id": "edge.functional.aqft",
+    "source": "domain.functional_analysis",
+    "target": "domain.algebraic_quantum_field_theory",
+    "relation": "uses",
+    "confidence": "literature",
+    "mechanism": "AQFT relies on Hilbert spaces, operator algebras, cyclic vectors and modular structures from functional analysis."
+  },
+  {
+    "id": "edge.aqft.reeh_nonfactorization",
+    "source": "domain.algebraic_quantum_field_theory",
+    "target": "bridge.reeh_schlieder_vacuum_nonfactorization",
+    "relation": "uses",
+    "confidence": "literature",
+    "mechanism": "Reeh–Schlieder cyclicity and separation combine with nontrivial local algebras to rule out a product vacuum state across spacelike regions."
+  },
+  {
+    "id": "edge.aqft.no_signalling",
+    "source": "domain.algebraic_quantum_field_theory",
+    "target": "bridge.local_operations_no_signalling",
+    "relation": "uses",
+    "confidence": "formal",
+    "mechanism": "Microcausal commutation lets Kraus completeness pass through distant observables, preserving every nonselective distant expectation."
+  },
+  {
+    "id": "edge.qinfo.no_signalling",
+    "source": "domain.quantum_information_theory",
+    "target": "bridge.local_operations_no_signalling",
+    "relation": "uses",
+    "confidence": "literature",
+    "mechanism": "Quantum channel and Kraus formalisms make the distinction between conditioned branches and complete operations explicit."
+  },
+  {
+    "id": "edge.qinfo.cmi_recovery",
+    "source": "domain.quantum_information_theory",
+    "target": "bridge.conditional_mutual_information_recovery",
+    "relation": "uses",
+    "confidence": "literature",
+    "mechanism": "Conditional mutual information quantifies approximate quantum Markov structure and controls recovery from a marginal."
+  },
+  {
+    "id": "edge.aqft.cmi_recovery",
+    "source": "domain.algebraic_quantum_field_theory",
+    "target": "bridge.conditional_mutual_information_recovery",
+    "relation": "suggests",
+    "confidence": "heuristic",
+    "mechanism": "A collar between local algebras suggests an A-B-C recovery geometry, but split and type-III extensions require separate operator-algebraic theorems."
+  },
+  {
+    "id": "edge.probability.gaussian_markov_blanket",
+    "source": "domain.probability_stochastics",
+    "target": "bridge.gaussian_precision_markov_blanket",
+    "relation": "uses",
+    "confidence": "formal",
+    "mechanism": "Finite Gaussian conditional independence is encoded by zero blocks of the precision matrix rather than zero covariance blocks."
+  },
+  {
+    "id": "edge.gaussian_markov.collar",
+    "source": "bridge.gaussian_precision_markov_blanket",
+    "target": "bridge.gaussian_covariance_collar",
+    "relation": "transfers_via",
+    "confidence": "formal",
+    "mechanism": "Exact conditional factorization across a collar can be combined with inverse-kernel decay to control the remaining boundary influence."
+  },
+  {
+    "id": "edge.rooted_leaf.catalan_closure",
+    "source": "bridge.rooted_leaf_factorial_moments",
+    "target": "bridge.rooted_tree_catalan_closure",
+    "relation": "uses",
+    "confidence": "formal",
+    "mechanism": "The fixed-tree child-factorial product is summed exactly by plane rooted tree enumeration rather than only bounded by four to the nth power."
+  },
+  {
+    "id": "edge.polymer.catalan_closure",
+    "source": "domain.polymer_cluster_expansions",
+    "target": "bridge.rooted_tree_catalan_closure",
+    "relation": "uses",
+    "confidence": "formal",
+    "mechanism": "Second-gas cluster coefficients inherit rooted tree enumerations whose exact generating function is Catalan."
+  },
+  {
+    "id": "edge.catalan.rate_budget",
+    "source": "bridge.rooted_tree_catalan_closure",
+    "target": "bridge.appendix_f_rate_budget_split",
+    "relation": "transfers_via",
+    "confidence": "formal",
+    "mechanism": "An exact square-root closure changes the amplitude and stability ledger while leaving the separately extracted spatial decay rate visible."
+  },
+  {
+    "id": "edge.rg.localized_homotopy_defect",
+    "source": "domain.renormalization_group",
+    "target": "bridge.localized_homotopy_boundary_defect",
+    "relation": "uses",
+    "confidence": "formal",
+    "mechanism": "Restricting a global homotopy to an active RG region produces commutators with the region projector and hence an explicit boundary term."
+  },
+  {
+    "id": "edge.localized_homotopy.ym_activity",
+    "source": "bridge.localized_homotopy_boundary_defect",
+    "target": "problem.uniform_yang_mills_rg_activity",
+    "relation": "suggests",
+    "confidence": "speculative",
+    "mechanism": "A concrete local BRST or BV homotopy could isolate a boundary-supported remainder before norms are taken.",
+    "notes": "Falsifier: abandon this edge unless an explicit gauge-compatible differential, homotopy kernel, support theorem and polymer-norm estimate are constructed."
+  },
+  {
+    "id": "edge.gauge.ym_critical_dimension",
+    "source": "domain.gauge_theory",
+    "target": "bridge.yang_mills_critical_dimension",
+    "relation": "uses",
+    "confidence": "literature",
+    "mechanism": "Canonical dimensions of the gauge potential and coupling identify four dimensions as the marginal Yang–Mills case."
+  },
+  {
+    "id": "edge.rg.ym_critical_dimension",
+    "source": "domain.renormalization_group",
+    "target": "bridge.yang_mills_critical_dimension",
+    "relation": "uses",
+    "confidence": "literature",
+    "mechanism": "Marginality in four dimensions forces logarithmic running and scale-by-scale control rather than a superrenormalizable power gain."
+  },
+  {
+    "id": "edge.ym_critical_dimension.mass_gap",
+    "source": "bridge.yang_mills_critical_dimension",
+    "target": "problem.yang_mills_mass_gap",
+    "relation": "uses",
+    "confidence": "literature",
+    "mechanism": "The Clay problem is specifically four-dimensional, where the dimensionless coupling makes the constructive ultraviolet analysis critical."
+  },
+  {
+    "id": "edge.ym_critical_dimension.rg_activity",
+    "source": "bridge.yang_mills_critical_dimension",
+    "target": "problem.uniform_yang_mills_rg_activity",
+    "relation": "uses",
+    "confidence": "literature",
+    "mechanism": "A uniform one-step activity theorem must respect marginal coupling flow rather than assume geometric decay of the coupling."
   }
 ]

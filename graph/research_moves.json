@@ -272,5 +272,80 @@
       "Applied indiscriminately, the audit can reject coarse bounds that are valid after the relevant structure has already been consumed."
     ],
     "lean_test": "Prove an exact factorization of the coarse object and exhibit two inputs with the same coarse data but different target-sensitive statistics."
+  },
+  {
+    "id": "move.normalize_parent_kernel",
+    "title": "Normalize by the parent kernel weight",
+    "description": "Divide a parent-dependent child moment kernel by a strictly positive parent weight, then recover the denominator product exactly from rooted child multiplicities.",
+    "good_for": [
+      "bridge.rooted_leaf_factorial_moments",
+      "bridge.rooted_tree_catalan_closure",
+      "domain.polymer_cluster_expansions"
+    ],
+    "output": "vertexwise rooted-walk budget with exact cancellation of parent metric denominators",
+    "risks": [
+      "The normalization is invalid if the parent weight can vanish or if the parent-product identity does not match the chosen orientation."
+    ],
+    "lean_test": "Check the cancellation identity for every rooted tree on at most four vertices before proving the general child-fiber product theorem."
+  },
+  {
+    "id": "move.close_exact_generating_function",
+    "title": "Close the exact generating function",
+    "description": "Replace a coarse coefficient bound by the exact combinatorial enumeration, then sum its known generating function and retain the resulting stability information.",
+    "good_for": [
+      "bridge.rooted_tree_catalan_closure",
+      "bridge.rooted_leaf_factorial_moments",
+      "domain.polymer_cluster_expansions"
+    ],
+    "output": "closed square-root majorant, exact convergence boundary and sensitivity bound",
+    "risks": [
+      "The exact enumeration may use a different rooting, labelling or tree class from the analytic coefficient actually present."
+    ],
+    "lean_test": "Enumerate labelled rooted trees for n up to five and compare the normalized child-factorial sum with the Catalan number."
+  },
+  {
+    "id": "move.condition_on_separator",
+    "title": "Condition on a separator",
+    "description": "Insert a collar or separator, condition on its variables and test whether the remaining precision or graph decomposes into independent components.",
+    "good_for": [
+      "bridge.gaussian_precision_markov_blanket",
+      "bridge.gaussian_covariance_collar",
+      "bridge.conditional_mutual_information_recovery"
+    ],
+    "output": "exact conditional factorization or an explicit cross-block defect localized at the separator",
+    "risks": [
+      "Projectors, gauge constraints or integrating out the separator may create dense effective couplings and destroy exact separation."
+    ],
+    "lean_test": "Prove the three-block positive-definite Gaussian case and falsify the statement when a nonzero A-C precision block is inserted."
+  },
+  {
+    "id": "move.require_uniform_recovery",
+    "title": "Require one uniform recovery map",
+    "description": "Audit recovery claims by demanding one channel that works for every state in the code and preserves entanglement with an external reference.",
+    "good_for": [
+      "bridge.conditional_mutual_information_recovery",
+      "domain.quantum_information_theory",
+      "domain.algebraic_quantum_field_theory"
+    ],
+    "output": "quantifier-correct recovery theorem or a counterexample showing state-dependent preparation only",
+    "risks": [
+      "Replacing existence for each state by a single uniform channel is a genuinely stronger obligation and may fail without a code or energy restriction."
+    ],
+    "lean_test": "Construct a two-state finite code where separate state-preparation maps exist and test whether any single channel recovers both coherently."
+  },
+  {
+    "id": "move.localize_homotopy",
+    "title": "Localize a homotopy and expose the boundary defect",
+    "description": "Sandwich a global homotopy by a support projector and rewrite the failure of the contraction identity as commutators with that projector.",
+    "good_for": [
+      "bridge.localized_homotopy_boundary_defect",
+      "bridge.ward_defect_weight_variation",
+      "domain.renormalization_group"
+    ],
+    "output": "explicit boundary-supported defect operator with separately auditable locality and decay",
+    "risks": [
+      "Graded signs, nonlocal homotopy kernels or a noncommuting projection can make the boundary term larger than the original remainder."
+    ],
+    "lean_test": "Prove the ungraded matrix identity first, then add a finite cochain complex where the commutator support is computed explicitly."
   }
 ]

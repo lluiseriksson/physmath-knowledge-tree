@@ -34,7 +34,7 @@
       <a href="https://github.com/lluiseriksson/physmath-knowledge-tree" rel="noreferrer" data-i18n="nav.repository">Repository</a>
     </nav>
     <div class="header-actions">
-      <button id="open-panel" class="icon-button mobile-only" type="button" aria-label="Open controls">☰</button>
+      <button id="open-panel" class="icon-button mobile-only" type="button" aria-label="Open controls" aria-controls="control-panel" aria-expanded="false">☰</button>
       <select id="language" aria-label="Interface language">
         <option value="en">EN</option>
         <option value="es">ES</option>
@@ -50,7 +50,7 @@
   </div>
 
   <div id="app-shell" class="app-shell" hidden>
-    <aside id="control-panel" class="control-panel" aria-label="Graph controls">
+    <aside id="control-panel" class="control-panel" aria-label="Graph controls" tabindex="-1">
       <div class="panel-mobile-head mobile-only">
         <strong data-i18n="controls.title">Explore</strong>
         <button id="close-panel" class="icon-button" type="button" aria-label="Close controls">×</button>
@@ -63,9 +63,9 @@
         </div>
         <label class="search-box">
           <span aria-hidden="true">⌕</span>
-          <input id="search" type="search" autocomplete="off" data-i18n-placeholder="search.placeholder" placeholder="Search titles, tags, questions…">
+          <input id="search" type="search" autocomplete="off" aria-controls="search-results" aria-autocomplete="list" data-i18n-aria="search.label" data-i18n-placeholder="search.placeholder" placeholder="Search titles, tags, questions…">
         </label>
-        <div id="search-results" class="search-results" aria-live="polite"></div>
+        <div id="search-results" class="search-results" role="listbox" aria-live="polite"></div>
       </section>
 
       <section>
@@ -120,6 +120,7 @@
         <div class="stacked-actions">
           <button id="export-visible" class="secondary-button" type="button" data-i18n="export.subgraph">Export visible subgraph</button>
           <a class="secondary-button link-button" href="./graph/index.json" download data-i18n="export.index">Download graph index</a>
+          <a class="secondary-button link-button" href="./docs/GRAPH_AUDIT.md" data-i18n="export.audit">Evidence audit</a>
         </div>
       </section>
     </aside>
@@ -170,7 +171,7 @@
       </footer>
     </main>
 
-    <aside id="details" class="details" aria-hidden="true" aria-label="Node details">
+    <aside id="details" class="details" aria-hidden="true" aria-labelledby="detail-title" tabindex="-1">
       <header>
         <div>
           <small id="detail-eyebrow"></small>
@@ -191,13 +192,13 @@
       <div><dt><kbd>G</kbd></dt><dd data-i18n="shortcuts.graph">Graph view</dd></div>
       <div><dt><kbd>L</kbd></dt><dd data-i18n="shortcuts.list">List view</dd></div>
     </dl>
-    <form method="dialog"><button class="secondary-button" data-i18n="shortcuts.close">Close</button></form>
+    <form method="dialog"><button class="secondary-button" type="submit" data-i18n="shortcuts.close">Close</button></form>
   </dialog>
 
   <dialog id="bridge-card-dialog" class="bridge-card-dialog">
     <header>
       <h2 data-i18n="moves.cardTitle">Generated bridge card</h2>
-      <form method="dialog"><button class="icon-button" aria-label="Close">×</button></form>
+      <form method="dialog"><button class="icon-button" type="submit" aria-label="Close">×</button></form>
     </header>
     <textarea id="bridge-card-output" readonly></textarea>
     <div class="button-row end">

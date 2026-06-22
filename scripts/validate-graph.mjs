@@ -1,6 +1,6 @@
+import { fileURLToPath } from 'node:url';
 import { existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { fileURLToPath } from 'node:url';
 
 const root = fileURLToPath(new URL('..', import.meta.url));
 const readJson = (path) => JSON.parse(readFileSync(join(root, path), 'utf8'));
@@ -11,6 +11,10 @@ const index = readJson('graph/index.json');
 for (const path of [...Object.values(index.canonical_files), ...Object.values(index.schemas)]) {
   ensure(typeof path === 'string' && path.length > 0, 'Invalid canonical/schema path');
   ensure(existsSync(join(root, path)), `Missing declared graph file: ${path}`);
+}
+for (const path of Object.values(index.generated_files ?? {})) {
+  ensure(typeof path === 'string' && path.length > 0, 'Invalid generated graph path');
+  ensure(existsSync(join(root, path)), `Missing declared generated file: ${path}`);
 }
 const nodes = readJson(index.canonical_files.nodes);
 const edges = readJson(index.canonical_files.edges);
@@ -26,6 +30,20 @@ const collectionIds = new Set();
 const kinds = new Set(['domain', 'bridge', 'problem']);
 const confidences = new Set(['formal', 'literature', 'heuristic', 'speculative']);
 const relations = new Set(['depends_on', 'generalizes', 'specializes', 'analogy', 'dual', 'formalizes_as', 'transfers_via', 'obstructs', 'suggests', 'tests', 'uses', 'bridge']);
+const referenceTypes = new Set(['official', 'paper', 'book', 'documentation', 'survey']);
+
+function validateReferences(references, ownerId) {
+  if (references === undefined) return;
+  ensure(Array.isArray(references), `${ownerId}: references must be an array`);
+  const urls = new Set();
+  for (const reference of references) {
+    ensure(typeof reference.label === 'string' && reference.label.trim().length >= 2, `${ownerId}: reference label required`);
+    ensure(/^https:\/\//.test(reference.url), `${ownerId}: references must use HTTPS`);
+    ensure(referenceTypes.has(reference.type), `${ownerId}: invalid reference type`);
+    ensure(!urls.has(reference.url), `${ownerId}: duplicate reference URL ${reference.url}`);
+    urls.add(reference.url);
+  }
+}
 
 for (const node of nodes) {
   ensure(/^((domain|bridge|problem)\.)[a-z0-9_\.]+$/.test(node.id), `Invalid node id: ${node.id}`);
@@ -37,18 +55,13 @@ for (const node of nodes) {
   ensure(typeof node.summary === 'string' && node.summary.trim().length >= 20, `${node.id}: summary is too short`);
   ensure(Array.isArray(node.tags) && node.tags.length >= 2, `${node.id}: needs at least two tags`);
   ensure(new Set(node.tags).size === node.tags.length, `${node.id}: duplicate tags`);
+  for (const tag of node.tags) ensure(/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(tag), `${node.id}: invalid tag ${tag}`);
   ensure(Array.isArray(node.questions) && node.questions.length >= 1, `${node.id}: needs at least one live question`);
   ensure(node.lean && Array.isArray(node.lean.imports) && Array.isArray(node.lean.declarations) && Array.isArray(node.lean.targets), `${node.id}: invalid Lean metadata`);
   ensure(node.lean.targets.length >= 1, `${node.id}: needs a Lean target`);
   if (node.kind === 'problem') ensure(['solved', 'unsolved'].includes(node.status), `${node.id}: problem status required`);
   else ensure(node.status === undefined, `${node.id}: status is only valid for problems`);
-  if (node.references) {
-    for (const reference of node.references) {
-      ensure(typeof reference.label === 'string' && reference.label.trim(), `${node.id}: reference label required`);
-      ensure(/^https:\/\//.test(reference.url), `${node.id}: references must use HTTPS`);
-      ensure(['official', 'paper', 'book', 'documentation', 'survey'].includes(reference.type), `${node.id}: invalid reference type`);
-    }
-  }
+  validateReferences(node.references, node.id);
   nodeIds.add(node.id);
 }
 
@@ -66,6 +79,7 @@ for (const edge of edges) {
   const semanticKey = `${edge.source}|${edge.relation}|${edge.target}`;
   ensure(!semanticEdges.has(semanticKey), `${edge.id}: duplicate source/relation/target claim`);
   semanticEdges.add(semanticKey);
+  validateReferences(edge.references, edge.id);
   if (edge.confidence === 'speculative') ensure(typeof edge.notes === 'string' && /falsif/i.test(edge.notes), `${edge.id}: speculative edges need a falsifier note`);
   degree.set(edge.source, degree.get(edge.source) + 1);
   degree.set(edge.target, degree.get(edge.target) + 1);
@@ -99,6 +113,22 @@ for (const collection of collections) {
 }
 
 for (const rootNode of index.root_nodes) ensure(nodeIds.has(rootNode), `Unknown root node: ${rootNode}`);
+const undirected = new Map(nodes.map((node) => [node.id, new Set()]));
+for (const edge of edges) {
+  undirected.get(edge.source).add(edge.target);
+  undirected.get(edge.target).add(edge.source);
+}
+const reachable = new Set(index.root_nodes);
+const queue = [...reachable];
+while (queue.length) {
+  const current = queue.shift();
+  for (const next of undirected.get(current) ?? []) {
+    if (reachable.has(next)) continue;
+    reachable.add(next);
+    queue.push(next);
+  }
+}
+ensure(reachable.size === nodes.length, `Declared roots do not reach every node: ${nodes.filter((node) => !reachable.has(node.id)).map((node) => node.id).join(', ')}`);
 for (const entrypoint of index.agent_entrypoints) {
   ensure(typeof entrypoint === 'string' && entrypoint.length > 0, 'Invalid agent entrypoint');
   ensure(existsSync(join(root, entrypoint)), `Missing agent entrypoint: ${entrypoint}`);

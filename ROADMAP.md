@@ -4,16 +4,16 @@ Roadmap entries are proposals, not commitments. Changes should preserve provenan
 
 ## Near term
 
-- Add source-specific citations to more literature-grade edges.
+- Pay down the generated node/edge citation-debt list with primary-source references.
 - Add aliases and multilingual node descriptions without changing stable IDs.
 - Add a documented negative-results format and `obstructs` examples.
 - Expand Lean targets that compile against minimal imports.
-- Add automated browser accessibility checks when the CI environment can install a pinned browser reproducibly.
+- Add pinned-browser interaction/accessibility checks beyond the current static accessibility gate.
 
 ## Research graph
 
-- Versioned evidence records with publication identifiers and review dates.
-- Optional edge provenance objects that distinguish primary sources from surveys.
+- Versioned evidence records with publication identifiers and review dates, building on the generated evidence audit.
+- Populate the newly supported edge reference objects and add review dates/publication identifiers after source verification.
 - Saved local workspaces containing selected nodes, notes and bridge-card drafts.
 - Radius and path comparison views that expose direction and evidence changes.
 - Export to JSON-LD or another interoperable graph format after the ontology stabilizes.

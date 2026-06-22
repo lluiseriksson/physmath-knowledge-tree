@@ -75,4 +75,4 @@ The target-sensitive tree sum is model-independent. It does not construct the fi
 
 ## Deletion status
 
-The source is marked `delete-after-user-review`. Its wrapper hash, promoted claims, quarantine items and discard reasons are recorded. After review, the original may be removed without storing the full context in Git.
+The source is marked `delete-after-user-review`. Its wrapper hash, promoted claims, quarantine items and discard reasons are recorded. After explicit review and source-queue closure, the original may be removed without storing the full context in Git.

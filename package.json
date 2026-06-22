@@ -1,6 +1,6 @@
 {
   "name": "physmath-knowledge-tree",
-  "version": "2.2.0",
+  "version": "2.4.0",
   "private": true,
   "type": "module",
   "description": "Computable physics-mathematics research graph, Lean spine and bilingual learning map.",
@@ -13,14 +13,24 @@
     "build": "node scripts/build.mjs",
     "test": "node --test --test-reporter=spec",
     "generate:views": "node scripts/generate-views.mjs",
+    "generate:audit": "node scripts/generate-graph-audit.mjs",
+    "generate:curation-report": "node scripts/generate-curation-report.mjs",
     "validate:views": "node scripts/generate-views.mjs --check",
+    "validate:audit": "node scripts/generate-graph-audit.mjs --check",
+    "validate:curation-report": "node scripts/generate-curation-report.mjs --check",
     "validate:graph": "node scripts/validate-graph.mjs",
     "validate:learning": "node scripts/validate-data.mjs",
     "validate:links": "node scripts/check-local-links.mjs",
+    "validate:accessibility": "node scripts/check-accessibility.mjs",
+    "validate:pwa": "node scripts/check-pwa.mjs",
     "validate:format": "node scripts/check-format.mjs",
     "validate:syntax": "node scripts/check-syntax.mjs",
-    "check": "npm run validate:syntax && npm run validate:graph && npm run validate:curation && npm run validate:learning && npm run validate:links && npm run validate:views && npm run validate:format && npm test && npm run build",
+    "validate:dist": "node scripts/verify-build.mjs",
     "curation:register": "node scripts/register-curation-source.mjs",
-    "validate:curation": "node scripts/validate-curation.mjs"
+    "curation:verify-source": "node scripts/verify-curation-source.mjs",
+    "curation:report": "node scripts/generate-curation-report.mjs",
+    "validate:curation": "node scripts/validate-curation.mjs",
+    "check": "npm run validate:syntax && npm run validate:graph && npm run validate:curation && npm run validate:curation-report && npm run validate:learning && npm run validate:links && npm run validate:accessibility && npm run validate:pwa && npm run validate:views && npm run validate:audit && npm run validate:workflows && npm run validate:format && npm test && npm run build && npm run validate:dist",
+    "validate:workflows": "node scripts/check-workflows.mjs"
   }
 }

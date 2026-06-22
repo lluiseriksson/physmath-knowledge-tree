@@ -1,0 +1,28 @@
+PhysMath Knowledge Tree — complete release 2.4.0
+Generated: 2026-06-22
+Local release commit: 4de037a5884de18d7b199bb20616de1d5009fd45
+
+Contents
+- Complete source tree and deployable dist/ artifact
+- Research graph: 58 nodes, 112 edges, 23 moves, 8 collections
+- Learning graph: 90 topics, 199 prerequisite edges
+- Curation ledger: 3 records, 45 decisions, 18 open verification requests
+- Explicit review state: 3 records awaiting user approval
+- Automated tests: 33 passed, 0 failed
+- Build manifest: 70 integrity entries
+- npm audit: 0 vulnerabilities
+- Files before this manifest: 218
+- Files under dist/: 71
+
+Reproducibility
+- Run: npm ci
+- Run: npm run check
+- Build verification: dist/build-manifest.json
+- Verification record: docs/VERIFICATION.md
+- Release notes: docs/RELEASE_2_4_0.md
+
+Boundaries
+- Raw TXT/PNG inbox originals are not included.
+- No source is declared deletion-safe without explicit user approval and a closed verification queue.
+- No local Lean build is claimed because lake was unavailable in the release environment.
+- No local browser-level end-to-end pass is claimed; static accessibility/PWA checks and unit tests passed.

@@ -50,3 +50,25 @@ A direct producer for the complete Appendix-F cluster theorem is acceptable if i
 ## Minimal falsifier
 
 For \(n\le3\), enumerate rooted trees and finite polymer assignments. Compare the exact-union tree sum, the free marked sum, bottom-up elimination and the proposed child-factorial bound. Stop if a counterexample exposes volume growth or target loss.
+
+## Parent normalization
+
+When a child moment bound ends with a factor of the parent shifted metric, divide the child kernel by that positive parent weight. The product of all denominators is recovered exactly from rooted child multiplicities. Prove the parent-product identity before applying a vertexwise walk theorem; never replace it by an unpinned global mass.
+
+## Exact Catalan closure
+
+After obtaining the fixed-tree coefficient
+
+\[
+M^{2n+1}\prod_v \operatorname{childCount}(v)!,
+\]
+
+audit whether the tree class is the complete set of labelled trees rooted at a fixed label. In that convention,
+
+\[
+\frac{n+1}{(n+1)!}
+\sum_T\prod_v\operatorname{childCount}_T(v)!
+=\operatorname{Cat}_n.
+\]
+
+Use the exact Catalan generating function when available. Retain the `4^n` theorem as a robust fallback and as a comparison test; do not change the analytic constants until the exact enumeration is checked against the consuming definition.

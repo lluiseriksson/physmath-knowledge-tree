@@ -1,4 +1,4 @@
-import PhysMathKnowledgeTree.Bridges.Examples
 import PhysMathKnowledgeTree.Foundation
 import PhysMathKnowledgeTree.Metadata
+import PhysMathKnowledgeTree.Bridges.Examples
 import PhysMathKnowledgeTree.Problems.Millennium

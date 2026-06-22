@@ -1,8 +1,8 @@
+import { fileURLToPath } from 'node:url';
 import assert from 'node:assert/strict';
 import { once } from 'node:events';
 import { resolve } from 'node:path';
 import test from 'node:test';
-import { fileURLToPath } from 'node:url';
 import { createStaticServer, resolveRequestPath } from '../scripts/serve.mjs';
 
 const root = resolve(fileURLToPath(new URL('..', import.meta.url)));
@@ -29,6 +29,9 @@ test('static server returns content, security headers and safe method handling',
   assert.match(page.headers.get('content-type') ?? '', /^text\/html/);
   assert.equal(page.headers.get('x-content-type-options'), 'nosniff');
   assert.match(page.headers.get('content-security-policy') ?? '', /object-src 'none'/);
+  assert.match(page.headers.get('content-security-policy') ?? '', /frame-ancestors 'none'/);
+  assert.equal(page.headers.get('cross-origin-resource-policy'), 'same-origin');
+  assert.equal(page.headers.get('x-frame-options'), 'DENY');
   assert.match(await page.text(), /PhysMath Knowledge Tree/);
 
   const head = await fetch(`${origin}/learning.html`, { method: 'HEAD' });

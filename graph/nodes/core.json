@@ -1334,12 +1334,14 @@
       "targets": [
         "Prove a generic RootedLeafKernelBound from rooted moments and parent-child incompatibility moments.",
         "Derive the fixed-tree assignment estimate M^(2n+1) * product_v childCount(v)! under explicit nonnegative kernel hypotheses.",
-        "Separate leaf elimination from the later combinatorial sum over rooted tree shapes."
+        "Separate leaf elimination from the later combinatorial sum over rooted tree shapes.",
+        "Normalize child kernels by the positive parent shifted metric and prove exact cancellation of all parent denominators through rooted child counts."
       ]
     },
     "questions": [
       "Can a parent-dependent moment kernel improve the uniform moment constant?",
-      "Which rooted-tree enumeration gives the sharpest normalized bound compatible with the local kernel?"
+      "Which rooted-tree enumeration gives the sharpest normalized bound compatible with the local kernel?",
+      "Can parent-metric normalization expose a vertexwise walk theorem without introducing a volume-dependent global sum?"
     ],
     "references": [
       {
@@ -1383,6 +1385,270 @@
         "url": "https://arxiv.org/abs/1212.5562",
         "type": "paper"
       }
+    ]
+  },
+  {
+    "id": "domain.algebraic_quantum_field_theory",
+    "kind": "domain",
+    "title": "Algebraic quantum field theory",
+    "summary": "Studies relativistic quantum fields through nets of local operator algebras, isotony, microcausality, covariance, vacuum structure, modular theory and the time-slice principle rather than through a preferred particle decomposition.",
+    "confidence": "literature",
+    "tags": [
+      "aqft",
+      "operator-algebras",
+      "microcausality",
+      "vacuum"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib"
+      ],
+      "declarations": [],
+      "targets": [
+        "Model two commuting finite-dimensional local algebras and state cyclicity/separation as a bounded prototype.",
+        "Separate algebraic locality from tensor-factor assumptions in every finite formalization."
+      ]
+    },
+    "questions": [
+      "Which AQFT statements can be represented faithfully before type-III von Neumann algebra infrastructure exists in Lean?"
+    ],
+    "references": [
+      {
+        "label": "Edward Witten — Notes on Some Entanglement Properties of Quantum Field Theory",
+        "url": "https://arxiv.org/abs/1803.04993",
+        "type": "paper"
+      }
+    ]
+  },
+  {
+    "id": "domain.quantum_information_theory",
+    "kind": "domain",
+    "title": "Quantum information theory",
+    "summary": "Studies quantum states, channels, entropies, correlations, recovery, error correction and operational constraints such as no-signalling, with explicit attention to uniform channels and preservation of reference-system entanglement.",
+    "confidence": "literature",
+    "tags": [
+      "quantum-information",
+      "channels",
+      "entropy",
+      "recovery"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib"
+      ],
+      "declarations": [],
+      "targets": [
+        "Formalize finite matrix channels, Kraus completeness and a no-signalling calculation.",
+        "Represent the quantifier distinction between one uniform recovery map and state-dependent recovery maps."
+      ]
+    },
+    "questions": [
+      "Which finite recovery statements transfer to operator-algebraic or split AQFT settings without assuming a tensor factorization?"
+    ],
+    "references": [
+      {
+        "label": "Fawzi and Renner — Quantum Conditional Mutual Information and Approximate Markov Chains",
+        "url": "https://arxiv.org/abs/1410.0664",
+        "type": "paper"
+      }
+    ]
+  },
+  {
+    "id": "bridge.reeh_schlieder_vacuum_nonfactorization",
+    "kind": "bridge",
+    "title": "Reeh–Schlieder vacuum nonfactorization",
+    "summary": "If a vacuum vector is cyclic for one nontrivial local algebra and separating for a commuting spacelike algebra, then its state cannot factor across those algebras. Centering a distant observable and using cyclic density forces product factorization to make the distant algebra scalar.",
+    "confidence": "literature",
+    "tags": [
+      "reeh-schlieder",
+      "vacuum",
+      "nonfactorization",
+      "aqft"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib"
+      ],
+      "declarations": [],
+      "targets": [
+        "Prove the cyclic-plus-separating nonfactorization lemma for finite operator algebras under explicit nontriviality assumptions."
+      ]
+    },
+    "questions": [
+      "How should cyclicity and separation be encoded without silently replacing commuting local algebras by tensor factors?"
+    ],
+    "references": [
+      {
+        "label": "Edward Witten — Notes on Some Entanglement Properties of Quantum Field Theory",
+        "url": "https://arxiv.org/abs/1803.04993",
+        "type": "paper"
+      }
+    ]
+  },
+  {
+    "id": "bridge.local_operations_no_signalling",
+    "kind": "bridge",
+    "title": "Local complete operations preserve spacelike statistics",
+    "summary": "For Kraus operators in one local algebra that commute with a distant observable, a complete nonselective operation leaves the distant expectation unchanged: completeness moves through the observable and collapses the sum to the identity. Postselection does not satisfy this conclusion without classical outcome information.",
+    "confidence": "formal",
+    "tags": [
+      "no-signalling",
+      "kraus-operators",
+      "microcausality",
+      "channels"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib"
+      ],
+      "declarations": [],
+      "targets": [
+        "Prove the finite matrix identity sum_i omega(K_i† Y K_i) = omega(Y) from commutation and sum_i K_i†K_i = 1."
+      ]
+    },
+    "questions": [
+      "Which operator-algebraic hypotheses are sufficient for the same proof with infinite Kraus families or normal completely positive maps?"
+    ]
+  },
+  {
+    "id": "bridge.conditional_mutual_information_recovery",
+    "kind": "bridge",
+    "title": "Conditional mutual information to uniform recovery",
+    "summary": "Small quantum conditional mutual information controls reconstruction of a tripartite state from a marginal by a channel acting on the conditioning system. The useful research discipline is the uniform quantifier order: one recovery map should work for every state in the chosen code or extension class.",
+    "confidence": "literature",
+    "tags": [
+      "conditional-mutual-information",
+      "recovery-map",
+      "markov-chain",
+      "uniformity"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib"
+      ],
+      "declarations": [],
+      "targets": [
+        "State a finite-dimensional recovery interface with an explicit reference system and uniform channel quantifiers.",
+        "Keep any split/type-III AQFT extension conditional until its operator-algebraic recovery inequality is sourced."
+      ]
+    },
+    "questions": [
+      "Can a collar-conditioned recovery channel be made uniform over a finite low-energy code while preserving entanglement with a reference?"
+    ],
+    "references": [
+      {
+        "label": "Fawzi and Renner — Quantum Conditional Mutual Information and Approximate Markov Chains",
+        "url": "https://arxiv.org/abs/1410.0664",
+        "type": "paper"
+      },
+      {
+        "label": "Sutter, Fawzi and Renner — Universal Recovery Map for Approximate Markov Chains",
+        "url": "https://arxiv.org/abs/1504.07251",
+        "type": "paper"
+      }
+    ]
+  },
+  {
+    "id": "bridge.gaussian_precision_markov_blanket",
+    "kind": "bridge",
+    "title": "Sparse Gaussian precision as an exact Markov blanket",
+    "summary": "For a nondegenerate finite Gaussian split into interior, collar and exterior variables, a zero interior–exterior block in the precision matrix implies exact conditional factorization of interior and exterior given the collar. Decay of inverse diagonal blocks then bounds how collar values influence conditional means.",
+    "confidence": "formal",
+    "tags": [
+      "gaussian",
+      "precision-matrix",
+      "conditional-independence",
+      "markov-blanket"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib"
+      ],
+      "declarations": [],
+      "targets": [
+        "Prove conditional Gaussian factorization for a positive-definite three-block precision matrix with a zero A-C block.",
+        "Derive a boundary-influence estimate from exponential decay of the relevant inverse block."
+      ]
+    },
+    "questions": [
+      "Do gauge constraints, projectors or hard block constraints preserve the required sparse precision structure after restriction?"
+    ]
+  },
+  {
+    "id": "bridge.rooted_tree_catalan_closure",
+    "kind": "bridge",
+    "title": "Exact Catalan closure of rooted child-factorial tree sums",
+    "summary": "For labelled trees on n+1 vertices rooted at a fixed label, the sum of the products of child-count factorials equals n! times the nth Catalan number. This replaces the coarse Catalan bound 4^n by an exact generating function and yields a square-root closure for the second-gas majorant.",
+    "confidence": "formal",
+    "tags": [
+      "catalan",
+      "rooted-tree",
+      "generating-function",
+      "cluster-bound"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib"
+      ],
+      "declarations": [],
+      "targets": [
+        "Prove the exact normalized rooted child-factorial tree sum equals the Catalan number under the repository tree convention.",
+        "Derive the closed majorant B = (1 - sqrt(1 - 4 M^2 epsilon)) / (2 M) and its quadratic fixed-point equation."
+      ]
+    },
+    "questions": [
+      "Does exact tree enumeration materially enlarge the admissible activity window once all source constants are instantiated?"
+    ]
+  },
+  {
+    "id": "bridge.localized_homotopy_boundary_defect",
+    "kind": "bridge",
+    "title": "Boundary defect from localizing a homotopy",
+    "summary": "Localizing a global contraction homotopy by a support projector produces an explicit boundary defect built from commutators with that projector. In the ungraded form, the difference between the localized global identity and the localized homotopy is a sum of two commutator terms supported near the boundary.",
+    "confidence": "formal",
+    "tags": [
+      "homotopy",
+      "boundary-defect",
+      "commutator",
+      "localization"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib"
+      ],
+      "declarations": [],
+      "targets": [
+        "Prove the ungraded projector-localization identity in finite linear algebra.",
+        "Add the graded Koszul-sign version only after the degree conventions are fixed."
+      ]
+    },
+    "questions": [
+      "Can a concrete RG-compatible local homotopy and exponentially decaying kernel make the boundary defect small in a polymer metric?"
+    ]
+  },
+  {
+    "id": "bridge.yang_mills_critical_dimension",
+    "kind": "bridge",
+    "title": "Four-dimensional Yang–Mills as the marginal dimension",
+    "summary": "Canonical power counting gives [A] = (d-2)/2 and [g] = (4-d)/2 for Yang–Mills. Thus d=4 makes the gauge coupling dimensionless and marginal, distinguishing the four-dimensional problem from superrenormalizable lower dimensions and power-counting nonrenormalizable higher dimensions.",
+    "confidence": "literature",
+    "tags": [
+      "yang-mills",
+      "critical-dimension",
+      "power-counting",
+      "marginality"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib"
+      ],
+      "declarations": [],
+      "targets": [
+        "Formalize the dimensional-analysis equations as rational identities with assumptions clearly separated from the constructive field theory."
+      ]
+    },
+    "questions": [
+      "Which constructive estimates exploit marginal running rather than a fictitious geometrically decaying coupling?"
     ]
   }
 ]

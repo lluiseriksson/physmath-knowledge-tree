@@ -106,7 +106,16 @@
       "bridge.target_erasure_diagnostic",
       "bridge.target_preserving_ursell_summation",
       "bridge.rooted_leaf_factorial_moments",
-      "bridge.appendix_f_rate_budget_split"
+      "bridge.appendix_f_rate_budget_split",
+      "domain.algebraic_quantum_field_theory",
+      "domain.quantum_information_theory",
+      "bridge.reeh_schlieder_vacuum_nonfactorization",
+      "bridge.local_operations_no_signalling",
+      "bridge.conditional_mutual_information_recovery",
+      "bridge.gaussian_precision_markov_blanket",
+      "bridge.rooted_tree_catalan_closure",
+      "bridge.localized_homotopy_boundary_defect",
+      "bridge.yang_mills_critical_dimension"
     ]
   },
   {
@@ -128,13 +137,17 @@
       "bridge.rooted_leaf_factorial_moments",
       "bridge.appendix_f_rate_budget_split",
       "bridge.lattice_physical_scaling",
-      "problem.yang_mills_mass_gap"
+      "problem.yang_mills_mass_gap",
+      "bridge.rooted_tree_catalan_closure",
+      "bridge.gaussian_precision_markov_blanket",
+      "bridge.localized_homotopy_boundary_defect",
+      "bridge.yang_mills_critical_dimension"
     ]
   },
   {
     "id": "collection.target_sensitive_cluster_bounds",
     "title": "Target-sensitive cluster bounds",
-    "description": "A focused subgraph for diagnosing target erasure, retaining exact-union geometry, eliminating rooted tree leaves with factorial moments and allocating decay rates without hidden volume dependence.",
+    "description": "A focused subgraph for diagnosing target erasure, retaining exact-union geometry, normalizing parent-dependent kernels, eliminating rooted tree leaves and closing the resulting child-factorial tree sum exactly through Catalan enumeration.",
     "nodes": [
       "domain.polymer_cluster_expansions",
       "domain.renormalization_group",
@@ -144,7 +157,23 @@
       "bridge.rooted_leaf_factorial_moments",
       "bridge.appendix_f_rate_budget_split",
       "problem.uniform_yang_mills_rg_activity",
-      "problem.yang_mills_mass_gap"
+      "problem.yang_mills_mass_gap",
+      "bridge.rooted_tree_catalan_closure"
+    ]
+  },
+  {
+    "id": "collection.aqft_locality_recovery",
+    "title": "AQFT locality, nonfactorization and recovery",
+    "description": "A disciplined route separating microcausal locality, vacuum nonfactorization, no-signalling complete operations, finite-dimensional recovery theorems and conditional Gaussian separator mechanisms.",
+    "nodes": [
+      "domain.quantum_field_theory",
+      "domain.algebraic_quantum_field_theory",
+      "domain.quantum_information_theory",
+      "bridge.reeh_schlieder_vacuum_nonfactorization",
+      "bridge.local_operations_no_signalling",
+      "bridge.conditional_mutual_information_recovery",
+      "bridge.gaussian_precision_markov_blanket",
+      "bridge.gaussian_covariance_collar"
     ]
   }
 ]

@@ -2,58 +2,58 @@
 
 Date: **2026-06-22**
 
-## Automated quality gate
+Release: **2.4.0**
 
-```bash
-npm ci
+## Quality gate
+
+The complete JavaScript, graph, curation and static-site quality gate passed from a clean `npm ci` install:
+
+```text
 npm run check
 ```
 
-Verified results:
+Validated:
 
-- 30 JavaScript modules parsed;
-- 49 canonical research nodes;
-- 94 canonical research edges;
-- 18 research moves;
-- 7 curated collections;
-- 2 curation records and 2 unique source hashes validated;
-- 90 bilingual learning topics;
-- 199 prerequisite edges;
-- 1 learning root and maximum depth 15;
-- local HTML/Markdown links, CSP invariants and service-worker assets valid;
-- 5 deterministic generated views current;
-- independent JSON Schema 2020-12 validation passed for all four canonical collections;
-- all GitHub workflow and issue-form YAML parsed successfully;
-- formatting invariants valid;
-- 26 Node tests passed, 0 failed;
-- static production build created in `dist/`;
-- the built site served `index.html`, `learning.html` and the 49-node JSON graph with the expected security headers;
-- `npm audit --omit=dev` reported 0 vulnerabilities.
+- JavaScript syntax: 39 files;
+- canonical research graph: 58 nodes, 112 edges, 23 research moves and 8 collections;
+- graph topology: one connected component, no isolated node and every node reachable from a declared root;
+- evidence audit: direct-reference coverage and the unresolved citation queue are recorded in `graph/audit.json` and `docs/GRAPH_AUDIT.md`;
+- curation ledger: 3 records, 3 unique source hashes and 45 atomic decisions;
+- generated curation deletion-gate report: 23 promoted decisions, 22 quarantined decisions and 18 unresolved source requests;
+- bilingual learning graph: 90 topics, 199 prerequisite edges, 1 root and maximum depth 15;
+- local links, Markdown targets, CSP invariants and service-worker assets across 4 pages;
+- static accessibility invariants across 4 pages;
+- PWA shell: application version 2.4.0 with 31 explicitly cached entries and a dedicated offline fallback;
+- 5 generated research views;
+- formatting invariants;
+- automated tests: 33 passed, 0 failed;
+- static production build: 70 files verified byte-for-byte against `dist/build-manifest.json`.
 
-## Browser smoke tests
+`npm audit --omit=dev` reported **0 vulnerabilities**.
 
-Chromium was executed with production HTML/CSS/JavaScript and local canonical data. Direct localhost navigation is administratively blocked in the execution environment, so each application was loaded as an in-memory production-equivalent document.
+The independent Python graph validator also passed before and after regenerating the Markdown/Mermaid views.
 
-Research interface checks:
+## Curated-source verification
 
-- application startup;
-- all 49 SVG nodes;
-- canonical summary count;
-- search and node dossier;
-- shortest-path discovery;
-- bridge-card warning and falsifier section;
-- Spanish interface switch;
-- 49-card list parity;
-- screenshot generation.
+Raw source documents are not copied into the repository. A local original can be rechecked against its ledger entry with:
 
-Learning interface checks:
+```bash
+npm run curation:verify-source -- ./path/to/source.txt
+npm run curation:report
+```
 
-- all 90 SVG nodes;
-- Spanish translated search;
-- topic details;
-- progress transition to “learning”;
-- 90-card list parity after clearing search.
+Text records retain hashes, byte counts and line anchors. PNG records use bounded pixel regions, captions, alternative text and transformation history. Curation schema 1.2.0 also separates extraction status from explicit user review.
 
-## Lean boundary
+All three current deletion gates remain awaiting explicit user review; no raw original is declared safe to delete merely because extraction succeeded.
 
-The package is pinned to Lean/mathlib `v4.31.0` and CI is configured to run `lake build --wfail`, the mathlib cache and `mk_all` coverage. Lean's bundled `leanchecker` passed on the v2.0 baseline but was removed from the required push gate after GitHub-hosted runners repeatedly cancelled it during curation-only reruns after successful Lake builds. Run `lake env leanchecker` manually on a runner with enough capacity when an independent environment check is required.
+## Lean layer
+
+The repository retains its pinned Lean 4.31.0/mathlib configuration and Lean source files. The local execution environment used for this release did not provide the `lake` executable, so no local `lake build` result is claimed. The pinned GitHub Actions job runs `lake build --wfail`, `mk_all` and `leanchecker` through `leanprover/lean-action`.
+
+## Reproducibility boundary
+
+This record verifies the delivered web/data artifact and its generated files. It does not certify every mathematical statement as a theorem. Formal, literature, heuristic and speculative evidence classes remain distinct, and unresolved citations are surfaced rather than treated as verified.
+
+## Browser execution boundary
+
+Browser-level end-to-end execution was not available in the release environment. UI behavior is covered by unit tests, static accessibility/CSP/PWA checks and deterministic artifact verification; this record does not claim a local Playwright or Chromium end-to-end pass.

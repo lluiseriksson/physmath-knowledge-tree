@@ -1,0 +1,550 @@
+{
+  "id": "curation.ideas3_8",
+  "schema_version": "1.2.0",
+  "processed": "2026-06-22",
+  "status": "curated",
+  "review": {
+    "status": "pending"
+  },
+  "source": {
+    "filename": "ideas3(8).txt",
+    "media_type": "text/plain",
+    "sha256": "66a73e7fa8bcedec60ee4ad49bc23d2c1b600ecea47f37e55252859e9ac13531",
+    "bytes": 253757,
+    "lines": 9470
+  },
+  "retention": "delete-after-user-review",
+  "summary": "A large mixed technical transcript containing repeated live-repository audits, a sharpened rooted-leaf theorem, AQFT and quantum-information arguments, four-dimensional Yang–Mills exposition and several speculative programmes. Stable content was reduced to parent-normalized tree kernels, exact Catalan closure, AQFT nonfactorization/no-signalling, uniform recovery discipline, Gaussian Markov blankets, marginal dimensional analysis and a localized-homotopy boundary identity.",
+  "promoted": [
+    {
+      "id": "claim.parent_normalized_leaf_kernel",
+      "title": "Parent-normalized rooted child kernel",
+      "classification": "formal",
+      "rationale": "The positive parent metric can be divided out locally and recovered exactly through rooted child multiplicities, avoiding a global unpinned sum.",
+      "source_ranges": [
+        {
+          "start_line": 159,
+          "end_line": 262
+        },
+        {
+          "start_line": 2928,
+          "end_line": 3026
+        }
+      ],
+      "destinations": [
+        {
+          "type": "graph_node",
+          "value": "bridge.rooted_leaf_factorial_moments"
+        },
+        {
+          "type": "research_move",
+          "value": "move.normalize_parent_kernel"
+        },
+        {
+          "type": "document",
+          "value": "docs/research-playbooks/target-sensitive-second-ursell.md"
+        },
+        {
+          "type": "document",
+          "value": "docs/curated/IDEAS-3-8-MATHEMATICAL-EXTRACT.md"
+        }
+      ]
+    },
+    {
+      "id": "claim.catalan_closure",
+      "title": "Exact Catalan closure of the rooted tree-shape sum",
+      "classification": "formal",
+      "rationale": "Plane-rooted-tree enumeration gives the exact normalized child-factorial sum and a closed square-root generating function.",
+      "source_ranges": [
+        {
+          "start_line": 6215,
+          "end_line": 6380
+        }
+      ],
+      "destinations": [
+        {
+          "type": "graph_node",
+          "value": "bridge.rooted_tree_catalan_closure"
+        },
+        {
+          "type": "graph_edge",
+          "value": "edge.rooted_leaf.catalan_closure"
+        },
+        {
+          "type": "research_move",
+          "value": "move.close_exact_generating_function"
+        },
+        {
+          "type": "document",
+          "value": "docs/curated/IDEAS-3-8-MATHEMATICAL-EXTRACT.md"
+        },
+        {
+          "type": "document",
+          "value": "docs/research-playbooks/target-sensitive-second-ursell.md"
+        }
+      ]
+    },
+    {
+      "id": "claim.aqft_vacuum_nonfactorization",
+      "title": "Cyclic and separating vacuum excludes product factorization",
+      "classification": "literature",
+      "rationale": "The short proof is formal once the Reeh–Schlieder cyclic/separating hypotheses and nontriviality of the distant algebra are supplied.",
+      "source_ranges": [
+        {
+          "start_line": 628,
+          "end_line": 750
+        }
+      ],
+      "destinations": [
+        {
+          "type": "graph_node",
+          "value": "domain.algebraic_quantum_field_theory"
+        },
+        {
+          "type": "graph_node",
+          "value": "bridge.reeh_schlieder_vacuum_nonfactorization"
+        },
+        {
+          "type": "graph_edge",
+          "value": "edge.aqft.reeh_nonfactorization"
+        },
+        {
+          "type": "document",
+          "value": "docs/research-playbooks/aqft-locality-recovery.md"
+        },
+        {
+          "type": "document",
+          "value": "docs/curated/IDEAS-3-8-MATHEMATICAL-EXTRACT.md"
+        }
+      ]
+    },
+    {
+      "id": "claim.local_no_signalling",
+      "title": "Complete local operations preserve distant statistics",
+      "classification": "formal",
+      "rationale": "Commutation with the distant observable and Kraus completeness imply an exact expectation identity.",
+      "source_ranges": [
+        {
+          "start_line": 860,
+          "end_line": 900
+        }
+      ],
+      "destinations": [
+        {
+          "type": "graph_node",
+          "value": "domain.quantum_information_theory"
+        },
+        {
+          "type": "graph_node",
+          "value": "bridge.local_operations_no_signalling"
+        },
+        {
+          "type": "graph_edge",
+          "value": "edge.aqft.no_signalling"
+        },
+        {
+          "type": "document",
+          "value": "docs/research-playbooks/aqft-locality-recovery.md"
+        },
+        {
+          "type": "document",
+          "value": "docs/curated/IDEAS-3-8-MATHEMATICAL-EXTRACT.md"
+        }
+      ]
+    },
+    {
+      "id": "claim.uniform_recovery_quantifiers",
+      "title": "CMI recovery and the uniform-channel quantifier discipline",
+      "classification": "literature",
+      "rationale": "Finite-dimensional recovery theorems support a single-channel reconstruction statement, while code recovery additionally requires reference-system preservation.",
+      "source_ranges": [
+        {
+          "start_line": 938,
+          "end_line": 1002
+        },
+        {
+          "start_line": 1196,
+          "end_line": 1217
+        },
+        {
+          "start_line": 1402,
+          "end_line": 1453
+        }
+      ],
+      "destinations": [
+        {
+          "type": "graph_node",
+          "value": "bridge.conditional_mutual_information_recovery"
+        },
+        {
+          "type": "research_move",
+          "value": "move.require_uniform_recovery"
+        },
+        {
+          "type": "document",
+          "value": "docs/research-playbooks/aqft-locality-recovery.md"
+        },
+        {
+          "type": "document",
+          "value": "docs/curated/IDEAS-3-8-MATHEMATICAL-EXTRACT.md"
+        }
+      ]
+    },
+    {
+      "id": "claim.gaussian_precision_separator",
+      "title": "Sparse Gaussian precision gives exact conditional factorization",
+      "classification": "formal",
+      "rationale": "For a positive-definite finite Gaussian, a zero precision block between interior and exterior removes their cross term after conditioning on the collar.",
+      "source_ranges": [
+        {
+          "start_line": 6381,
+          "end_line": 6498
+        }
+      ],
+      "destinations": [
+        {
+          "type": "graph_node",
+          "value": "bridge.gaussian_precision_markov_blanket"
+        },
+        {
+          "type": "graph_edge",
+          "value": "edge.gaussian_markov.collar"
+        },
+        {
+          "type": "research_move",
+          "value": "move.condition_on_separator"
+        },
+        {
+          "type": "document",
+          "value": "docs/curated/IDEAS-3-8-MATHEMATICAL-EXTRACT.md"
+        }
+      ]
+    },
+    {
+      "id": "claim.localized_homotopy_defect",
+      "title": "Localized homotopy defect as a projector commutator",
+      "classification": "formal",
+      "rationale": "The ungraded boundary identity follows by direct expansion and identifies the exact term that a later locality estimate must bound.",
+      "source_ranges": [
+        {
+          "start_line": 6499,
+          "end_line": 6610
+        }
+      ],
+      "destinations": [
+        {
+          "type": "graph_node",
+          "value": "bridge.localized_homotopy_boundary_defect"
+        },
+        {
+          "type": "research_move",
+          "value": "move.localize_homotopy"
+        },
+        {
+          "type": "document",
+          "value": "docs/curated/IDEAS-3-8-MATHEMATICAL-EXTRACT.md"
+        }
+      ]
+    },
+    {
+      "id": "claim.yang_mills_critical_dimension",
+      "title": "Four-dimensional marginality of Yang–Mills",
+      "classification": "literature",
+      "rationale": "Canonical power counting yields a dimensionless gauge coupling exactly in four dimensions and explains the marginal RG regime.",
+      "source_ranges": [
+        {
+          "start_line": 1592,
+          "end_line": 1696
+        },
+        {
+          "start_line": 5823,
+          "end_line": 5867
+        }
+      ],
+      "destinations": [
+        {
+          "type": "graph_node",
+          "value": "bridge.yang_mills_critical_dimension"
+        },
+        {
+          "type": "graph_edge",
+          "value": "edge.ym_critical_dimension.mass_gap"
+        },
+        {
+          "type": "document",
+          "value": "docs/curated/IDEAS-3-8-MATHEMATICAL-EXTRACT.md"
+        }
+      ]
+    },
+    {
+      "id": "claim.remote_preparation_caveat",
+      "title": "Reeh–Schlieder preparation is qualitative, not uniform teleportation",
+      "classification": "literature",
+      "rationale": "Cyclicity gives state-dependent local approximants, but no useful uniform success, energy or operator-norm bound follows.",
+      "source_ranges": [
+        {
+          "start_line": 751,
+          "end_line": 859
+        }
+      ],
+      "destinations": [
+        {
+          "type": "document",
+          "value": "docs/curated/IDEAS-3-8-MATHEMATICAL-EXTRACT.md"
+        },
+        {
+          "type": "document",
+          "value": "docs/curated/IDEAS-3-8-QUARANTINE.md"
+        }
+      ]
+    }
+  ],
+  "quarantined": [
+    {
+      "id": "spec.type_iii_recovery",
+      "title": "Type-III AQFT CMI recovery",
+      "classification": "heuristic",
+      "rationale": "The finite-dimensional theorem does not by itself define the required entropy, fidelity or recovery channel for type-III local algebras.",
+      "source_ranges": [
+        {
+          "start_line": 938,
+          "end_line": 1002
+        },
+        {
+          "start_line": 1402,
+          "end_line": 1453
+        }
+      ],
+      "destinations": [
+        {
+          "type": "document",
+          "value": "docs/curated/IDEAS-3-8-QUARANTINE.md"
+        }
+      ]
+    },
+    {
+      "id": "spec.everett_recovery",
+      "title": "Everettian branch-controlled recovery",
+      "classification": "speculative",
+      "rationale": "The branch register is interpretive and no branch-independent coherent recovery theorem is supplied.",
+      "source_ranges": [
+        {
+          "start_line": 2313,
+          "end_line": 2729
+        }
+      ],
+      "destinations": [
+        {
+          "type": "document",
+          "value": "docs/curated/IDEAS-3-8-QUARANTINE.md"
+        }
+      ]
+    },
+    {
+      "id": "spec.schur_hole_metric",
+      "title": "Modified hole metric as Schur-complement geometry",
+      "classification": "heuristic",
+      "rationale": "Eliminating hole variables can create dense effective boundary couplings, so no metric comparison is established.",
+      "source_ranges": [
+        {
+          "start_line": 6705,
+          "end_line": 6763
+        }
+      ],
+      "destinations": [
+        {
+          "type": "document",
+          "value": "docs/curated/IDEAS-3-8-QUARANTINE.md"
+        }
+      ]
+    },
+    {
+      "id": "spec.mixed_hard_soft_forest",
+      "title": "One colored forest for Gaussian and Ursell edges",
+      "classification": "speculative",
+      "rationale": "No coefficient identity proves equivalence with the composed localization, Mayer and Ursell construction while preserving the exact target.",
+      "source_ranges": [
+        {
+          "start_line": 6837,
+          "end_line": 6890
+        }
+      ],
+      "destinations": [
+        {
+          "type": "document",
+          "value": "docs/curated/IDEAS-3-8-QUARANTINE.md"
+        }
+      ]
+    },
+    {
+      "id": "spec.variational_rate_split",
+      "title": "Variational decay allocation and polymer stopping scale",
+      "classification": "heuristic",
+      "rationale": "The optimization depends on an uncomputed moment function and the physical stopping-scale claim needs a calibrated continuum trajectory.",
+      "source_ranges": [
+        {
+          "start_line": 6611,
+          "end_line": 6704
+        },
+        {
+          "start_line": 6764,
+          "end_line": 6836
+        }
+      ],
+      "destinations": [
+        {
+          "type": "document",
+          "value": "docs/curated/IDEAS-3-8-QUARANTINE.md"
+        }
+      ]
+    },
+    {
+      "id": "spec.bv_yang_mills_application",
+      "title": "Boundary commutator as a small Yang–Mills RG activity",
+      "classification": "speculative",
+      "rationale": "The algebraic identity lacks a concrete gauge differential, local homotopy, support proof and polymer-norm estimate.",
+      "source_ranges": [
+        {
+          "start_line": 6499,
+          "end_line": 6610
+        }
+      ],
+      "destinations": [
+        {
+          "type": "document",
+          "value": "docs/curated/IDEAS-3-8-QUARANTINE.md"
+        }
+      ]
+    },
+    {
+      "id": "spec.riemann_arithmetic_rg",
+      "title": "Weil prime-layer RG and Schur–Catalan route to RH",
+      "classification": "speculative",
+      "rationale": "The scale matrices, coercivity baseline and summable defects are proposed rather than constructed, and several formulae are only schematic.",
+      "source_ranges": [
+        {
+          "start_line": 6920,
+          "end_line": 7590
+        }
+      ],
+      "destinations": [
+        {
+          "type": "document",
+          "value": "docs/curated/IDEAS-3-8-QUARANTINE.md"
+        }
+      ]
+    },
+    {
+      "id": "spec.riemann_stieltjes_program",
+      "title": "Stieltjes and collar-Schur programme for RH",
+      "classification": "speculative",
+      "rationale": "The claimed equivalence and prime-side positivity require exact canonical-product, meromorphic and sign hypotheses not supplied in the source.",
+      "source_ranges": [
+        {
+          "start_line": 7628,
+          "end_line": 8007
+        }
+      ],
+      "destinations": [
+        {
+          "type": "document",
+          "value": "docs/curated/IDEAS-3-8-QUARANTINE.md"
+        }
+      ]
+    },
+    {
+      "id": "spec.mayer_ward_transgression",
+      "title": "Exact Mayer–Ward transgression",
+      "classification": "speculative",
+      "rationale": "No nonlinear support-preserving identity and quantitative remainder bound are proved for the target-fiber activity.",
+      "source_ranges": [
+        {
+          "start_line": 8123,
+          "end_line": 8258
+        }
+      ],
+      "destinations": [
+        {
+          "type": "document",
+          "value": "docs/curated/IDEAS-3-8-QUARANTINE.md"
+        }
+      ]
+    }
+  ],
+  "discarded": [
+    {
+      "category": "duplicate-theorem-plans",
+      "reason": "The fixed-tree Appendix-F implementation memo is repeated almost verbatim and substantially overlaps the already curated rooted-leaf material.",
+      "examples": [
+        "Lines 2912–3729 and 3730–4548 are near-duplicates."
+      ]
+    },
+    {
+      "category": "stale-repository-status",
+      "reason": "Commit hashes, job counts, proved/open inventories and commit sequences belong to a fast-moving external repository and are not stable graph knowledge."
+    },
+    {
+      "category": "generic-pedagogy",
+      "reason": "Long introductions to gauge fields, curvature, lattice regularization and the general mass-gap problem duplicate canonical domain nodes and textbooks."
+    },
+    {
+      "category": "interpretive-metaphors",
+      "reason": "Many-worlds, cabalistic, portal and universal-interconnection language is not mathematical evidence for the promoted claims."
+    },
+    {
+      "category": "publication-and-agent-boilerplate",
+      "reason": "Article rankings, copy-paste prompts, response templates and exact commit choreography are transient workflow material."
+    },
+    {
+      "category": "duplicate-prior-curation",
+      "reason": "Gaussian collar interpolation, lattice-to-physical scaling, Ward weight variation, block coercivity, support-role separation and target-preserving leaf summation were already curated in versions 2.1 and 2.2."
+    }
+  ],
+  "verification_queue": [
+    {
+      "id": "verify.reeh_schlieder_scope",
+      "request": "Transcribe a primary Reeh–Schlieder statement with the exact region, spectrum and cyclic/separating assumptions used by the nonfactorization proof.",
+      "reason": "The algebraic derivation is short, but its physical scope depends on the theorem hypotheses."
+    },
+    {
+      "id": "verify.summers_werner_scope",
+      "request": "Check the exact models, regions and state classes for maximal Bell violation before promoting a generic AQFT Bell node.",
+      "reason": "The source text states a broad result whose hypotheses must not be weakened."
+    },
+    {
+      "id": "verify.cmi_recovery_constants",
+      "request": "Fix fidelity conventions, constants and recovery-map dependence from Fawzi–Renner and the universal recovery theorem.",
+      "reason": "Different fidelity and purified-distance conventions change the displayed bound."
+    },
+    {
+      "id": "verify.type_iii_recovery",
+      "request": "Locate a precise split or operator-algebraic recovery theorem before applying finite-dimensional CMI language to type-III AQFT algebras.",
+      "reason": "The finite tensor-product theorem is not automatically valid in the intended AQFT setting."
+    },
+    {
+      "id": "verify.catalan_tree_convention",
+      "request": "Compare the exact labelled tree set, fixed root, child-count orientation and normalization with the current repository theorem.",
+      "reason": "The Catalan equality is formal only after conventions match exactly."
+    },
+    {
+      "id": "verify.gaussian_precision_constraints",
+      "request": "Test the conditional-factorization theorem on the actual gauge-fixed, projected or hard-constrained precision operator.",
+      "reason": "Constraints may introduce a nonlocal effective A-C coupling."
+    },
+    {
+      "id": "verify.localized_homotopy_signs",
+      "request": "Derive the graded projector-commutator identity with fixed degrees and Koszul signs.",
+      "reason": "Only the ungraded identity is promoted as formal."
+    },
+    {
+      "id": "verify.dimock_balaban_source_packet",
+      "request": "Continue primary transcription of second-Ursell coefficients, moment constants, shifted metrics, support conventions and the concrete CMP116 activity producer.",
+      "reason": "The refined finite closure does not supply the physical source activity or its constants."
+    },
+    {
+      "id": "verify.riemann_program_formulas",
+      "request": "Audit the Weil, Stieltjes, Jensen and De Bruijn–Newman formulae before retaining any arithmetic RG proposal beyond quarantine.",
+      "reason": "Several statements are schematic and could fail by sign, domain or growth conventions."
+    }
+  ]
+}

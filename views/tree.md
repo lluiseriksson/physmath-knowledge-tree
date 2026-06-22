@@ -6,15 +6,22 @@
   - **Constructive quantum field theory** `domain.constructive_quantum_field_theory`
     - **Cluster expansion with holes and active skeletons** `bridge.cluster_expansion_with_holes`
     - **Polymer and cluster expansions** `domain.polymer_cluster_expansions`
+      - **Exact Catalan closure of rooted child-factorial tree sums** `bridge.rooted_tree_catalan_closure`
       - **Target-preserving Ursell summation** `bridge.target_preserving_ursell_summation`
         - **Rooted leaf elimination by factorial moments** `bridge.rooted_leaf_factorial_moments`
     - **Uniform one-step Yang-Mills RG activity bound** `problem.uniform_yang_mills_rg_activity`
   - **Functional analysis** `domain.functional_analysis`
+    - **Algebraic quantum field theory** `domain.algebraic_quantum_field_theory`
+      - **Local complete operations preserve spacelike statistics** `bridge.local_operations_no_signalling`
+      - **Reeh–Schlieder vacuum nonfactorization** `bridge.reeh_schlieder_vacuum_nonfactorization`
     - **Spectral theory** `domain.spectral_theory`
   - **Harmonic analysis** `domain.harmonic_analysis`
     - **Navier-Stokes existence and smoothness** `problem.navier_stokes`
     - **Partial differential equations** `domain.pde`
   - **Renormalization group** `domain.renormalization_group`
+    - **Boundary defect from localizing a homotopy** `bridge.localized_homotopy_boundary_defect`
+    - **Four-dimensional Yang–Mills as the marginal dimension** `bridge.yang_mills_critical_dimension`
+      - **Yang-Mills existence and mass gap** `problem.yang_mills_mass_gap`
 - **Complexity theory** `domain.complexity_theory`
   - **P vs NP** `problem.p_vs_np`
 - **Foundations, logic and type theory** `domain.foundation_logic`
@@ -28,10 +35,12 @@
       - **Hodge Conjecture** `problem.hodge_conjecture`
 - **Noncommutative geometry** `domain.noncommutative_geometry`
   - **Quantum field theory** `domain.quantum_field_theory`
-    - **Yang-Mills existence and mass gap** `problem.yang_mills_mass_gap`
 - **Optimal transport** `domain.optimal_transport`
 - **Probability and stochastic processes** `domain.probability_stochastics`
   - **Gaussian covariance decay to collar factorization** `bridge.gaussian_covariance_collar`
+  - **Sparse Gaussian precision as an exact Markov blanket** `bridge.gaussian_precision_markov_blanket`
+- **Quantum information theory** `domain.quantum_information_theory`
+  - **Conditional mutual information to uniform recovery** `bridge.conditional_mutual_information_recovery`
 - **Symplectic geometry** `domain.symplectic_geometry`
 - **Topology** `domain.topology`
   - **Differential geometry** `domain.differential_geometry`

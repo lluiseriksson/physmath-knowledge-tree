@@ -1,8 +1,11 @@
-const CACHE = 'physmath-knowledge-tree-v2-1';
+const APP_VERSION = '2.4.0';
+const CACHE_PREFIX = 'physmath-knowledge-tree-';
+const CACHE = `${CACHE_PREFIX}${APP_VERSION}`;
 const SHELL = [
   './',
   './index.html',
   './learning.html',
+  './offline.html',
   './404.html',
   './manifest.webmanifest',
   './src/research.css',
@@ -10,6 +13,7 @@ const SHELL = [
   './src/lib/research-graph.js',
   './src/lib/research-i18n.js',
   './src/styles.css',
+  './src/error.css',
   './src/app.js',
   './src/data/topics.js',
   './src/lib/dom.js',
@@ -20,6 +24,7 @@ const SHELL = [
   './src/lib/types.js',
   './src/lib/url-state.js',
   './graph/index.json',
+  './graph/audit.json',
   './graph/nodes/core.json',
   './graph/edges.json',
   './graph/research_moves.json',
@@ -31,17 +36,35 @@ const SHELL = [
 ];
 
 self.addEventListener('install', (event) => {
-  event.waitUntil(caches.open(CACHE).then((cache) => cache.addAll(SHELL)));
-  self.skipWaiting();
+  event.waitUntil((async () => {
+    const cache = await caches.open(CACHE);
+    await cache.addAll(SHELL);
+    await self.skipWaiting();
+  })());
 });
 
 self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches.keys()
-      .then((keys) => Promise.all(keys.filter((key) => key !== CACHE).map((key) => caches.delete(key))))
+      .then((keys) => Promise.all(keys.filter((key) => key.startsWith(CACHE_PREFIX) && key !== CACHE).map((key) => caches.delete(key))))
       .then(() => self.clients.claim()),
   );
 });
+
+function fallbackFor(url) {
+  if (url.pathname.endsWith('/learning.html')) return './learning.html';
+  if (url.pathname.endsWith('/') || url.pathname.endsWith('/index.html')) return './index.html';
+  return './offline.html';
+}
+
+async function networkAndCache(request) {
+  const response = await fetch(request);
+  if (response.ok) {
+    const cache = await caches.open(CACHE);
+    await cache.put(request, response.clone());
+  }
+  return response;
+}
 
 self.addEventListener('fetch', (event) => {
   const request = event.request;
@@ -51,20 +74,16 @@ self.addEventListener('fetch', (event) => {
 
   if (request.mode === 'navigate') {
     event.respondWith(
-      fetch(request)
-        .then((response) => {
-          if (response.ok) caches.open(CACHE).then((cache) => cache.put(request, response.clone()));
-          return response;
-        })
-        .catch(async () => await caches.match(request) || await caches.match('./index.html')),
+      networkAndCache(request).catch(async () =>
+        await caches.match(request, { ignoreSearch: true })
+          || await caches.match(fallbackFor(url))),
     );
     return;
   }
 
-  event.respondWith(
-    caches.match(request).then((cached) => cached || fetch(request).then((response) => {
-      if (response.ok) caches.open(CACHE).then((cache) => cache.put(request, response.clone()));
-      return response;
-    })),
-  );
+  const networkPromise = networkAndCache(request);
+  event.waitUntil(networkPromise.catch(() => undefined));
+  event.respondWith((async () =>
+    await caches.match(request, { ignoreSearch: true }) || await networkPromise
+  )());
 });

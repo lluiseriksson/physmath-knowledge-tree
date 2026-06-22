@@ -44,6 +44,7 @@ After editing canonical JSON:
 
 ```bash
 npm run generate:views
+npm run generate:audit
 npm run check
 ```
 
@@ -60,6 +61,17 @@ Read `docs/CONTENT_GUIDE.md`. Every topic must:
 - use a valid taxonomy value and positive study-time estimate.
 
 Run `npm run validate:learning` after content edits.
+
+
+## Source-curation changes
+
+- Never commit raw private TXT/Markdown/PNG inbox files.
+- Register originals by SHA-256 with `npm run curation:register -- <file> [id]`.
+- Use line ranges for text decisions and bounded pixel regions for PNG decisions.
+- Add captions and alt text for promoted crops or redraws.
+- Recheck a retained original with `npm run curation:verify-source -- <record> <file>`.
+- Regenerate `curation/REPORT.md` after changing indexed records.
+- Do not mark a record `reviewed`, set `review.status` to `approved`, or use `deleted-after-review` without explicit user review and a closed verification queue.
 
 ## Lean changes
 

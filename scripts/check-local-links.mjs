@@ -1,18 +1,18 @@
-import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
-import { dirname, extname, join, normalize, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
+import { dirname, extname, isAbsolute, join, normalize, relative } from 'node:path';
 
 const root = fileURLToPath(new URL('..', import.meta.url));
 const errors = [];
-const pages = ['index.html', 'learning.html', '404.html'];
+const pages = ['index.html', 'learning.html', 'offline.html', '404.html'];
 
 function resolveLocal(source, value) {
   if (/^(?:https?:|data:|mailto:|tel:|#)/i.test(value)) return null;
   const clean = value.split('#')[0].split('?')[0].replace(/^<|>$/g, '');
   if (!clean) return null;
   const target = normalize(join(dirname(source), clean));
-  if (!target.startsWith(root)) return { target, escaped: true };
-  return { target, escaped: false };
+  const rel = relative(root, target);
+  return { target, escaped: rel.startsWith('..') || isAbsolute(rel) };
 }
 
 function checkHtml(file) {

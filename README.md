@@ -16,7 +16,7 @@ A computable, evidence-labelled graph for exploring connections between physics,
 
 The research interface reads the canonical JSON graph directly. It includes:
 
-- 49 domain, bridge and problem nodes connected by 94 typed, evidence-labelled edges.
+- 58 domain, bridge and problem nodes connected by 112 typed, evidence-labelled edges.
 - Search across titles, IDs, tags, summaries and live questions.
 - Curated collections, kind/evidence filters, graph and accessible list views.
 - Directed or undirected shortest-path search.
@@ -44,13 +44,13 @@ graph/
 
 The graph is designed for humans, scripts and research agents. Every node has a stable ID, summary, tags, live questions and one or more bounded Lean targets. Every edge states a mechanism rather than merely asserting that two subjects are “related”.
 
-Generated Markdown projections in `views/` are derived artifacts; JSON remains canonical.
+Generated Markdown projections in `views/` are derived artifacts; JSON remains canonical. [`docs/GRAPH_AUDIT.md`](./docs/GRAPH_AUDIT.md) exposes topology, direct-reference coverage and unresolved citation debt.
 
 ## Source curation
 
 Raw research TXT, Markdown and PNG files are treated as temporary inbox material. The repository stores SHA-256 provenance, atomic decisions and concise mathematical extracts instead of transcript dumps. See [`docs/CURATION_WORKFLOW.md`](./docs/CURATION_WORKFLOW.md) and [`curation/`](./curation/README.md).
 
-A source becomes deletion-safe only after every unique claim is promoted, quarantined or discarded with a reason and all destinations pass validation.
+A source becomes deletion-safe only after every unique claim is dispositioned, all destinations validate, the verification queue is closed and `review.status` records explicit user approval.
 
 ## Lean package
 
@@ -70,7 +70,7 @@ The project is pinned to Lean/mathlib `v4.31.0`.
 lake build
 ```
 
-CI builds the package with warnings treated as failures and checks aggregate imports with `mk_all`. Run `lake env leanchecker` manually on a runner with enough capacity when an independent environment check is required.
+CI builds the package with warnings treated as failures and runs Lean's independent environment checker.
 
 ## Run locally
 
@@ -89,7 +89,7 @@ Run the complete quality gate:
 npm run check
 ```
 
-Build the GitHub Pages artifact:
+Build the GitHub Pages artifact and deterministic SHA-256 manifest:
 
 ```bash
 npm run build
@@ -100,14 +100,18 @@ npm run build
 | Command | Purpose |
 | --- | --- |
 | `npm run validate:graph` | Check graph IDs, endpoint integrity, evidence rules, references, collections and index statistics. |
-| `npm run validate:curation` | Check source hashes, line ranges, review decisions and promoted destinations. |
+| `npm run validate:curation` | Check source hashes, text ranges, PNG crop regions, review decisions and promoted destinations. |
 | `npm run curation:register -- <file> [id]` | Create a draft TXT/Markdown/PNG provenance record without copying the source. |
+| `npm run curation:verify-source -- [record] <file>` | Recheck a local original against its recorded hash, size and media metadata. |
+| `npm run curation:report` | Regenerate the deletion-gate and verification-queue report. |
+| `npm run validate:audit` | Check the generated graph integrity and citation-debt audit. |
+| `npm run validate:workflows` | Require explicit permissions and full-SHA pins for external GitHub Actions. |
 | `npm run validate:learning` | Check bilingual curriculum taxonomies, prerequisites and DAG structure. |
 | `npm run validate:views` | Confirm generated Markdown/Mermaid projections match canonical JSON. |
 | `npm test` | Run graph, search, layout, path, persistence and data tests. |
 | `npm run generate:views` | Regenerate deterministic projections in `views/`. |
 | `npm run build` | Produce a deployable static site in `dist/`. |
-| `npm run check` | Run syntax, data, link, CSP, formatting, tests, generated-view and build checks. |
+| `npm run check` | Run syntax, schemas, curation, links, accessibility, PWA, workflows, tests and reproducible-build checks. |
 
 ## Repository map
 

@@ -45,7 +45,7 @@ A promoted item must have:
 2. assumptions separated from conclusions;
 3. an evidence class;
 4. a bounded Lean target or finite falsification test;
-5. source line ranges in its curation record;
+5. source line ranges for text or bounded pixel regions for PNG material;
 6. no contradiction with a newer reviewed record.
 
 Literature-dependent constants, theorem numbers and physical identifications remain in the verification queue until checked against primary sources.
@@ -57,7 +57,7 @@ For each image:
 1. record SHA-256, dimensions and provenance;
 2. identify independent panels, equations and diagrams;
 3. crop only the mathematically relevant region;
-4. preserve a crop manifest with pixel coordinates and transformation history;
+4. preserve `source_regions` with pixel coordinates, label, optional caption/alt text and transformation history;
 5. write a caption and alt text describing mathematical content rather than visual appearance alone;
 6. redraw simple graphs or commutative diagrams as SVG/Mermaid when possible;
 7. promote the represented nodes and edges separately from the bitmap;
@@ -72,17 +72,19 @@ A source is deletion-safe when:
 - its hash and metadata are recorded;
 - every unique claim is promoted, quarantined or discarded with a reason;
 - all promoted destinations validate;
-- all unresolved citations appear in `verification_queue`;
+- every source request in `verification_queue` is resolved as `verified` or `rejected`;
 - generated graph views and tests pass;
 - the user has reviewed the extract and quarantine report.
 
-The curation record then moves from `curated` to `reviewed`, and its retention field may become `deleted-after-review`.
+Approval is explicit and separate from extraction: set the record to `status: reviewed`, set `review.status: approved` with `reviewer` and `reviewed_at`, and only then change retention to `deleted-after-review`. The generated report refuses to call a record deletion-safe while review or verification remains open.
 
 ## 7. Quality gate
 
 ```bash
+npm run curation:verify-source -- /absolute/path/to/original.png
+npm run curation:report
 npm run validate:curation
 npm run check
 ```
 
-The first command validates provenance records and destinations. The second validates the complete graph, documentation, tests and static build.
+The commands respectively verify a retained original, regenerate the ledger summary, validate provenance/destinations and run the complete repository gate.

@@ -105,6 +105,8 @@ const state = {
   transform: { x: 0, y: 0, scale: 1 },
   panning: null,
   cardMarkdown: '',
+  panelReturnFocus: null,
+  detailsReturnFocus: null,
 };
 
 function readSetting(key, fallback) {
@@ -300,16 +302,23 @@ function bindEvents() {
   });
   ui.theme.addEventListener('click', cycleTheme);
   ui.help.addEventListener('click', () => ui.shortcuts.showModal());
-  ui.openPanel.addEventListener('click', () => ui.panel.classList.add('open'));
-  ui.closePanel.addEventListener('click', () => ui.panel.classList.remove('open'));
+  ui.openPanel.addEventListener('click', openControlPanel);
+  ui.closePanel.addEventListener('click', closeControlPanel);
 
   ui.search.addEventListener('input', renderSearchResults);
   ui.search.addEventListener('keydown', (event) => {
     if (event.key === 'Enter') {
       const first = searchNodes(state.nodes, ui.search.value, 1)[0];
       if (first) revealNode(first.node.id);
+    } else if (event.key === 'ArrowDown') {
+      const firstResult = ui.searchResults.querySelector('button');
+      if (firstResult) {
+        event.preventDefault();
+        firstResult.focus();
+      }
     }
   });
+  ui.searchResults.addEventListener('keydown', handleSearchResultKeydown);
 
   ui.collection.addEventListener('change', () => {
     state.collection = ui.collection.value;
@@ -342,6 +351,68 @@ function bindEvents() {
   ui.graph.addEventListener('pointercancel', endPan);
   window.addEventListener('resize', () => requestAnimationFrame(fitGraph));
   document.addEventListener('keydown', handleKeyboard);
+}
+
+function openControlPanel() {
+  if (document.activeElement && typeof document.activeElement.focus === 'function') state.panelReturnFocus = document.activeElement;
+  ui.panel.classList.add('open');
+  ui.openPanel.setAttribute('aria-expanded', 'true');
+  requestAnimationFrame(() => ui.panel.focus());
+}
+
+function closeControlPanel(restoreFocus = true) {
+  ui.panel.classList.remove('open');
+  ui.openPanel.setAttribute('aria-expanded', 'false');
+  const returnFocus = state.panelReturnFocus;
+  state.panelReturnFocus = null;
+  if (restoreFocus && returnFocus?.isConnected) requestAnimationFrame(() => returnFocus.focus());
+}
+
+function handleSearchResultKeydown(event) {
+  const buttons = [...ui.searchResults.querySelectorAll('button')];
+  const current = buttons.indexOf(document.activeElement);
+  if (current < 0) return;
+  let next = current;
+  if (event.key === 'ArrowDown') next = Math.min(buttons.length - 1, current + 1);
+  else if (event.key === 'ArrowUp') next = Math.max(0, current - 1);
+  else if (event.key === 'Home') next = 0;
+  else if (event.key === 'End') next = buttons.length - 1;
+  else if (event.key === 'Escape') {
+    event.preventDefault();
+    ui.search.focus();
+    return;
+  } else return;
+  event.preventDefault();
+  buttons[next]?.focus();
+}
+
+function focusGraphNeighbor(nodeId, key) {
+  const origin = state.layout.positions.get(nodeId);
+  if (!origin) return;
+  const direction = {
+    ArrowLeft: [-1, 0],
+    ArrowRight: [1, 0],
+    ArrowUp: [0, -1],
+    ArrowDown: [0, 1],
+  }[key];
+  if (!direction) return;
+  let best = null;
+  for (const node of state.visible.nodes) {
+    if (node.id === nodeId) continue;
+    const point = state.layout.positions.get(node.id);
+    if (!point) continue;
+    const dx = point.x - origin.x;
+    const dy = point.y - origin.y;
+    const forward = dx * direction[0] + dy * direction[1];
+    if (forward <= 0) continue;
+    const perpendicular = Math.abs(dx * direction[1] - dy * direction[0]);
+    const score = Math.hypot(dx, dy) + perpendicular * 1.5;
+    if (!best || score < best.score) best = { id: node.id, score };
+  }
+  if (!best) return;
+  const target = [...ui.nodeLayer.querySelectorAll('[data-node-id]')]
+    .find((item) => item.getAttribute('data-node-id') === best.id);
+  target?.focus();
 }
 
 function buildControlsPreservingValues() {
@@ -432,7 +503,7 @@ function renderSearchResults() {
     fragment.append(message);
   }
   for (const { node } of matches) {
-    const button = element('button', { type: 'button', class: 'search-result' });
+    const button = element('button', { type: 'button', class: 'search-result', role: 'option' });
     const dot = element('i', { class: node.kind });
     const text = element('span');
     const title = element('strong');
@@ -459,7 +530,7 @@ function revealNode(nodeId) {
   renderAll();
   ui.search.value = '';
   ui.searchResults.replaceChildren();
-  ui.panel.classList.remove('open');
+  closeControlPanel(false);
   requestAnimationFrame(() => centerNode(nodeId));
 }
 
@@ -536,6 +607,9 @@ function renderGraph() {
       if (event.key === 'Enter' || event.key === ' ') {
         event.preventDefault();
         selectNode(node.id);
+      } else if (event.key.startsWith('Arrow')) {
+        event.preventDefault();
+        focusGraphNeighbor(node.id, event.key);
       }
     });
     nodeFragment.append(group);
@@ -606,18 +680,24 @@ function createBadge(text, className) {
 
 function selectNode(nodeId, sync = true) {
   if (!state.nodeById.has(nodeId)) return;
+  const opening = !ui.details.classList.contains('open');
+  if (opening && document.activeElement && typeof document.activeElement.focus === 'function') state.detailsReturnFocus = document.activeElement;
   state.selectedNode = nodeId;
   renderDetails(nodeId);
   renderGraph();
+  if (opening) requestAnimationFrame(() => ui.details.focus());
   if (sync) syncUrl();
 }
 
 function closeDetails() {
+  const returnFocus = state.detailsReturnFocus;
   state.selectedNode = '';
+  state.detailsReturnFocus = null;
   ui.details.classList.remove('open');
   ui.details.setAttribute('aria-hidden', 'true');
   renderGraph();
   syncUrl();
+  if (returnFocus?.isConnected) requestAnimationFrame(() => returnFocus.focus());
 }
 
 function renderDetails(nodeId) {

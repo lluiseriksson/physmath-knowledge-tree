@@ -907,11 +907,14 @@ legend {
   background: var(--surface-raised);
   box-shadow: var(--shadow);
   transform: translateX(102%);
-  transition: transform 180ms ease;
+  visibility: hidden;
+  transition: transform 180ms ease, visibility 0s linear 180ms;
 }
 
 .details.open {
   transform: translateX(0);
+  visibility: visible;
+  transition-delay: 0s;
 }
 
 .details > header {
@@ -1170,11 +1173,14 @@ legend {
     width: min(330px, calc(100vw - 36px));
     box-shadow: var(--shadow);
     transform: translateX(-103%);
-    transition: transform 180ms ease;
+    visibility: hidden;
+    transition: transform 180ms ease, visibility 0s linear 180ms;
   }
 
   .control-panel.open {
     transform: translateX(0);
+    visibility: visible;
+    transition-delay: 0s;
   }
 
   .panel-mobile-head {
