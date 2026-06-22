@@ -85,7 +85,7 @@ export function shortestPath(nodes, edges, source, target, directed = false) {
 
   for (let cursor = 0; cursor < queue.length; cursor += 1) {
     const current = queue[cursor];
-    const neighbors = [...(adjacency.get(current) ?? [])].sort((a, b) =>
+    const neighbors = [...adjacency.get(current)].sort((a, b) =>
       a.next.localeCompare(b.next) || a.edge.localeCompare(b.edge),
     );
     for (const neighbor of neighbors) {
@@ -98,7 +98,6 @@ export function shortestPath(nodes, edges, source, target, directed = false) {
         let step = target;
         while (step !== source) {
           const link = previous.get(step);
-          if (!link) return null;
           pathEdges.push(link.edge);
           pathNodes.push(link.node);
           step = link.node;

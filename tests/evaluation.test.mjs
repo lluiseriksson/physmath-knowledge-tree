@@ -61,7 +61,6 @@ test('reference scopes distinguish source-bearing claims from context', () => {
   assert.equal(hasSourceBearingReference(sampleNodes[2]), false);
   assert.equal(hasSourceBearingReference({}), false);
 });
-
 test('waypoint routes concatenate deterministic shortest-path segments', () => {
   assert.deepEqual(buildWaypointRoute(sampleNodes, sampleEdges, ['a', 'b', 'c'], true), {
     nodes: ['a', 'b', 'c'], edges: ['ab', 'bc'],
@@ -167,4 +166,12 @@ test('repository evaluation detects malformed graph and missing automation check
   assert.equal(result.graph_integrity.passed, false);
   assert.equal(result.controlled_quality.score < 100, true);
   assert.equal(result.passed, false);
+});
+
+test('route evaluation reports edges without direct references', () => {
+  const edges = [{ ...sampleEdges[0], references: [] }];
+  const result = evaluateRouteScenario(sampleNodes, edges, sampleScenario);
+  assert.equal(result.passed, false);
+  assert.deepEqual(result.unreferenced_edges, ['ab']);
+  assert.equal(result.checks.all_edges_referenced, false);
 });

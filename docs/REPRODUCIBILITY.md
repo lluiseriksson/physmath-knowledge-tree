@@ -9,7 +9,7 @@ npm ci
 npm run check
 ```
 
-The complete gate validates syntax, graph schemas and invariants, curation provenance, generated reports, learning data, links, accessibility checks, PWA metadata, workflow pinning, formatting, tests with 100% line coverage for the instrumented Node module set, the production build and its SHA-256 manifest.
+The complete gate validates syntax, graph schemas and invariants, curation provenance, generated reports, learning data, links, accessibility checks, PWA metadata, workflow pinning, formatting, tests with 100% line, branch and function coverage for the explicit Node module set, the production build and its SHA-256 manifest, and a real Chromium smoke pass over `dist/`.
 
 Regenerate canonical projections and evaluations with:
 
@@ -26,6 +26,15 @@ npm run validate:views
 npm run validate:audit
 npm run validate:evaluation
 ```
+
+## Browser verification
+
+```bash
+npm run build
+npm run test:e2e
+```
+
+The browser runner auto-detects Chrome, Chromium or Edge. Set `BROWSER_BIN=/path/to/browser` when necessary. It uses a fresh profile, a loopback-only server and the Chrome DevTools Protocol; it adds no npm dependency. See `docs/BROWSER_TESTING.md` for covered flows and limitations.
 
 ## Reproducible scenarios
 

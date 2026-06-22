@@ -2,40 +2,197 @@
 /** @typedef {import('./types.js').Topic} Topic */
 /** @typedef {import('./types.js').ProgressStatus} ProgressStatus */
 /** @typedef {import('./types.js').GraphPoint} GraphPoint */
-export const NODE_WIDTH=218;
-export const NODE_HEIGHT=68;
+
+export const NODE_WIDTH = 218;
+export const NODE_HEIGHT = 68;
+
 /** @param {Topic[]} topics */
-export function indexTopics(topics){return new Map(topics.map(t=>[t.id,t]));}
+export function indexTopics(topics) {
+  return new Map(topics.map((topic) => [topic.id, topic]));
+}
+
 /** @param {Topic[]} topics @returns {Topic[]} */
-export function topologicalSort(topics){
- const byId=indexTopics(topics), indegree=new Map(topics.map(t=>[t.id,0])), children=new Map(topics.map(t=>[t.id,[]]));
- for(const t of topics)for(const p of t.prerequisites){if(!byId.has(p))throw new Error(`Topic "${t.id}" references missing prerequisite "${p}".`);indegree.set(t.id,(indegree.get(t.id)||0)+1);children.get(p)?.push(t.id);}
- const order=new Map(topics.map((t,i)=>[t.id,i]));const queue=topics.filter(t=>indegree.get(t.id)===0),sorted=[];
- while(queue.length){queue.sort((a,b)=>(order.get(a.id)||0)-(order.get(b.id)||0));const cur=queue.shift();if(!cur)break;sorted.push(cur);for(const id of children.get(cur.id)||[]){const n=(indegree.get(id)||1)-1;indegree.set(id,n);if(n===0){const child=byId.get(id);if(child)queue.push(child);}}}
- if(sorted.length!==topics.length){const unresolved=topics.filter(t=>!sorted.some(x=>x.id===t.id));throw new Error(`Cycle detected: ${unresolved.map(x=>x.id).join(', ')}`);}return sorted;
+export function topologicalSort(topics) {
+  const byId = indexTopics(topics);
+  const indegree = new Map(topics.map((topic) => [topic.id, 0]));
+  const children = new Map(topics.map((topic) => [topic.id, []]));
+
+  for (const topic of topics) {
+    for (const prerequisite of topic.prerequisites) {
+      const childIds = children.get(prerequisite);
+      if (!byId.has(prerequisite) || !childIds) {
+        throw new Error(`Topic "${topic.id}" references missing prerequisite "${prerequisite}".`);
+      }
+      indegree.set(topic.id, /** @type {number} */ (indegree.get(topic.id)) + 1);
+      childIds.push(topic.id);
+    }
+  }
+
+  const sourceOrder = new Map(topics.map((topic, index) => [topic.id, index]));
+  const queue = topics.filter((topic) => indegree.get(topic.id) === 0);
+  const sorted = [];
+
+  while (queue.length > 0) {
+    queue.sort((left, right) =>
+      /** @type {number} */ (sourceOrder.get(left.id))
+      - /** @type {number} */ (sourceOrder.get(right.id)));
+    const current = /** @type {Topic} */ (queue.shift());
+    sorted.push(current);
+
+    for (const id of /** @type {string[]} */ (children.get(current.id))) {
+      const next = /** @type {number} */ (indegree.get(id)) - 1;
+      indegree.set(id, next);
+      if (next === 0) queue.push(/** @type {Topic} */ (byId.get(id)));
+    }
+  }
+
+  if (sorted.length !== topics.length) {
+    const sortedIds = new Set(sorted.map((topic) => topic.id));
+    const unresolved = topics.filter((topic) => !sortedIds.has(topic.id));
+    throw new Error(`Cycle detected: ${unresolved.map((topic) => topic.id).join(', ')}`);
+  }
+  return sorted;
 }
+
 /** @param {Topic[]} topics */
-export function computeDepths(topics){const d=new Map();for(const t of topologicalSort(topics)){d.set(t.id,t.prerequisites.length?Math.max(...t.prerequisites.map(id=>d.get(id)||0))+1:0);}return d;}
-/** @param {Topic[]} topics @param {{horizontalGap?:number,verticalGap?:number,margin?:number}} [options] */
-export function createLayout(topics,options={}){
- const hg=options.horizontalGap??96,vg=options.verticalGap??30,m=options.margin??72,d=computeDepths(topics),max=Math.max(0,...d.values()),layers=Array.from({length:max+1},()=>[]),domainOrder=new Map([['math',0],['bridge',1],['physics',2]]);
- for(const t of topics)layers[d.get(t.id)||0].push(t);
- for(const layer of layers)layer.sort((a,b)=>(domainOrder.get(a.domain)||0)-(domainOrder.get(b.domain)||0)||a.area.localeCompare(b.area)||a.id.localeCompare(b.id));
- const maxSize=Math.max(1,...layers.map(x=>x.length)),width=m*2+(max+1)*NODE_WIDTH+max*hg,height=m*2+maxSize*NODE_HEIGHT+Math.max(0,maxSize-1)*vg,positions=new Map();
- layers.forEach((layer,depth)=>{const lh=layer.length*NODE_HEIGHT+Math.max(0,layer.length-1)*vg,off=m+(height-m*2-lh)/2;layer.forEach((t,order)=>positions.set(t.id,{x:m+depth*(NODE_WIDTH+hg),y:off+order*(NODE_HEIGHT+vg),depth,order}));});
- return {positions,width,height,maxDepth:max};
+export function computeDepths(topics) {
+  const depths = new Map();
+  for (const topic of topologicalSort(topics)) {
+    const depth = topic.prerequisites.length > 0
+      ? Math.max(...topic.prerequisites.map((id) => /** @type {number} */ (depths.get(id)))) + 1
+      : 0;
+    depths.set(topic.id, depth);
+  }
+  return depths;
 }
+
+/** @param {Topic[]} topics @param {{horizontalGap?:number,verticalGap?:number,margin?:number}} [options] */
+export function createLayout(topics, options = {}) {
+  const horizontalGap = options.horizontalGap ?? 96;
+  const verticalGap = options.verticalGap ?? 30;
+  const margin = options.margin ?? 72;
+  const depths = computeDepths(topics);
+  const maxDepth = Math.max(0, ...depths.values());
+  const layers = Array.from({ length: maxDepth + 1 }, () => []);
+  const domainOrder = new Map([['math', 0], ['bridge', 1], ['physics', 2]]);
+
+  for (const topic of topics) {
+    layers[/** @type {number} */ (depths.get(topic.id))].push(topic);
+  }
+  for (const layer of layers) {
+    layer.sort((left, right) =>
+      (domainOrder.get(left.domain) ?? 3) - (domainOrder.get(right.domain) ?? 3)
+      || left.area.localeCompare(right.area)
+      || left.id.localeCompare(right.id));
+  }
+
+  const maxLayerSize = Math.max(1, ...layers.map((layer) => layer.length));
+  const width = margin * 2 + (maxDepth + 1) * NODE_WIDTH + maxDepth * horizontalGap;
+  const height = margin * 2 + maxLayerSize * NODE_HEIGHT
+    + Math.max(0, maxLayerSize - 1) * verticalGap;
+  const positions = new Map();
+
+  layers.forEach((layer, depth) => {
+    const layerHeight = layer.length * NODE_HEIGHT
+      + Math.max(0, layer.length - 1) * verticalGap;
+    const offset = margin + (height - margin * 2 - layerHeight) / 2;
+    layer.forEach((topic, order) => positions.set(topic.id, {
+      x: margin + depth * (NODE_WIDTH + horizontalGap),
+      y: offset + order * (NODE_HEIGHT + verticalGap),
+      depth,
+      order,
+    }));
+  });
+
+  return { positions, width, height, maxDepth };
+}
+
 /** @param {string} id @param {Map<string,Topic>} byId */
-export function getAncestors(id,byId){const out=new Set();const visit=x=>{const t=byId.get(x);if(!t)return;for(const p of t.prerequisites)if(!out.has(p)){out.add(p);visit(p);}};visit(id);return out;}
+export function getAncestors(id, byId) {
+  const ancestors = new Set();
+  const visit = (current) => {
+    const topic = byId.get(current);
+    if (!topic) return;
+    for (const prerequisite of topic.prerequisites) {
+      if (ancestors.has(prerequisite)) continue;
+      ancestors.add(prerequisite);
+      visit(prerequisite);
+    }
+  };
+  visit(id);
+  return ancestors;
+}
+
 /** @param {string} id @param {Topic[]} topics */
-export function getDescendants(id,topics){const out=new Set(),children=new Map(topics.map(t=>[t.id,[]]));for(const t of topics)for(const p of t.prerequisites)children.get(p)?.push(t.id);const visit=x=>{for(const c of children.get(x)||[])if(!out.has(c)){out.add(c);visit(c);}};visit(id);return out;}
+export function getDescendants(id, topics) {
+  const descendants = new Set();
+  const children = new Map(topics.map((topic) => [topic.id, []]));
+  for (const topic of topics) {
+    for (const prerequisite of topic.prerequisites) {
+      children.get(prerequisite)?.push(topic.id);
+    }
+  }
+  const visit = (current) => {
+    for (const child of children.get(current) ?? []) {
+      if (descendants.has(child)) continue;
+      descendants.add(child);
+      visit(child);
+    }
+  };
+  visit(id);
+  return descendants;
+}
+
 /** @param {string} id @param {Topic[]} topics */
-export function getLearningPath(id,topics){const byId=indexTopics(topics);if(!byId.has(id))return [];const ids=getAncestors(id,byId);ids.add(id);return topologicalSort(topics.filter(t=>ids.has(t.id)));}
+export function getLearningPath(id, topics) {
+  const byId = indexTopics(topics);
+  if (!byId.has(id)) return [];
+  const ids = getAncestors(id, byId);
+  ids.add(id);
+  return topologicalSort(topics.filter((topic) => ids.has(topic.id)));
+}
+
 /** @param {Topic} topic @param {Record<string,ProgressStatus>} statuses */
-export function isUnlocked(topic,statuses){return topic.prerequisites.every(id=>statuses[id]==='mastered');}
+export function isUnlocked(topic, statuses) {
+  return topic.prerequisites.every((id) => statuses[id] === 'mastered');
+}
+
 /** @param {Topic[]} topics @param {Record<string,ProgressStatus>} statuses @param {number} [limit] */
-export function getRecommendedTopics(topics,statuses,limit=6){const levels=new Map([['foundation',0],['intermediate',1],['advanced',2]]);return topics.filter(t=>statuses[t.id]!=='mastered'&&isUnlocked(t,statuses)).sort((a,b)=>(statuses[a.id]==='learning'?0:1)-(statuses[b.id]==='learning'?0:1)||(levels.get(a.level)||0)-(levels.get(b.level)||0)||a.estimatedHours-b.estimatedHours||a.id.localeCompare(b.id)).slice(0,limit);}
+export function getRecommendedTopics(topics, statuses, limit = 6) {
+  const levels = new Map([['foundation', 0], ['intermediate', 1], ['advanced', 2]]);
+  const statusRank = (topic) => statuses[topic.id] === 'learning' ? 0 : 1;
+  const levelRank = (topic) => levels.get(topic.level) ?? levels.size;
+  return topics
+    .filter((topic) => statuses[topic.id] !== 'mastered' && isUnlocked(topic, statuses))
+    .sort((left, right) =>
+      statusRank(left) - statusRank(right)
+      || levelRank(left) - levelRank(right)
+      || left.estimatedHours - right.estimatedHours
+      || left.id.localeCompare(right.id))
+    .slice(0, limit);
+}
+
 /** @param {Topic[]} topics @param {Record<string,ProgressStatus>} statuses */
-export function getProgressStats(topics,statuses){const c={mastered:0,learning:0,notStarted:0,total:topics.length};for(const t of topics){const s=statuses[t.id]||'not-started';if(s==='mastered')c.mastered++;else if(s==='learning')c.learning++;else c.notStarted++;}return {...c,percent:topics.length?Math.round(c.mastered/topics.length*100):0};}
+export function getProgressStats(topics, statuses) {
+  const counts = { mastered: 0, learning: 0, notStarted: 0, total: topics.length };
+  for (const topic of topics) {
+    const status = statuses[topic.id] ?? 'not-started';
+    if (status === 'mastered') counts.mastered += 1;
+    else if (status === 'learning') counts.learning += 1;
+    else counts.notStarted += 1;
+  }
+  return {
+    ...counts,
+    percent: topics.length > 0 ? Math.round(counts.mastered / topics.length * 100) : 0,
+  };
+}
+
 /** @param {GraphPoint} source @param {GraphPoint} target */
-export function createEdgePath(source,target){const sx=source.x+NODE_WIDTH,sy=source.y+NODE_HEIGHT/2,ex=target.x,ey=target.y+NODE_HEIGHT/2,c=Math.max(44,(ex-sx)*.48);return `M ${sx} ${sy} C ${sx+c} ${sy}, ${ex-c} ${ey}, ${ex} ${ey}`;}
+export function createEdgePath(source, target) {
+  const startX = source.x + NODE_WIDTH;
+  const startY = source.y + NODE_HEIGHT / 2;
+  const endX = target.x;
+  const endY = target.y + NODE_HEIGHT / 2;
+  const curve = Math.max(44, (endX - startX) * 0.48);
+  return `M ${startX} ${startY} C ${startX + curve} ${startY}, ${endX - curve} ${endY}, ${endX} ${endY}`;
+}

@@ -1,4 +1,4 @@
-const APP_VERSION = '2.5.0';
+const APP_VERSION = '2.6.0';
 const CACHE_PREFIX = 'physmath-knowledge-tree-';
 const CACHE = `${CACHE_PREFIX}${APP_VERSION}`;
 const SHELL = [

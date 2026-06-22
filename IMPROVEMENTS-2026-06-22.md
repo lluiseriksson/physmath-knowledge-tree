@@ -1,22 +1,29 @@
-# Improvement package — 2026-06-22
+# Improvements applied after v2.5.0
 
-This archive is based on repository `main` at commit `eccb3f6410158d0d04de5d3038582fde34ce41df`.
+This package is based on release commit `4517818c48a2cc318fc14c56df97b60ebb15f491` and includes the documented `usecase:list` polish from `main`.
 
-Changes in this package:
+## Engineering hardening
 
-- line coverage raised from 99.25% to 100.00% for the Node-instrumented module set;
-- 38 passing tests, including new server, storage and layout regressions;
-- a mandatory 100% line threshold integrated into `npm run check`;
-- correct ephemeral-port reporting by the local static server;
-- testable `parsePort` and `startStaticServer` helpers;
-- updated English/Spanish usage documentation and verification record.
+- Raised the explicit core coverage gate from line-only to **100% lines, branches and functions**.
+- Expanded the suite from 47 to **58 passing tests**.
+- Reworked learning-graph helpers around readable invariants and deterministic tie-breakers.
+- Separated the static-server CLI bootstrap from request handling.
+- Fixed direct numeric port `0`, default request handling and binary MIME fallback regressions.
+- Added a cross-platform Node coverage launcher with exact production-file inclusion.
 
-Verification commands:
+## Production browser verification
 
-```bash
-npm ci
-npm run test:coverage
-npm run check
-```
+- Added a dependency-free Chrome DevTools Protocol runner.
+- Exercised the built `dist/` artifact in Chromium.
+- Verified research search, dossier state, list view, Spanish UI and shortest paths.
+- Verified learning graph/list counts, bilingual search and persisted progress.
+- Verified generated-control accessibility and a real service-worker offline fallback.
+- Made uncaught exceptions, console errors and same-origin HTTP failures fatal.
+- Added deterministic CI browser discovery.
 
-The coverage scope and browser-execution boundary are documented in `docs/COVERAGE.md`.
+## Documentation and release
+
+- Added browser-testing methodology and explicit boundaries.
+- Updated coverage, reproducibility, limitations and verification records.
+- Added release notes for v2.6.0.
+- Preserved the 18 source-verification requests and 3 approval gates rather than hiding unresolved evidence work.

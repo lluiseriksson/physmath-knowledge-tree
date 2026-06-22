@@ -20,6 +20,7 @@ The application uses relative URLs and therefore works under the repository subp
 
 ```bash
 npm ci
+# Set BROWSER_BIN only when Chrome/Chromium/Edge is not auto-detected.
 npm run check
 npm run dev
 ```

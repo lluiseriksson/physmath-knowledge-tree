@@ -56,7 +56,7 @@ export function evaluateRouteScenario(nodes, edges, scenario) {
   const unreferencedEdges = routeEdges
     .filter((edge) => !(edge.references?.length))
     .map((edge) => edge.id);
-  const terminal = route.nodes.at(-1) ?? null;
+  const terminal = route.nodes.at(-1);
   const checks = {
     within_edge_budget: route.edges.length <= scenario.maximum_edges,
     permitted_evidence_only: disallowedEdges.length === 0,

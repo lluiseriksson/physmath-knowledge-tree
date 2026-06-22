@@ -25,7 +25,7 @@ Release 2.5.0 turns the existing testing baseline into a broader research-softwa
 ```bash
 npm ci
 npm run check
-npm run usecase:list
+npm run usecase -- --list
 npm run benchmark:evaluation
 lake build --wfail
 ```

@@ -56,7 +56,7 @@ The repository includes a deterministic evaluation layer rather than relying onl
 - A repository-controlled quality rubric whose exclusions explicitly include scientific truth, publication novelty, external adoption and unfinished user studies.
 - A statement of need, related-work comparison, reproducibility guide and preregistered user-evaluation protocol.
 
-See [`docs/EVALUATION.md`](./docs/EVALUATION.md), [`docs/USE_CASES.md`](./docs/USE_CASES.md), [`docs/QUALITY_SCORECARD.md`](./docs/QUALITY_SCORECARD.md), [`docs/STATEMENT_OF_NEED.md`](./docs/STATEMENT_OF_NEED.md), [`docs/RELATED_WORK.md`](./docs/RELATED_WORK.md) and [`docs/LIMITATIONS.md`](./docs/LIMITATIONS.md). List cases with `npm run usecase:list` and reproduce one with `npm run usecase -- <scenario-id>`.
+See [`docs/EVALUATION.md`](./docs/EVALUATION.md), [`docs/USE_CASES.md`](./docs/USE_CASES.md), [`docs/QUALITY_SCORECARD.md`](./docs/QUALITY_SCORECARD.md), [`docs/STATEMENT_OF_NEED.md`](./docs/STATEMENT_OF_NEED.md), [`docs/RELATED_WORK.md`](./docs/RELATED_WORK.md) and [`docs/LIMITATIONS.md`](./docs/LIMITATIONS.md). Reproduce a case with `npm run usecase:list` and `npm run usecase -- <scenario-id>`.
 
 ## Source curation
 
@@ -89,7 +89,7 @@ CI builds the package with warnings treated as failures and checks that the publ
 
 ## Run locally
 
-Requirements: Node.js 22 or newer. The web application has no runtime npm dependencies.
+Requirements: Node.js 22 or newer. The web application has no runtime npm dependencies. The complete browser gate also requires Chrome, Chromium or Edge.
 
 ```bash
 npm ci
@@ -129,10 +129,11 @@ npm run build
 | `npm run validate:learning` | Check bilingual curriculum taxonomies, prerequisites and DAG structure. |
 | `npm run validate:views` | Confirm generated Markdown/Mermaid projections match canonical JSON. |
 | `npm test` | Run graph, search, layout, path, persistence, server and data tests. |
-| `npm run test:coverage` | Run the test suite and enforce 100% line coverage for instrumented Node-tested modules. |
+| `npm run test:coverage` | Enforce 100% line, branch and function coverage for the explicit core module set. |
+| `npm run test:e2e` | Exercise the built research and learning apps in a real Chromium-family browser. |
 | `npm run generate:views` | Regenerate deterministic projections in `views/`. |
 | `npm run build` | Produce a deployable static site in `dist/`. |
-| `npm run check` | Run syntax, schemas, curation, evaluation, links, accessibility, PWA, workflows, tests and reproducible-build checks. |
+| `npm run check` | Run syntax, schemas, curation, evaluation, accessibility, full core coverage, reproducible build verification and browser smoke testing. |
 
 ## Repository map
 
@@ -165,7 +166,7 @@ Start with [`AGENTS.md`](./AGENTS.md) and [`docs/agent-protocol.md`](./docs/agen
 
 ## Accessibility, privacy and security
 
-Both applications have keyboard-accessible alternatives to the SVG graph, visible focus states, text labels in addition to color, reduced-motion support and responsive layouts. No analytics, accounts, cookies, remote fonts or third-party runtime scripts are used. Learning progress remains in browser storage unless explicitly exported.
+Both applications have keyboard-accessible alternatives to the SVG graph, visible focus states, text labels in addition to color, reduced-motion support and responsive layouts. The built artifact is also exercised by a dependency-free Chromium smoke suite covering critical flows, runtime accessibility invariants and offline fallback; see [`docs/BROWSER_TESTING.md`](./docs/BROWSER_TESTING.md). No analytics, accounts, cookies, remote fonts or third-party runtime scripts are used. Learning progress remains in browser storage unless explicitly exported.
 
 The application applies a restrictive Content Security Policy, validates import data, uses no `innerHTML` for canonical graph content and is scanned by CodeQL. See [`SECURITY.md`](./SECURITY.md). The reproducible local results are recorded in [`docs/VERIFICATION.md`](./docs/VERIFICATION.md).
 

@@ -7,7 +7,7 @@ def graphSchemaVersion : String := "0.6.0"
 def curationSchemaVersion : String := "1.2.0"
 
 /-- Application/repository release version. -/
-def applicationVersion : String := "2.5.0"
+def applicationVersion : String := "2.6.0"
 
 /-- Stable repository identifier used by generated tooling. -/
 def repositorySlug : String := "lluiseriksson/physmath-knowledge-tree"

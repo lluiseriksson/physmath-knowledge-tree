@@ -7,12 +7,21 @@ import { spawn } from 'node:child_process';
 import { syncBuiltinESMExports } from 'node:module';
 import { resolve } from 'node:path';
 import test from 'node:test';
-import { createStaticServer, parsePort, resolveRequestPath, startStaticServer } from '../scripts/serve.mjs';
+import {
+  createStaticServer,
+  handleStaticRequest,
+  parsePort,
+  resolveBoundPort,
+  resolveRequestPath,
+  startStaticServer,
+} from '../scripts/serve.mjs';
 
 const root = resolve(fileURLToPath(new URL('..', import.meta.url)));
 
 test('request paths stay inside the configured root', () => {
   assert.equal(resolveRequestPath(root, '/'), resolve(root, 'index.html'));
+  assert.equal(resolveRequestPath(root, ''), resolve(root, 'index.html'));
+  assert.equal(resolveRequestPath(root), resolve(root, 'index.html'));
   assert.equal(resolveRequestPath(root, '/learning.html?view=list'), resolve(root, 'learning.html'));
   assert.equal(resolveRequestPath(root, '/%2e%2e%2fsecret.txt'), null);
   assert.equal(resolveRequestPath(root, '/%2e%2e%2fphysmath-final-evil/file'), null);
@@ -48,6 +57,31 @@ test('static server returns content, security headers and safe method handling',
 
   const missing = await fetch(`${origin}/missing-file`);
   assert.equal(missing.status, 404);
+
+  const binaryFallback = await fetch(`${origin}/LICENSE`);
+  assert.equal(binaryFallback.status, 200);
+  assert.equal(binaryFallback.headers.get('content-type'), 'application/octet-stream');
+});
+
+
+test('request handler applies defaults and bound-port resolution is explicit', () => {
+  const result = { status: 0, headers: {}, body: '' };
+  const response = {
+    writeHead(status, headers) {
+      result.status = status;
+      result.headers = headers;
+    },
+    end(body = '') {
+      result.body = String(body);
+    },
+  };
+  handleStaticRequest(resolve(root, 'missing-static-root'), {}, response);
+  assert.equal(result.status, 404);
+  assert.equal(result.body, 'Not found');
+
+  assert.equal(resolveBoundPort({ address: '127.0.0.1', family: 'IPv4', port: 1234 }, 80), 1234);
+  assert.equal(resolveBoundPort(null, 80), 80);
+  assert.equal(resolveBoundPort('/tmp/socket', 80), 80);
 });
 
 
@@ -119,7 +153,9 @@ test('static server converts unexpected synchronous failures into safe 500 respo
 
 test('static server CLI helpers validate ports and report the actual bound port', async (context) => {
   assert.equal(parsePort(undefined), 4173);
+  assert.equal(parsePort(''), 4173);
   assert.equal(parsePort('0'), 0);
+  assert.equal(parsePort(0), 0);
   assert.throws(() => parsePort('-1'), /Invalid PORT/);
   assert.throws(() => parsePort('1.5'), /Invalid PORT/);
   assert.throws(() => parsePort('65536'), /Invalid PORT/);
@@ -132,7 +168,7 @@ test('static server CLI helpers validate ports and report the actual bound port'
   assert.ok(address && typeof address === 'object');
   assert.deepEqual(messages, [`PhysMath Knowledge Tree: http://127.0.0.1:${address.port}`]);
 
-  const invalid = spawn(process.execPath, ['scripts/serve.mjs', root], {
+  const invalid = spawn(process.execPath, ['scripts/serve-cli.mjs', root], {
     cwd: root,
     env: { ...process.env, PORT: '-1' },
     stdio: ['ignore', 'pipe', 'pipe'],
@@ -143,4 +179,32 @@ test('static server CLI helpers validate ports and report the actual bound port'
   const [invalidCode] = await once(invalid, 'exit');
   assert.notEqual(invalidCode, 0);
   assert.match(invalidError, /Invalid PORT/);
+
+  const cli = spawn(process.execPath, ['scripts/serve-cli.mjs'], {
+    cwd: root,
+    env: { ...process.env, PORT: '0' },
+    stdio: ['ignore', 'pipe', 'pipe'],
+  });
+  cli.stdout.setEncoding('utf8');
+  let cliOutput = '';
+  await new Promise((resolveOutput, reject) => {
+    const timeout = setTimeout(() => reject(new Error('CLI server did not report its port')), 5000);
+    cli.stdout.on('data', (chunk) => {
+      cliOutput += chunk;
+      if (/http:\/\/127\.0\.0\.1:\d+/.test(cliOutput)) {
+        clearTimeout(timeout);
+        resolveOutput();
+      }
+    });
+    cli.once('error', reject);
+    cli.once('exit', (code) => {
+      if (!/http:\/\/127\.0\.0\.1:\d+/.test(cliOutput)) {
+        clearTimeout(timeout);
+        reject(new Error(`CLI server exited early with ${code}`));
+      }
+    });
+  });
+  cli.kill();
+  await once(cli, 'exit');
+  assert.match(cliOutput, /PhysMath Knowledge Tree: http:\/\/127\.0\.0\.1:\d+/);
 });

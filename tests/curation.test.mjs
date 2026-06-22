@@ -12,7 +12,6 @@ test('curation source IDs are stable and filesystem-safe', () => {
   assert.equal(normalizeSourceId('Ideas 3 (8).TXT'), 'ideas_3_8_txt');
   assert.equal(normalizeSourceId('  Física / Matemática  '), 'f_sica_matem_tica');
 });
-
 test('text source inspection records hash, bytes and lines', () => {
   const metadata = inspectSource('/tmp/notes.txt', Buffer.from('one\ntwo\n', 'utf8'));
   assert.equal(metadata.media_type, 'text/plain');
@@ -43,4 +42,21 @@ test('source metadata comparison reports only changed fields', () => {
   const expected = { media_type: 'text/plain', sha256: 'a', bytes: 3, lines: 2 };
   const actual = { media_type: 'text/plain', sha256: 'b', bytes: 3, lines: 2 };
   assert.deepEqual(compareSourceMetadata(expected, actual), ['sha256: expected a, got b']);
+});
+
+test('PNG dimensions and text line accounting reject or count boundary cases', () => {
+  const png = readFileSync(new URL('../assets/icons/icon-192.png', import.meta.url));
+  const zeroWidth = Buffer.from(png);
+  zeroWidth.writeUInt32BE(0, 16);
+  assert.throws(() => inspectPng(zeroWidth), /positive/);
+
+  const zeroHeight = Buffer.from(png);
+  zeroHeight.writeUInt32BE(0, 20);
+  assert.throws(() => inspectPng(zeroHeight), /positive/);
+
+  assert.equal(inspectSource('empty.txt', Buffer.from('')).lines, 1);
+  assert.equal(inspectSource('single.txt', Buffer.from('one line')).lines, 1);
+  assert.equal(inspectSource('trailing.md', Buffer.from('one\n')).lines, 1);
+  assert.equal(inspectSource('two.md', Buffer.from('one\ntwo')).lines, 2);
+  assert.throws(() => inspectSource('source', Buffer.from('x')), /\(none\)/);
 });

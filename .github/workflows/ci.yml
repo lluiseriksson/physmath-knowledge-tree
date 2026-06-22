@@ -38,6 +38,18 @@ jobs:
       - name: Install locked project metadata
         run: npm ci
 
+      - name: Resolve preinstalled Chromium browser
+        shell: bash
+        run: |
+          if command -v google-chrome >/dev/null 2>&1; then
+            echo "BROWSER_BIN=$(command -v google-chrome)" >> "$GITHUB_ENV"
+          elif command -v chromium >/dev/null 2>&1; then
+            echo "BROWSER_BIN=$(command -v chromium)" >> "$GITHUB_ENV"
+          else
+            echo "No Chromium-family browser is available on the runner." >&2
+            exit 1
+          fi
+
       - name: Run complete web quality gate
         run: npm run check
 

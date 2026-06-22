@@ -1,6 +1,7 @@
 const dictionaries = {
   en: {
     'nav.skip': 'Skip to the research graph',
+    'app.heading': 'PhysMath Knowledge Tree research graph',
     'app.tagline': 'Traceable bridges for physics, mathematics and Lean',
     'nav.research': 'Research graph',
     'nav.learning': 'Learning map',
@@ -93,6 +94,7 @@ const dictionaries = {
   },
   es: {
     'nav.skip': 'Saltar al grafo de investigación',
+    'app.heading': 'Grafo de investigacion de PhysMath Knowledge Tree',
     'app.tagline': 'Puentes trazables para física, matemáticas y Lean',
     'nav.research': 'Grafo de investigación',
     'nav.learning': 'Mapa de aprendizaje',

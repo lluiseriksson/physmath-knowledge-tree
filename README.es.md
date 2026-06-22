@@ -69,7 +69,7 @@ CI compila con los avisos tratados como errores y verifica el entorno Lean.
 
 ## Uso local
 
-Se necesita Node.js 22 o posterior. La web no tiene dependencias npm de ejecución.
+Se necesita Node.js 22 o posterior. La web no tiene dependencias npm de ejecución; la compuerta completa de navegador requiere Chrome, Chromium o Edge.
 
 ```bash
 npm ci
@@ -82,6 +82,8 @@ Batería completa de calidad:
 
 ```bash
 npm run test:coverage
+npm run build
+npm run test:e2e
 npm run check
 ```
 
@@ -93,9 +95,9 @@ npm run build
 
 ## Calidad y seguridad
 
-La repo valida IDs, referencias, endpoints, niveles de evidencia, colecciones, estadísticas, traducciones, taxonomías y ausencia de ciclos. Las pruebas cubren recorridos, caminos mínimos, búsqueda, evaluación, layout, persistencia, servidor y datos, con 100% de cobertura de líneas en los módulos instrumentados por Node. También se verifican enlaces, accesibilidad estática, PWA, CSP, acciones fijadas por SHA, formato, build reproducible, CodeQL y despliegue Pages.
+La repo valida IDs, referencias, endpoints, niveles de evidencia, colecciones, estadísticas, traducciones, taxonomías y ausencia de ciclos. Las pruebas cubren recorridos, caminos mínimos, búsqueda, evaluación, layout, persistencia, servidor y datos, con 100% de cobertura de líneas, ramas y funciones en el conjunto explícito de módulos instrumentados por Node. El artefacto `dist/` se prueba además en Chromium mediante búsqueda, fichas, rutas, cambio de idioma, accesibilidad dinámica, fallback offline y persistencia de progreso. También se verifican enlaces, accesibilidad estática, PWA, CSP, acciones fijadas por SHA, formato, build reproducible, CodeQL y despliegue Pages.
 
-No hay analítica, cuentas, cookies, fuentes remotas ni scripts de terceros. El progreso educativo permanece en el navegador salvo exportación explícita. Los resultados reproducibles están en [`docs/VERIFICATION.md`](./docs/VERIFICATION.md).
+No hay analítica, cuentas, cookies, fuentes remotas ni scripts de terceros. El progreso educativo permanece en el navegador salvo exportación explícita. Los resultados reproducibles están en [`docs/VERIFICATION.md`](./docs/VERIFICATION.md) y la metodología E2E en [`docs/BROWSER_TESTING.md`](./docs/BROWSER_TESTING.md).
 
 ## Protocolo de investigación
 

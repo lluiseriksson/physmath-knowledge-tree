@@ -33,7 +33,6 @@ test('sanitization drops unknown topics and statuses', () => {
   assert.deepEqual(progress.statuses, { arithmetic: 'mastered' });
   assert.deepEqual(progress.favorites, ['vectors']);
 });
-
 test('save/load round trip works with a storage adapter', () => {
   const storage = new MemoryStorage();
   const progress = createEmptyProgress();
@@ -90,5 +89,37 @@ test('preferences persist strings and degrade safely when storage is unavailable
     assert.doesNotThrow(() => savePreference('theme', 'light'));
   } finally {
     delete globalThis.localStorage;
+  }
+});
+
+test('storage sanitization and validation cover absent optional fields', () => {
+  const empty = sanitizeProgress(null, ids);
+  assert.equal(empty.schemaVersion, 1);
+
+  const sanitized = sanitizeProgress({
+    statuses: 'invalid',
+    favorites: 'invalid',
+    updatedAt: 'not-a-date',
+  }, ids);
+  assert.deepEqual(sanitized.statuses, {});
+  assert.deepEqual(sanitized.favorites, []);
+  assert.ok(Number.isFinite(Date.parse(sanitized.updatedAt)));
+
+  const storage = new MemoryStorage();
+  assert.equal(loadProgress(ids, storage).schemaVersion, 1);
+  assert.equal(validateProgressFile({ size: 0 }), true);
+  assert.equal(validateProgressFile({ size: 0, type: '', name: '' }), true);
+});
+
+test('preference writes initialize an empty preference object', () => {
+  const previous = globalThis.localStorage;
+  const storage = new MemoryStorage();
+  globalThis.localStorage = storage;
+  try {
+    savePreference('language', 'es');
+    assert.equal(loadPreference('language', 'en'), 'es');
+  } finally {
+    if (previous === undefined) delete globalThis.localStorage;
+    else globalThis.localStorage = previous;
   }
 });

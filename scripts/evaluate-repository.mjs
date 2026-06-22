@@ -21,6 +21,7 @@ const requiredDocs = [
   'docs/REFERENCE_POLICY.md',
   'docs/USER_EVALUATION_PROTOCOL.md',
   'docs/REPRODUCIBILITY.md',
+  'docs/BROWSER_TESTING.md',
   'docs/LIMITATIONS.md',
   'CONTRIBUTING.md',
   'SECURITY.md',
@@ -29,9 +30,11 @@ const requiredDocs = [
 const requiredScripts = [
   'check',
   'test:coverage',
+  'test:e2e',
   'evaluate',
   'validate:evaluation',
   'usecase',
+  'usecase:list',
 ];
 const repositoryChecks = [
   requiredDocs.every((path) => existsSync(join(root, path))),

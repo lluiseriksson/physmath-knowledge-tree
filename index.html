@@ -126,6 +126,7 @@
     </aside>
 
     <main id="research-workspace" class="workspace">
+      <h1 class="sr-only" data-i18n="app.heading">PhysMath Knowledge Tree research graph</h1>
       <div class="workspace-toolbar">
         <div class="segmented" aria-label="View mode">
           <button id="graph-view-button" type="button" aria-pressed="true" data-i18n="view.graph">Graph</button>
@@ -200,7 +201,7 @@
       <h2 data-i18n="moves.cardTitle">Generated bridge card</h2>
       <form method="dialog"><button class="icon-button" type="submit" aria-label="Close">×</button></form>
     </header>
-    <textarea id="bridge-card-output" readonly></textarea>
+    <textarea id="bridge-card-output" readonly aria-label="Generated bridge card Markdown"></textarea>
     <div class="button-row end">
       <button id="download-card" class="secondary-button" type="button" data-i18n="moves.download">Download Markdown</button>
       <button id="copy-card" class="primary-button" type="button" data-i18n="moves.copy">Copy</button>

@@ -54,7 +54,7 @@ GitHub Pages receives only `dist/`. CodeQL scans JavaScript separately. The Lean
 
 ## Why no frontend framework
 
-The deployed interface is small enough for browser primitives, and the core algorithms are easier to test as pure modules. Avoiding runtime dependencies reduces supply-chain exposure and upgrade churn. A future dependency should be added only after demonstrating a measurable benefit that outweighs security, accessibility and maintenance costs.
+The deployed interface is small enough for browser primitives, and the core algorithms are easier to test as pure modules. Critical orchestration flows are exercised through a small dependency-free Chrome DevTools Protocol harness. Avoiding runtime dependencies reduces supply-chain exposure and upgrade churn. A future dependency should be added only after demonstrating a measurable benefit that outweighs security, accessibility and maintenance costs.
 
 ## Curation boundary
 

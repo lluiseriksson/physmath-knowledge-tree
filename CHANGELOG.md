@@ -6,6 +6,29 @@ All notable changes are documented here. The project follows semantic versioning
 
 No unreleased changes.
 
+## [2.6.0] — 2026-06-22
+
+Release notes: [`docs/RELEASE_2_6_0.md`](./docs/RELEASE_2_6_0.md).
+
+### Added
+
+- Dependency-free Chromium smoke testing of the built research and learning applications through the Chrome DevTools Protocol.
+- Cross-platform coverage runner with an explicit production-module allowlist.
+- Regression cases for malformed DAGs, coverage-boundary branches, default server requests, MIME fallback and bilingual browser flows.
+- Browser-testing methodology and reproducibility documentation.
+
+### Changed
+
+- The quality gate now requires 100% line, branch and function coverage for the instrumented core modules.
+- The complete `npm run check` gate builds, verifies and then exercises the production `dist/` artifact in a real browser.
+- Static-server request handling and CLI startup are separated for clearer testing and maintenance.
+- Learning-graph helpers are expanded into readable invariant-driven implementations.
+
+### Fixed
+
+- Numeric port `0` is preserved when passed directly to the static-server parser.
+- Previously untested fallback and tie-breaking paths now have explicit regressions.
+
 ## [2.5.0] — 2026-06-22
 
 Release notes: [`docs/RELEASE_2_5_0.md`](./docs/RELEASE_2_5_0.md).

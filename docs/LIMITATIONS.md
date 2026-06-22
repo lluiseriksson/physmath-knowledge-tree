@@ -24,7 +24,7 @@ The ledger still contains 18 open verification requests and 3 records awaiting e
 
 ## Runtime boundary
 
-The local release environment did not provide Lake or a browser automation engine. The record therefore claims neither a local Lean build nor browser-level end-to-end execution. CI and future release environments should report those checks separately.
+The production artifact now passes a real Chromium smoke suite, but that suite covers one browser family and selected critical flows rather than every interaction, assistive technology or rendering engine. The local release environment still does not provide a completed Lake build, so Lean verification must be reported separately from the JavaScript and browser gates.
 
 ## Scale
 

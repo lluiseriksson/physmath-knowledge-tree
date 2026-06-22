@@ -1,4 +1,4 @@
-PhysMath Knowledge Tree — release 2.5.0
+PhysMath Knowledge Tree — release 2.6.0
 Generated: 2026-06-22
 
 Contents
@@ -11,26 +11,29 @@ Contents
 - Repository-controlled quality score: 100/100 with explicit exclusions
 - Curation ledger: 3 records, 45 decisions, 18 open verification requests
 - Explicit review state: 3 records awaiting user approval
-- Automated tests: 47 passed, 0 failed
-- Instrumented line coverage: 100.00%
-- Build manifest: 83 integrity entries
+- Automated tests: 58 passed, 0 failed
+- Instrumented line / branch / function coverage: 100.00% / 100.00% / 100.00%
+- Production Chromium smoke suite: passed
+- Build manifest: 85 integrity entries
 - npm audit: 0 vulnerabilities
-- Source files outside dist/: 172
-- Files under dist/: 84
+- Source files outside dist/: 177
+- Files under dist/: 86
 
 Reproducibility
 - Run: npm ci
 - Run: npm run check
+- Run browser only: npm run test:e2e
 - List scenarios: npm run usecase:list
 - Build verification: dist/build-manifest.json
 - Evaluation results: evaluation/results.json
 - Verification record: docs/VERIFICATION.md
-- Release notes: docs/RELEASE_2_5_0.md
+- Browser methodology: docs/BROWSER_TESTING.md
+- Release notes: docs/RELEASE_2_6_0.md
 
 Boundaries
 - The 100/100 score covers only repository-controlled criteria.
 - Raw TXT/PNG inbox originals are not included.
 - No source is deletion-safe without explicit user approval and a closed verification queue.
 - No local Lean build is claimed because Lake was unavailable.
-- No local browser-level end-to-end pass is claimed.
+- The browser gate covers one Chromium-family engine and selected critical flows.
 - Scientific validity, novelty, adoption and user-study outcomes are not converted into repository points.

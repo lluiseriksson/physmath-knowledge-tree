@@ -17,7 +17,7 @@ npm run check
 lake build
 ```
 
-The web gate runs on supported Node versions in CI. Lean changes must also compile against the pinned toolchain. When Lean is unavailable locally, say so explicitly in the pull request and rely on the dedicated CI job rather than claiming success.
+The web gate runs on supported Node versions in CI and includes a Chromium smoke pass over the built artifact. Set `BROWSER_BIN` when the browser is not available under a standard executable name. Lean changes must also compile against the pinned toolchain. When Lean is unavailable locally, say so explicitly in the pull request and rely on the dedicated CI job rather than claiming success.
 
 ## Canonical research-graph changes
 
@@ -97,7 +97,7 @@ Run `npm run validate:learning` after content edits.
 - Use browser standards and small deterministic modules where practical.
 - Create dynamic content with safe DOM APIs; do not insert untrusted markup.
 - Preserve CSP, offline behavior and same-origin runtime operation.
-- Add tests for bug fixes and behavior changes.
+- Add unit regressions for pure logic and extend `scripts/browser-smoke.mjs` for critical browser-flow changes.
 - Maintain list-view and keyboard parity with graphical interactions.
 - Respect reduced-motion, contrast and responsive-layout requirements.
 
