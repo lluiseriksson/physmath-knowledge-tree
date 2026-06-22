@@ -11,11 +11,12 @@ npm run check
 
 Verified results:
 
-- 28 JavaScript modules parsed;
-- 36 canonical research nodes;
-- 61 canonical research edges;
-- 12 research moves;
-- 5 curated collections;
+- 30 JavaScript modules parsed;
+- 44 canonical research nodes;
+- 81 canonical research edges;
+- 15 research moves;
+- 6 curated collections;
+- 1 curation record and 1 unique source hash validated;
 - 90 bilingual learning topics;
 - 199 prerequisite edges;
 - 1 learning root and maximum depth 15;
@@ -26,7 +27,7 @@ Verified results:
 - formatting invariants valid;
 - 26 Node tests passed, 0 failed;
 - static production build created in `dist/`;
-- the built site served `index.html`, `learning.html` and the 36-node JSON graph with the expected security headers;
+- the built site served `index.html`, `learning.html` and the 44-node JSON graph with the expected security headers;
 - `npm audit --omit=dev` reported 0 vulnerabilities.
 
 ## Browser smoke tests
@@ -55,4 +56,4 @@ Learning interface checks:
 
 ## Lean boundary
 
-The package is pinned to Lean/mathlib `v4.31.0` and CI is configured to run `lake build --wfail`, the mathlib cache, `mk_all` coverage and `leanchecker`. Lean was not installed in this container, so a local Lean build is not represented as completed. The dedicated GitHub Actions job is the authoritative remaining environment check after the ZIP is committed.
+The package is pinned to Lean/mathlib `v4.31.0` and CI is configured to run `lake build --wfail`, the mathlib cache and `mk_all` coverage. Lean's bundled `leanchecker` passed on the v2.0 baseline but was removed from the required push gate after GitHub-hosted runners repeatedly cancelled it during curation-only reruns after successful Lake builds. Run `lake env leanchecker` manually on a runner with enough capacity when an independent environment check is required.

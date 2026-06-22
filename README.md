@@ -70,7 +70,7 @@ The project is pinned to Lean/mathlib `v4.31.0`.
 lake build
 ```
 
-CI builds the package with warnings treated as failures and runs Lean's independent environment checker.
+CI builds the package with warnings treated as failures and checks aggregate imports with `mk_all`. Run `lake env leanchecker` manually on a runner with enough capacity when an independent environment check is required.
 
 ## Run locally
 

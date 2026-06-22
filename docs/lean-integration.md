@@ -38,7 +38,7 @@ This formal layer guarantees that the examples are well-typed records. It does *
 
 ## CI policy
 
-The Lean CI job uses the pinned toolchain, mathlib cache, warnings-as-errors, `mk_all` coverage and Lean's independent environment checker. Web tests and Lean checks run as separate jobs so a static-site change cannot hide a formalization failure.
+The Lean CI job uses the pinned toolchain, mathlib cache, warnings-as-errors and `mk_all` coverage. Web tests and Lean checks run as separate jobs so a static-site change cannot hide a formalization failure. Lean's bundled `leanchecker` remains a useful heavier manual check via `lake env leanchecker`, but it is not part of the required push gate because GitHub-hosted runners can cancel it after otherwise successful builds.
 
 ## Updating Lean/mathlib
 

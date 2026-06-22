@@ -58,4 +58,7 @@ jobs:
           mk_all-check: true
           build-args: --wfail
           use-mathlib-cache: true
-          leanchecker: true
+          # Bundled leanchecker is useful as a manual/heavy check, but GitHub
+          # hosted runners repeatedly cancelled it after successful curation-only
+          # builds. Keep push CI focused on deterministic Lake checks.
+          leanchecker: false
