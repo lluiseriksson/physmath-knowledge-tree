@@ -49,7 +49,9 @@ All three current deletion gates remain awaiting explicit user review; no raw or
 
 ## Lean layer
 
-The repository retains its pinned Lean 4.31.0/mathlib configuration and Lean source files. No local Lean pass is claimed in this record; the pinned GitHub Actions job runs `lake build --wfail`, `mk_all` and `leanchecker` through `leanprover/lean-action`.
+The repository retains its pinned Lean 4.31.0/mathlib configuration and Lean source files. No local Lean pass is claimed in this record. The pinned GitHub Actions job runs `lake build --wfail` and `mk_all` through `leanprover/lean-action`.
+
+On the scientific-hardening commit, GitHub Actions built `PhysMathKnowledgeTree.Formal.Microtheorems` and the root package successfully before the bundled `leanchecker` stage cancelled. Because that cancellation is runner/tooling behavior rather than a Lean build error, `leanchecker` is documented as a manual release-hardening step rather than a required CI gate.
 
 The current formal layer includes checked microtheorem targets for six graph mechanisms: rate-budget bookkeeping, physical/lattice exponent conversion, target-erasure detection, finite nonselective-operation collapse, child-factorial products and localized homotopy boundary defects.
 

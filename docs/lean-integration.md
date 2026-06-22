@@ -47,7 +47,9 @@ This formal layer proves these bounded mechanisms and guarantees that the exampl
 
 ## CI policy
 
-The Lean CI job uses the pinned toolchain, mathlib cache, warnings-as-errors, `mk_all` coverage and Lean's independent environment checker. Web tests and Lean checks run as separate jobs so a static-site change cannot hide a formalization failure.
+The Lean CI job uses the pinned toolchain, mathlib cache, warnings-as-errors and `mk_all` coverage. Web tests and Lean checks run as separate jobs so a static-site change cannot hide a formalization failure.
+
+The bundled `leanchecker` step is not part of the required GitHub Actions gate because repeated runs cancel after a successful Lake build on GitHub-hosted runners. Treat independent environment checking as a manual release-hardening step when a runner can complete it reliably.
 
 ## Updating Lean/mathlib
 

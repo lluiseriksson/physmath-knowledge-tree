@@ -50,7 +50,7 @@ Runtime resources are same-origin. Progress imports are size/type bounded and st
 8. formatting invariants and unit tests;
 9. static build plus per-file SHA-256 verification.
 
-GitHub Pages receives only `dist/`. CodeQL scans JavaScript separately. The Lean job uses the pinned mathlib cache, warnings-as-errors and independent environment checking.
+GitHub Pages receives only `dist/`. CodeQL scans JavaScript separately. The Lean job uses the pinned mathlib cache, warnings-as-errors and `mk_all` root-import coverage. The bundled `leanchecker` step is kept out of the required CI path because it currently cancels on GitHub-hosted runners after a successful Lake build.
 
 ## Why no frontend framework
 

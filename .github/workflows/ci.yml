@@ -62,4 +62,4 @@ jobs:
           mk_all-check: true
           build-args: --wfail
           use-mathlib-cache: true
-          leanchecker: true
+          leanchecker: false

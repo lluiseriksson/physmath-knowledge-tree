@@ -74,7 +74,7 @@ The formal layer now includes modest but real microtheorems for rate-budget alge
 lake build
 ```
 
-CI builds the package with warnings treated as failures and runs Lean's independent environment checker.
+CI builds the package with warnings treated as failures and checks that the public root import is current.
 
 ## Run locally
 
