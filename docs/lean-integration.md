@@ -12,8 +12,8 @@ lake exe cache get
 lake build
 ```
 
-The `lean-toolchain` file is pinned to the current mathlib master toolchain as
-checked on 2026-06-22. To update later:
+The `lean-toolchain` file and `lakefile.toml` are pinned to mathlib `v4.31.0`
+for reproducible CI. To update later:
 
 ```bash
 curl https://raw.githubusercontent.com/leanprover-community/mathlib4/master/lean-toolchain -o lean-toolchain
@@ -51,4 +51,3 @@ Each node has:
 ```
 
 Use `Mathlib` first while exploring. Later, replace it with minimal imports.
-
