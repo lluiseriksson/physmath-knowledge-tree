@@ -5,6 +5,9 @@
 - **Analysis** `domain.analysis`
   - **Constructive quantum field theory** `domain.constructive_quantum_field_theory`
     - **Cluster expansion with holes and active skeletons** `bridge.cluster_expansion_with_holes`
+    - **Polymer and cluster expansions** `domain.polymer_cluster_expansions`
+      - **Target-preserving Ursell summation** `bridge.target_preserving_ursell_summation`
+        - **Rooted leaf elimination by factorial moments** `bridge.rooted_leaf_factorial_moments`
     - **Uniform one-step Yang-Mills RG activity bound** `problem.uniform_yang_mills_rg_activity`
   - **Functional analysis** `domain.functional_analysis`
     - **Spectral theory** `domain.spectral_theory`
@@ -38,6 +41,7 @@
 
 ## Cross-linked or cyclic-projection nodes
 
+- **Appendix-F rate-budget decomposition** `bridge.appendix_f_rate_budget_split`
 - **Block-average mass term as a coercivity bridge** `bridge.block_average_coercivity`
 - **Geometric Langlands transfer** `bridge.geometric_langlands_transfer`
 - **Lattice units to physical distance and mass** `bridge.lattice_physical_scaling`
@@ -47,5 +51,6 @@
 - **Random matrices, zeta zeros and spectra** `bridge.random_matrix_zeta_spectra`
 - **Riemann Hypothesis** `problem.riemann_hypothesis`
 - **Scaling and renormalization for critical PDE** `bridge.renormalization_scaling_pde`
+- **Target-erasure diagnostic for cluster bounds** `bridge.target_erasure_diagnostic`
 - **Trace formula as spectral arithmetic bridge** `bridge.trace_formula_spectral_arithmetic`
 - **Ward defect from variation of a Berezin weight** `bridge.ward_defect_weight_variation`

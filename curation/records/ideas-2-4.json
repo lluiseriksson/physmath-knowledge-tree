@@ -1,0 +1,380 @@
+{
+  "id": "curation.ideas_2_4",
+  "schema_version": "1.0.0",
+  "processed": "2026-06-22",
+  "status": "curated",
+  "source": {
+    "filename": "ideas 2(4).txt",
+    "media_type": "text/plain",
+    "sha256": "d46d4abd06d0364095b9d1a851876360d8007ae01a9a544a1089f4955f3c1bdf",
+    "bytes": 45007,
+    "lines": 1294
+  },
+  "retention": "delete-after-user-review",
+  "summary": "A Python-wrapped technical context for a fast-moving Lean repository. Stable content was reduced to target-erasure diagnostics, target-preserving Ursell summation, rooted leaf moments, an explicit rate budget, a polymer-expansion domain and reusable research moves; transient status and speculative accelerators were excluded.",
+  "promoted": [
+    {
+      "id": "claim.target_erasure",
+      "title": "Free marked sums erase target information",
+      "classification": "formal",
+      "rationale": "The exact factorization removes the target and tree from the majorant.",
+      "source_ranges": [
+        {
+          "start_line": 146,
+          "end_line": 188
+        }
+      ],
+      "destinations": [
+        {
+          "type": "graph_node",
+          "value": "bridge.target_erasure_diagnostic"
+        },
+        {
+          "type": "graph_edge",
+          "value": "edge.target_erasure.cluster_holes"
+        },
+        {
+          "type": "research_move",
+          "value": "move.audit_information_loss"
+        },
+        {
+          "type": "document",
+          "value": "docs/curated/IDEAS-2-4-MATHEMATICAL-EXTRACT.md"
+        }
+      ]
+    },
+    {
+      "id": "claim.target_preservation",
+      "title": "Extract target decay before overcounting",
+      "classification": "formal",
+      "rationale": "The exact union and tree must remain visible until metric stitching has produced the target factor.",
+      "source_ranges": [
+        {
+          "start_line": 191,
+          "end_line": 273
+        }
+      ],
+      "destinations": [
+        {
+          "type": "graph_node",
+          "value": "bridge.target_preserving_ursell_summation"
+        },
+        {
+          "type": "research_move",
+          "value": "move.preserve_exact_target"
+        },
+        {
+          "type": "document",
+          "value": "docs/research-playbooks/target-sensitive-second-ursell.md"
+        }
+      ]
+    },
+    {
+      "id": "claim.rooted_leaf",
+      "title": "Rooted leaf elimination with factorial moments",
+      "classification": "formal",
+      "rationale": "The conditional fixed-tree bound follows from rooted and parent-child moment hypotheses by bottom-up elimination.",
+      "source_ranges": [
+        {
+          "start_line": 274,
+          "end_line": 365
+        }
+      ],
+      "destinations": [
+        {
+          "type": "graph_node",
+          "value": "bridge.rooted_leaf_factorial_moments"
+        },
+        {
+          "type": "research_move",
+          "value": "move.eliminate_tree_leaves"
+        },
+        {
+          "type": "document",
+          "value": "docs/research-playbooks/target-sensitive-second-ursell.md"
+        }
+      ]
+    },
+    {
+      "id": "claim.rate_budget",
+      "title": "Appendix-F rate split and geometric endpoint",
+      "classification": "formal",
+      "rationale": "The rate identity and conditional geometric-series algebra are explicit, while source constants remain separate.",
+      "source_ranges": [
+        {
+          "start_line": 212,
+          "end_line": 247
+        },
+        {
+          "start_line": 366,
+          "end_line": 429
+        }
+      ],
+      "destinations": [
+        {
+          "type": "graph_node",
+          "value": "bridge.appendix_f_rate_budget_split"
+        },
+        {
+          "type": "graph_edge",
+          "value": "edge.rooted_leaf.rate_budget"
+        },
+        {
+          "type": "document",
+          "value": "docs/curated/IDEAS-2-4-MATHEMATICAL-EXTRACT.md"
+        }
+      ]
+    },
+    {
+      "id": "claim.polymer_domain",
+      "title": "Polymer cluster expansions as a reusable domain",
+      "classification": "literature",
+      "rationale": "Mayer, Ursell, KP, exact-union fibers and tree moments form a reusable mathematical domain.",
+      "source_ranges": [
+        {
+          "start_line": 91,
+          "end_line": 125
+        },
+        {
+          "start_line": 191,
+          "end_line": 457
+        }
+      ],
+      "destinations": [
+        {
+          "type": "graph_node",
+          "value": "domain.polymer_cluster_expansions"
+        },
+        {
+          "type": "graph_edge",
+          "value": "edge.polymer.cluster_holes"
+        }
+      ]
+    },
+    {
+      "id": "claim.hypothesis_audit",
+      "title": "Progress requires a real hypothesis reduction",
+      "classification": "formal",
+      "rationale": "The adversarial checklist tracks eliminated assumptions, retained data and the downstream consumer.",
+      "source_ranges": [
+        {
+          "start_line": 126,
+          "end_line": 143
+        },
+        {
+          "start_line": 904,
+          "end_line": 943
+        }
+      ],
+      "destinations": [
+        {
+          "type": "document",
+          "value": "AGENTS.md"
+        },
+        {
+          "type": "document",
+          "value": "docs/agent-protocol.md"
+        }
+      ]
+    },
+    {
+      "id": "claim.gauge_producer",
+      "title": "Gauge activity production is a separate analytic chain",
+      "classification": "literature",
+      "rationale": "The target-sensitive second gas does not supply coercivity, covariance, collars, large fields or the R-operation.",
+      "source_ranges": [
+        {
+          "start_line": 541,
+          "end_line": 652
+        }
+      ],
+      "destinations": [
+        {
+          "type": "graph_node",
+          "value": "problem.uniform_yang_mills_rg_activity"
+        },
+        {
+          "type": "document",
+          "value": "docs/curated/IDEAS-2-4-MATHEMATICAL-EXTRACT.md"
+        }
+      ]
+    }
+  ],
+  "quarantined": [
+    {
+      "id": "spec.bv_retract",
+      "title": "Quantitative BV-RG retract",
+      "classification": "speculative",
+      "rationale": "No concrete local homotopy or RG-compatible bound is supplied.",
+      "source_ranges": [
+        {
+          "start_line": 694,
+          "end_line": 712
+        }
+      ],
+      "destinations": [
+        {
+          "type": "document",
+          "value": "docs/curated/IDEAS-2-4-QUARANTINE.md"
+        }
+      ]
+    },
+    {
+      "id": "spec.mayer_ward",
+      "title": "Mayer-Ward transgression",
+      "classification": "speculative",
+      "rationale": "No finite nonlinear support-preserving identity is proved.",
+      "source_ranges": [
+        {
+          "start_line": 713,
+          "end_line": 728
+        }
+      ],
+      "destinations": [
+        {
+          "type": "document",
+          "value": "docs/curated/IDEAS-2-4-QUARANTINE.md"
+        }
+      ]
+    },
+    {
+      "id": "spec.berezin_tree",
+      "title": "Berezin matrix-tree encoding",
+      "classification": "speculative",
+      "rationale": "No representation preserving target, root and positive majorant is supplied.",
+      "source_ranges": [
+        {
+          "start_line": 729,
+          "end_line": 758
+        }
+      ],
+      "destinations": [
+        {
+          "type": "document",
+          "value": "docs/curated/IDEAS-2-4-QUARANTINE.md"
+        }
+      ]
+    },
+    {
+      "id": "spec.kernel_radius",
+      "title": "Local kernel spectral-radius criterion",
+      "classification": "heuristic",
+      "rationale": "The refinement lacks a defined operator and comparison theorem.",
+      "source_ranges": [
+        {
+          "start_line": 760,
+          "end_line": 788
+        }
+      ],
+      "destinations": [
+        {
+          "type": "document",
+          "value": "docs/curated/IDEAS-2-4-QUARANTINE.md"
+        }
+      ]
+    },
+    {
+      "id": "spec.dimension_lab",
+      "title": "Dimension threshold laboratory",
+      "classification": "heuristic",
+      "rationale": "The numerical thresholds lack a reproducible formula.",
+      "source_ranges": [
+        {
+          "start_line": 793,
+          "end_line": 813
+        }
+      ],
+      "destinations": [
+        {
+          "type": "document",
+          "value": "docs/curated/IDEAS-2-4-QUARANTINE.md"
+        }
+      ]
+    },
+    {
+      "id": "spec.direct_covariance",
+      "title": "Direct covariance shortcut",
+      "classification": "heuristic",
+      "rationale": "The physical gauge operator, large fields and R-operation remain absent.",
+      "source_ranges": [
+        {
+          "start_line": 638,
+          "end_line": 652
+        }
+      ],
+      "destinations": [
+        {
+          "type": "document",
+          "value": "docs/curated/IDEAS-2-4-QUARANTINE.md"
+        }
+      ]
+    },
+    {
+      "id": "spec.space_scale",
+      "title": "Space-scale polymer carrier",
+      "classification": "heuristic",
+      "rationale": "It adds multiscale infrastructure before the single-scale theorem is closed.",
+      "source_ranges": [
+        {
+          "start_line": 828,
+          "end_line": 837
+        }
+      ],
+      "destinations": [
+        {
+          "type": "document",
+          "value": "docs/curated/IDEAS-2-4-QUARANTINE.md"
+        }
+      ]
+    }
+  ],
+  "discarded": [
+    {
+      "category": "python-wrapper",
+      "reason": "The outer code only writes the embedded context and carries no mathematical content."
+    },
+    {
+      "category": "stale-status",
+      "reason": "Checkpoint-specific proved/open inventories and commit campaigns became obsolete as the external repository evolved."
+    },
+    {
+      "category": "duplicate-prior-material",
+      "reason": "Ward, Gaussian, coercivity, physical-scaling and generic gauge-producer material was already curated from the previous source."
+    },
+    {
+      "category": "agent-boilerplate",
+      "reason": "Copy-paste prompts, response templates and exact commit choreography are transient workflow snapshots."
+    },
+    {
+      "category": "nonmathematical-metaphors",
+      "reason": "Portal, wormhole, negative-energy and religious or numerological metaphors are not mathematical evidence."
+    }
+  ],
+  "verification_queue": [
+    {
+      "id": "verify.dimock_leaf_constants",
+      "request": "Check fixed-union tree expressions, leaf moments, marker normalization, child-factorial sums and the factor four against primary Dimock sources.",
+      "reason": "The source provides exact-looking constants without a complete primary transcription."
+    },
+    {
+      "id": "verify.cmp116_semantics",
+      "request": "Identify whether the CMP116 object is raw H, connected K, integrated K-sharp or another intermediate and transcribe its norm and support.",
+      "reason": "The first activity must be typed before it can feed the second gas."
+    },
+    {
+      "id": "verify.active_cardinality",
+      "request": "Determine whether the source KP tilt uses active-skeleton or full-target cardinality and prove the comparison.",
+      "reason": "The modified metric can discount holes."
+    },
+    {
+      "id": "verify.integration_order",
+      "request": "Transcribe fluctuation and spectator integration order with measurability and integrability assumptions.",
+      "reason": "Totalized integrals do not justify Fubini."
+    },
+    {
+      "id": "verify.dimension_thresholds",
+      "request": "Recover and reproduce the formula behind the quoted dimension thresholds.",
+      "reason": "Only approximate integers are supplied."
+    }
+  ]
+}

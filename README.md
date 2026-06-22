@@ -16,7 +16,7 @@ A computable, evidence-labelled graph for exploring connections between physics,
 
 The research interface reads the canonical JSON graph directly. It includes:
 
-- 44 domain, bridge and problem nodes connected by 81 typed, evidence-labelled edges.
+- 49 domain, bridge and problem nodes connected by 94 typed, evidence-labelled edges.
 - Search across titles, IDs, tags, summaries and live questions.
 - Curated collections, kind/evidence filters, graph and accessible list views.
 - Directed or undirected shortest-path search.

@@ -12,7 +12,7 @@ Grafo computable y etiquetado por evidencia para explorar conexiones entre físi
 
 La interfaz consume directamente el JSON canónico e incorpora:
 
-- 44 nodos de dominio, puente y problema unidos por 81 aristas tipadas.
+- 49 nodos de dominio, puente y problema unidos por 94 aristas tipadas.
 - Búsqueda por títulos, IDs, etiquetas, resúmenes y preguntas abiertas.
 - Colecciones curadas, filtros de tipo/evidencia y vistas de grafo o lista accesible.
 - Camino mínimo dirigido o no dirigido.

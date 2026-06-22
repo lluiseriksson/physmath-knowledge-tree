@@ -56,7 +56,7 @@
   {
     "id": "collection.formalization_frontier",
     "title": "Lean formalization frontier",
-    "description": "Nodes with concrete mathlib imports and deliberately small formalization targets.",
+    "description": "All canonical nodes have bounded Lean targets; this collection exposes the complete formalization frontier without upgrading research confidence.",
     "nodes": [
       "domain.foundation_logic",
       "domain.category_theory",
@@ -93,13 +93,26 @@
       "problem.hodge_conjecture",
       "problem.birch_swinnerton_dyer",
       "problem.p_vs_np",
-      "problem.poincare_conjecture"
+      "problem.poincare_conjecture",
+      "domain.constructive_quantum_field_theory",
+      "domain.renormalization_group",
+      "bridge.cluster_expansion_with_holes",
+      "bridge.ward_defect_weight_variation",
+      "bridge.gaussian_covariance_collar",
+      "bridge.lattice_physical_scaling",
+      "bridge.block_average_coercivity",
+      "problem.uniform_yang_mills_rg_activity",
+      "domain.polymer_cluster_expansions",
+      "bridge.target_erasure_diagnostic",
+      "bridge.target_preserving_ursell_summation",
+      "bridge.rooted_leaf_factorial_moments",
+      "bridge.appendix_f_rate_budget_split"
     ]
   },
   {
     "id": "collection.constructive_yang_mills_rg",
     "title": "Constructive Yang-Mills RG route",
-    "description": "A curated dependency path from finite analytic tools and polymer geometry to the lattice-stage Yang-Mills activity problem, with continuum caveats kept explicit.",
+    "description": "A curated path from polymer geometry and target-preserving tree sums to the concrete Yang-Mills RG activity problem, with lattice-stage and continuum obligations kept separate.",
     "nodes": [
       "domain.constructive_quantum_field_theory",
       "domain.renormalization_group",
@@ -109,7 +122,28 @@
       "bridge.cluster_expansion_with_holes",
       "bridge.ward_defect_weight_variation",
       "problem.uniform_yang_mills_rg_activity",
+      "domain.polymer_cluster_expansions",
+      "bridge.target_erasure_diagnostic",
+      "bridge.target_preserving_ursell_summation",
+      "bridge.rooted_leaf_factorial_moments",
+      "bridge.appendix_f_rate_budget_split",
       "bridge.lattice_physical_scaling",
+      "problem.yang_mills_mass_gap"
+    ]
+  },
+  {
+    "id": "collection.target_sensitive_cluster_bounds",
+    "title": "Target-sensitive cluster bounds",
+    "description": "A focused subgraph for diagnosing target erasure, retaining exact-union geometry, eliminating rooted tree leaves with factorial moments and allocating decay rates without hidden volume dependence.",
+    "nodes": [
+      "domain.polymer_cluster_expansions",
+      "domain.renormalization_group",
+      "bridge.cluster_expansion_with_holes",
+      "bridge.target_erasure_diagnostic",
+      "bridge.target_preserving_ursell_summation",
+      "bridge.rooted_leaf_factorial_moments",
+      "bridge.appendix_f_rate_budget_split",
+      "problem.uniform_yang_mills_rg_activity",
       "problem.yang_mills_mass_gap"
     ]
   }

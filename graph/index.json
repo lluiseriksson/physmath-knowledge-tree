@@ -17,19 +17,19 @@
     "collections": "graph/schemas/collection.schema.json"
   },
   "stats": {
-    "nodes": 44,
-    "edges": 81,
-    "research_moves": 15,
-    "collections": 6,
+    "nodes": 49,
+    "edges": 94,
+    "research_moves": 18,
+    "collections": 7,
     "by_kind": {
-      "bridge": 11,
-      "domain": 25,
+      "bridge": 15,
+      "domain": 26,
       "problem": 8
     },
     "by_confidence": {
-      "formal": 3,
+      "formal": 7,
       "heuristic": 3,
-      "literature": 38
+      "literature": 39
     }
   },
   "root_nodes": [

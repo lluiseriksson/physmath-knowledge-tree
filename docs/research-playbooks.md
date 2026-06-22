@@ -53,3 +53,7 @@ These playbooks organize experiments. They are not solution claims.
 ## Poincaré calibration
 
 Use the solved Poincaré Conjecture to test whether the graph can represent a genuine proof strategy without reconstructing the proof. The expected path should expose topology, differential geometry, Ricci flow and analytic control, while keeping the solved status explicit.
+
+## Constructive Yang-Mills RG
+
+Use the dedicated [target-sensitive second Ursell playbook](./research-playbooks/target-sensitive-second-ursell.md) for quantitative Appendix-F work. Preserve exact targets and local tree relations until their decay contribution has been extracted.

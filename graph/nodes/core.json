@@ -1060,11 +1060,14 @@
       ],
       "declarations": [],
       "targets": [
-        "Prove the two-support target-family identity, metric stitching, connected-cover summation, K-sharp integration and H-sharp decay with explicit losses."
+        "Preserve the exact union target and incompatibility tree until target decay has been extracted.",
+        "Prove rooted leaf-moment summation or instantiate a source-faithful Appendix-F cluster theorem.",
+        "Keep raw H, connected K, integrated K-sharp and renormalized H-sharp as distinct typed objects."
       ]
     },
     "questions": [
-      "Can the final modified-metric loss and all smallness constants be derived from explicit rooted summability hypotheses?"
+      "Can the fixed-order second Ursell term be bounded without replacing a target fiber by a global vertex mass?",
+      "What exact source constants produce the residual loss kappa minus three kappa-zero minus three?"
     ]
   },
   {
@@ -1186,17 +1189,199 @@
       ],
       "declarations": [],
       "targets": [
-        "Specify the one-step fluctuation identity, gauge precision, localized covariance and the concrete raw activity before proving its decay profile."
+        "Define the one-step gauge fluctuation identity and concrete raw activity before stating its decay.",
+        "Separate block coercivity, background-Hessian stability, covariance decay, collar localization and local R-operation gain into auditable inputs."
       ]
     },
     "questions": [
-      "Can the source Hessian, covariance localization, cutoff terms and local R-operation be formalized without hiding the desired estimate inside a package field?"
+      "Can the physical gauge producer be built without hiding the desired activity estimate inside a package field?",
+      "Which constants are uniform in volume, cutoff, scale, background and hole geometry?"
     ],
     "references": [
       {
         "label": "PhysMath Knowledge Tree — constructive Yang-Mills RG target",
         "url": "https://github.com/lluiseriksson/physmath-knowledge-tree",
         "type": "official"
+      }
+    ]
+  },
+  {
+    "id": "domain.polymer_cluster_expansions",
+    "kind": "domain",
+    "title": "Polymer and cluster expansions",
+    "summary": "Hard-core polymer gases and connected expansions built from Mayer factors, Ursell coefficients, Kotecky-Preiss criteria, rooted tree representations and local moment bounds, with target fibers retained whenever quantitative decay depends on the exact union.",
+    "confidence": "literature",
+    "tags": [
+      "polymer-gas",
+      "cluster-expansion",
+      "ursell",
+      "tree-graph"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib.Combinatorics.SimpleGraph.Basic",
+        "Mathlib.Data.Finset.Basic"
+      ],
+      "declarations": [
+        "SimpleGraph",
+        "Finset"
+      ],
+      "targets": [
+        "Formalize target-fiber tree sums without quotienting away distinct covers or exact unions.",
+        "Derive rooted fixed-tree assignment bounds from local parent-child moment hypotheses."
+      ]
+    },
+    "questions": [
+      "Which projections preserve enough target information for volume-uniform decay estimates?",
+      "Can parent-dependent moment kernels improve constants beyond a uniform tree majorant?"
+    ]
+  },
+  {
+    "id": "bridge.target_erasure_diagnostic",
+    "kind": "bridge",
+    "title": "Target-erasure diagnostic for cluster bounds",
+    "summary": "A marked-root vertex-product sum can factor into a rooted mass times an unrestricted total mass to the nth power. Once the exact target and incompatibility tree have been erased, that coarse object cannot by itself encode uniform decay in the target metric.",
+    "confidence": "formal",
+    "tags": [
+      "cluster-expansion",
+      "information-loss",
+      "target-decay",
+      "volume-uniformity",
+      "diagnostic"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib.Data.Finset.Basic"
+      ],
+      "declarations": [
+        "Finset.sum_pow'"
+      ],
+      "targets": [
+        "Formalize the root-marked factorization rootedMass * totalMass^n for a finite vertex-product sum.",
+        "Construct a finite counterexample showing that equal coarse vertex budgets need not determine target-metric decay."
+      ]
+    },
+    "questions": [
+      "Which variables were forgotten by a proposed majorant, and does its conclusion still depend on any of them?",
+      "Can hidden volume dependence be detected by comparing targets with the same rooted and total masses?"
+    ]
+  },
+  {
+    "id": "bridge.target_preserving_ursell_summation",
+    "kind": "bridge",
+    "title": "Target-preserving Ursell summation",
+    "summary": "A target-sensitive cluster estimate keeps the exact union fiber and a spanning incompatibility tree until metric stitching has extracted the desired target exponential. Only afterward may the remaining assignments and tree shapes be enlarged or summed.",
+    "confidence": "formal",
+    "tags": [
+      "ursell",
+      "exact-union",
+      "tree-graph",
+      "target-decay",
+      "locality"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib.Combinatorics.SimpleGraph.Basic",
+        "Mathlib.Data.Finset.Basic"
+      ],
+      "declarations": [
+        "SimpleGraph"
+      ],
+      "targets": [
+        "Define a fixed-union weighted tree term that retains both the target and parent-child incompatibility edges.",
+        "Prove target exponential extraction from metric stitching before replacing the exact fiber by a larger summation domain.",
+        "Record a reusable information-preservation lemma for cluster majorants."
+      ]
+    },
+    "questions": [
+      "What is the weakest local relation that must remain visible until target decay is extracted?",
+      "Can exact-union fibers reduce the tree-shape entropy below a complete-graph majorant?"
+    ],
+    "references": [
+      {
+        "label": "J. Dimock — The Renormalization Group According to Balaban I",
+        "url": "https://arxiv.org/abs/1108.1335",
+        "type": "paper"
+      },
+      {
+        "label": "J. Dimock — The Renormalization Group According to Balaban II",
+        "url": "https://arxiv.org/abs/1212.5562",
+        "type": "paper"
+      }
+    ]
+  },
+  {
+    "id": "bridge.rooted_leaf_factorial_moments",
+    "kind": "bridge",
+    "title": "Rooted leaf elimination by factorial moments",
+    "summary": "Orient a tree from a marked root and sum polymer assignments from leaves upward. Rooted and parent-child incompatibility moments absorb child metric powers, yielding a fixed-tree bound governed by factorials of child counts before the remaining tree shapes are summed.",
+    "confidence": "formal",
+    "tags": [
+      "rooted-tree",
+      "leaf-elimination",
+      "factorial-moments",
+      "parent-child",
+      "cluster-bound"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib.Combinatorics.SimpleGraph.Connectivity",
+        "Mathlib.Algebra.BigOperators.Group.Finset.Basic"
+      ],
+      "declarations": [
+        "SimpleGraph.Walk"
+      ],
+      "targets": [
+        "Prove a generic RootedLeafKernelBound from rooted moments and parent-child incompatibility moments.",
+        "Derive the fixed-tree assignment estimate M^(2n+1) * product_v childCount(v)! under explicit nonnegative kernel hypotheses.",
+        "Separate leaf elimination from the later combinatorial sum over rooted tree shapes."
+      ]
+    },
+    "questions": [
+      "Can a parent-dependent moment kernel improve the uniform moment constant?",
+      "Which rooted-tree enumeration gives the sharpest normalized bound compatible with the local kernel?"
+    ],
+    "references": [
+      {
+        "label": "J. Dimock — The Renormalization Group According to Balaban I",
+        "url": "https://arxiv.org/abs/1108.1335",
+        "type": "paper"
+      }
+    ]
+  },
+  {
+    "id": "bridge.appendix_f_rate_budget_split",
+    "kind": "bridge",
+    "title": "Appendix-F rate-budget decomposition",
+    "summary": "The first-activity decay rate can be split into residual target decay and a reserved leaf-summation budget. In the canonical bookkeeping, (kappa - kappa-zero - 2) equals (kappa - 3 kappa-zero - 3) plus (2 kappa-zero + 1).",
+    "confidence": "formal",
+    "tags": [
+      "decay-rate",
+      "appendix-f",
+      "leaf-budget",
+      "modified-metric",
+      "smallness"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib.Data.Real.Basic"
+      ],
+      "declarations": [],
+      "targets": [
+        "Prove the exact algebraic rate identity and monotonicity corollaries under nonnegative residual rate.",
+        "Parameterize how much decay is reserved for target extraction, leaf moments, cardinality tilts and convergence margins.",
+        "Derive a geometric order bound with ratio 4 * C2^2 * epsilon while keeping every smallness condition explicit."
+      ]
+    },
+    "questions": [
+      "Can the spare unit of rate absorb an active-cardinality tilt without weakening the target exponent?",
+      "Which source constants determine whether the geometric-series window is nonempty in four dimensions?"
+    ],
+    "references": [
+      {
+        "label": "J. Dimock — The Renormalization Group According to Balaban II",
+        "url": "https://arxiv.org/abs/1212.5562",
+        "type": "paper"
       }
     ]
   }

@@ -12,11 +12,11 @@ npm run check
 Verified results:
 
 - 30 JavaScript modules parsed;
-- 44 canonical research nodes;
-- 81 canonical research edges;
-- 15 research moves;
-- 6 curated collections;
-- 1 curation record and 1 unique source hash validated;
+- 49 canonical research nodes;
+- 94 canonical research edges;
+- 18 research moves;
+- 7 curated collections;
+- 2 curation records and 2 unique source hashes validated;
 - 90 bilingual learning topics;
 - 199 prerequisite edges;
 - 1 learning root and maximum depth 15;
@@ -27,7 +27,7 @@ Verified results:
 - formatting invariants valid;
 - 26 Node tests passed, 0 failed;
 - static production build created in `dist/`;
-- the built site served `index.html`, `learning.html` and the 44-node JSON graph with the expected security headers;
+- the built site served `index.html`, `learning.html` and the 49-node JSON graph with the expected security headers;
 - `npm audit --omit=dev` reported 0 vulnerabilities.
 
 ## Browser smoke tests
@@ -37,13 +37,13 @@ Chromium was executed with production HTML/CSS/JavaScript and local canonical da
 Research interface checks:
 
 - application startup;
-- all 36 SVG nodes;
+- all 49 SVG nodes;
 - canonical summary count;
 - search and node dossier;
 - shortest-path discovery;
 - bridge-card warning and falsifier section;
 - Spanish interface switch;
-- 36-card list parity;
+- 49-card list parity;
 - screenshot generation.
 
 Learning interface checks:

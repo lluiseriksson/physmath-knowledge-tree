@@ -2,6 +2,25 @@
 
 All notable changes are documented here. The project follows semantic versioning for its application and schema releases.
 
+## [2.2.0] — 2026-06-22
+
+### Added
+
+- Curated provenance, mathematical extract and quarantine report for `ideas 2(4).txt`.
+- Polymer/cluster-expansion domain and four target-sensitive Appendix-F bridge nodes.
+- Research moves for preserving exact targets, eliminating tree leaves and auditing information loss.
+- Focused target-sensitive cluster collection and proof playbook.
+- Hypothesis-reduction checks in the agent protocol.
+
+### Changed
+
+- Research graph expanded to 49 nodes, 94 edges, 18 moves and 7 collections.
+- Cluster-expansion and Yang-Mills RG targets now separate the model-independent second gas from the concrete gauge activity producer.
+
+### Verification
+
+- Both curation records and every promoted destination are validated by the quality gate.
+
 ## [2.1.0] — 2026-06-22
 
 ### Added

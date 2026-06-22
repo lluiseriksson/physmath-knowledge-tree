@@ -46,6 +46,10 @@ PhysMath Knowledge Tree is an evidence-labelled research graph. Agents may use i
 - Sources to verify:
 ```
 
+## Hypothesis-reduction audit
+
+Before accepting a theorem as progress, state which external hypothesis it eliminates and which earlier results imply it. Preserve each variable needed by the conclusion until its contribution has been extracted. A target-dependent conclusion cannot follow from a majorant that no longer depends on the target unless a separate restoration theorem is proved. Reject wrappers that rename the missing estimate, hide volume dependence or erase locality too early.
+
 ## Before opening a pull request
 
 ```bash

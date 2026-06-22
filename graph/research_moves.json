@@ -157,7 +157,8 @@
     "good_for": [
       "problem.p_vs_np",
       "problem.navier_stokes",
-      "problem.riemann_hypothesis"
+      "problem.riemann_hypothesis",
+      "bridge.target_erasure_diagnostic"
     ],
     "output": "barrier statement, obstruction invariant or no-go lemma",
     "risks": [
@@ -226,5 +227,50 @@
       "A decay-rate witness need not equal the optimal spectral mass."
     ],
     "lean_test": "Prove the exponent identity, ceiling approximation error and block-scale invariance of the physical mass ratio."
+  },
+  {
+    "id": "move.preserve_exact_target",
+    "title": "Preserve the exact target",
+    "description": "Delay global overcounting until the exact union fiber, target label and local relation have produced every conclusion that depends on them.",
+    "good_for": [
+      "bridge.cluster_expansion_with_holes",
+      "bridge.target_preserving_ursell_summation",
+      "problem.yang_mills_mass_gap"
+    ],
+    "output": "fixed-target summation with an extracted target weight and an explicit remaining local kernel",
+    "risks": [
+      "The retained state can make finite reindexing and dependent bookkeeping substantially harder."
+    ],
+    "lean_test": "Define a finite exact-union fiber and prove that metric extraction holds before, but need not hold after, forgetting the target."
+  },
+  {
+    "id": "move.eliminate_tree_leaves",
+    "title": "Eliminate tree leaves",
+    "description": "Orient a connected tree from a root and sum assignments from the leaves upward using parent-child kernel moments and accumulated child powers.",
+    "good_for": [
+      "bridge.rooted_leaf_factorial_moments",
+      "bridge.target_preserving_ursell_summation",
+      "domain.renormalization_group"
+    ],
+    "output": "fixed-tree assignment bound with child-count factorials and a separately auditable tree-shape sum",
+    "risks": [
+      "A global child budget can reintroduce volume dependence if incompatibility with the parent is not retained."
+    ],
+    "lean_test": "Prove the bound for rooted trees with at most three vertices and then generalize by deleting a maximal-depth leaf."
+  },
+  {
+    "id": "move.audit_information_loss",
+    "title": "Audit information loss",
+    "description": "For every abstraction or majorant, list the target, locality, signs, edges and scale data it forgets, then test whether the desired conclusion still mentions them.",
+    "good_for": [
+      "bridge.target_erasure_diagnostic",
+      "domain.polymer_cluster_expansions",
+      "bridge.ward_defect_weight_variation"
+    ],
+    "output": "retained-versus-forgotten data table, circularity check and smallest finite counterexample",
+    "risks": [
+      "Applied indiscriminately, the audit can reject coarse bounds that are valid after the relevant structure has already been consumed."
+    ],
+    "lean_test": "Prove an exact factorization of the coarse object and exhibit two inputs with the same coarse data but different target-sensitive statistics."
   }
 ]

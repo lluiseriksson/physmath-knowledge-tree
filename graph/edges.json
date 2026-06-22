@@ -647,5 +647,109 @@
     "relation": "uses",
     "confidence": "literature",
     "mechanism": "The problem asks for a constructive, support-local and quantitatively uniform realization of a gauge-theory RG step."
+  },
+  {
+    "id": "edge.constructive_qft.polymer_expansions",
+    "source": "domain.constructive_quantum_field_theory",
+    "target": "domain.polymer_cluster_expansions",
+    "relation": "uses",
+    "confidence": "literature",
+    "mechanism": "Constructive field theory uses polymer gases and connected cluster expansions to localize interactions and control extensive partition functions."
+  },
+  {
+    "id": "edge.rg.polymer_expansions",
+    "source": "domain.renormalization_group",
+    "target": "domain.polymer_cluster_expansions",
+    "relation": "uses",
+    "confidence": "literature",
+    "mechanism": "Rigorous renormalization steps encode local remainders as polymer activities and reconstruct effective actions with connected expansions."
+  },
+  {
+    "id": "edge.polymer.cluster_holes",
+    "source": "domain.polymer_cluster_expansions",
+    "target": "bridge.cluster_expansion_with_holes",
+    "relation": "specializes",
+    "confidence": "literature",
+    "mechanism": "The with-holes construction specializes polymer and Ursell methods to active skeletons, full target unions and a modified metric."
+  },
+  {
+    "id": "edge.polymer.target_erasure_diagnostic",
+    "source": "domain.polymer_cluster_expansions",
+    "target": "bridge.target_erasure_diagnostic",
+    "relation": "tests",
+    "confidence": "formal",
+    "mechanism": "Finite factorization tests reveal when a coarse cluster majorant has discarded the target or local incompatibility information needed by its intended conclusion."
+  },
+  {
+    "id": "edge.target_erasure.cluster_holes",
+    "source": "bridge.target_erasure_diagnostic",
+    "target": "bridge.cluster_expansion_with_holes",
+    "relation": "obstructs",
+    "confidence": "formal",
+    "mechanism": "A marked vertex sum that factorizes through a global total mass cannot alone supply target-dependent Appendix-F decay because the exact union and tree edges no longer occur in the object."
+  },
+  {
+    "id": "edge.target_erasure.target_preserving",
+    "source": "bridge.target_erasure_diagnostic",
+    "target": "bridge.target_preserving_ursell_summation",
+    "relation": "suggests",
+    "confidence": "formal",
+    "mechanism": "The diagnostic identifies the minimal repair: retain the exact target and parent-child tree relations until their geometric contribution has been extracted."
+  },
+  {
+    "id": "edge.polymer.target_preserving_ursell",
+    "source": "domain.polymer_cluster_expansions",
+    "target": "bridge.target_preserving_ursell_summation",
+    "relation": "uses",
+    "confidence": "formal",
+    "mechanism": "Ursell coefficients and tree-graph domination can be grouped in exact-union fibers so target geometry remains available during the estimate."
+  },
+  {
+    "id": "edge.cluster_holes.target_preserving_ursell",
+    "source": "bridge.cluster_expansion_with_holes",
+    "target": "bridge.target_preserving_ursell_summation",
+    "relation": "specializes",
+    "confidence": "literature",
+    "mechanism": "The with-holes second gas requires target-preserving summation with active-skeleton incompatibility and the modified metric of the represented full target."
+  },
+  {
+    "id": "edge.target_preserving.rooted_leaf",
+    "source": "bridge.target_preserving_ursell_summation",
+    "target": "bridge.rooted_leaf_factorial_moments",
+    "relation": "uses",
+    "confidence": "formal",
+    "mechanism": "After target exponential extraction, the remaining fixed-tree assignment sum can be evaluated bottom-up with rooted and parent-child factorial moment estimates."
+  },
+  {
+    "id": "edge.rg.rooted_leaf",
+    "source": "domain.renormalization_group",
+    "target": "bridge.rooted_leaf_factorial_moments",
+    "relation": "uses",
+    "confidence": "literature",
+    "mechanism": "Constructive renormalization estimates orient trees and eliminate local variables using summable parent-child kernels and rooted moments."
+  },
+  {
+    "id": "edge.rooted_leaf.rate_budget",
+    "source": "bridge.rooted_leaf_factorial_moments",
+    "target": "bridge.appendix_f_rate_budget_split",
+    "relation": "transfers_via",
+    "confidence": "formal",
+    "mechanism": "Factorial leaf moments consume a reserved portion of exponential decay while the remaining portion stays attached to the target union."
+  },
+  {
+    "id": "edge.rate_budget.cluster_holes",
+    "source": "bridge.appendix_f_rate_budget_split",
+    "target": "bridge.cluster_expansion_with_holes",
+    "relation": "transfers_via",
+    "confidence": "formal",
+    "mechanism": "The rate identity translates first-activity decay into residual H-sharp target decay plus the explicit reserve required by leaf summation and entropy."
+  },
+  {
+    "id": "edge.target_preserving.yang_mills",
+    "source": "bridge.target_preserving_ursell_summation",
+    "target": "problem.yang_mills_mass_gap",
+    "relation": "suggests",
+    "confidence": "literature",
+    "mechanism": "A uniform target-sensitive H-sharp estimate would close a lattice RG input once the separate gauge-specific raw activity producer is supplied; continuum construction remains separate."
   }
 ]

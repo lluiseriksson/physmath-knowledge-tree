@@ -54,7 +54,11 @@ Before expansion, identify the cheapest test that could kill the idea:
 
 Negative results should be recorded as an `obstructs` edge, a note on an existing edge or a dated research log.
 
-## 5. Formalization ladder
+## 5. Dependency audit
+
+For every proposed compiler theorem, record the hypothesis delta, retained target and support data, uniformity domain and downstream consumer. If a desired conclusion mentions data absent from the majorant, prove a comparison that restores it or stop; do not reinsert it as an opaque premise.
+
+## 6. Formalization ladder
 
 Prefer this order:
 
@@ -66,7 +70,7 @@ Prefer this order:
 
 Lean targets in graph nodes are bounded entry points, not promises that the surrounding research problem is already formalized in mathlib.
 
-## 6. Reproducible output
+## 7. Reproducible output
 
 Every agent-generated proposal should include:
 

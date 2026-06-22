@@ -43,6 +43,11 @@ flowchart LR
   bridge_lattice_physical_scaling["Lattice units to physical distance and mass"]
   bridge_block_average_coercivity["Block-average mass term as a coercivity bridge"]
   problem_uniform_yang_mills_rg_activity["Uniform one-step Yang-Mills RG activity bound"]
+  domain_polymer_cluster_expansions["Polymer and cluster expansions"]
+  bridge_target_erasure_diagnostic["Target-erasure diagnostic for cluster bounds"]
+  bridge_target_preserving_ursell_summation["Target-preserving Ursell summation"]
+  bridge_rooted_leaf_factorial_moments["Rooted leaf elimination by factorial moments"]
+  bridge_appendix_f_rate_budget_split["Appendix-F rate-budget decomposition"]
   domain_foundation_logic -->|uses| domain_category_theory
   domain_category_theory -->|generalizes| domain_algebra
   domain_category_theory -->|uses| domain_algebraic_geometry
@@ -124,3 +129,16 @@ flowchart LR
   domain_renormalization_group -->|formalizes_as| bridge_lattice_physical_scaling
   bridge_lattice_physical_scaling -->|obstructs| problem_yang_mills_mass_gap
   domain_constructive_quantum_field_theory -->|uses| problem_uniform_yang_mills_rg_activity
+  domain_constructive_quantum_field_theory -->|uses| domain_polymer_cluster_expansions
+  domain_renormalization_group -->|uses| domain_polymer_cluster_expansions
+  domain_polymer_cluster_expansions -->|specializes| bridge_cluster_expansion_with_holes
+  domain_polymer_cluster_expansions -->|tests| bridge_target_erasure_diagnostic
+  bridge_target_erasure_diagnostic -->|obstructs| bridge_cluster_expansion_with_holes
+  bridge_target_erasure_diagnostic -->|suggests| bridge_target_preserving_ursell_summation
+  domain_polymer_cluster_expansions -->|uses| bridge_target_preserving_ursell_summation
+  bridge_cluster_expansion_with_holes -->|specializes| bridge_target_preserving_ursell_summation
+  bridge_target_preserving_ursell_summation -->|uses| bridge_rooted_leaf_factorial_moments
+  domain_renormalization_group -->|uses| bridge_rooted_leaf_factorial_moments
+  bridge_rooted_leaf_factorial_moments -->|transfers_via| bridge_appendix_f_rate_budget_split
+  bridge_appendix_f_rate_budget_split -->|transfers_via| bridge_cluster_expansion_with_holes
+  bridge_target_preserving_ursell_summation -->|suggests| problem_yang_mills_mass_gap
