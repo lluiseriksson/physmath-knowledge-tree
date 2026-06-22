@@ -1,0 +1,11 @@
+.lake/
+*.olean
+*.ilean
+*.c
+*.o
+*.so
+*.dll
+*.dylib
+__pycache__/
+.pytest_cache/
+.DS_Store

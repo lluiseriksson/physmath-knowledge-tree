@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PhysMath research move list",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "title", "description", "good_for", "output", "risks", "lean_test"],
+    "properties": {
+      "id": { "type": "string", "pattern": "^move\\.[a-z0-9_]+$" },
+      "title": { "type": "string" },
+      "description": { "type": "string" },
+      "good_for": { "type": "array", "items": { "type": "string" } },
+      "output": { "type": "string" },
+      "risks": { "type": "array", "items": { "type": "string" } },
+      "lean_test": { "type": "string" }
+    }
+  }
+}
+

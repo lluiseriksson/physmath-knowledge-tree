@@ -1,0 +1,388 @@
+[
+  {
+    "id": "edge.foundation.category",
+    "source": "domain.foundation_logic",
+    "target": "domain.category_theory",
+    "relation": "uses",
+    "confidence": "literature",
+    "mechanism": "Type theory and universes provide a formal substrate for categorical structures."
+  },
+  {
+    "id": "edge.category.algebra",
+    "source": "domain.category_theory",
+    "target": "domain.algebra",
+    "relation": "generalizes",
+    "confidence": "literature",
+    "mechanism": "Universal properties and functors organize algebraic constructions."
+  },
+  {
+    "id": "edge.category.algebraic_geometry",
+    "source": "domain.category_theory",
+    "target": "domain.algebraic_geometry",
+    "relation": "uses",
+    "confidence": "literature",
+    "mechanism": "Schemes, sheaves and derived methods rely heavily on categorical language."
+  },
+  {
+    "id": "edge.algebra.representation",
+    "source": "domain.algebra",
+    "target": "domain.representation_theory",
+    "relation": "uses",
+    "confidence": "literature",
+    "mechanism": "Representations convert algebraic objects into actions on spaces."
+  },
+  {
+    "id": "edge.topology.geometry",
+    "source": "domain.topology",
+    "target": "domain.differential_geometry",
+    "relation": "uses",
+    "confidence": "literature",
+    "mechanism": "Manifold theory combines topological structure with smooth geometry."
+  },
+  {
+    "id": "edge.analysis.functional_analysis",
+    "source": "domain.analysis",
+    "target": "domain.functional_analysis",
+    "relation": "uses",
+    "confidence": "literature",
+    "mechanism": "Analytic estimates become structural in normed and inner product spaces."
+  },
+  {
+    "id": "edge.functional.spectral",
+    "source": "domain.functional_analysis",
+    "target": "domain.spectral_theory",
+    "relation": "uses",
+    "confidence": "literature",
+    "mechanism": "Spectral theory studies operators on functional-analytic spaces."
+  },
+  {
+    "id": "edge.analysis.harmonic",
+    "source": "domain.analysis",
+    "target": "domain.harmonic_analysis",
+    "relation": "uses",
+    "confidence": "literature",
+    "mechanism": "Fourier and oscillatory tools refine analytic estimates by scale and frequency."
+  },
+  {
+    "id": "edge.harmonic.pde",
+    "source": "domain.harmonic_analysis",
+    "target": "domain.pde",
+    "relation": "uses",
+    "confidence": "literature",
+    "mechanism": "Frequency decompositions and singular integral estimates control PDE behavior."
+  },
+  {
+    "id": "edge.probability.pde",
+    "source": "domain.probability_stochastics",
+    "target": "domain.pde",
+    "relation": "bridge",
+    "confidence": "literature",
+    "mechanism": "Stochastic processes model diffusion, random forcing and probabilistic representations of PDE."
+  },
+  {
+    "id": "edge.optimal_transport.pde",
+    "source": "domain.optimal_transport",
+    "target": "domain.pde",
+    "relation": "bridge",
+    "confidence": "literature",
+    "mechanism": "Measure geometry and gradient-flow viewpoints provide monotonicity and compactness tools."
+  },
+  {
+    "id": "edge.geometry.gauge",
+    "source": "domain.differential_geometry",
+    "target": "domain.gauge_theory",
+    "relation": "uses",
+    "confidence": "literature",
+    "mechanism": "Gauge theory uses bundles, connections and curvature."
+  },
+  {
+    "id": "edge.symplectic.qft",
+    "source": "domain.symplectic_geometry",
+    "target": "domain.quantum_field_theory",
+    "relation": "suggests",
+    "confidence": "heuristic",
+    "mechanism": "Classical phase spaces and quantization heuristics feed field-theoretic models."
+  },
+  {
+    "id": "edge.gauge.qft",
+    "source": "domain.gauge_theory",
+    "target": "domain.quantum_field_theory",
+    "relation": "uses",
+    "confidence": "literature",
+    "mechanism": "Gauge fields form central examples of quantum field theories."
+  },
+  {
+    "id": "edge.geometry.relativity",
+    "source": "domain.differential_geometry",
+    "target": "domain.general_relativity",
+    "relation": "uses",
+    "confidence": "literature",
+    "mechanism": "General relativity is formulated through Lorentzian geometry and curvature."
+  },
+  {
+    "id": "edge.algebraic.arithmetic",
+    "source": "domain.algebraic_geometry",
+    "target": "domain.arithmetic_geometry",
+    "relation": "uses",
+    "confidence": "literature",
+    "mechanism": "Arithmetic geometry studies algebraic geometry over arithmetic bases."
+  },
+  {
+    "id": "edge.number.arithmetic",
+    "source": "domain.number_theory",
+    "target": "domain.arithmetic_geometry",
+    "relation": "bridge",
+    "confidence": "literature",
+    "mechanism": "Arithmetic objects can be encoded geometrically through schemes, curves and Galois data."
+  },
+  {
+    "id": "edge.representation.automorphic",
+    "source": "domain.representation_theory",
+    "target": "domain.automorphic_forms",
+    "relation": "uses",
+    "confidence": "literature",
+    "mechanism": "Automorphic forms can be studied through representations of adelic or Lie groups."
+  },
+  {
+    "id": "edge.automorphic.number",
+    "source": "domain.automorphic_forms",
+    "target": "domain.number_theory",
+    "relation": "bridge",
+    "confidence": "literature",
+    "mechanism": "Automorphic forms connect symmetries and L-functions to arithmetic problems."
+  },
+  {
+    "id": "edge.spectral.riemann",
+    "source": "domain.spectral_theory",
+    "target": "problem.riemann_hypothesis",
+    "relation": "suggests",
+    "confidence": "heuristic",
+    "mechanism": "Hilbert-Polya style programs seek zeros as spectral data of a self-adjoint operator."
+  },
+  {
+    "id": "edge.number.riemann",
+    "source": "domain.number_theory",
+    "target": "problem.riemann_hypothesis",
+    "relation": "uses",
+    "confidence": "literature",
+    "mechanism": "The problem is about the zeta function and prime distribution."
+  },
+  {
+    "id": "edge.automorphic.riemann",
+    "source": "domain.automorphic_forms",
+    "target": "problem.riemann_hypothesis",
+    "relation": "suggests",
+    "confidence": "literature",
+    "mechanism": "Automorphic L-functions generalize zeta-like analytic structures."
+  },
+  {
+    "id": "edge.ncg.riemann",
+    "source": "domain.noncommutative_geometry",
+    "target": "problem.riemann_hypothesis",
+    "relation": "suggests",
+    "confidence": "heuristic",
+    "mechanism": "Noncommutative spaces may encode missing geometry behind prime spectra."
+  },
+  {
+    "id": "edge.random_matrix.riemann",
+    "source": "bridge.random_matrix_zeta_spectra",
+    "target": "problem.riemann_hypothesis",
+    "relation": "suggests",
+    "confidence": "heuristic",
+    "mechanism": "Zero statistics resemble eigenvalue statistics in random matrix ensembles."
+  },
+  {
+    "id": "edge.trace.riemann",
+    "source": "bridge.trace_formula_spectral_arithmetic",
+    "target": "problem.riemann_hypothesis",
+    "relation": "suggests",
+    "confidence": "literature",
+    "mechanism": "Explicit formulas resemble trace identities relating primes and zeros."
+  },
+  {
+    "id": "edge.pde.navier",
+    "source": "domain.pde",
+    "target": "problem.navier_stokes",
+    "relation": "uses",
+    "confidence": "literature",
+    "mechanism": "Navier-Stokes is a central nonlinear PDE regularity problem."
+  },
+  {
+    "id": "edge.harmonic.navier",
+    "source": "domain.harmonic_analysis",
+    "target": "problem.navier_stokes",
+    "relation": "uses",
+    "confidence": "literature",
+    "mechanism": "Critical spaces and frequency interactions are central in regularity analysis."
+  },
+  {
+    "id": "edge.renormalization.navier",
+    "source": "bridge.renormalization_scaling_pde",
+    "target": "problem.navier_stokes",
+    "relation": "suggests",
+    "confidence": "heuristic",
+    "mechanism": "Energy cascade and critical scaling can be studied with renormalization-like language."
+  },
+  {
+    "id": "edge.probability.navier",
+    "source": "domain.probability_stochastics",
+    "target": "problem.navier_stokes",
+    "relation": "suggests",
+    "confidence": "heuristic",
+    "mechanism": "Stochastic analogues may expose typical cascade behavior or regularization effects."
+  },
+  {
+    "id": "edge.gauge.yang_mills",
+    "source": "domain.gauge_theory",
+    "target": "problem.yang_mills_mass_gap",
+    "relation": "uses",
+    "confidence": "literature",
+    "mechanism": "The problem is formulated for quantum Yang-Mills fields."
+  },
+  {
+    "id": "edge.qft.yang_mills",
+    "source": "domain.quantum_field_theory",
+    "target": "problem.yang_mills_mass_gap",
+    "relation": "uses",
+    "confidence": "literature",
+    "mechanism": "Existence and mass gap are constructive quantum field theory questions."
+  },
+  {
+    "id": "edge.representation.yang_mills",
+    "source": "domain.representation_theory",
+    "target": "problem.yang_mills_mass_gap",
+    "relation": "suggests",
+    "confidence": "literature",
+    "mechanism": "Compact gauge groups and their representations structure observable sectors."
+  },
+  {
+    "id": "edge.spectral.yang_mills",
+    "source": "domain.spectral_theory",
+    "target": "problem.yang_mills_mass_gap",
+    "relation": "suggests",
+    "confidence": "literature",
+    "mechanism": "A mass gap can be viewed as a spectral gap above the vacuum."
+  },
+  {
+    "id": "edge.algebraic.hodge",
+    "source": "domain.algebraic_geometry",
+    "target": "problem.hodge_conjecture",
+    "relation": "uses",
+    "confidence": "literature",
+    "mechanism": "The conjecture concerns algebraic cycles on smooth projective varieties."
+  },
+  {
+    "id": "edge.topology.hodge",
+    "source": "domain.topology",
+    "target": "problem.hodge_conjecture",
+    "relation": "uses",
+    "confidence": "literature",
+    "mechanism": "Cohomology classes provide the topological side of the conjecture."
+  },
+  {
+    "id": "edge.motives.hodge",
+    "source": "bridge.motives_periods_hodge",
+    "target": "problem.hodge_conjecture",
+    "relation": "suggests",
+    "confidence": "literature",
+    "mechanism": "Motivic and period viewpoints organize cycles and cohomology comparisons."
+  },
+  {
+    "id": "edge.arithmetic.bsd",
+    "source": "domain.arithmetic_geometry",
+    "target": "problem.birch_swinnerton_dyer",
+    "relation": "uses",
+    "confidence": "literature",
+    "mechanism": "Elliptic curves and their rational points are arithmetic-geometric objects."
+  },
+  {
+    "id": "edge.automorphic.bsd",
+    "source": "domain.automorphic_forms",
+    "target": "problem.birch_swinnerton_dyer",
+    "relation": "suggests",
+    "confidence": "literature",
+    "mechanism": "Modularity and L-functions connect elliptic curves to automorphic data."
+  },
+  {
+    "id": "edge.number.bsd",
+    "source": "domain.number_theory",
+    "target": "problem.birch_swinnerton_dyer",
+    "relation": "uses",
+    "confidence": "literature",
+    "mechanism": "The conjecture links rational points and analytic behavior of L-functions."
+  },
+  {
+    "id": "edge.complexity.pnp",
+    "source": "domain.complexity_theory",
+    "target": "problem.p_vs_np",
+    "relation": "uses",
+    "confidence": "literature",
+    "mechanism": "P vs NP is a foundational problem in computational complexity."
+  },
+  {
+    "id": "edge.proof_geometry.pnp",
+    "source": "bridge.proof_complexity_geometry",
+    "target": "problem.p_vs_np",
+    "relation": "suggests",
+    "confidence": "literature",
+    "mechanism": "Lower-bound barriers can be investigated with proof systems and geometric invariants."
+  },
+  {
+    "id": "edge.category.pnp",
+    "source": "domain.category_theory",
+    "target": "problem.p_vs_np",
+    "relation": "suggests",
+    "confidence": "speculative",
+    "mechanism": "Resource-sensitive categorical semantics may reveal invariant structure in reductions.",
+    "notes": "Falsifier: if the categorical encoding preserves no lower-bound relevant information, demote this edge."
+  },
+  {
+    "id": "edge.topology.poincare",
+    "source": "domain.topology",
+    "target": "problem.poincare_conjecture",
+    "relation": "uses",
+    "confidence": "literature",
+    "mechanism": "The statement is topological."
+  },
+  {
+    "id": "edge.geometry.poincare",
+    "source": "domain.differential_geometry",
+    "target": "problem.poincare_conjecture",
+    "relation": "uses",
+    "confidence": "literature",
+    "mechanism": "Ricci flow and geometric analysis supplied the decisive solved route."
+  },
+  {
+    "id": "edge.poincare.navier",
+    "source": "problem.poincare_conjecture",
+    "target": "problem.navier_stokes",
+    "relation": "tests",
+    "confidence": "heuristic",
+    "mechanism": "Solved flow-based geometry is a calibration case for nonlinear evolution problems."
+  },
+  {
+    "id": "edge.langlands.automorphic",
+    "source": "bridge.geometric_langlands_transfer",
+    "target": "domain.automorphic_forms",
+    "relation": "bridge",
+    "confidence": "literature",
+    "mechanism": "Geometric Langlands links representation-theoretic and geometric data."
+  },
+  {
+    "id": "edge.langlands.hodge",
+    "source": "bridge.geometric_langlands_transfer",
+    "target": "problem.hodge_conjecture",
+    "relation": "suggests",
+    "confidence": "heuristic",
+    "mechanism": "Categorical geometric transfer may illuminate cycle and cohomology organization."
+  },
+  {
+    "id": "edge.ncg.qft",
+    "source": "domain.noncommutative_geometry",
+    "target": "domain.quantum_field_theory",
+    "relation": "bridge",
+    "confidence": "literature",
+    "mechanism": "Operator-algebraic and noncommutative spaces encode quantum observables."
+  }
+]
+

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PhysMath edge list",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "source", "target", "relation", "confidence", "mechanism"],
+    "properties": {
+      "id": { "type": "string", "pattern": "^edge\\.[a-z0-9_\\.]+$" },
+      "source": { "type": "string" },
+      "target": { "type": "string" },
+      "relation": {
+        "type": "string",
+        "enum": [
+          "depends_on",
+          "generalizes",
+          "specializes",
+          "analogy",
+          "dual",
+          "formalizes_as",
+          "transfers_via",
+          "obstructs",
+          "suggests",
+          "tests",
+          "uses",
+          "bridge"
+        ]
+      },
+      "confidence": {
+        "type": "string",
+        "enum": ["formal", "literature", "heuristic", "speculative"]
+      },
+      "mechanism": { "type": "string" },
+      "notes": { "type": "string" }
+    }
+  }
+}
+

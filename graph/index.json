@@ -1,0 +1,40 @@
+{
+  "schema_version": "0.1.0",
+  "created": "2026-06-22",
+  "name": "PhysMath Knowledge Tree",
+  "purpose": "A computable graph of physics-mathematics concepts, bridges, problems and Lean targets for research agents.",
+  "canonical_files": {
+    "nodes": "graph/nodes/core.json",
+    "edges": "graph/edges.json",
+    "research_moves": "graph/research_moves.json"
+  },
+  "schemas": {
+    "nodes": "graph/schemas/node.schema.json",
+    "edges": "graph/schemas/edge.schema.json",
+    "research_moves": "graph/schemas/research_move.schema.json"
+  },
+  "root_nodes": [
+    "domain.foundation_logic",
+    "domain.category_theory",
+    "domain.analysis",
+    "domain.algebra",
+    "domain.topology",
+    "domain.number_theory",
+    "domain.pde",
+    "domain.quantum_field_theory",
+    "domain.complexity_theory"
+  ],
+  "confidence_levels": [
+    "formal",
+    "literature",
+    "heuristic",
+    "speculative"
+  ],
+  "agent_entrypoints": [
+    "AGENTS.md",
+    "prompts/agent-discovery.md",
+    "prompts/hypothesis-generation.md",
+    "prompts/lean-formalization.md"
+  ]
+}
+
