@@ -2,33 +2,32 @@
 
 ## Phase 0: Seed atlas
 
-- Definir ontologia de nodos, aristas y movimientos.
-- Sembrar dominios nucleares de matematica y fisica-matematica.
-- Crear mapas iniciales para Millennium Problems.
-- Mantener scripts de validacion sin dependencias pesadas.
+- Define the ontology of nodes, edges and moves.
+- Seed core domains of mathematics and physics-mathematics.
+- Create initial maps for the Millennium Problems.
+- Keep validation scripts free of heavy dependencies.
 
 ## Phase 1: Lean spine
 
-- Mapear nodos a imports y declaraciones de mathlib.
-- Crear pequenos "formalization targets" por dominio.
-- Anadir ejemplos de equivalencias, funtores, dualidades y estructuras.
-- Ejecutar CI de Lean en cada PR.
+- Map nodes to mathlib imports and declarations.
+- Create small formalization targets for each domain.
+- Add examples of equivalences, functors, dualities and structures.
+- Run Lean CI on every PR.
 
 ## Phase 2: Problem boards
 
-- Un tablero por problema abierto.
-- Separar hechos establecidos, obstaculos, heuristicas y puentes.
-- Mantener listas de falsadores y experimentos computacionales.
+- One board per open problem.
+- Separate established facts, obstacles, heuristics and bridges.
+- Maintain lists of falsifiers and computational experiments.
 
 ## Phase 3: Bridge mining
 
-- Generar candidatos por rutas cortas en el grafo.
-- Puntuar puentes por novedad, rigor, transferibilidad y testeabilidad.
-- Crear indices para busqueda vectorial externa sin acoplar el repo.
+- Generate candidates from short graph paths.
+- Score bridges by novelty, rigor, transferability and testability.
+- Create indexes for external vector search without coupling the repository.
 
 ## Phase 4: Compute campaigns
 
-- Convertir bridge cards prometedoras en tareas paralelizables.
-- Ejecutar busquedas Lean, experimentos simbolicos y simulaciones.
-- Registrar resultados negativos como conocimiento util.
-
+- Convert promising bridge cards into parallelizable tasks.
+- Run Lean searches, symbolic experiments and simulations.
+- Record negative results as useful knowledge.

@@ -1,39 +1,38 @@
 # PhysMath Knowledge Tree
 
-Repositorio semilla para construir un atlas computable de fisica-matematica:
-conceptos, teoremas, formulas, problemas abiertos, puentes entre dominios y
-"research moves" que agentes puedan usar para buscar ideas fuera de los
-caminos habituales.
+Seed repository for building a computable atlas of physics-mathematics:
+concepts, theorems, formulas, open problems, cross-domain bridges and research
+moves that agents can use to search for ideas outside familiar paths.
 
-La intuicion es un arbol de ajedrez de la ciencia. La implementacion base es
-un grafo: los arboles son vistas parciales, pero el conocimiento real tiene
-puentes, ciclos, dualidades, analogias y cambios de lenguaje.
+The intuition is a chess tree of science. The base implementation is a graph:
+trees are partial views, but real knowledge has bridges, cycles, dualities,
+analogies and language shifts.
 
-## Objetivo
+## Objective
 
-- Organizar toda la matematica y fisica-matematica en nodos reutilizables.
-- Conectar cada nodo con referencias, imports Lean/mathlib y preguntas vivas.
-- Separar hechos formales, literatura consolidada, heuristicas y especulacion.
-- Dar a agentes una ruta clara para generar hipotesis, falsarlas y formalizar.
-- Crear tableros de problemas profundos, incluyendo los Millennium Problems.
+- Organize mathematics and physics-mathematics into reusable nodes.
+- Connect each node to references, Lean/mathlib imports and live questions.
+- Separate formal facts, established literature, heuristics and speculation.
+- Give agents a clear path for generating, falsifying and formalizing hypotheses.
+- Create boards for deep problems, including the Millennium Problems.
 
-## Inicio rapido para agentes
+## Quick Start for Agents
 
-1. Lee [AGENTS.md](AGENTS.md).
-2. Carga [graph/index.json](graph/index.json).
-3. Valida el grafo:
+1. Read [AGENTS.md](AGENTS.md).
+2. Load [graph/index.json](graph/index.json).
+3. Validate the graph:
 
 ```bash
 python scripts/validate_graph.py
 ```
 
-4. Explora las vistas humanas:
+4. Explore the human-readable views:
 
 - [views/tree.md](views/tree.md)
 - [views/domain-matrix.md](views/domain-matrix.md)
 - [views/millennium-map.md](views/millennium-map.md)
 
-5. Usa los prompts:
+5. Use the prompts:
 
 - [prompts/agent-discovery.md](prompts/agent-discovery.md)
 - [prompts/hypothesis-generation.md](prompts/hypothesis-generation.md)
@@ -41,7 +40,7 @@ python scripts/validate_graph.py
 
 ## Lean 4 / mathlib
 
-Este repo incluye un paquete Lean minimo:
+This repository includes a minimal Lean package:
 
 ```bash
 lake update
@@ -49,23 +48,23 @@ lake exe cache get
 lake build
 ```
 
-El setup sigue la guia oficial de mathlib para usar mathlib como dependencia:
+The setup follows the official mathlib guide for using mathlib as a dependency:
 https://github.com/leanprover-community/mathlib4/wiki/Using-mathlib4-as-a-dependency
 
-## Estructura
+## Structure
 
 ```text
-graph/      Datos canonicos del grafo en JSON.
-views/      Vistas navegables para humanos.
-docs/       Diseno, ontologia y protocolos de investigacion.
-prompts/    Prompts para agentes.
-scripts/    Validacion y generacion de indices.
-PhysMathKnowledgeTree/  Capa Lean inicial.
+graph/      Canonical graph data in JSON.
+views/      Navigable human-readable views.
+docs/       Design, ontology and research protocols.
+prompts/    Prompts for agents.
+scripts/    Validation and index-generation scripts.
+PhysMathKnowledgeTree/  Initial Lean layer.
 ```
 
-## Regla de oro
+## Golden Rule
 
-Una idea especulativa puede entrar si esta marcada como especulativa, tiene un
-test posible y no se presenta como teorema. El valor del repo no es "tener la
-respuesta", sino convertir intuiciones en rutas de busqueda trazables.
-
+A speculative idea can enter the repository if it is marked as speculative, has
+a possible test and is not presented as a theorem. The value of the repository
+is not "having the answer"; it is turning intuitions into traceable search
+paths.

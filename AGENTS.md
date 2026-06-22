@@ -1,40 +1,40 @@
 # Agent Protocol
 
-Este repositorio esta disenado para agentes que buscan conexiones matematicas
-profundas, especialmente cuando una busqueda frontal se atasca.
+This repository is designed for agents searching for deep mathematical
+connections, especially when a direct attack gets stuck.
 
-## Contrato operativo
+## Operating Contract
 
-1. No confundas especulacion con verdad.
-2. Cada propuesta debe declarar sus nodos de origen, puente, tipo de evidencia,
-   posible falsador y proximo objetivo Lean.
-3. Prefiere mapas pequenos y verificables antes que narrativas enormes.
-4. Cuando uses mathlib, cita imports y declaraciones candidatas.
-5. Si una idea depende de fisica no rigurosa, etiquetala como `heuristic` o
+1. Do not confuse speculation with truth.
+2. Every proposal must declare its source nodes, bridge, evidence type,
+   possible falsifier and next Lean target.
+3. Prefer small, verifiable maps over huge narratives.
+4. When using mathlib, cite candidate imports and declarations.
+5. If an idea depends on non-rigorous physics, label it as `heuristic` or
    `speculative`.
 
-## Ciclo recomendado
+## Recommended Cycle
 
-1. Escoge un problema o dominio en `graph/nodes/core.json`.
-2. Recupera nodos a distancia 1 y 2 usando `graph/edges.json`.
-3. Aplica 2 o 3 movimientos de `graph/research_moves.json`.
-4. Produce una "bridge card":
-   - problema
-   - dominios combinados
-   - mecanismo de transferencia
-   - por que podria funcionar
-   - que lo podria destruir
-   - objetivo Lean minimo
-5. Si la idea sobrevive, crea una PR con:
-   - nuevo nodo o arista
-   - evidencia
-   - prompt reproducible
-   - formalizacion parcial, si existe
+1. Choose a problem or domain in `graph/nodes/core.json`.
+2. Retrieve nodes at distance 1 and 2 using `graph/edges.json`.
+3. Apply 2 or 3 moves from `graph/research_moves.json`.
+4. Produce a bridge card:
+   - problem
+   - combined domains
+   - transfer mechanism
+   - why it might work
+   - what could destroy it
+   - minimal Lean target
+5. If the idea survives, create a PR with:
+   - new node or edge
+   - evidence
+   - reproducible prompt
+   - partial formalization, if one exists
 
-## Formato de salida para ideas
+## Output Format for Ideas
 
 ```markdown
-## Bridge Card: <titulo>
+## Bridge Card: <title>
 
 - Source nodes:
 - Target problem:
@@ -47,10 +47,9 @@ profundas, especialmente cuando una busqueda frontal se atasca.
 - Next computation:
 ```
 
-## Prohibiciones utiles
+## Useful Prohibitions
 
-- No uses "parece profundo" como evidencia.
-- No mezcles notacion de dominios distintos sin escribir el traductor.
-- No propongas una gran teoria si antes no puedes formular un micro-lema.
-- No borres incertidumbre: ponle nombre.
-
+- Do not use "it seems deep" as evidence.
+- Do not mix notation from different domains without writing the translator.
+- Do not propose a grand theory before you can formulate a micro-lemma.
+- Do not erase uncertainty: name it.
