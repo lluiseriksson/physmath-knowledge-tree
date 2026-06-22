@@ -1,0 +1,371 @@
+{
+  "schema_version": "1.0.0",
+  "application_version": "2.5.0",
+  "graph_schema_version": "0.6.0",
+  "graph_integrity": {
+    "passed": true
+  },
+  "search": {
+    "total": 14,
+    "top_1_accuracy": 1,
+    "recall_at_3": 1,
+    "mean_reciprocal_rank": 1,
+    "passed": true,
+    "cases": [
+      {
+        "id": "search.riemann_hypothesis",
+        "query": "Riemann Hypothesis",
+        "expected_node": "problem.riemann_hypothesis",
+        "rank": 1,
+        "top_nodes": [
+          "problem.riemann_hypothesis"
+        ],
+        "passed": true
+      },
+      {
+        "id": "search.mass_gap",
+        "query": "mass gap",
+        "expected_node": "problem.yang_mills_mass_gap",
+        "rank": 1,
+        "top_nodes": [
+          "problem.yang_mills_mass_gap",
+          "bridge.lattice_physical_scaling"
+        ],
+        "passed": true
+      },
+      {
+        "id": "search.navier_stokes",
+        "query": "Navier Stokes",
+        "expected_node": "problem.navier_stokes",
+        "rank": 1,
+        "top_nodes": [
+          "problem.navier_stokes"
+        ],
+        "passed": true
+      },
+      {
+        "id": "search.hodge_conjecture",
+        "query": "Hodge Conjecture",
+        "expected_node": "problem.hodge_conjecture",
+        "rank": 1,
+        "top_nodes": [
+          "problem.hodge_conjecture"
+        ],
+        "passed": true
+      },
+      {
+        "id": "search.polymer_expansions",
+        "query": "polymer cluster expansions",
+        "expected_node": "domain.polymer_cluster_expansions",
+        "rank": 1,
+        "top_nodes": [
+          "domain.polymer_cluster_expansions"
+        ],
+        "passed": true
+      },
+      {
+        "id": "search.cmi_recovery",
+        "query": "conditional mutual information",
+        "expected_node": "bridge.conditional_mutual_information_recovery",
+        "rank": 1,
+        "top_nodes": [
+          "bridge.conditional_mutual_information_recovery"
+        ],
+        "passed": true
+      },
+      {
+        "id": "search.no_signalling",
+        "query": "no signalling",
+        "expected_node": "bridge.local_operations_no_signalling",
+        "rank": 1,
+        "top_nodes": [
+          "bridge.local_operations_no_signalling",
+          "domain.quantum_information_theory"
+        ],
+        "passed": true
+      },
+      {
+        "id": "search.catalan_closure",
+        "query": "Catalan closure",
+        "expected_node": "bridge.rooted_tree_catalan_closure",
+        "rank": 1,
+        "top_nodes": [
+          "bridge.rooted_tree_catalan_closure"
+        ],
+        "passed": true
+      },
+      {
+        "id": "search.renormalization_group",
+        "query": "renormalization group",
+        "expected_node": "domain.renormalization_group",
+        "rank": 1,
+        "top_nodes": [
+          "domain.renormalization_group",
+          "problem.uniform_yang_mills_rg_activity"
+        ],
+        "passed": true
+      },
+      {
+        "id": "search.geometric_langlands",
+        "query": "geometric Langlands",
+        "expected_node": "bridge.geometric_langlands_transfer",
+        "rank": 1,
+        "top_nodes": [
+          "bridge.geometric_langlands_transfer"
+        ],
+        "passed": true
+      },
+      {
+        "id": "search.optimal_transport",
+        "query": "optimal transport",
+        "expected_node": "domain.optimal_transport",
+        "rank": 1,
+        "top_nodes": [
+          "domain.optimal_transport"
+        ],
+        "passed": true
+      },
+      {
+        "id": "search.aqft",
+        "query": "algebraic quantum field theory",
+        "expected_node": "domain.algebraic_quantum_field_theory",
+        "rank": 1,
+        "top_nodes": [
+          "domain.algebraic_quantum_field_theory",
+          "domain.quantum_field_theory"
+        ],
+        "passed": true
+      },
+      {
+        "id": "search.proof_complexity",
+        "query": "proof complexity geometry",
+        "expected_node": "bridge.proof_complexity_geometry",
+        "rank": 1,
+        "top_nodes": [
+          "bridge.proof_complexity_geometry"
+        ],
+        "passed": true
+      },
+      {
+        "id": "search.block_coercivity",
+        "query": "block average coercivity",
+        "expected_node": "bridge.block_average_coercivity",
+        "rank": 1,
+        "top_nodes": [
+          "bridge.block_average_coercivity"
+        ],
+        "passed": true
+      }
+    ]
+  },
+  "routes": {
+    "total": 5,
+    "passed_count": 5,
+    "passed": true,
+    "scenarios": [
+      {
+        "id": "route.spectral_arithmetic_rh",
+        "title": "Spectral-arithmetic route to the Riemann Hypothesis",
+        "research_question": "How can spectral theory and trace-formula mechanisms organize a bounded route toward the Riemann Hypothesis without treating the Hilbert-Pólya heuristic as a theorem?",
+        "passed": true,
+        "checks": {
+          "within_edge_budget": true,
+          "permitted_evidence_only": true,
+          "all_edges_referenced": true,
+          "expected_terminal": true
+        },
+        "disallowed_edges": [],
+        "unreferenced_edges": [],
+        "route": {
+          "nodes": [
+            "domain.functional_analysis",
+            "domain.spectral_theory",
+            "bridge.trace_formula_spectral_arithmetic",
+            "problem.riemann_hypothesis"
+          ],
+          "edges": [
+            "edge.functional.spectral",
+            "edge.spectral.trace_bridge",
+            "edge.trace.riemann"
+          ]
+        }
+      },
+      {
+        "id": "route.critical_pde_navier_stokes",
+        "title": "Analysis route to Navier-Stokes",
+        "research_question": "Which established analysis layers connect harmonic estimates to the Navier-Stokes problem before speculative renormalization analogies are introduced?",
+        "passed": true,
+        "checks": {
+          "within_edge_budget": true,
+          "permitted_evidence_only": true,
+          "all_edges_referenced": true,
+          "expected_terminal": true
+        },
+        "disallowed_edges": [],
+        "unreferenced_edges": [],
+        "route": {
+          "nodes": [
+            "domain.analysis",
+            "domain.harmonic_analysis",
+            "domain.pde",
+            "problem.navier_stokes"
+          ],
+          "edges": [
+            "edge.analysis.harmonic",
+            "edge.harmonic.pde",
+            "edge.pde.navier"
+          ]
+        }
+      },
+      {
+        "id": "route.target_sensitive_yang_mills",
+        "title": "Target-sensitive constructive Yang-Mills route",
+        "research_question": "How can a target-preserving polymer expansion retain the marked observable through rooted-tree summation and the Appendix-F rate budget?",
+        "passed": true,
+        "checks": {
+          "within_edge_budget": true,
+          "permitted_evidence_only": true,
+          "all_edges_referenced": true,
+          "expected_terminal": true
+        },
+        "disallowed_edges": [],
+        "unreferenced_edges": [],
+        "route": {
+          "nodes": [
+            "domain.polymer_cluster_expansions",
+            "bridge.target_erasure_diagnostic",
+            "bridge.target_preserving_ursell_summation",
+            "bridge.rooted_leaf_factorial_moments",
+            "bridge.rooted_tree_catalan_closure",
+            "bridge.appendix_f_rate_budget_split",
+            "bridge.cluster_expansion_with_holes",
+            "problem.uniform_yang_mills_rg_activity"
+          ],
+          "edges": [
+            "edge.polymer.target_erasure_diagnostic",
+            "edge.target_erasure.target_preserving",
+            "edge.target_preserving.rooted_leaf",
+            "edge.rooted_leaf.catalan_closure",
+            "edge.catalan.rate_budget",
+            "edge.rate_budget.cluster_holes",
+            "edge.cluster_holes.ym_rg_activity"
+          ]
+        }
+      },
+      {
+        "id": "route.aqft_no_signalling",
+        "title": "AQFT locality to no-signalling",
+        "research_question": "What finite formal mechanism expresses that a local nonselective operation preserves spacelike statistics?",
+        "passed": true,
+        "checks": {
+          "within_edge_budget": true,
+          "permitted_evidence_only": true,
+          "all_edges_referenced": true,
+          "expected_terminal": true
+        },
+        "disallowed_edges": [],
+        "unreferenced_edges": [],
+        "route": {
+          "nodes": [
+            "domain.algebraic_quantum_field_theory",
+            "bridge.local_operations_no_signalling"
+          ],
+          "edges": [
+            "edge.aqft.no_signalling"
+          ]
+        }
+      },
+      {
+        "id": "route.qinfo_recovery",
+        "title": "Quantum-information recovery route",
+        "research_question": "Which literature-backed bridge turns small conditional mutual information into an explicit recovery target?",
+        "passed": true,
+        "checks": {
+          "within_edge_budget": true,
+          "permitted_evidence_only": true,
+          "all_edges_referenced": true,
+          "expected_terminal": true
+        },
+        "disallowed_edges": [],
+        "unreferenced_edges": [],
+        "route": {
+          "nodes": [
+            "domain.quantum_information_theory",
+            "bridge.conditional_mutual_information_recovery"
+          ],
+          "edges": [
+            "edge.qinfo.cmi_recovery"
+          ]
+        }
+      }
+    ]
+  },
+  "evidence": {
+    "nodes_with_references": 58,
+    "node_total": 58,
+    "edges_with_references": 112,
+    "edge_total": 112,
+    "source_bearing_nodes_with_claim_or_formalization": 55,
+    "source_bearing_node_total": 55,
+    "source_bearing_edges_with_claim_or_formalization": 95,
+    "source_bearing_edge_total": 95,
+    "passed": true
+  },
+  "lean": {
+    "nodes_with_imports": 58,
+    "nodes_with_bounded_targets": 58,
+    "nodes_with_named_declarations": 23,
+    "node_total": 58,
+    "passed": true
+  },
+  "controlled_quality": {
+    "scope": "repository-controlled quality only",
+    "score": 100,
+    "maximum": 100,
+    "criteria": [
+      {
+        "id": "graph_integrity",
+        "title": "Canonical graph integrity",
+        "weight": 20,
+        "passed": true,
+        "earned": 20
+      },
+      {
+        "id": "evidence_traceability",
+        "title": "Scoped evidence traceability",
+        "weight": 25,
+        "passed": true,
+        "earned": 25
+      },
+      {
+        "id": "reproducible_retrieval",
+        "title": "Search and route regressions",
+        "weight": 20,
+        "passed": true,
+        "earned": 20
+      },
+      {
+        "id": "formalization_interfaces",
+        "title": "Lean-facing bounded targets",
+        "weight": 15,
+        "passed": true,
+        "earned": 15
+      },
+      {
+        "id": "automation_and_documentation",
+        "title": "Automation and research-software documentation",
+        "weight": 20,
+        "passed": true,
+        "earned": 20
+      }
+    ],
+    "exclusions": [
+      "scientific truth of heuristic or speculative mechanisms",
+      "novelty sufficient for publication",
+      "external adoption, citations or independent replication",
+      "completed user-study outcomes",
+      "formalization of the full research programmes"
+    ]
+  },
+  "passed": true
+}

@@ -83,3 +83,7 @@ Every agent-generated proposal should include:
 - deterministic prompt and tool/version notes when relevant.
 
 The web app's bridge-card generator creates scaffolding only. Its output remains exploratory until reviewed.
+
+## Reference scope and evaluation
+
+Every graph proposal must distinguish direct claim support from contextual literature and formalization links. A context reference cannot justify an evidence promotion. Before proposing a canonical change, run `npm run validate:graph`, `npm run evaluate` and the relevant `npm run usecase -- <scenario-id>` command. Route regressions are navigation checks, not proofs of the terminal claim.

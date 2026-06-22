@@ -4,19 +4,34 @@ All notable changes are documented here. The project follows semantic versioning
 
 ## [Unreleased]
 
+No unreleased changes.
+
+## [2.5.0] — 2026-06-22
+
+Release notes: [`docs/RELEASE_2_5_0.md`](./docs/RELEASE_2_5_0.md).
+
 ### Added
 
+- Scoped `claim`, `context` and `formalization` references on every canonical node and edge.
+- Deterministic URL-level reference registry and stricter source-bearing evidence validation.
+- Fourteen search regressions and five reproducible research-route scenarios with evidence, length, terminal and reference gates.
+- Generated evaluation report, use-case dossier and repository-controlled 100-point quality scorecard.
+- Statement of need, related-work comparison, reproducibility guide and a transparent future user-evaluation protocol.
+- CLI commands for reproducing a route and running machine-dependent evaluation benchmarks.
 - A `test:coverage` quality gate that fails below 100% line coverage for the instrumented Node-tested modules.
 - Regression tests for malformed/traversal requests, safe 500 responses, preference-storage failures and coincident graph-layout points.
 
 ### Changed
 
-- The complete `npm run check` gate now enforces line coverage instead of running the non-threshold test command.
+- Graph schema advanced to 0.6.0 and now requires a reference scope.
+- The complete quality gate validates generated evaluation artifacts and the reference registry.
 - Static-server startup is exposed through testable helpers and reports the actual ephemeral port when `PORT=0`.
+- Documentation separates repository-controlled quality from scientific validity, novelty, adoption and user-study evidence.
 
 ### Fixed
 
 - The development server no longer logs port `0` after the operating system assigns an ephemeral port.
+- Historical 15/58-node and 45/112-edge evidence-coverage text no longer appears as the current state.
 
 ## [2.4.0] — 2026-06-22
 

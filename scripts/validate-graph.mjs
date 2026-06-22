@@ -31,6 +31,7 @@ const kinds = new Set(['domain', 'bridge', 'problem']);
 const confidences = new Set(['formal', 'literature', 'heuristic', 'speculative']);
 const relations = new Set(['depends_on', 'generalizes', 'specializes', 'analogy', 'dual', 'formalizes_as', 'transfers_via', 'obstructs', 'suggests', 'tests', 'uses', 'bridge']);
 const referenceTypes = new Set(['official', 'paper', 'book', 'documentation', 'survey']);
+const referenceScopes = new Set(['claim', 'context', 'formalization']);
 
 function validateReferences(references, ownerId) {
   if (references === undefined) return;
@@ -40,6 +41,7 @@ function validateReferences(references, ownerId) {
     ensure(typeof reference.label === 'string' && reference.label.trim().length >= 2, `${ownerId}: reference label required`);
     ensure(/^https:\/\//.test(reference.url), `${ownerId}: references must use HTTPS`);
     ensure(referenceTypes.has(reference.type), `${ownerId}: invalid reference type`);
+    ensure(referenceScopes.has(reference.scope), `${ownerId}: invalid reference scope`);
     ensure(!urls.has(reference.url), `${ownerId}: duplicate reference URL ${reference.url}`);
     urls.add(reference.url);
   }
@@ -62,6 +64,10 @@ for (const node of nodes) {
   if (node.kind === 'problem') ensure(['solved', 'unsolved'].includes(node.status), `${node.id}: problem status required`);
   else ensure(node.status === undefined, `${node.id}: status is only valid for problems`);
   validateReferences(node.references, node.id);
+  ensure(node.references.length > 0, `${node.id}: at least one direct reference is required`);
+  if (['formal', 'literature'].includes(node.confidence)) {
+    ensure(node.references.some((reference) => ['claim', 'formalization'].includes(reference.scope)), `${node.id}: source-bearing nodes require a claim or formalization reference`);
+  }
   nodeIds.add(node.id);
 }
 
@@ -80,6 +86,10 @@ for (const edge of edges) {
   ensure(!semanticEdges.has(semanticKey), `${edge.id}: duplicate source/relation/target claim`);
   semanticEdges.add(semanticKey);
   validateReferences(edge.references, edge.id);
+  ensure(edge.references.length > 0, `${edge.id}: at least one direct reference is required`);
+  if (['formal', 'literature'].includes(edge.confidence)) {
+    ensure(edge.references.some((reference) => ['claim', 'formalization'].includes(reference.scope)), `${edge.id}: source-bearing edges require a claim or formalization reference`);
+  }
   if (edge.confidence === 'speculative') ensure(typeof edge.notes === 'string' && /falsif/i.test(edge.notes), `${edge.id}: speculative edges need a falsifier note`);
   degree.set(edge.source, degree.get(edge.source) + 1);
   degree.set(edge.target, degree.get(edge.target) + 1);

@@ -2,6 +2,8 @@
 
 Date: **2026-06-22**
 
+> **Status after release 2.5.0:** the reference phase described here is complete. The canonical graph now has scoped references on 58/58 nodes and 112/112 edges, with zero formal/literature claim-source debt. This document remains as the history of the first 45-edge pass. Current metrics are generated in `docs/GRAPH_AUDIT.md`.
+
 This note records the targeted hardening pass made after the initial 2.4.0 integrity release. The aim is to raise the repository from a strong personal research graph toward a reusable scientific reference by improving the two weakest public signals: direct mathematical evidence and proof-bearing Lean content.
 
 ## Measurable changes
@@ -40,12 +42,12 @@ Direct edge references are not a claim that the edge itself is a theorem. They i
 
 These are deliberately finite or algebraic. They give agents concrete proof objects to inspect while preserving the boundary between formal facts, literature-supported claims and exploratory hypotheses.
 
-## Remaining work
+## Remaining work after 2.5.0
 
-The next scientific-hardening pass should focus on:
+Reference coverage is no longer the immediate bottleneck. The remaining priorities are:
 
-- direct references for the remaining 51 formal/literature edge debts;
-- direct references for high-degree domain and bridge nodes that still inherit context from nearby sources;
 - Lean declarations for `bridge.block_average_coercivity`, `bridge.gaussian_precision_markov_blanket` and `bridge.ward_defect_weight_variation`;
+- independent review of reference-to-claim fit, especially for context-only exploratory edges;
 - closing the 18 open curation verification requests and the 3 pending user-review gates;
+- executing the user-evaluation protocol without fabricating outcomes;
 - publishing signed GitHub releases after CI completes.

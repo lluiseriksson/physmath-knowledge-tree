@@ -1,0 +1,165 @@
+{
+  "schema_version": "1.0.0",
+  "search_cases": [
+    {
+      "id": "search.riemann_hypothesis",
+      "query": "Riemann Hypothesis",
+      "expected_node": "problem.riemann_hypothesis"
+    },
+    {
+      "id": "search.mass_gap",
+      "query": "mass gap",
+      "expected_node": "problem.yang_mills_mass_gap"
+    },
+    {
+      "id": "search.navier_stokes",
+      "query": "Navier Stokes",
+      "expected_node": "problem.navier_stokes"
+    },
+    {
+      "id": "search.hodge_conjecture",
+      "query": "Hodge Conjecture",
+      "expected_node": "problem.hodge_conjecture"
+    },
+    {
+      "id": "search.polymer_expansions",
+      "query": "polymer cluster expansions",
+      "expected_node": "domain.polymer_cluster_expansions"
+    },
+    {
+      "id": "search.cmi_recovery",
+      "query": "conditional mutual information",
+      "expected_node": "bridge.conditional_mutual_information_recovery"
+    },
+    {
+      "id": "search.no_signalling",
+      "query": "no signalling",
+      "expected_node": "bridge.local_operations_no_signalling"
+    },
+    {
+      "id": "search.catalan_closure",
+      "query": "Catalan closure",
+      "expected_node": "bridge.rooted_tree_catalan_closure"
+    },
+    {
+      "id": "search.renormalization_group",
+      "query": "renormalization group",
+      "expected_node": "domain.renormalization_group"
+    },
+    {
+      "id": "search.geometric_langlands",
+      "query": "geometric Langlands",
+      "expected_node": "bridge.geometric_langlands_transfer"
+    },
+    {
+      "id": "search.optimal_transport",
+      "query": "optimal transport",
+      "expected_node": "domain.optimal_transport"
+    },
+    {
+      "id": "search.aqft",
+      "query": "algebraic quantum field theory",
+      "expected_node": "domain.algebraic_quantum_field_theory"
+    },
+    {
+      "id": "search.proof_complexity",
+      "query": "proof complexity geometry",
+      "expected_node": "bridge.proof_complexity_geometry"
+    },
+    {
+      "id": "search.block_coercivity",
+      "query": "block average coercivity",
+      "expected_node": "bridge.block_average_coercivity"
+    }
+  ],
+  "route_scenarios": [
+    {
+      "id": "route.spectral_arithmetic_rh",
+      "title": "Spectral-arithmetic route to the Riemann Hypothesis",
+      "research_question": "How can spectral theory and trace-formula mechanisms organize a bounded route toward the Riemann Hypothesis without treating the Hilbert-Pólya heuristic as a theorem?",
+      "waypoints": [
+        "domain.functional_analysis",
+        "domain.spectral_theory",
+        "bridge.trace_formula_spectral_arithmetic",
+        "problem.riemann_hypothesis"
+      ],
+      "directed": true,
+      "maximum_edges": 3,
+      "permitted_confidence": [
+        "formal",
+        "literature"
+      ],
+      "expected_terminal": "problem.riemann_hypothesis"
+    },
+    {
+      "id": "route.critical_pde_navier_stokes",
+      "title": "Analysis route to Navier-Stokes",
+      "research_question": "Which established analysis layers connect harmonic estimates to the Navier-Stokes problem before speculative renormalization analogies are introduced?",
+      "waypoints": [
+        "domain.analysis",
+        "domain.harmonic_analysis",
+        "domain.pde",
+        "problem.navier_stokes"
+      ],
+      "directed": true,
+      "maximum_edges": 3,
+      "permitted_confidence": [
+        "formal",
+        "literature"
+      ],
+      "expected_terminal": "problem.navier_stokes"
+    },
+    {
+      "id": "route.target_sensitive_yang_mills",
+      "title": "Target-sensitive constructive Yang-Mills route",
+      "research_question": "How can a target-preserving polymer expansion retain the marked observable through rooted-tree summation and the Appendix-F rate budget?",
+      "waypoints": [
+        "domain.polymer_cluster_expansions",
+        "bridge.target_erasure_diagnostic",
+        "bridge.target_preserving_ursell_summation",
+        "bridge.rooted_leaf_factorial_moments",
+        "bridge.rooted_tree_catalan_closure",
+        "bridge.appendix_f_rate_budget_split",
+        "bridge.cluster_expansion_with_holes",
+        "problem.uniform_yang_mills_rg_activity"
+      ],
+      "directed": true,
+      "maximum_edges": 7,
+      "permitted_confidence": [
+        "formal",
+        "literature"
+      ],
+      "expected_terminal": "problem.uniform_yang_mills_rg_activity"
+    },
+    {
+      "id": "route.aqft_no_signalling",
+      "title": "AQFT locality to no-signalling",
+      "research_question": "What finite formal mechanism expresses that a local nonselective operation preserves spacelike statistics?",
+      "waypoints": [
+        "domain.algebraic_quantum_field_theory",
+        "bridge.local_operations_no_signalling"
+      ],
+      "directed": true,
+      "maximum_edges": 1,
+      "permitted_confidence": [
+        "formal"
+      ],
+      "expected_terminal": "bridge.local_operations_no_signalling"
+    },
+    {
+      "id": "route.qinfo_recovery",
+      "title": "Quantum-information recovery route",
+      "research_question": "Which literature-backed bridge turns small conditional mutual information into an explicit recovery target?",
+      "waypoints": [
+        "domain.quantum_information_theory",
+        "bridge.conditional_mutual_information_recovery"
+      ],
+      "directed": true,
+      "maximum_edges": 1,
+      "permitted_confidence": [
+        "literature"
+      ],
+      "expected_terminal": "bridge.conditional_mutual_information_recovery"
+    }
+  ]
+}

@@ -89,6 +89,6 @@ test('preferences persist strings and degrade safely when storage is unavailable
     assert.equal(loadPreference('theme', 'system'), 'system');
     assert.doesNotThrow(() => savePreference('theme', 'light'));
   } finally {
-    previous === undefined ? delete globalThis.localStorage : (globalThis.localStorage = previous);
+    delete globalThis.localStorage;
   }
 });

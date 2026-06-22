@@ -23,7 +23,8 @@ PhysMath Knowledge Tree is an evidence-labelled research graph. Agents may use i
 4. Check whether the move is already represented by an edge or collection.
 5. Produce a bridge card using the template below.
 6. Attempt the smallest falsifier or formal target first.
-7. Propose a graph edit only when its mechanism and evidence are explicit.
+7. Propose a graph edit only when its mechanism, evidence and reference scope are explicit.
+8. Re-run committed evaluation scenarios and disclose any route or ranking change.
 
 ## Bridge-card template
 

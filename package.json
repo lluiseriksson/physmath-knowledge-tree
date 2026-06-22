@@ -1,6 +1,6 @@
 {
   "name": "physmath-knowledge-tree",
-  "version": "2.4.0",
+  "version": "2.5.0",
   "private": true,
   "type": "module",
   "description": "Computable physics-mathematics research graph, Lean spine and bilingual learning map.",
@@ -31,7 +31,12 @@
     "curation:verify-source": "node scripts/verify-curation-source.mjs",
     "curation:report": "node scripts/generate-curation-report.mjs",
     "validate:curation": "node scripts/validate-curation.mjs",
-    "check": "npm run validate:syntax && npm run validate:graph && npm run validate:curation && npm run validate:curation-report && npm run validate:learning && npm run validate:links && npm run validate:accessibility && npm run validate:pwa && npm run validate:views && npm run validate:audit && npm run validate:workflows && npm run validate:format && npm run test:coverage && npm run build && npm run validate:dist",
-    "validate:workflows": "node scripts/check-workflows.mjs"
+    "check": "npm run validate:syntax && npm run validate:graph && npm run validate:curation && npm run validate:curation-report && npm run validate:learning && npm run validate:links && npm run validate:accessibility && npm run validate:pwa && npm run validate:views && npm run validate:audit && npm run validate:evaluation && npm run validate:workflows && npm run validate:format && npm run test:coverage && npm run build && npm run validate:dist",
+    "validate:workflows": "node scripts/check-workflows.mjs",
+    "evaluate": "node scripts/evaluate-repository.mjs",
+    "validate:evaluation": "node scripts/evaluate-repository.mjs --check",
+    "usecase": "node scripts/run-use-case.mjs",
+    "usecase:list": "node scripts/run-use-case.mjs --list",
+    "benchmark:evaluation": "node scripts/benchmark-evaluation.mjs"
   }
 }

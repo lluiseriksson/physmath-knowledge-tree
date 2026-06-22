@@ -25,6 +25,14 @@
     },
     "questions": [
       "Which informal mathematical structures need explicit universe or typeclass control?"
+    ],
+    "references": [
+      {
+        "label": "Lean Language Reference",
+        "url": "https://lean-lang.org/doc/reference/latest/",
+        "type": "documentation",
+        "scope": "claim"
+      }
     ]
   },
   {
@@ -53,6 +61,14 @@
     },
     "questions": [
       "Can a proposed analogy be upgraded into a functor, adjunction or equivalence?"
+    ],
+    "references": [
+      {
+        "label": "E. Riehl — Category Theory in Context",
+        "url": "https://math.jhu.edu/~eriehl/context.pdf",
+        "type": "book",
+        "scope": "claim"
+      }
     ]
   },
   {
@@ -83,6 +99,14 @@
     },
     "questions": [
       "Which bridge requires structure, representation or invariant theory?"
+    ],
+    "references": [
+      {
+        "label": "The Stacks Project",
+        "url": "https://stacks.math.columbia.edu/",
+        "type": "book",
+        "scope": "claim"
+      }
     ]
   },
   {
@@ -110,6 +134,14 @@
     },
     "questions": [
       "When does a local construction fail to glue globally?"
+    ],
+    "references": [
+      {
+        "label": "A. Hatcher — Algebraic Topology",
+        "url": "https://pi.math.cornell.edu/~hatcher/AT/AT.pdf",
+        "type": "book",
+        "scope": "claim"
+      }
     ]
   },
   {
@@ -139,6 +171,14 @@
     },
     "questions": [
       "Which estimate is the actual bottleneck of a proposed proof route?"
+    ],
+    "references": [
+      {
+        "label": "T. Tao — Analysis I",
+        "url": "https://terrytao.wordpress.com/books/analysis-i/",
+        "type": "book",
+        "scope": "claim"
+      }
     ]
   },
   {
@@ -168,6 +208,14 @@
     },
     "questions": [
       "Can a nonlinear problem be embedded into a linear or spectral setting?"
+    ],
+    "references": [
+      {
+        "label": "J. B. Conway — A Course in Functional Analysis",
+        "url": "https://link.springer.com/book/10.1007/978-1-4757-4383-8",
+        "type": "book",
+        "scope": "claim"
+      }
     ]
   },
   {
@@ -192,6 +240,14 @@
     },
     "questions": [
       "Which hidden frequency interaction blocks a global estimate?"
+    ],
+    "references": [
+      {
+        "label": "E. M. Stein — Harmonic Analysis",
+        "url": "https://doi.org/10.1515/9781400883929",
+        "type": "book",
+        "scope": "claim"
+      }
     ]
   },
   {
@@ -219,6 +275,20 @@
     },
     "questions": [
       "Can a zero, obstruction or phase transition be reinterpreted as spectral data?"
+    ],
+    "references": [
+      {
+        "label": "J. B. Conway — A Course in Functional Analysis",
+        "url": "https://link.springer.com/book/10.1007/978-1-4757-4383-8",
+        "type": "book",
+        "scope": "claim"
+      },
+      {
+        "label": "mathlib4 — Inner-product-space spectrum documentation",
+        "url": "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/InnerProductSpace/Spectrum.html",
+        "type": "documentation",
+        "scope": "claim"
+      }
     ]
   },
   {
@@ -245,6 +315,14 @@
     },
     "questions": [
       "Does randomness reveal the typical obstruction or only average it away?"
+    ],
+    "references": [
+      {
+        "label": "O. Kallenberg — Foundations of Modern Probability",
+        "url": "https://link.springer.com/book/10.1007/978-3-030-61871-1",
+        "type": "book",
+        "scope": "claim"
+      }
     ]
   },
   {
@@ -272,6 +350,14 @@
     },
     "questions": [
       "Where does regularity transfer fail: estimates, compactness or uniqueness?"
+    ],
+    "references": [
+      {
+        "label": "L. C. Evans — Partial Differential Equations",
+        "url": "https://bookstore.ams.org/gsm-19-r/",
+        "type": "book",
+        "scope": "claim"
+      }
     ]
   },
   {
@@ -299,6 +385,14 @@
     },
     "questions": [
       "Can an analytic obstruction be rephrased as curvature or geometry?"
+    ],
+    "references": [
+      {
+        "label": "J. M. Lee — Introduction to Smooth Manifolds",
+        "url": "https://link.springer.com/book/10.1007/978-1-4419-9982-5",
+        "type": "book",
+        "scope": "claim"
+      }
     ]
   },
   {
@@ -323,6 +417,14 @@
     },
     "questions": [
       "Does a bridge preserve the phase-space structure or only the equations?"
+    ],
+    "references": [
+      {
+        "label": "D. McDuff and D. Salamon — Introduction to Symplectic Topology",
+        "url": "https://global.oup.com/academic/product/introduction-to-symplectic-topology-9780198794905",
+        "type": "book",
+        "scope": "claim"
+      }
     ]
   },
   {
@@ -350,6 +452,14 @@
     },
     "questions": [
       "Which algebraic statement becomes simpler after adding geometry?"
+    ],
+    "references": [
+      {
+        "label": "The Stacks Project",
+        "url": "https://stacks.math.columbia.edu/",
+        "type": "book",
+        "scope": "claim"
+      }
     ]
   },
   {
@@ -378,6 +488,14 @@
     },
     "questions": [
       "Can analytic rank information be represented as geometric or cohomological data?"
+    ],
+    "references": [
+      {
+        "label": "J. H. Silverman — The Arithmetic of Elliptic Curves",
+        "url": "https://link.springer.com/book/10.1007/978-0-387-09494-6",
+        "type": "book",
+        "scope": "claim"
+      }
     ]
   },
   {
@@ -406,6 +524,14 @@
     },
     "questions": [
       "Which arithmetic object has a spectral, geometric or probabilistic avatar?"
+    ],
+    "references": [
+      {
+        "label": "J. Neukirch — Algebraic Number Theory",
+        "url": "https://link.springer.com/book/10.1007/978-3-662-03983-0",
+        "type": "book",
+        "scope": "claim"
+      }
     ]
   },
   {
@@ -431,6 +557,14 @@
     },
     "questions": [
       "Can a number-theoretic question be moved into representation theory?"
+    ],
+    "references": [
+      {
+        "label": "D. Bump — Automorphic Forms and Representations",
+        "url": "https://doi.org/10.1017/CBO9780511609572",
+        "type": "book",
+        "scope": "claim"
+      }
     ]
   },
   {
@@ -455,6 +589,14 @@
     },
     "questions": [
       "What symmetry is invisible in the original formulation?"
+    ],
+    "references": [
+      {
+        "label": "W. Fulton and J. Harris — Representation Theory",
+        "url": "https://link.springer.com/book/10.1007/978-1-4612-0979-9",
+        "type": "book",
+        "scope": "claim"
+      }
     ]
   },
   {
@@ -480,6 +622,20 @@
     },
     "questions": [
       "Which physical heuristic has a finite, constructive or operator-algebraic version?"
+    ],
+    "references": [
+      {
+        "label": "A. Jaffe and E. Witten — Quantum Yang-Mills Theory",
+        "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
+        "type": "paper",
+        "scope": "context"
+      },
+      {
+        "label": "R. Haag — Local Quantum Physics",
+        "url": "https://link.springer.com/book/10.1007/978-3-642-61458-3",
+        "type": "book",
+        "scope": "context"
+      }
     ]
   },
   {
@@ -505,6 +661,14 @@
     },
     "questions": [
       "Can a gauge-invariant observable expose a spectral gap?"
+    ],
+    "references": [
+      {
+        "label": "A. Jaffe and E. Witten — Quantum Yang-Mills Theory",
+        "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
+        "type": "paper",
+        "scope": "claim"
+      }
     ]
   },
   {
@@ -530,6 +694,14 @@
     },
     "questions": [
       "Which geometric PDE tools transfer between relativity and other flows?"
+    ],
+    "references": [
+      {
+        "label": "R. M. Wald — General Relativity",
+        "url": "https://press.uchicago.edu/ucp/books/book/chicago/G/bo5952261.html",
+        "type": "book",
+        "scope": "claim"
+      }
     ]
   },
   {
@@ -555,6 +727,14 @@
     },
     "questions": [
       "Which lower-bound barrier is structural rather than technical?"
+    ],
+    "references": [
+      {
+        "label": "S. Arora and B. Barak — Computational Complexity: A Modern Approach",
+        "url": "https://theory.cs.princeton.edu/complexity/book.pdf",
+        "type": "book",
+        "scope": "claim"
+      }
     ]
   },
   {
@@ -579,6 +759,14 @@
     },
     "questions": [
       "Is a missing geometric space better represented by a noncommutative algebra?"
+    ],
+    "references": [
+      {
+        "label": "A. Connes — Noncommutative Geometry",
+        "url": "https://www.alainconnes.org/docs/book94bigpdf.pdf",
+        "type": "book",
+        "scope": "claim"
+      }
     ]
   },
   {
@@ -604,6 +792,14 @@
     },
     "questions": [
       "Can measure geometry reveal monotonicity or compactness missing in PDE?"
+    ],
+    "references": [
+      {
+        "label": "C. Villani — Optimal Transport: Old and New",
+        "url": "https://link.springer.com/book/10.1007/978-3-540-71050-9",
+        "type": "book",
+        "scope": "claim"
+      }
     ]
   },
   {
@@ -629,6 +825,20 @@
     },
     "questions": [
       "Which toy trace formula preserves enough structure to test RH-style analogies?"
+    ],
+    "references": [
+      {
+        "label": "D. Bump — Automorphic Forms and Representations",
+        "url": "https://doi.org/10.1017/CBO9780511609572",
+        "type": "book",
+        "scope": "claim"
+      },
+      {
+        "label": "E. Bombieri — Problems of the Millennium: The Riemann Hypothesis",
+        "url": "https://www.claymath.org/wp-content/uploads/2022/05/riemann.pdf",
+        "type": "paper",
+        "scope": "claim"
+      }
     ]
   },
   {
@@ -654,6 +864,20 @@
     },
     "questions": [
       "Can the critical obstruction be isolated as a monotone quantity or fixed point?"
+    ],
+    "references": [
+      {
+        "label": "C. Fefferman — Existence and smoothness of the Navier-Stokes equation",
+        "url": "https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf",
+        "type": "paper",
+        "scope": "context"
+      },
+      {
+        "label": "K. G. Wilson and J. Kogut — The renormalization group and the epsilon expansion",
+        "url": "https://doi.org/10.1016/0370-1573(74)90023-4",
+        "type": "paper",
+        "scope": "context"
+      }
     ]
   },
   {
@@ -679,6 +903,14 @@
     },
     "questions": [
       "Which conjectural bridge can be tested on low-dimensional varieties?"
+    ],
+    "references": [
+      {
+        "label": "P. Deligne — The Hodge Conjecture",
+        "url": "https://www.claymath.org/wp-content/uploads/2022/06/hodge.pdf",
+        "type": "paper",
+        "scope": "claim"
+      }
     ]
   },
   {
@@ -704,6 +936,14 @@
     },
     "questions": [
       "Which part of a problem becomes functorial after geometric translation?"
+    ],
+    "references": [
+      {
+        "label": "E. Frenkel — Recent advances in the Langlands program",
+        "url": "https://arxiv.org/abs/math/0303074",
+        "type": "survey",
+        "scope": "claim"
+      }
     ]
   },
   {
@@ -730,6 +970,14 @@
     },
     "questions": [
       "What part of the analogy is structural, and what part is only statistical?"
+    ],
+    "references": [
+      {
+        "label": "J. P. Keating and N. C. Snaith — Random matrix theory and zeta functions",
+        "url": "https://doi.org/10.1007/s002220000108",
+        "type": "paper",
+        "scope": "context"
+      }
     ]
   },
   {
@@ -755,6 +1003,14 @@
     },
     "questions": [
       "Can a barrier be represented as an invariant that survives reductions?"
+    ],
+    "references": [
+      {
+        "label": "K. Mulmuley and M. Sohoni — Geometric Complexity Theory I",
+        "url": "https://doi.org/10.1137/S009753970038715X",
+        "type": "paper",
+        "scope": "claim"
+      }
     ]
   },
   {
@@ -788,7 +1044,8 @@
       {
         "label": "Clay Mathematics Institute — Millennium Prize Problems",
         "url": "https://www.claymath.org/millennium-problems/",
-        "type": "official"
+        "type": "official",
+        "scope": "claim"
       }
     ]
   },
@@ -822,7 +1079,8 @@
       {
         "label": "Clay Mathematics Institute — Millennium Prize Problems",
         "url": "https://www.claymath.org/millennium-problems/",
-        "type": "official"
+        "type": "official",
+        "scope": "claim"
       }
     ]
   },
@@ -855,7 +1113,8 @@
       {
         "label": "Clay Mathematics Institute — Millennium Prize Problems",
         "url": "https://www.claymath.org/millennium-problems/",
-        "type": "official"
+        "type": "official",
+        "scope": "claim"
       }
     ]
   },
@@ -888,7 +1147,8 @@
       {
         "label": "Clay Mathematics Institute — Millennium Prize Problems",
         "url": "https://www.claymath.org/millennium-problems/",
-        "type": "official"
+        "type": "official",
+        "scope": "claim"
       }
     ]
   },
@@ -921,7 +1181,8 @@
       {
         "label": "Clay Mathematics Institute — Millennium Prize Problems",
         "url": "https://www.claymath.org/millennium-problems/",
-        "type": "official"
+        "type": "official",
+        "scope": "claim"
       }
     ]
   },
@@ -954,7 +1215,8 @@
       {
         "label": "Clay Mathematics Institute — Millennium Prize Problems",
         "url": "https://www.claymath.org/millennium-problems/",
-        "type": "official"
+        "type": "official",
+        "scope": "claim"
       }
     ]
   },
@@ -988,7 +1250,8 @@
       {
         "label": "Clay Mathematics Institute — Millennium Prize Problems",
         "url": "https://www.claymath.org/millennium-problems/",
-        "type": "official"
+        "type": "official",
+        "scope": "claim"
       }
     ]
   },
@@ -1015,6 +1278,14 @@
     },
     "questions": [
       "Which finite estimates can be proved uniformly in volume, cutoff and renormalization scale?"
+    ],
+    "references": [
+      {
+        "label": "J. Glimm and A. Jaffe — Quantum Physics: A Functional Integral Point of View",
+        "url": "https://link.springer.com/book/10.1007/978-1-4612-4728-9",
+        "type": "book",
+        "scope": "claim"
+      }
     ]
   },
   {
@@ -1040,6 +1311,20 @@
     },
     "questions": [
       "Which estimates survive iteration with constants uniform in the number of renormalization steps?"
+    ],
+    "references": [
+      {
+        "label": "J. Dimock — The Renormalization Group According to Balaban I",
+        "url": "https://arxiv.org/abs/1108.1335",
+        "type": "paper",
+        "scope": "claim"
+      },
+      {
+        "label": "K. G. Wilson and J. Kogut — The renormalization group and the epsilon expansion",
+        "url": "https://doi.org/10.1016/0370-1573(74)90023-4",
+        "type": "paper",
+        "scope": "claim"
+      }
     ]
   },
   {
@@ -1068,6 +1353,20 @@
     "questions": [
       "Can the fixed-order second Ursell term be bounded without replacing a target fiber by a global vertex mass?",
       "What exact source constants produce the residual loss kappa minus three kappa-zero minus three?"
+    ],
+    "references": [
+      {
+        "label": "J. Dimock — The Renormalization Group According to Balaban II",
+        "url": "https://arxiv.org/abs/1212.5562",
+        "type": "paper",
+        "scope": "claim"
+      },
+      {
+        "label": "J. Dimock — The Renormalization Group According to Balaban III",
+        "url": "https://arxiv.org/abs/1304.0705",
+        "type": "paper",
+        "scope": "claim"
+      }
     ]
   },
   {
@@ -1093,6 +1392,20 @@
     },
     "questions": [
       "Which concrete gauge-compatible regulator makes the weight variation small in the required polymer norm?"
+    ],
+    "references": [
+      {
+        "label": "F. A. Berezin — Introduction to Superanalysis",
+        "url": "https://link.springer.com/book/10.1007/978-94-009-1900-7",
+        "type": "book",
+        "scope": "claim"
+      },
+      {
+        "label": "J. Dimock — The Renormalization Group According to Balaban I",
+        "url": "https://arxiv.org/abs/1108.1335",
+        "type": "paper",
+        "scope": "claim"
+      }
     ]
   },
   {
@@ -1118,6 +1431,20 @@
     },
     "questions": [
       "Can derivative growth and cross-covariance tails be combined without losing the coupling power needed by the raw activity bound?"
+    ],
+    "references": [
+      {
+        "label": "J. Dimock — The Renormalization Group According to Balaban I",
+        "url": "https://arxiv.org/abs/1108.1335",
+        "type": "paper",
+        "scope": "claim"
+      },
+      {
+        "label": "J. Dimock — The Renormalization Group According to Balaban II",
+        "url": "https://arxiv.org/abs/1212.5562",
+        "type": "paper",
+        "scope": "claim"
+      }
     ]
   },
   {
@@ -1146,6 +1473,20 @@
     },
     "questions": [
       "How should the lattice spacing be tied to the renormalization trajectory rather than chosen as an arbitrary coordinate scale?"
+    ],
+    "references": [
+      {
+        "label": "J. Dimock — The Renormalization Group According to Balaban I",
+        "url": "https://arxiv.org/abs/1108.1335",
+        "type": "paper",
+        "scope": "claim"
+      },
+      {
+        "label": "K. G. Wilson and J. Kogut — The renormalization group and the epsilon expansion",
+        "url": "https://doi.org/10.1016/0370-1573(74)90023-4",
+        "type": "paper",
+        "scope": "claim"
+      }
     ]
   },
   {
@@ -1171,6 +1512,20 @@
     },
     "questions": [
       "Which gauge slice and weighted inner products make the source block Poincare estimate true uniformly in volume?"
+    ],
+    "references": [
+      {
+        "label": "J. Dimock — The Renormalization Group According to Balaban I",
+        "url": "https://arxiv.org/abs/1108.1335",
+        "type": "paper",
+        "scope": "claim"
+      },
+      {
+        "label": "J. Dimock — The Renormalization Group According to Balaban II",
+        "url": "https://arxiv.org/abs/1212.5562",
+        "type": "paper",
+        "scope": "claim"
+      }
     ]
   },
   {
@@ -1202,9 +1557,28 @@
     ],
     "references": [
       {
-        "label": "PhysMath Knowledge Tree — constructive Yang-Mills RG target",
-        "url": "https://github.com/lluiseriksson/physmath-knowledge-tree",
-        "type": "official"
+        "label": "A. Jaffe and E. Witten — Quantum Yang-Mills Theory",
+        "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
+        "type": "paper",
+        "scope": "claim"
+      },
+      {
+        "label": "J. Dimock — The Renormalization Group According to Balaban I",
+        "url": "https://arxiv.org/abs/1108.1335",
+        "type": "paper",
+        "scope": "claim"
+      },
+      {
+        "label": "J. Dimock — The Renormalization Group According to Balaban II",
+        "url": "https://arxiv.org/abs/1212.5562",
+        "type": "paper",
+        "scope": "claim"
+      },
+      {
+        "label": "J. Dimock — The Renormalization Group According to Balaban III",
+        "url": "https://arxiv.org/abs/1304.0705",
+        "type": "paper",
+        "scope": "claim"
       }
     ]
   },
@@ -1237,6 +1611,20 @@
     "questions": [
       "Which projections preserve enough target information for volume-uniform decay estimates?",
       "Can parent-dependent moment kernels improve constants beyond a uniform tree majorant?"
+    ],
+    "references": [
+      {
+        "label": "J. Dimock — The Renormalization Group According to Balaban I",
+        "url": "https://arxiv.org/abs/1108.1335",
+        "type": "paper",
+        "scope": "claim"
+      },
+      {
+        "label": "R. Kotecký and D. Preiss — Cluster expansion for abstract polymer models",
+        "url": "https://doi.org/10.1007/BF01010924",
+        "type": "paper",
+        "scope": "claim"
+      }
     ]
   },
   {
@@ -1269,6 +1657,20 @@
     "questions": [
       "Which variables were forgotten by a proposed majorant, and does its conclusion still depend on any of them?",
       "Can hidden volume dependence be detected by comparing targets with the same rooted and total masses?"
+    ],
+    "references": [
+      {
+        "label": "J. Dimock — The Renormalization Group According to Balaban II",
+        "url": "https://arxiv.org/abs/1212.5562",
+        "type": "paper",
+        "scope": "claim"
+      },
+      {
+        "label": "R. Kotecký and D. Preiss — Cluster expansion for abstract polymer models",
+        "url": "https://doi.org/10.1007/BF01010924",
+        "type": "paper",
+        "scope": "claim"
+      }
     ]
   },
   {
@@ -1306,12 +1708,20 @@
       {
         "label": "J. Dimock — The Renormalization Group According to Balaban I",
         "url": "https://arxiv.org/abs/1108.1335",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
       },
       {
         "label": "J. Dimock — The Renormalization Group According to Balaban II",
         "url": "https://arxiv.org/abs/1212.5562",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
+      },
+      {
+        "label": "R. Kotecký and D. Preiss — Cluster expansion for abstract polymer models",
+        "url": "https://doi.org/10.1007/BF01010924",
+        "type": "paper",
+        "scope": "claim"
       }
     ]
   },
@@ -1352,7 +1762,20 @@
       {
         "label": "J. Dimock — The Renormalization Group According to Balaban I",
         "url": "https://arxiv.org/abs/1108.1335",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
+      },
+      {
+        "label": "J. Dimock — The Renormalization Group According to Balaban II",
+        "url": "https://arxiv.org/abs/1212.5562",
+        "type": "paper",
+        "scope": "claim"
+      },
+      {
+        "label": "R. P. Stanley — Enumerative Combinatorics, Volume 2",
+        "url": "https://doi.org/10.1017/CBO9780511609589",
+        "type": "book",
+        "scope": "claim"
       }
     ]
   },
@@ -1391,7 +1814,8 @@
       {
         "label": "J. Dimock — The Renormalization Group According to Balaban II",
         "url": "https://arxiv.org/abs/1212.5562",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
       }
     ]
   },
@@ -1422,9 +1846,16 @@
     ],
     "references": [
       {
-        "label": "Edward Witten — Notes on Some Entanglement Properties of Quantum Field Theory",
+        "label": "E. Witten — Notes on Some Entanglement Properties of Quantum Field Theory",
         "url": "https://arxiv.org/abs/1803.04993",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
+      },
+      {
+        "label": "R. Haag — Local Quantum Physics",
+        "url": "https://link.springer.com/book/10.1007/978-3-642-61458-3",
+        "type": "book",
+        "scope": "claim"
       }
     ]
   },
@@ -1455,9 +1886,16 @@
     ],
     "references": [
       {
-        "label": "Fawzi and Renner — Quantum Conditional Mutual Information and Approximate Markov Chains",
+        "label": "M. A. Nielsen and I. L. Chuang — Quantum Computation and Quantum Information",
+        "url": "https://www.cambridge.org/highereducation/books/quantum-computation-and-quantum-information/01E10196D0A682A6AEFFEA52D53BE9AE",
+        "type": "book",
+        "scope": "claim"
+      },
+      {
+        "label": "O. Fawzi and R. Renner — Quantum conditional mutual information and approximate Markov chains",
         "url": "https://arxiv.org/abs/1410.0664",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
       }
     ]
   },
@@ -1487,9 +1925,16 @@
     ],
     "references": [
       {
-        "label": "Edward Witten — Notes on Some Entanglement Properties of Quantum Field Theory",
+        "label": "E. Witten — Notes on Some Entanglement Properties of Quantum Field Theory",
         "url": "https://arxiv.org/abs/1803.04993",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
+      },
+      {
+        "label": "R. Haag — Local Quantum Physics",
+        "url": "https://link.springer.com/book/10.1007/978-3-642-61458-3",
+        "type": "book",
+        "scope": "claim"
       }
     ]
   },
@@ -1519,6 +1964,20 @@
     },
     "questions": [
       "Which operator-algebraic hypotheses are sufficient for the same proof with infinite Kraus families or normal completely positive maps?"
+    ],
+    "references": [
+      {
+        "label": "D. Beckman et al. — Causal and localizable quantum operations",
+        "url": "https://arxiv.org/abs/quant-ph/0102043",
+        "type": "paper",
+        "scope": "claim"
+      },
+      {
+        "label": "M. A. Nielsen and I. L. Chuang — Quantum Computation and Quantum Information",
+        "url": "https://www.cambridge.org/highereducation/books/quantum-computation-and-quantum-information/01E10196D0A682A6AEFFEA52D53BE9AE",
+        "type": "book",
+        "scope": "claim"
+      }
     ]
   },
   {
@@ -1548,14 +2007,16 @@
     ],
     "references": [
       {
-        "label": "Fawzi and Renner — Quantum Conditional Mutual Information and Approximate Markov Chains",
-        "url": "https://arxiv.org/abs/1410.0664",
-        "type": "paper"
+        "label": "D. Sutter, O. Fawzi and R. Renner — Universal recovery map for approximate Markov chains",
+        "url": "https://arxiv.org/abs/1504.07251",
+        "type": "paper",
+        "scope": "claim"
       },
       {
-        "label": "Sutter, Fawzi and Renner — Universal Recovery Map for Approximate Markov Chains",
-        "url": "https://arxiv.org/abs/1504.07251",
-        "type": "paper"
+        "label": "O. Fawzi and R. Renner — Quantum conditional mutual information and approximate Markov chains",
+        "url": "https://arxiv.org/abs/1410.0664",
+        "type": "paper",
+        "scope": "claim"
       }
     ]
   },
@@ -1583,6 +2044,14 @@
     },
     "questions": [
       "Do gauge constraints, projectors or hard block constraints preserve the required sparse precision structure after restriction?"
+    ],
+    "references": [
+      {
+        "label": "S. L. Lauritzen — Graphical Models",
+        "url": "https://global.oup.com/academic/product/graphical-models-9780198522195",
+        "type": "book",
+        "scope": "claim"
+      }
     ]
   },
   {
@@ -1612,6 +2081,20 @@
     },
     "questions": [
       "Does exact tree enumeration materially enlarge the admissible activity window once all source constants are instantiated?"
+    ],
+    "references": [
+      {
+        "label": "J. Dimock — The Renormalization Group According to Balaban II",
+        "url": "https://arxiv.org/abs/1212.5562",
+        "type": "paper",
+        "scope": "claim"
+      },
+      {
+        "label": "R. P. Stanley — Enumerative Combinatorics, Volume 2",
+        "url": "https://doi.org/10.1017/CBO9780511609589",
+        "type": "book",
+        "scope": "claim"
+      }
     ]
   },
   {
@@ -1641,6 +2124,14 @@
     },
     "questions": [
       "Can a concrete RG-compatible local homotopy and exponentially decaying kernel make the boundary defect small in a polymer metric?"
+    ],
+    "references": [
+      {
+        "label": "M. Doubek, B. Jurčo and J. Pulmann — Quantum L-infinity algebras and the homological perturbation lemma",
+        "url": "https://arxiv.org/abs/1712.02696",
+        "type": "paper",
+        "scope": "claim"
+      }
     ]
   },
   {
@@ -1666,6 +2157,20 @@
     },
     "questions": [
       "Which constructive estimates exploit marginal running rather than a fictitious geometrically decaying coupling?"
+    ],
+    "references": [
+      {
+        "label": "A. Jaffe and E. Witten — Quantum Yang-Mills Theory",
+        "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
+        "type": "paper",
+        "scope": "claim"
+      },
+      {
+        "label": "K. G. Wilson and J. Kogut — The renormalization group and the epsilon expansion",
+        "url": "https://doi.org/10.1016/0370-1573(74)90023-4",
+        "type": "paper",
+        "scope": "claim"
+      }
     ]
   }
 ]

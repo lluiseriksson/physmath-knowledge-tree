@@ -5,7 +5,21 @@
     "target": "domain.category_theory",
     "relation": "uses",
     "confidence": "literature",
-    "mechanism": "Type theory and universes provide a formal substrate for categorical structures."
+    "mechanism": "Type theory and universes provide a formal substrate for categorical structures.",
+    "references": [
+      {
+        "label": "E. Riehl — Category Theory in Context",
+        "url": "https://math.jhu.edu/~eriehl/context.pdf",
+        "type": "book",
+        "scope": "claim"
+      },
+      {
+        "label": "Lean Language Reference",
+        "url": "https://lean-lang.org/doc/reference/latest/",
+        "type": "documentation",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.category.algebra",
@@ -13,7 +27,21 @@
     "target": "domain.algebra",
     "relation": "generalizes",
     "confidence": "literature",
-    "mechanism": "Universal properties and functors organize algebraic constructions."
+    "mechanism": "Universal properties and functors organize algebraic constructions.",
+    "references": [
+      {
+        "label": "E. Riehl — Category Theory in Context",
+        "url": "https://math.jhu.edu/~eriehl/context.pdf",
+        "type": "book",
+        "scope": "claim"
+      },
+      {
+        "label": "The Stacks Project",
+        "url": "https://stacks.math.columbia.edu/",
+        "type": "book",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.category.algebraic_geometry",
@@ -21,7 +49,21 @@
     "target": "domain.algebraic_geometry",
     "relation": "uses",
     "confidence": "literature",
-    "mechanism": "Schemes, sheaves and derived methods rely heavily on categorical language."
+    "mechanism": "Schemes, sheaves and derived methods rely heavily on categorical language.",
+    "references": [
+      {
+        "label": "E. Riehl — Category Theory in Context",
+        "url": "https://math.jhu.edu/~eriehl/context.pdf",
+        "type": "book",
+        "scope": "claim"
+      },
+      {
+        "label": "The Stacks Project",
+        "url": "https://stacks.math.columbia.edu/",
+        "type": "book",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.algebra.representation",
@@ -29,7 +71,15 @@
     "target": "domain.representation_theory",
     "relation": "uses",
     "confidence": "literature",
-    "mechanism": "Representations convert algebraic objects into actions on spaces."
+    "mechanism": "Representations convert algebraic objects into actions on spaces.",
+    "references": [
+      {
+        "label": "W. Fulton and J. Harris — Representation Theory",
+        "url": "https://link.springer.com/book/10.1007/978-1-4612-0979-9",
+        "type": "book",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.topology.geometry",
@@ -37,7 +87,21 @@
     "target": "domain.differential_geometry",
     "relation": "uses",
     "confidence": "literature",
-    "mechanism": "Manifold theory combines topological structure with smooth geometry."
+    "mechanism": "Manifold theory combines topological structure with smooth geometry.",
+    "references": [
+      {
+        "label": "A. Hatcher — Algebraic Topology",
+        "url": "https://pi.math.cornell.edu/~hatcher/AT/AT.pdf",
+        "type": "book",
+        "scope": "claim"
+      },
+      {
+        "label": "J. M. Lee — Introduction to Smooth Manifolds",
+        "url": "https://link.springer.com/book/10.1007/978-1-4419-9982-5",
+        "type": "book",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.analysis.functional_analysis",
@@ -45,7 +109,21 @@
     "target": "domain.functional_analysis",
     "relation": "uses",
     "confidence": "literature",
-    "mechanism": "Analytic estimates become structural in normed and inner product spaces."
+    "mechanism": "Analytic estimates become structural in normed and inner product spaces.",
+    "references": [
+      {
+        "label": "J. B. Conway — A Course in Functional Analysis",
+        "url": "https://link.springer.com/book/10.1007/978-1-4757-4383-8",
+        "type": "book",
+        "scope": "claim"
+      },
+      {
+        "label": "T. Tao — Analysis I",
+        "url": "https://terrytao.wordpress.com/books/analysis-i/",
+        "type": "book",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.functional.spectral",
@@ -53,7 +131,15 @@
     "target": "domain.spectral_theory",
     "relation": "uses",
     "confidence": "literature",
-    "mechanism": "Spectral theory studies operators on functional-analytic spaces."
+    "mechanism": "Spectral theory studies operators on functional-analytic spaces.",
+    "references": [
+      {
+        "label": "J. B. Conway — A Course in Functional Analysis",
+        "url": "https://link.springer.com/book/10.1007/978-1-4757-4383-8",
+        "type": "book",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.analysis.harmonic",
@@ -61,7 +147,15 @@
     "target": "domain.harmonic_analysis",
     "relation": "uses",
     "confidence": "literature",
-    "mechanism": "Fourier and oscillatory tools refine analytic estimates by scale and frequency."
+    "mechanism": "Fourier and oscillatory tools refine analytic estimates by scale and frequency.",
+    "references": [
+      {
+        "label": "E. M. Stein — Harmonic Analysis",
+        "url": "https://doi.org/10.1515/9781400883929",
+        "type": "book",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.harmonic.pde",
@@ -69,7 +163,21 @@
     "target": "domain.pde",
     "relation": "uses",
     "confidence": "literature",
-    "mechanism": "Frequency decompositions and singular integral estimates control PDE behavior."
+    "mechanism": "Frequency decompositions and singular integral estimates control PDE behavior.",
+    "references": [
+      {
+        "label": "E. M. Stein — Harmonic Analysis",
+        "url": "https://doi.org/10.1515/9781400883929",
+        "type": "book",
+        "scope": "claim"
+      },
+      {
+        "label": "L. C. Evans — Partial Differential Equations",
+        "url": "https://bookstore.ams.org/gsm-19-r/",
+        "type": "book",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.probability.pde",
@@ -77,7 +185,21 @@
     "target": "domain.pde",
     "relation": "bridge",
     "confidence": "literature",
-    "mechanism": "Stochastic processes model diffusion, random forcing and probabilistic representations of PDE."
+    "mechanism": "Stochastic processes model diffusion, random forcing and probabilistic representations of PDE.",
+    "references": [
+      {
+        "label": "L. C. Evans — Partial Differential Equations",
+        "url": "https://bookstore.ams.org/gsm-19-r/",
+        "type": "book",
+        "scope": "claim"
+      },
+      {
+        "label": "O. Kallenberg — Foundations of Modern Probability",
+        "url": "https://link.springer.com/book/10.1007/978-3-030-61871-1",
+        "type": "book",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.optimal_transport.pde",
@@ -85,7 +207,15 @@
     "target": "domain.pde",
     "relation": "bridge",
     "confidence": "literature",
-    "mechanism": "Measure geometry and gradient-flow viewpoints provide monotonicity and compactness tools."
+    "mechanism": "Measure geometry and gradient-flow viewpoints provide monotonicity and compactness tools.",
+    "references": [
+      {
+        "label": "C. Villani — Optimal Transport: Old and New",
+        "url": "https://link.springer.com/book/10.1007/978-3-540-71050-9",
+        "type": "book",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.geometry.gauge",
@@ -93,7 +223,21 @@
     "target": "domain.gauge_theory",
     "relation": "uses",
     "confidence": "literature",
-    "mechanism": "Gauge theory uses bundles, connections and curvature."
+    "mechanism": "Gauge theory uses bundles, connections and curvature.",
+    "references": [
+      {
+        "label": "A. Jaffe and E. Witten — Quantum Yang-Mills Theory",
+        "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
+        "type": "paper",
+        "scope": "claim"
+      },
+      {
+        "label": "J. M. Lee — Introduction to Smooth Manifolds",
+        "url": "https://link.springer.com/book/10.1007/978-1-4419-9982-5",
+        "type": "book",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.symplectic.qft",
@@ -101,7 +245,21 @@
     "target": "domain.quantum_field_theory",
     "relation": "suggests",
     "confidence": "heuristic",
-    "mechanism": "Classical phase spaces and quantization heuristics feed field-theoretic models."
+    "mechanism": "Classical phase spaces and quantization heuristics feed field-theoretic models.",
+    "references": [
+      {
+        "label": "D. McDuff and D. Salamon — Introduction to Symplectic Topology",
+        "url": "https://global.oup.com/academic/product/introduction-to-symplectic-topology-9780198794905",
+        "type": "book",
+        "scope": "context"
+      },
+      {
+        "label": "R. Haag — Local Quantum Physics",
+        "url": "https://link.springer.com/book/10.1007/978-3-642-61458-3",
+        "type": "book",
+        "scope": "context"
+      }
+    ]
   },
   {
     "id": "edge.gauge.qft",
@@ -109,7 +267,21 @@
     "target": "domain.quantum_field_theory",
     "relation": "uses",
     "confidence": "literature",
-    "mechanism": "Gauge fields form central examples of quantum field theories."
+    "mechanism": "Gauge fields form central examples of quantum field theories.",
+    "references": [
+      {
+        "label": "A. Jaffe and E. Witten — Quantum Yang-Mills Theory",
+        "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
+        "type": "paper",
+        "scope": "claim"
+      },
+      {
+        "label": "R. Haag — Local Quantum Physics",
+        "url": "https://link.springer.com/book/10.1007/978-3-642-61458-3",
+        "type": "book",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.geometry.relativity",
@@ -117,7 +289,21 @@
     "target": "domain.general_relativity",
     "relation": "uses",
     "confidence": "literature",
-    "mechanism": "General relativity is formulated through Lorentzian geometry and curvature."
+    "mechanism": "General relativity is formulated through Lorentzian geometry and curvature.",
+    "references": [
+      {
+        "label": "J. M. Lee — Introduction to Smooth Manifolds",
+        "url": "https://link.springer.com/book/10.1007/978-1-4419-9982-5",
+        "type": "book",
+        "scope": "claim"
+      },
+      {
+        "label": "R. M. Wald — General Relativity",
+        "url": "https://press.uchicago.edu/ucp/books/book/chicago/G/bo5952261.html",
+        "type": "book",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.algebraic.arithmetic",
@@ -125,7 +311,21 @@
     "target": "domain.arithmetic_geometry",
     "relation": "uses",
     "confidence": "literature",
-    "mechanism": "Arithmetic geometry studies algebraic geometry over arithmetic bases."
+    "mechanism": "Arithmetic geometry studies algebraic geometry over arithmetic bases.",
+    "references": [
+      {
+        "label": "J. H. Silverman — The Arithmetic of Elliptic Curves",
+        "url": "https://link.springer.com/book/10.1007/978-0-387-09494-6",
+        "type": "book",
+        "scope": "claim"
+      },
+      {
+        "label": "The Stacks Project",
+        "url": "https://stacks.math.columbia.edu/",
+        "type": "book",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.number.arithmetic",
@@ -133,7 +333,21 @@
     "target": "domain.arithmetic_geometry",
     "relation": "bridge",
     "confidence": "literature",
-    "mechanism": "Arithmetic objects can be encoded geometrically through schemes, curves and Galois data."
+    "mechanism": "Arithmetic objects can be encoded geometrically through schemes, curves and Galois data.",
+    "references": [
+      {
+        "label": "J. H. Silverman — The Arithmetic of Elliptic Curves",
+        "url": "https://link.springer.com/book/10.1007/978-0-387-09494-6",
+        "type": "book",
+        "scope": "claim"
+      },
+      {
+        "label": "J. Neukirch — Algebraic Number Theory",
+        "url": "https://link.springer.com/book/10.1007/978-3-662-03983-0",
+        "type": "book",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.representation.automorphic",
@@ -141,7 +355,21 @@
     "target": "domain.automorphic_forms",
     "relation": "uses",
     "confidence": "literature",
-    "mechanism": "Automorphic forms can be studied through representations of adelic or Lie groups."
+    "mechanism": "Automorphic forms can be studied through representations of adelic or Lie groups.",
+    "references": [
+      {
+        "label": "D. Bump — Automorphic Forms and Representations",
+        "url": "https://doi.org/10.1017/CBO9780511609572",
+        "type": "book",
+        "scope": "claim"
+      },
+      {
+        "label": "W. Fulton and J. Harris — Representation Theory",
+        "url": "https://link.springer.com/book/10.1007/978-1-4612-0979-9",
+        "type": "book",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.automorphic.number",
@@ -149,7 +377,21 @@
     "target": "domain.number_theory",
     "relation": "bridge",
     "confidence": "literature",
-    "mechanism": "Automorphic forms connect symmetries and L-functions to arithmetic problems."
+    "mechanism": "Automorphic forms connect symmetries and L-functions to arithmetic problems.",
+    "references": [
+      {
+        "label": "D. Bump — Automorphic Forms and Representations",
+        "url": "https://doi.org/10.1017/CBO9780511609572",
+        "type": "book",
+        "scope": "claim"
+      },
+      {
+        "label": "J. Neukirch — Algebraic Number Theory",
+        "url": "https://link.springer.com/book/10.1007/978-3-662-03983-0",
+        "type": "book",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.spectral.riemann",
@@ -157,7 +399,15 @@
     "target": "problem.riemann_hypothesis",
     "relation": "suggests",
     "confidence": "heuristic",
-    "mechanism": "Hilbert-Polya style programs seek zeros as spectral data of a self-adjoint operator."
+    "mechanism": "Hilbert-Polya style programs seek zeros as spectral data of a self-adjoint operator.",
+    "references": [
+      {
+        "label": "E. Bombieri — Problems of the Millennium: The Riemann Hypothesis",
+        "url": "https://www.claymath.org/wp-content/uploads/2022/05/riemann.pdf",
+        "type": "paper",
+        "scope": "context"
+      }
+    ]
   },
   {
     "id": "edge.number.riemann",
@@ -168,14 +418,16 @@
     "mechanism": "The problem is about the zeta function and prime distribution.",
     "references": [
       {
-        "label": "Clay Mathematics Institute - Riemann Hypothesis",
+        "label": "Clay Mathematics Institute — Riemann Hypothesis",
         "url": "https://www.claymath.org/millennium/riemann-hypothesis/",
-        "type": "official"
+        "type": "official",
+        "scope": "claim"
       },
       {
-        "label": "E. Bombieri - Problems of the Millennium: The Riemann Hypothesis",
+        "label": "E. Bombieri — Problems of the Millennium: The Riemann Hypothesis",
         "url": "https://www.claymath.org/wp-content/uploads/2022/05/riemann.pdf",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
       }
     ]
   },
@@ -188,9 +440,10 @@
     "mechanism": "Automorphic L-functions generalize zeta-like analytic structures.",
     "references": [
       {
-        "label": "E. Bombieri - Problems of the Millennium: The Riemann Hypothesis",
+        "label": "E. Bombieri — Problems of the Millennium: The Riemann Hypothesis",
         "url": "https://www.claymath.org/wp-content/uploads/2022/05/riemann.pdf",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
       }
     ]
   },
@@ -200,7 +453,15 @@
     "target": "problem.riemann_hypothesis",
     "relation": "suggests",
     "confidence": "heuristic",
-    "mechanism": "Noncommutative spaces may encode missing geometry behind prime spectra."
+    "mechanism": "Noncommutative spaces may encode missing geometry behind prime spectra.",
+    "references": [
+      {
+        "label": "A. Connes — Trace formula in noncommutative geometry and the zeros of the Riemann zeta function",
+        "url": "https://arxiv.org/abs/math/9811068",
+        "type": "paper",
+        "scope": "context"
+      }
+    ]
   },
   {
     "id": "edge.random_matrix.riemann",
@@ -208,7 +469,15 @@
     "target": "problem.riemann_hypothesis",
     "relation": "suggests",
     "confidence": "heuristic",
-    "mechanism": "Zero statistics resemble eigenvalue statistics in random matrix ensembles."
+    "mechanism": "Zero statistics resemble eigenvalue statistics in random matrix ensembles.",
+    "references": [
+      {
+        "label": "J. P. Keating and N. C. Snaith — Random matrix theory and zeta functions",
+        "url": "https://doi.org/10.1007/s002220000108",
+        "type": "paper",
+        "scope": "context"
+      }
+    ]
   },
   {
     "id": "edge.trace.riemann",
@@ -219,9 +488,10 @@
     "mechanism": "Explicit formulas resemble trace identities relating primes and zeros.",
     "references": [
       {
-        "label": "E. Bombieri - Problems of the Millennium: The Riemann Hypothesis",
+        "label": "E. Bombieri — Problems of the Millennium: The Riemann Hypothesis",
         "url": "https://www.claymath.org/wp-content/uploads/2022/05/riemann.pdf",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
       }
     ]
   },
@@ -234,14 +504,16 @@
     "mechanism": "Navier-Stokes is a central nonlinear PDE regularity problem.",
     "references": [
       {
-        "label": "Clay Mathematics Institute - Navier-Stokes Equation",
-        "url": "https://www.claymath.org/millennium/navier-stokes-equation/",
-        "type": "official"
+        "label": "C. Fefferman — Existence and smoothness of the Navier-Stokes equation",
+        "url": "https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf",
+        "type": "paper",
+        "scope": "claim"
       },
       {
-        "label": "C. Fefferman - Existence and smoothness of the Navier-Stokes equation",
-        "url": "https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf",
-        "type": "paper"
+        "label": "Clay Mathematics Institute — Navier-Stokes Equation",
+        "url": "https://www.claymath.org/millennium/navier-stokes-equation/",
+        "type": "official",
+        "scope": "claim"
       }
     ]
   },
@@ -254,9 +526,10 @@
     "mechanism": "Critical spaces and frequency interactions are central in regularity analysis.",
     "references": [
       {
-        "label": "C. Fefferman - Existence and smoothness of the Navier-Stokes equation",
+        "label": "C. Fefferman — Existence and smoothness of the Navier-Stokes equation",
         "url": "https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
       }
     ]
   },
@@ -266,7 +539,21 @@
     "target": "problem.navier_stokes",
     "relation": "suggests",
     "confidence": "heuristic",
-    "mechanism": "Energy cascade and critical scaling can be studied with renormalization-like language."
+    "mechanism": "Energy cascade and critical scaling can be studied with renormalization-like language.",
+    "references": [
+      {
+        "label": "C. Fefferman — Existence and smoothness of the Navier-Stokes equation",
+        "url": "https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf",
+        "type": "paper",
+        "scope": "context"
+      },
+      {
+        "label": "K. G. Wilson and J. Kogut — The renormalization group and the epsilon expansion",
+        "url": "https://doi.org/10.1016/0370-1573(74)90023-4",
+        "type": "paper",
+        "scope": "context"
+      }
+    ]
   },
   {
     "id": "edge.probability.navier",
@@ -274,7 +561,21 @@
     "target": "problem.navier_stokes",
     "relation": "suggests",
     "confidence": "heuristic",
-    "mechanism": "Stochastic analogues may expose typical cascade behavior or regularization effects."
+    "mechanism": "Stochastic analogues may expose typical cascade behavior or regularization effects.",
+    "references": [
+      {
+        "label": "C. Fefferman — Existence and smoothness of the Navier-Stokes equation",
+        "url": "https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf",
+        "type": "paper",
+        "scope": "context"
+      },
+      {
+        "label": "O. Kallenberg — Foundations of Modern Probability",
+        "url": "https://link.springer.com/book/10.1007/978-3-030-61871-1",
+        "type": "book",
+        "scope": "context"
+      }
+    ]
   },
   {
     "id": "edge.gauge.yang_mills",
@@ -285,14 +586,16 @@
     "mechanism": "The problem is formulated for quantum Yang-Mills fields.",
     "references": [
       {
-        "label": "Clay Mathematics Institute - Yang-Mills and the Mass Gap",
-        "url": "https://www.claymath.org/millennium/yang-mills-the-maths-gap/",
-        "type": "official"
+        "label": "A. Jaffe and E. Witten — Quantum Yang-Mills Theory",
+        "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
+        "type": "paper",
+        "scope": "claim"
       },
       {
-        "label": "A. Jaffe and E. Witten - Quantum Yang-Mills Theory",
-        "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
-        "type": "paper"
+        "label": "Clay Mathematics Institute — Yang-Mills and the Mass Gap",
+        "url": "https://www.claymath.org/millennium/yang-mills-the-maths-gap/",
+        "type": "official",
+        "scope": "claim"
       }
     ]
   },
@@ -305,14 +608,16 @@
     "mechanism": "Existence and mass gap are constructive quantum field theory questions.",
     "references": [
       {
-        "label": "Clay Mathematics Institute - Yang-Mills and the Mass Gap",
-        "url": "https://www.claymath.org/millennium/yang-mills-the-maths-gap/",
-        "type": "official"
+        "label": "A. Jaffe and E. Witten — Quantum Yang-Mills Theory",
+        "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
+        "type": "paper",
+        "scope": "claim"
       },
       {
-        "label": "A. Jaffe and E. Witten - Quantum Yang-Mills Theory",
-        "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
-        "type": "paper"
+        "label": "Clay Mathematics Institute — Yang-Mills and the Mass Gap",
+        "url": "https://www.claymath.org/millennium/yang-mills-the-maths-gap/",
+        "type": "official",
+        "scope": "claim"
       }
     ]
   },
@@ -325,9 +630,10 @@
     "mechanism": "Compact gauge groups and their representations structure observable sectors.",
     "references": [
       {
-        "label": "A. Jaffe and E. Witten - Quantum Yang-Mills Theory",
+        "label": "A. Jaffe and E. Witten — Quantum Yang-Mills Theory",
         "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
       }
     ]
   },
@@ -340,9 +646,10 @@
     "mechanism": "A mass gap can be viewed as a spectral gap above the vacuum.",
     "references": [
       {
-        "label": "A. Jaffe and E. Witten - Quantum Yang-Mills Theory",
+        "label": "A. Jaffe and E. Witten — Quantum Yang-Mills Theory",
         "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
       }
     ]
   },
@@ -355,14 +662,16 @@
     "mechanism": "The conjecture concerns algebraic cycles on smooth projective varieties.",
     "references": [
       {
-        "label": "Clay Mathematics Institute - Hodge Conjecture",
+        "label": "Clay Mathematics Institute — Hodge Conjecture",
         "url": "https://www.claymath.org/millennium/hodge-conjecture/",
-        "type": "official"
+        "type": "official",
+        "scope": "claim"
       },
       {
-        "label": "P. Deligne - The Hodge Conjecture",
+        "label": "P. Deligne — The Hodge Conjecture",
         "url": "https://www.claymath.org/wp-content/uploads/2022/06/hodge.pdf",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
       }
     ]
   },
@@ -375,14 +684,16 @@
     "mechanism": "Cohomology classes provide the topological side of the conjecture.",
     "references": [
       {
-        "label": "Clay Mathematics Institute - Hodge Conjecture",
+        "label": "Clay Mathematics Institute — Hodge Conjecture",
         "url": "https://www.claymath.org/millennium/hodge-conjecture/",
-        "type": "official"
+        "type": "official",
+        "scope": "claim"
       },
       {
-        "label": "P. Deligne - The Hodge Conjecture",
+        "label": "P. Deligne — The Hodge Conjecture",
         "url": "https://www.claymath.org/wp-content/uploads/2022/06/hodge.pdf",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
       }
     ]
   },
@@ -395,9 +706,10 @@
     "mechanism": "Motivic and period viewpoints organize cycles and cohomology comparisons.",
     "references": [
       {
-        "label": "P. Deligne - The Hodge Conjecture",
+        "label": "P. Deligne — The Hodge Conjecture",
         "url": "https://www.claymath.org/wp-content/uploads/2022/06/hodge.pdf",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
       }
     ]
   },
@@ -410,14 +722,16 @@
     "mechanism": "Elliptic curves and their rational points are arithmetic-geometric objects.",
     "references": [
       {
-        "label": "Clay Mathematics Institute - Birch and Swinnerton-Dyer Conjecture",
-        "url": "https://www.claymath.org/millennium/birch-and-swinnerton-dyer-conjecture/",
-        "type": "official"
+        "label": "A. Wiles — The Birch and Swinnerton-Dyer Conjecture",
+        "url": "https://www.claymath.org/wp-content/uploads/2022/05/birchswin.pdf",
+        "type": "paper",
+        "scope": "claim"
       },
       {
-        "label": "A. Wiles - The Birch and Swinnerton-Dyer Conjecture",
-        "url": "https://www.claymath.org/wp-content/uploads/2022/05/birchswin.pdf",
-        "type": "paper"
+        "label": "Clay Mathematics Institute — Birch and Swinnerton-Dyer Conjecture",
+        "url": "https://www.claymath.org/millennium/birch-and-swinnerton-dyer-conjecture/",
+        "type": "official",
+        "scope": "claim"
       }
     ]
   },
@@ -430,9 +744,10 @@
     "mechanism": "Modularity and L-functions connect elliptic curves to automorphic data.",
     "references": [
       {
-        "label": "A. Wiles - The Birch and Swinnerton-Dyer Conjecture",
+        "label": "A. Wiles — The Birch and Swinnerton-Dyer Conjecture",
         "url": "https://www.claymath.org/wp-content/uploads/2022/05/birchswin.pdf",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
       }
     ]
   },
@@ -445,14 +760,16 @@
     "mechanism": "The conjecture links rational points and analytic behavior of L-functions.",
     "references": [
       {
-        "label": "Clay Mathematics Institute - Birch and Swinnerton-Dyer Conjecture",
-        "url": "https://www.claymath.org/millennium/birch-and-swinnerton-dyer-conjecture/",
-        "type": "official"
+        "label": "A. Wiles — The Birch and Swinnerton-Dyer Conjecture",
+        "url": "https://www.claymath.org/wp-content/uploads/2022/05/birchswin.pdf",
+        "type": "paper",
+        "scope": "claim"
       },
       {
-        "label": "A. Wiles - The Birch and Swinnerton-Dyer Conjecture",
-        "url": "https://www.claymath.org/wp-content/uploads/2022/05/birchswin.pdf",
-        "type": "paper"
+        "label": "Clay Mathematics Institute — Birch and Swinnerton-Dyer Conjecture",
+        "url": "https://www.claymath.org/millennium/birch-and-swinnerton-dyer-conjecture/",
+        "type": "official",
+        "scope": "claim"
       }
     ]
   },
@@ -465,9 +782,10 @@
     "mechanism": "P vs NP is a foundational problem in computational complexity.",
     "references": [
       {
-        "label": "Clay Mathematics Institute - P vs NP",
+        "label": "Clay Mathematics Institute — P vs NP",
         "url": "https://www.claymath.org/millennium/p-vs-np/",
-        "type": "official"
+        "type": "official",
+        "scope": "claim"
       }
     ]
   },
@@ -480,9 +798,10 @@
     "mechanism": "Lower-bound barriers can be investigated with proof systems and geometric invariants.",
     "references": [
       {
-        "label": "Clay Mathematics Institute - P vs NP",
+        "label": "Clay Mathematics Institute — P vs NP",
         "url": "https://www.claymath.org/millennium/p-vs-np/",
-        "type": "official"
+        "type": "official",
+        "scope": "claim"
       }
     ]
   },
@@ -493,7 +812,21 @@
     "relation": "suggests",
     "confidence": "speculative",
     "mechanism": "Resource-sensitive categorical semantics may reveal invariant structure in reductions.",
-    "notes": "Falsifier: if the categorical encoding preserves no lower-bound relevant information, demote this edge."
+    "notes": "Falsifier: if the categorical encoding preserves no lower-bound relevant information, demote this edge.",
+    "references": [
+      {
+        "label": "J. Baez and M. Stay — Physics, topology, logic and computation: a Rosetta Stone",
+        "url": "https://arxiv.org/abs/0903.0340",
+        "type": "survey",
+        "scope": "context"
+      },
+      {
+        "label": "S. Arora and B. Barak — Computational Complexity: A Modern Approach",
+        "url": "https://theory.cs.princeton.edu/complexity/book.pdf",
+        "type": "book",
+        "scope": "context"
+      }
+    ]
   },
   {
     "id": "edge.topology.poincare",
@@ -504,9 +837,10 @@
     "mechanism": "The statement is topological.",
     "references": [
       {
-        "label": "Clay Mathematics Institute - Poincare Conjecture",
+        "label": "Clay Mathematics Institute — Poincare Conjecture",
         "url": "https://www.claymath.org/millennium/poincare-conjecture/",
-        "type": "official"
+        "type": "official",
+        "scope": "claim"
       }
     ]
   },
@@ -519,14 +853,16 @@
     "mechanism": "Ricci flow and geometric analysis supplied the decisive solved route.",
     "references": [
       {
-        "label": "G. Perelman - The entropy formula for the Ricci flow and its geometric applications",
-        "url": "https://arxiv.org/abs/math/0211159",
-        "type": "paper"
+        "label": "G. Perelman — Ricci flow with surgery on three-manifolds",
+        "url": "https://arxiv.org/abs/math/0303109",
+        "type": "paper",
+        "scope": "claim"
       },
       {
-        "label": "G. Perelman - Ricci flow with surgery on three-manifolds",
-        "url": "https://arxiv.org/abs/math/0303109",
-        "type": "paper"
+        "label": "G. Perelman — The entropy formula for the Ricci flow and its geometric applications",
+        "url": "https://arxiv.org/abs/math/0211159",
+        "type": "paper",
+        "scope": "claim"
       }
     ]
   },
@@ -536,7 +872,21 @@
     "target": "problem.navier_stokes",
     "relation": "tests",
     "confidence": "heuristic",
-    "mechanism": "Solved flow-based geometry is a calibration case for nonlinear evolution problems."
+    "mechanism": "Solved flow-based geometry is a calibration case for nonlinear evolution problems.",
+    "references": [
+      {
+        "label": "C. Fefferman — Existence and smoothness of the Navier-Stokes equation",
+        "url": "https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf",
+        "type": "paper",
+        "scope": "context"
+      },
+      {
+        "label": "G. Perelman — The entropy formula for the Ricci flow and its geometric applications",
+        "url": "https://arxiv.org/abs/math/0211159",
+        "type": "paper",
+        "scope": "context"
+      }
+    ]
   },
   {
     "id": "edge.langlands.automorphic",
@@ -544,7 +894,21 @@
     "target": "domain.automorphic_forms",
     "relation": "bridge",
     "confidence": "literature",
-    "mechanism": "Geometric Langlands links representation-theoretic and geometric data."
+    "mechanism": "Geometric Langlands links representation-theoretic and geometric data.",
+    "references": [
+      {
+        "label": "D. Bump — Automorphic Forms and Representations",
+        "url": "https://doi.org/10.1017/CBO9780511609572",
+        "type": "book",
+        "scope": "claim"
+      },
+      {
+        "label": "E. Frenkel — Recent advances in the Langlands program",
+        "url": "https://arxiv.org/abs/math/0303074",
+        "type": "survey",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.langlands.hodge",
@@ -552,7 +916,21 @@
     "target": "problem.hodge_conjecture",
     "relation": "suggests",
     "confidence": "heuristic",
-    "mechanism": "Categorical geometric transfer may illuminate cycle and cohomology organization."
+    "mechanism": "Categorical geometric transfer may illuminate cycle and cohomology organization.",
+    "references": [
+      {
+        "label": "E. Frenkel — Recent advances in the Langlands program",
+        "url": "https://arxiv.org/abs/math/0303074",
+        "type": "survey",
+        "scope": "context"
+      },
+      {
+        "label": "P. Deligne — The Hodge Conjecture",
+        "url": "https://www.claymath.org/wp-content/uploads/2022/06/hodge.pdf",
+        "type": "paper",
+        "scope": "context"
+      }
+    ]
   },
   {
     "id": "edge.ncg.qft",
@@ -560,7 +938,21 @@
     "target": "domain.quantum_field_theory",
     "relation": "bridge",
     "confidence": "literature",
-    "mechanism": "Operator-algebraic and noncommutative spaces encode quantum observables."
+    "mechanism": "Operator-algebraic and noncommutative spaces encode quantum observables.",
+    "references": [
+      {
+        "label": "A. Connes — Noncommutative Geometry",
+        "url": "https://www.alainconnes.org/docs/book94bigpdf.pdf",
+        "type": "book",
+        "scope": "claim"
+      },
+      {
+        "label": "R. Haag — Local Quantum Physics",
+        "url": "https://link.springer.com/book/10.1007/978-3-642-61458-3",
+        "type": "book",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.spectral.trace_bridge",
@@ -568,7 +960,15 @@
     "target": "bridge.trace_formula_spectral_arithmetic",
     "relation": "transfers_via",
     "confidence": "literature",
-    "mechanism": "Spectral traces form one side of trace-formula identities."
+    "mechanism": "Spectral traces form one side of trace-formula identities.",
+    "references": [
+      {
+        "label": "D. Bump — Automorphic Forms and Representations",
+        "url": "https://doi.org/10.1017/CBO9780511609572",
+        "type": "book",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.automorphic.trace_bridge",
@@ -576,7 +976,15 @@
     "target": "bridge.trace_formula_spectral_arithmetic",
     "relation": "transfers_via",
     "confidence": "literature",
-    "mechanism": "Automorphic representations supply trace-formula settings."
+    "mechanism": "Automorphic representations supply trace-formula settings.",
+    "references": [
+      {
+        "label": "D. Bump — Automorphic Forms and Representations",
+        "url": "https://doi.org/10.1017/CBO9780511609572",
+        "type": "book",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.number.trace_bridge",
@@ -584,7 +992,21 @@
     "target": "bridge.trace_formula_spectral_arithmetic",
     "relation": "transfers_via",
     "confidence": "literature",
-    "mechanism": "Arithmetic counting data is compared with spectral data through explicit and trace formulas."
+    "mechanism": "Arithmetic counting data is compared with spectral data through explicit and trace formulas.",
+    "references": [
+      {
+        "label": "D. Bump — Automorphic Forms and Representations",
+        "url": "https://doi.org/10.1017/CBO9780511609572",
+        "type": "book",
+        "scope": "claim"
+      },
+      {
+        "label": "E. Bombieri — Problems of the Millennium: The Riemann Hypothesis",
+        "url": "https://www.claymath.org/wp-content/uploads/2022/05/riemann.pdf",
+        "type": "paper",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.pde.renormalization_bridge",
@@ -592,7 +1014,21 @@
     "target": "bridge.renormalization_scaling_pde",
     "relation": "transfers_via",
     "confidence": "literature",
-    "mechanism": "Critical PDE expose scale invariance and energy transfer across scales."
+    "mechanism": "Critical PDE expose scale invariance and energy transfer across scales.",
+    "references": [
+      {
+        "label": "K. G. Wilson and J. Kogut — The renormalization group and the epsilon expansion",
+        "url": "https://doi.org/10.1016/0370-1573(74)90023-4",
+        "type": "paper",
+        "scope": "claim"
+      },
+      {
+        "label": "L. C. Evans — Partial Differential Equations",
+        "url": "https://bookstore.ams.org/gsm-19-r/",
+        "type": "book",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.qft.renormalization_bridge",
@@ -600,7 +1036,21 @@
     "target": "bridge.renormalization_scaling_pde",
     "relation": "transfers_via",
     "confidence": "heuristic",
-    "mechanism": "Renormalization language motivates scale-flow analogies for PDE."
+    "mechanism": "Renormalization language motivates scale-flow analogies for PDE.",
+    "references": [
+      {
+        "label": "K. G. Wilson and J. Kogut — The renormalization group and the epsilon expansion",
+        "url": "https://doi.org/10.1016/0370-1573(74)90023-4",
+        "type": "paper",
+        "scope": "context"
+      },
+      {
+        "label": "R. Haag — Local Quantum Physics",
+        "url": "https://link.springer.com/book/10.1007/978-3-642-61458-3",
+        "type": "book",
+        "scope": "context"
+      }
+    ]
   },
   {
     "id": "edge.algebraic.motives_bridge",
@@ -608,7 +1058,21 @@
     "target": "bridge.motives_periods_hodge",
     "relation": "transfers_via",
     "confidence": "literature",
-    "mechanism": "Algebraic cycles and cohomology are core inputs to motivic and Hodge comparisons."
+    "mechanism": "Algebraic cycles and cohomology are core inputs to motivic and Hodge comparisons.",
+    "references": [
+      {
+        "label": "P. Deligne — The Hodge Conjecture",
+        "url": "https://www.claymath.org/wp-content/uploads/2022/06/hodge.pdf",
+        "type": "paper",
+        "scope": "claim"
+      },
+      {
+        "label": "The Stacks Project",
+        "url": "https://stacks.math.columbia.edu/",
+        "type": "book",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.arithmetic.motives_bridge",
@@ -616,7 +1080,21 @@
     "target": "bridge.motives_periods_hodge",
     "relation": "transfers_via",
     "confidence": "literature",
-    "mechanism": "Arithmetic geometry supplies period and Galois shadows for motivic comparisons."
+    "mechanism": "Arithmetic geometry supplies period and Galois shadows for motivic comparisons.",
+    "references": [
+      {
+        "label": "J. H. Silverman — The Arithmetic of Elliptic Curves",
+        "url": "https://link.springer.com/book/10.1007/978-0-387-09494-6",
+        "type": "book",
+        "scope": "claim"
+      },
+      {
+        "label": "P. Deligne — The Hodge Conjecture",
+        "url": "https://www.claymath.org/wp-content/uploads/2022/06/hodge.pdf",
+        "type": "paper",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.representation.langlands_bridge",
@@ -624,7 +1102,21 @@
     "target": "bridge.geometric_langlands_transfer",
     "relation": "transfers_via",
     "confidence": "literature",
-    "mechanism": "Representation-theoretic data is one side of Langlands-style transfer."
+    "mechanism": "Representation-theoretic data is one side of Langlands-style transfer.",
+    "references": [
+      {
+        "label": "E. Frenkel — Recent advances in the Langlands program",
+        "url": "https://arxiv.org/abs/math/0303074",
+        "type": "survey",
+        "scope": "claim"
+      },
+      {
+        "label": "W. Fulton and J. Harris — Representation Theory",
+        "url": "https://link.springer.com/book/10.1007/978-1-4612-0979-9",
+        "type": "book",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.algebraic.langlands_bridge",
@@ -632,7 +1124,21 @@
     "target": "bridge.geometric_langlands_transfer",
     "relation": "transfers_via",
     "confidence": "literature",
-    "mechanism": "Geometric objects and sheaf-like categories provide the geometric side of the transfer."
+    "mechanism": "Geometric objects and sheaf-like categories provide the geometric side of the transfer.",
+    "references": [
+      {
+        "label": "E. Frenkel — Recent advances in the Langlands program",
+        "url": "https://arxiv.org/abs/math/0303074",
+        "type": "survey",
+        "scope": "claim"
+      },
+      {
+        "label": "The Stacks Project",
+        "url": "https://stacks.math.columbia.edu/",
+        "type": "book",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.probability.random_matrix_bridge",
@@ -640,7 +1146,21 @@
     "target": "bridge.random_matrix_zeta_spectra",
     "relation": "transfers_via",
     "confidence": "literature",
-    "mechanism": "Random matrix ensembles provide probabilistic eigenvalue statistics."
+    "mechanism": "Random matrix ensembles provide probabilistic eigenvalue statistics.",
+    "references": [
+      {
+        "label": "J. P. Keating and N. C. Snaith — Random matrix theory and zeta functions",
+        "url": "https://doi.org/10.1007/s002220000108",
+        "type": "paper",
+        "scope": "claim"
+      },
+      {
+        "label": "O. Kallenberg — Foundations of Modern Probability",
+        "url": "https://link.springer.com/book/10.1007/978-3-030-61871-1",
+        "type": "book",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.spectral.random_matrix_bridge",
@@ -648,7 +1168,15 @@
     "target": "bridge.random_matrix_zeta_spectra",
     "relation": "transfers_via",
     "confidence": "literature",
-    "mechanism": "Spectral statistics provide the comparison language for random matrices and zeta zeros."
+    "mechanism": "Spectral statistics provide the comparison language for random matrices and zeta zeros.",
+    "references": [
+      {
+        "label": "J. P. Keating and N. C. Snaith — Random matrix theory and zeta functions",
+        "url": "https://doi.org/10.1007/s002220000108",
+        "type": "paper",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.complexity.proof_geometry_bridge",
@@ -656,7 +1184,21 @@
     "target": "bridge.proof_complexity_geometry",
     "relation": "transfers_via",
     "confidence": "literature",
-    "mechanism": "Proof systems and circuit lower bounds supply the computational side of the bridge."
+    "mechanism": "Proof systems and circuit lower bounds supply the computational side of the bridge.",
+    "references": [
+      {
+        "label": "K. Mulmuley and M. Sohoni — Geometric Complexity Theory I",
+        "url": "https://doi.org/10.1137/S009753970038715X",
+        "type": "paper",
+        "scope": "claim"
+      },
+      {
+        "label": "S. Arora and B. Barak — Computational Complexity: A Modern Approach",
+        "url": "https://theory.cs.princeton.edu/complexity/book.pdf",
+        "type": "book",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.algebraic.proof_geometry_bridge",
@@ -664,7 +1206,21 @@
     "target": "bridge.proof_complexity_geometry",
     "relation": "suggests",
     "confidence": "heuristic",
-    "mechanism": "Algebraic and geometric invariants can encode selected proof-complexity obstructions."
+    "mechanism": "Algebraic and geometric invariants can encode selected proof-complexity obstructions.",
+    "references": [
+      {
+        "label": "K. Mulmuley and M. Sohoni — Geometric Complexity Theory I",
+        "url": "https://doi.org/10.1137/S009753970038715X",
+        "type": "paper",
+        "scope": "context"
+      },
+      {
+        "label": "The Stacks Project",
+        "url": "https://stacks.math.columbia.edu/",
+        "type": "book",
+        "scope": "context"
+      }
+    ]
   },
   {
     "id": "edge.qft.constructive_qft",
@@ -672,7 +1228,21 @@
     "target": "domain.constructive_quantum_field_theory",
     "relation": "specializes",
     "confidence": "literature",
-    "mechanism": "Constructive QFT restricts quantum field theory to models built and controlled by explicit analytic and probabilistic estimates."
+    "mechanism": "Constructive QFT restricts quantum field theory to models built and controlled by explicit analytic and probabilistic estimates.",
+    "references": [
+      {
+        "label": "J. Glimm and A. Jaffe — Quantum Physics: A Functional Integral Point of View",
+        "url": "https://link.springer.com/book/10.1007/978-1-4612-4728-9",
+        "type": "book",
+        "scope": "claim"
+      },
+      {
+        "label": "R. Haag — Local Quantum Physics",
+        "url": "https://link.springer.com/book/10.1007/978-3-642-61458-3",
+        "type": "book",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.analysis.constructive_qft",
@@ -680,7 +1250,21 @@
     "target": "domain.constructive_quantum_field_theory",
     "relation": "uses",
     "confidence": "literature",
-    "mechanism": "Constructive field theory relies on integration, functional inequalities, operator bounds and convergence estimates."
+    "mechanism": "Constructive field theory relies on integration, functional inequalities, operator bounds and convergence estimates.",
+    "references": [
+      {
+        "label": "J. Glimm and A. Jaffe — Quantum Physics: A Functional Integral Point of View",
+        "url": "https://link.springer.com/book/10.1007/978-1-4612-4728-9",
+        "type": "book",
+        "scope": "claim"
+      },
+      {
+        "label": "T. Tao — Analysis I",
+        "url": "https://terrytao.wordpress.com/books/analysis-i/",
+        "type": "book",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.probability.constructive_qft",
@@ -688,7 +1272,21 @@
     "target": "domain.constructive_quantum_field_theory",
     "relation": "uses",
     "confidence": "literature",
-    "mechanism": "Euclidean field measures, Gaussian integration and stochastic estimates provide the probabilistic substrate for constructive models."
+    "mechanism": "Euclidean field measures, Gaussian integration and stochastic estimates provide the probabilistic substrate for constructive models.",
+    "references": [
+      {
+        "label": "J. Glimm and A. Jaffe — Quantum Physics: A Functional Integral Point of View",
+        "url": "https://link.springer.com/book/10.1007/978-1-4612-4728-9",
+        "type": "book",
+        "scope": "claim"
+      },
+      {
+        "label": "O. Kallenberg — Foundations of Modern Probability",
+        "url": "https://link.springer.com/book/10.1007/978-3-030-61871-1",
+        "type": "book",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.qft.renormalization_group",
@@ -699,14 +1297,16 @@
     "mechanism": "Renormalization organizes how effective field-theory parameters and interactions change across scales.",
     "references": [
       {
-        "label": "J. Dimock - The Renormalization Group According to Balaban I",
+        "label": "J. Dimock — The Renormalization Group According to Balaban I",
         "url": "https://arxiv.org/abs/1108.1335",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
       },
       {
-        "label": "J. Dimock - The Renormalization Group According to Balaban III",
+        "label": "J. Dimock — The Renormalization Group According to Balaban III",
         "url": "https://arxiv.org/abs/1304.0705",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
       }
     ]
   },
@@ -719,9 +1319,10 @@
     "mechanism": "Multiscale estimates and stability bounds are the analytic core of rigorous renormalization iterations.",
     "references": [
       {
-        "label": "J. Dimock - The Renormalization Group According to Balaban I",
+        "label": "J. Dimock — The Renormalization Group According to Balaban I",
         "url": "https://arxiv.org/abs/1108.1335",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
       }
     ]
   },
@@ -734,14 +1335,16 @@
     "mechanism": "Cluster expansions with holes provide a locality-preserving compiler from raw activities to connected effective activities.",
     "references": [
       {
-        "label": "J. Dimock - The Renormalization Group According to Balaban I",
+        "label": "J. Dimock — The Renormalization Group According to Balaban I",
         "url": "https://arxiv.org/abs/1108.1335",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
       },
       {
-        "label": "J. Dimock - The Renormalization Group According to Balaban II",
+        "label": "J. Dimock — The Renormalization Group According to Balaban II",
         "url": "https://arxiv.org/abs/1212.5562",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
       }
     ]
   },
@@ -754,14 +1357,16 @@
     "mechanism": "The holes and active skeletons encode scale-dependent excluded regions and the local geometry of an RG step.",
     "references": [
       {
-        "label": "J. Dimock - The Renormalization Group According to Balaban I",
+        "label": "J. Dimock — The Renormalization Group According to Balaban I",
         "url": "https://arxiv.org/abs/1108.1335",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
       },
       {
-        "label": "J. Dimock - The Renormalization Group According to Balaban II",
+        "label": "J. Dimock — The Renormalization Group According to Balaban II",
         "url": "https://arxiv.org/abs/1212.5562",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
       }
     ]
   },
@@ -771,7 +1376,21 @@
     "target": "problem.uniform_yang_mills_rg_activity",
     "relation": "transfers_via",
     "confidence": "literature",
-    "mechanism": "Once a raw gauge activity is bounded, the connected-cover and Ursell machinery transfers it to a renormalized modified-metric profile."
+    "mechanism": "Once a raw gauge activity is bounded, the connected-cover and Ursell machinery transfers it to a renormalized modified-metric profile.",
+    "references": [
+      {
+        "label": "J. Dimock — The Renormalization Group According to Balaban II",
+        "url": "https://arxiv.org/abs/1212.5562",
+        "type": "paper",
+        "scope": "claim"
+      },
+      {
+        "label": "J. Dimock — The Renormalization Group According to Balaban III",
+        "url": "https://arxiv.org/abs/1304.0705",
+        "type": "paper",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.gauge.ym_rg_activity",
@@ -779,7 +1398,21 @@
     "target": "problem.uniform_yang_mills_rg_activity",
     "relation": "uses",
     "confidence": "literature",
-    "mechanism": "The concrete activity must be derived from gauge fields, gauge fixing, background minimization and the Yang-Mills fluctuation operator."
+    "mechanism": "The concrete activity must be derived from gauge fields, gauge fixing, background minimization and the Yang-Mills fluctuation operator.",
+    "references": [
+      {
+        "label": "A. Jaffe and E. Witten — Quantum Yang-Mills Theory",
+        "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
+        "type": "paper",
+        "scope": "claim"
+      },
+      {
+        "label": "J. Dimock — The Renormalization Group According to Balaban I",
+        "url": "https://arxiv.org/abs/1108.1335",
+        "type": "paper",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.rg.ym_rg_activity",
@@ -787,7 +1420,21 @@
     "target": "problem.uniform_yang_mills_rg_activity",
     "relation": "uses",
     "confidence": "literature",
-    "mechanism": "The desired activity is a local output of one renormalization step and must be stable under subsequent scale iteration."
+    "mechanism": "The desired activity is a local output of one renormalization step and must be stable under subsequent scale iteration.",
+    "references": [
+      {
+        "label": "J. Dimock — The Renormalization Group According to Balaban I",
+        "url": "https://arxiv.org/abs/1108.1335",
+        "type": "paper",
+        "scope": "claim"
+      },
+      {
+        "label": "J. Dimock — The Renormalization Group According to Balaban II",
+        "url": "https://arxiv.org/abs/1212.5562",
+        "type": "paper",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.ym_rg_activity.yang_mills",
@@ -795,7 +1442,21 @@
     "target": "problem.yang_mills_mass_gap",
     "relation": "suggests",
     "confidence": "heuristic",
-    "mechanism": "A uniform lattice RG activity bound would close a major lattice-stage input, while continuum existence and reconstruction would still remain separate obligations."
+    "mechanism": "A uniform lattice RG activity bound would close a major lattice-stage input, while continuum existence and reconstruction would still remain separate obligations.",
+    "references": [
+      {
+        "label": "A. Jaffe and E. Witten — Quantum Yang-Mills Theory",
+        "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
+        "type": "paper",
+        "scope": "context"
+      },
+      {
+        "label": "J. Dimock — The Renormalization Group According to Balaban I",
+        "url": "https://arxiv.org/abs/1108.1335",
+        "type": "paper",
+        "scope": "context"
+      }
+    ]
   },
   {
     "id": "edge.algebra.ward_defect",
@@ -803,7 +1464,15 @@
     "target": "bridge.ward_defect_weight_variation",
     "relation": "formalizes_as",
     "confidence": "formal",
-    "mechanism": "Exterior-algebra coefficients, graded derivations and a Leibniz identity make the finite weighted Ward defect an exact algebraic statement."
+    "mechanism": "Exterior-algebra coefficients, graded derivations and a Leibniz identity make the finite weighted Ward defect an exact algebraic statement.",
+    "references": [
+      {
+        "label": "F. A. Berezin — Introduction to Superanalysis",
+        "url": "https://link.springer.com/book/10.1007/978-94-009-1900-7",
+        "type": "book",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.ward_defect.ym_rg_activity",
@@ -811,7 +1480,21 @@
     "target": "problem.uniform_yang_mills_rg_activity",
     "relation": "suggests",
     "confidence": "heuristic",
-    "mechanism": "A concrete Ward decomposition could cancel exact sectors before norms and reduce the amplitude that the RG activity estimate must control."
+    "mechanism": "A concrete Ward decomposition could cancel exact sectors before norms and reduce the amplitude that the RG activity estimate must control.",
+    "references": [
+      {
+        "label": "F. A. Berezin — Introduction to Superanalysis",
+        "url": "https://link.springer.com/book/10.1007/978-94-009-1900-7",
+        "type": "book",
+        "scope": "context"
+      },
+      {
+        "label": "J. Dimock — The Renormalization Group According to Balaban I",
+        "url": "https://arxiv.org/abs/1108.1335",
+        "type": "paper",
+        "scope": "context"
+      }
+    ]
   },
   {
     "id": "edge.probability.gaussian_collar",
@@ -819,7 +1502,21 @@
     "target": "bridge.gaussian_covariance_collar",
     "relation": "uses",
     "confidence": "literature",
-    "mechanism": "Gaussian expectations and covariance interpolation express factorization defects through cross-covariance contractions."
+    "mechanism": "Gaussian expectations and covariance interpolation express factorization defects through cross-covariance contractions.",
+    "references": [
+      {
+        "label": "J. Dimock — The Renormalization Group According to Balaban I",
+        "url": "https://arxiv.org/abs/1108.1335",
+        "type": "paper",
+        "scope": "claim"
+      },
+      {
+        "label": "O. Kallenberg — Foundations of Modern Probability",
+        "url": "https://link.springer.com/book/10.1007/978-3-030-61871-1",
+        "type": "book",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.gaussian_collar.ym_rg_activity",
@@ -827,7 +1524,21 @@
     "target": "problem.uniform_yang_mills_rg_activity",
     "relation": "suggests",
     "confidence": "heuristic",
-    "mechanism": "Localized covariance decay can supply the spatial part of a polymer activity estimate once the actual gauge precision and derivative bounds are available."
+    "mechanism": "Localized covariance decay can supply the spatial part of a polymer activity estimate once the actual gauge precision and derivative bounds are available.",
+    "references": [
+      {
+        "label": "J. Dimock — The Renormalization Group According to Balaban I",
+        "url": "https://arxiv.org/abs/1108.1335",
+        "type": "paper",
+        "scope": "context"
+      },
+      {
+        "label": "J. Dimock — The Renormalization Group According to Balaban II",
+        "url": "https://arxiv.org/abs/1212.5562",
+        "type": "paper",
+        "scope": "context"
+      }
+    ]
   },
   {
     "id": "edge.functional.block_coercivity",
@@ -835,7 +1546,21 @@
     "target": "bridge.block_average_coercivity",
     "relation": "formalizes_as",
     "confidence": "formal",
-    "mechanism": "Adjoints, positive operators and Poincare inequalities turn block averaging into a quantitative lower bound for the precision."
+    "mechanism": "Adjoints, positive operators and Poincare inequalities turn block averaging into a quantitative lower bound for the precision.",
+    "references": [
+      {
+        "label": "J. B. Conway — A Course in Functional Analysis",
+        "url": "https://link.springer.com/book/10.1007/978-1-4757-4383-8",
+        "type": "book",
+        "scope": "claim"
+      },
+      {
+        "label": "J. Dimock — The Renormalization Group According to Balaban I",
+        "url": "https://arxiv.org/abs/1108.1335",
+        "type": "paper",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.block_coercivity.ym_rg_activity",
@@ -843,7 +1568,21 @@
     "target": "problem.uniform_yang_mills_rg_activity",
     "relation": "suggests",
     "confidence": "heuristic",
-    "mechanism": "Coercivity is a prerequisite for a bounded covariance, but the source gauge slice and block Poincare estimate must still be proved."
+    "mechanism": "Coercivity is a prerequisite for a bounded covariance, but the source gauge slice and block Poincare estimate must still be proved.",
+    "references": [
+      {
+        "label": "J. Dimock — The Renormalization Group According to Balaban I",
+        "url": "https://arxiv.org/abs/1108.1335",
+        "type": "paper",
+        "scope": "context"
+      },
+      {
+        "label": "J. Dimock — The Renormalization Group According to Balaban II",
+        "url": "https://arxiv.org/abs/1212.5562",
+        "type": "paper",
+        "scope": "context"
+      }
+    ]
   },
   {
     "id": "edge.rg.lattice_scaling",
@@ -851,7 +1590,21 @@
     "target": "bridge.lattice_physical_scaling",
     "relation": "formalizes_as",
     "confidence": "formal",
-    "mechanism": "A renormalization step changes lattice spacing and dimensionless decay rates while preserving the corresponding physical exponent when scales are transformed consistently."
+    "mechanism": "A renormalization step changes lattice spacing and dimensionless decay rates while preserving the corresponding physical exponent when scales are transformed consistently.",
+    "references": [
+      {
+        "label": "J. Dimock — The Renormalization Group According to Balaban I",
+        "url": "https://arxiv.org/abs/1108.1335",
+        "type": "paper",
+        "scope": "claim"
+      },
+      {
+        "label": "K. G. Wilson and J. Kogut — The renormalization group and the epsilon expansion",
+        "url": "https://doi.org/10.1016/0370-1573(74)90023-4",
+        "type": "paper",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.lattice_scaling.yang_mills",
@@ -859,7 +1612,21 @@
     "target": "problem.yang_mills_mass_gap",
     "relation": "obstructs",
     "confidence": "formal",
-    "mechanism": "A positive decay rate at fixed lattice spacing is not yet a finite physical mass; calibrated spacing, thermodynamic control and correlator convergence are additionally required."
+    "mechanism": "A positive decay rate at fixed lattice spacing is not yet a finite physical mass; calibrated spacing, thermodynamic control and correlator convergence are additionally required.",
+    "references": [
+      {
+        "label": "A. Jaffe and E. Witten — Quantum Yang-Mills Theory",
+        "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
+        "type": "paper",
+        "scope": "claim"
+      },
+      {
+        "label": "K. G. Wilson and J. Kogut — The renormalization group and the epsilon expansion",
+        "url": "https://doi.org/10.1016/0370-1573(74)90023-4",
+        "type": "paper",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.constructive_qft.ym_rg_activity",
@@ -867,7 +1634,21 @@
     "target": "problem.uniform_yang_mills_rg_activity",
     "relation": "uses",
     "confidence": "literature",
-    "mechanism": "The problem asks for a constructive, support-local and quantitatively uniform realization of a gauge-theory RG step."
+    "mechanism": "The problem asks for a constructive, support-local and quantitatively uniform realization of a gauge-theory RG step.",
+    "references": [
+      {
+        "label": "J. Dimock — The Renormalization Group According to Balaban I",
+        "url": "https://arxiv.org/abs/1108.1335",
+        "type": "paper",
+        "scope": "claim"
+      },
+      {
+        "label": "J. Glimm and A. Jaffe — Quantum Physics: A Functional Integral Point of View",
+        "url": "https://link.springer.com/book/10.1007/978-1-4612-4728-9",
+        "type": "book",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.constructive_qft.polymer_expansions",
@@ -878,14 +1659,16 @@
     "mechanism": "Constructive field theory uses polymer gases and connected cluster expansions to localize interactions and control extensive partition functions.",
     "references": [
       {
-        "label": "J. Dimock - The Renormalization Group According to Balaban I",
+        "label": "J. Dimock — The Renormalization Group According to Balaban I",
         "url": "https://arxiv.org/abs/1108.1335",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
       },
       {
-        "label": "J. Dimock - The Renormalization Group According to Balaban III",
+        "label": "J. Dimock — The Renormalization Group According to Balaban III",
         "url": "https://arxiv.org/abs/1304.0705",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
       }
     ]
   },
@@ -898,14 +1681,16 @@
     "mechanism": "Rigorous renormalization steps encode local remainders as polymer activities and reconstruct effective actions with connected expansions.",
     "references": [
       {
-        "label": "J. Dimock - The Renormalization Group According to Balaban I",
+        "label": "J. Dimock — The Renormalization Group According to Balaban I",
         "url": "https://arxiv.org/abs/1108.1335",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
       },
       {
-        "label": "J. Dimock - The Renormalization Group According to Balaban III",
+        "label": "J. Dimock — The Renormalization Group According to Balaban III",
         "url": "https://arxiv.org/abs/1304.0705",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
       }
     ]
   },
@@ -918,14 +1703,16 @@
     "mechanism": "The with-holes construction specializes polymer and Ursell methods to active skeletons, full target unions and a modified metric.",
     "references": [
       {
-        "label": "J. Dimock - The Renormalization Group According to Balaban I",
+        "label": "J. Dimock — The Renormalization Group According to Balaban I",
         "url": "https://arxiv.org/abs/1108.1335",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
       },
       {
-        "label": "J. Dimock - The Renormalization Group According to Balaban II",
+        "label": "J. Dimock — The Renormalization Group According to Balaban II",
         "url": "https://arxiv.org/abs/1212.5562",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
       }
     ]
   },
@@ -935,7 +1722,21 @@
     "target": "bridge.target_erasure_diagnostic",
     "relation": "tests",
     "confidence": "formal",
-    "mechanism": "Finite factorization tests reveal when a coarse cluster majorant has discarded the target or local incompatibility information needed by its intended conclusion."
+    "mechanism": "Finite factorization tests reveal when a coarse cluster majorant has discarded the target or local incompatibility information needed by its intended conclusion.",
+    "references": [
+      {
+        "label": "J. Dimock — The Renormalization Group According to Balaban II",
+        "url": "https://arxiv.org/abs/1212.5562",
+        "type": "paper",
+        "scope": "claim"
+      },
+      {
+        "label": "R. Kotecký and D. Preiss — Cluster expansion for abstract polymer models",
+        "url": "https://doi.org/10.1007/BF01010924",
+        "type": "paper",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.target_erasure.cluster_holes",
@@ -943,7 +1744,15 @@
     "target": "bridge.cluster_expansion_with_holes",
     "relation": "obstructs",
     "confidence": "formal",
-    "mechanism": "A marked vertex sum that factorizes through a global total mass cannot alone supply target-dependent Appendix-F decay because the exact union and tree edges no longer occur in the object."
+    "mechanism": "A marked vertex sum that factorizes through a global total mass cannot alone supply target-dependent Appendix-F decay because the exact union and tree edges no longer occur in the object.",
+    "references": [
+      {
+        "label": "J. Dimock — The Renormalization Group According to Balaban II",
+        "url": "https://arxiv.org/abs/1212.5562",
+        "type": "paper",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.target_erasure.target_preserving",
@@ -951,7 +1760,21 @@
     "target": "bridge.target_preserving_ursell_summation",
     "relation": "suggests",
     "confidence": "formal",
-    "mechanism": "The diagnostic identifies the minimal repair: retain the exact target and parent-child tree relations until their geometric contribution has been extracted."
+    "mechanism": "The diagnostic identifies the minimal repair: retain the exact target and parent-child tree relations until their geometric contribution has been extracted.",
+    "references": [
+      {
+        "label": "J. Dimock — The Renormalization Group According to Balaban II",
+        "url": "https://arxiv.org/abs/1212.5562",
+        "type": "paper",
+        "scope": "claim"
+      },
+      {
+        "label": "R. Kotecký and D. Preiss — Cluster expansion for abstract polymer models",
+        "url": "https://doi.org/10.1007/BF01010924",
+        "type": "paper",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.polymer.target_preserving_ursell",
@@ -962,9 +1785,10 @@
     "mechanism": "Ursell coefficients and tree-graph domination can be grouped in exact-union fibers so target geometry remains available during the estimate.",
     "references": [
       {
-        "label": "J. Dimock - The Renormalization Group According to Balaban I",
+        "label": "J. Dimock — The Renormalization Group According to Balaban I",
         "url": "https://arxiv.org/abs/1108.1335",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
       }
     ]
   },
@@ -977,14 +1801,16 @@
     "mechanism": "The with-holes second gas requires target-preserving summation with active-skeleton incompatibility and the modified metric of the represented full target.",
     "references": [
       {
-        "label": "J. Dimock - The Renormalization Group According to Balaban I",
+        "label": "J. Dimock — The Renormalization Group According to Balaban I",
         "url": "https://arxiv.org/abs/1108.1335",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
       },
       {
-        "label": "J. Dimock - The Renormalization Group According to Balaban II",
+        "label": "J. Dimock — The Renormalization Group According to Balaban II",
         "url": "https://arxiv.org/abs/1212.5562",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
       }
     ]
   },
@@ -997,9 +1823,10 @@
     "mechanism": "After target exponential extraction, the remaining fixed-tree assignment sum can be evaluated bottom-up with rooted and parent-child factorial moment estimates.",
     "references": [
       {
-        "label": "J. Dimock - The Renormalization Group According to Balaban I",
+        "label": "J. Dimock — The Renormalization Group According to Balaban I",
         "url": "https://arxiv.org/abs/1108.1335",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
       }
     ]
   },
@@ -1012,9 +1839,10 @@
     "mechanism": "Constructive renormalization estimates orient trees and eliminate local variables using summable parent-child kernels and rooted moments.",
     "references": [
       {
-        "label": "J. Dimock - The Renormalization Group According to Balaban I",
+        "label": "J. Dimock — The Renormalization Group According to Balaban I",
         "url": "https://arxiv.org/abs/1108.1335",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
       }
     ]
   },
@@ -1027,9 +1855,10 @@
     "mechanism": "Factorial leaf moments consume a reserved portion of exponential decay while the remaining portion stays attached to the target union.",
     "references": [
       {
-        "label": "J. Dimock - The Renormalization Group According to Balaban II",
+        "label": "J. Dimock — The Renormalization Group According to Balaban II",
         "url": "https://arxiv.org/abs/1212.5562",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
       }
     ]
   },
@@ -1042,9 +1871,10 @@
     "mechanism": "The rate identity translates first-activity decay into residual H-sharp target decay plus the explicit reserve required by leaf summation and entropy.",
     "references": [
       {
-        "label": "J. Dimock - The Renormalization Group According to Balaban II",
+        "label": "J. Dimock — The Renormalization Group According to Balaban II",
         "url": "https://arxiv.org/abs/1212.5562",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
       }
     ]
   },
@@ -1057,19 +1887,22 @@
     "mechanism": "A uniform target-sensitive H-sharp estimate would close a lattice RG input once the separate gauge-specific raw activity producer is supplied; continuum construction remains separate.",
     "references": [
       {
-        "label": "J. Dimock - The Renormalization Group According to Balaban I",
-        "url": "https://arxiv.org/abs/1108.1335",
-        "type": "paper"
-      },
-      {
-        "label": "J. Dimock - The Renormalization Group According to Balaban II",
-        "url": "https://arxiv.org/abs/1212.5562",
-        "type": "paper"
-      },
-      {
-        "label": "A. Jaffe and E. Witten - Quantum Yang-Mills Theory",
+        "label": "A. Jaffe and E. Witten — Quantum Yang-Mills Theory",
         "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
+      },
+      {
+        "label": "J. Dimock — The Renormalization Group According to Balaban I",
+        "url": "https://arxiv.org/abs/1108.1335",
+        "type": "paper",
+        "scope": "claim"
+      },
+      {
+        "label": "J. Dimock — The Renormalization Group According to Balaban II",
+        "url": "https://arxiv.org/abs/1212.5562",
+        "type": "paper",
+        "scope": "claim"
       }
     ]
   },
@@ -1082,9 +1915,10 @@
     "mechanism": "AQFT specializes relativistic quantum field theory to a net of local operator algebras with causal and covariance axioms.",
     "references": [
       {
-        "label": "E. Witten - Notes on Some Entanglement Properties of Quantum Field Theory",
+        "label": "E. Witten — Notes on Some Entanglement Properties of Quantum Field Theory",
         "url": "https://arxiv.org/abs/1803.04993",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
       }
     ]
   },
@@ -1097,9 +1931,10 @@
     "mechanism": "AQFT relies on Hilbert spaces, operator algebras, cyclic vectors and modular structures from functional analysis.",
     "references": [
       {
-        "label": "E. Witten - Notes on Some Entanglement Properties of Quantum Field Theory",
+        "label": "E. Witten — Notes on Some Entanglement Properties of Quantum Field Theory",
         "url": "https://arxiv.org/abs/1803.04993",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
       }
     ]
   },
@@ -1112,9 +1947,10 @@
     "mechanism": "Reeh–Schlieder cyclicity and separation combine with nontrivial local algebras to rule out a product vacuum state across spacelike regions.",
     "references": [
       {
-        "label": "E. Witten - Notes on Some Entanglement Properties of Quantum Field Theory",
+        "label": "E. Witten — Notes on Some Entanglement Properties of Quantum Field Theory",
         "url": "https://arxiv.org/abs/1803.04993",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
       }
     ]
   },
@@ -1124,7 +1960,21 @@
     "target": "bridge.local_operations_no_signalling",
     "relation": "uses",
     "confidence": "formal",
-    "mechanism": "Microcausal commutation lets Kraus completeness pass through distant observables, preserving every nonselective distant expectation."
+    "mechanism": "Microcausal commutation lets Kraus completeness pass through distant observables, preserving every nonselective distant expectation.",
+    "references": [
+      {
+        "label": "D. Beckman et al. — Causal and localizable quantum operations",
+        "url": "https://arxiv.org/abs/quant-ph/0102043",
+        "type": "paper",
+        "scope": "claim"
+      },
+      {
+        "label": "R. Haag — Local Quantum Physics",
+        "url": "https://link.springer.com/book/10.1007/978-3-642-61458-3",
+        "type": "book",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.qinfo.no_signalling",
@@ -1132,7 +1982,21 @@
     "target": "bridge.local_operations_no_signalling",
     "relation": "uses",
     "confidence": "literature",
-    "mechanism": "Quantum channel and Kraus formalisms make the distinction between conditioned branches and complete operations explicit."
+    "mechanism": "Quantum channel and Kraus formalisms make the distinction between conditioned branches and complete operations explicit.",
+    "references": [
+      {
+        "label": "D. Beckman et al. — Causal and localizable quantum operations",
+        "url": "https://arxiv.org/abs/quant-ph/0102043",
+        "type": "paper",
+        "scope": "claim"
+      },
+      {
+        "label": "M. A. Nielsen and I. L. Chuang — Quantum Computation and Quantum Information",
+        "url": "https://www.cambridge.org/highereducation/books/quantum-computation-and-quantum-information/01E10196D0A682A6AEFFEA52D53BE9AE",
+        "type": "book",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.qinfo.cmi_recovery",
@@ -1143,9 +2007,10 @@
     "mechanism": "Conditional mutual information quantifies approximate quantum Markov structure and controls recovery from a marginal.",
     "references": [
       {
-        "label": "O. Fawzi and R. Renner - Quantum conditional mutual information and approximate Markov chains",
+        "label": "O. Fawzi and R. Renner — Quantum conditional mutual information and approximate Markov chains",
         "url": "https://arxiv.org/abs/1410.0664",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
       }
     ]
   },
@@ -1158,14 +2023,16 @@
     "mechanism": "A collar between local algebras suggests an A-B-C recovery geometry, but split and type-III extensions require separate operator-algebraic theorems.",
     "references": [
       {
-        "label": "O. Fawzi and R. Renner - Quantum conditional mutual information and approximate Markov chains",
-        "url": "https://arxiv.org/abs/1410.0664",
-        "type": "paper"
+        "label": "D. Sutter, O. Fawzi and R. Renner — Universal recovery map for approximate Markov chains",
+        "url": "https://arxiv.org/abs/1504.07251",
+        "type": "paper",
+        "scope": "context"
       },
       {
-        "label": "D. Sutter, O. Fawzi and R. Renner - Universal recovery map for approximate Markov chains",
-        "url": "https://arxiv.org/abs/1504.07251",
-        "type": "paper"
+        "label": "O. Fawzi and R. Renner — Quantum conditional mutual information and approximate Markov chains",
+        "url": "https://arxiv.org/abs/1410.0664",
+        "type": "paper",
+        "scope": "context"
       }
     ]
   },
@@ -1175,7 +2042,21 @@
     "target": "bridge.gaussian_precision_markov_blanket",
     "relation": "uses",
     "confidence": "formal",
-    "mechanism": "Finite Gaussian conditional independence is encoded by zero blocks of the precision matrix rather than zero covariance blocks."
+    "mechanism": "Finite Gaussian conditional independence is encoded by zero blocks of the precision matrix rather than zero covariance blocks.",
+    "references": [
+      {
+        "label": "O. Kallenberg — Foundations of Modern Probability",
+        "url": "https://link.springer.com/book/10.1007/978-3-030-61871-1",
+        "type": "book",
+        "scope": "claim"
+      },
+      {
+        "label": "S. L. Lauritzen — Graphical Models",
+        "url": "https://global.oup.com/academic/product/graphical-models-9780198522195",
+        "type": "book",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.gaussian_markov.collar",
@@ -1183,7 +2064,21 @@
     "target": "bridge.gaussian_covariance_collar",
     "relation": "transfers_via",
     "confidence": "formal",
-    "mechanism": "Exact conditional factorization across a collar can be combined with inverse-kernel decay to control the remaining boundary influence."
+    "mechanism": "Exact conditional factorization across a collar can be combined with inverse-kernel decay to control the remaining boundary influence.",
+    "references": [
+      {
+        "label": "J. Dimock — The Renormalization Group According to Balaban I",
+        "url": "https://arxiv.org/abs/1108.1335",
+        "type": "paper",
+        "scope": "claim"
+      },
+      {
+        "label": "S. L. Lauritzen — Graphical Models",
+        "url": "https://global.oup.com/academic/product/graphical-models-9780198522195",
+        "type": "book",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.rooted_leaf.catalan_closure",
@@ -1194,9 +2089,10 @@
     "mechanism": "The fixed-tree child-factorial product is summed exactly by plane rooted tree enumeration rather than only bounded by four to the nth power.",
     "references": [
       {
-        "label": "J. Dimock - The Renormalization Group According to Balaban I",
+        "label": "J. Dimock — The Renormalization Group According to Balaban I",
         "url": "https://arxiv.org/abs/1108.1335",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
       }
     ]
   },
@@ -1209,9 +2105,10 @@
     "mechanism": "Second-gas cluster coefficients inherit rooted tree enumerations whose exact generating function is Catalan.",
     "references": [
       {
-        "label": "J. Dimock - The Renormalization Group According to Balaban I",
+        "label": "J. Dimock — The Renormalization Group According to Balaban I",
         "url": "https://arxiv.org/abs/1108.1335",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
       }
     ]
   },
@@ -1224,9 +2121,10 @@
     "mechanism": "An exact square-root closure changes the amplitude and stability ledger while leaving the separately extracted spatial decay rate visible.",
     "references": [
       {
-        "label": "J. Dimock - The Renormalization Group According to Balaban II",
+        "label": "J. Dimock — The Renormalization Group According to Balaban II",
         "url": "https://arxiv.org/abs/1212.5562",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
       }
     ]
   },
@@ -1236,7 +2134,21 @@
     "target": "bridge.localized_homotopy_boundary_defect",
     "relation": "uses",
     "confidence": "formal",
-    "mechanism": "Restricting a global homotopy to an active RG region produces commutators with the region projector and hence an explicit boundary term."
+    "mechanism": "Restricting a global homotopy to an active RG region produces commutators with the region projector and hence an explicit boundary term.",
+    "references": [
+      {
+        "label": "J. Dimock — The Renormalization Group According to Balaban I",
+        "url": "https://arxiv.org/abs/1108.1335",
+        "type": "paper",
+        "scope": "claim"
+      },
+      {
+        "label": "M. Doubek, B. Jurčo and J. Pulmann — Quantum L-infinity algebras and the homological perturbation lemma",
+        "url": "https://arxiv.org/abs/1712.02696",
+        "type": "paper",
+        "scope": "claim"
+      }
+    ]
   },
   {
     "id": "edge.localized_homotopy.ym_activity",
@@ -1245,7 +2157,21 @@
     "relation": "suggests",
     "confidence": "speculative",
     "mechanism": "A concrete local BRST or BV homotopy could isolate a boundary-supported remainder before norms are taken.",
-    "notes": "Falsifier: abandon this edge unless an explicit gauge-compatible differential, homotopy kernel, support theorem and polymer-norm estimate are constructed."
+    "notes": "Falsifier: abandon this edge unless an explicit gauge-compatible differential, homotopy kernel, support theorem and polymer-norm estimate are constructed.",
+    "references": [
+      {
+        "label": "J. Dimock — The Renormalization Group According to Balaban I",
+        "url": "https://arxiv.org/abs/1108.1335",
+        "type": "paper",
+        "scope": "context"
+      },
+      {
+        "label": "M. Doubek, B. Jurčo and J. Pulmann — Quantum L-infinity algebras and the homological perturbation lemma",
+        "url": "https://arxiv.org/abs/1712.02696",
+        "type": "paper",
+        "scope": "context"
+      }
+    ]
   },
   {
     "id": "edge.gauge.ym_critical_dimension",
@@ -1256,9 +2182,10 @@
     "mechanism": "Canonical dimensions of the gauge potential and coupling identify four dimensions as the marginal Yang–Mills case.",
     "references": [
       {
-        "label": "A. Jaffe and E. Witten - Quantum Yang-Mills Theory",
+        "label": "A. Jaffe and E. Witten — Quantum Yang-Mills Theory",
         "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
       }
     ]
   },
@@ -1271,9 +2198,10 @@
     "mechanism": "Marginality in four dimensions forces logarithmic running and scale-by-scale control rather than a superrenormalizable power gain.",
     "references": [
       {
-        "label": "A. Jaffe and E. Witten - Quantum Yang-Mills Theory",
+        "label": "A. Jaffe and E. Witten — Quantum Yang-Mills Theory",
         "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
       }
     ]
   },
@@ -1286,14 +2214,16 @@
     "mechanism": "The Clay problem is specifically four-dimensional, where the dimensionless coupling makes the constructive ultraviolet analysis critical.",
     "references": [
       {
-        "label": "Clay Mathematics Institute - Yang-Mills and the Mass Gap",
-        "url": "https://www.claymath.org/millennium/yang-mills-the-maths-gap/",
-        "type": "official"
+        "label": "A. Jaffe and E. Witten — Quantum Yang-Mills Theory",
+        "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
+        "type": "paper",
+        "scope": "claim"
       },
       {
-        "label": "A. Jaffe and E. Witten - Quantum Yang-Mills Theory",
-        "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
-        "type": "paper"
+        "label": "Clay Mathematics Institute — Yang-Mills and the Mass Gap",
+        "url": "https://www.claymath.org/millennium/yang-mills-the-maths-gap/",
+        "type": "official",
+        "scope": "claim"
       }
     ]
   },
@@ -1306,9 +2236,10 @@
     "mechanism": "A uniform one-step activity theorem must respect marginal coupling flow rather than assume geometric decay of the coupling.",
     "references": [
       {
-        "label": "A. Jaffe and E. Witten - Quantum Yang-Mills Theory",
+        "label": "A. Jaffe and E. Witten — Quantum Yang-Mills Theory",
         "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
-        "type": "paper"
+        "type": "paper",
+        "scope": "claim"
       }
     ]
   }

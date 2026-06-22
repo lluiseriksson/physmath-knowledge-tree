@@ -3,6 +3,8 @@
 Audit date: **2026-06-22**
 Target release: **2.4.0**
 
+> Historical audit. Release 2.5.0 closes the source-bearing citation debt and adds reproducible evaluation; use `docs/GRAPH_AUDIT.md` and `docs/EVALUATION.md` for current generated metrics.
+
 ## Baseline
 
 The audited source is the complete 2.3.0 research/learning application plus all three curated source ledgers. The public `main` history was also checked; this delivery remains a complete source archive and does not assume that every locally curated release has already been pushed.
@@ -24,7 +26,7 @@ The audited source is the complete 2.3.0 research/learning application plus all 
 
 The canonical graph contains **58 nodes, 112 edges, 23 research moves and 8 collections** in one weakly connected component. All 58 nodes are reachable from the declared roots and none is isolated.
 
-Direct citations remain an explicit maintenance frontier. See [`GRAPH_AUDIT.md`](./GRAPH_AUDIT.md); citation debt is not treated as proof failure, but it must be paid before upgrading evidence labels or making source-specific claims.
+Direct citations were an explicit maintenance frontier in 2.4.0. Release 2.5.0 now requires scoped references on every node and edge and a claim/formalization source on every formal/literature item. Independent review of source fit remains necessary, and reference coverage is still not proof.
 
 ## Deliberate boundaries
 

@@ -30,6 +30,23 @@ test('every problem has status, a question and a formalization target', async ()
     assert.match(node.status, /^(solved|unsolved)$/);
     assert.ok(node.questions.length > 0);
     assert.ok(node.lean.targets.length > 0);
-    assert.ok(node.references?.some((reference) => reference.type === 'official'));
+    assert.ok(node.references?.some((reference) => ['claim', 'formalization'].includes(reference.scope)));
   }
+});
+
+
+test('every graph item has scoped references and source-bearing claims are directly supported', async () => {
+  const [nodes, edges, registry] = await Promise.all([
+    read('graph/nodes/core.json'), read('graph/edges.json'), read('graph/reference-registry.json'),
+  ]);
+  const allowedScopes = new Set(['claim', 'context', 'formalization']);
+  for (const item of [...nodes, ...edges]) {
+    assert.ok(item.references?.length > 0, `${item.id} has references`);
+    for (const reference of item.references) assert.ok(allowedScopes.has(reference.scope), `${item.id}: ${reference.scope}`);
+    if (['formal', 'literature'].includes(item.confidence)) {
+      assert.ok(item.references.some((reference) => ['claim', 'formalization'].includes(reference.scope)), item.id);
+    }
+  }
+  assert.ok(registry.references.length > 0);
+  assert.equal(new Set(registry.references.map((reference) => reference.url)).size, registry.references.length);
 });

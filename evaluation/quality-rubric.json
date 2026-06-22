@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0.0",
+  "scope": "repository-controlled quality only",
+  "exclusions": [
+    "scientific truth of heuristic or speculative mechanisms",
+    "novelty sufficient for publication",
+    "external adoption, citations or independent replication",
+    "completed user-study outcomes",
+    "formalization of the full research programmes"
+  ],
+  "criteria": [
+    {
+      "id": "graph_integrity",
+      "title": "Canonical graph integrity",
+      "weight": 20
+    },
+    {
+      "id": "evidence_traceability",
+      "title": "Scoped evidence traceability",
+      "weight": 25
+    },
+    {
+      "id": "reproducible_retrieval",
+      "title": "Search and route regressions",
+      "weight": 20
+    },
+    {
+      "id": "formalization_interfaces",
+      "title": "Lean-facing bounded targets",
+      "weight": 15
+    },
+    {
+      "id": "automation_and_documentation",
+      "title": "Automation and research-software documentation",
+      "weight": 20
+    }
+  ]
+}

@@ -23,7 +23,7 @@ Rename presentation titles freely when accuracy improves, but preserve IDs. For 
 - `bridge`: an explicit transfer mechanism between areas.
 - `problem`: a named open, solved or calibration problem.
 
-Every node contains a title, operational summary, evidence confidence, tags, live questions and bounded Lean metadata. Problem nodes additionally carry `status`.
+Every node contains a title, operational summary, evidence confidence, tags, live questions and bounded Lean metadata. Problem nodes additionally carry `status`. Every node also carries at least one scoped reference. `claim` sources directly support the represented statement, `context` sources only define the surrounding literature, and `formalization` sources identify proof-bearing code or declarations.
 
 ## Edge semantics
 
@@ -70,3 +70,7 @@ These fields are navigation metadata. The repository's Lean package formalizes t
 Collections are curated node sets for retrieval and UI filtering. They add no new mathematical claims.
 
 Research moves are reusable operations such as spectralization, categorification, dualization, finitzation and barrier finding. A move generates a question or experiment, never a theorem by itself.
+
+## Reference scopes
+
+Reference coverage and confidence are independent dimensions. Every node and edge must have a reference; `formal` and `literature` items require at least one `claim` or `formalization` source. Heuristic and speculative items may remain context-only, and adding a source does not promote their confidence. See `docs/REFERENCE_POLICY.md`.

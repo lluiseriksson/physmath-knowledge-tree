@@ -19,6 +19,7 @@ La interfaz consume directamente el JSON canónico e incorpora:
 - Fichas con preguntas, referencias, mecanismos entrantes/salientes y objetivos Lean.
 - Generador de *bridge cards* que produce borradores Markdown explícitamente exploratorios.
 - Exportación del subgrafo visible, estado compartible por URL, interfaz bilingüe, modo oscuro y caché offline.
+- Referencias con alcance explícito en los 58 nodos y las 112 aristas: `claim`, `context` o `formalization`.
 
 Los niveles `formal`, `literature`, `heuristic` y `speculative` forman parte del modelo. Una conexión visual nunca equivale por sí sola a un teorema.
 
@@ -30,7 +31,18 @@ Incluye 90 temas bilingües y 199 prerrequisitos, desde aritmética hasta matem�
 
 `graph/nodes/core.json`, `graph/edges.json`, `graph/research_moves.json` y `graph/collections.json` son la fuente de verdad. Los esquemas JSON 2020-12 están en `graph/schemas/`; las vistas de `views/` se generan automáticamente.
 
-Cada nodo tiene ID estable, resumen, etiquetas, preguntas vivas y objetivos Lean acotados. Cada arista declara un mecanismo concreto y un nivel de evidencia.
+Cada nodo tiene ID estable, resumen, etiquetas, preguntas vivas y objetivos Lean acotados. Cada arista declara un mecanismo concreto y un nivel de evidencia. La trazabilidad actual es 58/58 nodos y 112/112 aristas con referencias; todos los elementos `formal` o `literature` tienen una fuente de alcance `claim` o `formalization`. Una referencia de contexto no eleva el nivel de evidencia.
+
+## Evaluación y posicionamiento
+
+La repo incorpora una evaluación determinista además de la cobertura de código:
+
+- 14 regresiones de búsqueda con top-1, recall@3 y rango recíproco medio.
+- Cinco rutas dirigidas reproducibles con límite de aristas, control de evidencia, terminal y referencias.
+- Una rúbrica de calidad controlable desde la repo que excluye explícitamente verdad científica, novedad publicable, adopción externa y resultados de estudios de usuarios aún no realizados.
+- Declaración de necesidad, comparación con herramientas afines, guía de reproducibilidad y protocolo de evaluación con usuarios.
+
+Consulta [`docs/EVALUATION.md`](./docs/EVALUATION.md), [`docs/USE_CASES.md`](./docs/USE_CASES.md), [`docs/QUALITY_SCORECARD.md`](./docs/QUALITY_SCORECARD.md), [`docs/STATEMENT_OF_NEED.md`](./docs/STATEMENT_OF_NEED.md), [`docs/RELATED_WORK.md`](./docs/RELATED_WORK.md) y [`docs/LIMITATIONS.md`](./docs/LIMITATIONS.md). Lista los casos con `npm run usecase:list`.
 
 ## Curación de fuentes
 
@@ -81,7 +93,7 @@ npm run build
 
 ## Calidad y seguridad
 
-La repo valida IDs, referencias, endpoints, niveles de evidencia, colecciones, estadísticas, traducciones, taxonomías y ausencia de ciclos. Las pruebas cubren recorridos, caminos mínimos, búsqueda, layout, persistencia y datos. También se verifican enlaces, accesibilidad estática, PWA, CSP, acciones fijadas por SHA, formato, build reproducible, CodeQL y despliegue Pages.
+La repo valida IDs, referencias, endpoints, niveles de evidencia, colecciones, estadísticas, traducciones, taxonomías y ausencia de ciclos. Las pruebas cubren recorridos, caminos mínimos, búsqueda, evaluación, layout, persistencia, servidor y datos, con 100% de cobertura de líneas en los módulos instrumentados por Node. También se verifican enlaces, accesibilidad estática, PWA, CSP, acciones fijadas por SHA, formato, build reproducible, CodeQL y despliegue Pages.
 
 No hay analítica, cuentas, cookies, fuentes remotas ni scripts de terceros. El progreso educativo permanece en el navegador salvo exportación explícita. Los resultados reproducibles están en [`docs/VERIFICATION.md`](./docs/VERIFICATION.md).
 

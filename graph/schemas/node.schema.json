@@ -14,7 +14,8 @@
       "confidence",
       "tags",
       "lean",
-      "questions"
+      "questions",
+      "references"
     ],
     "properties": {
       "id": {
@@ -117,7 +118,8 @@
           "required": [
             "label",
             "url",
-            "type"
+            "type",
+            "scope"
           ],
           "properties": {
             "label": {
@@ -137,9 +139,18 @@
                 "documentation",
                 "survey"
               ]
+            },
+            "scope": {
+              "type": "string",
+              "enum": [
+                "claim",
+                "context",
+                "formalization"
+              ]
             }
           }
-        }
+        },
+        "minItems": 1
       }
     },
     "allOf": [

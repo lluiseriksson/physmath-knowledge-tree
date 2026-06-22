@@ -30,7 +30,7 @@ Every node must:
 - declare a confidence level;
 - include bounded Lean metadata, even when the relevant library support is preliminary;
 - use `status` only for problem nodes;
-- attach authoritative HTTPS references when making source-sensitive claims.
+- attach authoritative HTTPS references with an explicit `claim`, `context` or `formalization` scope.
 
 Every edge must:
 
@@ -38,17 +38,28 @@ Every edge must:
 - use one defined relation;
 - explain a mechanism rather than merely say “related”;
 - carry its own confidence label;
-- include an explicit falsifier note when speculative.
+- include an explicit falsifier note when speculative;
+- carry at least one scoped reference, with a `claim` or `formalization` source required for `formal` and `literature` edges.
 
 After editing canonical JSON:
 
 ```bash
 npm run generate:views
 npm run generate:audit
+npm run evaluate
 npm run check
 ```
 
 Commit the regenerated `views/` files in the same pull request. Do not edit those projections manually.
+
+## Evaluation changes
+
+- Treat `evaluation/scenarios.json` as a regression corpus, not a collection of claimed scientific results.
+- Every route scenario must state a research question, ordered waypoints, direction, edge budget, permitted evidence classes and expected terminal.
+- Add a failing test before changing retrieval behavior that affects a committed scenario.
+- Do not edit generated `evaluation/results.json`, `docs/EVALUATION.md`, `docs/USE_CASES.md` or `docs/QUALITY_SCORECARD.md` by hand.
+- Run `npm run evaluate` and commit all generated outputs together.
+- Keep user-study outcomes separate from the protocol until real participants and an auditable dataset exist.
 
 ## Learning-map changes
 

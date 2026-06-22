@@ -1,4 +1,4 @@
-const APP_VERSION = '2.4.0';
+const APP_VERSION = '2.5.0';
 const CACHE_PREFIX = 'physmath-knowledge-tree-';
 const CACHE = `${CACHE_PREFIX}${APP_VERSION}`;
 const SHELL = [
@@ -25,6 +25,7 @@ const SHELL = [
   './src/lib/url-state.js',
   './graph/index.json',
   './graph/audit.json',
+  './graph/reference-registry.json',
   './graph/nodes/core.json',
   './graph/edges.json',
   './graph/research_moves.json',

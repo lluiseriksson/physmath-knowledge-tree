@@ -23,7 +23,7 @@ The research interface reads the canonical JSON graph directly. It includes:
 - Node dossiers with questions, references, incoming/outgoing mechanisms and Lean targets.
 - A bridge-card generator that produces explicitly exploratory Markdown scaffolds.
 - Visible-subgraph export, shareable URL state, bilingual UI, dark mode and offline caching.
-- Direct primary or stable references on 45 high-value edges, including Millennium-problem routes, constructive RG/polymer mechanisms and AQFT/QI bridges.
+- Scoped references on all 58 nodes and all 112 edges, with `claim`, `context` and `formalization` distinguished in the schema.
 
 Evidence labels are part of the data model: `formal`, `literature`, `heuristic` and `speculative`. A visual connection is never intended to imply a theorem.
 
@@ -45,7 +45,18 @@ graph/
 
 The graph is designed for humans, scripts and research agents. Every node has a stable ID, summary, tags, live questions and one or more bounded Lean targets. Every edge states a mechanism rather than merely asserting that two subjects are “related”.
 
-Generated Markdown projections in `views/` are derived artifacts; JSON remains canonical. [`docs/GRAPH_AUDIT.md`](./docs/GRAPH_AUDIT.md) exposes topology, direct-reference coverage and unresolved citation debt. [`docs/SCIENTIFIC_REFERENCE_UPGRADE.md`](./docs/SCIENTIFIC_REFERENCE_UPGRADE.md) records the first targeted hardening pass. Current evidence coverage is 15/58 nodes with direct references, 45/112 edges with direct references and 8 formal nodes with named Lean declarations.
+Generated Markdown projections in `views/` are derived artifacts; JSON remains canonical. [`docs/GRAPH_AUDIT.md`](./docs/GRAPH_AUDIT.md) exposes topology and evidence coverage, while [`graph/reference-registry.json`](./graph/reference-registry.json) provides a deterministic URL-level registry. Current traceability is 58/58 nodes and 112/112 edges with references; every formal/literature item has a `claim` or `formalization` source. Context-only references never promote heuristic or speculative evidence.
+
+## Evaluation and positioning
+
+The repository includes a deterministic evaluation layer rather than relying only on test coverage:
+
+- 14 search regressions with top-1 accuracy, recall@3 and mean reciprocal rank.
+- Five directed research-route scenarios with edge budgets, evidence gates, terminal checks and source checks.
+- A repository-controlled quality rubric whose exclusions explicitly include scientific truth, publication novelty, external adoption and unfinished user studies.
+- A statement of need, related-work comparison, reproducibility guide and preregistered user-evaluation protocol.
+
+See [`docs/EVALUATION.md`](./docs/EVALUATION.md), [`docs/USE_CASES.md`](./docs/USE_CASES.md), [`docs/QUALITY_SCORECARD.md`](./docs/QUALITY_SCORECARD.md), [`docs/STATEMENT_OF_NEED.md`](./docs/STATEMENT_OF_NEED.md), [`docs/RELATED_WORK.md`](./docs/RELATED_WORK.md) and [`docs/LIMITATIONS.md`](./docs/LIMITATIONS.md). List cases with `npm run usecase:list` and reproduce one with `npm run usecase -- <scenario-id>`.
 
 ## Source curation
 
@@ -108,7 +119,12 @@ npm run build
 | `npm run curation:register -- <file> [id]` | Create a draft TXT/Markdown/PNG provenance record without copying the source. |
 | `npm run curation:verify-source -- [record] <file>` | Recheck a local original against its recorded hash, size and media metadata. |
 | `npm run curation:report` | Regenerate the deletion-gate and verification-queue report. |
-| `npm run validate:audit` | Check the generated graph integrity and citation-debt audit. |
+| `npm run validate:audit` | Check the generated graph audit and deduplicated reference registry. |
+| `npm run evaluate` | Regenerate search, route, evidence and controlled-quality results. |
+| `npm run validate:evaluation` | Confirm generated evaluation artifacts match canonical data. |
+| `npm run usecase:list` | List committed research-route scenarios. |
+| `npm run usecase -- <id>` | Reconstruct one committed research-route scenario. |
+| `npm run benchmark:evaluation` | Run a machine-dependent evaluation throughput benchmark. |
 | `npm run validate:workflows` | Require explicit permissions and full-SHA pins for external GitHub Actions. |
 | `npm run validate:learning` | Check bilingual curriculum taxonomies, prerequisites and DAG structure. |
 | `npm run validate:views` | Confirm generated Markdown/Mermaid projections match canonical JSON. |
@@ -116,14 +132,15 @@ npm run build
 | `npm run test:coverage` | Run the test suite and enforce 100% line coverage for instrumented Node-tested modules. |
 | `npm run generate:views` | Regenerate deterministic projections in `views/`. |
 | `npm run build` | Produce a deployable static site in `dist/`. |
-| `npm run check` | Run syntax, schemas, curation, links, accessibility, PWA, workflows, tests and reproducible-build checks. |
+| `npm run check` | Run syntax, schemas, curation, evaluation, links, accessibility, PWA, workflows, tests and reproducible-build checks. |
 
 ## Repository map
 
 ```text
 .
 ├── index.html / learning.html    # Research and education applications
-├── graph/                        # Canonical research graph and schemas
+├── graph/                        # Canonical research graph, schemas and reference registry
+├── evaluation/                   # Reproducible scenarios, rubric and generated results
 ├── PhysMathKnowledgeTree/        # Lean package
 ├── src/                          # Dependency-free web modules and styles
 ├── tests/                        # Node test suites

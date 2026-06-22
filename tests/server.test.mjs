@@ -50,6 +50,7 @@ test('static server returns content, security headers and safe method handling',
   assert.equal(missing.status, 404);
 });
 
+
 function requestRaw(port, path, method = 'GET') {
   return new Promise((resolveRequest, reject) => {
     const request = httpRequest({ host: '127.0.0.1', port, path, method }, (response) => {
@@ -113,6 +114,8 @@ test('static server converts unexpected synchronous failures into safe 500 respo
   assert.equal(failed.body, 'Internal server error');
   assert.equal(logged, true);
 });
+
+
 
 test('static server CLI helpers validate ports and report the actual bound port', async (context) => {
   assert.equal(parsePort(undefined), 4173);

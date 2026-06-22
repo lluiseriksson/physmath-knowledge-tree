@@ -1,0 +1,857 @@
+{
+  "schema_version": "1.0.0",
+  "graph_schema_version": "0.6.0",
+  "references": [
+    {
+      "url": "https://arxiv.org/abs/0903.0340",
+      "label": "J. Baez and M. Stay — Physics, topology, logic and computation: a Rosetta Stone",
+      "type": "survey",
+      "scopes": [
+        "context"
+      ],
+      "used_by": [
+        "edge:edge.category.pnp"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/1108.1335",
+      "label": "J. Dimock — The Renormalization Group According to Balaban I",
+      "type": "paper",
+      "scopes": [
+        "claim",
+        "context"
+      ],
+      "used_by": [
+        "edge:edge.analysis.renormalization_group",
+        "edge:edge.block_coercivity.ym_rg_activity",
+        "edge:edge.cluster_holes.target_preserving_ursell",
+        "edge:edge.constructive_qft.cluster_holes",
+        "edge:edge.constructive_qft.polymer_expansions",
+        "edge:edge.constructive_qft.ym_rg_activity",
+        "edge:edge.functional.block_coercivity",
+        "edge:edge.gauge.ym_rg_activity",
+        "edge:edge.gaussian_collar.ym_rg_activity",
+        "edge:edge.gaussian_markov.collar",
+        "edge:edge.localized_homotopy.ym_activity",
+        "edge:edge.polymer.catalan_closure",
+        "edge:edge.polymer.cluster_holes",
+        "edge:edge.polymer.target_preserving_ursell",
+        "edge:edge.probability.gaussian_collar",
+        "edge:edge.qft.renormalization_group",
+        "edge:edge.rg.cluster_holes",
+        "edge:edge.rg.lattice_scaling",
+        "edge:edge.rg.localized_homotopy_defect",
+        "edge:edge.rg.polymer_expansions",
+        "edge:edge.rg.rooted_leaf",
+        "edge:edge.rg.ym_rg_activity",
+        "edge:edge.rooted_leaf.catalan_closure",
+        "edge:edge.target_preserving.rooted_leaf",
+        "edge:edge.target_preserving.yang_mills",
+        "edge:edge.ward_defect.ym_rg_activity",
+        "edge:edge.ym_rg_activity.yang_mills",
+        "node:bridge.block_average_coercivity",
+        "node:bridge.gaussian_covariance_collar",
+        "node:bridge.lattice_physical_scaling",
+        "node:bridge.rooted_leaf_factorial_moments",
+        "node:bridge.target_preserving_ursell_summation",
+        "node:bridge.ward_defect_weight_variation",
+        "node:domain.polymer_cluster_expansions",
+        "node:domain.renormalization_group",
+        "node:problem.uniform_yang_mills_rg_activity"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/1212.5562",
+      "label": "J. Dimock — The Renormalization Group According to Balaban II",
+      "type": "paper",
+      "scopes": [
+        "claim",
+        "context"
+      ],
+      "used_by": [
+        "edge:edge.block_coercivity.ym_rg_activity",
+        "edge:edge.catalan.rate_budget",
+        "edge:edge.cluster_holes.target_preserving_ursell",
+        "edge:edge.cluster_holes.ym_rg_activity",
+        "edge:edge.constructive_qft.cluster_holes",
+        "edge:edge.gaussian_collar.ym_rg_activity",
+        "edge:edge.polymer.cluster_holes",
+        "edge:edge.polymer.target_erasure_diagnostic",
+        "edge:edge.rate_budget.cluster_holes",
+        "edge:edge.rg.cluster_holes",
+        "edge:edge.rg.ym_rg_activity",
+        "edge:edge.rooted_leaf.rate_budget",
+        "edge:edge.target_erasure.cluster_holes",
+        "edge:edge.target_erasure.target_preserving",
+        "edge:edge.target_preserving.yang_mills",
+        "node:bridge.appendix_f_rate_budget_split",
+        "node:bridge.block_average_coercivity",
+        "node:bridge.cluster_expansion_with_holes",
+        "node:bridge.gaussian_covariance_collar",
+        "node:bridge.rooted_leaf_factorial_moments",
+        "node:bridge.rooted_tree_catalan_closure",
+        "node:bridge.target_erasure_diagnostic",
+        "node:bridge.target_preserving_ursell_summation",
+        "node:problem.uniform_yang_mills_rg_activity"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/1304.0705",
+      "label": "J. Dimock — The Renormalization Group According to Balaban III",
+      "type": "paper",
+      "scopes": [
+        "claim"
+      ],
+      "used_by": [
+        "edge:edge.cluster_holes.ym_rg_activity",
+        "edge:edge.constructive_qft.polymer_expansions",
+        "edge:edge.qft.renormalization_group",
+        "edge:edge.rg.polymer_expansions",
+        "node:bridge.cluster_expansion_with_holes",
+        "node:problem.uniform_yang_mills_rg_activity"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/1410.0664",
+      "label": "O. Fawzi and R. Renner — Quantum conditional mutual information and approximate Markov chains",
+      "type": "paper",
+      "scopes": [
+        "claim",
+        "context"
+      ],
+      "used_by": [
+        "edge:edge.aqft.cmi_recovery",
+        "edge:edge.qinfo.cmi_recovery",
+        "node:bridge.conditional_mutual_information_recovery",
+        "node:domain.quantum_information_theory"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/1504.07251",
+      "label": "D. Sutter, O. Fawzi and R. Renner — Universal recovery map for approximate Markov chains",
+      "type": "paper",
+      "scopes": [
+        "claim",
+        "context"
+      ],
+      "used_by": [
+        "edge:edge.aqft.cmi_recovery",
+        "node:bridge.conditional_mutual_information_recovery"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/1712.02696",
+      "label": "M. Doubek, B. Jurčo and J. Pulmann — Quantum L-infinity algebras and the homological perturbation lemma",
+      "type": "paper",
+      "scopes": [
+        "claim",
+        "context"
+      ],
+      "used_by": [
+        "edge:edge.localized_homotopy.ym_activity",
+        "edge:edge.rg.localized_homotopy_defect",
+        "node:bridge.localized_homotopy_boundary_defect"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/1803.04993",
+      "label": "E. Witten — Notes on Some Entanglement Properties of Quantum Field Theory",
+      "type": "paper",
+      "scopes": [
+        "claim"
+      ],
+      "used_by": [
+        "edge:edge.aqft.reeh_nonfactorization",
+        "edge:edge.functional.aqft",
+        "edge:edge.qft.aqft",
+        "node:bridge.reeh_schlieder_vacuum_nonfactorization",
+        "node:domain.algebraic_quantum_field_theory"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/math/0211159",
+      "label": "G. Perelman — The entropy formula for the Ricci flow and its geometric applications",
+      "type": "paper",
+      "scopes": [
+        "claim",
+        "context"
+      ],
+      "used_by": [
+        "edge:edge.geometry.poincare",
+        "edge:edge.poincare.navier"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/math/0303074",
+      "label": "E. Frenkel — Recent advances in the Langlands program",
+      "type": "survey",
+      "scopes": [
+        "claim",
+        "context"
+      ],
+      "used_by": [
+        "edge:edge.algebraic.langlands_bridge",
+        "edge:edge.langlands.automorphic",
+        "edge:edge.langlands.hodge",
+        "edge:edge.representation.langlands_bridge",
+        "node:bridge.geometric_langlands_transfer"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/math/0303109",
+      "label": "G. Perelman — Ricci flow with surgery on three-manifolds",
+      "type": "paper",
+      "scopes": [
+        "claim"
+      ],
+      "used_by": [
+        "edge:edge.geometry.poincare"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/math/9811068",
+      "label": "A. Connes — Trace formula in noncommutative geometry and the zeros of the Riemann zeta function",
+      "type": "paper",
+      "scopes": [
+        "context"
+      ],
+      "used_by": [
+        "edge:edge.ncg.riemann"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/quant-ph/0102043",
+      "label": "D. Beckman et al. — Causal and localizable quantum operations",
+      "type": "paper",
+      "scopes": [
+        "claim"
+      ],
+      "used_by": [
+        "edge:edge.aqft.no_signalling",
+        "edge:edge.qinfo.no_signalling",
+        "node:bridge.local_operations_no_signalling"
+      ]
+    },
+    {
+      "url": "https://bookstore.ams.org/gsm-19-r/",
+      "label": "L. C. Evans — Partial Differential Equations",
+      "type": "book",
+      "scopes": [
+        "claim"
+      ],
+      "used_by": [
+        "edge:edge.harmonic.pde",
+        "edge:edge.pde.renormalization_bridge",
+        "edge:edge.probability.pde",
+        "node:domain.pde"
+      ]
+    },
+    {
+      "url": "https://doi.org/10.1007/BF01010924",
+      "label": "R. Kotecký and D. Preiss — Cluster expansion for abstract polymer models",
+      "type": "paper",
+      "scopes": [
+        "claim"
+      ],
+      "used_by": [
+        "edge:edge.polymer.target_erasure_diagnostic",
+        "edge:edge.target_erasure.target_preserving",
+        "node:bridge.target_erasure_diagnostic",
+        "node:bridge.target_preserving_ursell_summation",
+        "node:domain.polymer_cluster_expansions"
+      ]
+    },
+    {
+      "url": "https://doi.org/10.1007/s002220000108",
+      "label": "J. P. Keating and N. C. Snaith — Random matrix theory and zeta functions",
+      "type": "paper",
+      "scopes": [
+        "claim",
+        "context"
+      ],
+      "used_by": [
+        "edge:edge.probability.random_matrix_bridge",
+        "edge:edge.random_matrix.riemann",
+        "edge:edge.spectral.random_matrix_bridge",
+        "node:bridge.random_matrix_zeta_spectra"
+      ]
+    },
+    {
+      "url": "https://doi.org/10.1016/0370-1573(74)90023-4",
+      "label": "K. G. Wilson and J. Kogut — The renormalization group and the epsilon expansion",
+      "type": "paper",
+      "scopes": [
+        "claim",
+        "context"
+      ],
+      "used_by": [
+        "edge:edge.lattice_scaling.yang_mills",
+        "edge:edge.pde.renormalization_bridge",
+        "edge:edge.qft.renormalization_bridge",
+        "edge:edge.renormalization.navier",
+        "edge:edge.rg.lattice_scaling",
+        "node:bridge.lattice_physical_scaling",
+        "node:bridge.renormalization_scaling_pde",
+        "node:bridge.yang_mills_critical_dimension",
+        "node:domain.renormalization_group"
+      ]
+    },
+    {
+      "url": "https://doi.org/10.1017/CBO9780511609572",
+      "label": "D. Bump — Automorphic Forms and Representations",
+      "type": "book",
+      "scopes": [
+        "claim"
+      ],
+      "used_by": [
+        "edge:edge.automorphic.number",
+        "edge:edge.automorphic.trace_bridge",
+        "edge:edge.langlands.automorphic",
+        "edge:edge.number.trace_bridge",
+        "edge:edge.representation.automorphic",
+        "edge:edge.spectral.trace_bridge",
+        "node:bridge.trace_formula_spectral_arithmetic",
+        "node:domain.automorphic_forms"
+      ]
+    },
+    {
+      "url": "https://doi.org/10.1017/CBO9780511609589",
+      "label": "R. P. Stanley — Enumerative Combinatorics, Volume 2",
+      "type": "book",
+      "scopes": [
+        "claim"
+      ],
+      "used_by": [
+        "node:bridge.rooted_leaf_factorial_moments",
+        "node:bridge.rooted_tree_catalan_closure"
+      ]
+    },
+    {
+      "url": "https://doi.org/10.1137/S009753970038715X",
+      "label": "K. Mulmuley and M. Sohoni — Geometric Complexity Theory I",
+      "type": "paper",
+      "scopes": [
+        "claim",
+        "context"
+      ],
+      "used_by": [
+        "edge:edge.algebraic.proof_geometry_bridge",
+        "edge:edge.complexity.proof_geometry_bridge",
+        "node:bridge.proof_complexity_geometry"
+      ]
+    },
+    {
+      "url": "https://doi.org/10.1515/9781400883929",
+      "label": "E. M. Stein — Harmonic Analysis",
+      "type": "book",
+      "scopes": [
+        "claim"
+      ],
+      "used_by": [
+        "edge:edge.analysis.harmonic",
+        "edge:edge.harmonic.pde",
+        "node:domain.harmonic_analysis"
+      ]
+    },
+    {
+      "url": "https://global.oup.com/academic/product/graphical-models-9780198522195",
+      "label": "S. L. Lauritzen — Graphical Models",
+      "type": "book",
+      "scopes": [
+        "claim"
+      ],
+      "used_by": [
+        "edge:edge.gaussian_markov.collar",
+        "edge:edge.probability.gaussian_markov_blanket",
+        "node:bridge.gaussian_precision_markov_blanket"
+      ]
+    },
+    {
+      "url": "https://global.oup.com/academic/product/introduction-to-symplectic-topology-9780198794905",
+      "label": "D. McDuff and D. Salamon — Introduction to Symplectic Topology",
+      "type": "book",
+      "scopes": [
+        "claim",
+        "context"
+      ],
+      "used_by": [
+        "edge:edge.symplectic.qft",
+        "node:domain.symplectic_geometry"
+      ]
+    },
+    {
+      "url": "https://lean-lang.org/doc/reference/latest/",
+      "label": "Lean Language Reference",
+      "type": "documentation",
+      "scopes": [
+        "claim"
+      ],
+      "used_by": [
+        "edge:edge.foundation.category",
+        "node:domain.foundation_logic"
+      ]
+    },
+    {
+      "url": "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/InnerProductSpace/Spectrum.html",
+      "label": "mathlib4 — Inner-product-space spectrum documentation",
+      "type": "documentation",
+      "scopes": [
+        "claim"
+      ],
+      "used_by": [
+        "node:domain.spectral_theory"
+      ]
+    },
+    {
+      "url": "https://link.springer.com/book/10.1007/978-0-387-09494-6",
+      "label": "J. H. Silverman — The Arithmetic of Elliptic Curves",
+      "type": "book",
+      "scopes": [
+        "claim"
+      ],
+      "used_by": [
+        "edge:edge.algebraic.arithmetic",
+        "edge:edge.arithmetic.motives_bridge",
+        "edge:edge.number.arithmetic",
+        "node:domain.arithmetic_geometry"
+      ]
+    },
+    {
+      "url": "https://link.springer.com/book/10.1007/978-1-4419-9982-5",
+      "label": "J. M. Lee — Introduction to Smooth Manifolds",
+      "type": "book",
+      "scopes": [
+        "claim"
+      ],
+      "used_by": [
+        "edge:edge.geometry.gauge",
+        "edge:edge.geometry.relativity",
+        "edge:edge.topology.geometry",
+        "node:domain.differential_geometry"
+      ]
+    },
+    {
+      "url": "https://link.springer.com/book/10.1007/978-1-4612-0979-9",
+      "label": "W. Fulton and J. Harris — Representation Theory",
+      "type": "book",
+      "scopes": [
+        "claim"
+      ],
+      "used_by": [
+        "edge:edge.algebra.representation",
+        "edge:edge.representation.automorphic",
+        "edge:edge.representation.langlands_bridge",
+        "node:domain.representation_theory"
+      ]
+    },
+    {
+      "url": "https://link.springer.com/book/10.1007/978-1-4612-4728-9",
+      "label": "J. Glimm and A. Jaffe — Quantum Physics: A Functional Integral Point of View",
+      "type": "book",
+      "scopes": [
+        "claim"
+      ],
+      "used_by": [
+        "edge:edge.analysis.constructive_qft",
+        "edge:edge.constructive_qft.ym_rg_activity",
+        "edge:edge.probability.constructive_qft",
+        "edge:edge.qft.constructive_qft",
+        "node:domain.constructive_quantum_field_theory"
+      ]
+    },
+    {
+      "url": "https://link.springer.com/book/10.1007/978-1-4757-4383-8",
+      "label": "J. B. Conway — A Course in Functional Analysis",
+      "type": "book",
+      "scopes": [
+        "claim"
+      ],
+      "used_by": [
+        "edge:edge.analysis.functional_analysis",
+        "edge:edge.functional.block_coercivity",
+        "edge:edge.functional.spectral",
+        "node:domain.functional_analysis",
+        "node:domain.spectral_theory"
+      ]
+    },
+    {
+      "url": "https://link.springer.com/book/10.1007/978-3-030-61871-1",
+      "label": "O. Kallenberg — Foundations of Modern Probability",
+      "type": "book",
+      "scopes": [
+        "claim",
+        "context"
+      ],
+      "used_by": [
+        "edge:edge.probability.constructive_qft",
+        "edge:edge.probability.gaussian_collar",
+        "edge:edge.probability.gaussian_markov_blanket",
+        "edge:edge.probability.navier",
+        "edge:edge.probability.pde",
+        "edge:edge.probability.random_matrix_bridge",
+        "node:domain.probability_stochastics"
+      ]
+    },
+    {
+      "url": "https://link.springer.com/book/10.1007/978-3-540-71050-9",
+      "label": "C. Villani — Optimal Transport: Old and New",
+      "type": "book",
+      "scopes": [
+        "claim"
+      ],
+      "used_by": [
+        "edge:edge.optimal_transport.pde",
+        "node:domain.optimal_transport"
+      ]
+    },
+    {
+      "url": "https://link.springer.com/book/10.1007/978-3-642-61458-3",
+      "label": "R. Haag — Local Quantum Physics",
+      "type": "book",
+      "scopes": [
+        "claim",
+        "context"
+      ],
+      "used_by": [
+        "edge:edge.aqft.no_signalling",
+        "edge:edge.gauge.qft",
+        "edge:edge.ncg.qft",
+        "edge:edge.qft.constructive_qft",
+        "edge:edge.qft.renormalization_bridge",
+        "edge:edge.symplectic.qft",
+        "node:bridge.reeh_schlieder_vacuum_nonfactorization",
+        "node:domain.algebraic_quantum_field_theory",
+        "node:domain.quantum_field_theory"
+      ]
+    },
+    {
+      "url": "https://link.springer.com/book/10.1007/978-3-662-03983-0",
+      "label": "J. Neukirch — Algebraic Number Theory",
+      "type": "book",
+      "scopes": [
+        "claim"
+      ],
+      "used_by": [
+        "edge:edge.automorphic.number",
+        "edge:edge.number.arithmetic",
+        "node:domain.number_theory"
+      ]
+    },
+    {
+      "url": "https://link.springer.com/book/10.1007/978-94-009-1900-7",
+      "label": "F. A. Berezin — Introduction to Superanalysis",
+      "type": "book",
+      "scopes": [
+        "claim",
+        "context"
+      ],
+      "used_by": [
+        "edge:edge.algebra.ward_defect",
+        "edge:edge.ward_defect.ym_rg_activity",
+        "node:bridge.ward_defect_weight_variation"
+      ]
+    },
+    {
+      "url": "https://math.jhu.edu/~eriehl/context.pdf",
+      "label": "E. Riehl — Category Theory in Context",
+      "type": "book",
+      "scopes": [
+        "claim"
+      ],
+      "used_by": [
+        "edge:edge.category.algebra",
+        "edge:edge.category.algebraic_geometry",
+        "edge:edge.foundation.category",
+        "node:domain.category_theory"
+      ]
+    },
+    {
+      "url": "https://pi.math.cornell.edu/~hatcher/AT/AT.pdf",
+      "label": "A. Hatcher — Algebraic Topology",
+      "type": "book",
+      "scopes": [
+        "claim"
+      ],
+      "used_by": [
+        "edge:edge.topology.geometry",
+        "node:domain.topology"
+      ]
+    },
+    {
+      "url": "https://press.uchicago.edu/ucp/books/book/chicago/G/bo5952261.html",
+      "label": "R. M. Wald — General Relativity",
+      "type": "book",
+      "scopes": [
+        "claim"
+      ],
+      "used_by": [
+        "edge:edge.geometry.relativity",
+        "node:domain.general_relativity"
+      ]
+    },
+    {
+      "url": "https://stacks.math.columbia.edu/",
+      "label": "The Stacks Project",
+      "type": "book",
+      "scopes": [
+        "claim",
+        "context"
+      ],
+      "used_by": [
+        "edge:edge.algebraic.arithmetic",
+        "edge:edge.algebraic.langlands_bridge",
+        "edge:edge.algebraic.motives_bridge",
+        "edge:edge.algebraic.proof_geometry_bridge",
+        "edge:edge.category.algebra",
+        "edge:edge.category.algebraic_geometry",
+        "node:domain.algebra",
+        "node:domain.algebraic_geometry"
+      ]
+    },
+    {
+      "url": "https://terrytao.wordpress.com/books/analysis-i/",
+      "label": "T. Tao — Analysis I",
+      "type": "book",
+      "scopes": [
+        "claim"
+      ],
+      "used_by": [
+        "edge:edge.analysis.constructive_qft",
+        "edge:edge.analysis.functional_analysis",
+        "node:domain.analysis"
+      ]
+    },
+    {
+      "url": "https://theory.cs.princeton.edu/complexity/book.pdf",
+      "label": "S. Arora and B. Barak — Computational Complexity: A Modern Approach",
+      "type": "book",
+      "scopes": [
+        "claim",
+        "context"
+      ],
+      "used_by": [
+        "edge:edge.category.pnp",
+        "edge:edge.complexity.proof_geometry_bridge",
+        "node:domain.complexity_theory"
+      ]
+    },
+    {
+      "url": "https://www.alainconnes.org/docs/book94bigpdf.pdf",
+      "label": "A. Connes — Noncommutative Geometry",
+      "type": "book",
+      "scopes": [
+        "claim"
+      ],
+      "used_by": [
+        "edge:edge.ncg.qft",
+        "node:domain.noncommutative_geometry"
+      ]
+    },
+    {
+      "url": "https://www.cambridge.org/highereducation/books/quantum-computation-and-quantum-information/01E10196D0A682A6AEFFEA52D53BE9AE",
+      "label": "M. A. Nielsen and I. L. Chuang — Quantum Computation and Quantum Information",
+      "type": "book",
+      "scopes": [
+        "claim"
+      ],
+      "used_by": [
+        "edge:edge.qinfo.no_signalling",
+        "node:bridge.local_operations_no_signalling",
+        "node:domain.quantum_information_theory"
+      ]
+    },
+    {
+      "url": "https://www.claymath.org/millennium-problems/",
+      "label": "Clay Mathematics Institute — Millennium Prize Problems",
+      "type": "official",
+      "scopes": [
+        "claim"
+      ],
+      "used_by": [
+        "node:problem.birch_swinnerton_dyer",
+        "node:problem.hodge_conjecture",
+        "node:problem.navier_stokes",
+        "node:problem.p_vs_np",
+        "node:problem.poincare_conjecture",
+        "node:problem.riemann_hypothesis",
+        "node:problem.yang_mills_mass_gap"
+      ]
+    },
+    {
+      "url": "https://www.claymath.org/millennium/birch-and-swinnerton-dyer-conjecture/",
+      "label": "Clay Mathematics Institute — Birch and Swinnerton-Dyer Conjecture",
+      "type": "official",
+      "scopes": [
+        "claim"
+      ],
+      "used_by": [
+        "edge:edge.arithmetic.bsd",
+        "edge:edge.number.bsd"
+      ]
+    },
+    {
+      "url": "https://www.claymath.org/millennium/hodge-conjecture/",
+      "label": "Clay Mathematics Institute — Hodge Conjecture",
+      "type": "official",
+      "scopes": [
+        "claim"
+      ],
+      "used_by": [
+        "edge:edge.algebraic.hodge",
+        "edge:edge.topology.hodge"
+      ]
+    },
+    {
+      "url": "https://www.claymath.org/millennium/navier-stokes-equation/",
+      "label": "Clay Mathematics Institute — Navier-Stokes Equation",
+      "type": "official",
+      "scopes": [
+        "claim"
+      ],
+      "used_by": [
+        "edge:edge.pde.navier"
+      ]
+    },
+    {
+      "url": "https://www.claymath.org/millennium/p-vs-np/",
+      "label": "Clay Mathematics Institute — P vs NP",
+      "type": "official",
+      "scopes": [
+        "claim"
+      ],
+      "used_by": [
+        "edge:edge.complexity.pnp",
+        "edge:edge.proof_geometry.pnp"
+      ]
+    },
+    {
+      "url": "https://www.claymath.org/millennium/poincare-conjecture/",
+      "label": "Clay Mathematics Institute — Poincare Conjecture",
+      "type": "official",
+      "scopes": [
+        "claim"
+      ],
+      "used_by": [
+        "edge:edge.topology.poincare"
+      ]
+    },
+    {
+      "url": "https://www.claymath.org/millennium/riemann-hypothesis/",
+      "label": "Clay Mathematics Institute — Riemann Hypothesis",
+      "type": "official",
+      "scopes": [
+        "claim"
+      ],
+      "used_by": [
+        "edge:edge.number.riemann"
+      ]
+    },
+    {
+      "url": "https://www.claymath.org/millennium/yang-mills-the-maths-gap/",
+      "label": "Clay Mathematics Institute — Yang-Mills and the Mass Gap",
+      "type": "official",
+      "scopes": [
+        "claim"
+      ],
+      "used_by": [
+        "edge:edge.gauge.yang_mills",
+        "edge:edge.qft.yang_mills",
+        "edge:edge.ym_critical_dimension.mass_gap"
+      ]
+    },
+    {
+      "url": "https://www.claymath.org/wp-content/uploads/2022/05/birchswin.pdf",
+      "label": "A. Wiles — The Birch and Swinnerton-Dyer Conjecture",
+      "type": "paper",
+      "scopes": [
+        "claim"
+      ],
+      "used_by": [
+        "edge:edge.arithmetic.bsd",
+        "edge:edge.automorphic.bsd",
+        "edge:edge.number.bsd"
+      ]
+    },
+    {
+      "url": "https://www.claymath.org/wp-content/uploads/2022/05/riemann.pdf",
+      "label": "E. Bombieri — Problems of the Millennium: The Riemann Hypothesis",
+      "type": "paper",
+      "scopes": [
+        "claim",
+        "context"
+      ],
+      "used_by": [
+        "edge:edge.automorphic.riemann",
+        "edge:edge.number.riemann",
+        "edge:edge.number.trace_bridge",
+        "edge:edge.spectral.riemann",
+        "edge:edge.trace.riemann",
+        "node:bridge.trace_formula_spectral_arithmetic"
+      ]
+    },
+    {
+      "url": "https://www.claymath.org/wp-content/uploads/2022/06/hodge.pdf",
+      "label": "P. Deligne — The Hodge Conjecture",
+      "type": "paper",
+      "scopes": [
+        "claim",
+        "context"
+      ],
+      "used_by": [
+        "edge:edge.algebraic.hodge",
+        "edge:edge.algebraic.motives_bridge",
+        "edge:edge.arithmetic.motives_bridge",
+        "edge:edge.langlands.hodge",
+        "edge:edge.motives.hodge",
+        "edge:edge.topology.hodge",
+        "node:bridge.motives_periods_hodge"
+      ]
+    },
+    {
+      "url": "https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf",
+      "label": "C. Fefferman — Existence and smoothness of the Navier-Stokes equation",
+      "type": "paper",
+      "scopes": [
+        "claim",
+        "context"
+      ],
+      "used_by": [
+        "edge:edge.harmonic.navier",
+        "edge:edge.pde.navier",
+        "edge:edge.poincare.navier",
+        "edge:edge.probability.navier",
+        "edge:edge.renormalization.navier",
+        "node:bridge.renormalization_scaling_pde"
+      ]
+    },
+    {
+      "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
+      "label": "A. Jaffe and E. Witten — Quantum Yang-Mills Theory",
+      "type": "paper",
+      "scopes": [
+        "claim",
+        "context"
+      ],
+      "used_by": [
+        "edge:edge.gauge.qft",
+        "edge:edge.gauge.yang_mills",
+        "edge:edge.gauge.ym_critical_dimension",
+        "edge:edge.gauge.ym_rg_activity",
+        "edge:edge.geometry.gauge",
+        "edge:edge.lattice_scaling.yang_mills",
+        "edge:edge.qft.yang_mills",
+        "edge:edge.representation.yang_mills",
+        "edge:edge.rg.ym_critical_dimension",
+        "edge:edge.spectral.yang_mills",
+        "edge:edge.target_preserving.yang_mills",
+        "edge:edge.ym_critical_dimension.mass_gap",
+        "edge:edge.ym_critical_dimension.rg_activity",
+        "edge:edge.ym_rg_activity.yang_mills",
+        "node:bridge.yang_mills_critical_dimension",
+        "node:domain.gauge_theory",
+        "node:domain.quantum_field_theory",
+        "node:problem.uniform_yang_mills_rg_activity"
+      ]
+    }
+  ]
+}
