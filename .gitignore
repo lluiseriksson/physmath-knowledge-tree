@@ -10,6 +10,8 @@ coverage/
 .vscode/*
 !.vscode/extensions.json
 !.vscode/settings.json
+# Local route-signing private keys; publish only deliberately copied public keys.
+.route-keys/
 # Local source-curation inbox; records store hashes, not raw files.
 curation/inbox/*
 !curation/inbox/.gitkeep

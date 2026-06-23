@@ -47,6 +47,8 @@
     "validate:symlinks": "node scripts/check-symlinks.mjs",
     "generate:jsonld": "node scripts/export-jsonld.mjs --output graph/knowledge-graph.jsonld",
     "route:bundle": "node scripts/bundle-route.mjs",
-    "route:verify": "node scripts/verify-route-bundle.mjs"
+    "route:verify": "node scripts/verify-route-bundle.mjs",
+    "route:keygen": "node scripts/generate-route-key.mjs",
+    "route:attest": "node scripts/attest-route-bundle.mjs"
   }
 }

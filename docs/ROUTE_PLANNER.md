@@ -45,3 +45,7 @@ npm run route:verify -- navier-stokes-route.json
 ```
 
 The verifier binds the request, result and evidence summary to a SHA-256 projection of the canonical route graph and reruns the planner. See [`ROUTE_BUNDLES.md`](./ROUTE_BUNDLES.md) for the exact trust boundary.
+
+## Signed route attestations
+
+A verified bundle can be wrapped in an Ed25519 attestation with `route:keygen` and `route:attest`. `route:verify` continues to recalculate the route against the canonical graph, then reports signature validity and whether the signer matches an explicitly pinned public key or fingerprint. See [`ROUTE_BUNDLES.md`](./ROUTE_BUNDLES.md) for the trust model and command examples.
