@@ -1,12 +1,19 @@
 import { createHash } from 'node:crypto';
-import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
-import { isAbsolute, join, relative } from 'node:path';
+import { existsSync, readFileSync, statSync } from 'node:fs';
+import { join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { isPathInside, walkRegularFiles } from './lib/fs-safety.mjs';
 
 const root = fileURLToPath(new URL('..', import.meta.url));
 const dist = join(root, 'dist');
 const manifestPath = join(dist, 'build-manifest.json');
 if (!existsSync(manifestPath)) throw new Error('Missing dist/build-manifest.json; run npm run build');
+// Reject symlinks, including a linked manifest, before reading artifact contents.
+const actualPaths = walkRegularFiles(dist)
+  .map((file) => relative(dist, file).replaceAll('\\', '/'))
+  .filter((file) => file !== 'build-manifest.json')
+  .sort();
+
 const manifest = JSON.parse(readFileSync(manifestPath, 'utf8'));
 const pkg = JSON.parse(readFileSync(join(root, 'package.json'), 'utf8'));
 const graph = JSON.parse(readFileSync(join(root, 'graph/index.json'), 'utf8'));
@@ -23,8 +30,7 @@ let previous = '';
 for (const entry of manifest.files) {
   if (!entry || typeof entry.path !== 'string' || !entry.path || entry.path.includes('\\')) throw new Error('Invalid build-manifest path');
   const file = join(dist, entry.path);
-  const rel = relative(dist, file);
-  if (rel.startsWith('..') || isAbsolute(rel)) throw new Error(`Build-manifest path escapes dist: ${entry.path}`);
+  if (!isPathInside(dist, file)) throw new Error(`Build-manifest path escapes dist: ${entry.path}`);
   if (paths.has(entry.path)) throw new Error(`Duplicate build-manifest path: ${entry.path}`);
   if (previous && previous >= entry.path) throw new Error('Build-manifest paths must be strictly sorted');
   previous = entry.path;
@@ -38,17 +44,6 @@ for (const entry of manifest.files) {
   if (digest !== entry.sha256) throw new Error(`SHA-256 mismatch: ${entry.path}`);
 }
 
-function walk(directory) {
-  return readdirSync(directory).flatMap((name) => {
-    const file = join(directory, name);
-    return statSync(file).isDirectory() ? walk(file) : [file];
-  });
-}
-
-const actualPaths = walk(dist)
-  .map((file) => relative(dist, file).replaceAll('\\', '/'))
-  .filter((file) => file !== 'build-manifest.json')
-  .sort();
 if (actualPaths.length !== paths.size) throw new Error('Built-file count differs from manifest');
 for (const file of actualPaths) if (!paths.has(file)) throw new Error(`Unmanifested built file: ${file}`);
 

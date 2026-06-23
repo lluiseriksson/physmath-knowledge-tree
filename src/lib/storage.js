@@ -5,6 +5,14 @@
 export const STORAGE_KEY = 'physmath-knowledge-tree:progress:v1';
 export const PREFERENCE_KEY = 'physmath-knowledge-tree:preferences:v1';
 export const MAX_IMPORT_BYTES = 1_000_000;
+const APPLICATION_NAME = 'PhysMath Knowledge Tree';
+const PROGRESS_SCHEMA_VERSION = 1;
+const VALID_STATUSES = new Set(['not-started', 'learning', 'mastered']);
+
+/** @param {unknown} value @returns {value is Record<string, unknown>} */
+function isRecord(value) {
+  return Boolean(value) && typeof value === 'object' && !Array.isArray(value);
+}
 
 /** @returns {AppProgress} */
 export function createEmptyProgress() {
@@ -14,22 +22,19 @@ export function createEmptyProgress() {
 /** @param {unknown} input @param {Set<string>} validIds @returns {AppProgress} */
 export function sanitizeProgress(input, validIds) {
   const empty = createEmptyProgress();
-  if (!input || typeof input !== 'object') return empty;
-  const candidate = /** @type {Record<string, unknown>} */ (input);
-  const rawStatuses = candidate.statuses && typeof candidate.statuses === 'object'
-    ? /** @type {Record<string, unknown>} */ (candidate.statuses)
-    : {};
+  if (!isRecord(input)) return empty;
+  const rawStatuses = isRecord(input.statuses) ? input.statuses : {};
   const statuses = {};
   for (const [id, status] of Object.entries(rawStatuses)) {
-    if (validIds.has(id) && ['not-started', 'learning', 'mastered'].includes(String(status))) {
+    if (validIds.has(id) && VALID_STATUSES.has(String(status))) {
       statuses[id] = /** @type {ProgressStatus} */ (status);
     }
   }
-  const favorites = Array.isArray(candidate.favorites)
-    ? candidate.favorites.filter((id) => typeof id === 'string' && validIds.has(id))
+  const favorites = Array.isArray(input.favorites)
+    ? input.favorites.filter((id) => typeof id === 'string' && validIds.has(id))
     : [];
-  const updatedAt = typeof candidate.updatedAt === 'string' && !Number.isNaN(Date.parse(candidate.updatedAt))
-    ? candidate.updatedAt
+  const updatedAt = typeof input.updatedAt === 'string' && !Number.isNaN(Date.parse(input.updatedAt))
+    ? input.updatedAt
     : empty.updatedAt;
   return { schemaVersion: 1, statuses, favorites: [...new Set(favorites)], updatedAt };
 }
@@ -58,19 +63,44 @@ export function saveProgress(progress, storage = localStorage) {
 /** @param {AppProgress} progress */
 export function exportProgress(progress) {
   return JSON.stringify({
-    application: 'PhysMath Knowledge Tree',
-    schemaVersion: 1,
+    application: APPLICATION_NAME,
+    schemaVersion: PROGRESS_SCHEMA_VERSION,
     exportedAt: new Date().toISOString(),
     progress,
   }, null, 2);
+}
+
+/** @param {unknown} parsed @returns {Record<string, unknown>} */
+function extractImportedProgress(parsed) {
+  if (!isRecord(parsed)) throw new Error('Progress import must contain a JSON object');
+  if (!Object.hasOwn(parsed, 'progress')) return parsed;
+  if (parsed.application !== APPLICATION_NAME) throw new Error('Progress export belongs to another application');
+  if (parsed.schemaVersion !== PROGRESS_SCHEMA_VERSION) throw new Error('Unsupported progress export schema version');
+  if (!isRecord(parsed.progress)) throw new Error('Progress export payload must be an object');
+  return parsed.progress;
+}
+
+/** @param {Record<string, unknown>} payload */
+function validateImportedProgress(payload) {
+  if (payload.schemaVersion !== PROGRESS_SCHEMA_VERSION) throw new Error('Unsupported progress schema version');
+  if (!isRecord(payload.statuses)) throw new Error('Progress statuses must be an object');
+  if (!Array.isArray(payload.favorites)) throw new Error('Progress favorites must be an array');
+  for (const status of Object.values(payload.statuses)) {
+    if (typeof status !== 'string' || !VALID_STATUSES.has(status)) throw new Error('Progress contains an invalid status');
+  }
+  if (payload.favorites.some((id) => typeof id !== 'string')) throw new Error('Progress favorites must contain topic IDs');
+  if (Object.hasOwn(payload, 'updatedAt')
+      && (typeof payload.updatedAt !== 'string' || Number.isNaN(Date.parse(payload.updatedAt)))) {
+    throw new Error('Progress updatedAt must be an ISO-compatible date');
+  }
 }
 
 /** @param {string} text @param {Set<string>} validIds */
 export function importProgress(text, validIds) {
   if (typeof text !== 'string') throw new Error('Progress import must be text');
   if (new TextEncoder().encode(text).length > MAX_IMPORT_BYTES) throw new Error('Progress import exceeds the size limit');
-  const parsed = JSON.parse(text);
-  const payload = parsed && typeof parsed === 'object' && 'progress' in parsed ? parsed.progress : parsed;
+  const payload = extractImportedProgress(JSON.parse(text));
+  validateImportedProgress(payload);
   return sanitizeProgress(payload, validIds);
 }
 
@@ -78,9 +108,13 @@ export function importProgress(text, validIds) {
 export function validateProgressFile(file) {
   if (!file || typeof file.size !== 'number' || !Number.isFinite(file.size) || file.size < 0) throw new Error('Invalid progress file');
   if (file.size > MAX_IMPORT_BYTES) throw new Error('Progress import exceeds the size limit');
-  const type = file.type ?? '';
-  const name = file.name ?? '';
-  if (type && type !== 'application/json' && !name.toLowerCase().endsWith('.json')) throw new Error('Progress import must be JSON');
+  const type = (file.type ?? '').split(';', 1)[0].trim().toLowerCase();
+  const name = (file.name ?? '').trim();
+  if (name && !name.toLowerCase().endsWith('.json')) throw new Error('Progress import filename must end in .json');
+  const compatibleTypes = new Set(['application/json', 'text/json', 'application/octet-stream', 'text/plain']);
+  if (type && !compatibleTypes.has(type) && !type.endsWith('+json')) {
+    throw new Error('Progress import must use a JSON-compatible media type');
+  }
   return true;
 }
 

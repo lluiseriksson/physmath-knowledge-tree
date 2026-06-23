@@ -1,7 +1,8 @@
 import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
-import { cpSync, existsSync, mkdirSync, readdirSync, readFileSync, rmSync, statSync, writeFileSync } from 'node:fs';
+import { cpSync, existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { join, relative } from 'node:path';
+import { assertTreeHasNoSymlinks, walkRegularFiles } from './lib/fs-safety.mjs';
 
 const root = fileURLToPath(new URL('..', import.meta.url));
 const dist = join(root, 'dist');
@@ -22,11 +23,16 @@ const inputs = [
   'curation',
 ];
 
-rmSync(dist, { recursive: true, force: true });
-mkdirSync(dist, { recursive: true });
-for (const item of inputs) {
+const resolvedInputs = inputs.map((item) => {
   const from = join(root, item);
   if (!existsSync(from)) throw new Error(`Missing build input: ${item}`);
+  assertTreeHasNoSymlinks(from, item);
+  return { item, from };
+});
+
+rmSync(dist, { recursive: true, force: true });
+mkdirSync(dist, { recursive: true });
+for (const { item, from } of resolvedInputs) {
   cpSync(from, join(dist, item), { recursive: true });
 }
 
@@ -44,18 +50,10 @@ writeFileSync(join(dist, '_headers'), `/*
   Cache-Control: no-cache
 `);
 
-function walk(dir) {
-  return readdirSync(dir).flatMap((name) => {
-    const path = join(dir, name);
-    if (statSync(path).isDirectory()) return walk(path);
-    return [path];
-  });
-}
-
 const packageJson = JSON.parse(readFileSync(join(root, 'package.json'), 'utf8'));
 const graphIndex = JSON.parse(readFileSync(join(root, 'graph/index.json'), 'utf8'));
 const curationIndex = JSON.parse(readFileSync(join(root, 'curation/index.json'), 'utf8'));
-const files = walk(dist)
+const files = walkRegularFiles(dist)
   .filter((path) => !path.endsWith('build-manifest.json'))
   .map((path) => {
     const bytes = readFileSync(path);

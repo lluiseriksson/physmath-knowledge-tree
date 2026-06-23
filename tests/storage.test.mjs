@@ -58,7 +58,7 @@ test('export/import accepts wrapped and bare data', () => {
 
 test('oversized or non-JSON imports are rejected', () => {
   assert.throws(() => importProgress('x'.repeat(MAX_IMPORT_BYTES + 1), ids), /size limit/);
-  assert.throws(() => validateProgressFile({ size: 12, type: 'text/plain', name: 'progress.txt' }), /JSON/);
+  assert.throws(() => validateProgressFile({ size: 12, type: 'text/plain', name: 'progress.txt' }), /filename/);
   assert.throws(() => validateProgressFile({ size: Number.NaN, name: 'progress.json' }), /Invalid/);
   assert.throws(() => importProgress(/** @type {any} */ (null), ids), /text/);
   assert.throws(() => validateProgressFile({ size: MAX_IMPORT_BYTES + 1, type: 'application/json', name: 'progress.json' }), /size limit/);

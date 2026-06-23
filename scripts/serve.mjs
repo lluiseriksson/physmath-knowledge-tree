@@ -1,7 +1,10 @@
 import { createReadStream, existsSync, statSync } from 'node:fs';
 import { createServer } from 'node:http';
-import { extname, isAbsolute, relative, resolve } from 'node:path';
+import { extname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { isPathInside, resolveRealPathInside } from './lib/fs-safety.mjs';
+
+export { isPathInside };
 
 const defaultRoot = resolve(fileURLToPath(new URL('..', import.meta.url)));
 const mime = {
@@ -32,12 +35,13 @@ export function resolveRequestPath(root, rawUrl = '/') {
   const requestUrl = rawUrl === '' ? '/' : rawUrl;
   const url = new URL(requestUrl, 'http://localhost');
   let pathname = decodeURIComponent(url.pathname);
+  if (pathname.includes('\\') || pathname.includes('\0')) throw new URIError('Invalid request path');
   if (pathname.endsWith('/')) pathname += 'index.html';
-  const file = resolve(root, `.${pathname}`);
-  const rel = relative(root, file);
-  if (rel === '' || rel.startsWith('..') || isAbsolute(rel)) return null;
-  return file;
+  const absoluteRoot = resolve(root);
+  const file = resolve(absoluteRoot, `.${pathname}`);
+  return isPathInside(absoluteRoot, file) ? file : null;
 }
+
 /** Handle one request for the dependency-free static server. */
 export function handleStaticRequest(absoluteRoot, request, response) {
   try {
@@ -54,7 +58,19 @@ export function handleStaticRequest(absoluteRoot, request, response) {
       response.end('Forbidden');
       return;
     }
-    if (!existsSync(file) || !statSync(file).isFile()) {
+    if (!existsSync(file)) {
+      response.writeHead(404, { ...securityHeaders, 'Content-Type': 'text/plain; charset=utf-8' });
+      response.end('Not found');
+      return;
+    }
+
+    const realFile = resolveRealPathInside(absoluteRoot, file);
+    if (!realFile) {
+      response.writeHead(403, { ...securityHeaders, 'Content-Type': 'text/plain; charset=utf-8' });
+      response.end('Forbidden');
+      return;
+    }
+    if (!statSync(realFile).isFile()) {
       response.writeHead(404, { ...securityHeaders, 'Content-Type': 'text/plain; charset=utf-8' });
       response.end('Not found');
       return;
@@ -62,11 +78,11 @@ export function handleStaticRequest(absoluteRoot, request, response) {
 
     response.writeHead(200, {
       ...securityHeaders,
-      'Content-Length': statSync(file).size,
-      'Content-Type': mime[extname(file)] ?? 'application/octet-stream',
+      'Content-Length': statSync(realFile).size,
+      'Content-Type': mime[extname(realFile)] ?? 'application/octet-stream',
     });
     if (method === 'HEAD') response.end();
-    else createReadStream(file).pipe(response);
+    else createReadStream(realFile).pipe(response);
   } catch (error) {
     const status = error instanceof URIError ? 400 : 500;
     response.writeHead(status, { ...securityHeaders, 'Content-Type': 'text/plain; charset=utf-8' });

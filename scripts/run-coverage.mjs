@@ -3,12 +3,14 @@ import { spawnSync } from 'node:child_process';
 const productionFiles = [
   'scripts/lib/curation.mjs',
   'scripts/lib/evaluation.mjs',
+  'scripts/lib/fs-safety.mjs',
   'scripts/serve.mjs',
   'src/data/topics.js',
   'src/lib/graph.js',
   'src/lib/research-graph.js',
   'src/lib/search.js',
   'src/lib/storage.js',
+  'src/lib/url-state.js',
 ];
 
 const args = [
