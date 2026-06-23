@@ -1,4 +1,4 @@
-const dictionaries = {
+export const researchMessages = {
   en: {
     'nav.skip': 'Skip to the research graph',
     'app.heading': 'PhysMath Knowledge Tree research graph',
@@ -6,8 +6,16 @@ const dictionaries = {
     'nav.research': 'Research graph',
     'nav.learning': 'Learning map',
     'nav.repository': 'Repository',
+    'nav.home': 'PhysMath Knowledge Tree home',
+    'nav.primary': 'Primary navigation',
+    'header.language': 'Interface language',
+    'header.theme': 'Change theme',
+    'header.help': 'Keyboard shortcuts',
     loading: 'Loading canonical graph…',
     'controls.title': 'Explore',
+    'controls.panel': 'Graph controls',
+    'controls.open': 'Open controls',
+    'controls.close': 'Close controls',
     'search.title': 'Find a node',
     'search.label': 'Search research nodes',
     'search.placeholder': 'Search titles, tags, questions…',
@@ -19,15 +27,25 @@ const dictionaries = {
     'filters.title': 'Filters',
     'filters.kind': 'Node kind',
     'filters.confidence': 'Evidence level',
-    'path.title': 'Shortest path',
+    'path.title': 'Evidence-aware route',
     'path.source': 'From',
     'path.target': 'To',
+    'path.policy': 'Route objective',
+    'path.policy.shortest': 'Fewest edges',
+    'path.policy.balanced': 'Balanced evidence and length',
+    'path.policy.strongest': 'Strongest available evidence',
+    'path.evidence': 'Evidence gate',
+    'path.evidence.all': 'All evidence levels',
+    'path.evidence.sourced': 'Formal and literature only',
+    'path.evidence.formal': 'Formal only',
     'path.directed': 'Respect edge direction',
-    'path.find': 'Find path',
+    'path.find': 'Find route',
     'path.clear': 'Clear',
     'path.choose': 'Choose two different nodes.',
-    'path.none': 'No path was found.',
+    'path.none': 'No route satisfies the selected direction and evidence gate.',
     'path.steps': '{count} edges',
+    'path.evidenceSummary': '{policy} · weakest edge: {confidence} · {references} references',
+    'path.noneEvidence': 'none',
     'moves.title': 'Bridge-card generator',
     'moves.move': 'Research move',
     'moves.target': 'Target node',
@@ -38,14 +56,22 @@ const dictionaries = {
     'moves.copied': 'Bridge card copied.',
     'export.title': 'Portable data',
     'export.subgraph': 'Export visible subgraph',
+    'export.jsonld': 'Export canonical JSON-LD',
     'export.index': 'Download graph index',
     'export.audit': 'Evidence audit',
     'export.saved': 'Visible subgraph exported.',
+    'export.jsonldSaved': 'Canonical JSON-LD exported.',
     'view.graph': 'Graph',
     'view.list': 'List',
     'view.fit': 'Fit',
+    'view.mode': 'View mode',
+    'view.zoomOut': 'Zoom out',
+    'view.zoomIn': 'Zoom in',
     'view.summary': '{nodes} nodes · {edges} edges',
     'graph.instructions': 'Use the mouse or touch to pan and zoom. Select a node to open its evidence, questions and Lean targets.',
+    'graph.stage': 'Interactive knowledge graph',
+    'list.label': 'Knowledge nodes',
+    'legend.label': 'Graph legend',
     'empty.title': 'No nodes match',
     'empty.body': 'Reset the filters or choose another collection.',
     'legend.title': 'Legend',
@@ -75,6 +101,9 @@ const dictionaries = {
     'detail.references': 'References',
     'detail.status': 'Status',
     'detail.tags': 'Tags',
+    'detail.close': 'Close details',
+    'moves.close': 'Close bridge card',
+    'moves.output': 'Generated bridge card Markdown',
     'status.solved': 'Solved calibration',
     'status.unsolved': 'Open problem',
     'relation.depends_on': 'depends on',
@@ -94,13 +123,21 @@ const dictionaries = {
   },
   es: {
     'nav.skip': 'Saltar al grafo de investigación',
-    'app.heading': 'Grafo de investigacion de PhysMath Knowledge Tree',
+    'app.heading': 'Grafo de investigación de PhysMath Knowledge Tree',
     'app.tagline': 'Puentes trazables para física, matemáticas y Lean',
     'nav.research': 'Grafo de investigación',
     'nav.learning': 'Mapa de aprendizaje',
     'nav.repository': 'Repositorio',
+    'nav.home': 'Inicio de PhysMath Knowledge Tree',
+    'nav.primary': 'Navegación principal',
+    'header.language': 'Idioma de la interfaz',
+    'header.theme': 'Cambiar tema',
+    'header.help': 'Atajos de teclado',
     loading: 'Cargando el grafo canónico…',
     'controls.title': 'Explorar',
+    'controls.panel': 'Controles del grafo',
+    'controls.open': 'Abrir controles',
+    'controls.close': 'Cerrar controles',
     'search.title': 'Buscar un nodo',
     'search.label': 'Buscar nodos de investigación',
     'search.placeholder': 'Buscar títulos, etiquetas, preguntas…',
@@ -112,15 +149,25 @@ const dictionaries = {
     'filters.title': 'Filtros',
     'filters.kind': 'Tipo de nodo',
     'filters.confidence': 'Nivel de evidencia',
-    'path.title': 'Camino más corto',
+    'path.title': 'Ruta sensible a la evidencia',
     'path.source': 'Desde',
     'path.target': 'Hasta',
+    'path.policy': 'Objetivo de la ruta',
+    'path.policy.shortest': 'Menor número de aristas',
+    'path.policy.balanced': 'Equilibrar evidencia y longitud',
+    'path.policy.strongest': 'Evidencia disponible más fuerte',
+    'path.evidence': 'Filtro de evidencia',
+    'path.evidence.all': 'Todos los niveles de evidencia',
+    'path.evidence.sourced': 'Solo formal y literatura',
+    'path.evidence.formal': 'Solo formal',
     'path.directed': 'Respetar la dirección',
-    'path.find': 'Buscar camino',
+    'path.find': 'Buscar ruta',
     'path.clear': 'Limpiar',
     'path.choose': 'Elige dos nodos distintos.',
-    'path.none': 'No se encontró ningún camino.',
+    'path.none': 'Ninguna ruta satisface la dirección y el filtro de evidencia seleccionados.',
     'path.steps': '{count} aristas',
+    'path.evidenceSummary': '{policy} · arista más débil: {confidence} · {references} referencias',
+    'path.noneEvidence': 'ninguna',
     'moves.title': 'Generador de bridge cards',
     'moves.move': 'Movimiento de investigación',
     'moves.target': 'Nodo objetivo',
@@ -131,14 +178,22 @@ const dictionaries = {
     'moves.copied': 'Bridge card copiada.',
     'export.title': 'Datos portables',
     'export.subgraph': 'Exportar subgrafo visible',
+    'export.jsonld': 'Exportar JSON-LD canónico',
     'export.index': 'Descargar índice del grafo',
     'export.audit': 'Auditoría de evidencia',
     'export.saved': 'Subgrafo visible exportado.',
+    'export.jsonldSaved': 'JSON-LD canónico exportado.',
     'view.graph': 'Grafo',
     'view.list': 'Lista',
     'view.fit': 'Encajar',
+    'view.mode': 'Modo de vista',
+    'view.zoomOut': 'Alejar',
+    'view.zoomIn': 'Acercar',
     'view.summary': '{nodes} nodos · {edges} aristas',
     'graph.instructions': 'Usa ratón o tacto para desplazar y ampliar. Selecciona un nodo para abrir su evidencia, preguntas y objetivos Lean.',
+    'graph.stage': 'Grafo de conocimiento interactivo',
+    'list.label': 'Nodos de conocimiento',
+    'legend.label': 'Leyenda del grafo',
     'empty.title': 'Ningún nodo coincide',
     'empty.body': 'Restablece los filtros o elige otra colección.',
     'legend.title': 'Leyenda',
@@ -168,6 +223,9 @@ const dictionaries = {
     'detail.references': 'Referencias',
     'detail.status': 'Estado',
     'detail.tags': 'Etiquetas',
+    'detail.close': 'Cerrar detalles',
+    'moves.close': 'Cerrar bridge card',
+    'moves.output': 'Markdown de la bridge card generada',
     'status.solved': 'Calibración resuelta',
     'status.unsolved': 'Problema abierto',
     'relation.depends_on': 'depende de',
@@ -202,8 +260,8 @@ export function detectLanguage() {
 }
 
 export function t(language, key, variables = {}) {
-  const dictionary = dictionaries[supportedLanguage(language)];
-  const fallback = dictionaries.en;
+  const dictionary = researchMessages[supportedLanguage(language)];
+  const fallback = researchMessages.en;
   const template = dictionary[key] ?? fallback[key] ?? key;
   return Object.entries(variables).reduce(
     (text, [name, value]) => text.replaceAll(`{${name}}`, String(value)),
@@ -213,11 +271,17 @@ export function t(language, key, variables = {}) {
 
 export function translateDocument(language, root = document) {
   const lang = supportedLanguage(language);
-  document.documentElement.lang = lang;
+  const ownerDocument = root.nodeType === 9 ? root : root.ownerDocument ?? document;
+  ownerDocument.documentElement.lang = lang;
   for (const element of root.querySelectorAll('[data-i18n]')) {
     element.textContent = t(lang, element.dataset.i18n);
   }
   for (const element of root.querySelectorAll('[data-i18n-placeholder]')) {
     element.setAttribute('placeholder', t(lang, element.dataset.i18nPlaceholder));
+  }
+  for (const element of root.querySelectorAll('[data-i18n-aria]')) {
+    const label = t(lang, element.dataset.i18nAria);
+    element.setAttribute('aria-label', label);
+    element.setAttribute('title', label);
   }
 }

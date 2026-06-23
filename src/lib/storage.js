@@ -95,12 +95,24 @@ function validateImportedProgress(payload) {
   }
 }
 
+/** @param {Record<string, unknown>} payload */
+function importedTopicIds(payload) {
+  return new Set([
+    ...Object.keys(/** @type {Record<string, unknown>} */ (payload.statuses)),
+    .../** @type {string[]} */ (payload.favorites),
+  ]);
+}
+
 /** @param {string} text @param {Set<string>} validIds */
 export function importProgress(text, validIds) {
   if (typeof text !== 'string') throw new Error('Progress import must be text');
   if (new TextEncoder().encode(text).length > MAX_IMPORT_BYTES) throw new Error('Progress import exceeds the size limit');
   const payload = extractImportedProgress(JSON.parse(text));
   validateImportedProgress(payload);
+  const referencedIds = importedTopicIds(payload);
+  if (referencedIds.size > 0 && ![...referencedIds].some((id) => validIds.has(id))) {
+    throw new Error('Progress import does not contain any topic IDs from this catalog');
+  }
   return sanitizeProgress(payload, validIds);
 }
 

@@ -9,7 +9,11 @@
   "display": "standalone",
   "background_color": "#f4f7fb",
   "theme_color": "#285bd6",
-  "categories": ["education", "productivity", "science"],
+  "categories": [
+    "education",
+    "productivity",
+    "science"
+  ],
   "shortcuts": [
     {
       "name": "Research graph",
@@ -23,8 +27,39 @@
     }
   ],
   "icons": [
-    {"src": "./assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
-    {"src": "./assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
-    {"src": "./assets/icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+    {
+      "src": "./assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./assets/icons/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "./docs/research-screenshot.png",
+      "sizes": "1536x1050",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Research graph with evidence-labelled physics and mathematics connections"
+    },
+    {
+      "src": "./docs/screenshot.png",
+      "sizes": "1440x960",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Bilingual learning map with prerequisite paths and progress tracking"
+    }
   ]
 }

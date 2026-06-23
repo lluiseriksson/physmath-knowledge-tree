@@ -9,21 +9,23 @@ npm ci
 npm run check
 ```
 
-The complete gate validates syntax, graph schemas and invariants, curation provenance, generated reports, learning data, links, accessibility checks, PWA metadata, workflow pinning, formatting, tests with 100% line, branch and function coverage for the explicit Node module set, the production build and its SHA-256 manifest, and a real Chromium smoke pass over `dist/`.
+The complete gate validates syntax, graph and curation invariants, generated reports, learning data, bilingual message parity, links, accessibility, PWA policy, release metadata, deterministic JSON-LD, pinned workflows, formatting, 100% line/branch/function coverage for the explicit Node module set, an atomically published production build, its closed SHA-256 manifest and real Chromium smoke passes over `dist/`.
 
 Regenerate canonical projections and evaluations with:
 
 ```bash
 npm run generate:views
 npm run generate:audit
+npm run generate:jsonld
 npm run evaluate
 ```
 
-Verify that generated artifacts are current without rewriting them:
+Verify generated artifacts without rewriting them:
 
 ```bash
 npm run validate:views
 npm run validate:audit
+npm run validate:jsonld
 npm run validate:evaluation
 ```
 
@@ -34,23 +36,37 @@ npm run build
 npm run test:e2e
 ```
 
-The browser runner auto-detects Chrome, Chromium or Edge. Set `BROWSER_BIN=/path/to/browser` when necessary. It uses a fresh profile, a loopback-only server and the Chrome DevTools Protocol; it adds no npm dependency. See `docs/BROWSER_TESTING.md` for covered flows and limitations.
+The browser runners auto-detect Chrome, Chromium or Edge. Set `BROWSER_BIN=/path/to/browser` when necessary. They use fresh profiles, loopback-only servers and the Chrome DevTools Protocol; they add no npm dependency. See [`docs/BROWSER_TESTING.md`](./BROWSER_TESTING.md) for covered flows and limitations.
 
-## Reproducible scenarios
+## Evidence-aware ad-hoc routes
 
-List available scenarios:
+The interactive research app and CLI share the same deterministic planner:
+
+```bash
+npm run route:plan -- domain.number_theory problem.riemann_hypothesis
+npm run route:plan -- domain.analysis problem.navier_stokes --compare --format json
+```
+
+Route output records its objective, direction, evidence gate and finite search limits. It is a graph-derived navigation aid, not a theorem or evidence promotion. See [`docs/ROUTE_PLANNER.md`](./ROUTE_PLANNER.md).
+
+## Committed evaluation scenarios
+
+List available scenarios and reproduce one:
 
 ```bash
 npm run usecase:list
-```
-
-Render one route:
-
-```bash
 npm run usecase -- route.target_sensitive_yang_mills
 ```
 
-The route output is derived only from canonical JSON, deterministic breadth-first path selection and the committed scenario definition.
+These committed regression scenarios remain separate from ad-hoc route planning. Their output is derived from canonical JSON and the committed scenario definition.
+
+## Interoperable graph export
+
+```bash
+npm run export:jsonld -- --output physmath-knowledge-graph.jsonld
+```
+
+The committed `graph/knowledge-graph.jsonld` is a deterministic projection and is checked for staleness. Canonical edits remain in the source JSON files. See [`docs/JSONLD_EXPORT.md`](./JSONLD_EXPORT.md).
 
 ## Machine-dependent performance
 

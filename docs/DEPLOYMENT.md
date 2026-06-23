@@ -4,7 +4,7 @@
 
 The repository deploys the static `dist/` directory through `.github/workflows/pages.yml`.
 
-1. In **Settings → Pages**, select **GitHub Actions** as the source.
+1. In **Settings -> Pages**, select **GitHub Actions** as the source.
 2. Push to `main` or run the Pages workflow manually.
 3. The workflow installs locked Node metadata, executes the full quality gate, builds `dist/`, uploads the Pages artifact and deploys it.
 
@@ -25,16 +25,24 @@ npm run check
 npm run dev
 ```
 
-The development server serves the repository root with security headers. To inspect exactly what Pages receives, build first and serve `dist/` with any static server.
+The dependency-free server exposes only the declared deployment surface, even when it serves the repository root. Repository metadata, scripts and tests are not web-readable through the development origin. To inspect exactly what Pages receives, run `npm run build` and serve `dist/`.
+
+## Atomic build publication
+
+The build is assembled in a same-filesystem staging directory. JSON-LD, response-header metadata, the content-derived PWA revision and build manifest are completed before the staging directory replaces `dist/`. A failed build removes its staging directory and preserves the previously valid artifact.
+
+`dist/build-manifest.json` format 3 records every payload path, byte count and SHA-256, plus the total byte count, file count, JSON-LD entity count and one aggregate artifact digest. `npm run validate:dist` rejects extra keys, missing files, unmanifested files, symlinks, path escapes and stale cache identities.
 
 ## Cache invalidation
 
-`sw.js` uses a versioned cache name. Increment it whenever application-shell paths or caching behavior change. The service worker removes older caches during activation.
+The source service worker carries a bounded source revision. Production builds replace it with a `build-...` revision derived from every payload except `sw.js`, avoiding a self-referential hash. Each revision has a separate immutable shell cache and bounded runtime cache. Activation deletes only obsolete caches owned by this application.
+
+Do not manually increment the semantic application version merely to invalidate static assets. A content change automatically produces a new production cache namespace.
 
 ## Rollback
 
-GitHub Pages deployments are tied to workflow runs. For a source rollback, revert the problematic commit on `main`; the next successful Pages run deploys the rebuilt prior state. Do not manually edit generated files in the Pages artifact.
+GitHub Pages deployments are tied to workflow runs. For a source rollback, revert the problematic commit on `main`; the next successful Pages run atomically rebuilds and deploys the prior state. Do not manually edit generated files in the Pages artifact.
 
 ## Other static hosts
 
-`dist/_headers` is generated for hosts that support header files. GitHub Pages does not consume it, so security policy is also declared in HTML. Preserve `404.html`, `.nojekyll`, `manifest.webmanifest` and `sw.js` when moving the artifact.
+`dist/_headers` is generated for hosts that support header files. GitHub Pages does not consume it, so security policy is also declared in HTML. Preserve `404.html`, `.nojekyll`, `manifest.webmanifest`, `sw.js`, `graph/knowledge-graph.jsonld` and `build-manifest.json` when moving the artifact.

@@ -19,10 +19,13 @@ export function resolveRealPathInside(root, candidate) {
 export function assertTreeHasNoSymlinks(path, displayPath = path) {
   const stat = lstatSync(path);
   if (stat.isSymbolicLink()) throw new Error(`Symbolic links are not allowed in build inputs: ${displayPath}`);
-  if (!stat.isDirectory()) return;
-  for (const name of readdirSync(path).sort()) {
-    assertTreeHasNoSymlinks(join(path, name), `${displayPath}/${name}`);
+  if (stat.isDirectory()) {
+    for (const name of readdirSync(path).sort()) {
+      assertTreeHasNoSymlinks(join(path, name), `${displayPath}/${name}`);
+    }
+    return;
   }
+  if (!stat.isFile()) throw new Error(`Unsupported filesystem entry in build inputs: ${displayPath}`);
 }
 
 /** Return all non-directory, non-symlink entries under a directory. */
@@ -35,6 +38,7 @@ export function walkRegularFiles(directory) {
       for (const name of readdirSync(path).sort()) visit(join(path, name));
       return;
     }
+    if (!stat.isFile()) throw new Error(`Unsupported filesystem entry in closed artifact: ${path}`);
     files.push(path);
   };
   visit(directory);

@@ -1,7 +1,8 @@
 {
   "schema_version": "0.6.0",
+  "application_version": "2.6.0",
   "created": "2026-06-22",
-  "updated": "2026-06-22",
+  "updated": "2026-06-23",
   "name": "PhysMath Knowledge Tree",
   "purpose": "A computable graph of physics-mathematics concepts, bridges, problems and Lean targets for research agents.",
   "canonical_files": {
@@ -57,12 +58,16 @@
     "prompts/lean-formalization.md",
     "docs/STATEMENT_OF_NEED.md",
     "docs/USE_CASES.md",
-    "evaluation/scenarios.json"
+    "evaluation/scenarios.json",
+    "docs/ROUTE_PLANNER.md",
+    "docs/JSONLD_EXPORT.md",
+    "graph/knowledge-graph.jsonld"
   ],
   "generated_files": {
     "audit": "graph/audit.json",
     "curation_report": "curation/REPORT.md",
     "reference_registry": "graph/reference-registry.json",
-    "evaluation": "evaluation/results.json"
+    "evaluation": "evaluation/results.json",
+    "jsonld": "graph/knowledge-graph.jsonld"
   }
 }

@@ -14,6 +14,7 @@
   <link rel="icon" href="./assets/icons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="./assets/icons/icon-192.png">
   <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="alternate" type="application/ld+json" href="./graph/knowledge-graph.jsonld" title="Canonical knowledge graph JSON-LD">
   <link rel="stylesheet" href="./src/research.css">
   <script type="module" src="./src/research-app.js"></script>
 </head>
@@ -21,26 +22,26 @@
   <a class="skip-link" href="#research-workspace" data-i18n="nav.skip">Skip to the research graph</a>
 
   <header class="topbar">
-    <a class="brand" href="./" aria-label="PhysMath Knowledge Tree home">
+    <a class="brand" href="./" aria-label="PhysMath Knowledge Tree home" data-i18n-aria="nav.home">
       <img src="./assets/icons/icon.svg" width="42" height="42" alt="">
       <span>
         <strong>PhysMath Knowledge Tree</strong>
         <small data-i18n="app.tagline">Traceable bridges for physics, mathematics and Lean</small>
       </span>
     </a>
-    <nav class="primary-nav" aria-label="Primary navigation">
+    <nav class="primary-nav" aria-label="Primary navigation" data-i18n-aria="nav.primary">
       <a href="./" aria-current="page" data-i18n="nav.research">Research graph</a>
       <a href="./learning.html" data-i18n="nav.learning">Learning map</a>
       <a href="https://github.com/lluiseriksson/physmath-knowledge-tree" rel="noreferrer" data-i18n="nav.repository">Repository</a>
     </nav>
     <div class="header-actions">
-      <button id="open-panel" class="icon-button mobile-only" type="button" aria-label="Open controls" aria-controls="control-panel" aria-expanded="false">☰</button>
-      <select id="language" aria-label="Interface language">
+      <button id="open-panel" class="icon-button mobile-only" type="button" aria-label="Open controls" data-i18n-aria="controls.open" aria-controls="control-panel" aria-expanded="false">☰</button>
+      <select id="language" aria-label="Interface language" data-i18n-aria="header.language">
         <option value="en">EN</option>
         <option value="es">ES</option>
       </select>
-      <button id="theme" class="icon-button" type="button" aria-label="Change theme">◐</button>
-      <button id="help" class="icon-button" type="button" aria-label="Keyboard shortcuts">?</button>
+      <button id="theme" class="icon-button" type="button" aria-label="Change theme" data-i18n-aria="header.theme">◐</button>
+      <button id="help" class="icon-button" type="button" aria-label="Keyboard shortcuts" data-i18n-aria="header.help">?</button>
     </div>
   </header>
 
@@ -50,10 +51,10 @@
   </div>
 
   <div id="app-shell" class="app-shell" hidden>
-    <aside id="control-panel" class="control-panel" aria-label="Graph controls" tabindex="-1">
+    <aside id="control-panel" class="control-panel" aria-label="Graph controls" data-i18n-aria="controls.panel" tabindex="-1">
       <div class="panel-mobile-head mobile-only">
         <strong data-i18n="controls.title">Explore</strong>
-        <button id="close-panel" class="icon-button" type="button" aria-label="Close controls">×</button>
+        <button id="close-panel" class="icon-button" type="button" aria-label="Close controls" data-i18n-aria="controls.close">×</button>
       </div>
 
       <section>
@@ -63,7 +64,7 @@
         </div>
         <label class="search-box">
           <span aria-hidden="true">⌕</span>
-          <input id="search" type="search" autocomplete="off" aria-controls="search-results" aria-autocomplete="list" data-i18n-aria="search.label" data-i18n-placeholder="search.placeholder" placeholder="Search titles, tags, questions…">
+          <input id="search" type="search" autocomplete="off" aria-label="Search research nodes" aria-controls="search-results" aria-autocomplete="list" data-i18n-aria="search.label" data-i18n-placeholder="search.placeholder" placeholder="Search titles, tags, questions…">
         </label>
         <div id="search-results" class="search-results" role="listbox" aria-live="polite"></div>
       </section>
@@ -90,17 +91,29 @@
       </section>
 
       <section>
-        <h2 data-i18n="path.title">Shortest path</h2>
+        <h2 data-i18n="path.title">Evidence-aware route</h2>
         <label class="field-label" for="path-source" data-i18n="path.source">From</label>
         <select id="path-source"></select>
         <label class="field-label" for="path-target" data-i18n="path.target">To</label>
         <select id="path-target"></select>
+        <label class="field-label" for="path-policy" data-i18n="path.policy">Route objective</label>
+        <select id="path-policy">
+          <option value="shortest" data-i18n="path.policy.shortest">Fewest edges</option>
+          <option value="balanced" data-i18n="path.policy.balanced">Balanced evidence and length</option>
+          <option value="strongest" data-i18n="path.policy.strongest">Strongest available evidence</option>
+        </select>
+        <label class="field-label" for="path-evidence" data-i18n="path.evidence">Evidence gate</label>
+        <select id="path-evidence">
+          <option value="all" data-i18n="path.evidence.all">All evidence levels</option>
+          <option value="sourced" data-i18n="path.evidence.sourced">Formal and literature only</option>
+          <option value="formal" data-i18n="path.evidence.formal">Formal only</option>
+        </select>
         <label class="check-row">
           <input id="path-directed" type="checkbox">
           <span data-i18n="path.directed">Respect edge direction</span>
         </label>
         <div class="button-row">
-          <button id="find-path" class="primary-button" type="button" data-i18n="path.find">Find path</button>
+          <button id="find-path" class="primary-button" type="button" data-i18n="path.find">Find route</button>
           <button id="clear-path" class="secondary-button" type="button" data-i18n="path.clear">Clear</button>
         </div>
         <div id="path-result" class="path-result" aria-live="polite"></div>
@@ -119,6 +132,7 @@
         <h2 data-i18n="export.title">Portable data</h2>
         <div class="stacked-actions">
           <button id="export-visible" class="secondary-button" type="button" data-i18n="export.subgraph">Export visible subgraph</button>
+          <button id="export-jsonld" class="secondary-button" type="button" data-i18n="export.jsonld">Export canonical JSON-LD</button>
           <a class="secondary-button link-button" href="./graph/index.json" download data-i18n="export.index">Download graph index</a>
           <a class="secondary-button link-button" href="./docs/GRAPH_AUDIT.md" data-i18n="export.audit">Evidence audit</a>
         </div>
@@ -128,19 +142,19 @@
     <main id="research-workspace" class="workspace">
       <h1 class="sr-only" data-i18n="app.heading">PhysMath Knowledge Tree research graph</h1>
       <div class="workspace-toolbar">
-        <div class="segmented" aria-label="View mode">
+        <div class="segmented" aria-label="View mode" data-i18n-aria="view.mode">
           <button id="graph-view-button" type="button" aria-pressed="true" data-i18n="view.graph">Graph</button>
           <button id="list-view-button" type="button" aria-pressed="false" data-i18n="view.list">List</button>
         </div>
         <span id="visible-summary" class="visible-summary"></span>
         <div id="graph-controls" class="graph-controls">
-          <button id="zoom-out" class="icon-button" type="button" aria-label="Zoom out">−</button>
-          <button id="zoom-in" class="icon-button" type="button" aria-label="Zoom in">+</button>
+          <button id="zoom-out" class="icon-button" type="button" aria-label="Zoom out" data-i18n-aria="view.zoomOut">−</button>
+          <button id="zoom-in" class="icon-button" type="button" aria-label="Zoom in" data-i18n-aria="view.zoomIn">+</button>
           <button id="fit" class="secondary-button compact" type="button" data-i18n="view.fit">Fit</button>
         </div>
       </div>
 
-      <section id="graph-stage" class="graph-stage" aria-label="Interactive knowledge graph">
+      <section id="graph-stage" class="graph-stage" aria-label="Interactive knowledge graph" data-i18n-aria="graph.stage">
         <p id="graph-instructions" class="sr-only" data-i18n="graph.instructions">Use the mouse or touch to pan and zoom. Select a node to open its evidence, questions and Lean targets.</p>
         <svg id="graph" role="group" aria-labelledby="graph-instructions" tabindex="0">
           <defs>
@@ -159,9 +173,9 @@
         </div>
       </section>
 
-      <section id="list-view" class="list-view" hidden aria-label="Knowledge nodes"></section>
+      <section id="list-view" class="list-view" hidden aria-label="Knowledge nodes" data-i18n-aria="list.label"></section>
 
-      <footer class="legend" aria-label="Graph legend">
+      <footer class="legend" aria-label="Graph legend" data-i18n-aria="legend.label">
         <strong data-i18n="legend.title">Legend</strong>
         <span><i class="legend-shape domain"></i><span data-i18n="kind.domain">Domain</span></span>
         <span><i class="legend-shape bridge"></i><span data-i18n="kind.bridge">Bridge</span></span>
@@ -178,7 +192,7 @@
           <small id="detail-eyebrow"></small>
           <h2 id="detail-title"></h2>
         </div>
-        <button id="close-details" class="icon-button" type="button" aria-label="Close details">×</button>
+        <button id="close-details" class="icon-button" type="button" aria-label="Close details" data-i18n-aria="detail.close">×</button>
       </header>
       <div id="detail-content" class="detail-content"></div>
     </aside>
@@ -199,9 +213,9 @@
   <dialog id="bridge-card-dialog" class="bridge-card-dialog">
     <header>
       <h2 data-i18n="moves.cardTitle">Generated bridge card</h2>
-      <form method="dialog"><button class="icon-button" type="submit" aria-label="Close">×</button></form>
+      <form method="dialog"><button class="icon-button" type="submit" aria-label="Close bridge card" data-i18n-aria="moves.close">×</button></form>
     </header>
-    <textarea id="bridge-card-output" readonly aria-label="Generated bridge card Markdown"></textarea>
+    <textarea id="bridge-card-output" readonly aria-label="Generated bridge card Markdown" data-i18n-aria="moves.output"></textarea>
     <div class="button-row end">
       <button id="download-card" class="secondary-button" type="button" data-i18n="moves.download">Download Markdown</button>
       <button id="copy-card" class="primary-button" type="button" data-i18n="moves.copy">Copy</button>

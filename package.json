@@ -22,6 +22,8 @@
     "validate:graph": "node scripts/validate-graph.mjs",
     "validate:learning": "node scripts/validate-data.mjs",
     "validate:links": "node scripts/check-local-links.mjs",
+    "validate:i18n": "node scripts/check-i18n.mjs",
+    "validate:jsonld": "node scripts/export-jsonld.mjs --check",
     "validate:accessibility": "node scripts/check-accessibility.mjs",
     "validate:pwa": "node scripts/check-pwa.mjs",
     "validate:release": "node scripts/check-release-metadata.mjs",
@@ -32,14 +34,17 @@
     "curation:verify-source": "node scripts/verify-curation-source.mjs",
     "curation:report": "node scripts/generate-curation-report.mjs",
     "validate:curation": "node scripts/validate-curation.mjs",
-    "check": "npm run validate:symlinks && npm run validate:syntax && npm run validate:graph && npm run validate:curation && npm run validate:curation-report && npm run validate:learning && npm run validate:links && npm run validate:accessibility && npm run validate:pwa && npm run validate:release && npm run validate:views && npm run validate:audit && npm run validate:evaluation && npm run validate:workflows && npm run validate:format && npm run test:coverage && npm run build && npm run validate:dist && npm run test:e2e",
+    "check": "npm run validate:symlinks && npm run validate:syntax && npm run validate:graph && npm run validate:curation && npm run validate:curation-report && npm run validate:learning && npm run validate:links && npm run validate:i18n && npm run validate:jsonld && npm run validate:accessibility && npm run validate:pwa && npm run validate:release && npm run validate:views && npm run validate:audit && npm run validate:evaluation && npm run validate:workflows && npm run validate:format && npm run test:coverage && npm run build && npm run validate:dist && npm run test:e2e",
     "validate:workflows": "node scripts/check-workflows.mjs",
     "evaluate": "node scripts/evaluate-repository.mjs",
     "validate:evaluation": "node scripts/evaluate-repository.mjs --check",
     "usecase": "node scripts/run-use-case.mjs",
     "benchmark:evaluation": "node scripts/benchmark-evaluation.mjs",
     "usecase:list": "node scripts/run-use-case.mjs --list",
-    "test:e2e": "node scripts/browser-smoke.mjs dist",
-    "validate:symlinks": "node scripts/check-symlinks.mjs"
+    "route:plan": "node scripts/plan-route.mjs",
+    "export:jsonld": "node scripts/export-jsonld.mjs",
+    "test:e2e": "node scripts/browser-smoke.mjs dist && node scripts/browser-smoke-round3.mjs dist",
+    "validate:symlinks": "node scripts/check-symlinks.mjs",
+    "generate:jsonld": "node scripts/export-jsonld.mjs --output graph/knowledge-graph.jsonld"
   }
 }

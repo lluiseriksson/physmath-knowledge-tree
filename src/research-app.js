@@ -4,9 +4,12 @@ import {
   indexById,
   inducedSubgraph,
   searchNodes,
-  shortestPath,
 } from './lib/research-graph.js';
 import { detectLanguage, supportedLanguage, t, translateDocument } from './lib/research-i18n.js';
+import { buildJsonLd } from './lib/jsonld.js';
+import { planResearchRoute, summarizeRouteEvidence } from './lib/route-planner.js';
+import { compareNormalizedText, compareText } from './lib/text.js';
+import { readResearchUrlState, writeResearchUrlState } from './lib/url-state.js';
 
 const SVG_NS = 'http://www.w3.org/2000/svg';
 const STORAGE_PREFIX = 'physmath.research.';
@@ -49,6 +52,8 @@ const ui = {
   confidenceFilters: byId('confidence-filters'),
   pathSource: byId('path-source'),
   pathTarget: byId('path-target'),
+  pathPolicy: byId('path-policy'),
+  pathEvidence: byId('path-evidence'),
   pathDirected: byId('path-directed'),
   findPath: byId('find-path'),
   clearPath: byId('clear-path'),
@@ -57,6 +62,7 @@ const ui = {
   moveTarget: byId('move-target'),
   generateCard: byId('generate-card'),
   exportVisible: byId('export-visible'),
+  exportJsonLd: byId('export-jsonld'),
   graphViewButton: byId('graph-view-button'),
   listViewButton: byId('list-view-button'),
   visibleSummary: byId('visible-summary'),
@@ -86,6 +92,7 @@ const ui = {
 const state = {
   language: detectLanguage(),
   theme: readSetting('theme', 'system'),
+  index: null,
   nodes: [],
   edges: [],
   moves: [],
@@ -101,6 +108,7 @@ const state = {
   collection: '',
   selectedNode: '',
   path: null,
+  routeSelection: null,
   view: 'graph',
   transform: { x: 0, y: 0, scale: 1 },
   panning: null,
@@ -132,10 +140,6 @@ function translate(key, variables = {}) {
 function applyTranslations() {
   translateDocument(state.language);
   ui.language.value = state.language;
-  ui.theme.setAttribute('aria-label', state.language === 'es' ? 'Cambiar tema' : 'Change theme');
-  ui.openPanel.setAttribute('aria-label', state.language === 'es' ? 'Abrir controles' : 'Open controls');
-  ui.closePanel.setAttribute('aria-label', state.language === 'es' ? 'Cerrar controles' : 'Close controls');
-  ui.closeDetails.setAttribute('aria-label', state.language === 'es' ? 'Cerrar detalles' : 'Close details');
   document.title = state.language === 'es'
     ? 'PhysMath Knowledge Tree — Grafo de investigación'
     : 'PhysMath Knowledge Tree — Research graph';
@@ -151,12 +155,14 @@ async function init() {
   document.documentElement.dataset.theme = state.theme;
   applyTranslations();
   try {
-    const [nodes, edges, moves, collections] = await Promise.all([
+    const [index, nodes, edges, moves, collections] = await Promise.all([
+      loadJson('./graph/index.json'),
       loadJson('./graph/nodes/core.json'),
       loadJson('./graph/edges.json'),
       loadJson('./graph/research_moves.json'),
       loadJson('./graph/collections.json'),
     ]);
+    state.index = index;
     state.nodes = nodes;
     state.edges = edges;
     state.moves = moves;
@@ -169,6 +175,7 @@ async function init() {
 
     hydrateUrlState();
     buildControls();
+    syncUrl('replace');
     bindEvents();
     renderAll();
     ui.loading.hidden = true;
@@ -194,23 +201,57 @@ function showLoadError(error) {
   ui.loading.classList.add('load-error');
 }
 
-function hydrateUrlState() {
-  const params = new URLSearchParams(location.search);
-  const collection = params.get('collection');
-  if (collection && state.collectionById.has(collection)) state.collection = collection;
-  const node = params.get('node');
-  if (node && state.nodeById.has(node)) state.selectedNode = node;
-  const view = params.get('view');
-  if (view === 'list' || view === 'graph') state.view = view;
+function hydrateUrlState(url = new URL(location.href)) {
+  const parsed = readResearchUrlState(url);
+  state.collection = parsed.collection && state.collectionById.has(parsed.collection) ? parsed.collection : '';
+  state.selectedNode = parsed.node && state.nodeById.has(parsed.node) ? parsed.node : '';
+  state.view = parsed.view;
+  state.routeSelection = parsed.route
+    && state.nodeById.has(parsed.route.source)
+    && state.nodeById.has(parsed.route.target)
+    ? parsed.route
+    : null;
 }
 
-function syncUrl() {
-  const params = new URLSearchParams();
-  if (state.collection) params.set('collection', state.collection);
-  if (state.selectedNode) params.set('node', state.selectedNode);
-  if (state.view !== 'graph') params.set('view', state.view);
-  const query = params.toString();
-  history.replaceState(null, '', `${location.pathname}${query ? `?${query}` : ''}${location.hash}`);
+function syncUrl(mode = 'replace') {
+  return writeResearchUrlState({
+    collection: state.collection,
+    node: state.selectedNode,
+    view: state.view,
+    route: state.routeSelection,
+  }, mode);
+}
+
+function routeFromSelection(selection) {
+  if (!selection) return null;
+  const route = planResearchRoute(state.nodes, state.edges, selection.source, selection.target, {
+    policy: selection.policy,
+    directed: selection.directed,
+    allowedConfidence: allowedConfidenceForPathGate(selection.evidence),
+  });
+  return route ? { ...route, evidence: summarizeRouteEvidence(route, state.edges) } : null;
+}
+
+function applyRouteSelectionToControls() {
+  if (!state.routeSelection) return;
+  ui.pathSource.value = state.routeSelection.source;
+  ui.pathTarget.value = state.routeSelection.target;
+  ui.pathPolicy.value = state.routeSelection.policy;
+  ui.pathEvidence.value = state.routeSelection.evidence;
+  ui.pathDirected.checked = state.routeSelection.directed;
+}
+
+function restoreUrlState() {
+  hydrateUrlState();
+  ui.collection.value = state.collection;
+  applyRouteSelectionToControls();
+  state.path = routeFromSelection(state.routeSelection);
+  if (!state.selectedNode) {
+    ui.details.classList.remove('open');
+    ui.details.setAttribute('aria-hidden', 'true');
+  }
+  renderAll(true);
+  if (state.routeSelection && !state.path) ui.pathResult.textContent = translate('path.none');
 }
 
 function buildControls() {
@@ -225,6 +266,10 @@ function buildControls() {
   const problems = state.nodes.filter((node) => node.kind === 'problem');
   ui.pathSource.value = problems.find((node) => node.id === 'problem.riemann_hypothesis')?.id ?? state.nodes[0]?.id ?? '';
   ui.pathTarget.value = problems.find((node) => node.id === 'problem.p_vs_np')?.id ?? state.nodes[1]?.id ?? '';
+  ui.pathPolicy.value = 'shortest';
+  ui.pathEvidence.value = 'all';
+  applyRouteSelectionToControls();
+  state.path = routeFromSelection(state.routeSelection);
   ui.moveTarget.value = problems[0]?.id ?? state.nodes[0]?.id ?? '';
   ui.move.value = state.moves[0]?.id ?? '';
 }
@@ -246,7 +291,7 @@ function buildNodeSelect(select) {
   const fragment = document.createDocumentFragment();
   for (const kind of KIND_ORDER) {
     const group = element('optgroup', { label: translate(`kind.${kind}`) });
-    for (const node of state.nodes.filter((item) => item.kind === kind).sort((a, b) => a.title.localeCompare(b.title))) {
+    for (const node of state.nodes.filter((item) => item.kind === kind).sort((a, b) => compareNormalizedText(a.title, b.title) || compareText(a.id, b.id))) {
       const option = element('option', { value: node.id });
       option.textContent = node.title;
       group.append(option);
@@ -323,6 +368,7 @@ function bindEvents() {
   ui.collection.addEventListener('change', () => {
     state.collection = ui.collection.value;
     state.path = null;
+    state.routeSelection = null;
     renderAll(true);
     syncUrl();
   });
@@ -336,6 +382,7 @@ function bindEvents() {
   ui.downloadCard.addEventListener('click', () => downloadText('bridge-card.md', state.cardMarkdown, 'text/markdown'));
   ui.copyCard.addEventListener('click', copyBridgeCard);
   ui.exportVisible.addEventListener('click', exportVisibleSubgraph);
+  ui.exportJsonLd.addEventListener('click', exportCanonicalJsonLd);
 
   ui.graphViewButton.addEventListener('click', () => setView('graph'));
   ui.listViewButton.addEventListener('click', () => setView('list'));
@@ -343,6 +390,7 @@ function bindEvents() {
   ui.zoomOut.addEventListener('click', () => zoomBy(1 / 1.2));
   ui.fit.addEventListener('click', fitGraph);
   ui.closeDetails.addEventListener('click', closeDetails);
+  addEventListener('popstate', restoreUrlState);
 
   ui.graph.addEventListener('wheel', handleWheel, { passive: false });
   ui.graph.addEventListener('pointerdown', startPan);
@@ -420,6 +468,8 @@ function buildControlsPreservingValues() {
     collection: ui.collection.value,
     pathSource: ui.pathSource.value,
     pathTarget: ui.pathTarget.value,
+    pathPolicy: ui.pathPolicy.value,
+    pathEvidence: ui.pathEvidence.value,
     move: ui.move.value,
     moveTarget: ui.moveTarget.value,
   };
@@ -432,6 +482,8 @@ function buildControlsPreservingValues() {
   ui.collection.value = values.collection;
   ui.pathSource.value = values.pathSource;
   ui.pathTarget.value = values.pathTarget;
+  ui.pathPolicy.value = values.pathPolicy;
+  ui.pathEvidence.value = values.pathEvidence;
   ui.move.value = values.move;
   ui.moveTarget.value = values.moveTarget;
 }
@@ -448,6 +500,7 @@ function handleFilterChange(event) {
 function resetView() {
   state.collection = '';
   state.path = null;
+  state.routeSelection = null;
   state.activeKinds = new Set(KIND_ORDER);
   state.activeConfidences = new Set(CONFIDENCE_ORDER);
   ui.collection.value = '';
@@ -637,7 +690,7 @@ function wrapTitle(title, maxLength) {
 
 function renderList() {
   const grid = element('div', { class: 'node-list-grid' });
-  for (const node of [...state.visible.nodes].sort((a, b) => a.kind.localeCompare(b.kind) || a.title.localeCompare(b.title))) {
+  for (const node of [...state.visible.nodes].sort((a, b) => compareText(a.kind, b.kind) || compareNormalizedText(a.title, b.title) || compareText(a.id, b.id))) {
     const article = element('article', { class: `node-list-card ${node.kind}` });
     const heading = element('h3');
     const button = element('button', { type: 'button', class: 'text-button' });
@@ -680,13 +733,14 @@ function createBadge(text, className) {
 
 function selectNode(nodeId, sync = true) {
   if (!state.nodeById.has(nodeId)) return;
+  const changed = state.selectedNode !== nodeId;
   const opening = !ui.details.classList.contains('open');
   if (opening && document.activeElement && typeof document.activeElement.focus === 'function') state.detailsReturnFocus = document.activeElement;
   state.selectedNode = nodeId;
   renderDetails(nodeId);
   renderGraph();
   if (opening) requestAnimationFrame(() => ui.details.focus());
-  if (sync) syncUrl();
+  if (sync) syncUrl(changed ? 'push' : 'replace');
 }
 
 function closeDetails() {
@@ -696,7 +750,7 @@ function closeDetails() {
   ui.details.classList.remove('open');
   ui.details.setAttribute('aria-hidden', 'true');
   renderGraph();
-  syncUrl();
+  syncUrl('push');
   if (returnFocus?.isConnected) requestAnimationFrame(() => returnFocus.focus());
 }
 
@@ -810,7 +864,7 @@ function connectionGroup(title, edges, otherEndpoint) {
   const heading = element('h4');
   heading.textContent = title;
   const list = element('div', { class: 'edge-list' });
-  for (const edge of edges.sort((a, b) => a.relation.localeCompare(b.relation))) {
+  for (const edge of edges.sort((a, b) => compareText(a.relation, b.relation) || compareText(a.id, b.id))) {
     const other = state.nodeById.get(edge[otherEndpoint]);
     const button = element('button', { type: 'button', class: 'edge-item' });
     const label = element('strong');
@@ -825,39 +879,64 @@ function connectionGroup(title, edges, otherEndpoint) {
   return wrapper;
 }
 
+function allowedConfidenceForPathGate(value) {
+  if (value === 'formal') return ['formal'];
+  if (value === 'sourced') return ['formal', 'literature'];
+  return [...CONFIDENCE_ORDER];
+}
+
 function findSelectedPath() {
   const source = ui.pathSource.value;
   const target = ui.pathTarget.value;
   if (!source || !target || source === target) {
     state.path = null;
-    ui.pathResult.textContent = translate('path.choose');
+    state.routeSelection = null;
     renderAll(true);
+    ui.pathResult.textContent = translate('path.choose');
+    syncUrl('push');
     return;
   }
-  state.path = shortestPath(state.nodes, state.edges, source, target, ui.pathDirected.checked);
-  renderAll(true);
-  if (!state.path) {
-    ui.pathResult.textContent = translate('path.none');
-    return;
-  }
+  state.routeSelection = {
+    source,
+    target,
+    policy: ui.pathPolicy.value,
+    evidence: ui.pathEvidence.value,
+    directed: ui.pathDirected.checked,
+  };
+  state.path = routeFromSelection(state.routeSelection);
   if (state.path) {
     state.collection = '';
     ui.collection.value = '';
-    renderAll(true);
   }
+  renderAll(true);
+  if (!state.path) ui.pathResult.textContent = translate('path.none');
+  syncUrl('push');
 }
 
 function clearPath() {
   state.path = null;
+  state.routeSelection = null;
   ui.pathResult.replaceChildren();
   renderAll();
+  syncUrl('push');
 }
 
 function renderPathResult() {
-  if (!state.path) return;
+  if (!state.path) {
+    ui.pathResult.replaceChildren();
+    return;
+  }
   const fragment = document.createDocumentFragment();
   const summary = element('strong');
   summary.textContent = translate('path.steps', { count: state.path.edges.length });
+  const evidence = element('small');
+  evidence.textContent = translate('path.evidenceSummary', {
+    policy: translate(`path.policy.${state.path.score.policy}`),
+    confidence: state.path.evidence?.weakest_confidence
+      ? translate(`confidence.${state.path.evidence.weakest_confidence}`)
+      : translate('path.noneEvidence'),
+    references: state.path.evidence?.references ?? 0,
+  });
   const list = element('ol');
   for (const nodeId of state.path.nodes) {
     const item = element('li');
@@ -867,7 +946,7 @@ function renderPathResult() {
     item.append(button);
     list.append(item);
   }
-  fragment.append(summary, list);
+  fragment.append(summary, evidence, list);
   ui.pathResult.replaceChildren(fragment);
 }
 
@@ -884,7 +963,7 @@ function generateBridgeCard() {
   }
   sources.sort((a, b) => {
     const kindRank = { domain: 0, bridge: 1, problem: 2 };
-    return kindRank[a.kind] - kindRank[b.kind] || a.title.localeCompare(b.title);
+    return kindRank[a.kind] - kindRank[b.kind] || compareNormalizedText(a.title, b.title) || compareText(a.id, b.id);
   });
   const chosen = sources.slice(0, 3);
   const sourceText = chosen.length
@@ -935,6 +1014,25 @@ function exportVisibleSubgraph() {
   };
   downloadText('physmath-visible-subgraph.json', `${JSON.stringify(payload, null, 2)}\n`, 'application/json');
   toast(translate('export.saved'));
+}
+
+
+function exportCanonicalJsonLd() {
+  if (!state.index) return;
+  const document = buildJsonLd({
+    index: state.index,
+    packageVersion: state.index.application_version,
+    nodes: state.nodes,
+    edges: state.edges,
+    moves: state.moves,
+    collections: state.collections,
+  });
+  downloadText(
+    'physmath-knowledge-graph.jsonld',
+    `${JSON.stringify(document, null, 2)}\n`,
+    'application/ld+json',
+  );
+  toast(translate('export.jsonldSaved'));
 }
 
 function downloadText(filename, text, type) {
