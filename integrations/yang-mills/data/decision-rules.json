@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0.0",
+  "rules": [
+    {
+      "id": "rule.refresh-head",
+      "when": "starting any new Yang–Mills task",
+      "must": "resolve the current HEAD and search planned declaration names",
+      "because": "the formal frontier changes quickly"
+    },
+    {
+      "id": "rule.smallest-adapter",
+      "when": "producer and consumer share SingleScaleUVDecay",
+      "must": "prefer a thin composition theorem before a new structure",
+      "because": "it removes a real adapter layer with minimal risk"
+    },
+    {
+      "id": "rule.name-branch",
+      "when": "a theorem assumes geometric or marginal scale behavior",
+      "must": "encode the branch in the theorem name",
+      "because": "the 4D marginal coupling is not geometrically decaying"
+    },
+    {
+      "id": "rule.no-hrpoly-claim",
+      "when": "an adapter reaches SingleScaleUVDecay or M3",
+      "must_not": "say hRpoly is proved",
+      "because": "raw source estimates and the physical remainder identity remain hypotheses"
+    },
+    {
+      "id": "rule.no-clay-claim",
+      "when": "a lattice decay theorem is obtained",
+      "must_not": "claim continuum mass gap or Clay",
+      "because": "M4/M5 are outside this pipeline"
+    },
+    {
+      "id": "rule.support-separation",
+      "when": "locality or factorization is involved",
+      "must": "list all support roles separately",
+      "because": "collapsing supports can create false factorization"
+    },
+    {
+      "id": "rule.source-status",
+      "when": "citing Balaban or Dimock",
+      "must": "label the statement source-anchor, candidate, theorem-shape or Lean-verified",
+      "because": "source provenance is not formal verification"
+    },
+    {
+      "id": "rule.uniformity",
+      "when": "using the word uniform",
+      "must": "state the exact quantifier order and allowed constant dependencies",
+      "because": "pointwise finite-volume estimates do not imply a uniform theorem"
+    },
+    {
+      "id": "rule.conclusion-shape",
+      "when": "reporting M3 progress",
+      "must": "state the exact correlator expression and constants",
+      "because": "a positive gap witness alone can be vacuous or misidentified"
+    },
+    {
+      "id": "rule.verification",
+      "when": "proposing a commit",
+      "must": "include isolated Lean, core, oracle, consistency and diff commands",
+      "because": "the repo's standard of evidence is machine-checked"
+    }
+  ],
+  "forbidden_phrases_without_proof": [
+    "hRpoly discharged",
+    "Clay solved",
+    "unconditional continuum mass gap",
+    "CMP116 proves the Lean support inclusion exactly",
+    "geometric Yang–Mills coupling in 4D"
+  ]
+}

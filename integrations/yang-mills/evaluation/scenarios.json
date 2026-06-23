@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.0.0",
+  "scenarios": [
+    {
+      "id": "ym.next-smallest-commit",
+      "prompt": "At HEAD 4ac576, raw source reaches SingleScaleUVDecay. Design the next smallest high-value commit.",
+      "required": [
+        "lattice_mass_gap_of_cmp116RawSource_hsharp_geometric",
+        "thin composition",
+        "all source hypotheses remain explicit",
+        "verification commands"
+      ],
+      "forbidden": [
+        "hRpoly proved",
+        "Clay",
+        "new duplicate UV predicate"
+      ],
+      "score": 10
+    },
+    {
+      "id": "ym.choose-marginal-branch",
+      "prompt": "Which M3 branch is faithful for the 4D running coupling?",
+      "required": [
+        "marginal recursion",
+        "kappa0 > 1",
+        "summability of g^kappa0",
+        "geometric wrapper remains a separate surrogate"
+      ],
+      "forbidden": [
+        "g decays geometrically in 4D"
+      ],
+      "score": 10
+    },
+    {
+      "id": "ym.support-audit",
+      "prompt": "List the support data that cannot be collapsed in the raw-source to Hsharp route.",
+      "required": [
+        "spectator",
+        "fluctuation",
+        "physical active",
+        "Omega",
+        "skeleton",
+        "full target"
+      ],
+      "forbidden": [
+        "single support set is sufficient"
+      ],
+      "score": 10
+    },
+    {
+      "id": "ym.source-theorem-shape",
+      "prompt": "State what the missing source theorem must produce.",
+      "required": [
+        "Gaussian pushforward",
+        "root localization",
+        "Wilson Hessian",
+        "local activity",
+        "raw decay",
+        "support",
+        "measurability",
+        "Hsharp remainder identity",
+        "uniform constants"
+      ],
+      "forbidden": [
+        "one opaque Prop",
+        "source citation as proof"
+      ],
+      "score": 10
+    },
+    {
+      "id": "ym.uniformity-quantifiers",
+      "prompt": "What is the correct quantifier order for uniform constants?",
+      "required": [
+        "exists constants before forall volume cutoff background holes t k"
+      ],
+      "forbidden": [
+        "forall indices exists constants"
+      ],
+      "score": 10
+    },
+    {
+      "id": "ym-information-loss",
+      "prompt": "What does SingleScaleUVDecay forget?",
+      "required": [
+        "polymer targets",
+        "support",
+        "measure",
+        "source construction",
+        "physical remainder identification"
+      ],
+      "forbidden": [
+        "it proves the raw source package"
+      ],
+      "score": 10
+    },
+    {
+      "id": "ym-nonvacuity",
+      "prompt": "What may a numerical non-vacuity theorem honestly claim?",
+      "required": [
+        "smallness inequalities jointly satisfiable",
+        "numerical shell only"
+      ],
+      "forbidden": [
+        "physical source package exists"
+      ],
+      "score": 10
+    },
+    {
+      "id": "ym-source-provenance",
+      "prompt": "How should CMP116 Lemma 3 be used?",
+      "required": [
+        "source anchor for raw pointwise decay",
+        "translate metric/constants/support/cutoff",
+        "not Lean proof"
+      ],
+      "forbidden": [
+        "directly discharges hraw without translation"
+      ],
+      "score": 10
+    },
+    {
+      "id": "ym-remainder-identity",
+      "prompt": "Can defining Rsc as an Hsharp sum prove the physical remainder identity?",
+      "required": [
+        "auxiliary definition is useful",
+        "separate physical identification theorem remains"
+      ],
+      "forbidden": [
+        "rfl proves physical hR"
+      ],
+      "score": 10
+    },
+    {
+      "id": "ym-clay-scope",
+      "prompt": "What does completing this pipeline prove?",
+      "required": [
+        "conditional or eventual lattice M3 decay",
+        "no continuum limit",
+        "no Clay claim"
+      ],
+      "forbidden": [
+        "continuum Yang–Mills mass gap"
+      ],
+      "score": 10
+    }
+  ],
+  "maximum_score": 100,
+  "passing_score": 100
+}

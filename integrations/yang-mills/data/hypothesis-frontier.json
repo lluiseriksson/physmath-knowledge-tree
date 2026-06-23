@@ -1,0 +1,283 @@
+{
+  "schema_version": "1.0.0",
+  "obligations": [
+    {
+      "id": "obl.gaussian-pushforward",
+      "label": "Gaussian pushforward",
+      "status": "carried",
+      "owner": "Balaban/CMP116 source extraction",
+      "lean_shape": "map dmu0 (D.gaussianRootMap root) = physicalGaussian",
+      "source_anchor": "CMP116 (2.5)-(2.6)",
+      "uniformity": [
+        "volume",
+        "scale",
+        "background"
+      ],
+      "blocked_by": [],
+      "do_not_confuse_with": "measurability of the coordinate map"
+    },
+    {
+      "id": "obl.root-localization",
+      "label": "Covariance-root localization",
+      "status": "carried",
+      "owner": "physical operator/source analysis",
+      "lean_shape": "PhysicalLocalizedCovarianceRootCertificate ...",
+      "source_anchor": "Balaban Green/random-walk estimates",
+      "uniformity": [
+        "volume",
+        "scale",
+        "background",
+        "cutoff"
+      ],
+      "blocked_by": [],
+      "do_not_confuse_with": "finite-dimensional coercivity or existence of an inverse"
+    },
+    {
+      "id": "obl.wilson-hessian",
+      "label": "Wilson Hessian identification",
+      "status": "placeholder-prop",
+      "owner": "gauge-fixed expansion",
+      "lean_shape": "typed equality between the concrete gauge-fixed Hessian and precision",
+      "source_anchor": "quadratic expansion at the minimizer",
+      "uniformity": [
+        "volume",
+        "scale",
+        "background"
+      ],
+      "blocked_by": [
+        "obl.root-localization"
+      ],
+      "do_not_confuse_with": "a named opaque Prop"
+    },
+    {
+      "id": "obl.local-activity",
+      "label": "Local activity construction",
+      "status": "placeholder-prop",
+      "owner": "CMP116 fluctuation integral",
+      "lean_shape": "physicalActivity equals the localized fluctuation-integral component",
+      "source_anchor": "CMP116 (2.4)-(2.11)",
+      "uniformity": [
+        "volume",
+        "scale",
+        "background",
+        "holes"
+      ],
+      "blocked_by": [
+        "obl.gaussian-pushforward",
+        "obl.wilson-hessian"
+      ],
+      "do_not_confuse_with": "postulating an arbitrary LocalActivity"
+    },
+    {
+      "id": "obl.raw-decay",
+      "label": "Raw pointwise modified-metric decay",
+      "status": "carried",
+      "owner": "CMP116 source theorem",
+      "lean_shape": "norm(globalEval) <= amplitude * appendixFHoleExpWeight",
+      "source_anchor": "CMP116 Lemma 3 / (2.38)-(2.41)",
+      "uniformity": [
+        "volume",
+        "scale",
+        "background",
+        "holes"
+      ],
+      "blocked_by": [
+        "obl.local-activity"
+      ],
+      "do_not_confuse_with": "the already-verified adapter balabanCMP116_hraw_of_cmp116RawSource"
+    },
+    {
+      "id": "obl.support-localization",
+      "label": "Separated support localization",
+      "status": "carried",
+      "owner": "CMP116 locality translation",
+      "lean_shape": "spectator/fluctuation support -> active support -> Omega/skeleton",
+      "source_anchor": "CMP116 component localization and random-walk expansion",
+      "uniformity": [
+        "volume",
+        "scale",
+        "background",
+        "holes"
+      ],
+      "blocked_by": [
+        "obl.local-activity"
+      ],
+      "support_roles": [
+        "spectator",
+        "fluctuation",
+        "physical-active",
+        "Omega",
+        "skeleton",
+        "full-target"
+      ],
+      "do_not_confuse_with": "one undifferentiated support set"
+    },
+    {
+      "id": "obl.measurability",
+      "label": "Strong measurability and integrability",
+      "status": "carried",
+      "owner": "finite Gaussian activity analysis",
+      "lean_shape": "StronglyMeasurable globalEval plus probability/integrability consumers",
+      "source_anchor": "finite-dimensional continuity and Gaussian domination",
+      "uniformity": [
+        "volume",
+        "scale",
+        "background"
+      ],
+      "blocked_by": [
+        "obl.local-activity"
+      ],
+      "do_not_confuse_with": "pointwise boundedness alone"
+    },
+    {
+      "id": "obl.hole-geometry",
+      "label": "Appendix-F hole geometry",
+      "status": "explicit-formal-hypotheses",
+      "owner": "geometry/source dictionary",
+      "lean_shape": "disjoint holes, no edges, nonempty holes, Omega/skeleton relation",
+      "source_anchor": "Dimock II Appendix F",
+      "uniformity": [
+        "volume",
+        "holes"
+      ],
+      "blocked_by": [],
+      "do_not_confuse_with": "ordinary full-polymer touching"
+    },
+    {
+      "id": "obl.hsharp-half-budget",
+      "label": "Second-Ursell half budget",
+      "status": "carried-numerical",
+      "owner": "Appendix-F quantitative closure",
+      "lean_shape": "leafConstant * (2 * amplitude * rootSumConstant) <= 1/2",
+      "source_anchor": "Dimock smallness window plus formal leaf summation",
+      "uniformity": [
+        "scale",
+        "background",
+        "holes"
+      ],
+      "blocked_by": [
+        "obl.raw-decay",
+        "obl.hole-geometry"
+      ],
+      "do_not_confuse_with": "proof of the raw activity estimate"
+    },
+    {
+      "id": "obl.hsharp-profile",
+      "label": "Closed H# spatial/coupling profile",
+      "status": "carried-analytic",
+      "owner": "source constant bookkeeping",
+      "lean_shape": "momentConstant * amplitude * rootSum <= C Hbar exp(-c0 t) g_k^kappa0",
+      "source_anchor": "CMP116 constants plus Dimock II Appendix F",
+      "uniformity": [
+        "volume",
+        "scale",
+        "background",
+        "holes"
+      ],
+      "blocked_by": [
+        "obl.raw-decay",
+        "obl.hsharp-half-budget"
+      ],
+      "do_not_confuse_with": "generic cluster convergence"
+    },
+    {
+      "id": "obl.hsharp-remainder-identity",
+      "label": "Physical remainder identity",
+      "status": "open",
+      "owner": "CMP119/CMP122 and observable extraction",
+      "lean_shape": "Rsc t k = rooted tsum of real Hsharp",
+      "source_anchor": "localized R/B/R' decomposition and source insertion",
+      "uniformity": [
+        "volume",
+        "scale",
+        "background"
+      ],
+      "blocked_by": [
+        "obl.local-activity",
+        "obl.measurability",
+        "obl.hole-geometry"
+      ],
+      "do_not_confuse_with": "defining an auxiliary scalar by the H# sum"
+    },
+    {
+      "id": "obl.geometric-profile",
+      "label": "Geometric scale profile",
+      "status": "branch-specific",
+      "owner": "irrelevant-operator flow",
+      "lean_shape": "g k <= C * r^k with 0 < r < 1",
+      "source_anchor": "irrelevant contraction mechanism",
+      "uniformity": [
+        "scale"
+      ],
+      "blocked_by": [],
+      "do_not_confuse_with": "the 4D marginal gauge coupling"
+    },
+    {
+      "id": "obl.marginal-recursion",
+      "label": "Marginal asymptotically-free recursion",
+      "status": "branch-specific",
+      "owner": "4D coupling flow",
+      "lean_shape": "g(k+1) = g(k) * (1 - beta*g(k)), kappa0 > 1",
+      "source_anchor": "Balaban CMP109 / marginal flow",
+      "uniformity": [
+        "scale"
+      ],
+      "blocked_by": [],
+      "do_not_confuse_with": "geometric decay of g"
+    },
+    {
+      "id": "obl.ir-input",
+      "label": "IR clustering input",
+      "status": "theorem-fed",
+      "owner": "strong-coupling lattice layer",
+      "lean_shape": "abs(covIR k) <= C1 exp(-epsilon k)",
+      "source_anchor": "gibbs_truncated_correlation_bound / sun_two_plaquette_correlator_bound",
+      "uniformity": [
+        "volume",
+        "distance"
+      ],
+      "blocked_by": [],
+      "do_not_confuse_with": "UV source analysis"
+    },
+    {
+      "id": "obl.uniform-constants",
+      "label": "Finite-volume and scale-uniform constants",
+      "status": "open-quantifier-audit",
+      "owner": "all analytic source theorems",
+      "lean_shape": "exists constants, forall volume cutoff background holes t k",
+      "source_anchor": "uniform estimates throughout Balaban/Dimock",
+      "uniformity": [
+        "volume",
+        "cutoff",
+        "scale",
+        "background",
+        "holes",
+        "root-position"
+      ],
+      "blocked_by": [
+        "obl.root-localization",
+        "obl.raw-decay",
+        "obl.hsharp-profile",
+        "obl.hsharp-remainder-identity"
+      ],
+      "do_not_confuse_with": "forall indices, exists constants"
+    }
+  ],
+  "priority_order": [
+    "obl.gaussian-pushforward",
+    "obl.root-localization",
+    "obl.wilson-hessian",
+    "obl.local-activity",
+    "obl.raw-decay",
+    "obl.support-localization",
+    "obl.measurability",
+    "obl.hole-geometry",
+    "obl.hsharp-half-budget",
+    "obl.hsharp-profile",
+    "obl.hsharp-remainder-identity",
+    "obl.geometric-profile",
+    "obl.marginal-recursion",
+    "obl.ir-input",
+    "obl.uniform-constants"
+  ]
+}

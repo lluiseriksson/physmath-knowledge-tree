@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+lake env lean YangMills/RG/PhysicalGaugeCMP116RawUVMassGap.lean
+lake build YangMillsCore
+lake env lean oracle_check.lean
+python scripts/check_consistency.py
+git diff --check
+rg -n '^\s*(sorry|admit|axiom)\b' \
+  YangMills/RG/PhysicalGaugeCMP116RawUVMassGap.lean \
+  oracle_check.lean CURRENT-STATE.md docs/VERIFICATION-LEDGER.md

@@ -60,3 +60,13 @@ lake build
 ```
 
 If Lean is unavailable locally, do not claim the Lean gate passed; state that CI must perform it.
+
+<!-- YANG_MILLS_AGENT_PACK_START -->
+## Yang–Mills domain-pack protocol
+
+When the task concerns `THE-ERIKSSON-PROGRAMME`, load
+`integrations/yang-mills/generated/agent-context.md` first. Resolve the current
+formal HEAD, distinguish verified from planned declarations, preserve support
+roles, select the geometric or marginal branch honestly, and never infer
+`hRpoly` or a continuum conclusion from adapter plumbing.
+<!-- YANG_MILLS_AGENT_PACK_END -->

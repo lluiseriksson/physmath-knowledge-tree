@@ -179,3 +179,18 @@ The Pages workflow validates the repository, builds `dist/`, uploads the static 
 Read [`CONTRIBUTING.md`](./CONTRIBUTING.md) before editing data. Canonical graph changes must include a mechanism, confidence level, Lean target implications and passing tests.
 
 Source code is MIT-licensed. Curated graph/documentation content is available under CC BY 4.0; see [`LICENSE.md`](./LICENSE.md). Citation metadata is in [`CITATION.cff`](./CITATION.cff).
+
+<!-- YANG_MILLS_AGENT_PACK_START -->
+## Yang–Mills verified-RG integration
+
+For AI-assisted continuation of the formal Yang–Mills repository, start with
+[`integrations/yang-mills/README.md`](integrations/yang-mills/README.md).
+The pack provides a live declaration registry, analytic hypothesis frontier,
+source map, commit planner, query CLI and 100-point evaluation gate.
+
+```bash
+npm run validate:yang-mills
+npm run generate:yang-mills
+npm run query:yang-mills -- next-commit
+```
+<!-- YANG_MILLS_AGENT_PACK_END -->

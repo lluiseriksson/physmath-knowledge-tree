@@ -34,7 +34,7 @@
     "curation:verify-source": "node scripts/verify-curation-source.mjs",
     "curation:report": "node scripts/generate-curation-report.mjs",
     "validate:curation": "node scripts/validate-curation.mjs",
-    "check": "npm run validate:symlinks && npm run validate:syntax && npm run validate:graph && npm run validate:curation && npm run validate:curation-report && npm run validate:learning && npm run validate:links && npm run validate:i18n && npm run validate:jsonld && npm run validate:accessibility && npm run validate:pwa && npm run validate:release && npm run validate:views && npm run validate:audit && npm run validate:evaluation && npm run validate:workflows && npm run validate:format && npm run test:coverage && npm run build && npm run validate:dist && npm run test:e2e",
+    "check": "npm run validate:symlinks && npm run validate:syntax && npm run validate:graph && npm run validate:curation && npm run validate:curation-report && npm run validate:learning && npm run validate:yang-mills && npm run validate:yang-mills-generated && npm run validate:links && npm run validate:i18n && npm run validate:jsonld && npm run validate:accessibility && npm run validate:pwa && npm run validate:release && npm run validate:views && npm run validate:audit && npm run validate:evaluation && npm run validate:workflows && npm run validate:format && npm run test:coverage && npm run build && npm run validate:dist && npm run test:e2e",
     "validate:workflows": "node scripts/check-workflows.mjs",
     "evaluate": "node scripts/evaluate-repository.mjs",
     "validate:evaluation": "node scripts/evaluate-repository.mjs --check",
@@ -49,6 +49,10 @@
     "route:bundle": "node scripts/bundle-route.mjs",
     "route:verify": "node scripts/verify-route-bundle.mjs",
     "route:keygen": "node scripts/generate-route-key.mjs",
-    "route:attest": "node scripts/attest-route-bundle.mjs"
+    "route:attest": "node scripts/attest-route-bundle.mjs",
+    "generate:yang-mills": "node scripts/build-yang-mills-agent-context.mjs",
+    "validate:yang-mills": "node scripts/validate-yang-mills-pack.mjs",
+    "validate:yang-mills-generated": "node scripts/build-yang-mills-agent-context.mjs --check",
+    "query:yang-mills": "node scripts/query-yang-mills-pack.mjs"
   }
 }

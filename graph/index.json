@@ -15,7 +15,8 @@
     "nodes": "graph/schemas/node.schema.json",
     "edges": "graph/schemas/edge.schema.json",
     "research_moves": "graph/schemas/research_move.schema.json",
-    "collections": "graph/schemas/collection.schema.json"
+    "collections": "graph/schemas/collection.schema.json",
+    "yang_mills_pack": "integrations/yang-mills/schemas/manifest.schema.json"
   },
   "stats": {
     "nodes": 58,
@@ -61,13 +62,23 @@
     "evaluation/scenarios.json",
     "docs/ROUTE_PLANNER.md",
     "docs/JSONLD_EXPORT.md",
-    "graph/knowledge-graph.jsonld"
+    "graph/knowledge-graph.jsonld",
+    "integrations/yang-mills/README.md",
+    "integrations/yang-mills/generated/agent-context.md",
+    "prompts/yang-mills-next-commit.md",
+    "prompts/yang-mills-source-extraction.md"
   ],
   "generated_files": {
     "audit": "graph/audit.json",
     "curation_report": "curation/REPORT.md",
     "reference_registry": "graph/reference-registry.json",
     "evaluation": "evaluation/results.json",
-    "jsonld": "graph/knowledge-graph.jsonld"
+    "jsonld": "graph/knowledge-graph.jsonld",
+    "yang_mills_context": "integrations/yang-mills/generated/agent-context.md",
+    "yang_mills_frontier": "integrations/yang-mills/generated/frontier-table.md",
+    "yang_mills_roadmap": "integrations/yang-mills/generated/roadmap.md"
+  },
+  "integrations": {
+    "yang_mills": "integrations/yang-mills/manifest.json"
   }
 }

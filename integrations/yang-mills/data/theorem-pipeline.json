@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0.0",
+  "artifacts": [
+    {
+      "id": "artifact.localized-activity-transport",
+      "label": "Dictionary-backed localized activity transport"
+    },
+    {
+      "id": "artifact.appendix-f-support",
+      "label": "Appendix-F support package"
+    },
+    {
+      "id": "artifact.appendix-f-hraw",
+      "label": "Appendix-F raw pointwise bound"
+    },
+    {
+      "id": "artifact.scale-family",
+      "label": "Scale-indexed CMP116 family"
+    },
+    {
+      "id": "artifact.single-scale-uv-decay",
+      "label": "SingleScaleUVDecay"
+    },
+    {
+      "id": "artifact.m3-lattice-decay-geometric",
+      "label": "Conditional geometric M3 lattice decay"
+    },
+    {
+      "id": "artifact.m3-lattice-decay-marginal",
+      "label": "Conditional marginal M3 lattice decay"
+    }
+  ],
+  "routes": [
+    {
+      "id": "route.raw-source-to-single-scale",
+      "status": "verified",
+      "purpose": "Reach the semantic UV predicate from the physical raw-source package.",
+      "steps": [
+        "decl.raw-source-transport-namespaced",
+        "decl.raw-source-support",
+        "decl.raw-source-hraw",
+        "decl.raw-source-scale-family",
+        "decl.raw-hsharp-single-scale",
+        "decl.single-scale-predicate"
+      ],
+      "remaining_obligations": [
+        "obl.gaussian-pushforward",
+        "obl.root-localization",
+        "obl.wilson-hessian",
+        "obl.local-activity",
+        "obl.raw-decay",
+        "obl.support-localization",
+        "obl.measurability",
+        "obl.hsharp-remainder-identity",
+        "obl.uniform-constants"
+      ]
+    },
+    {
+      "id": "route.raw-source-to-m3-geometric",
+      "status": "one-adapter-missing",
+      "purpose": "Expose the existing geometric M3 conclusion directly at the raw-source/H# frontier.",
+      "steps": [
+        "decl.raw-hsharp-single-scale",
+        "decl.planned-raw-hsharp-geometric-m3",
+        "decl.geometric-consumer"
+      ],
+      "remaining_obligations": [
+        "obl.geometric-profile",
+        "obl.ir-input",
+        "obl.hsharp-remainder-identity",
+        "obl.uniform-constants"
+      ]
+    },
+    {
+      "id": "route.raw-source-to-m3-marginal",
+      "status": "two-adapters-missing",
+      "purpose": "Expose the physically faithful 4D marginal branch directly at the raw-source/H# frontier.",
+      "steps": [
+        "decl.raw-hsharp-single-scale",
+        "decl.planned-named-marginal-consumer",
+        "decl.planned-raw-hsharp-marginal-m3",
+        "decl.marginal-assembly"
+      ],
+      "remaining_obligations": [
+        "obl.marginal-recursion",
+        "obl.ir-input",
+        "obl.hsharp-remainder-identity",
+        "obl.uniform-constants"
+      ]
+    }
+  ],
+  "selection_rule": "Use the geometric route only when a geometric profile is genuinely available. Prefer the marginal route for the 4D Yang–Mills coupling."
+}

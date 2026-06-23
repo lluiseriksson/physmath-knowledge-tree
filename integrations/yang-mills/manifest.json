@@ -1,0 +1,61 @@
+{
+  "pack_version": "1.0.0",
+  "target_repository": "lluiseriksson/physmath-knowledge-tree",
+  "baseline": {
+    "commit": "25769e669cbc43b7a82bfa7498305ed872b9abb5",
+    "application_version": "2.6.0",
+    "schema_version": "0.6.0"
+  },
+  "upgrade_version": "2.7.0",
+  "created": "2026-06-23",
+  "purpose": "Give research agents a precise, refreshable and falsifiable interface for continuing the verified Yang–Mills RG development.",
+  "yang_mills_repository": {
+    "repository": "lluiseriksson/THE-ERIKSSON-PROGRAMME",
+    "inspected_head": "4ac57638396f62c4cb968676a07a9ae95bd982be",
+    "previous_frontier_head": "d1023e1f7bd7cb315b931f0592cb4334ba1b71e4",
+    "latest_ledger_addendum": 296,
+    "verified_core_jobs": 8349,
+    "snapshot_date": "2026-06-23"
+  },
+  "entrypoints": [
+    "integrations/yang-mills/README.md",
+    "integrations/yang-mills/generated/agent-context.md",
+    "prompts/yang-mills-next-commit.md",
+    "prompts/yang-mills-source-extraction.md",
+    "docs/research-playbooks/yang-mills-raw-source-to-m3.md",
+    "integrations/yang-mills/templates/next-geometric-wrapper.lean.template"
+  ],
+  "machine_data": {
+    "state": "integrations/yang-mills/data/repository-state.json",
+    "declarations": "integrations/yang-mills/data/declarations.json",
+    "pipeline": "integrations/yang-mills/data/theorem-pipeline.json",
+    "frontier": "integrations/yang-mills/data/hypothesis-frontier.json",
+    "roadmap": "integrations/yang-mills/data/commit-roadmap.json",
+    "sources": "integrations/yang-mills/data/source-map.json",
+    "moves": "integrations/yang-mills/data/research-moves.json",
+    "rules": "integrations/yang-mills/data/decision-rules.json",
+    "evaluations": "integrations/yang-mills/evaluation/scenarios.json",
+    "search_queries": "integrations/yang-mills/data/search-queries.json",
+    "theorem_sketches": "integrations/yang-mills/data/theorem-sketches.json"
+  },
+  "quality_gates": [
+    "all JSON files parse",
+    "IDs and declaration names are unique",
+    "all route and dependency references resolve",
+    "planned declarations are never marked verified",
+    "analytic source facts are never marked proved",
+    "geometric and marginal branches remain distinct",
+    "support roles remain distinct",
+    "uniformity quantifiers are represented",
+    "guardrails cover hRpoly and continuum/Clay claims",
+    "generated context is reproducible"
+  ],
+  "guardrails": [
+    "Do not claim hRpoly from an adapter theorem.",
+    "Do not claim a continuum or Clay conclusion.",
+    "Do not call a geometric-coupling theorem the honest 4D marginal branch.",
+    "Do not collapse spectator, fluctuation, active, Omega, skeleton and full-target support.",
+    "Do not treat source anchors as Lean proofs.",
+    "Refresh the Yang–Mills HEAD before proposing code changes."
+  ]
+}

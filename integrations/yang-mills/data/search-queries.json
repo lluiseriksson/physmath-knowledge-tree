@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0.0",
+  "purpose": "Freshness and declaration-discovery queries to run before planning a Yang–Mills commit.",
+  "queries": [
+    {
+      "id": "q.current-head",
+      "tool": "GitHub commit/repository lookup",
+      "query": "resolve default-branch HEAD for lluiseriksson/THE-ERIKSSON-PROGRAMME",
+      "why": "Never assume the stored snapshot is current.",
+      "expected": "commit SHA, message and date"
+    },
+    {
+      "id": "q.raw-hsharp-producer",
+      "tool": "GitHub code search",
+      "query": "singleScaleUVDecay_of_cmp116RawSource_hsharp",
+      "why": "Confirm producer exists and inspect its exact signature.",
+      "expected_files": [
+        "YangMills/RG/PhysicalGaugeCMP116RawHsharp.lean",
+        "oracle_check.lean"
+      ]
+    },
+    {
+      "id": "q.single-scale-consumers",
+      "tool": "GitHub code search",
+      "query": "SingleScaleUVDecay",
+      "why": "Discover all direct consumers and avoid inventing duplicate predicates.",
+      "expected_files": [
+        "YangMills/RG/SingleScaleUVDecay.lean",
+        "YangMills/RG/PhysicalGaugeCMP116RawHsharp.lean"
+      ]
+    },
+    {
+      "id": "q.planned-geometric-wrapper",
+      "tool": "GitHub code search",
+      "query": "lattice_mass_gap_of_cmp116RawSource_hsharp_geometric",
+      "why": "Do not propose a theorem that has already landed.",
+      "expected": "zero hits at stored snapshot"
+    },
+    {
+      "id": "q.planned-marginal-wrapper",
+      "tool": "GitHub code search",
+      "query": "lattice_mass_gap_of_singleScaleUVDecay_marginal",
+      "why": "Check whether the named marginal semantic consumer now exists.",
+      "expected": "zero hits at stored snapshot"
+    },
+    {
+      "id": "q.mass-gap-assemblies",
+      "tool": "GitHub code search",
+      "query": "lattice_mass_gap_of_",
+      "why": "Compare geometric, marginal, summable and IR-fed assembly shapes.",
+      "expected_files": [
+        "YangMills/RG/UVMassGap.lean",
+        "YangMills/RG/MarginalUVMassGap.lean",
+        "YangMills/Paper/ClusteringToGap.lean"
+      ]
+    },
+    {
+      "id": "q.source-placeholders",
+      "tool": "GitHub code search",
+      "query": "rootLocalization wilsonHessianIdentification localActivityConstruction",
+      "why": "Locate opaque Prop fields scheduled for typed replacement.",
+      "expected_files": [
+        "YangMills/RG/PhysicalGaugeCMP116ActivityConstruction.lean",
+        "YangMills/RG/PhysicalGaugeCMP116RawHsharp.lean"
+      ]
+    },
+    {
+      "id": "q.frontier-docs",
+      "tool": "GitHub code search",
+      "query": "hRpoly",
+      "why": "Audit current honesty language and avoid stale frontier claims.",
+      "expected_files": [
+        "HYPOTHESIS_FRONTIER.md",
+        "CURRENT-STATE.md",
+        "docs/BALABAN-SOURCE-BOUNDS.md"
+      ]
+    }
+  ],
+  "freshness_decision": "If any planned declaration is found or the HEAD differs, update repository-state, declarations, pipeline and roadmap before answering."
+}

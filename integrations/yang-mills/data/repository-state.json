@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "snapshot": {
+    "date": "2026-06-23",
+    "repository": "lluiseriksson/THE-ERIKSSON-PROGRAMME",
+    "head": "4ac57638396f62c4cb968676a07a9ae95bd982be",
+    "head_message": "feat(RG): transport CMP116 raw source to Appendix-F hraw",
+    "previous_head": "d1023e1f7bd7cb315b931f0592cb4334ba1b71e4",
+    "ledger_addendum": 296,
+    "verified_core_jobs": 8349,
+    "oracle_target": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "formal_pipeline": [
+    "raw-source compatibility package",
+    "PhysicalGaugeCMP116ActivityTransport.of_cmp116RawSource",
+    "physicalGaugeCMP116SupportHypotheses_of_cmp116RawSource",
+    "balabanCMP116_hraw_of_cmp116RawSource",
+    "physicalGaugeCMP116RawSourceScaleFamily",
+    "singleScaleUVDecay_of_cmp116RawSource_hsharp",
+    "SingleScaleUVDecay"
+  ],
+  "current_frontier": "SingleScaleUVDecay is verified; a clean top-level raw-source/H# to M3 theorem is not present at the inspected HEAD.",
+  "recommended_next_commit": "commit.raw-hsharp-geometric-m3",
+  "preferred_physical_follow_up": "commit.named-marginal-consumer",
+  "refresh_protocol": [
+    "Resolve the current default-branch HEAD without assuming the stored SHA.",
+    "Search for every planned declaration name before proposing it.",
+    "Inspect consumers of SingleScaleUVDecay and compare geometric versus marginal assumptions.",
+    "Update this snapshot only after Lean and oracle verification."
+  ],
+  "honest_scope": {
+    "proved": [
+      "formal adapters from raw-source packages to CMP116 support/hraw",
+      "scale-family construction",
+      "H# consumer producing SingleScaleUVDecay under explicit hypotheses",
+      "geometric and marginal M3 assembly theorems at the scalar remainder level"
+    ],
+    "not_proved": [
+      "concrete Yang–Mills Gaussian pushforward",
+      "covariance-root localization with uniform constants",
+      "Wilson Hessian identification",
+      "construction of the physical local activity",
+      "raw pointwise source estimate",
+      "physical H# remainder identity",
+      "hRpoly",
+      "continuum limit or Clay mass gap"
+    ]
+  }
+}

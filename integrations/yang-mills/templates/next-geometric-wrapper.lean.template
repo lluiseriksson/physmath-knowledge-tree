@@ -1,0 +1,34 @@
+/- Unverified proof-spine template.
+Copy the exact raw-source/H# argument list from
+`singleScaleUVDecay_of_cmp116RawSource_hsharp`; do not restate it from memory. -/
+
+import YangMills.RG.PhysicalGaugeCMP116RawHsharp
+
+namespace YangMills.RG
+
+open MeasureTheory
+open scoped BigOperators RealInnerProductSpace
+
+-- theorem lattice_mass_gap_of_cmp116RawSource_hsharp_geometric
+--     (covIR : ℕ → ℝ) (nsc : ℕ → ℕ)
+--     <exact arguments of singleScaleUVDecay_of_cmp116RawSource_hsharp>
+--     {C1 eps Cg rho : ℝ}
+--     (heps : 0 < eps) (hc0 : 0 < c0)
+--     (hCg : 0 ≤ Cg) (hrho0 : 0 < rho) (hrho1 : rho < 1)
+--     (hkappa0_one : 1 ≤ kappa0)
+--     (hg_geometric : ∀ k, g k ≤ Cg * rho ^ k)
+--     (hIRbound : ∀ k, |covIR k| ≤ C1 * Real.exp (-(eps * (k : ℝ)))) :
+--     <explicit M3 conclusion> := by
+--   have hkappa0_pos : 0 < kappa0 := lt_of_lt_of_le zero_lt_one hkappa0_one
+--   have hden : 0 < 1 - <Appendix-F q> := sub_pos.mpr hCq
+--   have hA : 0 ≤ <Hsharp amplitude> :=
+--     mul_nonneg (mul_nonneg hC hHbar) (inv_pos.mpr hden).le
+--   have hUV :=
+--     singleScaleUVDecay_of_cmp116RawSource_hsharp
+--       <all existing raw-source/Hsharp arguments> hkappa0_pos <remaining arguments>
+--   exact
+--     lattice_mass_gap_of_singleScaleUVDecay_geometric
+--       covIR Rsc nsc g heps hc0 hA hCg hrho0 hrho1
+--       hkappa0_one hg hg_geometric hIRbound hUV
+
+end YangMills.RG

@@ -1,0 +1,129 @@
+{
+  "schema_version": "1.0.0",
+  "sources": [
+    {
+      "id": "src.balaban-cmp95",
+      "citation": "T. Balaban, CMP 95, Green/propagator estimates",
+      "role": "candidate covariance and kernel localization input",
+      "anchors": [
+        "uniform L2 Green bound",
+        "localized exponential estimate"
+      ],
+      "claim_status": "source-anchor",
+      "lean_targets": [
+        "obl.root-localization"
+      ],
+      "translation_gaps": [
+        "gauge slice",
+        "physical bond metric",
+        "root rather than covariance",
+        "uniform finite-volume constants"
+      ]
+    },
+    {
+      "id": "src.balaban-cmp116",
+      "citation": "T. Balaban, Renormalization group approach II, CMP 116 (1988)",
+      "role": "localized Gaussian activity construction and raw pointwise decay",
+      "anchors": [
+        "(2.5)-(2.6) Gaussian change",
+        "(2.4)-(2.11) localization/component expansion",
+        "Lemma 3 / (2.38)",
+        "(2.39)-(2.41) constant closure"
+      ],
+      "claim_status": "source-backed-candidate",
+      "lean_targets": [
+        "obl.gaussian-pushforward",
+        "obl.local-activity",
+        "obl.raw-decay",
+        "obl.support-localization",
+        "obl.measurability"
+      ],
+      "translation_gaps": [
+        "exact domain-to-OmegaPolymerType map",
+        "cutoff domain of validity",
+        "metric normalization",
+        "support enlargement convention",
+        "constant quantifiers"
+      ]
+    },
+    {
+      "id": "src.balaban-cmp119",
+      "citation": "T. Balaban, Convergent renormalization expansions, CMP 119 (1988)",
+      "role": "localized E/R/B decomposition and scale-local remainder bounds",
+      "anchors": [
+        "(2.31) R term",
+        "(2.42) boundary term"
+      ],
+      "claim_status": "source-anchor",
+      "lean_targets": [
+        "obl.hsharp-remainder-identity",
+        "obl.uniform-constants"
+      ],
+      "translation_gaps": [
+        "observable/source insertion",
+        "rooted scalar extraction",
+        "real-part convention",
+        "boundary terms"
+      ]
+    },
+    {
+      "id": "src.balaban-cmp122-ii",
+      "citation": "T. Balaban, Large field renormalization II, CMP 122 (1989)",
+      "role": "localized exponentiated R-operation bounds",
+      "anchors": [
+        "(1.98)-(1.100)"
+      ],
+      "claim_status": "source-anchor",
+      "lean_targets": [
+        "obl.hsharp-remainder-identity",
+        "obl.hsharp-profile"
+      ],
+      "translation_gaps": [
+        "R' to current Hsharp object",
+        "scalar covariance interpretation",
+        "uniformity"
+      ]
+    },
+    {
+      "id": "src.dimock-i-app-b",
+      "citation": "J. Dimock, The Renormalization Group According to Balaban I, Appendix B",
+      "role": "tree/Ursell fixed-target mechanism",
+      "anchors": [
+        "tree-graph domination",
+        "fixed-union rewrite",
+        "order summation"
+      ],
+      "claim_status": "method-anchor",
+      "lean_targets": [
+        "obl.hsharp-half-budget",
+        "obl.hsharp-profile"
+      ],
+      "translation_gaps": [
+        "no-hole to with-holes adaptation",
+        "exact current weighted-tree term"
+      ]
+    },
+    {
+      "id": "src.dimock-ii-app-f",
+      "citation": "J. Dimock, The Renormalization Group According to Balaban II, Appendix F",
+      "role": "cluster expansion with holes and Hsharp residual decay",
+      "anchors": [
+        "Omega-connected relation",
+        "cluster3 theorem",
+        "modified-metric summability"
+      ],
+      "claim_status": "source-theorem-shape",
+      "lean_targets": [
+        "obl.hole-geometry",
+        "obl.hsharp-half-budget",
+        "obl.hsharp-profile"
+      ],
+      "translation_gaps": [
+        "source constants to current half-budget interface",
+        "3*kappa0+3 versus current 4*kappa0+3 margin",
+        "exact object matching"
+      ]
+    }
+  ],
+  "policy": "A source anchor may justify a target statement, but must never be marked as a Lean proof until the object and constants are translated and verified."
+}

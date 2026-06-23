@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0.0",
+  "moves": [
+    {
+      "id": "ym.compose-named-predicates",
+      "title": "Compose named predicates before adding new abstractions",
+      "trigger": "A producer and consumer already agree on a semantic predicate.",
+      "action": "Add the thinnest top-level theorem with repo-consistent suffixes and derive only elementary side conditions.",
+      "current_application": "singleScaleUVDecay_of_cmp116RawSource_hsharp -> lattice_mass_gap_of_singleScaleUVDecay_geometric",
+      "anti_pattern": "Re-state the scalar inequality as a new hypothesis or invent a duplicate m3_uv_input predicate.",
+      "lean_test": "The proof body is one producer call, elementary positivity, and one consumer call."
+    },
+    {
+      "id": "ym.branch-fidelity",
+      "title": "Keep geometric and marginal branches distinct",
+      "trigger": "A scale profile g appears in a 4D Yang–Mills theorem.",
+      "action": "Inspect whether the assumption is g_k <= C r^k or a marginal recursion; suffix theorem names accordingly.",
+      "current_application": "Create both _geometric and _marginal wrappers; prefer marginal for the physical 4D route.",
+      "anti_pattern": "Calling a geometric surrogate the honest 4D coupling theorem.",
+      "lean_test": "The geometric wrapper exposes r; the marginal wrapper exposes beta and kappa0 > 1."
+    },
+    {
+      "id": "ym.separate-support-roles",
+      "title": "Preserve every support role until its consumer fires",
+      "trigger": "An adapter mentions locality or factorization.",
+      "action": "Track spectator, fluctuation, physical active, Omega, skeleton and full target separately.",
+      "current_application": "Raw-source support bundle and Appendix-F Omega-connectivity.",
+      "anti_pattern": "One support field reused for connectivity, dependence and exact target union.",
+      "lean_test": "Each inclusion has a separately named theorem or field."
+    },
+    {
+      "id": "ym.audit-information-loss",
+      "title": "Audit information loss at every scalarization",
+      "trigger": "Moving from activities or targets to a norm, majorant or scalar remainder.",
+      "action": "Record target, support, signs, measure, scale and source identity that are forgotten.",
+      "current_application": "SingleScaleUVDecay forgets Hsharp targets and source construction.",
+      "anti_pattern": "Using the scalar predicate later to claim physical Hsharp provenance.",
+      "lean_test": "Every declaration record has a nonempty forgets/caveat audit where appropriate."
+    },
+    {
+      "id": "ym.quantifier-uniformity",
+      "title": "Move constants outside all physical indices",
+      "trigger": "A source estimate is said to be uniform.",
+      "action": "Write exists constants, forall volume cutoff background holes t k; reject the reverse quantifier order.",
+      "current_application": "PhysicalGaugeCMP116RawHsharpUniformConstants and UniformFamily.",
+      "anti_pattern": "A separate convenient constant for every finite volume or scale.",
+      "lean_test": "#check displays constants before the indexed family hypotheses."
+    },
+    {
+      "id": "ym.typed-source-facts",
+      "title": "Replace opaque Prop placeholders with typed equalities and constructions",
+      "trigger": "A source package accepts arbitrary Prop parameters.",
+      "action": "Define facts that mention the actual precision, Hessian, root, activity and coordinate maps.",
+      "current_application": "rootLocalization, wilsonHessianIdentification, localActivityConstruction.",
+      "anti_pattern": "Renaming an arbitrary Prop without exposing mathematical data.",
+      "lean_test": "Every field type changes when the underlying operator/activity changes."
+    },
+    {
+      "id": "ym.definition-vs-identification",
+      "title": "Separate definition of an auxiliary remainder from physical identification",
+      "trigger": "A scalar is defined as an Hsharp sum.",
+      "action": "Use a definitional scalar to simplify formal plumbing, but keep a second theorem identifying it with the physical covariance remainder.",
+      "current_application": "hR remains an explicit obligation.",
+      "anti_pattern": "Treating rfl for an auxiliary scalar as the physical hR theorem.",
+      "lean_test": "The physical identification theorem has nontrivial source hypotheses."
+    },
+    {
+      "id": "ym.numerical-shell-nonvacuity",
+      "title": "Prove numerical shell non-vacuity without pretending physical non-vacuity",
+      "trigger": "Many smallness inequalities obscure consistency.",
+      "action": "Construct witnesses for numerical constants and explicitly exclude source/activity fields from the claim.",
+      "current_application": "AppendixFHsharpNumericalWindow.",
+      "anti_pattern": "Claiming a Yang–Mills package exists because real-number inequalities are satisfiable.",
+      "lean_test": "The theorem conclusion mentions only numerical parameters."
+    },
+    {
+      "id": "ym.source-equation-to-field",
+      "title": "Map each source equation to one typed Lean field",
+      "trigger": "Preparing the final source theorem.",
+      "action": "Create a table source anchor -> mathematical object -> Lean field -> downstream consumer -> uniformity dependencies.",
+      "current_application": "Balaban/Dimock source estimate interface.",
+      "anti_pattern": "A single omnibus field named sourceTheorem.",
+      "lean_test": "Deleting any field breaks a specific downstream projection."
+    },
+    {
+      "id": "ym.oracle-closure",
+      "title": "Treat oracle and no-sorry checks as part of theorem design",
+      "trigger": "A new headline theorem or source interface is introduced.",
+      "action": "Add #print axioms, isolated file compilation, core build, consistency and diff checks in the same commit.",
+      "current_application": "Every roadmap commit.",
+      "anti_pattern": "Documentation claims before oracle verification.",
+      "lean_test": "Expected axioms are exactly propext, Classical.choice, Quot.sound."
+    }
+  ]
+}

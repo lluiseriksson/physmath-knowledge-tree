@@ -1,0 +1,259 @@
+{
+  "schema_version": "1.0.0",
+  "declarations": [
+    {
+      "id": "decl.raw-source-transport-namespaced",
+      "name": "YangMills.RG.PhysicalGaugeCMP116ActivityTransport.of_cmp116RawSource",
+      "status": "verified",
+      "file": "YangMills/RG/PhysicalGaugeCMP116ActivityConstruction.lean",
+      "verified_at": "4ac57638396f62c4cb968676a07a9ae95bd982be",
+      "kind": "definition",
+      "role": "Construct the canonical dictionary-backed activity transport from a raw-source compatibility package.",
+      "consumes": [],
+      "produces": [
+        "artifact.localized-activity-transport"
+      ],
+      "hypothesis_groups": [
+        "root-certificate",
+        "raw-source-package",
+        "support",
+        "measurability",
+        "weight-domination"
+      ],
+      "forgets": [
+        "physical source derivation"
+      ],
+      "caveat": "Pure composition; it proves no source estimate."
+    },
+    {
+      "id": "decl.raw-source-support",
+      "name": "YangMills.RG.physicalGaugeCMP116SupportHypotheses_of_cmp116RawSource",
+      "status": "verified",
+      "file": "YangMills/RG/PhysicalGaugeCMP116ActivityConstruction.lean",
+      "verified_at": "4ac57638396f62c4cb968676a07a9ae95bd982be",
+      "kind": "theorem",
+      "role": "Project the canonical raw-source transport into the Appendix-F support package.",
+      "consumes": [
+        "decl.raw-source-transport-namespaced"
+      ],
+      "produces": [
+        "artifact.appendix-f-support"
+      ],
+      "hypothesis_groups": [
+        "support",
+        "measurability",
+        "weight-domination"
+      ],
+      "forgets": [
+        "physical distinction between support proofs after packaging"
+      ],
+      "caveat": "Support facts are hypotheses, not Balaban locality theorems."
+    },
+    {
+      "id": "decl.raw-source-hraw",
+      "name": "YangMills.RG.balabanCMP116_hraw_of_cmp116RawSource",
+      "status": "verified",
+      "file": "YangMills/RG/PhysicalGaugeCMP116ActivityConstruction.lean",
+      "verified_at": "d1023e1f7bd7cb315b931f0592cb4334ba1b71e4",
+      "kind": "theorem",
+      "role": "Produce the exact Appendix-F pointwise hraw shape for the transported family.",
+      "consumes": [
+        "decl.raw-source-transport-namespaced"
+      ],
+      "produces": [
+        "artifact.appendix-f-hraw"
+      ],
+      "hypothesis_groups": [
+        "raw-pointwise-decay",
+        "support",
+        "weight-domination"
+      ],
+      "forgets": [
+        "origin of the pointwise estimate"
+      ],
+      "caveat": "The raw decay is still a field of the source package."
+    },
+    {
+      "id": "decl.raw-source-scale-family",
+      "name": "YangMills.RG.physicalGaugeCMP116RawSourceScaleFamily",
+      "status": "verified",
+      "file": "YangMills/RG/PhysicalGaugeCMP116RawHsharp.lean",
+      "verified_at": "d1023e1f7bd7cb315b931f0592cb4334ba1b71e4",
+      "kind": "definition",
+      "role": "Package the raw-source transport as a family indexed by distance and RG scale.",
+      "consumes": [
+        "decl.raw-source-transport-namespaced"
+      ],
+      "produces": [
+        "artifact.scale-family"
+      ],
+      "hypothesis_groups": [
+        "all-scale-source-data"
+      ],
+      "forgets": [],
+      "caveat": "Uniformity is not encoded merely by placing data under forall t k."
+    },
+    {
+      "id": "decl.raw-hsharp-single-scale",
+      "name": "YangMills.RG.singleScaleUVDecay_of_cmp116RawSource_hsharp",
+      "status": "verified",
+      "file": "YangMills/RG/PhysicalGaugeCMP116RawHsharp.lean",
+      "verified_at": "d1023e1f7bd7cb315b931f0592cb4334ba1b71e4",
+      "kind": "theorem",
+      "role": "Feed the transported family to the H# endpoint and obtain the consumer-facing SingleScaleUVDecay predicate.",
+      "consumes": [
+        "decl.raw-source-scale-family",
+        "decl.raw-source-hraw"
+      ],
+      "produces": [
+        "artifact.single-scale-uv-decay"
+      ],
+      "hypothesis_groups": [
+        "source",
+        "support",
+        "measure",
+        "hole-geometry",
+        "hsharp-identity",
+        "half-budget",
+        "profile"
+      ],
+      "forgets": [
+        "individual H# activities after scalarization"
+      ],
+      "caveat": "The physical remainder identity hR and every source estimate remain explicit."
+    },
+    {
+      "id": "decl.single-scale-predicate",
+      "name": "YangMills.RG.SingleScaleUVDecay",
+      "status": "verified",
+      "file": "YangMills/RG/SingleScaleUVDecay.lean",
+      "verified_at": "d1023e1f7bd7cb315b931f0592cb4334ba1b71e4",
+      "kind": "definition",
+      "role": "Semantic scalar per-scale UV decay consumed by mass-gap assemblies.",
+      "consumes": [],
+      "produces": [
+        "artifact.single-scale-uv-decay"
+      ],
+      "hypothesis_groups": [],
+      "forgets": [
+        "polymer target",
+        "support",
+        "measure",
+        "source construction"
+      ],
+      "caveat": "By itself it does not identify Rsc with a physical covariance remainder."
+    },
+    {
+      "id": "decl.geometric-consumer",
+      "name": "YangMills.RG.lattice_mass_gap_of_singleScaleUVDecay_geometric",
+      "status": "verified",
+      "file": "YangMills/RG/SingleScaleUVDecay.lean",
+      "verified_at": "d1023e1f7bd7cb315b931f0592cb4334ba1b71e4",
+      "kind": "theorem",
+      "role": "Consume SingleScaleUVDecay plus a geometric profile g_k <= C r^k and IR decay to produce a positive lattice decay rate.",
+      "consumes": [
+        "decl.single-scale-predicate"
+      ],
+      "produces": [
+        "artifact.m3-lattice-decay-geometric"
+      ],
+      "hypothesis_groups": [
+        "ir-decay",
+        "geometric-coupling",
+        "positivity"
+      ],
+      "forgets": [
+        "source construction"
+      ],
+      "caveat": "This is not the faithful 4D marginal-coupling branch."
+    },
+    {
+      "id": "decl.marginal-assembly",
+      "name": "YangMills.RG.lattice_mass_gap_of_cluster_and_marginal_coupling",
+      "status": "verified",
+      "file": "YangMills/RG/MarginalUVMassGap.lean",
+      "verified_at": "d1023e1f7bd7cb315b931f0592cb4334ba1b71e4",
+      "kind": "theorem",
+      "role": "Use the marginal recursion and summability of g^kappa0 to assemble scalar per-scale decay into lattice exponential decay.",
+      "consumes": [],
+      "produces": [
+        "artifact.m3-lattice-decay-marginal"
+      ],
+      "hypothesis_groups": [
+        "ir-decay",
+        "marginal-recursion",
+        "scalar-remainder-bound"
+      ],
+      "forgets": [
+        "source construction"
+      ],
+      "caveat": "At the inspected HEAD it does not accept SingleScaleUVDecay by a named semantic wrapper."
+    },
+    {
+      "id": "decl.planned-raw-hsharp-geometric-m3",
+      "name": "YangMills.RG.lattice_mass_gap_of_cmp116RawSource_hsharp_geometric",
+      "status": "planned",
+      "file": "YangMills/RG/PhysicalGaugeCMP116RawUVMassGap.lean",
+      "kind": "theorem",
+      "role": "Compose the verified raw-source H# producer directly with the named geometric SingleScaleUVDecay consumer.",
+      "consumes": [
+        "decl.raw-hsharp-single-scale",
+        "decl.geometric-consumer"
+      ],
+      "produces": [
+        "artifact.m3-lattice-decay-geometric"
+      ],
+      "hypothesis_groups": [
+        "all-raw-hsharp",
+        "ir-decay",
+        "geometric-coupling"
+      ],
+      "forgets": [],
+      "caveat": "Must retain the _geometric suffix and all analytic hypotheses."
+    },
+    {
+      "id": "decl.planned-named-marginal-consumer",
+      "name": "YangMills.RG.lattice_mass_gap_of_singleScaleUVDecay_marginal",
+      "status": "planned",
+      "file": "YangMills/RG/MarginalUVMassGap.lean",
+      "kind": "theorem",
+      "role": "Give the marginal assembly a named semantic consumer of SingleScaleUVDecay.",
+      "consumes": [
+        "decl.single-scale-predicate",
+        "decl.marginal-assembly"
+      ],
+      "produces": [
+        "artifact.m3-lattice-decay-marginal"
+      ],
+      "hypothesis_groups": [
+        "ir-decay",
+        "marginal-recursion",
+        "positivity"
+      ],
+      "forgets": [],
+      "caveat": "Should be a thin definitional adapter, not a new analytic theorem."
+    },
+    {
+      "id": "decl.planned-raw-hsharp-marginal-m3",
+      "name": "YangMills.RG.lattice_mass_gap_of_cmp116RawSource_hsharp_marginal",
+      "status": "planned",
+      "file": "YangMills/RG/PhysicalGaugeCMP116RawUVMassGap.lean",
+      "kind": "theorem",
+      "role": "Compose the raw-source H# producer with the faithful named marginal consumer.",
+      "consumes": [
+        "decl.raw-hsharp-single-scale",
+        "decl.planned-named-marginal-consumer"
+      ],
+      "produces": [
+        "artifact.m3-lattice-decay-marginal"
+      ],
+      "hypothesis_groups": [
+        "all-raw-hsharp",
+        "ir-decay",
+        "marginal-recursion"
+      ],
+      "forgets": [],
+      "caveat": "Still conditional on hR and the concrete source package."
+    }
+  ]
+}

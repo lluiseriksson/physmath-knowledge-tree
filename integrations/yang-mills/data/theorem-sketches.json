@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0.0",
+  "sketches": [
+    {
+      "id": "sketch.raw-hsharp-geometric-m3",
+      "status": "unverified-template",
+      "theorem": "YangMills.RG.lattice_mass_gap_of_cmp116RawSource_hsharp_geometric",
+      "new_parameters": [
+        "covIR : Nat -> Real",
+        "nsc : Nat -> Nat",
+        "C1 eps Cg rho : Real"
+      ],
+      "reuse_signature_from": "YangMills.RG.singleScaleUVDecay_of_cmp116RawSource_hsharp",
+      "new_hypotheses": [
+        "0 < eps",
+        "0 < c0",
+        "0 <= Cg",
+        "0 < rho",
+        "rho < 1",
+        "1 <= kappa0",
+        "forall k, g k <= Cg * rho ^ k",
+        "IR exponential bound"
+      ],
+      "proof_steps": [
+        "derive 0 < kappa0 from 1 <= kappa0",
+        "derive positivity of the Hsharp denominator from hCq",
+        "derive nonnegativity of the final Hsharp amplitude from hC, hHbar and denominator positivity",
+        "call singleScaleUVDecay_of_cmp116RawSource_hsharp with the existing raw-source/Hsharp hypotheses",
+        "call lattice_mass_gap_of_singleScaleUVDecay_geometric"
+      ],
+      "conclusion": "exists gap > 0, forall t, abs(covIR t + covUV_concrete Rsc nsc t) is bounded by the explicit geometric M3 amplitude times exp(-gap*t)",
+      "forbidden_simplifications": [
+        "replace hR by rfl",
+        "drop source/support hypotheses",
+        "remove _geometric suffix",
+        "claim hRpoly"
+      ]
+    },
+    {
+      "id": "sketch.named-marginal-consumer",
+      "status": "unverified-template",
+      "theorem": "YangMills.RG.lattice_mass_gap_of_singleScaleUVDecay_marginal",
+      "reuse_signature_from": "YangMills.RG.lattice_mass_gap_of_cluster_and_marginal_coupling",
+      "replacement": "Replace the unfolded scalar remainder inequality argument with hUV : SingleScaleUVDecay Rsc g A c0 kappa0.",
+      "proof_steps": [
+        "exact lattice_mass_gap_of_cluster_and_marginal_coupling ... hUV"
+      ],
+      "conclusion": "same marginal M3 conclusion with a named semantic UV input",
+      "forbidden_simplifications": [
+        "assume geometric g",
+        "rename the result without _marginal"
+      ]
+    }
+  ]
+}

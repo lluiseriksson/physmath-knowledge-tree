@@ -1,0 +1,282 @@
+{
+  "schema_version": "1.0.0",
+  "base_head": "4ac57638396f62c4cb968676a07a9ae95bd982be",
+  "commits": [
+    {
+      "id": "commit.raw-hsharp-geometric-m3",
+      "order": 1,
+      "title": "feat(RG): assemble raw-source Hsharp into geometric M3",
+      "risk": "low",
+      "status": "next",
+      "files": [
+        "YangMills/RG/PhysicalGaugeCMP116RawUVMassGap.lean",
+        "YangMillsCore.lean",
+        "oracle_check.lean",
+        "CURRENT-STATE.md",
+        "docs/VERIFICATION-LEDGER.md"
+      ],
+      "declarations": [
+        "decl.planned-raw-hsharp-geometric-m3"
+      ],
+      "consumes": [
+        "decl.raw-hsharp-single-scale",
+        "decl.geometric-consumer"
+      ],
+      "exposes": [
+        "all-raw-hsharp",
+        "obl.geometric-profile",
+        "obl.ir-input"
+      ],
+      "conclusion": "A positive uniform lattice decay rate for covIR + covUV_concrete, conditional on the complete raw-source/H# package and a geometric scale profile.",
+      "verification": [
+        "lake env lean YangMills/RG/PhysicalGaugeCMP116RawUVMassGap.lean",
+        "lake build YangMillsCore",
+        "lake env lean oracle_check.lean",
+        "python scripts/check_consistency.py",
+        "git diff --check"
+      ],
+      "remains_conditional": [
+        "obl.gaussian-pushforward",
+        "obl.root-localization",
+        "obl.wilson-hessian",
+        "obl.local-activity",
+        "obl.raw-decay",
+        "obl.support-localization",
+        "obl.measurability",
+        "obl.hsharp-remainder-identity",
+        "obl.geometric-profile",
+        "obl.uniform-constants"
+      ]
+    },
+    {
+      "id": "commit.named-marginal-consumer",
+      "order": 2,
+      "title": "feat(RG): add the marginal SingleScaleUVDecay M3 consumer",
+      "risk": "low",
+      "status": "planned",
+      "files": [
+        "YangMills/RG/MarginalUVMassGap.lean",
+        "YangMills/RG/PhysicalGaugeCMP116RawUVMassGap.lean",
+        "oracle_check.lean"
+      ],
+      "declarations": [
+        "decl.planned-named-marginal-consumer",
+        "decl.planned-raw-hsharp-marginal-m3"
+      ],
+      "consumes": [
+        "decl.single-scale-predicate",
+        "decl.marginal-assembly",
+        "decl.raw-hsharp-single-scale"
+      ],
+      "exposes": [
+        "obl.marginal-recursion",
+        "obl.ir-input",
+        "all-raw-hsharp"
+      ],
+      "conclusion": "The raw-source/H# frontier reaches the faithful 4D marginal M3 assembly without a geometric-coupling surrogate.",
+      "verification": [
+        "lake env lean YangMills/RG/MarginalUVMassGap.lean",
+        "lake env lean YangMills/RG/PhysicalGaugeCMP116RawUVMassGap.lean",
+        "lake env lean oracle_check.lean"
+      ],
+      "remains_conditional": [
+        "obl.hsharp-remainder-identity",
+        "obl.marginal-recursion",
+        "obl.uniform-constants"
+      ]
+    },
+    {
+      "id": "commit.frontier-bundle",
+      "order": 3,
+      "title": "refactor(RG): name the raw Hsharp hypothesis frontier",
+      "risk": "medium",
+      "status": "planned",
+      "files": [
+        "YangMills/RG/PhysicalGaugeCMP116RawHsharpFrontier.lean",
+        "YangMills/RG/PhysicalGaugeCMP116RawUVMassGap.lean"
+      ],
+      "declarations": [
+        "YangMills.RG.PhysicalGaugeCMP116RawHsharpFrontier"
+      ],
+      "consumes": [
+        "decl.raw-hsharp-single-scale"
+      ],
+      "exposes": [
+        "obl.gaussian-pushforward",
+        "obl.root-localization",
+        "obl.wilson-hessian",
+        "obl.local-activity",
+        "obl.raw-decay",
+        "obl.support-localization",
+        "obl.measurability",
+        "obl.hole-geometry",
+        "obl.hsharp-half-budget",
+        "obl.hsharp-profile",
+        "obl.hsharp-remainder-identity",
+        "obl.geometric-profile",
+        "obl.marginal-recursion",
+        "obl.ir-input",
+        "obl.uniform-constants"
+      ],
+      "conclusion": "One stable bundle with projections to SingleScaleUVDecay and both M3 branches.",
+      "verification": [
+        "lake env lean YangMills/RG/PhysicalGaugeCMP116RawHsharpFrontier.lean",
+        "#print axioms on every projection"
+      ],
+      "remains_conditional": [
+        "inhabitation of the frontier by the physical model"
+      ]
+    },
+    {
+      "id": "commit.frontier-audit",
+      "order": 4,
+      "title": "docs(RG): audit the CMP116 raw Hsharp analytic frontier",
+      "risk": "low",
+      "status": "planned",
+      "files": [
+        "docs/CMP116-RAW-HSHARP-M3-FRONTIER.md",
+        "HYPOTHESIS_FRONTIER.md",
+        "CURRENT-STATE.md"
+      ],
+      "declarations": [],
+      "consumes": [
+        "commit.frontier-bundle"
+      ],
+      "exposes": [
+        "source provenance",
+        "quantifier order",
+        "information loss"
+      ],
+      "conclusion": "A binder-to-source audit table that an agent can query without re-reading the entire RG tree.",
+      "verification": [
+        "check every declaration name with grep/#check",
+        "validate links and ledger references"
+      ],
+      "remains_conditional": [
+        "all analytic mathematics"
+      ]
+    },
+    {
+      "id": "commit.typed-source-facts",
+      "order": 5,
+      "title": "refactor(RG): replace opaque source Props with typed source facts",
+      "risk": "medium-high",
+      "status": "planned",
+      "files": [
+        "YangMills/RG/PhysicalGaugeCMP116ActivityConstruction.lean",
+        "YangMills/RG/PhysicalGaugeCMP116RawHsharpFrontier.lean"
+      ],
+      "declarations": [
+        "YangMills.RG.PhysicalGaugeCMP116RootLocalizationFact",
+        "YangMills.RG.PhysicalGaugeWilsonHessianIdentificationFact",
+        "YangMills.RG.PhysicalGaugeCMP116LocalActivityConstructionFact"
+      ],
+      "consumes": [
+        "commit.frontier-bundle"
+      ],
+      "exposes": [
+        "obl.root-localization",
+        "obl.wilson-hessian",
+        "obl.local-activity"
+      ],
+      "conclusion": "Source hypotheses mention concrete operators, activities and equalities instead of arbitrary Prop parameters.",
+      "verification": [
+        "compile the full raw-source -> H# chain",
+        "ensure each new field is consumed downstream"
+      ],
+      "remains_conditional": [
+        "proofs of the typed facts"
+      ]
+    },
+    {
+      "id": "commit.uniformity",
+      "order": 6,
+      "title": "feat(RG): make finite-volume and scale uniformity explicit",
+      "risk": "high",
+      "status": "planned",
+      "files": [
+        "YangMills/RG/PhysicalGaugeCMP116UniformRawHsharp.lean"
+      ],
+      "declarations": [
+        "YangMills.RG.PhysicalGaugeCMP116RawHsharpUniformConstants",
+        "YangMills.RG.PhysicalGaugeCMP116RawHsharpUniformFamily"
+      ],
+      "consumes": [
+        "commit.typed-source-facts"
+      ],
+      "exposes": [
+        "obl.uniform-constants"
+      ],
+      "conclusion": "A single constants package lies outside all finite-volume, cutoff, background, hole and scale quantifiers.",
+      "verification": [
+        "check quantifier order in #check output",
+        "instantiate with a finite toy index",
+        "prove pointwise projections"
+      ],
+      "remains_conditional": [
+        "uniform analytic estimates"
+      ]
+    },
+    {
+      "id": "commit.numeric-nonvacuity",
+      "order": 7,
+      "title": "test(RG): prove non-vacuity of the numerical Hsharp shell",
+      "risk": "medium",
+      "status": "planned",
+      "files": [
+        "YangMills/RG/AppendixFHsharpNumericalWindow.lean",
+        "oracle_check.lean"
+      ],
+      "declarations": [
+        "YangMills.RG.AppendixFHsharpNumericalWindow",
+        "YangMills.RG.exists_appendixFHsharpNumericalWindow"
+      ],
+      "consumes": [
+        "commit.uniformity"
+      ],
+      "exposes": [
+        "obl.hsharp-half-budget",
+        "obl.hsharp-profile"
+      ],
+      "conclusion": "The numerical smallness and denominator conditions are jointly satisfiable without asserting a physical source package.",
+      "verification": [
+        "construct explicit witnesses",
+        "oracle output is standard only"
+      ],
+      "remains_conditional": [
+        "all physical/source obligations"
+      ]
+    },
+    {
+      "id": "commit.final-source-shape",
+      "order": 8,
+      "title": "feat(RG): state the Balaban-Dimock raw Hsharp source estimate interface",
+      "risk": "medium-high",
+      "status": "planned",
+      "files": [
+        "YangMills/RG/BalabanDimockCMP116SourceEstimate.lean",
+        "docs/BALABAN-DIMOCK-CMP116-SOURCE-TARGET.md"
+      ],
+      "declarations": [
+        "YangMills.RG.BalabanDimockCMP116RawHsharpSourceEstimate"
+      ],
+      "consumes": [
+        "commit.typed-source-facts",
+        "commit.uniformity",
+        "commit.numeric-nonvacuity"
+      ],
+      "exposes": [
+        "all analytic source obligations as named fields"
+      ],
+      "conclusion": "One source theorem-shaped object projects directly to the raw H# frontier and marginal M3 conditional.",
+      "verification": [
+        "every field has a downstream consumer",
+        "removing any source field breaks a named projection",
+        "full core/oracle checks"
+      ],
+      "remains_conditional": [
+        "construction of the source estimate object from Balaban/Dimock"
+      ]
+    }
+  ]
+}
