@@ -11,7 +11,11 @@ import {
   injectPwaCacheRevision,
 } from './lib/build-manifest.mjs';
 import { assertTreeHasNoSymlinks, walkRegularFiles } from './lib/fs-safety.mjs';
-import { isPublicArtifactPath, PUBLIC_BUILD_INPUTS } from './lib/public-surface.mjs';
+import {
+  assertGraphIndexArtifactClosure,
+  isPublicArtifactPath,
+  PUBLIC_BUILD_INPUTS,
+} from './lib/public-surface.mjs';
 
 const root = fileURLToPath(new URL('..', import.meta.url));
 const dist = join(root, 'dist');
@@ -89,6 +93,7 @@ for (const { item, from } of resolvedInputs) {
   }
 
   const files = collectBuiltFiles(staging);
+  assertGraphIndexArtifactClosure(graphIndex, new Set(files.map(({ path }) => path)));
   const manifest = {
     format_version: BUILD_MANIFEST_FORMAT,
     package_version: packageJson.version,

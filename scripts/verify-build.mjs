@@ -4,7 +4,7 @@ import { join, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { BUILD_MANIFEST_FORMAT, computeArtifactSha256, derivePwaCacheRevision } from './lib/build-manifest.mjs';
 import { isPathInside, walkRegularFiles } from './lib/fs-safety.mjs';
-import { isPublicArtifactPath } from './lib/public-surface.mjs';
+import { assertGraphIndexArtifactClosure, isPublicArtifactPath } from './lib/public-surface.mjs';
 
 const root = fileURLToPath(new URL('..', import.meta.url));
 const dist = join(root, 'dist');
@@ -80,6 +80,7 @@ if (derivePwaCacheRevision(manifest.files) !== manifest.pwa_cache_revision) thro
 const builtServiceWorker = readFileSync(join(dist, 'sw.js'), 'utf8');
 const workerRevision = /const CACHE_REVISION = '([^']+)'/u.exec(builtServiceWorker)?.[1];
 if (workerRevision !== manifest.pwa_cache_revision) throw new Error('Built service-worker cache revision is stale');
+assertGraphIndexArtifactClosure(graph, paths);
 
 if (actualPaths.length !== paths.size) throw new Error('Built-file count differs from manifest');
 for (const file of actualPaths) if (!paths.has(file)) throw new Error(`Unmanifested built file: ${file}`);

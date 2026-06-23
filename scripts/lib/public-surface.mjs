@@ -2,6 +2,7 @@
 export const PUBLIC_SOURCE_FILES = Object.freeze([
   '.nojekyll',
   '404.html',
+  'AGENTS.md',
   'LICENSE',
   'index.html',
   'learning.html',
@@ -17,7 +18,10 @@ export const PUBLIC_SOURCE_DIRECTORIES = Object.freeze([
   'assets',
   'curation',
   'docs',
+  'evaluation',
   'graph',
+  'integrations',
+  'prompts',
   'src',
 ]);
 
@@ -30,6 +34,13 @@ export const GENERATED_PUBLIC_FILES = Object.freeze([
 export const PUBLIC_BUILD_INPUTS = Object.freeze([
   ...PUBLIC_SOURCE_FILES,
   ...PUBLIC_SOURCE_DIRECTORIES,
+]);
+
+const GRAPH_INDEX_PATH_MAPS = Object.freeze([
+  'canonical_files',
+  'schemas',
+  'generated_files',
+  'integrations',
 ]);
 
 const topLevelFiles = new Set([...PUBLIC_SOURCE_FILES, ...GENERATED_PUBLIC_FILES]);
@@ -46,4 +57,19 @@ export function isPublicArtifactPath(value) {
   if (segments.some((segment) => segment.startsWith('.'))) return false;
   if (segments.length === 1) return topLevelFiles.has(relativePath);
   return topLevelDirectories.has(segments[0]);
+}
+
+/** Return every repository path advertised by graph/index.json. */
+export function collectGraphIndexArtifactPaths(index) {
+  const paths = GRAPH_INDEX_PATH_MAPS.flatMap((field) => Object.values(index[field]));
+  paths.push(...index.agent_entrypoints);
+  return [...new Set(paths)].sort();
+}
+
+/** Require graph/index.json discovery metadata to describe a closed public artifact. */
+export function assertGraphIndexArtifactClosure(index, artifactPaths) {
+  for (const path of collectGraphIndexArtifactPaths(index)) {
+    if (!isPublicArtifactPath(path)) throw new Error(`Graph index path is outside the public surface: ${path}`);
+    if (!artifactPaths.has(path)) throw new Error(`Graph index path is missing from the public artifact: ${path}`);
+  }
 }

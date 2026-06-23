@@ -33,6 +33,10 @@ The build is assembled in a same-filesystem staging directory. JSON-LD, response
 
 `dist/build-manifest.json` format 3 records every payload path, byte count and SHA-256, plus the total byte count, file count, JSON-LD entity count and one aggregate artifact digest. `npm run validate:dist` rejects extra keys, missing files, unmanifested files, symlinks, path escapes and stale cache identities.
 
+## Agent entrypoint closure
+
+`graph/index.json` is deployed discovery metadata, not merely a repository-local index. Every path advertised through `canonical_files`, `schemas`, `agent_entrypoints`, `generated_files` and `integrations` must belong to the declared public surface and appear in the build manifest. The artifact therefore includes `AGENTS.md`, `prompts/`, `evaluation/` and `integrations/`, while package metadata, implementation scripts and tests remain excluded. Both `npm run build` and `npm run validate:dist` reject dangling or non-public advertised paths.
+
 ## Cache invalidation
 
 The source service worker carries a bounded source revision. Production builds replace it with a `build-...` revision derived from every payload except `sw.js`, avoiding a self-referential hash. Each revision has a separate immutable shell cache and bounded runtime cache. Activation deletes only obsolete caches owned by this application.
