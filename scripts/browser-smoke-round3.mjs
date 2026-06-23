@@ -1,12 +1,18 @@
 import assert from 'node:assert/strict';
 import { once } from 'node:events';
-import { mkdtempSync, rmSync } from 'node:fs';
+import { mkdtempSync, readFileSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join, resolve } from 'node:path';
 import { spawn, spawnSync } from 'node:child_process';
 import { createStaticServer } from './serve.mjs';
 
 const root = resolve(process.argv[2] ?? 'dist');
+function shellCacheEntryCount(workerSource) {
+  const shellBlock = workerSource.match(/const SHELL = \[([\s\S]*?)\];/u)?.[1];
+  if (!shellBlock) throw new Error('Unable to find service-worker shell cache list.');
+  return [...shellBlock.matchAll(/'[^']+'/gu)].length;
+}
+const expectedShellCount = shellCacheEntryCount(readFileSync(join(root, 'sw.js'), 'utf8'));
 function browserCandidates() {
   const configured = process.env.BROWSER_BIN ? [process.env.BROWSER_BIN] : [];
   if (process.platform === 'win32') {
@@ -315,7 +321,7 @@ ${JSON.stringify(fatalDiagnostics, null, 2)}`);
   })()`);
   assert.ok(cacheState.shell.includes(cacheState.revision));
   assert.ok(cacheState.runtime.includes(cacheState.revision));
-  assert.equal(cacheState.shellCount, 36);
+  assert.equal(cacheState.shellCount, expectedShellCount);
   assert.deepEqual(cacheState.queryKeys, []);
 
   console.log('step: offline');

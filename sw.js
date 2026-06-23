@@ -21,6 +21,7 @@ const SHELL = [
   './src/lib/research-graph.js',
   './src/lib/research-i18n.js',
   './src/lib/route-planner.js',
+  './src/lib/route-bundle.js',
   './src/lib/jsonld.js',
   './src/styles.css',
   './src/error.css',

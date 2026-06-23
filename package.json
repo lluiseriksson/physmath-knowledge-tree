@@ -45,6 +45,8 @@
     "export:jsonld": "node scripts/export-jsonld.mjs",
     "test:e2e": "node scripts/browser-smoke.mjs dist && node scripts/browser-smoke-round3.mjs dist",
     "validate:symlinks": "node scripts/check-symlinks.mjs",
-    "generate:jsonld": "node scripts/export-jsonld.mjs --output graph/knowledge-graph.jsonld"
+    "generate:jsonld": "node scripts/export-jsonld.mjs --output graph/knowledge-graph.jsonld",
+    "route:bundle": "node scripts/bundle-route.mjs",
+    "route:verify": "node scripts/verify-route-bundle.mjs"
   }
 }

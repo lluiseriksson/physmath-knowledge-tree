@@ -8,6 +8,7 @@ import {
 import { detectLanguage, supportedLanguage, t, translateDocument } from './lib/research-i18n.js';
 import { buildJsonLd } from './lib/jsonld.js';
 import { planResearchRoute, summarizeRouteEvidence } from './lib/route-planner.js';
+import { createRouteBundle } from './lib/route-bundle.js';
 import { compareNormalizedText, compareText } from './lib/text.js';
 import { readResearchUrlState, writeResearchUrlState } from './lib/url-state.js';
 
@@ -63,6 +64,7 @@ const ui = {
   generateCard: byId('generate-card'),
   exportVisible: byId('export-visible'),
   exportJsonLd: byId('export-jsonld'),
+  exportRouteBundle: byId('export-route-bundle'),
   graphViewButton: byId('graph-view-button'),
   listViewButton: byId('list-view-button'),
   visibleSummary: byId('visible-summary'),
@@ -383,6 +385,7 @@ function bindEvents() {
   ui.copyCard.addEventListener('click', copyBridgeCard);
   ui.exportVisible.addEventListener('click', exportVisibleSubgraph);
   ui.exportJsonLd.addEventListener('click', exportCanonicalJsonLd);
+  ui.exportRouteBundle.addEventListener('click', exportCurrentRouteBundle);
 
   ui.graphViewButton.addEventListener('click', () => setView('graph'));
   ui.listViewButton.addEventListener('click', () => setView('list'));
@@ -922,6 +925,7 @@ function clearPath() {
 }
 
 function renderPathResult() {
+  ui.exportRouteBundle.disabled = !state.path || !state.routeSelection;
   if (!state.path) {
     ui.pathResult.replaceChildren();
     return;
@@ -1016,6 +1020,40 @@ function exportVisibleSubgraph() {
   toast(translate('export.saved'));
 }
 
+
+async function exportCurrentRouteBundle() {
+  if (!state.index || !state.path || !state.routeSelection) {
+    toast(translate('path.bundleUnavailable'));
+    return;
+  }
+  try {
+    const selection = state.routeSelection;
+    const bundle = await createRouteBundle({
+      index: state.index,
+      nodes: state.nodes,
+      edges: state.edges,
+      source: selection.source,
+      target: selection.target,
+      options: {
+        policy: selection.policy,
+        directed: selection.directed,
+        allowedConfidence: allowedConfidenceForPathGate(selection.evidence),
+      },
+    });
+    const safeSource = selection.source.replace(/[^a-z0-9._-]+/giu, '-');
+    const safeTarget = selection.target.replace(/[^a-z0-9._-]+/giu, '-');
+    downloadText(
+      `physmath-route-${safeSource}-to-${safeTarget}.json`,
+      `${JSON.stringify(bundle, null, 2)}
+`,
+      'application/json',
+    );
+    toast(translate('path.bundleSaved'));
+  } catch (error) {
+    console.error(error);
+    toast(translate('path.bundleFailed'));
+  }
+}
 
 function exportCanonicalJsonLd() {
   if (!state.index) return;

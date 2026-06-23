@@ -33,3 +33,15 @@ The evidence order is `formal`, `literature`, `heuristic`, `speculative`. It is 
 The browser interface uses the same planner and stores source, target, policy, evidence gate and direction in canonical URL state. Unrelated campaign parameters and URL fragments are preserved.
 
 Alternate JSON fixtures can be supplied with `--nodes` and `--edges`. This supports tests and downstream research-agent workflows without mutating canonical graph data. Committed evaluation scenarios remain a separate regression layer and are not silently rewritten by ad-hoc planner output.
+
+## Portable verification bundles
+
+Use `route:bundle` when the route itself must travel with enough information for deterministic verification:
+
+```bash
+npm run route:bundle -- domain.analysis problem.navier_stokes \
+  --policy strongest --output navier-stokes-route.json
+npm run route:verify -- navier-stokes-route.json
+```
+
+The verifier binds the request, result and evidence summary to a SHA-256 projection of the canonical route graph and reruns the planner. See [`ROUTE_BUNDLES.md`](./ROUTE_BUNDLES.md) for the exact trust boundary.

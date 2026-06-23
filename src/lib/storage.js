@@ -116,6 +116,56 @@ export function importProgress(text, validIds) {
   return sanitizeProgress(payload, validIds);
 }
 
+
+const STATUS_RANK = Object.freeze({
+  'not-started': 0,
+  learning: 1,
+  mastered: 2,
+});
+
+/**
+ * Merge imported progress without silently downgrading local learning state.
+ * The default `furthest` policy keeps the most advanced status per topic and
+ * unions favorites. `incoming` and `current` are available for explicit tools.
+ * @param {unknown} current
+ * @param {unknown} incoming
+ * @param {Set<string>} validIds
+ * @param {{statusPolicy?:'furthest'|'incoming'|'current',favoritePolicy?:'union'|'incoming'|'current'}} [options]
+ * @returns {AppProgress}
+ */
+export function mergeProgress(current, incoming, validIds, options = {}) {
+  const statusPolicy = options.statusPolicy ?? 'furthest';
+  const favoritePolicy = options.favoritePolicy ?? 'union';
+  if (!['furthest', 'incoming', 'current'].includes(statusPolicy)) throw new Error('Unknown progress status merge policy');
+  if (!['union', 'incoming', 'current'].includes(favoritePolicy)) throw new Error('Unknown favorite merge policy');
+  const local = sanitizeProgress(current, validIds);
+  const imported = sanitizeProgress(incoming, validIds);
+  const statuses = {};
+  for (const id of validIds) {
+    const localStatus = local.statuses[id] ?? 'not-started';
+    const importedStatus = imported.statuses[id] ?? 'not-started';
+    let chosen;
+    if (statusPolicy === 'incoming') chosen = importedStatus;
+    else if (statusPolicy === 'current') chosen = localStatus;
+    else chosen = STATUS_RANK[importedStatus] > STATUS_RANK[localStatus]
+      ? importedStatus
+      : localStatus;
+    if (chosen !== 'not-started') statuses[id] = chosen;
+  }
+  const favorites = favoritePolicy === 'incoming'
+    ? imported.favorites
+    : favoritePolicy === 'current'
+      ? local.favorites
+      : [...new Set([...local.favorites, ...imported.favorites])];
+  const newestTimestamp = Math.max(Date.parse(local.updatedAt), Date.parse(imported.updatedAt));
+  return {
+    schemaVersion: PROGRESS_SCHEMA_VERSION,
+    statuses,
+    favorites: favorites.filter((id) => validIds.has(id)),
+    updatedAt: new Date(newestTimestamp).toISOString(),
+  };
+}
+
 /** @param {{size:number,type?:string,name?:string}} file */
 export function validateProgressFile(file) {
   if (!file || typeof file.size !== 'number' || !Number.isFinite(file.size) || file.size < 0) throw new Error('Invalid progress file');
