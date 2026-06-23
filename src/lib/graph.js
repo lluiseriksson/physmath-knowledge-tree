@@ -1,4 +1,5 @@
 // @ts-check
+import { compareText } from './text.js';
 /** @typedef {import('./types.js').Topic} Topic */
 /** @typedef {import('./types.js').ProgressStatus} ProgressStatus */
 /** @typedef {import('./types.js').GraphPoint} GraphPoint */
@@ -82,8 +83,8 @@ export function createLayout(topics, options = {}) {
   for (const layer of layers) {
     layer.sort((left, right) =>
       (domainOrder.get(left.domain) ?? 3) - (domainOrder.get(right.domain) ?? 3)
-      || left.area.localeCompare(right.area)
-      || left.id.localeCompare(right.id));
+      || compareText(left.area, right.area)
+      || compareText(left.id, right.id));
   }
 
   const maxLayerSize = Math.max(1, ...layers.map((layer) => layer.length));
@@ -168,7 +169,7 @@ export function getRecommendedTopics(topics, statuses, limit = 6) {
       statusRank(left) - statusRank(right)
       || levelRank(left) - levelRank(right)
       || left.estimatedHours - right.estimatedHours
-      || left.id.localeCompare(right.id))
+      || compareText(left.id, right.id))
     .slice(0, limit);
 }
 

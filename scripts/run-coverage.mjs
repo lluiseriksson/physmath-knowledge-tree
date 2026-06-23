@@ -1,6 +1,7 @@
 import { spawnSync } from 'node:child_process';
 
 const productionFiles = [
+  'scripts/lib/build-manifest.mjs',
   'scripts/lib/curation.mjs',
   'scripts/lib/evaluation.mjs',
   'scripts/lib/fs-safety.mjs',
@@ -10,6 +11,7 @@ const productionFiles = [
   'src/lib/research-graph.js',
   'src/lib/search.js',
   'src/lib/storage.js',
+  'src/lib/text.js',
   'src/lib/url-state.js',
 ];
 

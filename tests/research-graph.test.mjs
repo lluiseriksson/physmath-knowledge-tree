@@ -113,6 +113,7 @@ test('neighborhood, induced subgraph and custom layout cover array and fallback 
   );
 
   const custom = [
+    { id: 'a', kind: 'other', title: 'X' },
     { id: 'x', kind: 'other', title: 'X' },
     { id: 'y', kind: 'domain', title: 'Y' },
   ];
@@ -122,7 +123,7 @@ test('neighborhood, induced subgraph and custom layout cover array and fallback 
   ], { width: 500, height: 400, iterations: 1 });
   assert.equal(layout.width, 500);
   assert.equal(layout.height, 400);
-  assert.equal(layout.positions.size, 2);
+  assert.equal(layout.positions.size, 3);
 
   const defaults = createResearchLayout([], []);
   assert.equal(defaults.width, 1440);

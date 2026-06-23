@@ -1,20 +1,8 @@
 // @ts-check
+import { compareNormalizedText, compareText, normalizeText } from './text.js';
+export { normalizeText } from './text.js';
 /** @typedef {import('./types.js').Topic} Topic */
 /** @typedef {import('./types.js').Language} Language */
-
-/** @param {string} left @param {string} right */
-function compareText(left, right) {
-  return left < right ? -1 : left > right ? 1 : 0;
-}
-
-export function normalizeText(value) {
-  return String(value ?? '')
-    .normalize('NFKD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, ' ')
-    .trim();
-}
 
 /** @param {Topic} topic @param {Language} language */
 export function topicSearchText(topic, language) {
@@ -49,7 +37,7 @@ export function searchTopics(topics, query, language, limit = 12) {
     .filter((result) => result.score >= 0)
     .sort((left, right) =>
       right.score - left.score
-      || compareText(normalizeText(left.topic.title[language]), normalizeText(right.topic.title[language]))
+      || compareNormalizedText(left.topic.title[language], right.topic.title[language])
       || compareText(left.topic.id, right.topic.id))
     .slice(0, Math.max(0, Math.floor(limit)));
 }

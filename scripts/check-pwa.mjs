@@ -9,7 +9,13 @@ const pkg = JSON.parse(readFileSync(join(root, 'package.json'), 'utf8'));
 const manifest = JSON.parse(readFileSync(join(root, 'manifest.webmanifest'), 'utf8'));
 const sw = readFileSync(join(root, 'sw.js'), 'utf8');
 const version = sw.match(/const APP_VERSION = '([^']+)'/)?.[1];
+const revision = sw.match(/const CACHE_REVISION = '([^']+)'/)?.[1];
 ensure(version === pkg.version, `Service-worker version ${version} does not match package ${pkg.version}`);
+ensure(/^[a-z0-9][a-z0-9._-]{0,63}$/iu.test(revision ?? ''), 'Service worker needs a bounded cache revision');
+ensure(sw.includes('`${CACHE_PREFIX}${APP_VERSION}-${CACHE_REVISION}`'), 'Cache identity must include app version and cache revision');
+ensure(sw.includes('response.status === 200'), 'Runtime caching must admit exact HTTP 200 responses only');
+ensure(sw.includes("response.type === 'basic' || response.type === 'default'"), 'Runtime caching must reject opaque and partial responses');
+ensure(sw.includes('Runtime cache update failed; returning the network response.'), 'Cache-write failures must not hide successful network responses');
 ensure(sw.includes('ignoreSearch: true'), 'Service worker must ignore query strings for cached navigation/assets');
 ensure(sw.includes("'./offline.html'"), 'Service worker needs a dedicated offline fallback');
 ensure(sw.includes('key.startsWith(CACHE_PREFIX)'), 'Service worker must delete only its own historical caches');
@@ -68,4 +74,4 @@ for (const page of ['index.html', 'learning.html', 'offline.html']) {
     ensure(shell.includes(asset), `${page}: critical local asset missing from service-worker shell: ${asset}`);
   }
 }
-console.log(`PWA shell validated for version ${pkg.version} with ${shell.length} cached entries.`);
+console.log(`PWA shell validated for version ${pkg.version}, cache revision ${revision}, with ${shell.length} cached entries.`);

@@ -1,14 +1,6 @@
 /** Pure graph helpers used by the research explorer and its tests. */
-
-/** @param {string} value */
-export function normalizeText(value) {
-  return String(value ?? '')
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '')
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, ' ')
-    .trim();
-}
+import { compareNormalizedText, compareText, normalizeText } from './text.js';
+export { normalizeText } from './text.js';
 
 /** @template {{id: string}} T @param {T[]} items */
 export function indexById(items) {
@@ -52,7 +44,9 @@ export function searchNodes(nodes, query, limit = 12) {
       return { node, score };
     })
     .filter(Boolean)
-    .sort((a, b) => b.score - a.score || a.node.title.localeCompare(b.node.title))
+    .sort((a, b) => b.score - a.score
+      || compareNormalizedText(a.node.title, b.node.title)
+      || compareText(a.node.id, b.node.id))
     .slice(0, Math.max(0, limit));
 }
 
@@ -86,7 +80,7 @@ export function shortestPath(nodes, edges, source, target, directed = false) {
   for (let cursor = 0; cursor < queue.length; cursor += 1) {
     const current = queue[cursor];
     const neighbors = [...adjacency.get(current)].sort((a, b) =>
-      a.next.localeCompare(b.next) || a.edge.localeCompare(b.edge),
+      compareText(a.next, b.next) || compareText(a.edge, b.edge),
     );
     for (const neighbor of neighbors) {
       if (visited.has(neighbor.next)) continue;
@@ -181,7 +175,7 @@ export function createResearchLayout(nodes, edges, options = {}) {
     if (!kindGroups.has(node.kind)) kindGroups.set(node.kind, []);
     kindGroups.get(node.kind).push(node);
   }
-  for (const group of kindGroups.values()) group.sort((a, b) => a.title.localeCompare(b.title));
+  for (const group of kindGroups.values()) group.sort((a, b) => compareNormalizedText(a.title, b.title) || compareText(a.id, b.id));
 
   for (const [kind, group] of kindGroups) {
     const anchor = anchors[kind] ?? width / 2;

@@ -3,6 +3,7 @@ import { createHash } from 'node:crypto';
 import { cpSync, existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { join, relative } from 'node:path';
 import { assertTreeHasNoSymlinks, walkRegularFiles } from './lib/fs-safety.mjs';
+import { BUILD_MANIFEST_FORMAT, computeArtifactSha256, derivePwaCacheRevision } from './lib/build-manifest.mjs';
 
 const root = fileURLToPath(new URL('..', import.meta.url));
 const dist = join(root, 'dist');
@@ -50,26 +51,43 @@ writeFileSync(join(dist, '_headers'), `/*
   Cache-Control: no-cache
 `);
 
+function collectBuiltFiles() {
+  return walkRegularFiles(dist)
+    .filter((path) => !path.endsWith('build-manifest.json'))
+    .map((path) => {
+      const bytes = readFileSync(path);
+      return {
+        path: relative(dist, path).replaceAll('\\', '/'),
+        bytes: bytes.length,
+        sha256: createHash('sha256').update(bytes).digest('hex'),
+      };
+    })
+    .sort((a, b) => (a.path < b.path ? -1 : a.path > b.path ? 1 : 0));
+}
+
+const preliminaryFiles = collectBuiltFiles();
+const pwaCacheRevision = derivePwaCacheRevision(preliminaryFiles);
+const serviceWorkerPath = join(dist, 'sw.js');
+const serviceWorker = readFileSync(serviceWorkerPath, 'utf8');
+const revisedServiceWorker = serviceWorker.replace(
+  /const CACHE_REVISION = '[^']+';/u,
+  `const CACHE_REVISION = '${pwaCacheRevision}';`,
+);
+if (revisedServiceWorker === serviceWorker) throw new Error('Could not inject production PWA cache revision');
+writeFileSync(serviceWorkerPath, revisedServiceWorker);
+
 const packageJson = JSON.parse(readFileSync(join(root, 'package.json'), 'utf8'));
 const graphIndex = JSON.parse(readFileSync(join(root, 'graph/index.json'), 'utf8'));
 const curationIndex = JSON.parse(readFileSync(join(root, 'curation/index.json'), 'utf8'));
-const files = walkRegularFiles(dist)
-  .filter((path) => !path.endsWith('build-manifest.json'))
-  .map((path) => {
-    const bytes = readFileSync(path);
-    return {
-      path: relative(dist, path).replaceAll('\\', '/'),
-      bytes: bytes.length,
-      sha256: createHash('sha256').update(bytes).digest('hex'),
-    };
-  })
-  .sort((a, b) => (a.path < b.path ? -1 : a.path > b.path ? 1 : 0));
+const files = collectBuiltFiles();
 const manifest = {
-  format_version: 1,
+  format_version: BUILD_MANIFEST_FORMAT,
   package_version: packageJson.version,
   graph_schema_version: graphIndex.schema_version,
   curation_schema_version: curationIndex.schema_version,
+  pwa_cache_revision: pwaCacheRevision,
+  artifact_sha256: computeArtifactSha256(files),
   files,
 };
 writeFileSync(join(dist, 'build-manifest.json'), `${JSON.stringify(manifest, null, 2)}\n`);
-console.log(`Static build created in dist/ with ${files.length} integrity entries.`);
+console.log(`Static build created in dist/ with ${files.length} integrity entries and aggregate ${manifest.artifact_sha256}.`);

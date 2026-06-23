@@ -1,6 +1,7 @@
 const APP_VERSION = '2.6.0';
 const CACHE_PREFIX = 'physmath-knowledge-tree-';
-const CACHE = `${CACHE_PREFIX}${APP_VERSION}`;
+const CACHE_REVISION = 'source-2026-06-23.2';
+const CACHE = `${CACHE_PREFIX}${APP_VERSION}-${CACHE_REVISION}`;
 const SHELL = [
   './',
   './index.html',
@@ -21,6 +22,7 @@ const SHELL = [
   './src/lib/i18n.js',
   './src/lib/search.js',
   './src/lib/storage.js',
+  './src/lib/text.js',
   './src/lib/types.js',
   './src/lib/url-state.js',
   './graph/index.json',
@@ -58,11 +60,19 @@ function fallbackFor(url) {
   return './offline.html';
 }
 
+function isCacheableResponse(response) {
+  return response.status === 200 && (response.type === 'basic' || response.type === 'default');
+}
+
 async function networkAndCache(request) {
   const response = await fetch(request);
-  if (response.ok) {
-    const cache = await caches.open(CACHE);
-    await cache.put(request, response.clone());
+  if (isCacheableResponse(response)) {
+    try {
+      const cache = await caches.open(CACHE);
+      await cache.put(request, response.clone());
+    } catch (error) {
+      console.warn('Runtime cache update failed; returning the network response.', error);
+    }
   }
   return response;
 }
