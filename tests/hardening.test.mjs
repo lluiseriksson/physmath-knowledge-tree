@@ -219,8 +219,8 @@ test('static server rejects a symlink or junction that resolves outside its root
   assert.ok(address && typeof address === 'object');
 
   const response = await fetch(`http://127.0.0.1:${address.port}/escape/secret.txt`);
-  assert.equal(response.status, 403);
-  assert.equal(await response.text(), 'Forbidden');
+  assert.equal(response.status, 404);
+  assert.equal(await response.text(), 'Not found');
 
   const directory = await fetch(`http://127.0.0.1:${address.port}/directory`);
   assert.equal(directory.status, 404);
