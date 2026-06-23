@@ -6,6 +6,7 @@ import test from 'node:test';
 import {
   assertGraphIndexArtifactClosure,
   collectGraphIndexArtifactPaths,
+  collectPublicGraphIndexArtifactPaths,
   GENERATED_PUBLIC_FILES,
   PUBLIC_BUILD_INPUTS,
   PUBLIC_SOURCE_DIRECTORIES,
@@ -14,6 +15,10 @@ import {
 } from '../scripts/lib/public-surface.mjs';
 
 const root = fileURLToPath(new URL('..', import.meta.url));
+
+function graphIndexFixture() {
+  return JSON.parse(readFileSync(join(root, 'graph/index.json'), 'utf8'));
+}
 
 test('public surface constants are closed, unique and include licensing', () => {
   const all = [...PUBLIC_SOURCE_FILES, ...PUBLIC_SOURCE_DIRECTORIES, ...GENERATED_PUBLIC_FILES];
@@ -46,9 +51,11 @@ test('public artifact path validation mirrors source and generated surfaces', ()
 });
 
 test('graph index discovery metadata is a closed public artifact contract', () => {
-  const graphIndex = JSON.parse(readFileSync(join(root, 'graph/index.json'), 'utf8'));
+  const graphIndex = graphIndexFixture();
   const advertised = collectGraphIndexArtifactPaths(graphIndex);
-  assert.deepEqual(advertised, [...new Set(advertised)].sort());
+  assert.deepEqual(advertised, [...advertised].sort());
+  assert.ok(graphIndex.agent_entrypoints.includes(graphIndex.generated_files.jsonld));
+  assert.equal(advertised.filter((path) => path === graphIndex.generated_files.jsonld).length, 1);
   for (const path of advertised) assert.ok(existsSync(join(root, path)), path);
   assert.doesNotThrow(() => assertGraphIndexArtifactClosure(graphIndex, new Set(advertised)));
 
@@ -64,7 +71,50 @@ test('graph index discovery metadata is a closed public artifact contract', () =
     integrations: { ...graphIndex.integrations, private: 'scripts/private.mjs' },
   };
   assert.throws(
-    () => assertGraphIndexArtifactClosure(outside, new Set(advertised)),
+    () => collectPublicGraphIndexArtifactPaths(outside),
     /outside the public surface: scripts\/private\.mjs/,
+  );
+});
+
+test('graph index discovery rejects duplicate and malformed path metadata', () => {
+  const graphIndex = graphIndexFixture();
+
+  assert.throws(
+    () => collectGraphIndexArtifactPaths({
+      ...graphIndex,
+      agent_entrypoints: [...graphIndex.agent_entrypoints, graphIndex.agent_entrypoints[0]],
+    }),
+    /agent_entrypoints advertises a path more than once: AGENTS\.md/,
+  );
+
+  assert.throws(
+    () => collectGraphIndexArtifactPaths({ ...graphIndex, schemas: { ...graphIndex.schemas, bad: null } }),
+    /schemas\.bad must be a string path/,
+  );
+
+  assert.throws(
+    () => collectGraphIndexArtifactPaths({
+      ...graphIndex,
+      schemas: { ...graphIndex.schemas, duplicate: graphIndex.schemas.nodes },
+    }),
+    /schemas advertises a path more than once: graph\/schemas\/node\.schema\.json/,
+  );
+
+  assert.throws(
+    () => collectGraphIndexArtifactPaths({ ...graphIndex, integrations: undefined }),
+    /integrations must be an object/,
+  );
+
+  assert.throws(
+    () => collectGraphIndexArtifactPaths({ ...graphIndex, agent_entrypoints: 'AGENTS.md' }),
+    /agent_entrypoints must be an array/,
+  );
+
+  assert.throws(
+    () => collectGraphIndexArtifactPaths({
+      ...graphIndex,
+      agent_entrypoints: graphIndex.agent_entrypoints.map((path, index) => index === 0 ? '/AGENTS.md' : path),
+    }),
+    /agent_entrypoints\[0\] must be a normalized repository-relative path/,
   );
 });

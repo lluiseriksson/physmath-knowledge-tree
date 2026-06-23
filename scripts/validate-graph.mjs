@@ -1,20 +1,24 @@
 import { fileURLToPath } from 'node:url';
-import { existsSync, readFileSync } from 'node:fs';
+import { existsSync, lstatSync, readFileSync, realpathSync } from 'node:fs';
 import { join } from 'node:path';
+import { isPathInside, resolveRealPathInside } from './lib/fs-safety.mjs';
+import { collectPublicGraphIndexArtifactPaths } from './lib/public-surface.mjs';
 
 const root = fileURLToPath(new URL('..', import.meta.url));
 const readJson = (path) => JSON.parse(readFileSync(join(root, path), 'utf8'));
 const fail = (message) => { throw new Error(message); };
 const ensure = (condition, message) => { if (!condition) fail(message); };
 
+const realRoot = realpathSync(root);
 const index = readJson('graph/index.json');
-for (const path of [...Object.values(index.canonical_files), ...Object.values(index.schemas)]) {
-  ensure(typeof path === 'string' && path.length > 0, 'Invalid canonical/schema path');
-  ensure(existsSync(join(root, path)), `Missing declared graph file: ${path}`);
-}
-for (const path of Object.values(index.generated_files ?? {})) {
-  ensure(typeof path === 'string' && path.length > 0, 'Invalid generated graph path');
-  ensure(existsSync(join(root, path)), `Missing declared generated file: ${path}`);
+for (const path of collectPublicGraphIndexArtifactPaths(index)) {
+  const file = join(root, path);
+  ensure(isPathInside(root, file), `Graph index path escapes the repository: ${path}`);
+  ensure(existsSync(file), `Missing graph-index advertised file: ${path}`);
+  const realFile = resolveRealPathInside(root, file);
+  ensure(realFile !== null, `Graph index path escapes the repository through a symbolic link: ${path}`);
+  ensure(realFile === join(realRoot, path), `Graph index path must not traverse symbolic links: ${path}`);
+  ensure(lstatSync(file).isFile(), `Graph index path is not a regular file: ${path}`);
 }
 const nodes = readJson(index.canonical_files.nodes);
 const edges = readJson(index.canonical_files.edges);
@@ -139,11 +143,6 @@ while (queue.length) {
   }
 }
 ensure(reachable.size === nodes.length, `Declared roots do not reach every node: ${nodes.filter((node) => !reachable.has(node.id)).map((node) => node.id).join(', ')}`);
-for (const entrypoint of index.agent_entrypoints) {
-  ensure(typeof entrypoint === 'string' && entrypoint.length > 0, 'Invalid agent entrypoint');
-  ensure(existsSync(join(root, entrypoint)), `Missing agent entrypoint: ${entrypoint}`);
-}
-
 const byKind = Object.fromEntries([...kinds].sort().map((kind) => [kind, nodes.filter((node) => node.kind === kind).length]));
 const byConfidence = Object.fromEntries([...confidences].sort().map((confidence) => [confidence, nodes.filter((node) => node.confidence === confidence).length]).filter(([, count]) => count > 0));
 ensure(index.stats.nodes === nodes.length, 'index.stats.nodes is stale');

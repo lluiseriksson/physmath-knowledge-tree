@@ -59,17 +59,65 @@ export function isPublicArtifactPath(value) {
   return topLevelDirectories.has(segments[0]);
 }
 
+function requirePlainObject(value, label) {
+  if (!value || typeof value !== 'object' || Array.isArray(value)) {
+    throw new Error(`Graph index ${label} must be an object`);
+  }
+  return value;
+}
+
+function requireRepositoryPath(value, label) {
+  if (typeof value !== 'string') throw new Error(`Graph index ${label} must be a string path`);
+  const normalized = value.replace(/^\/+|\/+$/gu, '');
+  if (!normalized || normalized !== value || value !== value.trim()) {
+    throw new Error(`Graph index ${label} must be a normalized repository-relative path`);
+  }
+  return value;
+}
+
 /** Return every repository path advertised by graph/index.json. */
 export function collectGraphIndexArtifactPaths(index) {
-  const paths = GRAPH_INDEX_PATH_MAPS.flatMap((field) => Object.values(index[field]));
-  paths.push(...index.agent_entrypoints);
+  const graphIndex = requirePlainObject(index, 'root');
+  const paths = [];
+  for (const field of GRAPH_INDEX_PATH_MAPS) {
+    const pathMap = requirePlainObject(graphIndex[field], field);
+    const fieldPaths = new Set();
+    for (const [name, path] of Object.entries(pathMap)) {
+      const advertisedPath = requireRepositoryPath(path, `${field}.${name}`);
+      if (fieldPaths.has(advertisedPath)) {
+        throw new Error(`Graph index ${field} advertises a path more than once: ${advertisedPath}`);
+      }
+      fieldPaths.add(advertisedPath);
+      paths.push(advertisedPath);
+    }
+  }
+  if (!Array.isArray(graphIndex.agent_entrypoints)) {
+    throw new Error('Graph index agent_entrypoints must be an array');
+  }
+  const entrypoints = new Set();
+  for (const [position, path] of graphIndex.agent_entrypoints.entries()) {
+    const entrypoint = requireRepositoryPath(path, `agent_entrypoints[${position}]`);
+    if (entrypoints.has(entrypoint)) {
+      throw new Error(`Graph index agent_entrypoints advertises a path more than once: ${entrypoint}`);
+    }
+    entrypoints.add(entrypoint);
+    paths.push(entrypoint);
+  }
   return [...new Set(paths)].sort();
+}
+
+/** Return advertised graph-index paths only after enforcing the public allowlist. */
+export function collectPublicGraphIndexArtifactPaths(index) {
+  const paths = collectGraphIndexArtifactPaths(index);
+  for (const path of paths) {
+    if (!isPublicArtifactPath(path)) throw new Error(`Graph index path is outside the public surface: ${path}`);
+  }
+  return paths;
 }
 
 /** Require graph/index.json discovery metadata to describe a closed public artifact. */
 export function assertGraphIndexArtifactClosure(index, artifactPaths) {
-  for (const path of collectGraphIndexArtifactPaths(index)) {
-    if (!isPublicArtifactPath(path)) throw new Error(`Graph index path is outside the public surface: ${path}`);
+  for (const path of collectPublicGraphIndexArtifactPaths(index)) {
     if (!artifactPaths.has(path)) throw new Error(`Graph index path is missing from the public artifact: ${path}`);
   }
 }

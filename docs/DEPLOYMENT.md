@@ -35,7 +35,7 @@ The build is assembled in a same-filesystem staging directory. JSON-LD, response
 
 ## Agent entrypoint closure
 
-`graph/index.json` is deployed discovery metadata, not merely a repository-local index. Every path advertised through `canonical_files`, `schemas`, `agent_entrypoints`, `generated_files` and `integrations` must belong to the declared public surface and appear in the build manifest. The artifact therefore includes `AGENTS.md`, `prompts/`, `evaluation/` and `integrations/`, while package metadata, implementation scripts and tests remain excluded. Both `npm run build` and `npm run validate:dist` reject dangling or non-public advertised paths.
+`graph/index.json` is deployed discovery metadata, not merely a repository-local index. Every path advertised through `canonical_files`, `schemas`, `agent_entrypoints`, `generated_files` and `integrations` must belong to the declared public surface and appear in the build manifest. The artifact therefore includes `AGENTS.md`, `prompts/`, `evaluation/` and `integrations/`, while package metadata, implementation scripts and tests remain excluded. `npm run validate:graph` rejects malformed metadata, missing files, non-regular files and symlinks before the build begins; `npm run build` and `npm run validate:dist` additionally reject dangling or non-public artifact paths.
 
 ## Cache invalidation
 
