@@ -8,6 +8,8 @@ Roadmap entries are proposals, not commitments. Changes should preserve provenan
 - Added radius-based neighborhood comparison and side-by-side evidence-aware route objectives.
 - Added a documented negative-results format with observed, inconclusive and falsified statuses.
 - Added validated workspace JSON import/export and retained the existing canonical JSON-LD export.
+- Added a local evidence-review queue with checked dates, source classes and editable publication identifiers.
+- Added portable evidence ledgers and selected review packets without automatic confidence promotion.
 
 ## Near term
 
@@ -18,8 +20,8 @@ Roadmap entries are proposals, not commitments. Changes should preserve provenan
 
 ## Research graph
 
-- Versioned evidence records with publication identifiers and review dates, building on the generated evidence audit.
-- Populate the newly supported edge reference objects and add review dates/publication identifiers after source verification.
+- Promote locally reviewed evidence records into canonical versioned metadata only after explicit source verification and repository review.
+- Apply source-verified dates and identifiers from exported review packets to node and edge reference objects.
 
 ## Formalization
 

@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en" data-theme="system">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Local-first evidence review queue for the PhysMath Knowledge Tree reference registry.">
+  <meta name="theme-color" content="#f4f7fb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#09111f" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>PhysMath Knowledge Tree — Evidence review</title>
+  <link rel="canonical" href="https://lluiseriksson.github.io/physmath-knowledge-tree/evidence.html">
+  <link rel="icon" href="./assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./assets/icons/icon-192.png">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./src/evidence.css">
+  <script type="module" src="./src/evidence-app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#evidence-center" data-i18n="nav.skip">Skip to evidence review</a>
+
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="PhysMath Knowledge Tree home">
+      <img src="./assets/icons/icon.svg" width="42" height="42" alt="">
+      <span>
+        <strong>PhysMath Knowledge Tree</strong>
+        <small data-i18n="app.tagline">Audit references without promoting claims</small>
+      </span>
+    </a>
+    <nav class="primary-nav" aria-label="Primary navigation" data-i18n-aria="nav.primary">
+      <a href="./" data-i18n="nav.research">Research graph</a>
+      <a href="./learning.html" data-i18n="nav.learning">Learning map</a>
+      <a href="./workbench.html" data-i18n="nav.workbench">Workbench</a>
+      <a href="./evidence.html" aria-current="page" data-i18n="nav.evidence">Evidence review</a>
+      <a href="https://github.com/lluiseriksson/physmath-knowledge-tree" rel="noreferrer" data-i18n="nav.repository">Repository</a>
+    </nav>
+    <div class="header-actions">
+      <select id="language" aria-label="Interface language" data-i18n-aria="header.language">
+        <option value="en">EN</option>
+        <option value="es">ES</option>
+      </select>
+      <button id="theme" class="icon-button" type="button" aria-label="Change theme" data-i18n-aria="header.theme">◐</button>
+      <button id="help" class="icon-button" type="button" aria-label="Evidence review help" data-i18n-aria="header.help">?</button>
+    </div>
+  </header>
+
+  <div id="loading" class="loading" role="status" aria-live="polite">
+    <span class="spinner" aria-hidden="true"></span>
+    <span data-i18n="loading">Loading the canonical reference registry…</span>
+  </div>
+
+  <main id="evidence-center" class="evidence-layout" hidden>
+    <aside class="control-panel" aria-labelledby="controls-title">
+      <div class="panel-heading">
+        <div>
+          <p class="eyebrow" data-i18n="controls.eyebrow">Local review state</p>
+          <h1 id="controls-title" data-i18n="controls.title">Evidence queue</h1>
+        </div>
+        <span id="save-state" class="save-state" role="status" aria-live="polite"></span>
+      </div>
+
+      <section class="panel-section" aria-labelledby="summary-title">
+        <h2 id="summary-title" data-i18n="summary.title">Review summary</h2>
+        <dl class="stats-grid">
+          <div><dt data-i18n="summary.total">References</dt><dd id="stat-total">0</dd></div>
+          <div><dt data-i18n="summary.reviewed">Reviewed</dt><dd id="stat-reviewed">0</dd></div>
+          <div><dt data-i18n="summary.followup">Follow-up</dt><dd id="stat-followup">0</dd></div>
+          <div><dt data-i18n="summary.verified">Verified</dt><dd id="stat-verified">0</dd></div>
+          <div><dt data-i18n="summary.highImpact">High-impact open</dt><dd id="stat-high-impact">0</dd></div>
+          <div><dt data-i18n="summary.identifiers">Identifiers</dt><dd id="stat-identifiers">0</dd></div>
+        </dl>
+      </section>
+
+      <section class="panel-section" aria-labelledby="filters-title">
+        <div class="section-heading">
+          <h2 id="filters-title" data-i18n="filters.title">Filter worklist</h2>
+          <button id="clear-filters" class="text-button" type="button" data-i18n="filters.clear">Clear</button>
+        </div>
+        <label for="search" data-i18n="filters.search">Search references</label>
+        <input id="search" type="search" autocomplete="off" aria-label="Search references" data-i18n-aria="filters.search" placeholder="Title, URL, identifier or canonical usage" data-i18n-placeholder="filters.placeholder">
+        <div class="field-grid two">
+          <div><label for="status-filter" data-i18n="filters.status">Review status</label><select id="status-filter"></select></div>
+          <div><label for="scope-filter" data-i18n="filters.scope">Reference scope</label><select id="scope-filter"></select></div>
+          <div><label for="type-filter" data-i18n="filters.type">Source type</label><select id="type-filter"></select></div>
+          <div><label for="usage-filter" data-i18n="filters.usage">Used by</label><select id="usage-filter"></select></div>
+        </div>
+        <label for="sort" data-i18n="filters.sort">Sort queue</label>
+        <select id="sort"></select>
+      </section>
+
+      <section class="panel-section" aria-labelledby="selection-title">
+        <h2 id="selection-title" data-i18n="selection.title">Review packet</h2>
+        <p><strong id="selected-count">0</strong> <span data-i18n="selection.count">selected references</span></p>
+        <div class="stacked-actions">
+          <button id="select-visible" class="secondary-button" type="button" data-i18n="selection.selectVisible">Select visible</button>
+          <button id="clear-selection" class="secondary-button" type="button" data-i18n="selection.clear">Clear selection</button>
+          <button id="mark-followup" class="secondary-button" type="button" disabled data-i18n="selection.followup">Mark for follow-up</button>
+          <button id="export-packet" class="primary-button" type="button" disabled data-i18n="selection.export">Export review packet</button>
+        </div>
+      </section>
+
+      <section class="panel-section" aria-labelledby="portable-title">
+        <h2 id="portable-title" data-i18n="portable.title">Portable local reviews</h2>
+        <p data-i18n="portable.body">Review notes stay in this browser unless exported.</p>
+        <label for="import-mode" data-i18n="portable.mode">Import mode</label>
+        <select id="import-mode">
+          <option value="merge" data-i18n="portable.merge">Merge newest records</option>
+          <option value="replace" data-i18n="portable.replace">Replace local ledger</option>
+        </select>
+        <div class="stacked-actions">
+          <button id="export-ledger" class="secondary-button" type="button" data-i18n="portable.export">Export ledger JSON</button>
+          <button id="import-ledger" class="secondary-button" type="button" data-i18n="portable.import">Import ledger JSON</button>
+          <button id="reset-ledger" class="danger-button" type="button" data-i18n="portable.reset">Clear local reviews</button>
+        </div>
+        <input id="ledger-file" type="file" accept="application/json,.json" aria-label="Evidence review import file" data-i18n-aria="portable.file" hidden>
+      </section>
+    </aside>
+
+    <div class="evidence-content">
+      <section class="hero-card" aria-labelledby="hero-title">
+        <div>
+          <p class="eyebrow" data-i18n="hero.eyebrow">Reference governance</p>
+          <h2 id="hero-title" data-i18n="hero.title">Review evidence where it carries the most graph impact</h2>
+          <p data-i18n="hero.body">Priorities combine review state, claim scope and canonical reuse. They are a curation queue, not a new scientific confidence score.</p>
+        </div>
+        <div class="privacy-badge" data-i18n="hero.local">Local-only review notes</div>
+      </section>
+
+      <section class="queue-card" aria-labelledby="queue-title">
+        <header class="queue-heading">
+          <div>
+            <h2 id="queue-title" data-i18n="queue.title">Reference worklist</h2>
+            <p id="visible-summary" aria-live="polite"></p>
+          </div>
+          <label class="select-all-row"><input id="toggle-visible" type="checkbox"><span data-i18n="queue.toggle">Toggle visible</span></label>
+        </header>
+        <div id="reference-list" class="reference-list"></div>
+        <div id="empty" class="empty-state" hidden>
+          <strong data-i18n="queue.emptyTitle">No references match</strong>
+          <p data-i18n="queue.emptyBody">Clear filters or choose another review state.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <dialog id="review-dialog" class="modal review-dialog" aria-labelledby="review-title">
+    <form id="review-form" method="dialog">
+      <header class="dialog-heading">
+        <div><p class="eyebrow" data-i18n="review.eyebrow">Local record</p><h2 id="review-title"></h2></div>
+        <button class="icon-button" type="submit" value="cancel" aria-label="Close review editor" data-i18n-aria="review.close">×</button>
+      </header>
+      <p id="review-url" class="source-url"></p>
+      <dl id="review-usage" class="usage-summary"></dl>
+      <div class="field-grid two">
+        <div><label for="review-status" data-i18n="review.status">Status</label><select id="review-status"></select></div>
+        <div><label for="source-class" data-i18n="review.class">Source class</label><select id="source-class"></select></div>
+        <div><label for="checked-at" data-i18n="review.checked">Checked date</label><input id="checked-at" type="date"></div>
+        <div><label for="identifier-kind" data-i18n="review.identifierKind">Identifier kind</label><select id="identifier-kind"></select></div>
+      </div>
+      <label for="identifier-value" data-i18n="review.identifierValue">Identifier value</label>
+      <input id="identifier-value" type="text" maxlength="500" autocomplete="off">
+      <label for="review-notes" data-i18n="review.notes">Review notes</label>
+      <textarea id="review-notes" maxlength="12000" rows="6" placeholder="What was checked, what remains uncertain, and which canonical claims are affected?" data-i18n-placeholder="review.notesPlaceholder"></textarea>
+      <p class="review-warning" data-i18n="review.warning">Saving this record does not change graph confidence or canonical references.</p>
+      <div class="button-row end">
+        <button id="remove-review" class="danger-button" type="button" data-i18n="review.remove">Remove local record</button>
+        <button class="secondary-button" type="submit" value="cancel" data-i18n="review.cancel">Cancel</button>
+        <button id="save-review" class="primary-button" type="button" data-i18n="review.save">Save review</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="help-dialog" class="modal">
+    <h2 data-i18n="help.title">How evidence review behaves</h2>
+    <ul>
+      <li data-i18n="help.registry">The canonical reference registry remains read-only.</li>
+      <li data-i18n="help.priority">Priority is a worklist heuristic based on scope, reuse and local review status.</li>
+      <li data-i18n="help.identifiers">DOI and arXiv values are inferred only as editable suggestions.</li>
+      <li data-i18n="help.portable">Exported packets preserve canonical usages and local notes for deliberate curation.</li>
+    </ul>
+    <form method="dialog"><button class="secondary-button" type="submit" data-i18n="help.close">Close</button></form>
+  </dialog>
+
+  <dialog id="reset-dialog" class="modal">
+    <h2 data-i18n="reset.title">Clear all local evidence reviews?</h2>
+    <p data-i18n="reset.body">Canonical references are unaffected. Export the ledger first when needed.</p>
+    <form method="dialog" class="button-row end">
+      <button class="secondary-button" type="submit" value="cancel" data-i18n="reset.cancel">Cancel</button>
+      <button class="danger-button" type="submit" value="confirm" data-i18n="reset.confirm">Clear reviews</button>
+    </form>
+  </dialog>
+
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+</body>
+</html>

@@ -1,7 +1,7 @@
 {
   "name": "PhysMath Knowledge Tree",
   "short_name": "PhysMath Tree",
-  "description": "Explore a traceable research graph for physics, mathematics and Lean, plus a bilingual learning map.",
+  "description": "Explore a traceable physics-mathematics graph, bilingual learning map, local workspaces and evidence review queue.",
   "lang": "en",
   "start_url": "./",
   "scope": "./",
@@ -29,6 +29,11 @@
       "name": "Research workbench",
       "short_name": "Workbench",
       "url": "./workbench.html"
+    },
+    {
+      "name": "Evidence review",
+      "short_name": "Evidence",
+      "url": "./evidence.html"
     }
   ],
   "icons": [

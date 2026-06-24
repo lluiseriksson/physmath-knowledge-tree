@@ -10,11 +10,14 @@ All notable changes are documented here. The project follows semantic versioning
 - Radius-based neighborhood comparison and side-by-side evidence-aware route comparison.
 - Bridge-card draft storage and a structured ledger for observed, inconclusive and falsified mechanisms.
 - Bilingual, responsive and offline-capable `workbench.html` application surface.
+- Bilingual, offline-capable `evidence.html` queue over the canonical URL-level reference registry.
+- Local review ledgers with bounded status/source vocabularies, editable identifiers and portable review packets.
 
 ### Changed
 
 - PWA, public-surface, accessibility and local-link gates now include the Research Workbench.
 - The roadmap now distinguishes shipped workspace/JSON-LD capabilities from remaining research tasks.
+- PWA, public-surface, accessibility, coverage and browser gates now include the Evidence Review Center.
 
 ## [2.6.0] — 2026-06-22
 

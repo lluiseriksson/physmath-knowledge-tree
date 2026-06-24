@@ -7,6 +7,7 @@ export const PUBLIC_SOURCE_FILES = Object.freeze([
   'index.html',
   'learning.html',
   'workbench.html',
+  'evidence.html',
   'manifest.webmanifest',
   'offline.html',
   'robots.txt',

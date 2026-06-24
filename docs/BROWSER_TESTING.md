@@ -34,6 +34,10 @@ A second smoke suite checks the newly hardened surface:
 
 Expected 404 responses used to test the closed public surface are cleared from browser diagnostics only after their exact status assertions pass. All later browser errors remain fatal.
 
+## Focused local-tool passes
+
+Additional dependency-free Chromium smokes exercise the local research workbench and Evidence Review Center. The evidence pass loads a canonical-registry fixture, filters and selects the queue, saves a review, applies a bulk follow-up state, persists the local ledger and exports a review packet. Browser discovery covers Chrome, Chromium and Edge on Linux, macOS and Windows; profile cleanup retries transient Windows file locks.
+
 ## Boundary
 
 This is a deterministic functional and offline-readiness smoke test, not an exhaustive browser-certification programme. It currently targets one Chromium-family engine and does not replace manual assistive-technology review, visual-regression testing, performance profiling or cross-browser testing.

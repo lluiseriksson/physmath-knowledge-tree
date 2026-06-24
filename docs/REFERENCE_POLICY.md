@@ -38,6 +38,10 @@ npm run generate:audit
 npm run validate:audit
 ```
 
+## Local review layer
+
+`evidence.html` reads the generated registry and stores a separate browser-local review ledger. A review may record a checked date, source class, publication identifier, notes and follow-up state. It never edits canonical references or promotes `confidence`. Selected review packets preserve every canonical usage so that a later repository change can be source-verified and reviewed explicitly.
+
 ## Interpretation boundary
 
 A graph with 100% scoped reference coverage can still contain uncertain research directions. The authoritative indicators remain:
