@@ -14,6 +14,7 @@ const productionFiles = [
   'src/lib/graph.js',
   'src/lib/research-graph.js',
   'src/lib/route-planner.js',
+  'src/lib/workspace.js',
   'src/lib/route-bundle.js',
   'src/lib/route-attestation.js',
   'src/lib/search.js',

@@ -3,7 +3,7 @@ import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 const root = fileURLToPath(new URL('..', import.meta.url));
-const pages = ['index.html', 'learning.html', '404.html', 'offline.html'];
+const pages = ['index.html', 'learning.html', 'workbench.html', '404.html', 'offline.html'];
 const errors = [];
 
 function attributes(source) {
@@ -61,7 +61,7 @@ for (const page of pages) {
   for (const match of html.matchAll(/\btabindex=(?:"([^"]+)"|'([^']+)')/gi)) {
     if (Number(match[1] ?? match[2]) > 0) errors.push(`${page}: positive tabindex is not allowed`);
   }
-  if ((page === 'index.html' || page === 'learning.html') && !/<a\b[^>]*class=(?:"[^"]*skip-link| '[^']*skip-link)/i.test(html)) {
+  if (['index.html', 'learning.html', 'workbench.html'].includes(page) && !/<a\b[^>]*class=(?:"[^"]*skip-link| '[^']*skip-link)/i.test(html)) {
     errors.push(`${page}: skip link required`);
   }
 }

@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en" data-theme="system">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Private, local-first workspaces for comparing PhysMath graph neighborhoods, routes, bridge drafts and negative results.">
+  <meta name="theme-color" content="#f4f7fb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#09111f" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>PhysMath Knowledge Tree — Research workbench</title>
+  <link rel="canonical" href="https://lluiseriksson.github.io/physmath-knowledge-tree/workbench.html">
+  <link rel="icon" href="./assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./assets/icons/icon-192.png">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./src/workbench.css">
+  <script type="module" src="./src/workbench-app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#workbench" data-i18n="nav.skip">Skip to the research workbench</a>
+
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="PhysMath Knowledge Tree home">
+      <img src="./assets/icons/icon.svg" width="42" height="42" alt="">
+      <span>
+        <strong>PhysMath Knowledge Tree</strong>
+        <small data-i18n="app.tagline">Private, traceable research workspaces</small>
+      </span>
+    </a>
+    <nav class="primary-nav" aria-label="Primary navigation" data-i18n-aria="nav.primary">
+      <a href="./" data-i18n="nav.research">Research graph</a>
+      <a href="./learning.html" data-i18n="nav.learning">Learning map</a>
+      <a href="./workbench.html" aria-current="page" data-i18n="nav.workbench">Workbench</a>
+      <a href="https://github.com/lluiseriksson/physmath-knowledge-tree" rel="noreferrer" data-i18n="nav.repository">Repository</a>
+    </nav>
+    <div class="header-actions">
+      <select id="language" aria-label="Interface language" data-i18n-aria="header.language">
+        <option value="en">EN</option>
+        <option value="es">ES</option>
+      </select>
+      <button id="theme" class="icon-button" type="button" aria-label="Change theme" data-i18n-aria="header.theme">◐</button>
+      <button id="help" class="icon-button" type="button" aria-label="Workbench help" data-i18n-aria="header.help">?</button>
+    </div>
+  </header>
+
+  <div id="loading" class="loading" role="status" aria-live="polite">
+    <span class="spinner" aria-hidden="true"></span>
+    <span data-i18n="loading">Loading the canonical research graph…</span>
+  </div>
+
+  <main id="workbench" class="workbench" hidden>
+    <aside class="workspace-panel" aria-labelledby="workspace-panel-title">
+      <div class="panel-heading">
+        <div>
+          <p class="eyebrow" data-i18n="workspace.eyebrow">Local research memory</p>
+          <h1 id="workspace-panel-title" data-i18n="workspace.title">Workspaces</h1>
+        </div>
+        <span id="save-state" class="save-state" role="status" aria-live="polite"></span>
+      </div>
+
+      <label for="workspace-select" data-i18n="workspace.current">Current workspace</label>
+      <select id="workspace-select"></select>
+
+      <label for="workspace-title" data-i18n="workspace.name">Workspace name</label>
+      <input id="workspace-title" type="text" maxlength="160" autocomplete="off">
+
+      <div class="button-row">
+        <button id="new-workspace" class="primary-button" type="button" data-i18n="workspace.new">New</button>
+        <button id="delete-workspace" class="danger-button" type="button" data-i18n="workspace.delete">Delete</button>
+      </div>
+
+      <section class="panel-section" aria-labelledby="workspace-summary-title">
+        <h2 id="workspace-summary-title" data-i18n="workspace.summary">Workspace summary</h2>
+        <dl class="stats-grid">
+          <div><dt data-i18n="stats.nodes">Nodes</dt><dd id="stat-nodes">0</dd></div>
+          <div><dt data-i18n="stats.drafts">Drafts</dt><dd id="stat-drafts">0</dd></div>
+          <div><dt data-i18n="stats.results">Negative results</dt><dd id="stat-results">0</dd></div>
+        </dl>
+      </section>
+
+      <section class="panel-section" aria-labelledby="portable-title">
+        <h2 id="portable-title" data-i18n="portable.title">Portable workspace data</h2>
+        <p data-i18n="portable.body">Data stays in this browser unless you export it.</p>
+        <label for="import-mode" data-i18n="portable.mode">Import mode</label>
+        <select id="import-mode">
+          <option value="merge" data-i18n="portable.merge">Merge by newest update</option>
+          <option value="replace" data-i18n="portable.replace">Replace local library</option>
+        </select>
+        <div class="stacked-actions">
+          <button id="export-workspaces" class="secondary-button" type="button" data-i18n="portable.export">Export JSON</button>
+          <button id="import-workspaces" class="secondary-button" type="button" data-i18n="portable.import">Import JSON</button>
+        </div>
+        <input id="workspace-file" type="file" accept="application/json,.json" aria-label="Workspace import file" data-i18n-aria="portable.file" hidden>
+      </section>
+    </aside>
+
+    <div class="workbench-content">
+      <section class="hero-card" aria-labelledby="active-title">
+        <div>
+          <p class="eyebrow" data-i18n="active.eyebrow">Active investigation</p>
+          <h2 id="active-title"></h2>
+          <p data-i18n="active.body">Collect canonical nodes, compare nearby structures, preserve failed approaches and export a reproducible handoff.</p>
+        </div>
+        <div class="privacy-badge" data-i18n="active.private">Local-only by default</div>
+      </section>
+
+      <section class="tool-card" aria-labelledby="nodes-title">
+        <header class="tool-heading">
+          <div>
+            <p class="step">1</p>
+            <div><h2 id="nodes-title" data-i18n="nodes.title">Collect canonical nodes</h2><p data-i18n="nodes.body">Search the graph and pin the smallest useful subgraph.</p></div>
+          </div>
+        </header>
+        <label for="node-search" data-i18n="nodes.search">Search nodes</label>
+        <input id="node-search" type="search" autocomplete="off" aria-label="Search nodes" data-i18n-aria="nodes.search" aria-controls="node-search-results" placeholder="Search titles, IDs, tags or questions" data-i18n-placeholder="nodes.placeholder">
+        <div id="node-search-results" class="search-results" role="listbox" aria-live="polite"></div>
+        <div class="subheading-row"><h3 data-i18n="nodes.selected">Selected nodes</h3><button id="clear-nodes" class="text-button" type="button" data-i18n="nodes.clear">Clear</button></div>
+        <div id="selected-nodes" class="selected-nodes"></div>
+      </section>
+
+      <section class="tool-card" aria-labelledby="neighborhood-title">
+        <header class="tool-heading">
+          <div>
+            <p class="step">2</p>
+            <div><h2 id="neighborhood-title" data-i18n="neighborhood.title">Compare neighborhoods</h2><p data-i18n="neighborhood.body">Expose shared and unique context at a controlled graph radius.</p></div>
+          </div>
+        </header>
+        <div class="field-grid three">
+          <div><label for="neighborhood-left" data-i18n="compare.left">Left seed</label><select id="neighborhood-left"></select></div>
+          <div><label for="neighborhood-right" data-i18n="compare.right">Right seed</label><select id="neighborhood-right"></select></div>
+          <div><label for="neighborhood-radius" data-i18n="neighborhood.radius">Radius</label><select id="neighborhood-radius"><option value="1">1</option><option value="2">2</option><option value="3">3</option></select></div>
+        </div>
+        <div class="button-row">
+          <button id="compare-neighborhoods" class="primary-button" type="button" data-i18n="compare.run">Compare</button>
+          <button id="add-neighborhood-union" class="secondary-button" type="button" disabled data-i18n="neighborhood.addUnion">Add union to workspace</button>
+        </div>
+        <div id="neighborhood-result" class="comparison-grid" aria-live="polite"></div>
+      </section>
+
+      <section class="tool-card" aria-labelledby="route-title">
+        <header class="tool-heading">
+          <div>
+            <p class="step">3</p>
+            <div><h2 id="route-title" data-i18n="route.title">Compare evidence-aware routes</h2><p data-i18n="route.body">Contrast route objectives without hiding their weakest evidence.</p></div>
+          </div>
+        </header>
+        <div class="field-grid two">
+          <div><label for="route-source" data-i18n="route.source">From</label><select id="route-source"></select></div>
+          <div><label for="route-target" data-i18n="route.target">To</label><select id="route-target"></select></div>
+          <div><label for="route-policy-a" data-i18n="route.policyA">Route A objective</label><select id="route-policy-a"><option value="shortest" data-i18n="route.shortest">Fewest edges</option><option value="balanced" data-i18n="route.balanced">Balanced</option><option value="strongest" data-i18n="route.strongest">Strongest evidence</option></select></div>
+          <div><label for="route-policy-b" data-i18n="route.policyB">Route B objective</label><select id="route-policy-b"><option value="strongest" data-i18n="route.strongest">Strongest evidence</option><option value="balanced" data-i18n="route.balanced">Balanced</option><option value="shortest" data-i18n="route.shortest">Fewest edges</option></select></div>
+          <div><label for="route-evidence" data-i18n="route.evidence">Evidence gate</label><select id="route-evidence"><option value="all" data-i18n="route.all">All levels</option><option value="sourced" data-i18n="route.sourced">Formal and literature</option><option value="formal" data-i18n="route.formal">Formal only</option></select></div>
+          <label class="check-row"><input id="route-directed" type="checkbox"><span data-i18n="route.directed">Respect edge direction</span></label>
+        </div>
+        <button id="compare-routes" class="primary-button" type="button" data-i18n="compare.run">Compare</button>
+        <div id="route-result" class="route-comparison" aria-live="polite"></div>
+      </section>
+
+      <section class="tool-card" aria-labelledby="notes-title">
+        <header class="tool-heading">
+          <div>
+            <p class="step">4</p>
+            <div><h2 id="notes-title" data-i18n="notes.title">Keep working notes</h2><p data-i18n="notes.body">Record assumptions, invariants, source gaps and the next bounded test.</p></div>
+          </div>
+        </header>
+        <label for="workspace-notes" data-i18n="notes.label">Workspace notes</label>
+        <textarea id="workspace-notes" rows="10" maxlength="100000" placeholder="Assumptions, definitions, open questions, computations…" data-i18n-placeholder="notes.placeholder"></textarea>
+      </section>
+
+      <section class="tool-card" aria-labelledby="drafts-title">
+        <header class="tool-heading">
+          <div>
+            <p class="step">5</p>
+            <div><h2 id="drafts-title" data-i18n="drafts.title">Bridge-card drafts</h2><p data-i18n="drafts.body">Store exploratory Markdown without promoting it to a canonical claim.</p></div>
+          </div>
+        </header>
+        <input id="draft-id" type="hidden">
+        <label for="draft-title" data-i18n="drafts.name">Draft title</label>
+        <input id="draft-title" type="text" maxlength="160" autocomplete="off">
+        <label for="draft-markdown" data-i18n="drafts.markdown">Markdown</label>
+        <textarea id="draft-markdown" rows="12" maxlength="100000" placeholder="# Bridge Card…" data-i18n-placeholder="drafts.placeholder"></textarea>
+        <div class="button-row">
+          <button id="save-draft" class="primary-button" type="button" data-i18n="drafts.save">Save draft</button>
+          <button id="clear-draft" class="secondary-button" type="button" data-i18n="drafts.clear">Clear editor</button>
+        </div>
+        <div id="draft-list" class="record-list"></div>
+      </section>
+
+      <section class="tool-card" aria-labelledby="negative-title">
+        <header class="tool-heading">
+          <div>
+            <p class="step">6</p>
+            <div><h2 id="negative-title" data-i18n="negative.title">Negative-results ledger</h2><p data-i18n="negative.body">Preserve failed mechanisms and inconclusive tests as reusable knowledge.</p></div>
+          </div>
+        </header>
+        <div class="field-grid two">
+          <div><label for="negative-name" data-i18n="negative.name">Result title</label><input id="negative-name" type="text" maxlength="160" autocomplete="off"></div>
+          <div><label for="negative-status" data-i18n="negative.status">Status</label><select id="negative-status"><option value="observed" data-i18n="negative.observed">Observed failure</option><option value="inconclusive" data-i18n="negative.inconclusive">Inconclusive</option><option value="falsified" data-i18n="negative.falsified">Mechanism falsified</option></select></div>
+        </div>
+        <label for="negative-nodes" data-i18n="negative.nodes">Related selected nodes</label>
+        <select id="negative-nodes" multiple size="5"></select>
+        <label for="negative-observation" data-i18n="negative.observation">Observation</label>
+        <textarea id="negative-observation" rows="5" maxlength="20000"></textarea>
+        <label for="negative-mechanism" data-i18n="negative.mechanism">Challenged mechanism or invariant</label>
+        <textarea id="negative-mechanism" rows="4" maxlength="20000"></textarea>
+        <label for="negative-next" data-i18n="negative.next">Next discriminating test</label>
+        <textarea id="negative-next" rows="4" maxlength="20000"></textarea>
+        <button id="save-negative" class="primary-button" type="button" data-i18n="negative.save">Record result</button>
+        <div id="negative-list" class="record-list"></div>
+      </section>
+    </div>
+  </main>
+
+  <dialog id="help-dialog" class="modal">
+    <h2 data-i18n="help.title">How the workbench behaves</h2>
+    <ul>
+      <li data-i18n="help.local">Workspaces are stored only in this browser unless exported.</li>
+      <li data-i18n="help.canonical">Pinned nodes always reference stable canonical graph IDs.</li>
+      <li data-i18n="help.evidence">Route comparison reports the weakest evidence instead of upgrading it.</li>
+      <li data-i18n="help.negative">Negative results remain local records until reviewed and promoted deliberately.</li>
+    </ul>
+    <form method="dialog"><button class="secondary-button" type="submit" data-i18n="help.close">Close</button></form>
+  </dialog>
+
+  <dialog id="confirm-delete" class="modal">
+    <h2 data-i18n="delete.title">Delete this workspace?</h2>
+    <p data-i18n="delete.body">This removes its local notes, drafts and negative results. Export first when needed.</p>
+    <form method="dialog" class="button-row end">
+      <button class="secondary-button" type="submit" value="cancel" data-i18n="delete.cancel">Cancel</button>
+      <button class="danger-button" type="submit" value="confirm" data-i18n="delete.confirm">Delete</button>
+    </form>
+  </dialog>
+
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+</body>
+</html>

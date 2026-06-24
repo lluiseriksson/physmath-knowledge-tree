@@ -2,11 +2,17 @@
 
 Roadmap entries are proposals, not commitments. Changes should preserve provenance, accessibility, privacy and deterministic validation.
 
+## Completed in the next unreleased version
+
+- Added local research workspaces with canonical node selections, notes and bridge-card drafts.
+- Added radius-based neighborhood comparison and side-by-side evidence-aware route objectives.
+- Added a documented negative-results format with observed, inconclusive and falsified statuses.
+- Added validated workspace JSON import/export and retained the existing canonical JSON-LD export.
+
 ## Near term
 
 - Pay down the generated node/edge citation-debt list with primary-source references.
 - Add aliases and multilingual node descriptions without changing stable IDs.
-- Add a documented negative-results format and `obstructs` examples.
 - Expand Lean targets that compile against minimal imports.
 - Add pinned-browser interaction/accessibility checks beyond the current static accessibility gate.
 
@@ -14,9 +20,6 @@ Roadmap entries are proposals, not commitments. Changes should preserve provenan
 
 - Versioned evidence records with publication identifiers and review dates, building on the generated evidence audit.
 - Populate the newly supported edge reference objects and add review dates/publication identifiers after source verification.
-- Saved local workspaces containing selected nodes, notes and bridge-card drafts.
-- Radius and path comparison views that expose direction and evidence changes.
-- Export to JSON-LD or another interoperable graph format after the ontology stabilizes.
 
 ## Formalization
 

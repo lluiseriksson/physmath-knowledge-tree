@@ -100,11 +100,11 @@ for (const shortcut of manifest.shortcuts ?? []) {
   const canonical = shortcut.url === './' ? './' : shortcut.url.split(/[?#]/u)[0];
   ensure(shell.includes(canonical), `Manifest shortcut is missing from the offline shell: ${shortcut.url}`);
 }
-ensure(shortcutUrls.has('./') && shortcutUrls.has('./learning.html'), 'Manifest needs shortcuts for research and learning surfaces');
+ensure(shortcutUrls.has('./') && shortcutUrls.has('./learning.html') && shortcutUrls.has('./workbench.html'), 'Manifest needs shortcuts for research, learning and workbench surfaces');
 ensure(manifest.start_url === './' && manifest.scope === './', 'Manifest must remain repository-subpath safe');
 ensure(manifest.id === './', 'Manifest app id must be stable and subpath safe');
 
-for (const page of ['index.html', 'learning.html', 'offline.html']) {
+for (const page of ['index.html', 'learning.html', 'workbench.html', 'offline.html']) {
   const html = readFileSync(join(root, page), 'utf8');
   for (const match of html.matchAll(/(?:src|href)="(\.\/[^\"]+)"/g)) {
     const asset = match[1].split(/[?#]/)[0];

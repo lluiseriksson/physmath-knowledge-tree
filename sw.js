@@ -13,12 +13,16 @@ const SHELL = [
   './',
   './index.html',
   './learning.html',
+  './workbench.html',
   './offline.html',
   './404.html',
   './manifest.webmanifest',
   './src/research.css',
   './src/research-app.js',
+  './src/workbench.css',
+  './src/workbench-app.js',
   './src/lib/research-graph.js',
+  './src/lib/workspace.js',
   './src/lib/research-i18n.js',
   './src/lib/route-planner.js',
   './src/lib/route-bundle.js',
@@ -68,6 +72,7 @@ self.addEventListener('activate', (event) => {
 });
 
 function fallbackFor(url) {
+  if (url.pathname.endsWith('/workbench.html')) return './workbench.html';
   if (url.pathname.endsWith('/learning.html')) return './learning.html';
   if (url.pathname.endsWith('/') || url.pathname.endsWith('/index.html')) return './index.html';
   return './offline.html';

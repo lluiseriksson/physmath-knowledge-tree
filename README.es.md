@@ -1,12 +1,12 @@
 # Árbol de conocimiento Físico-Matemático
 
-[English version](./README.md) · [Grafo de investigación](https://lluiseriksson.github.io/physmath-knowledge-tree/) · [Mapa de aprendizaje](https://lluiseriksson.github.io/physmath-knowledge-tree/learning.html)
+[English version](./README.md) · [Grafo de investigación](https://lluiseriksson.github.io/physmath-knowledge-tree/) · [Mapa de aprendizaje](https://lluiseriksson.github.io/physmath-knowledge-tree/learning.html) · [Banco de investigación](https://lluiseriksson.github.io/physmath-knowledge-tree/workbench.html)
 
-Grafo computable y etiquetado por evidencia para explorar conexiones entre física, matemáticas, problemas abiertos y objetivos de formalización en Lean. La repo también incluye un mapa bilingüe de prerrequisitos para estudiar de forma estructurada.
+Grafo computable y etiquetado por evidencia para explorar conexiones entre física, matemáticas, problemas abiertos y objetivos de formalización en Lean. La repo también incluye un mapa bilingüe de prerrequisitos y un banco local de investigación.
 
 ![Interfaz del grafo de investigación](./docs/research-screenshot.png)
 
-## Dos experiencias complementarias
+## Tres experiencias complementarias
 
 ### Grafo de investigación — `index.html`
 
@@ -22,6 +22,12 @@ La interfaz consume directamente el JSON canónico e incorpora:
 - Referencias con alcance explícito en los 58 nodos y las 112 aristas: `claim`, `context` o `formalization`.
 
 Los niveles `formal`, `literature`, `heuristic` y `speculative` forman parte del modelo. Una conexión visual nunca equivale por sí sola a un teorema.
+
+### Banco de investigación — `workbench.html`
+
+El banco local permite guardar varias investigaciones, fijar nodos por sus ID canónicos, comparar vecindarios y rutas según la evidencia, redactar tarjetas puente y conservar resultados negativos o inconclusos. La biblioteca se valida y se puede importar, fusionar o exportar como JSON sin cuentas, analítica ni sincronización remota.
+
+Consulta [`docs/RESEARCH_WORKBENCH.md`](./docs/RESEARCH_WORKBENCH.md).
 
 ### Mapa de aprendizaje — `learning.html`
 
@@ -95,9 +101,9 @@ npm run build
 
 ## Calidad y seguridad
 
-La repo valida IDs, referencias, endpoints, niveles de evidencia, colecciones, estadísticas, traducciones, taxonomías y ausencia de ciclos. Las pruebas cubren recorridos, caminos mínimos, búsqueda, evaluación, layout, persistencia, servidor y datos, con 100% de cobertura de líneas, ramas y funciones en el conjunto explícito de módulos instrumentados por Node. El artefacto `dist/` se prueba además en Chromium mediante búsqueda, fichas, rutas, cambio de idioma, accesibilidad dinámica, fallback offline y persistencia de progreso. También se verifican enlaces, accesibilidad estática, PWA, CSP, acciones fijadas por SHA, formato, build reproducible, CodeQL y despliegue Pages.
+La repo valida IDs, referencias, endpoints, niveles de evidencia, colecciones, estadísticas, traducciones, taxonomías y ausencia de ciclos. Las pruebas cubren recorridos, caminos mínimos, búsqueda, evaluación, layout, persistencia, servidor y datos, con 100% de cobertura de líneas, ramas y funciones en el conjunto explícito de módulos instrumentados por Node. El artefacto `dist/` se prueba además en Chromium mediante búsqueda, fichas, rutas, cambio de idioma, accesibilidad dinámica, fallback offline, persistencia de progreso y el flujo principal del banco de investigación. También se verifican enlaces, accesibilidad estática, PWA, CSP, acciones fijadas por SHA, formato, build reproducible, CodeQL y despliegue Pages.
 
-No hay analítica, cuentas, cookies, fuentes remotas ni scripts de terceros. El progreso educativo permanece en el navegador salvo exportación explícita. Los resultados reproducibles están en [`docs/VERIFICATION.md`](./docs/VERIFICATION.md) y la metodología E2E en [`docs/BROWSER_TESTING.md`](./docs/BROWSER_TESTING.md).
+No hay analítica, cuentas, cookies, fuentes remotas ni scripts de terceros. El progreso educativo y los espacios de investigación permanecen en el navegador salvo exportación explícita. Los resultados reproducibles están en [`docs/VERIFICATION.md`](./docs/VERIFICATION.md) y la metodología E2E en [`docs/BROWSER_TESTING.md`](./docs/BROWSER_TESTING.md).
 
 ## Protocolo de investigación
 

@@ -1,8 +1,8 @@
 # PhysMath Knowledge Tree
 
-[Versión en español](./README.es.md) · [Live research graph](https://lluiseriksson.github.io/physmath-knowledge-tree/) · [Learning map](https://lluiseriksson.github.io/physmath-knowledge-tree/learning.html)
+[Versión en español](./README.es.md) · [Live research graph](https://lluiseriksson.github.io/physmath-knowledge-tree/) · [Learning map](https://lluiseriksson.github.io/physmath-knowledge-tree/learning.html) · [Research workbench](https://lluiseriksson.github.io/physmath-knowledge-tree/workbench.html)
 
-A computable, evidence-labelled graph for exploring connections between physics, mathematics, open problems and Lean formalization targets. The repository also ships a bilingual prerequisite map for structured study.
+A computable, evidence-labelled graph for exploring connections between physics, mathematics, open problems and Lean formalization targets. The repository also ships a bilingual prerequisite map and a local-first research workbench.
 
 ![Research graph interface](./docs/research-screenshot.png)
 
@@ -10,7 +10,7 @@ A computable, evidence-labelled graph for exploring connections between physics,
 ![CodeQL](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/workflows/codeql.yml/badge.svg)
 ![License: MIT + CC BY 4.0](https://img.shields.io/badge/license-MIT%20%2B%20CC%20BY%204.0-blue)
 
-## Two complementary experiences
+## Three complementary experiences
 
 ### Research graph — `index.html`
 
@@ -26,6 +26,12 @@ The research interface reads the canonical JSON graph directly. It includes:
 - Scoped references on all 58 nodes and all 112 edges, with `claim`, `context` and `formalization` distinguished in the schema.
 
 Evidence labels are part of the data model: `formal`, `literature`, `heuristic` and `speculative`. A visual connection is never intended to imply a theorem.
+
+### Research workbench — `workbench.html`
+
+The local-first workbench saves multiple investigations in browser storage. It pins canonical node IDs, compares radius-limited neighborhoods and evidence-aware routes, stores bridge-card drafts, and records structured negative or inconclusive results. Workspace libraries can be validated, merged and exported as JSON without accounts, analytics or remote synchronization.
+
+See [`docs/RESEARCH_WORKBENCH.md`](./docs/RESEARCH_WORKBENCH.md).
 
 ### Learning map — `learning.html`
 
@@ -130,7 +136,7 @@ npm run build
 | `npm run validate:views` | Confirm generated Markdown/Mermaid projections match canonical JSON. |
 | `npm test` | Run graph, search, layout, path, persistence, server and data tests. |
 | `npm run test:coverage` | Enforce 100% line, branch and function coverage for the explicit core module set. |
-| `npm run test:e2e` | Exercise the built research and learning apps in a real Chromium-family browser. |
+| `npm run test:e2e` | Exercise the built research and learning apps plus the focused workbench flow in a real Chromium-family browser. |
 | `npm run generate:views` | Regenerate deterministic projections in `views/`. |
 | `npm run build` | Produce a deployable static site in `dist/`. |
 | `npm run check` | Run syntax, schemas, curation, evaluation, accessibility, full core coverage, reproducible build verification and browser smoke testing. |
@@ -139,7 +145,7 @@ npm run build
 
 ```text
 .
-├── index.html / learning.html    # Research and education applications
+├── index.html / learning.html / workbench.html  # Research, education and local workspaces
 ├── graph/                        # Canonical research graph, schemas and reference registry
 ├── evaluation/                   # Reproducible scenarios, rubric and generated results
 ├── PhysMathKnowledgeTree/        # Lean package
@@ -166,7 +172,7 @@ Start with [`AGENTS.md`](./AGENTS.md) and [`docs/agent-protocol.md`](./docs/agen
 
 ## Accessibility, privacy and security
 
-Both applications have keyboard-accessible alternatives to the SVG graph, visible focus states, text labels in addition to color, reduced-motion support and responsive layouts. The built artifact is also exercised by a dependency-free Chromium smoke suite covering critical flows, runtime accessibility invariants and offline fallback; see [`docs/BROWSER_TESTING.md`](./docs/BROWSER_TESTING.md). No analytics, accounts, cookies, remote fonts or third-party runtime scripts are used. Learning progress remains in browser storage unless explicitly exported.
+All three applications have keyboard-accessible alternatives to the SVG graph, visible focus states, text labels in addition to color, reduced-motion support and responsive layouts. The built artifact is also exercised by a dependency-free Chromium smoke suite covering critical flows, runtime accessibility invariants and offline fallback; see [`docs/BROWSER_TESTING.md`](./docs/BROWSER_TESTING.md). No analytics, accounts, cookies, remote fonts or third-party runtime scripts are used. Learning progress and research workspaces remain in browser storage unless explicitly exported.
 
 The application applies a restrictive Content Security Policy, validates import data, uses no `innerHTML` for canonical graph content and is scanned by CodeQL. See [`SECURITY.md`](./SECURITY.md). The reproducible local results are recorded in [`docs/VERIFICATION.md`](./docs/VERIFICATION.md).
 
