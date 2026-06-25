@@ -18,6 +18,9 @@ All notable changes are documented here. The project follows semantic versioning
 - Deterministic browser/CLI Lean probe generation with toolchain notes, rename handling and portable audit packets.
 - Bilingual, offline-capable `dossiers.html` integration of campaign scope, evidence, changes and Lean audits.
 - Fingerprinted JSON/Markdown research handoffs with six bounded readiness gates and prioritized actions.
+- A 71-source Frontier Mathematics Corpus Atlas spanning 28 areas, 18 modalities and 14 model capabilities.
+- License evidence, acquisition exclusions, immutable pins, attribution payloads, isolated shards and explicit training/retrieval/evaluation/metadata decisions.
+- Deterministic coverage, attribution and agent-context reports plus validation/query CLIs.
 
 ### Changed
 
@@ -27,6 +30,7 @@ All notable changes are documented here. The project follows semantic versioning
 - PWA, public-surface, accessibility, coverage and browser gates now include Canonical Change Review.
 - PWA, public-surface, accessibility, coverage and browser gates now include Lean Target Audit.
 - PWA, public-surface, accessibility, coverage and browser gates now include Research Dossiers.
+- PWA, public-surface and coverage gates now include the corpus atlas and its generated reports.
 
 ## [2.6.0] — 2026-06-22
 

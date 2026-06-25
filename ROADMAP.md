@@ -16,6 +16,8 @@ Roadmap entries are proposals, not commitments. Changes should preserve provenan
 - Added deterministic import/`#check` probe generation in the browser and CLI.
 - Added integrated, fingerprinted research dossiers spanning workspace, evidence, changes and Lean audits.
 - Added deterministic JSON/Markdown dossier generation in the browser and CLI without source-ledger mutation.
+- Added a license-aware mathematics corpus atlas with explicit source, shard, model-use and contamination decisions.
+- Added deterministic source-density gates across elementary, advanced, formal and research mathematics.
 
 ## Near term
 

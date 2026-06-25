@@ -61,6 +61,18 @@ See [`docs/RESEARCH_DOSSIER_CENTER.md`](./docs/RESEARCH_DOSSIER_CENTER.md).
 
 The learning interface contains 90 bilingual topics and 199 prerequisite edges, from arithmetic through advanced mathematics and physics. It provides search, filters, graph/list views, local progress, favorites, readiness recommendations, target paths, JSON import/export and offline support.
 
+## Frontier mathematics corpus atlas
+
+The repository includes a license-aware source atlas for broad mathematics model development. It tracks 71 sources across 28 areas, distinguishes candidate training, retrieval, evaluation and metadata uses, isolates copyleft/per-item shards, blocks incompatible sources and generates deterministic coverage and attribution reports.
+
+See [`integrations/frontier-math-corpus/README.md`](./integrations/frontier-math-corpus/README.md) and [`integrations/frontier-math-corpus/INGESTION.md`](./integrations/frontier-math-corpus/INGESTION.md). Passing its policy is a source-governance floor, not a claim that a resulting model is frontier-level or that training is lawful in every jurisdiction.
+
+```bash
+npm run validate:frontier-corpus
+npm run query:frontier-corpus -- summary
+npm run query:frontier-corpus -- area calculus
+```
+
 ## Canonical data
 
 ```text
@@ -161,6 +173,8 @@ npm run build
 | `npm run validate:learning` | Check bilingual curriculum taxonomies, prerequisites and DAG structure. |
 | `npm run validate:views` | Confirm generated Markdown/Mermaid projections match canonical JSON. |
 | `npm run lean:probe -- -- [options]` | Generate a deterministic Lean import/declaration probe from canonical node metadata. |
+| `npm run validate:frontier-corpus` | Validate source rights metadata, shard isolation, contamination controls and mathematics coverage floors. |
+| `npm run query:frontier-corpus -- <command>` | Query source decisions, areas, shards, training candidates and gaps. |
 | `npm run dossier:build -- -- --workspace-file <file>` | Build a fingerprinted integrated research dossier from portable local exports. |
 | `npm test` | Run graph, search, layout, path, persistence, server and data tests. |
 | `npm run test:coverage` | Enforce 100% line, branch and function coverage for the explicit core module set. |
@@ -184,6 +198,7 @@ npm run build
 ├── prompts/                      # Agent discovery, hypothesis and Lean prompts
 ├── docs/                         # Protocol, curated extracts, architecture and audit notes
 ├── curation/                     # Source hashes, decisions and deletion-safe provenance
+├── integrations/                   # Yang–Mills context pack and frontier mathematics corpus atlas
 └── .github/                      # CI, CodeQL, Pages, templates and maintenance
 ```
 

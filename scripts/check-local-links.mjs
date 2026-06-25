@@ -30,7 +30,7 @@ function checkHtml(file) {
 
 function walkMarkdown(dir, output = []) {
   for (const name of readdirSync(dir)) {
-    if (['dist', '.git', 'node_modules'].includes(name)) continue;
+    if (['dist', '.git', '.frontier-corpus-backup', 'node_modules'].includes(name)) continue;
     const absolute = join(dir, name);
     const stat = statSync(absolute);
     if (stat.isDirectory()) walkMarkdown(absolute, output);

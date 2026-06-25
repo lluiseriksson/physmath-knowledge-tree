@@ -57,6 +57,18 @@ Consulta [`docs/RESEARCH_DOSSIER_CENTER.md`](./docs/RESEARCH_DOSSIER_CENTER.md).
 
 Incluye 90 temas bilingües y 199 prerrequisitos, desde aritmética hasta matemáticas y física avanzadas. Ofrece búsqueda, filtros, grafo/lista, progreso local, favoritos, recomendaciones, rutas hacia objetivos, importación/exportación JSON y funcionamiento offline.
 
+## Atlas de corpus matemático de frontera
+
+La repo incorpora un atlas de fuentes con control de licencias para desarrollar modelos matemáticos amplios. Registra 71 fuentes y 28 áreas; separa entrenamiento candidato, recuperación, evaluación y metadatos; aísla *shards* copyleft o por elemento; bloquea fuentes incompatibles; y genera informes deterministas de cobertura y atribución.
+
+Consulta [`integrations/frontier-math-corpus/README.md`](./integrations/frontier-math-corpus/README.md) y [`integrations/frontier-math-corpus/INGESTION.md`](./integrations/frontier-math-corpus/INGESTION.md). Superar la política es un mínimo de gobernanza de fuentes, no una afirmación de que el modelo resultante sea frontera ni de que entrenar sea lícito en toda jurisdicción.
+
+```bash
+npm run validate:frontier-corpus
+npm run query:frontier-corpus -- summary
+npm run query:frontier-corpus -- area calculus
+```
+
 ## Datos canónicos
 
 `graph/nodes/core.json`, `graph/edges.json`, `graph/research_moves.json` y `graph/collections.json` son la fuente de verdad. Los esquemas JSON 2020-12 están en `graph/schemas/`; las vistas de `views/` se generan automáticamente.

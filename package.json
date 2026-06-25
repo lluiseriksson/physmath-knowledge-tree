@@ -34,7 +34,7 @@
     "curation:verify-source": "node scripts/verify-curation-source.mjs",
     "curation:report": "node scripts/generate-curation-report.mjs",
     "validate:curation": "node scripts/validate-curation.mjs",
-    "check": "npm run validate:symlinks && npm run validate:syntax && npm run validate:graph && npm run validate:curation && npm run validate:curation-report && npm run validate:learning && npm run validate:yang-mills && npm run validate:yang-mills-generated && npm run validate:links && npm run validate:i18n && npm run validate:jsonld && npm run validate:accessibility && npm run validate:pwa && npm run validate:release && npm run validate:views && npm run validate:audit && npm run validate:evaluation && npm run validate:workflows && npm run validate:format && npm run test:coverage && npm run build && npm run validate:dist && npm run test:e2e",
+    "check": "npm run validate:symlinks && npm run validate:syntax && npm run validate:graph && npm run validate:curation && npm run validate:curation-report && npm run validate:learning && npm run validate:yang-mills && npm run validate:yang-mills-generated && npm run validate:frontier-corpus && npm run validate:links && npm run validate:i18n && npm run validate:jsonld && npm run validate:accessibility && npm run validate:pwa && npm run validate:release && npm run validate:views && npm run validate:audit && npm run validate:evaluation && npm run validate:workflows && npm run validate:format && npm run test:coverage && npm run build && npm run validate:dist && npm run test:e2e",
     "validate:workflows": "node scripts/check-workflows.mjs",
     "evaluate": "node scripts/evaluate-repository.mjs",
     "validate:evaluation": "node scripts/evaluate-repository.mjs --check",
@@ -55,6 +55,9 @@
     "validate:yang-mills-generated": "node scripts/build-yang-mills-agent-context.mjs --check",
     "query:yang-mills": "node scripts/query-yang-mills-pack.mjs",
     "lean:probe": "node scripts/export-lean-target-probe.mjs",
-    "dossier:build": "node scripts/build-research-dossier.mjs"
+    "dossier:build": "node scripts/build-research-dossier.mjs",
+    "generate:frontier-corpus": "node scripts/generate-frontier-corpus-report.mjs",
+    "validate:frontier-corpus": "node scripts/validate-frontier-corpus.mjs",
+    "query:frontier-corpus": "node scripts/query-frontier-corpus.mjs"
   }
 }

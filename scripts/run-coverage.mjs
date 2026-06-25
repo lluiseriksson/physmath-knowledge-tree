@@ -8,6 +8,7 @@ const productionFiles = [
   'scripts/lib/fs-safety.mjs',
   'scripts/lib/i18n-validation.mjs',
   'scripts/lib/public-surface.mjs',
+  'scripts/lib/frontier-corpus.mjs',
   'scripts/serve.mjs',
   'src/data/topics.js',
   'src/lib/jsonld.js',

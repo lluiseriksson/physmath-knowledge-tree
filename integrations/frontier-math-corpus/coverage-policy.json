@@ -1,0 +1,279 @@
+{
+  "schema_version": "1.0.0",
+  "reviewed_on": "2026-06-25",
+  "vocabularies": {
+    "areas": [
+      "arithmetic",
+      "elementary-algebra",
+      "geometry",
+      "trigonometry",
+      "calculus",
+      "linear-algebra",
+      "ordinary-differential-equations",
+      "partial-differential-equations",
+      "probability",
+      "statistics",
+      "real-analysis",
+      "complex-analysis",
+      "functional-analysis",
+      "abstract-algebra",
+      "number-theory",
+      "combinatorics",
+      "graph-theory",
+      "topology",
+      "differential-geometry",
+      "algebraic-geometry",
+      "logic-foundations",
+      "category-theory",
+      "optimization",
+      "numerical-analysis",
+      "dynamical-systems",
+      "mathematical-physics",
+      "formal-verification",
+      "research-mathematics"
+    ],
+    "modalities": [
+      "exposition",
+      "definitions",
+      "theorem-proof",
+      "exercises",
+      "worked-solutions",
+      "counterexamples",
+      "formal-proofs",
+      "code",
+      "symbolic-traces",
+      "numerical-experiments",
+      "diagrams",
+      "datasets",
+      "research-papers",
+      "bibliographic-metadata",
+      "multilingual",
+      "benchmarks",
+      "historical-texts",
+      "discussions"
+    ],
+    "capabilities": [
+      "curriculum",
+      "symbolic-reasoning",
+      "proof-generation",
+      "proof-verification",
+      "formalization",
+      "tool-use",
+      "numerical-reasoning",
+      "data-analysis",
+      "diagram-reasoning",
+      "research-retrieval",
+      "citation-grounding",
+      "counterexample-search",
+      "evaluation",
+      "multilingual-reasoning"
+    ],
+    "levels": [
+      "school",
+      "undergraduate",
+      "graduate",
+      "research"
+    ],
+    "decisions": [
+      "approved",
+      "conditional",
+      "metadata_only",
+      "blocked"
+    ],
+    "model_uses": [
+      "candidate-training",
+      "retrieval-only",
+      "evaluation-only",
+      "metadata-only",
+      "blocked"
+    ],
+    "coverage_roles": [
+      "dedicated",
+      "omnibus",
+      "tool",
+      "metadata"
+    ],
+    "ai_terms": [
+      "none-observed",
+      "explicit-restriction",
+      "not-reviewed"
+    ]
+  },
+  "eligibility": {
+    "knowledge_decisions": [
+      "approved",
+      "conditional"
+    ],
+    "training_model_uses": [
+      "candidate-training"
+    ],
+    "nontraining_model_uses": [
+      "retrieval-only",
+      "evaluation-only",
+      "metadata-only",
+      "blocked"
+    ],
+    "statement": "No decision infers a universal legal right to train. Candidate-training means eligible for a separately approved, notice-complete snapshot under this engineering policy."
+  },
+  "critical_areas": [
+    "arithmetic",
+    "elementary-algebra",
+    "geometry",
+    "calculus",
+    "linear-algebra",
+    "ordinary-differential-equations",
+    "partial-differential-equations",
+    "probability",
+    "statistics",
+    "real-analysis",
+    "logic-foundations",
+    "formal-verification"
+  ],
+  "targets": {
+    "all_area_eligible_families": 2,
+    "critical_area_eligible_families": 4,
+    "critical_area_candidate_training_families": 2,
+    "critical_area_practice_sources": 1,
+    "critical_area_proof_sources": 2,
+    "modality_eligible_sources": {
+      "exposition": 8,
+      "definitions": 10,
+      "theorem-proof": 9,
+      "exercises": 6,
+      "worked-solutions": 4,
+      "counterexamples": 2,
+      "formal-proofs": 5,
+      "code": 8,
+      "symbolic-traces": 4,
+      "numerical-experiments": 5,
+      "diagrams": 6,
+      "datasets": 6,
+      "research-papers": 3,
+      "bibliographic-metadata": 5,
+      "multilingual": 3,
+      "benchmarks": 3,
+      "historical-texts": 2,
+      "discussions": 1
+    },
+    "capability_eligible_sources": {
+      "curriculum": 8,
+      "symbolic-reasoning": 12,
+      "proof-generation": 10,
+      "proof-verification": 5,
+      "formalization": 5,
+      "tool-use": 8,
+      "numerical-reasoning": 5,
+      "data-analysis": 4,
+      "diagram-reasoning": 5,
+      "research-retrieval": 8,
+      "citation-grounding": 6,
+      "counterexample-search": 5,
+      "evaluation": 3,
+      "multilingual-reasoning": 3
+    },
+    "minimum_approved_sources": 10,
+    "minimum_conditional_sources": 20,
+    "minimum_blocked_guardrails": 10,
+    "minimum_distinct_families": 20
+  },
+  "proof_modalities": [
+    "theorem-proof",
+    "formal-proofs"
+  ],
+  "practice_modalities": [
+    "exercises",
+    "worked-solutions"
+  ],
+  "required_blocked_ids": [
+    "openstax-current-textbooks",
+    "mit-opencourseware",
+    "book-of-proof",
+    "nlab",
+    "pauls-online-math-notes",
+    "art-of-problem-solving",
+    "project-euler",
+    "common-crawl-raw",
+    "internet-archive-mixed",
+    "openwebmath-mixed",
+    "mathpile-mixed",
+    "competition-archives"
+  ],
+  "license_classes": {
+    "permissive": {
+      "default_shard": "permissive",
+      "requires_isolation": false
+    },
+    "attribution": {
+      "default_shard": "attribution",
+      "requires_isolation": false
+    },
+    "public-domain-equivalent": {
+      "default_shard": "public-domain",
+      "requires_isolation": false
+    },
+    "share-alike": {
+      "default_shard": "share-alike",
+      "requires_isolation": true
+    },
+    "documentation-copyleft": {
+      "default_shard": "documentation-copyleft",
+      "requires_isolation": true
+    },
+    "code-copyleft": {
+      "default_shard": "copyleft-code",
+      "requires_isolation": true
+    },
+    "mixed-copyleft": {
+      "default_shard": "copyleft-code",
+      "requires_isolation": true
+    },
+    "mixed-permissive": {
+      "default_shard": "permissive",
+      "requires_isolation": true
+    },
+    "per-item": {
+      "default_shard": "per-item",
+      "requires_isolation": true
+    },
+    "per-item-public-domain": {
+      "default_shard": "public-domain",
+      "requires_isolation": true
+    },
+    "government-work-with-notice": {
+      "default_shard": "per-item",
+      "requires_isolation": true
+    },
+    "metadata-scope": {
+      "default_shard": "metadata",
+      "requires_isolation": true
+    },
+    "pending-review": {
+      "default_shard": "metadata",
+      "requires_isolation": true
+    },
+    "restricted": {
+      "default_shard": "blocked",
+      "requires_isolation": true
+    },
+    "noncommercial": {
+      "default_shard": "blocked",
+      "requires_isolation": true
+    },
+    "no-derivatives": {
+      "default_shard": "blocked",
+      "requires_isolation": true
+    },
+    "unclear": {
+      "default_shard": "blocked",
+      "requires_isolation": true
+    },
+    "proprietary": {
+      "default_shard": "blocked",
+      "requires_isolation": true
+    },
+    "mixed-unknown": {
+      "default_shard": "blocked",
+      "requires_isolation": true
+    }
+  }
+}

@@ -1,0 +1,5230 @@
+{
+  "schema_version": "1.0.0",
+  "reviewed_on": "2026-06-25",
+  "legal_notice": "This registry is an engineering control, not legal advice. An approved or conditional decision means the recorded rights and source evidence passed this repository policy; it does not determine whether model training is lawful in every jurisdiction or whether model outputs inherit a source license.",
+  "sources": [
+    {
+      "id": "mathlib4",
+      "title": "mathlib4",
+      "family": "lean-ecosystem",
+      "source_type": "formal-library",
+      "decision": "approved",
+      "decision_reason": "Apache-2.0 repository with explicit redistribution and derivative-work grants; ingest only pinned commits and preserve notices.",
+      "homepage": "https://github.com/leanprover-community/mathlib4",
+      "license": {
+        "expression": "Apache-2.0",
+        "class": "permissive",
+        "evidence_url": "https://github.com/leanprover-community/mathlib4/blob/master/LICENSE",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": true,
+        "share_alike": false,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "arithmetic",
+          "elementary-algebra",
+          "geometry",
+          "trigonometry",
+          "calculus",
+          "linear-algebra",
+          "ordinary-differential-equations",
+          "partial-differential-equations",
+          "probability",
+          "statistics",
+          "real-analysis",
+          "complex-analysis",
+          "functional-analysis",
+          "abstract-algebra",
+          "number-theory",
+          "combinatorics",
+          "graph-theory",
+          "topology",
+          "differential-geometry",
+          "algebraic-geometry",
+          "logic-foundations",
+          "category-theory",
+          "optimization",
+          "numerical-analysis",
+          "dynamical-systems",
+          "mathematical-physics",
+          "formal-verification"
+        ],
+        "modalities": [
+          "definitions",
+          "theorem-proof",
+          "formal-proofs",
+          "code"
+        ],
+        "capabilities": [
+          "proof-generation",
+          "proof-verification",
+          "formalization",
+          "tool-use",
+          "counterexample-search"
+        ],
+        "levels": [
+          "undergraduate",
+          "graduate",
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "omnibus"
+      },
+      "acquisition": {
+        "mode": "git",
+        "pin": "commit",
+        "content_scope": "Repository-authored content",
+        "excludes": []
+      },
+      "governance": {
+        "shard": "permissive",
+        "model_use": "candidate-training",
+        "contamination_risk": "low",
+        "pii_risk": "none",
+        "attribution_template": "Retain the Apache-2.0 license, copyright notices and any NOTICE material; record the exact commit.",
+        "legal_review": "complete"
+      },
+      "notes": [
+        "Proof assistant coverage is uneven by area; declarations are not a substitute for prose pedagogy."
+      ]
+    },
+    {
+      "id": "lean4",
+      "title": "Lean 4",
+      "family": "lean-ecosystem",
+      "source_type": "proof-assistant",
+      "decision": "approved",
+      "decision_reason": "Apache-2.0 source suitable for tool-use and proof-language training when pinned and notice-compliant.",
+      "homepage": "https://github.com/leanprover/lean4",
+      "license": {
+        "expression": "Apache-2.0",
+        "class": "permissive",
+        "evidence_url": "https://github.com/leanprover/lean4/blob/master/LICENSE",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": true,
+        "share_alike": false,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "logic-foundations",
+          "formal-verification"
+        ],
+        "modalities": [
+          "definitions",
+          "formal-proofs",
+          "code"
+        ],
+        "capabilities": [
+          "proof-verification",
+          "formalization",
+          "tool-use"
+        ],
+        "levels": [
+          "graduate",
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "tool"
+      },
+      "acquisition": {
+        "mode": "git",
+        "pin": "commit",
+        "content_scope": "Repository-authored content",
+        "excludes": []
+      },
+      "governance": {
+        "shard": "permissive",
+        "model_use": "candidate-training",
+        "contamination_risk": "low",
+        "pii_risk": "none",
+        "attribution_template": "Retain Apache-2.0 and repository notices; record the exact commit.",
+        "legal_review": "complete"
+      },
+      "notes": []
+    },
+    {
+      "id": "metamath-set-mm",
+      "title": "Metamath set.mm",
+      "family": "metamath",
+      "source_type": "formal-library",
+      "decision": "approved",
+      "decision_reason": "The repository applies CC0-1.0 to the formal corpus; a pinned snapshot can enter the public-domain-equivalent shard.",
+      "homepage": "https://github.com/metamath/set.mm",
+      "license": {
+        "expression": "CC0-1.0",
+        "class": "public-domain-equivalent",
+        "evidence_url": "https://github.com/metamath/set.mm/blob/develop/LICENSE",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": false,
+        "share_alike": false,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "arithmetic",
+          "elementary-algebra",
+          "geometry",
+          "calculus",
+          "real-analysis",
+          "abstract-algebra",
+          "number-theory",
+          "combinatorics",
+          "graph-theory",
+          "topology",
+          "logic-foundations",
+          "formal-verification"
+        ],
+        "modalities": [
+          "definitions",
+          "theorem-proof",
+          "formal-proofs",
+          "code"
+        ],
+        "capabilities": [
+          "proof-generation",
+          "proof-verification",
+          "formalization"
+        ],
+        "levels": [
+          "undergraduate",
+          "graduate",
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "omnibus"
+      },
+      "acquisition": {
+        "mode": "git",
+        "pin": "commit",
+        "content_scope": "Repository-authored content",
+        "excludes": []
+      },
+      "governance": {
+        "shard": "public-domain",
+        "model_use": "candidate-training",
+        "contamination_risk": "low",
+        "pii_risk": "none",
+        "attribution_template": "Record set.mm, project URL, commit and CC0 dedication even though attribution is not legally required.",
+        "legal_review": "complete"
+      },
+      "notes": []
+    },
+    {
+      "id": "open-logic-project",
+      "title": "Open Logic Project",
+      "family": "open-logic-project",
+      "source_type": "open-textbook",
+      "decision": "approved",
+      "decision_reason": "Project materials are published under CC BY; source and PDFs may be adapted with attribution after snapshot verification.",
+      "homepage": "https://openlogicproject.org/",
+      "license": {
+        "expression": "CC-BY-4.0",
+        "class": "attribution",
+        "evidence_url": "https://openlogicproject.org/",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": true,
+        "share_alike": false,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "logic-foundations",
+          "formal-verification",
+          "category-theory"
+        ],
+        "modalities": [
+          "exposition",
+          "definitions",
+          "theorem-proof",
+          "exercises",
+          "diagrams"
+        ],
+        "capabilities": [
+          "curriculum",
+          "symbolic-reasoning",
+          "proof-generation",
+          "formalization"
+        ],
+        "levels": [
+          "undergraduate",
+          "graduate"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "dedicated"
+      },
+      "acquisition": {
+        "mode": "git",
+        "pin": "commit",
+        "content_scope": "Project-authored LaTeX source and generated text whose file-level notices agree with CC BY.",
+        "excludes": [
+          "Third-party figures or readings carrying separate notices"
+        ]
+      },
+      "governance": {
+        "shard": "attribution",
+        "model_use": "candidate-training",
+        "contamination_risk": "low",
+        "pii_risk": "none",
+        "attribution_template": "Credit the Open Logic Project and named contributors; include title, URL, version/commit and CC BY 4.0.",
+        "legal_review": "complete"
+      },
+      "notes": []
+    },
+    {
+      "id": "deepmind-mathematics-dataset",
+      "title": "DeepMind mathematics_dataset",
+      "family": "synthetic-benchmarks",
+      "source_type": "synthetic-dataset",
+      "decision": "approved",
+      "decision_reason": "Apache-2.0 generator and data; keep generated instances versioned and separate from evaluation holdouts.",
+      "homepage": "https://github.com/google-deepmind/mathematics_dataset",
+      "license": {
+        "expression": "Apache-2.0",
+        "class": "permissive",
+        "evidence_url": "https://github.com/google-deepmind/mathematics_dataset/blob/master/LICENSE",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": true,
+        "share_alike": false,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "arithmetic",
+          "elementary-algebra",
+          "calculus",
+          "probability",
+          "linear-algebra"
+        ],
+        "modalities": [
+          "datasets",
+          "symbolic-traces",
+          "benchmarks"
+        ],
+        "capabilities": [
+          "symbolic-reasoning",
+          "evaluation"
+        ],
+        "levels": [
+          "school",
+          "undergraduate"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "dedicated"
+      },
+      "acquisition": {
+        "mode": "git",
+        "pin": "commit",
+        "content_scope": "Repository-authored content",
+        "excludes": []
+      },
+      "governance": {
+        "shard": "permissive",
+        "model_use": "evaluation-only",
+        "contamination_risk": "high",
+        "pii_risk": "none",
+        "attribution_template": "Retain Apache-2.0 and cite the repository commit plus generator configuration.",
+        "legal_review": "complete"
+      },
+      "notes": [
+        "Evaluation-only by default to prevent benchmark leakage; newly generated variants require independent seeds and manifests."
+      ]
+    },
+    {
+      "id": "gsm8k",
+      "title": "GSM8K",
+      "family": "reasoning-benchmarks",
+      "source_type": "benchmark-dataset",
+      "decision": "approved",
+      "decision_reason": "MIT-licensed repository, but the canonical split is reserved for evaluation rather than training.",
+      "homepage": "https://github.com/openai/grade-school-math",
+      "license": {
+        "expression": "MIT",
+        "class": "permissive",
+        "evidence_url": "https://github.com/openai/grade-school-math/blob/master/LICENSE",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": true,
+        "share_alike": false,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "arithmetic",
+          "elementary-algebra"
+        ],
+        "modalities": [
+          "datasets",
+          "worked-solutions",
+          "benchmarks"
+        ],
+        "capabilities": [
+          "symbolic-reasoning",
+          "evaluation"
+        ],
+        "levels": [
+          "school"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "dedicated"
+      },
+      "acquisition": {
+        "mode": "git",
+        "pin": "commit",
+        "content_scope": "Repository-authored content",
+        "excludes": []
+      },
+      "governance": {
+        "shard": "permissive",
+        "model_use": "evaluation-only",
+        "contamination_risk": "high",
+        "pii_risk": "none",
+        "attribution_template": "Retain the MIT notice and cite GSM8K with the exact repository commit and split.",
+        "legal_review": "complete"
+      },
+      "notes": []
+    },
+    {
+      "id": "hendrycks-math",
+      "title": "MATH benchmark",
+      "family": "reasoning-benchmarks",
+      "source_type": "benchmark-dataset",
+      "decision": "approved",
+      "decision_reason": "MIT-licensed repository; canonical problems and solutions are held out for evaluation and contamination audits.",
+      "homepage": "https://github.com/hendrycks/math",
+      "license": {
+        "expression": "MIT",
+        "class": "permissive",
+        "evidence_url": "https://github.com/hendrycks/math/blob/main/LICENSE",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": true,
+        "share_alike": false,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "arithmetic",
+          "elementary-algebra",
+          "geometry",
+          "calculus",
+          "probability",
+          "number-theory",
+          "combinatorics"
+        ],
+        "modalities": [
+          "datasets",
+          "worked-solutions",
+          "benchmarks"
+        ],
+        "capabilities": [
+          "symbolic-reasoning",
+          "proof-generation",
+          "evaluation"
+        ],
+        "levels": [
+          "school",
+          "undergraduate"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "dedicated"
+      },
+      "acquisition": {
+        "mode": "git",
+        "pin": "commit",
+        "content_scope": "Repository-authored content",
+        "excludes": []
+      },
+      "governance": {
+        "shard": "permissive",
+        "model_use": "evaluation-only",
+        "contamination_risk": "high",
+        "pii_risk": "none",
+        "attribution_template": "Retain the MIT notice and cite the benchmark paper, repository commit and split.",
+        "legal_review": "complete"
+      },
+      "notes": []
+    },
+    {
+      "id": "leandojo-tooling",
+      "title": "LeanDojo tooling",
+      "family": "lean-ecosystem",
+      "source_type": "formalization-tooling",
+      "decision": "approved",
+      "decision_reason": "MIT-licensed tooling can support reproducible extraction; extracted traces inherit the licenses of their source repositories and are tracked separately.",
+      "homepage": "https://github.com/lean-dojo/LeanDojo",
+      "license": {
+        "expression": "MIT",
+        "class": "permissive",
+        "evidence_url": "https://github.com/lean-dojo/LeanDojo/blob/main/LICENSE",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": true,
+        "share_alike": false,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "formal-verification",
+          "logic-foundations"
+        ],
+        "modalities": [
+          "code",
+          "symbolic-traces"
+        ],
+        "capabilities": [
+          "proof-verification",
+          "formalization",
+          "tool-use"
+        ],
+        "levels": [
+          "graduate",
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "tool"
+      },
+      "acquisition": {
+        "mode": "git",
+        "pin": "commit",
+        "content_scope": "LeanDojo-authored tooling only",
+        "excludes": [
+          "Extracted theorem corpora from third-party repositories"
+        ]
+      },
+      "governance": {
+        "shard": "permissive",
+        "model_use": "candidate-training",
+        "contamination_risk": "low",
+        "pii_risk": "none",
+        "attribution_template": "Retain the LeanDojo MIT notice and pin the exact tooling commit.",
+        "legal_review": "complete"
+      },
+      "notes": []
+    },
+    {
+      "id": "sympy",
+      "title": "SymPy",
+      "family": "scientific-computing",
+      "source_type": "computer-algebra-system",
+      "decision": "approved",
+      "decision_reason": "BSD-3-Clause code provides symbolic algorithms and executable traces with standard notice retention.",
+      "homepage": "https://github.com/sympy/sympy",
+      "license": {
+        "expression": "BSD-3-Clause",
+        "class": "permissive",
+        "evidence_url": "https://github.com/sympy/sympy/blob/master/LICENSE",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": true,
+        "share_alike": false,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "arithmetic",
+          "elementary-algebra",
+          "geometry",
+          "trigonometry",
+          "calculus",
+          "linear-algebra",
+          "ordinary-differential-equations",
+          "partial-differential-equations",
+          "probability",
+          "statistics",
+          "real-analysis",
+          "complex-analysis",
+          "abstract-algebra",
+          "number-theory",
+          "combinatorics",
+          "optimization"
+        ],
+        "modalities": [
+          "code",
+          "symbolic-traces",
+          "numerical-experiments"
+        ],
+        "capabilities": [
+          "symbolic-reasoning",
+          "tool-use",
+          "counterexample-search"
+        ],
+        "levels": [
+          "school",
+          "undergraduate",
+          "graduate",
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "tool"
+      },
+      "acquisition": {
+        "mode": "git",
+        "pin": "commit",
+        "content_scope": "Repository-authored content",
+        "excludes": []
+      },
+      "governance": {
+        "shard": "permissive",
+        "model_use": "candidate-training",
+        "contamination_risk": "low",
+        "pii_risk": "none",
+        "attribution_template": "Retain BSD-3-Clause copyright and disclaimer; record version and commit.",
+        "legal_review": "complete"
+      },
+      "notes": []
+    },
+    {
+      "id": "numpy",
+      "title": "NumPy",
+      "family": "scientific-computing",
+      "source_type": "numerical-library",
+      "decision": "approved",
+      "decision_reason": "BSD-3-Clause code supplies reproducible array and linear-algebra primitives after third-party notice review.",
+      "homepage": "https://github.com/numpy/numpy",
+      "license": {
+        "expression": "BSD-3-Clause",
+        "class": "permissive",
+        "evidence_url": "https://github.com/numpy/numpy/blob/main/LICENSE.txt",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": true,
+        "share_alike": false,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "linear-algebra",
+          "probability",
+          "statistics",
+          "optimization",
+          "numerical-analysis",
+          "dynamical-systems"
+        ],
+        "modalities": [
+          "code",
+          "numerical-experiments"
+        ],
+        "capabilities": [
+          "tool-use",
+          "numerical-reasoning",
+          "data-analysis"
+        ],
+        "levels": [
+          "undergraduate",
+          "graduate",
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "tool"
+      },
+      "acquisition": {
+        "mode": "git",
+        "pin": "commit",
+        "content_scope": "Repository-authored content",
+        "excludes": [
+          "Vendored third-party components not covered by NumPy primary license"
+        ]
+      },
+      "governance": {
+        "shard": "permissive",
+        "model_use": "candidate-training",
+        "contamination_risk": "low",
+        "pii_risk": "none",
+        "attribution_template": "Retain NumPy copyright, BSD terms and applicable third-party notices; record version and commit.",
+        "legal_review": "complete"
+      },
+      "notes": []
+    },
+    {
+      "id": "scipy",
+      "title": "SciPy",
+      "family": "scientific-computing",
+      "source_type": "numerical-library",
+      "decision": "approved",
+      "decision_reason": "BSD-3-Clause code covers optimization, integration, ODEs, statistics and numerical methods, subject to bundled notices.",
+      "homepage": "https://github.com/scipy/scipy",
+      "license": {
+        "expression": "BSD-3-Clause",
+        "class": "permissive",
+        "evidence_url": "https://github.com/scipy/scipy/blob/main/LICENSE.txt",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": true,
+        "share_alike": false,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "geometry",
+          "calculus",
+          "linear-algebra",
+          "ordinary-differential-equations",
+          "partial-differential-equations",
+          "probability",
+          "statistics",
+          "optimization",
+          "numerical-analysis",
+          "dynamical-systems"
+        ],
+        "modalities": [
+          "code",
+          "numerical-experiments",
+          "datasets"
+        ],
+        "capabilities": [
+          "tool-use",
+          "numerical-reasoning",
+          "data-analysis",
+          "counterexample-search"
+        ],
+        "levels": [
+          "undergraduate",
+          "graduate",
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "tool"
+      },
+      "acquisition": {
+        "mode": "git",
+        "pin": "commit",
+        "content_scope": "Repository-authored content",
+        "excludes": [
+          "Vendored or optional third-party components with separate notices"
+        ]
+      },
+      "governance": {
+        "shard": "permissive",
+        "model_use": "candidate-training",
+        "contamination_risk": "low",
+        "pii_risk": "none",
+        "attribution_template": "Retain SciPy copyright, BSD terms and applicable third-party notices; record version and commit.",
+        "legal_review": "complete"
+      },
+      "notes": []
+    },
+    {
+      "id": "julia-language",
+      "title": "Julia language",
+      "family": "scientific-computing",
+      "source_type": "programming-language",
+      "decision": "approved",
+      "decision_reason": "MIT-licensed language implementation supports executable mathematical workflows; bundled dependencies remain separately inventoried.",
+      "homepage": "https://github.com/JuliaLang/julia",
+      "license": {
+        "expression": "MIT",
+        "class": "permissive",
+        "evidence_url": "https://github.com/JuliaLang/julia/blob/master/LICENSE.md",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": true,
+        "share_alike": false,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "linear-algebra",
+          "probability",
+          "statistics",
+          "optimization",
+          "numerical-analysis",
+          "dynamical-systems",
+          "mathematical-physics"
+        ],
+        "modalities": [
+          "code",
+          "numerical-experiments"
+        ],
+        "capabilities": [
+          "tool-use",
+          "numerical-reasoning",
+          "data-analysis"
+        ],
+        "levels": [
+          "undergraduate",
+          "graduate",
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "tool"
+      },
+      "acquisition": {
+        "mode": "git",
+        "pin": "commit",
+        "content_scope": "Repository-authored content",
+        "excludes": [
+          "Bundled dependencies and standard-library components under separate licenses"
+        ]
+      },
+      "governance": {
+        "shard": "permissive",
+        "model_use": "candidate-training",
+        "contamination_risk": "low",
+        "pii_risk": "none",
+        "attribution_template": "Retain the Julia MIT notice and all applicable dependency notices; record version and commit.",
+        "legal_review": "complete"
+      },
+      "notes": []
+    },
+    {
+      "id": "openalex-snapshot",
+      "title": "OpenAlex snapshot",
+      "family": "open-research-metadata",
+      "source_type": "bibliographic-metadata",
+      "decision": "approved",
+      "decision_reason": "OpenAlex releases its data under CC0; use only the dated snapshot and keep work-level links rather than assuming article-content rights.",
+      "homepage": "https://docs.openalex.org/download-all-data/openalex-snapshot",
+      "license": {
+        "expression": "CC0-1.0",
+        "class": "metadata-scope",
+        "evidence_url": "https://docs.openalex.org/additional-help/faq#how-is-openalex-licensed",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": false,
+        "share_alike": false,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "research-mathematics"
+        ],
+        "modalities": [
+          "bibliographic-metadata",
+          "datasets"
+        ],
+        "capabilities": [
+          "research-retrieval",
+          "citation-grounding"
+        ],
+        "levels": [
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "metadata"
+      },
+      "acquisition": {
+        "mode": "snapshot",
+        "pin": "dated-snapshot",
+        "content_scope": "OpenAlex metadata fields and identifiers",
+        "excludes": [
+          "Linked article full text and third-party landing-page content"
+        ]
+      },
+      "governance": {
+        "shard": "metadata",
+        "model_use": "metadata-only",
+        "contamination_risk": "medium",
+        "pii_risk": "none",
+        "attribution_template": "Record OpenAlex snapshot date and CC0 status; cite upstream works separately.",
+        "legal_review": "complete"
+      },
+      "notes": []
+    },
+    {
+      "id": "unpaywall-snapshot",
+      "title": "Unpaywall data snapshot",
+      "family": "open-research-metadata",
+      "source_type": "open-access-metadata",
+      "decision": "approved",
+      "decision_reason": "Unpaywall database snapshots are CC0; locations are discovery metadata and do not convey rights in linked full text.",
+      "homepage": "https://unpaywall.org/products/snapshot",
+      "license": {
+        "expression": "CC0-1.0",
+        "class": "metadata-scope",
+        "evidence_url": "https://unpaywall.org/products/snapshot",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": false,
+        "share_alike": false,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "research-mathematics"
+        ],
+        "modalities": [
+          "bibliographic-metadata",
+          "datasets"
+        ],
+        "capabilities": [
+          "research-retrieval",
+          "citation-grounding"
+        ],
+        "levels": [
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "metadata"
+      },
+      "acquisition": {
+        "mode": "snapshot",
+        "pin": "dated-snapshot",
+        "content_scope": "Unpaywall metadata and OA-location fields",
+        "excludes": [
+          "Article full text at linked locations"
+        ]
+      },
+      "governance": {
+        "shard": "metadata",
+        "model_use": "metadata-only",
+        "contamination_risk": "low",
+        "pii_risk": "none",
+        "attribution_template": "Record the Unpaywall snapshot date and CC0 status; retain DOI provenance.",
+        "legal_review": "complete"
+      },
+      "notes": []
+    },
+    {
+      "id": "active-calculus",
+      "title": "Active Calculus family",
+      "family": "active-calculus",
+      "source_type": "open-textbook",
+      "decision": "conditional",
+      "decision_reason": "CC BY-SA permits reuse with attribution and share-alike; ingest into a physically and logically isolated BY-SA shard after checking each edition and ancillary file.",
+      "homepage": "https://activecalculus.org/",
+      "license": {
+        "expression": "CC-BY-SA-4.0",
+        "class": "share-alike",
+        "evidence_url": "https://activecalculus.org/",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": true,
+        "share_alike": true,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "elementary-algebra",
+          "geometry",
+          "trigonometry",
+          "calculus",
+          "linear-algebra",
+          "ordinary-differential-equations"
+        ],
+        "modalities": [
+          "exposition",
+          "definitions",
+          "theorem-proof",
+          "exercises",
+          "worked-solutions",
+          "diagrams"
+        ],
+        "capabilities": [
+          "curriculum",
+          "symbolic-reasoning",
+          "proof-generation",
+          "diagram-reasoning"
+        ],
+        "levels": [
+          "school",
+          "undergraduate"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "dedicated"
+      },
+      "acquisition": {
+        "mode": "git",
+        "pin": "release-or-commit",
+        "content_scope": "Textbook source for Active Prelude, Single and Multivariable editions with matching license notices",
+        "excludes": [
+          "Third-party images, WeBWorK items and instructor-only ancillaries unless separately cleared"
+        ]
+      },
+      "governance": {
+        "shard": "share-alike",
+        "model_use": "candidate-training",
+        "contamination_risk": "low",
+        "pii_risk": "none",
+        "attribution_template": "Credit the named authors and Active Calculus edition; include URL, commit/release and CC BY-SA 4.0; publish adaptations under the same license.",
+        "legal_review": "required"
+      },
+      "notes": []
+    },
+    {
+      "id": "openintro-statistics",
+      "title": "Introduction to Modern Statistics and OpenIntro Statistics",
+      "family": "openintro",
+      "source_type": "open-textbook",
+      "decision": "conditional",
+      "decision_reason": "Most statistics textbooks are CC BY-SA 3.0, but partner books, teacher-only resources, branding and some media are exceptions; ingest only file-level-cleared materials.",
+      "homepage": "https://www.openintro.org/book/ims/",
+      "license": {
+        "expression": "CC-BY-SA-3.0",
+        "class": "share-alike",
+        "evidence_url": "https://www.openintro.org/license/",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": true,
+        "share_alike": true,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "probability",
+          "statistics",
+          "linear-algebra"
+        ],
+        "modalities": [
+          "exposition",
+          "definitions",
+          "exercises",
+          "worked-solutions",
+          "datasets",
+          "code",
+          "diagrams"
+        ],
+        "capabilities": [
+          "curriculum",
+          "data-analysis",
+          "numerical-reasoning",
+          "diagram-reasoning"
+        ],
+        "levels": [
+          "school",
+          "undergraduate"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "dedicated"
+      },
+      "acquisition": {
+        "mode": "git",
+        "pin": "release-or-commit",
+        "content_scope": "OpenIntro-owned statistics textbook text, public labs and public datasets with matching notices",
+        "excludes": [
+          "Teacher-only resources",
+          "Partner-program books",
+          "Book covers and trademarks",
+          "Third-party images or fair-use media"
+        ]
+      },
+      "governance": {
+        "shard": "share-alike",
+        "model_use": "candidate-training",
+        "contamination_risk": "low",
+        "pii_risk": "none",
+        "attribution_template": "Credit book authors and OpenIntro; include edition, URL, commit and CC BY-SA 3.0; remove branding from derivatives and preserve share-alike.",
+        "legal_review": "required"
+      },
+      "notes": []
+    },
+    {
+      "id": "hefferon-linear-algebra",
+      "title": "Linear Algebra by Jim Hefferon",
+      "family": "hefferon-texts",
+      "source_type": "open-textbook",
+      "decision": "conditional",
+      "decision_reason": "Dual GFDL/CC BY-SA licensing permits adaptation; select the CC BY-SA path and isolate the resulting shard.",
+      "homepage": "https://hefferon.net/linearalgebra/",
+      "license": {
+        "expression": "CC-BY-SA-3.0-US OR GFDL-1.3-or-later",
+        "class": "share-alike",
+        "evidence_url": "https://hefferon.net/source.html",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": true,
+        "share_alike": true,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "linear-algebra",
+          "abstract-algebra",
+          "numerical-analysis"
+        ],
+        "modalities": [
+          "exposition",
+          "definitions",
+          "theorem-proof",
+          "exercises",
+          "worked-solutions",
+          "code",
+          "diagrams"
+        ],
+        "capabilities": [
+          "curriculum",
+          "symbolic-reasoning",
+          "proof-generation",
+          "tool-use"
+        ],
+        "levels": [
+          "undergraduate"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "dedicated"
+      },
+      "acquisition": {
+        "mode": "git",
+        "pin": "commit",
+        "content_scope": "Book and solution-book source explicitly covered by the site license",
+        "excludes": [
+          "Linked videos and third-party reviews"
+        ]
+      },
+      "governance": {
+        "shard": "share-alike",
+        "model_use": "candidate-training",
+        "contamination_risk": "low",
+        "pii_risk": "none",
+        "attribution_template": "Credit Jim Hefferon, title and edition; include URL, commit and selected CC BY-SA license; preserve share-alike.",
+        "legal_review": "required"
+      },
+      "notes": []
+    },
+    {
+      "id": "diffyqs",
+      "title": "Notes on Diffy Qs",
+      "family": "jirilebl-texts",
+      "source_type": "open-textbook",
+      "decision": "conditional",
+      "decision_reason": "The book is dual licensed and the CC BY-SA 4.0 option supports commercial derivatives; keep all adaptations in a BY-SA shard.",
+      "homepage": "https://www.jirka.org/diffyqs/",
+      "license": {
+        "expression": "CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0",
+        "class": "share-alike",
+        "evidence_url": "https://www.jirka.org/diffyqs/",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": true,
+        "share_alike": true,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "calculus",
+          "linear-algebra",
+          "ordinary-differential-equations",
+          "partial-differential-equations",
+          "dynamical-systems",
+          "mathematical-physics"
+        ],
+        "modalities": [
+          "exposition",
+          "definitions",
+          "theorem-proof",
+          "exercises",
+          "worked-solutions",
+          "code",
+          "diagrams",
+          "numerical-experiments"
+        ],
+        "capabilities": [
+          "curriculum",
+          "symbolic-reasoning",
+          "numerical-reasoning",
+          "tool-use",
+          "diagram-reasoning"
+        ],
+        "levels": [
+          "undergraduate",
+          "graduate"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "dedicated"
+      },
+      "acquisition": {
+        "mode": "git",
+        "pin": "release",
+        "content_scope": "Released book source and author-owned figures under the selected CC BY-SA 4.0 option",
+        "excludes": [
+          "Linked external videos",
+          "Third-party WeBWorK items unless their licenses are independently resolved"
+        ]
+      },
+      "governance": {
+        "shard": "share-alike",
+        "model_use": "candidate-training",
+        "contamination_risk": "low",
+        "pii_risk": "none",
+        "attribution_template": "Credit Jiří Lebl, book title and version; include URL, release hash and CC BY-SA 4.0; mark modifications.",
+        "legal_review": "required"
+      },
+      "notes": []
+    },
+    {
+      "id": "basic-analysis-lebl",
+      "title": "Basic Analysis by Jiří Lebl",
+      "family": "jirilebl-texts",
+      "source_type": "open-textbook",
+      "decision": "conditional",
+      "decision_reason": "The text offers a CC BY-SA option; ingest the source and exercises into the same isolated share-alike family as Diffy Qs.",
+      "homepage": "https://www.jirka.org/ra/",
+      "license": {
+        "expression": "CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0",
+        "class": "share-alike",
+        "evidence_url": "https://www.jirka.org/ra/",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": true,
+        "share_alike": true,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "real-analysis",
+          "calculus",
+          "linear-algebra",
+          "topology",
+          "functional-analysis"
+        ],
+        "modalities": [
+          "exposition",
+          "definitions",
+          "theorem-proof",
+          "exercises",
+          "worked-solutions",
+          "counterexamples"
+        ],
+        "capabilities": [
+          "curriculum",
+          "symbolic-reasoning",
+          "proof-generation",
+          "counterexample-search"
+        ],
+        "levels": [
+          "undergraduate",
+          "graduate"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "dedicated"
+      },
+      "acquisition": {
+        "mode": "git",
+        "pin": "release",
+        "content_scope": "Released book source and author-owned figures under the CC BY-SA option",
+        "excludes": [
+          "Linked external media"
+        ]
+      },
+      "governance": {
+        "shard": "share-alike",
+        "model_use": "candidate-training",
+        "contamination_risk": "low",
+        "pii_risk": "none",
+        "attribution_template": "Credit Jiří Lebl, book title and version; include URL, release hash and CC BY-SA 4.0; mark modifications.",
+        "legal_review": "required"
+      },
+      "notes": []
+    },
+    {
+      "id": "tasty-bits-scv",
+      "title": "Tasty Bits of Several Complex Variables",
+      "family": "jirilebl-texts",
+      "source_type": "open-textbook",
+      "decision": "conditional",
+      "decision_reason": "The text offers a CC BY-SA option and provides graduate exposition plus exercises in several complex variables.",
+      "homepage": "https://www.jirka.org/scv/",
+      "license": {
+        "expression": "CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0",
+        "class": "share-alike",
+        "evidence_url": "https://www.jirka.org/scv/",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": true,
+        "share_alike": true,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "complex-analysis",
+          "real-analysis",
+          "differential-geometry",
+          "partial-differential-equations"
+        ],
+        "modalities": [
+          "exposition",
+          "definitions",
+          "theorem-proof",
+          "exercises",
+          "worked-solutions",
+          "counterexamples",
+          "diagrams"
+        ],
+        "capabilities": [
+          "curriculum",
+          "symbolic-reasoning",
+          "proof-generation",
+          "counterexample-search",
+          "diagram-reasoning"
+        ],
+        "levels": [
+          "graduate",
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "dedicated"
+      },
+      "acquisition": {
+        "mode": "git",
+        "pin": "release",
+        "content_scope": "Released book source and author-owned figures under the CC BY-SA option",
+        "excludes": [
+          "Linked external media"
+        ]
+      },
+      "governance": {
+        "shard": "share-alike",
+        "model_use": "candidate-training",
+        "contamination_risk": "low",
+        "pii_risk": "none",
+        "attribution_template": "Credit Jiří Lebl, book title and version; include URL, release hash and CC BY-SA 4.0; mark modifications.",
+        "legal_review": "required"
+      },
+      "notes": []
+    },
+    {
+      "id": "discrete-math-open-introduction",
+      "title": "Discrete Mathematics: An Open Introduction",
+      "family": "openmathbooks",
+      "source_type": "open-textbook",
+      "decision": "conditional",
+      "decision_reason": "CC BY-SA 4.0 text and source provide proof-oriented discrete mathematics with extensive exercises and solutions.",
+      "homepage": "https://discrete.openmathbooks.org/dmoi4.html",
+      "license": {
+        "expression": "CC-BY-SA-4.0",
+        "class": "share-alike",
+        "evidence_url": "https://discrete.openmathbooks.org/dmoi3.html",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": true,
+        "share_alike": true,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "logic-foundations",
+          "number-theory",
+          "combinatorics",
+          "graph-theory"
+        ],
+        "modalities": [
+          "exposition",
+          "definitions",
+          "theorem-proof",
+          "exercises",
+          "worked-solutions",
+          "diagrams"
+        ],
+        "capabilities": [
+          "curriculum",
+          "symbolic-reasoning",
+          "proof-generation",
+          "diagram-reasoning"
+        ],
+        "levels": [
+          "school",
+          "undergraduate"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "dedicated"
+      },
+      "acquisition": {
+        "mode": "git",
+        "pin": "release-or-commit",
+        "content_scope": "Book source and embedded materials whose notices match CC BY-SA",
+        "excludes": [
+          "Instructor-only resources and external videos"
+        ]
+      },
+      "governance": {
+        "shard": "share-alike",
+        "model_use": "candidate-training",
+        "contamination_risk": "low",
+        "pii_risk": "none",
+        "attribution_template": "Credit Oscar Levin, title and edition; include source URL, commit and CC BY-SA 4.0; preserve share-alike.",
+        "legal_review": "required"
+      },
+      "notes": []
+    },
+    {
+      "id": "hott-book",
+      "title": "Homotopy Type Theory: Univalent Foundations of Mathematics",
+      "family": "hott-book",
+      "source_type": "open-textbook",
+      "decision": "conditional",
+      "decision_reason": "The book is Creative Commons licensed and source-controlled; confirm the exact license in the pinned snapshot and preserve its share-alike terms.",
+      "homepage": "https://homotopytypetheory.org/book/",
+      "license": {
+        "expression": "CC-BY-SA-3.0",
+        "class": "share-alike",
+        "evidence_url": "https://github.com/HoTT/book/blob/master/LICENSE",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": true,
+        "share_alike": true,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "logic-foundations",
+          "topology",
+          "category-theory",
+          "formal-verification"
+        ],
+        "modalities": [
+          "exposition",
+          "definitions",
+          "theorem-proof",
+          "exercises",
+          "diagrams"
+        ],
+        "capabilities": [
+          "curriculum",
+          "proof-generation",
+          "formalization",
+          "diagram-reasoning"
+        ],
+        "levels": [
+          "graduate",
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "dedicated"
+      },
+      "acquisition": {
+        "mode": "git",
+        "pin": "commit",
+        "content_scope": "Book source and project-authored figures covered by the repository license",
+        "excludes": [
+          "Linked translations unless separately licensed"
+        ]
+      },
+      "governance": {
+        "shard": "share-alike",
+        "model_use": "candidate-training",
+        "contamination_risk": "low",
+        "pii_risk": "none",
+        "attribution_template": "Credit The Univalent Foundations Program; include title, commit/version and CC BY-SA license; preserve share-alike.",
+        "legal_review": "required"
+      },
+      "notes": []
+    },
+    {
+      "id": "stacks-project",
+      "title": "The Stacks Project",
+      "family": "stacks-project",
+      "source_type": "open-reference",
+      "decision": "conditional",
+      "decision_reason": "GFDL 1.2 is a documentation copyleft license with substantial redistribution obligations; use only in a dedicated GFDL retrieval/training experiment after counsel review.",
+      "homepage": "https://stacks.math.columbia.edu/",
+      "license": {
+        "expression": "GFDL-1.2-only",
+        "class": "documentation-copyleft",
+        "evidence_url": "https://github.com/stacks/stacks-project/blob/master/COPYING",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": true,
+        "share_alike": true,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "abstract-algebra",
+          "topology",
+          "algebraic-geometry",
+          "category-theory",
+          "research-mathematics"
+        ],
+        "modalities": [
+          "exposition",
+          "definitions",
+          "theorem-proof",
+          "research-papers"
+        ],
+        "capabilities": [
+          "proof-generation",
+          "research-retrieval",
+          "citation-grounding"
+        ],
+        "levels": [
+          "graduate",
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "dedicated"
+      },
+      "acquisition": {
+        "mode": "git",
+        "pin": "commit",
+        "content_scope": "Stacks Project LaTeX source and tag metadata",
+        "excludes": [
+          "External bibliography full text"
+        ]
+      },
+      "governance": {
+        "shard": "documentation-copyleft",
+        "model_use": "retrieval-only",
+        "contamination_risk": "medium",
+        "pii_risk": "none",
+        "attribution_template": "Preserve GFDL notices, transparent source, history and required license text; cite permanent tags and exact commit.",
+        "legal_review": "required"
+      },
+      "notes": []
+    },
+    {
+      "id": "wikipedia-math-dumps",
+      "title": "Wikipedia mathematics namespace selections",
+      "family": "wikimedia",
+      "source_type": "encyclopedic-dump",
+      "decision": "conditional",
+      "decision_reason": "CC BY-SA/GFDL content is reusable only with revision-level attribution, license-version tracking and template/media exclusions.",
+      "homepage": "https://dumps.wikimedia.org/",
+      "license": {
+        "expression": "CC-BY-SA-4.0 AND GFDL-1.3-or-later",
+        "class": "share-alike",
+        "evidence_url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": true,
+        "share_alike": true,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "arithmetic",
+          "elementary-algebra",
+          "geometry",
+          "trigonometry",
+          "calculus",
+          "linear-algebra",
+          "ordinary-differential-equations",
+          "partial-differential-equations",
+          "probability",
+          "statistics",
+          "real-analysis",
+          "complex-analysis",
+          "functional-analysis",
+          "abstract-algebra",
+          "number-theory",
+          "combinatorics",
+          "graph-theory",
+          "topology",
+          "differential-geometry",
+          "algebraic-geometry",
+          "logic-foundations",
+          "category-theory",
+          "optimization",
+          "numerical-analysis",
+          "dynamical-systems",
+          "mathematical-physics",
+          "formal-verification",
+          "research-mathematics"
+        ],
+        "modalities": [
+          "exposition",
+          "definitions",
+          "theorem-proof",
+          "diagrams",
+          "multilingual",
+          "historical-texts"
+        ],
+        "capabilities": [
+          "curriculum",
+          "research-retrieval",
+          "citation-grounding",
+          "multilingual-reasoning",
+          "diagram-reasoning"
+        ],
+        "levels": [
+          "school",
+          "undergraduate",
+          "graduate",
+          "research"
+        ],
+        "languages": [
+          "multi"
+        ],
+        "role": "omnibus"
+      },
+      "acquisition": {
+        "mode": "snapshot",
+        "pin": "dated-snapshot",
+        "content_scope": "Selected revision text from mathematics pages with page/revision attribution",
+        "excludes": [
+          "Non-free media",
+          "External links",
+          "User pages",
+          "Talk pages",
+          "Templates with incompatible embedded content"
+        ]
+      },
+      "governance": {
+        "shard": "share-alike",
+        "model_use": "retrieval-only",
+        "contamination_risk": "high",
+        "pii_risk": "low",
+        "attribution_template": "Store page title, revision ID, contributors link, source URL and CC BY-SA/GFDL notices for every extracted unit.",
+        "legal_review": "required"
+      },
+      "notes": []
+    },
+    {
+      "id": "wikibooks-math-dumps",
+      "title": "Wikibooks mathematics selections",
+      "family": "wikimedia",
+      "source_type": "open-textbook-dump",
+      "decision": "conditional",
+      "decision_reason": "CC BY-SA/GFDL books can broaden elementary algebra, geometry, calculus and statistics, but revision attribution and media filtering are mandatory.",
+      "homepage": "https://dumps.wikimedia.org/",
+      "license": {
+        "expression": "CC-BY-SA-4.0 AND GFDL-1.3-or-later",
+        "class": "share-alike",
+        "evidence_url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": true,
+        "share_alike": true,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "arithmetic",
+          "elementary-algebra",
+          "geometry",
+          "trigonometry",
+          "calculus",
+          "linear-algebra",
+          "ordinary-differential-equations",
+          "probability",
+          "statistics",
+          "real-analysis",
+          "abstract-algebra",
+          "number-theory",
+          "combinatorics",
+          "graph-theory",
+          "logic-foundations",
+          "numerical-analysis"
+        ],
+        "modalities": [
+          "exposition",
+          "definitions",
+          "exercises",
+          "worked-solutions",
+          "diagrams",
+          "multilingual"
+        ],
+        "capabilities": [
+          "curriculum",
+          "symbolic-reasoning",
+          "multilingual-reasoning",
+          "diagram-reasoning"
+        ],
+        "levels": [
+          "school",
+          "undergraduate",
+          "graduate",
+          "research"
+        ],
+        "languages": [
+          "multi"
+        ],
+        "role": "omnibus"
+      },
+      "acquisition": {
+        "mode": "snapshot",
+        "pin": "dated-snapshot",
+        "content_scope": "Selected book revisions with page-level attribution",
+        "excludes": [
+          "Non-free media",
+          "Talk/user pages",
+          "Unlicensed transclusions"
+        ]
+      },
+      "governance": {
+        "shard": "share-alike",
+        "model_use": "candidate-training",
+        "contamination_risk": "medium",
+        "pii_risk": "low",
+        "attribution_template": "Store book/page title, revision ID, contributor history URL and CC BY-SA/GFDL notices.",
+        "legal_review": "required"
+      },
+      "notes": []
+    },
+    {
+      "id": "wikiversity-math-dumps",
+      "title": "Wikiversity mathematics selections",
+      "family": "wikimedia",
+      "source_type": "learning-resource-dump",
+      "decision": "conditional",
+      "decision_reason": "Useful for activities and multilingual curricula, but quality varies and revision-level CC BY-SA attribution is mandatory.",
+      "homepage": "https://dumps.wikimedia.org/",
+      "license": {
+        "expression": "CC-BY-SA-4.0 AND GFDL-1.3-or-later",
+        "class": "share-alike",
+        "evidence_url": "https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": true,
+        "share_alike": true,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "arithmetic",
+          "elementary-algebra",
+          "geometry",
+          "trigonometry",
+          "calculus",
+          "linear-algebra",
+          "ordinary-differential-equations",
+          "partial-differential-equations",
+          "probability",
+          "statistics",
+          "real-analysis",
+          "complex-analysis",
+          "functional-analysis",
+          "abstract-algebra",
+          "number-theory",
+          "combinatorics",
+          "graph-theory",
+          "topology",
+          "differential-geometry",
+          "algebraic-geometry",
+          "logic-foundations",
+          "category-theory",
+          "optimization",
+          "numerical-analysis",
+          "dynamical-systems",
+          "mathematical-physics",
+          "formal-verification"
+        ],
+        "modalities": [
+          "exposition",
+          "exercises",
+          "worked-solutions",
+          "diagrams",
+          "multilingual"
+        ],
+        "capabilities": [
+          "curriculum",
+          "multilingual-reasoning",
+          "diagram-reasoning"
+        ],
+        "levels": [
+          "school",
+          "undergraduate",
+          "graduate",
+          "research"
+        ],
+        "languages": [
+          "multi"
+        ],
+        "role": "omnibus"
+      },
+      "acquisition": {
+        "mode": "snapshot",
+        "pin": "dated-snapshot",
+        "content_scope": "Curated course and exercise revisions with provenance",
+        "excludes": [
+          "Talk/user pages",
+          "Non-free media",
+          "Unlicensed external embeds"
+        ]
+      },
+      "governance": {
+        "shard": "share-alike",
+        "model_use": "retrieval-only",
+        "contamination_risk": "medium",
+        "pii_risk": "low",
+        "attribution_template": "Store project/page title, revision ID, contributor history URL and CC BY-SA/GFDL notices.",
+        "legal_review": "required"
+      },
+      "notes": []
+    },
+    {
+      "id": "planetmath",
+      "title": "PlanetMath",
+      "family": "open-math-encyclopedias",
+      "source_type": "encyclopedic-corpus",
+      "decision": "conditional",
+      "decision_reason": "CC BY-SA content can supply definitions, examples and theorem links; export and attribution mechanics must be verified before ingestion.",
+      "homepage": "https://planetmath.org/",
+      "license": {
+        "expression": "CC-BY-SA-3.0",
+        "class": "share-alike",
+        "evidence_url": "https://planetmath.org/content",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": true,
+        "share_alike": true,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "arithmetic",
+          "elementary-algebra",
+          "geometry",
+          "trigonometry",
+          "calculus",
+          "linear-algebra",
+          "ordinary-differential-equations",
+          "partial-differential-equations",
+          "probability",
+          "statistics",
+          "real-analysis",
+          "complex-analysis",
+          "functional-analysis",
+          "abstract-algebra",
+          "number-theory",
+          "combinatorics",
+          "graph-theory",
+          "topology",
+          "differential-geometry",
+          "algebraic-geometry",
+          "logic-foundations",
+          "category-theory",
+          "optimization",
+          "numerical-analysis",
+          "dynamical-systems",
+          "mathematical-physics",
+          "formal-verification"
+        ],
+        "modalities": [
+          "definitions",
+          "exposition",
+          "theorem-proof",
+          "counterexamples"
+        ],
+        "capabilities": [
+          "research-retrieval",
+          "citation-grounding",
+          "symbolic-reasoning"
+        ],
+        "levels": [
+          "undergraduate",
+          "graduate",
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "omnibus"
+      },
+      "acquisition": {
+        "mode": "snapshot",
+        "pin": "dated-snapshot",
+        "content_scope": "Article text and structured links with author/page attribution",
+        "excludes": [
+          "External linked content and media without compatible notices"
+        ]
+      },
+      "governance": {
+        "shard": "share-alike",
+        "model_use": "retrieval-only",
+        "contamination_risk": "medium",
+        "pii_risk": "none",
+        "attribution_template": "Store article title, author/contributor identifiers, URL, revision date and CC BY-SA notice.",
+        "legal_review": "required"
+      },
+      "notes": []
+    },
+    {
+      "id": "proofwiki",
+      "title": "ProofWiki",
+      "family": "open-math-encyclopedias",
+      "source_type": "proof-wiki",
+      "decision": "conditional",
+      "decision_reason": "CC BY-SA proof pages are useful for proof retrieval, but require revision attribution, quality filtering and benchmark contamination controls.",
+      "homepage": "https://proofwiki.org/",
+      "license": {
+        "expression": "CC-BY-SA-3.0",
+        "class": "share-alike",
+        "evidence_url": "https://proofwiki.org/wiki/ProofWiki:Copyrights",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": true,
+        "share_alike": true,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "arithmetic",
+          "elementary-algebra",
+          "geometry",
+          "trigonometry",
+          "calculus",
+          "linear-algebra",
+          "ordinary-differential-equations",
+          "partial-differential-equations",
+          "probability",
+          "statistics",
+          "real-analysis",
+          "complex-analysis",
+          "functional-analysis",
+          "abstract-algebra",
+          "number-theory",
+          "combinatorics",
+          "graph-theory",
+          "topology",
+          "differential-geometry",
+          "algebraic-geometry",
+          "logic-foundations",
+          "category-theory",
+          "optimization",
+          "numerical-analysis",
+          "dynamical-systems",
+          "mathematical-physics",
+          "formal-verification"
+        ],
+        "modalities": [
+          "definitions",
+          "theorem-proof",
+          "exercises"
+        ],
+        "capabilities": [
+          "proof-generation",
+          "research-retrieval",
+          "citation-grounding"
+        ],
+        "levels": [
+          "undergraduate",
+          "graduate",
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "omnibus"
+      },
+      "acquisition": {
+        "mode": "snapshot",
+        "pin": "dated-snapshot",
+        "content_scope": "Proof and definition page text with revision histories",
+        "excludes": [
+          "User/talk pages",
+          "External copyrighted quotations",
+          "Non-free media"
+        ]
+      },
+      "governance": {
+        "shard": "share-alike",
+        "model_use": "retrieval-only",
+        "contamination_risk": "high",
+        "pii_risk": "low",
+        "attribution_template": "Store page title, revision ID, contributor history URL and CC BY-SA notice.",
+        "legal_review": "required"
+      },
+      "notes": []
+    },
+    {
+      "id": "math-stackexchange-dump",
+      "title": "Mathematics Stack Exchange data dump",
+      "family": "stackexchange",
+      "source_type": "question-answer-dump",
+      "decision": "conditional",
+      "decision_reason": "CC BY-SA permits reuse with attribution and version-specific share-alike, but user-generated content carries identity, deletion and moderation risks; keep it retrieval-only after aggressive PII minimization and post-level license tracking.",
+      "homepage": "https://archive.org/details/stackexchange",
+      "license": {
+        "expression": "CC-BY-SA-4.0 AND earlier-version-per-post",
+        "class": "share-alike",
+        "evidence_url": "https://stackoverflow.com/help/licensing",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": true,
+        "share_alike": true,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "arithmetic",
+          "elementary-algebra",
+          "geometry",
+          "trigonometry",
+          "calculus",
+          "linear-algebra",
+          "ordinary-differential-equations",
+          "partial-differential-equations",
+          "probability",
+          "statistics",
+          "real-analysis",
+          "complex-analysis",
+          "functional-analysis",
+          "abstract-algebra",
+          "number-theory",
+          "combinatorics",
+          "graph-theory",
+          "topology",
+          "differential-geometry",
+          "algebraic-geometry",
+          "logic-foundations",
+          "category-theory",
+          "optimization",
+          "numerical-analysis",
+          "dynamical-systems",
+          "mathematical-physics",
+          "formal-verification",
+          "research-mathematics"
+        ],
+        "modalities": [
+          "discussions",
+          "exposition",
+          "theorem-proof",
+          "worked-solutions",
+          "counterexamples"
+        ],
+        "capabilities": [
+          "symbolic-reasoning",
+          "proof-generation",
+          "counterexample-search",
+          "research-retrieval"
+        ],
+        "levels": [
+          "school",
+          "undergraduate",
+          "graduate",
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "omnibus"
+      },
+      "acquisition": {
+        "mode": "snapshot",
+        "pin": "dated-snapshot",
+        "content_scope": "Public posts with post ID, author attribution and applicable license version",
+        "excludes": [
+          "Deleted or private posts, profiles, email hashes, avatars and unnecessary user identifiers",
+          "Posts whose applicable historical CC BY-SA version cannot be reconstructed",
+          "Benchmark or competition items selected for evaluation"
+        ]
+      },
+      "governance": {
+        "shard": "share-alike",
+        "model_use": "retrieval-only",
+        "contamination_risk": "high",
+        "pii_risk": "high",
+        "attribution_template": "Store post ID, title, URL, author display name, timestamp, revision and applicable CC BY-SA version.",
+        "legal_review": "required"
+      },
+      "notes": []
+    },
+    {
+      "id": "project-gutenberg-mathematics",
+      "title": "Project Gutenberg public-domain mathematics selections",
+      "family": "public-domain-books",
+      "source_type": "historical-text-corpus",
+      "decision": "conditional",
+      "decision_reason": "Project Gutenberg status is jurisdiction-specific and item-specific; only ingest editions whose rights are rechecked for the deployment jurisdiction.",
+      "homepage": "https://www.gutenberg.org/ebooks/bookshelf/102",
+      "license": {
+        "expression": "LicenseRef-Public-Domain-Per-Item",
+        "class": "per-item-public-domain",
+        "evidence_url": "https://www.gutenberg.org/policy/permission.html",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": false,
+        "share_alike": false,
+        "source_disclosure": false,
+        "per_item": true,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "arithmetic",
+          "elementary-algebra",
+          "geometry",
+          "trigonometry",
+          "calculus",
+          "linear-algebra",
+          "ordinary-differential-equations",
+          "probability",
+          "statistics",
+          "real-analysis",
+          "complex-analysis",
+          "abstract-algebra",
+          "number-theory",
+          "topology",
+          "mathematical-physics"
+        ],
+        "modalities": [
+          "exposition",
+          "definitions",
+          "theorem-proof",
+          "exercises",
+          "worked-solutions",
+          "diagrams",
+          "historical-texts"
+        ],
+        "capabilities": [
+          "curriculum",
+          "symbolic-reasoning",
+          "proof-generation",
+          "diagram-reasoning"
+        ],
+        "levels": [
+          "school",
+          "undergraduate",
+          "graduate",
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "omnibus"
+      },
+      "acquisition": {
+        "mode": "manual-per-item",
+        "pin": "item-license-and-hash",
+        "content_scope": "Project Gutenberg text for individually cleared editions",
+        "excludes": [
+          "Project Gutenberg trademarks/license boilerplate from training text",
+          "Items not public domain in target jurisdictions"
+        ]
+      },
+      "governance": {
+        "shard": "public-domain",
+        "model_use": "candidate-training",
+        "contamination_risk": "low",
+        "pii_risk": "none",
+        "attribution_template": "Record ebook number, title, authors/editors, edition, source URL, access date, item rights determination and SHA-256.",
+        "legal_review": "required"
+      },
+      "notes": []
+    },
+    {
+      "id": "arxiv-license-resolved-subset",
+      "title": "arXiv license-resolved mathematics subset",
+      "family": "research-repositories",
+      "source_type": "research-paper-corpus",
+      "decision": "conditional",
+      "decision_reason": "arXiv hosts papers under author-selected licenses; only CC0/CC BY/CC BY-SA or otherwise counsel-approved items may enter, each with its license and version pinned.",
+      "homepage": "https://arxiv.org/",
+      "license": {
+        "expression": "LicenseRef-Per-Item",
+        "class": "per-item",
+        "evidence_url": "https://info.arxiv.org/help/license/index.html",
+        "reviewed_on": "2026-06-25",
+        "redistributable": null,
+        "derivatives": null,
+        "commercial_use": null,
+        "attribution": true,
+        "share_alike": false,
+        "source_disclosure": false,
+        "per_item": true,
+        "ai_terms": "not-reviewed"
+      },
+      "coverage": {
+        "areas": [
+          "research-mathematics",
+          "real-analysis",
+          "complex-analysis",
+          "functional-analysis",
+          "abstract-algebra",
+          "number-theory",
+          "combinatorics",
+          "graph-theory",
+          "topology",
+          "differential-geometry",
+          "algebraic-geometry",
+          "logic-foundations",
+          "category-theory",
+          "optimization",
+          "numerical-analysis",
+          "dynamical-systems",
+          "mathematical-physics"
+        ],
+        "modalities": [
+          "research-papers",
+          "theorem-proof",
+          "definitions",
+          "diagrams"
+        ],
+        "capabilities": [
+          "research-retrieval",
+          "citation-grounding",
+          "proof-generation"
+        ],
+        "levels": [
+          "graduate",
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "omnibus"
+      },
+      "acquisition": {
+        "mode": "manual-per-item",
+        "pin": "item-license-and-version",
+        "content_scope": "Only individual arXiv versions with machine-recorded compatible license identifiers",
+        "excludes": [
+          "Default arXiv non-exclusive distribution license unless separately approved",
+          "Withdrawn versions",
+          "Third-party appendices or figures"
+        ]
+      },
+      "governance": {
+        "shard": "per-item",
+        "model_use": "retrieval-only",
+        "contamination_risk": "high",
+        "pii_risk": "none",
+        "attribution_template": "Store arXiv ID and version, title, authors, submission date, DOI, item license URL and source hash.",
+        "legal_review": "required"
+      },
+      "notes": []
+    },
+    {
+      "id": "oeis",
+      "title": "The On-Line Encyclopedia of Integer Sequences",
+      "family": "structured-math-databases",
+      "source_type": "sequence-database",
+      "decision": "conditional",
+      "decision_reason": "OEIS data is share-alike licensed and attribution-sensitive; ingest structured fields only from a pinned export and retain sequence-level provenance.",
+      "homepage": "https://oeis.org/",
+      "license": {
+        "expression": "CC-BY-SA-4.0",
+        "class": "share-alike",
+        "evidence_url": "https://oeis.org/wiki/The_OEIS_End-User_License_Agreement",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": true,
+        "share_alike": true,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "arithmetic",
+          "number-theory",
+          "combinatorics",
+          "graph-theory",
+          "dynamical-systems"
+        ],
+        "modalities": [
+          "definitions",
+          "datasets",
+          "code",
+          "bibliographic-metadata"
+        ],
+        "capabilities": [
+          "symbolic-reasoning",
+          "counterexample-search",
+          "research-retrieval",
+          "citation-grounding"
+        ],
+        "levels": [
+          "school",
+          "undergraduate",
+          "graduate",
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "dedicated"
+      },
+      "acquisition": {
+        "mode": "snapshot",
+        "pin": "dated-snapshot",
+        "content_scope": "Structured sequence records and references from the official export",
+        "excludes": [
+          "Linked full text and user comments outside exported records"
+        ]
+      },
+      "governance": {
+        "shard": "share-alike",
+        "model_use": "candidate-training",
+        "contamination_risk": "medium",
+        "pii_risk": "none",
+        "attribution_template": "Retain A-number, entry contributors, modification date, OEIS URL and CC BY-SA 4.0 notice.",
+        "legal_review": "required"
+      },
+      "notes": []
+    },
+    {
+      "id": "lmfdb",
+      "title": "LMFDB",
+      "family": "structured-math-databases",
+      "source_type": "research-database",
+      "decision": "conditional",
+      "decision_reason": "LMFDB data and site materials require project-license verification at snapshot time; use a dedicated attribution/share-alike shard and preserve object identifiers.",
+      "homepage": "https://www.lmfdb.org/",
+      "license": {
+        "expression": "CC-BY-SA-4.0",
+        "class": "share-alike",
+        "evidence_url": "https://www.lmfdb.org/acknowledgment",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": true,
+        "share_alike": true,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "abstract-algebra",
+          "number-theory",
+          "algebraic-geometry",
+          "complex-analysis",
+          "research-mathematics"
+        ],
+        "modalities": [
+          "definitions",
+          "datasets",
+          "bibliographic-metadata",
+          "code"
+        ],
+        "capabilities": [
+          "research-retrieval",
+          "citation-grounding",
+          "counterexample-search",
+          "tool-use"
+        ],
+        "levels": [
+          "graduate",
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "dedicated"
+      },
+      "acquisition": {
+        "mode": "snapshot",
+        "pin": "dated-snapshot",
+        "content_scope": "Official database exports and schema documentation",
+        "excludes": [
+          "Linked papers and third-party images"
+        ]
+      },
+      "governance": {
+        "shard": "share-alike",
+        "model_use": "retrieval-only",
+        "contamination_risk": "medium",
+        "pii_risk": "none",
+        "attribution_template": "Retain database object identifiers, snapshot date, project citation and applicable CC BY-SA notice.",
+        "legal_review": "required"
+      },
+      "notes": []
+    },
+    {
+      "id": "zbmath-open",
+      "title": "zbMATH Open metadata and reviews",
+      "family": "open-research-metadata",
+      "source_type": "bibliographic-metadata",
+      "decision": "conditional",
+      "decision_reason": "Open metadata/review reuse is license- and field-sensitive; snapshot only fields explicitly released and preserve review authorship.",
+      "homepage": "https://zbmath.org/",
+      "license": {
+        "expression": "CC-BY-SA-4.0",
+        "class": "share-alike",
+        "evidence_url": "https://zbmath.org/about/",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": true,
+        "share_alike": true,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "research-mathematics"
+        ],
+        "modalities": [
+          "bibliographic-metadata",
+          "exposition"
+        ],
+        "capabilities": [
+          "research-retrieval",
+          "citation-grounding"
+        ],
+        "levels": [
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "metadata"
+      },
+      "acquisition": {
+        "mode": "api",
+        "pin": "dated-snapshot",
+        "content_scope": "Fields explicitly covered by the open-data terms",
+        "excludes": [
+          "Publisher abstracts or full text not covered by zbMATH terms"
+        ]
+      },
+      "governance": {
+        "shard": "share-alike",
+        "model_use": "metadata-only",
+        "contamination_risk": "medium",
+        "pii_risk": "none",
+        "attribution_template": "Retain review author, record identifier, source URL, snapshot date and applicable license notice.",
+        "legal_review": "required"
+      },
+      "notes": []
+    },
+    {
+      "id": "nist-dlmf",
+      "title": "NIST Digital Library of Mathematical Functions",
+      "family": "nist-mathematics",
+      "source_type": "reference-work",
+      "decision": "conditional",
+      "decision_reason": "NIST employee works receive broad reuse rights, but DLMF contains third-party contributions and figures; ingest only sections whose notices and authorship are cleared.",
+      "homepage": "https://dlmf.nist.gov/",
+      "license": {
+        "expression": "LicenseRef-NIST-Works",
+        "class": "government-work-with-notice",
+        "evidence_url": "https://www.nist.gov/open/copyright-fair-use-and-licensing-statements-srd-data-software-and-technical-series-publications",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": true,
+        "share_alike": false,
+        "source_disclosure": false,
+        "per_item": true,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "calculus",
+          "ordinary-differential-equations",
+          "partial-differential-equations",
+          "probability",
+          "statistics",
+          "real-analysis",
+          "complex-analysis",
+          "functional-analysis",
+          "numerical-analysis",
+          "mathematical-physics"
+        ],
+        "modalities": [
+          "exposition",
+          "definitions",
+          "theorem-proof",
+          "diagrams",
+          "code",
+          "bibliographic-metadata"
+        ],
+        "capabilities": [
+          "symbolic-reasoning",
+          "numerical-reasoning",
+          "research-retrieval",
+          "citation-grounding"
+        ],
+        "levels": [
+          "undergraduate",
+          "graduate",
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "dedicated"
+      },
+      "acquisition": {
+        "mode": "manual-per-item",
+        "pin": "section-version-and-hash",
+        "content_scope": "NIST-authored sections and machine-readable formulas with section-level rights records",
+        "excludes": [
+          "Third-party authored material, images or tables without separate clearance",
+          "Standard Reference Data products"
+        ]
+      },
+      "governance": {
+        "shard": "per-item",
+        "model_use": "candidate-training",
+        "contamination_risk": "low",
+        "pii_risk": "none",
+        "attribution_template": "Acknowledge NIST, cite DLMF section and version/date, record authorship and rights basis, and mark modifications.",
+        "legal_review": "required"
+      },
+      "notes": []
+    },
+    {
+      "id": "nist-sematedch-handbook",
+      "title": "NIST/SEMATECH e-Handbook of Statistical Methods",
+      "family": "nist-mathematics",
+      "source_type": "open-reference",
+      "decision": "conditional",
+      "decision_reason": "High-value statistics exposition and examples; section-level NIST/third-party authorship and image rights must be resolved before ingestion.",
+      "homepage": "https://www.itl.nist.gov/div898/handbook/",
+      "license": {
+        "expression": "LicenseRef-NIST-Works",
+        "class": "government-work-with-notice",
+        "evidence_url": "https://www.nist.gov/open/copyright-fair-use-and-licensing-statements-srd-data-software-and-technical-series-publications",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": true,
+        "share_alike": false,
+        "source_disclosure": false,
+        "per_item": true,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "probability",
+          "statistics",
+          "numerical-analysis",
+          "optimization"
+        ],
+        "modalities": [
+          "exposition",
+          "definitions",
+          "worked-solutions",
+          "datasets",
+          "diagrams",
+          "numerical-experiments"
+        ],
+        "capabilities": [
+          "curriculum",
+          "data-analysis",
+          "numerical-reasoning",
+          "diagram-reasoning"
+        ],
+        "levels": [
+          "undergraduate",
+          "graduate",
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "dedicated"
+      },
+      "acquisition": {
+        "mode": "manual-per-item",
+        "pin": "section-version-and-hash",
+        "content_scope": "Cleared NIST-authored handbook sections and examples",
+        "excludes": [
+          "Third-party contributions, images and linked datasets without compatible terms"
+        ]
+      },
+      "governance": {
+        "shard": "per-item",
+        "model_use": "candidate-training",
+        "contamination_risk": "low",
+        "pii_risk": "none",
+        "attribution_template": "Acknowledge NIST/SEMATECH, cite section URL and access/version date, record rights basis and mark changes.",
+        "legal_review": "required"
+      },
+      "notes": []
+    },
+    {
+      "id": "sagemath",
+      "title": "SageMath",
+      "family": "computer-algebra-systems",
+      "source_type": "computer-algebra-system",
+      "decision": "conditional",
+      "decision_reason": "GPL code is reusable but must remain isolated with source and copyleft obligations; package-level licenses must also be preserved.",
+      "homepage": "https://github.com/sagemath/sage",
+      "license": {
+        "expression": "GPL-3.0-or-later",
+        "class": "code-copyleft",
+        "evidence_url": "https://github.com/sagemath/sage/blob/develop/COPYING.txt",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": true,
+        "share_alike": false,
+        "source_disclosure": true,
+        "per_item": false,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "arithmetic",
+          "elementary-algebra",
+          "geometry",
+          "calculus",
+          "linear-algebra",
+          "ordinary-differential-equations",
+          "probability",
+          "statistics",
+          "real-analysis",
+          "complex-analysis",
+          "abstract-algebra",
+          "number-theory",
+          "combinatorics",
+          "graph-theory",
+          "topology",
+          "optimization",
+          "numerical-analysis",
+          "dynamical-systems"
+        ],
+        "modalities": [
+          "code",
+          "symbolic-traces",
+          "numerical-experiments"
+        ],
+        "capabilities": [
+          "symbolic-reasoning",
+          "tool-use",
+          "numerical-reasoning",
+          "counterexample-search"
+        ],
+        "levels": [
+          "school",
+          "undergraduate",
+          "graduate",
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "tool"
+      },
+      "acquisition": {
+        "mode": "git",
+        "pin": "release-or-commit",
+        "content_scope": "SageMath-authored source plus package-level license inventory",
+        "excludes": [
+          "Bundled packages whose licenses are not admitted by the target shard"
+        ]
+      },
+      "governance": {
+        "shard": "copyleft-code",
+        "model_use": "candidate-training",
+        "contamination_risk": "low",
+        "pii_risk": "none",
+        "attribution_template": "Preserve GPL source offer, copyright notices, modification history and every bundled-package license; record release/commit.",
+        "legal_review": "required"
+      },
+      "notes": []
+    },
+    {
+      "id": "gap-system",
+      "title": "GAP",
+      "family": "computer-algebra-systems",
+      "source_type": "computer-algebra-system",
+      "decision": "conditional",
+      "decision_reason": "GPL code is valuable for computational algebra but requires copyleft isolation and package-by-package license review.",
+      "homepage": "https://www.gap-system.org/",
+      "license": {
+        "expression": "GPL-2.0-or-later",
+        "class": "code-copyleft",
+        "evidence_url": "https://github.com/gap-system/gap/blob/master/LICENSE",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": true,
+        "share_alike": false,
+        "source_disclosure": true,
+        "per_item": false,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "abstract-algebra",
+          "number-theory",
+          "combinatorics",
+          "graph-theory"
+        ],
+        "modalities": [
+          "code",
+          "symbolic-traces",
+          "datasets"
+        ],
+        "capabilities": [
+          "symbolic-reasoning",
+          "tool-use",
+          "counterexample-search"
+        ],
+        "levels": [
+          "undergraduate",
+          "graduate",
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "tool"
+      },
+      "acquisition": {
+        "mode": "git",
+        "pin": "release-or-commit",
+        "content_scope": "GAP core and individually cleared packages",
+        "excludes": [
+          "Packages with incompatible or missing licenses"
+        ]
+      },
+      "governance": {
+        "shard": "copyleft-code",
+        "model_use": "candidate-training",
+        "contamination_risk": "low",
+        "pii_risk": "none",
+        "attribution_template": "Preserve GPL terms, source availability and package-specific notices; record release/commit.",
+        "legal_review": "required"
+      },
+      "notes": []
+    },
+    {
+      "id": "pari-gp",
+      "title": "PARI/GP",
+      "family": "computer-algebra-systems",
+      "source_type": "computer-algebra-system",
+      "decision": "conditional",
+      "decision_reason": "GPL code supports number theory and exact computation but belongs in the isolated copyleft-code shard.",
+      "homepage": "https://pari.math.u-bordeaux.fr/",
+      "license": {
+        "expression": "GPL-2.0-or-later",
+        "class": "code-copyleft",
+        "evidence_url": "https://pari.math.u-bordeaux.fr/cgi-bin/gitweb.cgi?p=pari.git;a=blob;f=COPYING",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": true,
+        "share_alike": false,
+        "source_disclosure": true,
+        "per_item": false,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "arithmetic",
+          "abstract-algebra",
+          "number-theory",
+          "linear-algebra",
+          "complex-analysis"
+        ],
+        "modalities": [
+          "code",
+          "symbolic-traces",
+          "numerical-experiments"
+        ],
+        "capabilities": [
+          "symbolic-reasoning",
+          "tool-use",
+          "numerical-reasoning",
+          "counterexample-search"
+        ],
+        "levels": [
+          "undergraduate",
+          "graduate",
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "tool"
+      },
+      "acquisition": {
+        "mode": "git",
+        "pin": "release-or-commit",
+        "content_scope": "Repository-authored content",
+        "excludes": []
+      },
+      "governance": {
+        "shard": "copyleft-code",
+        "model_use": "candidate-training",
+        "contamination_risk": "low",
+        "pii_risk": "none",
+        "attribution_template": "Preserve GPL terms, source availability and copyright notices; record release/commit.",
+        "legal_review": "required"
+      },
+      "notes": []
+    },
+    {
+      "id": "hol-light",
+      "title": "HOL Light",
+      "family": "hol-ecosystem",
+      "source_type": "formal-library",
+      "decision": "conditional",
+      "decision_reason": "BSD-style project source is broadly reusable, but examples and imported benchmark translations need file-level provenance.",
+      "homepage": "https://github.com/jrh13/hol-light",
+      "license": {
+        "expression": "BSD-2-Clause",
+        "class": "permissive",
+        "evidence_url": "https://github.com/jrh13/hol-light/blob/master/LICENSE",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": true,
+        "share_alike": false,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "geometry",
+          "calculus",
+          "real-analysis",
+          "complex-analysis",
+          "number-theory",
+          "topology",
+          "logic-foundations",
+          "formal-verification"
+        ],
+        "modalities": [
+          "definitions",
+          "theorem-proof",
+          "formal-proofs",
+          "code"
+        ],
+        "capabilities": [
+          "proof-generation",
+          "proof-verification",
+          "formalization"
+        ],
+        "levels": [
+          "graduate",
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "omnibus"
+      },
+      "acquisition": {
+        "mode": "git",
+        "pin": "commit",
+        "content_scope": "HOL Light repository files whose headers agree with the project license",
+        "excludes": [
+          "Imported third-party examples without matching headers"
+        ]
+      },
+      "governance": {
+        "shard": "permissive",
+        "model_use": "candidate-training",
+        "contamination_risk": "low",
+        "pii_risk": "none",
+        "attribution_template": "Retain BSD notices and file authorship; record exact commit.",
+        "legal_review": "required"
+      },
+      "notes": []
+    },
+    {
+      "id": "coq-platform",
+      "title": "Rocq/Coq and standard library",
+      "family": "coq-ecosystem",
+      "source_type": "proof-assistant",
+      "decision": "conditional",
+      "decision_reason": "LGPL/coproduct licensing is reusable for code and formal corpora, but standard-library and plugin licenses require component-level inventory.",
+      "homepage": "https://github.com/rocq-prover/rocq",
+      "license": {
+        "expression": "LGPL-2.1-only WITH OCaml-LGPL-linking-exception",
+        "class": "code-copyleft",
+        "evidence_url": "https://github.com/rocq-prover/rocq/blob/master/LICENSE",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": true,
+        "share_alike": false,
+        "source_disclosure": true,
+        "per_item": false,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "logic-foundations",
+          "formal-verification",
+          "arithmetic",
+          "abstract-algebra",
+          "real-analysis"
+        ],
+        "modalities": [
+          "definitions",
+          "theorem-proof",
+          "formal-proofs",
+          "code"
+        ],
+        "capabilities": [
+          "proof-generation",
+          "proof-verification",
+          "formalization",
+          "tool-use"
+        ],
+        "levels": [
+          "graduate",
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "omnibus"
+      },
+      "acquisition": {
+        "mode": "git",
+        "pin": "release-or-commit",
+        "content_scope": "Core and standard-library files with compatible headers",
+        "excludes": [
+          "Third-party plugins and external developments"
+        ]
+      },
+      "governance": {
+        "shard": "copyleft-code",
+        "model_use": "candidate-training",
+        "contamination_risk": "low",
+        "pii_risk": "none",
+        "attribution_template": "Preserve LGPL, exception text, copyright notices and component provenance; record release/commit.",
+        "legal_review": "required"
+      },
+      "notes": []
+    },
+    {
+      "id": "isabelle-distribution",
+      "title": "Isabelle distribution",
+      "family": "isabelle-ecosystem",
+      "source_type": "proof-assistant",
+      "decision": "conditional",
+      "decision_reason": "The distribution uses permissive component licenses, but the exact release copyright inventory must be pinned and audited.",
+      "homepage": "https://isabelle.in.tum.de/",
+      "license": {
+        "expression": "BSD-3-Clause AND component-licenses",
+        "class": "mixed-permissive",
+        "evidence_url": "https://isabelle.in.tum.de/repos/isabelle/file/tip/COPYRIGHT",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": true,
+        "share_alike": false,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "logic-foundations",
+          "formal-verification",
+          "arithmetic",
+          "abstract-algebra",
+          "real-analysis"
+        ],
+        "modalities": [
+          "definitions",
+          "theorem-proof",
+          "formal-proofs",
+          "code"
+        ],
+        "capabilities": [
+          "proof-generation",
+          "proof-verification",
+          "formalization",
+          "tool-use"
+        ],
+        "levels": [
+          "graduate",
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "omnibus"
+      },
+      "acquisition": {
+        "mode": "snapshot",
+        "pin": "release",
+        "content_scope": "Pinned Isabelle release and its documented component inventory",
+        "excludes": [
+          "External sessions not distributed with the release"
+        ]
+      },
+      "governance": {
+        "shard": "permissive",
+        "model_use": "candidate-training",
+        "contamination_risk": "low",
+        "pii_risk": "none",
+        "attribution_template": "Preserve the release COPYRIGHT inventory and all component notices; record release identifier and hash.",
+        "legal_review": "required"
+      },
+      "notes": []
+    },
+    {
+      "id": "archive-of-formal-proofs",
+      "title": "Archive of Formal Proofs",
+      "family": "isabelle-ecosystem",
+      "source_type": "formal-library",
+      "decision": "conditional",
+      "decision_reason": "AFP entries carry entry-level licenses and authorship; only a generated allowlist of compatible entries may be ingested.",
+      "homepage": "https://www.isa-afp.org/",
+      "license": {
+        "expression": "LicenseRef-Per-Entry",
+        "class": "per-item",
+        "evidence_url": "https://www.isa-afp.org/help/",
+        "reviewed_on": "2026-06-25",
+        "redistributable": null,
+        "derivatives": null,
+        "commercial_use": null,
+        "attribution": true,
+        "share_alike": false,
+        "source_disclosure": false,
+        "per_item": true,
+        "ai_terms": "not-reviewed"
+      },
+      "coverage": {
+        "areas": [
+          "arithmetic",
+          "geometry",
+          "calculus",
+          "linear-algebra",
+          "probability",
+          "statistics",
+          "real-analysis",
+          "complex-analysis",
+          "abstract-algebra",
+          "number-theory",
+          "combinatorics",
+          "graph-theory",
+          "topology",
+          "logic-foundations",
+          "formal-verification"
+        ],
+        "modalities": [
+          "definitions",
+          "theorem-proof",
+          "formal-proofs",
+          "code"
+        ],
+        "capabilities": [
+          "proof-generation",
+          "proof-verification",
+          "formalization"
+        ],
+        "levels": [
+          "graduate",
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "omnibus"
+      },
+      "acquisition": {
+        "mode": "manual-per-item",
+        "pin": "entry-release-and-hash",
+        "content_scope": "Entries whose license metadata passes the allowlist",
+        "excludes": [
+          "Entries with missing, incompatible or ambiguous license metadata"
+        ]
+      },
+      "governance": {
+        "shard": "per-item",
+        "model_use": "candidate-training",
+        "contamination_risk": "low",
+        "pii_risk": "none",
+        "attribution_template": "Store AFP entry, version, authors, citation, license, dependencies and source hash.",
+        "legal_review": "required"
+      },
+      "notes": []
+    },
+    {
+      "id": "mizar-library",
+      "title": "Mizar Mathematical Library",
+      "family": "mizar-ecosystem",
+      "source_type": "formal-library",
+      "decision": "conditional",
+      "decision_reason": "Formal articles are highly valuable but the exact GPL/library terms and contributor notices must be verified against the selected release.",
+      "homepage": "https://mizar.uwb.edu.pl/",
+      "license": {
+        "expression": "GPL-3.0-or-later",
+        "class": "code-copyleft",
+        "evidence_url": "https://github.com/mizar/mizar-items/blob/master/LICENSE",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": true,
+        "share_alike": false,
+        "source_disclosure": true,
+        "per_item": false,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "arithmetic",
+          "geometry",
+          "calculus",
+          "linear-algebra",
+          "real-analysis",
+          "abstract-algebra",
+          "number-theory",
+          "combinatorics",
+          "graph-theory",
+          "topology",
+          "logic-foundations",
+          "formal-verification"
+        ],
+        "modalities": [
+          "definitions",
+          "theorem-proof",
+          "formal-proofs"
+        ],
+        "capabilities": [
+          "proof-generation",
+          "proof-verification",
+          "formalization"
+        ],
+        "levels": [
+          "graduate",
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "omnibus"
+      },
+      "acquisition": {
+        "mode": "git",
+        "pin": "release-or-commit",
+        "content_scope": "Mizar items whose repository and article notices match the admitted license",
+        "excludes": [
+          "External articles or tools under different terms"
+        ]
+      },
+      "governance": {
+        "shard": "copyleft-code",
+        "model_use": "candidate-training",
+        "contamination_risk": "low",
+        "pii_risk": "none",
+        "attribution_template": "Preserve GPL terms, article authorship and release/commit provenance.",
+        "legal_review": "required"
+      },
+      "notes": []
+    },
+    {
+      "id": "geocoq",
+      "title": "GeoCoq",
+      "family": "coq-ecosystem",
+      "source_type": "formal-geometry-library",
+      "decision": "conditional",
+      "decision_reason": "A formal Euclidean-geometry corpus with copyleft code obligations; verify repository headers and isolate with Coq-family licensing.",
+      "homepage": "https://github.com/GeoCoq/GeoCoq",
+      "license": {
+        "expression": "LGPL-3.0-or-later",
+        "class": "code-copyleft",
+        "evidence_url": "https://github.com/GeoCoq/GeoCoq/blob/master/LICENSE",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": true,
+        "share_alike": false,
+        "source_disclosure": true,
+        "per_item": false,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "geometry",
+          "logic-foundations",
+          "formal-verification"
+        ],
+        "modalities": [
+          "definitions",
+          "theorem-proof",
+          "formal-proofs",
+          "code",
+          "diagrams"
+        ],
+        "capabilities": [
+          "proof-generation",
+          "proof-verification",
+          "formalization",
+          "diagram-reasoning"
+        ],
+        "levels": [
+          "undergraduate",
+          "graduate",
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "dedicated"
+      },
+      "acquisition": {
+        "mode": "git",
+        "pin": "commit",
+        "content_scope": "GeoCoq-authored formal source with matching headers",
+        "excludes": [
+          "Generated or imported files with separate terms"
+        ]
+      },
+      "governance": {
+        "shard": "copyleft-code",
+        "model_use": "candidate-training",
+        "contamination_risk": "low",
+        "pii_risk": "none",
+        "attribution_template": "Preserve LGPL terms, authorship and exact commit; retain dependency notices.",
+        "legal_review": "required"
+      },
+      "notes": []
+    },
+    {
+      "id": "unimath",
+      "title": "UniMath",
+      "family": "coq-ecosystem",
+      "source_type": "formal-library",
+      "decision": "conditional",
+      "decision_reason": "Formal category-theory and foundations corpus; verify the pinned repository license and dependency notices before use.",
+      "homepage": "https://github.com/UniMath/UniMath",
+      "license": {
+        "expression": "BSD-2-Clause",
+        "class": "permissive",
+        "evidence_url": "https://github.com/UniMath/UniMath/blob/master/LICENSE",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": true,
+        "share_alike": false,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "logic-foundations",
+          "category-theory",
+          "topology",
+          "abstract-algebra",
+          "formal-verification"
+        ],
+        "modalities": [
+          "definitions",
+          "theorem-proof",
+          "formal-proofs",
+          "code"
+        ],
+        "capabilities": [
+          "proof-generation",
+          "proof-verification",
+          "formalization"
+        ],
+        "levels": [
+          "graduate",
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "omnibus"
+      },
+      "acquisition": {
+        "mode": "git",
+        "pin": "commit",
+        "content_scope": "UniMath-authored formal source",
+        "excludes": [
+          "External dependencies and generated artifacts with separate terms"
+        ]
+      },
+      "governance": {
+        "shard": "permissive",
+        "model_use": "candidate-training",
+        "contamination_risk": "low",
+        "pii_risk": "none",
+        "attribution_template": "Retain BSD notice, contributor provenance and exact commit.",
+        "legal_review": "required"
+      },
+      "notes": []
+    },
+    {
+      "id": "lean-dojo-traces",
+      "title": "LeanDojo extracted proof traces",
+      "family": "lean-ecosystem",
+      "source_type": "derived-formal-dataset",
+      "decision": "conditional",
+      "decision_reason": "The extraction tooling is MIT, but every trace inherits the source repository license; generate only from an allowlisted, pinned dependency graph.",
+      "homepage": "https://github.com/lean-dojo/LeanDojo",
+      "license": {
+        "expression": "LicenseRef-Upstream-Per-Repository",
+        "class": "per-item",
+        "evidence_url": "https://github.com/lean-dojo/LeanDojo",
+        "reviewed_on": "2026-06-25",
+        "redistributable": null,
+        "derivatives": null,
+        "commercial_use": null,
+        "attribution": true,
+        "share_alike": false,
+        "source_disclosure": false,
+        "per_item": true,
+        "ai_terms": "not-reviewed"
+      },
+      "coverage": {
+        "areas": [
+          "formal-verification",
+          "logic-foundations",
+          "research-mathematics"
+        ],
+        "modalities": [
+          "formal-proofs",
+          "symbolic-traces",
+          "datasets"
+        ],
+        "capabilities": [
+          "proof-generation",
+          "proof-verification",
+          "formalization",
+          "evaluation"
+        ],
+        "levels": [
+          "graduate",
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "tool"
+      },
+      "acquisition": {
+        "mode": "generated",
+        "pin": "source-commit-closure",
+        "content_scope": "Traces from allowlisted source repositories with transitive license manifests",
+        "excludes": [
+          "Repositories lacking compatible licenses",
+          "Canonical benchmark splits reserved for evaluation"
+        ]
+      },
+      "governance": {
+        "shard": "per-item",
+        "model_use": "candidate-training",
+        "contamination_risk": "high",
+        "pii_risk": "none",
+        "attribution_template": "For every trace, retain source repository, file, declaration, commit, license and extraction-tool version.",
+        "legal_review": "required"
+      },
+      "notes": []
+    },
+    {
+      "id": "fipy",
+      "title": "FiPy",
+      "family": "nist-mathematics",
+      "source_type": "pde-solver",
+      "decision": "conditional",
+      "decision_reason": "NIST-developed PDE solver code has broad reuse terms, but dependencies and foreign/third-party rights require notice preservation.",
+      "homepage": "https://www.ctcms.nist.gov/fipy/",
+      "license": {
+        "expression": "LicenseRef-NIST-Software",
+        "class": "attribution",
+        "evidence_url": "https://www.nist.gov/open/copyright-fair-use-and-licensing-statements-srd-data-software-and-technical-series-publications",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": true,
+        "share_alike": false,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "partial-differential-equations",
+          "numerical-analysis",
+          "dynamical-systems",
+          "mathematical-physics"
+        ],
+        "modalities": [
+          "code",
+          "numerical-experiments",
+          "worked-solutions"
+        ],
+        "capabilities": [
+          "tool-use",
+          "numerical-reasoning",
+          "counterexample-search"
+        ],
+        "levels": [
+          "undergraduate",
+          "graduate",
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "tool"
+      },
+      "acquisition": {
+        "mode": "git",
+        "pin": "release-or-commit",
+        "content_scope": "FiPy-authored source and examples",
+        "excludes": [
+          "Third-party dependencies and datasets under separate terms"
+        ]
+      },
+      "governance": {
+        "shard": "attribution",
+        "model_use": "candidate-training",
+        "contamination_risk": "low",
+        "pii_risk": "none",
+        "attribution_template": "Acknowledge NIST and FiPy, retain the full NIST notice, dependency licenses, version and commit.",
+        "legal_review": "required"
+      },
+      "notes": []
+    },
+    {
+      "id": "cgal",
+      "title": "CGAL",
+      "family": "computational-geometry",
+      "source_type": "geometry-library",
+      "decision": "conditional",
+      "decision_reason": "Computational-geometry packages are GPL/LGPL depending on component; build a package-level allowlist and retain copyleft obligations.",
+      "homepage": "https://www.cgal.org/",
+      "license": {
+        "expression": "GPL-3.0-or-later AND LGPL-3.0-or-later",
+        "class": "mixed-copyleft",
+        "evidence_url": "https://www.cgal.org/license.html",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": true,
+        "share_alike": false,
+        "source_disclosure": true,
+        "per_item": false,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "geometry",
+          "topology",
+          "differential-geometry",
+          "numerical-analysis"
+        ],
+        "modalities": [
+          "code",
+          "diagrams",
+          "numerical-experiments"
+        ],
+        "capabilities": [
+          "tool-use",
+          "diagram-reasoning",
+          "numerical-reasoning",
+          "counterexample-search"
+        ],
+        "levels": [
+          "undergraduate",
+          "graduate",
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "tool"
+      },
+      "acquisition": {
+        "mode": "git",
+        "pin": "release-or-commit",
+        "content_scope": "Individually inventoried CGAL packages and examples",
+        "excludes": [
+          "Commercial-only components",
+          "Packages whose license is not admitted"
+        ]
+      },
+      "governance": {
+        "shard": "copyleft-code",
+        "model_use": "candidate-training",
+        "contamination_risk": "low",
+        "pii_risk": "none",
+        "attribution_template": "Retain package-level GPL/LGPL notices, source obligations, authorship and exact release.",
+        "legal_review": "required"
+      },
+      "notes": []
+    },
+    {
+      "id": "zenodo-license-resolved-records",
+      "title": "Zenodo license-resolved mathematics records",
+      "family": "research-repositories",
+      "source_type": "research-artifact-repository",
+      "decision": "conditional",
+      "decision_reason": "Zenodo record content is licensed per item; only records with compatible machine-readable licenses and checksums may enter.",
+      "homepage": "https://zenodo.org/",
+      "license": {
+        "expression": "LicenseRef-Per-Item",
+        "class": "per-item",
+        "evidence_url": "https://help.zenodo.org/docs/deposit/describe-records/",
+        "reviewed_on": "2026-06-25",
+        "redistributable": null,
+        "derivatives": null,
+        "commercial_use": null,
+        "attribution": true,
+        "share_alike": false,
+        "source_disclosure": false,
+        "per_item": true,
+        "ai_terms": "not-reviewed"
+      },
+      "coverage": {
+        "areas": [
+          "research-mathematics"
+        ],
+        "modalities": [
+          "research-papers",
+          "datasets",
+          "code",
+          "bibliographic-metadata"
+        ],
+        "capabilities": [
+          "research-retrieval",
+          "citation-grounding",
+          "tool-use"
+        ],
+        "levels": [
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "metadata"
+      },
+      "acquisition": {
+        "mode": "manual-per-item",
+        "pin": "record-version-and-hash",
+        "content_scope": "Record files with allowlisted licenses plus record metadata",
+        "excludes": [
+          "Files with missing/custom/incompatible licenses",
+          "Linked external content"
+        ]
+      },
+      "governance": {
+        "shard": "per-item",
+        "model_use": "retrieval-only",
+        "contamination_risk": "medium",
+        "pii_risk": "none",
+        "attribution_template": "Store DOI, record/version, creators, file checksums, item license and citation.",
+        "legal_review": "required"
+      },
+      "notes": []
+    },
+    {
+      "id": "crossref-metadata",
+      "title": "Crossref metadata API",
+      "family": "open-research-metadata",
+      "source_type": "bibliographic-metadata",
+      "decision": "metadata_only",
+      "decision_reason": "Use for DOI and citation metadata only; abstracts and deposited third-party fields may have separate rights.",
+      "homepage": "https://www.crossref.org/documentation/retrieve-metadata/rest-api/",
+      "license": {
+        "expression": "CC0-1.0-with-field-exceptions",
+        "class": "metadata-scope",
+        "evidence_url": "https://www.crossref.org/documentation/retrieve-metadata/rest-api/rest-api-metadata-license-information/",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": true,
+        "attribution": false,
+        "share_alike": false,
+        "source_disclosure": false,
+        "per_item": true,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "research-mathematics"
+        ],
+        "modalities": [
+          "bibliographic-metadata"
+        ],
+        "capabilities": [
+          "research-retrieval",
+          "citation-grounding"
+        ],
+        "levels": [
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "metadata"
+      },
+      "acquisition": {
+        "mode": "api",
+        "pin": "dated-snapshot",
+        "content_scope": "Bibliographic facts and identifiers explicitly covered by Crossref metadata terms",
+        "excludes": [
+          "Abstracts, full text and publisher-deposited content without independent rights"
+        ]
+      },
+      "governance": {
+        "shard": "metadata",
+        "model_use": "metadata-only",
+        "contamination_risk": "low",
+        "pii_risk": "none",
+        "attribution_template": "Retain DOI, depositor/source, retrieval date and field-level rights information.",
+        "legal_review": "required"
+      },
+      "notes": []
+    },
+    {
+      "id": "semantic-scholar-metadata",
+      "title": "Semantic Scholar API metadata",
+      "family": "open-research-metadata",
+      "source_type": "bibliographic-metadata",
+      "decision": "metadata_only",
+      "decision_reason": "Use identifiers, graph links and permitted API fields only; do not treat paper text or abstracts as blanket-licensed.",
+      "homepage": "https://www.semanticscholar.org/product/api",
+      "license": {
+        "expression": "LicenseRef-API-Terms",
+        "class": "metadata-scope",
+        "evidence_url": "https://www.semanticscholar.org/product/api/license",
+        "reviewed_on": "2026-06-25",
+        "redistributable": null,
+        "derivatives": null,
+        "commercial_use": null,
+        "attribution": false,
+        "share_alike": false,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "not-reviewed"
+      },
+      "coverage": {
+        "areas": [
+          "research-mathematics"
+        ],
+        "modalities": [
+          "bibliographic-metadata"
+        ],
+        "capabilities": [
+          "research-retrieval",
+          "citation-grounding"
+        ],
+        "levels": [
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "metadata"
+      },
+      "acquisition": {
+        "mode": "api",
+        "pin": "dated-snapshot",
+        "content_scope": "API fields permitted by current terms",
+        "excludes": [
+          "Paper full text",
+          "Unlicensed abstracts",
+          "Author profile data not needed for citation"
+        ]
+      },
+      "governance": {
+        "shard": "metadata",
+        "model_use": "metadata-only",
+        "contamination_risk": "low",
+        "pii_risk": "low",
+        "attribution_template": "Record API version, paper identifier, source, retrieval date and field-level terms.",
+        "legal_review": "required"
+      },
+      "notes": []
+    },
+    {
+      "id": "arxiv-unfiltered-metadata",
+      "title": "arXiv unfiltered metadata",
+      "family": "research-repositories",
+      "source_type": "bibliographic-metadata",
+      "decision": "metadata_only",
+      "decision_reason": "Metadata can route discovery, but article content remains per-item licensed and must pass the separate license-resolved gate.",
+      "homepage": "https://arxiv.org/help/api/",
+      "license": {
+        "expression": "LicenseRef-Metadata-Only",
+        "class": "metadata-scope",
+        "evidence_url": "https://info.arxiv.org/help/api/index.html",
+        "reviewed_on": "2026-06-25",
+        "redistributable": null,
+        "derivatives": null,
+        "commercial_use": null,
+        "attribution": false,
+        "share_alike": false,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "not-reviewed"
+      },
+      "coverage": {
+        "areas": [
+          "research-mathematics"
+        ],
+        "modalities": [
+          "bibliographic-metadata"
+        ],
+        "capabilities": [
+          "research-retrieval",
+          "citation-grounding"
+        ],
+        "levels": [
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "metadata"
+      },
+      "acquisition": {
+        "mode": "api",
+        "pin": "dated-snapshot",
+        "content_scope": "Identifiers, titles, authors, categories, dates and item-license links",
+        "excludes": [
+          "Source/PDF text without compatible item license"
+        ]
+      },
+      "governance": {
+        "shard": "metadata",
+        "model_use": "metadata-only",
+        "contamination_risk": "low",
+        "pii_risk": "none",
+        "attribution_template": "Retain arXiv ID/version, title, authors, date, category and item-license URL.",
+        "legal_review": "required"
+      },
+      "notes": []
+    },
+    {
+      "id": "open-textbook-library-catalog",
+      "title": "Open Textbook Library catalog",
+      "family": "oer-catalogs",
+      "source_type": "license-discovery-catalog",
+      "decision": "metadata_only",
+      "decision_reason": "The catalog helps discover textbooks but each book has its own license; catalog inclusion is not permission to ingest content.",
+      "homepage": "https://open.umn.edu/opentextbooks",
+      "license": {
+        "expression": "LicenseRef-Per-Item",
+        "class": "metadata-scope",
+        "evidence_url": "https://open.umn.edu/opentextbooks",
+        "reviewed_on": "2026-06-25",
+        "redistributable": null,
+        "derivatives": null,
+        "commercial_use": null,
+        "attribution": true,
+        "share_alike": false,
+        "source_disclosure": false,
+        "per_item": true,
+        "ai_terms": "not-reviewed"
+      },
+      "coverage": {
+        "areas": [
+          "arithmetic",
+          "elementary-algebra",
+          "geometry",
+          "trigonometry",
+          "calculus",
+          "linear-algebra",
+          "ordinary-differential-equations",
+          "partial-differential-equations",
+          "probability",
+          "statistics",
+          "real-analysis",
+          "complex-analysis",
+          "functional-analysis",
+          "abstract-algebra",
+          "number-theory",
+          "combinatorics",
+          "graph-theory",
+          "topology",
+          "differential-geometry",
+          "algebraic-geometry",
+          "logic-foundations",
+          "category-theory",
+          "optimization",
+          "numerical-analysis",
+          "dynamical-systems",
+          "mathematical-physics",
+          "formal-verification"
+        ],
+        "modalities": [
+          "bibliographic-metadata"
+        ],
+        "capabilities": [
+          "curriculum",
+          "research-retrieval",
+          "citation-grounding"
+        ],
+        "levels": [
+          "school",
+          "undergraduate",
+          "graduate",
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "metadata"
+      },
+      "acquisition": {
+        "mode": "manual-per-item",
+        "pin": "catalog-record-and-date",
+        "content_scope": "Catalog metadata and license links",
+        "excludes": [
+          "Book content before item-level review",
+          "Reviews beyond quotation limits"
+        ]
+      },
+      "governance": {
+        "shard": "metadata",
+        "model_use": "metadata-only",
+        "contamination_risk": "low",
+        "pii_risk": "none",
+        "attribution_template": "Record catalog URL, book record, listed license and review date; verify at the publisher.",
+        "legal_review": "required"
+      },
+      "notes": []
+    },
+    {
+      "id": "aim-open-textbook-list",
+      "title": "AIM Open Textbook Initiative list",
+      "family": "oer-catalogs",
+      "source_type": "license-discovery-catalog",
+      "decision": "metadata_only",
+      "decision_reason": "A quality-oriented discovery list, not a blanket content license; every textbook must be independently reviewed.",
+      "homepage": "https://aimath.org/textbooks/approved-textbooks/",
+      "license": {
+        "expression": "LicenseRef-Per-Item",
+        "class": "metadata-scope",
+        "evidence_url": "https://aimath.org/textbooks/approved-textbooks/",
+        "reviewed_on": "2026-06-25",
+        "redistributable": null,
+        "derivatives": null,
+        "commercial_use": null,
+        "attribution": true,
+        "share_alike": false,
+        "source_disclosure": false,
+        "per_item": true,
+        "ai_terms": "not-reviewed"
+      },
+      "coverage": {
+        "areas": [
+          "arithmetic",
+          "elementary-algebra",
+          "geometry",
+          "trigonometry",
+          "calculus",
+          "linear-algebra",
+          "ordinary-differential-equations",
+          "partial-differential-equations",
+          "probability",
+          "statistics",
+          "real-analysis",
+          "complex-analysis",
+          "functional-analysis",
+          "abstract-algebra",
+          "number-theory",
+          "combinatorics",
+          "graph-theory",
+          "topology",
+          "differential-geometry",
+          "algebraic-geometry",
+          "logic-foundations",
+          "category-theory",
+          "optimization",
+          "numerical-analysis",
+          "dynamical-systems",
+          "mathematical-physics",
+          "formal-verification"
+        ],
+        "modalities": [
+          "bibliographic-metadata"
+        ],
+        "capabilities": [
+          "curriculum",
+          "research-retrieval"
+        ],
+        "levels": [
+          "school",
+          "undergraduate",
+          "graduate"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "metadata"
+      },
+      "acquisition": {
+        "mode": "manual-per-item",
+        "pin": "catalog-record-and-date",
+        "content_scope": "Titles, authors and source links",
+        "excludes": [
+          "Textbook content until item-level review"
+        ]
+      },
+      "governance": {
+        "shard": "metadata",
+        "model_use": "metadata-only",
+        "contamination_risk": "low",
+        "pii_risk": "none",
+        "attribution_template": "Record AIM listing and then the authoritative publisher license evidence.",
+        "legal_review": "required"
+      },
+      "notes": []
+    },
+    {
+      "id": "geogebra-materials-catalog",
+      "title": "GeoGebra Materials catalog",
+      "family": "interactive-math-platforms",
+      "source_type": "interactive-resource-catalog",
+      "decision": "metadata_only",
+      "decision_reason": "Materials are user-uploaded and license status varies; keep only links and metadata until each resource is cleared.",
+      "homepage": "https://www.geogebra.org/materials",
+      "license": {
+        "expression": "LicenseRef-Per-Item",
+        "class": "metadata-scope",
+        "evidence_url": "https://www.geogebra.org/terms",
+        "reviewed_on": "2026-06-25",
+        "redistributable": null,
+        "derivatives": null,
+        "commercial_use": null,
+        "attribution": true,
+        "share_alike": false,
+        "source_disclosure": false,
+        "per_item": true,
+        "ai_terms": "not-reviewed"
+      },
+      "coverage": {
+        "areas": [
+          "geometry",
+          "trigonometry",
+          "calculus",
+          "statistics",
+          "linear-algebra"
+        ],
+        "modalities": [
+          "bibliographic-metadata",
+          "diagrams"
+        ],
+        "capabilities": [
+          "curriculum",
+          "diagram-reasoning",
+          "research-retrieval"
+        ],
+        "levels": [
+          "school",
+          "undergraduate"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "metadata"
+      },
+      "acquisition": {
+        "mode": "manual-per-item",
+        "pin": "resource-version-and-hash",
+        "content_scope": "Resource metadata and links only",
+        "excludes": [
+          "Applets, worksheets, images and text without an explicit compatible license"
+        ]
+      },
+      "governance": {
+        "shard": "metadata",
+        "model_use": "metadata-only",
+        "contamination_risk": "low",
+        "pii_risk": "low",
+        "attribution_template": "Record resource ID, creator, URL, version/date and explicit item license before any content use.",
+        "legal_review": "required"
+      },
+      "notes": []
+    },
+    {
+      "id": "libretexts-catalog",
+      "title": "LibreTexts mathematics catalog",
+      "family": "oer-catalogs",
+      "source_type": "license-discovery-catalog",
+      "decision": "metadata_only",
+      "decision_reason": "Licenses vary by page and many materials are noncommercial; use only for discovery until page-level rights are machine-verified.",
+      "homepage": "https://math.libretexts.org/",
+      "license": {
+        "expression": "LicenseRef-Per-Page",
+        "class": "metadata-scope",
+        "evidence_url": "https://libretexts.org/terms",
+        "reviewed_on": "2026-06-25",
+        "redistributable": null,
+        "derivatives": null,
+        "commercial_use": null,
+        "attribution": true,
+        "share_alike": false,
+        "source_disclosure": false,
+        "per_item": true,
+        "ai_terms": "not-reviewed"
+      },
+      "coverage": {
+        "areas": [
+          "arithmetic",
+          "elementary-algebra",
+          "geometry",
+          "trigonometry",
+          "calculus",
+          "linear-algebra",
+          "ordinary-differential-equations",
+          "partial-differential-equations",
+          "probability",
+          "statistics",
+          "real-analysis",
+          "complex-analysis",
+          "functional-analysis",
+          "abstract-algebra",
+          "number-theory",
+          "combinatorics",
+          "graph-theory",
+          "topology",
+          "differential-geometry",
+          "algebraic-geometry",
+          "logic-foundations",
+          "category-theory",
+          "optimization",
+          "numerical-analysis",
+          "dynamical-systems",
+          "mathematical-physics",
+          "formal-verification"
+        ],
+        "modalities": [
+          "bibliographic-metadata"
+        ],
+        "capabilities": [
+          "curriculum",
+          "research-retrieval"
+        ],
+        "levels": [
+          "school",
+          "undergraduate",
+          "graduate",
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "metadata"
+      },
+      "acquisition": {
+        "mode": "manual-per-item",
+        "pin": "page-version-and-hash",
+        "content_scope": "Page titles, source links and license metadata",
+        "excludes": [
+          "Page text, figures and transclusions until page-level license resolution"
+        ]
+      },
+      "governance": {
+        "shard": "metadata",
+        "model_use": "metadata-only",
+        "contamination_risk": "low",
+        "pii_risk": "none",
+        "attribution_template": "Record page URL, revision/date, original source, authors and page-level license.",
+        "legal_review": "required"
+      },
+      "notes": []
+    },
+    {
+      "id": "grinstead-snell-probability",
+      "title": "Introduction to Probability by Grinstead and Snell",
+      "family": "open-probability-texts",
+      "source_type": "open-textbook-candidate",
+      "decision": "metadata_only",
+      "decision_reason": "Promising probability text, but the exact current source and license notice must be captured from the authoritative distribution before content ingestion.",
+      "homepage": "https://math.dartmouth.edu/~prob/prob/prob.pdf",
+      "license": {
+        "expression": "LicenseRef-To-Be-Verified",
+        "class": "pending-review",
+        "evidence_url": "https://math.dartmouth.edu/~prob/prob/prob.pdf",
+        "reviewed_on": "2026-06-25",
+        "redistributable": null,
+        "derivatives": null,
+        "commercial_use": null,
+        "attribution": false,
+        "share_alike": false,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "not-reviewed"
+      },
+      "coverage": {
+        "areas": [
+          "probability",
+          "statistics",
+          "combinatorics"
+        ],
+        "modalities": [
+          "exposition",
+          "definitions",
+          "theorem-proof",
+          "exercises",
+          "worked-solutions"
+        ],
+        "capabilities": [
+          "curriculum",
+          "symbolic-reasoning",
+          "proof-generation",
+          "data-analysis"
+        ],
+        "levels": [
+          "undergraduate"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "dedicated"
+      },
+      "acquisition": {
+        "mode": "manual-per-item",
+        "pin": "edition-and-hash",
+        "content_scope": "Metadata and citation only until license verification",
+        "excludes": [
+          "All book text before verified license capture"
+        ]
+      },
+      "governance": {
+        "shard": "metadata",
+        "model_use": "metadata-only",
+        "contamination_risk": "low",
+        "pii_risk": "none",
+        "attribution_template": "Record title, authors, edition, authoritative URL, hash and verified license before promotion.",
+        "legal_review": "required"
+      },
+      "notes": []
+    },
+    {
+      "id": "petrunin-euclidean-plane",
+      "title": "Euclidean Plane and its Relatives",
+      "family": "open-geometry-texts",
+      "source_type": "open-textbook-candidate",
+      "decision": "metadata_only",
+      "decision_reason": "High-value elementary geometry candidate; arXiv availability alone is not enough, so item-license verification is required.",
+      "homepage": "https://arxiv.org/abs/1302.1630",
+      "license": {
+        "expression": "LicenseRef-Per-Item",
+        "class": "pending-review",
+        "evidence_url": "https://arxiv.org/abs/1302.1630",
+        "reviewed_on": "2026-06-25",
+        "redistributable": null,
+        "derivatives": null,
+        "commercial_use": null,
+        "attribution": true,
+        "share_alike": false,
+        "source_disclosure": false,
+        "per_item": true,
+        "ai_terms": "not-reviewed"
+      },
+      "coverage": {
+        "areas": [
+          "geometry",
+          "topology",
+          "differential-geometry"
+        ],
+        "modalities": [
+          "exposition",
+          "definitions",
+          "theorem-proof",
+          "exercises",
+          "diagrams"
+        ],
+        "capabilities": [
+          "curriculum",
+          "proof-generation",
+          "diagram-reasoning"
+        ],
+        "levels": [
+          "undergraduate",
+          "graduate"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "dedicated"
+      },
+      "acquisition": {
+        "mode": "manual-per-item",
+        "pin": "arxiv-version-and-license",
+        "content_scope": "Metadata and citation only until the item license is allowlisted",
+        "excludes": [
+          "PDF/source text before item-license approval"
+        ]
+      },
+      "governance": {
+        "shard": "metadata",
+        "model_use": "metadata-only",
+        "contamination_risk": "low",
+        "pii_risk": "none",
+        "attribution_template": "Record arXiv ID/version, authors, title, item license and hash before promotion.",
+        "legal_review": "required"
+      },
+      "notes": []
+    },
+    {
+      "id": "openstax-current-textbooks",
+      "title": "OpenStax current textbooks",
+      "family": "restricted-oer",
+      "source_type": "textbook-platform",
+      "decision": "blocked",
+      "decision_reason": "Current pages explicitly prohibit LLM training/ingestion without permission and use a noncommercial share-alike license.",
+      "homepage": "https://openstax.org/",
+      "license": {
+        "expression": "CC-BY-NC-SA-4.0 plus explicit AI restriction",
+        "class": "restricted",
+        "evidence_url": "https://openstax.org/books/calculus-volume-1/pages/1-introduction",
+        "reviewed_on": "2026-06-25",
+        "redistributable": false,
+        "derivatives": false,
+        "commercial_use": false,
+        "attribution": true,
+        "share_alike": true,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "explicit-restriction"
+      },
+      "coverage": {
+        "areas": [
+          "arithmetic",
+          "elementary-algebra",
+          "geometry",
+          "trigonometry",
+          "calculus",
+          "linear-algebra",
+          "ordinary-differential-equations",
+          "probability",
+          "statistics"
+        ],
+        "modalities": [
+          "exposition",
+          "definitions",
+          "exercises",
+          "worked-solutions",
+          "diagrams"
+        ],
+        "capabilities": [
+          "curriculum"
+        ],
+        "levels": [
+          "school",
+          "undergraduate"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "dedicated"
+      },
+      "acquisition": {
+        "mode": "none",
+        "pin": "not-applicable",
+        "content_scope": "Metadata and links only",
+        "excludes": [
+          "All textbook content without written OpenStax permission"
+        ]
+      },
+      "governance": {
+        "shard": "blocked",
+        "model_use": "blocked",
+        "contamination_risk": "high",
+        "pii_risk": "none",
+        "attribution_template": "Do not ingest. Keep only title, URL and the blocking decision.",
+        "legal_review": "not-applicable"
+      },
+      "notes": []
+    },
+    {
+      "id": "mit-opencourseware",
+      "title": "MIT OpenCourseWare",
+      "family": "restricted-oer",
+      "source_type": "course-platform",
+      "decision": "blocked",
+      "decision_reason": "Default CC BY-NC-SA terms are noncommercial and include additional platform conditions; no content ingestion into a general-purpose frontier-model corpus.",
+      "homepage": "https://ocw.mit.edu/",
+      "license": {
+        "expression": "CC-BY-NC-SA-4.0",
+        "class": "noncommercial",
+        "evidence_url": "https://ocw.mit.edu/pages/privacy-and-terms-of-use/",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": true,
+        "commercial_use": false,
+        "attribution": true,
+        "share_alike": true,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "arithmetic",
+          "elementary-algebra",
+          "geometry",
+          "trigonometry",
+          "calculus",
+          "linear-algebra",
+          "ordinary-differential-equations",
+          "partial-differential-equations",
+          "probability",
+          "statistics",
+          "real-analysis",
+          "complex-analysis",
+          "functional-analysis",
+          "abstract-algebra",
+          "number-theory",
+          "combinatorics",
+          "graph-theory",
+          "topology",
+          "differential-geometry",
+          "algebraic-geometry",
+          "logic-foundations",
+          "category-theory",
+          "optimization",
+          "numerical-analysis",
+          "dynamical-systems",
+          "mathematical-physics",
+          "formal-verification"
+        ],
+        "modalities": [
+          "exposition",
+          "exercises",
+          "worked-solutions",
+          "diagrams"
+        ],
+        "capabilities": [
+          "curriculum"
+        ],
+        "levels": [
+          "undergraduate",
+          "graduate"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "dedicated"
+      },
+      "acquisition": {
+        "mode": "none",
+        "pin": "not-applicable",
+        "content_scope": "Metadata and links only",
+        "excludes": [
+          "All course content unless separately licensed or permission obtained"
+        ]
+      },
+      "governance": {
+        "shard": "blocked",
+        "model_use": "blocked",
+        "contamination_risk": "high",
+        "pii_risk": "none",
+        "attribution_template": "Do not ingest; preserve only catalog metadata and source link.",
+        "legal_review": "not-applicable"
+      },
+      "notes": []
+    },
+    {
+      "id": "book-of-proof",
+      "title": "Book of Proof",
+      "family": "restricted-oer",
+      "source_type": "open-textbook",
+      "decision": "blocked",
+      "decision_reason": "CC BY-ND forbids derivative works; transformation into training examples, normalized chunks or adapted exercises is outside this corpus policy.",
+      "homepage": "https://www.people.vcu.edu/~rhammack/BookOfProof/",
+      "license": {
+        "expression": "CC-BY-ND-3.0",
+        "class": "no-derivatives",
+        "evidence_url": "https://open.umn.edu/opentextbooks/textbooks/book-of-proof",
+        "reviewed_on": "2026-06-25",
+        "redistributable": true,
+        "derivatives": false,
+        "commercial_use": true,
+        "attribution": true,
+        "share_alike": false,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "none-observed"
+      },
+      "coverage": {
+        "areas": [
+          "logic-foundations",
+          "number-theory",
+          "combinatorics"
+        ],
+        "modalities": [
+          "exposition",
+          "theorem-proof",
+          "exercises",
+          "worked-solutions"
+        ],
+        "capabilities": [
+          "curriculum",
+          "proof-generation"
+        ],
+        "levels": [
+          "undergraduate"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "dedicated"
+      },
+      "acquisition": {
+        "mode": "none",
+        "pin": "not-applicable",
+        "content_scope": "Metadata and links only",
+        "excludes": [
+          "All text and exercises for transformed corpus use"
+        ]
+      },
+      "governance": {
+        "shard": "blocked",
+        "model_use": "blocked",
+        "contamination_risk": "medium",
+        "pii_risk": "none",
+        "attribution_template": "Do not ingest; keep title, author, URL and CC BY-ND decision.",
+        "legal_review": "not-applicable"
+      },
+      "notes": []
+    },
+    {
+      "id": "nlab",
+      "title": "nLab",
+      "family": "unclear-license-sites",
+      "source_type": "research-wiki",
+      "decision": "blocked",
+      "decision_reason": "No sufficiently clear blanket content license was verified for corpus ingestion.",
+      "homepage": "https://ncatlab.org/nlab/show/HomePage",
+      "license": {
+        "expression": "NOASSERTION",
+        "class": "unclear",
+        "evidence_url": "https://ncatlab.org/nlab/show/About",
+        "reviewed_on": "2026-06-25",
+        "redistributable": null,
+        "derivatives": null,
+        "commercial_use": null,
+        "attribution": false,
+        "share_alike": false,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "not-reviewed"
+      },
+      "coverage": {
+        "areas": [
+          "category-theory",
+          "topology",
+          "differential-geometry",
+          "algebraic-geometry",
+          "mathematical-physics",
+          "research-mathematics"
+        ],
+        "modalities": [
+          "exposition",
+          "definitions",
+          "theorem-proof"
+        ],
+        "capabilities": [
+          "research-retrieval"
+        ],
+        "levels": [
+          "graduate",
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "dedicated"
+      },
+      "acquisition": {
+        "mode": "none",
+        "pin": "not-applicable",
+        "content_scope": "Metadata and links only",
+        "excludes": [
+          "All page content until an authoritative compatible license is documented"
+        ]
+      },
+      "governance": {
+        "shard": "blocked",
+        "model_use": "blocked",
+        "contamination_risk": "high",
+        "pii_risk": "low",
+        "attribution_template": "Do not ingest; preserve only URLs and the unresolved-license decision.",
+        "legal_review": "not-applicable"
+      },
+      "notes": []
+    },
+    {
+      "id": "pauls-online-math-notes",
+      "title": "Paul's Online Math Notes",
+      "family": "unclear-license-sites",
+      "source_type": "course-notes",
+      "decision": "blocked",
+      "decision_reason": "Free access is not an open license; no compatible redistribution/derivative permission was verified.",
+      "homepage": "https://tutorial.math.lamar.edu/",
+      "license": {
+        "expression": "All-rights-reserved-or-unclear",
+        "class": "unclear",
+        "evidence_url": "https://tutorial.math.lamar.edu/Extras/TermsOfUse.aspx",
+        "reviewed_on": "2026-06-25",
+        "redistributable": null,
+        "derivatives": null,
+        "commercial_use": null,
+        "attribution": false,
+        "share_alike": false,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "not-reviewed"
+      },
+      "coverage": {
+        "areas": [
+          "elementary-algebra",
+          "trigonometry",
+          "calculus",
+          "ordinary-differential-equations"
+        ],
+        "modalities": [
+          "exposition",
+          "exercises",
+          "worked-solutions"
+        ],
+        "capabilities": [
+          "curriculum"
+        ],
+        "levels": [
+          "school",
+          "undergraduate"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "dedicated"
+      },
+      "acquisition": {
+        "mode": "none",
+        "pin": "not-applicable",
+        "content_scope": "Metadata and links only",
+        "excludes": [
+          "All notes and problem solutions"
+        ]
+      },
+      "governance": {
+        "shard": "blocked",
+        "model_use": "blocked",
+        "contamination_risk": "high",
+        "pii_risk": "none",
+        "attribution_template": "Do not ingest; retain only source metadata.",
+        "legal_review": "not-applicable"
+      },
+      "notes": []
+    },
+    {
+      "id": "art-of-problem-solving",
+      "title": "Art of Problem Solving content",
+      "family": "proprietary-platforms",
+      "source_type": "problem-platform",
+      "decision": "blocked",
+      "decision_reason": "No blanket compatible content license; forums also contain user data and severe benchmark contamination risk.",
+      "homepage": "https://artofproblemsolving.com/",
+      "license": {
+        "expression": "All-rights-reserved",
+        "class": "proprietary",
+        "evidence_url": "https://artofproblemsolving.com/company/terms",
+        "reviewed_on": "2026-06-25",
+        "redistributable": null,
+        "derivatives": null,
+        "commercial_use": null,
+        "attribution": false,
+        "share_alike": false,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "not-reviewed"
+      },
+      "coverage": {
+        "areas": [
+          "arithmetic",
+          "elementary-algebra",
+          "geometry",
+          "trigonometry",
+          "number-theory",
+          "combinatorics"
+        ],
+        "modalities": [
+          "exposition",
+          "exercises",
+          "worked-solutions",
+          "discussions"
+        ],
+        "capabilities": [
+          "curriculum",
+          "symbolic-reasoning",
+          "evaluation"
+        ],
+        "levels": [
+          "school",
+          "undergraduate"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "dedicated"
+      },
+      "acquisition": {
+        "mode": "none",
+        "pin": "not-applicable",
+        "content_scope": "Metadata and links only",
+        "excludes": [
+          "Books",
+          "Problems",
+          "Solutions",
+          "Forum posts",
+          "User profiles"
+        ]
+      },
+      "governance": {
+        "shard": "blocked",
+        "model_use": "blocked",
+        "contamination_risk": "high",
+        "pii_risk": "high",
+        "attribution_template": "Do not ingest; preserve only catalog links where useful.",
+        "legal_review": "not-applicable"
+      },
+      "notes": []
+    },
+    {
+      "id": "project-euler",
+      "title": "Project Euler problem content",
+      "family": "proprietary-benchmarks",
+      "source_type": "problem-platform",
+      "decision": "blocked",
+      "decision_reason": "Public availability does not grant a compatible corpus license, and canonical problems are highly contamination-sensitive.",
+      "homepage": "https://projecteuler.net/",
+      "license": {
+        "expression": "All-rights-reserved-or-site-terms",
+        "class": "proprietary",
+        "evidence_url": "https://projecteuler.net/about",
+        "reviewed_on": "2026-06-25",
+        "redistributable": null,
+        "derivatives": null,
+        "commercial_use": null,
+        "attribution": false,
+        "share_alike": false,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "not-reviewed"
+      },
+      "coverage": {
+        "areas": [
+          "arithmetic",
+          "number-theory",
+          "combinatorics",
+          "graph-theory"
+        ],
+        "modalities": [
+          "exercises",
+          "benchmarks"
+        ],
+        "capabilities": [
+          "symbolic-reasoning",
+          "evaluation"
+        ],
+        "levels": [
+          "school",
+          "undergraduate"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "dedicated"
+      },
+      "acquisition": {
+        "mode": "none",
+        "pin": "not-applicable",
+        "content_scope": "Problem IDs and links only",
+        "excludes": [
+          "Problem statements",
+          "Solutions",
+          "Forum discussions"
+        ]
+      },
+      "governance": {
+        "shard": "blocked",
+        "model_use": "blocked",
+        "contamination_risk": "high",
+        "pii_risk": "none",
+        "attribution_template": "Do not ingest canonical content; retain only IDs/links for contamination checking.",
+        "legal_review": "not-applicable"
+      },
+      "notes": []
+    },
+    {
+      "id": "common-crawl-raw",
+      "title": "Common Crawl raw web corpus",
+      "family": "raw-web-crawls",
+      "source_type": "web-crawl",
+      "decision": "blocked",
+      "decision_reason": "The crawl has no blanket downstream content license; source-site rights, robots, privacy and takedowns must be resolved independently.",
+      "homepage": "https://commoncrawl.org/",
+      "license": {
+        "expression": "NOASSERTION-per-origin",
+        "class": "mixed-unknown",
+        "evidence_url": "https://commoncrawl.org/terms-of-use",
+        "reviewed_on": "2026-06-25",
+        "redistributable": null,
+        "derivatives": null,
+        "commercial_use": null,
+        "attribution": false,
+        "share_alike": false,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "not-reviewed"
+      },
+      "coverage": {
+        "areas": [
+          "arithmetic",
+          "elementary-algebra",
+          "geometry",
+          "trigonometry",
+          "calculus",
+          "linear-algebra",
+          "ordinary-differential-equations",
+          "partial-differential-equations",
+          "probability",
+          "statistics",
+          "real-analysis",
+          "complex-analysis",
+          "functional-analysis",
+          "abstract-algebra",
+          "number-theory",
+          "combinatorics",
+          "graph-theory",
+          "topology",
+          "differential-geometry",
+          "algebraic-geometry",
+          "logic-foundations",
+          "category-theory",
+          "optimization",
+          "numerical-analysis",
+          "dynamical-systems",
+          "mathematical-physics",
+          "formal-verification",
+          "research-mathematics"
+        ],
+        "modalities": [
+          "datasets"
+        ],
+        "capabilities": [
+          "research-retrieval"
+        ],
+        "levels": [
+          "school",
+          "undergraduate",
+          "graduate",
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "omnibus"
+      },
+      "acquisition": {
+        "mode": "none",
+        "pin": "not-applicable",
+        "content_scope": "URL discovery only",
+        "excludes": [
+          "All crawled page content without origin-level license resolution"
+        ]
+      },
+      "governance": {
+        "shard": "blocked",
+        "model_use": "blocked",
+        "contamination_risk": "high",
+        "pii_risk": "high",
+        "attribution_template": "Do not ingest raw crawl content; use URLs only to locate authoritative licensed sources.",
+        "legal_review": "not-applicable"
+      },
+      "notes": []
+    },
+    {
+      "id": "internet-archive-mixed",
+      "title": "Internet Archive mixed collections",
+      "family": "digital-archives",
+      "source_type": "archive-platform",
+      "decision": "blocked",
+      "decision_reason": "The platform does not provide a blanket license for deposited items; each item must be promoted through the per-item workflow instead.",
+      "homepage": "https://archive.org/",
+      "license": {
+        "expression": "LicenseRef-Per-Item",
+        "class": "mixed-unknown",
+        "evidence_url": "https://archive.org/about/terms.php",
+        "reviewed_on": "2026-06-25",
+        "redistributable": null,
+        "derivatives": null,
+        "commercial_use": null,
+        "attribution": true,
+        "share_alike": false,
+        "source_disclosure": false,
+        "per_item": true,
+        "ai_terms": "not-reviewed"
+      },
+      "coverage": {
+        "areas": [
+          "arithmetic",
+          "elementary-algebra",
+          "geometry",
+          "trigonometry",
+          "calculus",
+          "linear-algebra",
+          "ordinary-differential-equations",
+          "partial-differential-equations",
+          "probability",
+          "statistics",
+          "real-analysis",
+          "complex-analysis",
+          "functional-analysis",
+          "abstract-algebra",
+          "number-theory",
+          "combinatorics",
+          "graph-theory",
+          "topology",
+          "differential-geometry",
+          "algebraic-geometry",
+          "logic-foundations",
+          "category-theory",
+          "optimization",
+          "numerical-analysis",
+          "dynamical-systems",
+          "mathematical-physics",
+          "formal-verification",
+          "research-mathematics"
+        ],
+        "modalities": [
+          "historical-texts",
+          "datasets",
+          "research-papers"
+        ],
+        "capabilities": [
+          "research-retrieval"
+        ],
+        "levels": [
+          "school",
+          "undergraduate",
+          "graduate",
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "omnibus"
+      },
+      "acquisition": {
+        "mode": "none",
+        "pin": "not-applicable",
+        "content_scope": "Metadata and links only",
+        "excludes": [
+          "All item files until item rights are independently verified"
+        ]
+      },
+      "governance": {
+        "shard": "blocked",
+        "model_use": "blocked",
+        "contamination_risk": "high",
+        "pii_risk": "low",
+        "attribution_template": "Do not ingest platform-wide; route individual items through per-item license and hash review.",
+        "legal_review": "not-applicable"
+      },
+      "notes": []
+    },
+    {
+      "id": "openwebmath-mixed",
+      "title": "OpenWebMath and similar web-derived math corpora",
+      "family": "mixed-derived-corpora",
+      "source_type": "derived-web-dataset",
+      "decision": "blocked",
+      "decision_reason": "A dataset-level license does not necessarily clear upstream page copyrights; provenance and origin licenses are insufficiently granular for this policy.",
+      "homepage": "https://huggingface.co/datasets/open-web-math/open-web-math",
+      "license": {
+        "expression": "LicenseRef-Upstream-Mixed",
+        "class": "mixed-unknown",
+        "evidence_url": "https://huggingface.co/datasets/open-web-math/open-web-math",
+        "reviewed_on": "2026-06-25",
+        "redistributable": null,
+        "derivatives": null,
+        "commercial_use": null,
+        "attribution": false,
+        "share_alike": false,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "not-reviewed"
+      },
+      "coverage": {
+        "areas": [
+          "arithmetic",
+          "elementary-algebra",
+          "geometry",
+          "trigonometry",
+          "calculus",
+          "linear-algebra",
+          "ordinary-differential-equations",
+          "partial-differential-equations",
+          "probability",
+          "statistics",
+          "real-analysis",
+          "complex-analysis",
+          "functional-analysis",
+          "abstract-algebra",
+          "number-theory",
+          "combinatorics",
+          "graph-theory",
+          "topology",
+          "differential-geometry",
+          "algebraic-geometry",
+          "logic-foundations",
+          "category-theory",
+          "optimization",
+          "numerical-analysis",
+          "dynamical-systems",
+          "mathematical-physics",
+          "formal-verification"
+        ],
+        "modalities": [
+          "datasets"
+        ],
+        "capabilities": [
+          "symbolic-reasoning"
+        ],
+        "levels": [
+          "school",
+          "undergraduate",
+          "graduate",
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "omnibus"
+      },
+      "acquisition": {
+        "mode": "none",
+        "pin": "not-applicable",
+        "content_scope": "Metadata and dataset card only",
+        "excludes": [
+          "All records until origin-level licenses and takedown provenance are available"
+        ]
+      },
+      "governance": {
+        "shard": "blocked",
+        "model_use": "blocked",
+        "contamination_risk": "high",
+        "pii_risk": "medium",
+        "attribution_template": "Do not ingest; retain dataset-card metadata and provenance gaps.",
+        "legal_review": "not-applicable"
+      },
+      "notes": []
+    },
+    {
+      "id": "mathpile-mixed",
+      "title": "MathPile and mixed-source mathematical corpora",
+      "family": "mixed-derived-corpora",
+      "source_type": "aggregated-dataset",
+      "decision": "blocked",
+      "decision_reason": "Mixed upstream licenses, noncommercial components and benchmark overlap prevent blanket admission; source-by-source promotion is required.",
+      "homepage": "https://huggingface.co/datasets/GAIR/MathPile",
+      "license": {
+        "expression": "LicenseRef-Upstream-Mixed",
+        "class": "mixed-unknown",
+        "evidence_url": "https://huggingface.co/datasets/GAIR/MathPile",
+        "reviewed_on": "2026-06-25",
+        "redistributable": null,
+        "derivatives": null,
+        "commercial_use": null,
+        "attribution": false,
+        "share_alike": false,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "not-reviewed"
+      },
+      "coverage": {
+        "areas": [
+          "arithmetic",
+          "elementary-algebra",
+          "geometry",
+          "trigonometry",
+          "calculus",
+          "linear-algebra",
+          "ordinary-differential-equations",
+          "partial-differential-equations",
+          "probability",
+          "statistics",
+          "real-analysis",
+          "complex-analysis",
+          "functional-analysis",
+          "abstract-algebra",
+          "number-theory",
+          "combinatorics",
+          "graph-theory",
+          "topology",
+          "differential-geometry",
+          "algebraic-geometry",
+          "logic-foundations",
+          "category-theory",
+          "optimization",
+          "numerical-analysis",
+          "dynamical-systems",
+          "mathematical-physics",
+          "formal-verification",
+          "research-mathematics"
+        ],
+        "modalities": [
+          "datasets"
+        ],
+        "capabilities": [
+          "symbolic-reasoning",
+          "research-retrieval"
+        ],
+        "levels": [
+          "school",
+          "undergraduate",
+          "graduate",
+          "research"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "omnibus"
+      },
+      "acquisition": {
+        "mode": "none",
+        "pin": "not-applicable",
+        "content_scope": "Dataset card and source inventory only",
+        "excludes": [
+          "Aggregated records",
+          "Noncommercial or unclear subsets",
+          "Canonical benchmarks"
+        ]
+      },
+      "governance": {
+        "shard": "blocked",
+        "model_use": "blocked",
+        "contamination_risk": "high",
+        "pii_risk": "medium",
+        "attribution_template": "Do not ingest wholesale; re-evaluate each named upstream source through this registry.",
+        "legal_review": "not-applicable"
+      },
+      "notes": []
+    },
+    {
+      "id": "competition-archives",
+      "title": "IMO, Putnam, MAA and similar competition archives",
+      "family": "proprietary-benchmarks",
+      "source_type": "problem-archive",
+      "decision": "blocked",
+      "decision_reason": "No blanket compatible content license was established and canonical problems must remain protected evaluation material.",
+      "homepage": "https://www.imo-official.org/problems.aspx",
+      "license": {
+        "expression": "All-rights-reserved-or-unclear",
+        "class": "proprietary",
+        "evidence_url": "https://www.imo-official.org/",
+        "reviewed_on": "2026-06-25",
+        "redistributable": null,
+        "derivatives": null,
+        "commercial_use": null,
+        "attribution": false,
+        "share_alike": false,
+        "source_disclosure": false,
+        "per_item": false,
+        "ai_terms": "not-reviewed"
+      },
+      "coverage": {
+        "areas": [
+          "elementary-algebra",
+          "geometry",
+          "number-theory",
+          "combinatorics",
+          "real-analysis"
+        ],
+        "modalities": [
+          "exercises",
+          "worked-solutions",
+          "benchmarks"
+        ],
+        "capabilities": [
+          "proof-generation",
+          "evaluation"
+        ],
+        "levels": [
+          "school",
+          "undergraduate"
+        ],
+        "languages": [
+          "en"
+        ],
+        "role": "dedicated"
+      },
+      "acquisition": {
+        "mode": "none",
+        "pin": "not-applicable",
+        "content_scope": "Event/problem identifiers and links only",
+        "excludes": [
+          "Problem statements",
+          "Official solutions",
+          "Scans",
+          "Third-party solution books"
+        ]
+      },
+      "governance": {
+        "shard": "blocked",
+        "model_use": "blocked",
+        "contamination_risk": "high",
+        "pii_risk": "none",
+        "attribution_template": "Do not ingest; retain identifiers only for decontamination and evaluation governance.",
+        "legal_review": "not-applicable"
+      },
+      "notes": []
+    }
+  ]
+}

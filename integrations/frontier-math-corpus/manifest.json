@@ -1,0 +1,32 @@
+{
+  "pack_version": "1.0.0",
+  "reviewed_on": "2026-06-25",
+  "title": "Frontier Mathematics Corpus Atlas",
+  "purpose": "Machine-readable source, licensing, coverage and ingestion controls for building broad mathematics training, retrieval and evaluation corpora without treating free access as permission.",
+  "entrypoints": [
+    "integrations/frontier-math-corpus/README.md",
+    "integrations/frontier-math-corpus/INGESTION.md",
+    "integrations/frontier-math-corpus/coverage-policy.json",
+    "integrations/frontier-math-corpus/data/sources.json",
+    "integrations/frontier-math-corpus/generated/coverage-report.md",
+    "integrations/frontier-math-corpus/generated/attribution-ledger.md",
+    "integrations/frontier-math-corpus/generated/agent-context.md"
+  ],
+  "commands": {
+    "validate": "npm run validate:frontier-corpus",
+    "generate": "npm run generate:frontier-corpus",
+    "query": "npm run query:frontier-corpus -- summary"
+  },
+  "guardrails": [
+    "Do not copy source content into this repository; the registry stores metadata, decisions and generated summaries only.",
+    "Free access, open access or dataset-level licensing never substitutes for origin-level rights.",
+    "Approved and conditional decisions do not by themselves establish universal legality of model training or output licensing.",
+    "Every acquired artifact must be immutable, hash-addressed and tied to the exact license evidence reviewed for that snapshot.",
+    "Share-alike, documentation-copyleft, code-copyleft and per-item sources remain in isolated shards with separate manifests.",
+    "Canonical benchmarks and competition problems default to evaluation-only or blocked to prevent contamination.",
+    "OpenStax current textbooks are blocked because the current pages explicitly prohibit LLM training/ingestion without permission.",
+    "No personal profiles, private data, deleted posts or unnecessary user identifiers may enter a corpus.",
+    "Any license change, takedown or upstream deletion invalidates the source decision until re-reviewed.",
+    "This atlas measures source coverage and governance readiness, not whether a resulting model is mathematically frontier-level."
+  ]
+}
