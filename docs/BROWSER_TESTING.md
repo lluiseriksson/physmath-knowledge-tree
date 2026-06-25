@@ -42,6 +42,8 @@ The canonical-change pass loads two controlled graph snapshots, verifies determi
 
 The Lean-target pass loads controlled canonical Lean metadata, records a toolchain-specific rename, filters and selects declarations, generates a bounded `#check` probe, exercises Spanish translation and confirms local persistence without editing graph JSON. Browser discovery and profile cleanup retain the same cross-platform hardening as the other focused passes.
 
+The research-dossier pass loads controlled workspace, evidence, change-review and Lean-audit stores; verifies scoped integration and readiness gates; exercises bilingual rendering and JSON/Markdown export; and confirms that the source storage keys remain read-only. The dossier fingerprint is checked independently of its generated timestamp.
+
 ## Boundary
 
 This is a deterministic functional and offline-readiness smoke test, not an exhaustive browser-certification programme. It currently targets one Chromium-family engine and does not replace manual assistive-technology review, visual-regression testing, performance profiling or cross-browser testing.

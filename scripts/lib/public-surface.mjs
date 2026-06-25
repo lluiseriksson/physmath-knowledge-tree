@@ -10,6 +10,7 @@ export const PUBLIC_SOURCE_FILES = Object.freeze([
   'evidence.html',
   'changes.html',
   'formalization.html',
+  'dossiers.html',
   'manifest.webmanifest',
   'offline.html',
   'robots.txt',

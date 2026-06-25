@@ -18,6 +18,7 @@ const productionFiles = [
   'src/lib/evidence-review.js',
   'src/lib/change-review.js',
   'src/lib/lean-target-audit.js',
+  'src/lib/research-dossier.js',
   'src/lib/route-bundle.js',
   'src/lib/route-attestation.js',
   'src/lib/search.js',

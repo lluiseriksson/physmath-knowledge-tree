@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en" data-theme="system">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Assemble portable research dossiers from local workspaces, evidence reviews, canonical change decisions and Lean target audits.">
+  <meta name="theme-color" content="#f4f7fb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#09111f" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>PhysMath Knowledge Tree — Research dossiers</title>
+  <link rel="canonical" href="https://lluiseriksson.github.io/physmath-knowledge-tree/dossiers.html">
+  <link rel="icon" href="./assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./assets/icons/icon-192.png">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./src/dossier.css">
+  <script type="module" src="./src/dossier-app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#dossier-center" data-i18n="nav.skip">Skip to research dossier</a>
+
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="PhysMath Knowledge Tree home">
+      <img src="./assets/icons/icon.svg" width="42" height="42" alt="">
+      <span>
+        <strong>PhysMath Knowledge Tree</strong>
+        <small data-i18n="app.tagline">Join local research records into one auditable handoff</small>
+      </span>
+    </a>
+    <nav class="primary-nav" aria-label="Primary navigation" data-i18n-aria="nav.primary">
+      <a href="./" data-i18n="nav.research">Research graph</a>
+      <a href="./learning.html" data-i18n="nav.learning">Learning map</a>
+      <a href="./workbench.html" data-i18n="nav.workbench">Workbench</a>
+      <a href="./evidence.html" data-i18n="nav.evidence">Evidence review</a>
+      <a href="./changes.html" data-i18n="nav.changes">Change review</a>
+      <a href="./formalization.html" data-i18n="nav.formalization">Lean audit</a>
+      <a href="./dossiers.html" aria-current="page" data-i18n="nav.dossiers">Dossiers</a>
+      <a href="https://github.com/lluiseriksson/physmath-knowledge-tree" rel="noreferrer" data-i18n="nav.repository">Repository</a>
+    </nav>
+    <div class="header-actions">
+      <select id="language" aria-label="Interface language" data-i18n-aria="header.language">
+        <option value="en">EN</option>
+        <option value="es">ES</option>
+      </select>
+      <button id="theme" class="icon-button" type="button" aria-label="Change theme" data-i18n-aria="header.theme">◐</button>
+      <button id="help" class="icon-button" type="button" aria-label="Research dossier help" data-i18n-aria="header.help">?</button>
+    </div>
+  </header>
+
+  <div id="loading" class="loading" role="status" aria-live="polite">
+    <span class="spinner" aria-hidden="true"></span>
+    <span data-i18n="loading">Loading canonical graph and local review ledgers…</span>
+  </div>
+
+  <main id="dossier-center" class="dossier-layout" hidden>
+    <aside class="control-panel" aria-labelledby="controls-title">
+      <div class="panel-heading">
+        <div>
+          <p class="eyebrow" data-i18n="controls.eyebrow">Integrated local state</p>
+          <h1 id="controls-title" data-i18n="controls.title">Research dossier</h1>
+        </div>
+        <span id="refresh-state" class="save-state" role="status" aria-live="polite"></span>
+      </div>
+
+      <section class="panel-section" aria-labelledby="workspace-title">
+        <h2 id="workspace-title" data-i18n="workspace.title">Workspace source</h2>
+        <label for="workspace" data-i18n="workspace.label">Research workspace</label>
+        <select id="workspace"></select>
+        <button id="refresh" class="secondary-button full-width" type="button" data-i18n="workspace.refresh">Refresh local ledgers</button>
+        <p class="muted" data-i18n="workspace.body">The dossier reads same-origin browser storage but never edits any source ledger.</p>
+      </section>
+
+      <section class="panel-section" aria-labelledby="summary-title">
+        <h2 id="summary-title" data-i18n="summary.title">Dossier summary</h2>
+        <dl class="stats-grid">
+          <div><dt data-i18n="summary.nodes">Nodes</dt><dd id="stat-nodes">0</dd></div>
+          <div><dt data-i18n="summary.edges">Edges</dt><dd id="stat-edges">0</dd></div>
+          <div><dt data-i18n="summary.references">References</dt><dd id="stat-references">0</dd></div>
+          <div><dt data-i18n="summary.lean">Lean items</dt><dd id="stat-lean">0</dd></div>
+          <div><dt data-i18n="summary.changes">Changes</dt><dd id="stat-changes">0</dd></div>
+          <div><dt data-i18n="summary.actions">Actions</dt><dd id="stat-actions">0</dd></div>
+        </dl>
+      </section>
+
+      <section class="panel-section" aria-labelledby="portable-title">
+        <h2 id="portable-title" data-i18n="portable.title">Portable handoff</h2>
+        <p data-i18n="portable.body">Exports contain the scoped canonical data and matching local review records.</p>
+        <div class="stacked-actions">
+          <button id="export-json" class="primary-button" type="button" disabled data-i18n="portable.json">Export dossier JSON</button>
+          <button id="export-markdown" class="secondary-button" type="button" disabled data-i18n="portable.markdown">Export dossier Markdown</button>
+          <button id="copy-fingerprint" class="secondary-button" type="button" disabled data-i18n="portable.fingerprint">Copy content fingerprint</button>
+        </div>
+      </section>
+
+      <section class="panel-section source-links" aria-labelledby="sources-title">
+        <h2 id="sources-title" data-i18n="sources.title">Source tools</h2>
+        <a href="./workbench.html" data-i18n="sources.workbench">Edit workspace scope and notes</a>
+        <a href="./evidence.html" data-i18n="sources.evidence">Review canonical references</a>
+        <a href="./changes.html" data-i18n="sources.changes">Review canonical changes</a>
+        <a href="./formalization.html" data-i18n="sources.lean">Audit Lean targets</a>
+      </section>
+    </aside>
+
+    <div class="dossier-content">
+      <section class="hero-card" aria-labelledby="hero-title">
+        <div>
+          <p class="eyebrow" data-i18n="hero.eyebrow">Campaign readiness</p>
+          <h2 id="hero-title" data-i18n="hero.title">One scope, one evidence trail, one formalization handoff</h2>
+          <p id="hero-body" data-i18n="hero.body">A dossier combines local records without promoting confidence, certifying sources or mutating canonical JSON.</p>
+        </div>
+        <div id="overall-status" class="overall-status" role="status" aria-live="polite">—</div>
+      </section>
+
+      <section class="section-card" aria-labelledby="gates-title">
+        <header class="section-heading">
+          <div><p class="eyebrow" data-i18n="gates.eyebrow">Explicit gates</p><h2 id="gates-title" data-i18n="gates.title">Readiness checks</h2></div>
+          <code id="fingerprint" class="fingerprint"></code>
+        </header>
+        <div id="gate-grid" class="gate-grid"></div>
+      </section>
+
+      <section class="section-card" aria-labelledby="actions-title">
+        <header class="section-heading">
+          <div><p class="eyebrow" data-i18n="actions.eyebrow">Next discriminating work</p><h2 id="actions-title" data-i18n="actions.title">Open actions</h2></div>
+        </header>
+        <div id="action-list" class="action-list"></div>
+        <div id="actions-empty" class="empty-state" hidden>
+          <strong data-i18n="actions.emptyTitle">No open actions</strong>
+          <p data-i18n="actions.emptyBody">The current local ledgers satisfy every applicable gate.</p>
+        </div>
+      </section>
+
+      <div class="detail-grid">
+        <section class="section-card" aria-labelledby="scope-title">
+          <header class="section-heading"><h2 id="scope-title" data-i18n="scope.title">Canonical scope</h2></header>
+          <div id="scope-list" class="compact-list"></div>
+        </section>
+        <section class="section-card" aria-labelledby="evidence-title">
+          <header class="section-heading"><h2 id="evidence-title" data-i18n="evidence.title">Evidence state</h2></header>
+          <div id="evidence-list" class="compact-list"></div>
+        </section>
+        <section class="section-card" aria-labelledby="lean-title">
+          <header class="section-heading"><h2 id="lean-title" data-i18n="lean.title">Lean audit state</h2></header>
+          <div id="lean-list" class="compact-list"></div>
+        </section>
+        <section class="section-card" aria-labelledby="changes-title">
+          <header class="section-heading"><h2 id="changes-title" data-i18n="changes.title">Change governance</h2></header>
+          <div id="change-list" class="compact-list"></div>
+        </section>
+      </div>
+
+      <section class="section-card" aria-labelledby="records-title">
+        <header class="section-heading"><h2 id="records-title" data-i18n="records.title">Workspace research record</h2></header>
+        <div id="workspace-record" class="workspace-record"></div>
+      </section>
+    </div>
+  </main>
+
+  <dialog id="help-dialog" class="modal" aria-labelledby="help-title">
+    <h2 id="help-title" data-i18n="help.title">How integrated dossiers behave</h2>
+    <ul>
+      <li data-i18n="help.readonly">The Workbench, evidence, change and Lean ledgers remain read-only.</li>
+      <li data-i18n="help.scope">Only selected workspace nodes, induced edges and their matching records are included.</li>
+      <li data-i18n="help.fingerprint">The SHA-256 fingerprint covers dossier content but excludes the export timestamp.</li>
+      <li data-i18n="help.boundary">Readiness is a workflow signal, not a proof or scientific confidence score.</li>
+    </ul>
+    <form method="dialog"><button class="secondary-button" type="submit" data-i18n="help.close">Close</button></form>
+  </dialog>
+
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+</body>
+</html>

@@ -16,6 +16,8 @@ All notable changes are documented here. The project follows semantic versioning
 - Risk-prioritized change detection, local decisions and portable JSON/Markdown review packets.
 - Bilingual, offline-capable `formalization.html` queue for canonical Lean imports, declarations and bounded targets.
 - Deterministic browser/CLI Lean probe generation with toolchain notes, rename handling and portable audit packets.
+- Bilingual, offline-capable `dossiers.html` integration of campaign scope, evidence, changes and Lean audits.
+- Fingerprinted JSON/Markdown research handoffs with six bounded readiness gates and prioritized actions.
 
 ### Changed
 
@@ -24,6 +26,7 @@ All notable changes are documented here. The project follows semantic versioning
 - PWA, public-surface, accessibility, coverage and browser gates now include the Evidence Review Center.
 - PWA, public-surface, accessibility, coverage and browser gates now include Canonical Change Review.
 - PWA, public-surface, accessibility, coverage and browser gates now include Lean Target Audit.
+- PWA, public-surface, accessibility, coverage and browser gates now include Research Dossiers.
 
 ## [2.6.0] — 2026-06-22
 

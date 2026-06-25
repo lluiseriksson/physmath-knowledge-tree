@@ -100,11 +100,11 @@ for (const shortcut of manifest.shortcuts ?? []) {
   const canonical = shortcut.url === './' ? './' : shortcut.url.split(/[?#]/u)[0];
   ensure(shell.includes(canonical), `Manifest shortcut is missing from the offline shell: ${shortcut.url}`);
 }
-ensure(shortcutUrls.has('./') && shortcutUrls.has('./learning.html') && shortcutUrls.has('./workbench.html') && shortcutUrls.has('./evidence.html') && shortcutUrls.has('./changes.html') && shortcutUrls.has('./formalization.html'), 'Manifest needs shortcuts for research, learning, workbench, evidence, change-review and Lean-audit surfaces');
+ensure(shortcutUrls.has('./') && shortcutUrls.has('./learning.html') && shortcutUrls.has('./workbench.html') && shortcutUrls.has('./evidence.html') && shortcutUrls.has('./changes.html') && shortcutUrls.has('./formalization.html') && shortcutUrls.has('./dossiers.html'), 'Manifest needs shortcuts for research, learning, workbench, evidence, change-review, Lean-audit and dossier surfaces');
 ensure(manifest.start_url === './' && manifest.scope === './', 'Manifest must remain repository-subpath safe');
 ensure(manifest.id === './', 'Manifest app id must be stable and subpath safe');
 
-for (const page of ['index.html', 'learning.html', 'workbench.html', 'evidence.html', 'changes.html', 'formalization.html', 'offline.html']) {
+for (const page of ['index.html', 'learning.html', 'workbench.html', 'evidence.html', 'changes.html', 'formalization.html', 'dossiers.html', 'offline.html']) {
   const html = readFileSync(join(root, page), 'utf8');
   for (const match of html.matchAll(/(?:src|href)="(\.\/[^\"]+)"/g)) {
     const asset = match[1].split(/[?#]/)[0];

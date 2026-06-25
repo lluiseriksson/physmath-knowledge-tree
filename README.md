@@ -1,6 +1,6 @@
 # PhysMath Knowledge Tree
 
-[Versión en español](./README.es.md) · [Live research graph](https://lluiseriksson.github.io/physmath-knowledge-tree/) · [Learning map](https://lluiseriksson.github.io/physmath-knowledge-tree/learning.html) · [Research workbench](https://lluiseriksson.github.io/physmath-knowledge-tree/workbench.html) · [Evidence review](https://lluiseriksson.github.io/physmath-knowledge-tree/evidence.html) · [Change review](https://lluiseriksson.github.io/physmath-knowledge-tree/changes.html) · [Lean target audit](https://lluiseriksson.github.io/physmath-knowledge-tree/formalization.html)
+[Versión en español](./README.es.md) · [Live research graph](https://lluiseriksson.github.io/physmath-knowledge-tree/) · [Learning map](https://lluiseriksson.github.io/physmath-knowledge-tree/learning.html) · [Research workbench](https://lluiseriksson.github.io/physmath-knowledge-tree/workbench.html) · [Evidence review](https://lluiseriksson.github.io/physmath-knowledge-tree/evidence.html) · [Change review](https://lluiseriksson.github.io/physmath-knowledge-tree/changes.html) · [Lean target audit](https://lluiseriksson.github.io/physmath-knowledge-tree/formalization.html) · [Research dossiers](https://lluiseriksson.github.io/physmath-knowledge-tree/dossiers.html)
 
 A computable, evidence-labelled graph for exploring connections between physics, mathematics, open problems and Lean formalization targets. The repository also ships a bilingual prerequisite map, local research tools, evidence governance and a reproducible Lean-target audit queue.
 
@@ -10,7 +10,7 @@ A computable, evidence-labelled graph for exploring connections between physics,
 ![CodeQL](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/workflows/codeql.yml/badge.svg)
 ![License: MIT + CC BY 4.0](https://img.shields.io/badge/license-MIT%20%2B%20CC%20BY%204.0-blue)
 
-## Six complementary experiences
+## Seven complementary experiences
 
 ### Research graph — `index.html`
 
@@ -50,6 +50,12 @@ See [`docs/CANONICAL_CHANGE_REVIEW.md`](./docs/CANONICAL_CHANGE_REVIEW.md).
 The local audit queue enumerates canonical Lean imports, declaration names and bounded targets. It records toolchain-specific outcomes, supports rename/replacement notes and generates reproducible Lean files containing imports and `#check` commands. Successful compilation checks names only; it never certifies a graph claim.
 
 See [`docs/LEAN_TARGET_AUDIT.md`](./docs/LEAN_TARGET_AUDIT.md).
+
+### Research Dossier Center — `dossiers.html`
+
+The dossier center combines one Workbench campaign with its scoped evidence reviews, Lean-name audits and canonical-change decisions. It computes bounded readiness gates and exports fingerprinted JSON or Markdown handoffs without writing any source ledger or canonical graph file.
+
+See [`docs/RESEARCH_DOSSIER_CENTER.md`](./docs/RESEARCH_DOSSIER_CENTER.md).
 
 ### Learning map — `learning.html`
 
@@ -155,6 +161,7 @@ npm run build
 | `npm run validate:learning` | Check bilingual curriculum taxonomies, prerequisites and DAG structure. |
 | `npm run validate:views` | Confirm generated Markdown/Mermaid projections match canonical JSON. |
 | `npm run lean:probe -- -- [options]` | Generate a deterministic Lean import/declaration probe from canonical node metadata. |
+| `npm run dossier:build -- -- --workspace-file <file>` | Build a fingerprinted integrated research dossier from portable local exports. |
 | `npm test` | Run graph, search, layout, path, persistence, server and data tests. |
 | `npm run test:coverage` | Enforce 100% line, branch and function coverage for the explicit core module set. |
 | `npm run test:e2e` | Exercise research, learning, local-review and Lean-target-audit flows in a real Chromium-family browser. |
@@ -166,7 +173,7 @@ npm run build
 
 ```text
 .
-├── index.html / learning.html / workbench.html / evidence.html / changes.html / formalization.html  # Six application surfaces
+├── index.html / learning.html / workbench.html / evidence.html / changes.html / formalization.html / dossiers.html  # Seven application surfaces
 ├── graph/                        # Canonical research graph, schemas and reference registry
 ├── evaluation/                   # Reproducible scenarios, rubric and generated results
 ├── PhysMathKnowledgeTree/        # Lean package
@@ -193,7 +200,7 @@ Start with [`AGENTS.md`](./AGENTS.md) and [`docs/agent-protocol.md`](./docs/agen
 
 ## Accessibility, privacy and security
 
-All six applications have keyboard-accessible alternatives to the SVG graph, visible focus states, text labels in addition to color, reduced-motion support and responsive layouts. The built artifact is also exercised by a dependency-free Chromium smoke suite covering critical flows, runtime accessibility invariants and offline fallback; see [`docs/BROWSER_TESTING.md`](./docs/BROWSER_TESTING.md). No analytics, accounts, cookies, remote fonts or third-party runtime scripts are used. Learning progress, research workspaces, evidence/change-review notes and Lean-target audit records remain in browser storage unless explicitly exported.
+All seven applications have keyboard-accessible alternatives to the SVG graph, visible focus states, text labels in addition to color, reduced-motion support and responsive layouts. The built artifact is also exercised by a dependency-free Chromium smoke suite covering critical flows, runtime accessibility invariants and offline fallback; see [`docs/BROWSER_TESTING.md`](./docs/BROWSER_TESTING.md). No analytics, accounts, cookies, remote fonts or third-party runtime scripts are used. Learning progress, research workspaces, evidence/change-review notes, Lean-target audit records and dossier preferences remain in browser storage unless explicitly exported.
 
 The application applies a restrictive Content Security Policy, validates import data, uses no `innerHTML` for canonical graph content and is scanned by CodeQL. See [`SECURITY.md`](./SECURITY.md). The reproducible local results are recorded in [`docs/VERIFICATION.md`](./docs/VERIFICATION.md).
 
