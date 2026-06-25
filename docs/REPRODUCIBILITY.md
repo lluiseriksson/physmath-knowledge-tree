@@ -38,6 +38,17 @@ npm run test:e2e
 
 The browser runners auto-detect Chrome, Chromium or Edge. Set `BROWSER_BIN=/path/to/browser` when necessary. They use fresh profiles, loopback-only servers and the Chrome DevTools Protocol; they add no npm dependency. See [`docs/BROWSER_TESTING.md`](./BROWSER_TESTING.md) for covered flows and limitations.
 
+## Fingerprinted research capsules
+
+Build a portable campaign handoff from a verified dossier and reproducible-run manifests:
+
+```bash
+npm run capsule:build -- -- --dossier-file exports/dossier.json --run-file .run-ledger/manifests/run.json
+npm run capsule:verify -- -- --capsule-file .run-ledger/capsules/campaign.json --artifact-root .
+```
+
+The browser verifies dossier/run metadata and fingerprints. The CLI verifier can additionally hash repository-relative artifact files. A ready capsule is a reproducibility statement about recorded inputs and executions, not a proof or confidence promotion.
+
 ## Evidence-aware ad-hoc routes
 
 The interactive research app and CLI share the same deterministic planner:

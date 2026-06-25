@@ -46,6 +46,8 @@ The research-dossier pass loads controlled workspace, evidence, change-review an
 
 The reproducible-run pass creates a canonical-node-linked run, fingerprints and verifies it, checks artifact completeness, bulk-classifies the selected record, switches to Spanish and confirms local persistence. The separate CLI tests execute success and failure commands with `shell: false`, preserve child exit codes and verify artifact/log hashes.
 
+The research-capsule pass imports a verified dossier, selects scope-linked run manifests, evaluates seven reproducibility gates, switches to Spanish and confirms a single fingerprinted handoff. Separate CLI tests verify metadata and local artifact bytes without executing capsule contents.
+
 ## Boundary
 
 This is a deterministic functional and offline-readiness smoke test, not an exhaustive browser-certification programme. It currently targets one Chromium-family engine and does not replace manual assistive-technology review, visual-regression testing, performance profiling or cross-browser testing.

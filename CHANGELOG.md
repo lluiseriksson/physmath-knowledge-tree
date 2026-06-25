@@ -24,6 +24,8 @@ All notable changes are documented here. The project follows semantic versioning
 - Bilingual, offline-capable Reproducible Run Ledger with local filtering, fingerprint verification and portable packets.
 - Shell-free run recorder with bounded timeouts, opt-in environment metadata, hashed artifacts/logs and failure-preserving manifests.
 - License re-review deadlines, risk bands and a second frontier-density layer that reports remaining weaknesses without weakening the hard governance gate.
+- Bilingual, offline-capable Research Capsule Center joining one verified dossier with selected reproducible runs.
+- Fingerprinted JSON/Markdown capsules plus CLI verification of local artifact size and SHA-256.
 
 ### Changed
 
@@ -35,6 +37,7 @@ All notable changes are documented here. The project follows semantic versioning
 - PWA, public-surface, accessibility, coverage and browser gates now include Research Dossiers.
 - Repository coverage and generated-artifact gates now include the Frontier Mathematics Corpus Atlas.
 - PWA, public-surface, accessibility, coverage and browser gates now include the Reproducible Run Ledger.
+- PWA, public-surface, accessibility, coverage and browser gates now include Research Capsules.
 
 ## [2.6.0] — 2026-06-22
 

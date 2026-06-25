@@ -61,6 +61,12 @@ lake build
 
 If Lean is unavailable locally, do not claim the Lean gate passed; state that CI must perform it.
 
+<!-- RESEARCH_CAPSULE_PROTOCOL_START -->
+## Research capsule protocol
+
+Before presenting a computational campaign as reproducible, bind its verified research dossier to the selected run manifests with a Research Capsule. Verify run fingerprints and artifact hashes, disclose failed, timed-out, inconclusive and unlinked executions, and preserve the capsule fingerprint in the handoff. A ready capsule certifies recorded reproducibility metadata; it does not prove a theorem, validate novelty or promote graph confidence.
+<!-- RESEARCH_CAPSULE_PROTOCOL_END -->
+
 <!-- YANG_MILLS_AGENT_PACK_START -->
 ## Yang–Mills domain-pack protocol
 

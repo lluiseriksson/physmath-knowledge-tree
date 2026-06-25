@@ -12,6 +12,7 @@ export const PUBLIC_SOURCE_FILES = Object.freeze([
   'formalization.html',
   'dossiers.html',
   'runs.html',
+  'capsules.html',
   'manifest.webmanifest',
   'offline.html',
   'robots.txt',

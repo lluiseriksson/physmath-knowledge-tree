@@ -1,6 +1,6 @@
 # PhysMath Knowledge Tree
 
-[Versión en español](./README.es.md) · [Live research graph](https://lluiseriksson.github.io/physmath-knowledge-tree/) · [Learning map](https://lluiseriksson.github.io/physmath-knowledge-tree/learning.html) · [Research workbench](https://lluiseriksson.github.io/physmath-knowledge-tree/workbench.html) · [Evidence review](https://lluiseriksson.github.io/physmath-knowledge-tree/evidence.html) · [Change review](https://lluiseriksson.github.io/physmath-knowledge-tree/changes.html) · [Lean target audit](https://lluiseriksson.github.io/physmath-knowledge-tree/formalization.html) · [Research dossiers](https://lluiseriksson.github.io/physmath-knowledge-tree/dossiers.html) · [Reproducible runs](https://lluiseriksson.github.io/physmath-knowledge-tree/runs.html)
+[Versión en español](./README.es.md) · [Live research graph](https://lluiseriksson.github.io/physmath-knowledge-tree/) · [Learning map](https://lluiseriksson.github.io/physmath-knowledge-tree/learning.html) · [Research workbench](https://lluiseriksson.github.io/physmath-knowledge-tree/workbench.html) · [Evidence review](https://lluiseriksson.github.io/physmath-knowledge-tree/evidence.html) · [Change review](https://lluiseriksson.github.io/physmath-knowledge-tree/changes.html) · [Lean target audit](https://lluiseriksson.github.io/physmath-knowledge-tree/formalization.html) · [Research dossiers](https://lluiseriksson.github.io/physmath-knowledge-tree/dossiers.html) · [Reproducible runs](https://lluiseriksson.github.io/physmath-knowledge-tree/runs.html) · [Research capsules](https://lluiseriksson.github.io/physmath-knowledge-tree/capsules.html)
 
 A computable, evidence-labelled graph for exploring connections between physics, mathematics, open problems and Lean formalization targets. The repository also ships a bilingual prerequisite map, local research tools, evidence governance and a reproducible Lean-target audit queue.
 
@@ -10,7 +10,7 @@ A computable, evidence-labelled graph for exploring connections between physics,
 ![CodeQL](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/workflows/codeql.yml/badge.svg)
 ![License: MIT + CC BY 4.0](https://img.shields.io/badge/license-MIT%20%2B%20CC%20BY%204.0-blue)
 
-## Eight complementary experiences
+## Nine complementary experiences
 
 ### Research graph — `index.html`
 
@@ -62,6 +62,12 @@ See [`docs/RESEARCH_DOSSIER_CENTER.md`](./docs/RESEARCH_DOSSIER_CENTER.md).
 The local-first run ledger records planned and completed computations as argument vectors, content-addressed artifacts, logs, environment/toolchain metadata and bounded outcomes. The companion `npm run run:record` CLI executes with `shell: false`, preserves failing exit codes and emits fingerprinted manifests without promoting graph confidence.
 
 See [`docs/REPRODUCIBLE_RUN_LEDGER.md`](./docs/REPRODUCIBLE_RUN_LEDGER.md).
+
+### Research Capsule Center — `capsules.html`
+
+The capsule center binds one verified research dossier to selected reproducible-run manifests, independently checks run fingerprints, scope coverage, outcomes, provenance and artifact metadata, and exports a single fingerprinted JSON or Markdown handoff. The companion CLI can hash the local artifact files without mutating source ledgers or promoting graph confidence.
+
+See [`docs/RESEARCH_CAPSULE_CENTER.md`](./docs/RESEARCH_CAPSULE_CENTER.md).
 
 ### Learning map — `learning.html`
 
@@ -184,9 +190,11 @@ npm run build
 | `npm run query:frontier-corpus -- <command>` | Query source decisions, risks, readiness priorities, holdouts and snapshot manifests. |
 | `npm run dossier:build -- -- --workspace-file <file>` | Build a fingerprinted integrated research dossier from portable local exports. |
 | `npm run run:record -- -- --id <id> --title <title> -- <command...>` | Execute without a shell and write a fingerprinted run manifest with hashed artifacts and logs. |
+| `npm run capsule:build -- -- --dossier-file <file> --run-file <file>` | Build a fingerprinted capsule from a verified dossier and selected run manifests. |
+| `npm run capsule:verify -- -- --capsule-file <file> --artifact-root <dir>` | Verify capsule metadata and, optionally, local artifact bytes and SHA-256 hashes. |
 | `npm test` | Run graph, search, layout, path, persistence, server and data tests. |
 | `npm run test:coverage` | Enforce 100% line, branch and function coverage for the explicit core module set. |
-| `npm run test:e2e` | Exercise research, learning, local-review and Lean-target-audit and reproducible-run flows in a real Chromium-family browser. |
+| `npm run test:e2e` | Exercise research, learning, local-review and Lean-target-audit, reproducible-run and research-capsule flows in a real Chromium-family browser. |
 | `npm run generate:views` | Regenerate deterministic projections in `views/`. |
 | `npm run build` | Produce a deployable static site in `dist/`. |
 | `npm run check` | Run syntax, schemas, curation, evaluation, accessibility, full core coverage, reproducible build verification and browser smoke testing. |
@@ -195,7 +203,7 @@ npm run build
 
 ```text
 .
-├── index.html / learning.html / workbench.html / evidence.html / changes.html / formalization.html / dossiers.html / runs.html  # Eight application surfaces
+├── index.html / learning.html / workbench.html / evidence.html / changes.html / formalization.html / dossiers.html / runs.html / capsules.html  # Nine application surfaces
 ├── graph/                        # Canonical research graph, schemas and reference registry
 ├── evaluation/                   # Reproducible scenarios, rubric and generated results
 ├── PhysMathKnowledgeTree/        # Lean package
@@ -223,7 +231,7 @@ Start with [`AGENTS.md`](./AGENTS.md) and [`docs/agent-protocol.md`](./docs/agen
 
 ## Accessibility, privacy and security
 
-All eight applications have keyboard-accessible alternatives to the SVG graph, visible focus states, text labels in addition to color, reduced-motion support and responsive layouts. The built artifact is also exercised by a dependency-free Chromium smoke suite covering critical flows, runtime accessibility invariants and offline fallback; see [`docs/BROWSER_TESTING.md`](./docs/BROWSER_TESTING.md). No analytics, accounts, cookies, remote fonts or third-party runtime scripts are used. Learning progress, research workspaces, evidence/change-review notes, Lean-target audit records, dossier preferences and run-ledger records remain in browser storage unless explicitly exported.
+All nine applications have keyboard-accessible alternatives to the SVG graph, visible focus states, text labels in addition to color, reduced-motion support and responsive layouts. The built artifact is also exercised by a dependency-free Chromium smoke suite covering critical flows, runtime accessibility invariants and offline fallback; see [`docs/BROWSER_TESTING.md`](./docs/BROWSER_TESTING.md). No analytics, accounts, cookies, remote fonts or third-party runtime scripts are used. Learning progress, research workspaces, evidence/change-review notes, Lean-target audit records, dossier preferences and run-ledger records remain in browser storage; research capsules exist only when explicitly built or imported.
 
 The application applies a restrictive Content Security Policy, validates import data, uses no `innerHTML` for canonical graph content and is scanned by CodeQL. See [`SECURITY.md`](./SECURITY.md). The reproducible local results are recorded in [`docs/VERIFICATION.md`](./docs/VERIFICATION.md).
 

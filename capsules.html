@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en" data-theme="system">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Combine one verified research dossier with reproducible run manifests into a fingerprinted research capsule.">
+  <meta name="theme-color" content="#f4f7fb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#09111f" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>PhysMath Knowledge Tree — Research capsules</title>
+  <link rel="canonical" href="https://lluiseriksson.github.io/physmath-knowledge-tree/capsules.html">
+  <link rel="icon" href="./assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./assets/icons/icon-192.png">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./src/research.css">
+  <link rel="stylesheet" href="./src/capsule.css">
+  <script type="module" src="./src/capsule-app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#capsule-center" data-i18n="nav.skip">Skip to research capsules</a>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="PhysMath Knowledge Tree home">
+      <img src="./assets/icons/icon.svg" width="42" height="42" alt="">
+      <span><strong>PhysMath Knowledge Tree</strong><small data-i18n="app.tagline">Fingerprint dossiers, runs and artifacts together</small></span>
+    </a>
+    <nav class="primary-nav" aria-label="Primary navigation" data-i18n-aria="nav.primary">
+      <a href="./" data-i18n="nav.research">Research graph</a>
+      <a href="./learning.html" data-i18n="nav.learning">Learning map</a>
+      <a href="./workbench.html" data-i18n="nav.workbench">Workbench</a>
+      <a href="./evidence.html" data-i18n="nav.evidence">Evidence</a>
+      <a href="./changes.html" data-i18n="nav.changes">Changes</a>
+      <a href="./formalization.html" data-i18n="nav.formalization">Lean audit</a>
+      <a href="./dossiers.html" data-i18n="nav.dossiers">Dossiers</a>
+      <a href="./runs.html" data-i18n="nav.runs">Runs</a>
+      <a href="./capsules.html" aria-current="page" data-i18n="nav.capsules">Capsules</a>
+      <a href="https://github.com/lluiseriksson/physmath-knowledge-tree" rel="noreferrer" data-i18n="nav.repository">Repository</a>
+    </nav>
+    <div class="header-actions">
+      <select id="language" aria-label="Interface language" data-i18n-aria="header.language"><option value="en">EN</option><option value="es">ES</option></select>
+      <button id="theme" class="icon-button" type="button" aria-label="Change theme" data-i18n-aria="header.theme">◐</button>
+      <button id="help" class="icon-button" type="button" aria-label="Research capsule help" data-i18n-aria="header.help">?</button>
+    </div>
+  </header>
+
+  <div id="loading" class="loading" role="status" aria-live="polite"><span class="spinner" aria-hidden="true"></span><span data-i18n="loading">Loading canonical nodes and local runs…</span></div>
+
+  <main id="capsule-center" class="capsule-layout" hidden>
+    <aside class="control-panel" aria-labelledby="controls-title">
+      <div class="panel-heading"><div><p class="eyebrow" data-i18n="controls.eyebrow">Portable research handoff</p><h1 id="controls-title" data-i18n="controls.title">Capsule builder</h1></div></div>
+
+      <section class="panel-section" aria-labelledby="inputs-title">
+        <h2 id="inputs-title" data-i18n="inputs.title">Inputs</h2>
+        <label for="capsule-title" data-i18n="inputs.name">Capsule title</label>
+        <input id="capsule-title" type="text" maxlength="300" data-i18n-placeholder="inputs.namePlaceholder" placeholder="Research capsule">
+        <div class="stacked-actions">
+          <button id="import-dossier" class="primary-button" type="button" data-i18n="inputs.dossier">Import dossier JSON</button>
+          <button id="load-local-runs" class="secondary-button" type="button" data-i18n="inputs.localRuns">Reload local run ledger</button>
+          <button id="import-runs" class="secondary-button" type="button" data-i18n="inputs.runFile">Import run ledger or manifest</button>
+        </div>
+        <input id="dossier-file" type="file" accept="application/json,.json" aria-label="Research dossier import file" data-i18n-aria="inputs.dossierFile" hidden>
+        <input id="run-file" type="file" accept="application/json,.json" aria-label="Run ledger import file" data-i18n-aria="inputs.runImportFile" hidden>
+        <p id="input-status" class="input-status" aria-live="polite"></p>
+      </section>
+
+      <section class="panel-section" aria-labelledby="summary-title">
+        <h2 id="summary-title" data-i18n="summary.title">Capsule summary</h2>
+        <dl class="stats-grid">
+          <div><dt data-i18n="summary.scope">Scope nodes</dt><dd id="stat-scope">0</dd></div>
+          <div><dt data-i18n="summary.relevant">Relevant runs</dt><dd id="stat-relevant">0</dd></div>
+          <div><dt data-i18n="summary.selected">Selected runs</dt><dd id="stat-selected">0</dd></div>
+          <div><dt data-i18n="summary.passed">Passed</dt><dd id="stat-passed">0</dd></div>
+          <div><dt data-i18n="summary.artifacts">Artifacts</dt><dd id="stat-artifacts">0</dd></div>
+          <div><dt data-i18n="summary.actions">Open actions</dt><dd id="stat-actions">0</dd></div>
+        </dl>
+      </section>
+
+      <section class="panel-section" aria-labelledby="selection-title">
+        <h2 id="selection-title" data-i18n="selection.title">Run selection</h2>
+        <div class="stacked-actions">
+          <button id="select-relevant" class="secondary-button" type="button" data-i18n="selection.relevant">Select scope-linked</button>
+          <button id="select-ready" class="secondary-button" type="button" data-i18n="selection.ready">Select passed & fingerprinted</button>
+          <button id="clear-selection" class="secondary-button" type="button" data-i18n="selection.clear">Clear selection</button>
+        </div>
+      </section>
+
+      <section class="panel-section" aria-labelledby="export-title">
+        <h2 id="export-title" data-i18n="export.title">Build and verify</h2>
+        <div class="stacked-actions">
+          <button id="build-capsule" class="primary-button" type="button" disabled data-i18n="export.build">Build capsule</button>
+          <button id="export-json" class="secondary-button" type="button" disabled data-i18n="export.json">Export capsule JSON</button>
+          <button id="export-markdown" class="secondary-button" type="button" disabled data-i18n="export.markdown">Export capsule Markdown</button>
+          <button id="verify-import" class="secondary-button" type="button" data-i18n="export.verify">Verify capsule JSON</button>
+        </div>
+        <input id="capsule-file" type="file" accept="application/json,.json" aria-label="Research capsule verification file" data-i18n-aria="export.file" hidden>
+      </section>
+    </aside>
+
+    <div class="capsule-content">
+      <section class="hero-card" aria-labelledby="hero-title">
+        <div><p class="eyebrow" data-i18n="hero.eyebrow">Reproducible campaign boundary</p><h2 id="hero-title" data-i18n="hero.title">Bind intent, execution and artifacts into one verifiable handoff</h2><p data-i18n="hero.body">A capsule carries the verified dossier and selected run manifests. It can expose gaps, but never turns successful commands into mathematical proof.</p></div>
+        <div id="readiness-badge" class="privacy-badge" data-i18n="hero.empty">Import a dossier</div>
+      </section>
+
+      <section class="capsule-card" aria-labelledby="dossier-title">
+        <header class="section-heading"><div><p class="eyebrow" data-i18n="dossier.eyebrow">Source dossier</p><h2 id="dossier-title" data-i18n="dossier.title">Campaign scope</h2></div></header>
+        <div id="dossier-summary" class="placeholder" data-i18n="dossier.empty">Import a fingerprinted research dossier to begin.</div>
+      </section>
+
+      <section class="capsule-card" aria-labelledby="runs-title">
+        <header class="section-heading"><div><p class="eyebrow" data-i18n="runs.eyebrow">Execution evidence</p><h2 id="runs-title" data-i18n="runs.title">Run manifests</h2></div><span id="run-count" aria-live="polite"></span></header>
+        <div id="run-list" class="capsule-run-list"></div>
+        <div id="run-empty" class="empty-state"><strong data-i18n="runs.emptyTitle">No scope-linked runs</strong><p data-i18n="runs.emptyBody">Import or record runs with canonical node IDs from the dossier.</p></div>
+      </section>
+
+      <section class="capsule-card" aria-labelledby="gates-title">
+        <header class="section-heading"><div><p class="eyebrow" data-i18n="gates.eyebrow">Release discipline</p><h2 id="gates-title" data-i18n="gates.title">Capsule gates</h2></div></header>
+        <div id="gate-list" class="gate-grid"><p class="placeholder" data-i18n="gates.empty">Build a capsule to evaluate its gates.</p></div>
+      </section>
+
+      <section class="capsule-card" aria-labelledby="actions-title">
+        <header class="section-heading"><div><p class="eyebrow" data-i18n="actions.eyebrow">Next work</p><h2 id="actions-title" data-i18n="actions.title">Open actions</h2></div></header>
+        <div id="action-list" class="action-list"><p class="placeholder" data-i18n="actions.empty">No capsule has been built.</p></div>
+      </section>
+    </div>
+  </main>
+
+  <dialog id="help-dialog" class="modal">
+    <h2 data-i18n="help.title">How research capsules behave</h2>
+    <ul>
+      <li data-i18n="help.dossier">The imported dossier fingerprint is verified before use.</li>
+      <li data-i18n="help.runs">Run fingerprints, scope links and artifact metadata are checked independently.</li>
+      <li data-i18n="help.files">The browser verifies metadata only; use capsule:verify to hash local artifact files.</li>
+      <li data-i18n="help.claims">A ready capsule is a reproducibility handoff, not proof or confidence promotion.</li>
+    </ul>
+    <form method="dialog"><button class="secondary-button" type="submit" data-i18n="help.close">Close</button></form>
+  </dialog>
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+</body>
+</html>

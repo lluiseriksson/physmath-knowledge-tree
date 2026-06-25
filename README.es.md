@@ -1,12 +1,12 @@
 # Árbol de conocimiento Físico-Matemático
 
-[English version](./README.md) · [Grafo de investigación](https://lluiseriksson.github.io/physmath-knowledge-tree/) · [Mapa de aprendizaje](https://lluiseriksson.github.io/physmath-knowledge-tree/learning.html) · [Banco de investigación](https://lluiseriksson.github.io/physmath-knowledge-tree/workbench.html) · [Revisión de evidencia](https://lluiseriksson.github.io/physmath-knowledge-tree/evidence.html) · [Revisión de cambios](https://lluiseriksson.github.io/physmath-knowledge-tree/changes.html) · [Auditoría Lean](https://lluiseriksson.github.io/physmath-knowledge-tree/formalization.html) · [Dossiers de investigación](https://lluiseriksson.github.io/physmath-knowledge-tree/dossiers.html) · [Ejecuciones reproducibles](https://lluiseriksson.github.io/physmath-knowledge-tree/runs.html)
+[English version](./README.md) · [Grafo de investigación](https://lluiseriksson.github.io/physmath-knowledge-tree/) · [Mapa de aprendizaje](https://lluiseriksson.github.io/physmath-knowledge-tree/learning.html) · [Banco de investigación](https://lluiseriksson.github.io/physmath-knowledge-tree/workbench.html) · [Revisión de evidencia](https://lluiseriksson.github.io/physmath-knowledge-tree/evidence.html) · [Revisión de cambios](https://lluiseriksson.github.io/physmath-knowledge-tree/changes.html) · [Auditoría Lean](https://lluiseriksson.github.io/physmath-knowledge-tree/formalization.html) · [Dossiers de investigación](https://lluiseriksson.github.io/physmath-knowledge-tree/dossiers.html) · [Ejecuciones reproducibles](https://lluiseriksson.github.io/physmath-knowledge-tree/runs.html) · [Cápsulas de investigación](https://lluiseriksson.github.io/physmath-knowledge-tree/capsules.html)
 
 Grafo computable y etiquetado por evidencia para explorar conexiones entre física, matemáticas, problemas abiertos y objetivos de formalización en Lean. La repo también incluye un mapa bilingüe, herramientas locales de investigación, gobernanza de evidencia y una auditoría reproducible de objetivos Lean.
 
 ![Interfaz del grafo de investigación](./docs/research-screenshot.png)
 
-## Ocho experiencias complementarias
+## Nueve experiencias complementarias
 
 ### Grafo de investigación — `index.html`
 
@@ -58,6 +58,12 @@ Consulta [`docs/RESEARCH_DOSSIER_CENTER.md`](./docs/RESEARCH_DOSSIER_CENTER.md).
 El registro local conserva planes y ejecuciones como vectores de argumentos, artefactos con SHA-256, logs, entorno/toolchain y resultados acotados. La CLI `npm run run:record` usa `shell: false`, conserva los códigos de fallo y genera manifiestos con huella sin elevar la confianza del grafo.
 
 Consulta [`docs/REPRODUCIBLE_RUN_LEDGER.md`](./docs/REPRODUCIBLE_RUN_LEDGER.md).
+
+### Centro de cápsulas de investigación — `capsules.html`
+
+El centro une un dossier verificado con manifiestos de ejecuciones reproducibles seleccionadas. Comprueba por separado huellas, cobertura del alcance, resultados, procedencia y metadatos de artefactos, y exporta una entrega JSON o Markdown con huella única. La CLI complementaria puede verificar los bytes y SHA-256 locales sin modificar los almacenes de origen ni elevar la confianza del grafo.
+
+Consulta [`docs/RESEARCH_CAPSULE_CENTER.md`](./docs/RESEARCH_CAPSULE_CENTER.md).
 
 ### Mapa de aprendizaje — `learning.html`
 
@@ -148,9 +154,9 @@ npm run build
 
 ## Calidad y seguridad
 
-La repo valida IDs, referencias, endpoints, niveles de evidencia, colecciones, estadísticas, traducciones, taxonomías y ausencia de ciclos. Las pruebas cubren recorridos, caminos mínimos, búsqueda, evaluación, layout, persistencia, servidor y datos, con 100% de cobertura de líneas, ramas y funciones en el conjunto explícito de módulos instrumentados por Node. El artefacto `dist/` se prueba además en Chromium mediante búsqueda, fichas, rutas, cambio de idioma, accesibilidad dinámica, fallback offline, persistencia de progreso, el banco de investigación, las colas de evidencia/cambios, la auditoría de objetivos Lean, el centro de dossiers y el registro de ejecuciones reproducibles. También se verifican enlaces, accesibilidad estática, PWA, CSP, acciones fijadas por SHA, formato, build reproducible, CodeQL y despliegue Pages.
+La repo valida IDs, referencias, endpoints, niveles de evidencia, colecciones, estadísticas, traducciones, taxonomías y ausencia de ciclos. Las pruebas cubren recorridos, caminos mínimos, búsqueda, evaluación, layout, persistencia, servidor y datos, con 100% de cobertura de líneas, ramas y funciones en el conjunto explícito de módulos instrumentados por Node. El artefacto `dist/` se prueba además en Chromium mediante búsqueda, fichas, rutas, cambio de idioma, accesibilidad dinámica, fallback offline, persistencia de progreso, el banco de investigación, las colas de evidencia/cambios, la auditoría de objetivos Lean, el centro de dossiers, el registro de ejecuciones reproducibles y el centro de cápsulas. También se verifican enlaces, accesibilidad estática, PWA, CSP, acciones fijadas por SHA, formato, build reproducible, CodeQL y despliegue Pages.
 
-No hay analítica, cuentas, cookies, fuentes remotas ni scripts de terceros. El progreso educativo, los espacios de investigación, las notas de evidencia/cambios, los registros de auditoría Lean, las preferencias del dossier y las ejecuciones registradas permanecen en el navegador salvo exportación explícita. Los resultados reproducibles están en [`docs/VERIFICATION.md`](./docs/VERIFICATION.md) y la metodología E2E en [`docs/BROWSER_TESTING.md`](./docs/BROWSER_TESTING.md).
+No hay analítica, cuentas, cookies, fuentes remotas ni scripts de terceros. El progreso educativo, los espacios de investigación, las notas de evidencia/cambios, los registros de auditoría Lean, las preferencias del dossier y las ejecuciones registradas permanecen en el navegador; las cápsulas solo existen cuando se construyen o importan explícitamente. Los resultados reproducibles están en [`docs/VERIFICATION.md`](./docs/VERIFICATION.md) y la metodología E2E en [`docs/BROWSER_TESTING.md`](./docs/BROWSER_TESTING.md).
 
 ## Protocolo de investigación
 
