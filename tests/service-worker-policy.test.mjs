@@ -238,6 +238,10 @@ test('navigation uses network-first canonical caching and shell fallbacks while 
     url: `${origin}/app/dossiers.html?workspace=local`, method: 'GET', mode: 'navigate',
   });
   assert.match(await dossiers.text(), /shell:\.\/dossiers\.html/);
+  const runs = await harness.dispatchFetch({
+    url: `${origin}/app/runs.html?status=passed`, method: 'GET', mode: 'navigate',
+  });
+  assert.match(await runs.text(), /shell:\.\/runs\.html/);
   const rootPage = await harness.dispatchFetch({
     url: `${origin}/app/`, method: 'GET', mode: 'navigate',
   });

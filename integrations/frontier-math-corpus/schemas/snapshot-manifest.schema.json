@@ -1,0 +1,247 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lluiseriksson.github.io/physmath-knowledge-tree/integrations/frontier-math-corpus/schemas/snapshot-manifest.schema.json",
+  "title": "Frontier Mathematics Corpus snapshot manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "source_id",
+    "atlas_pack_version",
+    "registry_reviewed_on",
+    "retrieved_at",
+    "upstream",
+    "scope",
+    "governance",
+    "quality",
+    "review"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "source_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "atlas_pack_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "registry_reviewed_on": {
+      "type": "string",
+      "format": "date"
+    },
+    "retrieved_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "upstream": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "url",
+        "revision",
+        "artifact_sha256",
+        "license_evidence_url",
+        "license_evidence_sha256"
+      ],
+      "properties": {
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "revision": {
+          "type": "string",
+          "minLength": 1
+        },
+        "artifact_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "license_evidence_url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "license_evidence_sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      }
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "included_paths",
+        "excluded_paths",
+        "file_count",
+        "bytes"
+      ],
+      "properties": {
+        "included_paths": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "excluded_paths": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "file_count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "governance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "decision",
+        "model_use",
+        "shard",
+        "license_expression",
+        "notices_path",
+        "attribution_path"
+      ],
+      "properties": {
+        "decision": {
+          "type": "string"
+        },
+        "model_use": {
+          "type": "string"
+        },
+        "shard": {
+          "type": "string"
+        },
+        "license_expression": {
+          "type": "string",
+          "minLength": 1
+        },
+        "notices_path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "attribution_path": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "quality": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "exact_dedup",
+        "semantic_dedup",
+        "pii_scan",
+        "malware_scan",
+        "benchmark_scan",
+        "language_scan"
+      ],
+      "properties": {
+        "exact_dedup": {
+          "type": "string",
+          "enum": [
+            "not-run",
+            "pass",
+            "fail",
+            "not-applicable"
+          ]
+        },
+        "semantic_dedup": {
+          "type": "string",
+          "enum": [
+            "not-run",
+            "pass",
+            "fail",
+            "not-applicable"
+          ]
+        },
+        "pii_scan": {
+          "type": "string",
+          "enum": [
+            "not-run",
+            "pass",
+            "fail",
+            "not-applicable"
+          ]
+        },
+        "malware_scan": {
+          "type": "string",
+          "enum": [
+            "not-run",
+            "pass",
+            "fail",
+            "not-applicable"
+          ]
+        },
+        "benchmark_scan": {
+          "type": "string",
+          "enum": [
+            "not-run",
+            "pass",
+            "fail",
+            "not-applicable"
+          ]
+        },
+        "language_scan": {
+          "type": "string",
+          "enum": [
+            "not-run",
+            "pass",
+            "fail",
+            "not-applicable"
+          ]
+        }
+      }
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "reviewer",
+        "reviewed_at",
+        "notes"
+      ],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "approved",
+            "rejected"
+          ]
+        },
+        "reviewer": {
+          "type": "string"
+        },
+        "reviewed_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

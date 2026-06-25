@@ -4,12 +4,16 @@ import {
   FRONTIER_CORPUS_ROOT,
   REPOSITORY_ROOT,
   analyseFrontierCorpus,
+  createSnapshotTemplate,
   generatedFrontierCorpusArtifacts,
   loadFrontierCorpus,
+  renderAcquisitionPlan,
+  sourceRiskBand,
+  validateSnapshotManifest,
 } from './lib/frontier-corpus.mjs';
 
 const documents = loadFrontierCorpus(REPOSITORY_ROOT);
-const { manifest, policy, registry } = documents;
+const { manifest, policy, registry, holdouts, snapshotSchema, snapshotTemplate } = documents;
 const gates = [];
 const fail = (message) => { throw new Error(message); };
 const gate = (name, test) => { test(); gates.push({ name, pass: true }); };
@@ -40,27 +44,36 @@ function requireVocabulary(values, vocabulary, label) {
   for (const value of values) if (!vocabulary.includes(value)) fail(`${label} contains unknown value ${value}`);
 }
 
+function daysBetween(left, right) {
+  return Math.round((Date.parse(right) - Date.parse(left)) / 86_400_000);
+}
+
 function countDecision(decision) {
   return registry.sources.filter((source) => source.decision === decision).length;
 }
 
+function sourceById(id) {
+  return registry.sources.find((source) => source.id === id);
+}
+
 gate('manifest-and-entrypoints', () => {
-  if (manifest.pack_version !== '1.0.0') fail(`unexpected pack version ${manifest.pack_version}`);
+  if (manifest.pack_version !== '1.1.0') fail(`unexpected pack version ${manifest.pack_version}`);
   if (!datePattern.test(manifest.reviewed_on)) fail('manifest reviewed_on must be YYYY-MM-DD');
-  if (manifest.reviewed_on !== policy.reviewed_on || manifest.reviewed_on !== registry.reviewed_on) {
-    fail('manifest, policy and registry review dates must match');
+  if (manifest.reviewed_on !== policy.reviewed_on || manifest.reviewed_on !== registry.reviewed_on || manifest.reviewed_on !== holdouts.reviewed_on) {
+    fail('manifest, policy, registry and holdout review dates must match');
   }
   requireUnique(manifest.entrypoints, 'manifest entrypoint');
   for (const entrypoint of manifest.entrypoints) {
     if (!entrypoint.startsWith(`${FRONTIER_CORPUS_ROOT}/`)) fail(`entrypoint escapes pack: ${entrypoint}`);
     if (!existsSync(join(REPOSITORY_ROOT, entrypoint))) fail(`missing entrypoint: ${entrypoint}`);
   }
-  if (!Array.isArray(manifest.guardrails) || manifest.guardrails.length < 8) fail('manifest needs at least eight guardrails');
+  if (!Array.isArray(manifest.guardrails) || manifest.guardrails.length < 10) fail('manifest needs at least ten guardrails');
 });
 
-gate('registry-shape-and-vocabularies', () => {
-  if (registry.schema_version !== '1.0.0') fail(`unexpected registry schema ${registry.schema_version}`);
-  if (!Array.isArray(registry.sources) || registry.sources.length < 50) fail('registry must contain at least 50 sources');
+gate('registry-shape-license-and-vocabularies', () => {
+  if (registry.schema_version !== '1.1.0') fail(`unexpected registry schema ${registry.schema_version}`);
+  if (policy.schema_version !== '1.1.0') fail(`unexpected policy schema ${policy.schema_version}`);
+  if (!Array.isArray(registry.sources) || registry.sources.length < 80) fail('registry must contain at least 80 sources');
   requireUnique(registry.sources.map((source) => source.id), 'source id');
   for (const source of registry.sources) {
     if (!idPattern.test(source.id)) fail(`invalid source id: ${source.id}`);
@@ -70,7 +83,10 @@ gate('registry-shape-and-vocabularies', () => {
     requireUrl(source.homepage, `${source.id}.homepage`);
     requireUrl(source.license?.evidence_url, `${source.id}.license.evidence_url`);
     if (!datePattern.test(source.license?.reviewed_on ?? '')) fail(`${source.id}: license reviewed_on must be YYYY-MM-DD`);
+    if (!datePattern.test(source.license?.next_review_on ?? '')) fail(`${source.id}: license next_review_on must be YYYY-MM-DD`);
     if (source.license.reviewed_on !== registry.reviewed_on) fail(`${source.id}: stale license review date`);
+    const reviewDays = daysBetween(source.license.reviewed_on, source.license.next_review_on);
+    if (reviewDays < 1 || reviewDays > policy.license_review.maximum_days_between_reviews) fail(`${source.id}: invalid license review horizon`);
     if (!policy.vocabularies.decisions.includes(source.decision)) fail(`${source.id}: unknown decision ${source.decision}`);
     if (!policy.vocabularies.model_uses.includes(source.governance?.model_use)) fail(`${source.id}: unknown model use`);
     if (!policy.vocabularies.coverage_roles.includes(source.coverage?.role)) fail(`${source.id}: unknown coverage role`);
@@ -98,7 +114,7 @@ gate('registry-shape-and-vocabularies', () => {
   }
 });
 
-gate('decision-discipline', () => {
+gate('decision-and-license-shard-discipline', () => {
   for (const source of registry.sources) {
     if (source.decision === 'approved') {
       if (source.governance.legal_review !== 'complete') fail(`${source.id}: approved source requires completed legal review`);
@@ -115,28 +131,16 @@ gate('decision-discipline', () => {
       const perItemUnknown = source.license.per_item && rights.every((value) => value === null);
       if (!fullyGranted && !perItemUnknown) fail(`${source.id}: conditional rights must be granted or explicitly per-item`);
     }
-    if (source.decision === 'metadata_only' && source.governance.model_use !== 'metadata-only') {
-      fail(`${source.id}: metadata_only source must use metadata-only`);
-    }
+    if (source.decision === 'metadata_only' && source.governance.model_use !== 'metadata-only') fail(`${source.id}: metadata_only source must use metadata-only`);
     if (source.decision === 'blocked') {
       if (source.governance.model_use !== 'blocked' || source.governance.shard !== 'blocked') fail(`${source.id}: blocked source escaped blocked governance`);
       if (source.acquisition.mode !== 'none') fail(`${source.id}: blocked source must have acquisition mode none`);
+      if (sourceRiskBand(source, policy) !== 'blocked') fail(`${source.id}: blocked source must remain in the blocked risk band`);
     }
-  }
-});
-
-gate('license-shard-isolation', () => {
-  for (const source of registry.sources) {
     const policyClass = policy.license_classes[source.license.class];
-    if (source.governance.shard !== policyClass.default_shard) {
-      fail(`${source.id}: shard ${source.governance.shard} does not match ${source.license.class} default ${policyClass.default_shard}`);
-    }
-    if (source.license.share_alike && source.decision !== 'blocked' && !['share-alike', 'documentation-copyleft'].includes(source.governance.shard)) {
-      fail(`${source.id}: share-alike source is not isolated`);
-    }
-    if (source.license.per_item && source.decision !== 'blocked' && !['per-item', 'public-domain', 'metadata'].includes(source.governance.shard)) {
-      fail(`${source.id}: per-item source is in an unsafe shard`);
-    }
+    if (source.governance.shard !== policyClass.default_shard) fail(`${source.id}: shard does not match license-class default`);
+    if (source.license.share_alike && source.decision !== 'blocked' && !['share-alike', 'documentation-copyleft'].includes(source.governance.shard)) fail(`${source.id}: share-alike source is not isolated`);
+    if (source.license.per_item && source.decision !== 'blocked' && !['per-item', 'public-domain', 'metadata'].includes(source.governance.shard)) fail(`${source.id}: per-item source is in an unsafe shard`);
   }
 });
 
@@ -145,52 +149,109 @@ gate('immutable-acquisition-and-attribution', () => {
     if (/latest|floating|unversioned/iu.test(source.acquisition.pin)) fail(`${source.id}: non-immutable pin policy`);
     if (source.decision !== 'blocked' && source.acquisition.mode === 'none') fail(`${source.id}: nonblocked source has no acquisition mode`);
     if (source.decision !== 'blocked' && source.governance.attribution_template.length < 30) fail(`${source.id}: attribution record is too short`);
-    if (source.decision !== 'blocked' && source.license.attribution === true && !/credit|retain|record|cite|attribute|include|store|preserve/iu.test(source.governance.attribution_template)) {
-      fail(`${source.id}: attribution template does not state an attribution action`);
-    }
+    if (source.decision !== 'blocked' && source.license.attribution === true && !/credit|retain|record|cite|attribute|include|store|preserve/iu.test(source.governance.attribution_template)) fail(`${source.id}: attribution template does not state an attribution action`);
   }
 });
 
-gate('benchmark-and-pii-contamination', () => {
+gate('benchmark-pii-and-holdout-quarantine', () => {
   for (const source of registry.sources) {
     if (source.decision !== 'blocked' && source.coverage.modalities.includes('benchmarks')) {
       if (source.governance.model_use !== 'evaluation-only') fail(`${source.id}: benchmark must be evaluation-only`);
       if (source.governance.contamination_risk !== 'high') fail(`${source.id}: benchmark contamination risk must be high`);
     }
-    if (source.governance.pii_risk === 'high' && source.governance.model_use === 'candidate-training') {
-      fail(`${source.id}: high-PII source cannot be candidate-training`);
-    }
+    if (source.governance.pii_risk === 'high' && source.governance.model_use === 'candidate-training') fail(`${source.id}: high-PII source cannot be candidate-training`);
   }
-  for (const id of ['deepmind-mathematics-dataset', 'gsm8k', 'hendrycks-math']) {
-    const source = registry.sources.find((entry) => entry.id === id);
-    if (!source || source.governance.model_use !== 'evaluation-only') fail(`missing evaluation-only benchmark guardrail ${id}`);
+  for (const id of policy.required_evaluation_ids) {
+    const source = sourceById(id);
+    if (!source || source.governance.model_use !== 'evaluation-only') fail(`missing evaluation-only guardrail ${id}`);
   }
+  if (holdouts.schema_version !== '1.0.0') fail('unexpected holdout schema');
+  if (!Array.isArray(holdouts.global_rules) || holdouts.global_rules.length < 5) fail('holdout global rules are incomplete');
+  requireUnique(holdouts.groups.map((group) => group.id), 'holdout group id');
+  const directSources = [];
+  for (const group of holdouts.groups) {
+    if (!idPattern.test(group.id)) fail(`bad holdout group id ${group.id}`);
+    requireString(group.title, `${group.id}.title`);
+    requireVocabulary(group.source_ids, policy.required_evaluation_ids, `${group.id}.source_ids`);
+    directSources.push(...group.source_ids);
+    if (!Array.isArray(group.related_source_ids)) fail(`${group.id}.related_source_ids must be an array`);
+    requireUnique(group.related_source_ids, `${group.id}.related_source_ids`);
+    for (const id of group.related_source_ids) if (!sourceById(id)) fail(`${group.id}: unknown related source ${id}`);
+    requireUnique(group.aliases, `${group.id}.aliases`);
+    requireUnique(group.matchers, `${group.id}.matchers`);
+    if (!group.aliases.length || !group.matchers.length) fail(`${group.id}: aliases and matchers are required`);
+    requireString(group.quarantine, `${group.id}.quarantine`);
+    for (const id of group.source_ids) if (sourceById(id)?.governance.model_use !== 'evaluation-only') fail(`${group.id}: direct source ${id} is not evaluation-only`);
+  }
+  requireUnique(directSources, 'direct holdout source');
+  for (const id of policy.required_evaluation_ids) if (!directSources.includes(id)) fail(`evaluation source lacks holdout group: ${id}`);
 });
 
-gate('governance-contract', () => {
+gate('governance-and-required-blocks', () => {
   const contract = `${registry.legal_notice} ${manifest.guardrails.join(' ')}`.toLowerCase();
-  for (const required of ['not legal advice', 'free access', 'immutable', 'share-alike', 'benchmark', 'personal', 'frontier-level']) {
+  for (const required of ['not legal advice', 'free access', 'immutable', 'share-alike', 'benchmark', 'personal', 'derived', 'frontier-level']) {
     if (!contract.includes(required)) fail(`governance contract is missing: ${required}`);
   }
   if (!registry.legal_notice.includes('every jurisdiction')) fail('registry legal notice must reject universal legal conclusions');
-});
-
-gate('required-blocked-guardrails', () => {
   for (const id of policy.required_blocked_ids) {
-    const source = registry.sources.find((entry) => entry.id === id);
+    const source = sourceById(id);
     if (!source) fail(`missing required blocked source ${id}`);
     if (source.decision !== 'blocked') fail(`${id} must remain blocked`);
   }
   if (countDecision('blocked') < policy.targets.minimum_blocked_guardrails) fail('insufficient blocked guardrails');
 });
 
-gate('coverage-policy', () => {
+gate('snapshot-manifest-contract', () => {
+  if (snapshotSchema.$schema !== 'https://json-schema.org/draft/2020-12/schema') fail('snapshot schema must use JSON Schema 2020-12');
+  if (snapshotSchema.properties?.schema_version?.const !== policy.snapshot_requirements.schema_version) fail('snapshot schema version mismatch');
+  for (const field of ['source_id', 'upstream', 'scope', 'governance', 'quality', 'review']) {
+    if (!snapshotSchema.required.includes(field)) fail(`snapshot schema missing required field ${field}`);
+  }
+  if (!String(snapshotTemplate.$comment ?? '').includes('snapshot-template')) fail('snapshot template lacks generation instruction');
+  const example = createSnapshotTemplate(documents, 'mathlib4');
+  example.retrieved_at = '2026-06-25T12:00:00.000Z';
+  example.upstream.revision = '0123456789abcdef0123456789abcdef01234567';
+  example.upstream.artifact_sha256 = '1'.repeat(64);
+  example.upstream.license_evidence_sha256 = '2'.repeat(64);
+  for (const field of Object.keys(example.quality)) example.quality[field] = 'pass';
+  example.review = { status: 'approved', reviewer: 'validation-suite', reviewed_at: '2026-06-25T12:30:00.000Z', notes: [] };
+  const errors = validateSnapshotManifest(example, documents);
+  if (errors.length) fail(`valid snapshot example failed: ${errors.join('; ')}`);
+});
+
+gate('coverage-and-frontier-honesty', () => {
   const analysis = analyseFrontierCorpus(documents);
   if (!analysis.pass) fail(`coverage gaps:\n${analysis.gaps.join('\n')}`);
+  if (analysis.frontierDimensions.length !== policy.frontier_dimensions.length) fail('frontier dimension analysis is incomplete');
+  if (analysis.frontierDensityPass) fail('density advisory unexpectedly claims universal subject depth');
+  for (const id of ['algebraic-geometry', 'research-mathematics']) {
+    if (!analysis.priorityAreas.some((area) => area.id === id)) fail(`missing honest density priority ${id}`);
+  }
+});
+
+gate('risk-prioritization-and-acquisition-plan', () => {
+  const expectedBands = {
+    mathlib4: 'low',
+    'active-calculus': 'medium',
+    'mini-f2f': 'high',
+    'math-stackexchange-dump': 'critical',
+    'openstax-current-textbooks': 'blocked',
+  };
+  for (const [id, expected] of Object.entries(expectedBands)) {
+    const source = sourceById(id);
+    if (!source || sourceRiskBand(source, policy) !== expected) fail(`${id}: unexpected risk band`);
+  }
+  const plan = JSON.parse(renderAcquisitionPlan(documents));
+  if (plan.entries.length !== registry.sources.filter((source) => source.decision !== 'blocked').length) fail('acquisition plan source count mismatch');
+  const mini = plan.entries.find((entry) => entry.source_id === 'mini-f2f');
+  if (mini?.priority !== 'holdout' || mini.holdout_group !== 'mini-f2f-formal-olympiad') fail('miniF2F acquisition plan lost holdout status');
+  if (plan.entries.some((entry) => policy.required_blocked_ids.includes(entry.source_id))) fail('blocked source escaped into acquisition plan');
 });
 
 gate('generated-artifacts', () => {
-  for (const [relativePath, expected] of generatedFrontierCorpusArtifacts(documents)) {
+  const artifacts = generatedFrontierCorpusArtifacts(documents);
+  if (artifacts.size !== 6) fail(`expected six generated artifacts, found ${artifacts.size}`);
+  for (const [relativePath, expected] of artifacts) {
     const file = join(REPOSITORY_ROOT, relativePath);
     if (!existsSync(file)) fail(`missing generated artifact ${relativePath}`);
     if (readFileSync(file, 'utf8') !== expected) fail(`stale generated artifact ${relativePath}`);

@@ -15,3 +15,5 @@ coverage/
 # Local source-curation inbox; records store hashes, not raw files.
 curation/inbox/*
 !curation/inbox/.gitkeep
+# Local reproducible-run manifests and logs; export or copy deliberately.
+.run-ledger/

@@ -1,5 +1,5 @@
 {
-  "pack_version": "1.0.0",
+  "pack_version": "1.1.0",
   "reviewed_on": "2026-06-25",
   "title": "Frontier Mathematics Corpus Atlas",
   "purpose": "Machine-readable source, licensing, coverage and ingestion controls for building broad mathematics training, retrieval and evaluation corpora without treating free access as permission.",
@@ -8,8 +8,14 @@
     "integrations/frontier-math-corpus/INGESTION.md",
     "integrations/frontier-math-corpus/coverage-policy.json",
     "integrations/frontier-math-corpus/data/sources.json",
+    "integrations/frontier-math-corpus/data/evaluation-holdouts.json",
+    "integrations/frontier-math-corpus/schemas/snapshot-manifest.schema.json",
+    "integrations/frontier-math-corpus/templates/snapshot-manifest.json",
     "integrations/frontier-math-corpus/generated/coverage-report.md",
+    "integrations/frontier-math-corpus/generated/frontier-readiness-report.md",
+    "integrations/frontier-math-corpus/generated/evaluation-holdouts.md",
     "integrations/frontier-math-corpus/generated/attribution-ledger.md",
+    "integrations/frontier-math-corpus/generated/acquisition-plan.json",
     "integrations/frontier-math-corpus/generated/agent-context.md"
   ],
   "commands": {
@@ -23,10 +29,12 @@
     "Approved and conditional decisions do not by themselves establish universal legality of model training or output licensing.",
     "Every acquired artifact must be immutable, hash-addressed and tied to the exact license evidence reviewed for that snapshot.",
     "Share-alike, documentation-copyleft, code-copyleft and per-item sources remain in isolated shards with separate manifests.",
-    "Canonical benchmarks and competition problems default to evaluation-only or blocked to prevent contamination.",
-    "OpenStax current textbooks are blocked because the current pages explicitly prohibit LLM training/ingestion without permission.",
+    "Canonical benchmarks, their aliases, translations and semantic near-duplicates remain outside candidate-training corpora.",
+    "OpenStax current textbooks are blocked because the current pages explicitly prohibit LLM training or ingestion without permission.",
+    "Noncommercial-only and no-derivatives sources remain blocked from the general-purpose corpus unless a separately reviewed use case changes the policy.",
     "No personal profiles, private data, deleted posts or unnecessary user identifiers may enter a corpus.",
-    "Any license change, takedown or upstream deletion invalidates the source decision until re-reviewed.",
+    "Derived or synthetic records must preserve parent source IDs, licenses, transformations and contamination-family membership.",
+    "Any license change, takedown, upstream deletion or expired review invalidates the source decision until re-reviewed.",
     "This atlas measures source coverage and governance readiness, not whether a resulting model is mathematically frontier-level."
   ]
 }

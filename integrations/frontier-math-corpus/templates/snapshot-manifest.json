@@ -1,0 +1,45 @@
+{
+  "$comment": "Generate a source-specific draft with: npm run query:frontier-corpus -- snapshot-template <source-id>",
+  "schema_version": "1.0.0",
+  "source_id": "replace-with-source-id",
+  "atlas_pack_version": "1.1.0",
+  "registry_reviewed_on": "2026-06-25",
+  "retrieved_at": "YYYY-MM-DDTHH:mm:ss.sssZ",
+  "upstream": {
+    "url": "https://example.invalid/source",
+    "revision": "immutable-release-tag-or-commit",
+    "artifact_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "license_evidence_url": "https://example.invalid/license",
+    "license_evidence_sha256": "0000000000000000000000000000000000000000000000000000000000000000"
+  },
+  "scope": {
+    "included_paths": [
+      "path-or-scope"
+    ],
+    "excluded_paths": [],
+    "file_count": 1,
+    "bytes": 1
+  },
+  "governance": {
+    "decision": "conditional",
+    "model_use": "candidate-training",
+    "shard": "permissive",
+    "license_expression": "replace-with-license",
+    "notices_path": "NOTICE.txt",
+    "attribution_path": "ATTRIBUTION.json"
+  },
+  "quality": {
+    "exact_dedup": "not-run",
+    "semantic_dedup": "not-run",
+    "pii_scan": "not-run",
+    "malware_scan": "not-run",
+    "benchmark_scan": "not-run",
+    "language_scan": "not-run"
+  },
+  "review": {
+    "status": "draft",
+    "reviewer": "",
+    "reviewed_at": null,
+    "notes": []
+  }
+}

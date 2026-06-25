@@ -1,12 +1,12 @@
 # Árbol de conocimiento Físico-Matemático
 
-[English version](./README.md) · [Grafo de investigación](https://lluiseriksson.github.io/physmath-knowledge-tree/) · [Mapa de aprendizaje](https://lluiseriksson.github.io/physmath-knowledge-tree/learning.html) · [Banco de investigación](https://lluiseriksson.github.io/physmath-knowledge-tree/workbench.html) · [Revisión de evidencia](https://lluiseriksson.github.io/physmath-knowledge-tree/evidence.html) · [Revisión de cambios](https://lluiseriksson.github.io/physmath-knowledge-tree/changes.html) · [Auditoría Lean](https://lluiseriksson.github.io/physmath-knowledge-tree/formalization.html) · [Dossiers de investigación](https://lluiseriksson.github.io/physmath-knowledge-tree/dossiers.html)
+[English version](./README.md) · [Grafo de investigación](https://lluiseriksson.github.io/physmath-knowledge-tree/) · [Mapa de aprendizaje](https://lluiseriksson.github.io/physmath-knowledge-tree/learning.html) · [Banco de investigación](https://lluiseriksson.github.io/physmath-knowledge-tree/workbench.html) · [Revisión de evidencia](https://lluiseriksson.github.io/physmath-knowledge-tree/evidence.html) · [Revisión de cambios](https://lluiseriksson.github.io/physmath-knowledge-tree/changes.html) · [Auditoría Lean](https://lluiseriksson.github.io/physmath-knowledge-tree/formalization.html) · [Dossiers de investigación](https://lluiseriksson.github.io/physmath-knowledge-tree/dossiers.html) · [Ejecuciones reproducibles](https://lluiseriksson.github.io/physmath-knowledge-tree/runs.html)
 
 Grafo computable y etiquetado por evidencia para explorar conexiones entre física, matemáticas, problemas abiertos y objetivos de formalización en Lean. La repo también incluye un mapa bilingüe, herramientas locales de investigación, gobernanza de evidencia y una auditoría reproducible de objetivos Lean.
 
 ![Interfaz del grafo de investigación](./docs/research-screenshot.png)
 
-## Siete experiencias complementarias
+## Ocho experiencias complementarias
 
 ### Grafo de investigación — `index.html`
 
@@ -53,20 +53,27 @@ El centro combina una campaña del banco con sus revisiones de evidencia, audito
 
 Consulta [`docs/RESEARCH_DOSSIER_CENTER.md`](./docs/RESEARCH_DOSSIER_CENTER.md).
 
+### Registro de ejecuciones reproducibles — `runs.html`
+
+El registro local conserva planes y ejecuciones como vectores de argumentos, artefactos con SHA-256, logs, entorno/toolchain y resultados acotados. La CLI `npm run run:record` usa `shell: false`, conserva los códigos de fallo y genera manifiestos con huella sin elevar la confianza del grafo.
+
+Consulta [`docs/REPRODUCIBLE_RUN_LEDGER.md`](./docs/REPRODUCIBLE_RUN_LEDGER.md).
+
 ### Mapa de aprendizaje — `learning.html`
 
 Incluye 90 temas bilingües y 199 prerrequisitos, desde aritmética hasta matemáticas y física avanzadas. Ofrece búsqueda, filtros, grafo/lista, progreso local, favoritos, recomendaciones, rutas hacia objetivos, importación/exportación JSON y funcionamiento offline.
 
 ## Atlas de corpus matemático de frontera
 
-La repo incorpora un atlas de fuentes con control de licencias para desarrollar modelos matemáticos amplios. Registra 71 fuentes y 28 áreas; separa entrenamiento candidato, recuperación, evaluación y metadatos; aísla *shards* copyleft o por elemento; bloquea fuentes incompatibles; y genera informes deterministas de cobertura y atribución.
+La repo incorpora un atlas de fuentes con control de licencias para desarrollar modelos matemáticos amplios. La versión 1.1.0 registra 81 fuentes, 47 familias y 28 áreas; separa entrenamiento candidato, recuperación, evaluación y metadatos; aísla *shards* incompatibles; pone en cuarentena cuatro familias de benchmarks; y valida snapshots inmutables por fuente.
 
-Consulta [`integrations/frontier-math-corpus/README.md`](./integrations/frontier-math-corpus/README.md) y [`integrations/frontier-math-corpus/INGESTION.md`](./integrations/frontier-math-corpus/INGESTION.md). Superar la política es un mínimo de gobernanza de fuentes, no una afirmación de que el modelo resultante sea frontera ni de que entrenar sea lícito en toda jurisdicción.
+Consulta [`integrations/frontier-math-corpus/README.md`](./integrations/frontier-math-corpus/README.md), [`integrations/frontier-math-corpus/INGESTION.md`](./integrations/frontier-math-corpus/INGESTION.md) y el [informe de preparación de frontera](./integrations/frontier-math-corpus/generated/frontier-readiness-report.md). La política dura es un mínimo de gobernanza; siguen visibles carencias de densidad dedicada en geometría algebraica, matemáticas de investigación, contraejemplos y multilingüismo. No afirma que el modelo resultante sea frontera ni que entrenar sea lícito en toda jurisdicción.
 
 ```bash
 npm run validate:frontier-corpus
 npm run query:frontier-corpus -- summary
-npm run query:frontier-corpus -- area calculus
+npm run query:frontier-corpus -- priorities
+npm run query:frontier-corpus -- snapshot-template statsmodels
 ```
 
 ## Datos canónicos
@@ -111,6 +118,8 @@ CI compila con los avisos tratados como errores y verifica el entorno Lean.
 
 `npm run lean:probe` convierte los imports y nombres candidatos del grafo en un probe Lean acotado; los resultados permanecen locales o portables hasta su revisión explícita.
 
+`npm run run:record -- -- --id <id> --title <título> -- <comando...>` ejecuta sin shell y conserva un manifiesto reproducible con artefactos y logs.
+
 ## Uso local
 
 Se necesita Node.js 22 o posterior. La web no tiene dependencias npm de ejecución; la compuerta completa de navegador requiere Chrome, Chromium o Edge.
@@ -139,9 +148,9 @@ npm run build
 
 ## Calidad y seguridad
 
-La repo valida IDs, referencias, endpoints, niveles de evidencia, colecciones, estadísticas, traducciones, taxonomías y ausencia de ciclos. Las pruebas cubren recorridos, caminos mínimos, búsqueda, evaluación, layout, persistencia, servidor y datos, con 100% de cobertura de líneas, ramas y funciones en el conjunto explícito de módulos instrumentados por Node. El artefacto `dist/` se prueba además en Chromium mediante búsqueda, fichas, rutas, cambio de idioma, accesibilidad dinámica, fallback offline, persistencia de progreso, el banco de investigación, las colas de evidencia/cambios, la auditoría de objetivos Lean y el centro de dossiers. También se verifican enlaces, accesibilidad estática, PWA, CSP, acciones fijadas por SHA, formato, build reproducible, CodeQL y despliegue Pages.
+La repo valida IDs, referencias, endpoints, niveles de evidencia, colecciones, estadísticas, traducciones, taxonomías y ausencia de ciclos. Las pruebas cubren recorridos, caminos mínimos, búsqueda, evaluación, layout, persistencia, servidor y datos, con 100% de cobertura de líneas, ramas y funciones en el conjunto explícito de módulos instrumentados por Node. El artefacto `dist/` se prueba además en Chromium mediante búsqueda, fichas, rutas, cambio de idioma, accesibilidad dinámica, fallback offline, persistencia de progreso, el banco de investigación, las colas de evidencia/cambios, la auditoría de objetivos Lean, el centro de dossiers y el registro de ejecuciones reproducibles. También se verifican enlaces, accesibilidad estática, PWA, CSP, acciones fijadas por SHA, formato, build reproducible, CodeQL y despliegue Pages.
 
-No hay analítica, cuentas, cookies, fuentes remotas ni scripts de terceros. El progreso educativo, los espacios de investigación, las notas de evidencia/cambios, los registros de auditoría Lean y las preferencias del dossier permanecen en el navegador salvo exportación explícita. Los resultados reproducibles están en [`docs/VERIFICATION.md`](./docs/VERIFICATION.md) y la metodología E2E en [`docs/BROWSER_TESTING.md`](./docs/BROWSER_TESTING.md).
+No hay analítica, cuentas, cookies, fuentes remotas ni scripts de terceros. El progreso educativo, los espacios de investigación, las notas de evidencia/cambios, los registros de auditoría Lean, las preferencias del dossier y las ejecuciones registradas permanecen en el navegador salvo exportación explícita. Los resultados reproducibles están en [`docs/VERIFICATION.md`](./docs/VERIFICATION.md) y la metodología E2E en [`docs/BROWSER_TESTING.md`](./docs/BROWSER_TESTING.md).
 
 ## Protocolo de investigación
 

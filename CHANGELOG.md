@@ -18,9 +18,12 @@ All notable changes are documented here. The project follows semantic versioning
 - Deterministic browser/CLI Lean probe generation with toolchain notes, rename handling and portable audit packets.
 - Bilingual, offline-capable `dossiers.html` integration of campaign scope, evidence, changes and Lean audits.
 - Fingerprinted JSON/Markdown research handoffs with six bounded readiness gates and prioritized actions.
-- A 71-source Frontier Mathematics Corpus Atlas spanning 28 areas, 18 modalities and 14 model capabilities.
-- License evidence, acquisition exclusions, immutable pins, attribution payloads, isolated shards and explicit training/retrieval/evaluation/metadata decisions.
-- Deterministic coverage, attribution and agent-context reports plus validation/query CLIs.
+- An 81-source Frontier Mathematics Corpus Atlas spanning 47 families, 28 areas, 18 modalities and 14 model capabilities.
+- License evidence, immutable snapshot manifests, isolated shards, holdout quarantine and explicit training/retrieval/evaluation/metadata decisions.
+- Deterministic coverage, readiness, attribution, holdout, acquisition and agent-context artifacts plus validation/query CLIs.
+- Bilingual, offline-capable Reproducible Run Ledger with local filtering, fingerprint verification and portable packets.
+- Shell-free run recorder with bounded timeouts, opt-in environment metadata, hashed artifacts/logs and failure-preserving manifests.
+- License re-review deadlines, risk bands and a second frontier-density layer that reports remaining weaknesses without weakening the hard governance gate.
 
 ### Changed
 
@@ -30,7 +33,8 @@ All notable changes are documented here. The project follows semantic versioning
 - PWA, public-surface, accessibility, coverage and browser gates now include Canonical Change Review.
 - PWA, public-surface, accessibility, coverage and browser gates now include Lean Target Audit.
 - PWA, public-surface, accessibility, coverage and browser gates now include Research Dossiers.
-- PWA, public-surface and coverage gates now include the corpus atlas and its generated reports.
+- Repository coverage and generated-artifact gates now include the Frontier Mathematics Corpus Atlas.
+- PWA, public-surface, accessibility, coverage and browser gates now include the Reproducible Run Ledger.
 
 ## [2.6.0] — 2026-06-22
 

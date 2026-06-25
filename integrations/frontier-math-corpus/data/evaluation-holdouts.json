@@ -1,0 +1,98 @@
+{
+  "schema_version": "1.0.0",
+  "reviewed_on": "2026-06-25",
+  "purpose": "Evaluation-only families and related-content quarantine rules for exact, translated and semantic contamination control.",
+  "global_rules": [
+    "Exclude every direct evaluation source from all candidate-training shards.",
+    "Run exact normalized hash matching before tokenization.",
+    "Run semantic and translation-aware matching against statements, solutions and formalizations.",
+    "Keep validation and test splits immutable; never use test feedback as supervised training data.",
+    "Record every removal by source ID, holdout group, matcher version and artifact hash."
+  ],
+  "groups": [
+    {
+      "id": "deepmind-synthetic-mathematics",
+      "title": "DeepMind mathematics_dataset",
+      "source_ids": [
+        "deepmind-mathematics-dataset"
+      ],
+      "related_source_ids": [],
+      "aliases": [
+        "mathematics_dataset",
+        "DeepMind mathematics dataset"
+      ],
+      "matchers": [
+        "exact-hash",
+        "normalized-text",
+        "generator-signature"
+      ],
+      "quarantine": "All canonical and regenerated instances produced with evaluation seeds or templates."
+    },
+    {
+      "id": "gsm8k-grade-school-reasoning",
+      "title": "GSM8K family",
+      "source_ids": [
+        "gsm8k"
+      ],
+      "related_source_ids": [],
+      "aliases": [
+        "GSM8K",
+        "grade school math 8k"
+      ],
+      "matchers": [
+        "exact-hash",
+        "normalized-text",
+        "semantic-near-duplicate",
+        "answer-signature"
+      ],
+      "quarantine": "Questions, rationales, answers, paraphrases, translations and chain-of-thought derivatives."
+    },
+    {
+      "id": "hendrycks-math-competition",
+      "title": "MATH benchmark family",
+      "source_ids": [
+        "hendrycks-math"
+      ],
+      "related_source_ids": [
+        "competition-archives",
+        "openwebmath-mixed",
+        "mathpile-mixed"
+      ],
+      "aliases": [
+        "MATH",
+        "Hendrycks MATH",
+        "competition mathematics dataset"
+      ],
+      "matchers": [
+        "exact-hash",
+        "normalized-text",
+        "semantic-near-duplicate",
+        "solution-outline"
+      ],
+      "quarantine": "Canonical problems and solutions plus scraped, reformatted, translated or synthetic variants."
+    },
+    {
+      "id": "mini-f2f-formal-olympiad",
+      "title": "miniF2F v1 family",
+      "source_ids": [
+        "mini-f2f"
+      ],
+      "related_source_ids": [
+        "hendrycks-math",
+        "competition-archives"
+      ],
+      "aliases": [
+        "miniF2F",
+        "mini-F2F",
+        "formal olympiad benchmark"
+      ],
+      "matchers": [
+        "exact-hash",
+        "normalized-formal-statement",
+        "semantic-near-duplicate",
+        "cross-language-formalization"
+      ],
+      "quarantine": "Formal statements, proofs, informal originals and equivalent translations across Lean, Metamath, Isabelle and HOL Light."
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "name": "PhysMath Knowledge Tree",
   "short_name": "PhysMath Tree",
-  "description": "Explore a traceable physics-mathematics graph, learning map, local research tools, evidence governance, Lean target audit and integrated research dossiers.",
+  "description": "Explore a traceable physics-mathematics graph, learning map, local research tools, evidence governance, Lean target audit and integrated research dossiers, and a reproducible run ledger.",
   "lang": "en",
   "start_url": "./",
   "scope": "./",
@@ -49,6 +49,11 @@
       "name": "Research dossiers",
       "short_name": "Dossiers",
       "url": "./dossiers.html"
+    },
+    {
+      "name": "Reproducible runs",
+      "short_name": "Runs",
+      "url": "./runs.html"
     }
   ],
   "icons": [

@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en" data-theme="system">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Plan, record, fingerprint and export reproducible physics-mathematics research runs.">
+  <meta name="theme-color" content="#f4f7fb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#09111f" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>PhysMath Knowledge Tree — Reproducible runs</title>
+  <link rel="canonical" href="https://lluiseriksson.github.io/physmath-knowledge-tree/runs.html">
+  <link rel="icon" href="./assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./assets/icons/icon-192.png">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./src/research.css">
+  <link rel="stylesheet" href="./src/run-ledger.css">
+  <script type="module" src="./src/run-ledger-app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#run-center" data-i18n="nav.skip">Skip to reproducible runs</a>
+
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="PhysMath Knowledge Tree home">
+      <img src="./assets/icons/icon.svg" width="42" height="42" alt="">
+      <span><strong>PhysMath Knowledge Tree</strong><small data-i18n="app.tagline">Commands, artifacts and outcomes with traceable hashes</small></span>
+    </a>
+    <nav class="primary-nav" aria-label="Primary navigation" data-i18n-aria="nav.primary">
+      <a href="./" data-i18n="nav.research">Research graph</a>
+      <a href="./learning.html" data-i18n="nav.learning">Learning map</a>
+      <a href="./workbench.html" data-i18n="nav.workbench">Workbench</a>
+      <a href="./evidence.html" data-i18n="nav.evidence">Evidence</a>
+      <a href="./changes.html" data-i18n="nav.changes">Changes</a>
+      <a href="./formalization.html" data-i18n="nav.formalization">Lean audit</a>
+      <a href="./dossiers.html" data-i18n="nav.dossiers">Dossiers</a>
+      <a href="./runs.html" aria-current="page" data-i18n="nav.runs">Runs</a>
+      <a href="https://github.com/lluiseriksson/physmath-knowledge-tree" rel="noreferrer" data-i18n="nav.repository">Repository</a>
+    </nav>
+    <div class="header-actions">
+      <select id="language" aria-label="Interface language" data-i18n-aria="header.language"><option value="en">EN</option><option value="es">ES</option></select>
+      <button id="theme" class="icon-button" type="button" aria-label="Change theme" data-i18n-aria="header.theme">◐</button>
+      <button id="help" class="icon-button" type="button" aria-label="Reproducible run help" data-i18n-aria="header.help">?</button>
+    </div>
+  </header>
+
+  <div id="loading" class="loading" role="status" aria-live="polite"><span class="spinner" aria-hidden="true"></span><span data-i18n="loading">Loading canonical nodes and local runs…</span></div>
+
+  <main id="run-center" class="run-layout" hidden>
+    <aside class="control-panel" aria-labelledby="controls-title">
+      <div class="panel-heading"><div><p class="eyebrow" data-i18n="controls.eyebrow">Local execution memory</p><h1 id="controls-title" data-i18n="controls.title">Run ledger</h1></div><span id="save-state" role="status" aria-live="polite"></span></div>
+
+      <section class="panel-section" aria-labelledby="summary-title">
+        <h2 id="summary-title" data-i18n="summary.title">Run summary</h2>
+        <dl class="stats-grid">
+          <div><dt data-i18n="summary.total">Runs</dt><dd id="stat-total">0</dd></div>
+          <div><dt data-i18n="summary.passed">Passed</dt><dd id="stat-passed">0</dd></div>
+          <div><dt data-i18n="summary.failed">Failed</dt><dd id="stat-failed">0</dd></div>
+          <div><dt data-i18n="summary.inconclusive">Inconclusive</dt><dd id="stat-inconclusive">0</dd></div>
+          <div><dt data-i18n="summary.fingerprinted">Fingerprinted</dt><dd id="stat-fingerprinted">0</dd></div>
+          <div><dt data-i18n="summary.reproducible">Reproducible</dt><dd id="stat-reproducible">0</dd></div>
+        </dl>
+      </section>
+
+      <section class="panel-section" aria-labelledby="filters-title">
+        <div class="section-heading"><h2 id="filters-title" data-i18n="filters.title">Filter runs</h2><button id="clear-filters" class="text-button" type="button" data-i18n="filters.clear">Clear</button></div>
+        <label for="search" data-i18n="filters.search">Search</label>
+        <input id="search" type="search" autocomplete="off" aria-label="Search runs" data-i18n-aria="filters.search" data-i18n-placeholder="filters.placeholder" placeholder="Title, command, artifact or node">
+        <div class="field-grid two">
+          <div><label for="status-filter" data-i18n="filters.status">Status</label><select id="status-filter"></select></div>
+          <div><label for="kind-filter" data-i18n="filters.kind">Kind</label><select id="kind-filter"></select></div>
+        </div>
+        <label for="node-filter" data-i18n="filters.node">Canonical node</label><select id="node-filter"></select>
+        <label for="sort" data-i18n="filters.sort">Sort</label><select id="sort"></select>
+      </section>
+
+      <section class="panel-section" aria-labelledby="selection-title">
+        <h2 id="selection-title" data-i18n="selection.title">Portable packet</h2>
+        <p><strong id="selected-count">0</strong> <span data-i18n="selection.count">selected runs</span></p>
+        <div class="stacked-actions">
+          <button id="select-visible" class="secondary-button" type="button" data-i18n="selection.selectVisible">Select visible</button>
+          <button id="clear-selection" class="secondary-button" type="button" data-i18n="selection.clear">Clear selection</button>
+          <button id="mark-inconclusive" class="secondary-button" type="button" disabled data-i18n="selection.inconclusive">Mark inconclusive</button>
+          <button id="export-packet" class="primary-button" type="button" disabled data-i18n="selection.export">Export run packet</button>
+        </div>
+      </section>
+
+      <section class="panel-section" aria-labelledby="portable-title">
+        <h2 id="portable-title" data-i18n="portable.title">Portable ledger</h2>
+        <label for="import-mode" data-i18n="portable.mode">Import mode</label>
+        <select id="import-mode"><option value="merge" data-i18n="portable.merge">Merge newest runs</option><option value="replace" data-i18n="portable.replace">Replace local ledger</option></select>
+        <div class="stacked-actions">
+          <button id="export-ledger" class="secondary-button" type="button" data-i18n="portable.export">Export ledger JSON</button>
+          <button id="import-ledger" class="secondary-button" type="button" data-i18n="portable.import">Import ledger or manifest</button>
+          <button id="reset-ledger" class="danger-button" type="button" data-i18n="portable.reset">Clear local runs</button>
+        </div>
+        <input id="ledger-file" type="file" accept="application/json,.json" aria-label="Run ledger import file" data-i18n-aria="portable.file" hidden>
+      </section>
+    </aside>
+
+    <div class="run-content">
+      <section class="hero-card" aria-labelledby="hero-title">
+        <div><p class="eyebrow" data-i18n="hero.eyebrow">Compute campaign discipline</p><h2 id="hero-title" data-i18n="hero.title">Record what actually ran, not what was intended</h2><p data-i18n="hero.body">Commands are argument vectors, artifacts are content-addressed, and outcomes remain distinct from mathematical proof.</p></div>
+        <div class="hero-actions"><span class="privacy-badge" data-i18n="hero.local">Local-first ledger</span><button id="new-run" class="primary-button" type="button" data-i18n="hero.new">New run plan</button></div>
+      </section>
+
+      <section class="queue-card" aria-labelledby="queue-title">
+        <header class="queue-heading"><div><h2 id="queue-title" data-i18n="queue.title">Execution history</h2><p id="visible-summary" aria-live="polite"></p></div><label class="select-all-row"><input id="toggle-visible" type="checkbox"><span data-i18n="queue.toggle">Toggle visible</span></label></header>
+        <div id="run-list" class="run-list"></div>
+        <div id="empty" class="empty-state" hidden><strong data-i18n="queue.emptyTitle">No runs match</strong><p data-i18n="queue.emptyBody">Clear filters or create a run plan.</p></div>
+      </section>
+    </div>
+  </main>
+
+  <dialog id="run-dialog" class="modal run-dialog" aria-labelledby="run-title">
+    <form id="run-form" method="dialog">
+      <header class="dialog-heading"><div><p class="eyebrow" data-i18n="editor.eyebrow">Local record</p><h2 id="run-title" data-i18n="editor.title">Run plan or outcome</h2></div><button class="icon-button" type="submit" value="cancel" aria-label="Close run editor" data-i18n-aria="editor.close">×</button></header>
+      <div class="field-grid two">
+        <div><label for="run-id" data-i18n="editor.id">Stable ID</label><input id="run-id" type="text" maxlength="128" required pattern="[a-z0-9][a-z0-9._:-]{0,127}"></div>
+        <div><label for="run-name" data-i18n="editor.name">Title</label><input id="run-name" type="text" maxlength="300" required></div>
+        <div><label for="run-kind" data-i18n="editor.kind">Kind</label><select id="run-kind"></select></div>
+        <div><label for="run-status" data-i18n="editor.status">Status</label><select id="run-status"></select></div>
+        <div><label for="run-started" data-i18n="editor.started">Started</label><input id="run-started" type="datetime-local"></div>
+        <div><label for="run-completed" data-i18n="editor.completed">Completed</label><input id="run-completed" type="datetime-local"></div>
+        <div><label for="run-exit" data-i18n="editor.exit">Exit code</label><input id="run-exit" type="number" min="-255" max="255"></div>
+        <div><label for="run-cwd" data-i18n="editor.cwd">Working directory</label><input id="run-cwd" type="text" maxlength="1000" placeholder="experiments/example"></div>
+      </div>
+      <label for="run-nodes" data-i18n="editor.nodes">Canonical nodes</label><select id="run-nodes" multiple size="5"></select>
+      <label for="run-command" data-i18n="editor.command">Command arguments — one per line</label><textarea id="run-command" rows="5" maxlength="20000" placeholder="lake&#10;build" data-i18n-placeholder="editor.commandPlaceholder"></textarea>
+      <label for="run-artifacts" data-i18n="editor.artifacts">Artifacts — role | path | sha256 | bytes | media type</label><textarea id="run-artifacts" rows="5" maxlength="40000" placeholder="output | artifacts/result.json | &lt;sha256&gt; | 512 | application/json" data-i18n-placeholder="editor.artifactPlaceholder"></textarea>
+      <label for="run-notes" data-i18n="editor.notes">Notes</label><textarea id="run-notes" rows="5" maxlength="20000"></textarea>
+      <p class="run-warning" data-i18n="editor.warning">A passed computation is evidence about this execution, not an automatic proof or confidence promotion.</p>
+      <div class="button-row end"><button id="remove-run" class="danger-button" type="button" data-i18n="editor.remove">Remove</button><button class="secondary-button" type="submit" value="cancel" data-i18n="editor.cancel">Cancel</button><button id="save-run" class="secondary-button" type="button" data-i18n="editor.save">Save</button><button id="fingerprint-run" class="primary-button" type="button" data-i18n="editor.fingerprint">Fingerprint & save</button></div>
+    </form>
+  </dialog>
+
+  <dialog id="detail-dialog" class="modal detail-dialog" aria-labelledby="detail-title"><header class="dialog-heading"><h2 id="detail-title"></h2><form method="dialog"><button class="icon-button" type="submit" aria-label="Close run details">×</button></form></header><div id="detail-content"></div><div class="button-row end"><button id="verify-run" class="secondary-button" type="button" data-i18n="detail.verify">Verify fingerprint</button><button id="edit-run" class="primary-button" type="button" data-i18n="detail.edit">Edit</button></div></dialog>
+
+  <dialog id="help-dialog" class="modal"><h2 data-i18n="help.title">How reproducible runs behave</h2><ul><li data-i18n="help.browser">The browser records and verifies manifests; it never executes commands.</li><li data-i18n="help.cli">The CLI uses shell:false, bounded timeouts and repository-relative artifacts.</li><li data-i18n="help.secrets">Environment variables are opt-in and sensitive names are rejected.</li><li data-i18n="help.claims">Run success never promotes graph confidence or proves a scientific claim.</li></ul><form method="dialog"><button class="secondary-button" type="submit" data-i18n="help.close">Close</button></form></dialog>
+
+  <dialog id="reset-dialog" class="modal"><h2 data-i18n="reset.title">Clear all local runs?</h2><p data-i18n="reset.body">Export the ledger first when these records matter.</p><form method="dialog" class="button-row end"><button class="secondary-button" type="submit" value="cancel" data-i18n="reset.cancel">Cancel</button><button class="danger-button" type="submit" value="confirm" data-i18n="reset.confirm">Clear runs</button></form></dialog>
+
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+</body>
+</html>

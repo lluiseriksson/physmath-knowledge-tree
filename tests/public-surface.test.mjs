@@ -31,6 +31,7 @@ test('public surface constants are closed, unique and include licensing', () => 
   assert.ok(PUBLIC_SOURCE_FILES.includes('changes.html'));
   assert.ok(PUBLIC_SOURCE_FILES.includes('formalization.html'));
   assert.ok(PUBLIC_SOURCE_FILES.includes('dossiers.html'));
+  assert.ok(PUBLIC_SOURCE_FILES.includes('runs.html'));
   assert.ok(PUBLIC_SOURCE_DIRECTORIES.includes('evaluation'));
   assert.ok(PUBLIC_SOURCE_DIRECTORIES.includes('integrations'));
   assert.ok(PUBLIC_SOURCE_DIRECTORIES.includes('prompts'));

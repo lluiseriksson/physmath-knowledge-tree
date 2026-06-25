@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "reviewed_on": "2026-06-25",
   "vocabularies": {
     "areas": [
@@ -130,51 +130,51 @@
     "formal-verification"
   ],
   "targets": {
-    "all_area_eligible_families": 2,
-    "critical_area_eligible_families": 4,
-    "critical_area_candidate_training_families": 2,
-    "critical_area_practice_sources": 1,
-    "critical_area_proof_sources": 2,
+    "all_area_eligible_families": 3,
+    "critical_area_eligible_families": 5,
+    "critical_area_candidate_training_families": 3,
+    "critical_area_practice_sources": 2,
+    "critical_area_proof_sources": 3,
     "modality_eligible_sources": {
-      "exposition": 8,
-      "definitions": 10,
-      "theorem-proof": 9,
-      "exercises": 6,
-      "worked-solutions": 4,
-      "counterexamples": 2,
-      "formal-proofs": 5,
-      "code": 8,
-      "symbolic-traces": 4,
-      "numerical-experiments": 5,
-      "diagrams": 6,
-      "datasets": 6,
+      "exposition": 10,
+      "definitions": 14,
+      "theorem-proof": 12,
+      "exercises": 8,
+      "worked-solutions": 8,
+      "counterexamples": 3,
+      "formal-proofs": 8,
+      "code": 16,
+      "symbolic-traces": 6,
+      "numerical-experiments": 9,
+      "diagrams": 8,
+      "datasets": 7,
       "research-papers": 3,
       "bibliographic-metadata": 5,
       "multilingual": 3,
-      "benchmarks": 3,
+      "benchmarks": 4,
       "historical-texts": 2,
       "discussions": 1
     },
     "capability_eligible_sources": {
-      "curriculum": 8,
-      "symbolic-reasoning": 12,
-      "proof-generation": 10,
-      "proof-verification": 5,
-      "formalization": 5,
-      "tool-use": 8,
-      "numerical-reasoning": 5,
-      "data-analysis": 4,
-      "diagram-reasoning": 5,
+      "curriculum": 10,
+      "symbolic-reasoning": 15,
+      "proof-generation": 14,
+      "proof-verification": 8,
+      "formalization": 8,
+      "tool-use": 14,
+      "numerical-reasoning": 10,
+      "data-analysis": 6,
+      "diagram-reasoning": 7,
       "research-retrieval": 8,
       "citation-grounding": 6,
-      "counterexample-search": 5,
-      "evaluation": 3,
+      "counterexample-search": 10,
+      "evaluation": 4,
       "multilingual-reasoning": 3
     },
-    "minimum_approved_sources": 10,
-    "minimum_conditional_sources": 20,
-    "minimum_blocked_guardrails": 10,
-    "minimum_distinct_families": 20
+    "minimum_approved_sources": 18,
+    "minimum_conditional_sources": 30,
+    "minimum_blocked_guardrails": 13,
+    "minimum_distinct_families": 40
   },
   "proof_modalities": [
     "theorem-proof",
@@ -196,7 +196,8 @@
     "internet-archive-mixed",
     "openwebmath-mixed",
     "mathpile-mixed",
-    "competition-archives"
+    "competition-archives",
+    "apex-calculus"
   ],
   "license_classes": {
     "permissive": {
@@ -275,5 +276,245 @@
       "default_shard": "blocked",
       "requires_isolation": true
     }
+  },
+  "required_evaluation_ids": [
+    "deepmind-mathematics-dataset",
+    "gsm8k",
+    "hendrycks-math",
+    "mini-f2f"
+  ],
+  "license_review": {
+    "maximum_days_between_reviews": 366,
+    "evidence_snapshot_required_at_acquisition": true,
+    "rule": "Registry URLs are discovery evidence; every acquired snapshot must hash and retain the exact license or terms evidence used for approval."
+  },
+  "advisory_area_targets": {
+    "all_area_dedicated_eligible_families": 1,
+    "all_area_dedicated_candidate_training_families": 1,
+    "critical_area_pedagogical_candidate_training_families": 1,
+    "all_area_research_level_eligible_families": 1,
+    "statement": "Advisory failures do not invalidate governance, but identify where omnibus/tool sources are masking thin subject-specific density."
+  },
+  "frontier_dimensions": [
+    {
+      "id": "foundational-pedagogy",
+      "label": "Foundational pedagogy",
+      "model_uses": [
+        "candidate-training"
+      ],
+      "any_levels": [
+        "school",
+        "undergraduate"
+      ],
+      "any_capabilities": [
+        "curriculum"
+      ],
+      "any_modalities": [
+        "exposition",
+        "exercises",
+        "worked-solutions"
+      ],
+      "minimum_sources": 8,
+      "minimum_families": 6
+    },
+    {
+      "id": "proof-rich-mathematics",
+      "label": "Proof-rich mathematics",
+      "model_uses": [
+        "candidate-training",
+        "retrieval-only"
+      ],
+      "any_modalities": [
+        "theorem-proof",
+        "formal-proofs"
+      ],
+      "minimum_sources": 16,
+      "minimum_families": 10
+    },
+    {
+      "id": "exercise-feedback",
+      "label": "Exercise and feedback loops",
+      "model_uses": [
+        "candidate-training"
+      ],
+      "all_modalities": [
+        "exercises",
+        "worked-solutions"
+      ],
+      "minimum_sources": 5,
+      "minimum_families": 4
+    },
+    {
+      "id": "formal-verification",
+      "label": "Formal verification",
+      "model_uses": [
+        "candidate-training"
+      ],
+      "any_modalities": [
+        "formal-proofs"
+      ],
+      "any_capabilities": [
+        "proof-verification",
+        "formalization"
+      ],
+      "minimum_sources": 8,
+      "minimum_families": 6
+    },
+    {
+      "id": "symbolic-numerical-tools",
+      "label": "Symbolic and numerical tools",
+      "model_uses": [
+        "candidate-training"
+      ],
+      "any_modalities": [
+        "code",
+        "symbolic-traces",
+        "numerical-experiments"
+      ],
+      "any_capabilities": [
+        "tool-use",
+        "numerical-reasoning"
+      ],
+      "minimum_sources": 18,
+      "minimum_families": 12
+    },
+    {
+      "id": "research-grounding",
+      "label": "Research retrieval and grounding",
+      "model_uses": [
+        "candidate-training",
+        "retrieval-only",
+        "metadata-only"
+      ],
+      "any_modalities": [
+        "research-papers",
+        "bibliographic-metadata"
+      ],
+      "any_capabilities": [
+        "research-retrieval",
+        "citation-grounding"
+      ],
+      "minimum_sources": 9,
+      "minimum_families": 6
+    },
+    {
+      "id": "counterexample-discipline",
+      "label": "Counterexample discipline",
+      "model_uses": [
+        "candidate-training"
+      ],
+      "any_modalities": [
+        "counterexamples"
+      ],
+      "any_capabilities": [
+        "counterexample-search"
+      ],
+      "minimum_sources": 3,
+      "minimum_families": 3
+    },
+    {
+      "id": "multilingual-mathematics",
+      "label": "Multilingual mathematics",
+      "model_uses": [
+        "candidate-training",
+        "retrieval-only"
+      ],
+      "any_modalities": [
+        "multilingual"
+      ],
+      "any_capabilities": [
+        "multilingual-reasoning"
+      ],
+      "minimum_sources": 3,
+      "minimum_families": 2
+    },
+    {
+      "id": "evaluation-quarantine",
+      "label": "Evaluation quarantine",
+      "model_uses": [
+        "evaluation-only"
+      ],
+      "all_modalities": [
+        "benchmarks"
+      ],
+      "minimum_sources": 4,
+      "minimum_families": 3
+    }
+  ],
+  "risk_policy": {
+    "weights": {
+      "decision": {
+        "approved": 0,
+        "conditional": 2,
+        "metadata_only": 4,
+        "blocked": 10
+      },
+      "ai_terms": {
+        "none-observed": 0,
+        "not-reviewed": 3,
+        "explicit-restriction": 8
+      },
+      "contamination_risk": {
+        "low": 0,
+        "medium": 2,
+        "high": 5
+      },
+      "pii_risk": {
+        "none": 0,
+        "low": 1,
+        "medium": 3,
+        "high": 8
+      },
+      "legal_review": {
+        "complete": 0,
+        "required": 2,
+        "not-applicable": 0
+      },
+      "per_item": 2,
+      "share_alike": 1,
+      "source_disclosure": 1
+    },
+    "bands": [
+      {
+        "id": "low",
+        "maximum": 2
+      },
+      {
+        "id": "medium",
+        "maximum": 6
+      },
+      {
+        "id": "high",
+        "maximum": 12
+      },
+      {
+        "id": "critical",
+        "maximum": 1000
+      }
+    ],
+    "statement": "Risk scores prioritize human review; they are not legal conclusions and never override a blocked decision."
+  },
+  "snapshot_requirements": {
+    "schema_version": "1.0.0",
+    "hash_algorithm": "sha256",
+    "required_quality_checks": [
+      "exact-dedup",
+      "semantic-dedup",
+      "pii-scan",
+      "malware-scan",
+      "benchmark-scan",
+      "language-scan"
+    ],
+    "allowed_review_statuses": [
+      "draft",
+      "approved",
+      "rejected"
+    ],
+    "allowed_scan_statuses": [
+      "not-run",
+      "pass",
+      "fail",
+      "not-applicable"
+    ]
   }
 }

@@ -1,6 +1,6 @@
 const APP_VERSION = '2.6.0';
 const CACHE_PREFIX = 'physmath-knowledge-tree-';
-const CACHE_REVISION = 'source-2026-06-25.2';
+const CACHE_REVISION = 'source-2026-06-25.3';
 const CACHE_NAMESPACE = `${CACHE_PREFIX}${APP_VERSION}-${CACHE_REVISION}`;
 const SHELL_CACHE = `${CACHE_NAMESPACE}-shell`;
 const RUNTIME_CACHE = `${CACHE_NAMESPACE}-runtime`;
@@ -18,6 +18,7 @@ const SHELL = [
   './changes.html',
   './formalization.html',
   './dossiers.html',
+  './runs.html',
   './offline.html',
   './404.html',
   './manifest.webmanifest',
@@ -33,12 +34,15 @@ const SHELL = [
   './src/formalization-app.js',
   './src/dossier.css',
   './src/dossier-app.js',
+  './src/run-ledger.css',
+  './src/run-ledger-app.js',
   './src/lib/research-graph.js',
   './src/lib/workspace.js',
   './src/lib/evidence-review.js',
   './src/lib/change-review.js',
   './src/lib/lean-target-audit.js',
   './src/lib/research-dossier.js',
+  './src/lib/run-ledger.js',
   './src/lib/research-i18n.js',
   './src/lib/route-planner.js',
   './src/lib/route-bundle.js',
@@ -88,6 +92,7 @@ self.addEventListener('activate', (event) => {
 });
 
 function fallbackFor(url) {
+  if (url.pathname.endsWith('/runs.html')) return './runs.html';
   if (url.pathname.endsWith('/dossiers.html')) return './dossiers.html';
   if (url.pathname.endsWith('/formalization.html')) return './formalization.html';
   if (url.pathname.endsWith('/changes.html')) return './changes.html';

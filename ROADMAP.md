@@ -17,7 +17,9 @@ Roadmap entries are proposals, not commitments. Changes should preserve provenan
 - Added integrated, fingerprinted research dossiers spanning workspace, evidence, changes and Lean audits.
 - Added deterministic JSON/Markdown dossier generation in the browser and CLI without source-ledger mutation.
 - Added a license-aware mathematics corpus atlas with explicit source, shard, model-use and contamination decisions.
-- Added deterministic source-density gates across elementary, advanced, formal and research mathematics.
+- Added hard coverage gates plus advisory frontier-density priorities, holdout quarantine and immutable snapshot manifests.
+- Added a reproducible run ledger for planned, passed, failed and inconclusive computations.
+- Added shell-free CLI execution with fingerprinted manifests and content-addressed artifacts/logs.
 
 ## Near term
 
@@ -25,6 +27,7 @@ Roadmap entries are proposals, not commitments. Changes should preserve provenan
 - Add aliases and multilingual node descriptions without changing stable IDs.
 - Expand Lean targets that compile against minimal imports.
 - Add pinned-browser interaction/accessibility checks beyond the current static accessibility gate.
+- Consume reviewed run packets as an optional readiness gate in integrated research dossiers.
 
 ## Research graph
 

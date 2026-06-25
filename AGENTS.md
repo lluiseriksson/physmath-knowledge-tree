@@ -74,6 +74,6 @@ roles, select the geometric or marginal branch honestly, and never infer
 <!-- FRONTIER_MATH_CORPUS_AGENT_PACK_START -->
 ## Frontier mathematics corpus protocol
 
-When a task selects mathematical sources for model training, retrieval or evaluation, load
-`integrations/frontier-math-corpus/generated/agent-context.md` first. Resolve every source by stable ID, preserve its decision and model-use boundary, reject blocked content, keep metadata-only records from authorizing linked full text, isolate share-alike/copyright shards, pin immutable snapshots and keep benchmarks out of candidate training. Re-run `npm run validate:frontier-corpus` after any source or policy edit.
+When selecting mathematical sources for training, retrieval or evaluation, load
+`integrations/frontier-math-corpus/generated/agent-context.md` first. Resolve every source by stable ID, preserve its decision/model-use/risk boundary, reject blocked content, keep metadata-only records from authorizing linked full text, isolate license shards, pin immutable snapshots with content and license-evidence hashes, and apply every holdout matcher to exact, translated, formal and semantic equivalents. Re-run `npm run validate:frontier-corpus` after any source, holdout or policy edit.
 <!-- FRONTIER_MATH_CORPUS_AGENT_PACK_END -->

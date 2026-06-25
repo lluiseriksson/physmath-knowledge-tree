@@ -1,0 +1,1855 @@
+{
+  "schema_version": "1.0.0",
+  "atlas_pack_version": "1.1.0",
+  "reviewed_on": "2026-06-25",
+  "legal_notice": "This registry is an engineering control, not legal advice. An approved or conditional decision means the recorded rights and source evidence passed this repository policy; it does not determine whether model training is lawful in every jurisdiction, whether model outputs inherit a source license, or whether an upstream rights holder can authorize every embedded item.",
+  "entries": [
+    {
+      "source_id": "active-calculus",
+      "priority": "review-first",
+      "decision": "conditional",
+      "model_use": "candidate-training",
+      "shard": "share-alike",
+      "license_expression": "CC-BY-SA-4.0",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "release-or-commit",
+      "content_scope": "Textbook source for Active Prelude, Single and Multivariable editions with matching license notices",
+      "excludes": [
+        "Third-party images, WeBWorK items and instructor-only ancillaries unless separately cleared"
+      ],
+      "attribution": "Credit the named authors and Active Calculus edition; include URL, commit/release and CC BY-SA 4.0; publish adaptations under the same license.",
+      "risk_score": 5,
+      "risk_band": "medium",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "agda-standard-library",
+      "priority": "high",
+      "decision": "approved",
+      "model_use": "candidate-training",
+      "shard": "permissive",
+      "license_expression": "MIT",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "commit",
+      "content_scope": "Repository-authored content",
+      "excludes": [],
+      "attribution": "Retain the Agda standard-library MIT license and contributor copyright notice; record the exact commit.",
+      "risk_score": 0,
+      "risk_band": "low",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "aim-open-textbook-list",
+      "priority": "metadata",
+      "decision": "metadata_only",
+      "model_use": "metadata-only",
+      "shard": "metadata",
+      "license_expression": "LicenseRef-Per-Item",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "catalog-record-and-date",
+      "content_scope": "Titles, authors and source links",
+      "excludes": [
+        "Textbook content until item-level review"
+      ],
+      "attribution": "Record AIM listing and then the authoritative publisher license evidence.",
+      "risk_score": 11,
+      "risk_band": "high",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "archive-of-formal-proofs",
+      "priority": "review-first",
+      "decision": "conditional",
+      "model_use": "candidate-training",
+      "shard": "per-item",
+      "license_expression": "LicenseRef-Per-Entry",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "entry-release-and-hash",
+      "content_scope": "Entries whose license metadata passes the allowlist",
+      "excludes": [
+        "Entries with missing, incompatible or ambiguous license metadata"
+      ],
+      "attribution": "Store AFP entry, version, authors, citation, license, dependencies and source hash.",
+      "risk_score": 9,
+      "risk_band": "high",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "arxiv-license-resolved-subset",
+      "priority": "retrieval",
+      "decision": "conditional",
+      "model_use": "retrieval-only",
+      "shard": "per-item",
+      "license_expression": "LicenseRef-Per-Item",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "item-license-and-version",
+      "content_scope": "Only individual arXiv versions with machine-recorded compatible license identifiers",
+      "excludes": [
+        "Default arXiv non-exclusive distribution license unless separately approved",
+        "Withdrawn versions",
+        "Third-party appendices or figures"
+      ],
+      "attribution": "Store arXiv ID and version, title, authors, submission date, DOI, item license URL and source hash.",
+      "risk_score": 14,
+      "risk_band": "critical",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "arxiv-unfiltered-metadata",
+      "priority": "metadata",
+      "decision": "metadata_only",
+      "model_use": "metadata-only",
+      "shard": "metadata",
+      "license_expression": "LicenseRef-Metadata-Only",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "dated-snapshot",
+      "content_scope": "Identifiers, titles, authors, categories, dates and item-license links",
+      "excludes": [
+        "Source/PDF text without compatible item license"
+      ],
+      "attribution": "Retain arXiv ID/version, title, authors, date, category and item-license URL.",
+      "risk_score": 9,
+      "risk_band": "high",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "basic-analysis-lebl",
+      "priority": "review-first",
+      "decision": "conditional",
+      "model_use": "candidate-training",
+      "shard": "share-alike",
+      "license_expression": "CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "release",
+      "content_scope": "Released book source and author-owned figures under the CC BY-SA option",
+      "excludes": [
+        "Linked external media"
+      ],
+      "attribution": "Credit Jiří Lebl, book title and version; include URL, release hash and CC BY-SA 4.0; mark modifications.",
+      "risk_score": 5,
+      "risk_band": "medium",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "cgal",
+      "priority": "review-first",
+      "decision": "conditional",
+      "model_use": "candidate-training",
+      "shard": "copyleft-code",
+      "license_expression": "GPL-3.0-or-later AND LGPL-3.0-or-later",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "release-or-commit",
+      "content_scope": "Individually inventoried CGAL packages and examples",
+      "excludes": [
+        "Commercial-only components",
+        "Packages whose license is not admitted"
+      ],
+      "attribution": "Retain package-level GPL/LGPL notices, source obligations, authorship and exact release.",
+      "risk_score": 5,
+      "risk_band": "medium",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "coq-platform",
+      "priority": "review-first",
+      "decision": "conditional",
+      "model_use": "candidate-training",
+      "shard": "copyleft-code",
+      "license_expression": "LGPL-2.1-only WITH OCaml-LGPL-linking-exception",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "release-or-commit",
+      "content_scope": "Core and standard-library files with compatible headers",
+      "excludes": [
+        "Third-party plugins and external developments"
+      ],
+      "attribution": "Preserve LGPL, exception text, copyright notices and component provenance; record release/commit.",
+      "risk_score": 5,
+      "risk_band": "medium",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "crossref-metadata",
+      "priority": "metadata",
+      "decision": "metadata_only",
+      "model_use": "metadata-only",
+      "shard": "metadata",
+      "license_expression": "CC0-1.0-with-field-exceptions",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "dated-snapshot",
+      "content_scope": "Bibliographic facts and identifiers explicitly covered by Crossref metadata terms",
+      "excludes": [
+        "Abstracts, full text and publisher-deposited content without independent rights"
+      ],
+      "attribution": "Retain DOI, depositor/source, retrieval date and field-level rights information.",
+      "risk_score": 8,
+      "risk_band": "high",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "cvxpy",
+      "priority": "high",
+      "decision": "approved",
+      "model_use": "candidate-training",
+      "shard": "permissive",
+      "license_expression": "Apache-2.0",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "commit",
+      "content_scope": "Repository-authored content",
+      "excludes": [
+        "Optional solver packages and examples with separate licenses"
+      ],
+      "attribution": "Retain Apache-2.0, copyright and NOTICE material; record the exact CVXPY commit and solver exclusions.",
+      "risk_score": 0,
+      "risk_band": "low",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "deepmind-mathematics-dataset",
+      "priority": "holdout",
+      "decision": "approved",
+      "model_use": "evaluation-only",
+      "shard": "permissive",
+      "license_expression": "Apache-2.0",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "commit",
+      "content_scope": "Repository-authored content",
+      "excludes": [],
+      "attribution": "Retain Apache-2.0 and cite the repository commit plus generator configuration.",
+      "risk_score": 5,
+      "risk_band": "medium",
+      "holdout_group": "deepmind-synthetic-mathematics",
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "diffyqs",
+      "priority": "review-first",
+      "decision": "conditional",
+      "model_use": "candidate-training",
+      "shard": "share-alike",
+      "license_expression": "CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "release",
+      "content_scope": "Released book source and author-owned figures under the selected CC BY-SA 4.0 option",
+      "excludes": [
+        "Linked external videos",
+        "Third-party WeBWorK items unless their licenses are independently resolved"
+      ],
+      "attribution": "Credit Jiří Lebl, book title and version; include URL, release hash and CC BY-SA 4.0; mark modifications.",
+      "risk_score": 5,
+      "risk_band": "medium",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "discrete-math-open-introduction",
+      "priority": "review-first",
+      "decision": "conditional",
+      "model_use": "candidate-training",
+      "shard": "share-alike",
+      "license_expression": "CC-BY-SA-4.0",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "release-or-commit",
+      "content_scope": "Book source and embedded materials whose notices match CC BY-SA",
+      "excludes": [
+        "Instructor-only resources and external videos"
+      ],
+      "attribution": "Credit Oscar Levin, title and edition; include source URL, commit and CC BY-SA 4.0; preserve share-alike.",
+      "risk_score": 5,
+      "risk_band": "medium",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "fipy",
+      "priority": "review-first",
+      "decision": "conditional",
+      "model_use": "candidate-training",
+      "shard": "attribution",
+      "license_expression": "LicenseRef-NIST-Software",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "release-or-commit",
+      "content_scope": "FiPy-authored source and examples",
+      "excludes": [
+        "Third-party dependencies and datasets under separate terms"
+      ],
+      "attribution": "Acknowledge NIST and FiPy, retain the full NIST notice, dependency licenses, version and commit.",
+      "risk_score": 4,
+      "risk_band": "medium",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "gap-system",
+      "priority": "review-first",
+      "decision": "conditional",
+      "model_use": "candidate-training",
+      "shard": "copyleft-code",
+      "license_expression": "GPL-2.0-or-later",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "release-or-commit",
+      "content_scope": "GAP core and individually cleared packages",
+      "excludes": [
+        "Packages with incompatible or missing licenses"
+      ],
+      "attribution": "Preserve GPL terms, source availability and package-specific notices; record release/commit.",
+      "risk_score": 5,
+      "risk_band": "medium",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "geocoq",
+      "priority": "review-first",
+      "decision": "conditional",
+      "model_use": "candidate-training",
+      "shard": "copyleft-code",
+      "license_expression": "LGPL-3.0-or-later",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "commit",
+      "content_scope": "GeoCoq-authored formal source with matching headers",
+      "excludes": [
+        "Generated or imported files with separate terms"
+      ],
+      "attribution": "Preserve LGPL terms, authorship and exact commit; retain dependency notices.",
+      "risk_score": 5,
+      "risk_band": "medium",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "geogebra-materials-catalog",
+      "priority": "metadata",
+      "decision": "metadata_only",
+      "model_use": "metadata-only",
+      "shard": "metadata",
+      "license_expression": "LicenseRef-Per-Item",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "resource-version-and-hash",
+      "content_scope": "Resource metadata and links only",
+      "excludes": [
+        "Applets, worksheets, images and text without an explicit compatible license"
+      ],
+      "attribution": "Record resource ID, creator, URL, version/date and explicit item license before any content use.",
+      "risk_score": 12,
+      "risk_band": "high",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "grinstead-snell-probability",
+      "priority": "metadata",
+      "decision": "metadata_only",
+      "model_use": "metadata-only",
+      "shard": "metadata",
+      "license_expression": "LicenseRef-To-Be-Verified",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "edition-and-hash",
+      "content_scope": "Metadata and citation only until license verification",
+      "excludes": [
+        "All book text before verified license capture"
+      ],
+      "attribution": "Record title, authors, edition, authoritative URL, hash and verified license before promotion.",
+      "risk_score": 9,
+      "risk_band": "high",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "gsm8k",
+      "priority": "holdout",
+      "decision": "approved",
+      "model_use": "evaluation-only",
+      "shard": "permissive",
+      "license_expression": "MIT",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "commit",
+      "content_scope": "Repository-authored content",
+      "excludes": [],
+      "attribution": "Retain the MIT notice and cite GSM8K with the exact repository commit and split.",
+      "risk_score": 5,
+      "risk_band": "medium",
+      "holdout_group": "gsm8k-grade-school-reasoning",
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "hefferon-linear-algebra",
+      "priority": "review-first",
+      "decision": "conditional",
+      "model_use": "candidate-training",
+      "shard": "share-alike",
+      "license_expression": "CC-BY-SA-3.0-US OR GFDL-1.3-or-later",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "commit",
+      "content_scope": "Book and solution-book source explicitly covered by the site license",
+      "excludes": [
+        "Linked videos and third-party reviews"
+      ],
+      "attribution": "Credit Jim Hefferon, title and edition; include URL, commit and selected CC BY-SA license; preserve share-alike.",
+      "risk_score": 5,
+      "risk_band": "medium",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "hendrycks-math",
+      "priority": "holdout",
+      "decision": "approved",
+      "model_use": "evaluation-only",
+      "shard": "permissive",
+      "license_expression": "MIT",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "commit",
+      "content_scope": "Repository-authored content",
+      "excludes": [],
+      "attribution": "Retain the MIT notice and cite the benchmark paper, repository commit and split.",
+      "risk_score": 5,
+      "risk_band": "medium",
+      "holdout_group": "hendrycks-math-competition",
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "hol-light",
+      "priority": "review-first",
+      "decision": "conditional",
+      "model_use": "candidate-training",
+      "shard": "permissive",
+      "license_expression": "BSD-2-Clause",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "commit",
+      "content_scope": "HOL Light repository files whose headers agree with the project license",
+      "excludes": [
+        "Imported third-party examples without matching headers"
+      ],
+      "attribution": "Retain BSD notices and file authorship; record exact commit.",
+      "risk_score": 4,
+      "risk_band": "medium",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "hol4",
+      "priority": "review-first",
+      "decision": "conditional",
+      "model_use": "candidate-training",
+      "shard": "permissive",
+      "license_expression": "BSD-3-Clause AND LicenseRef-ComponentNotices",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "commit",
+      "content_scope": "Repository-authored content",
+      "excludes": [
+        "examples/muddy",
+        "examples/machine-code/graph/seL4-kernel",
+        "src/HolSat/sat_solvers/minisat",
+        "src/portableML/json",
+        "Any self-identified third-party file"
+      ],
+      "attribution": "Retain the HOL4 core copyright and BSD-style notice; record the exact commit and every component-level exception.",
+      "risk_score": 4,
+      "risk_band": "medium",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "hott-book",
+      "priority": "review-first",
+      "decision": "conditional",
+      "model_use": "candidate-training",
+      "shard": "share-alike",
+      "license_expression": "CC-BY-SA-3.0",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "commit",
+      "content_scope": "Book source and project-authored figures covered by the repository license",
+      "excludes": [
+        "Linked translations unless separately licensed"
+      ],
+      "attribution": "Credit The Univalent Foundations Program; include title, commit/version and CC BY-SA license; preserve share-alike.",
+      "risk_score": 5,
+      "risk_band": "medium",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "isabelle-distribution",
+      "priority": "review-first",
+      "decision": "conditional",
+      "model_use": "candidate-training",
+      "shard": "permissive",
+      "license_expression": "BSD-3-Clause AND component-licenses",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "release",
+      "content_scope": "Pinned Isabelle release and its documented component inventory",
+      "excludes": [
+        "External sessions not distributed with the release"
+      ],
+      "attribution": "Preserve the release COPYRIGHT inventory and all component notices; record release identifier and hash.",
+      "risk_score": 4,
+      "risk_band": "medium",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "julia-language",
+      "priority": "high",
+      "decision": "approved",
+      "model_use": "candidate-training",
+      "shard": "permissive",
+      "license_expression": "MIT",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "commit",
+      "content_scope": "Repository-authored content",
+      "excludes": [
+        "Bundled dependencies and standard-library components under separate licenses"
+      ],
+      "attribution": "Retain the Julia MIT notice and all applicable dependency notices; record version and commit.",
+      "risk_score": 0,
+      "risk_band": "low",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "lean-dojo-traces",
+      "priority": "review-first",
+      "decision": "conditional",
+      "model_use": "candidate-training",
+      "shard": "per-item",
+      "license_expression": "LicenseRef-Upstream-Per-Repository",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "source-commit-closure",
+      "content_scope": "Traces from allowlisted source repositories with transitive license manifests",
+      "excludes": [
+        "Repositories lacking compatible licenses",
+        "Canonical benchmark splits reserved for evaluation"
+      ],
+      "attribution": "For every trace, retain source repository, file, declaration, commit, license and extraction-tool version.",
+      "risk_score": 14,
+      "risk_band": "critical",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "lean4",
+      "priority": "high",
+      "decision": "approved",
+      "model_use": "candidate-training",
+      "shard": "permissive",
+      "license_expression": "Apache-2.0",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "commit",
+      "content_scope": "Repository-authored content",
+      "excludes": [],
+      "attribution": "Retain Apache-2.0 and repository notices; record the exact commit.",
+      "risk_score": 0,
+      "risk_band": "low",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "leandojo-tooling",
+      "priority": "high",
+      "decision": "approved",
+      "model_use": "candidate-training",
+      "shard": "permissive",
+      "license_expression": "MIT",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "commit",
+      "content_scope": "LeanDojo-authored tooling only",
+      "excludes": [
+        "Extracted theorem corpora from third-party repositories"
+      ],
+      "attribution": "Retain the LeanDojo MIT notice and pin the exact tooling commit.",
+      "risk_score": 0,
+      "risk_band": "low",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "libretexts-catalog",
+      "priority": "metadata",
+      "decision": "metadata_only",
+      "model_use": "metadata-only",
+      "shard": "metadata",
+      "license_expression": "LicenseRef-Per-Page",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "page-version-and-hash",
+      "content_scope": "Page titles, source links and license metadata",
+      "excludes": [
+        "Page text, figures and transclusions until page-level license resolution"
+      ],
+      "attribution": "Record page URL, revision/date, original source, authors and page-level license.",
+      "risk_score": 11,
+      "risk_band": "high",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "lmfdb",
+      "priority": "retrieval",
+      "decision": "conditional",
+      "model_use": "retrieval-only",
+      "shard": "share-alike",
+      "license_expression": "CC-BY-SA-4.0",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "dated-snapshot",
+      "content_scope": "Official database exports and schema documentation",
+      "excludes": [
+        "Linked papers and third-party images"
+      ],
+      "attribution": "Retain database object identifiers, snapshot date, project citation and applicable CC BY-SA notice.",
+      "risk_score": 7,
+      "risk_band": "high",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "math-stackexchange-dump",
+      "priority": "retrieval",
+      "decision": "conditional",
+      "model_use": "retrieval-only",
+      "shard": "share-alike",
+      "license_expression": "CC-BY-SA-4.0 AND earlier-version-per-post",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "dated-snapshot",
+      "content_scope": "Public posts with post ID, author attribution and applicable license version",
+      "excludes": [
+        "Deleted or private posts, profiles, email hashes, avatars and unnecessary user identifiers",
+        "Posts whose applicable historical CC BY-SA version cannot be reconstructed",
+        "Benchmark or competition items selected for evaluation"
+      ],
+      "attribution": "Store post ID, title, URL, author display name, timestamp, revision and applicable CC BY-SA version.",
+      "risk_score": 18,
+      "risk_band": "critical",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "mathlib4",
+      "priority": "high",
+      "decision": "approved",
+      "model_use": "candidate-training",
+      "shard": "permissive",
+      "license_expression": "Apache-2.0",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "commit",
+      "content_scope": "Repository-authored content",
+      "excludes": [],
+      "attribution": "Retain the Apache-2.0 license, copyright notices and any NOTICE material; record the exact commit.",
+      "risk_score": 0,
+      "risk_band": "low",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "metamath-set-mm",
+      "priority": "high",
+      "decision": "approved",
+      "model_use": "candidate-training",
+      "shard": "public-domain",
+      "license_expression": "CC0-1.0",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "commit",
+      "content_scope": "Repository-authored content",
+      "excludes": [],
+      "attribution": "Record set.mm, project URL, commit and CC0 dedication even though attribution is not legally required.",
+      "risk_score": 0,
+      "risk_band": "low",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "mini-f2f",
+      "priority": "holdout",
+      "decision": "conditional",
+      "model_use": "evaluation-only",
+      "shard": "permissive",
+      "license_expression": "Apache-2.0 AND MIT AND BSD-2-Clause",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "frozen-v1-commit",
+      "content_scope": "Frozen v1 formal translations and proofs only",
+      "excludes": [
+        "Natural-language competition statements unless separately cleared",
+        "Any train split derived from benchmark statements",
+        "Main branch after the v1 freeze"
+      ],
+      "attribution": "Record miniF2F v1, the exact commit, system-specific folder license, paper citation and original-problem provenance.",
+      "risk_score": 9,
+      "risk_band": "high",
+      "holdout_group": "mini-f2f-formal-olympiad",
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "mizar-library",
+      "priority": "review-first",
+      "decision": "conditional",
+      "model_use": "candidate-training",
+      "shard": "copyleft-code",
+      "license_expression": "GPL-3.0-or-later",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "release-or-commit",
+      "content_scope": "Mizar items whose repository and article notices match the admitted license",
+      "excludes": [
+        "External articles or tools under different terms"
+      ],
+      "attribution": "Preserve GPL terms, article authorship and release/commit provenance.",
+      "risk_score": 5,
+      "risk_band": "medium",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "mpmath",
+      "priority": "high",
+      "decision": "approved",
+      "model_use": "candidate-training",
+      "shard": "permissive",
+      "license_expression": "BSD-3-Clause",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "commit",
+      "content_scope": "Repository-authored content",
+      "excludes": [],
+      "attribution": "Retain the mpmath BSD license and copyright notice; record the exact commit and test-data provenance.",
+      "risk_score": 0,
+      "risk_band": "low",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "networkx",
+      "priority": "high",
+      "decision": "approved",
+      "model_use": "candidate-training",
+      "shard": "permissive",
+      "license_expression": "BSD-3-Clause",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "commit",
+      "content_scope": "Repository-authored content",
+      "excludes": [
+        "Third-party example data carrying separate terms"
+      ],
+      "attribution": "Retain the NetworkX BSD license and copyright notices; record the exact commit and any separately licensed examples.",
+      "risk_score": 0,
+      "risk_band": "low",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "nist-dlmf",
+      "priority": "review-first",
+      "decision": "conditional",
+      "model_use": "candidate-training",
+      "shard": "per-item",
+      "license_expression": "LicenseRef-NIST-Works",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "section-version-and-hash",
+      "content_scope": "NIST-authored sections and machine-readable formulas with section-level rights records",
+      "excludes": [
+        "Third-party authored material, images or tables without separate clearance",
+        "Standard Reference Data products"
+      ],
+      "attribution": "Acknowledge NIST, cite DLMF section and version/date, record authorship and rights basis, and mark modifications.",
+      "risk_score": 6,
+      "risk_band": "medium",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "nist-sematedch-handbook",
+      "priority": "review-first",
+      "decision": "conditional",
+      "model_use": "candidate-training",
+      "shard": "per-item",
+      "license_expression": "LicenseRef-NIST-Works",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "section-version-and-hash",
+      "content_scope": "Cleared NIST-authored handbook sections and examples",
+      "excludes": [
+        "Third-party contributions, images and linked datasets without compatible terms"
+      ],
+      "attribution": "Acknowledge NIST/SEMATECH, cite section URL and access/version date, record rights basis and mark changes.",
+      "risk_score": 6,
+      "risk_band": "medium",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "numpy",
+      "priority": "high",
+      "decision": "approved",
+      "model_use": "candidate-training",
+      "shard": "permissive",
+      "license_expression": "BSD-3-Clause",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "commit",
+      "content_scope": "Repository-authored content",
+      "excludes": [
+        "Vendored third-party components not covered by NumPy primary license"
+      ],
+      "attribution": "Retain NumPy copyright, BSD terms and applicable third-party notices; record version and commit.",
+      "risk_score": 0,
+      "risk_band": "low",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "oeis",
+      "priority": "review-first",
+      "decision": "conditional",
+      "model_use": "candidate-training",
+      "shard": "share-alike",
+      "license_expression": "CC-BY-SA-4.0",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "dated-snapshot",
+      "content_scope": "Structured sequence records and references from the official export",
+      "excludes": [
+        "Linked full text and user comments outside exported records"
+      ],
+      "attribution": "Retain A-number, entry contributors, modification date, OEIS URL and CC BY-SA 4.0 notice.",
+      "risk_score": 7,
+      "risk_band": "high",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "open-logic-project",
+      "priority": "high",
+      "decision": "approved",
+      "model_use": "candidate-training",
+      "shard": "attribution",
+      "license_expression": "CC-BY-4.0",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "commit",
+      "content_scope": "Project-authored LaTeX source and generated text whose file-level notices agree with CC BY.",
+      "excludes": [
+        "Third-party figures or readings carrying separate notices"
+      ],
+      "attribution": "Credit the Open Logic Project and named contributors; include title, URL, version/commit and CC BY 4.0.",
+      "risk_score": 0,
+      "risk_band": "low",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "open-textbook-library-catalog",
+      "priority": "metadata",
+      "decision": "metadata_only",
+      "model_use": "metadata-only",
+      "shard": "metadata",
+      "license_expression": "LicenseRef-Per-Item",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "catalog-record-and-date",
+      "content_scope": "Catalog metadata and license links",
+      "excludes": [
+        "Book content before item-level review",
+        "Reviews beyond quotation limits"
+      ],
+      "attribution": "Record catalog URL, book record, listed license and review date; verify at the publisher.",
+      "risk_score": 11,
+      "risk_band": "high",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "openalex-snapshot",
+      "priority": "metadata",
+      "decision": "approved",
+      "model_use": "metadata-only",
+      "shard": "metadata",
+      "license_expression": "CC0-1.0",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "dated-snapshot",
+      "content_scope": "OpenAlex metadata fields and identifiers",
+      "excludes": [
+        "Linked article full text and third-party landing-page content"
+      ],
+      "attribution": "Record OpenAlex snapshot date and CC0 status; cite upstream works separately.",
+      "risk_score": 2,
+      "risk_band": "low",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "openintro-statistics",
+      "priority": "review-first",
+      "decision": "conditional",
+      "model_use": "candidate-training",
+      "shard": "share-alike",
+      "license_expression": "CC-BY-SA-3.0",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "release-or-commit",
+      "content_scope": "OpenIntro-owned statistics textbook text, public labs and public datasets with matching notices",
+      "excludes": [
+        "Teacher-only resources",
+        "Partner-program books",
+        "Book covers and trademarks",
+        "Third-party images or fair-use media"
+      ],
+      "attribution": "Credit book authors and OpenIntro; include edition, URL, commit and CC BY-SA 3.0; remove branding from derivatives and preserve share-alike.",
+      "risk_score": 5,
+      "risk_band": "medium",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "pari-gp",
+      "priority": "review-first",
+      "decision": "conditional",
+      "model_use": "candidate-training",
+      "shard": "copyleft-code",
+      "license_expression": "GPL-2.0-or-later",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "release-or-commit",
+      "content_scope": "Repository-authored content",
+      "excludes": [],
+      "attribution": "Preserve GPL terms, source availability and copyright notices; record release/commit.",
+      "risk_score": 5,
+      "risk_band": "medium",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "petrunin-euclidean-plane",
+      "priority": "metadata",
+      "decision": "metadata_only",
+      "model_use": "metadata-only",
+      "shard": "metadata",
+      "license_expression": "LicenseRef-Per-Item",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "arxiv-version-and-license",
+      "content_scope": "Metadata and citation only until the item license is allowlisted",
+      "excludes": [
+        "PDF/source text before item-license approval"
+      ],
+      "attribution": "Record arXiv ID/version, authors, title, item license and hash before promotion.",
+      "risk_score": 11,
+      "risk_band": "high",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "petsc",
+      "priority": "high",
+      "decision": "approved",
+      "model_use": "candidate-training",
+      "shard": "permissive",
+      "license_expression": "BSD-2-Clause",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "commit",
+      "content_scope": "Repository-authored content",
+      "excludes": [
+        "All external packages downloaded by PETSc configuration",
+        "Generated vendor trees with separate terms"
+      ],
+      "attribution": "Retain the PETSc license and copyright notice; record the exact commit and exclude every --download-package dependency.",
+      "risk_score": 0,
+      "risk_band": "low",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "planetmath",
+      "priority": "retrieval",
+      "decision": "conditional",
+      "model_use": "retrieval-only",
+      "shard": "share-alike",
+      "license_expression": "CC-BY-SA-3.0",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "dated-snapshot",
+      "content_scope": "Article text and structured links with author/page attribution",
+      "excludes": [
+        "External linked content and media without compatible notices"
+      ],
+      "attribution": "Store article title, author/contributor identifiers, URL, revision date and CC BY-SA notice.",
+      "risk_score": 7,
+      "risk_band": "high",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "project-gutenberg-mathematics",
+      "priority": "review-first",
+      "decision": "conditional",
+      "model_use": "candidate-training",
+      "shard": "public-domain",
+      "license_expression": "LicenseRef-Public-Domain-Per-Item",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "item-license-and-hash",
+      "content_scope": "Project Gutenberg text for individually cleared editions",
+      "excludes": [
+        "Project Gutenberg trademarks/license boilerplate from training text",
+        "Items not public domain in target jurisdictions"
+      ],
+      "attribution": "Record ebook number, title, authors/editors, edition, source URL, access date, item rights determination and SHA-256.",
+      "risk_score": 6,
+      "risk_band": "medium",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "proofwiki",
+      "priority": "retrieval",
+      "decision": "conditional",
+      "model_use": "retrieval-only",
+      "shard": "share-alike",
+      "license_expression": "CC-BY-SA-3.0",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "dated-snapshot",
+      "content_scope": "Proof and definition page text with revision histories",
+      "excludes": [
+        "User/talk pages",
+        "External copyrighted quotations",
+        "Non-free media"
+      ],
+      "attribution": "Store page title, revision ID, contributor history URL and CC BY-SA notice.",
+      "risk_score": 11,
+      "risk_band": "high",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "py-pde",
+      "priority": "high",
+      "decision": "approved",
+      "model_use": "candidate-training",
+      "shard": "permissive",
+      "license_expression": "MIT",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "commit",
+      "content_scope": "Repository-authored content",
+      "excludes": [],
+      "attribution": "Retain the py-pde MIT license and copyright notice; record the exact commit and dependency versions.",
+      "risk_score": 0,
+      "risk_band": "low",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "sagemath",
+      "priority": "review-first",
+      "decision": "conditional",
+      "model_use": "candidate-training",
+      "shard": "copyleft-code",
+      "license_expression": "GPL-3.0-or-later",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "release-or-commit",
+      "content_scope": "SageMath-authored source plus package-level license inventory",
+      "excludes": [
+        "Bundled packages whose licenses are not admitted by the target shard"
+      ],
+      "attribution": "Preserve GPL source offer, copyright notices, modification history and every bundled-package license; record release/commit.",
+      "risk_score": 5,
+      "risk_band": "medium",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "scipy",
+      "priority": "high",
+      "decision": "approved",
+      "model_use": "candidate-training",
+      "shard": "permissive",
+      "license_expression": "BSD-3-Clause",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "commit",
+      "content_scope": "Repository-authored content",
+      "excludes": [
+        "Vendored or optional third-party components with separate notices"
+      ],
+      "attribution": "Retain SciPy copyright, BSD terms and applicable third-party notices; record version and commit.",
+      "risk_score": 0,
+      "risk_band": "low",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "semantic-scholar-metadata",
+      "priority": "metadata",
+      "decision": "metadata_only",
+      "model_use": "metadata-only",
+      "shard": "metadata",
+      "license_expression": "LicenseRef-API-Terms",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "dated-snapshot",
+      "content_scope": "API fields permitted by current terms",
+      "excludes": [
+        "Paper full text",
+        "Unlicensed abstracts",
+        "Author profile data not needed for citation"
+      ],
+      "attribution": "Record API version, paper identifier, source, retrieval date and field-level terms.",
+      "risk_score": 10,
+      "risk_band": "high",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "stacks-project",
+      "priority": "retrieval",
+      "decision": "conditional",
+      "model_use": "retrieval-only",
+      "shard": "documentation-copyleft",
+      "license_expression": "GFDL-1.2-only",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "commit",
+      "content_scope": "Stacks Project LaTeX source and tag metadata",
+      "excludes": [
+        "External bibliography full text"
+      ],
+      "attribution": "Preserve GFDL notices, transparent source, history and required license text; cite permanent tags and exact commit.",
+      "risk_score": 7,
+      "risk_band": "high",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "statsmodels",
+      "priority": "high",
+      "decision": "approved",
+      "model_use": "candidate-training",
+      "shard": "permissive",
+      "license_expression": "BSD-3-Clause",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "commit",
+      "content_scope": "Repository-authored content",
+      "excludes": [
+        "Datasets or examples carrying a separate notice"
+      ],
+      "attribution": "Retain the statsmodels BSD license and copyright notices; record the exact commit and excluded bundled datasets.",
+      "risk_score": 0,
+      "risk_band": "low",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "sympy",
+      "priority": "high",
+      "decision": "approved",
+      "model_use": "candidate-training",
+      "shard": "permissive",
+      "license_expression": "BSD-3-Clause",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "commit",
+      "content_scope": "Repository-authored content",
+      "excludes": [],
+      "attribution": "Retain BSD-3-Clause copyright and disclaimer; record version and commit.",
+      "risk_score": 0,
+      "risk_band": "low",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "tasty-bits-scv",
+      "priority": "review-first",
+      "decision": "conditional",
+      "model_use": "candidate-training",
+      "shard": "share-alike",
+      "license_expression": "CC-BY-SA-4.0 OR CC-BY-NC-SA-4.0",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "release",
+      "content_scope": "Released book source and author-owned figures under the CC BY-SA option",
+      "excludes": [
+        "Linked external media"
+      ],
+      "attribution": "Credit Jiří Lebl, book title and version; include URL, release hash and CC BY-SA 4.0; mark modifications.",
+      "risk_score": 5,
+      "risk_band": "medium",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "unimath",
+      "priority": "review-first",
+      "decision": "conditional",
+      "model_use": "candidate-training",
+      "shard": "permissive",
+      "license_expression": "BSD-2-Clause",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "commit",
+      "content_scope": "UniMath-authored formal source",
+      "excludes": [
+        "External dependencies and generated artifacts with separate terms"
+      ],
+      "attribution": "Retain BSD notice, contributor provenance and exact commit.",
+      "risk_score": 4,
+      "risk_band": "medium",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "unpaywall-snapshot",
+      "priority": "metadata",
+      "decision": "approved",
+      "model_use": "metadata-only",
+      "shard": "metadata",
+      "license_expression": "CC0-1.0",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "dated-snapshot",
+      "content_scope": "Unpaywall metadata and OA-location fields",
+      "excludes": [
+        "Article full text at linked locations"
+      ],
+      "attribution": "Record the Unpaywall snapshot date and CC0 status; retain DOI provenance.",
+      "risk_score": 0,
+      "risk_band": "low",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "wikibooks-math-dumps",
+      "priority": "review-first",
+      "decision": "conditional",
+      "model_use": "candidate-training",
+      "shard": "share-alike",
+      "license_expression": "CC-BY-SA-4.0 AND GFDL-1.3-or-later",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "dated-snapshot",
+      "content_scope": "Selected book revisions with page-level attribution",
+      "excludes": [
+        "Non-free media",
+        "Talk/user pages",
+        "Unlicensed transclusions"
+      ],
+      "attribution": "Store book/page title, revision ID, contributor history URL and CC BY-SA/GFDL notices.",
+      "risk_score": 8,
+      "risk_band": "high",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "wikipedia-math-dumps",
+      "priority": "retrieval",
+      "decision": "conditional",
+      "model_use": "retrieval-only",
+      "shard": "share-alike",
+      "license_expression": "CC-BY-SA-4.0 AND GFDL-1.3-or-later",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "dated-snapshot",
+      "content_scope": "Selected revision text from mathematics pages with page/revision attribution",
+      "excludes": [
+        "Non-free media",
+        "External links",
+        "User pages",
+        "Talk pages",
+        "Templates with incompatible embedded content"
+      ],
+      "attribution": "Store page title, revision ID, contributors link, source URL and CC BY-SA/GFDL notices for every extracted unit.",
+      "risk_score": 11,
+      "risk_band": "high",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "wikiversity-math-dumps",
+      "priority": "retrieval",
+      "decision": "conditional",
+      "model_use": "retrieval-only",
+      "shard": "share-alike",
+      "license_expression": "CC-BY-SA-4.0 AND GFDL-1.3-or-later",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "dated-snapshot",
+      "content_scope": "Curated course and exercise revisions with provenance",
+      "excludes": [
+        "Talk/user pages",
+        "Non-free media",
+        "Unlicensed external embeds"
+      ],
+      "attribution": "Store project/page title, revision ID, contributor history URL and CC BY-SA/GFDL notices.",
+      "risk_score": 8,
+      "risk_band": "high",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "zbmath-open",
+      "priority": "metadata",
+      "decision": "conditional",
+      "model_use": "metadata-only",
+      "shard": "share-alike",
+      "license_expression": "CC-BY-SA-4.0",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "dated-snapshot",
+      "content_scope": "Fields explicitly covered by the open-data terms",
+      "excludes": [
+        "Publisher abstracts or full text not covered by zbMATH terms"
+      ],
+      "attribution": "Retain review author, record identifier, source URL, snapshot date and applicable license notice.",
+      "risk_score": 7,
+      "risk_band": "high",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    },
+    {
+      "source_id": "zenodo-license-resolved-records",
+      "priority": "retrieval",
+      "decision": "conditional",
+      "model_use": "retrieval-only",
+      "shard": "per-item",
+      "license_expression": "LicenseRef-Per-Item",
+      "license_reviewed_on": "2026-06-25",
+      "license_review_by": "2026-12-22",
+      "pin": "record-version-and-hash",
+      "content_scope": "Record files with allowlisted licenses plus record metadata",
+      "excludes": [
+        "Files with missing/custom/incompatible licenses",
+        "Linked external content"
+      ],
+      "attribution": "Store DOI, record/version, creators, file checksums, item license and citation.",
+      "risk_score": 11,
+      "risk_band": "high",
+      "holdout_group": null,
+      "required_checks": [
+        "exact-dedup",
+        "semantic-dedup",
+        "pii-scan",
+        "malware-scan",
+        "benchmark-scan",
+        "language-scan"
+      ]
+    }
+  ]
+}

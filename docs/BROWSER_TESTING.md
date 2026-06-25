@@ -44,6 +44,8 @@ The Lean-target pass loads controlled canonical Lean metadata, records a toolcha
 
 The research-dossier pass loads controlled workspace, evidence, change-review and Lean-audit stores; verifies scoped integration and readiness gates; exercises bilingual rendering and JSON/Markdown export; and confirms that the source storage keys remain read-only. The dossier fingerprint is checked independently of its generated timestamp.
 
+The reproducible-run pass creates a canonical-node-linked run, fingerprints and verifies it, checks artifact completeness, bulk-classifies the selected record, switches to Spanish and confirms local persistence. The separate CLI tests execute success and failure commands with `shell: false`, preserve child exit codes and verify artifact/log hashes.
+
 ## Boundary
 
 This is a deterministic functional and offline-readiness smoke test, not an exhaustive browser-certification programme. It currently targets one Chromium-family engine and does not replace manual assistive-technology review, visual-regression testing, performance profiling or cross-browser testing.
