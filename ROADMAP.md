@@ -12,6 +12,8 @@ Roadmap entries are proposals, not commitments. Changes should preserve provenan
 - Added portable evidence ledgers and selected review packets without automatic confidence promotion.
 - Added deterministic canonical graph snapshots and a risk-prioritized local change-review queue.
 - Added portable JSON/Markdown change-review packets without automatic graph mutation.
+- Added a local Lean-target audit queue with toolchain-specific outcomes and replacement notes.
+- Added deterministic import/`#check` probe generation in the browser and CLI.
 
 ## Near term
 
@@ -30,7 +32,6 @@ Roadmap entries are proposals, not commitments. Changes should preserve provenan
 
 - Machine-checked correspondence between selected JSON enums and Lean constructors.
 - Small formal examples for finite spectra, graph reachability, finite probability and algebraic transfer.
-- Declaration-existence audit for candidate mathlib imports and names.
 - Formal negative examples showing when an analogy fails to preserve an invariant.
 
 ## Learning map

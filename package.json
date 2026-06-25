@@ -43,7 +43,7 @@
     "usecase:list": "node scripts/run-use-case.mjs --list",
     "route:plan": "node scripts/plan-route.mjs",
     "export:jsonld": "node scripts/export-jsonld.mjs",
-    "test:e2e": "node scripts/browser-smoke.mjs dist && node scripts/browser-smoke-round3.mjs dist && node scripts/browser-smoke-workbench.mjs && node scripts/browser-smoke-evidence.mjs && node scripts/browser-smoke-changes.mjs",
+    "test:e2e": "node scripts/browser-smoke.mjs dist && node scripts/browser-smoke-round3.mjs dist && node scripts/browser-smoke-workbench.mjs && node scripts/browser-smoke-evidence.mjs && node scripts/browser-smoke-changes.mjs && node scripts/browser-smoke-formalization.mjs",
     "validate:symlinks": "node scripts/check-symlinks.mjs",
     "generate:jsonld": "node scripts/export-jsonld.mjs --output graph/knowledge-graph.jsonld",
     "route:bundle": "node scripts/bundle-route.mjs",
@@ -53,6 +53,7 @@
     "generate:yang-mills": "node scripts/build-yang-mills-agent-context.mjs",
     "validate:yang-mills": "node scripts/validate-yang-mills-pack.mjs",
     "validate:yang-mills-generated": "node scripts/build-yang-mills-agent-context.mjs --check",
-    "query:yang-mills": "node scripts/query-yang-mills-pack.mjs"
+    "query:yang-mills": "node scripts/query-yang-mills-pack.mjs",
+    "lean:probe": "node scripts/export-lean-target-probe.mjs"
   }
 }

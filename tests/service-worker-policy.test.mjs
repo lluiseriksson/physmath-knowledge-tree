@@ -230,6 +230,10 @@ test('navigation uses network-first canonical caching and shell fallbacks while 
     url: `${origin}/app/changes.html?risk=critical`, method: 'GET', mode: 'navigate',
   });
   assert.match(await changes.text(), /shell:\.\/changes\.html/);
+  const formalization = await harness.dispatchFetch({
+    url: `${origin}/app/formalization.html?status=unreviewed`, method: 'GET', mode: 'navigate',
+  });
+  assert.match(await formalization.text(), /shell:\.\/formalization\.html/);
   const rootPage = await harness.dispatchFetch({
     url: `${origin}/app/`, method: 'GET', mode: 'navigate',
   });

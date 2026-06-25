@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en" data-theme="system">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Audit canonical Lean imports, declaration names and formalization targets without promoting graph claims.">
+  <meta name="theme-color" content="#f4f7fb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#09111f" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>PhysMath Knowledge Tree — Lean target audit</title>
+  <link rel="canonical" href="https://lluiseriksson.github.io/physmath-knowledge-tree/formalization.html">
+  <link rel="icon" href="./assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./assets/icons/icon-192.png">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./src/formalization.css">
+  <script type="module" src="./src/formalization-app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#lean-audit-center" data-i18n="nav.skip">Skip to Lean target audit</a>
+
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="PhysMath Knowledge Tree home">
+      <img src="./assets/icons/icon.svg" width="42" height="42" alt="">
+      <span>
+        <strong>PhysMath Knowledge Tree</strong>
+        <small data-i18n="app.tagline">Turn candidate Lean metadata into reproducible probes</small>
+      </span>
+    </a>
+    <nav class="primary-nav" aria-label="Primary navigation" data-i18n-aria="nav.primary">
+      <a href="./" data-i18n="nav.research">Research graph</a>
+      <a href="./learning.html" data-i18n="nav.learning">Learning map</a>
+      <a href="./workbench.html" data-i18n="nav.workbench">Workbench</a>
+      <a href="./evidence.html" data-i18n="nav.evidence">Evidence review</a>
+      <a href="./changes.html" data-i18n="nav.changes">Change review</a>
+      <a href="./formalization.html" aria-current="page" data-i18n="nav.formalization">Lean audit</a>
+      <a href="https://github.com/lluiseriksson/physmath-knowledge-tree" rel="noreferrer" data-i18n="nav.repository">Repository</a>
+    </nav>
+    <div class="header-actions">
+      <select id="language" aria-label="Interface language" data-i18n-aria="header.language">
+        <option value="en">EN</option>
+        <option value="es">ES</option>
+      </select>
+      <button id="theme" class="icon-button" type="button" aria-label="Change theme" data-i18n-aria="header.theme">◐</button>
+      <button id="help" class="icon-button" type="button" aria-label="Lean audit help" data-i18n-aria="header.help">?</button>
+    </div>
+  </header>
+
+  <div id="loading" class="loading" role="status" aria-live="polite">
+    <span class="spinner" aria-hidden="true"></span>
+    <span data-i18n="loading">Loading canonical Lean targets…</span>
+  </div>
+
+  <main id="lean-audit-center" class="audit-layout" hidden>
+    <aside class="control-panel" aria-labelledby="controls-title">
+      <div class="panel-heading">
+        <div>
+          <p class="eyebrow" data-i18n="controls.eyebrow">Local verification state</p>
+          <h1 id="controls-title" data-i18n="controls.title">Lean target queue</h1>
+        </div>
+        <span id="save-state" class="save-state" role="status" aria-live="polite"></span>
+      </div>
+
+      <section class="panel-section" aria-labelledby="summary-title">
+        <h2 id="summary-title" data-i18n="summary.title">Audit summary</h2>
+        <dl class="stats-grid">
+          <div><dt data-i18n="summary.total">Items</dt><dd id="stat-total">0</dd></div>
+          <div><dt data-i18n="summary.reviewed">Reviewed</dt><dd id="stat-reviewed">0</dd></div>
+          <div><dt data-i18n="summary.verified">Verified</dt><dd id="stat-verified">0</dd></div>
+          <div><dt data-i18n="summary.open">Open</dt><dd id="stat-open">0</dd></div>
+          <div><dt data-i18n="summary.declarations">Declarations</dt><dd id="stat-declarations">0</dd></div>
+          <div><dt data-i18n="summary.imports">Imports</dt><dd id="stat-imports">0</dd></div>
+        </dl>
+      </section>
+
+      <section class="panel-section" aria-labelledby="filters-title">
+        <div class="section-heading">
+          <h2 id="filters-title" data-i18n="filters.title">Filter audit queue</h2>
+          <button id="clear-filters" class="text-button" type="button" data-i18n="filters.clear">Clear</button>
+        </div>
+        <label for="search" data-i18n="filters.search">Search Lean metadata</label>
+        <input id="search" type="search" autocomplete="off" aria-label="Search Lean metadata" data-i18n-aria="filters.search" placeholder="Node, import, declaration, target or note" data-i18n-placeholder="filters.placeholder">
+        <div class="field-grid two">
+          <div><label for="status-filter" data-i18n="filters.status">Audit status</label><select id="status-filter"></select></div>
+          <div><label for="type-filter" data-i18n="filters.type">Item type</label><select id="type-filter"></select></div>
+          <div><label for="kind-filter" data-i18n="filters.kind">Node kind</label><select id="kind-filter"></select></div>
+          <div><label for="confidence-filter" data-i18n="filters.confidence">Graph evidence</label><select id="confidence-filter"></select></div>
+        </div>
+        <label for="sort" data-i18n="filters.sort">Sort queue</label>
+        <select id="sort"></select>
+      </section>
+
+      <section class="panel-section" aria-labelledby="selection-title">
+        <h2 id="selection-title" data-i18n="selection.title">Probe selection</h2>
+        <p><strong id="selected-count">0</strong> <span data-i18n="selection.count">selected items</span></p>
+        <label for="probe-toolchain" data-i18n="selection.toolchain">Toolchain note</label>
+        <input id="probe-toolchain" type="text" maxlength="300" autocomplete="off" placeholder="leanprover/lean4:v4.31.0" data-i18n-placeholder="selection.toolchainPlaceholder">
+        <div class="stacked-actions">
+          <button id="select-visible" class="secondary-button" type="button" data-i18n="selection.selectVisible">Select visible</button>
+          <button id="clear-selection" class="secondary-button" type="button" data-i18n="selection.clear">Clear selection</button>
+          <button id="preview-probe" class="primary-button" type="button" disabled data-i18n="selection.preview">Preview Lean probe</button>
+          <button id="export-packet-json" class="secondary-button" type="button" disabled data-i18n="selection.exportJson">Export packet JSON</button>
+          <button id="export-packet-markdown" class="secondary-button" type="button" disabled data-i18n="selection.exportMarkdown">Export packet Markdown</button>
+        </div>
+      </section>
+
+      <section class="panel-section" aria-labelledby="portable-title">
+        <h2 id="portable-title" data-i18n="portable.title">Portable local audit</h2>
+        <p data-i18n="portable.body">Audit records stay in this browser unless exported.</p>
+        <label for="import-mode" data-i18n="portable.mode">Import mode</label>
+        <select id="import-mode">
+          <option value="merge" data-i18n="portable.merge">Merge newest records</option>
+          <option value="replace" data-i18n="portable.replace">Replace local ledger</option>
+        </select>
+        <div class="stacked-actions">
+          <button id="export-ledger" class="secondary-button" type="button" data-i18n="portable.export">Export ledger JSON</button>
+          <button id="import-ledger" class="secondary-button" type="button" data-i18n="portable.import">Import ledger JSON</button>
+          <button id="reset-ledger" class="danger-button" type="button" data-i18n="portable.reset">Clear local audit</button>
+        </div>
+        <input id="ledger-file" type="file" accept="application/json,.json" aria-label="Lean audit import file" data-i18n-aria="portable.file" hidden>
+      </section>
+    </aside>
+
+    <div class="audit-content">
+      <section class="hero-card" aria-labelledby="hero-title">
+        <div>
+          <p class="eyebrow" data-i18n="hero.eyebrow">Formalization governance</p>
+          <h2 id="hero-title" data-i18n="hero.title">Check that candidate imports and declarations still exist</h2>
+          <p data-i18n="hero.body">The queue prioritizes unresolved names and can generate a bounded Lean file with imports and #check commands. Passing that file verifies names only, not the surrounding theorem or research claim.</p>
+        </div>
+        <div class="privacy-badge" data-i18n="hero.local">Local-only audit records</div>
+      </section>
+
+      <section class="queue-card" aria-labelledby="queue-title">
+        <header class="queue-heading">
+          <div>
+            <h2 id="queue-title" data-i18n="queue.title">Canonical Lean metadata</h2>
+            <p id="visible-summary" aria-live="polite"></p>
+          </div>
+          <label class="select-all-row"><input id="toggle-visible" type="checkbox"><span data-i18n="queue.toggle">Toggle visible</span></label>
+        </header>
+        <div id="item-list" class="item-list"></div>
+        <div id="empty" class="empty-state" hidden>
+          <strong data-i18n="queue.emptyTitle">No Lean items match</strong>
+          <p data-i18n="queue.emptyBody">Clear filters or choose another audit state.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <dialog id="audit-dialog" class="modal audit-dialog" aria-labelledby="audit-title">
+    <form id="audit-form" method="dialog">
+      <header class="dialog-heading">
+        <div><p class="eyebrow" data-i18n="audit.eyebrow">Local record</p><h2 id="audit-title"></h2></div>
+        <button class="icon-button" type="submit" value="cancel" aria-label="Close Lean audit editor" data-i18n-aria="audit.close">×</button>
+      </header>
+      <p id="audit-context" class="audit-context"></p>
+      <div class="field-grid two">
+        <div><label for="audit-status" data-i18n="audit.status">Status</label><select id="audit-status"></select></div>
+        <div><label for="audit-checked" data-i18n="audit.checked">Checked date</label><input id="audit-checked" type="date"></div>
+      </div>
+      <label for="audit-toolchain" data-i18n="audit.toolchain">Toolchain or mathlib revision</label>
+      <input id="audit-toolchain" type="text" maxlength="300" autocomplete="off">
+      <label for="audit-replacement" data-i18n="audit.replacement">Replacement import or declaration</label>
+      <input id="audit-replacement" type="text" maxlength="500" autocomplete="off">
+      <label for="audit-notes" data-i18n="audit.notes">Audit notes</label>
+      <textarea id="audit-notes" maxlength="12000" rows="6" placeholder="What command was run, what failed, and what should replace this candidate?" data-i18n-placeholder="audit.notesPlaceholder"></textarea>
+      <p class="audit-warning" data-i18n="audit.warning">Saving this record does not change graph metadata or certify the associated mathematical claim.</p>
+      <div class="button-row end">
+        <button id="remove-audit" class="danger-button" type="button" data-i18n="audit.remove">Remove local record</button>
+        <button class="secondary-button" type="submit" value="cancel" data-i18n="audit.cancel">Cancel</button>
+        <button id="save-audit" class="primary-button" type="button" data-i18n="audit.save">Save audit</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="probe-dialog" class="modal probe-dialog" aria-labelledby="probe-title">
+    <header class="dialog-heading">
+      <div><p class="eyebrow" data-i18n="probe.eyebrow">Reproducible output</p><h2 id="probe-title" data-i18n="probe.title">Generated Lean probe</h2></div>
+      <form method="dialog"><button class="icon-button" type="submit" aria-label="Close Lean probe" data-i18n-aria="probe.close">×</button></form>
+    </header>
+    <textarea id="probe-output" readonly rows="20" aria-label="Generated Lean probe source" data-i18n-aria="probe.output"></textarea>
+    <div class="button-row end">
+      <button id="copy-probe" class="secondary-button" type="button" data-i18n="probe.copy">Copy</button>
+      <button id="download-probe" class="primary-button" type="button" data-i18n="probe.download">Download .lean</button>
+    </div>
+  </dialog>
+
+  <dialog id="help-dialog" class="modal">
+    <h2 data-i18n="help.title">How Lean target audit behaves</h2>
+    <ul>
+      <li data-i18n="help.readonly">Canonical graph data remains read-only.</li>
+      <li data-i18n="help.probe">Generated probes check imports and names with #check; they do not prove graph claims.</li>
+      <li data-i18n="help.status">Verified means a human recorded a successful check against the stated toolchain.</li>
+      <li data-i18n="help.cli">The same probe can be generated with npm run lean:probe.</li>
+    </ul>
+    <form method="dialog"><button class="secondary-button" type="submit" data-i18n="help.close">Close</button></form>
+  </dialog>
+
+  <dialog id="reset-dialog" class="modal">
+    <h2 data-i18n="reset.title">Clear all local Lean audit records?</h2>
+    <p data-i18n="reset.body">Canonical Lean metadata is unaffected. Export the ledger first when needed.</p>
+    <form method="dialog" class="button-row end">
+      <button class="secondary-button" type="submit" value="cancel" data-i18n="reset.cancel">Cancel</button>
+      <button class="danger-button" type="submit" value="confirm" data-i18n="reset.confirm">Clear audit</button>
+    </form>
+  </dialog>
+
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+</body>
+</html>

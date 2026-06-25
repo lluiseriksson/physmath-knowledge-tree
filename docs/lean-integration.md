@@ -45,6 +45,19 @@ This formal layer proves these bounded mechanisms and guarantees that the exampl
 5. Add the module to `PhysMathKnowledgeTree.lean` when it is part of the public library.
 6. Run `lake build` and keep warnings at zero.
 
+## Auditing candidate graph targets
+
+Open `formalization.html` to review every canonical `lean.imports`, `lean.declarations` and `lean.targets` entry against a recorded toolchain. The local ledger distinguishes `verified`, `missing`, `renamed` and `blocked` outcomes without changing graph confidence.
+
+Generate a deterministic probe from the command line with:
+
+```bash
+npm run lean:probe -- -- --output PhysMathLeanProbe.lean
+lake env lean PhysMathLeanProbe.lean
+```
+
+The generated file checks imports and declaration names with `#check`; successful compilation does not prove the associated graph claim. Export an audit packet when a canonical name or import needs to be changed.
+
 ## CI policy
 
 The Lean CI job uses the pinned toolchain, mathlib cache, warnings-as-errors and `mk_all` coverage. Web tests and Lean checks run as separate jobs so a static-site change cannot hide a formalization failure.

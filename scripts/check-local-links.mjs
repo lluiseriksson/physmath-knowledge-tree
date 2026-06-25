@@ -4,7 +4,7 @@ import { dirname, extname, isAbsolute, join, normalize, relative } from 'node:pa
 
 const root = fileURLToPath(new URL('..', import.meta.url));
 const errors = [];
-const pages = ['index.html', 'learning.html', 'workbench.html', 'evidence.html', 'changes.html', 'offline.html', '404.html'];
+const pages = ['index.html', 'learning.html', 'workbench.html', 'evidence.html', 'changes.html', 'formalization.html', 'offline.html', '404.html'];
 
 function resolveLocal(source, value) {
   if (/^(?:https?:|data:|mailto:|tel:|#)/i.test(value)) return null;
