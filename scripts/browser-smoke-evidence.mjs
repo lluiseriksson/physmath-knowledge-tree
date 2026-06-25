@@ -54,14 +54,18 @@ async function stopBrowser() {
   });
 }
 async function removeProfile() {
-  for (let attempt = 0; attempt < 20; attempt += 1) {
+  for (let attempt = 0; attempt < 60; attempt += 1) {
     try { rmSync(profile, { recursive: true, force: true }); return; }
     catch (error) {
       if (!['EBUSY', 'ENOTEMPTY', 'EPERM'].includes(error?.code)) throw error;
       await new Promise((resolve) => setTimeout(resolve, 100));
     }
   }
-  rmSync(profile, { recursive: true, force: true });
+  try { rmSync(profile, { recursive: true, force: true }); }
+  catch (error) {
+    if (!['EBUSY', 'ENOTEMPTY', 'EPERM'].includes(error?.code)) throw error;
+    console.warn(`Could not remove temporary Chromium profile ${profile}: ${error.message}`);
+  }
 }
 function stripImports(source) {
   let output = source;

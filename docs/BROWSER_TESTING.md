@@ -38,6 +38,8 @@ Expected 404 responses used to test the closed public surface are cleared from b
 
 Additional dependency-free Chromium smokes exercise the local research workbench and Evidence Review Center. The evidence pass loads a canonical-registry fixture, filters and selects the queue, saves a review, applies a bulk follow-up state, persists the local ledger and exports a review packet. Browser discovery covers Chrome, Chromium and Edge on Linux, macOS and Windows; profile cleanup retries transient Windows file locks.
 
+The canonical-change pass loads two controlled graph snapshots, verifies deterministic risk classification, records and bulk-updates local decisions, exercises filtering and Spanish translation, and confirms persistence without mutating canonical JSON.
+
 ## Boundary
 
 This is a deterministic functional and offline-readiness smoke test, not an exhaustive browser-certification programme. It currently targets one Chromium-family engine and does not replace manual assistive-technology review, visual-regression testing, performance profiling or cross-browser testing.

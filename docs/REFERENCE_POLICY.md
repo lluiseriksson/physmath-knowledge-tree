@@ -42,6 +42,10 @@ npm run validate:audit
 
 `evidence.html` reads the generated registry and stores a separate browser-local review ledger. A review may record a checked date, source class, publication identifier, notes and follow-up state. It never edits canonical references or promotes `confidence`. Selected review packets preserve every canonical usage so that a later repository change can be source-verified and reviewed explicitly.
 
+## Canonical change-review layer
+
+`changes.html` fingerprints normalized graph snapshots and compares a browser-local baseline with the currently deployed canonical graph. It gives highest priority to confidence promotions, endpoint or relation rewrites, source-bearing reference losses, removals and graph-contract changes. Review decisions and exported packets are governance aids only: they never edit canonical JSON, validate a theorem or promote `confidence`.
+
 ## Interpretation boundary
 
 A graph with 100% scoped reference coverage can still contain uncertain research directions. The authoritative indicators remain:

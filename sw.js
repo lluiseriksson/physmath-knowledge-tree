@@ -1,6 +1,6 @@
 const APP_VERSION = '2.6.0';
 const CACHE_PREFIX = 'physmath-knowledge-tree-';
-const CACHE_REVISION = 'source-2026-06-24.1';
+const CACHE_REVISION = 'source-2026-06-24.2';
 const CACHE_NAMESPACE = `${CACHE_PREFIX}${APP_VERSION}-${CACHE_REVISION}`;
 const SHELL_CACHE = `${CACHE_NAMESPACE}-shell`;
 const RUNTIME_CACHE = `${CACHE_NAMESPACE}-runtime`;
@@ -15,6 +15,7 @@ const SHELL = [
   './learning.html',
   './workbench.html',
   './evidence.html',
+  './changes.html',
   './offline.html',
   './404.html',
   './manifest.webmanifest',
@@ -24,9 +25,12 @@ const SHELL = [
   './src/workbench-app.js',
   './src/evidence.css',
   './src/evidence-app.js',
+  './src/change-review.css',
+  './src/change-review-app.js',
   './src/lib/research-graph.js',
   './src/lib/workspace.js',
   './src/lib/evidence-review.js',
+  './src/lib/change-review.js',
   './src/lib/research-i18n.js',
   './src/lib/route-planner.js',
   './src/lib/route-bundle.js',
@@ -76,6 +80,7 @@ self.addEventListener('activate', (event) => {
 });
 
 function fallbackFor(url) {
+  if (url.pathname.endsWith('/changes.html')) return './changes.html';
   if (url.pathname.endsWith('/evidence.html')) return './evidence.html';
   if (url.pathname.endsWith('/workbench.html')) return './workbench.html';
   if (url.pathname.endsWith('/learning.html')) return './learning.html';

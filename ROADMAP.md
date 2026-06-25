@@ -10,6 +10,8 @@ Roadmap entries are proposals, not commitments. Changes should preserve provenan
 - Added validated workspace JSON import/export and retained the existing canonical JSON-LD export.
 - Added a local evidence-review queue with checked dates, source classes and editable publication identifiers.
 - Added portable evidence ledgers and selected review packets without automatic confidence promotion.
+- Added deterministic canonical graph snapshots and a risk-prioritized local change-review queue.
+- Added portable JSON/Markdown change-review packets without automatic graph mutation.
 
 ## Near term
 
@@ -22,6 +24,7 @@ Roadmap entries are proposals, not commitments. Changes should preserve provenan
 
 - Promote locally reviewed evidence records into canonical versioned metadata only after explicit source verification and repository review.
 - Apply source-verified dates and identifiers from exported review packets to node and edge reference objects.
+- Require an exported change-review packet when a proposed patch changes confidence, endpoints, source-bearing references or graph contracts.
 
 ## Formalization
 

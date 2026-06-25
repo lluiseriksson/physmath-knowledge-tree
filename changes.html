@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en" data-theme="system">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Compare canonical PhysMath Knowledge Tree snapshots, classify risky graph changes and export human review packets.">
+  <meta name="theme-color" content="#f4f7fb" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#09111f" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>PhysMath Knowledge Tree — Canonical change review</title>
+  <link rel="canonical" href="https://lluiseriksson.github.io/physmath-knowledge-tree/changes.html">
+  <link rel="icon" href="./assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./assets/icons/icon-192.png">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./src/research.css">
+  <link rel="stylesheet" href="./src/change-review.css">
+  <script type="module" src="./src/change-review-app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#change-center" data-i18n="nav.skip">Skip to canonical change review</a>
+
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="PhysMath Knowledge Tree home">
+      <img src="./assets/icons/icon.svg" width="42" height="42" alt="">
+      <span>
+        <strong>PhysMath Knowledge Tree</strong>
+        <small data-i18n="app.tagline">Review graph evolution before canonical promotion</small>
+      </span>
+    </a>
+    <nav class="primary-nav" aria-label="Primary navigation" data-i18n-aria="nav.primary">
+      <a href="./" data-i18n="nav.research">Research graph</a>
+      <a href="./learning.html" data-i18n="nav.learning">Learning map</a>
+      <a href="./workbench.html" data-i18n="nav.workbench">Workbench</a>
+      <a href="./evidence.html" data-i18n="nav.evidence">Evidence review</a>
+      <a href="./changes.html" aria-current="page" data-i18n="nav.changes">Change review</a>
+      <a href="https://github.com/lluiseriksson/physmath-knowledge-tree" rel="noreferrer" data-i18n="nav.repository">Repository</a>
+    </nav>
+    <div class="header-actions">
+      <select id="language" aria-label="Interface language" data-i18n-aria="header.language">
+        <option value="en">EN</option>
+        <option value="es">ES</option>
+      </select>
+      <button id="theme" class="icon-button" type="button" aria-label="Change theme" data-i18n-aria="header.theme">◐</button>
+      <button id="help" class="icon-button" type="button" aria-label="Canonical change review help" data-i18n-aria="header.help">?</button>
+    </div>
+  </header>
+
+  <div id="loading" class="loading" role="status" aria-live="polite">
+    <span class="spinner" aria-hidden="true"></span>
+    <span data-i18n="loading">Fingerprinting the current canonical graph…</span>
+  </div>
+
+  <main id="change-center" class="change-layout" hidden>
+    <aside class="control-panel" aria-labelledby="controls-title">
+      <div class="panel-heading">
+        <div>
+          <p class="eyebrow" data-i18n="controls.eyebrow">Local review state</p>
+          <h1 id="controls-title" data-i18n="controls.title">Canonical change review</h1>
+        </div>
+        <span id="save-state" class="save-state" role="status" aria-live="polite"></span>
+      </div>
+
+      <section class="panel-section" aria-labelledby="baseline-title">
+        <h2 id="baseline-title" data-i18n="baseline.title">Baseline snapshot</h2>
+        <p id="baseline-status" class="fingerprint-status"></p>
+        <div class="stacked-actions">
+          <button id="download-current" class="secondary-button" type="button" data-i18n="baseline.download">Download current snapshot</button>
+          <button id="use-current" class="secondary-button" type="button" data-i18n="baseline.useCurrent">Use current graph as baseline</button>
+          <button id="import-baseline" class="primary-button" type="button" data-i18n="baseline.import">Import snapshot or review bundle</button>
+          <button id="clear-baseline" class="danger-button" type="button" disabled data-i18n="baseline.clear">Clear baseline</button>
+        </div>
+        <input id="baseline-file" type="file" accept="application/json,.json" aria-label="Canonical snapshot or change-review bundle file" data-i18n-aria="baseline.file" hidden>
+      </section>
+
+      <section class="panel-section" aria-labelledby="summary-title">
+        <h2 id="summary-title" data-i18n="summary.title">Change summary</h2>
+        <dl class="stats-grid">
+          <div><dt data-i18n="summary.total">Changes</dt><dd id="stat-total">0</dd></div>
+          <div><dt data-i18n="summary.critical">Critical</dt><dd id="stat-critical">0</dd></div>
+          <div><dt data-i18n="summary.high">High</dt><dd id="stat-high">0</dd></div>
+          <div><dt data-i18n="summary.promotions">Promotions</dt><dd id="stat-promotions">0</dd></div>
+          <div><dt data-i18n="summary.referenceLosses">Reference losses</dt><dd id="stat-reference-losses">0</dd></div>
+          <div><dt data-i18n="summary.reviewed">Reviewed</dt><dd id="stat-reviewed">0</dd></div>
+        </dl>
+      </section>
+
+      <section class="panel-section" aria-labelledby="filters-title">
+        <div class="section-heading">
+          <h2 id="filters-title" data-i18n="filters.title">Filter changes</h2>
+          <button id="clear-filters" class="text-button" type="button" data-i18n="filters.clear">Clear</button>
+        </div>
+        <label for="search" data-i18n="filters.search">Search changes</label>
+        <input id="search" type="search" autocomplete="off" aria-label="Search canonical changes" data-i18n-aria="filters.search" placeholder="ID, title, field, flag or review note" data-i18n-placeholder="filters.placeholder">
+        <div class="field-grid two">
+          <div><label for="risk-filter" data-i18n="filters.risk">Risk</label><select id="risk-filter"></select></div>
+          <div><label for="entity-filter" data-i18n="filters.entity">Entity</label><select id="entity-filter"></select></div>
+          <div><label for="change-filter" data-i18n="filters.change">Change type</label><select id="change-filter"></select></div>
+          <div><label for="status-filter" data-i18n="filters.status">Decision</label><select id="status-filter"></select></div>
+        </div>
+        <label for="sort" data-i18n="filters.sort">Sort worklist</label>
+        <select id="sort"></select>
+      </section>
+
+      <section class="panel-section" aria-labelledby="packet-title">
+        <h2 id="packet-title" data-i18n="packet.title">Review packet</h2>
+        <p><strong id="selected-count">0</strong> <span data-i18n="packet.selected">selected changes</span></p>
+        <div class="stacked-actions">
+          <button id="select-visible" class="secondary-button" type="button" disabled data-i18n="packet.selectVisible">Select visible</button>
+          <button id="clear-selection" class="secondary-button" type="button" disabled data-i18n="packet.clearSelection">Clear selection</button>
+          <button id="mark-needs-work" class="secondary-button" type="button" disabled data-i18n="packet.needsWork">Mark needs work</button>
+          <button id="export-json" class="primary-button" type="button" disabled data-i18n="packet.exportJson">Export packet JSON</button>
+          <button id="export-markdown" class="secondary-button" type="button" disabled data-i18n="packet.exportMarkdown">Export packet Markdown</button>
+        </div>
+      </section>
+    </aside>
+
+    <div class="change-content">
+      <section class="hero-card" aria-labelledby="hero-title">
+        <div>
+          <p class="eyebrow" data-i18n="hero.eyebrow">Canonical governance</p>
+          <h2 id="hero-title" data-i18n="hero.title">Detect risky graph drift before it becomes canonical</h2>
+          <p data-i18n="hero.body">The reviewer flags confidence promotions, endpoint rewrites, reference losses, contract changes and removals. Flags prioritize human review; they do not decide scientific correctness.</p>
+        </div>
+        <div class="privacy-badge" data-i18n="hero.local">Local-only decisions</div>
+      </section>
+
+      <section id="empty-baseline" class="empty-card" aria-labelledby="empty-title">
+        <h2 id="empty-title" data-i18n="empty.title">Import an earlier canonical snapshot</h2>
+        <p data-i18n="empty.body">Download today’s snapshot now, then import it after a future graph update. Review bundles can also restore a baseline and its local decisions.</p>
+      </section>
+
+      <section id="worklist-card" class="worklist-card" aria-labelledby="worklist-title" hidden>
+        <header class="worklist-heading">
+          <div>
+            <h2 id="worklist-title" data-i18n="worklist.title">Canonical change worklist</h2>
+            <p id="visible-summary" aria-live="polite"></p>
+          </div>
+          <label class="select-all-row"><input id="toggle-visible" type="checkbox"><span data-i18n="worklist.toggle">Toggle visible</span></label>
+        </header>
+        <div id="change-list" class="change-list"></div>
+        <div id="no-changes" class="empty-state" hidden>
+          <strong data-i18n="worklist.noChangesTitle">No changes match</strong>
+          <p data-i18n="worklist.noChangesBody">Clear filters, or the baseline and current graph may be identical.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <dialog id="decision-dialog" class="modal decision-dialog" aria-labelledby="decision-title">
+    <form id="decision-form" method="dialog">
+      <header class="dialog-heading">
+        <div><p class="eyebrow" data-i18n="decision.eyebrow">Local review decision</p><h2 id="decision-title"></h2></div>
+        <button class="icon-button" type="submit" value="cancel" aria-label="Close decision editor" data-i18n-aria="decision.close">×</button>
+      </header>
+      <p id="decision-key" class="change-key"></p>
+      <label for="decision-status" data-i18n="decision.status">Decision</label>
+      <select id="decision-status"></select>
+      <label for="decision-notes" data-i18n="decision.notes">Review notes</label>
+      <textarea id="decision-notes" maxlength="12000" rows="7" placeholder="Why is this acceptable, blocked, or rejected? Which verification is still required?" data-i18n-placeholder="decision.notesPlaceholder"></textarea>
+      <p class="review-warning" data-i18n="decision.warning">This local decision does not edit canonical JSON or approve a scientific claim.</p>
+      <div class="button-row end">
+        <button id="reset-decision" class="danger-button" type="button" data-i18n="decision.reset">Reset to pending</button>
+        <button class="secondary-button" type="submit" value="cancel" data-i18n="decision.cancel">Cancel</button>
+        <button id="save-decision" class="primary-button" type="button" data-i18n="decision.save">Save decision</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="help-dialog" class="modal">
+    <h2 data-i18n="help.title">How canonical change review behaves</h2>
+    <ul>
+      <li data-i18n="help.snapshot">Snapshots fingerprint normalized graph data, independent of array order.</li>
+      <li data-i18n="help.flags">Risk flags identify governance-sensitive edits, not mathematical truth.</li>
+      <li data-i18n="help.local">Decisions remain browser-local unless exported in a review packet.</li>
+      <li data-i18n="help.readonly">The reviewer never mutates graph JSON or confidence labels.</li>
+    </ul>
+    <form method="dialog"><button class="secondary-button" type="submit" data-i18n="help.close">Close</button></form>
+  </dialog>
+
+  <dialog id="clear-dialog" class="modal">
+    <h2 data-i18n="clear.title">Clear the local baseline and decisions?</h2>
+    <p data-i18n="clear.body">The canonical graph is unaffected. Export a review packet first when needed.</p>
+    <form method="dialog" class="button-row end">
+      <button class="secondary-button" type="submit" value="cancel" data-i18n="clear.cancel">Cancel</button>
+      <button class="danger-button" type="submit" value="confirm" data-i18n="clear.confirm">Clear local review</button>
+    </form>
+  </dialog>
+
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+</body>
+</html>

@@ -12,12 +12,15 @@ All notable changes are documented here. The project follows semantic versioning
 - Bilingual, responsive and offline-capable `workbench.html` application surface.
 - Bilingual, offline-capable `evidence.html` queue over the canonical URL-level reference registry.
 - Local review ledgers with bounded status/source vocabularies, editable identifiers and portable review packets.
+- Bilingual, offline-capable `changes.html` reviewer for deterministic canonical graph snapshots.
+- Risk-prioritized change detection, local decisions and portable JSON/Markdown review packets.
 
 ### Changed
 
 - PWA, public-surface, accessibility and local-link gates now include the Research Workbench.
 - The roadmap now distinguishes shipped workspace/JSON-LD capabilities from remaining research tasks.
 - PWA, public-surface, accessibility, coverage and browser gates now include the Evidence Review Center.
+- PWA, public-surface, accessibility, coverage and browser gates now include Canonical Change Review.
 
 ## [2.6.0] — 2026-06-22
 

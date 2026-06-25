@@ -1,12 +1,12 @@
 # Árbol de conocimiento Físico-Matemático
 
-[English version](./README.md) · [Grafo de investigación](https://lluiseriksson.github.io/physmath-knowledge-tree/) · [Mapa de aprendizaje](https://lluiseriksson.github.io/physmath-knowledge-tree/learning.html) · [Banco de investigación](https://lluiseriksson.github.io/physmath-knowledge-tree/workbench.html) · [Revisión de evidencia](https://lluiseriksson.github.io/physmath-knowledge-tree/evidence.html)
+[English version](./README.md) · [Grafo de investigación](https://lluiseriksson.github.io/physmath-knowledge-tree/) · [Mapa de aprendizaje](https://lluiseriksson.github.io/physmath-knowledge-tree/learning.html) · [Banco de investigación](https://lluiseriksson.github.io/physmath-knowledge-tree/workbench.html) · [Revisión de evidencia](https://lluiseriksson.github.io/physmath-knowledge-tree/evidence.html) · [Revisión de cambios](https://lluiseriksson.github.io/physmath-knowledge-tree/changes.html)
 
-Grafo computable y etiquetado por evidencia para explorar conexiones entre física, matemáticas, problemas abiertos y objetivos de formalización en Lean. La repo también incluye un mapa bilingüe de prerrequisitos, un banco local de investigación y una cola separada de revisión de evidencia.
+Grafo computable y etiquetado por evidencia para explorar conexiones entre física, matemáticas, problemas abiertos y objetivos de formalización en Lean. La repo también incluye un mapa bilingüe, herramientas locales de investigación y una cola separada para revisar cambios canónicos.
 
 ![Interfaz del grafo de investigación](./docs/research-screenshot.png)
 
-## Cuatro experiencias complementarias
+## Cinco experiencias complementarias
 
 ### Grafo de investigación — `index.html`
 
@@ -34,6 +34,12 @@ Consulta [`docs/RESEARCH_WORKBENCH.md`](./docs/RESEARCH_WORKBENCH.md).
 El centro transforma el registro generado de URLs en una cola local y determinista. Permite anotar fecha de comprobación, clase de fuente, identificadores de publicación y seguimiento sin editar la confianza ni las afirmaciones canónicas. Los libros locales y los paquetes seleccionados se validan, fusionan y exportan como JSON.
 
 Consulta [`docs/EVIDENCE_REVIEW_CENTER.md`](./docs/EVIDENCE_REVIEW_CENTER.md).
+
+### Revisión de cambios canónicos — `changes.html`
+
+El revisor local calcula huellas de snapshots canónicos normalizados y los compara con el grafo actual. Prioriza promociones de confianza, reescrituras de extremos, pérdidas de referencias que sostienen afirmaciones, borrados y cambios del contrato del grafo; guarda decisiones locales acotadas; y exporta paquetes seleccionados en JSON o Markdown. Nunca modifica los datos canónicos.
+
+Consulta [`docs/CANONICAL_CHANGE_REVIEW.md`](./docs/CANONICAL_CHANGE_REVIEW.md).
 
 ### Mapa de aprendizaje — `learning.html`
 
@@ -107,9 +113,9 @@ npm run build
 
 ## Calidad y seguridad
 
-La repo valida IDs, referencias, endpoints, niveles de evidencia, colecciones, estadísticas, traducciones, taxonomías y ausencia de ciclos. Las pruebas cubren recorridos, caminos mínimos, búsqueda, evaluación, layout, persistencia, servidor y datos, con 100% de cobertura de líneas, ramas y funciones en el conjunto explícito de módulos instrumentados por Node. El artefacto `dist/` se prueba además en Chromium mediante búsqueda, fichas, rutas, cambio de idioma, accesibilidad dinámica, fallback offline, persistencia de progreso, el banco de investigación y la cola de revisión de evidencia. También se verifican enlaces, accesibilidad estática, PWA, CSP, acciones fijadas por SHA, formato, build reproducible, CodeQL y despliegue Pages.
+La repo valida IDs, referencias, endpoints, niveles de evidencia, colecciones, estadísticas, traducciones, taxonomías y ausencia de ciclos. Las pruebas cubren recorridos, caminos mínimos, búsqueda, evaluación, layout, persistencia, servidor y datos, con 100% de cobertura de líneas, ramas y funciones en el conjunto explícito de módulos instrumentados por Node. El artefacto `dist/` se prueba además en Chromium mediante búsqueda, fichas, rutas, cambio de idioma, accesibilidad dinámica, fallback offline, persistencia de progreso, el banco de investigación, la cola de evidencia y la revisión de cambios canónicos. También se verifican enlaces, accesibilidad estática, PWA, CSP, acciones fijadas por SHA, formato, build reproducible, CodeQL y despliegue Pages.
 
-No hay analítica, cuentas, cookies, fuentes remotas ni scripts de terceros. El progreso educativo, los espacios de investigación y las notas de revisión de evidencia permanecen en el navegador salvo exportación explícita. Los resultados reproducibles están en [`docs/VERIFICATION.md`](./docs/VERIFICATION.md) y la metodología E2E en [`docs/BROWSER_TESTING.md`](./docs/BROWSER_TESTING.md).
+No hay analítica, cuentas, cookies, fuentes remotas ni scripts de terceros. El progreso educativo, los espacios de investigación, las notas de evidencia y las decisiones sobre cambios permanecen en el navegador salvo exportación explícita. Los resultados reproducibles están en [`docs/VERIFICATION.md`](./docs/VERIFICATION.md) y la metodología E2E en [`docs/BROWSER_TESTING.md`](./docs/BROWSER_TESTING.md).
 
 ## Protocolo de investigación
 

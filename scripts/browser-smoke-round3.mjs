@@ -160,6 +160,18 @@ async function navigate(url) {
   await waitFor('document.readyState === "complete"', `load ${url}`);
 }
 
+async function ensureServiceWorkerControl() {
+  await waitFor(
+    'navigator.serviceWorker && navigator.serviceWorker.ready.then(() => true)',
+    'service-worker readiness',
+    15000,
+  );
+  if (!(await evaluate('Boolean(navigator.serviceWorker.controller)'))) {
+    await navigate(`${origin}/index.html?r3-controlled=1`);
+  }
+  await waitFor('Boolean(navigator.serviceWorker.controller)', 'service-worker control', 15000);
+}
+
 try {
   console.log('step: navigate');
   await navigate(`${origin}/index.html?utm=campaign&node=domain.analysis&view=list&from=domain.number_theory&to=problem.riemann_hypothesis&policy=shortest&evidence=all&directed=0#graph`);
@@ -301,7 +313,7 @@ try {
 ${JSON.stringify(fatalDiagnostics, null, 2)}`);
 
   console.log('step: service worker');
-  await waitFor('navigator.serviceWorker.controller !== null', 'service-worker control', 15000);
+  await ensureServiceWorkerControl();
   const cacheState = await evaluate(`(async () => {
     await fetch('./index.html?node=cache-test&utm=cache');
     await new Promise((resolve) => setTimeout(resolve, 300));

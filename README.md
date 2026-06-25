@@ -1,8 +1,8 @@
 # PhysMath Knowledge Tree
 
-[Versión en español](./README.es.md) · [Live research graph](https://lluiseriksson.github.io/physmath-knowledge-tree/) · [Learning map](https://lluiseriksson.github.io/physmath-knowledge-tree/learning.html) · [Research workbench](https://lluiseriksson.github.io/physmath-knowledge-tree/workbench.html) · [Evidence review](https://lluiseriksson.github.io/physmath-knowledge-tree/evidence.html)
+[Versión en español](./README.es.md) · [Live research graph](https://lluiseriksson.github.io/physmath-knowledge-tree/) · [Learning map](https://lluiseriksson.github.io/physmath-knowledge-tree/learning.html) · [Research workbench](https://lluiseriksson.github.io/physmath-knowledge-tree/workbench.html) · [Evidence review](https://lluiseriksson.github.io/physmath-knowledge-tree/evidence.html) · [Change review](https://lluiseriksson.github.io/physmath-knowledge-tree/changes.html)
 
-A computable, evidence-labelled graph for exploring connections between physics, mathematics, open problems and Lean formalization targets. The repository also ships a bilingual prerequisite map, a local-first research workbench and a separate evidence-review queue.
+A computable, evidence-labelled graph for exploring connections between physics, mathematics, open problems and Lean formalization targets. The repository also ships a bilingual prerequisite map, local research tools and a separate canonical-change review queue.
 
 ![Research graph interface](./docs/research-screenshot.png)
 
@@ -10,7 +10,7 @@ A computable, evidence-labelled graph for exploring connections between physics,
 ![CodeQL](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/workflows/codeql.yml/badge.svg)
 ![License: MIT + CC BY 4.0](https://img.shields.io/badge/license-MIT%20%2B%20CC%20BY%204.0-blue)
 
-## Four complementary experiences
+## Five complementary experiences
 
 ### Research graph — `index.html`
 
@@ -38,6 +38,12 @@ See [`docs/RESEARCH_WORKBENCH.md`](./docs/RESEARCH_WORKBENCH.md).
 The evidence center turns the generated URL registry into a deterministic local review queue. It records checked dates, source class, publication identifiers and follow-up notes without editing canonical confidence or claims. Review ledgers and selected review packets can be validated, merged and exported as JSON.
 
 See [`docs/EVIDENCE_REVIEW_CENTER.md`](./docs/EVIDENCE_REVIEW_CENTER.md).
+
+### Canonical Change Review — `changes.html`
+
+The local change reviewer fingerprints normalized canonical snapshots and compares them against the current graph. It prioritizes confidence promotions, endpoint rewrites, source-bearing reference losses, removals and graph-contract changes; stores bounded local decisions; and exports selected review packets as JSON or Markdown. It never mutates canonical data.
+
+See [`docs/CANONICAL_CHANGE_REVIEW.md`](./docs/CANONICAL_CHANGE_REVIEW.md).
 
 ### Learning map — `learning.html`
 
@@ -142,7 +148,7 @@ npm run build
 | `npm run validate:views` | Confirm generated Markdown/Mermaid projections match canonical JSON. |
 | `npm test` | Run graph, search, layout, path, persistence, server and data tests. |
 | `npm run test:coverage` | Enforce 100% line, branch and function coverage for the explicit core module set. |
-| `npm run test:e2e` | Exercise the research, learning, workbench and evidence-review flows in a real Chromium-family browser. |
+| `npm run test:e2e` | Exercise research, learning, workbench, evidence-review and canonical-change review flows in a real Chromium-family browser. |
 | `npm run generate:views` | Regenerate deterministic projections in `views/`. |
 | `npm run build` | Produce a deployable static site in `dist/`. |
 | `npm run check` | Run syntax, schemas, curation, evaluation, accessibility, full core coverage, reproducible build verification and browser smoke testing. |
@@ -151,7 +157,7 @@ npm run build
 
 ```text
 .
-├── index.html / learning.html / workbench.html / evidence.html  # Four application surfaces
+├── index.html / learning.html / workbench.html / evidence.html / changes.html  # Five application surfaces
 ├── graph/                        # Canonical research graph, schemas and reference registry
 ├── evaluation/                   # Reproducible scenarios, rubric and generated results
 ├── PhysMathKnowledgeTree/        # Lean package
@@ -178,7 +184,7 @@ Start with [`AGENTS.md`](./AGENTS.md) and [`docs/agent-protocol.md`](./docs/agen
 
 ## Accessibility, privacy and security
 
-All four applications have keyboard-accessible alternatives to the SVG graph, visible focus states, text labels in addition to color, reduced-motion support and responsive layouts. The built artifact is also exercised by a dependency-free Chromium smoke suite covering critical flows, runtime accessibility invariants and offline fallback; see [`docs/BROWSER_TESTING.md`](./docs/BROWSER_TESTING.md). No analytics, accounts, cookies, remote fonts or third-party runtime scripts are used. Learning progress, research workspaces and evidence-review notes remain in browser storage unless explicitly exported.
+All five applications have keyboard-accessible alternatives to the SVG graph, visible focus states, text labels in addition to color, reduced-motion support and responsive layouts. The built artifact is also exercised by a dependency-free Chromium smoke suite covering critical flows, runtime accessibility invariants and offline fallback; see [`docs/BROWSER_TESTING.md`](./docs/BROWSER_TESTING.md). No analytics, accounts, cookies, remote fonts or third-party runtime scripts are used. Learning progress, research workspaces, evidence-review notes and change-review decisions remain in browser storage unless explicitly exported.
 
 The application applies a restrictive Content Security Policy, validates import data, uses no `innerHTML` for canonical graph content and is scanned by CodeQL. See [`SECURITY.md`](./SECURITY.md). The reproducible local results are recorded in [`docs/VERIFICATION.md`](./docs/VERIFICATION.md).
 
