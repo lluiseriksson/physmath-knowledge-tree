@@ -14,7 +14,7 @@ Generated deterministically from the canonical graph and curation ledger. Refere
 - Edges with at least one reference: **112/112**.
 - Formal/literature nodes with a claim or formalization source: **55/55**.
 - Formal/literature edges with a claim or formalization source: **95/95**.
-- Unique normalized reference URLs: **56**.
+- Unique normalized reference URLs: **59**.
 - Context-only nodes: **3**; context-only edges: **17**.
 - Formal nodes with named Lean declarations: **8**.
 

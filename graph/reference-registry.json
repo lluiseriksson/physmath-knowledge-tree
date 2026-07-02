@@ -354,6 +354,28 @@
       ]
     },
     {
+      "url": "https://github.com/lluiseriksson/rooted-tree-catalan-closure/actions/runs/28613639650",
+      "label": "rooted-tree-catalan-closure manual full Lean replay #4 — successful run on commit 5faa6b1",
+      "type": "documentation",
+      "scopes": [
+        "formalization"
+      ],
+      "used_by": [
+        "node:bridge.rooted_tree_catalan_closure"
+      ]
+    },
+    {
+      "url": "https://github.com/lluiseriksson/rooted-tree-catalan-closure/pull/5",
+      "label": "rooted-tree-catalan-closure PR #5 — closes the rooted child-factorial Catalan identity bridge",
+      "type": "documentation",
+      "scopes": [
+        "claim"
+      ],
+      "used_by": [
+        "node:bridge.rooted_tree_catalan_closure"
+      ]
+    },
+    {
       "url": "https://global.oup.com/academic/product/graphical-models-9780198522195",
       "label": "S. L. Lauritzen — Graphical Models",
       "type": "book",
@@ -633,6 +655,17 @@
         "edge:edge.category.pnp",
         "edge:edge.complexity.proof_geometry_bridge",
         "node:domain.complexity_theory"
+      ]
+    },
+    {
+      "url": "https://www.ai.vixra.org/abs/2607.0001",
+      "label": "L. Eriksson — A Machine-Verified Bijective Proof of the Rooted Child-Factorial Catalan Identity over Spanning Trees of the Complete Graph",
+      "type": "paper",
+      "scopes": [
+        "claim"
+      ],
+      "used_by": [
+        "node:bridge.rooted_tree_catalan_closure"
       ]
     },
     {

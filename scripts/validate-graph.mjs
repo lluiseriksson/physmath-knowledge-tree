@@ -24,6 +24,7 @@ const nodes = readJson(index.canonical_files.nodes);
 const edges = readJson(index.canonical_files.edges);
 const moves = readJson(index.canonical_files.research_moves);
 const collections = readJson(index.canonical_files.collections);
+const referenceRegistry = index.generated_files?.reference_registry ? readJson(index.generated_files.reference_registry) : null;
 
 for (const schemaPath of Object.values(index.schemas)) readJson(schemaPath);
 
@@ -48,6 +49,35 @@ function validateReferences(references, ownerId) {
     ensure(referenceScopes.has(reference.scope), `${ownerId}: invalid reference scope`);
     ensure(!urls.has(reference.url), `${ownerId}: duplicate reference URL ${reference.url}`);
     urls.add(reference.url);
+  }
+}
+
+function validateReferenceRegistry(registry) {
+  if (registry === null) return;
+  ensure(registry && Array.isArray(registry.references), 'reference registry must contain a references array');
+  const urls = new Set();
+  for (const reference of registry.references) {
+    const url = reference.url ?? '<missing URL>';
+    ensure(typeof reference.label === 'string' && reference.label.trim().length >= 2, `reference registry: label required for ${url}`);
+    ensure(typeof reference.url === 'string' && /^https:\/\//.test(reference.url), `reference registry: URL must use HTTPS: ${url}`);
+    ensure(referenceTypes.has(reference.type), `reference registry: invalid reference type for ${url}`);
+    ensure(Array.isArray(reference.scopes) && reference.scopes.length >= 1, `reference registry: scopes required for ${url}`);
+    ensure(new Set(reference.scopes).size === reference.scopes.length, `reference registry: duplicate scopes for ${url}`);
+    for (const scope of reference.scopes) ensure(referenceScopes.has(scope), `reference registry: invalid scope ${scope} for ${url}`);
+    ensure(!urls.has(reference.url), `reference registry: duplicate URL ${reference.url}`);
+    urls.add(reference.url);
+    ensure(Array.isArray(reference.used_by) && reference.used_by.length >= 1, `reference registry: used_by required for ${url}`);
+    ensure(new Set(reference.used_by).size === reference.used_by.length, `reference registry: duplicate used_by for ${url}`);
+    for (const usage of reference.used_by) {
+      ensure(typeof usage === 'string', `reference registry: non-string usage for ${url}`);
+      const separator = usage.indexOf(':');
+      ensure(separator > 0 && separator === usage.lastIndexOf(':') && separator < usage.length - 1, `reference registry: invalid usage target ${usage}`);
+      const kind = usage.slice(0, separator);
+      const target = usage.slice(separator + 1);
+      if (kind === 'node') ensure(nodeIds.has(target), `reference registry: orphan node usage ${usage}`);
+      else if (kind === 'edge') ensure(edgeIds.has(target), `reference registry: orphan edge usage ${usage}`);
+      else fail(`reference registry: unsupported usage kind ${usage}`);
+    }
   }
 }
 
@@ -99,6 +129,8 @@ for (const edge of edges) {
   degree.set(edge.target, degree.get(edge.target) + 1);
   edgeIds.add(edge.id);
 }
+
+validateReferenceRegistry(referenceRegistry);
 
 for (const [nodeId, count] of degree) ensure(count > 0, `${nodeId}: isolated node`);
 

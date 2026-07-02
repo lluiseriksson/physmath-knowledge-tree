@@ -753,11 +753,13 @@
         "PhysMathKnowledgeTree.Formal.Microtheorems"
       ],
       "leanDeclarations": [
+        "YangMills.KP.rootedChildFactorialCatalanIdentity_holds",
+        "YangMills.KP.sum_prod_rootedChildCount_factorial_eq",
         "childFactorialProductCongr"
       ],
       "leanTargets": [
-        "Derive the closed majorant B = (1 - sqrt(1 - 4 M^2 epsilon)) / (2 M) and its quadratic fixed-point equation.",
-        "Prove the exact normalized rooted child-factorial tree sum equals the Catalan number under the repository tree convention."
+        "ACHIEVED (2026-07-02, Lean replay source-linked): Prove the exact normalized rooted child-factorial tree sum equals the Catalan number under the repository tree convention.",
+        "Derive the closed majorant B = (1 - sqrt(1 - 4 M^2 epsilon)) / (2 M) and its quadratic fixed-point equation."
       ],
       "citation": [
         {
@@ -772,6 +774,27 @@
           "name": "R. P. Stanley — Enumerative Combinatorics, Volume 2",
           "url": "https://doi.org/10.1017/CBO9780511609589",
           "referenceType": "book",
+          "referenceScope": "claim"
+        },
+        {
+          "@type": "schema:CreativeWork",
+          "name": "rooted-tree-catalan-closure manual full Lean replay #4 — successful run on commit 5faa6b1",
+          "url": "https://github.com/lluiseriksson/rooted-tree-catalan-closure/actions/runs/28613639650",
+          "referenceType": "documentation",
+          "referenceScope": "formalization"
+        },
+        {
+          "@type": "schema:CreativeWork",
+          "name": "rooted-tree-catalan-closure PR #5 — closes the rooted child-factorial Catalan identity bridge",
+          "url": "https://github.com/lluiseriksson/rooted-tree-catalan-closure/pull/5",
+          "referenceType": "documentation",
+          "referenceScope": "claim"
+        },
+        {
+          "@type": "schema:CreativeWork",
+          "name": "L. Eriksson — A Machine-Verified Bijective Proof of the Rooted Child-Factorial Catalan Identity over Spanning Trees of the Complete Graph",
+          "url": "https://www.ai.vixra.org/abs/2607.0001",
+          "referenceType": "paper",
           "referenceScope": "claim"
         }
       ]

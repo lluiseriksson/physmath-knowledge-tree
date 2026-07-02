@@ -40,6 +40,8 @@ test('every graph item has scoped references and source-bearing claims are direc
     read('graph/nodes/core.json'), read('graph/edges.json'), read('graph/reference-registry.json'),
   ]);
   const allowedScopes = new Set(['claim', 'context', 'formalization']);
+  const nodeIds = new Set(nodes.map((node) => node.id));
+  const edgeIds = new Set(edges.map((edge) => edge.id));
   for (const item of [...nodes, ...edges]) {
     assert.ok(item.references?.length > 0, `${item.id} has references`);
     for (const reference of item.references) assert.ok(allowedScopes.has(reference.scope), `${item.id}: ${reference.scope}`);
@@ -49,4 +51,14 @@ test('every graph item has scoped references and source-bearing claims are direc
   }
   assert.ok(registry.references.length > 0);
   assert.equal(new Set(registry.references.map((reference) => reference.url)).size, registry.references.length);
+  for (const reference of registry.references) {
+    assert.equal(new Set(reference.used_by).size, reference.used_by.length, `${reference.url}: duplicate usage`);
+    for (const usage of reference.used_by) {
+      const [kind, target, extra] = usage.split(':');
+      assert.equal(extra, undefined, `${reference.url}: malformed usage ${usage}`);
+      if (kind === 'node') assert.ok(nodeIds.has(target), `${reference.url}: orphan node usage ${usage}`);
+      else if (kind === 'edge') assert.ok(edgeIds.has(target), `${reference.url}: orphan edge usage ${usage}`);
+      else assert.fail(`${reference.url}: unknown usage kind ${usage}`);
+    }
+  }
 });

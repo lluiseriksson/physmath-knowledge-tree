@@ -66,7 +66,7 @@ How can a target-preserving polymer expansion retain the marked observable throu
 | 3→4 | edge | `edge.target_preserving.rooted_leaf` | formal | claim |
 | 4 | node | `bridge.rooted_leaf_factorial_moments` | formal | claim |
 | 4→5 | edge | `edge.rooted_leaf.catalan_closure` | formal | claim |
-| 5 | node | `bridge.rooted_tree_catalan_closure` | formal | claim |
+| 5 | node | `bridge.rooted_tree_catalan_closure` | formal | claim, formalization |
 | 5→6 | edge | `edge.catalan.rate_budget` | formal | claim |
 | 6 | node | `bridge.appendix_f_rate_budget_split` | formal | claim |
 | 6→7 | edge | `edge.rate_budget.cluster_holes` | formal | claim |
