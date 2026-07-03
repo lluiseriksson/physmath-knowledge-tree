@@ -21,7 +21,7 @@
 | Number theory | literature | number-theory, primes, zeta, diophantine | 5 |
 | Optimal transport | literature | optimal-transport, probability, geometry, flow | 1 |
 | Partial differential equations | literature | pde, regularity, weak-solutions, energy | 5 |
-| Polymer and cluster expansions | literature | polymer-gas, cluster-expansion, ursell, tree-graph | 6 |
+| Polymer and cluster expansions | literature | polymer-gas, cluster-expansion, ursell, tree-graph | 7 |
 | Probability and stochastic processes | literature | probability, stochastic, randomness | 6 |
 | Quantum field theory | heuristic | qft, fields, renormalization, path-integral | 8 |
 | Quantum information theory | literature | quantum-information, channels, entropy, recovery | 2 |

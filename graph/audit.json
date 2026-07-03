@@ -2,13 +2,13 @@
   "schema_version": "1.1.0",
   "graph_schema_version": "0.6.0",
   "graph": {
-    "nodes": 58,
-    "edges": 112,
+    "nodes": 59,
+    "edges": 115,
     "research_moves": 23,
     "collections": 8,
     "weakly_connected_components": 1,
-    "largest_component": 58,
-    "nodes_reachable_from_roots": 58,
+    "largest_component": 59,
+    "nodes_reachable_from_roots": 59,
     "isolated_nodes": [],
     "highest_degree_nodes": [
       {
@@ -32,6 +32,10 @@
         "degree": 7
       },
       {
+        "id": "domain.polymer_cluster_expansions",
+        "degree": 7
+      },
+      {
         "id": "domain.algebraic_geometry",
         "degree": 6
       },
@@ -44,23 +48,19 @@
         "degree": 6
       },
       {
-        "id": "domain.polymer_cluster_expansions",
-        "degree": 6
-      },
-      {
         "id": "domain.probability_stochastics",
         "degree": 6
       }
     ]
   },
   "evidence": {
-    "nodes_with_references": 58,
-    "edges_with_references": 112,
+    "nodes_with_references": 59,
+    "edges_with_references": 115,
     "source_bearing_nodes": 55,
     "source_bearing_nodes_with_claim_or_formalization": 55,
     "source_bearing_edges": 95,
     "source_bearing_edges_with_claim_or_formalization": 95,
-    "unique_reference_urls": 59,
+    "unique_reference_urls": 60,
     "context_only_nodes": [
       "bridge.random_matrix_zeta_spectra",
       "bridge.renormalization_scaling_pde",
@@ -80,6 +80,7 @@
       "edge.qft.renormalization_bridge",
       "edge.random_matrix.riemann",
       "edge.renormalization.navier",
+      "edge.semicircle_cluster_edge.random_matrix",
       "edge.spectral.riemann",
       "edge.symplectic.qft",
       "edge.ward_defect.ym_rg_activity",

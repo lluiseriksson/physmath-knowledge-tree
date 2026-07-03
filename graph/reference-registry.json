@@ -262,6 +262,18 @@
       ]
     },
     {
+      "url": "https://doi.org/10.1007/s00220-007-0279-2",
+      "label": "R. Fernandez and A. Procacci — Cluster expansion for abstract polymer models. New bounds from an old approach",
+      "type": "paper",
+      "scopes": [
+        "claim"
+      ],
+      "used_by": [
+        "edge:edge.polymer.semicircle_cluster_edge",
+        "node:bridge.semicircle_cluster_edge"
+      ]
+    },
+    {
       "url": "https://doi.org/10.1007/s002220000108",
       "label": "J. P. Keating and N. C. Snaith — Random matrix theory and zeta functions",
       "type": "paper",
@@ -272,6 +284,7 @@
       "used_by": [
         "edge:edge.probability.random_matrix_bridge",
         "edge:edge.random_matrix.riemann",
+        "edge:edge.semicircle_cluster_edge.random_matrix",
         "edge:edge.spectral.random_matrix_bridge",
         "node:bridge.random_matrix_zeta_spectra"
       ]
@@ -662,10 +675,15 @@
       "label": "L. Eriksson — A Machine-Verified Bijective Proof of the Rooted Child-Factorial Catalan Identity over Spanning Trees of the Complete Graph",
       "type": "paper",
       "scopes": [
-        "claim"
+        "claim",
+        "context",
+        "formalization"
       ],
       "used_by": [
-        "node:bridge.rooted_tree_catalan_closure"
+        "edge:edge.catalan.semicircle_cluster_edge",
+        "edge:edge.semicircle_cluster_edge.random_matrix",
+        "node:bridge.rooted_tree_catalan_closure",
+        "node:bridge.semicircle_cluster_edge"
       ]
     },
     {

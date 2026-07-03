@@ -261,7 +261,7 @@ try {
   })()`);
   assert.equal(jsonld.name, 'physmath-knowledge-graph.jsonld');
   assert.match(jsonld.type, /^application\/ld\+json/u);
-  assert.equal(jsonld.graphLength, 201);
+  assert.equal(jsonld.graphLength, 205);
   assert.equal(jsonld.applicationVersion, '2.6.0');
   assert.equal(jsonld.schemaVersion, '0.6.0');
 

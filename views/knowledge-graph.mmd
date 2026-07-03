@@ -55,6 +55,7 @@ flowchart LR
   bridge_conditional_mutual_information_recovery["Conditional mutual information to uniform recovery"]
   bridge_gaussian_precision_markov_blanket["Sparse Gaussian precision as an exact Markov blanket"]
   bridge_rooted_tree_catalan_closure["Exact Catalan closure of rooted child-factorial tree sums"]
+  bridge_semicircle_cluster_edge["Cluster-expansion convergence as a semicircle spectral edge"]
   bridge_localized_homotopy_boundary_defect["Boundary defect from localizing a homotopy"]
   bridge_yang_mills_critical_dimension["Four-dimensional Yang–Mills as the marginal dimension"]
   domain_foundation_logic -->|uses| domain_category_theory
@@ -162,6 +163,9 @@ flowchart LR
   bridge_gaussian_precision_markov_blanket -->|transfers_via| bridge_gaussian_covariance_collar
   bridge_rooted_leaf_factorial_moments -->|uses| bridge_rooted_tree_catalan_closure
   domain_polymer_cluster_expansions -->|uses| bridge_rooted_tree_catalan_closure
+  domain_polymer_cluster_expansions -->|suggests| bridge_semicircle_cluster_edge
+  bridge_rooted_tree_catalan_closure -->|transfers_via| bridge_semicircle_cluster_edge
+  bridge_semicircle_cluster_edge -->|analogy| bridge_random_matrix_zeta_spectra
   bridge_rooted_tree_catalan_closure -->|transfers_via| bridge_appendix_f_rate_budget_split
   domain_renormalization_group -->|uses| bridge_localized_homotopy_boundary_defect
   bridge_localized_homotopy_boundary_defect -->|suggests| problem_uniform_yang_mills_rg_activity

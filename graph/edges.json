@@ -2113,6 +2113,60 @@
     ]
   },
   {
+    "id": "edge.polymer.semicircle_cluster_edge",
+    "source": "domain.polymer_cluster_expansions",
+    "target": "bridge.semicircle_cluster_edge",
+    "relation": "suggests",
+    "confidence": "heuristic",
+    "mechanism": "Fernandez-Procacci tree-graph refinements and exact Catalan closure suggest treating the cluster-convergence boundary as the square-root edge of an effective resolvent rather than only as a scalar KP inequality.",
+    "references": [
+      {
+        "label": "R. Fernandez and A. Procacci — Cluster expansion for abstract polymer models. New bounds from an old approach",
+        "url": "https://doi.org/10.1007/s00220-007-0279-2",
+        "type": "paper",
+        "scope": "claim"
+      }
+    ]
+  },
+  {
+    "id": "edge.catalan.semicircle_cluster_edge",
+    "source": "bridge.rooted_tree_catalan_closure",
+    "target": "bridge.semicircle_cluster_edge",
+    "relation": "transfers_via",
+    "confidence": "heuristic",
+    "mechanism": "The exact Catalan generating function supplies the square-root branch that can be rewritten as a scaled semicircle Stieltjes transform once the open truncated-majorant target is formalized.",
+    "references": [
+      {
+        "label": "L. Eriksson — A Machine-Verified Bijective Proof of the Rooted Child-Factorial Catalan Identity over Spanning Trees of the Complete Graph",
+        "url": "https://www.ai.vixra.org/abs/2607.0001",
+        "type": "paper",
+        "scope": "formalization"
+      }
+    ]
+  },
+  {
+    "id": "edge.semicircle_cluster_edge.random_matrix",
+    "source": "bridge.semicircle_cluster_edge",
+    "target": "bridge.random_matrix_zeta_spectra",
+    "relation": "analogy",
+    "confidence": "heuristic",
+    "mechanism": "Both bridges read a frontier object through spectral statistics or resolvents; here the proposed edge is convergence of a cluster majorant rather than zeta-zero spacing.",
+    "references": [
+      {
+        "label": "J. P. Keating and N. C. Snaith — Random matrix theory and zeta functions",
+        "url": "https://doi.org/10.1007/s002220000108",
+        "type": "paper",
+        "scope": "context"
+      },
+      {
+        "label": "L. Eriksson — A Machine-Verified Bijective Proof of the Rooted Child-Factorial Catalan Identity over Spanning Trees of the Complete Graph",
+        "url": "https://www.ai.vixra.org/abs/2607.0001",
+        "type": "paper",
+        "scope": "context"
+      }
+    ]
+  },
+  {
     "id": "edge.catalan.rate_budget",
     "source": "bridge.rooted_tree_catalan_closure",
     "target": "bridge.appendix_f_rate_budget_split",

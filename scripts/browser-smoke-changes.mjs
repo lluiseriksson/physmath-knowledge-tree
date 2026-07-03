@@ -267,7 +267,7 @@ try {
   assert.equal(result.firstStatus, 'Requiere trabajo');
   assert.deepEqual(exceptions, []);
   console.log('Canonical Change Review Center Chromium smoke passed.');
-  await send('Browser.close').catch(() => {});
+  send('Browser.close').catch(() => {});
 } finally {
   try { socket?.close(); } catch { /* Already closed. */ }
   await stopBrowser();

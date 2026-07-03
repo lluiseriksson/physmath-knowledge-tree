@@ -53,6 +53,23 @@ jobs:
       - name: Run complete web quality gate
         run: npm run check
 
+  graph-integrity:
+    name: Graph integrity · Python
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7
+        with:
+          persist-credentials: false
+
+      - name: Install JSON Schema validator
+        run: python3 -m pip install --disable-pip-version-check jsonschema==4.25.1
+
+      - name: Validate graph integrity and schemas
+        run: python3 scripts/validate_graph_integrity.py
+
   lean:
     name: Lean · mathlib
     runs-on: ubuntu-latest

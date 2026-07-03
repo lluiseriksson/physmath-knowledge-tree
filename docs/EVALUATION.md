@@ -9,11 +9,11 @@ This report is generated deterministically from canonical graph data and committ
 - Search recall@3: **100.00%**.
 - Mean reciprocal rank: **1.0000**.
 - Route scenarios passing: **5/5**.
-- Nodes with references: **58/58**.
-- Edges with references: **112/112**.
+- Nodes with references: **59/59**.
+- Edges with references: **115/115**.
 - Formal/literature node claim coverage: **55/55**.
 - Formal/literature edge claim coverage: **95/95**.
-- Nodes with bounded Lean targets: **58/58**.
+- Nodes with bounded Lean targets: **59/59**.
 
 ## Search regressions
 

@@ -155,7 +155,7 @@ try {
   assert.deepEqual(bulk, { inconclusive: '1', fingerprinted: '0', title: 'Registra lo que realmente se ejecutó' });
   assert.deepEqual(exceptions, []);
   console.log('Reproducible Run Ledger Chromium smoke passed.');
-  await send('Browser.close').catch(() => {});
+  send('Browser.close').catch(() => {});
 } finally {
   try { socket?.close(); } catch { /* Already closed. */ }
   await stopBrowser();

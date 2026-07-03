@@ -259,7 +259,7 @@ try {
   assert.deepEqual(exceptions, []);
   assert.deepEqual(consoleErrors, []);
   console.log('Research Dossier Center Chromium smoke passed.');
-  await send('Browser.close').catch(() => {});
+  send('Browser.close').catch(() => {});
 } finally {
   try { socket?.close(); } catch { /* Already closed. */ }
   await stopBrowser();

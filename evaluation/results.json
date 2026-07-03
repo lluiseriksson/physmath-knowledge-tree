@@ -90,7 +90,8 @@
         "expected_node": "bridge.rooted_tree_catalan_closure",
         "rank": 1,
         "top_nodes": [
-          "bridge.rooted_tree_catalan_closure"
+          "bridge.rooted_tree_catalan_closure",
+          "bridge.semicircle_cluster_edge"
         ],
         "passed": true
       },
@@ -301,10 +302,10 @@
     ]
   },
   "evidence": {
-    "nodes_with_references": 58,
-    "node_total": 58,
-    "edges_with_references": 112,
-    "edge_total": 112,
+    "nodes_with_references": 59,
+    "node_total": 59,
+    "edges_with_references": 115,
+    "edge_total": 115,
     "source_bearing_nodes_with_claim_or_formalization": 55,
     "source_bearing_node_total": 55,
     "source_bearing_edges_with_claim_or_formalization": 95,
@@ -312,10 +313,10 @@
     "passed": true
   },
   "lean": {
-    "nodes_with_imports": 58,
-    "nodes_with_bounded_targets": 58,
+    "nodes_with_imports": 59,
+    "nodes_with_bounded_targets": 59,
     "nodes_with_named_declarations": 23,
-    "node_total": 58,
+    "node_total": 59,
     "passed": true
   },
   "controlled_quality": {

@@ -311,7 +311,7 @@ async function runResearchScenario(client, origin) {
   await navigate(client, `${origin}/index.html`);
   await waitForExpression(
     client,
-    "!document.querySelector('#app-shell').hidden && document.querySelectorAll('.graph-node').length === 58",
+    "!document.querySelector('#app-shell').hidden && document.querySelectorAll('.graph-node').length === 59",
     'research graph initialization',
     15000,
   );
@@ -323,8 +323,8 @@ async function runResearchScenario(client, origin) {
     shellHidden: document.querySelector('#app-shell').hidden,
     summary: document.querySelector('#visible-summary').textContent,
   }))()`);
-  assert.deepEqual(initial.nodes, 58);
-  assert.deepEqual(initial.edges, 112);
+  assert.deepEqual(initial.nodes, 59);
+  assert.deepEqual(initial.edges, 115);
   assert.equal(initial.loadingHidden, true);
   assert.equal(initial.shellHidden, false);
 
@@ -346,7 +346,7 @@ async function runResearchScenario(client, origin) {
   await evaluate(client, "document.querySelector('#list-view-button').click()");
   await waitForExpression(
     client,
-    "!document.querySelector('#list-view').hidden && document.querySelectorAll('.node-list-card').length === 58",
+    "!document.querySelector('#list-view').hidden && document.querySelectorAll('.node-list-card').length === 59",
     'research list view',
   );
   assert.match(await evaluate(client, 'location.search'), /view=list/);

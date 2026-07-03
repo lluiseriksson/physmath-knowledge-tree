@@ -4,18 +4,18 @@ Generated deterministically from the canonical graph and curation ledger. Refere
 
 ## Integrity
 
-- Nodes: **58**; edges: **112**; moves: **23**; collections: **8**.
-- Weakly connected components: **1**; nodes reachable from declared roots: **58/58**.
+- Nodes: **59**; edges: **115**; moves: **23**; collections: **8**.
+- Weakly connected components: **1**; nodes reachable from declared roots: **59/59**.
 - Isolated nodes: **0**.
 
 ## Reference coverage
 
-- Nodes with at least one reference: **58/58**.
-- Edges with at least one reference: **112/112**.
+- Nodes with at least one reference: **59/59**.
+- Edges with at least one reference: **115/115**.
 - Formal/literature nodes with a claim or formalization source: **55/55**.
 - Formal/literature edges with a claim or formalization source: **95/95**.
-- Unique normalized reference URLs: **59**.
-- Context-only nodes: **3**; context-only edges: **17**.
+- Unique normalized reference URLs: **60**.
+- Context-only nodes: **3**; context-only edges: **18**.
 - Formal nodes with named Lean declarations: **8**.
 
 Reference scopes are defined in [`REFERENCE_POLICY.md`](./REFERENCE_POLICY.md): `claim` directly supports the represented statement, `context` is background only, and `formalization` points to proof-bearing code or a named declaration.
@@ -38,10 +38,10 @@ The two values above are deliberately not forced to zero: only the user can appr
 | `domain.quantum_field_theory` | 8 |
 | `problem.yang_mills_mass_gap` | 8 |
 | `bridge.cluster_expansion_with_holes` | 7 |
+| `domain.polymer_cluster_expansions` | 7 |
 | `domain.algebraic_geometry` | 6 |
 | `domain.automorphic_forms` | 6 |
 | `domain.constructive_quantum_field_theory` | 6 |
-| `domain.polymer_cluster_expansions` | 6 |
 | `domain.probability_stochastics` | 6 |
 
 ## Formal/literature node citation debt (0)
@@ -72,6 +72,7 @@ These items deliberately remain heuristic or speculative and use references only
 - edge `edge.qft.renormalization_bridge`
 - edge `edge.random_matrix.riemann`
 - edge `edge.renormalization.navier`
+- edge `edge.semicircle_cluster_edge.random_matrix`
 - edge `edge.spectral.riemann`
 - edge `edge.symplectic.qft`
 - edge `edge.ward_defect.ym_rg_activity`

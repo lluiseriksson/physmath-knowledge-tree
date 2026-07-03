@@ -19,18 +19,18 @@
     "yang_mills_pack": "integrations/yang-mills/schemas/manifest.schema.json"
   },
   "stats": {
-    "nodes": 58,
-    "edges": 112,
+    "nodes": 59,
+    "edges": 115,
     "research_moves": 23,
     "collections": 8,
     "by_kind": {
-      "bridge": 22,
+      "bridge": 23,
       "domain": 28,
       "problem": 8
     },
     "by_confidence": {
       "formal": 11,
-      "heuristic": 3,
+      "heuristic": 4,
       "literature": 44
     }
   },

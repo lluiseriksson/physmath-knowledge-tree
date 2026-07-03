@@ -52,6 +52,7 @@
 
 - **Appendix-F rate-budget decomposition** `bridge.appendix_f_rate_budget_split`
 - **Block-average mass term as a coercivity bridge** `bridge.block_average_coercivity`
+- **Cluster-expansion convergence as a semicircle spectral edge** `bridge.semicircle_cluster_edge`
 - **Geometric Langlands transfer** `bridge.geometric_langlands_transfer`
 - **Lattice units to physical distance and mass** `bridge.lattice_physical_scaling`
 - **Motives, periods and Hodge structures** `bridge.motives_periods_hodge`

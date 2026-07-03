@@ -16,14 +16,14 @@ A computable, evidence-labelled graph for exploring connections between physics,
 
 The research interface reads the canonical JSON graph directly. It includes:
 
-- 58 domain, bridge and problem nodes connected by 112 typed, evidence-labelled edges.
+- 59 domain, bridge and problem nodes connected by 115 typed, evidence-labelled edges.
 - Search across titles, IDs, tags, summaries and live questions.
 - Curated collections, kind/evidence filters, graph and accessible list views.
 - Directed or undirected shortest-path search.
 - Node dossiers with questions, references, incoming/outgoing mechanisms and Lean targets.
 - A bridge-card generator that produces explicitly exploratory Markdown scaffolds.
 - Visible-subgraph export, shareable URL state, bilingual UI, dark mode and offline caching.
-- Scoped references on all 58 nodes and all 112 edges, with `claim`, `context` and `formalization` distinguished in the schema.
+- Scoped references on all 59 nodes and all 115 edges, with `claim`, `context` and `formalization` distinguished in the schema.
 
 Evidence labels are part of the data model: `formal`, `literature`, `heuristic` and `speculative`. A visual connection is never intended to imply a theorem.
 
@@ -100,7 +100,7 @@ graph/
 
 The graph is designed for humans, scripts and research agents. Every node has a stable ID, summary, tags, live questions and one or more bounded Lean targets. Every edge states a mechanism rather than merely asserting that two subjects are “related”.
 
-Generated Markdown projections in `views/` are derived artifacts; JSON remains canonical. [`docs/GRAPH_AUDIT.md`](./docs/GRAPH_AUDIT.md) exposes topology and evidence coverage, while [`graph/reference-registry.json`](./graph/reference-registry.json) provides a deterministic URL-level registry. Current traceability is 58/58 nodes and 112/112 edges with references; every formal/literature item has a `claim` or `formalization` source. Context-only references never promote heuristic or speculative evidence.
+Generated Markdown projections in `views/` are derived artifacts; JSON remains canonical. [`docs/GRAPH_AUDIT.md`](./docs/GRAPH_AUDIT.md) exposes topology and evidence coverage, while [`graph/reference-registry.json`](./graph/reference-registry.json) provides a deterministic URL-level registry. Current traceability is 59/59 nodes and 115/115 edges with references; every formal/literature item has a `claim` or `formalization` source. Context-only references never promote heuristic or speculative evidence.
 
 ## Evaluation and positioning
 

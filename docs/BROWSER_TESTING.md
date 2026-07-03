@@ -13,7 +13,7 @@ npm run test:e2e
 
 The original production smoke suite checks:
 
-- research graph initialization with 58 nodes and 112 edges;
+- research graph initialization with 59 nodes and 115 edges;
 - search, node dossiers, graph/list parity and shareable state;
 - English-to-Spanish switching and runtime accessibility invariants;
 - the 90-topic learning graph, list rendering, bilingual search and persisted progress;
@@ -26,7 +26,7 @@ A second smoke suite checks the newly hardened surface:
 
 - evidence-aware route policies, evidence gates and deterministic highlighting;
 - canonical URL replacement, history restoration and preservation of unrelated query/hash data;
-- browser-side JSON-LD export with 201 linked entities;
+- browser-side JSON-LD export with 205 linked entities;
 - bilingual accessible names on newly translated controls;
 - denial of repository-private paths while declared public files remain available with correct media types;
 - build-manifest v3 metadata, content-addressed shell/runtime cache names and bounded runtime entries;

@@ -1,10 +1,10 @@
 # Verification record
 
-Date: **2026-06-23**
+Date: **2026-07-03**
 
 Release: **2.6.0**
 
-Local environment: **Node 22.12.0**, **npm 10.9.0**, Windows x64, **Chrome/149.0.7827.155**.
+Local environment: **Node 22.12.0**, **npm 10.9.0**, Windows x64, **Chrome/149.0.7827.200**.
 
 ## Complete quality gate
 
@@ -17,34 +17,34 @@ npm run check
 
 Validated:
 
-- JavaScript syntax: **47 files**;
-- canonical research graph: **58 nodes, 112 edges, 23 research moves and 8 collections**;
-- graph topology: **1 connected component, 0 isolated nodes and 58/58 nodes reachable from roots**;
-- scoped reference coverage: **58/58 nodes and 112/112 edges**;
+- JavaScript syntax: **140 files**;
+- canonical research graph: **59 nodes, 115 edges, 23 research moves and 8 collections**;
+- graph topology: **1 connected component, 0 isolated nodes and 59/59 nodes reachable from roots**;
+- scoped reference coverage: **59/59 nodes and 115/115 edges**;
 - source-bearing coverage: **55/55 formal/literature nodes and 95/95 formal/literature edges** with a `claim` or `formalization` source;
-- normalized reference registry: **56 unique URLs** with deterministic use-site lists;
+- normalized reference registry: **60 unique URLs** with deterministic use-site lists;
 - curation ledger: **3 records, 3 unique source hashes and 45 atomic decisions**;
 - intentionally open curation state: **18 verification requests and 3 user-review gates**;
 - bilingual learning graph: **90 topics, 199 prerequisite edges, 1 root and maximum depth 15**;
-- local links, Markdown targets, CSP invariants and service-worker assets across **4 pages**;
-- static accessibility invariants across **4 pages**;
-- PWA shell: application version **2.6.0** with **32 cached entries** and a dedicated offline fallback;
+- local links, Markdown targets, CSP invariants and service-worker assets across **11 pages**;
+- static accessibility invariants across **11 pages**;
+- PWA shell: application version **2.6.0** with **65 cached entries**, **2 install screenshots** and a dedicated offline fallback;
 - **5 generated research views**;
 - automated evaluation: **14/14 top-1 search regressions** and **5/5 route scenarios**;
 - repository-controlled quality score: **100/100**, subject to the exclusions in `docs/QUALITY_SCORECARD.md`;
-- workflow hardening: **3 workflows and 12 SHA-pinned external action uses**;
-- automated unit/integration tests: **58 passed, 0 failed**;
+- workflow hardening: **3 workflows and 13 SHA-pinned external action uses**;
+- automated unit/integration tests: **301 passed, 0 failed and 1 intentionally skipped**;
 - line coverage: **100.00%** for the explicit instrumented production set;
 - branch coverage: **100.00%**;
 - function coverage: **100.00%**;
-- static production build: **86 files total**, with **85 payload entries** verified byte-for-byte against `dist/build-manifest.json`;
+- static production build: **179 files total**, **2,643,174 bytes** and **205 JSON-LD entities** verified against `dist/build-manifest.json`;
 - real Chromium smoke pass over the built `dist/` artifact.
 
-`npm audit --audit-level=low` reported **0 vulnerabilities**. The independent Python graph validator also passed.
+`npm audit --audit-level=moderate` reported **0 vulnerabilities**. The independent Python graph validator also passed with schema validation enabled.
 
 ## Browser verification
 
-The dependency-free browser runner exercised the production artifact with Chrome/149.0.7827.155:
+The dependency-free browser runner exercised the production artifact with Chrome/149.0.7827.200:
 
 ```bash
 npm run build
@@ -53,9 +53,9 @@ npm run test:e2e
 
 The passing flow verified:
 
-- research graph: **58 nodes and 112 edges**;
+- research graph: **59 nodes and 115 edges**;
 - Riemann search, dossier opening and shareable URL state;
-- list view: **58 cards**;
+- list view: **59 cards**;
 - Spanish interface switch;
 - a two-node number-theory-to-Riemann path;
 - learning graph: **90 graph nodes and 90 list cards**;

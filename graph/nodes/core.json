@@ -2118,6 +2118,47 @@
     ]
   },
   {
+    "id": "bridge.semicircle_cluster_edge",
+    "kind": "bridge",
+    "title": "Cluster-expansion convergence as a semicircle spectral edge",
+    "summary": "The exact Catalan closure makes the second-gas majorant B = (1 - sqrt(1 - 4 M^2 epsilon))/(2M) a scaled Stieltjes transform of the Wigner semicircle law, so the Kotecky-Preiss window 4 M^2 epsilon < 1 reads as the spectral edge z = 2. Fernandez-Procacci sharpened KP through exact tree counting; the open value here is formalization and a possible free-probability reading of pinned-gas resummation.",
+    "confidence": "heuristic",
+    "tags": [
+      "catalan",
+      "semicircle",
+      "stieltjes",
+      "cluster-expansion",
+      "free-probability"
+    ],
+    "lean": {
+      "imports": [
+        "Mathlib"
+      ],
+      "declarations": [],
+      "targets": [
+        "Formalize the truncated Catalan majorant recursion and its closed square-root bound in the Yang-Mills repository.",
+        "Prove the algebraic moment identity linking the Catalan generating function to finite Stieltjes objects in riemann-prime-resolvent."
+      ]
+    },
+    "questions": [
+      "Does a free-convolution or subordination argument improve any admissible activity window beyond scalar majorants?"
+    ],
+    "references": [
+      {
+        "label": "R. Fernandez and A. Procacci — Cluster expansion for abstract polymer models. New bounds from an old approach",
+        "url": "https://doi.org/10.1007/s00220-007-0279-2",
+        "type": "paper",
+        "scope": "claim"
+      },
+      {
+        "label": "L. Eriksson — A Machine-Verified Bijective Proof of the Rooted Child-Factorial Catalan Identity over Spanning Trees of the Complete Graph",
+        "url": "https://www.ai.vixra.org/abs/2607.0001",
+        "type": "paper",
+        "scope": "formalization"
+      }
+    ]
+  },
+  {
     "id": "bridge.localized_homotopy_boundary_defect",
     "kind": "bridge",
     "title": "Boundary defect from localizing a homotopy",

@@ -12,14 +12,14 @@ Grafo computable y etiquetado por evidencia para explorar conexiones entre físi
 
 La interfaz consume directamente el JSON canónico e incorpora:
 
-- 58 nodos de dominio, puente y problema unidos por 112 aristas tipadas.
+- 59 nodos de dominio, puente y problema unidos por 115 aristas tipadas.
 - Búsqueda por títulos, IDs, etiquetas, resúmenes y preguntas abiertas.
 - Colecciones curadas, filtros de tipo/evidencia y vistas de grafo o lista accesible.
 - Camino mínimo dirigido o no dirigido.
 - Fichas con preguntas, referencias, mecanismos entrantes/salientes y objetivos Lean.
 - Generador de *bridge cards* que produce borradores Markdown explícitamente exploratorios.
 - Exportación del subgrafo visible, estado compartible por URL, interfaz bilingüe, modo oscuro y caché offline.
-- Referencias con alcance explícito en los 58 nodos y las 112 aristas: `claim`, `context` o `formalization`.
+- Referencias con alcance explícito en los 59 nodos y las 115 aristas: `claim`, `context` o `formalization`.
 
 Los niveles `formal`, `literature`, `heuristic` y `speculative` forman parte del modelo. Una conexión visual nunca equivale por sí sola a un teorema.
 
@@ -86,7 +86,7 @@ npm run query:frontier-corpus -- snapshot-template statsmodels
 
 `graph/nodes/core.json`, `graph/edges.json`, `graph/research_moves.json` y `graph/collections.json` son la fuente de verdad. Los esquemas JSON 2020-12 están en `graph/schemas/`; las vistas de `views/` se generan automáticamente.
 
-Cada nodo tiene ID estable, resumen, etiquetas, preguntas vivas y objetivos Lean acotados. Cada arista declara un mecanismo concreto y un nivel de evidencia. La trazabilidad actual es 58/58 nodos y 112/112 aristas con referencias; todos los elementos `formal` o `literature` tienen una fuente de alcance `claim` o `formalization`. Una referencia de contexto no eleva el nivel de evidencia.
+Cada nodo tiene ID estable, resumen, etiquetas, preguntas vivas y objetivos Lean acotados. Cada arista declara un mecanismo concreto y un nivel de evidencia. La trazabilidad actual es 59/59 nodos y 115/115 aristas con referencias; todos los elementos `formal` o `literature` tienen una fuente de alcance `claim` o `formalization`. Una referencia de contexto no eleva el nivel de evidencia.
 
 ## Evaluación y posicionamiento
 

@@ -800,6 +800,49 @@
       ]
     },
     {
+      "@id": "https://lluiseriksson.github.io/physmath-knowledge-tree/id/bridge.semicircle_cluster_edge",
+      "@type": "pm:Bridge",
+      "stableId": "bridge.semicircle_cluster_edge",
+      "name": "Cluster-expansion convergence as a semicircle spectral edge",
+      "description": "The exact Catalan closure makes the second-gas majorant B = (1 - sqrt(1 - 4 M^2 epsilon))/(2M) a scaled Stieltjes transform of the Wigner semicircle law, so the Kotecky-Preiss window 4 M^2 epsilon < 1 reads as the spectral edge z = 2. Fernandez-Procacci sharpened KP through exact tree counting; the open value here is formalization and a possible free-probability reading of pinned-gas resummation.",
+      "kind": "bridge",
+      "confidence": "heuristic",
+      "keywords": [
+        "catalan",
+        "cluster-expansion",
+        "free-probability",
+        "semicircle",
+        "stieltjes"
+      ],
+      "questions": [
+        "Does a free-convolution or subordination argument improve any admissible activity window beyond scalar majorants?"
+      ],
+      "leanImports": [
+        "Mathlib"
+      ],
+      "leanDeclarations": [],
+      "leanTargets": [
+        "Formalize the truncated Catalan majorant recursion and its closed square-root bound in the Yang-Mills repository.",
+        "Prove the algebraic moment identity linking the Catalan generating function to finite Stieltjes objects in riemann-prime-resolvent."
+      ],
+      "citation": [
+        {
+          "@type": "schema:CreativeWork",
+          "name": "R. Fernandez and A. Procacci — Cluster expansion for abstract polymer models. New bounds from an old approach",
+          "url": "https://doi.org/10.1007/s00220-007-0279-2",
+          "referenceType": "paper",
+          "referenceScope": "claim"
+        },
+        {
+          "@type": "schema:CreativeWork",
+          "name": "L. Eriksson — A Machine-Verified Bijective Proof of the Rooted Child-Factorial Catalan Identity over Spanning Trees of the Complete Graph",
+          "url": "https://www.ai.vixra.org/abs/2607.0001",
+          "referenceType": "paper",
+          "referenceScope": "formalization"
+        }
+      ]
+    },
+    {
       "@id": "https://lluiseriksson.github.io/physmath-knowledge-tree/id/bridge.target_erasure_diagnostic",
       "@type": "pm:Bridge",
       "stableId": "bridge.target_erasure_diagnostic",
@@ -1058,6 +1101,7 @@
         "https://lluiseriksson.github.io/physmath-knowledge-tree/id/bridge.localized_homotopy_boundary_defect",
         "https://lluiseriksson.github.io/physmath-knowledge-tree/id/bridge.rooted_leaf_factorial_moments",
         "https://lluiseriksson.github.io/physmath-knowledge-tree/id/bridge.rooted_tree_catalan_closure",
+        "https://lluiseriksson.github.io/physmath-knowledge-tree/id/bridge.semicircle_cluster_edge",
         "https://lluiseriksson.github.io/physmath-knowledge-tree/id/bridge.target_erasure_diagnostic",
         "https://lluiseriksson.github.io/physmath-knowledge-tree/id/bridge.target_preserving_ursell_summation",
         "https://lluiseriksson.github.io/physmath-knowledge-tree/id/bridge.ward_defect_weight_variation",
@@ -1110,6 +1154,7 @@
         "https://lluiseriksson.github.io/physmath-knowledge-tree/id/bridge.renormalization_scaling_pde",
         "https://lluiseriksson.github.io/physmath-knowledge-tree/id/bridge.rooted_leaf_factorial_moments",
         "https://lluiseriksson.github.io/physmath-knowledge-tree/id/bridge.rooted_tree_catalan_closure",
+        "https://lluiseriksson.github.io/physmath-knowledge-tree/id/bridge.semicircle_cluster_edge",
         "https://lluiseriksson.github.io/physmath-knowledge-tree/id/bridge.target_erasure_diagnostic",
         "https://lluiseriksson.github.io/physmath-knowledge-tree/id/bridge.target_preserving_ursell_summation",
         "https://lluiseriksson.github.io/physmath-knowledge-tree/id/bridge.trace_formula_spectral_arithmetic",
@@ -1210,6 +1255,7 @@
         "https://lluiseriksson.github.io/physmath-knowledge-tree/id/bridge.cluster_expansion_with_holes",
         "https://lluiseriksson.github.io/physmath-knowledge-tree/id/bridge.rooted_leaf_factorial_moments",
         "https://lluiseriksson.github.io/physmath-knowledge-tree/id/bridge.rooted_tree_catalan_closure",
+        "https://lluiseriksson.github.io/physmath-knowledge-tree/id/bridge.semicircle_cluster_edge",
         "https://lluiseriksson.github.io/physmath-knowledge-tree/id/bridge.target_erasure_diagnostic",
         "https://lluiseriksson.github.io/physmath-knowledge-tree/id/bridge.target_preserving_ursell_summation",
         "https://lluiseriksson.github.io/physmath-knowledge-tree/id/domain.polymer_cluster_expansions",
@@ -2762,6 +2808,25 @@
       ]
     },
     {
+      "@id": "https://lluiseriksson.github.io/physmath-knowledge-tree/id/edge.catalan.semicircle_cluster_edge",
+      "@type": "pm:KnowledgeEdge",
+      "stableId": "edge.catalan.semicircle_cluster_edge",
+      "source": "https://lluiseriksson.github.io/physmath-knowledge-tree/id/bridge.rooted_tree_catalan_closure",
+      "target": "https://lluiseriksson.github.io/physmath-knowledge-tree/id/bridge.semicircle_cluster_edge",
+      "relation": "transfers_via",
+      "confidence": "heuristic",
+      "mechanism": "The exact Catalan generating function supplies the square-root branch that can be rewritten as a scaled semicircle Stieltjes transform once the open truncated-majorant target is formalized.",
+      "citation": [
+        {
+          "@type": "schema:CreativeWork",
+          "name": "L. Eriksson — A Machine-Verified Bijective Proof of the Rooted Child-Factorial Catalan Identity over Spanning Trees of the Complete Graph",
+          "url": "https://www.ai.vixra.org/abs/2607.0001",
+          "referenceType": "paper",
+          "referenceScope": "formalization"
+        }
+      ]
+    },
+    {
       "@id": "https://lluiseriksson.github.io/physmath-knowledge-tree/id/edge.category.algebra",
       "@type": "pm:KnowledgeEdge",
       "stableId": "edge.category.algebra",
@@ -3793,6 +3858,25 @@
       ]
     },
     {
+      "@id": "https://lluiseriksson.github.io/physmath-knowledge-tree/id/edge.polymer.semicircle_cluster_edge",
+      "@type": "pm:KnowledgeEdge",
+      "stableId": "edge.polymer.semicircle_cluster_edge",
+      "source": "https://lluiseriksson.github.io/physmath-knowledge-tree/id/domain.polymer_cluster_expansions",
+      "target": "https://lluiseriksson.github.io/physmath-knowledge-tree/id/bridge.semicircle_cluster_edge",
+      "relation": "suggests",
+      "confidence": "heuristic",
+      "mechanism": "Fernandez-Procacci tree-graph refinements and exact Catalan closure suggest treating the cluster-convergence boundary as the square-root edge of an effective resolvent rather than only as a scalar KP inequality.",
+      "citation": [
+        {
+          "@type": "schema:CreativeWork",
+          "name": "R. Fernandez and A. Procacci — Cluster expansion for abstract polymer models. New bounds from an old approach",
+          "url": "https://doi.org/10.1007/s00220-007-0279-2",
+          "referenceType": "paper",
+          "referenceScope": "claim"
+        }
+      ]
+    },
+    {
       "@id": "https://lluiseriksson.github.io/physmath-knowledge-tree/id/edge.polymer.target_erasure_diagnostic",
       "@type": "pm:KnowledgeEdge",
       "stableId": "edge.polymer.target_erasure_diagnostic",
@@ -4518,6 +4602,32 @@
           "url": "https://arxiv.org/abs/1212.5562",
           "referenceType": "paper",
           "referenceScope": "claim"
+        }
+      ]
+    },
+    {
+      "@id": "https://lluiseriksson.github.io/physmath-knowledge-tree/id/edge.semicircle_cluster_edge.random_matrix",
+      "@type": "pm:KnowledgeEdge",
+      "stableId": "edge.semicircle_cluster_edge.random_matrix",
+      "source": "https://lluiseriksson.github.io/physmath-knowledge-tree/id/bridge.semicircle_cluster_edge",
+      "target": "https://lluiseriksson.github.io/physmath-knowledge-tree/id/bridge.random_matrix_zeta_spectra",
+      "relation": "analogy",
+      "confidence": "heuristic",
+      "mechanism": "Both bridges read a frontier object through spectral statistics or resolvents; here the proposed edge is convergence of a cluster majorant rather than zeta-zero spacing.",
+      "citation": [
+        {
+          "@type": "schema:CreativeWork",
+          "name": "J. P. Keating and N. C. Snaith — Random matrix theory and zeta functions",
+          "url": "https://doi.org/10.1007/s002220000108",
+          "referenceType": "paper",
+          "referenceScope": "context"
+        },
+        {
+          "@type": "schema:CreativeWork",
+          "name": "L. Eriksson — A Machine-Verified Bijective Proof of the Rooted Child-Factorial Catalan Identity over Spanning Trees of the Complete Graph",
+          "url": "https://www.ai.vixra.org/abs/2607.0001",
+          "referenceType": "paper",
+          "referenceScope": "context"
         }
       ]
     },
