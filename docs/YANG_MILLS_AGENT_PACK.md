@@ -28,6 +28,11 @@ refresh HEAD
 → update the pack after verification
 ```
 
+The curated 2026-07-03 unblock batch also has a concise
+[mother-facing digest](curated/YM-UNBLOCK-2026-07-03-MOTHER-DIGEST.md) that
+lists exact formal names, carried hypotheses, source blockers and the next thin
+consumer shape without promoting any mathematical claim.
+
 ## Quality definition
 
 “100%” here means that all ten pack gates and all ten 10-point evaluation
