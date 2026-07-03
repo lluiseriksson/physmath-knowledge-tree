@@ -1,0 +1,122 @@
+{
+  "schema_version": "staging.1",
+  "batch": "batch-2026-07-03-ym-unblock",
+  "canonical_status": "not-canonical-graph",
+  "source_dossier": {
+    "filename": "PATCH-YM-UNBLOCK-2026-07-03.md",
+    "sha256": "482e223534ebd6c6ae71eb275b26b68d717577b9d3d972daf8fac96c6eda65e2",
+    "bytes": 47691,
+    "lines": 353
+  },
+  "promotion_rules": [
+    "Do not copy these candidates directly into graph/*.json.",
+    "Every graph promotion must replace source-note/image/graph reference placeholders with schema-valid references.",
+    "Every proposed relation must be mapped to the canonical edge relation vocabulary before graph insertion.",
+    "No item promotes hRpoly, OS reconstruction, the continuum limit or the Clay statement.",
+    "A candidate with an unresolved verification gate remains heuristic or speculative."
+  ],
+  "candidate_nodes": [
+    {
+      "id": "bridge.schur_catalan_multiscale_closure",
+      "kind": "bridge",
+      "confidence": "heuristic",
+      "status": "staged",
+      "reason": "Abstract Catalan-weighted Schur/coercivity closure template shared by YM and RH-style finite tests."
+    },
+    {
+      "id": "bridge.three_infinities_rooted_closure",
+      "kind": "bridge",
+      "confidence": "heuristic",
+      "status": "staged",
+      "reason": "Rooted Tonelli/geometric-series bookkeeping across cluster order, target geometry and scale."
+    },
+    {
+      "id": "bridge.penrose_stieltjes_spectral_compactification",
+      "kind": "bridge",
+      "confidence": "heuristic",
+      "status": "staged",
+      "reason": "Resolvent compactification as a shared formal-method bridge, not an implication between problems."
+    },
+    {
+      "id": "bridge.hausdorff_moment_certificates",
+      "kind": "bridge",
+      "confidence": "heuristic",
+      "status": "blocked",
+      "reason": "Needs literature verification against existing RH moment criteria before any novelty claim."
+    },
+    {
+      "id": "problem.prime_resolvent_stieltjes_criterion",
+      "kind": "problem",
+      "confidence": "heuristic",
+      "status": "blocked",
+      "reason": "Open operator, trace-class and prime-resolvent convergence obligations remain."
+    },
+    {
+      "id": "bridge.limit_corner_blowup_direction",
+      "kind": "bridge",
+      "confidence": "heuristic",
+      "status": "staged",
+      "reason": "Joint-limit language for preserving directional physical data."
+    },
+    {
+      "id": "bridge.rg_proper_time_reparametrization",
+      "kind": "bridge",
+      "confidence": "speculative",
+      "status": "quarantined",
+      "reason": "Needs one concrete invariant restatement of an existing RG bound."
+    },
+    {
+      "id": "bridge.janus_complexity_monotone",
+      "kind": "bridge",
+      "confidence": "speculative",
+      "status": "quarantined",
+      "reason": "Analogy must produce a concrete monotone for the marginal recursion or activities."
+    },
+    {
+      "id": "bridge.local_global_integrability_obstruction",
+      "kind": "bridge",
+      "confidence": "speculative",
+      "status": "staged-as-essay",
+      "reason": "Useful taxonomy only if it yields a reusable local-to-global obstruction lemma."
+    }
+  ],
+  "candidate_edges": [
+    {"id": "edge.schur_catalan.ym_rg_activity", "source": "bridge.schur_catalan_multiscale_closure", "target": "problem.uniform_yang_mills_rg_activity", "proposed_relation": "informs", "graph_relation_hint": "suggests"},
+    {"id": "edge.schur_catalan.riemann", "source": "bridge.schur_catalan_multiscale_closure", "target": "problem.riemann_hypothesis", "proposed_relation": "informs", "graph_relation_hint": "suggests"},
+    {"id": "edge.three_infinities.appendix_f", "source": "bridge.three_infinities_rooted_closure", "target": "bridge.appendix_f_rate_budget_split", "proposed_relation": "refines", "graph_relation_hint": "specializes"},
+    {"id": "edge.three_infinities.ym_rg_activity", "source": "bridge.three_infinities_rooted_closure", "target": "problem.uniform_yang_mills_rg_activity", "proposed_relation": "informs", "graph_relation_hint": "suggests"},
+    {"id": "edge.penrose_stieltjes.riemann", "source": "bridge.penrose_stieltjes_spectral_compactification", "target": "problem.riemann_hypothesis", "proposed_relation": "informs", "graph_relation_hint": "suggests"},
+    {"id": "edge.penrose_stieltjes.ym_rg_activity", "source": "bridge.penrose_stieltjes_spectral_compactification", "target": "problem.uniform_yang_mills_rg_activity", "proposed_relation": "informs", "graph_relation_hint": "suggests"},
+    {"id": "edge.penrose_stieltjes.general_relativity", "source": "domain.general_relativity", "target": "bridge.penrose_stieltjes_spectral_compactification", "proposed_relation": "motivates", "graph_relation_hint": "analogy"},
+    {"id": "edge.hausdorff_certificates.riemann", "source": "bridge.hausdorff_moment_certificates", "target": "problem.riemann_hypothesis", "proposed_relation": "tests", "graph_relation_hint": "tests"},
+    {"id": "edge.hausdorff_certificates.ym_rg_activity", "source": "bridge.hausdorff_moment_certificates", "target": "problem.uniform_yang_mills_rg_activity", "proposed_relation": "tests", "graph_relation_hint": "tests"},
+    {"id": "edge.prime_resolvent.riemann", "source": "problem.prime_resolvent_stieltjes_criterion", "target": "problem.riemann_hypothesis", "proposed_relation": "reduces_to", "graph_relation_hint": "suggests"},
+    {"id": "edge.shared_resolvent_library.ym_riemann", "source": "problem.prime_resolvent_stieltjes_criterion", "target": "problem.uniform_yang_mills_rg_activity", "proposed_relation": "shares_method", "graph_relation_hint": "analogy"},
+    {"id": "edge.corner_blowup.lattice_scaling", "source": "bridge.limit_corner_blowup_direction", "target": "bridge.lattice_physical_scaling", "proposed_relation": "refines", "graph_relation_hint": "specializes"},
+    {"id": "edge.rg_proper_time.renormalization_group", "source": "bridge.rg_proper_time_reparametrization", "target": "domain.renormalization_group", "proposed_relation": "informs", "graph_relation_hint": "suggests"},
+    {"id": "edge.janus_monotone.renormalization_group", "source": "bridge.janus_complexity_monotone", "target": "domain.renormalization_group", "proposed_relation": "informs", "graph_relation_hint": "suggests"},
+    {"id": "edge.integrability_obstruction.godel", "source": "bridge.local_global_integrability_obstruction", "target": "domain.general_relativity", "proposed_relation": "instantiates", "graph_relation_hint": "analogy"},
+    {"id": "edge.cantor_entropy.polymer_expansions", "source": "domain.foundation_logic", "target": "domain.polymer_cluster_expansions", "proposed_relation": "motivates", "graph_relation_hint": "analogy"}
+  ],
+  "candidate_research_moves": [
+    {
+      "id": "move.compactify_spectrum_by_resolvent",
+      "status": "staged",
+      "description": "Replace an unbounded positive spectrum by moments of (A + x0 I)^(-1), then test positivity through finite Hausdorff/Hankel certificates."
+    },
+    {
+      "id": "move.blow_up_the_limit_corner",
+      "status": "staged",
+      "description": "For joint regulator limits, pass to directions or ratio variables before stating uniform bounds."
+    }
+  ],
+  "verification_queue": [
+    "CMP source packet for the Yang-Mills P4 producer",
+    "Balaban Eq. (2.31), CMP119 Eq. (2.42), Cammarota CMP85 and covariance-root localization",
+    "Novelty of the single-point Hausdorff resolvent criterion for RH",
+    "Connes-Consani-Moscovici and Connes-van Suijlekom operator hypotheses",
+    "Fawzi-Renner fidelity convention and universal recovery map scope",
+    "Barbour-Koslowski-Mercati arrow-of-time claim scope",
+    "Origin of the 41%-by-2020 Riemann collage metric"
+  ]
+}

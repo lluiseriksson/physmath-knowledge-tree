@@ -1,0 +1,310 @@
+{
+  "id": "curation.ym_unblock_2026_07_03",
+  "schema_version": "1.2.0",
+  "processed": "2026-07-03",
+  "status": "curated",
+  "review": {
+    "status": "pending"
+  },
+  "source": {
+    "filename": "PATCH-YM-UNBLOCK-2026-07-03.md",
+    "media_type": "text/markdown",
+    "sha256": "482e223534ebd6c6ae71eb275b26b68d717577b9d3d972daf8fac96c6eda65e2",
+    "bytes": 47691,
+    "lines": 353
+  },
+  "retention": "delete-after-user-review",
+  "summary": "Curated Yang-Mills unblock dossier summarizing eleven raw idea files into graph candidates, bridge cards, quarantines, discards, PNG handling notes and a verification queue. The raw files are not copied into the repository; candidate graph objects remain staged because the machine-readable bundle contains source-note references, empty URLs and non-canonical relation names.",
+  "promoted": [
+    {
+      "id": "claim.ym_unblock_triage",
+      "title": "Yang-Mills unblock triage dossier",
+      "classification": "heuristic",
+      "rationale": "The dossier sorts thirty-seven ideas into promote, quarantine, discard, superseded and verification categories while preserving a no-claim boundary around hRpoly and Clay.",
+      "source_ranges": [
+        {
+          "start_line": 43,
+          "end_line": 87
+        }
+      ],
+      "destinations": [
+        {
+          "type": "document",
+          "value": "docs/curated/YM-UNBLOCK-2026-07-03-MATHEMATICAL-EXTRACT.md"
+        },
+        {
+          "type": "document",
+          "value": "docs/curated/YM-UNBLOCK-2026-07-03-CANDIDATES.json"
+        }
+      ]
+    },
+    {
+      "id": "claim.gaussian_collar_ladder",
+      "title": "Gaussian collar factorization-defect ladder",
+      "classification": "heuristic",
+      "rationale": "A staged G0-to-G3 path could produce a concrete volume-uniform collar defect estimate for the Yang-Mills activity producer, but it must fail early if G0 is not uniform.",
+      "source_ranges": [
+        {
+          "start_line": 91,
+          "end_line": 107
+        }
+      ],
+      "destinations": [
+        {
+          "type": "graph_node",
+          "value": "bridge.gaussian_covariance_collar"
+        },
+        {
+          "type": "graph_node",
+          "value": "problem.uniform_yang_mills_rg_activity"
+        },
+        {
+          "type": "document",
+          "value": "docs/curated/YM-UNBLOCK-2026-07-03-MATHEMATICAL-EXTRACT.md"
+        }
+      ]
+    },
+    {
+      "id": "claim.schur_catalan_multiscale",
+      "title": "Schur-Catalan multiscale closure template",
+      "classification": "heuristic",
+      "rationale": "The abstract Catalan-budget closure is a useful template for coercivity-minus-self-energy arguments, but each physical or arithmetic instance must separately prove positivity and the Catalan expansion.",
+      "source_ranges": [
+        {
+          "start_line": 108,
+          "end_line": 124
+        }
+      ],
+      "destinations": [
+        {
+          "type": "document",
+          "value": "docs/curated/YM-UNBLOCK-2026-07-03-MATHEMATICAL-EXTRACT.md"
+        },
+        {
+          "type": "document",
+          "value": "docs/curated/YM-UNBLOCK-2026-07-03-CANDIDATES.json"
+        }
+      ]
+    },
+    {
+      "id": "claim.p4_contract_activity",
+      "title": "P4 activity contract and quantifier discipline",
+      "classification": "heuristic",
+      "rationale": "The contract records that the real gauge activity must be defined before the decay estimate is proved, and rejects wrappers that store the desired estimate as a hypothesis.",
+      "source_ranges": [
+        {
+          "start_line": 125,
+          "end_line": 140
+        }
+      ],
+      "destinations": [
+        {
+          "type": "graph_node",
+          "value": "problem.uniform_yang_mills_rg_activity"
+        },
+        {
+          "type": "document",
+          "value": "docs/curated/YM-UNBLOCK-2026-07-03-MATHEMATICAL-EXTRACT.md"
+        }
+      ]
+    },
+    {
+      "id": "claim.three_infinities_closure",
+      "title": "Rooted closure of order, geometry and scale sums",
+      "classification": "formal",
+      "rationale": "Under explicit carried hypotheses, Tonelli and a geometric-series bound collapse three convergence budgets into one rooted observable; it is bookkeeping, not a source estimate.",
+      "source_ranges": [
+        {
+          "start_line": 167,
+          "end_line": 180
+        }
+      ],
+      "destinations": [
+        {
+          "type": "graph_node",
+          "value": "bridge.appendix_f_rate_budget_split"
+        },
+        {
+          "type": "document",
+          "value": "docs/curated/YM-UNBLOCK-2026-07-03-MATHEMATICAL-EXTRACT.md"
+        }
+      ]
+    },
+    {
+      "id": "claim.resolvent_compactification_library",
+      "title": "Resolvent compactification and finite moment certificates",
+      "classification": "heuristic",
+      "rationale": "The Penrose-Stieltjes and Hausdorff-certificate ideas are useful as shared finite spectral-method candidates, but require source checks before any novelty or literature promotion.",
+      "source_ranges": [
+        {
+          "start_line": 181,
+          "end_line": 219
+        }
+      ],
+      "destinations": [
+        {
+          "type": "document",
+          "value": "docs/curated/YM-UNBLOCK-2026-07-03-MATHEMATICAL-EXTRACT.md"
+        },
+        {
+          "type": "document",
+          "value": "docs/curated/YM-UNBLOCK-2026-07-03-CANDIDATES.json"
+        }
+      ]
+    },
+    {
+      "id": "claim.limit_corner_language",
+      "title": "Blow-up of joint limit corners",
+      "classification": "heuristic",
+      "rationale": "Replacing a degenerate joint limit by its approach direction may preserve physical scaling data that sequential limits erase.",
+      "source_ranges": [
+        {
+          "start_line": 220,
+          "end_line": 230
+        }
+      ],
+      "destinations": [
+        {
+          "type": "graph_node",
+          "value": "bridge.lattice_physical_scaling"
+        },
+        {
+          "type": "document",
+          "value": "docs/curated/YM-UNBLOCK-2026-07-03-MATHEMATICAL-EXTRACT.md"
+        }
+      ]
+    },
+    {
+      "id": "claim.verification_queue",
+      "title": "Primary-source verification queue",
+      "classification": "heuristic",
+      "rationale": "The queue identifies source checks that must be resolved before any staged candidate can be promoted to literature or formal graph status.",
+      "source_ranges": [
+        {
+          "start_line": 311,
+          "end_line": 334
+        }
+      ],
+      "destinations": [
+        {
+          "type": "document",
+          "value": "docs/curated/YM-UNBLOCK-2026-07-03-SOURCE-QUEUE.md"
+        }
+      ]
+    }
+  ],
+  "quarantined": [
+    {
+      "id": "quarantine.everett_teleportation_recovery",
+      "title": "Everettian and teleportation recovery proposals",
+      "classification": "speculative",
+      "rationale": "The branch-register, Bell/CHSH and teleportation material is interpretive or qualitative and does not provide uniform constants for hRpoly.",
+      "source_ranges": [
+        {
+          "start_line": 278,
+          "end_line": 285
+        }
+      ],
+      "destinations": [
+        {
+          "type": "document",
+          "value": "docs/curated/YM-UNBLOCK-2026-07-03-QUARANTINE.md"
+        }
+      ]
+    },
+    {
+      "id": "quarantine.rg_time_and_janus",
+      "title": "RG proper time and Janus complexity analogies",
+      "classification": "speculative",
+      "rationale": "These analogies are retained only if they produce a concrete reparameterization-invariant bound or monotone in a later cycle.",
+      "source_ranges": [
+        {
+          "start_line": 231,
+          "end_line": 253
+        }
+      ],
+      "destinations": [
+        {
+          "type": "document",
+          "value": "docs/curated/YM-UNBLOCK-2026-07-03-QUARANTINE.md"
+        },
+        {
+          "type": "document",
+          "value": "docs/curated/YM-UNBLOCK-2026-07-03-CANDIDATES.json"
+        }
+      ]
+    }
+  ],
+  "discarded": [
+    {
+      "category": "symbolic numerology",
+      "reason": "The source itself treats the Kabbalah selector as mnemonic, not as a mathematical dimension derivation.",
+      "examples": [
+        "4/5/10/22/32 worlds and paths as a selector for four dimensions"
+      ]
+    },
+    {
+      "category": "refuted extra-dimension picture",
+      "reason": "The source gives a decoupled stacked-layers counterexample; dynamics, not embedding in a fifth dimension, supplies interconnection.",
+      "examples": [
+        "3D sheets stacked in a fifth dimension"
+      ]
+    },
+    {
+      "category": "false implication",
+      "reason": "The source explicitly rejects RH implies Yang-Mills and Yang-Mills implies RH; only a shared abstract library is allowed.",
+      "examples": [
+        "RH => YM",
+        "YM => RH"
+      ]
+    },
+    {
+      "category": "empty source",
+      "reason": "Mathematical_Saffolding.txt is recorded as a zero-byte empty file and carries no extractable claim."
+    }
+  ],
+  "verification_queue": [
+    {
+      "id": "v1_cmp_source_packet",
+      "request": "Recover exact CMP source statements for the Yang-Mills P4 producer, including second variation, gauge fixing, block map, Hodge constants, fluctuation integral and Omega convention.",
+      "reason": "The source packet blocks promotion of the P4 activity contract beyond heuristic staging.",
+      "status": "pending"
+    },
+    {
+      "id": "v2_frontier_blockers",
+      "request": "Verify Balaban Eq. (2.31), CMP119 Eq. (2.42), Cammarota CMP85, activity termwise identification and covariance-root localization.",
+      "reason": "These remain the active source bottlenecks for the Yang-Mills frontier.",
+      "status": "pending"
+    },
+    {
+      "id": "v3_hausdorff_novelty",
+      "request": "Compare the single-point resolvent-of-Xi Hausdorff criterion against existing RH moment-problem criteria.",
+      "reason": "The dossier itself warns against unverified novelty claims.",
+      "status": "pending"
+    },
+    {
+      "id": "v4_ccm_operators",
+      "request": "Verify Connes-Consani-Moscovici operator hypotheses and the Connes-van Suijlekom lower-bounded-operator theorem.",
+      "reason": "The prime-resolvent programme depends on these operator hypotheses.",
+      "status": "pending"
+    },
+    {
+      "id": "v5_fawzi_renner",
+      "request": "Record the exact Fawzi-Renner fidelity convention and scope of the universal recovery map.",
+      "reason": "The uniform recovery analogy should not exceed its finite-dimensional source theorem.",
+      "status": "pending"
+    },
+    {
+      "id": "v6_bkm_arrow",
+      "request": "Verify the scope of Barbour-Koslowski-Mercati as a complexity/information arrow rather than a derivation of all physical arrows.",
+      "reason": "The Janus and RG-time analogies remain speculative without precise source boundaries.",
+      "status": "pending"
+    },
+    {
+      "id": "v7_riemann_collage_metric",
+      "request": "Identify the origin and meaning of the Riemann collage claim that 41 percent of progress was achieved by 2020.",
+      "reason": "The panel cannot be cited until the metric is sourced.",
+      "status": "pending"
+    }
+  ]
+}

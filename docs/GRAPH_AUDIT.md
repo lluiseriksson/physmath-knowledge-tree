@@ -24,8 +24,8 @@ Reference scopes are defined in [`REFERENCE_POLICY.md`](./REFERENCE_POLICY.md): 
 
 ## Curation state
 
-- Open source-verification requests: **18**.
-- Records awaiting explicit user review: **3**.
+- Open source-verification requests: **25**.
+- Records awaiting explicit user review: **4**.
 
 The two values above are deliberately not forced to zero: only the user can approve source deletion, and unresolved verification requests remain visible.
 
