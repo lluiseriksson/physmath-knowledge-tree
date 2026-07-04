@@ -1,6 +1,6 @@
 # Repository status heartbeat
 
-Last reviewed: 2026-07-04T14:48Z
+Last reviewed: 2026-07-04T19:07Z
 
 This file is an operational heartbeat for agents and maintainers. It records
 the current repository state without promoting any graph confidence label or
@@ -9,17 +9,21 @@ making a mathematical claim.
 ## Current state
 
 - Default branch: `main`
-- Reviewed HEAD: `1f0c4dee0df3e7280c227ca6989c35e9c3f70a07`
+- Reviewed HEAD: `4ddc92f0ba7e17e1eb6635a7dc7214b3204d649f`
 - Latest `main` workflows for the reviewed HEAD completed successfully:
   CI
-  ([run 28709059286](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28709059286)),
+  ([run 28715188710](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28715188710)),
   CodeQL
-  ([run 28709059326](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28709059326))
+  ([run 28715188695](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28715188695))
   and GitHub Pages
-  ([run 28709059304](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28709059304)).
+  ([run 28715188705](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28715188705)).
 - Open pull requests at review time: none.
 - Open operational blocker: [#6](https://github.com/lluiseriksson/physmath-knowledge-tree/issues/6),
   `Blocked: verify CMP source packet for Yang-Mills unblock queue`.
+- Recently merged operational digest:
+  [#9](https://github.com/lluiseriksson/physmath-knowledge-tree/pull/9)
+  added `docs/curated/YM-UNBLOCK-2026-07-04-CMP-LOCATOR-DIGEST.md`
+  and linked it from the source queue.
 
 ## Yang-Mills handoff boundary
 
@@ -30,6 +34,7 @@ in:
 - `docs/curated/YM-UNBLOCK-2026-07-03-SOURCE-QUEUE.md`
 - `curation/records/ym-unblock-2026-07-03.json`
 - `docs/curated/YM-UNBLOCK-2026-07-03-MOTHER-DIGEST.md`
+- `docs/curated/YM-UNBLOCK-2026-07-04-CMP-LOCATOR-DIGEST.md`
 - `integrations/yang-mills/generated/agent-context.md`
 
 Do not collapse the pending CMP source items into a generic activity
