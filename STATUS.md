@@ -1,6 +1,6 @@
 # Repository status heartbeat
 
-Last reviewed: 2026-07-04T12:12Z
+Last reviewed: 2026-07-04T14:48Z
 
 This file is an operational heartbeat for agents and maintainers. It records
 the current repository state without promoting any graph confidence label or
@@ -9,9 +9,14 @@ making a mathematical claim.
 ## Current state
 
 - Default branch: `main`
-- Reviewed HEAD: `66229593d533b63ac8babe94287fa2871d81fbb9`
-- Latest `main` workflows for the reviewed HEAD: CI, CodeQL and GitHub Pages
-  completed successfully.
+- Reviewed HEAD: `1f0c4dee0df3e7280c227ca6989c35e9c3f70a07`
+- Latest `main` workflows for the reviewed HEAD completed successfully:
+  CI
+  ([run 28709059286](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28709059286)),
+  CodeQL
+  ([run 28709059326](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28709059326))
+  and GitHub Pages
+  ([run 28709059304](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28709059304)).
 - Open pull requests at review time: none.
 - Open operational blocker: [#6](https://github.com/lluiseriksson/physmath-knowledge-tree/issues/6),
   `Blocked: verify CMP source packet for Yang-Mills unblock queue`.
