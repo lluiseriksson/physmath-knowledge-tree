@@ -1,6 +1,6 @@
 # Repository status heartbeat
 
-Last reviewed: 2026-07-05T12:54+02:00
+Last reviewed: 2026-07-05T16:02+02:00
 
 This file is an operational heartbeat for agents and maintainers. It records
 the current repository state without promoting any graph confidence label or
@@ -9,21 +9,25 @@ making a mathematical claim.
 ## Current state
 
 - Default branch: `main`
-- Reviewed HEAD: `947ade1016327ebab77f9c0bb2741b3f60fbb227`
+- Reviewed HEAD: `93bdb16a09fb49e4322dea8910a2082d78d01cac`
 - Latest `main` workflows for the reviewed HEAD completed successfully:
   CI
-  ([run 28736990769](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28736990769)),
+  ([run 28740225542](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28740225542)),
   CodeQL
-  ([run 28736990763](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28736990763))
+  ([run 28740225530](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28740225530))
   and GitHub Pages
-  ([run 28736990767](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28736990767)).
+  ([run 28740225531](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28740225531)).
 - Open pull requests at review time: none.
 - Open operational blocker: [#6](https://github.com/lluiseriksson/physmath-knowledge-tree/issues/6),
   `Blocked: verify CMP source packet for Yang-Mills unblock queue`.
 - Recently merged status heartbeat:
-  [#16](https://github.com/lluiseriksson/physmath-knowledge-tree/pull/16)
-  refreshed this file after PR #15 merged and recorded the same active
+  [#17](https://github.com/lluiseriksson/physmath-knowledge-tree/pull/17)
+  refreshed this file after PR #16 merged and recorded the same active
   source-specific blocker.
+- Recently closed operational CI task:
+  [#18](https://github.com/lluiseriksson/physmath-knowledge-tree/issues/18)
+  tracked a deploy-only GitHub Pages failure for run 28740225531; the failed
+  job was rerun and completed successfully for the reviewed HEAD.
 - Recently merged operational digest:
   [#9](https://github.com/lluiseriksson/physmath-knowledge-tree/pull/9)
   added `docs/curated/YM-UNBLOCK-2026-07-04-CMP-LOCATOR-DIGEST.md`
