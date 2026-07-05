@@ -1,6 +1,6 @@
 # Repository status heartbeat
 
-Last reviewed: 2026-07-05T17:04+02:00
+Last reviewed: 2026-07-05T18:06+02:00
 
 This file is an operational heartbeat for agents and maintainers. It records
 the current repository state without promoting any graph confidence label or
@@ -9,21 +9,26 @@ making a mathematical claim.
 ## Current state
 
 - Default branch: `main`
-- Reviewed HEAD: `9e5035a35e956d0081482dc08238ec9a1ec08a2d`
+- Reviewed HEAD: `57bbe0f001d5a20b37e29e8c6c47be500058f7b3`
 - Latest `main` workflows for the reviewed HEAD completed successfully:
   CI
-  ([run 28743756523](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28743756523)),
+  ([run 28745433464](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28745433464)),
   CodeQL
-  ([run 28743756516](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28743756516))
+  ([run 28745433445](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28745433445))
   and GitHub Pages
-  ([run 28743756530](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28743756530)).
+  ([run 28745433446](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28745433446)).
 - Open pull requests at review time: none.
 - Open operational blocker: [#6](https://github.com/lluiseriksson/physmath-knowledge-tree/issues/6),
   `Blocked: verify CMP source packet for Yang-Mills unblock queue`.
 - Recently merged status heartbeat:
-  [#19](https://github.com/lluiseriksson/physmath-knowledge-tree/pull/19)
-  refreshed this file after PR #17 merged and recorded the same active
+  [#20](https://github.com/lluiseriksson/physmath-knowledge-tree/pull/20)
+  refreshed this file after PR #19 merged and recorded the same active
   source-specific blocker.
+- Most recent operational CI repair: GitHub Pages
+  [run 28745433446](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28745433446)
+  initially failed in the deploy-only job after creating the deployment for
+  the reviewed HEAD. The failed job was rerun and the workflow is now
+  successful for `57bbe0f001d5a20b37e29e8c6c47be500058f7b3`.
 - Recently closed operational CI task:
   [#18](https://github.com/lluiseriksson/physmath-knowledge-tree/issues/18)
   tracked a deploy-only GitHub Pages failure for run 28740225531; the failed
