@@ -1,6 +1,6 @@
 # Repository status heartbeat
 
-Last reviewed: 2026-07-05T05:41Z
+Last reviewed: 2026-07-05T07:44Z
 
 This file is an operational heartbeat for agents and maintainers. It records
 the current repository state without promoting any graph confidence label or
@@ -9,14 +9,14 @@ making a mathematical claim.
 ## Current state
 
 - Default branch: `main`
-- Reviewed HEAD: `5275fafdec1c1cd2aec2650909cc8b63e2080f4d`
+- Reviewed HEAD: `6492241bd2cb77704fdf99f735be9ee6ff0b7f31`
 - Latest `main` workflows for the reviewed HEAD completed successfully:
   CI
-  ([run 28730307088](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28730307088)),
+  ([run 28732379618](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28732379618)),
   CodeQL
-  ([run 28730307102](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28730307102))
+  ([run 28732379609](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28732379609))
   and GitHub Pages
-  ([run 28730307091](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28730307091)).
+  ([run 28732379605](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28732379605)).
 - Open pull requests at review time: none.
 - Open operational blocker: [#6](https://github.com/lluiseriksson/physmath-knowledge-tree/issues/6),
   `Blocked: verify CMP source packet for Yang-Mills unblock queue`.
@@ -24,12 +24,11 @@ making a mathematical claim.
   [#9](https://github.com/lluiseriksson/physmath-knowledge-tree/pull/9)
   added `docs/curated/YM-UNBLOCK-2026-07-04-CMP-LOCATOR-DIGEST.md`
   and linked it from the source queue.
-- Recently merged operational heartbeat:
-  [#12](https://github.com/lluiseriksson/physmath-knowledge-tree/pull/12)
-  refreshed this status file and merged as the current reviewed HEAD.
-- Current satellite blocker attempt:
+- Recently merged operational blocker note:
+  [#13](https://github.com/lluiseriksson/physmath-knowledge-tree/pull/13)
+  added
   `docs/curated/YM-UNBLOCK-2026-07-05-WILSON-SECOND-VARIATION-BLOCKER.md`
-  records that the Springer chapter page and public preview for Wilson's
+  and records that the Springer chapter page and public preview for Wilson's
   Cargese 1976 chapter do not expose the requested second-variation statement.
 
 ## Yang-Mills handoff boundary
