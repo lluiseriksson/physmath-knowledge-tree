@@ -1,6 +1,6 @@
 # Repository status heartbeat
 
-Last reviewed: 2026-07-05T09:52Z
+Last reviewed: 2026-07-05T12:54+02:00
 
 This file is an operational heartbeat for agents and maintainers. It records
 the current repository state without promoting any graph confidence label or
@@ -9,20 +9,21 @@ making a mathematical claim.
 ## Current state
 
 - Default branch: `main`
-- Reviewed HEAD: `e49691ba1120a1645b784be6fd19de7fda208089`
+- Reviewed HEAD: `947ade1016327ebab77f9c0bb2741b3f60fbb227`
 - Latest `main` workflows for the reviewed HEAD completed successfully:
   CI
-  ([run 28735507412](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28735507412)),
+  ([run 28736990769](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28736990769)),
   CodeQL
-  ([run 28735507397](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28735507397))
+  ([run 28736990763](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28736990763))
   and GitHub Pages
-  ([run 28735507399](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28735507399)).
+  ([run 28736990767](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28736990767)).
 - Open pull requests at review time: none.
 - Open operational blocker: [#6](https://github.com/lluiseriksson/physmath-knowledge-tree/issues/6),
   `Blocked: verify CMP source packet for Yang-Mills unblock queue`.
 - Recently merged status heartbeat:
-  [#15](https://github.com/lluiseriksson/physmath-knowledge-tree/pull/15)
-  refreshed this file after the Wilson blocker note and PR #14 merged.
+  [#16](https://github.com/lluiseriksson/physmath-knowledge-tree/pull/16)
+  refreshed this file after PR #15 merged and recorded the same active
+  source-specific blocker.
 - Recently merged operational digest:
   [#9](https://github.com/lluiseriksson/physmath-knowledge-tree/pull/9)
   added `docs/curated/YM-UNBLOCK-2026-07-04-CMP-LOCATOR-DIGEST.md`
