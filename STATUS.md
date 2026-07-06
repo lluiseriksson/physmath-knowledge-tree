@@ -1,6 +1,6 @@
 # Repository status heartbeat
 
-Last reviewed: 2026-07-06T07:56+02:00
+Last reviewed: 2026-07-06T10:09+02:00
 
 This file is an operational heartbeat for agents and maintainers. It records
 the current repository state without promoting any graph confidence label or
@@ -9,20 +9,23 @@ making a mathematical claim.
 ## Current state
 
 - Default branch: `main`
-- Reviewed HEAD: `c3a406242266eb578aa897dbe97911341e89deb3`
+- Reviewed HEAD: `43f6be40a40b70d9a531f4b0bd7752a605e8ee12`
 - Latest `main` workflows for the reviewed HEAD completed successfully:
   CI
-  ([run 28769513271](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28769513271)),
+  ([run 28771590082](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28771590082)),
   CodeQL
-  ([run 28769513276](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28769513276))
+  ([run 28771590078](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28771590078))
   and GitHub Pages
-  ([run 28769513259](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28769513259)).
+  ([run 28771590100](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28771590100)).
 - Open pull requests at review time: none.
 - Open operational blocker: [#6](https://github.com/lluiseriksson/physmath-knowledge-tree/issues/6),
   `Blocked: verify CMP source packet for Yang-Mills unblock queue`.
+- Open operational agent task:
+  [#32](https://github.com/lluiseriksson/physmath-knowledge-tree/issues/32),
+  `Record 2602.0032 conditional Witten-lattice package`.
 - Recently merged status heartbeat:
-  [#27](https://github.com/lluiseriksson/physmath-knowledge-tree/pull/27)
-  refreshed this file before the CodeQL action-pairing repair landed.
+  [#31](https://github.com/lluiseriksson/physmath-knowledge-tree/pull/31)
+  refreshed this file after the CodeQL action-pairing repair landed.
 - Most recent operational CI repair:
   [#30](https://github.com/lluiseriksson/physmath-knowledge-tree/pull/30)
   aligned the pinned `github/codeql-action/init` and
@@ -38,6 +41,11 @@ making a mathematical claim.
   `docs/curated/YM-UNBLOCK-2026-07-05-WILSON-SECOND-VARIATION-BLOCKER.md`
   and records that the Springer chapter page and public preview for Wilson's
   Cargese 1976 chapter do not expose the requested second-variation statement.
+- Current operational digest in review:
+  `docs/curated/YM-WITTEN-LATTICE-2602-0032-MOTHER-DIGEST.md`
+  records `2602.0032` as a conditional Witten-Laplacian lattice-reduction
+  package with explicit `(H-BAL)`, `(H-CONST)`, `(H-MB)` and `(H-HAM)`
+  hypotheses and errata, without merging it into `2602.0020` or `2602.0021`.
 
 ## Yang-Mills handoff boundary
 
