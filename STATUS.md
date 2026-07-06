@@ -1,6 +1,6 @@
 # Repository status heartbeat
 
-Last reviewed: 2026-07-06T01:38+02:00
+Last reviewed: 2026-07-06T07:56+02:00
 
 This file is an operational heartbeat for agents and maintainers. It records
 the current repository state without promoting any graph confidence label or
@@ -9,30 +9,25 @@ making a mathematical claim.
 ## Current state
 
 - Default branch: `main`
-- Reviewed HEAD: `7ff79611fec82873fb15803f83687c1040c2b675`
+- Reviewed HEAD: `c3a406242266eb578aa897dbe97911341e89deb3`
 - Latest `main` workflows for the reviewed HEAD completed successfully:
   CI
-  ([run 28758011413](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28758011413)),
+  ([run 28769513271](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28769513271)),
   CodeQL
-  ([run 28758011425](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28758011425))
+  ([run 28769513276](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28769513276))
   and GitHub Pages
-  ([run 28758011412](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28758011412)).
+  ([run 28769513259](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28769513259)).
 - Open pull requests at review time: none.
 - Open operational blocker: [#6](https://github.com/lluiseriksson/physmath-knowledge-tree/issues/6),
   `Blocked: verify CMP source packet for Yang-Mills unblock queue`.
 - Recently merged status heartbeat:
-  [#25](https://github.com/lluiseriksson/physmath-knowledge-tree/pull/25)
-  refreshed this file after PR #24 merged and recorded the same active
-  source-specific blocker.
-- Most recent operational CI repair: GitHub Pages
-  [run 28745433446](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28745433446)
-  initially failed in the deploy-only job after creating the deployment for
-  `57bbe0f001d5a20b37e29e8c6c47be500058f7b3`. The failed job was rerun and the workflow is now
-  successful for `57bbe0f001d5a20b37e29e8c6c47be500058f7b3`.
-- Recently closed operational CI task:
-  [#18](https://github.com/lluiseriksson/physmath-knowledge-tree/issues/18)
-  tracked a deploy-only GitHub Pages failure for run 28740225531; the failed
-  job was rerun and completed successfully for the reviewed HEAD.
+  [#27](https://github.com/lluiseriksson/physmath-knowledge-tree/pull/27)
+  refreshed this file before the CodeQL action-pairing repair landed.
+- Most recent operational CI repair:
+  [#30](https://github.com/lluiseriksson/physmath-knowledge-tree/pull/30)
+  aligned the pinned `github/codeql-action/init` and
+  `github/codeql-action/analyze` commits and grouped future CodeQL action
+  updates in Dependabot. It is merged into the reviewed HEAD.
 - Recently merged operational digest:
   [#9](https://github.com/lluiseriksson/physmath-knowledge-tree/pull/9)
   added `docs/curated/YM-UNBLOCK-2026-07-04-CMP-LOCATOR-DIGEST.md`
