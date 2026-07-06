@@ -1,6 +1,6 @@
 # Repository status heartbeat
 
-Last reviewed: 2026-07-06T15:18+02:00
+Last reviewed: 2026-07-06T16:26+02:00
 
 This file is an operational heartbeat for agents and maintainers. It records
 the current repository state without promoting any graph confidence label or
@@ -9,14 +9,14 @@ making a mathematical claim.
 ## Current state
 
 - Default branch: `main`
-- Reviewed HEAD: `41ffa4e247558696c9135913f7589766b0c377e6`
+- Reviewed HEAD: `b35eaac5da00ca770fc357cd2028181bc97468c9`
 - Latest `main` workflows for the reviewed HEAD completed successfully:
   CI
-  ([run 28791584743](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28791584743)),
+  ([run 28797251331](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28797251331)),
   CodeQL
-  ([run 28791584810](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28791584810))
+  ([run 28797251317](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28797251317))
   and GitHub Pages
-  ([run 28791584785](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28791584785)).
+  ([run 28797251401](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28797251401)).
 - Open pull requests at review time: none.
 - Open operational blocker: [#6](https://github.com/lluiseriksson/physmath-knowledge-tree/issues/6),
   `Blocked: verify CMP source packet for Yang-Mills unblock queue`.
@@ -31,8 +31,8 @@ making a mathematical claim.
   conditional Witten-Laplacian lattice-reduction package with explicit
   `(H-BAL)`, `(H-CONST)`, `(H-MB)` and `(H-HAM)` hypotheses and errata.
 - Previous status heartbeat:
-  [#47](https://github.com/lluiseriksson/physmath-knowledge-tree/pull/47)
-  refreshed this file after the `2602.0032` digest landed.
+  [#48](https://github.com/lluiseriksson/physmath-knowledge-tree/pull/48)
+  refreshed this file and is merged into the reviewed HEAD.
 - Most recent operational CI repair:
   [#30](https://github.com/lluiseriksson/physmath-knowledge-tree/pull/30)
   aligned the pinned `github/codeql-action/init` and
