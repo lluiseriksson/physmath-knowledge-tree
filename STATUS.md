@@ -1,6 +1,6 @@
 # Repository status heartbeat
 
-Last reviewed: 2026-07-06T11:10+02:00
+Last reviewed: 2026-07-06T12:14+02:00
 
 This file is an operational heartbeat for agents and maintainers. It records
 the current repository state without promoting any graph confidence label or
@@ -9,14 +9,14 @@ making a mathematical claim.
 ## Current state
 
 - Default branch: `main`
-- Reviewed HEAD: `7a0dd58187b4569c9d5d1345a4556dcc4205c56b`
+- Reviewed HEAD: `120af7a72ad727c0bb3b4148566794f16c53576d`
 - Latest `main` workflows for the reviewed HEAD completed successfully:
   CI
-  ([run 28777778415](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28777778415)),
+  ([run 28782091083](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28782091083)),
   CodeQL
-  ([run 28778906056](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28778906056))
+  ([run 28782091172](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28782091172))
   and GitHub Pages
-  ([run 28777778405](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28777778405)).
+  ([run 28782091265](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28782091265)).
 - Open pull requests at review time: none.
 - Open operational blocker: [#6](https://github.com/lluiseriksson/physmath-knowledge-tree/issues/6),
   `Blocked: verify CMP source packet for Yang-Mills unblock queue`.
@@ -31,8 +31,8 @@ making a mathematical claim.
   conditional Witten-Laplacian lattice-reduction package with explicit
   `(H-BAL)`, `(H-CONST)`, `(H-MB)` and `(H-HAM)` hypotheses and errata.
 - Previous status heartbeat:
-  [#31](https://github.com/lluiseriksson/physmath-knowledge-tree/pull/31)
-  refreshed this file after the CodeQL action-pairing repair landed.
+  [#40](https://github.com/lluiseriksson/physmath-knowledge-tree/pull/40)
+  refreshed this file after the `2602.0032` digest landed.
 - Most recent operational CI repair:
   [#30](https://github.com/lluiseriksson/physmath-knowledge-tree/pull/30)
   aligned the pinned `github/codeql-action/init` and
