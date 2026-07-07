@@ -1,6 +1,6 @@
 # Repository status heartbeat
 
-Last reviewed: 2026-07-07T01:15+02:00
+Last reviewed: 2026-07-07T02:28+02:00
 
 This file is an operational heartbeat for agents and maintainers. It records
 the current repository state without promoting any graph confidence label or
@@ -9,14 +9,14 @@ making a mathematical claim.
 ## Current state
 
 - Default branch: `main`
-- Reviewed HEAD: `9d0f6b99c1245af55c38795156451d56cf1fb513`
+- Reviewed HEAD: `61f649fbb144783e464022efd46430f80f12bca6`
 - Latest `main` workflows for the reviewed HEAD completed successfully:
   CI
-  ([run 28827473812](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28827473812)),
+  ([run 28830574615](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28830574615)),
   CodeQL
-  ([run 28827473851](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28827473851))
+  ([run 28830574614](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28830574614))
   and GitHub Pages
-  ([run 28827473877](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28827473877)).
+  ([run 28830574595](https://github.com/lluiseriksson/physmath-knowledge-tree/actions/runs/28830574595)).
 - Open pull requests at review time: none.
 - Open operational blocker: [#6](https://github.com/lluiseriksson/physmath-knowledge-tree/issues/6),
   `Blocked: verify CMP source packet for Yang-Mills unblock queue`.
@@ -31,7 +31,7 @@ making a mathematical claim.
   conditional Witten-Laplacian lattice-reduction package with explicit
   `(H-BAL)`, `(H-CONST)`, `(H-MB)` and `(H-HAM)` hypotheses and errata.
 - Previous status heartbeat:
-  [#55](https://github.com/lluiseriksson/physmath-knowledge-tree/pull/55)
+  [#60](https://github.com/lluiseriksson/physmath-knowledge-tree/pull/60)
   refreshed this file and is merged into the reviewed HEAD.
 - Most recent operational CI repair:
   [#30](https://github.com/lluiseriksson/physmath-knowledge-tree/pull/30)
