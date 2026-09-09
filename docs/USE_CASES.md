@@ -14,9 +14,9 @@ How can spectral theory and trace-formula mechanisms organize a bounded route to
 | 1→2 | edge | `edge.functional.spectral` | literature | claim |
 | 2 | node | `domain.spectral_theory` | literature | claim |
 | 2→3 | edge | `edge.spectral.trace_bridge` | literature | claim |
-| 3 | node | `bridge.trace_formula_spectral_arithmetic` | literature | claim |
+| 3 | node | `bridge.trace_formula_spectral_arithmetic` | literature | claim, context |
 | 3→4 | edge | `edge.trace.riemann` | literature | claim |
-| 4 | node | `problem.riemann_hypothesis` | literature | claim |
+| 4 | node | `problem.riemann_hypothesis` | literature | claim, context |
 
 **Bounded next target**
 
@@ -58,7 +58,7 @@ How can a target-preserving polymer expansion retain the marked observable throu
 
 | Step | Type | Identifier | Evidence | Reference scope |
 | ---: | --- | --- | --- | --- |
-| 1 | node | `domain.polymer_cluster_expansions` | literature | claim |
+| 1 | node | `domain.polymer_cluster_expansions` | literature | claim, context |
 | 1→2 | edge | `edge.polymer.target_erasure_diagnostic` | formal | claim |
 | 2 | node | `bridge.target_erasure_diagnostic` | formal | claim |
 | 2→3 | edge | `edge.target_erasure.target_preserving` | formal | claim |
@@ -66,7 +66,7 @@ How can a target-preserving polymer expansion retain the marked observable throu
 | 3→4 | edge | `edge.target_preserving.rooted_leaf` | formal | claim |
 | 4 | node | `bridge.rooted_leaf_factorial_moments` | formal | claim |
 | 4→5 | edge | `edge.rooted_leaf.catalan_closure` | formal | claim |
-| 5 | node | `bridge.rooted_tree_catalan_closure` | formal | claim, formalization |
+| 5 | node | `bridge.rooted_tree_catalan_closure` | formal | claim, context, formalization |
 | 5→6 | edge | `edge.catalan.rate_budget` | formal | claim |
 | 6 | node | `bridge.appendix_f_rate_budget_split` | formal | claim |
 | 6→7 | edge | `edge.rate_budget.cluster_holes` | formal | claim |
@@ -90,7 +90,7 @@ What finite formal mechanism expresses that a local nonselective operation prese
 
 | Step | Type | Identifier | Evidence | Reference scope |
 | ---: | --- | --- | --- | --- |
-| 1 | node | `domain.algebraic_quantum_field_theory` | literature | claim |
+| 1 | node | `domain.algebraic_quantum_field_theory` | literature | claim, context |
 | 1→2 | edge | `edge.aqft.no_signalling` | formal | claim |
 | 2 | node | `bridge.local_operations_no_signalling` | formal | claim |
 
@@ -110,9 +110,9 @@ Which literature-backed bridge turns small conditional mutual information into a
 
 | Step | Type | Identifier | Evidence | Reference scope |
 | ---: | --- | --- | --- | --- |
-| 1 | node | `domain.quantum_information_theory` | literature | claim |
+| 1 | node | `domain.quantum_information_theory` | literature | claim, context |
 | 1→2 | edge | `edge.qinfo.cmi_recovery` | literature | claim |
-| 2 | node | `bridge.conditional_mutual_information_recovery` | literature | claim |
+| 2 | node | `bridge.conditional_mutual_information_recovery` | literature | claim, context |
 
 **Bounded next target**
 

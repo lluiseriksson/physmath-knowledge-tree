@@ -169,6 +169,296 @@
       ]
     },
     {
+      "url": "https://arxiv.org/abs/2605.05542v1",
+      "label": "Fertility fibres and coproduct coefficients in the LOT Hopf algebra (v1, reviewed 2026-09-09; context only)",
+      "type": "paper",
+      "scopes": [
+        "context"
+      ],
+      "used_by": [
+        "node:bridge.rooted_tree_catalan_closure"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2606.21062v2",
+      "label": "The prescribed Hermitian-Yang-Mills flow I (v2, reviewed 2026-09-09; context only)",
+      "type": "paper",
+      "scopes": [
+        "context"
+      ],
+      "used_by": [
+        "node:bridge.renormalization_scaling_pde"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2606.21073v1",
+      "label": "The prescribed Hermitian-Yang-Mills flow II (v1, reviewed 2026-09-09; context only)",
+      "type": "paper",
+      "scopes": [
+        "context"
+      ],
+      "used_by": [
+        "node:bridge.renormalization_scaling_pde"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2607.10696v1",
+      "label": "The planar Hopf algebra of noncommutative multi-indices (v1, reviewed 2026-09-09; context only)",
+      "type": "paper",
+      "scopes": [
+        "context"
+      ],
+      "used_by": [
+        "node:bridge.rooted_tree_catalan_closure"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.08442v1",
+      "label": "Fundamental forms and infinitesimal symmetries of projective varieties (v1, reviewed 2026-09-09; context only)",
+      "type": "paper",
+      "scopes": [
+        "context"
+      ],
+      "used_by": [
+        "node:domain.algebraic_geometry"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.27267v1",
+      "label": "Efficient Quantum Simulations of Yang-Mills theory with Maximal-tree Gauge (v1, reviewed 2026-09-09; context only)",
+      "type": "paper",
+      "scopes": [
+        "context"
+      ],
+      "used_by": [
+        "node:domain.gauge_theory"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2608.31001v1",
+      "label": "Work Extraction Across a Thermodynamic Hierarchy in Quantum Many-Body Systems (v1, reviewed 2026-09-09; context only)",
+      "type": "paper",
+      "scopes": [
+        "context"
+      ],
+      "used_by": [
+        "node:domain.algebraic_quantum_field_theory"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.00537v1",
+      "label": "Explicit Exponential Sum Estimates and Approximate Functional Equations for the Zeta Function (v1, reviewed 2026-09-09; context only)",
+      "type": "paper",
+      "scopes": [
+        "context"
+      ],
+      "used_by": [
+        "node:bridge.trace_formula_spectral_arithmetic"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.00867v1",
+      "label": "Uniform Partition-Function Estimates for Coulomb Modulated Energy at All Positive Temperatures (v1, reviewed 2026-09-09; context only)",
+      "type": "paper",
+      "scopes": [
+        "context"
+      ],
+      "used_by": [
+        "node:domain.polymer_cluster_expansions"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.01605v1",
+      "label": "Depth-1 expanders on the unitary group and applications (v1, reviewed 2026-09-09; context only)",
+      "type": "paper",
+      "scopes": [
+        "context"
+      ],
+      "used_by": [
+        "node:domain.quantum_information_theory"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.02687v1",
+      "label": "Quantum Meta-Complexity Is All You Need: Characterizing One-Way Puzzles via Time-Bounded Kolmogorov Complexity (v1, reviewed 2026-09-09; context only)",
+      "type": "paper",
+      "scopes": [
+        "context"
+      ],
+      "used_by": [
+        "node:domain.complexity_theory"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.02865v1",
+      "label": "A quantum oracle separation between QMA(2) and QMA (v1, reviewed 2026-09-09; context only)",
+      "type": "paper",
+      "scopes": [
+        "context"
+      ],
+      "used_by": [
+        "node:bridge.conditional_mutual_information_recovery",
+        "node:domain.complexity_theory"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.02882v2",
+      "label": "A new proof that more than $2/3$ of the zeros of the Riemann zeta function are simple and on the critical line (v2, reviewed 2026-09-09; context only)",
+      "type": "paper",
+      "scopes": [
+        "context"
+      ],
+      "used_by": [
+        "node:bridge.random_matrix_zeta_spectra",
+        "node:problem.riemann_hypothesis"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.03784v1",
+      "label": "A note on the noncommutative Hodge conjecture for graded matrix factorizations (v1, reviewed 2026-09-09; context only)",
+      "type": "paper",
+      "scopes": [
+        "context"
+      ],
+      "used_by": [
+        "node:problem.hodge_conjecture"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.04117v1",
+      "label": "Non-Abelian string melting and thermalization in an open lattice gauge theory (v1, reviewed 2026-09-09; context only)",
+      "type": "paper",
+      "scopes": [
+        "context"
+      ],
+      "used_by": [
+        "node:domain.gauge_theory"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.04423v1",
+      "label": "On Quasiparticles within the Refined Gribov-Zwanziger Model (v1, reviewed 2026-09-09; context only)",
+      "type": "paper",
+      "scopes": [
+        "context"
+      ],
+      "used_by": [
+        "node:domain.gauge_theory"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.04789v1",
+      "label": "Height fluctuation for Lozenge Tilings of Polygons (v1, reviewed 2026-09-09; context only)",
+      "type": "paper",
+      "scopes": [
+        "context"
+      ],
+      "used_by": [
+        "node:bridge.gaussian_covariance_collar"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.04905v1",
+      "label": "Ancilla mediated steady-state engineering in open quantum systems (v1, reviewed 2026-09-09; context only)",
+      "type": "paper",
+      "scopes": [
+        "context"
+      ],
+      "used_by": [
+        "node:domain.algebraic_quantum_field_theory"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.06829v1",
+      "label": "A unified family of counterexamples to Batyrev's non-negativity conjecture on stringy Hodge numbers (v1, reviewed 2026-09-09; context only)",
+      "type": "paper",
+      "scopes": [
+        "context"
+      ],
+      "used_by": [
+        "node:bridge.motives_periods_hodge"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.07804v1",
+      "label": "$F$-nilpotence and Hodge filtrations beyond isolated singularities (v1, reviewed 2026-09-09; context only)",
+      "type": "paper",
+      "scopes": [
+        "context"
+      ],
+      "used_by": [
+        "node:bridge.motives_periods_hodge"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.07832v1",
+      "label": "Restricted typicality in non-equilibrium quantum many-body systems (v1, reviewed 2026-09-09; context only)",
+      "type": "paper",
+      "scopes": [
+        "context"
+      ],
+      "used_by": [
+        "node:domain.probability_stochastics"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.07918v1",
+      "label": "Simple critical zeros and distinct zeros of the Riemann zeta-function in short intervals (v1, reviewed 2026-09-09; context only)",
+      "type": "paper",
+      "scopes": [
+        "context"
+      ],
+      "used_by": [
+        "node:bridge.random_matrix_zeta_spectra",
+        "node:problem.riemann_hypothesis"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.08132v1",
+      "label": "Thick points of log-correlated Gaussian fields do not depend on the mollifier (v1, reviewed 2026-09-09; context only)",
+      "type": "paper",
+      "scopes": [
+        "context"
+      ],
+      "used_by": [
+        "node:bridge.gaussian_covariance_collar"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.08169v1",
+      "label": "On overlap concentration in the Curie-Weiss Random Field model (v1, reviewed 2026-09-09; context only)",
+      "type": "paper",
+      "scopes": [
+        "context"
+      ],
+      "used_by": [
+        "node:bridge.gaussian_covariance_collar"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.08752v1",
+      "label": "Quantum speed limits based on quantifiers of quantum-state texture (v1, reviewed 2026-09-09; context only)",
+      "type": "paper",
+      "scopes": [
+        "context"
+      ],
+      "used_by": [
+        "node:domain.quantum_information_theory"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.09033v1",
+      "label": "Semidefinite extension complexity of the separable set, with applications to approximate disentanglers (v1, reviewed 2026-09-09; context only)",
+      "type": "paper",
+      "scopes": [
+        "context"
+      ],
+      "used_by": [
+        "node:bridge.conditional_mutual_information_recovery",
+        "node:domain.complexity_theory"
+      ]
+    },
+    {
       "url": "https://arxiv.org/abs/math/0211159",
       "label": "G. Perelman — The entropy formula for the Ricci flow and its geometric applications",
       "type": "paper",

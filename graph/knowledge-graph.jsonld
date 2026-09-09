@@ -83,7 +83,7 @@
   "schemaVersion": "0.6.0",
   "applicationVersion": "2.6.0",
   "dateCreated": "2026-06-22",
-  "dateModified": "2026-06-23",
+  "dateModified": "2026-09-09",
   "@graph": [
     {
       "@id": "https://lluiseriksson.github.io/physmath-knowledge-tree/id/bridge.appendix_f_rate_budget_split",
@@ -250,6 +250,20 @@
           "url": "https://arxiv.org/abs/1504.07251",
           "referenceType": "paper",
           "referenceScope": "claim"
+        },
+        {
+          "@type": "schema:CreativeWork",
+          "name": "A quantum oracle separation between QMA(2) and QMA (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.02865v1",
+          "referenceType": "paper",
+          "referenceScope": "context"
+        },
+        {
+          "@type": "schema:CreativeWork",
+          "name": "Semidefinite extension complexity of the separable set, with applications to approximate disentanglers (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.09033v1",
+          "referenceType": "paper",
+          "referenceScope": "context"
         }
       ]
     },
@@ -291,6 +305,27 @@
           "url": "https://arxiv.org/abs/1212.5562",
           "referenceType": "paper",
           "referenceScope": "claim"
+        },
+        {
+          "@type": "schema:CreativeWork",
+          "name": "Height fluctuation for Lozenge Tilings of Polygons (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.04789v1",
+          "referenceType": "paper",
+          "referenceScope": "context"
+        },
+        {
+          "@type": "schema:CreativeWork",
+          "name": "Thick points of log-correlated Gaussian fields do not depend on the mollifier (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.08132v1",
+          "referenceType": "paper",
+          "referenceScope": "context"
+        },
+        {
+          "@type": "schema:CreativeWork",
+          "name": "On overlap concentration in the Curie-Weiss Random Field model (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.08169v1",
+          "referenceType": "paper",
+          "referenceScope": "context"
         }
       ]
     },
@@ -516,6 +551,20 @@
       "citation": [
         {
           "@type": "schema:CreativeWork",
+          "name": "A unified family of counterexamples to Batyrev's non-negativity conjecture on stringy Hodge numbers (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.06829v1",
+          "referenceType": "paper",
+          "referenceScope": "context"
+        },
+        {
+          "@type": "schema:CreativeWork",
+          "name": "$F$-nilpotence and Hodge filtrations beyond isolated singularities (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.07804v1",
+          "referenceType": "paper",
+          "referenceScope": "context"
+        },
+        {
+          "@type": "schema:CreativeWork",
           "name": "P. Deligne — The Hodge Conjecture",
           "url": "https://www.claymath.org/wp-content/uploads/2022/06/hodge.pdf",
           "referenceType": "paper",
@@ -583,6 +632,20 @@
         "Formalize finite eigenvalue-statistic toy examples."
       ],
       "citation": [
+        {
+          "@type": "schema:CreativeWork",
+          "name": "A new proof that more than $2/3$ of the zeros of the Riemann zeta function are simple and on the critical line (v2, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.02882v2",
+          "referenceType": "paper",
+          "referenceScope": "context"
+        },
+        {
+          "@type": "schema:CreativeWork",
+          "name": "Simple critical zeros and distinct zeros of the Riemann zeta-function in short intervals (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.07918v1",
+          "referenceType": "paper",
+          "referenceScope": "context"
+        },
         {
           "@type": "schema:CreativeWork",
           "name": "J. P. Keating and N. C. Snaith — Random matrix theory and zeta functions",
@@ -658,6 +721,20 @@
         "State a toy scale-invariant norm estimate."
       ],
       "citation": [
+        {
+          "@type": "schema:CreativeWork",
+          "name": "The prescribed Hermitian-Yang-Mills flow I (v2, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2606.21062v2",
+          "referenceType": "paper",
+          "referenceScope": "context"
+        },
+        {
+          "@type": "schema:CreativeWork",
+          "name": "The prescribed Hermitian-Yang-Mills flow II (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2606.21073v1",
+          "referenceType": "paper",
+          "referenceScope": "context"
+        },
         {
           "@type": "schema:CreativeWork",
           "name": "K. G. Wilson and J. Kogut — The renormalization group and the epsilon expansion",
@@ -768,6 +845,20 @@
           "url": "https://arxiv.org/abs/1212.5562",
           "referenceType": "paper",
           "referenceScope": "claim"
+        },
+        {
+          "@type": "schema:CreativeWork",
+          "name": "Fertility fibres and coproduct coefficients in the LOT Hopf algebra (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2605.05542v1",
+          "referenceType": "paper",
+          "referenceScope": "context"
+        },
+        {
+          "@type": "schema:CreativeWork",
+          "name": "The planar Hopf algebra of noncommutative multi-indices (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2607.10696v1",
+          "referenceType": "paper",
+          "referenceScope": "context"
         },
         {
           "@type": "schema:CreativeWork",
@@ -970,6 +1061,13 @@
         "Formalize finite trace identities before analytic trace formulas."
       ],
       "citation": [
+        {
+          "@type": "schema:CreativeWork",
+          "name": "Explicit Exponential Sum Estimates and Approximate Functional Equations for the Zeta Function (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.00537v1",
+          "referenceType": "paper",
+          "referenceScope": "context"
+        },
         {
           "@type": "schema:CreativeWork",
           "name": "D. Bump — Automorphic Forms and Representations",
@@ -1332,6 +1430,13 @@
       "citation": [
         {
           "@type": "schema:CreativeWork",
+          "name": "Fundamental forms and infinitesimal symmetries of projective varieties (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2608.08442v1",
+          "referenceType": "paper",
+          "referenceScope": "context"
+        },
+        {
+          "@type": "schema:CreativeWork",
           "name": "The Stacks Project",
           "url": "https://stacks.math.columbia.edu/",
           "referenceType": "book",
@@ -1371,6 +1476,20 @@
           "url": "https://arxiv.org/abs/1803.04993",
           "referenceType": "paper",
           "referenceScope": "claim"
+        },
+        {
+          "@type": "schema:CreativeWork",
+          "name": "Work Extraction Across a Thermodynamic Hierarchy in Quantum Many-Body Systems (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2608.31001v1",
+          "referenceType": "paper",
+          "referenceScope": "context"
+        },
+        {
+          "@type": "schema:CreativeWork",
+          "name": "Ancilla mediated steady-state engineering in open quantum systems (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.04905v1",
+          "referenceType": "paper",
+          "referenceScope": "context"
         },
         {
           "@type": "schema:CreativeWork",
@@ -1554,6 +1673,27 @@
       "citation": [
         {
           "@type": "schema:CreativeWork",
+          "name": "Quantum Meta-Complexity Is All You Need: Characterizing One-Way Puzzles via Time-Bounded Kolmogorov Complexity (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.02687v1",
+          "referenceType": "paper",
+          "referenceScope": "context"
+        },
+        {
+          "@type": "schema:CreativeWork",
+          "name": "A quantum oracle separation between QMA(2) and QMA (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.02865v1",
+          "referenceType": "paper",
+          "referenceScope": "context"
+        },
+        {
+          "@type": "schema:CreativeWork",
+          "name": "Semidefinite extension complexity of the separable set, with applications to approximate disentanglers (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.09033v1",
+          "referenceType": "paper",
+          "referenceScope": "context"
+        },
+        {
+          "@type": "schema:CreativeWork",
           "name": "S. Arora and B. Barak — Computational Complexity: A Modern Approach",
           "url": "https://theory.cs.princeton.edu/complexity/book.pdf",
           "referenceType": "book",
@@ -1731,6 +1871,27 @@
         "Create finite gauge-action models before continuous field theories."
       ],
       "citation": [
+        {
+          "@type": "schema:CreativeWork",
+          "name": "Efficient Quantum Simulations of Yang-Mills theory with Maximal-tree Gauge (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2608.27267v1",
+          "referenceType": "paper",
+          "referenceScope": "context"
+        },
+        {
+          "@type": "schema:CreativeWork",
+          "name": "Non-Abelian string melting and thermalization in an open lattice gauge theory (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.04117v1",
+          "referenceType": "paper",
+          "referenceScope": "context"
+        },
+        {
+          "@type": "schema:CreativeWork",
+          "name": "On Quasiparticles within the Refined Gribov-Zwanziger Model (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.04423v1",
+          "referenceType": "paper",
+          "referenceScope": "context"
+        },
         {
           "@type": "schema:CreativeWork",
           "name": "A. Jaffe and E. Witten — Quantum Yang-Mills Theory",
@@ -1987,6 +2148,13 @@
         },
         {
           "@type": "schema:CreativeWork",
+          "name": "Uniform Partition-Function Estimates for Coulomb Modulated Energy at All Positive Temperatures (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.00867v1",
+          "referenceType": "paper",
+          "referenceScope": "context"
+        },
+        {
+          "@type": "schema:CreativeWork",
           "name": "R. Kotecký and D. Preiss — Cluster expansion for abstract polymer models",
           "url": "https://doi.org/10.1007/BF01010924",
           "referenceType": "paper",
@@ -2020,6 +2188,13 @@
         "Build finite probabilistic toy models for analytic or complexity barriers."
       ],
       "citation": [
+        {
+          "@type": "schema:CreativeWork",
+          "name": "Restricted typicality in non-equilibrium quantum many-body systems (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.07832v1",
+          "referenceType": "paper",
+          "referenceScope": "context"
+        },
         {
           "@type": "schema:CreativeWork",
           "name": "O. Kallenberg — Foundations of Modern Probability",
@@ -2102,6 +2277,20 @@
           "url": "https://arxiv.org/abs/1410.0664",
           "referenceType": "paper",
           "referenceScope": "claim"
+        },
+        {
+          "@type": "schema:CreativeWork",
+          "name": "Depth-1 expanders on the unitary group and applications (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.01605v1",
+          "referenceType": "paper",
+          "referenceScope": "context"
+        },
+        {
+          "@type": "schema:CreativeWork",
+          "name": "Quantum speed limits based on quantifiers of quantum-state texture (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.08752v1",
+          "referenceType": "paper",
+          "referenceScope": "context"
         },
         {
           "@type": "schema:CreativeWork",
@@ -5474,6 +5663,13 @@
       "citation": [
         {
           "@type": "schema:CreativeWork",
+          "name": "A note on the noncommutative Hodge conjecture for graded matrix factorizations (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.03784v1",
+          "referenceType": "paper",
+          "referenceScope": "context"
+        },
+        {
+          "@type": "schema:CreativeWork",
           "name": "Clay Mathematics Institute — Millennium Prize Problems",
           "url": "https://www.claymath.org/millennium-problems/",
           "referenceType": "official",
@@ -5615,6 +5811,20 @@
         "Formalize finite Euler-product and explicit-formula toy statements."
       ],
       "citation": [
+        {
+          "@type": "schema:CreativeWork",
+          "name": "A new proof that more than $2/3$ of the zeros of the Riemann zeta function are simple and on the critical line (v2, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.02882v2",
+          "referenceType": "paper",
+          "referenceScope": "context"
+        },
+        {
+          "@type": "schema:CreativeWork",
+          "name": "Simple critical zeros and distinct zeros of the Riemann zeta-function in short intervals (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.07918v1",
+          "referenceType": "paper",
+          "referenceScope": "context"
+        },
         {
           "@type": "schema:CreativeWork",
           "name": "Clay Mathematics Institute — Millennium Prize Problems",

@@ -1,5 +1,8 @@
 # PhysMath Knowledge Tree
 
+<!-- RESEARCH-UPDATE-2026-09-09 -->
+> **Research update · 9 September 2026:** [verified source cards, limits and next experiments](docs/research-updates/2026-09-09.md) · [machine-readable dossier](docs/research-updates/2026-09-09.json).
+
 [Versión en español](./README.es.md) · [Live research graph](https://lluiseriksson.github.io/physmath-knowledge-tree/) · [Learning map](https://lluiseriksson.github.io/physmath-knowledge-tree/learning.html) · [Research workbench](https://lluiseriksson.github.io/physmath-knowledge-tree/workbench.html) · [Evidence review](https://lluiseriksson.github.io/physmath-knowledge-tree/evidence.html) · [Change review](https://lluiseriksson.github.io/physmath-knowledge-tree/changes.html) · [Lean target audit](https://lluiseriksson.github.io/physmath-knowledge-tree/formalization.html) · [Research dossiers](https://lluiseriksson.github.io/physmath-knowledge-tree/dossiers.html) · [Reproducible runs](https://lluiseriksson.github.io/physmath-knowledge-tree/runs.html) · [Research capsules](https://lluiseriksson.github.io/physmath-knowledge-tree/capsules.html)
 
 A computable, evidence-labelled graph for exploring connections between physics, mathematics, open problems and Lean formalization targets. The repository also ships a bilingual prerequisite map, local research tools, evidence governance and a reproducible Lean-target audit queue.

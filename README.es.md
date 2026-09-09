@@ -1,5 +1,8 @@
 # Árbol de conocimiento Físico-Matemático
 
+<!-- RESEARCH-UPDATE-2026-09-09 -->
+> **Actualización · 9 de septiembre de 2026:** [fuentes verificadas y límites](docs/research-updates/2026-09-09.md) · [mapa entre repositorios](docs/research-updates/2026-09-09-cross-repository.json). Las conexiones propuestas no se presentan como teoremas.
+
 [English version](./README.md) · [Grafo de investigación](https://lluiseriksson.github.io/physmath-knowledge-tree/) · [Mapa de aprendizaje](https://lluiseriksson.github.io/physmath-knowledge-tree/learning.html) · [Banco de investigación](https://lluiseriksson.github.io/physmath-knowledge-tree/workbench.html) · [Revisión de evidencia](https://lluiseriksson.github.io/physmath-knowledge-tree/evidence.html) · [Revisión de cambios](https://lluiseriksson.github.io/physmath-knowledge-tree/changes.html) · [Auditoría Lean](https://lluiseriksson.github.io/physmath-knowledge-tree/formalization.html) · [Dossiers de investigación](https://lluiseriksson.github.io/physmath-knowledge-tree/dossiers.html) · [Ejecuciones reproducibles](https://lluiseriksson.github.io/physmath-knowledge-tree/runs.html) · [Cápsulas de investigación](https://lluiseriksson.github.io/physmath-knowledge-tree/capsules.html)
 
 Grafo computable y etiquetado por evidencia para explorar conexiones entre física, matemáticas, problemas abiertos y objetivos de formalización en Lean. La repo también incluye un mapa bilingüe, herramientas locales de investigación, gobernanza de evidencia y una auditoría reproducible de objetivos Lean.

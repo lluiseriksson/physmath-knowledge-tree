@@ -1,0 +1,1438 @@
+{
+  "schema_version": "1.0",
+  "reviewed_on": "2026-09-09",
+  "sources": [
+    {
+      "id": "arxiv:2609.02882",
+      "arxiv_id": "2609.02882",
+      "title": "A new proof that more than $2/3$ of the zeros of the Riemann zeta function are simple and on the critical line",
+      "authors": [
+        "Lamzouri, Youness"
+      ],
+      "first_submitted": "2026-09-02",
+      "latest_revision": "2026-09-08",
+      "reviewed_version": "v2",
+      "url": "https://arxiv.org/abs/2609.02882v2",
+      "doi": "10.48550/arXiv.2609.02882",
+      "verified_on": "2026-09-09",
+      "recency": "revised-in-trailing-week",
+      "publication_status": "preprint; peer-review status not established in this sweep",
+      "evidence_level": "literature",
+      "review_depth": "v2: Theorem 1.1 and Proposition 2.1; submission history",
+      "source_claim": "Lamzouri reports unconditional asymptotic proportions above 67.25% for simple critical-line zeros and above 83.62% for distinct zeros. Version 2 adds an 88.76% bound for zeros that are simple OR on the critical line, plus a bound on the average of those two proportions. The mechanism is a Hilbert-space kernel inequality.",
+      "limits": "The union bound is not an 88.76% critical-line bound. None of these proportions proves RH or full prime-resolvent positivity. Version 2 was posted on 8 September; the first submission was 2 September.",
+      "tags": [
+        "zeta",
+        "positivity",
+        "pair-correlation",
+        "hilbert-space"
+      ],
+      "abstract_page_sha256": "9d69b130383f67c9c4dddfc31643e2d3246767126022b15043fd0da1166e93a8",
+      "reviewed_full_text_sha256": "7be30233c820783a4771d33318e2c29ad782ce4fc950012911b787cb870f7ff6",
+      "reuse": "Bibliographic metadata and original synthesis only; no permission to train on linked full text is inferred."
+    },
+    {
+      "id": "arxiv:2609.07918",
+      "arxiv_id": "2609.07918",
+      "title": "Simple critical zeros and distinct zeros of the Riemann zeta-function in short intervals",
+      "authors": [
+        "Wang, Biao"
+      ],
+      "first_submitted": "2026-09-07",
+      "latest_revision": "2026-09-07",
+      "reviewed_version": "v1",
+      "url": "https://arxiv.org/abs/2609.07918v1",
+      "doi": "10.48550/arXiv.2609.07918",
+      "verified_on": "2026-09-09",
+      "recency": "new-this-calendar-week",
+      "publication_status": "preprint; peer-review status not established in this sweep",
+      "evidence_level": "literature",
+      "review_depth": "v1: Theorems 1.1 and 2.2; Proposition 2.1",
+      "source_claim": "Wang adapts the kernel method to intervals of length T^theta. Theorem 1.1 gives theta-dependent lower bounds; Theorem 2.2 supplies a short-interval pair-correlation estimate.",
+      "limits": "The useful bound depends on theta and is asymptotic. It is not the global 67.25% bound for every short interval or a certified finite-height zero count.",
+      "tags": [
+        "zeta",
+        "local-global",
+        "pair-correlation"
+      ],
+      "abstract_page_sha256": "e6eff49c01778ad6a6e5008230cdc8026b4ef2603108482209975a6f35cd164d",
+      "reviewed_full_text_sha256": "07ceef8d0b79dde80c639873430911ff1685b1721326b0ece9ef8aa5744045a8",
+      "reuse": "Bibliographic metadata and original synthesis only; no permission to train on linked full text is inferred."
+    },
+    {
+      "id": "arxiv:2609.00537",
+      "arxiv_id": "2609.00537",
+      "title": "Explicit Exponential Sum Estimates and Approximate Functional Equations for the Zeta Function",
+      "authors": [
+        "Dhiman, Natasha",
+        "Kadiri, Habiba",
+        "Quesada-Herrera, Emily"
+      ],
+      "first_submitted": "2026-09-01",
+      "latest_revision": "2026-09-01",
+      "reviewed_version": "v1",
+      "url": "https://arxiv.org/abs/2609.00537v1",
+      "doi": "10.48550/arXiv.2609.00537",
+      "verified_on": "2026-09-09",
+      "recency": "background",
+      "publication_status": "preprint; peer-review status not established in this sweep",
+      "evidence_level": "literature",
+      "review_depth": "Abstract and submission history",
+      "source_claim": "Explicit exponential-sum estimates sharpen error terms in approximate functional equations for zeta in specified ranges.",
+      "limits": "The remainder belongs to an approximate functional equation. It cannot replace this programme's prime-tail majorant without an exact observable and parameter translation. First posted 1 September.",
+      "tags": [
+        "zeta",
+        "explicit-constants",
+        "error-budgets"
+      ],
+      "abstract_page_sha256": "cd31458196451174577474c49474a452d1c46d60745d61c33572e12427e5a7e4",
+      "reviewed_full_text_sha256": null,
+      "reuse": "Bibliographic metadata and original synthesis only; no permission to train on linked full text is inferred."
+    },
+    {
+      "id": "arxiv:2609.09033",
+      "arxiv_id": "2609.09033",
+      "title": "Semidefinite extension complexity of the separable set, with applications to approximate disentanglers",
+      "authors": [
+        "Gharibian, Sevag",
+        "Hecht, Carsten",
+        "Rudolph, Dorian"
+      ],
+      "first_submitted": "2026-09-08",
+      "latest_revision": "2026-09-08",
+      "reviewed_version": "v1",
+      "url": "https://arxiv.org/abs/2609.09033v1",
+      "doi": "10.48550/arXiv.2609.09033",
+      "verified_on": "2026-09-09",
+      "recency": "new-this-calendar-week",
+      "publication_status": "preprint; peer-review status not established in this sweep",
+      "evidence_level": "literature",
+      "review_depth": "v1: introduction, Theorem 1.1, Corollary 1.2, Section 3 and formalization links",
+      "source_claim": "Gharibian, Hecht and Rudolph give dimension- and accuracy-dependent lower bounds for semidefinite representations of separable-state optimization in the HNW model. The paper links a companion Lean development.",
+      "limits": "The common feasible region and objective-independent embedding are essential. This is not a lower bound for every SDP or for unrestricted SAT circuits. The paper credits a stronger concurrent disentangler result to Bostanci et al.; its SDP result has a distinct scope. External Lean proofs were not rebuilt here.",
+      "tags": [
+        "sdp",
+        "complexity",
+        "quantum-information",
+        "positivity"
+      ],
+      "abstract_page_sha256": "6704d827f366629248a30d0017209930487fcadf51ade39e2b38c4181d311fb4",
+      "reviewed_full_text_sha256": "c19e3f8ed52b8ad1283d56f96ad826d54d779a5a0be161402de83465ff7b563b",
+      "reuse": "Bibliographic metadata and original synthesis only; no permission to train on linked full text is inferred."
+    },
+    {
+      "id": "arxiv:2609.02865",
+      "arxiv_id": "2609.02865",
+      "title": "A quantum oracle separation between QMA(2) and QMA",
+      "authors": [
+        "Bostanci, John",
+        "Grewal, Sabee",
+        "Haferkamp, Jonas",
+        "Huang, Andrew",
+        "Hwang, Yeongwoo",
+        "Natarajan, Anand",
+        "Nirkhe, Chinmay"
+      ],
+      "first_submitted": "2026-09-02",
+      "latest_revision": "2026-09-02",
+      "reviewed_version": "v1",
+      "url": "https://arxiv.org/abs/2609.02865v1",
+      "doi": "10.48550/arXiv.2609.02865",
+      "verified_on": "2026-09-09",
+      "recency": "background",
+      "publication_status": "preprint; peer-review status not established in this sweep",
+      "evidence_level": "literature",
+      "review_depth": "Abstract and submission history",
+      "source_claim": "Bostanci and collaborators report a quantum-oracle separation of QMA(2) from QMA and derive exponential input-size requirements for approximate disentanglers with total error below one.",
+      "limits": "Oracle separation is not an unrelativized class separation. Universal coverage of separable states is much stronger than recovery of one reference state or a restricted code. First posted 2 September.",
+      "tags": [
+        "quantum-information",
+        "complexity",
+        "oracle",
+        "recovery"
+      ],
+      "abstract_page_sha256": "5dbfd3097348097f9b5481637c66edaf74372f5bdbf9a6cc304b500614a761e2",
+      "reviewed_full_text_sha256": "4116752d155e1cfb96cd5535960cd139c6c42ba1f7038e71d635c2dc6f10b12e",
+      "reuse": "Bibliographic metadata and original synthesis only; no permission to train on linked full text is inferred."
+    },
+    {
+      "id": "arxiv:2609.02687",
+      "arxiv_id": "2609.02687",
+      "title": "Quantum Meta-Complexity Is All You Need: Characterizing One-Way Puzzles via Time-Bounded Kolmogorov Complexity",
+      "authors": [
+        "Saberikamarposhti, Morteza"
+      ],
+      "first_submitted": "2026-09-02",
+      "latest_revision": "2026-09-02",
+      "reviewed_version": "v1",
+      "url": "https://arxiv.org/abs/2609.02687v1",
+      "doi": "10.48550/arXiv.2609.02687",
+      "verified_on": "2026-09-09",
+      "recency": "background",
+      "publication_status": "preprint; peer-review status not established in this sweep",
+      "evidence_level": "literature",
+      "review_depth": "Abstract and submission history",
+      "source_claim": "A quantum time-bounded meta-complexity programme connects one-way puzzles to a subexponential-time gap problem and isolates a polynomial-time coding conjecture.",
+      "limits": "Keep the subexponential theorem separate from the conjectural polynomial-time extension. Neither provides an unrestricted Boolean circuit lower bound for SAT. First posted 2 September.",
+      "tags": [
+        "complexity",
+        "quantum-information",
+        "meta-complexity"
+      ],
+      "abstract_page_sha256": "c18abeb7837f1aa422e926a96b0f4c043ccd526ad342120e46e67e81ef2b5f58",
+      "reviewed_full_text_sha256": null,
+      "reuse": "Bibliographic metadata and original synthesis only; no permission to train on linked full text is inferred."
+    },
+    {
+      "id": "arxiv:2609.03784",
+      "arxiv_id": "2609.03784",
+      "title": "A note on the noncommutative Hodge conjecture for graded matrix factorizations",
+      "authors": [
+        "Lin, Xun",
+        "Zhang, Shizhuo"
+      ],
+      "first_submitted": "2026-09-03",
+      "latest_revision": "2026-09-03",
+      "reviewed_version": "v1",
+      "url": "https://arxiv.org/abs/2609.03784v1",
+      "doi": "10.48550/arXiv.2609.03784",
+      "verified_on": "2026-09-09",
+      "recency": "new-in-trailing-week",
+      "publication_status": "preprint; peer-review status not established in this sweep",
+      "evidence_level": "literature",
+      "review_depth": "v1: Theorem 1.1, Corollary 1.2, Lemma 3.1 and Proposition 4.1",
+      "source_claim": "Lin and Zhang report rational Hodge results for sums of independently very general squarefree binary forms, with m>=2 and d>=7. Explicit matrix factorizations supply classes; monodromy controls their exhaustion.",
+      "limits": "Theorem 1.1 and Corollary 1.2 concern this particular very-general family. They do not settle general rational Hodge, identify every special parameter, or construct the repository's prescribed clean-nodal detector.",
+      "tags": [
+        "hodge",
+        "matrix-factorizations",
+        "monodromy",
+        "algebraic-geometry"
+      ],
+      "abstract_page_sha256": "82e3e43b3c449cca283b249bde39323b433a2d7bdbb968c7459268753930f78c",
+      "reviewed_full_text_sha256": "edf1c0891ad731af1e5d52319b28a25dbe84e75dc788a770189a0e7de468bf8b",
+      "reuse": "Bibliographic metadata and original synthesis only; no permission to train on linked full text is inferred."
+    },
+    {
+      "id": "arxiv:2609.07804",
+      "arxiv_id": "2609.07804",
+      "title": "$F$-nilpotence and Hodge filtrations beyond isolated singularities",
+      "authors": [
+        "Dirks, Bradley",
+        "Witaszek, Jakub"
+      ],
+      "first_submitted": "2026-09-07",
+      "latest_revision": "2026-09-07",
+      "reviewed_version": "v1",
+      "url": "https://arxiv.org/abs/2609.07804v1",
+      "doi": "10.48550/arXiv.2609.07804",
+      "verified_on": "2026-09-09",
+      "recency": "new-this-calendar-week",
+      "publication_status": "preprint; peer-review status not established in this sweep",
+      "evidence_level": "literature",
+      "review_depth": "Abstract and submission history",
+      "source_claim": "Dirks and Witaszek extend Hodge-theoretic descriptions of open F-nilpotent and weakly F-nilpotent type beyond isolated singularities.",
+      "limits": "Only one implication is unconditional; the converse uses weak ordinarity. Singularity classification does not supply a prescribed rational Hodge class or its nonzero detector pairing.",
+      "tags": [
+        "hodge",
+        "singularities",
+        "characteristic-p"
+      ],
+      "abstract_page_sha256": "2f422c9f518a407e9ad98525931af8618bd1dc0656fbd5fe2b194698c13d1918",
+      "reviewed_full_text_sha256": null,
+      "reuse": "Bibliographic metadata and original synthesis only; no permission to train on linked full text is inferred."
+    },
+    {
+      "id": "arxiv:2609.06829",
+      "arxiv_id": "2609.06829",
+      "title": "A unified family of counterexamples to Batyrev's non-negativity conjecture on stringy Hodge numbers",
+      "authors": [
+        "Dais, Dimitrios I."
+      ],
+      "first_submitted": "2026-09-06",
+      "latest_revision": "2026-09-06",
+      "reviewed_version": "v1",
+      "url": "https://arxiv.org/abs/2609.06829v1",
+      "doi": "10.48550/arXiv.2609.06829",
+      "verified_on": "2026-09-09",
+      "recency": "new-in-trailing-week",
+      "publication_status": "preprint; peer-review status not established in this sweep",
+      "evidence_level": "literature",
+      "review_depth": "Abstract and submission history",
+      "source_claim": "Dais organizes counterexamples to stringy-Hodge non-negativity in a parameterized hypersurface family and relates negative entries to primitive middle cohomology.",
+      "limits": "Stringy Hodge numbers of singular spaces and the standard rational Hodge conjecture for smooth projective varieties are different statements. This is a useful degeneration stress test, not a counterexample to rational Hodge.",
+      "tags": [
+        "hodge",
+        "singularities",
+        "counterexamples"
+      ],
+      "abstract_page_sha256": "b2afed194d592f68a7163e8829429fc847afcc8c6ecb8c69f85ec586f9a069df",
+      "reviewed_full_text_sha256": null,
+      "reuse": "Bibliographic metadata and original synthesis only; no permission to train on linked full text is inferred."
+    },
+    {
+      "id": "arxiv:2608.08442",
+      "arxiv_id": "2608.08442",
+      "title": "Fundamental forms and infinitesimal symmetries of projective varieties",
+      "authors": [
+        "Hwang, Jun-Muk",
+        "Li, Qifeng"
+      ],
+      "first_submitted": "2026-08-09",
+      "latest_revision": "2026-08-09",
+      "reviewed_version": "v1",
+      "url": "https://arxiv.org/abs/2608.08442v1",
+      "doi": "10.48550/arXiv.2608.08442",
+      "verified_on": "2026-09-09",
+      "recency": "background",
+      "publication_status": "preprint; peer-review status not established in this sweep",
+      "evidence_level": "literature",
+      "review_depth": "Abstract and submission history",
+      "source_claim": "Hwang and Li bound the dimension of the linear automorphism group of a projective variety using fundamental forms at a general point, with equality characterized by Euler symmetry.",
+      "limits": "A general-point symmetry bound does not construct a special finite tangent-absorbing configuration. Higher fundamental forms and the characteristic assumptions must be retained. First posted 9 August.",
+      "tags": [
+        "tangent-spaces",
+        "fundamental-forms",
+        "algebraic-geometry"
+      ],
+      "abstract_page_sha256": "cdb06d74240b597fff3c0f6c9ca26acda4bdf556989b2d04a1136310cae08c5b",
+      "reviewed_full_text_sha256": "8be7adf1d35ffaa06b3dacf8aa576666cf86f15d306b11a7ddeaf9d8a8066725",
+      "reuse": "Bibliographic metadata and original synthesis only; no permission to train on linked full text is inferred."
+    },
+    {
+      "id": "arxiv:2608.27267",
+      "arxiv_id": "2608.27267",
+      "title": "Efficient Quantum Simulations of Yang-Mills theory with Maximal-tree Gauge",
+      "authors": [
+        "Li, Tianyin",
+        "Li, Ying-Ying",
+        "Wang, Xiaoyang",
+        "Xing, Hongxi"
+      ],
+      "first_submitted": "2026-08-27",
+      "latest_revision": "2026-08-27",
+      "reviewed_version": "v1",
+      "url": "https://arxiv.org/abs/2608.27267v1",
+      "doi": "10.48550/arXiv.2608.27267",
+      "verified_on": "2026-09-09",
+      "recency": "background",
+      "publication_status": "preprint; peer-review status not established in this sweep",
+      "evidence_level": "literature",
+      "review_depth": "v1: abstract and maximal-tree gauge construction",
+      "source_claim": "Li and collaborators use maximal-tree gauge and field-amplitude digitization to obtain polynomial resource bounds for Hamiltonian Yang-Mills simulation through QSVT.",
+      "limits": "Hamiltonian simulation complexity is distinct from an exact Haar edge-coordinate equivalence, Euclidean reflection positivity, and a continuum mass gap. First posted 27 August; a September news mention is not a new submission.",
+      "tags": [
+        "gauge-fixing",
+        "spanning-trees",
+        "yang-mills",
+        "quantum-simulation"
+      ],
+      "abstract_page_sha256": "8fa19bcafeebf9e933c70192ace6a9b2ff01e8e6d04fd2e98295d10ef400f233",
+      "reviewed_full_text_sha256": "05f7e0cd23badc54c61dc3bafa5237f4126a6c2bcdda0d97b621cd3bb719dd1c",
+      "reuse": "Bibliographic metadata and original synthesis only; no permission to train on linked full text is inferred."
+    },
+    {
+      "id": "arxiv:2609.04117",
+      "arxiv_id": "2609.04117",
+      "title": "Non-Abelian string melting and thermalization in an open lattice gauge theory",
+      "authors": [
+        "Verde, Erick Parra",
+        "Cataldi, Giovanni",
+        "Kühn, Stefan",
+        "Magnifico, Giuseppe",
+        "Halimeh, Jad C."
+      ],
+      "first_submitted": "2026-09-03",
+      "latest_revision": "2026-09-03",
+      "reviewed_version": "v1",
+      "url": "https://arxiv.org/abs/2609.04117v1",
+      "doi": "10.48550/arXiv.2609.04117",
+      "verified_on": "2026-09-09",
+      "recency": "new-in-trailing-week",
+      "publication_status": "preprint; peer-review status not established in this sweep",
+      "evidence_level": "literature",
+      "review_depth": "v1: model, thermalization discussion and strong-dephasing reduction",
+      "source_claim": "A tensor-network study couples 1+1D SU(2) gauge theory with matter to a gauge-preserving Lindblad bath. It finds nonmonotonic relaxation and derives an exclusion-process description in a strong-dephasing limit.",
+      "limits": "This is an open-system finite/truncated lattice setting, not pure 4D Euclidean Yang-Mills. A Liouvillian relaxation rate is not automatically a Hamiltonian gap, and the strong-dephasing expansion has its own regime.",
+      "tags": [
+        "yang-mills",
+        "lindblad",
+        "zeno",
+        "tensor-networks"
+      ],
+      "abstract_page_sha256": "5bd8e4f32445c083e75584d29d5ef41d78ed422d5c848b77e706f123fb496a82",
+      "reviewed_full_text_sha256": "7eec747973d16173df4cf1775f12720a3e7ba56b4fcdf158063e15d681b8fa00",
+      "reuse": "Bibliographic metadata and original synthesis only; no permission to train on linked full text is inferred."
+    },
+    {
+      "id": "arxiv:2609.04423",
+      "arxiv_id": "2609.04423",
+      "title": "On Quasiparticles within the Refined Gribov-Zwanziger Model",
+      "authors": [
+        "Garcia, Felipe F.",
+        "Capri, Marcio A. L.",
+        "Mintz, Bruno W."
+      ],
+      "first_submitted": "2026-09-03",
+      "latest_revision": "2026-09-03",
+      "reviewed_version": "v1",
+      "url": "https://arxiv.org/abs/2609.04423v1",
+      "doi": "10.48550/arXiv.2609.04423",
+      "verified_on": "2026-09-09",
+      "recency": "new-in-trailing-week",
+      "publication_status": "preprint; peer-review status not established in this sweep",
+      "evidence_level": "literature",
+      "review_depth": "Abstract and submission history",
+      "source_claim": "The refined Gribov-Zwanziger effective model is reexamined through PT symmetry, with a proposed interpretation of quadratic excitations in the real-mass-pole case.",
+      "limits": "An effective gauge-fixed propagator and real poles do not establish reflection positivity for gauge-invariant Wilson observables, OS reconstruction, or a physical mass gap.",
+      "tags": [
+        "yang-mills",
+        "reflection-positivity",
+        "effective-models"
+      ],
+      "abstract_page_sha256": "ffa44376c2a8286387edbdfcfbda4338224a2bf0cf45e1e3715bf01cc1af8b10",
+      "reviewed_full_text_sha256": null,
+      "reuse": "Bibliographic metadata and original synthesis only; no permission to train on linked full text is inferred."
+    },
+    {
+      "id": "arxiv:2609.01605",
+      "arxiv_id": "2609.01605",
+      "title": "Depth-1 expanders on the unitary group and applications",
+      "authors": [
+        "Anshu, Anurag",
+        "Balasubramanian, Shankar",
+        "Haferkamp, Jonas",
+        "Harrow, Aram W.",
+        "Tan, Xinyu"
+      ],
+      "first_submitted": "2026-09-01",
+      "latest_revision": "2026-09-01",
+      "reviewed_version": "v1",
+      "url": "https://arxiv.org/abs/2609.01605v1",
+      "doi": "10.48550/arXiv.2609.01605",
+      "verified_on": "2026-09-09",
+      "recency": "background",
+      "publication_status": "preprint; peer-review status not established in this sweep",
+      "evidence_level": "literature",
+      "review_depth": "Abstract and submission history",
+      "source_claim": "Anshu and collaborators construct constant-degree, constant-gap quantum expanders with depth-one local circuit realizations and apply them to one-dimensional Hamiltonians with an entanglement-gap relation.",
+      "limits": "An expander gap, a transfer gap and a many-body Hamiltonian gap are different operators. Track dimension, locality and the definition of gap before translating. First posted 1 September.",
+      "tags": [
+        "spectral-gap",
+        "quantum-information",
+        "locality"
+      ],
+      "abstract_page_sha256": "a4375a297a32c261481633f61ce35da65429fedec138e6d5cf00e6312051d8db",
+      "reviewed_full_text_sha256": null,
+      "reuse": "Bibliographic metadata and original synthesis only; no permission to train on linked full text is inferred."
+    },
+    {
+      "id": "arxiv:2609.08169",
+      "arxiv_id": "2609.08169",
+      "title": "On overlap concentration in the Curie-Weiss Random Field model",
+      "authors": [
+        "Li, Yutong",
+        "Sandhu, Juspreet Singh",
+        "Shi, Jonathan"
+      ],
+      "first_submitted": "2026-09-08",
+      "latest_revision": "2026-09-08",
+      "reviewed_version": "v1",
+      "url": "https://arxiv.org/abs/2609.08169v1",
+      "doi": "10.48550/arXiv.2609.08169",
+      "verified_on": "2026-09-09",
+      "recency": "new-this-calendar-week",
+      "publication_status": "preprint; peer-review status not established in this sweep",
+      "evidence_level": "literature",
+      "review_depth": "Abstract and submission history",
+      "source_claim": "A Curie-Weiss random-field result gives sub-Gaussian overlap tails under beta<1 and a specifically matched Gaussian field law, via Laplace analysis and a moment-generating-function bootstrap.",
+      "limits": "The field law and matching condition are part of the result. Mean-field replica overlap concentration does not yield spatial covariance decay or Yang-Mills small-field estimates.",
+      "tags": [
+        "gaussian",
+        "concentration",
+        "moment-bounds"
+      ],
+      "abstract_page_sha256": "9b3830d9a99e27d44203704b004b9c090710c65459a9a551461701bff57bbcd6",
+      "reviewed_full_text_sha256": null,
+      "reuse": "Bibliographic metadata and original synthesis only; no permission to train on linked full text is inferred."
+    },
+    {
+      "id": "arxiv:2609.08132",
+      "arxiv_id": "2609.08132",
+      "title": "Thick points of log-correlated Gaussian fields do not depend on the mollifier",
+      "authors": [
+        "Ambrose, Kyle"
+      ],
+      "first_submitted": "2026-09-08",
+      "latest_revision": "2026-09-08",
+      "reviewed_version": "v1",
+      "url": "https://arxiv.org/abs/2609.08132v1",
+      "doi": "10.48550/arXiv.2609.08132",
+      "verified_on": "2026-09-09",
+      "recency": "new-this-calendar-week",
+      "publication_status": "preprint; peer-review status not established in this sweep",
+      "evidence_level": "literature",
+      "review_depth": "Abstract and submission history",
+      "source_claim": "Ambrose reports almost-sure independence of thick-point sets from admissible mollifiers for log-correlated Gaussian fields, including a two-dimensional domain GFF extension.",
+      "limits": "Admissibility conditions and the distribution-valued field matter. This is not a dimension-uniform finite massive covariance-decay theorem or a Wilson-flow smoothing bound.",
+      "tags": [
+        "gaussian",
+        "regularization",
+        "universality"
+      ],
+      "abstract_page_sha256": "4127d34a15d06ccbce0738f60a733f752cbd28932da58c0a1985668f07ce8dd1",
+      "reviewed_full_text_sha256": null,
+      "reuse": "Bibliographic metadata and original synthesis only; no permission to train on linked full text is inferred."
+    },
+    {
+      "id": "arxiv:2609.04789",
+      "arxiv_id": "2609.04789",
+      "title": "Height fluctuation for Lozenge Tilings of Polygons",
+      "authors": [
+        "Huang, Jiaoyang"
+      ],
+      "first_submitted": "2026-09-04",
+      "latest_revision": "2026-09-04",
+      "reviewed_version": "v1",
+      "url": "https://arxiv.org/abs/2609.04789v1",
+      "doi": "10.48550/arXiv.2609.04789",
+      "verified_on": "2026-09-09",
+      "recency": "new-in-trailing-week",
+      "publication_status": "preprint; peer-review status not established in this sweep",
+      "evidence_level": "literature",
+      "review_depth": "Abstract and submission history",
+      "source_claim": "Huang proves Gaussian-free-field fluctuations for lozenge tilings of a specified class of simply connected polygons, using uniform inverse-Kasteleyn asymptotics.",
+      "limits": "Connected liquid region and non-forcing boundary assumptions are required. A massless GFF scaling limit cannot supply exponential decay for a massive finite Gaussian model.",
+      "tags": [
+        "gaussian",
+        "scaling-limits",
+        "covariance"
+      ],
+      "abstract_page_sha256": "29464bb98123719332aca86ad79dd61146ad20f0be6a70d416c263b03537a34f",
+      "reviewed_full_text_sha256": null,
+      "reuse": "Bibliographic metadata and original synthesis only; no permission to train on linked full text is inferred."
+    },
+    {
+      "id": "arxiv:2609.00867",
+      "arxiv_id": "2609.00867",
+      "title": "Uniform Partition-Function Estimates for Coulomb Modulated Energy at All Positive Temperatures",
+      "authors": [
+        "Wang, Zhenfu",
+        "Zhao, Xianliang"
+      ],
+      "first_submitted": "2026-09-01",
+      "latest_revision": "2026-09-01",
+      "reviewed_version": "v1",
+      "url": "https://arxiv.org/abs/2609.00867v1",
+      "doi": "10.48550/arXiv.2609.00867",
+      "verified_on": "2026-09-09",
+      "recency": "background",
+      "publication_status": "preprint; peer-review status not established in this sweep",
+      "evidence_level": "literature",
+      "review_depth": "Abstract and submission history",
+      "source_claim": "Wang and Zhao report particle-number-uniform partition-function bounds for centered Coulomb-type modulated energies in a locally square-integrable regime, with a second-chaos Fredholm-determinant limit.",
+      "limits": "Positive-real-parameter integrability does not establish complex zero-freeness. Particle-number uniformity is not automatically RG-scale, support or volume uniformity in the Yang-Mills activity norm. First posted 1 September.",
+      "tags": [
+        "partition-functions",
+        "uniformity",
+        "gaussian",
+        "fredholm-determinants"
+      ],
+      "abstract_page_sha256": "d577ac4e265c8e5618bd4160f3845a6d6bb559fd37c51e308b27b06394f586db",
+      "reviewed_full_text_sha256": null,
+      "reuse": "Bibliographic metadata and original synthesis only; no permission to train on linked full text is inferred."
+    },
+    {
+      "id": "arxiv:2606.21062",
+      "arxiv_id": "2606.21062",
+      "title": "The prescribed Hermitian-Yang-Mills flow I",
+      "authors": [
+        "Xiong, Zhiyao",
+        "Yang, Xaokui",
+        "Yau, Shing-Tung"
+      ],
+      "first_submitted": "2026-06-19",
+      "latest_revision": "2026-09-05",
+      "reviewed_version": "v2",
+      "url": "https://arxiv.org/abs/2606.21062v2",
+      "doi": "10.48550/arXiv.2606.21062",
+      "verified_on": "2026-09-09",
+      "recency": "revised-in-trailing-week",
+      "publication_status": "preprint; peer-review status not established in this sweep",
+      "evidence_level": "literature",
+      "review_depth": "Abstract and submission history",
+      "source_claim": "The prescribed Hermitian-Yang-Mills flow paper establishes convergence for a class of prescribed Hermitian tensors; a parabolic comparison principle supplies the uniform C0 estimate.",
+      "limits": "This is a flow of Hermitian metrics on holomorphic bundles, not Wilson lattice gradient flow. Read the precise tensor and manifold assumptions before importing a comparison principle. Version 2 is dated 5 September; version 1 is from June.",
+      "tags": [
+        "yang-mills-flow",
+        "parabolic",
+        "comparison-principle"
+      ],
+      "abstract_page_sha256": "486c85fb8b7b5ed192a38759dc73e4aa57487be039590c1d8c0afc8dff40cbc0",
+      "reviewed_full_text_sha256": "7e7ad5d1fef2e606ec906f2d40edb7f9580211571e59a51302f06a567276736c",
+      "reuse": "Bibliographic metadata and original synthesis only; no permission to train on linked full text is inferred."
+    },
+    {
+      "id": "arxiv:2606.21073",
+      "arxiv_id": "2606.21073",
+      "title": "The prescribed Hermitian-Yang-Mills flow II",
+      "authors": [
+        "Xiong, Zhiyao",
+        "Yang, Xiaokui",
+        "Yau, Shing-Tung"
+      ],
+      "first_submitted": "2026-06-19",
+      "latest_revision": "2026-06-19",
+      "reviewed_version": "v1",
+      "url": "https://arxiv.org/abs/2606.21073v1",
+      "doi": "10.48550/arXiv.2606.21073",
+      "verified_on": "2026-09-09",
+      "recency": "background",
+      "publication_status": "preprint; peer-review status not established in this sweep",
+      "evidence_level": "literature",
+      "review_depth": "Abstract and submission history",
+      "source_claim": "The second prescribed Hermitian-Yang-Mills flow paper gives a Donaldson-Uhlenbeck-Yau analogue with an explicit subsheaf degree condition and convergence to a prescribed curvature tensor.",
+      "limits": "Its subsheaf and positivity hypotheses cannot be dropped or replaced by ordinary Wilson-action monotonicity. First posted in June; included only as a companion to the newly revised first paper.",
+      "tags": [
+        "yang-mills-flow",
+        "geometry",
+        "convergence"
+      ],
+      "abstract_page_sha256": "b717a7645c044c1b1ed021145b2a3a8b91f9326816de2cb7e8a0002bf1b3a41b",
+      "reviewed_full_text_sha256": null,
+      "reuse": "Bibliographic metadata and original synthesis only; no permission to train on linked full text is inferred."
+    },
+    {
+      "id": "arxiv:2609.04905",
+      "arxiv_id": "2609.04905",
+      "title": "Ancilla mediated steady-state engineering in open quantum systems",
+      "authors": [
+        "Pal, Soham",
+        "Hovhannisyan, Karen",
+        "Porat, Omri",
+        "Dutta, Shovan",
+        "Anders, Janet",
+        "Knowles, Helena"
+      ],
+      "first_submitted": "2026-09-04",
+      "latest_revision": "2026-09-04",
+      "reviewed_version": "v1",
+      "url": "https://arxiv.org/abs/2609.04905v1",
+      "doi": "10.48550/arXiv.2609.04905",
+      "verified_on": "2026-09-09",
+      "recency": "new-in-trailing-week",
+      "publication_status": "preprint; peer-review status not established in this sweep",
+      "evidence_level": "literature",
+      "review_depth": "v1: protocol and thermodynamic accounting",
+      "source_claim": "An NV-centre ancilla experiment implements collision-model reservoir engineering, including anti-thermalization and a steady-state quantum battery. Work, heat and coherence are tracked per collision.",
+      "limits": "Pulsed interactions and ancilla resets need not define the same fixed additive GKLS control class. A mixed steady-state battery is not exact maintenance of a rank-deficient target at zero reset cost.",
+      "tags": [
+        "lindblad",
+        "control",
+        "thermodynamics",
+        "collision-models"
+      ],
+      "abstract_page_sha256": "c93bf40d0379025e5b692f5970c1daf5b4ad4721fcb80e1ce5f983e8c6c454f7",
+      "reviewed_full_text_sha256": "6177b0f0f4887a3f8f598104b23a15fbac0623be1e8676ce2026d34208f0d90f",
+      "reuse": "Bibliographic metadata and original synthesis only; no permission to train on linked full text is inferred."
+    },
+    {
+      "id": "arxiv:2609.08752",
+      "arxiv_id": "2609.08752",
+      "title": "Quantum speed limits based on quantifiers of quantum-state texture",
+      "authors": [
+        "Xie, Yuhang",
+        "Chu, Yanjun",
+        "Cui, Chenyang",
+        "Fei, Shao-Ming"
+      ],
+      "first_submitted": "2026-09-08",
+      "latest_revision": "2026-09-08",
+      "reviewed_version": "v1",
+      "url": "https://arxiv.org/abs/2609.08752v1",
+      "doi": "10.48550/arXiv.2609.08752",
+      "verified_on": "2026-09-09",
+      "recency": "new-this-calendar-week",
+      "publication_status": "preprint; peer-review status not established in this sweep",
+      "evidence_level": "literature",
+      "review_depth": "Abstract and submission history",
+      "source_claim": "Xie and collaborators derive quantum speed limits using quantum-state texture measures and examine dephasing, dissipation and amplitude damping.",
+      "limits": "A bound on minimum evolution time is not a lower bound on stationary maintenance power or an attainable reset protocol. Metric and endpoint rank matter.",
+      "tags": [
+        "quantum-speed-limit",
+        "control",
+        "dissipation"
+      ],
+      "abstract_page_sha256": "5f1f0f86df958a754fb935404f60048d5a04bdedf41b7e3ffb28b3e12ae24ec1",
+      "reviewed_full_text_sha256": null,
+      "reuse": "Bibliographic metadata and original synthesis only; no permission to train on linked full text is inferred."
+    },
+    {
+      "id": "arxiv:2608.31001",
+      "arxiv_id": "2608.31001",
+      "title": "Work Extraction Across a Thermodynamic Hierarchy in Quantum Many-Body Systems",
+      "authors": [
+        "Hokkyo, Akihiro",
+        "Ueda, Masahito"
+      ],
+      "first_submitted": "2026-08-31",
+      "latest_revision": "2026-08-31",
+      "reviewed_version": "v1",
+      "url": "https://arxiv.org/abs/2608.31001v1",
+      "doi": "10.48550/arXiv.2608.31001",
+      "verified_on": "2026-09-09",
+      "recency": "background",
+      "publication_status": "preprint; peer-review status not established in this sweep",
+      "evidence_level": "literature",
+      "review_depth": "Abstract and submission history",
+      "source_claim": "Hokkyo and Ueda formulate a hierarchy of allowed operations for work extraction and bound additional work through differences of entropy densities or mutual-information density.",
+      "limits": "An extraction advantage is not an achievable maintenance-power baseline. Specify spatial access, control duration and connectivity. First posted 31 August.",
+      "tags": [
+        "thermodynamics",
+        "locality",
+        "mutual-information"
+      ],
+      "abstract_page_sha256": "2b4d3c17345aff8f12d0596945341e101914d7a9dc3457b32e5763e5bd5387d7",
+      "reviewed_full_text_sha256": null,
+      "reuse": "Bibliographic metadata and original synthesis only; no permission to train on linked full text is inferred."
+    },
+    {
+      "id": "arxiv:2609.07832",
+      "arxiv_id": "2609.07832",
+      "title": "Restricted typicality in non-equilibrium quantum many-body systems",
+      "authors": [
+        "Pawlik, Konrad",
+        "Sierant, Piotr",
+        "Zakrzewski, Jakub"
+      ],
+      "first_submitted": "2026-09-07",
+      "latest_revision": "2026-09-07",
+      "reviewed_version": "v1",
+      "url": "https://arxiv.org/abs/2609.07832v1",
+      "doi": "10.48550/arXiv.2609.07832",
+      "verified_on": "2026-09-09",
+      "recency": "new-this-calendar-week",
+      "publication_status": "preprint; peer-review status not established in this sweep",
+      "evidence_level": "literature",
+      "review_depth": "Abstract and submission history",
+      "source_claim": "Restricted typicality reconstructs nonlinear state diagnostics from slow modes in non-equilibrium many-body systems with separated time scales.",
+      "limits": "Reconstruction of entropy diagnostics is not a uniform quantum recovery channel. Transport and time-scale separation do not prove Davies block invariance or a maintenance exponent.",
+      "tags": [
+        "many-body",
+        "slow-modes",
+        "entropy"
+      ],
+      "abstract_page_sha256": "6c08fa73f8525d2b9cc3d5a53df5efc557914062d7996cae99ffe81f6b36b662",
+      "reviewed_full_text_sha256": null,
+      "reuse": "Bibliographic metadata and original synthesis only; no permission to train on linked full text is inferred."
+    },
+    {
+      "id": "arxiv:2607.10696",
+      "arxiv_id": "2607.10696",
+      "title": "The planar Hopf algebra of noncommutative multi-indices",
+      "authors": [
+        "Yu, Yong",
+        "Gao, Xing",
+        "Manchon, Dominique"
+      ],
+      "first_submitted": "2026-07-12",
+      "latest_revision": "2026-07-12",
+      "reviewed_version": "v1",
+      "url": "https://arxiv.org/abs/2607.10696v1",
+      "doi": "10.48550/arXiv.2607.10696",
+      "verified_on": "2026-09-09",
+      "recency": "background",
+      "publication_status": "preprint; peer-review status not established in this sweep",
+      "evidence_level": "literature",
+      "review_depth": "v1: abstract, Section 2 and fertility/coproduct construction",
+      "source_claim": "Yu, Gao and Manchon construct a planar noncommutative multi-index Hopf algebra, relate it to Munthe-Kaas-Wright through a fertility map, and describe left-admissible cuts and symmetrization.",
+      "limits": "Planar order and noncommutative products differ from the commutative Connes-Kreimer forest algebra. An algebraic correspondence does not supply analytic cluster convergence. First posted 12 July.",
+      "tags": [
+        "trees",
+        "hopf-algebra",
+        "planar",
+        "noncommutative"
+      ],
+      "abstract_page_sha256": "6ac70970691ff3e8fd42c48245781b35a6bb3ba15a15b2cf9fb5116213c73376",
+      "reviewed_full_text_sha256": "493e47ec5938f96e1b6d2bb9ea5ea2caf7f898ec32aca0db96869df418940507",
+      "reuse": "Bibliographic metadata and original synthesis only; no permission to train on linked full text is inferred."
+    },
+    {
+      "id": "arxiv:2605.05542",
+      "arxiv_id": "2605.05542",
+      "title": "Fertility fibres and coproduct coefficients in the LOT Hopf algebra",
+      "authors": [
+        "Zhu, Zhicheng",
+        "Li, Jingtao",
+        "Gao, Xing"
+      ],
+      "first_submitted": "2026-05-07",
+      "latest_revision": "2026-05-07",
+      "reviewed_version": "v1",
+      "url": "https://arxiv.org/abs/2605.05542v1",
+      "doi": "10.48550/arXiv.2605.05542",
+      "verified_on": "2026-09-09",
+      "recency": "background",
+      "publication_status": "preprint; peer-review status not established in this sweep",
+      "evidence_level": "literature",
+      "review_depth": "Abstract and submission history",
+      "source_claim": "Zhu, Li and Gao distinguish ordinary fertility-fibre counts, symmetry-weighted counts and coefficient masses, deriving recurrences and coproduct formulas.",
+      "limits": "These three weights are not interchangeable with the rooted child-factorial weight. Label conventions and automorphism factors need an explicit conversion. First posted 7 May.",
+      "tags": [
+        "trees",
+        "hopf-algebra",
+        "symmetry-factors"
+      ],
+      "abstract_page_sha256": "c84a68281071ad71362f9d94bfe4a6cc22e8a4d37b6c23cc00b7e0cd9f6e7b90",
+      "reviewed_full_text_sha256": null,
+      "reuse": "Bibliographic metadata and original synthesis only; no permission to train on linked full text is inferred."
+    }
+  ],
+  "repository_cards": [
+    {
+      "repository": "lluiseriksson/lean-zero-free-regions",
+      "source_ids": [
+        "2609.00867",
+        "2607.10696"
+      ],
+      "local_anchors": [
+        "README.md",
+        "INTERFACES.md",
+        "HYPOTHESIS_FRONTIER.md"
+      ],
+      "frontier": "M0 finite-polymer nonvanishing is documented; M1 analyticity/clustering and the root-location interfaces still carry inputs.",
+      "bridge_hypothesis": "Compare a determinant-based partition-function control with the KP analytic-log route. Dictionary: finite partition function -> determinant or cluster logarithm; preserve normalization and the actual complex parameter. Real-axis moment bounds lose the complex disk and cannot fill the nonvanishing hypothesis.",
+      "next_finite_task": "For a diagonal finite positive matrix, list determinant singularities and compare its exact analytic-log radius with a geometric-series bound. Record the admissible complex domain separately from real exponential integrability.",
+      "falsifier": "Abandon a claimed zero-free improvement if the bound only holds on the real axis or if the proposed disk crosses a determinant zero/pole.",
+      "related_repositories": [
+        "lean-connes-kreimer",
+        "physmath-lean-lemmas",
+        "THE-ERIKSSON-PROGRAMME"
+      ],
+      "proposal_status": "speculative; not executed or formally verified",
+      "eliminated_hypotheses": [],
+      "inspected_commit": "b0b3f2b73ed0207d7818b86f87453120bc447781"
+    },
+    {
+      "repository": "lluiseriksson/lean-gaussian-field",
+      "source_ids": [
+        "2609.08169",
+        "2609.08132",
+        "2609.04789",
+        "2609.00867"
+      ],
+      "local_anchors": [
+        "README.md",
+        "HYPOTHESIS_FRONTIER.md",
+        "MOTHER_DIGEST.md"
+      ],
+      "frontier": "The finite Gaussian programme stages Wick, integration by parts, uniform moments and massive covariance decay; external analytic inputs remain explicit.",
+      "bridge_hypothesis": "Use the new concentration and regularization papers to split three obligations: finite moments, mollifier stability, and spatial decay. Dictionary: random-field overlap -> candidate scalar concentration observable; GFF regularization -> cutoff comparison. Neither mapping preserves mass or locality automatically.",
+      "next_finite_task": "On a finite massive chain, compute covariance decay and compare two smoothing kernels at fixed mass and growing size. Tabulate constants by size, mass and smoothing scale before proposing a dimension-uniform lemma.",
+      "falsifier": "Reject the bridge if constants diverge with size, if massless logarithmic correlations replace exponential decay, or if the matching field-law condition is absent.",
+      "related_repositories": [
+        "lean-transfer-matrix",
+        "lean-ym-flow",
+        "aqft-split-inclusion-series"
+      ],
+      "proposal_status": "speculative; not executed or formally verified",
+      "eliminated_hypotheses": [],
+      "inspected_commit": "53af447b622542735b5cd078a71a47667a4ac44d"
+    },
+    {
+      "repository": "lluiseriksson/lean-transfer-matrix",
+      "source_ids": [
+        "2609.01605",
+        "2609.04117"
+      ],
+      "local_anchors": [
+        "README.md",
+        "HYPOTHESIS_FRONTIER.md",
+        "INTERFACES.md"
+      ],
+      "frontier": "M0 Ising diagonalization is recorded; the forward/reverse finite transfer interfaces retain reconstruction and spectral inputs.",
+      "bridge_hypothesis": "Compare gaps only after naming their operators. Dictionary: normalized transfer eigenvalue ratio -> discrete correlation decay; channel subleading eigenvalue -> mixing rate. A Lindbladian can be nonnormal and the reverse correlation-to-gap implication needs observable visibility.",
+      "next_finite_task": "For a small transfer matrix and a small primitive channel, compute the full spectrum and an observable overlap table. Add a deliberately invisible slow mode as a negative control for the reverse interface.",
+      "falsifier": "Abandon a reverse-gap inference if the observable is orthogonal to the slow mode, or if a Liouvillian decay rate is substituted for a Hamiltonian energy gap.",
+      "related_repositories": [
+        "lean-os-positivity",
+        "finite-sample-spectral-certificates"
+      ],
+      "proposal_status": "speculative; not executed or formally verified",
+      "eliminated_hypotheses": [],
+      "inspected_commit": "4e2366a4737f800ee03634a7f80b74fa2870781a"
+    },
+    {
+      "repository": "lluiseriksson/lean-2d-yang-mills",
+      "source_ids": [
+        "2608.27267",
+        "2609.04117"
+      ],
+      "local_anchors": [
+        "README.md",
+        "CLAIM_SCOPE.md",
+        "Lean2dYangMills/SU2RootedTreeGaugeFixing.lean"
+      ],
+      "frontier": "The README records vertex-coordinate tree gauge fixing; the stronger full edge-coordinate equivalence, every face-holonomy formula and planar embedding comparison remain open.",
+      "bridge_hypothesis": "The maximal-tree simulation paper gives a concrete comparison target for the edge-model frontier. Dictionary: tree edges -> vertex gauge coordinates, complementary edges -> reduced physical coordinates. Preserve product Haar, root convention and boundary holonomies; algorithmic digitization does not establish the exact measure equivalence.",
+      "next_finite_task": "Write the edge map and inverse for the three-face cyclic-dual disk; count E=(V-1)+(E-V+1), derive each face word and test reconstruction before attempting the general product-Haar proof.",
+      "falsifier": "Reject the proposed map if any edge cannot be reconstructed, if a residual global gauge freedom is silently removed, or if face orientation changes the holonomy.",
+      "related_repositories": [
+        "THE-ERIKSSON-PROGRAMME",
+        "lean-os-positivity",
+        "ym-lattice-numerics"
+      ],
+      "proposal_status": "speculative; not executed or formally verified",
+      "eliminated_hypotheses": [],
+      "inspected_commit": "05c4ec316cb9aa295416670a2578b1c2e77e1c36"
+    },
+    {
+      "repository": "lluiseriksson/lean-ym-flow",
+      "source_ids": [
+        "2606.21062",
+        "2606.21073",
+        "2609.08132"
+      ],
+      "local_anchors": [
+        "README.md",
+        "PARABOLIC_TOOLBOX.md",
+        "HYPOTHESIS_FRONTIER.md"
+      ],
+      "frontier": "The finite/lattice flow and parabolic toolbox are interfaces with named analytic obligations.",
+      "bridge_hypothesis": "The newly revised prescribed-flow paper suggests extracting the comparison argument into the parabolic toolbox. Dictionary: metric/tensor order -> candidate scalar barrier inequality. The manifold, bundle metric and prescribed tensor do not map directly to compact lattice gauge variables.",
+      "next_finite_task": "Transcribe the exact scalar differential inequality behind the C0 comparison, list its sign and compactness assumptions, and prove a bounded finite-dimensional comparison lemma before any lattice application.",
+      "falsifier": "Stop the transfer if the required order is unavailable, the forcing tensor is not positive in the needed sense, or the bound depends on continuum geometry absent from the lattice model.",
+      "related_repositories": [
+        "lean-gaussian-field",
+        "THE-ERIKSSON-PROGRAMME"
+      ],
+      "proposal_status": "speculative; not executed or formally verified",
+      "eliminated_hypotheses": [],
+      "inspected_commit": "03991e3dadc700cbce71f20dc26c09f842c00609"
+    },
+    {
+      "repository": "lluiseriksson/lean-os-positivity",
+      "source_ids": [
+        "2609.04423",
+        "2609.01605",
+        "2608.27267"
+      ],
+      "local_anchors": [
+        "README.md",
+        "HYPOTHESIS_FRONTIER.md",
+        "INTERFACES.md"
+      ],
+      "frontier": "Reflection positivity, GNS reconstruction and Wilson certificates expose separate proof obligations; real poles alone are not certificates.",
+      "bridge_hypothesis": "Treat real-pole effective models as adversarial tests of the OS dictionary. Preserve the positive-time observable algebra and reflection form. Gauge-fixed fields, quantum channels and Euclidean Wilson observables have different positivity structures.",
+      "next_finite_task": "Build a small reflection Gram matrix for a toy transfer model and compare its PSD condition with propagator-pole reality. Separately check whether tree gauge fixing commutes with the chosen physical reflection.",
+      "falsifier": "A negative reflection quadratic form refutes the toy RP claim; failure of reflection compatibility blocks importing gauge-fixed positivity into WilsonRPCertificate.",
+      "related_repositories": [
+        "lean-transfer-matrix",
+        "lean-2d-yang-mills",
+        "THE-ERIKSSON-PROGRAMME"
+      ],
+      "proposal_status": "speculative; not executed or formally verified",
+      "eliminated_hypotheses": [],
+      "inspected_commit": "2ea7692fb7a60cac1b8f1deac5b1446c12557218"
+    },
+    {
+      "repository": "lluiseriksson/ym-lattice-numerics",
+      "source_ids": [
+        "2608.27267",
+        "2609.04117",
+        "2609.08169"
+      ],
+      "local_anchors": [
+        "README.md",
+        "docs/MOTHER_DIGEST.md",
+        "CONSTANTS.md"
+      ],
+      "frontier": "The shipped Wilson Monte Carlo run is a smoke ensemble; numerical constants do not establish the continuum regime.",
+      "bridge_hypothesis": "Use maximal-tree gauge for finite observable cross-checks and the open-SU(2) study for a separate dynamics benchmark. Preserve gauge-invariant observables; separate matter content, dimension, Euclidean sampling and real-time bath coupling.",
+      "next_finite_task": "Compare plaquette and loop values before/after finite tree gauge fixing with fixed seeds. For a future Lindblad benchmark report truncation, trace preservation, Gauss-law residual and rate versus bath strength, including a Zeno regime.",
+      "falsifier": "Reject equivalence on a gauge-invariant observable mismatch. Reject monotone-rate extrapolation if increasing dissipation slows relaxation or if truncation dominates the estimated gap.",
+      "related_repositories": [
+        "lean-2d-yang-mills",
+        "finite-sample-spectral-certificates",
+        "ym-audit"
+      ],
+      "proposal_status": "speculative; not executed or formally verified",
+      "eliminated_hypotheses": [],
+      "inspected_commit": "f4c6dad39958ebf1280424c657b447a754d07343"
+    },
+    {
+      "repository": "lluiseriksson/lean-connes-kreimer",
+      "source_ids": [
+        "2607.10696",
+        "2605.05542"
+      ],
+      "local_anchors": [
+        "README.md",
+        "HYPOTHESIS_FRONTIER.md",
+        "ConnesKreimer/Basic.lean"
+      ],
+      "frontier": "M0 is a commutative forest algebra; admissible-cut coproduct, coassociativity and antipode are the next algebraic obligations. No directly relevant 3-9 September source was verified.",
+      "bridge_hypothesis": "The planar LOT construction supplies an adjacent representation to audit, not a drop-in coproduct. Dictionary: ordered forests -> noncommutative words; forgetting order -> a weighted commutative image. Degree is retained; planar multiplicity and cut admissibility can be lost.",
+      "next_finite_task": "Enumerate trees through five vertices and compare ordinary cuts with left-admissible cuts. First determine the exact symmetrization weights, then test the coalgebra compatibility square on each basis element.",
+      "falsifier": "One coefficient mismatch falsifies the naive forget-order map. Do not use a planar Hopf identity as the commutative Connes-Kreimer coproduct theorem.",
+      "related_repositories": [
+        "mathlib-plane-tree-catalan",
+        "physmath-lean-lemmas"
+      ],
+      "proposal_status": "speculative; not executed or formally verified",
+      "eliminated_hypotheses": [],
+      "inspected_commit": "467bc3358981a9dabeda0ef5ec119b0c15fcf5ff"
+    },
+    {
+      "repository": "lluiseriksson/THE-ERIKSSON-PROGRAMME",
+      "source_ids": [
+        "2608.27267",
+        "2609.04117",
+        "2609.00867",
+        "2606.21062",
+        "2609.04423"
+      ],
+      "local_anchors": [
+        "README.md",
+        "docs/HRPOLY-STATUS.md",
+        "HYPOTHESIS_FRONTIER.md"
+      ],
+      "frontier": "The inspected main records finite-lattice area laws, an open hRpoly source programme and an open physical Wilson reflection/transfer bridge. Its continuum limit remains open.",
+      "bridge_hypothesis": "Prioritize edge gauge coordinates and physical reflection, then test uniform integrability tools against the actual raw activity. Dictionary: particle-number bounds -> candidate volume budget; tree reduction -> exact finite lattice coordinates. Neither supplies target-localized RG decay or hRpoly.",
+      "next_finite_task": "Extract three separate checklists: tree-coordinate inverse and Haar identity; reflection compatibility for the physical cylinder; parameter dependence of a candidate exponential-moment estimate. Route each obligation to its satellite before changing a terminal hypothesis.",
+      "falsifier": "Reject any route that loses target support, hides volume/scale dependence, substitutes a real-time dissipative gap, or cites a general convergence theorem without its source estimate.",
+      "related_repositories": [
+        "lean-2d-yang-mills",
+        "lean-os-positivity",
+        "lean-gaussian-field",
+        "lean-zero-free-regions"
+      ],
+      "proposal_status": "speculative; not executed or formally verified",
+      "eliminated_hypotheses": [],
+      "inspected_commit": "ecc55e71df056e6d2acb08ede7a80e7bc61ee36a"
+    },
+    {
+      "repository": "lluiseriksson/riemann-prime-resolvent",
+      "source_ids": [
+        "2609.02882",
+        "2609.07918",
+        "2609.00537"
+      ],
+      "local_anchors": [
+        "README.md",
+        "docs/RESEARCH-FRONTIER.md",
+        "docs/THEOREM-LEDGER.md"
+      ],
+      "frontier": "The concrete prime-built spectral model, one-point bound and interval approximation remain the hard first arrow; finite bookkeeping is already recorded.",
+      "bridge_hypothesis": "Compare Lamzouri's positive kernel with the finite resolvent and Wang's short-interval error terms. Preserve all zeros and multiplicities in the unconditional formulation. Replacing them by a critical-line-only table would erase the very failure the programme must detect.",
+      "next_finite_task": "Make a theorem-assumption table for Proposition 2.1 and the one-point criterion. In a small conjugation-invariant multiset containing nonreal pairs, compare kernel bounds with atomic moment PSD and identify what extra statement would connect them.",
+      "falsifier": "Reject a proposed RH bridge if it assumes every zero is critical, obtains only a positive fraction of zeros, or fails to control all three construction-side error budgets.",
+      "related_repositories": [
+        "riemann-resolvent-programme",
+        "hausdorff-certificates",
+        "finite-sample-spectral-certificates"
+      ],
+      "proposal_status": "speculative; not executed or formally verified",
+      "eliminated_hypotheses": [],
+      "inspected_commit": "bec95f73aa33b98a666e65071e10e45451b8d3f7"
+    },
+    {
+      "repository": "lluiseriksson/riemann-resolvent-programme",
+      "source_ids": [
+        "2609.02882",
+        "2609.07918",
+        "2609.00537"
+      ],
+      "local_anchors": [
+        "README.md",
+        "HYPOTHESIS_FRONTIER.md",
+        "SOURCES.md"
+      ],
+      "frontier": "bridgeA, bridgeC, primeTail_bound and T1-T4 remain source-specific carried inputs. The newer prime-resolvent monorepo owns the integrated construction narrative.",
+      "bridge_hypothesis": "Use the new Hilbert-space inequality as a bounded independent target, with an explicit comparison to the slit-plane criterion. A lower density of real spectral parameters does not construct a holomorphic Stieltjes extension.",
+      "next_finite_task": "Extract the finite-multiset inequality with conjugation, support and kernel normalization intact. Try finite counterexamples to any proposed implication from that inequality to full Hausdorff positivity.",
+      "falsifier": "Reject a transfer if an off-line conjugate pair survives its hypotheses, or if bridgeA/bridgeC merely reappear under new names. Existing source gates remain mandatory.",
+      "related_repositories": [
+        "riemann-prime-resolvent",
+        "hausdorff-certificates"
+      ],
+      "proposal_status": "speculative; not executed or formally verified",
+      "eliminated_hypotheses": [],
+      "inspected_commit": "f08118be0004eb69966c186e78cc7282c7552da8"
+    },
+    {
+      "repository": "lluiseriksson/hausdorff-certificates",
+      "source_ids": [
+        "2609.02882",
+        "2609.07918",
+        "2609.09033"
+      ],
+      "local_anchors": [
+        "README.md",
+        "MATH.md",
+        "SOURCES.md"
+      ],
+      "frontier": "Finite H_N/L_N tests are certificates for their supplied moment data; zeta inputs retain their source and enclosure gates.",
+      "bridge_hypothesis": "Compare low-degree moment positivity with pseudo-density obstructions from SDP complexity. Dictionary: truncated positive quadratic forms -> restricted observable tests. Positivity on a bounded-degree family does not identify a globally positive measure or remove zero-table uncertainty.",
+      "next_finite_task": "Construct a signed rational atomic example that passes a shallow moment test and fails a deeper one; verify the negative rational Rayleigh witness independently. Keep this separate from any true-zeta claim.",
+      "falsifier": "If no guaranteed input enclosures exist, mark a zeta verdict inconclusive. A finite PSD pass cannot be used to infer RH or a dimension-independent hierarchy depth.",
+      "related_repositories": [
+        "finite-sample-spectral-certificates",
+        "riemann-prime-resolvent",
+        "p-vs-np-research-front"
+      ],
+      "proposal_status": "speculative; not executed or formally verified",
+      "eliminated_hypotheses": [],
+      "inspected_commit": "a8d34d4639d0f1188e6a89af36fe3ec567aceb3a"
+    },
+    {
+      "repository": "lluiseriksson/finite-sample-spectral-certificates",
+      "source_ids": [
+        "2609.09033",
+        "2609.02865",
+        "2609.01605"
+      ],
+      "local_anchors": [
+        "README.md",
+        "verification/verify_rational_witness.py"
+      ],
+      "frontier": "Finite-sample validity and repaired dual witnesses are distinct from statistical power and global hierarchy completeness.",
+      "bridge_hypothesis": "The HNW lower bounds offer a model-boundary audit for proposed universal SDP extensions. Dictionary: common feasible region -> one relaxation serving every measurement. The existing fixed-observable localizer need not satisfy that universal model.",
+      "next_finite_task": "Record dimension, accuracy, observable family and whether the feasible region is shared. Run the existing exact witness verifier, then design a visibility-negative-control experiment with an unobserved slow mode.",
+      "falsifier": "Abandon a universal-completeness claim if it requires a fixed SDP size in a dimension/accuracy regime excluded by HNW. Do not infer such a lower bound for a single scalar moment instance.",
+      "related_repositories": [
+        "hausdorff-certificates",
+        "lean-transfer-matrix",
+        "aqft-split-inclusion-series"
+      ],
+      "proposal_status": "speculative; not executed or formally verified",
+      "eliminated_hypotheses": [],
+      "inspected_commit": "2677a67f4666838759ac0e202e22cddf4e360a1c"
+    },
+    {
+      "repository": "lluiseriksson/p-vs-np-research-front",
+      "source_ids": [
+        "2609.09033",
+        "2609.02865",
+        "2609.02687"
+      ],
+      "local_anchors": [
+        "README.md",
+        "docs/barrier-audit.md",
+        "proofs/GATE-004EB-cut-capacity-or-heavy-seal.md"
+      ],
+      "frontier": "The current endpoint GATE-004EB needs actual cut-gate capacity or heavy-seal replacement in unrestricted SAT circuits; leaf coverage alone is insufficient.",
+      "bridge_hypothesis": "Compare new quantum/SDP obstructions with the repo's computational-model cards. The shared-feasible-region quantifier and the oracle are explicit resources. Translating either theorem to Boolean SAT would require a reduction preserving size, uniformity and the actual parent-circuit charge.",
+      "next_finite_task": "Write three model cards (HNW SDP, quantum oracle, time-bounded quantum programs), and for each list the missing reduction to GATE-004EB. Test whether a candidate mapping counts shared resources twice.",
+      "falsifier": "Reject a P-vs-NP inference that drops oracle access, treats a polynomial-time conjecture as proved, or identifies PSD extension size with unrestricted Boolean gate count.",
+      "related_repositories": [
+        "finite-sample-spectral-certificates",
+        "aqft-split-inclusion-series"
+      ],
+      "proposal_status": "speculative; not executed or formally verified",
+      "eliminated_hypotheses": [],
+      "inspected_commit": "0308ea8f06e1239f4a76f4b4208a6e8d37b418f1"
+    },
+    {
+      "repository": "lluiseriksson/hodge-conjecture-research-front",
+      "source_ids": [
+        "2609.03784",
+        "2609.07804",
+        "2609.06829",
+        "2608.08442"
+      ],
+      "local_anchors": [
+        "artifacts/research-state.json",
+        "docs/research-frontier.md",
+        "proofs/G208-standard-piecewise-frontier.md"
+      ],
+      "frontier": "The recorded state keeps general Hodge open and G208 active within the prescribed pairing, node, Kuranishi and rational-type obligations.",
+      "bridge_hypothesis": "Use the very-general split-binary family as a positive control for explicit cycle generation, and stringy-Hodge families as singular degeneration controls. Dictionary: matrix-factorization Chern character -> algebraic cohomology class; local detector -> a specified nonzero pairing. An arbitrary nonzero class is not the requested class.",
+      "next_finite_task": "At m=2,d=7, check the source's rank formulas and augmentation-lattice tensor dimensions, then list the missing map from those classes to the repo's actual Saito pairing and clean nodal geometry.",
+      "falsifier": "Abandon the claimed transfer if it requires very-general parameters while the constructed configuration is special, or if it never proves the prescribed nonzero pairing. Retain weak ordinarity on the conditional converse.",
+      "related_repositories": [
+        "point-span-tangent-absorption",
+        "physmath-knowledge-tree"
+      ],
+      "proposal_status": "speculative; not executed or formally verified",
+      "eliminated_hypotheses": [],
+      "inspected_commit": "2ea22d4e77719f22509a33f177091f2a4b3a7450"
+    },
+    {
+      "repository": "lluiseriksson/point-span-tangent-absorption",
+      "source_ids": [
+        "2608.08442",
+        "2609.03784"
+      ],
+      "local_anchors": [
+        "README.md",
+        "successor_v0.1/RESEARCH_AUDIT.md"
+      ],
+      "frontier": "Both manuscript packages are frozen. The current paper concerns characteristic-free finite span bounds and sharp Gauss-fibre examples; no directly matching weekly Gauss-fibre theorem was verified.",
+      "bridge_hypothesis": "Compare fundamental-form symmetry with the paper's tangent-absorption condition. Dictionary: first fundamental data -> tangent space; higher forms -> osculating restrictions. General-point infinitesimal symmetry loses special finite incidence and cannot extend a characteristic-free theorem by itself.",
+      "next_finite_task": "For one existing sharp example, compute first and second fundamental forms and compare their ranks with the point-span bound. Use the Hodge split-binary family only as a candidate example family after checking smoothness and tangent ranks.",
+      "falsifier": "Reject an extension if it relies on characteristic-zero genericity, identifies tangent and second-osculating contact, or infers a special absorbing point set from an automorphism-dimension bound.",
+      "related_repositories": [
+        "hodge-conjecture-research-front"
+      ],
+      "proposal_status": "speculative; not executed or formally verified",
+      "eliminated_hypotheses": [],
+      "inspected_commit": "fd6e87d648667fed4438c5ce298ca2a0c8eda6d7"
+    },
+    {
+      "repository": "lluiseriksson/aqft-split-inclusion-series",
+      "source_ids": [
+        "2609.02865",
+        "2609.09033",
+        "2609.04905",
+        "2608.31001"
+      ],
+      "local_anchors": [
+        "README.md",
+        "papers/0060-clustering-recovery",
+        "papers/0061-maintenance-work",
+        "papers/0070-rate-inheritance"
+      ],
+      "frontier": "The v2 series distinguishes conditional reattachment from Petz recovery, explicit maintenance baselines and Davies-locality limitations.",
+      "bridge_hypothesis": "Place no-disentangler quantifiers beside the code-restricted recovery claim, and collision-model work beside the battery-accounted maintenance theorem. Universal state coverage is lost when restricting to a code; physical reset resources are lost when a bath map is treated as free.",
+      "next_finite_task": "Write the input class, reference system, channel uniformity and trace-distance error in one table. For a two-qubit collision cycle compute system, ancilla and reset work separately before comparing with the maintenance bound.",
+      "falsifier": "Reject any contradiction with no-disentanglers unless universal coverage holds. Reject a power-floor comparison if ancilla resetting or the baseline-achievability assumption is omitted.",
+      "related_repositories": [
+        "additive-gkls-leaky-boundary",
+        "support-leakage-rapid-maintenance",
+        "many-body-filling-maintenance-floor"
+      ],
+      "proposal_status": "speculative; not executed or formally verified",
+      "eliminated_hypotheses": [],
+      "inspected_commit": "078c39aefbd3b9a2e81ce1b02b2769f6f10716f1"
+    },
+    {
+      "repository": "lluiseriksson/many-body-filling-maintenance-floor",
+      "source_ids": [
+        "2609.07832",
+        "2609.04117",
+        "2608.31001"
+      ],
+      "local_anchors": [
+        "README.md",
+        "claims/CLAIM_MAP.md",
+        "verification/verify.py"
+      ],
+      "frontier": "The filled-SSH identity is exact in its stated model; the maintenance exponent carries the Davies envelope and invariance condition.",
+      "bridge_hypothesis": "Compare conserved slow-mode reconstructions and gauge-bath Zeno effects with filled-sector leakage. Dictionary: population/filling constraints -> available transition sectors. Restricted typicality does not preserve the block algebra or establish the two-sided rate envelope.",
+      "next_finite_task": "Tabulate logical and nonlogical weights versus filling, then repeat a small-system rate scan over bath strength while directly checking the block-invariance residual. Distinguish static sum rules from fitted rates.",
+      "falsifier": "A nonzero invariance residual blocks the stated exponent transfer. Nonmonotonic bath dependence or loss of uniform spectral isolation invalidates an extrapolated maintenance floor.",
+      "related_repositories": [
+        "support-leakage-rapid-maintenance",
+        "additive-gkls-leaky-boundary",
+        "aqft-split-inclusion-series"
+      ],
+      "proposal_status": "speculative; not executed or formally verified",
+      "eliminated_hypotheses": [],
+      "inspected_commit": "16693e410104119f0f48274410fefe0cee309e57"
+    },
+    {
+      "repository": "lluiseriksson/support-leakage-rapid-maintenance",
+      "source_ids": [
+        "2609.04905",
+        "2609.08752",
+        "2609.04117"
+      ],
+      "local_anchors": [
+        "README.md",
+        "claims/CLAIM_MAP.md",
+        "verification/verify.py"
+      ],
+      "frontier": "The support singularity and dual-rail exponent are separate from the Davies-envelope assumptions and any controller optimum.",
+      "bridge_hypothesis": "Use collision resets to test the distinction between rapid refresh and bounded-cost autonomous maintenance. Dictionary: collision period -> refresh time; first-order support leakage -> coefficient of t log(1/t). A speed limit does not control the ancilla reset work.",
+      "next_finite_task": "For a rank-deficient qubit target and one leaking jump, compare free-energy loss divided by t with log(1/t). In a collision implementation include the ancilla reset cost and finite refresh error.",
+      "falsifier": "Reject a finite-power exact-refresh claim if it suppresses the first-order leakage term by changing the target rank or leaves reset work unaccounted.",
+      "related_repositories": [
+        "additive-gkls-leaky-boundary",
+        "many-body-filling-maintenance-floor"
+      ],
+      "proposal_status": "speculative; not executed or formally verified",
+      "eliminated_hypotheses": [],
+      "inspected_commit": "841b0107212209e0b36326cadd5beef44d90115c"
+    },
+    {
+      "repository": "lluiseriksson/additive-gkls-leaky-boundary",
+      "source_ids": [
+        "2609.04905",
+        "2609.08752",
+        "2609.04117"
+      ],
+      "local_anchors": [
+        "README.md",
+        "claims/CLAIM_MAP.md",
+        "verification/verify.py"
+      ],
+      "frontier": "The no-cancellation theorem concerns additive Markovian control at a leaky rank-deficient boundary; the SSH rate threshold is model-specific.",
+      "bridge_hypothesis": "Classify the experimental collision protocol before comparing it with additive GKLS no-go results. Dictionary: repeated unitary-plus-reset channel -> a possible continuous-time generator only in a controlled limit. Pulse resources, memory and target purity may change.",
+      "next_finite_task": "Derive a small collision channel and its candidate generator, check complete positivity and outward support flow, and compare fixed-point error versus reset rate with the existing two-state model.",
+      "falsifier": "A finite-time channel without a valid additive GKLS limit is outside the theorem class. A mixed target or changing background generator cannot refute the rank-deficient fixed-background no-go.",
+      "related_repositories": [
+        "support-leakage-rapid-maintenance",
+        "aqft-split-inclusion-series"
+      ],
+      "proposal_status": "speculative; not executed or formally verified",
+      "eliminated_hypotheses": [],
+      "inspected_commit": "463e9bc89cdd7cf00cd12ae2ce7811c8b6c45170"
+    },
+    {
+      "repository": "lluiseriksson/physmath-lean-lemmas",
+      "source_ids": [
+        "2609.00867",
+        "2609.08169",
+        "2607.10696"
+      ],
+      "local_anchors": [
+        "README.md",
+        "PhysmathLemmas/ThreeInfinities.lean"
+      ],
+      "frontier": "The three-infinities lemma closes supplied order, target and scale budgets; it does not create the physical source estimate.",
+      "bridge_hypothesis": "Ask whether uniform moment or partition bounds can furnish one budget while planar tree algebra controls another. Dictionary: N-uniform constant -> candidate finite-volume bound; word degree -> cluster order. Target-local support and scale summability must survive as independent data.",
+      "next_finite_task": "Write an explicit constant-dependency table for M,G,K,q under any proposed input. Test the proposed profile at the marginal harmonic boundary, where scale summability fails despite finite order and geometry sums.",
+      "falsifier": "Reject a new application if a constant depends on target or volume in a forbidden way, q reaches one, or the scale series diverges. Renaming the input budget is not a discharge.",
+      "related_repositories": [
+        "lean-gaussian-field",
+        "lean-zero-free-regions",
+        "lean-connes-kreimer"
+      ],
+      "proposal_status": "speculative; not executed or formally verified",
+      "eliminated_hypotheses": [],
+      "inspected_commit": "b26ce4c4ef95074e55375f3002c82c7bcff9b856"
+    },
+    {
+      "repository": "lluiseriksson/mathlib-plane-tree-catalan",
+      "source_ids": [
+        "2607.10696",
+        "2605.05542"
+      ],
+      "local_anchors": [
+        "README.md",
+        "Mathlib/Combinatorics/Enumerative/PlaneTree.lean",
+        "STATUS.md"
+      ],
+      "frontier": "The plane-tree/binary-tree equivalence and Catalan count are prepared for upstream use. No directly relevant new weekly Catalan-enumeration result was verified.",
+      "bridge_hypothesis": "The planar fertility-word encoding offers a second model for the same ordered trees. Dictionary: node child count minus one -> word letter; preorder -> ordered prefix sequence. Forgetting order loses multiplicities; fertility profiles alone need not identify trees.",
+      "next_finite_task": "Enumerate small plane trees and encode their preorder child-count-minus-one words. Check total weight -1, nonnegative proper prefix sums and round-trip decoding; compare counts with the existing Catalan convention.",
+      "falsifier": "Any collision between distinct plane trees or off-by-one disagreement with n+1 nodes invalidates the claimed bijection. Do not substitute symmetry-weighted counts for ordinary Catalan counts.",
+      "related_repositories": [
+        "lean-connes-kreimer",
+        "physmath-lean-lemmas"
+      ],
+      "proposal_status": "speculative; not executed or formally verified",
+      "eliminated_hypotheses": [],
+      "inspected_commit": "12206bf573022fd7fc8fc833d2e4cc0ffd9c4a68"
+    },
+    {
+      "repository": "lluiseriksson/ym-mass-gap-lean-verification",
+      "source_ids": [
+        "2608.27267",
+        "2609.04423",
+        "2609.04117"
+      ],
+      "local_anchors": [
+        "README.md"
+      ],
+      "frontier": "This historical architecture page predates the current mother programme. Its old unconditional-claim wording must be read against the current open hRpoly and continuum frontier.",
+      "bridge_hypothesis": "Route discoveries to the active lattice, OS and gauge-fixing satellites. Dictionary: historical terminal architecture -> present separate obligations. A new simulation or effective excitation result does not validate the historical terminal claim.",
+      "next_finite_task": "Maintain a current-status note pointing to the mother programme and compare each cited external result with the exact lattice/continuum distinction before reviving a formalization task.",
+      "falsifier": "Do not treat a scaffold, partially axiomatized chain or historical assertion as a verified 4D continuum construction.",
+      "related_repositories": [
+        "THE-ERIKSSON-PROGRAMME",
+        "lean-os-positivity",
+        "lean-2d-yang-mills"
+      ],
+      "proposal_status": "speculative; not executed or formally verified",
+      "eliminated_hypotheses": [],
+      "inspected_commit": "8f90610352b5fe79fb98029f7d04e83dd7d3d265"
+    },
+    {
+      "repository": "lluiseriksson/ym-audit",
+      "source_ids": [
+        "2608.27267",
+        "2609.04117",
+        "2609.00867"
+      ],
+      "local_anchors": [
+        "README.md",
+        "audit",
+        "ym_audit"
+      ],
+      "frontier": "The legacy mechanical audit framework and archived paper list are provenance records; the current public mother programme states the active mathematical scope.",
+      "bridge_hypothesis": "Add paper-to-obligation audit entries rather than treating successful numerical checks as analytic proofs. Preserve action normalization, dimensions, uniform parameters and the exact source conclusion.",
+      "next_finite_task": "For each candidate create a row containing observable, theorem/experiment type, domain, constants and an independent check. Prioritize finite gauge-invariant comparison and a bath-rate nonmonotonicity control.",
+      "falsifier": "Reject a claimed analytic discharge if the audit only samples a finite parameter grid, replaces uniform bounds by fitted constants, or confuses Hamiltonian and dissipative evolution.",
+      "related_repositories": [
+        "THE-ERIKSSON-PROGRAMME",
+        "ym-lattice-numerics"
+      ],
+      "proposal_status": "speculative; not executed or formally verified",
+      "eliminated_hypotheses": [],
+      "inspected_commit": "15933bb0046e2902656e86fafeeb3729e3a01243"
+    },
+    {
+      "repository": "lluiseriksson/physmath-knowledge-tree",
+      "source_ids": [
+        "2609.02882",
+        "2609.07918",
+        "2609.09033",
+        "2609.02865",
+        "2609.03784",
+        "2609.07804",
+        "2609.06829",
+        "2608.08442",
+        "2608.27267",
+        "2609.04117",
+        "2609.00867",
+        "2609.08169",
+        "2609.08132",
+        "2609.04789",
+        "2606.21062",
+        "2609.04905",
+        "2609.07832",
+        "2608.31001",
+        "2607.10696",
+        "2605.05542",
+        "2609.01605",
+        "2609.02687",
+        "2609.08752",
+        "2609.00537",
+        "2609.04423",
+        "2606.21073"
+      ],
+      "local_anchors": [
+        "graph/index.json",
+        "graph/nodes/core.json",
+        "graph/edges.json",
+        "AGENTS.md"
+      ],
+      "frontier": "The canonical graph distinguishes formal, literature, heuristic and speculative knowledge. This sweep adds context references and a searchable source/bridge dossier without promoting existing confidence or solved status.",
+      "bridge_hypothesis": "Priorities: zeta kernels versus truncated positivity; universal SDP/disentangler obstructions versus code-restricted recovery; tree gauge fixing versus physical reflection; explicit Hodge classes versus prescribed incidence; planar words versus rooted factorial budgets. Each bridge has its own preserved and lost structure in the repository cards.",
+      "next_finite_task": "Retrieve a small subgraph from the referenced canonical nodes, choose one finite task from the cross-repository map, and record its actual outcome before any confidence promotion. All finite tasks in this sweep remain proposals.",
+      "falsifier": "Abandon a bridge when its dictionary drops an indispensable quantifier, positivity notion, target support, characteristic assumption or operational resource. Graph proximity alone supplies no implication.",
+      "related_repositories": [
+        "THE-ERIKSSON-PROGRAMME",
+        "riemann-prime-resolvent",
+        "hodge-conjecture-research-front",
+        "p-vs-np-research-front",
+        "aqft-split-inclusion-series"
+      ],
+      "proposal_status": "speculative; not executed or formally verified",
+      "eliminated_hypotheses": [],
+      "inspected_commit": "bf7fc5d16929f780cb4028bb0268b5fc564941de"
+    }
+  ],
+  "exclusions": [
+    {
+      "candidate": "arxiv:2609.02257",
+      "reason": "A discovery snippet associated this ID with modulated partition functions; the canonical arXiv record is Aperiodic random walks. The mismatched attribution was rejected."
+    },
+    {
+      "candidate": "recent Catalan-constant headlines",
+      "reason": "Catalan constant is not Catalan tree enumeration; no keyword-only match was accepted."
+    }
+  ]
+}

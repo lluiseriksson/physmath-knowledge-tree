@@ -2,7 +2,7 @@
   "schema_version": "0.6.0",
   "application_version": "2.6.0",
   "created": "2026-06-22",
-  "updated": "2026-06-23",
+  "updated": "2026-09-09",
   "name": "PhysMath Knowledge Tree",
   "purpose": "A computable graph of physics-mathematics concepts, bridges, problems and Lean targets for research agents.",
   "canonical_files": {
@@ -66,7 +66,8 @@
     "integrations/yang-mills/README.md",
     "integrations/yang-mills/generated/agent-context.md",
     "prompts/yang-mills-next-commit.md",
-    "prompts/yang-mills-source-extraction.md"
+    "prompts/yang-mills-source-extraction.md",
+    "docs/research-updates/README.md"
   ],
   "generated_files": {
     "audit": "graph/audit.json",
