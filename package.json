@@ -34,7 +34,7 @@
     "curation:verify-source": "node scripts/verify-curation-source.mjs",
     "curation:report": "node scripts/generate-curation-report.mjs",
     "validate:curation": "node scripts/validate-curation.mjs",
-    "check": "npm run validate:symlinks && npm run validate:syntax && npm run validate:graph && npm run validate:curation && npm run validate:curation-report && npm run validate:learning && npm run validate:yang-mills && npm run validate:yang-mills-generated && npm run validate:frontier-corpus && npm run validate:links && npm run validate:i18n && npm run validate:jsonld && npm run validate:accessibility && npm run validate:pwa && npm run validate:release && npm run validate:views && npm run validate:audit && npm run validate:evaluation && npm run validate:workflows && npm run validate:format && npm run test:coverage && npm run build && npm run validate:dist && npm run test:e2e",
+    "check": "npm run validate:symlinks && npm run validate:syntax && npm run validate:graph && npm run validate:research-radar && npm run validate:curation && npm run validate:curation-report && npm run validate:learning && npm run validate:yang-mills && npm run validate:yang-mills-generated && npm run validate:frontier-corpus && npm run validate:links && npm run validate:i18n && npm run validate:jsonld && npm run validate:accessibility && npm run validate:pwa && npm run validate:release && npm run validate:views && npm run validate:audit && npm run validate:evaluation && npm run validate:workflows && npm run validate:format && npm run test:coverage && npm run build && npm run validate:dist && npm run test:e2e",
     "validate:workflows": "node scripts/check-workflows.mjs",
     "evaluate": "node scripts/evaluate-repository.mjs",
     "validate:evaluation": "node scripts/evaluate-repository.mjs --check",
@@ -61,6 +61,8 @@
     "query:frontier-corpus": "node scripts/query-frontier-corpus.mjs",
     "run:record": "node scripts/record-research-run.mjs",
     "capsule:build": "node scripts/build-research-capsule.mjs",
-    "capsule:verify": "node scripts/verify-research-capsule.mjs"
+    "capsule:verify": "node scripts/verify-research-capsule.mjs",
+    "research:radar": "node scripts/research-radar.mjs",
+    "validate:research-radar": "node scripts/research-radar.mjs validate"
   }
 }
