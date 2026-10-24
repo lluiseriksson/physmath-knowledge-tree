@@ -461,6 +461,40 @@
         "domain.foundation_logic",
         "domain.number_theory"
       ]
+    },
+    {
+      "id": "wu-zou-werner-sectors-2026",
+      "title": "Sharp Plücker Geometry for Three-Copy Werner Distillation",
+      "url": "https://arxiv.org/html/2608.02647v1",
+      "kind": "preprint",
+      "published_on": null,
+      "observed_on": "2026-10-24",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Section7.2 contains the Schur and signed co-Choi tensor mechanism; AppendixC.2 restricts both supports to locally orthogonal product codes. These are prior inputs, not a new tensorization principle.",
+      "limits": "Selected sections and explicit hypotheses compared; no complete external formalization build or worldwide-priority audit. A support plane containing one GHZ ray need not satisfy the full code-plane hypothesis.",
+      "reuse": "Bibliographic metadata and original synthesis only.",
+      "anchors": [
+        "domain.quantum_information_theory",
+        "domain.algebra"
+      ]
+    },
+    {
+      "id": "cleve-gottesman-lo-qss-1999",
+      "title": "How to share a quantum secret",
+      "url": "https://arxiv.org/html/quant-ph/9901025v1",
+      "kind": "paper",
+      "published_on": "1999-01-12",
+      "observed_on": "2026-10-24",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Equations1–2 supply the known three-qutrit encoding basis used in the explicit Werner-sector example and recovery from two shares; single-share reductions reveal no logical state.",
+      "limits": "Encoding, recovery and adjacent erasure discussion read; not the whole paper or an attribution of any new Werner certificate to the source. The code and its erasure property are prior.",
+      "reuse": "Bibliographic metadata and original synthesis only.",
+      "anchors": [
+        "domain.quantum_information_theory",
+        "domain.algebra"
+      ]
     }
   ],
   "candidates": [
@@ -637,9 +671,9 @@
       "lost_or_unproved": "A line inequality does not imply Jensen for arbitrary finite supports. Proposed low-kernel-dimensional reductions still need review and prior-art comparison.",
       "hypothesis_to_remove": "The line-supported restriction on the distribution of right-hand sides.",
       "falsifier": "An exact unimodular system and rational finite weights with integer barycenter violating the Jensen inequality; all fiber counts and finiteness must be certified.",
-      "next_finite_task": "Audit finite-support reduction and low-kernel-dimensional cases, then identify the missing global injection or an exact counterexample; no claim from the bounded probes.",
+      "next_finite_task": "A TU-specific structural gluing lemma or an exact violating weighted-binary distribution is still needed. Avoid repeating the same finite LP range as a universal proof.",
       "paper_score": null,
-      "review_packet": "Three small DAG count tables,90000sampled triples and60finite-supportLP searches found no strict lead. These are bounded observations only; no new manuscript or score."
+      "review_packet": "399 bounded audit validates an elementary rational-weight binary lift to unweighted TU fibers and generic non-TU closure barriers;64C/Dfiles checked. Exact counts cover184756configurations/19448fibers;2982LPexecutions have no exact violating certificate.392has162executions on161distincttargets. The lift may be exponential in binary weight length. No Jensen solution, converse reduction or importance score."
     },
     {
       "id": "eh-s222-calibrated-stage1",
@@ -663,6 +697,28 @@
       "next_finite_task": "The literal universal grouping extension is refuted by the audited16-vertex control363. Seek a genuinely weaker mechanism for the actual large-comb estimate, or retire this candidate; no such quantitative estimate is proved.",
       "paper_score": null,
       "review_packet": "Audit358 PASS with scope/attribution qualifications and preserved metadata-integrity exception; root verified68C/Dfiles. Audit363 PASS confirms the literal grouping falsifier with full analytic proofs and29C/Dfiles verified. Neither audit proves EH or refutes the actual source Spider/Bird theorem or the large-comb CD. No score."
+    },
+    {
+      "id": "qss-arbitrary-anchor-comparison",
+      "title": "Signed comparison for arbitrary encoded qutrit anchors",
+      "status": "under_audit",
+      "confidence": "speculative",
+      "source_ids": [
+        "cleve-gottesman-lo-qss-1999",
+        "wu-zou-werner-sectors-2026"
+      ],
+      "node_ids": [
+        "domain.quantum_information_theory",
+        "domain.algebra"
+      ],
+      "dictionary": "Logical pure qutrit -> known three-share encoding -> a physical support anchor and its auxiliary co-Choi comparison.",
+      "preserved": "Original3qutritslots,ordinarypartialtraces,rank-twooperatorcondition,complexconjugationsandtheattributedSchurmechanism.",
+      "lost_or_unproved": "No uniform PSD certificate over arbitrary logical amplitudes;21floating-point samples are not a proof. No extension under arbitrary local filters, all GHZ dimensions, or all support planes.",
+      "hypothesis_to_remove": "The fixed GHZ basis-vector anchor, replacing it by an arbitrary unit logical state encoded in the known three-qutrit code.",
+      "falsifier": "An exact normalized encoded anchor whose auxiliary A+B or A-B has a negative direction, a failed conjugation/norm claim, or an earlier theorem already giving this full comparison.",
+      "next_finite_task": "Audit410 independently checks exact background and one nontrivial six-term encoded anchor, not the full family. If that first member survives, a genuine logical-parameter-uniform certificate or an exact falsifier is still required. No paper claiming all anchors follows from one case.",
+      "paper_score": null,
+      "review_packet": "Author400has21numeric probes, not exact PSD. Author406exact H spectra distinguish a two-codeword sum from the GHZ local-unitary orbit, and81Gram entries confirm an elementary known-code compression identity with BOTH supports restricted. Audit410is running for that background and one member only. The prior fixed-anchor paper has its separate exact-version9.0technical/5.0importance review; no score transfers to this hypothesis."
     }
   ],
   "source_refresh": {
