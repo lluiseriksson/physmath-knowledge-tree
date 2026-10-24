@@ -25,7 +25,7 @@ The source inventory and targeted searches do not amount to reading all frontier
 
 - Target node: `domain.spectral_theory`.
 - Research move: `move.spectralize`.
-- Discovery confidence: `speculative`, pending complete exact-manuscript assessment and novelty comparison. Analytical author proofs and AI audits are not Lean formalization or human peer review.
+- Discovery confidence: `speculative` in this registry; analytical author proofs and AI audits are not Lean formalization, human peer review or worldwide novelty certification.
 - Dictionary: four omitted cyclic Weyl coefficients correspond to a real Hermitian kernel; commuting order-three generators correspond to nine equal-dimensional joint cells; a kernel eigenvalue is a sum `f_i + g_j` of zero-mean real triples; low-rank state differences correspond to trace-zero matrices with bounds on both inertias.
 - Preserved structure: Frobenius geometry, trace, spectrum with multiplicities, and the positive/negative inertia restrictions.
 - Lost or uncertain: experimental probability normalization, sample complexity, other missing-label patterns, unequal multiplicities, and an efficient subquadratic measurement scheme.
@@ -42,7 +42,9 @@ C(n,r) = 1/sqrt(1 - L(x))
 
 Explicit state pairs attain the proposed constant. At `r >= 2n`, a kernel element with inertias `(2n,2n)` gives an exact collision. A separate argument proposes the same threshold against positive competitors of unrestricted rank, with the conservative bound `sqrt(1 + 288n/(2n-r))`. The sharp balanced-rank constant must not be substituted for that one-sided bound.
 
-The parent manuscript is frozen as a seven-page draft; its full PDF assessment is pending. No importance grade or publication claim is assigned to this new draft. The exact-law audit, the one-sided-bound audit and the full-manuscript review are distinct processes with shared filesystem and declared reused model context, without independently attested runtime isolation.
+The seven-page draft 1 received private full-manuscript review 248: technical quality **8.5/10**, AIRR importance **3.5/10**, acceptance with minor revisions as a specialized mathematical note, with no material mathematical error found. Its PDF SHA256 is `c096d247a94cd4cb90d4d396791c7fe60df4126aeb635359189e1cb41616e501`. These are private exact-draft judgments, not a public AIRR aggregate or an editorial acceptance. The reviewer found the result technically sound but narrow in importance; correctness did not establish broad impact. A corrected draft is a different artifact and does not automatically inherit those scores.
+
+The documentation correction distinguishes **2,400 formula checks from 2,000 distinct instances**: the 400 cases at `r=n` are checked in both branches. The exact-law audit, the one-sided-bound audit and the full-manuscript review are distinct processes with shared filesystem and declared reused model context, without independently attested runtime isolation. No publication claim is made here for the new stability manuscript.
 
 - Concrete falsifiers: a trace-zero Hermitian difference with both inertias at most r and a larger hidden-energy ratio; an incorrect branch pencil; failure of a partial-cell attainer; or a kernel matrix with fewer than `2n` positive or negative eigenvalues.
 - Minimal formal target: prove the common-shift trace inequality for bounded inertia and the two symbolic four-by-four determinant identities. No Lean implementation is claimed.
