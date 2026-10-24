@@ -23,7 +23,7 @@ npm run validate:research-radar
 
 ## Update cycle
 
-Latest follow-up: [the two-mean law, actual review and Lorentzian barrier](notes/2026-10-24-two-mean-law-and-lorentzian-barrier.md), including the exact-draft review (importance 4.0, technical quality 8.0), closed minor corrections, an exact canonical Lorentzian counterexample and a separately open TU Jensen target. The previous [stable singleton-avoidance checkpoint](notes/2026-10-24-stable-singleton-boundary.md) remains preserved; its pending statuses are resolved in the new note. The earlier [tilted norms, strong-converse boundaries and optimal populations](notes/2026-10-24-reset-tilted-and-population-formulas.md) remains preserved with its actual assessment.
+Latest follow-up: [the Bell-sector review and frontier target](notes/2026-10-24-bell-review-and-frontier-target.md), including the exact-draft 8.8 technical/4.5 importance assessment, a separately audited rank-boundary control and the missing quantitative input of a speculative Erdős–Hajnal route. Earlier checkpoints remain preserved: [the two-mean law and Lorentzian barrier](notes/2026-10-24-two-mean-law-and-lorentzian-barrier.md), [stable singleton avoidance](notes/2026-10-24-stable-singleton-boundary.md), and [tilted norms and population formulas](notes/2026-10-24-reset-tilted-and-population-formulas.md). Their scores and scope are not transferred to later drafts.
 
 1. Read the previous snapshot and the research checkpoint; reconcile work from other author sessions before repeating a computation, assessment or deposit.
 2. Consult the original lab/repository, arXiv version history and correction notices. Inventory first, then read selected statements and proofs. Record failed access rather than inventing missing content.
@@ -43,6 +43,8 @@ The source registry contains bibliographic metadata and short original synthesis
 The canonical graph's 59 nodes and 115 edges are unchanged in this snapshot. This sidecar is designed to accumulate source knowledge without silently promoting graph confidence or solved status. Aspiring to AIRR 7, 8, 9 or 10 does not establish any of those scores or guarantee a discovery.
 
 ## Follow-up on 24 October
+
+The [Bell-sector review and frontier target](notes/2026-10-24-bell-review-and-frontier-target.md) resolves the pending complete-manuscript review: technical quality 8.8 and importance 4.5, with a bounded ACCEPT recommendation rather than AIRR admission. It records current source pins, a separately unscored rank-three control, and the precise missing estimate in a speculative subdivided-claw route. The importance-above-seven goal remains unmet; canonical graph confidence is unchanged.
 
 The [positive-completion and local Werner checkpoint](notes/2026-10-24-completion-and-werner-local-geometry.md) links two verified Working papers, records the completion manuscript's private 8.8 technical/3.4 importance assessment and the local-geometry draft's actual 9.0/4.0 assessment, and distinguishes corrected files from scored files. It preserves a product-ray novelty rejection against Wu–Zou and a separately falsifiable Bell-block candidate with pending proof and source audits. No graph confidence is upgraded.
 
