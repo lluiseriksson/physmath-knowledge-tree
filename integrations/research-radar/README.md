@@ -6,7 +6,7 @@ The first snapshot, observed on **24 October 2026**, contains:
 
 - Metadata for **719 OpenAI manuscripts in 372 families**, pinned to commit `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These are inventoried titles and links, not 719 reviewed proofs. Three withdrawal notices are preserved.
 - Sixteen source cards spanning OpenAI, Anthropic, DeepMind, the author's catalogues and relevant primary mathematical literature. Dates distinguish older background from current observations.
-- An inventory of 27 selected public research repositories. Three README files were read; the other entries are metadata only.
+- An inventory of 28 selected public research repositories. Three README files were read; the other entries are metadata only.
 - Five explicitly speculative candidate bridges with a dictionary, preserved and missing structure, a hypothesis to remove, a falsifier and a next task. None carries a manuscript score.
 
 ## Use
@@ -45,3 +45,5 @@ The canonical graph's 59 nodes and 115 edges are unchanged in this snapshot. Thi
 The [quantitative certificate update](notes/2026-10-24-planar-rational.md) records the completed note audit, exact draft identity, two exact angular examples and a separate pending manuscript review. Candidate confidence remains speculative in this discovery registry. New source cards include the instrument-extraction survey and distinct algebraic Lyapunov antecedents.
 
 The [audit and next-target update](notes/2026-10-24-audit44-next.md) preserves the actual draft1 score, the lower-bound attribution limit, selected circuit validity reading and a finite reproduction of prior branch decoding. None of these assigns a score to a speculative candidate.
+
+The new [Reversible Branch Lab](https://github.com/lluiseriksson/reversible-branch-lab) is a distinct executable reference, pinned in the repository inventory. Windows and Linux replay pass. Its supplied control flag and finite oracle scope are explicit; no superior protocol or new theorem is claimed.
