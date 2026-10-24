@@ -23,6 +23,8 @@ npm run validate:research-radar
 
 ## Update cycle
 
+Latest follow-up: [tilted norms, strong-converse boundaries and optimal populations](notes/2026-10-24-reset-tilted-and-population-formulas.md), including preserved numerical discrepancies and scoped historical attribution.
+
 1. Read the previous snapshot and the research checkpoint; reconcile work from other author sessions before repeating a computation, assessment or deposit.
 2. Consult the original lab/repository, arXiv version history and correction notices. Inventory first, then read selected statements and proofs. Record failed access rather than inventing missing content.
 3. Pin repository commits, source blobs and versioned papers. Keep earlier snapshots, corrections, withdrawals, failed hypotheses and disagreeing reports.
