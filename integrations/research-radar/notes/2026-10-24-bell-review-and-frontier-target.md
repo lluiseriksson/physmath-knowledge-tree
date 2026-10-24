@@ -51,10 +51,12 @@ Private source snapshots, hashes and reading limits are retained. Some text extr
 The closure obstruction and easy witness are recorded to prevent repackaging a missing estimate as a solution. They are not a substitute for the research result needed to advance the importance goal.
 
 
-## A falsifier of one stronger route, pending audit
+## A falsifier of one stronger route, confirmed by audit 363
 
 Author control 362 gives a 16-vertex attempted counterexample to the *literal universal* `HasNonNeighPureGrouping` extension for a family whose parameter-three graph is S222. It uses two handles, singleton shared stems, chain depth one, `p_comp=2` and width `tau=5/2`. The terminal ten-vertex set is an independent two-blowup of C5; every proper terminal module meets it in at most one vertex, but it has no pure pair of three-element subsets. Exact checks cover the antecedents, induced S222 exclusion and all 2100 disjoint triple pairs. The nine-file input packet was frozen before requesting audit 363.
 
 This is not a refutation of DeepMind's Spider/Bird theorem, which assumes and verifies the grouping property for those different families. It does not refute the actual sufficient comb dichotomy, which has at least 64 handles and additional width assumptions. If audit 363 confirms the falsifier, the stronger literal grouping extension must be abandoned; a weaker mechanism at the genuine application parameters remains a separate research question. No new paper or importance score follows from this negative control.
 
 Integrity observation retained with audit 358: the coordinator updated three Aletheia metadata fields after the auditor's initial snapshot. Its first sealing gate stopped; both versions and the diff remain preserved. The mathematical review applies to the unchanged frozen argument. Thirteen source texts have before/after byte evidence; four additional texts were compared to their fixed Git blobs without inventing initial hashes. This exception is not hidden by the final C/D archive comparison.
+
+Audit 363 subsequently closed PASS. The coordinator read the complete report and analytic proof and verified all 29 files against the preserved C/D archive. A distinct checker examined all 11,440 induced seven-vertex subsets, 2046 proper terminal-module candidates, and 2100 disjoint triple pairs. Analytic proofs establish S222 exclusion, terminal primality and the absence of a pure 3-by-3 pair. The stronger literal grouping extension is therefore discarded. The actual large-comb estimate remains unproved. The audit reused context and a shared filesystem; requested model settings were not independently attested.
