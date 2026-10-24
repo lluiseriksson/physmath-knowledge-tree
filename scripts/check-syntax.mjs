@@ -8,7 +8,7 @@ const files = [];
 
 function walk(directory) {
   for (const name of readdirSync(directory)) {
-    if (['dist', '.git', 'node_modules'].includes(name)) continue;
+    if (['dist', '.git', '.lake', 'node_modules'].includes(name)) continue;
     const file = join(directory, name);
     const stat = statSync(file);
     if (stat.isDirectory()) walk(file);

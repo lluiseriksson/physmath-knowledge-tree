@@ -264,3 +264,9 @@ npm run generate:yang-mills
 npm run query:yang-mills -- next-commit
 ```
 <!-- YANG_MILLS_AGENT_PACK_END -->
+
+## Latest research checkpoint
+
+[Reset-channel publications, manuscript review and the next falsifiable entropy hypothesis](integrations/research-radar/notes/2026-10-24-universal-reset-review-and-tensorization.md)
+records separate quality and importance judgments, preserved numerical failures,
+and a speculative multi-use direction without promoting graph confidence.
