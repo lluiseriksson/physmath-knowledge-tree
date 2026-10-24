@@ -44,7 +44,7 @@ The canonical graph's 59 nodes and 115 edges are unchanged in this snapshot. Thi
 
 ## Follow-up on 24 October
 
-The [positive-completion and local Werner checkpoint](notes/2026-10-24-completion-and-werner-local-geometry.md) links two further verified Working papers, preserves the exact completion manuscript's private 8.8 technical/3.4 importance assessment, and records a finite-copy local-geometry candidate with a separate pending full-manuscript review. It distinguishes local coercivity from global positivity and inventories a competing qutrit certificate without claiming a complete replay. No graph confidence is upgraded.
+The [positive-completion and local Werner checkpoint](notes/2026-10-24-completion-and-werner-local-geometry.md) links two verified Working papers, records the completion manuscript's private 8.8 technical/3.4 importance assessment and the local-geometry draft's actual 9.0/4.0 assessment, and distinguishes corrected files from scored files. It preserves a product-ray novelty rejection against Wu–Zou and a separately falsifiable Bell-block candidate with pending proof and source audits. No graph confidence is upgraded.
 
 The [Weyl publication and stability checkpoint](notes/2026-10-24-weyl-publications-and-stability.md) links two verified public working-paper versions, distinguishes selected primary reading from full proof coverage, and records the exact-conditioning draft's private 8.5 technical/3.5 importance assessment with its separate rank-restricted and unrestricted-positive scopes. Corrected drafts do not inherit scores automatically; graph confidence is unchanged.
 
