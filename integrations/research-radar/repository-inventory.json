@@ -201,7 +201,10 @@
       "commit": "76b5df33827ec898dfa9876a6a43f30fd7cc3a9f",
       "ci_run": 40060952450,
       "ci_scope": "PASS finite replay on Windows and Linux; not a theorem or comparison with optimized published circuits",
-      "source_manifest": "SOURCE_MANIFEST.json"
+      "source_manifest": "SOURCE_MANIFEST.json",
+      "comparison_commit": "e45b6be1ed6a585f0671f3a0e35f2cd840449d64",
+      "comparison_ci_run": 40062185412,
+      "comparison_scope": "PASS finite supplied-flag comparison on Windows/Linux, not a point-adder resource advantage. Initial pinned reference commit is preserved."
     }
   ]
 }

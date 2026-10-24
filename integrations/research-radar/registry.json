@@ -30,12 +30,13 @@
       "reading_status": "selected_sections_read",
       "evidence": "literature",
       "claim": "Selected design, validity, statistical guarantees and Appendix A were read. The evaluator explicitly tracks phase and ancilla cleanup; the stated failure guarantee depends on the actual input distribution. The appendix recovers divstep branch bits from reachable integer states.",
-      "limits": "Not a full46-page audit or gate replay. A small original integer reproduction covers4095 inputs,47168 active steps and12918 ambiguous decisions; it checks prior formulas, not coherent gates, resources or a new theorem. TQ savings do not imply a capacity increase.",
+      "limits": "Not a full46-page audit or gate replay of the complete published engine. Selected task contract, metadata and decoder sections were read in pinned primary code. New independent finite references match a common cleanup model; their costs are not whole point-adder counts or a capacity gain.",
       "reuse": "Bibliographic metadata and original synthesis only.",
       "anchors": [
         "domain.quantum_information_theory",
         "domain.complexity_theory"
-      ]
+      ],
+      "code_url": "https://github.com/andigu/uncompute/tree/64b5a13aa249f1360846657392e6c66817b26d0f"
     },
     {
       "id": "anthropic-bootloops",
@@ -404,9 +405,9 @@
       "lost_or_unproved": "No improved quantum circuit, clean-workspace construction, resource gain, universal runtime guarantee or novelty has been established. The underlying formula is prior work.",
       "hypothesis_to_remove": "The need to store every expensive high-depth decision, only if a cheaper fully accounted clean decoder exists.",
       "falsifier": "Any wrong reachable branch, residual phase or dirty workspace; or disappearance of savings after controls, scratch qubits and reverse cleanup are counted.",
-      "next_finite_task": "Compare the published optimized decoder with the new finite reference at depth6 under the same complete interface. Include depth-flag generation, routing, scratch reuse and cleanup. The supplied oracle flag alone is not a complete selector.",
+      "next_finite_task": "Apply a substantive-hypothesis gate before writing a manuscript: require a validated complete-protocol Pareto improvement or a new asymptotic/structural theorem. Include selector, routing, scratch lifetimes and later predicate death. Deprioritize a standalone paper based only on the finite oracle counts.",
       "paper_score": null,
-      "review_packet": "Original finite recurrence replay:4095 inputs across odd moduli3..127,47168 active transitions,12918 ambiguous decodes, maximum16 steps; all exact assertions passed. This reproduces prior formulas and has no paper score. A distinct reference artifact is now published at https://github.com/lluiseriksson/reversible-branch-lab/tree/76b5df33827ec898dfa9876a6a43f30fd7cc3a9f. Its complete controlled depth6 gate action passes4096 cases, with101 Toffolis and52 workspace qubits; no published-circuit advantage is established. Linux and Windows replay CI40060952450 pass."
+      "review_packet": "Original finite recurrence replay:4095 inputs across odd moduli3..127,47168 active transitions,12918 ambiguous decodes, maximum16 steps; all exact assertions passed. This reproduces prior formulas and has no paper score. A distinct reference artifact is now published at https://github.com/lluiseriksson/reversible-branch-lab/tree/76b5df33827ec898dfa9876a6a43f30fd7cc3a9f. Its complete controlled depth6 gate action passes4096 cases, with101 Toffolis and52 workspace qubits; no published-circuit advantage is established. Linux and Windows replay CI40060952450 pass. Follow-up at comparison commit e45b6be1ed6a585f0671f3a0e35f2cd840449d64: under the same measurement-based cleanup convention, depth6 arithmetic uses51 Toffolis/64 total qubits (TQ3264), versus124/15 (TQ1860) in an independent reconstruction of the described prefix traversal. Fewer gates do not establish a space-time improvement. At depth8 local TQ decreases with much larger workspace. All16 finite streams at depths5..8 pass complete basis and symbolic measurement-phase checks; CI40062185412 passes Windows/Linux. No full upstream engine replay or protocol advantage."
     }
   ],
   "source_refresh": {
