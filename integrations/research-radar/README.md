@@ -23,7 +23,7 @@ npm run validate:research-radar
 
 ## Update cycle
 
-Latest follow-up: [tilted norms, strong-converse boundaries and optimal populations](notes/2026-10-24-reset-tilted-and-population-formulas.md), including preserved numerical discrepancies and scoped historical attribution.
+Latest follow-up: [stable singleton-avoidance and boundary coefficients](notes/2026-10-24-stable-singleton-boundary.md), including a sharp three-regime proof checkpoint, an exact rational certificate, dependent audit limits and a separately unvalidated two-mean extension. The earlier [tilted norms, strong-converse boundaries and optimal populations](notes/2026-10-24-reset-tilted-and-population-formulas.md) remains preserved with its actual assessment.
 
 1. Read the previous snapshot and the research checkpoint; reconcile work from other author sessions before repeating a computation, assessment or deposit.
 2. Consult the original lab/repository, arXiv version history and correction notices. Inventory first, then read selected statements and proofs. Record failed access rather than inventing missing content.

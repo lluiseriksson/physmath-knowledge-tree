@@ -1,0 +1,159 @@
+{
+  "observed_on": "2026-10-24",
+  "base_commit": "6605a7792ed7dda9283a1f52d4db8023dd7d11b6",
+  "seed_nodes": [
+    "domain.probability_stochastics",
+    "domain.algebra",
+    "domain.analysis"
+  ],
+  "reading_scope": "Seed nodes, incident edges and immediate neighbors; canonical topics provide context only. No real-stable extremal theorem is encoded here.",
+  "research_move": "move.spectralize",
+  "nodes": [
+    {
+      "id": "domain.category_theory",
+      "confidence": "literature"
+    },
+    {
+      "id": "domain.algebra",
+      "confidence": "literature"
+    },
+    {
+      "id": "domain.analysis",
+      "confidence": "literature"
+    },
+    {
+      "id": "domain.functional_analysis",
+      "confidence": "literature"
+    },
+    {
+      "id": "domain.harmonic_analysis",
+      "confidence": "literature"
+    },
+    {
+      "id": "domain.probability_stochastics",
+      "confidence": "literature"
+    },
+    {
+      "id": "domain.pde",
+      "confidence": "literature"
+    },
+    {
+      "id": "domain.representation_theory",
+      "confidence": "literature"
+    },
+    {
+      "id": "bridge.random_matrix_zeta_spectra",
+      "confidence": "heuristic"
+    },
+    {
+      "id": "problem.navier_stokes",
+      "confidence": "literature"
+    },
+    {
+      "id": "domain.constructive_quantum_field_theory",
+      "confidence": "literature"
+    },
+    {
+      "id": "domain.renormalization_group",
+      "confidence": "literature"
+    },
+    {
+      "id": "bridge.ward_defect_weight_variation",
+      "confidence": "formal"
+    },
+    {
+      "id": "bridge.gaussian_covariance_collar",
+      "confidence": "literature"
+    },
+    {
+      "id": "bridge.gaussian_precision_markov_blanket",
+      "confidence": "formal"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge.category.algebra",
+      "source": "domain.category_theory",
+      "target": "domain.algebra",
+      "confidence": "literature"
+    },
+    {
+      "id": "edge.algebra.representation",
+      "source": "domain.algebra",
+      "target": "domain.representation_theory",
+      "confidence": "literature"
+    },
+    {
+      "id": "edge.analysis.functional_analysis",
+      "source": "domain.analysis",
+      "target": "domain.functional_analysis",
+      "confidence": "literature"
+    },
+    {
+      "id": "edge.analysis.harmonic",
+      "source": "domain.analysis",
+      "target": "domain.harmonic_analysis",
+      "confidence": "literature"
+    },
+    {
+      "id": "edge.probability.pde",
+      "source": "domain.probability_stochastics",
+      "target": "domain.pde",
+      "confidence": "literature"
+    },
+    {
+      "id": "edge.probability.navier",
+      "source": "domain.probability_stochastics",
+      "target": "problem.navier_stokes",
+      "confidence": "heuristic"
+    },
+    {
+      "id": "edge.probability.random_matrix_bridge",
+      "source": "domain.probability_stochastics",
+      "target": "bridge.random_matrix_zeta_spectra",
+      "confidence": "literature"
+    },
+    {
+      "id": "edge.analysis.constructive_qft",
+      "source": "domain.analysis",
+      "target": "domain.constructive_quantum_field_theory",
+      "confidence": "literature"
+    },
+    {
+      "id": "edge.probability.constructive_qft",
+      "source": "domain.probability_stochastics",
+      "target": "domain.constructive_quantum_field_theory",
+      "confidence": "literature"
+    },
+    {
+      "id": "edge.analysis.renormalization_group",
+      "source": "domain.analysis",
+      "target": "domain.renormalization_group",
+      "confidence": "literature"
+    },
+    {
+      "id": "edge.algebra.ward_defect",
+      "source": "domain.algebra",
+      "target": "bridge.ward_defect_weight_variation",
+      "confidence": "formal"
+    },
+    {
+      "id": "edge.probability.gaussian_collar",
+      "source": "domain.probability_stochastics",
+      "target": "bridge.gaussian_covariance_collar",
+      "confidence": "literature"
+    },
+    {
+      "id": "edge.probability.gaussian_markov_blanket",
+      "source": "domain.probability_stochastics",
+      "target": "bridge.gaussian_precision_markov_blanket",
+      "confidence": "formal"
+    }
+  ],
+  "canonical_sha256": {
+    "graph\\index.json": "78617d9f38de1b7af949226aabe8ff884a842a3e5f517a295711f71412cd981f",
+    "graph\\nodes\\core.json": "d9d284363730558ecf3dd095b11d6f2cfacd113519ef832ae61535ea48a2b6c1",
+    "graph\\edges.json": "308897f439d817cbdadc51b8bf9e42299d806fa1f663c5ffcf794ba93ca74dfe"
+  },
+  "canonical_edits": false
+}
