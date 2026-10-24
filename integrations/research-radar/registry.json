@@ -404,9 +404,9 @@
       "lost_or_unproved": "No improved quantum circuit, clean-workspace construction, resource gain, universal runtime guarantee or novelty has been established. The underlying formula is prior work.",
       "hypothesis_to_remove": "The need to store every expensive high-depth decision, only if a cheaper fully accounted clean decoder exists.",
       "falsifier": "Any wrong reachable branch, residual phase or dirty workspace; or disappearance of savings after controls, scratch qubits and reverse cleanup are counted.",
-      "next_finite_task": "At depth6 compare a clean arithmetic decoder with the published Boolean-rule implementation under one gate model. Include depth selection and cleanup; reject it if total resources do not improve.",
+      "next_finite_task": "Compare the published optimized decoder with the new finite reference at depth6 under the same complete interface. Include depth-flag generation, routing, scratch reuse and cleanup. The supplied oracle flag alone is not a complete selector.",
       "paper_score": null,
-      "review_packet": "Original finite recurrence replay:4095 inputs across odd moduli3..127,47168 active transitions,12918 ambiguous decodes, maximum16 steps; all exact assertions passed. This reproduces prior formulas and has no paper score."
+      "review_packet": "Original finite recurrence replay:4095 inputs across odd moduli3..127,47168 active transitions,12918 ambiguous decodes, maximum16 steps; all exact assertions passed. This reproduces prior formulas and has no paper score. A distinct reference artifact is now published at https://github.com/lluiseriksson/reversible-branch-lab/tree/76b5df33827ec898dfa9876a6a43f30fd7cc3a9f. Its complete controlled depth6 gate action passes4096 cases, with101 Toffolis and52 workspace qubits; no published-circuit advantage is established. Linux and Windows replay CI40060952450 pass."
     }
   ],
   "source_refresh": {
