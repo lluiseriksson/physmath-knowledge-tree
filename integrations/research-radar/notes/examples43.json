@@ -1,0 +1,40 @@
+[
+  {
+    "name": "changing_sign",
+    "X": [
+      "-x**5/2 + 5*x**3*y**2 - 5*x*y**4/2",
+      "3*x**4*y/2 + 9*x**2*y**3 - y**5/2"
+    ],
+    "A": "9*x**2/8 + 7*y**2/8",
+    "power": 16,
+    "denominator_exponent": 15,
+    "numerator_degree": 32,
+    "denominator_degree": 30,
+    "angular_target_margin": "1/2",
+    "power_factor_margin": "5/16",
+    "dense_coefficient_proxy_bits": 1790,
+    "dense_coefficient_json_sha256": "2158e295a24fa0c9f1ffd140a1984e9fa44f7fa381aba5e00a343325f6e8a602",
+    "exact_symbolic_identities": true,
+    "positivity_method": "analytic bounds plus exact identities, not a grid",
+    "general_solver_implemented": false
+  },
+  {
+    "name": "one_sign_zero",
+    "X": [
+      "-x**5/2 - x**3*y**2 - x**2*y**3 + 3*x*y**4/2 - y**5",
+      "-x**4*y/2 + x**3*y**2 - x**2*y**3 + x*y**4 + 3*y**5/2"
+    ],
+    "A": "x**4 + x**3*y/24 + 2*x**2*y**2 + x*y**3/32 + y**4",
+    "power": 128,
+    "denominator_exponent": 255,
+    "numerator_degree": 512,
+    "denominator_degree": 510,
+    "angular_target_margin": "17/162",
+    "power_factor_margin": "3137/41472",
+    "dense_coefficient_proxy_bits": 582584,
+    "dense_coefficient_json_sha256": "001707d6798ec2c3fd99428b19d636fb96c27418eb17bf1da1dd834532a5a915",
+    "exact_symbolic_identities": true,
+    "positivity_method": "analytic bounds plus exact identities, not a grid",
+    "general_solver_implemented": false
+  }
+]
