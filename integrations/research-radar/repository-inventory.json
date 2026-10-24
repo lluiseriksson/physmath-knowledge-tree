@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "observed_on": "2026-10-24",
-  "coverage": "27 selected public mathematics/physics research repositories from authenticated inventory; no claim of full source-code or proof review",
+  "coverage": "28 selected public mathematics/physics research repositories, including the newly verified finite branch laboratory; no claim of full source-code or proof review of the others",
   "repositories": [
     {
       "id": "lluiseriksson/ym-audit",
@@ -191,6 +191,17 @@
       "branch": "main",
       "visibility": "public",
       "reading_status": "readme_read"
+    },
+    {
+      "id": "lluiseriksson/reversible-branch-lab",
+      "url": "https://github.com/lluiseriksson/reversible-branch-lab",
+      "branch": "main",
+      "visibility": "public",
+      "reading_status": "original_reference_code_and_finite_replay",
+      "commit": "76b5df33827ec898dfa9876a6a43f30fd7cc3a9f",
+      "ci_run": 40060952450,
+      "ci_scope": "PASS finite replay on Windows and Linux; not a theorem or comparison with optimized published circuits",
+      "source_manifest": "SOURCE_MANIFEST.json"
     }
   ]
 }
