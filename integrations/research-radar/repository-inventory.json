@@ -1,0 +1,196 @@
+{
+  "schema_version": "1.0",
+  "observed_on": "2026-10-24",
+  "coverage": "27 selected public mathematics/physics research repositories from authenticated inventory; no claim of full source-code or proof review",
+  "repositories": [
+    {
+      "id": "lluiseriksson/ym-audit",
+      "url": "https://github.com/lluiseriksson/ym-audit",
+      "branch": "main",
+      "visibility": "public",
+      "reading_status": "metadata_only"
+    },
+    {
+      "id": "lluiseriksson/ym-mass-gap-lean-verification",
+      "url": "https://github.com/lluiseriksson/ym-mass-gap-lean-verification",
+      "branch": "main",
+      "visibility": "public",
+      "reading_status": "metadata_only"
+    },
+    {
+      "id": "lluiseriksson/THE-ERIKSSON-PROGRAMME",
+      "url": "https://github.com/lluiseriksson/THE-ERIKSSON-PROGRAMME",
+      "branch": "main",
+      "visibility": "public",
+      "reading_status": "metadata_only"
+    },
+    {
+      "id": "lluiseriksson/physmath-knowledge-tree",
+      "url": "https://github.com/lluiseriksson/physmath-knowledge-tree",
+      "branch": "main",
+      "visibility": "public",
+      "reading_status": "readme_read"
+    },
+    {
+      "id": "lluiseriksson/riemann-prime-resolvent",
+      "url": "https://github.com/lluiseriksson/riemann-prime-resolvent",
+      "branch": "main",
+      "visibility": "public",
+      "reading_status": "metadata_only"
+    },
+    {
+      "id": "lluiseriksson/lean-rooted-tree-polymer-expansion",
+      "url": "https://github.com/lluiseriksson/lean-rooted-tree-polymer-expansion",
+      "branch": "main",
+      "visibility": "public",
+      "reading_status": "metadata_only"
+    },
+    {
+      "id": "lluiseriksson/rooted-tree-catalan-closure",
+      "url": "https://github.com/lluiseriksson/rooted-tree-catalan-closure",
+      "branch": "master",
+      "visibility": "public",
+      "reading_status": "metadata_only"
+    },
+    {
+      "id": "lluiseriksson/mathlib-plane-tree-catalan",
+      "url": "https://github.com/lluiseriksson/mathlib-plane-tree-catalan",
+      "branch": "main",
+      "visibility": "public",
+      "reading_status": "metadata_only"
+    },
+    {
+      "id": "lluiseriksson/ym-lattice-numerics",
+      "url": "https://github.com/lluiseriksson/ym-lattice-numerics",
+      "branch": "main",
+      "visibility": "public",
+      "reading_status": "metadata_only"
+    },
+    {
+      "id": "lluiseriksson/lean-connes-kreimer",
+      "url": "https://github.com/lluiseriksson/lean-connes-kreimer",
+      "branch": "main",
+      "visibility": "public",
+      "reading_status": "metadata_only"
+    },
+    {
+      "id": "lluiseriksson/lean-os-positivity",
+      "url": "https://github.com/lluiseriksson/lean-os-positivity",
+      "branch": "main",
+      "visibility": "public",
+      "reading_status": "metadata_only"
+    },
+    {
+      "id": "lluiseriksson/lean-ym-flow",
+      "url": "https://github.com/lluiseriksson/lean-ym-flow",
+      "branch": "main",
+      "visibility": "public",
+      "reading_status": "metadata_only"
+    },
+    {
+      "id": "lluiseriksson/lean-gaussian-field",
+      "url": "https://github.com/lluiseriksson/lean-gaussian-field",
+      "branch": "main",
+      "visibility": "public",
+      "reading_status": "metadata_only"
+    },
+    {
+      "id": "lluiseriksson/lean-2d-yang-mills",
+      "url": "https://github.com/lluiseriksson/lean-2d-yang-mills",
+      "branch": "main",
+      "visibility": "public",
+      "reading_status": "metadata_only"
+    },
+    {
+      "id": "lluiseriksson/lean-transfer-matrix",
+      "url": "https://github.com/lluiseriksson/lean-transfer-matrix",
+      "branch": "main",
+      "visibility": "public",
+      "reading_status": "metadata_only"
+    },
+    {
+      "id": "lluiseriksson/lean-zero-free-regions",
+      "url": "https://github.com/lluiseriksson/lean-zero-free-regions",
+      "branch": "main",
+      "visibility": "public",
+      "reading_status": "metadata_only"
+    },
+    {
+      "id": "lluiseriksson/hausdorff-certificates",
+      "url": "https://github.com/lluiseriksson/hausdorff-certificates",
+      "branch": "main",
+      "visibility": "public",
+      "reading_status": "metadata_only"
+    },
+    {
+      "id": "lluiseriksson/physmath-lean-lemmas",
+      "url": "https://github.com/lluiseriksson/physmath-lean-lemmas",
+      "branch": "main",
+      "visibility": "public",
+      "reading_status": "metadata_only"
+    },
+    {
+      "id": "lluiseriksson/riemann-resolvent-programme",
+      "url": "https://github.com/lluiseriksson/riemann-resolvent-programme",
+      "branch": "main",
+      "visibility": "public",
+      "reading_status": "metadata_only"
+    },
+    {
+      "id": "lluiseriksson/aqft-split-inclusion-series",
+      "url": "https://github.com/lluiseriksson/aqft-split-inclusion-series",
+      "branch": "main",
+      "visibility": "public",
+      "reading_status": "metadata_only"
+    },
+    {
+      "id": "lluiseriksson/additive-gkls-leaky-boundary",
+      "url": "https://github.com/lluiseriksson/additive-gkls-leaky-boundary",
+      "branch": "main",
+      "visibility": "public",
+      "reading_status": "metadata_only"
+    },
+    {
+      "id": "lluiseriksson/support-leakage-rapid-maintenance",
+      "url": "https://github.com/lluiseriksson/support-leakage-rapid-maintenance",
+      "branch": "main",
+      "visibility": "public",
+      "reading_status": "metadata_only"
+    },
+    {
+      "id": "lluiseriksson/many-body-filling-maintenance-floor",
+      "url": "https://github.com/lluiseriksson/many-body-filling-maintenance-floor",
+      "branch": "main",
+      "visibility": "public",
+      "reading_status": "metadata_only"
+    },
+    {
+      "id": "lluiseriksson/finite-sample-spectral-certificates",
+      "url": "https://github.com/lluiseriksson/finite-sample-spectral-certificates",
+      "branch": "main",
+      "visibility": "public",
+      "reading_status": "readme_read"
+    },
+    {
+      "id": "lluiseriksson/p-vs-np-research-front",
+      "url": "https://github.com/lluiseriksson/p-vs-np-research-front",
+      "branch": "main",
+      "visibility": "public",
+      "reading_status": "metadata_only"
+    },
+    {
+      "id": "lluiseriksson/hodge-conjecture-research-front",
+      "url": "https://github.com/lluiseriksson/hodge-conjecture-research-front",
+      "branch": "main",
+      "visibility": "public",
+      "reading_status": "metadata_only"
+    },
+    {
+      "id": "lluiseriksson/point-span-tangent-absorption",
+      "url": "https://github.com/lluiseriksson/point-span-tangent-absorption",
+      "branch": "main",
+      "visibility": "public",
+      "reading_status": "readme_read"
+    }
+  ]
+}

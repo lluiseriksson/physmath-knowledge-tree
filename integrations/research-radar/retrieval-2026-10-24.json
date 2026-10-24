@@ -1,0 +1,43 @@
+{
+  "observed_on": "2026-10-24",
+  "target_nodes": [
+    "domain.analysis",
+    "domain.harmonic_analysis",
+    "domain.complexity_theory",
+    "domain.quantum_information_theory"
+  ],
+  "radius": 1,
+  "direction": "both",
+  "scope": "Context retrieval only; graph unchanged and no theorem inferred from adjacency.",
+  "node_ids": [
+    "bridge.conditional_mutual_information_recovery",
+    "bridge.local_operations_no_signalling",
+    "bridge.proof_complexity_geometry",
+    "domain.analysis",
+    "domain.complexity_theory",
+    "domain.constructive_quantum_field_theory",
+    "domain.functional_analysis",
+    "domain.harmonic_analysis",
+    "domain.pde",
+    "domain.quantum_information_theory",
+    "domain.renormalization_group",
+    "problem.navier_stokes",
+    "problem.p_vs_np"
+  ],
+  "edge_ids": [
+    "edge.analysis.functional_analysis",
+    "edge.analysis.harmonic",
+    "edge.harmonic.pde",
+    "edge.harmonic.navier",
+    "edge.complexity.pnp",
+    "edge.complexity.proof_geometry_bridge",
+    "edge.analysis.constructive_qft",
+    "edge.analysis.renormalization_group",
+    "edge.qinfo.no_signalling",
+    "edge.qinfo.cmi_recovery"
+  ],
+  "research_move_ids": [
+    "move.spectralize",
+    "move.dualize"
+  ]
+}

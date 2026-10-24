@@ -1,3 +1,7 @@
+# Current research radar — 24 October 2026
+
+[New source registry, catalogue metadata and bounded candidate tasks](2026-10-24.md) · [Searchable radar](../../integrations/research-radar/README.md). Earlier snapshots below remain preserved.
+
 # Research update — 9 September 2026
 
 This sweep curates **26 primary preprints**: **13 first submissions and 2 revised papers within 3–9 September**, plus **11 explicitly dated background sources**. It maps them to **25 public research repositories**. The search is targeted and non-exhaustive. Preprints are not represented as peer-reviewed findings.
