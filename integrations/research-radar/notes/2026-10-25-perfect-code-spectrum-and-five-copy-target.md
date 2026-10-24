@@ -1,4 +1,4 @@
-# Perfect-code spectra and a five-copy research target
+# Perfect-code reviews and a rank-positivity target
 
 Observed 25 October 2026. This follows the [Bell–GHZ assessment checkpoint](2026-10-24-bell-ghz-assessment-and-code-target.md). Canonical graph confidence and solved status remain unchanged.
 
@@ -34,26 +34,34 @@ The six-page manuscript **Three-level Choi spectra of reduction maps on perfect-
 
 The source compiles; the final six rendered pages were inspected. Exact author checks include full 81- and 625-dimensional polynomial coefficient Grams and a non-real encoding that rejects the unconjugated formula. These private verification records are not a ready public Research Capsule or a new canonical formalization.
 
-Full exact-PDF review 427 is running. **No importance or technical score exists yet for this draft.** The earlier Bell–GHZ manuscript's private 9.0 technical/5.0 importance result is not inherited. Requested reviewer configuration is Astra xhigh; actual runtime identity/effort are unattested. Reused context, shared filesystem and prior participation are declared. No public model score has been imported into AIRR.
+Full exact-PDF review 427 has closed: **8.5 technical quality, 4.0 AIRR importance, minor revision** for those exact bytes. The complete report and proof were read and its 112-file C/D archive checked. It found no material mathematical error, requested an explicit spectral-label convention, and supplied a classical EB comparison. The earlier Bell–GHZ manuscript's private 9.0 technical/5.0 importance result is not inherited. Requested reviewer configuration is Astra xhigh; actual runtime identity/effort are unattested. Reused context, shared filesystem and prior participation are declared. No public model score has been imported into AIRR.
+
+The reviewer derived the abstract EB conclusion through [Horodecki–Lewenstein–Vidal–Cirac's low-rank PPT separability theorem](https://arxiv.org/abs/quant-ph/0002089v1). At d=3,t=1 the Choi is PPT, rank 24, with marginal-support dimensions 3 and 24; the classical criterion proves separability. A positive decomposition extends EB to the whole parameter interval, even for arbitrary AME(4,3). This is a reviewer deduction from a classic theorem, not a claim that the particular application or CGL sector formulas were published in that source. It limits the novelty credit of abstract EB existence. The explicit measure-and-prepare realization remains separate information. The next manuscript must incorporate this comparison and the eigenvalue-label convention rather than only polishing language to seek a higher score.
 
 The manuscript is not yet deposited. It does not dominate the earlier one-ray anchor theorem: whole-code support and higher-rank sectors are different restrictions. The arbitrary logical one-ray comparison with a second direction outside the code is still open.
 
-## Bridge card: five physical shares
+## Five physical shares: closed mathematical audit
 
-- Target: the fivefold reduction map on an arbitrary AME(6,d) encoding.
+Audit 430 validated the universal five-copy minimum eta5=1−5t/d+10t²/d²−10t³/d+5t^4−dt^5, its simplicity for t>0, the unique monotone quintic CP threshold, and the half-parameter dimension boundary at 38. The complete proof and source comparison were read and 44 C/D files checked. The argument retains overlaps of disjoint pair-error spaces: summing five orthogonal incident-pair stars proves 2T<=5R. Explicit positive quadratic gaps show all other sectors exceed eta5. It is a universal minimum theorem, not a universal full-spectrum theorem.
+
+The normalization explanation needed a separate accepted correction: rowvec(V*)=sqrt(d) conjugate(Psi); its normalized vector is conjugate(Psi). This changes no inequality or threshold. The original proposal remains frozen. No manuscript score is assigned to this extension and the six-page draft has not been silently replaced.
+
+## Bridge card: exact positivity orders of encoded maps
+
+- Target: rank-constrained positivity of three- and fivefold reduction maps on perfect-code supports.
 - Source anchors: quantum information and algebra; move: finitize.
 - Current candidate confidence: speculative / under audit; no score.
-- Dictionary: one- and two-site local errors become subspace projections; their intersections determine a lower bound on the restricted Choi matrix.
+- Dictionary: code privacy may place centered error subspaces entirely in the physical output complement of the code, leaving an isotropic logical block and a CP complement.
 - Preserved structure: original physical trace slots, reference normalization, complex Gram conjugation, Frobenius norms and complete operator support.
-- Hypothesis to remove: the three-share restriction of the current spectral theorem. The proposed result would cover five physical shares, not arbitrary copy counts.
+- Hypothesis to remove: complete positivity limits the entire code dimension; the proposed rank-constrained classification would allow unbounded dimensions while keeping an explicit rank limit.
 - Missing structure: no assumption that error spaces on disjoint pairs are orthogonal, and no claim that the complete five-copy spectrum is universal.
 - Falsifier: an AME(6,d) and exact direction below the proposed minimum, a failed error-space/normalization identity, or a prior equivalent theorem requiring reattribution.
-- Minimal formal target: orthogonality of the four pair-error projections in each fixed-site star and the sum bound 2T<=5R.
-- Next task: mathematical and bounded antecedent audit 430 of frozen producer proposal 429. Do not revise draft 1 or transfer a score before that audit and a new exact-version assessment.
+- Minimal formal target: prove the stronger output-support consequence of the QEC privacy identity and the CP property of the remaining output block.
+- Next task: mathematical and bounded antecedent audit 433 of producer proposal 432. Group validated extensions in the parent manuscript and assess its new exact version; no score is inherited from the six-page draft.
 
-The producer proposes the exact minimum eta5=1−5t/d+10t²/d²−10t³/d+5t^4−dt^5. The argument keeps the possible overlaps of disjoint pair errors, bounds their sum by five orthogonal star sums, and compares the remaining sectors with eta5 by explicit positive quadratic identities. If valid, it gives a monotone quintic CP threshold and a half-parameter boundary at dimension 38. **Those are pending claims, not closed results in this checkpoint.** The scalar projector expectation itself follows known AME purities; the proposed stronger content is the operator lower bound for every such perfect tensor.
+The producer now proposes exact k-positivity classifications for the encoded maps. They would imply uniform order 8 for three physical shares and order 32 for five shares at t=1/2, with sharp adverse rank-9 and rank-33 code-projector examples in dimensions 43 and 245. **These rank-order claims are pending audit 433.** They concern the encoded logical map and whole-code column supports, not unrestricted physical tensor powers. Ordinary isotropic k-positivity and Schmidt-overlap criteria are prior tools; the missing obligation is the asserted output-block decomposition and positive complement. No tensor-stability claim for merely k-positive maps is inferred.
 
-The known six-vertex wheel graph supplies a possible construction: the producer checked all twenty three-by-three cut determinants are ±1 over the integers and gave a direct Fourier argument over Z_d. [Helwig's AME graph-state paper](https://arxiv.org/abs/1306.2879) is a source to compare, not evidence of a newly constructed code. Audit 430 must check the universal composite-dimension argument and the spectral claim separately.
+The known six-vertex wheel graph supplies AME(6,d) in every integer dimension d>=2. Audit 430 verified the twenty integer-unimodular cuts and cyclic-ring Fourier argument, and compared the graph visually with [Helwig's Figure 2(d)](https://arxiv.org/html/1306.2879v1). That paper's section 4.3 already gives the general existence conclusion. Neither the graph nor all-d existence is claimed new here. The scalar projector expectations also follow known AME purities; the additional audited five-copy content is the operator lower bound in every direction.
 
 ## Preserved adverse evidence
 
