@@ -1,0 +1,172 @@
+{
+  "status": "PASS_EXACT_CANONICAL_LORENTZIAN_COUNTEREXAMPLE",
+  "substitution_X": "w/10000 + 9999*x/10000",
+  "substitution_W": "33999*w/34000 + x/34000",
+  "normalization": 1,
+  "means": [
+    "1",
+    "3/5",
+    "17/5"
+  ],
+  "P_exact_degree": 5,
+  "nonstable_binary_discriminant": "-48243286078159/7225000000",
+  "P_x5_positive": "3192873811087/567942800000000000000000000",
+  "support": [
+    [
+      0,
+      0,
+      5
+    ],
+    [
+      0,
+      1,
+      4
+    ],
+    [
+      1,
+      0,
+      4
+    ],
+    [
+      1,
+      1,
+      3
+    ],
+    [
+      2,
+      0,
+      3
+    ],
+    [
+      2,
+      1,
+      2
+    ],
+    [
+      3,
+      0,
+      2
+    ],
+    [
+      3,
+      1,
+      1
+    ],
+    [
+      4,
+      0,
+      1
+    ],
+    [
+      4,
+      1,
+      0
+    ],
+    [
+      5,
+      0,
+      0
+    ]
+  ],
+  "symmetric_exchange_checks": 130,
+  "all_order3_derivatives": [
+    {
+      "orders": [
+        0,
+        0,
+        3
+      ],
+      "status": "one_positive_by_negative_principal2minor_and_nonnegative_det",
+      "det": "174001350480112450008201167710747410532481948337534163914273/1370875852305320000000000000000000000000000000000000000000000"
+    },
+    {
+      "orders": [
+        0,
+        1,
+        2
+      ],
+      "status": "one_positive_binary_block_and_zero_z_direction",
+      "det": "0"
+    },
+    {
+      "orders": [
+        0,
+        2,
+        1
+      ],
+      "status": "zero",
+      "det": "0"
+    },
+    {
+      "orders": [
+        0,
+        3,
+        0
+      ],
+      "status": "zero",
+      "det": "0"
+    },
+    {
+      "orders": [
+        1,
+        0,
+        2
+      ],
+      "status": "one_positive_by_negative_principal2minor_and_nonnegative_det",
+      "det": "81232527416397688158937163155047429796788112319603417727/1370875852305320000000000000000000000000000000000000000000000"
+    },
+    {
+      "orders": [
+        1,
+        1,
+        1
+      ],
+      "status": "one_positive_binary_block_and_zero_z_direction",
+      "det": "0"
+    },
+    {
+      "orders": [
+        1,
+        2,
+        0
+      ],
+      "status": "zero",
+      "det": "0"
+    },
+    {
+      "orders": [
+        2,
+        0,
+        1
+      ],
+      "status": "one_positive_by_negative_principal2minor_and_nonnegative_det",
+      "det": "6200791431437732577970134354364438037250273/1370875852305320000000000000000000000000000000000000000000000"
+    },
+    {
+      "orders": [
+        2,
+        1,
+        0
+      ],
+      "status": "one_positive_binary_block_and_zero_z_direction",
+      "det": "0"
+    },
+    {
+      "orders": [
+        3,
+        0,
+        0
+      ],
+      "status": "one_positive_by_negative_principal2minor_and_nonnegative_det",
+      "det": "315555573842283529176914081727/1370875852305320000000000000000000000000000000000000000000000"
+    }
+  ],
+  "probability": "16699438774659436771855887/113588560000000000000000000",
+  "upper5over34": true,
+  "e_upper": "31967/11760",
+  "e_upper_below68over25": true,
+  "strict_comparison": "probability<5/34<2/(5e), andprobability<31/200",
+  "scope": "Canonicalhomogenizationofexactdegree5PGFPisG;GnonnegativeLorentzianbyMconvexsupportandallquadraticpartials. Notrealstable. Doesnotrefute140stabletheorem.",
+  "mathematical_dependency": "BrandenHuhThm2.25characterization;positivechangeThm2.10alsoavailablebutnotneededforlistedexactHessianchecks",
+  "score": null
+}

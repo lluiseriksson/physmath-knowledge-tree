@@ -360,6 +360,41 @@
         "domain.quantum_information_theory",
         "domain.analysis"
       ]
+    },
+    {
+      "id": "branden-huh-lorentzian-v8",
+      "title": "Lorentzian polynomials: derivative signatures and nonnegative changes",
+      "url": "https://arxiv.org/html/1902.03719v8",
+      "kind": "preprint",
+      "version_date": "2024-07-17",
+      "observed_on": "2026-10-24",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Theorem2.25 supplies the M-convex-support and quadratic-derivative characterization; Theorem2.10 preserves Lorentzianity under nonnegative linear changes. Selected dependent-audit passages also cover homogeneous stable inclusion.",
+      "limits": "Not a full-paper audit, worldwide-priority search or a statement that every Lorentzian polynomial is stable. The own counterexample is separate from these source claims.",
+      "reuse": "Bibliographic metadata and original synthesis only; no source-paper full text or inferred training permission.",
+      "anchors": [
+        "domain.algebra",
+        "domain.probability_stochastics"
+      ]
+    },
+    {
+      "id": "leake-yekta-tu-jensen-2026",
+      "title": "Log-concavity and Approximate Counting for Totally Unimodular Polytopes",
+      "url": "https://arxiv.org/html/2609.39917v1",
+      "kind": "preprint",
+      "published_on": "2026-09-30",
+      "observed_on": "2026-10-24",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "The main statements give line log-concavity and capacity-based approximation for unimodular/TU fiber counts. Question1.7 asks for Jensen over finite distributions with integer barycenter.",
+      "limits": "Introductory statements and open question read; no complete proof audit. The own bounded probes and proposed partial reductions do not solve the general question.",
+      "reuse": "Bibliographic metadata and original synthesis only; no copied proof or inferred training permission.",
+      "anchors": [
+        "domain.algebra",
+        "domain.complexity_theory",
+        "domain.probability_stochastics"
+      ]
     }
   ],
   "candidates": [
@@ -497,6 +532,48 @@
       "next_finite_task": "Freeze and review the full manuscript in a fresh Astra context, preserving any adverse result. Finish the thermal-comparison supplement separately. Keep known depolarizing binary-entropy plateau attributed to Bennett et al.1999.",
       "paper_score": null,
       "review_packet": "Internal reused-context audits48/50/51 support the threshold, uniform quantum-to-classical reduction and explicit atom/diffuse certificate limit. These are conditional chains, not fresh full-paper review, human review or Lean verification. The first solver failure and all corrected finite runs remain available in the linked laboratory. No assigned paper importance."
+    },
+    {
+      "id": "lorentzian-singleton-extension",
+      "title": "Transfer the stable singleton law to Lorentzian homogenizations",
+      "status": "refuted",
+      "confidence": "speculative",
+      "source_ids": [
+        "branden-huh-lorentzian-v8"
+      ],
+      "node_ids": [
+        "domain.algebra",
+        "domain.probability_stochastics"
+      ],
+      "dictionary": "Stable PGF boundary event -> means and coefficient preserved under a Lorentzian homogeneous extension.",
+      "preserved": "The exact degree-five counterexample preserves normalization, means(1,3/5), and canonical homogenization.",
+      "lost_or_unproved": "Lorentzianity does not imply the sharp stable singleton bound; the correct Lorentzian envelope and minimal failing degree remain undetermined.",
+      "hypothesis_to_remove": "Replace real stability by Lorentzian canonical homogenization without changing the two-mean lower bound.",
+      "falsifier": "A normalized Lorentzian-canonical PGF below both stable branches; an exact degree-five example now supplies it.",
+      "next_finite_task": "Replay the published exact checker and retain the barrier; do not continue searching for a proof of the refuted extension.",
+      "paper_score": null,
+      "review_packet": "Two-mean manuscript has its separate exact-draft4.0importance/8.0quality assessment. No score for this extension. Dependent154research and root exact reconstruction verify the counterexample; no Lean claim."
+    },
+    {
+      "id": "tu-fiber-global-jensen",
+      "title": "Global Jensen for unimodular finite lattice fibers",
+      "status": "under_audit",
+      "confidence": "speculative",
+      "source_ids": [
+        "leake-yekta-tu-jensen-2026"
+      ],
+      "node_ids": [
+        "domain.algebra",
+        "domain.complexity_theory"
+      ],
+      "dictionary": "Integer right-hand sides -> exact fiber counts -> log-count concave envelope at integer barycenters.",
+      "preserved": "Unimodular system, finite fibers, nonnegative integer solutions and exact integer barycenter.",
+      "lost_or_unproved": "A line inequality does not imply Jensen for arbitrary finite supports. Proposed low-kernel-dimensional reductions still need review and prior-art comparison.",
+      "hypothesis_to_remove": "The line-supported restriction on the distribution of right-hand sides.",
+      "falsifier": "An exact unimodular system and rational finite weights with integer barycenter violating the Jensen inequality; all fiber counts and finiteness must be certified.",
+      "next_finite_task": "Audit finite-support reduction and low-kernel-dimensional cases, then identify the missing global injection or an exact counterexample; no claim from the bounded probes.",
+      "paper_score": null,
+      "review_packet": "Three small DAG count tables,90000sampled triples and60finite-supportLP searches found no strict lead. These are bounded observations only; no new manuscript or score."
     }
   ],
   "source_refresh": {

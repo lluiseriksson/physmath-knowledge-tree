@@ -1,0 +1,141 @@
+{
+  "observed_on": "2026-10-24",
+  "base_commit": "acc444b4e44486c2118868c6b627e561557ea287",
+  "seed_nodes": [
+    "domain.algebra",
+    "domain.complexity_theory",
+    "domain.probability_stochastics"
+  ],
+  "scope": "Seednodes andincidentedgesplusimmediateneighbors;contextnotproof;canonicalconfidenceunchanged",
+  "research_moves": [
+    "move.preserve_exact_target",
+    "move.find_barrier",
+    "move.local_to_global"
+  ],
+  "nodes": [
+    {
+      "id": "domain.category_theory",
+      "confidence": "literature"
+    },
+    {
+      "id": "domain.algebra",
+      "confidence": "literature"
+    },
+    {
+      "id": "domain.probability_stochastics",
+      "confidence": "literature"
+    },
+    {
+      "id": "domain.pde",
+      "confidence": "literature"
+    },
+    {
+      "id": "domain.representation_theory",
+      "confidence": "literature"
+    },
+    {
+      "id": "domain.complexity_theory",
+      "confidence": "literature"
+    },
+    {
+      "id": "bridge.random_matrix_zeta_spectra",
+      "confidence": "heuristic"
+    },
+    {
+      "id": "bridge.proof_complexity_geometry",
+      "confidence": "literature"
+    },
+    {
+      "id": "problem.navier_stokes",
+      "confidence": "literature"
+    },
+    {
+      "id": "problem.p_vs_np",
+      "confidence": "literature"
+    },
+    {
+      "id": "domain.constructive_quantum_field_theory",
+      "confidence": "literature"
+    },
+    {
+      "id": "bridge.ward_defect_weight_variation",
+      "confidence": "formal"
+    },
+    {
+      "id": "bridge.gaussian_covariance_collar",
+      "confidence": "literature"
+    },
+    {
+      "id": "bridge.gaussian_precision_markov_blanket",
+      "confidence": "formal"
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge.category.algebra",
+      "source": "domain.category_theory",
+      "target": "domain.algebra",
+      "confidence": "literature"
+    },
+    {
+      "id": "edge.algebra.representation",
+      "source": "domain.algebra",
+      "target": "domain.representation_theory",
+      "confidence": "literature"
+    },
+    {
+      "id": "edge.probability.pde",
+      "source": "domain.probability_stochastics",
+      "target": "domain.pde",
+      "confidence": "literature"
+    },
+    {
+      "id": "edge.probability.navier",
+      "source": "domain.probability_stochastics",
+      "target": "problem.navier_stokes",
+      "confidence": "heuristic"
+    },
+    {
+      "id": "edge.complexity.pnp",
+      "source": "domain.complexity_theory",
+      "target": "problem.p_vs_np",
+      "confidence": "literature"
+    },
+    {
+      "id": "edge.probability.random_matrix_bridge",
+      "source": "domain.probability_stochastics",
+      "target": "bridge.random_matrix_zeta_spectra",
+      "confidence": "literature"
+    },
+    {
+      "id": "edge.complexity.proof_geometry_bridge",
+      "source": "domain.complexity_theory",
+      "target": "bridge.proof_complexity_geometry",
+      "confidence": "literature"
+    },
+    {
+      "id": "edge.probability.constructive_qft",
+      "source": "domain.probability_stochastics",
+      "target": "domain.constructive_quantum_field_theory",
+      "confidence": "literature"
+    },
+    {
+      "id": "edge.algebra.ward_defect",
+      "source": "domain.algebra",
+      "target": "bridge.ward_defect_weight_variation",
+      "confidence": "formal"
+    },
+    {
+      "id": "edge.probability.gaussian_collar",
+      "source": "domain.probability_stochastics",
+      "target": "bridge.gaussian_covariance_collar",
+      "confidence": "literature"
+    },
+    {
+      "id": "edge.probability.gaussian_markov_blanket",
+      "source": "domain.probability_stochastics",
+      "target": "bridge.gaussian_precision_markov_blanket",
+      "confidence": "formal"
+    }
+  ]
+}
