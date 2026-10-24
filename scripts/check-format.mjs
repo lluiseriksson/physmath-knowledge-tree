@@ -13,7 +13,7 @@ const extensionlessText = new Set(['LICENSE']);
 
 function walk(dir) {
   for (const name of readdirSync(dir)) {
-    if (['dist', '.git', 'node_modules'].includes(name)) continue;
+    if (['dist', '.git', '.lake', 'node_modules'].includes(name)) continue;
     const path = join(dir, name);
     const stat = statSync(path);
     if (stat.isDirectory()) {
