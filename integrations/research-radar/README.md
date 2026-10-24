@@ -42,7 +42,7 @@ The canonical graph's 59 nodes and 115 edges are unchanged in this snapshot. Thi
 
 ## Follow-up on 24 October
 
-The [partial entropy bounds and missing bridges](notes/2026-10-24-entropy-audits-and-missing-bridges.md) records two narrowly audited lemmas, an explicit fixed-tuple small-noise interval, larger GHZ falsifiers and the precise gaps in erasure and four-weight interpolation transfers. The general conjecture and the manuscript importance target remain unresolved.
+The [partial entropy bounds and missing bridges](notes/2026-10-24-entropy-audits-and-missing-bridges.md) records two narrowly audited lemmas, an explicit fixed-tuple small-noise interval, larger GHZ falsifiers and the precise gaps in erasure and four-weight interpolation transfers. The later [weighted block entropy proof checkpoint](notes/2026-10-24-weighted-block-entropy-proof.md) supplies a direct analytical argument for the finite-dimensional tensor bound and strong Holevo additivity, with a dependent targeted audit. Full-manuscript assessment and exact novelty comparison remain separate; no importance target is certified.
 
 The [reviewed reset outcome and spectral/Holevo follow-up](notes/2026-10-24-spectral-holevo-followup.md) records the exact manuscript's5.5 quality/4.5 importance assessment, the completed exact-spectrum mathematical audit, unresolved primary-source overlap, and a separately falsifiable single-letter Holevo candidate. Mathematical validity, importance and priority remain distinct.
 
