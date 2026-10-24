@@ -15,7 +15,10 @@
       "claim": "The README reports 719 manuscripts in 372 families. All titles and links were extracted from CONTENTS.md; the history records three withdrawals on 7 October.",
       "limits": "Individual proofs, dependency correctness and formalization builds were not audited in this sweep. Repository claims remain claims of their authors.",
       "reuse": "Bibliographic metadata and original synthesis; no copied abstracts, proofs or inferred training permission.",
-      "anchors": ["domain.foundation_logic", "domain.complexity_theory"]
+      "anchors": [
+        "domain.foundation_logic",
+        "domain.complexity_theory"
+      ]
     },
     {
       "id": "anthropic-quantum-circuits",
@@ -29,7 +32,10 @@
       "claim": "Gu, Kemeny, Yelin and Lukin report evaluator-guided reversible-circuit search across eight tasks and improved resource trade-offs, including a modular-inversion architecture.",
       "limits": "Abstract and linked official announcement read; the 46-page paper, evaluator, reversibility proof and gate accounting were not reproduced. Gate savings alone do not imply a noisy-channel capacity gain.",
       "reuse": "Bibliographic metadata and original synthesis only.",
-      "anchors": ["domain.quantum_information_theory", "domain.complexity_theory"]
+      "anchors": [
+        "domain.quantum_information_theory",
+        "domain.complexity_theory"
+      ]
     },
     {
       "id": "anthropic-bootloops",
@@ -43,7 +49,10 @@
       "claim": "Schwartz describes BootLoops as a harness for exact calculations and cross-field hypothesis generation, with domain-expert selection of scientifically useful targets.",
       "limits": "Methodological context, not a theorem proving the value or novelty of our proposed connections; implementation and scientific claims were not reproduced.",
       "reuse": "Original short synthesis, not redistribution of the article.",
-      "anchors": ["domain.analysis", "domain.quantum_field_theory"]
+      "anchors": [
+        "domain.analysis",
+        "domain.quantum_field_theory"
+      ]
     },
     {
       "id": "deepmind-alphaevolve",
@@ -57,7 +66,10 @@
       "claim": "DeepMind describes search guided by evaluators, with examples in optimization, quantum circuits and mathematical counterexample search.",
       "limits": "Explicitly dated background, not a new October paper. Reported scientific and engineering performance is not independently reproduced here.",
       "reuse": "Original short synthesis only.",
-      "anchors": ["domain.complexity_theory", "domain.quantum_information_theory"]
+      "anchors": [
+        "domain.complexity_theory",
+        "domain.quantum_information_theory"
+      ]
     },
     {
       "id": "deepmind-formal-conjectures",
@@ -71,7 +83,10 @@
       "claim": "The repository distinguishes formalized conjecture statements from proved theorems and documents immutable benchmark tags and possible statement inaccuracies.",
       "limits": "A Lean statement or a finite instance does not prove the original conjecture. This sweep did not count current open statements or build the repository; an earlier local count is not treated as current.",
       "reuse": "Metadata and source links. Per-source rights and benchmark boundaries remain applicable.",
-      "anchors": ["domain.foundation_logic", "domain.number_theory"]
+      "anchors": [
+        "domain.foundation_logic",
+        "domain.number_theory"
+      ]
     },
     {
       "id": "korda-2026",
@@ -85,7 +100,10 @@
       "claim": "Korda reports undecidability in a fixed higher dimension and degree, and decidability of the usual stability notions for planar homogeneous fields.",
       "limits": "Abstract and earlier documented planar supplement reading reused; no new full proof or Lean build. Polynomial-certificate existence, stability, computable size and practical running time are distinct questions.",
       "reuse": "Bibliographic metadata and original synthesis.",
-      "anchors": ["domain.analysis", "domain.complexity_theory"]
+      "anchors": [
+        "domain.analysis",
+        "domain.complexity_theory"
+      ]
     },
     {
       "id": "ahmadi-el-khadir-2018",
@@ -99,7 +117,10 @@
       "claim": "Theorem 3.1 already gives rational Lyapunov functions of the form P divided by a power of the squared radius for asymptotically stable homogeneous systems; section 7 asks about coefficient-dependent bounds.",
       "limits": "The existence theorem is prior work. The proposed planar encoding bound must be checked separately and does not answer the arbitrary-dimensional question.",
       "reuse": "Bibliographic metadata and original synthesis; cited sections, not copied text.",
-      "anchors": ["domain.analysis", "domain.complexity_theory"]
+      "anchors": [
+        "domain.analysis",
+        "domain.complexity_theory"
+      ]
     },
     {
       "id": "liu-fitzsimmons-2026",
@@ -113,7 +134,10 @@
       "claim": "The authors give the planar homogeneous counterexample and analytic obstruction that motivate the distinction between rational and polynomial certificates.",
       "limits": "Earlier documented reading reused. The original counterexample, factor mechanism and two-parameter robustness are not our new discoveries; no new Lean replay in this sweep.",
       "reuse": "Bibliographic metadata and original synthesis.",
-      "anchors": ["domain.analysis", "domain.harmonic_analysis"]
+      "anchors": [
+        "domain.analysis",
+        "domain.harmonic_analysis"
+      ]
     },
     {
       "id": "eriksson-pick-2026",
@@ -128,7 +152,11 @@
       "limits": "Working paper, not AIRR acceptance. Its public aggregate is 3.20 from other reports; the involved Astra report gave technical 9 and importance 7. Reports disagree and are preserved; no score is transferred to proposals. No human or formal verification is claimed.",
       "pdf_sha256": "4a6b5d54cac9e0042dcbfdaaf8b055088a99bab7fe751ff7176ef64c65d2e5aa",
       "reuse": "Author's bibliographic metadata and original synthesis.",
-      "anchors": ["domain.analysis", "domain.harmonic_analysis", "domain.complexity_theory"]
+      "anchors": [
+        "domain.analysis",
+        "domain.harmonic_analysis",
+        "domain.complexity_theory"
+      ]
     },
     {
       "id": "eriksson-vixra-catalogue",
@@ -142,7 +170,62 @@
       "claim": "The author listing is accessible in this sweep and enumerates 135 entries, including mathematical-physics and matrix-analysis papers.",
       "limits": "Listing availability and entry numbers are verified, not all 135 proofs. Previous local 404 observations are historical and do not describe current availability.",
       "reuse": "Bibliographic metadata and source links only.",
-      "anchors": ["domain.analysis", "domain.spectral_theory"]
+      "anchors": [
+        "domain.analysis",
+        "domain.spectral_theory"
+      ]
+    },
+    {
+      "id": "xie-instruments-2026",
+      "title": "What the Machine Invented: Mining New Mathematical Instruments from OpenAI’s October 2026 Release of AI-Generated Mathematics",
+      "url": "https://arxiv.org/abs/2610.17090v1",
+      "kind": "preprint",
+      "published_on": "2026-10-12",
+      "observed_on": "2026-10-24",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Ying Xie extracts proposed proof instruments from 38 selected OpenAI families and records antecedents, dependencies and caveats. Introduction, methodological limits, cross-cutting patterns and selected entries were read.",
+      "limits": "This survey does not certify the source proofs or priority. No Lean project was built by its author. Our reading is selected sections, not 38 reconstructed arguments; source manuscripts must be checked before reuse.",
+      "reuse": "Bibliographic metadata and short original synthesis only; no source full text or training permission is redistributed.",
+      "anchors": [
+        "domain.foundation_logic",
+        "domain.analysis",
+        "domain.complexity_theory"
+      ]
+    },
+    {
+      "id": "abdelraouf-feron-shamma-2023",
+      "title": "Algebraic Lyapunov Functions for Homogeneous Dynamic Systems",
+      "url": "https://arxiv.org/abs/2303.02185v1",
+      "kind": "preprint",
+      "published_on": "2023-03-03",
+      "observed_on": "2026-10-24",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "The authors study implicit algebraic homogeneous Lyapunov functions defined by a positive root, using a homogeneous invariant polynomial equation.",
+      "limits": "Mathematical body read in primary HTML. This is antecedent context for certificate classes; no claim that the present construction replaces their method or proves its optimality. No software reproduction.",
+      "reuse": "Bibliographic metadata and short original synthesis only; no source full text or training permission is redistributed.",
+      "anchors": [
+        "domain.analysis",
+        "domain.complexity_theory"
+      ]
+    },
+    {
+      "id": "basu-real-algebraic-survey",
+      "title": "Algorithms in Real Algebraic Geometry: A Survey",
+      "url": "https://arxiv.org/abs/1409.1534",
+      "kind": "preprint",
+      "published_on": "2014-09-04",
+      "observed_on": "2026-10-24",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Basu surveys effective real quantifier elimination and sign determination; the author PDF Theorem 2.18 gives formula and coefficient-size bounds.",
+      "limits": "Theorem 2.18 and associated discussion read, not the whole survey. Effective real algebraic elimination is prior technology; its use does not by itself prove the new Lyapunov construction or novelty.",
+      "reuse": "Bibliographic metadata and short original synthesis only; no source full text or training permission is redistributed.",
+      "anchors": [
+        "domain.foundation_logic",
+        "domain.complexity_theory"
+      ]
     }
   ],
   "candidates": [
@@ -151,24 +234,40 @@
       "title": "Coefficient-height bounds for rational planar Lyapunov certificates",
       "status": "under_audit",
       "confidence": "speculative",
-      "source_ids": ["ahmadi-el-khadir-2018", "korda-2026", "eriksson-pick-2026"],
-      "node_ids": ["domain.analysis", "domain.harmonic_analysis", "domain.complexity_theory"],
+      "source_ids": [
+        "ahmadi-el-khadir-2018",
+        "korda-2026",
+        "eriksson-pick-2026",
+        "abdelraouf-feron-shamma-2023",
+        "basu-real-algebraic-survey"
+      ],
+      "node_ids": [
+        "domain.analysis",
+        "domain.harmonic_analysis",
+        "domain.complexity_theory"
+      ],
       "dictionary": "Rational input height -> algebraic separation; angular polynomial multiplier -> bounded logarithmic derivative; positive rational angular profile -> a C1 homogeneous certificate.",
       "preserved": "Fixed field degree, rational dense input, strict stability margins, angular zeros and sign cases, total output encoding.",
-      "lost_or_unproved": "Efficient implementation, higher-dimensional extension, matching lower bounds and novelty relative to all prior bounds.",
+      "lost_or_unproved": "General solver implementation, sharp constants, higher dimensions, matching lower bounds, exhaustive novelty and exact-manuscript importance remain unestablished. A construction-time extension is under separate audit.",
       "hypothesis_to_remove": "Nonvanishing angular velocity in the existing quantitative certificate-size analysis; use rational rather than polynomial certificates.",
       "falsifier": "A stable planar input that defeats an angular sign case, invalidates a margin or forces a second exponential in the stated encoding proof.",
-      "next_finite_task": "Complete the exact-proposal Astra audit; test zero, multiple-zero and sign-changing angular cases before writing a new theorem into a manuscript.",
+      "next_finite_task": "Complete the fresh exact 13-page PDF review of the construction bound; preserve the previous note audit and all contrary findings. Do not transfer a note verdict into a manuscript grade.",
       "paper_score": null,
-      "review_packet": "Not yet a scored manuscript; exact internal proposal identified in the local research checkpoint."
+      "review_packet": "Note 42 audit completed 24 October with no blocking mathematical objection; report SHA256 cc58713e69c731bd09658ae6d1733bb32508c4d1d7a2acfb8e07966c97e3005f. Author integration42a SHA fac60d1c81639647367e2c0bcee504cbbc810bf04f3581d7d3b350f5b22f6f35. Draft1 exact PDF SHA 711e728115e61d7348155281dc0e372dfc37d3a45bdc1275881552d102db6b41. Its separate fresh review is pending; no manuscript grade or AIRR publication claimed."
     },
     {
       "id": "interpolation-semidefinite-boundary",
       "title": "Which convex interpolation bodies admit useful semidefinite lifts?",
       "status": "queued",
       "confidence": "speculative",
-      "source_ids": ["openai-math-catalogue", "eriksson-pick-2026"],
-      "node_ids": ["domain.complexity_theory", "domain.analysis"],
+      "source_ids": [
+        "openai-math-catalogue",
+        "eriksson-pick-2026"
+      ],
+      "node_ids": [
+        "domain.complexity_theory",
+        "domain.analysis"
+      ],
       "dictionary": "A convex jet body -> candidate lifted positivity representation; cone examples -> controls on representation claims.",
       "preserved": "Convexity, input encoding and exact feasible-set quantifiers.",
       "lost_or_unproved": "No direct implication from hyperbolicity-cone results to the quadrant interpolation body has been proved. Nonspectrahedral does not mean no semidefinite lift.",
@@ -183,8 +282,14 @@
       "title": "Reversible-circuit evaluators versus communication resource guarantees",
       "status": "queued",
       "confidence": "speculative",
-      "source_ids": ["anthropic-quantum-circuits", "deepmind-alphaevolve"],
-      "node_ids": ["domain.quantum_information_theory", "domain.complexity_theory"],
+      "source_ids": [
+        "anthropic-quantum-circuits",
+        "deepmind-alphaevolve"
+      ],
+      "node_ids": [
+        "domain.quantum_information_theory",
+        "domain.complexity_theory"
+      ],
       "dictionary": "Reversible arithmetic circuit -> implementable channel; qubit and gate budget -> candidate operational resource constraint.",
       "preserved": "Reversibility, ancilla initialization and cleanup, exact action on basis states.",
       "lost_or_unproved": "Coherent action, error accumulation, noisy-channel capacity and physical cost are not established by classical truth-table tests alone.",
@@ -199,8 +304,14 @@
       "title": "Finite counterexample search with a checked statement dictionary",
       "status": "queued",
       "confidence": "speculative",
-      "source_ids": ["deepmind-formal-conjectures", "eriksson-vixra-catalogue"],
-      "node_ids": ["domain.foundation_logic", "domain.number_theory"],
+      "source_ids": [
+        "deepmind-formal-conjectures",
+        "eriksson-vixra-catalogue"
+      ],
+      "node_ids": [
+        "domain.foundation_logic",
+        "domain.number_theory"
+      ],
       "dictionary": "Original conjecture -> formal statement -> exact finite instance -> proof or counterexample certificate.",
       "preserved": "Quantifiers, integer domains, endpoint conditions and equivalence to the original question.",
       "lost_or_unproved": "A solved finite instance need not advance the asymptotic problem; a benchmark statement can be misformalized.",

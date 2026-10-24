@@ -5,7 +5,7 @@ A dated, searchable bridge between primary-source discovery, the existing knowle
 The first snapshot, observed on **24 October 2026**, contains:
 
 - Metadata for **719 OpenAI manuscripts in 372 families**, pinned to commit `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These are inventoried titles and links, not 719 reviewed proofs. Three withdrawal notices are preserved.
-- Ten source cards spanning OpenAI, Anthropic, DeepMind, the author's catalogues and relevant primary mathematical literature. Dates distinguish older background from current observations.
+- Thirteen source cards spanning OpenAI, Anthropic, DeepMind, the author's catalogues and relevant primary mathematical literature. Dates distinguish older background from current observations.
 - An inventory of 27 selected public research repositories. Three README files were read; the other entries are metadata only.
 - Four explicitly speculative candidate bridges with a dictionary, preserved and missing structure, a hypothesis to remove, a falsifier and a next task. None carries a manuscript score.
 
@@ -39,3 +39,7 @@ Reading levels are explicit: catalogue, abstract, announcement, README, selected
 The source registry contains bibliographic metadata and short original synthesis. It is not a redistributed full-text corpus or permission for model training. The existing frontier-corpus policy and per-source rights still apply to any later acquisition. Public inventories exclude private repositories and credentials.
 
 The canonical graph's 59 nodes and 115 edges are unchanged in this snapshot. This sidecar is designed to accumulate source knowledge without silently promoting graph confidence or solved status. Aspiring to AIRR 7, 8, 9 or 10 does not establish any of those scores or guarantee a discovery.
+
+## Follow-up on 24 October
+
+The [quantitative certificate update](notes/2026-10-24-planar-rational.md) records the completed note audit, exact draft identity, two exact angular examples and a separate pending manuscript review. Candidate confidence remains speculative in this discovery registry. New source cards include the instrument-extraction survey and distinct algebraic Lyapunov antecedents.
