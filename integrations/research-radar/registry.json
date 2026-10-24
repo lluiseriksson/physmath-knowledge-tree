@@ -292,6 +292,74 @@
         "domain.analysis",
         "domain.complexity_theory"
       ]
+    },
+    {
+      "id": "deepmind-lehmer-2026",
+      "title": "Breaking the high-degree barrier in Lehmer’s problem with a human–AI discovery loop",
+      "url": "https://arxiv.org/abs/2610.30277v1",
+      "kind": "preprint",
+      "published_on": "2026-10-21",
+      "observed_on": "2026-10-24",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "The authors combine polynomial search with exact verification and a five-parameter construction. Selected Section4 passages distinguish tested irreducibility through degree2000 from broader asymptotic construction claims.",
+      "limits": "Abstract and selected Section4 only; appendix proofs, irreducibility records and distributed searches have not been reproduced. This is not a solution of Lehmer’s conjecture.",
+      "reuse": "Bibliographic metadata and original short synthesis only; no source-text redistribution or inferred training permission.",
+      "anchors": [
+        "domain.number_theory",
+        "domain.complexity_theory"
+      ]
+    },
+    {
+      "id": "littlewood-scope-critique-2026",
+      "title": "OpenAI partially disproves Littlewood’s 1961 L-alpha-flat theorem",
+      "url": "https://arxiv.org/abs/2610.30797v1",
+      "kind": "preprint",
+      "published_on": "2026-10-22",
+      "observed_on": "2026-10-24",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "The author argues that the counterexample concerns a hyper-lacunary class outside an intended implicit hypothesis. Selected statements illustrate the need to preserve the exact problem dictionary.",
+      "limits": "The critique is an author claim, not an adjudicated correction. Its displayed transition from a supremum bound to pointwise ultraflatness needs separate scrutiny; the upstream proofs and historical sources have not been jointly audited.",
+      "reuse": "Bibliographic metadata and original short synthesis only; no source-text redistribution or inferred training permission.",
+      "anchors": [
+        "domain.harmonic_analysis",
+        "domain.foundation_logic"
+      ]
+    },
+    {
+      "id": "lean-quantumalg-2026",
+      "title": "Lean-QuantumAlg: A Framework for AI Agents to Produce Quantum Algorithms that Humans Can Trust",
+      "url": "https://arxiv.org/abs/2610.30216v1",
+      "kind": "preprint",
+      "published_on": "2026-10-21",
+      "observed_on": "2026-10-24",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "The framework binds correctness, resource bounds and joint borrowed-state restoration to one execution. Selected introduction and contract passages explain why separate resource counts or locally restored marginals are insufficient.",
+      "limits": "Abstract and selected contract sections only; no Lean build, package audit or independent reproduction of its nine demonstrations. The authors’ less-than-one-percent review metric is not a correctness guarantee.",
+      "reuse": "Bibliographic metadata and original short synthesis only; no source-text redistribution or inferred training permission.",
+      "anchors": [
+        "domain.quantum_information_theory",
+        "domain.foundation_logic"
+      ]
+    },
+    {
+      "id": "reset-minimax-lab-reference",
+      "title": "Reset minimax laboratory",
+      "url": "https://github.com/lluiseriksson/reset-minimax-lab/tree/093f9d34e3cecfe63a1a6cec0ac46eafdcd68412",
+      "kind": "repository",
+      "published_on": null,
+      "observed_on": "2026-10-24",
+      "reading_status": "readme_read",
+      "evidence": "literature",
+      "claim": "Original finite entropy-game diagnostics preserve an initial false solver-success case and a corrected28-case replay with two linear-program best responses per case. The Linux/Windows matrix40065903227 passed all28 cases on each platform.",
+      "limits": "Finite floating-point checks with explicit cutoff; no interval, formal, quantum-capacity or continuum certification. Check actual CI for platform coverage.",
+      "reuse": "Bibliographic metadata and original short synthesis only; no source-text redistribution or inferred training permission.",
+      "anchors": [
+        "domain.quantum_information_theory",
+        "domain.analysis"
+      ]
     }
   ],
   "candidates": [
@@ -408,6 +476,27 @@
       "next_finite_task": "Apply a substantive-hypothesis gate before writing a manuscript: require a validated complete-protocol Pareto improvement or a new asymptotic/structural theorem. Include selector, routing, scratch lifetimes and later predicate death. Deprioritize a standalone paper based only on the finite oracle counts.",
       "paper_score": null,
       "review_packet": "Original finite recurrence replay:4095 inputs across odd moduli3..127,47168 active transitions,12918 ambiguous decodes, maximum16 steps; all exact assertions passed. This reproduces prior formulas and has no paper score. A distinct reference artifact is now published at https://github.com/lluiseriksson/reversible-branch-lab/tree/76b5df33827ec898dfa9876a6a43f30fd7cc3a9f. Its complete controlled depth6 gate action passes4096 cases, with101 Toffolis and52 workspace qubits; no published-circuit advantage is established. Linux and Windows replay CI40060952450 pass. Follow-up at comparison commit e45b6be1ed6a585f0671f3a0e35f2cd840449d64: under the same measurement-based cleanup convention, depth6 arithmetic uses51 Toffolis/64 total qubits (TQ3264), versus124/15 (TQ1860) in an independent reconstruction of the described prefix traversal. Fewer gates do not establish a space-time improvement. At depth8 local TQ decreases with much larger workspace. All16 finite streams at depths5..8 pass complete basis and symbolic measurement-phase checks; CI40062185412 passes Windows/Linux. No full upstream engine replay or protocol advantage."
+    },
+    {
+      "id": "reset-energy-minimax-curve",
+      "title": "Exact fixed-ratio loss for quantum identity/replacement channels",
+      "status": "under_audit",
+      "confidence": "speculative",
+      "source_ids": [
+        "reset-minimax-lab-reference"
+      ],
+      "node_ids": [
+        "domain.quantum_information_theory",
+        "domain.analysis"
+      ],
+      "dictionary": "Quantum branch conditional entropy -> uniform classical entropy game -> positive discrete saddle certificates -> fixed energy-ratio limiting loss.",
+      "preserved": "Fixed transmission probability, separate mean-energy constraints, known reset channel, order of infimum and supremum, full infinite oscillator model in the analytical argument.",
+      "lost_or_unproved": "No unknown-channel universal code, finite-energy exact capacity, regularized C/P/Q result, uniqueness of every optimizer, exhaustive priority claim or importance grade.",
+      "hypothesis_to_remove": "A fixed reset state or negligible reset budget; quantify the positive loss when reset energy grows proportionally to input energy.",
+      "falsifier": "A coherent-input or dephasing counterexample to the uniform reduction; a failed global saddle inequality, singular Riemann limit or feasible-sequence construction; an earlier equivalent theorem.",
+      "next_finite_task": "Freeze and review the full manuscript in a fresh Astra context, preserving any adverse result. Finish the thermal-comparison supplement separately. Keep known depolarizing binary-entropy plateau attributed to Bennett et al.1999.",
+      "paper_score": null,
+      "review_packet": "Internal reused-context audits48/50/51 support the threshold, uniform quantum-to-classical reduction and explicit atom/diffuse certificate limit. These are conditional chains, not fresh full-paper review, human review or Lean verification. The first solver failure and all corrected finite runs remain available in the linked laboratory. No assigned paper importance."
     }
   ],
   "source_refresh": {
