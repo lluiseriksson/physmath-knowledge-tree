@@ -25,3 +25,5 @@ Run with Python and SymPy: `python examples43.py`. This writes the result beside
 - General implementation, explicit useful constants, lower bounds, and a broader impact case remain open.
 
 The source additions are bibliographic metadata and original short synthesis. No external full text or training shard is included. The canonical graph and its confidence labels remain unchanged. Priority is not established by a targeted search.
+
+Later evidence is preserved in the [audit44 follow-up](2026-10-24-audit44-next.md). The pending statuses above describe the earlier snapshot; they are not current review outcomes.

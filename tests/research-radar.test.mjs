@@ -11,7 +11,7 @@ const nodes = read('../graph/nodes/core.json').map((node) => node.id);
 
 test('radar snapshots reconcile source scopes, graph anchors and catalogue counts', () => {
   assert.deepEqual(validateResearchRadar(registry, catalogue, inventory, nodes), {
-    sources: 13, candidates: 4, families: 372, manuscripts: 719, repositories: 27,
+    sources: 16, candidates: 5, families: 372, manuscripts: 719, repositories: 27,
   });
   assert.equal(catalogue.withdrawal_notices.titles.length, 3);
 });
@@ -40,6 +40,10 @@ test('radar rejects unpinned metadata and private repository exposure', () => {
 test('search returns catalogue scope and keeps unreproduced claims unverified', () => {
   const results = searchResearchRadar(registry, catalogue, 'hyperbolicity');
   assert.ok(results.length >= 2);
-  assert.ok(results.every((item) => item.reading_status === 'catalogued' && item.validity === 'not_audited'));
+  const manuscripts = results.filter((item) => item.family);
+  assert.ok(manuscripts.length >= 2);
+  assert.ok(manuscripts.every((item) => item.reading_status === 'catalogued' && item.validity === 'not_audited'));
+  const sourceCards = results.filter((item) => !item.family);
+  assert.ok(sourceCards.some((item) => item.reading_status === 'selected_sections_read'));
   assert.deepEqual(searchResearchRadar(registry, catalogue, '  '), []);
 });

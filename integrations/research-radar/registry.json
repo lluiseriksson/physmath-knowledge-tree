@@ -27,10 +27,10 @@
       "kind": "preprint",
       "published_on": "2026-10-15",
       "observed_on": "2026-10-24",
-      "reading_status": "abstract_read",
+      "reading_status": "selected_sections_read",
       "evidence": "literature",
-      "claim": "Gu, Kemeny, Yelin and Lukin report evaluator-guided reversible-circuit search across eight tasks and improved resource trade-offs, including a modular-inversion architecture.",
-      "limits": "Abstract and linked official announcement read; the 46-page paper, evaluator, reversibility proof and gate accounting were not reproduced. Gate savings alone do not imply a noisy-channel capacity gain.",
+      "claim": "Selected design, validity, statistical guarantees and Appendix A were read. The evaluator explicitly tracks phase and ancilla cleanup; the stated failure guarantee depends on the actual input distribution. The appendix recovers divstep branch bits from reachable integer states.",
+      "limits": "Not a full46-page audit or gate replay. A small original integer reproduction covers4095 inputs,47168 active steps and12918 ambiguous decisions; it checks prior formulas, not coherent gates, resources or a new theorem. TQ savings do not imply a capacity increase.",
       "reuse": "Bibliographic metadata and original synthesis only.",
       "anchors": [
         "domain.quantum_information_theory",
@@ -131,8 +131,8 @@
       "observed_on": "2026-10-24",
       "reading_status": "selected_sections_read",
       "evidence": "literature",
-      "claim": "The authors give the planar homogeneous counterexample and analytic obstruction that motivate the distinction between rational and polynomial certificates.",
-      "limits": "Earlier documented reading reused. The original counterexample, factor mechanism and two-parameter robustness are not our new discoveries; no new Lean replay in this sweep.",
+      "claim": "The paper gives a planar homogeneous polynomial-certificate obstruction. LemmaIII.3 and familyIV-D were reread: their Fourier estimate also yields a short attributed rational-certificate degree consequence.",
+      "limits": "The inferred exponential dense-output scale is not a literal bit-complexity theorem stated in the source. It must not be presented as an independent new lower-scale discovery; no exhaustive historical-priority claim or Lean replay.",
       "reuse": "Bibliographic metadata and original synthesis.",
       "anchors": [
         "domain.analysis",
@@ -226,6 +226,71 @@
         "domain.foundation_logic",
         "domain.complexity_theory"
       ]
+    },
+    {
+      "id": "du-sharma-yap-sturm",
+      "title": "Amortized Bound for Root Isolation via Sturm Sequences",
+      "url": "https://cs.nyu.edu/exact/doc/sturmcomplexity.pdf",
+      "kind": "paper",
+      "published_on": null,
+      "observed_on": "2026-10-24",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Theorem2(i) and nearby controlled-subresultant analysis were inspected in the primary scanned PDF. They supply polynomial binary complexity for the univariate sign and root computations used in the certificate verifier.",
+      "limits": "This does not justify unrestricted rational-remainder coefficient growth or prove the Lyapunov construction. Selected pages3–5, not the entire paper.",
+      "reuse": "Bibliographic metadata and original short synthesis only.",
+      "anchors": [
+        "domain.complexity_theory",
+        "domain.analysis"
+      ]
+    },
+    {
+      "id": "openai-family095-scoped",
+      "title": "Family095: nonliftable cones and a liftable nonspectrahedral example",
+      "url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "kind": "preprint",
+      "published_on": "2026-10-05",
+      "observed_on": "2026-10-24",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Introductions and main statements of two pinned companion manuscripts were read. One claims a high-dimensional hyperbolicity cone without a finite lift; another gives a size100 lift with307 auxiliaries for a particular23-variable nonspectrahedral cone. These are different examples.",
+      "limits": "Neither full proof was audited. No map identifies our convex interpolation body with either cone. Nonspectrahedrality alone does not prohibit a lift. A pointwise Gram factor is not automatically a joint linear matrix pencil.",
+      "reuse": "Bibliographic metadata and original short synthesis only; no PDF or source text redistributed.",
+      "anchors": [
+        "domain.analysis",
+        "domain.complexity_theory"
+      ],
+      "artifacts": [
+        {
+          "name": "nonliftable-hyperbolicity.pdf",
+          "sha256": "48c3a89da2a380d18a71abf7d31ce49cc3488675607de304fcade3a8ae457b1a",
+          "pages": 29,
+          "read_scope": "Introduction, Theorem1.1, Propositions2.1–2.2 only"
+        },
+        {
+          "name": "Exact-Semidefinite-Lift-of-a-Nonspectrahedral-Hyperbolicity-Cone.pdf",
+          "sha256": "6b16fbcc207da5cceeb0aa1160ab8706a482340a7af3c46a38071c2cc76b3e75",
+          "pages": 10,
+          "read_scope": "Introduction, Theorem1.1, Lemmas2.1–2.2 and statement of3.1 only"
+        }
+      ]
+    },
+    {
+      "id": "meta-six-papers-2026",
+      "title": "Solving Open Research Problems Together",
+      "url": "https://research.meta.ai/blog/solving-open-research-problems-together",
+      "kind": "announcement",
+      "published_on": "2026-10-02",
+      "observed_on": "2026-10-24",
+      "reading_status": "announcement_read",
+      "evidence": "literature",
+      "claim": "The official announcement presents six collaborations and discusses concurrent Gaussian-ellipsoid threshold results. It distinguishes claims, attribution and human review arrangements.",
+      "limits": "Announcement only; none of the six technical proofs or concurrent papers was audited here. No new theorem or priority decision follows from the announcement.",
+      "reuse": "Bibliographic metadata and original short synthesis only.",
+      "anchors": [
+        "domain.analysis",
+        "domain.complexity_theory"
+      ]
     }
   ],
   "candidates": [
@@ -248,12 +313,12 @@
       ],
       "dictionary": "Rational input height -> algebraic separation; angular polynomial multiplier -> bounded logarithmic derivative; positive rational angular profile -> a C1 homogeneous certificate.",
       "preserved": "Fixed field degree, rational dense input, strict stability margins, angular zeros and sign cases, total output encoding.",
-      "lost_or_unproved": "General solver implementation, sharp constants, higher dimensions, matching lower bounds, exhaustive novelty and exact-manuscript importance remain unestablished. A construction-time extension is under separate audit.",
+      "lost_or_unproved": "General solver, useful explicit constants, higher dimensions and exhaustive priority remain unestablished. The exponential dense lower scale is an attributed consequence of a prior Fourier lemma, not an independent discovery. Final candidate3 has an exact-artifact8.9 technical/4.3 importance report, not an importance above7.",
       "hypothesis_to_remove": "Nonvanishing angular velocity in the existing quantitative certificate-size analysis; use rational rather than polynomial certificates.",
       "falsifier": "A stable planar input that defeats an angular sign case, invalidates a margin or forces a second exponential in the stated encoding proof.",
-      "next_finite_task": "Complete the fresh exact 13-page PDF review of the construction bound; preserve the previous note audit and all contrary findings. Do not transfer a note verdict into a manuscript grade.",
+      "next_finite_task": "Complete the authorized Working-paper release after operator access is available; the exact PDF is already privately deposited and clean. Broaden the next research target rather than repeatedly regrading minor variants.",
       "paper_score": null,
-      "review_packet": "Note 42 audit completed 24 October with no blocking mathematical objection; report SHA256 cc58713e69c731bd09658ae6d1733bb32508c4d1d7a2acfb8e07966c97e3005f. Author integration42a SHA fac60d1c81639647367e2c0bcee504cbbc810bf04f3581d7d3b350f5b22f6f35. Draft1 exact PDF SHA 711e728115e61d7348155281dc0e372dfc37d3a45bdc1275881552d102db6b41. Its separate fresh review is pending; no manuscript grade or AIRR publication claimed."
+      "review_packet": "Draft1: technical8.7, AIRR importance4.3, minor_revision, PDF711e728115e61d7348155281dc0e372dfc37d3a45bdc1275881552d102db6b41. Candidate2: technical8.9, importance4.3, accept with minor R3; PDF3cd4c5bb60b99943b2edffaf2319b9e660b99d812d24118c8b739f29749f26ec, addendum SHA6b51aacab16e770e639032d75a002caf57d8700be42345a8b270bc00c3590cff. Candidate3 closes R3 in a verified one-line delta; PDFdea974aaef07c8442856c26293bc9a20c236d1cf8cea89bcdb1a94bb35007610, addendum SHAb61df86876c47d833702870ccd73eecba6a1448e9e5ea36829c8ded5bccdf579 explicitly maintains8.9/4.3 for that hash. Context reused, no fresh or human review claim. Privately deposited24October; public release pending. Audit44 report SHA27dae8a4ff484f8677554efba0c9ae18d49ba404fa647eaf8f2459ab948b37eb limits novelty; no score for44."
     },
     {
       "id": "interpolation-semidefinite-boundary",
@@ -262,7 +327,8 @@
       "confidence": "speculative",
       "source_ids": [
         "openai-math-catalogue",
-        "eriksson-pick-2026"
+        "eriksson-pick-2026",
+        "openai-family095-scoped"
       ],
       "node_ids": [
         "domain.complexity_theory",
@@ -273,9 +339,9 @@
       "lost_or_unproved": "No direct implication from hyperbolicity-cone results to the quadrant interpolation body has been proved. Nonspectrahedral does not mean no semidefinite lift.",
       "hypothesis_to_remove": "Opaque weak-membership oracle implementation, if an explicit valid lift exists.",
       "falsifier": "The proposed lift fails a two-node or singular confluent interpolation instance, or its domain does not match the cone theorem.",
-      "next_finite_task": "Read the statements and version notices of OpenAI family095 before attempting a two-node lift; titles alone are insufficient.",
+      "next_finite_task": "Construct and test an explicit two-node interpolation representation, including singular and confluent boundaries. First state the actual set map; abandon any argument based only on the shared words convex or hyperbolic.",
       "paper_score": null,
-      "review_packet": "No proof or experiment yet."
+      "review_packet": "Two primary introductions/main statements now read with immutable PDF hashes. The examples have different dimensions and representation classes; no contradiction or transfer to our body is established."
     },
     {
       "id": "quantum-evaluator-resource-transfer",
@@ -295,9 +361,9 @@
       "lost_or_unproved": "Coherent action, error accumulation, noisy-channel capacity and physical cost are not established by classical truth-table tests alone.",
       "hypothesis_to_remove": "An uncosted implementation assumption in an operational protocol, if a certified circuit supplies it.",
       "falsifier": "A phase, ancilla or coherence counterexample despite correct classical outputs; or a gate-count gain that worsens the actual protocol cost.",
-      "next_finite_task": "Read the circuit paper and evaluator contract, then replay one small modular-inversion instance including phase and ancilla tests.",
+      "next_finite_task": "Specify the actual protocol input distribution and composition error before transferring a resource saving. Abandon a universal capacity or channel-norm claim inferred only from TQ or average-input tests.",
       "paper_score": null,
-      "review_packet": "No new circuit or capacity result is claimed."
+      "review_packet": "Selected primary validity sections already include exact phase, ancilla cleanup and distribution-aware failure bounds. A phase-blind critique would duplicate safeguards the source already has. Integer recurrence reproduction is linked in the follow-up note; no gate implementation or capacity result."
     },
     {
       "id": "formal-statement-finite-instance-audit",
@@ -320,6 +386,35 @@
       "next_finite_task": "Reuse recorded Green/Erdos triage and negative results before choosing a different conjecture; compare the original statement before running a solver.",
       "paper_score": null,
       "review_packet": "Existing small-value notes are not promoted to major discoveries."
+    },
+    {
+      "id": "reversible-divstep-decoders",
+      "title": "Clean high-depth decoders versus stored divstep history",
+      "status": "queued",
+      "confidence": "speculative",
+      "source_ids": [
+        "anthropic-quantum-circuits"
+      ],
+      "node_ids": [
+        "domain.quantum_information_theory",
+        "domain.complexity_theory"
+      ],
+      "dictionary": "Reachable integer branch invariant -> Boolean decision oracle; Boolean implementation -> coherent decoder with explicit phase and workspace cleanup.",
+      "preserved": "Exact branch value on reachable states; fixed modulus, depth flags and complete reversible interface.",
+      "lost_or_unproved": "No improved quantum circuit, clean-workspace construction, resource gain, universal runtime guarantee or novelty has been established. The underlying formula is prior work.",
+      "hypothesis_to_remove": "The need to store every expensive high-depth decision, only if a cheaper fully accounted clean decoder exists.",
+      "falsifier": "Any wrong reachable branch, residual phase or dirty workspace; or disappearance of savings after controls, scratch qubits and reverse cleanup are counted.",
+      "next_finite_task": "At depth6 compare a clean arithmetic decoder with the published Boolean-rule implementation under one gate model. Include depth selection and cleanup; reject it if total resources do not improve.",
+      "paper_score": null,
+      "review_packet": "Original finite recurrence replay:4095 inputs across odd moduli3..127,47168 active transitions,12918 ambiguous decodes, maximum16 steps; all exact assertions passed. This reproduces prior formulas and has no paper score."
     }
-  ]
+  ],
+  "source_refresh": {
+    "checked_utc": "2026-10-24T03:50:00Z",
+    "method": "git ls-remote HEAD; actual check occurred between03:50 and03:51UTC; second-resolution timestamp is approximate",
+    "openai_math_HEAD": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+    "deepmind_formal_conjectures_HEAD": "c094b979118b89adb77cf5f8d923ac9dd2e51b1d",
+    "changed_since_catalogue": false,
+    "proof_coverage": "Unchanged commits do not turn catalogued papers into audited proofs."
+  }
 }
