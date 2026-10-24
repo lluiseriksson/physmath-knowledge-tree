@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "observed_on": "2026-10-24",
-  "coverage": "28 selected public mathematics/physics research repositories, including the newly verified finite branch laboratory; no claim of full source-code or proof review of the others",
+  "coverage": "29 selected public mathematics/physics research repositories; no claim of full source-code or proof review of all repositories",
   "repositories": [
     {
       "id": "lluiseriksson/ym-audit",
@@ -205,6 +205,18 @@
       "comparison_commit": "e45b6be1ed6a585f0671f3a0e35f2cd840449d64",
       "comparison_ci_run": 40062185412,
       "comparison_scope": "PASS finite supplied-flag comparison on Windows/Linux, not a point-adder resource advantage. Initial pinned reference commit is preserved."
+    },
+    {
+      "id": "lluiseriksson/reset-minimax-lab",
+      "url": "https://github.com/lluiseriksson/reset-minimax-lab",
+      "branch": "main",
+      "visibility": "public",
+      "reading_status": "original_reference_code_and_finite_replay",
+      "commit": "093f9d34e3cecfe63a1a6cec0ac46eafdcd68412",
+      "ci_scope": "PASS all28 finite floating-point cases on Windows and Linux at commit093f9d34e3cecfe63a1a6cec0ac46eafdcd68412; neither formal nor interval certification.",
+      "source_manifest": "manifest.json",
+      "ci_run": 40065903227,
+      "initial_ci_failure": "40065899269: Windows checkout changed LF to CRLF and invalidated exact file hashes. The subsequent .gitattributes correction preserves bytes; numerical source and historical results are unchanged."
     }
   ]
 }
