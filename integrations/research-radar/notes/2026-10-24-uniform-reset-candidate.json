@@ -1,0 +1,41 @@
+{
+  "id": "uniform-reset-energy-threshold-48",
+  "status": "speculative_proof_candidate_awaiting_audit_and_novelty_search",
+  "confidence": "speculative",
+  "paper_score": null,
+  "canonical_graph_edit": false,
+  "question": "When does absolute entanglement-assisted erasure-benchmark recovery hold uniformly over reset states whose allowed energy grows with the input budget?",
+  "model": "Oscillator H=sum j|j><j|, fixed0<lambda<1, q=1-lambda, R_tau(rho)=lambda*rho+q*tau*Tr(rho), mean input energy at most E. M(E) is any nonnegative finite reset budget. Codes/capacities may depend on the channel; this is not an unknown-channel compound coding theorem.",
+  "candidate_claim": "Delta(E,M)=sup_{Tr(H tau)<=M(E)}[2*lambda*g(E)-C_EA(R_tau,E)] tends to zero as E tends to infinity if and only if M(E)/E tends to zero.",
+  "hypothesis_removed": "Replaces a fixed reset state, or a fixed bounded-energy family, by a growing family and proposes the exact growth threshold. Sufficiency is an immediate parameter extension of the cited escape bound; the thermal-family converse is the substantive candidate step.",
+  "proof_candidate": [
+    "All logs and entropies are in bits; g is oscillator Gibbs entropy. The erasure postprocessing converse gives 0<=2*lambda*g(E)-C_EA and I(rho,R_tau)<=2*lambda*S(rho).",
+    "Sufficiency: if M=o(E), choose integer K=ceil(sqrt(E*max{M,1})). Eventually K<E, K/E tends to zero and M/K tends to zero. Use the prior finite shifted/truncated geometric input with mean parameter m=E-K and d=ceil(2*(m+1)*ln(E+1)). Its strict mean cost is below E and entropy s has g(E)-s tending to zero. Markov gives delta=q*Tr(Pi*tau)<=q*min{1,M/K}, uniformly over the reset family. The prior dimension-free branch loss b(lambda,delta) tends to zero. Thus Delta<=2*lambda*(g(E)-s)+b(lambda,delta) tends to zero. This does not require the same code to work for all tau.",
+    "Converse by contradiction: if M/E does not tend to zero, there are c>0 and E_n tending to infinity with M(E_n)>=c*E_n. Select the allowed thermal reset tau_n=gamma_{c*E_n}. Suppose Delta tends to zero. The constrained EA single-letter formula supplies rho_n of mean at most E_n with 2*lambda*g(E_n)-I(rho_n,R_tau_n) tending to zero; an arbitrarily small optimization error is enough.",
+    "Write d_n=g(E_n)-S(rho_n). Since the mutual information is at most2*lambda*S(rho_n), d_n tends to zero. For gamma_E(j)=(E+1)^(-1)*(E/(E+1))^j, D(rho||gamma_E)=g(E)-S(rho)+(Tr(H rho)-E)*log2(1+1/E)<=d_n. Quantum Pinsker gives t_n=||rho_n-gamma_E_n||_1/2<=sqrt(ln(2)*d_n/2), hence t_n tends to zero.",
+    "Also ||rho_n||_infinity<=1/(E_n+1)+2*t_n, which tends to zero. This holds for coherent rho_n; no diagonal optimizer is assumed.",
+    "Purify rho as psi_RB, and introduce the classical branch F in omega_RBF=lambda*psi_RB tensor |T><T|+q*rho_R tensor tau_B tensor |Z><Z|. Since R and F are independent, I(R:BF)=2*lambda*S(rho). The exact branch loss is L=2*lambda*S(rho)-I(R:B)=S(F|B)-S(F|RB). The binary conditional entropies are finite. Here the thermal reset and the mean-energy input also give finite ordinary marginal entropies.",
+    "The two-outcome projector test onto psi guesses T on success. Its probability of a wrong guess is e=q*Tr(rho^2*tau)<=q*||rho||_infinity^2. The identity for the overlap uses the Schmidt basis and remains valid without commutation. Measurement and binary Fano imply 0<=S(F|RB)<=h2(e). Therefore S(F|RB) tends to zero along the sequence.",
+    "Replace rho_n by gamma_E_n only in the BF marginal. Their trace distance is lambda*t_n. Conditional-entropy continuity with conditioned system F of dimension2 gives a difference at most w(t_n)=2*t_n+(1+t_n)*h2(t_n/(1+t_n)), tending to zero. The conditioning space B may be infinite dimensional; the bound depends on dim F, not dim B.",
+    "For the thermal BF comparison state, B and F commute. Put p_j=gamma_E(j) and r_j=gamma_cE(j). Then S(F|B)=sum_j (lambda*p_j+q*r_j)*h2(lambda*p_j/(lambda*p_j+q*r_j))>=2*sum_j min{lambda*p_j,q*r_j}, using h2(x)>=2*min{x,1-x}.",
+    "Restrict that sum to0<=j<=floor(E). Both distributions decrease with j. The resulting lower bound is2*(floor(E)+1)*min{lambda*p_floor(E),q*r_floor(E)}. As E tends to infinity it tends to a_c=2*min{lambda*exp(-1),q*exp(-1/c)/c}>0.",
+    "Consequently liminf L>=a_c>0 for the near-optimal inputs, contradicting their vanishing total benchmark deficit. This rules out Delta tending to zero when M/E fails to tend to zero. It does not identify the optimal positive limiting deficit when M/E tends to c>0."
+  ],
+  "falsifiers_and_audit_targets": [
+    "Check the constrained EA formula under the stated mean-input convention and finite output energy for the chosen thermal resets.",
+    "Check the purification overlap Tr(rho^2*tau) without a commutation assumption and the branch conditional-entropy identity.",
+    "Check that conditional continuity controls the finite branch register, not the infinite oscillator.",
+    "Reject any inference that a uniform capacity estimate supplies a universal unknown-channel encoder/decoder.",
+    "Abandon novelty/importance claims if earlier uniform-reset results imply the same iff threshold; a correct short corollary may still be below the publication-impact goal."
+  ],
+  "sources": [
+    {"url": "https://airr.science/papers/ARR-2026-58XZ9SCZA39DSRF0/versions/v1/", "role": "Own prior shifted-geometric escape, dimension-free binary branch bound and fixed-reset capacity results. Selected oscillator sections read in the local final source; this is a dependent extension, not an independent rediscovery."},
+    {"url": "https://arxiv.org/abs/1210.6926v2", "role": "Holevo-Shirokov constrained EA formula, Theorem1 equation14, checked in author-hosted primary excerpt; no full-paper audit."},
+    {"url": "https://arxiv.org/abs/1507.07775v6", "role": "Winter finite-conditioned-system conditional-entropy continuity; abstract rechecked, exact constant/application remains an audit target."},
+    {"url": "https://arxiv.org/abs/2604.26874v2", "role": "Catalano et al. bosonic fading antecedent. Abstract/introduction refreshed, selected reset results already attributed in the own prior manuscript. Fading is not the same growing thermal-reset problem."},
+    {"url": "https://arxiv.org/abs/2607.27449v1", "role": "Mele et al. thermal-attenuator threshold. Abstract only read; rank-two non-Gaussian witness is source-reported, not reproduced. Distinct channel, not a proof of this candidate."},
+    {"url": "https://arxiv.org/abs/2610.17090v1", "role": "Ying Xie extraction survey of38 OpenAI families. Abstract only read: provisional instruments/antecedents, no independent proof/priority certification or compiled Lean. Discovery lead, not mathematical validation."}
+  ],
+  "search_scope": "Targeted internet queries for reset/replacer capacity, uniform energy families and current official OpenAI/Anthropic/DeepMind research pages. No claim of an exhaustive literature or proof sweep. Raw third-party search snippets are not evidence.",
+  "remaining_before_manuscript": "Independent mathematical audit, targeted priority search and assessment of whether this threshold is a substantial result rather than an incremental corollary. No new paper, assigned score, formal verification or public AIRR submission follows from this note."
+}
