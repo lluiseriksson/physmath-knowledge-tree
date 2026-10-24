@@ -395,6 +395,72 @@
         "domain.complexity_theory",
         "domain.probability_stochastics"
       ]
+    },
+    {
+      "id": "deepmind-eh-all-paths-2026",
+      "title": "Erdos-Hajnal for paths and beyond: source statements and closures",
+      "url": "https://github.com/google-deepmind/superhuman/tree/9b620a92886b3a7655b30ddcfe36e725e9596509/FutureMath/Erdos-Hajnal",
+      "kind": "repository",
+      "published_on": null,
+      "observed_on": "2026-10-24",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Selected graph/closure definitions, theorem statements and Stage2 hypotheses were read. The README acknowledges Nguyen preceding the all-path result. The actual master theorem enforces non-vacuous fixed-constant compatibility.",
+      "limits": "Not a complete source proof audit or Lean build. The S222 reduction remains a speculative target; an elementary closure obstruction and finite witness are not an EH proof or priority certificate.",
+      "reuse": "Metadata, source links and original analysis; private text snapshots retain license and transformation records, no source full texts in this repository.",
+      "anchors": [
+        "domain.complexity_theory",
+        "domain.foundation_logic"
+      ]
+    },
+    {
+      "id": "nguyen-eh-paths-2026",
+      "title": "Erdos-Hajnal for excluding paths",
+      "url": "https://arxiv.org/html/2610.24887v1",
+      "kind": "preprint",
+      "published_on": "2026-10-17",
+      "observed_on": "2026-10-24",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Theorems1.2 and1.3 state the EH property for all paths and the specified S_(1,2,t) and edge-added families; introduction and concurrent-work account were read.",
+      "limits": "No full bookkeeping/splitting-path proof audit. This is a prior result, not our extension; omitted families are not thereby certified worldwide-open.",
+      "reuse": "Bibliographic metadata and original short synthesis only.",
+      "anchors": [
+        "domain.complexity_theory"
+      ]
+    },
+    {
+      "id": "bourneuf-long-claws-2025",
+      "title": "Graphs with No Long Claws: An Improved Bound for the Analog of the Gyarfas Path Argument",
+      "url": "https://drops.dagstuhl.de/storage/00lipics/lipics-vol345-mfcs2025/html/LIPIcs.MFCS.2025.28/LIPIcs.MFCS.2025.28.html",
+      "kind": "paper",
+      "published_on": null,
+      "observed_on": "2026-10-24",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Theorem3 gives either an induced S_ttt or removal of at most3t+11 neighborhoods followed by a balanced rigid extended strip decomposition. Selected overview and limitations were read.",
+      "limits": "Not a complete proof or algorithm replay. The authors improve a quasipolynomial MWIS bound; no calibrated Stage1 EH transfer or polynomial-time conclusion is supplied here.",
+      "reuse": "Primary link and original synthesis only.",
+      "anchors": [
+        "domain.complexity_theory"
+      ]
+    },
+    {
+      "id": "anthropic-flt-verification-2026",
+      "title": "Fermat Last Theorem Lean artifact: verification contract",
+      "url": "https://github.com/anthropics/fermats-last-theorem/tree/6e837e75355538c7f80bab5b956861e86c4eacc2",
+      "kind": "repository",
+      "published_on": null,
+      "observed_on": "2026-10-24",
+      "reading_status": "readme_read",
+      "evidence": "literature",
+      "claim": "The pinned README describes the FLT statement, standard-axiom gate, comparator and second-kernel checks, with explicit resource requirements and provenance.",
+      "limits": "No local full build, comparator or second-kernel replay. Formalization of known FLT is not a new mathematical discovery of this ledger.",
+      "reuse": "Metadata and verification-contract summary only; no imported proof corpus or inferred training permission.",
+      "anchors": [
+        "domain.foundation_logic",
+        "domain.number_theory"
+      ]
     }
   ],
   "candidates": [
@@ -574,6 +640,29 @@
       "next_finite_task": "Audit finite-support reduction and low-kernel-dimensional cases, then identify the missing global injection or an exact counterexample; no claim from the bounded probes.",
       "paper_score": null,
       "review_packet": "Three small DAG count tables,90000sampled triples and60finite-supportLP searches found no strict lead. These are bounded observations only; no new manuscript or score."
+    },
+    {
+      "id": "eh-s222-calibrated-stage1",
+      "title": "Calibrated Stage1 estimate for the subdivided-claw target",
+      "status": "under_audit",
+      "confidence": "speculative",
+      "source_ids": [
+        "deepmind-eh-all-paths-2026",
+        "nguyen-eh-paths-2026",
+        "bourneuf-long-claws-2025"
+      ],
+      "node_ids": [
+        "domain.complexity_theory",
+        "domain.foundation_logic"
+      ],
+      "dictionary": "Forbidden induced graph and its complement -> exact comb/blockade estimate with compatible constants -> prior Stage2 homogeneous-set theorem. Formal source statements preserve hypotheses; they do not prove a new instance.",
+      "preserved": "Finite simple graphs, induced copies, prime modules, original complement, quantitative widths and c7<=3c2 compatibility.",
+      "lost_or_unproved": "No calibrated S222 Stage1 bound, full EH theorem, universal-open/priority certification, formal build or manuscript score.",
+      "hypothesis_to_remove": "The source family restriction, by proving the actual quantitative comb estimate for S222 rather than renaming or vacuously existentially quantifying it.",
+      "falsifier": "Wrong closure constructor, missed module/generator isomorphism, failed witness identification, an additional master-theorem hypothesis, a counterexample to a proposed bound, or an antecedent settling it.",
+      "next_finite_task": "The literal universal grouping extension is refuted by the audited16-vertex control363. Seek a genuinely weaker mechanism for the actual large-comb estimate, or retire this candidate; no such quantitative estimate is proved.",
+      "paper_score": null,
+      "review_packet": "Audit358 PASS with scope/attribution qualifications and preserved metadata-integrity exception; root verified68C/Dfiles. Audit363 PASS confirms the literal grouping falsifier with full analytic proofs and29C/Dfiles verified. Neither audit proves EH or refutes the actual source Spider/Bird theorem or the large-comb CD. No score."
     }
   ],
   "source_refresh": {
@@ -582,6 +671,16 @@
     "openai_math_HEAD": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
     "deepmind_formal_conjectures_HEAD": "c094b979118b89adb77cf5f8d923ac9dd2e51b1d",
     "changed_since_catalogue": false,
-    "proof_coverage": "Unchanged commits do not turn catalogued papers into audited proofs."
+    "proof_coverage": "Unchanged commits do not turn catalogued papers into audited proofs.",
+    "followup352": {
+      "recorded_utc": "2026-10-24T20:15:04.881941+00:00",
+      "method": "Connected GitHub GET of current HEAD and pinned files; selected primary reading, not proof corpus replay",
+      "openai_math_HEAD": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "openai_contents_blob": "2c68c086fff36a5806c936ad1659cf1a8d0b6dd9",
+      "openai_catalogue_changed": false,
+      "deepmind_superhuman_HEAD": "9b620a92886b3a7655b30ddcfe36e725e9596509",
+      "anthropic_FLT_HEAD": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+      "proof_coverage": "Selected statements/definitions and READMEs; no full external formalization build."
+    }
   }
 }
