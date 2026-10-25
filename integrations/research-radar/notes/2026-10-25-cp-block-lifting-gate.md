@@ -69,6 +69,18 @@ upper domination 20<=12 fails. This is not a counterexample to compression:
 the genuine comparator gives equality, 20=20. It rejects an automatic
 amplification of scalar isometry, not Heinavaara's theorem.
 
+The obstruction also occurs inside the missing factor-order interval, at
+order 3 (output order p=3/2). Uniform circle measure of total mass 3*pi/2
+realizes the scalar S3 isometry, since the average of |cos(theta)|^3 is
+4/(3*pi). For the same M, `Tr|M|^3=6sqrt(3)+2>12`. On the circle, |xy|<=1/2,
+so the scalar trace is at most `(3sqrt(6)+sqrt(2))/4`. Its integral is
+less than 297/28<11, using sqrt(6)<5/2, sqrt(2)<3/2 and pi<22/7.
+The last inequality follows from the strictly positive integral
+`integral_0^1 t^4(1-t)^4/(1+t^2) dt =22/7-pi`. Thus this particular valid
+scalar S3 embedding cannot give even upper domination after amplification.
+The actual Schatten compression still holds with equality. This example
+does not exclude a separately proved, restricted transfer theorem.
+
 The [symbolic diagnostic](../checks/cp-block-lifting.py) checks these exact
 identities and supplies an explicit eight-point positive measure realizing
 the scalar S4 isometry. It uses SymPy, not Lean. The observation is an original

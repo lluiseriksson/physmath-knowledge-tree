@@ -26,8 +26,19 @@ assert actual==20 and lifted==12 and actual>lifted
 C=s.Matrix([[2,1],[1,2]])
 compression_bound=2*s.trace(C*C)
 assert compression_bound==actual
+# The same shortcut fails inside the missing factor-order interval, at r=3.
+# Uniform circle measure of mass 3*pi/2 is an exact scalar S3 isometry:
+# average |cos(theta)|^3=4/(3*pi).
+t=s.symbols('t',real=True)
+assert s.integrate(s.cos(t)**3,(t,0,s.pi/2))==s.Rational(2,3)
+assert sorted((M*M.T).eigenvals().items())==[(1,2),(3,2)]
+# |xy|<=1/2 on the circle. Convexity/evenness bounds the scalar trace by
+# (3*sqrt(6)+sqrt(2))/4. Its integral is <297/28<11, while actual >12.
+assert s.Rational(25,9)<3 and 6<s.Rational(25,4) and 2<s.Rational(9,4)
+assert s.simplify(s.integrate(t**4*(1-t)**4/(1+t*t),(t,0,1))-(s.Rational(22,7)-s.pi))==0
+assert s.Rational(297,28)<11
 alpha,beta,eta,delta,K,u,v=s.symbols('alpha beta eta delta K u v',real=True)
 trT2=alpha**2+beta**2+eta**2+delta**2+2*(alpha*beta+eta*delta)*u+2*K*K*v
 trC2=(alpha+beta)**2+(eta+delta)**2+2*K*K
 assert s.expand(trC2-trT2-2*(alpha*beta+eta*delta)*(1-u)-2*K*K*(1-v))==0
-print(json.dumps({'scalar_S4_isometry_exact':True,'matrix_amplification_actual_fourth_power':int(actual),'scalar_lift_fourth_power':int(lifted),'compression_bound_fourth_power':int(compression_bound),'lifting_shortcut_refuted':True,'norm_compression_refuted':False,'p2_gap_identity_exact':True,'formal_verification':False,'novelty_claimed':False},sort_keys=True))
+print(json.dumps({'scalar_S4_isometry_exact':True,'matrix_amplification_actual_fourth_power':int(actual),'scalar_lift_fourth_power':int(lifted),'compression_bound_fourth_power':int(compression_bound),'factor_order3_actual_strict_lower_bound':12,'factor_order3_scalar_lift_strict_upper_bound':11,'lifting_shortcut_refuted':True,'norm_compression_refuted':False,'p2_gap_identity_exact':True,'formal_verification':False,'novelty_claimed':False},sort_keys=True))
