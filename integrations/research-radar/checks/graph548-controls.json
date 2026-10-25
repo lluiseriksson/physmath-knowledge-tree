@@ -1,0 +1,56 @@
+{
+  "status": "PASS",
+  "C4_gram": [
+    [
+      "1",
+      "0",
+      "1",
+      "1"
+    ],
+    [
+      "0",
+      "1",
+      "1",
+      "-1"
+    ],
+    [
+      "1",
+      "1",
+      "2",
+      "0"
+    ],
+    [
+      "1",
+      "-1",
+      "0",
+      "2"
+    ]
+  ],
+  "C4_p1_witness_value": "-4",
+  "C4_analytic_all_p_below2": "2^(p+1)-8<0",
+  "triangle_p4_kernel": [
+    [
+      "1",
+      "1/4",
+      "121/100"
+    ],
+    [
+      "1/4",
+      "1",
+      "121/100"
+    ],
+    [
+      "121/100",
+      "121/100",
+      "2801/1250"
+    ]
+  ],
+  "triangle_p4_witness": [
+    "-121/125",
+    "-121/125",
+    "1"
+  ],
+  "triangle_p4_quadratic": "-318/3125",
+  "triangle_positive_block_input": "H_ij=sqrt(P_i)sqrt(P_j), a positive Gram matrix; compression entries exactlyTr(P_i P_j)^2",
+  "scope": "finite witness verification only; all-p positive statements, gluing and external metric theorem are not audited by this script"
+}

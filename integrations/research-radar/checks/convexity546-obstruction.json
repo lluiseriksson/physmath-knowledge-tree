@@ -1,0 +1,37 @@
+{
+  "status": "EXACT_COUNTEREXAMPLE_TO_NAIVE_JOINT_CONVEXITY",
+  "functional": "F_s(P,Q,R,S)=Tr(P^s+Q^s+R^s+S^s)-Tr([[P+Q,sqrtQ sqrtR],[sqrtR sqrtQ,R+S]]^s)",
+  "fixed_argument": "Q=1; also P=1 along this line",
+  "power": "s=3/2",
+  "endpoints": [
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      3,
+      3
+    ]
+  ],
+  "midpoint": [
+    1,
+    1,
+    2,
+    2
+  ],
+  "midpoint_minus_average_interval": {
+    "lower": "307580929897508124660780317945529622887818282781487341850271/1606938044258990275541962092341162602522202993782792835301376",
+    "upper": "76895232474377031165195079495598657884003189293405524036853/401734511064747568885490523085290650630550748445698208825344"
+  },
+  "coarse_exact_bound": "19/100 < midpoint gap < 1/5",
+  "bits": 100,
+  "numeric_illustration": [
+    0.191408082593093,
+    0.191408082593093
+  ],
+  "scope": "rejects joint convexity in(P,R,S) for fixedQ; Fang original S=0 lemma is not contradicted; neither norm compression nor additivity refuted"
+}

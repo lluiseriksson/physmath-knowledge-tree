@@ -23,6 +23,8 @@ npm run validate:research-radar
 
 ## Update cycle
 
+New working connection: [norm-compression obstruction and chordal gluing](notes/2026-10-26-norm-compression-gluing.md) certifies failure of a naive four-argument convexity extension and develops a conditional graph classification from a recent three-block positivity theorem. The latter is a written candidate requiring source/novelty audit, not another rated paper or a solution of channel additivity.
+
 Latest directed refresh: [frontier changes and a non-Davies test channel](notes/2026-10-25-frontier-refresh-and-phasecov-gate.md) records five new DeepMind catalogue commits, two selected statement checks, discarded covered targets and a rational channel outside the current Davies/pure-output/unital/EB hypotheses. Its additivity remains unproved; this guardrail is not another paper.
 
 New proof checkpoint: [two-copy spectral rigidity and all-copy stability](notes/2026-10-25-two-copy-rigidity.md) records a targeted mathematical audit, a finite exact certificate package, a nonrigidity example and a criterion for explicit rational spectral input. The first full exact-PDF assessment returned MINOR (AIRR4.50, technical8.70, importance4.20); a correction-only delta recommends ACCEPT for the corrected bytes without issuing or transferring numeric scores. Canonical confidence is unchanged.
