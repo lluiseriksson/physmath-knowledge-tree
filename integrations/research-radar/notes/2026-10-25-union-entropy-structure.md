@@ -14,8 +14,8 @@ score or a resolution of Frankl's conjecture. All logarithms are natural.
   partition; absence probability is one minus inclusion frequency. Product
   reference laws must not be inferred from closure alone.
 - `literature`: the stated primary-source results, with scopes below.
-- Derived arguments: elementary proofs below; only the layered proof has the
-  completed audit510 at this draft stage. No proof-assistant result is added.
+- Derived arguments: elementary proofs below; the layered and ordinal/product
+  proofs have completed audits510 and513. No proof-assistant result is added.
 - `heuristic`: bounded counting and numerical diagnostics, which do not prove
   universal inequalities. No ready Research Capsule is claimed.
 - `speculative`: for every nontrivial finite union-closed family F,
@@ -131,10 +131,15 @@ factors implies Q for the product. A violating product forces a violating
 factor; a violating tagged ordinal extension forces a violating lower family.
 Not every family has one of these decompositions.
 
-The new ordinal/product packet is under a separate targeted audit513; audit510
-does not cover it. The local check verifies 1469 ordinal and 1017 product
-instances. Counts, mixture weights and absence identities use exact fractions;
-entropy identities use floating point, with maximum residual 5.83e-16.
+Separate targeted audit513 found this ordinal/product argument valid under
+its stated hypotheses and the external Chase-Lovett dependency; no fatal
+algebraic objections. It clarified the exact-case citation as stated below.
+It reproduced 1469 ordinal and 1017 product instances, added 79 extensions
+and 64 products, and checked 303 binary points at 180 digits. Counts, mixture
+weights and absence identities use exact fractions; entropy diagnostics do
+not replace the proof. The same context/runtime/independence limits as audit510
+apply. No grade or novelty conclusion was assigned. Audit manifest SHA256:
+`825175ffecf3bfce3966bff439032420b77e78aa21281a41c3ca69a0f8e87be2`.
 
 ## A finite-size consequence to check separately
 
@@ -170,7 +175,7 @@ The total variation of b from uniform is `floor(N^2/4)/N^2>=2/9`.
 Pinsker gives `delta_N>=8/81`; Riemann sums give
 `delta_N -> ln(2)-1/2`. This supplies a correction of order 1/ln(N) to the
 chosen baseline certificate, not an improvement of its asymptotic constant.
-The deduction has not yet received a targeted audit at this draft stage;
+The deduction is under separate targeted audit515 at this draft stage;
 bounded controls do not establish priority or warrant a separate paper.
 
 ## Primary sources and next falsifier

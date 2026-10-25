@@ -54,10 +54,19 @@ for f,g in itertools.product(base,upper):
         assert absent(P)==min(absent(f),absent(g))
         err=abs(deficit(P)-deficit(f)-deficit(g));residual=max(residual,err);assert err<2e-13
         product_cases+=1
+size_checks=[]
+for N in [2,3,4,5,10,50,54,100,1000,10000]:
+    b=[F(2*i-1,N*N) for i in range(1,N+1)]
+    tv=sum(abs(x-F(1,N)) for x in b)/2
+    assert tv==F((N*N)//4,N*N) and tv>=F(2,9)
+    delta=sum(float(x)*math.log(float(x)*N) for x in b)
+    assert delta>=8/81
+    size_checks.append({'N':N,'delta_float':delta,'TV_exact':str(tv)})
 out={'ordinal_cases':ordinal_cases,'product_cases':product_cases,
      'level_probabilities_and_mixture_identity':'exact Fractions',
      'absence_frequency_identity':'exact Fractions',
      'max_entropy_identity_float_residual':residual,
      'minimum_ordinal_target_margin_float':target_margin,
+     'size_checks':size_checks,
      'general_quadratic_target_proved':False,'formal_verification':False}
 print(json.dumps(out))
