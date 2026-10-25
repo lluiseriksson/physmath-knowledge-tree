@@ -175,8 +175,23 @@ The total variation of b from uniform is `floor(N^2/4)/N^2>=2/9`.
 Pinsker gives `delta_N>=8/81`; Riemann sums give
 `delta_N -> ln(2)-1/2`. This supplies a correction of order 1/ln(N) to the
 chosen baseline certificate, not an improvement of its asymptotic constant.
-The deduction is under separate targeted audit515 at this draft stage;
-bounded controls do not establish priority or warrant a separate paper.
+Separate targeted audit515 found the algebraic deduction valid, conditional
+on the stated external certificates. It checked the exact Jiang parameters
+`m=2468459/4000000`, `w_0=8102221/10000000` and
+`m*w_0=20000000347439/40000000000000`. It reproduced the original 113-family
+control and ten sizes, added 73 generated families, and checked the exact TV
+formula through N=512. Floating/high-precision entropy diagnostics are not
+interval certificates or formal proofs. Audit manifest SHA256:
+`5302d9e37994eabfc164a376e3583a05565f8530e8cf163df75a2d3d07a9c764`.
+The same preparation, reused-context and unattested-independence disclosures
+as the other audits apply. No grade or worldwide-priority conclusion follows.
+
+Independence is essential: on the two-member chain, the diagonal coupling
+X=Y uniform has a uniform union and deficit zero, while delta_2>0. Apply the
+sharp deficit to the independent component Z_0, not the arbitrary coupling
+Z_4. Also, delta_N is the exact chain-reference deficit and sharp universal
+lower bound; an arbitrary family's deficit need not equal delta_N. These
+limits and the external certificate dependency survive any abbreviated use.
 
 ## Primary sources and next falsifier
 
