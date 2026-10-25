@@ -57,6 +57,12 @@ The audit's primary comparison is bounded; no worldwide priority claim follows f
 
 ## Source refresh and custody
 
+### Subsequent author extension and interrupted audit
+
+The next [linear-dimension note](2026-10-25-linear-dimension-code-bound.md) gives an **unreviewed author derivation** replacing the all-parameter sufficient dimension condition `d>=2n²/t` by `d>=2n/t`. It does not improve the separate half-parameter domain `d>=2n`, rate a new PDF, or change draft 2. The mechanism averages orthogonal error-support families over fixed-size site subsets. Its exact scalar controls are supporting evidence, not an operator audit or formal proof.
+
+Audit 443 produced written analysis but was interrupted before sealing when reviewer access reached its usage limit. Forty existing files were preserved under root custody. This is **not a completed referee receipt or assessment**; the preceding seven-copy card remains pending independent closure. No substitute reviewer was launched to bypass the limit. The written analysis also identifies the required exclusion of `d=1` from the proposed full-minimum formula; the original input remains unchanged. No grade is inferred from that interrupted output.
+
 Current repository heads remain unchanged from the preceding census: OpenAI `1581d4cbdd69a0faf34b2089614fe2a814316a6a`, DeepMind superhuman `9b620a92886b3a7655b30ddcfe36e725e9596509`, and Anthropic FLT `6e837e75355538c7f80bab5b956861e86c4eacc2`. OpenAI's README still reports 719 manuscripts/372 families. This is a metadata refresh plus selected statement/primary-source reading, not a rereading of all proofs or a formal rebuild. The instrument-extraction survey was revisited as a reading guide, not proof certification.
 
 Private source snapshots, full referee packets and author failure records remain outside this repository. No training permission, public Research Capsule readiness, new Lean result or canonical confidence promotion is implied by this note. The research-radar registry remains at 28 source cards and 10 candidate cards; this dated synthesis is not an additional registered card.
