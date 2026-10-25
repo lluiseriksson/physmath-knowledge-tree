@@ -23,6 +23,8 @@ npm run validate:research-radar
 
 ## Update cycle
 
+New proof checkpoint: [two-copy spectral rigidity and all-copy stability](notes/2026-10-25-two-copy-rigidity.md) records a targeted mathematical audit, a finite exact certificate package, a nonrigidity example and a criterion for explicit rational spectral input. The first full assessment of the exact manuscript PDF is pending; no score or canonical confidence is promoted.
+
 Antecedent check: [adjoint moment polytopes and the five-level cost formula](notes/2026-10-25-adjoint-moment-antecedent.md) identifies an earlier 2012 table whose twelve rows agree exactly modulo trace with the author's five-level formula. Normalization and priority scope are explicit; optimal-rank and construction claims require separate comparison. This is a bibliographic correction gate, not another paper or score.
 
 Latest source-triage note: [union-closed sets: a rejected stability bridge](notes/2026-10-25-union-closed-stability-gate.md). A newly read formal problem statement does not supply a proof; the attempted transfer from stable-polynomial methods fails on an explicit three-set family. The restricted conclusion is already a consequence of a classical support theorem, so it is not proposed as another paper. This source note does not rate or revise any manuscript.
