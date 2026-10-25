@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "convention": "Bloch (x,y,z)->(c*x,c*y,r*z+t)",
+  "parameters": {
+    "c": "3/5",
+    "r": "1/4",
+    "t": "1/5"
+  },
+  "unnormalized_choi_diagonal": [
+    "29/40",
+    "11/40",
+    "19/40",
+    "21/40"
+  ],
+  "choi_2x2_block_determinant": "33/1600",
+  "partial_transpose_negative_minor": "-367/1600",
+  "davies_r_minus_c_squared": "-11/100",
+  "maximum_output_bloch_radius_squared": "243/595",
+  "maximizing_z": "20/119",
+  "X_covariance_trace_distance_witness": "1/5",
+  "conclusions": [
+    "CPTP with full-rank Choi",
+    "nonunital",
+    "not entanglement-breaking (NPT Choi)",
+    "no pure output",
+    "outside Davies c^2<=r",
+    "fails usual X Pauli covariance"
+  ],
+  "not_conclusions": [
+    "nonadditivity",
+    "failure of every teleportation simulation",
+    "sequential entanglement cost formula",
+    "novel channel"
+  ],
+  "next_target": "A valid arbitrary-partner convex-roof entropy inequality for this explicit channel, or a certified violation. A single-use reduction and finite product tests do not settle this."
+}
