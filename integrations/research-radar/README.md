@@ -63,3 +63,5 @@ The [audit and next-target update](notes/2026-10-24-audit44-next.md) preserves t
 The new [Reversible Branch Lab](https://github.com/lluiseriksson/reversible-branch-lab) is a distinct executable reference, pinned in the repository inventory. Windows and Linux replay pass. Its supplied control flag and finite oracle scope are explicit; no superior protocol or new theorem is claimed.
 
 The [tensor-copy and time-normalization gate](notes/2026-10-25-renyi-copy-normalization-gate.md) records selected reading of a new Gibbs-sampler source, an exact global-reset obstruction to replacing its hypotheses by a spectral gap, and a rejected direct transfer from rectangular non-CP encoded reductions. No graph confidence or manuscript score is promoted.
+
+The [ReMAD convex-roof gate](notes/2026-10-25-remad-convex-roof-gate.md) identifies the known channel and later thesis, gives the elementary one-use reduction, and preserves an exact two-use counterexample to an unroofed entropy shortcut. Local exploratory searches do not establish or refute capacity additivity. No graph confidence is promoted.
