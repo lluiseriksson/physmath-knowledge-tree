@@ -1,0 +1,144 @@
+{
+  "scope": "directed inventory and selected proof reading; not exhaustive",
+  "repositories": {
+    "openai": {
+      "repo": "openai/math",
+      "sha": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "date": "2026-10-12T21:55:24Z",
+      "message": "Merge pull request #2 from openai/codex/lock-prs"
+    },
+    "deepmind": {
+      "repo": "google-deepmind/formal-conjectures",
+      "sha": "039378b7951df701428aa5c6732a94a149a077e1",
+      "date": "2026-10-25T21:38:40Z",
+      "message": "feat(OpenQuantumProblems/35): formal proof link for AME(4,6) (#7502)"
+    },
+    "BN": {
+      "repo": "shengtongz/BN",
+      "sha": "5f4741254398424b730c9a893220a51e1cd829c5",
+      "date": "2026-10-02T03:34:08Z",
+      "message": "formalization.yaml: update the SqOmega related_formalizations link to its current commit"
+    },
+    "delta": {
+      "base": "885f152b2edbe059705b00bc047e32291e3867a2",
+      "head": "039378b7951df701428aa5c6732a94a149a077e1",
+      "commits": [
+        {
+          "sha": "5f8fd3a5747dabf2541609130d749a37e493de89",
+          "message": "feat(ErdosProblems): add problem 577 (#7130)"
+        },
+        {
+          "sha": "aec29855f8fd6de0d8e722607a18d9ac6d0799ce",
+          "message": "feat(ErdosProblems/649): prove `variants.sampaio` and link formal proofs for three variants (#7429)"
+        },
+        {
+          "sha": "b8502e93e20ce9650235b66b3e2055f182b1b31b",
+          "message": "feat(ErdosProblems/6): link formal proof for `erdos_6` (#7432)"
+        },
+        {
+          "sha": "039378b7951df701428aa5c6732a94a149a077e1",
+          "message": "feat(OpenQuantumProblems/35): formal proof link for AME(4,6) (#7502)"
+        }
+      ],
+      "files": [
+        {
+          "filename": "FormalConjectures/ErdosProblems/577.lean",
+          "sha": "f4097973bde6147db991dfe037946f9339e59a30",
+          "status": "added"
+        },
+        {
+          "filename": "FormalConjectures/ErdosProblems/6.lean",
+          "sha": "ad0ca4f93a684e81524a569f19c7cebac1dbf3b3",
+          "status": "modified"
+        },
+        {
+          "filename": "FormalConjectures/ErdosProblems/649.lean",
+          "sha": "4f66ebe57a6937b73122e5986119402c05945938",
+          "status": "modified"
+        },
+        {
+          "filename": "FormalConjectures/OpenQuantumProblems/35.lean",
+          "sha": "e55cf2ee1b693a911148daa60638e0561e44732b",
+          "status": "modified"
+        }
+      ]
+    }
+  },
+  "sources": [
+    {
+      "url": "https://arxiv.org/html/1504.04069v2",
+      "reading": "selected statements:definitions1.1,Prop4.3,Thm4.10; not proof audited",
+      "retrieved_utc": "2026-10-25T23:45:58.691818+00:00",
+      "resolved_url": "https://arxiv.org/html/1504.04069v2",
+      "sha256": "f4a5e32a029da779a1820ee878681c4c948a9ae3be3042b43198675420ebe2f2",
+      "bytes": 680265,
+      "status": "captured"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.11021v1",
+      "reading": "abstract and bibliographic metadata read",
+      "retrieved_utc": "2026-10-25T23:45:59.276569+00:00",
+      "resolved_url": "https://arxiv.org/abs/2610.11021v1",
+      "sha256": "fb248617437e1627a39bad83c7edc8338e55bc4e7403b45ecd50f2410d44a32b",
+      "bytes": 42653,
+      "status": "captured"
+    },
+    {
+      "url": "https://www.anthropic.com/research",
+      "reading": "inventory landing page; no new mathematical proof audited",
+      "retrieved_utc": "2026-10-25T23:45:59.594862+00:00",
+      "resolved_url": "https://www.anthropic.com/research",
+      "sha256": "fe624c20a6e807354a30c9224100104b8e64b58923901bb3104730fe14726ba9",
+      "bytes": 415916,
+      "status": "captured"
+    },
+    {
+      "url": "https://www.ai.vixra.org/author/lluis_eriksson",
+      "reading": "author inventory; titles only this round",
+      "retrieved_utc": "2026-10-25T23:46:00.181164+00:00",
+      "resolved_url": "https://www.ai.vixra.org/author/lluis_eriksson",
+      "sha256": "d082ccfe160fee5d8c0978790509e49a149cad0ec7bf0b1c0b0bd6059ea51f79",
+      "bytes": 70178,
+      "status": "captured"
+    },
+    {
+      "url": "https://airr.science/authors/lluis-eriksson/",
+      "reading": "author inventory; selected recent abstracts only, no statistics analysis",
+      "retrieved_utc": "2026-10-25T23:46:01.166939+00:00",
+      "resolved_url": "https://airr.science/authors/lluis-eriksson/",
+      "sha256": "8169ee24bb08a1541f2a51b1532bf225504580ec9e519420a859ee72a6b5f662",
+      "bytes": 566325,
+      "status": "captured"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/shengtongz/BN/5f4741254398424b730c9a893220a51e1cd829c5/docs/sol.tex",
+      "reading": "introduction and selected theorem statements; no formal build or full proof audit",
+      "retrieved_utc": "2026-10-25T23:46:01.895748+00:00",
+      "resolved_url": "https://raw.githubusercontent.com/shengtongz/BN/5f4741254398424b730c9a893220a51e1cd829c5/docs/sol.tex",
+      "sha256": "70a17c3061a86a6d43097b10198a2bf7367034afb6f2174c437101f058e60921",
+      "bytes": 33405,
+      "status": "captured"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/google-deepmind/formal-conjectures/039378b7951df701428aa5c6732a94a149a077e1/FormalConjectures/OpenQuantumProblems/35.lean",
+      "reading": "selected AME4,6 declaration/external proof link and definitions; sorry placeholders not mistaken for local checked proofs",
+      "retrieved_utc": "2026-10-25T23:46:02.321506+00:00",
+      "resolved_url": "https://raw.githubusercontent.com/google-deepmind/formal-conjectures/039378b7951df701428aa5c6732a94a149a077e1/FormalConjectures/OpenQuantumProblems/35.lean",
+      "sha256": "70d39d948db70c739555e1a3343373651a409a9a36dce5d323a2b58b55f79e66",
+      "bytes": 39572,
+      "status": "captured"
+    },
+    {
+      "url": "https://api.github.com/users/lluiseriksson/repos?type=owner&sort=updated&per_page=100",
+      "reading": "first page public metadata inventory; not entire repositories read; connector fetch lacked content for this endpoint so public unauthenticated GET used",
+      "retrieved_utc": "2026-10-25T23:46:02.741124+00:00",
+      "resolved_url": "https://api.github.com/users/lluiseriksson/repos?type=owner&sort=updated&per_page=100",
+      "sha256": "64ea97df7cb57cc178fec476c40fe3c3482a1cb31c531d62056afbb011dc7277",
+      "bytes": 212804,
+      "status": "captured",
+      "public_count_in_page": 36
+    }
+  ],
+  "no_full_text_redistributed": true,
+  "no_new_score": true
+}

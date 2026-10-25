@@ -23,6 +23,8 @@ npm run validate:research-radar
 
 ## Update cycle
 
+New hypothesis reduction: [triangle-free trace compression](notes/2026-10-26-trianglefree-compression.md) replaces the cycle restriction by a support-projection identity and a constructive edge decomposition. The argument audit found no defect; full exact-PDF review and novelty comparison remain pending. No manuscript score or formal confidence upgrade is inferred.
+
 New working connection: [norm-compression obstruction and chordal gluing](notes/2026-10-26-norm-compression-gluing.md) certifies failure of a naive four-argument convexity extension and develops a conditional graph classification from a recent three-block positivity theorem. The latter is a written candidate requiring source/novelty audit, not another rated paper or a solution of channel additivity.
 
 Latest directed refresh: [frontier changes and a non-Davies test channel](notes/2026-10-25-frontier-refresh-and-phasecov-gate.md) records five new DeepMind catalogue commits, two selected statement checks, discarded covered targets and a rational channel outside the current Davies/pure-output/unital/EB hypotheses. Its additivity remains unproved; this guardrail is not another paper.
