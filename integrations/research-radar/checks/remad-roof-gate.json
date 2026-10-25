@@ -1,0 +1,30 @@
+{
+  "status": "PASS_EXACT",
+  "scope": "Known half-noise ReMAD channel; exact failed proof shortcuts,not a capacity theorem or novelty certificate",
+  "degrader_basis_units_checked": 9,
+  "uniform_input_complement": [
+    "2/3",
+    "1/3"
+  ],
+  "conditional_shortcut": "For a maximally entangled qutrit/reference input,S(output|reference)=h2(1/3)-log2(3)<0. A nonnegative single-pure-output entropy bound cannot simply be made conditional.",
+  "two_use_input": "(|00>+|22>)/sqrt2",
+  "two_use_output_nonzero_spectrum": [
+    "5/8",
+    "1/8",
+    "1/8",
+    "1/8"
+  ],
+  "marginal_diagonal": [
+    "1/2",
+    "0",
+    "1/2"
+  ],
+  "naive_unroofed_bound": "2h2(1/4)>actual_output_entropy",
+  "exact_comparison": [
+    800000,
+    531441
+  ],
+  "roof_not_refuted": "co(e)(1/2,0,1/2)<=1/2 from the basis-state mixture",
+  "capacity_additivity_refuted": false,
+  "global_capacity_proved": false
+}
