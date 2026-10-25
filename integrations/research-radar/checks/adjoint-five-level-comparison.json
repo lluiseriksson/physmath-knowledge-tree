@@ -1,0 +1,234 @@
+{
+  "status": "exact rational equality of all twelve rows modulo trace",
+  "scope": "comparison of published tables, not reproduction of thesis facet completeness or manuscript rank claims",
+  "matches": [
+    {
+      "own_index": 1,
+      "sakar_index": 2,
+      "own": [
+        2,
+        -2,
+        -1,
+        0,
+        1
+      ],
+      "sakar": [
+        2,
+        -2,
+        -1,
+        0,
+        1
+      ],
+      "all_ones_offset": 0
+    },
+    {
+      "own_index": 2,
+      "sakar_index": 10,
+      "own": [
+        1,
+        0,
+        -1,
+        -1,
+        0
+      ],
+      "sakar": [
+        2,
+        1,
+        0,
+        0,
+        1
+      ],
+      "all_ones_offset": -1
+    },
+    {
+      "own_index": 3,
+      "sakar_index": 9,
+      "own": [
+        0,
+        1,
+        -2,
+        -1,
+        0
+      ],
+      "sakar": [
+        1,
+        2,
+        -1,
+        0,
+        1
+      ],
+      "all_ones_offset": -1
+    },
+    {
+      "own_index": 4,
+      "sakar_index": 6,
+      "own": [
+        2,
+        0,
+        -1,
+        0,
+        1
+      ],
+      "sakar": [
+        2,
+        0,
+        -1,
+        0,
+        1
+      ],
+      "all_ones_offset": 0
+    },
+    {
+      "own_index": 5,
+      "sakar_index": 4,
+      "own": [
+        1,
+        1,
+        -1,
+        0,
+        0
+      ],
+      "sakar": [
+        1,
+        1,
+        -1,
+        0,
+        0
+      ],
+      "all_ones_offset": 0
+    },
+    {
+      "own_index": 6,
+      "sakar_index": 5,
+      "own": [
+        1,
+        0,
+        1,
+        -1,
+        0
+      ],
+      "sakar": [
+        1,
+        0,
+        1,
+        -1,
+        0
+      ],
+      "all_ones_offset": 0
+    },
+    {
+      "own_index": 7,
+      "sakar_index": 1,
+      "own": [
+        -1,
+        0,
+        1,
+        2,
+        -2
+      ],
+      "sakar": [
+        -1,
+        0,
+        1,
+        2,
+        -2
+      ],
+      "all_ones_offset": 0
+    },
+    {
+      "own_index": 8,
+      "sakar_index": 3,
+      "own": [
+        0,
+        1,
+        1,
+        0,
+        -1
+      ],
+      "sakar": [
+        0,
+        1,
+        1,
+        0,
+        -1
+      ],
+      "all_ones_offset": 0
+    },
+    {
+      "own_index": 9,
+      "sakar_index": 7,
+      "own": [
+        0,
+        1,
+        2,
+        -1,
+        0
+      ],
+      "sakar": [
+        0,
+        1,
+        2,
+        -1,
+        0
+      ],
+      "all_ones_offset": 0
+    },
+    {
+      "own_index": 10,
+      "sakar_index": 8,
+      "own": [
+        -1,
+        0,
+        1,
+        0,
+        -2
+      ],
+      "sakar": [
+        0,
+        1,
+        2,
+        1,
+        -1
+      ],
+      "all_ones_offset": -1
+    },
+    {
+      "own_index": 11,
+      "sakar_index": 12,
+      "own": [
+        0,
+        0,
+        1,
+        -1,
+        -1
+      ],
+      "sakar": [
+        1,
+        1,
+        2,
+        0,
+        0
+      ],
+      "all_ones_offset": -1
+    },
+    {
+      "own_index": 12,
+      "sakar_index": 11,
+      "own": [
+        0,
+        1,
+        -1,
+        0,
+        -1
+      ],
+      "sakar": [
+        1,
+        2,
+        0,
+        1,
+        0
+      ],
+      "all_ones_offset": -1
+    }
+  ]
+}
