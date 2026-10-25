@@ -1,0 +1,10 @@
+{
+  "status": "exact_symbolic_identity_pass",
+  "sympy": "1.14.0",
+  "parameter": "r=sqrt(1-gamma), 0<r<1",
+  "states": "(|00>+|01>+|11> +/- |20>)/2",
+  "characteristic_difference_plus_minus": "-r**3*x*(r - 1)**2*(r + 1)**2/16",
+  "determinant_tI_difference_plus_minus": "r^3*(1-r^2)^2*t/16 > 0 for t>0",
+  "trace_and_purity_equal": true,
+  "scope": "polynomial identity exact; analytic entropy and fractional-power implications in companion note; not a capacity counterexample"
+}
