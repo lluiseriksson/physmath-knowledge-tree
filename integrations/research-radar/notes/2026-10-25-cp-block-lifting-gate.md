@@ -89,6 +89,24 @@ not justify a standalone manuscript.
 
 ## Evidence layers and continuation gate
 
+### Three-point trace positivity source refresh
+
+[Vuong-Osaka2610.11021v2](https://arxiv.org/html/2610.11021v2), revised
+11 October2026, Corollary3.1, states that `[Tr|H_ij|^p]` is PSD for positive
+three-block H and 1<=p<=2. Its statement and Section3 proof were read; the
+underlying kernel theorem was not fully audited. On the CP boundary the sparse
+factor has three columns, so this applies to its Gram. It does not itself
+state the required trace-power comparison with C.
+
+The lost information is visible even in scalar PSD blocks. Let Hplus have
+diagonal1 and all off-diagonals1/2, and let Hminus change just entries(2,3)
+and(3,2) to -1/2. Their spectra are `(2,1/2,1/2)` and `(3/2,3/2,0)`.
+Their entrywise absolute p-power matrices coincide and are PSD. Nevertheless,
+at p=3/2 the trace powers are `5sqrt(2)/2` and `3sqrt(6)/2`; their squared
+values differ by1. This is exact information loss, not a counterexample to
+the source or the two-row compression conjecture. A separate inequality
+retaining the factor structure is still needed. No score is assigned.
+
 - `literature`: attributed compression ranges and scalar embedding, at the
   reading scopes below; their original proofs are not all audited here.
 - Graph-supported inference: the functional-analysis/channel interface is
