@@ -61,3 +61,5 @@ The [quantitative certificate update](notes/2026-10-24-planar-rational.md) recor
 The [audit and next-target update](notes/2026-10-24-audit44-next.md) preserves the actual draft1 score, the lower-bound attribution limit, selected circuit validity reading and a finite reproduction of prior branch decoding. None of these assigns a score to a speculative candidate.
 
 The new [Reversible Branch Lab](https://github.com/lluiseriksson/reversible-branch-lab) is a distinct executable reference, pinned in the repository inventory. Windows and Linux replay pass. Its supplied control flag and finite oracle scope are explicit; no superior protocol or new theorem is claimed.
+
+The [tensor-copy and time-normalization gate](notes/2026-10-25-renyi-copy-normalization-gate.md) records selected reading of a new Gibbs-sampler source, an exact global-reset obstruction to replacing its hypotheses by a spectral gap, and a rejected direct transfer from rectangular non-CP encoded reductions. No graph confidence or manuscript score is promoted.
