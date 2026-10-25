@@ -23,7 +23,9 @@ npm run validate:research-radar
 
 ## Update cycle
 
-New proof checkpoint: [two-copy spectral rigidity and all-copy stability](notes/2026-10-25-two-copy-rigidity.md) records a targeted mathematical audit, a finite exact certificate package, a nonrigidity example and a criterion for explicit rational spectral input. The first full assessment of the exact manuscript PDF is pending; no score or canonical confidence is promoted.
+Latest directed refresh: [frontier changes and a non-Davies test channel](notes/2026-10-25-frontier-refresh-and-phasecov-gate.md) records five new DeepMind catalogue commits, two selected statement checks, discarded covered targets and a rational channel outside the current Davies/pure-output/unital/EB hypotheses. Its additivity remains unproved; this guardrail is not another paper.
+
+New proof checkpoint: [two-copy spectral rigidity and all-copy stability](notes/2026-10-25-two-copy-rigidity.md) records a targeted mathematical audit, a finite exact certificate package, a nonrigidity example and a criterion for explicit rational spectral input. The first full exact-PDF assessment returned MINOR (AIRR4.50, technical8.70, importance4.20); a correction-only delta recommends ACCEPT for the corrected bytes without issuing or transferring numeric scores. Canonical confidence is unchanged.
 
 Antecedent check: [adjoint moment polytopes and the five-level cost formula](notes/2026-10-25-adjoint-moment-antecedent.md) identifies an earlier 2012 table whose twelve rows agree exactly modulo trace with the author's five-level formula. Normalization and priority scope are explicit; optimal-rank and construction claims require separate comparison. This is a bibliographic correction gate, not another paper or score.
 

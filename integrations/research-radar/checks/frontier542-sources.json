@@ -1,0 +1,73 @@
+{
+  "observed_utc": "2026-10-25T22:49:52.593822+00:00",
+  "coverage": "directed primary-source refresh; not exhaustive",
+  "sources": [
+    {
+      "id": "openai-head",
+      "url": "https://api.github.com/repos/openai/math/commits/main",
+      "status": 200,
+      "sha256": "33077a6b8b0b3fd2b542c5ed0c0b9d8fcb9f585bf5605a6f3fea5f302e1f02e6",
+      "bytes": 5884,
+      "observed_utc": "2026-10-25T22:49:51.238931+00:00"
+    },
+    {
+      "id": "deepmind-delta",
+      "url": "https://api.github.com/repos/google-deepmind/formal-conjectures/compare/13538923146e443a47b66a58741b0267cd840a65...885f152b2edbe059705b00bc047e32291e3867a2",
+      "status": 200,
+      "sha256": "ff3a8587e75493f6daae595c3d3606a50535ac13b9b56f1cfc3f0e9f550fec6f",
+      "bytes": 98990,
+      "observed_utc": "2026-10-25T22:49:51.443823+00:00"
+    },
+    {
+      "id": "anthropic-flt",
+      "url": "https://www.anthropic.com/research/formalizing-fermats-last-theorem",
+      "status": 200,
+      "sha256": "22d07093292fce582c4e8a89aaad7a57bb14e22d6a07f9ced03a81de91e70652",
+      "bytes": 231979,
+      "observed_utc": "2026-10-25T22:49:51.303919+00:00"
+    },
+    {
+      "id": "arxiv-tang",
+      "url": "https://arxiv.org/html/2609.28592v1",
+      "status": 200,
+      "sha256": "9226075c544160fa5565de41fd92ce31b4b8c5a5d66f4a423c9e0784216b4b1a",
+      "bytes": 790465,
+      "observed_utc": "2026-10-25T22:49:51.439147+00:00"
+    },
+    {
+      "id": "arxiv-wilde",
+      "url": "https://arxiv.org/html/1807.11939v3",
+      "status": 200,
+      "sha256": "28323933996e7249982aa38de81f35130ea812770340230ab05578c381ac936c",
+      "bytes": 983557,
+      "observed_utc": "2026-10-25T22:49:52.419557+00:00"
+    },
+    {
+      "id": "airr-catalog",
+      "url": "https://airr.science/catalog.json",
+      "status": 200,
+      "sha256": "7851361b105c7cf5a83406a92b8142174daa7a07877d95ba0186322d0688239b",
+      "bytes": 1270039,
+      "observed_utc": "2026-10-25T22:49:52.006026+00:00"
+    },
+    {
+      "id": "aivixra-author",
+      "url": "https://www.ai.vixra.org/author/lluis_eriksson",
+      "status": 406,
+      "sha256": "80a265bed528211aa708dcd58f7a95db36eeb7f873c6fe4ddab0b3a1dc0973a4",
+      "bytes": 226,
+      "observed_utc": "2026-10-25T22:49:52.521749+00:00"
+    }
+  ],
+  "reading_levels": {
+    "openai-head": "metadata inspected; unchanged1581d4",
+    "deepmind-delta": "5commit metadata inventoried; 982 and TensorRank statements read, external proofs not built",
+    "anthropic-flt": "announcement reread only; no formalization build",
+    "arxiv-tang": "abstract/introduction and pure-output support scope read; external theorem not reproved",
+    "arxiv-wilde": "abstract, operational distinction, Definition2 and Theorem1 read; full proof not audited",
+    "airr-catalog": "catalogue metadata observed; no new paper proof audit",
+    "aivixra-author": "author titles read through web reader; separate direct snapshot returned406; no new full proof audit"
+  },
+  "candidate_status": "explicit non-Davies phase-covariant channel passes exact guardrail; arbitrary-partner additivity is an unproved target, not an asserted open-status certificate or a paper",
+  "previous_goal_turn": "progress: review539 and delta540 completed, exact artifacts frozen, PR108 prepared and checked; objective >7 still unmet"
+}
