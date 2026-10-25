@@ -7,6 +7,8 @@ Requires Python3.10 or later, standard library only. No optimizer, NumPy,
 SciPy, internet access or author-specific absolute path is needed for replay.
 The verifier reconstructs all integer hive rows and uses fractions.Fraction.
 It refuses failed identities rather than treating stored PASS flags as proof.
+The nonrigidity target, displayed spectra and ranks are bound explicitly
+to the manuscript rather than inferred only from the supplied data.
 Python optimization mode (-O or -OO) is explicitly refused before any check.
 
 Files:

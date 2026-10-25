@@ -86,6 +86,9 @@ def main():
     L=sum((max(abs(Q(c['dual_eq'][-1])) for c in cs if c['index_one_based']==i) for i in range(1,19)),Q(0))
     assert L==Q(833,90)
     nr=json.loads((p/'nonrigidity-certificate.json').read_text())
+    expected_base=[6,5,4,0,-7,-8]
+    assert nr['base_lambda']==expected_base,'nonrigidity base differs from manuscript'
+    assert nr['lambda']==[v for v in expected_base for _ in range(2)],'nonrigidity target differs from manuscript'
     dual={k:nr[k] for k in ['dual_ub','dual_eq','dual_lower']}
     dual.update(x=nr['x_witnesses'][0],objective='40')
     assert certificate(dual,nr['lambda'])==40
@@ -95,6 +98,11 @@ def main():
     for x in xs:
         primal(x,nr_rows);assert sum(x[H:])==40
     assert xs[0][H:]!=xs[1][H:]
+    expected_spectra=[[8,8,7,7,4,4,1,1,0,0,0,0],
+                      [9,8,7,7,4,4,1,0,0,0,0,0]]
+    assert [x[H:] for x in xs]==expected_spectra,'witness spectra differ from manuscript'
+    assert [list(map(Q,s)) for s in nr['spectra']]==expected_spectra,'stored spectral summaries differ'
+    assert [sum(v>0 for v in x[H:]) for x in xs]==[8,7],'ranks differ from manuscript'
     print(json.dumps({'status':'PASS','base_cost':'29','seed_coordinate_certificates':36,
       'seed_L':str(L),'conditional_uniform_constant':str(3*L),
       'nonrigidity_cost':'40','distinct_optimum_witnesses':2,

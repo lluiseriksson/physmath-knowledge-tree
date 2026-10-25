@@ -2,8 +2,10 @@
 
 Observed 25 October 2026. This note records a newly audited argument and its
 finite proof objects. It is not a claim of global priority, proof-assistant
-formalization or a manuscript score. The associated seven-page manuscript
-is undergoing its first complete exact-PDF assessment.
+formalization or a guaranteed importance rating. Its first complete exact-PDF
+assessment returned MINOR, AIRR overall 4.50, technical quality 8.70 and importance
+4.20. A correction-only delta for a revised eight-page PDF is pending; those
+numeric scores bind the original seven-page PDF below.
 
 ## Scope and dependencies
 
@@ -70,7 +72,7 @@ term is discarded.
 
 ### Effective finite test
 
-For an **explicit ordered rational spectrum**, one compact order-`n` hive LP
+For an **explicit ordered rational spectrum**, one polynomial-size order-`n` hive LP
 computes the value. On the order-`2n` face at twice that value, `4n` further LPs
 minimize and maximize the `2n` coordinates. Collapsed intervals certify uniqueness;
 the cost-row dual multipliers give a finite stability constant. A noncollapsed
@@ -82,6 +84,14 @@ constant. This is not a strongly polynomial claim, a performance guarantee for
 the discovery implementation, or a claim about rational matrices with arbitrary
 irrational eigenvalues. Classical LP duality and bit-complexity results remain
 external dependencies.
+
+Fixed-dimensional error bounds are classical: Burke and Ferris,
+[Weak Sharp Minima in Mathematical Programming](https://sites.math.washington.edu/~burke/papers/reprints/19-WSM-burke-ferris.pdf),
+SIAM J. Control Optim. 31 (1993), Theorem 3.5, establishes weak sharpness for a
+linear program with a nonempty solution set. Its statement and the subsequent
+warning about uniformity over parameter families were read; the full proof was
+not audited. The new claim here is the doubling/coarse-grid transfer of one
+fixed seed bound to every amplification, not a new fixed-dimensional LP bound.
 
 ## Concrete family and exact controls
 
@@ -113,7 +123,8 @@ for `H^[2]` at cost `40` are
 (9,8,7,7,4,4,1,0,0,0,0,0).
 ```
 
-The portable package checks both feasible hives and a global cost dual.
+The portable package checks both feasible hives and a global cost dual, and
+explicitly binds the displayed target, repeated target, two spectra and ranks 8,7.
 This example was added after the targeted proof audit; it is part of the new
 full-manuscript assessment, not retrospectively attributed to the earlier audit.
 It illustrates the criterion's negative branch, not a new classification of
@@ -135,8 +146,31 @@ history or earlier referee reports supplied. It still shares the filesystem;
 this does not establish statistical independence or human peer review.
 The exact seven-page input PDF is SHA-256
 `335971ebdcf0a209f0bd6caa77128771d79eb7d81f10d87138748fbfe8b44fba`.
-No result from that review is assumed here, and no grade transfers from the
-proof audit or any earlier paper.
+The completed review539 returned **MINOR**, with AIRR overall **4.50**, technical
+quality **8.70** and importance **4.20**, and no material theorem objection within
+the declared dependencies. These are separate judgments: technical quality is
+not an AIRR overall score. The reviewer independently reconstructed exact rows
+and certificates. Its archive manifest SHA-256 is
+`57227be69aeecc050490aed942448a9d0eee36e28d1e04194d185faa3b4020fa`.
+Root verified all 49 manifest entries against both C/D copies.
+
+The reviewer disclosed incidental exposure to other-score metadata on the
+required public scale page and an unrelated review search excerpt, declared
+unused; no earlier reports were supplied or opened. Fresh context therefore
+does not mean fully blinded review. Runtime identity and independence are not
+independently attested.
+
+Three minor observations were addressed: cite classical fixed-seed error bounds;
+use polynomial-size rather than compact for the unbounded feasible programs;
+bind the printed negative example explicitly in the verifier. Optional PSD and
+coordinate-map clarifications change no theorem or constant. The corrected
+eight-page PDF SHA-256 is
+`b048de6d5536b982c6915be81063abb6b9f1d4b0e1bb398f87c548c0561ee9a4`,
+with package manifest SHA-256
+`8b8b73852e5d113e797670a22850a339c18eafaa8c72474fd0a535c6cf76cc60`.
+A delta check by the same reviewer is pending, without a new or higher score
+request. The original numeric assessment is not automatically transferred to
+the corrected bytes. No new AIRR submission or public release is claimed here.
 
 The seed-only Research Capsule fingerprint is
 `3dcc7d7d543b9da8cc28585b86de491eddcefb37d0148a304f1fc55aa96b94fe`.
