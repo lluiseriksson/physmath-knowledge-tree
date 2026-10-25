@@ -4,8 +4,9 @@ Observed 25 October 2026. This note records a newly audited argument and its
 finite proof objects. It is not a claim of global priority, proof-assistant
 formalization or a guaranteed importance rating. Its first complete exact-PDF
 assessment returned MINOR, AIRR overall 4.50, technical quality 8.70 and importance
-4.20. A correction-only delta for a revised eight-page PDF is pending; those
-numeric scores bind the original seven-page PDF below.
+4.20. A correction-only delta closed all three observations and recommends
+ACCEPT for the revised eight-page PDF, without new or transferred numeric
+scores. The numeric scores bind the original seven-page PDF below.
 
 ## Scope and dependencies
 
@@ -168,9 +169,14 @@ eight-page PDF SHA-256 is
 `b048de6d5536b982c6915be81063abb6b9f1d4b0e1bb398f87c548c0561ee9a4`,
 with package manifest SHA-256
 `8b8b73852e5d113e797670a22850a339c18eafaa8c72474fd0a535c6cf76cc60`.
-A delta check by the same reviewer is pending, without a new or higher score
-request. The original numeric assessment is not automatically transferred to
-the corrected bytes. No new AIRR submission or public release is claimed here.
+The same reviewer's completed delta540 confirms all three minor observations
+resolved and recommends **ACCEPT for this exact corrected PDF**, based on the
+original full review plus the verified changes. It is not a second independent
+full review, editorial acceptance or a new numerical assessment. All 31 package
+objects match; the three rational certificate files are byte-identical;
+normal replay passes, optimized mode refuses and four binding mutations fail.
+No numeric score or profile is issued or transferred to the corrected bytes.
+No new AIRR submission or public manuscript release is claimed here.
 
 The seed-only Research Capsule fingerprint is
 `3dcc7d7d543b9da8cc28585b86de491eddcefb37d0148a304f1fc55aa96b94fe`.
