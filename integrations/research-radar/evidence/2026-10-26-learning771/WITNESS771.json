@@ -1,0 +1,93 @@
+{
+  "created_utc": "2026-10-26T21:19:38.913375+00:00",
+  "status": "exploratory floating-point quadrature, not certified interval bounds or new paper",
+  "parameters": {
+    "k": 1.0,
+    "r": 1.0,
+    "lambda": 0.5,
+    "s": 2.0
+  },
+  "annuli_squared_radius": [
+    [
+      0.0,
+      0.5
+    ],
+    [
+      0.5,
+      2.0
+    ],
+    [
+      2.0,
+      6.0
+    ]
+  ],
+  "h_values_diagnostic_only": [
+    0.7462030919785319,
+    -0.905069511866985,
+    1.0
+  ],
+  "exact_definition": "p_i=exp(-a_i)-exp(-b_i); m_i=(a_i+1)exp(-a_i)-(b_i+1)exp(-b_i); h=(p cross m)/maxabs(p cross m), sign chosen by first quadrature. Use this symbolic definition, not rounded displayed coefficients. h=0 outside the three annuli.",
+  "moment_residual_diagnostics": {
+    "mass": 8.326672684688674e-17,
+    "energy": 1.1102230246251565e-16
+  },
+  "rows": [
+    {
+      "order_hermite_legendre_laguerre": 32,
+      "a0_estimate": 0.007821094884018276,
+      "h2_exact_formula_numerically_evaluated": 0.737927836723312,
+      "epsilon_estimate": 0.005299362955832507,
+      "single_law_improvement_proxy": 2.0723410251208796e-05,
+      "gaussian_mutual_information_estimate_nats": 0.17825399095719457,
+      "H_at_zero": 0.6393652385692888
+    },
+    {
+      "order_hermite_legendre_laguerre": 64,
+      "a0_estimate": 0.007821103812561979,
+      "h2_exact_formula_numerically_evaluated": 0.737927836723312,
+      "epsilon_estimate": 0.0052993690055729145,
+      "single_law_improvement_proxy": 2.0723457566829547e-05,
+      "gaussian_mutual_information_estimate_nats": 0.1782539909419188,
+      "H_at_zero": 0.6393652344703276
+    },
+    {
+      "order_hermite_legendre_laguerre": 96,
+      "a0_estimate": 0.007821103873502995,
+      "h2_exact_formula_numerically_evaluated": 0.737927836723312,
+      "epsilon_estimate": 0.005299369046864903,
+      "single_law_improvement_proxy": 2.0723457889778487e-05,
+      "gaussian_mutual_information_estimate_nats": 0.17825399094179067,
+      "H_at_zero": 0.6393652344716481
+    },
+    {
+      "order_hermite_legendre_laguerre": 144,
+      "a0_estimate": 0.007821103873546995,
+      "h2_exact_formula_numerically_evaluated": 0.737927836723312,
+      "epsilon_estimate": 0.0052993690468947155,
+      "single_law_improvement_proxy": 2.0723457890011655e-05,
+      "gaussian_mutual_information_estimate_nats": 0.17825399094179178,
+      "H_at_zero": 0.6393652344716507
+    },
+    {
+      "order_hermite_legendre_laguerre": 192,
+      "a0_estimate": 0.007821103873511849,
+      "h2_exact_formula_numerically_evaluated": 0.737927836723312,
+      "epsilon_estimate": 0.005299369046870902,
+      "single_law_improvement_proxy": 2.072345788982541e-05,
+      "gaussian_mutual_information_estimate_nats": 0.17825399094178945,
+      "H_at_zero": 0.6393652344716508
+    }
+  ],
+  "uncertified_parts": [
+    "No integration remainder bound",
+    "a0 positivity is suggested by repeated quadrature, not certified",
+    "No C1, common-input optimum V, learning gap Delta or finite-energy threshold computed",
+    "Single-law non-Gaussian gain cannot be used as a lower bound on the feedback learning gap"
+  ],
+  "analytic_scope": "If exact a0>0, epsilon<=1 and exact moment cancellation hold, the existing manuscript inequality yields feasible single-law improvement epsilon*a0-epsilon^2*||h||_2^2. No novelty claim for this prior inequality.",
+  "falsifier": "Reject numerical positivity if a certified enclosure for a0 reaches zero; reject any Delta lower-bound claim inferred only from this single-law gain.",
+  "code_sha256": "e85e1611b0357b86d7ea78e916a9d036e0b6de05a3b7f99fb3bc7dcd8c8d84c2",
+  "environment": {
+    "numpy": "2.2.6"
+  }
+}

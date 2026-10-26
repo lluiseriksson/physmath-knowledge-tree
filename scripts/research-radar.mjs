@@ -7,7 +7,7 @@ const root = fileURLToPath(new URL('..', import.meta.url));
 const read = (path) => JSON.parse(readFileSync(join(root, path), 'utf8'));
 const directory = 'integrations/research-radar/';
 const registry = read(`${directory}registry.json`);
-const catalogue = read(`${directory}catalogue/openai-math-2026-10-24.json`);
+const catalogue = read(`${directory}catalogue/openai-math-2026-10-26.json`);
 const inventory = read(`${directory}repository-inventory.json`);
 const nodeIds = read('graph/nodes/core.json').map((node) => node.id);
 const summary = validateResearchRadar(registry, catalogue, inventory, nodeIds);

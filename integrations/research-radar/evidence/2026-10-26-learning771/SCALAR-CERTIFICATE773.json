@@ -1,0 +1,41 @@
+{
+  "status": "Exact rational scalar-log enclosure and conditional arithmetic ONLY; no certified channel integral or learning gap",
+  "gain_squared": "9757/50000",
+  "AWGN_capacity": "log(1+b^2), nats",
+  "identity": "log(1+b2)=2*atanh(b2/(2+b2)); positive series; remainder at most2*q^(2N+1)/((2N+1)*(1-q^2))",
+  "terms": 12,
+  "series_lower_exact": "65930973658968028959897000428376411866229661516925883000513812525756059939168686267739607836023712700550202208231993049184/369851569732348154852734227134494279925435261289464824955005470316427727145164637331284353199965889936347095781959745329745",
+  "tail_upper_exact": "5406393157179750976462895964929787059392444546788109845057852156257254039219844568235583868781394557/12713643720379667513161541344025995771654991991925009488592442581623857814670391520068361741391360540712070508300554941002500000",
+  "certified_capacity_interval": [
+    "178263333/1000000000",
+    "89131667/500000000"
+  ],
+  "conditional_only": {
+    "unproved_integral_enclosures": {
+      "G1": [
+        "0.17825",
+        "0.17826"
+      ],
+      "a0": [
+        "0.0078",
+        "0.0079"
+      ],
+      "h_norm2": [
+        "0.737",
+        "0.739"
+      ]
+    },
+    "epsilon": "1/200",
+    "resulting_feasible_W1_rate_lower": "7130821/40000000",
+    "strict_margins": {
+      "C2_above_G1_upper": "3333/1000000000",
+      "feasible_W1_above_C2_upper": "7191/1000000000"
+    }
+  },
+  "remaining_obligations": [
+    "Rigorous Gaussian/binary-entropy integral enclosures, including tails and quadrature remainders",
+    "Quantitative upper bound on common-input optimum V if a numerical learning gap or energy threshold is desired"
+  ],
+  "no_new_paper_score_or_Lean_proof": true,
+  "code_sha256": "f13d526e6ccf4f9cf6e00dfd5c198bbc9f22d0cd70ad840136a9d1e21b5b73bc"
+}

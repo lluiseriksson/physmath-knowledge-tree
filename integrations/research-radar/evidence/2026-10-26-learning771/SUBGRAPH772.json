@@ -1,0 +1,676 @@
+{
+  "scope": "small three-target neighborhoods before synthesis; no graph edits",
+  "nodes": [
+    {
+      "id": "domain.harmonic_analysis",
+      "kind": "domain",
+      "title": "Harmonic analysis",
+      "summary": "Fourier analysis, singular integrals, oscillation and scale-sensitive decomposition.",
+      "confidence": "literature",
+      "tags": [
+        "fourier",
+        "harmonic-analysis",
+        "scales"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Analysis.Fourier.FourierTransform"
+        ],
+        "declarations": [],
+        "targets": [
+          "Identify available Fourier transform infrastructure for toy estimates."
+        ]
+      },
+      "questions": [
+        "Which hidden frequency interaction blocks a global estimate?"
+      ],
+      "references": [
+        {
+          "label": "E. M. Stein — Harmonic Analysis",
+          "url": "https://doi.org/10.1515/9781400883929",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "domain.probability_stochastics",
+      "kind": "domain",
+      "title": "Probability and stochastic processes",
+      "summary": "Random variables, stochastic dynamics, concentration and probabilistic method.",
+      "confidence": "literature",
+      "tags": [
+        "probability",
+        "stochastic",
+        "randomness"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Probability.ProbabilityMassFunction.Basic"
+        ],
+        "declarations": [
+          "ProbabilityTheory.ProbabilityMassFunction"
+        ],
+        "targets": [
+          "Build finite probabilistic toy models for analytic or complexity barriers."
+        ]
+      },
+      "questions": [
+        "Does randomness reveal the typical obstruction or only average it away?"
+      ],
+      "references": [
+        {
+          "label": "O. Kallenberg — Foundations of Modern Probability",
+          "url": "https://link.springer.com/book/10.1007/978-3-030-61871-1",
+          "type": "book",
+          "scope": "claim"
+        },
+        {
+          "label": "Restricted typicality in non-equilibrium quantum many-body systems (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.07832v1",
+          "type": "paper",
+          "scope": "context"
+        }
+      ]
+    },
+    {
+      "id": "domain.pde",
+      "kind": "domain",
+      "title": "Partial differential equations",
+      "summary": "Equations involving functions and derivatives across space, time and boundary data.",
+      "confidence": "literature",
+      "tags": [
+        "pde",
+        "regularity",
+        "weak-solutions",
+        "energy"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Analysis.Calculus.FDeriv.Basic"
+        ],
+        "declarations": [
+          "ContDiff"
+        ],
+        "targets": [
+          "Represent weak and strong toy PDE statements with explicit assumptions."
+        ]
+      },
+      "questions": [
+        "Where does regularity transfer fail: estimates, compactness or uniqueness?"
+      ],
+      "references": [
+        {
+          "label": "L. C. Evans — Partial Differential Equations",
+          "url": "https://bookstore.ams.org/gsm-19-r/",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "domain.complexity_theory",
+      "kind": "domain",
+      "title": "Complexity theory",
+      "summary": "Resources needed for computation, reductions, circuits, proof systems and barriers.",
+      "confidence": "literature",
+      "tags": [
+        "complexity",
+        "computation",
+        "circuits",
+        "reductions"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Computability.Basic"
+        ],
+        "declarations": [],
+        "targets": [
+          "Formalize finite languages, reductions and toy circuit classes."
+        ]
+      },
+      "questions": [
+        "Which lower-bound barrier is structural rather than technical?"
+      ],
+      "references": [
+        {
+          "label": "S. Arora and B. Barak — Computational Complexity: A Modern Approach",
+          "url": "https://theory.cs.princeton.edu/complexity/book.pdf",
+          "type": "book",
+          "scope": "claim"
+        },
+        {
+          "label": "Semidefinite extension complexity of the separable set, with applications to approximate disentanglers (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.09033v1",
+          "type": "paper",
+          "scope": "context"
+        },
+        {
+          "label": "A quantum oracle separation between QMA(2) and QMA (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.02865v1",
+          "type": "paper",
+          "scope": "context"
+        },
+        {
+          "label": "Quantum Meta-Complexity Is All You Need: Characterizing One-Way Puzzles via Time-Bounded Kolmogorov Complexity (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.02687v1",
+          "type": "paper",
+          "scope": "context"
+        }
+      ]
+    },
+    {
+      "id": "domain.optimal_transport",
+      "kind": "domain",
+      "title": "Optimal transport",
+      "summary": "Geometry of probability measures, transport cost, Wasserstein spaces and curvature-like flow ideas.",
+      "confidence": "literature",
+      "tags": [
+        "optimal-transport",
+        "probability",
+        "geometry",
+        "flow"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.MeasureTheory.Measure.MeasureSpace"
+        ],
+        "declarations": [],
+        "targets": [
+          "Build finite transport problems as formal toy models."
+        ]
+      },
+      "questions": [
+        "Can measure geometry reveal monotonicity or compactness missing in PDE?"
+      ],
+      "references": [
+        {
+          "label": "C. Villani — Optimal Transport: Old and New",
+          "url": "https://link.springer.com/book/10.1007/978-3-540-71050-9",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "bridge.renormalization_scaling_pde",
+      "kind": "bridge",
+      "title": "Scaling and renormalization for critical PDE",
+      "summary": "Uses scaling, compactness and energy flow across scales to compare PDE and field-theoretic phenomena.",
+      "confidence": "heuristic",
+      "tags": [
+        "renormalization",
+        "scaling",
+        "pde",
+        "qft"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Analysis.Normed.Module.Basic"
+        ],
+        "declarations": [],
+        "targets": [
+          "State a toy scale-invariant norm estimate."
+        ]
+      },
+      "questions": [
+        "Can the critical obstruction be isolated as a monotone quantity or fixed point?"
+      ],
+      "references": [
+        {
+          "label": "C. Fefferman — Existence and smoothness of the Navier-Stokes equation",
+          "url": "https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf",
+          "type": "paper",
+          "scope": "context"
+        },
+        {
+          "label": "K. G. Wilson and J. Kogut — The renormalization group and the epsilon expansion",
+          "url": "https://doi.org/10.1016/0370-1573(74)90023-4",
+          "type": "paper",
+          "scope": "context"
+        },
+        {
+          "label": "The prescribed Hermitian-Yang-Mills flow I (v2, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2606.21062v2",
+          "type": "paper",
+          "scope": "context"
+        },
+        {
+          "label": "The prescribed Hermitian-Yang-Mills flow II (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2606.21073v1",
+          "type": "paper",
+          "scope": "context"
+        }
+      ]
+    },
+    {
+      "id": "bridge.proof_complexity_geometry",
+      "kind": "bridge",
+      "title": "Proof complexity and geometry",
+      "summary": "Studies computational lower bounds through algebraic, geometric and proof-system obstructions.",
+      "confidence": "literature",
+      "tags": [
+        "proof-complexity",
+        "geometry",
+        "circuits",
+        "barriers"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Computability.Basic"
+        ],
+        "declarations": [],
+        "targets": [
+          "Formalize tiny proof systems and reductions."
+        ]
+      },
+      "questions": [
+        "Can a barrier be represented as an invariant that survives reductions?"
+      ],
+      "references": [
+        {
+          "label": "K. Mulmuley and M. Sohoni — Geometric Complexity Theory I",
+          "url": "https://doi.org/10.1137/S009753970038715X",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "problem.navier_stokes",
+      "kind": "problem",
+      "title": "Navier-Stokes existence and smoothness",
+      "summary": "Determine global existence and smoothness, or finite-time breakdown, for 3D incompressible Navier-Stokes.",
+      "confidence": "literature",
+      "tags": [
+        "millennium",
+        "pde",
+        "fluid",
+        "regularity"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Analysis.Calculus.FDeriv.Basic"
+        ],
+        "declarations": [],
+        "targets": [
+          "Formalize a simplified energy inequality with explicit norms."
+        ]
+      },
+      "questions": [
+        "Can critical-scale energy cascade be blocked by a hidden monotonicity?"
+      ],
+      "status": "unsolved",
+      "references": [
+        {
+          "label": "Clay Mathematics Institute — Millennium Prize Problems",
+          "url": "https://www.claymath.org/millennium-problems/",
+          "type": "official",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "problem.p_vs_np",
+      "kind": "problem",
+      "title": "P vs NP",
+      "summary": "Determine whether every efficiently verifiable problem is efficiently solvable.",
+      "confidence": "literature",
+      "tags": [
+        "millennium",
+        "complexity",
+        "computation",
+        "barriers"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Computability.Basic"
+        ],
+        "declarations": [],
+        "targets": [
+          "Formalize reductions and tiny circuit/proof systems."
+        ]
+      },
+      "questions": [
+        "Which lower-bound barrier can be encoded as a robust invariant?"
+      ],
+      "status": "unsolved",
+      "references": [
+        {
+          "label": "Clay Mathematics Institute — Millennium Prize Problems",
+          "url": "https://www.claymath.org/millennium-problems/",
+          "type": "official",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "domain.quantum_information_theory",
+      "kind": "domain",
+      "title": "Quantum information theory",
+      "summary": "Studies quantum states, channels, entropies, correlations, recovery, error correction and operational constraints such as no-signalling, with explicit attention to uniform channels and preservation of reference-system entanglement.",
+      "confidence": "literature",
+      "tags": [
+        "quantum-information",
+        "channels",
+        "entropy",
+        "recovery"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib"
+        ],
+        "declarations": [],
+        "targets": [
+          "Formalize finite matrix channels, Kraus completeness and a no-signalling calculation.",
+          "Represent the quantifier distinction between one uniform recovery map and state-dependent recovery maps."
+        ]
+      },
+      "questions": [
+        "Which finite recovery statements transfer to operator-algebraic or split AQFT settings without assuming a tensor factorization?"
+      ],
+      "references": [
+        {
+          "label": "M. A. Nielsen and I. L. Chuang — Quantum Computation and Quantum Information",
+          "url": "https://www.cambridge.org/highereducation/books/quantum-computation-and-quantum-information/01E10196D0A682A6AEFFEA52D53BE9AE",
+          "type": "book",
+          "scope": "claim"
+        },
+        {
+          "label": "O. Fawzi and R. Renner — Quantum conditional mutual information and approximate Markov chains",
+          "url": "https://arxiv.org/abs/1410.0664",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "Depth-1 expanders on the unitary group and applications (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.01605v1",
+          "type": "paper",
+          "scope": "context"
+        },
+        {
+          "label": "Quantum speed limits based on quantifiers of quantum-state texture (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.08752v1",
+          "type": "paper",
+          "scope": "context"
+        }
+      ]
+    },
+    {
+      "id": "bridge.local_operations_no_signalling",
+      "kind": "bridge",
+      "title": "Local complete operations preserve spacelike statistics",
+      "summary": "For Kraus operators in one local algebra that commute with a distant observable, a complete nonselective operation leaves the distant expectation unchanged: completeness moves through the observable and collapses the sum to the identity. Postselection does not satisfy this conclusion without classical outcome information.",
+      "confidence": "formal",
+      "tags": [
+        "no-signalling",
+        "kraus-operators",
+        "microcausality",
+        "channels"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib",
+          "PhysMathKnowledgeTree.Formal.Microtheorems"
+        ],
+        "declarations": [
+          "nonselectiveExpectationCollapse"
+        ],
+        "targets": [
+          "Prove the finite matrix identity sum_i omega(K_i† Y K_i) = omega(Y) from commutation and sum_i K_i†K_i = 1."
+        ]
+      },
+      "questions": [
+        "Which operator-algebraic hypotheses are sufficient for the same proof with infinite Kraus families or normal completely positive maps?"
+      ],
+      "references": [
+        {
+          "label": "D. Beckman et al. — Causal and localizable quantum operations",
+          "url": "https://arxiv.org/abs/quant-ph/0102043",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "M. A. Nielsen and I. L. Chuang — Quantum Computation and Quantum Information",
+          "url": "https://www.cambridge.org/highereducation/books/quantum-computation-and-quantum-information/01E10196D0A682A6AEFFEA52D53BE9AE",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "bridge.conditional_mutual_information_recovery",
+      "kind": "bridge",
+      "title": "Conditional mutual information to uniform recovery",
+      "summary": "Small quantum conditional mutual information controls reconstruction of a tripartite state from a marginal by a channel acting on the conditioning system. The useful research discipline is the uniform quantifier order: one recovery map should work for every state in the chosen code or extension class.",
+      "confidence": "literature",
+      "tags": [
+        "conditional-mutual-information",
+        "recovery-map",
+        "markov-chain",
+        "uniformity"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib"
+        ],
+        "declarations": [],
+        "targets": [
+          "State a finite-dimensional recovery interface with an explicit reference system and uniform channel quantifiers.",
+          "Keep any split/type-III AQFT extension conditional until its operator-algebraic recovery inequality is sourced."
+        ]
+      },
+      "questions": [
+        "Can a collar-conditioned recovery channel be made uniform over a finite low-energy code while preserving entanglement with a reference?"
+      ],
+      "references": [
+        {
+          "label": "D. Sutter, O. Fawzi and R. Renner — Universal recovery map for approximate Markov chains",
+          "url": "https://arxiv.org/abs/1504.07251",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "O. Fawzi and R. Renner — Quantum conditional mutual information and approximate Markov chains",
+          "url": "https://arxiv.org/abs/1410.0664",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "A quantum oracle separation between QMA(2) and QMA (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.02865v1",
+          "type": "paper",
+          "scope": "context"
+        },
+        {
+          "label": "Semidefinite extension complexity of the separable set, with applications to approximate disentanglers (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.09033v1",
+          "type": "paper",
+          "scope": "context"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge.harmonic.pde",
+      "source": "domain.harmonic_analysis",
+      "target": "domain.pde",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "Frequency decompositions and singular integral estimates control PDE behavior.",
+      "references": [
+        {
+          "label": "E. M. Stein — Harmonic Analysis",
+          "url": "https://doi.org/10.1515/9781400883929",
+          "type": "book",
+          "scope": "claim"
+        },
+        {
+          "label": "L. C. Evans — Partial Differential Equations",
+          "url": "https://bookstore.ams.org/gsm-19-r/",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.probability.pde",
+      "source": "domain.probability_stochastics",
+      "target": "domain.pde",
+      "relation": "bridge",
+      "confidence": "literature",
+      "mechanism": "Stochastic processes model diffusion, random forcing and probabilistic representations of PDE.",
+      "references": [
+        {
+          "label": "L. C. Evans — Partial Differential Equations",
+          "url": "https://bookstore.ams.org/gsm-19-r/",
+          "type": "book",
+          "scope": "claim"
+        },
+        {
+          "label": "O. Kallenberg — Foundations of Modern Probability",
+          "url": "https://link.springer.com/book/10.1007/978-3-030-61871-1",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.optimal_transport.pde",
+      "source": "domain.optimal_transport",
+      "target": "domain.pde",
+      "relation": "bridge",
+      "confidence": "literature",
+      "mechanism": "Measure geometry and gradient-flow viewpoints provide monotonicity and compactness tools.",
+      "references": [
+        {
+          "label": "C. Villani — Optimal Transport: Old and New",
+          "url": "https://link.springer.com/book/10.1007/978-3-540-71050-9",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.pde.navier",
+      "source": "domain.pde",
+      "target": "problem.navier_stokes",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "Navier-Stokes is a central nonlinear PDE regularity problem.",
+      "references": [
+        {
+          "label": "C. Fefferman — Existence and smoothness of the Navier-Stokes equation",
+          "url": "https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "Clay Mathematics Institute — Navier-Stokes Equation",
+          "url": "https://www.claymath.org/millennium/navier-stokes-equation/",
+          "type": "official",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.complexity.pnp",
+      "source": "domain.complexity_theory",
+      "target": "problem.p_vs_np",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "P vs NP is a foundational problem in computational complexity.",
+      "references": [
+        {
+          "label": "Clay Mathematics Institute — P vs NP",
+          "url": "https://www.claymath.org/millennium/p-vs-np/",
+          "type": "official",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.pde.renormalization_bridge",
+      "source": "domain.pde",
+      "target": "bridge.renormalization_scaling_pde",
+      "relation": "transfers_via",
+      "confidence": "literature",
+      "mechanism": "Critical PDE expose scale invariance and energy transfer across scales.",
+      "references": [
+        {
+          "label": "K. G. Wilson and J. Kogut — The renormalization group and the epsilon expansion",
+          "url": "https://doi.org/10.1016/0370-1573(74)90023-4",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "L. C. Evans — Partial Differential Equations",
+          "url": "https://bookstore.ams.org/gsm-19-r/",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.complexity.proof_geometry_bridge",
+      "source": "domain.complexity_theory",
+      "target": "bridge.proof_complexity_geometry",
+      "relation": "transfers_via",
+      "confidence": "literature",
+      "mechanism": "Proof systems and circuit lower bounds supply the computational side of the bridge.",
+      "references": [
+        {
+          "label": "K. Mulmuley and M. Sohoni — Geometric Complexity Theory I",
+          "url": "https://doi.org/10.1137/S009753970038715X",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "S. Arora and B. Barak — Computational Complexity: A Modern Approach",
+          "url": "https://theory.cs.princeton.edu/complexity/book.pdf",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.qinfo.no_signalling",
+      "source": "domain.quantum_information_theory",
+      "target": "bridge.local_operations_no_signalling",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "Quantum channel and Kraus formalisms make the distinction between conditioned branches and complete operations explicit.",
+      "references": [
+        {
+          "label": "D. Beckman et al. — Causal and localizable quantum operations",
+          "url": "https://arxiv.org/abs/quant-ph/0102043",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "M. A. Nielsen and I. L. Chuang — Quantum Computation and Quantum Information",
+          "url": "https://www.cambridge.org/highereducation/books/quantum-computation-and-quantum-information/01E10196D0A682A6AEFFEA52D53BE9AE",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.qinfo.cmi_recovery",
+      "source": "domain.quantum_information_theory",
+      "target": "bridge.conditional_mutual_information_recovery",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "Conditional mutual information quantifies approximate quantum Markov structure and controls recovery from a marginal.",
+      "references": [
+        {
+          "label": "O. Fawzi and R. Renner — Quantum conditional mutual information and approximate Markov chains",
+          "url": "https://arxiv.org/abs/1410.0664",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    }
+  ]
+}

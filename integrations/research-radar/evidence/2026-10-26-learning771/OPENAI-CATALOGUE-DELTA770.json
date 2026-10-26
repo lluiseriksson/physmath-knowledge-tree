@@ -1,0 +1,65 @@
+{
+  "utc": "2026-10-26T21:21:03.779353+00:00",
+  "old_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "new_commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+  "documents": [
+    {
+      "revision": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+      "path": "README.md",
+      "url": "https://api.github.com/repos/openai/math/contents/README.md?ref=7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+      "git_blob_sha1": "cc5b0a03bca6c742f045d683b6647a6f44ef2cae",
+      "sha256": "6cb7f0e387b67c051227c6ba27aca87ee82d9dd2530b6452b86b8681a2e2743a",
+      "bytes": 4417
+    },
+    {
+      "revision": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+      "path": "history.md",
+      "url": "https://api.github.com/repos/openai/math/contents/history.md?ref=7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+      "git_blob_sha1": "ff52ee4dba7ac9a2f145b934f282f582525a4c0d",
+      "sha256": "ac688a38eb9afdb1f3c339c1df251cdb1aa7d8f18067b3ce5d668a96d690f5fb",
+      "bytes": 3888
+    },
+    {
+      "revision": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+      "path": "CONTENTS.md",
+      "url": "https://api.github.com/repos/openai/math/contents/CONTENTS.md?ref=7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+      "git_blob_sha1": "7e1ed90ac5a666f1bbecb22027387c4ad79e9d03",
+      "sha256": "080badcb677fb80be0e695c21a8ec88bcb3a46dd3e3078ca10061e6b289be175",
+      "bytes": 640943
+    },
+    {
+      "revision": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "path": "CONTENTS.md",
+      "url": "https://api.github.com/repos/openai/math/contents/CONTENTS.md?ref=1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "git_blob_sha1": "2c68c086fff36a5806c936ad1659cf1a8d0b6dd9",
+      "sha256": "cc7c0b8a1cdedd845a777e77cf682657308503daf8346c1349e06e9259d063c2",
+      "bytes": 638727
+    }
+  ],
+  "depth": "README/history read and complete CONTENTS PDF-link metadata parsed; no newly added paper statement/proof or Lean build audited",
+  "old_pdf_links": 719,
+  "new_pdf_links": 721,
+  "added_pdf_links": [
+    {
+      "title": "Local smoothing for the Euclidean wave equation",
+      "path": "preprints/Local-smoothing-for-the-Euclidean-wave-equation-October-25-2026/paper.pdf"
+    },
+    {
+      "title": "The Exponential Time Hypothesis is False",
+      "path": "preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf"
+    }
+  ],
+  "removed_pdf_links": [],
+  "renamed_titles": [],
+  "history_reading": "Read current history update; repository claims remain author claims, not independently verified mathematics.",
+  "method": "Complete721 &emsp paper lines parsed with last ]( separator; embedded brackets/parentheses preserved. Historical719 records retained semantically with one explicit old-parser URL repair; original snapshot unchanged.",
+  "old_manuscript_records_retained": true,
+  "historical_url_parse_repairs": [
+    {
+      "old_path": "Sharp-integral-fillings-in-CAT(0",
+      "correct_path": "Sharp-integral-fillings-in-CAT(0)-spaces-September-23-2026/paper.pdf",
+      "reason": "Old generic Markdown regex stopped at first closing parenthesis in CAT(0); not a manuscript withdrawal or publisher rename."
+    }
+  ],
+  "initial_generic_regex_discarded": true
+}

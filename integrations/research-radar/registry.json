@@ -1,19 +1,19 @@
 {
   "schema_version": "1.0",
-  "observed_on": "2026-10-24",
-  "coverage": "Targeted primary-source sweep and complete metadata extraction of the pinned OpenAI manuscript map. Catalogue coverage is not proof coverage.",
+  "observed_on": "2026-10-26",
+  "coverage": "Directed primary-source radar with version-pinned catalogue metadata. Bibliographic coverage is never proof coverage.",
   "source_cards": [
     {
       "id": "openai-math-catalogue",
       "title": "OpenAI mathematics manuscript collection",
-      "url": "https://github.com/openai/math/tree/1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "url": "https://github.com/openai/math/tree/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
       "kind": "catalogue",
       "published_on": "2026-10-06",
-      "observed_on": "2026-10-24",
+      "observed_on": "2026-10-26",
       "reading_status": "catalogued",
       "evidence": "literature",
-      "claim": "The README reports 719 manuscripts in 372 families. All titles and links were extracted from CONTENTS.md; the history records three withdrawals on 7 October.",
-      "limits": "Individual proofs, dependency correctness and formalization builds were not audited in this sweep. Repository claims remain claims of their authors.",
+      "claim": "Current README and parsed CONTENTS report721 manuscripts in373 families. Relative to the preserved719/372 snapshot, two PDF links are added and none removed. Three withdrawal notices remain preserved.",
+      "limits": "New statement reading is separately scoped; no new full proof or upstream Lean build audited. Publisher formalization percentages are not our certification.",
       "reuse": "Bibliographic metadata and original synthesis; no copied abstracts, proofs or inferred training permission.",
       "anchors": [
         "domain.foundation_logic",
@@ -495,6 +495,43 @@
         "domain.quantum_information_theory",
         "domain.algebra"
       ]
+    },
+    {
+      "id": "openai-wave-local-smoothing-20261026",
+      "title": "Local smoothing for the Euclidean wave equation",
+      "url": "https://github.com/openai/math/blob/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/preprints/Local-smoothing-for-the-Euclidean-wave-equation-October-25-2026/paper.pdf",
+      "kind": "preprint",
+      "published_on": "2026-10-26",
+      "observed_on": "2026-10-26",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Theorem1.1 on page1 states an arbitrarily-small-loss Euclidean half-wave estimate for n>=2 and2<=p<infinity; page3 lists Fourier and Kakeya consequences. This is the manuscript claim, not our proof verification.",
+      "limits": "Only first3PDFpages text read, firstpage visually inspected. No full proof audit, executable algorithm replay or upstream Lean verification. Claims remain provisional. Formal SAT challenge/JSON and imports inspected separately; a challenge sorry is not a solution-module defect.",
+      "reuse": "Bibliographic metadata and original short synthesis only. Foreign PDFs, proofs and rendered pages are excluded from this public repository.",
+      "anchors": [
+        "domain.pde",
+        "domain.analysis"
+      ],
+      "manuscript_dated_on": "2026-10-25",
+      "release_commit_timestamp": "2026-10-26T21:18:03Z"
+    },
+    {
+      "id": "openai-eth-20261026",
+      "title": "The Exponential Time Hypothesis is False",
+      "url": "https://github.com/openai/math/blob/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf",
+      "kind": "preprint",
+      "published_on": "2026-10-26",
+      "observed_on": "2026-10-26",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Theorem1.1 on page2 states exact fixed-width CNF counting in polynomial space with a square-root-logarithmic subexponential exponent. The same page warns that general polynomial-size reductions do not preserve subexponential time in the original parameter. This is the manuscript claim.",
+      "limits": "Only first3PDFpages text read, firstpage visually inspected. No full proof audit, executable algorithm replay or upstream Lean verification. Claims remain provisional. Formal SAT challenge/JSON and imports inspected separately; a challenge sorry is not a solution-module defect.",
+      "reuse": "Bibliographic metadata and original short synthesis only. Foreign PDFs, proofs and rendered pages are excluded from this public repository.",
+      "anchors": [
+        "domain.complexity_theory"
+      ],
+      "manuscript_dated_on": "2026-10-25",
+      "release_commit_timestamp": "2026-10-26T21:18:03Z"
     }
   ],
   "candidates": [
