@@ -1,0 +1,77 @@
+{
+  "audit_id": "interval781",
+  "component_id": "interval777/analytic780/certificate779",
+  "terminal": true,
+  "overall": "SUPPORTED_CONDITIONALLY_WITH_NO_FATAL_DEFECT_FOUND",
+  "numerical_score_assigned": false,
+  "full_manuscript_reassessment": false,
+  "prior_assessment754_changed": false,
+  "original_manifest780_sha256": "b72ce7ac5592b9dc6742e53670cda1846cf04b037767f514d7f6a78d5cd0a784",
+  "individual_status": {
+    "radial_reduction": "SUPPORTED: likelihood-ratio sufficiency, scale2 factor, Poisson/Gamma/0F1 constants and G1 offset checked.",
+    "holomorphic_oracle": "SUPPORTED_CONDITIONALLY: magnitude M encloses H_T on every admitted strip box; inner/outer flags and interval bounds checked against documented API.",
+    "tails": "SUPPORTED: theta1/2 MGFs, real-z restriction, annular mass factors and positive enclosing error balls checked.",
+    "exact_feasibility": "SUPPORTED: cross-product definitions give symbolic mass/moment cancellation, and certified coefficient inequalities give nonnegativity.",
+    "numerical_brackets": "REPRODUCED: byte-identical scripts at128/160 bits returned the same enclosures and eight true predicates; independent exact rational log series checked.",
+    "explicit_pair": "SUPPORTED: b_squared9757/50000 is explicit and G1<C2<I_feasible<=C1.",
+    "resource_inference": "CONDITIONAL_ON_PINNED_V3: compactness and AWGN uniqueness give V<C2; existing EA/feedback comparison yields only an existential high-energy separation."
+  },
+  "conditional_result": {
+    "parameters": {
+      "k": 1,
+      "r": 1,
+      "lambda": "1/2",
+      "reset_variance": 2,
+      "epsilon": "1/200",
+      "b_squared": "9757/50000"
+    },
+    "Gaussian_rate_interval": "0.17825 < G1 < 0.17826",
+    "AWGN_capacity_interval": "0.178263333 < C2 < 0.178263334",
+    "feasible_W1_rate_strict_lower": "0.178270525",
+    "capacity_order": "G1 < C2 < I_mu_epsilon(W1) <= C1",
+    "qualitative_gap": "Delta = C2 - V > 0",
+    "numerical_Delta_lower_bound_computed": false,
+    "energy_condition": "E >= 2 and E > (6+log(2))/Delta",
+    "numerical_energy_threshold_computed": false
+  },
+  "preserved_nonrigorous_discrepancy": {
+    "location": "CONTROLS781.json, z20 Cartesian256-node diagnostic",
+    "description": "First256-node value lay outside narrow Arb point ball;192-to256 change showed lack of convergence.",
+    "followup": "Separate384/512/768/1024-node results converge into the Arb enclosure; original discrepancy and log retained.",
+    "not_a_rigorous_alternative_certificate": true
+  },
+  "remaining_conditions_and_falsifiers": [
+    {
+      "id": "R1",
+      "text": "Any admitted complex box on which rough or narrow callback misses H_T invalidates the integral certificate; correctness remains conditional on trusted interval implementation.",
+      "fatal_counterexample_found": false
+    },
+    {
+      "id": "R2",
+      "text": "Exact h is defined by exponential moments and a cross product. Rounded display coefficients cannot inherit exact feasibility."
+    },
+    {
+      "id": "R3",
+      "text": "All t and z tails and signed interval multiplication must remain; t-tail claim applies only to real0<=z<=20."
+    },
+    {
+      "id": "R4",
+      "text": "Retain and correctly label the initial Cartesian mismatch and its nonrigorous follow-up."
+    },
+    {
+      "id": "R5",
+      "text": "Resource inference uses pinned v3 and its finite-per-block EA, per-law expected cost and fixed-E limit order; no new full-paper assessment."
+    },
+    {
+      "id": "R6",
+      "text": "No scalar gain or bracket margin proved here is a lower bound on the common-input gap Delta."
+    },
+    {
+      "id": "R7",
+      "text": "No general new principle, worldwide novelty, independent-review status or verified effective model identity established."
+    }
+  ],
+  "novelty": "Standard analytical and interval methods applied to an explicit witness. Exact-witness priority not established; not a new general capacity or learning principle.",
+  "formal_proof_assistant_verification": false,
+  "publication_action": false
+}

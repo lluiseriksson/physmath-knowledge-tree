@@ -1,0 +1,107 @@
+{
+  "audit_id": "interval781",
+  "new_primary_sources": [
+    {
+      "name": "python_flint_090_acb.pyx",
+      "url": "https://raw.githubusercontent.com/flintlib/python-flint/0.9.0/src/flint/types/acb.pyx",
+      "utc": "2026-10-26T22:40:00.495985+00:00",
+      "status": 200,
+      "bytes": 99976,
+      "sha256": "a78157b45cda5c4ee18847cef27d3c13a65fa4be4d468f0c01cb16a077b747a1",
+      "cache_path": "D:\\Temp\\airr\\2026-10-26_interval781-sources\\python_flint_090_acb.pyx",
+      "reading_depth": "Version-tagged selected source read: callback lines86-114; hypgeom_0f1 dispatch lines2134-2148; complete integral wrapper lines2381-2484. Other library functions not audited.",
+      "full_source_in_audit_archive": false
+    },
+    {
+      "name": "python_flint_090_arb.pyx",
+      "url": "https://raw.githubusercontent.com/flintlib/python-flint/0.9.0/src/flint/types/arb.pyx",
+      "utc": "2026-10-26T22:40:01.043755+00:00",
+      "status": 200,
+      "bytes": 88632,
+      "sha256": "eb8f165e638756ffc19f2a7e72a478edc71e53ea866345f4cfcad05cb154882d",
+      "cache_path": "D:\\Temp\\airr\\2026-10-26_interval781-sources\\python_flint_090_arb.pyx",
+      "reading_depth": "Version-tagged selected source read: arb constructor lines198-214 and lower/upper endpoints lines327-353. Other arithmetic implementation not audited.",
+      "full_source_in_audit_archive": false
+    },
+    {
+      "name": "python_flint_090_tag.json",
+      "url": "https://api.github.com/repos/flintlib/python-flint/git/ref/tags/0.9.0",
+      "utc": "2026-10-26T22:40:01.515995+00:00",
+      "status": 200,
+      "bytes": 339,
+      "sha256": "6073ff2fab8fd3c537cc070ff316a8fb913c9020f8ad6ac040d95f21a2f2b766",
+      "cache_path": "D:\\Temp\\airr\\2026-10-26_interval781-sources\\python_flint_090_tag.json",
+      "reading_depth": "Tag reference metadata read completely; object830d3293d8171adc863d48f67f97190e90a5fdd4 is an annotated tag object, not asserted to be a commit hash.",
+      "full_source_in_audit_archive": false
+    },
+    {
+      "name": "python_flint_acb_docs.html",
+      "url": "https://python-flint.readthedocs.io/en/latest/acb.html",
+      "utc": "2026-10-26T22:40:01.918781+00:00",
+      "status": 200,
+      "bytes": 343884,
+      "sha256": "6d711f3a91bdce0c9739d91a1247e5c40e935b2acf24688785cc23a01d13e903",
+      "cache_path": "D:\\Temp\\airr\\2026-10-26_interval781-sources\\python_flint_acb_docs.html",
+      "reading_depth": "Primary documentation page identified as0.9.0. Selected sections: acb/arb enclosure definitions; integral callback and analytic flag; log analytic flag; 0F1 convention. Not the complete API.",
+      "full_source_in_audit_archive": false
+    },
+    {
+      "name": "arb_calc_docs.html",
+      "url": "https://arblib.org/acb_calc.html",
+      "utc": "2026-10-26T22:40:02.401496+00:00",
+      "status": 200,
+      "bytes": 45936,
+      "sha256": "452994efc839e49302ff975bc732d72b5f9eec8e363b0a7d2aae32dde925b969",
+      "cache_path": "D:\\Temp\\airr\\2026-10-26_interval781-sources\\arb_calc_docs.html",
+      "reading_depth": "Primary documentation downloaded successfully. Complete acb_calc_integrate contract, order0/order1 rules, tolerance caveat, options and local Gauss-Legendre bound read. Old Taylor material incidentally returned but not relied on.",
+      "full_source_in_audit_archive": false
+    },
+    {
+      "name": "installed_api_docstrings",
+      "cache_path": "D:\\Temp\\airr\\2026-10-26_interval781-sources\\installed_api_read.txt",
+      "sha256": "5a63c836259bdcbebe72b643c16c1d9d01f72d8e2282f615d7bac17cbc54d380",
+      "bytes": 3761,
+      "reading_depth": "Installed0.9.0 integral/log/upper/lower/0F1 docstrings read completely; retained outside the audit archive.",
+      "full_source_in_audit_archive": false
+    }
+  ],
+  "failed_endpoint_attempts": [
+    {
+      "url": "https://python-flint.readthedocs.io/en/0.9.0/acb.html",
+      "result": "web tool inaccessible"
+    },
+    {
+      "url": "https://flintlib.org/doc/acb_calc.html",
+      "result": "web tool HTTP 403"
+    },
+    {
+      "url": "https://flintlib.org/doc/acb_hypgeom.html",
+      "result": "web tool HTTP 403"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/flintlib/flint/master/doc/source/acb_calc.rst",
+      "result": "HTTP 404"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/flintlib/flint/main/doc/source/acb_calc.rst",
+      "result": "HTTP 404"
+    },
+    {
+      "url": "https://arblib.org/acb_calc.html",
+      "result": "Web reader HTTP403; ordinary public download succeeded and is pinned above."
+    }
+  ],
+  "frozen_own_inputs": "INPUT_VALIDATION.json and input/MANIFEST780.json",
+  "v3_dependency": {
+    "source_sha256": "3280bdee50662caf303cdc0182a94a68f92ba5428a718decad7287dbc637955b",
+    "pdf_sha256": "66176e7f21d2a4785b2355f07b3dcc49d4d4d3b8f93ebd36efe19d9a51537881",
+    "source_reading_depth": "Complete perturbation passage379-417 and complete assisted/learning section929-1138 only. PDF hash-check only."
+  },
+  "reused_history": {
+    "audit": "745",
+    "scope": "Prior technical and literature reasoning present in this same agent history; not a new full literature search or independent review."
+  },
+  "input_SOURCES776_treatment": "Read as metadata/provenance only. No proof-reading coverage inferred from endpoint checks; refresh script not rerun.",
+  "external_cache": "D:\\Temp\\airr\\2026-10-26_interval781-sources",
+  "no_worldwide_novelty_search": true
+}

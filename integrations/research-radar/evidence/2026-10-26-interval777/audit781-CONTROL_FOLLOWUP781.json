@@ -1,0 +1,28 @@
+{
+  "reason": "Initial nonrigorous Cartesian 256-node estimate at z=20 lay outside the narrow Arb ball, with a 2.58e-9 change from 192 nodes. Refine this falsification check rather than suppress it.",
+  "status": "Nonrigorous Gauss-Hermite convergence check only; cannot certify an integral enclosure.",
+  "z": 20,
+  "rows": [
+    {
+      "nodes_per_coordinate": 384,
+      "value": 0.01204690986322483,
+      "seconds": 0.01600000000325963
+    },
+    {
+      "nodes_per_coordinate": 512,
+      "value": 0.012046909869937726,
+      "seconds": 0.015000000013969839
+    },
+    {
+      "nodes_per_coordinate": 768,
+      "value": 0.01204690986976,
+      "seconds": 0.046999999991385266
+    },
+    {
+      "nodes_per_coordinate": 1024,
+      "value": 0.01204690986975888,
+      "seconds": 0.07800000000861473
+    }
+  ],
+  "initial_controls_sha256": "45a4b635c49a8950ad6c875035cef6bba4aeea054501d1406041ba04fe71e850"
+}

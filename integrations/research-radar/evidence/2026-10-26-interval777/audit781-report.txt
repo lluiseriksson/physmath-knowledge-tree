@@ -1,0 +1,229 @@
+INTERVAL781 — COMPONENT AUDIT, WITHOUT A SCORE
+Frozen component interval777 / MANIFEST780; analytic note780 and certificate779.
+
+TERMINAL FINDING
+
+The new component is supported, conditional on the stated exact definitions, the correctness of the invoked Arb/python-flint interval implementation, and the inherited v3 capacity/comparison hypotheses. No fatal error was found in the radial reduction, holomorphic enclosure, tails, exact moment cancellation, or the two strict scalar inequalities. An exact rerun of the frozen two scripts at 128 and 160 bits reproduced the displayed integral balls and all eight asserted comparisons. That is a repeat using the same implementation, not an independent implementation or a formal proof.
+
+The concrete conclusion is
+
+  G1 < C2 = log(1+9757/50000) < I_mu_epsilon(W1) <= C1,
+
+for the exact feasible perturbation defined below. In conjunction with the pinned v3 compactness/uniqueness argument, the explicit pair has V<C2 and hence Delta=C2-V>0. Neither a numerical positive lower bound on Delta nor a numerical energy threshold has been obtained. The certified individual input improvement must never be substituted for Delta.
+
+This is a new component audit only. It does not reevaluate the complete-manuscript assessment754, change any prior score, assess a new paper, or authorize publication. No numerical score is assigned here. The prior745 history was reused, the filesystem is shared, and parent messages supplied the mandate and component context. The requested configuration is Astra xhigh; effective runtime model/effort and independence are not verified or asserted.
+
+INPUTS AND READING SCOPE
+
+The manifest SHA256 is b72ce7ac5592b9dc6742e53670cda1846cf04b037767f514d7f6a78d5cd0a784. All eleven payload lengths and SHA256 values were checked against both C:/Trabajo/airr/2026-10-26_interval777 and D:/Proyectos/airr-investigacion/2026-10-26_interval777. They agree. Frozen originals were not executed in place or modified. The manifest, eleven payloads, and retained logs are copied into this audit's input folder.
+
+ANALYTIC780.md, interval778.py, certificate779.py, CERTIFICATE779.json, probe777.py and all included probe/run logs were read completely. refresh776.py and SOURCES776.json were inspected as provenance material. That thirteen-endpoint metadata refresh is not substantive reading of those papers and establishes no novelty result. It was not rerun.
+
+Pinned v3 dependency: D:/Proyectos/airr-investigacion/2026-10-26_assisted753-input/main.tex, SHA256 3280bdee50662caf303cdc0182a94a68f92ba5428a718decad7287dbc637955b. Its PDF SHA256 is 66176e7f21d2a4785b2355f07b3dcc49d4d4d3b8f93ebd36efe19d9a51537881. Both match MANIFEST753.json. The component's dependency reading was the complete perturbation passage, lines379–417, and the complete assisted-comparison/learning section, lines929–1138. The rest of v3 and its PDF were not newly reviewed. Source text and manifest are included as own dependencies; the PDF was hash-checked only. The earlier745 work remains historical context rather than a new certification of the entire manuscript.
+
+1. RADIAL REDUCTION — CHECKED
+
+Write x=sqrt(z) real, z>=0, since the flag problem is rotationally covariant. The signal and reset conditional densities are phi_1(y-x) and phi_2(y), with equal prior weights. Their likelihood ratio is
+
+  phi_1(y-x)/phi_2(y)
+     = 2 exp(-|y-x|^2+|y|^2/2)
+     = 2 exp(z-|y-2x|^2/2).
+
+Thus L=log2+z-T, T=|Y-2x|^2/2. The posterior flag probability is a measurable function of T; its entropy conditioned on Y equals its entropy conditioned on T. This establishes sufficiency for this binary flag at each fixed x. It does not identify T as a sufficient statistic for arbitrary communication messages.
+
+Under signal, Y=x+G_1, so (Y-2x)/sqrt(2) is a complex Gaussian of mean -x/sqrt(2) and complex variance1/2. Under reset, (Y-2x)/sqrt(2) is a complex Gaussian of mean -sqrt(2)x and variance1. Polar integration, or expansion of the noncentral squared-magnitude density, gives
+
+  f_s(t,z)=2 exp(-2t-z) sum_{j>=0}(2zt)^j/(j!)^2,
+  f_r(t,z)=exp(-t-2z) sum_{j>=0}(2zt)^j/(j!)^2.
+
+The signal prefactor2 is the radial scale/Jacobian factor and is necessary. More explicitly, signal is a Poisson(z) mixture of Gamma(j+1,scale1/2), whose j-th term is
+
+  exp(-z) z^j/j! * [2^(j+1)t^j exp(-2t)/j!].
+
+Reset is a Poisson(2z) mixture of Gamma(j+1,scale1). Their displayed products give exactly the two densities. Nonnegative terms allow Tonelli for t,z>=0. They integrate to one. Total expectation/variance then gives signal mean(1+z)/2, variance(1+2z)/4, and reset mean1+2z, variance1+4z. No factor-of-two or Poisson-parameter discrepancy was found.
+
+With equal priors, conditional flag entropy is the integral of
+
+  (f_s/2) log(1+exp(-L)) + (f_r/2) log(1+exp(L)).
+
+Substitution gives exactly F(t,z) in780 and both Python scripts, including the factor1/2 only on the displayed reset exponential term after the common 0F1 factor is taken out. The function called hypgeom_0f1(1) is the ordinary 0F1(;1;argument); the parameter is1 and the default is unregularized. At parameter1 the gamma normalization would in any event be1, but the installed wrapper's documented argument convention was checked directly.
+
+For X~CN(0,1), z has density exp(-z), not an additional z or 2pi factor. The matched output is CN(0,2), and the binary flag identity gives
+
+  h(Y)=log(2 pi e),
+  h(Y|X)=log(pi e)+(3/2)log2-E H(z),
+  G1=E H(z)-(1/2)log2=J(0,infinity)-(1/2)log2.
+
+The sign and constant in certificate779 are correct.
+
+2. HOLOMORPHIC ENCLOSURE AND ARB CONTRACT — CHECKED
+
+The key proof obligation is an enclosure of the entire requested complex box. Agreement at real sample points or repetition at a higher precision cannot replace it.
+
+2.1 Holomorphy. For real t in[0,200] and |Im z|<1/4, each exponential inside a logarithm has argument magnitude<1/4. Its real part is positive. Therefore 1+that exponential has real part>1, is nonzero, and lies away from the principal-log cut. The factor 0F1(;1;2zt) is entire in z and t, directly from its power series. On a finite t interval, integration preserves holomorphy in the z strip, by uniform domination on compact subsets. H_T(z) is thus the holomorphic function being enclosed. No square root of complex z is evaluated by the implementation.
+
+2.2 Uniform magnitude. Let Z>=sup|z| and ell<=inf Re z for the entire box. The positive coefficients imply
+
+  |0F1(;1;2zt)| <= sum_j (2Zt)^j/(j!)^2
+                 <= exp(2 sqrt(2Zt)) <= exp(t/2+4Z).
+
+The middle inequality can be proved directly from binomial(2j,j)<=4^j and the positive even terms of exp(2sqrt(u)); it does not require a branch choice for the evaluated complex function. The last inequality is arithmetic–geometric mean.
+
+For either logarithm, Re(log) is nonnegative, its argument has magnitude<1/4, and log(1+A)<=max(log A,0)+log2 for real A>0. Using |Re z|<=Z and t>=0 bounds the logarithm's modulus by t+Z+3. For example the first real part is at most log(1+exp(t-Re z)/2); its imaginary part is at most1/4. The second logarithm obeys a still smaller estimate. Thus the absolute integrand is bounded by
+
+  exp(4Z-ell) exp(-3t/2)(t+Z+3)
+     +(1/2)exp(4Z-2ell)exp(-t/2)(t+Z+3).
+
+Integrating this positive bound to infinity, which also bounds[0,200], yields exactly
+
+  M=exp(4Z-ell)[4/9+2(Z+3)/3]+exp(4Z-2ell)(Z+5).
+
+Consequently every H_T(z) in the requested box has real and imaginary parts in[-M,M]. This validates rough(z). The bound is loose, but looseness affects work/accuracy rather than correctness. A ball-valued enclosure rule need not itself be an analytic formula in the box midpoint/radius; it must enclose a function proved holomorphic on that box. The coarse rule satisfies that requirement.
+
+2.3 Outward bounds. abs(z).upper() is an outward scalar upper bound; z.real.lower() is a lower bound. The arithmetic constructing M is ball arithmetic, and the final M.upper() is upward rounded. The constructor arb(0,M) adds an enclosing radius, as confirmed by the version-pinned wrapper source. The returned rectangle therefore contains the required disk. No midpoint-only substitution is made.
+
+2.4 Narrow boxes and flags. H first rejects any box for which |Im z|<1/4 cannot be certified. Broad boxes use the proved bound. On narrow boxes, the inner integrand retains the full z ball. For an analytic t request it rejects t boxes not wholly within |Im t|<1/4. Combined with the z strip, both exponential argument angles have magnitude<1/2, so the logarithms are holomorphic. Both logs receive analytic_t or analytic_z. Any interval overestimation that touches a forbidden cut can cause a non-finite enclosure and subdivision rather than an unchecked branch value. 0F1 with parameter1 has no singular parameter or branch cut to test.
+
+The nested inner quadrature encloses the integral for every parameter z in the box because its integrand enclosures and quadrature bounds are uniform over that parameter ball. The outer call then encloses exp(-z)H_T(z). Neither the threshold1e-18 selecting a method nor a change of adaptive subdivision discards interval radii.
+
+2.5 API contract. The installed python-flint0.9.0 documentation and version-tagged acb.pyx were inspected. The wrapper maps the callback's analytic flag to the underlying order1 holomorphic-domain request. Its integral method returns the computed enclosure; it does not return the C convergence status. The Arb integration documentation states that tolerance values are goals and cumulative error can exceed them. Therefore certificate779 correctly decides with the returned balls, not with abs_tol, requested precision, or printed digit count. A finite result with a wider-than-requested radius is not by itself a failed enclosure. The code's finite/imaginary-zero-containment and strict interval comparisons are the relevant checks.
+
+The 128/160-bit setting does not mean128/160 accurate bits of G1. Its displayed uncertainty is of order1e-8, controlled here by integration settings. The comparisons have enough margin despite that uncertainty. The full numerical library implementation, compiler and hardware were not formally verified.
+
+3. TAILS AND INTERVAL ADDITION — CHECKED
+
+The posterior binary entropy is <=log2 pointwise in T. The entropy-integrand tail is therefore <=(log2)/2 times the sum of the signal/reset tail probabilities. For Gamma scale theta_0 mixed with a Poisson(lambda_0) shape increment,
+
+  E exp(theta T)=(1-theta_0 theta)^(-1)
+     * exp(lambda_0 theta_0 theta/(1-theta_0 theta)).
+
+At theta=1/2, this gives (4/3)exp(z/3) for signal and2exp(2z) for reset. Markov at T=200, uniformly for0<=z<=20, gives
+
+  tau=(log2)/2 exp(-100)[(4/3)exp(20/3)+2exp40]
+      <6.1e-27.
+
+For z>20, H(z)<=log2 gives the separate average-input tail <=log2 exp(-20)<1.43e-9. All constants and exponents agree with the code. There is no use of the t tail outside its justified real-z range.
+
+On an annulus[a,b], the missing t tail in J is at most tau p_i with p_i=exp(-a)-exp(-b). The a0 computation adds that interval before multiplying by the signed exact h_i. Interval multiplication retains the correct effect for negative coefficients. For total G1, adding tau rather than tau(1-exp(-20)) is a conservative overbound. The separate z tail is also added before subtracting(log2)/2.
+
+positive_error(x) sets u=x.upper() and returns arb(u/2,u/2). Since u is an exact outward dyadic upper endpoint and halving is exact, the ball encloses[0,u]; radius rounding can extend it slightly below zero, which is harmless. It is not necessary for the returned ball itself to be strictly positive. Direct controls confirmed containment of both endpoints and the two stated numerical tail bounds. No positive tail was silently dropped.
+
+4. EXACT FEASIBLE PERTURBATION — CHECKED
+
+The three squared-radius annuli are[0,1/2],[1/2,2],[2,6]. Shared boundaries have zero Gaussian measure. With h=0 outside, their masses and cost moments are exactly
+
+  p_i=exp(-a_i)-exp(-b_i),
+  m_i=(a_i+1)exp(-a_i)-(b_i+1)exp(-b_i).
+
+Define c=p cross m and h_i=c_i/c_2 as exact real expressions, with zero-based index2. The certified inequalities c_2>0 and c_2>|c_0|,|c_1| establish |h|<=1; h_2=1 exactly. This is not an instruction to use the rounded displayed coefficients as the input distribution.
+
+The cancellations are exact algebraic determinant identities:
+
+  p dot c=0 and m dot c=0,
+  integral h dmu0=0 and integral |x|^2 h dmu0=0.
+
+They are not inferred from numerically small residuals. With epsilon=1/200, the density factor1+epsilon h is at least199/200, so it is nonnegative, has mass1 and preserves cost1. Its squared norm is N=sum p_i h_i^2. Interval dependence only enlarges the enclosure of N and a0; treating the exact definitions consistently gives feasibility regardless of the printed rounding.
+
+The inherited v3 inequality(11) then yields
+
+  I_mu_epsilon(W1)>=G1+epsilon a0-epsilon^2 N.
+
+Its proof applies to this bounded piecewise constant h: the output second moment remains2, the flag-entropy change is linear in h, and the output KL divergence is at most the input KL divergence, itself bounded by epsilon^2 integral h^2 dmu0 using log(1+u)<=u. No smoothness of h is needed.
+
+5. NUMERICAL CERTIFICATE AND REPLICATION — SUPPORTED
+
+Frozen779 and the audit rerun both give the following displayed enclosures at each of128 and160 bits:
+
+  G1: [0.17825399 +/-8.92e-9],
+  a0: [0.00782110 +/-5.91e-9],
+  N: [0.73792783672331207185997686004270870 +/-1.59e-36]
+       at128 bits, with the displayed radius slightly smaller at160,
+  L=G1+epsilon a0-epsilon^2 N: [0.17827465 +/-8.33e-9],
+  C2: [0.17826333333310046256827685365562650 +/-2.49e-36].
+
+All eight strict predicates in779 passed. The two scripts in replica/ are byte-identical to the frozen input scripts. The exact rerun exited0, without Python optimization disabling assertions, and wrote a separate certificate and full log. Comparison excludes elapsed time but checks the output values, tests, counts, parameters, code hashes and version. Repetition of the same algorithm can reproduce a common mistake; the analytic checks above, rather than repetition alone, address that risk.
+
+The looser printed premises alone imply the exact rational lower rate
+
+  0.17825+(1/200)0.0078-(1/200)^2 0.739
+       =0.178270525.
+
+Because the premises are strict, the feasible rate is strictly above that number. A separate audit calculation used rational arithmetic, not Arb's logarithm, to bound C2. For t=9757/109757,
+
+  log(1+9757/50000)=2 sum_{j>=0} t^(2j+1)/(2j+1).
+
+After N=16 terms, the positive remainder is at most2t^(2N+1)/[(2N+1)(1-t^2)]. Exact fractions certify0.178263333<C2<0.178263334. The frozen packet's reference to an earlier scalar check773 is thus not needed as an unexamined dependency of this audit. The new rational series certificate is preserved in CONTROLS781.json.
+
+6. FALSIFICATION CONTROLS AND PRESERVED DISCREPANCY
+
+Seven complex-domain probes tested a broad admissible box, a negative-real z, a point near the strip edge, a narrow complex parameter box, the exact imaginary boundary1/4, a box crossing that boundary, and an outside-strip point with analytic=False. Valid cases returned finite enclosures, and the forbidden cases returned nan. Finite tested point/box enclosures were contained in their coarse rectangles. These probes exercise branches; they are not a proof over every box. The universal enclosure proof is Section2 above.
+
+A separate nonrigorous Cartesian Gauss–Hermite calculation evaluated the original two complex-Gaussian conditional expectations, without the radial density/Jacobian formula. It used96,192 and256 nodes per real coordinate at z=0,1,4,20. The final values at0,1,4 lay inside the Arb balls. At z=20 the256-node value0.012046909603700971 lay outside the narrow radial ball, and the change from192 nodes was approximately-2.58e-9. That discrepancy is retained verbatim in CONTROLS781.json and its log; it was not discarded or counted as agreement.
+
+The follow-up, preserved separately in CONTROL_FOLLOWUP781.json, gave
+
+  384 nodes:  0.01204690986322483,
+  512 nodes:  0.012046909869937726,
+  768 nodes:  0.01204690986976000,
+  1024 nodes: 0.01204690986975888.
+
+They converge to the radial Arb value near0.0120469098704; the finest value differs from its midpoint by about6.7e-13, comfortably within the original ball. The observed initial discrepancy is attributable to insufficient resolution of the nonrigorous Cartesian quadrature, rather than evidence of a radial factor error. This convergence is a diagnostic observation, not a certified error bound for Gauss–Hermite quadrature. No interval result was selected or altered to match it.
+
+All original probe/run logs, the exact rerun, the first diagnostic and its follow-up are retained. The failed initial documentation endpoints are also recorded. No mathematical or assertion failure occurred in the exact replay. No parameter optimization or broad numerical search was performed.
+
+7. EXPLICIT TWO-LAW AND RESOURCE INFERENCE — CONDITIONAL ON V3
+
+The choice b^2=9757/50000 is an explicit positive rational strictly below1. Therefore the laws
+
+  nu1=(1/2)delta_(1,1)+(1/2)delta_(0,2),
+  nu2=delta_(sqrt(9757/50000),1)
+
+fit K=1, v_*=1, v^*=2. The reset component has variance2, not1. The second channel's cost-one AWGN capacity is C2=log(1+b^2), uniquely achieved by mu0=CN(0,1). The checked bounds give G1<C2<C1, so the least individual classical capacity is C2. The new construction does not claim C1=C2; unlike v3's original existential choice, no unknown capacity is hidden in b.
+
+For this explicit pair, use the exact v3 compactness argument: the cost ball is weakly compact; Gaussian smoothing, Scheffe and the bounded-density/second-moment entropy lemma give output entropy continuity; W1's conditional entropy is bounded continuous by the binary flag identity and W2's is constant. Thus min(I1,I2) attains its maximum V. Since I2<=C2, one has V<=C2. Equality would require the unique W2 maximizing input mu0, for which I1=G1<C2. Hence V<C2. Only compactness plus uniqueness promotes a strict optimizer mismatch to a strict supremum gap; the scalar gain by itself does not do that.
+
+The pinned v3 assisted theorem applies to this finite family with its original cost and resource definitions: arbitrary finite-dimensional preshared entanglement per block, bosonic receiver memory, free backward classical feedback only, vanishing worst-law error, and expected photon cost enforced separately under each actual law. Its quantum-mutual-information proof uses the retained reference, not an accessible-information increment. At fixed E>=2 the same vacuum pilot separates the two plus kernels at zero transmitted cost, with one feedback index bit and sublinear training. The explicit b does not change that vacuum test because the input amplitude is zero.
+
+The capacities therefore obey the conditional implication
+
+  C_FB(E)-C_EA,noFB(E) >= [C2-V]-(6+log2)/E.
+
+Define Delta=C2-V>0. The threshold E>(6+log2)/Delta, E>=2, is existential. Neither I_mu_epsilon(W1)-G1, L-C2, nor C2-G1 is a proved positive lower bound on Delta. In particular, a common input may trade a small AWGN loss for an increase on W1; the mismatch at mu0 alone does not quantify that tradeoff. Numerical identification of the two scalar rates does not quantify the compound optimization.
+
+The coding limit remains blocklength->infinity at fixed E, followed by removal of cost/rate approximation slack, and only then a high-energy statement. No uniform blocklength in E, numerical energy threshold, strong converse, infinite-compound direct theorem, or restriction on all protocols described as Gaussian is inferred.
+
+8. SOURCES, NOVELTY AND LIMITS
+
+Primary numerical references were checked at the actual reading depth recorded in source_pins.json:
+
+— python-flint0.9.0 acb documentation: acb.integral callback/analytic contract, log analytic flag and 0F1 convention. The reachable /latest page identified itself as0.9.0 and is byte-pinned; the initially tried version-specific URL was inaccessible.
+  https://python-flint.readthedocs.io/en/latest/acb.html
+
+— Official python-flint0.9.0 tagged source: callback order-to-analytic mapping, integral wrapper, hypgeom_0f1 dispatch, arb constructor and outward upper/lower endpoints. The tag object, source response bytes and selected installed binary hashes are pinned. This is selected source inspection, not a full numerical-library audit.
+  https://raw.githubusercontent.com/flintlib/python-flint/0.9.0/src/flint/types/acb.pyx
+  https://raw.githubusercontent.com/flintlib/python-flint/0.9.0/src/flint/types/arb.pyx
+
+— Arb numerical-integration documentation: complete acb_calc_integrate contract, order0/order1 meaning, tolerance-goal caveat, options, and local Gauss–Legendre enclosure discussion. It explains why the callback must enclose a holomorphic function on the whole error-control domain and why actual returned radii matter. The public web reader returned403, while the ordinary public download succeeded and its bytes are pinned. The old Taylor-method material incidentally returned was not relied upon.
+  https://arblib.org/acb_calc.html
+
+External source files remain in D:/Temp/airr/2026-10-26_interval781-sources; only pins and reading-depth records are included in the conserved audit. The payload's broad metadata inventory was not converted into theorem/proof coverage.
+
+The analytical route uses standard likelihood-ratio sufficiency, noncentral complex-Gaussian/Poisson–Gamma identities, elementary holomorphic domination, established interval quadrature, Markov tails, determinant moment correction and the earlier capacity proof. It is not a new general information principle or a new quadrature method. Its supported contribution in this packet is a concrete, reproducible parameter witness replacing the unknown-capacity choice of b. Whether that exact witness or presentation is previously published was not established by a worldwide novelty search. The prior745 literature assessment of the general feedback/minimax mechanism is reused as historical context; it was not expanded into a new comprehensive literature review.
+
+9. REMAINING CONDITIONS, OBJECTIONS AND FALSIFIERS
+
+R1 — The numerical certificate is conditional on the analytical enclosure just proved and the correctness of the trusted Arb/python-flint operations. Repeating128/160-bit executions is not a formal or independent proof. A counterexample box for which the returned finite rough/narrow enclosure misses H_T would invalidate the integration certificate. No such box was found; the proof covers the admitted domain.
+
+R2 — Preserve the exact exponential/cross-product definition of h. Replacing it by the displayed decimal coefficients would remove the symbolic mass/cost cancellations and require a new feasibility analysis. All current statements use the exact definition.
+
+R3 — Keep all tail terms and signed interval propagation. Omitting the z>20 tail or reusing the real-z t-tail beyond its stated domain would require a new certificate. The frozen code handles these correctly.
+
+R4 — The original low-resolution Cartesian discrepancy must remain in the record. Its refinement supports convergence, but neither run is a rigorous alternative proof. The report does not describe every diagnostic as successful on its first attempt.
+
+R5 — The strict resource conclusion is conditional on the pinned v3 compactness, uniqueness and operational comparison theorems under their exact cost/limit definitions. This audit read the relevant dependency passages but is not a new full-paper review. Any future change to those hypotheses requires renewed checking.
+
+R6 — Delta and the energy threshold remain quantitatively open. Treating a single-law gain, either scalar bracket margin, or a finite collection of input tests as a lower bound on Delta is a falsifiable overclaim not supported by this packet.
+
+R7 — No broad novelty, standalone importance, optimized witness, general Gaussian-protocol impossibility, independent reviewer status, or verified model identity follows. No score was assigned or updated.
+
+With these boundaries, the component supports the explicit two-law qualitative learning separation. Original inputs, all executed diagnostic attempts and the preserved discrepancy remain available in the archive.

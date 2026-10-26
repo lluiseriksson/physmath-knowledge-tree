@@ -1,0 +1,210 @@
+{
+  "audit_id": "interval781",
+  "created_at_utc": "2026-10-26T22:48:32.595601+00:00",
+  "scope": "Unscored component audit of frozen interval777/780; no new full-paper review.",
+  "hash_algorithm": "SHA256",
+  "files": [
+    {
+      "path": "context.json",
+      "bytes": 3302,
+      "sha256": "3f35a9604df9193bae43cf8a5818e3c792a7a53b45d09152d63d2ddfbe4cb419"
+    },
+    {
+      "path": "CONTROL_FOLLOWUP781.json",
+      "bytes": 942,
+      "sha256": "6c5052ea355102cfb331ac7a081ef5bdcd5dda94a7752dd2d0eb2d18fcb4ee95"
+    },
+    {
+      "path": "control_followup781.log",
+      "bytes": 942,
+      "sha256": "6c5052ea355102cfb331ac7a081ef5bdcd5dda94a7752dd2d0eb2d18fcb4ee95"
+    },
+    {
+      "path": "control_followup781.py",
+      "bytes": 1467,
+      "sha256": "508badbd09b742dd1f5fc5ffe785a99ac3d588871715c61fb229c87feb7760dc"
+    },
+    {
+      "path": "CONTROLS781.json",
+      "bytes": 7396,
+      "sha256": "45a4b635c49a8950ad6c875035cef6bba4aeea054501d1406041ba04fe71e850"
+    },
+    {
+      "path": "controls781.log",
+      "bytes": 7396,
+      "sha256": "45a4b635c49a8950ad6c875035cef6bba4aeea054501d1406041ba04fe71e850"
+    },
+    {
+      "path": "controls781.py",
+      "bytes": 4650,
+      "sha256": "4cc8d322b5e5d63e367ff3d7ca1e9f9f43f7a16675fffad0abf3aa1036fc56b7"
+    },
+    {
+      "path": "dependencies/MANIFEST753.json",
+      "bytes": 2927,
+      "sha256": "248191950b78f835ee6d4d12fed73de9081b4b6507087bac2db2610df2c83e7c"
+    },
+    {
+      "path": "dependencies/v3-main.tex",
+      "bytes": 64582,
+      "sha256": "3280bdee50662caf303cdc0182a94a68f92ba5428a718decad7287dbc637955b"
+    },
+    {
+      "path": "DIAGNOSTIC_SUMMARY781.json",
+      "bytes": 1186,
+      "sha256": "b44c027cb83510a3111fdee5cd65ee81090615116acea8f2346524b01c8b3923"
+    },
+    {
+      "path": "fetch_sources781.log",
+      "bytes": 2854,
+      "sha256": "599b267767ab5122039432d9f48f5e8f5819c36ee4f283b1bd23493ee704a447"
+    },
+    {
+      "path": "fetch_sources781.py",
+      "bytes": 2131,
+      "sha256": "d69b7e39986220266d64375a7fc11d6673ac6a4bc289ab5dca750ef4f868d851"
+    },
+    {
+      "path": "finalize781.py",
+      "bytes": 3503,
+      "sha256": "07d212a8c3d9eecca41f2c8235f4cd69eb3a1bf8793c92731fd2ea634df35c34"
+    },
+    {
+      "path": "input/ANALYTIC780.md",
+      "bytes": 5982,
+      "sha256": "cde691c7b48452fec6daf9945a7b8d7217d6e44cfa11712c9122094a256869ed"
+    },
+    {
+      "path": "input/CERTIFICATE779.json",
+      "bytes": 3771,
+      "sha256": "9b7374901ac3ec6a2d4870d3dcaaab8e07c61a718ef9fe8be287e3f8d209362b"
+    },
+    {
+      "path": "input/certificate779.py",
+      "bytes": 3224,
+      "sha256": "bf0255c5ec751622bf92a28e5e61cb8939f5c6ba859155c0d436a4f0b969cfbb"
+    },
+    {
+      "path": "input/interval778.py",
+      "bytes": 1587,
+      "sha256": "4fa44ba0a03659707abc68a9ec0391c7375967aec7b69d0ebae533d1e38235d2"
+    },
+    {
+      "path": "input/MANIFEST780.json",
+      "bytes": 1770,
+      "sha256": "b72ce7ac5592b9dc6742e53670cda1846cf04b037767f514d7f6a78d5cd0a784"
+    },
+    {
+      "path": "input/probe777.log",
+      "bytes": 334,
+      "sha256": "947aaeafdfbed9cecdc20e088f7f314f17577a21c31b9d15bc7ea6dba24662ae"
+    },
+    {
+      "path": "input/probe777.py",
+      "bytes": 645,
+      "sha256": "fc256b1a83ff2cb76a6d8ba01d7dfbc444b0b3ad888a1e909e37d8a5fef1ec21"
+    },
+    {
+      "path": "input/PROBE778.json",
+      "bytes": 472,
+      "sha256": "00b00cd49393966ac1d6a09cd9d7b53f23a01d5063b1ca4a3914d2bda6fa0375"
+    },
+    {
+      "path": "input/refresh776.py",
+      "bytes": 1592,
+      "sha256": "7b5804a6a43472d08707b96f239b46b6f0be6c9f9457ba426afef776bea6cb3a"
+    },
+    {
+      "path": "input/run778.log",
+      "bytes": 425,
+      "sha256": "9f1b5dd398170558a499a60409d4178c69a8e44bd8eb1dda952816ffcd34aa99"
+    },
+    {
+      "path": "input/run779.log",
+      "bytes": 3447,
+      "sha256": "b1014367dbd88eec7de9ae3260e3dc04e5456dd083830edcb991800c76a36869"
+    },
+    {
+      "path": "input/SOURCES776.json",
+      "bytes": 11474,
+      "sha256": "3eca4e21796935418b86bc136526f320a38e475681c65879d1bc2c391796d7bd"
+    },
+    {
+      "path": "INPUT_VALIDATION.json",
+      "bytes": 2816,
+      "sha256": "f1771b3cba0cc6ffe58384e00eac286fdcc12ade095e06c84ed33df284e0929d"
+    },
+    {
+      "path": "replica/CERTIFICATE779.json",
+      "bytes": 3784,
+      "sha256": "e9a225f72ca501a795e8a88dc863409ed3a8b60e8367683ffd4fd5301202645d"
+    },
+    {
+      "path": "replica/certificate779.py",
+      "bytes": 3224,
+      "sha256": "bf0255c5ec751622bf92a28e5e61cb8939f5c6ba859155c0d436a4f0b969cfbb"
+    },
+    {
+      "path": "replica/interval778.py",
+      "bytes": 1587,
+      "sha256": "4fa44ba0a03659707abc68a9ec0391c7375967aec7b69d0ebae533d1e38235d2"
+    },
+    {
+      "path": "replica/run781-exact.log",
+      "bytes": 3460,
+      "sha256": "c21f6c8afad887f2e862a894f0a24c9e126333fcde3e1e8fb9f8b6b9e7f0fb80"
+    },
+    {
+      "path": "REPLICATION781.json",
+      "bytes": 1071,
+      "sha256": "5585b98254f62be7a2b6c209ca7bdf5c8403e006b67f0905f1101d28821598dd"
+    },
+    {
+      "path": "report.txt",
+      "bytes": 24342,
+      "sha256": "c49e0044d5eb75abb3514a5277ab9765e9752741563e1ac6ab79ea6d9c058716"
+    },
+    {
+      "path": "runtime.json",
+      "bytes": 2715,
+      "sha256": "b0acced58113211583df2c467044289f9113aa5dc568070b4b7711f568ee2b13"
+    },
+    {
+      "path": "setup781.py",
+      "bytes": 3267,
+      "sha256": "8111b26b1aba88324a7ea38ed815398c12f62c39d63d8ff2cfe903b6ce6c4dfe"
+    },
+    {
+      "path": "SOURCE_FETCH781.json",
+      "bytes": 2854,
+      "sha256": "599b267767ab5122039432d9f48f5e8f5819c36ee4f283b1bd23493ee704a447"
+    },
+    {
+      "path": "source_pins.json",
+      "bytes": 5555,
+      "sha256": "89f423ba1e79cf582701e129b8d6d1f62ab0b7bb9a54b22ef19aef71326883e4"
+    },
+    {
+      "path": "verdict.json",
+      "bytes": 4139,
+      "sha256": "ebf5733a9f02413d44141e986150acce02401c0c95211c09bd5a7e36f8bbc13c"
+    },
+    {
+      "path": "write_records781.log",
+      "bytes": 188,
+      "sha256": "97cc29451f6ceee7c1e14cb22ad0f736f7e5f7c90a1bb69c7b58571311622658"
+    },
+    {
+      "path": "write_records781.py",
+      "bytes": 14399,
+      "sha256": "69ac5dc04a16dbb04dff98bfd5e4569b4b321b593e9c574ad27930f8913ec4a0"
+    }
+  ],
+  "coverage": "All payloads, own input/dependency copies, executed-control scripts and logs. Excludes self and later verification/checksum records to avoid self-reference.",
+  "excluded_generated_records": [
+    "C_D_VERIFICATION.json",
+    "MANIFEST781.json",
+    "SHA256SUMS.txt"
+  ],
+  "external_source_corpus_included": false
+}
