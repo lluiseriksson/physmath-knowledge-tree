@@ -1,0 +1,69 @@
+{
+  "scope": "Directed reading, not exhaustive; foreign source bodies not retained in this repository",
+  "sources": [
+    {
+      "name": "Cheng-Tomamichel",
+      "url": "https://arxiv.org/html/2609.08998v1",
+      "utc": "2026-10-26T17:20:20.584490+00:00",
+      "http": 200,
+      "bytes": 839497,
+      "sha256": "614689cb45300c086dfb247a1162c71f486f8e600e9c7bce0c9168cc0f4abd0b",
+      "depth": "abstract and Theorems4-5 statements; finite local dimensions; no proof audit"
+    },
+    {
+      "name": "Wilde-Winter",
+      "url": "https://arxiv.org/html/1308.6732v2",
+      "utc": "2026-10-26T17:20:21.150894+00:00",
+      "http": 200,
+      "bytes": 410144,
+      "sha256": "8dbbbc8ea5f66cf050cac6b3008e3ffaa0059e4b32a1983ab5ee42fc65558e95",
+      "depth": "abstract and Section1.1 equations6-9 argument read; rest not audited"
+    },
+    {
+      "name": "Bjelakovic-et-al",
+      "url": "https://arxiv.org/html/1209.6325v2",
+      "utc": "2026-10-26T17:20:22.105869+00:00",
+      "http": 200,
+      "bytes": 941881,
+      "sha256": "078cd6429b177819853b024e71e411aa51136dea16600e9f27d53a5f827723b3",
+      "depth": "abstract, introduction and Section5 Remark4; no full proof audit"
+    },
+    {
+      "name": "Bardhan-Wilde",
+      "url": "https://arxiv.org/abs/1312.3287",
+      "utc": "2026-10-26T17:20:22.405566+00:00",
+      "http": 200,
+      "bytes": 44403,
+      "sha256": "db5749c7fd138ea5d0197efd6976deab6710f86763c31811b41d9e0459f6db1e",
+      "depth": "abstract only"
+    },
+    {
+      "name": "Cao-Yuan",
+      "url": "https://arxiv.org/abs/2608.06728",
+      "utc": "2026-10-26T17:20:22.667772+00:00",
+      "http": 200,
+      "bytes": 42835,
+      "sha256": "6ebf88b4f9c9531ec556794da0ebf84bd3d4971f4d6f5ffa6679304ebbdc0834",
+      "depth": "abstract only; claimed Lean verification not independently checked"
+    },
+    {
+      "name": "Hou-Yang",
+      "url": "https://arxiv.org/abs/2610.09349",
+      "utc": "2026-10-26T17:20:22.948969+00:00",
+      "http": 200,
+      "bytes": 40242,
+      "sha256": "de8a5611a5dfad9f9488f48f2c2ef3f9b1fc1eda73689ddd5181a461c833808c",
+      "depth": "abstract only; proof not read"
+    },
+    {
+      "name": "DeepMind-Green27",
+      "url": "https://raw.githubusercontent.com/google-deepmind/formal-conjectures/0219456467178cc97109a573d4909d9f96e81751/FormalConjectures/GreensOpenProblems/27.lean",
+      "utc": "2026-10-26T17:20:23.397977+00:00",
+      "http": 200,
+      "bytes": 4736,
+      "sha256": "c4b4bf6a1bed326e2b7f48769f4e5ee1e78b95c950b63013b573c30d6b859cef",
+      "depth": "file definitions/statements read; sorry bodies not proofs; no Lean build",
+      "sorry_count": 10
+    }
+  ]
+}
