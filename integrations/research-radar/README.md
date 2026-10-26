@@ -23,7 +23,7 @@ npm run validate:research-radar
 
 ## Update cycle
 
-New hypothesis reduction: [triangle-free trace compression](notes/2026-10-26-trianglefree-compression.md) replaces the cycle restriction by a support-projection identity and a constructive edge decomposition. The argument audit found no defect; full exact-PDF review and novelty comparison remain pending. No manuscript score or formal confidence upgrade is inferred.
+New hypothesis reduction: [triangle-free trace compression](notes/2026-10-26-trianglefree-compression.md) replaces the cycle restriction by a support-projection identity and a constructive edge decomposition. Its first exact-PDF private review gives 4.0 overall, 6.0 technical quality and 3.5 importance, with minor attribution/context corrections and no mathematical defect found. The corrected PDF does not inherit those scores; novelty remains unresolved and canonical confidence is unchanged.
 
 New working connection: [norm-compression obstruction and chordal gluing](notes/2026-10-26-norm-compression-gluing.md) certifies failure of a naive four-argument convexity extension and develops a conditional graph classification from a recent three-block positivity theorem. The latter is a written candidate requiring source/novelty audit, not another rated paper or a solution of channel additivity.
 
