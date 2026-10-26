@@ -363,3 +363,148 @@ and hypotheses before extending the present proof beyond the EB witness.
 announces PPT-assisted quantum capacities; coverage: abstract read.
 PPT-assisted quantum transmission is a different resource/task from our
 unassisted classical compound problem, so its formulas are not substituted.
+
+## Terminal649, all-block converse653/654 and exact draft657
+
+The pending648 status above is historical. Audit649 subsequently supported
+the bounded-bath EB route within its stated regime, without a score.
+Its report SHA256 is
+1b466198bb64aab9b6ad026ad062eb2fd8175a57106e1314caf8bcd7f0377e3d.
+Its35 payloads were verified against hashes and working/preserved copies.
+The scope remains EB: that report did not prove the next all-block result.
+The route was superseded by a broader converse, not refuted or erased.
+
+**Literature:** thermal Gaussian tensor-power minimum output entropy is
+an established input, including entangled states of finite second moments:
+[Giovannetti--Holevo--Garcia-Patron1312.2251v1](https://arxiv.org/abs/1312.2251v1),
+Proposition4/Eqs25-26, the Section6 closure and Section7 formulas.
+The correct title of1312.6225v1 is *Ultimate communication capacity of
+quantum optical channels by solving the Gaussian minimum-entropy conjecture*;
+its Eq2 states the all-block entropy minimum explicitly.
+These foundational results are imported, not newly proved here.
+The bounded Gaussian Choi operator is from
+[Holevo1004.0196v3](https://arxiv.org/abs/1004.0196v3), Proposition2 and
+the one-mode example; no EB premise is required for thermal attenuation.
+
+**Heuristic / analytically audited working result:** terminal audit654
+supports candidate653's converse uniformly over block length, permitting
+arbitrary entangled block inputs and total expected photon cost. Combined
+with the earlier common cq lower code and strict necessity, this supports
+the complete unassisted curves iff n=o(E), without n->infinity or EB.
+For an unknown fixed attenuator family the corresponding criterion is
+N=o(E), including bounded, zero and oscillating envelopes. Known k and
+worst-family k0 remain fixed in(0,1); identity may be another family member.
+
+The removed hypotheses are bath divergence and the EB/additivity witness
+restriction. The mechanism is not an assumed additivity of the reset mixture:
+
+1. At position j retain causal reference R_j=(message,past mixed outputs).
+   The current flag is independent of it, even for entangled inputs.
+2. Degrading the all-signal past to the mixed past raises conditional
+   entropy, so sum_j K_j>=S(signal block|message)>=m*g(t).
+   Individual K_j may be negative. Flat Choi order separately supplies
+   d_j=log2(c)+K_j>=0, c=1/(t+1-k).
+3. A near-capacity block has bounded average d_j and average vacuum mass
+   O(1/log E), using total energy and a common thermal comparator.
+   It need not have a thermal or energy-E marginal at every position.
+4. Markov bounds the fraction of bad positions. Fixed-reference pinching
+   and normalized TRE on good positions imply average flag uncertainty
+   o(1), with no factor m, message dimension or reference entropy.
+5. The same witness and a remainder uniform in m give the operational
+   capacity converse by Holevo--Fano before taking the energy limit.
+
+Translation dictionary: causal references retain quantum past correlations;
+the summed entropy floor is inherited from the signal's tensor powers;
+good-position selection replaces an invalid per-use floor; a conditional
+Helstrom test bounds an already-conditioned entropy and is not the decoder.
+What is preserved: total expected cost, arbitrary block entanglement,
+fixed channel/reset, collective decoding and all finite entropy budgets.
+What remains outside: efficient blocklengths, within-code variation,
+known exactly noiseless k=1 by this order argument, and the critical curve.
+
+Audit654 report SHA256:
+0577fd73a74782b7cf31ea8f2e991fc0149183bc3b49220bfbba6f81621439f0.
+Manifest SHA256:
+008409754cce158e65e19f1944c130b98c76b02c4cc780a8a5a52b21c8d1c2c4.
+All29 payloads were hash-verified and matched between copies; the full
+report was read. It assigns no importance score and is not a PDF assessment.
+Shared context/participation and absence of independent runtime attestation
+are declared. Its120 finite block controls and four symbolic checks passed;
+the explicit Bell example K=-0.9025202799742829 falsifies the tempting
+individual-floor shortcut. These controls do not prove the infinite theorem.
+
+Falsifiers: a failure of causal-flag independence, reversed conditioning
+DPI, a per-use energy assumption hidden in the total-cost argument,
+failure of Choi order for a mixed reference, a missing posterior-reference
+divergence, or an m-dependent TRE/flag error. Abandon any generalization
+that fails one of these transfers. The claim is a combination of existing
+information inequalities with a new operational argument, not priority
+for those inequalities.
+
+**Formal:** no Lean theorem or confidence promotion. A small finite target
+is the causal entropy identity plus the distinction between summed and
+individual conditional floors. Formalizing those alone would not establish
+the imported Gaussian theorem or the common infinite-dimensional code.
+
+## Authorial extension658 and fresh full review659 pending
+
+**Speculative, pending full manuscript assessment:** the same block proof
+appears to extend to centered phase-insensitive covariant Gaussian channels
+of gain k>0 and vacuum noise t>=max(0,k-1). Their known signal capacity is
+g(kE+t)-g(t). This includes attenuation, amplification and additive noise.
+The proposed full-curve criterion is t=o(E) for fixed k!=1; at k=1 a
+positive eventual noise floor t>=t0 is retained. An unknown physically
+admissible family with gain in[k0,kplus],0<k0<1<=kplus<infinity, and t<=T
+has the proposed criterion T=o(E), relative to the worst pair(k0,T).
+It does not require EB of the other family members.
+
+The precise dictionary changes Choi c to1/[t+(1-k)_+]. For additive k=1,
+the correct source is Holevo's separate Case3(p11), not its nondegenerate
+symplectic Proposition2. The signal decomposition into a pure-loss channel
+eta=k/(t+1) followed by quantum-limited amplification bounds reference
+information in the necessity argument. Known minimum-output and signal
+capacity formulas are antecedents. The new claim concerns the reset
+minimax combination, not Gaussian optimization itself.
+Falsifiers: wrong amplifier vacuum-noise convention, forgetting the CP
+noise floor, treating t->0 as bounded below, unbounded gain without a common
+cutoff, or applying signal ordering to a reset mixture. Phase-sensitive
+squeezing, arbitrary phase uncertainty and within-code variation remain
+excluded. The360 high-precision parameter checks and exact noise identity
+are diagnostics, not an audit of this extension. Its working manifest is
+d5cb501c4a63a7a0f7c651da51a4de81e7a253b49e6a34622c8e4567b1cf2469.
+
+The consolidated19-page draft657 includes this authorial extension as well
+as the supported thermal block argument. All pages were rendered and
+visually checked; built-in/local compilation passed. Six supplied programs
+replayed byte-identically; they remain finite supplied implementations,
+not independent implementations or an operational code.
+Exact PDF SHA256:
+2b88eee52e57d7104636f2faa165976871dc11c238e7d63d21a17ac559f5d711.
+Frozen manuscript manifest SHA256:
+d7f5c609bd6a2f75f16eb2851cb35c078889ab6702bcd5422f4cd732c842b809.
+
+A single full Astra xhigh review659 was requested in a new context with
+the exact PDF, source, six programs/expected outputs, primary pins and
+scale-only context. No earlier numerical score or other referee report was
+supplied in that clean input. The PDF itself retains truthful participation
+and review-context disclosure. Context freshness is requested, not proof
+of runtime identity, isolation or statistical independence; the filesystem
+is shared. The reviewer must assess all19 pages and extension658 rather
+than infer it from654. No score, publication or goal completion is presumed.
+The last actual public full-PDF importance score remains4.5 for the earlier
+eleven-page v2; it does not transfer to this draft.
+
+## Directed freshness656
+
+Ten primary index/metadata requests again succeeded; this is inventory,
+not exhaustive reading. OpenAI/math retained commit
+1581d4cbdd69a0faf34b2089614fe2a814316a6a and DeepMind/formal-conjectures
+retained039378b7951df701428aa5c6732a94a149a077e1.
+Anthropic, DeepMind research, AIRR, ai.viXra and public owner-repository
+indexes were refreshed without copying their corpora into this repository.
+The additional1312.2251v1 PDF was pinned to
+42b6b0715c4571919a259ebefd90747487236b3bb5e57a4a28bc186460564505.
+Reading covers the stated domain, Proposition4/selected reduction proof,
+Section6 conclusion and Section7 signal formulas; not a complete proof audit.
+The source-bundle manifest is
+d2927ed847784e8f8221b8485544e8944f358f41145d901a82b753aaaea1c3a9.
