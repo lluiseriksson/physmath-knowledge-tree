@@ -1,0 +1,49 @@
+{
+  "sources": [
+    {
+      "name": "Berta-Gharibyan-Walter",
+      "url": "https://arxiv.org/html/1603.02282v1",
+      "reading_depth": "Introduction, SectionII Theorems1,3,4 statements and finite-dimensional scope; complete proof not audited",
+      "utc": "2026-10-26T18:25:15.534915+00:00",
+      "http": 200,
+      "bytes": 897854,
+      "sha256": "4c3a5762122fc3c09e1a0fa6ccb47acf7e5e1bbb9c35502ec16cdd41cfd21732"
+    },
+    {
+      "name": "Boche-Janssen-Kaltenstadler",
+      "url": "https://arxiv.org/html/1606.09314v3",
+      "reading_depth": "abstract and introduction; no complete proof audit",
+      "utc": "2026-10-26T18:25:16.689435+00:00",
+      "http": 200,
+      "bytes": 727475,
+      "sha256": "70fe412a0162ac35905eed2a40cab77de39aa3c1e06758e7bc47d0219e93e882"
+    },
+    {
+      "name": "Shrader-Permuter",
+      "url": "https://arxiv.org/abs/0711.0705",
+      "reading_depth": "abstract only",
+      "utc": "2026-10-26T18:25:17.734799+00:00",
+      "http": 200,
+      "bytes": 41221,
+      "sha256": "e3f3c94bcb0c06b1ab46d7d29bce01bbc348933ae973f726fe89984220b5ad41"
+    },
+    {
+      "name": "Hao-et-al",
+      "url": "https://arxiv.org/abs/2101.07482",
+      "reading_depth": "abstract only; finite-energy EA advantage context",
+      "utc": "2026-10-26T18:25:18.220011+00:00",
+      "http": 200,
+      "bytes": 44464,
+      "sha256": "e01480c11cb1c9c3243bc0c01ac9819e493182f365721a2fc6dba4f2d470d367"
+    },
+    {
+      "name": "Shi-Zhang-Zhuang",
+      "url": "https://journals.aps.org/prapplied/pdf/10.1103/PhysRevApplied.13.034029",
+      "reading_depth": "Selected official-PDF search extraction with single-channel capacity formulas and fixed-signal large-noise ratio, no full PDF visual reading or proof audit",
+      "utc": "2026-10-26T18:25:18.497490+00:00",
+      "snapshot_error": "HTTP Error 403: Forbidden"
+    }
+  ],
+  "foreign_fulltexts_copied": false,
+  "not_exhaustive": true
+}
