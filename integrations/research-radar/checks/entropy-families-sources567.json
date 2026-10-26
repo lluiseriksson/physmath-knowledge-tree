@@ -1,0 +1,98 @@
+{
+  "observed_utc": "2026-10-26T01:23:31.306892+00:00",
+  "exhaustive": false,
+  "inventory": [
+    {
+      "name": "OpenAI/math",
+      "url": "https://api.github.com/repos/openai/math/commits?per_page=1",
+      "observed_utc": "2026-10-26T01:23:30.240087+00:00",
+      "scope": "surface metadata observed; no new abstract, statement or proof reading inferred",
+      "http_status": 200,
+      "sha256": "db4ef9f06a2ddaaa7c7467977049adc40ab959fc915467c57aaf912a3c45299c",
+      "bytes": 4734,
+      "commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a"
+    },
+    {
+      "name": "DeepMind/formal-conjectures",
+      "url": "https://api.github.com/repos/google-deepmind/formal-conjectures/commits?per_page=1",
+      "observed_utc": "2026-10-26T01:23:30.240087+00:00",
+      "scope": "surface metadata observed; no new abstract, statement or proof reading inferred",
+      "http_status": 200,
+      "sha256": "4827c4be938173b757b69689702d783cdf1562aa4cb42da30ecd8d73794d037a",
+      "bytes": 6625,
+      "commit": "039378b7951df701428aa5c6732a94a149a077e1"
+    },
+    {
+      "name": "Anthropic",
+      "url": "https://www.anthropic.com/research",
+      "observed_utc": "2026-10-26T01:23:30.240087+00:00",
+      "scope": "surface metadata observed; no new abstract, statement or proof reading inferred",
+      "http_status": 200,
+      "sha256": "7ec3e1a8167e945cb1ce4accdb1f09ab3f42caec6e06bae1d64f5b2076f2f257",
+      "bytes": 416038
+    },
+    {
+      "name": "arXiv quant-ph",
+      "url": "https://arxiv.org/list/quant-ph/recent?show=50",
+      "observed_utc": "2026-10-26T01:23:30.241090+00:00",
+      "scope": "surface metadata observed; no new abstract, statement or proof reading inferred",
+      "http_status": 200,
+      "sha256": "dea3e2b2c57325b63eb41adfb67401abe85d8a291affdc1c88ac693ba04576e5",
+      "bytes": 84241
+    },
+    {
+      "name": "AIRR catalogue",
+      "url": "https://airr.science/catalog.json",
+      "observed_utc": "2026-10-26T01:23:30.471340+00:00",
+      "scope": "surface metadata observed; no new abstract, statement or proof reading inferred",
+      "http_status": 200,
+      "sha256": "7851361b105c7cf5a83406a92b8142174daa7a07877d95ba0186322d0688239b",
+      "bytes": 1270039
+    },
+    {
+      "name": "ai.viXra author",
+      "url": "https://www.ai.vixra.org/author/lluis_eriksson",
+      "observed_utc": "2026-10-26T01:23:30.705783+00:00",
+      "scope": "unavailable in this refresh; no source reading inferred",
+      "http_status": 406,
+      "sha256": "80a265bed528211aa708dcd58f7a95db36eeb7f873c6fe4ddab0b3a1dc0973a4",
+      "bytes": 226
+    },
+    {
+      "name": "public research repositories,firstpage",
+      "url": "https://api.github.com/users/lluiseriksson/repos?per_page=100&sort=updated",
+      "observed_utc": "2026-10-26T01:23:30.710687+00:00",
+      "scope": "surface metadata observed; no new abstract, statement or proof reading inferred",
+      "http_status": 200,
+      "sha256": "99dd8c09a70be4ad7fb9064986fcd5f52b5aca09e65e8bf6f3897f55938c0310",
+      "bytes": 212804
+    }
+  ],
+  "literature": [
+    {
+      "url": "https://arxiv.org/abs/1306.3142v4",
+      "scope": "root read Theorems5/7 and alpha2 formula; not full external proofs",
+      "snapshot_sha256": "c8c1df3009163e659495513de237ee61fb2c85e6f1c188703321821600cb6b86"
+    },
+    {
+      "url": "https://arxiv.org/abs/0903.1340v1",
+      "scope": "root selected roof statements/shortproofs; one-use roof rederived; not wholepaper audit",
+      "snapshot_sha256": "587e08f5effa5cea7b194264af955ae5bb722fac8c9bd9056ea778f8c4580cf7"
+    },
+    {
+      "url": "https://arxiv.org/abs/1802.00646v2",
+      "scope": "root selected filtering statements/equations, not full audit or exact transfer",
+      "snapshot_sha256": "258ed8a78c6c608de3fe483bd22a2b54575d6567b7d7a8b9f54d6d009baf8f91"
+    },
+    {
+      "url": "https://arxiv.org/abs/2609.28592v1",
+      "scope": "selected pure-output corollaries read; not full triangular-theorem proof audit"
+    },
+    {
+      "url": "https://arxiv.org/abs/2111.11385v4",
+      "scope": "root latestabstract/version metadata; prior auditor selected v1 passages, not fullproof"
+    }
+  ],
+  "candidate_status": "Fixed-pair global chain and family delta audited with declared dependent context; exact combined7page PDF fullreview566 running, no new numeric assessment.",
+  "private_full_text_distributed": false
+}

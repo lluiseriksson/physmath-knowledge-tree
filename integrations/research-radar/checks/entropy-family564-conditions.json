@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "name": "N",
+      "transverse_interval": [
+        "11/20",
+        "3/5"
+      ],
+      "r": "1/4",
+      "t": "1/5",
+      "Amin": "6/25",
+      "Amax": "119/400",
+      "Qmax": "243/595",
+      "Choi_corner_lower": "33/1600",
+      "PT_minor_upper": "-11/64",
+      "phase_order_slack": "404161/19040000"
+    },
+    {
+      "name": "Q",
+      "transverse_interval": [
+        "1/2",
+        "11/20"
+      ],
+      "r": "1/5",
+      "t": "1/10",
+      "Amin": "21/100",
+      "Amax": "21/80",
+      "Qmax": "13189/42000",
+      "Choi_corner_lower": "11/200",
+      "PT_minor_upper": "-37/400",
+      "phase_order_slack": "51399/800000"
+    }
+  ],
+  "margin_nats": "1/160",
+  "scope": "Uniform rational hypotheses and margin only; full metric certificate and analytic chain separate."
+}

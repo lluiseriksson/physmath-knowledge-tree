@@ -23,7 +23,9 @@ npm run validate:research-radar
 
 ## Update cycle
 
-New local gate: [entropy second variation and a coverage correction](notes/2026-10-26-local-entropy-gate.md) retires a rank-two partner already covered by a primary-source theorem, and reduces a different fixed-pair product-neighborhood bound to20 exact rational cells. The global entangled-input inequality remains open; no new manuscript score or canonical confidence upgrade follows.
+New global result: [entropy gaps for two nonunital channel families](notes/2026-10-26-global-entropy-families.md) removes the small-Schmidt-amplitude restriction for a specified rectangle of pairs. A narrowly audited analytical chain and4,454-cell rational certificate give a uniform squared-concurrence penalty and two-channel Holevo equality. The combined exact-PDF assessment is pending; arbitrary partners, tensor powers, capacity and canonical confidence upgrades remain unestablished.
+
+Earlier local gate: [entropy second variation and a coverage correction](notes/2026-10-26-local-entropy-gate.md) retires a rank-two partner already covered by a primary-source theorem, and reduces a different fixed-pair product-neighborhood bound to20 exact rational cells. The family result above extends that local conclusion; the larger-partner problem remains open and no canonical confidence upgrade follows.
 
 New hypothesis reduction: [triangle-free trace compression](notes/2026-10-26-trianglefree-compression.md) replaces the cycle restriction by a support-projection identity and a constructive edge decomposition. Its first exact-PDF private review gives 4.0 overall, 6.0 technical quality and 3.5 importance, with minor attribution/context corrections and no mathematical defect found. The corrected PDF does not inherit those scores; novelty remains unresolved and canonical confidence is unchanged.
 

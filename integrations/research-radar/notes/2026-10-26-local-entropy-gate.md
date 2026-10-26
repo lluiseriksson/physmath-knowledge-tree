@@ -1,5 +1,10 @@
 # A coverage correction and a local entropy gate
 
+Subsequent work: [the global family checkpoint](2026-10-26-global-entropy-families.md)
+extends the local result to all pure two-qubit inputs for a specified rectangle
+of channel pairs. The account below preserves the earlier local scope and
+its verifier correction; it is not the current limit for that rectangle.
+
 This is a research checkpoint, not another manuscript or assessment. The
 canonical graph, confidence labels and Lean declarations are unchanged.
 The retrieved neighborhood is `domain.quantum_information_theory` and its
