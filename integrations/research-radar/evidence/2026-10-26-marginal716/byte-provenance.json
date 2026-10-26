@@ -1,0 +1,31 @@
+{
+  "originals": [
+    {
+      "path": "report.txt",
+      "bytes": 26952,
+      "sha256": "c54ba1fae06d9480b8983d9163e8438b5cec55fb83b60b4253415b98632f6223"
+    },
+    {
+      "path": "verdict.json",
+      "bytes": 4441,
+      "sha256": "3433a1d4294665c404c91dae78437aae0d8463669f4c7322a2152cf8bdb1f48d"
+    },
+    {
+      "path": "context.txt",
+      "bytes": 1918,
+      "sha256": "0336088e123159093322cc21853422000d3977e7a4935b52690022aa2e11e042"
+    },
+    {
+      "path": "sources_scope.json",
+      "bytes": 1836,
+      "sha256": "c00b1b40fd4cde547b53a159300927baed0d934008858008b42f128cac866d43"
+    }
+  ],
+  "archive": "original716.zip",
+  "archive_sha256": "ce617b65ec5318debd7a0dcc1ff79e52dce8d40cf41424934860894119e0bb88",
+  "readable_files": "UTF8 LF renditions of unchanged text; exact original bytes retained in ZIP",
+  "private_full_audit_manifest_sha256": "7ee2a9ebf642cb4e30a048164367f31ff1093b46238bb49b1d286cf73a67e71e",
+  "root_verified_payloads": 20,
+  "C_D_files": 22,
+  "foreign_fulltext_copied_to_repository": false
+}

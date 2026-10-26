@@ -349,3 +349,104 @@ read. This directed sweep is not exhaustive and stores no foreign corpus.
 Formal: none. Literature: cited established continuity program and actual
 CI commit. Heuristic: existing model-audited working proofs. Speculative:
 approximate-average extension. Canonical graph/confidence/routing unchanged.
+
+
+## Terminal technical audit716: marginal robustness and precise typical books
+
+The previous speculative route has a completed, unscored technical audit:
+[full report](../evidence/2026-10-26-marginal716/report.txt),
+[verdict](../evidence/2026-10-26-marginal716/verdict.json),
+[participation/context](../evidence/2026-10-26-marginal716/context.txt), and
+[primary reading scope](../evidence/2026-10-26-marginal716/sources_scope.json).
+Readable text has LF formatting; [original716.zip](../evidence/2026-10-26-marginal716/original716.zip)
+retains all four original byte streams, with
+[byte provenance](../evidence/2026-10-26-marginal716/byte-provenance.json).
+Root read the entire report and verdict, verified20 payloads against the
+manifest and22 C/D files byte for byte. Original report SHA256:
+c54ba1fae06d9480b8983d9163e8438b5cec55fb83b60b4253415b98632f6223.
+
+Mechanism: branch-revealed mutual information is finite under finite mean
+cost, bounded gain and a positive noise floor, even without a noise ceiling.
+A common submeasure splits two input laws into a common component and bad
+components whose costs inflate by1/delta. The binary-label chain rule gives
+|I_Q-I_G|<=h2(delta)+m delta log(1+KP/(ell delta)), with only one h2.
+For TV<=delta one must choose a common part of mass1-delta, possibly
+nonmaximal: the displayed modulus is NOT globally monotone in delta.
+
+In the bosonic matched-reset model, heterodyne maps quantum trace distance
+to a total-variation upper bound and adds one photon to each Husimi cost.
+Compare EACH average marginal to its moment-matched Gaussian, which has
+exactly the same energy. A joint concave perspective aggregates all costs,
+without assuming an individual coordinate budget. With average distance d,
+chi/m<=H_G+c0/E+h2(d)+d log(1+2k(1+1/E)/(rd)).
+The joint average may be arbitrarily correlated and non-Gaussian. The new
+R_marg functional differs from old R_G; its matching high-energy bounds
+do not automatically identify an operational constrained-code capacity.
+
+The finite falsifiers were resolved analytically and are retained:
+
+- rho_L=(1-1/L)|0><0|+(1/L)|L><L| has energy1 and tends to vacuum in
+  trace distance, but its moment-matched Gaussian is always gamma_1 and
+  the relevant distance tends to1/2. Trace closeness plus bounded energy
+  cannot replace separate moment control.
+- An unadjusted CN(0,1) code design at saturated expected cost is actually
+  feasible with probability tending to1/2, not1. Strict design slack or
+  an explicit common rescaling is necessary for the typical-feasibility
+  assertion. Expected cost over random books is not physical cost of a
+  realized book.
+
+The precise typical class fixes E and a FINITE Gaussian displacement list
+before block length, with a deterministic known schedule, independent
+message/coordinate samples, equiprobable messages and M_m>=exp(Rm),R>0.
+Photon truncation and Hilbert-Schmidt variance give convergence of empirical
+quantum marginals. Separate first/second-moment concentration, using finite
+fourth moments, and continuity of positive matrix square roots give their
+own Gaussian moment matches. Union bounds and Borel-Cantelli yield almost
+sure uniform convergence over coordinates. A common rescaling at saturated
+cost changes whole-block average trace distance by O(sqrt(mE)M_m^(-1/8)),
+so it transfers already established reliability uniformly over channels.
+It does not create a decoder; the adjusted book is no longer iid.
+
+Holevo/Fano then gives a converse for any reliable code sequence with
+vanishing average marginal distance, and hence for that precise typical
+class. It does NOT cover all deterministic Gaussian-named books, arbitrary
+postselection/weights/message-bearing covariance schedules, growing design
+lists or exchange of energy and block limits. Translation preserved:
+total expected photon cost, one-mode marginal moments and common-channel
+data processing. What is lost: global average Gaussianity is unnecessary;
+arbitrary selection of random-code realizations is still not covered.
+
+This is incorporated into a substantive v2 of the SAME published paper,
+not a separate continuity-corollary paper. The14-page exact revised PDF is
+SHA2566a00b8bf9079766cae02e1e050fb2d7c224dde24568d5a3ad5d68ca238ac7f45.
+It compiles locally and in the desktop compiler, and all14 final rendered
+pages were visually inspected. Full review723 is requested; no score of
+this PDF exists yet. Published v1 and its actual5.0/8.5 assessment remain
+unchanged. Technical audit716 has no rating and is prior authoring help,
+with shared participation and unverified runtime identity/independence.
+
+Root additionally read selected Winter Lemma2 statement/proof setup,
+Proposition14/Lemma15 and Shirokov Section6.2 statements/written arguments;
+this is not an audit of their complete imported dependency chains.
+Literature antecedents remain explicit. Falsifier/abandonment conditions:
+a finite-cost counterexample to the common-part inequality; a missing
+moment/feasibility hypothesis; failure of typical-book quantifiers; or an
+exact prior operational theorem removing the same hypotheses. Do not
+promote this to a new priority claim from a supportive model audit.
+Minimal formal target remains the finite binary-mixture KL chain rule;
+no new Lean declaration is proved. Formal:none; literature:prior methods;
+heuristic:model-audited working proofs; speculative:broader Gaussian
+protocol claims, which are not asserted. Canonical graph/routing unchanged.
+
+### Directed primary refresh719 and a deduplication guard
+
+Thirteen primary endpoints were refreshed, not exhaustively read.
+OpenAI/math remains1581d4cbdd69a0faf34b2089614fe2a814316a6a.
+DeepMind now includes [0921599](https://github.com/google-deepmind/formal-conjectures/commit/09215996126bf40899be6cbe826d6f53a6b2ae35),
+adding the Erdős284 unit-fraction entry. Root read its definitions and
+statement: it is labelled solved, attributes the mathematical antecedent
+to Croot2001, and contains two sorry declarations pointing to an external
+proof at8822f7dd. That external proof was not compiled or audited here.
+New repository activity is neither a new open problem nor a proof checked
+by this run. [Metadata pins](../evidence/2026-10-26-marginal716/source-pins719.json)
+record URL, version, hash and actual reading depth without copying the file.
