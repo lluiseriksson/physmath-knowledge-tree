@@ -508,3 +508,59 @@ Reading covers the stated domain, Proposition4/selected reduction proof,
 Section6 conclusion and Section7 signal formulas; not a complete proof audit.
 The source-bundle manifest is
 d2927ed847784e8f8221b8485544e8944f358f41145d901a82b753aaaea1c3a9.
+
+## Terminal full review659 and editorial correction663
+
+The preceding pending chronology is retained. Review659 subsequently
+finished on the exact19-page PDF2b88eee52e57d7104636f2faa165976871dc11c238e7d63d21a17ac559f5d711.
+Its actual judgment is importance5.5/10, technical8.5/10, recommendation
+minor, with no material mathematical objection found within the audited
+scope. This is a model recommendation, not editorial acceptance or a
+correctness certificate. The >7 importance objective remains unmet.
+The complete source was read and six supplied programs replayed with
+byte-identical outputs; these are not independent implementations.
+
+Report SHA256:b610a4bbc4a92951a36af207d34d1db1d9416dd506016ddf76019ca9dd87132c.
+Verdict SHA256:45c9e999cb7ac77abe8f1f234913a50754df4cb073ab025371ab223949b2fc65.
+Manifest SHA256:b8a2c1659b6377fa276b9da98bd3ffa76534724cc9a7375bb401e1663b061301.
+The coordinator verified156 payloads and158 identical C/D files. Requested
+GPT-6 Astra/xhigh identity, effort, isolation and independence are not
+independently attested. Shared filesystem and incidental exposure to another
+paper's qualitative search summary are disclosed. Twenty-two primary PDFs
+were consulted at declared depths, not every foundational proof rederived.
+
+Four minor requests concern explicit individual-infimum versus common-code
+deficits, direct contextual citations, exact version metadata, and moving
+the unchanged participation disclosure to an appendix. Draft663 addresses
+them in20pages, with PDF SHA256
+6968375b22facb1a5467606b16df7a6ccabe0bac0dee4824afc0c4fb932c4662.
+All pages passed visual QA and compilation. Its38 frozen payloads were
+verified; an exact-PDF correction check664 was requested from the SAME
+reviewer. No score is automatically transferred to this different PDF.
+It is not yet deposited or public at this checkpoint.
+
+Contextual primary references now distinguish finite identity/replacer
+models [quant-ph/0408103v3,IV.B,Eq34](https://arxiv.org/abs/quant-ph/0408103v3),
+optical mixtures [2604.26874v2](https://arxiv.org/abs/2604.26874v2), and
+energy-constrained cq compound channels
+[2105.04274v1](https://arxiv.org/abs/2105.04274v1).
+Baitenov2024,doi10.1134/S0081543824010048, was read through its editorial
+abstract only; full text remains inaccessible and detailed overlap unknown.
+The0710.3027v2 revision is2009, first submission2007. These are provenance
+corrections, not new imported theorems or a certificate of priority.
+
+## Directed freshness666 and next falsifier
+
+Eleven current primary index/metadata requests succeeded. OpenAI/math and
+DeepMind/formal-conjectures retained the commits recorded above. Anthropic,
+DeepMind research, AIRR, ai.viXra and owner-public-repository metadata were
+refreshed; this is inventory, not proof reading or an exhaustive sweep.
+
+A bounded next research move examines the critical-noise regime rather
+than assuming Gaussian modulation still optimizes the non-Gaussian reset
+channel. The new candidate is separately recorded in
+[the critical-reset bridge card](2026-10-26-critical-reset-modulation.md).
+Its analytic combination is unaudited, its classical quadrature is not an
+interval certificate, and no new capacity, minimax value or importance
+score is claimed. No canonical graph, confidence, route or Lean declaration
+is changed by this chronology.
