@@ -1,0 +1,24 @@
+{
+  "sources": [
+    {
+      "url": "https://dlmf.nist.gov/10.9",
+      "version": "DLMF10.9.E1, current response hash",
+      "reading_depth": "Eq10.9.1 read; boundedness |J0(t)|<=1 for real t inferred from its integral. Other sections not audited.",
+      "utc": "2026-10-26T23:35:38.093786+00:00",
+      "body_redistributed": false,
+      "http": 200,
+      "bytes": 385926,
+      "sha256": "2b853ec7d1efc3880199582bc75ec7fb90b9173ef86847953a25c8d519083470"
+    },
+    {
+      "url": "https://arxiv.org/html/1508.00335v7",
+      "version": "1508.00335v7,2016-12-04",
+      "reading_depth": "Abstract/introduction Eq1 and selected TV conventions read, not a full proof/paper audit.",
+      "utc": "2026-10-26T23:35:39.088686+00:00",
+      "body_redistributed": false,
+      "http": 200,
+      "bytes": 2312917,
+      "sha256": "3933519a4f87b462e471e52b632f5bf2042a850002262c27c662bc6a23854483"
+    }
+  ]
+}

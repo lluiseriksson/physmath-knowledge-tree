@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "observed_on": "2026-10-26",
+  "observed_on": "2026-10-27",
   "coverage": "Directed primary-source radar with version-pinned catalogue metadata. Bibliographic coverage is never proof coverage.",
   "source_cards": [
     {
@@ -564,6 +564,40 @@
         "domain.quantum_information_theory",
         "domain.analysis"
       ]
+    },
+    {
+      "id": "nist-bessel-integral",
+      "title": "NIST DLMF Bessel integral10.9.1",
+      "url": "https://dlmf.nist.gov/10.9.E1",
+      "kind": "paper",
+      "published_on": null,
+      "observed_on": "2026-10-27",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "The angular integral representation implies |J0(t)|<=1 for real t; used in an own conditional Gaussian observable calculation.",
+      "limits": "Selected equation and context only; no full proof audit. The conditional separator is own unreviewed synthesis, not an attributed new theorem.",
+      "reuse": "Bibliography, response hashes and original synthesis only; no full text redistribution.",
+      "anchors": [
+        "domain.analysis",
+        "domain.quantum_information_theory"
+      ]
+    },
+    {
+      "id": "sason-verdu-pinsker",
+      "title": "Sason and Verdu: f-Divergence Inequalities, v7",
+      "url": "https://arxiv.org/abs/1508.00335v7",
+      "kind": "paper",
+      "published_on": null,
+      "observed_on": "2026-10-27",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Selected Eq1 gives Pinsker; with natural logarithms and L1 distance our convention is L1<=sqrt(2D).",
+      "limits": "Selected equation and context only; no full proof audit. The conditional separator is own unreviewed synthesis, not an attributed new theorem.",
+      "reuse": "Bibliography, response hashes and original synthesis only; no full text redistribution.",
+      "anchors": [
+        "domain.analysis",
+        "domain.quantum_information_theory"
+      ]
     }
   ],
   "candidates": [
@@ -797,17 +831,19 @@
       "paper_score": null,
       "source_ids": [
         "eriksson-optical-compound-v3",
-        "python-flint-acb09-contract"
+        "python-flint-acb09-contract",
+        "nist-bessel-integral",
+        "sason-verdu-pinsker"
       ],
       "node_ids": [
         "domain.quantum_information_theory"
       ],
       "dictionary": "Binary signal/reset flag maps to a sufficient radial statistic; conditional entropy becomes an entire0F1 integral with tracked cost and tails.",
       "preserved": "Exact mass and unit-cost moments, specified finite two-law family, prior-assistance/feedback and per-law-cost quantifiers of v3.",
-      "lost_or_unproved": "No numerical upper certificate for the common-input optimum or useful finite-energy threshold; no broader model or impact inference.",
+      "lost_or_unproved": "No numerical upper certificate for the common-input optimum or useful finite-energy threshold; no broader model or impact inference. Two specific uniform observable fits fail at rational tail points in Arb192; no global approximation or numerical Delta bound.",
       "hypothesis_to_remove": "Implicit capacity-matched AWGN gain is replaced by explicit b^2=9757/50000 in the audited component; next remove the unquantified common-input gap.",
       "falsifier": "Reject if analytic M, branch guards, tail bounds or rate-interval separation fail; never infer a Delta lower bound from a single-law gain.",
-      "next_finite_task": "Certify an upper bound for V strictly below C2 with all energy/decoder quantifiers retained; avoid a separate minor paper or inherited rating.",
+      "next_finite_task": "Derive a cost-weighted or one-sided global residual envelope before fitting; preserve moment quantifiers and reject any pointwise counterexample. Two rejected trials are retained in separator787; no new paper or rating.",
       "review_packet": "integrations/research-radar/evidence/2026-10-26-interval777/ROOT-VERIFIED781.json"
     }
   ],
@@ -827,6 +863,11 @@
       "deepmind_superhuman_HEAD": "9b620a92886b3a7655b30ddcfe36e725e9596509",
       "anthropic_FLT_HEAD": "6e837e75355538c7f80bab5b956861e86c4eacc2",
       "proof_coverage": "Selected statements/definitions and READMEs; no full external formalization build."
+    },
+    "followup787": {
+      "evidence": "integrations/research-radar/evidence/2026-10-27-separator787/SOURCES787.json",
+      "scope": "Directed primary inventory; no exhaustive/proof coverage claim",
+      "new_method_sources": "integrations/research-radar/evidence/2026-10-27-separator787/METHOD-SOURCES790.json"
     }
   }
 }

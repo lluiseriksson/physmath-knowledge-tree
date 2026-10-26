@@ -5,7 +5,7 @@ A dated, searchable bridge between primary-source discovery, the existing knowle
 The current snapshot, observed on **26 October 2026**, contains:
 
 - Current metadata for **721 OpenAI manuscripts in373 families**, pinned to commit `7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a`. This is bibliographic inventory, not721 reviewed proofs. The original719/372 snapshot and three withdrawal notices are preserved.
-- Thirty-two source cards spanning OpenAI, Anthropic, DeepMind, the author's catalogues and relevant primary mathematical literature. Dates and individual reading depths distinguish background, inventory and inspected statements.
+- Thirty-four source cards spanning OpenAI, Anthropic, DeepMind, the author's catalogues and relevant primary mathematical literature. Dates and individual reading depths distinguish background, inventory and inspected statements.
 - An inventory of29 selected public research repositories, with reading scope recorded per entry.
 - Eleven speculative candidate records with their current statuses, dictionaries, missing structure, falsifiers and next tasks. None carries a manuscript score.
 
@@ -103,3 +103,5 @@ The later [switching audit closure](notes/2026-10-26-switching-audit-closure.md)
 The [growing thermal-noise checkpoint](notes/2026-10-26-growing-thermal-uniformity.md) records the supported working hypothesis reduction to n=o(E), exact Choi/TRE antecedents, fixed-reference pinching bookkeeping and a critical-regime falsifier. The exact eight-page manuscript is under full review; no grade or formal confidence is inferred. The public Davies v3 reports remain separate.
 
 The [interval explicit-gain checkpoint](notes/2026-10-26-interval-explicit-learning.md) closes the previous integral-enclosure obligation with an unscored component audit, retaining the unresolved common-input gap and all context/novelty limits. It adds one retrievable research candidate, not a new paper score or formal graph result.
+
+Latest negative result: [two global observable fits rejected](notes/2026-10-27-observable-separator-obstructions.md); the general gap route remains open and unscored.
