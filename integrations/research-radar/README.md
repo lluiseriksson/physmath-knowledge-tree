@@ -2,12 +2,12 @@
 
 A dated, searchable bridge between primary-source discovery, the existing knowledge graph and bounded research tasks. It records what has actually been inspected. It does not assign scientific truth from a repository title, formal statement, model score or graph path.
 
-The first snapshot, observed on **24 October 2026**, contains:
+The current snapshot, observed on **26 October 2026**, contains:
 
-- Metadata for **719 OpenAI manuscripts in 372 families**, pinned to commit `1581d4cbdd69a0faf34b2089614fe2a814316a6a`. These are inventoried titles and links, not 719 reviewed proofs. Three withdrawal notices are preserved.
-- Sixteen source cards spanning OpenAI, Anthropic, DeepMind, the author's catalogues and relevant primary mathematical literature. Dates distinguish older background from current observations.
-- An inventory of 28 selected public research repositories. Three README files were read; the other entries are metadata only.
-- Five explicitly speculative candidate bridges with a dictionary, preserved and missing structure, a hypothesis to remove, a falsifier and a next task. None carries a manuscript score.
+- Current metadata for **721 OpenAI manuscripts in373 families**, pinned to commit `7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a`. This is bibliographic inventory, not721 reviewed proofs. The original719/372 snapshot and three withdrawal notices are preserved.
+- Thirty source cards spanning OpenAI, Anthropic, DeepMind, the author's catalogues and relevant primary mathematical literature. Dates and individual reading depths distinguish background, inventory and inspected statements.
+- An inventory of29 selected public research repositories, with reading scope recorded per entry.
+- Ten speculative candidate records with their current statuses, dictionaries, missing structure, falsifiers and next tasks. None carries a manuscript score.
 
 ## Use
 
@@ -19,7 +19,7 @@ npm run research:radar -- next
 npm run validate:research-radar
 ```
 
-[Source cards and candidates](registry.json) · [Pinned manuscript catalogue](catalogue/openai-math-2026-10-24.json) · [Public repository inventory](repository-inventory.json) · [Retrieved graph context](retrieval-2026-10-24.json) · [Research update](../../docs/research-updates/2026-10-24.md).
+[Source cards and candidates](registry.json) · [Current pinned manuscript catalogue](catalogue/openai-math-2026-10-26.json) · [Historical719/372 snapshot](catalogue/openai-math-2026-10-24.json) · [Public repository inventory](repository-inventory.json) · [Retrieved graph context](retrieval-2026-10-24.json) · [Research update](../../docs/research-updates/2026-10-24.md).
 
 ## Update cycle
 
@@ -55,6 +55,8 @@ Latest follow-up: [encoded positivity: the assessed manuscript and an odd-length
 Reading levels are explicit: catalogue, abstract, announcement, README, selected sections, or a previously audited own proof. `literature` means the card accurately attributes a source claim, not that this sweep verified the claim. Candidate bridges remain `speculative` until a separately documented change is justified.
 
 The source registry contains bibliographic metadata and short original synthesis. It is not a redistributed full-text corpus or permission for model training. The existing frontier-corpus policy and per-source rights still apply to any later acquisition. Public inventories exclude private repositories and credentials.
+
+The [26October frontier update and learning witness](notes/2026-10-26-frontier-update-and-learning-witness.md) pins the new two-paper OpenAI revision, separates statement reading from proof verification, and records an uncertified optical perturbation alongside a narrowly exact scalar check. No new manuscript grade or graph confidence is inferred.
 
 The canonical graph's 59 nodes and 115 edges are unchanged in this snapshot. This sidecar is designed to accumulate source knowledge without silently promoting graph confidence or solved status. Aspiring to AIRR 7, 8, 9 or 10 does not establish any of those scores or guarantee a discovery.
 

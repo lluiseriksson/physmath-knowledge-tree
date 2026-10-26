@@ -1,0 +1,52 @@
+{
+  "format": "JSON LF renditions of exact native values; native byte streams retained privately, not an extra scientific assessment",
+  "files": [
+    {
+      "path": "FORMAL-TARGET-PINS770.json",
+      "native_sha256": "04f5ca6d4b3531a4a76fb9bf0e10abd433240fab411dd549d3227fccc551e3e4",
+      "public_LF_rendition_sha256": "d9e3564d187dec83c90e452b67a6dbce552470a93e17cb8d5374ce5511ef7247"
+    },
+    {
+      "path": "OPENAI-CATALOGUE-DELTA770.json",
+      "native_sha256": "822503da530057c928d3f8bdc6153acd082ca28d42d5a43ca85d59be1fe2104e",
+      "public_LF_rendition_sha256": "822503da530057c928d3f8bdc6153acd082ca28d42d5a43ca85d59be1fe2104e"
+    },
+    {
+      "path": "OPENAI-DELTA770.json",
+      "native_sha256": "0fcc6adbc0c0f148f37053ca739b079ac95e3641ea5bb10b195d34f247502d38",
+      "public_LF_rendition_sha256": "0fcc6adbc0c0f148f37053ca739b079ac95e3641ea5bb10b195d34f247502d38"
+    },
+    {
+      "path": "PRIMARY-PINS770.json",
+      "native_sha256": "7026159fc0332ed8e67ec15c2283c6208ff7a02333e516b64b5bb6d8e6c8f958",
+      "public_LF_rendition_sha256": "7026159fc0332ed8e67ec15c2283c6208ff7a02333e516b64b5bb6d8e6c8f958"
+    },
+    {
+      "path": "SCALAR-CERTIFICATE773.json",
+      "native_sha256": "0be95b1880cb974e880b5ed08f39fffdb5a1385b47959a1e63069e0133a303b4",
+      "public_LF_rendition_sha256": "0be95b1880cb974e880b5ed08f39fffdb5a1385b47959a1e63069e0133a303b4"
+    },
+    {
+      "path": "SOURCES770.json",
+      "native_sha256": "11fb1b3650228b634178c008116d41eb8ef8eb9d111a0d575c62b22a1b2d3714",
+      "public_LF_rendition_sha256": "2d8fe6f63208a112b1b0246404b3f785c47a5c5f6182fbc17ca74f596f19ff51"
+    },
+    {
+      "path": "SUBGRAPH772.json",
+      "native_sha256": "0b98135ebdbd9264782857463e170be42244c336d46bd76d304c4ef1030b4d12",
+      "public_LF_rendition_sha256": "0b98135ebdbd9264782857463e170be42244c336d46bd76d304c4ef1030b4d12"
+    },
+    {
+      "path": "WITNESS771.json",
+      "native_sha256": "b4f4b55f70d2a2ed603067bcbb95b7f926ddd1789f640f252a1b27365e898d73",
+      "public_LF_rendition_sha256": "29040a794794a2f1257eb9de3b1ef9ac10a8942918ff08261cc7f4340f8aa8fc"
+    }
+  ],
+  "foreign_pdfs_or_pages_in_public_repository": false,
+  "native_source_folder": "2026-10-26_learning-certificate771",
+  "environment": {
+    "numpy": "2.2.6",
+    "scipy": "1.18.0"
+  },
+  "research_capsule_ready_claimed": false
+}

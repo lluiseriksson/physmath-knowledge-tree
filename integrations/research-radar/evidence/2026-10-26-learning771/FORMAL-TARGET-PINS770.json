@@ -1,0 +1,28 @@
+{
+  "sources": [
+    {
+      "path": "lean/ComparatorChallenges/SubexponentialSAT.lean",
+      "url": "https://raw.githubusercontent.com/openai/math/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/lean/ComparatorChallenges/SubexponentialSAT.lean",
+      "sha256": "4183b2057cff350d66848215ff7167196dfc20e1891b598fdddea59077a76685",
+      "bytes": 7833,
+      "depth": "selected formal target/definition reading only, not a Lean build or full dependency audit",
+      "cache": "D:\\Cache\\airr\\radar770-primary\\SubexponentialSAT.lean"
+    },
+    {
+      "path": "lean/ComparatorChallenges/SubexponentialSAT.json",
+      "url": "https://raw.githubusercontent.com/openai/math/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/lean/ComparatorChallenges/SubexponentialSAT.json",
+      "sha256": "debbfdc9c01104d2369be80da5180978275106df8b685f693fba7ce7da7c5b19",
+      "bytes": 364,
+      "depth": "selected formal target/definition reading only, not a Lean build or full dependency audit",
+      "cache": "D:\\Cache\\airr\\radar770-primary\\SubexponentialSAT.json"
+    },
+    {
+      "url": "https://api.github.com/repos/openai/math/contents/lean/OAI/Algorithms/SubexponentialSAT/Main.lean?ref=7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+      "path": "lean/OAI/Algorithms/SubexponentialSAT/Main.lean",
+      "sha256": "cbd4cebf71f1d3239c21241f946d05e8de802dbb9c138713f8e7182d868b2d1c",
+      "bytes": 590,
+      "lines": 16,
+      "reading": "imports and terminal theorem wrapper only; dependent modules not audited and no Lean build run"
+    }
+  ]
+}
