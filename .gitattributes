@@ -6,3 +6,6 @@
 *.webp binary
 *.ico binary
 *.zip binary
+
+# Preserve original754 native audit byte archive.
+integrations/research-radar/evidence/2026-10-26-assisted754/original754.zip -text
