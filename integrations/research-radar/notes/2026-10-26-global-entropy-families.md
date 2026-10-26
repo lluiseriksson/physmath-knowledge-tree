@@ -87,9 +87,11 @@ The [uniform scalar gates](../checks/entropy-family564-conditions.json) and
 their [script](../checks/entropy-family564-conditions.py) record positive
 Choi corner determinants, negative partial-transpose minors, positive
 `c^2-r^2`, no pure output and the phase-order condition. The channels are
-nonunital, non-entanglement-breaking and outside the inspected `c^2<=r`
-Davies sufficient condition. These exclusions are not an exhaustive
-literature classification.
+nonunital, non-entanglement-breaking and violate `c^2<=r`, the structural
+restriction for the positive axial Davies semigroup class. This is not an
+exclusion based on a cited Holevo-additivity theorem. See the corrected
+[review and obstruction record](2026-10-26-entropy-review-and-obstructions.md)
+for the primary equation and the limits of the antecedent comparison.
 
 The minimum sum of marginal deficit coefficients is `221/800`. Therefore
 the uniform entropy gap is exactly bounded below by
@@ -127,8 +129,12 @@ claimed. The audits assigned **no scores** and certified no priority.
 
 A combined seven-page manuscript is separately frozen with PDF SHA256
 `4c800db8c24ea02a5653c83eb41e0202f73a6bae2157a5fc9b56bcae3485557d`.
-Its full exact-PDF review is running in a new requested Astra conversation;
-no manuscript score or editorial status follows from the preparatory audits.
+Its full exact-PDF review has closed: overall AIRR and importance4.5/10,
+technical quality8.5/10, with bibliographic/expository minor revisions.
+Those scores apply only to that exact PDF. The separately corrected PDF
+does not inherit them; its delta closure resolved O1/O2/O3 without new scores. See the
+[review and obstruction record](2026-10-26-entropy-review-and-obstructions.md).
+No editorial status follows from these private model reviews.
 This knowledge note is not an AIRR deposit receipt or public-paper record.
 
 ## Primary antecedents and reading scopes
