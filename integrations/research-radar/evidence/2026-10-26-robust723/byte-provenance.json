@@ -1,0 +1,31 @@
+{
+  "originals": [
+    {
+      "original_path": "report.txt",
+      "sha256": "b97a93f6987d47a87db2597f94a213ba8e967f123c530e5b8b39d6b27e5d56c1",
+      "bytes": 31274
+    },
+    {
+      "original_path": "verdict.json",
+      "sha256": "2b40384407f7e1a9755fed28cc609ba39bdb2c5fb5de4a1d8ada84161b864acd",
+      "bytes": 11781
+    },
+    {
+      "original_path": "context.json",
+      "sha256": "668c37c131b4fb7f72d5c31b3d7da671f6d665a6ddebf5818c7c7293729ec4db",
+      "bytes": 6271
+    },
+    {
+      "original_path": "sources/read-depth.json",
+      "sha256": "5a8b0b426767786e4e18d814507931e1f6a472ab898ea208d0041268285c55fb",
+      "bytes": 16274
+    }
+  ],
+  "archive": "original723.zip",
+  "archive_sha256": "1cbb87e8dfb44f89dd81f6f929d8ca49b0d912b95b6b161ecbee5e6a11d9360c",
+  "readable_files": "UTF8 LF renditions; authoritative original bytes in ZIP",
+  "full_private_audit_manifest_sha256": "1e1224d897b5076f4943ce9944a144cb1a5da926487dfd83ebf03adcfc6a3e24",
+  "root_verified_payloads": 126,
+  "root_verified_C_D_files": 128,
+  "foreign_fulltexts_copied_to_repository": false
+}

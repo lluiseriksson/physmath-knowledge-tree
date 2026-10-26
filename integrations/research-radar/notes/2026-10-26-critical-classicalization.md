@@ -450,3 +450,67 @@ proof at8822f7dd. That external proof was not compiled or audited here.
 New repository activity is neither a new open problem nor a proof checked
 by this run. [Metadata pins](../evidence/2026-10-26-marginal716/source-pins719.json)
 record URL, version, hash and actual reading depth without copying the file.
+
+
+## Exact revised-PDF full assessment723: terminal, not a transferred grade
+
+The14-page v2 SHA2566a00b8bf9079766cae02e1e050fb2d7c224dde24568d5a3ad5d68ca238ac7f45
+received an actual full assessment at2026-10-26T15:48:47.719841+00:00:
+importance5.5/10, technical8.5/10, accept as a scientific recommendation,
+no material objection or required revision. It does not meet the >7
+aspiration. These judgments concern this revised PDF, not a transfer from
+v1 or an independent vote by the authoring audits. Six public stars are
+only the official half-up display of5.5, never a score6.0.
+
+- [Complete report723](../evidence/2026-10-26-robust723/report.txt)
+- [Exact verdict, P1-P6 and F1-F3](../evidence/2026-10-26-robust723/verdict.json)
+- [Actual reviewer context and chronology](../evidence/2026-10-26-robust723/context.json)
+- [Primary-source reading depths](../evidence/2026-10-26-robust723/source-reading-depth.json)
+- [Byte-exact originals](../evidence/2026-10-26-robust723/original723.zip)
+- [Byte provenance](../evidence/2026-10-26-robust723/byte-provenance.json)
+
+Root read the full report/verdict and verified126 payloads and128 C/D
+files. Report SHA256b97a93f6987d47a87db2597f94a213ba8e967f123c530e5b8b39d6b27e5d56c1.
+Readable files have LF formatting; original byte streams are in the ZIP.
+Foreign primary PDFs in the private audit are not copied to this repository.
+The exact source and all14 PDF pages were read by the reviewer; primary
+comparison was selective. Its reconstruction compiles but differs in bytes
+from the frozen assessed artifact. Shared prior review/manuscript context,
+retained evaluative exposure and authoring participation are declared.
+Requested Astra xhigh identity, effort, isolation and statistical
+independence are not attested. No human peer review or formal proof follows.
+
+The review supports the removal of global average Gaussianity for the
+precisely stated marginal robustness converse, plus its application to
+reliable typical coherent Gaussian books with fixed E and finite schedule,
+equiprobable messages and explicit cost slack/rescaling. It preserves the
+distinction between Holevo functionals and operational code capacities,
+and between Gaussian modulation and individually Gaussian signal states:
+the non-Gaussian modulation advantage can itself use coherent states.
+No unrestricted Gaussian-protocol impossibility, decoder for every random
+book, certified numerical gap, growing-schedule uniformity, interchange
+of limits or worldwide priority is claimed. These are the substantive
+limits behind the importance judgment, not open mathematical objections.
+
+This remains a substantive revision of the SAME record
+ARR-2026-2WNM69XY548JHVMC. The linked author deposit is
+SUB-B1200159AD099909, private revision2, parentSUB-87C015D124742367;
+clean scanner, exact server PDF and author CC BY4.0 release grant were
+verified. Public source preparation retains all38 v1 blobs and its own
+assessment. A later format-only binding728 preserves723's original time
+and judgment and is not another scientific vote. Source preparation or
+an author deposit alone is not a claim of completed public release.
+
+The new directed refresh726 again retrieved13 primary endpoints. OpenAI/math
+and DeepMind/formal-conjectures remain at1581d4c and0921599 respectively.
+Inventory is not abstract, statement or proof coverage; the sweep is not
+exhaustive. Claude/continuity state fingerprints remained unchanged and
+no duplicate manuscript was deposited. Context retrieval for this note
+used graph/index.json and domain.quantum_information_theory with its two
+adjacent no-signalling/recovery edges; no canonical graph edit is made.
+
+Formal:none. Literature:the previously pinned methods with stated depth.
+Heuristic:model-audited manuscript proofs with actual final assessment.
+Speculative:broader protocol/optimizer claims remain unasserted. Existing
+falsifiers and abandonment conditions above are retained; a positive
+model recommendation does not remove them or establish priority.
