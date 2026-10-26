@@ -118,7 +118,7 @@ papers' numerical grades read. No human review, Lean proof, blinded experiment
 or priority certificate is claimed. Finite calculations are corroboration,
 not a ready Research Capsule or proof of a coding limit.
 
-## Remaining bounded target
+## Remaining bounded target at this earlier checkpoint
 
 Research move: sharpen the existing spectral/branch reduction into a full
 minimax loss law. This is a new hypothesis (`speculative`), not a consequence
@@ -128,3 +128,8 @@ uniformly over every budget, and match a common-code achievable bound.
 Abandon the claim if either optimized-input converse, uniform endpoint error,
 or finite type-cost transfer fails. Scalar diagnostics alone cannot close it.
 No higher score is forecast or requested for that working argument.
+
+The subsequent [optical minimax review](2026-10-26-optical-minimax-review.md)
+records the completed full-law manuscript assessment, its different exact
+PDF, the actual 4.5 importance mark and retained minor comments. This earlier
+report and its 4.4 mark remain attached to the nine-page predecessor.
