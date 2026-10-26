@@ -159,3 +159,119 @@ now the subject of a separate serial technical audit682. In particular,
 one decoder for all laws and the order sup_mu inf_nu have not been
 certified by678. No extra numerical rerun is needed to replace its analytic
 proof;683's coarse quadrature discrepancy remains recorded honestly.
+
+## Terminal compound audit682 and a broader Gaussian benchmark
+
+The chronology above is retained. The separate682 technical audit is now
+terminal and supports681/684 with explicit proof completions, without an
+importance score or a priority certificate:
+[full original report](../evidence/2026-10-26-compound682/report.txt).
+Report SHA256:
+c07fdf10e5c39b5c5cae9808186ec220defb49dc90e5f0d888f07d742f6126c7.
+The coordinator read the complete report and verdict and checked31 payloads
+and33 identical C/D files. Only the original LF report is distributed here;
+the original verdict and full manifests remain conserved in the dossier.
+The reviewer has prior participation and shared context/files; requested
+Astra xhigh is not an identity, isolation or independence attestation.
+
+The operational extension eliminates knowledge of the fixed mixing law.
+Its encoder, heterodyne quantizer and empirical-information threshold
+decoder are common to every law. The proof uses the SAME average input
+law in the converse, Dini for one finite output partition, and selection
+by a SUM of errors over a polynomial total-variation net. No inf/sup
+interchange or expected-supremum shortcut is used. Constant-composition
+words enforce expected photon cost for every message. These are classical
+mechanisms applied with their hypotheses checked, not newly invented
+quantization or coding principles. No formal graph-confidence upgrade.
+
+Common quantization/Dini already appear in Mitran-Devroye-Tarokh's
+[20Dec2005 author draft](https://ece.uwaterloo.ca/~pmitran/compound3.pdf),
+Lemmas3-5, and Schaefer-Loyka
+[1509.02182v1](https://arxiv.org/abs/1509.02182v1),SecIII. Their state
+information/secrecy models do not by themselves establish our unknown-law
+decoder; the direct finite-alphabet proof supplies that step.682 records
+the bounded selected-proof reading, not an audit of every source theorem.
+
+The next speculative application is deliberately broader than coherent
+Gaussian modulation alone.688 proposes a STRICT gap between unrestricted
+classical modulation and the time-sharing hull H_G of ALL real planar
+Gaussian laws, including means, anisotropy, singular covariance and unequal
+energy allocation. Pointwise Gaussian inferiority alone would not prove
+this: compactness of parameter probability laws and the sublinear bound
+J<=lambda log(1+kp/r) must first make the hull supremum attained.
+
+Candidate691 then uses the Husimi law of a Gaussian AVERAGE quantum input
+state to propose a uniform Holevo bound H_G+O(1/E), permitting squeezed
+and entangled average states and arbitrary conditional states.694 proposes
+a matching lower bound by finite rational schedules of coherent Gaussian
+modulation. Together they would identify the limit of a regularized
+Gaussian-average Holevo functional and a strictly positive asymptotic gap.
+All three new steps are under the SAME serial unscored technical audit689;
+682 did not inspect or establish them. A preliminary message is not a
+terminal report or a full-manuscript assessment.
+
+The average-state restriction is essential: a finite deterministic
+codebook usually has a non-Gaussian average. Do not turn this exact
+Holevo-ensemble benchmark into an operational converse for every selected
+Gaussian random codebook, or for all protocols whose letters are Gaussian.
+Falsifiers: failed hull attainment/UI; an invalid continuous Jensen
+equality; a non-Gaussian Husimi law for a Gaussian average; a cost leak in
+the rational schedule; or a prior equivalent theorem. Refute or narrow
+the corresponding statement if one occurs, without concealing objections.
+
+Sourced context, not a new theorem: Gaussian measurements on Gaussian
+states have Gaussian outcomes (Weedbrook etal,
+[1110.3234v1](https://arxiv.org/abs/1110.3234v1),SecII.5/II.5.2, root
+selected passages read). Coherent near-capacity bounds for non-Gaussian
+attenuators/additive noise are established by Huber-Koenig,
+[1710.06734v2](https://arxiv.org/abs/1710.06734v2),Theorem1. Root read its
+abstract, introduction, model identification and theorem, not all EPI
+proofs. Their fixed-environment energy-independent bound does not alone
+give our proposed uniform joint-scaling result; broad coherent
+near-optimality must not be claimed as our discovery.
+
+The current combined draft is still unassessed and unpublished. A full
+assessment must bind the completed exact PDF; no old score transfers.
+Formal: none. Literature: established Gaussian/coding/quantization tools.
+Heuristic:678/682 model-audited working proofs with stated participation.
+Speculative:688/691/694 until their own terminal review and manuscript check.
+
+## Terminal Gaussian-hull audit689; exact manuscript sent to review701
+
+The subsequent serial689 audit closed with support for687/688/691/694,
+after explicitly requiring ||h||infinity<=1 (or the corresponding smaller
+epsilon range) in the old perturbation packet. The combined manuscript
+normalizes h. The omission and repair remain in the original report:
+[full original689](../evidence/2026-10-26-gaussian689/report.txt), SHA256
+7eb99e38fdd9b98cd7e8140f9a7d4cc5c29f27c08b9e694df5515b2401f94f81.
+Root read the full report and verdict and verified36 payloads and38
+byte-identical C/D files. The input addenda were new within the SAME
+unscored audit, not repeated votes. No manuscript score was issued.
+
+The supported scope is H_G(1)<C(1), matching bounds R_G=H_G+O(1/E),
+and a strictly positive limiting difference between the unknown-fixed-phase
+operational capacity and the EXACT Gaussian-average Holevo functional.
+All-average Gaussianity, rather than Gaussianity of individual letters,
+is the required condition. The report supplies a continuous-label DPI
+justification, a uniform logarithmic tail bound for parameter schedules,
+and a finite strict-cost rational schedule construction. These proofs are
+incorporated in one completed10-page manuscript, not separate papers.
+
+The average/ensemble distinction is explicit in Holevo's
+[2021 Gaussian-measurement paper](https://pmc.ncbi.nlm.nih.gov/articles/PMC8004196/),
+Theorem1/Remark2; root read those selected passages, not the whole proof.
+The recent Gaussian-channel optimality preprint
+[2610.22308v1](https://arxiv.org/abs/2610.22308v1), Adesso-Lami-Giovannetti,
+15Oct2026, was also compared at abstract/introduction/SecIV-Theorem2 scope.
+Its Gaussian-channel hypothesis excludes generic channel mixtures; its
+fixed-error rescaling is not imported into compound average-error coding.
+Historical open problems in older reviews are not treated as current.
+
+Completed manuscript title: Classical limits and Gaussian-average gaps
+for compound bosonic fading channels. Exact10-page PDF SHA256:
+33106ae8688f2057346f0de55007fcd7db578150e1380cd00756ef588e9832e2.
+It has been sent to full review701, with requested Astra xhigh and shared
+context/earlier participation disclosed. It is still unpublished and has
+no actual importance assessment. Technical audit support does not supply
+one. Formal: none. The working proofs remain model-audited heuristic
+evidence, not a graph-confidence promotion or certified original result.
