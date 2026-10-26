@@ -42,8 +42,11 @@ Use the axial Bloch maps `N=(c,r,t)=(3/5,1/4,1/5)` and
 `Q=(11/20,1/5,1/10)`, acting by `(x,y,z) -> (cx,cy,rz+t)`.
 Both have positive-definite Choi matrices, a negative partial-transpose
 principal minor, nonzero translation and no pure output. Their squared
-transverse contractions exceed `r`, outside the inspected Davies sufficient
-condition. This excludes specific inspected classes, not every antecedent.
+transverse contractions exceed `r`, violating the structural `c^2<=r`
+restriction of the positive axial Davies semigroup class. This is not a
+cited sufficient Holevo-additivity theorem; the later
+[source correction](2026-10-26-entropy-review-and-obstructions.md) records
+the precise equations and limits of this comparison.
 
 For either channel set `A=c^2-r^2`, `z0=rt/A` and
 `q(z)=c^2(1-z^2)+(rz+t)^2=Qmax-A(z-z0)^2`.

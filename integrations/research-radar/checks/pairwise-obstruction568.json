@@ -1,0 +1,120 @@
+{
+  "status": "PASS",
+  "observed_utc": "2026-10-26T01:29:56.759820+00:00",
+  "input": "pure5cycle graph state, amplitudes sign/sqrt32; exact rank1 outer product",
+  "signs": [
+    1,
+    1,
+    1,
+    -1,
+    1,
+    1,
+    -1,
+    1,
+    1,
+    1,
+    1,
+    -1,
+    -1,
+    -1,
+    1,
+    -1,
+    1,
+    -1,
+    1,
+    1,
+    1,
+    -1,
+    -1,
+    -1,
+    -1,
+    1,
+    -1,
+    -1,
+    1,
+    -1,
+    -1,
+    -1
+  ],
+  "verified_pair_marginals_I4_over4": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      4
+    ]
+  ],
+  "input_expectations": {
+    "[]": "0",
+    "[1]": "0",
+    "[4]": "0",
+    "[1, 4]": "1"
+  },
+  "channels": [
+    [
+      "3/5",
+      "1/4",
+      "1/5"
+    ],
+    [
+      "11/20",
+      "1/5",
+      "1/10"
+    ],
+    [
+      "3/5",
+      "1/4",
+      "1/5"
+    ],
+    [
+      "11/20",
+      "1/5",
+      "1/10"
+    ],
+    [
+      "3/5",
+      "1/4",
+      "1/5"
+    ]
+  ],
+  "output_pairwise_mutual_information": "all10 exactly0, since every pair output is product of local Phi_i(I/2)",
+  "output_X0Z1Z4_expectation": "3/100",
+  "product_of_output_marginals_expectation": "0",
+  "total_output_correlation_lower_nats": "9/20000",
+  "refuted_route": "D(T||tensor_i T_i) <= sum_{i<j} I(i:j)_T cannot hold even for these channel outputs of a pure state",
+  "scope": "Known graph-state mechanism, not novel; not a counterexample to the2channel entropy theorem, all-copy entropy bound or capacity conjecture. No score or paper."
+}

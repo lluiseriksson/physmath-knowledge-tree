@@ -1,0 +1,107 @@
+{
+  "exhaustive": false,
+  "observations": [
+    {
+      "name": "OpenAI/math",
+      "url": "https://api.github.com/repos/openai/math/commits?per_page=1",
+      "observed_utc": "2026-10-26T01:55:26.739706+00:00",
+      "scope": "Surface metadata only; no new statement/proof reading inferred",
+      "http": 200,
+      "bytes": 4734,
+      "sha256": "db4ef9f06a2ddaaa7c7467977049adc40ab959fc915467c57aaf912a3c45299c",
+      "commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a"
+    },
+    {
+      "name": "DeepMind/formal-conjectures",
+      "url": "https://api.github.com/repos/google-deepmind/formal-conjectures/commits?per_page=1",
+      "observed_utc": "2026-10-26T01:55:26.739706+00:00",
+      "scope": "Surface metadata only; no new statement/proof reading inferred",
+      "http": 200,
+      "bytes": 6625,
+      "sha256": "4827c4be938173b757b69689702d783cdf1562aa4cb42da30ecd8d73794d037a",
+      "commit": "039378b7951df701428aa5c6732a94a149a077e1"
+    },
+    {
+      "name": "Anthropic",
+      "url": "https://www.anthropic.com/research",
+      "observed_utc": "2026-10-26T01:55:26.739706+00:00",
+      "scope": "Surface metadata only; no new statement/proof reading inferred",
+      "http": 200,
+      "bytes": 415916,
+      "sha256": "fe624c20a6e807354a30c9224100104b8e64b58923901bb3104730fe14726ba9"
+    },
+    {
+      "name": "arXiv quant-ph recent",
+      "url": "https://arxiv.org/list/quant-ph/recent?show=50",
+      "observed_utc": "2026-10-26T01:55:26.740706+00:00",
+      "scope": "Surface metadata only; no new statement/proof reading inferred",
+      "http": 200,
+      "bytes": 84241,
+      "sha256": "dea3e2b2c57325b63eb41adfb67401abe85d8a291affdc1c88ac693ba04576e5"
+    },
+    {
+      "name": "AIRR catalogue",
+      "url": "https://airr.science/catalog.json",
+      "observed_utc": "2026-10-26T01:55:26.937677+00:00",
+      "scope": "Surface metadata only; no new statement/proof reading inferred",
+      "http": 200,
+      "bytes": 1270039,
+      "sha256": "7851361b105c7cf5a83406a92b8142174daa7a07877d95ba0186322d0688239b"
+    },
+    {
+      "name": "ai.viXra author",
+      "url": "https://www.ai.vixra.org/author/lluis_eriksson",
+      "observed_utc": "2026-10-26T01:55:27.146866+00:00",
+      "scope": "Unavailable; no reading inferred",
+      "http": 406,
+      "bytes": 226,
+      "sha256": "80a265bed528211aa708dcd58f7a95db36eeb7f873c6fe4ddab0b3a1dc0973a4"
+    },
+    {
+      "name": "lluiseriksson repositories first100",
+      "url": "https://api.github.com/users/lluiseriksson/repos?per_page=100&sort=updated",
+      "observed_utc": "2026-10-26T01:55:27.157031+00:00",
+      "scope": "Surface metadata only; no new statement/proof reading inferred",
+      "http": 200,
+      "bytes": 212804,
+      "sha256": "a1d052f91fa3ae349598f32ab0c7c1bc980e1f7a1408338cc263239fb9c880ce"
+    },
+    {
+      "name": "Winter1507.07775v6",
+      "url": "https://arxiv.org/html/1507.07775v6",
+      "observed_utc": "2026-10-26T01:55:27.232185+00:00",
+      "scope": "Surface metadata only; no new statement/proof reading inferred",
+      "http": 200,
+      "bytes": 544634,
+      "sha256": "549a342441f29a8f243088f9186e1fb2d65bd3eb2fddc5ed0fb331c99ccb2fcf"
+    },
+    {
+      "name": "Catalano2604.26874v2",
+      "url": "https://arxiv.org/abs/2604.26874v2",
+      "observed_utc": "2026-10-26T01:55:27.404819+00:00",
+      "scope": "Surface metadata only; no new statement/proof reading inferred",
+      "http": 200,
+      "bytes": 44149,
+      "sha256": "5340fb11f9e638182ee8e5b4d6cd43a860ae6b4a5f506ce701cc679b6fca5bd9"
+    }
+  ],
+  "literature": [
+    {
+      "source": "Winter1507.07775v6",
+      "read": "Root read Lemma2 and proof, HTML lines72-136; finite dim J bound, arbitrary conditioning dimension; own selected application; not full paper proof audit"
+    },
+    {
+      "source": "Catalano2604.26874v2",
+      "read": "Abstract/version metadata and HTML introduction read; no whole theorem/proof audit this round; fading/thermal nonoptimality does not establish arbitrary reset entropy-budget threshold"
+    },
+    {
+      "source": "own spectral ARR-2026-58XZ9SCZA39DSRF0v1",
+      "read": "Selected entropy escape/critical dichotomy, finite flag and finite-code recovery/paid seed passages; not fresh whole manuscript/security audit"
+    },
+    {
+      "source": "own minimax ARR-2026-2EXHFGWW0S8MG8QA v1",
+      "read": "Abstract, uniform reduction theorem/proof, branch lemma/proof and growing-energy-budget corollary; entropy-constrained reset set differs and dephasing can increase entropy, so old reduction does not directly transfer"
+    }
+  ],
+  "no_priority_certification": true
+}
