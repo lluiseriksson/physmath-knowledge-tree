@@ -275,3 +275,77 @@ context/earlier participation disclosed. It is still unpublished and has
 no actual importance assessment. Technical audit support does not supply
 one. Formal: none. The working proofs remain model-audited heuristic
 evidence, not a graph-confidence promotion or certified original result.
+
+
+## Completed exact-PDF assessment701 and bounded follow-up
+
+The exact10-page PDF above was fully assessed at2026-10-26T12:26:13.932575+00:00.
+The actual report assigns importance5.0/10 and technical8.5/10, recommends
+acceptance scientifically, and finds no material open objection. This is
+below the aspirational >7 target; it is not an improvement over every
+previous manuscript. The original pending statements above describe their
+earlier chronology. Full originals: [report701](../evidence/2026-10-26-classical701/report.txt),
+[verdict701](../evidence/2026-10-26-classical701/verdict.json),
+[context701](../evidence/2026-10-26-classical701/context701.json).
+The JSON links are readable LF projections; byte-exact originals remain in
+[original-json.zip](../evidence/2026-10-26-classical701/original-json.zip),
+with [byte provenance](../evidence/2026-10-26-classical701/byte-provenance.json).
+The principal limitation is the specialized joint noise/energy scaling and
+the EXACT average-Gaussian ensemble restriction, not a mathematical defect.
+Shared prior authoring context and participation preclude a blind-vote
+claim; requested Astra xhigh runtime identity/effort and independence are
+unverified. No Lean/formal promotion or editorial admission follows.
+Author case SUB-87C015D124742367 has a clean exact PDF and CC BY4.0 release
+permission; record ARR-2026-2WNM69XY548JHVMC is being prepared, not yet
+claimed publicly released here. No score is inherited from another PDF.
+
+Directed primary refresh709 retrieved13 endpoints, distinguishing index
+metadata from actual abstract/theorem/proof reading. OpenAI/math remains
+1581d4cbdd69a0faf34b2089614fe2a814316a6a. DeepMind/formal-conjectures advanced
+to [591675d](https://github.com/google-deepmind/formal-conjectures/commit/591675d14bf90e8038a6e0268b68e8e6ce60386e).
+The parent is039378b; the changed files are two CI workflows updating Python
+requirements. Root read this commit diff: this is infrastructure, not new
+mathematical evidence. Other index refreshes do not imply their papers were
+read. This directed sweep is not exhaustive and stores no foreign corpus.
+
+### Bridge candidate: remove exact-average Gaussianity by an explicit modulus
+
+- Target/source: domain.quantum_information_theory and the preceding
+  operational measure/prepare simulation; smallest node plus two adjacent
+  no-signalling/CMI edges retrieved before this prose.
+- Research move: audit information loss; confidence **speculative** as a
+  quantum robustness result, **heuristic** for the following proposed lemma.
+- Mechanism/dictionary: quantum trace distance contracts under heterodyne
+  to classical total variation. Input mean photon cost becomes Husimi
+  second moment with the already recorded +m cost. Approximate quantum
+  Gaussian average maps to a nearby multivariate Gaussian input law.
+- Preserved: common classical channel, full block correlations and total
+  expected cost. Lost/uncertain: a nearby Gaussian state need not inherit
+  a useful energy bound from trace proximity alone. Operational finite
+  Gaussian-random codebooks are still not automatically included.
+- Finite target: for a memoryless Gaussian-noise mixture with normalized
+  noise floor ell>0 and gain bound K, prove a block-uniform continuity
+  modulus for I_Q(X^m;Y^m)/m when Q,G have TV distance delta and BOTH have
+  total cost<=mP. Maximal-coupling decomposition has a common (1-delta)
+  component; the bad components have cost<=mP/delta. The binary mixture
+  chain rule suggests a bound h2(delta)/m + delta*log(1+KP/(ell*delta)).
+  This is a proposed bound requiring a full check of mutual-information
+  finiteness and the branch-mixture upper bound, not an established theorem.
+- Falsifier/abandonment: an explicit finite-block pair violating that bound,
+  or inability to bound the Gaussian comparison energy under the intended
+  hypothesis. Do not replace the missing comparison-energy condition by
+  the conclusion. Without an operational gain beyond known continuity
+  theory this is a manuscript improvement, not a separate paper.
+- Minimal formal target: finite-alphabet binary-mixture mutual-information
+  chain rule and capacity bound; no Lean proof has been run for this card.
+- Literature: root read abstracts (not proofs) of Winter,
+  [1507.07775](https://arxiv.org/abs/1507.07775), and Shirokov,
+  [1610.08870](https://arxiv.org/abs/1610.08870). Their energy-constrained
+  continuity work is a prior-method warning, not evidence of our novelty.
+- Next finite check: verify the binary-mixture inequality analytically;
+  compare exact theorem hypotheses in those primary papers before any
+  novelty claim or expensive reviewer dispatch.
+
+Formal: none. Literature: cited established continuity program and actual
+CI commit. Heuristic: existing model-audited working proofs. Speculative:
+approximate-average extension. Canonical graph/confidence/routing unchanged.
