@@ -1,0 +1,104 @@
+{
+  "observed_at": "2026-10-26T00:41:56.921320+00:00",
+  "exhaustive": false,
+  "scope": "Directed source inventory. Metadata does not imply abstracts, statements or proofs have been read.",
+  "sources": [
+    {
+      "name": "openai_math",
+      "url": "https://api.github.com/repos/openai/math/commits?per_page=1",
+      "observed_at": "2026-10-26T00:41:55.455546+00:00",
+      "scope": "inventoried",
+      "status": 200,
+      "final_url": "https://api.github.com/repos/openai/math/commits?per_page=1",
+      "bytes": 4734,
+      "sha256": "db4ef9f06a2ddaaa7c7467977049adc40ab959fc915467c57aaf912a3c45299c",
+      "head": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "date": "2026-10-12T21:55:24Z",
+      "subject": "Merge pull request #2 from openai/codex/lock-prs"
+    },
+    {
+      "name": "deepmind_formal",
+      "url": "https://api.github.com/repos/google-deepmind/formal-conjectures/commits?per_page=1",
+      "observed_at": "2026-10-26T00:41:55.455546+00:00",
+      "scope": "inventoried",
+      "status": 200,
+      "final_url": "https://api.github.com/repos/google-deepmind/formal-conjectures/commits?per_page=1",
+      "bytes": 6625,
+      "sha256": "4827c4be938173b757b69689702d783cdf1562aa4cb42da30ecd8d73794d037a",
+      "head": "039378b7951df701428aa5c6732a94a149a077e1",
+      "date": "2026-10-25T21:38:40Z",
+      "subject": "feat(OpenQuantumProblems/35): formal proof link for AME(4,6) (#7502)"
+    },
+    {
+      "name": "anthropic",
+      "url": "https://www.anthropic.com/research",
+      "observed_at": "2026-10-26T00:41:55.455546+00:00",
+      "scope": "inventoried",
+      "status": 200,
+      "final_url": "https://www.anthropic.com/research",
+      "bytes": 415916,
+      "sha256": "fe624c20a6e807354a30c9224100104b8e64b58923901bb3104730fe14726ba9",
+      "title": "Research \\ Anthropic",
+      "body_read_as_proof": false
+    },
+    {
+      "name": "arxiv_quantph",
+      "url": "https://arxiv.org/list/quant-ph/recent?show=50",
+      "observed_at": "2026-10-26T00:41:55.456546+00:00",
+      "scope": "inventoried",
+      "status": 200,
+      "final_url": "https://arxiv.org/list/quant-ph/recent?show=50",
+      "bytes": 84241,
+      "sha256": "dea3e2b2c57325b63eb41adfb67401abe85d8a291affdc1c88ac693ba04576e5",
+      "title": "Quantum Physics",
+      "body_read_as_proof": false
+    },
+    {
+      "name": "airr",
+      "url": "https://airr.science/catalog.json",
+      "observed_at": "2026-10-26T00:41:55.760962+00:00",
+      "scope": "inventoried",
+      "status": 200,
+      "final_url": "https://airr.science/catalog.json",
+      "bytes": 1270039,
+      "sha256": "7851361b105c7cf5a83406a92b8142174daa7a07877d95ba0186322d0688239b",
+      "body_read_as_proof": false
+    },
+    {
+      "name": "vixra_author",
+      "url": "https://www.ai.vixra.org/author/lluis_eriksson",
+      "observed_at": "2026-10-26T00:41:55.886732+00:00",
+      "scope": "inventoried",
+      "status": 200,
+      "final_url": "https://www.ai.vixra.org/author/lluis_eriksson",
+      "bytes": 70178,
+      "sha256": "d082ccfe160fee5d8c0978790509e49a149cad0ec7bf0b1c0b0bd6059ea51f79",
+      "title": "ai.viXra.org open archive of AI assisted e-prints, Lluis Eriksson",
+      "body_read_as_proof": false
+    },
+    {
+      "name": "public_repos",
+      "url": "https://api.github.com/users/lluiseriksson/repos?per_page=100&sort=updated",
+      "observed_at": "2026-10-26T00:41:55.913999+00:00",
+      "scope": "inventoried_first_page_only",
+      "status": 200,
+      "final_url": "https://api.github.com/users/lluiseriksson/repos?per_page=100&sort=updated",
+      "bytes": 212804,
+      "sha256": "5a64de1baa3fe7eaec925bfdc8541f7c973d2cb09630945be7cfafaa13f7c180",
+      "next_page_exists": false
+    },
+    {
+      "name": "tang",
+      "url": "https://arxiv.org/html/2609.28592v1",
+      "observed_at": "2026-10-26T00:41:56.025630+00:00",
+      "scope": "selected_statements_and_short_proofs_read",
+      "status": 200,
+      "final_url": "https://arxiv.org/html/2609.28592v1",
+      "bytes": 790465,
+      "sha256": "9226075c544160fa5565de41fd92ce31b4b8c5a5d66f4a423c9e0784216b4b1a",
+      "read_scope": "Abstract, selected introductions, Cor5.1 statement+shortproof, Lem5.2 selected statement/proof and Cor5.3 statement+shortproof; not a full audit of triangular theorem/dependencies."
+    }
+  ],
+  "correction": "Partner556 has a pure output, hence is covered by Tang Cor5.1/5.3. Preserve it as known-case control; abandon its proposed novelty gate.",
+  "local558": "Fixed N/Q local second-variation only; no global or all-partner consequence established. Audit pending."
+}

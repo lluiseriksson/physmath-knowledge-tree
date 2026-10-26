@@ -1,0 +1,98 @@
+WORKING PROOF558. Uniform local result for one channel pair, not a global theorem.
+No manuscript, grade, formal proof or novelty certification claimed.
+Public copy: the original script name in step6 refers to the private558
+artifact. Use local558-interval.py with argument verify here: it includes
+the559 correction binding the exact2cases, parameters and bounds to the margin.
+
+Channels: N(c,r,t)=(3/5,1/4,1/5), Q=(11/20,1/5,1/10), mapping a Bloch
+vector (x,y,z) to (cx,cy,rz+t). Exact CPTP/nonEB/fullrank/no-pure-output
+gates are recorded. Both lie outside the c^2<=r Davies sufficient condition.
+The older rank2 partner556 was already covered by Tang et al. and is retired.
+
+Claim to audit: for every pair of pure local inputs a,b and every Schmidt phase,
+the coefficient of eps^2 in
+G(eps)=S((N tensor Q)(psi(eps)))-hatS_N(rho_A(eps))-hatS_Q(rho_B(eps))
+is at least27/(200 ln2) bits, where
+psi(eps)=sqrt(1-eps^2)|ab>+eps exp(i theta)|a_perp b_perp>.
+Consequently there exists a uniform eps0>0 such that G(eps)>=0 whenever
+|eps|<=eps0 for the displayed pure two-qubit Schmidt perturbations. This
+does not assert a neighborhood of arbitrary mixed product states.
+No explicit eps0 and no global inequality is asserted.
+
+1. Exact one-use roofs. For either channel, A=c^2-r^2>0,
+q(z)=c^2(1-z^2)+(rz+t)^2=Qmax-A(z-z0)^2 with z0=rt/A andQmax<1.
+In nats the pure-output entropy e has
+e''=A(1-Qmax)/(1-q)+A Qmax*(atanh(s)-s)/s^3>=0, s=sqrt(q).
+Jensen and a same-latitude two-pure-state ensemble prove hatS(rho)=e(z_rho).
+This reconstructs classical axial convex-roof structure, not a novelty claim.
+For N,Q the q values are bounded strictly between0 and1 on[-1,1].
+
+2. Covariance reduction. Independent input Z rotations, carried to the output
+unitaries, make a,b real nonnegative. The phases in their perpendicular kets
+are absorbed into theta; no Schmidt phase is discarded. Set
+a=(sqrt((1+z)/2),sqrt((1-z)/2)), a_perp=(-a_1,a_0), and similarly b atw.
+Let A0=N(aa*),A1=N(a_perp a_perp*),L=N(a a_perp*) and B0,B1,M forQ.
+T0=A0 tensor B0, K=L tensor M, T2=A1 tensor B1-T0. Then
+T(eps)=T0+eps T1+eps^2 T2+O(eps^3), T1=e^-i theta K+e^i theta K*.
+The first entropy derivative is zero, using TrL=TrM=0 and
+lnT0=lnA0 tensorI+I tensorlnB0. Both marginal roofs first move at eps^2.
+
+3. Entropy Hessian. In an eigenbasis of T0, define
+F_ij=(lnlambda_i-ln lambda_j)/(lambda_i-lambda_j) for distinct eigenvalues;
+F_ij=1/lambda_i whenever lambda_i=lambda_j, including i!=j.
+The Frechet-log formula follows by differentiating its resolvent integral.
+The entropy coefficient in nats is
+-Tr(T2 lnT0)-1/2 sum_ij F_ij |(T1)_ij|^2.
+Subtracting the two marginal roof coefficients simplifies the two local terms to
+L_N(z)=2c_N^2 f(s_N), L_Q(w)=2c_Q^2 f(s_Q), f(s)=atanh(s)/s>=1.
+For one channel this follows because its marginal entropy coefficient is
+2[c^2(1-z^2)+r^2z^2+rtz]f(s), and the negative roof coefficient is
+-z q'(z)f(s). Their sum is2c^2f(s).
+
+4. Weighted Hilbert-Schmidt estimate. For positive numbers x,y,
+(lnx-lny)/(x-y)<=1/sqrt(xy), since the logarithmic mean is at least the
+geometric mean (sinh(u)/u>=1). Hence
+sum F_ij |(T1)_ij|^2 <= ||T0^(-1/4) T1 T0^(-1/4)||_HS^2.
+Define g_N(z)=||A0^(-1/4)L A0^(-1/4)||_HS^2, and g_Q similarly.
+Tensor factorization and the norm triangle inequality, retaining both phases,
+give the RHS<=4g_N(z)g_Q(w). Therefore
+kappa_nat>=2c_N^2+2c_Q^2-2g_N(z)g_Q(w).
+
+5. Explicit univariate formulas. Put d=(1-q)/4,
+h=[c^2(1+z^2)+r^2(1-z^2)]/2 and
+ell2=(1-z^2)[(c^2-r^2)z-rt]^2/(4q).
+Then g=h/sqrt(d)+ell2*(1/d-2/sqrt(d)).
+Indeed ||L||_HS^2=h and in an eigenbasis of A0 the diagonal entries of L are
+ell,-ell, with |ell|^2=ell2. Eigenvalues of A0 sum to1 and multiply to d.
+The diagonal and off-diagonal parts of the weighted norm give this formula.
+
+6. Rational interval certificate. interval_certificate.py covers [-1,1] by
+adjacent rational intervals for each fixed channel. On every cell it computes
+the exact range of the concave quadratic q (endpoints and its vertex), bounds
+h andell2 with rational arithmetic, and encloses sqrt(d) by binary rational
+bounds whose squared inequalities are checked. Since0<d<=1/4,
+1/d-2/sqrt(d)>=0. The natural interval upper bound is therefore valid.
+The certificate asserts g_N<=17/20 and g_Q<=7/10, for all z,w in[-1,1].
+All cells and their full-domain cover are rechecked by verify mode. Thus
+kappa_nat>=2[(3/5)^2+(11/20)^2]-2*(17/20)*(7/10)=27/200.
+The verifier proves these interval arithmetic claims, not by itself the
+analytical channel/entropy reductions in steps1-5.
+
+7. Uniform local neighborhood. The two Choi matrices are strictly positive.
+Subtracting their least eigenvalue times the Choi identity leaves a CP map;
+thus their tensor channel has a uniform strictly positive output floor on all
+states, via its depolarizing component.
+In fact the corner-block determinant/trace bounds give J_N >= (33/2000)I
+and J_Q >= (11/240)I; the other Choi diagonal entries exceed these bounds.
+Their product is121/160000, a uniform output floor for normalized joint inputs.
+The entropy and roofs are smooth in
+eps around0 uniformly on the compact product-orientation/phase domain (use
+angular coordinates at the poles). Since G(0)=G'(0)=0 and G''(0)>=27/100 nats,
+uniform continuity yields a single eps0>0 with G(eps)>=0 for |eps|<=eps0.
+This is a local two-channel conclusion only. It does not settle arbitrary
+entangled inputs, arbitrary finite partners, Holevo additivity or capacity.
+
+Numerical local_check.py independently compares the derived coefficient with
+symmetric finite differences, and checks a961pointgrid. Those checks are finite
+calibrations; the uniform bound relies on steps1-6, including the exact interval
+certificate. No numerical optimization or historical restart was used.
