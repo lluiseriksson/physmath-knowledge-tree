@@ -197,3 +197,74 @@ quantum-information neighborhood remains context only. Formal:none;
 literature:scoped antecedents; heuristic:unscored model-audited working proofs;
 speculative:novelty, impact and any larger resource/model extension.
 Original falsifiers and abandonment conditions remain in force.
+
+
+## Completed whole-manuscript review754: adverse significance result retained
+
+The prior pending status above is historical. The complete frozen18-page PDF
+received actual importance **4.5/10** and technical quality **8.5/10** in
+the [full original review754](../evidence/2026-10-26-assisted754/report.txt).
+The [verdict](../evidence/2026-10-26-assisted754/verdict.json) recommends
+accept with minor clarifications, with zero material mathematical objections
+and zero required theorem/proof repairs. This is an AI scientific recommendation,
+not editorial acceptance. The importance grade is lower than public v2's5.5;
+neither score is changed, averaged or transferred. The importance>7 goal is unmet.
+
+The [context and chronology](../evidence/2026-10-26-assisted754/context.json)
+records initial unscored analysis before consultation of authoring audit745.
+Requested Astra xhigh identity, effort, runtime isolation and independence are
+not verified. Shared filesystem and reused authoring context are disclosed;
+745 is assistance, not another independent vote. Root verified29 native
+payloads/31 mirrored files. The [original byte archive](../evidence/2026-10-26-assisted754/original754.zip)
+and [byte provenance](../evidence/2026-10-26-assisted754/byte-provenance.json)
+retain the reports, including adverse findings, without foreign primary PDFs.
+The review-record assembly marker is2026-10-26T19:39:58.199913+00:00;
+this is not evidence of the exact model-response completion second.
+
+Mechanism: the explicit measure-prepare simulation preserves block errors
+while controlling cost, including a reference-system bottleneck for free
+finite-per-block prior entanglement. Finite-family feedback can identify the
+law and select a per-law cost-feasible code. The reviewer finds established
+minimax/training antecedents, rather than a new general resource principle.
+The specific matched-reset/AWGN construction uses an implicitly capacity-matched
+gain. Its positive gap and useful finite-energy threshold are not computed.
+Hypotheses retained: joint signal/noise scaling, bounded gain, positive normalized
+noise floor, finite compound feedback family, per-law adaptive expected cost,
+and the stated reliability, schedule and cost restrictions for typical books.
+
+The three minor clarifications are explicit0<=K<infinity, describing W-plus
+as the channel used for a lower capacity bound (not lower noise), and Boche
+PDF Theorem1/HTML Theorem3.1 locators. They are documented externally to
+preserve the exact reviewed PDF bytes. One additional bibliographic slip in
+the review itself is corrected here without altering its original report:
+the [author-hosted December20,2005 draft](https://ece.uwaterloo.ca/~pmitran/compound3.pdf)
+is by Patrick Mitran, Natasha Devroye and Vahid Tarokh, as its titlepage shows;
+the report incorrectly names Loyka/Charalambous/Mitran. The manuscript's
+Mitran/Devroye/Tarokh attribution is correct. This is a bibliographic correction,
+not a new proof audit or numerical regrading.
+
+The linked author revision is now deposited as SUB-EFB9CFDBA859C294,
+revision3 of SUB-B1200159AD099909. The clean-scanned177945-byte server PDF
+was downloaded and matches SHA66176e7f21d2a4785b2355f07b3dcc49d4d4d3b8f93ebd36efe19d9a51537881.
+Exact CC BY4.0 release permission was recorded2026-10-26T20:25:55+00:00.
+Founder authorship/author-operator conflict was recorded, not concealed.
+Public Working-paper v3 release is being prepared; no acceptance or native gate
+completion is claimed in this checkpoint. Existing public versions remain intact.
+
+The [directed refresh759](../evidence/2026-10-26-assisted754/source-refresh759.json)
+inventories13 primary endpoints, all HTTP200, retaining dates, hashes and
+unchanged OpenAI/math and DeepMind commit pins. This is inventory metadata,
+not additional abstract, theorem or proof coverage and never an exhaustive sweep.
+The [retrieved small subgraph](../evidence/2026-10-26-assisted754/retrieved-subgraph.json)
+is context only. Formal:none; literature:scoped primary antecedents;
+heuristic:model-audited working argument; speculative:priority, larger impact
+and unrestricted resource/model extensions. No canonical graph confidence changes.
+
+Falsifiers/abandonment: reject a stronger universal Gaussian-protocol conclusion
+without a reduction from arbitrary protocols to the typical class; reject a
+feedback formula if its decoder learns a law unavailable in the declared model
+or violates per-law cost; abandon novelty claims already implied by cited
+training/minimax results. Next bounded target is to compute a certified
+positive learning gap and finite-energy threshold for explicit numerical
+parameters, with error and cost control. This target remains unproved here;
+do not split it into another paper or infer a larger importance grade.
