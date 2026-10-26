@@ -532,6 +532,38 @@
       ],
       "manuscript_dated_on": "2026-10-25",
       "release_commit_timestamp": "2026-10-26T21:18:03Z"
+    },
+    {
+      "id": "eriksson-optical-compound-v3",
+      "title": "Classical limits and learning gaps for compound bosonic fading channels, v3",
+      "url": "https://airr.science/papers/ARR-2026-2WNM69XY548JHVMC/versions/v3/",
+      "kind": "working_paper",
+      "published_on": "2026-10-26",
+      "observed_on": "2026-10-26",
+      "reading_status": "own_proof_previously_audited",
+      "evidence": "literature",
+      "claim": "Published exact18-page Working paper. Its explicit comparison, perturbation inequality and compactness argument supply the model used in the later explicit-gain component. Actual exact-PDF review754 assigns importance4.5 and technical8.5.",
+      "limits": "Unscored component781 is not part of the reviewed v3 PDF and supplies no new manuscript rating. Shared review context and author/operator conflict declared; not AIRR acceptance, independent human review or worldwide priority.",
+      "reuse": "Bibliographic metadata and original synthesis only.",
+      "anchors": [
+        "domain.quantum_information_theory"
+      ]
+    },
+    {
+      "id": "python-flint-acb09-contract",
+      "title": "python-flint0.9.0 complex-ball integration contract",
+      "url": "https://python-flint.readthedocs.io/en/latest/acb.html",
+      "kind": "software_documentation",
+      "observed_on": "2026-10-26",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "The acb.integral callback must certify holomorphy for analytic boxes; branch-cut functions require explicit analytic checks. Computations must use returned enclosures, not requested tolerances, as evidence.",
+      "limits": "Selected method documentation and installed0.9.0 API read; no library-kernel source audit or formal verification.",
+      "reuse": "Metadata and short original method synthesis, not copied documentation.",
+      "anchors": [
+        "domain.quantum_information_theory",
+        "domain.analysis"
+      ]
     }
   ],
   "candidates": [
@@ -756,6 +788,27 @@
       "next_finite_task": "Audit410 independently checks exact background and one nontrivial six-term encoded anchor, not the full family. If that first member survives, a genuine logical-parameter-uniform certificate or an exact falsifier is still required. No paper claiming all anchors follows from one case.",
       "paper_score": null,
       "review_packet": "Author400has21numeric probes, not exact PSD. Author406exact H spectra distinguish a two-codeword sum from the GHZ local-unitary orbit, and81Gram entries confirm an elementary known-code compression identity with BOTH supports restricted. Audit410is running for that background and one member only. The prior fixed-anchor paper has its separate exact-version9.0technical/5.0importance review; no score transfers to this hypothesis."
+    },
+    {
+      "id": "optical-explicit-learning-gap",
+      "title": "Explicit-gain optical learning separation and quantitative common-input gap",
+      "status": "under_audit",
+      "confidence": "speculative",
+      "paper_score": null,
+      "source_ids": [
+        "eriksson-optical-compound-v3",
+        "python-flint-acb09-contract"
+      ],
+      "node_ids": [
+        "domain.quantum_information_theory"
+      ],
+      "dictionary": "Binary signal/reset flag maps to a sufficient radial statistic; conditional entropy becomes an entire0F1 integral with tracked cost and tails.",
+      "preserved": "Exact mass and unit-cost moments, specified finite two-law family, prior-assistance/feedback and per-law-cost quantifiers of v3.",
+      "lost_or_unproved": "No numerical upper certificate for the common-input optimum or useful finite-energy threshold; no broader model or impact inference.",
+      "hypothesis_to_remove": "Implicit capacity-matched AWGN gain is replaced by explicit b^2=9757/50000 in the audited component; next remove the unquantified common-input gap.",
+      "falsifier": "Reject if analytic M, branch guards, tail bounds or rate-interval separation fail; never infer a Delta lower bound from a single-law gain.",
+      "next_finite_task": "Certify an upper bound for V strictly below C2 with all energy/decoder quantifiers retained; avoid a separate minor paper or inherited rating.",
+      "review_packet": "integrations/research-radar/evidence/2026-10-26-interval777/ROOT-VERIFIED781.json"
     }
   ],
   "source_refresh": {

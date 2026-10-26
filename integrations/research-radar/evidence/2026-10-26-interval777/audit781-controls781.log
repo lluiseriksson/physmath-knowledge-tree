@@ -1,0 +1,192 @@
+{
+  "scope": "Bounded falsification controls. Sampling and Gauss-Hermite comparisons are nonrigorous cross-checks, not the proof of enclosure.",
+  "exact_checks": {
+    "AWGN_rational_log_bracket": true,
+    "coarse_rate_is_178270525": true,
+    "coarse_rate_above_AWGN_upper": true,
+    "oracle_valid_broad": true,
+    "oracle_valid_negative_real": true,
+    "oracle_valid_near_upper_strip": true,
+    "oracle_valid_narrow_complex_box": true,
+    "oracle_boundary_imag_quarter": true,
+    "oracle_crosses_strip_boundary": true,
+    "oracle_outside_strip_nonanalytic_flag": true,
+    "positive_error_contains_zero": true,
+    "positive_error_contains_upper_endpoint": true,
+    "tau_below_stated_bound": true,
+    "ztail_below_stated_bound": true
+  },
+  "oracle_probes": [
+    {
+      "name": "valid_broad",
+      "z": "[1e+0 +/- 0.101] + [+/- 0.101]j",
+      "analytic_flag": true,
+      "result": "[+/- 1.91e+2] + [+/- 1.91e+2]j",
+      "expected_finite": true,
+      "finite": true,
+      "rough_encloses_returned_ball": true
+    },
+    {
+      "name": "valid_negative_real",
+      "z": "-1.000000000000000000000000 + [0.2400000000000000000000000 +/- 1e-30]j",
+      "analytic_flag": true,
+      "result": "[0.7952339583 +/- 2.51e-11] + [-0.0414844335 +/- 2.13e-11]j",
+      "expected_finite": true,
+      "finite": true,
+      "rough_encloses_returned_ball": true
+    },
+    {
+      "name": "valid_near_upper_strip",
+      "z": "2.000000000000000000000000 + [0.2490000000000000000000000 +/- 3e-30]j",
+      "analytic_flag": true,
+      "result": "[0.4129762092 +/- 3.49e-11] + [-0.0220543609 +/- 5.48e-11]j",
+      "expected_finite": true,
+      "finite": true,
+      "rough_encloses_returned_ball": true
+    },
+    {
+      "name": "valid_narrow_complex_box",
+      "z": "[3.000000000000000000000 +/- 1.01e-22] + [0.120000000000000000000 +/- 1.01e-22]j",
+      "analytic_flag": true,
+      "result": "[0.3343434526 +/- 6.98e-11] + [-0.0084526337 +/- 2.14e-11]j",
+      "expected_finite": true,
+      "finite": true,
+      "rough_encloses_returned_ball": true
+    },
+    {
+      "name": "boundary_imag_quarter",
+      "z": "2.000000000000000000000000 + 0.2500000000000000000000000j",
+      "analytic_flag": true,
+      "result": "nan",
+      "expected_finite": false,
+      "finite": false
+    },
+    {
+      "name": "crosses_strip_boundary",
+      "z": "[2e+0 +/- 0.101] + [0.2 +/- 0.0601]j",
+      "analytic_flag": true,
+      "result": "nan",
+      "expected_finite": false,
+      "finite": false
+    },
+    {
+      "name": "outside_strip_nonanalytic_flag",
+      "z": "2.000000000000000000000000 + [0.3000000000000000000000000 +/- 1e-30]j",
+      "analytic_flag": false,
+      "result": "nan",
+      "expected_finite": false,
+      "finite": false
+    }
+  ],
+  "cartesian_quadrature": [
+    {
+      "z": 0,
+      "radial_Arb_H_T": "[0.6393652345 +/- 4.36e-11]",
+      "H_infinite_minus_H_T_upper_for_z_le20": "6.1e-27",
+      "cartesian_values": [
+        {
+          "nodes_per_coordinate": 96,
+          "value": 0.6393652344716481
+        },
+        {
+          "nodes_per_coordinate": 192,
+          "value": 0.639365234471651
+        },
+        {
+          "nodes_per_coordinate": 256,
+          "value": 0.6393652344716522
+        }
+      ],
+      "last_minus_Arb_midpoint": -9.420242363944453e-13,
+      "last_two_difference": 1.2212453270876722e-15,
+      "last_float_lies_in_Arb_ball": true,
+      "status": "nonrigorous falsification cross-check; agreement is not an interval proof"
+    },
+    {
+      "z": 1,
+      "radial_Arb_H_T": "[0.5134227509 +/- 3.12e-11]",
+      "H_infinite_minus_H_T_upper_for_z_le20": "6.1e-27",
+      "cartesian_values": [
+        {
+          "nodes_per_coordinate": 96,
+          "value": 0.5134227509122478
+        },
+        {
+          "nodes_per_coordinate": 192,
+          "value": 0.5134227509122046
+        },
+        {
+          "nodes_per_coordinate": 256,
+          "value": 0.5134227509122046
+        }
+      ],
+      "last_minus_Arb_midpoint": -4.658495811327157e-13,
+      "last_two_difference": 0.0,
+      "last_float_lies_in_Arb_ball": true,
+      "status": "nonrigorous falsification cross-check; agreement is not an interval proof"
+    },
+    {
+      "z": 4,
+      "radial_Arb_H_T": "[0.2713769574 +/- 2.78e-11]",
+      "H_infinite_minus_H_T_upper_for_z_le20": "6.1e-27",
+      "cartesian_values": [
+        {
+          "nodes_per_coordinate": 96,
+          "value": 0.27137695714856114
+        },
+        {
+          "nodes_per_coordinate": 192,
+          "value": 0.2713769574061858
+        },
+        {
+          "nodes_per_coordinate": 256,
+          "value": 0.27137695740624407
+        }
+      ],
+      "last_minus_Arb_midpoint": -5.770384170489251e-13,
+      "last_two_difference": 5.828670879282072e-14,
+      "last_float_lies_in_Arb_ball": true,
+      "status": "nonrigorous falsification cross-check; agreement is not an interval proof"
+    },
+    {
+      "z": 20,
+      "radial_Arb_H_T": "[0.0120469099 +/- 8.54e-11]",
+      "H_infinite_minus_H_T_upper_for_z_le20": "6.1e-27",
+      "cartesian_values": [
+        {
+          "nodes_per_coordinate": 96,
+          "value": 0.01204674297730884
+        },
+        {
+          "nodes_per_coordinate": 192,
+          "value": 0.012046912181008139
+        },
+        {
+          "nodes_per_coordinate": 256,
+          "value": 0.012046909603700971
+        }
+      ],
+      "last_minus_Arb_midpoint": -2.6672541258987437e-10,
+      "last_two_difference": -2.577307168030729e-09,
+      "last_float_lies_in_Arb_ball": false,
+      "status": "nonrigorous falsification cross-check; agreement is not an interval proof"
+    }
+  ],
+  "rational_log_certificate": {
+    "terms": 16,
+    "transform_t": "9757/109757",
+    "lower_rational": "18723984090020001926774142715248324148813999001190598203361665581570018900750640546459160456789709946241581912897517105214497963320996404141085149398174425365660432896/105035532209153845237482766417837320962286145374046280457288746764969736546240835918966520959000193931933727078815775005049936042325855087404063836758179162101608271325",
+    "upper_rational": "1491852156356433673517656594980125485395680461079595258310747214386412512967593673814672020834230031874840574087780280292589011845727863104764018225149889033739977144558987503/8368811064296541773141676897107606384991110918822511441714938187245728729058284842679576523929299451720751638731725689302358704108354829944006190257544682919607740626090700000",
+    "remainder_upper_rational": "40368757215246263568811370373280581885732784636862832756654626393899579697186559895606739847432813003758700810238739550237732183287/32129880193907846655695102986298515366732243273927692261371631123362827221541549833982119035548253313520054877537553117680029086810814222539438937191379737919560300000",
+    "strict_decimal_lower": "0.178263333",
+    "strict_decimal_upper": "0.178263334"
+  },
+  "coarse_rate": "7130821/40000000",
+  "tail_balls": {
+    "tau": "[6.0695507467059229046053392785649901e-27 +/- 2.16e-62]",
+    "z_tail": "[1.4286828220942043845943238055891376e-9 +/- 3.43e-44]",
+    "positive_tau_ball": "[+/- 6.07e-27]"
+  },
+  "seconds": 0.21900000001187436,
+  "all_exact_checks_passed": true
+}

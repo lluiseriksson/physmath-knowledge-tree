@@ -1,0 +1,111 @@
+{
+  "input_native_archive_sha256": "35b58032822963106bfea8e5f00ef48201bca754dc260c6233aa365ab8409dc2",
+  "selected_native_audit_archive_sha256": "6971f83aa3291ca1945a7bb6affddf68cf4e2ae108aa3c4bfd261dd87b0f7fea",
+  "scope": "Original own proof/code/results and selected own audit records; full private manifests may list additional local controls. No foreign paper bodies copied.",
+  "files": [
+    {
+      "path": "ANALYTIC780.md",
+      "native_sha256": "cde691c7b48452fec6daf9945a7b8d7217d6e44cfa11712c9122094a256869ed",
+      "public_rendition_sha256": "cde691c7b48452fec6daf9945a7b8d7217d6e44cfa11712c9122094a256869ed"
+    },
+    {
+      "path": "interval778.py",
+      "native_sha256": "4fa44ba0a03659707abc68a9ec0391c7375967aec7b69d0ebae533d1e38235d2",
+      "public_rendition_sha256": "4fa44ba0a03659707abc68a9ec0391c7375967aec7b69d0ebae533d1e38235d2"
+    },
+    {
+      "path": "certificate779.py",
+      "native_sha256": "bf0255c5ec751622bf92a28e5e61cb8939f5c6ba859155c0d436a4f0b969cfbb",
+      "public_rendition_sha256": "bf0255c5ec751622bf92a28e5e61cb8939f5c6ba859155c0d436a4f0b969cfbb"
+    },
+    {
+      "path": "CERTIFICATE779.json",
+      "native_sha256": "9b7374901ac3ec6a2d4870d3dcaaab8e07c61a718ef9fe8be287e3f8d209362b",
+      "public_rendition_sha256": "9b7374901ac3ec6a2d4870d3dcaaab8e07c61a718ef9fe8be287e3f8d209362b"
+    },
+    {
+      "path": "MANIFEST780.json",
+      "native_sha256": "b72ce7ac5592b9dc6742e53670cda1846cf04b037767f514d7f6a78d5cd0a784",
+      "public_rendition_sha256": "b72ce7ac5592b9dc6742e53670cda1846cf04b037767f514d7f6a78d5cd0a784"
+    },
+    {
+      "path": "run779.log",
+      "native_sha256": "b1014367dbd88eec7de9ae3260e3dc04e5456dd083830edcb991800c76a36869",
+      "public_rendition_sha256": "0c7db376d504d3108003e6915701b8b64e03be65e7e573ab75768314c04c91d0"
+    },
+    {
+      "path": "SOURCES776.json",
+      "native_sha256": "3eca4e21796935418b86bc136526f320a38e475681c65879d1bc2c391796d7bd",
+      "public_rendition_sha256": "0db5fa2d348e972ba3e0c509ddd38db6cd52242166de649b2ae0aff60c53464f"
+    },
+    {
+      "path": "audit781-report.txt",
+      "native_sha256": "c49e0044d5eb75abb3514a5277ab9765e9752741563e1ac6ab79ea6d9c058716",
+      "public_rendition_sha256": "c49e0044d5eb75abb3514a5277ab9765e9752741563e1ac6ab79ea6d9c058716"
+    },
+    {
+      "path": "audit781-verdict.json",
+      "native_sha256": "ebf5733a9f02413d44141e986150acce02401c0c95211c09bd5a7e36f8bbc13c",
+      "public_rendition_sha256": "7bc3cfd7d6ad3c0aed1de896fd62f99669d39a52157e4496ea735256d7397941"
+    },
+    {
+      "path": "audit781-context.json",
+      "native_sha256": "3f35a9604df9193bae43cf8a5818e3c792a7a53b45d09152d63d2ddfbe4cb419",
+      "public_rendition_sha256": "227baa9ac9c28e118c1c5f3a62be2a3e52ab6226ead4b3379726c60ba478f1a5"
+    },
+    {
+      "path": "audit781-source_pins.json",
+      "native_sha256": "89f423ba1e79cf582701e129b8d6d1f62ab0b7bb9a54b22ef19aef71326883e4",
+      "public_rendition_sha256": "bcde7ca1ed1301d6af412687ac3b4c945b61d0fcc479200a24004f978e5c993b"
+    },
+    {
+      "path": "audit781-MANIFEST781.json",
+      "native_sha256": "f8c637f147dee4d1b6fa35602e1a196028916e41af01270810d1c950df441f11",
+      "public_rendition_sha256": "99a86bffbd2cc3d0ddcfb2d4e9f9851738059fb60988fd5ee300399926bff3c2"
+    },
+    {
+      "path": "audit781-CONTROLS781.json",
+      "native_sha256": "45a4b635c49a8950ad6c875035cef6bba4aeea054501d1406041ba04fe71e850",
+      "public_rendition_sha256": "b1604594b5326c7b6b1df0afb246a6293defab9a62e5129f0c2c43cae5f1d202"
+    },
+    {
+      "path": "audit781-CONTROL_FOLLOWUP781.json",
+      "native_sha256": "6c5052ea355102cfb331ac7a081ef5bdcd5dda94a7752dd2d0eb2d18fcb4ee95",
+      "public_rendition_sha256": "c2af7161384383f6292d39f9c34bd81b9e7a83de05e155f2b60cebcff7977de2"
+    },
+    {
+      "path": "audit781-controls781.py",
+      "native_sha256": "4cc8d322b5e5d63e367ff3d7ca1e9f9f43f7a16675fffad0abf3aa1036fc56b7",
+      "public_rendition_sha256": "4cc8d322b5e5d63e367ff3d7ca1e9f9f43f7a16675fffad0abf3aa1036fc56b7"
+    },
+    {
+      "path": "audit781-control_followup781.py",
+      "native_sha256": "508badbd09b742dd1f5fc5ffe785a99ac3d588871715c61fb229c87feb7760dc",
+      "public_rendition_sha256": "508badbd09b742dd1f5fc5ffe785a99ac3d588871715c61fb229c87feb7760dc"
+    },
+    {
+      "path": "audit781-controls781.log",
+      "native_sha256": "45a4b635c49a8950ad6c875035cef6bba4aeea054501d1406041ba04fe71e850",
+      "public_rendition_sha256": "b1604594b5326c7b6b1df0afb246a6293defab9a62e5129f0c2c43cae5f1d202"
+    },
+    {
+      "path": "audit781-control_followup781.log",
+      "native_sha256": "6c5052ea355102cfb331ac7a081ef5bdcd5dda94a7752dd2d0eb2d18fcb4ee95",
+      "public_rendition_sha256": "c2af7161384383f6292d39f9c34bd81b9e7a83de05e155f2b60cebcff7977de2"
+    },
+    {
+      "path": "audit781-replica-CERTIFICATE779.json",
+      "native_sha256": "e9a225f72ca501a795e8a88dc863409ed3a8b60e8367683ffd4fd5301202645d",
+      "public_rendition_sha256": "e9a225f72ca501a795e8a88dc863409ed3a8b60e8367683ffd4fd5301202645d"
+    },
+    {
+      "path": "audit781-replica-run781-exact.log",
+      "native_sha256": "c21f6c8afad887f2e862a894f0a24c9e126333fcde3e1e8fb9f8b6b9e7f0fb80",
+      "public_rendition_sha256": "38c875dbcd40110c6ab31dcee718e9738793ce9d386a9c75fda4ab236b50fd87"
+    }
+  ],
+  "grade_assigned": false,
+  "whole_manuscript_assessment": false,
+  "independence_attested": false,
+  "research_capsule_ready_claimed": false
+}

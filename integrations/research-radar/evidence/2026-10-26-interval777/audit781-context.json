@@ -1,0 +1,69 @@
+{
+  "audit_id": "interval781",
+  "created_at_utc": "2026-10-26T22:47:46.776775+00:00",
+  "work_path": "C:\\Trabajo\\airr\\2026-10-26_interval781-audit",
+  "archive_path": "D:\\Proyectos\\airr-investigacion\\2026-10-26_interval781-audit",
+  "requested_configuration": {
+    "model": "GPT-6 Astra",
+    "effort": "xhigh",
+    "effective_runtime_model_effort": "unverified"
+  },
+  "independence_verified": false,
+  "history_and_context": [
+    "Same agent history includes completed technical audit745 and its parent messages.",
+    "Shared filesystem remains available.",
+    "Parent supplied new component scope, hashes, v3 dependency and preservation/no-score constraints.",
+    "This audit sent progress findings back to the parent."
+  ],
+  "scope": "New component audit only; no regrading or alteration of754, no paper-level assessment, no publication.",
+  "reading_depth": {
+    "frozen_component": "All eleven payloads read; scientific/code/log material complete; sources refresh treated as metadata.",
+    "v3": "main.tex379-417 and929-1138 substantively read; source/PDF hashes checked; no full manuscript/PDF review.",
+    "external_sources": "Selected primary API/source passages documented in source_pins.json; no full library proof audit.",
+    "previous_reviews": "745 reused from actual agent history. No new reading or reassessment of754."
+  },
+  "executed_attempts": [
+    {
+      "id": "setup",
+      "script": "setup781.py",
+      "outcome": "11 C/D payloads and v3 source/PDF validated; isolated copies and runtime pins made."
+    },
+    {
+      "id": "exact_replica",
+      "script": "replica/certificate779.py",
+      "log": "replica/run781-exact.log",
+      "exit_code": 0,
+      "outcome": "128/160-bit same implementation replay; enclosures and all eight predicates reproduced."
+    },
+    {
+      "id": "controls",
+      "script": "controls781.py",
+      "log": "controls781.log",
+      "exit_code": 0,
+      "outcome": "Boundary/range and exact rational checks passed. Nonrigorous Cartesian z20/256-node mismatch retained."
+    },
+    {
+      "id": "documentation",
+      "script": "fetch_sources781.py",
+      "log": "fetch_sources781.log",
+      "exit_code": 0,
+      "outcome": "Pinned successful primary downloads and earlier web endpoint failures; no service/account mutation."
+    },
+    {
+      "id": "control_followup",
+      "script": "control_followup781.py",
+      "log": "control_followup781.log",
+      "exit_code": 0,
+      "outcome": "384-1024-node Cartesian convergence check; original controls JSON unchanged."
+    }
+  ],
+  "artifact_preservation": "All executed input/probe/control logs and new outputs retained. External source corpus retained only in the D: Temp cache, outside audit archive.",
+  "mutations": "Only dedicated audit files, isolated replica outputs and public documentation cache changed. Frozen inputs, v3, prior review, root records, GitHub and other chats were not modified; no publishing.",
+  "limits": [
+    "Trusted interval library/native binaries are pinned but not formally verified.",
+    "Cartesian quadrature is only a falsification diagnostic.",
+    "No numerical Delta or energy threshold.",
+    "No exhaustive novelty search.",
+    "No score assigned."
+  ]
+}
