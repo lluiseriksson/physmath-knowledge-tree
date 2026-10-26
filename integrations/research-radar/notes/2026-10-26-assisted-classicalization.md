@@ -1,5 +1,8 @@
 # Candidate: separate entanglement assistance from learning feedback
 
+Current status: technical audit745 is now terminal (see the chronological update below). Earlier pending language records the initial proposal snapshot. The combined manuscript753 is a different exact artifact and has no completed full assessment at this update.
+
+
 This is an unreviewed research proposal, not a new manuscript or a new
 assessment of the [published v2](https://airr.science/papers/ARR-2026-2WNM69XY548JHVMC/versions/v2/).
 Its previous grade does not transfer. One technical audit745 has been
@@ -131,3 +134,66 @@ DeepMind commit f153efa8fdc078131e214547781d631e2d257daf adds an already solved
 Erdős1114 entry; only its commit description was inspected, not its proof.
 OpenAI/math remains 1581d4cbdd69a0faf34b2089614fe2a814316a6a. No canonical
 graph, routing, confidence label, published PDF or actual grade is changed.
+
+
+## Terminal unscored audit745 and integration into the same paper
+
+The [full original technical report](../evidence/2026-10-26-assisted745/report.txt)
+and [structured verdict](../evidence/2026-10-26-assisted745/verdict.json)
+support A/B/D within the stated model and C with the explicit quantum-MI
+correction. The [actual context](../evidence/2026-10-26-assisted745/context.json)
+records parent input and the author clarification during this same audit.
+Requested Astra xhigh identity/effort, isolation and independence are not
+attested. No numerical score or whole-manuscript assessment was assigned.
+
+Root read the complete report/verdict and verified all 13 native payloads
+and 16 C/D files. The [provenance](../evidence/2026-10-26-assisted745/byte-provenance.json)
+binds the original byte streams, including report SHA256
+c424c6ac6cb9c97e3bd2403e8e9a60ea834f9513944a8d1f16b776af2d4415a1.
+JSON links use LF renditions for repository formatting; all four authoritative
+[original byte streams](../evidence/2026-10-26-assisted745/original745.zip)
+are preserved together and hash-bound in the provenance record.
+The original candidate's accessible-information wording remains preserved.
+O1 requires quantum mutual information; O2 requires relative-entropy
+definitions, receiver memory/transcript retention and finite information
+before subtraction; O3 keeps per-law expected cost and the order of limits;
+O4 leaves priority and standalone significance unresolved. These conditions
+are incorporated into the new source; the audit is not used to erase them.
+
+The complete original [primary-source comparison and reading depths](../evidence/2026-10-26-assisted745/source_pins.json)
+are preserved. The audit read selected Berta Section VI training arguments,
+Boche Section4.1/Remark2, Shrader SectionVII, constrained-EA antecedents,
+and Shi's thermal-channel formulas. These largely anticipate the qualitative
+mechanisms. Their exact single-Gaussian formulas already yield related
+simultaneous high-energy limits; the candidate's additional content is only
+the uniform mixture comparison and the specified two-law construction.
+The bounded comparison establishes neither priority nor standalone impact.
+Foreign primary PDFs/text caches are not copied into this repository.
+
+The extension is integrated as a substantive v3 of the SAME record, not a
+separate corollary paper. Title: Classical limits and learning gaps for
+compound bosonic fading channels. The new 18-page PDF has SHA256
+66176e7f21d2a4785b2355f07b3dcc49d4d4d3b8f93ebd36efe19d9a51537881;
+source SHA2563280bdee50662caf303cdc0182a94a68f92ba5428a718decad7287dbc637955b.
+New Lemma11, Theorem12 and Proposition13 state the reference bottleneck,
+explicit assisted comparisons and the feedback-versus-prior-entanglement
+separation, with a zero-photon pilot. Both compilation routes passed;
+all 18 final rendered pages were inspected, with the new proof pages also
+inspected at full size before the final cross-reference correction.
+The final source has no TeX layout or reference warnings.
+
+This PDF is frozen as input753 for ONE complete review754, requested Astra
+xhigh in a separate conversation with shared filesystem and no independence
+attestation. Its whole-manuscript assessment is pending. Neither audit745
+nor the actual grades of published v1/v2 are a score for this changed PDF.
+No new author case, publication, numerical gap or Lean result is claimed.
+The existing public versions, reports and adverse/scope records remain intact.
+
+The directed inventory749 refreshed all 13 endpoints successfully. OpenAI/math
+and DeepMind/formal-conjectures remain at1581d4cbdd69a0faf34b2089614fe2a814316a6a
+and f153efa8fdc078131e214547781d631e2d257daf respectively; this is metadata
+coverage, not an exhaustive paper/statement/proof sweep. The small retrieved
+quantum-information neighborhood remains context only. Formal:none;
+literature:scoped antecedents; heuristic:unscored model-audited working proofs;
+speculative:novelty, impact and any larger resource/model extension.
+Original falsifiers and abandonment conditions remain in force.

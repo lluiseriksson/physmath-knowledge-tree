@@ -1,0 +1,37 @@
+{
+  "original_files": [
+    {
+      "path": "report.txt",
+      "sha256": "c424c6ac6cb9c97e3bd2403e8e9a60ea834f9513944a8d1f16b776af2d4415a1",
+      "bytes": 27115
+    },
+    {
+      "path": "verdict.json",
+      "sha256": "da93a834ec5f613b1f01c19c2342949d67d458b805c686a6d6540c91b6f497f2",
+      "bytes": 4335
+    },
+    {
+      "path": "context.json",
+      "sha256": "d131ee8b31973190b71662c24cba88f1a7fbb2ae0953005a2b4e3de914f4117e",
+      "bytes": 2496
+    },
+    {
+      "path": "source_pins.json",
+      "sha256": "d97cfdce5e2079609aaf5118793b08f9b4b05d6487b5994bc301fe3a327910c2",
+      "bytes": 7490
+    }
+  ],
+  "source_audit_manifest_sha256": "a971733cd8a53cae9c1fb82c1713c14d875f2b8aa9ea140f2907d68a89e6181a",
+  "root_verified_payloads": 13,
+  "root_verified_C_D_files": 16,
+  "root_report_and_verdict_read": true,
+  "score_assigned": false,
+  "full_manuscript_review": false,
+  "foreign_fulltexts_copied": false,
+  "runtime_identity_effort_independence_attested": false,
+  "original_archive": {
+    "path": "original745.zip",
+    "sha256": "210d23c7bb93619397aaafcd85fc7903c09102f1437ee4c2179256dbd44fb96c"
+  },
+  "json_links": "UTF8 LF renditions; authoritative original byte streams preserved in original745.zip"
+}
