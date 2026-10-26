@@ -1,0 +1,118 @@
+Auditoría técnica acotada673 — cierre terminal, 26 de octubre de 2026
+
+Disposición: apoyo matemático a las dos afirmaciones delimitadas de 667 y 672. No se ha encontrado una objeción material ni un contraejemplo. El argumento prueba una mejora estricta de la información de Holevo de modulación coherente circular gaussiana contra el reset térmico emparejado, mantenido fijo durante la perturbación. En la familia t=rE, con k,r>0 y 0<lambda<1 fijos, prueba además una mejora inferiormente acotada por una constante positiva independiente de E suficientemente grande. No se certifican capacidad óptima, optimalidad entre todas las codificaciones gaussianas, aditividad, minimax ni prioridad. No se emite puntuación ni predicción de puntuación.
+
+1. Alcance, custodia y exposición
+
+Se leyeron íntegramente CANDIDATE667.md, CRITICAL672.md, los dos diagnósticos y sus scripts. Los seis payloads se verificaron por tamaño y SHA256 contra sus tres manifiestos antes de leer los argumentos. No se proporcionó un pin externo de estos manifiestos en el encargo673: sus hashes se calcularon localmente antes de comprobar los payloads. Se conservan copias exactas de los nueve archivos, incluidos los tres manifiestos, y registros de comparación.
+
+Los hashes de los manifiestos son:
+667: a1ec1b73c3e743a5234906afbfab4667c3be9ff38e225e48d88c3575086877de
+668: 5f81875a3bb173faf46de0b8ca8b74677611fe8add9a01dbdb6322cc09c6c2e5
+672: cea35a1c3f0126980d4ec5df398c2315c2e7e5e69f8c58db858134f6d0cf9948
+Los candidatos principales son:
+CANDIDATE667.md: 5d9b857571c018f8c0ca80775084ec65511a56db57b71288d3729b16d6439401
+CRITICAL672.md: 40005bb31bb2b7b42337cb1455188562f195a13d24177b2249ec6dd531cb016f
+
+Este auditor reutiliza el contexto y el filesystem de la misma familia de trabajo y participó en revisiones anteriores. La configuración solicitada es Astra con razonamiento xhigh; no se atestan identidad efectiva del runtime, aislamiento ni independencia ciega. Se conserva exposición histórica a comentarios evaluativos anteriores, incluida una mención histórica en571; no se reproducen sus valores ni se usan como evidencia. No se consultaron informes o notas671,634,643 ni estado de raíz u otros chats. No se reabrieron dictámenes anteriores como prueba de los argumentos actuales. Se reutilizó exclusivamente el PDF primario de Audenaert ya conservado en615, con nueva lectura selectiva y verificación de hash. Las demás fuentes seleccionadas se descargaron para este expediente. No hubo agentes adicionales, gasto, publicación ni edición de manuscritos o PDFs existentes.
+
+2. Convenciones y enunciado efectivamente comprobado
+
+Todas las entropías y divergencias de las fórmulas siguientes están en NATS. Es necesario explicitarlo en667: la cota D<=epsilon^2 v usa logaritmos naturales. Si se escribe en bits, el término cuadrático es epsilon^2 v/ln2 y debe ajustarse también la condición sobre epsilon.672 sí fija nats para su comparación crítica.
+
+Sea Phi el canal gaussiano covariante de ganancia k>0 y ruido de vacío finito t>=max(0,k-1). Con entrada coherente |z>, su salida es sigma_z=D(sqrt(k)z) gamma_t D*. Sea E>0, M=kE+t, tau=gamma_M, q=1-lambda y N_z=lambda sigma_z+q tau. La ley p0(z)=exp(-|z|^2/E)/(pi E) produce salida media tau. En cada comparación se deja tau fijo; recalcularlo al variar la modulación definiría otro problema.
+
+La fórmula de salida media puede comprobarse directamente mediante funciones características: el desplazamiento gaussiano suma kE al número térmico t. La energía de sigma_z es k|z|^2+t. De ahí que cualquier modulación con segundo momento exactamente E produzca salida media de N con energía lambda(kE+t)+qM=M. No hace falta una hipótesis sobre canales gaussianos óptimos para la mezcla N.
+
+3. Entropía de la rama y existencia del test
+
+Defínase H(z)=h(lambda)+lambda g(t)+qg(M)-S(N_z), la entropía condicional del indicador binario F dada la salida B. Todos los términos son finitos: cada componente tiene entropía constante y la entropía de su mezcla está entre el promedio y ese promedio más h(lambda). H es radial por covariancia de fase y tau invariante; 0<=H<=h(lambda).
+
+H(z)>0 para cada z finito. Tau tiene soporte completo porque M>0, por lo que las ramas no tienen soportes ortogonales. Más cuantitativamente, el Corolario2 de Audenaert1102.3040v2 da chi(ramas)<=h(lambda) T(sigma_z,tau), con T=||sigma_z-tau||_1/2<1. Por tanto H>=h(lambda)(1-T)>0. La extensión desde matrices a estos estados bosónicos se obtiene con compresión física de Fock más bandera de descarte: para z fijo las energías son finitas y uniformemente acotadas durante la aproximación, las entropías convergen y también la distancia de traza. No se aplica continuidad entrópica sin control de energía a estados arbitrarios.
+
+También H(z)->0 cuando |z|->infinito. La heterodina produce CN(sqrt(k)z,t+1) o CN(0,M+1). Poniendo d=sqrt(k)|z| y eligiendo la rama desplazada dentro de la bola de radio d/2 centrada en sqrt(k)z, el error promedio es a lo sumo 4[lambda(t+1)+q(M+1)]/d^2. Para d grande, Fano binario y procesamiento de datos dan H(F|B)<=H(F|resultado)<=h(error)->0. El mismo argumento clásico, sin el +1 heterodino, demuestra las propiedades del H_cl de672. Estos tests sirven para acotar una entropía; no se están presentando como decodificadores de capacidad.
+
+La existencia de h puede cerrarse sin un diagnóstico numérico. En u=|z|^2, la medida es dmu=E^{-1}exp(-u/E)du. Elíjanse dos intervalos acotados disjuntos con medias condicionales de u distintas. Sus indicadores b1,b2 tienen matriz de momentos A_ij=int u^(i-1)b_j dmu invertible. A todo test acotado de soporte compacto f se le restan coeficientes de b1,b2 que cancelan sus momentos de órdenes0 y1. Si H anulara todos esos tests corregidos, entonces int fH dmu=A int f dmu+B int uf dmu para todo f de soporte compacto, con A,B fijos. Así H=A+Bu casi en todas partes. Su acotación obliga B=0; su límite cero obliga A=0, contradiciendo su positividad. Existe, por tanto, un test corregido con correlación no nula. Cambiando su signo y normalizando se obtiene h radial, real, acotada y de soporte compacto, ||h||inf<=1, int p0h=int p0|z|^2h=0 y a=int p0hH>0. En particular v=int p0h^2>0. No es necesario que el test de tres anillos de los diagnósticos sea el test existencial de esta prueba.
+
+4. Identidad exacta y DPI de preparación continua
+
+Sea p_epsilon=p0(1+epsilon h), 0<epsilon<1. Es una probabilidad positiva con energía exactamente E. Su salida media omega_epsilon tiene energía M y omega_0=tau. La identidad de Gibbs, log gamma_M=-log(M+1)+n_hat log[M/(M+1)], da exactamente S(omega_epsilon)=g(M)-D(omega_epsilon||tau). Aquí el valor esperado de -log tau es finito por la energía y S(omega_epsilon) es finita por la cota térmica. No hay una sustracción indeterminada infinito-infinito.
+
+Por otra parte S(N_z)=lambda g(t)+qg(M)+h(lambda)-H(z). El término constante desaparece al integrar contra p0h. La diferencia de Holevo es, con el signo positivo indicado en667,
+  chi(p_epsilon,N)-chi(p0,N)=epsilon a-D(omega_epsilon||tau).
+No falta un factor lambda: H ya incorpora los pesos lambda,q de las ramas.
+
+La DPI continua se puede justificar sin fingir que una densidad diferencial sea una matriz diagonal de traza uno. Sean particiones finitas crecientes del plano que generan su sigma-álgebra y h_l=E_p0[h|particion_l]. Preparar en cada celda el promedio de N_z bajo p0 y ponderarlo por la masa de p_epsilon de la celda da omega_epsilon,l=int p0(1+epsilon h_l)N_z. La preparación finita y la DPI clásica dan D(omega_epsilon,l||tau)<=D(p_epsilon||p0). Como h_l->h en L1(p0), omega_epsilon,l->omega_epsilon en norma de traza. La semicontinuidad inferior de D cierra la desigualdad requerida. Las particiones son un argumento de prueba, no una cuantización operacional ofrecida por la candidata.
+
+Finalmente, (1+x)ln(1+x)<=x+x^2 para x>-1, al multiplicar ln(1+x)<=x por 1+x. Integrando x=epsilon h y usando el momento cero se obtiene D(p_epsilon||p0)<=epsilon^2 v. Así la ganancia es al menos epsilon a-epsilon^2v, estrictamente positiva para 0<epsilon<min(1,a/v). Esto cierra667 y demuestra la derivada direccional positiva en cero, sin derivar una entropía de un operador no acotado.
+
+5. Comparación crítica: normalización de P,Q y Jensen
+
+Fijados k,r>0 y lambda interior, sean s=k+r, t=rE y M=sE. Para E grande se satisface la condición física t>=max(0,k-1). Con z=sqrt(E)x, x distribuido según phi1, la densidad positiva P_E,x de Glauber-Sudarshan es la mezcla lambda phi_(rE)(beta-sqrt(kE)x)+q phi_(sE)(beta). Usamos rho=int P(beta)|beta><beta|d^2beta y I=int |beta><beta|d^2beta/pi. Entonces Q(beta)=<beta|rho|beta>/pi=P*phi1. Estos convenios fijan el factor pi: no aparece 2pi ni pi^2.
+
+Para E suficientemente grande, pi P_E,x<=lambda/(rE)+q/(sE)<=1, uniformemente en x. Si rho=sum_j p_j|j><j|, incluyendo una base completa del núcleo si fuese necesario, p_j es el promedio de pi P bajo la probabilidad |<j|beta>|^2d^2beta/pi. La concavidad de f(u)=-u ln u da
+  f(p_j)>=int f(pi P(beta)) |<j|beta>|^2 d^2beta/pi.
+Todos los integrandos son no negativos en este régimen. Tonelli y completitud producen S(rho)>=h(P)-ln pi. En sentido opuesto, pi Q(beta)=sum_j p_j|<beta|j>|^2 es una combinación convexa; Jensen e integración de la resolución de identidad dan h(Q)-ln pi>=S(rho). Los símbolos son mezclas de gaussianas no degeneradas; sus entropías diferenciales son finitas. Se ha comprobado directamente la forma bosónica infinita pertinente, no importado un teorema de espín finito sin adaptación.
+
+Son desigualdades de tipo Berezin-Lieb ya existentes. No se consideran lemas nuevos. La lectura primaria de Lieb-Solovej1208.3632v2, introducción y ecuación(4), confirma este mecanismo y su atribución; la demostración precedente especifica las medidas y el dominio exactos empleados aquí.
+
+6. Error uniforme en el desplazamiento y signos
+
+Sea Y~P_E,x y Z~phi1 independiente también del indicador F de la mezcla. Entonces
+  h(Y+Z)-h(Y)=I(Z;Y+Z)<=I(Z;Y+Z,F)
+  =lambda ln(1+1/(rE))+q ln(1+1/(sE))=:delta_E.
+La última igualdad usa I(Z;F)=0 y el canal gaussiano condicionado a F; su centro es determinista y no altera la información mutua. El límite superior es independiente de x, aunque x sea arbitrariamente grande. Por tanto
+  S(rho_E,x)=h(P_E,x)-ln pi+theta_E(x),  0<=theta_E(x)<=delta_E.
+
+La corrección térmica e(n)=g(n)-ln(en) satisface exactamente
+  e(n)=int_0^1 ln(1+u/n)du,
+por lo que 0<=e(n)<=ln(1+1/n). Sea A_E=lambda e(rE)+q e(sE), también entre0 y delta_E. Como h(P_E,x)=ln E+h(P_cl,x), al sustituir las entropías de las ramas se obtiene
+  H_q,E(sqrt(E)x)-H_cl(x)=A_E-theta_E(x).
+En consecuencia su valor absoluto es <=delta_E. No se pierde un factor2: se restan dos números del mismo intervalo [0,delta_E]. Tampoco cambia el signo de H en la identidad de Holevo. La candidata no presupone el signo de la diferencia; eso es suficiente. Adicionalmente, F->Y->|Y> por preparación clásica-cuántica muestra H_q>=H_cl, pero esta mejora de la cota no es necesaria para el resultado y no se usa para reemplazar el control uniforme.
+
+Se tiene delta_E<=C0/E con C0=lambda/r+q/s. Esta es uniformidad en x para cada k,r,lambda fijados. No prueba uniformidad cuando r->0, k->0 o lambda llega a un extremo. Tampoco exige uniformidad sobre esos parámetros.
+
+7. Transferencia del mismo h y ganancia no evanescente
+
+El H_cl radial positivo y con límite cero admite el test h(x) del apartado3, ahora para mu=Exp(1), con a=int phi1 hH_cl>0 y v=int phi1 h^2>0. El test físico es h_E(z)=h(z/sqrt(E)), no h(z). El Jacobiano complejo es d^2z=E d^2x. Así se preservan exactamente masa y energía:
+  int p0,E h_E=0,
+  int p0,E |z|^2h_E=E int phi1 |x|^2h=0,
+y v es independiente de E. La comparación uniforme da |a_E-a|<=delta_E int phi1|h|<=delta_E.
+
+Escójase epsilon=min(1/2,a/(4v)), que es fijo una vez fijados k,r,lambda y h. Para E>=2C0/a, además de los umbrales físico y de Jensen, a_E>=a/2. La identidad exacta de667 aplicada al canal de ese E produce
+  chi_E(p_epsilon,E)-chi_E(p0,E)>=epsilon a/2-epsilon^2v.
+Si a<=2v, el lado derecho es a^2/(16v). Si a>=2v y epsilon=1/2, es (a-v)/4>=v/4. En la igualdad a=2v ambas expresiones coinciden. Por tanto existe c(k,r,lambda,h)>0 independiente de E suficientemente grande. Las constantes y el sentido de las desigualdades de672 son correctos. La existencia analítica de a>0 basta: no depende de una cuadratura certificada ni de truncar Fock.
+
+8. Alcance operativo y precisiones necesarias
+
+El resultado es una comparación de Holevo de una sola utilización. No identifica el óptimo entre modulaciones coherentes, entre todas las codificaciones gaussianas o entre entradas cuánticas arbitrarias. Cada E define un canal con t=rE y reset tau_E=gamma_(sE), fijo dentro de esa comparación. No se permite que el canal cambie con el símbolo o con la longitud del código.
+
+Si se desea usarlo para excluir un punto de silla, el juego debe tener precisamente esta función de pago de Holevo, admitir tanto la pareja propuesta como la perturbación construida y mantener tau_E fijo frente a una variación unilateral del emisor. Bajo esas condiciones, la pareja no es una mejor respuesta y queda excluida como silla, incluso con una separación positiva asintótica. Esto no excluye por sí solo una silla de otro juego definido mediante capacidad regularizada, toda la familia gaussiana u otra restricción del adversario. Es una precisión de alcance de la frase de672, no una refutación de su mecanismo.
+
+No se está tomando un límite de longitud de código uniforme en E ni construyendo un código común para reset desconocido. Un eventual uso como tasa alcanzable requerirá su correspondiente paso de codificación a E fijo; dicho paso no forma parte de la afirmación limitada auditada. Tampoco se atribuye a la heterodina la ganancia de Holevo demostrada: aquí sirve únicamente para establecer el límite de H. El reset tiene entropía g(sE)=ln E+O(1), de modo que no se ha demostrado una mejora bajo un presupuesto entrópico fijo.
+
+9. Diagnósticos y falsación intentada
+
+Se inspeccionaron los scripts y resultados667/668, pero no se volvieron a ejecutar. El encargo no exige repetir cifras inalteradas. explore667.py es una cuadratura clásica; quantum668.py normaliza truncamientos de Fock y no acompaña sus entropías de un error de cola certificado. Sus ganancias decimales no se adoptan como prueba del sistema infinito ni de672. Además, ambos scripts contienen rutas de salida antiguas, y668 incluye copia al paqueteD original; ejecutarlos sin adaptación habría violado la custodia. Se conservaron como entradas inmutables.
+
+Los intentos analíticos de falsación comprobaron: signo de la contribución de H, posible factor lambda omitido, unidades logarítmicas, energía de la salida media, anulador de dos momentos, preparaciones continuas, límite de H con rama pura t=0, ambos sentidos de Jensen, completitud del marco coherente, pi y Jacobiano de escala, desplazamientos arbitrariamente grandes, suma de correcciones térmicas, factor2 en el error y las dos ramas de epsilon. No quedó una objeción material. No se realizaron nuevos barridos finitos que pretendan sustituir estas comprobaciones.
+
+10. Antecedentes contrastados y límites de la búsqueda
+
+Catalano, Fanizza, Mele, De Palma y Giovannetti, Convex combinations of bosonic pure-loss channels, arXiv:2604.26874v2, 30 septiembre2026, https://arxiv.org/abs/2604.26874v2. Lectura: abstract, introducción/modelo, secciónIV completa y apéndiceC seleccionado, especialmente(C2)-(C13), páginas físicas10-11,29-30. Allí la mezcla identidad/reset vacío y la optimización EA exhiben ventaja no gaussiana y noestacionariedad térmica salvo una curva. Es un antecedente sustantivo del fenómeno general. Lo leído no afirma la mejora de Holevo de modulación coherente con reset gamma_(kE+t), ni su separación uniforme para t=rE. El criterio optimizado y el reset son diferentes. No se auditó integralmente ese artículo ni se deduce prioridad de esta diferencia.
+
+Lieb y Solovej, Proof of an entropy conjecture for Bloch coherent spin states and its generalizations, arXiv:1208.3632v2, 22 septiembre2012, https://arxiv.org/abs/1208.3632v2. Lectura páginas físicas1-5, especialmente introducción y ecuación(4), con localización bibliográfica de Berezin1972 y Lieb1973. Los símbolos superior/inferior y la comparación mediante Jensen son antecedentes explícitos. No se leyó ni revalidó todo el teorema de optimización de Wehrl; no se necesita para672.
+
+Audenaert, Telescopic Relative Entropy, arXiv:1102.3040v2, 27 abril2011, https://arxiv.org/abs/1102.3040v2. Lectura selectiva de páginas9-11: Teorema4, Corolario2 y caracterización de ortogonalidad. Se usa la cota binaria, con paso de aproximación explicado arriba. El PDF contiene el conocido desacuerdo de signo entre Delta=rho-sigma y rho=sigma-t omega en la prueba de Teorema4: se repara tomando Delta=sigma-rho, manteniendo omega<=omega_+ y el resto de la integración. No invalida el resultado utilizado.
+
+Tu, Li y Dhillon, An information-theoretic framework for vision-aided communication over memoryless on-off fading channels, npj Wireless Technology2,80, publicado1 octubre2026, https://www.nature.com/articles/s44459-026-00074-7. Lectura selectiva del modelo real Y=SX+Z, sección Gaussian Noise Channel, ecuaciones(8)-(20), Teoremas1-2 y discusión. Es un antecedente de optimización variacional no gaussiana en canales clásicos on/off. No es el mismo modelo: utiliza igual varianza de ruido en ambas ramas. Su prueba de discreción remite a antecedentes y no se certifica aquí; tampoco se usa como dependencia de667/672. El KKT refuerza que el mecanismo variacional general no debe presentarse como nuevo.
+
+Se hicieron búsquedas dirigidas de on/off fading, mezclas gaussianas y shifted-depolarizing/reset. También se consultaron datos bibliográficos primarios de Lieb1973 y el pasaje sobre Berezin-Lieb en Aschieri-Ruba-Solovej, DOI10.1007/s00220-024-05178-1; no sus pruebas completas. Los resultados de Rayleigh y depolarización finita sólo se usaron como pistas de búsqueda, no como dependencia ni como equivalencia exacta. No se abrieron aquí las fuentes2610.22308v1,2608.01909v3 ni Zenodo23479869 mencionadas por667, y no se certifican sus afirmaciones. La búsqueda fue selectiva; no permite un certificado de ausencia de antecedente exacto ni una atribución de originalidad mundial.
+
+El aporte comprobado es una aplicación técnica coherente de variación con restricciones, identidad de Gibbs, DPI y comparación de símbolos. La consecuencia específica contra la pareja térmica crítica supera una observación numérica, pero este expediente no decide su prioridad o importancia editorial ni aconseja convertirla en un trabajo separado.
+
+11. Correcciones de presentación y conclusión terminal
+
+Se requieren tres precisiones al reutilizar la prueba: fijar nats en667 o convertir sus constantes; formular la uniformidad sólo para k,r,lambda fijos; y limitar la exclusión de silla al juego cuya función de pago y estrategias se hayan especificado. Las extensiones a capacidad, minimax, toda codificación gaussiana o códigos compuestos quedan fuera de lo probado. Los números668 deben seguir rotulados como truncados no certificados.
+
+Con esas precisiones,667 y672 quedan apoyados analíticamente dentro del alcance enunciado. No hay una obligación analítica pendiente que fuerce retirar su conclusión acotada. La custodia final consta en MANIFEST673.json y CD_VERIFICATION673.json; el segundo registra igualdad byte a byte de todas las copiasC/D, sin autocertificar su propio hash dentro de sí mismo. Se retiene C y no se modifica ningún original.

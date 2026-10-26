@@ -1,0 +1,66 @@
+{
+  "audit_id": "critical673",
+  "date": "2026-10-26",
+  "status": "terminal",
+  "disposition": "mathematical_support_with_scope_and_unit_clarifications",
+  "material_objections": [],
+  "actual_refutation_found": false,
+  "supported_claims": [
+    "667: circular Gaussian coherent modulation is not stationary for single-use Holevo information at fixed matched thermal reset, E>0, k>0, finite physical t and interior lambda",
+    "672: for fixed k,r>0 and interior lambda, t=rE admits an energy-preserving modulation perturbation with positive Holevo gain bounded below independently of sufficiently large E",
+    "672: absolute quantum/classical binary flag entropy difference is at most delta_E uniformly over all displacement labels"
+  ],
+  "proof_checks": {
+    "exact_gibbs_holevo_identity": "closed_in_nats",
+    "bounded_radial_two_moment_test": "closed_by_explicit_moment_corrector_argument",
+    "strict_flag_positivity_and_vanishing": "closed_including_t_zero_in_667",
+    "continuous_preparation_dpi": "closed_by_finite_partitions_and_lower_semicontinuity",
+    "positive_P_and_Q_normalization": "closed_pi_factors_and_complex_jacobian",
+    "berezin_jensen_infinite_frame": "closed_with_large_E_nonnegative_integrands",
+    "uniform_delta_E": "closed_without_extra_factor_two",
+    "fixed_h_transfer": "closed_for_h_E_z_equals_h_z_over_sqrt_E",
+    "epsilon_constants": "closed_in_both_branches"
+  },
+  "presentation_corrections": [
+    "Declare nats in667; in bits the quadratic divergence coefficient is v/ln2",
+    "Do not extend uniformity to k,r,lambda approaching excluded boundaries",
+    "State the payoff and admissible strategies before using the saddle-point exclusion"
+  ],
+  "not_established": [
+    "optimal channel capacity or optimal coherent modulation",
+    "comparison against every Gaussian or squeezed Gaussian ensemble",
+    "additivity, complete critical minimax law or least favorable reset",
+    "compound unknown-reset coding or a blocklength uniform in E",
+    "a numerical interval certificate for diagnostic668",
+    "global priority, exhaustive novelty or editorial importance"
+  ],
+  "diagnostics": {
+    "667": "script_and_results_read_not_rerun_not_used_as_proof",
+    "668": "script_and_results_read_not_rerun_finite_Fock_entropy_truncation_uncertified",
+    "new_numerical_sweep": false,
+    "reason_no_rerun": "unchanged numbers need not be repeated; analytical proof is sufficient; original scripts contain old output/copy destinations"
+  },
+  "literature_search": "targeted_primary_reading_only_no_priority_certificate",
+  "prior_verdicts_used_as_proof": false,
+  "disclosures": {
+    "shared_context_and_filesystem": true,
+    "prior_family_participation": true,
+    "historical_evaluative_exposure": "retained_and_disclosed_without_values_or_use_as_evidence",
+    "requested_configuration": "inherited Astra xhigh",
+    "effective_runtime_identity_attested": false,
+    "blind_or_isolated_independence_attested": false,
+    "additional_agents_or_models_used": false,
+    "score_requested_or_issued": false
+  },
+  "custody": {
+    "payload_hashes_checked_before_reading": 6,
+    "exact_input_files_including_manifests": 9,
+    "externally_supplied_manifest_pin": false,
+    "manifest_hashes_calculated_locally_before_payload_verification": true,
+    "work_directory": "C:\\Trabajo\\airr\\2026-10-26_critical673-audit",
+    "preserved_directory": "D:\\Proyectos\\airr-investigacion\\2026-10-26_critical673-audit",
+    "retain_C": true,
+    "originals_modified": false,
+    "final_verification_record": "CD_VERIFICATION673.json"
+  }
+}

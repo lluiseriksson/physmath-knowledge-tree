@@ -75,3 +75,41 @@ optimization for the reset mixture. Classical additive Gaussian-mixture
 noise has an extensive non-Gaussian-modulation literature; replacement
 noise is a different model, but that alone does not establish novelty.
 No worldwide originality, priority or AIRR score is asserted.
+
+## Terminal technical audit673
+
+The pending chronology above is retained. Audit673 subsequently supported
+the limited single-use Holevo nonstationarity argument and its nonvanishing
+critical-scale gain, finding no material objection. This is a model audit,
+not formal verification, an independent implementation or an importance
+assessment. Shared context and requested/unattested Astra xhigh remain
+declared. Full report and verdict are preserved as own research evidence:
+[report](../evidence/2026-10-26-critical673/report.txt),
+[verdict](../evidence/2026-10-26-critical673/verdict.json).
+Report SHA256:
+79697b53300b2d2a91226851171f6ac194cf011db69b75a93311ead894952a70.
+The coordinator verified27 archive payloads and29 identical C/D files;
+only the two original report/verdict files are copied here, not that whole
+archive or its third-party primary PDFs.
+
+Three scope precisions apply when reusing the argument: all constants are
+in nats; k,r,lambda are fixed away from their excluded boundaries; and the
+excluded saddle point concerns the specified single-use Holevo payoff and
+admissible unilateral perturbation. This does not establish optimal
+capacity, mixture additivity, an entropy-budget minimax curve, a universal
+blocklength or superiority over every squeezed Gaussian ensemble.
+The finite-Fock numbers668 remain uncertified and are not used as proof.
+
+The directed primary reading identified substantive antecedents:
+Catalano et al.2604.26874v2 already give non-Gaussian EA fading advantages;
+Tu,Li,Dhillon,doi10.1038/s44459-026-00074-7, study non-Gaussian variational
+optimization of classical on/off channels. The model and criterion differ,
+but neither the general variational mechanism nor the broad phenomenon of
+non-Gaussian advantage can be presented as new. Detailed reading depths
+and limitations are in the report. This is not a certificate that an exact
+antecedent is absent.
+
+The next hypothesis-reduction target is
+[the all-block classicalization bridge](2026-10-26-critical-classicalization.md).
+Its stronger claims are separate candidates, not consequences certified
+by673 and not yet a new rated paper.
