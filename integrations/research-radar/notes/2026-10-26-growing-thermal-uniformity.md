@@ -211,3 +211,155 @@ Finite next step: reproduce the certified witness at its stated
 parameters before adding a reset perturbation. Abandon a proposed
 extension if the base certificate cannot be reproduced or its
 positivity follows already from the cited results.
+
+## Actual publication and full assessment634 (later update)
+
+The pending status above is historical. The exact eleven-page PDF632
+was assessed in full: importance **4.5/10**, technical **6.0/10**,
+model recommendation accept, with no material or required minor change.
+Optional comments concern the program inventory and an earlier binary
+purification antecedent. This is a model recommendation, not editorial
+acceptance. The target of importance strictly above7 remains unmet.
+The original report SHA256 is
+01ab08165bfa89527c3359a7753551c5b26d47d638e48957b0ae8ec8075e9b78.
+The later public binding is the same assessment, not a second vote.
+Reused context, shared files and earlier assessment exposure are disclosed;
+independence, runtime identity and reasoning effort are not attested.
+
+The exact PDF, its report and review context are now public as
+[thermal v2](https://airr.science/papers/ARR-2026-71PQXGYGR887JAWR/versions/v2/#model-assessments),
+a Working paper published2026-10-26T08:00:03Z. The actual website PDF
+download matched the SHA256 above. Original v1 evidence was retained.
+Author deposit SUB-E05C31B641FA9C61 is a linked revision, not a new paper.
+No grade transfers from this PDF to the extensions below.
+
+## Resource removal641, terminal bounded audit644
+
+**Literature:** CMI data processing is applied on the reference R,
+not on the conditioning output B. For a reference measurement R->X
+preparing an ensemble and a product-reference reset, flag chain rules give
+
+    0 <= I(R:B)_mixed - I(X:B)_mixed
+       <= lambda * [I(R:B)_signal - I(X:B)_signal].
+
+The mechanism and infinite-dimensional CMI antecedents are standard:
+[Shirokov1506.06377v2](https://arxiv.org/abs/1506.06377v2), section6.1,
+Theorem2 and selected extension proof. Thermal-reference heterodyne
+prepares a locally implementable Gaussian coherent ensemble. The established
+signal classical benchmark is G=g(kE+t)-g(t), t=(1-k)n, from
+[Giovannetti et al.1312.6225v1](https://arxiv.org/abs/1312.6225v1).
+Its full Gaussian minimum-output theorem is imported, not reaudited.
+
+**Heuristic / analytically audited working result:** terminal audit644
+supports removing preshared entanglement for the complete entropy-budget
+curves when n->infinity and n=o(E). Under the divergent-bath premise,
+the sublinear condition is also necessary. For unknown fixed signal
+parameters, replace n by the prescribed envelope N; individual family
+members may still have n=0. This is an operational hypothesis reduction
+of the same thermal project, not a new general CMI theorem.
+
+The Gaussian same-input gap obeys
+
+    0 <= C_EA-G
+      <= log2(1+1/t)+(1/E+1/t)/(2*ln2),   E,t>0.
+
+Only the worst-pair gap must vanish in the unknown-signal sandwich.
+The reference measurement compares one input and one ensemble; it does
+not bound the optimized assisted/unassisted capacity gap for every reset.
+
+The translation dictionary maps the reference measurement to local mixed
+coherent preparations; the spectral test to a flag-entropy estimate; and
+finite types to actual photon-cost words. It preserves fixed memoryless
+parameters, expected physical block cost and a common collective decoder.
+It loses preshared entanglement. It does not turn a reset-dependent
+analytical test into a parameter-dependent operational decoder.
+
+The nontrivial operational closure is explicit: truncate a Gaussian
+amplitude disk, replace cells by conditional mixed preparations, cut output
+Fock space with overflow, then use exact-cost type superletters and the
+arbitrary-index finite cq compound theorem
+[Bjelakovic--Boche0710.3027v2](https://arxiv.org/abs/0710.3027v2),
+Theorem3.1 and selected direct proof5.10. The type loss is one d_l,
+not two. For necessity at each fixed finite E,N, reference-tail compression
+costs at most 2h(epsilon)+2epsilon*g(E); finite-reference continuity then
+gives uniform output-cut convergence even when N>>E. A bounded-G
+stratification supplies one common strict rate. Limits of code length
+precede all energy limits. No uniform blocklength or phase uncertainty
+claim is made.
+
+Audit644 found no material objection within this scope and assigned no
+score. It imports earlier615/627 scientific results rather than reauditing
+them. Its report SHA256 is
+ec115c2eba9fe8f0c2963a8384e4cbe1ea043c07863a5bfd17079f7a7e68866d;
+manifest SHA256 is
+e8c71ad5b8dbc2fc30408d7d9c794bfad323b2d24403f0bb338be85620b12064.
+All37 payloads were hash-checked and matched between working/preserved
+copies. Its540 finite-state and150 Gaussian checks reproduced; four
+symbolic identities were checked. These are diagnostics, not coding proofs.
+Participation and shared context are declared; isolation is not verified.
+
+Falsifiers: a common-code failure after fixed cuts; wrong-side CMI DPI;
+lost physical cost; assuming every unknown member has a diverging bath;
+or using a pointwise Holevo bound as a compound capacity theorem.
+Abandon any stronger statement for bounded non-EB baths without another
+converse. The sharp critical minimax curve remains open here.
+
+**Formal:** no new Lean result or graph confidence promotion. A minimal
+finite target is the four exact Gaussian radical/product identities;
+it would not formalize the compound coding theorem.
+
+## Bounded-bath candidate648: pending technical audit, not a theorem
+
+**Speculative:** a second route might remove n->infinity when the selected
+worst thermal signal is entanglement breaking: t>=k.
+The explicit heterodyne/prepare representation uses seed
+gamma_(t-k) and yields Phi(rho)<=I/(t-k+1). Near-capacity cq ensembles
+have conditional output entropy at most g(t)+a fixed constant. A
+fixed-reference window and the already-established telescopic inequality
+then suggest a uniform joint flag test for a vacuum/thermal reset witness.
+
+The missing operational bridge cannot be bare unconstrained additivity:
+unconstrained bosonic capacities are infinite. The relevant existing
+source is [Shirokov quant-ph/0408009v3](https://arxiv.org/abs/quant-ph/0408009v3),
+Proposition7(ii), the marginal chi-function inequality23 and its
+finite-to-infinite extension proof. These passages were read; the full
+paper and original finite-dimensional theorem were not reaudited.
+Source PDF SHA256:
+617b09802cba41942b673f3fbd43908fb65666ced35aed0609906fdd48aae7a7.
+Strong constrained chi subadditivity would allow energy sharing and
+entangled block inputs to be bounded by a one-letter witness converse.
+Only the worst-pair witness would need EB; other unknown family members
+could remain cold or noiseless.
+
+The proposal removes a concrete divergent-bath hypothesis if valid;
+it does not address every bounded non-EB bath. The exact working packet
+manifest SHA256 is
+af75f1a09b4c8b404b45af2fe555e0232c4ff164172c05650af836df544eebae.
+An unscored technical audit was requested after644 finished. It is pending,
+and no importance, correctness or publication is presumed.
+Checks of240 noncommuting cq states,30 thermal parameters,21 diagonal
+witnesses and the exact characteristic-function noise factor passed;
+they do not prove infinite-dimensional additivity or uniform asymptotics.
+Falsifiers include incorrect noise at t=k, dropping the posterior/original
+reference correction, nonuniformity in ensemble cardinality, wrong
+energy-sharing concavity, or a failure of constrained chi subadditivity
+in the actual witness channel. No new graph edge is inferred.
+
+## Directed freshness648 and distinct new abstract leads
+
+All ten primary metadata/index requests succeeded on26October2026.
+OpenAI/math and DeepMind/formal-conjectures retained the previously pinned
+commits. Anthropic, DeepMind, AIRR, ai.viXra and public owner-repository
+indexes were inventoried; this is not exhaustive reading or proof coverage.
+The follow-up literature search was directed, not a priority certificate.
+
+[Adesso--Lami--Giovannetti2610.22308v1](https://arxiv.org/abs/2610.22308v1)
+announces constrained classical capacities for all single-mode Gaussian
+channels and mean-energy rate/error trade-offs. Coverage: abstract read.
+It is an important antecedent lead, not evidence of an additivity theorem
+for our generally non-Gaussian reset mixture. Inspect its actual theorem
+and hypotheses before extending the present proof beyond the EB witness.
+[Barber--Pirandola2610.26783v1](https://arxiv.org/abs/2610.26783v1)
+announces PPT-assisted quantum capacities; coverage: abstract read.
+PPT-assisted quantum transmission is a different resource/task from our
+unassisted classical compound problem, so its formulas are not substituted.
