@@ -1,0 +1,51 @@
+{
+  "scope": "Root cross-check of saved sources/outputs/current external file; no independent full795 rerun and no runtime-load attestation",
+  "audit798_C_D_files_exact": 30,
+  "audit_report_original_sha256": "2a8ae3efe10518f5daebaab265936550fc90b624dcf09d220973696cd07580a4",
+  "workers": [
+    {
+      "worker": 0,
+      "prefix_exact": true,
+      "fit_exact": true,
+      "script_hash_matches_output": true,
+      "segments": 29
+    },
+    {
+      "worker": 1,
+      "prefix_exact": true,
+      "fit_exact": true,
+      "script_hash_matches_output": true,
+      "segments": 30
+    },
+    {
+      "worker": 2,
+      "prefix_exact": true,
+      "fit_exact": true,
+      "script_hash_matches_output": true,
+      "segments": 29
+    },
+    {
+      "worker": 3,
+      "prefix_exact": true,
+      "fit_exact": true,
+      "script_hash_matches_output": true,
+      "segments": 30
+    },
+    {
+      "worker": 4,
+      "prefix_exact": true,
+      "fit_exact": true,
+      "script_hash_matches_output": true,
+      "segments": 160
+    }
+  ],
+  "current_external_engine_matches_frozen": true,
+  "engine_sha256": "4fa44ba0a03659707abc68a9ec0391c7375967aec7b69d0ebae533d1e38235d2",
+  "objections_retained": [
+    "O1 reviewer excluded full320 outputs",
+    "O2 original imports not manifest-bound at load",
+    "O3 root inspected saved worker bindings, not reviewer or runtime attestation; hardcoded a=1 applies only to exact chosen row",
+    "O4 trusted Arb and reasoning, no Lean or independence"
+  ],
+  "next_finite_task": "A portable manifest-bound replay with hashes captured at import/load and finite selected checks before any revised manuscript claim; do not duplicate a score review."
+}

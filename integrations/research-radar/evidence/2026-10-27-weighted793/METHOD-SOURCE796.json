@@ -1,0 +1,24 @@
+{
+  "rows": [
+    {
+      "url": "https://api.github.com/repos/chebfun/ATAP/commits/development",
+      "utc": "2026-10-27T00:28:16.607650+00:00",
+      "http": 200,
+      "sha256": "ad25b3fee452c1c859bd22306e49f70b36f5052ac8a7e8ab8201da79eb52d030",
+      "bytes": 4193,
+      "foreign_body_redistributed": false,
+      "commit": "96e888be8c3f8bde8488f42eb3ed96321a2416d1"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/chebfun/ATAP/development/chap8.m",
+      "utc": "2026-10-27T00:28:16.950564+00:00",
+      "http": 200,
+      "sha256": "42e5252f53f52296af5492ff42286ec1c0690fb0f7331f35cc4d1e5887c7166a",
+      "bytes": 21037,
+      "foreign_body_redistributed": false,
+      "immutable_url": "https://raw.githubusercontent.com/chebfun/ATAP/96e888be8c3f8bde8488f42eb3ed96321a2416d1/chap8.m",
+      "pinned_exact": true
+    }
+  ],
+  "scope": "Selected Chebyshev coefficient bound and interpolation aliasing; no full book audit"
+}

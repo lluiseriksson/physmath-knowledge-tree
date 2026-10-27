@@ -1,0 +1,34 @@
+{
+  "utc": "2026-10-27T00:43:53.218226+00:00",
+  "requested_configuration": {
+    "model": "GPT-6 Astra",
+    "reasoning_effort": "xhigh"
+  },
+  "runtime_model_verified": false,
+  "effective_reasoning_effort_verified": false,
+  "independence_verified": false,
+  "observable_agent_role": "Subagent /root/astra_assisted745_audit, same continuing conversation and filesystem",
+  "history_reused": [
+    "745 bounded technical audit",
+    "781 component audit including original discrepant GH control and retained refinements",
+    "parent messages and summaries"
+  ],
+  "history_reuse_limits": "No claim of fresh isolation, blinded review or independence. Prior review reports and scores were not freshly regraded.",
+  "parent_current_task": "Audit only frozen weighted798 analytic contract; no full795 rerun; no score; no manuscript/PDF review; preserve conditionality and provenance.",
+  "parent_closing_message": "Parent reports completion of320 segments and tail and conditional797 arithmetic; explicitly keeps those outputs outside frozen798. This received report was not independently inspected or used to upgrade798 scope.",
+  "source_input_C": "C:\\Trabajo\\airr\\2026-10-27_weighted798-input",
+  "source_input_D": "D:\\Proyectos\\airr-investigacion\\2026-10-27_weighted798-input",
+  "source_manifest_sha256": "c331f7a86415b1456ca7b4743df957a9f50cf797ead6b6043478a49e56fa500f",
+  "work": "C:\\Trabajo\\airr\\2026-10-27_weighted798-audit",
+  "archive": "D:\\Proyectos\\airr-investigacion\\2026-10-27_weighted798-audit",
+  "external_public_source_cache": "D:\\Temp\\airr\\2026-10-27_weighted798-sources",
+  "mutations": "Only new audit directories and external public-source cache. No root state, manuscripts, frozen inputs, chats, GitHub, AIRR, browser sessions or publication changed.",
+  "C_mirror_retained": "Requested C/D mirrors; nothing delivered exists only on C.",
+  "configuration_vs_measurement": "Requested model label is not runtime attestation. Python/Arb runtime versions are actual numerical tool observations.",
+  "numeric_runtime": {
+    "python": "3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python_flint": "0.9.0",
+    "precision_bits": 192
+  }
+}

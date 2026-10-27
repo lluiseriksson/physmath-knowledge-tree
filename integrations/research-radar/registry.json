@@ -598,6 +598,23 @@
         "domain.analysis",
         "domain.quantum_information_theory"
       ]
+    },
+    {
+      "id": "trefethen-chebyshev-coefficient-bound",
+      "title": "Trefethen ATAP chapter8: analytic coefficient and interpolation bounds",
+      "url": "https://github.com/chebfun/ATAP/blob/96e888be8c3f8bde8488f42eb3ed96321a2416d1/chap8.m",
+      "kind": "repository",
+      "published_on": null,
+      "observed_on": "2026-10-27",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Selected Theorem8.1 and its proof bound analytic Chebyshev coefficients; Theorem8.2 states geometric interpolation convergence. Our roots-grid aliasing convention is separately derived.",
+      "limits": "No full book audit or upstream code replay. An analytic interpolation error bound is distinct from a small finite-grid residual. Own weighted observable contract still requires its declared checks and audit.",
+      "reuse": "Bibliographic metadata, response hashes and original synthesis only; no chapter body redistributed.",
+      "anchors": [
+        "domain.analysis",
+        "domain.quantum_information_theory"
+      ]
     }
   ],
   "candidates": [
@@ -833,17 +850,18 @@
         "eriksson-optical-compound-v3",
         "python-flint-acb09-contract",
         "nist-bessel-integral",
-        "sason-verdu-pinsker"
+        "sason-verdu-pinsker",
+        "trefethen-chebyshev-coefficient-bound"
       ],
       "node_ids": [
         "domain.quantum_information_theory"
       ],
       "dictionary": "Binary signal/reset flag maps to a sufficient radial statistic; conditional entropy becomes an entire0F1 integral with tracked cost and tails.",
       "preserved": "Exact mass and unit-cost moments, specified finite two-law family, prior-assistance/feedback and per-law-cost quantifiers of v3.",
-      "lost_or_unproved": "No numerical upper certificate for the common-input optimum or useful finite-energy threshold; no broader model or impact inference. Two specific uniform observable fits fail at rational tail points in Arb192; no global approximation or numerical Delta bound.",
+      "lost_or_unproved": "Root global ball outputs support a very loose conditional Delta>=6e-52. Bounded analytic audit798 found no fatal defect but excluded full320 outputs; O1-O4, including external imports not bound at load, remain. No reviewed revised PDF, practical threshold, formal proof, score or impact claim.",
       "hypothesis_to_remove": "Implicit capacity-matched AWGN gain is replaced by explicit b^2=9757/50000 in the audited component; next remove the unquantified common-input gap.",
       "falsifier": "Reject if analytic M, branch guards, tail bounds or rate-interval separation fail; never infer a Delta lower bound from a single-law gain.",
-      "next_finite_task": "Derive a cost-weighted or one-sided global residual envelope before fitting; preserve moment quantifiers and reject any pointwise counterexample. Two rejected trials are retained in separator787; no new paper or rating.",
+      "next_finite_task": "Make the saved campaign portable with manifest-bound imports and runtime hashes, retaining audit798 scope/objections. Consider only a same-paper exact-PDF revision and fresh assessment; do not transfer scores or advertise E=1e53 as practical.",
       "review_packet": "integrations/research-radar/evidence/2026-10-26-interval777/ROOT-VERIFIED781.json"
     }
   ],
@@ -868,6 +886,11 @@
       "evidence": "integrations/research-radar/evidence/2026-10-27-separator787/SOURCES787.json",
       "scope": "Directed primary inventory; no exhaustive/proof coverage claim",
       "new_method_sources": "integrations/research-radar/evidence/2026-10-27-separator787/METHOD-SOURCES790.json"
+    },
+    "followup793": {
+      "evidence": "integrations/research-radar/evidence/2026-10-27-weighted793/SOURCES793.json",
+      "scope": "Directed13-endpoint primary refresh; OpenAI and DeepMind pins unchanged, no new full frontier proof audit.",
+      "method_source": "integrations/research-radar/evidence/2026-10-27-weighted793/METHOD-SOURCE796.json"
     }
   }
 }
