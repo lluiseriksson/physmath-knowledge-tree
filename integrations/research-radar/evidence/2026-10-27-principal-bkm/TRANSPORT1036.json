@@ -1,0 +1,119 @@
+{
+  "scope": "Original manifests refer to full archived dossiers; public selected subset bound here and byMANIFEST1036",
+  "files": [
+    {
+      "path": "principal1033/PROOF1033.txt",
+      "original_sha256": "3bb2dd065b2463cda9a3afa64c23511e46ac184fc6409e2c8b75dca603aa9b11",
+      "repository_sha256": "3bb2dd065b2463cda9a3afa64c23511e46ac184fc6409e2c8b75dca603aa9b11",
+      "operation": "LF transport only"
+    },
+    {
+      "path": "principal1033/CHECK1033.json",
+      "original_sha256": "782adac89457cee07ab42de2ca2db1506e0016e35511b61a9c07cb2ac06da0a2",
+      "repository_sha256": "782adac89457cee07ab42de2ca2db1506e0016e35511b61a9c07cb2ac06da0a2",
+      "operation": "LF transport only"
+    },
+    {
+      "path": "principal1033/check1033.py",
+      "original_sha256": "afd93099b0fad11108d4648fc35dca2e7944cb997f2c752d5369d22180f35074",
+      "repository_sha256": "afd93099b0fad11108d4648fc35dca2e7944cb997f2c752d5369d22180f35074",
+      "operation": "LF transport only"
+    },
+    {
+      "path": "principal1033/RUN1033.log",
+      "original_sha256": "19c3e6a298cf059d17b82f0257b3f9b02bef3f235750067ced51e7dcbd1df014",
+      "repository_sha256": "c67219c526c822908141056bd11467da4b229e368b3ea6e617514504fd4076e9",
+      "operation": "LF transport only"
+    },
+    {
+      "path": "principal1033/READINGS1033.json",
+      "original_sha256": "10385a373ea0fd7f774d4da2fc5199f37c525f573489966b7b9c852289f8c0b7",
+      "repository_sha256": "0a0fc2883bb37d9b3663c48acef23d408bc6df0eb0edd347a51e43d91bb4fbd2",
+      "operation": "LF transport only"
+    },
+    {
+      "path": "principal1033/PRIMARY1033.json",
+      "original_sha256": "c98bd2e3e874f7ef155ef72706ea2e95dd73a94b1fed05ad45938468e93cee61",
+      "repository_sha256": "c98bd2e3e874f7ef155ef72706ea2e95dd73a94b1fed05ad45938468e93cee61",
+      "operation": "LF transport only"
+    },
+    {
+      "path": "principal1033/INCIDENTS1033.json",
+      "original_sha256": "e05e1a89bde5fd8166df587e649f47c14f259caa027dd337455b8aa5db364e6f",
+      "repository_sha256": "e05e1a89bde5fd8166df587e649f47c14f259caa027dd337455b8aa5db364e6f",
+      "operation": "LF transport only"
+    },
+    {
+      "path": "principal1033/PROVENANCE1033.json",
+      "original_sha256": "d21e09e5dc6f67e7180e1ab4f7394f23be605e63ce67a45713d21168f1c70def",
+      "repository_sha256": "d21e09e5dc6f67e7180e1ab4f7394f23be605e63ce67a45713d21168f1c70def",
+      "operation": "LF transport only"
+    },
+    {
+      "path": "principal1033/MANIFEST1033.json",
+      "original_sha256": "4ddb0586a74f1178414546ae773aaa2b6cdff42f2a973b66a74c18f36f78f597",
+      "repository_sha256": "4ddb0586a74f1178414546ae773aaa2b6cdff42f2a973b66a74c18f36f78f597",
+      "operation": "LF transport only"
+    },
+    {
+      "path": "bkm1035/PROOF1035.txt",
+      "original_sha256": "364712196d47aeab46b9beae9c0bd5f79258ac951c428b68e61519c77cdf3a0f",
+      "repository_sha256": "364712196d47aeab46b9beae9c0bd5f79258ac951c428b68e61519c77cdf3a0f",
+      "operation": "LF transport only"
+    },
+    {
+      "path": "bkm1035/CHECK1035.json",
+      "original_sha256": "00516a9791dc8d52a064e3c797d68b69e0272f1dcd4805137e34c04513293147",
+      "repository_sha256": "00516a9791dc8d52a064e3c797d68b69e0272f1dcd4805137e34c04513293147",
+      "operation": "LF transport only"
+    },
+    {
+      "path": "bkm1035/check1035.py",
+      "original_sha256": "d2344aea48cc8c9198c633dcbec6fb90a00e57da51c7b99917a2f3ece66b168a",
+      "repository_sha256": "d2344aea48cc8c9198c633dcbec6fb90a00e57da51c7b99917a2f3ece66b168a",
+      "operation": "LF transport only"
+    },
+    {
+      "path": "bkm1035/INTERVAL1035.json",
+      "original_sha256": "bc60fbefd24a5f97fc0ca1fac19ed7391e030fad976486761eae794b7047ce3b",
+      "repository_sha256": "bc60fbefd24a5f97fc0ca1fac19ed7391e030fad976486761eae794b7047ce3b",
+      "operation": "LF transport only"
+    },
+    {
+      "path": "bkm1035/interval1035.py",
+      "original_sha256": "f21854e7bd95bb5461ee67cf90defdcaa274dfe7b67243b0aeeeefdbe8fc3243",
+      "repository_sha256": "f21854e7bd95bb5461ee67cf90defdcaa274dfe7b67243b0aeeeefdbe8fc3243",
+      "operation": "LF transport only"
+    },
+    {
+      "path": "bkm1035/RUN1035.log",
+      "original_sha256": "3de928773065f56005382e732310b53527877f1cfc9f3abcdb6b7fe959795d60",
+      "repository_sha256": "bbb7a09d30845b45a5293f967d3f2cd57c23e8de09033212afca90ef232c083f",
+      "operation": "LF transport only"
+    },
+    {
+      "path": "bkm1035/INTERVAL-RUN1035.log",
+      "original_sha256": "44046703483a122c145c8e1ba72d512384394f1000eaa8cb0c689fff1aacc259",
+      "repository_sha256": "ac6fb21047ea1df3fe021a226c265b59bc39329b0a1c2a0bff8341c9ff6b132c",
+      "operation": "LF transport only"
+    },
+    {
+      "path": "bkm1035/READINGS1035.json",
+      "original_sha256": "03e77ab2abf4a25d9449ba45a8b4d3ae809d9908eb9e4f5a63500111621b8949",
+      "repository_sha256": "03e77ab2abf4a25d9449ba45a8b4d3ae809d9908eb9e4f5a63500111621b8949",
+      "operation": "LF transport only"
+    },
+    {
+      "path": "bkm1035/PROVENANCE1035.json",
+      "original_sha256": "272f54079467e28c6ddcd62c608796487e06c542ab3d424dd7e1116eabc526c0",
+      "repository_sha256": "272f54079467e28c6ddcd62c608796487e06c542ab3d424dd7e1116eabc526c0",
+      "operation": "LF transport only"
+    },
+    {
+      "path": "bkm1035/MANIFEST1035.json",
+      "original_sha256": "5b1c05e53dbbef4818ffecacb8edbc4b57322d1d5772e230477b2c796d90d719",
+      "repository_sha256": "5b1c05e53dbbef4818ffecacb8edbc4b57322d1d5772e230477b2c796d90d719",
+      "operation": "LF transport only"
+    }
+  ]
+}
