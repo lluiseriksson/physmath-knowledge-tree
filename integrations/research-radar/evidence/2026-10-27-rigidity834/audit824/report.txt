@@ -1,0 +1,90 @@
+AUDITORIA824 — RIGIDEZ DE IGUALDAD MIDPOINT UNIMODULAR
+2026-10-27. Auditoria nueva de componente, acotada y sin nota.
+
+DICTAMEN
+
+No encontre un defecto fatal en A, B o D bajo las hipotesis expresas de823. La prueba de A puede completarse rigurosamente con el argumento de conos normales que se detalla abajo, incluidos poliedros de dimension menor que la ambiental. B usa correctamente el resultado coeficiente a coeficiente de Leake–Mohammadi Yekta y la factorizacion unica. C es correcto SI conserva TODAS las hipotesis de B, especialmente la caja entera. Su frase 'rational/integer input' es ambigua y debe corregirse: la lectura que permite cotas racionales no enteras es FALSA, con un contraejemplo exacto conservado en esta auditoria.
+
+D excluye la realizacion ponderada del arreglo820 en la clase precisa de fibras unimodulares de una misma caja, con pesos positivos comunes en las coordenadas originales y RHS afines. No excluye representaciones fuera de esa clase, arreglos perturbados ni resuelve Question1.7. El addendum827 se examino por separado: su identidad multiplicativa y su reduccion al resultado estandar de Tardos son correctas, con la misma restriccion entera para decidir igualdad de enumeradores mediante traslaciones de fibras reales.
+
+ENTRADA Y CONTEXTO
+
+Se verificaron los cuatro payloads y MANIFEST823 en C y D. SHA256 del manifiesto:06c8a881cf9fb4258d592ceb6107b71ac30921589c770b0755a54184ae2bd4c0. Se leyeron completos RIGIDITY823.md, controls823.py, CONTROLS823.json y PRIMARY821.json. El input sigue intacto. ADDENDUM827.md se recibio durante la auditoria y se conserva en addendum/, separado del input, SHA256613a6c8cd718e34c51eb84babd77f42a63470dac0bddd97a65f69969357ce4a9.
+
+El mismo subagente reutiliza su historial745/781/798/822, mensajes del padre y filesystem compartido. Configuracion solicitada: GPT-6 Astra xhigh. Identidad efectiva del modelo, esfuerzo e independencia no estan verificados. No se afirma aislamiento, cegamiento o revision humana. No se asigna puntuacion, no se revisa un nuevo manuscrito y no se altera una nota anterior. No se leen otros informes nuevos ni se modifica estado raiz, fuentes congeladas, chats, AIRR o GitHub.
+
+A. ENUMERADOR SIN FACTORES REPETIDOS — SOPORTE
+
+El objeto correcto es E_P=sum_(a in P intersect Z^n) z^a: TODOS los puntos enteros del politopo, todos con coeficiente1, sobre C y en el anillo Laurent. 'Squarefree' se refiere a factores irreducibles no repetidos; no significa que cada variable tenga grado a lo sumo1 ni que E_P sea irreducible. Las unidades son c z^a, c distinto de0. Un politopo puntual tiene enumerador monomial y no causa una excepcion.
+
+Supongamos E_P=G^2 H con G no unidad. Entonces Q=Newt(G) tiene dimension al menos1, y el producto de polinomios de Newton da P=2Q+R, R=Newt(H). Este paso no presupone coeficientes positivos de G,H ni ausencia de cancelaciones termino a termino: el teorema de Newton y las formas iniciales de productos operan sobre un dominio.
+
+El paso geometrico cuestionado es valido. Para una arista e de Q, su cono normal N_Q(e) tiene dimension n-1, incluso si Q no tiene dimension completa. Su interior relativo es abierto no vacio en el hiperplano ortogonal a la direccion de e. Para toda cara F de R con dimension>=2, dim N_R(F)=n-dim F<=n-2. Para una arista f de R no paralela a e, N_Q(e) intersect N_R(f) esta dentro de la interseccion de dos hiperplanos distintos, de dimension a lo sumo n-2. Hay finitamente muchas caras. Su union no puede cubrir el interior relativo de N_Q(e). Elegir u fuera de esa union garantiza Q^u=e y que R^u sea un vertice o una arista paralela a e. Por tanto P^u=2e+R^u es una arista.
+
+No es necesario tratar un cono con linealidad como si fuera apuntado. La formula de dimension anterior ya incluye la linealidad debida a la menor dimension ambiental. Alternativamente, se trabaja en el espacio de direcciones de P, pues los de Q y R estan contenidos alli. Si dim P=0, Q no puede tener dimension positiva. Si dim P=1, Q y R son segmentos paralelos o puntos y se usa directamente la enumeracion del segmento; en dimension ambiental1 se permite u=0 para la cara total. Esto evita usar una exclusion de dimension negativa como argumento separado.
+
+Sea v la direccion entera primitiva de la arista obtenida. Sus puntos enteros son a,a+v,...,a+mv, sin huecos. Asi su forma inicial es z^a(1+t+...+t^m), t=z^v. Las formas iniciales de G y H estan tambien sobre segmentos paralelos, por lo que, tras quitar monomios, son g(t),h(t). g es no constante y tiene termino constante distinto de0. El producto obliga a que g(t)^2 divida1+t+...+t^m. Pero en caracteristica0 este ultimo tiene solo raices simples en C*: sus raices son las raices(m+1)-esimas de la unidad distintas de1. g tiene alguna raiz no nula, que daria multiplicidad al menos2: contradiccion.
+
+No aparece un problema de sustitucion no primitiva: se elige v primitivo en la reticula ambiental. Tampoco se requiere que P sea normal, IDP o de dimension completa. La existencia del funcional y el argumento univariado cierran la prueba; las muestras de factorizacion solo son controles.
+
+Dos falsadores fuera de las hipotesis se conservaron. El soporte no saturado de1+x+x^3+x^4 produce un factor(x+1)^2. Tambien1+2x+x^2 tiene un factor repetido a pesar de su soporte convexo, porque sus coeficientes no son todos1. Ninguno refuta A; ambos muestran por que no se debe extender su enunciado a cualquier polinomio con soporte parcial o pesos arbitrarios.
+
+B. IGUALDAD Y TRASLACIONES — SOPORTE BAJO LAS HIPOTESIS EXPRESAS
+
+El resultado utilizado de la fuente es Theorem3.1 de arXiv2609.39917v1: para una matriz unimodular, una misma caja entera y RHS enteros en relacion de punto medio, D=F_0^2-F_-F_+ tiene coeficientes no negativos en las variables de pesos originales. Se leyeron su prueba y Lemmas3.2–3.4 para comprobar el alcance. No se reemplaza por una desigualdad numerica, VLC o estabilidad, que no bastarian para el primer paso.
+
+Cada monomio Laurent evaluado en w>0 es positivo. Asi D(w)=0 implica que todos los coeficientes no negativos de D son0. Esto demuestra(i)->(ii). La caja debe ser comun y las variables de peso deben conservar las coordenadas originales; una proyeccion que identifique monomios no autoriza importar despues identidades en un anillo mayor.
+
+Cada fibra es un politopo reticular. En un vertice se pueden seleccionar n-r cotas activas independientes junto a las r filas de M. Las r columnas restantes forman una base invertible de M, de determinante+-1. Sus coordenadas se obtienen resolviendo esa base con RHS entero; por tanto son enteras, incluso en vertices degenerados. Un politopo no vacio y acotado es la envolvente convexa de sus vertices, asi que coincide con la envolvente de todos sus puntos enteros. Para cotas extendidas, se puede intersecar con una misma caja FINITA ENTERA que contenga las tres fibras acotadas; no cambia ninguna fibra. No hay un limite infinito de enumeradores en este paso.
+
+A hace squarefree a F_0,F_-,F_+. En el UFD Laurent sobre C, cada factor irreducible de F_0 aparece con multiplicidad2 en F_0^2. En cada factor del producto F_-F_+ puede aparecer como maximo una vez. Por ello aparece exactamente una vez en cada uno, y no puede aparecer otro irreducible. Se sigue F_+=c z^h F_0 y F_-=c^-1 z^-h F_0, con h entero. Comparar un coeficiente, que es1 en ambos enumeradores, obliga c=1. Comparar soportes y tomar envolventes convexas da las dos traslaciones reales. Si F_0 es monomial, los otros son monomios y el mismo razonamiento de unidades resuelve el caso.
+
+La implicacion inversa es inmediata por enumerar los traslados enteros. Queda probada la dicotomia: igualdad en todo campo positivo o desigualdad estricta en todos. En w=1 las traslaciones conservan el numero de puntos, por lo que una igualdad con cuentas en progresion geometrica no constante es imposible en esta clase.
+
+La positividad estricta importa. Como control, en la caja binaria para M=[1,1], RHS0,1,2, se tiene D=x^2+xy+y^2. En(x,y)=(0,0), D se anula sin ser el polinomio cero y sin las traslaciones de B. Es un falsador de una extension a pesos no negativos con ceros; no un fallo de la hipotesis w>0.
+
+C. CRITERIO6n LP — CORRECTO CON CAJA ENTERA; EXTENSION RACIONAL REFUTADA
+
+Para una fibra de la forma{Mx=b,l<=x<=u}, reemplazar l,u por sus minimos y maximos efectivos m,U no cambia el conjunto: la fibra original satisface esas cotas mas ajustadas, y la caja nueva sigue contenida en la original. No se esta afirmando que las cajas envolventes determinen politopos arbitrarios: aqui tambien se conserva exactamente la misma ecuacion Mx=b.
+
+Definir h=m_+-m_0 fija la unica traslacion posible. Mh=b_+-b_0 y U_+=U_0+h identifican la fibra positiva con P_0+h, puesto que la igualdad de cotas inferiores ya esta en la definicion de h. La relacion de RHS y los dos tests de extremos negativos identifican P_-=P_0-h. La necesidad es igualmente directa. Una traslacion que estabiliza un conjunto acotado no vacio debe ser0: maximizar el producto escalar con el vector de traslacion basta para verlo.
+
+Se necesitan2n optimizaciones por fibra, en total6n. Bajo las promesas de rango, unimodularidad, RHS y cotas finitas enteras, no vacuidad y acotacion, las soluciones optimas tienen representaciones racionales de longitud polinomica y los valores extremos son enteros. Algoritmos estandar de LP racional exacta proporcionan tiempo de bits polinomico. El criterio no evalua w ni cuenta puntos. Los controles823 NO implementan esos LP; enumeran fibras pequenas. En824 se compararon tambien extremos de vertices racionales exactos en un ejemplo, lo que tampoco constituye una implementacion general de LP.
+
+CORRECCION OBLIGATORIA. La frase 'binary-encoded rational/integer input' de823C debe conservar explicitamente M,b_s y AMBAS cotas finitas l,u enteros, permitiendo racionales solo en la representacion/calculo interno de LP. La interpretacion que admite cotas racionales no enteras refuta B/C sobre las fibras reales originales:
+  M=[1,1], caja[0,1/2]x[0,2], RHS b_-=0,b_0=1,b_+=2.
+Los enumeradores son1,y,y^2; por tanto F_0^2=F_-F_+ identicamente. Sin embargo, P_-={(0,0)} es puntual, P_0 es el segmento entre(0,1) y(1/2,1/2), y P_+ el segmento entre(0,2) y(1/2,3/2). No son traslados simetricos. El criterio de extremos rechaza, pese a la igualdad de enumeradores. Esto es una refutacion exacta, no un problema numerico menor.
+
+El padre acepto esa restriccion mediante mensaje durante la auditoria; input823 permanece congelado. Tambien comunico una nota829 separada con una interfaz por redondeo y vacios. Esa nota NO fue incorporada ni auditada aqui. El falsador de las fibras reales originales se mantiene integro; una interfaz que cambie las fibras seria otro enunciado.
+
+El corolario binario de823 es valido: si x y x+-h pertenecen a{0,1}^n y h es entero, cada h_i debe ser0. Asi endpoints factibles distintos con punto medio entero no pueden dar igualdad. El caso en que no hay triples distintos es vacuo, como se indica.
+
+D. NO REALIZACION DEL ARREGLO820 — SOPORTE EN LA CLASE PRECISA
+
+Los tres pares opuestos usados tienen producto de coeficientes1=(coeficiente central)^2. B los transforma en tres pares de traslaciones P_vi=P_0+h_i, P_-vi=P_0-h_i. Los RHS deben depender AFINMENTE de los dos indices de salida, con las otras coordenadas RHS fijas. Entonces v1+v2+v3=0 implica que promediar puntos de las tres fibras queda en la ecuacion central y en la misma caja convexa.
+
+Por convexidad de P_0, (P_v1+P_v2+P_v3)/3=P_0+(h1+h2+h3)/3. La inclusion de este conjunto en P_0 y la acotacion fuerzan h1+h2+h3=0. En consecuencia, los enumeradores evaluados satisfacen producto_i F_vi(w)=F_0(w)^3. Pero820 exige producto de tres cocientes6/5, esto es216/125>1. Contradiccion.
+
+Un factor escalar comun y un escalado exponencial de los indices cancelan en los pares y en la media triple; un traslado monomial de la salida solo reindexa el centro. El argumento no admite campos distintos por fibra, pesos arbitrarios por punto, cajas distintas, RHS no afines o realizaciones no unimodulares. Tampoco demuestra una obstruccion abierta para perturbaciones que hagan estrictos los tres pares. En particular no se convierte en una refutacion de Question1.7.
+
+ADDENDUM827 — COMPROBACION SEPARADA Y LIMITADA
+
+La version multiplicativa con k enumeradores no vacios y producto E_Q^k sigue de A por el mismo conteo de multiplicidades: cada irreducible del lado derecho tiene multiplicidad k y cada uno de los k factores aporta a lo sumo1. Todos lo aportan una vez. Coeficientes1 eliminan constantes y la identidad de unidades da sum h_i=0. La recíproca por traslaciones tambien vale. Esto es una identidad de polinomios, no una inferencia desde una igualdad numerica aislada sin positividad coeficiente a coeficiente.
+
+La reduccion de complejidad es correcta. Elegir una base maximal B de M por eliminacion exacta da det B=+-1. Cada entrada de A=B^-1 M es, por Cramer, un menor maximal dividido por det B: vale0,+1 o-1. La matriz de desigualdades[A;-A;I;-I] tiene por tanto entradas de tamano constante. La normalizacion y las comparaciones usan un numero polinomico de operaciones aritmeticas; eliminacion exacta con control de denominadores permite mantener longitudes intermedias polinomicas. En los controles se verifico Cramer para una matriz unimodular con entradas del orden10^40, pero esa prueba puntual no verifica un tiempo asintotico.
+
+Tardos1986 y GLS1988, Section6.6 p189/Theorem6.6.3, proporcionan el teorema estandar de LP cuya cantidad de operaciones depende polinomicamente de la codificacion de la matriz, independientemente de las longitudes de RHS y objetivo, con numeros intermedios de longitud polinomica. Tras la normalizacion,6n LP y el trabajo auxiliar tienen numero fuertemente polinomico de operaciones en r,n. Esto NO es tiempo de bits independiente del input, ni un algoritmo general de conteo, ni una prueba nueva de Tardos. Tampoco se implemento Tardos. La promesa de unimodularidad y las demas hipotesis no se reemplazan por una supuesta verificacion gratuita.
+
+ANTECEDENTES Y LECTURA REAL
+
+Leake–Mohammadi Yekta2609.39917v1 aporta toda la desigualdad coeficiente a coeficiente. Csikvari–Imolay1905.06678v5, abstract y Theorem1.2 leidos, caracteriza igualdad entre otros dos recuentos de grafos mediante biparticion; se trata de un antecedente para las descomposiciones citadas en la fuente, no del mismo enunciado de traslaciones.
+
+El producto de politopos de Newton y las formas iniciales son herramientas clasicas. Se consulto Abu Salem–Gao–Lauder, Factoring polynomials via polytopes, version2004-01-07, Section2/Theorem1 y el comienzo de la descripcion de caras; no el articulo entero. La descarga del PDF anterior de Gao en Clemson fallo por TLS y se conserva el fallo; no se desactivo la verificacion. No se encontro en la busqueda acotada un antecedente exacto de A/B, pero no se certifica su ausencia. A puede ser elemental o folklore, y las herramientas de factorizacion no son nuevas.
+
+Para827 se leyeron el abstract editorial de Tardos1986 y las definiciones de fuerte polinomialidad de GLS1988 Section1.3, el contexto de Section6.6 p189 y Theorem6.6.3 con el comienzo de su prueba. No se audito todo el algoritmo ni el libro. El servidor editorial rechazo la descarga local403, aunque el navegador de texto devolvio el abstract; ambos estados se registran. El libro GLS se conserva solo en el cache extranjero D:\Temp, con hash. No se redistribuye corpus extranjero en este archivo.
+
+CONTROLES Y LIMITACIONES
+
+Se ejecuto una copia byte-identica de controls823.py en replica823/, protegiendo el JSON congelado. Coinciden las18 filas de resultados:1160 triples,72 igualdades,0 fallos. Los unicos cambios del JSON de replica son los metadatos de ejecucion. Se agregaron8 ejemplos exactos de gcd para A, incluidos punto, segmento embebido, plano de menor dimension y tetraedro de Reeve;39 triples adicionales de M=[[1,2,3],[0,1,1]], unimodular pero no TU, con6 igualdades; controles negativos de soporte incompleto, coeficientes no unitarios, pesos cero y cotas racionales; y el control de normalizacion de827. Todos los resultados y fuentes de estos controles se conservan. Los controles no prueban A/B ni validan complejidad o una implementacion de LP.
+
+Reservas que deben acompañar el resultado: corregir la ambiguedad de cotas racionales; preservar positividad, caja comun entera y campos sobre coordenadas originales; no atribuir una representacion mas general a D; no inferir novedad de una busqueda fallida; no presentar operaciones fuertemente polinomicas como tiempo de bits independiente de la entrada. Bajo el alcance entero original y la restriccion explicita de C, no queda una objecion tecnica fatal encontrada en esta auditoria acotada. No es una prueba formal ni revision completa de manuscrito.

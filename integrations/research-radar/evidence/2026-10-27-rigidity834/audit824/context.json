@@ -1,0 +1,41 @@
+{
+  "utc": "2026-10-27T03:30:07.324523+00:00",
+  "requested_configuration": {
+    "model": "GPT-6 Astra",
+    "effort": "xhigh"
+  },
+  "actual_model_runtime_verified": false,
+  "effective_effort_verified": false,
+  "independence_verified": false,
+  "observable_role": "Continuing audit subagent /root/astra_assisted745_audit",
+  "history_reused": [
+    "745",
+    "781",
+    "798",
+    "822",
+    "parent messages",
+    "shared filesystem"
+  ],
+  "no_blindness_or_isolation_claim": true,
+  "frozen_scope": "A-D in823, controls823; no manuscript, score, root-state edits or publication",
+  "additional_scope": "Parent-authorized separate827 admitted before closure; hash verified, no mutation of823",
+  "author_clarification": "Parent explicitly accepted integer M,b_s,l,u restriction for C and827 in a message; preserved rational-box falsifier. Author reports829 separately, not read/audited here.",
+  "reported_but_not_audited": [
+    "INTEGER-BOX829.md, parent-reported SHA ccaa1d0c643220345f87e8ae12b2f1011c5973c8f27996cbd322f4954512ed6f",
+    "Parent-reported213 small-polytope squarefree checks"
+  ],
+  "input_C": "C:\\Trabajo\\airr\\2026-10-27_rigidity823-input",
+  "input_D": "D:\\Proyectos\\airr-investigacion\\2026-10-27_rigidity823-input",
+  "input_manifest_sha256": "06c8a881cf9fb4258d592ceb6107b71ac30921589c770b0755a54184ae2bd4c0",
+  "work": "C:\\Trabajo\\airr\\2026-10-27_rigidity824-audit",
+  "archive": "D:\\Proyectos\\airr-investigacion\\2026-10-27_rigidity824-audit",
+  "external_source_cache": "D:\\Temp\\airr\\2026-10-27_rigidity824-sources",
+  "numeric_runtime_observed": {
+    "python": "3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)]",
+    "sympy": "1.14.0",
+    "arithmetic": "exact integers, rational matrices, polynomial gcd and standard Fraction"
+  },
+  "other_new_reports_read": false,
+  "mutations": "Only new audit work/archive and primary-source cache; original inputs/manuscripts/root state/chats/GitHub/AIRR untouched",
+  "C_mirror": "Retained as requested; no delivered content only on C"
+}

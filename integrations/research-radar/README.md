@@ -109,3 +109,5 @@ Latest negative result: [two global observable fits rejected](notes/2026-10-27-o
 Latest conditional computation: [weighted observable gap](notes/2026-10-27-weighted-observable-gap.md), with all tails, bounds and pending contract-review limits. No new paper or score.
 
 Research obstacle: [three-color lift loses unimodularity](notes/2026-10-27-tu-jensen-lift-obstruction.md); no Jensen solution or manuscript score.
+
+New analytic checkpoint: [midpoint equality rigidity](notes/2026-10-27-midpoint-equality-rigidity.md), with the rational-box extension refuted and the integer-box theorem retained. The combined manuscript awaits full review; no score or formal confidence upgrade.

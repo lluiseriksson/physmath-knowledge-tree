@@ -1,0 +1,46 @@
+{
+  "audit": "822",
+  "utc": "2026-10-27T03:03:59.856196+00:00",
+  "overall": "supported_with_explicit_superclass_scope_no_fatal_defect_found",
+  "score_assigned": false,
+  "manuscript_review": false,
+  "claims": {
+    "Definition2_1_membership": "verified including every extraction index by support and zero-polynomial convention",
+    "global_three_point_Jensen_failure": "verified exactly; mean(0,0), 1<6/5",
+    "coefficientwise_fourth_power_failure": "verified exactly at y=1/10",
+    "all_midpoint_and_line_triples": "verified;8 nontrivial triples",
+    "ordinary_logconcavity": "does not hold for p, exact positive log curvature at(1,1)",
+    "real_stability": "does not hold for monomial-cleared polynomial; negative slice discriminant and simple-root continuity",
+    "TU_realization": "not supplied, not searched, not established",
+    "Question1_7_refuted": false,
+    "Proposition2_2_refuted": false,
+    "Theorem3_1_or_Corollary3_10_refuted": false
+  },
+  "objections": [
+    {
+      "id": "O1",
+      "text": "No TU/unimodular fiber realization; weighted realization would still require a separate bridge to unweighted Question1.7."
+    },
+    {
+      "id": "O2",
+      "text": "Failure of VLC membership of the power blocks an automatic application of Proposition2.2; does not by itself refute its numeric conclusion."
+    },
+    {
+      "id": "O3",
+      "text": "JSON arithmetic does not attest an independent SymPy execution; this audit uses preserved Fraction and integer reproductions."
+    },
+    {
+      "id": "O4",
+      "text": "Line-versus-global distinction is already explicit in source; no worldwide priority or editorial significance certification."
+    }
+  ],
+  "controls": {
+    "original_frozen_Fraction_script": "passed",
+    "separate_integer_denominator_clearing_implementation": "passed",
+    "failures": 0,
+    "all_attempts_preserved": true
+  },
+  "primary_source_sha256": "651ff38b1842db627ffa6da8a6c842eabd858d62f16030a10e3fe1731ad7540e",
+  "input_manifest_sha256": "c367c2ebe65b7f7c50fc2fd02bd19e5045ba140793d19e1716a22f7d741104d7",
+  "report": "report.txt"
+}

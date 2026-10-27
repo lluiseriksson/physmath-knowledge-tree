@@ -1,0 +1,76 @@
+{
+  "audit": "824",
+  "utc": "2026-10-27T03:30:07.324523+00:00",
+  "overall": "supported_under_integer_box_hypotheses_with_mandatory_C_scope_correction; noninteger_rational_box_extension_refuted",
+  "score_assigned": false,
+  "manuscript_review": false,
+  "publication": false,
+  "components": {
+    "A": {
+      "status": "supported",
+      "subject": "Squarefree Laurent enumerator of every nonempty lattice polytope over C, all lattice points with unit coefficients",
+      "proof_detail": "Generic normal-cone argument closes; point/segment/lower-dimensional cases covered; no irreducibility claim"
+    },
+    "B": {
+      "status": "supported_under_stated_promises",
+      "subject": "Positive-weight equality iff Laurent identity iff symmetric integral translations",
+      "dependency": "Exact coefficientwise Theorem3.1 of2609.39917v1 plus A; common integer box and original-coordinate weights essential"
+    },
+    "C": {
+      "status": "supported_only_with_explicit_integer_box_restriction",
+      "subject": "6n exact coordinate LPs decide equality under ALL B hypotheses",
+      "mandatory_correction": "Replace ambiguous rational/integer input with integral M,b_s and both finite box bounds; rational arithmetic/internal LP encoding does not authorize noninteger bounds",
+      "noninteger_rational_box_extension": "REFUTED by M=[1,1], box[0,1/2]x[0,2], RHS0,1,2; enumerators1,y,y^2 but fibers have dimensions0,1,1"
+    },
+    "D": {
+      "status": "supported_for_precise_common_box_positive_weight_unimodular_fiber_class",
+      "subject": "Exact820 array cannot be realized in this class; affine output directions and exact three pair equalities essential",
+      "not_claimed": [
+        "No realization by any conceivable mechanism",
+        "Obstruction for nearby strict perturbations",
+        "Refutation of Question1.7"
+      ]
+    }
+  },
+  "addendum827": {
+    "separately_audited": true,
+    "sha256": "613a6c8cd718e34c51eb84babd77f42a63470dac0bddd97a65f69969357ce4a9",
+    "multiplicative_k_identity": "supported conditional on A; identity of Laurent polynomials only",
+    "strongly_polynomial_arithmetic_reduction": "supported using standard Tardos/GLS theorem after Cramer normalization; retains ALL integer-box B hypotheses",
+    "bit_time_independent_of_numeric_encoding": false,
+    "Tardos_implemented_or_fully_reproved": false
+  },
+  "remaining_objections": [
+    {
+      "id": "O1",
+      "severity": "mandatory_scope_correction_and_refuted_extension",
+      "text": "C wording must explicitly retain integer bounds; rational real-fiber extension is false, not merely unproved."
+    },
+    {
+      "id": "O2",
+      "severity": "essential_hypotheses",
+      "text": "Nonempty bounded fibers, common box, positive original-coordinate weights and unimodularity must remain visible. No projected-polynomial shortcut."
+    },
+    {
+      "id": "O3",
+      "severity": "limits",
+      "text": "Finite controls do not prove A/B or LP complexity; no proof-assistant verification or general LP implementation."
+    },
+    {
+      "id": "O4",
+      "severity": "antecedents",
+      "text": "Classical Newton/UFD and Tardos tools; source supplies coefficientwise inequality. No worldwide novelty or editorial significance certification."
+    }
+  ],
+  "controls": {
+    "replica823_triples": 1160,
+    "replica823_equalities": 72,
+    "replica823_rows_match": true,
+    "additional_nonTU_triples": 39,
+    "additional_nonTU_equalities": 6,
+    "squarefree_examples": 8,
+    "negative_falsifiers_retained": true,
+    "unexpected_control_failures": 0
+  },
+  "report": "report.txt"
+}
