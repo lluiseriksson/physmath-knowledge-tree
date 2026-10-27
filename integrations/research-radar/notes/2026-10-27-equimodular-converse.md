@@ -30,6 +30,8 @@ This does not solve global rational Jensen inequalities. M=[3], box[0,1], and en
 
 The minimal formal target is the one-dimensional primitive-circuit integer-parameter lemma and its three-fiber enumeration. A next finite task is a standalone checker of the explicit monomial certificate from a supplied primitive circuit, rather than further undirected tables. The related [Lancini--Pisanu v1 abstract](https://arxiv.org/abs/2610.13244v1) was read only as a box-TDI lead; no proof or counting-preserving transfer is claimed.
 
+The [reproduction supplement857](../evidence/2026-10-27-circuit857/README.md) now publishes the original own checkers839/840 and expected outputs in a native byte-preserving archive. Its wrapper reproduced every expected mathematical JSON field and the complete16,828-line positive-certificate file hash. UTC/elapsed fields differ as declared; this is a new reproduction of the same finite controls, not an additional model review or a general proof.
+
 ## Context and provenance
 
 One fresh requested GPT-6 Astra xhigh audit was run, without previous reports or numeric targets in its packet, and with shared filesystem access. Actual runtime, effective effort and independence lack attestation. Original objections, reading depths and source hashes remain in the [reading ledger](../evidence/2026-10-27-classification843/READING_LEDGER840.json). The evaluated frozen input manifest is43db16e85a680bc6e9c49d5546a0d9201f78811cf8a86fb9a8a8546da5fd7769; the final audit manifest is658e6609f5cd457ef83bd9ebca6fb96c9d45ccbdb1c64b51b67b5a8a827127fa.

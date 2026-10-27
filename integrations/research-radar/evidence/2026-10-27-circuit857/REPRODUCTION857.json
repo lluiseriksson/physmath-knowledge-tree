@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "original_script_bytes_preserved": true,
+  "controls839_json_equal_except_utc": true,
+  "independent840_json_equal_except_utc_elapsed": true,
+  "all_positive_certificates_byte_exact": true,
+  "finite_checks_are_not_a_general_proof": true,
+  "importance_score": null,
+  "statistics": {
+    "rank_deficient_excluded": 601,
+    "fullrank_2x3": 15024,
+    "equimodular_2x3": 5520,
+    "binary_center_checks": 46362,
+    "coefficient_triples_nonempty": 127608,
+    "even_index_empty_centers": 118886,
+    "nonequimodular_2x3": 9504,
+    "positive_witnesses": 16828,
+    "chosen_coefficient_eq2": 9702,
+    "chosen_coefficient_gt2": 7126,
+    "primitive_without_unit_entry": 4924,
+    "all_nonzero_coefficients_odd": 871,
+    "crafted_matrices": 14
+  }
+}
