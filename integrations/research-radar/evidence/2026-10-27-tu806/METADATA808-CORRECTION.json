@@ -1,0 +1,6 @@
+{
+  "source_sha256": "7469d3d079e626e62818d47636012ccccca2cf3aa0ba761350e549a8bfa3cd79",
+  "correction": "The original vertices field in808 records equation-rank+1, NOT the graph vertex count. Matrices, exact counts and LP dimensions are unchanged. Use MINORS814 for graph vertices. Original output and code retained without alteration.",
+  "first_family_graph": "cographic K5, original vertices7 means rank6",
+  "second_family_graph": "cographic K3,3, original vertices5 means rank4"
+}

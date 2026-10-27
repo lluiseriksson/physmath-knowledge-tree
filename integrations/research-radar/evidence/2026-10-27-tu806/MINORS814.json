@@ -1,0 +1,41 @@
+{
+  "scope": "Exact input-matrix TU controls, no Jensen proof",
+  "rows": [
+    {
+      "source": "SEARCH806.json",
+      "row": 0,
+      "graph_vertices": 5,
+      "rows": 4,
+      "columns": 10,
+      "all_nonempty_square_minors": 1000,
+      "all_abs_det_le1": true
+    },
+    {
+      "source": "SEARCH806.json",
+      "row": 24,
+      "graph_vertices": 6,
+      "rows": 5,
+      "columns": 15,
+      "all_nonempty_square_minors": 15503,
+      "all_abs_det_le1": true
+    },
+    {
+      "source": "SEARCH808.json",
+      "row": 0,
+      "graph_vertices": 5,
+      "rows": 6,
+      "columns": 10,
+      "all_nonempty_square_minors": 8007,
+      "all_abs_det_le1": true
+    },
+    {
+      "source": "SEARCH808.json",
+      "row": 24,
+      "graph_vertices": 6,
+      "rows": 4,
+      "columns": 9,
+      "all_nonempty_square_minors": 714,
+      "all_abs_det_le1": true
+    }
+  ]
+}

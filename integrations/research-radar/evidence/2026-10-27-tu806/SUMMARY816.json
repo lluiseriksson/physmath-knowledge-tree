@@ -1,0 +1,66 @@
+{
+  "scope": "New finite regimes and exact obstruction to a proposed proof move; not a solution of Question1.7",
+  "weighted_assignments": 96,
+  "LP_executions": 9600,
+  "LP_failed": 0,
+  "strict_numeric_leads": 0,
+  "largest_float_gap": 6.732392421326949e-13,
+  "exact_ternary_rhs_triples": 261149,
+  "ternary_matrices": [
+    {
+      "matrix": "K4",
+      "triples": 340,
+      "binary_configurations": 64,
+      "fibers": 38
+    },
+    {
+      "matrix": "K5",
+      "triples": 50675,
+      "binary_configurations": 1024,
+      "fibers": 291
+    },
+    {
+      "matrix": "cographic K3,3",
+      "triples": 17930,
+      "binary_configurations": 512,
+      "fibers": 205
+    },
+    {
+      "matrix": "cographic K5",
+      "triples": 87008,
+      "binary_configurations": 1024,
+      "fibers": 728
+    },
+    {
+      "matrix": "five-cycle TU augmentation",
+      "triples": 105196,
+      "binary_configurations": 1024,
+      "fibers": 533
+    }
+  ],
+  "negative_coefficient_witness": false,
+  "unimodularity_counterexample": {
+    "lift": "two explicit color incidence blocks plus shared capacities, K4",
+    "size": [
+      12,
+      18
+    ],
+    "maximal_minors_abs": [
+      1,
+      2
+    ],
+    "fractional_basic_vertex": true,
+    "finite_integral_count_for_displayed_rhs": 8
+  },
+  "metadata_correction808": "vertices was rank+1, not graph vertex count; exact matrices/counts unchanged",
+  "new_paper": false,
+  "new_score": null,
+  "worldwide_novelty_established": false,
+  "full_Jensen_proved": false,
+  "independent_AI_or_human_review": false,
+  "Research_Capsule_ready": false,
+  "payload_sha256": {
+    "SEARCH806.json": "d7bf06cd142cea3e5ef9d301e4c1af8caa822bad073d8817fa7887282813cec6",
+    "SEARCH808.json": "7469d3d079e626e62818d47636012ccccca2cf3aa0ba761350e549a8bfa3cd79"
+  }
+}
