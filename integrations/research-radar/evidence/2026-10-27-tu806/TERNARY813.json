@@ -1,0 +1,95 @@
+{
+  "target": "Coefficientwise ternary extension of the source midpoint mechanism, NOT Jensen itself",
+  "graph": "five-cycle TU augmentation",
+  "edges": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "matrix_columns": [
+    [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      -1,
+      1,
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      -1,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      -1,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      -1,
+      1
+    ],
+    [
+      1,
+      0,
+      0,
+      1,
+      -1
+    ]
+  ],
+  "binary_configurations": 1024,
+  "fibers": 533,
+  "rhs_triples_tested": 105196,
+  "exact_negative_coefficient_witness": null,
+  "Jensen_counterexample": false,
+  "seconds": 88.90600000001723,
+  "code_sha256": "f6f5d76e3a07766bb74a3b12c05ace5624c0188fb4f28d320ed45fc53b4f199f"
+}

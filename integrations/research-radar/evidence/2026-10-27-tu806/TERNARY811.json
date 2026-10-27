@@ -1,0 +1,105 @@
+{
+  "target": "Coefficientwise ternary extension of the source midpoint mechanism, NOT Jensen itself",
+  "graph": "cographic K3,3",
+  "edges": [
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      5
+    ]
+  ],
+  "matrix_columns": [
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      -1,
+      0,
+      -1,
+      0
+    ],
+    [
+      0,
+      -1,
+      0,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      -1,
+      -1
+    ],
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "binary_configurations": 512,
+  "fibers": 205,
+  "rhs_triples_tested": 17930,
+  "exact_negative_coefficient_witness": null,
+  "Jensen_counterexample": false,
+  "seconds": 3.4689999999827705,
+  "code_sha256": "ed4aa1144b95001fcb8680460ef4c3e491745a7acbfe66f9ee6a62a44858fa87"
+}

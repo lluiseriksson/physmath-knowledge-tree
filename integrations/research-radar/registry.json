@@ -615,6 +615,23 @@
         "domain.analysis",
         "domain.quantum_information_theory"
       ]
+    },
+    {
+      "id": "bernstein-sullivant-lawrence2017",
+      "title": "Bernstein–Sullivant: Unimodular binary hierarchical models",
+      "url": "https://doi.org/10.1016/j.jctb.2016.11.003",
+      "kind": "paper",
+      "published_on": null,
+      "observed_on": "2026-10-27",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Definition1.1 characterizes unimodularity by maximal minors; selected Definition3.13/Proposition3.15 discuss the ordinary two-level Lawrence operation.",
+      "limits": "No whole classification proof audit. These two-level statements do not justify a higher-color lift. The explicit K4 witness is an own control, not an attributed new theorem.",
+      "reuse": "Bibliography, hashes and original synthesis only; no foreign full text.",
+      "anchors": [
+        "domain.algebra",
+        "domain.complexity_theory"
+      ]
     }
   ],
   "candidates": [
@@ -780,7 +797,8 @@
       "status": "under_audit",
       "confidence": "speculative",
       "source_ids": [
-        "leake-yekta-tu-jensen-2026"
+        "leake-yekta-tu-jensen-2026",
+        "bernstein-sullivant-lawrence2017"
       ],
       "node_ids": [
         "domain.algebra",
@@ -788,10 +806,10 @@
       ],
       "dictionary": "Integer right-hand sides -> exact fiber counts -> log-count concave envelope at integer barycenters.",
       "preserved": "Unimodular system, finite fibers, nonnegative integer solutions and exact integer barycenter.",
-      "lost_or_unproved": "A line inequality does not imply Jensen for arbitrary finite supports. Proposed low-kernel-dimensional reductions still need review and prior-art comparison.",
+      "lost_or_unproved": "No general Jensen proof or exact violation. New9600LP probes yield no strict lead;261149 exact ternary RHS controls are finite only. The12-by18 K4 three-color lift has maximal minors1and2, so direct unimodular-theorem transfer is invalid.",
       "hypothesis_to_remove": "The line-supported restriction on the distribution of right-hand sides.",
       "falsifier": "An exact unimodular system and rational finite weights with integer barycenter violating the Jensen inequality; all fiber counts and finiteness must be certified.",
-      "next_finite_task": "A TU-specific structural gluing lemma or an exact violating weighted-binary distribution is still needed. Avoid repeating the same finite LP range as a universal proof.",
+      "next_finite_task": "Seek a direct universal central-fiber argument or genuine Jensen witness paying for the higher-color lift nonunimodularity. Do not repeat fixed finite probes as proof or package these controls as a standalone paper.",
       "paper_score": null,
       "review_packet": "399 bounded audit validates an elementary rational-weight binary lift to unweighted TU fibers and generic non-TU closure barriers;64C/Dfiles checked. Exact counts cover184756configurations/19448fibers;2982LPexecutions have no exact violating certificate.392has162executions on161distincttargets. The lift may be exponential in binary weight length. No Jensen solution, converse reduction or importance score."
     },
@@ -895,6 +913,10 @@
     "followup801": {
       "evidence": "integrations/research-radar/evidence/2026-10-27-portable801/SOURCES801.json",
       "scope": "Directed13-endpoint metadata refresh; unchanged OpenAI/DeepMind pins. Selected official API contract reread, not a new proof audit."
+    },
+    "followup807": {
+      "evidence": "integrations/research-radar/evidence/2026-10-27-tu806/SOURCES807.json",
+      "reading": "Current primary Jensen question and selected Lawrence background reread, narrow scope;13-endpoint inventory not exhaustive."
     }
   }
 }
