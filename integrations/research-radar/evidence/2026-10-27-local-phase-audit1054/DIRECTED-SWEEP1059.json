@@ -1,0 +1,73 @@
+{
+  "utc": "2026-10-27T19:13:07.531023+00:00",
+  "scope": "directed refresh, not exhaustive; no foreign corpus retained",
+  "sources": [
+    {
+      "key": "openai_math",
+      "url": "https://api.github.com/repos/openai/math/commits?per_page=1",
+      "status": 200,
+      "bytes": 4784,
+      "sha256": "6ca38558150e5428a6ab89342338edbbedc7eb5cf1d5dcc3752dd34b0ad91760",
+      "reading": "inventoried endpoint, body not retained",
+      "latest_commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a"
+    },
+    {
+      "key": "deepmind_formal",
+      "url": "https://api.github.com/repos/google-deepmind/formal-conjectures/commits?per_page=1",
+      "status": 200,
+      "bytes": 8641,
+      "sha256": "35c8d5ede2936394b64fe555e4ee1f44d4d8375e7947129a60c9ed10d8bbae5c",
+      "reading": "inventoried endpoint, body not retained",
+      "latest_commit": "c0c538071a21b36d15f70f5998370eb6a4c31c97"
+    },
+    {
+      "key": "own_public_repos",
+      "url": "https://api.github.com/users/lluiseriksson/repos?per_page=100&sort=updated",
+      "status": 200,
+      "bytes": 212804,
+      "sha256": "629db73c098caa3d9b803e9b40727328d4096283a40543d90f241f63c7c63f47",
+      "reading": "inventoried endpoint, body not retained",
+      "public_repo_count_page": 36
+    },
+    {
+      "key": "anthropic",
+      "url": "https://www.anthropic.com/research",
+      "status": 200,
+      "bytes": 416031,
+      "sha256": "cc3fa69020876106ec554fd9600b43bd31b10f9c2d83b3258dfaa93c833462ff",
+      "reading": "inventoried endpoint, body not retained"
+    },
+    {
+      "key": "arxiv_prior",
+      "url": "https://arxiv.org/abs/1510.01844v4",
+      "status": 200,
+      "bytes": 43988,
+      "sha256": "7a954cbbb7f58c58e08e56da0e11eeea16edf76a6379976844f97186abcd418e",
+      "reading": "abstract read in browser; equality across source-optimized nonlinear operator-convex f is prior; full proof not audited"
+    },
+    {
+      "key": "vixra_author",
+      "url": "https://www.ai.vixra.org/author/lluis_eriksson",
+      "status": 200,
+      "bytes": 70178,
+      "sha256": "9cfc2018ff38a1f839e7c86f3d743cdbefb2b58b46c47bab6b4dd5af36fb8b7e",
+      "reading": "inventoried endpoint, body not retained"
+    },
+    {
+      "key": "airr_current",
+      "url": "https://airr.science/papers/ARR-2026-77DGRYDGXD8MDSY2/versions/v3/",
+      "status": 200,
+      "bytes": 40845,
+      "sha256": "ea7958a91163bfc24879f84fba5cb3e9caf74a08149fa1899d51bb3632bbabb9",
+      "reading": "exact PDF/report links and grade verified separately in LIVE1055"
+    },
+    {
+      "key": "makur_publications",
+      "url": "https://www.cs.purdue.edu/homes/amakur/publications.html",
+      "status": 200,
+      "bytes": 30280,
+      "sha256": "1ab506c508f85ec635dd1ae7cd1521e1d50a8b12481db99c521d01b0160043e9",
+      "reading": "inventoried endpoint, body not retained"
+    }
+  ]
+}

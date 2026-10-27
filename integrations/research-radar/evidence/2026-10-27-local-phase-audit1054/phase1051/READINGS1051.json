@@ -1,0 +1,44 @@
+{
+  "utc": "2026-10-27T18:32:19.611571+00:00",
+  "sources": [
+    {
+      "id": "FreyCollinsGerlach",
+      "url": "https://arxiv.org/pdf/1008.1557v1",
+      "version": "1008.1557v1",
+      "status": 200,
+      "sha256": "ca619694802c9d0c6e50cc0a8462bcbccc617099f943db12d3b9136270900c7d",
+      "bytes": 252418,
+      "pages": 10,
+      "read_level": "page1 abstract and initial scope excerpt read; pages1-2 extracted/hashed, not proof audited",
+      "own_summary": "Abstract and first-page scope: channel/noise-parameter identification and ancilla setting. This is not the local-phase retention ratio. No full-paper proof audit.",
+      "selected_text_extraction_sha256": "29fd58a5054eef8865de34b9898070ddea5fc7daf725d55d15201a8204b0b7d0",
+      "selected_pages_1based_extracted": [
+        1,
+        2
+      ]
+    },
+    {
+      "id": "ChapeauBlondeau",
+      "url": "https://arxiv.org/pdf/1904.01904v1",
+      "version": "1904.01904v1",
+      "status": 200,
+      "sha256": "cb0716f339793d78ee21229de6810b8fda7ff77c9ce96915d5075ca0dbff5ae4",
+      "bytes": 406878,
+      "pages": 23,
+      "read_level": "page1 abstract and initial scope excerpt read; pages1-2 extracted/hashed, not proof audited",
+      "own_summary": "Abstract and first-page scope: noisy-qubit parameter estimation and entanglement are established prior. No claim of first local-phase advantage; this source was already recorded in earlier manuscript context. No whole-paper proof audit.",
+      "selected_text_extraction_sha256": "32fc24e0a45ca11d38423c2bcfd36e50a66e28aa172a5d593f49fd094447765b",
+      "selected_pages_1based_extracted": [
+        1,
+        2
+      ]
+    }
+  ],
+  "deduplicated_prior": [
+    "1904.01904 already bibliographyCB1047",
+    "1008.1557 surfaced by directed primary search; no generalized novelty claim"
+  ],
+  "exhaustive": false,
+  "foreign_corpus_saved": false,
+  "limits": "The exact candidate1051 identities are own derivations awaiting audit. A covering phase/entropy theorem could make them routine or already known. The ratio is not absolute output QFI maximization. No identified source establishes absence of covering literature."
+}
