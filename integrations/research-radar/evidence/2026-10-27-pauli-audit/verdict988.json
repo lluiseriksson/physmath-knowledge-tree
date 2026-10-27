@@ -1,0 +1,257 @@
+{
+  "audit": "988",
+  "date": "2026-10-27",
+  "scope": "scientific component audit, no manuscript or editorial recommendation",
+  "context": {
+    "prior942_reused": true,
+    "filesystem_shared": true,
+    "independence_claimed": false,
+    "effective_identity_or_effort_attested": false,
+    "subagents_spawned": false
+  },
+  "frozen_input": {
+    "path": "C:\\Trabajo\\airr\\2026-10-27_harmonic987-input\\INPUT987.json",
+    "sha256": "5f5d6cb2efdfdceda9ef3f7413dda73d5a588640fc04dcd63d4b7468c160edbe",
+    "payload_count": 9,
+    "verified_before_audit": true,
+    "final_verification": "VERIFY987_PREDELIVERY988.json"
+  },
+  "components": [
+    {
+      "id": "979_harmonic",
+      "verdict": "valid_with_stated_hypotheses",
+      "formula": "h(w)=1-m^2/sum_j(1/w_j)",
+      "hypotheses": [
+        "finite A and each finite R",
+        "local unitaries",
+        "w_j>0, sum w_j=1",
+        "E rho=E sigma",
+        "0<D(rho||sigma)<infinity"
+      ],
+      "basis": "inverse quadratic joint convexity, unitary covariance, zero-sum tangent shift, scalar minimization, oriented BKM integration",
+      "limitations": [
+        "not an exactness claim for arbitrary random-unitary mixtures",
+        "E need not be idempotent",
+        "no conditional unequal-R upper or tensorization claim"
+      ]
+    },
+    {
+      "id": "979_boundary",
+      "verdict": "valid_for_finite_Umegaki_divergence",
+      "basis": "common maximally mixed regularization; support inclusion from positive map; joint convexity plus lower semicontinuity; pass inequality before dividing",
+      "limitations": [
+        "fixed finite R at each limit",
+        "regularized marginals must be recomputed",
+        "no blanket singular-Petz extension"
+      ]
+    },
+    {
+      "id": "981_Petz",
+      "verdict": "valid_for_faithful_pairs",
+      "formula": "H_f(Nrho,Nsigma)<=h(w)H_f(rho,sigma)",
+      "hypotheses": [
+        "same finite unitary setting and equal-E",
+        "rho,sigma faithful",
+        "f operator convex nonaffine on (0,infinity), f(1)=0"
+      ],
+      "orientation": "Q=L_rho+t R_sigma, t>=0; quadratic endpoint R_sigma; complex Hilbert-Schmidt space",
+      "limitations": [
+        "common upper does not imply same exact coefficient for each f",
+        "Petz is not automatically the hockey-stick integral divergence of other sources"
+      ]
+    },
+    {
+      "id": "981_involution",
+      "verdict": "exact_complete_equal_E_coefficient",
+      "formula": "(2w-1)^2",
+      "hypotheses": [
+        "U=U*=U^-1 with both signs",
+        "0<w<1",
+        "same faithful nonaffine Petz family"
+      ],
+      "basis": "harmonic upper and central-state off-diagonal Taylor lower; R=1 suffices for lower"
+    },
+    {
+      "id": "983_Bell_lower",
+      "verdict": "valid_complete_pair_lower",
+      "formula": "d^2 lambda^2/[2+(d^2-2)lambda]",
+      "basis": "two orthogonal maximally entangled vectors, faithful common regularization, commuting local Taylor limit",
+      "limitations": [
+        "not an actual-product MI witness",
+        "not an upper or generic exactness result",
+        "prior32 optimizations not reproduced"
+      ]
+    },
+    {
+      "id": "971_Umegaki_conjecture",
+      "verdict": "open_not_proved_not_refuted_here",
+      "formula": "qubit lambda=1/2: 1/3 <= eta_MI <= eta_pair <= 3/8",
+      "limitations": [
+        "finite numerical screens cannot establish upper1/3 for all finite R",
+        "971 original216-case campaign not part of frozen payloads",
+        "no extension of1/3 to all Petz"
+      ]
+    },
+    {
+      "id": "977_shortcut",
+      "verdict": "shortcut_refuted_as_claimed",
+      "exact_partial_trace_gap": "(3/2) I_2",
+      "own_metric_check_on_sigma_K_over2": "BKM ratio13/85 at lambda1/2",
+      "refutes_971": false
+    },
+    {
+      "id": "literature",
+      "verdict": "selected_primary_comparisons_no_priority_certificate",
+      "basis": "eight primary versions, definitions/hypotheses and selected proofs; seeREADINGS988.txt",
+      "limitations": [
+        "not exhaustive",
+        "no claim that all earlier implications were excluded",
+        "source monotonicity-sign typo preserved separately"
+      ]
+    },
+    {
+      "id": "later991_variance",
+      "verdict": "factor2_auxiliary_bound_refuted_exactly",
+      "origin": "later shared-context supplement; outsideINPUT987",
+      "ratio_lower": "2.99311283224051873119360739785",
+      "BKM_or_MI_counterexample": false,
+      "control_incident": "one syntactic SymPy trace-equality check failed; exact rational normalization resolution preserved without overwriting first run"
+    },
+    {
+      "id": "later991_Petz",
+      "verdict": "blanket_Petz_upper_one_third_refuted_exactly",
+      "origin": "later shared-context supplement; outsideINPUT987",
+      "generator": "(x-1)^2/(x+1)",
+      "dimensions": [
+        2,
+        3
+      ],
+      "lambda": "1/2",
+      "ratio_certified_decimal_interval": [
+        "0.348913969797243957543533972195",
+        "0.348913969797243957543760572571"
+      ],
+      "consistent_with_harmonic_three_eighths": true,
+      "refutes_971_Umegaki": false,
+      "finite_Umegaki_ratio_numeric_only": 0.13630565408562262
+    },
+    {
+      "id": "later993_SLD",
+      "verdict": "exact_complete_equal_reference_tangent_coefficient",
+      "origin": "later frozen993 supplement; outsideINPUT987 and991",
+      "formula": "3lambda^2/(1+2lambda), 0<lambda<1",
+      "lower_reference_dimension": 3,
+      "basis": "Pauli harmonic upper; explicit rank2 family; exact Sylvester calculation; faithful delta limit then e limit",
+      "limitations": [
+        "supremum, no claimed faithful maximizer",
+        "minimum necessary R dimension not proved",
+        "no BKM/MI equality",
+        "priority unestablished"
+      ]
+    },
+    {
+      "id": "later993_triangular_Petz",
+      "verdict": "exact_complete_faithful_pair_coefficient",
+      "origin": "later frozen993 supplement; outsideINPUT987 and991",
+      "generator": "(x-1)^2/(x+1)",
+      "formula": "3lambda^2/(1+2lambda), 0<lambda<1",
+      "basis": "981 upper; t->0 then delta->0 then e->0 realizes SLD lower on faithful pairs",
+      "consequence": "harmonic bound is best uniform upper over entire981 Petz family because one member reaches it as a supremum",
+      "limitations": [
+        "not exactness for every Petz generator",
+        "not actual MI or Umegaki exactness"
+      ]
+    },
+    {
+      "id": "later993_chi2_min",
+      "verdict": "equivalent_exact_pair_coefficient_under_stated_definition",
+      "definition": "chi2_min(rho||sigma)=g_SLD_sigma(rho-sigma)",
+      "basis": "exact quadratic homogeneity and faithful realization of every tangent",
+      "not_same_finite_divergence_as_Petz_triangle": true
+    }
+  ],
+  "control_evidence": {
+    "supplied": {
+      "utc": "2026-10-27T13:41:41.210065+00:00",
+      "runs": [
+        {
+          "original_script_sha256": "7b37599413ea358886eb519a72b2df6121ae979e50c645b66d3b409a58863f95",
+          "prefix_sha256": "380f5b3634f92075c311296706b83d71e055cc7733ae575455e3c00275295e3b",
+          "stem": "979",
+          "excluded_tail_marker": "C=Path(__file__).parent;",
+          "output_sha256": "744dea5a6b52f8f1054e191ac8bd9a8fa112e9ff512eebade5d0b10303f3f27c",
+          "original_output_sha256": "744dea5a6b52f8f1054e191ac8bd9a8fa112e9ff512eebade5d0b10303f3f27c",
+          "exact_bytes_equal": true,
+          "semantic_equal_except_utc": true,
+          "failure_count": 0,
+          "count": 48
+        },
+        {
+          "original_script_sha256": "92c5f8f1ada94c515b2c5fe0ad17ee87442c24f9359cfc0796034c10cdc31f62",
+          "prefix_sha256": "69f2b7d1d96b13ee5b6e1f1724d10d8edf98021cb2207c5b702d8ca0f42fbb31",
+          "stem": "981",
+          "excluded_tail_marker": "p=Path(__file__).parent",
+          "output_sha256": "bb6f152cef85e96bb40fa545504900256cd2dc63172515f0057ce30c0523e9c4",
+          "original_output_sha256": "422b583e76d016cae630d5ec39c4309ac47b1d902edd4ea90bd3d1fa18794aef",
+          "exact_bytes_equal": false,
+          "semantic_equal_except_utc": true,
+          "failure_count": 0,
+          "count": 600
+        }
+      ],
+      "original_files_written": false
+    },
+    "own_fixed": {
+      "checks": 1494,
+      "failed_checks": 0,
+      "exceptions": 0
+    },
+    "own_best_tangent_ratios": {
+      "2_bkm": 0.3212584060760852,
+      "2_quadratic": 0.2974483059830357,
+      "3_bkm": 0.3506057925653456,
+      "3_quadratic": 0.3445355820192853
+    },
+    "own_finite_followup": {
+      "finite_pairs": 16,
+      "singular_reference_points": 4,
+      "failures": 0,
+      "max_KL_direct_integral_disagreement": 8.005568985502975e-10
+    },
+    "later991_first_run_preserved": {
+      "checks": 25,
+      "failures": 1,
+      "exceptions": 0
+    },
+    "later991_trace_resolution": {
+      "original_structural_equality_result": false,
+      "simplified_trace_minus_one": "0",
+      "expanded_rational_Gram_trace": "15617/15625",
+      "trace_after_expanding_Gram": "1",
+      "resolved": true,
+      "classification": "audit control used syntactic SymPy equality before simplification; not a state-normalization error",
+      "preserved_original": "SUPPLEMENT991_AUDITED988.json and audit_supplement991.py remain unchanged"
+    },
+    "later993_own_checks": {
+      "checks": 26,
+      "failures": 0,
+      "exceptions": 0
+    }
+  },
+  "limitations": [
+    "No formal proof assistant verification",
+    "No exhaustive numerical search",
+    "No exhaustive literature or worldwide priority determination",
+    "No proof of conjecture971",
+    "No tensorization or capacity result",
+    "No re-audit of prior942/958"
+  ],
+  "files": {
+    "full_report": "AUDIT988.txt",
+    "readings": "READINGS988.txt",
+    "incidents": "INCIDENTS988.txt",
+    "manifest": "MANIFEST988.json",
+    "hashes": "SHA256SUMS988.txt",
+    "copy_verification": "DELIVERY988.json"
+  }
+}

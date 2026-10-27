@@ -1,0 +1,149 @@
+997 — Candidate exact complete SLD contraction for all Pauli channels,
+and by unitary normal form all unital qubit channels.
+Parent analytic derivation,27October2026; not externally audited or graded.
+This is outside frozen995 and its review998. No priority claim.
+
+1. DEFINITIONS AND STATEMENT
+For N_w=sum_{j=0,x,y,z} w_j Ad(P_j), initially w_j>0,sumw=1,
+act on A=C2 and arbitrary finite referenceR. Let
+g_s(D)=Tr D [(L_s+R_s)/2]^{-1}D,
+eta_SLD^c(N)=sup g_{Ns}(ND)/g_s(D), over faithful states s and
+nonzero Hermitian D with Tr_A D=0. Tensor id_R is implicit throughout.
+Let chi_min^2(r||s)=g_s(r-s). Let
+H_triangle(r,s)=<r-s,(L_r+R_s)^-1(r-s)>_HS
+be the Petz divergence for f(x)=(x-1)^2/(x+1). Its coefficient is the
+supremum over distinct faithful pairs with identical R marginal.
+Candidate theorem: all three coefficients equal
+ h(w)=1-16/(sum_j1/w_j).
+R3 suffices for the supremum; no minimal ancillary dimension asserted.
+For a zero Pauli weight, candidate coefficient is1. Consequently for any
+unital qubit channel with normalized Choi state J, the coefficient is
+ 1-16/Tr(J^-1) if J>0, and1 if J is singular.
+Neither this metric nor its two finite divergences is actual-product MI
+or the BKM/Umegaki divergence; no such coefficient equality follows.
+
+2. UPPER BOUND, ALL POSITIVE WEIGHTS
+Let U_j=P_j tensorI_R. Equal reference marginals imply
+sum_j U_j(r-s)U_j*=0; the tangent condition implies sum_j U_jDU_j*=0.
+For positive superoperators Q_j, joint convexity of <X,Q^-1X>
+gives <sumwX_j,(sumwQ_j)^-1sumwX_j> <=sumw<X_j,Q_j^-1X_j>.
+Use X_j=(1-a/w_j)U_jDU_j*, so sumwX_j=ND for every reala.
+For SLD take Q_j=(L_{U_jsU_j*}+R_{U_jsU_j*})/2.
+For finite triangular Petz take Q_j=L_{U_jrU_j*}+R_{U_jsU_j*},
+and D=r-s. Covariance gives upper factor sum(w_j-a)^2/w_j.
+The minimizing a=4/sum1/w_j gives h(w). All state weights remain
+positive; negative tangent coefficients do not mean negative state weights.
+For chi_min^2 use the exact quadratic form; conversely any tangent is
+realized by a sufficiently small faithful same-reference perturbation.
+This is the audited979/981 argument specialized to the Pauli twirl.
+
+3. EXPLICIT LOWER FAMILY, R3
+Write A=w0+wz, B=wx+wy=1-A, u=w0-wz, v=wx-wy, z=A-B.
+Then A,B>0, |u|<A, |v|<B. Put U=u^2/A,V=v^2/B,k=1-U-V.
+Since k=4w0wz/A+4wxwy/B, k>0.
+In basis(00,01,02,10,11,12), for e>0 let
+ a_e=(1,0,0,0,e,0), b_e=(0,e,0,0,0,1),
+ s_e=(a_e a_e*+b_e b_e*)/[2(1+e^2)].
+Its support projection is P=2s_e, rank2. Let D have entries
+D04=D40=1,D44=2e,D11=-2e,D15=D51=-1, all others0.
+Then Tr_A D=0,(I-P)D(I-P)=0 and the boundary SLD form is
+ g_{s_e}(D)=4TrD^2-2Tr(PDP)^2=16(1+e^2).
+The two output invariant blocks, on indices(0,4,2) and(3,1,5), are
+ W=M/[2(1+e^2)], J W J,
+with J the3coordinate reversal and
+ M=[[A,ue,0],[ue,e^2,ve],[0,ve,B]].
+The output tangent blocks are T and -J T J, with
+ T=[[0,u,0],[u,2ez,-v],[0,-v,0]].
+No cross-block entries occur. M>0: its central Schur complement with
+respect to diag(A,B) is e^2 k>0. This also verifies detM=AB e^2k.
+Thus Ns_e is faithful for every fixed e>0.
+
+4. SYLVESTER EQUATION AND EXACT LIMIT
+Let Y=Y* solve WY+YW=2T, equivalently
+ MY+YM=4(1+e^2)T.
+Reality and symmetry follow by uniqueness. Write x=Y12,y=Y23,c=eY22.
+The diagonal11,33 and offdiagonal13 equations eliminate the other entries:
+ Y11=-eu x/A, Y33=-ev y/B, Y13=-e(u y+v x).
+The remaining equations are K_e (x,y,c)^T=4(1+e^2)(u,-v,z)^T, where
+ K_e=[[A+e^2(1-u^2/A-v^2),-e^2uv,u],
+      [-e^2uv,B+e^2(1-v^2/B-u^2),v],
+      [u,v,1]].
+At e=0, detK_0=ABk>0, so these three unknowns converge to the unique
+limiting solution without exchanging a singular inverse:
+ c0=4(z-U+V)/k, x0=u(4-c0)/A, y0=v(-4-c0)/B.
+Both output blocks contribute equally to g, hence
+ g_{Ns_e}(ND)=2Tr(TY)=4(u x-v y+z c).
+The ratio to16(1+e^2) therefore tends as e decreases to0 to
+ U+V+(z-U+V)^2/k = 1-16/(sum_j1/w_j).
+verify997.py checks the complete6x6 Pauli channel blocks, tangent/support,
+Sylvester reduction, determinant, limiting solution and scalar identity
+as20 exact symbolic identities. This is a parent-written checker, not
+an independent or formally verified proof.
+
+5. FAITHFUL REALIZATION
+For fixed e>0 set s_e,xi=(1-xi)s_e+xi I6/6, 0<xi<1.
+The input SLD form converges to its finite boundary value since
+the kernel-kernel tangent vanishes. The output limit is faithful, so
+the output metric converges by finite-dimensional inverse continuity.
+Now e can tend0. This gives the metric lower supremum.
+For every fixed e,xi, choose r_t=s_e,xi+tD with nonzero sufficiently
+small realt. Positivity, trace1 and equal reference marginal hold.
+The finite Petz local limit H_triangle(r_t,s_e,xi)/t^2 is
+g_{s_e,xi}(D)/2, and similarly at output. Take t->0 first,
+xi->0 second, e->0 last. This proves its lower supremum without
+claiming singular-Petz continuity or a faithful maximizer.
+The exactly quadratic chi_min form needs only the metric lower.
+If w is uniform, h=0 and the output tangent vanishes; the same formula
+holds, with no division by h. Otherwise h>0 by strict harmonic mean.
+
+6. ZERO WEIGHTS AND ALL UNITAL QUBIT CHANNELS
+For nonnegative w with a zero entry, regularize the CHANNEL weights
+w_j(gamma)=(1-gamma)w_j+gamma/4. Then
+N_gamma=(1-gamma)N_w+gamma E, where E=uniform Pauli twirl.
+For equal-reference pairs, E r=E s; for tangents ED=0. Joint convexity
+therefore gives each output divergence/metric for N_gamma at most
+(1-gamma) times its value for N_w. Faithful inputs have faithful output
+even for boundary weights, since every such Pauli channel is unital.
+Consequently eta(N_w)>=h(w(gamma))/(1-gamma). Since sum1/w_j(gamma)
+diverges as gamma->0, the right side tends1. The universal upper1
+follows directly by joint convexity under the Pauli mixture, and the
+coefficient is1. This argument avoids any unproved singular inverse
+or rank-dependent ladder limit for the boundary channel.
+
+For an arbitrary unital qubit CPTP channel, the real Bloch matrix admits
+signed SVD T=R1 diag(t1,t2,t3)R2 with both rotations inSO(3).
+Conjugations by qubit unitaries realize these rotations. The central
+diagonal CP map is a Pauli mixture: its normalized Choi state is
+Bell diagonal, with nonnegative eigenvalues w_j summing1. Pre/post
+unitary conjugations preserve SLD and Petz forms, faithfulness, and
+the equal-reference constraint, hence preserve their complete coefficients.
+They also transform J by a local unitary, preserving eigenvalues.
+Thus the Choi spectral expression follows from the Pauli result,
+including the singular case. Signed singular values are essential;
+ordinary positive SVD alone is not a valid physical normal form.
+The normal form is prior Ruskai--Szarek--Werner quant-ph/0101003v2,
+Eq4 and discussion on PDFp5; local-unitary Choi covariance Lemma11,
+Eq34, PDFp17. These reductions are not claimed as new.
+
+7. SIGNIFICANCE, EVIDENCE AND LIMITS
+The extension replaces isotropy by the full Pauli probability simplex
+and identifies a Choi-spectrum criterion within unital qubit channels.
+Its novelty and scientific importance have not been assessed. In particular
+strict contraction iff faithful Choi may already have related prior art;
+the exact value, divergence definition and complete equal-reference
+optimization must be compared before any novelty claim.
+The ordinary unassisted formula ||T||^2 is prior Hiai--Ruskai2015,
+not this complete constrained coefficient. No assertion concerning
+nonunital channels, higher dimensional Weyl exactness, BKM, actual MI,
+capacity, tensorization, geodesic distance, or a target score follows.
+
+Discovery controls:20 fixed-budget optimizations across5weight vectors,
+all outcomes in RESULT997.json. One value exceeded its exact bound by
+about6.3e-13, a floating-point discrepancy, not a certified falsifier.
+Fifteen explicitly faithful finite pairs evaluated at100digits agree
+with the upper and approach it, but are not interval certificates.
+The proof rests on the displayed identities and ordered limits, not
+on numerical optimization. All unsuccessful terminations are retained.
+Falsifiers: incorrect blocks or Sylvester elimination, invalid faithful
+limit/normal form, inconsistent coefficient definition, or a covering
+earlier theorem. No external review of997, no grade and no publication.

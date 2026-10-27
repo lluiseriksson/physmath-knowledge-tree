@@ -1,0 +1,661 @@
+AUDITORÍA TÉCNICA 988 — COTA ARMÓNICA, PETZ Y SUBCASOS
+27 de octubre de 2026. Sin manuscrito, nota ni recomendación editorial.
+
+DICTAMEN POR COMPONENTES
+
+La cota de PROOF979 es válida bajo sus hipótesis: un conjunto finito de
+unitarias, pesos estrictamente positivos que suman uno, pares con la misma
+imagen bajo el promedio uniforme E y divergencia Umegaki finita. La prueba
+métrica, su integración orientada y el paso al borde se reconstruyen abajo.
+El argumento mantiene la misma constante para cada referencia finita.
+
+PROOF981 también es válido para pares fieles y generadores Petz no afines
+operator-convexos con f(1)=0. Se confirma la orientación L_rho+t R_sigma,
+incluido t=0, y el extremo cuadrático R_sigma. El subcaso de una involución
+con ambos signos es exacto. El lower Bell de CONTRAST983 es correcto como
+cota inferior de pares completos, para cada generador indicado; no es por
+sí mismo un lower de información mutua real.
+
+No se encontró un falsador de 979/981. Esto no afirma ausencia universal de
+contraejemplos por muestreo: el dictamen matemático se apoya en la derivación,
+y los cálculos son controles complementarios. El upper qubit a lambda=1/2
+es 3/8. La conjetura Umegaki/BKM 971 de 1/3 continúa sin demostración ni
+refutación en esta auditoría. El ejemplo 977 refuta solamente su atajo de
+orden parcial. No se certifica prioridad ni se presenta la búsqueda como
+exhaustiva.
+
+Un segundo suplemento,993, llegó después de991 y se auditó por separado.
+Su familia explícita2x3 demuestra exactitud de h(lambda)=3lambda^2/(1+2lambda)
+para SLD completo, chi^2_min con la definición indicada y el Petz triangular
+f(x)=(x-1)^2/(x+1), para0<lambda<1. No demuestra exactitud Umegaki/MI ni para
+cada generador Petz. El apartado13 reconstruye esa ampliación posterior;
+no se atribuye al paquete987 ni a la búsqueda fija original de988.
+
+Un suplemento 991 llegó DESPUÉS de comenzar la auditoría del paquete987.
+Su certificado racional confirma un par Petz 2x3 con cociente estrictamente
+entre 0.348913969797243957543533972195 y
+0.348913969797243957543760572571. Refuta una extensión indiscriminada del
+upper 1/3 a todos los Petz; no contradice 979/981 ni la conjetura Umegaki971.
+También confirma que una desigualdad auxiliar de varianza con factor2 es
+falsa. Este suplemento y un fallo de control resuelto se conservan y se
+separan expresamente de los nueve payloads iniciales.
+
+1. PROCEDENCIA, INTEGRIDAD Y ALCANCE
+
+Entrada congelada:
+C:\Trabajo\airr\2026-10-27_harmonic987-input\INPUT987.json
+SHA256 5f5d6cb2efdfdceda9ef3f7413dda73d5a588640fc04dcd63d4b7468c160edbe.
+Se verificaron antes de la auditoría el manifiesto y los nueve payloads,
+incluidos sus tamaños. El cierre repite esa comprobación en
+VERIFY987_PREDELIVERY988.json. No se alteraron los paquetes987/979/981.
+
+Payloads, tamaño en bytes y SHA256:
+PROOF979.txt 3999 a7fb8d52615ddc0b397904878cd5800ed04f26d082ecb7eac576b0242ada6784
+check979.py 3610 7b37599413ea358886eb519a72b2df6121ae979e50c645b66d3b409a58863f95
+CHECK979.json 15926 744dea5a6b52f8f1054e191ac8bd9a8fa112e9ff512eebade5d0b10303f3f27c
+PROOF981.txt 4021 20334205a89b43fc4f606998acedb509e75013274370b1db53d7d93b573c3723
+check981.py 3352 92c5f8f1ada94c515b2c5fe0ad17ee87442c24f9359cfc0796034c10cdc31f62
+CHECK981.json 162655 422b583e76d016cae630d5ec39c4309ac47b1d902edd4ea90bd3d1fa18794aef
+COUNTEREXAMPLE977.json 647 0125cd5b8aa1c0e23f95c6cde0e1f405b52b94347d9807f8d5dab334d5c3668d
+NOTE971.txt 3873 ae27d148f29762c92480bd7a3f7cfe401f3e3794ad0c51f13531e1436c343861
+CONTRAST983.txt 2958 4b469ac58cbe9a5391c7016d6a06cdc58f9ec1c54f6d024a79e3d28541ba4954
+
+Se reutiliza explícitamente el contexto de942 y el filesystem compartido.
+No se afirma independencia, aislamiento, ni identidad o esfuerzo efectivos
+atestados. Esta tarea es988, no una reevaluación de942/958. No se leyó otro
+chat, se modificó Git o estado raíz, se publicó ni se desplegaron subagentes.
+Las instrucciones globales y D:\LEEME.md se habían leído en el contexto942
+reutilizado. El trabajo vivo está en C: y se conserva una copia idéntica en D:.
+
+Se leyeron completos los textos y scripts del paquete. Los resultados JSON
+se comprobaron mediante reproducción y comparación. Los 216 screenings
+narrados en971 y las 32 optimizaciones narradas en983 NO están en los nueve
+payloads: sus campañas no se reprodujeron ni se validaron como certificados.
+La batería propia de988 es distinta y no se atribuye a esos trabajos.
+
+2. RECONSTRUCCIÓN ADVERSARIAL DE979
+
+Sea U_j la conjugación local por U_j tensor I_R, y escribamos W_j=U_j W U_j*,
+Z_j=U_j Z U_j*. Todas las dimensiones son finitas. El promedio E puede ser
+un canal no idempotente; no se necesita una expectativa condicional, un grupo,
+ortogonalidad de las unitarias ni conmutación entre ellas.
+
+Para W>0, L_W(X)=WX y R_W(X)=XW son operadores autoadjuntos positivos en el
+espacio Hilbert-Schmidt COMPLEJO. Conmutan entre sí. La forma
+
+ g_W(Z) = integral_0^1 <Z,[(1-u)L_W+u R_W]^{-1}Z> du
+
+tiene, en una base espectral de W con eigenvalores w_i>0, el coeficiente
+(log w_i-log w_j)/(w_i-w_j), interpretado como 1/w_i cuando coinciden.
+Es por tanto Tr Z Dlog_W[Z] para Z hermitiano. No es una aproximación de
+alta temperatura ni presupone [W,Z]=0. En las pruebas numéricas se comparó
+esta expresión espectral con la integral inversa de superoperadores.
+
+Para Q>0 se completa el cuadrado:
+
+ <Z,Q^{-1}Z> = sup_Y {2 Re<Y,Z>-<Y,QY>},
+
+con máximo Y=Q^{-1}Z. El lado derecho es supremo de funcionales afines en
+(Q,Z), luego es conjuntamente convexo. No se restringe Y a matrices
+hermitianas: aun con Z hermitiano, Q^{-1}Z puede no serlo. La dependencia
+lineal de Q en W y la integral positiva dan convexidad conjunta de g en
+(W,Z). La invariancia por conjugación unitaria y g_W(cZ)=c^2 g_W(Z), para
+todo real c, se obtienen directamente. Estas herramientas son antecedentes.
+
+E(Z)=0 equivale a sum_j Z_j=0. Para cualquier t real,
+
+ N_w Z = sum_j w_j ((w_j-t)/w_j) Z_j.
+
+La convexidad anterior, aplicada con pesos w_j POSITIVOS, da
+
+ g_(N_w W)(N_w Z)
+ <= sum_j w_j g_(W_j)(((w_j-t)/w_j)Z_j)
+ = [sum_j (w_j-t)^2/w_j] g_W(Z).
+
+No se escribe ningún estado como mezcla con pesos negativos. Los factores
+negativos, cuando aparecen, multiplican tangentes en una forma cuadrática;
+esto es legal. El supuesto E(Z)=0 se usa exactamente en la cancelación.
+Sin ese supuesto la prueba deja un término t sum_j Z_j y no demuestra h.
+
+La función escalar es 1-2mt+t^2 S, S=sum_j 1/w_j. Su mínimo, en t=m/S,
+es h=1-m^2/S. Por Cauchy-Schwarz, S>=m^2. Con todos los pesos positivos,
+0<=h<1; con pesos uniformes h=0 y N=E, de modo que el numerador se anula.
+Los pesos cero están fuera del enunciado; no se divide por ellos. Cuando
+alguno tiende a cero, el límite de esta fórmula puede ser1 y perder fuerza.
+
+No hay factor de dimensión oculto en estos pasos. Tampoco prueban exactitud
+en general. h depende de la lista de unitarias y sus pesos, no solamente
+del canal abstracto. Si E es inyectivo, no hay pares distintos admisibles:
+la desigualdad sigue siendo cierta, pero no se deduce una fórmula exacta
+para un supremo no especificado sobre un conjunto vacío.
+
+3. INTEGRACIÓN ORIENTADA Y SOPORTES SINGULARES
+
+Para rho,sigma fieles, Delta=rho-sigma y W_s=sigma+s Delta, defínase
+F(s)=Tr W_s log W_s-Tr W_s log sigma. Se tiene F(0)=F'(0)=0, porque
+Tr Delta=0, y F''(s)=g_(W_s)(Delta). Taylor con resto integral da
+
+ D(rho||sigma)=integral_0^1 (1-s) g_(W_s)(Delta) ds.
+
+La misma identidad vale a la salida, con N W_s y N Delta. E Delta=0 se
+mantiene a lo largo de todo el segmento, y N W_s es fiel por unitalidad.
+Aplicando la cota métrica e integrando se obtiene979 para pares fieles.
+Usar s en vez de1-s en este segmento produciría D(sigma||rho), que no es
+intercambiable sin explicación. El control no conmutativo lo distingue:
+0.7032743289664383 frente a0.6594191234845496.
+
+Para estados posiblemente singulares con D(rho||sigma)<infinito, el soporte
+de rho está contenido en el de sigma. En dimensión finita existe c<infinito
+tal que rho<=c sigma. La positividad de N implica N rho<=c N sigma; por
+tanto también hay inclusión de soportes y divergencia finita de salida.
+
+Con n=dim(A tensor R), tome omega=I_n/n y
+rho_e=(1-e)rho+e omega, sigma_e=(1-e)sigma+e omega, 0<e<1.
+Ambos son fieles y E(rho_e-sigma_e)=(1-e)E(rho-sigma)=0. Por convexidad
+conjunta, D(rho_e||sigma_e)<=(1-e)D(rho||sigma). La semicontinuidad inferior,
+combinada con esta cota superior, da convergencia al valor finito. N omega
+=omega, y el mismo argumento da convergencia a la salida. Se pasa al límite
+en D_out<=h D_in, ANTES de dividir por D_in>0.
+
+Esto no exige continuidad uniforme al variar R. Se fija cada R finito, se
+pasa al límite y se conserva la misma h. No se reclama el caso infinito.
+Los marginales regularizados cambian: por ejemplo, si rho_R tiene núcleo,
+rho_(R,e)=(1-e)rho_R+e I_R/r. Se recomputaron en un control2x3 con rho_R
+=diag(1/2,1/2,0). Sustituir el canal local por un reset global daría otra
+salida, con diferencia de norma aproximadamente0.144338 en el límite.
+
+En un argumento de MI, la regularización común de un par rho y rho_A tensor
+rho_R no tiene por qué seguir siendo un par producto real. No constituye
+un defecto aquí:979 se prueba para TODOS los pares con la misma imagen E.
+La aplicación a los pares producto originales se hace después. En los
+controles de MI se calcularon los marginales del estado que se evaluaba.
+
+4. ESPECIALIZACIÓN DEPOLARIZANTE
+
+Una base de error unitario d-dimensional, con m=d^2 y una unitaria identidad,
+satisface E_R(X)=I_A/d tensor Tr_A X. Los pesos indicados en979 son positivos
+para0<lambda<1 y suman uno. El canal es exactamente lambda id+(1-lambda)E.
+La condición igual-E es exactamente igualdad de marginalesR. Al sustituir
+los pesos en h se obtiene
+
+ h_d(lambda)=(d^2-1)lambda^2/[1+(d^2-2)lambda].
+
+La diferencia con la anterior cota de orden d^2 lambda^2/[1+(d^2-1)lambda]
+es lambda^2(1-lambda)/{[1+(d^2-1)lambda][1+(d^2-2)lambda]}>0.
+Para d=2,lambda=1/2: h=3/8, la cota anterior es2/5 y la mejora es1/40.
+Es una comparación algebraica con esa cota concreta; no prueba que h sea
+el mejor upper publicado. Los extremos lambda=0,1 no son necesarios para
+el enunciado abierto0<lambda<1; sus límites dan0 y1, respectivamente.
+
+5. EXTENSIÓN981: TODOS LOS PETZ INDICADOS, PARES FIELES
+
+Se usa la convención
+H_f(rho,sigma)=<sigma^{1/2}, f(L_rho R_sigma^{-1}) sigma^{1/2}>.
+La representación positiva citada está efectivamente en Hiai–Ruskai,
+arXiv1508.03551v1, Prop2.1(i), Eq7 y Eq9, pp5-6; Eq12-13, p7, fijan la
+convención y la forma resolvente. No se necesita simetría f(x)=x f(1/x),
+ni normalizar f''(1), ni limitarse a la clase simétrica K de ese artículo.
+
+Para f(1)=0, se puede restar f'(1)(x-1), que contribuye Tr(rho-sigma)=0.
+Queda b(x-1)^2+integral_[0,infinito) (x-1)^2/(x+t) dmu(t), con b>=0,
+mu positiva y integral (1+t)^(-1)dmu(t)<infinito. Entonces
+f''(1)=2b+2 integral (1+t)^(-1)dmu(t)>0 si f es no afín.
+
+La orientación del kernel se verificó SIN confiar en una coincidencia
+diagonal. Si rho u_i=r_i u_i y sigma v_j=s_j v_j, el operador |u_i><v_j|
+es eigenvector simultáneo de L_rho y R_sigma. Por tanto
+
+ H_f(rho,sigma)=sum_ij s_j f(r_i/s_j)|<u_i,v_j>|^2,
+ <u_i,Delta v_j>=(r_i-s_j)<u_i,v_j>.
+
+Para f_t(x)=(x-1)^2/(x+t), esto da exactamente
+
+ H_(f_t)=sum_ij (r_i-s_j)^2/(r_i+t s_j)|<u_i,v_j>|^2
+        =<Delta,(L_rho+t R_sigma)^(-1)Delta>.
+
+El extremo cuadrático da<Delta,R_sigma^{-1}Delta>=Tr Delta^2 sigma^{-1}.
+El átomo t=0 está permitido y usa L_rho^{-1}; se mantiene finito porque
+rho es fiel. Estos extremos no se deben eliminar ni intercambiar.
+
+Aunque rho y sigma no conmuten, L_rho R_sigma=R_sigma L_rho. Q es positivo
+autoadjunto en el Hilbert-Schmidt complejo y Q_out=sum_j w_j U_j Q U_j*.
+La misma cancelación con Delta_j y el mismo mínimo escalar prueban
+H_(f_t)(N rho,N sigma)<=h H_(f_t)(rho,sigma). El argumento se repite con
+Q=R_sigma para el extremo cuadrático. La representación se integra con
+pesos no negativos. Tonelli y la finitud en pares fieles justifican el paso;
+las eigenrazones están en un compacto de(0,infinito), donde f es finita.
+Para rho!=sigma, al menos uno de los términos positivos no se anula.
+
+En vectorización por columnas, L_rho=I tensor rho y R_sigma=sigma^T tensor I.
+Olvidar esa transposición es un error real para matrices complejas. El
+control guardado da kernel correcto0.8421973465730597; intercambio de los
+estados0.8872726334943122; transposición omitida1.2013113444331498. Restringir
+el dual a hermitianos da0.8159171473832352, estrictamente menor: el máximo
+correcto tiene norma de parte antihermitiana0.6052414742220171.
+
+El resultado981 no demuestra automáticamente igualdad de coeficientes de
+diferentes f. Da un upper COMÚN. No extiende este examen a pares Petz
+singulares, otras familias de divergencias, todos los estados con distintos
+marginales, ni una fórmula exacta de la depolarizante completa.
+
+El suplemento posterior993 establece exactitud sólo para SLD y un Petz
+particular, como se detalla al final; no cambia esta restricción general.
+
+6. INVOLUCIÓN: EXACTITUD DEL SUBCASO
+
+Sea U=U*=U^{-1}, con eigenspaces+ y- no nulos. E=(id+AdU)/2,
+N=w id+(1-w)AdU y0<w<1. Para m=2,
+h=1-4/[1/w+1/(1-w)]=(2w-1)^2.
+El upper anterior vale para cualquier referencia finita y cualquier f del
+enunciado. Para el lower basta R trivial. Tome sigma=I_n/n y un X hermitiano
+no nulo, solamente entre los dos eigenspaces. Entonces Tr X=0, E X=0 y
+N X=(2w-1)X. rho_epsilon=sigma+epsilon X es fiel si
+|epsilon|<1/(n||X||_op).
+
+Como sigma es central, el cálculo se reduce a eigenvalores y
+
+ H_f(rho_epsilon,sigma)
+ =(n/2)f''(1)epsilon^2 Tr X^2+o(epsilon^2).
+
+La razón tiende a(2w-1)^2. El factor f''(1)>0 cancela, incluso si w<1/2
+y cambia el signo de la perturbación de salida. Si w=1/2, N=E y las salidas
+son iguales: el coeficiente es0. El supuesto de ambos signos impide que el
+lower se intente construir en un eigenspace ausente. Esta exactitud es del
+problema restringido igual-E; el canal de dephasing tiene también estados
+diagonales fijos y su coeficiente irrestricto ordinario no es este número.
+
+7. LOWER BELL DIMENSIONAL DE983
+
+Para d>=2, elija dos vectores maximálmente entrelazados ortogonales en
+C^d tensor C^d. Sus proyectores P1,P2 tienen marginales I/d. Con
+sigma_delta=(1-delta)(P1+P2)/2+delta I_(d^2)/d^2,
+Delta=P1-P2 y0<delta<1, hay fidelidad y Tr_A Delta=0. En los dos vectores
+seleccionados sigma vale a=(1-delta)/2+delta/d^2; en el complemento vale
+delta/d^2. rho=sigma+epsilon Delta es fiel si |epsilon|<a.
+
+La salida del canal local es lambda sigma+(1-lambda)I_(d^2)/d^2 porque el
+marginalR es I/d. Vale b=lambda a+(1-lambda)/d^2 en ese plano y N Delta
+=lambda Delta. Para cada f no afín, la expansión conmutativa de los dos
+eigenvalores da H_in=f''(1)epsilon^2/a+o(epsilon^2) y
+H_out=f''(1)lambda^2 epsilon^2/b+o(epsilon^2). El límite local eslambda^2 a/b.
+Primero epsilon->0 a delta fijo y luego delta->0 da
+
+ c_pair,f >= d^2 lambda^2/[2+(d^2-2)lambda].
+
+Puede elegirse una sola secuencia fiel, por ejemplo epsilon=delta^2/100:
+a y b permanecen separados de cero y el error relativo de Taylor se anula
+para cada f fijo. No hace falta reclamar uniformidad simultánea sobre f.
+Para d=2,lambda=1/2 da1/3; para d=3 da9/22 frente al upper4/9. Los controles
+de alta precisión incluyen d=2,3,4, tres lambdas y tres deltas.
+
+El segundo estado sigma_delta no es el producto de los marginales del
+primero. Por ello no se sustituye H(rho,sigma_delta) por I(A:R)_rho. En el
+control d=2,delta=.1,epsilon=.01, el cociente de pares Umegaki es
+0.32757239318645476, mientras que el cociente MI real es
+0.21228446495620382. La distancia entre sigma_delta y el producto real es.45.
+La construcción tampoco prueba exactitud en d>2 o saturación de h.
+
+8. TRES OPTIMIZACIONES DIFERENTES Y LA CONJETURA971
+
+Para Umegaki, MI real usa D(rho_AR||rho_A tensor rho_R), con los marginales
+del propio rho. El coeficiente completo de pares usa rho_AR,sigma_AR
+arbitrarios con rho_R=sigma_R. El condicional permite rho_R!=sigma_R y resta
+D(rho_R||sigma_R) tanto en numerador como en denominador. Los dominios y las
+referencias son distintos. La inclusión de los pares producto en los pares
+con igual marginal da eta_MI<=eta_pair; 979 controla esta última. No da un
+upper h para el coeficiente condicional con marginales distintos.
+
+Para el qubit lambda=1/2, el lower1/3 de MI separable procede del resultado
+previo942 reutilizado y de sus hipótesis ya auditadas; no se ha vuelto a
+auditar957 aquí. El lower Bell da1/3 directamente para pares. Por tanto el
+estado del conocimiento retenido es
+
+ 1/3 <= eta_MI <= eta_pair <= 3/8
+
+para Umegaki, sin colapsar este intervalo. El nuevo upper es3/8, no1/3. Los
+valores observados en una búsqueda de dimensión finita no suministran el
+upper pendiente para todas las referencias finitas. El suplemento991 además
+prohíbe trasladar sin más la conjetura1/3 Umegaki a todos los Petz.
+
+977: con K=(3/2)P_Phi+ +I4/8 y X=4P_Phi+-I4, se confirma Tr_A K=I2,
+Tr_A X=0, Tr_A(X K X)=(15/2)I2 y Tr_A X^2=6I2. La diferencia positiva es
+(3/2)I2. Es un contraejemplo exacto al atajo de orden propuesto. Tomando
+sigma=K/2 y lambda=1/2, el control BKM de la misma dirección da
+g_sigma(X)=768/13 y g_(N sigma)(lambda X)=768/85: razón13/85, menor que1/3.
+No se reinterpreta977 como un falsador BKM o de pares Umegaki.
+
+9. SUPLEMENTO POSTERIOR991: AUDITORÍA SEPARADA
+
+Llegó mediante mensaje del padre cuando la reconstrucción y la batería fija
+de988 ya se habían ejecutado. No estaba enINPUT987. Se inspeccionaron sus
+bytes, se calcularon hashes y se congelaron copias dentro de988. Se conserva
+contexto compartido; no es evidencia de una búsqueda independiente.
+
+PETZ-CERTIFICATE991.json
+469d8e2581557bbb8cbd340c0f5ab7dea62e46e7de8ffc9bbcce26ae8e6b0d5b
+VARIANCE-CERTIFICATE991.json
+f605c33973e914c910c6298ab914dd277fa884d8def1cba648eb8bc58fc1a361
+petz991.py
+8ee06177e6cfe69dee02fa155f6b460a1d07324ccb2480be0f964b317e8eee19
+variance-certificate991.py
+1aed164fb5e9b0864ddddc2eba98f967fe2502e81eca80f3dc4995b56ce574a2
+
+No se ejecutaron los scripts991 suministrados: escriben en su directorio.
+audit_supplement991.py recomputa racionalmente desde las matrices publicadas.
+El certificado Petz define sigma mediante dos vectores de rango2 y un piso
+I6/6000. Se verifican traza1, hermiticidad y Tr_A Delta=0 exactamente. Para
+epsilon=10^-7, ||Delta||_F<12 y sigma>=I/6000 implican rho=sigma+epsilon Delta
+>I/12000. El canal local es N(X)=X/2+I2 tensor Tr_A X/4 y es unital. Así
+Q=L_rho+R_sigma y su versión de salida son >=I/6000; de hecho la cota
+inferior utilizada es conservadora.
+
+Para una solución racional aproximada Y de QY=Delta, residuo r=Delta-QY,
+se usa la identidad exacta
+
+ <Delta,Q^{-1}Delta>
+ =2 Re<Delta,Y>-<Y,QY>+<r,Q^{-1}r>.
+
+Si Q>=cI, el último término está entre0 y||r||^2/c. Esto certifica intervalos
+racionales a entrada y salida. Se recalcularon ambos duales y ambos residuos,
+sin resolver numéricamente el inverso para certificar el signo. A la salida
+la dirección es N Delta=Delta/2: el factorlambda^2 está incluido.
+Las divergencias reales llevan epsilon^2; cancela en el cociente. El lower
+de la razón y el gap respecto a1/3 coinciden exactamente con el certificado.
+El upper racional propio u_out/l_in es menor que3/8. Queda confirmado el
+intervalo de la cabecera para f(x)=(x-1)^2/(x+1), un generador permitido981.
+
+El numerador y denominador Petz son del orden10^-14 y10^-13, respectivamente.
+La certificación racional evita inferencias por cancelación de flotantes.
+Como contraste separado, una integral BKM con epsilon^2 factorizado da razón
+Umegaki finita aproximadamente0.13630565408562262 y tangente0.13630565408750686.
+Es un control numérico, no un certificado racional Umegaki, y no está cerca
+de refutar1/3. El lower Bell1/3 para Petz tampoco es un upper: este ejemplo
+muestra que no es exacto para ese f en el problema completo qubit.
+
+El certificado de varianza usa
+V_sigma(H)=inf_(B=B*) Tr sigma(H-I_A tensor B)^2,
+con E sigma=I2/2 tensor sigma_R y Tr_A H=0. Escribiendo
+C=Tr_A((sigma H+H sigma)/2) y Q(B)=(sigma_R B+B sigma_R)/2,
+V_sigma(H)=Tr sigma H^2-<C,Q^{-1}C>. El piso de sigma da Q>=I/300000.
+Aplicando el mismo control de residuos al aproximante B se reproduce
+V_sigma(H)/V_(E sigma)(H)>=2.99311283224051873119360739785>2.
+En E sigma el minimizador es B=0 por Tr_A H=0. El gap racional positivo
+contra el factor2 coincide con el JSON original. La ruta de varianza falla;
+esto no sustituye una desigualdad BKM ni refuta971 por sí solo.
+
+Incidente conservado: un chequeo de traza de esta última matriz dio falso
+al comparar estructuralmente una expresión SymPy no simplificada con1.
+No se borró ni reejecutó para ocultarlo. SUPPLEMENT991_AUDITED988.json
+conserva25 verificaciones, una marcada fallida. resolve_trace988.py y
+SUPPLEMENT991_TRACE_RESOLUTION988.json prueban por aritmética racional que
+Tr(GG*)=15617/15625, Tr sigma=1 y que la expresión original menos1 se
+simplifica exactamente a0. Fue un error de comprobación sintáctica propio,
+no un fallo de normalización del certificado.
+
+10. CONTROLES, REPRODUCCIÓN Y FALSACIÓN ACOTADA
+
+El script979 suministrado tiene una cola que escribe resultados, manifiestos
+y copia el directorio a D:. Se copiaron los scripts a988 con rótulo
+DO_NOT_RUN y se extrajeron sólo sus prefijos computacionales, tras comprobar
+hashes y revisar llamadas de escritura en el AST. Se excluyeron las colas
+mediante marcadores exactos, conservados enREPRODUCTION988.json. Nunca se
+ejecutó un script dentro del paquete congelado ni se tocó su destino D:.
+
+979 reproducido:48 casos métricos y48 de pares finitos,2 identidades escalares,
+cero fallos. El JSON coincide byte a byte conCHECK979.json.
+981 reproducido:60 pares,600 comprobaciones de divergencias,360 identidades
+resolventes, cero fallos; error absoluto máximo1.700029006457271e-16. Coincide
+semánticamente conCHECK981.json al excluir únicamente la fechaUTC. La
+diferencia de hash por esa fecha está declarada, no ocultada.
+
+controls988.py fija semilla9882710 antes de ejecutarse. Guarda todos los
+casos y mejores matrices/direcciones, sin reinicios elegidos por resultado:
+
+* 25 pares fieles con marginales iguales, extremos generados por separado,
+  d=2,3; R=1,2,3 según el caso; lambda=.05,.2,.5,.8,.95;13 generadores.
+* 16 pares con listas no conmutativas {V,VU,W,WU}, E generalmente no
+  idempotente y tangente impar bajo una involución U. Pesos uniformes,
+  desbalanceados y uno de10^-5; se controla la cancelación, los13 Petz yBKM.
+* 135 bases fieles en(d,r)=(2,2),(2,3),(2,4),(3,2),(3,3), rangos de origen
+  1,2 y dr, pisos10^-2,10^-5,10^-8 y tres extracciones por combinación.
+  En cada base se optimiza TODA la dirección hermitiana con Tr_A Z=0
+  mediante un problema de eigenvalores generalizado, para BKM y el extremo
+  cuadrático:270 optimizaciones, no270 optimizaciones globales de la base.
+* Comparación de fórmulas integrales/espectrales, extremos cuadráticos,
+  mutaciones de orientación/transposición y dual hermitiano, regularización
+  singular,27 puntos de involución y27 puntos Bell con13 generadores cada
+  uno calculados en alta precisión, MI real frente a pares y ejemplo977.
+
+Resultado fijo:1494 comprobaciones, cero fallos y cero excepciones. En el
+caso h=0 aparecen residuos numéricos del orden10^-15, cubiertos por la
+tolerancia declarada. No se interpretan como divergencias negativas o
+falsadores. Máximos tangentes a lambda=1/2: qubitBKM0.3212584060760852,
+qubitcuadrático0.2974483059830357, qutritBKM0.3506057925653456,
+qutritcuadrático0.3445355820192853. Ningún caso qubit de esa batería excedió
+1/3; esta frase no incluye todos los Petz ni el suplemento posterior991.
+
+Los casos con piso10^-8 pueden tener condición de Gram2.48x10^8. El máximo
+residuo relativo del eigenproblema fue2.07x10^-8 y la discrepancia máxima
+con evaluación directa3.69x10^-8, frente a tolerancia10^-7. Se conservan
+estos límites; no son aritmética intervalar ni prueba universal.
+
+supplement988.py construye16 pares finitos fieles desde las cuatro mejores
+direcciones retenidas, con cuatro amplitudes relativas. Compara Umegaki
+directo con su integralBKM; máxima discrepancia entre razones8.01x10^-10,
+cero incidencias de sus umbrales. Añade cuatro regularizaciones con marginalR
+singular y canal local correctamente recomputado. Estas validaciones no
+descartan un contraejemplo en otra base, otra dimensión u otro generador.
+
+La búsqueda de un falsador genuino fue, por tanto, de pares válidos y de
+direcciones que respetan las restricciones, no sólo una inspección del
+valor de la fórmula. No produjo un falsador979/981. El resultado adverso991
+contra el upper Petz1/3 sí se conserva como resultado material posterior.
+
+11. ANTECEDENTES PRIMARIOS Y NIVEL DE LECTURA
+
+READINGS988.txt ysource_fetch988.jsonl detallan URLs, versiones, hashes y
+las páginas seleccionadas. Se conservaron sólo síntesis propias y metadatos;
+los PDF se procesaron en memoria, sin una biblioteca o caché extranjera en
+la entrega. No se contactó a autores. Los siguientes son contrastes de
+hipótesis, no certificados de prioridad.
+
+Hiai–Ruskai,1508.03551v1, https://arxiv.org/pdf/1508.03551v1:
+se leyeron los enunciados deProp2.1 yEq7-13, la prueba deProp2.2, definiciones
+y partes de§§5-7. El resultado qubit unital6.1 es ordinario sin referencia;
+su enunciado no controla la amplificación igual-marginal. La prueba7.1
+inspeccionada usa la divergencia BKM simetrizada. Por eso el peso1-s para
+Umegaki no simétrico se derivó aquí directamente. No se auditó todo su
+ApéndiceB ni se importó su terminología sin comprobar la convención.
+
+Lesniewski–Ruskai,math-ph/9808016v1,
+https://arxiv.org/pdf/math-ph/9808016v1:
+se leyeron secciones de definiciones, la representación2.5, la prueba
+resolvente2.15 y la prueba4.3/observación sobre convexidad conjunta métrica.
+La orientación de sus argumentos P,Q es distinta de la convención981 y debe
+traducirse. En los pasajes leídos hay maquinaria esencial anterior, pero no
+se identificó allí la fórmula armónica de cancelación. La versiónPDF tiene
+los signos de monotonía de(56)-(57), p17, invertidos; se confirmó visualmente.
+Un reset hace el lado de salida0 para dos estados distintos y refuta esos
+signos literales. El teorema2.15 siguiente tiene la dirección correcta.
+Esta errata de fuente no afecta la prueba reconstruida; no se adopta como
+axioma ni se atribuye a979/981. No se revisaron todos los posibles errata.
+
+Hirche,2405.00105v2, https://arxiv.org/pdf/2405.00105v2:
+se leyeron§II y§III, incluida la definición de f mediante hockey-stick,
+CorIII.1, PropIII.3 y el cálculo depolarizanteIII.28-31. El coefficient
+Doeblin positivo es el peso de reemplazo,1-lambda, y da el baselinelambda.
+Su familia f definida enII.1 no se identifica sin más con los Petz de981.
+La igualdad allí entre coeficientes de funciones operator-convexas no se
+transfiere a nuestro problema completo Petz.
+
+George–Hirche–Nuradha–Wilde,2503.22823v3,
+https://arxiv.org/pdf/2503.22823v3:
+se leyeron definiciones de§6 y pruebas deProp30,Prop31 yCor7, pp40-43.
+Exigen igual marginalR para los pares completos. Cor7 integra la familia
+hockey-stick deEq6.29 con factor1-alpha_+, no una representación resolvente
+Petz universal. Es un antecedente cercano de cotas completas, pero las
+pruebas inspeccionadas no proporcionan la constanteh por el mero cambio
+de notación. No se declara descartado todo el artículo ni sus referencias.
+
+Belzig–Gao–Smith–Wu,2411.19890v3,
+https://arxiv.org/pdf/2411.19890v3:
+se leyó§7, Def7.1 y su explicación del upper1-p por convexidad conjunta.
+Aquí p=1-lambda. Su cociente usa MI real con referencia cuántica.979 lo
+acota por inclusión de pares producto, mejorando ese baseline concreto.
+No es una prueba de novedad respecto de toda la literatura ni una igualdad
+entre el coeficiente MI y el de pares completos.
+
+Hirche–George–Nuradha–Wilde,2608.27171v1,
+https://arxiv.org/pdf/2608.27171v1:
+se leyeron las definiciones pertinentes,Prop2 y su prueba, Lemma5 y su
+prueba de referencia producto,Cor3 y§3.3. Las ecuaciones3.64-3.65 son
+testigos inferiores finitos, no valores optimizados. La cadena3.59-3.62
+separa MI real, pares completos y condicionales; las preguntas3.66 siguen
+presentadas como abiertas en esa versión. La cota Doeblin deProp2 requiere
+convexidad conjunta y conserva la distinta definición condicional.
+
+Gao–Wang,2609.20753v2 y2610.35863v1, respectivamente
+https://arxiv.org/pdf/2609.20753v2 y https://arxiv.org/pdf/2610.35863v1:
+se contrastaron hipótesis de los teoremas introductorios; para el primero
+tambiénProp2.2 y su prueba. El primero usa estado fiel invariante y normas
+hipercontractivas; el segundo usa expectativa condicional sobre el álgebra
+fija, hiperacotación condicional y coercividadGNS. Su referencia es sigma
+invariante oE_*rho, y sus constantes dependen de esos datos. No son el mismo
+enunciado que dos estados arbitrarios con igualE bajo un promedio que ni
+siquiera debe ser idempotente. Sólo se inspeccionaron pasajes seleccionados;
+no se auditó la totalidad de las pruebas o su eventual especialización.
+
+El artículo de26octubre se localizó durante esta búsqueda y se fue a la
+fuente primaria; no se confió sólo en el resumen de un agregador. Los
+antecedentes de espectros depolarizantes, capacidadEA o ventajaEA ilimitada
+no se presentan como novedades aquí. No se ha establecido una prioridad
+mundial para979,981, la involución ni el lower Bell. Una búsqueda negativa
+por palabras clave no permite establecerla.
+
+12. OBJECIONES RETENIDAS Y LÍMITES DE LA ENTREGA
+
+No se halló una objeción fatal a los componentes afirmados dentro de su
+alcance. Sí quedan expresamente retenidas estas restricciones: pesos>0,
+igualE, dimensión finita, divergencia Umegaki finita; fidelidad para la
+extensión Petz; dual complejo; extremos cuadráticos; ausencia de exactitud
+depolarizante Umegaki y de upper1/3 Umegaki; Bell es un lower de pares; ausencia de
+un resultado condicional de marginales distintos o de tensorización.
+
+Se retienen además dos atajos refutados(977 y varianza991), el falsador
+Petz1/3 posterior, un error sintáctico propio de control y su resolución,
+el intento de lectura de un nombre de script inexistente, truncamientos
+de salida bibliográfica y un timeout de capturaPDF con alternativa en
+memoria. INCIDENTS988.txt los detalla. No se reescribieron los resultados
+adversos para convertirlos en una campaña sin incidencias.
+
+La validez matemática declarada es una revisión técnica por reconstrucción,
+no una verificación formal ni una atestación de otra identidad. La cobertura
+numérica y bibliográfica es limitada y explícita. No hay recomendación de
+publicación, manuscrito redactado ni valoración numérica.
+
+Entregas:
+C:\Trabajo\airr\2026-10-27_harmonic988-audit
+D:\Proyectos\airr-investigacion\2026-10-27_harmonic988-audit
+MANIFEST988.json, SHA256SUMS988.txt y DELIVERY988.json documentan los hashes
+y la copia idéntica. El manifiesto no intenta contener su propio hash.
+
+13. SUPLEMENTO POSTERIOR993: EXACTITUD SLD Y PETZ TRIANGULAR
+
+Este apartado se añadió después de la auditoría anterior y de recibir el
+aviso de congelación993. No se leyó una revisión anterior dePROOF993.
+La versión efectivamente leída y copiada tiene SHA256
+ef8fcbbfb1de213c190da71d4ff5135e2b7dd10db19c5819e25b67d46f19423f.
+SYMBOLIC993.json tiene SHA256
+dca32f64630d496b4e4a045bd52d5b4595acdd05a5f99e74d1fe8699b627f86e
+y verify993.py tiene SHA256
+8dad90954feed81609c12f8c65131feaaecd6cc2b2624db74535da197943ebfb.
+El aviso del padre identifica el paquete como congelado; los hashes
+anteriores fueron comprobados al leer. No se ejecutóverify993.py ni se
+modificóvariance993. Los controles propios están enSUPPLEMENT993_AUDITED988.json.
+
+Dictamen: la demostración propuesta es válida, con el orden de límites
+que declara, para cada0<lambda<1. Se prueba exactitud del SUPREMO completo
+SLD, y del supremo de pares fieles Petz triangulares. No se afirma que un
+par fiel alcance el máximo, ni queR=3 sea la mínima referencia posible.
+
+El upper SLD aplica directamente la convexidad inversa con
+Q_sigma=(L_sigma+R_sigma)/2 y las cuatro conjugacionesPauli. Las tangentes
+con Tr_A Delta=0 cancelan, y el mínimo escalar es3lambda^2/(1+2lambda).
+Para el Petz triangular se usa Q=L_rho+R_sigma y la prueba981. Ningún upper
+precisa pasar al borde o usar datos de optimización.
+
+Para el lower, ordene|00>,|01>,|02>,|10>,|11>,|12>. Con e>0,
+a=(1,0,0,0,e,0), b=(0,e,0,0,0,1) y
+sigma_e=(aa*+bb*)/[2(1+e^2)], el proyector de soporte esP=2sigma_e.
+Delta tiene bloqueZ=[[0,-1],[-1,-2e]] en(0,4), bloque-JZJ en(1,5),
+J=[[0,1],[1,0]], y cero en el resto. Se verificaron exactamente
+P^2=P, Tr sigma=1, Tr_A Delta=0 y(I-P)Delta(I-P)=0.
+
+En el primer bloque, los vectores de soporte y núcleo proporcionales a
+(1,e) y(-e,1) dan amplitudes Delta_ss=-2e, Delta_sk=-1 yDelta_kk=0.
+En el segundo bloque las magnitudes son las mismas. Los eigenvalores de
+sigma en soporte y núcleo son1/2 y0. La forma SLD límite tiene coeficientes
+2 en soporte/soporte y4 en soporte/núcleo, y no recibe término núcleo/núcleo.
+Su valor total es16(1+e^2), también reproducido desde
+4Tr Delta^2-2Tr(P Delta P)^2, con trazas4+8e^2 y8e^2.
+
+El marginalR esdiag(1,2e^2,1)/[2(1+e^2)], fiel para e>0. La salida en el
+primer bloque esW=[[1+lambda,2lambda e],[2lambda e,2e^2]]/[4(1+e^2)].
+Su determinante es e^2(1-lambda)(1+2lambda)/[8(1+e^2)^2]>0. El otro bloque
+esJWJ. Los dos singletons valen(1-lambda)/[4(1+e^2)] y tienen tangente0.
+La salida completa es fiel a e fijo. ResolverWY+YW=2Z, multiplicar porZ
+y contar ambos bloques da el cociente exacto
+
+ R_e(lambda)=lambda^2(4e^2lambda+2e^2+3lambda+3)
+             /[(2lambda+1)(2e^2+lambda+1)].
+
+El cálculo simbólico propio reproduce el gap
+h-R_e=4e^2lambda^2(1-lambda)/[(2lambda+1)(2e^2+lambda+1)]>0,
+y R_e->h cuando e->0. Se conservó la solución racionalY, no sólo una
+bandera de que un script suministrado terminó bien.
+
+Paso fiel: a e fijo, sigma_(e,delta)=(1-delta)sigma_e+delta I6/6 comparte
+los eigenspaces de sigma_e. El bloque núcleo/núcleo de Delta es exactamente
+cero; los denominadores SLD restantes tienden a valores positivos. Su
+forma converge al valor finito16(1+e^2). La salida converge aN sigma_e>0,
+por lo que su forma también converge. Así el supremo sobre bases fieles
+es al menosR_e, y luego al menosh al enviar e->0.
+
+Para el Petz triangular, a e,delta fijos y t suficientemente pequeño,
+rho_t=sigma_(e,delta)+tDelta es un estado fiel de igual marginalR.
+La positividad se garantiza, por ejemplo, por
+|t| ||Delta||_op<delta/6. La identidad resolvente da
+H_triangle(rho_t,sigma_(e,delta))/t^2 ->g_SLD(Delta)/2,
+con el mismo factor1/2 a la salida. El orden t->0, luego delta->0 y por
+último e->0 prueba el lower del supremo de pares fieles. Una elección
+diagonal de parámetros existe por continuidad a cada paso; no se necesita
+uniformidad en el borde. Los nueve pares propios a85 dígitos son controles
+de esta realización, no la justificación de los límites.
+
+chi^2_min, definido aquí como g_sigma^SLD(rho-sigma), es exactamente
+cuadrático. Cada tangente admisible en una base fiel se realiza con t pequeño,
+y todo par fiel suministra una tangente admisible. Por tanto su coeficiente
+igual-marginal coincide con elSLD. Este chi-cuadrado finito no es el Petz
+triangular finito: este último utiliza L_rho+R_sigma, no L_sigma+R_sigma.
+
+Consecuencia delimitada: h es el mejor upper uniforme sobre todos los Petz
+de981, porque se obtiene para toda la familia y este miembro tiene supremoh.
+Eso no significa que todos los miembros tengan coeficienteh. En particular,
+el límite inputBKM en esta dirección tiene contribuciones soporte/núcleo
+que divergen logarítmicamente cuando delta->0 a e fijo, mientras la salida
+permanece fiel. El mecanismoSLD no prueba un lowerBKM de3/8. No cambia el
+intervalo Umegaki/MI ni la condición de abierta de971.
+
+Se hicieron26 verificaciones propias(17 simbólicas o estructurales y9 pares
+fieles), cero fallos. Los pares se evaluaron espectralmente en dimensión6
+con85 dígitos, utilizando parámetros distintos averify993.py. Un ejemplo
+e=1/50,lambda=1/2 da razón Petz finita
+0.37493336870329148260169324939762436244005776073302770195125385653,
+por debajo de3/8 y próximo al valor de su fórmula de borde.
+
+No se reprodujeron las ocho optimizaciones ni las rutas de escalera fallidas
+narradas enPROOF993; sus archivos no forman parte de la entrada auditada.
+Se mantiene la salvedad de antecedentes: la comparación ordinaria qubit
+de Hiai–Ruskai es anterior; la exactitud completa de993 no recibe aquí un
+certificado de novedad. La literatura contrastada para988 sigue siendo una
+selección y no una búsqueda exhaustiva específica adicional de993.

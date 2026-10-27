@@ -954,6 +954,54 @@
       "anchors": [
         "domain.quantum_information_theory"
       ]
+    },
+    {
+      "id": "ruskai-szarek-werner-normalform-2001-scoped",
+      "title": "An Analysis of Completely-Positive Trace-Preserving Maps on M2",
+      "url": "https://arxiv.org/abs/quant-ph/0101003v2",
+      "kind": "preprint",
+      "published_on": null,
+      "observed_on": "2026-10-27",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Selected Eq4 signed normal form and Lemma11/Eq34 Choi local-unitary covariance were read. These are prior reductions used by candidate997.",
+      "limits": "Not all32pages audited; the normal form is not a new contribution and does not prove the proposed contraction formula.",
+      "reuse": "Bibliographic metadata and original synthesis only; no source body redistribution.",
+      "anchors": [
+        "domain.quantum_information_theory"
+      ]
+    },
+    {
+      "id": "george-tomamichel-correlation-2026-scoped",
+      "title": "A Unified Approach to Quantum Contraction and Correlation Coefficients",
+      "url": "https://arxiv.org/abs/2505.15281v3",
+      "kind": "preprint",
+      "published_on": null,
+      "observed_on": "2026-10-27",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Abstract, contents, input-dependent coefficient discussion and selected Eq118/127/128 and Lemma67 statement were read. This supplies related chi-square and correlation machinery.",
+      "limits": "No complete theorem-by-theorem novelty exclusion or whole-paper proof audit. Initialv2 reading followed by currentv3; absence of a keyword does not rule out coverage.",
+      "reuse": "Bibliographic metadata and original synthesis only; no source body redistribution.",
+      "anchors": [
+        "domain.quantum_information_theory"
+      ]
+    },
+    {
+      "id": "george-doeblin-2026-scoped",
+      "title": "Quantum Doeblin Coefficients: Interpretations and Applications",
+      "url": "https://arxiv.org/abs/2503.22823v3",
+      "kind": "preprint",
+      "published_on": null,
+      "observed_on": "2026-10-27",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Selected Def4/Eq3.1, Theorem5, Lemma6 and theorem proof read; published PDFpage52 visually checked. Parent exact primal/dual diagnostic records a counterexample to Theorem5 as printed for(id+AdX+AdY)/3.",
+      "limits": "The diagnostic has no external audit or priority certificate. It targets one equivalence, not the whole108page paper. arXiv and journal byte hashes differ; no byte identity is asserted.",
+      "reuse": "Bibliographic metadata and original synthesis only; no source body redistribution.",
+      "anchors": [
+        "domain.quantum_information_theory"
+      ]
     }
   ],
   "candidates": [
@@ -1277,8 +1325,8 @@
     },
     {
       "id": "sharp-separable-reset-depth",
-      "title": "Sharp separable/PPT MI decay and pure-reset depth threshold",
-      "status": "queued",
+      "title": "Reference-assisted contraction: sharp separable reset and complete SLD candidates",
+      "status": "under_audit",
       "confidence": "speculative",
       "paper_score": null,
       "source_ids": [
@@ -1292,18 +1340,21 @@
         "gao-zhao-tight-2026-scoped",
         "trelat-zuazua-gramian-2026-scoped",
         "hiai-ruskai-contraction-2015-scoped",
-        "belzig-reverse-dpi-v3-scoped"
+        "belzig-reverse-dpi-v3-scoped",
+        "ruskai-szarek-werner-normalform-2001-scoped",
+        "george-tomamichel-correlation-2026-scoped",
+        "george-doeblin-2026-scoped"
       ],
       "node_ids": [
         "domain.quantum_information_theory"
       ],
-      "dictionary": "Unilateral reduction order maps to a pathwise BKM bound; a rational separable coherent sequence maps to the same sharp limit. Composition of pure replacement stages maps to the smallest eigenvalue and rank of accumulated replacement noise.",
-      "preserved": "All finite reference dimensions, actual product marginals and explicit finite MI limits; no commutativity premise. Pure-reset depth result retains exact mixture form, no feedback/extra memory, and freely chosen stage retentions at fixed product L.",
-      "lost_or_unproved": "Unrestricted qubit exact1/3 upper and worldwide priority remain unproved.979 harmonic upper3/8 and981 faithful Petz extension are unreviewed parent derivations;983 local optimization cannot prove a supremum.977 refutes a naive conditional-order shortcut, not the conjecture. No unequal-reference conditional, capacity or tensorization conclusion.",
-      "hypothesis_to_remove": "Eliminate the unrestricted-reference BKM estimate, not merely the logarithmic generator restriction.981 removes a generator restriction for faithful equal-E pairs but does not close the1/3--3/8 gap.",
-      "falsifier": "One stable valid faithful equal-marginal tangent exceeding1/3 refutes971; a pair exceeding h refutes979/981. A covering prior theorem defeats novelty. Preserve the exact977 counterexample and all optimizer outcomes.",
-      "next_finite_task": "Prove or falsify a uniform partial-trace-zero BKM inequality for every finite reference. Compare harmonic cancellation against covering random-unitary/Doeblin results; do not infer novelty from search absence. Consolidate analytic results rather than produce separate minor-corollary papers.",
-      "review_packet": "One full exact9page review958 is terminal: importance4.0, global4.5, technical8.5, original minor_revision. Exact PDF5542d250... has public Working-paper release ARR-2026-0JN84GQ1MD8FW9WRv1; not Accepted. Same-review967 is format-only, not another vote; O1 unchanged and clarified nonblocking minor bibliographic revision. Effective identity/independence unattested. Audit952 is terminal for950; full958 covers955. Later977/979/981/983 are NOT part of exact957, its review958, or its scores. No scientific review of these later derivations has been obtained."
+      "dictionary": "The uniform Pauli twirl kills same-reference differences, allowing harmonic coefficient cancellation in positive inverse quadratic forms. A two-support A2R3 ladder maps the limiting Sylvester system to the same harmonic expression; signed qubit normal form maps Pauli probabilities to normalized Choi eigenvalues.",
+      "preserved": "Every finite reference and equal-reference constraint, faithful finitePetz pairs, positive weights for the direct interior argument, ordered t/xi/epsilon limits. Boundary channel regularization is separate. Actual-product MI and complete two-state coefficients stay distinct.",
+      "lost_or_unproved": "988supports979/981 and separately delivered991/993 within hypotheses, without a manuscript score.997proposes allPauli/allunitalSLD, minimalchi-square and triangularPetz exactness but remains unaudited. BKM/Umegaki1/3 remains open; no nonunital/higherWeyl/capacity/tensorization result, minimum reference dimension or worldwide originality.",
+      "hypothesis_to_remove": "997seeks to eliminate isotropy from the exactSLD993result; signed normal form then eliminates a preferred Pauli basis for unitalqubit channels. This does not eliminate the metric restriction or solve the separate BKM problem.",
+      "falsifier": "Invalid Sylvester/block/regularization identities or a valid-assumption pair exceedingh refute997. A BKM tangent exceeding1/3 refutes971, whereas991Petz does not. A covering earlier theorem defeats novelty. Preserve989centering barrier and exact991failed variance route.",
+      "next_finite_task": "Finish the one full exact995PDF review998 and ordinary-author publication with its real report. Then audit997boundary/normalform and covering sources before a substantive version. No grade-targeted restart or separate minor-paper fragmentation.",
+      "review_packet": "One full exact9page review958 is terminal: importance4.0, global4.5, technical8.5, original minor_revision. Exact PDF5542d250... has public Working-paper release ARR-2026-0JN84GQ1MD8FW9WRv1; not Accepted. Same-review967 is format-only, not another vote; O1 unchanged and clarified nonblocking minor bibliographic revision. Effective identity/independence unattested. Audit952 is terminal for950; full958 covers955. Later977/979/981/983 are NOT part of exact957, its review958, or its scores. No scientific review of these later derivations has been obtained. Later988 is terminal, component-only and unscored:979/981valid,991certificates and993SLDsharpness supported; all objections retained, reused942context/sharedfilesystem, identity and independence unverified. Exactsevenpage995PDF37926f... has one full998review in progress with reused952context; no score available.997is outside995 and has no review or grade."
     }
   ],
   "source_refresh": {
@@ -1360,6 +1411,10 @@
     "followup985": {
       "evidence": "integrations/research-radar/evidence/2026-10-27-harmonic-petz/READING983.json",
       "scope": "Directed primary index/metadata refresh with hashes/commits, selected definition comparisons; not exhaustive. Own bounded controls and speculative derivations carry no score."
+    },
+    "followup1001": {
+      "evidence": "integrations/research-radar/evidence/2026-10-27-pauli-audit/READINGS997.json",
+      "scope": "12directedprimary endpoints with hashes and OpenAI/DeepMind commits; first100publicrepo metadata only. Bibliographic inventory is not proof coverage.997speculative;988component-only and998fullPDFreviewpending."
     }
   }
 }

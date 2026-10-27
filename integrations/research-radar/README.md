@@ -123,3 +123,5 @@ The [sharp-separable and reset-depth update](notes/2026-10-27-sharp-separable-re
 The [completed958 and next-question update](notes/2026-10-27-reviewed-reset.md) preserves the real importance4.0/global4.5/technical8.5 distinction, pending O1 and same-vote provenance, records close prior art, and keeps968/971 as unreviewed research rather than extra papers.
 
 Latest correlation follow-up: [harmonic cancellation and the unresolved complete bound](notes/2026-10-27-harmonic-petz-gap.md) consolidates977/979/981/983 with the failed shortcut, scoped primary comparison and unreviewed finite controls; no new manuscript grade.
+
+Latest follow-up: [audited components and pending full-Pauli extension](notes/2026-10-27-pauli-audit.md) retains all audit 988 objections, exact 991 refutations, 993 sharpness and the unreviewed 997 extension; the full 995 PDF review 998 remains separate and pending.

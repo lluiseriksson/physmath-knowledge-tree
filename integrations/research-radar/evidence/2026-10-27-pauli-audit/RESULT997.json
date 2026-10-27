@@ -1,0 +1,327 @@
+{
+  "seed": 997,
+  "scope": "20fixed budgetrank2qubit-qutrit SLD optimizations across5Pauli channels, outside995. No sharpness or universal maximum is proved.",
+  "regularization": 1e-05,
+  "rows": [
+    {
+      "weights": [
+        0.625,
+        0.125,
+        0.125,
+        0.125
+      ],
+      "harmonic_upper": 0.375,
+      "rep": 0,
+      "value": 0.37477248777226724,
+      "initial": 0.3341003871790025,
+      "success": true,
+      "iterations": 61,
+      "evaluations": 2750,
+      "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+    },
+    {
+      "weights": [
+        0.625,
+        0.125,
+        0.125,
+        0.125
+      ],
+      "harmonic_upper": 0.375,
+      "rep": 1,
+      "value": 0.37404021300188733,
+      "initial": 0.3563368568549488,
+      "success": true,
+      "iterations": 13,
+      "evaluations": 875,
+      "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+    },
+    {
+      "weights": [
+        0.625,
+        0.125,
+        0.125,
+        0.125
+      ],
+      "harmonic_upper": 0.375,
+      "rep": 2,
+      "value": 0.3747570704678411,
+      "initial": 0.3446996671854082,
+      "success": true,
+      "iterations": 41,
+      "evaluations": 1850,
+      "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+    },
+    {
+      "weights": [
+        0.625,
+        0.125,
+        0.125,
+        0.125
+      ],
+      "harmonic_upper": 0.375,
+      "rep": 3,
+      "value": 0.3747421729447933,
+      "initial": 0.3499442246137353,
+      "success": true,
+      "iterations": 60,
+      "evaluations": 2650,
+      "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+    },
+    {
+      "weights": [
+        0.4,
+        0.3,
+        0.2,
+        0.1
+      ],
+      "harmonic_upper": 0.2320000000000001,
+      "rep": 0,
+      "value": 0.1999918397591054,
+      "initial": 0.1519136424830187,
+      "success": true,
+      "iterations": 25,
+      "evaluations": 1525,
+      "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+    },
+    {
+      "weights": [
+        0.4,
+        0.3,
+        0.2,
+        0.1
+      ],
+      "harmonic_upper": 0.2320000000000001,
+      "rep": 1,
+      "value": 0.2314840749022688,
+      "initial": 0.18859825488665016,
+      "success": true,
+      "iterations": 34,
+      "evaluations": 1950,
+      "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+    },
+    {
+      "weights": [
+        0.4,
+        0.3,
+        0.2,
+        0.1
+      ],
+      "harmonic_upper": 0.2320000000000001,
+      "rep": 2,
+      "value": 0.23153311731710904,
+      "initial": 0.2054908790751898,
+      "success": true,
+      "iterations": 44,
+      "evaluations": 1825,
+      "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+    },
+    {
+      "weights": [
+        0.4,
+        0.3,
+        0.2,
+        0.1
+      ],
+      "harmonic_upper": 0.2320000000000001,
+      "rep": 3,
+      "value": 0.23149623637401584,
+      "initial": 0.1800210222386027,
+      "success": true,
+      "iterations": 74,
+      "evaluations": 3500,
+      "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+    },
+    {
+      "weights": [
+        0.35,
+        0.15,
+        0.15,
+        0.35
+      ],
+      "harmonic_upper": 0.16000000000000003,
+      "rep": 0,
+      "value": 0.16000000000062972,
+      "initial": 0.15989405527931788,
+      "success": true,
+      "iterations": 4,
+      "evaluations": 325,
+      "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+    },
+    {
+      "weights": [
+        0.35,
+        0.15,
+        0.15,
+        0.35
+      ],
+      "harmonic_upper": 0.16000000000000003,
+      "rep": 1,
+      "value": 0.15999998664900172,
+      "initial": 0.15999495635027705,
+      "success": false,
+      "iterations": 2,
+      "evaluations": 1100,
+      "termination": "ABNORMAL: "
+    },
+    {
+      "weights": [
+        0.35,
+        0.15,
+        0.15,
+        0.35
+      ],
+      "harmonic_upper": 0.16000000000000003,
+      "rep": 2,
+      "value": 0.159999999976074,
+      "initial": 0.15930286466794097,
+      "success": true,
+      "iterations": 5,
+      "evaluations": 525,
+      "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+    },
+    {
+      "weights": [
+        0.35,
+        0.15,
+        0.15,
+        0.35
+      ],
+      "harmonic_upper": 0.16000000000000003,
+      "rep": 3,
+      "value": 0.1599999030174156,
+      "initial": 0.15279917103133075,
+      "success": false,
+      "iterations": 2,
+      "evaluations": 1050,
+      "termination": "ABNORMAL: "
+    },
+    {
+      "weights": [
+        0.7,
+        0.1,
+        0.15,
+        0.05
+      ],
+      "harmonic_upper": 0.5800000000000001,
+      "rep": 0,
+      "value": 0.5732902634735925,
+      "initial": 0.527228722583494,
+      "success": true,
+      "iterations": 11,
+      "evaluations": 850,
+      "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+    },
+    {
+      "weights": [
+        0.7,
+        0.1,
+        0.15,
+        0.05
+      ],
+      "harmonic_upper": 0.5800000000000001,
+      "rep": 1,
+      "value": 0.5733257625671988,
+      "initial": 0.5545555116874779,
+      "success": true,
+      "iterations": 29,
+      "evaluations": 1975,
+      "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+    },
+    {
+      "weights": [
+        0.7,
+        0.1,
+        0.15,
+        0.05
+      ],
+      "harmonic_upper": 0.5800000000000001,
+      "rep": 2,
+      "value": 0.5794688180785704,
+      "initial": 0.551117873061994,
+      "success": false,
+      "iterations": 100,
+      "evaluations": 4175,
+      "termination": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT"
+    },
+    {
+      "weights": [
+        0.7,
+        0.1,
+        0.15,
+        0.05
+      ],
+      "harmonic_upper": 0.5800000000000001,
+      "rep": 3,
+      "value": 0.5793349697291035,
+      "initial": 0.5463806895960026,
+      "success": true,
+      "iterations": 51,
+      "evaluations": 2200,
+      "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+    },
+    {
+      "weights": [
+        0.45,
+        0.25,
+        0.25,
+        0.05
+      ],
+      "harmonic_upper": 0.47058823529411764,
+      "rep": 0,
+      "value": 0.46889765202111555,
+      "initial": 0.28950764529372686,
+      "success": true,
+      "iterations": 39,
+      "evaluations": 2200,
+      "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+    },
+    {
+      "weights": [
+        0.45,
+        0.25,
+        0.25,
+        0.05
+      ],
+      "harmonic_upper": 0.47058823529411764,
+      "rep": 1,
+      "value": 0.4688423093226968,
+      "initial": 0.33471790885431685,
+      "success": true,
+      "iterations": 58,
+      "evaluations": 2875,
+      "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+    },
+    {
+      "weights": [
+        0.45,
+        0.25,
+        0.25,
+        0.05
+      ],
+      "harmonic_upper": 0.47058823529411764,
+      "rep": 2,
+      "value": 0.3199751361486311,
+      "initial": 0.2788878535581524,
+      "success": true,
+      "iterations": 7,
+      "evaluations": 575,
+      "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+    },
+    {
+      "weights": [
+        0.45,
+        0.25,
+        0.25,
+        0.05
+      ],
+      "harmonic_upper": 0.47058823529411764,
+      "rep": 3,
+      "value": 0.31998269289201714,
+      "initial": 0.28289976687715174,
+      "success": true,
+      "iterations": 7,
+      "evaluations": 600,
+      "termination": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+    }
+  ]
+}
