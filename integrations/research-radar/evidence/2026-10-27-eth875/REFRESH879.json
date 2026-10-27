@@ -1,0 +1,91 @@
+{
+  "scope": "Directed eight-endpoint primary refresh; not exhaustive and not proof coverage. Bodies not redistributed. The selected OpenAI874 theorem and two proof modules have separate reading875 records.",
+  "records": [
+    {
+      "name": "OpenAI/math",
+      "url": "https://api.github.com/repos/openai/math/commits/main",
+      "utc": "2026-10-27T07:00:18.412538+00:00",
+      "reading_depth": "directed endpoint inventory refresh, not new whole-proof reading",
+      "status": 200,
+      "bytes": 1251976,
+      "sha256": "5a8e78b28a7714f01dc8964578e9f0ec51e2cdf074345ecc2dcaf047d4a3aa0a",
+      "commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+      "commit_date": "2026-10-26T21:18:03Z",
+      "response_unchanged": true
+    },
+    {
+      "name": "DeepMind/formal-conjectures",
+      "url": "https://api.github.com/repos/google-deepmind/formal-conjectures/commits/main",
+      "utc": "2026-10-27T07:00:18.413539+00:00",
+      "reading_depth": "directed endpoint inventory refresh, not new whole-proof reading",
+      "status": 200,
+      "bytes": 12128,
+      "sha256": "443fb766e16f2676dc3926107e821d3e483ed810feba546846c2e8553989469c",
+      "commit": "f153efa8fdc078131e214547781d631e2d257daf",
+      "commit_date": "2026-10-26T17:02:36Z",
+      "response_unchanged": true
+    },
+    {
+      "name": "Anthropic",
+      "url": "https://www.anthropic.com/research",
+      "utc": "2026-10-27T07:00:18.414539+00:00",
+      "reading_depth": "directed endpoint inventory refresh, not new whole-proof reading",
+      "status": 200,
+      "bytes": 417084,
+      "sha256": "0bf85cd76b3823265d27de0f9d88a8c8f7a074534433722892847993058755aa",
+      "response_unchanged": false
+    },
+    {
+      "name": "arXiv source inequality",
+      "url": "https://arxiv.org/html/2609.39917v1",
+      "utc": "2026-10-27T07:00:18.414539+00:00",
+      "reading_depth": "directed endpoint inventory refresh, not new whole-proof reading",
+      "status": 200,
+      "bytes": 844083,
+      "sha256": "651ff38b1842db627ffa6da8a6c842eabd858d62f16030a10e3fe1731ad7540e",
+      "response_unchanged": true
+    },
+    {
+      "name": "CGR primary classical antecedent",
+      "url": "https://www.lamsade.dauphine.fr/~rgrappe/papers/box-tdi.pdf",
+      "utc": "2026-10-27T07:00:18.414539+00:00",
+      "reading_depth": "directed endpoint inventory refresh, not new whole-proof reading",
+      "status": 200,
+      "bytes": 611938,
+      "sha256": "e610697512e1b51e487002ca44650727498a6b594098198b6491752ad37b998c",
+      "response_unchanged": true
+    },
+    {
+      "name": "AIRR exact published own version",
+      "url": "https://airr.science/papers/ARR-2026-0BQ1X4SGFJ8AJ8N1/versions/v1/",
+      "utc": "2026-10-27T07:00:18.415538+00:00",
+      "reading_depth": "directed endpoint inventory refresh, not new whole-proof reading",
+      "status": 200,
+      "bytes": 35379,
+      "sha256": "bca134a39305346615880c7a847c907a6514eaa3e96a9759e54cbf40bfe69c3c",
+      "response_unchanged": false
+    },
+    {
+      "name": "ai.viXra author catalogue",
+      "url": "https://www.ai.vixra.org/author/lluis_eriksson",
+      "utc": "2026-10-27T07:00:18.415538+00:00",
+      "reading_depth": "directed endpoint inventory refresh, not new whole-proof reading",
+      "status": 200,
+      "bytes": 70178,
+      "sha256": "9cfc2018ff38a1f839e7c86f3d743cdbefb2b58b46c47bab6b4dd5af36fb8b7e",
+      "response_unchanged": true
+    },
+    {
+      "name": "Own public research index",
+      "url": "https://api.github.com/repos/lluiseriksson/physmath-knowledge-tree/commits/main",
+      "utc": "2026-10-27T07:00:18.416539+00:00",
+      "reading_depth": "directed endpoint inventory refresh, not new whole-proof reading",
+      "status": 200,
+      "bytes": 34714,
+      "sha256": "55320f76ba024bd2faaef3b73e164e2ecf51bc1e676b1461852ff3f41f69c962",
+      "commit": "f94af270072ab205ce1f5c2747e5bdf9328dcc3f",
+      "commit_date": "2026-10-27T05:28:25Z",
+      "response_unchanged": true
+    }
+  ]
+}

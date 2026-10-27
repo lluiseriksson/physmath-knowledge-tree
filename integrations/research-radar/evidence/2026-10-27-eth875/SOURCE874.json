@@ -1,0 +1,71 @@
+{
+  "scope": "One pinned primary manuscript for manual mathematical reading, not corpus ingestion or benchmark evaluation. Apache2.0 repository license acquired at same commit; not an upgrade of any corpus source eligibility. No validity or novelty inferred from title. Body remains outside public knowledge repo.",
+  "records": [
+    {
+      "name": "LICENSE",
+      "url": "https://raw.githubusercontent.com/openai/math/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/LICENSE",
+      "commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "utc": "2026-10-27T06:38:54.540442+00:00",
+      "reading_depth": "acquired for directed manual reading; not yet proof-audited",
+      "corpus_ingestion": false,
+      "redistributed_in_knowledge_repo": false
+    },
+    {
+      "name": "README.md",
+      "url": "https://raw.githubusercontent.com/openai/math/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/README.md",
+      "commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+      "bytes": 551,
+      "sha256": "a40b8829123b44bd9cfb589e5afa856b0018dc8cb36de36fa79e4315a03fe506",
+      "utc": "2026-10-27T06:38:54.532363+00:00",
+      "reading_depth": "acquired for directed manual reading; not yet proof-audited",
+      "corpus_ingestion": false,
+      "redistributed_in_knowledge_repo": false
+    },
+    {
+      "name": "main_full_version.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/build/main_full_version.tex",
+      "commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+      "bytes": 214857,
+      "sha256": "b2e6159d4fb7ea6aa4f89ac15605152b0333a5f7cafe93323492bc20a5c066aa",
+      "utc": "2026-10-27T06:38:54.746367+00:00",
+      "reading_depth": "acquired for directed manual reading; not yet proof-audited",
+      "corpus_ingestion": false,
+      "redistributed_in_knowledge_repo": false
+    },
+    {
+      "name": "quantitative-circuits.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/build/quantitative-circuits.tex",
+      "commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+      "bytes": 4152,
+      "sha256": "0059668a666a35a6e0a67a7c5ed2e9b504862f4207d86e83ce5b7ab4b23fcc11",
+      "utc": "2026-10-27T06:38:54.588334+00:00",
+      "reading_depth": "acquired for directed manual reading; not yet proof-audited",
+      "corpus_ingestion": false,
+      "redistributed_in_knowledge_repo": false
+    },
+    {
+      "name": "quantitative-contraction.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/build/quantitative-contraction.tex",
+      "commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+      "bytes": 27544,
+      "sha256": "671642d7b53154d92344e8c4be0240f18929632ebcfdf73b07c3e9939b873860",
+      "utc": "2026-10-27T06:38:54.607869+00:00",
+      "reading_depth": "acquired for directed manual reading; not yet proof-audited",
+      "corpus_ingestion": false,
+      "redistributed_in_knowledge_repo": false
+    },
+    {
+      "name": "quantitative-reduction.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/build/quantitative-reduction.tex",
+      "commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+      "bytes": 17832,
+      "sha256": "0b2b136c4f37ee0583dda40ee0c0d692f4751537d3d18539a389cd467ea8359a",
+      "utc": "2026-10-27T06:38:54.626767+00:00",
+      "reading_depth": "acquired for directed manual reading; not yet proof-audited",
+      "corpus_ingestion": false,
+      "redistributed_in_knowledge_repo": false
+    }
+  ]
+}
