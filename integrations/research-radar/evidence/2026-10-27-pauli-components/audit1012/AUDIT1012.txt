@@ -1,0 +1,194 @@
+AUDITORÍA TÉCNICA 1012 — 27 de octubre de 2026
+Pauli997, envelope1003, certificado1003 y profile1011
+
+DICTAMEN Y ALCANCE
+
+La reconstrucción matemática sostiene la fórmula de997 para todos los canales Pauli y su extensión a canales unitales de qubit, la envolvente de1003 dependiente de997 y el perfil isotrópico de1011 que NO depende de997. La exactitud concierne a tres optimizaciones bien definidas: métrica SLD, chi-cuadrado mínimo y divergencia Petz triangular. La extensión a los demás generadores Petz normalizados es una cota superior, no una igualdad para cada generador. La búsqueda adversarial acotada no produjo un contraejemplo a estas fórmulas centrales.
+
+Hay precisiones necesarias antes de incorporar los resultados a una futura versión: declarar f(1)=0, o restar explícitamente f(1), para el enunciado Petz general; no tomar literalmente el mínimo con la expresión de orden cuando su denominador no es positivo; conservar la exclusión de kappa=1 para pares distintos; describir los valores óptimos como supremos y no como máximos fieles. Además, la dirección de la construcción inferior NO es una tangente unitaria, ni siquiera para un Hamiltoniano global. No certifica una ventaja óptima para estimación de fase con generador fijo.
+
+El certificado Doeblin sí refuta la equivalencia del Theorem5 tal como está impresa en arXiv2503.22823v3 y en el PDF publicado consultado: existe un canal de qubit con alpha=0 y eta_Tr=1/3<1. Es una objeción localizada, independiente de la exactitud SLD; no autoriza una valoración global de ese artículo.
+
+Esta es una auditoría técnica por componentes de un proyecto en desarrollo, sin nota, manuscrito puntuable, recomendación editorial ni prioridad mundial. Se reutilizan explícitamente el contexto de988 y el filesystem compartido. No se afirma independencia, aislamiento, identidad efectiva ni esfuerzo efectivo atestados. La configuración solicitada por el encargo fue GPT-6 Astra xhigh. No se crearon agentes/chats ni se publicaron resultados o contactaron autores. No se leyó ni modificó el PDF1005 ni las notas1006. Los paquetes de entrada se trataron como inmutables.
+
+1. PROCEDENCIA E INTEGRIDAD
+
+Se leyeron las instrucciones globales y D:\LEEME.md antes de crear la carpeta de trabajo. Se verificaron primero cuatro manifiestos y sus43payloads, sin discrepancias ni archivos adicionales:
+997: MANIFEST997.json SHA256 99600f39cc4ac07da17f33b19a068bac8194ec1186bbdd901c6d9aab75a77cc0.
+1003: MANIFEST1003.json SHA256 c8b4ee6b3c193a7f446d4f4e78ce72e50fcbf66c0b787c4e7549184cec60c36a.
+1003-certificado: SHA256 64120a5b3ae1dde9e1e20fa08f40cc3608870012135a7aa2f4619da8bcab6a30.
+1011: MANIFEST1011.json SHA256 160907b4aa5d0daf4fd8860eefb4df6b0f4cd11f38931833406f46b12498da52, coincidente con el hash comunicado.
+
+INPUT_VERIFICATION1012.json contiene los hashes individuales. La comprobación final se conserva separadamente, sin sobrescribir el recibo inicial. Se inspeccionaron los textos de prueba, resultados y límites científicos; se reprodujeron nueve scripts suministrados desde copias sin cambios en una subcarpeta propia. No se ejecutaron los programas originales de optimización, preparación, sellado, copia ni consulta bibliográfica. Su mera presencia en un manifiesto no se interpreta como evidencia científica adicional. Los cinco archivos NPZ de optimización se releyeron y sus cocientes se recalcularon con otro procedimiento.
+
+La auditoría988 previa aporta el marco armónico y la orientación Petz; su informe conservado tiene SHA256 9521ce6a5b85b9e42f514a2bcc0e19d003664fa147d2d6cdc8ee7ba74a6792db. Aquí se reconstruyen los pasos necesarios, no se transfiere automáticamente una aprobación previa. Un aviso posterior del coordinador sobre1014 señaló el proyector que obstruye una interpretación unitaria; esa identidad se comprobó aquí. No se incorporaron ni se atribuyen a1012 los bytes de1014.
+
+2. DEFINICIONES QUE NO DEBEN CONFUNDIRSE
+
+En A=C², E(X)=I_A/2 tensor Tr_A X. El superíndice completo significa supremizar sobre referencias finitas, bases fieles sigma y tangentes hermíticas D no nulas con Tr_A D=0. Para divergencias finitas se exigen rho y sigma fieles, distintas y con la misma marginal R. No es el coeficiente irrestricto de N tensor id_R: este último permite almacenar la diferencia solo enR y da1 trivialmente.
+
+SLD: g_sigma(D)=<D,[(L_sigma+R_sigma)/2]^{-1}D>.
+Chi²_min(rho||sigma)=g_sigma(rho-sigma), exactamente cuadrático.
+Petz triangular: H_triangle(rho,sigma)=<rho-sigma,(L_rho+R_sigma)^{-1}(rho-sigma)>.
+El último no coincide en general con chi²_min; su límite local es t²g_sigma(D)/2. El factor1/2 desaparece en el cociente de contracción.
+
+Para Petz general se usa H_f=<sqrt(sigma),f(L_rho R_sigma^{-1})sqrt(sigma)>, con f operador-convexo no afín y f(1)=0. Puede quitarse f'(1)(x-1), que no contribuye para estados de igual traza. Una constante NO desaparece del cociente. El texto1011 no reitera esta normalización: debe incorporarla. Control exacto de la lectura literal sin normalizar: f=(x-1)²/(x+1)+1, rho=diag(3/4,1/4), sigma=I/2, lambda=0, kappa=2. H_in=17/15, H_out=1 y cociente15/17, frente a la supuesta cota0. Esto refuta esa lectura literal, no la versión normalizada del resultado.
+
+Las cotas Petz incluyen Umegaki bajo su normalización habitual, pero la construcción inferior SLD no prueba exactitud BKM/Umegaki ni información mutua real. No resuelve la conjetura971 de1/3; no se ha cambiado su estado. Tampoco prueba capacidades, geodésicas, tensorización ni canales no unitales.
+
+3. RECONSTRUCCIÓN DEL UPPER ARMÓNICO
+
+En el espacio Hilbert-Schmidt COMPLEJO, para Q>0, F(Q,Z)=<Z,Q^{-1}Z> es conjuntamente convexa: su expresión variacional es sup_Y[2Re<Y,Z>-<Y,QY>]. En la mezcla Pauli, D_j=U_j D U_j*, la condición de marginal implica sum_j D_j=0. Sustituir D_j por (1-a/w_j)D_j deja sum_j w_j D_j invariante. La covariancia unitaria y la convexidad dan el factor sum_j(w_j-a)²/w_j. Su mínimo, en a=4/(sum_j1/w_j), es h=1-16/(sum_j1/w_j).
+
+No se han usado pesos de estado negativos: solo los multiplicadores de tangentes pueden tener signo. Para SLD, Q_j=(L_sigma_j+R_sigma_j)/2. Para el kernel Petz f_t(x)=(x-1)²/(x+t), la orientación correcta es Q_j=L_rho_j+tR_sigma_j. La representación positiva de f integra estos kernels y añade el extremo cuadrático, cuyo inverso derecho es R_sigma^{-1}. Esto conserva la misma cota superior. No permite identificar todos sus supremos.
+
+Como control de orientación, se compararon480 formas de Sylvester con la fórmula espectral de Petz, usando estados complejos no conmutativos y t=0,0.07,1,7,100. El error relativo máximo observado fue6.4801e-10. El caso triangular t=1 solo no habría sido suficiente para detectar todas las inversiones de orientación.
+
+4. LOWER997 Y PASO FIEL
+
+Se reconstruyeron las matrices6x6 directamente a partir de los cuatro operadores Pauli. Con A=w0+wz, B=wx+wy, u=w0-wz, v=wx-wy, A+B=1, la salida de la escalera rank2 se separa en dos bloques3x3 reflejados. El bloque no normalizado obtenido es
+ M=[[A,ue,0],[ue,e²,ve],[0,ve,B]],
+y su tangente es T=[[0,u,0],[u,2e(A-B),-v],[0,-v,0]].
+El complemento de Schur central es e²k, donde k=1-u²/A-v²/B=4w0wz/A+4wxwy/B>0. Así la salida del estado de rango2 ya es fiel para e>0 y pesos estrictamente positivos.
+
+En la entrada P=2sigma_e es una proyección, Q=I-P y QDQ=0. La forma SLD de borde es 4TrD²-2Tr(PDP)²=16(1+e²). Se verificaron estas identidades separadamente. No se invierte sigma_e como matriz ordinaria.
+
+Al escribir la solución simétrica de MY+YM=4(1+e²)T, se escalan solamente Y22 mediante c=eY22 y se eliminan las otras tres entradas diagonales/esquina. El sistema restante tiene límite no singular: detK0=ABk>0. Su solución produce
+ lim_e->0 gout/gin = U+V+(A-B-U+V)²/(1-U-V),
+ U=u²/A, V=v²/B.
+La identidad racional propia reduce esto a1-16/(sum1/w_j). Esta verificación no depende de que un optimizador haya encontrado la dirección correcta. Se mantiene también el caso uniforme: h=0 y ND=0, sin dividir porh.
+
+Para cada e fijo se sustituye la base por (1-xi)sigma_e+xi I6/6. Los términos kernel-kernel de D son cero, por lo que el SLD de entrada tiene el límite finito indicado; la salida es fiel y admite continuidad de la inversa. Después se puede enviar e a0. Para triangular se toma primero t->0 en rho=sigma+tD, luego xi->0 y finalmente e->0. En cada etapa finita existe un intervalo bilateral de t con positividad y marginal exactamente igual. El orden de límites es esencial. No se reclama continuidad de una divergencia Petz singular ni existencia de un máximo fiel.
+
+Dictamen997 interior: argumento válido reconstruido. R=3 basta para el supremo; no se demuestra que sea la dimensión mínima.
+
+5. PESOS NULOS Y TODOS LOS CANALES UNITALES
+
+Para pesos no negativos con algún cero, N_gamma=(1-gamma)N+gamma E tiene todos los pesos positivos. Como E(rho)=E(sigma), o ED=0, la convexidad conjunta da output(N_gamma)<= (1-gamma)output(N) para cada una de las tres cantidades. De aquí eta(N)>=h(w_gamma)/(1-gamma)->1. El upper1 es DPI. Los estados fieles siguen dando salidas fieles, pues una mezcla de conjugaciones unitarias preserva una cota positiva por la identidad. No se extrapola la inversa singular deM hasta un peso cero.
+
+La forma normal requiere SVD CON SIGNOS y dos rotaciones SO(3), realizables por unitarias. Una SVD que eliminase todos los signos no justificaría el paso físico. Las conjugaciones previas/posteriores preservan las marginalesR, la fidelidad y las tres divergencias. El Choi NORMALIZADO J tiene los pesos Pauli como eigenvalores; por tanto eta=1-16/TrJ^{-1} siJ>0, y1 siJ singular. Para el Choi no normalizado Gamma=2J, la misma expresión sería1-8/TrGamma^{-1}. Mezclar esas normalizaciones es un error real. Ocho controles numéricos con unitarias complejas independientes verificaron la covariancia espectral y rechazaron el uso del factor16 conGamma.
+
+Dictamen997 borde/unital: válido dentro de qubits unitales CPTP y las tres definiciones indicadas. Ni un criterio para canales no unitales ni un resultado de dimensión mayor se sigue de esta prueba.
+
+6. ENVOLVENTE1003 Y CERTIFICADO SEPARADO
+
+Con s=||T|| y alpha=s² ordinario, el upper de1003 usa997 de forma esencial. Para s<1/3, el cubo[-s,s]³ está dentro del tetraedro CP. La sumaS de recíprocos de pesos positivos es convexa y se maximiza en un vértice. Se recalcularon los ocho vértices: aparecen Splus y Sminus, y Sminus-Splus=192s³/[(1-9s²)(1-s²)]>=0. Como1-16/S crece conS, c<=3s²/(1-2s). Para s>=1/3 se usa DPI1.
+
+El extremo inferior lo realiza el canal de eje diag(-s,0,0). El superior lo realiza -sI para s<=1/3, y diag(-s,-(1-s)/2,-(1-s)/2) para s>=1/3. Los segmentos indicados permanecen CP y conservan||T||=s. La extensión continua del coeficiente al borde permite aplicar el valor intermedio; no hace falta probar monotonía del coeficiente a lo largo del segmento. Así el intervalo completo[s²,F(s)] y la razón máxima9 para s>0 son correctos. En s=0 la razón es0/0 y no se define. El9 pertenece al cociente de coeficientes/supremos de un canal; no se ha probado que un estado fiel alcance exactamente esa razón.
+
+El canal T=-I/3 es medida-preparación: se elige uniformemente un eje Pauli, se mide y se prepara el eigenestado opuesto. Es EB sin recurrir a un criterio bibliográfico adicional. Esto no significa que toda aplicación EB tenga coeficiente1.
+
+El certificado1003 se comprobó sin usar997 ni el upper9: sistema de Sylvester racional completo36x36, residual exacto, positividad por menores y comparación exacta con Gin, Gout y fracción suministrados. Para e=1/1000 y xi=10^-18 se obtiene
+ q=0.99999733334099997500007805531172298724760331306734...
+ y9q=8.999976000068999775000702497805506885228429817606...
+con q>999997/10^6 yq<1 demostrados racionalmente. La base es NPT por un menor negativo de su transpuesta parcial.
+
+Se añadió un par TRIANGULAR FINITO propio: rho=sigma+10^-24 D. Se certificaron exactamente su fidelidad, marginalR, fidelidad de ambas salidas y el cociente>999997/10^6 e<1. Esto evita presentar solo un límite diferencial como si fuese ya un par finito. La base tiene eigenvalor mínimo1/(6*10^18): el control no demuestra un rango paramétrico útil uniforme, robustez ante incertidumbres ni tolerancia experimental.
+
+Dictamen1003: envolvente válida, con dependencia matemática de997; certificado finito válido e independiente de esa dependencia lógica, no independiente en procedencia o contexto.
+
+7. PERFIL1011: UPPER, EXTREMOS Y NORMALIZACIÓN
+
+Para1<kappa<=3, sigma<=kappa E(sigma) implica
+ N_lambda(sigma)>=c sigma,
+ c=lambda+(1-lambda)/kappa=[1+lambda(kappa-1)]/kappa>0
+en todo-1/3<=lambda<=1. El signo negativo de lambda no invalida el paso porque1-lambda>=0. Para pares se aplica también arho. Inversión antítona de L_rho+tR_sigma, extremo cuadrático e integración positiva dan lambda²/c. Para SLD solo se requiere el orden de la base.
+
+Para kappa>=3 se usa el upper armónico isotrópico3lambda²/(1+2lambda), con pesosPauli positivos en el interior del rango CP y DPI1 enlambda=-1/3 o1. Esta rama depende del upper988 y del subcaso993, no del lowerfullPauli997. El resultado correcto es
+ C_kappa(lambda)=lambda²K/[1+lambda(K-1)], K=min(kappa,3), kappa>1.
+
+La frase de1011 que llama al upper «mínimo de la cota de orden y la armónica» debe restringirse al dominio dondec>0. Contraejemplo exacto a la lectura irrestricta: lambda=-1/3,kappa=5 da c=-1/15 ylambda²/c=-5/3. Tomar ese mínimo sería absurdo. No afecta a la demostración por ramas ni a la fórmula recortadaK.
+
+Enlambda=0 la salida de toda diferencia admitida es0; enlambda=1 el canal es identidad. Enkappa=1, una diferencia positiva E(rho)-rho de traza0 obliga rho=E(rho); dos estados con la mismaR son entonces idénticos. No hay pares distintos. Asignar lambda² a ese supremo vacío cambia el problema. El SLD con base solaE(sigma) y tangente libre sí da lambda², pero la tangente abandona la clasekappa=1.
+
+8. PERFIL1011: LOWER CON ORDEN RELATIVO
+
+La comprobación propia de whitening se hizo mediante det(sigma_e-zB_e)/detB_e, evitando raíces cuadradas o convenciones de software: se obtuvo z^4(z-3)². Para s_e,theta=(1-theta)B_e+theta sigma_e, el polinomio es(z-1-2theta)²(z-1+theta)^4. Por tanto el orden exacto es1+2theta y la base es fiel paratheta<1.
+
+El cálculo SLD proporcionaG_e(p) de1011, y la composición N_lambda(s_e,theta)=s_e,lambda theta da el cociente lambda²G_e(lambda theta)/G_e(theta). El límitee->0 eslambda²(1+2theta)/(1+2lambda theta). Se elige theta<(K-1)/2; así tanto la base como kappaB_e-base tienen slack estrictamente positivo. La perturbación bilateral suficientemente pequeña mantiene ambos, con marginal inalterada. Para triangular se toma t->0 antes de los otros límites. Para chi²_min el cociente cuadrático ya es exacto. Enviar luegoe->0 ytheta al extremo daC_kappa.
+
+No se requiere afirmar convergencia uniforme cuandoe->0: para cada e ytheta finitos existe su propio intervalo det, que puede menguar. Esta precisión evita que el lower viole el orden durante un límite simultáneo injustificado. Las16 configuraciones racionales suministradas se reconstruyeron todas por sistemas completos36x36, sin usar su solucionador por bloques. Se coincidió exactamente con ambas fracciones de cada fila, verificando positividad de entrada/salida y slack de orden, incluyendolambda=-1/3,-1/5 ykappa=3/2,2,3,4.
+
+Dictamen1011 perfil: válido para las tres cantidades ykappa>1 con las precisiones delapartado7. Su lower es una construcción propia del perfil respecto al orden real, no una mera sustitución formal de la fórmula997.
+
+9. SEP/PPT/REFERENCIA CLÁSICA
+
+Para A qubit, 2E(sigma)-sigma=(sigma_y tensorI) sigma^(T_A)(sigma_y tensorI). Es una equivalencia de positividad, no solo una implicación: PPT equivale a la condición de reducción enA en este caso, para cualquier dimensión finita deR. Por ello C2=2lambda²/(1+lambda) es upper para basesPPT/SEP; para triangular finito ambas entradas deben pertenecer a la clase.
+
+La transpuesta parcial de la familia inferior tiene dos bloques con determinante e²(1-theta-2theta²)/[8(1+e²)²] y dos entradas positivas. Para theta<1/2 hay PPT estricto y perturbaciones pequeñas permanecenPPT. En2x3, el Theorem3 previo de Horodecki convierte esto en separabilidad. No se extiende PPT=SEP a cualquier referencia. La igualdad de los coeficientes SEP/PPT en referencia arbitraria se obtiene de un upper general y un lower ya contenido enR3, no de esa equivalencia falsa en dimensiones mayores.
+
+Una referencia clásica requiere que familia y tangente sean diagonales por bloques en una MISMA base fijaR, con pesos marginales constantes. Las divergencias se descomponen en términos ordinarios de qubit; el resultado previo||T||² da lambda². BastaR1 para la igualdad, también con cualquierkappa>1 mediante perturbaciones pequeñas del centro.
+
+Se comprobó un contraejemplo exacto a debilitar esta hipótesis a «base clásica»: sigma=diag(9,1,1,9)/20, D03=D30=1 ylambda=-1/3. La base es clásica, pero la dirección introduce coherenciasR. El cocienteSLD es3/11>1/9; inclusorho=sigma+D/100 es fielPPT. No contradice1011: muestra por qué una familiaSEP y una familia con referencia clásica son restricciones distintas.
+
+Enlambda=-1/3, los niveles exactos son1/9,1/3,1 para referencia clásica, SEP/PPT y familia cuántica irrestricta. Para1<kappa<=2 la construcciónSEP obtieneC_kappa. No se ha probado el mismo perfil de igualdad paraBKM o información mutua.
+
+10. CONTENIDO OPERACIONAL Y OBSTRUCCIÓN UNITARIA
+
+Si el cocienteSLD supera2lambda²/(1+lambda), la base es NPT. La deducción es la contraposición del upper por reducción; no necesita997 ni1003. La exactitud del umbral aporta una caracterización cuantitativa óptima para esta clase de modelos. El criterio de reducción/PPT, la existencia general de ventajas con ancillas y la identidadSLD=QFI son antecedentes; no deben venderse como novedades.
+
+La familia concreta no es un modelo de fase unitaria: sea Q la proyección sobre índices[0,4]. Q conmuta con s_e,theta y con su regularización por identidad, peroTrQD=2e>0. Para cualquierH, Tr(Q[-iH,s])=-iTr([s,Q]H)=0. Luego D no es -i[H,s] ni siquiera paraHglobal. Este control exacto descarta esa interpretación de ESTE lower; no demuestra que ninguna otra familia unitaria pueda dar ventaja.
+
+La traducción experimental exigiría, al menos, un lower fiable deQFIoutput mediante una medición y un upper certificado deQFIinput obtenido sin asumir ya la conclusiónNPT. Comparar dos Fisher clásicas observadas no basta: la del input es un lower de suQFI, no el upper que necesita el cociente. Si se reconstruye íntegramente la base y la tangente por tomografía para calcular ambasQFI, se puede comprobar directamente el criterioPPT; no se ha mostrado una ventaja operacional de esta ruta frente a esa comprobación.
+
+Por tanto hay una consecuencia matemática de detecciónNPT y una interpretación de retención local, pero no un protocolo experimental no circular, ventaja de fase óptima, capacidad, corrección de errores o protección de una familia uniforme. El certificado fiel con eigenvalores diminutos no establece robustez a errores de preparación. Tampoco procede decir que laQFI absoluta es necesariamente diminuta: depende de la escala paramétrica; el obstáculo demostrado es el rango/condicionamiento del modelo, no una afirmación universal sobre su magnitud.
+
+11. CONTRAEJEMPLO DOEBLIN Y LECTURA PRIMARIA
+
+Para N=(id+AdX+AdY)/3, reconstruimos el Choi no normalizadoGamma, de traza2 y eigenvalores2/3,2/3,2/3,0. En el primalalpha, X=0 es factible. El dualY=vv*, v=(1,0,0,-1), cumpleY>=0, Tr_A Y=I yTrGammaY=0. La dualidad débil ya fuerzaalpha=0. El BlochT=diag(1,1,-1)/3 contrae toda diferencia de qubits en norma de traza por1/3. Este es exactamente elalpha de Def4/Eq3.1 y la contracción ORDINARIA del Theorem5, no unalpha positivo alternativo ni un coeficiente completo.
+
+Se leyeron las definiciones y los pasajes pertinentes en ambosPDF. En la prueba impresa, el paso que identifica una entrada iguala1 con tener algún peso cero no es una equivalencia: una entrada extrema requiere más restricciones. El ejemplo exhibe la dirección que falla. Los signos de la norma de una diagonal también necesitan valores absolutos. No se audita por extensión todo el artículo ni sus aplicaciones. No se contactó a sus autores, ni se determinó si existen erratas o discusiones no localizadas en esta búsqueda.
+
+Fuentes: George–Hirche–Nuradha–Wilde, arXiv2503.22823v3,19mayo2026, https://arxiv.org/pdf/2503.22823v3 ; y versión publicada https://quantum-journal.org/papers/q-2026-05-22-2115/pdf/ . HashesarXiv61e6049323dda504053d4f4e0204f4306c7fac851179cd200c0208bdc6aefd23 yjournalff007c194eac11ae049c9096317daa8b50aeb305e18e4fb6f6ef33fc83d190a9. Los bytes son diferentes; las afirmaciones seleccionadas coinciden.
+
+12. ANTECEDENTES: COMPARACIÓN DIRIGIDA Y LÍMITES
+
+Hiai–Ruskai,1508.03551v1, Theorem6.1 y ApéndiceB.1 leídos: el coeficiente ordinario de unitalqubit es||T||², para las familias de métricas/divergencias allí definidas. Es antecedente explícito; no incluye en ese teorema la supremización con referencia correlacionada y marginal igual. https://arxiv.org/pdf/1508.03551v1 .
+
+Horodecki–Horodecki–Horodecki,quant-ph/9605038v2, Theorem3 y su prueba seleccionada leídos: PPT equivale aSEP en2x2/2x3 usando descomposición de mapas positivos. Se usa como resultado previo; no se reauditan aquí los teoremas subyacentes de mapas positivos. https://arxiv.org/pdf/quant-ph/9605038v2 .
+
+Ruskai–Szarek–Werner,quant-ph/0101003v2, Eq4 y discusión de signos, Lemma11/Eq34 leídos: forma normal unitaria y covariancia local delChoi. Son herramientas previas, no aportes de997. https://arxiv.org/pdf/quant-ph/0101003v2 .
+
+George–Tomamichel,2505.15281v3,29marzo2026: se leyeron definiciones127/128, Theorem61, Lemma67/76 y pasajes de prueba/caracterización. Tratan coeficienteschi² dependientes de una base y normas/eigenvalores en el espacio de tangentes de traza0. Es antecedente cercano de la maquinaria espectral. Aplicarlo aN tensorid sin restringirTr_A D permite direcciones almacenadas enR y da1; obtener997 exige la restricción y optimizar las bases. Los pasajes leídos no dan por sí solos la fórmula armónica, pero no se excluye una deducción previa más amplia sin revisar más literatura. La ausencia de «Pauli» no es evidencia de novedad. https://arxiv.org/pdf/2505.15281v3 .
+
+Chapeau-Blondeau2017, PhysicsLettersA381,1369–1378: abstract y ficha primaria accesibles; el cuerpo delPDF indicado falló repetidamente, también en un intento directo45s. Se registra como lectura parcial, no como prueba comparada. La ventaja de un qubit entangled inactivo bajo ruido ya se anuncia allí. No se certifica cobertura o ausencia de cobertura de997/1011 a partir delabstract. https://www.sciencedirect.com/science/article/pii/S0375960117301858 ; PDF solicitado https://perso-laris.univ-angers.fr/~chapeau/papers/pla2017.pdf .
+
+Chapeau-Blondeau2018, IJQI16,1850056: elPDF deAngers falló; se localizó la versión primaria arXiv1904.01904v1 y se leyeron§2, la familiaEq8, derivaciónQFIEq29 y§5/Eq44 con ancilla inactiva. Considera fase unitaria, ruido que conmuta con la rotación y una familiaGHZ de entrelazamiento variable; el modelo tiene parámetros de relajación no negativos. Esto establece antecedentes de ventaja metrológica con ancillas y optimización de sondas. No es la optimización general de retención local con ordenκ y tangenteno-unitaria usada aquí. Tampoco se deduce que el modelo general sea una ventaja operacional superior. La equivalencia bibliográfica se identifica por título/DOI, no por igualdad de bytes entre elPDF inaccesible y arXiv. https://arxiv.org/pdf/1904.01904v1 ; DOI10.1142/S0219749918500569.
+
+No se realizó una búsqueda exhaustiva ni se establece prioridad. Los inventarios de repositorios/índices contenidos enREADINGS997/1011 no se trataron como lecturas de pruebas. Se conservaron solo síntesis propias, URLs/versiones, hashes y metadatos de acceso; ningúnPDF o corpus ajeno se guardó en las carpetas de entrega.
+
+13. CONTROLES, FALLOS Y EVIDENCIA ADVERSA
+
+EXACT1012: certificado1003 con resolución36x36 y un partriangular nuevo;16pares1011 con fracciones idénticas; menorNPT, slack, positividad y certificadoDoeblin. SYMBOLIC1012:14controles exactos propios de proyección, whitening generalizado, reducción/PPT, bloquesPauli, sistemaSylvester límite y envolvente. ADDITIONAL1012:5comprobaciones adicionales y recálculo de los cincoNPZ. CLASSICAL_SCOPE1012: contraejemplo exacto3/11 a la hipótesis de baseclásica sola.
+
+ADVERSARIAL1012: semilla1012001;96bases fieles con referencias1,2,3,4, pesos interiores y de borde; en cada base se optimizaron todas las tangentes hermíticasTr_A=0 mediante un problema generalizado de eigenvalores. Se probaron480paresPetz con cinco parámetros de kernel y96controles de perfil con marginales recalculadas, incluyendolambda negativo y extremos. No hubo exceso sobre las cotas con tolerancia1e-7. Estos ensayos son acotados y numéricos; no prueban los teoremas universales ni la optimalidadglobal sobre bases. Ocho controles de Choi con conjugaciones complejas vigilan la normalización.
+
+REPLAY1012: nueve programas copiados sin cambios y ejecutados únicamente enreplay; todos terminaron con código0. Se conservanstdout/stderr y resultados. Esto reproduce20identidades997,15pares997a100dígitos,15identidades1003,3controles1003a100dígitos, el certificadoexacto,10identidades1011 y16pares1011, además del escalar yDoeblin. Las ejecuciones propias por36x36 evitan depender solo de esas reproducciones.
+
+Se retuvieron las tres terminaciones no exitosas entre20optimizaciones997: dosABNORMAL y una por límite100iteraciones. Se conserva el exceso numérico histórico6.2969e-13. El recálculo del mismoNPZ da un déficit1.8391e-13, compatible con redondeo, no una refutación certificada. No se relanzó el optimizador buscando un resultado favorable.
+
+Se preservan los incidentes1011: dos comparacionescharpoly inicialmente fallidas por símbolos de distintas suposiciones y un fallo de serializaciónSymPyBoolean posterior a16cálculos. Son incidentes reportados en el paquete; no se reconstruye ficticiamente una salida fallida no conservada. Los controles actuales no repiten esos errores. También se registran aquí dos intentos de leerREADINGS con extensión.txt en vez de.json, los truncamientos de salidas agregadas y las recuperaciones parciales de fuentes. Los materiales decisivos se releyeron de manera acotada. Ningún fallo se eliminó para mejorar el dictamen.
+
+14. CLAIMS LISTOS Y NO LISTOS PARA UNA FUTURA VERSIÓN
+
+Listos como afirmaciones matemáticas delimitadas, tras precisar el enunciado:
+ A. Igualdad de los tres coeficientes definidos de997 para todos los pesosPauli; borde1; R3suficiente.
+ B. Corolario unitalqubit en términos deChoi normalizado, con signedSVD citado.
+ C. Envolvente completa[s²,F(s)] y factor9 entre coeficientes, dependientes deA/B; razón indefinida ens=0.
+ D. Certificado racional1003 y nuevo par finito de esta auditoría, separables de la prueba universal delupper9.
+ E. PerfilCκ, kappa>1, todo el rangoCP negativo/positivo; independiente del lower997.
+ F. Upper para todoPetz normalizado, con exactitud solo de los miembros probados y uniformsharpness por triangular.
+ G. Coeficientes exactosSEP/PPT y referencia clásica bajo las hipótesis precisas; lower2x3 y uso previo deHorodecki.
+ H. Implicación suficienteQFIretention>C2=>NPT, como consecuencia cuantitativa del orden, sin protocolo experimental demostrado.
+ I. Contraejemplo racional localizado alTheorem5Doeblin, citando versión, definición y alcance.
+
+No listos/no demostrados:
+ a. Literal «todos los generadores operador-convexos» sin normalización; rawmin de la expresión deorden fuera dec>0; asignación del perfil al supremo vacíoκ1.
+ b. Igualdad para cadaPetz, BKM/Umegaki, informaciónmutuareal; resolución971=1/3.
+ c. Máximo fiel universal, dimensión auxiliar mínima, extensiónno-unital oWeyl de dimensiónmayor, tensorización/capacidad/corrección deerrores.
+ d. Óptimo de estimación de fase/Hamiltoniano fijo mediante estaD: refutado por el proyectorQ.
+ e. Test experimental sin caracterización circular, ventaja robusta bajo piso de eigenvalores/errores o intervalo paramétrico fijo.
+ f. Novedadgenérica de ayudaentangled/ancillas, del criterioPPT/reducción, deSLD=QFI o del coeficienteordinario||T||².
+ g. Prioridad mundial, barrido bibliográfico exhaustivo, errorglobal de todo el artículoDoeblin o ausencia confirmada de una errata.
+
+La entrega incluyeverdict1012.json por dependencias,READINGS1012.json,PROVENANCE1012.json,INCIDENTS1012.json, controles/salidas y manifiestoSHA256. Las copias C/D se verifican byteporbyte. Los límites anteriores forman parte del resultado, no un apéndice opcional.

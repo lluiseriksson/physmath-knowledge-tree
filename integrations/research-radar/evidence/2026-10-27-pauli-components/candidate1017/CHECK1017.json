@@ -1,0 +1,50 @@
+{
+  "scope": "Parent candidate general-d ladder; symbolic2x2 identity for symbolic dimension and explicit full-matrix controls d2,3,4,5. No external review or novelty claim.",
+  "checks": {
+    "generic_SLD_limit": true,
+    "positive_block_determinant": true,
+    "budget_ratio": true
+  },
+  "SLD_block_exact": "4*d*(e**2 + 1)*(d**2*e**2*p + d**2*p + d*e**2 + d - p + 1)/((d*p + 1)*(d*e**2 + d*p - p + 1))",
+  "SLD_block_limit": "4*d*(d + 1)/(d*p + 1)",
+  "construction": [
+    {
+      "d": 2,
+      "R": 3,
+      "partial_trace_zero": true,
+      "whitened_gram": true,
+      "whitened_nonzero_spectrum": "3 with multiplicity 2",
+      "kernel_tangent_zero": true,
+      "trace_one": true
+    },
+    {
+      "d": 3,
+      "R": 4,
+      "partial_trace_zero": true,
+      "whitened_gram": true,
+      "whitened_nonzero_spectrum": "4 with multiplicity 3",
+      "kernel_tangent_zero": true,
+      "trace_one": true
+    },
+    {
+      "d": 4,
+      "R": 5,
+      "partial_trace_zero": true,
+      "whitened_gram": true,
+      "whitened_nonzero_spectrum": "5 with multiplicity 4",
+      "kernel_tangent_zero": true,
+      "trace_one": true
+    },
+    {
+      "d": 5,
+      "R": 6,
+      "partial_trace_zero": true,
+      "whitened_gram": true,
+      "whitened_nonzero_spectrum": "6 with multiplicity 5",
+      "kernel_tangent_zero": true,
+      "trace_one": true
+    }
+  ],
+  "range": "d>=2,1<kappa<=d+1,-1/(d\u00b2-1)<=lambda<=1; no exact coefficient claim beyond this order range",
+  "grade": null
+}

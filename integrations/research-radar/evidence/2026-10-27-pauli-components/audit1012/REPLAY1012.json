@@ -1,0 +1,50 @@
+{
+  "scope": "Supplied scripts copied unchanged into own folder; outputs only here; optimization and sealing/copy scripts deliberately not executed",
+  "jobs": [
+    {
+      "source": "D:\\Proyectos\\airr-investigacion\\2026-10-27_pauli997\\verify997.py",
+      "script_sha256": "eb9874b27a3d2b8e7d15d2d858b85d6257db0d4c24bf801ecfec7ed2fd88f565",
+      "exit_code": 0
+    },
+    {
+      "source": "D:\\Proyectos\\airr-investigacion\\2026-10-27_pauli997\\algebra997.py",
+      "script_sha256": "691be15c3dd8b9f754a6ae28cd645f8e2d1033bd159a153f0cc99ad275eff2f0",
+      "exit_code": 0
+    },
+    {
+      "source": "D:\\Proyectos\\airr-investigacion\\2026-10-27_pauli997\\doeblin997.py",
+      "script_sha256": "bc25a757570ebc485f1d06b57c07bc61e34b77aee56a814f71733b15dcd8a142",
+      "exit_code": 0
+    },
+    {
+      "source": "D:\\Proyectos\\airr-investigacion\\2026-10-27_pauli997\\finite997.py",
+      "script_sha256": "c48b8a76b8ec9ec7b4416a205966d229e5e5d7a1a8d0075fe260356f761cd20d",
+      "exit_code": 0
+    },
+    {
+      "source": "D:\\Proyectos\\airr-investigacion\\2026-10-27_envelope1003\\check1003.py",
+      "script_sha256": "f29c88519aa642c30ec2cbd58e7390be8c757f1251995a3e92c4efcc6936661b",
+      "exit_code": 0
+    },
+    {
+      "source": "D:\\Proyectos\\airr-investigacion\\2026-10-27_envelope1003\\finite1003.py",
+      "script_sha256": "b6ec5ab26eac01e6459049a716bc2e8ebe58fa9391b75ccc76e9f36144c07b5b",
+      "exit_code": 0
+    },
+    {
+      "source": "D:\\Proyectos\\airr-investigacion\\2026-10-27_envelope1003-certificate\\certificate1003.py",
+      "script_sha256": "9f6347d807f9ead151d7380e1703f2cc444c9142fb740323fd3f3ccfa7c03be6",
+      "exit_code": 0
+    },
+    {
+      "source": "D:\\Proyectos\\airr-investigacion\\2026-10-27_profile1011\\check1011.py",
+      "script_sha256": "d45aa5ecf720fe763e944bdc7fe1202c889e200fd02719a13e80c5eb2f90ddad",
+      "exit_code": 0
+    },
+    {
+      "source": "D:\\Proyectos\\airr-investigacion\\2026-10-27_profile1011\\finite1011.py",
+      "script_sha256": "c86d8440b32dab6a5fe2ade34e09c4dd0b558d2fe046b5f6573c378720b3c89f",
+      "exit_code": 0
+    }
+  ]
+}

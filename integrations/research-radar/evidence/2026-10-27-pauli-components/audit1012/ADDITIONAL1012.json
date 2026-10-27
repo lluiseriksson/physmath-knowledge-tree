@@ -1,0 +1,80 @@
+{
+  "checks": {
+    "certificate_input_exact_match": true,
+    "certificate_output_exact_match": true,
+    "certificate_ratio_exact_match": true,
+    "singular_SLD_boundary_value": true,
+    "running_result_rows_equal": true
+  },
+  "all_passed": true,
+  "optimizer_archived_arrays_recomputed": [
+    {
+      "file": "best997-0.npz",
+      "sha256": "35fee92659e7afc5ac8e12c37970f25c6ade9c9031b7fec95075b0f20eb1b1ea",
+      "trace_real": 1.0,
+      "min_eig": 1.6666666665536259e-06,
+      "hermitian_residual": 0.0,
+      "partial_trace_norm": 0.0,
+      "ratio": 0.37477248776688815,
+      "h": 0.375,
+      "excess": -0.00022751223311184843
+    },
+    {
+      "file": "best997-1.npz",
+      "sha256": "2636a7ea3cef745bfc494922b7b8347cc346be301a527e66724c913c79387f5c",
+      "trace_real": 1.0,
+      "min_eig": 1.6666666666125546e-06,
+      "hermitian_residual": 0.0,
+      "partial_trace_norm": 0.0,
+      "ratio": 0.2315331173153141,
+      "h": 0.2320000000000001,
+      "excess": -0.00046688268468600413
+    },
+    {
+      "file": "best997-2.npz",
+      "sha256": "c2884444abb5b6c919fd23ed1c8cc173f09eb6cb7f5c096fca2f772933b61005",
+      "trace_real": 1.0,
+      "min_eig": 1.6666666665397729e-06,
+      "hermitian_residual": 0.0,
+      "partial_trace_norm": 0.0,
+      "ratio": 0.15999999999981612,
+      "h": 0.16000000000000003,
+      "excess": -1.8390844402915718e-13
+    },
+    {
+      "file": "best997-3.npz",
+      "sha256": "112faf1882d0e6af9cfced346ef52724352b63f4b5681892c8b620b46f6d9979",
+      "trace_real": 1.0,
+      "min_eig": 1.666666666621525e-06,
+      "hermitian_residual": 0.0,
+      "partial_trace_norm": 0.0,
+      "ratio": 0.5794688180869602,
+      "h": 0.5800000000000001,
+      "excess": -0.0005311819130399131
+    },
+    {
+      "file": "best997-4.npz",
+      "sha256": "3b280ff19a95de90505dc10133b6512c80025048f64e36c1d01e55a6449f022c",
+      "trace_real": 1.0000000000000002,
+      "min_eig": 1.666666666536218e-06,
+      "hermitian_residual": 0.0,
+      "partial_trace_norm": 0.0,
+      "ratio": 0.46889765201615013,
+      "h": 0.47058823529411764,
+      "excess": -0.0016905832779675056
+    }
+  ],
+  "inherited_optimizer_failure_count": 3,
+  "normalization_counterexample": {
+    "f": "(x-1)^2/(x+1)+1",
+    "lambda": "0",
+    "rho": "diag(3/4,1/4)",
+    "sigma": "I/2",
+    "kappa": "2",
+    "H_in": "17/15",
+    "H_out": "1",
+    "ratio": "15/17",
+    "purported_upper": "0",
+    "scope": "Rejects only unnormalized reading; f(1)=0 or subtract f(1) repairs the intended divergence statement."
+  }
+}

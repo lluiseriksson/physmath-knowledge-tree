@@ -1,0 +1,96 @@
+{
+  "method": "Own exact generalized eigenvalue determinants, direct channel block construction and leading full Sylvester equations",
+  "checks": {
+    "projector": true,
+    "partial_trace": true,
+    "kernel_kernel_zero": true,
+    "whitening_generalized_characteristic": true,
+    "mixed_generalized_characteristic": true,
+    "unitary_obstruction_commutant": true,
+    "unitary_obstruction_nonzero_trace": true,
+    "qubit_reduction_equals_transpose": true,
+    "PPT_block_[1, 3]": true,
+    "PPT_block_[2, 4]": true,
+    "M_determinant": true,
+    "Pauli_lower_harmonic": true,
+    "envelope_vertex_difference": true,
+    "envelope_upper": true
+  },
+  "forms": {
+    "M": "Matrix([[A, e*u, 0], [e*u, e**2, e*v], [0, e*v, 1 - A]])",
+    "T": "Matrix([[0, u, 0], [u, 2*e*(2*A - 1), -v], [0, -v, 0]])",
+    "limiting_equations": [
+      "A*x + c*u - 4*u",
+      "-A*y + c*v + 4*v + y",
+      "2*(-8*A + c + u*x + v*y + 4)"
+    ],
+    "limit": "-(4*A**4 - 8*A**3 - 4*A**2*u**2 - 4*A**2*v**2 + 5*A**2 + 7*A*u**2 + A*v**2 - A + 4*u**2*v**2 - 3*u**2)/(-A**2 + A*u**2 - A*v**2 + A - u**2)",
+    "vertices": [
+      {
+        "signs": [
+          -1,
+          -1,
+          -1
+        ],
+        "S": "16*(2*t - 1)/((t + 1)*(3*t - 1))"
+      },
+      {
+        "signs": [
+          -1,
+          -1,
+          1
+        ],
+        "S": "-16*(2*t + 1)/((t - 1)*(3*t + 1))"
+      },
+      {
+        "signs": [
+          -1,
+          1,
+          -1
+        ],
+        "S": "-16*(2*t + 1)/((t - 1)*(3*t + 1))"
+      },
+      {
+        "signs": [
+          -1,
+          1,
+          1
+        ],
+        "S": "16*(2*t - 1)/((t + 1)*(3*t - 1))"
+      },
+      {
+        "signs": [
+          1,
+          -1,
+          -1
+        ],
+        "S": "-16*(2*t + 1)/((t - 1)*(3*t + 1))"
+      },
+      {
+        "signs": [
+          1,
+          -1,
+          1
+        ],
+        "S": "16*(2*t - 1)/((t + 1)*(3*t - 1))"
+      },
+      {
+        "signs": [
+          1,
+          1,
+          -1
+        ],
+        "S": "16*(2*t - 1)/((t + 1)*(3*t - 1))"
+      },
+      {
+        "signs": [
+          1,
+          1,
+          1
+        ],
+        "S": "-16*(2*t + 1)/((t - 1)*(3*t + 1))"
+      }
+    ]
+  },
+  "all_passed": true
+}

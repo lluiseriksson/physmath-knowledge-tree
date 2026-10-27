@@ -1,0 +1,12 @@
+{
+  "scope": "Exact limitation of displayed993/1011 lower family; not a refutation of complete-SLD/Petz contraction",
+  "commutes_with_base": true,
+  "block_projector_indices": [
+    0,
+    4
+  ],
+  "trace_Q_D": "2*e",
+  "reason": "For any Hermitian H, Tr Q(-i[H,rho]) = -i Tr([rho,Q]H)=0. The displayed tangent has Tr QD=2e>0. Thus it cannot be a unitary-encoding tangent for any H, even a global one.",
+  "consequence": "Do not claim the ladder supplies a fixed-Hamiltonian or phase-estimation protocol. The valid scope remains arbitrary differentiable state models with fixed reference marginal. The NPT retention implication requires a justified input-QFI upper bound; tomography alone does not establish practical advantage.",
+  "novelty_or_grade": null
+}

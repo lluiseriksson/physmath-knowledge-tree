@@ -1,0 +1,95 @@
+1017. General-d controlled-order ladder, parent candidate,27October2026.
+Not externally audited, not a manuscript assessment, no priority or score claim.
+Same coherent extension project as997/1003/1011; frozen published1005 unchanged.
+
+Candidate statement. Let d>=2, R arbitrary finite, E(X)=I_d/d tensorTr_A X,
+N_lambda=lambda id+(1-lambda)E, -1/(d²-1)<=lambda<=1. For faithful equal-R
+pairs with both rho<=kappa E(rho) and sigma<=kappa E(sigma), with
+1<kappa<=d+1, the complete minimal-SLD chi² and triangular-Petz contraction
+coefficients are exactly
+ C_kappa(lambda)=lambda² kappa/[1+lambda(kappa-1)].
+The same is a uniform upper for nonaffine operator-convex Petz generators
+normalized by f(1)=0 (or explicitly centered by subtracting f(1)),
+not a claim of equality for each generator, BKM, Umegaki, actual MI, geodesic
+distance, capacity, or fixed-Hamiltonian estimation. No exact statement for
+kappa>d+1 is made. The kappa1 finite pair optimization is empty, as in1011.
+
+Upper. For every allowed state N_lambda(sigma)>=c sigma, where
+c=lambda+(1-lambda)/kappa. It is strictly positive throughout this range:
+at the smallest CP lambda and largest kappa, its numerator is
+1-d/(d²-1)>0 for d>=2. The difference satisfies N_lambda(D)=lambda D.
+Inverse antitonicity for positive Hilbert-Schmidt operators gives lambda²/c
+for each Petz resolvent L_rho+tR_sigma, its quadratic endpoint and the SLD
+form. Positive integration yields the Petz upper. This order-comparison
+machinery is prior; candidate content is the matching lower in arbitrary d.
+
+Lower construction. Take R=C^(d+1), R labels0,...,d. For i=0,...,d-1 put
+ a_i=|i,i>+e |i+1 mod d,d>, e>0,
+ sigma_e=sum_i a_i a_i*/[d(1+e²)].
+The vectors a_i have disjoint support and norm²1+e². Thus sigma=P/d, where
+P is its rank-d support projector. The actual reference marginal is diagonal:
+each peripheral label0,...,d-1 has mass1/[d(1+e²)], and center d has mass
+e²/(1+e²). Hence B=E(sigma) is faithful. Whitened a_i are orthogonal with
+squared norm d+1 after normalization. B^(-1/2)sigma B^(-1/2) consequently has
+eigenvalues d+1, multiplicity d, and0 otherwise. This follows directly from
+the Gram matrix, not an extrapolation from finite dimensions checked below.
+
+Choose real coefficients c_i with sum_i c_i=0 and sum_i c_i²>0; c_0=1,
+c_1=-1 and all others0 suffice. Let
+ b_i=c_i |i+1 mod d,d>, D=sum_i (b_i a_i*+a_i b_i*).
+Off-diagonal terms change A, so disappear underTr_A; the center diagonal
+contribution is2e sum_i c_i=0. ThusTr_A D=0 andTrD=0. Each term is a tangent
+to its rank-one support, giving (I-P)D(I-P)=0. At sigma=P/d the boundary SLD
+form, defined by its finite support/kernel limit, is
+ g_sigma(D)=2dTrD²-dTr(PDP)²=4d(1+e²)sum_i c_i².
+This identity is not used as an inverse of a singular matrix.
+
+For0<=theta<1 take s_(e,theta)=(1-theta)B+theta sigma_e. It is faithful and
+has conditional order constant1+d theta, because its whitened spectrum is
+1+d theta on the support and1-theta on the complement. N_lambda s_theta
+=s_(lambda theta). For the lower proof choose theta<(kappa-1)/d. This gives
+strict faithful and order slack. Then rho_t=s_theta+tD is faithful and remains
+belowkappa B for sufficiently small nonzero realt of either sign, with the
+same reference marginal. The reference dimension d+1 is finite and explicit.
+
+Full-matrix decomposition. Each of d disjoint two-dimensional blocks has
+basis (|i,i>,|i+1 mod d,d>). The other d(d-1) coordinates are diagonal and
+the tangent vanishes there. For p in the range used, the block of s_p is
+ W_p=[[1+(d-1)p,dp e],[dp e,d e²]]/[d²(1+e²)],
+and its tangent is c_i T, T=[[0,1],[1,2e]]. Its determinant is
+ e²(1-p)(1+dp)/[d³(1+e²)²]>0 for -1/d<p<1.
+Our p=theta and lambda theta both lie strictly in this interval, including
+the physical negative-lambda boundary; no singular output inverse is used.
+
+Solve W_p Y+Y W_p=2T. The exact block SLD form is
+ G_e(p)=TrTY
+ =4d(1+e²)(d²e²p+d²p+d e²+d-p+1)
+   /[(dp+1)(d e²+dp-p+1)].
+In particular lim_(e->0)G_e(p)=4d(d+1)/(1+dp).
+The other blocks have the same ratio, weighted by positive c_i². Therefore
+ lambda² g_(s_(lambda theta))(D)/g_(s_theta)(D)
+ tends to lambda²(1+d theta)/(1+d lambda theta).
+Take theta up to(kappa-1)/d after e->0. This matches the upper. The argument
+for local SLD needs only these faithful theta<1 bases. The minimal chi² is
+exactly quadratic in t. For finite triangular Petz take t->0 FIRST at fixed
+e,theta, obtaining its SLD/2 local form, then e->0 and theta up to the bound.
+Thus all lower pairs are faithful, with the order constraints actually
+preserved. Lambda0 and1 are the zero-on-difference and identity endpoints.
+
+Scope and operational limitation. The family changes the mass of each
+invariant two-dimensional block. Its projectorQ_i commutes with s_theta,
+butTrQ_iD=2e c_i. For a nonzero c_i this rules out D=-i[H,s_theta] for every
+HermitianH, even a global one. No phase-encoding protocol is supplied. The
+upper is prior order comparison; a covering sharp constrained theorem would
+remove novelty. In higher dimensions we do not infer SEP fromPPT, exact SEP
+thresholds, or the full unrestricted optimum. The qubit-specific completion
+at kappa3 and full Pauli formula remain separate candidate results.
+
+Checks. check1017.py verifies the symbolic-d block determinant, Sylvester
+limit and budget substitution, plus full matrix partial trace, support,
+whitened Gram and normalization for d2,3,4,5. These bounded checks support
+inspection of the displayed general-d proof; they are not formal validation.
+Falsifiers: invalid direct-sum decomposition, wrong Sylvester limit, failure
+of order slack/faithful limits, confusion of finite triangular with SLD,
+or prior literature proving the same constrained statement. No failed
+mathematical test has occurred in this packet's first checker execution.
