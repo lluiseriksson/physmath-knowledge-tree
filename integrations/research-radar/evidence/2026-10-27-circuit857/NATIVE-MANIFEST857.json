@@ -1,0 +1,27 @@
+{
+  "scope": "Original own scientific checkers and original finite expected outputs, not third-party source bodies. Native script bytes including line endings retained in ZIP. A reproduction verifies arithmetic, not the universal theorem or novelty.",
+  "zip_sha256": "c39c976aaf5cfb4fe3e711e808f16d1f2221fdfb0dbbe944d9f57c851ed05ec7",
+  "files": [
+    {
+      "path": "controls839.py",
+      "bytes": 4723,
+      "sha256": "ef06bbc19da971a9e9aec78927b1285b7c3f1b58beaa136e926d66014ce4fde4"
+    },
+    {
+      "path": "CONTROLS839.json",
+      "bytes": 10833,
+      "sha256": "1c7b4837a50c1459565f1f88d2dfc7b96573a0b174a596e0ba33486e9c6fa830"
+    },
+    {
+      "path": "independent840.py",
+      "bytes": 6256,
+      "sha256": "2ae42bd38851df02656eafa3effc32e30450edc298e565678a7d3d2f2a089053"
+    },
+    {
+      "path": "RESULTS840.json",
+      "bytes": 756,
+      "sha256": "9fe276d38c574cfb9c972384ebd4f98bc00e068e4a0830f928bb90fade5cacfa"
+    }
+  ],
+  "original_positive_witness_jsonl_sha256": "c342207b048fc6fa8e1d61e65c6b650345fdc7dc87684853914742179c3687bd"
+}
