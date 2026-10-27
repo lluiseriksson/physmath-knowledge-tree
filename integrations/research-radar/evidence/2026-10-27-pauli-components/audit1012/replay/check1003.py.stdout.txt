@@ -1,0 +1,25 @@
+{
+  "scope": "Parent exact scalar/endpoint checks for candidate envelope, CONDITIONAL on997; not a complete proof audit or new manuscript score",
+  "checks": {
+    "plus": true,
+    "minus": true,
+    "difference": true,
+    "negative_isotropic": true,
+    "axis": true,
+    "boundary_weights": true,
+    "meet": true,
+    "vertex(-1, -1, -1)": true,
+    "vertex(-1, -1, 1)": true,
+    "vertex(-1, 1, -1)": true,
+    "vertex(-1, 1, 1)": true,
+    "vertex(1, -1, -1)": true,
+    "vertex(1, -1, 1)": true,
+    "vertex(1, 1, -1)": true,
+    "vertex(1, 1, 1)": true
+  },
+  "count": 15,
+  "failures": 0,
+  "bound": "s^2 <= completeSLD <= 3s^2/(1-2s) for s<=1/3; upper1 above1/3; all intermediate values attained",
+  "max_stabilization_factor": 9,
+  "independence_claimed": false
+}

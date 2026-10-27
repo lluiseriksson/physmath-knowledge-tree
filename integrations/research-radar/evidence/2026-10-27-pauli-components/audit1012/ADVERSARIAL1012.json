@@ -1,0 +1,4723 @@
+{
+  "seed": 1012001,
+  "scope": "96 faithful bases; full zero-partial-trace tangent optimization at each base, 480 finite Petz tests; random search is not a global proof",
+  "rows": [
+    {
+      "r": 1,
+      "j": 0,
+      "weights": [
+        0.0,
+        0.04317677444112435,
+        0.9410299140054784,
+        0.015793311553397204
+      ],
+      "xi": 0.0004958768493913513,
+      "upper": 1.0,
+      "SLD_max_all_tangents_at_base": 0.9364081792250496,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.00495422399814599,
+          "spectral_relative_error": 7.358662352451541e-13
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.5958199874340699,
+          "spectral_relative_error": 5.533283273344921e-13
+        },
+        {
+          "t": 1,
+          "ratio": 0.9341182055717133,
+          "spectral_relative_error": 8.995690501390818e-13
+        },
+        {
+          "t": 7,
+          "ratio": 0.7553861507675719,
+          "spectral_relative_error": 6.913505987841894e-13
+        },
+        {
+          "t": 100,
+          "ratio": 0.17283151224361518,
+          "spectral_relative_error": 5.385626252649501e-13
+        }
+      ],
+      "profile": {
+        "lambda": -0.3333333333333333,
+        "kappa_actual": 1.9995041231506083,
+        "upper": 0.33316808202235243,
+        "local_max": 0.11111111111111471
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.00024568111790446157
+    },
+    {
+      "r": 1,
+      "j": 1,
+      "weights": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "xi": 0.0004034680511835698,
+      "upper": 0.0,
+      "SLD_max_all_tangents_at_base": 0.0,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.0,
+          "spectral_relative_error": 1.4597120042494695e-15
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.0,
+          "spectral_relative_error": 1.1523657900393716e-15
+        },
+        {
+          "t": 1,
+          "ratio": 0.0,
+          "spectral_relative_error": 1.8063545619057016e-15
+        },
+        {
+          "t": 7,
+          "ratio": 0.0,
+          "spectral_relative_error": 5.7427889681624406e-15
+        },
+        {
+          "t": 100,
+          "ratio": 0.0,
+          "spectral_relative_error": 7.547146561648563e-15
+        }
+      ],
+      "profile": {
+        "lambda": -0.2,
+        "kappa_actual": 1.8710125386749714,
+        "upper": 0.0906281530859649,
+        "local_max": 0.04000000000000002
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.06764576952169703
+    },
+    {
+      "r": 1,
+      "j": 2,
+      "weights": [
+        0.18297959347065904,
+        0.004152913789462465,
+        0.7554439307814703,
+        0.057423561958408205
+      ],
+      "xi": 6.335645022352633e-05,
+      "upper": 0.9396221992086182,
+      "SLD_max_all_tangents_at_base": 0.6325950207948347,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.00017338077321093308,
+          "spectral_relative_error": 4.3473127377929875e-13
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.2545914566835625,
+          "spectral_relative_error": 2.018451369901358e-13
+        },
+        {
+          "t": 1,
+          "ratio": 0.6312394387874223,
+          "spectral_relative_error": 8.846558735278383e-13
+        },
+        {
+          "t": 7,
+          "ratio": 0.3859605451579119,
+          "spectral_relative_error": 6.171498336490425e-14
+        },
+        {
+          "t": 100,
+          "ratio": 0.05153206648963375,
+          "spectral_relative_error": 4.4178970877322985e-13
+        }
+      ],
+      "profile": {
+        "lambda": 0,
+        "kappa_actual": 1.999936643549776,
+        "upper": 0.0,
+        "local_max": 0.0
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 3.142147429577302e-05
+    },
+    {
+      "r": 1,
+      "j": 3,
+      "weights": [
+        0.5480868778033252,
+        0.10167402915202993,
+        0.1292449030927867,
+        0.22099418995185816
+      ],
+      "xi": 0.006710470132832062,
+      "upper": 0.33116341687993145,
+      "SLD_max_all_tangents_at_base": 0.2481660011426499,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.05175475802672164,
+          "spectral_relative_error": 1.2503339076560091e-15
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.10490960890511822,
+          "spectral_relative_error": 6.968740165052771e-16
+        },
+        {
+          "t": 1,
+          "ratio": 0.25044961302884033,
+          "spectral_relative_error": 2.3498778831160426e-15
+        },
+        {
+          "t": 7,
+          "ratio": 0.14448254468288466,
+          "spectral_relative_error": 3.645444844723348e-15
+        },
+        {
+          "t": 100,
+          "ratio": 0.05981511160878638,
+          "spectral_relative_error": 4.437277552580469e-15
+        }
+      ],
+      "profile": {
+        "lambda": 0.5,
+        "kappa_actual": 1.9059851031131965,
+        "upper": 0.32794130655922926,
+        "local_max": 0.2499999999999998
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.04809721457940705
+    },
+    {
+      "r": 1,
+      "j": 4,
+      "weights": [
+        0.11022645429615271,
+        0.3161152776808907,
+        0.5346922614019379,
+        0.03896600662101872
+      ],
+      "xi": 0.010770166937267303,
+      "upper": 0.5976792571860374,
+      "SLD_max_all_tangents_at_base": 0.44500946394404206,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.00974078184578041,
+          "spectral_relative_error": 5.811250603658283e-16
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.11946639255142033,
+          "spectral_relative_error": 4.168457719986317e-15
+        },
+        {
+          "t": 1,
+          "ratio": 0.4425014248403608,
+          "spectral_relative_error": 2.593323438372535e-14
+        },
+        {
+          "t": 7,
+          "ratio": 0.20353292478414525,
+          "spectral_relative_error": 5.6008136656421566e-14
+        },
+        {
+          "t": 100,
+          "ratio": 0.027568744087808957,
+          "spectral_relative_error": 7.122319314888326e-14
+        }
+      ],
+      "profile": {
+        "lambda": 0.9,
+        "kappa_actual": 1.9892298330627325,
+        "upper": 0.8523886822863731,
+        "local_max": 0.810000000000003
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.0052708376030601856
+    },
+    {
+      "r": 1,
+      "j": 5,
+      "weights": [
+        0.1542106018155773,
+        0.004770381183411847,
+        0.06959026258784232,
+        0.7714287544131686
+      ],
+      "xi": 0.0014598958139368664,
+      "upper": 0.9309683120143231,
+      "SLD_max_all_tangents_at_base": 0.5947875493994299,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.05984188599720456,
+          "spectral_relative_error": 4.4730468065672435e-15
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.2573469180988528,
+          "spectral_relative_error": 4.964154619497123e-15
+        },
+        {
+          "t": 1,
+          "ratio": 0.5902244893662639,
+          "spectral_relative_error": 9.1797412146989e-16
+        },
+        {
+          "t": 7,
+          "ratio": 0.3670664504300861,
+          "spectral_relative_error": 3.0287228933395447e-15
+        },
+        {
+          "t": 100,
+          "ratio": 0.09792109105209997,
+          "spectral_relative_error": 4.968497076426261e-15
+        }
+      ],
+      "profile": {
+        "lambda": 1,
+        "kappa_actual": 1.9717991380722013,
+        "upper": 1.0,
+        "local_max": 1.0000000000000007
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.013584640722944644
+    },
+    {
+      "r": 1,
+      "j": 6,
+      "weights": [
+        0.015960538502418534,
+        0.9478157753735053,
+        0.0,
+        0.03622368612407629
+      ],
+      "xi": 0.0007922454616414075,
+      "upper": 1.0,
+      "SLD_max_all_tangents_at_base": 0.9300242560752509,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.009496118830651715,
+          "spectral_relative_error": 1.359796151845604e-13
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.6301351619552323,
+          "spectral_relative_error": 5.401126765834175e-15
+        },
+        {
+          "t": 1,
+          "ratio": 0.9278393287861233,
+          "spectral_relative_error": 1.6370069651848682e-13
+        },
+        {
+          "t": 7,
+          "ratio": 0.7742384514996012,
+          "spectral_relative_error": 3.562554321199274e-14
+        },
+        {
+          "t": 100,
+          "ratio": 0.20239384580300174,
+          "spectral_relative_error": 6.373571085940575e-14
+        }
+      ],
+      "profile": {
+        "lambda": -0.3333333333333333,
+        "kappa_actual": 1.9992077545383584,
+        "upper": 0.3330693560801765,
+        "local_max": 0.11111111111111743
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.0003930930192645177
+    },
+    {
+      "r": 1,
+      "j": 7,
+      "weights": [
+        0.12577263934610794,
+        0.3299701416835104,
+        0.4401140791639125,
+        0.10414313980646912
+      ],
+      "xi": 0.0005197956229435639,
+      "upper": 0.2999570038865178,
+      "SLD_max_all_tangents_at_base": 0.27159348278830037,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.12872823903473335,
+          "spectral_relative_error": 1.8453524089310925e-14
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.1654339067004834,
+          "spectral_relative_error": 1.7058235253245682e-14
+        },
+        {
+          "t": 1,
+          "ratio": 0.2746703410332646,
+          "spectral_relative_error": 9.41692362940517e-15
+        },
+        {
+          "t": 7,
+          "ratio": 0.19247911252660813,
+          "spectral_relative_error": 5.122066493229701e-15
+        },
+        {
+          "t": 100,
+          "ratio": 0.13225709472981137,
+          "spectral_relative_error": 3.542744098741851e-15
+        }
+      ],
+      "profile": {
+        "lambda": -0.2,
+        "kappa_actual": 1.7476209645007306,
+        "upper": 0.08219497603160125,
+        "local_max": 0.04000000000000003
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.13045086435539274
+    },
+    {
+      "r": 1,
+      "j": 8,
+      "weights": [
+        0.0666001311628653,
+        0.16859163286666495,
+        0.2988569432972348,
+        0.46595129267323493
+      ],
+      "xi": 0.0002117636511477637,
+      "upper": 0.39482669528427805,
+      "SLD_max_all_tangents_at_base": 0.2536186757687392,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.00010728607481812545,
+          "spectral_relative_error": 1.7316950152915966e-13
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.062412937006189065,
+          "spectral_relative_error": 3.8673605497127437e-13
+        },
+        {
+          "t": 1,
+          "ratio": 0.25314024483307673,
+          "spectral_relative_error": 2.4215466501587756e-13
+        },
+        {
+          "t": 7,
+          "ratio": 0.11140031051977958,
+          "spectral_relative_error": 3.7963272123599195e-13
+        },
+        {
+          "t": 100,
+          "ratio": 0.010121178014849967,
+          "spectral_relative_error": 4.718939895949277e-13
+        }
+      ],
+      "profile": {
+        "lambda": 0,
+        "kappa_actual": 1.9997882363488513,
+        "upper": 0.0,
+        "local_max": 0.0
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.0001050034605879005
+    },
+    {
+      "r": 1,
+      "j": 9,
+      "weights": [
+        0.2751232645137985,
+        0.07750163671049003,
+        0.646316834378617,
+        0.0010582643970944465
+      ],
+      "xi": 0.0005614791017722083,
+      "upper": 0.9833857436396987,
+      "SLD_max_all_tangents_at_base": 0.6978238139498495,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.3841039383779911,
+          "spectral_relative_error": 2.522791028602026e-15
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.4654734335626245,
+          "spectral_relative_error": 2.488366819765954e-15
+        },
+        {
+          "t": 1,
+          "ratio": 0.7001630564840703,
+          "spectral_relative_error": 2.662684692360183e-15
+        },
+        {
+          "t": 7,
+          "ratio": 0.528229027733833,
+          "spectral_relative_error": 2.984088009146458e-15
+        },
+        {
+          "t": 100,
+          "ratio": 0.3958875921591179,
+          "spectral_relative_error": 3.2333476576553508e-15
+        }
+      ],
+      "profile": {
+        "lambda": 0.5,
+        "kappa_actual": 1.7067213957487257,
+        "upper": 0.315274671125991,
+        "local_max": 0.2500000000000002
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.1506726164972771
+    },
+    {
+      "r": 1,
+      "j": 10,
+      "weights": [
+        0.2090501900536236,
+        0.04067143072902062,
+        2.902656977179986e-06,
+        0.7502754765603786
+      ],
+      "xi": 1.3749452761528308e-05,
+      "upper": 0.9999535616270557,
+      "SLD_max_all_tangents_at_base": 0.783767636237889,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 3.206301499153951e-05,
+          "spectral_relative_error": 4.4410293304362424e-12
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.25165322168400805,
+          "spectral_relative_error": 3.828375921163229e-12
+        },
+        {
+          "t": 1,
+          "ratio": 0.7818774344073435,
+          "spectral_relative_error": 1.1190649580225072e-11
+        },
+        {
+          "t": 7,
+          "ratio": 0.41308095374175113,
+          "spectral_relative_error": 6.5257582107506916e-12
+        },
+        {
+          "t": 100,
+          "ratio": 0.04511309449392479,
+          "spectral_relative_error": 3.0805028560895903e-12
+        }
+      ],
+      "profile": {
+        "lambda": 0.9,
+        "kappa_actual": 1.999986250547238,
+        "upper": 0.8526312704396324,
+        "local_max": 0.8100000000002304
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 6.81125674273364e-06
+    },
+    {
+      "r": 1,
+      "j": 11,
+      "weights": [
+        0.443464195460914,
+        0.056369718498880284,
+        0.3098700534484533,
+        0.1902960325917523
+      ],
+      "xi": 1.2085941447900829e-05,
+      "upper": 0.4381455129308037,
+      "SLD_max_all_tangents_at_base": 0.2565384473986436,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.18026926975489202,
+          "spectral_relative_error": 1.813254656867911e-16
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.19909549184761186,
+          "spectral_relative_error": 2.1509150648371043e-16
+        },
+        {
+          "t": 1,
+          "ratio": 0.25649446991726793,
+          "spectral_relative_error": 2.6202049579578353e-16
+        },
+        {
+          "t": 7,
+          "ratio": 0.21440966013663937,
+          "spectral_relative_error": 6.516227063446633e-16
+        },
+        {
+          "t": 100,
+          "ratio": 0.18404829994895003,
+          "spectral_relative_error": 8.774173493279799e-16
+        }
+      ],
+      "profile": {
+        "lambda": 1,
+        "kappa_actual": 1.5523476848623705,
+        "upper": 1.0,
+        "local_max": 1.0000000000000002
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.22234011516919916
+    },
+    {
+      "r": 1,
+      "j": 12,
+      "weights": [
+        0.0,
+        0.03720268285330337,
+        0.795402791188784,
+        0.16739452595791265
+      ],
+      "xi": 6.425780404805057e-05,
+      "upper": 1.0,
+      "SLD_max_all_tangents_at_base": 0.8548281665920232,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.0001693261645258923,
+          "spectral_relative_error": 2.494564099518368e-13
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.28625644939727807,
+          "spectral_relative_error": 1.7912151955173016e-13
+        },
+        {
+          "t": 1,
+          "ratio": 0.8526746829737906,
+          "spectral_relative_error": 6.85672369012064e-13
+        },
+        {
+          "t": 7,
+          "ratio": 0.467354677467724,
+          "spectral_relative_error": 4.949476606803971e-13
+        },
+        {
+          "t": 100,
+          "ratio": 0.051220100405404846,
+          "spectral_relative_error": 3.2865896515463947e-13
+        }
+      ],
+      "profile": {
+        "lambda": -0.3333333333333333,
+        "kappa_actual": 1.9999357421959518,
+        "upper": 0.33331191475347266,
+        "local_max": 0.1111111111111246
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 3.179984440787598e-05
+    },
+    {
+      "r": 1,
+      "j": 13,
+      "weights": [
+        0.18744693668376858,
+        0.037678123614782524,
+        0.4819340202503216,
+        0.29294091945112727
+      ],
+      "xi": 0.012894502633374839,
+      "upper": 0.5717811641010199,
+      "SLD_max_all_tangents_at_base": 0.24619462991292682,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.01697388188963115,
+          "spectral_relative_error": 6.324471714757421e-15
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.07573542052268926,
+          "spectral_relative_error": 7.780944709491831e-15
+        },
+        {
+          "t": 1,
+          "ratio": 0.24789260817838057,
+          "spectral_relative_error": 7.912467823827945e-15
+        },
+        {
+          "t": 7,
+          "ratio": 0.12126431998544446,
+          "spectral_relative_error": 3.55297389573312e-15
+        },
+        {
+          "t": 100,
+          "ratio": 0.02639550106528742,
+          "spectral_relative_error": 6.1867608166460666e-15
+        }
+      ],
+      "profile": {
+        "lambda": -0.2,
+        "kappa_actual": 1.9675359995853252,
+        "upper": 0.09758480171840324,
+        "local_max": 0.04000000000000005
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.016491574347775595
+    },
+    {
+      "r": 1,
+      "j": 14,
+      "weights": [
+        0.09880282402733526,
+        0.4411818567568582,
+        0.24544852612654133,
+        0.21456679308926524
+      ],
+      "xi": 0.01404445263247116,
+      "upper": 0.24251514732603519,
+      "SLD_max_all_tangents_at_base": 0.1385462580532807,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.00406938521543712,
+          "spectral_relative_error": 3.45682438590928e-14
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.03852503637373975,
+          "spectral_relative_error": 3.413750507132305e-14
+        },
+        {
+          "t": 1,
+          "ratio": 0.13809934010631564,
+          "spectral_relative_error": 5.463155881432131e-14
+        },
+        {
+          "t": 7,
+          "ratio": 0.06493538647312047,
+          "spectral_relative_error": 5.337807390143852e-14
+        },
+        {
+          "t": 100,
+          "ratio": 0.00971554280963397,
+          "spectral_relative_error": 4.452734003127084e-14
+        }
+      ],
+      "profile": {
+        "lambda": 0,
+        "kappa_actual": 1.9859555473675292,
+        "upper": 0.0,
+        "local_max": 0.0
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.006940102074469379
+    },
+    {
+      "r": 1,
+      "j": 15,
+      "weights": [
+        0.1928280868645729,
+        0.002316824429531956,
+        0.053735636554667746,
+        0.7511194521512274
+      ],
+      "xi": 0.000860747866751064,
+      "upper": 0.964970066249358,
+      "SLD_max_all_tangents_at_base": 0.7722372126655086,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.10156462823158739,
+          "spectral_relative_error": 2.6101346760718335e-14
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.312908498905595,
+          "spectral_relative_error": 2.28941203362362e-14
+        },
+        {
+          "t": 1,
+          "ratio": 0.77221547370032,
+          "spectral_relative_error": 1.2048788737995435e-14
+        },
+        {
+          "t": 7,
+          "ratio": 0.4557922605504745,
+          "spectral_relative_error": 4.022200103871174e-15
+        },
+        {
+          "t": 100,
+          "ratio": 0.13926965002107594,
+          "spectral_relative_error": 3.864754344770059e-15
+        }
+      ],
+      "profile": {
+        "lambda": 0.5,
+        "kappa_actual": 1.9533216486331448,
+        "upper": 0.33069910443672473,
+        "local_max": 0.2500000000000002
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.023527977122652893
+    },
+    {
+      "r": 1,
+      "j": 16,
+      "weights": [
+        0.12146234719194329,
+        0.6496217964487414,
+        0.020398881529268307,
+        0.2085169748300469
+      ],
+      "xi": 0.06562990588532742,
+      "upper": 0.7483898108074027,
+      "SLD_max_all_tangents_at_base": 0.5072169919503852,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.07129839674493994,
+          "spectral_relative_error": 2.8296354151418e-15
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.1876810549284222,
+          "spectral_relative_error": 2.4624851084151934e-15
+        },
+        {
+          "t": 1,
+          "ratio": 0.5049188013943804,
+          "spectral_relative_error": 2.8117112081905368e-15
+        },
+        {
+          "t": 7,
+          "ratio": 0.2743523111350395,
+          "spectral_relative_error": 3.262867383027408e-15
+        },
+        {
+          "t": 100,
+          "ratio": 0.09129313226729434,
+          "spectral_relative_error": 3.4661314824555567e-15
+        }
+      ],
+      "profile": {
+        "lambda": 0.9,
+        "kappa_actual": 1.9343700941146715,
+        "upper": 0.8511117483042521,
+        "local_max": 0.8099999999999998
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.03217704385946439
+    },
+    {
+      "r": 1,
+      "j": 17,
+      "weights": [
+        0.025932009381505333,
+        0.4112583972505117,
+        0.43338449967112186,
+        0.12942509369686112
+      ],
+      "xi": 0.0012339378718477449,
+      "upper": 0.6864456617599607,
+      "SLD_max_all_tangents_at_base": 0.4115176044686324,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.15298181555263085,
+          "spectral_relative_error": 1.3866330760781657e-14
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.2213953756264911,
+          "spectral_relative_error": 1.3394370693854249e-14
+        },
+        {
+          "t": 1,
+          "ratio": 0.4166966140300722,
+          "spectral_relative_error": 1.3139840486834631e-14
+        },
+        {
+          "t": 7,
+          "ratio": 0.27246664356297295,
+          "spectral_relative_error": 1.7304692493564754e-14
+        },
+        {
+          "t": 100,
+          "ratio": 0.1609897940821776,
+          "spectral_relative_error": 1.9266951613967394e-14
+        }
+      ],
+      "profile": {
+        "lambda": 1,
+        "kappa_actual": 1.8206002937425794,
+        "upper": 1.0,
+        "local_max": 1.0000000000000002
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.0938934875524722
+    },
+    {
+      "r": 1,
+      "j": 18,
+      "weights": [
+        0.028405014055050012,
+        0.8576943230363275,
+        0.0,
+        0.11390066290862243
+      ],
+      "xi": 0.005300759620127211,
+      "upper": 1.0,
+      "SLD_max_all_tangents_at_base": 0.832970297738338,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.023105772503780996,
+          "spectral_relative_error": 1.7239831987177457e-14
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.38734228618714617,
+          "spectral_relative_error": 9.240320691476305e-15
+        },
+        {
+          "t": 1,
+          "ratio": 0.8302398143570544,
+          "spectral_relative_error": 4.5096667162433464e-14
+        },
+        {
+          "t": 7,
+          "ratio": 0.5495546535034774,
+          "spectral_relative_error": 5.72800373477032e-14
+        },
+        {
+          "t": 100,
+          "ratio": 0.10154202033136196,
+          "spectral_relative_error": 5.809467346358503e-14
+        }
+      ],
+      "profile": {
+        "lambda": -0.3333333333333333,
+        "kappa_actual": 1.9946992403798722,
+        "upper": 0.3315710840897728,
+        "local_max": 0.11111111111111109
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.002591746740433165
+    },
+    {
+      "r": 1,
+      "j": 19,
+      "weights": [
+        0.008387891678324367,
+        0.5520136126633762,
+        0.3805340750315402,
+        0.05906442062675927
+      ],
+      "xi": 0.005043301108259574,
+      "upper": 0.8861935502162214,
+      "SLD_max_all_tangents_at_base": 0.7186331480045072,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.22362469898401177,
+          "spectral_relative_error": 2.312026043594094e-14
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.349775419991475,
+          "spectral_relative_error": 2.1220296490276132e-14
+        },
+        {
+          "t": 1,
+          "ratio": 0.7212671053247215,
+          "spectral_relative_error": 1.102952391077172e-14
+        },
+        {
+          "t": 7,
+          "ratio": 0.4500291646706325,
+          "spectral_relative_error": 5.673736443359367e-15
+        },
+        {
+          "t": 100,
+          "ratio": 0.24351107857195425,
+          "spectral_relative_error": 4.188228589141754e-15
+        }
+      ],
+      "profile": {
+        "lambda": -0.2,
+        "kappa_actual": 1.8446703365210224,
+        "upper": 0.08878575159673875,
+        "local_max": 0.04000000000000003
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.0801382669616151
+    },
+    {
+      "r": 1,
+      "j": 20,
+      "weights": [
+        0.9616226968426883,
+        0.00886897804750046,
+        0.01809263179000864,
+        0.011415693319802507
+      ],
+      "xi": 6.380773494941827e-05,
+      "upper": 0.9376612769019523,
+      "SLD_max_all_tangents_at_base": 0.9136930215567949,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.00115037030079657,
+          "spectral_relative_error": 1.0865056841620654e-12
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.6967181755649974,
+          "spectral_relative_error": 1.6619584485917543e-13
+        },
+        {
+          "t": 1,
+          "ratio": 0.9113996875762975,
+          "spectral_relative_error": 7.753755301474049e-14
+        },
+        {
+          "t": 7,
+          "ratio": 0.8078492347821643,
+          "spectral_relative_error": 3.332444674347528e-14
+        },
+        {
+          "t": 100,
+          "ratio": 0.2648490860118509,
+          "spectral_relative_error": 6.398133974733455e-14
+        }
+      ],
+      "profile": {
+        "lambda": 0,
+        "kappa_actual": 1.9999361922650496,
+        "upper": 0.0,
+        "local_max": 0.0
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 3.157556304259068e-05
+    },
+    {
+      "r": 1,
+      "j": 21,
+      "weights": [
+        0.3282295096330946,
+        0.39384352313992216,
+        0.27472465581619643,
+        0.0032023114107869177
+      ],
+      "xi": 0.00012541329187000597,
+      "upper": 0.9502333086672796,
+      "SLD_max_all_tangents_at_base": 0.19318150257709116,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.10425649472529078,
+          "spectral_relative_error": 2.8305132705393995e-15
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.1268208222425786,
+          "spectral_relative_error": 3.137209047695112e-15
+        },
+        {
+          "t": 1,
+          "ratio": 0.19434349350804347,
+          "spectral_relative_error": 2.7049610266731762e-15
+        },
+        {
+          "t": 7,
+          "ratio": 0.1438257121869699,
+          "spectral_relative_error": 1.9703293576474037e-15
+        },
+        {
+          "t": 100,
+          "ratio": 0.10705513191587862,
+          "spectral_relative_error": 2.1131178866200366e-15
+        }
+      ],
+      "profile": {
+        "lambda": 0.5,
+        "kappa_actual": 1.6962199112775904,
+        "upper": 0.3145551859814441,
+        "local_max": 0.2500000000000001
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.1539991341482203
+    },
+    {
+      "r": 1,
+      "j": 22,
+      "weights": [
+        0.02795997205152366,
+        0.5322619266257776,
+        0.13821603057349685,
+        0.3015620707492019
+      ],
+      "xi": 0.000362398781232992,
+      "upper": 0.6680174675410155,
+      "SLD_max_all_tangents_at_base": 0.391989481615659,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.0002874765994328474,
+          "spectral_relative_error": 1.0046145827970425e-12
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.0977472461236334,
+          "spectral_relative_error": 4.897575911085858e-13
+        },
+        {
+          "t": 1,
+          "ratio": 0.3907208157561728,
+          "spectral_relative_error": 1.5706153285937287e-12
+        },
+        {
+          "t": 7,
+          "ratio": 0.17356364117179557,
+          "spectral_relative_error": 7.294447818092514e-13
+        },
+        {
+          "t": 100,
+          "ratio": 0.01599480793549634,
+          "spectral_relative_error": 1.251439257945359e-13
+        }
+      ],
+      "profile": {
+        "lambda": 0.9,
+        "kappa_actual": 1.999637601218767,
+        "upper": 0.8526234461658782,
+        "local_max": 0.8100000000000398
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.00017896264646297122
+    },
+    {
+      "r": 1,
+      "j": 23,
+      "weights": [
+        0.12322034348874661,
+        0.0039062114893707004,
+        0.41004064891382563,
+        0.4628327961080571
+      ],
+      "xi": 0.004651175753314544,
+      "upper": 0.9404579063058054,
+      "SLD_max_all_tangents_at_base": 0.4554657388882983,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.08758716204395146,
+          "spectral_relative_error": 2.1869218195874877e-14
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.18620298921970743,
+          "spectral_relative_error": 2.1624448545358133e-14
+        },
+        {
+          "t": 1,
+          "ratio": 0.44914805753280745,
+          "spectral_relative_error": 1.9825023808877448e-14
+        },
+        {
+          "t": 7,
+          "ratio": 0.25865207302796794,
+          "spectral_relative_error": 1.239938789581756e-14
+        },
+        {
+          "t": 100,
+          "ratio": 0.10625960833185627,
+          "spectral_relative_error": 9.006256043604449e-15
+        }
+      ],
+      "profile": {
+        "lambda": 1,
+        "kappa_actual": 1.9072634022684605,
+        "upper": 1.0,
+        "local_max": 1.0000000000000004
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.04389547920862741
+    },
+    {
+      "r": 2,
+      "j": 0,
+      "weights": [
+        0.0,
+        0.4683557277314681,
+        0.18780222356942766,
+        0.3438420486991041
+      ],
+      "xi": 0.0040989775708456565,
+      "upper": 1.0,
+      "SLD_max_all_tangents_at_base": 0.46871631086447574,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.24069432146946682,
+          "spectral_relative_error": 8.562016868957285e-13
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.46926589089206083,
+          "spectral_relative_error": 1.633829633756803e-12
+        },
+        {
+          "t": 1,
+          "ratio": 0.4721684070305918,
+          "spectral_relative_error": 1.724202469285441e-12
+        },
+        {
+          "t": 7,
+          "ratio": 0.4674901129045509,
+          "spectral_relative_error": 1.7508716306122713e-12
+        },
+        {
+          "t": 100,
+          "ratio": 0.4331114039530976,
+          "spectral_relative_error": 1.2755491691198286e-12
+        }
+      ],
+      "profile": {
+        "lambda": -0.3333333333333333,
+        "kappa_actual": 3.9821175339656025,
+        "upper": 0.9999999999999999,
+        "local_max": 0.4015840002125203
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.0010492591517226736
+    },
+    {
+      "r": 2,
+      "j": 1,
+      "weights": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "xi": 0.01442916902329986,
+      "upper": 0.0,
+      "SLD_max_all_tangents_at_base": 0.0,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.0,
+          "spectral_relative_error": 1.4837380889192638e-14
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.0,
+          "spectral_relative_error": 1.1837833589451493e-14
+        },
+        {
+          "t": 1,
+          "ratio": 0.0,
+          "spectral_relative_error": 7.175308714855104e-15
+        },
+        {
+          "t": 7,
+          "ratio": 0.0,
+          "spectral_relative_error": 7.320543210906183e-15
+        },
+        {
+          "t": 100,
+          "ratio": 0.0,
+          "spectral_relative_error": 7.446850424718354e-15
+        }
+      ],
+      "profile": {
+        "lambda": -0.2,
+        "kappa_actual": 2.5257781839687947,
+        "upper": 0.14540108937857804,
+        "local_max": 0.09279096970473795
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.003543036302675008
+    },
+    {
+      "r": 2,
+      "j": 2,
+      "weights": [
+        0.6704385772271491,
+        0.27488233553755553,
+        0.04298148403090586,
+        0.011697603204389503
+      ],
+      "xi": 0.00010318340374274225,
+      "upper": 0.8595048212330983,
+      "SLD_max_all_tangents_at_base": 0.7936316596012283,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.0006233671480658494,
+          "spectral_relative_error": 1.4045703560616243e-12
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.362260551793749,
+          "spectral_relative_error": 5.914089130978257e-13
+        },
+        {
+          "t": 1,
+          "ratio": 0.7927519941408926,
+          "spectral_relative_error": 6.290435290676171e-13
+        },
+        {
+          "t": 7,
+          "ratio": 0.5269913508923332,
+          "spectral_relative_error": 5.716426694789798e-13
+        },
+        {
+          "t": 100,
+          "ratio": 0.07907746558940947,
+          "spectral_relative_error": 4.910200030357642e-13
+        }
+      ],
+      "profile": {
+        "lambda": 0,
+        "kappa_actual": 2.2319844743669184,
+        "upper": 0.0,
+        "local_max": 0.0
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 2.5563977808395104e-05
+    },
+    {
+      "r": 2,
+      "j": 3,
+      "weights": [
+        0.1349661573281024,
+        0.35482571249503686,
+        0.24150793169159337,
+        0.26870019848526744
+      ],
+      "xi": 1.8477916756055458e-05,
+      "upper": 0.11552466719194798,
+      "SLD_max_all_tangents_at_base": 0.07377857084431687,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.009213421560291864,
+          "spectral_relative_error": 3.84649433533607e-15
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.03975799463624144,
+          "spectral_relative_error": 1.508387080735877e-14
+        },
+        {
+          "t": 1,
+          "ratio": 0.07372232951791723,
+          "spectral_relative_error": 1.9541110252768058e-14
+        },
+        {
+          "t": 7,
+          "ratio": 0.05178249573235971,
+          "spectral_relative_error": 2.4086962490430946e-14
+        },
+        {
+          "t": 100,
+          "ratio": 0.017149014536970347,
+          "spectral_relative_error": 2.1910315647175802e-14
+        }
+      ],
+      "profile": {
+        "lambda": 0.5,
+        "kappa_actual": 2.6698053813832807,
+        "upper": 0.3637529928599287,
+        "local_max": 0.31582763885118575
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.005670275241371252
+    },
+    {
+      "r": 2,
+      "j": 4,
+      "weights": [
+        0.4262744873868684,
+        0.5541315936456008,
+        0.0019381927214697345,
+        0.017655726246061033
+      ],
+      "xi": 0.004628182136043216,
+      "upper": 0.972257571891957,
+      "SLD_max_all_tangents_at_base": 0.9170746213238163,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.12398510539599646,
+          "spectral_relative_error": 4.269074049580501e-14
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.7304893776736605,
+          "spectral_relative_error": 5.0258584738399096e-14
+        },
+        {
+          "t": 1,
+          "ratio": 0.9151000909073193,
+          "spectral_relative_error": 8.842473647159459e-14
+        },
+        {
+          "t": 7,
+          "ratio": 0.817684586651982,
+          "spectral_relative_error": 2.8920441445830314e-14
+        },
+        {
+          "t": 100,
+          "ratio": 0.4393999664912753,
+          "spectral_relative_error": 4.3954052812529464e-15
+        }
+      ],
+      "profile": {
+        "lambda": 0.9,
+        "kappa_actual": 3.98335089121527,
+        "upper": 0.867857142857143,
+        "local_max": 0.8525275051487717
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.0011432465370430451
+    },
+    {
+      "r": 2,
+      "j": 5,
+      "weights": [
+        0.25340713824612415,
+        0.005488604658477373,
+        0.11636538172638412,
+        0.6247388753690145
+      ],
+      "xi": 0.03388783973836912,
+      "upper": 0.9185071230397914,
+      "SLD_max_all_tangents_at_base": 0.6504645617409858,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.260461617293348,
+          "spectral_relative_error": 5.5634839358783303e-14
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.5704975753501198,
+          "spectral_relative_error": 4.331632806384441e-14
+        },
+        {
+          "t": 1,
+          "ratio": 0.6503523630449904,
+          "spectral_relative_error": 3.3645095813799045e-14
+        },
+        {
+          "t": 7,
+          "ratio": 0.6154691790672971,
+          "spectral_relative_error": 4.888419953668523e-14
+        },
+        {
+          "t": 100,
+          "ratio": 0.3719657568174946,
+          "spectral_relative_error": 8.883942197427471e-14
+        }
+      ],
+      "profile": {
+        "lambda": 1,
+        "kappa_actual": 2.7744308225141117,
+        "upper": 1.0,
+        "local_max": 1.0000000000000042
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.008221701515925548
+    },
+    {
+      "r": 2,
+      "j": 6,
+      "weights": [
+        0.7269400418622763,
+        0.07840011670736925,
+        0.0,
+        0.19465984143035436
+      ],
+      "xi": 0.00030991380352484116,
+      "upper": 1.0,
+      "SLD_max_all_tangents_at_base": 0.7321524666601086,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.0025919663700368968,
+          "spectral_relative_error": 7.115211103459491e-13
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.5053958146541662,
+          "spectral_relative_error": 2.6920612142649097e-14
+        },
+        {
+          "t": 1,
+          "ratio": 0.7317373302561394,
+          "spectral_relative_error": 3.0367388988118314e-15
+        },
+        {
+          "t": 7,
+          "ratio": 0.618461262964414,
+          "spectral_relative_error": 3.6320064927605185e-14
+        },
+        {
+          "t": 100,
+          "ratio": 0.15996714222866615,
+          "spectral_relative_error": 1.2583913210356588e-13
+        }
+      ],
+      "profile": {
+        "lambda": -0.3333333333333333,
+        "kappa_actual": 2.2731467891637265,
+        "upper": 0.4387840214982519,
+        "local_max": 0.2931066935435933
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 7.689718995295035e-05
+    },
+    {
+      "r": 2,
+      "j": 7,
+      "weights": [
+        0.0019992185736193847,
+        0.0002994116804432493,
+        0.34405713908743873,
+        0.6536442306584987
+      ],
+      "xi": 0.010333077528792737,
+      "upper": 0.9958382265307882,
+      "SLD_max_all_tangents_at_base": 0.990835923608782,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.546038026620444,
+          "spectral_relative_error": 3.0604230477606522e-15
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.7588014696899824,
+          "spectral_relative_error": 2.589699340213257e-15
+        },
+        {
+          "t": 1,
+          "ratio": 0.9903837787367277,
+          "spectral_relative_error": 4.138315453319372e-15
+        },
+        {
+          "t": 7,
+          "ratio": 0.8452670517820312,
+          "spectral_relative_error": 3.231052401753807e-15
+        },
+        {
+          "t": 100,
+          "ratio": 0.6079805786775053,
+          "spectral_relative_error": 2.266152695374028e-15
+        }
+      ],
+      "profile": {
+        "lambda": -0.2,
+        "kappa_actual": 2.3551651286060125,
+        "upper": 0.12923302216461,
+        "local_max": 0.07754123259991355
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.017647571440758347
+    },
+    {
+      "r": 2,
+      "j": 8,
+      "weights": [
+        0.1356262293724697,
+        0.48056794862365554,
+        0.08036876517251276,
+        0.3034370568313619
+      ],
+      "xi": 0.0002150572776147032,
+      "upper": 0.3648852382165959,
+      "SLD_max_all_tangents_at_base": 0.30091341424643187,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.00020393247118244857,
+          "spectral_relative_error": 1.055955693416473e-12
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.13628017498669315,
+          "spectral_relative_error": 5.520890890966574e-13
+        },
+        {
+          "t": 1,
+          "ratio": 0.3002127553722478,
+          "spectral_relative_error": 2.1491712834011655e-12
+        },
+        {
+          "t": 7,
+          "ratio": 0.19355392297902302,
+          "spectral_relative_error": 9.411096167487221e-13
+        },
+        {
+          "t": 100,
+          "ratio": 0.03328290385229919,
+          "spectral_relative_error": 7.760081444501357e-14
+        }
+      ],
+      "profile": {
+        "lambda": 0,
+        "kappa_actual": 3.998562181873025,
+        "upper": 0.0,
+        "local_max": 0.0
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 5.3245955789453465e-05
+    },
+    {
+      "r": 2,
+      "j": 9,
+      "weights": [
+        0.5068500531436138,
+        0.03435587279747919,
+        0.08683165667065144,
+        0.37196241738825564
+      ],
+      "xi": 0.08739892963335069,
+      "upper": 0.6466825612012823,
+      "SLD_max_all_tangents_at_base": 0.5697483986518906,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.14649215022255563,
+          "spectral_relative_error": 6.346543373853735e-14
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.27982731200152633,
+          "spectral_relative_error": 5.958562982327035e-14
+        },
+        {
+          "t": 1,
+          "ratio": 0.5705176868567664,
+          "spectral_relative_error": 2.8557368289705887e-14
+        },
+        {
+          "t": 7,
+          "ratio": 0.3663351721859657,
+          "spectral_relative_error": 3.388719851027349e-14
+        },
+        {
+          "t": 100,
+          "ratio": 0.17055496498595446,
+          "spectral_relative_error": 2.7431085600219474e-14
+        }
+      ],
+      "profile": {
+        "lambda": 0.5,
+        "kappa_actual": 2.124626059646793,
+        "upper": 0.33998085196264416,
+        "local_max": 0.3158779447128859
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.02125900285621224
+    },
+    {
+      "r": 2,
+      "j": 10,
+      "weights": [
+        0.5087563166650058,
+        0.08724532272254656,
+        0.009508773288446803,
+        0.3944895873240009
+      ],
+      "xi": 0.0018960931171939923,
+      "upper": 0.867908838573931,
+      "SLD_max_all_tangents_at_base": 0.6534266159171213,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.0206610096405997,
+          "spectral_relative_error": 5.615054432381412e-13
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.4002564047588025,
+          "spectral_relative_error": 7.631715026452726e-14
+        },
+        {
+          "t": 1,
+          "ratio": 0.6529270540499451,
+          "spectral_relative_error": 5.4081757908238526e-14
+        },
+        {
+          "t": 7,
+          "ratio": 0.5103724441136845,
+          "spectral_relative_error": 1.3267946828350626e-14
+        },
+        {
+          "t": 100,
+          "ratio": 0.14514645896879186,
+          "spectral_relative_error": 2.080321317365701e-14
+        }
+      ],
+      "profile": {
+        "lambda": 0.9,
+        "kappa_actual": 2.448861390034309,
+        "upper": 0.8609370803962711,
+        "local_max": 0.8497613885239588
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.0004694062746070202
+    },
+    {
+      "r": 2,
+      "j": 11,
+      "weights": [
+        0.47024564546318337,
+        0.050026593082546145,
+        0.08408684632983475,
+        0.3956409151244358
+      ],
+      "xi": 0.00010116637279503173,
+      "upper": 0.5620748915546901,
+      "SLD_max_all_tangents_at_base": 0.5340536432139437,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.27844801677860576,
+          "spectral_relative_error": 5.1997069155602066e-14
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.4029615067948795,
+          "spectral_relative_error": 2.2933997359669653e-14
+        },
+        {
+          "t": 1,
+          "ratio": 0.5335981149126753,
+          "spectral_relative_error": 4.683953368279772e-15
+        },
+        {
+          "t": 7,
+          "ratio": 0.4579482158876635,
+          "spectral_relative_error": 8.864402875587505e-15
+        },
+        {
+          "t": 100,
+          "ratio": 0.30784277831367257,
+          "spectral_relative_error": 2.987172495862846e-14
+        }
+      ],
+      "profile": {
+        "lambda": 1,
+        "kappa_actual": 1.897692309820704,
+        "upper": 1.0,
+        "local_max": 1.0000000000000009
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.02353317779387563
+    },
+    {
+      "r": 2,
+      "j": 12,
+      "weights": [
+        0.0,
+        0.4683813687830341,
+        0.044369655480888816,
+        0.4872489757360771
+      ],
+      "xi": 0.028259012499781907,
+      "upper": 1.0,
+      "SLD_max_all_tangents_at_base": 0.8346137089889003,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.3234978288510335,
+          "spectral_relative_error": 4.277590944748588e-14
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.7295620345858828,
+          "spectral_relative_error": 3.4008836398380626e-14
+        },
+        {
+          "t": 1,
+          "ratio": 0.8332906170626014,
+          "spectral_relative_error": 1.3135678062905869e-14
+        },
+        {
+          "t": 7,
+          "ratio": 0.7859472920595952,
+          "spectral_relative_error": 5.230438995824694e-15
+        },
+        {
+          "t": 100,
+          "ratio": 0.49443369001673737,
+          "spectral_relative_error": 6.016994831096128e-15
+        }
+      ],
+      "profile": {
+        "lambda": -0.3333333333333333,
+        "kappa_actual": 3.651070867267862,
+        "upper": 0.9999999999999999,
+        "local_max": 0.47175753465918424
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.006936544419545242
+    },
+    {
+      "r": 2,
+      "j": 13,
+      "weights": [
+        0.0958133675596474,
+        0.22330551595324402,
+        0.4985738677856342,
+        0.18230724870147444
+      ],
+      "xi": 0.01334893981263083,
+      "upper": 0.28590852529984423,
+      "SLD_max_all_tangents_at_base": 0.258052531470169,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.02145265606698263,
+          "spectral_relative_error": 4.816771988307754e-15
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.1617359872337512,
+          "spectral_relative_error": 6.128395256126061e-14
+        },
+        {
+          "t": 1,
+          "ratio": 0.2578884273476542,
+          "spectral_relative_error": 9.515712889309391e-14
+        },
+        {
+          "t": 7,
+          "ratio": 0.20568551997023016,
+          "spectral_relative_error": 9.241319207889246e-14
+        },
+        {
+          "t": 100,
+          "ratio": 0.05791876688207777,
+          "spectral_relative_error": 7.497985400733454e-14
+        }
+      ],
+      "profile": {
+        "lambda": -0.2,
+        "kappa_actual": 2.7936057684680278,
+        "upper": 0.1742521703036673,
+        "local_max": 0.09644437182707713
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.0032997269799004943
+    },
+    {
+      "r": 2,
+      "j": 14,
+      "weights": [
+        0.40816233767156196,
+        0.008127297271012524,
+        0.10174448914042705,
+        0.4819658759169984
+      ],
+      "xi": 0.03122208668633925,
+      "upper": 0.8835478747756658,
+      "SLD_max_all_tangents_at_base": 0.6150740055819084,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.20156757833634079,
+          "spectral_relative_error": 5.626098030589145e-14
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.5011412887796103,
+          "spectral_relative_error": 3.4664016857310104e-14
+        },
+        {
+          "t": 1,
+          "ratio": 0.6144989191533519,
+          "spectral_relative_error": 1.6891409751464806e-14
+        },
+        {
+          "t": 7,
+          "ratio": 0.564122898758227,
+          "spectral_relative_error": 1.137286999943451e-14
+        },
+        {
+          "t": 100,
+          "ratio": 0.29939755086684006,
+          "spectral_relative_error": 4.290449866943702e-15
+        }
+      ],
+      "profile": {
+        "lambda": 0,
+        "kappa_actual": 2.2844865841425075,
+        "upper": 0.0,
+        "local_max": 0.0
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.007767918294363202
+    },
+    {
+      "r": 2,
+      "j": 15,
+      "weights": [
+        0.11565850680708388,
+        0.14912591064228445,
+        0.5911045077641208,
+        0.14411107478651086
+      ],
+      "xi": 0.032528592474271895,
+      "upper": 0.3328531561578908,
+      "SLD_max_all_tangents_at_base": 0.25791701216640756,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.08869985826717701,
+          "spectral_relative_error": 5.55210269111202e-14
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.17446981021137067,
+          "spectral_relative_error": 2.5128397579370288e-14
+        },
+        {
+          "t": 1,
+          "ratio": 0.2576065975517315,
+          "spectral_relative_error": 1.1652904825222471e-14
+        },
+        {
+          "t": 7,
+          "ratio": 0.2091388646864014,
+          "spectral_relative_error": 9.255321072267238e-15
+        },
+        {
+          "t": 100,
+          "ratio": 0.10947152165381116,
+          "spectral_relative_error": 1.426609614972497e-14
+        }
+      ],
+      "profile": {
+        "lambda": 0.5,
+        "kappa_actual": 2.1178335658211473,
+        "upper": 0.33963223519010566,
+        "local_max": 0.31036945340471944
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.01286803877474508
+    },
+    {
+      "r": 2,
+      "j": 16,
+      "weights": [
+        0.10180399770415388,
+        0.13698823540780194,
+        0.6573403052456189,
+        0.1038674616424251
+      ],
+      "xi": 9.999194251867278e-05,
+      "upper": 0.43406163929557395,
+      "SLD_max_all_tangents_at_base": 0.40332293495241883,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.0003845818720605456,
+          "spectral_relative_error": 5.325942215054608e-13
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.3039471549909,
+          "spectral_relative_error": 4.707021390198488e-13
+        },
+        {
+          "t": 1,
+          "ratio": 0.40231277830051937,
+          "spectral_relative_error": 2.309834247840989e-12
+        },
+        {
+          "t": 7,
+          "ratio": 0.3544048937127538,
+          "spectral_relative_error": 8.406835272100061e-13
+        },
+        {
+          "t": 100,
+          "ratio": 0.1136851316490562,
+          "spectral_relative_error": 1.8327718420429256e-13
+        }
+      ],
+      "profile": {
+        "lambda": 0.9,
+        "kappa_actual": 3.99861238339793,
+        "upper": 0.867857142857143,
+        "local_max": 0.8526293352536067
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 2.4747968232101363e-05
+    },
+    {
+      "r": 2,
+      "j": 17,
+      "weights": [
+        0.3533906736265593,
+        0.24167129665274806,
+        0.06504230199899318,
+        0.33989572772169935
+      ],
+      "xi": 0.001119976422377164,
+      "upper": 0.3671954825859779,
+      "SLD_max_all_tangents_at_base": 0.19242552587186698,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.0012780944974044534,
+          "spectral_relative_error": 8.128234482949061e-14
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.09995807983962321,
+          "spectral_relative_error": 1.8509515163604566e-13
+        },
+        {
+          "t": 1,
+          "ratio": 0.19217628879138365,
+          "spectral_relative_error": 3.3832344555706676e-13
+        },
+        {
+          "t": 7,
+          "ratio": 0.13839456109230494,
+          "spectral_relative_error": 9.477457266864888e-14
+        },
+        {
+          "t": 100,
+          "ratio": 0.0243514717125358,
+          "spectral_relative_error": 5.337516901905786e-13
+        }
+      ],
+      "profile": {
+        "lambda": 1,
+        "kappa_actual": 2.8598235178493834,
+        "upper": 1.0,
+        "local_max": 1.0000000000000713
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.0002770653435560468
+    },
+    {
+      "r": 2,
+      "j": 18,
+      "weights": [
+        0.6657888865356343,
+        0.106114062740636,
+        0.0,
+        0.2280970507237298
+      ],
+      "xi": 1.0643554585123048e-05,
+      "upper": 1.0,
+      "SLD_max_all_tangents_at_base": 0.6428374278720034,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.00020391625354719613,
+          "spectral_relative_error": 1.2261937663748283e-11
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.48289493116801663,
+          "spectral_relative_error": 5.844609095946898e-13
+        },
+        {
+          "t": 1,
+          "ratio": 0.6423997057793738,
+          "spectral_relative_error": 4.244317933430688e-13
+        },
+        {
+          "t": 7,
+          "ratio": 0.5617616484472683,
+          "spectral_relative_error": 7.706265022730891e-13
+        },
+        {
+          "t": 100,
+          "ratio": 0.20778030028558267,
+          "spectral_relative_error": 2.959087586368806e-12
+        }
+      ],
+      "profile": {
+        "lambda": -0.3333333333333333,
+        "kappa_actual": 2.6303948354263333,
+        "upper": 0.6401832448904177,
+        "local_max": 0.2792049590902514
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 2.6366758867997186e-06
+    },
+    {
+      "r": 2,
+      "j": 19,
+      "weights": [
+        0.0005209281076455214,
+        0.21869474813830458,
+        0.20944667563659644,
+        0.5713376481174535
+      ],
+      "xi": 0.0007317036077747006,
+      "upper": 0.9917130564350572,
+      "SLD_max_all_tangents_at_base": 0.4749702289798322,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.1633096186273082,
+          "spectral_relative_error": 3.068280887886033e-14
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.3568191154635771,
+          "spectral_relative_error": 2.2187583508328753e-14
+        },
+        {
+          "t": 1,
+          "ratio": 0.4747012132953126,
+          "spectral_relative_error": 1.7692171133409173e-14
+        },
+        {
+          "t": 7,
+          "ratio": 0.4122447697459034,
+          "spectral_relative_error": 1.132878366658035e-14
+        },
+        {
+          "t": 100,
+          "ratio": 0.22087520122984078,
+          "spectral_relative_error": 3.554835658426653e-15
+        }
+      ],
+      "profile": {
+        "lambda": -0.2,
+        "kappa_actual": 2.4247735261951324,
+        "upper": 0.13564307290523125,
+        "local_max": 0.08685689296273304
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.009573582452747302
+    },
+    {
+      "r": 2,
+      "j": 20,
+      "weights": [
+        0.30134421729913224,
+        0.5859053077517734,
+        0.10549730350112456,
+        0.007253171447969865
+      ],
+      "xi": 0.00428856490352825,
+      "upper": 0.894995804605426,
+      "SLD_max_all_tangents_at_base": 0.5553905201597088,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.044039796910287275,
+          "spectral_relative_error": 4.195275914989097e-14
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.3320067540837067,
+          "spectral_relative_error": 3.704105527216099e-14
+        },
+        {
+          "t": 1,
+          "ratio": 0.554487617461586,
+          "spectral_relative_error": 8.834241475969043e-14
+        },
+        {
+          "t": 7,
+          "ratio": 0.4049505200680211,
+          "spectral_relative_error": 5.404577658516469e-14
+        },
+        {
+          "t": 100,
+          "ratio": 0.18198642936913517,
+          "spectral_relative_error": 2.4610792268005945e-14
+        }
+      ],
+      "profile": {
+        "lambda": 0,
+        "kappa_actual": 3.9681933511558065,
+        "upper": 0.0,
+        "local_max": 0.0
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.0010573521445914646
+    },
+    {
+      "r": 2,
+      "j": 21,
+      "weights": [
+        0.0016293544702437894,
+        0.08281721302699133,
+        0.4631810535414179,
+        0.45237237896134713
+      ],
+      "xi": 4.767890551951231e-05,
+      "upper": 0.9746106031356849,
+      "SLD_max_all_tangents_at_base": 0.6682653127181593,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.00022597300016551438,
+          "spectral_relative_error": 1.6655471612961516e-13
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.3741201512315506,
+          "spectral_relative_error": 1.4135066892506982e-13
+        },
+        {
+          "t": 1,
+          "ratio": 0.6673465190277192,
+          "spectral_relative_error": 2.9668050838839764e-13
+        },
+        {
+          "t": 7,
+          "ratio": 0.48107182400450976,
+          "spectral_relative_error": 1.0429340096882142e-13
+        },
+        {
+          "t": 100,
+          "ratio": 0.11982841191668762,
+          "spectral_relative_error": 2.7331244274905165e-13
+        }
+      ],
+      "profile": {
+        "lambda": 0.5,
+        "kappa_actual": 3.275495770851868,
+        "upper": 0.375,
+        "local_max": 0.3286201222731957
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 1.1797357330087053e-05
+    },
+    {
+      "r": 2,
+      "j": 22,
+      "weights": [
+        0.0021058029810092395,
+        0.21723910216573775,
+        0.7536125340025666,
+        0.027042560850686553
+      ],
+      "xi": 3.561117603944224e-05,
+      "upper": 0.9690992714618396,
+      "SLD_max_all_tangents_at_base": 0.8875313032693618,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.0017608983950042456,
+          "spectral_relative_error": 1.3731529106415714e-10
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.7210766951426469,
+          "spectral_relative_error": 4.663638938755086e-13
+        },
+        {
+          "t": 1,
+          "ratio": 0.8873761504647579,
+          "spectral_relative_error": 4.729844102203438e-13
+        },
+        {
+          "t": 7,
+          "ratio": 0.8065028677560567,
+          "spectral_relative_error": 3.993474051290793e-13
+        },
+        {
+          "t": 100,
+          "ratio": 0.32469182774675487,
+          "spectral_relative_error": 5.638579293703664e-13
+        }
+      ],
+      "profile": {
+        "lambda": 0.9,
+        "kappa_actual": 2.0397245257786922,
+        "upper": 0.8535064426658822,
+        "local_max": 0.8366991970566587
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 8.812479122105512e-06
+    },
+    {
+      "r": 2,
+      "j": 23,
+      "weights": [
+        0.44269855375517464,
+        0.21029446992879125,
+        0.23490870392500052,
+        0.11209827239103348
+      ],
+      "xi": 0.0032669076269042983,
+      "upper": 0.20760019405485108,
+      "SLD_max_all_tangents_at_base": 0.13471254362046559,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.02441363595279884,
+          "spectral_relative_error": 9.89149660252281e-16
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.08905421061506888,
+          "spectral_relative_error": 1.375847004635781e-14
+        },
+        {
+          "t": 1,
+          "ratio": 0.13464915145773415,
+          "spectral_relative_error": 9.494103598296902e-15
+        },
+        {
+          "t": 7,
+          "ratio": 0.10818773155356307,
+          "spectral_relative_error": 1.1375120513148247e-14
+        },
+        {
+          "t": 100,
+          "ratio": 0.043468180774474285,
+          "spectral_relative_error": 9.596616711130703e-15
+        }
+      ],
+      "profile": {
+        "lambda": 1,
+        "kappa_actual": 2.1767068520398998,
+        "upper": 1.0,
+        "local_max": 1.0000000000000016
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.005440077341143
+    },
+    {
+      "r": 3,
+      "j": 0,
+      "weights": [
+        0.0,
+        0.5336133236330454,
+        0.44300864581574045,
+        0.02337803055121401
+      ],
+      "xi": 0.0434168126470093,
+      "upper": 1.0,
+      "SLD_max_all_tangents_at_base": 0.908674007044962,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.9078365416549841,
+          "spectral_relative_error": 1.2979167396069982e-15
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.9079433802870807,
+          "spectral_relative_error": 1.1918968384350708e-15
+        },
+        {
+          "t": 1,
+          "ratio": 0.9084660707893656,
+          "spectral_relative_error": 1.8682134888282544e-16
+        },
+        {
+          "t": 7,
+          "ratio": 0.9086610387105921,
+          "spectral_relative_error": 2.4343840146484362e-15
+        },
+        {
+          "t": 100,
+          "ratio": 0.9086739256944721,
+          "spectral_relative_error": 3.1034437072371937e-15
+        }
+      ],
+      "profile": {
+        "lambda": -0.3333333333333333,
+        "kappa_actual": 3.8834728405783268,
+        "upper": 0.9999999999999999,
+        "local_max": 0.42457394727002995
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.006512521897051394
+    },
+    {
+      "r": 3,
+      "j": 1,
+      "weights": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "xi": 0.00019768417388279217,
+      "upper": 0.0,
+      "SLD_max_all_tangents_at_base": 0.0,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 2.512585799960711e-37,
+          "spectral_relative_error": 6.392216818569671e-13
+        },
+        {
+          "t": 0.07,
+          "ratio": 1.8249274553698085e-34,
+          "spectral_relative_error": 5.9432062416177e-14
+        },
+        {
+          "t": 1,
+          "ratio": 4.242640828272755e-34,
+          "spectral_relative_error": 5.061854175624643e-13
+        },
+        {
+          "t": 7,
+          "ratio": 2.732874424810287e-34,
+          "spectral_relative_error": 1.4184746086845443e-14
+        },
+        {
+          "t": 100,
+          "ratio": 3.712566075090796e-35,
+          "spectral_relative_error": 5.187063024847194e-13
+        }
+      ],
+      "profile": {
+        "lambda": -0.2,
+        "kappa_actual": 3.5260508832049604,
+        "upper": 0.20000000000000004,
+        "local_max": 0.15202597820373487
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 3.2576387634362645e-05
+    },
+    {
+      "r": 3,
+      "j": 2,
+      "weights": [
+        0.36070886126638907,
+        0.010103948802449008,
+        0.047083600525657264,
+        0.5821035894055047
+      ],
+      "xi": 7.893349849406304e-05,
+      "upper": 0.8716923180740477,
+      "SLD_max_all_tangents_at_base": 0.7904083701310559,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.0005973760059049663,
+          "spectral_relative_error": 4.91988334528135e-13
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.5558945690011444,
+          "spectral_relative_error": 2.2729253476843763e-13
+        },
+        {
+          "t": 1,
+          "ratio": 0.7894609229335764,
+          "spectral_relative_error": 2.7332508490041014e-13
+        },
+        {
+          "t": 7,
+          "ratio": 0.6722725672345101,
+          "spectral_relative_error": 2.902538408566526e-14
+        },
+        {
+          "t": 100,
+          "ratio": 0.19547716114714794,
+          "spectral_relative_error": 3.3788392718230583e-13
+        }
+      ],
+      "profile": {
+        "lambda": 0,
+        "kappa_actual": 3.1547271906273084,
+        "upper": 0.0,
+        "local_max": 0.0
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 1.302814734151431e-05
+    },
+    {
+      "r": 3,
+      "j": 3,
+      "weights": [
+        0.29817917468757643,
+        0.13876587025768142,
+        0.48103051130207897,
+        0.08202444375266314
+      ],
+      "xi": 8.448716024951523e-05,
+      "upper": 0.35562934085834086,
+      "SLD_max_all_tangents_at_base": 0.3291797510994597,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.00018031250449550954,
+          "spectral_relative_error": 9.397955518290344e-13
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.18623854420783373,
+          "spectral_relative_error": 1.1515629391243779e-13
+        },
+        {
+          "t": 1,
+          "ratio": 0.3288458773010413,
+          "spectral_relative_error": 3.9435342245518166e-13
+        },
+        {
+          "t": 7,
+          "ratio": 0.2506267631550192,
+          "spectral_relative_error": 4.1988120847662593e-13
+        },
+        {
+          "t": 100,
+          "ratio": 0.046216183149528266,
+          "spectral_relative_error": 1.143738642795264e-12
+        }
+      ],
+      "profile": {
+        "lambda": 0.5,
+        "kappa_actual": 3.1861532593383557,
+        "upper": 0.375,
+        "local_max": 0.3241228888820372
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 1.3952379581557846e-05
+    },
+    {
+      "r": 3,
+      "j": 4,
+      "weights": [
+        0.0800028578804913,
+        0.6883730131923692,
+        0.17335939997727493,
+        0.05826472894986462
+      ],
+      "xi": 8.343745063938385e-05,
+      "upper": 0.5662035673755808,
+      "SLD_max_all_tangents_at_base": 0.5388980263076357,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.002462929877128315,
+          "spectral_relative_error": 3.4669360374846017e-12
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.41865125469299813,
+          "spectral_relative_error": 4.9358465397450825e-15
+        },
+        {
+          "t": 1,
+          "ratio": 0.5387790325249535,
+          "spectral_relative_error": 1.567451510420671e-13
+        },
+        {
+          "t": 7,
+          "ratio": 0.47287715486476156,
+          "spectral_relative_error": 1.1443668865806669e-13
+        },
+        {
+          "t": 100,
+          "ratio": 0.20364897804467402,
+          "spectral_relative_error": 2.307046765006242e-13
+        }
+      ],
+      "profile": {
+        "lambda": 0.9,
+        "kappa_actual": 2.4490186587443277,
+        "upper": 0.8609394800304806,
+        "local_max": 0.8447239093444008
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 1.3754718149057944e-05
+    },
+    {
+      "r": 3,
+      "j": 5,
+      "weights": [
+        0.1039219044555834,
+        0.2673843973013751,
+        0.05287043913323265,
+        0.5758232591098089
+      ],
+      "xi": 5.239327070668423e-05,
+      "upper": 0.5295964595887903,
+      "SLD_max_all_tangents_at_base": 0.4847670383043257,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.3432962138379723,
+          "spectral_relative_error": 6.988637416784773e-15
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.404111083405997,
+          "spectral_relative_error": 7.971473418810785e-15
+        },
+        {
+          "t": 1,
+          "ratio": 0.48428824590112174,
+          "spectral_relative_error": 8.66527703404897e-15
+        },
+        {
+          "t": 7,
+          "ratio": 0.43238544731419154,
+          "spectral_relative_error": 9.04590112506473e-15
+        },
+        {
+          "t": 100,
+          "ratio": 0.3601497722880667,
+          "spectral_relative_error": 6.348495248366931e-15
+        }
+      ],
+      "profile": {
+        "lambda": 1,
+        "kappa_actual": 2.36491298420529,
+        "upper": 1.0,
+        "local_max": 1.000000000000001
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.016628748111596647
+    },
+    {
+      "r": 3,
+      "j": 6,
+      "weights": [
+        0.9337084058539862,
+        0.03648372353104408,
+        0.0,
+        0.02980787061496981
+      ],
+      "xi": 0.00012687752899225138,
+      "upper": 1.0,
+      "SLD_max_all_tangents_at_base": 0.9244633438607188,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.6189948492129218,
+          "spectral_relative_error": 6.433852817741359e-13
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.8504189795333313,
+          "spectral_relative_error": 1.8080425016679245e-14
+        },
+        {
+          "t": 1,
+          "ratio": 0.9232553856452477,
+          "spectral_relative_error": 3.558318747136954e-13
+        },
+        {
+          "t": 7,
+          "ratio": 0.8867153846299359,
+          "spectral_relative_error": 1.751252656636203e-13
+        },
+        {
+          "t": 100,
+          "ratio": 0.7293145166250397,
+          "spectral_relative_error": 3.1675901127765096e-14
+        }
+      ],
+      "profile": {
+        "lambda": -0.3333333333333333,
+        "kappa_actual": 3.9996221599572648,
+        "upper": 0.9999999999999999,
+        "local_max": 0.4606124746816521
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 2.093380650694438e-05
+    },
+    {
+      "r": 3,
+      "j": 7,
+      "weights": [
+        0.24652324027882944,
+        0.701800025188636,
+        0.008902636534744372,
+        0.04277409799778993
+      ],
+      "xi": 1.3370690737307847e-05,
+      "upper": 0.8866745003522105,
+      "SLD_max_all_tangents_at_base": 0.8299458712807067,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.00024740001804998766,
+          "spectral_relative_error": 8.492937818801647e-13
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.5705497920392408,
+          "spectral_relative_error": 1.0850383197626654e-12
+        },
+        {
+          "t": 1,
+          "ratio": 0.8281114629988942,
+          "spectral_relative_error": 9.461123056129209e-13
+        },
+        {
+          "t": 7,
+          "ratio": 0.6765319696320754,
+          "spectral_relative_error": 2.6848944293063447e-13
+        },
+        {
+          "t": 100,
+          "ratio": 0.25430329101967536,
+          "spectral_relative_error": 4.337427785884559e-13
+        }
+      ],
+      "profile": {
+        "lambda": -0.2,
+        "kappa_actual": 3.8468563846386865,
+        "upper": 0.20000000000000004,
+        "local_max": 0.12443361055667196
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 2.2052875479859283e-06
+    },
+    {
+      "r": 3,
+      "j": 8,
+      "weights": [
+        0.04688218032474731,
+        0.40616438072349637,
+        0.016739352141382016,
+        0.5302140868103743
+      ],
+      "xi": 0.013344282211016117,
+      "upper": 0.8126850228373721,
+      "SLD_max_all_tangents_at_base": 0.7680603946733896,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.08915200962769504,
+          "spectral_relative_error": 3.3990987502046e-14
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.5311735987500158,
+          "spectral_relative_error": 2.6196825770498175e-14
+        },
+        {
+          "t": 1,
+          "ratio": 0.7672353142450747,
+          "spectral_relative_error": 2.2523527198492106e-14
+        },
+        {
+          "t": 7,
+          "ratio": 0.6415816442449838,
+          "spectral_relative_error": 1.7139352636345617e-14
+        },
+        {
+          "t": 100,
+          "ratio": 0.23040019209985885,
+          "spectral_relative_error": 1.1023364794582215e-14
+        }
+      ],
+      "profile": {
+        "lambda": 0,
+        "kappa_actual": 3.1221338835961174,
+        "upper": 0.0,
+        "local_max": 0.0
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.0021846517098644156
+    },
+    {
+      "r": 3,
+      "j": 9,
+      "weights": [
+        0.6934996609529739,
+        0.20557870617194615,
+        0.058176794841979414,
+        0.04274483803310058
+      ],
+      "xi": 8.309920169468167e-05,
+      "upper": 0.6587751349315704,
+      "SLD_max_all_tangents_at_base": 0.6468306624901048,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.0017910955450436432,
+          "spectral_relative_error": 1.593407321802101e-12
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.4811967475338987,
+          "spectral_relative_error": 2.745824030075853e-13
+        },
+        {
+          "t": 1,
+          "ratio": 0.6466903125655729,
+          "spectral_relative_error": 3.2277782043425203e-13
+        },
+        {
+          "t": 7,
+          "ratio": 0.5552812040694477,
+          "spectral_relative_error": 2.6565176432649945e-13
+        },
+        {
+          "t": 100,
+          "ratio": 0.2125530055845019,
+          "spectral_relative_error": 3.5896263011888925e-13
+        }
+      ],
+      "profile": {
+        "lambda": 0.5,
+        "kappa_actual": 2.539709616906631,
+        "upper": 0.35874547516218225,
+        "local_max": 0.3238783717314207
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 1.3721805122670186e-05
+    },
+    {
+      "r": 3,
+      "j": 10,
+      "weights": [
+        0.002302285224855644,
+        0.20912632039744355,
+        0.01984506988777617,
+        0.7687263244899246
+      ],
+      "xi": 7.593325211290448e-05,
+      "upper": 0.9674017602969482,
+      "SLD_max_all_tangents_at_base": 0.914673741418445,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.0012737411904761126,
+          "spectral_relative_error": 2.8440862407842973e-12
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.6099512019013016,
+          "spectral_relative_error": 1.1374186377800507e-13
+        },
+        {
+          "t": 1,
+          "ratio": 0.9138980544171109,
+          "spectral_relative_error": 1.442215267301777e-14
+        },
+        {
+          "t": 7,
+          "ratio": 0.7563275212393831,
+          "spectral_relative_error": 6.108736417899244e-14
+        },
+        {
+          "t": 100,
+          "ratio": 0.19095905440276745,
+          "spectral_relative_error": 3.505575535602208e-13
+        }
+      ],
+      "profile": {
+        "lambda": 0.9,
+        "kappa_actual": 2.562568640051441,
+        "upper": 0.8625983628156966,
+        "local_max": 0.849116202216924
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 1.2527762344763628e-05
+    },
+    {
+      "r": 3,
+      "j": 11,
+      "weights": [
+        0.004249235909427396,
+        0.0014698268893825587,
+        0.5405403583094412,
+        0.45374057889174885
+      ],
+      "xi": 0.000148507605217154,
+      "upper": 0.9826038277433481,
+      "SLD_max_all_tangents_at_base": 0.9770982969912564,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.3204459371142662,
+          "spectral_relative_error": 1.9704335842775648e-14
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.6757897203719866,
+          "spectral_relative_error": 3.700615043740854e-16
+        },
+        {
+          "t": 1,
+          "ratio": 0.9767446606639331,
+          "spectral_relative_error": 5.6696344473345484e-15
+        },
+        {
+          "t": 7,
+          "ratio": 0.7829627003172553,
+          "spectral_relative_error": 6.203350397792737e-15
+        },
+        {
+          "t": 100,
+          "ratio": 0.4551823846492276,
+          "spectral_relative_error": 1.1771396470269395e-14
+        }
+      ],
+      "profile": {
+        "lambda": 1,
+        "kappa_actual": 2.3251191729279665,
+        "upper": 1.0,
+        "local_max": 1.000000000000003
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.0023792002806217504
+    },
+    {
+      "r": 3,
+      "j": 12,
+      "weights": [
+        0.0,
+        0.4607920526169998,
+        0.5113032889723641,
+        0.02790465841063601
+      ],
+      "xi": 1.46243784911743e-05,
+      "upper": 1.0,
+      "SLD_max_all_tangents_at_base": 0.8914960461541784,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.890520036650898,
+          "spectral_relative_error": 5.290575282046449e-10
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.8906445310571515,
+          "spectral_relative_error": 5.356840479273498e-10
+        },
+        {
+          "t": 1,
+          "ratio": 0.8912536789055041,
+          "spectral_relative_error": 5.808617521598949e-10
+        },
+        {
+          "t": 7,
+          "ratio": 0.8914809298987778,
+          "spectral_relative_error": 6.293789392070293e-10
+        },
+        {
+          "t": 100,
+          "ratio": 0.8914959513846252,
+          "spectral_relative_error": 6.480061550950102e-10
+        }
+      ],
+      "profile": {
+        "lambda": -0.3333333333333333,
+        "kappa_actual": 3.999969710593758,
+        "upper": 0.9999999999999999,
+        "local_max": 0.3745167310799775
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 2.193656773703988e-06
+    },
+    {
+      "r": 3,
+      "j": 13,
+      "weights": [
+        0.3217716153749877,
+        0.001570736959320383,
+        0.6549692139410315,
+        0.021688433724660464
+      ],
+      "xi": 0.06322515732398261,
+      "upper": 0.97672341110371,
+      "SLD_max_all_tangents_at_base": 0.9118786282206957,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.4356488694992581,
+          "spectral_relative_error": 1.7525767193662693e-14
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.729654595944372,
+          "spectral_relative_error": 7.913543023901932e-15
+        },
+        {
+          "t": 1,
+          "ratio": 0.9112208837768647,
+          "spectral_relative_error": 2.1051354202984432e-15
+        },
+        {
+          "t": 7,
+          "ratio": 0.8111274947196506,
+          "spectral_relative_error": 5.983435273022365e-16
+        },
+        {
+          "t": 100,
+          "ratio": 0.5268498174928131,
+          "spectral_relative_error": 2.8336538841378507e-15
+        }
+      ],
+      "profile": {
+        "lambda": -0.2,
+        "kappa_actual": 3.30407238980649,
+        "upper": 0.20000000000000004,
+        "local_max": 0.1172310291146951
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.010144491224414827
+    },
+    {
+      "r": 3,
+      "j": 14,
+      "weights": [
+        0.2752396704595969,
+        0.6084134781892003,
+        0.08455746830295009,
+        0.03178938304825269
+      ],
+      "xi": 0.017515292614838647,
+      "upper": 0.6705116318979,
+      "SLD_max_all_tangents_at_base": 0.5957850658260408,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.04025482568190305,
+          "spectral_relative_error": 1.9272689889990186e-14
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.26028267121043547,
+          "spectral_relative_error": 3.039480445929686e-14
+        },
+        {
+          "t": 1,
+          "ratio": 0.5946598038149998,
+          "spectral_relative_error": 3.1581407707054605e-14
+        },
+        {
+          "t": 7,
+          "ratio": 0.3750849038239685,
+          "spectral_relative_error": 3.621925062403167e-14
+        },
+        {
+          "t": 100,
+          "ratio": 0.08812547828165693,
+          "spectral_relative_error": 3.9558380908070825e-14
+        }
+      ],
+      "profile": {
+        "lambda": 0,
+        "kappa_actual": 3.110902573974918,
+        "upper": 0.0,
+        "local_max": 0.0
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.0028571020895539474
+    },
+    {
+      "r": 3,
+      "j": 15,
+      "weights": [
+        0.13555687679376494,
+        0.07701680303298143,
+        0.75383800994092,
+        0.03358831023233366
+      ],
+      "xi": 6.282114762849115e-05,
+      "upper": 0.6890786823877517,
+      "SLD_max_all_tangents_at_base": 0.6451639778237841,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.0003730556965691766,
+          "spectral_relative_error": 4.570613303072562e-12
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.4183478702350556,
+          "spectral_relative_error": 3.262345475893561e-13
+        },
+        {
+          "t": 1,
+          "ratio": 0.644532187749823,
+          "spectral_relative_error": 1.1211707051254186e-12
+        },
+        {
+          "t": 7,
+          "ratio": 0.527537055555187,
+          "spectral_relative_error": 8.157437819283387e-13
+        },
+        {
+          "t": 100,
+          "ratio": 0.1201453435682038,
+          "spectral_relative_error": 3.142754387889591e-13
+        }
+      ],
+      "profile": {
+        "lambda": 0.5,
+        "kappa_actual": 2.897754105546976,
+        "upper": 0.37172099971918715,
+        "local_max": 0.3263702231839576
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 1.0360641000420617e-05
+    },
+    {
+      "r": 3,
+      "j": 16,
+      "weights": [
+        0.6699034334466009,
+        0.05931306736960807,
+        0.19015565066310028,
+        0.08062784852069085
+      ],
+      "xi": 1.854539098168506e-05,
+      "upper": 0.5557277852985757,
+      "SLD_max_all_tangents_at_base": 0.5207109311851613,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.00015494574308361572,
+          "spectral_relative_error": 1.0604723578237111e-11
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.27988668208725925,
+          "spectral_relative_error": 7.401527310082536e-13
+        },
+        {
+          "t": 1,
+          "ratio": 0.5205090952259139,
+          "spectral_relative_error": 2.268727747106566e-12
+        },
+        {
+          "t": 7,
+          "ratio": 0.3717428750469699,
+          "spectral_relative_error": 1.2238382187969766e-12
+        },
+        {
+          "t": 100,
+          "ratio": 0.09159339365438834,
+          "spectral_relative_error": 3.159353610833807e-13
+        }
+      ],
+      "profile": {
+        "lambda": 0.9,
+        "kappa_actual": 3.087882349067218,
+        "upper": 0.867857142857143,
+        "local_max": 0.8437343798126918
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 3.0600055863637906e-06
+    },
+    {
+      "r": 3,
+      "j": 17,
+      "weights": [
+        0.005687568507561856,
+        0.9202512460416266,
+        0.07329119853336294,
+        0.0007699869174486728
+      ],
+      "xi": 0.0005341588982544013,
+      "upper": 0.9892565267051321,
+      "SLD_max_all_tangents_at_base": 0.974107815140756,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.35059777003502096,
+          "spectral_relative_error": 2.980937202733341e-14
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.8419341715640382,
+          "spectral_relative_error": 1.6672964396301756e-14
+        },
+        {
+          "t": 1,
+          "ratio": 0.9735317056918315,
+          "spectral_relative_error": 1.4285080221830707e-14
+        },
+        {
+          "t": 7,
+          "ratio": 0.9151134495659793,
+          "spectral_relative_error": 1.3433624749157735e-14
+        },
+        {
+          "t": 100,
+          "ratio": 0.5492106477978498,
+          "spectral_relative_error": 3.979777045020621e-15
+        }
+      ],
+      "profile": {
+        "lambda": 1,
+        "kappa_actual": 2.3784860310985922,
+        "upper": 1.0,
+        "local_max": 1.0000000000000036
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.002472895607867614
+    },
+    {
+      "r": 3,
+      "j": 18,
+      "weights": [
+        0.304950671268343,
+        0.5293676480256955,
+        0.0,
+        0.16568168070596168
+      ],
+      "xi": 0.0006829659480872163,
+      "upper": 1.0,
+      "SLD_max_all_tangents_at_base": 0.6250907438723297,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.19242185122168812,
+          "spectral_relative_error": 3.6266727012618534e-13
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.6211067347662925,
+          "spectral_relative_error": 8.94005202790742e-12
+        },
+        {
+          "t": 1,
+          "ratio": 0.6246716931805504,
+          "spectral_relative_error": 9.137426744750629e-12
+        },
+        {
+          "t": 7,
+          "ratio": 0.6240112473768162,
+          "spectral_relative_error": 8.836732103039442e-12
+        },
+        {
+          "t": 100,
+          "ratio": 0.6036341920071373,
+          "spectral_relative_error": 7.946749875924758e-12
+        }
+      ],
+      "profile": {
+        "lambda": -0.3333333333333333,
+        "kappa_actual": 3.993778148239179,
+        "upper": 0.9999999999999999,
+        "local_max": 0.5285317656055516
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.00010244568761997699
+    },
+    {
+      "r": 3,
+      "j": 19,
+      "weights": [
+        0.6165499511848138,
+        0.04904812121579259,
+        0.33223620073550925,
+        0.002165726863884274
+      ],
+      "xi": 0.010405394207176186,
+      "upper": 0.9671295050980215,
+      "SLD_max_all_tangents_at_base": 0.8256750190346731,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.041833331928318174,
+          "spectral_relative_error": 6.67711555113029e-14
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.3651828400356121,
+          "spectral_relative_error": 4.8914038243397285e-14
+        },
+        {
+          "t": 1,
+          "ratio": 0.8233567252821585,
+          "spectral_relative_error": 8.07623697065472e-15
+        },
+        {
+          "t": 7,
+          "ratio": 0.5097338877301142,
+          "spectral_relative_error": 2.141841568493211e-14
+        },
+        {
+          "t": 100,
+          "ratio": 0.1273371002697847,
+          "spectral_relative_error": 4.177150350334664e-14
+        }
+      ],
+      "profile": {
+        "lambda": -0.2,
+        "kappa_actual": 3.6261437503006566,
+        "upper": 0.20000000000000004,
+        "local_max": 0.1265227891372928
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.0016497080181886261
+    },
+    {
+      "r": 3,
+      "j": 20,
+      "weights": [
+        0.5008482752717512,
+        0.3153740721658568,
+        0.11486279674553088,
+        0.06891485581686098
+      ],
+      "xi": 0.02413684842176174,
+      "upper": 0.43630509818359775,
+      "SLD_max_all_tangents_at_base": 0.40656512793268906,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.0503915178229807,
+          "spectral_relative_error": 1.3719982581036677e-14
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.18200947485520538,
+          "spectral_relative_error": 1.3718526474976104e-14
+        },
+        {
+          "t": 1,
+          "ratio": 0.40686479495402833,
+          "spectral_relative_error": 2.6488471147599293e-14
+        },
+        {
+          "t": 7,
+          "ratio": 0.2554598323449259,
+          "spectral_relative_error": 3.05834492842614e-14
+        },
+        {
+          "t": 100,
+          "ratio": 0.07902545484364282,
+          "spectral_relative_error": 2.9979770141812174e-14
+        }
+      ],
+      "profile": {
+        "lambda": 0,
+        "kappa_actual": 2.826630419251965,
+        "upper": 0.0,
+        "local_max": 0.0
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.003892371003261788
+    },
+    {
+      "r": 3,
+      "j": 21,
+      "weights": [
+        0.04428791540036677,
+        0.019147012800854513,
+        0.1520871662024925,
+        0.7844779055962862
+      ],
+      "xi": 1.0282502873307087e-05,
+      "upper": 0.8064287455094638,
+      "SLD_max_all_tangents_at_base": 0.7724901492475196,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.00011829974960185361,
+          "spectral_relative_error": 3.0550741581606904e-11
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.5920110962266936,
+          "spectral_relative_error": 1.5471888408295449e-12
+        },
+        {
+          "t": 1,
+          "ratio": 0.7721288521046018,
+          "spectral_relative_error": 8.860176379829387e-13
+        },
+        {
+          "t": 7,
+          "ratio": 0.6848532635868968,
+          "spectral_relative_error": 1.1133435213187825e-12
+        },
+        {
+          "t": 100,
+          "ratio": 0.2226181648456886,
+          "spectral_relative_error": 1.572907101306708e-12
+        }
+      ],
+      "profile": {
+        "lambda": 0.5,
+        "kappa_actual": 2.7140994634544233,
+        "upper": 0.36537786483107315,
+        "local_max": 0.3348656207656838
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 1.6963833862964677e-06
+    },
+    {
+      "r": 3,
+      "j": 22,
+      "weights": [
+        0.4669497444570733,
+        0.28514027064727476,
+        0.2479087113966912,
+        1.2734989608294488e-06
+      ],
+      "xi": 0.0031711559030959983,
+      "upper": 0.9999796242678689,
+      "SLD_max_all_tangents_at_base": 0.3699419005365097,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.01217271415993337,
+          "spectral_relative_error": 4.148891821435877e-14
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.19997417724751462,
+          "spectral_relative_error": 4.8162000596921214e-15
+        },
+        {
+          "t": 1,
+          "ratio": 0.3704538229545111,
+          "spectral_relative_error": 1.2606238516144944e-14
+        },
+        {
+          "t": 7,
+          "ratio": 0.26592564289982823,
+          "spectral_relative_error": 1.0634805570353499e-14
+        },
+        {
+          "t": 100,
+          "ratio": 0.07059098204649737,
+          "spectral_relative_error": 2.2534219073972933e-14
+        }
+      ],
+      "profile": {
+        "lambda": 0.9,
+        "kappa_actual": 2.3695937454576823,
+        "upper": 0.8596888764355807,
+        "local_max": 0.845845664105531
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.000523773787094758
+    },
+    {
+      "r": 3,
+      "j": 23,
+      "weights": [
+        0.13100215047120933,
+        0.035994577787621905,
+        0.48458994034056196,
+        0.34841333140060676
+      ],
+      "xi": 0.0050585998226571295,
+      "upper": 0.6034615756367734,
+      "SLD_max_all_tangents_at_base": 0.4496432907368631,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.0944014359108876,
+          "spectral_relative_error": 1.4141403118734163e-13
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.28327911963799546,
+          "spectral_relative_error": 5.577195177723675e-15
+        },
+        {
+          "t": 1,
+          "ratio": 0.4493352917229368,
+          "spectral_relative_error": 3.817374460309077e-15
+        },
+        {
+          "t": 7,
+          "ratio": 0.3484593930809225,
+          "spectral_relative_error": 5.272926215910172e-15
+        },
+        {
+          "t": 100,
+          "ratio": 0.1479263310784077,
+          "spectral_relative_error": 5.164542500763125e-14
+        }
+      ],
+      "profile": {
+        "lambda": 1,
+        "kappa_actual": 2.110031410433859,
+        "upper": 1.0,
+        "local_max": 1.0000000000000027
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.002696435756717733
+    },
+    {
+      "r": 4,
+      "j": 0,
+      "weights": [
+        0.0,
+        0.3332387174543145,
+        0.011060844499342047,
+        0.6557004380463434
+      ],
+      "xi": 0.001308070374911349,
+      "upper": 1.0,
+      "SLD_max_all_tangents_at_base": 0.9570801981732313,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.4139525778919062,
+          "spectral_relative_error": 4.515889216164766e-13
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.869898816465668,
+          "spectral_relative_error": 2.747324146179252e-13
+        },
+        {
+          "t": 1,
+          "ratio": 0.9556890308626595,
+          "spectral_relative_error": 4.775560514465034e-13
+        },
+        {
+          "t": 7,
+          "ratio": 0.9101366486187563,
+          "spectral_relative_error": 2.092113502378176e-13
+        },
+        {
+          "t": 100,
+          "ratio": 0.7199228620726071,
+          "spectral_relative_error": 3.4929168276444056e-14
+        }
+      ],
+      "profile": {
+        "lambda": -0.3333333333333333,
+        "kappa_actual": 3.9974009745081354,
+        "upper": 0.9999999999999999,
+        "local_max": 0.4428076688502802
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.0001618785182258191
+    },
+    {
+      "r": 4,
+      "j": 1,
+      "weights": [
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "xi": 1.9087665147622848e-05,
+      "upper": 0.0,
+      "SLD_max_all_tangents_at_base": 0.0,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 2.7298166935210132e-39,
+          "spectral_relative_error": 8.686977327877957e-13
+        },
+        {
+          "t": 0.07,
+          "ratio": 1.9064368235634468e-35,
+          "spectral_relative_error": 4.671237323168992e-14
+        },
+        {
+          "t": 1,
+          "ratio": 4.5364100295094317e-35,
+          "spectral_relative_error": 3.238958097932706e-13
+        },
+        {
+          "t": 7,
+          "ratio": 2.755645850464597e-35,
+          "spectral_relative_error": 3.1687658943572134e-13
+        },
+        {
+          "t": 100,
+          "ratio": 4.831641610273076e-36,
+          "spectral_relative_error": 2.380439831846487e-13
+        }
+      ],
+      "profile": {
+        "lambda": -0.2,
+        "kappa_actual": 3.999877818612688,
+        "upper": 0.20000000000000004,
+        "local_max": 0.14012689193634734
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 2.3633763782983536e-06
+    },
+    {
+      "r": 4,
+      "j": 2,
+      "weights": [
+        0.596089106149918,
+        0.24153920230468895,
+        0.14728415725293997,
+        0.015087534292453148
+      ],
+      "xi": 8.690048275983333e-05,
+      "upper": 0.7971787442364663,
+      "SLD_max_all_tangents_at_base": 0.6260735876342358,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.0006176380208038861,
+          "spectral_relative_error": 2.7686324205321878e-12
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.32671427891432897,
+          "spectral_relative_error": 4.4978317430551957e-13
+        },
+        {
+          "t": 1,
+          "ratio": 0.6246485380244812,
+          "spectral_relative_error": 1.2007128187424967e-12
+        },
+        {
+          "t": 7,
+          "ratio": 0.4289449466638022,
+          "spectral_relative_error": 7.620509194445324e-13
+        },
+        {
+          "t": 100,
+          "ratio": 0.11553534195076612,
+          "spectral_relative_error": 4.583335432142276e-13
+        }
+      ],
+      "profile": {
+        "lambda": 0,
+        "kappa_actual": 3.7586456844962495,
+        "upper": 0.0,
+        "local_max": 0.0
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 1.070748242648993e-05
+    },
+    {
+      "r": 4,
+      "j": 3,
+      "weights": [
+        0.022935446227725313,
+        0.4901299476857651,
+        0.15392599728342965,
+        0.3330086088030799
+      ],
+      "xi": 0.0006112047695981239,
+      "upper": 0.7098319620163255,
+      "SLD_max_all_tangents_at_base": 0.46551342415138963,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.0014574955680060596,
+          "spectral_relative_error": 1.7875389456879915e-13
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.25149931038441437,
+          "spectral_relative_error": 7.248217664439172e-14
+        },
+        {
+          "t": 1,
+          "ratio": 0.46493093384978645,
+          "spectral_relative_error": 7.911960246718493e-14
+        },
+        {
+          "t": 7,
+          "ratio": 0.3449491884053205,
+          "spectral_relative_error": 9.74107338561055e-14
+        },
+        {
+          "t": 100,
+          "ratio": 0.060975006740673576,
+          "spectral_relative_error": 5.432196404981326e-14
+        }
+      ],
+      "profile": {
+        "lambda": 0.5,
+        "kappa_actual": 3.2603114792743253,
+        "upper": 0.375,
+        "local_max": 0.3302082365181843
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 7.558535814151121e-05
+    },
+    {
+      "r": 4,
+      "j": 4,
+      "weights": [
+        0.3365124137630868,
+        0.44002252358874216,
+        0.00596337035470676,
+        0.2175016922934642
+      ],
+      "xi": 1.7756631012723343e-05,
+      "upper": 0.9098755761456943,
+      "SLD_max_all_tangents_at_base": 0.4465694837574226,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 5.260432503277286e-05,
+          "spectral_relative_error": 2.862890125784886e-12
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.24355365465944506,
+          "spectral_relative_error": 2.826304200739951e-13
+        },
+        {
+          "t": 1,
+          "ratio": 0.4460372911719167,
+          "spectral_relative_error": 9.806745805551214e-13
+        },
+        {
+          "t": 7,
+          "ratio": 0.324992758997171,
+          "spectral_relative_error": 9.260085137627007e-13
+        },
+        {
+          "t": 100,
+          "ratio": 0.06744422881223304,
+          "spectral_relative_error": 1.9345439788320312e-13
+        }
+      ],
+      "profile": {
+        "lambda": 0.9,
+        "kappa_actual": 3.6822169657510413,
+        "upper": 0.867857142857143,
+        "local_max": 0.849795656221786
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 2.196557389731542e-06
+    },
+    {
+      "r": 4,
+      "j": 5,
+      "weights": [
+        0.23330627681228455,
+        0.4602858920365153,
+        0.04461395264128817,
+        0.2617938785099119
+      ],
+      "xi": 0.08492617711486046,
+      "upper": 0.5105998808240853,
+      "SLD_max_all_tangents_at_base": 0.26908906343129496,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.09691051134786606,
+          "spectral_relative_error": 2.4770813749657762e-15
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.18420352043326155,
+          "spectral_relative_error": 8.969764140606877e-15
+        },
+        {
+          "t": 1,
+          "ratio": 0.2684943338826654,
+          "spectral_relative_error": 1.0453008378820615e-14
+        },
+        {
+          "t": 7,
+          "ratio": 0.21818843505080932,
+          "spectral_relative_error": 1.6369328950328182e-15
+        },
+        {
+          "t": 100,
+          "ratio": 0.11898908724565724,
+          "spectral_relative_error": 7.499639853982209e-15
+        }
+      ],
+      "profile": {
+        "lambda": 1,
+        "kappa_actual": 2.4082477519426124,
+        "upper": 1.0,
+        "local_max": 1.0000000000000022
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.010423920223177513
+    },
+    {
+      "r": 4,
+      "j": 6,
+      "weights": [
+        0.6284259759122498,
+        0.01153567897215757,
+        0.0,
+        0.3600383451155926
+      ],
+      "xi": 0.01282022131000934,
+      "upper": 1.0,
+      "SLD_max_all_tangents_at_base": 0.9545858683478976,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.18709353418781607,
+          "spectral_relative_error": 2.860069297238806e-14
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.7193704606155938,
+          "spectral_relative_error": 1.9033783074488477e-14
+        },
+        {
+          "t": 1,
+          "ratio": 0.9539458853795152,
+          "spectral_relative_error": 1.225589582459272e-15
+        },
+        {
+          "t": 7,
+          "ratio": 0.8229078761155765,
+          "spectral_relative_error": 1.1977700145621311e-14
+        },
+        {
+          "t": 100,
+          "ratio": 0.395158761940373,
+          "spectral_relative_error": 2.0408873985352092e-14
+        }
+      ],
+      "profile": {
+        "lambda": -0.3333333333333333,
+        "kappa_actual": 3.2112122619410437,
+        "upper": 0.9999999999999999,
+        "local_max": 0.406788409606443
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.001597627555033389
+    },
+    {
+      "r": 4,
+      "j": 7,
+      "weights": [
+        0.5179265590915694,
+        0.3979722999630056,
+        0.028475785458379095,
+        0.055625355487045725
+      ],
+      "xi": 6.19511397199952e-05,
+      "upper": 0.7219252369368523,
+      "SLD_max_all_tangents_at_base": 0.6936945191116706,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.2868758382109249,
+          "spectral_relative_error": 3.481411306097896e-14
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.5308996781985709,
+          "spectral_relative_error": 1.137998761893361e-15
+        },
+        {
+          "t": 1,
+          "ratio": 0.6934211531519818,
+          "spectral_relative_error": 3.3126619083238005e-15
+        },
+        {
+          "t": 7,
+          "ratio": 0.5932329148131671,
+          "spectral_relative_error": 2.7800639809341984e-16
+        },
+        {
+          "t": 100,
+          "ratio": 0.40367038862311033,
+          "spectral_relative_error": 3.0765179878772464e-15
+        }
+      ],
+      "profile": {
+        "lambda": -0.2,
+        "kappa_actual": 2.3893680978216274,
+        "upper": 0.1323517967245606,
+        "local_max": 0.091218296668666
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.0005734025302522202
+    },
+    {
+      "r": 4,
+      "j": 8,
+      "weights": [
+        0.4920061308127281,
+        0.279353202273953,
+        0.15348942808810886,
+        0.07515123882521015
+      ],
+      "xi": 0.0002869062719414957,
+      "upper": 0.3709158647319152,
+      "SLD_max_all_tangents_at_base": 0.33823410964519546,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.00018780536647146576,
+          "spectral_relative_error": 1.5205731625531844e-13
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.18556119646353283,
+          "spectral_relative_error": 5.084040219767359e-13
+        },
+        {
+          "t": 1,
+          "ratio": 0.33738398536031183,
+          "spectral_relative_error": 2.236047632937936e-12
+        },
+        {
+          "t": 7,
+          "ratio": 0.25035326875216524,
+          "spectral_relative_error": 9.21258230916481e-13
+        },
+        {
+          "t": 100,
+          "ratio": 0.04637809394746865,
+          "spectral_relative_error": 1.1148959181917557e-14
+        }
+      ],
+      "profile": {
+        "lambda": 0,
+        "kappa_actual": 3.999161632023241,
+        "upper": 0.0,
+        "local_max": 0.0
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 3.550353977667525e-05
+    },
+    {
+      "r": 4,
+      "j": 9,
+      "weights": [
+        0.005004080790314752,
+        0.6078489939088166,
+        0.26101053708131394,
+        0.12613638821955467
+      ],
+      "xi": 0.013580175572042252,
+      "upper": 0.9249676081433021,
+      "SLD_max_all_tangents_at_base": 0.8284983925352213,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.23572501522809103,
+          "spectral_relative_error": 6.737795302414683e-14
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.6345937460264248,
+          "spectral_relative_error": 9.627696677053627e-14
+        },
+        {
+          "t": 1,
+          "ratio": 0.8278935938815399,
+          "spectral_relative_error": 1.274263222850508e-13
+        },
+        {
+          "t": 7,
+          "ratio": 0.720937395326747,
+          "spectral_relative_error": 1.3332814155433902e-13
+        },
+        {
+          "t": 100,
+          "ratio": 0.40028723376115855,
+          "spectral_relative_error": 1.2053568577769535e-13
+        }
+      ],
+      "profile": {
+        "lambda": 0.5,
+        "kappa_actual": 3.7802604102376662,
+        "upper": 0.375,
+        "local_max": 0.3611562015348824
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.0016553545667876864
+    },
+    {
+      "r": 4,
+      "j": 10,
+      "weights": [
+        0.013893566627560985,
+        0.21093807012605958,
+        0.002035849389529444,
+        0.77313251385685
+      ],
+      "xi": 0.0022832251534392377,
+      "upper": 0.9718906389845238,
+      "SLD_max_all_tangents_at_base": 0.9393113281708801,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.07410671060118276,
+          "spectral_relative_error": 4.849896423956717e-14
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.7182520897069498,
+          "spectral_relative_error": 4.9003737924956235e-15
+        },
+        {
+          "t": 1,
+          "ratio": 0.9377137016352982,
+          "spectral_relative_error": 7.115549481646094e-14
+        },
+        {
+          "t": 7,
+          "ratio": 0.8102985879414077,
+          "spectral_relative_error": 4.3196708988264205e-14
+        },
+        {
+          "t": 100,
+          "ratio": 0.42545949323589766,
+          "spectral_relative_error": 1.62549163638923e-14
+        }
+      ],
+      "profile": {
+        "lambda": 0.9,
+        "kappa_actual": 3.7779511455278754,
+        "upper": 0.867857142857143,
+        "local_max": 0.855134989983479
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.00028189223752110327
+    },
+    {
+      "r": 4,
+      "j": 11,
+      "weights": [
+        0.7848743049851084,
+        0.1617136564896993,
+        0.0004288858450878012,
+        0.052983152680104596
+      ],
+      "xi": 0.0002954196890673787,
+      "upper": 0.9932144578388702,
+      "SLD_max_all_tangents_at_base": 0.8307221867691893,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.002279152536152124,
+          "spectral_relative_error": 8.616862827153662e-15
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.48656878741920145,
+          "spectral_relative_error": 1.0411528565500765e-13
+        },
+        {
+          "t": 1,
+          "ratio": 0.8294992469531899,
+          "spectral_relative_error": 6.031088926604433e-13
+        },
+        {
+          "t": 7,
+          "ratio": 0.6312740176326384,
+          "spectral_relative_error": 3.3623979247395205e-13
+        },
+        {
+          "t": 100,
+          "ratio": 0.1505945667814322,
+          "spectral_relative_error": 7.687691924997314e-14
+        }
+      ],
+      "profile": {
+        "lambda": 1,
+        "kappa_actual": 3.04039994886838,
+        "upper": 1.0,
+        "local_max": 1.000000000000738
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 3.650576618205174e-05
+    },
+    {
+      "r": 4,
+      "j": 12,
+      "weights": [
+        0.0,
+        0.10335031124199553,
+        0.012044475874594146,
+        0.8846052128834103
+      ],
+      "xi": 0.0782328293194021,
+      "upper": 1.0,
+      "SLD_max_all_tangents_at_base": 0.9553138711172644,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.508842464984033,
+          "spectral_relative_error": 2.079831606560004e-14
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.7896040629973855,
+          "spectral_relative_error": 1.727617111069154e-14
+        },
+        {
+          "t": 1,
+          "ratio": 0.9549161797206346,
+          "spectral_relative_error": 1.304259190021144e-14
+        },
+        {
+          "t": 7,
+          "ratio": 0.8648832740990169,
+          "spectral_relative_error": 1.678532951798916e-14
+        },
+        {
+          "t": 100,
+          "ratio": 0.5915981976296497,
+          "spectral_relative_error": 1.7183389626410938e-14
+        }
+      ],
+      "profile": {
+        "lambda": -0.3333333333333333,
+        "kappa_actual": 2.8412627011997578,
+        "upper": 0.817344507721639,
+        "local_max": 0.3763009155784677
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.009378950148815329
+    },
+    {
+      "r": 4,
+      "j": 13,
+      "weights": [
+        0.215260021439971,
+        0.05470267394171266,
+        0.5869708117848532,
+        0.14306649283346315
+      ],
+      "xi": 0.003618604582972847,
+      "upper": 0.49398483278570726,
+      "SLD_max_all_tangents_at_base": 0.4055520485590924,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.011665783282626642,
+          "spectral_relative_error": 3.477359827270029e-14
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.26317276605147166,
+          "spectral_relative_error": 3.4034588838496136e-14
+        },
+        {
+          "t": 1,
+          "ratio": 0.4052240495231729,
+          "spectral_relative_error": 8.424527330957789e-15
+        },
+        {
+          "t": 7,
+          "ratio": 0.32744203305945463,
+          "spectral_relative_error": 6.712660687470704e-15
+        },
+        {
+          "t": 100,
+          "ratio": 0.08863009680617236,
+          "spectral_relative_error": 1.647282024648722e-14
+        }
+      ],
+      "profile": {
+        "lambda": -0.2,
+        "kappa_actual": 2.9305059104919255,
+        "upper": 0.19094390313431597,
+        "local_max": 0.0908064858691146
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.00044723996514674133
+    },
+    {
+      "r": 4,
+      "j": 14,
+      "weights": [
+        0.022391607139902955,
+        0.3454798410886288,
+        0.5448611640959337,
+        0.08726738767553455
+      ],
+      "xi": 4.5649864450156554e-05,
+      "upper": 0.7370517697294591,
+      "SLD_max_all_tangents_at_base": 0.6137342383388602,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.00040568493681651993,
+          "spectral_relative_error": 8.425621994291113e-12
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.40592223101213926,
+          "spectral_relative_error": 4.825360719444827e-13
+        },
+        {
+          "t": 1,
+          "ratio": 0.6133710105037694,
+          "spectral_relative_error": 2.7555005697202967e-13
+        },
+        {
+          "t": 7,
+          "ratio": 0.504751597935973,
+          "spectral_relative_error": 3.081073019335474e-13
+        },
+        {
+          "t": 100,
+          "ratio": 0.12422777559940268,
+          "spectral_relative_error": 5.499440555811889e-13
+        }
+      ],
+      "profile": {
+        "lambda": 0,
+        "kappa_actual": 2.2817630124882697,
+        "upper": 0.0,
+        "local_max": 0.0
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 5.648956527536674e-06
+    },
+    {
+      "r": 4,
+      "j": 15,
+      "weights": [
+        0.2891041042734443,
+        0.06500216326418852,
+        0.09814449861545968,
+        0.5477492338469074
+      ],
+      "xi": 0.006171023718504351,
+      "upper": 0.4814921214929837,
+      "SLD_max_all_tangents_at_base": 0.45894326573210087,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.04986833098059255,
+          "spectral_relative_error": 1.1476780327916623e-14
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.2747114383238947,
+          "spectral_relative_error": 6.23290487882822e-15
+        },
+        {
+          "t": 1,
+          "ratio": 0.4585545433028232,
+          "spectral_relative_error": 2.9611615769040636e-15
+        },
+        {
+          "t": 7,
+          "ratio": 0.3497084358922267,
+          "spectral_relative_error": 3.2587040061635516e-15
+        },
+        {
+          "t": 100,
+          "ratio": 0.11141456861312202,
+          "spectral_relative_error": 1.3159232001535938e-14
+        }
+      ],
+      "profile": {
+        "lambda": 0.5,
+        "kappa_actual": 2.750191367905174,
+        "upper": 0.3666734705116406,
+        "local_max": 0.3195913469112381
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.0019124088912140622
+    },
+    {
+      "r": 4,
+      "j": 16,
+      "weights": [
+        0.047126754567663534,
+        0.0037738864032674244,
+        0.122271349756589,
+        0.8268280092724799
+      ],
+      "xi": 9.807160266753737e-05,
+      "upper": 0.9458702686130734,
+      "SLD_max_all_tangents_at_base": 0.847859461635238,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.0024291742788014044,
+          "spectral_relative_error": 5.63351796501075e-13
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.7821883090213639,
+          "spectral_relative_error": 4.146628332166261e-13
+        },
+        {
+          "t": 1,
+          "ratio": 0.845740602879398,
+          "spectral_relative_error": 4.4951060783655167e-13
+        },
+        {
+          "t": 7,
+          "ratio": 0.8122744651345416,
+          "spectral_relative_error": 6.945712290531572e-13
+        },
+        {
+          "t": 100,
+          "ratio": 0.5807470678436618,
+          "spectral_relative_error": 8.11160412514553e-13
+        }
+      ],
+      "profile": {
+        "lambda": 0.9,
+        "kappa_actual": 3.9998344922130853,
+        "upper": 0.867857142857143,
+        "local_max": 0.8526304786152584
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 1.2136366511275426e-05
+    },
+    {
+      "r": 4,
+      "j": 17,
+      "weights": [
+        0.37149766289161945,
+        0.3600249329413178,
+        0.055037717306323584,
+        0.21343968686073927
+      ],
+      "xi": 0.03563421080428783,
+      "upper": 0.4351063378008342,
+      "SLD_max_all_tangents_at_base": 0.2828409992546353,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.023486106462354838,
+          "spectral_relative_error": 1.143542225314601e-14
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.12832761508320395,
+          "spectral_relative_error": 3.5102246785185646e-15
+        },
+        {
+          "t": 1,
+          "ratio": 0.28235211425872886,
+          "spectral_relative_error": 7.111732960952363e-15
+        },
+        {
+          "t": 7,
+          "ratio": 0.1824997449100289,
+          "spectral_relative_error": 2.5974254391308283e-14
+        },
+        {
+          "t": 100,
+          "ratio": 0.04514647346190379,
+          "spectral_relative_error": 3.8696938594517465e-14
+        }
+      ],
+      "profile": {
+        "lambda": 1,
+        "kappa_actual": 3.890293354308963,
+        "upper": 1.0,
+        "local_max": 1.000000000000014
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.004368627046622672
+    },
+    {
+      "r": 4,
+      "j": 18,
+      "weights": [
+        0.012415092580805556,
+        0.9307279361059568,
+        0.0,
+        0.05685697131323762
+      ],
+      "xi": 0.07630165900696664,
+      "upper": 1.0,
+      "SLD_max_all_tangents_at_base": 0.9564849628372231,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.6908339612906468,
+          "spectral_relative_error": 1.8830353002442862e-14
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.8484953174375555,
+          "spectral_relative_error": 1.1907182637969512e-14
+        },
+        {
+          "t": 1,
+          "ratio": 0.9560971226959503,
+          "spectral_relative_error": 1.304231258480131e-14
+        },
+        {
+          "t": 7,
+          "ratio": 0.8945328769129605,
+          "spectral_relative_error": 1.1596482698289947e-14
+        },
+        {
+          "t": 100,
+          "ratio": 0.7373321283098293,
+          "spectral_relative_error": 1.6885408011609932e-14
+        }
+      ],
+      "profile": {
+        "lambda": -0.3333333333333333,
+        "kappa_actual": 3.3409675454022425,
+        "upper": 0.9999999999999999,
+        "local_max": 0.4253280585135809
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.009112256021243518
+    },
+    {
+      "r": 4,
+      "j": 19,
+      "weights": [
+        0.018603469241318615,
+        0.13876696470391095,
+        0.0062204828419143085,
+        0.8364090832128562
+      ],
+      "xi": 0.006456266891122133,
+      "upper": 0.9282236185056925,
+      "SLD_max_all_tangents_at_base": 0.9045648563867269,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.13289281327153915,
+          "spectral_relative_error": 1.597081972792113e-14
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.7200005249283217,
+          "spectral_relative_error": 3.303217528491255e-14
+        },
+        {
+          "t": 1,
+          "ratio": 0.9035170131859699,
+          "spectral_relative_error": 3.88015719226427e-14
+        },
+        {
+          "t": 7,
+          "ratio": 0.816741888857151,
+          "spectral_relative_error": 1.1800120603012988e-14
+        },
+        {
+          "t": 100,
+          "ratio": 0.37739158884615803,
+          "spectral_relative_error": 1.664828195312746e-14
+        }
+      ],
+      "profile": {
+        "lambda": -0.2,
+        "kappa_actual": 3.0001251623346437,
+        "upper": 0.20000000000000004,
+        "local_max": 0.12145534145201872
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.0007924166326930722
+    },
+    {
+      "r": 4,
+      "j": 20,
+      "weights": [
+        0.7620934758548876,
+        0.02320799770355932,
+        0.005893768369010498,
+        0.2088047580725426
+      ],
+      "xi": 0.08466900712869026,
+      "upper": 0.9268941270468238,
+      "SLD_max_all_tangents_at_base": 0.8881322121941073,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.40621729856613464,
+          "spectral_relative_error": 2.0460470299251702e-14
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.6321903748054755,
+          "spectral_relative_error": 1.661415765752499e-14
+        },
+        {
+          "t": 1,
+          "ratio": 0.8871539348029376,
+          "spectral_relative_error": 9.091184336871586e-15
+        },
+        {
+          "t": 7,
+          "ratio": 0.7274849924461927,
+          "spectral_relative_error": 6.0004768729036406e-15
+        },
+        {
+          "t": 100,
+          "ratio": 0.4616422164500289,
+          "spectral_relative_error": 9.231511331096583e-16
+        }
+      ],
+      "profile": {
+        "lambda": 0,
+        "kappa_actual": 2.3553033225417077,
+        "upper": 0.0,
+        "local_max": 0.0
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.010319496058202591
+    },
+    {
+      "r": 4,
+      "j": 21,
+      "weights": [
+        0.04264010642280786,
+        0.013997862025110231,
+        0.7979443105916667,
+        0.14541772096041522
+      ],
+      "xi": 0.000118868574555649,
+      "upper": 0.844692675206811,
+      "SLD_max_all_tangents_at_base": 0.7972478092386568,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.002244448253490082,
+          "spectral_relative_error": 1.1553509532065168e-12
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.602682188787042,
+          "spectral_relative_error": 2.539512238035285e-13
+        },
+        {
+          "t": 1,
+          "ratio": 0.7969166619794922,
+          "spectral_relative_error": 3.800192175977028e-13
+        },
+        {
+          "t": 7,
+          "ratio": 0.7030390953448825,
+          "spectral_relative_error": 3.9760652044429477e-13
+        },
+        {
+          "t": 100,
+          "ratio": 0.24057399629107412,
+          "spectral_relative_error": 5.143300880280674e-13
+        }
+      ],
+      "profile": {
+        "lambda": 0.5,
+        "kappa_actual": 2.4489361347749585,
+        "upper": 0.35502775915199,
+        "local_max": 0.32263267650624894
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 1.4729797720283438e-05
+    },
+    {
+      "r": 4,
+      "j": 22,
+      "weights": [
+        0.10706219605772453,
+        0.7361714745495336,
+        0.052413232582611366,
+        0.1043530968101304
+      ],
+      "xi": 1.6029268590094534e-05,
+      "upper": 0.5935036288047015,
+      "SLD_max_all_tangents_at_base": 0.5426052508981236,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.00045645957237943453,
+          "spectral_relative_error": 9.073191547712653e-12
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.4186848849998914,
+          "spectral_relative_error": 2.435524961319061e-14
+        },
+        {
+          "t": 1,
+          "ratio": 0.5425145698667962,
+          "spectral_relative_error": 2.2232947728223725e-13
+        },
+        {
+          "t": 7,
+          "ratio": 0.4762492461754397,
+          "spectral_relative_error": 2.411973581001318e-13
+        },
+        {
+          "t": 100,
+          "ratio": 0.21516810127743968,
+          "spectral_relative_error": 2.542260589892141e-13
+        }
+      ],
+      "profile": {
+        "lambda": 0.9,
+        "kappa_actual": 2.3251039476622473,
+        "upper": 0.8589527206804352,
+        "local_max": 0.8464710078676397
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 1.98443366923176e-06
+    },
+    {
+      "r": 4,
+      "j": 23,
+      "weights": [
+        0.726776932887554,
+        0.0009982411069425058,
+        0.15247738105606223,
+        0.11974744494944127
+      ],
+      "xi": 0.024337769449250823,
+      "upper": 0.9842836361861349,
+      "SLD_max_all_tangents_at_base": 0.6447345863795995,
+      "Petz_kernels": [
+        {
+          "t": 0,
+          "ratio": 0.264846374217263,
+          "spectral_relative_error": 8.380755827751517e-15
+        },
+        {
+          "t": 0.07,
+          "ratio": 0.505973987246627,
+          "spectral_relative_error": 9.66077434461998e-16
+        },
+        {
+          "t": 1,
+          "ratio": 0.6446631892643857,
+          "spectral_relative_error": 4.869000385482245e-15
+        },
+        {
+          "t": 7,
+          "ratio": 0.5699228084384732,
+          "spectral_relative_error": 3.919365288270249e-15
+        },
+        {
+          "t": 100,
+          "ratio": 0.3339847842147726,
+          "spectral_relative_error": 4.574546748064562e-15
+        }
+      ],
+      "profile": {
+        "lambda": 1,
+        "kappa_actual": 2.2142389534792315,
+        "upper": 1.0,
+        "local_max": 1.0000000000000027
+      },
+      "partial_trace_tangent_norm": 0.0,
+      "min_rho_eig": 0.004100110153215881
+    }
+  ],
+  "incidents": [],
+  "unitary_Choi_checks": [
+    {
+      "weights": [
+        0.18590235413627795,
+        0.29859294663040714,
+        0.1981692060036937,
+        0.3173354932296212
+      ],
+      "choi_trace": 1.0,
+      "h": 0.05468866605983058,
+      "choi_formula": 0.05468866605983047,
+      "error": 1.1102230246251565e-16,
+      "wrong_unnormalized_formula": -0.8906226678803391
+    },
+    {
+      "weights": [
+        0.33701127705532896,
+        0.21421403778027667,
+        0.09162046982973365,
+        0.35715421533466074
+      ],
+      "choi_trace": 0.9999999999999996,
+      "h": 0.25058514108360164,
+      "choi_formula": 0.25058514108360197,
+      "error": 3.3306690738754696e-16,
+      "wrong_unnormalized_formula": -0.49882971783279606
+    },
+    {
+      "weights": [
+        0.37037327320936086,
+        0.20646643842655385,
+        0.05523131164284428,
+        0.3679289767212409
+      ],
+      "choi_trace": 0.9999999999999998,
+      "h": 0.43596370148403596,
+      "choi_formula": 0.43596370148403596,
+      "error": 0.0,
+      "wrong_unnormalized_formula": -0.12807259703192808
+    },
+    {
+      "weights": [
+        0.7012493722322531,
+        0.18696585186365017,
+        0.0701684665230855,
+        0.04161630938101105
+      ],
+      "choi_trace": 1.0000000000000002,
+      "h": 0.6448789021303591,
+      "choi_formula": 0.6448789021303589,
+      "error": 2.220446049250313e-16,
+      "wrong_unnormalized_formula": 0.28975780426071795
+    },
+    {
+      "weights": [
+        0.5229275571890959,
+        0.24892503075569616,
+        0.18259899539004126,
+        0.04554841666516665
+      ],
+      "choi_trace": 0.9999999999999999,
+      "h": 0.5203941292496495,
+      "choi_formula": 0.5203941292496497,
+      "error": 2.220446049250313e-16,
+      "wrong_unnormalized_formula": 0.040788258499299235
+    },
+    {
+      "weights": [
+        0.8345882034587199,
+        0.04664176037870822,
+        0.022830272678561362,
+        0.09593976348401066
+      ],
+      "choi_trace": 1.0000000000000004,
+      "h": 0.7918371769127506,
+      "choi_formula": 0.7918371769127505,
+      "error": 1.1102230246251565e-16,
+      "wrong_unnormalized_formula": 0.5836743538255009
+    },
+    {
+      "weights": [
+        0.644185077407086,
+        0.09873033375570625,
+        0.24416965636222487,
+        0.01291493247498284
+      ],
+      "choi_trace": 0.9999999999999996,
+      "h": 0.8283376217079496,
+      "choi_formula": 0.8283376217079494,
+      "error": 1.1102230246251565e-16,
+      "wrong_unnormalized_formula": 0.6566752434158988
+    },
+    {
+      "weights": [
+        0.07925961232743424,
+        0.3004685308281436,
+        0.15250158246210307,
+        0.46777027438231905
+      ],
+      "choi_trace": 0.9999999999999996,
+      "h": 0.35064967474166286,
+      "choi_formula": 0.3506496747416632,
+      "error": 3.3306690738754696e-16,
+      "wrong_unnormalized_formula": -0.2987006505166736
+    }
+  ],
+  "max_upper_excess": 0.0,
+  "max_spectral_relative_error": 6.480061550950102e-10
+}

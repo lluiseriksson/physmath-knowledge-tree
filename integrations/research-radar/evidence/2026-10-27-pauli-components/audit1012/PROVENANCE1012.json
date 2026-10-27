@@ -1,0 +1,65 @@
+{
+  "utc": "2026-10-27T15:59:51.219887+00:00",
+  "task": "Technical audit of coherent997/1003/1011 candidates, no manuscript/grade",
+  "workdir": "C:\\Trabajo\\airr\\2026-10-27_pauli1012-audit",
+  "archive": "D:\\Proyectos\\airr-investigacion\\2026-10-27_pauli1012-audit",
+  "context": "Same delegated agent/context reused from988; filesystem shared; no independence/isolation/effectiveidentity attestation",
+  "requested_configuration": "GPT-6 Astra xhigh, effective identity/effort not attested",
+  "inputs": [
+    {
+      "path": "D:\\Proyectos\\airr-investigacion\\2026-10-27_pauli997",
+      "manifest_sha256": "99600f39cc4ac07da17f33b19a068bac8194ec1186bbdd901c6d9aab75a77cc0",
+      "payload_count": 25
+    },
+    {
+      "path": "D:\\Proyectos\\airr-investigacion\\2026-10-27_envelope1003",
+      "manifest_sha256": "c8b4ee6b3c193a7f446d4f4e78ce72e50fcbf66c0b787c4e7549184cec60c36a",
+      "payload_count": 7
+    },
+    {
+      "path": "D:\\Proyectos\\airr-investigacion\\2026-10-27_envelope1003-certificate",
+      "manifest_sha256": "64120a5b3ae1dde9e1e20fa08f40cc3608870012135a7aa2f4619da8bcab6a30",
+      "payload_count": 2
+    },
+    {
+      "path": "D:\\Proyectos\\airr-investigacion\\2026-10-27_profile1011",
+      "manifest_sha256": "160907b4aa5d0daf4fd8860eefb4df6b0f4cd11f38931833406f46b12498da52",
+      "payload_count": 9
+    }
+  ],
+  "prior988_report_sha256": "9521ce6a5b85b9e42f514a2bcc0e19d003664fa147d2d6cdc8ee7ba74a6792db",
+  "later_messages": [
+    {
+      "subject": "1014 unitary-tangent obstruction",
+      "treatment": "Proposition conveyed after task start; own symbolic/exact verification;1014files not read/imported; never attributed to original1011bytes"
+    },
+    {
+      "subject": "parent primary-source access limits",
+      "treatment": "Logged; own primary requests and successful2018arXivselected reading distinguished"
+    }
+  ],
+  "read_instructions": [
+    "C:\\Users\\lluis\\.codex\\AGENTS.md",
+    "D:\\LEEME.md"
+  ],
+  "restrictions_observed": [
+    "no new agents/chats",
+    "no publication",
+    "no author contact",
+    "no other chat reads",
+    "no root-state/Git changes",
+    "no1005PDF or1006notes read/modified",
+    "input packages unchanged",
+    "foreign PDFs processed in memory only"
+  ],
+  "runtime": {
+    "python": "3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "libraries": {
+      "numpy": "2.2.6",
+      "scipy": "1.18.0",
+      "sympy": "1.14.0",
+      "mpmath": "1.3.0"
+    }
+  }
+}

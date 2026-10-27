@@ -1,0 +1,21 @@
+{
+  "scope": "Parent exact whitening, PPTblock and2x2Sylvester checks for1011; no external audit or full universalproofcertificate",
+  "count": 10,
+  "checks": {
+    "whitening_spectrum": true,
+    "mixed_whitening_spectrum": true,
+    "PPTdet_first": true,
+    "PPTdet_second": true,
+    "SLD_rational_identity": true,
+    "SLD_limit": true,
+    "budget_substitution": true,
+    "SEP_threshold": true,
+    "full_threshold": true,
+    "kappa_monotone_derivative": true
+  },
+  "failures": 0,
+  "SLD_ratio_at_finite_e": "lambda**2*(2*theta + 1)*(2*e**2 + theta + 1)*(4*e**2*lambda*theta + 2*e**2 + 3*lambda*theta + 3)/((2*lambda*theta + 1)*(2*e**2 + lambda*theta + 1)*(4*e**2*theta + 2*e**2 + 3*theta + 3))",
+  "SLD_limit": "lambda**2*(2*theta + 1)/(2*lambda*theta + 1)",
+  "pair_endpoint_warning": "kappa1has no distinct equalRfinitepairs; main pair theoremonlykappa>1",
+  "new_score": null
+}
