@@ -1,0 +1,134 @@
+{
+  "target": "LC superclass and Hadamard closure, NOT a TU-fiber Jensen counterexample",
+  "coefficients": [
+    [
+      [
+        -1,
+        -1
+      ],
+      "6/5"
+    ],
+    [
+      [
+        -1,
+        0
+      ],
+      "5/6"
+    ],
+    [
+      [
+        -1,
+        1
+      ],
+      "1/10"
+    ],
+    [
+      [
+        0,
+        -1
+      ],
+      "5/6"
+    ],
+    [
+      [
+        0,
+        0
+      ],
+      "1"
+    ],
+    [
+      [
+        0,
+        1
+      ],
+      "6/5"
+    ],
+    [
+      [
+        1,
+        -1
+      ],
+      "1/10"
+    ],
+    [
+      [
+        1,
+        0
+      ],
+      "6/5"
+    ],
+    [
+      [
+        1,
+        1
+      ],
+      "5/6"
+    ]
+  ],
+  "LC2_certificate": [
+    {
+      "axis": 0,
+      "positive_evaluation_logconcavity_coefficients_constant_first": [
+        "517/900",
+        "43/300",
+        "99/100",
+        "1427/900",
+        "407/300"
+      ]
+    },
+    {
+      "axis": 1,
+      "positive_evaluation_logconcavity_coefficients_constant_first": [
+        "517/900",
+        "43/300",
+        "99/100",
+        "1427/900",
+        "407/300"
+      ]
+    }
+  ],
+  "all_row_column_sequences_logconcave": true,
+  "all_coefficients_positive": true,
+  "global_Jensen_failure": {
+    "mean": [
+      0,
+      0
+    ],
+    "support": [
+      [
+        -1,
+        -1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "weights": [
+      "1/3",
+      "1/3",
+      "1/3"
+    ],
+    "center_coefficient": "1",
+    "geometric_endpoint_mean": "6/5"
+  },
+  "Hadamard_fourth_power_failure": {
+    "evaluate_y": "1/10",
+    "x_coefficients": [
+      "171867931/8100000",
+      "12210529/2025000",
+      "3438977/1620000"
+    ],
+    "logconcavity_difference": "-21099889384277/2430000000000"
+  },
+  "not_claimed": [
+    "TU realization",
+    "new paper or score",
+    "global TU Jensen refuted",
+    "prior-art novelty certified"
+  ]
+}

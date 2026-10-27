@@ -1,0 +1,206 @@
+{
+  "scope": "Small radius-one algebra subgraph, no edits or confidence promotion",
+  "nodes": [
+    {
+      "id": "domain.category_theory",
+      "kind": "domain",
+      "title": "Category theory",
+      "summary": "Language of objects, morphisms, functors, natural transformations, adjunctions and universal properties.",
+      "confidence": "literature",
+      "tags": [
+        "category-theory",
+        "functor",
+        "duality",
+        "structure"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.CategoryTheory.Category.Basic"
+        ],
+        "declarations": [
+          "CategoryTheory.Category",
+          "CategoryTheory.Functor"
+        ],
+        "targets": [
+          "Use functoriality as a formal bridge pattern."
+        ]
+      },
+      "questions": [
+        "Can a proposed analogy be upgraded into a functor, adjunction or equivalence?"
+      ],
+      "references": [
+        {
+          "label": "E. Riehl \u2014 Category Theory in Context",
+          "url": "https://math.jhu.edu/~eriehl/context.pdf",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "domain.algebra",
+      "kind": "domain",
+      "title": "Algebra",
+      "summary": "Groups, rings, modules, fields, algebras and their structure-preserving maps.",
+      "confidence": "literature",
+      "tags": [
+        "algebra",
+        "groups",
+        "rings",
+        "modules"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Algebra.Group.Basic",
+          "Mathlib.RingTheory.Ideal.Basic"
+        ],
+        "declarations": [
+          "Group",
+          "Ring",
+          "Module"
+        ],
+        "targets": [
+          "Connect algebraic structure nodes to mathlib typeclass hierarchies."
+        ]
+      },
+      "questions": [
+        "Which bridge requires structure, representation or invariant theory?"
+      ],
+      "references": [
+        {
+          "label": "The Stacks Project",
+          "url": "https://stacks.math.columbia.edu/",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "domain.representation_theory",
+      "kind": "domain",
+      "title": "Representation theory",
+      "summary": "Study of algebraic structures through their actions on spaces.",
+      "confidence": "literature",
+      "tags": [
+        "representations",
+        "groups",
+        "symmetry"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.RepresentationTheory.Basic"
+        ],
+        "declarations": [],
+        "targets": [
+          "Use actions as a bridge between algebra, geometry and physics."
+        ]
+      },
+      "questions": [
+        "What symmetry is invisible in the original formulation?"
+      ],
+      "references": [
+        {
+          "label": "W. Fulton and J. Harris \u2014 Representation Theory",
+          "url": "https://link.springer.com/book/10.1007/978-1-4612-0979-9",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "bridge.ward_defect_weight_variation",
+      "kind": "bridge",
+      "title": "Ward defect from variation of a Berezin weight",
+      "summary": "Under an exact unweighted Ward identity and a Leibniz rule, the weighted defect satisfies Ber_w(QF) = -Ber((Qw)F). A coefficient norm then bounds the defect by the regulator variation instead of introducing an unexplained error parameter.",
+      "confidence": "formal",
+      "tags": [
+        "ward-identity",
+        "berezin",
+        "exterior-algebra",
+        "regulator"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib"
+        ],
+        "declarations": [],
+        "targets": [
+          "Formalize the weighted Ward identity and the coefficient-l1 product estimate in a finite exterior algebra."
+        ]
+      },
+      "questions": [
+        "Which concrete gauge-compatible regulator makes the weight variation small in the required polymer norm?"
+      ],
+      "references": [
+        {
+          "label": "F. A. Berezin \u2014 Introduction to Superanalysis",
+          "url": "https://link.springer.com/book/10.1007/978-94-009-1900-7",
+          "type": "book",
+          "scope": "claim"
+        },
+        {
+          "label": "J. Dimock \u2014 The Renormalization Group According to Balaban I",
+          "url": "https://arxiv.org/abs/1108.1335",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge.category.algebra",
+      "source": "domain.category_theory",
+      "target": "domain.algebra",
+      "relation": "generalizes",
+      "confidence": "literature",
+      "mechanism": "Universal properties and functors organize algebraic constructions.",
+      "references": [
+        {
+          "label": "E. Riehl \u2014 Category Theory in Context",
+          "url": "https://math.jhu.edu/~eriehl/context.pdf",
+          "type": "book",
+          "scope": "claim"
+        },
+        {
+          "label": "The Stacks Project",
+          "url": "https://stacks.math.columbia.edu/",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.algebra.representation",
+      "source": "domain.algebra",
+      "target": "domain.representation_theory",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "Representations convert algebraic objects into actions on spaces.",
+      "references": [
+        {
+          "label": "W. Fulton and J. Harris \u2014 Representation Theory",
+          "url": "https://link.springer.com/book/10.1007/978-1-4612-0979-9",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.algebra.ward_defect",
+      "source": "domain.algebra",
+      "target": "bridge.ward_defect_weight_variation",
+      "relation": "formalizes_as",
+      "confidence": "formal",
+      "mechanism": "Exterior-algebra coefficients, graded derivations and a Leibniz identity make the finite weighted Ward defect an exact algebraic statement.",
+      "references": [
+        {
+          "label": "F. A. Berezin \u2014 Introduction to Superanalysis",
+          "url": "https://link.springer.com/book/10.1007/978-94-009-1900-7",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    }
+  ]
+}

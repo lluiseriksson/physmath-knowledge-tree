@@ -384,11 +384,11 @@
       "url": "https://arxiv.org/html/2609.39917v1",
       "kind": "preprint",
       "published_on": "2026-09-30",
-      "observed_on": "2026-10-24",
+      "observed_on": "2026-10-27",
       "reading_status": "selected_sections_read",
       "evidence": "literature",
       "claim": "The main statements give line log-concavity and capacity-based approximation for unimodular/TU fiber counts. Question1.7 asks for Jensen over finite distributions with integer barycenter.",
-      "limits": "Introductory statements and open question read; no complete proof audit. The own bounded probes and proposed partial reductions do not solve the general question.",
+      "limits": "Selected Definition2.1, Proposition2.2 and Section2.2, Theorem3.1 with proof and Lemmas3.2-3.4, and selected Proposition3.8/Remark3.9 read. Scoped audit824 checked the coefficientwise statement/proof and integrality scope; no complete paper audit. The global Question1.7 is not solved by the own equality theorem or VLC counterexample.",
       "reuse": "Bibliographic metadata and original synthesis only; no copied proof or inferred training permission.",
       "anchors": [
         "domain.algebra",
@@ -628,6 +628,40 @@
       "claim": "Definition1.1 characterizes unimodularity by maximal minors; selected Definition3.13/Proposition3.15 discuss the ordinary two-level Lawrence operation.",
       "limits": "No whole classification proof audit. These two-level statements do not justify a higher-color lift. The explicit K4 witness is an own control, not an attributed new theorem.",
       "reuse": "Bibliography, hashes and original synthesis only; no foreign full text.",
+      "anchors": [
+        "domain.algebra",
+        "domain.complexity_theory"
+      ]
+    },
+    {
+      "id": "tardos-combinatorial-lp-1986",
+      "title": "A Strongly Polynomial Algorithm to Solve Combinatorial Linear Programs",
+      "url": "https://doi.org/10.1287/opre.34.2.250",
+      "kind": "journal_article",
+      "published_on": "1986-04-01",
+      "observed_on": "2026-10-27",
+      "reading_status": "abstract_read",
+      "evidence": "literature",
+      "claim": "The arithmetic operation count is polynomial in the encoding size of the constraint matrix, independently of RHS and objective encoding sizes; constant-sized entries yield a strongly polynomial arithmetic bound.",
+      "limits": "Publisher abstract read; audit824 separately checked GLS1988 Section6.6/Theorem6.6.3 and the Cramer normalization. Not a full audit, reproof or implementation of the LP algorithm. Bit costs retain input-length dependence.",
+      "reuse": "Bibliographic metadata and own synthesis only; no foreign body or training permission inferred.",
+      "anchors": [
+        "domain.complexity_theory",
+        "domain.algebra"
+      ]
+    },
+    {
+      "id": "csikvari-imolay-covers-2020",
+      "title": "Covers, orientations and factors",
+      "url": "https://arxiv.org/abs/1905.06678v5",
+      "kind": "preprint",
+      "published_on": "2019-05-16",
+      "observed_on": "2026-10-27",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Theorem1.2 recalls equality of Eulerian orientation and half-graph counts exactly for bipartite graphs, with pair-decomposition arguments relevant to the later unimodular midpoint source.",
+      "limits": "Pinned arXiv v5 is dated2020-05-26; original submission2019-05-16. Abstract and selected theorem statements read, not a complete proof audit. Equality compares different graph-count objects, not the fixed-matrix translation characterization; this distinction is no priority certification.",
+      "reuse": "Metadata and original comparison only; no third-party source body redistributed.",
       "anchors": [
         "domain.algebra",
         "domain.complexity_theory"
@@ -881,6 +915,28 @@
       "falsifier": "Reject if analytic M, branch guards, tail bounds or rate-interval separation fail; never infer a Delta lower bound from a single-law gain.",
       "next_finite_task": "Extend manifest-bound selected replay801 (four intervals only) to a complete run with input/worker fingerprints and a Research Capsule. Keep798 O1-O4 and old795 limits; no new manuscript, inherited grade or practical threshold claim.",
       "review_packet": "integrations/research-radar/evidence/2026-10-26-interval777/ROOT-VERIFIED781.json"
+    },
+    {
+      "id": "unimodular-midpoint-equality-rigidity",
+      "title": "Equality rigidity and exact decision without lattice counting",
+      "status": "under_audit",
+      "confidence": "speculative",
+      "paper_score": null,
+      "source_ids": [
+        "leake-yekta-tu-jensen-2026",
+        "tardos-combinatorial-lp-1986"
+      ],
+      "node_ids": [
+        "domain.algebra",
+        "domain.complexity_theory"
+      ],
+      "dictionary": "Complete lattice enumerators map polynomial identity to integral translations; source coefficientwise nonnegativity maps one positive-field equality to that identity.",
+      "preserved": "One fixed integer box, unimodular full-row-rank matrix, integral midpoint RHSs, nonempty bounded fibers, common positive original-coordinate weights.",
+      "lost_or_unproved": "No global Jensen theorem, formal proof or novelty certificate; original rational real-fiber extension refuted. Full six-page manuscript importance and extra corollaries await fresh review.",
+      "hypothesis_to_remove": "Remove a lattice-counting/evaluation oracle from deciding midpoint equality by replacing it with6n coordinate optimizations and classical LP complexity.",
+      "falsifier": "A complete lattice enumerator with repeated nonunit factor, or an integer-box unimodular positive-field equality without symmetric integral translations; a close prior theorem defeats a new-major-contribution claim.",
+      "next_finite_task": "Complete one fresh exact-PDF assessment of six-page input832, including rounded rational interface, strict Ehrhart corollary and antecedents; preserve every objection and score without transfer.",
+      "review_packet": "integrations/research-radar/evidence/2026-10-27-rigidity834/PUBLIC-MANIFEST834.json; exact unreviewed PDF7fee08dcca98b04bad1208d28957f56391acc137a9d90fd95a25b32dba536593; component audit824 is unscored and not a full-manuscript report."
     }
   ],
   "source_refresh": {

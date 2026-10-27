@@ -1,0 +1,448 @@
+{
+  "utc": "2026-10-27T03:12:47.619887+00:00",
+  "scope": "Exact finite controls, not a general proof, LP implementation or research capsule",
+  "rows": [
+    {
+      "matrix": "sum3",
+      "M": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "width": 1,
+      "fibers": 4,
+      "midpoint_triples": 2,
+      "equalities": 0,
+      "translations": 0,
+      "maximal_minors": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "matrix": "sum3",
+      "M": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "width": 2,
+      "fibers": 7,
+      "midpoint_triples": 9,
+      "equalities": 0,
+      "translations": 0,
+      "maximal_minors": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "matrix": "sum3",
+      "M": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "width": 3,
+      "fibers": 10,
+      "midpoint_triples": 20,
+      "equalities": 0,
+      "translations": 0,
+      "maximal_minors": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "matrix": "signed3",
+      "M": [
+        [
+          1,
+          -1,
+          1
+        ]
+      ],
+      "width": 1,
+      "fibers": 4,
+      "midpoint_triples": 2,
+      "equalities": 0,
+      "translations": 0,
+      "maximal_minors": [
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "matrix": "signed3",
+      "M": [
+        [
+          1,
+          -1,
+          1
+        ]
+      ],
+      "width": 2,
+      "fibers": 7,
+      "midpoint_triples": 9,
+      "equalities": 0,
+      "translations": 0,
+      "maximal_minors": [
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "matrix": "signed3",
+      "M": [
+        [
+          1,
+          -1,
+          1
+        ]
+      ],
+      "width": 3,
+      "fibers": 10,
+      "midpoint_triples": 20,
+      "equalities": 0,
+      "translations": 0,
+      "maximal_minors": [
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "matrix": "blocks4",
+      "M": [
+        [
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      "width": 1,
+      "fibers": 9,
+      "midpoint_triples": 8,
+      "equalities": 0,
+      "translations": 0,
+      "maximal_minors": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "matrix": "blocks4",
+      "M": [
+        [
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      "width": 2,
+      "fibers": 25,
+      "midpoint_triples": 72,
+      "equalities": 0,
+      "translations": 0,
+      "maximal_minors": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "matrix": "blocks4",
+      "M": [
+        [
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      "width": 3,
+      "fibers": 49,
+      "midpoint_triples": 288,
+      "equalities": 0,
+      "translations": 0,
+      "maximal_minors": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "matrix": "triangle3",
+      "M": [
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          0,
+          1,
+          -1
+        ]
+      ],
+      "width": 1,
+      "fibers": 7,
+      "midpoint_triples": 3,
+      "equalities": 0,
+      "translations": 0,
+      "maximal_minors": [
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "matrix": "triangle3",
+      "M": [
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          0,
+          1,
+          -1
+        ]
+      ],
+      "width": 2,
+      "fibers": 19,
+      "midpoint_triples": 39,
+      "equalities": 6,
+      "translations": 6,
+      "maximal_minors": [
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "matrix": "triangle3",
+      "M": [
+        [
+          1,
+          0,
+          -1
+        ],
+        [
+          0,
+          1,
+          -1
+        ]
+      ],
+      "width": 3,
+      "fibers": 37,
+      "midpoint_triples": 156,
+      "equalities": 18,
+      "translations": 18,
+      "maximal_minors": [
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "matrix": "parallel4",
+      "M": [
+        [
+          1,
+          0,
+          -1,
+          1
+        ],
+        [
+          0,
+          1,
+          -1,
+          0
+        ]
+      ],
+      "width": 1,
+      "fibers": 10,
+      "midpoint_triples": 8,
+      "equalities": 0,
+      "translations": 0,
+      "maximal_minors": [
+        1,
+        -1,
+        0,
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "matrix": "parallel4",
+      "M": [
+        [
+          1,
+          0,
+          -1,
+          1
+        ],
+        [
+          0,
+          1,
+          -1,
+          0
+        ]
+      ],
+      "width": 2,
+      "fibers": 29,
+      "midpoint_triples": 96,
+      "equalities": 4,
+      "translations": 4,
+      "maximal_minors": [
+        1,
+        -1,
+        0,
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "matrix": "parallel4",
+      "M": [
+        [
+          1,
+          0,
+          -1,
+          1
+        ],
+        [
+          0,
+          1,
+          -1,
+          0
+        ]
+      ],
+      "width": 3,
+      "fibers": 58,
+      "midpoint_triples": 396,
+      "equalities": 12,
+      "translations": 12,
+      "maximal_minors": [
+        1,
+        -1,
+        0,
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "matrix": "identity2",
+      "M": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "width": 1,
+      "fibers": 4,
+      "midpoint_triples": 0,
+      "equalities": 0,
+      "translations": 0,
+      "maximal_minors": [
+        1
+      ]
+    },
+    {
+      "matrix": "identity2",
+      "M": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "width": 2,
+      "fibers": 9,
+      "midpoint_triples": 8,
+      "equalities": 8,
+      "translations": 8,
+      "maximal_minors": [
+        1
+      ]
+    },
+    {
+      "matrix": "identity2",
+      "M": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "width": 3,
+      "fibers": 16,
+      "midpoint_triples": 24,
+      "equalities": 24,
+      "translations": 24,
+      "maximal_minors": [
+        1
+      ]
+    }
+  ],
+  "total_triples": 1160,
+  "equalities": 72,
+  "failures": 0,
+  "script_sha256": "b963afa8e52b709d39aa2e3cc52b4bb46cd69e37e3730290adfc3879b19a1c00"
+}

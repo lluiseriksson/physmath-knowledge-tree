@@ -1,0 +1,86 @@
+AUDITORIA822 — CONTRAEJEMPLO RACIONAL820 A DOS INFERENCIAS SOBRE VLC
+2026-10-27. Revision acotada de componente, sin nota ni revision de manuscrito.
+
+DICTAMEN
+
+El contraejemplo es correcto en el alcance declarado. El Laurent p pertenece exactamente a VLC_2 de Definition2.1; sus coeficientes no satisfacen Jensen global para la media de los tres exponentes indicados; y la potencia cuarta COEFICIENTE A COEFICIENTE deja de pertenecer a VLC_2. No encontre un fallo fatal. Se reprodujeron todos los numeros con aritmetica exacta y una implementacion distinta basada en enteros, ademas de ejecutar el verificador Fraction congelado.
+
+Esto invalida dos atajos que usan solo la pertenencia a VLC. No refuta Proposition2.2: falta su hipotesis para la potencia. Tampoco refuta Question1.7, Theorem3.1 o Corollary3.10; no se dio una realizacion del arreglo como fibras TU. La fuente ya distingue la concavidad discreta en lineas de la concavidad global. No se certifica prioridad mundial ni una nueva aportacion editorial.
+
+ENTRADA, FUENTE Y CONTEXTO
+
+MANIFEST821 SHA256 c367c2ebe65b7f7c50fc2fd02bd19e5045ba140793d19e1716a22f7d741104d7. Se verificaron los cuatro payloads y el manifiesto en C y D y se conservaron copias identicas en input/. Se leyeron completos PROOF820.md, verify820.py, LC-COUNTER820.json y PRIMARY821.json.
+
+La fuente primaria es Leake–Mohammadi Yekta, arXiv2609.39917v1, https://arxiv.org/html/2609.39917v1. Se obtuvo nuevamente el HTML:844083 bytes, SHA256651ff38b1842db627ffa6da8a6c842eabd858d62f16030a10e3fe1731ad7540e, coincidente con PRIMARY821. Se leyeron Definition2.1; Proposition2.2 con prueba; Section2.2; Question1.7 y su contexto; Proposition3.8 con prueba, Remark3.9 y Corollary3.10; solo el enunciado de Theorem3.1. Hubo busqueda de palabras en el HTML entero, no una lectura integral ni revision del articulo. El cuerpo extranjero queda en D:\Temp\airr\2026-10-27_lc822-sources, fuera del archivo de auditoria.
+
+Se reutiliza el historial del mismo agente745/781/798, los mensajes del padre y el filesystem compartido. La configuracion solicitada fue GPT-6 Astra xhigh; no se verifica identidad efectiva de runtime, esfuerzo ni independencia. La identidad observable es el papel de subagente auditor en esta conversacion. No se leyeron otros informes nuevos, ni se alteraron fuentes, estado raiz, GitHub, AIRR o chats. No hay nota numerica ni reevaluacion de un manuscrito anterior.
+
+1. VERIFICACION COMPLETA DE VLC_2
+
+Definamos a_ij=30f(i,j). La matriz entera es
+  [36,25,3]
+  [25,30,36]
+  [3,36,25].
+Los nueve coeficientes son positivos; todos los demas coeficientes son cero. El soporte es exactamente los puntos enteros del cuadrado[-1,1]^2, por lo que es finito y saturado.
+
+Para las extracciones [x^i]p con i=-1,0,1, las sucesiones de coeficientes en y tienen soporte consecutivo{-1,0,1}. Sus diferencias centrales, tras multiplicar por900, son517,0,1221. Son no negativas; las desigualdades en los extremos y fuera del soporte son triviales porque uno de los factores vecinos es cero. No hay ceros internos. La matriz es simetrica, por lo que esto comprueba tambien [y^j]p. Para CUALQUIER i fuera de{-1,0,1}, [x^i]p=0, y analogamente para y. No se comprobó una lista finita de indices externos como sustituto de ese argumento de soporte.
+
+El polinomio cero esta admitido por la convencion de la fuente: Example2.3 lo trata expresamente como VLC. Por tanto no aparece una condicion omitida al extraer fuera del soporte. Tras extraer ambas variables quedan escalares no negativos; no se necesita imponer una condicion adicional de VLC_0 para esta instancia bidimensional.
+
+Para la evaluacion y=t>0, sean A_-(t), A_0(t), A_+(t) los coeficientes en x. Cada uno es positivo. La unica desigualdad central no trivial es A_0^2>=A_-A_+. Mi expansion por sumas enteras con j+k fijo dio
+  900 t^2(A_0^2-A_-A_+)
+   =517+129t+891t^2+1427t^3+1221t^4.
+Todos los coeficientes son estrictamente positivos, de modo que la desigualdad se cumple para TODO t>0, no solo para un conjunto de muestras. Dividir por900 reproduce exactamente517/900,43/300,99/100,1427/900,407/300. Por simetria, evaluar x en cualquier positivo da la misma prueba en y. No hay huecos en el soporte de esas sucesiones. Se cumplen asi ambas partes de Definition2.1 para n2, incluidas las extracciones.
+
+Una lectura mas fuerte que exija desigualdades estrictas en cada extraccion no seria la definicion citada: la fila central alcanza igualdad. No se confunde esa igualdad permitida con un fallo.
+
+2. JENSEN GLOBAL Y CONCAVIDAD EN LINEAS
+
+Los puntos u=(-1,-1), v=(1,0), w=(0,1) tienen media(0,0). Sus tres coeficientes son6/5 y el central es1. La desigualdad global requeriria1>=6/5. Sin logaritmos ni redondeos, la diferencia entre el cubo del centro y el producto de extremos es
+  1-(6/5)^3=-91/125<0.
+Los tres puntos no son collineales; por eso esta comprobacion no contradice ninguna de las desigualdades de dos extremos y su punto medio.
+
+Se enumeraron exactamente los8 pares de extremos distintos de este soporte con punto medio entero, y tambien todos los8 triples collineales. Las diferencias, escaladas por900, son517,517,0,0,891,1221,0,1221. Todos pasan. Toda recta con al menos tres puntos del soporte aporta uno de esos triples; una interseccion con menos puntos no da una desigualdad interior nueva. Como el cuadrado es convexo, la sucesion en los puntos de cualquier recta racional no tiene ceros internos; extenderla por cero fuera del cuadrado no rompe la condicion. Asi se verifica la afirmacion adicional de concavidad en lineas, sin deducirla solo de filas y columnas.
+
+3. CUARTA POTENCIA COEFICIENTE A COEFICIENTE
+
+Se mantuvo el soporte fijo y se reemplazo f(i,j) por f(i,j)^4. Esto es p^[4], no p(x,y)^4, cuyo producto por convolucion tendria otros coeficientes y soporte.
+
+En t=1/10, use el denominador comun30^4*10=8100000. Los tres numeradores enteros obtenidos por la formula100 a_i,-1^4+10 a_i,0^4+a_i,1^4 son
+  171867931, 48842116, 17194885.
+Al reducir las fracciones se obtienen exactamente
+  171867931/8100000,
+  12210529/2025000,
+  3438977/1620000.
+La diferencia de productos en numeradores es-569697013375479. Tras dividir por8100000^2 y reducir:
+  A_0^2-A_-A_+=-21099889384277/2430000000000<0.
+Por tanto falla una evaluacion positiva exigida por VLC_2. Una sola basta para refutar la clausura universal bajo potencias coeficiente a coeficiente. No se afirma que4 sea la menor potencia que falla, ni que todo exponente distinto de1 falle.
+
+Las filas y columnas de la matriz elevada a la cuarta potencia siguen siendo log-concavas, porque elevar al cuarto una desigualdad no negativa conserva su sentido. El fallo ocurre despues de sumar los terminos de la variable evaluada. Es precisamente la operacion que no se puede reemplazar por concavidad por coordenadas.
+
+4. ESTABILIDAD, CONCAVIDAD ANALITICA Y FIBRAS
+
+VLC no es la concavidad ordinaria de log p sobre el cuadrante positivo. En este mismo ejemplo
+  p(x,1)=(32/15)x^-1+91/30+(32/15)x.
+En x=1 su primera derivada es cero y (log p(x,1))''=128/219>0, asi que p no es ordinariamente log-concavo. Este control adicional es exacto.
+
+Tampoco se debe presumir estabilidad real. Al eliminar monomios negativos, q(x,y)=xy p(x,y). La seccion q(x,1) es una cuadratica real de discriminante-2701/300<0, con una raiz simple en el semiplano superior. Esa raiz persiste en el semiplano superior al perturbar y=1 a y=1+i eta con eta positivo suficientemente pequeno, por continuidad de las raices simples. Entonces ambas variables tienen parte imaginaria positiva y q se anula. Este argumento directo confirma que el ejemplo no es estable en el sentido usual para el polinomio q. No se importa ningun teorema de clausura de polinomios estables para justificar VLC.
+
+Question1.7 esta formulada para recuentos no ponderados de fibras de matrices unimodulares, una clase que incluye las TU. El ejemplo solo da nueve numeros racionales de una funcion arbitraria VLC. No se proporciona matriz, caja, condicionamiento y pesos que los realicen. Aun si se hallara una realizacion con pesos reales positivos, habria que justificar aparte cualquier traslado a la pregunta no ponderada. Monomios, escalados exponenciales o multiplicar por una constante no prueban esa identificacion.
+
+Proposition3.8 utiliza estructura TU del sistema aumentado; Remark3.9 advierte que su operacion no conserva necesariamente unimodularidad en general. No hay una implicacion inversa de VLC a realizacion TU que se pueda usar aqui. Los resultados sobre menores y matrices estrella citados en PROOF820 no estan en la entrada821 y no fueron auditados822. No se usan como evidencia de una clausura o una obstruccion para fibras TU.
+
+5. ALCANCE DEL ANTECEDENTE Y OBJECIONES REALES
+
+La advertencia general de que concavidad sobre lineas de una reticula no implica concavidad global ya aparece junto a Question1.7 en la fuente. Esa idea no es una novedad de820. En las secciones leidas y en la busqueda acotada no encontre la matriz concreta, estos racionales o un ejemplo de fallo de potencias Hadamard. Una busqueda de palabras sin coincidencias no demuestra ausencia en toda la literatura ni prioridad mundial.
+
+O1, alcance obligatorio: el resultado refuta atajos sobre toda VLC, no la pregunta de fibras unimodulares/TU. La carencia de realizacion es central y debe mantenerse visible en cualquier uso posterior.
+O2, alcance de Proposition2.2: p^[4] no satisface su hipotesis. No se deduce de ello que la conclusion numerica de esa proposicion falle para este polinomio concreto; solo que no se puede invocar por pertenencia heredada a VLC.
+O3, procedencia: PROOF820 atribuye una expansion a una comprobacion simbolica SymPy independiente. El JSON conserva los valores de la expansion, pero no acredita por si solo esa ejecucion ni independencia. Mi dictamen descansa en la replica Fraction y el calculo entero conservados; no atesta la historia de SymPy ni independencia de agentes.
+O4, novedad: el obstaculo conceptual entre lineas y Jensen global es antecedente explicito. La clausura Hadamard refutada es un hecho concreto comprobado aqui, sin certificacion de prioridad o significacion editorial.
+
+No se detecto una hipotesis omitida fatal para la afirmacion p en VLC_2, ni un error de signo, denominador, media o uso de ceros. Ningun control822 fallo; no hubo intentos eliminados o una busqueda de variantes para obtener el dictamen. No se realizo una campana numerica ni una busqueda de realizaciones TU.
+
+CONSERVACION
+
+El archivo contiene input congelado, report.txt, verdict.json, context.json, controles822 y su log, log de la replica exacta verify820, pines/profundidad de fuente, busqueda acotada, manifiesto y verificacion C-D. Trabajo en C:\Trabajo\airr\2026-10-27_lc822-audit; conservacion byte-identica en D:\Proyectos\airr-investigacion\2026-10-27_lc822-audit. Nada se publica.
