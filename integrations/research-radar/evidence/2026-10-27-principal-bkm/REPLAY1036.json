@@ -1,0 +1,27 @@
+{
+  "utc": "2026-10-27T17:19:07.607448+00:00",
+  "scope": "Three fixed public transport controls, not a discovery campaign, universal theorem or review score",
+  "run": "C:\\Trabajo\\airr\\2026-10-27_knowledge1036\\runs\\public-1_pt1ct8",
+  "all_attempts_preserved": true,
+  "programs": [
+    {
+      "script": "check1033.py",
+      "returncode": 0,
+      "parsed_JSON_matches_expected": true,
+      "output_sha256": "782adac89457cee07ab42de2ca2db1506e0016e35511b61a9c07cb2ac06da0a2"
+    },
+    {
+      "script": "check1035.py",
+      "returncode": 0,
+      "parsed_JSON_matches_expected": true,
+      "output_sha256": "00516a9791dc8d52a064e3c797d68b69e0272f1dcd4805137e34c04513293147"
+    },
+    {
+      "script": "interval1035.py",
+      "returncode": 0,
+      "parsed_JSON_matches_expected": true,
+      "output_sha256": "bc60fbefd24a5f97fc0ca1fac19ed7391e030fad976486761eae794b7047ce3b"
+    }
+  ],
+  "all_passed": true
+}
