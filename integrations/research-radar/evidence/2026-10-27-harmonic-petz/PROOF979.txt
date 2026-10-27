@@ -1,0 +1,69 @@
+979: A harmonic-weight bound for random-unitary comparisons
+Parent derivation,27 October2026. Unreviewed; no manuscript, score or priority claim.
+Not part of the already published exact957 manuscript or its assessment958.
+
+Let U_1,...,U_m be unitaries on A, m>=2, E=(1/m)sum_j Ad(U_j),
+and N_w=sum_j w_j Ad(U_j), all w_j>0 and sum w_j=1.
+Extend both maps by identity on arbitrary finite R. Consider pairs rho,sigma
+with E_R(rho)=E_R(sigma) and finite positive D(rho||sigma).
+The proposed bound is
+ D(N_w,R(rho)||N_w,R(sigma)) <= h(w) D(rho||sigma),
+ h(w)=1-m^2/(sum_j 1/w_j).
+It is nonnegative by Cauchy--Schwarz and strictly below1 for positive weights.
+This does not assert the exact coefficient, independence of every input
+constraint, or any novelty relative to the full contraction literature.
+
+Self-contained metric proof. For positive W define the BKM quadratic form
+g_W(Z)=integral_0^1 <Z,[(1-s)L_W+sR_W]^(-1)Z> ds.
+For positive Q, <Z,Q^-1 Z>=sup_Y(2Re<Y,Z>-<Y,QY>), so this
+inverse quadratic form is jointly convex in Q,Z. Thus g is jointly convex
+in W,Z. It is quadratic in arbitrary Hermitian tangent Z (including negative
+scalar multiples), and invariant under simultaneous unitary conjugation.
+These are established metric properties, not claimed new machinery.
+
+For a faithful base W and Hermitian Z with E_R(Z)=0, put
+W_j=U_j W U_j*, Z_j=U_j Z U_j*. Then sum_j Z_j=0.
+For ANY real t,
+ N_w(Z)=sum_j(w_j-t)Z_j=sum_j w_j[(w_j-t)/w_j]Z_j.
+Joint convexity and unitary invariance imply
+ g_(N_w W)(N_w Z) <= sum_j (w_j-t)^2/w_j *g_W(Z).
+The scalar sum equals1-2mt+t^2 sum_j1/w_j. Minimize at
+t=m/(sum_j1/w_j) to get h(w). Negative tangent coefficients are allowed;
+one must NOT apply joint convexity of state relative entropy directly to
+negative state weights. The convex weights here are always the positive w_j.
+
+The entire affine segment W_s=sigma+s(rho-sigma) has E_R(rho-sigma)=0.
+Apply the metric bound pointwise and integrate with weight1-s to obtain
+the finite-pair relative-entropy bound. For nonfaithful states, mix both
+with the same maximally mixed state. This preserves E equality. Joint
+convexity plus lower semicontinuity gives convergence of finite divergences
+on input and output; output support inclusion follows from positivity.
+Hence pass the inequality before division. No uniform continuity in dim R
+is assumed. All unitaries act locally, but the argument is valid for each
+finite R with the SAME constant.
+
+Full local depolarization: use a d-dimensional unitary error basis, m=d^2,
+U_1=I, with E_R(X)=I_A/d tensor Tr_A X. Set
+w_1=[1+(m-1)lambda]/m and w_j=(1-lambda)/m for j>1,0<lambda<1.
+Then N=lambda id+(1-lambda)E and elementary algebra gives
+h(w)=(m-1)lambda^2/[1+(m-2)lambda].
+E_R(rho)=E_R(sigma) is precisely equal R marginals. Thus this supplies an
+upper bound for the unrestricted complete pair coefficient, and hence an
+upper bound for actual-product MI. It does NOT prove proposed971 equality.
+
+For qubits lambda1/2: proposed bound3/8 versus the earlier order-only2/5,
+with the audited SEP MI lower1/3. The remaining interval is[1/3,3/8].
+In general the order-only bound m lambda^2/[1+(m-1)lambda] minus this bound
+is exactly lambda^2(1-lambda)/[(1+(m-1)lambda)(1+(m-2)lambda)]>0.
+This comparison concerns the earlier order bound, not a claim to the best
+published bound. A covering literature theorem could make979 only a
+rederivation even though the algebra is correct.
+
+Scope limits and next checks: one error-basis mixture, no exactness, no
+conditional coefficient subtracting unequal reference divergences, no
+capacity theorem or tensor-product-channel conclusion. Scientific priority
+has not been established. Check the proof and its closest general quantum
+Fisher/random-unitary predecessors before any new manuscript or assessment.
+Falsifier: a valid equal-E pair above h(w), or a failure of the metric
+representation, joint-convexity step or boundary passage. Preserve such
+objections; do not promote this draft from passing finite samples alone.

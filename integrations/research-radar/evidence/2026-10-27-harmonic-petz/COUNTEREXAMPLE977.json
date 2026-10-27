@@ -1,0 +1,18 @@
+{
+  "scope": "Exact2qubit conditional-order shortcut refutation; NOT a BKM or finite-pair falsifier",
+  "claim_refuted": "Tr_A(X K X)<=Tr_A(X^2) for all K>0 with Tr_A K=I and Hermitian X with Tr_A X=0",
+  "K": "(3/2)Phi_plus+I_4/8",
+  "X": "4Phi_plus-I_4",
+  "K_eigenvalues": [
+    "13/8",
+    "1/8",
+    "1/8",
+    "1/8"
+  ],
+  "lhs": "(15/2)I_2",
+  "rhs": "6I_2",
+  "positive_violation": "(3/2)I_2",
+  "implication": "Cannot replace reference-weighted/noncommuting metric analysis by this naive conditional-order step. Main971 proposed complete-pair upper still unproved and unrefuted.",
+  "score": null,
+  "reviewed": false
+}
