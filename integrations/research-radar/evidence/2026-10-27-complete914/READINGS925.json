@@ -1,0 +1,80 @@
+{
+  "utc": "2026-10-27T10:13:23.710705+00:00",
+  "coverage": "Directed retrieval, never exhaustive. Response hashes distinguish metadata retrieval from proof coverage. No foreign corpus stored.",
+  "inventory": [
+    {
+      "id": "openai_math_head",
+      "url": "https://api.github.com/repos/openai/math/commits?per_page=1",
+      "reading": "inventory_metadata_only",
+      "status": 200,
+      "bytes": 4784,
+      "sha256": "6ca38558150e5428a6ab89342338edbbedc7eb5cf1d5dcc3752dd34b0ad91760",
+      "head": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+      "date": "2026-10-26T21:18:03Z",
+      "subject": "Merge pull request #3 from openai/codex/update-10-26"
+    },
+    {
+      "id": "deepmind_head",
+      "url": "https://api.github.com/repos/google-deepmind/formal-conjectures/commits?per_page=1",
+      "reading": "inventory_metadata_only",
+      "status": 200,
+      "bytes": 8641,
+      "sha256": "35c8d5ede2936394b64fe555e4ee1f44d4d8375e7947129a60c9ed10d8bbae5c",
+      "head": "c0c538071a21b36d15f70f5998370eb6a4c31c97",
+      "date": "2026-10-27T09:30:35Z",
+      "subject": "Link verified Lean proof of Erdős Problem 1202 (#7638)"
+    },
+    {
+      "id": "anthropic",
+      "url": "https://www.anthropic.com/research",
+      "reading": "inventory_metadata_only",
+      "status": 200,
+      "bytes": 417084,
+      "sha256": "0bf85cd76b3823265d27de0f9d88a8c8f7a074534433722892847993058755aa"
+    },
+    {
+      "id": "own_airr",
+      "url": "https://airr.science/papers/ARR-2026-0BQ1X4SGFJ8AJ8N1/versions/v2/",
+      "reading": "inventory_metadata_only",
+      "status": 200,
+      "bytes": 34438,
+      "sha256": "b9f5d3ab58667531e623b889fdcafd7b56b6ac97cc4274406efcf773673a0f23"
+    },
+    {
+      "id": "own_vixra",
+      "url": "https://www.ai.vixra.org/author/lluis_eriksson",
+      "reading": "inventory_metadata_only",
+      "status": 200,
+      "bytes": 70178,
+      "sha256": "9cfc2018ff38a1f839e7c86f3d743cdbefb2b58b46c47bab6b4dd5af36fb8b7e"
+    },
+    {
+      "id": "own_public_repositories",
+      "url": "https://api.github.com/users/lluiseriksson/repos?per_page=100&type=owner",
+      "reading": "inventory_metadata_only",
+      "status": 200,
+      "bytes": 212804,
+      "sha256": "49b47f84a854ab57b6354f21c751a377f0e0f44a48482ab11683669e3bdeaf3e",
+      "public_repository_count": 36
+    }
+  ],
+  "primary_readings": [
+    {
+      "url": "https://arxiv.org/html/2510.06183v2",
+      "scope": "Sections5.3 and6.2: Theorems5.6/5.7, Corollary5.8 and Lemmas6.6/6.7 statements and displayed proofs read. Ordinary faithful-output metric/HS comparison preexists; neither entire paper nor complete extension certified."
+    },
+    {
+      "url": "https://arxiv.org/html/2411.19890v3",
+      "scope": "Lemma4.3 and Choi definitions revisited via primary search; Proposition5.4 antecedent identified via Iyer citation, not fully reread this turn."
+    }
+  ],
+  "hypothesis_reduction": {
+    "removed_in_proposal": "nilpotency and structured filtered-jump identity in interior Choi regime",
+    "retained": "strictly positive Choi(M), complex kernel inclusion kerN subset kerM; all dimensions finite",
+    "not_superseded": "M=amplitude damping has singular Choi, so criterion925 does not subsume boundary914",
+    "falsifier": "Matched-kernel weighted BKM counterexample under positive alpha would invalidate proof; dropping kernel inclusion fails exactly.",
+    "confidence": "heuristic pending separate audit; ingredients literature; not Lean formal"
+  },
+  "bounded_controls": "CHECK925 is12 correlated-base diagnostics, not a computational campaign certificate or universal proof",
+  "manuscript922": "unchanged, no separate paper, no score"
+}

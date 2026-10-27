@@ -1,0 +1,102 @@
+KERNEL925: proposed complete relative-entropy comparison under Choi faithfulness
+27 October 2026. Parent derivation, NOT reviewer-audited, no manuscript score.
+This is a separate research note, not a modification of frozen PDF922.
+
+Proposed theorem. M,N:L(A)->L(B) are finite-dimensional channels. Their
+unnormalized Choi matrices use J_Phi=sum_ij |i><j| tensor Phi(|i><j|).
+Assume J_M>0. Then these statements are equivalent:
+ (i) ker N is contained in ker M (complex-linear kernels).
+ (ii) For some lambda>0, all finite R and all input states rho<<sigma obey
+ D(N_R rho||N_R sigma)>=lambda D(M_R rho||M_R sigma).
+In particular neither nilpotency nor injectivity of M,N is required.
+No optimal lambda, necessity of Choi faithfulness, novelty or formal proof claimed.
+
+Explicit bound. Put alpha=lambda_min(J_M)>0 and beta=lambda_max(J_N)>0.
+Choose a complex-linear map L:L(B)->L(B) with M=L N, and K=||L||_{2->2}
+on the COMPLEX Hilbert-Schmidt matrix space, not merely traceless Hermitians.
+Then lambda=alpha/(beta K^2)>0 works. One possible choice is L=M N^+,
+where N^+ is the Moore-Penrose inverse of the complex matrix representation.
+The kernel inclusion implies M N^+ N=M. L need not be positive or TP.
+
+1. CP sandwich. For T(X)=Tr(X) I_B, J_T=I_A tensor I_B. Thus
+ alpha T<=cp M and N<=cp beta T. For full-rank sigma_AR, sigma_R>0;
+ with V=I_B tensor sigma_R we get M_R sigma>=alpha V>0 and N_R sigma<=beta V.
+The latter may be singular. For every Hermitian input X, N_R X is supported
+on N_R sigma: since sigma>0, -d sigma<=X<=d sigma, and positivity preserves it.
+Hence BKM order, with its support convention, yields
+ g_{N_R sigma}(N_R X)>=beta^-1 g_V(N_R X),
+ g_{M_R sigma}(M_R X)<=alpha^-1 g_V(M_R X).
+
+2. The reference-weighted bound is genuinely uniform. Diagonalize sigma_R
+with eigenvalues r_i>0 and write Z=sum_ij Z_ij tensor |i><j|, Z Hermitian.
+The BKM form based at V is exactly
+ g_V(Z)=sum_ij ell(r_i,r_j) ||Z_ij||_HS^2,
+ where ell(a,b)=(log a-log b)/(a-b), ell(a,a)=1/a.
+All weights are positive. Applying the COMPLEX Hilbert-Schmidt bound to
+each block gives g_V((L tensor id_R)Z)<=K^2 g_V(Z).
+The individual Z_ij need not be Hermitian. A bound checked only for
+Hermitian blocks would therefore be insufficient without another argument.
+M_R X=(L tensor id_R)(N_R X); consequently
+ g_{M_R sigma}(M_R X)<=K^2/alpha g_V(N_R X)
+ <=beta K^2/alpha g_{N_R sigma}(N_R X).
+This controls all finite R, even correlated or entangled sigma, with unchanged constants.
+
+3. Integration and supports. For full-rank input rho,sigma integrate the BKM
+inequality on sigma+t(rho-sigma). M_R output stays full rank. N_R outputs
+have the fixed support supp(N(I_A)) tensor R: an interior input is bounded
+above and below by positive multiples of the joint identity. On that support
+N_R outputs are full rank. Hence the standard relative-entropy Hessian
+integral applies on both output spaces (restricted to this support for N).
+For rho<<sigma on the boundary, use rho_e=(1-e)rho+e omega and
+sigma_e=(1-e)sigma+e omega, omega full-rank. The input support inclusion
+gives rho<=C sigma; positivity gives finite output relative entropies.
+Joint convexity gives limsup<=D(original), lower semicontinuity liminf>=D(original).
+This passes the inequality to the original states without a singular integral exchange.
+
+4. Necessity. If ker N is not contained in ker M, choose a nonzero
+Hermitian H with NH=0 and MH!=0, by taking a Hermitian or anti-Hermitian
+part of a complex kernel witness. Since N is TP, Tr H=0. Let sigma=I_A/d_A
+and rho=sigma+tH for sufficiently small nonzero real t. They are positive
+definite states. N rho=N sigma, so its relative entropy is zero, whereas
+M rho!=M sigma has strictly positive relative entropy. Already R=1 rules
+out every positive comparison constant.
+
+Antecedent / novelty gate. Iyer et al.2510.06183v2 Lemma6.7 already compares
+ordinary strictly positive-channel metrics with Hilbert-Schmidt norms;
+2411.19890v3 Proposition5.4 is its earlier BKM antecedent. This derivation
+must NOT be advertised as discovering that ordinary argument. Its distinct
+candidate step uses CP Choi sandwiches and I_B tensor sigma_R weights to
+retain an arbitrary quantum reference. Choi faithfulness is stronger than
+ordinary positivity on states. Whether this complete extension is already
+in the literature is unresolved; failed text searches prove nothing.
+The constant can be very weak; alpha can vanish in natural boundary cases.
+In particular amplitude-damping M has singular Choi, so this theorem alone
+does not supersede the nilpotent914 result on that boundary family.
+
+Falsifiers / next finite controls. Test the weighted BKM comparison on whole
+Hermitian spaces at correlated full-rank bases and non-Hermitian R blocks;
+check M=L N and Choi sandwich constants. Include N singular with matched
+kernel, and a mismatched-kernel pair where positivity must fail. A diagnostic
+failure cannot be dismissed as an unrelated boundary if stated assumptions
+hold. Finite successful samples do not prove the universal theorem.
+
+Status: proposed analytic derivation; standard ingredients literature,
+new extension unreviewed (heuristic as research label, not Lean formal).
+No score and no new paper split off from these notes.
+
+5. Robust injective regime (same proposed status). If N is injective with
+smallest complex Hilbert-Schmidt singular value nu>0, and S=||M||_2->2,
+then K<=S/nu, hence alpha nu^2/(beta S^2) is an explicit lower bound.
+This is not merely positivity at one exactly tuned map. Let M',N' also be
+channels, let ||J_M'-J_M||<=epsilon_M<alpha and
+||J_N'-J_N||<=epsilon_N, and let ||M'-M||_2->2<=delta_M,
+||N'-N||_2->2<=delta_N<nu. Weyl/singular-value perturbation bounds give
+the reference-uniform constant
+ (alpha-epsilon_M)(nu-delta_N)^2 /
+ [(beta+epsilon_N)(S+delta_M)^2] > 0.
+No relation between Choi-norm errors and superoperator errors is presumed;
+both are explicitly bounded finite-dimensional quantities. The perturbed
+pair must remain channels; an arbitrary linear perturbation is not enough.
+This establishes a proposed robust interior regime. It does not continue
+the bound through alpha=0, solve the boundary AD sharp-constant question,
+or settle any capacity/additivity problem.
