@@ -1,0 +1,320 @@
+{
+  "utc": "2026-10-27T18:18:54.390525+00:00",
+  "sources": [
+    {
+      "id": "openai_math",
+      "url": "https://api.github.com/repos/openai/math/commits?per_page=1",
+      "read_level": "inventory_only",
+      "checked_at": "2026-10-27T18:18:52.008775+00:00",
+      "status": 200,
+      "resolved_url": "https://api.github.com/repos/openai/math/commits?per_page=1",
+      "bytes": 4784,
+      "sha256": "6ca38558150e5428a6ab89342338edbbedc7eb5cf1d5dcc3752dd34b0ad91760",
+      "latest_commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a"
+    },
+    {
+      "id": "deepmind_formal",
+      "url": "https://api.github.com/repos/google-deepmind/formal-conjectures/commits?per_page=1",
+      "read_level": "inventory_only",
+      "checked_at": "2026-10-27T18:18:52.009774+00:00",
+      "status": 200,
+      "resolved_url": "https://api.github.com/repos/google-deepmind/formal-conjectures/commits?per_page=1",
+      "bytes": 8641,
+      "sha256": "35c8d5ede2936394b64fe555e4ee1f44d4d8375e7947129a60c9ed10d8bbae5c",
+      "latest_commit": "c0c538071a21b36d15f70f5998370eb6a4c31c97"
+    },
+    {
+      "id": "own_public_repositories",
+      "url": "https://api.github.com/users/lluiseriksson/repos?per_page=100&sort=updated",
+      "read_level": "first_page_inventory_only",
+      "checked_at": "2026-10-27T18:18:52.010775+00:00",
+      "status": 200,
+      "resolved_url": "https://api.github.com/users/lluiseriksson/repos?per_page=100&sort=updated",
+      "bytes": 212804,
+      "sha256": "274713fb49238e7f77bc08e6b2806f4594b14f3d01f41189d5e8a45e46f01b1e",
+      "inventory": [
+        {
+          "name": "physmath-knowledge-tree",
+          "updated_at": "2026-10-27T17:31:35Z",
+          "pushed_at": "2026-10-27T17:31:28Z",
+          "url": "https://github.com/lluiseriksson/physmath-knowledge-tree"
+        },
+        {
+          "name": "reset-minimax-lab",
+          "updated_at": "2026-10-24T08:30:49Z",
+          "pushed_at": "2026-10-24T08:30:44Z",
+          "url": "https://github.com/lluiseriksson/reset-minimax-lab"
+        },
+        {
+          "name": "reversible-branch-lab",
+          "updated_at": "2026-10-24T04:25:27Z",
+          "pushed_at": "2026-10-24T04:25:22Z",
+          "url": "https://github.com/lluiseriksson/reversible-branch-lab"
+        },
+        {
+          "name": "THE-ERIKSSON-PROGRAMME",
+          "updated_at": "2026-10-15T21:09:58Z",
+          "pushed_at": "2026-10-15T02:41:50Z",
+          "url": "https://github.com/lluiseriksson/THE-ERIKSSON-PROGRAMME"
+        },
+        {
+          "name": "additive-gkls-leaky-boundary",
+          "updated_at": "2026-09-09T18:53:15Z",
+          "pushed_at": "2026-09-09T18:44:21Z",
+          "url": "https://github.com/lluiseriksson/additive-gkls-leaky-boundary"
+        },
+        {
+          "name": "many-body-filling-maintenance-floor",
+          "updated_at": "2026-09-09T18:53:04Z",
+          "pushed_at": "2026-09-09T18:44:10Z",
+          "url": "https://github.com/lluiseriksson/many-body-filling-maintenance-floor"
+        },
+        {
+          "name": "lean-ym-flow",
+          "updated_at": "2026-09-09T18:51:48Z",
+          "pushed_at": "2026-10-27T16:42:44Z",
+          "url": "https://github.com/lluiseriksson/lean-ym-flow"
+        },
+        {
+          "name": "lean-transfer-matrix",
+          "updated_at": "2026-09-09T18:51:45Z",
+          "pushed_at": "2026-10-27T13:16:55Z",
+          "url": "https://github.com/lluiseriksson/lean-transfer-matrix"
+        },
+        {
+          "name": "aqft-split-inclusion-series",
+          "updated_at": "2026-09-09T18:47:02Z",
+          "pushed_at": "2026-09-09T18:44:05Z",
+          "url": "https://github.com/lluiseriksson/aqft-split-inclusion-series"
+        },
+        {
+          "name": "hodge-conjecture-research-front",
+          "updated_at": "2026-09-09T18:46:55Z",
+          "pushed_at": "2026-09-09T18:43:54Z",
+          "url": "https://github.com/lluiseriksson/hodge-conjecture-research-front"
+        },
+        {
+          "name": "support-leakage-rapid-maintenance",
+          "updated_at": "2026-09-09T18:46:50Z",
+          "pushed_at": "2026-09-09T18:44:15Z",
+          "url": "https://github.com/lluiseriksson/support-leakage-rapid-maintenance"
+        },
+        {
+          "name": "finite-sample-spectral-certificates",
+          "updated_at": "2026-09-09T18:46:22Z",
+          "pushed_at": "2026-09-09T18:43:13Z",
+          "url": "https://github.com/lluiseriksson/finite-sample-spectral-certificates"
+        },
+        {
+          "name": "ym-audit",
+          "updated_at": "2026-09-09T18:45:55Z",
+          "pushed_at": "2026-09-09T18:44:46Z",
+          "url": "https://github.com/lluiseriksson/ym-audit"
+        },
+        {
+          "name": "riemann-resolvent-programme",
+          "updated_at": "2026-09-09T18:45:53Z",
+          "pushed_at": "2026-09-09T18:43:04Z",
+          "url": "https://github.com/lluiseriksson/riemann-resolvent-programme"
+        },
+        {
+          "name": "riemann-prime-resolvent",
+          "updated_at": "2026-09-09T18:45:50Z",
+          "pushed_at": "2026-10-01T11:19:47Z",
+          "url": "https://github.com/lluiseriksson/riemann-prime-resolvent"
+        },
+        {
+          "name": "lean-2d-yang-mills",
+          "updated_at": "2026-09-09T18:45:16Z",
+          "pushed_at": "2026-10-27T16:43:45Z",
+          "url": "https://github.com/lluiseriksson/lean-2d-yang-mills"
+        },
+        {
+          "name": "physmath-lean-lemmas",
+          "updated_at": "2026-09-09T18:45:13Z",
+          "pushed_at": "2026-09-09T18:44:26Z",
+          "url": "https://github.com/lluiseriksson/physmath-lean-lemmas"
+        },
+        {
+          "name": "point-span-tangent-absorption",
+          "updated_at": "2026-09-09T18:44:48Z",
+          "pushed_at": "2026-09-09T18:44:00Z",
+          "url": "https://github.com/lluiseriksson/point-span-tangent-absorption"
+        },
+        {
+          "name": "ym-mass-gap-lean-verification",
+          "updated_at": "2026-09-09T18:44:47Z",
+          "pushed_at": "2026-09-09T18:44:42Z",
+          "url": "https://github.com/lluiseriksson/ym-mass-gap-lean-verification"
+        },
+        {
+          "name": "mathlib-plane-tree-catalan",
+          "updated_at": "2026-09-09T18:44:36Z",
+          "pushed_at": "2026-09-09T18:44:32Z",
+          "url": "https://github.com/lluiseriksson/mathlib-plane-tree-catalan"
+        },
+        {
+          "name": "lean-connes-kreimer",
+          "updated_at": "2026-09-09T18:44:29Z",
+          "pushed_at": "2026-10-27T14:26:26Z",
+          "url": "https://github.com/lluiseriksson/lean-connes-kreimer"
+        },
+        {
+          "name": "p-vs-np-research-front",
+          "updated_at": "2026-09-09T18:44:04Z",
+          "pushed_at": "2026-09-09T18:43:50Z",
+          "url": "https://github.com/lluiseriksson/p-vs-np-research-front"
+        },
+        {
+          "name": "lean-gaussian-field",
+          "updated_at": "2026-09-09T18:43:47Z",
+          "pushed_at": "2026-10-27T13:21:02Z",
+          "url": "https://github.com/lluiseriksson/lean-gaussian-field"
+        },
+        {
+          "name": "ym-lattice-numerics",
+          "updated_at": "2026-09-09T18:43:46Z",
+          "pushed_at": "2026-10-27T16:37:57Z",
+          "url": "https://github.com/lluiseriksson/ym-lattice-numerics"
+        },
+        {
+          "name": "lean-os-positivity",
+          "updated_at": "2026-09-09T18:43:40Z",
+          "pushed_at": "2026-10-27T16:40:33Z",
+          "url": "https://github.com/lluiseriksson/lean-os-positivity"
+        },
+        {
+          "name": "hausdorff-certificates",
+          "updated_at": "2026-09-09T18:43:23Z",
+          "pushed_at": "2026-09-09T18:43:09Z",
+          "url": "https://github.com/lluiseriksson/hausdorff-certificates"
+        },
+        {
+          "name": "lean-zero-free-regions",
+          "updated_at": "2026-09-09T18:42:40Z",
+          "pushed_at": "2026-10-27T13:21:37Z",
+          "url": "https://github.com/lluiseriksson/lean-zero-free-regions"
+        },
+        {
+          "name": "irynayoutube",
+          "updated_at": "2026-08-26T05:15:14Z",
+          "pushed_at": "2026-08-26T05:14:07Z",
+          "url": "https://github.com/lluiseriksson/irynayoutube"
+        },
+        {
+          "name": "mathlib4",
+          "updated_at": "2026-08-07T16:48:17Z",
+          "pushed_at": "2026-08-07T17:07:12Z",
+          "url": "https://github.com/lluiseriksson/mathlib4"
+        },
+        {
+          "name": "rooted-tree-catalan-closure",
+          "updated_at": "2026-07-02T22:34:02Z",
+          "pushed_at": "2026-07-02T22:12:17Z",
+          "url": "https://github.com/lluiseriksson/rooted-tree-catalan-closure"
+        },
+        {
+          "name": "kinshard-arena",
+          "updated_at": "2026-06-27T09:27:53Z",
+          "pushed_at": "2026-06-27T09:27:50Z",
+          "url": "https://github.com/lluiseriksson/kinshard-arena"
+        },
+        {
+          "name": "lean-rooted-tree-polymer-expansion",
+          "updated_at": "2026-06-23T19:58:55Z",
+          "pushed_at": "2026-06-23T19:50:45Z",
+          "url": "https://github.com/lluiseriksson/lean-rooted-tree-polymer-expansion"
+        },
+        {
+          "name": "quiz-del-cuento",
+          "updated_at": "2026-05-20T19:14:33Z",
+          "pushed_at": "2026-05-20T19:14:28Z",
+          "url": "https://github.com/lluiseriksson/quiz-del-cuento"
+        },
+        {
+          "name": "championsleaguesim",
+          "updated_at": "2025-03-19T16:20:52Z",
+          "pushed_at": "2025-03-19T16:20:48Z",
+          "url": "https://github.com/lluiseriksson/championsleaguesim"
+        },
+        {
+          "name": "neuralsnakes",
+          "updated_at": "2025-03-05T11:52:29Z",
+          "pushed_at": "2025-03-05T11:52:26Z",
+          "url": "https://github.com/lluiseriksson/neuralsnakes"
+        },
+        {
+          "name": "pixelfootball",
+          "updated_at": "2025-03-05T09:44:04Z",
+          "pushed_at": "2025-03-04T22:41:34Z",
+          "url": "https://github.com/lluiseriksson/pixelfootball"
+        }
+      ],
+      "not_all_pages": true
+    },
+    {
+      "id": "anthropic",
+      "url": "https://www.anthropic.com/research",
+      "read_level": "index_read_only",
+      "checked_at": "2026-10-27T18:18:52.010775+00:00",
+      "status": 200,
+      "resolved_url": "https://www.anthropic.com/research",
+      "bytes": 417157,
+      "sha256": "4dd78f506f4baad857a91b2fee1cde7d3691b5f7bd51e202e6869a236c430cfd"
+    },
+    {
+      "id": "anthropic_circuits",
+      "url": "https://www.anthropic.com/research/designing-efficient-quantum-circuits",
+      "read_level": "selected_article_read_not_paper_proof",
+      "checked_at": "2026-10-27T18:18:52.602601+00:00",
+      "status": 200,
+      "resolved_url": "https://www.anthropic.com/research/designing-efficient-quantum-circuits",
+      "bytes": 247983,
+      "sha256": "34111d3dcd7c270d080ac51d3aff13e69f698c1f327ee15d1485e3b3093fd729"
+    },
+    {
+      "id": "vixra",
+      "url": "https://www.ai.vixra.org/author/lluis_eriksson",
+      "read_level": "author_index_read_only",
+      "checked_at": "2026-10-27T18:18:52.649752+00:00",
+      "status": 200,
+      "resolved_url": "https://www.ai.vixra.org/author/lluis_eriksson",
+      "bytes": 70178,
+      "sha256": "9cfc2018ff38a1f839e7c86f3d743cdbefb2b58b46c47bab6b4dd5af36fb8b7e"
+    },
+    {
+      "id": "arxiv_recent",
+      "url": "https://arxiv.org/abs/2610.29373v1",
+      "read_level": "abstract_read",
+      "checked_at": "2026-10-27T18:18:52.899107+00:00",
+      "status": 200,
+      "resolved_url": "https://arxiv.org/abs/2610.29373v1",
+      "bytes": 40131,
+      "sha256": "11721f34bee10a2c3e25fe3b6f95f5e662b24ac8dfaf009659a47b7282558af1"
+    },
+    {
+      "id": "arxiv_primitive",
+      "url": "https://arxiv.org/abs/2605.06452v1",
+      "read_level": "abstract_read",
+      "checked_at": "2026-10-27T18:18:53.163967+00:00",
+      "status": 200,
+      "resolved_url": "https://arxiv.org/abs/2605.06452v1",
+      "bytes": 41837,
+      "sha256": "97277db8f73d62ac585027de8b8207afce299519cc1124583927a979ffe2b6b0"
+    },
+    {
+      "id": "airr",
+      "url": "https://airr.science/papers/ARR-2026-77DGRYDGXD8MDSY2/versions/v2/",
+      "read_level": "public_version_context_check",
+      "checked_at": "2026-10-27T18:18:53.294233+00:00",
+      "status": 200,
+      "resolved_url": "https://airr.science/papers/ARR-2026-77DGRYDGXD8MDSY2/versions/v2/",
+      "bytes": 35941,
+      "sha256": "4bac3f13f37bba94aa8f660887a5b19b1c0976bcacd2c2d59f48a1df9ba1f66c"
+    }
+  ],
+  "exhaustive": false,
+  "foreign_bodies_saved": false,
+  "deduplication": "HanLi and BKM/RE reduction already recorded917/1035/1044; no new theorem credited from metadata. OpenAI/DeepMind commits are inventory, not proof audits. No finite-grid nonviolation is promoted to an upper.",
+  "own_synthesis": "The next needed step is a matching unrestricted BKM upper or an operationally admissible family, not an additional table of near-singular witnesses. Circuit resource optimization concerns reversible algorithms, not a transfer of this nonunitary tangent to metrology."
+}
