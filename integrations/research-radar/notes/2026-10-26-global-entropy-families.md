@@ -210,3 +210,74 @@ Literature: [Koashi--Winter Theorem1](https://arxiv.org/pdf/quant-ph/0310037v1),
 After the initial statement reading above, the entire [thermal theorem and its proof](https://github.com/openai/math/blob/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/thermal.tex) were read. Other dependency proofs remain unaudited here. The source uses alpha*delta-beta*eta=K^2. At interior input population p this is precisely r=c^2; for the retained N the mismatch is -(11/100)p(1-p), so renaming its coefficients does not remove that hypothesis.
 
 The shortcut of making the entropy excess nondecreasing as c rises from the GAD value is false. With p=1/2, r=1/4, t=1/5, identity partner, X=(1,0)^T and Y=(0,1)^T, direct eigenvalue calculus gives F_prime(3/5)<-(23/50)ln5<0. The output is strictly positive and the roof uses sqrt(c^2+t^2), retaining the translation term. [The written analytic argument](../evidence/2026-10-27-leakage889/THERMAL895.txt) uses rational square comparisons and elementary logarithm bounds, not numerical differentiation. It refutes this monotonicity route, not the desired endpoint bound, strong superadditivity or channel additivity. The next route requires a different matrix inequality or an explicit nonmonotone margin; no such theorem is established. [Version/hash ledger](../evidence/2026-10-27-leakage889/COVERAGE895.json).
+
+
+### Follow-up899--908: exact reductions, full objections and retained restrictions
+
+The newly retrieved radius-one quantum-information subgraph is context only.
+The [bounded evidence record](../evidence/2026-10-27-entropy899/README.md)
+preserves the original899, separate correction903 and full unscored audit901.
+All nine objections remain. The coefficient ray reaches alpha*delta=K^2
+while preserving the original population weights after recombination; its
+P5 comparison is sufficient for the fixed channel, not proved necessary.
+The exact dictionary B_N iff Q retains every finite quantum reference.
+Schatten differentiation must include changing block norms, so scalar
+compression positivity and integer moments do not close the missing estimate.
+
+[Audenaert2xN v2](https://arxiv.org/html/math/0702186v2) supplies a conjectural
+comparison, not an adopted universal theorem. Selected
+[Zhang v4](https://arxiv.org/html/2410.21961v4) rank-factor statements leave
+a log2 loss on differentiation. The full external proof chains and global
+current open status are not certified here. Ordinary and complete channel
+comparisons are distinguished in selected
+[Reverse-DPI v3](https://arxiv.org/html/2411.19890v3) passages; only the abstract
+and metadata of [partial-orders v4](https://arxiv.org/html/2011.05949v4) were
+read, with definitions located for further work. Exact own ensembles rule
+out either zero-offset ordering between this complement and dephasing.
+
+The own argument904 gives, in nats,
+G(rho)>=delta_e(p)-H(Z|R)>=44/125*p*(1-p)-H(Z|R), where Z is the dephased
+input and G is the original target gap. It covers arbitrary reference
+dimensions and coherences under a remaining conditional-entropy budget.
+A mixed entangled example with nonorthogonal reference branch vectors has
+a written margin41/750; its supports are distinct lines with zero
+intersection. Exact matrix controls do not replace the entropy argument.
+The exact input905 and review context are retained in the evidence record;
+no subsequent note inherits a component verdict or a manuscript grade.
+
+Separate, unreviewed907 yields G>=I(Z:R)-E_F(A:R), hence covers all separable
+inputs and recovers pure inputs. The balance condition is not established
+for all mixed entangled states. Separate908 gives an analytical uniform
+margin14179/1624320 along a standard two-qubit isotropic line for every
+noise parameter in[0,1], using entropy concavity, a binary variational bound,
+majorization and exact integer comparisons. Earlier restricted-partner
+coverage is not excluded; these are controls for one target, not separate
+frontier papers. Fixed-marginal convexity and concavity shortcuts are both
+explicitly refuted in903 without refuting Q itself.
+
+Hypothesis audit: exact orthogonality of the reference branches can be
+replaced by a quantitative information budget in904. Arbitrary finite
+dimension survives; the budget and the unresolved mixed-entangled region
+remain. Mechanism: phase pinching isolates coherence cost, SSA bounds the
+dephased reference contribution, and scalar curvature retains population p.
+Falsifier: a wrong sign, covariance/curvature identity, or exact state
+violating the scoped bound; a covering antecedent retires novelty.
+Formal layer: no new Lean theorem or confidence promotion. Literature layer:
+attributed standard entropy tools and explicitly scoped primary statements.
+Heuristic layer: balance reference information against coherence loss.
+Speculative layer: the universal P5/Q comparison and arbitrary-partner payoff.
+No new manuscript, model importance grade, human peer review or acceptance
+is asserted. These bounded logs are not a Research Capsule or full corpus.
+
+
+The full [component audit906](../evidence/2026-10-27-entropy899/AUDIT906.txt)
+supports the explicit904 budget with all seven objections retained. Missing
+definitions and dependencies were reconstructed, and nonorthogonal support
+lines were distinguished from intersecting subspaces. This is no importance
+grade or review of later notes. The [scope gate910](../evidence/2026-10-27-entropy899/PROOF910.txt)
+uses [Wootters v2, equations8--10](https://arxiv.org/html/quant-ph/9709029v2)
+as an attributed formula: at isotropic v=4/5 both the904 and907 sufficient
+bounds are negative, while908 certifies its uniform positive margin. Exact
+series/integer comparisons establish this distinction; no worldwide novelty
+is inferred. The earlier pure-branch example904 is also covered by907 and
+is not counted as a separate advance over that bound.

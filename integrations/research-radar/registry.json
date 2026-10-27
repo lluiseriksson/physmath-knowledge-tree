@@ -714,6 +714,51 @@
       "anchors": [
         "domain.quantum_information_theory"
       ]
+    },
+    {
+      "id": "audenaert-2xn-2007-scoped",
+      "title": "On a Norm Compression Inequality for 2XN Partitioned Block Matrices",
+      "url": "https://arxiv.org/html/math/0702186v2",
+      "kind": "preprint",
+      "observed_on": "2026-10-27",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "The2xN norm-compression conjecture and selected special-case statements were read; its left derivative at Schatten order2 gives a conditional entropy comparison when the block norms are also differentiated.",
+      "limits": "The full conjecture is not a theorem used here. Rank-one/proportional special cases and exponents at least4 do not establish the general repeated-block P5 entropy inequality. No full proof or worldwide status audit.",
+      "reuse": "Bibliographic metadata and original synthesis only; no foreign full text redistributed or corpus permission inferred.",
+      "anchors": [
+        "domain.quantum_information_theory"
+      ]
+    },
+    {
+      "id": "hirche-partial-orders-2022-scoped",
+      "title": "On contraction coefficients, partial orders and approximation of capacities for quantum channels",
+      "url": "https://arxiv.org/html/2011.05949v4",
+      "kind": "preprint",
+      "observed_on": "2026-10-27",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "The publisher abstract and version metadata describe quantum less-noisy orders and contraction coefficients; definitions were located as prospective tools. Component reviewer906 additionally read Section2.1 discussion and Lemma2.1 with proof; some rendered definition boxes were absent.",
+      "limits": "No full paper audit or automatic transfer from ordinary to complete quantum-reference comparison. Missing rendered definitions are not claimed audited; root and reviewer reading depths differ and are logged.",
+      "reuse": "Metadata and original synthesis only; no source bodies or corpus eligibility inferred.",
+      "anchors": [
+        "domain.quantum_information_theory"
+      ]
+    },
+    {
+      "id": "belzig-reverse-dpi-v3-scoped",
+      "title": "Reverse-type Data Processing Inequality",
+      "url": "https://arxiv.org/html/2411.19890v3",
+      "kind": "preprint",
+      "observed_on": "2026-10-27",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Section4.1 Lemma4.1 statement and BKM setup, and Section7 Definition7.1/discussion distinguish ordinary relative comparison from complete auxiliary-system comparisons. Reviewer906 also examined the proof of Lemma4.1; the full reading scope is retained in READINGS906.",
+      "limits": "No full paper audit or claim that specialized comparisons hold for N_hat and dephasing. Explicit own ensembles refute either zero-offset ordering. Source comparison tools do not instantiate the missing reference-dependent estimate.",
+      "reuse": "Bibliographic metadata and own synthesis only; no foreign text redistribution or corpus permission implied.",
+      "anchors": [
+        "domain.quantum_information_theory"
+      ]
     }
   ],
   "candidates": [
@@ -995,18 +1040,21 @@
       "source_ids": [
         "openai-family276-scoped",
         "tang-qubit-support-2026-scoped",
-        "shirokov-classical-continuity-2022-scoped"
+        "shirokov-classical-continuity-2022-scoped",
+        "audenaert-2xn-2007-scoped",
+        "hirche-partial-orders-2022-scoped",
+        "belzig-reverse-dpi-v3-scoped"
       ],
       "node_ids": [
         "domain.quantum_information_theory"
       ],
       "dictionary": "Partner-channel Kraus columns map branch states to arbitrary normalized rectangular X,Y; computational population p is retained in the fixed channel axial roof.",
       "preserved": "CPTP partner, pure joint inputs, original computational basis population, arbitrary finite output dimension and the distinction between one-step sufficient entropy inequality and channel additivity.",
-      "lost_or_unproved": "No universal rectangular bound, arbitrary-partner theorem, tensor-power formula, global open-status/novelty certificate or exact numerical certificate. The480 qubit-input float probes are diagnostics only.",
+      "lost_or_unproved": "No universal rectangular bound, arbitrary-partner theorem, tensor-power formula, global open-status/novelty certificate or exact numerical certificate. The480 qubit-input float probes are diagnostics only. The P5 hypothesis, mixed-entangled-reference balance and global novelty remain unproved. Conditional reference distinguishability, separability and the isotropic line are restrictions, not arbitrary-partner additivity.",
       "hypothesis_to_remove": "Remove the restricted partner-family rectangle for fixed N=(3/5,1/4,1/5), if a uniform rectangular entropy theorem can be proved. This N violates the source GAD relation c^2=r.",
       "falsifier": "An exact negative rectangular entropy instance refutes the proposed sufficient mechanism; a preceding theorem covering this N defeats the novelty route. Neither automatically refutes channel additivity.",
-      "next_finite_task": "The source thermal proof requires c^2=r. The uniform nondecreasing-excess shortcut is analytically refuted at c=3/5 even for the identity partner. Seek a genuinely different rectangular estimate or a quantified nonmonotone margin, with exact falsifiers before a manuscript; do not repeat float grids.",
-      "review_packet": "Own conditional leakage derivation889 is unreviewed and not selected as a frontier paper; exact rational partial-trace controls890 and floating diagnostic892 are recorded in the evidence sidecar. No model score. Follow-up895 gives exact missing coefficient -(11/100)p(1-p) and the analytic derivative bound F_prime(3/5)<-(23/50)ln5. This refutes only a monotonic transfer mechanism, not channel additivity. No new review or score."
+      "next_finite_task": "The actual missing core is a sharp repeated-block P5 inequality or an equivalent bound for arbitrary mixed quantum references. Conditional reference budgets and separable/isotropic cases are written, but do not remove the excluded mixed-entangled-reference region. Check full component audit and novelty before any manuscript; avoid repeated float grids.",
+      "review_packet": "Own conditional leakage derivation889 is unreviewed and not selected as a frontier paper; exact rational partial-trace controls890 and floating diagnostic892 are recorded in the evidence sidecar. No model score. Follow-up895 gives exact missing coefficient -(11/100)p(1-p) and the analytic derivative bound F_prime(3/5)<-(23/50)ln5. This refutes only a monotonic transfer mechanism, not channel additivity. No new review or score. Component audit901 validates reductions with nine preserved objections, no score. Original899/corrected903/input905 are bound in evidence899. Audit906 status is explicitly recorded there. Post907 and908 are separate unreviewed extensions. No new PDF, grade or canonical formal promotion. Audit906 is now complete: the scoped bound is supported with seven objections and no grade. Its exact report/input hashes are in evidence899. No review extends to the later907/908/910 notes."
     }
   ],
   "source_refresh": {

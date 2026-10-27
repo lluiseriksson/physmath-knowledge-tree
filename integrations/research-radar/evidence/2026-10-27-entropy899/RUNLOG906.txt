@@ -1,0 +1,36 @@
+RUNLOG906 — execution and limitations
+
+1. D:/LEEME.md read; expected INPUT905 SHA256 matched before manifest read.
+2. All three payload SHA256 and sizes matched before payload content read.
+3. Entire PROOF904.txt, CHECK904.json, check905.py inspected.
+4. Supplied check905.py run with Python -B; exit 0; stdout captured in tool
+   history and transcribed in CHECK905_RUN.json. It was not modified.
+5. C: free space observed before creating output directories: 328004014080
+   bytes, above the owner's 100 GB threshold. No worktree was created.
+6. Only the two specifically authorized new output directories were created.
+7. Independent controls906.py was built around a Stinespring isometry,
+   partial traces, a reconstructed Bloch map and explicit scalar differentiation.
+8. Initial execution of that controller exited 1 on the diagnostic criterion
+   min(chord_margins) > -1e-65. Diagnosis: emp(0) and emp(1) received Python
+   integers, making zz/10 a binary float before mpmath conversion, while grid
+   arguments were mp.mpf. This contaminated endpoint consistency at approximately
+   binary-float precision. The function was fixed to cast p=mp.mpf(p) immediately.
+   The criterion was NOT relaxed. No mathematical claim or original file changed.
+9. Corrected controls exited 0. A further identical run persisted stdout as
+   CONTROLS906.json. This rerun was for artifact capture, not broadened testing.
+10. Analytic proofs, not numerical sampling, justify all-dimensional conclusions.
+    NumPy diagnostics use tolerance 2e-9 and support threshold 1e-13. Very small
+    negative slacks around 1e-16 are roundoff. This is not interval arithmetic.
+11. No old audit, advance904, ESTADO, grades, other chats, or repository source
+    was read. No existing project file, state, PDF, remote publication, or git
+    reference was edited. No new manuscript was authored.
+12. Requested model/effort: GPT-6 Astra / xhigh. Effective identity and effort
+    not independently verified. One reviewer, no delegation, shared filesystem.
+13. seal906.py rechecks immutable input hashes, records INPUT_VERIFY906.json,
+    copies every final audit file to the authorized D directory, compares bytes,
+    records CD_VERIFY906.json, and creates MANIFEST906.json with payload hashes.
+    The manifest excludes only itself. Its SHA256 and final all-file equality
+    are printed after a final comparison including the manifest and verifier.
+14. All final files are present identically in C and D. C is a temporary audit
+    copy; D is the retained delivery. No worktree removal or deletion was needed
+    for this non-code audit; no audit artifact remains only in C.

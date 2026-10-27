@@ -1,0 +1,119 @@
+REFERENCE-DISTINGUISHABILITY BUDGET904
+2026-10-27. Own analytical extension after audit901; NOT included in that
+audit, not formally verified, no priority certificate or manuscript grade.
+Same fixed N=(c,r,t)=(3/5,1/4,1/5). Finite dimensions, nats throughout.
+
+1. Quantifiers and remaining hypothesis
+For any finite reference R and any rho_AR, let p=Tr rho_A|1><1| and
+sigma_AR=(Delta_Z tensor id_R)rho. Let tau_ER=(N_hat tensor id_R)rho and
+bar_tau_ER=(N_hat tensor id_R)sigma. Write
+kappa=H(Z|R)_sigma, e_i=e_N(i),
+delta_e(p)=(1-p)e_0+p e_1-e_N(p), f_N=e_N-h.
+Define G(rho)=S(tau_ER)-S(sigma_AR)-f_N(p), the exact target gap.
+
+THE OWN BOUND:
+ G(rho) >= delta_e(p)-kappa
+          >= (44/125)p(1-p)-kappa.                       (904a)
+Consequently Q holds for ALL such rho satisfying
+ H(Z|R)_sigma <= (44/125)p(1-p).                        (904b)
+Arbitrary finite reference dimension, arbitrary off-diagonal blocks and
+singular branches are retained. The conditional-entropy restriction is
+NOT eliminated. This is not the universal Q or arbitrary-partner theorem.
+
+2. Proof of the dephased comparison
+For 0<p<1, sigma=(1-p)|0><0| tensor rho_R^0+
+p|1><1| tensor rho_R^1. Let E_i=N_hat(|i><i|), whose entropy is e_i by
+Stinespring complementarity. Form the classical flagged state
+xi_ZER=sum_i p_i |i><i| tensor E_i tensor rho_R^i.
+Its ER marginal is bar_tau and its ZR marginal is sigma. Direct-sum entropy
+identities give EXACTLY
+ S(bar_tau)-S(sigma)=(1-p)e_0+p e_1-H(Z|ER)_xi.
+Strong subadditivity yields H(Z|ER)_xi<=H(Z|R)_xi=kappa. Hence
+ S(bar_tau)-S(sigma)>=(1-p)e_0+p e_1-kappa.             (904c)
+This alone is not the strongest available bound on diagonal inputs:
+conditioning also gives H(Z|ER)<=H(Z|E), so
+ S(bar_tau)-S(sigma)>=S(N_hat(diag(1-p,p)))-h(p)
+ >= e_N(p)-h(p), using same-latitude decomposition and entropy concavity.
+Thus Q holds on ALL A-diagonal states even with noncommuting R branches.
+The last statement does not justify dephasing a general input for a lower
+bound: the next entropy difference has the opposite sign.
+
+3. Exact phase pinching and coherence cost
+Choose the explicit four-Kraus Stinespring in check901/recheck901:
+two diagonal Kraus, one upper off-diagonal and one lower off-diagonal.
+W_E=diag(1,1,-1,-1) obeys
+ N_hat(Z_A rho Z_A)=W_E N_hat(rho) W_E.
+Therefore bar_tau=P_W(tau), where P_W(T)=(T+W T W)/2 (with id_R).
+The pinching entropy identity gives
+ S(bar_tau)-S(tau)=D(tau||bar_tau).
+By relative-entropy data processing,
+ 0<=D(tau||bar_tau)<=D(rho||sigma)=S(sigma)-S(rho)<=h(p). (904d)
+The last projective-measurement entropy increase is at most the outcome
+entropy h(p): isometrically copy Z to a new register C; its entropy is h(p),
+and Araki--Lieb on the copied state gives the assertion. Supports pose no
+problem since rho<=2 sigma and tau<=2 bar_tau; use 0 log0 conventions.
+Combining 904c and 904d and subtracting f_N proves the first 904a.
+For p=0,1, rho has only one A branch, so G=0 and kappa=0 directly.
+
+4. Rational uniform curvature margin
+The audited scalar calculation901 gives, for z=1-2p,
+ e_N''(z)>=A(1-Q)/(1-q(z))>=A(1-Q),
+ A=119/400, Q=243/595. Thus e_N''(p)>=4A(1-Q)=88/125.
+Subtracting (44/125)p^2 leaves a convex function. The chord inequality
+then gives delta_e(p)>=(44/125)p(1-p), including endpoints.
+This uses the full p dependence rather than a constant minimum entropy.
+
+5. Mixed entangled quantum-reference example with overlapping supports
+Let r_0=|0>, r_1=(|0>+sqrt15|1>)/4 and
+|psi+/->=(|0>r_0 +/- |1>r_1)/sqrt2.
+rho=(3/4)|psi+><psi+|+(1/4)|psi-><psi-| has p=1/2,
+is mixed, and is entangled (the exact partial-transpose determinant is
+negative, recorded in CHECK904). Its two diagonal R branches are pure
+but NOT orthogonal: overlap=1/4. Thus it is neither A-diagonal nor a
+classical-reference state. Its kappa=log2-h(5/8).
+For x in[0,1), log2-h((1+x)/2)=integral_0^x atanh(t)dt
+ <=x^2/[2(1-x^2)], since atanh(t)<=t/(1-t^2)<=t/(1-x^2).
+At x=1/4, kappa<=1/30. Hence (904a) certifies
+ G(rho)>=11/125-1/30=41/750>0 nats.
+The proof actually covers every admissible off-diagonal block for these
+same diagonal blocks, not just this finite example. No float search or
+sample-to-universal inference is used.
+
+6. Channel-comparison gates
+Zero-offset mutual-information ordering between N_hat and Delta_Z fails
+in BOTH directions, already with classical auxiliaries of size2 and
+average input I/2. The Z-basis ensemble has
+I(U:E)=chi(E_0,E_1)<=h(4/5)<log2=I(U:Z), by903.
+The X-basis ensemble |+>,|-> has I(U:Z)=0 and
+I(U:E)=S(N_hat(I/2))-e_N(1/2)>0.
+Indeed the entropy-exchange state has purity729/1600<1/2, so
+S(N_hat(I/2))>=-log(729/1600)>log2>=e_N(1/2).
+Thus simple less-noisy ordering cannot supply the state-dependent Q gap.
+The same X ensemble also excludes a finite uniform multiplicative upper
+bound I(U:E)<=C I(U:Z). This says nothing against comparison tools with
+an additive or state-dependent allowance.
+
+7. Scope, dependence and falsifier
+Formal layer: no new Lean theorem. Literature layer: SSA, entropy data
+processing, pinching entropy identity, axial scalar roof. Heuristic layer:
+try balancing the diagonal conditional-entropy deficit with coherence loss.
+Speculative layer: replacing (904b) by a tradeoff valid for all rho_AR;
+this is still the missing estimate, not a result.
+New written contribution here: the explicit budget and its rational margin
+on a mixed, entangled, nonorthogonal-branch reference subclass. No verified
+novelty or independent-paper significance is claimed for this corollary.
+Falsifier: a failed covariance identity, curvature coefficient, entropy
+inequality direction, or input satisfying904b with G<0. A covering prior
+theorem removes novelty but does not erase the scoped derivation.
+No score, PDF, deposit or administrative publication is created.
+
+SELECTED PRIMARY READING THIS ROUND
+Hirche--Rouze--Stilck Franca, arXiv2011.05949v4 / Quantum6,862 (2022):
+publisher abstract and version metadata; partial-order definitions located,
+not full theorem/proof audit. https://arxiv.org/html/2011.05949v4
+Belzig--Gao--Smith--Wu, arXiv2411.19890v3: Section4.1 Lemma4.1 statement
+and BKM integral setup; Section7 Definition7.1 and surrounding discussion
+read. They distinguish ordinary from complete comparisons. No source
+theorem automatically applies to our arbitrary quantum reference, and no
+new tensorization follows. https://arxiv.org/html/2411.19890v3
+These are directed readings, not an exhaustive state-of-art certificate.

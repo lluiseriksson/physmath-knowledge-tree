@@ -1,0 +1,101 @@
+{
+  "passed": true,
+  "nature": "Exact finite algebra plus diagnostic numerical probes; not formal proof or universal numerical certificate.",
+  "versions": {
+    "python": "3.12.6",
+    "sympy": "1.14.0",
+    "numpy": "2.2.6",
+    "mpmath": "1.3.0"
+  },
+  "exact": {
+    "trace_preserving": true,
+    "bloch_map": "(x,y,z) -> (3x/5,3y/5,z/4+1/5)",
+    "stinespring_covariance": true,
+    "covariant_matrix_units": [
+      "00",
+      "01",
+      "10",
+      "11"
+    ],
+    "q_z": "-119*z**2/400 + z/10 + 2/5",
+    "q_max": "243/595",
+    "vertex": "20/119",
+    "q_endpoints": [
+      "1/400",
+      "81/400"
+    ],
+    "curvature_p_lower": "88/125",
+    "chord_coefficient": "44/125",
+    "partial_transpose_determinant": "-225/16384",
+    "rho_spectrum_with_multiplicity": {
+      "0": 2,
+      "1/4": 1,
+      "3/4": 1
+    },
+    "rho_R_spectrum": [
+      "3/8",
+      "5/8"
+    ],
+    "rho_A": "Matrix([[1/2, 1/16], [1/16, 1/2]])",
+    "branch_overlap_amplitude": "1/4",
+    "rank_of_branch_span": 2,
+    "purification_overlap_Z": "3/5",
+    "complement_average_purity": "729/1600",
+    "complement_average_spectrum": {
+      "5/16 - sqrt(37)/20": 1,
+      "sqrt(37)/20 + 5/16": 1,
+      "19/80": 1,
+      "11/80": 1
+    },
+    "claimed_margin": "41/750"
+  },
+  "scalar_numeric": {
+    "precision_decimal_digits": 70,
+    "p_grid_size": 101,
+    "max_derivative_disagreement": "1.204405317483952744878712865688076306830776649352505379214487780361422e-69",
+    "minimum_curvature_excess_over_88_125": "0.1640078458016198619189106519716567820548391600842302218113009013067165",
+    "minimum_chord_excess": "0.0"
+  },
+  "matrix_numeric": {
+    "seed": 90620261027,
+    "reference_dimensions": [
+      1,
+      2,
+      3,
+      5
+    ],
+    "total_states": 369,
+    "diagonal_states": 128,
+    "endpoint_states": 8,
+    "budget_eligible_states": 93,
+    "minimum_slacks": {
+      "budget_slack": -5.551115123125783e-16,
+      "rational_budget_slack": -5.551115123125783e-16,
+      "diagonal_gap": -5.551115123125783e-16,
+      "coherence_dpi_slack": 0.0,
+      "outcome_entropy_slack": -7.424616477180734e-16,
+      "eligible_gap": -5.551115123125783e-16
+    },
+    "max_relative_entropy_identity_error": 1.5543122344752192e-15,
+    "acceptance_tolerance": 2e-09,
+    "example": {
+      "p": 0.5,
+      "kappa": 0.03158394240196316,
+      "delta_e": 0.16296715776947396,
+      "G": 0.7139995390651621,
+      "coherence_loss": 0.12377619096166614,
+      "input_coherence": 0.130812035941137,
+      "budget_bound": 0.1313832153675108,
+      "rational_bound": 0.056416057598036834
+    },
+    "less_noisy_Z": {
+      "I_U_E": 0.31234406645123225,
+      "I_U_Z": 0.6931471805599453,
+      "upper_bound": 0.5004024235381879
+    },
+    "less_noisy_X": {
+      "I_U_E": 0.4753112242207062,
+      "I_U_Z": 0.0
+    }
+  }
+}

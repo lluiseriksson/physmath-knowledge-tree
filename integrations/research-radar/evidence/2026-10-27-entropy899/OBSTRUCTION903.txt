@@ -1,0 +1,55 @@
+FIXED-MARGINAL OBSTRUCTION903 — OWN ANALYTICAL WORK, NOT REVIEWED
+2026-10-27. Same channel N, c=3/5,r=1/4,t=1/5. All entropies in nats.
+No universal Q proof or counterexample to Q; no new paper or grade.
+
+Let F(rho_AR)=S((N_hat tensor id)rho)-S((Delta_Z tensor id)rho).
+Even on the affine slice rho_A=I/2, with R a single qubit, F is neither
+convex nor concave. The same is true of the target gap F-f_N(1/2), since
+the subtraction is constant on this slice. This rules out BOTH elementary
+Jensen reductions on this fixed-marginal domain. It does not exclude other
+variational arguments or concavity on a different restricted family.
+
+A. Strict failure of convexity.
+Take rho_+=|Phi+><Phi+| and rho_-=|Phi-><Phi-|, with
+|Phi+/->=(|00> +/- |11>)/sqrt2. Both have rho_A=I/2.
+Each global AR is pure. Complementarity gives
+F(rho_+)=F(rho_-)=h(3/5)-log2, since N(I/2)=diag(3/5,2/5).
+Their midpoint tau_0=(|00><00|+|11><11|)/2 is classical on R.
+F(tau_0)=[h(29/40)+h(19/40)]/2=:a>0.
+Since h(3/5)<log2, F(tau_0)>[F(rho_+)+F(rho_-)]/2 strictly.
+
+B. Strict failure of concavity with the SAME fixed marginal.
+Take tau_0 above and tau_1=(|01><01|+|10><10|)/2. Both are classical
+on R, both have F=a, and their midpoint is omega=I_A/2 tensor I_R/2.
+Put E_i=N_hat(|i><i|). Then
+F(omega)-a=chi({1/2,E_0;1/2,E_1})-log2.
+
+Here is a direct strict upper bound, avoiding an assumed equality case
+of the Holevo bound. Choose Stinespring vectors v_i=V|i> on output B,E.
+The two vectors v_0 and (sigma_x tensor I_E)v_1 purify E_0,E_1. Their
+inner product is c=3/5: it is Tr[sigma_x N(|1><0|)]. The equally weighted
+mixture of these two pure vectors has entropy h((1+c)/2)=h(4/5).
+Monotonicity of the Holevo quantity under tracing B (relative entropy
+data processing) therefore gives chi(E_0,E_1)<=h(4/5)<log2.
+Consequently F(omega)<a with a certified margin at least
+log2-h(4/5)>0. Thus concavity fails already inside classical-reference
+states, notwithstanding that Q itself holds for every such state.
+
+C. Why this changes the next action, not the claimed theorem.
+The global bound Q can hold for a functional with neither curvature.
+These examples only refute a proposed proof shortcut. In particular,
+classical-reference validity is not extended to mixed quantum R by
+ordinary convexity or concavity on the fixed-marginal slice. Nor does
+this provide a finite reference-dimension cutoff or refute additivity.
+The missing P5-E / Q inequality remains the substantive target.
+
+DEPENDENCIES AND READING SCOPE
+Entropy of orthogonal direct sums; Stinespring complementarity; binary
+pure-ensemble spectrum; relative-entropy data processing for Holevo chi.
+Context primary source: Roga, Fannes, Zyczkowski, PRL105,040505 (2010),
+https://doi.org/10.1103/PhysRevLett.105.040505 . Only publisher abstract
+and bibliographic metadata were read in this round. Its exchange-entropy
+bound is context, not imported as an audited full proof. The explicit
+two-purification argument above supplies the bound used here.
+This is an elementary scoped obstruction, not a claim of original theorem
+or independent frontier-paper significance. No change to canonical graph.

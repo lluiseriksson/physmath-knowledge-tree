@@ -1,0 +1,60 @@
+ISOTROPIC-LINE ENTROPY GAP908 — OWN WORKING PROOF, NOT REVIEWED
+Same N=(3/5,1/4,1/5), nats; no new paper, grade or priority claim.
+Let rho_v=v|Phi+><Phi+|+(1-v)I_4/4, every real v in[0,1].
+The exact target gap is G_v=S((N_hat tensor id)rho_v)
+ -S((Delta_Z tensor id)rho_v)-e_N(1/2)+log2.
+
+CLAIM ON THIS LINE ONLY:
+ G_v>=14179/1624320>0 nats, uniformly in v.             (908)
+This proves Q on this full continuum without imposing the entanglement-
+of-formation balance907 or the distinguishability condition904b.
+It is NOT a theorem for all states with marginal I/2 or all mixed references.
+
+Proof. Put a=S(N_hat(I/2)), b=S(N(I/2))-log2 and e=e_N(1/2).
+At v=0 output entropy is a+log2; at v=1 it is b+log2 by
+complementarity. Entropy concavity and the exact measured spectrum give
+ G_v >= (1-v)a+vb-h((1+v)/2)-e+log2.
+For Delta=a-b>0, the binary Gibbs variational identity implies
+ h((1+v)/2)+v Delta <= log(2 cosh Delta).
+Hence G_v>=a-log cosh(a-b)-e for ALL v in[0,1]. No finite-grid inference.
+
+All three constants admit rational/logarithmic bounds:
+(i) The entropy-exchange eigenvalues are
+ [(25+4sqrt37)/80,19/80,11/80,(25-4sqrt37)/80].
+They are majorized by q=[5/8,19/80,11/80,0], in decreasing order.
+Thus a>=H(q)>log(12/5). The latter comparison is the exact integer check
+ (8/5)^50*(80/19)^19*(80/11)^11 > (12/5)^80.
+(ii) N(I/2)=diag(3/5,2/5), so b=h(3/5)-log2.
+Using log2-h((1+x)/2)=integral_0^x atanh(t)dt
+ <=x^2/[2(1-x^2)] at x=1/5 gives b>=-1/48>=log(47/48).
+(iii) The pure equatorial output squared radius is c^2+t^2=2/5.
+Since atanh(t)>=t, the same integral identity gives
+ e=h((1+sqrt(2/5))/2)<=log2-1/5.
+
+The function a-log cosh(a-b) increases in a, and increases in b whenever
+a>b. This condition holds both for the actual pair and throughout the
+interpolation to the lower bounds in(i)/(ii). Therefore, with A=12/5,
+B=47/48 and R=B/(1+(B/A)^2),
+ G_v >= 1/5+log R
+      >= 6/5-1/R
+       = 6/5-48/47-1175/6912
+       = 14179/1624320>0.
+The log inequality used is log R>=1-1/R, valid for R>0.
+
+Scope and verification:
+Exact spectrum, majorization, the integer comparison and the final
+rational constant are checked in prove908.py/CHECK908.json. Entropy
+concavity, Schur concavity and the two elementary integral inequalities
+are the analytical premises above; no floating entropy certificate is used.
+All maximally entangled two-qubit vectors in place of Phi+ give the same
+claim by a unitary on R, since white noise and entropy are invariant.
+No other locally filtered states or arbitrary-dimensional partners follow.
+In larger R one may separately analyze flagged orthogonal sectors, but
+that extension is not needed or claimed as a new result here.
+The isotropic line is a standard family. Its coverage by earlier own or
+external restricted-partner results has not been excluded. This is a
+controlled test family for the still unproved universal estimate, not
+a selected independent frontier paper. Audit906 concerns input904 only;
+908 was written afterwards and is NOT covered by that review.
+Falsifier: a failed endpoint entropy identity, majorization comparison,
+Legendre-transform direction, or a state rho_v with gap below908.

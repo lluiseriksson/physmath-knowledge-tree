@@ -1,0 +1,71 @@
+{
+  "utc": "2026-10-27T08:43:50.217894+00:00",
+  "passed": true,
+  "python_version": "3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)]",
+  "sympy_version": "1.14.0",
+  "reproduced_cases_equal_frozen_CHECK900": true,
+  "noncommuting_rational_controls": [
+    {
+      "lambda": "1/4",
+      "alpha_delta_minus_K2": "423/4000",
+      "source_identity_defect": "207/2000",
+      "positive_LDL_pivots": [
+        "21471/105625",
+        "298826928/755958125",
+        "8085732539/175353301500",
+        "20703089152248/170811099886375"
+      ]
+    },
+    {
+      "lambda": "1/2",
+      "alpha_delta_minus_K2": "33/500",
+      "source_identity_defect": "57/1000",
+      "positive_LDL_pivots": [
+        "20127/105625",
+        "285830832/708638125",
+        "304594631/5529465500",
+        "508150712676/3464763927625"
+      ]
+    },
+    {
+      "lambda": "3/4",
+      "alpha_delta_minus_K2": "123/4000",
+      "source_identity_defect": "21/2000",
+      "positive_LDL_pivots": [
+        "18783/105625",
+        "89823504/220439375",
+        "10107799043/158126793500",
+        "34266542273928/213527254783375"
+      ]
+    },
+    {
+      "lambda": "9/10",
+      "alpha_delta_minus_K2": "147/12500",
+      "source_identity_defect": "-87/5000",
+      "positive_LDL_pivots": [
+        "89883/528125",
+        "716776368/1758128125",
+        "436348435361/6309125322500",
+        "7592668842916836/46089303485005625"
+      ]
+    },
+    {
+      "lambda": "1",
+      "alpha_delta_minus_K2": "0",
+      "source_identity_defect": "-9/250",
+      "positive_LDL_pivots": [
+        "17439/105625",
+        "249745968/613998125",
+        "10643919111/146552321500",
+        "4151972448012/24983643468875"
+      ]
+    }
+  ],
+  "midpoint_radical_and_population_accounting": true,
+  "general_polynomial_channel_identities": true,
+  "complex_finite_stinespring_and_complement_charpoly": true,
+  "entropy_comparison_computed": false,
+  "universal_inequality_proved": false,
+  "scope": "Exact finite algebra and general polynomial identities only; entropy arguments are audited analytically in AUDIT901.txt.",
+  "script_sha256": "7d103e65712e7c0cfb24de52f19c714a1fb1fc9c7504d96ef612525757ca364c"
+}

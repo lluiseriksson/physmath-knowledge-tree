@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "sympy": "1.14.0",
+  "partial_transpose_determinant": "-225/16384",
+  "example_rank": 2,
+  "reference_spectrum": [
+    "5/8",
+    "3/8"
+  ],
+  "complement_purity": "729/1600",
+  "phase_covariance_all_four_matrix_units": true,
+  "curvature_lower_bound": "88/125",
+  "example_gap_lower_bound_nats": "41/750",
+  "scope": "Finite exact algebra plus written entropy proof; no universal Q proof or model assessment."
+}

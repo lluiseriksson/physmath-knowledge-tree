@@ -1,0 +1,43 @@
+POST-INPUT907: ENTANGLEMENT/CORRELATION SUFFICIENT CONDITION
+Own analytical working argument, not in input905 or audit906. No score.
+Same finite-dimensional qubit A, arbitrary finite R, channel N and notation
+G= S(N_hat tensor id rho)-S(Delta_Z tensor id rho)-e_N(p)+h(p).
+
+The scalar function e_N(p) is convex and S(N(rho_A))>=e_N(p) for every
+qubit rho_A with population p, by the output-radius bound. For every rho_AR,
+
+ G(rho_AR) >= I(Z:R)_(Delta rho) - E_F(A:R)_rho.          (907)
+
+Proof. Choose any pure ensemble rho_AR=sum_j w_j |psi_j><psi_j|.
+Let rho_A^j have population p_j, and apply the pure-environment isometry
+of N. Since the branch BER state is pure,
+ S(E|R)_j=S(N(rho_A^j))-S(rho_A^j)>=e_N(p_j)-S(rho_A^j).
+Conditional-entropy concavity, then scalar Jensen, give
+ S(E|R)_rho>=sum_j w_j[e_N(p_j)-S(rho_A^j)]
+            >=e_N(p)-sum_j w_j S(rho_A^j).
+Take ensembles approaching the entanglement-of-formation infimum. No
+attainment or fixed reference-dimension bound is needed. Thus
+ S(E|R)>=e_N(p)-E_F(A:R).
+The measured state's H(Z|R)=h(p)-I(Z:R). Subtract this identity to prove907.
+Entropies and E_F use nats; E_F refers to input A:R, not output E:R.
+
+Consequences with honest hypotheses:
+* Q holds for ALL separable rho_AR, since E_F=0 and I(Z:R)>=0. This extends
+  the previously written classical-reference case to arbitrary separable
+  states with nonorthogonal quantum-reference components.
+* Q holds for every pure rho_AR: conditional R branches are pure, hence
+  I(Z:R)=S(rho_R)=E_F(A:R), in any measurement basis on A.
+* More generally, E_F(A:R)<=I(Z:R) is a sufficient input condition. No
+  assertion that it holds for all mixed entangled states is made.
+* Combining with904a gives the global lower bound
+  G>=max{delta_e(p)-H(Z|R), I(Z:R)-E_F(A:R)}.
+  This does not imply G>=0 when both displayed quantities are negative.
+
+The two bounds address different input restrictions. Neither removes the
+mixed-entangled-reference core. They are scoped deductions from standard
+SSA, the convex-roof definition and the audited scalar roof, not a new
+manuscript or certified novel theorem. No worldwide priority assertion.
+Falsifier: failure of conditional-entropy direction, pure complementarity,
+scalar convexity, ensemble-infimum step, or a state violating907. A covering
+antecedent retires novelty rather than being renamed a new discovery.
+No new external source was read specifically for907. No Lean formalization.

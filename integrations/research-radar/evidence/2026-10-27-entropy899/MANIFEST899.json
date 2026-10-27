@@ -1,0 +1,177 @@
+{
+  "scope": "Own bounded analytical/control records, not a Research Capsule, new manuscript, or numerical assessment. No foreign full text.",
+  "audit901": "Unscored component review of exact original899; all nine objections retained.",
+  "audit906": "Completed unscored component review of exact input905/PROOF904. Full report, seven objections, reading scopes, finite diagnostics and failed-harness incident retained. Does not review907/908/910.",
+  "files": [
+    {
+      "path": "PROOF899.txt",
+      "native_sha256": "f3d705673d176269cfa176e34deaded00d7ce46718cd97d18372d50c8b57268f",
+      "public_sha256": "f3d705673d176269cfa176e34deaded00d7ce46718cd97d18372d50c8b57268f",
+      "normalization": "none"
+    },
+    {
+      "path": "PROOF903.txt",
+      "native_sha256": "c3ba0cf0366025824b05d029b38ece249ebdeb5ef617fbc975b699f1e090ef7b",
+      "public_sha256": "3ddc77209b752be20554cd6a9da7bc90210b35a3ecf0a807981f3695db043ee4",
+      "normalization": "CRLF to LF only"
+    },
+    {
+      "path": "ERRATA903.json",
+      "native_sha256": "adcdf57e7c77190b95a435fc4a1b0f107906f32051f6195605bbc1238d1f6456",
+      "public_sha256": "3ff1c527c18a34f6707467ffb5cb78d19f69bddd388f8050c5cf869def33c443",
+      "normalization": "CRLF to LF only"
+    },
+    {
+      "path": "OBSTRUCTION903.txt",
+      "native_sha256": "a6d49ea2d5d6510087fe04764fb70bd5556e24a323bed2a32d8aa8dfad1aecb1",
+      "public_sha256": "162210e95ef8225817f4757904114cc3e9a15fcc76c3e31f2f5d93b4144e04a0",
+      "normalization": "CRLF to LF only"
+    },
+    {
+      "path": "CHECK903.json",
+      "native_sha256": "6845401c54972fc35326a24a85f54f7ae8b1f857c3b537bbfbe90a129ebe8316",
+      "public_sha256": "fbd3788f321d74d4deb419992b6554842c27f9bbacb990a5a9ba49aabb278ea3",
+      "normalization": "CRLF to LF only"
+    },
+    {
+      "path": "PROOF904.txt",
+      "native_sha256": "efa15bc00e137619c84e8e2d73511e40e8882f37e98796c7fd9ca37d062ae6ee",
+      "public_sha256": "50258bc031e4e780e7b8cad5ad01d306d9c600b0ae4ba0aa66e4b54b27a9d9eb",
+      "normalization": "CRLF to LF only"
+    },
+    {
+      "path": "CHECK904.json",
+      "native_sha256": "25d174c4714b2bf6eb40c0787c95824aaf9b7c9614f9df02e2ef9fddf1ea9cf5",
+      "public_sha256": "d199d73be721109fcee1fabe39243645f0d12081920aaf07ea1b2af187a218c0",
+      "normalization": "CRLF to LF only"
+    },
+    {
+      "path": "POST907.txt",
+      "native_sha256": "2d637f5b958d24be91e01abc90a3be518d16d18f9d6e6ef29109cd9e1c99f7b9",
+      "public_sha256": "e02db494c089363afd1b0897750fb59d915d92cb2cb2846004c06db67ef09853",
+      "normalization": "CRLF to LF only"
+    },
+    {
+      "path": "PROOF908.txt",
+      "native_sha256": "9b4060252c27429ce37637a90a32e91c2e727e85e0ba45b078fb78077ffb6ee9",
+      "public_sha256": "61c7906f94e2b97054c2f04d0efe95416b581fcaf3658a43ef846884c3537195",
+      "normalization": "CRLF to LF only"
+    },
+    {
+      "path": "CHECK908.json",
+      "native_sha256": "53593f64cc25136ad4291c9bdac645bb14715e2f30179546a54e3e1150c6c325",
+      "public_sha256": "1a47111bfb7b3365947136869d81390ee297ceb6a9a81b8caf2d2ff76de5db9f",
+      "normalization": "CRLF to LF only"
+    },
+    {
+      "path": "SUBGRAPH909.json",
+      "native_sha256": "67125b250892ce370bcd3e5d52fcc034b1670b7463395bfcbd20321df922f22d",
+      "public_sha256": "b347263dd44bd0105977f1776b850df1234eea6ca1828002e83bf981f8a23a23",
+      "normalization": "CRLF to LF only"
+    },
+    {
+      "path": "SOURCES904.json",
+      "native_sha256": "6a5bc1118c88d6fd72db0c70d5c3c5126eea54f87a5e02993225e22e9af2a249",
+      "public_sha256": "1885f4905662807043c3d2c15cd9526456c5889eda95ddfa204ea8326f24faac",
+      "normalization": "CRLF to LF only"
+    },
+    {
+      "path": "AUDIT901.txt",
+      "native_sha256": "a1fce0159ffb5daf5c005797b3f43bb10c15afcbc87193e5d65764f147392d97",
+      "public_sha256": "a1fce0159ffb5daf5c005797b3f43bb10c15afcbc87193e5d65764f147392d97",
+      "normalization": "none"
+    },
+    {
+      "path": "verdict901.json",
+      "native_sha256": "5226f23ab46d1900d4f86ed1516bcf9cdb84d18cdcda1eab896649537d33c009",
+      "public_sha256": "31e31a1dd6d69a428a152e146f32f49bb424ed500447c08280b98f9595929fdc",
+      "normalization": "CRLF to LF only"
+    },
+    {
+      "path": "READS901.json",
+      "native_sha256": "18aed8abd576bfe8da452e4796484ba52ce26d9e1ca0aab4226725b3090e2437",
+      "public_sha256": "d3969a7d6eea95fbe873560eedc0bda8d5761cb780b682e63fb79f1cba3b438f",
+      "normalization": "CRLF to LF only"
+    },
+    {
+      "path": "CHECK901.json",
+      "native_sha256": "597a884d3ac23256231e77cdd4cfbf8943ad7b502b61416af108dc5eb3f5f4bf",
+      "public_sha256": "38396756769651ba65c43fb6bbfb8cc875da8b58cd5a43fd53bfce950139d80f",
+      "normalization": "CRLF to LF only"
+    },
+    {
+      "path": "INPUT905.json",
+      "native_sha256": "bc7420864243c591af54064358b175de31b13efdcb54825694f329917cdb50ee",
+      "public_sha256": "9b4b588a76619642ad05ef52d7598070636ef5001a03c2b23bcdae6dfc2bc4f3",
+      "normalization": "CRLF to LF only"
+    },
+    {
+      "path": "check905.py",
+      "native_sha256": "94f4ac9c5ee0590703d8b52ab648da8db6b204cc14c2237823e295b708287b03",
+      "public_sha256": "a043b679103794287d157e709948beb01cfb4c6eb5b65086323824b06bdb57a9",
+      "normalization": "CRLF to LF only"
+    },
+    {
+      "path": "check908.py",
+      "native_sha256": "74dea1c8d5bdce0a8251eb41ec985385589859b202cc12e82075a9692e0c92d1",
+      "public_sha256": "a265fe7202c610450764e921254969187fef5c6b38330be2b74012f82caa98a3",
+      "normalization": "CRLF to LF only"
+    },
+    {
+      "path": "AUDIT906.txt",
+      "native_sha256": "370165da2e921120801917d65f0d326a7123adef59fd152b04e784dc2cc8aa16",
+      "public_sha256": "370165da2e921120801917d65f0d326a7123adef59fd152b04e784dc2cc8aa16",
+      "normalization": "none"
+    },
+    {
+      "path": "verdict906.json",
+      "native_sha256": "b5efb7dd6e59390ae142b2e7eb131541b4076e9b5f40a8864a3e235d3977340d",
+      "public_sha256": "b5efb7dd6e59390ae142b2e7eb131541b4076e9b5f40a8864a3e235d3977340d",
+      "normalization": "none"
+    },
+    {
+      "path": "READINGS906.json",
+      "native_sha256": "c0b1c1a301336dda0a09b1e05551bf919999fee001a59234b67842d859db44b6",
+      "public_sha256": "c0b1c1a301336dda0a09b1e05551bf919999fee001a59234b67842d859db44b6",
+      "normalization": "none"
+    },
+    {
+      "path": "CONTROLS906.json",
+      "native_sha256": "4d2fcc1c4e411974de79dce62eb49d5d0bec14e2ed015305a5ab2308c5c5e9c1",
+      "public_sha256": "7562aa829bc82990dcbf7207fffb2662a25574e7e2865473282336dd12fbe8b9",
+      "normalization": "CRLF to LF only"
+    },
+    {
+      "path": "RUNLOG906.txt",
+      "native_sha256": "ea90d22c8ed1e247754c148603acd8a9661e4cc9e3042f7ebc62a9fdd1979507",
+      "public_sha256": "ea90d22c8ed1e247754c148603acd8a9661e4cc9e3042f7ebc62a9fdd1979507",
+      "normalization": "none"
+    },
+    {
+      "path": "PROOF910.txt",
+      "native_sha256": "77b568ec8b0a73b0905d8cac3d7b57ba0b04699d87bab04b2a324df14f9c627c",
+      "public_sha256": "aa1adb7c50906e3ac5aa33b89478589d4824ced0957b89ebb35f9cc32dd4d462",
+      "normalization": "CRLF to LF only"
+    },
+    {
+      "path": "CHECK910.json",
+      "native_sha256": "02fdeb2060ca8089d9f8f7852187fe2958338b5344790ccbd6c96a70ffb849be",
+      "public_sha256": "484b92ae32308865fa00c0145d0d5d9e4863485591cef735cdc9aecc417172ca",
+      "normalization": "CRLF to LF only"
+    },
+    {
+      "path": "SOURCE910.json",
+      "native_sha256": "965739a3ec45eff760cfb8bcfa369a364986da0acfc474b99956c2430dbfdf66",
+      "public_sha256": "5b0ba7bb5761c69034bd8f5183928df458ed74f32d9578b555b26bbd78747d79",
+      "normalization": "CRLF to LF only"
+    },
+    {
+      "path": "check910.py",
+      "native_sha256": "d81ca4df376fe5134970be7f942a4527d35b0f6c1e772322fede9990dffd9eda",
+      "public_sha256": "9157b5a55c8c70282cd196186a963e4c8eab7e470cdd6662a9416c9f208c34a0",
+      "normalization": "CRLF to LF only"
+    }
+  ],
+  "native_zip_sha256": "35d6e718d50155eb20eae37d9d71f4f38448488516881fcbddf092df45d802fd",
+  "original_audit906_manifest_sha256": "f85a5334c05ebae5349b7f1fd354dac7333fdef98b7fd9999115f9b067d50f75"
+}
