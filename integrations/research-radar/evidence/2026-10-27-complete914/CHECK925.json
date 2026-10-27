@@ -1,0 +1,211 @@
+{
+  "scope": "12 selected correlated bases; whole Hermitian tangent spaces, nontraceless included; not universal proof or interval certification",
+  "results": [
+    {
+      "case": "AD_N_fullChoiM",
+      "r": 2,
+      "sample": 0,
+      "alpha": 0.15,
+      "beta": 1.4,
+      "K": 2.1169929979816993,
+      "lam": 0.023906961393462017,
+      "identity_residual": 1.6883057536160649e-16,
+      "whole_hermitian_dimension": 16,
+      "minimum_eigenvalues": {
+        "M_base": 0.7286507095073506,
+        "N_base": 0.36907584206312666,
+        "weighted_L": -3.473245825715303e-15,
+        "combined": 0.7340920165526172
+      }
+    },
+    {
+      "case": "AD_N_fullChoiM",
+      "r": 2,
+      "sample": 1,
+      "alpha": 0.15,
+      "beta": 1.4,
+      "K": 2.1169929979816993,
+      "lam": 0.023906961393462017,
+      "identity_residual": 1.6883057536160649e-16,
+      "whole_hermitian_dimension": 16,
+      "minimum_eigenvalues": {
+        "M_base": 2.5440491894323625,
+        "N_base": 0.41719653657915806,
+        "weighted_L": -1.1663490823093511e-15,
+        "combined": 0.6903322620824226
+      }
+    },
+    {
+      "case": "AD_N_fullChoiM",
+      "r": 3,
+      "sample": 0,
+      "alpha": 0.15,
+      "beta": 1.4,
+      "K": 2.1169929979816993,
+      "lam": 0.023906961393462017,
+      "identity_residual": 1.6883057536160649e-16,
+      "whole_hermitian_dimension": 36,
+      "minimum_eigenvalues": {
+        "M_base": 0.2393836717758669,
+        "N_base": 0.44895449823557204,
+        "weighted_L": -4.096158436190101e-15,
+        "combined": 0.8286678419924488
+      }
+    },
+    {
+      "case": "AD_N_fullChoiM",
+      "r": 3,
+      "sample": 1,
+      "alpha": 0.15,
+      "beta": 1.4,
+      "K": 2.1169929979816993,
+      "lam": 0.023906961393462017,
+      "identity_residual": 1.6883057536160649e-16,
+      "whole_hermitian_dimension": 36,
+      "minimum_eigenvalues": {
+        "M_base": 2.7481511774939973,
+        "N_base": 0.5145576016436726,
+        "weighted_L": -1.1959788771652312e-14,
+        "combined": 0.8035316718928386
+      }
+    },
+    {
+      "case": "shared_nontrivial_kernel",
+      "r": 2,
+      "sample": 0,
+      "alpha": 0.15,
+      "beta": 1.0,
+      "K": 1.0,
+      "lam": 0.15,
+      "identity_residual": 0.0,
+      "whole_hermitian_dimension": 16,
+      "minimum_eigenvalues": {
+        "M_base": -2.080704950568967e-15,
+        "N_base": -2.2204460492503565e-16,
+        "weighted_L": -5.581494248328684e-16,
+        "combined": -4.440892098502306e-16
+      }
+    },
+    {
+      "case": "shared_nontrivial_kernel",
+      "r": 2,
+      "sample": 1,
+      "alpha": 0.15,
+      "beta": 1.0,
+      "K": 1.0,
+      "lam": 0.15,
+      "identity_residual": 0.0,
+      "whole_hermitian_dimension": 16,
+      "minimum_eigenvalues": {
+        "M_base": -1.9040089320054534e-15,
+        "N_base": -2.2551405187768263e-17,
+        "weighted_L": -3.7932110669577836e-16,
+        "combined": -1.6807424227739906e-17
+      }
+    },
+    {
+      "case": "shared_nontrivial_kernel",
+      "r": 3,
+      "sample": 0,
+      "alpha": 0.15,
+      "beta": 1.0,
+      "K": 1.0,
+      "lam": 0.15,
+      "identity_residual": 0.0,
+      "whole_hermitian_dimension": 36,
+      "minimum_eigenvalues": {
+        "M_base": -6.2399041980140856e-15,
+        "N_base": -1.6751556212262523e-15,
+        "weighted_L": -1.2714772566423721e-15,
+        "combined": -3.5381455001071543e-15
+      }
+    },
+    {
+      "case": "shared_nontrivial_kernel",
+      "r": 3,
+      "sample": 1,
+      "alpha": 0.15,
+      "beta": 1.0,
+      "K": 1.0,
+      "lam": 0.15,
+      "identity_residual": 0.0,
+      "whole_hermitian_dimension": 36,
+      "minimum_eigenvalues": {
+        "M_base": -7.189182095373676e-15,
+        "N_base": -3.6420758871617125e-15,
+        "weighted_L": -9.520256510803442e-16,
+        "combined": -7.419848599945337e-15
+      }
+    },
+    {
+      "case": "qutrit",
+      "r": 2,
+      "sample": 0,
+      "alpha": 0.19999999999999976,
+      "beta": 2.9368302362257195,
+      "K": 1.0,
+      "lam": 0.06810063364678193,
+      "identity_residual": 1.92493284197795e-16,
+      "whole_hermitian_dimension": 36,
+      "minimum_eigenvalues": {
+        "M_base": 0.09088858851793778,
+        "N_base": 1.6420990789868841,
+        "weighted_L": -7.803437574429382e-16,
+        "combined": 2.1384550544032312
+      }
+    },
+    {
+      "case": "qutrit",
+      "r": 2,
+      "sample": 1,
+      "alpha": 0.19999999999999976,
+      "beta": 2.9368302362257195,
+      "K": 1.0,
+      "lam": 0.06810063364678193,
+      "identity_residual": 1.92493284197795e-16,
+      "whole_hermitian_dimension": 36,
+      "minimum_eigenvalues": {
+        "M_base": 0.01625176035203799,
+        "N_base": 1.6168790839517566,
+        "weighted_L": -2.933549090764527e-16,
+        "combined": 2.1879740967782286
+      }
+    },
+    {
+      "case": "qutrit",
+      "r": 3,
+      "sample": 0,
+      "alpha": 0.19999999999999976,
+      "beta": 2.9368302362257195,
+      "K": 1.0,
+      "lam": 0.06810063364678193,
+      "identity_residual": 1.92493284197795e-16,
+      "whole_hermitian_dimension": 81,
+      "minimum_eigenvalues": {
+        "M_base": 0.03374452052101878,
+        "N_base": 2.1345310568682145,
+        "weighted_L": -1.5598015739473544e-15,
+        "combined": 3.0013765395402143
+      }
+    },
+    {
+      "case": "qutrit",
+      "r": 3,
+      "sample": 1,
+      "alpha": 0.19999999999999976,
+      "beta": 2.9368302362257195,
+      "K": 1.0,
+      "lam": 0.06810063364678193,
+      "identity_residual": 1.92493284197795e-16,
+      "whole_hermitian_dimension": 81,
+      "minimum_eigenvalues": {
+        "M_base": 0.0139752995128863,
+        "N_base": 1.9707500392096586,
+        "weighted_L": -4.459329241191701e-16,
+        "combined": 2.7756603548300176
+      }
+    }
+  ],
+  "mismatched_kernel_falsifier": "N dephasing; M=.7id+.3depolarizing; rho=I/2+sigma_x/10, sigma=I/2 gives D_N=0<D_M. Exact matrices checked.",
+  "theorem_status": "proposed and not independently audited; no score; source coverage unresolved"
+}

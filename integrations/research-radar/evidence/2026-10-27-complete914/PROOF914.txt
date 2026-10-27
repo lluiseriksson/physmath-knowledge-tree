@@ -1,0 +1,252 @@
+COMPLETE REVERSE DATA PROCESSING FROM NILPOTENT NOISE
+Proposed structural theorem914, 2026-10-27. Own working proof, not reviewed.
+No manuscript score, priority, formal verification or capacity theorem claimed.
+This is a NEW TARGET, not a proof of the earlier non-GAD entropy inequality.
+All spaces are finite-dimensional; all entropies use natural logarithms.
+
+1. Definitions and proposed general statement
+
+For a positive definite S and Hermitian Y define the positive-cone BKM form
+ g_S(Y)=integral_0^infty Tr[Y(S+tI)^(-1)Y(S+tI)^(-1)] dt,
+and ||Y||_S=sqrt(g_S(Y)). This definition does not require TrY=0 or TrS=1.
+For semidefinite S use the form on its support when Y is supported there.
+Ad_F means X -> F X F, with F positive definite.
+
+Let M,N: L(A)->L(B) be CPTP and M(I_A)>0. Suppose Q:L(B)->L(B) is CP,
+trace-nonincreasing, and Q^k=0 for an integer k>=1. Assume that a>=0,c>0,
+an invertible positive F, and m>0 obey
+
+ Q o M <=_cp c M,           F^2 >= m I_B,
+ N = Ad_F o (id+aQ) o M.                                  (H)
+
+Define P_k=sum_(j=0)^(k-1)(a sqrt(c))^j and
+
+ L=m / [(1+ac) P_k^2] >0.                                 (L)
+
+PROPOSED THEOREM. For EVERY finite reference R, and every pair of density
+operators rho,sigma on A tensor R with supp(rho) subset supp(sigma),
+
+ D((N tensor id_R)rho || (N tensor id_R)sigma)
+ >= L D((M tensor id_R)rho || (M tensor id_R)sigma).          (T)
+
+All assumptions in(H) are finite linear-map/Choi/algebraic conditions on
+M,N,Q,F; none is an assumed entropy inequality on arbitrary references.
+No smallness condition a sqrt(c)<1 is imposed. Nilpotency supplies a finite
+inverse. No sharpness of L or tensor-power multiplicativity is asserted.
+The full-output-support assumption M(I)>0 is explicit and retained.
+
+2. BKM facts, with the nontraceless issue made explicit
+
+(i) CPTP monotonicity extends to every Hermitian tangent Y. For TrS=1 write
+Y=tS+Y0, TrY0=0. Since g_S(S,Y0)=TrY0=0 and g_S(S)=TrS=1, the trace component
+contributes t^2 on both sides of a CPTP map. Ordinary tangent monotonicity,
+obtained by differentiating relative-entropy DPI, handles Y0. Scaling S
+handles non-unit trace. Consequently a CP trace-nonincreasing map Q obeys
+ g_Q(S)(QY) <= g_S(Y):
+extend Q to a CPTP map by appending a one-dimensional failure flag with
+weight Tr[(I-Q^*(I))S], and drop the nonnegative failure-block BKM term.
+For full-rank S, QY is supported in Q(S) because -dS<=Y<=dS for some d.
+The same reasoning applies to Q tensor id_R; the appended flag may discard
+the reference in its failure branch, which does not affect the inequality.
+
+(ii) If U<=bV for b>0, then g_U(Y)>=b^(-1)g_V(Y), with the support convention.
+One proof uses U+tI<=bV+tI, inverse order and the substitution t=b u.
+For positive A>=B, Tr(Y A Y A)>=Tr(Y B Y B): on vectorization,
+A^T tensor A-B^T tensor B=(A^T-B^T)tensor A+B^T tensor(A-B)>=0.
+This also justifies the resolvent comparison for noncommuting matrices.
+Singular U follows by a positive regularization on the relevant support.
+
+(iii) Congruence estimate: if F^2>=mI, then
+ g_FSF(FYF) >= m g_S(Y).                                  (C)
+Indeed the integrand becomes Tr[Y(S+t F^(-2))^(-1)Y(S+t F^(-2))^(-1)].
+Since F^(-2)<=m^(-1)I, inverse order plus the tensor argument in(ii) bounds
+it below by the integrand with S+(t/m)I. Integration gives(C).
+This is a metric comparison for an unnormalized filter; it is NOT an
+unjustified use of channel DPI for a non-trace-preserving congruence.
+
+3. Proof of the proposed general theorem
+
+First take a full-rank density sigma on A tensor R. Abbreviate tensor id_R
+on all maps, F tensor I_R by F, S=M(sigma)>0 and Y=M(X), X Hermitian.
+Full rank follows from sigma>=epsilon I and M(I)>0. CP order in(H) gives
+ Q(S)<=cS, so by(ii) and(i), for EVERY Hermitian Z,
+
+ g_S(QZ)<=c g_Q(S)(QZ)<=c g_S(Z).
+
+Thus the operator norm of Q in the Hilbert norm ||.||_S is at most sqrt(c).
+This assertion is used on nontraceless Z as well; item(i) is essential.
+Nilpotency gives the exact inverse
+ (id+aQ)^(-1)=sum_(j=0)^(k-1)(-aQ)^j.
+If Z=(id+aQ)Y, the triangle inequality implies
+ ||Y||_S <= P_k ||Z||_S,
+ g_S(Z)>=P_k^(-2)g_S(Y).                                 (I)
+
+Meanwhile positivity and CP order give
+ N(sigma)=F(S+aQ(S))F <=(1+ac)FSF,
+ N(X)=FZF.
+Using(ii), then(C), then(I),
+
+ g_N(sigma)(N(X))
+ >=(1+ac)^(-1)g_FSF(FZF)
+ >=m(1+ac)^(-1)g_S(Z)
+ >=L g_M(sigma)(M(X)).                                  (BKM)
+
+This proof is unchanged in every finite reference dimension: CP order,
+trace-nonincreasing complete positivity, nilpotency and m survive tensoring.
+It does not reduce the reference to a qubit or a classical register.
+
+For full-rank rho,sigma put X=rho-sigma, sigma_t=sigma+tX. The exact Hessian
+identity D(rho||sigma)=integral_0^1(1-t)g_sigma_t(X)dt, also after either
+channel, integrates(BKM) to(T). For the stated singular pairs regularize
+both with the same full-rank omega=I/(dimA dimR). For each output pair,
+joint convexity supplies an upper bound (1-epsilon) times its limiting
+finite relative entropy, and lower semicontinuity supplies the matching
+lower limit. Input support inclusion guarantees finite output relative
+entropies. Therefore(T) passes to epsilon down to zero.
+
+4. Application to two qubit amplitude-damping channels
+
+For 0<p1<p2<1 set s_i=1-p_i, d=p2-p1. The channel A_p is
+ A_p([[U,C],[C*,V]])=[[U+pV,sqrt(1-p)C],[sqrt(1-p)C*,(1-p)V]],
+where entries may themselves be arbitrary reference operators.
+Let M=A_p1, N=A_p2, Q(X)=|0><1| X |1><0|, so Q^2=0 and Q is CP TNI.
+Choose
+ F=diag(1,sqrt(s2/s1)), a=d/s1, c=s1/p1, m=s2/s1.
+The exact map identity N=Ad_F(id+aQ)M follows on all four matrix units.
+Moreover, if K0=diag(1,sqrt(s1)),
+ c M-QM=c Ad_K0 is CP, because QM=s1 Q and M=Ad_K0+p1 Q.
+Thus all hypotheses(H) are verified, with no unknown reference assumption.
+
+The proposed complete relative-entropy lower bound has coefficient
+
+ L_AD = [p1 s2/(p2 s1)] / [1+d/sqrt(p1 s1)]^2.            (AD)
+
+For example p1=1/4,p2=1/2 yields L_AD=1-sqrt(3)/2>0.
+At p1=0 or p2=1 no positive uniform coefficient is asserted. Equal parameters
+give identity comparison separately. The scalar coefficient p1 s2/(p2 s1)
+without the extra denominator is already the ORDINARY exact expansion
+coefficient claimed in Han--Li2610.29373v1 Theorem4. We do not claim its
+ordinary formula as new or prove its sharp complete extension.
+
+5. A finite-height example beyond qubits and beyond a small-perturbation bound
+
+On a qutrit let J=|0><1|+|1><2|, Q=Ad_J, Q^3=0. For b>0 define
+ D_b=diag(1,(1+b)^(-1/2),(1+b+b^2)^(-1/2)),
+ M_b=(id+bQ+b^2Q^2) Ad_D_b.
+The Kraus D_b,sqrt(b)J D_b,b J^2 D_b satisfy trace preservation exactly.
+M_b(I)>0 and (1/b)M_b-QM_b=(1/b)Ad_D_b is CP.
+For 0<a<1 let
+ F_a=diag(1,sqrt(1-a),sqrt(1-a+a^2)),
+ K_a=Ad_F_a(id+aQ), N=K_a M_b.
+K_a is CPTP since F_a^2+a J* F_a^2 J=I. Thus(H) holds with c=1/b,
+k=3,m=1-a. It gives a complete relative-entropy coefficient
+ (1-a)/[(1+a/b)(1+a/sqrt(b)+a^2/b)^2]>0.
+At b=1/100,a=1/2 this is1/98022, although a sqrt(c)=5>1. A Neumann-series
+small-norm argument would not justify an inverse here; finite nilpotency does.
+This is a concrete structural example, not a capacity-additivity claim.
+
+6. Complete mutual-information consequence, and an important obstruction
+
+Define eta_MI^cb(N,M)=sup_rho_AR I(R:B_N)/I(R:B_M), and the corresponding
+infimum coefficient check_eta_MI^cb when the denominator is nonzero.
+These use one input state and its product of marginals, not channel
+relative entropy between two different channels applied to different inputs.
+Taking sigma=rho_A tensor rho_R in(T) gives
+ I(R:B_N)>=(L) I(R:B_M) for every finite R. In particular(AD) is a strictly
+positive lower bound for check_eta_MI^cb(A_p2,A_p1). No sharp value is claimed.
+
+However, for every fixed 0<p<1 the following separate proposed equality holds:
+
+ eta_MI^cb(A_p,id)=1.                                     (O)
+
+It is crucial not to substitute the ordinary strict contraction coefficient
+for this complete mutual-information coefficient in a capacity application.
+Here is a two-qubit-reference witness for(O), not a reference-dimension limit.
+For x,r in(0,1/2) set
+ S_xr=diag(1-x,x) tensor diag(1-r,r), X=sigma_x tensor sigma_x,
+ rho_epsilon=S_xr+epsilon X, with 0<epsilon<lambda_min(S_xr).
+Both marginals equal those of S_xr. Data processing gives the upper bound1.
+For epsilon down to zero the ratio of output to input mutual informations
+converges to the ratio of BKM forms of X at the corresponding product bases.
+Let ell(a,b)=(log a-log b)/(a-b), continuously ell(a,a)=1/a. With s=1-p,
+u=1-sx,v=sx, the two forms, including all off-diagonal entries, are
+
+ g_in=2[ell((1-x)(1-r),xr)+ell((1-x)r,x(1-r))],
+ g_out=2s[ell(u(1-r),vr)+ell(ur,v(1-r))].
+
+First let r down to zero at fixed x. Each ell contributes log(1/r) divided
+by its nonvanishing endpoint, giving
+ g_out/g_in -> s[(1/u)+(1/v)]/[(1/(1-x))+(1/x)]
+               =(1-x)/(1-sx).
+Then x down to zero gives1. The limits are iterated: choose x, then r,
+then sufficiently small epsilon; every witness is a positive finite state.
+No approximation of finite entropy by a nonuniform Taylor expansion is
+asserted across the limit; epsilon is taken first for each fixed product base.
+At p=1 the channel is constant and eta_MI^cb=0; that endpoint is excluded.
+
+A completely explicit rational sequence removes the need for iterated
+choices of epsilon. For integers n>=3 put x_n=1/n, r_n=2^(-n^2),
+epsilon_n=r_n/n^2 and rho_n=S_(x_n,r_n)+epsilon_n X. All matrix entries
+are rational, and lambda_min(S)=r_n/n, so
+ (1-1/n)S <= rho_n <= (1+1/n)S.
+CPTP maps preserve these inequalities. Applying metric order along the
+segment S+t epsilon_n X gives, for input and output separately,
+ epsilon_n^2 g_S(X)/[2(1+1/n)] <= D(rho_n||S)
+ <= epsilon_n^2 g_S(X)/[2(1-1/n)],
+with the corresponding output base/form in the output expression.
+Thus the finite mutual-information ratio is at least
+ [(1-1/n)/(1+1/n)] times the BKM ratio at that product base.
+In the displayed log-mean formula, -log r_n=n^2 log2 dominates log x_n;
+the second term is asymptotic to n^3 log2/s before the output prefactor s,
+and to n^3 log2 at input. Both total forms are asymptotic to2n^3 log2.
+The BKM ratio and hence the finite mutual-information ratio tend to1.
+This establishes a single explicit sequence, not a uniform Taylor assumption.
+
+In fact every rho_n is SEPARABLE but not classical on R. Set
+D_A=diag(sqrt(1-x),sqrt(x)), D_R=diag(sqrt(1-r),sqrt(r)) and
+t=epsilon/sqrt(x(1-x)r(1-r)), with 0<t<1. Then
+ rho=(D_A tensor D_R)[I_4+t sigma_x tensor sigma_x](D_A tensor D_R).
+The middle operator is sum_(a,b=+/-1)(1+tab) P_a tensor P_b, where P_a
+are sigma_x eigenprojectors. Positive coefficients and local filtering
+give an explicit separable cone decomposition. The R marginal has distinct
+eigenvalues1-r,r and [rho,I tensor rho_R]!=0, so rho cannot be classical
+on R in any basis. Entanglement is therefore not necessary for the
+complete-vs-classical auxiliary contraction separation, if this proof holds.
+
+For an amplitude-damping main channel with damping gamma in(0,1/2),
+its degrading map has damping (1-2gamma)/(1-gamma) in(0,1). Thus(O), if
+correct, makes the factor
+1-eta_MI^cb(degrader,id) equal zero in the sufficient construction discussed
+in BGSW v3 Section7. Positivity of our relative expansion bound alone does
+NOT establish their desired informationally degradable nondegradable example.
+It does not prove the old fixed non-GAD Holevo/capacity target either.
+
+7. Prior-art and hypothesis gate
+
+The new proposed mechanism is finite inverse control of a nilpotent CP
+noise map in the BKM norm, combined with CP domination on the channel image
+and a congruence bound. It explicitly handles the operator argument as well
+as the base state; CP order alone is insufficient, as BGSW stress.
+The eliminated hypothesis is perturbative smallness / an unverified
+restriction on finite quantum-reference dimension in these comparisons.
+Full output support, nilpotency, TNI and CP image domination remain.
+
+Literature read in this round:
+* Belzig--Gao--Smith--Wu2411.19890v3: Lemmas4.1--4.3 and selected proofs,
+  plus Section7 Definition7.1/discussion. Their CP-order warning and
+  complete-MI definitions motivate the target; no priority is inferred.
+* Han--Li2610.29373v1 (21Oct2026): abstract, definitions23--30 and
+  Theorems2--4 read; full coefficient/convergence proofs NOT audited.
+  Their state space is the input qubit, not an asserted arbitrary quantum
+  reference. Their exact ordinary coefficient is a pre-existing claim.
+* Directed keyword searches found no immediately identical nilpotent
+  formulation. This is NOT an exhaustive novelty certificate or proof that
+  a complete comparison has not been derived elsewhere.
+
+No third-party source bodies are redistributed, no corpus is ingested,
+no new manuscript/PDF or score is created. No Lean proof. Before any paper,
+audit the full argument adversarially and contrast current primary literature.
+Falsifiers: a failed nontraceless metric step, inverse/order/congruence
+inequality, CP hypothesis, support limit, finite state violating(AD)/(T),
+or a mistake in the iterated-limit witness(O). A covering antecedent retires
+the novelty route while preserving the derivation as a known-case control.

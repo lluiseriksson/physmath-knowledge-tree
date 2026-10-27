@@ -759,6 +759,66 @@
       "anchors": [
         "domain.quantum_information_theory"
       ]
+    },
+    {
+      "id": "han-li-ad-2026-scoped",
+      "title": "Convergence Analysis of the Quantum Blahut-Arimoto Algorithm and the Contraction Coefficient of Qubit Amplitude-Damping Channels",
+      "url": "https://arxiv.org/html/2610.29373v1",
+      "kind": "preprint",
+      "observed_on": "2026-10-27",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Definitions and Theorems2-4 statements identify ordinary qubit contraction and an exact relative-expansion coefficient. This ordinary AD coefficient is prior work, not a new result of our complete-reference derivation.",
+      "limits": "Selected statements/context only; all proofs and algorithm convergence not audited. No uniform quantum-reference quantifier inherited.",
+      "reuse": "Bibliographic metadata and original synthesis only; no foreign full text, training authorization or global-priority certificate.",
+      "anchors": [
+        "domain.quantum_information_theory"
+      ]
+    },
+    {
+      "id": "iyer-riemannian-v2-scoped",
+      "title": "Quantum f-divergences and Their Local Behaviour: An Analysis via Relative Expansion Coefficients",
+      "url": "https://arxiv.org/html/2510.06183v2",
+      "kind": "preprint",
+      "observed_on": "2026-10-27",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Proposition6.13 ordinary AD positivity, and Sections5.3/6.2 metric/HS comparison statements and displayed proofs read. Lemma6.7 is a direct ordinary antecedent for the proposed kernel925 extension.",
+      "limits": "Not a full paper proof audit. A local displayed algebra issue in Proposition6.13 HTML is documented without refuting its proposition. Ordinary strict positivity is weaker than Choi faithfulness, and no complete theorem is inherited.",
+      "reuse": "Bibliographic metadata and original synthesis only; no foreign full text, training authorization or global-priority certificate.",
+      "anchors": [
+        "domain.quantum_information_theory"
+      ]
+    },
+    {
+      "id": "hirche-conditional-2026-scoped",
+      "title": "Conditional contraction coefficients and their applications to quantum networks",
+      "url": "https://arxiv.org/html/2608.27171v1",
+      "kind": "preprint",
+      "observed_on": "2026-10-27",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Definitions and Section3.2 Lemma5 with proof identify the MI coefficient with a product-reference relative-entropy coefficient; Corollary3 distinguishes it from equal-marginal and conditional coefficients. That equivalence is prior work.",
+      "limits": "No full paper audit or proof that the AD coefficient equals one from these selected passages. A terminology match is not a transfer of all hypotheses.",
+      "reuse": "Bibliographic metadata and original synthesis only; no foreign full text, training authorization or global-priority certificate.",
+      "anchors": [
+        "domain.quantum_information_theory"
+      ]
+    },
+    {
+      "id": "laracuente-robustness-v1-scoped",
+      "title": "Information Fragility or Robustness Under Quantum Channels",
+      "url": "https://arxiv.org/html/2312.17450v1",
+      "kind": "preprint",
+      "observed_on": "2026-10-27",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Section4.3 Proposition4.13 statement and displayed proof compare pairs with a common fixed noise state. It is an order/BKM antecedent; our state-dependent jump does not admit a direct fixed-noise substitution established here.",
+      "limits": "Only selected sections read, no full proof audit or exclusion of all implications. v1 verified; an earlier guessed v3 URL was404 and is not a cited version.",
+      "reuse": "Bibliographic metadata and original synthesis only; no foreign full text, training authorization or global-priority certificate.",
+      "anchors": [
+        "domain.quantum_information_theory"
+      ]
     }
   ],
   "candidates": [
@@ -1055,6 +1115,30 @@
       "falsifier": "An exact negative rectangular entropy instance refutes the proposed sufficient mechanism; a preceding theorem covering this N defeats the novelty route. Neither automatically refutes channel additivity.",
       "next_finite_task": "The actual missing core is a sharp repeated-block P5 inequality or an equivalent bound for arbitrary mixed quantum references. Conditional reference budgets and separable/isotropic cases are written, but do not remove the excluded mixed-entangled-reference region. Check full component audit and novelty before any manuscript; avoid repeated float grids.",
       "review_packet": "Own conditional leakage derivation889 is unreviewed and not selected as a frontier paper; exact rational partial-trace controls890 and floating diagnostic892 are recorded in the evidence sidecar. No model score. Follow-up895 gives exact missing coefficient -(11/100)p(1-p) and the analytic derivative bound F_prime(3/5)<-(23/50)ln5. This refutes only a monotonic transfer mechanism, not channel additivity. No new review or score. Component audit901 validates reductions with nine preserved objections, no score. Original899/corrected903/input905 are bound in evidence899. Audit906 status is explicitly recorded there. Post907 and908 are separate unreviewed extensions. No new PDF, grade or canonical formal promotion. Audit906 is now complete: the scoped bound is supported with seven objections and no grade. Its exact report/input hashes are in evidence899. No review extends to the later907/908/910 notes."
+    },
+    {
+      "id": "complete-noise-and-kernel",
+      "title": "Complete reverse comparison: nilpotent boundary criterion and Choi-faithful kernel route",
+      "status": "under_audit",
+      "confidence": "speculative",
+      "paper_score": null,
+      "source_ids": [
+        "belzig-reverse-dpi-v3-scoped",
+        "han-li-ad-2026-scoped",
+        "iyer-riemannian-v2-scoped",
+        "hirche-conditional-2026-scoped",
+        "laracuente-robustness-v1-scoped"
+      ],
+      "node_ids": [
+        "domain.quantum_information_theory"
+      ],
+      "dictionary": "A nilpotent CP trace-nonincreasing output jump maps to a finite inverse on the BKM Hilbert space. Separately a CP Choi sandwich maps correlated bases to I_B tensor sigma_R, with complex HS bounds applied to each reference block.",
+      "preserved": "Every finite quantum reference, all Hermitian tangents including nontraceless ones, CP domination in914 and strict Choi faithfulness in925. ExactPDF review is separate.",
+      "lost_or_unproved": "Novelty unresolved; no sharp complete constant or capacity/additivity conclusion.925 is an unreviewed proposal. It does not subsume singular-Choi AD comparator914 or solve the old non-GAD entropy target.",
+      "hypothesis_to_remove": "914 avoids small perturbation under finite nilpotency;925 proposes eliminating nilpotency and the jump-filter identity in a distinct strict-Choi regime, with kernel inclusion retained.",
+      "falsifier": "A valid-assumption counterexample to a metric step refutes the mechanism. Missing kernel inclusion already has an exact dephasing counterexample. A covering antecedent defeats novelty, not algebraic validity.",
+      "next_finite_task": "Read terminal exact-manuscript review923 without target grade. After it is terminal, audit925 separately against ordinary metric/HS antecedents and complete-reference literature. Do not split small corollaries into papers.",
+      "review_packet": "Full component audit917 supports914 under stated hypotheses and preserves seven reservations, no score. Exact eight-page PDF922 is under a single full manuscript review923; no grade yet. Separate925 derivation and12 bounded whole-tangent diagnostics are unreviewed. All input/report hashes are retained in evidence sidecar."
     }
   ],
   "source_refresh": {
@@ -1095,6 +1179,10 @@
     "followup843": {
       "evidence": "integrations/research-radar/evidence/2026-10-27-classification843/REFRESH843.json",
       "scope": "Directed seven-endpoint refresh, not exhaustive; OpenAI/DeepMind pins unchanged. Actual833 full grade preserved; new840 technical classification audit unscored."
+    },
+    "followup927": {
+      "evidence": "integrations/research-radar/evidence/2026-10-27-complete914/READINGS925.json",
+      "scope": "Six current inventory endpoints and selected version-pinned arXiv passages; not exhaustive. OpenAI7ef5c0 and DeepMindc0c538 pins; commit metadata not proof replay."
     }
   }
 }

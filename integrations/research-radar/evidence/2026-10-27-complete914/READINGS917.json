@@ -1,0 +1,91 @@
+{
+  "utc": "2026-10-27T10:02:32.463823+00:00",
+  "local_readings": [
+    "D:\\LEEME.md",
+    "INPUT916.json",
+    "PROOF914.txt",
+    "check915.py",
+    "CHECK915.json",
+    "SOURCES916.json",
+    "SUBGRAPH916.json"
+  ],
+  "forbidden_readings_performed": false,
+  "previous_review_results_imported": false,
+  "input_hash": "5a308554cc7c97a3608e434737efa041e8454b60f15baa31348a68ed38270ea4",
+  "primary_sources": [
+    {
+      "url": "https://arxiv.org/html/2411.19890v3",
+      "origin": "provided_in_task",
+      "reading_scope": "Sections4.1-4.3 and7, including displayed proofs of Lemmas4.1-4.3; ordinary AD strict bound6.3 and criterion context. Not a whole-paper audit.",
+      "metadata_retrieved_utc": "2026-10-27T10:02:29.968452+00:00",
+      "status": 200,
+      "bytes_at_seal": 1103020,
+      "sha256_at_seal": "00068903774f90b753166d516514ae504458c9181050d8eef7e246975dfabb21",
+      "full_body_saved_or_redistributed": false,
+      "hash_scope": "Hash of fresh retrieval at seal; not an independent attestation of prior web-parser bytes."
+    },
+    {
+      "url": "https://arxiv.org/html/2610.29373v1",
+      "origin": "provided_in_task",
+      "reading_scope": "Definitions19-30, Theorems2-4, section3.2 and abstract. Full coefficient and convergence proofs not audited.",
+      "metadata_retrieved_utc": "2026-10-27T10:02:30.337137+00:00",
+      "status": 200,
+      "bytes_at_seal": 1120318,
+      "sha256_at_seal": "baf015500852d2f136b16b2b590f8972dafead61dc85a8f5844c494110fab051",
+      "full_body_saved_or_redistributed": false,
+      "hash_scope": "Hash of fresh retrieval at seal; not an independent attestation of prior web-parser bytes."
+    },
+    {
+      "url": "https://arxiv.org/html/2011.05949v4",
+      "origin": "provided_in_task",
+      "reading_scope": "Section2.1 definitions and Lemma2.1, selected section2.2 coefficient definitions and trivial unrestricted complete coefficient observation.",
+      "metadata_retrieved_utc": "2026-10-27T10:02:31.744682+00:00",
+      "status": 200,
+      "bytes_at_seal": 2051915,
+      "sha256_at_seal": "71a68c4342e18d8ceb7e84b3fd85ef3fb7365ce45a7ce53272b5f25891e27eb4",
+      "full_body_saved_or_redistributed": false,
+      "hash_scope": "Hash of fresh retrieval at seal; not an independent attestation of prior web-parser bytes."
+    },
+    {
+      "url": "https://arxiv.org/html/2608.27171v1",
+      "origin": "auditor_targeted_primary_search",
+      "reading_scope": "Sections2.2,3.2,3.3 and Definition6; Lemma5 and coefficient distinctions. No whole-paper audit; no inferred AD result from keyword absence.",
+      "metadata_retrieved_utc": "2026-10-27T10:02:32.462680+00:00",
+      "status": 200,
+      "bytes_at_seal": 2313060,
+      "sha256_at_seal": "0d4a7ee8672b0793971816fa641246fa8644c017820e3b4f4a59de82ec8bea42",
+      "full_body_saved_or_redistributed": false,
+      "hash_scope": "Hash of fresh retrieval at seal; not an independent attestation of prior web-parser bytes."
+    },
+    {
+      "url": "https://arxiv.org/html/2510.06183v2",
+      "origin": "root_message_after_input_freeze",
+      "reading_scope": "Section2.4 definitions; Section5.2 read for scope; Proposition6.13 and displayed proof. Source-local algebra incident S1 preserved; whole proposition proof not certified.",
+      "metadata_retrieved_utc": "2026-10-27T10:02:32.315438+00:00",
+      "status": 200,
+      "bytes_at_seal": 2658734,
+      "sha256_at_seal": "e25d2446b46e1613af8bd3e616dbef1b1bc3d96f98b5484560b2c155bbf931a1",
+      "full_body_saved_or_redistributed": false,
+      "hash_scope": "Hash of fresh retrieval at seal; not an independent attestation of prior web-parser bytes."
+    },
+    {
+      "url": "https://arxiv.org/html/2312.17450v1",
+      "origin": "root_message_after_input_freeze",
+      "reading_scope": "Section4.3 Proposition4.13 with proof and closing discussion; nearby4.4/4.5 context. Fixed-common-noise hypothesis compared, no whole-paper audit.",
+      "metadata_retrieved_utc": "2026-10-27T10:02:28.314241+00:00",
+      "status": 200,
+      "bytes_at_seal": 489085,
+      "sha256_at_seal": "939789a4979ed3de18f4b74082fe69db77995ca32fb02c27c825c5d0dae475b7",
+      "full_body_saved_or_redistributed": false,
+      "hash_scope": "Hash of fresh retrieval at seal; not an independent attestation of prior web-parser bytes."
+    }
+  ],
+  "directed_searches": [
+    "amplitude damping mutual information contraction coefficient",
+    "amplitude damping complete strong data processing",
+    "nilpotent reverse data processing",
+    "conditional contraction coefficient quantum site:arxiv.org"
+  ],
+  "search_limit": "Directed only; nonprimary hits were not used as authority; no novelty inference from absent hits.",
+  "source_body_retention": "None; retrieval/extraction was in memory only."
+}

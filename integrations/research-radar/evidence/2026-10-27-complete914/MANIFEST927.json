@@ -1,0 +1,90 @@
+{
+  "scope": "Own derivations, full unscored component audit and bounded controls. No foreign full texts or computational campaign certificate. No exact-manuscript grade inherited.",
+  "files": [
+    {
+      "path": "PROOF914.txt",
+      "bytes": 13229,
+      "sha256": "7373bec46c22b83ae98a185805f56ce3dacee26c4dd24ab065ea4d1c34c57fa3",
+      "original_dossier_sha256": "7373bec46c22b83ae98a185805f56ce3dacee26c4dd24ab065ea4d1c34c57fa3",
+      "transport": "original bytes"
+    },
+    {
+      "path": "check915.py",
+      "bytes": 6537,
+      "sha256": "08aa8b811435dfdca4aea256cb3a190de74d3a4714d7844903c6f508729f11a5",
+      "original_dossier_sha256": "08aa8b811435dfdca4aea256cb3a190de74d3a4714d7844903c6f508729f11a5",
+      "transport": "original bytes"
+    },
+    {
+      "path": "CHECK915.json",
+      "bytes": 4715,
+      "sha256": "fbb0f0305ac049b914a277709cf726f5ee1a0d89cbf2428ef98e27ddde019823",
+      "original_dossier_sha256": "41bc64e1427e6ddc6a41af79733fbf8e08d060a239eb04bc0d9183845090489a",
+      "transport": "LF text normalization only"
+    },
+    {
+      "path": "AUDIT917.txt",
+      "bytes": 27857,
+      "sha256": "e5ca2f4dc39ca5de352d72e7751bafdb159a2acf359121fb40f650c743444259",
+      "original_dossier_sha256": "e5ca2f4dc39ca5de352d72e7751bafdb159a2acf359121fb40f650c743444259",
+      "transport": "original bytes"
+    },
+    {
+      "path": "verdict917.json",
+      "bytes": 3860,
+      "sha256": "8bb66c056d2713c4a4a39647e181392009aafe63dd330a16f19457ccadc88b5b",
+      "original_dossier_sha256": "8bb66c056d2713c4a4a39647e181392009aafe63dd330a16f19457ccadc88b5b",
+      "transport": "original bytes"
+    },
+    {
+      "path": "READINGS917.json",
+      "bytes": 4782,
+      "sha256": "8cb74864c8330dd0f3a89b6f425b4b2220198bcb54849c8c46303c0766a4ac00",
+      "original_dossier_sha256": "c0b425a7b4f41d30faa61fc2d1c216a58ebc96e5a4129e7fbc2d1d2dcf36f2bc",
+      "transport": "LF text normalization only"
+    },
+    {
+      "path": "INCIDENTS917.json",
+      "bytes": 2019,
+      "sha256": "4a0adb60597c86cf5052751e7a20d7b5f2ba833e302dbd4480e86f6122bc76f4",
+      "original_dossier_sha256": "c0168609829228662af94b463301d7240ec5b63862253a1d85895032677f84ac",
+      "transport": "LF text normalization only"
+    },
+    {
+      "path": "PROOF925.txt",
+      "bytes": 6219,
+      "sha256": "6b7033c4a89111640985ff4ee2e8c579af9b43d77e08abca499aced30cff0e5f",
+      "original_dossier_sha256": "6b7033c4a89111640985ff4ee2e8c579af9b43d77e08abca499aced30cff0e5f",
+      "transport": "original bytes"
+    },
+    {
+      "path": "check925.py",
+      "bytes": 4006,
+      "sha256": "989ffec8b2727679f69a55ffc02204f54a6067d5c2499103cf834fbac97eaa7b",
+      "original_dossier_sha256": "989ffec8b2727679f69a55ffc02204f54a6067d5c2499103cf834fbac97eaa7b",
+      "transport": "original bytes"
+    },
+    {
+      "path": "CHECK925.json",
+      "bytes": 6021,
+      "sha256": "0ed3750467245c395fd82e1473743779c414ea68fd8d5a39067a86ee74968ce8",
+      "original_dossier_sha256": "ac9fbb456595227a24b6fd831d4be0eac6cc2c0d949a7e328f24ac6e4d39acc6",
+      "transport": "LF text normalization only"
+    },
+    {
+      "path": "READINGS925.json",
+      "bytes": 3671,
+      "sha256": "3747d879b5d2c5462cd9d1a634ad7c22d3a129f520ce82f04615a2399c7d4c00",
+      "original_dossier_sha256": "1e4826778dfff0febfdefb171aefb641097b69730bd029955b3d17603ccf6d06",
+      "transport": "LF text normalization only"
+    },
+    {
+      "path": "SUBGRAPH925.json",
+      "bytes": 7952,
+      "sha256": "5691d0a96efe42ec6d96156362cbefd5cba320245dd60ab542e228e77437b530",
+      "original_dossier_sha256": "950a674619e64ebfe6db388b8fa742411fe92c897cf4be238ca28c3e0baab948",
+      "transport": "LF text normalization only"
+    }
+  ],
+  "normalization": "Repository text requires LF. original_dossier_sha256 preserves input provenance; sha256 binds public transport bytes. Native D dossiers and exact922 PDF are unchanged."
+}

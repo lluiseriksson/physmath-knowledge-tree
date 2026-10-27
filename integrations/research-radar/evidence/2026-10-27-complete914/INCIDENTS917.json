@@ -1,0 +1,59 @@
+{
+  "utc": "2026-10-27T10:02:32.465834+00:00",
+  "input_proof_fatal_errors_found": [],
+  "source_incidents": [
+    {
+      "id": "S1",
+      "source": "https://arxiv.org/html/2510.06183v2",
+      "location": "Proposition6.13 displayed proof, numbered fact2, HTML version only",
+      "test": {
+        "w": [
+          0,
+          0,
+          0
+        ],
+        "gamma": "1/2",
+        "actual_left_side": "3/4",
+        "displayed_right_side": "5/4"
+      },
+      "correct_identity": "1-|w_gamma|^2=(1-gamma)(1-|w|^2+gamma(1-w3)^2)",
+      "consequence": "Displayed equality false. Does not refute proposition or PROOF914; no PDF comparison or full repair audit performed."
+    }
+  ],
+  "technical_incidents": [
+    {
+      "id": "T1",
+      "problem": "First Unicode console source extraction failed under cp1252",
+      "resolution": "Repeated with Python -X utf8; source passage then read; no input/output corruption"
+    },
+    {
+      "id": "T2",
+      "problem": "Grouped outputs sometimes truncated",
+      "resolution": "Relevant passages re-read in separate bounded calls; hidden truncated text not counted as read"
+    },
+    {
+      "id": "T3",
+      "problem": "Floating singular-order Gram slack minima between -1.7e-13 and -5.7e-13",
+      "resolution": "Retained raw residuals, interpreted only under diagnostic tolerance1e-8; universal order established analytically, not from floating sign"
+    }
+  ],
+  "controls": {
+    "supplied_rerun_semantically_identical_to_CHECK915": true,
+    "independent_controls_passed": true,
+    "independent_source_code": "controls917.py",
+    "numerical_certificates": false,
+    "universal_claims_proved_by_samples": false
+  },
+  "process": {
+    "requested_model": "GPT-6 Astra",
+    "requested_effort": "xhigh",
+    "effective_model_effort_attested": false,
+    "isolation_or_independence_attested": false,
+    "filesystem_shared": true,
+    "subagents": false,
+    "root_additional_primary_references": [
+      "2510.06183v2",
+      "2312.17450v1"
+    ]
+  }
+}

@@ -1,0 +1,217 @@
+AUDITORÍA ADVERSA 917 — 27 de octubre de 2026
+Teorema estructural de reverse-DPI completo y obstrucción MI para amplitude damping
+
+DICTAMEN
+
+La demostración de PROOF914.txt es matemáticamente válida bajo las hipótesis expresamente declaradas. No he encontrado un paso falso o una hipótesis oculta necesaria que invalide (T), el ejemplo AD, el ejemplo qutrit o la igualdad eta_MI^cb(A_p,id)=1 para cada p fijo en (0,1). La sucesión racional propuesta prueba esta última igualdad con R de dimensión 2, estados separables y no clásicos sobre R. Este dictamen procede de revisar los argumentos universales; los cálculos finitos adjuntos son controles adicionales y no pruebas universales.
+
+No certifico prioridad, novedad, óptimo de la constante, verificabilidad formal ni resultados nuevos de capacidad/aditividad. Hay antecedentes ordinarios directos para AD; la bibliografía del input necesita ampliación. Las reservas y las incidencias se conservan abajo. No se asigna nota numérica ni grado de manuscrito.
+
+PROCEDENCIA Y LÍMITES DE LA REVISIÓN
+
+Se recibió un encargo de /root para revisar únicamente el paquete INPUT916, sin leer ESTADO, evaluaciones/notas anteriores, otros chats o scores. Se leyó D:\LEEME.md. Antes de leer payloads se verificó INPUT916.json: SHA256 5a308554cc7c97a3608e434737efa041e8454b60f15baa31348a68ed38270ea4. Los cinco tamaños/hashes coincidieron. Al sellar se repite esa comprobación en INPUT_VERIFY917.json. No se ejecutó freeze916.py; el input no se modificó.
+
+Se leyó completo PROOF914.txt y check915.py; se inspeccionaron SOURCES916.json y SUBGRAPH916.json sólo como procedencia/contexto, sin importar certificaciones anteriores. CHECK915.json pertenece al paquete de controles, no es una evaluación de manuscrito. Se reejecutó check915.py con salida explícita exclusivamente en esta carpeta. No se importó su implementación en los controles propios.
+
+Configuración solicitada: GPT-6 Astra, esfuerzo xhigh. La identidad/esfuerzo efectivos, el aislamiento y la independencia no están atestados por una prueba externa. Se comparte filesystem con el agente padre. Hubo dos mensajes del padre con referencias primarias adicionales después de congelarse el input; se registran como tales. No se delegó, no se creó otro chat, no se publicó y no se editó el repositorio, su estado raíz ni PDF alguno. Esta es una revisión matemática razonada por un agente, no una certificación independiente formal.
+
+Las únicas escrituras de trabajo se hicieron en C:\Trabajo\airr\2026-10-27_nilpotent917-audit; la entrega se refleja exactamente en D:\Proyectos\airr-investigacion\2026-10-27_nilpotent917-audit. Los cuerpos íntegros de fuentes externas no se guardaron ni redistribuyeron. READINGS917.json registra URLs, alcance y metadatos de recuperación; no convierte consultas parciales en auditorías de artículos enteros.
+
+1. HIPÓTESIS REALES Y CONCLUSIÓN
+
+Todos los espacios son finitos. M,N:L(A)->L(B) son CPTP y M(I_A)>0. Q:L(B)->L(B) es CP y TNI, Q^k=0 para algún entero k>=1. a>=0, c>0, F=F*>0 invertible, F^2>=mI con m>0, y
+
+  Q M <=_cp c M,
+  N=Ad_F (id+aQ) M,       Ad_F(X)=FXF.
+
+La conclusión es, para cada R finito y cada par de estados con supp(rho) contenido en supp(sigma),
+
+  D(N_R rho || N_R sigma) >= L D(M_R rho || M_R sigma),
+  L=m/[(1+ac)(sum_{j=0}^{k-1}(a sqrt(c))^j)^2].
+
+La constante es uniforme en R. No presupone una desigualdad entrópica de referencia, una reducción de R a un qubit ni una cota sobre su dimensión. No se prueba una extensión a referencias infinitas. No se elimina la dominación CP, ni la nilpotencia, ni TNI, ni M(I)>0. La condición a sqrt(c)<1 sí se evita. No se afirma que todas esas hipótesis sean necesarias para toda posible desigualdad inversa; son suficientes para esta demostración.
+
+Debe mantenerse N CPTP como hipótesis: no se sigue en general de Q TNI y de F positivo. Tampoco se supone que Ad_F(id+aQ) sea un canal en todo L(B); basta que su composición con M sea el canal N. En el ejemplo qutrit sí se verifica esa propiedad más fuerte.
+
+2. REVISIÓN DE LA FORMA BKM, INCLUIDOS TANGENTES CON TRAZA
+
+Para S>0 y Y=Y*, g_S(Y)=integral_0^infinito Tr[Y(S+tI)^(-1)Y(S+tI)^(-1)]dt es una forma cuadrática positiva definida sobre el espacio real de Hermitianos. En una base propia de S, g_S(Y)=sum_ij ell(s_i,s_j)|Y_ij|^2, con ell(a,b)=(log a-log b)/(a-b)>0 y ell(a,a)=1/a. Por ello sqrt(g_S) es una norma de Hilbert y admite desigualdad triangular. Esta norma no requiere TrY=0.
+
+La extensión de monotonicidad a tangentes generales es correcta. Para S de traza 1, escribir Y=tS+Y0, t=TrY, TrY0=0. Se tiene J_S(S)=P_supp(S), luego g_S(S,Y0)=TrY0=0 y g_S(S)=1. Una aplicación CPTP conserva t y lleva la descomposición a t Phi(S)+Phi(Y0); ambos términos de traza contribuyen t^2. La monotonicidad del término Y0 se obtiene diferenciando DPI en S+uY0, con u suficientemente pequeño en el soporte. Si Phi(S) es singular, todo Phi(Y0) queda soportado en Phi(S); basta restringir a ese soporte. Para TrS=q, la contribución es (TrY)^2/q y g_{qS0}(Y)=q^(-1)g_{S0}(Y), lo que completa el escalado.
+
+Para Q TNI, sea E=I-Q*(I)>=0. La extensión
+
+  Phi(T)=Q(T) op Tr(ET)
+
+es CP y TP hacia una suma directa con bandera escalar. La forma BKM de una suma directa suma las contribuciones de sus bloques. Así,
+
+  g_{Q(S)}(QY)+[Tr(EY)]^2/Tr(ES) <= g_S(Y)
+
+cuando la traza del bloque de fallo es positiva. Si Tr(ES)=0, de -dS<=Y<=dS se deduce Tr(EY)=0; se omite ese bloque nulo. No aparece una división inválida 0/0. La misma desigualdad -dS<=Y<=dS da soporte QY contenido en soporte QS. Por tanto descartar la contribución no negativa de la bandera prueba exactamente el paso usado.
+
+Para Q tensor id_R, la extensión se hace sobre el espacio conjunto BR. El funcional de fallo puede ser Tr[(E tensor I_R)T]. Que esta rama descarte R no afecta la aplicación de monotonicidad ni la salida de éxito Q_R(T). No es necesario construir una bandera que preserve R. Éste es un punto válido, aunque conviene expresar la extensión explícitamente en una versión publicable.
+
+3. ORDEN DE BASES, SOPORTES SINGULARES Y CONGRUENCIA
+
+El paso de orden es correcto aun sin conmutatividad. Si U<=bV, para t>0:
+
+  (U+tI)^(-1)>=(bV+tI)^(-1).
+
+Para A>=B>=0, la matriz A^T tensor A-B^T tensor B es
+  (A^T-B^T) tensor A + B^T tensor (A-B)>=0.
+La transposición conserva positividad de matrices Hermitianas; la forma cuadrática vectorizada coincide con Tr[YAYA] para Y Hermitiano. Por tanto cada integrando se compara en la dirección correcta. Integrar y sustituir t=bu da g_U(Y)>=b^(-1)g_V(Y). No se ha usado la falsa inferencia de que CP implique positividad del superoperador en producto Hilbert-Schmidt.
+
+La convención singular requiere que Y esté soportado en U; si U<=bV, ese soporte queda contenido en el de V. Una justificación inequívoca es comparar U+delta I y bV+delta I en el mismo espacio, integrar y dejar delta bajar a cero. En una base propia, los elementos de Y fuera del soporte de U son cero y el límite es precisamente la forma restringida, mientras V+delta I/b converge a V. En la aplicación U=Q(S), V=S y Y=QZ, ese soporte ya se estableció. No se está extendiendo una forma finita a tangentes fuera de su dominio.
+
+La congruencia tampoco es DPI de un canal. Se factoriza
+  FSF+tI=F(S+tF^(-2))F.
+Al introducir FYF y usar la ciclicidad de traza, el integrando es
+  Tr[Y(S+tF^(-2))^(-1)Y(S+tF^(-2))^(-1)].
+Como F^(-2)<=I/m, el mismo argumento de orden lo acota inferiormente por el integrando para S+(t/m)I. La sustitución t=mu aporta el factor m, no 1/m. Por ello
+  g_{FSF}(FYF)>=m g_S(Y).
+Este paso es válido para todo Y Hermitiano y se usa únicamente con S>0. Las comprobaciones propias incluyen F y S que no conmutan.
+
+4. NORMA DE Q, INVERSO FINITO Y AMPLIFICACIÓN
+
+Con sigma>0 en AR, existe epsilon>0 con sigma>=epsilon I_AR; por M(I)>0 resulta S=M_R(sigma)>0. La dominación CP se conserva al tensorizar, y proporciona Q_R(S)<=cS incluso si sigma está correlacionado o entrelazado.
+
+Para TODO Hermitiano Z del espacio BR, combinando los dos resultados anteriores:
+  g_S(Q_R Z)<=c g_{Q_R S}(Q_R Z)<=c g_S(Z).
+No hace falta que Z, QZ o Q^jZ pertenezcan a la imagen de M_R. La dominación sólo se aplica a la base S; la monotonicidad de Q_R controla cualquier tangente. Este punto evita una posible brecha de invariancia de la imagen.
+
+Así ||Q_R||_S<=sqrt(c), y por composición ||Q_R^j||_S<=c^(j/2). La identidad algebraica
+  (id+aQ_R)^(-1)=sum_{j=0}^{k-1}(-aQ_R)^j
+es exacta: multiplicar produce id+(-1)^(k-1)a^kQ_R^k=id. No necesita una serie infinita ni convergencia. El inverso no tiene por qué ser positivo o CP y la prueba no lo trata como tal. Sobre Z=(id+aQ_R)Y, la desigualdad triangular da ||Y||_S<=P_k||Z||_S.
+
+En paralelo N_R(sigma)=F_R(S+aQ_R S)F_R<=(1+ac)F_RSF_R. La concatenación correcta es
+  g_{N_R sigma}(N_R X)
+  >= (1+ac)^(-1)g_{F_RSF_R}(F_RZF_R)
+  >= m(1+ac)^(-1)g_S(Z)
+  >= L g_S(Y),
+con Y=M_R(X). Todo factor y sentido de desigualdad se conserva. Q_R^k=0, Q_R es CP TNI y F_R^2>=mI con las mismas constantes. Por eso la cota es uniforme para todo R finito, no una extrapolación de muestras con R=2 o R=3.
+
+Los casos degenerados a=0 y Q=0 tampoco rompen el razonamiento. La prueba no exige M inyectivo: si M_R(X)=0, también N_R(X)=0 y la desigualdad es vacua en ese tangente. El cociente sólo se forma cuando su denominador es positivo.
+
+5. INTEGRACIÓN Y PASO A FRONTERA
+
+Para rho,sigma>0, X=rho-sigma tiene traza cero y S_t=sigma+tX permanece definido positivo. Si f(t)=D(S_t||sigma), f(0)=f'(0)=0 y f''(t)=g_{S_t}(X). Por integración doble,
+  D(rho||sigma)=integral_0^1 (1-t)g_{S_t}(X)dt.
+M_R y N_R son TP, así que la identidad se aplica a sus pares de salida. Las salidas son definidas positivas: para M por M(I)>0 y para N porque F(S+aQS)F>=FSF>0. Integrar la desigualdad métrica prueba (T) para pares interiores.
+
+Para los pares singulares del enunciado, tomar rho_e=(1-e)rho+e omega y sigma_e=(1-e)sigma+e omega con omega=I/d_AR. No se sustituye la base por un soporte elegido de forma inconsistente. En dimensión finita supp(rho) contenido en supp(sigma) implica rho<=C sigma para algún C finito; la positividad del canal preserva esta desigualdad y asegura relativa entropía finita de cada par de salida. La convexidad conjunta da
+  D(Phi rho_e||Phi sigma_e)<=(1-e)D(Phi rho||Phi sigma),
+y la semicontinuidad inferior da la cota opuesta para el liminf. Por tanto las dos relativas entropías convergen a sus valores finitos y se puede pasar al límite en la desigualdad. No se ha intercambiado un límite singular con la integral BKM sin justificación.
+
+6. APLICACIONES ESTRUCTURALES
+
+AD. Con s_i=1-p_i, d=p2-p1, M=A_p1, N=A_p2, Q(X)=JXJ* y J=|0><1|, se cumple J*J=|1><1|<=I y Q^2=0. M=Ad_diag(1,sqrt(s1))+p1Q; QM=s1Q. De c=s1/p1 resulta cM-QM=c Ad_diag(1,sqrt(s1)), CP. M(I)=diag(1+p1,s1)>0. La identidad N=Ad_F(id+aQ)M, F=diag(1,sqrt(s2/s1)), a=d/s1, se verifica en los bloques U,C,V, incluidos bloques de operadores de R arbitrario. m=s2/s1.
+
+Entonces 1+ac=p2/p1 y a sqrt(c)=d/sqrt(p1s1). La fórmula L_AD del input sigue exactamente. Para p1=1/4 y p2=1/2 es 1-sqrt(3)/2. No se certifica el óptimo completo. Los límites p1=0 o p2=1 no están cubiertos; no se toma un límite de constantes positivas para afirmar positividad en esos extremos. Si p1=p2, la comparación identidad da constante 1 por separado.
+
+Qutrit. J=|0><1|+|1><2| tiene J*J=diag(0,1,1), J^3=0 y J^2 distinto de cero. Los Kraus D_b, sqrt(b)JD_b y bJ^2D_b suman K*K=I porque D_b^2=diag(1,(1+b)^(-1),(1+b+b^2)^(-1)). En particular M_b(I)>=D_b^2>0. La cancelación
+  (1/b)M_b-QM_b=(1/b)Ad_D_b
+es exacta; c=1/b es una dominación CP, aunque pueda ser grande.
+
+Para 0<a<1, F_a^2=diag(1,1-a,1-a+a^2) y F_a^2+aJ*F_a^2J=I, luego K_a=Ad_Fa(id+aQ) sí es CPTP. Su autovalor mínimo es 1-a. Para b=1/100,a=1/2: c=100, a sqrt(c)=5, P_3=31 y L=(1/2)/(51*961)=1/98022. El ejemplo supera el régimen de una cota por serie de Neumann con norma menor que uno; no es un ejemplo sin dominación CP. Sus constantes son conservadoras, no optimizadas.
+
+7. DE LA DESIGUALDAD COMPLETA A INFORMACIÓN MUTUA
+
+Para cualquier rho_AR, supp(rho_AR) está contenido en supp(rho_A) tensor supp(rho_R): los proyectores sobre núcleos de los márgenes tienen esperanza cero y anulan el estado positivo. Por tanto sigma=rho_A tensor rho_R es admisible. Al ser M,N TP, sus salidas sobre sigma son exactamente M(rho_A) tensor rho_R y N(rho_A) tensor rho_R. Aplicar (T) prueba I(R:B_N)>=L I(R:B_M), con denominador positivo cuando se define el coeficiente de expansión.
+
+Esto compara el mismo estado y el producto de sus márgenes bajo cada canal. No compara D(N(rho)||M(sigma)) ni resta una divergencia de entrada de dos canales. No es un resultado de divergencia amortizada de canales. Tampoco autoriza multiplicar constantes para potencias tensoriales o transferir fórmulas ordinarias exactas a referencia cuántica.
+
+8. AUDITORÍA DE eta_MI^cb(A_p,id)=1
+
+Sea s=1-p>0 fijo. S=diag(1-x,x) tensor diag(1-r,r), X=sigma_x tensor sigma_x, rho=S+epsilon X. X tiene ambas trazas parciales nulas, luego los márgenes de rho son EXACTAMENTE los de S. El canal A_p multiplica sigma_x por sqrt(s), por lo que la perturbación de salida es epsilon sqrt(s)X y la base es diag(1-sx,sx) tensor diag(1-r,r). Las cuatro entradas no diagonales dan exactamente los dos términos multiplicados por 2 de cada fórmula g_in y g_out; no falta un bloque ni un factor s.
+
+Para x,r fijos y epsilon->0, la identidad Hessiana da D(rho||S)=epsilon^2 g_S(X)/2+o(epsilon^2), y análogamente a la salida. El denominador es positivo para epsilon>0. Para r->0 con x fijo, cada log-media tiene término log(1/r) dividido por su extremo no nulo. El cociente tiende a
+  s[(1/(1-sx))+(1/(sx))]/[(1/(1-x))+(1/x)]
+  =(1-x)/(1-sx).
+Después x->0 da 1. DPI aporta la cota superior 1. Este argumento de límites iterados es correcto, pero por sí solo no justificaría imponer una epsilon arbitraria simultáneamente dependiente de x y r. La prueba adicional por orden sí resuelve esa cuestión.
+
+Sucesión única. Para n>=3, x=1/n, r=2^(-n^2), epsilon=r/n^2. Todas las entradas de rho_n son racionales y Tr rho_n=1. S>=rI/n y ||X||_infinito=1; de ahí
+  -(1/n)S<=epsilon X<=(1/n)S.
+En particular rho_n>0 y sus márgenes son los indicados. Para todo t en [0,1], (1-1/n)S<=S+t epsilon X<=(1+1/n)S, y lo mismo tras el canal. El orden BKM da, sin residuo Taylor indeterminado,
+  epsilon^2 g_S(X)/(2(1+1/n)) <= D(rho_n||S)
+  <= epsilon^2 g_S(X)/(2(1-1/n)).
+La expresión de salida usa g_{A_p S}(A_p X); el factor sqrt(s) ya forma parte del tangente. Dividiendo las cotas se obtiene el límite inferior (n-1)/(n+1) por el cociente BKM. Los denominadores son estrictamente positivos.
+
+Control explícito de la asintótica simultánea. Sea T_n=n^2 log2 y, para q=d/n con d fijo en (0,1], defina
+ H_n(q)=[T_n+log((1-q)/q)+log(1-r)]/(1-q-r)
+       +[T_n-log((1-q)/q)+log(1-r)]/(q-r).
+Ésta es la suma de las dos log-medias, con signos y denominadores escritos sin ambigüedad. log((1-q)/q)=log n-log d+O_d(1/n), nr->0; el segundo sumando es (n/d)T_n(1+o(1)), mientras el primero es O(T_n). Así g_in=2H_n(1/n)~2n^3 log2 y g_out=2sH_n(s/n)~2n^3 log2. El cociente BKM tiende a 1 para cada p fijo; la cota por orden y DPI prueban que el cociente finito de MI también tiende a 1. No hay uniformidad afirmada al variar p hacia 1. En p=1 la salida es constante y el coeficiente es 0; en p=0 es 1 trivialmente.
+
+Separabilidad. Con D_A y D_R del input, poner
+  t=epsilon/sqrt(x(1-x)r(1-r)),
+  t^2=r/[n^2(n-1)(1-r)] en la sucesión.
+Se cumple 0<t<1. Las cuatro matrices A_a=2D_A P_a D_A y R_b=2D_R P_b D_R (a,b=+1,-1) son estados puros normalizados, pues Tr(D_A P_a D_A)=Tr(D_R P_b D_R)=1/2. Se tiene la descomposición explícita
+  rho=sum_{a,b}(1+tab)/4 A_a tensor R_b.
+Los pesos son positivos y suman 1. Esto demuestra separabilidad sin depender de PPT ni de los controles numéricos. El centro I_4+t sigma_x tensor sigma_x es un elemento del cono separable; el filtrado local conserva ese cono.
+
+No-clasicidad sobre R. rho_R=diag(1-r,r) tiene espectro simple; cualquier estado clásico sobre R debe conmutar con I_A tensor rho_R. Aquí el conmutador tiene entradas de módulo epsilon(1-2r)>0. Por tanto no hay otra base en R que haga al estado clásico. El tamaño es A=qubit, R=qubit, total dimensión 4: la expresión inglesa 'two-qubit-reference witness' debe aclararse para no sugerir que R tiene dos qubits.
+
+La comparación con auxiliares clásicos no exige entrelazamiento: para un estado clásico sobre R, I(R:B)=sum_j p_j D(A_p rho_j||A_p rho_bar) y es <=eta_D(A_p) I(R:A). El límite ordinario estricto eta_D(A_p)<=sqrt(1-p)<1 de BGSW §6 distingue estos testigos separables no clásicos de cualquier auxiliar clásico. La identidad MI=1 no es la observación trivial de que un canal local deja intactas diferencias almacenadas sólo en R.
+
+9. DISTINCIONES DE COEFICIENTES Y CONSECUENCIA OPERATIVA
+
+El coeficiente de este input es sup_{rho_AR:I(R:A)>0} I(R:B)/I(R:A), con R cuántico finito arbitrario. Es el de Definition7.1 de BGSW al tomar M=id. El coeficiente ordinario sup D(A_p rho||A_p sigma)/D(rho||sigma), sobre estados de A solamente, puede ser estrictamente menor que 1; no hay contradicción.
+
+Si se permiten dos estados arbitrarios rho_AR,sigma_AR sin igualar sus márgenes de referencia, el sup completo de relativa entropía es 1 para cualquier canal: basta rho=alpha_A tensor tau_R y sigma=alpha_A tensor upsilon_R. Eso no prueba la afirmación de este input, cuyo segundo estado debe ser el producto de los márgenes del primero. En 2608.27171v1 la terminología 'complete' exige márgenes R iguales; también se distinguen cocientes condicionales que restan D(rho_R||sigma_R). Sus definiciones tampoco deben confundirse con el uso antiguo sin esa restricción, ni con amortización de dos canales.
+
+Para el canal principal A_gamma con 0<gamma<1/2, su complementario puede identificarse con A_(1-gamma) y A_q A_gamma=A_(1-gamma) para q=(1-2gamma)/(1-gamma), que está en (0,1). La igualdad auditada da eta_MI^cb(A_q,id)=1. El factor 1-eta de la condición suficiente de BGSW §7 es cero; su intervalo de mezcla queda reducido a p=1. Por ello la positividad de L no produce mediante ese criterio un ejemplo no trivial informacionalmente degradable y no degradable. Esto no demuestra la imposibilidad de todo ejemplo de esa clase ni refuta resultados ordinarios de capacidad o convergencia de algoritmos. El input mantiene correctamente ese límite.
+
+10. CONTRASTE PRIMARIO Y COBERTURA
+
+Se revisaron fuentes específicas; una búsqueda sin resultados no se considera evidencia de novedad. Las descripciones siguientes se limitan al alcance efectivamente contrastado, no a certificar todas las demostraciones de esos artículos.
+
+[BGSW] https://arxiv.org/html/2411.19890v3
+§§4.1–4.3 y §7: el puente Hessiano y el orden de bases son antecedentes directos. Lemma4.3 usa una mezcla de canales y una factorización CPTP adicional; su cota positiva es perturbativa. No contiene por simple sustitución el inverso nilpotente general con filtro. El criterio de Bloch de §4.3 es qubit ordinario. Definition7.1 coincide con MI-completo aquí. La distinción de alcance requiere una prueba uniforme adicional, que es la de §§2–5 de este informe. El argumento no puede presentarse como invención del método BKM o del orden CP.
+
+[Han–Li] https://arxiv.org/html/2610.29373v1
+Definiciones (19)–(30), Theorems2–4 y contexto de §3.2: sus coeficientes optimizan estados del qubit de entrada. Theorem4 afirma ya el valor ordinario exacto p1(1-p2)/(p2(1-p1)). Por tanto la positividad ordinaria AD y esa fórmula no son aportaciones nuevas de 914. Los enunciados no proporcionan la extensión uniforme en una referencia cuántica, y no se han auditado aquí todas sus pruebas de convergencia o coeficientes.
+
+[Hirche–Rouzé–França] https://arxiv.org/html/2011.05949v4
+§§2.1–2.2: distingue orden completamente menos ruidoso y orden fully quantum; Lemma2.1 concierne a una referencia clásica en el primero. La observación de coeficiente completo igual a 1, sin restricción de los márgenes, no cubre eta_MI(A_p)=1. Sirve como advertencia contra identificar definiciones distintas.
+
+[Hirche–George–Nuradha–Wilde] https://arxiv.org/html/2608.27171v1
+Antecedente localizado durante esta auditoría, no incluido en INPUT916. Definiciones1,2,6 y §3.2, Lemma5/Corollary3: identifica eta_MI con el coeficiente de referencia producto eta_D^p y separa éste de versiones ordinarias, completas con margen igual y condicionales. Esta equivalencia general ya existe. Los pasajes revisados no prueban el valor AD=1 ni la sucesión separable. Debe añadirse a la bibliografía antes de sostener cualquier originalidad; no se deduce novedad de la ausencia del término 'amplitude' en el texto.
+
+[Iyer–Wu–Belzig–Smith] https://arxiv.org/html/2510.06183v2
+Referencia remitida por /root después de congelar INPUT916. §2.4 define coeficientes ordinarios y Proposition6.13 afirma positividad AD qubit para cualquier kappa de su clase. Es un antecedente directo de positividad ordinaria, más amplio en elección de métrica; no aporta una cuantificación sobre A tensor R arbitrario. Se leyó su prueba mostrada, pero no se certifica: su hecho numerado 2 contiene una igualdad falsa en el HTML consultado (véase incidencia S1). Esa incidencia no convierte en nueva la afirmación antecedente ni refuta por sí sola la proposición; 914 tiene prueba BKM independiente.
+
+[LaRacuente–Smith] https://arxiv.org/html/2312.17450v1
+Referencia remitida por /root después del input. §4.3 Proposition4.13 compara mezclas con un mismo ruido theta dentro del primer par, y un mismo omega en el segundo, bajo theta<=c omega. El tangente es un múltiplo escalar de rho-sigma. En 914 el salto Q M(rho) depende del estado y cambia el tangente a (id+aQ)M(rho-sigma); para R, incluso el bloque de salto depende de rho. No hay sustitución directa que satisfaga el ruido común para todo par. Sí es antecedente de la estrategia orden BKM e integración tras un decaimiento previo.
+
+Conclusión bibliográfica acotada: los resultados ordinarios AD y varias piezas metodológicas están cubiertos. Ningún enunciado revisado proporciona directamente TODA la hipótesis estructural de 914, su constante uniforme y la sucesión separable de MI=1. Esto no certifica que sean novedosos ni que no exista otra deducción breve o fuente cubriente. La nueva parte defendible como derivación en este dossier es el control explícito del inverso finito y su combinación con el filtro, más el testigo MI; su prioridad queda abierta. No se realizó una búsqueda exhaustiva.
+
+11. OBJECIONES Y RESERVAS QUE SE CONSERVAN
+
+O1 — Bibliografía incompleta. INPUT916 no incluye 2608.27171v1, 2510.06183v2 o 2312.17450v1. Deben incorporarse con sus verdaderos alcances. Esto impide promocionar una afirmación de novedad a partir del paquete actual. No afecta la validez algebraica de la demostración.
+
+O2 — Restricciones sustantivas. CP imagen-dominación Q M<=cp cM, nilpotencia, TNI y M(I)>0 permanecen. El ejemplo con a sqrt(c)>1 elimina una exigencia de pequeña norma, no la dominación CP. Una descripción como 'reverse-DPI sin dominación' sería falsa.
+
+O3 — Definiciones y cocientes. La notación cb necesita una definición visible y denominadores positivos/finito explícitos. Debe distinguirse MI de referencias arbitrarias en dos estados, de igualdad de márgenes, de CMI y de divergencia amortizada entre dos canales. El input los distingue en lo esencial; la literatura adicional hace todavía más necesario ese cuidado.
+
+O4 — Optimalidad y alcance operacional. L no es óptima por esta prueba; usar el valor ordinario de Han–Li como constante completa no queda autorizado. No se ha probado multiplicatividad ni capacidad/aditividad nueva. El resultado eta_MI=1 bloquea una condición suficiente concreta; no es una imposibilidad general de construcción.
+
+O5 — Desarrollo de soporte. Las frases breves de 914 sobre regularización y bandera son correctas, pero deben expandirse con el bloque de fallo nulo y el soporte QZ contenido en QS para que no parezcan usar formas indefinidas. La expansión completa está en §§2–5 de este informe. Es una mejora de exposición, no un lema adicional sin demostrar.
+
+O6 — Fuente con error local. La incidencia S1 de la fuente 2510 no se borra porque el teorema auditado sobreviva. No debe citarse la totalidad de esa prueba como 'verificada por917'. Tampoco es prueba de que su proposición sea falsa.
+
+O7 — Proceso y evidencia. Los cálculos numéricos no son certificados de intervalos y las pruebas algebraicas finitas no demuestran el teorema universal. No están atestados la identidad/esfuerzo efectivos del modelo ni independencia de filesystem. Esta limitación de procedencia se conserva aun cuando el argumento matemático sea válido.
+
+12. CONTROLES, INCIDENCIAS Y SELLADO
+
+RERUN915.json reproduce el script suministrado: dos controles AD, qutrit, testigos racionales, nueve bases métricas seleccionadas y límite inferior diagnóstico 0.9751686150482243 para n=100,p=1/2. El hash de su script coincide con el payload. No se cambiaron tests para hacerlos pasar.
+
+controls917.py es propio: construye mapas nilpotentes con dos Kraus, alturas 3 y 4, filtros no conmutativos, referencias 2 y 3, y verifica sobre todo el espacio Hermitiano de dimensiones 36,64,81 cada eslabón métrico, incluidos tangentes de traza no nula y QS singular. Todos pasan dentro de tolerancia 1e-8. Los mínimos negativos del orden singular, entre -1.7e-13 y -5.7e-13, son residuos numéricos en direcciones de núcleo; se conservan en CONTROLS917.json, no se redondean a certificados positivos. La prueba exacta de orden es la de §3.
+
+También verifica exactamente márgenes, cotas de orden y conmutador de cuatro estados racionales; calcula directamente MI finita por los dos bloques 2x2, a 99–452 dígitos, para n=3,5,10,20 y p=.01,.5,.99. Todos los cocientes respetan DPI y las cotas de Hessiana. Por ejemplo n=20,p=1/2 da 0.9714126148726451438; la MI de entrada es del orden 10^(-242.266), de modo que un cálculo ingenuo en doble precisión sería inadecuado. Ninguna de estas muestras sustituye la asintótica universal de §8.
+
+Incidencia S1: en la prueba HTML de 2510.06183v2 Proposition6.13, el hecho 2 escribe una expansión con signos positivos que a w=0,gamma=1/2 da 5/4, aunque el lado izquierdo vale 3/4. La identidad correcta es 1-|w_gamma|^2=(1-gamma)[1-|w|^2+gamma(1-w3)^2]. Además la desigualdad global que usa gamma^2(1-w3)^2 no sigue de esa identidad para todo gamma>1/2. Se registra como problema del pasaje mostrado, sin revisar todas las posibles reparaciones ni comparar el PDF. No se usa ese paso en 914.
+
+Incidencia T1: una primera impresión de texto Unicode de una fuente falló por codificación cp1252 de consola. Se repitió con Python -X utf8 y se leyó el pasaje. No afectó al input ni produjo pérdida de archivos.
+
+Incidencia T2: varias respuestas de herramientas estaban truncadas al agrupar lecturas. Se volvieron a consultar las secciones relevantes por separado y con extracción en memoria de las fórmulas alttext. No se asume haber leído lo oculto por truncamiento.
+
+MANIFEST917.json enumera hashes/tamaños de los payloads de esta auditoría. Se excluye a sí mismo y a COPYCHECK917.json para evitar autohashes circulares; COPYCHECK917 incluye el hash del manifiesto y compara las dos carpetas. La comparación final cubre además COPYCHECK917 por igualdad byte a byte, con resultado en la salida final del sellador. INPUT_VERIFY917.json registra la revalidación completa del input al sellar. La ausencia de una nota numérica es deliberada y no una evaluación omitida.
