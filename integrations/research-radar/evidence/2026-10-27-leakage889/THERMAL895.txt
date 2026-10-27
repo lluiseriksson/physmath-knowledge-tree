@@ -1,0 +1,50 @@
+Targeted source inspection and an exact obstruction to a transfer shortcut
+2026-10-27. Analytical research note, not a manuscript or AIRR assessment.
+
+Source read: OpenAI/math pin7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a,
+preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/thermal.tex.
+The complete thermal theorem and its short proof have now been read.
+Its zero-block entropy dependency remains attributed, not freshly audited.
+
+1. The source's actual structural hypothesis is alpha*delta-beta*eta=K^2.
+   Its two Gram factorizations preserve row sums and K, and hence the same
+   scalar entropy term. For a phase-covariant channel with axial parameters
+   c,r,t, at input population p, the left side is r*p*(1-p), while the right
+   side is c^2*p*(1-p). For N=(3/5,1/4,1/5), their difference is
+   -(11/100)*p*(1-p). Thus the source theorem does not directly apply at
+   interior populations. This locates an actual missing hypothesis.
+
+2. A proposed shortcut would compare the excess F(c)=S(T(c))-e_c(p)
+   monotonically in c, starting from the source GAD value c=sqrt(r)=1/2.
+   This monotonicity shortcut is FALSE even with the identity partner.
+
+   Take p=1/2, r=1/4, t=1/5, and X=(1,0)^T, Y=(0,1)^T. The partner is
+   the identity qubit channel and both branch output entropies are zero.
+   The block output eigenvalues are
+     lambda_plus/minus=(1+r +/- v)/4, v=sqrt(t^2+4c^2),
+     lambda_2/3=(1-r +/- t)/4.
+   The axial roof uses w=sqrt(c^2+t^2), e_c=h((1+w)/2), in nats.
+   At c=3/5 these are v=sqrt(37)/5 and w=sqrt(2/5), and
+
+     F'(c)=-(c/v) ln(lambda_plus/lambda_minus)
+             +(c/w) atanh(w).
+
+   The exact rational comparisons 6/5<v<5/4 and c<w<2/3 give
+     c/v>12/25,
+     lambda_plus/lambda_minus>49>25,
+     (c/w)atanh(w)<atanh(2/3)=(1/2)ln5.
+   Hence
+     F'(3/5)<-(24/25)ln5+(1/2)ln5=-(23/50)ln5<0.
+
+   The output eigenvalues are strictly positive because v<5/4, so the
+   derivative exists in an open neighborhood of this valid channel.
+   This is an analytic falsifier of uniform nondecreasing excess as c
+   increases; it is not a floating observation.
+
+3. The falsifier does NOT refute the desired endpoint entropy inequality,
+   strong superadditivity or channel additivity. The identity partner is
+   itself an already additive control. A proof for N would need a different
+   rectangular matrix estimate or a nonmonotone argument with an explicit
+   margin; no such proof has been obtained in this round. The480 float
+   probes remain noncertifying diagnostics and are not supplemented by
+   more numerical tables. No new score, priority or discovery is asserted.

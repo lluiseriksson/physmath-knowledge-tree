@@ -1,0 +1,66 @@
+{
+  "scope": "Own conditional derivation, limited analytic falsifiers and exploratory controls; no source bodies, no model score or Research Capsule.",
+  "files": [
+    {
+      "path": "PROOF889.txt",
+      "native_sha256": "f99dd7895932726c10200b005fb9c61a8b9bf4a12a48eef29c1f833ede3e8f11",
+      "public_sha256": "447fe73975ebffedb67aae9da40b7797d91c8205ee95aa17ec3691b2933b878f",
+      "normalization": "CRLF to LF only"
+    },
+    {
+      "path": "SOURCES889.json",
+      "native_sha256": "a281ed956228c0fe321acc4ba88006fb9879210b98c2ff644db98e1385c1951f",
+      "public_sha256": "6e0abbb778f1d235d4a6d537d024da8343bfca6bb89698a6d129a72875064e80",
+      "normalization": "CRLF to LF only"
+    },
+    {
+      "path": "SUBGRAPH889.json",
+      "native_sha256": "2a24c428f7c9546503044dcc6bfa873d8c4c303dd40f4a704b6013416ed713a3",
+      "public_sha256": "ae3cffa4bd788cb2ec4211fa43d08d3b558a908e836f8cc51bef891c5f1f55bf",
+      "normalization": "CRLF to LF only"
+    },
+    {
+      "path": "check890.py",
+      "native_sha256": "14dd4417428b8ab872b8f8cb19176f06f99f8685c60162c510f2d5b21cb1661b",
+      "public_sha256": "14dd4417428b8ab872b8f8cb19176f06f99f8685c60162c510f2d5b21cb1661b",
+      "normalization": "none"
+    },
+    {
+      "path": "CHECK890.json",
+      "native_sha256": "d96fe74d5b1c90145c7909f7528e672d76fb17b4d78f7b895bfccf4817e27ef9",
+      "public_sha256": "9f5a35e7c3a401b13deaf02a6b302128de400db01c5acfabf84c4e45b3f3be56",
+      "normalization": "CRLF to LF only"
+    },
+    {
+      "path": "COVERAGE891.json",
+      "native_sha256": "417a825d7d94612238cd4900152fd769d6ddde62a29a346298d6452fdc750c40",
+      "public_sha256": "7bf2cd648c81c18b7ed62c5ecb18e4f85656fc4889c9eecab5fdc86b6fc522d3",
+      "normalization": "CRLF to LF only"
+    },
+    {
+      "path": "probe892.py",
+      "native_sha256": "cac41a38e64614652b7209f2771669fbf9f557c85f7cf7673bd06d7c5da69f1d",
+      "public_sha256": "cac41a38e64614652b7209f2771669fbf9f557c85f7cf7673bd06d7c5da69f1d",
+      "normalization": "none"
+    },
+    {
+      "path": "PROBE892.json",
+      "native_sha256": "f68e2331ae42f3eac6107205c1cb22f6030696662e1e91e2e63a9321b90119fb",
+      "public_sha256": "6c17f9e3f28782ef720cd18b850fb3827c89353d022cd4c08d62b599eb6ab278",
+      "normalization": "CRLF to LF only"
+    },
+    {
+      "path": "THERMAL895.txt",
+      "native_sha256": "3d86667e5af63e563ed0372e4b3ee85ee812c8b21ddc6118bb0e11c67546c1e9",
+      "public_sha256": "3d86667e5af63e563ed0372e4b3ee85ee812c8b21ddc6118bb0e11c67546c1e9",
+      "normalization": "none"
+    },
+    {
+      "path": "COVERAGE895.json",
+      "native_sha256": "14727bb06fd965bda289944071f8505fa5e94e6553941b32b088ca9960fb9914",
+      "public_sha256": "9250ad2036b5662fcd91ac6befd2d8ea9ecbcf3c383e2fa2829e26ff07d02e58",
+      "normalization": "CRLF to LF only"
+    }
+  ],
+  "native_zip_sha256": "b1418ff727f9e2463f85d57826fa4defea363c0c63d096964261c2f5a9d04236"
+}

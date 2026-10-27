@@ -1,0 +1,41 @@
+{
+  "sources": [
+    {
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/openai/math/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/LICENSE",
+      "commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+      "utc": "2026-10-27T07:59:01.386077+00:00",
+      "status": 200,
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "git_blob_sha1": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "bodies_redistributed": false
+    },
+    {
+      "path": "lean/docs/276.md",
+      "url": "https://raw.githubusercontent.com/openai/math/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/lean/docs/276.md",
+      "commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+      "utc": "2026-10-27T07:59:01.410175+00:00",
+      "status": 200,
+      "bytes": 1108,
+      "sha256": "34d51d11d25cf4d1108b3914cfcb7d13a9df63a0cb3dd82071406f07c0640a99",
+      "git_blob_sha1": "657963d5d9ffa8dae2294ad608fa6ac1d9e77087",
+      "bodies_redistributed": false
+    },
+    {
+      "path": "preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/paper.tex",
+      "url": "https://raw.githubusercontent.com/openai/math/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/paper.tex",
+      "commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+      "utc": "2026-10-27T07:59:01.406094+00:00",
+      "status": 200,
+      "bytes": 16205,
+      "sha256": "c25bd71e406cca4f77e1424f33c23aa1e1e56ecbdafedf2ad2c4dac0f0a1c24b",
+      "git_blob_sha1": "8da177e1ce5eb326bb37a77197659e8a59ea2cd5",
+      "bodies_redistributed": false
+    }
+  ],
+  "reading": "Root license Apache2 at pinned commit; scope doc complete; main paper.tex abstract, definitions, main statements and proof strategy read; input sections and full proofs NOT read, no Lean replay.",
+  "distinction": "Paper states arbitrary-partner Holevo/min-output/capacity additivity. Formalization scope doc explicitly excludes arbitrary different partners. Do not confuse the two scopes or infer theorem correctness from either.",
+  "selection": "GAD finite-temperature capacity and partner additivity are not selected as new results because upstream already claims them.",
+  "new_target": "Fixed non-GAD axial N=(3/5,1/4,1/5), with c^2=9/25 != r=1/4. Its arbitrary-partner rectangular entropy inequality remains a candidate, not a certified globally open problem or theorem."
+}
