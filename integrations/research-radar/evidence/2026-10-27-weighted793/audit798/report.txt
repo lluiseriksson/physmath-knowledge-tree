@@ -1,0 +1,86 @@
+AUDITORIA TECNICA ACOTADA 798 — CONTRATO ANALITICO DEL SEPARADOR PONDERADO
+Fecha de trabajo: 2026-10-27. Sin nota. No es una revision del PDF completo.
+
+RESULTADO Y ALCANCE
+
+No encontre un fallo fatal en el contrato matematico congelado ANALYTIC796 / DERIVATION790: bajo la aproximacion global indicada, el argumento ponderado, los factores de Pinsker, el nuevo majorante holomorfo, la norma Bessel y la interpolacion en raices justifican la conclusion condicional. Tres segmentos seleccionados y las comprobaciones escalares pasaron con bolas Arb. Esto NO valida las 320 salidas de795, que no estan en el paquete y no se leyeron, ni establece aqui una cota numerica incondicional de Delta o un umbral energetico. El estado correcto es soporte analitico condicional, con la evidencia global pendiente.
+
+Entrada: MANIFEST798.json SHA256 c331f7a86415b1456ca7b4743df957a9f50cf797ead6b6043478a49e56fa500f. Sus diez payloads y el manifiesto coinciden en C y D. Se conservaron copias propias byte-identicas en input/. Se leyeron completos ANALYTIC780.md, ANALYTIC796.md, DERIVATION790.md, interval778.py, certificate795.py, conclusion797.py, fit794.py, CERTIFICATE779.json y METHOD-SOURCE796.json. FIT794 se parseo completo: estructura de72 filas, longitudes de los vectores y candidato seleccionado; no se reejecuto la busqueda heuristica de72 ajustes ni la campana anterior787. No se leyeron resultados795/797 fuera del paquete.
+
+La identidad observable es la de este agente auditor en la misma conversacion de equipo. Se reutilizan el historial745/781, mensajes del padre y filesystem compartido. La configuracion solicitada fue GPT-6 Astra xhigh; identidad de runtime, esfuerzo efectivo e independencia no estan verificados. No se atribuye aislamiento, cegamiento ni revision humana. No se cambia754 ni se asigna ninguna nota. Los controles numericos observables si registran Python3.12.6, python-flint0.9.0 y192 bits; esto no prueba la identidad del modelo.
+
+A. RESIDUAL PONDERADO, ENTROPIA AWGN Y PINSKER — SOPORTE
+
+Para cualquier ley de entrada comun mu con P=E_mu|X|^2<=1, sea F(|x|^2)=E[g(Y2)|x] y |H(x)-F(|x|^2)|<=eps(1+|x|^2) para TODO x. Integrar da |E_mu(H-F)|<=eps(1+P)<=2eps. Para mu0=CN(0,1) la misma cota es2eps. Asi, la diferencia de ambas expectativas incurre en4eps. No exige soporte acotado, una restriccion por realizacion ni un cuarto momento. Sustituir el residual uniforme anterior por uno ponderado conserva exactamente el presupuesto medio requerido.
+
+Comprobe la identidad para entradas no necesariamente centradas. Con Q2=CN(0,1+b^2), E|Y2|^2=1+b^2P y ruido complejo de varianza1,
+  D(mu W2||Q2)=-h(Y2)+log(pi(1+b^2))+(1+b^2P)/(1+b^2),
+  C2-I2=D(mu W2||Q2)+b^2(1-P)/(1+b^2)>=D.
+La convolucion gaussiana y el segundo momento finito permiten estas entropias finitas; no se resta infinito de infinito. Para W1 el segundo momento de salida es(P+3)/2<=2. La identidad de la bandera y la cota gaussiana de entropia dan I1<=E_mu H-log(2)/2=G1+E_mu H-E_mu0 H. Reset tiene varianza2, no1.
+
+g es real y acotado por M. Con L1 (dos veces la convencion de variacion total con supremo de eventos) y logaritmos naturales, |E_P g-E_Q g|<=M||P-Q||_1<=M sqrt(2D(P||Q)). Por tanto I1<=G1+4eps+M sqrt(2D). Si R=min(I1,I2), delta=C2-R y d=C2-G1-4eps>0, entonces D<=delta y d<=delta+M sqrt(2delta). Resolver esta desigualdad monotona produce
+  delta >= 2d^2/(sqrt(M^2+2d)+M)^2.
+Es uniforme en mu; tomar el supremo de R da la cota condicional de Delta. No requiere convertir la ganancia de un solo canal en Delta ni usar una supuesta distancia entre optimizadores. Para esta cota cuantitativa, la compactitud y la unicidad no son necesarias una vez que existe el observable global.
+
+La identidad de la familia de observables tambien es correcta. Completar el cuadrado en la integral de CN(bx,1) de exp(-a|y|^2)exp(i omega u.y) produce el factor(1+a)^(-1), la atenuacion exp(-omega^2/[4(1+a)]), la media bx/(1+a) y exp(-a b^2|x|^2/(1+a)). Promediar angularmente y usar omega=f(1+a)/b y c=(1+a)exp(f^2(1+a)/(4b^2))d da exactamente F. Para argumentos reales |J0|<=1, de modo que M=sum|c| es seguro. No se utiliza la norma flotante de FIT794 como certificado.
+
+B. MAJORANTE HOLOMORFO Y NORMA BESSEL COMPLEJA — SOPORTE
+
+Para Z>=|z| y t real no negativo, la serie positiva da |0F1(;1;2zt)|<=0F1(;1;2Zt). Integrar termino a termino, por Tonelli, da exp(2Z/k)/k. La integral con t es exp(2Z/k)(1/k^2+2Z/k^3). El factor2Z/k^3 es esencial y esta bien incluido.
+
+En |Im z|<1/4 los dos argumentos de logaritmo permanecen en el semiplano derecho. Sus logaritmos principales son holomorfos y de modulo<=t+Z+3. Integrando la primera parte con k=2 y la segunda con k=1 y prefactor1/2 se obtiene exactamente
+  M_H=exp(Z-ell)(3Z+7)/4+exp(2Z-2ell)(3Z+4)/2.
+La integral finita H_T tambien queda acotada por esta integral absoluta hasta infinito. No hay cancelacion injustificada ni extrapolacion de valores reales a una caja compleja. La dependencia es lineal en Z cuando Z-ell permanece fijo en las elipses de anchura fija; no es una cota global lineal para cualquier par Z,ell.
+
+Usando la representacion angular de Bessel, |J0(f sqrt(z))|<=exp(f |Im sqrt(z)|) para f>=0, y |Im sqrt(z)|^2=(|z|-Re z)/2<=(Z-ell)/2. No es necesario elegir una rama analitica global de sqrt: la funcion realmente evaluada es0F1(;1;-f^2z/4), que es entera. Asi M_F=exp(-alpha ell) sum|d_j|exp(f_j sqrt((Z-ell)/2)) es valido. Se verifico que las32 frecuencias exactas elegidas son no negativas.
+
+Para m>0, la elipse de semiejes A=5h/4, B=3h/4 esta dentro del disco |z|<=m+A: sobre su borde |z|^2=m^2+B^2+2mA cos(theta)+(A^2-B^2)cos(theta)^2 alcanza su maximo en cos(theta)=1. Por ello Z=m+A y ell=m-A son simultaneamente validos. El primer ell=-1/16 sigue dando1+ell>0. Dividir por1+ell acota1/|1+z|. En la region H, |Im z|<=3/16<1/4; no se toca la frontera de la banda analitica.
+
+El motor interval778 sigue usando su majorante antiguo para cajas amplias durante su propia integracion; no se ha sustituido silenciosamente por el nuevo. Para los nodos reales estrechos calcula H_T con T600. Los indicadores analytic de sus logaritmos se propagan y sus cajas t analiticas quedan en |Im t|<1/4. Esta obligacion de oracle ya fue examinada en781 y se relee el codigo congelado aqui. Las tolerancias solicitadas no son una garantia del radio final: en todos los controles se usan las bolas devueltas, aun cuando sus radios excedan la tolerancia pedida.
+
+C. RAICES CHEBYSHEV, COBERTURA Y COLAS — SOPORTE
+
+Los nodos son cos((2j+1)pi/(2n)), j=0,...,n-1. Con estos nodos la DCT da c0=(1/n)sum f_j y ck=(2/n)sum f_j cos(k theta_j) para k>=1. El codigo divide por2 solamente el termino constante. Es el interpolante de grado n-1 en raices, no en extremos. Las bolas de los nodos, valores y cosenos contienen los objetos exactos; la dependencia repetida entre bolas puede ensanchar, pero no invalida la inclusion. Sum |ck| es una cota superior en[-1,1].
+
+Comprobe el argumento de aliasing directamente. Si k=2qn+r, cos(k theta_j)=(-1)^q cos(r theta_j). Para r=n todos los valores son cero. Para n<r<2n se obtiene menos T_(2n-r); para r<n se obtiene T_r. Por tanto el interpolante de cada T_k tiene norma<=1. El interpolante reproduce los modos k<n, y el error de la cola esta acotado por2 sum_(k>=n)|a_k|. La cota estandar |a_k|<=2M rho^(-k) da4M rho^(-(n-1))/(rho-1). Con rho2 el factor usado8M/2^(n-1) deja margen adicional2. No falta un factor de Lebesgue ni se importa indebidamente la convencion de extremos de otro teorema. Se verificaron16 modos de prueba con n8, incluidos n,2n y varios alias altos; son controles de implementacion, no la prueba del resultado general.
+
+Cobertura exacta:160 intervalos de longitud1/2 cubren[0,80],160 de longitud2 cubren[80,400], sin huecos ni duplicados. Se comprobo con racionales, sin calcular320 salidas. En[80,400] solo se interpola -F/(1+z), funcion entera salvo el polo-1, que queda fuera. Las elipses de esta region tienen altura3/4, pero no se aplica a ellas la banda holomorfa de H.
+
+En[0,80], la cola t>600 esta acotada por(log2)/2 exp(-300)[(4/3)exp(80/3)+2exp160]. Es la cota de Markov con theta1/2 de las dos distribuciones Gamma no centrales y el limite de entropia posterior log2. Es no negativa y se divide de forma segura por1+left. Los factores1/2 de la mezcla estan presentes.
+
+Para z>=80, completar el cuadrado da el coeficiente de Bhattacharyya (2sqrt2/3)exp(-z/6). El error Bayes con iguales priors es<=u=(sqrt2/3)exp(-z/6)<1/2. Jensen aplicado a la entropia binaria, su monotonia en[0,1/2] y -(1-u)log(1-u)<=u dan H<=BH=u(1-log u). Su derivada es u log(u)/6<0, asi BH/(1+z) decrece. Tambien decrece exp(-alpha z)/(1+z), pues alpha>0. La ultima cola z>=400 se reduce correctamente al extremo400 usando |J0|<=1.
+
+Controles acotados, todos conservados en CONTROLS798.json y controls798.log:
+ - Segmento[79.5,80], n64, H_T: bound aproximadamente3.742068232e-8<1e-6.
+ - Segmento[80,82], n96, solo F: bound aproximadamente1.828391617e-7<1e-6.
+ - Segmento[398,400], n96, solo F: bound aproximadamente1.073177981e-14<1e-6.
+ - Cola desde400: aproximadamente2.331296124e-13<1e-6.
+ - Seis puntos complejos/de borde, incluidos Re z=-1/16 e Im z=3/16, dieron H_T finita y modulos inferiores a los majorantes. Esto no sustituye la prueba de los majorantes.
+
+No fallo ningun control798. No hubo reintento que borrara un fallo. La discrepancia de cuadratura heuristica de781 en z20 y sus refinamientos posteriores permanecen en aquel archivo; no se reinterpreta como una prueba nueva aqui. Se conserva todo el material generado en798, incluido el fichero de progreso etiquetado parcial de solo tres segmentos.
+
+D. CONCLUSION797 Y TRANSFERENCIA A EA/FEEDBACK — SOLO CONDICIONAL
+
+Se comprobaron las formulas escalares de conclusion797 sin ejecutarlo con resultados externos. Las dos bolas G1 de779 implican G1<0.178254; la cota anterior0.17826 no basta: produce d=-6.67e-7 al usar eps1e-6. La cota mejorada da d0=5.333e-6. El calculo con los coeficientes binarios exactos produce M aproximadamente1.4516673113789737870e20<1.5e20. C2=log(1+9757/50000)>0.178263333. La expresion estable con d0 y M0=1.5e20 es aproximadamente6.3201975556e-52, mayor que6e-52. La aritmetica1e53>(6+log2)/(6e-52) tambien pasa.
+
+Estos son valores de una implicacion CONDICIONAL, no una cota de Delta certificada por esta revision. Falta la premisa global |H-F|<=1e-6(1+z), que necesita las320 salidas validas del mismo candidato y motor, mas las colas. No se leyeron WORKER795.json, PARTIAL-SERIAL795.json ni CONCLUSION797.json reales; no se acredita aqui su cobertura, procedencia o resultados. La revision del agregador es por lectura de su codigo, no de su ejecucion. Durante el cierre el padre comunico haber completado las320 salidas y la cola; esa afirmacion recibida no se convirtio en evidencia inspeccionada ni amplio el paquete798.
+
+Para inferir la consecuencia fisica se reutiliza v3 main.tex, hash3280bdee50662caf303cdc0182a94a68f92ba5428a718decad7287dbc637955b, y las reservas anteriores745/781. Se releyeron las lineas929–1138 sobre las comparaciones asistidas y el aprendizaje, sin reabrir una revision completa. Para la pareja explicita de779/780 se tiene G1<C2<C1; por ello el minimo de capacidades individuales es C2. No se debe copiar sin adaptar el simbolo C1 de la construccion igualada original de v3. Si el certificado global se completa, Delta=C2-V y las comparaciones de v3 dan C_FB-C_EA>=Delta-(6+log2)/E, E>=2. El bloque tiende a infinito para cada E fijo antes del limite de energia; el feedback es clasico solo Bob-a-Alice y el presupuesto es esperado por cada ley real. La asistencia tiene dimension finita arbitraria por bloque, sin tasa acotada. La familia tiene dos leyes. No se amplian estas hipotesis.
+
+La nueva parte potencial es volver cuantitativa una separacion especifica de recursos; ni Pinsker, ni la aproximacion por observables, ni Chebyshev, ni aprendizaje de una familia finita constituyen un principio general nuevo. Los antecedentes de minimax/aprendizaje de Berta-Gharibyan-Walter, Boche-Janssen-Kaltenstadler y Shrader-Permuter ya fueron tratados en745; no se efectuo una nueva busqueda de prioridad exhaustiva. El umbral condicional enorme es de existencia y no rendimiento practico. Este componente no justifica una nueva nota, importancia editorial ni un articulo separado.
+
+OBJECIONES RESIDUALES Y FALSADORES
+
+O1 [bloquea conclusion numerica incondicional]: faltan las320 salidas globales en este paquete. Un unico segmento no finito, sin verificar o con bound>=eps impide la conclusion; las muestras satisfactorias no subsanan esa ausencia. Debe mantenerse esta reserva al citar798.
+
+O2 [portabilidad/procedencia, no fallo matematico del snapshot]: certificate795.py importa interval778 desde una ruta viva externa y conclusion797.py lee CERTIFICATE779.json de otra ruta externa. Sus hashes actuales coinciden con las copias congeladas, pero el manifiesto del paquete no obliga al script a cargar esas copias. La replica798 omitio ese import, inyecto la copia congelada y ejecuto solo el prefijo AST con las funciones originales; luego redirigio las salidas a samples/. Esa transformacion esta registrada y no se presenta como ejecucion intacta de795. Para una certificacion transportable hay que ligar los archivos realmente cargados al manifiesto y registrar sus hashes; no basta que exista una copia correcta cerca.
+
+O3 [pendiente de la evidencia global]: conclusion797 verifica claves, unicidad, bounds parseados y hashes declarados por workers, pero no contiene ni demuestra por si solo el codigo de esos workers, sus parametros y sus dependencias efectivamente cargadas. Eso debe cotejarse con las salidas y fuentes conservadas cuando se alegue el certificado completo. No se presume un fraude ni una discrepancia concreta; sencillamente esta revision no tiene esos archivos. El a=1 hardcodeado por797 coincide con el candidato congelado; deberia comprobarse explicitamente si se reutiliza con otro ajuste.
+
+O4 [limite de confianza]: se confia en aritmetica de bolas python-flint/Arb y en la derivacion analitica humana/IA; no es Lean ni un verificador formal completo. Los64/96 nodos no son un muestreo convertido en prueba: la cobertura solo se justifica junto con el resto analitico, sus condiciones y los radios reales. Cambiar el mallado, n, T, candidato, convencion de nodos o motor exige volver a comprobar esas condiciones.
+
+LECTURA DE FUENTES Y CONSERVACION
+
+ATAP capitulo8, commit96e888be8c3f8bde8488f42eb3ed96321a2416d1: se leyeron el enunciado y la prueba completos de8.1 y el enunciado y breve prueba de8.2; no el libro entero. El hash del capitulo coincide con METHOD-SOURCE796. La prueba de aliasing en raices se verifico directamente arriba. NIST DLMF10.9.1: identidad integral completa y su alcance complejo. Sason-Verdu1508.00335v7: Eq1 de Pinsker y definicion de variacion total Eqs56–58, no el articulo completo. Los cuerpos extranjeros estan solo en D:\Temp\airr\2026-10-27_weighted798-sources; el archivo de auditoria conserva URL, version, hashes y profundidad real de lectura. No se publica nada.
+
+report.txt, verdict.json, context.json, SOURCE-PINS798.json, READ-DEPTH798.json, controles, logs, input congelado, MANIFEST-AUDIT798.json y verificacion C-D se conservan en las rutas solicitadas. El manifiesto y los hashes de cierre determinan el conjunto entregado.

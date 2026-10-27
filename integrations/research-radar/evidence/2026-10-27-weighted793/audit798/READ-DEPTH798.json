@@ -1,0 +1,32 @@
+{
+  "complete_frozen_text_reads": [
+    "ANALYTIC780.md",
+    "ANALYTIC796.md",
+    "DERIVATION790.md",
+    "interval778.py",
+    "certificate795.py",
+    "conclusion797.py",
+    "fit794.py",
+    "CERTIFICATE779.json",
+    "METHOD-SOURCE796.json",
+    "MANIFEST798.json"
+  ],
+  "FIT794.json": "Complete JSON parsed; all72 rows structurally checked, selected row exact32 coefficient/frequency binary rationals evaluated. Other71 candidates not numerically audited.",
+  "prior_v3": "main.tex lines929-1138 reread and full file hash checked; prior745/781 proof context reused. No PDF review.",
+  "external_primary": {
+    "chap8.m": "ATAP chapter8 lines98-161: full statements/proofs of8.1 and8.2 read; no whole-book or chapter-wide audit. Root-grid aliasing derived separately.",
+    "dlmf10_9_E1.tex": "Entire equation10.9.1 and surrounding web symbol declaration including complex argument; no chapter audit.",
+    "sason_verdu_v7.pdf": "Page2 Eq1 Pinsker, and page10 Eqs55-58 total variation definition; selected text extracted, not whole paper/proofs."
+  },
+  "not_read_or_validated": [
+    "320 actual full795 numerical outputs",
+    "actual PARTIAL-SERIAL795.json",
+    "actual workers795 code and outputs",
+    "actual CONCLUSION797.json",
+    "full priorreview754",
+    "full new manuscript/PDF",
+    "complete72-fit search provenance beyond frozen file"
+  ],
+  "controls": "3 selected segment evaluations,6 complex majorant diagnostics,16 alias modes; scalar and exact rational coverage checks. See controls798.py for all attempts.",
+  "source_fetch_attempts": "All3 recorded urllib source requests succeeded; web open of immutable ATAP, DLMF and arXiv metadata also succeeded."
+}

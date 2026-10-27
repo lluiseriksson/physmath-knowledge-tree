@@ -1,0 +1,70 @@
+{
+  "audit": "798",
+  "utc": "2026-10-27T00:43:53.218226+00:00",
+  "overall_status": "conditional_analytic_support_no_fatal_defect_found_in_bounded_scope",
+  "scope": "Frozen analytic contract and bounded sample controls only. No validation of full795 campaign or unconditional final numerical gap.",
+  "numerical_score_assigned": false,
+  "full_manuscript_review": false,
+  "review754_changed": false,
+  "components": {
+    "A": {
+      "status": "supported",
+      "subject": "Weighted residual, 4epsilon under P<=1, AWGN identity, Pinsker/L1, bounded observable identity and stable conditional gap formula"
+    },
+    "B": {
+      "status": "supported",
+      "subject": "Exact positive0F1 integrals, new holomorphic majorant, complex Bessel bound, ellipse geometry and branch conditions"
+    },
+    "C": {
+      "status": "supported_analytic_contract_and_three_sample_segments_only",
+      "subject": "Chebyshev roots DCT and aliasing, safe8M factor, rational coverage and T600/z80/z400 tails",
+      "full320_numerical_outputs_validated": false
+    },
+    "D": {
+      "status": "conditional_only",
+      "subject": "G1 tighter bound and conclusion797 scalar arithmetic; EA/feedback transfer contingent on complete global residual certificate and unchanged v3 hypotheses",
+      "unconditional_Delta_certified_by_this_audit": false,
+      "unconditional_energy_threshold_certified_by_this_audit": false
+    }
+  },
+  "controls": {
+    "selected_segments": 3,
+    "locations": [
+      "[79.5,80]",
+      "[80,82]",
+      "[398,400]"
+    ],
+    "complex_points": 6,
+    "alias_modes": 16,
+    "all_selected_checks_passed": true,
+    "all_failed_attempts_preserved": true,
+    "failed_attempts_in798": 0,
+    "full795_executed": false,
+    "fit_search_reexecuted": false
+  },
+  "remaining_objections": [
+    {
+      "id": "O1",
+      "severity": "blocks_unconditional_numerical_conclusion",
+      "text": "320 actual segment outputs are outside frozen798; sample success is insufficient."
+    },
+    {
+      "id": "O2",
+      "severity": "provenance_and_portability",
+      "text": "External absolute-path interval778 and prior779 dependencies currently match frozen hashes but imports are not bound to package manifest; sample controls inject frozen copy and record this transformation."
+    },
+    {
+      "id": "O3",
+      "severity": "global_evidence_not_inspected",
+      "text": "Worker code/output/loaded dependency bindings and aggregate execution are outside this review. Hardcoded a=1 matches frozen candidate but must be checked on reuse."
+    },
+    {
+      "id": "O4",
+      "severity": "scope_and_trust_limit",
+      "text": "Trusted Arb/python-flint arithmetic plus analytic reasoning; no formal proof assistant verification, independence, new general principle, novelty certificate or manuscript score."
+    }
+  ],
+  "antecedents": "Standard entropy/Pinsker and approximation tools; finite-family feedback/minimax antecedents from745 remain acknowledged. No new exhaustive novelty search.",
+  "report": "report.txt",
+  "controls_file": "CONTROLS798.json"
+}

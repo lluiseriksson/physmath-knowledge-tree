@@ -1,0 +1,97 @@
+{
+  "utc": "2026-10-27T00:43:53.218226+00:00",
+  "primary_sources": [
+    {
+      "url": "https://raw.githubusercontent.com/chebfun/ATAP/96e888be8c3f8bde8488f42eb3ed96321a2416d1/chap8.m",
+      "utc": "2026-10-27T00:37:25.727874+00:00",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/chebfun/ATAP/96e888be8c3f8bde8488f42eb3ed96321a2416d1/chap8.m",
+      "bytes": 21037,
+      "sha256": "42e5252f53f52296af5492ff42286ec1c0690fb0f7331f35cc4d1e5887c7166a",
+      "external_cache": "D:\\Temp\\airr\\2026-10-27_weighted798-sources\\chap8.m",
+      "foreign_body_in_audit_archive": false,
+      "actual_reading_depth": "ATAP chapter8 lines98-161: full statements/proofs of8.1 and8.2 read; no whole-book or chapter-wide audit. Root-grid aliasing derived separately."
+    },
+    {
+      "url": "https://dlmf.nist.gov/10.9.E1.tex",
+      "utc": "2026-10-27T00:37:26.207417+00:00",
+      "status": 200,
+      "final_url": "https://dlmf.nist.gov/10.9.E1.tex",
+      "bytes": 176,
+      "sha256": "ec4f1bb010cbbfc6cc06a4b519f1702ed7fb8075b0579b74a3b9e8d83fc9f7ee",
+      "external_cache": "D:\\Temp\\airr\\2026-10-27_weighted798-sources\\dlmf10_9_E1.tex",
+      "foreign_body_in_audit_archive": false,
+      "actual_reading_depth": "Entire equation10.9.1 and surrounding web symbol declaration including complex argument; no chapter audit."
+    },
+    {
+      "url": "https://arxiv.org/pdf/1508.00335v7",
+      "utc": "2026-10-27T00:37:27.037202+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/pdf/1508.00335v7",
+      "bytes": 1616851,
+      "sha256": "1967bb615f2c4d292e5ecd87fb17c00b93c7a106b61a7e96b46673e4ce23c37c",
+      "external_cache": "D:\\Temp\\airr\\2026-10-27_weighted798-sources\\sason_verdu_v7.pdf",
+      "foreign_body_in_audit_archive": false,
+      "actual_reading_depth": "Page2 Eq1 Pinsker, and page10 Eqs55-58 total variation definition; selected text extracted, not whole paper/proofs."
+    }
+  ],
+  "own_external_dependencies_checked": [
+    {
+      "path": "C:\\Trabajo\\airr\\2026-10-26_interval777\\interval778.py",
+      "bytes": 1587,
+      "sha256": "4fa44ba0a03659707abc68a9ec0391c7375967aec7b69d0ebae533d1e38235d2",
+      "read_depth": "Hash and full frozen equivalent read"
+    },
+    {
+      "path": "D:\\Proyectos\\airr-investigacion\\2026-10-26_interval777\\CERTIFICATE779.json",
+      "bytes": 3771,
+      "sha256": "9b7374901ac3ec6a2d4870d3dcaaab8e07c61a718ef9fe8be287e3f8d209362b",
+      "read_depth": "Hash and full frozen equivalent read"
+    },
+    {
+      "path": "D:\\Proyectos\\airr-investigacion\\2026-10-26_assisted753-input\\main.tex",
+      "bytes": 64582,
+      "sha256": "3280bdee50662caf303cdc0182a94a68f92ba5428a718decad7287dbc637955b",
+      "read_depth": "Lines929-1138 reread to verify inherited resource comparison and scope; no full manuscript/PDF review"
+    }
+  ],
+  "numeric_runtime_binary_pins": [
+    {
+      "path": "C:\\Users\\lluis\\AppData\\Roaming\\Python\\Python312\\site-packages\\flint\\types\\acb.pyd",
+      "bytes": 359424,
+      "sha256": "6559277133403ebdc06730c50f2768570568ce0a2d5d9084d527f5d85ed0b93c"
+    },
+    {
+      "path": "C:\\Users\\lluis\\AppData\\Roaming\\Python\\Python312\\site-packages\\flint\\types\\arb.pyd",
+      "bytes": 322048,
+      "sha256": "8216e9ab3fd7358234bbc3aec620998bf4a637ed93baadb2acfabd0a82428360"
+    },
+    {
+      "path": "C:\\Users\\lluis\\AppData\\Roaming\\Python\\Python312\\site-packages\\python_flint.libs\\libflint.24.0.0-9b2d98b6da8eded35def7bc3b288ff65.dll",
+      "bytes": 14806405,
+      "sha256": "aac725ed1c5dbb74c57230dda97634a87d6475e46acd54b3849d16c134a23e57"
+    },
+    {
+      "path": "C:\\Users\\lluis\\AppData\\Roaming\\Python\\Python312\\site-packages\\python_flint.libs\\libgcc_s_seh-1-ca70890bbc5723b6d0ea31e9c9cded2b.dll",
+      "bytes": 143872,
+      "sha256": "4661795a1debb1448f2ccfecc054fc369561f44c616ff3dfa25650327555037f"
+    },
+    {
+      "path": "C:\\Users\\lluis\\AppData\\Roaming\\Python\\Python312\\site-packages\\python_flint.libs\\libgmp-10-b84ebdfad40b1a203ac4096a9c8425c2.dll",
+      "bytes": 1085401,
+      "sha256": "b84ebdfad40b1a203ac4096a9c8425c288d88f1ebc71e052e048ada8a46975b0"
+    },
+    {
+      "path": "C:\\Users\\lluis\\AppData\\Roaming\\Python\\Python312\\site-packages\\python_flint.libs\\libmpfr-6-681398cede0f6f27feb0cbd931b38241.dll",
+      "bytes": 903030,
+      "sha256": "dddd060671cc9adfd6e7c78b44b0daff3957abe9f4831212805aebf4cd7bff05"
+    },
+    {
+      "path": "C:\\Users\\lluis\\AppData\\Roaming\\Python\\Python312\\site-packages\\python_flint.libs\\libwinpthread-1-f5042e8e3d21edce20c1bc99445f551b.dll",
+      "bytes": 55808,
+      "sha256": "f5042e8e3d21edce20c1bc99445f551b89212403164e9388d2c6f48d6d6bcb78"
+    }
+  ],
+  "reused_prior_library_contract": "python-flint0.9.0/Arb callback and analytic flags examined in781; frozen interval778 reread here. No new library install.",
+  "foreign_full_text_in_audit_archive": false
+}
