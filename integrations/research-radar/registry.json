@@ -919,7 +919,7 @@
     {
       "id": "unimodular-midpoint-equality-rigidity",
       "title": "Equality rigidity and exact decision without lattice counting",
-      "status": "under_audit",
+      "status": "queued",
       "confidence": "speculative",
       "paper_score": null,
       "source_ids": [
@@ -932,11 +932,11 @@
       ],
       "dictionary": "Complete lattice enumerators map polynomial identity to integral translations; source coefficientwise nonnegativity maps one positive-field equality to that identity.",
       "preserved": "One fixed integer box, unimodular full-row-rank matrix, integral midpoint RHSs, nonempty bounded fibers, common positive original-coordinate weights.",
-      "lost_or_unproved": "No global Jensen theorem, formal proof or novelty certificate; original rational real-fiber extension refuted. Full six-page manuscript importance and extra corollaries await fresh review.",
+      "lost_or_unproved": "No global Jensen theorem, formal proof or novelty certificate; original rational real-fiber extension refuted. Full review833 of exact832 PDF returned importance4.0/technical8.5, minor revision. These grades do not evaluate the later unscored classification840.",
       "hypothesis_to_remove": "Remove a lattice-counting/evaluation oracle from deciding midpoint equality by replacing it with6n coordinate optimizations and classical LP complexity.",
       "falsifier": "A complete lattice enumerator with repeated nonunit factor, or an integer-box unimodular positive-field equality without symmetric integral translations; a close prior theorem defeats a new-major-contribution claim.",
-      "next_finite_task": "Complete one fresh exact-PDF assessment of six-page input832, including rounded rational interface, strict Ehrhart corollary and antecedents; preserve every objection and score without transfer.",
-      "review_packet": "integrations/research-radar/evidence/2026-10-27-rigidity834/PUBLIC-MANIFEST834.json; exact unreviewed PDF7fee08dcca98b04bad1208d28957f56391acc137a9d90fd95a25b32dba536593; component audit824 is unscored and not a full-manuscript report."
+      "next_finite_task": "Release the already deposited exact832 manuscript with full833 report and visible minor comments; develop the audited positive circuit converse as an extension of the same work, compare classical antecedents and obtain a fresh exact-PDF assessment only after a new manuscript is finished.",
+      "review_packet": "integrations/research-radar/evidence/2026-10-27-classification843/PUBLIC-MANIFEST843.json; original full833 report, verdict and context; exact assessed PDF7fee08dcca98b04bad1208d28957f56391acc137a9d90fd95a25b32dba536593; classification840 has no manuscript grade."
     }
   ],
   "source_refresh": {
@@ -973,6 +973,10 @@
     "followup807": {
       "evidence": "integrations/research-radar/evidence/2026-10-27-tu806/SOURCES807.json",
       "reading": "Current primary Jensen question and selected Lawrence background reread, narrow scope;13-endpoint inventory not exhaustive."
+    },
+    "followup843": {
+      "evidence": "integrations/research-radar/evidence/2026-10-27-classification843/REFRESH843.json",
+      "scope": "Directed seven-endpoint refresh, not exhaustive; OpenAI/DeepMind pins unchanged. Actual833 full grade preserved; new840 technical classification audit unscored."
     }
   }
 }
