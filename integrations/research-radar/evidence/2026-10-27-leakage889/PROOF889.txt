@@ -1,0 +1,130 @@
+Candidate triage: auxiliary-dimension-uniform leakage bound
+2026-10-27. Unreviewed analytical derivation; not a manuscript, formal proof,
+novelty claim, exact-additivity result, model assessment or AIRR score.
+
+PRIMARY DEPENDENCIES (attributed, not newly proved here)
+1. Tang--Zhu--Bai--Wang, arXiv2609.28592v1, Theorem4.1: excluded-sector
+   support implies strong superadditivity of E_F with arbitrary finite
+   auxiliary systems. Its statement and displayed proof read; the full
+   triangular-entropy dependency chain has not been freshly audited here.
+2. Koashi--Winter, quant-ph/0310037v1, Theorem1: for a pure tripartite
+   state, E_F(U:V)+J(U:W)=S(U), with W measured in J.
+3. Winter1507.07775v6, Lemma2 and proof of Corollary4: conditional-entropy
+   continuity and same-measurement coupling of decompositions of nearby
+   purifications. Do not apply the trace-distance square-root conversion
+   twice; the actual close pure extensions are given here.
+4. Shirokov2201.11477v4, Proposition23, Eq172: continuity of optimized
+   one-way classical correlation controlled by the measured dimension.
+   This is the already established ingredient removing auxiliary dimensions.
+
+QUANTIFIERS AND CANDIDATE CLAIM
+All spaces A,B,A',B' are finite-dimensional, auxiliary dimensions arbitrary.
+Let d=min(dim A,dim B) >=2 and D=(dim A)(dim B). Fix distinguished unit
+vectors on A,B and P=(I-|0><0|)_A tensor (I-|0><0|)_B. For a state Omega
+on ABA'B', set epsilon=Tr[(P tensor I)Omega]. Use base-two entropies and
+g(x)=(1+x)log2(1+x)-x log2 x, g(0)=0.
+
+Conditional on dependency1, the proposed bound is
+
+ E_F(AA':BB')_Omega - E_F(A:B)_Omega - E_F(A':B')_Omega
+ >= - min{log2 d, f(sqrt(epsilon))},
+
+ f(delta)=(3 log2 d + log2 D)delta +4g(delta).
+
+This does not assert exact superadditivity at positive epsilon. It is a
+quantitative continuity transfer from an existing exact support theorem.
+No priority or importance is certified, and its ingredients are classical.
+
+PURE-EXTENSION DERIVATION
+Swap A/B and A'/B' if necessary so dim A=d. For a pure psi with epsilon<1,
+put phi=(I-P)psi/sqrt(1-epsilon), with identity on A'B' understood.
+Its pure-state trace distance from psi is delta=sqrt(epsilon).
+
+Define G(psi)=S(AA')_psi - E_F(AB)_psi - E_F(A'B')_psi.
+Koashi--Winter applied to A':B':AB gives the exact cancellation identity
+
+ G(psi)=S(A|A')_psi + J(A':AB)_psi - E_F(A:B)_psi.
+
+The system measured in J is AB, of dimension D, NOT A'. This orientation
+is essential. Conditional-entropy continuity bounds the first term's change
+between psi and phi by 2 delta log2 d+g(delta). Shirokov Eq172 bounds the
+second term's change by delta log2 D+2g(delta), after conversion from nats.
+
+For the third term, use the actual purifications psi,phi of their AB
+marginals. A rank-one POVM on A'B' producing an optimal pure decomposition
+of either marginal is applied to both purifications. The resulting cq
+states on A and its classical outcome register remain at trace distance
+at most delta. The classical-conditioning form of Winter Lemma2 gives
+|E_F(AB)_psi-E_F(AB)_phi| <= delta log2 d+g(delta), by exchanging the
+two optimizing POVMs for the two directions. An arbitrarily near-optimal
+decomposition also suffices. No bound involving dim A' or dim B' appears.
+
+Adding the three bounds gives |G(psi)-G(phi)| <= f(delta).
+The support theorem gives G(phi)>=0; hence G(psi)>=-f(sqrt(epsilon)).
+If epsilon=1, skip the nonexistent projected state and use local
+monotonicity: G(psi)>=-E_F(AB)_psi>=-log2 d. The same trivial lower bound
+holds at every epsilon. Cases d=1 have E_F(AB)=0 and require no error.
+
+MIXED-EXTENSION DERIVATION
+For any pure ensemble Omega=sum p_j psi_j, let epsilon_j be its sector
+weight. The pure result and convexity of both marginal E_F functions give
+
+ sum p_j S(AA')_psi_j
+ >= E_F(AB)_Omega+E_F(A'B')_Omega-sum p_j f(sqrt(epsilon_j)).
+
+g is increasing and concave on [0,1], so f composed with sqrt is increasing
+and concave. Jensen bounds the final sum by f(sqrt(sum p_j epsilon_j))
+=f(sqrt(epsilon)). Infimize over pure decompositions of Omega. Combine
+with local monotonicity's independent lower bound -log2 d. This establishes
+the displayed conditional corollary if all cited dependencies apply.
+
+FALSIFIER OF A STRONGER ABSOLUTE-CONTINUITY SHORTCUT
+Take B' one-dimensional and three qubits A,B,A'. Let
+
+ psi_t=(|000>+|010>+|101>+t|111>)/sqrt(3+t^2), 0<=t<1.
+
+The forbidden AB=11 sector has weight epsilon=t^2/(3+t^2). Tracing A'
+makes AB a mixture of product states, so E_F(AB)=0. Also E_F(A'B')=0.
+Across AA':B the two coefficient rows are (1,1) and (1,t), up to
+normalization. Its concurrence is c(t)=2(1-t)/(3+t^2), hence
+
+ G(psi_t)=e(c(t)), e(c)=h2((1+sqrt(1-c^2))/2).
+
+Thus G(psi_0)-G(psi_t)=(2/3)e'(2/3)t+O(t^2), with a strictly positive
+linear coefficient. In terms of leakage this has order sqrt(epsilon),
+not epsilon log(1/epsilon). Consequently a uniform ABSOLUTE modulus of
+the latter order for G is false, already with a trivial B'. This is NOT
+a counterexample to strong superadditivity or to a sharper ONE-SIDED
+leakage lower bound: G remains nonnegative throughout this family.
+
+SCIENTIFIC DISPOSITION / NEXT GATE
+The dimension-uniform continuity ingredient is already prior literature.
+The displayed corollary alone is not selected as a frontier manuscript.
+To advance exact finite-temperature additivity one would need a one-sided
+estimate exploiting equality structure or a positive entanglement gap,
+not merely improve an absolute continuity constant. A claimed linear
+leakage bound must be tested at the equality locus, not inferred from
+the counterexample above or from random positive defects. No global
+finite-temperature capacity formula or tensor-power equality is proved.
+
+
+SCOPE CORRECTION AFTER READING OPENAI FAMILY276
+The already catalogued OpenAI manuscript at the pinned commit explicitly
+claims exact GAD capacity AND additivity with arbitrary finite-dimensional
+partners. The accompanying Lean scope document excludes arbitrary different
+partners from its stated formalization scope. Neither reading is a Lean
+replay or proof audit. Therefore neither GAD capacity nor that manuscript's
+partner claim is selected as a new contribution here. The finite-temperature
+motivation above must not be interpreted as a certified open-status claim.
+
+A distinct retained target is the fixed axial channel N=(3/5,1/4,1/5),
+outside the GAD relation c^2=r. For arbitrary normalized rectangular Kraus
+column matrices X,Y and p in [0,1], test the entropy of the2x2 output block
+with diagonal blocks (29/40)(1-p)XX*+(19/40)pYY* and
+(11/40)(1-p)XX*+(21/40)pYY*, and off-diagonal block
+(3/5)sqrt(p(1-p))XY*. The proposed lower bound is e_N(p)+(1-p)S(XX*)
++pS(YY*), where e_N is the established axial one-use roof. Keeping p is
+essential. A negative exact instance would refute THIS sufficient matrix
+inequality, not automatically channel additivity. No proof or worldwide
+novelty has been established. The480 finite float probes892 are exploratory
+only and do not remove arbitrary-partner or tensor-power quantifiers.

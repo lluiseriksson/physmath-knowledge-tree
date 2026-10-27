@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-27T08:05:48.352737+00:00",
+  "url": "https://raw.githubusercontent.com/openai/math/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/thermal.tex",
+  "commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+  "http": 200,
+  "bytes": 5203,
+  "sha256": "52a3470b411125ba69e7f39cc78c611695c895059288e212e3c5407a69882d14",
+  "git_blob_sha1": "295ba7a193d369cbaeaf70e3c68d1ecc2820fd89",
+  "reading": "Complete thermal theorem and displayed proof read; zero-block entropy dependency not freshly audited.",
+  "actual_hypothesis": "alpha*delta-beta*eta=K^2 becomes r=c^2 at interior populations.",
+  "candidate_mismatch": "For N=(3/5,1/4,1/5), left-minus-right=-(11/100)p(1-p).",
+  "monotone_transfer": "Analytical derivative falsifier at c=3/5 and identity partner; does not refute additivity or the endpoint inequality.",
+  "source_body_redistributed": false,
+  "formal_result": false,
+  "new_score": null
+}

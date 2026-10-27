@@ -666,6 +666,54 @@
         "domain.algebra",
         "domain.complexity_theory"
       ]
+    },
+    {
+      "id": "openai-family276-scoped",
+      "title": "Classical capacity and entropy inequalities for generalized amplitude damping",
+      "url": "https://github.com/openai/math/blob/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/paper.tex",
+      "kind": "preprint",
+      "published_on": "2026-09-24",
+      "observed_on": "2026-10-27",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Main TeX abstract, definitions, theorem, arbitrary-partner corollary and proof strategy read. The paper claims GAD Holevo/minimum-output/capacity additivity with arbitrary finite-dimensional partners. Follow-up895 read the complete thermal theorem and proof, locating the coefficient identity that becomes c^2=r.",
+      "limits": "Other included proof sections and the zero-block dependency were not freshly audited. The Lean scope doc276 excludes arbitrary different partners from its described scope; no Lean replay or proof correctness is inferred.",
+      "reuse": "Bibliographic metadata and own synthesis; root Apache2 license pinned, no source bodies redistributed or corpus eligibility promoted.",
+      "anchors": [
+        "domain.quantum_information_theory"
+      ]
+    },
+    {
+      "id": "tang-qubit-support-2026-scoped",
+      "title": "Classical Capacity and Entanglement Cost of the Amplitude Damping Channel",
+      "url": "https://arxiv.org/html/2609.28592v1",
+      "kind": "preprint",
+      "published_on": "2026-09-23",
+      "observed_on": "2026-10-27",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Theorem4.1 states strong formation superadditivity with arbitrary auxiliary systems when the first marginal excludes the full joint orthogonal sector. Statement and displayed proof read.",
+      "limits": "The entire triangular-entropy dependency chain was not freshly verified; a positive sector weight is outside the exact support premise.",
+      "reuse": "Short original synthesis only; no source bodies redistributed.",
+      "anchors": [
+        "domain.quantum_information_theory"
+      ]
+    },
+    {
+      "id": "shirokov-classical-continuity-2022-scoped",
+      "title": "Continuity of characteristics of composite quantum systems",
+      "url": "https://arxiv.org/html/2201.11477v4",
+      "kind": "preprint",
+      "published_on": "2022-11-11",
+      "observed_on": "2026-10-27",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Proposition23 Eq172 bounds optimized one-way classical correlation by the finite measured-system dimension, independently of the other subsystem dimension.",
+      "limits": "Selected statement/classification read; general AFW theorem proof not freshly audited. This pre-existing ingredient defeats novelty based merely on auxiliary-dimension independence.",
+      "reuse": "Short original synthesis; arXiv nonexclusive license does not imply corpus or redistribution permission.",
+      "anchors": [
+        "domain.quantum_information_theory"
+      ]
     }
   ],
   "candidates": [
@@ -919,7 +967,7 @@
     {
       "id": "unimodular-midpoint-equality-rigidity",
       "title": "Equality rigidity and exact decision without lattice counting",
-      "status": "queued",
+      "status": "abandoned",
       "confidence": "speculative",
       "paper_score": null,
       "source_ids": [
@@ -935,8 +983,30 @@
       "lost_or_unproved": "No global Jensen theorem, formal proof or novelty certificate; original rational real-fiber extension refuted. Full review833 of exact832 PDF returned importance4.0/technical8.5, minor revision. These grades do not evaluate the later unscored classification840.",
       "hypothesis_to_remove": "Remove a lattice-counting/evaluation oracle from deciding midpoint equality by replacing it with6n coordinate optimizations and classical LP complexity.",
       "falsifier": "A complete lattice enumerator with repeated nonunit factor, or an integer-box unimodular positive-field equality without symmetric integral translations; a close prior theorem defeats a new-major-contribution claim.",
-      "next_finite_task": "The exact832 Working paper is now published as ARR-2026-0BQ1X4SGFJ8AJ8N1 v1 with full8334.0/8.5 retained. Develop the audited positive circuit classification as a substantive new version of the same work, with classical antecedents and a new exact-PDF assessment. Supplement857 reproduces the original finite checker outputs; it is not a new vote or proof.",
-      "review_packet": "integrations/research-radar/evidence/2026-10-27-classification843/PUBLIC-MANIFEST843.json; original full833 report, verdict and context; exact assessed PDF7fee08dcca98b04bad1208d28957f56391acc137a9d90fd95a25b32dba536593; classification840 has no manuscript grade."
+      "next_finite_task": "The evolving work is already published as ARR-2026-0BQ1X4SGFJ8AJ8N1 v2 with complete exact-PDF review861 (importance4.0, technical8.5). Do not recreate the deposit or regrade the same PDF. The >7 research route needs a substantively stronger theorem; the published results remain preserved.",
+      "review_packet": "integrations/research-radar/evidence/2026-10-27-classification843/PUBLIC-MANIFEST843.json; original full833 report, verdict and context; exact assessed PDF7fee08dcca98b04bad1208d28957f56391acc137a9d90fd95a25b32dba536593; classification840 has no manuscript grade. Follow-up: exact v2 PDF5e2d16b335baa02a4aed0cb75c23a28dc2d6762c71e6151cb44eb61dbecaa48c, full861 report dcc228a3618beefb79ffae37e073ad01723344e82adc4b9b7481f6f364e6c3d5; importance4.0/technical8.5; public report context preserved. Abandoned means no longer selected as an unchanged >7 route, not a mathematical refutation."
+    },
+    {
+      "id": "non-gad-rectangular-entropy",
+      "title": "Rectangular entropy bound for a fixed non-GAD axial channel",
+      "status": "under_audit",
+      "confidence": "speculative",
+      "paper_score": null,
+      "source_ids": [
+        "openai-family276-scoped",
+        "tang-qubit-support-2026-scoped",
+        "shirokov-classical-continuity-2022-scoped"
+      ],
+      "node_ids": [
+        "domain.quantum_information_theory"
+      ],
+      "dictionary": "Partner-channel Kraus columns map branch states to arbitrary normalized rectangular X,Y; computational population p is retained in the fixed channel axial roof.",
+      "preserved": "CPTP partner, pure joint inputs, original computational basis population, arbitrary finite output dimension and the distinction between one-step sufficient entropy inequality and channel additivity.",
+      "lost_or_unproved": "No universal rectangular bound, arbitrary-partner theorem, tensor-power formula, global open-status/novelty certificate or exact numerical certificate. The480 qubit-input float probes are diagnostics only.",
+      "hypothesis_to_remove": "Remove the restricted partner-family rectangle for fixed N=(3/5,1/4,1/5), if a uniform rectangular entropy theorem can be proved. This N violates the source GAD relation c^2=r.",
+      "falsifier": "An exact negative rectangular entropy instance refutes the proposed sufficient mechanism; a preceding theorem covering this N defeats the novelty route. Neither automatically refutes channel additivity.",
+      "next_finite_task": "The source thermal proof requires c^2=r. The uniform nondecreasing-excess shortcut is analytically refuted at c=3/5 even for the identity partner. Seek a genuinely different rectangular estimate or a quantified nonmonotone margin, with exact falsifiers before a manuscript; do not repeat float grids.",
+      "review_packet": "Own conditional leakage derivation889 is unreviewed and not selected as a frontier paper; exact rational partial-trace controls890 and floating diagnostic892 are recorded in the evidence sidecar. No model score. Follow-up895 gives exact missing coefficient -(11/100)p(1-p) and the analytic derivative bound F_prime(3/5)<-(23/50)ln5. This refutes only a monotonic transfer mechanism, not channel additivity. No new review or score."
     }
   ],
   "source_refresh": {
