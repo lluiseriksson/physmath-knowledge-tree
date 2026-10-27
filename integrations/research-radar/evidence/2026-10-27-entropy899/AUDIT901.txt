@@ -1,0 +1,426 @@
+AUDITORÍA ACOTADA DE COMPONENTES 901 — SIN NOTA DE MANUSCRITO
+Fecha de trabajo: 2026-10-27 (UTC; zona del usuario Europe/Stockholm).
+Objeto único: INPUT900.json y sus cuatro payloads congelados.
+
+RESULTADO
+Las reducciones matemáticas I–IV se sostienen con las precisiones de dominio
+y redacción que se enumeran abajo. No se ha encontrado un error que invalide
+la reducción por rayos, la prueba SSA de esquina, la derivada de compresión,
+el diccionario exacto para el canal fijado, ni las dos subclases demostradas.
+Se conservan dos inexactitudes literales en casos degenerados y otras
+objeciones de alcance. No se demuestra (B) global, (P5-E) global, (Q) para
+referencias cuánticas mixtas generales, ni aditividad de Holevo.
+
+No hay evaluación de manuscrito, puntuación, valoración de importancia,
+certificado de prioridad ni afirmación de independencia. El encargo describe
+una revisión solicitada como GPT-6 Astra xhigh; la configuración solicitada
+no prueba por sí sola identidad, esfuerzo efectivos o independencia. Esta
+auditoría procede de un subencargo de conversación con filesystem compartido.
+No se ejecutó ningún otro agente o revisor desde este subencargo.
+
+0. INTEGRIDAD, ALCANCE Y MÉTODO
+Se leyó primero D:\LEEME.md. Se verificó INPUT900.json contra el SHA256
+c8f1cfd7ee86c2e200054de86fbd9835049d39c5326f858aaad07fad2bf43570.
+Después, antes de abrir los cuatro payloads, se verificaron tamaños y hashes:
+PROOF899.txt: 9592 bytes;
+ f3d705673d176269cfa176e34deaded00d7ce46718cd97d18372d50c8b57268f
+check900.py: 2770 bytes;
+ f30008b52518efa7f0b514da439f0afab80867e0d22e8216f9f27cffbaf90c5c
+CHECK900.json: 2159 bytes;
+ 4c8272d937f17f37ccb467b098a2c8a53a9d0805bd1edc6b8801acd1009f6b41
+SUBGRAPH899.json: 14256 bytes;
+ ae52686eb60e6e171ee488ddf0d1190396360135f88befca0f7a1395f3039ca1
+Todos coincidieron. El grafo se trató solo como contexto: sus etiquetas,
+confianzas o enlaces no constituyen una demostración de ninguna desigualdad.
+
+No se consultaron ESTADO.json global, informes de evaluaciones anteriores,
+notas o páginas de valoración, notas objetivo ni los documentos propios
+546/551/Davies mencionados por PROOF899. Las afirmaciones históricas sobre
+esos documentos se mantienen como procedencia declarada, no verificada aquí.
+Las únicas fuentes externas consultadas son las tres URLs de INPUT900.
+Se capturaron sus respuestas HTML completas para fijar hashes, pero solo se
+leyeron los pasajes pertinentes registrados en READS901.json. Los hashes de
+HTML fijan los bytes capturados, no autentican autoría ni prueban teoremas.
+
+El script congelado check900.py no se ejecutó: escribe CHECK900.json junto
+al input y en otra carpeta D, y copia allí otros archivos. Se reprodujeron
+sus cálculos en recheck901.py, que escribe solo en la carpeta autorizada.
+No se editaron los originales, repositorios, estados principales ni otros
+chats; no se publicó y no se efectuó limpieza destructiva.
+
+I. POSITIVIDAD, CONCAVIDAD, ESQUINA Y REDUCCIÓN POR RAYOS
+
+I.1 Cuantificadores y condición PSD
+Fijar m,n>=1; X,Y en C^(m x n), Tr(XX*)=Tr(YY*)=1; U0,U1>=0,
+U0+U1=1; 0<=K<=sqrt(U0 U1); alpha,beta,eta,delta>=0 con las sumas de
+fila fijadas. Entonces Tr(T)=1. Para todo m,n y todos X,Y, T>=0 si y solo
+si alpha delta>=K^2. Es una equivalencia de positividad universal, no una
+caracterización necesaria para cada par X,Y individual.
+
+Suficiencia: con D=diag(X,Y),
+ T=D([alpha,K;K,delta] tensor I_n)D*
+   +diag(beta YY*,eta XX*).
+Ambos sumandos son PSD si alpha delta>=K^2. Esto incluye alpha=0 o delta=0,
+que obligan K=0. No se divide por una matriz singular.
+
+Necesidad: basta m=2,n=1, X=(1,0)^T, Y=(0,1)^T. La compresión principal
+al primer vector de la primera fila y segundo vector de la segunda fila
+es [alpha,K;K,delta]; su determinante debe ser no negativo. La construcción
+se inserta en cualquier m>=2,n>=1. Para m=1, en cambio, T tiene diagonales
+U0,U1 y cruce K<X,Y>; Cauchy–Schwarz y la cota de K ya garantizan PSD.
+Por ejemplo alpha=delta=0, beta=U0, eta=U1 y K>0 no viola PSD en m=1.
+La cautela explícita de la nota sobre una sola fila es correcta.
+
+I.2 Concavidad y normalización
+Definir F= S(T)-(alpha+eta)S(XX*)-(beta+delta)S(YY*)-g(U0U1-K^2).
+Sobre el dominio admisible, T es afín, de traza uno y PSD; los dos términos
+ponderados son afines y g es constante. Así F es cóncava. El dominio también
+es convexo: equivale a [alpha,K;K,delta]>=0 con restricciones afines.
+No se congela indebidamente alpha+eta o beta+delta a lo largo del rayo:
+estas cantidades cambian, pero su combinación convexa recupera las originales.
+
+I.3 Esquina por SSA
+En beta=eta=0, para U0U1>0 elegir flags unitarios a,b con <b|a>=mu real,
+mu=K/sqrt(U0U1) en [0,1]. Vectorizar X,Y en B tensor C. El vector
+ sqrt(U0)|0>|X>|a>+sqrt(U1)|1>|Y>|b>
+es unitario debido a la ortogonalidad del registro de fila. Su marginal
+fila-B es T. Su marginal complementaria CF es
+ sigma_CF=U0 X_C tensor |a><a|+U1 Y_C tensor |b><b|.
+La concavidad de S(C|F), consecuencia de SSA, da
+ S(C|F)_sigma >= U0 S(X_C)+U1 S(Y_C).
+Al sumar S(F)_sigma se obtiene exactamente (B). La mezcla de flags tiene
+matriz Gram [U0,K;K,U1], por lo que su espectro no nulo tiene suma uno y
+determinante u, y su entropía es g(u). Los espectros no nulos de los dos
+marginales de cada rama pura coinciden. No se requiere X,Y invertibles,
+ni ortogonales, ni con productos Gram conmutantes.
+mu=0 o mu=1 también son válidos. Con una suma de fila cero se evita la
+división y se comprueba la afirmación directamente. La prueba es general
+en dimensión finita y cubre singularidades; no es una comprobación numérica.
+
+I.4 Rayo y sentido lógico
+Si 0<K^2<U0U1 y (beta,eta)!=(0,0), poner
+ s_max=min({U0/beta si beta>0},{U1/eta si eta>0}).
+Para 0<=s<s_max ambos factores alpha_s,delta_s son positivos y
+ d(alpha_s delta_s)/ds=-beta delta_s-eta alpha_s<0.
+El producto empieza por encima de K^2 y termina en cero. Admisibilidad
+del punto s=1 implica que hay un único s* en [1,s_max) con producto K^2.
+Con lambda=1/s*, 0<lambda<=1, cada uno de los cuatro coeficientes y también
+el cruce constante K satisfacen la identidad convexa afirmada. Por tanto
+ F(original)>=lambda F(frontera)+(1-lambda)F(esquina).
+Probar F(frontera)>=0 basta para ese punto original. La recíproca para un
+punto original NO se sigue: la concavidad solo da la dirección escrita.
+
+Sobre todo el dominio de coeficientes con U0,U1,K fijos, (B) en la frontera
+alpha delta=K^2 junto con la esquina es equivalente a (B) en el dominio,
+porque la necesidad por restricción es inmediata y la suficiencia es el rayo.
+Para el único canal N, las fronteras alcanzadas por sus rayos son una condición
+suficiente; no se ha probado que sean necesarias, ni que el objetivo de N sea
+equivalente a todas las fronteras posibles.
+
+I.5 Extremos
+K=0: T es suma directa de dos bloques. La fórmula de entropía de una suma
+directa y la concavidad en cada bloque dan
+ S(T)>=h(U0)+(alpha+eta)S(XX*)+(beta+delta)S(YY*),
+y g(U0U1)=h(U0). Se omite un bloque de masa cero.
+K^2=U0U1>0: alpha<=U0,delta<=U1 y alpha delta>=U0U1 fuerzan
+alpha=U0,delta=U1,beta=eta=0. Si U0U1=0, la igualdad no fuerza esquina.
+Esta última es una inexactitud literal de la nota, aunque el caso ya queda
+demostrado por K=0. Corrección obligada de la frase: añadir U0U1>0.
+
+II. FRONTERA P5 Y DERIVACIÓN DE SCHATTEN
+
+II.1 Factor y grafo
+En alpha delta=K^2, K>=0, el M escrito satisface MM*=T exactamente.
+Sus masas Frobenius son alpha,beta,delta,eta; su suma es uno. C2(M)C2(M)*
+es [U0,K;K,U1]. La comparación (P5-E) es literalmente (B) en esa frontera.
+Si los cuatro coeficientes son positivos, los cinco vértices del soporte
+bipartito forman el camino columna2–fila1–columna1–fila2–columna3.
+Si alguno se anula, el soporte es un subgrafo degenerado de P5: no hay
+siempre cuatro bloques no nulos. Corregir esa afirmación sin excluir esos
+casos del teorema. Los límites o las pruebas directas los cubren.
+La calificación «sharp» es consistente: si X=Y, T=[U0,K;K,U1] tensor XX*,
+y la igualdad de entropías se cumple en (B) y (P5-E), con todos sus pesos.
+
+La positividad de una compresión escalar es una propiedad distinta. Incluso
+si [Tr|H_ij|^p] fuera PSD para H=MM* o H=M*M, no se obtendría el orden
+espectral o de entropía de (P5-E). Tampoco basta decir que H es PSD para
+aplicar una desigualdad de bloques PSD: su compresión y sus pesos deben
+coincidir con los que aparecen aquí, lo cual no se ha demostrado. No se
+usó el resultado propio 551 como comparación espectral.
+
+II.2 Derivada con todas las dependencias
+Sea A normalizado por Tr AA*=1, con valores singulares sigma_j. Para w>0,
+ ||sqrt(w)A||_theta=sqrt(w)(sum sigma_j^theta)^(1/theta).
+En theta=2 la suma vale uno y
+ (d/dtheta)||sqrt(w)A||_theta=-sqrt(w)S(AA*)/4.
+No queda un término log w: sqrt(w) se factoriza fuera de la norma. La
+fórmula usa S(AA*) de la rama NORMALIZADA, no S(wAA*). Para w=0 la función
+es idénticamente cero. Singularidades sigma_j=0 se interpretan mediante
+sigma_j^theta log sigma_j=0; no se necesita log de una matriz invertible.
+
+L(theta)=Tr|M|^theta tiene L'(2)=Tr(MM* log(MM*))/2=-S(T)/2.
+Para C(theta)=C_theta(M), Q(theta)=C(theta)C(theta)*,
+ R(theta)=Tr Q(theta)^(theta/2).
+En theta=2, Q tiene traza uno. La variación del exponente aporta
+Tr(Q log Q)/2=-S(Q)/2; la variación de C aporta
+Tr Q'=2 sum_b C_b C'_b=-(sum_b w_b S(A_b A_b*))/2.
+Por ello R'(2)= -[S(Q)+sum_b w_b S(A_b A_b*)]/2, como afirma la nota.
+En esta familia el rango de C(theta) es constante cerca de 2: salvo filas
+nulas o una sola columna activa, tiene rango dos; los casos restantes
+tienen rango uno. Así la diferenciación singular se puede hacer sobre
+soporte fijo. M es fijo y su traza de potencias es diferenciable para
+theta>0 aun con ceros espectrales. Esta es una justificación explícita de
+regularidad que conviene añadir al texto abreviado.
+
+Si L(theta)>=R(theta) para theta<2 suficientemente próximo a 2 y L(2)=R(2)=1,
+el cociente [L(theta)-R(theta)]/(theta-2) es no positivo. Luego
+ L'(2)-R'(2)<=0,
+equivalente a (P5-E), con el signo y todos los pesos correctos. La comparación
+local de normas es suficiente, no demostrada ni necesaria por este cálculo.
+Una desigualdad de primera derivada no implica una desigualdad en un intervalo.
+De hecho bastaría una sucesión theta_k que tienda a 2 por la izquierda con
+la comparación, pues la derivada existe; no se exige uniforme en M para
+derivar punto a punto. No hay inferencia desde momentos enteros aislados.
+
+II.3 Fuentes y lo que no suministran
+Audenaert, math/0702186v2, Conjecture 1 y descripción de casos especiales,
+plantea la dirección de compresión usada para 1<=theta<=2. Los casos de
+rango uno o proporcionalidad por filas no cubren X,Y generales repetidos
+en este M. La validez para exponentes >=4 tampoco da la derivada izquierda
+en 2. Fuente: https://arxiv.org/html/math/0702186v2
+
+Zhang, 2410.21961v4, Conjecture 1.14, Theorem 1.15 y Corollary 1.16,
+mantiene separada la conjetura de constante uno y una cota con factor de
+rango. En rango dos, la cota relevante es
+ ||C_theta(M)||_theta<=2^(1/theta-1/2)||M||_theta.
+Aunque el factor vale uno en theta=2, su derivada no es cero. Elevando a
+theta y derivando como arriba solo se deduce
+ S(T)>=S(C2C2*)+sum_b w_b S(A_b A_b*)-log 2.
+Por tanto no cubre (P5-E). Esta pérdida se calcula aquí, no se atribuye al
+artículo como un teorema suyo. Fuente: https://arxiv.org/html/2410.21961v4
+
+El archivo thermal.tex del commit 7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a
+exige alpha delta-beta eta=K^2 y usa una mezcla de factores con un bloque
+cero. Su hipótesis no es solo alpha delta>=K^2. Para la frontera presente
+con beta eta>0, el defecto de su identidad es -beta eta. Para N y 0<p<1,
+el defecto es -(11/100)p(1-p). No se puede invocar ese teorema en esos casos.
+No se auditó aquí su teorema previo de bloque cero. Fuente:
+https://github.com/openai/math/blob/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/thermal.tex
+
+Estas lecturas verifican el alcance de versiones concretas, no certifican
+que ningún trabajo posterior haya resuelto el problema. No hubo búsqueda
+exhaustiva de literatura ni declaración de novedad o prioridad.
+
+III. DICCIONARIO EXACTO CON REFERENCIA CUÁNTICA
+
+III.1 Definición inequívoca del objetivo fijo
+Conviene escribir B_N de forma explícita para no confundirlo con todo (B):
+para cada p en [0,1], todos m,n finitos y X,Y normalizados,
+ S(T_N(p;X,Y)) >= (1-p)S(XX*)+pS(YY*)+e_N(p).
+Los coeficientes de T_N son los de III. En efecto,
+ alpha+eta=1-p, beta+delta=p,
+ U0=29/40-p/4, U1=11/40+p/4,
+ U0-U1=r(1-2p)+t, K^2=c^2p(1-p).
+Por tanto 1-4u=(r z+t)^2+c^2(1-z^2) y g(u)=e_N(p).
+La equivalencia exacta afirmada es B_N <=> Q, con ambos cuantificados
+universalmente en dimensión finita. NO es (B) para todo coeficiente <=> Q
+de este único N. El encabezado de III apunta a la interpretación correcta;
+añadir B_N evitaría toda ambigüedad residual.
+
+III.2 Purificaciones y dimensiones
+Dado rho_AR, elegir cualquier purificación |psi>_ABR. Para 0<p<1 escribir
+ |psi>=sqrt(1-p)|0>|X>_BR+sqrt(p)|1>|Y>_BR.
+Las ramas son unitarias y no tienen por qué ser ortogonales. Con X_(b,r)
+como vectorización, Tr_R |X><Y|=XY*. Aplicar N a la marginal AB produce
+exactamente T_N, pues
+ N(|0><0|)=diag(29/40,11/40),
+ N(|1><1|)=diag(19/40,21/40),
+ N(|0><1|)=(3/5)|0><1|.
+Una isometría de Stinespring da un estado puro A'EBR; por complementariedad,
+ S(A'B)=S(ER)=S((N_hat tensor id_R)(rho_AR)).
+Se entiende canal complementario en el sentido usual de Stinespring con
+entorno puro; los complementarios equivalentes por isometría no cambian la
+entropía no nula. Añadir arbitrariamente ruido mixto al entorno no es la
+misma noción y no se presupone.
+
+Al medir A, el estado ZR es suma directa de masas 1-p,p y marginales de
+las dos ramas, así que
+ S(ZR)=h(p)+(1-p)S(XX*)+pS(YY*).
+La marginal R de una rama se escribe X^T conjugate(X), no necesariamente
+X*X bajo esta vectorización, pero tiene el mismo espectro no nulo que XX*.
+Esta distinción no altera la entropía. Restar las dos identidades da Q
+exactamente, sin pérdida, cota o descarte de referencia. Como ambas salidas
+mantienen rho_R, también es diferencia de entropías condicionales.
+
+Recíprocamente, todo par rectangular X,Y y p construye el vector puro de
+arriba, y su marginal AR proporciona una instancia de Q. Cada R finito
+se admite; B puede ser tan grande como requiera la purificación. No se
+obtiene ninguna cota universal de dimensión. Para p=0 o p=1, la rama de
+peso cero se ignora. También puede comprobarse directamente: rho_AR es
+|i><i| tensor rho_R, y el lado izquierdo de Q vale e_N(i)=f_N(i).
+
+III.3 Qué aporta el rayo al objetivo fijo
+Los pesos que aparecen en la desigualdad de frontera no tienen por qué
+ser 1-p,p. Al recombinar frontera y esquina sí lo son. Sustituirlos por
+las poblaciones originales ANTES de recombinar sería incorrecto; la nota
+no lo hace. El control exacto de p=1/2 comprueba este punto en un caso,
+mientras que la identidad afín de I lo demuestra para todos.
+
+IV. SUBCLASES Y CONVEXIDAD
+
+IV.1 Estado rho_AR puro
+Si rho_AR es puro, el complementario ER de la salida ordinaria A' es
+puro globalmente, por lo que S(ER)=S(N(rho_A)). Tras medir A, cada rama de
+R es pura y S(ZR)=h(p). Para rho_A con población p, su coherencia satisface
+|rho_01|<=sqrt(p(1-p)); el radio de salida es como máximo sqrt(q(1-2p)).
+La entropía de qubit disminuye con su radio, de modo que
+S(N(rho_A))>=e_N(p). Esto prueba Q en la subclase pura, incluidos extremos.
+No autoriza reducir estados AR mixtos a puros: el funcional es diferencia
+de dos entropías, y no se ha probado la concavidad necesaria para tal paso.
+
+IV.2 Referencia clásica
+Para rho_AR=sum_j w_j rho_A^j tensor |j><j|, la fórmula de entropía de
+una suma directa cancela H(w) entre las dos salidas. Resulta exactamente
+sum_j w_j[S(N_hat(rho_A^j))-h(p_j)], con p=sum_j w_j p_j.
+Todo estado qubit a latitud fija es mezcla de puros a la misma latitud:
+si su Bloch transversal tiene longitud v y el círculo puro radio R0,
+mezclar las direcciones transversales opuestas con pesos (1+v/R0)/2 y
+(1-v/R0)/2; los polos se tratan directamente. Cada puro tiene entropía
+complementaria igual a e_N(p_j). Concavidad de S(N_hat(rho)) prueba la
+cota inferior e_N(p_j) para la mezcla. Jensen aplicado a f_N completa Q.
+La ortogonalidad de |j> es esencial en esta prueba de suma directa. No se
+extiende sin argumento a registros cuánticos no ortogonales. Tampoco la
+monotonía de cada entropía condicional bajo procesar R fija el signo de
+la diferencia de ambas.
+
+IV.3 Cálculo escalar completo
+Para c=3/5,r=1/4,t=1/5,
+ q(z)=c^2(1-z^2)+(rz+t)^2=Q-A(z-z0)^2,
+ A=119/400, z0=20/119, Q=243/595.
+El vértice pertenece a [-1,1]; q(-1)=1/400 y q(1)=81/400. Así
+1/400<=q<=Q<1. No hay singularidad q=0 o q=1 en esta derivación.
+Escribir x=sqrt(q), e(q)=h((1+x)/2). Entonces
+ de/dq=-atanh(x)/(2x),
+ d²e/dq²=-[x/(1-q)-atanh(x)]/(4x³),
+ q'=-2A(z-z0), q''=-2A, (q')²=4A(Q-q).
+La regla de la cadena produce exactamente
+ d²e_N/dz²=A[Q atanh(x)-(Q-q)x/(1-q)]/q^(3/2).
+Como atanh(x)>=x y Q>0, el numerador es al menos
+ x[Q-(Q-q)/(1-q)]=x q(1-Q)/(1-q).
+Se obtiene d²e_N/dz²>=A(1-Q)/(1-q)>0. Al pasar a p aparece factor 4;
+para 0<p<1,
+ f_N''(p)=4 e_N''(z)+1/[p(1-p)]>0.
+La continuidad de e_N y h en los extremos extiende la convexidad a [0,1].
+Las pendientes infinitas que proceden de -h en los polos no invalidan
+Jensen. El cálculo analítico de la nota es correcto.
+
+IV.4 Parámetros del canal y límites de las exclusiones
+Los coeficientes son no negativos. Las condiciones CP restantes se ven
+también directamente en el Choi: (1+r)^2-t^2-4c^2=33/400>0 y
+(1-r)^2-t^2=209/400>0. El máximo radio puro al cuadrado Q<1 excluye salida
+pura; t!=0 excluye unitalidad en la representación dada; c²-r=11/100>0
+excluye las familias c²=r y c²<=r descritas. Esto verifica las exclusiones
+algebraicas concretas, no una clasificación exhaustiva ni la inexistencia
+de cualquier otro teorema aplicable. La afirmación sobre un rectángulo de
+partners previamente establecido no se auditó, pues su prueba no pertenece
+al input congelado. No se usa como premisa de I–IV.
+
+V. CONTROLES EJECUTADOS Y SUS LÍMITES
+recheck901.py corrió con Python 3.12.6 y SymPy 1.14.0. CHECK901.json registra:
+* Reproducción exacta de los cinco controles racionales, incluidos todos
+  los pivotes LDL, coincidentes con CHECK900.json.
+* Identidades de Gram MM*=T, C2C2* y combinación convexa; no conmutatividad
+  de XX* e YY* en el ejemplo racional.
+* Radical exacto de p=1/2, lambda=(71+sqrt(1906))/120, su intervalo racional,
+  coeficientes de frontera positivos y recuperación del peso p.
+* Identidades polinomiales en población de pesos, CP, q, u y defecto de la
+  condición de thermal.tex. Estas son identidades generales algebraicas.
+* Un control finito complejo con X=diag(3/5,4/5) y
+  Y=[[3,4i],[0,12]]/13, p=1/2. Cuatro Kraus explícitos satisfacen exactamente
+  sum K_j* K_j=I; la marginal A'B de la dilatación coincide con T. La matriz
+  complementaria ER de tamaño 8 tiene polinomio característico x^4 veces el
+  de T de tamaño 4; se verifican igualmente los espectros de las ramas.
+
+Estos controles no calculan una desigualdad de entropías ni una comparación
+universal de normas. Las identidades finitas no sustituyen las demostraciones
+con cuantificadores de I–IV. Las exploraciones flotantes 480/324 citadas por
+la nota no se leyeron ni reprodujeron, y no se usan como evidencia universal.
+No se efectuó búsqueda de contraejemplos ni cálculo de optimización global.
+
+Incidencia operativa registrada: una primera ejecución pretendía crear la
+carpeta usando esa carpeta aún inexistente como directorio de trabajo; el
+sistema rechazó crear el proceso (OS error 267). No se ejecutó el comando.
+Se corrigió usando su padre existente y la ejecución posterior funcionó.
+La importación inicial de SymPy tardó varias decenas de segundos; terminó
+correctamente. No hubo fallos de descarga en las tres capturas ni fallos
+matemáticos en los controles exactos ejecutados.
+
+VI. OBJECIONES CONSERVADAS Y CORRECCIONES CONCRETAS
+O1. Inexactitud literal en extremo nulo: K²=U0U1 solo fuerza esquina si
+    U0U1>0. Ejemplo U0=0,U1=1,K=0,eta=delta=1/2. Añadir la condición;
+    K=0 ya demuestra este caso y no cambia la conclusión de reducción.
+O2. Soporte degenerado: no hay cuatro bloques no nulos para todo coeficiente.
+    Escribir «soporte contenido en P5, igual a P5 si las cuatro masas son
+    positivas». Mantener ceros dentro del dominio.
+O3. Regularidad abreviada: dar la justificación de rango fijo para C_theta
+    y de diferenciación espectral con 0 log 0; distinguir S(AA*) normalizada
+    de S(wAA*). Las fórmulas de la nota son correctas con estas convenciones.
+O4. Cuantificador del diccionario: nombrar explícitamente B_N para todas las
+    formas finitas y p, y escribir g(u)=e_N(p). No presentar Q del único N
+    como equivalente al dominio completo de coeficientes de I.
+O5. Dependencia no satisfecha: falta una prueba de P5-E en las fronteras
+    alcanzadas, o alternativamente una prueba directa de Q para todo rho_AR.
+    La derivada no prueba su hipótesis; ni positividad de compresión, ni
+    momentos enteros, ni el factor de rango de Zhang la suministran.
+O6. Frases finales potencialmente excesivas: «Only ... P5-E/quantum-reference
+    inequality could supply ...» debe limitarse a «En esta vía, P5-E sobre
+    los rayos basta; Q es equivalente al objetivo rectangular de N». P5-E
+    global y Q fijo no han sido declarados equivalentes por los argumentos,
+    y no se ha excluido que otras vías prueben aditividad.
+O7. Proveniencia no verificada: la repetición de objetivo propio 546 y el
+    uso anterior de SSA no se certifican sin abrir esos documentos; por
+    restricción del encargo no se abrieron. La nota se trata como reapertura
+    declarada de un objetivo anterior, sin prioridad ni novedad certificadas.
+O8. Reproducibilidad con efectos laterales: no ejecutar check900.py congelado
+    en un audit aislado, pues escribe fuera del ámbito. Utilizar la copia
+    de cálculos segura recheck901.py. Esto no objeta los cálculos matemáticos.
+O9. Alcance de las conclusiones externas: las versiones leídas no son una
+    búsqueda exhaustiva de estado del arte; el caso de partners restringidos,
+    otras notas propias y el teorema previo de bloque cero no se verificaron.
+    No elevar estas referencias contextuales a premisas demostradas aquí.
+
+VII. MAPA DE DEPENDENCIAS Y VEREDICTO ACOTADO
+Nodos demostrados en esta auditoría matemática, sin formalización asistida:
+ A. PSD universal <=> alpha delta>=K², bajo los cuantificadores de I.
+ B. Esquina por SSA y K=0 por concavidad de bloques.
+ C. (B) en todo dominio fijo <=> (B) en su frontera más esquina.
+ D. (B) en frontera <=> (P5-E) por el factor Gram explícito.
+ E. Hipótesis local de compresión Schatten => (P5-E), condicional.
+ F. B_N <=> Q para cualquier referencia finita, exactamente.
+ G. Q en estados AR puros y en referencias clásicas; convexidad de f_N.
+La combinación D+C+B aplicada a los rayos de N es suficiente para F, pero
+no establece la necesidad de esa combinación para N. E es más fuerte que
+su conclusión infinitesimal. G no prueba F en todo su dominio.
+
+La igualdad de techo convexo de salida de N con e_N(p) puede justificarse
+con las mismas latitudes: la descomposición a latitud fija da la cota
+superior y Jensen de e_N da la inferior para cualquier descomposición pura.
+Si B_N se demostrase, al aplicar la dilatación de cualquier partner a las
+dos ramas de una entrada bipartita pura se obtendría una cota por e_N(p)
+más el promedio de entropías del partner en ese ensemble. Este promedio
+es al menos su techo convexo. Extender por ensembles y convexidad daría
+superaditividad de los techos convexos; junto con subaditividad de la
+entropía de salida, es una vía suficiente hacia aditividad de Holevo.
+Todo ese encadenamiento sigue CONDICIONADO a B_N; no lo suministran G o
+los controles finitos. No se atribuye aquí una prueba incondicional de
+aditividad ni se importa una desde documentos excluidos.
+
+Un contraejemplo exacto a Q refutaría B_N por equivalencia, y con ello esta
+vía suficiente. No implicaría por sí solo un contraejemplo a aditividad.
+Un fallo de P5-E en una frontera tampoco refuta automáticamente B_N: la
+implicación del rayo es solo suficiente para el punto original.
+
+VEREDICTO: componentes válidos con las correcciones O1–O4 y delimitaciones
+O5–O9; el núcleo universal permanece sin demostrar en el material auditado.
+Se conserva íntegra la lista de objeciones. Sin nota de manuscrito, sin
+grado numérico y sin afirmación de prioridad, independencia o resultado global.

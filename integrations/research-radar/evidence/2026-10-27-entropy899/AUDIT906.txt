@@ -1,0 +1,449 @@
+AUDIT906 — revisión matemática adversa del presupuesto de referencia
+Fecha: 2026-10-27. Unidades: nats. Sin calificación de manuscrito.
+
+DICTAMEN
+
+La desigualdad explícita de PROOF904 se sostiene para el canal y la función
+escalar reconstruidos abajo:
+
+  G(rho) >= delta_e(p) - H(Z|R)_sigma
+         >= (44/125) p(1-p) - H(Z|R)_sigma.
+
+La prueba cubre todo estado rho_AR con A qubit y R de dimensión finita
+arbitraria, incluidos estados singulares, siempre que «bloques arbitrarios»
+signifique compatibles con rho >= 0 y Tr rho = 1. La desigualdad es universal
+en esos estados; la conclusión G >= 0 obtenida con el presupuesto exige la
+condición adicional H(Z|R)_sigma <= (44/125)p(1-p). No se elimina esa condición.
+Se valida además G >= 0 para todos los estados A-diagonales, aunque no cumplan
+el presupuesto. Se confirma el ejemplo mixto entrelazado y el margen 41/750.
+Se confirman los falsadores de ambos órdenes less noisy sin desplazamiento.
+
+No se ha encontrado un error matemático fatal. Sí hay dependencias de
+presentación y limitaciones importantes; se enumeran al final. En particular,
+el archivo de prueba por sí solo no define explícitamente N ni e_N y remite a
+901 y 903 ausentes. Esta auditoría reconstruye esos pasos sin consultar esos
+archivos. El dictamen se refiere a G tal como se define en el paquete y a e_N
+como entropía de salida pura a latitud fija. No certifica una equivalencia con
+otra formulación externa de «Q», ni capacidad cuántica, tensorización,
+arbitrary-partner, prioridad o significado editorial.
+
+1. Alcance, integridad y configuración
+
+Se leyó D:\LEEME.md antes de crear archivos. Antes de leer los payloads se
+verificó INPUT905.json, SHA256
+bc7420864243c591af54064358b175de31b13efdcb54825694f329917cdb50ee.
+Después se leyeron sus entradas y se verificaron tamaño y SHA256 de los tres
+payloads, antes de leer su contenido:
+
+CHECK904.json: 450 bytes;
+25d174c4714b2bf6eb40c0787c95824aaf9b7c9614f9df02e2ef9fddf1ea9cf5.
+check905.py: 1748 bytes;
+94f4ac9c5ee0590703d8b52ab648da8db6b204cc14c2237823e295b708287b03.
+PROOF904.txt: 6559 bytes;
+efa15bc00e137619c84e8e2d73511e40e8882f37e98796c7fd9ca37d062ae6ee.
+
+Se leyeron completos los tres. Se ejecutó check905.py con Python -B después
+de inspeccionarlo; sólo imprime. No se ejecutó advance904.py, no se abrió
+ESTADO, no se buscaron calificaciones y no se leyeron evaluaciones anteriores
+ni otros chats. Los únicos artículos consultados fueron los dos autorizados;
+el detalle de recuperación y lectura está en READINGS906.json.
+
+Configuración solicitada: GPT-6 Astra, esfuerzo xhigh. No hay en esta revisión
+atestación verificable de identidad o esfuerzo efectivos, por lo que NO se
+afirman. Un único revisor ejecutó esta ronda y no delegó. «Controles propios»
+describe cálculos reconstruidos a partir del paquete; no significa independencia
+institucional, otro modelo verificado, doble ciego ni aislamiento del sistema
+de archivos. El filesystem es compartido. La integridad se comprobó al principio
+y al sellar la entrega; ello no demuestra aislamiento frente a cambios
+transitorios o accesos externos durante el intervalo.
+
+2. Reconstrucción del objeto matemático y de sus cuantificadores
+
+Los Kraus incluidos en check905.py son
+
+ K0 = diag(sqrt(29/40), (3/5)/sqrt(29/40)),
+ K1 = diag(0, sqrt(33/1160)),
+ K2 = sqrt(19/40) |0><1|,
+ K3 = sqrt(11/40) |1><0|.
+
+Se verificó exactamente sum K_j^* K_j = I. Con
+V|a> = sum_{b,j} (K_j)_{ba}|b>_B|j>_E,
+N = Tr_E V(.)V^*, Nhat = Tr_B V(.)V^* son CPTP. La acción de Bloch obtenida
+de estos Kraus es
+
+ (x,y,z) -> ((3/5)x, (3/5)y, z/4+1/5).
+
+Por tanto, para un estado puro de población p en |1>, z=1-2p y x^2+y^2=1-z^2,
+la longitud de Bloch de la salida al cuadrado es
+
+ q(z) = (9/25)(1-z^2) + (z/4+1/5)^2
+      = 2/5 + z/10 - (119/400)z^2.
+
+La definición explícita necesaria, coherente con todo el texto, es
+
+ h(x) = -x ln x -(1-x)ln(1-x),
+ e_N(p) = h((1+sqrt(q(1-2p)))/2),
+ f_N(p) = e_N(p)-h(p).
+
+Para entrada pura las entropías de B y E coinciden por la descomposición de
+Schmidt de V|psi>. Así e_i=S(E_i), con e_0=h(29/40) y e_1=h(21/40)=h(19/40).
+No se necesita en esta auditoría ningún teorema externo de convex roof.
+Se fija esta representación de Nhat para las identidades matriciales. Una
+elección equivalente de Stinespring sólo añade o aplica isometrías al entorno,
+lo que conserva las entropías y las desigualdades aquí consideradas.
+
+Para todo d_R finito >=1 y todo rho_AR >=0, Tr rho_AR=1, se fija
+sigma=(Delta_Z tensor id_R)(rho), p=Tr rho_AR(|1><1| tensor I_R),
+tau=(Nhat tensor id_R)(rho), bartau=(Nhat tensor id_R)(sigma).
+Cuando 0<p<1, sigma=(1-p)|0><0| tensor rho_R^0 +p|1><1| tensor rho_R^1.
+Las rho_R^i pueden ser mixtas, singulares y no conmutativas. No se presupone
+que R sea clásico, una purificación o de tamaño acotado uniformemente.
+Las aplicaciones y las desigualdades se hacen por separado en cada dimensión
+finita; no se ha tomado un límite a referencias infinitodimensionales.
+
+kappa=H(Z|R)_sigma=S(sigma)-S(rho_R). Z es el registro clásico de la base
+medida. En particular 0<=kappa<=h(p), aunque R sea cuántico. La posible
+negatividad de la entropía condicional de un sistema cuántico general no
+permite asignar kappa<0 a este estado cq.
+
+3. Identidad exacta de la comparación diagonal y signos
+
+Sea ebar=(1-p)e_0+p e_1 y
+xi_ZER=sum_i p_i |i><i| tensor E_i tensor rho_R^i.
+Sus marginales ER y ZR son bartau y sigma. Por sumas directas,
+
+ S(xi)=h(p)+ebar+sum_i p_i S(rho_R^i),
+ S(sigma)=h(p)+sum_i p_i S(rho_R^i).
+
+Por definición de entropía condicional,
+
+ S(bartau)-S(sigma)=ebar-H(Z|ER)_xi.                 [identidad]
+
+SSA da H(Z|ER)<=H(Z|R)=kappa. También se puede obtener directamente de DPI:
+I(Z:ER)>=I(Z:R) al descartar E, y H(Z|X)=H(Z)-I(Z:X).
+El signo menos delante de H cambia una cota superior sobre H en una cota
+inferior sobre la diferencia de entropías. Resulta
+
+ S(bartau)-S(sigma)>=ebar-kappa.                    [904c]
+
+No se ha supuesto que las ramas rho_R^i conmuten. La condición de producto
+E_i tensor rho_R^i dentro de cada rama procede de aplicar el canal local a
+una entrada A-diagonal, y es válida exactamente en ese paso.
+
+4. Todos los estados A-diagonales, con referencia arbitraria
+
+Descartar R en la misma xi da H(Z|ER)<=H(Z|E). Si Ebar=sum_i p_i E_i,
+
+ H(Z|E)=h(p)+ebar-S(Ebar),
+ S(bartau)-S(sigma)>=S(Ebar)-h(p).
+
+Para comprobar S(Ebar)>=e_N(p) basta usar dos estados puros:
+|phi_+>=sqrt(1-p)|0>+sqrt(p)|1>,
+|phi_->=sqrt(1-p)|0>-sqrt(p)|1>.
+Su promedio es diag(1-p,p). Ambos tienen entropía de salida Nhat igual a
+e_N(p), por la acción axial y complementación descritas en el apartado 2.
+La concavidad de S sobre sus salidas da S(Ebar)>=e_N(p).
+Así, cuando rho=sigma, G>=0 para todo R finito y para todas las ramas,
+incluidas las no conmutativas. No hace falta aplicar la condición 904b.
+
+Este resultado NO permite reemplazar rho por sigma al intentar una cota
+inferior de S(tau): el pinching aumenta la entropía. El aviso de PROOF904
+sobre el signo contrario es correcto.
+
+5. Covariancia, pinching, DPI y coste de coherencia
+
+K0,K1 conmutan con Z y K2,K3 anticonmutan. Con W=diag(1,1,-1,-1),
+
+ V Z_A = (Z_B tensor W_E)V,
+ Nhat(Z X Z)=W Nhat(X) W.
+
+La primera identidad fue verificada como identidad matricial exacta; la segunda
+también sobre las cuatro unidades matriciales, incluidos los dos términos
+no hermíticos fuera de la diagonal. Por linealidad se extiende a cualquier
+operador AR al añadir id_R. No se restringen las coherencias a números reales.
+
+Como sigma=(rho+ZrhoZ)/2,
+
+ bartau=(tau+(W tensor I_R)tau(W tensor I_R))/2 = P_W(tau).
+
+P_W es una proyección autoadjunta para el producto de traza. log(bartau) es
+invariante bajo W en su soporte. Por ello
+Tr tau log(bartau)=Tr bartau log(bartau), y
+
+ C_E := S(bartau)-S(tau)=D(tau||bartau)>=0.
+
+Igualmente D(rho||sigma)=S(sigma)-S(rho). DPI se aplica al canal CPTP
+Nhat tensor id_R, sin ninguna hipótesis de producto entre A y R:
+
+ 0<=C_E<=D(rho||sigma)=S(sigma)-S(rho).
+
+Para la última cota, copie isométricamente la etiqueta A a C mediante
+|i>_A -> |i>_A|i>_C. El estado omega_ARC resultante satisface
+S(omega_ARC)=S(rho), omega_AR=sigma, omega_C=diag(1-p,p).
+Araki--Lieb para la partición AR:C implica
+
+ S(sigma)-S(rho)<=S(omega_C)=h(p).
+
+Así 904d tiene todos los signos correctos. No se ha medido o descartado
+prematuramente C para identificar S(omega_ARC) con S(rho).
+
+6. Combinación y casos límite
+
+Restando f_N=e_N-h y usando C_E<=h,
+
+ G = [S(bartau)-S(sigma)] - C_E -e_N(p)+h(p)
+   >= ebar-kappa-h(p)-e_N(p)+h(p)
+   = delta_e(p)-kappa.
+
+También queda la identidad útil, sin estimar términos,
+
+ G = delta_e(p)+h(p)-H(Z|ER)_xi-C_E
+   = delta_e(p)+I(Z:ER)_xi-C_E.                     [identidad exacta]
+
+Soportes: 2sigma-rho=ZrhoZ>=0, y 2bartau-tau=WtauW>=0.
+Por tanto supp(rho) está contenido en supp(sigma), y lo mismo para tau y
+bartau. Las entropías relativas usadas son finitas. Los logaritmos se toman
+sobre el soporte; 0 ln 0=0. No se requieren inversas de las ramas de R.
+Las identidades de sumas directas y SSA/DPI también admiten estados singulares.
+
+En p=0 o p=1, la positividad de la matriz de bloques de rho obliga a anular
+el bloque fuera de diagonal: un bloque diagonal cero no puede tener una
+fila o columna cruzada no nula en una matriz positiva. Entonces
+rho=|i><i| tensor rho_R, tau=E_i tensor rho_R, h(p)=0, delta_e=0, kappa=0
+y G=e_i-e_i=0. El tratamiento directo evita definir ramas de peso cero.
+
+7. Derivación escalar completa: no se usa audit901
+
+Escriba A=119/400 y q_*=243/595. Completando el cuadrado,
+
+ q(z)=q_*-A(z-20/119)^2,
+ (q'(z))^2=4A(q_*-q(z)), q''(z)=-2A.
+
+En -1<=z<=1 se tiene 1/400<=q(z)<=q_*<1. El mínimo está en z=-1;
+q(1)=81/400. No aparece singularidad escalar q=0 o q=1.
+Para 0<=q<1 defina
+
+ F(q)=atanh(sqrt(q))/sqrt(q)=sum_{n>=0} q^n/(2n+1).
+
+La derivación de h((1+sqrt(q))/2) da exactamente -F(q)/2.
+Al derivar otra vez y usar las identidades de q,
+
+ d^2 e_N/dz^2 = A F(q) -(q')^2 F'(q)/2
+              = A[F(q)-2(q_*-q)F'(q)].
+
+La serie converge y se puede derivar uniformemente en cualquier subintervalo
+cerrado con q<1, incluido todo el rango del canal. Por coeficientes,
+
+ F(q)+2qF'(q)=sum_{n>=0}q^n=1/(1-q),
+ 2F'(q)=sum_{n>=1} [2n/(2n+1)]q^(n-1) <= 1/(1-q).
+
+Como q_*>=0,
+
+ d^2 e_N/dz^2
+ = A[1/(1-q)-2q_*F'(q)]
+ >= A(1-q_*)/(1-q)
+ >= A(1-q_*)=22/125.
+
+El cambio z=1-2p introduce el factor 4 correcto, no 2:
+
+ e_N''(p)>=4A(1-q_*)=88/125.
+
+Así g(p)=e_N(p)-(44/125)p^2 es convexa en [0,1]. Su desigualdad de cuerda
+g(p)<=(1-p)g(0)+p g(1) equivale precisamente a
+
+ delta_e(p)>=(44/125)p(1-p).
+
+El coeficiente tiene unidades de nats, no bits. No es una afirmación de
+optimalidad. La derivación anterior cubre el intervalo completo; el muestreo
+de derivadas sólo es un diagnóstico adicional. La función h(p) de f_N no
+es diferenciable en los extremos, pero en esta parte se deriva e_N, que sí
+es suave allí; el resultado final admite esos extremos directamente.
+
+8. Ejemplo mixto, entrelazamiento y margen racional
+
+Sean r0=(1,0), r1=(1,sqrt(15))/4. Tienen norma uno y amplitud de solapamiento
+<r0,r1>=1/4; la probabilidad de solapamiento es 1/16. Los vectores
+v0=|0>r0 y v1=|1>r1 son ortogonales por el factor A. En esa base,
+
+ rho = [v0 v1] [[1/2,1/4],[1/4,1/2]] [v0 v1]^*,
+
+que coincide con la mezcla 3/4 psi_+ +1/4 psi_- de proyectores indicada.
+Su espectro es (3/4,1/4,0,0), de modo que es mixto de rango 2; p=1/2.
+La transpuesta parcial en R es hermítica y tiene determinante
+
+ det(rho^{T_R}) = -225/16384 <0.
+
+Una matriz semidefinida positiva no tiene determinante negativo. Por tanto
+la transpuesta parcial no es positiva y el estado está entrelazado, pues todo
+estado separable tiene transpuesta parcial positiva. No se necesita usar la
+suficiencia del criterio PPT en dimensión 2x2.
+
+rho_R=(|r0><r0|+|r1><r1|)/2 tiene espectro (5/8,3/8). Los bloques diagonales
+de sigma son puros, así S(sigma)=ln2 y
+
+ kappa=ln2-h(5/8).
+
+Para 0<=x<1,
+ln2-h((1+x)/2)=integral_0^x atanh(t)dt.
+Como atanh(t)=integral_0^t du/(1-u^2)<=t/(1-t^2)<=t/(1-x^2),
+la integral es <=x^2/[2(1-x^2)]. En x=1/4 resulta kappa<=1/30.
+Con p=1/2, (44/125)p(1-p)=11/125, luego
+
+ G >= 11/125 -1/30 =41/750 >0.
+
+La condición del presupuesto depende sólo de los bloques diagonales, por lo
+que cubre cada elección admisible del bloque cruzado que los conserve. Con
+estas ramas puras el bloque cruzado tiene forma gamma |r0><r1|/2, |gamma|<=1;
+el ejemplo tiene gamma=1/2. No se extrapola desde un punto numérico.
+
+Comprobación numérica, no sustituto de prueba: kappa≈0.031583942402,
+delta_e≈0.162967157769, G≈0.713999539065. El presupuesto racional usando
+kappa exacta da ≈0.056416057598, y la relajación 41/750≈0.054666666667.
+La holgura grande muestra que no se afirma ajuste del margen.
+
+Precisión terminológica: los soportes de las dos ramas son dos rectas
+distintas, cuya intersección es {0}. Son NO ORTOGONALES y sus proyectores no
+conmutan. «Overlapping supports» es aceptable sólo si se define como
+Tr(rho_R^0 rho_R^1)>0; sería falso si significara intersección no trivial.
+El entrelazamiento garantiza que el estado no es clásico-cuántico en R en
+ninguna base. «Referencia cuántica» aquí no significa meramente escoger una
+base no diagonal para un estado de referencia clásicamente correlacionado.
+
+9. Falsadores less noisy reconstruidos sin 903
+
+Ambos conjuntos tienen dos etiquetas clásicas equiprobables U y promedio
+de entrada I/2. Es importante especificar esos pesos.
+
+Conjunto Z: las salidas de Delta_Z son ortogonales, así I(U:Z)=ln2.
+Para acotar chi(E0,E1), use purificaciones explícitas en B tensor E:
+
+ u0 = sqrt(29/40)|0,0> +sqrt(11/40)|1,3>,
+ u1 = ((3/5)/sqrt(29/40))|0,0>
+      +sqrt(33/1160)|0,1> +sqrt(19/40)|1,2>.
+
+Ambas tienen norma 1, Tr_B |u_i><u_i|=E_i y <u0,u1>=3/5.
+La mezcla equiprobable de sus proyectores tiene espectro no nulo (4/5,1/5).
+Su Holevo es h(4/5). Aplicar Tr_B y DPI de información mutua da
+
+ I(U:E)=chi(E0,E1)<=h(4/5)<ln2=I(U:Z).
+
+Esto prueba la cota de 903 sin leer 903 ni invocar una fórmula de fidelidad.
+
+Conjunto X: Delta_Z(|+><+|)=Delta_Z(|-><-|)=I/2, luego I(U:Z)=0.
+Las salidas Nhat de ambos estados tienen entropía e_N(1/2), y su media es
+Eavg=Nhat(I/2). La verificación exacta obtiene
+
+ spec(Eavg) = {5/16-sqrt(37)/20, 5/16+sqrt(37)/20, 19/80, 11/80},
+ Tr Eavg^2 =729/1600<1/2.
+
+Jensen para -ln, con pesos los autovalores, da S(Eavg)>=-ln Tr Eavg^2.
+Por tanto S(Eavg)>ln2>=e_N(1/2) y
+
+ I(U:E)=S(Eavg)-e_N(1/2)>0.
+
+Z refuta I(U:E)>=I(U:Z) para todos los conjuntos; X refuta el orden contrario.
+X también refuta I(U:E)<=C I(U:Z) para cualquier C finita uniforme, pues su
+lado derecho es cero. Si se excluyeran artificialmente denominadores cero,
+la continuidad de perturbaciones del conjunto X también produciría cocientes
+sin cota. La falsación ya funciona con auxiliares clásicos de tamaño 2,
+así también invalida cualquier comparación sin desplazamiento más fuerte
+que contenga esos auxiliares entre sus casos.
+
+Los valores numéricos independientes son chi_Z≈0.312344066451 y
+chi_X≈0.475311224221. No se necesitan para las desigualdades estrictas.
+Nada aquí excluye cotas con término aditivo o dependiente del estado, ni
+todos los posibles usos de herramientas de comparación.
+
+10. Lectura primaria y dependencia real
+
+Belzig--Gao--Smith--Wu, arXiv:2411.19890v3:
+https://arxiv.org/html/2411.19890v3
+Se revisaron la representación BKM y la demostración de Lemma 4.1, además
+de Definition 7.1 y la discusión inmediata. La comparación local requiere
+verificar sus hipótesis para cada par de canales; no proporciona aquí una
+estimación con referencia cuántica arbitraria de manera automática.
+
+Hirche--Rouze--Stilck Franca, arXiv:2011.05949v4:
+https://arxiv.org/html/2011.05949v4
+Se revisaron la discusión de órdenes de Section 2.1 y Lemma 2.1 con su prueba.
+La distinción entre auxiliar clásico, referencia cuántica y versión plenamente
+cuántica impide convertir sin justificación una comparación ordinaria en
+una afirmación completa. El visor omitió algunos recuadros de definiciones:
+no se declara revisión íntegra de esas definiciones ausentes ni del artículo.
+
+El razonamiento de los apartados 2--9 no aplica un nuevo teorema BKM a N.
+Usa propiedades estándar de entropía (sumas directas, SSA/DPI, concavidad,
+Araki--Lieb), una covariancia verificable y cálculo escalar elemental.
+La formulación del presupuesto es un corolario explícito de esas propiedades.
+No se ha efectuado una búsqueda exhaustiva de antecedentes: la prioridad del
+corolario y del ejemplo es desconocida. «Corolario estándar» califica la
+derivación y no afirma haber localizado una publicación idéntica.
+
+11. Objeciones adversas y límites que permanecen
+
+A. Autosuficiencia documental. PROOF904 remite a Kraus de 901, curvatura de
+901 y comparación de 903. check905.py permite recuperar los Kraus, pero la
+prueba aislada no contiene la definición de e_N. Conviene incorporar las
+definiciones y las derivaciones de los apartados 2, 7 y 9 si el texto se
+presenta como prueba autónoma. Esta auditoría NO editó los originales.
+
+B. La condición suficiente es restrictiva y no necesaria. Para un estado
+producto rho_A tensor rho_R con 0<p<1, kappa=h(p). Como -ln x>=1-x,
+h(p)>=2p(1-p)>(44/125)p(1-p), tal producto nunca cumple 904b. Sin embargo,
+todos los productos A-diagonales ya satisfacen G>=0 por el apartado 4.
+Para productos con rho_A puro se obtiene incluso G=0 directamente por
+complementación y aditividad de la entropía, aunque tampoco cumplan 904b.
+Por tanto la condición no caracteriza los estados válidos y no representa
+una cobertura universal por continuidad, densidad o aproximación demostrada.
+
+C. El paso ausente puede escribirse exactamente. Para G>=0 universal haría
+falta controlar, para todos los estados admisibles,
+C_E <= delta_e(p)+I(Z:ER)_xi. La estimación C_E<=h(p) más
+I(Z:ER)>=I(Z:R) sólo da el presupuesto restringido. No hay en PROOF904 una
+relación adicional que cierre el caso restante. El resultado no prueba ni
+desmiente que ese control universal sea verdadero.
+
+D. No se afirma un coeficiente óptimo ni una clase maximal. La curvatura
+88/125 es una cota uniforme conservadora; el presupuesto delta_e-kappa ya
+es más fuerte que su relajación racional. La prueba de todos los estados
+A-diagonales es también más fuerte que aplicar sólo el presupuesto a ellos.
+
+E. «Overlapping supports» requiere la precisión del apartado 8. El ejemplo
+sí es mixto y entrelazado con ramas no ortogonales; no tiene dos soportes
+puros con intersección subespacial no trivial.
+
+F. La comprobación original check905.py verifica álgebra finita y aritmética
+de constantes; no deriva e_N'' ni prueba SSA/DPI ni cuantifica sobre todos R.
+Su campo passed no basta por sí solo para certificar 904a. Lo mismo vale
+para el passed de los controles propios: la cobertura infinita procede de
+los argumentos analíticos de este informe, no de 369 muestras.
+
+G. Independencia y formalización. No hay prueba Lean, verificación formal,
+certificado de identidad del modelo ni aislamiento del filesystem. Se leyó
+CHECK904 después de validar hashes; el revisor no fue ciego a los valores
+que después recalculó. La lectura primaria fue dirigida, no una auditoría
+completa del estado del arte. No se proporciona una nota de manuscrito.
+
+12. Controles, incidencias y conservación
+
+check905.py pasó con Python 3.12.6 y SymPy 1.14.0, reproduciendo los valores
+de CHECK904. CONTROLS906.json registra los controles propios exactos, un
+diagnóstico escalar con 70 cifras y 101 puntos, y 369 estados matriciales con
+dimensiones de R 1,2,3,5, incluidos 128 A-diagonales, 8 extremos y 93 que
+cumplen el presupuesto dentro de la tolerancia declarada. No hubo violaciones
+por encima de tolerancia. Los pequeños negativos de orden 10^-16 son residuos
+de redondeo y no cotas certificadas por intervalos.
+
+La primera ejecución del controlador propio detectó un error del arnés:
+emp(0) y emp(1) introducían división binaria de enteros antes de convertirlos
+a mpmath, contaminando un criterio de 10^-65. Se corrigió la conversión a
+mp.mpf al entrar en emp, sin relajar ese criterio. Se conservó la incidencia
+en RUNLOG906.txt. No correspondía a un fallo de PROOF904.
+
+Los originales no se modificaron. Todas las escrituras de esta revisión se
+limitaron a las dos carpetas nuevas autorizadas. MANIFEST906.json enumera
+tamaños y SHA256 del contenido entregado; la comparación C/D se realiza por
+bytes y se registra en CD_VERIFY906.json. El manifiesto no se autoenumera
+para evitar circularidad criptográfica. La verificación y sus hashes externos
+se explican en el propio protocolo de sellado. La copia de D conserva toda
+la entrega; ningún artefacto de esta revisión queda sólo en C.

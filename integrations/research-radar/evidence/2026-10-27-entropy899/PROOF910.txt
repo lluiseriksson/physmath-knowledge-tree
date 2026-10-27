@@ -1,0 +1,45 @@
+SCOPE-SEPARATION910: A MIXED ENTANGLED STATE MISSED BY BOTH EARLIER BOUNDS
+Own analytic gate, not in audits901/906; no manuscript grade or priority claim.
+
+Use the standard isotropic rho_v=v|Phi+><Phi+|+(1-v)I/4 at v=4/5.
+It is full rank, entangled, with population p=1/2 and reference marginal I/2.
+The measurement conditional entropy is kappa=h(9/10), I(Z:R)=log2-kappa.
+
+1. The distinguishability-budget bound904 is negative here.
+For 0<=x<1 let d(x)=log2-h((1+x)/2). Integrating the positive atanh series,
+ d(x)=sum_(n>=1) x^(2n)/[2n(2n-1)].
+With x^2=2/5, d(x)<=x^2/2+x^4/[12(1-x^2)]=2/9.
+Thus delta_e(1/2)<=log2-e_N(1/2)<=2/9. In contrast,
+ h(9/10)=(log10)/10-(9/10)log(9/10)>2/10+9/100=29/100.
+Here -log(9/10)>1/10, and log10>2 follows already from
+2[(9/11)+(9/11)^3/3]>2 and log10=2 atanh(9/11).
+Hence delta_e-kappa<2/9-29/100<0; the rational904b condition fails too.
+
+2. The entanglement/correlation bound907 is also negative.
+We use the pre-existing Wootters formula for arbitrary TWO-qubit states,
+not a new entanglement formula. The spin-flipped rho equals rho; its
+eigenvalues are17/20,1/20,1/20,1/20. Thus concurrence is7/10, and
+ E_F=h((1+sqrt(51/100))/2)=log2-d(sqrt(51/100)).
+For q=51/100, the positive series and decreasing denominator give
+ d(sqrt(q))<=M=q/2+q^2/12+q^3/30+q^4/[56(1-q)]<29/100.
+Consequently
+ E_F-I(Z:R)=kappa-d(sqrt(q))>29/100-M>0,
+with the exact rational lower bound in CHECK910.json. Thus907 cannot
+certify Q here. This is not a counterexample to907; its lower bound is
+negative while the actual gap remains positive.
+
+3. The independent line argument908 DOES certify Q here, uniformly with
+ G>=14179/1624320>0 nats. It therefore covers at least one mixed entangled
+state not certified by either earlier sufficient bound. This is a genuine
+coverage distinction within these working estimates, not a claim that
+the standard isotropic family was previously unknown or that an earlier
+external/own theorem does not already cover it. It does not solve Q in
+the general excluded region, all two-qubit states, or arbitrary partners.
+
+Reading: Wootters, arXiv:quant-ph/9709029v2 (13 September1997), definitions
+and displayed formulae(8)-(10) were read on the primary arXiv rendering.
+https://arxiv.org/html/quant-ph/9709029v2
+The full optimal-decomposition proof was not replayed; this is an attributed
+literature premise. Natural logarithms convert its bits formula to nats.
+All subsequent algebra/series bounds here are own exact calculations.
+No floating entropy intervals or grid sampling are used for this gate.

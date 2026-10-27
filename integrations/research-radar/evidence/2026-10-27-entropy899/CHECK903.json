@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "scope": "Exact matrix and spectrum identities; strict entropy signs established analytically in OBSTRUCTION903, not via floating tolerances.",
+  "sympy": "1.14.0",
+  "fixed_A_marginal": "I/2 in all five states",
+  "purification_overlap": "3/5",
+  "purification_mixture_spectrum": [
+    "4/5",
+    "1/5"
+  ],
+  "convexity": "strictly fails",
+  "concavity": "strictly fails",
+  "global_Q_refuted": false,
+  "global_Q_proved": false,
+  "new_grade": false
+}

@@ -1,0 +1,94 @@
+{
+  "audit_id": "entropy901",
+  "utc": "2026-10-27T08:53:04.933974+00:00",
+  "input_manifest_sha256": "c8f1cfd7ee86c2e200054de86fbd9835049d39c5326f858aaad07fad2bf43570",
+  "scope": "Component argument audit of I–IV; not a manuscript assessment.",
+  "decision": "reductions_valid_with_explicit_corrections_global_statement_unproved",
+  "scientific_importance_assessed": false,
+  "numeric_grade": null,
+  "priority_certified": false,
+  "new_paper_assessment": false,
+  "independence_claimed": false,
+  "model_provenance": {
+    "requested_label_in_delegation": "GPT-6 Astra xhigh",
+    "effective_identity_verified": false,
+    "effective_effort_verified": false,
+    "shared_filesystem": true
+  },
+  "inputs_hashes_verified_before_payload_read": true,
+  "inputs_hashes_rechecked_before_packaging": true,
+  "components": {
+    "universal_PSD_equivalence": "valid for all finite shapes; necessity already for two rows; not necessary for a single row",
+    "ray_reduction": "valid; boundary sufficient for each parent, and equivalent after universal coefficient quantification plus proved corner",
+    "corner_SSA": "valid including singular branch matrices and zero row cases handled directly",
+    "P5_factor": "exact; support degenerates when weights vanish",
+    "Schatten_derivative": "correct including changing block norms; only a conditional implication from a local norm comparison",
+    "quantum_reference_dictionary": "exact equivalence B_N iff Q for arbitrary finite references",
+    "pure_reference_subclass": "proved",
+    "classical_reference_subclass": "proved",
+    "scalar_convexity": "analytic calculation correct, including continuity at population endpoints"
+  },
+  "global_B_proved": false,
+  "global_P5_E_proved": false,
+  "global_Q_proved": false,
+  "Holevo_additivity_proved": false,
+  "counterexample_found": false,
+  "counterexample_search_performed": false,
+  "finite_checks": {
+    "passed": true,
+    "frozen_CHECK900_reproduced": true,
+    "complex_Stinespring_dictionary_check": true,
+    "entropy_inequality_certified": false
+  },
+  "objections": [
+    {
+      "id": "O1",
+      "kind": "literal_degenerate_case",
+      "text": "K²=U0U1 only forces the corner when U0U1>0; zero-product cases are already covered by K=0."
+    },
+    {
+      "id": "O2",
+      "kind": "literal_support_case",
+      "text": "Support equals P5 only with four positive masses; otherwise it is a subgraph."
+    },
+    {
+      "id": "O3",
+      "kind": "regularity_detail",
+      "text": "Add fixed-support derivative justification and normalized block entropy convention."
+    },
+    {
+      "id": "O4",
+      "kind": "quantifier_clarification",
+      "text": "State B_N explicitly: its equivalence with Q does not equate the whole coefficient domain to one fixed channel."
+    },
+    {
+      "id": "O5",
+      "kind": "unproved_dependency",
+      "text": "P5-E on the reached boundaries, or direct Q for arbitrary mixed quantum reference, remains unproved."
+    },
+    {
+      "id": "O6",
+      "kind": "scope_clarification",
+      "text": "Restrict final only-could-supply wording to this proof route; P5-E and Q do not have identical global quantifiers."
+    },
+    {
+      "id": "O7",
+      "kind": "unverified_provenance",
+      "text": "Prior own notes and actual model/effort/independence were not independently verified; no priority certificate."
+    },
+    {
+      "id": "O8",
+      "kind": "reproduction_side_effect",
+      "text": "Frozen check900.py writes outside this audit; safe reproduction used instead."
+    },
+    {
+      "id": "O9",
+      "kind": "literature_scope",
+      "text": "Only specified source passages/versioned sources were checked, not exhaustive current literature or restricted partner claims."
+    }
+  ],
+  "forbidden_actions_performed": [],
+  "report": "AUDIT901.txt",
+  "read_log": "READS901.json",
+  "checks": "CHECK901.json"
+}

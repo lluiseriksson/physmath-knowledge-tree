@@ -1,0 +1,193 @@
+Research reduction899: the noncommutative core of the fixed axial target
+2026-10-27. Analytical working note, unreviewed. No new manuscript, formal
+proof, priority certificate or model assessment is claimed.
+
+PROVENANCE AND REUSE BOUNDARY
+This reopens the SAME fixed-channel target already considered in the own
+26October norm-compression/gluing note546. It is not a newly discovered
+open problem. The new work below is an explicit coefficient-boundary
+reduction and an exact conditional-entropy dictionary. The older triangle-
+free positivity compression551 is a DIFFERENT assertion and is not used
+as a sharp norm comparison. Source assumptions and unverified steps remain.
+
+The target channel is N:(x,y,z)->(cx,cy,rz+t) with c=3/5,r=1/4,t=1/5.
+Its CP margin (1+r)^2-t^2-4c^2 is33/400>0, t is nonzero, its maximum pure
+output squared Bloch radius is243/595<1, and c^2-r=11/100>0. Thus it is
+outside the pure-output, unital, GAD c^2=r and positive Davies c^2<=r
+classes considered in our notes. This is not an exhaustive prior-art
+or globally open-status certificate. The already established restricted
+partner rectangle is not an arbitrary-partner theorem.
+
+I. EXACT FIXED-ROW COEFFICIENT REDUCTION
+Let X,Y be complex matrices of the same finite rectangular shape with
+Tr XX*=Tr YY*=1. All entropies in this note are in nats. Fix U0,U1>=0,
+U0+U1=1 and 0<=K<=sqrt(U0 U1). Put u=U0 U1-K^2 and
+g(u)=h((1+sqrt(1-4u))/2). For nonnegative coefficients with
+alpha+beta=U0 and eta+delta=U1 define
+
+ T=[alpha XX*+beta YY*, KXY*;
+                  KYX*, eta XX*+delta YY*].
+
+Positive semidefiniteness under a universal quantifier over ALL finite
+shapes (including two rows) and all such X,Y is equivalent to
+alpha*delta>=K^2. No necessity for a fixed one-row shape is claimed.
+Sufficiency follows by factoring the middle positive
+2x2 scalar block and adding the nonnegative beta/eta diagonal blocks.
+Necessity follows by taking X,Y as orthogonal unit column vectors:
+the indicated principal2x2 block is [alpha,K;K,delta].
+
+The desired coefficient-domain inequality is
+
+ S(T)>=(alpha+eta)S(XX*)+(beta+delta)S(YY*)+g(u).             (B)
+
+For fixed X,Y,U0,U1,K the difference in(B) is concave in the two free
+coefficients: T is affine, entropy is concave, the block-entropy terms
+are affine and g(u) is constant.
+
+Known corner, with an independent standard proof:
+At beta=eta=0, (B) holds. If U0 U1>0 put mu=K/sqrt(U0 U1), choose pure
+flag vectors a,b with inner product mu, and purify X,Y as unit vectors
+on systems B,C. The pure vector
+ sqrt(U0)|0>|X>|a>+sqrt(U1)|1>|Y>|b>
+has T as its row/B marginal. Its complementary CF marginal is
+ U0 X_C tensor |a><a|+U1 Y_C tensor |b><b|.
+Concavity of conditional entropy gives its entropy at least
+ S(U0|a><a|+U1|b><b|)+U0 S(X_C)+U1 S(Y_C).
+The flag mixture has the spectrum of [U0,K;K,U1], giving g(u).
+The two marginal entropies of each pure X or Y coincide. This proves(B)
+at the corner by strong subadditivity, including singular X,Y. It is
+the controlled-purification mechanism already in our Davies v3, not
+a claimed new ingredient. Vanishing row sums are immediate.
+
+Ray reduction, retaining every population-dependent coefficient:
+Assume 0<K^2<U0 U1 and (beta,eta)!=(0,0). On the ray
+ beta_s=s beta, eta_s=s eta,
+ alpha_s=U0-s beta, delta_s=U1-s eta,
+the product alpha_s delta_s is strictly decreasing until one factor
+vanishes. It starts at U0 U1>K^2 and is at least K^2 when s=1. Hence
+there is a unique s_star>=1 before the first zero with
+ (U0-s_star beta)(U1-s_star eta)=K^2.
+Let lambda=1/s_star. The original four coefficients, AND the unchanged
+cross coefficient K, are exactly lambda times this boundary point plus
+(1-lambda) times the corner. Concavity of the difference in(B) therefore
+reduces this individual parent inequality to its boundary inequality,
+since the corner contribution is nonnegative.
+
+Consequently(B) over the ENTIRE fixed-row admissible coefficient set is
+equivalent to(B) on alpha*delta=K^2 together with the already proved
+corner. For the single fixed N, proving the boundary points reached by
+its p-dependent rays is SUFFICIENT, not necessary. No assertion that
+the fixed-channel claim is equivalent to every possible boundary point
+is intended. K=0 follows from block-diagonal entropy concavity; K^2=U0U1
+forces the corner and is already covered.
+
+II. WHAT THE MISSING BOUNDARY STATEMENT ACTUALLY IS
+On alpha*delta=K^2, a Gram factor is
+
+ M=[sqrt(alpha)X, sqrt(beta)Y,             0;
+    sqrt(delta)Y,             0, sqrt(eta)X].
+
+Its four nonzero blocks have a P5 bipartite support pattern and MM*=T.
+The Frobenius compression C2(M) has scalar Gram [U0,K;K,U1]. Thus the
+missing boundary inequality is exactly the entropic compression
+
+ S(MM*)>=S(C2(M)C2(M)*)
+         +(alpha+eta)S(XX*)+(beta+delta)S(YY*).            (P5-E)
+
+This is a sharp SPECTRAL entropy comparison for a special repeated-block
+P5 family. It is not positivity of a scalar compressed matrix. In
+particular the own triangle-free theorem for [Tr|H_ij|^p] does not prove
+(P5-E), whether one uses H=MM* or H=M*M. Integer trace moments alone
+also do not supply the derivative near entropy order one.
+
+An attributed stronger sufficient hypothesis is Audenaert's2xN Schatten
+norm-compression inequality on an interval of exponents theta<2 ending
+at2, restricted to THESE M. The full2007 conjecture is not established
+or required as a claimed result here. To check the derivative dictionary,
+use L(theta)=Tr|M|^theta and R(theta)=Tr|C_theta(M)|^theta; both equal1
+at2. The left derivative of L-R would be nonpositive if L>=R below2.
+For a normalized block A and weight w,
+ d||sqrt(w)A||_theta/dtheta at2 =-sqrt(w)S(AA*)/4.
+Therefore
+ L'(2)=-S(MM*)/2,
+ R'(2)=-[S(C2 C2*)+sum_blocks w S(AA*)]/2.
+This yields precisely(P5-E). It is essential to differentiate the block
+norms as well; freezing the Frobenius compression would lose the weighted
+block entropies. Zero blocks use derivative0 and 0 log0=0 conventions.
+No norm inequality has been proved by this derivative calculation.
+
+III. AN EXACT QUANTUM-REFERENCE DICTIONARY FOR THE ORIGINAL TARGET
+Let Delta_Z be computational-basis measurement of the input qubit and
+let N_hat be any complementary channel of N. For a state rho_AR with
+arbitrary finite reference R, put p=<1|rho_A|1> and
+
+ f_N(p)=e_N(p)-h(p),
+ e_N(p)=h((1+sqrt(c^2(1-z^2)+(rz+t)^2))/2), z=1-2p.
+
+The original universal rectangular inequality is EQUIVALENT to
+
+ S((N_hat tensor id_R)(rho_AR))
+   -S((Delta_Z tensor id_R)(rho_AR)) >= f_N(p)             (Q)
+
+for every rho_AR and arbitrary finite R. This is also a difference of
+conditional entropies since S(R) cancels. It retains p and the complete
+quantum reference. It is not inferred from a graph path or a known
+single-channel entropy minimization theorem.
+
+Proof of dictionary:
+Purify rho_AR on a system B, and write its vector as
+ sqrt(1-p)|0>|X>_BR+sqrt(p)|1>|Y>_BR.
+The normalized vector branches correspond to rectangular matrices X,Y.
+The N output on its qubit and B is exactly T with
+ alpha=(29/40)(1-p), beta=(19/40)p,
+ eta=(11/40)(1-p), delta=(21/40)p,
+ K=(3/5)sqrt(p(1-p)).
+Purity after the two dilations gives S(T)=S((N_hat tensor id)rho_AR).
+The measured ZR state has entropy
+ h(p)+(1-p)S(XX*)+pS(YY*), because opposite marginals of a pure branch
+have the same spectrum. Substitution proves the equivalence. Conversely
+every pair X,Y gives such a purification. Population endpoints follow
+directly or by continuity. Reference/output dimensions are NOT bounded
+by this argument.
+
+IV. TWO ALREADY CONTROLLED SUBCLASSES DO NOT COVER(Q)
+1. Pure rho_AR: the first entropy in(Q) equals S(N(rho_A)), the measured
+state has entropy h(p), and the output Bloch-radius bound gives
+S(N(rho_A))>=e_N(p). Thus(Q) holds in this subclass.
+
+2. Classical R: block-diagonal entropy reduces the left side to
+sum_j w_j [S(N_hat(rho_A^j))-h(p_j)]. Each complementary entropy is at
+least e_N(p_j): decompose the qubit state into pure states with the SAME
+latitude, whose complementary entropies equal the ordinary pure-output
+entropies. Concavity gives the assertion. It remains to use scalar
+convexity of f_N and Jensen, not a quantum-reference theorem.
+
+For completeness its scalar convexity can be checked analytically.
+Set A=c^2-r^2=119/400, z0=20/119 and Q=243/595. Then
+q(z)=Q-A(z-z0)^2, with 1/400<=q<=Q<1. Writing x=sqrt(q), direct
+differentiation yields
+
+ d^2 e_N(z)/dz^2
+ = A [Q atanh(x)-(Q-q)x/(1-q)]/q^(3/2)
+ >= A(1-Q)/(1-q)>0,
+
+using atanh(x)>=x. Hence e_N(p) is convex, as in the already known
+axial roof argument. Subtracting the concave binary entropy leaves
+f_N convex, including continuous population endpoints. This proves
+the classical-reference subclass. These scalar facts are not asserted
+as novel independently of the existing axial-roof literature.
+
+The unsolved core is MIXED rho_AR with a genuinely quantum reference.
+No justified pure-state reduction or classicalization of that reference
+has been supplied. An exact mixed quantum-reference counterexample to(Q)
+would refute this sufficient rectangular mechanism, not automatically
+Holevo additivity itself. The earlier480 and targeted324 floating
+explorations are not a proof or an exhaustive search.
+
+DISPOSITION
+This packet narrows a substantive target without claiming it solved.
+Only the missing P5-E/quantum-reference inequality could supply the
+arbitrary-partner result sought here. The elementary reductions, prior
+inequality restatements and scalar cases alone are not selected as a
+new frontier paper. No requested review has been run on a new PDF and
+no scientific-importance grade is attached to this note.

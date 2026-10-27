@@ -1,0 +1,113 @@
+{
+  "utc_compiled": "2026-10-27T08:53:04.933974+00:00",
+  "chronology": "D:/LEEME.md first; INPUT900 hash then content; all four payload hashes and bytes at 2026-10-27T08:39:19Z before payload content; external selected passages; safe reproduction; post-audit hashes.",
+  "local_reads": [
+    {
+      "path": "D:/LEEME.md",
+      "purpose": "Storage/workspace instructions",
+      "sha256_at_packaging": "7ec14c1a7848b9228a4fa7f0bb6f85e53fb9ade4cbd11249fe8cb34a1e6c87a2"
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-10-27_entropy900-input\\INPUT900.json",
+      "sha256": "c8f1cfd7ee86c2e200054de86fbd9835049d39c5326f858aaad07fad2bf43570",
+      "bytes": 1187,
+      "purpose": "Frozen input manifest and three allowed URLs"
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-10-27_entropy900-input\\PROOF899.txt",
+      "sha256": "f3d705673d176269cfa176e34deaded00d7ce46718cd97d18372d50c8b57268f",
+      "bytes": 9592,
+      "purpose": "Full mathematical audit I–IV"
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-10-27_entropy900-input\\check900.py",
+      "sha256": "f30008b52518efa7f0b514da439f0afab80867e0d22e8216f9f27cffbaf90c5c",
+      "bytes": 2770,
+      "purpose": "Read only, inspect calculations and write effects"
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-10-27_entropy900-input\\CHECK900.json",
+      "sha256": "4c8272d937f17f37ccb467b098a2c8a53a9d0805bd1edc6b8801acd1009f6b41",
+      "bytes": 2159,
+      "purpose": "Inspect and compare exact outputs"
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-10-27_entropy900-input\\SUBGRAPH899.json",
+      "sha256": "ae52686eb60e6e171ee488ddf0d1190396360135f88befca0f7a1395f3039ca1",
+      "bytes": 14256,
+      "purpose": "Context-only graph; no proof premise"
+    }
+  ],
+  "external_sources": [
+    {
+      "file": "audenaert_math0702186v2.html",
+      "url": "https://arxiv.org/html/math/0702186v2",
+      "utc": "2026-10-27T08:42:18.7226824Z",
+      "sha256": "f3eadc8787004473cabcda1c2e4b3ffd525abb84593b297bb742bb065d3939bc",
+      "bytes": 447663,
+      "success": true,
+      "version": "arXiv math/0702186v2, 2007-03-26",
+      "read_scope": "Abstract and introduction, Conjecture 1 equations (1)-(2), summary of special cases, section 4.3 hypotheses; web rendered lines approximately 31-128 and 324-335. Other returned incidental text was not used.",
+      "purpose": "Confirm norm-compression orientation, conjectural status in this version, and limits of named special cases.",
+      "capture_scope": "Full HTML response preserved; mathematical reading limited to the stated passages.",
+      "hash_scope": "Captured response bytes, not a proof/authorship certificate."
+    },
+    {
+      "file": "zhang_2410.21961v4.html",
+      "url": "https://arxiv.org/html/2410.21961v4",
+      "utc": "2026-10-27T08:42:19.7161035Z",
+      "sha256": "12da2ccade5f58a268ace0c9958e497b91fd4de8495f7dced2777da457f5222d",
+      "bytes": 806674,
+      "success": true,
+      "version": "arXiv 2410.21961v4, 2026-03-28",
+      "read_scope": "Abstract; introduction Conjecture 1.14, Theorem 1.15, Corollary 1.16 and nearby distinction from Audenaert–Kittaneh conjecture, approximately rendered lines 133-139 and 224-323.",
+      "purpose": "Distinguish exact constant-one compression from rank-factor result; derive entropy loss independently.",
+      "capture_scope": "Full HTML response preserved; mathematical reading limited to the stated passages.",
+      "hash_scope": "Captured response bytes, not a proof/authorship certificate."
+    },
+    {
+      "file": "thermal_7ef5c0c.html",
+      "url": "https://github.com/openai/math/blob/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/preprints/Classical-capacity-and-entropy-inequalities-for-generalized-amplitude-damping-September-24-2026/build/sections/thermal.tex",
+      "utc": "2026-10-27T08:42:20.7551540Z",
+      "sha256": "7f761f46e322bb502d9dd4df5d05934ffb53f4c7f7bb116c840272bc5ff800e4",
+      "bytes": 450224,
+      "success": true,
+      "version": "Git commit 7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a, thermal.tex",
+      "read_scope": "The thermal theorem coefficient condition, fixed-row mixture and zero-block dependency, displayed source about lines 1-129; rendered lines 451-680.",
+      "purpose": "Check exact alpha*delta-beta*eta=K^2 hypothesis and why it does not cover the present positive-beta*eta boundary or interior fixed-N population.",
+      "capture_scope": "Full HTML response preserved; mathematical reading limited to the stated passages.",
+      "hash_scope": "Captured response bytes, not a proof/authorship certificate."
+    }
+  ],
+  "not_read": [
+    "global ESTADO.json",
+    "prior manuscript assessments",
+    "target scores or requested grades",
+    "own note546",
+    "own positivity compression551",
+    "own Davies v3 note",
+    "older floating searches 480/324",
+    "other chats"
+  ],
+  "failures": [
+    {
+      "stage": "initial directory creation command",
+      "error": "Unified process creation rejected because requested working directory did not yet exist (OS error 267).",
+      "resolution": "Repeated from existing C:/Trabajo/airr parent; no original files affected."
+    }
+  ],
+  "delays": [
+    {
+      "stage": "first Python/SymPy import",
+      "description": "Several tens of seconds; completed successfully."
+    }
+  ],
+  "downloads_failed": false,
+  "exact_checks_failed": false,
+  "runtime": {
+    "python": "3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)]",
+    "sympy": "1.14.0",
+    "shell": "PowerShell"
+  },
+  "inspection_limits": "No exhaustive literature review; no model/effort/independence attestation; no quality or importance score."
+}

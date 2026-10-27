@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "sympy": "1.14.0",
+  "entropy_exchange_spectrum": [
+    "sqrt(37)/20 + 5/16",
+    "19/80",
+    "11/80",
+    "5/16 - sqrt(37)/20"
+  ],
+  "majorization_q": [
+    "5/8",
+    "19/80",
+    "11/80",
+    "0"
+  ],
+  "H_q_greater_log12over5_exact_integer_comparison": true,
+  "uniform_isotropic_gap_lower_bound_nats": "14179/1624320",
+  "mixing_parameter": "every v in[0,1]",
+  "sampling": false,
+  "universal_Q_proved": false,
+  "model_review": false
+}

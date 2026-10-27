@@ -1,0 +1,66 @@
+{
+  "audit_id": "entropy906",
+  "task_date": "2026-10-27",
+  "assessment_type": "Unscored mathematical component audit",
+  "verdict": "scoped_bound_valid_with_documentation_caveats",
+  "fatal_mathematical_errors_found": [],
+  "validated_claims": {
+    "budget": "For every finite R and admissible rho_AR: G >= delta_e(p) - H(Z|R)_sigma >= (44/125)p(1-p) - H(Z|R)_sigma, for the explicitly reconstructed axial channel and pure-latitude entropy e_N.",
+    "sufficient_condition": "H(Z|R)_sigma <= (44/125)p(1-p) implies G >= 0.",
+    "A_diagonal": "G >= 0 for every A-diagonal state with arbitrary finite quantum reference, without the budget restriction.",
+    "phase_covariance": "Verified exactly on the Stinespring isometry and all four matrix units.",
+    "coherence_cost": "0 <= D(tau||bartau) <= D(rho||sigma) <= h(p).",
+    "scalar_curvature": "e_N''(p) >= 88/125, derived afresh via F(q)=atanh(sqrt(q))/sqrt(q).",
+    "example": "Mixed rank 2, entangled by negative partial-transpose determinant -225/16384; branch overlap amplitude 1/4; G >= 41/750 nats.",
+    "less_noisy_falsifiers": "Both zero-offset directions fail using equiprobable binary classical auxiliaries and average I/2; no finite uniform I(U:E) <= C I(U:Z)."
+  },
+  "objections": [
+    "PROOF904 is not self-contained in its definitions of N/e_N and references to 901/903; those missing steps were reconstructed in AUDIT906 without consulting the earlier materials.",
+    "The sufficient budget condition excludes all interior product inputs with uninformative R and is not necessary, as the A-diagonal result already shows.",
+    "No bound closes the remaining universal condition C_E <= delta_e + I(Z:ER).",
+    "Overlapping supports must mean nonorthogonal supports: the two pure branch supports are distinct lines with intersection {0}.",
+    "The coefficient and certified subclass are not shown optimal or maximal.",
+    "Finite algebra checks and numerical passed flags are not proofs over arbitrary references.",
+    "The process is not blind to CHECK904 values, not formally verified, and not technically isolated from the shared filesystem."
+  ],
+  "scope_limits": {
+    "universal_Q_proved": false,
+    "universal_Q_disproved": false,
+    "arbitrary_partner_theorem_proved": false,
+    "tensorization_proved": false,
+    "formal_proof_created": false,
+    "priority_verified": false,
+    "novelty": "Unknown; explicit corollary of standard entropy tools and elementary scalar calculus, not an identified prior duplicate.",
+    "manuscript_evaluation_performed": false,
+    "external_equivalence_of_Q_and_G_audited": false
+  },
+  "configuration": {
+    "requested_model": "GPT-6 Astra",
+    "requested_reasoning_effort": "xhigh",
+    "effective_model_verified": false,
+    "effective_reasoning_effort_verified": false,
+    "reviewers_active_in_this_round": 1,
+    "subagents_spawned": 0,
+    "filesystem_shared": true,
+    "independence_claim": "Fresh derivations within the stated read restrictions; no stronger technical or institutional independence claim."
+  },
+  "checks": {
+    "supplied_check905": "passed after source inspection; Python -B; stdout only",
+    "own_controls": "CONTROLS906.json",
+    "matrix_diagnostic_states": 369,
+    "reference_dimensions_probed": [1, 2, 3, 5],
+    "scalar_diagnostic_points": 101,
+    "scalar_decimal_precision": 70,
+    "initial_harness_issue": "Integer endpoint arguments introduced a binary float in mpmath diagnostics; corrected by conversion at function entry, without relaxing the criterion. See RUNLOG906.txt."
+  },
+  "input_manifest_sha256": "bc7420864243c591af54064358b175de31b13efdcb54825694f329917cdb50ee",
+  "originals_modified": false,
+  "forbidden_material_read": false,
+  "publication_or_repository_state_changes": false,
+  "primary_sources": [
+    "https://arxiv.org/html/2411.19890v3",
+    "https://arxiv.org/html/2011.05949v4"
+  ],
+  "read_log": "READINGS906.json",
+  "integrity_protocol": "MANIFEST906.json lists payload sizes and SHA256, including CD_VERIFY906.json. Its own hash is external. Sealing compares all final C/D files byte-for-byte, including the manifest."
+}

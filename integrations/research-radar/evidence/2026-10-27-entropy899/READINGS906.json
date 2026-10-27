@@ -1,0 +1,66 @@
+{
+  "audit_id": "entropy906",
+  "reading_policy": "Only the supplied immutable package, D:/LEEME.md, the two authorized primary articles, and this audit's newly generated artifacts were read. No earlier audit, state, scores, other chats, or repository content was consulted.",
+  "local_read_sequence": [
+    {"path": "D:/LEEME.md", "extent": "complete", "purpose": "storage and workspace instructions"},
+    {"path": "C:/Trabajo/airr/2026-10-27_entropy905-input/INPUT905.json", "extent": "complete, only after its expected SHA256 matched", "purpose": "payload manifest"},
+    {"action": "all three declared payload sizes and SHA256 checked before reading any payload"},
+    {"path": "C:/Trabajo/airr/2026-10-27_entropy905-input/PROOF904.txt", "extent": "complete, all seven sections and selected reading note", "purpose": "audited claim and proof"},
+    {"path": "C:/Trabajo/airr/2026-10-27_entropy905-input/CHECK904.json", "extent": "complete", "purpose": "declared exact outputs; no evidentiary substitution for derivation"},
+    {"path": "C:/Trabajo/airr/2026-10-27_entropy905-input/check905.py", "extent": "complete before execution", "purpose": "Kraus reconstruction and supplied finite checks"}
+  ],
+  "primary_readings": [
+    {
+      "url": "https://arxiv.org/html/2411.19890v3",
+      "authors": "Belzig, Gao, Smith, Wu",
+      "title": "Reverse-type Data Processing Inequality",
+      "version_date_shown": "2025-10-08",
+      "retrieval": "web tool HTML rendering; no PDF download",
+      "substantively_read": [
+        "Abstract and introduction's DPI/support definition (rendered lines 37-85)",
+        "Section 4.1, BKM representation, Lemma 4.1 statement and proof (lines 299-350)",
+        "Section 7, Definition 7.1 and immediate discussion (lines 1011-1026)"
+      ],
+      "tool_queries": [
+        "open URL without line position; returned initial context through line 133",
+        "find: Lemma 4.1; returned several separated lemma matches and nearby context",
+        "find: Definition 7.1; returned lines 1017-1026",
+        "open at line 288; returned lines 278-334",
+        "open at line 1004; returned lines 962-1026",
+        "open at line 335; returned lines 299-407"
+      ],
+      "incidental_context_not_a_full_proof_audit": "Nearby Sections 3, 4.2 and 6; later lemma match snippets and part of Appendix A.2 surfaced in search results. No claim of complete examination of these results.",
+      "use_in_audit": "Distinguishes local BKM comparison from complete quantum-reference quantities. No theorem from this paper was applied to establish the audited budget.",
+      "full_paper_read": false
+    },
+    {
+      "url": "https://arxiv.org/html/2011.05949v4",
+      "authors": "Hirche, Rouze, Stilck Franca",
+      "title": "On contraction coefficients, partial orders and approximation of capacities for quantum channels",
+      "version_date_shown": "2022-11-14",
+      "retrieval": "web tool HTML rendering; no PDF download",
+      "substantively_read": [
+        "Abstract, introductory distinction of order variants and finite-dimensional notation (rendered lines 39-104)",
+        "Section 2.1 discussion, Lemma 2.1 and proof, surrounding quantum-reference distinctions (lines 107-158)"
+      ],
+      "tool_queries": [
+        "open URL without line position; returned initial context through line 106",
+        "find: Definition 2.1; no corresponding exact definition heading, incidental matches from later sections",
+        "find: completely less noisy; returned separated passages in Sections 2, 3 and 4",
+        "open at line 107; returned lines 92-142",
+        "open at line 143; returned lines 120-196"
+      ],
+      "rendering_limitation": "Some definition boxes are absent from the rendered text. Their complete statements were not claimed read or audited.",
+      "incidental_context_not_a_full_proof_audit": "Proposition 2.2 and start of Section 2.2, tensorization discussion and capacity-result snippets, and later Section 8 search matches.",
+      "use_in_audit": "Prevents conflating classical auxiliaries with arbitrary quantum references. The audited entropy argument is independent of this article's specialized comparison theorems.",
+      "full_paper_read": false
+    }
+  ],
+  "no_other_external_source_consulted": true,
+  "priority_search_exhaustive": false,
+  "standard_facts_used_without_separate_primary_paper_retrieval": [
+    "SSA / conditional entropy monotonicity (also derived here from mutual-information DPI)",
+    "relative-entropy data processing for finite CPTP maps",
+    "Araki-Lieb, entropy concavity, direct-sum entropy, positivity under partial transpose of separable states"
+  ]
+}
