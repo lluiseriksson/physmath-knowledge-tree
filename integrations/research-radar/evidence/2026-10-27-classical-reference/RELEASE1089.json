@@ -1,0 +1,48 @@
+{
+  "utc": "2026-10-27T20:59:16.346473+00:00",
+  "tag": "ARR-2026-77DGRYDGXD8MDSY2-v4",
+  "target": "5d5d34fcada3da22333355a41e2f205bb0894d47",
+  "release_url": "https://github.com/arr-research/arr-research.github.io/releases/tag/ARR-2026-77DGRYDGXD8MDSY2-v4",
+  "published_at": "2026-10-27T20:57:16Z",
+  "assets": [
+    {
+      "name": "ARR-2026-77DGRYDGXD8MDSY2-v4-sources.zip",
+      "url": "https://github.com/arr-research/arr-research.github.io/releases/download/ARR-2026-77DGRYDGXD8MDSY2-v4/ARR-2026-77DGRYDGXD8MDSY2-v4-sources.zip",
+      "sha256": "fb23ee1fc5a024b5cc00b55849be0082eb7b48e15dee19286fe2c2873b777f08",
+      "bytes": 3451275
+    },
+    {
+      "name": "ARR-2026-77DGRYDGXD8MDSY2-v4.pdf",
+      "url": "https://github.com/arr-research/arr-research.github.io/releases/download/ARR-2026-77DGRYDGXD8MDSY2-v4/ARR-2026-77DGRYDGXD8MDSY2-v4.pdf",
+      "sha256": "255ca15a68df24944e2f3623265e9912ca7cad1d75e96074fadb304c0f83eb7e",
+      "bytes": 432959
+    },
+    {
+      "name": "MANIFEST.sha256",
+      "url": "https://github.com/arr-research/arr-research.github.io/releases/download/ARR-2026-77DGRYDGXD8MDSY2-v4/MANIFEST.sha256",
+      "sha256": "d574ae53532228192a767d7099f2eccc07510d23212fd10099e8344f3ad103f3",
+      "bytes": 60126
+    },
+    {
+      "name": "RECORD.json",
+      "url": "https://github.com/arr-research/arr-research.github.io/releases/download/ARR-2026-77DGRYDGXD8MDSY2-v4/RECORD.json",
+      "sha256": "328c7ef67ab8824ae32ffbbfaa98f21180e8ebced2feac2a3d7e995a813fedda",
+      "bytes": 8742
+    }
+  ],
+  "manifest_entries_verified": 538,
+  "exact_pdf_and_all_reports": true,
+  "native_packager_excludes_logs_from_outer_bundle": [
+    "screening/review1048/OWN1048.log",
+    "screening/review1031/OWN1031-resumed.log",
+    "screening/review1031/OWN1031-v2.log",
+    "screening/review1031/OWN1031-v3.log",
+    "screening/review1031/OWN1031.log",
+    "screening/review1042/controls/replay1042.log"
+  ],
+  "excluded_logs_verified_in_complete_nested_bundle": true,
+  "all_objections_and_incidents_preserved": true,
+  "working_paper": true,
+  "accepted": false,
+  "goal_met": false
+}

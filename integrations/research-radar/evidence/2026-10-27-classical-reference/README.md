@@ -1,0 +1,1 @@
+Own full1084/1093 textual reports,1092 input and verified publication/reading receipts. No foreign corpus. Only1084 is a current exact-PDF manuscript assessment;1093 is a dependent technical barrier, no grade. Later simplex1096/1099/1101 and audit1100 are NOT included. Original dossiers remain in D; LF transport explicitly hashed.

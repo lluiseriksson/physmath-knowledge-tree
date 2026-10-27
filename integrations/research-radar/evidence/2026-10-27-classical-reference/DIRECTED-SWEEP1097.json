@@ -1,0 +1,491 @@
+{
+  "utc": "2026-10-27T21:16:51.436720+00:00",
+  "directed_not_exhaustive": true,
+  "dedup": "Unchanged commit/listed IDs are inventory, not new proof audits. AIRRv4 is already published project output, not an independent novelty source.",
+  "sources": [
+    {
+      "key": "openai_math",
+      "url": "https://api.github.com/repos/openai/math/commits?per_page=1",
+      "utc": "2026-10-27T21:16:49.415922+00:00",
+      "reading_level": "inventoried endpoint only; no abstract,statement or proof newly read",
+      "status": 200,
+      "bytes": 4784,
+      "sha256": "6ca38558150e5428a6ab89342338edbbedc7eb5cf1d5dcc3752dd34b0ad91760",
+      "foreign_body_saved": false,
+      "latest_commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+      "commit_date": "2026-10-26T21:18:03Z",
+      "unchanged_since1059": true
+    },
+    {
+      "key": "deepmind_formal",
+      "url": "https://api.github.com/repos/google-deepmind/formal-conjectures/commits?per_page=1",
+      "utc": "2026-10-27T21:16:49.415922+00:00",
+      "reading_level": "inventoried endpoint only; no abstract,statement or proof newly read",
+      "status": 200,
+      "bytes": 8641,
+      "sha256": "35c8d5ede2936394b64fe555e4ee1f44d4d8375e7947129a60c9ed10d8bbae5c",
+      "foreign_body_saved": false,
+      "latest_commit": "c0c538071a21b36d15f70f5998370eb6a4c31c97",
+      "commit_date": "2026-10-27T09:30:35Z",
+      "unchanged_since1059": true
+    },
+    {
+      "key": "own_public_repos",
+      "url": "https://api.github.com/users/lluiseriksson/repos?per_page=100&sort=updated",
+      "utc": "2026-10-27T21:16:49.416921+00:00",
+      "reading_level": "inventoried endpoint only; no abstract,statement or proof newly read",
+      "status": 200,
+      "bytes": 212804,
+      "sha256": "ae0f763a4fb53e8fe89affa97aaf8b993c4fa2e3dd4f103071fcf7f891b7501f",
+      "foreign_body_saved": false,
+      "bounded_first_page_repos": [
+        {
+          "name": "physmath-knowledge-tree",
+          "url": "https://github.com/lluiseriksson/physmath-knowledge-tree",
+          "pushed_at": "2026-10-27T20:32:31Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "reset-minimax-lab",
+          "url": "https://github.com/lluiseriksson/reset-minimax-lab",
+          "pushed_at": "2026-10-24T08:30:44Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "reversible-branch-lab",
+          "url": "https://github.com/lluiseriksson/reversible-branch-lab",
+          "pushed_at": "2026-10-24T04:25:22Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "THE-ERIKSSON-PROGRAMME",
+          "url": "https://github.com/lluiseriksson/THE-ERIKSSON-PROGRAMME",
+          "pushed_at": "2026-10-15T02:41:50Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "additive-gkls-leaky-boundary",
+          "url": "https://github.com/lluiseriksson/additive-gkls-leaky-boundary",
+          "pushed_at": "2026-09-09T18:44:21Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "many-body-filling-maintenance-floor",
+          "url": "https://github.com/lluiseriksson/many-body-filling-maintenance-floor",
+          "pushed_at": "2026-09-09T18:44:10Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lean-ym-flow",
+          "url": "https://github.com/lluiseriksson/lean-ym-flow",
+          "pushed_at": "2026-10-27T16:42:44Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lean-transfer-matrix",
+          "url": "https://github.com/lluiseriksson/lean-transfer-matrix",
+          "pushed_at": "2026-10-27T18:46:38Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "aqft-split-inclusion-series",
+          "url": "https://github.com/lluiseriksson/aqft-split-inclusion-series",
+          "pushed_at": "2026-09-09T18:44:05Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "hodge-conjecture-research-front",
+          "url": "https://github.com/lluiseriksson/hodge-conjecture-research-front",
+          "pushed_at": "2026-09-09T18:43:54Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "support-leakage-rapid-maintenance",
+          "url": "https://github.com/lluiseriksson/support-leakage-rapid-maintenance",
+          "pushed_at": "2026-09-09T18:44:15Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "finite-sample-spectral-certificates",
+          "url": "https://github.com/lluiseriksson/finite-sample-spectral-certificates",
+          "pushed_at": "2026-09-09T18:43:13Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "ym-audit",
+          "url": "https://github.com/lluiseriksson/ym-audit",
+          "pushed_at": "2026-09-09T18:44:46Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "riemann-resolvent-programme",
+          "url": "https://github.com/lluiseriksson/riemann-resolvent-programme",
+          "pushed_at": "2026-09-09T18:43:04Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "riemann-prime-resolvent",
+          "url": "https://github.com/lluiseriksson/riemann-prime-resolvent",
+          "pushed_at": "2026-10-01T11:19:47Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lean-2d-yang-mills",
+          "url": "https://github.com/lluiseriksson/lean-2d-yang-mills",
+          "pushed_at": "2026-10-27T16:43:45Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "physmath-lean-lemmas",
+          "url": "https://github.com/lluiseriksson/physmath-lean-lemmas",
+          "pushed_at": "2026-09-09T18:44:26Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "point-span-tangent-absorption",
+          "url": "https://github.com/lluiseriksson/point-span-tangent-absorption",
+          "pushed_at": "2026-09-09T18:44:00Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "ym-mass-gap-lean-verification",
+          "url": "https://github.com/lluiseriksson/ym-mass-gap-lean-verification",
+          "pushed_at": "2026-09-09T18:44:42Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "mathlib-plane-tree-catalan",
+          "url": "https://github.com/lluiseriksson/mathlib-plane-tree-catalan",
+          "pushed_at": "2026-09-09T18:44:32Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lean-connes-kreimer",
+          "url": "https://github.com/lluiseriksson/lean-connes-kreimer",
+          "pushed_at": "2026-10-27T20:04:40Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "p-vs-np-research-front",
+          "url": "https://github.com/lluiseriksson/p-vs-np-research-front",
+          "pushed_at": "2026-09-09T18:43:50Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lean-gaussian-field",
+          "url": "https://github.com/lluiseriksson/lean-gaussian-field",
+          "pushed_at": "2026-10-27T19:29:35Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "ym-lattice-numerics",
+          "url": "https://github.com/lluiseriksson/ym-lattice-numerics",
+          "pushed_at": "2026-10-27T16:37:57Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lean-os-positivity",
+          "url": "https://github.com/lluiseriksson/lean-os-positivity",
+          "pushed_at": "2026-10-27T16:40:33Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "hausdorff-certificates",
+          "url": "https://github.com/lluiseriksson/hausdorff-certificates",
+          "pushed_at": "2026-09-09T18:43:09Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lean-zero-free-regions",
+          "url": "https://github.com/lluiseriksson/lean-zero-free-regions",
+          "pushed_at": "2026-10-27T19:30:29Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "irynayoutube",
+          "url": "https://github.com/lluiseriksson/irynayoutube",
+          "pushed_at": "2026-08-26T05:14:07Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "mathlib4",
+          "url": "https://github.com/lluiseriksson/mathlib4",
+          "pushed_at": "2026-08-07T17:07:12Z",
+          "default_branch": "master"
+        },
+        {
+          "name": "rooted-tree-catalan-closure",
+          "url": "https://github.com/lluiseriksson/rooted-tree-catalan-closure",
+          "pushed_at": "2026-07-02T22:12:17Z",
+          "default_branch": "master"
+        },
+        {
+          "name": "kinshard-arena",
+          "url": "https://github.com/lluiseriksson/kinshard-arena",
+          "pushed_at": "2026-06-27T09:27:50Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lean-rooted-tree-polymer-expansion",
+          "url": "https://github.com/lluiseriksson/lean-rooted-tree-polymer-expansion",
+          "pushed_at": "2026-06-23T19:50:45Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "quiz-del-cuento",
+          "url": "https://github.com/lluiseriksson/quiz-del-cuento",
+          "pushed_at": "2026-05-20T19:14:28Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "championsleaguesim",
+          "url": "https://github.com/lluiseriksson/championsleaguesim",
+          "pushed_at": "2025-03-19T16:20:48Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "neuralsnakes",
+          "url": "https://github.com/lluiseriksson/neuralsnakes",
+          "pushed_at": "2025-03-05T11:52:26Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "pixelfootball",
+          "url": "https://github.com/lluiseriksson/pixelfootball",
+          "pushed_at": "2025-03-04T22:41:34Z",
+          "default_branch": "main"
+        }
+      ],
+      "coverage": "first100metadata rows only, no repository content or latest branch commit read"
+    },
+    {
+      "key": "anthropic",
+      "url": "https://www.anthropic.com/research",
+      "utc": "2026-10-27T21:16:49.416921+00:00",
+      "reading_level": "inventoried endpoint only; no abstract,statement or proof newly read",
+      "status": 200,
+      "bytes": 413322,
+      "sha256": "0b9b51be1f54246cca769fa1832f2158b7a616d20a8f6123196d112a288e8a89",
+      "foreign_body_saved": false
+    },
+    {
+      "key": "arxiv_prior",
+      "url": "https://arxiv.org/abs/1510.01844v4",
+      "utc": "2026-10-27T21:16:49.996337+00:00",
+      "reading_level": "inventoried endpoint only; no abstract,statement or proof newly read",
+      "status": 200,
+      "bytes": 43988,
+      "sha256": "7a954cbbb7f58c58e08e56da0e11eeea16edf76a6379976844f97186abcd418e",
+      "foreign_body_saved": false
+    },
+    {
+      "key": "vixra_author",
+      "url": "https://www.ai.vixra.org/author/lluis_eriksson",
+      "utc": "2026-10-27T21:16:50.033826+00:00",
+      "reading_level": "inventoried endpoint only; no abstract,statement or proof newly read",
+      "status": 200,
+      "bytes": 70181,
+      "sha256": "ace9657b4945531d1d5cae40b80b9d26042ea6e9d12052fdb68c7bd63acfd4a1",
+      "foreign_body_saved": false
+    },
+    {
+      "key": "airr_current",
+      "url": "https://airr.science/papers/ARR-2026-77DGRYDGXD8MDSY2/versions/v4/",
+      "utc": "2026-10-27T21:16:50.219358+00:00",
+      "reading_level": "inventoried endpoint only; no abstract,statement or proof newly read",
+      "status": 200,
+      "bytes": 46397,
+      "sha256": "436ac2a31b9254952c49dc20b1da1818f5da5277f772ad025734e948c442ea52",
+      "foreign_body_saved": false,
+      "comparison_note": "URLadvanced to actual publishedv4; not a same-artifact novelty comparison"
+    },
+    {
+      "key": "makur_publications",
+      "url": "https://www.cs.purdue.edu/homes/amakur/publications.html",
+      "utc": "2026-10-27T21:16:50.344752+00:00",
+      "reading_level": "inventoried endpoint only; no abstract,statement or proof newly read",
+      "status": 200,
+      "bytes": 30280,
+      "sha256": "1ab506c508f85ec635dd1ae7cd1521e1d50a8b12481db99c521d01b0160043e9",
+      "foreign_body_saved": false
+    },
+    {
+      "key": "arxiv_quantph_new",
+      "url": "https://arxiv.org/list/quant-ph/new",
+      "utc": "2026-10-27T21:16:50.473547+00:00",
+      "reading_level": "inventoried endpoint only; no abstract,statement or proof newly read",
+      "status": 200,
+      "bytes": 658693,
+      "sha256": "c67dcd981cf20e92a1fe528bba528b58f4089eee80d77aa0b4d93dd7e5b2971a",
+      "foreign_body_saved": false,
+      "bounded_ids": [
+        "2610.33139",
+        "2610.33144",
+        "2610.33156",
+        "2610.33160",
+        "2610.33185",
+        "2610.33188",
+        "2610.33189",
+        "2610.33207",
+        "2610.33220",
+        "2610.33246",
+        "2610.33290",
+        "2610.33294",
+        "2610.33326",
+        "2610.33347",
+        "2603.28852",
+        "2610.33378",
+        "2610.33386",
+        "2610.33429",
+        "2610.33532",
+        "2610.33545",
+        "2610.33591",
+        "2610.33607",
+        "2610.33613",
+        "2610.33632",
+        "2610.33723",
+        "2610.33773",
+        "2610.33800",
+        "2610.33834",
+        "2610.33848",
+        "2610.33893",
+        "2610.34003",
+        "2610.34055",
+        "2610.34079",
+        "2610.34143",
+        "2610.34176",
+        "2610.34249",
+        "2610.34257",
+        "2610.34262",
+        "2610.34322",
+        "2610.34338",
+        "2610.34364",
+        "2610.34399",
+        "2610.34411",
+        "2610.34430",
+        "2610.34446",
+        "2610.34483",
+        "2610.34485",
+        "2610.34486",
+        "2610.34492",
+        "2610.34506",
+        "2610.34635",
+        "2610.34666",
+        "2610.34696",
+        "2610.34698",
+        "2610.34762",
+        "2610.34784",
+        "2610.34832",
+        "2610.34899",
+        "2610.34919",
+        "2610.34972",
+        "2610.34988",
+        "2610.35016",
+        "2610.35099",
+        "2610.35119",
+        "2610.35126",
+        "2610.35178",
+        "2610.35183",
+        "2610.35184",
+        "2512.18478",
+        "2610.35205",
+        "2610.35227",
+        "2610.35300",
+        "2610.35301",
+        "2610.35370",
+        "2610.35377",
+        "2610.35410",
+        "2610.35433",
+        "2610.35445",
+        "2610.35467",
+        "2610.35478",
+        "2610.35498",
+        "2610.35513",
+        "2610.35555",
+        "2610.35585",
+        "2610.35608",
+        "2610.35632",
+        "2610.35657",
+        "2610.35660",
+        "2610.35665",
+        "2610.35699",
+        "2610.35722",
+        "2610.35734",
+        "2610.35735",
+        "2610.35758",
+        "2610.35784",
+        "2610.35797",
+        "2609.30246",
+        "2404.07978",
+        "2610.35824",
+        "2610.35828"
+      ],
+      "coverage": "first100listedIDs at most; no abstract or proof reading inferred"
+    },
+    {
+      "key": "arxiv_mathit_recent",
+      "url": "https://arxiv.org/list/math.IT/recent",
+      "utc": "2026-10-27T21:16:50.829555+00:00",
+      "reading_level": "inventoried endpoint only; no abstract,statement or proof newly read",
+      "status": 200,
+      "bytes": 78947,
+      "sha256": "1250f7fbdd04daac7cbf1cbf5f1ba948af538748c237c45ca9cbd2b0e385e252",
+      "foreign_body_saved": false,
+      "bounded_ids": [
+        "2610.35833",
+        "2610.35813",
+        "2610.35372",
+        "2610.35346",
+        "2610.35105",
+        "2610.34937",
+        "2610.34863",
+        "2610.34805",
+        "2610.34730",
+        "2610.34729",
+        "2610.34697",
+        "2610.34532",
+        "2610.34511",
+        "2610.34405",
+        "2610.34377",
+        "2610.34169",
+        "2610.34142",
+        "2610.34110",
+        "2610.34101",
+        "2610.34016",
+        "2610.34010",
+        "2610.33983",
+        "2610.33982",
+        "2610.33743",
+        "2610.33730",
+        "2610.33655",
+        "2610.33559",
+        "2610.33497",
+        "2610.33367",
+        "2610.35438",
+        "2610.35136",
+        "2610.35121",
+        "2610.34750",
+        "2610.34621",
+        "2610.34404",
+        "2610.34378",
+        "2610.34088",
+        "2610.33676",
+        "2610.33419",
+        "2610.33383",
+        "2610.33368",
+        "2610.30384",
+        "2610.32898",
+        "2610.32818",
+        "2610.32807",
+        "2610.32785",
+        "2610.32760",
+        "2610.32549",
+        "2610.32540",
+        "2610.32171"
+      ],
+      "coverage": "first100listedIDs at most; no abstract or proof reading inferred"
+    }
+  ],
+  "substantive_reading_this_turn": "Entire2-page Ordentlich-Polyanskiy author PDF theorem1/2 and proof read, own binary/simplex candidates derived separately; stored in1096SOURCES. No foreign corpus persisted.",
+  "candidate1096_status": "root proof candidate;8exact finite triangular cases,18BKMdiagnostics,8finiteUDdiagnostics with3nonseparating adverse cases. Awaiting serial audit after1093."
+}
