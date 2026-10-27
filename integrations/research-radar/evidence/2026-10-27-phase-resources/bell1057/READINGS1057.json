@@ -1,0 +1,45 @@
+{
+  "utc": "2026-10-27T19:04:08.946542+00:00",
+  "sources": [
+    {
+      "id": "MakurPolyanskiy2018",
+      "url": "https://people.lids.mit.edu/yp/homepage/data/symch_dom.pdf",
+      "status": 200,
+      "sha256": "23827f83529668a5e8e576364ab192ab3737307c2f97060faf1305c583ea60d9",
+      "bytes": 692932,
+      "read_scope": "Selected Proposition12 statement p23; only context excerpts p9/16. Bounds lambda\u00b2..|lambda| visible there, not a whole-paper audit."
+    },
+    {
+      "id": "LeeMakur2024authorindex",
+      "url": "https://www.cs.purdue.edu/homes/amakur/publications.html",
+      "status": 200,
+      "sha256": "1ab506c508f85ec635dd1ae7cd1521e1d50a8b12481db99c521d01b0160043e9",
+      "bytes": 30280,
+      "read_scope": "Primary author publication inventory identifies2024 product symmetric paper and DOI link. No exact formula read."
+    },
+    {
+      "id": "LeeMakur2024conferenceabstract",
+      "url": "https://easychair.org/smart-program/2024Allerton/2024-09-25.html",
+      "status": 200,
+      "sha256": "e50b3238c50a33fcadf7738341b19d46acf4b8247e6915fe4ca9759eb3725c66",
+      "bytes": 116534,
+      "read_scope": "Author-provided conference abstract read: exact KL formulas for product q-ary symmetric channels. Plausible covering source for the classical benchmark; exact theorem/formula and proof unavailable in this reading."
+    }
+  ],
+  "publisher_access": "IEEE10735307 returned418 through web tool; no purchase or bypass attempted",
+  "potential_covering_source": {
+    "title": "Contraction Coefficients of Product Symmetric Channels",
+    "authors": [
+      "Dongmin Lee",
+      "Anuran Makur"
+    ],
+    "year": 2024,
+    "doi": "10.1109/ALLERTON63246.2024.10735307",
+    "scope": "abstract/inventory only, formula not read"
+  },
+  "classical_novelty_claim_abandoned": true,
+  "reason": "An elementary reconstruction is useful as a benchmark, not a separate new-paper contribution; exact symmetric-channel work predates this synthesis. General operator-convex equivalence is also prior Makur-Zheng1510.01844 and is not counted as our discovery.",
+  "foreign_bodies_saved": false,
+  "worldwide_priority_certified": false,
+  "poststart1054": true
+}

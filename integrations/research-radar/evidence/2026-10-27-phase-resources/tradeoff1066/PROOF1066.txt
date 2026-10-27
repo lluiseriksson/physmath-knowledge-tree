@@ -1,0 +1,17 @@
+Candidate1066: critical scaling and an explicit information/conditioning tradeoff
+27 October2026. Own refinement of1063, not externally audited and not part of1058 or manuscript1060. Same1051/1054 phase family, not a separate paper. The classical comparison is only the common-Bell-diagonal class at the negative CP endpoint. No new classical theorem, general quantum optimum, practical advantage or priority claim.
+
+Fix t>0 and beta>1 independent of the integer dimension d. Set e²=t/d, theta=1-d^(-beta), phi=pi, lambda=-1/(d²-1). Let nu=beta+3>4. The norm-one H, states and actual marginal are exactly those of1051. All input/output states are faithful for every d>=2. For large d, e²<1. Proposed limits:
+ d R_U -> alpha=(nu-4)/[(1+t)nu];
+ d² D_U(input)/log(d) ->4t nu;
+ condition(input)/d^nu ->1/t;
+ d * trace_distance(input_pair) ->2sqrt(t).
+Exact order K_d=d²-d^(2-beta)+d^(-beta), reference R=d, fixed phase pi. Thus R_U/(Bell benchmark) grows like alpha*d while the input information is polynomially, not exponentially, small and conditioning grows as a fixed power. This is not nonvanishing information or robustness to errors. At t=1,beta=2, alpha=1/10, condition~d^5 and inputDU~20log(d)/d², a factor-d improvement of input scale over1063 at the same leading ratio/conditioning cost but with a larger order budget. This does not dominate1063 at a fixed budget.
+
+Derivation from exact traces/determinants, no numerical fit. With q=d-1+t/d and W_p from1054, at input p=theta, trace W->1 and d^nu det W->t. Hence w_+->1, d^nu w_-->t, ell(W_theta)/log(d)->nu. At output p=lambda theta, d³trace W->1+t and d^(nu+2)det W->t. Because det/trace²=O(d^(4-nu))->0, the roots separate: d³w_+->1+t, d^(nu-1)w_-->t/(1+t). Therefore log(w_+/w_-)/log(d)->nu-4 and ell(W_output)/(d³log(d))->(nu-4)/(1+t). The exact finite phase retention lambda²ell(output)/ell(input), with d^4lambda²->1, gives alpha.
+
+The physical coherence c²=theta²e²(d-1)/q² satisfies d²c²->t. Since D_U at phasepi equals4c²ell(input), this proves the input information constant. The exact minimum eigenvalue is (1-theta)e²/(dq) for sufficiently large d with e²<=1; the rank-one addition is positive and an off-Schmidt coordinate |i,0>,i!=0 attains the replacement minimum. Thus d^nu lambda_min->t, while lambda_max->1. Trace distance is2|c|. For small dimensions with e²>1, that displayed exact minimum need not apply; the asymptotic conclusion does not claim otherwise.
+
+For any desired fixed alpha0<1, choose t>0 small enough that alpha0(1+t)<1, and nu>4/[1-alpha0(1+t)], equivalently beta=nu-3>1. Then the limit alpha exceeds alpha0. This realizes an arbitrarily large fixed fraction of the known lower-bound coefficient scale1/d using fixed polynomial conditioning, with a higher exponent as alpha0 approaches1. It gives no upper or equality for unrestricted quantum contraction. The states become close, and dimensions/reference/order/cost all grow explicitly.
+
+Falsifiers: wrong trace/determinant limits, missing spectral mode or physical coherence scaling, failure of1054 identity under varying dimension, or prior literature with the same tradeoff. Preserve adverse finite dimensions and all input resources. Fixed own controls are not external review, formal Lean proof or a computational campaign certificate. A single sequential technical audit should examine1063/1064/1066 jointly after1058 is terminal; no grade attaches.

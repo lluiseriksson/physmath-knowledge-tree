@@ -1,0 +1,84 @@
+{
+  "utc": "2026-10-27T19:55:54.550204+00:00",
+  "sources": [
+    {
+      "key": "openai_math",
+      "url": "https://api.github.com/repos/openai/math/commits?per_page=1",
+      "utc": "2026-10-27T19:55:52.309816+00:00",
+      "reading": "endpoint inventoried; body not retained",
+      "status": 200,
+      "bytes": 4784,
+      "sha256": "6ca38558150e5428a6ab89342338edbbedc7eb5cf1d5dcc3752dd34b0ad91760",
+      "latest_commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+      "unchanged_since1059": true
+    },
+    {
+      "key": "deepmind_formal",
+      "url": "https://api.github.com/repos/google-deepmind/formal-conjectures/commits?per_page=1",
+      "utc": "2026-10-27T19:55:52.310816+00:00",
+      "reading": "endpoint inventoried; body not retained",
+      "status": 200,
+      "bytes": 8641,
+      "sha256": "35c8d5ede2936394b64fe555e4ee1f44d4d8375e7947129a60c9ed10d8bbae5c",
+      "latest_commit": "c0c538071a21b36d15f70f5998370eb6a4c31c97",
+      "unchanged_since1059": true
+    },
+    {
+      "key": "own_public_repos",
+      "url": "https://api.github.com/users/lluiseriksson/repos?per_page=100&sort=updated",
+      "utc": "2026-10-27T19:55:52.310816+00:00",
+      "reading": "endpoint inventoried; body not retained",
+      "status": 200,
+      "bytes": 212804,
+      "sha256": "2c7d606da001cd44b4b2bf2718ba0fabef05391be481b035b938ab0fd8693847"
+    },
+    {
+      "key": "anthropic",
+      "url": "https://www.anthropic.com/research",
+      "utc": "2026-10-27T19:55:52.310816+00:00",
+      "reading": "endpoint inventoried; body not retained",
+      "status": 200,
+      "bytes": 415879,
+      "sha256": "387b10beeab724cb1491cac8b519948567f3d2306ab318217f795d04c8fcfad4"
+    },
+    {
+      "key": "arxiv_prior",
+      "url": "https://arxiv.org/abs/1510.01844v4",
+      "utc": "2026-10-27T19:55:52.873190+00:00",
+      "reading": "endpoint inventoried; body not retained",
+      "status": 200,
+      "bytes": 43988,
+      "sha256": "7a954cbbb7f58c58e08e56da0e11eeea16edf76a6379976844f97186abcd418e"
+    },
+    {
+      "key": "vixra_author",
+      "url": "https://www.ai.vixra.org/author/lluis_eriksson",
+      "utc": "2026-10-27T19:55:52.950428+00:00",
+      "reading": "endpoint inventoried; body not retained",
+      "status": 200,
+      "bytes": 70178,
+      "sha256": "9cfc2018ff38a1f839e7c86f3d743cdbefb2b58b46c47bab6b4dd5af36fb8b7e"
+    },
+    {
+      "key": "airr_current",
+      "url": "https://airr.science/papers/ARR-2026-77DGRYDGXD8MDSY2/versions/v3/",
+      "utc": "2026-10-27T19:55:53.171886+00:00",
+      "reading": "endpoint inventoried; body not retained",
+      "status": 200,
+      "bytes": 40845,
+      "sha256": "ea7958a91163bfc24879f84fba5cb3e9caf74a08149fa1899d51bb3632bbabb9"
+    },
+    {
+      "key": "makur_publications",
+      "url": "https://www.cs.purdue.edu/homes/amakur/publications.html",
+      "utc": "2026-10-27T19:55:53.343266+00:00",
+      "reading": "endpoint inventoried; body not retained",
+      "status": 200,
+      "bytes": 30280,
+      "sha256": "1ab506c508f85ec635dd1ae7cd1521e1d50a8b12481db99c521d01b0160043e9"
+    }
+  ],
+  "exhaustive": false,
+  "foreign_bodies_saved": false,
+  "dedup": "Unchanged frontier commits are inventory, not new proof audits. GaoZhao/MakurZheng prior mechanisms retained; precise LeeMakur formula coverage remains unread. BertaFawziTomamichel1512.02615v2 abstract read byroot; not a proof audit or a covering theorem for the pending measurement."
+}

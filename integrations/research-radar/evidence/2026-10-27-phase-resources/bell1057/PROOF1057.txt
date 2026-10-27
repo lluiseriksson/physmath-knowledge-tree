@@ -1,0 +1,35 @@
+Candidate1057 — all-noise Bell-diagonal benchmark from classical Fisher geometry
+Own reconstruction27October2026, after1054 started. Not part of1047/1048 or the frozen1051/1052 audit inputs. No manuscript score or external audit. This is classical SDPI machinery applied as a benchmark, not a claimed new general classical theorem. It extends the negative-endpoint interpretation of1052 without changing that sealed note.
+
+Claim. Let K_lambda be the n-ary symmetric stochastic channel K_lambda r=lambda r+c1, c=(1-lambda)/n, -1/(n-1)<=lambda<=1. For every fixed normalized nonaffine operator-convex classical f-divergence, its global contraction coefficient equals
+ b_n(lambda)=lambda²/[lambda+2(1-lambda)/n]=C_(n/2)(lambda).
+The endpoints lambda0/1 are interpreted directly. For n=d² this is the exact coefficient on all pairs diagonal in one fixed orthonormal maximally entangled basis of A_dR_d, throughout the local quantum depolarizing range. It is not an upper for all commuting quantum pairs or all equal-reference states.
+
+1. A global Fisher upper
+Let r be positive probability and real z sum zero. Put b=lambda+2c>0 for lambda<1 in the stochastic range. The desired inequality is
+ lambda² sum z_i²/(lambda r_i+c) <= (lambda²/b)sum z_i²/r_i.
+For lambda!=0 it is equivalent to nonnegativity of
+ c sum_i z_i²(1-2r_i)/[r_i(lambda r_i+c)].
+If all r_i<=1/2 this is coordinatewise. Otherwise r_1>1/2 and S=1-r_1<1/2. For i>1 set a_i=(1-2r_i)/[r_i(lambda r_i+c)]>0 and phi(x)=x(lambda x+c)/(1-2x). Since
+ d[phi(x)/x]/dx=(lambda+2c)/(1-2x)²>0,
+sum_(i>1)phi(r_i)<=phi(S). Cauchy on z_1=-sum_(i>1)z_i then gives
+ sum_(i>1)a_i z_i² >= z_1²/phi(S)
+ = (2r_1-1)z_1²/[S(lambda S+c)].
+Moreover lambda+c=[1+(n-1)lambda]/n>=0, so
+ r_1(lambda r_1+c)-S(lambda S+c)=(r_1-S)(lambda+c)>=0.
+Therefore the displayed lower cancels the single negative contribution from coordinate1. This proves the upper. No assumption lambda>=0 was used; input and output are positive in the relevant interior, including the stochastic negative endpoint when r is positive.
+
+2. From Fisher to each operator-convex f
+For a positive resolvent generator f_u(x)=(x-1)²/(x+u), u>=0, and positive probability vectors rho,sigma, let z=rho-sigma and r=(rho+u sigma)/(1+u). Its divergence is
+ D_fu(rho||sigma)=(1/(1+u))sum z_i²/r_i.
+After K_lambda, r maps to K_lambda r and z maps to lambda z. The Fisher upper from1 applies verbatim. The quadratic endpoint uses r=sigma. Integrate the standard positive representation of normalized operator-convex f; affine terms vanish by normalization. This is the same prior resolvent machinery as the existing manuscript, not a new representation theorem. For Umegaki the standard weighted segment identity is an alternative proof.
+
+3. Matching lower and Bell reduction
+For n>2 take a positive base with two equal probabilities a<1/2, the remaining n-2 probabilities equal(1-2a)/(n-2), and z=(1,-1,0,...). The Fisher ratio is lambda² a/(lambda a+c), approaching lambda²/(lambda+2c) as a->1/2. Each fixed nonaffine operator-convex f has f''(1)>0; first use a sufficiently small faithful rho=sigma+t z, then take t->0 and a->1/2. For n2 the uniform positive base and local limit give the same result. Thus the upper is sharp as a supremum for each generator separately.
+
+An orthonormal maximally entangled basis on A_dR_d has n=d² elements, all with the same replacement I_n/n. Its locally depolarized probabilities are precisely K_lambda r. Hence the benchmark applies to every pair diagonal in that common basis, not only the earlier two-ray construction. The classical bound is established-style SDPI; priority of this formula is not claimed. A covering reference should be sought before presenting its elementary reconstruction as anything beyond background.
+
+4. Scoped consequence for the pending local-phase proposal
+If1051 is validated, its local norm-one H and finitepi family has a BKM/Umegaki lower C_P, P=d(d-1). For d>=3, P>n/2 and C_P>C_(n/2) at all nontrivial physical lambda. This is an asymptotic separation from the entire stated Bell-diagonal class. Existing1051 intervals already give four finite negative-endpoint separations at e1/100 and1/1000; a separate interval check in this note covers positive lambda1/2 at e10^-30,theta99/100,d3/4. No matching upper for general quantum states, experimental robustness, maximal absolute Fisher information, MI or capacity is inferred. Reference dimension d suffices for this alternative but its actual-order budget approaches d², unlike the more efficient rank-two budget profile. Nothing here changes a prior review's exact PDF or grade.
+
+Falsifiers: failure of the global Fisher inequality for a legal r,z, positivity at the negative endpoint, a wrong resolvent normalization or wrong shared Bell marginal; invalid local-phase identities in1051; or covering prior literature. Finite rational checks are controls, not the general proof. Preserve original failures, sources and distinctions between known machinery and new hypotheses.
