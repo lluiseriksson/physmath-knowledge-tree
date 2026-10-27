@@ -31,3 +31,52 @@ The original checker is byte-preserved, including its native C:/D: archival path
 See [reading ledger](../evidence/2026-10-27-eth875/READING875.json), [native finite result](../evidence/2026-10-27-eth875/CHECK875.json), [source acquisition hashes and license evidence](../evidence/2026-10-27-eth875/SOURCE874.json) and [retrieved context](../evidence/2026-10-27-eth875/SUBGRAPH875.json). The six upstream source/license files remain in the separate local reading dossier; no foreign research bodies, credentials or corpus shards are copied into this repository. Manual reading does not authorize training ingestion or change source-governance decisions.
 
 Public JSON text copies normalize CRLF to LF only. [Native archive and hashes](../evidence/2026-10-27-eth875/NATIVE-MANIFEST875.json) preserve original own-checker bytes and JSON bytes in native-json875.zip; parsed JSON values are unchanged. No source body is included.
+
+## Follow-up: one-step child factorization, checkpoint882
+
+The remainder of the pinned contraction module has now been read, including the child network descriptions and claimed cost recurrence. Reading that argument is not a verification of the full recursive algorithm. The source fixes tensor representatives at creation precision; each call deforms those fixed lifts, rather than assuming canonical lifting is a ring homomorphism. Its claimed branching estimate uses both the inherited-precision bound and the shrinking wire count. Those uniform asymptotic and description-cost invariants still require a complete audit before adopting the theorem.
+
+A new own exact-arithmetic check compares direct contraction with the product of separately summed child contractions for336 small instances. It also checks1,536 crossing matrix entries against the source's truncated mode expansion. The largest enumerated weighted-mode budget has164 retained exponent tuples. Two deterministic seeds supply arbitrary tensors coupling ports within each group; full and sparse real-port patterns are tested. The test retains the Cauchy kernel, affine row factors, mode divisibility, source/target orientation and coefficient-extraction coupling, rather than substituting an unrelated matrix factorization.
+
+The tested scope is one packet, two groups, slot parameters a=1,2, residue precision p=2..5, scalar integer interpolation values z=0,1,2 and every nonzero grid node with valuation below a. These are **small algebraic instances outside the full theorem's asymptotic packing regime**. They test the child-factorization identity, not the full parameter system, extension-field interpolation, Hermite recovery composed with recursion, creation-precision transitions across several depths or the claimed running time. No counterexample occurred in this finite scope; no new theorem, novel application, paper, model assessment or graph confidence upgrade follows.
+
+The smallest useful complexity subgraph was retrieved again before this addition:3nodes and2edges; canonical graph files are unchanged. The next falsifier is a composition test that binds recovery precision, entry creation precision and at least two recursion depths, followed by a source-level accounting of description costs. An application that merely repeats the source's exact-counting or ring-valued contraction corollaries remains an abandoned publication route.
+
+See [own checker](../evidence/2026-10-27-eth882/check882.py), [finite outcome](../evidence/2026-10-27-eth882/CHECK882.json), [retrieved subgraph](../evidence/2026-10-27-eth882/SUBGRAPH882.json), [directed primary refresh](../evidence/2026-10-27-eth882/REFRESH881.json) and [native/public byte mapping](../evidence/2026-10-27-eth882/MANIFEST882.json). Native bytes remain conserved in the private reading dossier; public text copies use LF. The eight-endpoint refresh is inventory, not an exhaustive reading or new proof coverage. No upstream manuscript body is redistributed.
+
+
+## Abandoned shortcut: changing only level multiplicities
+
+This is an elementary method limitation derived during this audit, with no claim of worldwide novelty or AIRR importance. It eliminates one proposed route to improving the source's precision order, rather than supplying a separate paper. No graph label is changed; it is an analytical argument, not a checked Lean result.
+
+Take integers \(a\ge 2u\ge2\), nonnegative level multiplicities \(q_0,\ldots,q_{u-1}\), and set later \(q_i=0\). Define the normalized loss from the source's valuation identity by
+
+\[
+ \ell_i=\sum_{j=1}^{a-i}\frac{j}{2^j}(q_i-q_{i+j}),
+ \qquad S=\sum_{k=0}^{u-1}\frac{q_k}{2^k}.
+\]
+
+Reordering the finite sum gives the exact identity
+
+\[
+ \sum_{i=0}^{u-1}\ell_i
+ =\sum_{k=0}^{u-1}q_k\left(\frac{k+2}{2^k}
+             -\frac{a-k+2}{2^{a-k}}\right)\ge S.
+\]
+
+For the inequality, multiply the coefficient of \(q_k\) by \(2^k\). Since \(a\ge2k+2\), the subtracted term is at most \((k+4)/4\); the resulting coefficient is at least \((3k+4)/4\ge1\). If \(q_i=0\), then \(\ell_i\le0\). Thus some active level has \(\ell_i\ge S/u\). No monotonicity of the multiplicities is needed.
+
+In the source's grid, \(L=2^a\) and a level \(i<u\) has \(L/2^i\) nodes. Covering degree \(M(2L-1)\) requires \(LS>M(2L-1)\), hence some active level incurs normalized loss greater than \(M(2-1/L)/u\). Consequently, while retaining this grid, support range and degree-coverage requirement, changing only the level multiplicities cannot make every normalized loss \(o(M/u)\). This is **not** a lower bound on the full algorithm's running time: changing the deformation, interpolation scheme, degree requirement, recursive interface or using a nonuniform cost argument is outside the conclusion.
+
+[An exact finite falsifier](../evidence/2026-10-27-eth882/check884.py) passed all4,077 nonzero profiles with u=1..5, a=2u..2u+2 and q_i=0..3, covering14,337 active levels. [Its result](../evidence/2026-10-27-eth882/CHECK884.json) corroborates the written identity on that scope; the finite test is not the proof of the general inequality. The abandoned route is a uniform precision improvement obtained solely by replacing the taper profile, not every possible improvement of the source method.
+
+
+## Follow-up886: recovery composed with actual child creation precision
+
+The next finite target above has now been partially exercised. An own rational-polynomial implementation reconstructs complete small Cauchy-deformed contractions using every active Hermite node and the stated precision allowance. All36 direct recovery cases passed, including deliberate signed multiples of2^pt added to the recovered quotient representatives. The largest precision used was489 bits; no floating arithmetic is used.
+
+For8 parent evaluations, the checker also constructs the actual two-group packet tensors, freezes their entries at creation precision, and recovers each child's contraction through a second Cauchy/Hermite stage at higher precision. All64 child recoveries agree with independent direct contraction; their products recover the8 parent evaluations. This binds packet creation, fixed representatives and a higher-precision recovery operation, rather than testing only unrelated formulas at separate levels.
+
+The parent has one two-slot packet and two groups; the second-stage polynomial data are generated by direct enumeration. This is **not** a complete two-depth implementation of the source's recursive evaluation algorithm: it bypasses extension-field interpolation, the full repeated packet decomposition, asymptotic packing conditions and uniform description-cost bookkeeping. The source theorem remains unadopted, and no new manuscript, grade or graph confidence follows. The next decisive audit is the uniform packing/description/cost invariant, with any full-algorithm claim requiring the omitted field and recursive machinery.
+
+See [own recovery checker](../evidence/2026-10-27-eth882/recovery886.py) and [finite outcome](../evidence/2026-10-27-eth882/CHECK886.json); the same native/public byte manifest preserves the representation boundary. These remain bounded audit logs, not a full-algorithm Research Capsule.

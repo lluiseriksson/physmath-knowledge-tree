@@ -1,0 +1,53 @@
+{
+  "scope": "Own bounded algebraic audit, not a full-algorithm reproducibility capsule; no upstream research bodies.",
+  "files": [
+    {
+      "path": "check882.py",
+      "native_sha256": "80437081f832b666a6b1e6f82a662949acf196faf21252ee071cf0b84622d06d",
+      "public_sha256": "80437081f832b666a6b1e6f82a662949acf196faf21252ee071cf0b84622d06d",
+      "normalization": "none"
+    },
+    {
+      "path": "CHECK882.json",
+      "native_sha256": "7991a124786ad41ae43fc5a28968497a31fad22d83173c17c68013df729e9d2b",
+      "public_sha256": "3dbcd0d1bdbd609cf6c7b8d40f45114039c9bb85a5b18f9ba54a1536ada81569",
+      "normalization": "CRLF to LF only"
+    },
+    {
+      "path": "SUBGRAPH882.json",
+      "native_sha256": "916dc6dccafb93923e375157a5608f42cf1b247b055bd8aa892ac62ae5c84126",
+      "public_sha256": "7b3c3aa4990d8369cf3784eef7c05d99807c1c79d45f966163969c4429aabcc5",
+      "normalization": "CRLF to LF only"
+    },
+    {
+      "path": "REFRESH881.json",
+      "native_sha256": "dfea573cf189c211aa786ba6f705ee5fa2321f54e8b75cf367caf56e1aa56473",
+      "public_sha256": "2b765c64b71df93146f0f7f2b92f131a157523a22cb3e97ab1c43014464067be",
+      "normalization": "CRLF to LF only"
+    },
+    {
+      "path": "check884.py",
+      "native_sha256": "c0cdc439a5b6eaeb16602a944fde96c36d1e3f29441a3b1ae939075998ac6eba",
+      "public_sha256": "c0cdc439a5b6eaeb16602a944fde96c36d1e3f29441a3b1ae939075998ac6eba",
+      "normalization": "none"
+    },
+    {
+      "path": "CHECK884.json",
+      "native_sha256": "bce9a8106d225b09569e560e02454c7550c6cf916d5a1733b671e4d6773b7978",
+      "public_sha256": "8f7282c49f70951aa1d1940d3bb3d7d400f7a38c72f3f419c14319685471f855",
+      "normalization": "CRLF to LF only"
+    },
+    {
+      "path": "recovery886.py",
+      "native_sha256": "cb57a02dfb9001ae99b2ea144e83e363f01020f94475ed062ca8d10be26dc233",
+      "public_sha256": "cb57a02dfb9001ae99b2ea144e83e363f01020f94475ed062ca8d10be26dc233",
+      "normalization": "none"
+    },
+    {
+      "path": "CHECK886.json",
+      "native_sha256": "98847a8c83dba871ac0b249212f35b27f78ddb8eb3b03b0202f1d21cc615ba98",
+      "public_sha256": "8357d4931e0be809f6b36c891985c55015cf1d15f59aa87b61b2f653aaef707f",
+      "normalization": "CRLF to LF only"
+    }
+  ]
+}
