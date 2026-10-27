@@ -1,0 +1,117 @@
+{
+  "utc": "2026-10-27T21:05:36.944323+00:00",
+  "public_url": "https://airr.science/papers/ARR-2026-77DGRYDGXD8MDSY2/versions/v4/#model-assessments",
+  "timestamp": {
+    "id": "ARR-2026-77DGRYDGXD8MDSY2",
+    "version": "v4",
+    "deposit_recorded_at": "2026-10-27T21:51:43+01:00",
+    "deposit_timestamp_basis": "first_repository_commit",
+    "deposit_commit": "15fb5952b97079640147d5dabd975c4efdf6868a",
+    "publication_state": "published",
+    "published_at": "2026-10-27T20:57:16Z",
+    "publication_timestamp_basis": "github_release",
+    "release_tag": "ARR-2026-77DGRYDGXD8MDSY2-v4"
+  },
+  "pdf_and_full_reports_exact": true,
+  "v1_v2_v3_unchanged": true,
+  "citation_exports_verified": 4,
+  "one_current_exact_PDF_vote": true,
+  "importance": 6.3,
+  "global_score": 6.1,
+  "technical_quality": 8.7,
+  "status": "working_paper",
+  "accepted": false,
+  "goal_met": false,
+  "endpoints": [
+    {
+      "key": "page",
+      "url": "https://airr.science/papers/ARR-2026-77DGRYDGXD8MDSY2/versions/v4/",
+      "sha256": "436ac2a31b9254952c49dc20b1da1818f5da5277f772ad025734e948c442ea52",
+      "bytes": 46397
+    },
+    {
+      "key": "pdf",
+      "url": "https://airr.science/papers/ARR-2026-77DGRYDGXD8MDSY2/versions/v4/ARR-2026-77DGRYDGXD8MDSY2-v4.pdf",
+      "sha256": "255ca15a68df24944e2f3623265e9912ca7cad1d75e96074fadb304c0f83eb7e",
+      "bytes": 432959
+    },
+    {
+      "key": "bib",
+      "url": "https://airr.science/papers/ARR-2026-77DGRYDGXD8MDSY2/versions/v4/citation.bib",
+      "sha256": "dcfcb582268a43b0afb8c1a189667aa801e1199bebb33c756d3059a523e7108e",
+      "bytes": 441
+    },
+    {
+      "key": "ris",
+      "url": "https://airr.science/papers/ARR-2026-77DGRYDGXD8MDSY2/versions/v4/citation.ris",
+      "sha256": "343ce7a4688ecb625f0890ea2af1a968e8ff50d29e0dbb4e6c73e165a0461e1b",
+      "bytes": 2594
+    },
+    {
+      "key": "csl",
+      "url": "https://airr.science/papers/ARR-2026-77DGRYDGXD8MDSY2/versions/v4/citation.csl.json",
+      "sha256": "e332c42b54870caf98320928484b92237fc8069adf57159f820779b089e4d7fb",
+      "bytes": 2952
+    },
+    {
+      "key": "citation",
+      "url": "https://airr.science/papers/ARR-2026-77DGRYDGXD8MDSY2/versions/v4/citation.txt",
+      "sha256": "8cbfaa2664493d8e7f37b0373f73f92a9a2a24f704e1720018bb0c9cfe2ac3d2",
+      "bytes": 356
+    },
+    {
+      "key": "assessments",
+      "url": "https://airr.science/registry/model-assessments.json",
+      "sha256": "a869481e36130e3a27a6709088ab95655effb6beae6defdc3b8ea4dd24e27675",
+      "bytes": 1851145
+    },
+    {
+      "key": "timestamps",
+      "url": "https://airr.science/registry/record-timestamps.json",
+      "sha256": "c400a26b5e5b4251fb4db8135281a409d059ed45b5618023eac131c1cb3aec4c",
+      "bytes": 97596
+    },
+    {
+      "key": "report",
+      "url": "https://raw.githubusercontent.com/arr-research/arr-research.github.io/5d5d34fcada3da22333355a41e2f205bb0894d47/papers/2026/10/77/ARR-2026-77DGRYDGXD8MDSY2/versions/v4/screening/review1084/REVIEW1084.txt",
+      "sha256": "dc668797009a6a368e8ec8e775360fb36cbd5feb227dd786bf50cf65713abf4d",
+      "bytes": 36542
+    },
+    {
+      "key": "verdict",
+      "url": "https://raw.githubusercontent.com/arr-research/arr-research.github.io/5d5d34fcada3da22333355a41e2f205bb0894d47/papers/2026/10/77/ARR-2026-77DGRYDGXD8MDSY2/versions/v4/screening/review1084/verdict1084.json",
+      "sha256": "77b26324df6ecf41e1fc9fbdb9da17fdf0bfb5824d050167f2574243bf58b30d",
+      "bytes": 11238
+    },
+    {
+      "key": "incident",
+      "url": "https://raw.githubusercontent.com/arr-research/arr-research.github.io/5d5d34fcada3da22333355a41e2f205bb0894d47/papers/2026/10/77/ARR-2026-77DGRYDGXD8MDSY2/versions/v4/screening/review1084/INCIDENTS1084.json",
+      "sha256": "0229d6eaf3c177cc55d066e2e6441a9701d89738bce64b8ed1ce0e3dcd0889ad",
+      "bytes": 3168
+    },
+    {
+      "key": "binding",
+      "url": "https://raw.githubusercontent.com/arr-research/arr-research.github.io/5d5d34fcada3da22333355a41e2f205bb0894d47/papers/2026/10/77/ARR-2026-77DGRYDGXD8MDSY2/versions/v4/screening/binding1089/BINDING1089.json",
+      "sha256": "e861752e631bc15236515273e7763029758cd549f41469a5ba0fab54d6b57b7a",
+      "bytes": 478
+    },
+    {
+      "key": "v1_pdf",
+      "url": "https://airr.science/papers/ARR-2026-77DGRYDGXD8MDSY2/versions/v1/ARR-2026-77DGRYDGXD8MDSY2-v1.pdf",
+      "sha256": "b4728f44f7af59809be26e0eba957336695ff34cfc3cb10c17fcfa06ffb93381",
+      "bytes": 296929
+    },
+    {
+      "key": "v2_pdf",
+      "url": "https://airr.science/papers/ARR-2026-77DGRYDGXD8MDSY2/versions/v2/ARR-2026-77DGRYDGXD8MDSY2-v2.pdf",
+      "sha256": "08efeffda4865e8f2f0b8e78bd0d2b6260c557a299cf5360d9aef1acc4062372",
+      "bytes": 340706
+    },
+    {
+      "key": "v3_pdf",
+      "url": "https://airr.science/papers/ARR-2026-77DGRYDGXD8MDSY2/versions/v3/ARR-2026-77DGRYDGXD8MDSY2-v3.pdf",
+      "sha256": "f805a688fb62e9bb34f4c8f107f906c4f85613f831cfda424d1805b797fffe07",
+      "bytes": 366879
+    }
+  ]
+}
