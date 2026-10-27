@@ -1,0 +1,1146 @@
+{
+  "files": [
+    {
+      "path": "bell1057/CHECK1057.json",
+      "original_sha256": "198a02f2c376982ddc89fedc2b4d2e3ae96a20c7e0137a3b5fae9add2a4fa15a",
+      "repository_sha256": "b1c55ba04a9f78057d774bbd0b47113c5034d7cab6ea582abf859cae87ee18c7",
+      "operation": "LF transport only",
+      "technical_context": "technical audit1058"
+    },
+    {
+      "path": "bell1057/check1057.py",
+      "original_sha256": "04109d3649c1699be51a351eab12a3d7c022d100ec7285e73c44c2b371fd6267",
+      "repository_sha256": "04109d3649c1699be51a351eab12a3d7c022d100ec7285e73c44c2b371fd6267",
+      "operation": "LF transport only",
+      "technical_context": "technical audit1058"
+    },
+    {
+      "path": "bell1057/MANIFEST1057.json",
+      "original_sha256": "9df12df851c66114f0e295cac751f87c1d19d8132f2e85cbdebf4a3335df1d31",
+      "repository_sha256": "4edf0edcf02ae138877881b0c0347d9a7b3fe328d7dc0aff952ef9d23af26d09",
+      "operation": "LF transport only",
+      "technical_context": "technical audit1058"
+    },
+    {
+      "path": "bell1057/PROOF1057.txt",
+      "original_sha256": "00adb6d11f5e445491f8c690c6a453d13094d57f12a28a89daad89fe6bb04695",
+      "repository_sha256": "00adb6d11f5e445491f8c690c6a453d13094d57f12a28a89daad89fe6bb04695",
+      "operation": "LF transport only",
+      "technical_context": "technical audit1058"
+    },
+    {
+      "path": "bell1057/READINGS1057.json",
+      "original_sha256": "0f9009b4cc952122b9f9a5d1a03b2f88be957488579d94a2257219f20328b3b3",
+      "repository_sha256": "6bb70b2e4c4ddec6b4d4a758afbf422d2924b2d48c2d0e957182a8f04911c6c4",
+      "operation": "LF transport only",
+      "technical_context": "technical audit1058"
+    },
+    {
+      "path": "audit1058/AUDIT1058.txt",
+      "original_sha256": "c85212a64076aefdc7b7c432e1b95683530315dc53e07faeef54100e36f4a9a6",
+      "repository_sha256": "c85212a64076aefdc7b7c432e1b95683530315dc53e07faeef54100e36f4a9a6",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1058/BELL_CONTROLS1058.json",
+      "original_sha256": "0790d4e5a00657967b52df7fd31e2684d4254999e6ef53bf1b47a466c7e7da06",
+      "repository_sha256": "7d68e23893fe4df25e5e627d6cb7acc461aacc6a26c0920dbe4f2c4ad42a007b",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1058/bell_controls1058.py",
+      "original_sha256": "3e7604b88566ff7cdb476f7a4538c910b7133dc60d89695e48c8ade016043e01",
+      "repository_sha256": "3e7604b88566ff7cdb476f7a4538c910b7133dc60d89695e48c8ade016043e01",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1058/bell_controls1058_initial.py",
+      "original_sha256": "a2eafbe625e802f07d35f54b38d61e0bffc1d0a71bd1a50a7187ee3668bd41bc",
+      "repository_sha256": "a2eafbe625e802f07d35f54b38d61e0bffc1d0a71bd1a50a7187ee3668bd41bc",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1058/BELL_FAILURE1058.json",
+      "original_sha256": "7a145e49cd3a8673135da3d918f3158b6bebc63c8d142f3c55b77839a627dc43",
+      "repository_sha256": "94ee872a0af14d5744de04e50d63ea3c720b084100e8ea150343803c926d976c",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1058/BELL_FAILURE_DIAGNOSIS1058.json",
+      "original_sha256": "c19e00c6b76d4efb81a2dfb7e7758f3eaf12c0b09f65c14ab34976b5681ba839",
+      "repository_sha256": "0d472ce3f36f0c90336891e263be7297e9ef8c75c65cc380499fa0dc3a4f47f9",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1058/CONTROL_INDEX1058.json",
+      "original_sha256": "05113e2ab922e372e9474a10bb714dcfee52c4492be0bc5c6db2012379b281fd",
+      "repository_sha256": "569079a68e4d661881d8ee5d61503dc1700b451da4db2a6fab5c0b601ba6f4ba",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1058/CONTROLS1058.json",
+      "original_sha256": "46ab415d819ea942d3e10d88a0c5b706e9eca1aa369a12d197484034ec51b630",
+      "repository_sha256": "6dd65d0bf8fc7ab8554f58ae6b9bf1a7c89833a7a5eaa007dcd1b908e22d3566",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1058/controls1058.py",
+      "original_sha256": "de9dc83428a65169bbcd9d210540986961345f158db3061de4f931fe6af1fbed",
+      "repository_sha256": "de9dc83428a65169bbcd9d210540986961345f158db3061de4f931fe6af1fbed",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1058/DELIVERY1058.json",
+      "original_sha256": "1f04b1f14e1093443cef952434411f36de66305ea06c0ca1f32cd033897202b0",
+      "repository_sha256": "d1b1cc2e5ed998402ed7e2c6cb3882d849f1bbcf99731057d5899b111bc23878",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1058/INCIDENTS1058.json",
+      "original_sha256": "2a67353e64185cba3e3e397c4f99569f291e4573b66786aeb3b0a5c87f54e0ea",
+      "repository_sha256": "47782df442e05a22d7ccc7cc07c8d65942fa71cee297d165e8f6980db3580c99",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1058/INPUT_FINAL1058.json",
+      "original_sha256": "e155de24728d4c4556da01ad7da609518adca280b49224f748cbd9f68809c51a",
+      "repository_sha256": "505830919bdf5c93a0e2990d8e7bc03db44d243550b07ffb4d1840592cc5e049",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1058/INPUT_VERIFIED1058.json",
+      "original_sha256": "c0900190775b9a3ce9b26f0ec1d4ac00e8f28f1e7e0c0822b0976e0be42aefc1",
+      "repository_sha256": "16412a5f30a055b24253c2c537b0db709b4d892f1a91dc981ea22cdad9b78385",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1058/INTEGER_INTERVAL1058.json",
+      "original_sha256": "788b90145b004d62654637e90b6f33795bdfdce69a97073b20e3a751fb6e38fa",
+      "repository_sha256": "89bff1aa2f0427fc6a21f699a23359990ddaa0fb8791e054215f8570e32c6b1e",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1058/integer_intervals1058.py",
+      "original_sha256": "a84bc3d0a70309d3672dc69b95a447fda9732eff025ea6259cf2e40cae6b219a",
+      "repository_sha256": "2cee5b263449b852469b0fcb6bfaa5dd9c7ce9114d23f7750627b4d5ed743abe",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1058/MANIFEST1058.json",
+      "original_sha256": "8d5600e19441c1bf699369db7682428d744d4ebd415aec01e82ec28d73236a3f",
+      "repository_sha256": "820ec4804a0be56591a5277fd61310623cdd15a459255daf5436e6e3d618bffc",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1058/metadata1058.py",
+      "original_sha256": "3dfc120a204d6d1ed6493f4f5c699b0b0bfaa7365fd79ae5f95cced912b8d860",
+      "repository_sha256": "3dfc120a204d6d1ed6493f4f5c699b0b0bfaa7365fd79ae5f95cced912b8d860",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1058/primary1058.py",
+      "original_sha256": "1c6bfc35ac0eefa416348e77f9bda00eda10c7a277316636f511f98490a9e24a",
+      "repository_sha256": "1c6bfc35ac0eefa416348e77f9bda00eda10c7a277316636f511f98490a9e24a",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1058/PRIMARY_1510.01844v4_201447834727.json",
+      "original_sha256": "53d04d23b4f4bddc8fe15e357d679214f8712c67e09fb8ed81288d99dcf8357f",
+      "repository_sha256": "99a0674f358f62020a24033b6d355a6dca56c92a63590a74b84d0a85be1f6b43",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1058/PRIMARY_1510.01844v4_201459489705.json",
+      "original_sha256": "d359fce1a6bc69599672ca8989af62849b41a69df8715d2fcf296fd95e77e4e0",
+      "repository_sha256": "f2820dcc3ec9033657724a0c9ae129a04a3915cc22756bc1fcac0bb05605683f",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1058/PRIMARY_1510.01844v4_201524161370.json",
+      "original_sha256": "beb41b79ca7ae16d990da0d56a498de54acd025a54e749612fa6dbbe78c91203",
+      "repository_sha256": "34cfa26b181e64966c28e01e158c1a8dfc06e4496addb0b64e73de9373d02943",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1058/PRIMARY_PAGES1058.json",
+      "original_sha256": "27a75c92706e5fe444c5356afada7b20e9c0c1c5e999bbc56cb8096f8bd8f099",
+      "repository_sha256": "6a8b148df0a9ceb48347e02adf8a37f4f4a77ec58edcfe468b0a1358dc0323a6",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1058/primary_pages1058.py",
+      "original_sha256": "e6de73c9a7ac21f0fdcf50aa4438a06cfe1efb29895185db6385820e1a956e88",
+      "repository_sha256": "e6de73c9a7ac21f0fdcf50aa4438a06cfe1efb29895185db6385820e1a956e88",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1058/PROVENANCE1058.json",
+      "original_sha256": "2b24536be3d9a9f82365fed07edd47e023f59d52bb95f693d6c29871c9dfb45c",
+      "repository_sha256": "e5eafe225d59f4004dae89e7b1fce5a377b619804f6a6f9d540c97b9a116cfb5",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1058/QUALITY1058.json",
+      "original_sha256": "0293feff58c85012054b35713143bc5a350fa5150568fc144b8a13fc1dd5e214",
+      "repository_sha256": "2a6f4fff5e781ddf28740c261746d66e960c1d3c1a349b0f49e9e1463a9a8be1",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1058/READINGS1058.json",
+      "original_sha256": "3cdcecfa95e020d2d32d409cd4239de3161c67b96d03400df9b6c1defccabc6b",
+      "repository_sha256": "d5c0b5daa5e2d53e39e7ee248c6182b28ffce48b23a6448ffd5fc6e62dc498f4",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1058/replay/CHECK1057.json",
+      "original_sha256": "cab4405dc154ab7684728de08eceabb1cc7627a0901b5e494745a4928ef85e66",
+      "repository_sha256": "1d9e43104373cd01bc6a7ab6d4c3c87fc714525e4199f3aed7f960139b04c388",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1058/replay/check1057.py",
+      "original_sha256": "04109d3649c1699be51a351eab12a3d7c022d100ec7285e73c44c2b371fd6267",
+      "repository_sha256": "04109d3649c1699be51a351eab12a3d7c022d100ec7285e73c44c2b371fd6267",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1058/replay/stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "repository_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1058/replay/stdout.txt",
+      "original_sha256": "e60bc12cbbdc25554700c777a2d2db30ff217437d938140489be0e1b83ab3410",
+      "repository_sha256": "df91c5892465b1fd154d042d8542d4fc72212f3dcf4d3717b65dc19ad7d1f35c",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1058/REPLAY1058.json",
+      "original_sha256": "2759c442a4dd0b6050a890b42b1e05a8db7aeab9eda9a27055d15101b6d99184",
+      "repository_sha256": "38d2c3f7de3ab2f9e0e9e833f4b0bb8ffba0db7757ff26d18196d62fdd26caab",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1058/replay1058.py",
+      "original_sha256": "3496f8c8a30d9dff6a23e99a8eee7f6821306d6592b5fa4c0261c74410ba9a66",
+      "repository_sha256": "3496f8c8a30d9dff6a23e99a8eee7f6821306d6592b5fa4c0261c74410ba9a66",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1058/seal1058.py",
+      "original_sha256": "fde97a30ebbb8c6299c3505ca04af876549d5d8d71d2382f059e15eb40a9b845",
+      "repository_sha256": "fde97a30ebbb8c6299c3505ca04af876549d5d8d71d2382f059e15eb40a9b845",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1058/SHA256SUMS1058.txt",
+      "original_sha256": "b33a541169282050f256733b21a6effb82ee6ae21267373bdcbc5a0a2309af94",
+      "repository_sha256": "d40975927d9ff37923627aa0bd706d82613d1e0e8a7850a3ed5bf2fa6a5e9e1d",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1058/verdict1058.json",
+      "original_sha256": "8d29fb8edab841facea8fcbdfd05a04fcc714e622e826765aef6b48c364c9ab4",
+      "repository_sha256": "5db961a3c8f3cd2fa59be9fe30c04b1ef4c8ece078b8d5f2201a3906b6f19a89",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1058/verify1058.py",
+      "original_sha256": "eea6a778b17e10feaf73fd25d971b353e9578860675566fcd0e7670c993f60aa",
+      "repository_sha256": "eea6a778b17e10feaf73fd25d971b353e9578860675566fcd0e7670c993f60aa",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "phase1063/candidate1063.py",
+      "original_sha256": "6dfb6aad4a10a2a31c4c783739fbcef1539c9807025d1759efc891615cf63c6b",
+      "repository_sha256": "6dfb6aad4a10a2a31c4c783739fbcef1539c9807025d1759efc891615cf63c6b",
+      "operation": "LF transport only",
+      "technical_context": "technical audit1068"
+    },
+    {
+      "path": "phase1063/CHECK1063.json",
+      "original_sha256": "56968405387fb88aa43a15dd6bf92cb2f044709dcb5120562fa846987caf05e0",
+      "repository_sha256": "99343220802c4c17e3d566eef74127d9f3dad9437cd0ecc6d8bf567cbd2dfeb3",
+      "operation": "LF transport only",
+      "technical_context": "technical audit1068"
+    },
+    {
+      "path": "phase1063/MANIFEST1063.json",
+      "original_sha256": "861c7fd439a6bc061b8039a2d316e5944a712d8c275a1c0b35b40585cb1c5488",
+      "repository_sha256": "050807a9d5ff5ebeb6f6c39e69006c6d29ba3b0f67015d547ec80a29f6d25e06",
+      "operation": "LF transport only",
+      "technical_context": "technical audit1068"
+    },
+    {
+      "path": "phase1063/PROOF1063.txt",
+      "original_sha256": "178a8e628812aa5b56e60f0e1762d3d3d65fc19c5b71be8adeeacf3cc1c32efc",
+      "repository_sha256": "258c54472bdf0761fdcabd80948ead576dc2fa80c5b5290873768715ec24d6ca",
+      "operation": "LF transport only",
+      "technical_context": "technical audit1068"
+    },
+    {
+      "path": "controls1064/CONTROL1064.json",
+      "original_sha256": "00931b099ed1d124ad5e920b12c3c062d2a219ae67c123d503402acffb892385",
+      "repository_sha256": "17bef6f411fbc51103b5cf6eb8ec9655a5407a562d120d188819cf0ca3b47005",
+      "operation": "LF transport only",
+      "technical_context": "technical audit1068"
+    },
+    {
+      "path": "controls1064/interval1064.py",
+      "original_sha256": "6860b364fb785ef78554d70b6ff4a8cfedc4a7820578ae87f22c749981d77288",
+      "repository_sha256": "6860b364fb785ef78554d70b6ff4a8cfedc4a7820578ae87f22c749981d77288",
+      "operation": "LF transport only",
+      "technical_context": "technical audit1068"
+    },
+    {
+      "path": "controls1064/MANIFEST1064.json",
+      "original_sha256": "6d737da9296d0e4f06843fe81479eb12b9a2f10f569a3ef8e4d68cfd5e9ce01f",
+      "repository_sha256": "b0fed1b01ac9ba87e43bfe7e6fb768e6fb4290bb9ca34877c57ad0545827d63b",
+      "operation": "LF transport only",
+      "technical_context": "technical audit1068"
+    },
+    {
+      "path": "controls1064/reused_integer_prefix1054.py",
+      "original_sha256": "7d8f84202a9cd820259c196bfb5163593a9c6514041f499a6b667529362c6909",
+      "repository_sha256": "d4c2ed39b55d28371d583ec89bbe1e59b734a2a5abda8053dfc16bdc41e7cb64",
+      "operation": "LF transport only",
+      "technical_context": "technical audit1068"
+    },
+    {
+      "path": "tradeoff1066/CONTROL1066.json",
+      "original_sha256": "7144fc572565f3b55bbf183e8c45f43395f4dfe9f5af5a36979ab08e2eda4952",
+      "repository_sha256": "c85418dc0cbe6fa12f8f87bd256130c8b856f5ca9a3be14328b86511ee10a80a",
+      "operation": "LF transport only",
+      "technical_context": "technical audit1068"
+    },
+    {
+      "path": "tradeoff1066/MANIFEST1066.json",
+      "original_sha256": "5deb2f7dda96ec7407711582c62fa2e727baf796e1400c5230de868d08efe195",
+      "repository_sha256": "ff4dbe35476373c2d105824e6f8e48b85a35ae49ebc9fa5362886656f9e6d13f",
+      "operation": "LF transport only",
+      "technical_context": "technical audit1068"
+    },
+    {
+      "path": "tradeoff1066/PROOF1066.txt",
+      "original_sha256": "70b42c93eebaa3ae7dd7e7fc42f677e80442d8cd6b3ddc8fa0b6836ffe432a5c",
+      "repository_sha256": "17590e1ac08b29eaf1e8aa69718e73697a286b66a53bb5d33be0743279cfdf0e",
+      "operation": "LF transport only",
+      "technical_context": "technical audit1068"
+    },
+    {
+      "path": "tradeoff1066/reused_integer_prefix1054.py",
+      "original_sha256": "7d8f84202a9cd820259c196bfb5163593a9c6514041f499a6b667529362c6909",
+      "repository_sha256": "d4c2ed39b55d28371d583ec89bbe1e59b734a2a5abda8053dfc16bdc41e7cb64",
+      "operation": "LF transport only",
+      "technical_context": "technical audit1068"
+    },
+    {
+      "path": "tradeoff1066/tradeoff1066.py",
+      "original_sha256": "98fb6b46741c7ed50ba2b88309c202f1afb9b2887135b7631bbabed046ac6f4f",
+      "repository_sha256": "98fb6b46741c7ed50ba2b88309c202f1afb9b2887135b7631bbabed046ac6f4f",
+      "operation": "LF transport only",
+      "technical_context": "technical audit1068"
+    },
+    {
+      "path": "audit1068/AMBIENT1068.json",
+      "original_sha256": "76d67071adf88f5880974b9e748271293b1222008a9138abb65e572d9af68753",
+      "repository_sha256": "8195e7fd40da5872c4284cad0de230dccc9d506d40f6b6889c93c920ee74c889",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/ambient1068.py",
+      "original_sha256": "b4eb7d4a998569c82345e879843bfb45bd96be9baebbbf6bd4cff855a04a4340",
+      "repository_sha256": "b4eb7d4a998569c82345e879843bfb45bd96be9baebbbf6bd4cff855a04a4340",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/ambient1068_initial.py",
+      "original_sha256": "df63072db9b3472ca154ca94bf19d43611fc9a6d7dbc5bf4dd8469ce8aaf07c0",
+      "repository_sha256": "df63072db9b3472ca154ca94bf19d43611fc9a6d7dbc5bf4dd8469ce8aaf07c0",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/AMBIENT_FAILURE1068.json",
+      "original_sha256": "ea61aea32451919a955e0ecd73c59dd10dd81cd2d9b0c35d13f94e22c5cf751e",
+      "repository_sha256": "824d5fd49a9e52c37b1a7ba3473a84a295a4c156784cd1e683dc891c4d77dd16",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/AMBIENT_FAILURE_DIAGNOSIS1068.json",
+      "original_sha256": "1089a7bef2fe2cff1631bda4b092424632149f0a5707c3bc61c9f4498fd537e6",
+      "repository_sha256": "2d3b8c7c8c5505197de5038685af4667218f66103d1cd8b17477c9012c576ac0",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/AUDIT1068.txt",
+      "original_sha256": "505d3174a194e9449f2d7ec26b642a70c194579d68e5259d40417312ceb50a4d",
+      "repository_sha256": "505d3174a194e9449f2d7ec26b642a70c194579d68e5259d40417312ceb50a4d",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/CONTROL_INDEX1068.json",
+      "original_sha256": "a7e45f6d741b223f30e6327c68f88b1c97e08d70a1525c2dafb86e95d908121e",
+      "repository_sha256": "01034cc3c358aa91d025558c4582d6c4a9fef9d387a25161e6d6205d4c05795e",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/DELIVERY1068.json",
+      "original_sha256": "9c60dc6ee1df39a1ab9faf78a8955e323f1c35feb845889385f45549103e13e0",
+      "repository_sha256": "8dfb5711769d73f7babe7b403f01d422729b707784bda130ff3414b9f9ffc7ee",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/INCIDENTS1068.json",
+      "original_sha256": "48d152ff29928abb191a2c2ed9e1a7497e31bdebced1e254fbe0a12b6dda8e54",
+      "repository_sha256": "110c540575f13f751f4143f573fbd4b1594af88a904cc516542aad63357c65fa",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/INPUT_FINAL1068.json",
+      "original_sha256": "bd1d20dbd4d7c2b2f0bd158a7e55ce5e76bf7437e2a62e55f721fd605dbb14a1",
+      "repository_sha256": "3b4165b8c076cae22d7c30b791ca54b028e8a5d30daf9d4e5acc40d717150340",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/INPUT_VERIFIED1068.json",
+      "original_sha256": "6caa4f55f761c730107683b17cadae8c649ce6d159c5f1015257191fc0e1df33",
+      "repository_sha256": "5c68a00538affb40859fb851b76045839312a92f5c107a476825dd59a7ad1310",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/integer_arithmetic1068.py",
+      "original_sha256": "6888e17a28c57aee3a7d99f21c10aad3ccc2115493ced999fcb97fd097fbb853",
+      "repository_sha256": "c71d477168153264c0539629513f2f99180d157e4065f2452fbac8675df4a1b5",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/INTERVAL1068.json",
+      "original_sha256": "94b995c9cf0eb19aac79bcc68df800d05f99ca06f2b0582f0ae4beba17cc1157",
+      "repository_sha256": "83d781b4d136069ecc682f19d69b6a3a827cde79ef8296ecf441d7f8fd91eb55",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/intervals1068.py",
+      "original_sha256": "a21c95e35bb662d5010760bbffcb9a295d4a0a0dbcf3e5eb7d803542384dac20",
+      "repository_sha256": "a21c95e35bb662d5010760bbffcb9a295d4a0a0dbcf3e5eb7d803542384dac20",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/MANIFEST1068.json",
+      "original_sha256": "bbeede28e83569bcc22580e070d8d75eb42286a9d6cd6f714d93532aa0c2fa88",
+      "repository_sha256": "a530aa554c92ff54288ef3c200c3c65dc5933701ec9101b1497838a7f50c1c71",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/metadata1068.py",
+      "original_sha256": "dee12d99b8c329eaa9b467b5f01760f058f8fc667b4bb9e7361551e74e01cff6",
+      "repository_sha256": "dee12d99b8c329eaa9b467b5f01760f058f8fc667b4bb9e7361551e74e01cff6",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/primary1068.py",
+      "original_sha256": "1c6bfc35ac0eefa416348e77f9bda00eda10c7a277316636f511f98490a9e24a",
+      "repository_sha256": "1c6bfc35ac0eefa416348e77f9bda00eda10c7a277316636f511f98490a9e24a",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/PRIMARY_1008.1557v1_203809957189.json",
+      "original_sha256": "4ccb8e9ffc53a65bdcf072f78e2faca386a2552b59273fe4b7f050b6bf6c4710",
+      "repository_sha256": "934abcd90b768eaa47a388fc77203aa80d2b89f57daa712e4d5b433e1c13d794",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/PRIMARY_1904.01904v1_203306869735.json",
+      "original_sha256": "2c5c9eae516e39e2242346354e5fb5c10109d3b6e2eafe04c91757aae31646b4",
+      "repository_sha256": "2e2a3e439813d5619fb4a717b43c18e4b82ad88a675169b0103f0cb13eb9669b",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/PRIMARY_1904.01904v1_203525894958.json",
+      "original_sha256": "57371b2a5dff334fd0c74f00bd304c7c8199bc08b5809c92a081e7ce83338714",
+      "repository_sha256": "20ce6d7b1a2708bb4adb6c0fdedfee801ea99514c9849e23ac6367bc2d5e81c9",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/PRIMARY_2608.19685v1_203306906557.json",
+      "original_sha256": "d6a9bf2a6a3ad36db11fa83c7684f11a969b1d483fbc4bee283ac53717bc2b2a",
+      "repository_sha256": "2627cb8d5a91289a7204c0d9732622287b44a8c01f776d1df0a3e2e044f8a6b4",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/PRIMARY_2608.19685v1_203526019861.json",
+      "original_sha256": "d55af8ec175ace5e7ebdf987171eb05dc2d20da7dd535ce8aa043a71a71400d2",
+      "repository_sha256": "e4041b0ef658cc591a243a5ac8b9227498c62d35960453ba69edf76b1e73cf72",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/PRIMARY_2608.19685v1_203810093244.json",
+      "original_sha256": "dedc808da2246cf743133c372b053a5cf42f4c518be2db69af7f9b4047c35264",
+      "repository_sha256": "4edf28a59d431e16d81dd57844236cd9ae985ad2438d2ce0f60ac016fd4fcd9f",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/PROVENANCE1068.json",
+      "original_sha256": "3bef1d832c7e908124aa5bd40b0be70c7d02f4a7aed06ad38b9530b49ae49287",
+      "repository_sha256": "49cda31b94b1dfa76cc6073b46c531663de85c64e73966df5e673e90128d414a",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/QUALITY1068.json",
+      "original_sha256": "b47e1d966b4d4ddaf1c5f7c3b747cb5b2ec90bfd34e7e02bcf608bd0f7f3bf87",
+      "repository_sha256": "af3067164dad330b011d64f26545d3c6e962ff4477136cacd0d53957dd1798b0",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/READINGS1068.json",
+      "original_sha256": "06eadc32b3524d23ba2c8b4dde287c3c78c0d21960f48d6ffa8e624f158ab432",
+      "repository_sha256": "baa0d6b6cde3a00ec27457cd74facd43902ace97d4257a6569150bf3d2f2ccf5",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/replay1063/CHECK1063.json",
+      "original_sha256": "69b5400236de7f3e053be9b915b1c68024085604ad4e9a57bfc950af3e4105c1",
+      "repository_sha256": "ffc6b47ce831282cb11f703defe46608ca95ca28d9cc8b556fe2d7a6347f28f2",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/replay1063/compute.py",
+      "original_sha256": "aa32788340ff3f01165d262a033de8d691583c715f1fc0ae5380e1a101d9e099",
+      "repository_sha256": "f035790a114e83e97cdcf9761bac64b99f91bc6f20039997d0dd2a5fc4438f99",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/replay1063/stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "repository_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/replay1063/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "repository_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/replay1064/compute.py",
+      "original_sha256": "b34b276ea38b9d41db12ea8ea120d820fb42a5a322bb13ae76a0fd0b1a9c978e",
+      "repository_sha256": "b94bb1232adbb7997fdfc1a7bed8a37aef512f6ad77832ea2802371774a0eecd",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/replay1064/CONTROL1064.json",
+      "original_sha256": "b32d72cc0705b544bb8b10e1b7864d4a84e8b79c728ac0ce656f5213497433c7",
+      "repository_sha256": "0cbe78b19c717dc0e24e6473500b845e8619d8c8b80ee27c887c09c14530ebc0",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/replay1064/reused_integer_prefix1054.py",
+      "original_sha256": "7d8f84202a9cd820259c196bfb5163593a9c6514041f499a6b667529362c6909",
+      "repository_sha256": "d4c2ed39b55d28371d583ec89bbe1e59b734a2a5abda8053dfc16bdc41e7cb64",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/replay1064/stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "repository_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/replay1064/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "repository_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/replay1066/compute.py",
+      "original_sha256": "2ad36775e3f8bb90b073d981a8b86b8f49726aa11a2119bd09217f733d2f42b1",
+      "repository_sha256": "68f8cdc3d202f772c39cbe23ab5990c566592b6170422721a734732b4f3351ac",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/replay1066/CONTROL1066.json",
+      "original_sha256": "f44635327f2fea99025037b9bcc141d2a88fc1ebbd5fc59997e37a83761ce547",
+      "repository_sha256": "fb7b63b34ab9adc4c7f6b982046b63e1a1a3b1cd7f4c3ab14afff7df6494c191",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/replay1066/reused_integer_prefix1054.py",
+      "original_sha256": "7d8f84202a9cd820259c196bfb5163593a9c6514041f499a6b667529362c6909",
+      "repository_sha256": "d4c2ed39b55d28371d583ec89bbe1e59b734a2a5abda8053dfc16bdc41e7cb64",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/replay1066/stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "repository_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/replay1066/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "repository_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/REPLAY1068.json",
+      "original_sha256": "8bfe524440f7146ce76b13afe3f5ef20e3bcb3e0703a3d7515a19e1054da2ddc",
+      "repository_sha256": "7e17323b6d06929dcb09232d374c78bcff6dd1babc88b3184549550262f17b7b",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/replay1068.py",
+      "original_sha256": "18e602147cee4ebd0cddaf308e74ffa4301891584f943db09b68a9156c9c9825",
+      "repository_sha256": "18e602147cee4ebd0cddaf308e74ffa4301891584f943db09b68a9156c9c9825",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/seal1068.py",
+      "original_sha256": "3c3cf635f18f8c04c8f281c8a5a22f67baeda95eb2b8bdf1d685ef6fb7f8ab01",
+      "repository_sha256": "3c3cf635f18f8c04c8f281c8a5a22f67baeda95eb2b8bdf1d685ef6fb7f8ab01",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/SHA256SUMS1068.txt",
+      "original_sha256": "539bbbd19211c57250a9fdb7f47b0961f5ac2cf0b96f4034cf7835eb6437bec4",
+      "repository_sha256": "88947e9dd77361e03c663c034092b2d7002cde76f2b62669df2a6b84ed749f0f",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/SYMBOLIC1068.json",
+      "original_sha256": "cd2fd9394b22f9b8571b433c83515084b90b0d9ec3bdd53de373d44f59c371fd",
+      "repository_sha256": "21713425fce5d3b80faf72042ce0ada8c57e93ee64db19703888d88a64d1aad0",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/symbolic1068.py",
+      "original_sha256": "b5853b2046032a003b158b6a6af4ada67666eb706c5ea1a281499851eca43ac9",
+      "repository_sha256": "b5853b2046032a003b158b6a6af4ada67666eb706c5ea1a281499851eca43ac9",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/verdict1068.json",
+      "original_sha256": "463f7a61caf36cca6e47aca12cb02559b9e178560186f418ff243ac96e98fcb5",
+      "repository_sha256": "df6351338cbe8399e8e1627e962072e97e55c6c5328978ad2ff03cb6062aba9d",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "audit1068/verify1068.py",
+      "original_sha256": "f1de9f0898b77ff96a353a3355d1a495bc6f403f5192fb248983e9fdd627b075",
+      "repository_sha256": "f1de9f0898b77ff96a353a3355d1a495bc6f403f5192fb248983e9fdd627b075",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; not independent second review"
+    },
+    {
+      "path": "barrier1075/BARRIER1075.txt",
+      "original_sha256": "330c0136223ebf57038bb50e75d40a6e1814e9041f02d2873ea786fb022d0884",
+      "repository_sha256": "5cb359b08c48427014bbde07b8661a35fbaaecdbc6eae8fdbe6da3d400023095",
+      "operation": "LF transport only",
+      "technical_context": "root symbolic/rational controls only; not separately audited"
+    },
+    {
+      "path": "barrier1075/CONTROL1075.json",
+      "original_sha256": "81b117284424cecc0fb6f2bbc9fd159ff5ba24183f59113e27910962f05d2edd",
+      "repository_sha256": "86b8097daa70cb1e8193b2fe536fb48ca89baa25c6d356b7888c2e0f4942a93f",
+      "operation": "LF transport only",
+      "technical_context": "root symbolic/rational controls only; not separately audited"
+    },
+    {
+      "path": "barrier1075/imbalance1075.py",
+      "original_sha256": "8c929e22ade7b92b7ab426ea51b7c73932945b8971ed886e9832e78057e1c151",
+      "repository_sha256": "8c929e22ade7b92b7ab426ea51b7c73932945b8971ed886e9832e78057e1c151",
+      "operation": "LF transport only",
+      "technical_context": "root symbolic/rational controls only; not separately audited"
+    },
+    {
+      "path": "barrier1075/MANIFEST1075.json",
+      "original_sha256": "b8e599c493b377a7009eaa9c2b58565722f406931c4c3c6c92f98d7cd2011638",
+      "repository_sha256": "34364bb38db8df1708288bdb81590adfc58cd6ffa9b21fdeba98ed9b0228d8df",
+      "operation": "LF transport only",
+      "technical_context": "root symbolic/rational controls only; not separately audited"
+    },
+    {
+      "path": "binary1070/CONTROL1070.json",
+      "original_sha256": "17374c1ba69ed5fb7cb3bbf93df2f8e13a5bbf5ebf778f9afe5738b73bf608ef",
+      "repository_sha256": "adf612d1884681ef965bb660a20b6475cfbd4a48c1de691ee453cc9ac3d522de",
+      "operation": "LF transport only",
+      "technical_context": "technical audit1077"
+    },
+    {
+      "path": "binary1070/MANIFEST1070.json",
+      "original_sha256": "6d25ae4d4495deb96a118ab9cec0daf9f8e5681853eb4cbfe4031a76320a9b84",
+      "repository_sha256": "2e031ebcc9b13dce1d90e77c622b8e239c5d64d6c9848dfcdbfe515d9c94723f",
+      "operation": "LF transport only",
+      "technical_context": "technical audit1077"
+    },
+    {
+      "path": "binary1070/measurement1070.py",
+      "original_sha256": "41021492a4bd6ed1484f86370b921542caba7848e5c50eac516fd9b4aaefcb2f",
+      "repository_sha256": "41021492a4bd6ed1484f86370b921542caba7848e5c50eac516fd9b4aaefcb2f",
+      "operation": "LF transport only",
+      "technical_context": "technical audit1077"
+    },
+    {
+      "path": "binary1070/PROOF1070.txt",
+      "original_sha256": "e009b8371845789ac77ce86da72fb9d3f9f44a7ac5d3b67723c8d00a76bc4c3d",
+      "repository_sha256": "20006d8018ef755b1237472ea6ad90e71ac88ac6bb2e843f4bb14453070ba7d9",
+      "operation": "LF transport only",
+      "technical_context": "technical audit1077"
+    },
+    {
+      "path": "binary1070/reused_integer_prefix1054.py",
+      "original_sha256": "7d8f84202a9cd820259c196bfb5163593a9c6514041f499a6b667529362c6909",
+      "repository_sha256": "d4c2ed39b55d28371d583ec89bbe1e59b734a2a5abda8053dfc16bdc41e7cb64",
+      "operation": "LF transport only",
+      "technical_context": "technical audit1077"
+    },
+    {
+      "path": "ambient1073/AMBIENT1073.json",
+      "original_sha256": "5ac97c15ae74f87c466592c88453653f51b87140a7e3fac57dad74b75b58ab03",
+      "repository_sha256": "9f8a87638df1565a9c864704c94791cb56b7910db002896f9ac71841cb0fbf34",
+      "operation": "LF transport only",
+      "technical_context": "technical audit1077"
+    },
+    {
+      "path": "ambient1073/ambient1073.py",
+      "original_sha256": "5cdd98da3fdcd4806428dde57db314f46ad0ec7064a943cce437af2681de241b",
+      "repository_sha256": "5cdd98da3fdcd4806428dde57db314f46ad0ec7064a943cce437af2681de241b",
+      "operation": "LF transport only",
+      "technical_context": "technical audit1077"
+    },
+    {
+      "path": "ambient1073/MANIFEST1073.json",
+      "original_sha256": "fcd7f81ca8922e17ff2248886a146b14d10d757f70aa8d2675426027398cc3ff",
+      "repository_sha256": "f4d48525601b5b36cb90a0696f916e5acce770eeacd32407725f682a476d33af",
+      "operation": "LF transport only",
+      "technical_context": "technical audit1077"
+    },
+    {
+      "path": "audit1077/AMBIENT1077.json",
+      "original_sha256": "39572dc077506c7af566a31209297c33757a31e00d44a91b0a2671d2caabcfb5",
+      "repository_sha256": "fe85f0dabfb36a0b4afcb8e258e7714034dbb8afa6ed514b06dda861dbf798dd",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; no independent second review"
+    },
+    {
+      "path": "audit1077/ambient1077.py",
+      "original_sha256": "24a8d355763d10adf559d0dcaca9fc9ab885042b07e32a6cb9aac2e374fbcd28",
+      "repository_sha256": "24a8d355763d10adf559d0dcaca9fc9ab885042b07e32a6cb9aac2e374fbcd28",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; no independent second review"
+    },
+    {
+      "path": "audit1077/AUDIT1077.txt",
+      "original_sha256": "0bba5e7cfc04331c7af1733f6ed8255b13e07288aeacb2054f90e532ba74a12f",
+      "repository_sha256": "0bba5e7cfc04331c7af1733f6ed8255b13e07288aeacb2054f90e532ba74a12f",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; no independent second review"
+    },
+    {
+      "path": "audit1077/CONTROL_INDEX1077.json",
+      "original_sha256": "55905a643a580faa4feb5c37207ed13f3814e2e7012552407e317a5e527388a0",
+      "repository_sha256": "d1cf0777c421156b61b08fb67845a38c1ccc019e2db02e6cd1c8ffe737698aa2",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; no independent second review"
+    },
+    {
+      "path": "audit1077/DELIVERY1077.json",
+      "original_sha256": "014fe2cb681bc065d709e535aee3e2ac8fefafe7410e3d033c1f8ff0a133cc51",
+      "repository_sha256": "2668636035a86077a43deaad5b0f72710b6a19aa963112462fb4bf62c481ae88",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; no independent second review"
+    },
+    {
+      "path": "audit1077/INCIDENTS1077.json",
+      "original_sha256": "20c98608219d00d286f129a6ddda4944eb573c2e60212e8f541cea87784c1476",
+      "repository_sha256": "5acab95a5405122a6df5c286ec806c722f0738aa784967fa75f6337bad3d4282",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; no independent second review"
+    },
+    {
+      "path": "audit1077/INPUT_FINAL1077.json",
+      "original_sha256": "7436537f9768cff0dcc7f67ddadffeae098a215fca22fbf027a8c6fb76d819e2",
+      "repository_sha256": "f801864168a370717ceddf715e0193ecf37d1a6b6b69f3e9a9a14795863f0b12",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; no independent second review"
+    },
+    {
+      "path": "audit1077/INPUT_VERIFIED1077.json",
+      "original_sha256": "38e7830ef8b1560a23a6f2c90049cffa5e99abac020c3349145a46612480943e",
+      "repository_sha256": "766bb14ceb5f7fbef49438dd8f4b87713e208595a60e3e527c2b8cf317c72375",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; no independent second review"
+    },
+    {
+      "path": "audit1077/integer_arithmetic1077.py",
+      "original_sha256": "6888e17a28c57aee3a7d99f21c10aad3ccc2115493ced999fcb97fd097fbb853",
+      "repository_sha256": "c71d477168153264c0539629513f2f99180d157e4065f2452fbac8675df4a1b5",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; no independent second review"
+    },
+    {
+      "path": "audit1077/INTERVAL1077.json",
+      "original_sha256": "19455a8cfbbbd36226d1f28af6075f2b495d5ae1ed298216ea1058f60c255689",
+      "repository_sha256": "77bff4ca955035627ad0a323f19cadd9673df0e64e5384ad8c46c7ca02c587f6",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; no independent second review"
+    },
+    {
+      "path": "audit1077/intervals1077.py",
+      "original_sha256": "09dd1a4f21d47d2c1570ef0ea19c67a2a8005ad13e57ae61d11dc8afe410f0e7",
+      "repository_sha256": "09dd1a4f21d47d2c1570ef0ea19c67a2a8005ad13e57ae61d11dc8afe410f0e7",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; no independent second review"
+    },
+    {
+      "path": "audit1077/MANIFEST1077.json",
+      "original_sha256": "b70882a04720d78a5afbe096361798922bb20adc0e933099d908bd50c1daef6f",
+      "repository_sha256": "7ecff04efe886d1b3eae52a75372fd1eb990973429771d5c94391d6c92569b4f",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; no independent second review"
+    },
+    {
+      "path": "audit1077/metadata1077.py",
+      "original_sha256": "ac50831e50a440e23ab18fcd92020f9368d73b567fe78f5493387ff14804aa6c",
+      "repository_sha256": "ac50831e50a440e23ab18fcd92020f9368d73b567fe78f5493387ff14804aa6c",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; no independent second review"
+    },
+    {
+      "path": "audit1077/primary1077.py",
+      "original_sha256": "7f722d79623329bb57f09186132305b62adb2f7fd55b92a647b623a8b8a7b0d7",
+      "repository_sha256": "e6089dd27cf4018584dc2cd06594860ba078855eec302f536f7746e009fa8b93",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; no independent second review"
+    },
+    {
+      "path": "audit1077/PRIMARY_1512.02615v2_205158973182.json",
+      "original_sha256": "7ee877a844e387fd93d28f29ad43aa381ec70e666c0d1652131a878f36d0f96b",
+      "repository_sha256": "19b1b88d5128f224647e41557f27eb118266f61185487313334cac892de68eac",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; no independent second review"
+    },
+    {
+      "path": "audit1077/PRIMARY_1512.02615v2_205305169237.json",
+      "original_sha256": "d2be200ede51ed388c2b7848edc502f431215d8a3382e8d0e91e57c60d4bdea2",
+      "repository_sha256": "ac52b061c9c49ab027c2aed556b79ccd36a6140ad374d0046f8c1ef0b299600c",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; no independent second review"
+    },
+    {
+      "path": "audit1077/PRIMARY_1512.02615v2_205353573212.json",
+      "original_sha256": "3af00d5c9293b3900a20a8472b439d4a4aaf36baf59fe549ffea5988d4ad2044",
+      "repository_sha256": "5ed667b9a0fe1b598a02e4c048cd1437136dc70f92b53b2b2d7896e008e708a4",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; no independent second review"
+    },
+    {
+      "path": "audit1077/PRIMARY_HIAIPETZ1077.json",
+      "original_sha256": "4a7b070cccb1af06c1754acc7459a8215cc27eccbc9241a6beee524d1ad0cf24",
+      "repository_sha256": "4e4779addd68a1406c25f20ee2ebaf7c9e8082b1a073cd3f435e6340575209b1",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; no independent second review"
+    },
+    {
+      "path": "audit1077/PRIMARY_LOCATOR_FAILURE1077.json",
+      "original_sha256": "9f88121615ba03749bb711ad572862c29f972223d651cb55a5734c0f155b1500",
+      "repository_sha256": "cd032f13cf25c163bcfb68322fa580a1141b162e256795bb0bb58aa988f6c21f",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; no independent second review"
+    },
+    {
+      "path": "audit1077/PRIMARY_quant-ph_0110125v1_205730189196.json",
+      "original_sha256": "baede8f8570b22b2fc2f8a724c5d72a2f52d77593d710db3c98c3b35ff9403de",
+      "repository_sha256": "7ec6debdffd0fdbe9d41a2807c1b6beb6853d281577de58b646d9142bb9d9cf6",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; no independent second review"
+    },
+    {
+      "path": "audit1077/PRIMARY_quant-ph_9906090v1_205158960094.json",
+      "original_sha256": "cf37494b47d0016b7fb5a685aa7005f3bab2d7c6641d9aa1071bc68c94038630",
+      "repository_sha256": "4ae3b540ef53c080599b1c2c9ec89b6ff2593324cb05a6a2f57fccb77f505659",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; no independent second review"
+    },
+    {
+      "path": "audit1077/PRIMARY_quant-ph_9906090v1_205305048012.json",
+      "original_sha256": "ea6342d29f47d2cadad52d06dcd4b4206c05cee282a3a9d7cef945268ccb3fa2",
+      "repository_sha256": "30a3381a9e1c3c2062c846c5c4f8c8d6f38b3eb1c9dbd419d334fd0d94327211",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; no independent second review"
+    },
+    {
+      "path": "audit1077/PRIMARY_quant-ph_9906090v1_205353346251.json",
+      "original_sha256": "0531d077a643a5b5f471a0d708f898b12d52eb4868778c181672aea779f04b5f",
+      "repository_sha256": "0aed2679e0a4dad902eb9706048e9689887180875638f1b4e5e28bc3964620ca",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; no independent second review"
+    },
+    {
+      "path": "audit1077/PRIMARY_quant-ph_9906090v1_210817812047.json",
+      "original_sha256": "09bbdd353697e04c1b2afc65be7a01f11e2b8557dda1c43eb6d3c17ea0e66fff",
+      "repository_sha256": "acb5f618a71a9843f4c5a2160c8b903ba4ab3a452244b68a258304925e69a4e0",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; no independent second review"
+    },
+    {
+      "path": "audit1077/PRIMARY_quant-ph_9906090v1_210821927477.json",
+      "original_sha256": "a02251b1e874722e715aa3ea21b4ecb874c194c89443461c6232a140b69ac99b",
+      "repository_sha256": "687bcbc44b33109d40f62842e4ef07aa63226b14cb1d6b6d34a8499af495b62f",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; no independent second review"
+    },
+    {
+      "path": "audit1077/PROVENANCE1077.json",
+      "original_sha256": "7ffac0ddfe119dbbc9b7de719fc4f4117a32bc63fd7bc84b93f0b9a98e82a140",
+      "repository_sha256": "313305304eff7025d1738d9aba51c7f85856bf65ed6e63e8f8f2e755849ff822",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; no independent second review"
+    },
+    {
+      "path": "audit1077/QUALITY1077.json",
+      "original_sha256": "57f2d6287d25e8719ebb232af44b04c4e3094499d641ba23c780250b4a67a5f5",
+      "repository_sha256": "08797faff7dfc3a76620e93f7f35bf17416e4d9f865299d41f0f52b8a5d96cbb",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; no independent second review"
+    },
+    {
+      "path": "audit1077/READINGS1077.json",
+      "original_sha256": "c0de994d2389fc062b605a01cd33634fe21bc7ca9748f13c996a12074830f5c4",
+      "repository_sha256": "5f96e97b4b8809265ab3265b16520263e72e64e3754d2ff7b6fbe1abdd96dec3",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; no independent second review"
+    },
+    {
+      "path": "audit1077/replay1070/compute.py",
+      "original_sha256": "8cadc6598e34b9e73c4d884a35540650b2b354efa8d84be72fec2934f7528c4d",
+      "repository_sha256": "271eb4577dcd1abe5d05a759542bd3f9512281a8bd42680f4f53974e968237d7",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; no independent second review"
+    },
+    {
+      "path": "audit1077/replay1070/CONTROL1070.json",
+      "original_sha256": "e8727fc1b6e8d6ac731545765cf7646f82419087f5e3319449c0755e3436332e",
+      "repository_sha256": "b1e23abe6abecb044c59439024c05c4082e7a758e82ff717bd348bb46b81b857",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; no independent second review"
+    },
+    {
+      "path": "audit1077/replay1070/reused_integer_prefix1054.py",
+      "original_sha256": "7d8f84202a9cd820259c196bfb5163593a9c6514041f499a6b667529362c6909",
+      "repository_sha256": "d4c2ed39b55d28371d583ec89bbe1e59b734a2a5abda8053dfc16bdc41e7cb64",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; no independent second review"
+    },
+    {
+      "path": "audit1077/replay1070/stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "repository_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; no independent second review"
+    },
+    {
+      "path": "audit1077/replay1070/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "repository_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; no independent second review"
+    },
+    {
+      "path": "audit1077/replay1073/AMBIENT1073.json",
+      "original_sha256": "ea934ca9b8d5fa38c37029cf52357e8c39577eeeb3f5525db68afb33254b8d3b",
+      "repository_sha256": "5d5838c41bbe023e52fd848f24ec674e569a895a2498568726a277a200d89639",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; no independent second review"
+    },
+    {
+      "path": "audit1077/replay1073/compute.py",
+      "original_sha256": "3705fbbcd2de91ac935536d1bc60dd0cfaf2afea05a5636e1b94d4d822f3b0bf",
+      "repository_sha256": "54517c2c912e24345960cd79095eee50bab8d5736f6c9cb985c421fbfc69a53b",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; no independent second review"
+    },
+    {
+      "path": "audit1077/replay1073/stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "repository_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; no independent second review"
+    },
+    {
+      "path": "audit1077/replay1073/stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "repository_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; no independent second review"
+    },
+    {
+      "path": "audit1077/REPLAY1077.json",
+      "original_sha256": "47909c0f831d84220c4905e2577d92b5315a126cd1f8886249f87e2af741076f",
+      "repository_sha256": "768be6283ee162c46250a92a9cf9ca4d5d4181b3c320663f2d0117806c4cfd97",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; no independent second review"
+    },
+    {
+      "path": "audit1077/replay1077.py",
+      "original_sha256": "a780fb12cfbea538a717c87c85a45e5b59db30ff3ad546aad2c6ecf5456bf664",
+      "repository_sha256": "a780fb12cfbea538a717c87c85a45e5b59db30ff3ad546aad2c6ecf5456bf664",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; no independent second review"
+    },
+    {
+      "path": "audit1077/seal1077.py",
+      "original_sha256": "f51755d3eee3aeb0d97160d3b515d45e1fae11e1409bfcceede7366f03edb78d",
+      "repository_sha256": "4faa83cee47746816fdd3d41efb9933c6e2ab243143b6243779bd756d01862d9",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; no independent second review"
+    },
+    {
+      "path": "audit1077/SHA256SUMS1077.txt",
+      "original_sha256": "202f4ac90c99e9604f680a7a0d7941a039c8cadc8dac368f94e8dbbef6b34588",
+      "repository_sha256": "683132ba62f427d64679ccf272b2b3d2686c6375d5e6a20f923c56136222e8cb",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; no independent second review"
+    },
+    {
+      "path": "audit1077/SYMBOLIC1077.json",
+      "original_sha256": "7572dfd8052e6d558408f6fb6573cc4d0dc504b28af79eac8f3d7b2a5568d2c3",
+      "repository_sha256": "65a5b36cc4bb512f15231fc77f955b2b7c4cd62d36e1ce727953fc72e2bc95ac",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; no independent second review"
+    },
+    {
+      "path": "audit1077/symbolic1077.py",
+      "original_sha256": "820d93752e4dc990197dfa20cfd5341e60950284ceaa560704acaa9e88512005",
+      "repository_sha256": "820d93752e4dc990197dfa20cfd5341e60950284ceaa560704acaa9e88512005",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; no independent second review"
+    },
+    {
+      "path": "audit1077/verdict1077.json",
+      "original_sha256": "5bd34ed4e694996032e66cf591f8193e01f2ad0de84eaf780c17fbb1c7577dd5",
+      "repository_sha256": "951e9f3312a5c2cb47e33b0c88cadf7d3234eed1743b500190f1d58d4f34a92b",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; no independent second review"
+    },
+    {
+      "path": "audit1077/verify1077.py",
+      "original_sha256": "7b9382cef71bcfed18172c8bdd8db5dd4fc2274f0f96bf4ac497746aea7115d2",
+      "repository_sha256": "7b9382cef71bcfed18172c8bdd8db5dd4fc2274f0f96bf4ac497746aea7115d2",
+      "operation": "LF transport only",
+      "technical_context": "report rootread/hashverified; no independent second review"
+    },
+    {
+      "path": "nonunital1081/CONTROL1081.json",
+      "original_sha256": "6c33e83bd7af40c391237a4a8ef6e1ec9e86818299b44957c615acacff0ea313",
+      "repository_sha256": "313a08f9c0a0631b39647818801eef839a26f673587fb058734c173816fd5846",
+      "operation": "LF transport only",
+      "technical_context": "root rational counterexample only; not separately audited"
+    },
+    {
+      "path": "nonunital1081/FALSIFIER1081.txt",
+      "original_sha256": "c83e0effe3e887b4277985e9fa6c3dd76af7e40bcfd38d9cc6be1cc96eca4049",
+      "repository_sha256": "0c0d9077513269bf608451f181644591c45bb460a10d8c638900c785daf923f8",
+      "operation": "LF transport only",
+      "technical_context": "root rational counterexample only; not separately audited"
+    },
+    {
+      "path": "nonunital1081/MANIFEST1081.json",
+      "original_sha256": "c9933d026eb5e30be91819af60700d34e30a23a90b0d5daec832d8bb58df1ffd",
+      "repository_sha256": "91169b06cc7812b96731816ecef0b200885967d99992cd96bfc112ca9114868b",
+      "operation": "LF transport only",
+      "technical_context": "root rational counterexample only; not separately audited"
+    },
+    {
+      "path": "nonunital1081/nonunital1081.py",
+      "original_sha256": "3d0626b8ac98e9f9e083685e13bca2c5e64e1a6ec9042d120f666450b459d4fa",
+      "repository_sha256": "3d0626b8ac98e9f9e083685e13bca2c5e64e1a6ec9042d120f666450b459d4fa",
+      "operation": "LF transport only",
+      "technical_context": "root rational counterexample only; not separately audited"
+    }
+  ],
+  "scope": "Own derivations/audits/controls/primary metadata only. No foreign corpus. Archival manifests retain original hashes; this explicit LF subset is separately bound. Root-only1075/1081 barriers are not separately audited. No confidence/independence promotion."
+}

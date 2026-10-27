@@ -1,0 +1,3 @@
+# Finite-phase resources, binary measurement and failed extensions
+
+Full1058/1068/1077 technical reports and underlying own notes, exact/numerical/interval controls, adverse cases, primary-reading scopes and incidents. Original archival and LF transport hashes are distinct. The binary kernel simplification was derived during1077, separately from1070/1073 inputs. Root-only1075/1081 barriers are explicitly not separately audited. No manuscript grade, formal-confidence promotion, priority, optimal frontier or practical-efficiency claim. These bounded controls are not a certified computational-campaign capsule. The23-page manuscript1083 has a separate full exact-PDF review requested; no previous grade evaluates it.

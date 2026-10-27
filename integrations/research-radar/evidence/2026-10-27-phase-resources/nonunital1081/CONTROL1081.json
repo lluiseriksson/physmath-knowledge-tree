@@ -1,0 +1,58 @@
+{
+  "utc": "2026-10-27T19:58:41.541287+00:00",
+  "scope": "own exact rational finite counterexample to root proposed formula, no external review or new manuscript grade",
+  "normalized_Choi": [
+    [
+      "9/20",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "1/20",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "1/10",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "2/5"
+    ]
+  ],
+  "partial_trace_inverse": [
+    [
+      "110/9",
+      "0"
+    ],
+    [
+      "0",
+      "45/2"
+    ]
+  ],
+  "candidate": "49/99",
+  "sigma": [
+    "4/7",
+    "3/7"
+  ],
+  "rho": [
+    "407/700",
+    "293/700"
+  ],
+  "step": "1/100",
+  "chimin_ratio": "1/2",
+  "chimin_gap": "1/198",
+  "finite_triangular_ratio": "478551/957151",
+  "finite_triangular_gap": "476150/94757949",
+  "CPTP": true,
+  "Choi_full_rank": true,
+  "nonunital": true,
+  "score": null
+}
