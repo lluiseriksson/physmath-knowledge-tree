@@ -1,0 +1,33 @@
+Candidate1051 — a bounded local phase orbit, rather than a nonunitary tangent
+27 October2026. Own post-start exploration, excluded from manuscript1047/review1048. No score, technical audit, global optimum or priority claim. Do not modify the frozen paper or restart its review for this proposal.
+
+Proposed scope. The unrestricted complete equal-reference BKM/Umegaki lower C_P from1035, P=d(d-1), can be realized within a LOCAL UNITARY PHASE ORBIT with reference dimension d, a fixed norm-one Hamiltonian and a fixed finite phase difference pi. Its actual-marginal order cost approaches d², rather than M=d(2d-1)/2. Thus this does NOT replace the more efficient constrained1033/1035 profiles or prove a new unrestricted optimum. A related SLD/triangular lower is also proposed; no claim of covering all generators.
+
+Let a=d-1, q=a+e², |v>=sum_(j=1)^(d-1)|j,j>+e|0,0>, sigma=|v><v|/q, and B=I_d/d tensor sigma_R. The actual reference is diag(e²,1,...,1)/q, positive for e>0. Whitened sigma has one nonzero eigenvalue d². Let s_p=(1-p)B+p sigma. For -1/(d²-1)<p<1 all eigenvalues are positive. In the plane spanned by the normalized uniform principal vector and |0,0>, its base is
+ W_p=[[A_p,dp e sqrt(a)],[dp e sqrt(a),F_p e²]]/(dq),
+ A_p=1+(da-1)p, F_p=1+(d-1)p.
+The a-1 orthogonal principal modes and all coordinates off the Schmidt diagonal are diagonal, with no phase dependence. detW=e²(1-p)[1+(d²-1)p]/(d²q²). The actual order of s_theta is1+(d²-1)theta for0<theta<1.
+
+Fix H_A=diag(0,1,...,1), independently of e,theta or lambda. Its operator norm is1. U_phi=exp(-i phi H_A) tensor I_R commutes with B, and N_lambda commutes with this conjugation. The family s_theta(phi)=U_phi s_theta U_phi* preserves the reference exactly and preserves its exact order budget. Its tangent at0 is
+ Z=-i[H_A tensor I,s_theta]=(theta e/q) T,
+ T=[[0,-i sqrt(a)],[i sqrt(a),0]]
+on the active plane, zero elsewhere. This is a bounded local Hamiltonian orbit, not the real center-changing tangent of1033. Each s_theta(phi) remains faithful for all real phi; there is no small-perturbation admissibility limit. The relevant exact actual order is larger than the older rank-two family's.
+
+SLD. For every real symmetric positive2x2 W, WT+TW=(TrW)T. Thus the solution to WY+YW=2T is2T/TrW and g_W(T)=4a/TrW. The exact phase-tangent retention is
+ lambda² TrW_theta/TrW_(lambda theta)
+ =lambda² [A_theta+F_theta e²]/[A_(lambda theta)+F_(lambda theta)e²].
+At fixed theta, e->0 gives C_(1+(P-1)theta); theta->1 supplies C_P. This does not attain the larger complete SLD value at M, nor the qubit unrestricted value at3. The actual input/output Fisher informations vanish with e² for the displayed bounded H, so a coefficient ratio is not a fixed absolute-precision advantage.
+
+BKM and exact finite Umegaki, without a Taylor perturbation. Write ell_p=(log w_+-log w_-)/(w_+-w_-), where w_+/- are W_p's positive eigenvalues. Continuous extension applies at equality. Because T is imaginary off-diagonal and a real orthogonal diagonalization preserves that antisymmetric form, g_BKM(s_theta,Z)=2(theta e/q)² a ell_theta. More directly, functional calculus for2x2 matrices gives (logW_p)_01=ell_p(W_p)_01. If c_theta=(W_theta)_01=theta e sqrt(a)/q, then for EVERY fixed phi,
+ D_U(s_theta(phi)||s_theta)=2 c_theta² ell_theta (1-cos phi).
+Proof: unitary invariance makes Tr s_phi log s_phi=Tr s log s. Only the plane's two off-diagonal entries change in Tr s_phi log s; their real parts acquire cos phi. All complementary modes are unchanged. This uses subnormalized blocks as parts of the complete trace, without renormalizing them. The same orientation rho||sigma is maintained after the channel. Since c_(lambda theta)=lambda c_theta, the exact finite-pair ratio is
+ lambda² ell_(lambda theta)/ell_theta,
+for phi not in2pi Z, including the fixed angle pi. It equals the BKM metric retention for this family. This identity is special to this phase/block construction, not a general equality for arbitrary finite Umegaki pairs.
+
+At fixed p in the positive domain, w_+=A_p/(da)+O(e²), while w_-=positive_constant(p,d)e²+O(e⁴). Consequently ell_p=[2da/A_p]log(1/e)+O(1). Hence the exact finite-phase ratio tends, e->0, to lambda² A_theta/A_(lambda theta)=C_(1+(P-1)theta). Taking theta->1 afterward proves the proposed C_P lower in the local-unitary phase class. For any actual budget1<kappa<=d² the same family yields C_Keff with Keff=1+(P-1)(kappa-1)/(d²-1); for larger budgets retain C_P. It is weaker under a given budget than the earlier rank-two lower, so no budget gain is claimed. At lambda0/1 the usual direct endpoint convention applies.
+
+Triangular aside, pending independent derivation/check. In the plane, isospectral overlaps give D_triangle(s_phi||s)=4 c²(1-cos phi)/TrW. Therefore its finite-pair ratio equals the SLD phase ratio above. This is not required for the main proposed BKM/Umegaki mechanism; preserve it as an additional explicitly unaudited identity.
+
+Relation to prior obstruction.1044 correctly showed that the REAL1033 tangent has nonzero Tr(Q_iD) for a block projector commuting with the base, excluding all commutator interpretations of THAT tangent. The new imaginary single-Schmidt-vector family is a different tangent with a concrete local H. It does not invalidate the historical obstruction. It removes nonunitarity and vanishing phase separation for this alternative lower, at increased order cost and still vanishing absolute information in the singular limit. The resource R decreases to d for this specific unrestricted lower; no minimal-reference theorem follows.
+
+Falsifiers: wrong marginal or whitening index; a missing phase-dependent complementary mode; failure of the exact finite Umegaki trace identity or its orientation; wrong logarithmic coefficient/limit order; scalar factor mistaken for physical parameter; or a prior theorem already covering the same lower/unitary quantifiers. Current CHECK1051 verifies exact ambient geometry in d2-5 and symbolic determinant/Sylvester equations, plus bounded numerical diagnostics. It is not a technical audit, interval certificate or worldwide novelty check. Fixed H and finite pi are mathematical admissibility statements, not a proposed experiment with measured advantage or a solution of general relative-entropy contraction.

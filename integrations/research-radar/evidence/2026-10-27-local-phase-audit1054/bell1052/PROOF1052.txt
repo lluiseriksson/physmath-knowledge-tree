@@ -1,0 +1,30 @@
+Candidate1052 — a rigorous all-Bell-diagonal benchmark at the negative CP endpoint
+Own synthesis27October2026; post-start and excluded from1047/1048. No independent technical audit, manuscript grade or worldwide priority claim. The classical bound is established Dobrushin/SDPI machinery, not claimed as a new classical theorem. This note strengthens the interpretation of1051 only, within the same evolving project.
+
+1. Exact classical benchmark, with an elementary reconstruction
+Let n>=2 and K_n act on a probability vector p by (K_np)_i=(1-p_i)/(n-1). Its relative-entropy contraction coefficient over positive probability vectors is1/(n-1).
+
+For a positive probability vector r and real tangent z with sum z_i=0, claim
+ sum z_i²/(1-r_i) <= sum z_i²/r_i.
+If every r_i<=1/2, the coordinatewise inequality proves this. If one coordinate r_1>1/2, put S=1-r_1<1/2 and a_i=(1-2r_i)/(r_i(1-r_i)) for i>1. All a_i>0. Cauchy-Schwarz gives
+ sum_(i>1) a_i z_i² >= z_1² / sum_(i>1) 1/a_i.
+For0<x<1/2 let phi(x)=x(1-x)/(1-2x). Since phi(x)/x=(1-x)/(1-2x) is increasing, sum_(i>1)phi(r_i)<=phi(S). Thus the last lower is at least z_1²/phi(S)=(2r_1-1)z_1²/[r_1(1-r_1)], cancelling exactly the single negative coefficient in sum_i[1/r_i-1/(1-r_i)]z_i². This proves the claim, including n2. Cases with equality r_i=1/2 follow directly or by continuity.
+
+The Fisher form of K_nz=-z/(n-1) at K_nr equals(1/(n-1))sum_i z_i²/(1-r_i). Hence it is at most1/(n-1) times the input Fisher form. Integrating along the positive probability segment r_u=q+u(p-q), with the standard KL Bregman weight1-u, proves
+ D_KL(K_np||K_nq) <= D_KL(p||q)/(n-1).
+For the lower take q with two equal masses a approaching1/2 from below and its other n-2 masses equally positive, and tangent z=(1,-1,0,...,0). Its local Fisher ratio is a/[(n-1)(1-a)] ->1/(n-1). For n2 the kernel is a permutation and equality is immediate. Faithful small perturbations followed by the boundary limit prove the supremum. This also agrees with the established Dobrushin bound: any two columns of K_n have total variation distance1/(n-1).
+
+2. Quantum interpretation of the classical restriction
+Fix an orthonormal maximally entangled basis P_1,...,P_n on A_dR_d, n=d². Both input states diagonal in that SAME basis have marginal I_d/d and replacement B=I_n/n. Local depolarization N_lambda=lambda id+(1-lambda)E_A, at its negative CP endpoint lambda=-1/(d²-1)=-1/(n-1), maps their probability vectors exactly by K_n. Umegaki becomes ordinary KL on this diagonal class. Thus the coefficient for ALL pairs jointly diagonal in this fixed maximally entangled basis is exactly1/(d²-1). The argument applies to any such basis; it does not cover every commuting pair, arbitrary actual marginals, optimized changing bases between two states or all classical-reference families.
+
+3. Proposed finite local-phase separation
+Candidate1051 constructs positive equal-reference states related by exp(-i pi H_A), with fixed H_A=diag(0,1,...,1), norm1 and reference dimension d. Its exact finite Umegaki ratio is lambda² ell_(lambda theta)/ell_theta. At e=1/100,theta99/100 and d3, the interval1051 ratio is approximately0.18888352285582, strictly above the ALL-Bell benchmark1/8=0.125. For d4 it is approximately0.13449379029164, above1/15. These statements use exact local CP endpoints and finite phasepi, not a small perturbation limit. Four outward interval gaps at e=1/100 and1/1000 are retained in INTERVAL1051, with implementation not independently audited. The general lower C_P from1051 is larger than this all-Bell benchmark by the factor d-1 at the endpoint, for d>=3, as an ordered supremum.
+
+This establishes a proposed separation from a precisely defined Bell-diagonal class, conditional on the exact identities/interval arithmetic in1051. It is NOT an upper on every commuting or separable quantum pair, NOT the unrestricted coefficient, and NOT an absolute output-Fisher-information optimum. It does not repair the old real-tangent obstruction by relabelling that tangent: it uses a different imaginary local-phase family and a larger actual-order budget approaching d². The finite examples still have nontrivial conditioning and no experimental robustness analysis. No quantum Stein exponent interpretation is needed for this mathematical pair-coefficient claim, and no unverified metrological advantage is asserted.
+
+4. Primary attribution and an explicitly delimited extension
+Polyanskiy-Wu, arXiv:1508.06025v4, selected PDF pages3-5, Section2.1, Eq7 and Theorem1/Eq8, states the classical Dobrushin column formula and the bound eta_f<=eta_TV, attributing the latter to Cohen-Iwasa-Rautu-Ruskai-Seneta-Zbaganu and Cohen-Kemperman-Zbaganu. These established classical results give the upper in part1 immediately; the Fisher reconstruction above is an own check of the special kernel, not a new classical contribution. The general theorem's proof in the attributed sources has not been audited here.
+
+For each normalized nonaffine operator-convex Petz generator, the same all-Bell upper1/(d²-1) follows by ordinary classical f-divergence reduction and that prior theorem. The earlier faithful two-Bell-ray lower reaches this endpoint for each such f by its local Taylor ratio. Thus, subject to checking that these existing hypotheses are carried over exactly, the Bell-diagonal benchmark extends to that class. Only Umegaki is used for the finite local-phase separation in part3; no all-generator improvement by1051 follows from it.
+
+Falsifiers: failure of the sum-zero Fisher inequality or segment orientation; a basis state without the required maximally entangled marginal; changing the basis independently for the two states; an incorrect finite phase/log identity; or a prior result already covering this separation. Classical Dobrushin/KL tools must remain attributed, not counted as an independent new theorem. A full technical audit of1051/1052 is pending until the sole current manuscript review1048 ends; neither note belongs to that frozen manuscript or its future score.
