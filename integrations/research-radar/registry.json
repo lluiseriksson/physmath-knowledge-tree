@@ -861,7 +861,7 @@
       "lost_or_unproved": "Root global ball outputs support a very loose conditional Delta>=6e-52. Bounded analytic audit798 found no fatal defect but excluded full320 outputs; O1-O4, including external imports not bound at load, remain. No reviewed revised PDF, practical threshold, formal proof, score or impact claim.",
       "hypothesis_to_remove": "Implicit capacity-matched AWGN gain is replaced by explicit b^2=9757/50000 in the audited component; next remove the unquantified common-input gap.",
       "falsifier": "Reject if analytic M, branch guards, tail bounds or rate-interval separation fail; never infer a Delta lower bound from a single-law gain.",
-      "next_finite_task": "Make the saved campaign portable with manifest-bound imports and runtime hashes, retaining audit798 scope/objections. Consider only a same-paper exact-PDF revision and fresh assessment; do not transfer scores or advertise E=1e53 as practical.",
+      "next_finite_task": "Extend manifest-bound selected replay801 (four intervals only) to a complete run with input/worker fingerprints and a Research Capsule. Keep798 O1-O4 and old795 limits; no new manuscript, inherited grade or practical threshold claim.",
       "review_packet": "integrations/research-radar/evidence/2026-10-26-interval777/ROOT-VERIFIED781.json"
     }
   ],
@@ -891,6 +891,10 @@
       "evidence": "integrations/research-radar/evidence/2026-10-27-weighted793/SOURCES793.json",
       "scope": "Directed13-endpoint primary refresh; OpenAI and DeepMind pins unchanged, no new full frontier proof audit.",
       "method_source": "integrations/research-radar/evidence/2026-10-27-weighted793/METHOD-SOURCE796.json"
+    },
+    "followup801": {
+      "evidence": "integrations/research-radar/evidence/2026-10-27-portable801/SOURCES801.json",
+      "scope": "Directed13-endpoint metadata refresh; unchanged OpenAI/DeepMind pins. Selected official API contract reread, not a new proof audit."
     }
   }
 }
