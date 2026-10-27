@@ -1,0 +1,168 @@
+{
+  "utc": "2026-10-27T06:55:40.049702+00:00",
+  "target": "domain.complexity_theory",
+  "radius": 1,
+  "nodes": [
+    {
+      "id": "domain.complexity_theory",
+      "kind": "domain",
+      "title": "Complexity theory",
+      "summary": "Resources needed for computation, reductions, circuits, proof systems and barriers.",
+      "confidence": "literature",
+      "tags": [
+        "complexity",
+        "computation",
+        "circuits",
+        "reductions"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Computability.Basic"
+        ],
+        "declarations": [],
+        "targets": [
+          "Formalize finite languages, reductions and toy circuit classes."
+        ]
+      },
+      "questions": [
+        "Which lower-bound barrier is structural rather than technical?"
+      ],
+      "references": [
+        {
+          "label": "S. Arora and B. Barak — Computational Complexity: A Modern Approach",
+          "url": "https://theory.cs.princeton.edu/complexity/book.pdf",
+          "type": "book",
+          "scope": "claim"
+        },
+        {
+          "label": "Semidefinite extension complexity of the separable set, with applications to approximate disentanglers (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.09033v1",
+          "type": "paper",
+          "scope": "context"
+        },
+        {
+          "label": "A quantum oracle separation between QMA(2) and QMA (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.02865v1",
+          "type": "paper",
+          "scope": "context"
+        },
+        {
+          "label": "Quantum Meta-Complexity Is All You Need: Characterizing One-Way Puzzles via Time-Bounded Kolmogorov Complexity (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.02687v1",
+          "type": "paper",
+          "scope": "context"
+        }
+      ]
+    },
+    {
+      "id": "bridge.proof_complexity_geometry",
+      "kind": "bridge",
+      "title": "Proof complexity and geometry",
+      "summary": "Studies computational lower bounds through algebraic, geometric and proof-system obstructions.",
+      "confidence": "literature",
+      "tags": [
+        "proof-complexity",
+        "geometry",
+        "circuits",
+        "barriers"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Computability.Basic"
+        ],
+        "declarations": [],
+        "targets": [
+          "Formalize tiny proof systems and reductions."
+        ]
+      },
+      "questions": [
+        "Can a barrier be represented as an invariant that survives reductions?"
+      ],
+      "references": [
+        {
+          "label": "K. Mulmuley and M. Sohoni — Geometric Complexity Theory I",
+          "url": "https://doi.org/10.1137/S009753970038715X",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "problem.p_vs_np",
+      "kind": "problem",
+      "title": "P vs NP",
+      "summary": "Determine whether every efficiently verifiable problem is efficiently solvable.",
+      "confidence": "literature",
+      "tags": [
+        "millennium",
+        "complexity",
+        "computation",
+        "barriers"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Computability.Basic"
+        ],
+        "declarations": [],
+        "targets": [
+          "Formalize reductions and tiny circuit/proof systems."
+        ]
+      },
+      "questions": [
+        "Which lower-bound barrier can be encoded as a robust invariant?"
+      ],
+      "status": "unsolved",
+      "references": [
+        {
+          "label": "Clay Mathematics Institute — Millennium Prize Problems",
+          "url": "https://www.claymath.org/millennium-problems/",
+          "type": "official",
+          "scope": "claim"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge.complexity.pnp",
+      "source": "domain.complexity_theory",
+      "target": "problem.p_vs_np",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "P vs NP is a foundational problem in computational complexity.",
+      "references": [
+        {
+          "label": "Clay Mathematics Institute — P vs NP",
+          "url": "https://www.claymath.org/millennium/p-vs-np/",
+          "type": "official",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.complexity.proof_geometry_bridge",
+      "source": "domain.complexity_theory",
+      "target": "bridge.proof_complexity_geometry",
+      "relation": "transfers_via",
+      "confidence": "literature",
+      "mechanism": "Proof systems and circuit lower bounds supply the computational side of the bridge.",
+      "references": [
+        {
+          "label": "K. Mulmuley and M. Sohoni — Geometric Complexity Theory I",
+          "url": "https://doi.org/10.1137/S009753970038715X",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "S. Arora and B. Barak — Computational Complexity: A Modern Approach",
+          "url": "https://theory.cs.princeton.edu/complexity/book.pdf",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    }
+  ],
+  "canonical_nodes_sha256": "d9d284363730558ecf3dd095b11d6f2cfacd113519ef832ae61535ea48a2b6c1",
+  "canonical_edges_sha256": "308897f439d817cbdadc51b8bf9e42299d806fa1f663c5ffcf794ba93ca74dfe",
+  "not_proof": true
+}

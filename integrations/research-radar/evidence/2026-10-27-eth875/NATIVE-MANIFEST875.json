@@ -1,0 +1,42 @@
+{
+  "scope": "Original own-script and metadata/native finite-check results, byte-preserved inside native-json875.zip. Public JSON text copies normalize line endings only; C/D native originals untouched. No foreign source bodies. No complete algorithm reproduction or Research Capsule claimed.",
+  "files": [
+    {
+      "name": "CHECK875.json",
+      "native_bytes": 1300,
+      "native_sha256": "50cbb42ddda0f22bf8fe59f7f022e457afdbb5fc348ad5016b720110424d1316",
+      "public_lf_sha256": "5a5d679492f669b28e6d8063dd67bc6bb8936e27094f794b195baa8e4be727e8",
+      "only_change": "CRLF to LF where applicable; parsed JSON exact"
+    },
+    {
+      "name": "READING875.json",
+      "native_bytes": 2208,
+      "native_sha256": "dc02e9e964b19011562eabdc36da91bbddb9b5e31c08130499d3de872d0b2a2d",
+      "public_lf_sha256": "7009daabe97078398bca3df9083e000a68b6a18f9ed4734115071bb14f125c2a",
+      "only_change": "CRLF to LF where applicable; parsed JSON exact"
+    },
+    {
+      "name": "SOURCE874.json",
+      "native_bytes": 4092,
+      "native_sha256": "ea7c7bb985f8c3f012dda141dca5c01c8a15f0632008dae8738ea4386758f9e5",
+      "public_lf_sha256": "5acfbfed3f4f0ea2844c577e15dcd82b4f7199a5e205b29b7ef5395cf7c4d70a",
+      "only_change": "CRLF to LF where applicable; parsed JSON exact"
+    },
+    {
+      "name": "SUBGRAPH875.json",
+      "native_bytes": 5568,
+      "native_sha256": "6c29a84e076a6c93b88922808000001c07130b8b45b5f0a4d8ac441979e80165",
+      "public_lf_sha256": "d678e34f5beb14a6aeb152da15166d993993ed870fd78a815acab682fa3634ac",
+      "only_change": "CRLF to LF where applicable; parsed JSON exact"
+    },
+    {
+      "name": "REFRESH879.json",
+      "native_bytes": 4058,
+      "native_sha256": "6b91370af7e0a537a62fd80b2ba2c7a33369ab2e39283f853c0603fcbbf2d898",
+      "public_lf_sha256": "060d13049506c43d6aa0a1b76e0ea453bc4d6dd99d2b61ded279a560df9a6216",
+      "only_change": "CRLF to LF where applicable; parsed JSON exact"
+    }
+  ],
+  "script_sha256": "fdc4f1ce1418c8824a62806987a2a95c087035070d22d5367b22b3e5ec185a37",
+  "zip_sha256": "4024b3b15bcef2e0371c13b6d1d52fe2ff0bf44617c313a91ba7f881b18ede82"
+}

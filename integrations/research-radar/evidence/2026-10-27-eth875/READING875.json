@@ -1,0 +1,48 @@
+{
+  "utc": "2026-10-27T06:57:44.424557+00:00",
+  "source_commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+  "title": "The Exponential Time Hypothesis is False",
+  "status": "upstream claim, not adopted as established result",
+  "reading": [
+    {
+      "file": "main_full_version.tex",
+      "depth": "abstract and main theorem/corollaries read, opening lines1-199; selected keyword inventory elsewhere",
+      "not_read": "complete main proof and bibliography"
+    },
+    {
+      "file": "quantitative-reduction.tex",
+      "depth": "statement read: Boolean tensor contraction interface and fixed-density reduction; opening125lines",
+      "not_read": "complete dense reduction"
+    },
+    {
+      "file": "quantitative-contraction.tex",
+      "depth": "selected proofs read through the start of child networks: coefficient ring, packet packing, local integrality, tapered Hermite recovery, precision budget and mode enumeration; opening515lines",
+      "not_read": "remaining recursive construction and full cost-accounting proof"
+    },
+    {
+      "file": "quantitative-circuits.tex",
+      "depth": "acquired, not read"
+    }
+  ],
+  "finite_checks": {
+    "hermite_valuation_nodes": 5220,
+    "shifted_polynomial_cases": 1168,
+    "rational_coefficients": 17472,
+    "zero_identity_cases": 84,
+    "all_pass": true
+  },
+  "whole_paper_proof_audited": false,
+  "formal_replay": false,
+  "new_manuscript": false,
+  "manuscript_score": null,
+  "foreign_bodies_in_public_repo": false,
+  "corpus_source_eligibility_upgraded": false,
+  "falsifiers_pending": [
+    "A failed exact Cauchy/Hermite identity at a valid parameter would reject the corresponding lemma. None found in tested finite ranges.",
+    "A missing recursive precision/description-cost invariant would block use of the full algorithm, regardless of these finite checks."
+  ],
+  "already_upstream": [
+    "Exact #k-SAT, not merely decision SAT, is explicitly claimed. A counting extension cannot be claimed from the title alone.",
+    "The published interface already treats Boolean tensor networks over modular polynomial rings. Relabeling it as weighted tensor counting is not new."
+  ]
+}

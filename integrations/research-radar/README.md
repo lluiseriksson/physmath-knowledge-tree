@@ -113,3 +113,5 @@ Latest conditional computation: [weighted observable gap](notes/2026-10-27-weigh
 Research obstacle: [three-color lift loses unimodularity](notes/2026-10-27-tu-jensen-lift-obstruction.md); no Jensen solution or manuscript score.
 
 New analytic checkpoint: [midpoint equality rigidity](notes/2026-10-27-midpoint-equality-rigidity.md), with the rational-box extension refuted and the integer-box theorem retained. The combined manuscript awaits full review; no score or formal confidence upgrade.
+
+New directed reading: [exact-counting kernel checks](notes/2026-10-27-exact-counting-kernel-checks.md), with selected source hypotheses,5,220 exact valuation nodes and1,168 shifted-polynomial controls. The full claimed algorithm remains unaudited; no discovery, new paper, grade or graph confidence promotion is claimed.
