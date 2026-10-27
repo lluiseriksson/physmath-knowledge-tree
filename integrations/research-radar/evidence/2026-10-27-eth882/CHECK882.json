@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-27T07:17:54.195110+00:00",
+  "passed": true,
+  "cases": 336,
+  "crossing_entry_comparisons": 1536,
+  "maximum_retained_exponent_tuples": 164,
+  "seconds": 0.9978786000283435,
+  "script_sha256": "80437081f832b666a6b1e6f82a662949acf196faf21252ee071cf0b84622d06d",
+  "source_commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+  "scope": "One packet, two groups, scalar integer interpolation values, a=1,2, p=2..5, arbitrary seeded group tensors, full and sparse ports; direct contraction compared to separately summed child contractions.",
+  "not_verified": [
+    "full recursive algorithm",
+    "extension-field interpolation",
+    "tapered recovery composition",
+    "asymptotic parameter inequalities",
+    "full source theorem",
+    "novelty or AIRR importance"
+  ],
+  "campaign_status": "bounded audit log, not Research Capsule or complete reproducible algorithm"
+}
