@@ -1,0 +1,22 @@
+{
+  "scope": "Two fail-closed package checks only; no mathematical proof, score, full campaign or capsule claim",
+  "cases": [
+    {
+      "case": "tampered-engine",
+      "exit_code": 2,
+      "stdout": "",
+      "stderr": "ValueError: Input hash mismatch before execution: inputs/interval778.py\n",
+      "no_result_directory": true,
+      "engine_sha256": "fa36351a8f51540be481a61c18f896ff0a078c9e8f5e65106df08a257729bdb5"
+    },
+    {
+      "case": "wrong-manifest-anchor",
+      "exit_code": 2,
+      "stdout": "",
+      "stderr": "ValueError: Manifest hash mismatch before numerical import\n",
+      "no_result_directory": true,
+      "engine_sha256": "4fa44ba0a03659707abc68a9ec0391c7375967aec7b69d0ebae533d1e38235d2"
+    }
+  ],
+  "test_code_sha256": "bb31366084db3c91a3eb3d1fce4d6210e8fbaf15ce441b58ec273acee7029047"
+}

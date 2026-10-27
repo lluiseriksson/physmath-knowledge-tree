@@ -1,0 +1,324 @@
+{
+  "utc": "2026-10-27T01:24:22.460079+00:00",
+  "scope": "Directed13-endpoint primary-source inventory refresh, never exhaustive. No foreign corpus saved; metadata is not proof coverage.",
+  "sources": [
+    {
+      "name": "openai_math",
+      "url": "https://api.github.com/repos/openai/math/commits/HEAD",
+      "utc": "2026-10-27T01:24:19.360757+00:00",
+      "depth": "inventoried/metadata refreshed only; no new abstract, theorem or proof audit",
+      "http": 200,
+      "bytes": 1251976,
+      "sha256": "5a8e78b28a7714f01dc8964578e9f0ec51e2cdf074345ecc2dcaf047d4a3aa0a",
+      "commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+      "commit_date": "2026-10-26T21:18:03Z",
+      "same_commit": true,
+      "same_response_bytes": true
+    },
+    {
+      "name": "deepmind_formal",
+      "url": "https://api.github.com/repos/google-deepmind/formal-conjectures/commits/HEAD",
+      "utc": "2026-10-27T01:24:19.361757+00:00",
+      "depth": "inventoried/metadata refreshed only; no new abstract, theorem or proof audit",
+      "http": 200,
+      "bytes": 12128,
+      "sha256": "443fb766e16f2676dc3926107e821d3e483ed810feba546846c2e8553989469c",
+      "commit": "f153efa8fdc078131e214547781d631e2d257daf",
+      "commit_date": "2026-10-26T17:02:36Z",
+      "same_commit": true,
+      "same_response_bytes": true
+    },
+    {
+      "name": "owner_public_repos",
+      "url": "https://api.github.com/users/lluiseriksson/repos?per_page=100&sort=updated&type=owner",
+      "utc": "2026-10-27T01:24:19.362758+00:00",
+      "depth": "inventoried/metadata refreshed only; no new abstract, theorem or proof audit",
+      "http": 200,
+      "bytes": 212804,
+      "sha256": "1199700d7691d6af6d73b9daabfa5f67796d6770930ca45a14c84a3a0817a4f7",
+      "repositories": [
+        {
+          "name": "physmath-knowledge-tree",
+          "pushed_at": "2026-10-27T00:51:19Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "reset-minimax-lab",
+          "pushed_at": "2026-10-24T08:30:44Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "reversible-branch-lab",
+          "pushed_at": "2026-10-24T04:25:22Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "THE-ERIKSSON-PROGRAMME",
+          "pushed_at": "2026-10-15T02:41:50Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "additive-gkls-leaky-boundary",
+          "pushed_at": "2026-09-09T18:44:21Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "many-body-filling-maintenance-floor",
+          "pushed_at": "2026-09-09T18:44:10Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lean-ym-flow",
+          "pushed_at": "2026-10-26T23:56:06Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lean-transfer-matrix",
+          "pushed_at": "2026-10-27T00:30:18Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "aqft-split-inclusion-series",
+          "pushed_at": "2026-09-09T18:44:05Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "hodge-conjecture-research-front",
+          "pushed_at": "2026-09-09T18:43:54Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "support-leakage-rapid-maintenance",
+          "pushed_at": "2026-09-09T18:44:15Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "finite-sample-spectral-certificates",
+          "pushed_at": "2026-09-09T18:43:13Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "ym-audit",
+          "pushed_at": "2026-09-09T18:44:46Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "riemann-resolvent-programme",
+          "pushed_at": "2026-09-09T18:43:04Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "riemann-prime-resolvent",
+          "pushed_at": "2026-10-01T11:19:47Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lean-2d-yang-mills",
+          "pushed_at": "2026-10-26T23:56:03Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "physmath-lean-lemmas",
+          "pushed_at": "2026-09-09T18:44:26Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "point-span-tangent-absorption",
+          "pushed_at": "2026-09-09T18:44:00Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "ym-mass-gap-lean-verification",
+          "pushed_at": "2026-09-09T18:44:42Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "mathlib-plane-tree-catalan",
+          "pushed_at": "2026-09-09T18:44:32Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lean-connes-kreimer",
+          "pushed_at": "2026-10-26T23:08:13Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "p-vs-np-research-front",
+          "pushed_at": "2026-09-09T18:43:50Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lean-gaussian-field",
+          "pushed_at": "2026-10-27T00:34:11Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "ym-lattice-numerics",
+          "pushed_at": "2026-10-26T23:52:27Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lean-os-positivity",
+          "pushed_at": "2026-10-26T23:54:33Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "hausdorff-certificates",
+          "pushed_at": "2026-09-09T18:43:09Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lean-zero-free-regions",
+          "pushed_at": "2026-10-27T00:34:31Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "irynayoutube",
+          "pushed_at": "2026-08-26T05:14:07Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "mathlib4",
+          "pushed_at": "2026-08-07T17:07:12Z",
+          "default_branch": "master"
+        },
+        {
+          "name": "rooted-tree-catalan-closure",
+          "pushed_at": "2026-07-02T22:12:17Z",
+          "default_branch": "master"
+        },
+        {
+          "name": "kinshard-arena",
+          "pushed_at": "2026-06-27T09:27:50Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lean-rooted-tree-polymer-expansion",
+          "pushed_at": "2026-06-23T19:50:45Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "quiz-del-cuento",
+          "pushed_at": "2026-05-20T19:14:28Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "championsleaguesim",
+          "pushed_at": "2025-03-19T16:20:48Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "neuralsnakes",
+          "pushed_at": "2025-03-05T11:52:26Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "pixelfootball",
+          "pushed_at": "2025-03-04T22:41:34Z",
+          "default_branch": "main"
+        }
+      ],
+      "same_response_bytes": false
+    },
+    {
+      "name": "anthropic_science",
+      "url": "https://www.anthropic.com/science",
+      "utc": "2026-10-27T01:24:19.362758+00:00",
+      "depth": "inventoried/metadata refreshed only; no new abstract, theorem or proof audit",
+      "http": 200,
+      "bytes": 385762,
+      "sha256": "9ee81945831e28605dbb04318b910b7d63a9c2dc708afdf16a026b57b4253a9f",
+      "same_response_bytes": false
+    },
+    {
+      "name": "deepmind_research",
+      "url": "https://deepmind.google/research/",
+      "utc": "2026-10-27T01:24:19.363758+00:00",
+      "depth": "inventoried/metadata refreshed only; no new abstract, theorem or proof audit",
+      "http": 200,
+      "bytes": 209566,
+      "sha256": "3fc2f30b33ce173f7ddbd385a4adb478b11a1031ed7a2775b883dd2ec87b1367",
+      "same_response_bytes": false
+    },
+    {
+      "name": "airr_author",
+      "url": "https://airr.science/authors/lluis-eriksson/",
+      "utc": "2026-10-27T01:24:19.363758+00:00",
+      "depth": "inventoried/metadata refreshed only; no new abstract, theorem or proof audit",
+      "http": 200,
+      "bytes": 574601,
+      "sha256": "17503c8ecfd3ff4f26194395b8c0f8977d0b1498b984bd544753c0e4239ed880",
+      "same_response_bytes": true
+    },
+    {
+      "name": "aivixra_author",
+      "url": "https://www.ai.vixra.org/author/lluis_eriksson",
+      "utc": "2026-10-27T01:24:20.112216+00:00",
+      "depth": "inventoried/metadata refreshed only; no new abstract, theorem or proof audit",
+      "http": 200,
+      "bytes": 70178,
+      "sha256": "9cfc2018ff38a1f839e7c86f3d743cdbefb2b58b46c47bab6b4dd5af36fb8b7e",
+      "same_response_bytes": true
+    },
+    {
+      "name": "arxiv_thermal",
+      "url": "https://arxiv.org/abs/2204.13129",
+      "utc": "2026-10-27T01:24:20.318433+00:00",
+      "depth": "inventoried/metadata refreshed only; no new abstract, theorem or proof audit",
+      "http": 200,
+      "bytes": 45746,
+      "sha256": "ea63ad2e69947a5bea0e15e2e4b0a7a94ddf15f7e3a99d546fc59ec9af278ad5",
+      "same_response_bytes": true
+    },
+    {
+      "name": "new_nongaussian_thermal",
+      "url": "https://arxiv.org/abs/2607.27449v1",
+      "utc": "2026-10-27T01:24:20.323944+00:00",
+      "depth": "inventoried/metadata refreshed only; no new abstract, theorem or proof audit",
+      "http": 200,
+      "bytes": 42917,
+      "sha256": "6df1742aae8ac5537f068fe7184654fbe78bf230620b04a90830d5192560376b",
+      "same_response_bytes": true
+    },
+    {
+      "name": "gram_original",
+      "url": "https://arxiv.org/abs/1004.4782v1",
+      "utc": "2026-10-27T01:24:20.557293+00:00",
+      "depth": "inventoried/metadata refreshed only; no new abstract, theorem or proof audit",
+      "http": 200,
+      "bytes": 41481,
+      "sha256": "0cdf25c7688ca8f742af7bf0aec811f72e3f795c07898c53c0feff6d2c78e222",
+      "same_response_bytes": true
+    },
+    {
+      "name": "gaussian_capacity_frontier",
+      "url": "https://arxiv.org/abs/2610.22308v1",
+      "utc": "2026-10-27T01:24:20.636460+00:00",
+      "depth": "inventoried/metadata refreshed only; no new abstract, theorem or proof audit",
+      "http": 200,
+      "bytes": 43865,
+      "sha256": "986de3be77019b159affc0aff4174d5dbe156bd7b576c796b29df54d128913a4",
+      "same_response_bytes": true
+    },
+    {
+      "name": "gaussian_review2012",
+      "url": "https://arxiv.org/html/1202.6480v1",
+      "utc": "2026-10-27T01:24:20.636460+00:00",
+      "depth": "inventoried/metadata refreshed only; no new abstract, theorem or proof audit",
+      "http": 200,
+      "bytes": 1005473,
+      "sha256": "cc9f53f0014f166d95273538a1cfa5a19d78b8b275cca1f69bc8b5df737725e1",
+      "same_response_bytes": true
+    },
+    {
+      "name": "compound_coding2009",
+      "url": "https://arxiv.org/html/0710.3027v2",
+      "utc": "2026-10-27T01:24:20.692006+00:00",
+      "depth": "inventoried/metadata refreshed only; no new abstract, theorem or proof audit",
+      "http": 200,
+      "bytes": 825383,
+      "sha256": "c2a9b2794b335ab4af34b134b19a3d84496cf86dc3b0626e53c2cecc172eae10",
+      "same_response_bytes": true
+    }
+  ]
+}

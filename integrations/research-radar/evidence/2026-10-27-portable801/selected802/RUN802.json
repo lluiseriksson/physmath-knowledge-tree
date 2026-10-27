@@ -1,0 +1,106 @@
+{
+  "status": "four selected segments and scalar/tail checks pass with manifest-bound loaded bytes; NOT full320 replay",
+  "utc": "2026-10-27T01:25:10.290150+00:00",
+  "input_manifest_sha256": "2434e974c96f1018dc4082a05a2ed5840fbbe3d87a459982c60b8719c2ef1f84",
+  "script_sha256": "90b2ba02722c9c4b843491b6ae2efade558b0fb322651ad0f4eaea97222befd4",
+  "source_region_sha256": "0b438a21cf64d164da6e0b8267a89cf8fc62052639f94f047325680d1335bef5",
+  "binding_at_load": [
+    {
+      "relative_path": "inputs/CERTIFICATE779.json",
+      "sha256": "9b7374901ac3ec6a2d4870d3dcaaab8e07c61a718ef9fe8be287e3f8d209362b",
+      "loaded_from_verified_buffer": true
+    },
+    {
+      "relative_path": "inputs/FIT794.json",
+      "sha256": "0c8d051bc55023c42fa1165a49defb129dddbbb4f98cf9f1a978c3cce34ad538",
+      "loaded_from_verified_buffer": true
+    },
+    {
+      "relative_path": "inputs/interval778.py",
+      "sha256": "4fa44ba0a03659707abc68a9ec0391c7375967aec7b69d0ebae533d1e38235d2",
+      "loaded_from_verified_buffer": true
+    },
+    {
+      "relative_path": "inputs/SOURCE795.py",
+      "sha256": "198b175753f4a91c20311e0360385c0b00dc2ee1a182ab79af89bc541ed4b073",
+      "loaded_from_verified_buffer": true
+    }
+  ],
+  "bindings_unchanged_after_run": true,
+  "loaded_engine_T": 600,
+  "precision_bits": 256,
+  "candidate_guard": true,
+  "segments": [
+    {
+      "left": "0",
+      "width": "1/2",
+      "n": 64,
+      "H_interpolated": true,
+      "polynomial_l1": "[1.74930388107860797338834621909e-7 +/- 2.57e-37]",
+      "analytic_remainder": "[2.59330670662041903658417272046e-11 +/- 4.60e-41]",
+      "tail": "[1.09546370887903365464199008966e-61 +/- 3.95e-91]",
+      "bound": "[1.74956321174927001529200463636e-7 +/- 4.62e-37]",
+      "proved_below_eps": true
+    },
+    {
+      "left": "159/2",
+      "width": "1/2",
+      "n": 64,
+      "H_interpolated": true,
+      "polynomial_l1": "[3.74207380260572954631672963836e-8 +/- 4.76e-38]",
+      "analytic_remainder": "[1.35147821712172016971068288272e-16 +/- 2.04e-46]",
+      "tail": "[1.36082448307954491259874545300e-63 +/- 1.31e-93]",
+      "bound": "[3.74207381612051171753393133547e-8 +/- 1.59e-38]",
+      "proved_below_eps": true
+    },
+    {
+      "left": "80",
+      "width": "2",
+      "n": 96,
+      "H_interpolated": false,
+      "polynomial_l1": "[4.06483094747128599561953252659e-8 +/- 1.42e-38]",
+      "analytic_remainder": "[1.21584127201515309509521655558e-25 +/- 1.49e-55]",
+      "tail": "[1.42190852262755776541554992589e-7 +/- 2.42e-37]",
+      "bound": "[1.82839161737468636619334445057e-7 +/- 3.58e-37]",
+      "proved_below_eps": true
+    },
+    {
+      "left": "398",
+      "width": "2",
+      "n": 96,
+      "H_interpolated": false,
+      "polynomial_l1": "[1.07317798055080553399120964653e-14 +/- 4.25e-45]",
+      "analytic_remainder": "[8.24804287603031761719495785266e-40 +/- 1.59e-70]",
+      "tail": "[1.25104816256474808870732594217e-30 +/- 2.38e-60]",
+      "bound": "[1.07317798055080565909602598549e-14 +/- 4.34e-44]",
+      "proved_below_eps": true
+    }
+  ],
+  "tail400": "[2.33129612361563206571639235720449106199319569e-13 +/- 1.11e-58]",
+  "M": "[145166731137897378701.976141026881208750101483 +/- 4.62e-26]",
+  "stable_conditional_gap_expression": "[6.32019755555555555555555555555555555555555555e-52 +/- 4.06e-97]",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "python_flint": "0.9.0",
+  "runtime_file_hashes": [
+    {
+      "file": "python.exe",
+      "sha256": "7a4102b91959bb234507850ea584e1d31d300a6831b171e4aadc59ff592f0234"
+    },
+    {
+      "file": "__init__.py",
+      "sha256": "51b38d54b85e213a7ae1e801f9d6e9fec6e31aa25d28f57732df12dc0f1d0948"
+    },
+    {
+      "file": "arb.pyd",
+      "sha256": "8216e9ab3fd7358234bbc3aec620998bf4a637ed93baadb2acfabd0a82428360"
+    }
+  ],
+  "no_claims": [
+    "full320 replay",
+    "retroactive runtime attestation for795",
+    "independent AI or human review",
+    "Lean proof",
+    "new paper or score",
+    "Research Capsule readiness"
+  ]
+}
