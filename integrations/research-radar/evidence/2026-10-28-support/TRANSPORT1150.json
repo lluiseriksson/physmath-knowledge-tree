@@ -1,0 +1,402 @@
+{
+  "utc": "2026-10-27T23:38:23.183480+00:00",
+  "scope": "56 original own files byte-exact in ORIGINAL1150.zip; expanded text transport hashes declared separately; no foreign fulltext",
+  "files": [
+    {
+      "path": "audit1136/AMBIENT1136.json",
+      "sha256": "514a0d988f4e3d5eb75797019f57fa65e9f958cd3102623ba25176208ace4f72",
+      "bytes": 33091,
+      "expanded_sha256": "b5883a1086420540b1035af66e362e67134fb6896bf252c986a549f5d71aa01a",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/ambient1136.py",
+      "sha256": "e39666b525a811292b76bc44a223d27f4e52739ed14e93adfc83183d93aed4f2",
+      "bytes": 4897,
+      "expanded_sha256": "e39666b525a811292b76bc44a223d27f4e52739ed14e93adfc83183d93aed4f2",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/ambient1136_initial_reconstructed.py.txt",
+      "sha256": "27c1b3fefd7166d6ca2e241959a9afd95010ba5364adfe7dc947356a47fb0bf8",
+      "bytes": 4959,
+      "expanded_sha256": "8375d1ea7807b70f87a4e07de7a432ad5d6bd5970310943ed77d699e3662b81c",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/AMBIENT_FAILURE1136.json",
+      "sha256": "4394fc02f1e410d7eb58840d7190bad9eb3031db4269b51748092418dc2502f3",
+      "bytes": 20988,
+      "expanded_sha256": "7604624352aae65276554e2f27de140c874866441f1498c46b4d5197ec6ebdfd",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/archive1136.py",
+      "sha256": "56ffbe97710c3e6772aafe7beddd202074b6550d197ddbadddae33c61c94d6c6",
+      "bytes": 3990,
+      "expanded_sha256": "56ffbe97710c3e6772aafe7beddd202074b6550d197ddbadddae33c61c94d6c6",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/AUDIT1136.txt",
+      "sha256": "dcf6b8d336e64b4dd8e7eba8a69d7eebabfd1462751aee1ce1258a8fc1b78658",
+      "bytes": 25623,
+      "expanded_sha256": "dcf6b8d336e64b4dd8e7eba8a69d7eebabfd1462751aee1ce1258a8fc1b78658",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/CLOSURE1136.json",
+      "sha256": "1e6d982c083292c1f582d977128538175c5c6124bba7b37d65e788373d74ec3e",
+      "bytes": 954,
+      "expanded_sha256": "1e6d982c083292c1f582d977128538175c5c6124bba7b37d65e788373d74ec3e",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/CONTROLS1136.json",
+      "sha256": "80ed95ad3c6e3c6a9012b3e6ca69610c34aaa59d44aefaed8cfc8de574188a58",
+      "bytes": 892,
+      "expanded_sha256": "567b0f54f4aad85c0809db1267fa8a1392d03423872dbb3fc202b0543cda16f8",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/EARLY_ERRORS1136.json",
+      "sha256": "0d86153b1be9fea06f38e111c600138f6f6eb029a16ec7679bb6c331fa6f26ca",
+      "bytes": 1777,
+      "expanded_sha256": "c41f74dd62455f3144608bd74ab1bf93a351504e4ede7e51b5f2d01805888684",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/EXACT1136.json",
+      "sha256": "cc4e96e14387badcbe67d0bc73d945538c3aedc1d1b4aaa2baf5232c5813896e",
+      "bytes": 5503,
+      "expanded_sha256": "c82125c5d5e18665c8403687d429e2c02618a6b932c6c437fc006630d8909e6c",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/exact1136.py",
+      "sha256": "4b8afb6db8a7a15fd58014303a314eddaa0397b08d141b203c177d60f953539a",
+      "bytes": 2734,
+      "expanded_sha256": "4b8afb6db8a7a15fd58014303a314eddaa0397b08d141b203c177d60f953539a",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/INCIDENTS1136.json",
+      "sha256": "122fbf62cdd1a4e99e8641a02722aae03432610a4af2f15f8e32c54a62f5df06",
+      "bytes": 2333,
+      "expanded_sha256": "6da065528990c8127aaead50ef9a7ad79771c97bfdae911058d99a0da5d54f23",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/INPUT_FINAL1136.json",
+      "sha256": "b44baa6d302afee2f692c8a05048faa4ceefd8c8c94739f3c2bcecc09c2a9df6",
+      "bytes": 1296,
+      "expanded_sha256": "754ade762b0c9b9d8c338100f4623cdad059154320b804555e6e006f78a4ed44",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/INPUT_INITIAL1136.json",
+      "sha256": "b80076b6f29e1ba0691ce56413e2d85e268c5ef7129d64364a276f475bbafdef",
+      "bytes": 1385,
+      "expanded_sha256": "ddae815b9344575ab25915be9e10963d2820e14aa3e19d06eaca935e1dceeb72",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/integer_arithmetic1136.py",
+      "sha256": "6888e17a28c57aee3a7d99f21c10aad3ccc2115493ced999fcb97fd097fbb853",
+      "bytes": 2784,
+      "expanded_sha256": "c71d477168153264c0539629513f2f99180d157e4065f2452fbac8675df4a1b5",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/INTERVAL1136.json",
+      "sha256": "1685f86532d5c7aa2cc2b2fdaab12960f08a8eb67674571fc1717a1fbf2db5a2",
+      "bytes": 43966,
+      "expanded_sha256": "7ee6f75e4c8f4f109f401b974f182ca18c1c32e8242400923cc560d93b4f4ad3",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/interval1136.py",
+      "sha256": "57a6e858881f98436cb72da69606f81aecf7532e529c9bde2fcde2b9414736fb",
+      "bytes": 2136,
+      "expanded_sha256": "57a6e858881f98436cb72da69606f81aecf7532e529c9bde2fcde2b9414736fb",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/MANIFEST1136.json",
+      "sha256": "ac98d33d38bd48aa5fcedc220b5a3643f8d4ca5b1d4806ae6b8f44863b7f0929",
+      "bytes": 8097,
+      "expanded_sha256": "30f5d079d30347ba063ed3db47f46763811499d77a49a5abd61e8695a6bde661",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/primary1136.py",
+      "sha256": "1c481039ceab28bd31e60ea2cbe824511f62be0089775c5256f5e9307ed55507",
+      "bytes": 1633,
+      "expanded_sha256": "b704f686eaa06fa0f0ed48baf00ca584e2c6889dbbdeef3d9afa2a5e7d8b56a2",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/primary1136_first.py.txt",
+      "sha256": "7a6afb5c46f04f50985124c6f54875ae57bfad2ff6169066b46b708bd4c1aa7c",
+      "bytes": 1466,
+      "expanded_sha256": "7a6afb5c46f04f50985124c6f54875ae57bfad2ff6169066b46b708bd4c1aa7c",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/PRIMARY_buscemi_000711780758.json",
+      "sha256": "f5beeafb6fa642fae9de0308469f8c2619c9a87eb6d0dc8f3839f1dc8a47cbd2",
+      "bytes": 313,
+      "expanded_sha256": "9aceec40d7a1223797a58f3728f78b6f73a1857125de1305f33ba0a9bb64d937",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/PRIMARY_buscemi_000726524366.json",
+      "sha256": "2f83fc9376a60c50daad4c74842c200339d361f99722443530a4842368126445",
+      "bytes": 288,
+      "expanded_sha256": "fc15151bc3d35328c2495ead3eae90c7e2b6cfacbfb068a1e0032f4ce82d3165",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/PRIMARY_cohen_000134294613.json",
+      "sha256": "0e129664607e4c386df8e4cc9414fcbb8c584608274206bb70d2474e54c0eb43",
+      "bytes": 375,
+      "expanded_sha256": "485795c902529821536220d45b193b2e48978156c12ad6e95138874a19f3f8be",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/PRIMARY_cohen_235910982555.json",
+      "sha256": "4e5acb24aea993ea68c9b56ec78da6e3af1733da4908a987ee8c85988132fc50",
+      "bytes": 384,
+      "expanded_sha256": "9b0286de83907d7f69fbf273034da5cba3485517b52db768679621d7ce5dc99e",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/PRIMARY_conditional_235551254761.json",
+      "sha256": "4d665131278122ee434133aa36f04fc93df38ae9d4e031a5e955d04fc04010fc",
+      "bytes": 344,
+      "expanded_sha256": "adc37e2caaadad757e5ed8e98877ad940ba5f0b88de5c45d69336cbca6ee5ce4",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/PRIMARY_conditional_235622163353.json",
+      "sha256": "254fd6ddcbdfcd7928d3c1b022a040cb4ced89a3557b53d9b6cbfd036bca8d72",
+      "bytes": 291,
+      "expanded_sha256": "e7bb45e17a9cf6d366bd50f3c71f8339908e52c3ed400f53ff1bacf26cfcfa35",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/PRIMARY_conditional_235815557950.json",
+      "sha256": "ade2ce34f82c343dfbbeb7cdf71632be5b835fe7681ad2b15fbe303f1a172e6c",
+      "bytes": 298,
+      "expanded_sha256": "b3ec822cc6d68ea3e66db422dff46169c6ac032f2e215a3ffff4b58fcab76d20",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/PRIMARY_conditional_235909867321.json",
+      "sha256": "a56a69476324fe60c5858d9ffb9f0fe471d01c73b49e6c2d92807a7eec8fff13",
+      "bytes": 298,
+      "expanded_sha256": "acd4e0ee2ee6d5ef3092c31edf4f2ba96f5dbc8ae46eed951702f6afbcb59cc2",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/PRIMARY_doeblin_235552356657.json",
+      "sha256": "99dca36037959eaff33abd672216a41172d6f265c69ec221a9a4f6bd5a104bd8",
+      "bytes": 355,
+      "expanded_sha256": "3c964e0b5432e4ce847eadad863f00de2027d67c0c6939819eefe2d86f9e8173",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/PRIMARY_doeblin_235622926054.json",
+      "sha256": "17a5a9c67540a2b6d1bbcaf2dbd5d4f650f361f090dd8218f940b279e94d04bd",
+      "bytes": 301,
+      "expanded_sha256": "031bb6eb1e053a1db780bad8825724bbe06b4e51298d776bb2621e849cae12be",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/PRIMARY_doeblin_235816201783.json",
+      "sha256": "2608faebef8d18517c36ea611a23a92bd5a3370a3fc9d5dfb5ecda026ecf7659",
+      "bytes": 292,
+      "expanded_sha256": "49825302ca8751de8dce77ef09ea358324c022f328aff342d07253fa6888046b",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/PRIMARY_multiway_235817250197.json",
+      "sha256": "452ae5ea9362b0158811ebf622fd45c78c6df7d4481598aba72286939cf03d9a",
+      "bytes": 288,
+      "expanded_sha256": "356e402b15d83389b7ced3b3de9034f04fdcf81d644d07c28813f0a9151dfc61",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/PRIMARY_orders_000712224432.json",
+      "sha256": "f23e6ead3f04d9c193fa24a2df5f234bfe7cd0ebbd7ca2b5911ad5c6f50badd4",
+      "bytes": 312,
+      "expanded_sha256": "85b092be315cb0e6d31c5c45e23518f61b82a78892160de162bc5146264ace7a",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/PRIMARY_orders_000727083763.json",
+      "sha256": "1dada125bdb914aa2464db483050bb250c52cbc6e1970d43e95d7d7febc9bbaa",
+      "bytes": 287,
+      "expanded_sha256": "b0e2604fe334233956a7076240fe563febe38dadc27614dc69fb1e33bfc135ad",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/PROVENANCE1136.json",
+      "sha256": "fcc4076db664de5c41cd26b0c7022a5adb16bd5da63c111bfb1819803c7e4761",
+      "bytes": 1473,
+      "expanded_sha256": "5b7c4bf7ed33a77839ad1c34ce08937788b398f64b9e0bc5f117f657109a22e0",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/READINGS1136.json",
+      "sha256": "8f31c2becb3cf48e01dc10f4f258c6b8733c18e6aba06f2ca965cfb965a2569f",
+      "bytes": 5132,
+      "expanded_sha256": "a57fe00ed75772ea904f40676df7153d1f4e1d8abeb60e6e683745d7835cde47",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/replay-corrected/check1134.py",
+      "sha256": "c167f22895b9042da9257417caabeb5002f936959a2758991e175b4b22ec0087",
+      "bytes": 3713,
+      "expanded_sha256": "fbfc85b970b9ea313267f22c302f565c6b42ec860ea0daf3cf64dc88092c5ed3",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/replay-corrected/CONTROL1134.json",
+      "sha256": "d762d11b584c4aed0442ae5dab1aecce6025e58b61d807f27f049bb4c35115df",
+      "bytes": 13717,
+      "expanded_sha256": "204e7cee3fd1e9711c935e8390b16350ba5c270714cc47cca4b621b32c0322df",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/replay-corrected/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "expanded_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/replay-corrected/stdout.txt",
+      "sha256": "1fe33e2c7a006e6b3fc34c5e733daa234af6d36b20d9e1b76d3c21d0d5248a1c",
+      "bytes": 912,
+      "expanded_sha256": "6cbea55ca0251c2aa75fd3aade894c7ac0e20254e9009b838e49727950d6ad3c",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/replay-first/check1134_first.py",
+      "sha256": "334366e52fd44bd9e4a4b4966bb44b2c0c0c88529d8f0eed315797696114af3e",
+      "bytes": 3249,
+      "expanded_sha256": "7cfd83d525d6ff6be0f1a33d6198b3e20956670c78b42b16ce765bc0118f8fbf",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/replay-first/CONTROL1134.json",
+      "sha256": "4933989961d39e29e796783d2339b44e8944c18a565ef1b3decfedac97f744ec",
+      "bytes": 13340,
+      "expanded_sha256": "4b95fe9246695203bd67461711b487fae604b1db13c2b63463df05130d69cd30",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/replay-first/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "expanded_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/replay-first/stdout.txt",
+      "sha256": "5ab019492fa193220bb3e0b8b3019e668da3a201cbfba6eeb2558e5b5a7eb11c",
+      "bytes": 912,
+      "expanded_sha256": "38e5201b81db324cfa96e68e8e303c4423724e4f6f7586e7beea87810c32e7ff",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/REPLAY1136.json",
+      "sha256": "c5c1d0f713227157022986d168fb023622657778686a75c0e32841d78db3b696",
+      "bytes": 405,
+      "expanded_sha256": "48cbf60dc378228ced48f9e78956dfba1bdcefd102baaeff30812717f77f7496",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/replay1136.py",
+      "sha256": "6b67e5842f5e657ab2fc24f643a57021471b08da4e683421169b7a5330251ad9",
+      "bytes": 1089,
+      "expanded_sha256": "6b67e5842f5e657ab2fc24f643a57021471b08da4e683421169b7a5330251ad9",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/SHA256SUMS1136.txt",
+      "sha256": "52a8c9f83bd80f79c8f0586cf30356720bcf2ab562604fd6204d9082ec65f5c9",
+      "bytes": 4341,
+      "expanded_sha256": "b61fd30a91ab681a743657a300b1d54b07e37689f33e098973f6404e34c7c21a",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/verdict1136.json",
+      "sha256": "223666284b6102644eb2d439b8e3178209319a90f22241665f59aa88a2e0bf86",
+      "bytes": 4912,
+      "expanded_sha256": "63bcf6a7f66250800fe251231d6751dcb428e1f935ce698c964823f79208a06f",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "audit1136/verify1136.py",
+      "sha256": "76650a06518b366f77696f646d71c715c07f68f575596572ad772a196bde2c06",
+      "bytes": 1129,
+      "expanded_sha256": "76650a06518b366f77696f646d71c715c07f68f575596572ad772a196bde2c06",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "candidate1134/check1134.py",
+      "sha256": "c167f22895b9042da9257417caabeb5002f936959a2758991e175b4b22ec0087",
+      "bytes": 3713,
+      "expanded_sha256": "fbfc85b970b9ea313267f22c302f565c6b42ec860ea0daf3cf64dc88092c5ed3",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "candidate1134/check1134_first.py",
+      "sha256": "334366e52fd44bd9e4a4b4966bb44b2c0c0c88529d8f0eed315797696114af3e",
+      "bytes": 3249,
+      "expanded_sha256": "7cfd83d525d6ff6be0f1a33d6198b3e20956670c78b42b16ce765bc0118f8fbf",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "candidate1134/CONTROL-FIRST1134.json",
+      "sha256": "8a987f9c27f6784f5b4f2161cf92b1a420fd97bc729120a4ed4ace4676ec2510",
+      "bytes": 13340,
+      "expanded_sha256": "0fc6db09337773fc1ec6b15c786058229a292c9550435b7b965fcd3bfb695871",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "candidate1134/CONTROL1134.json",
+      "sha256": "3273dbdec40adc0af8a9c161371b10220ebd2c50b3bd5ac78c048dcd44c91aa1",
+      "bytes": 13717,
+      "expanded_sha256": "87d73f08a69fbd28bbd3d5d89f5bf2058ca1e60ae219f28ab0aa26f27008b81c",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "candidate1134/MANIFEST1134.json",
+      "sha256": "d0484d62d5e8f4de29736ad3734e2f9271d0e2c1d9026c9bdee4e3ec340fd67b",
+      "bytes": 1052,
+      "expanded_sha256": "3162253103facf6b996e86d19b83f449e7b3b2afb8c5fb710953efec3cedd57a",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "candidate1134/PROOF1134.txt",
+      "sha256": "7eed813d8791980cd1b7199d13ddd691e80c7a0c098b2b41887930c100e259a4",
+      "bytes": 7842,
+      "expanded_sha256": "db8cfe8d3d45302ec0409aaf826c41e8fd2311d9d6b29ef38cd394467db67361",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    },
+    {
+      "path": "candidate1134/SOURCES1134.json",
+      "sha256": "893c90d4d2588e08abe8c6a9808e4baeb286d143268b9ea1de45b3b7bc7ed3d7",
+      "bytes": 1489,
+      "expanded_sha256": "6849a056651ff0ba3c1523b79bc4df3253ffbbbd3acfe29d3f561a4db2667bcd",
+      "expanded_transport": "LF, trailing whitespace removed, final newline when nonempty; no scientific content changes"
+    }
+  ],
+  "scientific_grade": null,
+  "formal_promotion": false,
+  "audit_is_not_full_manuscript_review": true,
+  "original_zip_sha256": "88a5717941d570276a6f5be2a57a5cb759f2c8aa739c66e21fd408bf9212cc98"
+}

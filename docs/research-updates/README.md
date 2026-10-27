@@ -59,3 +59,7 @@ All proposed finite investigations remain unexecuted. The exact-rational witness
 - A discovery snippet paired modulated partition functions with arXiv:2609.02257. The canonical record concerns aperiodic random walks, so that attribution was rejected.
 - Catalan-constant headlines were not substituted for Catalan tree enumeration.
 - A September institutional mention of the maximal-tree paper was not treated as a September first submission.
+
+## 28 October: support criterion
+
+The [support-criterion follow-up](../../integrations/research-radar/notes/2026-10-28-support-criterion.md) records the published symmetric-channel review, a technically audited finite classical-channel extension, its failed selectors and regularizers, and a pending full review of the new exact PDF. Historical scores do not grade the extension. No canonical confidence or solved status changes.
