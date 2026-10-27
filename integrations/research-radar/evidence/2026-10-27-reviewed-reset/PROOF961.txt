@@ -1,0 +1,48 @@
+961 — Scope extension note: arbitrary same-reference constrained pairs
+27 October2026. Parent analytic note, not a new manuscript or independent audit.
+No change to frozen957, no score, no priority claim.
+
+Fix N=lambda id+(1-lambda)replacement_tau, a=minEig tau, and one class
+SEP/PPT/unilateral-reduction on A:R. Optimize
+ D(N_R rho||N_R sigma)/D(rho||sigma)
+over rho,sigma BOTH in that class, rho_R=sigma_R,0<D(rho||sigma)<infinity,
+with arbitrary finite R. The proposed exact supremum is the SAME
+ c=lambda²/[lambda+(1-lambda)a].
+
+Upper: for the reduction super-class, both rho,sigma <=I_A tensor common_R,
+so every segment W_t=sigma+t(rho-sigma) has this bound. T=tau tensor common_R
+is >=aW_t. The output of W_t is >=(lambda+(1-lambda)a)W_t, while the
+output tangent is lambda(rho-sigma) because its A-partial trace is zero.
+The BKM order/integral proof939 applies to these two states, not only a
+state/product pair. SEP/PPT are convex subclasses contained in reduction.
+
+Boundary: restrict common_R support if needed, then regularize BOTH states
+with the same faithful product omega. They keep equal R marginals and their
+class. Joint convexity gives D(rho_eps||sigma_eps)<=(1-eps)D(rho||sigma),
+while lower semicontinuity gives the reverse limiting inequality. Therefore
+D(rho_eps||sigma_eps)->D(rho||sigma) for finite denominator. The same argument
+works after the channel; a positive map preserves support inclusion, so the
+output divergence is finite. This avoids falsely assuming arbitrary relative
+entropy is everywhere continuous. Passing inequalities before division is valid.
+
+Lower: take sigma to be the product S and rho=S+eps E in939. Both are explicitly
+separable and have identical R marginals. Here D(rho||sigma) is precisely MI,
+as is the output divergence. The audited finite-MI lower sequence already
+approaches c. Thus the upper/lower classes match for this MORE GENERAL pair
+optimization, without asserting anything for unrestricted entangled pairs.
+
+This is a short corollary of the same proof, not a separate major discovery
+or a reason to transfer a manuscript score. It should be integrated only in a
+substantive next version after958, with the scope of the prior coefficient
+names checked carefully. It must not be sold as a solution of the unrestricted
+complete contraction problem.
+
+Other standard/Petz f-divergences: the known positive-generator resolvent
+representation suggests the same c as an upper bound for faithful pairs,
+since both bases have the required order and the tangent scales by lambda.
+SHARPNESS FOR ALL f IS NOT ESTABLISHED. The939 witness does not automatically
+saturate other monotone metrics. In particular a fixed power-law metric can
+weight both eigenvalues, invalidating an unqualified reuse of its BKM limit.
+An opposite coherence orientation makes the Petz chi-square metric approach
+c, but that special endpoint alone proves no general f theorem. Keep this
+potential extension unclaimed until separately derived/audited.

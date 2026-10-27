@@ -1,0 +1,406 @@
+{
+  "utc": "2026-10-27T12:17:19.357366+00:00",
+  "scope": "Directed primary-source inventory, not an exhaustive sweep. Only selected Trelat--Zuazua results were read; other endpoints are metadata/index observations.",
+  "sources": [
+    {
+      "id": "trelat-zuazua-2609.37077v1",
+      "url": "https://arxiv.org/pdf/2609.37077v1",
+      "utc": "2026-10-27T12:17:14.461019+00:00",
+      "reading_scope": "selected theorem and graded-factorization proof read via web; not full-paper audit",
+      "foreign_body_stored": false,
+      "status": 200,
+      "resolved_url": "https://arxiv.org/pdf/2609.37077v1",
+      "bytes": 628675,
+      "sha256": "5bed7766b7a0d2a97c6cf53ea8122378bcd37dd14b5ab1e47d17d0c219506405"
+    },
+    {
+      "id": "openai-math-head",
+      "url": "https://api.github.com/repos/openai/math/commits?per_page=1",
+      "utc": "2026-10-27T12:17:15.370535+00:00",
+      "reading_scope": "inventoried only",
+      "foreign_body_stored": false,
+      "status": 200,
+      "resolved_url": "https://api.github.com/repos/openai/math/commits?per_page=1",
+      "bytes": 4784,
+      "sha256": "6ca38558150e5428a6ab89342338edbbedc7eb5cf1d5dcc3752dd34b0ad91760",
+      "head": {
+        "sha": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+        "date": "2026-10-26T21:18:03Z"
+      }
+    },
+    {
+      "id": "deepmind-formal-conjectures-head",
+      "url": "https://api.github.com/repos/google-deepmind/formal-conjectures/commits?per_page=1",
+      "utc": "2026-10-27T12:17:15.842270+00:00",
+      "reading_scope": "inventoried only",
+      "foreign_body_stored": false,
+      "status": 200,
+      "resolved_url": "https://api.github.com/repos/google-deepmind/formal-conjectures/commits?per_page=1",
+      "bytes": 8641,
+      "sha256": "35c8d5ede2936394b64fe555e4ee1f44d4d8375e7947129a60c9ed10d8bbae5c",
+      "head": {
+        "sha": "c0c538071a21b36d15f70f5998370eb6a4c31c97",
+        "date": "2026-10-27T09:30:35Z"
+      }
+    },
+    {
+      "id": "lluiseriksson-recent-repositories",
+      "url": "https://api.github.com/users/lluiseriksson/repos?per_page=100&sort=updated",
+      "utc": "2026-10-27T12:17:16.303433+00:00",
+      "reading_scope": "bounded repository metadata inventory only, not exhaustive and no repository code read",
+      "foreign_body_stored": false,
+      "status": 200,
+      "resolved_url": "https://api.github.com/users/lluiseriksson/repos?per_page=100&sort=updated",
+      "bytes": 212804,
+      "sha256": "d8a97dfc9cc7e592d0cf269afbdd2cb49cf03ff3537fb97aaead9bb9b32f85d0",
+      "metadata": [
+        {
+          "name": "physmath-knowledge-tree",
+          "updated_at": "2026-10-27T11:49:28Z",
+          "pushed_at": "2026-10-27T11:49:23Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "reset-minimax-lab",
+          "updated_at": "2026-10-24T08:30:49Z",
+          "pushed_at": "2026-10-24T08:30:44Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "reversible-branch-lab",
+          "updated_at": "2026-10-24T04:25:27Z",
+          "pushed_at": "2026-10-24T04:25:22Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "THE-ERIKSSON-PROGRAMME",
+          "updated_at": "2026-10-15T21:09:58Z",
+          "pushed_at": "2026-10-15T02:41:50Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "additive-gkls-leaky-boundary",
+          "updated_at": "2026-09-09T18:53:15Z",
+          "pushed_at": "2026-09-09T18:44:21Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "many-body-filling-maintenance-floor",
+          "updated_at": "2026-09-09T18:53:04Z",
+          "pushed_at": "2026-09-09T18:44:10Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lean-ym-flow",
+          "updated_at": "2026-09-09T18:51:48Z",
+          "pushed_at": "2026-10-27T10:37:42Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lean-transfer-matrix",
+          "updated_at": "2026-09-09T18:51:45Z",
+          "pushed_at": "2026-10-27T06:21:09Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "aqft-split-inclusion-series",
+          "updated_at": "2026-09-09T18:47:02Z",
+          "pushed_at": "2026-09-09T18:44:05Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "hodge-conjecture-research-front",
+          "updated_at": "2026-09-09T18:46:55Z",
+          "pushed_at": "2026-09-09T18:43:54Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "support-leakage-rapid-maintenance",
+          "updated_at": "2026-09-09T18:46:50Z",
+          "pushed_at": "2026-09-09T18:44:15Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "finite-sample-spectral-certificates",
+          "updated_at": "2026-09-09T18:46:22Z",
+          "pushed_at": "2026-09-09T18:43:13Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "ym-audit",
+          "updated_at": "2026-09-09T18:45:55Z",
+          "pushed_at": "2026-09-09T18:44:46Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "riemann-resolvent-programme",
+          "updated_at": "2026-09-09T18:45:53Z",
+          "pushed_at": "2026-09-09T18:43:04Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "riemann-prime-resolvent",
+          "updated_at": "2026-09-09T18:45:50Z",
+          "pushed_at": "2026-10-01T11:19:47Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lean-2d-yang-mills",
+          "updated_at": "2026-09-09T18:45:16Z",
+          "pushed_at": "2026-10-27T10:38:15Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "physmath-lean-lemmas",
+          "updated_at": "2026-09-09T18:45:13Z",
+          "pushed_at": "2026-09-09T18:44:26Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "point-span-tangent-absorption",
+          "updated_at": "2026-09-09T18:44:48Z",
+          "pushed_at": "2026-09-09T18:44:00Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "ym-mass-gap-lean-verification",
+          "updated_at": "2026-09-09T18:44:47Z",
+          "pushed_at": "2026-09-09T18:44:42Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "mathlib-plane-tree-catalan",
+          "updated_at": "2026-09-09T18:44:36Z",
+          "pushed_at": "2026-09-09T18:44:32Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lean-connes-kreimer",
+          "updated_at": "2026-09-09T18:44:29Z",
+          "pushed_at": "2026-10-27T07:47:22Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "p-vs-np-research-front",
+          "updated_at": "2026-09-09T18:44:04Z",
+          "pushed_at": "2026-09-09T18:43:50Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lean-gaussian-field",
+          "updated_at": "2026-09-09T18:43:47Z",
+          "pushed_at": "2026-10-27T06:24:23Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "ym-lattice-numerics",
+          "updated_at": "2026-09-09T18:43:46Z",
+          "pushed_at": "2026-10-27T10:33:10Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lean-os-positivity",
+          "updated_at": "2026-09-09T18:43:40Z",
+          "pushed_at": "2026-10-27T10:35:32Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "hausdorff-certificates",
+          "updated_at": "2026-09-09T18:43:23Z",
+          "pushed_at": "2026-09-09T18:43:09Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lean-zero-free-regions",
+          "updated_at": "2026-09-09T18:42:40Z",
+          "pushed_at": "2026-10-27T06:24:40Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "irynayoutube",
+          "updated_at": "2026-08-26T05:15:14Z",
+          "pushed_at": "2026-08-26T05:14:07Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "mathlib4",
+          "updated_at": "2026-08-07T16:48:17Z",
+          "pushed_at": "2026-08-07T17:07:12Z",
+          "default_branch": "master"
+        },
+        {
+          "name": "rooted-tree-catalan-closure",
+          "updated_at": "2026-07-02T22:34:02Z",
+          "pushed_at": "2026-07-02T22:12:17Z",
+          "default_branch": "master"
+        },
+        {
+          "name": "kinshard-arena",
+          "updated_at": "2026-06-27T09:27:53Z",
+          "pushed_at": "2026-06-27T09:27:50Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lean-rooted-tree-polymer-expansion",
+          "updated_at": "2026-06-23T19:58:55Z",
+          "pushed_at": "2026-06-23T19:50:45Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "quiz-del-cuento",
+          "updated_at": "2026-05-20T19:14:33Z",
+          "pushed_at": "2026-05-20T19:14:28Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "championsleaguesim",
+          "updated_at": "2025-03-19T16:20:52Z",
+          "pushed_at": "2025-03-19T16:20:48Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "neuralsnakes",
+          "updated_at": "2025-03-05T11:52:29Z",
+          "pushed_at": "2025-03-05T11:52:26Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "pixelfootball",
+          "updated_at": "2025-03-05T09:44:04Z",
+          "pushed_at": "2025-03-04T22:41:34Z",
+          "default_branch": "main"
+        }
+      ],
+      "returned_count": 36
+    },
+    {
+      "id": "anthropic-research",
+      "url": "https://www.anthropic.com/research",
+      "utc": "2026-10-27T12:17:17.182720+00:00",
+      "reading_scope": "index inventoried only; no new paper proof read",
+      "foreign_body_stored": false,
+      "status": 200,
+      "resolved_url": "https://www.anthropic.com/research",
+      "bytes": 417193,
+      "sha256": "b150d8374c57cf65c350a64f2e16553953d224bdde632c2b7c88e1f954497a79",
+      "bounded_links": [
+        "/research/team/alignment",
+        "/research/team/economics",
+        "/research/team/frontier-red-team",
+        "/research/team/interpretability",
+        "/research/team/societal-impacts",
+        "/research/claude-scorpion-toxin-binder-design",
+        "/research/the-missing-map-of-the-sky",
+        "/research/project-swap",
+        "/research/alignment-assessment-ukaisi",
+        "/research/expectations-for-the-future",
+        "/research/employment-at-anthropic",
+        "/research/ai-expectations-gap",
+        "/research/designing-efficient-quantum-circuits",
+        "/research/redesigning-source-control",
+        "/research/investigating-unintended-model-actions",
+        "/research/claude-shaped-science",
+        "/research/what-work-can-robots-do",
+        "/research/your-thoughts-on-ai",
+        "/research/claude-discovers-novel-enzyme-system",
+        "/research/claude-uplifts-biomolecular-modeling",
+        "/research/alignment-assessment-cybersecurity-incidents",
+        "/research/formalizing-fermats-last-theorem",
+        "/research/automated-researchers-mitigate-alignment-failures",
+        "/research/enabling-independent-research",
+        "/research/Claude-accelerates-protein-design",
+        "/research/reviewing-the-evidence-on-worker-retraining-programs",
+        "/research/riemann-zeta"
+      ]
+    },
+    {
+      "id": "airr-papers-index",
+      "url": "https://airr.science/papers/",
+      "utc": "2026-10-27T12:17:17.868962+00:00",
+      "reading_scope": "index inventoried only; no manuscript assessment inferred",
+      "foreign_body_stored": false,
+      "status": 200,
+      "resolved_url": "https://airr.science/papers/",
+      "bytes": 117051,
+      "sha256": "299100c673d9f349c23ffda0c339523536650f351ab0e357a1f2ad08e3820487",
+      "bounded_links": [
+        "https://airr.science/papers/",
+        "/papers/",
+        "/submit/",
+        "/papers/page/2/",
+        "/papers/ARR-2026-5A13QJ5MZ98GWVFB/",
+        "/papers/ARR-2026-5A13QJ5MZ98GWVFB/versions/v1/#cite",
+        "/papers/ARR-2026-0BQ1X4SGFJ8AJ8N1/",
+        "/papers/ARR-2026-0BQ1X4SGFJ8AJ8N1/versions/v2/#cite",
+        "/papers/ARR-2026-2WNM69XY548JHVMC/",
+        "/papers/ARR-2026-2WNM69XY548JHVMC/versions/v3/#cite",
+        "/papers/ARR-2026-71PQXGYGR887JAWR/",
+        "/papers/ARR-2026-71PQXGYGR887JAWR/versions/v3/#cite",
+        "/papers/ARR-2026-5YJX444B6M95ZTG4/",
+        "/papers/ARR-2026-5YJX444B6M95ZTG4/versions/v3/#cite",
+        "/papers/ARR-2026-7SWAJZ0X278GJ9NK/",
+        "/papers/ARR-2026-7SWAJZ0X278GJ9NK/versions/v1/#cite",
+        "/papers/ARR-2026-5K8R1DT82Q95JSHY/",
+        "/papers/ARR-2026-5K8R1DT82Q95JSHY/versions/v1/#cite",
+        "/papers/ARR-2026-16NB5DD5M18TTBET/",
+        "/papers/ARR-2026-16NB5DD5M18TTBET/versions/v1/#cite",
+        "/papers/ARR-2026-0DHZ1VS2VR9K7T4M/",
+        "/papers/ARR-2026-0DHZ1VS2VR9K7T4M/versions/v1/#cite",
+        "/papers/ARR-2026-54DW9GY89V9D8TAB/",
+        "/papers/ARR-2026-54DW9GY89V9D8TAB/versions/v1/#cite",
+        "/papers/ARR-2026-3K6NV742FP8WH8K9/",
+        "/papers/ARR-2026-3K6NV742FP8WH8K9/versions/v1/#cite",
+        "/papers/ARR-2026-737GSKN7CK9V1RVH/",
+        "/papers/ARR-2026-737GSKN7CK9V1RVH/versions/v1/#cite",
+        "/papers/ARR-2026-1QEPAQ29TN8FZRK5/",
+        "/papers/ARR-2026-1QEPAQ29TN8FZRK5/versions/v1/#cite"
+      ]
+    },
+    {
+      "id": "aivixra-author",
+      "url": "https://www.ai.vixra.org/author/lluis_eriksson",
+      "utc": "2026-10-27T12:17:18.333758+00:00",
+      "reading_scope": "author index attempted only",
+      "foreign_body_stored": false,
+      "status": 200,
+      "resolved_url": "https://www.ai.vixra.org/author/lluis_eriksson",
+      "bytes": 70178,
+      "sha256": "9cfc2018ff38a1f839e7c86f3d743cdbefb2b58b46c47bab6b4dd5af36fb8b7e",
+      "bounded_links": [
+        "https://fs23.formsite.com/viXra/ai_submit/index.html",
+        "/abs/2608.0049",
+        "/author/lluis_eriksson",
+        "/abs/2608.0048",
+        "/abs/2608.0047",
+        "/abs/2608.0046",
+        "/abs/2608.0045",
+        "/abs/2608.0042",
+        "/abs/2608.0041",
+        "/abs/2608.0040",
+        "/abs/2608.0039",
+        "/abs/2608.0038",
+        "/abs/2608.0037",
+        "/abs/2608.0036",
+        "/abs/2608.0035",
+        "/abs/2608.0034",
+        "/abs/2608.0033",
+        "/abs/2608.0032",
+        "/abs/2608.0031",
+        "/abs/2608.0029",
+        "/abs/2608.0020",
+        "/abs/2608.0019",
+        "/abs/2608.0018",
+        "/abs/2608.0016",
+        "/abs/2608.0015",
+        "/abs/2608.0013",
+        "/abs/2608.0010",
+        "/abs/2608.0009",
+        "/abs/2608.0008",
+        "/abs/2608.0007"
+      ]
+    }
+  ],
+  "decision": "963 leading Gramian coefficient covered by prior work. Retain information consequence and uniform-rate limitation as an unreviewed application; no separate paper or score.",
+  "frozen957_unchanged": true,
+  "review958_not_fed_author_findings": true
+}

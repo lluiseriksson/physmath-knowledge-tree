@@ -1,0 +1,275 @@
+AUDIT952 — Auditoría adversa por componentes de PROOF950
+27 de octubre de 2026. Sin nota, sin dictamen de manuscrito y sin decisión editorial.
+
+ALCANCE Y RESULTADO
+
+No se ha encontrado un falsador dentro del modelo explícito de PROOF950. La
+composición, la obstrucción de rango y la optimización espectral son correctas.
+La fórmula exacta de información mutua es una aplicación correcta del lema 939,
+que aquí se trata como dependencia suministrada con prueba, no como un resultado
+que esta auditoría haya vuelto a certificar exhaustivamente. La novedad de 950
+queda sin establecer: la aportación examinada es un corolario de ese lema y de
+álgebra elemental de canales y rango. No se atribuye novedad a los ingredientes.
+
+Sí se conservan contraejemplos exactos a extensiones que NO afirma el texto:
+ortogonalidad de los resets antes de propagarlos; suficiencia de contar d etapas
+sin controlar su geometría/pesos; y equivalencia entre una etapa lógica y un
+intervalo físico continuo de reset con Hamiltoniano. El último tiene S de rango
+completo en un intervalo y refuta una lectura de profundidad física general.
+
+Integridad: INPUT951.json coincide con SHA256
+af1c69329784d1c436385cc09de58aba517e776bed143d69bcbe650a02d7c209.
+Los cinco payloads se comprobaron por tamaño y SHA256 antes de leerlos y al
+principio/final de los controles. PROOF950.txt:
+2945d11873e9cca50af57c3949f9010289cddb4888e7d358f0fe0792e75aee61.
+PROOF939.txt:
+ccd9556afaa6fb0e3a5f0a1d11036f11914555f64fbfc54a91b78a8795ae27a9.
+
+1. COMPOSICIÓN Y GEOMETRÍA
+
+Con kets normalizados, 0<lambda_j<1, U_j unitarios, d finito y la misma A en
+cada etapa, la inducción usa Tr(T_j(X))=Tr(X). Por tanto vale para TODAS las
+matrices X, no sólo para estados ni para matrices de traza uno:
+
+ T_m...T_1(X) = L V X V* + Tr(X) S,
+ V=U_m...U_1, L=producto_j lambda_j.
+
+Una expresión que hace explícito el punto geométrico es
+
+ S=sum_j c_j |z_j><z_j|,
+ c_j=(1-lambda_j) producto_{k>j} lambda_k > 0,
+ z_j=U_m...U_{j+1} v_j,
+ sum_j c_j=1-L.
+
+Así S es positiva y tiene traza 1-L. Como todos los c_j son estrictamente
+positivos, rank(S)=dim span{z_j}; en particular rank(S)<=min(m,d). No hay
+cancelaciones entre sumandos positivos que permitan evadir esta obstrucción.
+Los unitarios pueden cambiar el span, pero cada etapa aporta un solo vector.
+
+Controles adversos conservados:
+* d=2, lambdas 2/5 y 5/8, v1=e0, v2=e1, U1=I, U2=X: los resets originales
+  son ortogonales, pero z1=z2=e1 y S=3|e1><e1|/4. El coeficiente es 1/4.
+* Con los mismos lambdas, v1=e0, v2=(3/5,4/5), y
+  U2=[[-4/5,-3/5],[3/5,-4/5]], los resets originales no son ortogonales,
+  pero los propagados sí: S=3I/8 y el coeficiente es 1/10.
+* Cinco resets paralelos con U=I y lambda=1/2 mantienen rank(S)=1;
+  la profundidad por sí sola no garantiza mejora.
+* Tres vectores trine de qubit, lambdas 1/2,2/3,3/4 y U=I producen S=3I/8.
+  Para m>d, no hace falta que todos los vectores propagados sean ortogonales.
+
+Estos casos no contradicen 950, que especifica vectores propagados y ofrece
+ortogonalidad como construcción suficiente, no como condición para todo m.
+
+2. APLICACIÓN DEL LEMA 939: NORMALIZACIÓN, CLASES Y CUANTIFICADORES
+
+Puesto que 0<L<1, tau=V*SV/(1-L) es un estado. Entonces
+
+ T = Ad_V o N,  N(X)=L X+(1-L)Tr(X)tau,
+ minEig(tau)=minEig(S)/(1-L).
+
+Sustituir lambda=L en 939 da exactamente
+
+ eta_C(T)=L^2/[L+minEig(S)],
+
+para C=separables, PPT o reducción unilateral EN LA DIRECCIÓN
+rho_AR <= I_A tensor rho_R. Usar S/(1-L) en el denominador sin el factor
+1-L sería incorrecto: en el ejemplo óptimo qubit daría 1/12 en vez de 1/10.
+950 no comete ese error.
+
+La conjugación de salida por V preserva la información mutua. Si se emplea
+también un cambio de base de entrada, las tres clases son invariantes y la
+transformación es biyectiva: separabilidad por transformación de los factores;
+PPT por conjugación de la traspuesta parcial con V conjugado; reducción por
+conjugación de la desigualdad, cuyo lado I_A tensor rho_R no cambia.
+
+Los cuantificadores se conservan: primero se fija UNA secuencia; después se
+toma el supremo de I(R:B)/I(R:A) sobre referencias arbitrarias finitas y estados
+de la clase con denominador positivo. No hay optimización sobre estrategias,
+retroalimentación ni entradas nuevas entre etapas. La cota superior de 939
+cubre esas referencias y la sucesión separable que satura el supremo ya usa
+R de dimensión dos. El cambio de base no altera la dimensión ni la clase.
+
+He leído la prueba suministrada de 939 para comprobar estos puntos, incluida
+la regularización en el soporte y el carácter de supremo de su construcción.
+No he repetido su auditoría completa, sus extensiones de ventaja entrelazada,
+ni la conjetura no restringida mencionada al final. Ninguno de esos resultados
+es necesario para 950. La atribución a la auditoría previa 942 es procedencia
+del texto de entrada, no una certificación adicional emitida aquí.
+
+3. PROFUNDIDAD Y ÓPTIMO A L FIJO
+
+Si m<d, minEig(S)=0 y el valor exacto de cada una de las tres clases es L.
+En general, eta=L si y sólo si el span propagado no es completo; si S tiene
+rango completo, eta<L. Esto concierne al peor cociente, no a que todos los
+estados retengan una fracción L, ni a un testigo con MI uniformemente positiva.
+
+Para S positiva de traza 1-L, minEig(S)<=(1-L)/d. La función
+mu -> L^2/(L+mu) es estrictamente decreciente. Por ello
+
+ dL^2/[1+(d-1)L] <= eta_C(T) <= L.
+
+El extremo izquierdo es alcanzable exactamente cuando S=(1-L)I/d, salvo
+la libertad de la conjugación unitaria que no altera eta. No se trata de
+minimizar el coeficiente sobre todos los canales CPTP, sino dentro de esta
+familia afín y con L prescrito.
+
+La construcción de 950 es válida. Para w=(1-L)/d, lambda_j=(L+(j-1)w)/(L+jw)
+está estrictamente entre cero y uno. El producto telescópico es L porque
+L+dw=1. El peso final j es [w/(L+jw)] [(L+jw)/(L+dw)]=w. Con resets en una
+base y U_j=I se obtiene S=wI a profundidad d. La ventaja sobre el valor L
+de profundidad menor es estricta, con diferencia L(1-L)/[1+(d-1)L]>0.
+
+Comprobación adicional de la geometría de igualdad a m=d: si las d columnas
+de Z son sqrt(c_j)z_j y ZZ*=wI, Z/sqrt(w) es una matriz unitaria cuadrada.
+De ello siguen c_j=w y ortogonalidad de los z_j. Tener simplemente d vectores
+que abarcan A da una mejora estricta, pero no necesariamente el óptimo.
+
+De hecho, el recuento lógico puede formularse de forma más general y elemental:
+dado S de rango r con eigenpesos positivos s_1,...,s_r y suma 1-L, una
+descomposición espectral se realiza con r etapas tomando
+lambda_j=(L+sum_{i<j}s_i)/(L+sum_{i<=j}s_i). Ninguna realización con menos
+de r etapas es posible por rango. Esta observación refuerza que el aspecto
+de profundidad de 950 deriva directamente de rango y descomposición convexa;
+no constituye aquí una nueva desigualdad informacional independiente de 939.
+
+4. EJEMPLOS Y CONDICIONES
+
+Los valores de qubit indicados en 950 son coherentes: L=1/4 y lambdas 2/5,
+5/8 dan S=3I/8 y eta=1/10. Con ambas lambdas 1/2 los pesos son 1/4 y 1/2;
+para overlap q entre las direcciones pertinentes, minEig(S)=(3-sqrt(1+8q^2))/8.
+La fórmula eta=1/[2(5-sqrt(1+8q^2))] da 1/4, 1/8 y (5+sqrt(5))/40
+en q=1,0,1/sqrt(2), respectivamente. El óptimo de los lambdas libres no
+es un óptimo bajo la restricción adicional de lambdas iguales.
+
+No se ha extendido el resultado a L=0 o L=1: quedan fuera de las hipótesis
+estrictas. Si se mezclan estados de reset, la obstrucción pasa a sum_j r_j<d,
+y un solo reset mixto isotrópico ya evita la obstrucción de pureza. Tampoco
+se permiten mezclas aleatorias de unitarios como sustituto de un U_j fijo,
+una memoria accesible, postselección o elección del protocolo según el estado.
+En una versión autocontenida conviene escribir la desigualdad de reducción
+explícitamente y llamar al ejemplo d=2 un ejemplo de un qubit con referencia,
+para que 'two-qubit-level' no se lea como un sistema A de dimensión cuatro.
+Son precisiones de exposición; no son refutaciones del texto congelado.
+
+5. CONTRAEJEMPLO A LA LECTURA DE PROFUNDIDAD FÍSICA
+
+Considérese el generador sin feedback ni memoria accesible
+
+ G(X)=-i[sigma_y/2,X]+Tr(X)|0><0|-X.
+
+La solución de un intervalo t=pi es
+ T_t(X)=exp(-t) U_t X U_t* + Tr(X) S_t,
+ S_t=integral_0^t exp(-s) U_s|0><0|U_s* ds.
+
+Poniendo h=exp(-pi), el control exacto da
+
+ S_pi = [[(3-h)/4, (1+h)/4],[(1+h)/4,(1-3h)/4]],
+ Tr(S_pi)=1-h, det(S_pi)=(1-6h+h^2)/8 > 0.
+
+La última desigualdad no descansa en flotantes: pi>3 y la suma de Taylor de
+exp(3) hasta k=8 excede 20, de modo que h<1/20. Por tanto la determinante
+supera (1-6/20)/8. El menor autovalor es
+(1-h)/2-(1+h)/(2sqrt(2))>0. Con L=h, 939 da eta<L.
+
+Es un solo intervalo físico de una dinámica de resets puros y Hamiltoniano,
+pero su término acumulado de reemplazo NO es puro. Por eso no satisface la
+forma de una sola etapa de 950. Refuta una lectura que identifique ambos
+conceptos; no refuta el teorema con sus hipótesis actuales. Se conserva como
+control negativo concreto para impedir una futura generalización verbal.
+
+El producto L puede coincidir con exp(-integral Gamma dt) en una implementación
+especial de tasa especificada. Sin ese modelo, costes de control, duración,
+preparación del reservorio, trabajo y calor no se deducen de L ni de m.
+
+6. CONTRASTE DIRIGIDO CON FUENTES PRIMARIAS
+
+Las lecturas son selectivas y sus niveles, versiones, URLs e incidencias
+figuran en READINGS952.json. No se ha copiado un corpus externo persistente.
+
+Guha, Roy y Chiribella, PRR 5, 033214 (2023), p.4, Ecs.6-9, ya emplean los
+mismos canales parciales puros de qubit. Su comparación usa un controlador
+coherente y otra tarea de comunicación. El ingrediente no es nuevo; ese
+resultado no equivale al coeficiente de la composición serial de 950.
+https://doi.org/10.1103/PhysRevResearch.5.033214
+https://hub.hku.hk/bitstream/10722/339341/1/content.pdf
+
+Rose et al., arXiv:1806.01298v2, p.7, Ecs.59-62, proporciona un antecedente
+directo del generador de reset puro independiente del estado. La distinción
+entre su dinámica continua y la etapa discreta permite el control negativo
+anterior. No se afirma que ese artículo contenga la optimización de 950.
+https://arxiv.org/pdf/1806.01298v2
+
+Bergholm, Wilhelm y Schulte-Herbrueggen, arXiv:1605.06473v2, Teoremas1-2,
+trata control coherente con ruido conmutable. Sus cuantificadores de alcance
+de estados y clausura temporal no son los de una síntesis exacta de canal
+universal a producto L fijado. No justifica presentar control más ruido como
+un mecanismo nuevo de 950.
+https://arxiv.org/pdf/1605.06473v2
+
+Reeb y Wolf, arXiv:1306.4352v3, Teorema3 y Proposición5, hace explícitas las
+variables de reservorio y calor necesarias para un coste termodinámico.
+La profundidad lógica de 950 no fija esas variables. Su recurso de reset
+puro no debe anunciarse como borrado exacto gratuito a temperatura finita.
+https://arxiv.org/pdf/1306.4352v3
+
+No se localizó el mismo problema minimax en los pasajes seleccionados. Eso
+NO demuestra prioridad ni novedad: faltan búsqueda exhaustiva de antecedentes,
+contraste sistemático hacia atrás/adelante y revisión por especialistas. 950
+debe mantener la novedad de la formulación como no resuelta. Cambiar el nombre
+de una consecuencia de rango o de la despolarización no añade novedad.
+
+7. EVIDENCIA COMPUTACIONAL E INCIDENCIAS
+
+check950.py se ejecutó desde una copia propia sin modificar el congelado.
+CHECK950.json reproducido es idéntico byte a byte y tiene SHA256
+8a8b393c715ea39ea2f3dd8e4b345dd70bdbd520cc5594e6ae2cfeb0be9c9285.
+Sus tres ejemplos unitarios tienen todos rank(S)=1: son controles válidos,
+pero no cubren por sí solos saturación de rango m ni geometría genérica.
+
+Los controles propios añaden matrices racionales complejas con unitarios no
+conmutativos, identidad sobre unidades matriciales, expresión por vectores
+propagados, traza, rango, schedules simbólicos, geometrías negativas, trine,
+y el intervalo continuo descrito. CONTROLS952.json contiene todos los casos
+de la ejecución final; verdict952.json da los recuentos comprobados.
+
+Además se evalúan 16 estados separables de MI finita, con n=3,6,10,20 para
+cuatro reemplazos. La positividad/PPT de la construcción se verifica con
+racionales; los logaritmos se calculan a precisión alta y son diagnóstico
+numérico, no certificación por intervalos. En n=20, por ejemplo, el caso
+isotrópico da aproximadamente 0.0960785 frente al supremo 0.1 y MI de entrada
+aproximadamente 2.7646e-244 nats. El cálculo respalda el carácter de límite
+y no acredita una señal robusta de información finita ni sustituye 939.
+
+Se conservaron todas las incidencias, sin cambiar casos para favorecer el
+resultado: primera ejecución interrumpida por crecimiento de expresiones;
+segunda ejecución con dos errores UnboundLocalError del programa de control,
+no desigualdades falsas; tercera ejecución detenida por lentitud tras completar
+catorce secuencias; cuarta ejecución con los mismos casos, expansión exacta
+y rango calculado sobre el cuerpo de racionales gaussianos. Los scripts y
+salidas anteriores están preservados. Los resultados matemáticos de una
+ejecución fallida no se cuentan como comprobación de sus pruebas incompletas.
+
+La descarga directa del PDF publicado de Guha et al. devolvió HTTP403, aunque
+la herramienta web permitió leer el pasaje. Se conserva esa incidencia:
+la versión publicada no tiene hash de bytes verificado en esta auditoría.
+Los otros tres PDF se hashearon en memoria sin guardarlos. No se sustituye
+silenciosamente el PDF publicado por el preprint v1, que es otra versión.
+
+8. LÍMITES Y PROCEDENCIA
+
+Esta revisión está separada conversacionalmente del autor, pero comparte
+sistema de archivos. No constituye independencia institucional, revisión
+humana ni prueba formal mecanizada. Identidad exacta de modelo y esfuerzo
+efectivo no están atestados por un mecanismo verificable. No se han creado
+subagentes, consultado otros chats, modificado repositorios/estado raíz ni
+publicado nada. Se leyeron global AGENTS y D:\LEEME.md antes de crear salidas.
+
+Conservación: trabajo propio en C:\Trabajo\airr\2026-10-27_reset952-audit;
+copia en D:\Proyectos\airr-investigacion\2026-10-27_reset952-audit.
+MANIFEST952.json enumera tamaños y SHA256; COPY952.json registra la igualdad
+de las copias. No se emite calificación, recomendación editorial, promesa de
+novedad ni evaluación de un manuscrito distinto del componente indicado.
+
+Durante el sellado se recibió una propuesta de ampliar el alcance a PROOF955
+en INPUT956. Esa entrada no se ha leído ni auditado aquí. No se mezcla con
+INPUT951 ni se interpreta el control continuo propio como revisión de 955.

@@ -1,0 +1,108 @@
+{
+  "utc": "2026-10-27T11:51:10.145036+00:00",
+  "scope": {
+    "input_manifest_sha256": "af1c69329784d1c436385cc09de58aba517e776bed143d69bcbe650a02d7c209",
+    "target": "PROOF950 only; PROOF939 sharp coefficient used as supplied dependency",
+    "no_manuscript_verdict": true,
+    "no_score": true,
+    "no_editorial_decision": true,
+    "no_institutional_or_human_independence_claim": true,
+    "effective_model_and_effort_attested": false,
+    "shared_filesystem": true,
+    "no_subagents_created": true,
+    "no_other_chats_read": true,
+    "no_repositories_or_root_state_modified": true,
+    "no_publication": true,
+    "foreign_corpus_persisted": false
+  },
+  "component_result": "No in-model falsifier found; application valid conditional on sharp939; novelty unresolved",
+  "components": [
+    {
+      "component": "composition",
+      "result": "supported",
+      "reason": "Trace-preserving induction and explicit propagated positive rank-one sum"
+    },
+    {
+      "component": "unitaries_and_input_classes",
+      "result": "supported",
+      "reason": "Output-unitary MI invariance; separable/PPT/A-reduction bijections preserve all quantifiers"
+    },
+    {
+      "component": "sharp939_application",
+      "result": "supported_as_dependency_application",
+      "reason": "tau=V*SV/(1-L); minimum eigenvalue scales by 1/(1-L); no unrestricted-input or adaptive optimization inserted"
+    },
+    {
+      "component": "depth_obstruction",
+      "result": "supported",
+      "reason": "rank(S)=span dimension<=m; m<d gives minEig(S)=0 and exact coefficient L"
+    },
+    {
+      "component": "fixed_product_global_optimum",
+      "result": "supported_within_stated_family",
+      "reason": "Minimum eigenvalue bounded by trace/d; telescoping d-stage construction attains uniform S"
+    },
+    {
+      "component": "qubit_examples",
+      "result": "supported",
+      "reason": "Quoted overlap formula and special values checked symbolically"
+    },
+    {
+      "component": "physical_cost_or_physical_interval_depth",
+      "result": "not_claimed_and_not_implied",
+      "reason": "Explicit driven-reset interval has full-rank S; thermal/time/control assumptions are absent"
+    },
+    {
+      "component": "novelty",
+      "result": "unresolved_not_awarded",
+      "reason": "Pure partial resets, noise plus control, depolarization and rank algebra are established; selected primary contrast is nonexhaustive"
+    }
+  ],
+  "in_model_refutations": [],
+  "refuted_extrapolations": [
+    "Original reset orthogonality suffices regardless of later unitaries",
+    "Original reset orthogonality is necessary for a d-stage optimum with freely chosen unitaries",
+    "At least d logical stages automatically attain the optimum",
+    "All propagated vectors must be orthogonal when m>d",
+    "One physical Hamiltonian-plus-reset interval is one pure-mixture stage"
+  ],
+  "evidence": {
+    "check950_reproduction_byte_identical": true,
+    "check950_sha256": "8a8b393c715ea39ea2f3dd8e4b345dd70bdbd520cc5594e6ae2cfeb0be9c9285",
+    "own_dense_sequences": 15,
+    "own_dense_matrix_units": 212,
+    "noncommuting_adjacent_unitary_pairs": 30,
+    "extra_geometry_matrix_units": 12,
+    "symbolic_L_schedules_dimensions": [
+      2,
+      3,
+      5,
+      8
+    ],
+    "arbitrary_eigenweight_schedules": 3,
+    "finite_separable_MI_examples": 16,
+    "MI_numeric_is_not_interval_certificate": true,
+    "continuous_interval_scope_counterexample": "exact integration and elementary positivity bound",
+    "final_control_groups": 7,
+    "final_control_failures": 0,
+    "prior_incomplete_control_runs": 2,
+    "prior_failed_control_run": 1,
+    "prior_harness_exceptions": 2,
+    "all_prior_runs_retained": true,
+    "primary_sources_selectively_read": 4,
+    "primary_pdf_bytes_hashed": 3,
+    "primary_pdf_hash_unavailable": [
+      "guha2023"
+    ]
+  },
+  "limits": [
+    "939 is a supplied dependency, not fully reaudited here; its unrelated extensions are outside scope",
+    "All class coefficients are suprema over finite reference systems and strictly positive input MI; no fixed-rate attainment is promised",
+    "No feedback, postselection, accessible memory, randomized unitary replacement or mixed reset substitution is included",
+    "0<L<1 and finite d are essential stated assumptions",
+    "Finite algebra checks do not replace a universal proof and high-precision MI is diagnostic",
+    "Directed selected readings cannot establish literature priority",
+    "No external institutional, human, model-identity or effort attestation",
+    "PROOF955/INPUT956 proposed during sealing was not read or audited; the original frozen951 scope is unchanged"
+  ]
+}

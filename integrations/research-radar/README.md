@@ -119,3 +119,5 @@ New directed reading: [exact-counting kernel checks](notes/2026-10-27-exact-coun
 The [complete-noise and kernel checkpoint](notes/2026-10-27-complete-noise-and-kernel.md) retains full unscored audit917, ordinary antecedents and the separate unaudited Choi-faithful925 route. Full exact-PDF review remains separate; no grade or canonical graph promotion.
 
 The [sharp-separable and reset-depth update](notes/2026-10-27-sharp-separable-reset.md) closes real923/931/942 evidence, preserves the published4.00 global and2/5 significance, and labels950 as a new unscored application under audit. Original and LF transport hashes are distinguished.
+
+The [completed958 and next-question update](notes/2026-10-27-reviewed-reset.md) preserves the real importance4.0/global4.5/technical8.5 distinction, pending O1 and same-vote provenance, records close prior art, and keeps968/971 as unreviewed research rather than extra papers.

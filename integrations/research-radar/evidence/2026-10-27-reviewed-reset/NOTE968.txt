@@ -1,0 +1,64 @@
+968: A finite-information separable witness, not a separate research paper
+27 October2026, parent derivation, unreviewed. Outside frozen957 and review958.
+
+Motivation: review958 W2 limits the importance of asymptotically optimal
+examples carrying very little information. It does not claim that every
+separable advantage must have vanishing information. Test that stronger
+interpretation before pursuing an operational claim.
+
+Take a two-qubit state in order00,01,10,11:
+rho = diag(679,21,291,9)/1000
+      +(1/25)(|00><11|+|11><00|).
+Its marginals are diag(7/10,3/10) and diag(97/100,3/100).
+Both its positivity and PPT 2x2 determinants equal4511/1000000>0;
+all other diagonal entries are positive. More explicitly, let S be the
+product of those marginals and L its positive local square root. Then
+rho=L(I+tE)L, E=(X tensor X-Y tensor Y)/2,
+t=(1/25)/sqrt(6111/1000000)<1.
+I+tE=(1-t)I+t/2(I+X tensor X)+t/2(I-Y tensor Y).
+Each term is separable and positive; local filtering proves separability
+without relying solely on the 2x2 PPT theorem. The nonzero commutator with
+I tensor rho_R also establishes that the reference is not classical.
+
+Apply the local channel N=(1/2)id+(1/2)replacement_(I/2).
+The output is diag(582,18,388,12)/1000 with coherence1/50.
+Its actual marginal product is exactly the displayed diagonal.
+For any such state, with nontrivial block entries a,b and coherence e,
+the mutual information is f(z_plus)+f(z_minus)-f(a)-f(b),
+z_plus/minus=(a+b +/-sqrt((a-b)^2+4e^2))/2, f(z)=z log z.
+The two unchanged middle entries cancel exactly against the actual product.
+
+certificate968.py encloses square roots with rational lower/upper bounds,
+range-reduces logarithms dyadically to[1,2], and uses40 positive atanh
+terms with a proved geometric tail. Fraction arithmetic establishes
+ I_input>1/100 nats,
+ I_output-(257/1000)I_input>1/200000 nats,
+so I_output/I_input>257/1000>1/4.
+The decimal diagnostics are about0.01063884 input nats and0.25772176 ratio;
+the certificate does not rely on those decimals.
+
+The standard qubit channel coefficient with a classical reference is1/4.
+This finite witness therefore exceeds that benchmark with a fixed input
+information floor. This does not prove the optimum with a floor, a
+statistical estimation protocol, a capacity separation or a practical
+sample complexity. It is an application of the existing family, not
+evidence that the original manuscript's importance should be regraded.
+
+Primary comparison: Hirche et al., arXiv2608.27171v1, Section3.3,
+equations3.63-3.66, read on27 October2026. Their finite MI example uses
+rho=.5 Phi_plus+.5 I/4 and is entangled; the0.2881 example concerns a
+different two-state complete coefficient. Neither supplies a sharp
+separable information-floor optimization in the inspected passage.
+This limited comparison is not a global priority check. No claim of a
+new generic advantage of quantum reference systems is made.
+
+Decision: retain the exact witness as a candidate operational foothold,
+not another stand-alone minor paper. A stronger next question is the
+sharp information-floor tradeoff or an actual experimentally estimable
+task; stop this route if its claimed new content is only another table
+of instances of the already proved coefficient.
+
+Controls:19404 double-precision screened X-states,1851 exceeding1/4;
+not a global optimizer or universal certificate. A subsequent import
+re-executed the same deterministic bounded screen without changing its
+output; it was not a new scientific review or a score-seeking restart.

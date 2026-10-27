@@ -1,0 +1,1963 @@
+{
+  "seed": 971,
+  "scope": "216 finite BKM generalized-eigenvalue diagnostics with equal-reference tangents; not a universal upper bound or a MI witness",
+  "conjectural_upper": 0.3333333333333333,
+  "actual_known_order_upper": 0.4,
+  "largest": {
+    "r": 2,
+    "rank": 2,
+    "epsilon": 0.2,
+    "rep": 0,
+    "local_complete_pair_ratio": 0.3180836627732391,
+    "input_min_eigenvalue": 0.04999999999999988,
+    "reference_tangent_residual": 0.0
+  },
+  "potential_falsifiers": 0,
+  "cases": [
+    {
+      "r": 2,
+      "rank": 1,
+      "epsilon": 1e-05,
+      "rep": 0,
+      "local_complete_pair_ratio": 0.0876497937730508,
+      "input_min_eigenvalue": 2.4999999999381312e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 1,
+      "epsilon": 1e-05,
+      "rep": 1,
+      "local_complete_pair_ratio": 0.13458792595008923,
+      "input_min_eigenvalue": 2.4999999999448097e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 1,
+      "epsilon": 1e-05,
+      "rep": 2,
+      "local_complete_pair_ratio": 0.07162369214928807,
+      "input_min_eigenvalue": 2.4999999999028896e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 1,
+      "epsilon": 1e-05,
+      "rep": 3,
+      "local_complete_pair_ratio": 0.07545477993861356,
+      "input_min_eigenvalue": 2.4999999999517405e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 1,
+      "epsilon": 1e-05,
+      "rep": 4,
+      "local_complete_pair_ratio": 0.07718777729627681,
+      "input_min_eigenvalue": 2.4999999997565032e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 1,
+      "epsilon": 1e-05,
+      "rep": 5,
+      "local_complete_pair_ratio": 0.07775615310925453,
+      "input_min_eigenvalue": 2.4999999997372663e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 1,
+      "epsilon": 1e-05,
+      "rep": 6,
+      "local_complete_pair_ratio": 0.08561082657198042,
+      "input_min_eigenvalue": 2.4999999997512105e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 1,
+      "epsilon": 1e-05,
+      "rep": 7,
+      "local_complete_pair_ratio": 0.06807211189487711,
+      "input_min_eigenvalue": 2.4999999999606034e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 1,
+      "epsilon": 0.02,
+      "rep": 0,
+      "local_complete_pair_ratio": 0.22111510918606325,
+      "input_min_eigenvalue": 0.0049999999999999385,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 1,
+      "epsilon": 0.02,
+      "rep": 1,
+      "local_complete_pair_ratio": 0.16651309557780591,
+      "input_min_eigenvalue": 0.004999999999999872,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 1,
+      "epsilon": 0.02,
+      "rep": 2,
+      "local_complete_pair_ratio": 0.18673114857163886,
+      "input_min_eigenvalue": 0.004999999999999692,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 1,
+      "epsilon": 0.02,
+      "rep": 3,
+      "local_complete_pair_ratio": 0.15307334325342298,
+      "input_min_eigenvalue": 0.004999999999999854,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 1,
+      "epsilon": 0.02,
+      "rep": 4,
+      "local_complete_pair_ratio": 0.19640055158008335,
+      "input_min_eigenvalue": 0.004999999999999943,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 1,
+      "epsilon": 0.02,
+      "rep": 5,
+      "local_complete_pair_ratio": 0.17607297046669113,
+      "input_min_eigenvalue": 0.004999999999999978,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 1,
+      "epsilon": 0.02,
+      "rep": 6,
+      "local_complete_pair_ratio": 0.24110337659003866,
+      "input_min_eigenvalue": 0.004999999999999877,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 1,
+      "epsilon": 0.02,
+      "rep": 7,
+      "local_complete_pair_ratio": 0.17957096665153588,
+      "input_min_eigenvalue": 0.004999999999999944,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 1,
+      "epsilon": 0.2,
+      "rep": 0,
+      "local_complete_pair_ratio": 0.2927309151319302,
+      "input_min_eigenvalue": 0.049999999999999836,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 1,
+      "epsilon": 0.2,
+      "rep": 1,
+      "local_complete_pair_ratio": 0.29141768474205093,
+      "input_min_eigenvalue": 0.04999999999999995,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 1,
+      "epsilon": 0.2,
+      "rep": 2,
+      "local_complete_pair_ratio": 0.23003249747018703,
+      "input_min_eigenvalue": 0.049999999999999954,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 1,
+      "epsilon": 0.2,
+      "rep": 3,
+      "local_complete_pair_ratio": 0.2659268153258737,
+      "input_min_eigenvalue": 0.049999999999999926,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 1,
+      "epsilon": 0.2,
+      "rep": 4,
+      "local_complete_pair_ratio": 0.2864767689699264,
+      "input_min_eigenvalue": 0.049999999999999864,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 1,
+      "epsilon": 0.2,
+      "rep": 5,
+      "local_complete_pair_ratio": 0.27195676730615687,
+      "input_min_eigenvalue": 0.04999999999999993,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 1,
+      "epsilon": 0.2,
+      "rep": 6,
+      "local_complete_pair_ratio": 0.2621231608392699,
+      "input_min_eigenvalue": 0.050000000000000024,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 1,
+      "epsilon": 0.2,
+      "rep": 7,
+      "local_complete_pair_ratio": 0.2708252004670338,
+      "input_min_eigenvalue": 0.04999999999999995,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 2,
+      "epsilon": 1e-05,
+      "rep": 0,
+      "local_complete_pair_ratio": 0.22195306609525883,
+      "input_min_eigenvalue": 2.499999999949916e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 2,
+      "epsilon": 1e-05,
+      "rep": 1,
+      "local_complete_pair_ratio": 0.21137151342204735,
+      "input_min_eigenvalue": 2.499999999982828e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 2,
+      "epsilon": 1e-05,
+      "rep": 2,
+      "local_complete_pair_ratio": 0.07713347395956024,
+      "input_min_eigenvalue": 2.4999999998925566e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 2,
+      "epsilon": 1e-05,
+      "rep": 3,
+      "local_complete_pair_ratio": 0.13992997806024055,
+      "input_min_eigenvalue": 2.4999999998547404e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 2,
+      "epsilon": 1e-05,
+      "rep": 4,
+      "local_complete_pair_ratio": 0.15333571955130482,
+      "input_min_eigenvalue": 2.499999999944888e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 2,
+      "epsilon": 1e-05,
+      "rep": 5,
+      "local_complete_pair_ratio": 0.129027152627957,
+      "input_min_eigenvalue": 2.4999999999460696e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 2,
+      "epsilon": 1e-05,
+      "rep": 6,
+      "local_complete_pair_ratio": 0.1853641606643742,
+      "input_min_eigenvalue": 2.499999999893103e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 2,
+      "epsilon": 1e-05,
+      "rep": 7,
+      "local_complete_pair_ratio": 0.2208821643247667,
+      "input_min_eigenvalue": 2.4999999998757714e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 2,
+      "epsilon": 0.02,
+      "rep": 0,
+      "local_complete_pair_ratio": 0.28947328047160226,
+      "input_min_eigenvalue": 0.00499999999999994,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 2,
+      "epsilon": 0.02,
+      "rep": 1,
+      "local_complete_pair_ratio": 0.25987556496602676,
+      "input_min_eigenvalue": 0.004999999999999943,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 2,
+      "epsilon": 0.02,
+      "rep": 2,
+      "local_complete_pair_ratio": 0.2662585832946051,
+      "input_min_eigenvalue": 0.0049999999999999585,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 2,
+      "epsilon": 0.02,
+      "rep": 3,
+      "local_complete_pair_ratio": 0.2051928026307402,
+      "input_min_eigenvalue": 0.004999999999999835,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 2,
+      "epsilon": 0.02,
+      "rep": 4,
+      "local_complete_pair_ratio": 0.20109005776263178,
+      "input_min_eigenvalue": 0.004999999999999952,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 2,
+      "epsilon": 0.02,
+      "rep": 5,
+      "local_complete_pair_ratio": 0.22137968935923455,
+      "input_min_eigenvalue": 0.004999999999999884,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 2,
+      "epsilon": 0.02,
+      "rep": 6,
+      "local_complete_pair_ratio": 0.23991126433892174,
+      "input_min_eigenvalue": 0.004999999999999909,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 2,
+      "epsilon": 0.02,
+      "rep": 7,
+      "local_complete_pair_ratio": 0.21938380555079529,
+      "input_min_eigenvalue": 0.004999999999999986,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 2,
+      "epsilon": 0.2,
+      "rep": 0,
+      "local_complete_pair_ratio": 0.3180836627732391,
+      "input_min_eigenvalue": 0.04999999999999988,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 2,
+      "epsilon": 0.2,
+      "rep": 1,
+      "local_complete_pair_ratio": 0.26092390165030027,
+      "input_min_eigenvalue": 0.04999999999999996,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 2,
+      "epsilon": 0.2,
+      "rep": 2,
+      "local_complete_pair_ratio": 0.2674196961264199,
+      "input_min_eigenvalue": 0.04999999999999995,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 2,
+      "epsilon": 0.2,
+      "rep": 3,
+      "local_complete_pair_ratio": 0.27242823910946495,
+      "input_min_eigenvalue": 0.04999999999999986,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 2,
+      "epsilon": 0.2,
+      "rep": 4,
+      "local_complete_pair_ratio": 0.3009633848236687,
+      "input_min_eigenvalue": 0.049999999999999885,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 2,
+      "epsilon": 0.2,
+      "rep": 5,
+      "local_complete_pair_ratio": 0.27208237564668825,
+      "input_min_eigenvalue": 0.04999999999999999,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 2,
+      "epsilon": 0.2,
+      "rep": 6,
+      "local_complete_pair_ratio": 0.28910535695493944,
+      "input_min_eigenvalue": 0.0499999999999999,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 2,
+      "epsilon": 0.2,
+      "rep": 7,
+      "local_complete_pair_ratio": 0.29051725353657615,
+      "input_min_eigenvalue": 0.049999999999999954,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 4,
+      "epsilon": 1e-05,
+      "rep": 0,
+      "local_complete_pair_ratio": 0.2872013260664544,
+      "input_min_eigenvalue": 0.005722390091723028,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 4,
+      "epsilon": 1e-05,
+      "rep": 1,
+      "local_complete_pair_ratio": 0.26383418387257995,
+      "input_min_eigenvalue": 0.017488718741895382,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 4,
+      "epsilon": 1e-05,
+      "rep": 2,
+      "local_complete_pair_ratio": 0.24665707908755238,
+      "input_min_eigenvalue": 0.020662358442671336,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 4,
+      "epsilon": 1e-05,
+      "rep": 3,
+      "local_complete_pair_ratio": 0.2988098826535577,
+      "input_min_eigenvalue": 0.004177604313997357,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 4,
+      "epsilon": 1e-05,
+      "rep": 4,
+      "local_complete_pair_ratio": 0.284064485321328,
+      "input_min_eigenvalue": 0.030532298396463764,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 4,
+      "epsilon": 1e-05,
+      "rep": 5,
+      "local_complete_pair_ratio": 0.2741810723673894,
+      "input_min_eigenvalue": 0.0026472003063797867,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 4,
+      "epsilon": 1e-05,
+      "rep": 6,
+      "local_complete_pair_ratio": 0.25874710308644994,
+      "input_min_eigenvalue": 0.013378391660887924,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 4,
+      "epsilon": 1e-05,
+      "rep": 7,
+      "local_complete_pair_ratio": 0.27200761185572525,
+      "input_min_eigenvalue": 0.009705750735537522,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 4,
+      "epsilon": 0.02,
+      "rep": 0,
+      "local_complete_pair_ratio": 0.27915304991983153,
+      "input_min_eigenvalue": 0.018774967822804436,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 4,
+      "epsilon": 0.02,
+      "rep": 1,
+      "local_complete_pair_ratio": 0.2557151945068156,
+      "input_min_eigenvalue": 0.010368759708087965,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 4,
+      "epsilon": 0.02,
+      "rep": 2,
+      "local_complete_pair_ratio": 0.293236302565484,
+      "input_min_eigenvalue": 0.016551882302769175,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 4,
+      "epsilon": 0.02,
+      "rep": 3,
+      "local_complete_pair_ratio": 0.2630504344678939,
+      "input_min_eigenvalue": 0.01982842264515972,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 4,
+      "epsilon": 0.02,
+      "rep": 4,
+      "local_complete_pair_ratio": 0.2747275599734388,
+      "input_min_eigenvalue": 0.05727047730428148,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 4,
+      "epsilon": 0.02,
+      "rep": 5,
+      "local_complete_pair_ratio": 0.27633708042133004,
+      "input_min_eigenvalue": 0.012876947277954963,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 4,
+      "epsilon": 0.02,
+      "rep": 6,
+      "local_complete_pair_ratio": 0.28798664269385693,
+      "input_min_eigenvalue": 0.005385193922372922,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 4,
+      "epsilon": 0.02,
+      "rep": 7,
+      "local_complete_pair_ratio": 0.2680508690967155,
+      "input_min_eigenvalue": 0.012022066930973496,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 4,
+      "epsilon": 0.2,
+      "rep": 0,
+      "local_complete_pair_ratio": 0.3017922736136244,
+      "input_min_eigenvalue": 0.057057257617413114,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 4,
+      "epsilon": 0.2,
+      "rep": 1,
+      "local_complete_pair_ratio": 0.25835401067296554,
+      "input_min_eigenvalue": 0.06672736088241844,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 4,
+      "epsilon": 0.2,
+      "rep": 2,
+      "local_complete_pair_ratio": 0.28162670277782587,
+      "input_min_eigenvalue": 0.08606667750524531,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 4,
+      "epsilon": 0.2,
+      "rep": 3,
+      "local_complete_pair_ratio": 0.28590961708539214,
+      "input_min_eigenvalue": 0.06910991867007896,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 4,
+      "epsilon": 0.2,
+      "rep": 4,
+      "local_complete_pair_ratio": 0.288061919472835,
+      "input_min_eigenvalue": 0.05591816383591119,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 4,
+      "epsilon": 0.2,
+      "rep": 5,
+      "local_complete_pair_ratio": 0.2802848100211471,
+      "input_min_eigenvalue": 0.09712967053297548,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 4,
+      "epsilon": 0.2,
+      "rep": 6,
+      "local_complete_pair_ratio": 0.28297724544286773,
+      "input_min_eigenvalue": 0.06654144001004302,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 2,
+      "rank": 4,
+      "epsilon": 0.2,
+      "rep": 7,
+      "local_complete_pair_ratio": 0.3046539235569494,
+      "input_min_eigenvalue": 0.050475940266915424,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 1,
+      "epsilon": 1e-05,
+      "rep": 0,
+      "local_complete_pair_ratio": 0.24999315929335447,
+      "input_min_eigenvalue": 1.6666666666493681e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 1,
+      "epsilon": 1e-05,
+      "rep": 1,
+      "local_complete_pair_ratio": 0.25000935543010316,
+      "input_min_eigenvalue": 1.6666666666165543e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 1,
+      "epsilon": 1e-05,
+      "rep": 2,
+      "local_complete_pair_ratio": 0.25000506658993876,
+      "input_min_eigenvalue": 1.6666666665917612e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 1,
+      "epsilon": 1e-05,
+      "rep": 3,
+      "local_complete_pair_ratio": 0.25000383098524026,
+      "input_min_eigenvalue": 1.6666666665483258e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 1,
+      "epsilon": 1e-05,
+      "rep": 4,
+      "local_complete_pair_ratio": 0.2500176740822613,
+      "input_min_eigenvalue": 1.6666666666047363e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 1,
+      "epsilon": 1e-05,
+      "rep": 5,
+      "local_complete_pair_ratio": 0.25000089662232866,
+      "input_min_eigenvalue": 1.666666666603653e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 1,
+      "epsilon": 1e-05,
+      "rep": 6,
+      "local_complete_pair_ratio": 0.2499992305006145,
+      "input_min_eigenvalue": 1.6666666665293347e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 1,
+      "epsilon": 1e-05,
+      "rep": 7,
+      "local_complete_pair_ratio": 0.25000001958384815,
+      "input_min_eigenvalue": 1.6666666665895062e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 1,
+      "epsilon": 0.02,
+      "rep": 0,
+      "local_complete_pair_ratio": 0.24999999999999917,
+      "input_min_eigenvalue": 0.003333333333333272,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 1,
+      "epsilon": 0.02,
+      "rep": 1,
+      "local_complete_pair_ratio": 0.2499999999999975,
+      "input_min_eigenvalue": 0.0033333333333332863,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 1,
+      "epsilon": 0.02,
+      "rep": 2,
+      "local_complete_pair_ratio": 0.2500000000000008,
+      "input_min_eigenvalue": 0.0033333333333331683,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 1,
+      "epsilon": 0.02,
+      "rep": 3,
+      "local_complete_pair_ratio": 0.25000000000000067,
+      "input_min_eigenvalue": 0.0033333333333332754,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 1,
+      "epsilon": 0.02,
+      "rep": 4,
+      "local_complete_pair_ratio": 0.25000000000000155,
+      "input_min_eigenvalue": 0.003333333333333244,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 1,
+      "epsilon": 0.02,
+      "rep": 5,
+      "local_complete_pair_ratio": 0.250000000000003,
+      "input_min_eigenvalue": 0.0033333333333332876,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 1,
+      "epsilon": 0.02,
+      "rep": 6,
+      "local_complete_pair_ratio": 0.24999999999999856,
+      "input_min_eigenvalue": 0.0033333333333331328,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 1,
+      "epsilon": 0.02,
+      "rep": 7,
+      "local_complete_pair_ratio": 0.24999999999999792,
+      "input_min_eigenvalue": 0.0033333333333332472,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 1,
+      "epsilon": 0.2,
+      "rep": 0,
+      "local_complete_pair_ratio": 0.2645192432202039,
+      "input_min_eigenvalue": 0.03333333333333327,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 1,
+      "epsilon": 0.2,
+      "rep": 1,
+      "local_complete_pair_ratio": 0.2894701848829141,
+      "input_min_eigenvalue": 0.033333333333333146,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 1,
+      "epsilon": 0.2,
+      "rep": 2,
+      "local_complete_pair_ratio": 0.24999999999999933,
+      "input_min_eigenvalue": 0.03333333333333316,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 1,
+      "epsilon": 0.2,
+      "rep": 3,
+      "local_complete_pair_ratio": 0.2499999999999995,
+      "input_min_eigenvalue": 0.0333333333333331,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 1,
+      "epsilon": 0.2,
+      "rep": 4,
+      "local_complete_pair_ratio": 0.24999999999999967,
+      "input_min_eigenvalue": 0.033333333333333215,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 1,
+      "epsilon": 0.2,
+      "rep": 5,
+      "local_complete_pair_ratio": 0.25000000000000033,
+      "input_min_eigenvalue": 0.03333333333333327,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 1,
+      "epsilon": 0.2,
+      "rep": 6,
+      "local_complete_pair_ratio": 0.2692148751250783,
+      "input_min_eigenvalue": 0.03333333333333317,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 1,
+      "epsilon": 0.2,
+      "rep": 7,
+      "local_complete_pair_ratio": 0.250000000000001,
+      "input_min_eigenvalue": 0.03333333333333327,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 2,
+      "epsilon": 1e-05,
+      "rep": 0,
+      "local_complete_pair_ratio": 0.08160678841255607,
+      "input_min_eigenvalue": 1.6666666666479174e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 2,
+      "epsilon": 1e-05,
+      "rep": 1,
+      "local_complete_pair_ratio": 0.0989953944020547,
+      "input_min_eigenvalue": 1.6666666666104667e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 2,
+      "epsilon": 1e-05,
+      "rep": 2,
+      "local_complete_pair_ratio": 0.1364655405905542,
+      "input_min_eigenvalue": 1.6666666665839168e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 2,
+      "epsilon": 1e-05,
+      "rep": 3,
+      "local_complete_pair_ratio": 0.09385424013524185,
+      "input_min_eigenvalue": 1.6666666666188417e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 2,
+      "epsilon": 1e-05,
+      "rep": 4,
+      "local_complete_pair_ratio": 0.16850309452781087,
+      "input_min_eigenvalue": 1.6666666664997643e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 2,
+      "epsilon": 1e-05,
+      "rep": 5,
+      "local_complete_pair_ratio": 0.08658316471786037,
+      "input_min_eigenvalue": 1.666666666630999e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 2,
+      "epsilon": 1e-05,
+      "rep": 6,
+      "local_complete_pair_ratio": 0.1058382624168043,
+      "input_min_eigenvalue": 1.6666666666172309e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 2,
+      "epsilon": 1e-05,
+      "rep": 7,
+      "local_complete_pair_ratio": 0.09494975026228461,
+      "input_min_eigenvalue": 1.6666666666375455e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 2,
+      "epsilon": 0.02,
+      "rep": 0,
+      "local_complete_pair_ratio": 0.19049619863269,
+      "input_min_eigenvalue": 0.0033333333333332126,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 2,
+      "epsilon": 0.02,
+      "rep": 1,
+      "local_complete_pair_ratio": 0.19854488593267486,
+      "input_min_eigenvalue": 0.003333333333333292,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 2,
+      "epsilon": 0.02,
+      "rep": 2,
+      "local_complete_pair_ratio": 0.22135773001400721,
+      "input_min_eigenvalue": 0.003333333333333295,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 2,
+      "epsilon": 0.02,
+      "rep": 3,
+      "local_complete_pair_ratio": 0.24001047659885677,
+      "input_min_eigenvalue": 0.003333333333333215,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 2,
+      "epsilon": 0.02,
+      "rep": 4,
+      "local_complete_pair_ratio": 0.17994156219532545,
+      "input_min_eigenvalue": 0.0033333333333332004,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 2,
+      "epsilon": 0.02,
+      "rep": 5,
+      "local_complete_pair_ratio": 0.2183228491301876,
+      "input_min_eigenvalue": 0.003333333333333227,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 2,
+      "epsilon": 0.02,
+      "rep": 6,
+      "local_complete_pair_ratio": 0.24271808739489836,
+      "input_min_eigenvalue": 0.003333333333333201,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 2,
+      "epsilon": 0.02,
+      "rep": 7,
+      "local_complete_pair_ratio": 0.2796327692864006,
+      "input_min_eigenvalue": 0.0033333333333332347,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 2,
+      "epsilon": 0.2,
+      "rep": 0,
+      "local_complete_pair_ratio": 0.2920914433087528,
+      "input_min_eigenvalue": 0.033333333333333284,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 2,
+      "epsilon": 0.2,
+      "rep": 1,
+      "local_complete_pair_ratio": 0.2734271169218501,
+      "input_min_eigenvalue": 0.0333333333333333,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 2,
+      "epsilon": 0.2,
+      "rep": 2,
+      "local_complete_pair_ratio": 0.30412058974096523,
+      "input_min_eigenvalue": 0.03333333333333327,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 2,
+      "epsilon": 0.2,
+      "rep": 3,
+      "local_complete_pair_ratio": 0.2858608909620408,
+      "input_min_eigenvalue": 0.033333333333333263,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 2,
+      "epsilon": 0.2,
+      "rep": 4,
+      "local_complete_pair_ratio": 0.2931460107364584,
+      "input_min_eigenvalue": 0.03333333333333325,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 2,
+      "epsilon": 0.2,
+      "rep": 5,
+      "local_complete_pair_ratio": 0.29237037240642105,
+      "input_min_eigenvalue": 0.03333333333333328,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 2,
+      "epsilon": 0.2,
+      "rep": 6,
+      "local_complete_pair_ratio": 0.28184237658188954,
+      "input_min_eigenvalue": 0.0333333333333332,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 2,
+      "epsilon": 0.2,
+      "rep": 7,
+      "local_complete_pair_ratio": 0.2857239840054694,
+      "input_min_eigenvalue": 0.03333333333333322,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 6,
+      "epsilon": 1e-05,
+      "rep": 0,
+      "local_complete_pair_ratio": 0.3070075538725471,
+      "input_min_eigenvalue": 0.001565220068259243,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 6,
+      "epsilon": 1e-05,
+      "rep": 1,
+      "local_complete_pair_ratio": 0.2994217624236598,
+      "input_min_eigenvalue": 0.00033909529056563327,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 6,
+      "epsilon": 1e-05,
+      "rep": 2,
+      "local_complete_pair_ratio": 0.28802058585171714,
+      "input_min_eigenvalue": 0.0019017472669037219,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 6,
+      "epsilon": 1e-05,
+      "rep": 3,
+      "local_complete_pair_ratio": 0.3003321120549958,
+      "input_min_eigenvalue": 0.00551870341539034,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 6,
+      "epsilon": 1e-05,
+      "rep": 4,
+      "local_complete_pair_ratio": 0.2877629151855786,
+      "input_min_eigenvalue": 0.001448428598635409,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 6,
+      "epsilon": 1e-05,
+      "rep": 5,
+      "local_complete_pair_ratio": 0.2939264163267461,
+      "input_min_eigenvalue": 0.004246500007366776,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 6,
+      "epsilon": 1e-05,
+      "rep": 6,
+      "local_complete_pair_ratio": 0.2987666595230561,
+      "input_min_eigenvalue": 0.0063655829090035095,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 6,
+      "epsilon": 1e-05,
+      "rep": 7,
+      "local_complete_pair_ratio": 0.2666623527838626,
+      "input_min_eigenvalue": 0.0018263436517012813,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 6,
+      "epsilon": 0.02,
+      "rep": 0,
+      "local_complete_pair_ratio": 0.29397889656770493,
+      "input_min_eigenvalue": 0.0035165789103217405,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 6,
+      "epsilon": 0.02,
+      "rep": 1,
+      "local_complete_pair_ratio": 0.30344860751794595,
+      "input_min_eigenvalue": 0.004102762115712053,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 6,
+      "epsilon": 0.02,
+      "rep": 2,
+      "local_complete_pair_ratio": 0.30236841274599363,
+      "input_min_eigenvalue": 0.012561578056154139,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 6,
+      "epsilon": 0.02,
+      "rep": 3,
+      "local_complete_pair_ratio": 0.2894677017994974,
+      "input_min_eigenvalue": 0.012056773457738063,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 6,
+      "epsilon": 0.02,
+      "rep": 4,
+      "local_complete_pair_ratio": 0.29389772978997536,
+      "input_min_eigenvalue": 0.006464123847085501,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 6,
+      "epsilon": 0.02,
+      "rep": 5,
+      "local_complete_pair_ratio": 0.2816605284470918,
+      "input_min_eigenvalue": 0.00569813611058935,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 6,
+      "epsilon": 0.02,
+      "rep": 6,
+      "local_complete_pair_ratio": 0.2900675420714391,
+      "input_min_eigenvalue": 0.019210720327325674,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 6,
+      "epsilon": 0.02,
+      "rep": 7,
+      "local_complete_pair_ratio": 0.28440299988744205,
+      "input_min_eigenvalue": 0.013774922416727727,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 6,
+      "epsilon": 0.2,
+      "rep": 0,
+      "local_complete_pair_ratio": 0.29134589058349025,
+      "input_min_eigenvalue": 0.03882109863140762,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 6,
+      "epsilon": 0.2,
+      "rep": 1,
+      "local_complete_pair_ratio": 0.28949698292405424,
+      "input_min_eigenvalue": 0.03712481612975604,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 6,
+      "epsilon": 0.2,
+      "rep": 2,
+      "local_complete_pair_ratio": 0.29495055082019944,
+      "input_min_eigenvalue": 0.03702295500153131,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 6,
+      "epsilon": 0.2,
+      "rep": 3,
+      "local_complete_pair_ratio": 0.2893608818032727,
+      "input_min_eigenvalue": 0.035974102054629344,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 6,
+      "epsilon": 0.2,
+      "rep": 4,
+      "local_complete_pair_ratio": 0.28836643422373853,
+      "input_min_eigenvalue": 0.03837645342211893,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 6,
+      "epsilon": 0.2,
+      "rep": 5,
+      "local_complete_pair_ratio": 0.28891243612600703,
+      "input_min_eigenvalue": 0.03543642003227246,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 6,
+      "epsilon": 0.2,
+      "rep": 6,
+      "local_complete_pair_ratio": 0.3015520076090139,
+      "input_min_eigenvalue": 0.03820320083078908,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 3,
+      "rank": 6,
+      "epsilon": 0.2,
+      "rep": 7,
+      "local_complete_pair_ratio": 0.294515923371352,
+      "input_min_eigenvalue": 0.03524215854647476,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 1,
+      "epsilon": 1e-05,
+      "rep": 0,
+      "local_complete_pair_ratio": 0.250009276734908,
+      "input_min_eigenvalue": 1.2499999999369573e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 1,
+      "epsilon": 1e-05,
+      "rep": 1,
+      "local_complete_pair_ratio": 0.2500157935847195,
+      "input_min_eigenvalue": 1.2499999998740715e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 1,
+      "epsilon": 1e-05,
+      "rep": 2,
+      "local_complete_pair_ratio": 0.25000286545616784,
+      "input_min_eigenvalue": 1.2499999999055178e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 1,
+      "epsilon": 1e-05,
+      "rep": 3,
+      "local_complete_pair_ratio": 0.25000960278251577,
+      "input_min_eigenvalue": 1.2499999999066723e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 1,
+      "epsilon": 1e-05,
+      "rep": 4,
+      "local_complete_pair_ratio": 0.2500070978412782,
+      "input_min_eigenvalue": 1.249999999897997e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 1,
+      "epsilon": 1e-05,
+      "rep": 5,
+      "local_complete_pair_ratio": 0.2500293107804097,
+      "input_min_eigenvalue": 1.2499999998351933e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 1,
+      "epsilon": 1e-05,
+      "rep": 6,
+      "local_complete_pair_ratio": 0.25001149384053106,
+      "input_min_eigenvalue": 1.249999999941918e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 1,
+      "epsilon": 1e-05,
+      "rep": 7,
+      "local_complete_pair_ratio": 0.2500120755971316,
+      "input_min_eigenvalue": 1.2499999997557272e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 1,
+      "epsilon": 0.02,
+      "rep": 0,
+      "local_complete_pair_ratio": 0.25000000000000777,
+      "input_min_eigenvalue": 0.0024999999999998244,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 1,
+      "epsilon": 0.02,
+      "rep": 1,
+      "local_complete_pair_ratio": 0.2500000000000103,
+      "input_min_eigenvalue": 0.0024999999999999753,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 1,
+      "epsilon": 0.02,
+      "rep": 2,
+      "local_complete_pair_ratio": 0.2500000000000066,
+      "input_min_eigenvalue": 0.0024999999999999055,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 1,
+      "epsilon": 0.02,
+      "rep": 3,
+      "local_complete_pair_ratio": 0.2500000000000033,
+      "input_min_eigenvalue": 0.002499999999999939,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 1,
+      "epsilon": 0.02,
+      "rep": 4,
+      "local_complete_pair_ratio": 0.25000000000000977,
+      "input_min_eigenvalue": 0.0024999999999998526,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 1,
+      "epsilon": 0.02,
+      "rep": 5,
+      "local_complete_pair_ratio": 0.2500000000000044,
+      "input_min_eigenvalue": 0.002499999999999861,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 1,
+      "epsilon": 0.02,
+      "rep": 6,
+      "local_complete_pair_ratio": 0.2500000000000026,
+      "input_min_eigenvalue": 0.002499999999999931,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 1,
+      "epsilon": 0.02,
+      "rep": 7,
+      "local_complete_pair_ratio": 0.25000000000000283,
+      "input_min_eigenvalue": 0.0024999999999999155,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 1,
+      "epsilon": 0.2,
+      "rep": 0,
+      "local_complete_pair_ratio": 0.2500000000000004,
+      "input_min_eigenvalue": 0.02499999999999982,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 1,
+      "epsilon": 0.2,
+      "rep": 1,
+      "local_complete_pair_ratio": 0.25000000000000105,
+      "input_min_eigenvalue": 0.02499999999999993,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 1,
+      "epsilon": 0.2,
+      "rep": 2,
+      "local_complete_pair_ratio": 0.25000000000000017,
+      "input_min_eigenvalue": 0.024999999999999925,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 1,
+      "epsilon": 0.2,
+      "rep": 3,
+      "local_complete_pair_ratio": 0.25000000000000044,
+      "input_min_eigenvalue": 0.024999999999999935,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 1,
+      "epsilon": 0.2,
+      "rep": 4,
+      "local_complete_pair_ratio": 0.254329717556103,
+      "input_min_eigenvalue": 0.024999999999999863,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 1,
+      "epsilon": 0.2,
+      "rep": 5,
+      "local_complete_pair_ratio": 0.25144829514506295,
+      "input_min_eigenvalue": 0.02499999999999985,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 1,
+      "epsilon": 0.2,
+      "rep": 6,
+      "local_complete_pair_ratio": 0.24999999999999994,
+      "input_min_eigenvalue": 0.02499999999999988,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 1,
+      "epsilon": 0.2,
+      "rep": 7,
+      "local_complete_pair_ratio": 0.2500000000000007,
+      "input_min_eigenvalue": 0.024999999999999804,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 2,
+      "epsilon": 1e-05,
+      "rep": 0,
+      "local_complete_pair_ratio": 0.14043390753701712,
+      "input_min_eigenvalue": 1.249999999943315e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 2,
+      "epsilon": 1e-05,
+      "rep": 1,
+      "local_complete_pair_ratio": 0.131253281103737,
+      "input_min_eigenvalue": 1.249999999922562e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 2,
+      "epsilon": 1e-05,
+      "rep": 2,
+      "local_complete_pair_ratio": 0.11184936841256267,
+      "input_min_eigenvalue": 1.249999999918639e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 2,
+      "epsilon": 1e-05,
+      "rep": 3,
+      "local_complete_pair_ratio": 0.1234122680561337,
+      "input_min_eigenvalue": 1.2499999999418608e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 2,
+      "epsilon": 1e-05,
+      "rep": 4,
+      "local_complete_pair_ratio": 0.15059825160496912,
+      "input_min_eigenvalue": 1.2499999999382146e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 2,
+      "epsilon": 1e-05,
+      "rep": 5,
+      "local_complete_pair_ratio": 0.08723921614473747,
+      "input_min_eigenvalue": 1.2499999999188963e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 2,
+      "epsilon": 1e-05,
+      "rep": 6,
+      "local_complete_pair_ratio": 0.10705667689785336,
+      "input_min_eigenvalue": 1.2499999998576293e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 2,
+      "epsilon": 1e-05,
+      "rep": 7,
+      "local_complete_pair_ratio": 0.0803374349232343,
+      "input_min_eigenvalue": 1.2499999998888567e-06,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 2,
+      "epsilon": 0.02,
+      "rep": 0,
+      "local_complete_pair_ratio": 0.23861052632156793,
+      "input_min_eigenvalue": 0.002499999999999892,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 2,
+      "epsilon": 0.02,
+      "rep": 1,
+      "local_complete_pair_ratio": 0.24980627904904001,
+      "input_min_eigenvalue": 0.0024999999999999463,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 2,
+      "epsilon": 0.02,
+      "rep": 2,
+      "local_complete_pair_ratio": 0.2966705470876839,
+      "input_min_eigenvalue": 0.002499999999999878,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 2,
+      "epsilon": 0.02,
+      "rep": 3,
+      "local_complete_pair_ratio": 0.20074463458257663,
+      "input_min_eigenvalue": 0.002499999999999888,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 2,
+      "epsilon": 0.02,
+      "rep": 4,
+      "local_complete_pair_ratio": 0.24075104363986738,
+      "input_min_eigenvalue": 0.0024999999999998795,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 2,
+      "epsilon": 0.02,
+      "rep": 5,
+      "local_complete_pair_ratio": 0.2979269513489031,
+      "input_min_eigenvalue": 0.002499999999999968,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 2,
+      "epsilon": 0.02,
+      "rep": 6,
+      "local_complete_pair_ratio": 0.24934391918482807,
+      "input_min_eigenvalue": 0.002499999999999904,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 2,
+      "epsilon": 0.02,
+      "rep": 7,
+      "local_complete_pair_ratio": 0.2938945681664238,
+      "input_min_eigenvalue": 0.002499999999999945,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 2,
+      "epsilon": 0.2,
+      "rep": 0,
+      "local_complete_pair_ratio": 0.30059345544909716,
+      "input_min_eigenvalue": 0.024999999999999883,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 2,
+      "epsilon": 0.2,
+      "rep": 1,
+      "local_complete_pair_ratio": 0.2959085284705143,
+      "input_min_eigenvalue": 0.024999999999999863,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 2,
+      "epsilon": 0.2,
+      "rep": 2,
+      "local_complete_pair_ratio": 0.2958927718147431,
+      "input_min_eigenvalue": 0.02499999999999977,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 2,
+      "epsilon": 0.2,
+      "rep": 3,
+      "local_complete_pair_ratio": 0.30290707251573484,
+      "input_min_eigenvalue": 0.024999999999999824,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 2,
+      "epsilon": 0.2,
+      "rep": 4,
+      "local_complete_pair_ratio": 0.2890879732055619,
+      "input_min_eigenvalue": 0.02499999999999992,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 2,
+      "epsilon": 0.2,
+      "rep": 5,
+      "local_complete_pair_ratio": 0.28993429495047207,
+      "input_min_eigenvalue": 0.02499999999999997,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 2,
+      "epsilon": 0.2,
+      "rep": 6,
+      "local_complete_pair_ratio": 0.25763387930434956,
+      "input_min_eigenvalue": 0.024999999999999932,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 2,
+      "epsilon": 0.2,
+      "rep": 7,
+      "local_complete_pair_ratio": 0.2966042628684632,
+      "input_min_eigenvalue": 0.024999999999999932,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 8,
+      "epsilon": 1e-05,
+      "rep": 0,
+      "local_complete_pair_ratio": 0.2979202930893248,
+      "input_min_eigenvalue": 0.0001899967016921438,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 8,
+      "epsilon": 1e-05,
+      "rep": 1,
+      "local_complete_pair_ratio": 0.29659651719714314,
+      "input_min_eigenvalue": 0.002792430307879327,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 8,
+      "epsilon": 1e-05,
+      "rep": 2,
+      "local_complete_pair_ratio": 0.29223067035363576,
+      "input_min_eigenvalue": 0.0007123357586963702,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 8,
+      "epsilon": 1e-05,
+      "rep": 3,
+      "local_complete_pair_ratio": 0.2986818989857755,
+      "input_min_eigenvalue": 0.0006351297606860645,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 8,
+      "epsilon": 1e-05,
+      "rep": 4,
+      "local_complete_pair_ratio": 0.3057303547931537,
+      "input_min_eigenvalue": 3.817643823642406e-05,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 8,
+      "epsilon": 1e-05,
+      "rep": 5,
+      "local_complete_pair_ratio": 0.29764771684826735,
+      "input_min_eigenvalue": 0.0018376703745131703,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 8,
+      "epsilon": 1e-05,
+      "rep": 6,
+      "local_complete_pair_ratio": 0.29661848021311443,
+      "input_min_eigenvalue": 0.00036578581335684735,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 8,
+      "epsilon": 1e-05,
+      "rep": 7,
+      "local_complete_pair_ratio": 0.30168384909702156,
+      "input_min_eigenvalue": 0.0035956343423619937,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 8,
+      "epsilon": 0.02,
+      "rep": 0,
+      "local_complete_pair_ratio": 0.2988764178839862,
+      "input_min_eigenvalue": 0.005326711697284304,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 8,
+      "epsilon": 0.02,
+      "rep": 1,
+      "local_complete_pair_ratio": 0.2838943199979845,
+      "input_min_eigenvalue": 0.004120269543465798,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 8,
+      "epsilon": 0.02,
+      "rep": 2,
+      "local_complete_pair_ratio": 0.3035473522713674,
+      "input_min_eigenvalue": 0.0026941789503428615,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 8,
+      "epsilon": 0.02,
+      "rep": 3,
+      "local_complete_pair_ratio": 0.3002567973580751,
+      "input_min_eigenvalue": 0.0067937486616638605,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 8,
+      "epsilon": 0.02,
+      "rep": 4,
+      "local_complete_pair_ratio": 0.2978466057403084,
+      "input_min_eigenvalue": 0.004567620192281657,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 8,
+      "epsilon": 0.02,
+      "rep": 5,
+      "local_complete_pair_ratio": 0.29845857618054367,
+      "input_min_eigenvalue": 0.0031386257979170184,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 8,
+      "epsilon": 0.02,
+      "rep": 6,
+      "local_complete_pair_ratio": 0.2992673079471863,
+      "input_min_eigenvalue": 0.0036732653326387466,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 8,
+      "epsilon": 0.02,
+      "rep": 7,
+      "local_complete_pair_ratio": 0.306933481215976,
+      "input_min_eigenvalue": 0.0033042223320662767,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 8,
+      "epsilon": 0.2,
+      "rep": 0,
+      "local_complete_pair_ratio": 0.3024803232775491,
+      "input_min_eigenvalue": 0.025846974488759018,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 8,
+      "epsilon": 0.2,
+      "rep": 1,
+      "local_complete_pair_ratio": 0.296148955243217,
+      "input_min_eigenvalue": 0.025828282022165427,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 8,
+      "epsilon": 0.2,
+      "rep": 2,
+      "local_complete_pair_ratio": 0.29995364902357646,
+      "input_min_eigenvalue": 0.02715193513369234,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 8,
+      "epsilon": 0.2,
+      "rep": 3,
+      "local_complete_pair_ratio": 0.29428233395791104,
+      "input_min_eigenvalue": 0.025048859773676803,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 8,
+      "epsilon": 0.2,
+      "rep": 4,
+      "local_complete_pair_ratio": 0.2924393332667072,
+      "input_min_eigenvalue": 0.027829480794779447,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 8,
+      "epsilon": 0.2,
+      "rep": 5,
+      "local_complete_pair_ratio": 0.2962346398531049,
+      "input_min_eigenvalue": 0.026278156630681226,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 8,
+      "epsilon": 0.2,
+      "rep": 6,
+      "local_complete_pair_ratio": 0.2952221507201606,
+      "input_min_eigenvalue": 0.02541250229053384,
+      "reference_tangent_residual": 0.0
+    },
+    {
+      "r": 4,
+      "rank": 8,
+      "epsilon": 0.2,
+      "rep": 7,
+      "local_complete_pair_ratio": 0.2953675825705712,
+      "input_min_eigenvalue": 0.02552684372440521,
+      "reference_tangent_residual": 0.0
+    }
+  ],
+  "boundaries": "arbitrary states, not restricted SEP; pair tangent coefficient differs from actual-product MI; no claim that a tangent result has been converted to finite relative entropy"
+}
