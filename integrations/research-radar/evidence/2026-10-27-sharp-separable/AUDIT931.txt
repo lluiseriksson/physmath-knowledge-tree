@@ -1,0 +1,368 @@
+AUDIT931 — Auditoría matemática adversa por componentes
+27 de octubre de 2026. Sin nota, sin decisión de manuscrito, sin afirmación de prioridad.
+
+OBJETO Y LÍMITES DE LA REVISIÓN
+
+Se revisaron íntegramente PROOF925.txt y PROOF929.txt del paquete INPUT930.
+El SHA256 del índice, comprobado antes de leerlo, fue
+4f15ffc96cfb2308ba63d26c50335fb150d030e3cf0ee19da6b26e7736a03ed0.
+Después se verificaron los tamaños y hashes de sus ocho payloads antes de
+leerlos. Los scripts originales se ejecutaron sin modificación y sus salidas
+coinciden byte a byte con los resultados suministrados. La comprobación final
+de integridad abarca también la copia del input en D:.
+
+Se solicitó GPT-6 Astra con esfuerzo xhigh y un único revisor. La configuración
+efectiva, independencia y aislamiento no están atestados por esta auditoría.
+Se trabajó en un contexto de conversación separado, con sistema de archivos
+compartido. No se crearon subagentes. No se consultaron ESTADO, otros chats,
+auditorías anteriores ni objetivos de calificación. Se leyó D:\LEEME.md.
+Se leyeron los scripts y READINGS925 del paquete autorizado; no se usó este
+último como sustituto de la consulta de fuentes primarias. SUBGRAPH925 se
+verificó por hash, sin usarlo como prueba ni como certificación de cobertura.
+No se editó el input, un PDF, el repositorio ni el estado; no se publicó nada.
+
+RESULTADOS POR COMPONENTE
+
+925, caracterización por el núcleo: el argumento es válido bajo las hipótesis
+declaradas, con las convenciones de soporte que se explicitan abajo. No se
+encontró contraejemplo a la equivalencia ni a la constante propuesta.
+
+929, extensión Petz/standard: la comparación de generadores y su integración
+son válidas para entradas de rango completo y todo R finito. La misma
+constante funciona simultáneamente para la clase indicada. El paso integral
+pendiente en el texto queda respaldado por la representación precisa de
+Iyer et al., v2, §2.3, ecuación (6).
+
+925, robustez inyectiva: la cota perturbativa es válida cuando las cuatro
+cotas de error indicadas se satisfacen y los mapas perturbados son canales.
+No se extiende a perturbaciones arbitrarias de pares con N no inyectiva.
+
+Alcance bibliográfico: las técnicas ordinarias, el orden de resolventes, la
+representación integral y los métodos completos mediante normas L2 tienen
+antecedentes claros. La búsqueda acotada no establece prioridad ni demuestra
+que el enunciado combinado no exista. No se identificó en las secciones
+examinadas un teorema que, por simple sustitución de parámetros, contenga
+exactamente la caracterización general y la constante uniformes en R y f.
+Esto es una conclusión de cobertura limitada, no una conclusión de novedad.
+
+1. FACTORIZACIÓN LINEAL, NORMA Y CONSTANTE
+
+Todas las matrices de canales se interpretan en bases ortonormales para el
+producto Hilbert–Schmidt complejo. Para mapas finitos, ker N ⊆ ker M implica
+que L0(NX)=MX está bien definida en ran N. Extendiendo por cero en (ran N)^⊥
+se obtiene L=M N^+, con LN=M. No se requiere que L sea positiva o preserve
+la traza fuera de ran N. K=||L||2→2 es finito y positivo porque M no es cero.
+
+La extensión por cero minimiza la norma de operador entre las extensiones de
+L0: cualquier otra coincide con L0 en ran N, de modo que tiene norma al menos
+||L0||, mientras la extensión por cero tiene exactamente esa norma. Esto no
+convierte la cota entrópica en óptima.
+
+Es correcto utilizar el espacio complejo entero y no sólo matrices sin traza.
+En los bloques de referencia aparecen tanto bloques no hermitianos como
+bloques de traza no nula. Para esta elección particular de L, hay además una
+observación útil: M,N,N^+ y L preservan adjuntos. En bases hermitianas sus
+matrices son reales. Por ello una cota en TODO el espacio hermitiano también
+se extendería al complejo sin pérdida: para Z=A+iB, A,B hermitianos,
+||LZ||2²=||LA||2²+||LB||2² y ||Z||2²=||A||2²+||B||2². La advertencia del
+input es prudente, pero no debe presentarse como una obstrucción nueva.
+Una cota sólo en el subespacio hermitiano sin traza sí sería insuficiente.
+
+Con Choi NO normalizado, J_T=I_A⊗I_B para T(X)=Tr(X)I_B. De aquí salen
+exactamente αT≤cp M y N≤cp βT. Usar un Choi normalizado sin ajustar ambos
+parámetros sería un cambio de convención. Los α,β usados aquí son
+λmin(J_M)>0 y λmax(J_N)>0. No aparece un factor adicional d_A o d_B.
+
+La cota λ=α/(βK²) es coherente con λ≤1. Para cualquier estado x,
+||Mx||2²≥α Tr(Mx)=α y ||Nx||2²≤β Tr(Nx)=β; LN=M implica K²≥α/β.
+La información que vive sólo en R también obliga a no prometer λ>1.
+
+2. SOPORTE SINGULAR: FORMULACIÓN EXACTA
+
+Sea P_B=supp N(I_A). Si x_AR>0, existen c,C>0 con cI≤x≤CI.
+Aplicando N⊗id se obtiene
+c N(I_A)⊗I_R ≤ N_R(x) ≤ C N(I_A)⊗I_R.
+Por tanto ambos outputs de entradas fieles tienen exactamente el soporte
+P=P_B⊗I_R. En el rincón P B(BR) P son definidos positivos. Para todo X
+hermitiano, -d x≤X≤d x muestra que N_R(X)=P N_R(X) P; por linealidad sucede
+también para X complejo. No se supone que N(I) sea invertible en todo B.
+
+Es preferible sustituir la frase de regularización informal de929 por esta
+compresión explícita. Sea Q la proyección ortogonal HS, Q(Z)=PZP.
+U=I_B⊗rho_R y V=I_B⊗sigma_R conmutan con P. En consecuencia
+A_t=L_U+tR_V conmuta con Q. En el rincón Q, A_t es definido positivo y
+B_t=L_{N_R rho}+tR_{N_R sigma} también, incluso para t=0.
+La desigualdad B_t≤β A_t se comprime y se invierte en ese mismo rincón:
+B_t^{-1}≥β^{-1}(A_t|Q)^{-1}.
+Para Z=N_R(rho-sigma) resulta
+<Z,B_t^{-1}Z>≥β^{-1}<Z,A_t^{-1}Z>.
+No se utiliza la falsa regla general de invertir Moore–Penrose preservando
+el orden cuando cambian los soportes. En t=0, L_{N_R rho} tiene además un
+kernel en el HS exterior; comprimir primero evita cualquier ambigüedad.
+
+La regularización también puede justificarse, si se desea: sumar δI a ambos
+superoperadores comparados, invertir y pasar al límite sobre Q. No basta
+con escribir una inversa global de N_R rho sin declarar su dominio.
+
+3.925: BKM, PONDERACIÓN Y PASO GLOBAL
+
+Para A>0, g_A(Z)=∫_0^∞ Tr[Z†(A+sI)^{-1}Z(A+sI)^{-1}] ds.
+Si A≤cB, la monotonía inversa aplicada a ambos factores, o la comparación
+de sus productos tensoriales positivos en HS, da g_A≥c^{-1}g_B.
+La homogeneidad g_{cB}=c^{-1}g_B fija el factor. La afirmación es válida
+para bases positivas no normalizadas; V=I_B⊗sigma_R no es un estado salvo
+d_B=1. La compresión de la sección anterior maneja la base singular N.
+
+En la base sigma_R=Σ_i r_i|i><i|,
+g_V(Z)=Σ_ij ell(r_i,r_j)||Z_ij||2²,
+ell(a,b)=(log a-log b)/(a-b), ell(a,a)=1/a.
+Cada peso es positivo y L actúa exclusivamente en Z_ij. Así,
+g_V(L_R Z)≤K²g_V(Z) sin depender de dim R ni λmin(sigma_R).
+Combinando los tres pasos se obtiene
+g_{M_R sigma}(M_R X)≤βK²/α · g_{N_R sigma}(N_R X).
+Ninguna conmutatividad de sigma_AR con su marginal es necesaria.
+
+Para entradas rho,sigma>0 y Delta=rho-sigma,
+D(rho||sigma)=∫_0^1(1-s)g_{sigma+sDelta}(Delta) ds.
+La identidad vale en el soporte fijo de cada salida. La misma ponderación
+integra ambas desigualdades y conserva exactamente λ. El factor integral
+∫(1-s)ds=1/2 se cancela al comparar los dos canales.
+
+Para rho≪sigma en la frontera, existe C con rho≤C sigma. Las salidas
+satisfacen la misma inclusión y tienen entropía relativa finita. Al mezclar
+ambos estados con el mismo omega>0, la convexidad conjunta da limsup≤D
+y la semicontinuidad inferior da liminf≥D, para cada canal. Esto demuestra
+el paso a la frontera de925 sin intercambiar una integral singular.
+
+4.929: IDENTIDAD RESOLVENTE Y DOS MARGINALES
+
+Escribiendo D=L_rho R_sigma^{-1}, A=L_rho+tR_sigma, se tiene D+tI=A R_sigma^{-1}.
+Las multiplicaciones a izquierda y derecha son autoadjuntas positivas y
+conmutan entre sí aunque rho y sigma no conmuten como matrices. Además,
+(D-I)sqrt(sigma)=Delta sigma^{-1/2}.
+En el producto cuadrático, (D+tI)^{-1}=R_sigma A^{-1}, y los factores
+R_sigma^{-1/2} y R_sigma se cancelan por conmutatividad con A. Por tanto
+D^std_{f_t}(rho||sigma)=<Delta,A^{-1}Delta>, f_t(x)=(x-1)²/(x+t).
+Para el generador cuadrático f_∞(x)=(x-1)² resulta <Delta,R_sigma^{-1}Delta>.
+No es un cálculo BKM ni un reemplazo por una divergencia máxima.
+
+La cota CP se aplica por separado a rho y sigma:
+M_R rho≥αU, M_R sigma≥αV, N_R rho≤βU, N_R sigma≤βV.
+Luego L_{M_R rho}+tR_{M_R sigma}≥α A_t, y su inversa≤α^{-1}A_t^{-1}.
+La cota inversa para N fue justificada en el soporte en la sección2.
+
+Sean rho_R=Σ_i a_i|u_i><u_i| y sigma_R=Σ_j b_j|v_j><v_j|.
+Las matrices |u_i><v_j| constituyen una base ortonormal del HS de R aunque
+las dos bases sean distintas. Sobre Z=Σ_ij Z_ij⊗|u_i><v_j|,
+<Z,A_t^{-1}Z>=Σ_ij ||Z_ij||2²/(a_i+t b_j).
+Todos los pesos son positivos. Como L_R deja intacto |u_i><v_j|,
+<L_R Z,A_t^{-1}L_R Z>≤K²<Z,A_t^{-1}Z>.
+Esta identidad evita una diagonalización simultánea inexistente y evita
+dependencia de los valores propios pequeños de los marginales.
+
+Aplicada a Z=N_R Delta da D^std_{f_t}(N_R rho||N_R sigma)
+≥λ D^std_{f_t}(M_R rho||M_R sigma). Con A_∞=R_V se prueba exactamente
+lo mismo para el término cuadrático. t=0 no se descarta.
+
+5. REPRESENTACIÓN INTEGRAL, FINITUD Y NECESIDAD
+
+La normalización compatible con929 es
+f(x)=f'(1)(x-1)+b(x-1)²+∫_[0,∞) (x-1)²/(x+t) dμ(t),
+b≥0, μ≥0 y ∫_[0,∞)(1+t)^{-1}dμ(t)<∞.
+El átomo μ({0}) está incluido una sola vez. Equivalentemente puede escribirse
+fuera de la integral sobre (0,∞). El término b no se representa como un
+átomo finito; corresponde al extremo cuadrático. Iyer et al. v2 §2.3 Eq6
+da precisamente esta representación, y su prueba del Teorema5.7 utiliza
+la versión con [0,∞). No hay cambio silencioso de medida.
+
+En estados de traza igual, la parte afín aporta cero. Los generadores son
+no negativos. La identidad espectral de Petz es una suma finita de
+b_j f(a_i/b_j)|<u_i,v_j>|². Para matrices fieles, los cocientes quedan en
+un compacto contenido en (0,∞), y el peso de cada generador está dominado
+por una constante por (1+t). La integrabilidad anterior justifica la
+integración. También basta Tonelli para la parte no negativa. Al integrar
+las desigualdades se obtiene la MISMA λ para todo f de la clase.
+
+Para una función operador-convexa no afín, b>0 o μ no es cero; todos los
+generadores cuadráticos son estrictamente positivos para Delta≠0 en matrices
+fieles. Así D_f^std(rho||sigma)>0 si rho≠sigma. En particular, la necesidad
+del núcleo puede afirmarse incluso para cada f no afín de esta clase:
+si H∈ker N es hermitiano y MH≠0, TP implica Tr H=0, y rho=I/d+sH,
+sigma=I/d son estados fieles distintos para |s| pequeño. La salida de N
+es igual, mientras que la de M es distinta. Una constante positiva falla.
+El testigo hermitiano existe tomando parte real o imaginaria de un testigo
+complejo, pues N,M preservan adjuntos.925 ya prueba correctamente esta
+necesidad para Umegaki;929 sólo necesita esa versión más débil para la clase
+simultánea.
+
+El resultado auditado de929 conserva entradas de rango completo. No se
+traslada automáticamente la condición unilateral rho≪sigma a todas las f
+con f(0)=∞. Las divergencias maximal/measured, el coeficiente condicional,
+la optimalidad, capacidades y casos de J_M singular quedan fuera.
+
+6. ROBUSTEZ E INESTABILIDAD FUERA DE ELLA
+
+Si N es inyectiva, ||N^+||=1/ν y K≤S/ν, donde S=||M||2→2.
+Las perturbaciones dan α'≥α-ε_M, β'≤β+ε_N, ν'≥ν-δ_N y S'≤S+δ_M.
+Con ε_M<α y δ_N<ν, N' permanece inyectiva y por tanto ker N'⊆ker M'
+sin ajuste adicional. La cota positiva es
+(α-ε_M)(ν-δ_N)² / [(β+ε_N)(S+δ_M)²].
+Los errores de Choi y de superoperadores se mantuvieron separados. El
+control propio obtiene 0.004984682633187964, inferior a la cota directa
+0.011046848165533859 del par perturbado.
+
+Límite adverso explícito: N=dephasing, M0=.7 dephasing+.3 depolarizing.
+Entonces J_M0>0 y ker N⊆ker M0. Pero Mε=(1-ε)M0+ε id es un canal con
+Choi positivo para 0<ε<1, y Mε(sigma_x)=ε sigma_x mientras N(sigma_x)=0.
+La comparación positiva desaparece para toda ε>0. La robustez inyectiva
+no debe convertirse en una afirmación abierta sobre todos los pares925.
+
+7. CONTROLES REPRODUCIBLES Y RESIDUOS CONSERVADOS
+
+REPRO925.json coincide con CHECK925.json:
+ac9fbb456595227a24b6fd831d4be0eac6cc2c0d949a7e328f24ac6e4d39acc6.
+REPRO929.json coincide con CHECK929.json:
+d71f20bac8ea677a2fe31d58861563aae50e5e342e9bdf38f27633adbd8ff407.
+Los 12 controles métricos y 64 controles escalares originales no incluyen
+N(I) singular; por ello no se tomaron como cobertura del caso de soporte.
+
+check931.py, semilla931, usa una implementación independiente y cuatro pares:
+(a) N(X)=V AD_.73(X)V†, A=2,B=3; M=.65 W X W†+.35 Tr(X)I3/3.
+V inserta C² en C³ y W es otra isometría. N(I) tiene espectro(0,.27,1.73),
+α=.1166666666666666, β=1.27, K=3.030164601066223, λ≈.010004851063167806.
+L no es positiva: sobre V|1><1|V† tiene valor propio -.65*.73/.27+.35/3<0.
+(b) N=V dephasing(·)V† y M=.65 W dephasing(·)W†+.35 Tr(·)I3/3;
+N(I) singular y núcleo compartido no trivial; λ≈.1444788441692466.
+(c) N=AD_.73 y M=.7 id+.3 depolarizing; L no positiva; λ≈.011065522588049914.
+(d) N reemplaza por |0><0| en B=3 y M por tau>0; rank N(I)=1;
+K²=Tr(tau²)=54/125, λ≈.34025569868492156.
+
+Para cada par: cuatro pares de estados correlacionados con R=2,3 y un par
+filtrado con marginales mal condicionados. Todos los pares tienen marginales
+que no conmutan. Se comprobaron:
+  • 140 generadores: t=0,10^-8,.2,1,17,10^6 y extremo cuadrático;
+  • 20 bases BKM en TODO el espacio complejo de entrada;
+  • 100 divergencias adicionales: Umegaki, inversa, potencia3/2, menos raíz
+    cuadrada y combinación positiva que incluye ambos extremos;
+  • 20 identidades explícitas de las dos bases marginales.
+Cada generador verifica por matrices de Gram las cotas M-base, N-base,
+ponderación de L y comparación combinada en todo el espacio complejo de
+esa base. Se contrastó la fórmula de superoperadores con evaluación espectral
+directa de Petz para M y N. Se usa (1+t)f_t para mejorar la escala numérica;
+ese factor común no cambia la desigualdad.
+
+Los residuos no se han ocultado: el mínimo relativo registrado fue
+-9.3171238879016e-10, en la igualdad ponderada del reemplazador con marginal
+mal condicionada. En ese caso la diferencia ES CERO analíticamente:
+Q_A(tau⊗Z_R)=Tr(tau²)Q_AR(Z_R) y Q_A(|0><0|⊗Z_R)=Q_AR(Z_R).
+adverse931.py verifica K²=54/125 exactamente y repite este mecanismo con
+70 dígitos y marginales racionales no conmutantes; el residual máximo de los
+tres controles es inferior a4e-65. No es una repetición de los estados
+aleatorios originales a alta precisión, ni se presenta como tal.
+El error relativo máximo de identidad generador/espectral fue7.38e-10;
+el de la expansión de dos bases fue3.53e-11. Son cálculos de punto flotante,
+no certificados de intervalos ni una prueba del cuantificador universal.
+
+ADVERSE931 añade el fallo exacto de núcleo, la inestabilidad no inyectiva y
+un par frontera con ranks de entrada1 y2, R=3 y marginal de rango2.
+Para éste D_N=.32848123682723007, D_M=.33407411822677335, λ≈.010004851063167813.
+La regularización común para ε=10^-1,10^-3,10^-5,10^-7 converge a los valores
+frontera y satisface la cota en cada muestra. El argumento analítico, no esta
+tabla, fundamenta la extensión frontera de925.
+
+8. ANTECEDENTES: VERSIONES, COBERTURA Y DIFERENCIAS
+
+Iyer–Wu–Belzig–Smith, arXiv:2510.06183v2, 14 octubre2025:
+https://arxiv.org/html/2510.06183v2
+Leídos §2.3, §5.3 (teoremas5.6/5.7 y pruebas, corolario5.8) y §6.2,
+incluidos lemas6.6/6.7 y sus pruebas. Eq6 cubre la representación empleada.
+Las equivalencias y comparación métrica/HS ordinarias preexisten. Aplicarlas
+a M⊗id no da automáticamente uniformidad: el mínimo de salida depende del
+marginal R y puede tender a cero.929 añade a ese uso ordinario una comparación
+directa de resolventes con dos marginales. Esta descripción no es una
+afirmación de prioridad; la mayor parte de las herramientas está en la fuente.
+
+Belzig–Gao–Smith–Wu, arXiv:2411.19890v3, 8 octubre2025:
+https://arxiv.org/html/2411.19890v3
+Leídos §4.1, §4.2, proposición5.4 y §7. La comparación BKM, el uso del
+orden CP y la comparación ordinaria con HS son anteriores. §4.2 advierte
+que orden CP no basta para comparar los vectores tangentes;925 introduce
+explícitamente la factorización que evita ese salto. §7 define un coeficiente
+mediante información mutua; su nomenclatura no identifica todos los coeficientes
+con referencia. Se detectó el problema literal de normalización descrito en9.
+
+Hirche, arXiv:2608.27171v1:
+https://arxiv.org/html/2608.27171v1
+Leídos §2.5, §2.6, §3.6 y conclusión; se consultaron también las definiciones
+introductorias. Sus coeficientes completos restringen marginales iguales;
+los condicionales restan D(rho_R||sigma_R). El cociente bruto para todos los
+pares que usa925/929 es distinto. El resultado revisado implica una cota
+para el caso de marginales iguales, pero no permite restar divergencias y
+afirmar la misma cota condicional. No se identificó una caracterización por
+núcleos y Choi en las secciones leídas; no se auditó todo el artículo.
+
+Gao–Rouzé, Complete Entropic Inequalities for Quantum Markov Chains,
+Archive for Rational Mechanics and Analysis245,183–238(2022), versión editorial:
+https://link.springer.com/article/10.1007/s00205-022-01785-1
+Consulta dirigida de lemas2.1,2.2,2.4 y fórmulas/pruebas mostradas, definición
+CSDPI y corolario4.3. Proporciona antecedentes de comparación ponderada y
+estimaciones completas L2, con canales simétricos y estados relacionados con
+una expectativa condicional. No es legítimo llamar nueva a la idea general
+de preservar una referencia mediante orden CP y métodos espectrales. Las
+restricciones del resultado consultado no son las del par arbitrario925/929;
+no se ha probado una reducción que cubra automáticamente el enunciado actual.
+
+Gao–Junge–LaRacuente–Li, Complete positivity order and relative entropy decay,
+Forum of Mathematics,Sigma13:e31(2025), doi10.1017/fms.2024.117:
+https://doi.org/10.1017/fms.2024.117
+Sólo identificación editorial y resumen primario recuperados. Se conserva como
+antecedente potencial de técnicas completas, NO como lectura de sus pruebas.
+La evaluación de antecedentes no es exhaustiva. Búsquedas de palabras y
+snippets amplían la lista de candidatos, pero no certifican ausencia de un
+teorema equivalente en otra formulación.
+
+9. HALLAZGO ADVERSO EN UNA FÓRMULA CITADA
+
+La ecuación52 de BGSW v3, con el logaritmo natural coherente con su integral
+Eq15, escribe un límite inferior1/lambda_max por el HS² sin factor1/2.
+Tomando Phi=.5 id+.5 depolarizing, sigma=I2/2 y rho=diag(.6,.4),
+lambda_min=.25, lambda_max=.75 son cotas válidas para todas las salidas.
+Entonces Phi(rho)=diag(.55,.45), ||Phi(rho-sigma)||2²=.005 y
+D=.55 log1.1+.45 log.9=.00500836684635683747...
+El límite inferior literal sería.005/.75=.00666666666666667, que es mayor.
+El límite general obtenido por la integral Hessiana es HS²/(2lambda_max),
+y análogamente HS²/(2lambda_min) para la cota superior bajo esas cotas.
+La comprobación de70 dígitos se conserva. Este diagnóstico se limita a la
+fórmula y convención especificadas; no invalida la idea de equivalencia
+ordinaria.925 compara dos integrales Hessianas iguales, por lo que no hereda
+ese problema de normalización. No se debe copiar Eq52 como constante literal
+sin corregir la convención.
+
+10. PRECISIONES RECOMENDADAS PARA UNA PRESENTACIÓN MATEMÁTICA
+
+Estas precisiones hacen explícito el argumento auditado; no son una decisión
+editorial ni una evaluación numérica:
+  • Definir todas las inversas de N en P_B⊗R y usar la compresión de2.
+  • Escribir la integrabilidad de μ, el átomo en0 y el término b por separado.
+  • Mantener la norma HS compleja entera y la convención Choi no normalizada.
+  • Distinguir el cociente bruto con referencia del coeficiente condicional.
+  • Presentar la necesidad de núcleo, uniformidad enR y extensión enf como
+    componentes separados; los dos primeros no demuestran por sí solos el
+    tercero, que aquí sí se sostiene por los generadores.
+  • Mantener el límite de hipótesis J_M>0, la frontera restringida de929 y
+    la robustez sólo en el régimen inyectivo indicado.
+  • Citar los antecedentes ordinarios y completos, sin afirmar prioridad.
+
+ARCHIVOS Y REPRODUCCIÓN
+
+check931.py produce CHECK931.json y SUMMARY931.json; adverse931.py produce
+ADVERSE931.json. Los scripts originales se encuentran únicamente en el input
+inmutable y se ejecutaron con --output apuntando al directorio931.
+Las tres páginas arXiv se conservaron como HTML con hashes en
+PRIMARY_RETRIEVAL931.json; *_read_sections.txt delimita lectura de secciones,
+sin implicar lectura íntegra de todos los HTML descargados. READINGS931.json
+registra fuentes adicionales, alcance y consultas. INCIDENTS931.txt conserva
+los problemas de herramientas y el residual numérico. verdict931.json ofrece
+estados por componente sin calificación. MANIFEST931.json y COPYCHECK931.json
+documentan la copia final exacta en D: y excluyen expresamente la recursión de
+autohashes. No existe resultado de aprobación de manuscrito en este informe.

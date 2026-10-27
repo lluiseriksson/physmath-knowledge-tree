@@ -1,0 +1,134 @@
+939 — Proposed sharp separable/PPT mutual-information contraction benchmark
+27 October2026. New analytic notes, not part of PDF922 or review923.
+No priority, grade, capacity formula or independent audit claimed.
+
+Let A=C^d, d>=2, tau be any density matrix on A, 0<lambda<1, p=1-lambda,
+and N(X)=lambda X+p Tr(X)tau. Write a=lambda_min(tau)>=0.
+Proposed result: the supremum of I(R:B)/I(R:A), over all finite R and
+separable input states with positive denominator, is EXACTLY
+ c_sep=lambda^2/(lambda+p a).
+The same supremum has that value over PPT inputs and over the larger class
+obeying the reduction condition rho_AR<=I_A tensor rho_R.
+For depolarizing tau=I/d this is d lambda^2/[1+(d-1)lambda].
+No claim that this is the UNRESTRICTED complete MI coefficient.
+
+1. Upper bound, arbitrary reference. Put S=rho_A tensor rho_R,
+Delta=rho-S and S_t=S+tDelta. For a reduction-positive rho, also
+S_t<=I_A tensor rho_R for every t, since both endpoints obey it.
+Let T=tau tensor rho_R. Since tau>=a I, T>=a S_t. Hence
+ N_R(S_t)=lambda S_t+pT >=(lambda+p a) S_t.
+Because Tr_A Delta=0, N_R(Delta)=lambda Delta. BKM order therefore gives
+ g_{N_R(S_t)}(N_R Delta)<=lambda^2/(lambda+p a) g_{S_t}(Delta).
+Integrating gives the claimed MI upper bound, because the input and output
+reference states are products of the corresponding marginals.
+For the boundary, mix rho with a full-rank product state, recompute BOTH
+actual marginals and their product, and apply the faithful-state argument.
+The reduction condition is convex and its right marginal is linear, so it
+survives that mixing. Finite-dimensional MI is continuous, including at
+zero eigenvalues; take the mixing parameter to zero. This does not assume
+that a mixture of the two product reference states remains their actual
+marginal product. Alternatively restrict a singular R marginal first.
+
+Separable states satisfy rho<=I_A tensor rho_R directly: for a convex
+product decomposition rho=sum_j q_j alpha_j tensor beta_j, use alpha_j<=I.
+PPT states satisfy it too: the reduction map R_A(X)=Tr(X)I-X is completely
+copositive, since J_{R_A composed with transpose}=I-F>=0 (F is the swap).
+Thus (R_A tensor id)(rho)>=0 if rho^{T_A}>=0. This is an antecedent
+reduction-criterion fact, not new machinery.
+
+2. Sharp separable lower bound. Choose tau eigenvectors |0>,|1>, with
+eigenvalues a and b respectively, where a is a minimum eigenvalue; other
+eigenvalues may be arbitrary. Embed a two-level A state (zero population
+outside that span). R is a single qubit. For n>=3 let
+x=1/n, r=2^(-n^2), eps=r/n^2,
+S=diag(1-x,x)_A tensor diag(1-r,r)_R,
+rho=S+eps E, E=|00><11|+|11><00|.
+The state has the same marginals as S and is positive on its two-level
+support. Since min eig(S)=r/n and ||E||=1,
+(1-1/n)S<=rho<=(1+1/n)S on this support. Positivity of N_R preserves
+these relative-order bounds on output as well.
+
+Separability is explicit. With D_A=diag(sqrt(1-x),sqrt(x)) and
+D_R=diag(sqrt(1-r),sqrt(r)), write
+rho=(D_A tensor D_R)(I_4+tE)(D_A tensor D_R),
+t=eps/sqrt(x(1-x)r(1-r)), 0<t<1.
+Using Pauli matrices, E=(XX-YY)/2 and
+ I_4+tE=(1-t)I_4+(t/2)(I_4+XX)+(t/2)(I_4-YY).
+Each displayed positive term is separable in its X or Y eigenbases.
+After local filtering the normalized state remains separable. Its joint
+state is nonclassical on R since [rho,I tensor rho_R]!=0 and rho_R is
+nondegenerate. The embedding into larger A preserves separability.
+
+3. Actual finite MI, not only an infinitesimal diagnostic. With
+ell(u,v)=(log u-log v)/(u-v), the BKM forms on the two nonzero coherence
+entries are
+ gin=2 ell((1-x)(1-r),xr),
+ gout=2 lambda^2 ell(u(1-r),v r),
+ u=lambda(1-x)+p a, v=lambda x+p b.
+Other A eigenpopulations at the output produce no coherence tangent and
+no additional term in these forms. For a=b=0 both output blocks still
+have positive weight for finite n; tau has total trace1 elsewhere.
+Relative-order control along the segment bounds each finite divergence by
+eps^2 g/[2(1+1/n)] <=D<=eps^2 g/[2(1-1/n)]. Hence
+ I(R:B)/I(R:A)>=(n-1)/(n+1) gout/gin.
+Put T_n=n^2 log2. At input gin~2T_n, since its denominator tends1 and
+log((1-x)/x)=O(log n). At output u->lambda+p a>0, while v either tends
+positive p b or is lambda/n; its logarithm is O(log n). Thus
+gout~2lambda^2 T_n/(lambda+p a). The finite MI ratios tend c_sep.
+This proves sharpness even with separable states and a single-qubit R.
+The information itself tends0: I_in~(log2)2^(-2n^2)/n^2.
+
+4. Exact finite qubit depolarizing witness beyond the ordinary coefficient.
+Take lambda=1/2, tau=I2/2 and n=20. Then r=2^-400, eps=r/400,
+x=1/20, u=29/40,v=11/40. The metric ratio equals
+ (1/4)*[(19/20-r)/(29/40-r)]*
+ [400log2+log(29/11)+log(1-r)]/[400log2+log19+log(1-r)].
+Since r<1/2, the numerator log correction is positive; the denominator
+is less than405log2 because19<32. Also the rational factor is >38/29.
+Therefore the finite MI ratio is strictly greater than
+ (19/21)*(1/4)*(38/29)*(400/405)=14440/49329>.2881>1/4.
+All comparisons are elementary exact rational/log-monotonic bounds, not
+a floating-point certificate. The ordinary qubit depolarizing RE
+coefficient1/4 is known prior work. Hirche etal2608.27171v1 Section3.3
+gives a >.265 MI example and a >.2881 equal-marginal example; exceeding
+that EXAMPLE does not settle the comparison of the optimized coefficients.
+
+5. Strict entanglement advantage in higher dimension, an unreviewed extension.
+For depolarizing tau=I_d/d, let Phi_d be maximally entangled with a d-level
+reference. Its input MI is2log d. The output is the isotropic state with
+eigenvalues [1+(d^2-1)lambda]/d^2 and (1-lambda)/d^2 repeated d^2-1 times.
+This standard spectrum/entanglement-assisted MI formula is prior work.
+Writing F(lambda)=D(output||I/d^2), the classical diagonal Hessian gives
+ F(lambda)>=lambda^2(d^2-1)/[2(1+(d^2-1)lambda)].
+Indeed every intermediate eigenvalue is at most its uniform base value
+times1+(d^2-1)lambda, and the squared-tangent/base sum is d^2-1.
+Thus the entangled input achieves ratio at least
+ lambda^2(d^2-1)/[4log d(1+(d^2-1)lambda)].
+For d=16,lambda=1/1000, using log16<3 this is STRICTLY larger than
+the sharp separable/PPT benchmark16lambda^2/(1+15lambda):
+ 255*(1+15/1000) > 4*16*3*(1+255/1000).
+The inequality is rational; log16<3 follows e^3>16 from six positive
+Taylor terms. Hence this produces a nonvacuous reduction/PPT violation
+witness from an information-retention ratio, if the above benchmark proof
+is upheld. The input Phi_d is of course already known entangled.
+
+This example's channel is entanglement breaking: D_{1/(d+1)} has the
+standard Haar measure-and-prepare representation
+d integral <psi|X|psi>|psi><psi| dpsi=(X+Tr(X)I)/(d+1),
+by the standard Haar second-moment identity. D_lambda for0<=lambda<=1/(d+1)
+is its convex mixture with complete replacement. Do NOT present this
+well-known entanglement-breaking threshold or EA-capacity spectrum as new.
+
+Asymptotically lambda_d=d^-3 gives an entangled/separable retention-ratio
+advantage of order d/(4log d). All retained information here vanishes as
+d grows. This is not a fixed-rate protocol, a new capacity formula, or
+automatically a novel advantage: older entanglement-assisted capacity
+results must be contrasted before novelty is argued.
+
+Next obligations: adverse audit of upper bound, support regularization,
+sharpness/separability and quantitative example; primary search for prior
+separable/PPT SDPI constants and known EA comparisons. A covering source
+defeats novelty, not validity. A valid-assumption falsifier refutes the
+claimed benchmark. The separate qubit UNRESTRICTED eta<=1/3 conjecture in
+check939.py is unproved;60 random-base successes do not establish it.
+No new manuscript has been created from this note, and no score is assigned.

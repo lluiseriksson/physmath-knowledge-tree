@@ -1,0 +1,491 @@
+AUDITORÍA ADVERSA POR COMPONENTES 942
+Fecha: 27 de octubre de 2026. Objeto: PROOF939.txt y PROOF939b.txt congelados.
+Sin nota numérica, sin evaluación de un manuscrito y sin dictamen de publicación.
+
+Resultado: los argumentos matemáticos de la cota de reducción, la igualdad de
+los tres supremos de 939 y la cota de orden/Schmidt de 939b se sostienen bajo las
+hipótesis declaradas. Esta conclusión procede de la reconstrucción analítica
+que sigue, no del éxito de pruebas numéricas. No se halló un contraejemplo
+válido a esos enunciados. Hay dos precisiones de formulación, límites de
+interpretación y una advertencia bibliográfica concreta que deben conservarse.
+La novedad del supremo separable/PPT exacto sigue sin establecerse. La
+conjetura unrestricted <= 1/3 NO queda demostrada.
+
+PROCEDENCIA Y ALCANCE
+
+Se leyó C:\Users\lluis\.codex\AGENTS.md y D:\LEEME.md antes de crear la
+carpeta de trabajo. C: tenía 331464228864 bytes libres en la comprobación.
+Trabajo: C:\Trabajo\airr\2026-10-27_depolarizing942-audit.
+Conservación: D:\Proyectos\airr-investigacion\2026-10-27_depolarizing942-audit.
+Se conservan ambas copias idénticas por la instrucción específica del encargo.
+
+INPUT941.json tiene SHA256
+1f2f3ca227ba638cd24d38d0d152e692b615be676f03d156961551af5cc089cc.
+Sus siete payloads se verificaron antes de trabajar y se vuelven a verificar
+al cerrar. Coinciden longitud y SHA256. CONTROLS942.json y la verificación final
+contienen las huellas individuales. No se modificó ningún payload.
+
+Esta es una auditoría realizada por un agente delegado, con contexto
+conversacional separado y filesystem compartido. No se dispone de atestación
+de identidad efectiva del modelo ni de esfuerzo efectivo. No se afirma
+independencia institucional, estadística ni de modelo. No se desplegaron
+subagentes, no se consultaron otros chats, no se publicaron resultados y no se
+modificó el estado raíz de investigación ni el contenido de repositorios.
+Las únicas entregas nuevas son los archivos de las carpetas de auditoría.
+
+SUBGRAPH941 es contexto suministrado, no prueba de los enunciados. READINGS940
+se leyó como registro de una búsqueda anterior; sus niveles de lectura no se
+heredaron como si esta auditoría hubiera leído esas pruebas. READINGS942
+documenta lo efectivamente consultado ahora y distingue abstract, enunciado
+y prueba seleccionada. La búsqueda fue dirigida y limitada, nunca exhaustiva.
+
+Se recibió después un suplemento opcional EXACT945.json, fuera de los siete
+payloads. Se verificó con su propia huella y se trata por separado al final.
+No cambió el objeto congelado ni los criterios de evaluación.
+
+1. CONVENCIONES Y CUANTIFICADORES
+
+A tiene dimensión d>=2, R tiene dimensión finita, tau es un estado, a es su
+menor autovalor, 0<lambda<1 y p=1-lambda. N_R=N tensor id_R actúa sobre A.
+I_A es la identidad SIN normalizar, no I_A/d. Los logaritmos se toman naturales;
+cambiar coherentemente la base de ambos MI no cambia su cociente.
+
+La condición de reducción usada aquí es la unilateral
+rho_AR <= I_A tensor rho_R. El criterio de reducción se formula a menudo con
+las dos desigualdades; el argumento sólo necesita ésta. Para cualquier R
+finito se obtiene la cota superior. El supremo sobre todas las referencias se
+alcanza como límite con R de dimensión dos. No se afirma un cociente para R
+trivial: allí no hay estados con información mutua positiva. Tampoco se
+extiende la afirmación a referencias infinitas.
+
+La información mutua es D(rho || rho_A tensor rho_R). No se sustituye por el
+cociente entre dos estados arbitrarios con igual marginal, ni por información
+mutua condicional. Esta distinción importa tanto para los antecedentes como
+para interpretar check939.py.
+
+2. ORDEN BKM E INTEGRACIÓN: ARGUMENTO CORRECTO
+
+Para W>0 y X hermítico, se define
+g_W(X)=Tr[X Dlog_W(X)]. En una base de W,
+g_W(X)=sum_ij |X_ij|^2 ell(w_i,w_j),
+ell(u,v)=(log u-log v)/(u-v), ell(u,u)=1/u.
+
+Una comprobación del orden sin suponer que los operadores conmutan es ésta.
+En el espacio de Hilbert-Schmidt, sean L_W(Y)=WY y R_W(Y)=YW. Entonces
+Dlog_W = integral_0^1 [(1-s)L_W+sR_W]^{-1} ds.
+La identidad se comprueba en los elementos matriciales de una base propia.
+Si W>=cV>0, los operadores positivos dentro del corchete para W son >=c
+veces los correspondientes para V. La inversión invierte ese orden y la
+integración lo conserva. Por tanto
+g_W(X) <= c^{-1}g_V(X).
+También g_{cV}(X)=c^{-1}g_V(X) y g_W(lambda X)=lambda^2 g_W(X).
+No se ha usado la falsa regla de multiplicar libremente desigualdades de
+matrices no conmutativas.
+
+Para sigma,rho estados fieles y Delta=rho-sigma, f(t)=Tr[(sigma+tDelta)
+log(sigma+tDelta)] cumple f''(t)=g_{sigma+tDelta}(Delta).
+Su resto de Taylor de orden uno da
+D(rho||sigma)=integral_0^1 (1-t)g_{sigma+tDelta}(Delta)dt.
+El peso es (1-t). Con t se obtendría la divergencia en la otra orientación.
+No basta integrar la derivada de log sin este peso.
+
+Estas herramientas tienen antecedentes explícitos. Gao–Rouzé,
+https://arxiv.org/pdf/2102.04146v3, Lemmas 2.1 y 2.2, pp12-13, contiene la
+comparación de orden y la integración; se leyeron sus pruebas. La maquinaria
+BKM no debe presentarse como nueva.
+
+Advertencia bibliográfica comprobada: Gao et al. (2025),
+https://doi.org/10.1017/fms.2024.117, p10, primera línea de (2.6), imprime
+rho<=c sigma junto con c gamma_rho(X)<=gamma_sigma(X). Esa orientación es
+incorrecta tal como está impresa. Se verificó visualmente en una representación
+transitoria del PDF. Con rho=diag(1/4,3/4), sigma=I_2/2, c=3/2 y
+X=diag(1,-1), la hipótesis se cumple pero los dos lados son 8 y 4.
+El lema original de 2021 dice gamma_sigma<=c gamma_rho, que sí coincide con
+939. SUPPLEMENT942 guarda este contraejemplo exacto a la fórmula impresa,
+no un contraejemplo a PROOF939. No se conservó la imagen ni el PDF ajeno.
+
+3. COTA SUPERIOR DE 939 Y ESTADOS SINGULARES
+
+Sea S=rho_A tensor rho_R y Delta=rho-S. De rho_A<=I_A resulta
+S<=I_A tensor rho_R. Si rho satisface reducción, todo S_t=S+tDelta tiene la
+misma marginal R y satisface esa desigualdad. Así,
+T=tau tensor rho_R >= a(I_A tensor rho_R) >= aS_t,
+N_R(S_t)=lambda S_t+pT >= (lambda+pa)S_t,
+N_R(Delta)=lambda Delta, porque Tr_A Delta=0.
+Se aplica el orden BKM con el factor lambda+pa, y luego la integral anterior.
+N_R(S)=N(rho_A) tensor rho_R es exactamente el producto de las marginales
+de salida. Se obtiene
+I(R:B) <= lambda^2/(lambda+pa) I(R:A).
+
+La regularización declarada es suficiente. Tomar
+rho_eta=(1-eta)rho+eta alpha tensor beta con alpha,beta fieles produce un
+estado fiel. Su marginal R es (1-eta)rho_R+eta beta. Como alpha<=I_A,
+la desigualdad de reducción se conserva por linealidad. Las dos marginales
+reales rho_eta,A y rho_eta,R se vuelven a calcular y su producto S_eta se
+usa como referencia. NO es correcto usar (1-eta)S+eta alpha tensor beta:
+en general faltan los términos cruzados del producto de marginales.
+La continuidad de S(rho_A)+S(rho_R)-S(rho) en cada dimensión finita permite
+pasar eta a cero. Se pasa al límite en la desigualdad sin dividir primero.
+La salida regularizada sigue siendo fiel porque lambda>0, aunque a=0.
+
+Alternativamente se puede restringir primero al soporte de rho_R. La
+inclusión supp(rho)<=supp(rho_A) tensor supp(rho_R) asegura que el MI es
+finito. Los ceros de tau no requieren inventar logaritmos de cero sobre un
+tangente que salga del soporte. El argumento por regularización evita ese
+problema. No se necesita uniformidad de la continuidad en dim(R).
+
+Los estados separables cumplen reducción sumando alpha_j<=I_A en una
+descomposición producto. Para PPT, R_A(X)=Tr(X)I_A-X tiene
+J(R_A compuesto con transposición)=I-F>=0. Aplicar ese mapa CP a rho^{T_A}
+da (R_A tensor id)(rho)>=0. La orientación A/R es correcta. Esto es el
+antecedente de reducción, no una nueva caracterización de separabilidad.
+
+Dictamen del componente: cota válida, incluidos soportes singulares y tau
+singular. No se encontró hueco matemático en esta regularización.
+
+4. SEPARABILIDAD EXPLÍCITA DE LA SUCESIÓN
+
+En el subespacio A de dos autovectores de tau se toma x=1/n,
+r=2^{-n^2}, epsilon=r/n^2, n>=3, y rho=S+epsilon E, con
+S=diag(1-x,x) tensor diag(1-r,r), E=|00><11|+|11><00|.
+La traza es uno; las dos trazas parciales de E son cero. El mínimo autovalor
+de S en su soporte es xr=r/n. Como ||E||=1 y epsilon=(xr)/n,
+(1-1/n)S<=rho<=(1+1/n)S. En particular rho es estrictamente positivo
+en ese soporte y es distinto de S, de modo que I_in>0.
+
+El filtrado local diagonal propuesto es correcto. Con
+t=epsilon/sqrt[x(1-x)r(1-r)], se tiene
+t^2=r/[n^2(n-1)(1-r)]<1.
+Además E=(X tensor X-Y tensor Y)/2. La combinación
+(1-t)I_4+(t/2)(I_4+X tensor X)+(t/2)(I_4-Y tensor Y)
+es I_4+tE. Los coeficientes son no negativos. I+XX es suma de los
+proyectores producto con igual signo en la base X, multiplicados por dos;
+I-YY usa los signos opuestos de la base Y. El filtrado producto conserva el
+cono separable y la traza final es ya uno. Esta es una demostración explícita,
+sin depender de la equivalencia PPT/separabilidad en 2x2.
+
+Si d>2, la inclusión por ceros preserva separabilidad. Para cada n la
+marginal R tiene autovalores distintos y el conmutador [rho,I tensor rho_R]
+es no nulo: la sucesión no es clásica en R. No debe sustituirse por estados
+clásico-cuánticos, cuyo problema de contracción es diferente.
+
+Dictamen del componente: la sucesión es admisible y explícitamente separable.
+
+5. LÍMITE SIMULTÁNEO Y MI FINITO
+
+Los órdenes relativos (1±1/n)S permanecen válidos a lo largo del segmento
+S+t epsilon E. Aplicar N_R conserva los mismos órdenes respecto de N_R(S).
+Por homogeneidad y antitonicidad BKM, para entrada y salida respectivamente,
+epsilon^2 g/[2(1+1/n)] <= D <= epsilon^2 g/[2(1-1/n)].
+En salida el g ya incorpora el tangente lambda E. Esto controla de forma
+uniforme el paso de la métrica a D mientras r,x,epsilon varían juntos.
+No se ha intercambiado un límite infinitesimal con n sin una estimación.
+
+Sean T_n=n^2 log2, u=lambda(1-x)+pa y v=lambda x+pb. Los únicos elementos
+no nulos del tangente están en la pareja 00,11. Por ello
+g_in=2 ell((1-x)(1-r),xr),
+g_out=2lambda^2 ell(u(1-r),vr).
+Los demás bloques de A aportan exactamente cero a esta forma cuadrática.
+Su presencia en el estado de salida no introduce una normalización adicional.
+
+El numerador logarítmico de g_in es T_n+log(n-1)+log(1-r), y su denominador
+es 1-x-r. Para g_out el numerador es T_n+log(u/v)+log(1-r), y el denominador
+es u-(u+v)r. Se tiene u->lambda+pa>0. Si b>0, v tiene límite positivo;
+si b=0, v=lambda/n. En ambos casos log(u/v)=O(log n). Por tanto
+g_out/g_in -> lambda^2/(lambda+pa).
+El factor (n-1)/(n+1) en la cota inferior del cociente finito tiende a uno.
+La cota superior universal ya probada proporciona el otro lado. Queda
+demostrado el límite del cociente finito, no sólo el del Hessiano.
+
+I_in ~ (log2) 2^{-2n^2}/n^2, pues epsilon^2 g_in/2 tiene ese valor principal.
+La información se anula extremadamente rápido. No hay contradicción en que
+su cociente tenga un límite positivo.
+
+Caso límite útil: si a=b=0, los subespacios de soporte de la entrada y de tau
+son ortogonales. La salida es la suma directa de lambda rho y
+p tau tensor rho_R. La referencia producto tiene los mismos pesos de bloque.
+Entonces D_out=lambda D_in exactamente para cada n, no sólo en el límite.
+Esto confirma el alcance a=0 y detecta errores de normalización por bloques.
+
+Como separables ⊂ PPT ⊂ clase de reducción unilateral, la sucesión establece
+la misma cota inferior en las tres clases y la cota superior es común. Los
+tres supremos son exactamente lambda^2/(lambda+pa). No se afirma máximo
+interior en general ni alcanzabilidad con MI separado de cero.
+
+Dictamen del componente: sharpness demostrada para las tres clases de 939.
+
+6. EJEMPLO RACIONAL n=20
+
+Con lambda=1/2 y tau=I_2/2, u=29/40 y v=11/40. La fórmula del cociente
+métrico del texto tiene los denominadores correctos. Como r=2^-400<1/2,
+(29/11)(1-r)>1 y 19(1-r)<32. Además
+(19/20-r)/(29/40-r)>38/29.
+Estas desigualdades justifican la comparación de logaritmos sin aproximarlos.
+Después de aplicar el factor de orden 19/21 resulta estrictamente
+I_out/I_in > (19/21)(1/4)(38/29)(400/405)
+             =14440/49329
+             =0.2927284153337793... >0.2881>1/4.
+El archivo ENTANGLED939 no interviene en este certificado.
+
+El verificador original y el cálculo estable propio dan, sólo como controles,
+I_out/I_in=0.3252771858419726458379309344758861564...,
+I_in=2.764605349041854327008529506528458122... x 10^-244.
+El método propio usa el desplazamiento racionalizado del autovalor y log1p,
+con 100 dígitos, no una resta directa de entropías de tamaño uno.
+La cota racional anterior es el certificado exacto; las cifras decimales no
+lo sustituyen y no constituyen una medición realizable establecida.
+
+El coeficiente ordinario qubit lambda^2 es previo: Hirche–Rouzé–França,
+https://arxiv.org/pdf/2011.05949v4, Eq (3.54). Hirche et al.,
+https://arxiv.org/html/2608.27171v1, §3.3, da ejemplos >0.265 para MI y
+>0.2881 para pares con igual marginal. Se leyeron esas definiciones y
+comparaciones. Superar sus ejemplos no decide la relación entre los supremos
+optimizados MI, completo y condicional. El benchmark separable ya implica
+eta_MI irrestricto>=1/3, pero NO implica <=1/3.
+
+7. VENTAJA ISOTRÓPICA d=16 Y ALCANCE REAL
+
+Para Phi_d, I_in=2log d. La salida tiene eigenvalues
+q0=[1+(d^2-1)lambda]/d^2 y q1=(1-lambda)/d^2 con multiplicidad d^2-1.
+El MI de salida es F(lambda)=q0 log(d^2 q0)+(d^2-1)q1 log(d^2 q1).
+Éste es el espectro/cálculo asistido conocido; no es una nueva fórmula de
+capacidad. Bennett–Shor–Smolin–Thapliyal,
+https://arxiv.org/pdf/quant-ph/9904023v5, Eq (3), lo contiene en su convención
+de ruido x=1-lambda. Las derivaciones pertinentes en pp2-3 fueron leídas.
+
+La cota inferior de 939 es correcta: en el segmento desde la uniforme,
+cada probabilidad es <=[1+(d^2-1)lambda]/d^2. El Hessiano de la entropía
+relativa es entonces >=(d^2-1)/[1+(d^2-1)lambda]. Integrarlo con peso
+lambda-t produce F>=lambda^2(d^2-1)/[2(1+(d^2-1)lambda)]. Al dividir por
+2log d aparece el factor 4log d. No falta un factor dos ni d.
+
+Para d=16,lambda=1/1000, log16<3 se certifica por
+sum_{j=0}^5 3^j/j!=92/5>16. Así,
+q_ent >17/1004000,
+c_sep=2/126875,
+17/1004000-2/126875=1191/1019060000>0.
+La comparación estricta es enteramente racional después del certificado
+logarítmico. El cálculo de alta precisión da q_ent=0.00002126191971542087...
+frente a c_sep=0.00001576354679802956..., factor aproximado 1.348803.
+
+El canal del ejemplo es entanglement breaking: 1/1000<1/17. La fórmula Haar
+de medida y preparación de 939 es correcta; su umbral y los fenómenos de
+ventaja asistida tienen antecedentes. El cociente superior al benchmark
+certifica una propiedad de la ENTRADA, aunque la salida sea separable.
+No certifica entrelazamiento sobreviviente, capacidad cuántica positiva ni
+ventaja experimental con un número de muestras controlado.
+
+Con lambda_d=d^-3, lambda_d(d^2-1)=O(1/d). Por expansión uniforme del
+logaritmo alrededor de la uniforme, F~lambda_d^2(d^2-1)/2. Así
+q_ent/c_sep~d/(4log d); el crecimiento enunciado es correcto. Pero
+I_out~1/(2d^4) tiende a cero. La normalización por I_in importa y no puede
+confundirse con una comparación de capacidades ni con una tasa fija.
+La ventaja asistida genérica ilimitada tampoco es nueva; ya está discutida
+en la fuente BSST citada, con las distinciones históricas de C y C1.
+
+Dictamen: ejemplo estricto y asintótica válidos con estas limitaciones.
+
+8. EXTENSIÓN POR kappa DE 939b
+
+Supóngase rho<=kappa I_A tensor rho_R. Trazar R da rho_A<=kappa I_A,
+de modo que S=rho_A tensor rho_R también cumple el mismo orden, incluso
+si kappa<1. Por convexidad lo cumple todo S_t. En consecuencia
+tau tensor rho_R >= (a/kappa)S_t,
+N_R(S_t)>=[lambda+pa/kappa]S_t.
+La prueba del componente 2 da
+I_out <= c(kappa) I_in,
+c(kappa)=lambda^2 kappa/(lambda kappa+pa).
+
+Trazar la hipótesis implica kappa>=1/d. La regularización concreta con
+(I_A/d) tensor (I_R/r) preserva el mismo kappa porque ese estado cumple
+la desigualdad exactamente cuando kappa>=1/d. De nuevo se recalculan las
+marginales de la mezcla antes de formar el producto. Una mezcla arbitraria
+con producto fiel no bastaría si kappa<1; 939b escoge correctamente la
+uniforme. Si kappa=1/d, la diferencia positiva de traza cero obliga a
+rho=I_A/d tensor rho_R y el MI es cero; no existe allí un supremo de
+cocientes con denominador positivo. No se afirma sharpness en ese extremo.
+
+Dictamen: cota superior correcta. No se deriva sharpness para kappa distinto
+de uno, ni se identifica este parámetro con min-entropía condicional que
+optimiza sobre otro estado de referencia.
+
+9. SCHMIDT, INVERSIÓN Y CERTIFICACIÓN
+
+Para un vector puro de rango de Schmidt s, escribir
+|psi>=sum_i sqrt(p_i)|a_i b_i>. Sobre supp(rho_R), el filtrado por
+I_A tensor rho_R^{-1/2} da |v>=sum_i |a_i b_i>, de norma al cuadrado s.
+Entonces |v><v|<=s I en ese soporte. Deshacer el filtrado da
+|psi><psi|<=s I_A tensor rho_R. Para una descomposición con rangos<=k,
+sumar da rho<=k I_A tensor rho_R. Los soportes singulares individuales
+no impiden sumar estas desigualdades en el espacio ambiente.
+
+Es una condición necesaria previa. Terhal–Horodecki,
+https://arxiv.org/pdf/quant-ph/9911117v4, definición 2, teorema 1 y lema 2,
+Eq (7)-(8), contiene la jerarquía de mapas k-positivos y el mapa
+Tr(X)I-X/k. Aquí se leyeron enunciados y la prueba elemental propia del
+filtrado; no se declara auditoría completa de la prueba del teorema 1 ajeno.
+No hay implicación inversa desde la desigualdad de reducción a Schmidt<=k.
+Un estado NPT de Werner que sí satisface reducción en dimensión 3 sirve
+como control negativo concreto para la supuesta equivalencia en k=1.
+
+Con a>0 e I_in>0, todo estado admite kappa=d por descomposición pura. Así
+q<=c(d)<lambda. Es legítimo dividir por lambda-q para invertir la cota:
+kappa >= pa q/[lambda(lambda-q)].
+Si q>c(k), no puede existir una descomposición de rangos<=k. Esto certifica
+Schmidt>k. El signo > debe ser estricto: la igualdad no excluye Schmidt k.
+Si el término invertido vale exactamente un entero k, la conclusión es
+Schmidt>=k, no >k. Si a=0, todos los c(k) son lambda; se pierde esa
+certificación, como ya advierte el texto. No se infiere la recíproca desde
+un cociente pequeño.
+
+Primera precisión de redacción: la frase «All states have kappa<=d» sólo es
+correcta para el parámetro MÍNIMO admisible kappa_*, o como afirmación de
+existencia de un parámetro admisible <=d. Un kappa arbitrariamente escogido
+puede ser >d aunque la misma desigualdad siga siendo cierta. Definir
+kappa_*=|| (I tensor rho_R^{-1/2})rho(I tensor rho_R^{-1/2}) ||_infinito
+en el soporte, o escribir «kappa=d is admissible», elimina la ambigüedad.
+La cota y su inversión no dependen de interpretar erróneamente esa frase.
+
+Para k=1, superar c(1) implica violación de reducción y por ello NPT.
+La consecuencia de distilabilidad procede del teorema previo de
+Horodecki–Horodecki, https://arxiv.org/pdf/quant-ph/9708015v3, §VI,
+no de que todo estado NPT sea destilable. Se inspeccionaron la construcción
+de filtrado, su fidelidad >1/N y la etapa de twirling/recurrencia. La
+distilabilidad de cualquier NPT NO se usa ni se afirma. La lectura es de
+partes relevantes de esa prueba, no una certificación de todo el artículo.
+
+Para lambda=d^-3, la cota isotrópica dividida por c(k) es exactamente
+[(d^2-1)(lambda k+p/d)]/[4k log d (1+(d^2-1)lambda)].
+Es asintótica a d/(4k log d) para la escala indicada. Segunda precisión:
+«k<~d/(4log d)» necesita margen para convertirse en una afirmación uniforme
+de cruce: para todo delta>0 fijo y k(d)<=(1-delta)d/(4log d), el cruce vale
+para d suficientemente grande. La equivalencia asintótica sola no decide
+la frontera con margen que se anula arbitrariamente rápido. No se afirma
+sharpness k>1. Los umbrales certifican sólo parte del Schmidt conocido del
+ejemplo y carecen aquí de un análisis de coste de estimación.
+
+10. REPRODUCCIÓN, CONTROLES ADVERSOS E INCIDENTES
+
+El check939.py original se ejecutó directamente desde la entrada, sin cambios,
+con salida en la carpeta 942. CHECK939_REPRODUCED.json es idéntico byte a byte
+a CHECK939.json, SHA256
+95e87737f0a98610295ca7b282098b2cb686d9bc637930df9496b8fbe16503b5.
+El máximo de sus 60 bases es 0.3009851463128179 y no registra falsificador.
+
+Ese bloque examina tangentes Tr_A X=0 alrededor de bases arbitrarias,
+no necesariamente productos ni de reducción. Es un diagnóstico del
+coeficiente para pares con igual marginal R; ni 60 éxitos ni la ausencia
+de un máximo >1/3 son prueba universal. Tampoco convierte un Hessiano en
+un contraejemplo de MI con referencia producto sin más trabajo. La conjetura
+irrestricta <=1/3 permanece abierta en esta auditoría. Lo que 939b sí da
+para el qubit lambda=1/2 es la cota más débil q<=c(2)=2/5.
+
+CONTROLS942.json guarda todos los casos, sin descartar semillas ni fallos:
+- 32 comparaciones BKM no conmutativas y comprobaciones de homogeneidad;
+  seis incluyen una integración independiente de resolventes.
+- 12 divergencias finitas comparadas con la integral de peso (1-t).
+  Invertir el orden BKM falla en 32 casos; cambiar el peso a t falla en 12.
+- 208 controles de cociente finito: 80 mezclas separables con R hasta 5,
+  seis casos PPT del complemento Tiles, seis Werner NPT con reducción,
+  60 mezclas con descomposición Schmidt explícita, 48 estados arbitrarios
+  con su kappa mínimo, cuatro regularizaciones con R singular y cuatro
+  mezclas que preservan un kappa<1.
+- 24 controles de la sucesión por fórmula estable: n=3,5,10,20,40,80;
+  tau uniforme, anisótropa, con un cero y con dos ceros. Se verifica la
+  separabilidad y la cota finita, incluyendo el caso exactamente lambda.
+- Cinco espectros isotrópicos y los certificados racionales de n20 y d16.
+  El caso d16 cruza el umbral k=1; no certifica Schmidt>2 con ese dato.
+- Normalización: E tiene dos entradas y g_I(E)=2; g_I(E/2)=1/2.
+  Sustituir I_A por I_A/d en reducción rechaza incluso |00><00|.
+- Una mezcla regularizada muestra que el producto verdadero de marginales
+  difiere del promedio de productos: con eta=.2, MI=0.4855249382... y la
+  divergencia respecto del producto falso es 0.4428463943....
+
+La ejecución corregida tiene cero fallos de las condiciones programadas.
+Son controles finitos para detectar orientación, normalización y supuestos;
+NO son pruebas universales, formalización ni certificación por intervalos.
+La prueba universal se da en los componentes analíticos anteriores.
+
+Se preservan dos incidentes de herramienta/código. El primer controls942.py
+calculó los casos pero falló al construir el resumen: el nombre sep había
+sido reutilizado para una fracción y len(sep) produjo TypeError. Se conservaron
+script y salidas de ese intento; se renombró sólo la fracción y se repitieron
+los mismos casos con la misma semilla. El primer lector de fuentes produjo
+UnicodeEncodeError al imprimir una ligadura con la codificación de consola;
+el registro de hashes ya estaba guardado. Se conservó ese script y registro,
+se fijó UTF-8 y se aclaró que extraer páginas no equivale a leerlas. No se
+reinició ninguna búsqueda científica para favorecer un resultado.
+
+Hubo un fallo web al abrir el HTML largo de Cambridge y una respuesta 429
+del PDF de Wolf en TUM; se documentan. El PDF primario de Cambridge y el
+lema primario de Terhal–Horodecki cubrieron las consultas pertinentes.
+INCIDENTS942.json identifica también la errata de orientación bibliográfica.
+
+11. ANTECEDENTES Y NOVEDAD
+
+READINGS942.json contiene URL/versiones, alcance de lectura y contraste por
+fuente. SOURCE_HASHES942.json contiene hashes de nueve respuestas primarias
+descargadas sólo a memoria. No se guardaron cuerpos HTML/PDF, imágenes ni
+corpus ajenos. Los textos conservados son síntesis propias y controles.
+
+Además de las fuentes citadas arriba se examinó Hiai–Ruskai,
+https://arxiv.org/pdf/1508.03551v1, §7.1, teorema 7.1 y su prueba: liga BKM
+con entropía simetrizada. Su advertencia sobre entropía no simetrizada en esa
+versión impide citarla sin precisar la convención. No demuestra por sí sola
+el supremo separable normalizado propuesto. Se examinó también
+Müller-Hermes–França–Wolf, https://arxiv.org/pdf/1508.07021v1, enunciado del
+teorema 3.1 y formulación inicial: estudia convergencia al punto fijo y la
+constante log-Sobolev-1, otro objeto; no se auditó su prueba completa.
+
+El teorema 2.5 de Gao et al. (2025), con la prueba mostrada, usa esperanza
+condicional al dominio multiplicativo y tiempo de retorno CP. El teorema 4.1
+de Gao–Rouzé (2021), leído con su derivación, proporciona otra cota mediante
+orden y norma ponderada. Ninguno de estos enunciados seleccionados identifica
+el supremo separable/PPT exacto con la sucesión de 939. Sí establecen que el
+argumento de orden, integración y la estrategia métrica tienen precedentes
+directos. No se presenta 939b como nueva jerarquía de Schmidt.
+
+Reeb–Kastoryano–Wolf, https://arxiv.org/abs/1102.5170v2, se consultó a nivel
+de abstract y pista bibliográfica sobre conos PPT y métrica proyectiva.
+No se leyó su demostración completa ni se lo descarta como antecedente de
+interés por una simple búsqueda de palabras. La equivalencia entre métricas,
+divergencias y restricciones de entrada exige comparar cuantificadores.
+
+No se localizó un teorema que cubra explícitamente la igualdad exacta de los
+tres supremos de 939 dentro de lo leído. Esto NO establece prioridad mundial,
+originalidad, publicabilidad ni ausencia de un resultado equivalente con otra
+notación. La cota de orden 939b es una aplicación corta de herramientas previas;
+la contribución candidata sería la particular igualdad sharp k=1 y sus
+consecuencias cuantificadas. Su novedad queda SIN RESOLVER.
+
+12. SUPLEMENTO OPCIONAL 945, FUERA DE LA ENTRADA CONGELADA
+
+EXACT945.json, SHA256
+0634cec58c2205fd182e08a337ea30ce9a6cb8ac013a3dc25c3b4f3370b01305,
+fue recibido después del inicio. SUPPLEMENT942.json y supplement942.py
+verifican sus expresiones con aritmética racional propia.
+
+Con d=128,lambda=1/2097152,k=6,
+sum_{j=0}^8 5^j/j!=1115309/8064>128, luego log128<5.
+La cota isotrópica estricta es 16383/88648083046400 y el umbral k=6
+es 3/17186152448. La diferencia es
+1906309377/185976497736620441600>0.
+Así, usando 939b ya validado, ese cociente certifica Schmidt de entrada
+>=7. Phi128 tiene Schmidt128 conocido de antemano. El canal es EB y la
+información retenida es minúscula. Este suplemento no demuestra sharpness
+para k>1 ni novedad genérica EA ni un protocolo estadístico robusto.
+
+13. LÍMITES FINALES Y ARCHIVOS
+
+No hay falsificador válido de 939/939b en esta auditoría; se conservan las
+objeciones de cuantificador, frontera asintótica, interpretación y bibliografía.
+No se resolvió el coeficiente MI irrestricto ni el completo o condicional,
+no se probó sharpness k>1, no se cuantificó el coste experimental y no se
+estableció novedad. No se asigna nota ni valoración de ningún manuscrito.
+
+verdict942.json da los dictámenes por componente. READINGS942.json e
+INCIDENTS942.json son los registros de lectura y fallos. CONTROLS942.json,
+SUPPLEMENT942.json, sus scripts y salidas permiten reproducir los controles.
+MANIFEST942.json enumera tamaños y SHA256; su huella va en
+MANIFEST942.sha256. COPY_VERIFICATION942.json documenta la igualdad C/D.
+La verificación final vuelve a comprobar que la entrada conserva sus hashes.
