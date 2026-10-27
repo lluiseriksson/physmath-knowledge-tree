@@ -1,0 +1,51 @@
+A limitation of one-scalar centering for local depolarization.
+Parent derivation, unreviewed,27 October2026. No new manuscript/grade/priority claim.
+Purpose: eliminate a redundant representation-search route while988 audits979/981.
+This is NOT a claim that3/8 is the true unrestricted coefficient or that1/3 is false.
+
+Setting: d>=2, E(X)=Tr(X)I/d. Choose any finite random-unitary representation
+E=sum_j q_j AdUj, positive q_j, summing to1. Include the identity conjugation
+as one consolidated atom of weight r>=0; if absent, add it with q0=0.
+Then represent N=lambda id+(1-lambda)E with w0=lambda+(1-lambda)r
+and wj=(1-lambda)qj on every other atom. Assume0<lambda<1.
+This restriction to a common replacer representation is ESSENTIAL to the barrier.
+No claim is made for arbitrary other joint representations or more sophisticated
+metric estimates, pair-dependent cancellations, additional constraints or PSD tools.
+
+Known elementary Choi constraint: use the normalized maximally entangled vector
+Omega. The normalized Choi state J(E)=I_(d^2)/d^2. The identity channel has
+J(id)=P_Omega. Since all remaining terms have PSD Choi matrices,
+J(E)-r P_Omega>=0. Taking the Omega expectation gives r<=1/d^2.
+This is an elementary CP-order fact, not claimed as a new Choi theorem.
+
+General one-scalar centering: for E Delta=sum q_j UjDeltaUj*=0 and faithful
+base metric with joint-convex inverse quadratic form, replace each coefficient
+wj by wj-a qj. Joint convexity bounds contraction by
+F(a)=sum_j (wj-a qj)^2/wj=1-2a+a^2 S,
+S=sum qj^2/wj. Minimization gives a=1/S and h=1-1/S.
+If r=0, the extra identity atom has q0=0 and contributes no term toS;
+the same formula applies and gives h=lambda. Negative tangent multipliers
+are permitted while convex weights remain positive. This is the generalized
+version of979's uniform shift, not a distinct entropy theorem.
+
+In the specified representation all other qj/wj=1/(1-lambda), hence
+S=r^2/[lambda+(1-lambda)r]+(1-r)/(1-lambda),
+h(r)=lambda^2(1-r)/[lambda+(1-2lambda)r].
+The denominator is positive on0<=r<=1/d^2 for0<lambda<1.
+Derivative dh/dr=-lambda^2(1-lambda)/[lambda+(1-2lambda)r]^2<0.
+Therefore the smallest upper bound obtainable by THIS scalar minimization
+over THIS entire representation family occurs at maximal r=1/d^2, and equals
+ (d^2-1)lambda^2/[1+(d^2-2)lambda].
+A unitary error basis attains r=1/d^2, so this method-family minimum is attained.
+Qubit lambda1/2: minimum3/8. Varying the remaining unitary weights/atoms
+within the common-E representation cannot produce the conjectural1/3 upper.
+
+Hypothesis retained: proving the unrestricted BKM bound itself still requires
+new structure. This argument does not erase arbitrary reference dimension;
+all Choi reasoning concerns only the fixed local channel. It rules out one
+proof-search strategy, not a physical improvement or any true-coefficient value.
+Falsifier: a common-E random-unitary representation with r>1/d^2, or an
+incorrect scalar minimization/derivative. An alternative proof outside the
+specified family is not a counterexample to this deliberately narrow statement.
+Confidence: unreviewed analytic derivation, exact scalar identities checked;
+no Lean/formal theorem or scientific assessment. Consolidate with979, no new paper.

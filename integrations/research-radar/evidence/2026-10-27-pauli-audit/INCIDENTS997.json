@@ -1,0 +1,65 @@
+{
+  "optimizer_runs": 20,
+  "successful_terminations": 17,
+  "unsuccessful_terminations": [
+    {
+      "weights": [
+        0.35,
+        0.15,
+        0.15,
+        0.35
+      ],
+      "harmonic_upper": 0.16000000000000003,
+      "rep": 1,
+      "value": 0.15999998664900172,
+      "initial": 0.15999495635027705,
+      "success": false,
+      "iterations": 2,
+      "evaluations": 1100,
+      "termination": "ABNORMAL: "
+    },
+    {
+      "weights": [
+        0.35,
+        0.15,
+        0.15,
+        0.35
+      ],
+      "harmonic_upper": 0.16000000000000003,
+      "rep": 3,
+      "value": 0.1599999030174156,
+      "initial": 0.15279917103133075,
+      "success": false,
+      "iterations": 2,
+      "evaluations": 1050,
+      "termination": "ABNORMAL: "
+    },
+    {
+      "weights": [
+        0.7,
+        0.1,
+        0.15,
+        0.05
+      ],
+      "harmonic_upper": 0.5800000000000001,
+      "rep": 2,
+      "value": 0.5794688180785704,
+      "initial": 0.551117873061994,
+      "success": false,
+      "iterations": 100,
+      "evaluations": 4175,
+      "termination": "STOP: TOTAL NO. OF ITERATIONS REACHED LIMIT"
+    }
+  ],
+  "largest_numeric_excess_over_upper": 6.296907439917732e-13,
+  "incidents": [
+    "First prepare998 verification asserted equality of all995project files including unmanifested QA PNGs. Failed; no input created. All40frozen payloads matched. Scoped recheck recorded9unmanifested QA files separately, already conserved under D Capturas; no manuscript changes.",
+    "First paper2505.15281 opened atv2; metadata revealedv3 and currentv3 was then consulted. Both reading depths retained.",
+    "arXiv and journal PDFs2503.22823 have different byte hashes. Same selected Theorem5 observed in their parsed PDF texts; journalpage52 visually inspected. No byte identity claimed."
+  ],
+  "limitations": [
+    "20symbolic parent checks and15highprecision examples do not replace external audit or formal proof.",
+    "All-unital and boundary extensions are parent analytic arguments, outside995 and review998.",
+    "Doeblin source discrepancy has exact parent primal/dual certificate but no external audit or priority claim."
+  ]
+}

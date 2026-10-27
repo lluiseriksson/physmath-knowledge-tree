@@ -1,0 +1,314 @@
+{
+  "utc": "2026-10-27T14:31:56.536745+00:00",
+  "scope": "Directed current primary-source sweep, not exhaustive. Source bytes hashed but not corpus-copied. Inventory does not mean abstracts/statements/proofs read.",
+  "sources": [
+    {
+      "id": "openai_math_head",
+      "url": "https://api.github.com/repos/openai/math/commits?per_page=1",
+      "retrieved_at": "2026-10-27T14:31:43.225067+00:00",
+      "reading_depth": "inventoried repository head only",
+      "status": 200,
+      "resolved_url": "https://api.github.com/repos/openai/math/commits?per_page=1",
+      "bytes": 4784,
+      "sha256": "6ca38558150e5428a6ab89342338edbbedc7eb5cf1d5dcc3752dd34b0ad91760",
+      "commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+      "commit_date": "2026-10-26T21:18:03Z"
+    },
+    {
+      "id": "deepmind_formal_head",
+      "url": "https://api.github.com/repos/google-deepmind/formal-conjectures/commits?per_page=1",
+      "retrieved_at": "2026-10-27T14:31:43.225067+00:00",
+      "reading_depth": "inventoried repository head only",
+      "status": 200,
+      "resolved_url": "https://api.github.com/repos/google-deepmind/formal-conjectures/commits?per_page=1",
+      "bytes": 8641,
+      "sha256": "35c8d5ede2936394b64fe555e4ee1f44d4d8375e7947129a60c9ed10d8bbae5c",
+      "commit": "c0c538071a21b36d15f70f5998370eb6a4c31c97",
+      "commit_date": "2026-10-27T09:30:35Z"
+    },
+    {
+      "id": "anthropic_research",
+      "url": "https://www.anthropic.com/research",
+      "retrieved_at": "2026-10-27T14:31:43.226066+00:00",
+      "reading_depth": "inventoried index endpoint only; no new paper proof read",
+      "status": 200,
+      "resolved_url": "https://www.anthropic.com/research",
+      "bytes": 417193,
+      "sha256": "55840e8c0a09d50fc905c05c99750879e3437e385d2e942b4974180e5f54991b"
+    },
+    {
+      "id": "lluis_repos",
+      "url": "https://api.github.com/users/lluiseriksson/repos?per_page=100&sort=updated",
+      "retrieved_at": "2026-10-27T14:31:43.226066+00:00",
+      "reading_depth": "bounded metadata inventory, first100only; not all repositories or contents",
+      "status": 200,
+      "resolved_url": "https://api.github.com/users/lluiseriksson/repos?per_page=100&sort=updated",
+      "bytes": 212804,
+      "sha256": "49752a71e1f555d10691287e7222f1ad64e040b478b3d0f6fc9c86bb448da60a",
+      "repository_metadata": [
+        {
+          "name": "lluiseriksson/physmath-knowledge-tree",
+          "pushed_at": "2026-10-27T13:34:18Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lluiseriksson/reset-minimax-lab",
+          "pushed_at": "2026-10-24T08:30:44Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lluiseriksson/reversible-branch-lab",
+          "pushed_at": "2026-10-24T04:25:22Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lluiseriksson/THE-ERIKSSON-PROGRAMME",
+          "pushed_at": "2026-10-15T02:41:50Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lluiseriksson/additive-gkls-leaky-boundary",
+          "pushed_at": "2026-09-09T18:44:21Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lluiseriksson/many-body-filling-maintenance-floor",
+          "pushed_at": "2026-09-09T18:44:10Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lluiseriksson/lean-ym-flow",
+          "pushed_at": "2026-10-27T10:37:42Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lluiseriksson/lean-transfer-matrix",
+          "pushed_at": "2026-10-27T13:16:55Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lluiseriksson/aqft-split-inclusion-series",
+          "pushed_at": "2026-09-09T18:44:05Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lluiseriksson/hodge-conjecture-research-front",
+          "pushed_at": "2026-09-09T18:43:54Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lluiseriksson/support-leakage-rapid-maintenance",
+          "pushed_at": "2026-09-09T18:44:15Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lluiseriksson/finite-sample-spectral-certificates",
+          "pushed_at": "2026-09-09T18:43:13Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lluiseriksson/ym-audit",
+          "pushed_at": "2026-09-09T18:44:46Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lluiseriksson/riemann-resolvent-programme",
+          "pushed_at": "2026-09-09T18:43:04Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lluiseriksson/riemann-prime-resolvent",
+          "pushed_at": "2026-10-01T11:19:47Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lluiseriksson/lean-2d-yang-mills",
+          "pushed_at": "2026-10-27T10:38:15Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lluiseriksson/physmath-lean-lemmas",
+          "pushed_at": "2026-09-09T18:44:26Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lluiseriksson/point-span-tangent-absorption",
+          "pushed_at": "2026-09-09T18:44:00Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lluiseriksson/ym-mass-gap-lean-verification",
+          "pushed_at": "2026-09-09T18:44:42Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lluiseriksson/mathlib-plane-tree-catalan",
+          "pushed_at": "2026-09-09T18:44:32Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lluiseriksson/lean-connes-kreimer",
+          "pushed_at": "2026-10-27T14:26:26Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lluiseriksson/p-vs-np-research-front",
+          "pushed_at": "2026-09-09T18:43:50Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lluiseriksson/lean-gaussian-field",
+          "pushed_at": "2026-10-27T13:21:02Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lluiseriksson/ym-lattice-numerics",
+          "pushed_at": "2026-10-27T10:33:10Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lluiseriksson/lean-os-positivity",
+          "pushed_at": "2026-10-27T10:35:32Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lluiseriksson/hausdorff-certificates",
+          "pushed_at": "2026-09-09T18:43:09Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lluiseriksson/lean-zero-free-regions",
+          "pushed_at": "2026-10-27T13:21:37Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lluiseriksson/irynayoutube",
+          "pushed_at": "2026-08-26T05:14:07Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lluiseriksson/mathlib4",
+          "pushed_at": "2026-08-07T17:07:12Z",
+          "default_branch": "master"
+        },
+        {
+          "name": "lluiseriksson/rooted-tree-catalan-closure",
+          "pushed_at": "2026-07-02T22:12:17Z",
+          "default_branch": "master"
+        },
+        {
+          "name": "lluiseriksson/kinshard-arena",
+          "pushed_at": "2026-06-27T09:27:50Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lluiseriksson/lean-rooted-tree-polymer-expansion",
+          "pushed_at": "2026-06-23T19:50:45Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lluiseriksson/quiz-del-cuento",
+          "pushed_at": "2026-05-20T19:14:28Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lluiseriksson/championsleaguesim",
+          "pushed_at": "2025-03-19T16:20:48Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lluiseriksson/neuralsnakes",
+          "pushed_at": "2025-03-05T11:52:26Z",
+          "default_branch": "main"
+        },
+        {
+          "name": "lluiseriksson/pixelfootball",
+          "pushed_at": "2025-03-04T22:41:34Z",
+          "default_branch": "main"
+        }
+      ]
+    },
+    {
+      "id": "lluis_airr",
+      "url": "https://airr.science/authors/lluis-eriksson/",
+      "retrieved_at": "2026-10-27T14:31:43.227067+00:00",
+      "reading_depth": "inventoried author index; no paper proofs read from index",
+      "status": 200,
+      "resolved_url": "https://airr.science/authors/lluis-eriksson/",
+      "bytes": 581403,
+      "sha256": "e419b2d717f92a8fb649f497290f01ca8278c97be464b530dda44c66dee7ec44"
+    },
+    {
+      "id": "lluis_vixra",
+      "url": "https://www.ai.vixra.org/author/lluis_eriksson",
+      "retrieved_at": "2026-10-27T14:31:43.227067+00:00",
+      "reading_depth": "inventoried endpoint only; no paper proof read",
+      "status": 200,
+      "resolved_url": "https://www.ai.vixra.org/author/lluis_eriksson",
+      "bytes": 70178,
+      "sha256": "9cfc2018ff38a1f839e7c86f3d743cdbefb2b58b46c47bab6b4dd5af36fb8b7e"
+    },
+    {
+      "id": "ruskai_normalform",
+      "url": "https://arxiv.org/pdf/quant-ph/0101003v2",
+      "retrieved_at": "2026-10-27T14:31:44.301633+00:00",
+      "reading_depth": "selected Eq4 normal-form explanation and Lemma11/Eq34 read through web; not whole-paper audit",
+      "status": 200,
+      "resolved_url": "https://arxiv.org/pdf/quant-ph/0101003v2",
+      "bytes": 356061,
+      "sha256": "85ef009e8df2207498f501f13fb2d186d2b1e751b8db7f65874195381b5565cd"
+    },
+    {
+      "id": "hiai_ruskai",
+      "url": "https://arxiv.org/html/1508.03551v1",
+      "retrieved_at": "2026-10-27T14:31:44.328833+00:00",
+      "reading_depth": "selected abstract/introduction Eq4 ordinary coefficient and selected appendix context; no new full-proof audit",
+      "status": 200,
+      "resolved_url": "https://arxiv.org/html/1508.03551v1",
+      "bytes": 1255676,
+      "sha256": "1a4bded4a90d3ec413a168b95f484b9f9a04981f703befc7b91927b1bce3d5bb"
+    },
+    {
+      "id": "cao_lu",
+      "url": "https://arxiv.org/html/1904.06562v2",
+      "retrieved_at": "2026-10-27T14:31:45.406272+00:00",
+      "reading_depth": "metadata/contents now; earlier993reading separate; no new proof audit",
+      "status": 200,
+      "resolved_url": "https://arxiv.org/html/1904.06562v2",
+      "bytes": 702425,
+      "sha256": "146c6329077e03836460f623999df866f12459158143d82a0d1c4bcf20b302b2"
+    },
+    {
+      "id": "george_tomamichel",
+      "url": "https://arxiv.org/html/2505.15281v3",
+      "retrieved_at": "2026-10-27T14:31:45.774196+00:00",
+      "reading_depth": "abstract, contents and selected discussion of input-dependent coefficients; full novelty comparison pending",
+      "status": 200,
+      "resolved_url": "https://arxiv.org/html/2505.15281v3",
+      "bytes": 2923233,
+      "sha256": "830ff5d09b5c110719883eb4b2b0f183493ecd71c258889562be2eb0f112978b"
+    },
+    {
+      "id": "doeblin_arxiv",
+      "url": "https://arxiv.org/pdf/2503.22823v3",
+      "retrieved_at": "2026-10-27T14:31:46.016739+00:00",
+      "reading_depth": "selected Def4 Eq3.1, Theorem5 and its proof, Lemma6 and Prop39; source statement checked in PDF text and HTML, not whole108pages",
+      "status": 200,
+      "resolved_url": "https://arxiv.org/pdf/2503.22823v3",
+      "bytes": 1971085,
+      "sha256": "61e6049323dda504053d4f4e0204f4306c7fac851179cd200c0208bdc6aefd23"
+    },
+    {
+      "id": "doeblin_journal",
+      "url": "https://quantum-journal.org/papers/q-2026-05-22-2115/pdf/",
+      "retrieved_at": "2026-10-27T14:31:46.861354+00:00",
+      "reading_depth": "same selected theorem observed via web PDF text; byte comparison recorded here",
+      "status": 200,
+      "resolved_url": "https://quantum-journal.org/papers/q-2026-05-22-2115/pdf/",
+      "bytes": 1976378,
+      "sha256": "ff007c194eac11ae049c9096317daa8b50aeb305e18e4fb6f6ef33fc83d190a9"
+    }
+  ],
+  "journal_arxiv_bytes_equal": false,
+  "novelty_established": false
+}

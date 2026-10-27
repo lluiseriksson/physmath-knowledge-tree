@@ -1,0 +1,8 @@
+{
+  "scope": "Exact scalar identities conditional on the stated normalized-Choi identity-weight argument. Not a barrier to other proofs or the true channel coefficient.",
+  "h": "l**2*(r - 1)/(2*l*r - l - r)",
+  "derivative": "-l**2*(1 - l)/(l + r*(1 - 2*l))**2",
+  "qubit_half": "3/8",
+  "identities_verified": 4,
+  "failures": 0
+}

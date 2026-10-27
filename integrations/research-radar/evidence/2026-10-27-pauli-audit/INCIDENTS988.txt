@@ -1,0 +1,83 @@
+INCIDENTES Y OBJECIONES RETENIDAS — 988
+
+I01. Riesgo de efectos laterales de check979.py.
+La cola suministrada escribe JSON/manifiestos y copia el directorio aD:.
+No se ejecutó como programa. Se conservó el original enDO_NOT_RUN y se
+ejecutó sólo un prefijo revisado mediante reproduce988.py. check981 también
+se trató con su prefijo, sin su cola de escritura. Originales sin cambios.
+
+I02. Diferencia de bytes esperada en la reproducción981.
+La fechaUTC varía. La comparación semántica excluyendo sóloUTC fue igual;
+979 sí coincidió byte por byte. No se presentó igualdad de hash falsa.
+
+I03. Limitaciones numéricas.
+La batería propia fija pasó1494 controles, sin excepciones. Un caso h=0
+produce residuos≈10^-15; se guardan con tolerancias explícitas. Las bases
+más mal condicionadas alcanzan condición deGram≈2.48e8. La discrepancia
+máxima de razón eigen/directa≈3.69e-8 y el residuo≈2.07e-8 no son exactos.
+No se borraron filas ni se cambiaron semillas para obtener un resultado.
+
+I04. Mutaciones adversariales detectadas.
+Se conservaron resultados con estados intercambiados enQ, transposición
+omitida, dual restringido a hermitianos y pesoBKM incorrecto. Son controles
+negativos deliberados; sus discrepancias no refutan las fórmulas correctas.
+
+I05. Antecedentes: recuperación imperfecta y lectura parcial.
+Varias búsquedas«find» deProp2.1 devolvieron pasajes no pertinentes de un
+apéndice; se recurrió a páginas concretas delPDF. Algunas llamadas con
+varias fuentes produjeron truncamiento de salida. Se releyeron las partes
+necesarias; no se atribuye lectura de texto omitido ni de artículos completos.
+El libro de lectura diferencia abstract, enunciado y prueba seleccionada.
+
+I06. Captura de fuente fallida y errata comprobada.
+La capturaweb dePDF math-ph/9808016v1 p17 dioTimeoutError. Se obtuvo después
+una imagen transitoria desde elPDF en memoria y se inspeccionó. Se confirman
+signos«<=» que harían crecer la divergencia en(56)-(57). Para un reset común
+la salida es0 mientras una divergencia positiva de entrada no lo es: esos
+signos impresos no pueden usarse. La prueba2.15 posterior usa la dirección
+correcta. No se atribuye esta errata a979/981. No se conservó la imagen
+ajena ni se contactó a autores. Hash delPDF enREADINGS988/source_fetch988.
+
+I07. Suplemento posterior991.
+Llegó del padre después de la campaña fija988; se congelaron copias de sus
+certificados y scripts tras inspección/hash. Es material del contexto
+compartido, no un hallazgo independiente ni un payload987. El falsador Petz
+contra1/3 y la refutación de varianza con factor2 se conservan como adversos.
+
+I08. Nombre de script inexistente.
+Una lectura devariance991.py falló porque ese nombre no existe. La lista
+de archivos identificóvariance-certificate991.py, que se leyó después.
+No se ejecutó ni alteró ningún script991. El fallo no afecta sus hashes.
+
+I09. FALLO PROPIO DE CONTROL CONSERVADO Y RESUELTO.
+audit_supplement991.py hizo«s.trace(sig)==1» antes de simplificar las sumas
+complejas deGG*. SymPy comparó estructura sintáctica y devolvióFalse.
+El JSON original conserva25 checks,1 fallido,0 excepciones; no se reescribió.
+resolve_trace988.py expandió racionalmenteGG*, obtuvoTrGG*=15617/15625 y
+Trsigma=1, y simplificó la diferencia original a0. El certificado está
+normalizado. SUPPLEMENT991_TRACE_RESOLUTION988.json deja la resolución
+separada, sin hacer pasar la primera ejecución por impecable.
+
+I10. Edición no aplicada.
+Una primera actualización deAUDIT988 para añadir993 falló al no coincidir
+una línea de contexto. La operación no aplicó cambios parciales. Se inspeccionó
+la línea real y se aplicó la actualización posterior. No fue un fallo matemático.
+
+I11. Suplemento posterior993.
+Llegó tras991, con aviso de congelación y hashPROOF993. Sólo se leyó la
+revisiónef8fcbbfb1de213c190da71d4ff5135e2b7dd10db19c5819e25b67d46f19423f.
+Se separa de987 y991. La reconstrucción de bloques y límites es válida para
+SLD/Petz triangular;26 controles propios pasan. No se reprodujeron las
+campañas fallidas de escalera/optimización mencionadas en su narrativa,
+ni se convierten en parte de la campaña propia. No da un upper1/3 BKM.
+
+Objeciones sustantivas retenidas
+* 977 refuta el atajoTr_A(XKX)<=Tr_A(X²), no la conjetura971.
+* 991 refuta varianza con factor2 y la cota1/3 uniforme sobre todos losPetz.
+* 993 muestra exactitudh para un miembroPetz, no para cadaf ni paraUmegaki.
+* El bordePetz general no fue afirmado ni auditado; sólo los límites
+  específicos del lower993 se justifican para construir pares fieles.
+* No se confunden MI real, pares completos, referencia producto arbitraria
+  y condicional con resta de divergenciaR.
+* Las búsquedas numéricas y bibliográficas no son exhaustivas, y no hay
+  certificado de prioridad, revisión formal o identidad efectiva atestada.

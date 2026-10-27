@@ -1,0 +1,101 @@
+993: candidate exact complete SLD and triangular-Petz contraction for qubit depolarization.
+Parent derivation27October2026, unreviewed; no manuscript score or priority claim.
+This is stronger than a numerical witness, but requires adversarial mathematical
+and literature audit before being presented as an established new theorem.
+
+Definitions. N_lambda=lambda id+(1-lambda)E_A, E_A(X)=I_A/2 tensorTr_A X,
+0<lambda<1. R ranges over all finite reference dimensions. For faithful sigma
+and nonzero Hermitian Delta with Tr_A Delta=0, define
+ g_sigma^SLD(Delta)=<Delta,[(L_sigma+R_sigma)/2]^-1 Delta>.
+Let eta_SLD^c be the supremum of g_Nsigma^SLD(NDelta)/g_sigma^SLD(Delta).
+Let f_triangle(x)=(x-1)^2/(x+1), and eta_triangle^c be the supremum of
+H_f(Nrho,Nsigma)/H_f(rho,sigma), over distinct faithful pairs with equalR.
+Claim: both coefficients equal h(lambda)=3lambda^2/(1+2lambda).
+The first is equivalently the complete equal-reference pair coefficient for
+chi^2_min(rho||sigma)=g_sigma^SLD(rho-sigma): the form is exactly quadratic,
+and every allowed tangent is realized by a sufficiently small faithful pair.
+This finite chi-square divergence is NOT the finite triangular Petz divergence;
+their local forms agree up to a constant, but their finite arguments differ.
+The constant also is the best uniform upper over the whole operator-convex
+Petz family in981, since that upper holds for all and this member attains it.
+No equality is asserted for BKM/relative entropy or actual-product MI.
+
+Upper proof (same harmonic cancellation, explicit standalone specialization).
+Use four Pauli conjugations with weights w0=(1+3lambda)/4,
+w1=w2=w3=(1-lambda)/4. For Tr_A Delta=0 their four tangent images sum0.
+For any faithful base, Q=(L_sigma+R_sigma)/2 is positive, unitary covariant
+and affine in sigma. Joint convexity of <Z,Q^-1Z> and scalar shifting
+by a common reala imply a contraction bound sum_j(wj-a)^2/wj.
+Its minimum is1-16/(sum1/wj)=h(lambda), independent ofR.
+For the finite Petz pair use Q=L_rho+R_sigma, Z=rho-sigma and the
+known identity H_f(rho,sigma)=<Z,Q^-1 Z>. The same shift applies to
+both conjugated states, giving the identical bound. Convex weights stay positive.
+This proof is not an application of convexity to negative state weights.
+
+Explicit lower family with R3. In ordered basis|00>,|01>,|02>,|10>,|11>,|12>,
+let e>0, a=(1,0,0,0,e,0), b=(0,e,0,0,0,1),
+sigma_e=(aa*+bb*)/[2(1+e^2)]. Its rank2 support projection isP_e=2sigma_e.
+Define Delta_e by the two nonzero blocks:
+ indices(0,4): Z_e=[[0,-1],[-1,-2e]],
+ indices(1,5): -J Z_e J=[[2e,1],[1,0]], J=[[0,1],[1,0]].
+Other entries vanish. It is Hermitian, trace0 and Tr_A Delta_e=0.
+Both kernel-kernel blocks vanish: (I-P_e)Delta_e(I-P_e)=0.
+Thus the finite boundary SLD form is computed only on support/support and
+support/kernel components. Since sigma_e=P_e/2, its value is
+ 4Tr Delta_e^2-2Tr(P_e Delta_e P_e)^2=16(1+e^2).
+Here Tr Delta_e^2=4+8e^2 and Tr(P_e Delta_e P_e)^2=8e^2.
+
+sigma_e,R=diag(1,2e^2,1)/[2(1+e^2)]. On block(0,4), the output base is
+ W_e=[[1+lambda,2lambda e],[2lambda e,2e^2]]/[4(1+e^2)].
+The second block is J W_e J and the tangent there is -J Z_e J.
+The two remaining singleton output directions carry zero tangent.
+For e>0,0<lambda<1, every output eigenvalue is positive:
+det(W_e)>0 follows from (1-lambda)(1+2lambda)>0, with positive trace;
+the singleton entries are positive because the reference marginal is faithful.
+Solving W_eY+YW_e=2Z_e and taking the trace gives the exact ratio
+ R_e(lambda)=lambda^2(4e^2lambda+2e^2+3lambda+3)
+             /[(2lambda+1)(2e^2+lambda+1)].
+The own symbolic file verifies the Sylvester identity, this expression, and
+ h(lambda)-R_e(lambda)=4e^2lambda^2(1-lambda)
+                      /[(2lambda+1)(2e^2+lambda+1)]>0.
+Hence R_e(lambda) tends to h(lambda) as e tends to0 from above.
+
+Faithful realization; order of limits matters.
+For fixed e>0 first regularize sigma_e,delta=(1-delta)sigma_e+delta I6/6,
+delta>0. Its eigenspaces equal those of sigma_e. Delta_e has zero
+kernel-kernel block, so the regularized input SLD form converges to the
+finite boundary value above as delta tends0. The output base tends to the
+faithful Nsigma_e, so its SLD form converges by ordinary finite-dimensional
+continuity. Therefore faithful SLD tangent ratios approach R_e(lambda).
+Now send e to0. This proves the lower supremum for eta_SLD^c using onlyR3.
+No claim of an attained maximum at a singular reference is made.
+
+For each fixed faithful sigma_e,delta choose rho_t=sigma_e,delta+tDelta_e.
+For sufficiently small nonzero realt this is a faithful density matrix,
+and the reference marginal remains exactly equal. The resolvent identity gives
+ H_f(rho_t,sigma_e,delta)/t^2
+ -><Delta_e,(L_sigma_e,delta+R_sigma_e,delta)^-1Delta_e>
+ =g_sigma_e,delta^SLD(Delta_e)/2.
+The analogous output limit holds. Take t to0 first, then delta to0, then e to0.
+This proves the finite faithful Petz-pair lower supremum without claiming
+uniform continuity across singular states or replacing pairs by actual MI.
+Together with the upper, it yields the claimed exact coefficient.
+
+Potential significance and limits. It would identify an exact reference-assisted
+coefficient for one divergence and show why a bound uniform over all Petz
+generators cannot reach the proposed smaller BKM1/3 at lambda1/2.
+At that lambda the exact candidate is3/8; ordinary no-reference unital-qubit
+coefficientlambda^2 is prior Hiai--Ruskai1508.03551v1, so this is a stabilization
+gap if the definitions/antecedents are confirmed. R3 suffices; minimal necessary
+reference dimension is not established. No geodesic/Bures-distance, tensorization,
+capacity, generalized arbitraryf exactness, novelty or impact score is inferred.
+
+Evidence and failed routes: SYMBOLIC993 checks exact rational functions; prior991
+gives one fully finite rational kernel pair above1/3. Local-Pauli commutators
+in15fixed tests did not approach the harmonic constant. The symmetric forward
+ladder only approachedabout0.35417; reversed hierarchy supplies the displayed
+family. Eight bounded3parameter SLD optimizations had numerical difficulties;
+all terminations are retained and are not the proof. The displayed algebra and
+ordered-limit argument replace, rather than rely on, optimized numerical values.
+Falsifier: a wrong Sylvester/block or input-metric identity, invalid faithful
+limit, or covering earlier theorem. No formal/Lean theorem or review is claimed.

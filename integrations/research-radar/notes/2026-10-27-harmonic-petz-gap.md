@@ -1,5 +1,7 @@
 # Harmonic cancellation, a Petz extension and the unresolved complete bound
 
+Historical985snapshot; see the subsequent [audit and extension update](2026-10-27-pauli-audit.md) for terminal988and later developments.
+
 27 October 2026. Follow-up to the [exact manuscript review](2026-10-27-reviewed-reset.md). No new paper, manuscript grade or canonical confidence promotion is created.
 
 ## Sourced facts — literature

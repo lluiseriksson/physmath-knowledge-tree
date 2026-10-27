@@ -1,0 +1,120 @@
+LECTURAS 988 — SÍNTESIS PROPIAS Y LÍMITES
+Fecha: 2026-10-27. Contexto942 reutilizado, filesystem compartido.
+No se atribuye independencia o identidad efectiva atestada.
+
+Los textos987 y sus scripts se leyeron completos; los JSON de comprobación
+se compararon con los resultados reproducidos. Las campañas sólo narradas
+en971/983 no se inspeccionaron como campañas. Los suplementos991 y993
+llegaron después y tienen procedencia y controles separados enAUDIT988.
+
+Para cada PDF, source_fetch988.jsonl conserva URL, fecha de acceso, estado,
+tamaño, SHA256 y páginas solicitadas. El contenido se procesó en memoria.
+La entrega no contiene PDF ajenos ni un corpus de extracción. Las páginas
+indicadas abajo son páginasPDF de base1, no líneas de la herramienta web.
+
+R1. Hiai–Ruskai, Contraction coefficients for noisy quantum channels.
+https://arxiv.org/pdf/1508.03551v1
+SHA256 e38c88286526dd66a6912dd4ea9d47ff1c38e847381555f107ea35ca99eda368
+430262 bytes,40 páginas. Páginas leídas:5-8,14,18-21.
+Nivel: enunciadoProp2.1(i),Eq7-13; pruebaProp2.2; definiciones; enunciado6.1;
+prueba7.1 seleccionada. No toda la prueba del teorema qubit enApéndiceB.
+La representación positiva cubre f no simétrica y no afín sin normalización
+f''(1)=2. El teorema qubit ordinario no es una amplificación con marginalR
+igual. La divergenciaBKM de7.1 es simetrizada;988 deriva aparte la identidad
+orientada paraUmegaki. No se atribuye una revisión completa del artículo.
+
+R2. Lesniewski–Ruskai, Monotone Riemannian Metrics and Relative Entropy on
+Non-Commutative Probability Spaces.
+https://arxiv.org/pdf/math-ph/9808016v1
+https://arxiv.org/html/math-ph/9808016v1
+SHA256 PDF9f1a14f323d5c560af582dfc5c55bb5c33fc7a7475d1e973d520aaeaf1c9fc43
+295449 bytes,33 páginas. PDF7,8,14-19,23; además pasajesHTML de§2/§4.
+Nivel: definiciones, representación2.5, prueba2.15, observación de convexidad
+conjunta métrica y prueba4.3. P17 inspeccionada visualmente en memoria.
+Su convenciónP,Q invierte la utilizada en981. Maquinaria de resolventes y
+convexidad claramente anterior. No se identificó la fórmulah en los pasajes
+leídos. Los signos de(56)-(57) impresos están invertidos; la desigualdad de
+la prueba2.15 siguiente tiene la dirección correcta. VéaseINCIDENTS988.
+
+R3. Hirche, Quantum Doeblin coefficients: A simple upper bound on contraction
+coefficients.
+https://arxiv.org/pdf/2405.00105v2
+SHA25649c84b3f58569aef3ca1d0e6b97b0efaf501e00213a17de8c107add63a885fe1
+1213137 bytes,18 páginas. PDF2-6.
+Nivel: definiciónII.1; CorIII.1 y prueba; PropIII.3 y prueba; ejemplo
+depolarizanteIII.28-31; lecturas adyacentes sobre variantesDoeblin.
+Se comprobó que su f-divergencia se define por hockey-stick, y que su
+coeficienteDoeblin positivo de la depolarizante es1-lambda. No se traslada
+su igualdad entre todos los f al Petz completo. Las variantes transpuestas
+y hermitianas no se asumieron como upper completoPetz.
+
+R4. George–Hirche–Nuradha–Wilde, Quantum Doeblin Coefficients:
+Interpretations and Applications.
+https://arxiv.org/pdf/2503.22823v3
+https://arxiv.org/html/2503.22823v3
+SHA25661e6049323dda504053d4f4e0204f4306c7fac851179cd200c0208bdc6aefd23
+1971085 bytes,108 páginas. PDF40-43 y pasajesHTML equivalentes.
+Nivel: definiciones completas con igualR; pruebasProp30,Prop31 yCor7.
+Cor7 se restringe expresamente aEq6.29, integral hockey-stick. Es una cota
+completa cercana con1-alpha_+; no se identificó con los Petz arbitrarios de981.
+No se inspeccionaron las108 páginas ni se descartaron todas sus consecuencias.
+
+R5. Belzig–Gao–Smith–Wu, Reverse-type Data Processing Inequality.
+https://arxiv.org/pdf/2411.19890v3
+https://arxiv.org/html/2411.19890v3
+SHA2566c59944e6a037d283c0a4a6ad6a48e3bce044e4cd077b5d769ac8a3b6c9948db
+2939003 bytes,32 páginas. PDF27-28;§7 HTML.
+Nivel: Def7.1, explicación del upper1-p por convexidad, límites de
+tensorización discutidos allí; prueba auxiliarA.1 leída incidentalmente.
+La razón es MI real con referencia cuántica.979 mejora el baselinelambda
+por inclusión de pares producto. No se infiere prioridad ni equivalencia
+de optimizaciones por el uso de la palabra«complete».
+
+R6. Hirche–George–Nuradha–Wilde, Conditional contraction coefficients and
+their applications to quantum networks.
+https://arxiv.org/pdf/2608.27171v1
+https://arxiv.org/html/2608.27171v1
+SHA2565db66d95dabdf9359ce5f81edc02d66753a63833c9608e94490f4648ea206026
+1115540 bytes,84 páginas. PDF10-12,19-20;§3.3 HTML.
+Nivel: definiciones pertinentes,Prop2 y prueba, Lemma5 y prueba,Cor3,
+enunciados y discusión de los testigos3.64-3.65 y preguntas3.66.
+Los testigos0.265/0.2881 no son óptimos certificados. El artículo distingue
+producto/MI, pares completos y coeficientes condicionales con resta de la
+divergencia del marginal. La cota Doeblin condicional no es una prueba deh.
+
+R7. Gao–Wang, Quantum Entropy Contraction and Factorization from
+Hypercontractivity.
+https://arxiv.org/pdf/2609.20753v2
+https://arxiv.org/html/2609.20753v2
+SHA256d9a96caaa2060f1404294d7fe014763e978d2e431bbd46ea6aec9547719e83d7
+427103 bytes,15 páginas. PDF1,2,4,5; HTML§1 y§2.1-2.2.
+Nivel: abstract, teoremas introductorios yProp2.2 con prueba. Algunas salidas
+agrupadas quedaron truncadas; no se contabiliza lo omitido como lectura.
+Hipótesis de estado fiel invariante y normas hipercontractivas; la referencia
+es fija o una expectativa de equilibrio en las aplicaciones. No se auditó
+toda la derivación ni se estableció que no pueda especializarse de otra forma.
+
+R8. Gao–Wang, Complete entropy contraction from conditional hyperboundedness.
+https://arxiv.org/pdf/2610.35863v1
+https://arxiv.org/abs/2610.35863v1
+SHA256ace4a476858245105e0ac5de2b544b2f943222419c971b8b3886f4694b3e259f
+528680 bytes,23 páginas. PDF1-4.
+Nivel: abstract, introducción, hipótesis/enunciados1.1-1.3, inicio§2.
+NO se afirma haber leído las pruebas completas de§§4-5. Requiere una
+expectativa condicional sobre el álgebra fija, hiperacotación y coercividad;
+la referencia esE_*rho. Se localizó una pista secundaria del26octubre y se
+leyó esta fuente primaria. No cubre por mera coincidencia verbal el dominio
+de pares979 con E no idempotente.
+
+Método y límites de búsqueda
+Se buscaron combinaciones de «random unitary», «harmonic mean», «contraction
+coefficient», «Petz», «quantum Fisher information», «Doeblin», «dephasing» y
+«strong data processing», y títulos precisos hallados. Se siguieron fuentes
+primarias concretas, sin guardar páginas ajenas. Las búsquedas amplias
+devolvieron también resultados irrelevantes, reseñas y agregadores; éstos
+se usaron como pistas, no como pruebas. El registro adicionalSEARCH988.json
+enumera consultas representativas efectivamente ejecutadas y sus límites.
+No fue un barrido exhaustivo, sistemático o una certificación de prioridad.
+
+Los antecedentes de capacidadEA y espectro no son novedades de988. No se
+abrió una auditoría científica paralela ni se comunicó con autores/chats.
