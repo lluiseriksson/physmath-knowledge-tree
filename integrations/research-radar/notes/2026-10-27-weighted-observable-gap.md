@@ -1,0 +1,25 @@
+# Cost-weighted observable: a conditional quantitative gap certificate
+
+The previous two uniform fits remain refuted. A different72-fit search uses the actual expected-cost constraint: an envelope |H(x)-F(|x|^2)|<=epsilon*(1+|x|^2) contributes at most4epsilon when comparing any admissible input with the unit circular Gaussian. Thus the prior entropy-deficit/Pinsker argument applies with d=C2-G1-4epsilon. No score or novelty is inferred from this standard-tool synthesis.
+
+For the fixed W1=one-half CN(x,1)+one-half CN(0,2), W2=CN(bx,1), b^2=9757/50000 model, all320 interval segments and the infinite tail pass. Subject to the own analytic contract, the computation supports epsilon=1e-6, a bounded AWGN output observable norm M<1.5e20, and **Delta>=6e-52**. This is a lower bound, not the gap's measured value. Under the existing v3 comparison, a dimensionless sufficient E=1e53 is an extremely loose existence threshold and supplies no practical advantage claim.
+
+## Mechanism and checking boundary
+
+A Gaussian-windowed Bessel output observable maps exactly to an input radial function. The improved holomorphic majorant integrates the positive0F1 series before bounding it, avoiding the old exponential loss in Re z. Chebyshev interpolation uses first-kind ROOTS, explicit coefficient balls, a separately derived aliasing bound and analytic remainders; it does not substitute a finite mesh for the real half-line. [Contract](../evidence/2026-10-27-weighted793/ANALYTIC796.md) gives all formulas and constants; [completed outputs](../evidence/2026-10-27-weighted793/CERTIFICATE795.json) and [root conclusion](../evidence/2026-10-27-weighted793/CONCLUSION797.json) retain the actual balls and dependency hashes.
+
+The tight G1<.178254 consequence of the earlier certified ball is necessary here: the older coarse G1<.17826 inequality alone is too weak at this epsilon. All72 fitted vectors, the interrupted serial run and the five disjoint completed worker partitions are preserved in the [native archive](../evidence/2026-10-27-weighted793/native797.zip). Their original absolute paths are disclosed; no ready portable Research Capsule is claimed.
+
+## Evidence layers and review context
+
+- Literature: selected Trefethen coefficient theorem/proof and interpolation statement at pinned ATAP commit96e888be8c3f8bde8488f42eb3ed96321a2416d1; prior NIST/Pinsker/Gaussian tools. Full book and frontier proof corpora not audited.
+- Graph-supported context: a small quantum-information neighborhood retrieved before synthesis, with no canonical graph or confidence change.
+- Heuristic:72-fit search using reused GH192/GH256 values. These values select the trial; they are not premises of the final global residual check.
+- Speculative/unreviewed synthesis: weighted analytic796 contract and its interpretation. The ball computations support it conditional on that contract and v3 assumptions.
+- Formal: no new Lean formalization. Repository Lean tests concern existing code only.
+
+An unscored analytic-contract audit798 is ongoing in a separate reviewer context, with prior745/781 history reused and shared filesystem. Requested GPT-6 Astra xhigh effective identity, effort and independence are unverified. Its frozen packet excludes the full320-output run; it cannot certify that campaign or an updated PDF. No new manuscript, full assessment, importance rating, human peer review or editorial acceptance is claimed. The exact published v3 and report754 are unchanged.
+
+Falsifier: any branch/ellipse/aliasing error, a non-finite ball, failed tail/segment, wrong cost quantifier or observable norm rejects the certificate. Preserve all objections and failed runs. Next finish the contract audit and consider this only as a same-paper improvement, with a fresh exact-PDF assessment before publication.
+
+[Primary method source](https://github.com/chebfun/ATAP/blob/96e888be8c3f8bde8488f42eb3ed96321a2416d1/chap8.m). The [directed primary refresh](../evidence/2026-10-27-weighted793/SOURCES793.json) returned13/13 HTTP200 and unchanged OpenAI/math and DeepMind commits; inventory is distinct from abstract, statement or proof reading and is not exhaustive. [Public payload manifest](../evidence/2026-10-27-weighted793/PUBLIC-MANIFEST799.json) binds the own artifacts; no foreign full text is redistributed.

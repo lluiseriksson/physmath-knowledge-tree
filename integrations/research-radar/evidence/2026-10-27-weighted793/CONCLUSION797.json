@@ -1,0 +1,89 @@
+{
+  "status": "Completed ball computations support the weighted analytic contract; no AI/human component audit yet",
+  "utc": "2026-10-27T00:36:18.421262+00:00",
+  "precision_bits": 192,
+  "segments_verified": 320,
+  "tail400": "[2.331296123615632065716392357204491061993e-13 +/- 1.96e-53]",
+  "epsilon": "1e-6",
+  "M": "[145166731137897378701.9761410268812087501 +/- 1.49e-21]",
+  "M_upper": "1.5e20",
+  "prior_G1_balls": [
+    "[0.17825399 +/- 8.93e-9]",
+    "[0.17825399 +/- 8.93e-9]"
+  ],
+  "G1_upper": "0.178254",
+  "C2_lower": "0.178263333",
+  "d_lower": "[5.333000000000000000000000000000000000000e-6 +/- 3e-50]",
+  "stable_gap_expression": "[6.320197555555555555555555555555555555556e-52 +/- 4.45e-92]",
+  "conditional_Delta_lower": "6e-52",
+  "conditional_existing_v3_threshold_sufficient_E": "1e53",
+  "limitations": [
+    "Requires the entire own analytic796 contract, root-grid interpolation/majorants and previous v3 entropy identities",
+    "Very loose dimensionless existence threshold, not practical quantum performance",
+    "No formal proof, worldwide novelty, independent review or new manuscript/score",
+    "Initial serial run interrupted after42 completed segments; remaining disjoint regions computed in5 processes; no failure erased",
+    "No ready Research Capsule claimed"
+  ],
+  "code_pins": [
+    {
+      "path": "C:\\Trabajo\\airr\\2026-10-27_weighted793\\PARTIAL-SERIAL795.json",
+      "sha256": "cd5e68e66738bbc4e84da5a284c1e57c73caf6581eb2db88ba0812915e2d6756"
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-10-27_weighted793\\certificate795.py",
+      "sha256": "198b175753f4a91c20311e0360385c0b00dc2ee1a182ab79af89bc541ed4b073"
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-10-27_weighted793\\workers795\\0\\WORKER795.json",
+      "sha256": "db84b1ce2cd75a66519d05a29126b2b54baef78fad14cdd810a016b7e773908d"
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-10-27_weighted793\\workers795\\0\\worker795.py",
+      "sha256": "59d030a3a705683afe95a832399dfe26d49af5c760a3b4cc47d59dcc3b6e3425"
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-10-27_weighted793\\workers795\\1\\WORKER795.json",
+      "sha256": "d929cced0e924d63b8a8e662a6087679848be55aaa1af25bc7a836c9f98a5aea"
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-10-27_weighted793\\workers795\\1\\worker795.py",
+      "sha256": "7d3fb1575e30aa738a2b9f523ef44c0c1d6228ba55765d20c8ecf2f8e7a3d187"
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-10-27_weighted793\\workers795\\2\\WORKER795.json",
+      "sha256": "7f8c7c9b5c10d7e6e0e048fa54f1b3e56e74a979f58878e08b049161e6d6e710"
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-10-27_weighted793\\workers795\\2\\worker795.py",
+      "sha256": "ed09eff8f68c56ebedba73a843e0c95d433bca1f6eae44d715dba37219f3d1ed"
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-10-27_weighted793\\workers795\\3\\WORKER795.json",
+      "sha256": "a6dc92d6c129e6a97616ac652ea38cbe1394c1ab03cdb7289055fa80d86331c0"
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-10-27_weighted793\\workers795\\3\\worker795.py",
+      "sha256": "af3460ba87ec98a68aed2690e602d5a22a3359fd31cc78b408e6d7d06d018ea4"
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-10-27_weighted793\\workers795\\4\\WORKER795.json",
+      "sha256": "d7ce617372849e6a828e1d056ca98f61c603d23c3b35bdc8c27b7fa44ace796a"
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-10-27_weighted793\\workers795\\4\\worker795.py",
+      "sha256": "548a48c1d64ea83ee0d9ad4453c04462d7cdbd43d084b782393c92291f7ca549"
+    },
+    {
+      "path": "D:\\Proyectos\\airr-investigacion\\2026-10-26_interval777\\CERTIFICATE779.json",
+      "sha256": "9b7374901ac3ec6a2d4870d3dcaaab8e07c61a718ef9fe8be287e3f8d209362b"
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-10-27_weighted793\\FIT794.json",
+      "sha256": "0c8d051bc55023c42fa1165a49defb129dddbbb4f98cf9f1a978c3cce34ad538"
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-10-27_weighted793\\conclusion797.py",
+      "sha256": "481e36ed2df596ffdd78004302fd8722affff35d289e96e459a846fb429a8aef"
+    }
+  ]
+}
