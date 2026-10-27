@@ -1,0 +1,102 @@
+{
+  "utc": "2026-10-27T13:23:41.867570+00:00",
+  "scope": "Directed inventory and selected primary definitions, not exhaustive.",
+  "sources": [
+    {
+      "id": "openai-math-head",
+      "url": "https://api.github.com/repos/openai/math/commits?per_page=1",
+      "utc": "2026-10-27T13:23:38.070483+00:00",
+      "reading_scope": "index/metadata observed only in this turn",
+      "foreign_body_stored": false,
+      "status": 200,
+      "resolved_url": "https://api.github.com/repos/openai/math/commits?per_page=1",
+      "bytes": 4784,
+      "sha256": "6ca38558150e5428a6ab89342338edbbedc7eb5cf1d5dcc3752dd34b0ad91760",
+      "head": {
+        "sha": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+        "date": "2026-10-26T21:18:03Z"
+      }
+    },
+    {
+      "id": "deepmind-formal-conjectures-head",
+      "url": "https://api.github.com/repos/google-deepmind/formal-conjectures/commits?per_page=1",
+      "utc": "2026-10-27T13:23:38.071483+00:00",
+      "reading_scope": "index/metadata observed only in this turn",
+      "foreign_body_stored": false,
+      "status": 200,
+      "resolved_url": "https://api.github.com/repos/google-deepmind/formal-conjectures/commits?per_page=1",
+      "bytes": 8641,
+      "sha256": "35c8d5ede2936394b64fe555e4ee1f44d4d8375e7947129a60c9ed10d8bbae5c",
+      "head": {
+        "sha": "c0c538071a21b36d15f70f5998370eb6a4c31c97",
+        "date": "2026-10-27T09:30:35Z"
+      }
+    },
+    {
+      "id": "lluiseriksson-recent-repositories",
+      "url": "https://api.github.com/users/lluiseriksson/repos?per_page=100&sort=updated",
+      "utc": "2026-10-27T13:23:38.071483+00:00",
+      "reading_scope": "index/metadata observed only in this turn",
+      "foreign_body_stored": false,
+      "status": 200,
+      "resolved_url": "https://api.github.com/users/lluiseriksson/repos?per_page=100&sort=updated",
+      "bytes": 212804,
+      "sha256": "8c7ae61bce0caaf1b352ac3324c5be6aa58f4e5d7d5d79fb2e791562c2ffe22e"
+    },
+    {
+      "id": "anthropic-research",
+      "url": "https://www.anthropic.com/research",
+      "utc": "2026-10-27T13:23:38.071483+00:00",
+      "reading_scope": "index/metadata observed only in this turn",
+      "foreign_body_stored": false,
+      "status": 200,
+      "resolved_url": "https://www.anthropic.com/research",
+      "bytes": 417193,
+      "sha256": "457dba331f832827c9bed9a9a813c0bfb592bb9ea2681945302b3852d91dac83"
+    },
+    {
+      "id": "airr-papers-index",
+      "url": "https://airr.science/papers/",
+      "utc": "2026-10-27T13:23:38.772532+00:00",
+      "reading_scope": "index/metadata observed only in this turn",
+      "foreign_body_stored": false,
+      "status": 200,
+      "resolved_url": "https://airr.science/papers/",
+      "bytes": 117462,
+      "sha256": "e5753dfb1d4df9a3b2aa19111f67003c5ca74d6cb1e3be80d92a5fabdd3de372"
+    },
+    {
+      "id": "aivixra-author",
+      "url": "https://www.ai.vixra.org/author/lluis_eriksson",
+      "utc": "2026-10-27T13:23:38.791175+00:00",
+      "reading_scope": "index/metadata observed only in this turn",
+      "foreign_body_stored": false,
+      "status": 200,
+      "resolved_url": "https://www.ai.vixra.org/author/lluis_eriksson",
+      "bytes": 70178,
+      "sha256": "9cfc2018ff38a1f839e7c86f3d743cdbefb2b58b46c47bab6b4dd5af36fb8b7e"
+    },
+    {
+      "id": "belzig-gao-smith-wu2411.19890v3",
+      "url": "https://arxiv.org/html/2411.19890v3",
+      "utc": "2026-10-27T13:23:39.396412+00:00",
+      "reading_scope": "selected Section7 Definition7.1 and accompanying discussion read, not whole proof audit",
+      "foreign_body_stored": false,
+      "status": 200,
+      "resolved_url": "https://arxiv.org/html/2411.19890v3",
+      "bytes": 1103020,
+      "sha256": "00068903774f90b753166d516514ae504458c9181050d8eef7e246975dfabb21"
+    },
+    {
+      "id": "hirche-george-nuradha-wilde2608.27171v1",
+      "url": "https://arxiv.org/html/2608.27171v1",
+      "utc": "2026-10-27T13:23:39.565685+00:00",
+      "reading_scope": "selected Corollary3, Section3.3 Eq3.63--3.66 reread; not full proof audit",
+      "foreign_body_stored": false,
+      "status": 200,
+      "resolved_url": "https://arxiv.org/html/2608.27171v1",
+      "bytes": 2313060,
+      "sha256": "0d4a7ee8672b0793971816fa641246fa8644c017820e3b4f4a59de82ec8bea42"
+    }
+  ]
+}

@@ -31,3 +31,5 @@ The broader [971 question](../evidence/2026-10-27-reviewed-reset/NOTE971.txt) as
 No new Lean-checked theorem is added. Literature facts retain literature status; new candidate bridges remain speculative with null paper_score. The next move must close an unrestricted quantifier or an operational/information-floor theorem. A collection of extra finite examples is not an acceptable substitute for that target. Covering prior art defeats novelty even when all algebra is correct.
 
 The evidence comprises our own reports/derivations and selected finite diagnostics. [MANIFEST975](../evidence/2026-10-27-reviewed-reset/MANIFEST975.json) distinguishes original hashes from LF transport views. Original exact958 bytes are also preserved in the public paper source; no foreign full-text corpus, training rights, campaign reproducibility capsule or independent-human-review claim is created.
+
+Later research is consolidated in [the harmonic/Petz gap note](2026-10-27-harmonic-petz-gap.md). It is outside this exact-PDF assessment and carries no transferred score.

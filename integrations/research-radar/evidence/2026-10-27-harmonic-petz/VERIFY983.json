@@ -1,0 +1,25 @@
+{
+  "precision_decimal_digits": 70,
+  "scope": "Independent saved-direction evaluation only; no optimization or universal bound certified.",
+  "rows": [
+    {
+      "kind": "BKM",
+      "ratio": "0.33333167667371806346893991244041581556534426530872795040354556824",
+      "gap_below_one_third": "0.0000016566596152698643934208929175177679890680246053829297877650912202",
+      "base_min_eigenvalue": "0.0000026259477597019198747277539022418773467664072582412972346407278951",
+      "partial_trace_residual": "0.0",
+      "above_one_third": false
+    },
+    {
+      "kind": "PetzQuadratic",
+      "ratio": "0.33333232732346135730185726856288732229720219823519158637942787624",
+      "gap_below_one_third": "0.0000010060098719760314760647704460110361311350981417469539054570974782",
+      "base_min_eigenvalue": "0.0000024999999999584756648785032263602001620099862602107121623826876861",
+      "partial_trace_residual": "0.0",
+      "above_one_third": false
+    }
+  ],
+  "all32_starts_completed": true,
+  "optimizer_success_count": 32,
+  "optimizer_non_success": []
+}

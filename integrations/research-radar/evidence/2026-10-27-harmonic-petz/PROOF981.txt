@@ -1,0 +1,65 @@
+Faithful-pair Petz extension of the harmonic cancellation bound979.
+Parent derivation, not independently reviewed or formally verified. No manuscript score.
+
+Setting: finite A,R; m local unitaries Uj; E=m^-1 sum AdUj;
+N=sum wj AdUj, wj>0, sum wj=1. Assume faithful density matrices rho,sigma
+with E(rho)=E(sigma). Every map here includes identity on R.
+Claim: for every nonaffine operator-convex f on (0,infinity), f(1)=0,
+the Petz divergence obeys H_f(Nrho,Nsigma)<=h H_f(rho,sigma),
+h=1-m^2/(sum 1/wj). Same constant for every finite R.
+
+Known machinery: Hiai--Ruskai1508.03551v1, Proposition2.1(i), Eq7,
+and Eq12--13 give a positive integral of quadratic resolvents plus
+a nonnegative quadratic endpoint. This representation is established prior art.
+Selected definitions/representation read; no full-paper priority audit claimed.
+
+Let Delta=rho-sigma. For t>=0 put Q=Lrho+t Rsigma, acting on the
+complex Hilbert space of matrices, not merely its Hermitian subspace.
+The generator (x-1)^2/(x+t) has divergence <Delta,Q^-1 Delta>.
+Lrho and Rsigma commute as superoperators even for noncommuting rho,sigma.
+For positive Q, the inverse quadratic form is jointly convex in Q,Z:
+<Z,Q^-1 Z>=sup_Y(2 Re<Y,Z>-<Y,QY>).
+The quadratic endpoint uses Q=Rsigma and the same argument.
+
+Define Qj=AdUj Q AdUj*, Deltaj=Uj Delta Uj*. Equal-E implies sum Deltaj=0.
+For any real a, NDelta=sum wj [(wj-a)/wj]Deltaj. Also Qout=sum wj Qj.
+Joint convexity, quadratic homogeneity, and unitary covariance give
+<NDelta,Qout^-1 NDelta> <= sum ((wj-a)^2/wj) <Delta,Q^-1 Delta>.
+All convex weights wj remain positive; the tangent multipliers may be negative.
+The minimum occurs at a=m/(sum 1/wj), with value h.
+Repeat for Rsigma, then integrate the positive representation of f.
+Affine terms vanish because traces of rho and sigma agree. Faithfulness
+ensures finite positive divergences for nonaffine f and distinct pairs;
+Tonelli applies to the nonnegative kernel integrals. This proves the stated
+faithful-pair inequality conditional only on the cited established representation.
+
+Scope: this eliminates dependence on a specifically logarithmic/BKM generator
+from979; it does not remove the equal-E hypothesis or positivity of weights.
+No arbitrary singular-pair extension is claimed here. No exactness, tensorization,
+capacity theorem, arbitrary new quantum f-divergence family or priority claim.
+For local depolarization m=d^2 this still gives only
+(d^2-1)lambda^2/[1+(d^2-2)lambda]. Qubit lambda1/2 gives3/8,
+not the still-unproved conjectural1/3. No improvement of that numerical gap.
+
+Confidence: literature for the representation; speculative/unreviewed own
+theorem derivation; heuristic for finite controls; no Lean/formal result.
+Falsifier: one valid faithful equal-E pair violating h, a wrong resolvent
+orientation, or a failure of convexity/covariance/integration. Abandon novelty
+claim if an earlier random-unitary/Doeblin comparison already implies this.
+This is a lemma to consolidate with979, not a separate small paper.
+
+Sharp control subcase (own derivation; priority unestablished): let U=U*, U^2=I
+have both signs in its spectrum. Set E=(id+AdU)/2 and
+N=w id+(1-w)AdU, 0<w<1. Then h=(2w-1)^2 and this is the exact
+complete equal-E contraction coefficient for EVERY above nonaffine f.
+For the lower bound choose a nonzero Hermitian X connecting the two U
+eigenspaces, sigma=I/n, rho_epsilon=I/n+epsilon X. Then E X=0 and
+N X=(2w-1)X. For sufficiently small real epsilon these are faithful states.
+Scalar Taylor expansion (sigma is central) gives
+H_f(rho_epsilon,sigma)=(n/2)f''(1)epsilon^2 TrX^2+o(epsilon^2).
+The output/input ratio tends to (2w-1)^2. f''(1)>0 follows from the
+positive representation for nonaffine operator-convex f. At w=1/2 both
+outputs coincide and coefficient0 is immediate. The same lower witness
+works with trivial R, while the upper holds for all finite R.
+This exact involution/dephasing case is a useful consistency control;
+it does not solve the d^2-unitary depolarizing problem or establish novelty.

@@ -1,0 +1,115 @@
+{
+  "utc": "2026-10-27T13:19:13.389824+00:00",
+  "scope": "Directed primary inventory plus selected Petz representation; not exhaustive or worldwide originality certification.",
+  "sources": [
+    {
+      "id": "openai-math-head",
+      "url": "https://api.github.com/repos/openai/math/commits?per_page=1",
+      "utc": "2026-10-27T13:19:11.276740+00:00",
+      "reading_scope": "inventoried only; no linked proof read",
+      "foreign_body_stored": false,
+      "status": 200,
+      "resolved_url": "https://api.github.com/repos/openai/math/commits?per_page=1",
+      "bytes": 4784,
+      "sha256": "6ca38558150e5428a6ab89342338edbbedc7eb5cf1d5dcc3752dd34b0ad91760",
+      "head": {
+        "sha": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+        "date": "2026-10-26T21:18:03Z"
+      }
+    },
+    {
+      "id": "deepmind-formal-conjectures-head",
+      "url": "https://api.github.com/repos/google-deepmind/formal-conjectures/commits?per_page=1",
+      "utc": "2026-10-27T13:19:11.277741+00:00",
+      "reading_scope": "inventoried only; no linked proof read",
+      "foreign_body_stored": false,
+      "status": 200,
+      "resolved_url": "https://api.github.com/repos/google-deepmind/formal-conjectures/commits?per_page=1",
+      "bytes": 8641,
+      "sha256": "35c8d5ede2936394b64fe555e4ee1f44d4d8375e7947129a60c9ed10d8bbae5c",
+      "head": {
+        "sha": "c0c538071a21b36d15f70f5998370eb6a4c31c97",
+        "date": "2026-10-27T09:30:35Z"
+      }
+    },
+    {
+      "id": "lluiseriksson-recent-repositories",
+      "url": "https://api.github.com/users/lluiseriksson/repos?per_page=100&sort=updated",
+      "utc": "2026-10-27T13:19:11.277741+00:00",
+      "reading_scope": "inventoried only; no linked proof read",
+      "foreign_body_stored": false,
+      "status": 200,
+      "resolved_url": "https://api.github.com/users/lluiseriksson/repos?per_page=100&sort=updated",
+      "bytes": 212804,
+      "sha256": "d831ab8d4d37a3883a095aa8dcd659818fffa09aa497f348b84da5e5f11f7610"
+    },
+    {
+      "id": "anthropic-research",
+      "url": "https://www.anthropic.com/research",
+      "utc": "2026-10-27T13:19:11.277741+00:00",
+      "reading_scope": "inventoried only; no linked proof read",
+      "foreign_body_stored": false,
+      "status": 200,
+      "resolved_url": "https://www.anthropic.com/research",
+      "bytes": 417084,
+      "sha256": "0bf85cd76b3823265d27de0f9d88a8c8f7a074534433722892847993058755aa"
+    },
+    {
+      "id": "airr-papers-index",
+      "url": "https://airr.science/papers/",
+      "utc": "2026-10-27T13:19:11.278744+00:00",
+      "reading_scope": "inventoried only; no linked proof read",
+      "foreign_body_stored": false,
+      "status": 200,
+      "resolved_url": "https://airr.science/papers/",
+      "bytes": 117462,
+      "sha256": "e5753dfb1d4df9a3b2aa19111f67003c5ca74d6cb1e3be80d92a5fabdd3de372"
+    },
+    {
+      "id": "aivixra-author",
+      "url": "https://www.ai.vixra.org/author/lluis_eriksson",
+      "utc": "2026-10-27T13:19:11.857618+00:00",
+      "reading_scope": "inventoried only; no linked proof read",
+      "foreign_body_stored": false,
+      "status": 200,
+      "resolved_url": "https://www.ai.vixra.org/author/lluis_eriksson",
+      "bytes": 70178,
+      "sha256": "9cfc2018ff38a1f839e7c86f3d743cdbefb2b58b46c47bab6b4dd5af36fb8b7e"
+    },
+    {
+      "id": "hiai-ruskai-1508.03551v1",
+      "url": "https://arxiv.org/html/1508.03551v1",
+      "utc": "2026-10-27T13:19:11.861624+00:00",
+      "reading_scope": "selected Proposition2.1(i), Eq7, Eq12--13 read and compared; not full proof audit",
+      "foreign_body_stored": false,
+      "status": 200,
+      "resolved_url": "https://arxiv.org/html/1508.03551v1",
+      "bytes": 1255676,
+      "sha256": "1a4bded4a90d3ec413a168b95f484b9f9a04981f703befc7b91927b1bce3d5bb"
+    },
+    {
+      "id": "tan-tomamichel-george-2605.06452v1",
+      "url": "https://arxiv.org/abs/2605.06452v1",
+      "utc": "2026-10-27T13:19:12.086666+00:00",
+      "reading_scope": "abstract read only; asymptotic fixed-reference result, theorem comparison pending",
+      "foreign_body_stored": false,
+      "status": 200,
+      "resolved_url": "https://arxiv.org/abs/2605.06452v1",
+      "bytes": 41837,
+      "sha256": "97277db8f73d62ac585027de8b8207afce299519cc1124583927a979ffe2b6b0"
+    },
+    {
+      "id": "cao-2608.13204v1",
+      "url": "https://arxiv.org/abs/2608.13204v1",
+      "utc": "2026-10-27T13:19:12.145918+00:00",
+      "reading_scope": "abstract read only; tensorization obstruction reported, proof not audited",
+      "foreign_body_stored": false,
+      "status": 200,
+      "resolved_url": "https://arxiv.org/abs/2608.13204v1",
+      "bytes": 40344,
+      "sha256": "715b29d7577201a3dbcb817da309057a9b581139f2272dbbcfed7ed69bc9cf12"
+    }
+  ],
+  "search_scope": "Two targeted random-unitary/harmonic-weight searches returned no covering primary theorem; this absence does not establish novelty.",
+  "own_synthesis": "981 uses the known positive resolvent representation to extend979 to faithful-pair Petz f divergences. Exact involution subcase has a central-state Taylor lower witness. General depolarizing exact1/3 still open."
+}

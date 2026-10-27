@@ -1,0 +1,45 @@
+Research983: adversarial search and definition/prior-art contrast.
+27 October2026. Own unreviewed research, no manuscript score or universal proof.
+
+The previous goal turn982 made progress by preserving the faithful Petz
+extension981. This turn completes32 fixed-budget local optimizations of the
+qubit equal-marginal tangent coefficient at lambda1/2. Reference dimensions2,3;
+BKM and Petz quadratic generators; rank2 and full-rank base parametrizations,
+fixed positive regularization1e-5. Full outcomes, unsuccessful terminations
+and saved best directions are retained. No restart is chosen to seek a grade.
+This is a bounded diagnostic, not an exhaustive campaign certificate.
+Largest observed values remain below1/3. No numerical upper theorem follows.
+
+Selected primary comparison:
+Belzig--Gao--Smith--Wu2411.19890v3, Section7 Definition7.1, defines a ratio
+of actual mutual informations, with arbitrary quantum reference. It differs
+from the general equal-marginal TWO-STATE coefficient. Their proposed
+depolarizing upperlambda is therefore a baseline improved by a valid979
+equal-pair upper because actual-product pairs are included. Their framework
+alone does not prove979 novelty; other bounds and later sources remain relevant.
+Hirche--George--Nuradha--Wilde2608.27171v1 Section3.3 Eq3.63--3.66 gives
+finite lower witnesses and explicitly distinguishes MI, complete pair and
+conditional coefficients. Selected definitions/paragraphs read; not full audit.
+No conclusion about unequal-marginal conditional coefficients is inferred.
+
+Additional exact diagnostic: for local depolarization in dimensiond, choose
+two distinct orthogonal maximally entangled Bell vectors in A tensor R with
+R=d. Let sigma_delta=(1-delta)(P1+P2)/2+delta I_(d^2)/d^2,
+Delta=P1-P2. Both reference marginals of these Bell projectors equalI/d,
+so Tr_A Delta=0. On their span sigma=aI, a=(1-delta)/2+delta/d^2.
+The output eigenvalue there is b=lambda a+(1-lambda)/d^2 and NDelta=lambda Delta.
+For EVERY nonaffine operator-convex Petz generator, commuting local Taylor
+expansion gives tangent ratio lambda^2 a/b, tending to
+  d^2 lambda^2/[2+(d^2-2)lambda].
+This is a lower bound on the COMPLETE TWO-STATE coefficient. It is NOT
+an actual-product MI lower witness. For d2 it equals2lambda^2/(1+lambda).
+For d3,lambda1/2 it equals9/22, leaving the harmonic upper4/9.
+The construction uses known classical Bell-diagonal geometry; no priority claim.
+
+Retained hard hypothesis: a uniform BKM inequality for all finite references,
+all faithful bases and all partial-trace-zero tangents. Current screens do
+not remove it. The naive partial-trace order shortcut was already refuted977.
+Keep the conjecture open, preserve any future stable counterexample, and
+consolidate these results in the knowledge tree before a new manuscript.
+Confidence: literature for cited definitions, heuristic for optimization,
+speculative/unreviewed for own analytic extensions, no formal/Lean verification.
