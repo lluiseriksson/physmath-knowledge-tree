@@ -1,6 +1,6 @@
 # PhysMath Knowledge Tree
 
-> **Research radar · 24 October 2026:** [719 catalogued manuscript titles, ten source cards and four falsifiable research tasks](integrations/research-radar/README.md). Catalogue metadata is not proof verification.
+> **Research radar:** [dated manuscript inventories, source cards and falsifiable research tasks](integrations/research-radar/README.md). Catalogue metadata is not proof verification.
 
 <!-- RESEARCH-UPDATE-2026-09-09 -->
 > **Research update · 9 September 2026:** [verified source cards, limits and next experiments](docs/research-updates/2026-09-09.md) · [machine-readable dossier](docs/research-updates/2026-09-09.json).

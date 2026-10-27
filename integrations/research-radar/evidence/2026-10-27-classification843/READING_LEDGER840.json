@@ -1,0 +1,42 @@
+{
+  "scope": "Hostile bounded unscored audit of classification839 frozen input. No manuscript assessment or worldwide priority certification.",
+  "requested_configuration": {"model": "GPT-6 Astra", "reasoning_effort": "xhigh", "runtime_attestation_available": false, "effective_independence_attested": false},
+  "context": {
+    "read": ["Delegated audit request", "User AGENTS.md instructions supplied in the conversation", "D:\\LEEME.md", "All six files of the frozen input packet", "Specified primary sources and close primary antecedents listed below"],
+    "not_read": ["Other audit reports", "Numeric grades", "Project objectives or root state", "Other chats", "Manuscripts outside the frozen packet"],
+    "delegation": "No agents or chats were spawned by this reviewer.",
+    "skill": {"name": "pages:write-page", "files_read": ["C:\\Users\\lluis\\.codex\\plugins\\cache\\openai-curated-remote\\pages\\0.1.26\\skills\\write-page\\SKILL.md", "C:\\Users\\lluis\\.codex\\plugins\\cache\\openai-curated-remote\\pages\\0.1.26\\skills\\write-page\\writing_quality.md"], "use": "Local report prose and verification only; explicit local destination honored; no Page creation."}
+  },
+  "frozen_payloads": [
+    {"file": "MANIFEST839.json", "depth": "Complete", "purpose": "Hash and byte verification of all payloads"},
+    {"file": "PROOF838.md", "depth": "Complete, including definitions, every proof and scope paragraph", "purpose": "Analytic correctness audit"},
+    {"file": "controls839.py", "depth": "Complete", "purpose": "Inspection before execution in a separate copy"},
+    {"file": "CONTROLS839.json", "depth": "Complete", "purpose": "Comparison with reproduction and inspection of listed witnesses"},
+    {"file": "PRIMARY838.json", "depth": "Complete", "purpose": "Source URLs, claimed prior reading depths and hashes"},
+    {"file": "PRIOR838.md", "depth": "Complete", "purpose": "Candidate's stated prior-art boundaries"}
+  ],
+  "primary_sources": [
+    {"url": "https://arxiv.org/html/2609.39917v1", "version": "v1", "depth": "Complete section 3.1, including definitions, Theorem 3.1, proofs of Lemmas 3.2-3.4, proof of Theorem 3.1, Corollary 3.5 and Remark 3.6; preceding unimodular definition and initial metadata/abstract also read", "not_claimed": "Full-paper proof audit", "support": "Exact external sufficiency statement and proof dependency used for the parity-halving observation", "body_hash_record": "SOURCES840.json", "prior_hash_match": true},
+    {"url": "https://www.lamsade.dauphine.fr/~rgrappe/papers/box-tdi.pdf", "version": "Published author PDF, Mathematical Programming 188 (2021), online 2020-05-20", "depth": "Metadata/abstract; PDF pages 11-14 read in full (printed 329-332), including Observation 2, Theorems 3-7, proofs on those pages, recognition paragraph, Remark 2 and Corollaries 3-4; targeted web reference excerpt for Heller also read", "not_claimed": "Full paper or all box-TDI proofs read", "support": "Classical normalization, lattice equality, geometric characterization, recognition and close comparison of necessity witness", "body_hash_record": "SOURCES840.json", "prior_hash_match": true},
+    {"url": "https://arxiv.org/abs/1804.08977v1", "depth": "Abstract and version metadata", "support": "Original title, authors and submission date 2018-04-24", "body_hash_record": "SOURCES840.json", "prior_hash_match": true},
+    {"url": "https://arxiv.org/pdf/1804.08977v1", "depth": "Extracted-text lines 427-532, comprising section 4.1 and start of 4.2 through Corollary 4.9; full-text term searches used only for navigation", "support": "Theorem numbering 4.1, 4.3 and Corollary 4.9, comparison with published version", "not_claimed": "Full 28-page paper read", "body_hash_record": "SOURCES840.json"},
+    {"url": "https://arxiv.org/abs/2610.13244v1", "depth": "Abstract and metadata only", "support": "Limited lead about ESP and box-TDI", "not_claimed": "Any proof read or any counting-preserving transfer established", "body_hash_record": "SOURCES840.json", "prior_hash_match": true},
+    {"url": "https://msp.org/pjm/1957/7-3/pjm-v7-n3-p07-p.pdf", "depth": "PDF pages 2-7 (printed 1351-1356), including conditions (1.5)-(1.7) and their equivalence", "support": "Original primary statement of the classical Dantzig property and basis-coordinate condition", "not_claimed": "Complete paper read or a halving/counting theorem located", "body_hash_record": "SOURCES840-extra.json"},
+    {"url": "https://arxiv.org/pdf/1502.06131v2", "depth": "PDF pages 1-4, including Definition 1.1, Definitions 2.7-2.8, paragraph proving the equivalence using Cramer and beginning of Proposition 2.9", "support": "Explicit prior equivalence between constant maximal-minor magnitude and circuit coefficients in {0,+1,-1}; terminology difference", "not_claimed": "Full 25-page classification of hierarchical models read", "body_hash_record": "SOURCES840-extra.json"}
+  ],
+  "searches": [
+    {"query": "\"log concavity\" \"equimodular\"", "use": "Bounded discovery; no priority conclusion from missing match"},
+    {"query": "\"log-concavity\" \"unimodular\" \"converse\"", "use": "Bounded discovery; secondary open-problem snippet not relied upon"},
+    {"query": "\"unimodular\" \"1,1,2\" circuit", "use": "Bounded discovery; unrelated hits not relied upon"},
+    {"query": "unimodular matrix characterization subsets even sum partition half Heller", "use": "Discovery of close classical literature; no claim from teaching-note snippets"},
+    {"query": "\"unimodular\" \"halving\"", "use": "Bounded discovery"},
+    {"query": "\"equimodular\" \"log-concavity\"", "use": "Bounded discovery"},
+    {"query": "\"On linear systems with integral valued solutions\" Heller 1957", "use": "Find primary paper"},
+    {"query": "\"unimodular binary hierarchical models\" arxiv", "use": "Find primary preprint after publisher snippet"},
+    {"query": "\"On linear systems with integral valued solutions\" \"msp.org/pjm\"", "use": "Find publisher PDF"},
+    {"query": "\"midpoint\" \"log-concavity\" \"circuit\"", "use": "Bounded discovery"},
+    {"query": "\"log-concavity\" \"equimodularity\"", "use": "Bounded discovery"},
+    {"query": "site:msp.org/pjm/1957/7-3/ Heller integral valued solutions", "use": "Locate exact article PDF"}
+  ],
+  "search_limit": "No claim of exhaustive literature search. Search snippets only locate sources. Substantive conclusions rely on the frozen proof, explicit derivations and primary passages actually read. Failed accesses are retained in INCIDENTS840.json."
+}

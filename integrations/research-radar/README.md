@@ -2,12 +2,12 @@
 
 A dated, searchable bridge between primary-source discovery, the existing knowledge graph and bounded research tasks. It records what has actually been inspected. It does not assign scientific truth from a repository title, formal statement, model score or graph path.
 
-The current snapshot, observed on **26 October 2026**, contains:
+The current snapshot, refreshed on **27 October 2026**, contains:
 
 - Current metadata for **721 OpenAI manuscripts in373 families**, pinned to commit `7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a`. This is bibliographic inventory, not721 reviewed proofs. The original719/372 snapshot and three withdrawal notices are preserved.
-- Thirty-six source cards spanning OpenAI, Anthropic, DeepMind, the author's catalogues and relevant primary mathematical literature. Dates and individual reading depths distinguish background, inventory and inspected statements.
+- Source cards spanning OpenAI, Anthropic, DeepMind, the author's catalogues and relevant primary mathematical literature. Dates and individual reading depths distinguish background, inventory and inspected statements; the registry is authoritative for the current count.
 - An inventory of29 selected public research repositories, with reading scope recorded per entry.
-- Eleven speculative candidate records with their current statuses, dictionaries, missing structure, falsifiers and next tasks. None carries a manuscript score.
+- Speculative candidate records with their current statuses, dictionaries, missing structure, falsifiers and next tasks. None carries a manuscript score.
 
 ## Use
 
@@ -22,6 +22,8 @@ npm run validate:research-radar
 [Source cards and candidates](registry.json) · [Current pinned manuscript catalogue](catalogue/openai-math-2026-10-26.json) · [Historical719/372 snapshot](catalogue/openai-math-2026-10-24.json) · [Public repository inventory](repository-inventory.json) · [Retrieved graph context](retrieval-2026-10-24.json) · [Research update](../../docs/research-updates/2026-10-24.md).
 
 ## Update cycle
+
+Latest: [equimodularity and a positive circuit witness](notes/2026-10-27-equimodular-converse.md) records an unscored technical audit of an exact universal midpoint classification. Classical normalization is explicitly prior knowledge. The preceding exact six-page manuscript received importance **4.0/10** and technical **8.5/10**; its original full report and objections are preserved. These grades do not assess the new classification.
 
 New global result: [entropy gaps for two nonunital channel families](notes/2026-10-26-global-entropy-families.md) removes the small-Schmidt-amplitude restriction for a specified rectangle of pairs. A narrowly audited analytical chain and4,454-cell rational certificate give a uniform squared-concurrence penalty and two-channel Holevo equality. The combined exact-PDF assessment is pending; arbitrary partners, tensor powers, capacity and canonical confidence upgrades remain unestablished.
 

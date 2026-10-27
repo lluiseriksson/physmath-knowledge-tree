@@ -1,0 +1,81 @@
+{
+  "scope": "Directed primary-source endpoint refresh, not exhaustive; hashes bind received pages, dynamic pages may change without a new paper. No third-party bodies redistributed. arXiv abstract read through web; classical and selected-proof depths in audit840 reading ledger.",
+  "records": [
+    {
+      "source": "OpenAI",
+      "url": "https://api.github.com/repos/openai/math/commits/main",
+      "utc": "2026-10-27T04:38:56.261030+00:00",
+      "depth": "inventory refresh only; no newly audited proof",
+      "status": 200,
+      "bytes": 1251976,
+      "sha256": "5a8e78b28a7714f01dc8964578e9f0ec51e2cdf074345ecc2dcaf047d4a3aa0a",
+      "resolved_url": "https://api.github.com/repos/openai/math/commits/main",
+      "commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+      "commit_date": "2026-10-26T21:18:03Z"
+    },
+    {
+      "source": "DeepMind",
+      "url": "https://api.github.com/repos/google-deepmind/formal-conjectures/commits/main",
+      "utc": "2026-10-27T04:38:56.261839+00:00",
+      "depth": "inventory refresh only; no newly audited proof",
+      "status": 200,
+      "bytes": 12128,
+      "sha256": "443fb766e16f2676dc3926107e821d3e483ed810feba546846c2e8553989469c",
+      "resolved_url": "https://api.github.com/repos/google-deepmind/formal-conjectures/commits/main",
+      "commit": "f153efa8fdc078131e214547781d631e2d257daf",
+      "commit_date": "2026-10-26T17:02:36Z"
+    },
+    {
+      "source": "Anthropic",
+      "url": "https://www.anthropic.com/research",
+      "utc": "2026-10-27T04:38:56.261839+00:00",
+      "depth": "inventory refresh only; no newly audited proof",
+      "status": 200,
+      "bytes": 417127,
+      "sha256": "4a776679ba45e791b5f1b8490f1d1fb5190c505e5336a41d88c5fb7de8938e28",
+      "resolved_url": "https://www.anthropic.com/research"
+    },
+    {
+      "source": "arXiv",
+      "url": "https://arxiv.org/abs/2610.13244v1",
+      "utc": "2026-10-27T04:38:56.262843+00:00",
+      "depth": "inventory refresh only; no newly audited proof",
+      "status": 200,
+      "bytes": 39554,
+      "sha256": "b33997648afb3239445bdb8ee6ff7752f030120caf0c7d9a4fd0d05e1989711c",
+      "resolved_url": "https://arxiv.org/abs/2610.13244v1"
+    },
+    {
+      "source": "AIRR",
+      "url": "https://airr.science/",
+      "utc": "2026-10-27T04:38:56.262843+00:00",
+      "depth": "inventory refresh only; no newly audited proof",
+      "status": 200,
+      "bytes": 228399,
+      "sha256": "61b2bf664244519e788db32607d2b45206bc15024246f401669d8e6b5a65e69a",
+      "resolved_url": "https://airr.science/"
+    },
+    {
+      "source": "ai.viXra",
+      "url": "https://www.ai.vixra.org/author/lluis_eriksson",
+      "utc": "2026-10-27T04:38:56.263842+00:00",
+      "depth": "inventory refresh only; no newly audited proof",
+      "status": 200,
+      "bytes": 70178,
+      "sha256": "9cfc2018ff38a1f839e7c86f3d743cdbefb2b58b46c47bab6b4dd5af36fb8b7e",
+      "resolved_url": "https://www.ai.vixra.org/author/lluis_eriksson"
+    },
+    {
+      "source": "Own public research",
+      "url": "https://api.github.com/repos/lluiseriksson/physmath-knowledge-tree/commits/main",
+      "utc": "2026-10-27T04:38:56.263842+00:00",
+      "depth": "inventory refresh only; no newly audited proof",
+      "status": 200,
+      "bytes": 140121,
+      "sha256": "f7ae8785cd8aac54c7d451a8c600a13aaeace14a10fc00c0eef566c0a4dbc383",
+      "resolved_url": "https://api.github.com/repos/lluiseriksson/physmath-knowledge-tree/commits/main",
+      "commit": "620dfafc054a813834943f069fd9864693402f7e",
+      "commit_date": "2026-10-27T03:51:01Z"
+    }
+  ]
+}
