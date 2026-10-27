@@ -25,3 +25,5 @@ The mechanism retains reduction order along the entire joint-state-to-actual-pro
 A valid-assumption state above the sharp benchmark, or a pure depth<d sequence with full-rank S, refutes the respective statement. A covering antecedent defeats novelty even if algebra remains valid. Nine exact schedules and three unitary sequences are bounded consistency checks, not a universal proof or reproducibility capsule. New candidates remain speculative in the graph; no canonical nodes/edges, Lean declarations or confidence labels are promoted.
 
 The evidence files are LF text views. [MANIFEST953](../evidence/2026-10-27-sharp-separable/MANIFEST953.json) records both original archived and repository transport hashes; exact original report bytes remain in their sealed dossiers and the public manuscript report. Earlier snapshots are historical and are superseded by this update only for later status, never by rewriting their reports.
+
+Status follow-up975: the pending952/full-manuscript status above is historical snapshot953. See [the completed958 update](2026-10-27-reviewed-reset.md); original evidence files remain unchanged.

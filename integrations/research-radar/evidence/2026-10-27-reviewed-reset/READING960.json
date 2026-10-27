@@ -1,0 +1,26 @@
+{
+  "utc": "2026-10-27T12:05:25.367022+00:00",
+  "source": "https://arxiv.org/html/2608.19685v1",
+  "version": "v1 2026-08-20",
+  "bytes": 674305,
+  "sha256": "7afaa75d6326a6b16db5e14fb3ffc10c48342257388f5c763757a31289cd0305",
+  "reading": "Abstract, Definition3.7 andCorollaries3.8/3.10 with displayed index application; Section4.1 replacer index formula; full proof not audited",
+  "synthesis": "Fixed-equilibrium relative entropy is different from actual-product MI, demonstrated by an exact finite separable witness using939. Closely relevant primary antecedent must be included in any future novelty map.",
+  "exact_certificate": {
+    "MI_lower": "214375/675546",
+    "gap_above_5_16": "26135/5404368",
+    "log_5_4_upper": "43/192",
+    "log_threshold": "9/40"
+  },
+  "novelty": "unresolved; distinct quantity is not a priority proof",
+  "paper957_modified": false,
+  "review958_interfered": false,
+  "foreign_fulltext_copied": false,
+  "additional_selected_proof_read": "Proposition2.3 first convexity ratio monotonicity and displayed BKM/Chebyshev proof portions; not full-paper audit",
+  "same_cone_certificate": {
+    "MI_n20_lower": "14440/49329",
+    "fixed_reference_upper_lt": "7/24",
+    "MI_gap": "419/394632",
+    "log_bound_margin": "107/6480"
+  }
+}

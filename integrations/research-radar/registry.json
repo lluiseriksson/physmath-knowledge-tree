@@ -909,6 +909,36 @@
       "anchors": [
         "domain.quantum_information_theory"
       ]
+    },
+    {
+      "id": "gao-zhao-tight-2026-scoped",
+      "title": "Tight Entropy Contraction of Generalized Quantum Depolarization",
+      "url": "https://arxiv.org/abs/2608.19685v1",
+      "kind": "preprint",
+      "observed_on": "2026-10-27",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Review958 and parent960 read selected BKM ratio proofs, fixed-point Definition3.7 and index applications. The replacer reference tau tensor rho_R differs from the actual product rho_A tensor rho_R; an exact finite same-cone contrast is preserved in962.",
+      "limits": "Close omitted antecedent O1 remains pending in frozen957. Distinct quantities do not establish priority, nor refute the antecedent. Not a full-paper correctness audit.",
+      "reuse": "Metadata and original synthesis only, no foreign full text or training authorization.",
+      "anchors": [
+        "domain.quantum_information_theory"
+      ]
+    },
+    {
+      "id": "trelat-zuazua-gramian-2026-scoped",
+      "title": "Two-term small-time spectral expansions for controllability Gramians",
+      "url": "https://arxiv.org/abs/2609.37077v1",
+      "kind": "preprint",
+      "observed_on": "2026-10-27",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Theorem1, complex Remark5 and selected graded-factorization proof cover the leading weighted-orbit Gramian coefficient in963 after A=-iH-gamma I/2 and b=sqrt(gamma)psi. The t^(2d-1) hierarchy and moment constant are prior.",
+      "limits": "Only selected theorem/proof read; no full-paper audit. The resulting information-onset corollary is unreviewed and not another major discovery. Uniform exponential constrained-MI rate remains gamma for fixed parameters.",
+      "reuse": "Metadata and original synthesis only, no foreign full text or training authorization.",
+      "anchors": [
+        "domain.quantum_information_theory"
+      ]
     }
   ],
   "candidates": [
@@ -1233,7 +1263,7 @@
     {
       "id": "sharp-separable-reset-depth",
       "title": "Sharp separable/PPT MI decay and pure-reset depth threshold",
-      "status": "under_audit",
+      "status": "queued",
       "confidence": "speculative",
       "paper_score": null,
       "source_ids": [
@@ -1243,18 +1273,20 @@
         "horodecki-reduction-1998-scoped",
         "terhal-schmidt-2000-scoped",
         "reeb-projective-2011-scoped",
-        "hirche-conditional-2026-scoped"
+        "hirche-conditional-2026-scoped",
+        "gao-zhao-tight-2026-scoped",
+        "trelat-zuazua-gramian-2026-scoped"
       ],
       "node_ids": [
         "domain.quantum_information_theory"
       ],
       "dictionary": "Unilateral reduction order maps to a pathwise BKM bound; a rational separable coherent sequence maps to the same sharp limit. Composition of pure replacement stages maps to the smallest eigenvalue and rank of accumulated replacement noise.",
       "preserved": "All finite reference dimensions, actual product marginals and explicit finite MI limits; no commutativity premise. Pure-reset depth result retains exact mixture form, no feedback/extra memory, and freely chosen stage retentions at fixed product L.",
-      "lost_or_unproved": "No worldwide novelty, unrestricted qubit1/3 upper bound, sharp Schmidt thresholds for k>1, fixed-rate or experimental sampling theorem.950 depth application remains unaudited;942 supports939/939b with two wording corrections, no manuscript grade.",
-      "hypothesis_to_remove": "Exact939 eliminates the restriction to a classical reference within a constrained input cone.950 proposes replacing a vague multi-step norm bound by an exact spectral formula and proving a depth-d resource threshold for pure reset mixtures.",
-      "falsifier": "A reduction-positive input exceeding the sharp939 coefficient, a Schmidt<=k decomposition exceeding its necessary bound, or a valid m<d pure-reset composition with full-rank accumulated replacement refutes the relevant proposal. A covering theorem defeats novelty.",
-      "next_finite_task": "Read the one active component audit952 of950, retain objections, correct minimum-kappa and fixed-margin wording, then construct one substantive exact-PDF manuscript and obtain one real assessment without target score.",
-      "review_packet": "Full unscored942 report supports939/939b and retains all source/control incidents, unresolved novelty, minimum-kappa and fixed-margin clarifications. New950 exact composition controls pass9schedules+3unitary sequences; finite consistency only. One separate-context Astra xhigh audit952 is running; no effective identity or independence attested. No score inherited from923 or other versions."
+      "lost_or_unproved": "Worldwide priority unresolved and close Gao--Zhao antecedent omitted from frozenPDF. No unrestricted qubit1/3 upper, sharp SN>1 constant, floor-optimum, capacity or sampling-cost theorem.963 leading Gramian asymptotic is prior.968 is an unreviewed finite-information certificate, not another paper or reassessment.",
+      "hypothesis_to_remove": "Extend the exact constrained result to unrestricted quantum-reference comparisons, or replace a vanishing-information asymptotic example by an actual information-floor or operational theorem. Neither has been achieved by the finite screen.",
+      "falsifier": "A faithful valid equal-reference tangent above the proposed971 bound, confirmed by a stable finite pair, refutes that upper-bound route. A covering source defeats novelty. Interval-certificate failure refutes968, without affecting frozen957 claims.",
+      "next_finite_task": "Try to prove or falsify971 uniform complete-pair qubit BKM bound for every finiteR;216 finite diagnostics are not a proof. Alternatively derive a genuine information-floor/operational theorem using968 as a foothold. No regrade of unchanged957 or stand-alone table of corollaries.",
+      "review_packet": "One full exact9page review958 is terminal: importance4.0, global4.5, technical8.5, original minor_revision. Exact PDF5542d250... has public Working-paper release ARR-2026-0JN84GQ1MD8FW9WRv1; not Accepted. Same-review967 is format-only, not another vote; O1 unchanged and clarified nonblocking minor bibliographic revision. Effective identity/independence unattested. Audit952 is terminal for950; full958 covers955."
     }
   ],
   "source_refresh": {
@@ -1303,6 +1335,10 @@
     "followup953": {
       "evidence": "integrations/research-radar/evidence/2026-10-27-sharp-separable/SWEEP943.json",
       "scope": "Directed primary index/commit refresh and selected proof reading;36 public owner repos inventoried,21 research metadata matches, not exhaustive paper reading. Original inventory snapshot remains historically pinned."
+    },
+    "followup975": {
+      "evidence": "integrations/research-radar/evidence/2026-10-27-reviewed-reset/READING963.json",
+      "scope": "Seven directed primary endpoints refreshed with timestamps/hashes/commits; inventories versus selected proof reading distinguished. Not exhaustive. Frozen957 review/grade separate from later961/963/968/971."
     }
   }
 }

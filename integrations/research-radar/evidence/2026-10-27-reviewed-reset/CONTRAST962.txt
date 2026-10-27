@@ -1,0 +1,30 @@
+962 — Stronger same-input-cone antecedent contrast (unreviewed note)
+27 October2026. No alteration of frozen957, no new manuscript assessment.
+
+For the qubit tau=I2/2, every unilateral-reduction-positive rho satisfies
+rho<=I_A tensor rho_R=2E_tau,R(rho). Thus its minimal fixed-equilibrium order
+constant is <=2. Gao-Zhao2608.19685v1 Proposition2.3 Eq20 and the displayed
+monotonicity proof of R_p(C) imply, at lambda1/2,
+ D(N_R rho||E_R rho)/D(rho||E_R rho) <= B_1/2(2)=phi(3/2)/phi(2).
+The fixed-equilibrium upper bound therefore holds on the SAME cone, but
+it remains a different reference comparison from actual-product MI.
+
+Exact comparison B_1/2(2)<7/24:
+this is equivalent to36log(3/2)-14log2<5, sincephi(2)>0.
+The alternating logarithm upper bound gives
+log(3/2)<1/2-1/8+1/24-1/64+1/160=391/960.
+The positive atanh series gives log2>2(1/3+1/(3^3*3))=56/81.
+These rational bounds leave positive margin 107/6480 below5.
+
+The already-audited939 finite separable witness n20 satisfies
+ q_MI>14440/49329>7/24, with rational gap 419/394632.
+Its input belongs to that same reduction/PPT/separable cone. Thus even
+restriction to the same input cone does not let one identify the antecedent's
+fixed-equilibrium entropy coefficient with the normalized MI coefficient.
+This is not a counterexample to the antecedent; both inequalities hold with
+their own reference states. The reference chain rule explains the distinction.
+
+Reading added: selected Proposition2.3 Eq19-29 scalar-monotonicity and
+BKM/Chebyshev proof portions, besides Def3.7/Cor3.10 andSection4.1. No full-paper
+proof audit or global-priority conclusion. Use as scope clarification in a
+future revision, not as a scored extra paper or mid-review author rebuttal.

@@ -1,0 +1,38 @@
+{
+  "status": "exact rational certificate passed",
+  "parameters": {
+    "x": "3/10",
+    "r": "3/100",
+    "coherence": "1/25",
+    "lambda_": "1/2"
+  },
+  "input_MI": {
+    "lower": "5319419453021/500000000000000",
+    "upper": "10638838906043/1000000000000000"
+  },
+  "output_MI": {
+    "lower": "2741860327749/1000000000000000",
+    "upper": "10967441311/4000000000000"
+  },
+  "margin_above_257_1000": {
+    "lower": "119980139/15625000000000",
+    "upper": "7678728897/1000000000000000"
+  },
+  "claims": [
+    "I_input>1/100 nats",
+    "I_output/I_input>257/1000>1/4",
+    "input is explicitly separable; all entries rational"
+  ],
+  "method": {
+    "sqrt_decimal_enclosure_digits": 28,
+    "atanh_terms": 40,
+    "dyadic_log_range": "[1,2]",
+    "tail": "2 z^(2N+1)/[(2N+1)(1-z^2)]"
+  },
+  "limits": [
+    "one finite witness, not optimum under an information floor",
+    "no estimation protocol or sample-complexity theorem",
+    "not reviewed, no novelty/importance score",
+    "not part of frozen957 or review958"
+  ]
+}

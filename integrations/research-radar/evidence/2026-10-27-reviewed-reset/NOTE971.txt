@@ -1,0 +1,63 @@
+971: Candidate broader question, deliberately NOT a theorem
+27 October2026. Parent diagnostic research, no manuscript or assessment score.
+
+For the local qubit channel N_lambda=lambda id+(1-lambda)replacement_(I/2),
+ask whether its unrestricted equal-reference-marginal pair coefficient is
+ c(lambda)=2 lambda^2/(1+lambda).
+The SEP-constrained MI result957 proves neither this unrestricted upper
+bound nor the conjectured equality. If the upper bound could be proved
+uniformly for arbitrary finite R, the existing SEP lower bound would also
+determine the unrestricted MI coefficient by inclusion. This would close
+a genuinely larger optimization, rather than another reset corollary.
+
+Finite reduction: for faithful sigma_AR and Hermitian Delta with Tr_A Delta=0,
+bound lambda^2 g_(N sigma)(Delta)/g_sigma(Delta), with the BKM metric.
+The same-reference affine path preserves that tangent constraint. A universal
+metric bound would integrate to the pair relative-entropy bound; boundary
+states would require the finite-divergence regularization argument961.
+No universal metric inequality has been proved here.
+
+At lambda=1/2, the existing order estimate from kappa<=2 gives only2/5.
+The proposed stronger upper is1/3. The known SEP actual-MI lower bound
+already gives at least1/3, but does not supply this upper bound.
+
+A simple pair lower construction helps check the metric diagnostic:
+sigma_delta=(1-delta)(P_Phi+ + P_Phi-)/2+delta I_4/4,
+Delta=P_Phi+ - P_Phi- = |00><11|+|11><00|.
+Both partial traces of Delta vanish and sigma_R=I_2/2.
+On that coherence block sigma has equal eigenvalues a=(2-delta)/4,
+and its output has a'=lambda a+(1-lambda)/4.
+The local BKM ratio is exactly lambda^2 a/a', approaching c(lambda).
+This is a two-state local coefficient, not the MI of sigma_delta. In
+particular, sigma_delta is not the actual product of its marginals.
+Take sufficiently small perturbations for positive finite pair examples;
+for separability additionally keep |epsilon|<=delta/4. No nonvanishing
+relative-entropy claim follows from this tangent construction.
+
+screen971.py tries to falsify the proposed upper in216 seeded finite cases:
+R dimensions2,3,4; randomly rotated rank1,2 and full-rank mixtures with
+three positive regularization scales; full Hermitian tangent space spanned
+by traceless Pauli_A tensor Hermitian_R. It solves the finite generalized
+metric eigenvalue problem. Largest observed value0.3180836628<1/3.
+This is NOT evidence of a universal upper bound, exhaustive coverage or
+finite-pair/actual-MI equality. The best numerical base/direction are saved.
+
+Primary context: Hirche et al. arXiv2608.27171v1 Section3.3 Eq3.63-3.66
+poses comparisons among optimized MI, complete-pair and conditional
+coefficients. Those are distinct definitions. The inspected finite examples
+do not compute their suprema. The source snapshot is recorded in968.
+Hiai--Ruskai arXiv1508.03551v1 abstract and introductory qubit statement
+were read for ordinary metric context; no ancilla theorem is inferred.
+An initially guessed HTML v2 URL returned404. The abstract's submission
+history then confirmed onlyv1. No unverified version is cited as read.
+
+Hypotheses/limits: finite local qubit, uniform reset, all finite R, equal
+reference marginals, finite positive divergence; not the conditional
+coefficient obtained by subtracting unequal reference divergences.
+Falsifier: a faithful base and valid tangent exceeding c(lambda), followed
+by a stable finite-pair and preferably rational certificate. Such a result
+would refute this upper-bound route, not the proved SEP theorem957.
+Abandon the claim if a valid counterexample appears. Do not publish the
+upper bound from a screen with no counterexamples. A next proof attempt
+must retain the reference marginal and its noncommutativity; replacing
+local depolarization by global replacement erases precisely the difficulty.

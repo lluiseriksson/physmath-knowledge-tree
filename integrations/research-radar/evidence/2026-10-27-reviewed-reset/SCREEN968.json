@@ -1,0 +1,59 @@
+{
+  "scope": "19404 finite cases in one X-state family; double precision screening, not proof or global bound",
+  "admissibility": "PPT and positivity iff e^2<=x(1-x)r(1-r); two qubits imply separable",
+  "passing": 1851,
+  "largest_MI": {
+    "x": 0.36,
+    "r": 0.095,
+    "e": 0.0703715851746996,
+    "scale": 0.5,
+    "input_MI": 0.026649452235805893,
+    "ratio": 0.2500714631748885
+  },
+  "largest_ratio": {
+    "x": 0.23,
+    "r": 0.005,
+    "e": 0.005936573085543545,
+    "scale": 0.2,
+    "input_MI": 0.00030044250534148973,
+    "ratio": 0.27234639634465724
+  },
+  "best_by_floor": {
+    "0.0001": {
+      "x": 0.23,
+      "r": 0.005,
+      "e": 0.005936573085543545,
+      "scale": 0.2,
+      "input_MI": 0.00030044250534148973,
+      "ratio": 0.27234639634465724
+    },
+    "0.001": {
+      "x": 0.22,
+      "r": 0.005,
+      "e": 0.014609158086624979,
+      "scale": 0.5,
+      "input_MI": 0.0018434311210467234,
+      "ratio": 0.26855162240044356
+    },
+    "0.01": {
+      "x": 0.3,
+      "r": 0.03,
+      "e": 0.039086442662386145,
+      "scale": 0.5,
+      "input_MI": 0.010143447212867918,
+      "ratio": 0.2580245531562893
+    },
+    "0.02": {
+      "x": 0.35,
+      "r": 0.065,
+      "e": 0.05879267067415802,
+      "scale": 0.5,
+      "input_MI": 0.02007356131014708,
+      "ratio": 0.25249550056826214
+    },
+    "0.05": null,
+    "0.1": null
+  },
+  "no_global_optimization": true,
+  "no_score": true
+}

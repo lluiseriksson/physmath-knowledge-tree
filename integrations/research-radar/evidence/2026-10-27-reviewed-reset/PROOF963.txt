@@ -1,0 +1,61 @@
+963: Short-time onset and a limitation of coherent reset acceleration
+Parent derivation, 27 October 2026. Unreviewed research note, no paper/score.
+Frozen manuscript957 is unchanged. This is not sent to the ongoing958 review.
+
+Setting: dimension d>=2, fixed Hermitian H, unit cyclic reset vector psi,
+gamma>0, fixed parameters as t decreases to zero. Let
+S(t)=gamma integral_0^t exp(-gamma u) exp(-iHu)|psi><psi|exp(iHu) du.
+Write nu_j=dist(H^j psi,span(psi,...,H^(j-1)psi)), j=0,...,d-1,
+nu_0=1, and construct the ordered orthonormal Krylov frame q_j.
+All nu_j are positive under cyclicity. Put m=d-1 and
+c_H=gamma nu_m^2/[m!^2 (2m+1) binom(2m,m)^2].
+
+Claim: minEig S(t)=c_H t^(2d-1)(1+O(t)), fixed H,psi,gamma.
+The order and moment constant are PRIOR controllability-Gramian results,
+not a new theorem of this research programme.
+
+Self-contained leading-term proof: Taylor expansion gives
+<q_j,exp(-iHu)psi>=(-i)^j nu_j u^j/j!+O(u^(j+1)).
+In this basis, S(t)=gamma t D_t [K+O(t)]D_t, D_t=diag(t^j),
+K_ij=(-sqrt(-1))^i (sqrt(-1))^j nu_i nu_j/[i!j!(i+j+1)].
+Here i,j are indices and sqrt(-1) is the imaginary unit. The O(t) is entrywise
+and norm-uniform for fixed parameters. K is a diagonal congruence of the
+positive definite Hilbert moment matrix J_ij=1/(i+j+1).
+Invert: t^(2d-1) S(t)^(-1) converges in operator norm to the rank-one
+matrix gamma^(-1)(K^(-1))_mm |q_m><q_m|, since all other entries
+carry strictly positive powers of t. Hence reciprocal largest eigenvalues
+give the claim, using (J^(-1))_mm=(2m+1)binom(2m,m)^2.
+This proof is for t>0, where cyclicity makes S invertible.
+
+Primary prior-art comparison: Trelat--Zuazua arXiv:2609.37077v1,
+29 September2026, Theorem1 Eq(2)-(3), Remark5 (complex extension),
+and Section2.1 cover this Gramian structure. Indeed A=-iH-gamma I/2,
+b=sqrt(gamma)psi gives S(t)=integral exp(uA)bb*exp(uA*)du exactly.
+Their k=d coefficient equals c_H. Their relative next term is -gamma t/2.
+The current reading covers the abstract, displayed theorem/remark, and
+selected graded-factorization proof; it is not an audit of their full paper.
+No claim that this leading spectral formula is novel is tenable.
+
+Information consequence, CONDITIONAL on the constrained exact formula939/955:
+lambda(t)=exp(-gamma t), eta_C(t)=lambda(t)^2/[lambda(t)+minEig S(t)]
+for C=SEP, PPT or unilateral-reduction, arbitrary finite reference.
+Then lambda(t)-eta_C(t)=lambda(t)minEig S(t)/[lambda(t)+minEig S(t)]
+is asymptotic to c_H t^(2d-1). Thus cyclic Hamiltonian mixing produces a
+strict finite-time improvement, but its onset can be very high order.
+For qubits c_H=gamma omega^2 sin(theta)^2/48 in the955 convention.
+If psi is noncyclic, S(t) is singular for every t>0 and eta_C(t)=lambda(t).
+
+Negative result for a potentially stronger interpretation: the largest
+constant alpha satisfying eta_C(t)<=exp(-alpha t) for ALL t>0 is gamma.
+Feasibility follows from eta_C<=lambda. Optimality follows because
+-log(eta_C(t))/t tends to gamma as t decreases to zero (d>=2).
+Consequently no fixed H gives a strictly larger uniform exponential rate
+for this worst-case class coefficient. Finite-time strict improvement must
+not be advertised as a larger sharp logarithmic-Sobolev/exponential rate.
+No dimension-uniform, H(t)-scaled or energetic-control claim is made.
+
+Decision: retain as a limitation/application in a future substantial revision,
+not a stand-alone high-importance paper or evidence for >7. The leading
+Gramian result is established prior work; novelty of the information
+consequence has not been comprehensively checked. Numerical checks are
+finite consistency diagnostics, not a proof, formalization or review.
