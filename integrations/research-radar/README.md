@@ -117,3 +117,5 @@ New analytic checkpoint: [midpoint equality rigidity](notes/2026-10-27-midpoint-
 New directed reading: [exact-counting kernel checks](notes/2026-10-27-exact-counting-kernel-checks.md), with selected source hypotheses,5,220 exact valuation nodes and1,168 shifted-polynomial controls. The full claimed algorithm remains unaudited; no discovery, new paper, grade or graph confidence promotion is claimed.
 
 The [complete-noise and kernel checkpoint](notes/2026-10-27-complete-noise-and-kernel.md) retains full unscored audit917, ordinary antecedents and the separate unaudited Choi-faithful925 route. Full exact-PDF review remains separate; no grade or canonical graph promotion.
+
+The [sharp-separable and reset-depth update](notes/2026-10-27-sharp-separable-reset.md) closes real923/931/942 evidence, preserves the published4.00 global and2/5 significance, and labels950 as a new unscored application under audit. Original and LF transport hashes are distinguished.

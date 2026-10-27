@@ -1,0 +1,147 @@
+{
+  "utc": "2026-10-27T11:28:30.467622+00:00",
+  "scope": "Adverse component audit of frozen PROOF939 and PROOF939b; not manuscript assessment",
+  "input_manifest_sha256": "1f2f3ca227ba638cd24d38d0d152e692b615be676f03d156961551af5cc089cc",
+  "payload_count": 7,
+  "initial_verification": "all lengths and SHA256 match",
+  "valid_assumption_falsifiers_found": [],
+  "basis": "Analytical reconstruction in AUDIT942; numerical checks are only finite diagnostics",
+  "components": [
+    {
+      "id": "BKM_order_integral",
+      "status": "valid",
+      "finding": "Correct antitone base order, inverse homogeneity, lambda squared, and 1-t integration.",
+      "evidence": "AUDIT942 components 2-3"
+    },
+    {
+      "id": "singular_supports",
+      "status": "valid",
+      "finding": "Faithful product regularization preserves reduction; both actual marginals recomputed. Finite-dimensional MI continuity suffices.",
+      "evidence": "AUDIT942 component 3"
+    },
+    {
+      "id": "separable_PPT_reduction_upper",
+      "status": "valid",
+      "finding": "Upper bound holds for every finite reference dimension under unilateral reduction; PPT and separable implication are prior.",
+      "evidence": "AUDIT942 components 1,3"
+    },
+    {
+      "id": "explicit_separability",
+      "status": "valid",
+      "finding": "Positive coefficients in X/Y product-cone decomposition; t squared<1; local filtering and embedding preserve separability.",
+      "evidence": "AUDIT942 component 4"
+    },
+    {
+      "id": "finite_MI_simultaneous_limit",
+      "status": "valid",
+      "finding": "Uniform relative-order sandwich controls finite divergences while n,x,r,epsilon vary together, including a=0 and b=0.",
+      "evidence": "AUDIT942 component 5"
+    },
+    {
+      "id": "sharp_three_suprema",
+      "status": "valid",
+      "finding": "The separable qubit-reference sequence and common upper bound prove equality of separable, PPT and unilateral-reduction suprema.",
+      "evidence": "AUDIT942 component 5"
+    },
+    {
+      "id": "rational_n20",
+      "status": "valid",
+      "finding": "Exact lower 14440/49329>0.2881>1/4; finite numerical ratio 0.325277... has tiny input MI.",
+      "evidence": "AUDIT942 component 6; CONTROLS942 exact_certificates"
+    },
+    {
+      "id": "isotropic_d16",
+      "status": "valid_with_scope_limits",
+      "finding": "Exact strict comparison. Known spectrum and EA formula. Certifies input resource, not surviving output entanglement or a fixed-rate protocol.",
+      "evidence": "AUDIT942 component 7"
+    },
+    {
+      "id": "isotropic_asymptotic_advantage",
+      "status": "valid_with_scope_limits",
+      "finding": "Retention advantage ~d/(4log d) at lambda=d^-3; retained MI tends to zero. Generic unbounded EA advantage is prior.",
+      "evidence": "AUDIT942 component 7"
+    },
+    {
+      "id": "kappa_upper_and_regularization",
+      "status": "valid",
+      "finding": "Partial trace bounds rho_A; uniform-product regularization works even for kappa<1. No sharpness claim beyond kappa=1.",
+      "evidence": "AUDIT942 component 8"
+    },
+    {
+      "id": "Schmidt_necessary_order",
+      "status": "valid_prior_result",
+      "finding": "Schmidt<=k implies generalized reduction by pure-state whitening and convexity. Converse is not valid.",
+      "evidence": "AUDIT942 component 9; READINGS942 schmidt2000"
+    },
+    {
+      "id": "kappa_inversion",
+      "status": "valid_with_wording_clarification",
+      "finding": "For a>0, q<capped lambda and inversion is correct. Replace all states have kappa<=d by existence of admissible d or minimal kappa_*<=d.",
+      "evidence": "AUDIT942 component 9"
+    },
+    {
+      "id": "Schmidt_thresholds",
+      "status": "valid_necessary_certification_only",
+      "finding": "Strict exceedance certifies Schmidt>k. Equality does not. No converse, sharpness k>1 or sampling cost established.",
+      "evidence": "AUDIT942 component 9"
+    },
+    {
+      "id": "asymptotic_Schmidt_crossing",
+      "status": "valid_with_margin_clarification",
+      "finding": "Use k(d)<=(1-delta)d/(4log d) for fixed delta>0; asymptotic equivalence alone does not decide vanishing-margin boundary.",
+      "evidence": "AUDIT942 component 9"
+    },
+    {
+      "id": "reduction_NPT_distillation",
+      "status": "valid_prior_consequence",
+      "finding": "Reduction violation implies NPT; distillation invokes the separate reduction-distillation antecedent, not general NPT distillability.",
+      "evidence": "AUDIT942 component 9"
+    },
+    {
+      "id": "unrestricted_one_third",
+      "status": "not_proved",
+      "finding": "Not adopted. Sixty selected tangent-screen successes are not a universal MI/complete coefficient theorem. The present order proof yields only 2/5 as a general qubit upper.",
+      "evidence": "AUDIT942 component 10"
+    },
+    {
+      "id": "novelty",
+      "status": "unresolved",
+      "finding": "No explicitly covering sharp theorem located in the selected directed reading. Prior machinery and generic EA claims are identified; no worldwide priority assertion.",
+      "evidence": "AUDIT942 component 11; READINGS942.json"
+    },
+    {
+      "id": "optional_945",
+      "status": "verified_separate_supplement",
+      "finding": "Exact rational d128/k6 gap positive; conditional use of 939b certifies SN>=7 for already-known SN128 Phi128. Outside frozen seven payloads.",
+      "evidence": "AUDIT942 component 12; SUPPLEMENT942.json"
+    },
+    {
+      "id": "Cambridge_equation_2_6",
+      "status": "printed_orientation_refuted",
+      "finding": "Exact diagonal example gives 8>4. This is an error in the cited printed line, not a falsifier of 939. Correct original lemma read.",
+      "evidence": "AUDIT942 component 2; SUPPLEMENT942.json"
+    }
+  ],
+  "required_wording_clarifications": [
+    "kappa<=d refers to minimal admissible parameter or existence, not every admissible number.",
+    "Uniform asymptotic threshold crossing requires an explicit fixed margin below d/(4log d)."
+  ],
+  "not_established": [
+    "Unrestricted MI<=1/3",
+    "Complete/conditional optimized coefficient separation",
+    "Sharpness for k>1",
+    "Worldwide novelty or priority",
+    "Fixed-rate communication protocol",
+    "Measurement/sample complexity"
+  ],
+  "provenance": {
+    "delegated_agent_context": true,
+    "filesystem_shared": true,
+    "independence_claimed": false,
+    "effective_model_identity_attested": false,
+    "effective_reasoning_effort_attested": false,
+    "subagents_spawned": false
+  },
+  "persistent_foreign_corpus": false,
+  "publication_performed": false
+}

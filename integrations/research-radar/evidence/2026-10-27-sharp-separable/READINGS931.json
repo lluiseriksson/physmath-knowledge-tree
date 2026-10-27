@@ -1,0 +1,28 @@
+{
+  "coverage": "Directed primary-source audit; retrieval is not a claim of whole-paper reading; no priority inference from failed keyword searches",
+  "sources": [
+    {"id":"Iyer_v2","url":"https://arxiv.org/html/2510.06183v2","version":"v2,14October2025","read":"Section2.3 Eq6; Section5.3 Theorems5.6/5.7 proofs and Corollary5.8; Section6.2 including Lemmas6.6/6.7 statements and proofs","role":"Existing operator-convex representation and ordinary metric/divergence/HS equivalence","exact_extension_implied_by_direct_substitution":false,"raw_file":"iyer2510v2.html","retrieval_record":"PRIMARY_RETRIEVAL931.json"},
+    {"id":"BGSW_v3","url":"https://arxiv.org/html/2411.19890v3","version":"v3,8October2025","read":"Sections4.1/4.2, Proposition5.4, Section7","role":"Existing BKM integration/order, CP comparison machinery, ordinary HS comparison and discussion of complete coefficients","adverse_note":"Literal Eq52 lower bound fails in the recorded natural-log example; comparison argument925 cancels the common factor","raw_file":"bgsw2411v3.html","retrieval_record":"PRIMARY_RETRIEVAL931.json"},
+    {"id":"Hirche_v1","url":"https://arxiv.org/html/2608.27171v1","version":"v1","read":"Introductory coefficient definitions, Sections2.5/2.6/3.6 and conclusion","role":"Distinguishes complete equal-marginal, product-reference and conditional marginal-subtracted coefficients; reviewed inequality is the raw unrestricted reference comparison","raw_file":"hirche2608v1.html","retrieval_record":"PRIMARY_RETRIEVAL931.json"},
+    {"id":"Gao_Rouze_editorial2022","url":"https://link.springer.com/article/10.1007/s00205-022-01785-1","version":"Editorial Archive for Rational Mechanics and Analysis245,183-238(2022); associated arxiv2102.04146","read":"Targeted web retrieval of Lemmas2.1/2.2/2.4 and displayed proofs/formulas; CSDPI definition, Proposition4.2 and Corollary4.3 statement/proof","role":"Prior weighted comparison and complete L2/spectral techniques with symmetry and conditional-expectation restrictions","raw_file":null,"retrieval":"Web parsed primary page; no exact raw response hash available"},
+    {"id":"Gao_Junge_LaRacuente_Li_editorial2025","url":"https://doi.org/10.1017/fms.2024.117","primary_pdf_url":"https://www.cambridge.org/core/services/aop-cambridge-core/content/view/7270B6BBA7891B612C00FAB066F1A380/S2050509424001178a.pdf/complete-positivity-order-and-relative-entropy-decay.pdf","version":"Editorial Forum of Mathematics,Sigma13:e31(2025)","read":"Primary title, authors, publication metadata and abstract only","role":"Potential further prior complete CP-order methods; proof coverage not claimed","raw_file":null}
+  ],
+  "queries": [
+    "operator convex function integral representation (x-1)^2/(x+t) standard quantum f divergence Hiai",
+    "complete reverse data processing inequality quantum f divergences kernel inclusion Choi",
+    "\"relative expansion\" \"complete\" quantum channels kernel",
+    "\"Petz\" \"kernel\" \"reverse\" \"Choi\"",
+    "\"complete\" \"reverse data\" \"strictly positive\" quantum",
+    "quantum \"kernel inclusion\" \"entropy\"",
+    "\"reverse\" \"data processing\" \"Choi\" \"complete\"",
+    "\"complete\" \"relative expansion\" \"positive\"",
+    "\"comparison\" \"Petz\" \"Hilbert-Schmidt\" divergences channels",
+    "\"complete strong data processing\" inequalities quantum Choi",
+    "\"quantum\" \"reverse data-processing\" \"kernel\"",
+    "\"quantum\" \"relative expansion\" \"Petz\" \"complete\"",
+    "\"Complete positivity order and relative entropy decay\" arxiv",
+    "\"Complete Entropic Inequalities for Quantum Markov Chains\" arxiv"
+  ],
+  "not_used_as_evidence": "Secondary snippets, possible own-paper snippets, keyword absence, supplied graph neighbourhood, successful finite samples",
+  "primary_comparison_limit": "No exact general Choi-faithful kernel characterization or f/R-uniform constant identified in the inspected sections. This does not establish novelty or absence of a short implication in uninspected literature."
+}

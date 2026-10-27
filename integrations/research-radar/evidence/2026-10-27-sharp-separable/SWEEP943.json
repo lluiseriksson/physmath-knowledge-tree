@@ -1,0 +1,201 @@
+{
+  "utc": "2026-10-27T11:10:31.068416+00:00",
+  "scope": "directed index and commit refresh, not exhaustive paper reading",
+  "heads": [
+    {
+      "repo": "openai/math",
+      "commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+      "commit_time": "2026-10-26T21:18:03Z",
+      "level": "commit inventoried; no new proof audit"
+    },
+    {
+      "repo": "google-deepmind/formal-conjectures",
+      "commit": "c0c538071a21b36d15f70f5998370eb6a4c31c97",
+      "commit_time": "2026-10-27T09:30:35Z",
+      "level": "commit inventoried; no new proof audit"
+    },
+    {
+      "repo": "lluiseriksson/physmath-knowledge-tree",
+      "commit": "be2b165abe3028fa63a6dd174436193670830a70",
+      "commit_time": "2026-10-27T10:35:21Z",
+      "level": "commit inventoried; no new proof audit"
+    }
+  ],
+  "indices": [
+    {
+      "url": "https://www.anthropic.com/research",
+      "sha256": "0bf85cd76b3823265d27de0f9d88a8c8f7a074534433722892847993058755aa",
+      "bytes": 417084,
+      "level": "index inventoried; no new paper proof audit",
+      "content_preserved": false
+    },
+    {
+      "url": "https://www.ai.vixra.org/author/lluis_eriksson",
+      "sha256": "9cfc2018ff38a1f839e7c86f3d743cdbefb2b58b46c47bab6b4dd5af36fb8b7e",
+      "bytes": 70178,
+      "level": "index inventoried; no new paper proof audit",
+      "content_preserved": false
+    },
+    {
+      "url": "https://airr.science/",
+      "sha256": "8f57a45c39d8eff877f8dd31ac6a6be850867e5e143a633289c6437c6fd00233",
+      "bytes": 228232,
+      "level": "index inventoried; no new paper proof audit",
+      "content_preserved": false
+    }
+  ],
+  "public_owner_repository_count": 36,
+  "research_name_description_filter": [
+    {
+      "repo": "lluiseriksson/lean-2d-yang-mills",
+      "pushed_at": "2026-10-27T10:38:15Z",
+      "default_branch": "main",
+      "description": null
+    },
+    {
+      "repo": "lluiseriksson/lean-ym-flow",
+      "pushed_at": "2026-10-27T10:37:42Z",
+      "default_branch": "main",
+      "description": null
+    },
+    {
+      "repo": "lluiseriksson/lean-os-positivity",
+      "pushed_at": "2026-10-27T10:35:32Z",
+      "default_branch": "main",
+      "description": null
+    },
+    {
+      "repo": "lluiseriksson/physmath-knowledge-tree",
+      "pushed_at": "2026-10-27T10:35:21Z",
+      "default_branch": "main",
+      "description": "Computable physics-mathematics knowledge graph for Lean/mathlib and research agents"
+    },
+    {
+      "repo": "lluiseriksson/lean-connes-kreimer",
+      "pushed_at": "2026-10-27T07:47:22Z",
+      "default_branch": "main",
+      "description": "Lean 4 formalization scaffold for the Connes-Kreimer Hopf algebra of rooted trees"
+    },
+    {
+      "repo": "lluiseriksson/lean-zero-free-regions",
+      "pushed_at": "2026-10-27T06:24:40Z",
+      "default_branch": "main",
+      "description": null
+    },
+    {
+      "repo": "lluiseriksson/lean-gaussian-field",
+      "pushed_at": "2026-10-27T06:24:23Z",
+      "default_branch": "main",
+      "description": "Lean 4 finite Gaussian primitives for THE-ERIKSSON-PROGRAMME"
+    },
+    {
+      "repo": "lluiseriksson/lean-transfer-matrix",
+      "pushed_at": "2026-10-27T06:21:09Z",
+      "default_branch": "main",
+      "description": "Transfer-matrix satellite for THE-ERIKSSON-PROGRAMME"
+    },
+    {
+      "repo": "lluiseriksson/reset-minimax-lab",
+      "pushed_at": "2026-10-24T08:30:44Z",
+      "default_branch": "main",
+      "description": "Finite entropy-game diagnostics, dual best-response checks and preserved failures for energy-constrained quantum reset research"
+    },
+    {
+      "repo": "lluiseriksson/reversible-branch-lab",
+      "pushed_at": "2026-10-24T04:25:22Z",
+      "default_branch": "main",
+      "description": "Exact finite controls and clean reversible-oracle baselines for attributed divstep branch decoding. No optimality or new-theorem claim."
+    },
+    {
+      "repo": "lluiseriksson/THE-ERIKSSON-PROGRAMME",
+      "pushed_at": "2026-10-15T02:41:50Z",
+      "default_branch": "main",
+      "description": " A rigorous Lean 4 formalization aiming to computationally verify the unconditional proof of the Yang-Mills mass gap (a Clay Millennium Prize Problem)."
+    },
+    {
+      "repo": "lluiseriksson/riemann-prime-resolvent",
+      "pushed_at": "2026-10-01T11:19:47Z",
+      "default_branch": "main",
+      "description": "Lean 4 research programme for the Riemann prime-resolvent approach"
+    },
+    {
+      "repo": "lluiseriksson/ym-mass-gap-lean-verification",
+      "pushed_at": "2026-09-09T18:44:42Z",
+      "default_branch": "main",
+      "description": "Lean 4 verification workspace for the Eriksson Yang\u2013Mills mass gap programme."
+    },
+    {
+      "repo": "lluiseriksson/mathlib-plane-tree-catalan",
+      "pushed_at": "2026-09-09T18:44:32Z",
+      "default_branch": "main",
+      "description": "Mathlib PR kit: plane trees counted by Catalan numbers"
+    },
+    {
+      "repo": "lluiseriksson/physmath-lean-lemmas",
+      "pushed_at": "2026-09-09T18:44:26Z",
+      "default_branch": "main",
+      "description": "Lean 4 + Mathlib bookkeeping lemmas for rooted closure of three infinities"
+    },
+    {
+      "repo": "lluiseriksson/point-span-tangent-absorption",
+      "pushed_at": "2026-09-09T18:44:00Z",
+      "default_branch": "main",
+      "description": "Reproducible research papers on point-span tangent absorption and Gauss-fiber bounds"
+    },
+    {
+      "repo": "lluiseriksson/hodge-conjecture-research-front",
+      "pushed_at": "2026-09-09T18:43:54Z",
+      "default_branch": "main",
+      "description": "Audit-first research front for the standard rational Hodge Conjecture; open problem, no claimed proof."
+    },
+    {
+      "repo": "lluiseriksson/p-vs-np-research-front",
+      "pushed_at": "2026-09-09T18:43:50Z",
+      "default_branch": "main",
+      "description": null
+    },
+    {
+      "repo": "lluiseriksson/riemann-resolvent-programme",
+      "pushed_at": "2026-09-09T18:43:04Z",
+      "default_branch": "main",
+      "description": "Lean formalization scaffold for the prime-resolvent Stieltjes programme for RH"
+    },
+    {
+      "repo": "lluiseriksson/mathlib4",
+      "pushed_at": "2026-08-07T17:07:12Z",
+      "default_branch": "master",
+      "description": "The math library of Lean 4"
+    },
+    {
+      "repo": "lluiseriksson/lean-rooted-tree-polymer-expansion",
+      "pushed_at": "2026-06-23T19:50:45Z",
+      "default_branch": "main",
+      "description": "Archived Lean 4 proof artifact for scoped target-preserving rooted-tree polymer summation; terminal release v2.4.3."
+    }
+  ],
+  "github_repositories_page_web_failed": "restricted URL; public API used",
+  "dedup_key": "repo+commit, versioned URL for selected reading; changed index hash is not proof of new scientific result",
+  "selected_index_checks": [
+    {
+      "url": "https://raw.githubusercontent.com/openai/math/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/CONTENTS.md",
+      "sha256": "080badcb677fb80be0e695c21a8ec88bcb3a46dd3e3078ca10061e6b289be175",
+      "level": "index count and selected abstracts inventoried, NOT proofs audited",
+      "index_reports_manuscripts": 721,
+      "index_reports_result_families": 373,
+      "no_depolarizing_text_match": true,
+      "limit": "Index word absence does not rule out coverage inside papers; GAD capacity family276 remains prior claimed result requiring theorem/proof reading before use"
+    },
+    {
+      "url": "https://www.anthropic.com/research/designing-efficient-quantum-circuits",
+      "date": "2026-10-16",
+      "level": "research article description read; linked proof not audited",
+      "own_synthesis": "Eight circuit-design tasks use external correctness checks and gate/qubit cost; resource minimization is distinct from mathematical importance scoring. Does not establish a depolarizing entropy theorem."
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.22367v1",
+      "date": "2026-10-15",
+      "level": "abstract read; proof not audited",
+      "own_synthesis": "Eight resource-design tasks, seven lower both resource counts; eighth changes reversible modular-inversion architecture. Not adopted as entropy theorem or claim of universal autonomous correctness."
+    }
+  ]
+}

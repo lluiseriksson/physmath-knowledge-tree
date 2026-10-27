@@ -1,0 +1,93 @@
+{
+  "utc": "2026-10-27T10:42:27.536688+00:00",
+  "reason": "Late coordinator instruction: primary-source full HTML/text and long extracts are temporary reading cache, not our corpus or public supplement. Preserve metadata, hashes and original synthesis only.",
+  "previous_seal": {
+    "manifest_sha256": "22796909fd144f47ef2ad1516f0143b376fa89205fd1ac23a5e4082f29d8b191",
+    "copycheck_sha256": "7d8c4fca4b4c35629d78a83e185854897be33dbe9a05ac315f02533f591121ec"
+  },
+  "excluded_cache": [
+    {
+      "path": "iyer2510v2.html",
+      "bytes": 2658734,
+      "sha256": "e25d2446b46e1613af8bd3e616dbef1b1bc3d96f98b5484560b2c155bbf931a1",
+      "excluded_from_delivery_manifest": true,
+      "removed_from_working_copy": true,
+      "removed_from_D_copy": true
+    },
+    {
+      "path": "iyer2510v2.txt",
+      "bytes": 187797,
+      "sha256": "f7df81193243682799c359f7380e08a8b053b94a06b5290d97d28b80f2ac84a0",
+      "excluded_from_delivery_manifest": true,
+      "removed_from_working_copy": true,
+      "removed_from_D_copy": true
+    },
+    {
+      "path": "iyer2510v2_read_sections.txt",
+      "bytes": 25618,
+      "sha256": "db53efc26afaab8ed175c7c372de7378b19320b6f4f30af8665846b7a94bcca8",
+      "excluded_from_delivery_manifest": true,
+      "removed_from_working_copy": true,
+      "removed_from_D_copy": true
+    },
+    {
+      "path": "bgsw2411v3.html",
+      "bytes": 1103020,
+      "sha256": "00068903774f90b753166d516514ae504458c9181050d8eef7e246975dfabb21",
+      "excluded_from_delivery_manifest": true,
+      "removed_from_working_copy": true,
+      "removed_from_D_copy": true
+    },
+    {
+      "path": "bgsw2411v3.txt",
+      "bytes": 126056,
+      "sha256": "b31e24466a7edd8339a81e432170ff5b32466687830f5d2152c409ac214a285a",
+      "excluded_from_delivery_manifest": true,
+      "removed_from_working_copy": true,
+      "removed_from_D_copy": true
+    },
+    {
+      "path": "bgsw2411v3_read_sections.txt",
+      "bytes": 19075,
+      "sha256": "fa3c4a4a03566d06a3c0270b1e1faa0582a8f9f5bb03a4aeb6d8e452b301151f",
+      "excluded_from_delivery_manifest": true,
+      "removed_from_working_copy": true,
+      "removed_from_D_copy": true
+    },
+    {
+      "path": "hirche2608v1.html",
+      "bytes": 2313060,
+      "sha256": "0d4a7ee8672b0793971816fa641246fa8644c017820e3b4f4a59de82ec8bea42",
+      "excluded_from_delivery_manifest": true,
+      "removed_from_working_copy": true,
+      "removed_from_D_copy": true
+    },
+    {
+      "path": "hirche2608v1.txt",
+      "bytes": 278024,
+      "sha256": "b36a4b15bd13834f24dd46546824ab00f26eb30ed6d997543700624233b41c00",
+      "excluded_from_delivery_manifest": true,
+      "removed_from_working_copy": true,
+      "removed_from_D_copy": true
+    },
+    {
+      "path": "hirche2608v1_read_sections.txt",
+      "bytes": 12619,
+      "sha256": "c61e7e23ce450c6b27ffab7da3b708e6c76eda9028a88604ebbf1cc71a1d2ba5",
+      "excluded_from_delivery_manifest": true,
+      "removed_from_working_copy": true,
+      "removed_from_D_copy": true
+    }
+  ],
+  "protected_unchanged_hashes": {
+    "AUDIT931.txt": "84760d7f895484aea51a174cc7df1bca744cc0f542b9f9f937ea9722dfad9973",
+    "verdict931.json": "1054966d9bb4912db7c3da81a3c69b4c3e251c9bec918e89f5cffbc8b6019844",
+    "CHECK931.json": "2640ace08f556c68f63ee0f0a96b58be10d05e06819ee4c041ca6e625d9ee21e",
+    "ADVERSE931.json": "b014c13054e22d4baf785326042ae3397603aa23997c2adfd4134ec50189889f",
+    "SUMMARY931.json": "365856c2da3a63746cd6e9e0f352ed196625ccefc3b6b80898abdc82620e11d8",
+    "REPRO925.json": "ac9fbb456595227a24b6fd831d4be0eac6cc2c0d949a7e328f24ac6e4d39acc6",
+    "REPRO929.json": "d71f20bac8ea677a2fe31d58861563aae50e5e342e9bdf38f27633adbd8ff407"
+  },
+  "report_clarification": "AUDIT931.txt and READINGS931.json describe the original retrieval. References to saved raw HTML/full text/long section extracts are historical; those nine cache files have now been removed from both audit directories and the deliverable manifest. Primary metadata/hashes remain in PRIMARY_RETRIEVAL931.json and this record. Findings and source-reading scope are unchanged.",
+  "input930": "Unchanged"
+}

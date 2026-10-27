@@ -1,0 +1,74 @@
+950 — Proposed exact reset-depth threshold, using audited sharp939
+27 October2026. New application proof, not yet component-audited or graded.
+
+System A has dimension d>=2. A pure-reset stage with optional unitary is
+ T_j(X)=lambda_j U_j X U_j^*+(1-lambda_j)Tr(X)|v_j><v_j|,
+0<lambda_j<1. There is no feedback, no postselection or extra output memory.
+The lambda budget is L=product_j lambda_j, not a time/energy/dissipation cost.
+
+1. Exact composition. Set V_j=U_j...U_1, L_j=product_{l<=j}lambda_l,
+S_0=0 and S_j=lambda_j U_j S_{j-1}U_j^*+(1-lambda_j)|v_j><v_j|.
+Induction gives T_j...T_1(X)=L_j V_j X V_j^*+Tr(X)S_j,
+S_j>=0,Tr(S_j)=1-L_j,rank(S_j)<=j. Thus for the full sequence
+ T=Ad_V composed with [L id+Tr(.) V^* S V],
+or equivalently T(X)=L VXV^*+Tr(X)S. For any of the separable, PPT,
+unilateral reduction-positive input classes, pre/post unitary transformations
+on A are bijections of the class and preserve MI. Hence audited939 implies
+ the exact class supremum eta(T)=L^2/[L+lambda_min(S)].
+This step uses the unnormalized accumulated replacement S, not S/(1-L).
+There is no maximization over feedback strategies or inputs between stages.
+
+2. Sharp depth obstruction. If m<d pure stages are used, rank(S)<=m<d,
+so minEig(S)=0 and eta(T)=L. This is an exact worst-input supremum, not
+an assertion that every input has ratio L, nor a fixed positive-MI witness.
+The same obstruction holds at any m if the propagated reset vectors fail
+to span A. Unitaries cannot evade the count because each stage adds rank<=1.
+
+3. Global optimum at fixed L. For ANY replacement S>=0,Tr(S)=1-L,
+minEig(S)<=(1-L)/d. Therefore every such sequence obeys
+ eta(T)>=L^2/[L+(1-L)/d]=dL^2/[1+(d-1)L].
+This is a lower bound on the worst-input contraction coefficient: smaller
+eta means faster guaranteed correlation removal. It is achieved at m=d.
+Let w=(1-L)/d, choose orthonormal reset vectors e_j and U_j=I, and put
+ lambda_j=[L+(j-1)w]/[L+jw], j=1,...,d.
+Each lambda_j lies in(0,1), their product is L, and the final weight of the
+j-th reset is (1-lambda_j) product_{l>j}lambda_l=w. Thus S=w I and the
+composition is exactly L id+(1-L)replacement_{I/d}. At depth<d it cannot
+beat eta=L, while depth d attains the globally best value for that budget.
+This is a consequence of the sharp939 benchmark plus an elementary rank
+obstruction and explicit channel composition. The mixture algebra, rank
+bound and representation of depolarization by pure replacements are not
+asserted individually new. Novelty of this resource-count formulation
+requires prior-art contrast. No new capacity formula follows.
+
+4. Explicit two-qubit-level schedule (d=2). At fixed L, use orthogonal
+pure resets and lambda_1=2L/(1+L), lambda_2=(1+L)/2. Then eta=2L^2/(1+L).
+For example L=1/4: lambda1=2/5,lambda2=5/8, both reset weights3/8,
+S=3I/8, exact eta=1/10. A single pure reset at lambda=L instead has eta=L=1/4.
+
+For two equally weighted retention factors lambda1=lambda2=1/2 (L=1/4),
+reset weights are1/4 and1/2. If reset vectors have overlap magnitude q,
+minEig(S)=[3-sqrt(1+8q^2)]/8 and
+ eta=1/[2(5-sqrt(1+8q^2))].
+Parallel resets q=1 yield eta=1/4; orthogonal q=0 yield eta=1/8;
+q=1/sqrt2 yields eta=(5+sqrt5)/40. Noncommutativity alone does not optimize
+the effect; the smallest eigenvalue of accumulated replacement does.
+The fixed-L optimized unequal schedule above achieves eta=1/10, distinct
+from the equal-lambda orthogonal schedule eta=1/8.
+
+5. Conditions retained. Finite d, pure reset rank, no hidden extra systems,
+no measurements with feedback, every stage in the specified mixture form,
+no fixed lambda_j constraint in the fixed-L achievability result. If reset
+states have ranks r_j, the rank obstruction weakens to sum r_j<d. An initial
+mixed reset can already have full rank, so the pure-depth lower bound is
+not a theorem for arbitrary mixed reservoirs. References remain arbitrary
+finite dimensional, input MI positive; class extrema need not be attained.
+
+Concrete falsifier: an exact m<d composition in this model with full-rank S,
+a violation of the composition identity on a matrix unit, or a valid
+class input exceeding sharp939 eta would refute the dependent claim.
+A preexisting identical optimization removes novelty, not validity.
+
+Provenance:939/939b adverse component942 supports their arguments with
+wording clarifications. It does not audit this950 extension or grade any
+manuscript. No score, independent human review or formal proof claimed.

@@ -1,0 +1,82 @@
+{
+  "utc": "2026-10-27T11:28:30.467622+00:00",
+  "policy": "Preserve failures and objections; no scientific restart for favorable outcome",
+  "incidents": [
+    {
+      "id": "code_1",
+      "type": "own_control_runtime_error",
+      "command": "python controls942.py",
+      "exit_code": 1,
+      "observed_error": "TypeError: object of type 'Fraction' has no len() at summary construction",
+      "cause": "sep list name reused for a rational certificate after cases had been calculated",
+      "preserved": [
+        "controls942_attempt1.py",
+        "controls942_attempt1.stdout.txt",
+        "controls942_attempt1.stderr.txt"
+      ],
+      "repair": "Only renamed rational variable to sep_certificate and removed an unreachable no-op line.",
+      "scientific_cases_changed": false,
+      "seed_changed": false,
+      "rerun": "same seed 942, same cases, zero recorded failures"
+    },
+    {
+      "id": "reader_1",
+      "type": "console_encoding_error",
+      "command": "python source_hashes942.py --inspect",
+      "exit_code": 1,
+      "observed_error": "UnicodeEncodeError: cp1252 cannot encode U+FB01 ligature while printing transient source text",
+      "preserved": [
+        "source_hashes942_attempt1.py",
+        "SOURCE_HASHES942_attempt1.json"
+      ],
+      "repair": "Set stdout UTF-8 and rename metadata to pages_extracted_in_memory_zero_based; extraction is not asserted as reading.",
+      "foreign_text_log_saved": false,
+      "hash_metadata_was_already_saved": true
+    },
+    {
+      "id": "web_1",
+      "type": "access_failure",
+      "url": "https://www.cambridge.org/core/journals/forum-of-mathematics-sigma/article/complete-positivity-order-and-relative-entropy-decay/7270B6BBA7891B612C00FAB066F1A380",
+      "observed_error": "web open 400, content length exceeds 4194305 bytes",
+      "resolution": "Primary publisher PDF accessible; selected statement and proof read."
+    },
+    {
+      "id": "web_2",
+      "type": "access_failure",
+      "url": "https://mediatum.ub.tum.de/download/1701036/%25201701036.pdf",
+      "observed_error": "web open 429 Too Many Requests",
+      "resolution": "No retry loop. Generalized reduction sourced instead to primary Terhal-Horodecki lemma and own proof."
+    },
+    {
+      "id": "web_3",
+      "type": "image_tool_presentation_limit",
+      "observed_error": "web screenshot call did not expose an inspectable image in this tool channel",
+      "resolution": "Transient in-memory PDF render emitted directly as an image, without saving PDF or image; Eq2.6 visually checked."
+    },
+    {
+      "id": "source_1",
+      "type": "mathematical_objection_to_cited_formula",
+      "location": "Gao et al. 2025, p10 Eq2.6 first line",
+      "finding": "Printed BKM order orientation refuted by exact diagonal control; 939 uses correct orientation.",
+      "preserved": [
+        "SUPPLEMENT942.json",
+        "AUDIT942.txt"
+      ]
+    },
+    {
+      "id": "scope_1",
+      "type": "wording_clarification",
+      "finding": "Arbitrary admissible kappa need not be <=d; minimal kappa or existence statement is required."
+    },
+    {
+      "id": "scope_2",
+      "type": "asymptotic_quantifier_clarification",
+      "finding": "Use a fixed relative margin for uniform crossing near d/(4log d)."
+    },
+    {
+      "id": "log_1",
+      "type": "transient_output_truncation",
+      "finding": "Combined primary-source extraction had a short omitted region near Cambridge p10; first-line order formula separately rendered and checked. No claim to reading truncated text."
+    }
+  ]
+}

@@ -819,6 +819,96 @@
       "anchors": [
         "domain.quantum_information_theory"
       ]
+    },
+    {
+      "id": "gao-rouze-complete-2021-scoped",
+      "title": "Complete Entropic Inequalities for Quantum Markov Chains",
+      "url": "https://arxiv.org/pdf/2102.04146v3",
+      "kind": "preprint",
+      "observed_on": "2026-10-27",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Audit942 read Lemmas2.1-2.2 proofs and Theorem4.1 derivation: BKM order, integrated relative entropy and complete weighted comparisons are direct antecedents.",
+      "limits": "Selected proofs only, not a full-paper audit or exclusion of every implication. No new machinery claim for the BKM comparison.",
+      "reuse": "Bibliographic metadata and original synthesis only; no foreign full text, training authorization or global-priority certificate.",
+      "anchors": [
+        "domain.quantum_information_theory"
+      ]
+    },
+    {
+      "id": "gao-cp-order-2025-scoped",
+      "title": "Complete positivity order and relative entropy decay",
+      "url": "https://doi.org/10.1017/fms.2024.117",
+      "kind": "preprint",
+      "observed_on": "2026-10-27",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Selected Theorem2.5 statement and proof uses conditional expectation/multiplicative domain and CP return time. Audit942 checked a printed orientation issue in Eq2.6 against an exact diagonal example and the earlier correct lemma.",
+      "limits": "Erratum observation concerns the literal printed line, not refutation of the theorem. Does not establish originality of our sharp restricted MI constant; selected reading only.",
+      "reuse": "Bibliographic metadata and original synthesis only; no foreign full text, training authorization or global-priority certificate.",
+      "anchors": [
+        "domain.quantum_information_theory"
+      ]
+    },
+    {
+      "id": "bsst-ea-1999-scoped",
+      "title": "Entanglement-Assisted Classical Capacity of Noisy Quantum Channels",
+      "url": "https://arxiv.org/pdf/quant-ph/9904023v5",
+      "kind": "preprint",
+      "observed_on": "2026-10-27",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Selected pp1-3 Eq1-3 and dense-coding/teleportation derivation provide depolarizing EA spectrum/formula, measure-prepare regime and unbounded EA advantage relative to C1. These are antecedents.",
+      "limits": "Normalized MI-retention supremum over separable/PPT inputs is a distinct proposed quantity; no new capacity formula or generic EA advantage claimed.",
+      "reuse": "Bibliographic metadata and original synthesis only; no foreign full text, training authorization or global-priority certificate.",
+      "anchors": [
+        "domain.quantum_information_theory"
+      ]
+    },
+    {
+      "id": "horodecki-reduction-1998-scoped",
+      "title": "Reduction criterion of separability and limits for a class of protocols of entanglement distillation",
+      "url": "https://arxiv.org/pdf/quant-ph/9708015v3",
+      "kind": "preprint",
+      "observed_on": "2026-10-27",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Audit942 inspected reduction/PPT implications and selected SectionVI filtering, twirling and recurrence supporting reduction-violation distillation.",
+      "limits": "No general NPT-distillability assertion or complete audit of all proofs. Reduction is a necessary criterion, not a characterization of separability.",
+      "reuse": "Bibliographic metadata and original synthesis only; no foreign full text, training authorization or global-priority certificate.",
+      "anchors": [
+        "domain.quantum_information_theory"
+      ]
+    },
+    {
+      "id": "terhal-schmidt-2000-scoped",
+      "title": "A Schmidt number for density matrices",
+      "url": "https://arxiv.org/pdf/quant-ph/9911117v4",
+      "kind": "preprint",
+      "observed_on": "2026-10-27",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Definitions and Theorem1/Lemma2 statements Eq7-8 supply the prior k-positive-map and Schmidt-number hierarchy, including generalized reduction.",
+      "limits": "The elementary filtering implication was reconstructed; full proof of the general characterization not independently audited. Single reduction inequality is necessary, not sufficient.",
+      "reuse": "Bibliographic metadata and original synthesis only; no foreign full text, training authorization or global-priority certificate.",
+      "anchors": [
+        "domain.quantum_information_theory"
+      ]
+    },
+    {
+      "id": "reeb-projective-2011-scoped",
+      "title": "Hilbert's projective metric in quantum information theory",
+      "url": "https://arxiv.org/pdf/1102.5170v2",
+      "kind": "preprint",
+      "observed_on": "2026-10-27",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "AppendixB B1-B4 derivation read: projective diameter and base/trace-norm contraction of generalized depolarizing maps, including global bipartite fixed-state replacement.",
+      "limits": "Different metric and channel quantifiers from local replacement retaining a quantum reference and normalized product-reference MI. Selected passages do not exclude every deeper implication.",
+      "reuse": "Bibliographic metadata and original synthesis only; no foreign full text, training authorization or global-priority certificate.",
+      "anchors": [
+        "domain.quantum_information_theory"
+      ]
     }
   ],
   "candidates": [
@@ -1134,11 +1224,37 @@
       ],
       "dictionary": "A nilpotent CP trace-nonincreasing output jump maps to a finite inverse on the BKM Hilbert space. Separately a CP Choi sandwich maps correlated bases to I_B tensor sigma_R, with complex HS bounds applied to each reference block.",
       "preserved": "Every finite quantum reference, all Hermitian tangents including nontraceless ones, CP domination in914 and strict Choi faithfulness in925. ExactPDF review is separate.",
-      "lost_or_unproved": "Novelty unresolved; no sharp complete constant or capacity/additivity conclusion.925 is an unreviewed proposal. It does not subsume singular-Choi AD comparator914 or solve the old non-GAD entropy target.",
+      "lost_or_unproved": "Global novelty unresolved; no sharp kernel comparison constant or capacity/additivity conclusion.931 supports925/929 with strict Choi faithfulness, support compression and full-rank-input restrictions for general Petz divergences. Noninjective arbitrary perturbation robustness is refuted.",
       "hypothesis_to_remove": "914 avoids small perturbation under finite nilpotency;925 proposes eliminating nilpotency and the jump-filter identity in a distinct strict-Choi regime, with kernel inclusion retained.",
       "falsifier": "A valid-assumption counterexample to a metric step refutes the mechanism. Missing kernel inclusion already has an exact dephasing counterexample. A covering antecedent defeats novelty, not algebraic validity.",
-      "next_finite_task": "Read terminal exact-manuscript review923 without target grade. After it is terminal, audit925 separately against ordinary metric/HS antecedents and complete-reference literature. Do not split small corollaries into papers.",
-      "review_packet": "Full component audit917 supports914 under stated hypotheses and preserves seven reservations, no score. Exact eight-page PDF922 is under a single full manuscript review923; no grade yet. Separate925 derivation and12 bounded whole-tangent diagnostics are unreviewed. All input/report hashes are retained in evidence sidecar."
+      "next_finite_task": "Full923 is terminal and published with all objections;931 supports925/929 under strict Choi/support hypotheses. Compare remaining prior art and address novelty/operational limitations before any strengthened exact-PDF manuscript assessment.",
+      "review_packet": "Exact eight-page nilpotent PDF96d340... has full923 global4.00/10 and significance2/5, allO1-O8 retained, not an official/editorial score; no combined technical score. Published Working paper ARR-2026-5A13QJ5MZ98GWVFBv1. Separate931 validates925 kernel criterion and929 Petz extension without grade; does not subsume singular-Choi AD. Both requested Astra xhigh, runtime/independence unattested."
+    },
+    {
+      "id": "sharp-separable-reset-depth",
+      "title": "Sharp separable/PPT MI decay and pure-reset depth threshold",
+      "status": "under_audit",
+      "confidence": "speculative",
+      "paper_score": null,
+      "source_ids": [
+        "gao-rouze-complete-2021-scoped",
+        "gao-cp-order-2025-scoped",
+        "bsst-ea-1999-scoped",
+        "horodecki-reduction-1998-scoped",
+        "terhal-schmidt-2000-scoped",
+        "reeb-projective-2011-scoped",
+        "hirche-conditional-2026-scoped"
+      ],
+      "node_ids": [
+        "domain.quantum_information_theory"
+      ],
+      "dictionary": "Unilateral reduction order maps to a pathwise BKM bound; a rational separable coherent sequence maps to the same sharp limit. Composition of pure replacement stages maps to the smallest eigenvalue and rank of accumulated replacement noise.",
+      "preserved": "All finite reference dimensions, actual product marginals and explicit finite MI limits; no commutativity premise. Pure-reset depth result retains exact mixture form, no feedback/extra memory, and freely chosen stage retentions at fixed product L.",
+      "lost_or_unproved": "No worldwide novelty, unrestricted qubit1/3 upper bound, sharp Schmidt thresholds for k>1, fixed-rate or experimental sampling theorem.950 depth application remains unaudited;942 supports939/939b with two wording corrections, no manuscript grade.",
+      "hypothesis_to_remove": "Exact939 eliminates the restriction to a classical reference within a constrained input cone.950 proposes replacing a vague multi-step norm bound by an exact spectral formula and proving a depth-d resource threshold for pure reset mixtures.",
+      "falsifier": "A reduction-positive input exceeding the sharp939 coefficient, a Schmidt<=k decomposition exceeding its necessary bound, or a valid m<d pure-reset composition with full-rank accumulated replacement refutes the relevant proposal. A covering theorem defeats novelty.",
+      "next_finite_task": "Read the one active component audit952 of950, retain objections, correct minimum-kappa and fixed-margin wording, then construct one substantive exact-PDF manuscript and obtain one real assessment without target score.",
+      "review_packet": "Full unscored942 report supports939/939b and retains all source/control incidents, unresolved novelty, minimum-kappa and fixed-margin clarifications. New950 exact composition controls pass9schedules+3unitary sequences; finite consistency only. One separate-context Astra xhigh audit952 is running; no effective identity or independence attested. No score inherited from923 or other versions."
     }
   ],
   "source_refresh": {
@@ -1183,6 +1299,10 @@
     "followup927": {
       "evidence": "integrations/research-radar/evidence/2026-10-27-complete914/READINGS925.json",
       "scope": "Six current inventory endpoints and selected version-pinned arXiv passages; not exhaustive. OpenAI7ef5c0 and DeepMindc0c538 pins; commit metadata not proof replay."
+    },
+    "followup953": {
+      "evidence": "integrations/research-radar/evidence/2026-10-27-sharp-separable/SWEEP943.json",
+      "scope": "Directed primary index/commit refresh and selected proof reading;36 public owner repos inventoried,21 research metadata matches, not exhaustive paper reading. Original inventory snapshot remains historically pinned."
     }
   }
 }

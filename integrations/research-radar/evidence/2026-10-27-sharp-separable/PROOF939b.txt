@@ -1,0 +1,54 @@
+939b — Proposed order-parameter and Schmidt-number extension (unreviewed)
+27 October 2026. Analytic sequel to PROOF939, not a reviewed manuscript.
+
+For the same N(X)=lambda X+(1-lambda)Tr(X)tau, a=min eig(tau),
+suppose rho_AR <= kappa I_A tensor rho_R, with kappa>0. Then
+ I(R:B) <= [lambda^2 kappa/(lambda kappa+(1-lambda)a)] I(R:A).
+No sharpness is asserted except kappa=1 for the separable/PPT classes of939.
+This is NOT a formula for a conventional conditional min-entropy, which
+usually optimizes a reference state; here the actual marginal is fixed.
+
+Proof. Partial trace over R gives rho_A<=kappa I_A, so both rho and
+S=rho_A tensor rho_R, and thus their full segment S_t, obey the same
+upper order bound. Therefore tau tensor rho_R >= (a/kappa) S_t.
+Apply exactly the BKM order argument and integral of PROOF939. For singular
+states, regularize with I_A/d tensor I_R/r: kappa>=1/d follows by taking
+traces of rho<=kappa I tensor rho_R. Both endpoints then obey the same
+kappa bound. Recompute the true marginals after mixing and use continuity.
+If a=0 the displayed bound is lambda, with no inversion/certification claim.
+
+If rho has Schmidt number at most integer k, then kappa=k is admissible.
+This reduction inequality is PRIOR WORK, not a new characterization.
+Elementary verification for a pure state: after local filtering by its
+R marginal inverse square root on support, its vector has squared norm
+s, the Schmidt rank. Its rank-one projector is <=s times the identity
+on A tensor supp(rho_R). Undo the filter to obtain
+ |psi><psi|<=s I_A tensor rho_R. For a convex decomposition into pure
+states of ranks<=k, add these inequalities and use marginal linearity.
+This proves only a necessary condition for Schmidt number<=k.
+
+For a>0, positive input MI and q=I_out/I_in, the preceding bound implies
+ kappa >= (1-lambda)a q/[lambda(lambda-q)].
+All states have kappa<=d by the same pure decomposition argument with k=d,
+so q<=lambda^2 d/(lambda d+(1-lambda)a)<lambda. A measured q exceeding the
+k-th threshold certifies Schmidt number>k; no converse is asserted.
+For k=1 it certifies reduction violation and hence NPT; distillability
+requires separately citing/checking the reduction-distillation antecedent.
+The measurement/estimation cost of obtaining both MIs is not analyzed.
+
+Nonvacuity is supplied by the standard isotropic maximally entangled input,
+whose MI formula is PRIOR WORK (Bennett-Shor-Smolin-Thapliyal1999 Eq3).
+For tau=I/d and lambda=d^-3, the elementary lower bound in939 divided by
+the k-th Schmidt threshold grows as d/[4k log d] for k=o(d).
+Thus thresholds with k<~d/(4log d) are crossed asymptotically, even though
+the channel is entanglement breaking. These are normalized contraction
+ratios, not capacities or a protocol preserving nonzero information.
+Known unbounded entanglement-assisted capacity advantages preclude calling
+this generic advantage new. Candidate contribution is a sharp k=1
+normalized benchmark and its particular quantified implications, pending
+adverse audit and a covering-source search.
+
+Concrete falsifier: a reduction-positive finite state with retention above
+PROOF939 c_sep, or a Schmidt-number<=k decomposition above this k-th bound,
+refutes the corresponding upper theorem. A matching preexisting theorem
+removes novelty even if all proofs remain valid. No grade is assigned.
