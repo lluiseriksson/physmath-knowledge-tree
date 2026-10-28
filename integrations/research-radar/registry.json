@@ -1168,6 +1168,25 @@
         "domain.analysis",
         "domain.quantum_information_theory"
       ]
+    },
+    {
+      "id": "cai-gan-miao-shi-langevin-wlf-261035892",
+      "title": "Accelerating Langevin Dynamics with Weighted Laplacian Flow: Global Well-Posedness and Exponential Convergence",
+      "url": "https://arxiv.org/html/2610.35892v1",
+      "kind": "preprint",
+      "published_on": "2026-09-12",
+      "observed_on": "2026-10-28",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "A state-dependent nonlocal elliptic correction yields fixed-target Fisher-plus-Jeffreys entropy dissipation. Selected model/Theorem1 statement, Lemma2 and Theorem11/Corollary12 entropy argument were read.",
+      "limits": "Not a full global regularity proof, efficient-solver bound or complete quantum pair contraction. Own three-state analogue fails affinity; it does not refute the continuum source or all quantum extensions.",
+      "reuse": "Metadata and original synthesis only; no source full text, corpus/training permission or evaluation items.",
+      "date_note": "Abstract, HTML and Atom published/updated agree on12Sep2026;28Octindex/2610identifier timing unexplained. A newly indexed item is not a newly published October theorem. Prior1200hold remains historical, not a source refutation.",
+      "anchors": [
+        "domain.pde",
+        "domain.analysis",
+        "domain.quantum_information_theory"
+      ]
     }
   ],
   "candidates": [

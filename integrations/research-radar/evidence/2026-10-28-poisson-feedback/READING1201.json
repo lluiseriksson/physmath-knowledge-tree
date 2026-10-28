@@ -1,0 +1,28 @@
+{
+  "source_id": "cai-gan-miao-shi-langevin-wlf-261035892",
+  "version": "v1",
+  "reported_published_on": "2026-09-12",
+  "date_note": "Abstract, HTML and Atom published/updated agree on12Sep2026;28Octindex/2610identifier timing unexplained. A newly indexed item is not a newly published October theorem. Prior1200hold remains historical, not a source refutation.",
+  "sources": [
+    {
+      "url": "https://arxiv.org/html/2610.35892v1",
+      "sha256_transport": "1010514d5d1ddd95e9a5943eb4eab50435a11a55901493f291e72042bf0e50af",
+      "bytes": 789130,
+      "observed_at": "2026-10-28T16:56:08.661381+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.35892v1",
+      "sha256_transport": "36adbf59be51729e6a20fdbc4d7f991ec2893502e8b0876c452961258d9b0ea0",
+      "bytes": 41719,
+      "observed_at": "2026-10-28T16:56:08.974426+00:00"
+    },
+    {
+      "url": "https://export.arxiv.org/api/query?id_list=2610.35892",
+      "sha256_transport": "9c2560bcb6a23e85e334b63f3623c1c9501e491df93887972cdab9d0af8bfcf4",
+      "bytes": 3002,
+      "observed_at": "2026-10-28T16:56:09.374841+00:00"
+    }
+  ],
+  "reading": "Section2 model and Theorem1 statement; Lemma2 elliptic estimates and selected short proof; Section6.1 Theorem11 complete entropy calculation and Corollary12 read. Global regularity/well-posedness proofs, appendices and numerical implementation not audited.",
+  "reuse": "Metadata/own synthesis/checkers only. No source body or benchmark items retained, no training permission inferred; arXiv HTML reports perpetual non-exclusive distribution license. Source fulltext not added to any corpus."
+}
