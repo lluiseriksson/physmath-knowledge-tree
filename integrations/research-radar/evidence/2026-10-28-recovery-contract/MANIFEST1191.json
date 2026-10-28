@@ -1,0 +1,54 @@
+{
+  "files": [
+    {
+      "path": "check-marginals1191.py",
+      "sha256": "47a8d967b5b6d5518fac71bfbe53e92f02951bb0ced37a7199489d2673fa7406",
+      "original_sha256": "47a8d967b5b6d5518fac71bfbe53e92f02951bb0ced37a7199489d2673fa7406"
+    },
+    {
+      "path": "CHECK1190.json",
+      "sha256": "e92c9c26a26491b176488758d947f563033806e8dbbd10c37d406a1b4aaba47f",
+      "original_sha256": "97f82a625c14157b8a730c6fac264da6c370b21da3eba94529e257d45e127ef3"
+    },
+    {
+      "path": "check1190.py",
+      "sha256": "2bb28de225356ecd3ed1ec1e4e06969e5bc612925a6974307aa7541c9cdcc03a",
+      "original_sha256": "2bb28de225356ecd3ed1ec1e4e06969e5bc612925a6974307aa7541c9cdcc03a"
+    },
+    {
+      "path": "EXACT1191.json",
+      "sha256": "10b8ee677cfb09334085f2a45838ab0d44a8ac029fe616a0f7d9b9d31ed84d40",
+      "original_sha256": "163921ea6ca6430243e935051b0f83f2e0efa391694608d87239a08c334bd6ca"
+    },
+    {
+      "path": "original-evidence1191.zip",
+      "sha256": "a5956d9afd7eaa8184dc6c4409e2771d81db535b936c3e94d16d39fb887e916b",
+      "original_sha256": null
+    },
+    {
+      "path": "READINGS1189.json",
+      "sha256": "f2beee4a8755c8cb9396eca35fad7a56de4d96fc324ecdc58ebf071978862de4",
+      "original_sha256": "1b47ad1c7d908c1148242d2056d4054ac9672f3b0f368d3e86864565cdc5d7b9"
+    },
+    {
+      "path": "SOURCES1191.json",
+      "sha256": "2247a1b60c2b7dd8c0f02b84d4104c84f10af5d28a88257dc4fcc574b7bb585b",
+      "original_sha256": "ef3e17899170a3eaefbe419b5130e349b803c7dcb3ac54fdbac787ee571b78af"
+    },
+    {
+      "path": "SUBGRAPH1189.json",
+      "sha256": "425a38906d9e79c7571111a1c7fbc22867058a10844fd2c47a7aa0e890de343f",
+      "original_sha256": "425a38906d9e79c7571111a1c7fbc22867058a10844fd2c47a7aa0e890de343f"
+    },
+    {
+      "path": "SUBGRAPH1190.json",
+      "sha256": "cd074e534cf337d12f561e73150ce011d37e4b4cbdfceac20a5f5df8f842a6c9",
+      "original_sha256": "703c9a3cf65adea7a0ca47c9b133548eca60c0352cd82d1f116e95603b63f7bc"
+    }
+  ],
+  "canonical_graph_changed": false,
+  "new_grade": false,
+  "normalization": "Own public JSON views use LF; all pre-normalization bytes including earlier manifest are preserved in original-evidence1191.zip. No original report or source-body hash changed.",
+  "incident": "First full check rejected CRLF in copied own metadata and prose. Original bytes archived and views normalized; validators unchanged.",
+  "formal_scope": "Local repository build does not compile any imported upstream development."
+}

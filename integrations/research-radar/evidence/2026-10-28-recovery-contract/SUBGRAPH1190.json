@@ -1,0 +1,444 @@
+{
+  "nodes": [
+    {
+      "id": "domain.analysis",
+      "kind": "domain",
+      "title": "Analysis",
+      "summary": "Limits, differentiability, integration, measure and analytic estimates.",
+      "confidence": "literature",
+      "tags": [
+        "analysis",
+        "measure",
+        "integration",
+        "estimates"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Analysis.Calculus.Deriv.Basic",
+          "Mathlib.MeasureTheory.Measure.MeasureSpace"
+        ],
+        "declarations": [
+          "HasDerivAt",
+          "MeasureTheory.Measure"
+        ],
+        "targets": [
+          "Create toy estimates that can be reused by PDE and spectral nodes."
+        ]
+      },
+      "questions": [
+        "Which estimate is the actual bottleneck of a proposed proof route?"
+      ],
+      "references": [
+        {
+          "label": "T. Tao \u2014 Analysis I",
+          "url": "https://terrytao.wordpress.com/books/analysis-i/",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "domain.functional_analysis",
+      "kind": "domain",
+      "title": "Functional analysis",
+      "summary": "Normed spaces, Banach and Hilbert spaces, operators and weak convergence.",
+      "confidence": "literature",
+      "tags": [
+        "functional-analysis",
+        "hilbert",
+        "banach",
+        "operators"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Analysis.Normed.Module.Basic",
+          "Mathlib.Analysis.InnerProductSpace.Basic"
+        ],
+        "declarations": [
+          "NormedSpace",
+          "InnerProductSpace"
+        ],
+        "targets": [
+          "Formalize operator-theoretic toy bridges."
+        ]
+      },
+      "questions": [
+        "Can a nonlinear problem be embedded into a linear or spectral setting?"
+      ],
+      "references": [
+        {
+          "label": "J. B. Conway \u2014 A Course in Functional Analysis",
+          "url": "https://link.springer.com/book/10.1007/978-1-4757-4383-8",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "domain.harmonic_analysis",
+      "kind": "domain",
+      "title": "Harmonic analysis",
+      "summary": "Fourier analysis, singular integrals, oscillation and scale-sensitive decomposition.",
+      "confidence": "literature",
+      "tags": [
+        "fourier",
+        "harmonic-analysis",
+        "scales"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Analysis.Fourier.FourierTransform"
+        ],
+        "declarations": [],
+        "targets": [
+          "Identify available Fourier transform infrastructure for toy estimates."
+        ]
+      },
+      "questions": [
+        "Which hidden frequency interaction blocks a global estimate?"
+      ],
+      "references": [
+        {
+          "label": "E. M. Stein \u2014 Harmonic Analysis",
+          "url": "https://doi.org/10.1515/9781400883929",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "domain.constructive_quantum_field_theory",
+      "kind": "domain",
+      "title": "Constructive quantum field theory",
+      "summary": "Rigorous construction and analysis of interacting quantum field theories through measures, Gaussian estimates, renormalization, cluster expansions, locality and reconstruction criteria, with every uniformity assumption made explicit.",
+      "confidence": "literature",
+      "tags": [
+        "constructive-qft",
+        "cluster-expansion",
+        "renormalization",
+        "rigorous-qft"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib"
+        ],
+        "declarations": [],
+        "targets": [
+          "Isolate finite Gaussian, locality and cluster-expansion interfaces before making any continuum claim."
+        ]
+      },
+      "questions": [
+        "Which finite estimates can be proved uniformly in volume, cutoff and renormalization scale?"
+      ],
+      "references": [
+        {
+          "label": "J. Glimm and A. Jaffe \u2014 Quantum Physics: A Functional Integral Point of View",
+          "url": "https://link.springer.com/book/10.1007/978-1-4612-4728-9",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "domain.renormalization_group",
+      "kind": "domain",
+      "title": "Renormalization group",
+      "summary": "Multiscale transformations that replace microscopic degrees of freedom by effective actions while tracking relevant, marginal and irrelevant structures across changing resolutions.",
+      "confidence": "literature",
+      "tags": [
+        "renormalization-group",
+        "multiscale",
+        "effective-action",
+        "scaling"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib"
+        ],
+        "declarations": [],
+        "targets": [
+          "Model a finite renormalization step with explicit scale maps, supports and preserved quantities."
+        ]
+      },
+      "questions": [
+        "Which estimates survive iteration with constants uniform in the number of renormalization steps?"
+      ],
+      "references": [
+        {
+          "label": "J. Dimock \u2014 The Renormalization Group According to Balaban I",
+          "url": "https://arxiv.org/abs/1108.1335",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "K. G. Wilson and J. Kogut \u2014 The renormalization group and the epsilon expansion",
+          "url": "https://doi.org/10.1016/0370-1573(74)90023-4",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "domain.quantum_information_theory",
+      "kind": "domain",
+      "title": "Quantum information theory",
+      "summary": "Studies quantum states, channels, entropies, correlations, recovery, error correction and operational constraints such as no-signalling, with explicit attention to uniform channels and preservation of reference-system entanglement.",
+      "confidence": "literature",
+      "tags": [
+        "quantum-information",
+        "channels",
+        "entropy",
+        "recovery"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib"
+        ],
+        "declarations": [],
+        "targets": [
+          "Formalize finite matrix channels, Kraus completeness and a no-signalling calculation.",
+          "Represent the quantifier distinction between one uniform recovery map and state-dependent recovery maps."
+        ]
+      },
+      "questions": [
+        "Which finite recovery statements transfer to operator-algebraic or split AQFT settings without assuming a tensor factorization?"
+      ],
+      "references": [
+        {
+          "label": "M. A. Nielsen and I. L. Chuang \u2014 Quantum Computation and Quantum Information",
+          "url": "https://www.cambridge.org/highereducation/books/quantum-computation-and-quantum-information/01E10196D0A682A6AEFFEA52D53BE9AE",
+          "type": "book",
+          "scope": "claim"
+        },
+        {
+          "label": "O. Fawzi and R. Renner \u2014 Quantum conditional mutual information and approximate Markov chains",
+          "url": "https://arxiv.org/abs/1410.0664",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "Depth-1 expanders on the unitary group and applications (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.01605v1",
+          "type": "paper",
+          "scope": "context"
+        },
+        {
+          "label": "Quantum speed limits based on quantifiers of quantum-state texture (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.08752v1",
+          "type": "paper",
+          "scope": "context"
+        }
+      ]
+    },
+    {
+      "id": "bridge.local_operations_no_signalling",
+      "kind": "bridge",
+      "title": "Local complete operations preserve spacelike statistics",
+      "summary": "For Kraus operators in one local algebra that commute with a distant observable, a complete nonselective operation leaves the distant expectation unchanged: completeness moves through the observable and collapses the sum to the identity. Postselection does not satisfy this conclusion without classical outcome information.",
+      "confidence": "formal",
+      "tags": [
+        "no-signalling",
+        "kraus-operators",
+        "microcausality",
+        "channels"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib",
+          "PhysMathKnowledgeTree.Formal.Microtheorems"
+        ],
+        "declarations": [
+          "nonselectiveExpectationCollapse"
+        ],
+        "targets": [
+          "Prove the finite matrix identity sum_i omega(K_i\u2020 Y K_i) = omega(Y) from commutation and sum_i K_i\u2020K_i = 1."
+        ]
+      },
+      "questions": [
+        "Which operator-algebraic hypotheses are sufficient for the same proof with infinite Kraus families or normal completely positive maps?"
+      ],
+      "references": [
+        {
+          "label": "D. Beckman et al. \u2014 Causal and localizable quantum operations",
+          "url": "https://arxiv.org/abs/quant-ph/0102043",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "M. A. Nielsen and I. L. Chuang \u2014 Quantum Computation and Quantum Information",
+          "url": "https://www.cambridge.org/highereducation/books/quantum-computation-and-quantum-information/01E10196D0A682A6AEFFEA52D53BE9AE",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "bridge.conditional_mutual_information_recovery",
+      "kind": "bridge",
+      "title": "Conditional mutual information to uniform recovery",
+      "summary": "Small quantum conditional mutual information controls reconstruction of a tripartite state from a marginal by a channel acting on the conditioning system. The useful research discipline is the uniform quantifier order: one recovery map should work for every state in the chosen code or extension class.",
+      "confidence": "literature",
+      "tags": [
+        "conditional-mutual-information",
+        "recovery-map",
+        "markov-chain",
+        "uniformity"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib"
+        ],
+        "declarations": [],
+        "targets": [
+          "State a finite-dimensional recovery interface with an explicit reference system and uniform channel quantifiers.",
+          "Keep any split/type-III AQFT extension conditional until its operator-algebraic recovery inequality is sourced."
+        ]
+      },
+      "questions": [
+        "Can a collar-conditioned recovery channel be made uniform over a finite low-energy code while preserving entanglement with a reference?"
+      ],
+      "references": [
+        {
+          "label": "D. Sutter, O. Fawzi and R. Renner \u2014 Universal recovery map for approximate Markov chains",
+          "url": "https://arxiv.org/abs/1504.07251",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "O. Fawzi and R. Renner \u2014 Quantum conditional mutual information and approximate Markov chains",
+          "url": "https://arxiv.org/abs/1410.0664",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "A quantum oracle separation between QMA(2) and QMA (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.02865v1",
+          "type": "paper",
+          "scope": "context"
+        },
+        {
+          "label": "Semidefinite extension complexity of the separable set, with applications to approximate disentanglers (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.09033v1",
+          "type": "paper",
+          "scope": "context"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge.analysis.functional_analysis",
+      "source": "domain.analysis",
+      "target": "domain.functional_analysis",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "Analytic estimates become structural in normed and inner product spaces.",
+      "references": [
+        {
+          "label": "J. B. Conway \u2014 A Course in Functional Analysis",
+          "url": "https://link.springer.com/book/10.1007/978-1-4757-4383-8",
+          "type": "book",
+          "scope": "claim"
+        },
+        {
+          "label": "T. Tao \u2014 Analysis I",
+          "url": "https://terrytao.wordpress.com/books/analysis-i/",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.analysis.harmonic",
+      "source": "domain.analysis",
+      "target": "domain.harmonic_analysis",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "Fourier and oscillatory tools refine analytic estimates by scale and frequency.",
+      "references": [
+        {
+          "label": "E. M. Stein \u2014 Harmonic Analysis",
+          "url": "https://doi.org/10.1515/9781400883929",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.analysis.constructive_qft",
+      "source": "domain.analysis",
+      "target": "domain.constructive_quantum_field_theory",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "Constructive field theory relies on integration, functional inequalities, operator bounds and convergence estimates.",
+      "references": [
+        {
+          "label": "J. Glimm and A. Jaffe \u2014 Quantum Physics: A Functional Integral Point of View",
+          "url": "https://link.springer.com/book/10.1007/978-1-4612-4728-9",
+          "type": "book",
+          "scope": "claim"
+        },
+        {
+          "label": "T. Tao \u2014 Analysis I",
+          "url": "https://terrytao.wordpress.com/books/analysis-i/",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.analysis.renormalization_group",
+      "source": "domain.analysis",
+      "target": "domain.renormalization_group",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "Multiscale estimates and stability bounds are the analytic core of rigorous renormalization iterations.",
+      "references": [
+        {
+          "label": "J. Dimock \u2014 The Renormalization Group According to Balaban I",
+          "url": "https://arxiv.org/abs/1108.1335",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.qinfo.no_signalling",
+      "source": "domain.quantum_information_theory",
+      "target": "bridge.local_operations_no_signalling",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "Quantum channel and Kraus formalisms make the distinction between conditioned branches and complete operations explicit.",
+      "references": [
+        {
+          "label": "D. Beckman et al. \u2014 Causal and localizable quantum operations",
+          "url": "https://arxiv.org/abs/quant-ph/0102043",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "M. A. Nielsen and I. L. Chuang \u2014 Quantum Computation and Quantum Information",
+          "url": "https://www.cambridge.org/highereducation/books/quantum-computation-and-quantum-information/01E10196D0A682A6AEFFEA52D53BE9AE",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.qinfo.cmi_recovery",
+      "source": "domain.quantum_information_theory",
+      "target": "bridge.conditional_mutual_information_recovery",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "Conditional mutual information quantifies approximate quantum Markov structure and controls recovery from a marginal.",
+      "references": [
+        {
+          "label": "O. Fawzi and R. Renner \u2014 Quantum conditional mutual information and approximate Markov chains",
+          "url": "https://arxiv.org/abs/1410.0664",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    }
+  ]
+}
