@@ -1,0 +1,7 @@
+{
+  "initial_sha256": "ca6838f7853bbccdb51ae81a1202d827d83e83e8c1ef7c339303c155a28a668b",
+  "failure": "Structural SymPy equality for log(3/r) versus log3-logr failed; the diagnostic simplified their difference to zero.",
+  "correction": "Use algebraic zero check for the radial identity. Same formulas and domains; no mathematical threshold, manuscript or grade changed.",
+  "web_transport": "PDF web renderer rejected octet-stream; selected pages then read via in-memory pypdf. Literal heading search found only the earlier reference; whitespace-tolerant search located the actual remark on page23.",
+  "limits": "These are own checker/transport incidents, not a refutation of the manuscript."
+}

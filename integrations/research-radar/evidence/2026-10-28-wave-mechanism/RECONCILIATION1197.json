@@ -1,0 +1,23 @@
+{
+  "utc": "2026-10-28T12:49:59.656532+00:00",
+  "older_states": [
+    {
+      "path": "D:\\Proyectos\\airr-investigacion\\2026-10-24_continuidad-conocimiento\\ESTADO.json",
+      "sha256": "504ab19a5ed5ca26c9ca1092afe801cea6f7070d3b558009fb0068bdaf71381a",
+      "mtime": 1792810218.0777323
+    },
+    {
+      "path": "D:\\Proyectos\\investigador-airr\\ESTADO.json",
+      "sha256": "b2d8bc40399f9a569b3d5f92d4e46553b8263717cc6285a32324f14aaa73aac0",
+      "mtime": 1792837673.5548105
+    }
+  ],
+  "action": "Preserved newer canonical public v3 and existing cases; no duplicate submissions/reviews.",
+  "source_delta": {
+    "repository": "google-deepmind/formal-conjectures",
+    "old_head": "c0c538071a21b36d15f70f5998370eb6a4c31c97",
+    "new_head": "5a2fb85045c86e4a184b15ce7531ba199a3c4580",
+    "category": "Entry for known solved Erdos777; commit description and selected diff read; external formal proofs/build not replayed",
+    "url": "https://github.com/google-deepmind/formal-conjectures/commit/5a2fb85045c86e4a184b15ce7531ba199a3c4580"
+  }
+}

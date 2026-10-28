@@ -1,0 +1,19 @@
+{
+  "scalar_identities": {
+    "radial_laplacian_p": "0",
+    "radial_laplacian_g": "p",
+    "radial_laplacian_L": "0",
+    "full_laplacian_E": "(cos(T)-1)p",
+    "inner_boundary_E": "1-cos(T)",
+    "outer_boundary_E": "0"
+  },
+  "analytic_positivity_scope": "For0<b<r<3 and D=log(3/b): p>=0; g increasing, subharmonic; harmonic interpolant L>=g by maximum principle. Exact symbolic identities do not audit the entire manuscript PDE.",
+  "scalar_loss_obstruction": "At r=2b, E(0,2b)<=9 log2/(4D^2), while the observed-time weighted mass has a positive b-independent lower bound. Known Remark6.2 mechanism, not a new result.",
+  "rank_toy": {
+    "matrix": "Matrix([[alpha + lambda, 0, 0], [0, alpha + lambda, 0], [0, 0, alpha]])",
+    "determinant": "alpha**3 + 2*alpha**2*lambda + alpha*lambda**2",
+    "positive_remainder_after_alpha_lambda_squared": "alpha**3 + 2*alpha**2*lambda",
+    "consequence": "If determinant=lambda and alpha>0, then alpha<=1/lambda. A lambda-uniform positive lower depth scale cannot follow from this unchanged-RHS rank-two toy."
+  },
+  "no_new_paper_grade_or_formal_result": true
+}
