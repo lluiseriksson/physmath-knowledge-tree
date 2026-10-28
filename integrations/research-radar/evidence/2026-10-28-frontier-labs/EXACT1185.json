@@ -1,0 +1,31 @@
+{
+  "status": "pass",
+  "arithmetic": "exact rational",
+  "cases": [
+    {
+      "k": 4,
+      "p": "1/16",
+      "spectral_gap": "1",
+      "variance": "15/16",
+      "entropy": "4*log(2)",
+      "entropy_to_variance_lower_bound": "32/15"
+    },
+    {
+      "k": 8,
+      "p": "1/256",
+      "spectral_gap": "1",
+      "variance": "255/256",
+      "entropy": "8*log(2)",
+      "entropy_to_variance_lower_bound": "1024/255"
+    },
+    {
+      "k": 16,
+      "p": "1/65536",
+      "spectral_gap": "1",
+      "variance": "65535/65536",
+      "entropy": "16*log(2)",
+      "entropy_to_variance_lower_bound": "524288/65535"
+    }
+  ],
+  "scope": "known-type finite obstruction; not KLS refutation or new theorem"
+}

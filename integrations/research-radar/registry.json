@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "observed_on": "2026-10-27",
+  "observed_on": "2026-10-28",
   "coverage": "Directed primary-source radar with version-pinned catalogue metadata. Bibliographic coverage is never proof coverage.",
   "source_cards": [
     {
@@ -1002,6 +1002,137 @@
       "anchors": [
         "domain.quantum_information_theory"
       ]
+    },
+    {
+      "id": "microsoft-kls-261001447",
+      "title": "An O(1) Bound for the KLS Constant",
+      "url": "https://arxiv.org/abs/2610.01447v2",
+      "kind": "preprint",
+      "published_on": "2026-10-04",
+      "observed_on": "2026-10-28",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "First3PDFpages inspected: universal isotropic log-concave Poincare statement and nested polynomial/curvature refinement overview.",
+      "limits": "Not the remaining137pages, independent proofs or any external Lean build. Manuscript header2October differs from arXivv2 release4October.",
+      "reuse": "Primary metadata and own synthesis only; no foreign corpus, benchmark task or inferred training permission.",
+      "anchors": [
+        "domain.analysis"
+      ]
+    },
+    {
+      "id": "meta-gaussian-ellipsoid-20261002",
+      "title": "The Strict Threshold for Gaussian Ellipsoid Fitting",
+      "url": "https://ai.meta.com/research/publications/the-strict-threshold-for-gaussian-ellipsoid-fitting/",
+      "kind": "preprint",
+      "published_on": "2026-10-02",
+      "observed_on": "2026-10-28",
+      "reading_status": "abstract_read",
+      "evidence": "literature",
+      "claim": "Official abstract states PSD feasibility below the asymptotic sample ratio1/4 and infeasibility above, excluding the critical limit.",
+      "limits": "Full PDF and proof unread; listed by Meta, authorAykutArslan. No finite-size theorem or quantum transfer inferred.",
+      "reuse": "Primary metadata and own synthesis only; no foreign corpus, benchmark task or inferred training permission.",
+      "anchors": [
+        "domain.analysis",
+        "domain.algebra"
+      ]
+    },
+    {
+      "id": "meta-autoformbench-2026",
+      "title": "AutoformBench: A Lean Formalization Benchmark for Advanced Mathematics",
+      "url": "https://github.com/facebookresearch/autoformbench/tree/af1aa38fd44e019e566bce0b5a168609a886d8e6",
+      "kind": "repository",
+      "published_on": null,
+      "observed_on": "2026-10-28",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Selected README records341auditedtasks, source-present ranking, comparator/independent-kernel verification contract and source-free distribution.",
+      "limits": "No tasks/traces/goldproofs imported or benchmark run. CC BY-NC4.0/evaluation-only boundary retained; no model performance imported into our review.",
+      "reuse": "Primary metadata and own synthesis only; no foreign corpus, benchmark task or inferred training permission.",
+      "anchors": [
+        "domain.foundation_logic"
+      ]
+    },
+    {
+      "id": "numina-kakeya-3d-2026",
+      "title": "Kakeya in dimension three: conditional and linked unconditional endpoints",
+      "url": "https://github.com/project-numina/kakeya-3d/tree/a26427e3c2fcaf9f98694fbd0d4dd49e41dcf5e3",
+      "kind": "repository",
+      "published_on": null,
+      "observed_on": "2026-10-28",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Selected README distinguishes StickyFrostmanHypothesis conditional endpoint from linked Unconditional endpoint; bridge-lock dependency metadata inspected.",
+      "limits": "No full build, comparator or axiom replay. Three-dimensional formalization of attributed mathematics; no certification of the all-dimensional wave manuscript.",
+      "reuse": "Primary metadata and own synthesis only; no foreign corpus, benchmark task or inferred training permission.",
+      "anchors": [
+        "domain.harmonic_analysis",
+        "domain.foundation_logic"
+      ]
+    },
+    {
+      "id": "bytedance-nankai-sticky-kakeya-2026",
+      "title": "A Formal Proof of the Sticky-Kakeya Theorem",
+      "url": "https://github.com/M32026/3d-sticky-kakeya/tree/f9d15cd69ba86ac70a3299413a2a78d763733b74",
+      "kind": "repository",
+      "published_on": null,
+      "observed_on": "2026-10-28",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "README states all-scale sticky covering, dense shading and small-scale union-volume quantifiers, attributed to earlier Wang-Zahl and related sources. Joint Nankai/ByteDanceSeed team is declared.",
+      "limits": "README statement only, no proof replay. CurrentHEAD differs from Numina bridge-lock revision; locked revision separately returns200 and must be preserved for reproduction.",
+      "reuse": "Primary metadata and own synthesis only; no foreign corpus, benchmark task or inferred training permission.",
+      "anchors": [
+        "domain.harmonic_analysis",
+        "domain.foundation_logic"
+      ]
+    },
+    {
+      "id": "numina-lean-agent-260114027",
+      "title": "Numina-Lean-Agent: An Open and General Agentic Reasoning System for Formal Mathematics",
+      "url": "https://arxiv.org/abs/2601.14027v1",
+      "kind": "preprint",
+      "published_on": "2026-01-20",
+      "observed_on": "2026-10-28",
+      "reading_status": "abstract_read",
+      "evidence": "literature",
+      "claim": "Abstract describes a general coding-agent/Lean/tool-retrieval workflow; selected code documentation identifies its project build requirement.",
+      "limits": "Older2026paper newly indexed here; no installation, paid inference, benchmark replay or imported success-rate claim.",
+      "reuse": "Primary metadata and own synthesis only; no foreign corpus, benchmark task or inferred training permission.",
+      "anchors": [
+        "domain.foundation_logic"
+      ]
+    },
+    {
+      "id": "eth-sri-brokenmath-251004721",
+      "title": "BrokenMath: A Benchmark for Sycophancy in Theorem Proving with LLMs",
+      "url": "https://arxiv.org/abs/2510.04721v1",
+      "kind": "preprint",
+      "published_on": "2025-10-06",
+      "observed_on": "2026-10-28",
+      "reading_status": "abstract_read",
+      "evidence": "literature",
+      "claim": "Abstract studies false-premise theorem proving and mitigation; primary lab page lists it at ICML2026.",
+      "limits": "Originalpreprint2025, not a newOctober2026paper. No benchmark items copied, no judge-run replay or extrapolation to the current reviewer.",
+      "reuse": "Primary metadata and own synthesis only; no foreign corpus, benchmark task or inferred training permission.",
+      "anchors": [
+        "domain.foundation_logic"
+      ]
+    },
+    {
+      "id": "harmonic-c-verilog-20261027",
+      "title": "Aristotle expands into formal verification for C and Verilog",
+      "url": "https://www.harmonic.fun/news/aristotle-software-hardware-verification/",
+      "kind": "announcement",
+      "published_on": "2026-10-27",
+      "observed_on": "2026-10-28",
+      "reading_status": "announcement_read",
+      "evidence": "literature",
+      "claim": "Selected official announcement describes specification/assumption reporting and software/hardware verification workflows.",
+      "limits": "Product announcement, not a mathematical discovery paper; no service invoked, money spent or published performance independently verified.",
+      "reuse": "Primary metadata and own synthesis only; no foreign corpus, benchmark task or inferred training permission.",
+      "anchors": [
+        "domain.foundation_logic"
+      ]
     }
   ],
   "candidates": [
@@ -1355,6 +1486,29 @@
       "falsifier": "Invalid Sylvester/block/regularization identities or a valid-assumption pair exceedingh refute997. A BKM tangent exceeding1/3 refutes971, whereas991Petz does not. A covering earlier theorem defeats novelty. Preserve989centering barrier and exact991failed variance route.",
       "next_finite_task": "Finish the one full exact995PDF review998 and ordinary-author publication with its real report. Then audit997boundary/normalform and covering sources before a substantive version. No grade-targeted restart or separate minor-paper fragmentation.",
       "review_packet": "One full exact9page review958 is terminal: importance4.0, global4.5, technical8.5, original minor_revision. Exact PDF5542d250... has public Working-paper release ARR-2026-0JN84GQ1MD8FW9WRv1; not Accepted. Same-review967 is format-only, not another vote; O1 unchanged and clarified nonblocking minor bibliographic revision. Effective identity/independence unattested. Audit952 is terminal for950; full958 covers955. Later977/979/981/983 are NOT part of exact957, its review958, or its scores. No scientific review of these later derivations has been obtained. Later988 is terminal, component-only and unscored:979/981valid,991certificates and993SLDsharpness supported; all objections retained, reused942context/sharedfilesystem, identity and independence unverified. Exactsevenpage995PDF37926f... has one full998review in progress with reused952context; no score available.997is outside995 and has no review or grade."
+    },
+    {
+      "id": "kakeya-cross-development-scale-contract",
+      "title": "Audit the pinned sticky/Frostman scale bridge before transfer",
+      "status": "queued",
+      "confidence": "speculative",
+      "source_ids": [
+        "openai-wave-local-smoothing-20261026",
+        "numina-kakeya-3d-2026",
+        "bytedance-nankai-sticky-kakeya-2026"
+      ],
+      "node_ids": [
+        "domain.harmonic_analysis",
+        "domain.foundation_logic"
+      ],
+      "dictionary": "Wave regularity, nearby-scale tube covering and Frostman hierarchy are distinct typed contracts; compare actual endpoint quantifiers.",
+      "preserved": "Dimension3, positive losses, scales and pinned toolchain/dependency identity.",
+      "lost_or_unproved": "No wholeproof replay or all-dimensional analytic implication certified.",
+      "hypothesis_to_remove": "Unverified equivalence of the two formal sticky-cover hypotheses.",
+      "falsifier": "Lost scale quantifier, endpoint mismatch, added project axiom or covering prior theorem defeats the claimed transfer.",
+      "next_finite_task": "Read the linking Lean statement types and axiom assertions before considering bounded replay; do not replace the locked commit by HEAD.",
+      "paper_score": null,
+      "review_packet": "Unreviewed audit candidate; no full external build or manuscript grade."
     }
   ],
   "source_refresh": {

@@ -1,0 +1,12 @@
+{
+  "status": 200,
+  "commit": "42f739b484fd055e0aa29601c35677ad996f2ef2",
+  "sha256_transport": "7783c31b000bec2f748e5914a2a2597a10e31850c47219aa626f6893da56f336",
+  "url": "https://api.github.com/repos/M32026/3d-sticky-kakeya/commits/42f739b484fd055e0aa29601c35677ad996f2ef2",
+  "observed_at": "2026-10-28T04:09:45.315188+00:00",
+  "numina_commit": "a26427e3c2fcaf9f98694fbd0d4dd49e41dcf5e3",
+  "numina_lock_bytedance_commit": "42f739b484fd055e0aa29601c35677ad996f2ef2",
+  "numina_lock_sha256": "b9ace2d2203fc7204231aa6502880b2744bc44f1f3787b99c2e6e398b0571927",
+  "observed_bytedance_HEAD": "f9d15cd69ba86ac70a3299413a2a78d763733b74",
+  "limits": "Different HEAD alone does not invalidate a lock. This is endpoint availability, not mathematical correctness or a build result."
+}

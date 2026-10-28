@@ -2,7 +2,7 @@
 
 A dated, searchable bridge between primary-source discovery, the existing knowledge graph and bounded research tasks. It records what has actually been inspected. It does not assign scientific truth from a repository title, formal statement, model score or graph path.
 
-The current snapshot, refreshed on **27 October 2026**, contains:
+The current snapshot, refreshed on **28 October 2026**, contains:
 
 - Current metadata for **721 OpenAI manuscripts in373 families**, pinned to commit `7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a`. This is bibliographic inventory, not721 reviewed proofs. The original719/372 snapshot and three withdrawal notices are preserved.
 - Source cards spanning OpenAI, Anthropic, DeepMind, the author's catalogues and relevant primary mathematical literature. Dates and individual reading depths distinguish background, inventory and inspected statements; the registry is authoritative for the current count.
@@ -22,6 +22,8 @@ npm run validate:research-radar
 [Source cards and candidates](registry.json) · [Current pinned manuscript catalogue](catalogue/openai-math-2026-10-26.json) · [Historical719/372 snapshot](catalogue/openai-math-2026-10-24.json) · [Public repository inventory](repository-inventory.json) · [Retrieved graph context](retrieval-2026-10-24.json) · [Research update](../../docs/research-updates/2026-10-24.md).
 
 ## Update cycle
+
+New source perimeter: [nine laboratories and research groups](frontier-labs.json), with [eight newly indexed source cards and two bounded mechanism checks](notes/2026-10-28-frontier-labs.md). The screenshot wave paper was already indexed; no duplicate manuscript or new grade is created. Publication dates, actual reading depth, benchmark restrictions and formal dependency locks are explicit.
 
 New connected extension: [common support with noncommuting prepared outputs](notes/2026-10-28-cq-support.md) records the dependent technical audit, certified separation from trace contraction, NPT readout limitation and a falsified uniform-cost explanation. The classical-support v2 is public with importance7.0/global6.7/technical8.8; its full reports and correction chain remain linked. The new exact21-page PDF is under full review and inherits no grade. No graph confidence is promoted.
 
