@@ -75,14 +75,14 @@
     {
       "id": "deepmind-formal-conjectures",
       "title": "Formal Conjectures repository",
-      "url": "https://github.com/google-deepmind/formal-conjectures/tree/c094b979118b89adb77cf5f8d923ac9dd2e51b1d",
+      "url": "https://github.com/google-deepmind/formal-conjectures/tree/5a2fb85045c86e4a184b15ce7531ba199a3c4580",
       "kind": "repository",
       "published_on": null,
-      "observed_on": "2026-10-24",
-      "reading_status": "readme_read",
+      "observed_on": "2026-10-28",
+      "reading_status": "selected_sections_read",
       "evidence": "literature",
-      "claim": "The repository distinguishes formalized conjecture statements from proved theorems and documents immutable benchmark tags and possible statement inaccuracies.",
-      "limits": "A Lean statement or a finite instance does not prove the original conjecture. This sweep did not count current open statements or build the repository; an earlier local count is not treated as current.",
+      "claim": "Earlier README plus selected new Erdos777 commit description/diff inspected. The added entry points to known1985/2015 results and external formal proofs; an index update is not a newly solved mathematical problem.",
+      "limits": "No current statement count, external proof replay, dependency closure or upstream build. Retain earlier statement/benchmark caveats. This is a bibliographic update, not formal proof certification.",
       "reuse": "Metadata and source links. Per-source rights and benchmark boundaries remain applicable.",
       "anchors": [
         "domain.foundation_logic",
@@ -502,18 +502,19 @@
       "url": "https://github.com/openai/math/blob/7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a/preprints/Local-smoothing-for-the-Euclidean-wave-equation-October-25-2026/paper.pdf",
       "kind": "preprint",
       "published_on": "2026-10-26",
-      "observed_on": "2026-10-26",
+      "observed_on": "2026-10-28",
       "reading_status": "selected_sections_read",
       "evidence": "literature",
-      "claim": "Theorem1.1 on page1 states an arbitrarily-small-loss Euclidean half-wave estimate for n>=2 and2<=p<infinity; page3 lists Fourier and Kakeya consequences. This is the manuscript claim, not our proof verification.",
-      "limits": "Only first3PDFpages text read, firstpage visually inspected. No full proof audit, executable algorithm replay or upstream Lean verification. Claims remain provisional. Formal SAT challenge/JSON and imports inspected separately; a challenge sorry is not a solution-module defect.",
+      "claim": "Selected source reading covers critical logarithmic loss, scalar obstruction, quaternionic cofactor/fiber boundary mechanism and A.1/B.1/B.2 analytical statements. Two exact finite symbolic checks illustrate already sourced mechanisms; they are not a proof of the wave theorem.",
+      "limits": "Text pages1-5,11-17,23,38,41,52-53 read; firstpage previously visually inspected. A.1 proof pp39-40, rest of AppendixB and remaining global proof not audited. Author20-line Lean scope note read without solution/dependency replay. Formal challenge inspection is separate; no original grade or full proof certification.",
       "reuse": "Bibliographic metadata and original short synthesis only. Foreign PDFs, proofs and rendered pages are excluded from this public repository.",
       "anchors": [
         "domain.pde",
         "domain.analysis"
       ],
       "manuscript_dated_on": "2026-10-25",
-      "release_commit_timestamp": "2026-10-26T21:18:03Z"
+      "release_commit_timestamp": "2026-10-26T21:18:03Z",
+      "pdf_sha256": "9ca156c552f2d940528f7131716326ef0d67a5829e723e1d294d74560c8636ff"
     },
     {
       "id": "openai-eth-20261026",

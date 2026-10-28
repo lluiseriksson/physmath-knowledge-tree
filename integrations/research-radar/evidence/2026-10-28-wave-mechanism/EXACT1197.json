@@ -1,0 +1,7 @@
+{
+  "scope": "Exact real-symmetric 3x3 subcase; not a quaternionic PDE proof or Lean result",
+  "normal_cofactor": "0",
+  "null_filling_perturbation_normal_cofactor": "epsilon*rho",
+  "conclusion": "Zero Dirichlet data alone does not force normal cofactor cancellation. This finite model tests the shared-null-line mechanism only. Nonzero flux may have favorable sign and does not refute a perturbed PDE method.",
+  "sympy_version": "1.14.0"
+}
