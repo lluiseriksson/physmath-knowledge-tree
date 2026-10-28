@@ -145,3 +145,5 @@ The [nonlocal Poisson feedback and affinity audit](notes/2026-10-28-poisson-feed
 The [classical Doeblin-curve and operator-cone audit](notes/2026-10-28-doeblin-curves-and-cones.md) advances reading of an already inventoried June preprint and separates positive common components from normalized quantum exclusion. It preserves the missing Lee-Makur2024 priority comparison and deduplicates the already published CQ criterion;72source cards/16candidates, no new paper, grade or graph confidence.
 
 The [exact-review continuity reconciliation](notes/2026-10-28-exact-review-continuity.md) closes the stale995/998 task against actual1005/1006 publication bytes, preserving the historical packet and distinguishing later ungraded extensions. No review, score or deposit is repeated;72source cards/16candidates unchanged.
+
+- [Sticky/Frostman typed transfer and remaining scale audit](notes/2026-10-28-kakeya-typed-contract.md): pinned declaration reading; no full upstream replay or new result.
