@@ -1,0 +1,43 @@
+{
+  "model": "Three-state path, uniform reference pi=(1/3,1/3,1/3), target generator L, current-density logarithmic-mean edge mobility; full-support rational witnesses",
+  "states": {
+    "q": [
+      "1/7",
+      "2/7",
+      "4/7"
+    ],
+    "v": [
+      "4/7",
+      "2/7",
+      "1/7"
+    ],
+    "midpoint": [
+      "5/14",
+      "2/7",
+      "5/14"
+    ]
+  },
+  "F_q": [
+    "1/7",
+    "1/7",
+    "-2/7"
+  ],
+  "F_v": [
+    "-2/7",
+    "1/7",
+    "1/7"
+  ],
+  "F_mid": [
+    "-1/42",
+    "1/21",
+    "-1/42"
+  ],
+  "affinity_defect_F_mid_minus_average": [
+    "1/21",
+    "-2/21",
+    "1/21"
+  ],
+  "checks": "Mass conservation, Poisson equation and exact entropy derivative -Jeffreys checked at all3witnesses. Generic edge chain-rule derivation recorded separately.",
+  "scope": "Own specified finite analogue, not the continuum source theorem or every discretization/quantum extension. No global ODE positivity/well-posedness proof, novelty clearance, new paper, model grade or Lean result.",
+  "sympy_version": "1.14.0"
+}
