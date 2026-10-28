@@ -1,0 +1,13 @@
+# Bounded source-contract inspection, 28 October 2026
+
+Literature: at Numina commit a26427e3c2fcaf9f98694fbd0d4dd49e41dcf5e3, the root three-dimensional Kakeya endpoint takes a StickyFrostman hypothesis. The Unconditional namespace supplies that hypothesis through a separate direct-conversion declaration. Both universe parameters are retained. This advances reading from README to the five short endpoint/assembly/contract files; only the opening declaration of the 851-line direct conversion implementation was inspected.
+
+Heuristic dictionary: shaded-tube families and density correspond to the conversion input; nearby-scale covering and dense shading form its output contract. The union-volume comparison preserves the direction needed by the final estimate. The assembly takes the minimum of the two small-scale cutoffs, so neither estimate's validity range is silently discarded.
+
+Speculative research boundary: the actual contract explicitly fixes real dimension three, asks for every positive output loss, and chooses a positive input loss and cutoff. It retains unit-ball support, uniformity, fullness and every-scale Frostman control. It cannot be used directly as a theorem in all dimensions or as an epsilon-free endpoint. A transfer must prove a separate dimension/scale reduction, with all quantifiers retained. Abandon any adapter that simply drops one of these premises. No new theorem or priority claim follows from this inspection.
+
+Formal: no upstream build, axiom-closure computation, definition equivalence audit or proof certification was performed. Dependency commit availability and file hashes are recorded, not promoted to proof verification. Next finite task: inspect the source definition of StickyFrostmanHypothesis and imported WZ2 endpoint types under the exact lock before scheduling a replay. No manuscript, model review, score, graph confidence change or duplicate AIRR case was created.
+
+The current metadata sweep observed unchanged OpenAI/math and DeepMind heads. arXiv and own repositories were inventoried, not proof-audited. The web search copy of AIRR's list was stale; the directly fetched catalogue and the already verified v3 take precedence. Older Claude states still mention the already reconciled Lyapunov case; no resubmission was made.
+
+Source declarations and all locked dependency availability hashes: [READINGS1189.json](../evidence/2026-10-28-recovery-contract/READINGS1189.json). The radius-one [subgraph](../evidence/2026-10-28-recovery-contract/SUBGRAPH1189.json) was retrieved before synthesis. Minimal Lean target: compare the StickyFrostman and imported WZ2 endpoint types under the pinned lock; no formal target was executed.

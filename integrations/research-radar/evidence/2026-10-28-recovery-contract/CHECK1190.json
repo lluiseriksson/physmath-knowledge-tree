@@ -1,0 +1,116 @@
+{
+  "scope": "12 deterministic noncommuting binary CQ examples with equal reference marginal; NumPy floating point, not interval certified; no recovery map constructed, no universal theorem proved by samples",
+  "kappa": 0.7071067811865475,
+  "cases": [
+    {
+      "case": 1,
+      "lambda_min_sigma": 0.22648675962763556,
+      "D_in": 0.01123324172353124,
+      "D_out": 0.0069978928061069645,
+      "predicted_gap_fraction": 0.004857373069528995,
+      "inequality_margin": 0.0041807848715928846,
+      "trace_ratio": 0.7071067811865475
+    },
+    {
+      "case": 2,
+      "lambda_min_sigma": 0.22224049202968021,
+      "D_in": 0.015706377949479933,
+      "D_out": 0.009781958023072912,
+      "predicted_gap_fraction": 0.004766305026919209,
+      "inequality_margin": 0.005849558538231721,
+      "trace_ratio": 0.7071067811865475
+    },
+    {
+      "case": 3,
+      "lambda_min_sigma": 0.22110771637668516,
+      "D_in": 0.008125295097945795,
+      "D_out": 0.0050601264086955755,
+      "predicted_gap_fraction": 0.004742010829943975,
+      "inequality_margin": 0.0030266384518992696,
+      "trace_ratio": 0.7071067811865475
+    },
+    {
+      "case": 4,
+      "lambda_min_sigma": 0.23352118173121988,
+      "D_in": 0.007276334507563709,
+      "D_out": 0.004533790153786299,
+      "predicted_gap_fraction": 0.00500823757278661,
+      "inequality_margin": 0.002706102741904466,
+      "trace_ratio": 0.7071067811865477
+    },
+    {
+      "case": 5,
+      "lambda_min_sigma": 0.22215947746483888,
+      "D_in": 0.018627268974237943,
+      "D_out": 0.01160178315809235,
+      "predicted_gap_fraction": 0.004764567539190801,
+      "inequality_margin": 0.006936734935047161,
+      "trace_ratio": 0.7071067811865476
+    },
+    {
+      "case": 6,
+      "lambda_min_sigma": 0.2296275988847979,
+      "D_in": 0.0034702047523831325,
+      "D_out": 0.0021618065889685845,
+      "predicted_gap_fraction": 0.004924733422286668,
+      "inequality_margin": 0.0012913083300883088,
+      "trace_ratio": 0.7071067811865476
+    },
+    {
+      "case": 7,
+      "lambda_min_sigma": 0.21888573660998226,
+      "D_in": 0.012282017656715327,
+      "D_out": 0.007647973247334683,
+      "predicted_gap_fraction": 0.00469435689777785,
+      "inequality_margin": 0.0045763882350752134,
+      "trace_ratio": 0.7071067811865476
+    },
+    {
+      "case": 8,
+      "lambda_min_sigma": 0.22777898126192894,
+      "D_in": 0.015000215191542265,
+      "D_out": 0.009344628412038425,
+      "predicted_gap_fraction": 0.004885086842186607,
+      "inequality_margin": 0.00558230942564167,
+      "trace_ratio": 0.7071067811865474
+    },
+    {
+      "case": 9,
+      "lambda_min_sigma": 0.22951734539969834,
+      "D_in": 0.007095230987976597,
+      "D_out": 0.004420606763028356,
+      "predicted_gap_fraction": 0.004922368858856008,
+      "inequality_margin": 0.0026396988808866347,
+      "trace_ratio": 0.7071067811865475
+    },
+    {
+      "case": 10,
+      "lambda_min_sigma": 0.2265827401147781,
+      "D_in": 0.00796053070140279,
+      "D_out": 0.004958720180872955,
+      "predicted_gap_fraction": 0.004859431525547409,
+      "inequality_margin": 0.0029631268666793498,
+      "trace_ratio": 0.7071067811865476
+    },
+    {
+      "case": 11,
+      "lambda_min_sigma": 0.21549899119553714,
+      "D_in": 0.019708728759999072,
+      "D_out": 0.012270301081022783,
+      "predicted_gap_fraction": 0.004621722691714224,
+      "inequality_margin": 0.007347339400041359,
+      "trace_ratio": 0.7071067811865475
+    },
+    {
+      "case": 12,
+      "lambda_min_sigma": 0.23824337981381777,
+      "D_in": 0.002798804659435161,
+      "D_out": 0.0017441032510743248,
+      "predicted_gap_fraction": 0.005109512710605279,
+      "inequality_margin": 0.001040400880378951,
+      "trace_ratio": 0.7071067811865475
+    }
+  ],
+  "all_passed": true,
+  "minimum_margin": 0.001040400880378951
+}

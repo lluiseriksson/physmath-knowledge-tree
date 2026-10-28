@@ -1,0 +1,53 @@
+{
+  "type": "exact rational identity controls; not a new theorem or general contraction counterexample",
+  "cases": [
+    {
+      "epsilon": "1/2",
+      "diagonal": [
+        "3/8",
+        "1/8",
+        "1/8",
+        "3/8"
+      ],
+      "marginal_diagonal": [
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2"
+      ],
+      "global_floor": "1/8"
+    },
+    {
+      "epsilon": "1/8",
+      "diagonal": [
+        "15/32",
+        "1/32",
+        "1/32",
+        "15/32"
+      ],
+      "marginal_diagonal": [
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2"
+      ],
+      "global_floor": "1/32"
+    },
+    {
+      "epsilon": "1/64",
+      "diagonal": [
+        "127/256",
+        "1/256",
+        "1/256",
+        "127/256"
+      ],
+      "marginal_diagonal": [
+        "1/2",
+        "1/2",
+        "1/2",
+        "1/2"
+      ],
+      "global_floor": "1/256"
+    }
+  ]
+}
