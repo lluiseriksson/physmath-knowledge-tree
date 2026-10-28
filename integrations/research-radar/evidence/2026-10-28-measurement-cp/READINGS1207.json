@@ -1,0 +1,27 @@
+{
+  "sources": [
+    {
+      "url": "https://arxiv.org/html/2503.22823v3",
+      "sha256_transport": "90616d8403064b982204e654817b8c1beba5ef391017c8ce9d07b241cad8849d",
+      "bytes": 2794981,
+      "scope": "Proposition35 and Corollary11 measurement-channel statements and proofs; Section7.3 opening not used as a proof input. Prior Theorem5 diagnostic preserved, not re-audited.",
+      "observed_at": "2026-10-28T22:55:20.847493+00:00"
+    },
+    {
+      "url": "https://arxiv.org/html/2405.00105v2",
+      "sha256_transport": "0ea004d8ad64e240e69cd5907271de12111c58282ce23b6833e6c4efef7620f1",
+      "bytes": 571737,
+      "scope": "Selected ordinary trace-contraction definition, LemmaIII.2, PropositionIII.3, CorollaryIII.4 and proofs; relaxed Hermitian coefficient distinction identified. Remaining18-page work not audited.",
+      "observed_at": "2026-10-28T22:55:21.656770+00:00"
+    },
+    {
+      "url": "https://arxiv.org/abs/2405.00105v2",
+      "sha256_transport": "ca0264604cc6f421ee8d6f284c7e7dec444337d38fe733e3e1bbd638606676f4",
+      "bytes": 39507,
+      "scope": "Firstpreprint30April2024 versus version2 revision23May2024; not a new2026 publication.",
+      "observed_at": "2026-10-28T22:55:21.943446+00:00"
+    }
+  ],
+  "limits": "Selected local proofs and conventions only; no full literature audit, worldwide novelty certificate or external formal replay. Source bodies not retained.",
+  "unused_direction_flag": "Neighboring2503v3 Proposition36 HTML heading and proof appear to use opposite inequality directions. Not used here; PDF discrepancy not adjudicated and no theorem-refutation claim made."
+}

@@ -997,7 +997,7 @@
       "observed_on": "2026-10-27",
       "reading_status": "selected_sections_read",
       "evidence": "literature",
-      "claim": "Selected Def4/Eq3.1, Theorem5, Lemma6 and theorem proof read; published PDFpage52 visually checked. Parent exact primal/dual diagnostic records a counterexample to Theorem5 as printed for(id+AdX+AdY)/3.",
+      "claim": "Selected Def4/Eq3.1, Theorem5, Lemma6 and theorem proof read; published PDFpage52 visually checked. Parent exact primal/dual diagnostic records a counterexample to Theorem5 as printed for(id+AdX+AdY)/3. Selected follow-up1207 reads Proposition35 and Corollary11: finite measurement-channel coefficient is the sum of minimum effect eigenvalues, with the positive and Hermitian-relaxed/induced variants agreeing there. This formula is prior, not an own discovery.",
       "limits": "The diagnostic has no external audit or priority certificate. It targets one equivalence, not the whole108page paper. arXiv and journal byte hashes differ; no byte identity is asserted.",
       "reuse": "Bibliographic metadata and original synthesis only; no source body redistribution.",
       "anchors": [
@@ -1221,6 +1221,22 @@
       "reuse": "Primary metadata and own synthesis only; no foreign text corpus or training permission inferred.",
       "anchors": [
         "domain.probability_stochastics",
+        "domain.quantum_information_theory"
+      ]
+    },
+    {
+      "id": "hirche-doeblin-2024-scoped",
+      "title": "Quantum Doeblin coefficients: A simple upper bound on contraction coefficients",
+      "url": "https://arxiv.org/html/2405.00105v2",
+      "kind": "preprint",
+      "published_on": "2024-04-30",
+      "observed_on": "2026-10-28",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Selected ordinary trace contraction and positive CP-replacer decomposition/Choi SDP statements and proofs read. The later Hermitian-relaxed common operator is a distinct convention.",
+      "limits": "Not all18pages or an exhaustive prior-art audit. Firstpreprint30April2024; selectedv2 revised23May2024. Newly indexed here, not a newly published2026 result.",
+      "reuse": "Primary metadata and own synthesis only; no foreign text redistribution, corpus acquisition or inferred training permission.",
+      "anchors": [
         "domain.quantum_information_theory"
       ]
     }
@@ -1618,19 +1634,21 @@
       "confidence": "speculative",
       "paper_score": null,
       "source_ids": [
-        "hafouta-pathirana-trajectories-2026"
+        "hafouta-pathirana-trajectories-2026",
+        "george-doeblin-2026-scoped",
+        "hirche-doeblin-2024-scoped"
       ],
       "node_ids": [
         "domain.probability_stochastics",
         "domain.quantum_information_theory"
       ],
-      "dictionary": "The spectral oscillation of a dual effect maps trace contraction of a prefix into a lower eigenvalue bound; positive POVM normalization replaces outcome count by input Hilbert dimension.",
-      "preserved": "Finite dimensiond; measurable positive normalized POVM density and input-independent final prepared posteriors; all density states; distinction between channel, TV kernel and trace-Wasserstein metrics.",
-      "lost_or_unproved": "New analytic component unreviewed; global novelty unresolved; source main limit-theorem proofs and full random-environment measurability transfer unaudited. No arbitrary-instrument extension, manuscript grade or formal proof.",
+      "dictionary": "Ordinary trace contraction bounds the spectral oscillation of dual effects; POVM normalization replaces outcome count by input dimension. Positive effect remainders give a positive Choi integral after a measure-and-prepare postprocessor, retaining every finite quantum reference.",
+      "preserved": "Finite square prefix dimensiond, CPTP prefix with ordinary trace factorr, finite-output entanglement-breaking postprocessor with explicit measurable preparation representation, positive trace-one outputs, integrable normalized POVM, equal-reference constraint for complete contraction. Actual observed instrument is distinct from an alternative channel decomposition.",
+      "lost_or_unproved": "Analytic component and CP-order corollary unreviewed; global novelty unresolved. No arbitrary-postprocessor or original-instrument reset claim, optimal complete trace/Umegaki coefficient, new manuscript grade, full random-environment proof or formal theorem.",
       "hypothesis_to_remove": "Replace finite prepared-label count N in the source sufficient1-N*q^(L-1) argument by a dimension-only1-(d-1)*q^(L-1) bound, allowing standard-Borel prepared outcomes under stated measurability.",
       "falsifier": "A valid-assumption violation of osc(Psi*(F))<=r*osc(F) or the final-preparation kernel identity refutes the component. Pauli and deterministic depolarizing instruments already refute the unrestricted transfer and TV/Wasserstein identification. A covering antecedent defeats novelty.",
-      "next_finite_task": "Audit prior spectral/Doeblin comparison bounds and the continuous POVM density/measurability step before any manuscript. Preserve exact finite controls and no-grade status; do not create a standalone paper from elementary boundary examples.",
-      "review_packet": "Own analytic derivation1206 and exactFraction controls only; no model review, score or independent-certification claim."
+      "next_finite_task": "Audit the count-free dimension inequality against earlier induced/measurement coefficients and request one scoped mathematical audit only when a stable component packet is ready. CP positivity of the continuous remainder now has an explicit Choi-integrability argument; finite planar example has exact primal/dual optimum1/2. Do not claim that optimum is the complete-contraction coefficient or manufacture a paper before novelty audit.",
+      "review_packet": "1206 own spectral derivation and exact controls;1207 own Choi-integral extension and exact finite primal/dual witnesses. No model review or grade. Finite measurement coefficient formula is identified as prior Proposition35; positive/Hermitian coefficient conventions remain distinct."
     }
   ],
   "source_refresh": {
