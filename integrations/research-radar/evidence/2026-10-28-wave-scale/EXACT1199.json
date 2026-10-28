@@ -1,0 +1,11 @@
+{
+  "source": "Pinned OpenAI wave PDF p39-40 tangential rigid-motion construction",
+  "variables": "Seven free real symbols; quaternionic dimension2 with normalized normal e1",
+  "checks": {
+    "real_normal_tangency": "N*V+V*N=0",
+    "skew_hermitian": "A*+A=0",
+    "normal_image": "AN=V"
+  },
+  "scope": "Exact polynomial matrix identities in the standard2x2 complex quaternion representation. Checks a source algebra step only; not an elliptic PDE proof, uniform estimate, external review or Lean theorem.",
+  "sympy_version": "1.14.0"
+}

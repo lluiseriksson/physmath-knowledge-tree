@@ -1,0 +1,574 @@
+{
+  "nodes": [
+    {
+      "id": "domain.analysis",
+      "kind": "domain",
+      "title": "Analysis",
+      "summary": "Limits, differentiability, integration, measure and analytic estimates.",
+      "confidence": "literature",
+      "tags": [
+        "analysis",
+        "measure",
+        "integration",
+        "estimates"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Analysis.Calculus.Deriv.Basic",
+          "Mathlib.MeasureTheory.Measure.MeasureSpace"
+        ],
+        "declarations": [
+          "HasDerivAt",
+          "MeasureTheory.Measure"
+        ],
+        "targets": [
+          "Create toy estimates that can be reused by PDE and spectral nodes."
+        ]
+      },
+      "questions": [
+        "Which estimate is the actual bottleneck of a proposed proof route?"
+      ],
+      "references": [
+        {
+          "label": "T. Tao \u2014 Analysis I",
+          "url": "https://terrytao.wordpress.com/books/analysis-i/",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "domain.functional_analysis",
+      "kind": "domain",
+      "title": "Functional analysis",
+      "summary": "Normed spaces, Banach and Hilbert spaces, operators and weak convergence.",
+      "confidence": "literature",
+      "tags": [
+        "functional-analysis",
+        "hilbert",
+        "banach",
+        "operators"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Analysis.Normed.Module.Basic",
+          "Mathlib.Analysis.InnerProductSpace.Basic"
+        ],
+        "declarations": [
+          "NormedSpace",
+          "InnerProductSpace"
+        ],
+        "targets": [
+          "Formalize operator-theoretic toy bridges."
+        ]
+      },
+      "questions": [
+        "Can a nonlinear problem be embedded into a linear or spectral setting?"
+      ],
+      "references": [
+        {
+          "label": "J. B. Conway \u2014 A Course in Functional Analysis",
+          "url": "https://link.springer.com/book/10.1007/978-1-4757-4383-8",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "domain.harmonic_analysis",
+      "kind": "domain",
+      "title": "Harmonic analysis",
+      "summary": "Fourier analysis, singular integrals, oscillation and scale-sensitive decomposition.",
+      "confidence": "literature",
+      "tags": [
+        "fourier",
+        "harmonic-analysis",
+        "scales"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Analysis.Fourier.FourierTransform"
+        ],
+        "declarations": [],
+        "targets": [
+          "Identify available Fourier transform infrastructure for toy estimates."
+        ]
+      },
+      "questions": [
+        "Which hidden frequency interaction blocks a global estimate?"
+      ],
+      "references": [
+        {
+          "label": "E. M. Stein \u2014 Harmonic Analysis",
+          "url": "https://doi.org/10.1515/9781400883929",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "domain.probability_stochastics",
+      "kind": "domain",
+      "title": "Probability and stochastic processes",
+      "summary": "Random variables, stochastic dynamics, concentration and probabilistic method.",
+      "confidence": "literature",
+      "tags": [
+        "probability",
+        "stochastic",
+        "randomness"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Probability.ProbabilityMassFunction.Basic"
+        ],
+        "declarations": [
+          "ProbabilityTheory.ProbabilityMassFunction"
+        ],
+        "targets": [
+          "Build finite probabilistic toy models for analytic or complexity barriers."
+        ]
+      },
+      "questions": [
+        "Does randomness reveal the typical obstruction or only average it away?"
+      ],
+      "references": [
+        {
+          "label": "O. Kallenberg \u2014 Foundations of Modern Probability",
+          "url": "https://link.springer.com/book/10.1007/978-3-030-61871-1",
+          "type": "book",
+          "scope": "claim"
+        },
+        {
+          "label": "Restricted typicality in non-equilibrium quantum many-body systems (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.07832v1",
+          "type": "paper",
+          "scope": "context"
+        }
+      ]
+    },
+    {
+      "id": "domain.pde",
+      "kind": "domain",
+      "title": "Partial differential equations",
+      "summary": "Equations involving functions and derivatives across space, time and boundary data.",
+      "confidence": "literature",
+      "tags": [
+        "pde",
+        "regularity",
+        "weak-solutions",
+        "energy"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Analysis.Calculus.FDeriv.Basic"
+        ],
+        "declarations": [
+          "ContDiff"
+        ],
+        "targets": [
+          "Represent weak and strong toy PDE statements with explicit assumptions."
+        ]
+      },
+      "questions": [
+        "Where does regularity transfer fail: estimates, compactness or uniqueness?"
+      ],
+      "references": [
+        {
+          "label": "L. C. Evans \u2014 Partial Differential Equations",
+          "url": "https://bookstore.ams.org/gsm-19-r/",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "domain.optimal_transport",
+      "kind": "domain",
+      "title": "Optimal transport",
+      "summary": "Geometry of probability measures, transport cost, Wasserstein spaces and curvature-like flow ideas.",
+      "confidence": "literature",
+      "tags": [
+        "optimal-transport",
+        "probability",
+        "geometry",
+        "flow"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.MeasureTheory.Measure.MeasureSpace"
+        ],
+        "declarations": [],
+        "targets": [
+          "Build finite transport problems as formal toy models."
+        ]
+      },
+      "questions": [
+        "Can measure geometry reveal monotonicity or compactness missing in PDE?"
+      ],
+      "references": [
+        {
+          "label": "C. Villani \u2014 Optimal Transport: Old and New",
+          "url": "https://link.springer.com/book/10.1007/978-3-540-71050-9",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "bridge.renormalization_scaling_pde",
+      "kind": "bridge",
+      "title": "Scaling and renormalization for critical PDE",
+      "summary": "Uses scaling, compactness and energy flow across scales to compare PDE and field-theoretic phenomena.",
+      "confidence": "heuristic",
+      "tags": [
+        "renormalization",
+        "scaling",
+        "pde",
+        "qft"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Analysis.Normed.Module.Basic"
+        ],
+        "declarations": [],
+        "targets": [
+          "State a toy scale-invariant norm estimate."
+        ]
+      },
+      "questions": [
+        "Can the critical obstruction be isolated as a monotone quantity or fixed point?"
+      ],
+      "references": [
+        {
+          "label": "C. Fefferman \u2014 Existence and smoothness of the Navier-Stokes equation",
+          "url": "https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf",
+          "type": "paper",
+          "scope": "context"
+        },
+        {
+          "label": "K. G. Wilson and J. Kogut \u2014 The renormalization group and the epsilon expansion",
+          "url": "https://doi.org/10.1016/0370-1573(74)90023-4",
+          "type": "paper",
+          "scope": "context"
+        },
+        {
+          "label": "The prescribed Hermitian-Yang-Mills flow I (v2, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2606.21062v2",
+          "type": "paper",
+          "scope": "context"
+        },
+        {
+          "label": "The prescribed Hermitian-Yang-Mills flow II (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2606.21073v1",
+          "type": "paper",
+          "scope": "context"
+        }
+      ]
+    },
+    {
+      "id": "problem.navier_stokes",
+      "kind": "problem",
+      "title": "Navier-Stokes existence and smoothness",
+      "summary": "Determine global existence and smoothness, or finite-time breakdown, for 3D incompressible Navier-Stokes.",
+      "confidence": "literature",
+      "tags": [
+        "millennium",
+        "pde",
+        "fluid",
+        "regularity"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Analysis.Calculus.FDeriv.Basic"
+        ],
+        "declarations": [],
+        "targets": [
+          "Formalize a simplified energy inequality with explicit norms."
+        ]
+      },
+      "questions": [
+        "Can critical-scale energy cascade be blocked by a hidden monotonicity?"
+      ],
+      "status": "unsolved",
+      "references": [
+        {
+          "label": "Clay Mathematics Institute \u2014 Millennium Prize Problems",
+          "url": "https://www.claymath.org/millennium-problems/",
+          "type": "official",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "domain.constructive_quantum_field_theory",
+      "kind": "domain",
+      "title": "Constructive quantum field theory",
+      "summary": "Rigorous construction and analysis of interacting quantum field theories through measures, Gaussian estimates, renormalization, cluster expansions, locality and reconstruction criteria, with every uniformity assumption made explicit.",
+      "confidence": "literature",
+      "tags": [
+        "constructive-qft",
+        "cluster-expansion",
+        "renormalization",
+        "rigorous-qft"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib"
+        ],
+        "declarations": [],
+        "targets": [
+          "Isolate finite Gaussian, locality and cluster-expansion interfaces before making any continuum claim."
+        ]
+      },
+      "questions": [
+        "Which finite estimates can be proved uniformly in volume, cutoff and renormalization scale?"
+      ],
+      "references": [
+        {
+          "label": "J. Glimm and A. Jaffe \u2014 Quantum Physics: A Functional Integral Point of View",
+          "url": "https://link.springer.com/book/10.1007/978-1-4612-4728-9",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "domain.renormalization_group",
+      "kind": "domain",
+      "title": "Renormalization group",
+      "summary": "Multiscale transformations that replace microscopic degrees of freedom by effective actions while tracking relevant, marginal and irrelevant structures across changing resolutions.",
+      "confidence": "literature",
+      "tags": [
+        "renormalization-group",
+        "multiscale",
+        "effective-action",
+        "scaling"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib"
+        ],
+        "declarations": [],
+        "targets": [
+          "Model a finite renormalization step with explicit scale maps, supports and preserved quantities."
+        ]
+      },
+      "questions": [
+        "Which estimates survive iteration with constants uniform in the number of renormalization steps?"
+      ],
+      "references": [
+        {
+          "label": "J. Dimock \u2014 The Renormalization Group According to Balaban I",
+          "url": "https://arxiv.org/abs/1108.1335",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "K. G. Wilson and J. Kogut \u2014 The renormalization group and the epsilon expansion",
+          "url": "https://doi.org/10.1016/0370-1573(74)90023-4",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge.analysis.functional_analysis",
+      "source": "domain.analysis",
+      "target": "domain.functional_analysis",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "Analytic estimates become structural in normed and inner product spaces.",
+      "references": [
+        {
+          "label": "J. B. Conway \u2014 A Course in Functional Analysis",
+          "url": "https://link.springer.com/book/10.1007/978-1-4757-4383-8",
+          "type": "book",
+          "scope": "claim"
+        },
+        {
+          "label": "T. Tao \u2014 Analysis I",
+          "url": "https://terrytao.wordpress.com/books/analysis-i/",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.analysis.harmonic",
+      "source": "domain.analysis",
+      "target": "domain.harmonic_analysis",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "Fourier and oscillatory tools refine analytic estimates by scale and frequency.",
+      "references": [
+        {
+          "label": "E. M. Stein \u2014 Harmonic Analysis",
+          "url": "https://doi.org/10.1515/9781400883929",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.harmonic.pde",
+      "source": "domain.harmonic_analysis",
+      "target": "domain.pde",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "Frequency decompositions and singular integral estimates control PDE behavior.",
+      "references": [
+        {
+          "label": "E. M. Stein \u2014 Harmonic Analysis",
+          "url": "https://doi.org/10.1515/9781400883929",
+          "type": "book",
+          "scope": "claim"
+        },
+        {
+          "label": "L. C. Evans \u2014 Partial Differential Equations",
+          "url": "https://bookstore.ams.org/gsm-19-r/",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.probability.pde",
+      "source": "domain.probability_stochastics",
+      "target": "domain.pde",
+      "relation": "bridge",
+      "confidence": "literature",
+      "mechanism": "Stochastic processes model diffusion, random forcing and probabilistic representations of PDE.",
+      "references": [
+        {
+          "label": "L. C. Evans \u2014 Partial Differential Equations",
+          "url": "https://bookstore.ams.org/gsm-19-r/",
+          "type": "book",
+          "scope": "claim"
+        },
+        {
+          "label": "O. Kallenberg \u2014 Foundations of Modern Probability",
+          "url": "https://link.springer.com/book/10.1007/978-3-030-61871-1",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.optimal_transport.pde",
+      "source": "domain.optimal_transport",
+      "target": "domain.pde",
+      "relation": "bridge",
+      "confidence": "literature",
+      "mechanism": "Measure geometry and gradient-flow viewpoints provide monotonicity and compactness tools.",
+      "references": [
+        {
+          "label": "C. Villani \u2014 Optimal Transport: Old and New",
+          "url": "https://link.springer.com/book/10.1007/978-3-540-71050-9",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.pde.navier",
+      "source": "domain.pde",
+      "target": "problem.navier_stokes",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "Navier-Stokes is a central nonlinear PDE regularity problem.",
+      "references": [
+        {
+          "label": "C. Fefferman \u2014 Existence and smoothness of the Navier-Stokes equation",
+          "url": "https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "Clay Mathematics Institute \u2014 Navier-Stokes Equation",
+          "url": "https://www.claymath.org/millennium/navier-stokes-equation/",
+          "type": "official",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.harmonic.navier",
+      "source": "domain.harmonic_analysis",
+      "target": "problem.navier_stokes",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "Critical spaces and frequency interactions are central in regularity analysis.",
+      "references": [
+        {
+          "label": "C. Fefferman \u2014 Existence and smoothness of the Navier-Stokes equation",
+          "url": "https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.pde.renormalization_bridge",
+      "source": "domain.pde",
+      "target": "bridge.renormalization_scaling_pde",
+      "relation": "transfers_via",
+      "confidence": "literature",
+      "mechanism": "Critical PDE expose scale invariance and energy transfer across scales.",
+      "references": [
+        {
+          "label": "K. G. Wilson and J. Kogut \u2014 The renormalization group and the epsilon expansion",
+          "url": "https://doi.org/10.1016/0370-1573(74)90023-4",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "L. C. Evans \u2014 Partial Differential Equations",
+          "url": "https://bookstore.ams.org/gsm-19-r/",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.analysis.constructive_qft",
+      "source": "domain.analysis",
+      "target": "domain.constructive_quantum_field_theory",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "Constructive field theory relies on integration, functional inequalities, operator bounds and convergence estimates.",
+      "references": [
+        {
+          "label": "J. Glimm and A. Jaffe \u2014 Quantum Physics: A Functional Integral Point of View",
+          "url": "https://link.springer.com/book/10.1007/978-1-4612-4728-9",
+          "type": "book",
+          "scope": "claim"
+        },
+        {
+          "label": "T. Tao \u2014 Analysis I",
+          "url": "https://terrytao.wordpress.com/books/analysis-i/",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.analysis.renormalization_group",
+      "source": "domain.analysis",
+      "target": "domain.renormalization_group",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "Multiscale estimates and stability bounds are the analytic core of rigorous renormalization iterations.",
+      "references": [
+        {
+          "label": "J. Dimock \u2014 The Renormalization Group According to Balaban I",
+          "url": "https://arxiv.org/abs/1108.1335",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    }
+  ],
+  "move": "move.spectralize"
+}
