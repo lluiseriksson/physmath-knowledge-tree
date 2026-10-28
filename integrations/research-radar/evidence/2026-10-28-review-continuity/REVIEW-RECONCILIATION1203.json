@@ -1,0 +1,37 @@
+{
+  "observed_at": "2026-10-28T18:58:17.309070+00:00",
+  "public_page": "https://airr.science/papers/ARR-2026-77DGRYDGXD8MDSY2/versions/v1/",
+  "public_page_sha256": "816e5798f50ceb40fb481aaf918b4e0ac183896de8f35bf02daa852322a6331c",
+  "verified_public_files": [
+    {
+      "url": "https://airr.science/papers/ARR-2026-77DGRYDGXD8MDSY2/versions/v1/ARR-2026-77DGRYDGXD8MDSY2-v1.pdf",
+      "sha256": "b4728f44f7af59809be26e0eba957336695ff34cfc3cb10c17fcfa06ffb93381",
+      "bytes": 296929,
+      "local_bytes_match": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/arr-research/arr-research.github.io/main/papers/2026/10/77/ARR-2026-77DGRYDGXD8MDSY2/screening/review1006/REVIEW1006.txt",
+      "sha256": "b179331da60c87e842db4156280f9ac90430de85d4daa0a5e18073c9f4ce15eb",
+      "bytes": 17740,
+      "local_bytes_match": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/arr-research/arr-research.github.io/main/papers/2026/10/77/ARR-2026-77DGRYDGXD8MDSY2/screening/review998/REVIEW998.txt",
+      "sha256": "a490d74c3b6b6c4f7cbace1898e55835845c7058d754b3fdaeb51319569fe855",
+      "bytes": 21738,
+      "local_bytes_match": true
+    }
+  ],
+  "historical_frozen995_pdf": "37926f59287d95e7eb2c005713504d7339e1142a170f70ba1f8cb2734caf7db3",
+  "current_exact1005_pdf": "b4728f44f7af59809be26e0eba957336695ff34cfc3cb10c17fcfa06ffb93381",
+  "review998": "Terminal on historical995, minor revision before publication; historical report unchanged",
+  "review1006": "Terminal on exact1005, publication recommended with declared scope; explicitly reassessed, not automatic grade transfer",
+  "actual_judgments": {
+    "importance": 4.3,
+    "global": 4.4,
+    "technical": 8.6
+  },
+  "effective_model_identity_effort_independence": "unattested; requestedGPT6Astraxhigh, reused952/998context/sharedfilesystem; no fresh/blind or human-review claim",
+  "publication": "Working paper only; one current vote, not Accepted; no new deposition, model run or grade",
+  "separate_paper": "CQv3 SHA6d4f... and review1168 are different artifacts. Their Lee-MakurO1 is not resolved by SLDreview1006 O1-O5."
+}

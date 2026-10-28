@@ -1,0 +1,33 @@
+{
+  "id": "sharp-separable-reset-depth",
+  "title": "Reference-assisted contraction: sharp separable reset and complete SLD candidates",
+  "status": "under_audit",
+  "confidence": "speculative",
+  "paper_score": null,
+  "source_ids": [
+    "gao-rouze-complete-2021-scoped",
+    "gao-cp-order-2025-scoped",
+    "bsst-ea-1999-scoped",
+    "horodecki-reduction-1998-scoped",
+    "terhal-schmidt-2000-scoped",
+    "reeb-projective-2011-scoped",
+    "hirche-conditional-2026-scoped",
+    "gao-zhao-tight-2026-scoped",
+    "trelat-zuazua-gramian-2026-scoped",
+    "hiai-ruskai-contraction-2015-scoped",
+    "belzig-reverse-dpi-v3-scoped",
+    "ruskai-szarek-werner-normalform-2001-scoped",
+    "george-tomamichel-correlation-2026-scoped",
+    "george-doeblin-2026-scoped"
+  ],
+  "node_ids": [
+    "domain.quantum_information_theory"
+  ],
+  "dictionary": "The uniform Pauli twirl kills same-reference differences, allowing harmonic coefficient cancellation in positive inverse quadratic forms. A two-support A2R3 ladder maps the limiting Sylvester system to the same harmonic expression; signed qubit normal form maps Pauli probabilities to normalized Choi eigenvalues.",
+  "preserved": "Every finite reference and equal-reference constraint, faithful finitePetz pairs, positive weights for the direct interior argument, ordered t/xi/epsilon limits. Boundary channel regularization is separate. Actual-product MI and complete two-state coefficients stay distinct.",
+  "lost_or_unproved": "988supports979/981 and separately delivered991/993 within hypotheses, without a manuscript score.997proposes allPauli/allunitalSLD, minimalchi-square and triangularPetz exactness but remains unaudited. BKM/Umegaki1/3 remains open; no nonunital/higherWeyl/capacity/tensorization result, minimum reference dimension or worldwide originality.",
+  "hypothesis_to_remove": "997seeks to eliminate isotropy from the exactSLD993result; signed normal form then eliminates a preferred Pauli basis for unitalqubit channels. This does not eliminate the metric restriction or solve the separate BKM problem.",
+  "falsifier": "Invalid Sylvester/block/regularization identities or a valid-assumption pair exceedingh refute997. A BKM tangent exceeding1/3 refutes971, whereas991Petz does not. A covering earlier theorem defeats novelty. Preserve989centering barrier and exact991failed variance route.",
+  "next_finite_task": "Finish the one full exact995PDF review998 and ordinary-author publication with its real report. Then audit997boundary/normalform and covering sources before a substantive version. No grade-targeted restart or separate minor-paper fragmentation.",
+  "review_packet": "One full exact9page review958 is terminal: importance4.0, global4.5, technical8.5, original minor_revision. Exact PDF5542d250... has public Working-paper release ARR-2026-0JN84GQ1MD8FW9WRv1; not Accepted. Same-review967 is format-only, not another vote; O1 unchanged and clarified nonblocking minor bibliographic revision. Effective identity/independence unattested. Audit952 is terminal for950; full958 covers955. Later977/979/981/983 are NOT part of exact957, its review958, or its scores. No scientific review of these later derivations has been obtained. Later988 is terminal, component-only and unscored:979/981valid,991certificates and993SLDsharpness supported; all objections retained, reused942context/sharedfilesystem, identity and independence unverified. Exactsevenpage995PDF37926f... has one full998review in progress with reused952context; no score available.997is outside995 and has no review or grade."
+}
