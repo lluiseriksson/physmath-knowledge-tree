@@ -1,0 +1,29 @@
+{
+  "source_id": "lee-lu-makur-singh-doeblin-curves-260619859",
+  "url": "https://arxiv.org/pdf/2606.19859v1",
+  "version": "v1",
+  "sha256": "c454dc813ae75e9ac9078adf6cb17a1a9c5058638c34e573255791e59229238d",
+  "bytes": 2514907,
+  "total_pages": 42,
+  "prior_reading": "1136 pp1-3, abstract/intro/definitions/Proposition1statement, same exact PDF hash",
+  "prior_ledger_sha256": "a57fe00ed75772ea904f40676df7153d1f4e1d8abeb60e6e683745d7835cde47",
+  "new_text_pages": [
+    4,
+    7,
+    11,
+    13,
+    14,
+    15
+  ],
+  "reread_text_pages": [
+    1,
+    3
+  ],
+  "scope": "Proposition2 proof p13, selected Lemma4/Theorem1 argument pp13-15; Corollary2 and weighted group-LDP definitions/Theorem5 start only. Full42page proof, Corollary2 proof, uncountable-index measurability and external lattice references not independently audited. No new visual/formal certification.",
+  "transport": "Purdue/DoeblinCurves.pdf returned404 in primary web fetch; arXivv1 returned the earlier pinned bytes.",
+  "reading_warning": "Extracted mathematical variable glyphs on pp14-15 resemble numerical1/2/3; do not interpret them as literal numerical contradictions without visual/source validation.",
+  "priority_gap": "Lee-Makur2024 Allerton DOI10.1109/Allerton63246.2024.10735307 still not read. Current DOI fetch led to IEEE JavaScript verification page, not paper content. DoeblinCurves2026 cannot substitute for the missing fulltext or clear O1.",
+  "own_dedup": "The proposed noncommuting prepared-output common-range criterion is already in published v3 SHA6d4f64b0b9423852ad2831e551edf467a6fbca14d30991b517084978573455c5; not a new candidate or paper.",
+  "foreign_PDF_or_page_text_retained": false,
+  "observed_at": "2026-10-28T17:54:41.901358+00:00"
+}
