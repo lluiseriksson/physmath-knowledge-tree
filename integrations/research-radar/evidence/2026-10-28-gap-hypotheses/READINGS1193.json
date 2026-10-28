@@ -1,0 +1,31 @@
+[
+  {
+    "id": "ghnw_prop30",
+    "url": "https://arxiv.org/html/2503.22823v3",
+    "sha256_transport": "90616d8403064b982204e654817b8c1beba5ef391017c8ce9d07b241cad8849d",
+    "bytes": 2794981,
+    "observed_at": "2026-10-28T08:49:34.577316+00:00",
+    "reading": "Definition6.15, Proposition30 statement and complete short proof Eqs6.16-6.20 read; surrounding article not fully audited",
+    "version": "v3,19May2026",
+    "role": "Known Hermitian-replacer cancellation for complete trace distance, not a positive-replacer Umegaki theorem"
+  },
+  {
+    "id": "ck_default_head",
+    "url": "https://api.github.com/repos/lluiseriksson/lean-connes-kreimer/commits?per_page=1",
+    "sha256_transport": "b8d57cfff97610c5cf7b00ece4c1aa91e097b9748ee3b0651a9cece227d875f8",
+    "bytes": 3522,
+    "observed_at": "2026-10-28T08:49:35.044198+00:00",
+    "head": "dc81326cd426f8805b1712bafb88abb00899076d",
+    "commit_date": "2026-09-09T18:42:44Z",
+    "reading": "default-head metadata; pushed_at is not commit date or evidence of a new theorem"
+  },
+  {
+    "id": "ck_readme",
+    "url": "https://raw.githubusercontent.com/lluiseriksson/lean-connes-kreimer/dc81326cd426f8805b1712bafb88abb00899076d/README.md",
+    "sha256_transport": "2d2e7a6cfd5dc222a4c1c86e69fda107e4fca59321dd5a3504ef25c913b0b81f",
+    "bytes": 2371,
+    "observed_at": "2026-10-28T08:49:35.475725+00:00",
+    "reading": "selected README current-state, milestones and scope disclaimer; no Lean source/proof replay",
+    "finding": "M0 scaffold; no direct consumer import into mother repo or claimed Yang-Mills renormalization/mass-gap consequence"
+  }
+]

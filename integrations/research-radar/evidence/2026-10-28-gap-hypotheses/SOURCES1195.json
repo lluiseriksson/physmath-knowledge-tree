@@ -1,0 +1,167 @@
+[
+  {
+    "source": "openai",
+    "url": "https://github.com/openai/math",
+    "status": 200,
+    "sha256_transport": "18642f82f40c314e4af92d98f96e8306ed1e0f746aa2e3f59bc2f8f30a92ee11",
+    "bytes": 273748,
+    "observed_at": "2026-10-28T10:47:43.995543+00:00",
+    "level": "inventory only"
+  },
+  {
+    "source": "anthropic",
+    "url": "https://www.anthropic.com/research",
+    "status": 200,
+    "sha256_transport": "1cb1f308c511fc3f7d1a0cb2f310307bcf7020456801c26c496be6faa545facc",
+    "bytes": 413107,
+    "observed_at": "2026-10-28T10:47:43.053479+00:00",
+    "level": "inventory only"
+  },
+  {
+    "source": "deepmind",
+    "url": "https://github.com/google-deepmind/formal-conjectures",
+    "status": 200,
+    "sha256_transport": "3deb8621bfea38c46b278424c07f88c2fd615828ca4735bbbd76acabad57b3aa",
+    "bytes": 342154,
+    "observed_at": "2026-10-28T10:47:44.373936+00:00",
+    "level": "inventory only"
+  },
+  {
+    "source": "microsoft",
+    "url": "https://www.microsoft.com/en-us/research/research-area/computational-sciences-mathematics/",
+    "status": 200,
+    "sha256_transport": "533b1ee1bbfaf9fe4d2fca3c3d65a51d15aaf3ea56922a2825b4e4b34e94e241",
+    "bytes": 610953,
+    "observed_at": "2026-10-28T10:47:46.359432+00:00",
+    "level": "inventory only"
+  },
+  {
+    "source": "meta",
+    "url": "https://ai.meta.com/results/",
+    "status": 200,
+    "sha256_transport": "21858e8f905c9a194dc6709fa0208d98b3c06b1c644eff9fe2fbee9e5d15e68d",
+    "bytes": 305404,
+    "observed_at": "2026-10-28T10:47:49.439766+00:00",
+    "level": "inventory only"
+  },
+  {
+    "source": "numina",
+    "url": "https://github.com/project-numina",
+    "status": 200,
+    "sha256_transport": "9b7cf76b4493f8377918f3de198723b5cf42c93a152f32f228d902675c116ea1",
+    "bytes": 286459,
+    "observed_at": "2026-10-28T10:47:43.631742+00:00",
+    "level": "inventory only"
+  },
+  {
+    "source": "bytedance-nankai",
+    "url": "https://github.com/M32026/3d-sticky-kakeya",
+    "status": 200,
+    "sha256_transport": "51c0fc3c8d5435ccdb20f0ca36745620c3085f0227f2f320df3f2b997e8b9002",
+    "bytes": 262753,
+    "observed_at": "2026-10-28T10:47:43.604863+00:00",
+    "level": "inventory only"
+  },
+  {
+    "source": "eth-sri",
+    "url": "https://www.sri.inf.ethz.ch/research/mathllm",
+    "status": 200,
+    "sha256_transport": "c015140361265380dbbe01b0b1275fbc44fad0ac8542321ec67e529c4c546156",
+    "bytes": 31411,
+    "observed_at": "2026-10-28T10:47:43.092418+00:00",
+    "level": "inventory only"
+  },
+  {
+    "source": "harmonic",
+    "url": "https://www.harmonic.fun/news/",
+    "status": 200,
+    "sha256_transport": "27e77760caeb3fd7546be7dfe5961e6b859948a254795cb742452319ef5d2847",
+    "bytes": 105075,
+    "observed_at": "2026-10-28T10:47:42.874000+00:00",
+    "level": "inventory only"
+  },
+  {
+    "source": "openai_head",
+    "url": "https://api.github.com/repos/openai/math/commits?per_page=1",
+    "status": 200,
+    "sha256_transport": "6ca38558150e5428a6ab89342338edbbedc7eb5cf1d5dcc3752dd34b0ad91760",
+    "bytes": 4784,
+    "observed_at": "2026-10-28T10:47:42.939217+00:00",
+    "level": "inventory only",
+    "head": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a"
+  },
+  {
+    "source": "deepmind_head",
+    "url": "https://api.github.com/repos/google-deepmind/formal-conjectures/commits?per_page=1",
+    "status": 200,
+    "sha256_transport": "757b505da0e8b711a6e16a87919a6d8169facb149b203cb844112be25bb4f8f5",
+    "bytes": 6333,
+    "observed_at": "2026-10-28T10:47:43.457651+00:00",
+    "level": "inventory only",
+    "head": "5a2fb85045c86e4a184b15ce7531ba199a3c4580"
+  },
+  {
+    "source": "arxiv",
+    "url": "https://arxiv.org/list/math/new",
+    "status": 200,
+    "sha256_transport": "57affc4c148328485c6720b9709c3642959a912caaa2b9498543e6ecf6adf8d3",
+    "bytes": 1738129,
+    "observed_at": "2026-10-28T10:47:45.979987+00:00",
+    "level": "inventory only"
+  },
+  {
+    "source": "airr",
+    "url": "https://airr.science/catalog.json",
+    "status": 200,
+    "sha256_transport": "cea7441f3eba5ddcdd7eb0248c883b577a08c9c202205dd8e342d7869ec3fcef",
+    "bytes": 1442980,
+    "observed_at": "2026-10-28T10:47:46.011878+00:00",
+    "level": "inventory only"
+  },
+  {
+    "source": "vixra",
+    "url": "https://www.ai.vixra.org/author/lluis_eriksson",
+    "status": 200,
+    "sha256_transport": "ace9657b4945531d1d5cae40b80b9d26042ea6e9d12052fdb68c7bd63acfd4a1",
+    "bytes": 70181,
+    "observed_at": "2026-10-28T10:47:45.075295+00:00",
+    "level": "inventory only"
+  },
+  {
+    "source": "own_repos",
+    "url": "https://api.github.com/users/lluiseriksson/repos?sort=pushed&per_page=15",
+    "status": 200,
+    "sha256_transport": "e0c04df7d369afe1f728c16b134682504bfa07cdae8b4a78a0c99cd943df2a41",
+    "bytes": 87360,
+    "observed_at": "2026-10-28T10:47:44.760380+00:00",
+    "level": "inventory only"
+  },
+  {
+    "source": "recovery_source",
+    "url": "https://arxiv.org/pdf/1509.07127v3",
+    "status": 200,
+    "sha256_transport": "70f30bacca2c99e7d9ebd996960871f0b840b82798da1f64e4c8006231ee397e",
+    "bytes": 316165,
+    "observed_at": "2026-10-28T10:47:44.760380+00:00",
+    "level": "24-page v3, 7Aug2018; introduction Eqs12-15 and Theorem2.1/Remarks2.2-2.4 read; full proof not audited",
+    "role": "known theorem used in root derivation, not newly published frontier result"
+  },
+  {
+    "source": "makur",
+    "url": "https://www.cs.purdue.edu/homes/amakur/publications.html",
+    "status": 200,
+    "sha256_transport": "1ab506c508f85ec635dd1ae7cd1521e1d50a8b12481db99c521d01b0160043e9",
+    "bytes": 30280,
+    "observed_at": "2026-10-28T10:47:45.381989+00:00",
+    "level": "bibliography entries and available links inspected; Lee-Makur2024 full text still unread"
+  },
+  {
+    "source": "lee",
+    "url": "https://dongmin.dev/",
+    "status": 200,
+    "sha256_transport": "dd923a0daf83f3e64bbe4a096eb62b3d46ea9f1f5874811f9c32f1b539f39fba",
+    "bytes": 5020,
+    "observed_at": "2026-10-28T10:47:44.897402+00:00",
+    "level": "bibliography entries and available links inspected; Lee-Makur2024 full text still unread"
+  }
+]
