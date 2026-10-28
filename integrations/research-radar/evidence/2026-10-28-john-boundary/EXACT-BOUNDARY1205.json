@@ -1,0 +1,152 @@
+{
+  "arithmetic": "fractions.Fraction exact rational;16 cases,0 solver failures",
+  "mechanism": "For one full-dimensional convex box, any convex container has volume at least the box volume, hence singleton CWA minimal constant equals reciprocal volume. Diagonal affine normalization maps the box to unit volume.",
+  "general_sequence": "rho=2^-k gives required original coefficient4^k, unbounded as k grows. This algebraic sequence rules out a scale-independent generic affine-body transport constant.",
+  "scope": "Not an actual all-scale sticky tube family and not a counterexample to upstream. No claim that the source numeric factor4 is sharp; exponent2 is unavoidable for this generic box transport model.",
+  "cases": [
+    {
+      "k": 1,
+      "rho": "1/2",
+      "box_volume": "1/4",
+      "forward_det": "4",
+      "normalized_C_min": "1",
+      "original_C_min": "4",
+      "test_container": "original box itself"
+    },
+    {
+      "k": 2,
+      "rho": "1/4",
+      "box_volume": "1/16",
+      "forward_det": "16",
+      "normalized_C_min": "1",
+      "original_C_min": "16",
+      "test_container": "original box itself"
+    },
+    {
+      "k": 3,
+      "rho": "1/8",
+      "box_volume": "1/64",
+      "forward_det": "64",
+      "normalized_C_min": "1",
+      "original_C_min": "64",
+      "test_container": "original box itself"
+    },
+    {
+      "k": 4,
+      "rho": "1/16",
+      "box_volume": "1/256",
+      "forward_det": "256",
+      "normalized_C_min": "1",
+      "original_C_min": "256",
+      "test_container": "original box itself"
+    },
+    {
+      "k": 5,
+      "rho": "1/32",
+      "box_volume": "1/1024",
+      "forward_det": "1024",
+      "normalized_C_min": "1",
+      "original_C_min": "1024",
+      "test_container": "original box itself"
+    },
+    {
+      "k": 6,
+      "rho": "1/64",
+      "box_volume": "1/4096",
+      "forward_det": "4096",
+      "normalized_C_min": "1",
+      "original_C_min": "4096",
+      "test_container": "original box itself"
+    },
+    {
+      "k": 7,
+      "rho": "1/128",
+      "box_volume": "1/16384",
+      "forward_det": "16384",
+      "normalized_C_min": "1",
+      "original_C_min": "16384",
+      "test_container": "original box itself"
+    },
+    {
+      "k": 8,
+      "rho": "1/256",
+      "box_volume": "1/65536",
+      "forward_det": "65536",
+      "normalized_C_min": "1",
+      "original_C_min": "65536",
+      "test_container": "original box itself"
+    },
+    {
+      "k": 9,
+      "rho": "1/512",
+      "box_volume": "1/262144",
+      "forward_det": "262144",
+      "normalized_C_min": "1",
+      "original_C_min": "262144",
+      "test_container": "original box itself"
+    },
+    {
+      "k": 10,
+      "rho": "1/1024",
+      "box_volume": "1/1048576",
+      "forward_det": "1048576",
+      "normalized_C_min": "1",
+      "original_C_min": "1048576",
+      "test_container": "original box itself"
+    },
+    {
+      "k": 11,
+      "rho": "1/2048",
+      "box_volume": "1/4194304",
+      "forward_det": "4194304",
+      "normalized_C_min": "1",
+      "original_C_min": "4194304",
+      "test_container": "original box itself"
+    },
+    {
+      "k": 12,
+      "rho": "1/4096",
+      "box_volume": "1/16777216",
+      "forward_det": "16777216",
+      "normalized_C_min": "1",
+      "original_C_min": "16777216",
+      "test_container": "original box itself"
+    },
+    {
+      "k": 13,
+      "rho": "1/8192",
+      "box_volume": "1/67108864",
+      "forward_det": "67108864",
+      "normalized_C_min": "1",
+      "original_C_min": "67108864",
+      "test_container": "original box itself"
+    },
+    {
+      "k": 14,
+      "rho": "1/16384",
+      "box_volume": "1/268435456",
+      "forward_det": "268435456",
+      "normalized_C_min": "1",
+      "original_C_min": "268435456",
+      "test_container": "original box itself"
+    },
+    {
+      "k": 15,
+      "rho": "1/32768",
+      "box_volume": "1/1073741824",
+      "forward_det": "1073741824",
+      "normalized_C_min": "1",
+      "original_C_min": "1073741824",
+      "test_container": "original box itself"
+    },
+    {
+      "k": 16,
+      "rho": "1/65536",
+      "box_volume": "1/4294967296",
+      "forward_det": "4294967296",
+      "normalized_C_min": "1",
+      "original_C_min": "4294967296",
+      "test_container": "original box itself"
+    }
+  ]
+}

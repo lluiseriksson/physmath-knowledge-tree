@@ -147,3 +147,5 @@ The [classical Doeblin-curve and operator-cone audit](notes/2026-10-28-doeblin-c
 The [exact-review continuity reconciliation](notes/2026-10-28-exact-review-continuity.md) closes the stale995/998 task against actual1005/1006 publication bytes, preserving the historical packet and distinguishing later ungraded extensions. No review, score or deposit is repeated;72source cards/16candidates unchanged.
 
 - [Sticky/Frostman typed transfer and remaining scale audit](notes/2026-10-28-kakeya-typed-contract.md): pinned declaration reading; no full upstream replay or new result.
+
+- [Two Jacobians and the full-fiber boundary](notes/2026-10-28-john-jacobian-boundary.md): selected source argument audit and an exact generic box obstruction; no new manuscript.

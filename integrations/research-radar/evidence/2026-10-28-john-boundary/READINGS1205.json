@@ -1,0 +1,34 @@
+{
+  "observed_at": "2026-10-28T20:47:15.625616+00:00",
+  "files": [
+    {
+      "path": "MyLeanRepo/Kakeya/Assouad/PureWZ2/PureNearbyTopLevelCWA.lean",
+      "commit": "42f739b484fd055e0aa29601c35677ad996f2ef2",
+      "url": "https://raw.githubusercontent.com/M32026/3d-sticky-kakeya/42f739b484fd055e0aa29601c35677ad996f2ef2/MyLeanRepo/Kakeya/Assouad/PureWZ2/PureNearbyTopLevelCWA.lean",
+      "bytes": 20086,
+      "sha256": "de34164c70f062490fb97d58937481b3dfd1de85cd6a5cb1d2c1589065d19db3",
+      "lines": 558,
+      "reading_scope": "lines1-332 of559 including determinant/full-fiber/top-level arguments"
+    },
+    {
+      "path": "MyLeanRepo/Kakeya/Assouad/PureWZ2/BodyCWAFiberwiseAssembly.lean",
+      "commit": "42f739b484fd055e0aa29601c35677ad996f2ef2",
+      "url": "https://raw.githubusercontent.com/M32026/3d-sticky-kakeya/42f739b484fd055e0aa29601c35677ad996f2ef2/MyLeanRepo/Kakeya/Assouad/PureWZ2/BodyCWAFiberwiseAssembly.lean",
+      "bytes": 8290,
+      "sha256": "f00f99414d3456465fd305f7031a6eead0ffc936c7ddc6e738075777e42cf884",
+      "lines": 238,
+      "reading_scope": "full local argument read; imported lemmas not replayed"
+    },
+    {
+      "path": "MyLeanRepo/Kakeya/Assouad/PropStickyDefinition2_12RescalingJacobian.lean",
+      "commit": "42f739b484fd055e0aa29601c35677ad996f2ef2",
+      "url": "https://raw.githubusercontent.com/M32026/3d-sticky-kakeya/42f739b484fd055e0aa29601c35677ad996f2ef2/MyLeanRepo/Kakeya/Assouad/PropStickyDefinition2_12RescalingJacobian.lean",
+      "bytes": 9038,
+      "sha256": "7bccd305f26e27f3de30e2b937b1edd05aca8eea1d540f3b793d09a20a0d6239",
+      "lines": 251,
+      "reading_scope": "full local argument read; imported lemmas not replayed"
+    }
+  ],
+  "dependency_identity": "Locked upstream42f739b under Numina a26427e. Both complete lockfile resolutions were checked1204; no lock change here.",
+  "proof_scope": "Selected source arguments read; no external build, computed axiom closure or full851-line conversion audit. Source bodies not retained."
+}
