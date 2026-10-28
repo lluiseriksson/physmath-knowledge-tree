@@ -1,0 +1,23 @@
+{
+  "lead": "Accelerating Langevin Dynamics with Weighted Laplacian Flow: Global Well-Posedness and Exponential Convergence",
+  "sources": [
+    {
+      "url": "https://arxiv.org/abs/2610.35892",
+      "sha256_transport": "c19e4769d577b19eb36454356a1f6ed8ee2483bcfadf6aaa451983af8006d251",
+      "bytes": 41707,
+      "observed_at": "2026-10-28T15:48:13.332285+00:00",
+      "reading": "Abstract and opening introduction through entropy identity inspected; main well-posedness theorem/proofs not audited"
+    },
+    {
+      "url": "https://arxiv.org/html/2610.35892v1",
+      "sha256_transport": "1010514d5d1ddd95e9a5943eb4eab50435a11a55901493f291e72042bf0e50af",
+      "bytes": 789130,
+      "observed_at": "2026-10-28T15:48:14.032737+00:00",
+      "reading": "Abstract and opening introduction through entropy identity inspected; main well-posedness theorem/proofs not audited"
+    }
+  ],
+  "date_hold": "Abstract history and HTML both report12Sep2026, while arXiv ID starts2610 and it appears in28October new index. Not resolved; no new-publication claim, no authoritative published_on assigned. New-to-index is not a new result.",
+  "mechanism": "Target-weighted elliptic solve depends on current log-density; source claims Fisher-plus-Jeffreys entropy dissipation for its modified nonlinear nonlocal evolution. This is not a rate for the unchanged Langevin process or a fixed quantum channel.",
+  "falsifier": "Any transfer claiming a fixed affine quantum dynamical map must verify affine dependence on initial state; a state-dependent Poisson velocity does not establish that. Source well-posedness and computational cost remain unverified.",
+  "integration": "Primary lead retained for bibliographic reconciliation and later novelty audit; no new source card/candidate/theorem/grade yet."
+}

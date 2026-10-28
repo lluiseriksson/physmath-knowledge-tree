@@ -1,0 +1,8 @@
+{
+  "scale_integral_primitive": "Integral_1^L log(t)/t dt = (log L)^2/2 for L>=1",
+  "uniform_original_scale": "For V(s)=C s^-2 exp(-c s/h), B=b/h fixed: weighted potential integral <= C exp(-cB)/(cB), using log(t/B)<=t/B. Positive C,c,h; b<3.",
+  "shrinking_inner_scale": "For 0<b<h<=3 the same integral >= C exp(-c) (log(h/b))^2/2, by restricting s to[b,h]. This rejects an h-uniform use of condition6.1 when b/h tends to0 for this upper-bound model potential, not the wave theorem or every better actual potential.",
+  "temporal_spectral_scope": "Known Remark6.2 scalar E has only temporal frequencies0,+1,-1; E_TTT+E_T=0 exactly. Adding temporal band limitation alone to the scalar assumptions does not exclude that existing obstruction. Actual nonlinear wave energy need not be bandlimited.",
+  "sympy_version": "1.14.0",
+  "scope": "Two elementary symbolic identities and analytic inequalities; source mechanism/inference, no new PDE result, grade, independent review or Lean proof."
+}
