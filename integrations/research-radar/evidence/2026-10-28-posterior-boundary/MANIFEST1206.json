@@ -1,0 +1,31 @@
+{
+  "scope": "Own metadata, portable stdout-only exact checker and synthesis; no foreign source bodies",
+  "files": [
+    {
+      "path": "SOURCES1206.json",
+      "original_sha256": "4bf89816a7b974a38be3f63a6646876c6ff7fcdc206b960cb2f997aa8b1fbf23",
+      "lf_sha256": "1890354a9feffd6bc6090bbc308b5bff3057a13314e7f0bac21dd55358e3969b"
+    },
+    {
+      "path": "READINGS1206.json",
+      "original_sha256": "c32a5f3579ce6b397e12a748e0eeb56a4376e43f8f38287728db154a0ede89b6",
+      "lf_sha256": "c32a5f3579ce6b397e12a748e0eeb56a4376e43f8f38287728db154a0ede89b6"
+    },
+    {
+      "path": "SUBGRAPH1206.json",
+      "original_sha256": "991ea2592f1dffbb617addd02c91c7d24a160c652ea8a8e88a64183e6c1fef4d",
+      "lf_sha256": "991ea2592f1dffbb617addd02c91c7d24a160c652ea8a8e88a64183e6c1fef4d"
+    },
+    {
+      "path": "EXACT1206.json",
+      "original_sha256": "3c3134e7c54316cecae2ca6c0ae5e3a6a58f10eddcc692682568895fb5fb5ab6",
+      "lf_sha256": "3c3134e7c54316cecae2ca6c0ae5e3a6a58f10eddcc692682568895fb5fb5ab6"
+    },
+    {
+      "path": "check_exact1206.py",
+      "original_sha256": "7e39b3467675b14d11976c0539b50ab810ddac17d48e1cd76dc12c71082473a3",
+      "lf_sha256": "7e39b3467675b14d11976c0539b50ab810ddac17d48e1cd76dc12c71082473a3"
+    }
+  ],
+  "zip_sha256": "fb7ed52ad912c2293984cd8fbe72832670de222b645f2a273babf8609b5867d5"
+}

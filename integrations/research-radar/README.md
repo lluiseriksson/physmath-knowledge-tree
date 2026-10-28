@@ -149,3 +149,5 @@ The [exact-review continuity reconciliation](notes/2026-10-28-exact-review-conti
 - [Sticky/Frostman typed transfer and remaining scale audit](notes/2026-10-28-kakeya-typed-contract.md): pinned declaration reading; no full upstream replay or new result.
 
 - [Two Jacobians and the full-fiber boundary](notes/2026-10-28-john-jacobian-boundary.md): selected source argument audit and an exact generic box obstruction; no new manuscript.
+
+- [Prepared posterior minorization and instrument-level falsifiers](notes/2026-10-28-continuum-preparation.md): unreviewed dimension-only component; exact controls; no manuscript grade.

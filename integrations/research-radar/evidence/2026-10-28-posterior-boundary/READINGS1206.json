@@ -1,0 +1,23 @@
+{
+  "sources": [
+    {
+      "url": "https://arxiv.org/abs/2609.40096v1",
+      "sha256_transport": "d87e4477a42e14ca72a794fd05a0e45e9dac54a395f83f2740b04afe78e93d55",
+      "bytes": 43851,
+      "version": "v1",
+      "first_preprint": "2026-09-30",
+      "observed_at": "2026-10-28T21:52:53.727405+00:00"
+    },
+    {
+      "url": "https://arxiv.org/html/2609.40096v1",
+      "sha256_transport": "45bd63185ab68ab7415d72b78ce6da7b6f198fe8753e69d8d87cd8d8f5edc35b",
+      "bytes": 2191475,
+      "version": "v1",
+      "first_preprint": "2026-09-30",
+      "observed_at": "2026-10-28T21:52:55.878528+00:00"
+    }
+  ],
+  "reading": "Abstract, selective-update/nonselective definitions, Assumption2, Remarks1.1-1.2, PropositionA.2 and its short proof, finite-preparation argument A.2 through bound1-N*q^(L-1). Main71-page limit-theorem proofs not audited.",
+  "deduplication": "Not in prior72 source cards; older September preprint newly indexed here, not newly published today. Nonuniform random-environment variants are already mentioned in Remark1.1; no novelty claim for them.",
+  "acquisition": "Metadata and own synthesis only; no foreign full text stored or corpus permission inferred."
+}
