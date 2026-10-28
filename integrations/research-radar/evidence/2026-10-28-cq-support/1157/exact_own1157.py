@@ -34,4 +34,3 @@ PT=s.Matrix(4,4,lambda a,b:E[(a//2)*2+b%2,(b//2)*2+a%2]);ptdet=s.factor(PT.det()
 # Local change of R basis does not affect PPT; this is the physical P,f ordering.
 out={'exact_geometry_cases':rows,'binary_symbolic':{'J':str(simp((pure([1,0])+pure([1,t])).inv()*(pure([1,0])-pure([1,t])))),'h':str(h),'whitened_T0':'I_B for every distinct binary pair','nonuniform_t_k':'t=1/k implies h~2/k and measured retention->0'},'finite_complex_graph':{'n':2,'k':k,'pure_parameter':'2i/3','p':str(p),'q':str(q),'h':str(hh),'projector_exact':True,'rank':2,'output_Sylvester_minors':list(map(str,minors)),'partial_transpose_determinant':str(ptdet),'NPT_effect':bool(ptdet<0)},'congruence_warning':'Quadratic equality verified by factorization/solve; no general congruence rule for Moore-Penrose inverse used.'}
 (P/'EXACT_OWN1157.json').write_text(json.dumps(out,indent=2)+'\n',encoding='utf-8');print(json.dumps(out,indent=2))
-
