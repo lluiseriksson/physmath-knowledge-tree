@@ -1,0 +1,22 @@
+{
+  "exact_symbolic": true,
+  "omega": "Matrix([[1/2, 1/4 - I/4], [1/4 + I/4, 1/2]])",
+  "centered_nonHermitian_X": "Matrix([[-I, 1 + I], [1 - I, I]])",
+  "norm2_GNS_X": "1",
+  "norm2_GNS_Phi_X": "1",
+  "one_step_centered_GNS_norm": "exactly1; lower witness plus unital-CP invariant-state contractivity",
+  "N_squared": "replacer_omega; checked on all four matrix units",
+  "complete_equal_reference_trace_upper": "3/4; exact Hermitian-replacer residuals",
+  "H": "Matrix([[1/2, 1 - I], [1 + I, 1/2]])",
+  "residuals": [
+    {
+      "trace": "3/4",
+      "determinant": "1/64"
+    },
+    {
+      "trace": "3/4",
+      "determinant": "1/64"
+    }
+  ],
+  "scope": "Falsifies inference of strict one-step GNS coercivity from complete trace contraction, not Gao-Wang theorem; no new physics, manuscript, grade or formal Lean proof."
+}

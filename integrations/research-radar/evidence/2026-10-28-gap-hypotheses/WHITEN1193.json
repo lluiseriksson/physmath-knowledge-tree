@@ -1,0 +1,53 @@
+{
+  "exact_certificate": {
+    "lambda": "1/4",
+    "H_positive": false,
+    "residuals": [
+      {
+        "trace": "3/4",
+        "determinant": "1/64"
+      },
+      {
+        "trace": "3/4",
+        "determinant": "-15/64 + sqrt(2)/4"
+      },
+      {
+        "trace": "3/4",
+        "determinant": "1/64"
+      }
+    ],
+    "complete_equal_reference_trace_bound": "<=3/4 by cancellation of Hermitian replacer; not an Umegaki bound"
+  },
+  "proposed_whitening_limit": "1/2 - sqrt(2)/6",
+  "diagnostic_cases": [
+    {
+      "k": 8,
+      "D_in": 6.25055070968208,
+      "D_out": 1.8571382028638266,
+      "ratio": 0.2971159325188941,
+      "minimum_input_eigenvalue": 2.8001792114672277e-05
+    },
+    {
+      "k": 12,
+      "D_in": 8.729230283812392,
+      "D_out": 2.51759709667194,
+      "ratio": 0.28840997600219204,
+      "minimum_input_eigenvalue": 1.1543291962290425e-06
+    },
+    {
+      "k": 16,
+      "D_in": 11.194949015229726,
+      "D_out": 3.1711081721480534,
+      "ratio": 0.2832624041283301,
+      "minimum_input_eigenvalue": 5.382288911406647e-08
+    },
+    {
+      "k": 20,
+      "D_in": 13.65956656053258,
+      "D_out": 3.82351292277048,
+      "ratio": 0.27991465950449623,
+      "minimum_input_eigenvalue": 2.682628145010994e-09
+    }
+  ],
+  "scope": "Root proof sketch and exact2x2 certificate, with double-precision noncertified3-input diagnostics; not a general fixed-reference no-go or manuscript review."
+}
