@@ -1,0 +1,21 @@
+{
+  "transformation": "CRLF to LF only for repository format policy; original bytes archived in D before conversion",
+  "first_check": "npm check stopped at format, four JSON files CRLF; no mathematical failure",
+  "files": [
+    {
+      "file": "EXACT1183.json",
+      "original_sha256": "3cbd664b7c4d958dd18a26e2e4f54317b8787cb2e16e005fff5ad01af3230eee",
+      "LF_transport_sha256": "fc2257c9985630836e833f7ccefb0f0c18ba04571132144ce3d6f24697b23867"
+    },
+    {
+      "file": "SOURCES1183.json",
+      "original_sha256": "5d5c2526630858c5a3215af2b990c2286e1c515e82b495260e84a35f96354b43",
+      "LF_transport_sha256": "86046585e33245728811ffae5369384b13f2e0ba309948b483a242273bfba282"
+    },
+    {
+      "file": "SUBGRAPH1183.json",
+      "original_sha256": "a3bf464e6b4f860a7f5411d89de6f78990e99350de61b7a8f3babbd708720d2f",
+      "LF_transport_sha256": "eb7ef856fe9942d0187af3b590201a9a93439d338bfde6f1329a1d50ea205bb4"
+    }
+  ]
+}

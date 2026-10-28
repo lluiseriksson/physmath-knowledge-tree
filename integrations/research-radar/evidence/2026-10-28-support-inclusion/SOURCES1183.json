@@ -1,0 +1,66 @@
+{
+  "utc": "2026-10-28T02:49:09.836339+00:00",
+  "directed_not_exhaustive": true,
+  "sources": [
+    {
+      "url": "https://api.github.com/repos/openai/math/commits?per_page=1",
+      "status": 200,
+      "sha256_transport": "6ca38558150e5428a6ab89342338edbbedc7eb5cf1d5dcc3752dd34b0ad91760",
+      "bytes": 4784,
+      "level": "inventory only; no proof audited in this refresh",
+      "commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a"
+    },
+    {
+      "url": "https://www.anthropic.com/research",
+      "status": 200,
+      "sha256_transport": "a82d94be7ee48549665828c80f9e77eacd2773f805729b3962e1192f2b2ff1e8",
+      "bytes": 413479,
+      "level": "inventory only; no proof audited in this refresh"
+    },
+    {
+      "url": "https://api.github.com/repos/google-deepmind/formal-conjectures/commits?per_page=1",
+      "status": 200,
+      "sha256_transport": "35c8d5ede2936394b64fe555e4ee1f44d4d8375e7947129a60c9ed10d8bbae5c",
+      "bytes": 8641,
+      "level": "inventory only; no proof audited in this refresh",
+      "commit": "c0c538071a21b36d15f70f5998370eb6a4c31c97"
+    },
+    {
+      "url": "https://arxiv.org/html/2409.03927v4",
+      "status": 200,
+      "sha256_transport": "72e8bd79cfa80b8bc7a7b393057c41ff3d30ecdff0fd85fdab4b25798dd7ce5f",
+      "bytes": 1194689,
+      "level": "Eq71-72/selected IV-B2 reread in1182; source refresh only1183"
+    },
+    {
+      "url": "https://airr.science/papers/ARR-2026-5A13QJ5MZ98GWVFB/versions/v1/",
+      "status": 200,
+      "sha256_transport": "65f284175c3c0844b025f012e517eea5c790c1dad1556322deea414e6f7c036a",
+      "bytes": 35491,
+      "level": "inventory only; no proof audited in this refresh"
+    },
+    {
+      "url": "https://www.ai.vixra.org/author/lluis_eriksson",
+      "status": 200,
+      "sha256_transport": "ace9657b4945531d1d5cae40b80b9d26042ea6e9d12052fdb68c7bd63acfd4a1",
+      "bytes": 70181,
+      "level": "inventory only; no proof audited in this refresh"
+    },
+    {
+      "url": "https://api.github.com/repos/lluiseriksson/physmath-knowledge-tree/commits?per_page=1",
+      "status": 200,
+      "sha256_transport": "bfd2183a51b410162fec166e655af60a96329077967335f8b045259a957ac216",
+      "bytes": 4858,
+      "level": "inventory only; no proof audited in this refresh",
+      "commit": "a8763c424ac765d91e00ff3c66db0738f5a2d4cf"
+    },
+    {
+      "url": "https://www.cs.purdue.edu/homes/amakur/publications.html",
+      "status": 200,
+      "sha256_transport": "1ab506c508f85ec635dd1ae7cd1521e1d50a8b12481db99c521d01b0160043e9",
+      "bytes": 30280,
+      "level": "selected bibliography entry read; full2024paper not obtained or read"
+    }
+  ],
+  "scope": "Only own synthesis and source metadata retained; no foreign fulltext corpus."
+}
