@@ -1,0 +1,36 @@
+{
+  "scope": "Own metadata, checker and synthesis; no foreign source bodies",
+  "files": [
+    {
+      "path": "SOURCES1207.json",
+      "original_sha256": "6c0f93e28a601a76a57c6aa249d83d2137c7bfd9a9ca1a29d8e30a3def2eaa15",
+      "lf_sha256": "8ec0acfbdc6cede7baffd1349dd6a158e2eed12a2935989a5299bc0e738d1b8b"
+    },
+    {
+      "path": "READINGS1207.json",
+      "original_sha256": "24388d17f4de8f10bcaff91f5c8c53c46e22337d4b8a066dc16e0a4d8087ca9a",
+      "lf_sha256": "24388d17f4de8f10bcaff91f5c8c53c46e22337d4b8a066dc16e0a4d8087ca9a"
+    },
+    {
+      "path": "SUBGRAPH1207.json",
+      "original_sha256": "991ea2592f1dffbb617addd02c91c7d24a160c652ea8a8e88a64183e6c1fef4d",
+      "lf_sha256": "991ea2592f1dffbb617addd02c91c7d24a160c652ea8a8e88a64183e6c1fef4d"
+    },
+    {
+      "path": "EXACT1207.json",
+      "original_sha256": "cdd059e82ac759c9de66ca66a8fd9746df60276e3ebd8bc73ad55a5d4f4027be",
+      "lf_sha256": "fd9783776ade4a5c9f35d00e8aa61a115e1808048f8626c82ab2a5c13be46c11"
+    },
+    {
+      "path": "check_exact1207.py",
+      "original_sha256": "3ddfb8d3a40a5c1da7eda753d82c6199363e63f53267b7da3faf1ade3d0e4dfa",
+      "lf_sha256": "3ddfb8d3a40a5c1da7eda753d82c6199363e63f53267b7da3faf1ade3d0e4dfa"
+    },
+    {
+      "path": "CANDIDATE-BEFORE1207.json",
+      "original_sha256": "983790561e0765fecf54395debd65fe10418b2f113518ec808f8fbcd7eb6c607",
+      "lf_sha256": "983790561e0765fecf54395debd65fe10418b2f113518ec808f8fbcd7eb6c607"
+    }
+  ],
+  "zip_sha256": "da2cc782491b1e5bcd320fdbd420b1096bb1994f5d4bb79c81457f4e6d466b9a"
+}

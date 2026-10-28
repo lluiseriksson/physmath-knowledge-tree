@@ -151,3 +151,5 @@ The [exact-review continuity reconciliation](notes/2026-10-28-exact-review-conti
 - [Two Jacobians and the full-fiber boundary](notes/2026-10-28-john-jacobian-boundary.md): selected source argument audit and an exact generic box obstruction; no new manuscript.
 
 - [Prepared posterior minorization and instrument-level falsifiers](notes/2026-10-28-continuum-preparation.md): unreviewed dimension-only component; exact controls; no manuscript grade.
+
+- [Measurement coefficients and positive Choi remainders](notes/2026-10-28-measurement-cp-order.md): prior formula identified; unreviewed count-free CP-order component; exact finite primal/dual witness.
