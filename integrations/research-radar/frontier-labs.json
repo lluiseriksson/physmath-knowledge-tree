@@ -1,0 +1,63 @@
+{
+  "schema_version": "1.0",
+  "observed_on": "2026-10-28",
+  "coverage": "Directed source perimeter; not exhaustive publication coverage. New-to-index is not newly published.",
+  "acquisition": "Metadata and own synthesis only. Keep evaluation/holdouts and license restrictions; do not vendor corpora or pay for tools.",
+  "selection": "Prioritize explicit hypothesis reductions and defined open problems; retain falsifiers and negative results.",
+  "laboratories": [
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "primary_url": "https://github.com/openai/math",
+      "type": "mathematical_manuscripts"
+    },
+    {
+      "id": "anthropic",
+      "name": "Anthropic",
+      "primary_url": "https://www.anthropic.com/research",
+      "type": "papers_and_formalization"
+    },
+    {
+      "id": "deepmind",
+      "name": "Google DeepMind",
+      "primary_url": "https://github.com/google-deepmind/formal-conjectures",
+      "type": "formal_statements_and_research"
+    },
+    {
+      "id": "microsoft",
+      "name": "Microsoft Research",
+      "primary_url": "https://www.microsoft.com/en-us/research/research-area/computational-sciences-mathematics/",
+      "type": "mathematical_manuscripts"
+    },
+    {
+      "id": "meta",
+      "name": "Meta FAIR",
+      "primary_url": "https://ai.meta.com/results/",
+      "type": "papers_and_evaluation"
+    },
+    {
+      "id": "numina",
+      "name": "Project Numina",
+      "primary_url": "https://github.com/project-numina",
+      "type": "formalization_and_tools"
+    },
+    {
+      "id": "bytedance-nankai",
+      "name": "ByteDance Seed / Nankai joint project",
+      "primary_url": "https://github.com/M32026/3d-sticky-kakeya",
+      "type": "formalization_of_prior_mathematics"
+    },
+    {
+      "id": "eth-sri",
+      "name": "ETH Zurich SRI",
+      "primary_url": "https://www.sri.inf.ethz.ch/research/mathllm",
+      "type": "research_and_evaluation"
+    },
+    {
+      "id": "harmonic",
+      "name": "Harmonic",
+      "primary_url": "https://www.harmonic.fun/news/",
+      "type": "tools_and_technical_announcements"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+[
+  {
+    "repository": "openai/math",
+    "commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+    "commit_date": "2026-10-26T21:18:03Z",
+    "observed_at": "2026-10-28T04:08:15.629039+00:00",
+    "metadata_sha256": "6ca38558150e5428a6ab89342338edbbedc7eb5cf1d5dcc3752dd34b0ad91760",
+    "readme": {
+      "path": "README.md",
+      "sha256": "6cb7f0e387b67c051227c6ba27aca87ee82d9dd2530b6452b86b8681a2e2743a",
+      "bytes": 4417,
+      "reading": "hash refreshed only; earlier readings in existing source cards; no new README reading claimed"
+    }
+  },
+  {
+    "repository": "google-deepmind/formal-conjectures",
+    "commit": "c0c538071a21b36d15f70f5998370eb6a4c31c97",
+    "commit_date": "2026-10-27T09:30:35Z",
+    "observed_at": "2026-10-28T04:08:15.659185+00:00",
+    "metadata_sha256": "35c8d5ede2936394b64fe555e4ee1f44d4d8375e7947129a60c9ed10d8bbae5c",
+    "readme": {
+      "path": "README.md",
+      "sha256": "f76f44765bb5e87474a6c6f52205ef9b699cc5e74b4db3be50c8448a93caee80",
+      "bytes": 7101,
+      "reading": "hash refreshed only; earlier readings in existing source cards; no new README reading claimed"
+    }
+  },
+  {
+    "repository": "anthropics/fermats-last-theorem",
+    "commit": "6e837e75355538c7f80bab5b956861e86c4eacc2",
+    "commit_date": "2026-09-24T14:06:36Z",
+    "observed_at": "2026-10-28T04:08:15.651162+00:00",
+    "metadata_sha256": "fc08b60306920193475ea35ecf401ac893bc58d9aa50bb8fe9eef55ffec50a29",
+    "readme": {
+      "path": "README.md",
+      "sha256": "98b5a23ccd09ed697b7462cc6854280a6baddfbeebf4f90b2873ab585e87c3d0",
+      "bytes": 8612,
+      "reading": "hash refreshed only; earlier readings in existing source cards; no new README reading claimed"
+    }
+  },
+  {
+    "repository": "facebookresearch/autoformbench",
+    "commit": "af1aa38fd44e019e566bce0b5a168609a886d8e6",
+    "commit_date": "2026-10-12T17:40:25Z",
+    "observed_at": "2026-10-28T04:08:15.725024+00:00",
+    "metadata_sha256": "bf7e1eac690c76fb56a775bcc480d241235f480d4d3e43f46f43c0d9a72e396a",
+    "readme": {
+      "path": "README.md",
+      "sha256": "1345196ddabbdab744c07fb8124e6aa14525869fdfc6b41f564f0574ee2c2a5c",
+      "bytes": 4739,
+      "reading": "selected README passages through web tool; no full source audit or upstream build"
+    }
+  },
+  {
+    "repository": "project-numina/kakeya-3d",
+    "commit": "a26427e3c2fcaf9f98694fbd0d4dd49e41dcf5e3",
+    "commit_date": "2026-09-09T14:40:54Z",
+    "observed_at": "2026-10-28T04:08:15.712437+00:00",
+    "metadata_sha256": "e7fa05f00ca02c6c306096e2d3046a56be2a84c70398ea21f80ecd7f2b6a564c",
+    "readme": {
+      "path": "README.md",
+      "sha256": "3b3aa0034f51309021e9cc8c97f262c8b3cbeb3a8bf8de112adeaa36497e74a7",
+      "bytes": 9001,
+      "reading": "selected README passages through web tool; no full source audit or upstream build"
+    }
+  },
+  {
+    "repository": "project-numina/numina-lean-agent",
+    "commit": "1c9af8a52e715f22fede766425ba3d3b95526132",
+    "commit_date": "2026-07-08T18:06:59Z",
+    "observed_at": "2026-10-28T04:08:15.660186+00:00",
+    "metadata_sha256": "a10659e6055b0faa9cb092864c390e86dc4deea2ea7e6b5471588f38729c0c7f",
+    "readme": {
+      "path": "README.md",
+      "sha256": "8bf2c80d67c9ace3d8d1f72bb54f59219ad92a0d9bad94f143a3c0db0049c5cd",
+      "bytes": 5795,
+      "reading": "selected README passages through web tool; no full source audit or upstream build"
+    }
+  },
+  {
+    "repository": "M32026/3d-sticky-kakeya",
+    "commit": "f9d15cd69ba86ac70a3299413a2a78d763733b74",
+    "commit_date": "2026-09-08T15:08:44Z",
+    "observed_at": "2026-10-28T04:08:15.780427+00:00",
+    "metadata_sha256": "ed00d45d2837b0d180aeb00d334ad5c9734ab0b4c42d9a5e7734229e74daa3d1",
+    "readme": {
+      "path": "README.md",
+      "sha256": "08da8186d9c532509cd6a5f5bde05ed6122432b5714bfe5629e2be6b2e309814",
+      "bytes": 3140,
+      "reading": "selected README passages through web tool; no full source audit or upstream build"
+    }
+  }
+]
