@@ -140,7 +140,8 @@ class CdpClient {
   }
 }
 
-async function waitForDebuggingPort(profile, browserProcess, stderr, timeoutMilliseconds = 15000) {
+// Allow bounded cold-browser startup before any page assertions begin.
+async function waitForDebuggingPort(profile, browserProcess, stderr, timeoutMilliseconds = 60000) {
   const portFile = join(profile, 'DevToolsActivePort');
   const deadline = Date.now() + timeoutMilliseconds;
   while (Date.now() < deadline) {
