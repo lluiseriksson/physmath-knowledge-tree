@@ -1,0 +1,134 @@
+{
+  "utc": "2026-10-28T00:46:32.949932+00:00",
+  "scope": "ten selected primary inventory endpoints, not exhaustive; no proof readings from download",
+  "sources": [
+    {
+      "key": "openai_math",
+      "url": "https://api.github.com/repos/openai/math/commits?per_page=1",
+      "utc": "2026-10-28T00:45:12.639295+00:00",
+      "status": 200,
+      "sha256": "6ca38558150e5428a6ab89342338edbbedc7eb5cf1d5dcc3752dd34b0ad91760",
+      "bytes": 4784,
+      "latest_commit": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+      "commit_date": "2026-10-26T21:18:03Z",
+      "same_commit_as1154": true,
+      "same_hash_as1154": true,
+      "reading_level": "inventory only; no abstract/statement/proof reading from download",
+      "unfollowed_next_page": true
+    },
+    {
+      "key": "deepmind_formal",
+      "url": "https://api.github.com/repos/google-deepmind/formal-conjectures/commits?per_page=1",
+      "utc": "2026-10-28T00:45:12.639295+00:00",
+      "status": 200,
+      "sha256": "35c8d5ede2936394b64fe555e4ee1f44d4d8375e7947129a60c9ed10d8bbae5c",
+      "bytes": 8641,
+      "latest_commit": "c0c538071a21b36d15f70f5998370eb6a4c31c97",
+      "commit_date": "2026-10-27T09:30:35Z",
+      "same_commit_as1154": true,
+      "same_hash_as1154": true,
+      "reading_level": "inventory only; no abstract/statement/proof reading from download",
+      "unfollowed_next_page": true
+    },
+    {
+      "key": "own_public_repos",
+      "url": "https://api.github.com/users/lluiseriksson/repos?per_page=100&sort=updated",
+      "utc": "2026-10-28T00:45:12.640293+00:00",
+      "status": 200,
+      "sha256": "9c86f0bb4a5192239b54eb0ae889faaa38f9f8501e1925224e95c2108d868d02",
+      "bytes": 212804,
+      "same_hash_as1154": false,
+      "reading_level": "inventory only; no abstract/statement/proof reading from download",
+      "unfollowed_next_page": false
+    },
+    {
+      "key": "anthropic",
+      "url": "https://www.anthropic.com/research",
+      "utc": "2026-10-28T00:45:12.640293+00:00",
+      "status": 200,
+      "sha256": "31ac2af447c70a5ce0e136606178215e666200b1e753b2dd3ead5ed124515c7e",
+      "bytes": 413479,
+      "same_hash_as1154": false,
+      "reading_level": "inventory only; no abstract/statement/proof reading from download",
+      "unfollowed_next_page": false
+    },
+    {
+      "key": "arxiv_prior",
+      "url": "https://arxiv.org/abs/1510.01844v4",
+      "utc": "2026-10-28T00:45:12.640293+00:00",
+      "status": 200,
+      "sha256": "7a954cbbb7f58c58e08e56da0e11eeea16edf76a6379976844f97186abcd418e",
+      "bytes": 43988,
+      "same_hash_as1154": true,
+      "reading_level": "inventory only; no abstract/statement/proof reading from download",
+      "unfollowed_next_page": false
+    },
+    {
+      "key": "vixra_author",
+      "url": "https://www.ai.vixra.org/author/lluis_eriksson",
+      "utc": "2026-10-28T00:45:12.961821+00:00",
+      "status": 200,
+      "sha256": "ace9657b4945531d1d5cae40b80b9d26042ea6e9d12052fdb68c7bd63acfd4a1",
+      "bytes": 70181,
+      "same_hash_as1154": true,
+      "reading_level": "inventory only; no abstract/statement/proof reading from download",
+      "unfollowed_next_page": false
+    },
+    {
+      "key": "airr_current",
+      "url": "https://airr.science/papers/ARR-2026-77DGRYDGXD8MDSY2/versions/v4/",
+      "utc": "2026-10-28T00:45:13.151104+00:00",
+      "status": 200,
+      "sha256": "c575d1d9e2cedfbbdf4b54ce054df69b3220d03c53294a29e41771a87183fdec",
+      "bytes": 46397,
+      "same_hash_as1154": true,
+      "reading_level": "inventory only; no abstract/statement/proof reading from download",
+      "unfollowed_next_page": false
+    },
+    {
+      "key": "makur_publications",
+      "url": "https://www.cs.purdue.edu/homes/amakur/publications.html",
+      "utc": "2026-10-28T00:45:13.151104+00:00",
+      "status": 200,
+      "sha256": "1ab506c508f85ec635dd1ae7cd1521e1d50a8b12481db99c521d01b0160043e9",
+      "bytes": 30280,
+      "same_hash_as1154": true,
+      "reading_level": "inventory only; no abstract/statement/proof reading from download",
+      "unfollowed_next_page": false
+    },
+    {
+      "key": "arxiv_quantph_new",
+      "url": "https://arxiv.org/list/quant-ph/new",
+      "utc": "2026-10-28T00:45:13.363453+00:00",
+      "status": 200,
+      "sha256": "c67dcd981cf20e92a1fe528bba528b58f4089eee80d77aa0b4d93dd7e5b2971a",
+      "bytes": 658693,
+      "same_hash_as1154": true,
+      "reading_level": "inventory only; no abstract/statement/proof reading from download",
+      "unfollowed_next_page": false
+    },
+    {
+      "key": "arxiv_mathit_recent",
+      "url": "https://arxiv.org/list/math.IT/recent",
+      "utc": "2026-10-28T00:45:13.575493+00:00",
+      "status": 200,
+      "sha256": "1250f7fbdd04daac7cbf1cbf5f1ba948af538748c237c45ca9cbd2b0e385e252",
+      "bytes": 78947,
+      "same_hash_as1154": true,
+      "reading_level": "inventory only; no abstract/statement/proof reading from download",
+      "unfollowed_next_page": false
+    }
+  ],
+  "anthropic_changed_hash": "Current primary listing now includes Oct27 drug-development and analyst-judgment articles. No new mathematical theorem is inferred from HTML hash change.",
+  "selected_new_methodology_source": {
+    "url": "https://www.anthropic.com/research/agents-judgment-calls",
+    "published": "2026-10-27",
+    "sha256": "2815d3481c9e8097ab87d12301b208e78e372644cd63036f6b1e3cb81297031a",
+    "bytes": 233230,
+    "body_saved": false,
+    "reading_level": "primary web article study design, results and limitations read; linked supporting paper not read",
+    "scope": "one randomized agent-lean study on causal analysts; not mathematical reviewers and not proof that this AIRR judgment is biased",
+    "implication": "Keep preexposure, involvement and shared context declared; no independent-review inference from a nominal model name."
+  },
+  "dedup": "OpenAI/math and DeepMind/formal-conjectures commits unchanged; own repository metadata changes do not prove new science; no 721-proof coverage claimed"
+}

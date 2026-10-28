@@ -23,6 +23,8 @@ npm run validate:research-radar
 
 ## Update cycle
 
+New connected extension: [common support with noncommuting prepared outputs](notes/2026-10-28-cq-support.md) records the dependent technical audit, certified separation from trace contraction, NPT readout limitation and a falsified uniform-cost explanation. The classical-support v2 is public with importance7.0/global6.7/technical8.8; its full reports and correction chain remain linked. The new exact21-page PDF is under full review and inherits no grade. No graph confidence is promoted.
+
 Current exact-PDF closure and route barrier: [classical-reference boundary](notes/2026-10-27-classical-reference.md) preserves the full published v4 report (importance6.3/global6.1/technical8.7), O1–O6 and a separate unscored binary-channel technical audit. Later simplex candidates remain pending and outside that score; no graph confidence is promoted.
 
 Latest: [equimodularity and a positive circuit witness](notes/2026-10-27-equimodular-converse.md) records an unscored technical audit of an exact universal midpoint classification. Classical normalization is explicitly prior knowledge. The preceding exact six-page manuscript received importance **4.0/10** and technical **8.5/10**; its original full report and objections are preserved. These grades do not assess the new classification.
