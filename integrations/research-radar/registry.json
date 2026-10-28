@@ -1206,6 +1206,23 @@
         "domain.analysis",
         "domain.quantum_information_theory"
       ]
+    },
+    {
+      "id": "hafouta-pathirana-trajectories-2026",
+      "title": "Limit Theorems for Disordered Quantum Trajectories",
+      "url": "https://arxiv.org/html/2609.40096v1",
+      "kind": "preprint",
+      "published_on": "2026-09-30",
+      "observed_on": "2026-10-28",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Selected posterior-kernel definitions, block minorization assumption, Remarks1.1-1.2, PropositionA.2 and its short proof, and finite-preparation1-N*q^(L-1) argument read. Source distinguishes posterior-state laws from nonselective barycenters and already mentions nonuniform variants.",
+      "limits": "Main71-page limit-theorem proofs not audited. Newly indexed September preprint, not an October28 publication. Own continuum/dimension component is separately unreviewed and has unresolved novelty.",
+      "reuse": "Primary metadata and own synthesis only; no foreign text corpus or training permission inferred.",
+      "anchors": [
+        "domain.probability_stochastics",
+        "domain.quantum_information_theory"
+      ]
     }
   ],
   "candidates": [
@@ -1593,6 +1610,27 @@
       "next_finite_task": "Selected full-fiber pullback, count assembly and John/literal determinant arguments read1205. Do not drop the scale Jacobian in a generic global-volume transport: exact boxes refute that shortcut. Continue auditing actual full-fiber geometry and witness construction inside DirectConversion; no new paper from this bounded source audit.",
       "paper_score": null,
       "review_packet": "Selected typed-contract reading1204; no model review, manuscript grade or full proof replay. Numina pinned submodule42f739b differs from separately inventoried current upstreamf9d15cd. All18 git dependencies in both lockfiles resolve at their exact pinned commits; availability does not certify a build."
+    },
+    {
+      "id": "continuum-preparation-minorization",
+      "title": "Outcome-count-independent minorization for prepared posterior states",
+      "status": "under_audit",
+      "confidence": "speculative",
+      "paper_score": null,
+      "source_ids": [
+        "hafouta-pathirana-trajectories-2026"
+      ],
+      "node_ids": [
+        "domain.probability_stochastics",
+        "domain.quantum_information_theory"
+      ],
+      "dictionary": "The spectral oscillation of a dual effect maps trace contraction of a prefix into a lower eigenvalue bound; positive POVM normalization replaces outcome count by input Hilbert dimension.",
+      "preserved": "Finite dimensiond; measurable positive normalized POVM density and input-independent final prepared posteriors; all density states; distinction between channel, TV kernel and trace-Wasserstein metrics.",
+      "lost_or_unproved": "New analytic component unreviewed; global novelty unresolved; source main limit-theorem proofs and full random-environment measurability transfer unaudited. No arbitrary-instrument extension, manuscript grade or formal proof.",
+      "hypothesis_to_remove": "Replace finite prepared-label count N in the source sufficient1-N*q^(L-1) argument by a dimension-only1-(d-1)*q^(L-1) bound, allowing standard-Borel prepared outcomes under stated measurability.",
+      "falsifier": "A valid-assumption violation of osc(Psi*(F))<=r*osc(F) or the final-preparation kernel identity refutes the component. Pauli and deterministic depolarizing instruments already refute the unrestricted transfer and TV/Wasserstein identification. A covering antecedent defeats novelty.",
+      "next_finite_task": "Audit prior spectral/Doeblin comparison bounds and the continuous POVM density/measurability step before any manuscript. Preserve exact finite controls and no-grade status; do not create a standalone paper from elementary boundary examples.",
+      "review_packet": "Own analytic derivation1206 and exactFraction controls only; no model review, score or independent-certification claim."
     }
   ],
   "source_refresh": {

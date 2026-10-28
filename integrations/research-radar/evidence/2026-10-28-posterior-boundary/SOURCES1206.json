@@ -1,0 +1,139 @@
+[
+  {
+    "source": "openai",
+    "url": "https://github.com/openai/math",
+    "status": 200,
+    "sha256_transport": "da7661fe1652ad15364356183e1d54a10e479e01a16661a5c1270635c5b33b38",
+    "bytes": 236565,
+    "observed_at": "2026-10-28T21:47:27.575009+00:00",
+    "level": "inventory only"
+  },
+  {
+    "source": "anthropic",
+    "url": "https://www.anthropic.com/research",
+    "status": 200,
+    "sha256_transport": "bc4001b3a718f48e2e7d97cbb75ce39b3b65dfdb97eae5e903f598ae21791c0c",
+    "bytes": 413129,
+    "observed_at": "2026-10-28T21:47:27.096835+00:00",
+    "level": "inventory only"
+  },
+  {
+    "source": "deepmind",
+    "url": "https://github.com/google-deepmind/formal-conjectures",
+    "status": 200,
+    "sha256_transport": "9015d349ec2fa32796bc82eef0cffca26bc860b381c5385358a3fde68cf4e6d7",
+    "bytes": 304966,
+    "observed_at": "2026-10-28T21:47:27.686068+00:00",
+    "level": "inventory only"
+  },
+  {
+    "source": "microsoft",
+    "url": "https://www.microsoft.com/en-us/research/research-area/computational-sciences-mathematics/",
+    "status": 200,
+    "sha256_transport": "ba5708d1f6b22fb1d1e77a324200fd524e42825b8f7f38f6f058ff97e8d48cf7",
+    "bytes": 607723,
+    "observed_at": "2026-10-28T21:47:30.863265+00:00",
+    "level": "inventory only"
+  },
+  {
+    "source": "meta",
+    "url": "https://ai.meta.com/results/",
+    "status": 200,
+    "sha256_transport": "a7c5913ea6c07d684830de76aa0e0a0796551c86fdbb3dec2c3be903eb192558",
+    "bytes": 304623,
+    "observed_at": "2026-10-28T21:47:31.867200+00:00",
+    "level": "inventory only"
+  },
+  {
+    "source": "numina",
+    "url": "https://github.com/project-numina",
+    "status": 200,
+    "sha256_transport": "91b546dc6a190d2549b91142c5aa6e361c79bb307e848b4850d3013c6b840b09",
+    "bytes": 246016,
+    "observed_at": "2026-10-28T21:47:27.606996+00:00",
+    "level": "inventory only"
+  },
+  {
+    "source": "bytedance-nankai",
+    "url": "https://github.com/M32026/3d-sticky-kakeya",
+    "status": 200,
+    "sha256_transport": "f6f6d60e5b0799cd0cbf7fc50bb58e570bf608b66e0513d810c5bda71437628d",
+    "bytes": 225564,
+    "observed_at": "2026-10-28T21:47:27.663938+00:00",
+    "level": "inventory only"
+  },
+  {
+    "source": "eth-sri",
+    "url": "https://www.sri.inf.ethz.ch/research/mathllm",
+    "status": 200,
+    "sha256_transport": "c687a3a588e939a275364150f1f7bf6a9c770d577dba29387f257c260d35d945",
+    "bytes": 32567,
+    "observed_at": "2026-10-28T21:47:26.578303+00:00",
+    "level": "inventory only"
+  },
+  {
+    "source": "harmonic",
+    "url": "https://www.harmonic.fun/news/",
+    "status": 200,
+    "sha256_transport": "e92049177a8996f805f89724dbe0beee0910ba18b9b8855352efe2300ccb9ddb",
+    "bytes": 106167,
+    "observed_at": "2026-10-28T21:47:27.666443+00:00",
+    "level": "inventory only"
+  },
+  {
+    "source": "openai_head",
+    "url": "https://api.github.com/repos/openai/math/commits?per_page=1",
+    "status": 200,
+    "sha256_transport": "6ca38558150e5428a6ab89342338edbbedc7eb5cf1d5dcc3752dd34b0ad91760",
+    "bytes": 4784,
+    "observed_at": "2026-10-28T21:47:27.968229+00:00",
+    "level": "inventory only",
+    "head": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a"
+  },
+  {
+    "source": "deepmind_head",
+    "url": "https://api.github.com/repos/google-deepmind/formal-conjectures/commits?per_page=1",
+    "status": 200,
+    "sha256_transport": "757b505da0e8b711a6e16a87919a6d8169facb149b203cb844112be25bb4f8f5",
+    "bytes": 6333,
+    "observed_at": "2026-10-28T21:47:28.073134+00:00",
+    "level": "inventory only",
+    "head": "5a2fb85045c86e4a184b15ce7531ba199a3c4580"
+  },
+  {
+    "source": "arxiv",
+    "url": "https://arxiv.org/list/math/new",
+    "status": 200,
+    "sha256_transport": "57affc4c148328485c6720b9709c3642959a912caaa2b9498543e6ecf6adf8d3",
+    "bytes": 1738129,
+    "observed_at": "2026-10-28T21:47:30.438361+00:00",
+    "level": "inventory only"
+  },
+  {
+    "source": "airr",
+    "url": "https://airr.science/catalog.json",
+    "status": 200,
+    "sha256_transport": "cea7441f3eba5ddcdd7eb0248c883b577a08c9c202205dd8e342d7869ec3fcef",
+    "bytes": 1442980,
+    "observed_at": "2026-10-28T21:47:31.020835+00:00",
+    "level": "inventory only"
+  },
+  {
+    "source": "vixra",
+    "url": "https://www.ai.vixra.org/author/lluis_eriksson",
+    "status": 200,
+    "sha256_transport": "7a5f950e1a001dd86ef8303c1104d2c3e27779603f577e21f226cf623347ca62",
+    "bytes": 70183,
+    "observed_at": "2026-10-28T21:47:29.970801+00:00",
+    "level": "inventory only"
+  },
+  {
+    "source": "own_repos",
+    "url": "https://api.github.com/users/lluiseriksson/repos?sort=pushed&per_page=15",
+    "status": 200,
+    "sha256_transport": "bd09952a0525c763ab549f9cb8bf03a2d165fb455e7d10419f2112a81162b767",
+    "bytes": 87360,
+    "observed_at": "2026-10-28T21:47:28.577573+00:00",
+    "level": "inventory only"
+  }
+]
