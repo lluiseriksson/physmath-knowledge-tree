@@ -1,0 +1,38 @@
+{
+  "method": "Web-tool selected reading; fresh HTTP transport hashes identify retrieved versions, not semantic equivalence. No foreign bodies stored.",
+  "sources": [
+    {
+      "url": "https://arxiv.org/html/2503.22823v3",
+      "version": "2503.22823v3",
+      "read": "Selected statements and proofs: Proposition30, Proposition31, Corollary7; re-read Proposition35/Corollary11. No full paper audit; Proposition36 direction flag and older diagnostic not adjudicated.",
+      "level": "selected statement and local proof read, not complete proof audit",
+      "sha256_transport": "90616d8403064b982204e654817b8c1beba5ef391017c8ce9d07b241cad8849d",
+      "bytes": 2794981,
+      "utc": "2026-10-29T01:56:09.734649+00:00",
+      "foreign_full_text_stored": false
+    },
+    {
+      "url": "https://arxiv.org/html/2309.08475v2",
+      "version": "2309.08475v2",
+      "read": "Selected Theorem1 properties and local explanations, including upper-comparison direction and finite common-component definition; not all proofs/applications.",
+      "level": "selected statement and local proof read, not complete proof audit",
+      "sha256_transport": "93adedc30b2a3551c33cbf7e9a74c568f49d917b7557adee6c5615894324939a",
+      "bytes": 1501105,
+      "utc": "2026-10-29T01:56:10.785559+00:00",
+      "foreign_full_text_stored": false
+    },
+    {
+      "url": "https://arxiv.org/html/2405.00105v2",
+      "version": "2405.00105v2",
+      "read": "Selected PropositionIII.3 decomposition and neighboring definitions, re-read; no full dependency audit.",
+      "level": "selected statement and local proof read, not complete proof audit",
+      "sha256_transport": "0ea004d8ad64e240e69cd5907271de12111c58282ce23b6833e6c4efef7620f1",
+      "bytes": 571737,
+      "utc": "2026-10-29T01:56:11.313937+00:00",
+      "foreign_full_text_stored": false
+    }
+  ],
+  "negative_search_limit": "Directed searches did not settle the dimension-envelope priority. An absent search hit is not evidence of originality.",
+  "new_ai_review": false,
+  "new_grade": false
+}
