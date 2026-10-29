@@ -1,0 +1,168 @@
+{
+  "observed_at": "2026-10-29T12:34:53.979Z",
+  "dependencies": [
+    {
+      "parent": "project-numina/kakeya-3d",
+      "name": "checkdecls",
+      "repository": "PatrickMassot/checkdecls",
+      "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+      "resolved": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+      "verified": true,
+      "response_sha256": "217078900e83cbb71a5369730fc0ea69124788565df4aa9fe1526a8eade67cb2"
+    },
+    {
+      "parent": "project-numina/kakeya-3d",
+      "name": "mathlib",
+      "repository": "leanprover-community/mathlib4",
+      "rev": "1b0782d8191b03e0001caac10e1601d17f2cd580",
+      "resolved": "1b0782d8191b03e0001caac10e1601d17f2cd580",
+      "verified": true,
+      "response_sha256": "ad8725712ecada65713870a4158862e351e5e29b8907e2e894fd16024d72f640"
+    },
+    {
+      "parent": "project-numina/kakeya-3d",
+      "name": "plausible",
+      "repository": "leanprover-community/plausible",
+      "rev": "f3f26cc72646205ca167117487c008ee1dafe816",
+      "resolved": "f3f26cc72646205ca167117487c008ee1dafe816",
+      "verified": true,
+      "response_sha256": "be70db53bf8e77ffb0febf127284f4a67f0e4ec1e39c79ec2bf8f04c66484a82"
+    },
+    {
+      "parent": "project-numina/kakeya-3d",
+      "name": "LeanSearchClient",
+      "repository": "leanprover-community/LeanSearchClient",
+      "rev": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+      "resolved": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+      "verified": true,
+      "response_sha256": "ea7b247462f8f440841285262b5e87124be6a714d37eccb16b1ca01448c6ece1"
+    },
+    {
+      "parent": "project-numina/kakeya-3d",
+      "name": "importGraph",
+      "repository": "leanprover-community/import-graph",
+      "rev": "41f407a8e85b0fdc00910633a8f14754139b63f4",
+      "resolved": "41f407a8e85b0fdc00910633a8f14754139b63f4",
+      "verified": true,
+      "response_sha256": "78d8205608b204030d3578eb9ce3871c490703155529307d3727d0b52f22dfe5"
+    },
+    {
+      "parent": "project-numina/kakeya-3d",
+      "name": "proofwidgets",
+      "repository": "leanprover-community/ProofWidgets4",
+      "rev": "e6518a674e62de322b8f79eebeda7bcae2a36bc3",
+      "resolved": "e6518a674e62de322b8f79eebeda7bcae2a36bc3",
+      "verified": true,
+      "response_sha256": "e927fbe2d8b85f7f0b8e66149c5c5caeb3796867373960cecdd8f6d7c001704c"
+    },
+    {
+      "parent": "project-numina/kakeya-3d",
+      "name": "aesop",
+      "repository": "leanprover-community/aesop",
+      "rev": "b5b9e2bb45ce91e4bc44eaa738c3a8910404ab82",
+      "resolved": "b5b9e2bb45ce91e4bc44eaa738c3a8910404ab82",
+      "verified": true,
+      "response_sha256": "830319623da6708b02198f940abd320cda61f91dc136ba289868a38cbb56bd2b"
+    },
+    {
+      "parent": "project-numina/kakeya-3d",
+      "name": "Qq",
+      "repository": "leanprover-community/quote4",
+      "rev": "7a62bd13860cd39ac98da16ffc8c24d601353f69",
+      "resolved": "7a62bd13860cd39ac98da16ffc8c24d601353f69",
+      "verified": true,
+      "response_sha256": "fc48ad3738401bc3c0caf926fb245aabc8673ef4fa77d508d5a52fa91146c4c4"
+    },
+    {
+      "parent": "project-numina/kakeya-3d",
+      "name": "batteries",
+      "repository": "leanprover-community/batteries",
+      "rev": "7d1b02eb63b526dff04cb990cf05b06b38ccbd3f",
+      "resolved": "7d1b02eb63b526dff04cb990cf05b06b38ccbd3f",
+      "verified": true,
+      "response_sha256": "206f70d1ad31c8040f8788e3f7b610cdc417c3cf1956eb9853fc1772d95c928b"
+    },
+    {
+      "parent": "project-numina/kakeya-3d",
+      "name": "Cli",
+      "repository": "leanprover/lean4-cli",
+      "rev": "406ebb8c8e2f7e852a1b47764b42494022ce652c",
+      "resolved": "406ebb8c8e2f7e852a1b47764b42494022ce652c",
+      "verified": true,
+      "response_sha256": "76d39d16b3bd8c1076589d8f04aea9e83a9cdb14a289a12f493abf1a8b2ba3a0"
+    },
+    {
+      "parent": "M32026/3d-sticky-kakeya",
+      "name": "plausible",
+      "repository": "leanprover-community/plausible",
+      "rev": "f3f26cc72646205ca167117487c008ee1dafe816",
+      "resolved": "f3f26cc72646205ca167117487c008ee1dafe816",
+      "verified": true,
+      "response_sha256": "be70db53bf8e77ffb0febf127284f4a67f0e4ec1e39c79ec2bf8f04c66484a82"
+    },
+    {
+      "parent": "M32026/3d-sticky-kakeya",
+      "name": "LeanSearchClient",
+      "repository": "leanprover-community/LeanSearchClient",
+      "rev": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+      "resolved": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+      "verified": true,
+      "response_sha256": "ea7b247462f8f440841285262b5e87124be6a714d37eccb16b1ca01448c6ece1"
+    },
+    {
+      "parent": "M32026/3d-sticky-kakeya",
+      "name": "importGraph",
+      "repository": "leanprover-community/import-graph",
+      "rev": "41f407a8e85b0fdc00910633a8f14754139b63f4",
+      "resolved": "41f407a8e85b0fdc00910633a8f14754139b63f4",
+      "verified": true,
+      "response_sha256": "78d8205608b204030d3578eb9ce3871c490703155529307d3727d0b52f22dfe5"
+    },
+    {
+      "parent": "M32026/3d-sticky-kakeya",
+      "name": "proofwidgets",
+      "repository": "leanprover-community/ProofWidgets4",
+      "rev": "e6518a674e62de322b8f79eebeda7bcae2a36bc3",
+      "resolved": "e6518a674e62de322b8f79eebeda7bcae2a36bc3",
+      "verified": true,
+      "response_sha256": "e927fbe2d8b85f7f0b8e66149c5c5caeb3796867373960cecdd8f6d7c001704c"
+    },
+    {
+      "parent": "M32026/3d-sticky-kakeya",
+      "name": "aesop",
+      "repository": "leanprover-community/aesop",
+      "rev": "b5b9e2bb45ce91e4bc44eaa738c3a8910404ab82",
+      "resolved": "b5b9e2bb45ce91e4bc44eaa738c3a8910404ab82",
+      "verified": true,
+      "response_sha256": "830319623da6708b02198f940abd320cda61f91dc136ba289868a38cbb56bd2b"
+    },
+    {
+      "parent": "M32026/3d-sticky-kakeya",
+      "name": "Qq",
+      "repository": "leanprover-community/quote4",
+      "rev": "7a62bd13860cd39ac98da16ffc8c24d601353f69",
+      "resolved": "7a62bd13860cd39ac98da16ffc8c24d601353f69",
+      "verified": true,
+      "response_sha256": "fc48ad3738401bc3c0caf926fb245aabc8673ef4fa77d508d5a52fa91146c4c4"
+    },
+    {
+      "parent": "M32026/3d-sticky-kakeya",
+      "name": "batteries",
+      "repository": "leanprover-community/batteries",
+      "rev": "954dbc9873f3b4534dc9896604593406d0383520",
+      "resolved": "954dbc9873f3b4534dc9896604593406d0383520",
+      "verified": true,
+      "response_sha256": "22ba0c3d6b57e6893c857d3e3472be8c32aaccfadba14385617d676393fa9ee7"
+    },
+    {
+      "parent": "M32026/3d-sticky-kakeya",
+      "name": "Cli",
+      "repository": "leanprover/lean4-cli",
+      "rev": "406ebb8c8e2f7e852a1b47764b42494022ce652c",
+      "resolved": "406ebb8c8e2f7e852a1b47764b42494022ce652c",
+      "verified": true,
+      "response_sha256": "76d39d16b3bd8c1076589d8f04aea9e83a9cdb14a289a12f493abf1a8b2ba3a0"
+    }
+  ],
+  "not_a_build_certificate": true
+}

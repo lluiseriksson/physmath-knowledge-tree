@@ -1,0 +1,116 @@
+{
+  "lockfiles": [
+    {
+      "repository": "project-numina/kakeya-3d",
+      "commit": "a26427e3c2fcaf9f98694fbd0d4dd49e41dcf5e3",
+      "path": "lake-manifest.json",
+      "sha256": "67bbc3bdc4691e6e36325c7688e5d71dbbcf3f685e87bd94b059eb4d725f39f6",
+      "packages": [
+        {
+          "name": "checkdecls",
+          "rev": "3d425859e73fcfbef85b9638c2a91708ef4a22d4",
+          "url": "https://github.com/PatrickMassot/checkdecls.git"
+        },
+        {
+          "name": "mathlib",
+          "rev": "1b0782d8191b03e0001caac10e1601d17f2cd580",
+          "url": "https://github.com/leanprover-community/mathlib4"
+        },
+        {
+          "name": "plausible",
+          "rev": "f3f26cc72646205ca167117487c008ee1dafe816",
+          "url": "https://github.com/leanprover-community/plausible"
+        },
+        {
+          "name": "LeanSearchClient",
+          "rev": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+          "url": "https://github.com/leanprover-community/LeanSearchClient"
+        },
+        {
+          "name": "importGraph",
+          "rev": "41f407a8e85b0fdc00910633a8f14754139b63f4",
+          "url": "https://github.com/leanprover-community/import-graph"
+        },
+        {
+          "name": "proofwidgets",
+          "rev": "e6518a674e62de322b8f79eebeda7bcae2a36bc3",
+          "url": "https://github.com/leanprover-community/ProofWidgets4"
+        },
+        {
+          "name": "aesop",
+          "rev": "b5b9e2bb45ce91e4bc44eaa738c3a8910404ab82",
+          "url": "https://github.com/leanprover-community/aesop"
+        },
+        {
+          "name": "Qq",
+          "rev": "7a62bd13860cd39ac98da16ffc8c24d601353f69",
+          "url": "https://github.com/leanprover-community/quote4"
+        },
+        {
+          "name": "batteries",
+          "rev": "7d1b02eb63b526dff04cb990cf05b06b38ccbd3f",
+          "url": "https://github.com/leanprover-community/batteries"
+        },
+        {
+          "name": "Cli",
+          "rev": "406ebb8c8e2f7e852a1b47764b42494022ce652c",
+          "url": "https://github.com/leanprover/lean4-cli"
+        }
+      ]
+    },
+    {
+      "repository": "M32026/3d-sticky-kakeya",
+      "commit": "42f739b484fd055e0aa29601c35677ad996f2ef2",
+      "path": "lake-manifest.json",
+      "sha256": "ee81106f1d3d8f1209a6505913eced12993e69bd9799640f6d4b7a8be167d2c8",
+      "packages": [
+        {
+          "name": "mathlib"
+        },
+        {
+          "name": "plausible",
+          "rev": "f3f26cc72646205ca167117487c008ee1dafe816",
+          "url": "https://github.com/leanprover-community/plausible"
+        },
+        {
+          "name": "LeanSearchClient",
+          "rev": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+          "url": "https://github.com/leanprover-community/LeanSearchClient"
+        },
+        {
+          "name": "importGraph",
+          "rev": "41f407a8e85b0fdc00910633a8f14754139b63f4",
+          "url": "https://github.com/leanprover-community/import-graph"
+        },
+        {
+          "name": "proofwidgets",
+          "rev": "e6518a674e62de322b8f79eebeda7bcae2a36bc3",
+          "url": "https://github.com/leanprover-community/ProofWidgets4"
+        },
+        {
+          "name": "aesop",
+          "rev": "b5b9e2bb45ce91e4bc44eaa738c3a8910404ab82",
+          "url": "https://github.com/leanprover-community/aesop"
+        },
+        {
+          "name": "Qq",
+          "rev": "7a62bd13860cd39ac98da16ffc8c24d601353f69",
+          "url": "https://github.com/leanprover-community/quote4"
+        },
+        {
+          "name": "batteries",
+          "rev": "954dbc9873f3b4534dc9896604593406d0383520",
+          "url": "https://github.com/leanprover-community/batteries"
+        },
+        {
+          "name": "Cli",
+          "rev": "406ebb8c8e2f7e852a1b47764b42494022ce652c",
+          "url": "https://github.com/leanprover/lean4-cli"
+        }
+      ]
+    }
+  ],
+  "prior_submodule_sha": "42f739b484fd055e0aa29601c35677ad996f2ef2",
+  "root_submodules": [],
+  "nested_submodule_evidence": "SUBMODULE1262.json"
+}

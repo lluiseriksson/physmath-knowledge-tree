@@ -1,0 +1,58 @@
+{
+  "utc": "2026-10-29T12:36:16.447Z",
+  "confidence": "literature: selected primary formal-source argument reading, not a kernel replay or a new theorem",
+  "source": {
+    "repository": "project-numina/kakeya-3d",
+    "commit": "a26427e3c2fcaf9f98694fbd0d4dd49e41dcf5e3",
+    "path": "Unconditional/DirectConversion.lean",
+    "url": "https://raw.githubusercontent.com/project-numina/kakeya-3d/a26427e3c2fcaf9f98694fbd0d4dd49e41dcf5e3/Unconditional/DirectConversion.lean",
+    "bytes": 46201,
+    "sha256": "933dcab30b1ab794fba3c3ed169ac409b18dd0ad374736af1edede9bae37922e",
+    "lines": 855,
+    "verified_sha256": "933dcab30b1ab794fba3c3ed169ac409b18dd0ad374736af1edede9bae37922e",
+    "reading_ranges": [
+      "1-108 imports, universe parameters and consumer contracts",
+      "110-177 complete local groupedMass argument",
+      "178-230 weightedJohn application with imported coaxial/John lemmas",
+      "231-343 complete-class pullback, classImage/classMass and sourceFrostman assembly",
+      "345-350 sourceMass opening only"
+    ]
+  },
+  "interfaces": [
+    {
+      "path": "Unconditional/FiniteJointGeometry.lean",
+      "url": "https://raw.githubusercontent.com/project-numina/kakeya-3d/a26427e3c2fcaf9f98694fbd0d4dd49e41dcf5e3/Unconditional/FiniteJointGeometry.lean",
+      "commit": "a26427e3c2fcaf9f98694fbd0d4dd49e41dcf5e3",
+      "bytes": 30360,
+      "sha256": "052c7e812d6cb7363f2c22fb033448bc5c47f3f5e9c6bd29a57fce9f61611b06",
+      "reading": "Selected field declarations and surrounding interfaces only; not whole imported proof audit"
+    },
+    {
+      "path": "Unconditional/FiniteParentRecords.lean",
+      "url": "https://raw.githubusercontent.com/project-numina/kakeya-3d/a26427e3c2fcaf9f98694fbd0d4dd49e41dcf5e3/Unconditional/FiniteParentRecords.lean",
+      "commit": "a26427e3c2fcaf9f98694fbd0d4dd49e41dcf5e3",
+      "bytes": 8264,
+      "sha256": "46d511541db4fdc06b06da2fb0f6044e3fc18c777cacfeaaa17477df737906f3",
+      "reading": "Selected field declarations and surrounding interfaces only; not whole imported proof audit"
+    }
+  ],
+  "sourced_fact": "The pinned directConversion consumer explicitly carries a class-mass ratio H*uniformLoss*(weightLoss/density), exact representative full-fiber grouping, injective source indexing and equal parent volumes.",
+  "graph_supported_inference": "The selected assembly does not justify replacing representative full fibers by arbitrary same-cardinality subsets or deleting the class-mass loss. Equal tube volume and injectivity are used to convert class images to exact weighted masses.",
+  "mechanism": "For each active original parent, selected complete classes are pulled back through the injective localization map. The local Frostman contained-mass inequality is multiplied by the common parent volume, then summed over disjoint assignment fibers. The supplied old_class_mass_ratio bounds original class mass by retained selected-class mass. Multiplication and finite sums retain ENNReal zero/infinite cases without dividing by anchor volume.",
+  "hypotheses_retained": [
+    "fixed three-dimensional tube geometry",
+    "exact full_fiber_grouping field, not a subset statement",
+    "injective sourceIndex and originalIndex",
+    "local equal carrier volumes",
+    "finite selected families and assignment-fiber partition",
+    "per-class old_class_mass_ratio with all H/uniformLoss/weightLoss/density factors",
+    "convex test set and original parent Frostman contract"
+  ],
+  "limits": "No full855-line directConversion audit; finite_selected_old_class_mass_ratio proof not yet fully read; imported coaxial bound, John rescaling, localization/regularization and end-to-end loss budget not audited. No upstream build, computed axiom closure or main Kakeya certification. Availability of18 exact lock commits is not proof coverage.",
+  "falsifier": "A failure of exact full-class pullback or the weighted class ratio under its true construction hypotheses would defeat this bridge. An arbitrary lossy subset or a counterexample outside the typed source hypotheses does not refute the source.",
+  "new_hypothesis": "None promoted. A loss-free transfer is not established; retain the explicit loss budget.",
+  "formal_result": "None produced or certified in this run. Source is a formalization of attributed mathematics; no new manuscript or model assessment.",
+  "next": "Read finite_selected_old_class_mass_ratio in FiniteJointGeometry lines33-126, then trace its hnew/uniformity and localization density hypotheses. Audit total loss absorption before claiming a full StickyFrostman discharge.",
+  "source_redistribution": "Only bibliographic metadata, hashes and own synthesis retained; no source body or evaluation corpus persisted.",
+  "dependencies": "Both pinned lake manifests re-fetched with their recorded hashes; all18 exact commit endpoints resolve. Recursive tree confirms upstream/3d-sticky-kakeya at42f739b484fd055e0aa29601c35677ad996f2ef2."
+}
