@@ -1355,6 +1355,23 @@
       "anchors": [
         "domain.quantum_information_theory"
       ]
+    },
+    {
+      "id": "schubr-low-dimensional-unimodular-power-2026",
+      "title": "Power Concavity of Low-Dimensional Unimodular Fiber Counts (edition4)",
+      "url": "https://research.luminaryoddities.com/power-concavity-of-low-dimensional-unimodular-fiber-counts/v/4",
+      "kind": "preprint",
+      "published_on": "2026-10-22",
+      "observed_on": "2026-10-29",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Edition4 (2026-10-27) states sixth-root and logarithmic Jensen for integrable integer demands when the bounded central fiber has affine dimension at most3. Its proposed mechanism uses a monotone concave A3 extension and common lattice coordinates.",
+      "limits": "PDF SHA256 fefc3ad35c98e327cdabdf01b147393f561ba7d149f84c61c60f0e9304d11d9f; PDF title date2026-10-22 differs from edition date. Statements and selected pp4-10 read. Own exact checker validates only Lemma3.1 finite normal classification (1024masks,51valid systems,16maximal systems and displayed transformations). Global theorem, chamber identities, Lorentzian certificate, gluing/boundaries and supplement not audited; no unrestricted Jensen solution or novelty certification.",
+      "reuse": "Bibliography and original synthesis/checker only. No foreign PDF, extracted text or supplement in repository; no inferred training permission.",
+      "anchors": [
+        "domain.algebra",
+        "domain.complexity_theory"
+      ]
     }
   ],
   "candidates": [
@@ -1521,7 +1538,8 @@
       "confidence": "speculative",
       "source_ids": [
         "leake-yekta-tu-jensen-2026",
-        "bernstein-sullivant-lawrence2017"
+        "bernstein-sullivant-lawrence2017",
+        "schubr-low-dimensional-unimodular-power-2026"
       ],
       "node_ids": [
         "domain.algebra",
@@ -1529,10 +1547,10 @@
       ],
       "dictionary": "Integer right-hand sides -> exact fiber counts -> log-count concave envelope at integer barycenters.",
       "preserved": "Unimodular system, finite fibers, nonnegative integer solutions and exact integer barycenter.",
-      "lost_or_unproved": "No general Jensen proof or exact violation. New9600LP probes yield no strict lead;261149 exact ternary RHS controls are finite only. The12-by18 K4 three-color lift has maximal minors1and2, so direct unimodular-theorem transfer is invalid.",
+      "lost_or_unproved": "No general Jensen proof or exact violation. New9600LP probes yield no strict lead;261149 exact ternary RHS controls are finite only. The12-by18 K4 three-color lift has maximal minors1and2, so direct unimodular-theorem transfer is invalid. Edition4 of the Schubr preprint reports central affine dimension<=3; only its finite rank-three normal lemma is checked here. General dimensions remain unproved; do not relabel known low-dimensional work as novel.",
       "hypothesis_to_remove": "The line-supported restriction on the distribution of right-hand sides.",
       "falsifier": "An exact unimodular system and rational finite weights with integer barycenter violating the Jensen inequality; all fiber counts and finiteness must be certified.",
-      "next_finite_task": "Seek a direct universal central-fiber argument or genuine Jensen witness paying for the higher-color lift nonunimodularity. Do not repeat fixed finite probes as proof or package these controls as a standalone paper.",
+      "next_finite_task": "Before reopening finite probes, compare the exact edition4 prior art. Central dimension<=3 is a reported literature result, not an independently audited full theorem here. Audit a specific missing step or exhibit a genuinely higher-dimensional universal mechanism/exact Jensen witness; no repeat low-dimensional campaigns or standalone minor papers.",
       "paper_score": null,
       "review_packet": "399 bounded audit validates an elementary rational-weight binary lift to unweighted TU fibers and generic non-TU closure barriers;64C/Dfiles checked. Exact counts cover184756configurations/19448fibers;2982LPexecutions have no exact violating certificate.392has162executions on161distincttargets. The lift may be exponential in binary weight length. No Jensen solution, converse reduction or importance score."
     },

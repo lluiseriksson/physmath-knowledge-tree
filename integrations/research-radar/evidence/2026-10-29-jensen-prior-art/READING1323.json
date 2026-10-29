@@ -1,0 +1,31 @@
+{
+  "edition": 4,
+  "edition_date": "2026-10-27",
+  "first_edition": "2026-10-22",
+  "pdf_title_date": "2026-10-22",
+  "url": "https://research.luminaryoddities.com/power-concavity-of-low-dimensional-unimodular-fiber-counts/v/4",
+  "pdf_url": "https://research.luminaryoddities.com/power-concavity-of-low-dimensional-unimodular-fiber-counts/v/4/files/Paper.pdf",
+  "pdf_sha256": "fefc3ad35c98e327cdabdf01b147393f561ba7d149f84c61c60f0e9304d11d9f",
+  "pdf_bytes": 174368,
+  "page_html_sha256": "9138ac23892d3de5f98f0ea0cb323c1e892f1e78c2869f2c4970f65eb5e9086c",
+  "reading": {
+    "inventory": true,
+    "abstract_read": true,
+    "statements_read": [
+      "Theorem1.1,1.2,1.3,1.4,2.1",
+      "Lemma3.1"
+    ],
+    "selected_proof_read": "pages4-10, mechanism and common-lattice transfer",
+    "proof_audited": "Only finite rank-three normal classification and displayed16 transforms;1024masks,51TU systems, negative control."
+  },
+  "not_audited": [
+    "chamber polynomial reconstruction",
+    "Lorentzian degree-six certificate",
+    "gluing and boundary polynomial identity",
+    "global transfer in entirety",
+    "remaining refinements",
+    "supplement"
+  ],
+  "status": "Restricted primary-source prior art; central affine dimension<=3 is a reported theorem, not independently certified here",
+  "repository_update": "original bibliography and scoped synthesis only; foreign PDF/extracted text retained privately in D archive, not vendored"
+}
