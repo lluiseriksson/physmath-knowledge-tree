@@ -1,0 +1,58 @@
+{
+  "observed_at": "2026-10-29T13:20:30.596Z",
+  "confidence": "literature",
+  "formal_status": "Selected local source arguments read; no upstream Lean kernel replay or full transitive axiom closure. No new formal result.",
+  "source_records": [
+    {
+      "repository": "project-numina/kakeya-3d",
+      "commit": "a26427e3c2fcaf9f98694fbd0d4dd49e41dcf5e3",
+      "path": "Unconditional/BodyCWAToJohn.lean",
+      "sha256": "9525b502b6c53a99e8109e843f6ed38a56931ebab99b2aa9d1ef2862392a01ca",
+      "lines": 82,
+      "coverage": "24–79 complete local arguments"
+    },
+    {
+      "repository": "project-numina/kakeya-3d",
+      "commit": "a26427e3c2fcaf9f98694fbd0d4dd49e41dcf5e3",
+      "path": "Unconditional/CoaxialJohnTransfer.lean",
+      "sha256": "37fc97eecc1e565a4058caeb8f27727cf2e9959d2e908ca3c9d5d35b376fe0cb",
+      "lines": 25,
+      "coverage": "1–25 read: imports and empty namespace; no theorem exists in this file"
+    },
+    {
+      "repository": "M32026/3d-sticky-kakeya",
+      "commit": "42f739b484fd055e0aa29601c35677ad996f2ef2",
+      "path": "MyLeanRepo/Kakeya/Assouad/PureWZ2/GWZConversion/FrostmanConvexWolff.lean",
+      "sha256": "600c40ce595a08747461ae6afb5fee1a1f929b0d3bf97c3bae179d6b9b463336",
+      "lines": 440,
+      "coverage": "44–82 unit-ball lower bound and95–435 full local conversion argument read"
+    },
+    {
+      "repository": "M32026/3d-sticky-kakeya",
+      "commit": "42f739b484fd055e0aa29601c35677ad996f2ef2",
+      "path": "MyLeanRepo/Kakeya/Assouad/PropStickyDefinition2_12.lean",
+      "sha256": "5bf1bae61522ab982e7d577f9e4ca787c881a2fdf66975ee91665c1dcefb65e7",
+      "lines": 716,
+      "coverage": "563–622 normalization data, affine map and outerJohn_image local proof; remaining file not audited this turn"
+    }
+  ],
+  "sourced_facts": [
+    "The normalization is an affine EQUIVALENCE from the outer John ellipsoid to the closed unit ball, defined using the inverse outerJohnEllipsoidMap; not an arbitrary map or unspecified determinant.",
+    "For every convex normalized test K, the source pulls it back with the inverse equivalence and intersects with the A-dilated parent. Full fiber containment makes the contained-index sets exactly equal, preserving counts rather than only an inequality.",
+    "Equal positive finite delta-tube volume V yields mass=card*V and containedMass=count*V; cancellation at354 explicitly establishes0<V<infinity first. The proof does not cancel family cardinality or require a nonempty family.",
+    "The inverse determinant is bounded by27*volume(parent) using the imported outer-John volume theorem and the locally proved unit-ball volume>=1. A>=1 supplies volume(parent)<=volume(A-carrier).",
+    "The test-set preimage/intersection volume is <=27*volume(A-carrier)*volume(K); multiplying the supplied Frostman inequality then cancels the positive finite A-carrier volume at428. This yields constant27*C, including arbitrary ENNReal C; no extra finiteness of C or test-set volume assumed.",
+    "The BodyCWA wrapper specializes A=1 and full-family identity embedding. Its ordinary count constant is multiplied by parent volume before conversion: resulting constant27*(constant*volume(parent)). The volume factor is retained, not erased.",
+    "CoaxialJohnTransfer.lean is empty at the selected pin; its filename is not evidence of a proved transfer. The actual conversion audited is the theorem in FrostmanConvexWolff.lean."
+  ],
+  "graph_supported_inference": "Together with1269, the interface pays both representative-volume overhead and the genuine John factor while preserving full-carrier containment and exact source indices. It is not the previously rejected generic global-volume transport shortcut.",
+  "new_hypothesis": "Any proposed cross-development scale contract must distinguish parent-volume normalization of an ordinary count bound from the scale-normalized Frostman constant. A supposed cancellation that lacks an inverse-determinant bound is insufficient.",
+  "hypothesis_elimination": "This source route supplies the local John-conversion estimate conditionally on the explicit Frostman bound and fiber containment. It does not eliminate the geometric estimate needed to produce that input, nor certify the entire Kakeya result.",
+  "falsifier_or_abandonment": "Reject an adapter that claims output27*C from an ordinary count constantC without retaining parent volume, or uses only axis containment to identify the full contained indices. Reject reliance on the empty CoaxialJohnTransfer file as a theorem.",
+  "limits": [
+    "Imported outer-John existence/27-volume theorem, affine volume-image theorem, tube-volume positivity/equality/finiteness and transitive axioms are not fully audited or kernel-replayed here.",
+    "No new manuscript, independent review, numerical grade, graph confidence upgrade, or novelty claim.",
+    "Search at the moving upstream defaultf9d15... was used solely as a locator; all mathematical excerpts/hashes were re-fetched at42f739...."
+  ],
+  "next": "Integrate angular/full-carrier guard1268, representative volume1269 and actual John interface1270 as one evidence batch in existing Kakeya candidate. Run repository gates, open a normal PR, then exact-head checks/merge/remote verification. Further source reading only for unresolved transitive dependencies, not as a substitute for integrating this batch."
+}

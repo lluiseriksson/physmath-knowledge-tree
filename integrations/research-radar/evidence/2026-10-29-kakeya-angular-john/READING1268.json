@@ -1,0 +1,51 @@
+{
+  "utc": "2026-10-29T13:11:32.495Z",
+  "confidence": "literature for selected local source arguments; heuristic for own hypothesis-deletion control, no kernel replay",
+  "sources": [
+    {
+      "repository": "M32026/3d-sticky-kakeya",
+      "commit": "42f739b484fd055e0aa29601c35677ad996f2ef2",
+      "path": "MyLeanRepo/Kakeya/Assouad/PureWZ2/GWZConversion/DirectionConstraint.lean",
+      "url": "https://raw.githubusercontent.com/M32026/3d-sticky-kakeya/42f739b484fd055e0aa29601c35677ad996f2ef2/MyLeanRepo/Kakeya/Assouad/PureWZ2/GWZConversion/DirectionConstraint.lean",
+      "sha256": "ba7500c46d385c4db20aa586280c90e733b6735ebcf560243ebf01b3a457dbf6",
+      "bytes": 15092,
+      "reading": "Complete local helpers44-156, point-transverse bound162-242 and direction constraint249-322 read; standard imported definitions not kernel-replayed"
+    },
+    {
+      "repository": "M32026/3d-sticky-kakeya",
+      "commit": "42f739b484fd055e0aa29601c35677ad996f2ef2",
+      "path": "MyLeanRepo/Kakeya/Assouad/PureWZ2/GWZConversion/CompleteFiberOverlap.lean",
+      "url": "https://raw.githubusercontent.com/M32026/3d-sticky-kakeya/42f739b484fd055e0aa29601c35677ad996f2ef2/MyLeanRepo/Kakeya/Assouad/PureWZ2/GWZConversion/CompleteFiberOverlap.lean",
+      "sha256": "1b9c9df072fe384f1d4b28a18a9b0908b184b9b3767102e26a03d1547541093c",
+      "bytes": 20497,
+      "reading": "Projection contraction30-49, complete projective-parent-direction proof51-139 and explicit parent reversal141-229 read. Distinctness/overlap arguments230-596 not audited."
+    }
+  ],
+  "locator_only": [
+    {
+      "path": "MyLeanRepo/Kakeya/Assouad/PureWZ2/GWZBridge.lean",
+      "url": "https://raw.githubusercontent.com/M32026/3d-sticky-kakeya/42f739b484fd055e0aa29601c35677ad996f2ef2/MyLeanRepo/Kakeya/Assouad/PureWZ2/GWZBridge.lean",
+      "sha256": "b48f8bc87ba9851fa3d359e24d900302a215c21dcc50b5c41b2e725fbdf8e087",
+      "status": "Fetched/searched as a locator; no full proof-reading claim"
+    }
+  ],
+  "sourced_fact": "The sharp source direction bound is2*(A*rho-delta), derived from FULL source-carrier containment in the centered A-dilated parent. It does not follow from source-axis-only containment. CompleteFiberOverlap derives the reversed projective perpendicular bound by equality of squared perpendicular norms and unit directions; sufficiently smallA*rho implies absolute inner product>=1/2.",
+  "mechanism": "Each parent A-carrier point is within transverse distance A*rho of its supporting line. At a source-axis point with nonzero transverse component, push outward by delta in its normalized transverse direction. This pushed point belongs to the full source carrier, hence its transverse norm r+delta<=A*rho. The r=0 branch uses delta<=A*rho directly. Apply the point estimate to both source endpoints and subtract their projected components to obtain the direction constraint.",
+  "orientation": "The projective bound gives absolute inner product, not a positive oriented dot product. Source explicitly reverses the parent when that dot product is negative; its carrier and midpoint are preserved, the dot product becomes its absolute value, and the transverse norm is unchanged. No free identification of u and v in oriented norm is used.",
+  "hypotheses_retained": [
+    "positive delta,rho",
+    "A>=1",
+    "delta<=A*rho",
+    "full thickened source-carrier containment",
+    "unit source and parent directions",
+    "rho<=1/(200A) for the additional lower bound on absolute inner product",
+    "normalized transverse push only after r>0; r=0 handled separately"
+  ],
+  "own_exact_falsifier": "AXIS-BOUNDARY1268.json and pure standard-library script refute only the axis-only weakening of the sharp2*(A*rho-delta) bound: A=1,delta=rho=1/200,u=(159999/160001,800/160001,0),parent direction(1,0,0), centered unit segments. Whole source AXIS lies in the parent carrier, yet transverse direction is positive while the proposed sharp RHS is0. An explicit source-carrier point lies outside the parent carrier, so the original full-containment hypothesis fails, as it must.",
+  "control_scope": "Exact rational norm/projection/inequalities with an analytic all-axis-parameter argument; not sampling, a new source counterexample, refutation of final8A*rho containment, novelty claim or formal proof. No assessment score.",
+  "graph_supported_inference": "The delta subtraction is paid for by full tube thickness. Dropping thickening while retaining this sharp budget is invalid. Source orientation and reanchoring are explicit geometric operations with distinct preservation properties.",
+  "limits": "No main Kakeya certification, upstream build or computed axiom closure; remaining complete-fiber overlap/distinctness, parent preparation and John volume interface still require bounded audits. No new manuscript or independent model review.",
+  "formal_result": "No new Lean theorem or promotion to formal. These are local argument checks of attributed pinned source and a separate own rational boundary control.",
+  "next": "First close PR185 exact-head CI/normal merge, then verify all10 merged files and main CI/Pages. Use normal connected GitHub reads while public REST quota is exhausted; do not retry the exhausted public API. Next audit parent preparation and John volume/rescaling interface; batch1268 with later substantive geometry reading, no standalone minor paper or grade.",
+  "source_bodies_redistributed": false
+}
