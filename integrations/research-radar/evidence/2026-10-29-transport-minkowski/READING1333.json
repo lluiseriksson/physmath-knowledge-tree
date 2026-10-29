@@ -1,0 +1,28 @@
+{
+  "source_id": "barvinok-contingency-brunn-minkowski-2006",
+  "reading_scope": "Selected arXivv1 and author PDFpage5 visually inspected; no full-proof audit or journal-PDF inspection",
+  "arxiv": {
+    "version": "math/0603655v1",
+    "first_preprint": "2006-03-28T14:53:16Z",
+    "url": "https://arxiv.org/pdf/math/0603655v1",
+    "pdf_sha256": "285a937102122b010df96652d42ebc773b298be8de99e75b2c0106d0a9b0d1e6",
+    "bytes": 175501,
+    "page": 5
+  },
+  "author": {
+    "url": "https://sites.lsa.umich.edu/barvinok/wp-content/uploads/sites/1434/2025/05/brunn.pdf",
+    "title_date": "April2006",
+    "pdf_sha256": "1416dd9fb20c04336e5dd87489a3b7403d206a22ce338ad7224dd81e087b29e9",
+    "page": 5
+  },
+  "claim_boundary": "Strict inclusion witness refutes only the displayed unconditional geometric equality; approximate counting bound verified on this case, no main-proof audit or Jensen counterexample.",
+  "layers": {
+    "literature": "Selected source statements and source-version discrepancy guard",
+    "heuristic": "A proof transfer assuming every central table decomposes is rejected by this exact fixed witness",
+    "speculative": "General higher-dimensional Jensen unresolved",
+    "formal": "No Lean proof or formal confidence promotion"
+  },
+  "review_context": "Current Codex assistant in shared ongoing research context; no separate model reviewer, manuscript grade, independently attested model identity/settings or independence. AI-assisted contextual checking, not human peer review or editorial action.",
+  "redistribution": "Own witness, checker and metadata only; foreign PDFs, page images and extracted text are retained privately and excluded from this public packet.",
+  "reproducibility_scope": "Bounded exact fixture, not Research Capsule-certified campaign"
+}
