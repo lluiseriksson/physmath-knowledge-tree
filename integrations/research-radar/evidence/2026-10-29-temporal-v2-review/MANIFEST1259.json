@@ -1,0 +1,78 @@
+{
+  "utc": "2026-10-29T13:02:15.77789+01:00",
+  "original_files": [
+    {
+      "file": "REVIEW1242.txt",
+      "original_sha256": "06cc6d3e260cf346b3fe1e3148a2adb4bcbd7a022bf43c8eefb659646f97fcc7",
+      "LF_reading_view_sha256": "06cc6d3e260cf346b3fe1e3148a2adb4bcbd7a022bf43c8eefb659646f97fcc7"
+    },
+    {
+      "file": "verdict1242.json",
+      "original_sha256": "e3b704a3c3f3ca8e3bdbab924634fa79cb63d247fda1aa58efcacb0b0f67214f",
+      "LF_reading_view_sha256": "5f9a1ed2c89ccade2bcca7a1dfebf924d8f9aa28868aac30488b3a1497d67413"
+    },
+    {
+      "file": "integrity_final1242.json",
+      "original_sha256": "5904c93f050d45d74132c4687f3b9c766ae15dc3a664ae6da24ddba960dce64a",
+      "LF_reading_view_sha256": "6a7a5586c8a482c9dfc27ec57119e8675ea7a5f08d1aa564bc3f33edaef8c425"
+    },
+    {
+      "file": "ADJUDICATION1249.md",
+      "original_sha256": "c868060a2c2a5b7d36b177cd74ebbb3ce3677d2ca78aeb53b202cea2aa82f334",
+      "LF_reading_view_sha256": "c868060a2c2a5b7d36b177cd74ebbb3ce3677d2ca78aeb53b202cea2aa82f334"
+    }
+  ],
+  "original_zip_sha256": "42e530f2d2f276fe0b5f789316640d8c4dd119c7f8a059b81271f1aac7cb4cf6",
+  "reading_views": "CRLF normalized to LF only; exact originals remain in ZIP",
+  "files": [
+    {
+      "file": "ADJUDICATION1249.md",
+      "sha256": "c868060a2c2a5b7d36b177cd74ebbb3ce3677d2ca78aeb53b202cea2aa82f334"
+    },
+    {
+      "file": "DEPENDENCIES1259.json",
+      "sha256": "58df2f7ed0f8c881f69560448a42e1dca0ab7eab9673fc27f372b45c6a2c713c"
+    },
+    {
+      "file": "integrity_final1242.json",
+      "sha256": "6a7a5586c8a482c9dfc27ec57119e8675ea7a5f08d1aa564bc3f33edaef8c425"
+    },
+    {
+      "file": "original-full-review1242.zip",
+      "sha256": "42e530f2d2f276fe0b5f789316640d8c4dd119c7f8a059b81271f1aac7cb4cf6"
+    },
+    {
+      "file": "PUBLICATION1259.json",
+      "sha256": "d28b3fe3709c85e1673a1d8cbf859c8a59fc9c351797ae9e3614e32d19e33db9"
+    },
+    {
+      "file": "RECONCILIATION1259.json",
+      "sha256": "07bc6082338e7c27f0f69f342a0292cd199ad743921e01405c1efac049bfb005"
+    },
+    {
+      "file": "REVIEW1242.txt",
+      "sha256": "06cc6d3e260cf346b3fe1e3148a2adb4bcbd7a022bf43c8eefb659646f97fcc7"
+    },
+    {
+      "file": "SOURCES1259.json",
+      "sha256": "4176d416489ef2f40a370eda06245f9b49d4636eee5376aab2d6fd9c57fa55cd"
+    },
+    {
+      "file": "SUBGRAPH1259.json",
+      "sha256": "2291a09613658a91fb2350b62eddc7219c7cbcb261a31de1930af9fa64602117"
+    },
+    {
+      "file": "SYNTHESIS1259.md",
+      "sha256": "cab9d3f2b88af8fa69d317f3799c741bd47fbc48c299a824d76932a7c5af0dbd"
+    },
+    {
+      "file": "verdict1242.json",
+      "sha256": "5f9a1ed2c89ccade2bcca7a1dfebf924d8f9aa28868aac30488b3a1497d67413"
+    }
+  ],
+  "source_cards": 78,
+  "candidates": 17,
+  "canonical_graph_changed": false,
+  "foreign_fulltext_redistributed": false,
+  "new_assessment": false
+}
