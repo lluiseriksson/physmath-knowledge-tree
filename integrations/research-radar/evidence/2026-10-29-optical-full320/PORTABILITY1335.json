@@ -1,0 +1,17 @@
+{
+  "archive_byte_identical": true,
+  "archive_sha256": "ab729762abdbc770b34b5ee98ba8b92cdaa8ce6ff999fcbc9b0194b1a00a6c93",
+  "failures_reading_rendition": {
+    "native_sha256": "ea5b17290195027f5bdff2718bb5b083daf0a283677fbcd00080321b3467163a",
+    "public_sha256": "d29ddf11a4c6a57b958a006f9bfdcde01648484fd1430dfdf796feca1f07f7d9",
+    "change": "Append missing final LF only; JSON values unchanged, native retained in private1334archive"
+  },
+  "numeric_rerun": false,
+  "verification": "Fresh extraction checked original capsule/dossier/run fingerprints and all19actual artifacts,0missing",
+  "direct_four_json_copies_byte_identical": true,
+  "markdown_reading_projection": {
+    "native_sha256": "9b507e9ff745fe98976dfa54752c410fe0890c6dcc1549fad56d76606a5aa473",
+    "public_sha256": "868f745d59fff71b53dd932e34bfb9dace2b11a2b80ab85a81f26259b7d02490",
+    "change": "Remove extra blank line at EOF only to satisfy Git whitespace gate; original bytes remain in unchangedZIP; JSON fingerprints unaffected"
+  }
+}

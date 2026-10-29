@@ -1,0 +1,675 @@
+{
+  "application": "PhysMath Knowledge Tree",
+  "schema_version": 1,
+  "kind": "reproducible-research-capsule",
+  "generated_at": "2026-10-29T21:42:29.989Z",
+  "title": "Full320 optical residual: run metadata with explicit proof and context limits",
+  "dossier": {
+    "application": "PhysMath Knowledge Tree",
+    "schema_version": 1,
+    "kind": "integrated-research-dossier",
+    "generated_at": "2026-10-29T21:42:29.911Z",
+    "graph": {
+      "name": "PhysMath Knowledge Tree",
+      "schema_version": "0.6.0",
+      "application_version": "2.6.0",
+      "updated": "2026-09-09"
+    },
+    "workspace": {
+      "id": "workspace.optical-full1334",
+      "title": "Bound the optical weighted residual on the full fixed320-segment plan",
+      "node_ids": [
+        "domain.quantum_information_theory"
+      ],
+      "notes": "Mechanism: load the frozen801 mathematical engine and795 function region from hash-verified buffers, cover all320 intervals at256bits with8individually bound workers, reparse every returned ball and retain tails and scalar conditional transfer798. Falsifier: one nonfinite/bound>=1e-6 segment, coverage gap, altered input/worker, changed candidate or failed scalar check stops the run. This is trusted numerical reproduction metadata, not a model review, formal theorem, new paper or practical threshold.",
+      "bridge_cards": [],
+      "negative_results": [
+        {
+          "id": "negative.portability795",
+          "title": "Nearby frozen copies do not bind live external imports",
+          "status": "observed",
+          "node_ids": [
+            "domain.quantum_information_theory"
+          ],
+          "observation": "Review798 O2/O3 identified live-path imports and absent worker load fingerprints; selected801 corrected only four intervals. Old records remain unaltered.",
+          "challenged_mechanism": "Inferring a full bound solely from frozen files stored near an unbound script",
+          "next_test": "Verify every1334 worker actually compiles the hashed mathematical buffers and recheck unchanged inputs after all320segments.",
+          "created_at": "2026-10-29T21:38:09.203Z",
+          "updated_at": "2026-10-29T21:38:09.203Z"
+        }
+      ],
+      "created_at": "2026-10-29T21:38:09.203Z",
+      "updated_at": "2026-10-29T21:38:09.203Z"
+    },
+    "scope": {
+      "node_count": 1,
+      "edge_count": 0,
+      "nodes": [
+        {
+          "id": "domain.quantum_information_theory",
+          "kind": "domain",
+          "title": "Quantum information theory",
+          "summary": "Studies quantum states, channels, entropies, correlations, recovery, error correction and operational constraints such as no-signalling, with explicit attention to uniform channels and preservation of reference-system entanglement.",
+          "confidence": "literature",
+          "tags": [
+            "quantum-information",
+            "channels",
+            "entropy",
+            "recovery"
+          ],
+          "lean": {
+            "imports": [
+              "Mathlib"
+            ],
+            "declarations": [],
+            "targets": [
+              "Formalize finite matrix channels, Kraus completeness and a no-signalling calculation.",
+              "Represent the quantifier distinction between one uniform recovery map and state-dependent recovery maps."
+            ]
+          },
+          "questions": [
+            "Which finite recovery statements transfer to operator-algebraic or split AQFT settings without assuming a tensor factorization?"
+          ],
+          "references": [
+            {
+              "label": "M. A. Nielsen and I. L. Chuang — Quantum Computation and Quantum Information",
+              "url": "https://www.cambridge.org/highereducation/books/quantum-computation-and-quantum-information/01E10196D0A682A6AEFFEA52D53BE9AE",
+              "type": "book",
+              "scope": "claim"
+            },
+            {
+              "label": "O. Fawzi and R. Renner — Quantum conditional mutual information and approximate Markov chains",
+              "url": "https://arxiv.org/abs/1410.0664",
+              "type": "paper",
+              "scope": "claim"
+            },
+            {
+              "label": "Depth-1 expanders on the unitary group and applications (v1, reviewed 2026-09-09; context only)",
+              "url": "https://arxiv.org/abs/2609.01605v1",
+              "type": "paper",
+              "scope": "context"
+            },
+            {
+              "label": "Quantum speed limits based on quantifiers of quantum-state texture (v1, reviewed 2026-09-09; context only)",
+              "url": "https://arxiv.org/abs/2609.08752v1",
+              "type": "paper",
+              "scope": "context"
+            }
+          ]
+        }
+      ],
+      "edges": []
+    },
+    "evidence": {
+      "reference_count": 4,
+      "claim_reference_count": 2,
+      "reviewed": 2,
+      "by_status": {
+        "unreviewed": 2,
+        "verified": 2,
+        "needs-follow-up": 0,
+        "superseded": 0
+      },
+      "references": [
+        {
+          "reference": {
+            "url": "https://arxiv.org/abs/2609.01605v1",
+            "label": "Depth-1 expanders on the unitary group and applications (v1, reviewed 2026-09-09; context only)",
+            "type": "paper",
+            "scopes": [
+              "context"
+            ],
+            "used_by": [
+              "node:domain.quantum_information_theory"
+            ]
+          },
+          "relevant_usages": [
+            "node:domain.quantum_information_theory"
+          ],
+          "review": {
+            "url": "https://arxiv.org/abs/2609.01605v1",
+            "status": "unreviewed",
+            "source_class": "unknown",
+            "identifier": null,
+            "checked_at": null,
+            "notes": "",
+            "updated_at": null
+          }
+        },
+        {
+          "reference": {
+            "url": "https://www.cambridge.org/highereducation/books/quantum-computation-and-quantum-information/01E10196D0A682A6AEFFEA52D53BE9AE",
+            "label": "M. A. Nielsen and I. L. Chuang — Quantum Computation and Quantum Information",
+            "type": "book",
+            "scopes": [
+              "claim"
+            ],
+            "used_by": [
+              "edge:edge.qinfo.no_signalling",
+              "node:bridge.local_operations_no_signalling",
+              "node:domain.quantum_information_theory"
+            ]
+          },
+          "relevant_usages": [
+            "node:domain.quantum_information_theory"
+          ],
+          "review": {
+            "url": "https://www.cambridge.org/highereducation/books/quantum-computation-and-quantum-information/01E10196D0A682A6AEFFEA52D53BE9AE",
+            "status": "verified",
+            "source_class": "secondary",
+            "identifier": {
+              "kind": "doi",
+              "value": "10.1017/CBO9780511976667"
+            },
+            "checked_at": "2026-10-29T21:42:29.441Z",
+            "notes": "Verified publisher bibliographic identity and description fit as a broad quantum-information textbook for the generic canonical node, not its full contents/proofs.10thAnniversary edition, publisher distinguishes2010 heading,2011hardback and2012digital formats. No login, purchase or full-book access. Not evidence for the optical numerical bound.",
+            "updated_at": "2026-10-29T21:42:29.441Z"
+          }
+        },
+        {
+          "reference": {
+            "url": "https://arxiv.org/abs/1410.0664",
+            "label": "O. Fawzi and R. Renner — Quantum conditional mutual information and approximate Markov chains",
+            "type": "paper",
+            "scopes": [
+              "claim",
+              "context"
+            ],
+            "used_by": [
+              "edge:edge.aqft.cmi_recovery",
+              "edge:edge.qinfo.cmi_recovery",
+              "node:bridge.conditional_mutual_information_recovery",
+              "node:domain.quantum_information_theory"
+            ]
+          },
+          "relevant_usages": [
+            "node:domain.quantum_information_theory"
+          ],
+          "review": {
+            "url": "https://arxiv.org/abs/1410.0664",
+            "status": "verified",
+            "source_class": "primary",
+            "identifier": {
+              "kind": "arxiv",
+              "value": "1410.0664v3"
+            },
+            "checked_at": "2026-10-29T21:42:29.441Z",
+            "notes": "Verified bibliographic identity and abstract fit for the generic canonical node description of quantum CMI/recovery. Abstract only read; first2014-10-02, currentv3 2015-01-21, v3 correction toCorollaryD.3 retained. Not a proof audit and NOT a dependency proving the optical residual or gap. Numerical/analytic obligations remain798/O4.",
+            "updated_at": "2026-10-29T21:42:29.441Z"
+          }
+        },
+        {
+          "reference": {
+            "url": "https://arxiv.org/abs/2609.08752v1",
+            "label": "Quantum speed limits based on quantifiers of quantum-state texture (v1, reviewed 2026-09-09; context only)",
+            "type": "paper",
+            "scopes": [
+              "context"
+            ],
+            "used_by": [
+              "node:domain.quantum_information_theory"
+            ]
+          },
+          "relevant_usages": [
+            "node:domain.quantum_information_theory"
+          ],
+          "review": {
+            "url": "https://arxiv.org/abs/2609.08752v1",
+            "status": "unreviewed",
+            "source_class": "unknown",
+            "identifier": null,
+            "checked_at": null,
+            "notes": "",
+            "updated_at": null
+          }
+        }
+      ]
+    },
+    "lean": {
+      "item_count": 3,
+      "probe_item_count": 1,
+      "reviewed": 1,
+      "by_status": {
+        "unreviewed": 2,
+        "verified": 1,
+        "missing": 0,
+        "renamed": 0,
+        "blocked": 0
+      },
+      "items": [
+        {
+          "id": "[\"domain.quantum_information_theory\",\"import\",\"Mathlib\"]",
+          "node_id": "domain.quantum_information_theory",
+          "node_title": "Quantum information theory",
+          "node_kind": "domain",
+          "node_confidence": "literature",
+          "item_type": "import",
+          "value": "Mathlib",
+          "probe_safe": true,
+          "reuse_count": 22,
+          "node_imports": [
+            "Mathlib"
+          ],
+          "node_declarations": [],
+          "audit": {
+            "item_id": "[\"domain.quantum_information_theory\",\"import\",\"Mathlib\"]",
+            "status": "verified",
+            "checked_at": "2026-10-29T21:38:09.203Z",
+            "toolchain": "v4.31.0",
+            "replacement": "",
+            "notes": "Import name exists under the pinnedmathlib manifest and previous exact57ca89e mainCI succeeded; this is name/build validity, not formalization of the optical certificate.",
+            "updated_at": "2026-10-29T21:38:09.203Z"
+          }
+        },
+        {
+          "id": "[\"domain.quantum_information_theory\",\"target\",\"Formalize finite matrix channels, Kraus completeness and a no-signalling calculation.\"]",
+          "node_id": "domain.quantum_information_theory",
+          "node_title": "Quantum information theory",
+          "node_kind": "domain",
+          "node_confidence": "literature",
+          "item_type": "target",
+          "value": "Formalize finite matrix channels, Kraus completeness and a no-signalling calculation.",
+          "probe_safe": false,
+          "reuse_count": 1,
+          "node_imports": [
+            "Mathlib"
+          ],
+          "node_declarations": [],
+          "audit": {
+            "item_id": "[\"domain.quantum_information_theory\",\"target\",\"Formalize finite matrix channels, Kraus completeness and a no-signalling calculation.\"]",
+            "status": "unreviewed",
+            "checked_at": null,
+            "toolchain": "",
+            "replacement": "",
+            "notes": "",
+            "updated_at": null
+          }
+        },
+        {
+          "id": "[\"domain.quantum_information_theory\",\"target\",\"Represent the quantifier distinction between one uniform recovery map and state-dependent recovery maps.\"]",
+          "node_id": "domain.quantum_information_theory",
+          "node_title": "Quantum information theory",
+          "node_kind": "domain",
+          "node_confidence": "literature",
+          "item_type": "target",
+          "value": "Represent the quantifier distinction between one uniform recovery map and state-dependent recovery maps.",
+          "probe_safe": false,
+          "reuse_count": 1,
+          "node_imports": [
+            "Mathlib"
+          ],
+          "node_declarations": [],
+          "audit": {
+            "item_id": "[\"domain.quantum_information_theory\",\"target\",\"Represent the quantifier distinction between one uniform recovery map and state-dependent recovery maps.\"]",
+            "status": "unreviewed",
+            "checked_at": null,
+            "toolchain": "",
+            "replacement": "",
+            "notes": "",
+            "updated_at": null
+          }
+        }
+      ]
+    },
+    "changes": {
+      "available": false,
+      "baseline_fingerprint": null,
+      "current_fingerprint": null,
+      "change_count": 0,
+      "governed_change_count": 0,
+      "by_status": {
+        "pending": 0,
+        "accepted": 0,
+        "needs-work": 0,
+        "rejected": 0
+      },
+      "items": []
+    },
+    "readiness": {
+      "overall": "ready",
+      "gates": [
+        {
+          "id": "scope",
+          "state": "ready",
+          "label": "Scope",
+          "detail": "1 canonical nodes selected.",
+          "completed": 1,
+          "total": 1
+        },
+        {
+          "id": "mechanism",
+          "state": "ready",
+          "label": "Mechanism",
+          "detail": "Working notes or a bridge-card draft document the intended mechanism.",
+          "completed": 1,
+          "total": 1
+        },
+        {
+          "id": "falsifiability",
+          "state": "ready",
+          "label": "Falsifiability",
+          "detail": "A falsifier or next discriminating test is recorded.",
+          "completed": 1,
+          "total": 1
+        },
+        {
+          "id": "evidence",
+          "state": "ready",
+          "label": "Evidence",
+          "detail": "Every source-bearing reference in scope is locally verified.",
+          "completed": 2,
+          "total": 2
+        },
+        {
+          "id": "lean",
+          "state": "ready",
+          "label": "Lean names",
+          "detail": "Every import/declaration candidate has a verified or replacement name.",
+          "completed": 1,
+          "total": 1
+        },
+        {
+          "id": "changes",
+          "state": "not-applicable",
+          "label": "Canonical changes",
+          "detail": "No local canonical-change baseline is available.",
+          "completed": 0,
+          "total": 0
+        }
+      ],
+      "action_count": 1,
+      "actions": [
+        {
+          "kind": "experiment",
+          "severity": "info",
+          "title": "Nearby frozen copies do not bind live external imports",
+          "target": "negative.portability795",
+          "detail": "Verify every1334 worker actually compiles the hashed mathematical buffers and recheck unchanged inputs after all320segments."
+        }
+      ]
+    },
+    "content_fingerprint": "12e9d627a33ac5e859f1ddc3259f937f4981fcf390787c1064560b32504d539d"
+  },
+  "execution": {
+    "relevant_run_count": 1,
+    "selected_run_count": 1,
+    "scope_node_count": 1,
+    "covered_node_count": 1,
+    "status_counts": {
+      "planned": 0,
+      "running": 0,
+      "passed": 1,
+      "failed": 0,
+      "inconclusive": 0,
+      "cancelled": 0
+    },
+    "fingerprint_verified": 1,
+    "artifact_complete": 1,
+    "passed": 1,
+    "unresolved": 0,
+    "runs": [
+      {
+        "run": {
+          "id": "run.optical-full1334",
+          "title": "Manifest-bound full320 optical residual certificate",
+          "kind": "python",
+          "status": "passed",
+          "node_ids": [
+            "domain.quantum_information_theory"
+          ],
+          "command": [
+            "C:/Python312/python.exe",
+            "C:/Trabajo/physmath-knowledge-tree/weyl-stability-20261024/.run-ledger/optical1334/full1334.py",
+            "--manifest-sha256",
+            "7330dee63da9a4c9beba63764ab0a8f2638667c94c5a72964b09ce867d03b0e3"
+          ],
+          "cwd": "",
+          "environment": {},
+          "provenance": {
+            "git_commit": "a6fc88e0e275af702ad15ec949834fd5a6a203d1",
+            "package_version": "2.6.0",
+            "toolchain": "leanprover/lean4:v4.31.0",
+            "platform": "win32",
+            "arch": "x64",
+            "node_version": "v24.22.1"
+          },
+          "started_at": "2026-10-29T21:36:01.297Z",
+          "completed_at": "2026-10-29T21:39:59.737Z",
+          "duration_ms": 238440,
+          "exit_code": 0,
+          "signal": "",
+          "timed_out": false,
+          "artifacts": [
+            {
+              "role": "input",
+              "path": ".run-ledger/optical1334/INPUT1334.json",
+              "sha256": "7330dee63da9a4c9beba63764ab0a8f2638667c94c5a72964b09ce867d03b0e3",
+              "bytes": 710,
+              "media_type": ""
+            },
+            {
+              "role": "input",
+              "path": ".run-ledger/optical1334/inputs/CERTIFICATE779.json",
+              "sha256": "9b7374901ac3ec6a2d4870d3dcaaab8e07c61a718ef9fe8be287e3f8d209362b",
+              "bytes": 3771,
+              "media_type": ""
+            },
+            {
+              "role": "input",
+              "path": ".run-ledger/optical1334/inputs/FIT794.json",
+              "sha256": "0c8d051bc55023c42fa1165a49defb129dddbbb4f98cf9f1a978c3cce34ad538",
+              "bytes": 174000,
+              "media_type": ""
+            },
+            {
+              "role": "input",
+              "path": ".run-ledger/optical1334/inputs/interval778.py",
+              "sha256": "4fa44ba0a03659707abc68a9ec0391c7375967aec7b69d0ebae533d1e38235d2",
+              "bytes": 1587,
+              "media_type": ""
+            },
+            {
+              "role": "input",
+              "path": ".run-ledger/optical1334/inputs/SOURCE795.py",
+              "sha256": "198b175753f4a91c20311e0360385c0b00dc2ee1a182ab79af89bc541ed4b073",
+              "bytes": 4116,
+              "media_type": ""
+            },
+            {
+              "role": "input",
+              "path": ".run-ledger/optical1334/PLAN1334.json",
+              "sha256": "dc0f4b7fa030269c4895a1bf6458dcc61fca77b10f63a4fda5ecc40fcddf87ff",
+              "bytes": 37281,
+              "media_type": ""
+            },
+            {
+              "role": "input",
+              "path": ".run-ledger/optical1334/full1334.py",
+              "sha256": "3ee0bc5a10f4569b0a00bd1a735072537e02ddd3b7c2d84bd3597d97f5302c86",
+              "bytes": 8814,
+              "media_type": ""
+            },
+            {
+              "role": "output",
+              "path": ".run-ledger/optical1334/FULL1334.json",
+              "sha256": "f9038c7677c376b618845c11bea545710682cefe5f591d9358d48d26b2d0008b",
+              "bytes": 148543,
+              "media_type": ""
+            },
+            {
+              "role": "output",
+              "path": ".run-ledger/optical1334/outputs/GUARD1334.json",
+              "sha256": "dac567f77a172f1d77679ea269864818cd7e5bc0eb1d62e22f6bb5a811845d29",
+              "bytes": 230,
+              "media_type": ""
+            },
+            {
+              "role": "output",
+              "path": ".run-ledger/optical1334/outputs/worker0/RUN1334.json",
+              "sha256": "45c8cd657c6e431c26d8e5ba34649f36e6d452f407caac7f1611053a661da647",
+              "bytes": 20453,
+              "media_type": ""
+            },
+            {
+              "role": "output",
+              "path": ".run-ledger/optical1334/outputs/worker1/RUN1334.json",
+              "sha256": "c16c904fd932b1c83c7e87f3e18a92dbf80ef5a40410fa7aa4674f059e5d2c1b",
+              "bytes": 20499,
+              "media_type": ""
+            },
+            {
+              "role": "output",
+              "path": ".run-ledger/optical1334/outputs/worker2/RUN1334.json",
+              "sha256": "306d5a1f1cee6e1b5fdb50cdf29b1195e055db64530d3916a66f4495d8d77533",
+              "bytes": 20455,
+              "media_type": ""
+            },
+            {
+              "role": "output",
+              "path": ".run-ledger/optical1334/outputs/worker3/RUN1334.json",
+              "sha256": "d68aa9d90bbb5bf8cfd12c3e71286e35a474c0cf7d731df2c176598b19f45402",
+              "bytes": 20504,
+              "media_type": ""
+            },
+            {
+              "role": "output",
+              "path": ".run-ledger/optical1334/outputs/worker4/RUN1334.json",
+              "sha256": "69e5e2a72c4762d6fd93d9de74751fcf24c874caf1035216d497c213750dd722",
+              "bytes": 20457,
+              "media_type": ""
+            },
+            {
+              "role": "output",
+              "path": ".run-ledger/optical1334/outputs/worker5/RUN1334.json",
+              "sha256": "4f1f08faeb030af324dfe1a6da4c0c3a29fd17dff9f0516e3b62f733fc35fe92",
+              "bytes": 20508,
+              "media_type": ""
+            },
+            {
+              "role": "output",
+              "path": ".run-ledger/optical1334/outputs/worker6/RUN1334.json",
+              "sha256": "ee2fc235ca91c269f490505d8f74caa9a7279be28af428c91cc2cb239f17e391",
+              "bytes": 20459,
+              "media_type": ""
+            },
+            {
+              "role": "output",
+              "path": ".run-ledger/optical1334/outputs/worker7/RUN1334.json",
+              "sha256": "ed5d03b7c8548c9aaa2031d5dc25ed5940c5c37bb40c84f91e629c6834278bdb",
+              "bytes": 20507,
+              "media_type": ""
+            },
+            {
+              "role": "log",
+              "path": ".run-ledger/optical1334/record-logs/stdout.log",
+              "sha256": "e391d94f7624533f5fc504d030c697110ed0ff7b14dcb0d6c08c4d42ca4858ac",
+              "bytes": 90,
+              "media_type": ""
+            },
+            {
+              "role": "log",
+              "path": ".run-ledger/optical1334/record-logs/stderr.log",
+              "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+              "bytes": 0,
+              "media_type": ""
+            }
+          ],
+          "notes": "Full320 fixed plan,8workers,256bits; no refit/search. O4 and prior798 obligations retained. Not a manuscript assessment or formal proof.",
+          "fingerprint": "81557c425f4937394080caacb9f4029494774f7c007631d9a85799760a110649",
+          "created_at": "2026-10-29T21:36:01.297Z",
+          "updated_at": "2026-10-29T21:39:59.737Z"
+        },
+        "scope_linked": true,
+        "relevant_node_ids": [
+          "domain.quantum_information_theory"
+        ],
+        "fingerprint_present": true,
+        "fingerprint_verified": true,
+        "artifact_complete": true
+      }
+    ]
+  },
+  "verification": {
+    "dossier_fingerprint": "12e9d627a33ac5e859f1ddc3259f937f4981fcf390787c1064560b32504d539d",
+    "selected_run_ids": [
+      "run.optical-full1334"
+    ],
+    "artifact_count": 19,
+    "artifact_variants": [],
+    "provenance": {
+      "git_commits": [
+        "a6fc88e0e275af702ad15ec949834fd5a6a203d1"
+      ],
+      "toolchains": [
+        "leanprover/lean4:v4.31.0"
+      ],
+      "platforms": [
+        "win32"
+      ]
+    }
+  },
+  "readiness": {
+    "overall": "ready",
+    "gates": [
+      {
+        "id": "dossier",
+        "state": "ready",
+        "label": "Dossier readiness",
+        "detail": "The source dossier reports ready.",
+        "completed": 1,
+        "total": 1
+      },
+      {
+        "id": "runs",
+        "state": "ready",
+        "label": "Run selection",
+        "detail": "1 selected runs are linked to the dossier scope.",
+        "completed": 1,
+        "total": 1
+      },
+      {
+        "id": "fingerprints",
+        "state": "ready",
+        "label": "Run fingerprints",
+        "detail": "Every selected run fingerprint verifies.",
+        "completed": 1,
+        "total": 1
+      },
+      {
+        "id": "artifacts",
+        "state": "ready",
+        "label": "Artifact integrity",
+        "detail": "Every terminal run has content-addressed artifacts.",
+        "completed": 1,
+        "total": 1
+      },
+      {
+        "id": "outcome",
+        "state": "ready",
+        "label": "Execution outcome",
+        "detail": "Every selected run passed.",
+        "completed": 1,
+        "total": 1
+      },
+      {
+        "id": "coverage",
+        "state": "ready",
+        "label": "Scope coverage",
+        "detail": "Every dossier node is linked to at least one selected run.",
+        "completed": 1,
+        "total": 1
+      },
+      {
+        "id": "provenance",
+        "state": "ready",
+        "label": "Execution provenance",
+        "detail": "Every selected run records a git commit and toolchain.",
+        "completed": 1,
+        "total": 1
+      }
+    ],
+    "action_count": 0,
+    "actions": []
+  },
+  "content_fingerprint": "b0e85e43608587f97c3228799ce22083f1edf124b3324bcd65365bb41dc0a066"
+}

@@ -1,0 +1,176 @@
+{
+  "application": "PhysMath Knowledge Tree",
+  "kind": "reproducible-research-run",
+  "schema_version": 1,
+  "generated_at": "2026-10-29T21:39:59.737Z",
+  "run": {
+    "id": "run.optical-full1334",
+    "title": "Manifest-bound full320 optical residual certificate",
+    "kind": "python",
+    "status": "passed",
+    "node_ids": [
+      "domain.quantum_information_theory"
+    ],
+    "command": [
+      "C:/Python312/python.exe",
+      "C:/Trabajo/physmath-knowledge-tree/weyl-stability-20261024/.run-ledger/optical1334/full1334.py",
+      "--manifest-sha256",
+      "7330dee63da9a4c9beba63764ab0a8f2638667c94c5a72964b09ce867d03b0e3"
+    ],
+    "cwd": "",
+    "environment": {},
+    "provenance": {
+      "git_commit": "a6fc88e0e275af702ad15ec949834fd5a6a203d1",
+      "package_version": "2.6.0",
+      "toolchain": "leanprover/lean4:v4.31.0",
+      "platform": "win32",
+      "arch": "x64",
+      "node_version": "v24.22.1"
+    },
+    "started_at": "2026-10-29T21:36:01.297Z",
+    "completed_at": "2026-10-29T21:39:59.737Z",
+    "duration_ms": 238440,
+    "exit_code": 0,
+    "signal": "",
+    "timed_out": false,
+    "artifacts": [
+      {
+        "role": "input",
+        "path": ".run-ledger/optical1334/INPUT1334.json",
+        "sha256": "7330dee63da9a4c9beba63764ab0a8f2638667c94c5a72964b09ce867d03b0e3",
+        "bytes": 710,
+        "media_type": ""
+      },
+      {
+        "role": "input",
+        "path": ".run-ledger/optical1334/inputs/CERTIFICATE779.json",
+        "sha256": "9b7374901ac3ec6a2d4870d3dcaaab8e07c61a718ef9fe8be287e3f8d209362b",
+        "bytes": 3771,
+        "media_type": ""
+      },
+      {
+        "role": "input",
+        "path": ".run-ledger/optical1334/inputs/FIT794.json",
+        "sha256": "0c8d051bc55023c42fa1165a49defb129dddbbb4f98cf9f1a978c3cce34ad538",
+        "bytes": 174000,
+        "media_type": ""
+      },
+      {
+        "role": "input",
+        "path": ".run-ledger/optical1334/inputs/interval778.py",
+        "sha256": "4fa44ba0a03659707abc68a9ec0391c7375967aec7b69d0ebae533d1e38235d2",
+        "bytes": 1587,
+        "media_type": ""
+      },
+      {
+        "role": "input",
+        "path": ".run-ledger/optical1334/inputs/SOURCE795.py",
+        "sha256": "198b175753f4a91c20311e0360385c0b00dc2ee1a182ab79af89bc541ed4b073",
+        "bytes": 4116,
+        "media_type": ""
+      },
+      {
+        "role": "input",
+        "path": ".run-ledger/optical1334/PLAN1334.json",
+        "sha256": "dc0f4b7fa030269c4895a1bf6458dcc61fca77b10f63a4fda5ecc40fcddf87ff",
+        "bytes": 37281,
+        "media_type": ""
+      },
+      {
+        "role": "input",
+        "path": ".run-ledger/optical1334/full1334.py",
+        "sha256": "3ee0bc5a10f4569b0a00bd1a735072537e02ddd3b7c2d84bd3597d97f5302c86",
+        "bytes": 8814,
+        "media_type": ""
+      },
+      {
+        "role": "output",
+        "path": ".run-ledger/optical1334/FULL1334.json",
+        "sha256": "f9038c7677c376b618845c11bea545710682cefe5f591d9358d48d26b2d0008b",
+        "bytes": 148543,
+        "media_type": ""
+      },
+      {
+        "role": "output",
+        "path": ".run-ledger/optical1334/outputs/GUARD1334.json",
+        "sha256": "dac567f77a172f1d77679ea269864818cd7e5bc0eb1d62e22f6bb5a811845d29",
+        "bytes": 230,
+        "media_type": ""
+      },
+      {
+        "role": "output",
+        "path": ".run-ledger/optical1334/outputs/worker0/RUN1334.json",
+        "sha256": "45c8cd657c6e431c26d8e5ba34649f36e6d452f407caac7f1611053a661da647",
+        "bytes": 20453,
+        "media_type": ""
+      },
+      {
+        "role": "output",
+        "path": ".run-ledger/optical1334/outputs/worker1/RUN1334.json",
+        "sha256": "c16c904fd932b1c83c7e87f3e18a92dbf80ef5a40410fa7aa4674f059e5d2c1b",
+        "bytes": 20499,
+        "media_type": ""
+      },
+      {
+        "role": "output",
+        "path": ".run-ledger/optical1334/outputs/worker2/RUN1334.json",
+        "sha256": "306d5a1f1cee6e1b5fdb50cdf29b1195e055db64530d3916a66f4495d8d77533",
+        "bytes": 20455,
+        "media_type": ""
+      },
+      {
+        "role": "output",
+        "path": ".run-ledger/optical1334/outputs/worker3/RUN1334.json",
+        "sha256": "d68aa9d90bbb5bf8cfd12c3e71286e35a474c0cf7d731df2c176598b19f45402",
+        "bytes": 20504,
+        "media_type": ""
+      },
+      {
+        "role": "output",
+        "path": ".run-ledger/optical1334/outputs/worker4/RUN1334.json",
+        "sha256": "69e5e2a72c4762d6fd93d9de74751fcf24c874caf1035216d497c213750dd722",
+        "bytes": 20457,
+        "media_type": ""
+      },
+      {
+        "role": "output",
+        "path": ".run-ledger/optical1334/outputs/worker5/RUN1334.json",
+        "sha256": "4f1f08faeb030af324dfe1a6da4c0c3a29fd17dff9f0516e3b62f733fc35fe92",
+        "bytes": 20508,
+        "media_type": ""
+      },
+      {
+        "role": "output",
+        "path": ".run-ledger/optical1334/outputs/worker6/RUN1334.json",
+        "sha256": "ee2fc235ca91c269f490505d8f74caa9a7279be28af428c91cc2cb239f17e391",
+        "bytes": 20459,
+        "media_type": ""
+      },
+      {
+        "role": "output",
+        "path": ".run-ledger/optical1334/outputs/worker7/RUN1334.json",
+        "sha256": "ed5d03b7c8548c9aaa2031d5dc25ed5940c5c37bb40c84f91e629c6834278bdb",
+        "bytes": 20507,
+        "media_type": ""
+      },
+      {
+        "role": "log",
+        "path": ".run-ledger/optical1334/record-logs/stdout.log",
+        "sha256": "e391d94f7624533f5fc504d030c697110ed0ff7b14dcb0d6c08c4d42ca4858ac",
+        "bytes": 90,
+        "media_type": ""
+      },
+      {
+        "role": "log",
+        "path": ".run-ledger/optical1334/record-logs/stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0,
+        "media_type": ""
+      }
+    ],
+    "notes": "Full320 fixed plan,8workers,256bits; no refit/search. O4 and prior798 obligations retained. Not a manuscript assessment or formal proof.",
+    "fingerprint": "81557c425f4937394080caacb9f4029494774f7c007631d9a85799760a110649",
+    "created_at": "2026-10-29T21:36:01.297Z",
+    "updated_at": "2026-10-29T21:39:59.737Z"
+  }
+}

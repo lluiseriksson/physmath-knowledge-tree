@@ -1,0 +1,386 @@
+{
+  "application": "PhysMath Knowledge Tree",
+  "schema_version": 1,
+  "kind": "integrated-research-dossier",
+  "generated_at": "2026-10-29T21:42:29.911Z",
+  "graph": {
+    "name": "PhysMath Knowledge Tree",
+    "schema_version": "0.6.0",
+    "application_version": "2.6.0",
+    "updated": "2026-09-09"
+  },
+  "workspace": {
+    "id": "workspace.optical-full1334",
+    "title": "Bound the optical weighted residual on the full fixed320-segment plan",
+    "node_ids": [
+      "domain.quantum_information_theory"
+    ],
+    "notes": "Mechanism: load the frozen801 mathematical engine and795 function region from hash-verified buffers, cover all320 intervals at256bits with8individually bound workers, reparse every returned ball and retain tails and scalar conditional transfer798. Falsifier: one nonfinite/bound>=1e-6 segment, coverage gap, altered input/worker, changed candidate or failed scalar check stops the run. This is trusted numerical reproduction metadata, not a model review, formal theorem, new paper or practical threshold.",
+    "bridge_cards": [],
+    "negative_results": [
+      {
+        "id": "negative.portability795",
+        "title": "Nearby frozen copies do not bind live external imports",
+        "status": "observed",
+        "node_ids": [
+          "domain.quantum_information_theory"
+        ],
+        "observation": "Review798 O2/O3 identified live-path imports and absent worker load fingerprints; selected801 corrected only four intervals. Old records remain unaltered.",
+        "challenged_mechanism": "Inferring a full bound solely from frozen files stored near an unbound script",
+        "next_test": "Verify every1334 worker actually compiles the hashed mathematical buffers and recheck unchanged inputs after all320segments.",
+        "created_at": "2026-10-29T21:38:09.203Z",
+        "updated_at": "2026-10-29T21:38:09.203Z"
+      }
+    ],
+    "created_at": "2026-10-29T21:38:09.203Z",
+    "updated_at": "2026-10-29T21:38:09.203Z"
+  },
+  "scope": {
+    "node_count": 1,
+    "edge_count": 0,
+    "nodes": [
+      {
+        "id": "domain.quantum_information_theory",
+        "kind": "domain",
+        "title": "Quantum information theory",
+        "summary": "Studies quantum states, channels, entropies, correlations, recovery, error correction and operational constraints such as no-signalling, with explicit attention to uniform channels and preservation of reference-system entanglement.",
+        "confidence": "literature",
+        "tags": [
+          "quantum-information",
+          "channels",
+          "entropy",
+          "recovery"
+        ],
+        "lean": {
+          "imports": [
+            "Mathlib"
+          ],
+          "declarations": [],
+          "targets": [
+            "Formalize finite matrix channels, Kraus completeness and a no-signalling calculation.",
+            "Represent the quantifier distinction between one uniform recovery map and state-dependent recovery maps."
+          ]
+        },
+        "questions": [
+          "Which finite recovery statements transfer to operator-algebraic or split AQFT settings without assuming a tensor factorization?"
+        ],
+        "references": [
+          {
+            "label": "M. A. Nielsen and I. L. Chuang — Quantum Computation and Quantum Information",
+            "url": "https://www.cambridge.org/highereducation/books/quantum-computation-and-quantum-information/01E10196D0A682A6AEFFEA52D53BE9AE",
+            "type": "book",
+            "scope": "claim"
+          },
+          {
+            "label": "O. Fawzi and R. Renner — Quantum conditional mutual information and approximate Markov chains",
+            "url": "https://arxiv.org/abs/1410.0664",
+            "type": "paper",
+            "scope": "claim"
+          },
+          {
+            "label": "Depth-1 expanders on the unitary group and applications (v1, reviewed 2026-09-09; context only)",
+            "url": "https://arxiv.org/abs/2609.01605v1",
+            "type": "paper",
+            "scope": "context"
+          },
+          {
+            "label": "Quantum speed limits based on quantifiers of quantum-state texture (v1, reviewed 2026-09-09; context only)",
+            "url": "https://arxiv.org/abs/2609.08752v1",
+            "type": "paper",
+            "scope": "context"
+          }
+        ]
+      }
+    ],
+    "edges": []
+  },
+  "evidence": {
+    "reference_count": 4,
+    "claim_reference_count": 2,
+    "reviewed": 2,
+    "by_status": {
+      "unreviewed": 2,
+      "verified": 2,
+      "needs-follow-up": 0,
+      "superseded": 0
+    },
+    "references": [
+      {
+        "reference": {
+          "url": "https://arxiv.org/abs/2609.01605v1",
+          "label": "Depth-1 expanders on the unitary group and applications (v1, reviewed 2026-09-09; context only)",
+          "type": "paper",
+          "scopes": [
+            "context"
+          ],
+          "used_by": [
+            "node:domain.quantum_information_theory"
+          ]
+        },
+        "relevant_usages": [
+          "node:domain.quantum_information_theory"
+        ],
+        "review": {
+          "url": "https://arxiv.org/abs/2609.01605v1",
+          "status": "unreviewed",
+          "source_class": "unknown",
+          "identifier": null,
+          "checked_at": null,
+          "notes": "",
+          "updated_at": null
+        }
+      },
+      {
+        "reference": {
+          "url": "https://www.cambridge.org/highereducation/books/quantum-computation-and-quantum-information/01E10196D0A682A6AEFFEA52D53BE9AE",
+          "label": "M. A. Nielsen and I. L. Chuang — Quantum Computation and Quantum Information",
+          "type": "book",
+          "scopes": [
+            "claim"
+          ],
+          "used_by": [
+            "edge:edge.qinfo.no_signalling",
+            "node:bridge.local_operations_no_signalling",
+            "node:domain.quantum_information_theory"
+          ]
+        },
+        "relevant_usages": [
+          "node:domain.quantum_information_theory"
+        ],
+        "review": {
+          "url": "https://www.cambridge.org/highereducation/books/quantum-computation-and-quantum-information/01E10196D0A682A6AEFFEA52D53BE9AE",
+          "status": "verified",
+          "source_class": "secondary",
+          "identifier": {
+            "kind": "doi",
+            "value": "10.1017/CBO9780511976667"
+          },
+          "checked_at": "2026-10-29T21:42:29.441Z",
+          "notes": "Verified publisher bibliographic identity and description fit as a broad quantum-information textbook for the generic canonical node, not its full contents/proofs.10thAnniversary edition, publisher distinguishes2010 heading,2011hardback and2012digital formats. No login, purchase or full-book access. Not evidence for the optical numerical bound.",
+          "updated_at": "2026-10-29T21:42:29.441Z"
+        }
+      },
+      {
+        "reference": {
+          "url": "https://arxiv.org/abs/1410.0664",
+          "label": "O. Fawzi and R. Renner — Quantum conditional mutual information and approximate Markov chains",
+          "type": "paper",
+          "scopes": [
+            "claim",
+            "context"
+          ],
+          "used_by": [
+            "edge:edge.aqft.cmi_recovery",
+            "edge:edge.qinfo.cmi_recovery",
+            "node:bridge.conditional_mutual_information_recovery",
+            "node:domain.quantum_information_theory"
+          ]
+        },
+        "relevant_usages": [
+          "node:domain.quantum_information_theory"
+        ],
+        "review": {
+          "url": "https://arxiv.org/abs/1410.0664",
+          "status": "verified",
+          "source_class": "primary",
+          "identifier": {
+            "kind": "arxiv",
+            "value": "1410.0664v3"
+          },
+          "checked_at": "2026-10-29T21:42:29.441Z",
+          "notes": "Verified bibliographic identity and abstract fit for the generic canonical node description of quantum CMI/recovery. Abstract only read; first2014-10-02, currentv3 2015-01-21, v3 correction toCorollaryD.3 retained. Not a proof audit and NOT a dependency proving the optical residual or gap. Numerical/analytic obligations remain798/O4.",
+          "updated_at": "2026-10-29T21:42:29.441Z"
+        }
+      },
+      {
+        "reference": {
+          "url": "https://arxiv.org/abs/2609.08752v1",
+          "label": "Quantum speed limits based on quantifiers of quantum-state texture (v1, reviewed 2026-09-09; context only)",
+          "type": "paper",
+          "scopes": [
+            "context"
+          ],
+          "used_by": [
+            "node:domain.quantum_information_theory"
+          ]
+        },
+        "relevant_usages": [
+          "node:domain.quantum_information_theory"
+        ],
+        "review": {
+          "url": "https://arxiv.org/abs/2609.08752v1",
+          "status": "unreviewed",
+          "source_class": "unknown",
+          "identifier": null,
+          "checked_at": null,
+          "notes": "",
+          "updated_at": null
+        }
+      }
+    ]
+  },
+  "lean": {
+    "item_count": 3,
+    "probe_item_count": 1,
+    "reviewed": 1,
+    "by_status": {
+      "unreviewed": 2,
+      "verified": 1,
+      "missing": 0,
+      "renamed": 0,
+      "blocked": 0
+    },
+    "items": [
+      {
+        "id": "[\"domain.quantum_information_theory\",\"import\",\"Mathlib\"]",
+        "node_id": "domain.quantum_information_theory",
+        "node_title": "Quantum information theory",
+        "node_kind": "domain",
+        "node_confidence": "literature",
+        "item_type": "import",
+        "value": "Mathlib",
+        "probe_safe": true,
+        "reuse_count": 22,
+        "node_imports": [
+          "Mathlib"
+        ],
+        "node_declarations": [],
+        "audit": {
+          "item_id": "[\"domain.quantum_information_theory\",\"import\",\"Mathlib\"]",
+          "status": "verified",
+          "checked_at": "2026-10-29T21:38:09.203Z",
+          "toolchain": "v4.31.0",
+          "replacement": "",
+          "notes": "Import name exists under the pinnedmathlib manifest and previous exact57ca89e mainCI succeeded; this is name/build validity, not formalization of the optical certificate.",
+          "updated_at": "2026-10-29T21:38:09.203Z"
+        }
+      },
+      {
+        "id": "[\"domain.quantum_information_theory\",\"target\",\"Formalize finite matrix channels, Kraus completeness and a no-signalling calculation.\"]",
+        "node_id": "domain.quantum_information_theory",
+        "node_title": "Quantum information theory",
+        "node_kind": "domain",
+        "node_confidence": "literature",
+        "item_type": "target",
+        "value": "Formalize finite matrix channels, Kraus completeness and a no-signalling calculation.",
+        "probe_safe": false,
+        "reuse_count": 1,
+        "node_imports": [
+          "Mathlib"
+        ],
+        "node_declarations": [],
+        "audit": {
+          "item_id": "[\"domain.quantum_information_theory\",\"target\",\"Formalize finite matrix channels, Kraus completeness and a no-signalling calculation.\"]",
+          "status": "unreviewed",
+          "checked_at": null,
+          "toolchain": "",
+          "replacement": "",
+          "notes": "",
+          "updated_at": null
+        }
+      },
+      {
+        "id": "[\"domain.quantum_information_theory\",\"target\",\"Represent the quantifier distinction between one uniform recovery map and state-dependent recovery maps.\"]",
+        "node_id": "domain.quantum_information_theory",
+        "node_title": "Quantum information theory",
+        "node_kind": "domain",
+        "node_confidence": "literature",
+        "item_type": "target",
+        "value": "Represent the quantifier distinction between one uniform recovery map and state-dependent recovery maps.",
+        "probe_safe": false,
+        "reuse_count": 1,
+        "node_imports": [
+          "Mathlib"
+        ],
+        "node_declarations": [],
+        "audit": {
+          "item_id": "[\"domain.quantum_information_theory\",\"target\",\"Represent the quantifier distinction between one uniform recovery map and state-dependent recovery maps.\"]",
+          "status": "unreviewed",
+          "checked_at": null,
+          "toolchain": "",
+          "replacement": "",
+          "notes": "",
+          "updated_at": null
+        }
+      }
+    ]
+  },
+  "changes": {
+    "available": false,
+    "baseline_fingerprint": null,
+    "current_fingerprint": null,
+    "change_count": 0,
+    "governed_change_count": 0,
+    "by_status": {
+      "pending": 0,
+      "accepted": 0,
+      "needs-work": 0,
+      "rejected": 0
+    },
+    "items": []
+  },
+  "readiness": {
+    "overall": "ready",
+    "gates": [
+      {
+        "id": "scope",
+        "state": "ready",
+        "label": "Scope",
+        "detail": "1 canonical nodes selected.",
+        "completed": 1,
+        "total": 1
+      },
+      {
+        "id": "mechanism",
+        "state": "ready",
+        "label": "Mechanism",
+        "detail": "Working notes or a bridge-card draft document the intended mechanism.",
+        "completed": 1,
+        "total": 1
+      },
+      {
+        "id": "falsifiability",
+        "state": "ready",
+        "label": "Falsifiability",
+        "detail": "A falsifier or next discriminating test is recorded.",
+        "completed": 1,
+        "total": 1
+      },
+      {
+        "id": "evidence",
+        "state": "ready",
+        "label": "Evidence",
+        "detail": "Every source-bearing reference in scope is locally verified.",
+        "completed": 2,
+        "total": 2
+      },
+      {
+        "id": "lean",
+        "state": "ready",
+        "label": "Lean names",
+        "detail": "Every import/declaration candidate has a verified or replacement name.",
+        "completed": 1,
+        "total": 1
+      },
+      {
+        "id": "changes",
+        "state": "not-applicable",
+        "label": "Canonical changes",
+        "detail": "No local canonical-change baseline is available.",
+        "completed": 0,
+        "total": 0
+      }
+    ],
+    "action_count": 1,
+    "actions": [
+      {
+        "kind": "experiment",
+        "severity": "info",
+        "title": "Nearby frozen copies do not bind live external imports",
+        "target": "negative.portability795",
+        "detail": "Verify every1334 worker actually compiles the hashed mathematical buffers and recheck unchanged inputs after all320segments."
+      }
+    ]
+  },
+  "content_fingerprint": "12e9d627a33ac5e859f1ddc3259f937f4981fcf390787c1064560b32504d539d"
+}
