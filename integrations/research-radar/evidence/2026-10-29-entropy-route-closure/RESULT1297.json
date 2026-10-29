@@ -1,0 +1,371 @@
+{
+  "scope": "One bounded one-parameter mixed saturated dimR3 diagnostic, not global optimization, proof, certified entropy intervals or a reproducibility campaign",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "family": {
+    "P": "diag(1,2,2)/3",
+    "Q": "(R diag(2,3,6)+i t S)/sqrt(49+14t^2)",
+    "R": "[[3,-4,0],[4,3,0],[0,0,5]]/5",
+    "S": "[[0,1,0],[0,0,2],[3,0,0]]",
+    "t_domain": [
+      -2,
+      2
+    ],
+    "population": "3/7",
+    "state": "rho=W W*, W=vertical(sqrt(1-p)P,sqrt(p)Q)",
+    "reference_dimension": 3
+  },
+  "method": "32 golden-section updates plus3 anchors, single run, no restarts or grid",
+  "bounded_attempt_found_negative_diagnostic": false,
+  "best_observed": {
+    "t": 0.0,
+    "G_nats_diagnostic": 0.0668921476122123,
+    "dictionary_discrepancy": 3.3306690738754696e-16,
+    "reference_commutator_norm": 0.0056544982085721405,
+    "partial_transpose_min_eigenvalue_diagnostic": -0.06871980012462375,
+    "rank": 3,
+    "p": "3/7"
+  },
+  "samples": [
+    {
+      "t": -2.0,
+      "G_nats_diagnostic": 0.1256150309344085,
+      "dictionary_discrepancy": 5.551115123125783e-16,
+      "reference_commutator_norm": 0.009235680407334496,
+      "partial_transpose_min_eigenvalue_diagnostic": -0.03445343815589743,
+      "rank": 3,
+      "p": "3/7"
+    },
+    {
+      "t": 0.0,
+      "G_nats_diagnostic": 0.0668921476122123,
+      "dictionary_discrepancy": 3.3306690738754696e-16,
+      "reference_commutator_norm": 0.0056544982085721405,
+      "partial_transpose_min_eigenvalue_diagnostic": -0.06871980012462375,
+      "rank": 3,
+      "p": "3/7"
+    },
+    {
+      "t": 2.0,
+      "G_nats_diagnostic": 0.1256150309344085,
+      "dictionary_discrepancy": 5.551115123125783e-16,
+      "reference_commutator_norm": 0.009235680407334496,
+      "partial_transpose_min_eigenvalue_diagnostic": -0.03445343815589743,
+      "rank": 3,
+      "p": "3/7"
+    },
+    {
+      "t": -0.4721359549995796,
+      "G_nats_diagnostic": 0.07589233316306732,
+      "dictionary_discrepancy": 3.3306690738754696e-16,
+      "reference_commutator_norm": 0.006780554421252301,
+      "partial_transpose_min_eigenvalue_diagnostic": -0.06553548185853282,
+      "rank": 3,
+      "p": "3/7"
+    },
+    {
+      "t": 0.4721359549995796,
+      "G_nats_diagnostic": 0.07589233316306732,
+      "dictionary_discrepancy": 3.3306690738754696e-16,
+      "reference_commutator_norm": 0.006780554421252301,
+      "partial_transpose_min_eigenvalue_diagnostic": -0.06553548185853282,
+      "rank": 3,
+      "p": "3/7"
+    },
+    {
+      "t": 1.0557280900008412,
+      "G_nats_diagnostic": 0.0992633775608861,
+      "dictionary_discrepancy": 1.1102230246251565e-16,
+      "reference_commutator_norm": 0.008720751603202737,
+      "partial_transpose_min_eigenvalue_diagnostic": -0.0546862968401896,
+      "rank": 3,
+      "p": "3/7"
+    },
+    {
+      "t": 0.11145618000168223,
+      "G_nats_diagnostic": 0.06744301647044382,
+      "dictionary_discrepancy": 4.440892098500626e-16,
+      "reference_commutator_norm": 0.005732084461164024,
+      "partial_transpose_min_eigenvalue_diagnostic": -0.06853772205197073,
+      "rank": 3,
+      "p": "3/7"
+    },
+    {
+      "t": -0.11145618000168256,
+      "G_nats_diagnostic": 0.06744301647044337,
+      "dictionary_discrepancy": 2.220446049250313e-16,
+      "reference_commutator_norm": 0.005732084461164025,
+      "partial_transpose_min_eigenvalue_diagnostic": -0.06853772205197078,
+      "rank": 3,
+      "p": "3/7"
+    },
+    {
+      "t": -0.24922359499621477,
+      "G_nats_diagnostic": 0.0695842516348063,
+      "dictionary_discrepancy": 7.771561172376096e-16,
+      "reference_commutator_norm": 0.006021661518323147,
+      "partial_transpose_min_eigenvalue_diagnostic": -0.06781465145256771,
+      "rank": 3,
+      "p": "3/7"
+    },
+    {
+      "t": -0.026311234992849875,
+      "G_nats_diagnostic": 0.06692301472637718,
+      "dictionary_discrepancy": 5.551115123125783e-16,
+      "reference_commutator_norm": 0.005658881004262252,
+      "partial_transpose_min_eigenvalue_diagnostic": -0.068709639742829,
+      "rank": 3,
+      "p": "3/7"
+    },
+    {
+      "t": 0.026311234992849514,
+      "G_nats_diagnostic": 0.06692301472637696,
+      "dictionary_discrepancy": 5.551115123125783e-16,
+      "reference_commutator_norm": 0.005658881004262251,
+      "partial_transpose_min_eigenvalue_diagnostic": -0.06870963974282902,
+      "rank": 3,
+      "p": "3/7"
+    },
+    {
+      "t": 0.05883371001598288,
+      "G_nats_diagnostic": 0.0670462838036221,
+      "dictionary_discrepancy": 0.0,
+      "reference_commutator_norm": 0.005676341639957713,
+      "partial_transpose_min_eigenvalue_diagnostic": -0.06866901412215422,
+      "rank": 3,
+      "p": "3/7"
+    },
+    {
+      "t": 0.0062112400302835186,
+      "G_nats_diagnostic": 0.06689386830292221,
+      "dictionary_discrepancy": 1.1102230246251565e-16,
+      "reference_commutator_norm": 0.005654742639878096,
+      "partial_transpose_min_eigenvalue_diagnostic": -0.06871923386415155,
+      "rank": 3,
+      "p": "3/7"
+    },
+    {
+      "t": -0.006211240030283907,
+      "G_nats_diagnostic": 0.06689386830292199,
+      "dictionary_discrepancy": 5.551115123125783e-16,
+      "reference_commutator_norm": 0.005654742639878097,
+      "partial_transpose_min_eigenvalue_diagnostic": -0.06871923386415153,
+      "rank": 3,
+      "p": "3/7"
+    },
+    {
+      "t": -0.013888754932282442,
+      "G_nats_diagnostic": 0.06690075044548138,
+      "dictionary_discrepancy": 3.3306690738754696e-16,
+      "reference_commutator_norm": 0.005655720144851981,
+      "partial_transpose_min_eigenvalue_diagnostic": -0.06871696887159368,
+      "rank": 3,
+      "p": "3/7"
+    },
+    {
+      "t": -0.0014662748717150075,
+      "G_nats_diagnostic": 0.06689224350465162,
+      "dictionary_discrepancy": 5.551115123125783e-16,
+      "reference_commutator_norm": 0.005654511830841612,
+      "partial_transpose_min_eigenvalue_diagnostic": -0.0687197685678795,
+      "rank": 3,
+      "p": "3/7"
+    },
+    {
+      "t": 0.0014662748717146146,
+      "G_nats_diagnostic": 0.06689224350465162,
+      "dictionary_discrepancy": 5.551115123125783e-16,
+      "reference_commutator_norm": 0.005654511830841612,
+      "partial_transpose_min_eigenvalue_diagnostic": -0.06871976856787951,
+      "rank": 3,
+      "p": "3/7"
+    },
+    {
+      "t": 0.0032786902868539,
+      "G_nats_diagnostic": 0.06689262707248067,
+      "dictionary_discrepancy": 1.1102230246251565e-16,
+      "reference_commutator_norm": 0.00565456631923528,
+      "partial_transpose_min_eigenvalue_diagnostic": -0.06871964234105515,
+      "rank": 3,
+      "p": "3/7"
+    },
+    {
+      "t": 0.0003461405434242804,
+      "G_nats_diagnostic": 0.06689215295611983,
+      "dictionary_discrepancy": 1.1102230246251565e-16,
+      "reference_commutator_norm": 0.005654498967716999,
+      "partial_transpose_min_eigenvalue_diagnostic": -0.0687197983660263,
+      "rank": 3,
+      "p": "3/7"
+    },
+    {
+      "t": -0.0003461405434246757,
+      "G_nats_diagnostic": 0.06689215295612028,
+      "dictionary_discrepancy": 1.1102230246251565e-16,
+      "reference_commutator_norm": 0.005654498967716999,
+      "partial_transpose_min_eigenvalue_diagnostic": -0.06871979836602625,
+      "rank": 3,
+      "p": "3/7"
+    },
+    {
+      "t": 0.0007739937848656566,
+      "G_nats_diagnostic": 0.06689217433174377,
+      "dictionary_discrepancy": 5.551115123125783e-16,
+      "reference_commutator_norm": 0.005654502004294313,
+      "partial_transpose_min_eigenvalue_diagnostic": -0.06871979133163682,
+      "rank": 3,
+      "p": "3/7"
+    },
+    {
+      "t": 8.171269801669832e-05,
+      "G_nats_diagnostic": 0.06689214791001852,
+      "dictionary_discrepancy": 7.771561172376096e-16,
+      "reference_commutator_norm": 0.005654498250877839,
+      "partial_transpose_min_eigenvalue_diagnostic": -0.06871980002662059,
+      "rank": 3,
+      "p": "3/7"
+    },
+    {
+      "t": -8.171269801709238e-05,
+      "G_nats_diagnostic": 0.06689214791001874,
+      "dictionary_discrepancy": 3.3306690738754696e-16,
+      "reference_commutator_norm": 0.005654498250877839,
+      "partial_transpose_min_eigenvalue_diagnostic": -0.06871980002662045,
+      "rank": 3,
+      "p": "3/7"
+    },
+    {
+      "t": 0.00018271514739049105,
+      "G_nats_diagnostic": 0.06689214910124097,
+      "dictionary_discrepancy": 3.3306690738754696e-16,
+      "reference_commutator_norm": 0.005654498420100626,
+      "partial_transpose_min_eigenvalue_diagnostic": -0.06871979963460723,
+      "rank": 3,
+      "p": "3/7"
+    },
+    {
+      "t": 1.928975135670168e-05,
+      "G_nats_diagnostic": 0.06689214762880857,
+      "dictionary_discrepancy": 3.3306690738754696e-16,
+      "reference_commutator_norm": 0.0056544982109297546,
+      "partial_transpose_min_eigenvalue_diagnostic": -0.06871980011916225,
+      "rank": 3,
+      "p": "3/7"
+    },
+    {
+      "t": -1.92897513570966e-05,
+      "G_nats_diagnostic": 0.06689214762880857,
+      "dictionary_discrepancy": 1.1102230246251565e-16,
+      "reference_commutator_norm": 0.0056544982109297546,
+      "partial_transpose_min_eigenvalue_diagnostic": -0.06871980011916222,
+      "rank": 3,
+      "p": "3/7"
+    },
+    {
+      "t": 4.31331953028992e-05,
+      "G_nats_diagnostic": 0.0668921476951928,
+      "dictionary_discrepancy": 3.3306690738754696e-16,
+      "reference_commutator_norm": 0.005654498220360219,
+      "partial_transpose_min_eigenvalue_diagnostic": -0.06871980009731606,
+      "rank": 3,
+      "p": "3/7"
+    },
+    {
+      "t": 4.553692589100066e-06,
+      "G_nats_diagnostic": 0.06689214761313711,
+      "dictionary_discrepancy": 1.1102230246251565e-16,
+      "reference_commutator_norm": 0.005654498208703525,
+      "partial_transpose_min_eigenvalue_diagnostic": -0.06871980012431932,
+      "rank": 3,
+      "p": "3/7"
+    },
+    {
+      "t": -4.553692589494465e-06,
+      "G_nats_diagnostic": 0.06689214761313733,
+      "dictionary_discrepancy": 1.1102230246251565e-16,
+      "reference_commutator_norm": 0.005654498208703525,
+      "partial_transpose_min_eigenvalue_diagnostic": -0.06871980012431933,
+      "rank": 3,
+      "p": "3/7"
+    },
+    {
+      "t": 1.0182366178107672e-05,
+      "G_nats_diagnostic": 0.0668921476168366,
+      "dictionary_discrepancy": 1.1102230246251565e-16,
+      "reference_commutator_norm": 0.005654498209229066,
+      "partial_transpose_min_eigenvalue_diagnostic": -0.068719800123102,
+      "rank": 3,
+      "p": "3/7"
+    },
+    {
+      "t": 1.0749809995136629e-06,
+      "G_nats_diagnostic": 0.06689214761226381,
+      "dictionary_discrepancy": 1.1102230246251565e-16,
+      "reference_commutator_norm": 0.005654498208579464,
+      "partial_transpose_min_eigenvalue_diagnostic": -0.06871980012460673,
+      "rank": 3,
+      "p": "3/7"
+    },
+    {
+      "t": -1.0749809999083862e-06,
+      "G_nats_diagnostic": 0.06689214761226403,
+      "dictionary_discrepancy": 3.3306690738754696e-16,
+      "reference_commutator_norm": 0.005654498208579464,
+      "partial_transpose_min_eigenvalue_diagnostic": -0.06871980012460674,
+      "rank": 3,
+      "p": "3/7"
+    },
+    {
+      "t": 2.4037305896776944e-06,
+      "G_nats_diagnostic": 0.06689214761246998,
+      "dictionary_discrepancy": 2.220446049250313e-16,
+      "reference_commutator_norm": 0.005654498208608749,
+      "partial_transpose_min_eigenvalue_diagnostic": -0.06871980012453899,
+      "rank": 3,
+      "p": "3/7"
+    },
+    {
+      "t": 2.5376859025532177e-07,
+      "G_nats_diagnostic": 0.06689214761221585,
+      "dictionary_discrepancy": 5.551115123125783e-16,
+      "reference_commutator_norm": 0.005654498208572547,
+      "partial_transpose_min_eigenvalue_diagnostic": -0.06871980012462274,
+      "rank": 3,
+      "p": "3/7"
+    },
+    {
+      "t": -2.5376859064984537e-07,
+      "G_nats_diagnostic": 0.06689214761221562,
+      "dictionary_discrepancy": 3.3306690738754696e-16,
+      "reference_commutator_norm": 0.005654498208572547,
+      "partial_transpose_min_eigenvalue_diagnostic": -0.06871980012462274,
+      "rank": 3,
+      "p": "3/7"
+    },
+    {
+      "t": -5.674438190033428e-07,
+      "G_nats_diagnostic": 0.06689214761222695,
+      "dictionary_discrepancy": 1.1102230246251565e-16,
+      "reference_commutator_norm": 0.005654498208574179,
+      "partial_transpose_min_eigenvalue_diagnostic": -0.06871980012461895,
+      "rank": 3,
+      "p": "3/7"
+    },
+    {
+      "t": -5.990663809829922e-08,
+      "G_nats_diagnostic": 0.06689214761221274,
+      "dictionary_discrepancy": 1.1102230246251565e-16,
+      "reference_commutator_norm": 0.005654498208572164,
+      "partial_transpose_min_eigenvalue_diagnostic": -0.06871980012462368,
+      "rank": 3,
+      "p": "3/7"
+    }
+  ],
+  "certified_negative_G_witness": false,
+  "universal_Q_proved": false,
+  "global_minimum_certified": false,
+  "independent_review": false,
+  "no_reference_dimension_bound": true
+}

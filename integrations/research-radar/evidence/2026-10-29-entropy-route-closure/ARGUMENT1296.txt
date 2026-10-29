@@ -1,0 +1,83 @@
+GLOBAL TRANSFER CHECK1296 — own working argument, unreviewed
+2026-10-29 UTC. No manuscript, score, formal proof or independent review.
+Global target remains G=delta_e(p)+I(Z:ER)_xi-C_E>=0 for every finite R.
+901 O1–O9 and906 A–G survive;907/908/910 remain restricted sufficient bounds.
+
+Literature hypothesis tested:
+Can the fixed N(x,y,z)=(3x/5,3y/5,z/4+1/5) be represented as
+Delta_lambda o M, where Delta_lambda is a qubit depolarizing CPTP channel
+and M is CPTP with a pure output? This would meet one input hypothesis
+of Fukuda's2005 transfer lemma. Even success would concern minimum output
+entropy, not automatically the population-dependent complete entropy target Q.
+
+Primary version separation:
+Fukuda quant-ph/0505022v4,14Aug2005, first preprint4May2005.
+https://arxiv.org/html/quant-ph/0505022v4
+Read lemma and its short proof, Eqs11–12 and18–27. The earlier v2 has a
+different title and a Holevo discussion not present as such in v4; no
+transfer of that version's claims to v4. The proof minimizes over all
+inputs and uses an optimizer in the image of M. It does not retain p
+or the joint ER conditional entropy. No whole-paper proof audit claimed.
+
+Own exact rejection, all lambda in the depolarizing CPTP range[-1/3,1]:
+lambda=0 gives a constant map, impossible. For lambda<0, all Bloch radii
+of Delta_lambda(M(rho)) are at most1/3, while N has transverse radius3/5.
+For lambda>0, invertibility of Delta_lambda forces
+M(x,y,z)=(3x/(5lambda),3y/(5lambda),z/(4lambda)+1/(5lambda)).
+N's maximum output radius squared is
+q(z)=2/5+z/10-119z^2/400
+=243/595-(119/400)(z-20/119)^2.
+The maximum over the Bloch ball is attained on its boundary.
+If M is positive with a pure output, max radius M=1, hence
+lambda^2=243/595 and lambda<2/3.
+The central2x2 principal Choi determinant of M has the sign of
+f(lambda)=(lambda+1/4)^2-1/25-36/25
+=lambda^2+lambda/2-567/400.
+It is increasing for lambda>=0, and f(2/3)=-2303/3600<0.
+Thus the required M is not CP. This excludes the entire stated
+depolarizing-postcomposition/pure-output representation, not just one
+chosen amplitude-damping ansatz. Unitary rotations can be absorbed into M
+because Delta is covariant; the maximum output radius is invariant.
+It excludes neither all unital outer channels nor all other transfer lemmas.
+Fukuda Eq24 also fails:9/25-(1/4)(1/4+1/5)=99/400>0.
+That smaller axial-class exclusion overlaps901; do not count it twice.
+
+Filippov1802.00646v2,21Mar2019, first preprint2Feb2018.
+https://arxiv.org/html/1802.00646v2
+Read abstract, SectionII Eqs7–11 and Theorem1 statement/Eqs12–14.
+Invertible filtering to a unital CPTP map uses individual CP filters which
+need not be trace preserving. Normalized inputs acquire state-dependent
+weights; the theorem states a capacity bound with a norm correction.
+It supplies no exact preservation of G or p. Full proof not audited.
+Fukuda0608010v2 and Leditzky-et-al1709.01111v3: abstract/metadata only,
+no theorem used and no claim they exclude every alternative approach.
+
+Hypothesis removed: the simple depolarizing pure-output transfer mechanism
+cannot certify N; stop this particular route. No assumption in Q has been
+removed. No global entropy counterexample or additivity conclusion.
+Falsifier: a CPTP M and admissible lambda with the exact composition and a
+pure output, or an error in the radius maximization/Choi determinant.
+Fraction control checks algebraic constants; the universal argument is the
+analytic proof above, not finite sampling. No Lean dependency used/changed.
+
+Layers: formal none; literature the explicitly scoped statements above;
+heuristic use of optimizer transfer as a candidate route, rejected for
+this representation; speculative universal Q remains unresolved.
+No graph confidence changed. No new source corpus copied.
+The directed primary inventory is not an exhaustive prior-art survey.
+
+Route1295 remains parked: its single shared-resolvent density is not
+pointwise PSD; integrated kernel and global Q were not refuted.
+No rescaled densities or additional local Hessian tests were attempted.
+1296 is a bounded global-theorem applicability check, not a new paper.
+Bundle its bibliographic/version guards and1295 parking guard in the next
+substantive global knowledge update; no standalone minor PR.
+
+Next bounded global action: a fixed-size mixed saturated entropy falsifier
+with genuinely quantum, noncommuting reference branches and retained p.
+Use the1284 contraction parametrization; do not gauge K to I. First audit
+existing global numerical logs to avoid duplicating inputs, then select
+one analytic rank>=2 endpoint family with dim R=3. Any numerical negative
+must be certified by entropy intervals and PSD/trace certificates before
+being reported; absence of a negative is not proof or a dimension bound.
+Do not reopen pure/separable/isotropic or parked product-base routes.

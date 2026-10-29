@@ -1,0 +1,20 @@
+{
+  "failed_discovery": [
+    {
+      "runtime": "C:/Python312/python.exe",
+      "error": "ModuleNotFoundError: No module named 'numpy'"
+    },
+    {
+      "runtime": "bundled Python",
+      "error": "ModuleNotFoundError: No module named 'scipy'"
+    }
+  ],
+  "packages_installed": false,
+  "selected_runtime": "C:/Users/lluis/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe",
+  "selected_numpy": "2.3.5",
+  "initial_registry_search": "nonexistent candidates directory; corrected to registry.json",
+  "scientific_run_exit": 0,
+  "exact_geometry_run_exit": 0,
+  "scientific_restarts": 0,
+  "notes": "geometry calibration is not a second optimization or an entropy interval certificate"
+}

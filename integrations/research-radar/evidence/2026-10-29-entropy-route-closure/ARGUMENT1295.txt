@@ -1,0 +1,99 @@
+Bounded resolvent proof attempt: exact failure and route disposition
+
+Scope and outcome
+The natural shared-parameter resolvent density for the local kernel is not
+pointwise positive semidefinite. A rational Rayleigh value at strictly positive
+integration parameter is negative. This refutes that particular sufficient
+proof step; it does not refute the integrated kernel M, global entropy Q,
+channel additivity or every possible integral/CP decomposition.
+Following the explicit one-attempt bound in checkpoint1294, park product-base
+local instability and return to the full mixed-saturated quantum-reference
+tradeoff. This is a research-route stop, not a pause of the overall research.
+No separate paper, model review, score or standalone knowledge PR is warranted.
+
+Definitions and exact integral representation
+Use the1291 local2-by-2 kernel and its retained parameters0<p,d<1,e=1-d.
+Q=[[29/40-p/4,k],[k,11/40+p/4]],
+A=[[19p/40,0],[k,21p/40]], k=3sqrt(p(1-p))/5.
+For positive x,y,
+f(x,y)=(log x-log y)/(x-y)
+      =integral_0^infinity dt/[(x+t)(y+t)],
+with the continuous value1/x at x=y. This follows by partial fractions.
+Let Rd(t)=(dQ+tI)^(-1), Re(t)=(eQ+tI)^(-1),
+ell(t)=1/det(Q+tI), phi(t)=1/[(d+t)(e+t)],
+U11(t)=Tr[Rd A Re A*],
+U22(t)=Tr[Rd A* Re A],
+U12(t)=Re Tr[Rd A Re A].
+The cross term is real here; all Q,A entries are real.
+The displayed1291 spectral divided differences therefore give exactly
+M(p,d)=integral_0^infinity W(t)dt, where
+W11=k^2 ell+e[p phi-U11],
+W22=k^2 ell+d[p phi-U22],
+W12=W21=sqrt(de)[p phi-U12].
+Every term is finite near0 and decays quadratically at infinity.
+This uses the SAME unscaled integration parameter for the channel,
+reference and output divided differences. It is a legitimate representation,
+but it is not unique and pointwise positivity is only a sufficient condition.
+
+A strict rational falsifier of pointwise positivity
+Set p=1/2,d=9/25,e=16/25,k=3/10,t=1/100, so sqrt(de)=12/25.
+Then
+Q=[[3/5,3/10],[3/10,2/5]], detQ=3/20,
+A=[[19/80,0],[3/10,21/80]].
+verify_resolvent1295.py performs only exact Fraction matrix arithmetic and gives
+W11=-81977909370/232820898973<0,
+W12=114735915/290844346,
+W22=62309349585/1862567191784.
+The Rayleigh vector(1,0) already has strictly negative value.
+All inverse denominators are positive here. Continuity implies negativity on
+some positive-length neighborhood of t=1/100; this is not merely a boundary
+or measure-zero artifact.
+
+What this does not establish
+The INTEGRATED M at the same(p,d) is already certified positive in1290/1291,
+with determinant approximately0.004249599102711869 and positive diagonal.
+Thus this example demonstrates that negative resolvent contributions can
+cancel with positive contributions. It is not an entropy counterexample.
+A different parameterization, grouped integral or CP decomposition could
+still prove M>=0. No impossibility theorem for such alternatives is claimed.
+
+Why the route is parked
+1290 tested one mixed-entangled direction and retained an exact phase flat
+direction after correcting an erroneous strict-positivity assertion.
+1291 reduced product-base curvature to M(p,d) and controlled pure-reference
+boundaries at fixed interior latitude.1292 controlled the maximally mixed
+reference center.1294 allowed one further concrete CP/integral attempt.
+This explicit common-parameter positive-density attempt has now failed.
+Do not restart with another weighting, point table, floating scan or local
+subclass paper merely to keep the same route alive. Parking is a bounded
+research decision, not a mathematical claim that the remaining intermediate
+spectrum problem is impossible or false.
+The full quantum-reference inequality remains under audit and unresolved.
+
+Next scientific obligation
+Return to the global identity
+G=delta_e(p)+I(Z:ER)-C_E
+for arbitrary mixed saturated support couplings and arbitrary finite R.
+Read/reconcile the complete901/906 objections and later907/908/910 scopes
+before proposing a new global tradeoff. Preserve both the population offset
+and the JOINT flag information. Ordinary zero-offset channel orders, already
+refuted in the dossier, and replacements by classical/separable/isotropic
+subclasses must not be presented as a new mechanism.
+A new route must supply a concrete genuinely quantum-reference inequality
+or a certified negative entropy witness; no new manuscript or score follows
+from this resolvent failure.
+
+Evidence levels and continuity
+Own analytical/heuristic: the integral representation and exact density
+obstruction above. The scalar identity is written explicitly; no external
+theorem is silently instantiated. The code certifies the stated rational
+matrix values, not every possible proof approach. No independent assessment,
+new Lean result, confidence upgrade or novelty certificate.
+Speculative: global Q/additivity and a sharp ER coherence/information bound.
+All original901/906 adverse reports, the corrected1290 history and later
+unreviewed notes retain their exact scopes; no score is inherited.
+PR190 is fully closed with remote/main/live verification1294; do not replay it.
+This short parking/refutation record belongs in the next substantive global
+knowledge update, not a standalone minor PR or paper.
+The primary sweep is directed inventory only, not exhaustive; local smoothing
+is deduplicated. No external corpus, task bodies or private data are copied.

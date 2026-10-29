@@ -1,0 +1,29 @@
+{
+  "scope": "same-author integration integrity replay of three exact controls; no independent review; original37-evaluation floating optimization not rerun",
+  "checks": [
+    {
+      "script": "verify_resolvent1295.py",
+      "output": "OBSTRUCTION1295.json",
+      "output_sha256": "9206e528e591e09dfe8e228641f1ce6800365eafae5bbbcb4149abd60ea2b541",
+      "exit_code": 0,
+      "byte_identical": true,
+      "stdout": "Common-resolvent density has a strictly negative rational Rayleigh value at p=1/2,d=9/25,t=1/100.\r\nNegative entry: -81977909370/232820898973"
+    },
+    {
+      "script": "verify_transfer1296.py",
+      "output": "CONTROL1296.json",
+      "output_sha256": "2801cf225a54be8c5ae1cad48df88209aafc2d1b2e90dee9314aff118d760cc4",
+      "exit_code": 0,
+      "byte_identical": true,
+      "stdout": "{\"scope\": \"Exact necessary-condition rejection of depolarizing-postcomposition with pure-output M only; not global entropy proof/counterexample\", \"qmax\": \"243/595\", \"vertex\": \"20/119\", \"lambda_upper_strict\": \"2/3\", \"CP_polynomial\": \"lambda^2+lambda/2-567/400\", \"CP_polynomial_upper_bound\": \"-2303/3600\", \"source_eq24_defect\": \"99/400\", \"global_Q_proved\": false, \"global_Q_refuted\": false, \"independent_review\": false, \"method\": \"Fraction algebra plus analytic monotonicity and pure-output radius argument; no entropy sampling, no formal certification\"}"
+    },
+    {
+      "script": "geometry_global1297.py",
+      "output": "EXACT1297.json",
+      "output_sha256": "257180c1727b3cd6a6d65decbff9595db7b814d2f9af1b8d464a05acfb758f40",
+      "exit_code": 0,
+      "byte_identical": true,
+      "stdout": "{\"scope\": \"Exact t=0 geometry, not entropy-sign certification\", \"trace_one\": true, \"population\": \"3/7\", \"rank\": 3, \"mixed\": true, \"diagonal_blocks_noncommuting\": true, \"partial_transpose_negative_principal_minors\": [{\"indices\": [0, 4], \"determinant\": \"-1724/180075\"}], \"entangled\": true, \"saturated_support_coupling\": true, \"global_Q_proved\": false, \"G_evaluated_exactly\": false}"
+    }
+  ]
+}
