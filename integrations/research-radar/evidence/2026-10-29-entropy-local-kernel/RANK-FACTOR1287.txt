@@ -1,0 +1,23 @@
+Bounded check of the existing P5 route after reduction1284
+
+Primary statement: Zhang, arXiv:2410.21961v4 (2026-03-28), Theorem1.15,
+https://arxiv.org/html/2410.21961v4. Statement read, not proof audited.
+For theta<=2 its rank factor is r^(1/theta-1/2), with r the rank of the
+SCALAR norm compression, not rank(rho_AR).
+
+Own derivative check: writing L=Tr|M|^theta and R=Tr|C_theta(M)|^theta,
+the statement gives R<=2^(1-theta/2)L for a two-row compression. At2 both
+are1. The left derivative gives (logR-logL)'(2)>=-log(2)/2. With the
+existing block-norm derivative dictionary899 this yields only
+S(MM*)-S(C2 C2*)-sum_blocks w S(block state)>=-log(2).
+It does not prove the required nonnegative gap.
+
+For the P5 scalar rows [sqrt(alpha),sqrt(beta),0] and
+[sqrt(delta),0,sqrt(eta)], positive beta and eta make the minor of the last
+two columns sqrt(beta*eta)>0. Thus compression rank stays2 on those interior
+rays. Saturated coupling/state-rank reduction1284 cannot replace r by1.
+This rechecks an existing loss using the current pinned version; it is not
+a new theorem, refutation of Q, independent review, or separate paper.
+Rectangular repeated blocks can be padded to common square size by zero
+rows/columns, preserving both block and full-matrix nonzero singular values.
+This is the own scope extension used for the square-block statement.

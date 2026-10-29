@@ -1,0 +1,12 @@
+{
+  "repository": "google-deepmind/formal-conjectures",
+  "head": "909a8bec155bc5a6f3c72e12baaaa610ae293281",
+  "parent": "5a2fb85045c86e4a184b15ce7531ba199a3c4580",
+  "commit_date": "2026-10-29T14:47:57Z",
+  "subject": "feat(Wikipedia/RamanujanTau): prove multipliable (#7671)",
+  "classification": "Author-described completion of a support lemma for known Ramanujan tau identities, not a mathematical manuscript or a newly solved conjecture.",
+  "source_url": "https://github.com/google-deepmind/formal-conjectures/commit/909a8bec155bc5a6f3c72e12baaaa610ae293281",
+  "own_summary": "The commit description says an existing infinite-product summability statement now has a proof using existing Mathlib API; the first tau value loses that admitted dependency, while the second value remains admitted. These are upstream author claims from metadata, not a replayed proof or axiom audit here.",
+  "reading": "Commit metadata only; no conjecture/evaluation task bodies fetched or corpus downloaded.",
+  "limits": "No upstream build, dependency/axiom closure or new theorem-statement reading; repository-head update does not establish mathematical novelty."
+}

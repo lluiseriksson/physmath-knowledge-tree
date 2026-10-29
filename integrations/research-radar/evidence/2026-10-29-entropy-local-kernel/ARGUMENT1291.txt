@@ -1,0 +1,157 @@
+General local instability criterion for the existing fixed-channel target
+
+Status
+Own analytical reduction of a possible local counterexample mechanism.
+No universal entropy proof, global counterexample, model assessment, score,
+new paper, formal confidence upgrade or novelty certificate. The current
+work generalizes the one-base1290 test, not its scope to arbitrary references.
+
+Definitions
+N has Bloch action (3x/5,3y/5,z/4+1/5). Fix0<p<1 and0<d<1, e=1-d.
+Take X=diag(sqrt(d),sqrt(e)), D=XX*, and
+Y(t)=(X+tH)/sqrt(1+b t^2), Tr(X*H)=0, b=Tr(HH*).
+The fixed-p gap is S(T)-(1-p)S(D)-pS(YY*)-e_N(p), with
+T=[[alpha D+beta YY*,k XY*],[k YX*,eta D+delta YY*]],
+alpha=29(1-p)/40,beta=19p/40,eta=11(1-p)/40,delta=21p/40,
+k=3sqrt(p(1-p))/5.
+At Y=X, T0=Q tensor D,
+Q=[[29/40-p/4,k],[k,11/40+p/4]].
+Set z=9/20-p/2, s=sqrt(4k^2+z^2), lambda+/-=(1+/-s)/2,
+L=log(lambda+/lambda-)/s.
+All Q eigenvalues are positive. This fixes p and the reference spectrum;
+it is not a dimension bound or a reference classicalization.
+
+The entropy-Hessian calculation1290 extends directly:
+q(H)=k^2 b L - BKM_T0(T1,T1)/2 + p BKM_D(E,E)/2,
+E=XH*+HX*, T1=[[beta E,k XH*],[k HX*,delta E]].
+It is the coefficient of t^2; G(0)=G'(0)=0. The logD terms cancel.
+Dlog has scalar divided difference f(x,y)=(log x-log y)/(x-y),
+with continuous value f(x,x)=1/x. This definition, not a singular quotient,
+must be used at any coincident eigenvalues.
+
+Tangent decomposition
+The complex orthogonality constraint removes radial normalization and the
+global input phase. The remaining imaginary diagonal direction
+i diag(sqrt(e),-sqrt(d)) is exactly flat: it is tangent to independent
+reference-conditioned phases of pure inputs at the same latitude p.
+The real diagonal direction diag(sqrt(e),-sqrt(d)) has
+q=2p^2(1-p)^2 f_N''(p)>0, where f_N=e_N-h.
+This follows directly from the classical-reference Jensen expansion and
+the already scoped scalar convexity in899. It is independent of d.
+Diagonal and off-diagonal reference sectors have zero quadratic cross term;
+real and imaginary diagonal directions also have zero real cross term.
+
+For H=[[0,u],[v,0]], all remaining four real directions are governed by
+q=a|u|^2+b0|v|^2+2c Re(u v).
+Consequently real(u,v) uses M=[[a,c],[c,b0]], while imaginary(u,v) uses
+diag(1,-1) M diag(1,-1). The local sign problem is exactly the sign of ONE
+real2-by-2 matrix, not a six-dimensional numerical eigenvalue problem.
+
+Explicit scalar kernel
+Put F=f(d,e),
+g=f(lambda+ d,lambda- e), h0=f(lambda- d,lambda+ e),
+m=(k^2-pz/40)/s, kap=k(9-8p)/(40s),
+J=(p/2+m)^2/lambda+ +(p/2-m)^2/lambda-.
+Define
+T11=F J+g(kap-k/2)^2+h0(kap+k/2)^2,
+T22=F J+g(kap+k/2)^2+h0(kap-k/2)^2,
+T12=F J+(g+h0)(kap^2-k^2/4).
+Then
+a =k^2 L+e(pF-T11),
+b0=k^2 L+d(pF-T22),
+c =sqrt(de)(pF-T12).
+Thus the entire fixed-X projective local Hessian is nonnegative iff
+a>=0,b0>=0,a*b0>=c^2.
+No proof of these three inequalities over all interior(p,d) is supplied.
+
+Derivation of the kernel
+Selecting the reference0-to1 block of T1 gives
+B=sqrt(e)u A+sqrt(d)conj(v) A^T, A=[[beta,0],[k,delta]].
+In an oriented real eigenbasis of Q, A has entries
+[p/2+m,kap-k/2;kap+k/2,p/2-m].
+The spectral metric contributes
+sum_{i,j} f(lambda_i d,lambda_j e)
+|(P_i B P_j)|_HS^2; the two reference orientations cancel the factor1/2.
+The branch metric contributes pF|sqrt(e)u+sqrt(d)conj(v)|^2.
+Expanding these two squares gives the displayed a,b0,c.
+This retains relative orientation and quantum-reference modes; no controlled
+reference rotation is commuted through N.
+
+Center and pure-reference boundary checks
+At d=1/2, g=h0=2L, so a=b0=c exactly.
+Unitary invariance of the flat reference base and the scalar diagonal
+calculation identify a=p^2(1-p)^2 f_N''(p)>=0.
+The scalar kernel is rank1 there, with additional exact unitary/phase flat
+directions. Strict positive-definiteness must not be claimed at this center.
+
+For each FIXED interior p, let d tend to0. Then
+F=log(1/d)+O(d log(1/d)),
+g=[log(1/d)-log(lambda+/lambda-)]/lambda-+O(d log(1/d)),
+h0=[log(1/d)+log(lambda+/lambda-)]/lambda++O(d log(1/d)).
+The leading logarithm in a is
+C(p)=p-Tr[A Q^{-1} A*].
+Hence
+a=C(p) log(1/d)+O(1),
+b0=k^2 L+O(d log(1/d)),
+c=O(sqrt(d) log(1/d)).
+This coefficient is not an unsupported entropy comparison: complete
+positivity applied to the Gram block of |psi_p> and sqrt(p)|1> yields
+[[Q,A*],[A,pN(|1><1|)]]>=0.
+The Schur complement gives A Q^{-1}A*<=pN(|1><1|); trace preservation
+therefore implies C(p)>=0.
+
+For this fixed channel the margin is strictly positive:
+C(p)=p(1-p)(803-176p)/(8000 det Q)>0,
+det Q=319/1600-99p/400+119p^2/400
+     =119(p-99/238)^2/400+88/595.
+Both polynomial identities are verified over exact rational coefficients
+in verify_kernel1291.py.
+Since k^2 L>0 for fixed interior p,
+det M=k^2 L C(p) log(1/d)+O(1)+O(d log^2(1/d))>0 sufficiently near0.
+Exchanging the reference labels d/e conjugates M by a coordinate swap,
+so the analogous conclusion holds near1.
+This excludes a local quadratic negative witness arbitrarily close to a
+pure-reference boundary at a fixed interior latitude. It is NOT uniform in
+joint limits p->0/1 and d->0/1, and gives no explicit neighborhood radius.
+It does not settle intermediate reference spectra or higher-order/global Q.
+
+Checks and limits
+verify_kernel1291.py evaluates the scalar formula at the ONE prior point
+p=1/2,d=9/25 with outward-rounded rational log/sqrt enclosures. Its a,b0,c
+overlap the full spectral-metric1290 intervals:
+a≈0.3831941979071493,b0≈0.2998361667339296,c≈0.3326347551180582,
+det≈0.004249599102711869>0.
+These decimals are explanatory; integer interval endpoints carry signs.
+This is an algebraically different expression by the same author/runtime,
+not an independent reviewer or independent arithmetic implementation.
+The evaluator intentionally refuses unresolved divided-difference
+coincidences; the analytical definition above handles them continuously.
+The single calibration does not verify the whole(p,d) domain.
+
+Falsifier, mechanism, next
+A certified non-PSD M at interior(p,d), away from already handled flat
+directions, would yield a negative quadratic G direction and hence negative
+G for sufficiently small nonzero perturbations by analyticity. A finite
+explicit state still needs its entropy sign and mixed-entanglement scope
+certified before a manuscript claim.
+The viable next bounded attempt is to derive the leading determinant
+splitting around d=1/2 as an analytic function of p, and look for a sign-changing
+latitude mechanism. Do not replace the exact flat center by a noisy floating
+eigenvalue or run another parameter grid. If no new mechanism survives, park
+local instability instead of accumulating subclass papers.
+Universal mixed-saturated Q and the tradeoff C_E<=delta_e+I(Z:ER) remain open
+in this dossier, with arbitrary reference dimension.
+
+Provenance
+This is a continuation of own899/1284/1290;901/906 component reviews do not
+review it. Their adverse observations and later907/908/910 limits remain.
+Literature context: existing source cards Audenaert math/0702186v2 and
+Belzig et al.2411.19890v3 (BKM/comparison context only); no theorem from them
+is silently instantiated for this channel. The entropy spectral derivative
+and CP-Schur calculation used here are written explicitly above.
+Formal: no new Lean result; existing package pins are separately checked.
+Confidence: own unreviewed analytical/heuristic reduction, universal claim
+speculative; novelty and global prior art not established.
+PR189 is fully closed, no duplicate paper/review/PR created. The current
+primary-source sweep is directed inventory only, not exhaustive or a new
+publication claim. No external source bodies/corpus are redistributed.

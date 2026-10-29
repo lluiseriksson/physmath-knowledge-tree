@@ -1,0 +1,119 @@
+{
+  "native_archive": "native-evidence1293.zip",
+  "native_archive_sha256": "1d6739e33a441baad6f0661dd4e83d6c516244cef3b5ec7dd1f194397e8da69a",
+  "scope": "All native original own evidence bytes preserved unchanged; public JSON uses LF and four canonical scripts specify LF output. No analytical computation or result changed.",
+  "files": [
+    {
+      "native_entry": "2026-10-29_entropy-variation1290/ARGUMENT1290.txt",
+      "public_file": "ARGUMENT1290.txt",
+      "native_sha256": "cb8d1b0e0da7ab00c076757047340b60a3536d0f1de4321b9c63eb96204fffc7",
+      "public_sha256": "cb8d1b0e0da7ab00c076757047340b60a3536d0f1de4321b9c63eb96204fffc7",
+      "transformation": "byte-identical"
+    },
+    {
+      "native_entry": "2026-10-29_entropy-variation1290/CURVATURE1290.json",
+      "public_file": "CURVATURE1290.json",
+      "native_sha256": "b95bbad0641eae80fe64d4b6957ec5f262e0100f8044aa6a3d015ed8f921bb48",
+      "public_sha256": "00de34c8f43d521bdd06e457d215e6f06bba5979d9c14f1ada7be814387a1654",
+      "transformation": "CRLF native JSON normalized to LF"
+    },
+    {
+      "native_entry": "2026-10-29_entropy-variation1290/ENTANGLED1290.json",
+      "public_file": "ENTANGLED1290.json",
+      "native_sha256": "0f7148889791b72477837f8696ae409b286303694393e7434abfd75e3b6327ba",
+      "public_sha256": "6d63090f965e2ab1c9bcbfd9c527a32c298297a2f828202d339ec9c1860a3c5e",
+      "transformation": "CRLF native JSON normalized to LF"
+    },
+    {
+      "native_entry": "2026-10-29_entropy-variation1290/initial-failure1290.txt",
+      "public_file": "initial-failure1290.txt",
+      "native_sha256": "03df6ffb1c5d92c56e5f9efc61642b2b93ee35cb8e7f0819345d2fdf799fa7bd",
+      "public_sha256": "03df6ffb1c5d92c56e5f9efc61642b2b93ee35cb8e7f0819345d2fdf799fa7bd",
+      "transformation": "byte-identical"
+    },
+    {
+      "native_entry": "2026-10-29_entropy-variation1290/initial_curvature1290.py",
+      "public_file": "initial_curvature1290.py",
+      "native_sha256": "99b2b8d2aea210bdfe645ec106cfeb60555a4ce368cbdc62fcdac46b360c1538",
+      "public_sha256": "99b2b8d2aea210bdfe645ec106cfeb60555a4ce368cbdc62fcdac46b360c1538",
+      "transformation": "byte-identical"
+    },
+    {
+      "native_entry": "2026-10-29_entropy-variation1290/verify_curvature1290.py",
+      "public_file": "verify_curvature1290.py",
+      "native_sha256": "9f6b457cc2efc7cd29d72dd87123a15de8afecffca31cc6d925567abff5e34ce",
+      "public_sha256": "41ca41936d338596f7c281568c9c32f71051d7f7acda01d7050e46066c5e8f81",
+      "transformation": "public script adds explicit LF output writer only"
+    },
+    {
+      "native_entry": "2026-10-29_entropy-variation1290/verify_entangled1290.py",
+      "public_file": "verify_entangled1290.py",
+      "native_sha256": "4a28d691aedc6bea04b72eab913d7ea016a9536df79dad047fcfce66fc02d80f",
+      "public_sha256": "d121f793f932b33ca562c77929d91a027fecd34d34de9bc07be2b7d3c5032724",
+      "transformation": "public script adds explicit LF output writer only"
+    },
+    {
+      "native_entry": "2026-10-29_entropy-symbolic1291/ARGUMENT1291.txt",
+      "public_file": "ARGUMENT1291.txt",
+      "native_sha256": "111cc17d2fc303f975dea5df8b2f2d4e63513816098df2a6e00f8e8429b8fa6f",
+      "public_sha256": "111cc17d2fc303f975dea5df8b2f2d4e63513816098df2a6e00f8e8429b8fa6f",
+      "transformation": "byte-identical"
+    },
+    {
+      "native_entry": "2026-10-29_entropy-symbolic1291/KERNEL1291.json",
+      "public_file": "KERNEL1291.json",
+      "native_sha256": "6eb4722b63d27ac37e30bcc8be40c941ce6909d01bea0cb6913abbead1c93c57",
+      "public_sha256": "14120647298c13bd056064babf4fd87a621fc682e175b7867836d402789838a7",
+      "transformation": "CRLF native JSON normalized to LF"
+    },
+    {
+      "native_entry": "2026-10-29_entropy-symbolic1291/REFERENCE1290.json",
+      "public_file": "REFERENCE1290.json",
+      "native_sha256": "b95bbad0641eae80fe64d4b6957ec5f262e0100f8044aa6a3d015ed8f921bb48",
+      "public_sha256": "00de34c8f43d521bdd06e457d215e6f06bba5979d9c14f1ada7be814387a1654",
+      "transformation": "CRLF native JSON normalized to LF"
+    },
+    {
+      "native_entry": "2026-10-29_entropy-symbolic1291/verify_kernel1291.py",
+      "public_file": "verify_kernel1291.py",
+      "native_sha256": "19ecf8d22aac57c832bfcab711a5f197b0306fcf67994ecccda864f40b716c23",
+      "public_sha256": "e570b5ccda89df1a0225f35848360970b40d4d69dcb3007b8ed8f9f2545ee7c1",
+      "transformation": "public script adds explicit LF output writer only"
+    },
+    {
+      "native_entry": "2026-10-29_entropy-center1292/ARGUMENT1292.txt",
+      "public_file": "ARGUMENT1292.txt",
+      "native_sha256": "e9cc29d938f03e5109a7464f7f821b27823bf52e0a27862d9ac52d976f60b6e9",
+      "public_sha256": "e9cc29d938f03e5109a7464f7f821b27823bf52e0a27862d9ac52d976f60b6e9",
+      "transformation": "byte-identical"
+    },
+    {
+      "native_entry": "2026-10-29_entropy-center1292/CENTER1292.json",
+      "public_file": "CENTER1292.json",
+      "native_sha256": "97db6213012d4f7b3d2d6eee95d79c73fd31692332ceb6c4f6d9d84633a1bce4",
+      "public_sha256": "11e585deb695dd8dbcddb2824226d7313dbba1f03aa5c64b4cd20ee0200e84f3",
+      "transformation": "CRLF native JSON normalized to LF"
+    },
+    {
+      "native_entry": "2026-10-29_entropy-center1292/verify_center1292.py",
+      "public_file": "verify_center1292.py",
+      "native_sha256": "0ec853474c3b55b79ae7df65422eccc7dec033df1de428b0e816a90da0b29fd6",
+      "public_sha256": "105cb82bcf00ffc344e8614573760038cd258e8e79b14feb7e5f1d3a6811c804",
+      "transformation": "public script adds explicit LF output writer only"
+    },
+    {
+      "native_entry": "2026-10-29_entropy-integration1287/RANK-FACTOR1287.txt",
+      "public_file": "RANK-FACTOR1287.txt",
+      "native_sha256": "4959cc62300a32d7969aa7858bc3c46352bd8dc292b8b7e77f0778b61022adcf",
+      "public_sha256": "4959cc62300a32d7969aa7858bc3c46352bd8dc292b8b7e77f0778b61022adcf",
+      "transformation": "byte-identical"
+    },
+    {
+      "native_entry": "2026-10-29_entropy-integration1287/PRIMARY1287.json",
+      "public_file": "PRIMARY1287.json",
+      "native_sha256": "7843a7af5405984fbd27eb68be2efb583b31f408b13c4bfe70c984b846063780",
+      "public_sha256": "7843a7af5405984fbd27eb68be2efb583b31f408b13c4bfe70c984b846063780",
+      "transformation": "byte-identical"
+    }
+  ]
+}

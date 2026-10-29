@@ -1,0 +1,49 @@
+{
+  "scope": "General local 2x2 sign criterion derived analytically; one prior calibration only, not a parameter grid or universal entropy proof.",
+  "kernel_reference_check": {
+    "p": "1/2",
+    "d": "9/25",
+    "a": {
+      "lo": "3831941979071492794906164124603154000602",
+      "hi": "3831941979071492794906164124603154001915",
+      "denominator": "10000000000000000000000000000000000000000",
+      "approx_mid": 0.38319419790714926
+    },
+    "b": {
+      "lo": "2998361667339296029158969182495723366468",
+      "hi": "2998361667339296029158969182495723367304",
+      "denominator": "10000000000000000000000000000000000000000",
+      "approx_mid": 0.2998361667339296
+    },
+    "c": {
+      "lo": "3326347551180582219256892051004934914218",
+      "hi": "3326347551180582219256892051004934915128",
+      "denominator": "10000000000000000000000000000000000000000",
+      "approx_mid": 0.33263475511805823
+    },
+    "det": {
+      "lo": "42495991027118689958862890404351204290",
+      "hi": "42495991027118689958862890404351205611",
+      "denominator": "10000000000000000000000000000000000000000",
+      "approx_mid": 0.004249599102711869
+    },
+    "overlaps_full_spectral_metric1290": true
+  },
+  "exact_polynomial_identity": {
+    "detQ": [
+      "319/1600",
+      "-99/400",
+      "119/400"
+    ],
+    "p_detQ_minus_trace_numerator": [
+      "0",
+      "803/8000",
+      "-979/8000",
+      "11/500"
+    ],
+    "factor": "p(1-p)(803-176p)/8000",
+    "positive_coefficient": "C(p)=p(1-p)(803-176p)/(8000 detQ)>0 for0<p<1",
+    "detQ_completed_square": "119/400*(p-99/238)^2+88/595"
+  },
+  "limitation": "No proof that a>=0,b>=0,ab>=c^2 throughout0<p,d<1. Boundary stability is only for fixed interior p, not uniform joint p,d limits. Entropy/core Q remains unproved."
+}
