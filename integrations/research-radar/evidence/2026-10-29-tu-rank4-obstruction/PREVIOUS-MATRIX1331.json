@@ -1,0 +1,109 @@
+{
+  "source_file_sha256": "7469d3d079e626e62818d47636012ccccca2cf3aa0ba761350e549a8bfa3cd79",
+  "record_index": 24,
+  "edges": [
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      5
+    ]
+  ],
+  "matrix": [
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      -1,
+      0,
+      -1,
+      0
+    ],
+    [
+      0,
+      -1,
+      0,
+      -1
+    ],
+    [
+      -1,
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      -1,
+      -1
+    ],
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "family": "cographic",
+  "old_TU_check": {
+    "source": "SEARCH808.json",
+    "row": 24,
+    "graph_vertices": 6,
+    "rows": 4,
+    "columns": 9,
+    "all_nonempty_square_minors": 714,
+    "all_abs_det_le1": true
+  },
+  "limits": "Existing714minor control reused; no LP/binary counts copied or rerun."
+}

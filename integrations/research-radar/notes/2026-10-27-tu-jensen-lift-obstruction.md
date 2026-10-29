@@ -37,3 +37,29 @@ Next seek a direct universal argument or a genuine Jensen witness, not more repe
 [Leake–Yekta primary question](https://arxiv.org/html/2609.39917v1#S1.SS2). [Bernstein–Sullivant primary background](https://doi.org/10.1016/j.jctb.2016.11.003). Directed primary refresh807 covers13 endpoints with dated response hashes and unchanged OpenAI/DeepMind pins; this is not exhaustive mathematical coverage. No foreign full text is redistributed.
 
 [Own evidence manifest](../evidence/2026-10-27-tu806/PUBLIC-MANIFEST816.json).
+
+## Rank-four boundary: the direct A4-normal extension fails
+
+The selected Schubr edition4 main proof has since been contextually audited and [integrated with its exact scope and own checks](../evidence/2026-10-29-jensen-main-audit/transfer-audit1329.txt). The supported regime is a bounded central fiber of actual affine dimension at most3, with the stated integrability and integer-mean assumptions. This supersedes the historical abstract-only reading above; no general-dimension theorem, independent review or new manuscript score follows.
+
+For a3-by3 table, retain all three row sums and the first two column sums as the five demand coordinates. The nine inequalities in four free top-left coordinates have the following normal rows:
+
+```text
+(1,0,0,0)   (0,1,0,0)   (-1,-1,0,0)
+(0,0,1,0)   (0,0,0,1)   (0,0,-1,-1)
+(-1,0,-1,0) (0,-1,0,-1) (1,1,1,1)
+```
+
+The explicit matrices M,D,K in the [exact certificate](../evidence/2026-10-29-tu-rank4-obstruction/RESULT1331.json) satisfy MD=I5 and MK=0. The four free rows form I4, so this parametrization is an integer lattice bijection without an index factor. All-ones margins have the strictly positive table with entries1/3, and boundedness follows from the row sums. Thus the actual central affine dimension is4.
+
+**Eliminated hypothesis.** There is no common invertible real coordinate transformation, even allowing independent nonzero rescaling of every normal, sending all nine normal directions into the A4 root directions. All nine are pairwise nonparallel and have exactly six dependent triples. The ten A4 directions are the edges of K5; their dependent triples are its triangles. Any nine directions omit one edge, leaving exactly10-3=7 triangles. Invertible transformations and nonzero rescaling preserve dependence, so6 cannot equal7. This rules out the stated direct extension of the low-rank root-normal mechanism.
+
+The [standard-library exact checker](../evidence/2026-10-29-tu-rank4-obstruction/verify1331.py) verifies the identities, ranks, all normal pairs and triples, all ten omitted-root choices, and an actual A4 subset as a positive control. Its [archival projection](../evidence/2026-10-29-tu-rank4-obstruction/PREVIOUS-MATRIX1331.json) shows that K is exactly a row permutation of SEARCH808 record24. The old714-minor TU control is reused; the old LP/count campaigns are not repeated. The projected matrix-vector order must not be identified with the original edge list.
+
+This is a self-contained instance of the classical cographic K3,3 obstruction, with no novelty claim. It is distinct from the three-color lift obstruction above. It does not refute Jensen or exclude alternative lifts, subdivisions or analytic proofs. The exact falsifier for this rejected mechanism would be an invertible transformation and nine distinct A4 directions with nine nonzero scales satisfying the normal equations, or an error in the displayed dependence counts. No Lean certificate, independent assessment, manuscript or grade is asserted; the general candidate remains speculative.
+
+## Earlier transportation inequalities: retain their correction and total
+
+[Barvinok's primary preprint](https://arxiv.org/html/math/0603655), first submitted28March2006, appeared in [Advances in Mathematics211(2007),105–122](https://doi.org/10.1016/j.aim.2006.07.012). Selected Theorem2.1 assumes common total N for every endpoint and gives a corrected, approximate inequality with margin factors. Equation2.3 asks for the uncorrected inequality, including unweighted tables. Equation2.4 gives a narrower majorization monotonicity statement. These selected statements do not settle arbitrary-total Jensen. Their full proofs were not audited here, and a question in this historical source does not certify its present open status. [Version, hash and reading boundaries](../evidence/2026-10-29-tu-rank4-obstruction/READING1332.json) are retained without redistributing foreign full text.
+
+**Next action.** Abandon the direct A4-normal extension on this case. Any further rank-four proposal must name a different structural mechanism and a bounded falsifier while retaining the exact mean and lattice hypotheses. More repetitions of finite LP tables or a separate minor paper do not close the unrestricted problem.

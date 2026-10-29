@@ -1406,6 +1406,23 @@
         "domain.algebra",
         "domain.complexity_theory"
       ]
+    },
+    {
+      "id": "barvinok-contingency-brunn-minkowski-2006",
+      "title": "Brunn–Minkowski Inequalities for Contingency Tables and Integer Flows",
+      "url": "https://arxiv.org/abs/math/0603655",
+      "kind": "preprint",
+      "published_on": "2006-03-28",
+      "observed_on": "2026-10-29",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Selected Theorem2.1 gives a corrected approximate inequality for weighted contingency tables with a common endpoint total N; equation2.3 asks the uncorrected inequality and2.4 states unweighted majorization monotonicity.",
+      "limits": "Selected statements and proof outline only, not full-proof audit. Fixed-total corrected bounds and majorization monotonicity do not settle unrestricted arbitrary-total Jensen. The historical question is not a certification of present open status. Journal publication2007, DOI10.1016/j.aim.2006.07.012; author PDF titleApril2006, server2025 path is not first publication.",
+      "reuse": "Bibliography and own scoped synthesis; no foreign full text redistributed or training permission inferred.",
+      "anchors": [
+        "domain.algebra",
+        "domain.complexity_theory"
+      ]
     }
   ],
   "candidates": [
@@ -1576,7 +1593,8 @@
         "schubr-low-dimensional-unimodular-power-2026",
         "branden-huh-lorentzian-v8",
         "haase-et-al-mixed-ehrhart-2017",
-        "brion-lattice-polytope-1988"
+        "brion-lattice-polytope-1988",
+        "barvinok-contingency-brunn-minkowski-2006"
       ],
       "node_ids": [
         "domain.algebra",
@@ -1584,12 +1602,12 @@
       ],
       "dictionary": "Integer right-hand sides -> exact fiber counts -> log-count concave envelope at integer barycenters.",
       "preserved": "Unimodular system, finite fibers, nonnegative integer solutions and exact integer barycenter.",
-      "lost_or_unproved": "No general Jensen proof or exact violation. New9600LP probes yield no strict lead;261149 exact ternary RHS controls are finite only. The12-by18 K4 three-color lift has maximal minors1and2, so direct unimodular-theorem transfer is invalid. Edition4 of the Schubr preprint reports central affine dimension<=3; only its finite rank-three normal lemma is checked here. General dimensions remain unproved; do not relabel known low-dimensional work as novel. Source edition4 now accounts for central affine dimension<=3 after contextual selected-main-proof audit1323-1329. The unrestricted higher-dimensional question remains unresolved in this dossier; no own formal theorem or novelty is claimed.",
+      "lost_or_unproved": "No general Jensen proof or exact violation. Previous9600LP and261149 ternary controls remain finite only; the12-by18 K4 three-color lift has maximal minors1and2. Schubr edition4 selected main proof supports central affine dimension<=3 after contextual audit1323-1329; whole-manuscript correctness, novelty, independence and formal verification are not certified. Positive3-by3 transportation has actual dimension4. Exact1331 rejects its direct common-linear A4 root-normal embedding (six versus seven dependent triples), even allowing individual nonzero rescaling. This classical obstruction does not refute Jensen or all rank4 methods. Barvinok2006 selected corrected fixed-total inequality and majorization statement do not settle arbitrary-total Jensen.",
       "hypothesis_to_remove": "The line-supported restriction beyond the literature-covered central affine dimension<=3 regime, retaining the exact integer barycenter, finiteness/integrability and lattice structure.",
       "falsifier": "An exact unimodular system and rational finite weights with integer barycenter violating the Jensen inequality; all fiber counts and finiteness must be certified.",
-      "next_finite_task": "Compute the actual central active-face dimension before selecting a target. Do not rederive dimension<=3 as novel. A positive3-by3 transportation fiber has dimension4 and lies outside this source scope; choose a concrete new structural mechanism or an exact global Jensen witness there or in another defined higher-dimensional case. No generic LP/seed campaign or standalone minor paper follows from finite controls.",
+      "next_finite_task": "Stop the direct A4 root-normal extension on the3-by3 case: its dependence invariant fails exactly. Require a different explicit structural mechanism and bounded falsifier, or reconcile another defined pending problem; do not repeat generic LP/seed campaigns or derive a separate minor paper. Retain actual active-face dimension, exact mean and lattice structure.",
       "paper_score": null,
-      "review_packet": "399 bounded audit validates an elementary rational-weight binary lift to unweighted TU fibers and generic non-TU closure barriers;64C/Dfiles checked. Exact counts cover184756configurations/19448fibers;2982LPexecutions have no exact violating certificate.392has162executions on161distincttargets. The lift may be exponential in binary weight length. No Jensen solution, converse reduction or importance score. Selected-main-source audit1323-1329 is contextual and unscored, using the exact Schubr edition4 PDF; no material obstruction found for Theorems1.1/2.1 and Lemma3.1, with classical inputs explicitly relied on. It is not independent refereeing, whole-manuscript audit or formal verification. Exact own reports/checkers and failures accompany the source-scope update."
+      "review_packet": "399 bounded audit validates an elementary rational-weight binary lift to unweighted TU fibers and generic non-TU closure barriers;64C/Dfiles checked. Exact counts cover184756configurations/19448fibers;2982LPexecutions have no exact violating certificate.392has162executions on161distincttargets. The lift may be exponential in binary weight length. No Jensen solution, converse reduction or importance score. Selected-main-source audit1323-1329 is contextual and unscored, using the exact Schubr edition4 PDF; no material obstruction found for Theorems1.1/2.1 and Lemma3.1, with classical inputs explicitly relied on. It is not independent refereeing, whole-manuscript audit or formal verification. Exact own reports/checkers and failures accompany the source-scope update. Rank4 check1331 is contextual exact rational computation with a positive control and archived matrix identity; it has no independent review, formal proof, manuscript grade or novelty certification. See existing TU obstruction note and evidence/2026-10-29-tu-rank4-obstruction."
     },
     {
       "id": "eh-s222-calibrated-stage1",
