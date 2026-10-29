@@ -1,0 +1,66 @@
+{
+  "status": "Exact author-side falsifier of a shortcut, not a counterexample to the source theorem",
+  "prime": 5,
+  "quadratic_level": 1,
+  "sphere_points": [
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      1,
+      2,
+      1
+    ],
+    [
+      2,
+      4,
+      1
+    ],
+    [
+      3,
+      1,
+      1
+    ],
+    [
+      4,
+      3,
+      1
+    ]
+  ],
+  "affine_line_direction": [
+    1,
+    2,
+    0
+  ],
+  "isotropic_direction_norm": 0,
+  "three_point_relation": [
+    1,
+    -2,
+    1
+  ],
+  "ternary_words": [
+    [
+      1,
+      0,
+      1
+    ],
+    [
+      0,
+      2,
+      0
+    ]
+  ],
+  "equal_symbol_sums": 2,
+  "equal_first_moment": [
+    2,
+    4,
+    2
+  ],
+  "Hamming_distance": 3,
+  "rejected_shortcut": "A finite-field quadratic sphere alone eliminates collinear triples and makes one moment plus symbol sum ensure distance4",
+  "source_boundary": "Source explicitly requires real lifts and no-wrap control. This control does not satisfy that datum and does not refute the source. Prime5 is a minimal illustration; for any prime admitting i^2=-1, (t,it,1) gives the same obstruction.",
+  "formal_proof": false,
+  "new_paper": false
+}
