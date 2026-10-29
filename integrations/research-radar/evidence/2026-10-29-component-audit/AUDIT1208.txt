@@ -1,0 +1,205 @@
+AUDIT1208 — one unscored component audit
+Date: 2026-10-29, Europe/Stockholm
+
+The dimension-only preparation minorization, the continuous CP remainder, the equal-reference trace/Umegaki upper factors, and the stated classical common-component envelope are SUPPORTED WITHIN THE STATED HYPOTHESES. I found no counterexample to those scoped mathematical statements. The envelope is a minimum, not merely an unproved candidate infimum, once the analytic lower bound and the explicit classical family are combined. This conclusion concerns the positive CP common-component coefficient. It does not establish sharp complete contraction, novelty, a limit theorem, or a manuscript-level assessment.
+
+The required boundaries survive: the final actual instrument must prepare input-independent posteriors; equal reference marginals are essential for complete contraction; b is generally only a representation-dependent feasible common mass; and the postprocessor must have the stipulated preparation representation. There is one small endpoint presentation repair and a limitation in how the first checker describes its coverage, detailed below. No grade, vote, acceptance recommendation, or importance target is assigned.
+
+PROVENANCE AND INTEGRITY
+
+Requested configuration: GPT-6 Astra, xhigh. Effective model identity: unknown/unattested. Effective reasoning effort: unknown/unattested. The task says fork_turns=none was requested; actual runtime isolation and statistical independence are unverified. This report is an agent-produced mathematical audit, not human peer review. No model identity follows from this report's self-description. The filesystem is shared.
+
+The request and INPUT1208.json were read first, and D:\LEEME.md was read before creating output folders. All writes for this audit are under C:\Trabajo\airr\2026-10-29_component1208\output, with runnable copies and logs in its owned scratch_audit1208 subfolder. The parent is responsible for archival to D:. No frozen file, manuscript, repository, canonical state, other chat, automation, or case was modified. No further agent was spawned.
+
+INPUT1208.json SHA256:
+9cc1630ae94b9ff6a6580d463bd01e72062a78053c2b78bf4ae992f826464c12
+This matches the externally supplied expected hash. Every one of its twelve listed files matches both its SHA256 and byte length. Verification before and after the supplied controls passed. The final hash manifest repeats the input verification and hashes every output artifact except itself. Historical source-transport hashes contained inside READINGS1206/1207 are records supplied by the packet; their JSON files were verified, but those old HTTP response bytes were not supplied and their transport hashes were not independently reproduced.
+
+1. SPECTRAL DIMENSION BOUND — SUPPORTED
+
+Use D_tr(rho,sigma) = ||rho-sigma||_1/2. Assume Psi:M_d -> M_d is CPTP and eta_tr(Psi) <= r, where eta_tr is the supremum of the output/input trace-distance ratio over distinct states. Take r >= 0; its meaningful range is [0,1]. Define osc(H)=lambda_max(H)-lambda_min(H). No unitality of Psi is assumed or needed.
+
+For Hermitian trace-zero Delta,
+  |Tr(H Delta)| <= osc(H) ||Delta||_1/2.
+Indeed subtract ((lambda_max(H)+lambda_min(H))/2) I and apply Holder's inequality. Let u,v be extremal orthogonal eigenvectors of G=Psi*(F), when osc(G)>0. Their input trace distance is one, so
+  osc(G) = Tr[F(Psi(|u><u|)-Psi(|v><v|))]
+         <= osc(F) D_tr(Psi(|u><u|),Psi(|v><v|))
+         <= r osc(F).
+If osc(G)=0 the assertion is immediate. Thus the normalization has no missing factor two.
+
+Writing the eigenvalues of G as lambda_min(G) plus nonnegative increments, at most d-1 of which can be nonzero, gives
+  lambda_min(G) >= Tr(G)/d - (d-1) osc(G)/d.
+For the given positive POVM density F_a with integral F_a dnu=I, positivity implies osc(F_a)<=Tr(F_a), and integral Tr(F_a) dnu=d. Because Psi* is unital,
+  integral G_a dnu=I,    integral Tr(G_a) dnu=d.
+Integrating the previous inequalities proves
+  b = integral lambda_min(G_a) dnu >= 1-(d-1)r.
+Also 0<=c_a=lambda_min(G_a)<=Tr(G_a)/d, so 0<=b<=1. Therefore
+  b >= max(0,1-(d-1)r).
+The same d appears as both prefix input and output dimension, exactly as requested. This proof is not a claim about arbitrary rectangular prefixes with the same constant.
+
+For d=1 the conclusion is directly b=1; the empty supremum defining eta can be assigned zero, or that case can simply be stated separately. For r=0 every G_a is scalar almost everywhere and b=1. At r=1/(d-1) the lower guarantee becomes zero, and the classical example below attains it. No positivity is claimed above that threshold.
+
+2. MEASURABILITY, INTEGRABILITY, AND ACTUAL POSTERIORS — SUPPORTED
+
+Entrywise measurable finite matrices are strongly measurable. Psi* is a fixed continuous linear map, and the minimum eigenvalue is a continuous function of a Hermitian matrix. Thus G_a and c_a are measurable without selecting measurable eigenvectors. The bound c_a<=Tr(G_a)/d supplies integrability. Each prepared state tau_a has trace norm one; hence c_a tau_a is integrable. Positive matrix fields are norm-integrable whenever their traces are integrable. A POVM density need not obey F_a<=I pointwise, and the proof correctly does not use that false density bound.
+
+For the actual last branch T_a(X)=Tr(F_a X) tau_a, all positive-probability earlier records followed by a finish at a yield the same final posterior tau_a. Summing the unnormalized previous branch maps gives Psi; the intervening normalization factors cancel against the branch probabilities. Consequently the block posterior-state kernel is
+  K(rho,B)=integral Tr(G_a rho) 1_B(tau_a) dnu.
+Since G_a>=c_a I, for b>0 the measure
+  lambda(B)=b^(-1) integral c_a 1_B(tau_a) dnu
+is a probability measure, and K(rho,B)>=b lambda(B) for every state rho and Borel B. Zero-probability records do not affect the identity. The tau map may be many-to-one; no injectivity is needed.
+
+This identity uses the stipulated last branch, fixed apart from allowed environmental parameters. A feedback protocol whose last branch also depends on preceding observed records requires its own specified representation and cannot silently be substituted. The conclusion concerns posterior states at the block end, not a common component of complete outcome histories. It also is not a statement about posteriors conditioned on a retained quantum reference.
+
+If the appropriate prefixes have eta_tr<=q^(L-1), 0<=q<1, choose L with (d-1)q^(L-1)<1. The positive constant is uniform when that bound is uniform. Random-environment applications still require joint measurability, a measurable reference measure kernel when it varies, a common full-measure set, and the source's time-shift convention. These are retained assumptions, not results of the scalar estimate. No quenched CLT or general limit theorem was audited here.
+
+For b=0, the normalized lambda formula is undefined; only the vacuous zero minorization is asserted. For b=1, integral Tr(G_a-c_a I)=0 forces G_a=c_a I almost everywhere. The observed final posterior law is then independent of rho. Even when b=0, the optimal minorization on posterior space can be larger, because different labels can prepare the same state.
+
+3. CONTINUOUS CHOI REMAINDER AND ENDPOINTS — SUPPORTED
+
+Let N=E o Psi and Omega=integral c_a tau_a dnu. Then Omega>=0 and Tr(Omega)=b. With the unnormalized input-first convention
+  J(N)=sum_ij |i><j| tensor N(|i><j|),
+the identity Tr(G |i><j|)=G_ji gives
+  J(N)=integral G_a^T tensor tau_a dnu,
+  J(R_Omega)=I tensor Omega,
+  J(N-R_Omega)=integral (G_a-c_a I)^T tensor tau_a dnu.
+The transpose is an ordinary basis transpose, not an adjoint. Transposition preserves positive semidefiniteness of an individual matrix. Hence each tensor-product integrand in the last expression is positive; no assertion that partial transpose preserves arbitrary positive bipartite matrices is being made.
+
+The last integrand's trace is Tr(G_a)-d c_a>=0, whose integral equals d(1-b). Its trace norm equals its trace, so the Choi integral is a finite-dimensional Bochner integral. The integrals of G_a^T tensor tau_a and I tensor c_a tau_a are likewise well-defined. Thus exchanging finite sums and integrals in the Choi identity is justified, and N-R_Omega is CP.
+
+For all X, Tr[(N-R_Omega)(X)]=(1-b)Tr(X). Equivalently the output partial trace of its Choi operator is (1-b)I. This is the trace-preserving normalization condition; the full Choi trace is d(1-b), not 1-b. Therefore:
+  b=0: Omega=0 and Q=N is CPTP.
+  0<b<1: omega=Omega/b is a state, Q=(N-R_Omega)/(1-b) is CPTP,
+         N=b R_omega+(1-b)Q.
+  b=1: the positive remainder has zero trace, so it vanishes and N=R_Omega.
+
+Minor presentation repair (NEEDS CORRECTION if the display is read literally): PROOF1207 labels the decomposition display 'when b>0' although Q was defined only for b<1. State the middle case as 0<b<1 and give N=R_Omega separately at b=1, or explicitly permit arbitrary Q multiplied by zero there. The preceding prose already gives the correct endpoint argument; this is not a failure of the theorem.
+
+The unnormalized convention differs from the normalized output-first convention in Hirche's 2024 SDP: swap factors and divide the Choi operator by d when translating. There is no missing d in the supplied convention.
+
+Define
+  alpha_+(N)=max {Tr W : W>=0, J(N)>=I tensor W}.
+Omega is feasible, so alpha_+(N)>=b. This is a lower bound, not a claim that the representation optimizes alpha_+. Nor does it identify the positive coefficient with Hermitian-relaxed or merely positive-map variants for general EB outputs.
+
+4. EQUAL-REFERENCE COMPLETE CONSEQUENCES — SUPPORTED
+
+Let rho_AR and sigma_AR be states with the same R marginal mu_R. For 0<b<1,
+  (N tensor id_R)(rho)=b omega tensor mu_R+(1-b)(Q tensor id_R)(rho),
+and the analogous expression for sigma has the identical first term. Subtraction and trace-norm contractivity of a channel yield
+  D_tr((N tensor id)(rho),(N tensor id)(sigma))
+    <=(1-b) D_tr(rho,sigma).
+This holds for every finite reference dimension with the same constant. It does not estimate an unrestricted diamond-norm contraction or comparisons with unequal reference marginals.
+
+Joint convexity of Umegaki relative entropy, followed by data processing for Q tensor id, similarly yields
+  D((N tensor id)(rho) || (N tensor id)(sigma))
+    <= (1-b) D((Q tensor id)(rho) || (Q tensor id)(sigma))
+    <= (1-b) D(rho||sigma).
+For a ratio definition use 0<D(rho||sigma)<infinity. No full-rank assumption is needed. Infinite relative entropy is handled in the extended sense for b<1; at b=1 both output states coincide, so handle it directly instead of writing 0 times infinity. At b=0 ordinary data processing gives factor one. Combining with section 1 gives the claimed upper factor min(1,(d-1)r).
+
+Smallest useful scope falsifier if equal marginals are removed: take any replacer N and product inputs with the same A state but different qubit R states. Then N tensor id preserves their trace distance and relative entropy. For example choose reference distributions (1/2,1/2) and (3/4,1/4) to keep relative entropy finite and positive. The claimed factor zero at b=1 would be false. Thus equality of the R marginals is essential.
+
+5. EXACT FINITE CONTROLS — SUPPORTED, WITH COVERAGE LIMITS
+
+All three checkers were copied byte-for-byte into scratch and run there with Python 3.12.6 and fractions.Fraction. Each exited zero, produced no stderr, and its parsed JSON agrees with the frozen output. The classical checker wrote only beside its scratch copy.
+
+EXACT1206 rerun SHA256 is e846dc7884a4af96b3e576358161571f13a224cb247358d488e82d3c890a63c8; the frozen SHA256 is 3c3134e7c54316cecae2ca6c0ae5e3a6a58f10eddcc692682568895fb5fb5ab6. This failed byte-equality check is retained. It is entirely 144 LF-to-CRLF conversions: lengths 3743 versus 3887; normalizing newlines gives exact byte equality. EXACT1207 and CLASSICAL1207 are byte-identical to their frozen outputs. No failed assertion or semantic mismatch occurred.
+
+The first checker verifies the Pauli twirl on all four matrix units; complex linearity makes this a full complex-linear channel identity despite real-valued matrix entries. It also verifies the four-point dual identities, eigenvalues, and the closed-form depolarized states for L=1,...,20. Its Boolean wording slightly overstates direct program coverage: closure of the pure-state pair under the unitaries alone does not prove that the uniform mixture is stationary, and the L loop builds the closed form rather than recursively applying the channel. The audit supplement explicitly checks both transitions have branch counts (2,2), so both conditional pure probabilities are 1/2, and applies the depolarizing map recursively for all twenty steps. Both pass. Thus the conclusions are supported, with the distinction between original and supplemental checks preserved.
+
+For the planar channel, the continuum calculation uses integral n=0 and integral n n^T=diag(1/2,0,1/2); these elementary circle moments give the specified Bloch action. After one prefix G_theta=I+(n_theta.sigma)/2, so c_theta=1/2 and b=1/2. The rational four-point version uses counting measure, effects (I+n.sigma)/4, and c_i=1/8; its four terms again total 1/2. These differing density normalizations are consistent.
+
+For N equal to the square of that four-point channel, Omega=I/4. The Choi remainder has Bell eigenvalues (1/2,1/4,1/4,0). The reported dual is |v><v| with v=(0,1,-1,0), so it is positive, Tr_input Z=I, and Tr(J(N)Z)=1/2. For every positive feasible W,
+  Tr W=Tr[(I tensor W)Z]<=Tr[J(N)Z]=1/2.
+The feasible Omega has trace 1/2; hence weak duality alone certifies alpha_+(N)=1/2. Strong duality or a numerical optimizer is unnecessary. This is not an equality proof for complete trace or Umegaki contraction.
+
+The real planar test cannot detect an omitted transpose on complex effects. The general derivation above does. A diagnostic qubit effect F=(I+sigma_y)/2 has F^T=(I-sigma_y)/2; for the branch X -> Tr(FX)|0><0|, its Choi matrix is F^T tensor |0><0|, not F tensor |0><0|. The supplied proof has the correct transpose.
+
+6. CLASSICAL FAMILY AND THE EXACT ENVELOPE — SUPPORTED
+
+For d>=2 and 0<=s<=1, let
+  P_s(y|i)=(1-s)/d+s(1-delta_yi)/(d-1),
+and let Psi_s dephase the input and output this distribution in the standard d-state basis. It is CPTP and entanglement breaking. For any Hermitian trace-zero Delta,
+  Psi_s(Delta)=-(s/(d-1)) Diag(Delta).
+Dephasing is trace-norm contractive, so eta_tr(Psi_s)<=s/(d-1), including for arbitrary coherent quantum inputs. Two different basis states attain equality. This fills the step from the checker's classical row-pair calculation to the full quantum ordinary trace coefficient.
+
+For each y, min_i P_s(y|i)=(1-s)/d. Thus the common diagonal operator W=(1-s)I/d is feasible and has trace 1-s. Conversely, if W is any positive CP common component, testing J(Psi_s)-I tensor W on each |i> tensor |y> gives W_yy<=P_s(y|i). Summing the resulting W_yy<=(1-s)/d yields Tr W<=1-s, even if W has off-diagonal entries. Therefore alpha_+(Psi_s)=1-s. E may be the output dephasing map, so E o Psi_s=Psi_s and E is admissible.
+
+Let F_d(r) be the infimum of alpha_+(E o Psi) over the stipulated square d-dimensional prefixes with eta_tr(Psi)<=r and finite-dimensional EB postprocessors, allowing d orthogonal output states. Section 3 supplies
+  F_d(r)>=max(0,1-(d-1)r).
+For 0<=r<=1/(d-1), choose s=(d-1)r; the explicit pair realizes equality. For r>=1/(d-1), choose s=1; its coefficient is zero and its eta_tr=1/(d-1)<=r. Hence
+  F_d(r)=max(0,1-(d-1)r),
+and the infimum is attained. The natural contraction range is 0<=r<=1; an upper bound r>1 merely repeats the zero plateau. At d=1 the separate envelope is one. Padding the output permits any fixed output dimension at least d. No assertion for a fixed smaller output dimension follows from this witness.
+
+This is sharpness of the common-component envelope under a <=r constraint. It is not sharpness of either complete-contraction envelope; it does not even supply lower bounds on those coefficients. A tight sufficient certificate is not generally a tight data-processing coefficient. The separate future binary-symmetric-channel sketch was not read or audited.
+
+The classical lower comparison itself is elementary from the known common-component formula. For d distributions P_i,
+  1-sum_y min_i P_i(y)
+   =sum_y max_i(P_1(y)-P_i(y))
+   <=sum_{i=2}^d sum_y(P_1(y)-P_i(y))_+
+   =sum_{i=2}^d TV(P_1,P_i)
+   <=(d-1) eta_TV.
+The first maximum includes i=1, so it is nonnegative. This also explains why the comparison should not be presented as a newly invented classical coefficient theorem.
+
+7. ADVERSE CONTROLS AND PROHIBITED INFERENCES
+
+(a) Arbitrary recorded instruments: REFUTED. The four-Pauli qubit instrument T_u(rho)=U rho U*/4 has a completely replacing summed channel. The posterior chain fixes I/2, and it also leaves the uniform law on the two computational pure states stationary. The laws have equal barycenter and disjoint supports. From either support, no positive common posterior minorization across both starting states can exist, even after a finite block. A one-outcome preparation of I/2 has the same nonselective channel but a different posterior kernel. This is already a dimension-two falsifier; a one-dimensional system has only one state.
+
+(b) Posterior TV convergence from trace/Wasserstein convergence: REFUTED. The one-record map rho -> rho/2+I/4 gives distinct deterministic posterior states from the two basis inputs at every finite time L. Their point-mass laws have TV distance one; their state trace distance and trace-metric W1 distance are 2^(-L). The kernel converges weakly/Wasserstein toward I/2 while TV convergence from those nonstationary starting states fails.
+
+(c) Identification of b with an optimized channel or posterior coefficient: REFUTED in general. Take d=2, Psi=id, F_0=|0><0|, F_1=|1><1|, and tau_0=tau_1=tau. Then b=0, yet E o Psi is a replacer with alpha_+=1 and the actual posterior law is always delta_tau. Thus b is a valid feasible certificate whose value can depend on the representation and on retaining labels before pushing forward to states.
+
+(d) Removing the EB postprocessor and claiming the same CP component for Psi: REFUTED. A useful prior qubit example is Phi(X)=(Tr(X)I+X^T)/3. Its eta_tr is 1/3, but J(Phi)=(I+Swap)/3 has symmetric support and alpha_+(Phi)=0. A nonzero I tensor W cannot have its support contained in that symmetric subspace: choose u in supp W and v perpendicular to u. This is the d=2 specialization of the checked source example in Pathirana, Appendix A, Example 4. Taking E=id would incorrectly predict at least 2/3. Identity is not an admissible EB postprocessor here. The counterexample is a boundary check, not a contradiction to the audited theorem.
+
+(e) Positive versus Hermitian-relaxed components: NOT IDENTIFIED for general EB output by this proof. Positivity of Omega is essential to the probability-mixture and entropy arguments. A feasible arbitrary Hermitian W cannot simply be substituted for a state.
+
+(f) Worldwide novelty, sharp complete coefficients, capacity formulas, and a full random-environment theorem: NOT ESTABLISHED. Finite controls do not certify these assertions or replace the analytic proof.
+
+8. PRIMARY-SOURCE COVERAGE AND NOVELTY LIMIT
+
+Sources actually read in this audit, in selected passages only:
+
+[S1] Hafouta–Pathirana, arXiv:2609.40096v1, Appendix A.2, Proposition A.2, its finite and general-outcome proof, and the finite-preparation calculation.
+https://arxiv.org/html/2609.40096v1
+It already contains the general-outcome common-posterior criterion and the finite-label 1-N q^(L-1) sufficient bound. The present calculation strengthens that particular sufficient mechanism by using Hilbert dimension while retaining its preparation and measurability structure. Main limit-theorem proofs were not audited. The supplied reading record's nonuniform-environment lead is retained as prior, without a new claim about it.
+
+[S2] George–Hirche–Nuradha–Wilde, arXiv:2503.22823v3, Section 7.2, Proposition 35 and Corollary 11, statements and proofs.
+https://arxiv.org/html/2503.22823v3#S7.SS2
+The finite measurement minimum-eigenvalue formula and coincidence of the listed measurement-output coefficient variants are prior. The positive CP feasible certificate used here must not be renamed as a new definition. The previously recorded neighboring Proposition 36 direction flag remains unresolved: this audit did not adjudicate its proof/PDF or issue a source-paper refutation. The packet's unspecified earlier Theorem 5 diagnostic was not supplied in enough detail to re-audit and is not silently treated as cleared.
+
+[S3] Hirche, arXiv:2405.00105v2, conventions, Lemma III.2, Proposition III.3, Corollary III.4 and their proofs.
+https://arxiv.org/html/2405.00105v2#S3
+The CP-replacer decomposition, ordinary trace-contraction consequence, and positive Choi SDP are prior. Its Choi convention is normalized and output-first; translating that convention gives the normalization used in this audit. The complete equal-reference argument above was checked directly rather than attributed to an ordinary-contraction statement.
+
+[S4] Makur–Singh, arXiv:2309.08475v2, Definition 1, Theorem 1's relevant properties, and the normalization/polyhedron portions of its proof.
+https://arxiv.org/html/2309.08475v2#S2.SS1
+The classical coefficient is established prior art. Theorem 1 property 6 states alpha<=1-eta_TV, which is the OTHER direction; it cannot be cited as the displayed dimension lower bound. The union-bound derivation in section 6 is an elementary consequence of the common-component formula. Exact prior occurrence of the same dimension-envelope statement was not located by the bounded search.
+
+[S5] Gaubert–Qu, Dobrushin's ergodicity coefficient for Markov operators on cones, author-hosted paper, Theorem 1.1 and Section 7, particularly Corollary 7.1 and its local proof.
+https://www.cmap.polytechnique.fr/~gaubert/PAPERS/GaubertQuIEOTD14QuFinal.pdf
+The duality between trace contraction and spectral-oscillation contraction already appears there. This makes the first step of the supplied spectral argument established machinery, not an independent novelty claim. The earlier general-cone proofs were not replayed.
+
+[S6] Pathirana, arXiv:2605.00157v1, selected Section 2.1 and Appendix A CP-order comparison, particularly Example 4.
+https://arxiv.org/html/2605.00157v1
+The state-level/CP-order distinction and the symmetric-support counterexample were inspected. They delimit why contraction of Psi alone does not provide the audited CP component. The full channel-product and MPS results were not audited.
+
+[S7] Lee–Lu–Makur–Singh, arXiv:2606.19859v1, introductory definitions of general-kernel common components, equations (8)-(12).
+https://arxiv.org/html/2606.19859v1
+These definitions were read as a further prior-art lead. The curve theorems, proofs, and any possible implications for the exact envelope were not audited. Its appearance in search is not a novelty verdict.
+
+Bounded searches used combinations of Doeblin/Dobrushin, dimension, lower bound, n-1, 1-(d-1), measurement, quantum oscillation and trace distance. Search-only leads included an author-hosted earlier Makur–Singh conference paper and a computational trace-contraction paper; they were not relied upon as read proofs. A search also surfaced an AIRR manuscript metadata result; that manuscript was not opened or assessed. No absence-of-result search certifies worldwide priority.
+
+The mathematical value established here is a valid, outcome-count-independent sufficient minorization mechanism and its exact positive common-component worst-case envelope with an allowed d-state output alphabet. Whether the synthesis is new, useful enough for a particular venue, or already a corollary elsewhere remains unresolved. This audit supplies neither a publication judgment nor a new research direction.
+
+9. CONSERVED FAILURES, LIMITS, AND FINAL CLASSIFICATION
+
+Conserved failed check: raw byte equality for EXACT1206; completely explained by line endings, with raw files retained. No supplied assertion failed. Conserved coverage gaps: original invariant-law and recursive-iteration checks were weaker than their labels; supplemental exact checks passed, and the original files were preserved. The supplied real calibration does not exercise complex transposition; an analytic complex diagnostic is given above.
+
+Conserved inconclusive items: exact novelty/priority of the combined dimension envelope; unread full-source proofs; historical transport-byte hashes not independently reproduced; runtime identity/effort/independence unattested; prior neighboring source-direction flag and unspecified earlier diagnostic not adjudicated; no fixed-smaller-output sharpness; no sharp complete coefficient; no capacity or full quenched conclusion. The future binary sketch is excluded.
+
+Final scoped classification:
+SUPPORTED: spectral inequality; dimension lower bound; finite-dimensional measurable integrals; posterior minorization for the actual preparation instrument; continuous Choi CP remainder; trace normalization and substantive endpoints; equal-reference complete trace/Umegaki upper factors; both supplied posterior counterexamples; planar calibration and positive SDP optimum; classical family including arbitrary quantum inputs; exact positive common-component envelope with sufficiently large output.
+NEEDS CORRECTION: the decomposition display should distinguish 0<b<1 from b=1; descriptions of the original first checker's coverage should not claim assertions that only the supplement/manual proof supplies.
+REFUTED ONLY AS OUT-OF-SCOPE EXTENSIONS: arbitrary unraveling replacement; removal of equal-reference marginals; b always optimal; posterior TV from trace/W1; the same CP guarantee for Psi without the EB postprocessing assumption.
+NOT ESTABLISHED: novelty, broad significance, complete-contraction sharpness, smaller-output sharpness, capacities, full-source refutations, and general limit theorems.
+
+Companion files: verdict1208.json, controls1208.json, supplement1208.json, sources1208_audit.json, and MANIFEST1208.sha256.json. The scratch directory retains all copied checkers, stdout/stderr, generated JSON, and audit helper scripts.

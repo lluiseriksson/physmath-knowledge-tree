@@ -153,3 +153,5 @@ The [exact-review continuity reconciliation](notes/2026-10-28-exact-review-conti
 - [Prepared posterior minorization and instrument-level falsifiers](notes/2026-10-28-continuum-preparation.md): unreviewed dimension-only component; exact controls; no manuscript grade.
 
 - [Measurement coefficients and positive Choi remainders](notes/2026-10-28-measurement-cp-order.md): prior formula identified; unreviewed count-free CP-order component; exact finite primal/dual witness.
+
+- [Terminal unscored component audit1208](notes/2026-10-29-component-audit.md): supported hypotheses, minor clarifications, all adverses and provenance retained; novelty unresolved.

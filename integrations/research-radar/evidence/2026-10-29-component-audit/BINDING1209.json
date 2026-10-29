@@ -1,0 +1,21 @@
+{
+  "utc": "2026-10-29T00:54:50.093269+00:00",
+  "status": "terminal component audit; no manuscript score or vote",
+  "agent": "/root/astra_component1208_audit",
+  "requested_model": "gpt-6-astra",
+  "requested_effort": "xhigh",
+  "effective_identity_effort": "unattested",
+  "context": "fork none requested; shared filesystem; runtime isolation/statistical independence unverified; not human peer review",
+  "input_manifest_sha256": "9cc1630ae94b9ff6a6580d463bd01e72062a78053c2b78bf4ae992f826464c12",
+  "report_sha256": "b8cf457ea9bb82346d59d5fc5c4e6dccb1f9c995c997af827934ef7fe0291dc2",
+  "verdict_sha256": "7ab50c2359efb01e291e5f81aebead18bd7afd7e3c44bda57181aa42d0804e6d",
+  "output_manifest_sha256": "d853a366c72589236ec86d73cc32989505b711837c52f41c67374fc12f68554a",
+  "frozen_inputs_verified": 13,
+  "outputs_verified": 21,
+  "C_D_bytes_identical": true,
+  "mathematical_verdict": "supported within stated hypotheses",
+  "novelty": "not established",
+  "corrections": "Endpoint display0<b<1 versusb1; original checker coverage clarified with audit supplement. No original input/checker/report overwritten.",
+  "preserved_adverses": "Raw EXACT1206 LF/CRLF mismatch retained and normalized equality explained; all scope counterexamples and unresolved literature/source flags retained.",
+  "excluded": "Separate root BSC1208/involution sketch was NOT read or audited and inherits no finding or grade."
+}
