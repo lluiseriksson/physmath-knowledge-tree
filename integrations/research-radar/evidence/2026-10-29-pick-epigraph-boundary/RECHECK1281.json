@@ -1,0 +1,13 @@
+{
+  "scope": "Primary assistant recheck, not independent model review or formal proof",
+  "checks": [
+    "Leading-form realfactor restriction andquadratic coefficient argument rechecked;lambda>2C is essential,r=0 excluded.",
+    "Commonkernel compression uses full-dimensionalinterior; definite determinant nonzero there.",
+    "Boundaryarc divisibility usesstandardplane-curve common-factor lemma explicitly, not numericalsamples.",
+    "Real-zero contradiction only excludes directunliftedLMIs. Explicitfixedsliceauxiliarylifts retained.",
+    "Epigraph division onlyforH>0,zero-thresholdvertex excludedfromoriginalc>0family; objective requires two simplevaluenodes andconstantannihilation."
+  ],
+  "new_grade": false,
+  "new_paper": false,
+  "novelty_claim": false
+}

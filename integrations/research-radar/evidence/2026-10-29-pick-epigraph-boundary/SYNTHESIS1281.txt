@@ -1,0 +1,48 @@
+Two-node interpolation: variable-normalization epigraph and the unlifted boundary
+
+Scope and evidence
+This continues the existing interpolation-semidefinite-boundary candidate. It uses the exact own published Pick criterion already identified in1275, with own elementary analytical derivations and bounded exact arithmetic controls. It is not a new manuscript, independent model assessment, formal kernel proof or novelty certification. Candidate confidence stays speculative for the full jointly affine lifted/higher-jet target. The explicit fixed-normalization auxiliary-variable lifts from1277 remain valid.
+
+1. Actual variable-normalization set
+Fix0<r<1 and kappa=(1+r^2)/(1-r^2). For analytic quadrant maps withf(0)=c+i,c>0 andf(z)=x+iy,|z|=r, setp=x-c and
+ S=p^2+y^2+1,
+ H=2*kappa*y-S,
+ B=S^2-4*y^2=(p^2+(y-1)^2)*(p^2+(y+1)^2).
+The recorded Pick quartic becomes exactly F=B-4*c*(c+p)*H.
+Its feasible data are equivalently
+ (p,y)inD={H>0}, c>=psi(p,y), c>0,
+ psi=(-p+sqrt(p^2+B/H))/2.
+HereD is the bounded OPEN disk p^2+(y-kappa)^2<kappa^2-1. It forcesy>0. Away fromp=0,y=1, B>0 impliespsi>max(0,-p), sox=c+p>0 follows. Atp=0,y=1,psi=0 and all constantsf=c+i,c>0 are admissible. The closed epigraph adds only the vertexc=0 there, corresponding to the boundary constantf=i.
+
+The boundaryH=0 is not part of the division formula. B is positive on that circle forr>0, so no finitec is feasible there;psi diverges as the boundary is approached. The colliding-node caser=0 is handled separately in1275/1276. No compactness of the full unbounded body or automatic attainment in the original open domain is asserted.
+
+If there are exactly two simple value nodes and the residue functional annihilates constants, writeLambda(f)=gamma*(f(z)-f(0)). Then its manuscript objective is
+ J=Im(gamma)*p+Re(gamma)*(y-1)-c.
+The coefficient ofc is-1, so eliminatec bypsi, retaining a supremum whenpsi=0. This formula is not applied to profiles with additional nodes or derivatives. It gives a scalar epigraph reduction, not an affine semidefinite lift. The only nonzero recession ray of the closed body ispositive(1,0,0)in(c,p,y), orpositive(1,1,0)in(c,x,y): D is bounded, and adding a nonnegative realconstant preserves the quadrant map.
+
+2. A defined representation class is excluded
+For every fixedc0>0,0<r<1, the two-value slice has NO direct affine LMI of any finite size with no auxiliary variables. This excludes an unlifted spectrahedron, not a spectrahedral shadow. The full variablec body also cannot be a direct spectrahedron, since affine slices of one would remain spectrahedra.
+
+The argument is elementary once the classical necessary real-zero property of a definite affine pencil is used. PutC=c0^2+1 and diagonalize the trace-zero quadratic form in1276. Its positive eigenvalue is
+ lambda=2*sqrt((c0^2-1)^2+4*c0^2*kappa^2),
+ lambda^2-4*C^2=16*c0^2*(kappa^2-1)>0.
+An orthogonal rotation gives the boundary polynomial
+ G(X,Y)=(X^2+Y^2)^2+C^2-lambda*X^2+lambda*Y^2,
+with the relevant componentX>0. Its positive eigendirection corresponds to the original first quadrant.
+
+Irreducibility over the reals: the leading form is(X^2+Y^2)^2, so a nontrivial real factorization can only be two quadratics. Normalize their leading forms toX^2+Y^2. Cubic cancellation gives(s+L+D)(s-L+E),s=X^2+Y^2. Constant and linear coefficients giveDE=C^2 and(E-D)L=0. IfL=0, no anisotropic quadratic term results. OtherwiseE=D=+/-C. WritingL=lX+mY, matching theY^2 coefficient would requirem^2=2D-lambda<0. This is impossible becauselambda>2C. ThusG is irreducible.
+
+If the slice were{L0+X*LX+Y*LY>=0}, remove its common kernel. An interior point then has a positive definite pencil: a kernel vector at an interior point lies in the kernels of all nearby positive and negative perturbations, hence in every coefficient kernel. The resulting determinantq is nonzero and vanishes on a nonsingular real boundary arc ofG. The standard polynomial common-factor/resultant fact for plane curves impliesG dividesq; without a common factor two such curves have only finitely many common points. A nonsingular arc exists onY=0 since lambda^2>4C^2.
+
+At the interior point(X,Y)=(sqrt(lambda/2),0), restrict to the vertical line. The factorG becomes
+ Y^4+2*lambda*Y^2+C^2-lambda^2/4.
+It is strictly convex with a negative constant and exactly two real roots; its other two roots are nonreal. A positive definite affine pencil restricted to any line through that point has only real determinant roots, by diagonalizing its symmetric linear coefficient after congruence. SinceG dividesq andq is nonzero at the interior point, the nonreal factor roots are impossible. This proves the stated direct-LMI obstruction.
+
+The rational examplec0=1,r=3/5 usesF=(x^2+y^2)^2+4-17xy. It hasF(1,1)=-9, F(2,2)=0,gradient(2,2)=(30,30). On the liney=1 the quartic isx^4+2x^2-17x+5; its second derivative12x^2+4 is positive and its values at0,1,3 are5,-9,53. These exact checks support the written analytical proof; finite point sampling is not presented as an irreducibility or universal root-count proof.
+
+3. Provenance, limits and remaining target
+The necessary direct-LMI/rigid-convexity criterion is classical: Helton and Vinnikov, Linear Matrix Inequality Representation of Sets, https://arxiv.org/abs/math/0306180v1, first11June2003. Only abstract/metadata were read this cycle; the determinant necessity argument is supplied above, while a full source-proof audit is not claimed. The irreducible-curve common-factor step remains an explicitly stated standard algebraic lemma, not a Lean certificate. The prior planar lift/SOC existence results recorded1276 are separate and remain consistent with this obstruction.
+
+Both exact standard-library scripts retain all hypotheses, sign branches and degenerate boundaries. They check polynomial identities, rational threshold tests, theH-zero guard, boundary/gradient values and coefficient constraints. No external numerical package, new formal dependency or independent review is implied. The analytical claims are own unreviewed reasoning; manuscript assessments and scores remain bound to their original PDFs.
+
+Hypothesis reduction: abandon searches for any direct affine pencil, including simply stacking the separate half-plane tests. A future construction must display actual auxiliary variables and a jointly affine projection map in(c,x,y), then preserveH=0,c=0,wrong-sign and specified confluent/higher-jet boundaries. Fixed-parameter pencils with nonlinear parameter coefficients do not provide that map. Full lifted representability remains unresolved. If a bounded attempt produces only another restatement of the quartic or known planar results, park the route instead of making another minor paper.

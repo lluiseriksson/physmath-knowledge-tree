@@ -1,0 +1,422 @@
+{
+  "radius": 1,
+  "seeds": [
+    "domain.analysis",
+    "domain.complexity_theory"
+  ],
+  "nodes": [
+    {
+      "id": "domain.analysis",
+      "kind": "domain",
+      "title": "Analysis",
+      "summary": "Limits, differentiability, integration, measure and analytic estimates.",
+      "confidence": "literature",
+      "tags": [
+        "analysis",
+        "measure",
+        "integration",
+        "estimates"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Analysis.Calculus.Deriv.Basic",
+          "Mathlib.MeasureTheory.Measure.MeasureSpace"
+        ],
+        "declarations": [
+          "HasDerivAt",
+          "MeasureTheory.Measure"
+        ],
+        "targets": [
+          "Create toy estimates that can be reused by PDE and spectral nodes."
+        ]
+      },
+      "questions": [
+        "Which estimate is the actual bottleneck of a proposed proof route?"
+      ],
+      "references": [
+        {
+          "label": "T. Tao — Analysis I",
+          "url": "https://terrytao.wordpress.com/books/analysis-i/",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "domain.functional_analysis",
+      "kind": "domain",
+      "title": "Functional analysis",
+      "summary": "Normed spaces, Banach and Hilbert spaces, operators and weak convergence.",
+      "confidence": "literature",
+      "tags": [
+        "functional-analysis",
+        "hilbert",
+        "banach",
+        "operators"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Analysis.Normed.Module.Basic",
+          "Mathlib.Analysis.InnerProductSpace.Basic"
+        ],
+        "declarations": [
+          "NormedSpace",
+          "InnerProductSpace"
+        ],
+        "targets": [
+          "Formalize operator-theoretic toy bridges."
+        ]
+      },
+      "questions": [
+        "Can a nonlinear problem be embedded into a linear or spectral setting?"
+      ],
+      "references": [
+        {
+          "label": "J. B. Conway — A Course in Functional Analysis",
+          "url": "https://link.springer.com/book/10.1007/978-1-4757-4383-8",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "domain.harmonic_analysis",
+      "kind": "domain",
+      "title": "Harmonic analysis",
+      "summary": "Fourier analysis, singular integrals, oscillation and scale-sensitive decomposition.",
+      "confidence": "literature",
+      "tags": [
+        "fourier",
+        "harmonic-analysis",
+        "scales"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Analysis.Fourier.FourierTransform"
+        ],
+        "declarations": [],
+        "targets": [
+          "Identify available Fourier transform infrastructure for toy estimates."
+        ]
+      },
+      "questions": [
+        "Which hidden frequency interaction blocks a global estimate?"
+      ],
+      "references": [
+        {
+          "label": "E. M. Stein — Harmonic Analysis",
+          "url": "https://doi.org/10.1515/9781400883929",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "domain.complexity_theory",
+      "kind": "domain",
+      "title": "Complexity theory",
+      "summary": "Resources needed for computation, reductions, circuits, proof systems and barriers.",
+      "confidence": "literature",
+      "tags": [
+        "complexity",
+        "computation",
+        "circuits",
+        "reductions"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Computability.Basic"
+        ],
+        "declarations": [],
+        "targets": [
+          "Formalize finite languages, reductions and toy circuit classes."
+        ]
+      },
+      "questions": [
+        "Which lower-bound barrier is structural rather than technical?"
+      ],
+      "references": [
+        {
+          "label": "S. Arora and B. Barak — Computational Complexity: A Modern Approach",
+          "url": "https://theory.cs.princeton.edu/complexity/book.pdf",
+          "type": "book",
+          "scope": "claim"
+        },
+        {
+          "label": "Semidefinite extension complexity of the separable set, with applications to approximate disentanglers (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.09033v1",
+          "type": "paper",
+          "scope": "context"
+        },
+        {
+          "label": "A quantum oracle separation between QMA(2) and QMA (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.02865v1",
+          "type": "paper",
+          "scope": "context"
+        },
+        {
+          "label": "Quantum Meta-Complexity Is All You Need: Characterizing One-Way Puzzles via Time-Bounded Kolmogorov Complexity (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.02687v1",
+          "type": "paper",
+          "scope": "context"
+        }
+      ]
+    },
+    {
+      "id": "bridge.proof_complexity_geometry",
+      "kind": "bridge",
+      "title": "Proof complexity and geometry",
+      "summary": "Studies computational lower bounds through algebraic, geometric and proof-system obstructions.",
+      "confidence": "literature",
+      "tags": [
+        "proof-complexity",
+        "geometry",
+        "circuits",
+        "barriers"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Computability.Basic"
+        ],
+        "declarations": [],
+        "targets": [
+          "Formalize tiny proof systems and reductions."
+        ]
+      },
+      "questions": [
+        "Can a barrier be represented as an invariant that survives reductions?"
+      ],
+      "references": [
+        {
+          "label": "K. Mulmuley and M. Sohoni — Geometric Complexity Theory I",
+          "url": "https://doi.org/10.1137/S009753970038715X",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "problem.p_vs_np",
+      "kind": "problem",
+      "title": "P vs NP",
+      "summary": "Determine whether every efficiently verifiable problem is efficiently solvable.",
+      "confidence": "literature",
+      "tags": [
+        "millennium",
+        "complexity",
+        "computation",
+        "barriers"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Computability.Basic"
+        ],
+        "declarations": [],
+        "targets": [
+          "Formalize reductions and tiny circuit/proof systems."
+        ]
+      },
+      "questions": [
+        "Which lower-bound barrier can be encoded as a robust invariant?"
+      ],
+      "status": "unsolved",
+      "references": [
+        {
+          "label": "Clay Mathematics Institute — Millennium Prize Problems",
+          "url": "https://www.claymath.org/millennium-problems/",
+          "type": "official",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "domain.constructive_quantum_field_theory",
+      "kind": "domain",
+      "title": "Constructive quantum field theory",
+      "summary": "Rigorous construction and analysis of interacting quantum field theories through measures, Gaussian estimates, renormalization, cluster expansions, locality and reconstruction criteria, with every uniformity assumption made explicit.",
+      "confidence": "literature",
+      "tags": [
+        "constructive-qft",
+        "cluster-expansion",
+        "renormalization",
+        "rigorous-qft"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib"
+        ],
+        "declarations": [],
+        "targets": [
+          "Isolate finite Gaussian, locality and cluster-expansion interfaces before making any continuum claim."
+        ]
+      },
+      "questions": [
+        "Which finite estimates can be proved uniformly in volume, cutoff and renormalization scale?"
+      ],
+      "references": [
+        {
+          "label": "J. Glimm and A. Jaffe — Quantum Physics: A Functional Integral Point of View",
+          "url": "https://link.springer.com/book/10.1007/978-1-4612-4728-9",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "domain.renormalization_group",
+      "kind": "domain",
+      "title": "Renormalization group",
+      "summary": "Multiscale transformations that replace microscopic degrees of freedom by effective actions while tracking relevant, marginal and irrelevant structures across changing resolutions.",
+      "confidence": "literature",
+      "tags": [
+        "renormalization-group",
+        "multiscale",
+        "effective-action",
+        "scaling"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib"
+        ],
+        "declarations": [],
+        "targets": [
+          "Model a finite renormalization step with explicit scale maps, supports and preserved quantities."
+        ]
+      },
+      "questions": [
+        "Which estimates survive iteration with constants uniform in the number of renormalization steps?"
+      ],
+      "references": [
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban I",
+          "url": "https://arxiv.org/abs/1108.1335",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "K. G. Wilson and J. Kogut — The renormalization group and the epsilon expansion",
+          "url": "https://doi.org/10.1016/0370-1573(74)90023-4",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge.analysis.functional_analysis",
+      "source": "domain.analysis",
+      "target": "domain.functional_analysis",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "Analytic estimates become structural in normed and inner product spaces.",
+      "references": [
+        {
+          "label": "J. B. Conway — A Course in Functional Analysis",
+          "url": "https://link.springer.com/book/10.1007/978-1-4757-4383-8",
+          "type": "book",
+          "scope": "claim"
+        },
+        {
+          "label": "T. Tao — Analysis I",
+          "url": "https://terrytao.wordpress.com/books/analysis-i/",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.analysis.harmonic",
+      "source": "domain.analysis",
+      "target": "domain.harmonic_analysis",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "Fourier and oscillatory tools refine analytic estimates by scale and frequency.",
+      "references": [
+        {
+          "label": "E. M. Stein — Harmonic Analysis",
+          "url": "https://doi.org/10.1515/9781400883929",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.complexity.pnp",
+      "source": "domain.complexity_theory",
+      "target": "problem.p_vs_np",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "P vs NP is a foundational problem in computational complexity.",
+      "references": [
+        {
+          "label": "Clay Mathematics Institute — P vs NP",
+          "url": "https://www.claymath.org/millennium/p-vs-np/",
+          "type": "official",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.complexity.proof_geometry_bridge",
+      "source": "domain.complexity_theory",
+      "target": "bridge.proof_complexity_geometry",
+      "relation": "transfers_via",
+      "confidence": "literature",
+      "mechanism": "Proof systems and circuit lower bounds supply the computational side of the bridge.",
+      "references": [
+        {
+          "label": "K. Mulmuley and M. Sohoni — Geometric Complexity Theory I",
+          "url": "https://doi.org/10.1137/S009753970038715X",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "S. Arora and B. Barak — Computational Complexity: A Modern Approach",
+          "url": "https://theory.cs.princeton.edu/complexity/book.pdf",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.analysis.constructive_qft",
+      "source": "domain.analysis",
+      "target": "domain.constructive_quantum_field_theory",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "Constructive field theory relies on integration, functional inequalities, operator bounds and convergence estimates.",
+      "references": [
+        {
+          "label": "J. Glimm and A. Jaffe — Quantum Physics: A Functional Integral Point of View",
+          "url": "https://link.springer.com/book/10.1007/978-1-4612-4728-9",
+          "type": "book",
+          "scope": "claim"
+        },
+        {
+          "label": "T. Tao — Analysis I",
+          "url": "https://terrytao.wordpress.com/books/analysis-i/",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.analysis.renormalization_group",
+      "source": "domain.analysis",
+      "target": "domain.renormalization_group",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "Multiscale estimates and stability bounds are the analytic core of rigorous renormalization iterations.",
+      "references": [
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban I",
+          "url": "https://arxiv.org/abs/1108.1335",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    }
+  ],
+  "limits": "Context retrieval, not mathematical proof; graph unchanged."
+}
