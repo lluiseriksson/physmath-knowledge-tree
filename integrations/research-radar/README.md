@@ -1,5 +1,7 @@
 # Research radar
 
+> Selected source audit · 29 October 2026: [low-dimensional unimodular Jensen proof scope, exact own checkers and higher-dimensional limits](evidence/2026-10-29-jensen-main-audit/README.md). Contextual AI-assisted source checking; no new theorem, formal promotion or manuscript grade.
+
 A dated, searchable bridge between primary-source discovery, the existing knowledge graph and bounded research tasks. It records what has actually been inspected. It does not assign scientific truth from a repository title, formal statement, model score or graph path.
 
 The current snapshot, refreshed on **28 October 2026**, contains:

@@ -1,0 +1,7 @@
+{
+  "stage": "tool JavaScript parsing, before writing or executing scientific script",
+  "error": "SyntaxError: Invalid or unexpected token",
+  "cause": "nested raw-template construction",
+  "mathematical_checks_executed": false,
+  "repair": "single outer literal encoded as a JavaScript string; mathematical assertions unchanged; no scientific rerun"
+}

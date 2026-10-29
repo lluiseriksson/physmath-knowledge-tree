@@ -1,0 +1,21 @@
+{
+  "source_pdf_sha256": "fefc3ad35c98e327cdabdf01b147393f561ba7d149f84c61c60f0e9304d11d9f",
+  "inventory": true,
+  "abstract_read": true,
+  "statements_read": [
+    "Theorem1.1",
+    "Theorem2.1",
+    "Lemma3.1"
+  ],
+  "selected_main_proofs_contextually_audited": true,
+  "proof_scope": "Theorems1.1/2.1 and Lemma3.1; selected sections1-3, exact checks1323-1328, own transfer audit1329, classical statements relied on",
+  "whole_manuscript_audited": false,
+  "other_refinements_Theorems1_2_1_3_1_4_audited": false,
+  "formal_verification": false,
+  "independent_model_review": false,
+  "shared_ongoing_context": true,
+  "effective_model_identity_and_reasoning_setting_independently_attested": false,
+  "new_paper_or_grade": false,
+  "novelty_claim": false,
+  "unrestricted_Jensen_solved": false
+}

@@ -371,7 +371,7 @@
       "reading_status": "selected_sections_read",
       "evidence": "literature",
       "claim": "Theorem2.25 supplies the M-convex-support and quadratic-derivative characterization; Theorem2.10 preserves Lorentzianity under nonnegative linear changes. Selected dependent-audit passages also cover homogeneous stable inclusion.",
-      "limits": "Not a full-paper audit, worldwide-priority search or a statement that every Lorentzian polynomial is stable. The own counterexample is separate from these source claims.",
+      "limits": "Not a full-paper audit, worldwide-priority search or a statement that every Lorentzian polynomial is stable. The own counterexample is separate from these source claims. Follow-up1327 read selected2.16(2),2.25,2.33,4.1,4.2 statements in the primary author PDF SHA6152c52f35dcfa0c25440acaa1c455429abc0d8e9209635911bf3ca8176db2a3 and the lower-dimensional continuity scope of4.1. Not a full proof/dependency audit; no exact edition equivalence inferred from this separate author-PDF hash.",
       "reuse": "Bibliographic metadata and original synthesis only; no source-paper full text or inferred training permission.",
       "anchors": [
         "domain.algebra",
@@ -1366,8 +1366,42 @@
       "reading_status": "selected_sections_read",
       "evidence": "literature",
       "claim": "Edition4 (2026-10-27) states sixth-root and logarithmic Jensen for integrable integer demands when the bounded central fiber has affine dimension at most3. Its proposed mechanism uses a monotone concave A3 extension and common lattice coordinates.",
-      "limits": "PDF SHA256 fefc3ad35c98e327cdabdf01b147393f561ba7d149f84c61c60f0e9304d11d9f; PDF title date2026-10-22 differs from edition date. Statements and selected pp4-10 read. Own exact checker validates only Lemma3.1 finite normal classification (1024masks,51valid systems,16maximal systems and displayed transformations). Global theorem, chamber identities, Lorentzian certificate, gluing/boundaries and supplement not audited; no unrestricted Jensen solution or novelty certification.",
-      "reuse": "Bibliography and original synthesis/checker only. No foreign PDF, extracted text or supplement in repository; no inferred training permission.",
+      "limits": "Exact edition4 PDF SHA256 fefc3ad35c98e327cdabdf01b147393f561ba7d149f84c61c60f0e9304d11d9f. Selected main proofs Theorems1.1/2.1 and Lemma3.1 contextually audited1323-1329 with own exact chamber/count/volume, derivative and wall checks plus active-face/common-lattice/countable-demand analysis. No material obstruction found in that scope. Classical theorem interfaces were read and relied on; their full dependency proofs, other refinements1.2-1.4, whole-paper correctness, novelty, independence and formal verification are not certified. This is source literature, not our new theorem or an assigned manuscript grade.",
+      "reuse": "Bibliography, exact own-checker artifacts and original source-audit synthesis only; no foreign source PDF/text/supplement or inferred training permission.",
+      "anchors": [
+        "domain.algebra",
+        "domain.complexity_theory"
+      ]
+    },
+    {
+      "id": "haase-et-al-mixed-ehrhart-2017",
+      "title": "Mixed Ehrhart polynomials: multivariate polynomiality interface",
+      "url": "https://www.combinatorics.org/ojs/index.php/eljc/article/view/v24i1p10",
+      "kind": "paper",
+      "published_on": "2017-01-20",
+      "observed_on": "2026-10-29",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "The Bernstein-McMullen statement covers nonnegative integer dilation parameters including zero and permits lower-dimensional summands; a full-dimensional sum supplies the section scope needed for the boundary transfer.",
+      "limits": "Statement and surrounding assumptions read, not whole-paper proof. Theorem2.1 in the linked2015 author manuscript SHA d172eaa63bea21ab09a5efc046d00831bb0d828c4ac7fb8a0b417ead078144ad becomes2.3 in arXiv1509.02254v2. First preprint8Sep2015, revision9Jan2017; journal24(1),P1.10, DOI10.37236/5815. Schubr reference18 prints different journal metadata; the theorem-number version difference is not a proof gap.",
+      "reuse": "Bibliography and own hypothesis audit only; no foreign full text.",
+      "anchors": [
+        "domain.algebra",
+        "domain.complexity_theory"
+      ]
+    },
+    {
+      "id": "brion-lattice-polytope-1988",
+      "title": "Points entiers dans les polyedres convexes",
+      "url": "https://www.numdam.org/item/ASENS_1988_4_21_4_653_0/",
+      "kind": "paper",
+      "published_on": null,
+      "observed_on": "2026-10-29",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "The Section2.2 statement decomposes a lattice-polytope generating function into translated vertex-cone rational functions. Section2.1 gives a product denominator when primitive cone rays form part of a lattice basis.",
+      "limits": "1988, ENS serie4,21(4),653-663, DOI10.24033/asens.1572. Original PDF SHA3aa85ef0a507540a36b482f228040927c8260b977adc33082d7b70a773f66a18; introduction, cone formula and theorem statement read on PDFpages2-4. Full toric/K-theory proof not audited. Applied only after exact lattice vertex/unimodular tangent-basis checks.",
+      "reuse": "Bibliography, hashes and own checker synthesis only. Original copyrighted source is not vendored.",
       "anchors": [
         "domain.algebra",
         "domain.complexity_theory"
@@ -1539,7 +1573,10 @@
       "source_ids": [
         "leake-yekta-tu-jensen-2026",
         "bernstein-sullivant-lawrence2017",
-        "schubr-low-dimensional-unimodular-power-2026"
+        "schubr-low-dimensional-unimodular-power-2026",
+        "branden-huh-lorentzian-v8",
+        "haase-et-al-mixed-ehrhart-2017",
+        "brion-lattice-polytope-1988"
       ],
       "node_ids": [
         "domain.algebra",
@@ -1547,12 +1584,12 @@
       ],
       "dictionary": "Integer right-hand sides -> exact fiber counts -> log-count concave envelope at integer barycenters.",
       "preserved": "Unimodular system, finite fibers, nonnegative integer solutions and exact integer barycenter.",
-      "lost_or_unproved": "No general Jensen proof or exact violation. New9600LP probes yield no strict lead;261149 exact ternary RHS controls are finite only. The12-by18 K4 three-color lift has maximal minors1and2, so direct unimodular-theorem transfer is invalid. Edition4 of the Schubr preprint reports central affine dimension<=3; only its finite rank-three normal lemma is checked here. General dimensions remain unproved; do not relabel known low-dimensional work as novel.",
-      "hypothesis_to_remove": "The line-supported restriction on the distribution of right-hand sides.",
+      "lost_or_unproved": "No general Jensen proof or exact violation. New9600LP probes yield no strict lead;261149 exact ternary RHS controls are finite only. The12-by18 K4 three-color lift has maximal minors1and2, so direct unimodular-theorem transfer is invalid. Edition4 of the Schubr preprint reports central affine dimension<=3; only its finite rank-three normal lemma is checked here. General dimensions remain unproved; do not relabel known low-dimensional work as novel. Source edition4 now accounts for central affine dimension<=3 after contextual selected-main-proof audit1323-1329. The unrestricted higher-dimensional question remains unresolved in this dossier; no own formal theorem or novelty is claimed.",
+      "hypothesis_to_remove": "The line-supported restriction beyond the literature-covered central affine dimension<=3 regime, retaining the exact integer barycenter, finiteness/integrability and lattice structure.",
       "falsifier": "An exact unimodular system and rational finite weights with integer barycenter violating the Jensen inequality; all fiber counts and finiteness must be certified.",
-      "next_finite_task": "Before reopening finite probes, compare the exact edition4 prior art. Central dimension<=3 is a reported literature result, not an independently audited full theorem here. Audit a specific missing step or exhibit a genuinely higher-dimensional universal mechanism/exact Jensen witness; no repeat low-dimensional campaigns or standalone minor papers.",
+      "next_finite_task": "Compute the actual central active-face dimension before selecting a target. Do not rederive dimension<=3 as novel. A positive3-by3 transportation fiber has dimension4 and lies outside this source scope; choose a concrete new structural mechanism or an exact global Jensen witness there or in another defined higher-dimensional case. No generic LP/seed campaign or standalone minor paper follows from finite controls.",
       "paper_score": null,
-      "review_packet": "399 bounded audit validates an elementary rational-weight binary lift to unweighted TU fibers and generic non-TU closure barriers;64C/Dfiles checked. Exact counts cover184756configurations/19448fibers;2982LPexecutions have no exact violating certificate.392has162executions on161distincttargets. The lift may be exponential in binary weight length. No Jensen solution, converse reduction or importance score."
+      "review_packet": "399 bounded audit validates an elementary rational-weight binary lift to unweighted TU fibers and generic non-TU closure barriers;64C/Dfiles checked. Exact counts cover184756configurations/19448fibers;2982LPexecutions have no exact violating certificate.392has162executions on161distincttargets. The lift may be exponential in binary weight length. No Jensen solution, converse reduction or importance score. Selected-main-source audit1323-1329 is contextual and unscored, using the exact Schubr edition4 PDF; no material obstruction found for Theorems1.1/2.1 and Lemma3.1, with classical inputs explicitly relied on. It is not independent refereeing, whole-manuscript audit or formal verification. Exact own reports/checkers and failures accompany the source-scope update."
     },
     {
       "id": "eh-s222-calibrated-stage1",
