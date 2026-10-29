@@ -1,0 +1,122 @@
+Bounded local falsifier attempt for the existing fixed-channel entropy target
+
+Disposition
+At one full-rank product-input base, the quadratic variation has five strictly
+positive transverse directions and one exactly flat projective direction.
+This attempt finds no second-order negative entropy gap. It does not prove Q,
+additivity, a finite-radius entropy bound, a reference-dimension cutoff, novelty
+or a manuscript result. Do not publish this calibration as a separate paper.
+It is own unreviewed analysis; no new model review, score or formal claim.
+
+Target and parametrization
+Use the original B_N dictionary in PROOF899/audit901, fixed N with Bloch map
+(x,y,z)->(3x/5,3y/5,z/4+1/5), and p=1/2. Let X=diag(3/5,4/5), D=XX*.
+For a 2-by-2 complex H satisfying Tr(X*H)=0, set
+ Y(t)=(X+tH)/sqrt(1+b t^2), b=Tr(HH*).
+Both branch Frobenius norms are one. The gap is
+ G(t)=S(T(t))-[S(XX*)+S(Y(t)Y(t)*)]/2-e_N(1/2),
+ T=[[29D/80+19YY*/80,3XY*/10],
+    [3YX*/10,11D/80+21YY*/80]].
+At t=0, T0=Q0 tensor D with Q0=[[3/5,3/10],[3/10,2/5]].
+Its four eigenvalues are positive, so the entropy expansion is analytic.
+G(0)=G'(0)=0. The normalized-branch projective tangent has six real dimensions.
+This is a local test on arbitrary complex 2-by-2 perturbations of Y with X
+fixed, not a claim to cover every varying-X/p/reference-dimension family.
+
+Derivation of the quadratic coefficient
+For a positive matrix M define
+ BKM_M(F,F)=Tr[F Dlog_M(F)].
+In an eigenbasis the divided difference is
+ (log(mu_i)-log(mu_j))/(mu_i-mu_j), with value1/mu_i when equal.
+Writing T=T0+tT1+t^2T2 and E=XH*+HX*,
+ T1=[[19E/80,3XH*/10],[3HX*/10,21E/80]],
+ Y Y*=D+tE+t^2(HH*-bD)+O(t^3).
+The trace part involving log D cancels between the two branch entropies
+and output entropy. The remaining T2 contribution is
+ (9b/100) L, L=log(lambda+/lambda-)/sqrt(2/5),
+ lambda+/-=(1+/-sqrt(2/5))/2.
+Hence the t^2 coefficient is exactly
+ q(H)=(9b/100)L - BKM_T0(T1,T1)/2 + BKM_D(E,E)/4.
+This follows from S(M+tF+t^2J)=S(M)-t Tr(F log M)
+-t^2[Tr(J log M)+BKM_M(F,F)/2]+O(t^3), for trace-preserving paths.
+No entropy inequality is assumed in deriving this Hessian.
+
+Known equality directions and correction
+The complex orthogonality constraint removes radial normalization and the
+global phase H=iX. A second phase direction remains:
+ Hflat=i diag(4/5,-3/5).
+It is tangent to the exact equality family
+ Y=X diag(exp(4it/3),exp(-3it/4)).
+Reference R is then classical, and each conditional input is pure with the
+same latitude p=1/2; phase covariance gives G=0 for the exact family.
+Its quadratic cross terms vanish: diagonal-reference perturbations are
+orthogonal to off-diagonal-reference perturbations in the T0 spectral metric,
+and real/imaginary diagonal cross terms have zero real trace.
+The initial assertion of strict positivity in all six projective directions
+was therefore incorrect. Its script and failed assertion are preserved in
+initial_curvature1290.py and initial-failure1290.txt. It was corrected by
+identifying this exact equality direction, not by discarding a negative mode.
+One stale loop bound in the first corrected run was also caught and fixed.
+
+Interval certificate
+verify_curvature1290.py uses standard-library integer/Fraction arithmetic,
+fixed-point outward rounding at scale10^40, sqrt enclosure via integer isqrt,
+and a 60-term atanh log series after binary rescaling into[1,2], with explicit
+tail2*z^121/[121*(1-z^2)]. CURVATURE1290.json stores integer interval endpoints.
+It evaluates the spectral metric with the two exact Q0 projectors and D's
+diagonal eigenvectors; no eigenvalue grid or floating eigensolver is used.
+After the analytically flat direction is removed, interval LDL has five
+strictly positive pivots (approximate centers only for orientation):
+0.67381220879,0.38319419791,0.01108993593,0.38319419791,0.01108993593.
+The rational interval lower endpoints, not these decimals, establish signs.
+An independent scalar reduction for the real diagonal direction gives
+ q(diag(4/5,-3/5))=95/192+(243/3200)L=f_N''(1/2)/8.
+This matches the full spectral-metric implementation. Flat-direction/cross
+intervals contain zero, consistent with the analytical equality argument;
+interval inclusion alone would not prove an exact zero.
+This is a bounded algebra/analysis check, not a Research Capsule-certified
+computational campaign, a kernel proof or an independent review. The interval
+result is conditional on the displayed entropy-Hessian derivation.
+
+The direction reaches the uncovered mixed-entangled sector
+For H=E01 take t=200/9999, so
+ Y=(9999/10001)X+(200/10001)E01
+is exactly Frobenius normalized with rational entries.
+verify_entangled1290.py checks the real block state
+ rho_AR=1/2 [[X^T X,X^T Y],[Y^T X,Y^T Y]].
+It is PSD by its two-row Gram factor, has trace1 and rank2; the two Gram rows
+are independent. A/B are full rank and their commutator is nonzero. Thus its
+support coupling is saturated and not a pure/reference-classical shortcut.
+Its partial transpose determinant is exactly
+ -12960000/10004000600040001 <0, proving entanglement.
+The finite-t entropy gap is NOT evaluated or certified. This control verifies
+sector coverage of the local path, not a negative witness or a finite-radius
+entropy conclusion.
+
+Evidence levels, falsifier and next
+Literature context remains the exact scoped original channel/P5 dictionary,
+unscored component audits901/906 and their preserved adverse observations.
+The spectral entropy derivative is derived above. Formal: no new Lean result;
+all nine existing package commits match their fixed manifest in DEPENDENCIES1290.
+Own analytical/heuristic status: the local coefficient formula and interval
+certificate; not independently audited. Speculative: universal Q and the
+mixed-saturated-endpoint coherence/information tradeoff remain unproved.
+Falsify this local calculation by an incorrect coefficient, omitted tangent
+direction, invalid interval enclosure or nonpositive transverse pivot.
+Do not extrapolate this one base to all D,p or to higher-order/finite-distance
+paths. Do not repeat the same local matrix or start a minor-paper/review cycle.
+A substantive continuation is to derive the general tangent sign condition
+as a function of the reference spectrum and latitude, seeking an analytic
+sign-changing parameter mechanism; if none survives, park local instability
+as a route and return to the genuinely quantum-reference tradeoff.
+The exact flat reference-phase direction must be retained in any such extension.
+
+Continuity and source scope
+PR189 integration is already closed, main CI/Pages/live verified1289. Do not
+repeat its checks or publication. Later notes907/908/910/1284 and this1290 are
+outside901/906 reviews; no scores are inherited. Pick remains parked.
+SOURCES1290 contains a fresh twelve-source directed inventory only; public
+repository metadata is separate. No new publication inferred from index
+changes; local smoothing remains deduplicated. Source bodies and corpora
+are not redistributed. The small quantum-information subgraph was retrieved
+before this synthesis and graph nodes/edges/confidence remain unchanged.

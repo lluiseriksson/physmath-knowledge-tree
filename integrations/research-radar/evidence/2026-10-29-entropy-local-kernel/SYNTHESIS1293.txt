@@ -1,0 +1,105 @@
+One existing-candidate batch: local entropy falsifier criterion and exclusions
+
+Outcome and scope
+The fixed non-GAD channel candidate remains under_audit/speculative, with
+paper_score=null. No universal rectangular entropy theorem, arbitrary-partner
+additivity result, manuscript, assessment or new score is supplied.
+This batch integrates own1287/1290/1291/1292 work; it is not a set of separate
+papers. Canonical graph nodes/edges/confidence labels remain unchanged.
+
+Mechanism and dictionary
+The prior1284 signed-SVD argument restricts the fixed-diagonal entropy gap to
+mixed saturated support couplings while retaining A,B,p and common-reference
+geometry. It does not gauge K toI or bound reference dimension.
+Within one qubit-reference product-input-base tangent family,1291 reduces
+the four nonclassical off-reference real curvature directions to one real
+2-by-2 logarithmic kernel M(p,d) and its sign conjugate. The scalar diagonal
+direction is positive and a reference-conditioned phase direction is exactly
+flat. This retains population and orientation; it does not classicalize the
+quantum reference or cover arbitrary mixed bases/higher dimensions.
+
+Hypotheses removed and surviving target
+An exact negative eigenvalue of M would provide a local negative-gap route.
+1290 finds no such direction at one base and verifies a rational finite path
+does reach mixed-entangled saturated states with noncommuting full-rank A/B;
+it does NOT certify that finite path's entropy gap.
+1291 proves that a CP-Schur margin controls the pure-reference boundary
+d->0/1 for each FIXED interior p. The explicit margin
+p(1-p)(803-176p)/(8000detQ)>0 rules out a logarithmically divergent negative
+quadratic mode there.
+1292 derives the center determinant splitting and bounds its coefficient by
+D2>=96 p^2(1-p)^2/625>0. It therefore excludes a quadratic negative mode
+bifurcating from d=1/2 at each fixed interior p. Flat center directions must
+remain exact zeros, not floating numerical evidence.
+No explicit neighborhood radius or uniform joint latitude-endpoint limit is
+established. Intermediate reference spectra may still have a sign-changing
+kernel. The full mixed-saturated coherence/information tradeoff is unproved.
+
+Important correction and negative history
+initial_curvature1290.py records the original incorrect assertion that all
+six projective directions were strictly positive. It fails at an analytically
+identified flat classical-reference phase direction. That failure and a later
+stale loop bound are recorded in initial-failure1290.txt; neither is hidden.
+The final result has five positive transverse interval LDL pivots and one
+flat direction. Do NOT run the initial script as the canonical verifier.
+No model reviewer was restarted or rescored, and the correction is not a
+discarded negative eigenvalue or an independent assessment.
+
+Rank loss still matters
+RANK-FACTOR1287.txt and PRIMARY1287.json recheck the already known Zhangv4
+norm-compression statement. Its rank is the SCALAR compression rank, not the
+rank of rho_AR. The positive-beta/eta P5 rays retain scalar rank2 and the
+entropy derivative still loses log2. The state-rank reduction1284 does not
+make that prior bound sharp. This is an existing-route caveat, not a new paper.
+
+Reading levels, formal scope and bibliography
+Own analytical/heuristic: ARGUMENT1290/1291/1292, their displayed derivations
+and bounded integer/Fraction checks. They have not been independently audited.
+Speculative: universal Q/additivity and any extension to arbitrary references.
+Formal: no new Lean declaration or kernel theorem. DEPENDENCIES1293 verifies
+all nine local package HEADs against the fixed manifest; no dependency changed.
+Literature: existing Audenaert math/0702186v2, Zhang2410.21961v4 and
+Belzig2411.19890v3 cards/context retain their original reading scopes.
+PRIMARY1287 logs abstract/statement reading, not a full-proof audit. Existing
+901/906 component reports in ../2026-10-27-entropy899 retain every objection;
+those reviews do not extend to907/908/910/1284/1287/1290/1291/1292.
+No score is inherited from any other note or PDF.
+
+Four bounded replays
+Use verify_curvature1290.py, verify_entangled1290.py, verify_kernel1291.py and
+verify_center1292.py. They use only the Python standard library and write
+their corresponding JSON beside themselves. REFERENCE1290.json is the frozen
+input for the1291 consistency comparison, not a second assessment.
+The interval checks use explicit log-series tails and directed integer
+rounding. Approximate decimal centers are explanatory only. Exact endpoints
+and rational polynomial identities carry their respective algebraic checks.
+They do not automatically certify every analytical step, novelty or the
+universal entropy statement. This is a bounded algebra/analysis packet,
+not a Research Capsule-certified computational campaign.
+
+Falsifier and next
+Falsify the local claims by an incorrect kernel expansion, omitted tangent/
+phase direction, invalid log bound or nonpositive claimed interval.
+For the scientific target, an exact negative G witness refutes the proposed
+sufficient mechanism, not automatically channel additivity.
+Do not repeat pure/separable/isotropic subcases, center-zero floating scans
+or the same base matrix. A further local attempt needs a concrete CP/integral
+decomposition for intermediate spectra, or an exact sign-changing kernel.
+If it removes no actual hypothesis, park product-base local instability and
+return to the full mixed-saturated reference tradeoff. No minor-paper cycle.
+
+Current directed radar
+SOURCES1293 hashes twelve primary index responses; PUBLIC-REPOS1293 inventories
+public own repositories. The sweep is directed, not exhaustive; changed index
+bytes are not new publication dates and local smoothing remains deduplicated.
+PRIMARY-HEADS1293 pins the current OpenAI and DeepMind repository heads.
+DeepMind moved directly from5a2fb850 to909a8bec on2026-10-29. The commit
+description concerns an unchanged RamanujanTau support statement completed
+using existing Mathlib API. DEEPMIND-METADATA1293 contains a short original
+summary, classified as author-described formalization maintenance of known
+identities. No task/proof bodies, benchmark corpus, upstream build or axiom
+closure were downloaded/replayed. It is not a newly solved conjecture,
+new mathematical manuscript, or independently certified proof here.
+
+Native-byte conservation and platform normalization
+The initial format gate rejected five native CRLF JSON artifacts. Native originals and scripts remain byte-for-byte in native-evidence1293.zip. NATIVE-BINDING1293.json records native/public hashes. Public JSON is LF-normalized; four canonical write_text calls explicitly emit LF, with no formula or data change. Replays match normalized native outputs. No assessment or grade is transferred.

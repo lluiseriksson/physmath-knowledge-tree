@@ -1,0 +1,35 @@
+{
+  "runtime": "Python3.12.14",
+  "same_author_runtime_not_independent_review": true,
+  "bounded_checks_not_campaign": true,
+  "results": [
+    {
+      "script": "verify_curvature1290.py",
+      "exit": 0,
+      "stdout": "Five positive interval LDL pivots: single-base local quadratic form certified.",
+      "output_newline": "explicit LF"
+    },
+    {
+      "script": "verify_entangled1290.py",
+      "exit": 0,
+      "stdout": "Full-rank noncommuting A/B, mixed saturated rank2 and negative PT determinant verified exactly.",
+      "output_newline": "explicit LF"
+    },
+    {
+      "script": "verify_kernel1291.py",
+      "exit": 0,
+      "stdout": "Algebraically separate scalar expression matches1290; exact boundary-coefficient polynomial factor verified.",
+      "output_newline": "explicit LF"
+    },
+    {
+      "script": "verify_center1292.py",
+      "exit": 0,
+      "stdout": "Exact coefficient identity and rational positive bound verified; one interval calibration agrees.",
+      "output_newline": "explicit LF"
+    }
+  ],
+  "outputs_match_normalized_native": true,
+  "native_original_bytes": "native-evidence1293.zip; SHA and individual bindings in NATIVE-BINDING1293.json",
+  "public_script_change": "Explicit LF output in write_text only; analytical computation unchanged.",
+  "initial_failed_artifact": "initial_curvature1290.py deliberately preserves incorrect strict-positivity assertion and is not canonical"
+}

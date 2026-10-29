@@ -1,0 +1,51 @@
+{
+  "scope": "Own analytic all-interior-latitude lower bound for the center determinant coefficient, not global M positivity or Q.",
+  "q_polynomial": [
+    "81/400",
+    "99/100",
+    "-119/100"
+  ],
+  "q_max": "243/595",
+  "q_max_less_than_one_half": true,
+  "qprime_identity": "(qprime)^2+(119/25)q=243/125",
+  "coefficient_identity": "D2=k2*A0*(8L-v)-(w+2k2*L)^2, v=8(L-2)/q, w=-k2(L-2)(9-8p)/(10q)",
+  "factorized_coefficient": "D2=8*k2*A0*R/q-k2^2*V^2, R=2-(1-q)L, V=2L-(9-8p)(L-2)/(10q)",
+  "bounds": {
+    "A0": ">=r, r=p(1-p)",
+    "R_over_q": ">=4/3",
+    "L": "2<=L<=8/3",
+    "V": "14/5<=V<=16/3",
+    "normalized_coefficient": "D2>=96/625 * p^2*(1-p)^2 >0"
+  },
+  "symbolic_identity_verified_exactly": true,
+  "separate_kernel_series_propagation": [
+    {
+      "lo": "-101",
+      "hi": "101",
+      "denominator": "10000000000000000000000000000000000000000",
+      "approx_mid": 0.0
+    },
+    {
+      "lo": "-297",
+      "hi": "297",
+      "denominator": "10000000000000000000000000000000000000000",
+      "approx_mid": 0.0
+    },
+    {
+      "lo": "2075200998742351239292240528737906302143",
+      "hi": "2075200998742351239292240528737906304235",
+      "denominator": "10000000000000000000000000000000000000000",
+      "approx_mid": 0.20752009987423511
+    }
+  ],
+  "calibration_p_half": {
+    "D2": {
+      "lo": "2075200998742351239292240528737906302792",
+      "hi": "2075200998742351239292240528737906303566",
+      "denominator": "10000000000000000000000000000000000000000",
+      "approx_mid": 0.20752009987423511
+    },
+    "rigorous_lower_bound": "6/625"
+  },
+  "limitation": "Remainder is O((d-1/2)^4) at each fixed interior p. No explicit radius, no uniform joint p-endpoint limit, no full parameter-domain PSD, entropy witness or independent audit."
+}

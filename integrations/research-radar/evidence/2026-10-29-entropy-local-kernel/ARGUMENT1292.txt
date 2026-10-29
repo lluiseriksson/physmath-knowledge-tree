@@ -1,0 +1,133 @@
+Closing the maximally mixed reference center as a local quadratic falsifier
+
+Disposition
+Own unreviewed continuation of1290/1291, not a manuscript, assessment, score,
+formal result or novelty claim. For the fixed channel and every FIXED interior
+latitude0<p<1, the determinant of the local2-by-2 kernel has a strictly positive
+leading splitting away from d=1/2. This closes that center bifurcation as a
+quadratic negative-witness mechanism. It does not prove the whole kernel PSD,
+universal Q, additivity, finite-distance positivity or a dimension cutoff.
+No separate paper is warranted for these local reductions.
+
+Setup and inherited scope
+Use the fixed-X projective Y-tangent criterion M(p,d) in ARGUMENT1291.
+It retains arbitrary complex off-reference perturbations and relative
+orientation. It covers this product-input base family on a qubit reference,
+not arbitrary mixed input bases or arbitrary reference dimension.
+Set r=p(1-p), k2=(9/25)r,
+q=s^2=81/400+99p/100-119p^2/100,
+L=log((1+sqrt(q))/(1-sqrt(q)))/sqrt(q).
+The physical pure-output radius satisfies
+1/400<=q<=243/595<1/2.
+Let A0 denote the common kernel entry at d=1/2:
+A0=r^2 f_N''(p), f_N=e_N-h.
+The kernel is M=[[a,c],[c,b]], with a=b=c=A0 at the center.
+There are genuine flat phase/unitary directions; do not replace a zero
+eigenvalue there by noisy numerical evidence.
+
+Expansion
+Write d=1/2+epsilon, e=1/2-epsilon and retain all p-dependence.
+Exchange of reference labels swaps a/b and leaves c fixed, so det M is even.
+Use
+f(d,e)=2+(8/3)epsilon^2+O(epsilon^4),
+g=2L+u epsilon+v epsilon^2+O(epsilon^3),
+h0=2L-u epsilon+v epsilon^2+O(epsilon^3),
+u=4(2-L)/sqrt(q), v=8(L-2)/q.
+These follow by expanding the explicit logarithm quotients in1291 at the
+noncoincident channel eigenvalues; f(d,e) is evaluated by its continuous value.
+
+With kap=k(9-8p)/(40sqrt(q)), put w=u kap k.
+Writing a=A0+A1 epsilon+A2 epsilon^2+O(epsilon^3) and
+c=A0+C2 epsilon^2+O(epsilon^4), direct expansion yields
+A1=w-2A0+2k2 L,
+A2-C2=2A0-2w-v k2/2.
+Therefore
+det M=D2(p)epsilon^2+O(epsilon^4),
+D2=2A0(A2-C2)-A1^2
+  =k2 A0(8L-v)-(w+2k2 L)^2.
+The latter equality is checked as an exact multivariate polynomial identity
+in verify_center1292.py, not by fitting sampled determinants.
+
+Rewrite the coefficient as
+R=2-(1-q)L,
+V=2L-(9-8p)(L-2)/(10q),
+D2=8k2 A0 R/q-k2^2 V^2.
+The normalized lower bound below is deliberately loose but positive.
+
+Scalar convexity with retained latitude
+Direct differentiation of e_N(p)=h((1+sqrt(q))/2) gives
+e_N''(p)=243L/(1000q)-(q')^2/[4q(1-q)].
+Here (q')^2+(119/25)q=243/125 exactly. Since L>=2,
+e_N''(p)>=88/[125(1-q)]>0.
+Consequently f_N''(p)=e_N''(p)+1/r>=1/r and A0>=r.
+This reproduces the already scoped scalar-convexity mechanism without
+classicalizing the quantum reference or dropping p-dependent factors.
+
+Positive series bounds
+For0<q<1,
+L=2 sum_{n>=0} q^n/(2n+1).
+Thus
+R/q=4 sum_{n>=1} q^(n-1)/[(2n-1)(2n+1)]>=4/3,
+(L-2)/q<=2/[3(1-q)]<=4/3,
+2<=L<=8/3,
+where the last two loose bounds use q<1/2.
+Since1<9-8p<9,
+14/5 <= V <=16/3.
+The lower bound follows from2L>=4 and subtracting at most(9/10)(4/3);
+it is necessary to control V^2 using an absolute bound.
+
+Combining all positive factors,
+D2 >= k2 r [32/3-(9/25)(16/3)^2]
+   = (32/75)k2 r
+   = (96/625)p^2(1-p)^2 >0.
+All constants in this estimate are exact rationals. In particular this is
+not a positive value at one selected latitude extrapolated to all latitudes.
+
+What is and is not excluded
+At each fixed interior p, A0>0 and the positive determinant coefficient
+imply M is positive definite for sufficiently small nonzero|d-1/2|;
+at d=1/2 it is positive semidefinite with the known flat directions.
+Hence no quadratic local counterexample bifurcates from that center.
+The explicit remainder bound and neighborhood radius are NOT supplied.
+No uniform joint limit p->0/1 with d->1/2 is claimed; the lower bound
+vanishes quadratically at latitude endpoints.
+The1291 CP-Schur result separately controls pure-reference boundaries
+d->0/1 for each fixed interior p. Intermediate spectra may still contain
+a sign-changing kernel; the full entropy core remains unresolved.
+Higher-order/finite-distance states, non-product bases and larger references
+are also outside this exclusion.
+
+Verification and provenance
+verify_center1292.py checks the q polynomial identities, the multivariate
+D2 identity and every rational bound constant.
+A separate truncated-series propagation of the scalar kernel at the ONE
+prior calibration p=1/2 produces coefficients[0,0,D2] with
+D2 in a rational interval centered at0.2075200998742351; the lower bound there
+is6/625. This is a consistency check, not a parameter grid or an all-p proof.
+The all-p assertion instead uses the explicit analytical series bounds above.
+The arithmetic is inherited from1290/1291, by the same author/runtime;
+there is no independent assessment or independent implementation claim.
+The mathematical derivation is unreviewed and not kernel formalized. Integer
+polynomial/interval checks do not by themselves certify every analytical step.
+All existing901/906 adverse reports and907/908/910/1284 limits remain; those
+component reviews do not review1290/1291/1292 and no grade is inherited.
+
+Evidence levels and next
+Literature context remains the existing scoped entropy/BKM source cards and
+own fixed-channel dictionary899. No new external statement/proof reading or
+new source-card publication is claimed. Formal: no new Lean result; existing
+fixed package commits are checked separately. Own analytical/heuristic:
+the local kernel and boundary/center exclusions. Speculative: universal Q
+and the mixed-saturated coherence/information tradeoff remain open.
+Falsify this result by an incorrect kernel expansion, scalar convexity
+factor, log-series bound, omitted phase mode or latitude dependence.
+Park further center-negative-eigenvalue searches. Batch1287/1290/1291/1292
+as ONE scoped existing-candidate knowledge update, retaining all limitations;
+no standalone minor paper or new review. A subsequent local-route attempt
+needs a concrete CP/integral decomposition for intermediate spectra or an
+exact negative kernel mechanism, not a floating scan. If it adds no hypothesis
+removal, park product-base local instability and return to the full quantum
+reference tradeoff.
+The current primary sweep is directed inventory only, not exhaustive; local
+smoothing stays deduplicated. No source bodies, corpus or evaluation tasks
+are redistributed. PR189 remains fully closed; no repeated publication.

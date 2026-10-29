@@ -1,0 +1,43 @@
+{
+  "sources": [
+    {
+      "url": "https://arxiv.org/abs/2410.21961v4",
+      "status": 200,
+      "bytes": 39555,
+      "sha256": "819185c6f676a4ad50ad4161ac4427c4e11529e4447943af9a2ac27b838f0727",
+      "observed_at": "2026-10-29T14:56:35.528Z"
+    },
+    {
+      "url": "https://arxiv.org/html/2410.21961v4",
+      "status": 200,
+      "bytes": 806674,
+      "sha256": "12da2ccade5f58a268ace0c9958e497b91fd4de8495f7dced2777da457f5222d",
+      "observed_at": "2026-10-29T14:56:37.000Z"
+    },
+    {
+      "url": "https://arxiv.org/abs/math/0702186v2",
+      "status": 200,
+      "bytes": 40080,
+      "sha256": "635df7dcbe58e5ad8132526dc222c223dd824a2ba385e1000bca3af3d7b39786",
+      "observed_at": "2026-10-29T14:56:37.176Z"
+    }
+  ],
+  "reading": [
+    {
+      "id": "2410.21961v4",
+      "submitted": "2024-10-29",
+      "revised": "2026-03-28",
+      "level": "abstract and statement read",
+      "scope": "Conjecture1.14, Theorem1.15 and Corollary1.16; no full-proof audit. Existing route, not new publication."
+    },
+    {
+      "id": "math/0702186v2",
+      "submitted": "2007-02-07",
+      "revised": "2007-03-26",
+      "journal": "LAA428(2008)781-795",
+      "level": "abstract reread",
+      "scope": "No full-proof rereview or novelty claim"
+    }
+  ],
+  "deduplication": "Existing Audenaert/P5 route; no source card, paper, review or confidence upgrade. Third-party search hits served only as locators, not evidence."
+}

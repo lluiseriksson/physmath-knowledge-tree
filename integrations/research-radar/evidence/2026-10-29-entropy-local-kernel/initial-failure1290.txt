@@ -1,0 +1,2 @@
+Initial six-dimensional strict-positivity assertion failed at pivot3: interval [-174,169]/10^40 contains zero. Diagnosis: a genuine classical-reference relative-phase equality direction was retained. No six-dimensional positive-definiteness conclusion is valid. Original script preserved; correction explicitly removes that analytically identified flat direction, not a negative-eigenvalue filter.
+The first corrected execution also caught one stale loop upper bound (6 instead of5); corrected before any successful output.
