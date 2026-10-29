@@ -1,0 +1,41 @@
+{
+  "created_utc": "2026-10-29T23:03:31.298724+00:00",
+  "purpose": "Parent-authorized conservation of the single exact-artifact review1336",
+  "files": [
+    {
+      "relative_path": "report.txt",
+      "bytes": 23224,
+      "sha256": "408ec74968caded1df8391b560be862fc4da3da523683db33a0dd35211386a63",
+      "c_path": "C:\\Trabajo\\airr\\2026-10-29_optical-review1336\\report.txt",
+      "d_path": "D:\\Proyectos\\airr-investigacion\\2026-10-29_optical-review1336\\report.txt",
+      "copy_verified": true
+    },
+    {
+      "relative_path": "verdict.json",
+      "bytes": 3921,
+      "sha256": "75d89794f2dcc54df0e06c58ea43f70648723c0d7a616166b8d8481aaabe55eb",
+      "c_path": "C:\\Trabajo\\airr\\2026-10-29_optical-review1336\\verdict.json",
+      "d_path": "D:\\Proyectos\\airr-investigacion\\2026-10-29_optical-review1336\\verdict.json",
+      "copy_verified": true
+    },
+    {
+      "relative_path": "context.json",
+      "bytes": 3584,
+      "sha256": "71eede1c8cffc38511ef26c6d286d345fedd9e0b6240aa387c0150278ba54350",
+      "c_path": "C:\\Trabajo\\airr\\2026-10-29_optical-review1336\\context.json",
+      "d_path": "D:\\Proyectos\\airr-investigacion\\2026-10-29_optical-review1336\\context.json",
+      "copy_verified": true
+    },
+    {
+      "relative_path": "hashes/source_pins.json",
+      "bytes": 13268,
+      "sha256": "1498b065cf4538f1eddee34e59b10ce22b58d233a7a4b934ee671dc8af91c34e",
+      "c_path": "C:\\Trabajo\\airr\\2026-10-29_optical-review1336\\hashes\\source_pins.json",
+      "d_path": "D:\\Proyectos\\airr-investigacion\\2026-10-29_optical-review1336\\hashes\\source_pins.json",
+      "copy_verified": true
+    }
+  ],
+  "all_c_d_copy_hashes_match": true,
+  "reviewed_manuscript_source_hashes_reverified_unchanged": true,
+  "no_external_side_effects": "No edits to manuscripts, previous reports, graph, state or other chats; C originals retained."
+}

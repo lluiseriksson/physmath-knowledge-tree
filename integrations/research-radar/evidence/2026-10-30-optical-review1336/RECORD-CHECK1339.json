@@ -1,0 +1,32 @@
+{
+  "at": "2026-10-29T23:16:54.136Z",
+  "mode": "public table record; no manuscript source provided",
+  "result": {
+    "archive_payloads": 49,
+    "constant_pairs": 32,
+    "coverage": [
+      0,
+      400
+    ],
+    "external_dependencies": [],
+    "manuscript_source_table_checked": false,
+    "maximum_segment": 160,
+    "maximum_serialized_bound_upper": "91419580868734318309667222528679/500000000000000000000000000000000000000",
+    "negative_guards": [
+      "nonfinite",
+      "strict_threshold",
+      "missing_segment",
+      "weak_G1",
+      "table_mismatch"
+    ],
+    "numeric_campaign_rerun": false,
+    "rational_gap": true,
+    "rational_log_bracket": true,
+    "recorded_manuscript_source_sha256": "a8092f18a95f6f6a1528295be7b224c1982e2738320cb5373fb74fda8f24d2ef",
+    "scalar_rows": 2,
+    "scope": "Stored-record inspection and exact rational consequences only; trusted historical balls and analytic contract remain premises, no retroactive binary/process attestation or new review score.",
+    "segments": 320,
+    "workers_linked": 8
+  },
+  "new_numerical_campaign": false
+}

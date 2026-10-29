@@ -1,0 +1,57 @@
+{
+  "native_zip_sha256": "8bfe0e88e249b2802592455f83d5a45753ac9c8d133f65fd4d58610fe3a66002",
+  "members": [
+    {
+      "native_member": "report.txt",
+      "native_bytes": 23224,
+      "native_sha256": "408ec74968caded1df8391b560be862fc4da3da523683db33a0dd35211386a63",
+      "reading_projection": "report.txt",
+      "projection_sha256": "408ec74968caded1df8391b560be862fc4da3da523683db33a0dd35211386a63",
+      "transform": "CRLF to LF and exactly one finalLF; native bytes retained in ZIP"
+    },
+    {
+      "native_member": "verdict.json",
+      "native_bytes": 3921,
+      "native_sha256": "75d89794f2dcc54df0e06c58ea43f70648723c0d7a616166b8d8481aaabe55eb",
+      "reading_projection": "verdict.json",
+      "projection_sha256": "3502432f1942538dfae1611f0b11c297cd29a246cbee4648f115f6211867117f",
+      "transform": "CRLF to LF and exactly one finalLF; native bytes retained in ZIP"
+    },
+    {
+      "native_member": "context.json",
+      "native_bytes": 3584,
+      "native_sha256": "71eede1c8cffc38511ef26c6d286d345fedd9e0b6240aa387c0150278ba54350",
+      "reading_projection": "context.json",
+      "projection_sha256": "c2fbf502b338fb44d711863582aba3d55be12520f9e66716d3be8c5158eecf09",
+      "transform": "CRLF to LF and exactly one finalLF; native bytes retained in ZIP"
+    },
+    {
+      "native_member": "hashes/source_pins.json",
+      "native_bytes": 13268,
+      "native_sha256": "1498b065cf4538f1eddee34e59b10ce22b58d233a7a4b934ee671dc8af91c34e",
+      "reading_projection": "source_pins.json",
+      "projection_sha256": "aba9ef1ea66f4cd24829ef47de80297c3e55533092ee249e9e4876af1b925759",
+      "transform": "CRLF to LF and exactly one finalLF; native bytes retained in ZIP"
+    },
+    {
+      "native_member": "COPY-VERIFICATION.json",
+      "native_bytes": 1922,
+      "native_sha256": "234b9dd55bc161cf5d89998196847a68709f60d90849855fc9fc8e1c38c117dc",
+      "reading_projection": "COPY-VERIFICATION.json",
+      "projection_sha256": "d58c27ecfdbfc06acd3f4123e5c74f69908b2f9e761a5c1aef8aee692b77de70",
+      "transform": "CRLF to LF and exactly one finalLF; native bytes retained in ZIP"
+    },
+    {
+      "native_member": "RESPONSE1338.md",
+      "native_bytes": 5930,
+      "native_sha256": "532bf4281acb7da4b88059f02109fc2151871d5ba9b39069d67e14c90063be67",
+      "reading_projection": "RESPONSE1338.md",
+      "projection_sha256": "532bf4281acb7da4b88059f02109fc2151871d5ba9b39069d67e14c90063be67",
+      "transform": "CRLF to LF and exactly one finalLF; native bytes retained in ZIP"
+    }
+  ],
+  "pdf_not_included": true,
+  "manuscript_tex_not_included": true,
+  "scores_exact_pdf_only": "1285a454550aaaac58d583d26f15dd05175f6112606aa8530b4f06a9f829bed0",
+  "no_new_assessment_or_score_for_author_supplement": true
+}
