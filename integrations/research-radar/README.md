@@ -161,3 +161,5 @@ The [exact-review continuity reconciliation](notes/2026-10-28-exact-review-conti
 - [Preparation publication and the remaining factorization boundary](notes/2026-10-29-preparation-publication.md): exact public3.5/8.5/3.0 review retained; optional joint-cardinality supplement unreviewed; intrinsic EB shortcut rejected without a new paper.
 
 - [Modular preparation cost: prior art and full/reduced generator boundary](evidence/2026-10-29-modular-preparation/SYNTHESIS1216.txt): direct antecedents defeat generic novelty; exact finite calibration retains the complement contribution; no new paper or grade.
+
+- [MPS injectivity and uniform-disorder boundaries](evidence/2026-10-29-mps-hypothesis-boundaries/SYNTHESIS1218.txt): source-defined gap-classification problem, strict positivity versus Choi injectivity control, an exact periodic counterexample to the PDFp34 adjoint-order helper lemma, conditional AppendixA.9 repair, and retained finite-error limits; no new paper or grade.

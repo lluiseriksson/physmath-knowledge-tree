@@ -1,0 +1,269 @@
+{
+  "scope": "Elementary known spectral discontinuity calibration, not a QFT proof or originality claim",
+  "fixed_reference": "lambda_j=2^(-j-1), j>=0; algebra B(l2) on first factor of its standard purification",
+  "cases": [
+    {
+      "k": 2,
+      "n": 16,
+      "purified_distance_squared": "1/4",
+      "modular_expectation_over_ln2": -4,
+      "naive_probability_upper": "1/16",
+      "approximate_preparation_probability": "1",
+      "bounded_rank_one_correction_for_each_fixed_k": true
+    },
+    {
+      "k": 3,
+      "n": 81,
+      "purified_distance_squared": "1/9",
+      "modular_expectation_over_ln2": -9,
+      "naive_probability_upper": "1/512",
+      "approximate_preparation_probability": "1",
+      "bounded_rank_one_correction_for_each_fixed_k": true
+    },
+    {
+      "k": 4,
+      "n": 256,
+      "purified_distance_squared": "1/16",
+      "modular_expectation_over_ln2": -16,
+      "naive_probability_upper": "1/65536",
+      "approximate_preparation_probability": "1",
+      "bounded_rank_one_correction_for_each_fixed_k": true
+    },
+    {
+      "k": 5,
+      "n": 625,
+      "purified_distance_squared": "1/25",
+      "modular_expectation_over_ln2": -25,
+      "naive_probability_upper": "1/33554432",
+      "approximate_preparation_probability": "1",
+      "bounded_rank_one_correction_for_each_fixed_k": true
+    },
+    {
+      "k": 6,
+      "n": 1296,
+      "purified_distance_squared": "1/36",
+      "modular_expectation_over_ln2": -36,
+      "naive_probability_upper": "1/68719476736",
+      "approximate_preparation_probability": "1",
+      "bounded_rank_one_correction_for_each_fixed_k": true
+    },
+    {
+      "k": 7,
+      "n": 2401,
+      "purified_distance_squared": "1/49",
+      "modular_expectation_over_ln2": -49,
+      "naive_probability_upper": "1/562949953421312",
+      "approximate_preparation_probability": "1",
+      "bounded_rank_one_correction_for_each_fixed_k": true
+    },
+    {
+      "k": 8,
+      "n": 4096,
+      "purified_distance_squared": "1/64",
+      "modular_expectation_over_ln2": -64,
+      "naive_probability_upper": "1/18446744073709551616",
+      "approximate_preparation_probability": "1",
+      "bounded_rank_one_correction_for_each_fixed_k": true
+    },
+    {
+      "k": 9,
+      "n": 6561,
+      "purified_distance_squared": "1/81",
+      "modular_expectation_over_ln2": -81,
+      "naive_probability_upper": "1/2417851639229258349412352",
+      "approximate_preparation_probability": "1",
+      "bounded_rank_one_correction_for_each_fixed_k": true
+    },
+    {
+      "k": 10,
+      "n": 10000,
+      "purified_distance_squared": "1/100",
+      "modular_expectation_over_ln2": -100,
+      "naive_probability_upper": "1/1267650600228229401496703205376",
+      "approximate_preparation_probability": "1",
+      "bounded_rank_one_correction_for_each_fixed_k": true
+    },
+    {
+      "k": 11,
+      "n": 14641,
+      "purified_distance_squared": "1/121",
+      "modular_expectation_over_ln2": -121,
+      "naive_probability_upper": "1/2658455991569831745807614120560689152",
+      "approximate_preparation_probability": "1",
+      "bounded_rank_one_correction_for_each_fixed_k": true
+    },
+    {
+      "k": 12,
+      "n": 20736,
+      "purified_distance_squared": "1/144",
+      "modular_expectation_over_ln2": -144,
+      "naive_probability_upper": "1/22300745198530623141535718272648361505980416",
+      "approximate_preparation_probability": "1",
+      "bounded_rank_one_correction_for_each_fixed_k": true
+    },
+    {
+      "k": 13,
+      "n": 28561,
+      "purified_distance_squared": "1/169",
+      "modular_expectation_over_ln2": -169,
+      "naive_probability_upper": "1/748288838313422294120286634350736906063837462003712",
+      "approximate_preparation_probability": "1",
+      "bounded_rank_one_correction_for_each_fixed_k": true
+    },
+    {
+      "k": 14,
+      "n": 38416,
+      "purified_distance_squared": "1/196",
+      "modular_expectation_over_ln2": -196,
+      "naive_probability_upper": "1/100433627766186892221372630771322662657637687111424552206336",
+      "approximate_preparation_probability": "1",
+      "bounded_rank_one_correction_for_each_fixed_k": true
+    },
+    {
+      "k": 15,
+      "n": 50625,
+      "purified_distance_squared": "1/225",
+      "modular_expectation_over_ln2": -225,
+      "naive_probability_upper": "1/53919893334301279589334030174039261347274288845081144962207220498432",
+      "approximate_preparation_probability": "1",
+      "bounded_rank_one_correction_for_each_fixed_k": true
+    },
+    {
+      "k": 16,
+      "n": 65536,
+      "purified_distance_squared": "1/256",
+      "modular_expectation_over_ln2": -256,
+      "naive_probability_upper": "1/115792089237316195423570985008687907853269984665640564039457584007913129639936",
+      "approximate_preparation_probability": "1",
+      "bounded_rank_one_correction_for_each_fixed_k": true
+    },
+    {
+      "k": 17,
+      "n": 83521,
+      "purified_distance_squared": "1/289",
+      "modular_expectation_over_ln2": -289,
+      "naive_probability_upper": "1/994646472819573284310764496293641680200912301594695434880927953786318994025066751066112",
+      "approximate_preparation_probability": "1",
+      "bounded_rank_one_correction_for_each_fixed_k": true
+    },
+    {
+      "k": 18,
+      "n": 104976,
+      "purified_distance_squared": "1/324",
+      "modular_expectation_over_ln2": -324,
+      "naive_probability_upper": "1/34175792574734561318320347298712833833643272357706444319152665725155515612490248800367393390985216",
+      "approximate_preparation_probability": "1",
+      "bounded_rank_one_correction_for_each_fixed_k": true
+    },
+    {
+      "k": 19,
+      "n": 130321,
+      "purified_distance_squared": "1/361",
+      "modular_expectation_over_ln2": -361,
+      "naive_probability_upper": "1/4697085165547666455778961193578674054751365097816639741414581943064418050229216886927397996769537406063869952",
+      "approximate_preparation_probability": "1",
+      "bounded_rank_one_correction_for_each_fixed_k": true
+    },
+    {
+      "k": 20,
+      "n": 160000,
+      "purified_distance_squared": "1/400",
+      "modular_expectation_over_ln2": -400,
+      "naive_probability_upper": "1/2582249878086908589655919172003011874329705792829223512830659356540647622016841194629645353280137831435903171972747493376",
+      "approximate_preparation_probability": "1",
+      "bounded_rank_one_correction_for_each_fixed_k": true
+    },
+    {
+      "k": 21,
+      "n": 194481,
+      "purified_distance_squared": "1/441",
+      "modular_expectation_over_ln2": -441,
+      "naive_probability_upper": "1/5678427533559428832416592249125035424637823130369672345949142181098744438385921275985867583701277855943457200048954515105739075223552",
+      "approximate_preparation_probability": "1",
+      "bounded_rank_one_correction_for_each_fixed_k": true
+    },
+    {
+      "k": 22,
+      "n": 234256,
+      "purified_distance_squared": "1/484",
+      "modular_expectation_over_ln2": -484,
+      "naive_probability_upper": "1/49947976805055875702105555676690660891977570282639538413746511354005947821116249921924897649015871538557230897942505966327167610868612564900642816",
+      "approximate_preparation_probability": "1",
+      "bounded_rank_one_correction_for_each_fixed_k": true
+    },
+    {
+      "k": 23,
+      "n": 279841,
+      "purified_distance_squared": "1/529",
+      "modular_expectation_over_ln2": -529,
+      "naive_probability_upper": "1/1757388200993436087035366604564836663620975436836686184804982645551499054949799949343375268009332366074187855716219099657503228927927460816018951242525454630912",
+      "approximate_preparation_probability": "1",
+      "bounded_rank_one_correction_for_each_fixed_k": true
+    },
+    {
+      "k": 24,
+      "n": 331776,
+      "purified_distance_squared": "1/576",
+      "modular_expectation_over_ln2": -576,
+      "naive_probability_upper": "1/247330401473104534060502521019647190035131349101211839914063056092897225106531867170316401061243044989597671426016139339351365034306751209967546155101893167916606772148699136",
+      "approximate_preparation_probability": "1",
+      "bounded_rank_one_correction_for_each_fixed_k": true
+    },
+    {
+      "k": 25,
+      "n": 390625,
+      "purified_distance_squared": "1/625",
+      "modular_expectation_over_ln2": -625,
+      "naive_probability_upper": "1/139234637988958594318883410818490335842688858253435056475195084164406590796163250320615014993816265862385324388842602762167013693889631286567769205313788274787963704661873320009853338386432",
+      "approximate_preparation_probability": "1",
+      "bounded_rank_one_correction_for_each_fixed_k": true
+    },
+    {
+      "k": 26,
+      "n": 456976,
+      "purified_distance_squared": "1/676",
+      "modular_expectation_over_ln2": -676,
+      "naive_probability_upper": "1/313528531882069915964662425689704934689422834087799421518938595239444503444259215719322355763768461419760165742407930953086580768238532773442734168210737755891992072530296122920016274326105279759841755136",
+      "approximate_preparation_probability": "1",
+      "bounded_rank_one_correction_for_each_fixed_k": true
+    },
+    {
+      "k": 27,
+      "n": 531441,
+      "purified_distance_squared": "1/729",
+      "modular_expectation_over_ln2": -729,
+      "naive_probability_upper": "1/2824013958708217496949108842204627863351353911851577524683401930862693830361198499905873920995229996970897865498283996578123296865878390947626553088486946106430796091482716120572632072492703527723757359478834530365734912",
+      "approximate_preparation_probability": "1",
+      "bounded_rank_one_correction_for_each_fixed_k": true
+    },
+    {
+      "k": 28,
+      "n": 614656,
+      "purified_distance_squared": "1/784",
+      "modular_expectation_over_ln2": -784,
+      "naive_probability_upper": "1/101745825697019260773923519755878567461315282017759829107608914364075275235254395622580447400994175578963163918967182013639660669771108475957692810857098847138903161308502419410142185759152435680068435915159402496058513611411689167650816",
+      "approximate_preparation_probability": "1",
+      "bounded_rank_one_correction_for_each_fixed_k": true
+    },
+    {
+      "k": 29,
+      "n": 707281,
+      "purified_distance_squared": "1/841",
+      "modular_expectation_over_ln2": -841,
+      "naive_probability_upper": "1/14663118806259180136662417374041517307249530456151374095074022247583264770740686929584785544102209728219832068720127856678091192707621568870627853333281064765702591645685356596360602245877237133437460484214653566707676443446649642811063698998514839191552",
+      "approximate_preparation_probability": "1",
+      "bounded_rank_one_correction_for_each_fixed_k": true
+    },
+    {
+      "k": 30,
+      "n": 810000,
+      "purified_distance_squared": "1/900",
+      "modular_expectation_over_ln2": -900,
+      "naive_probability_upper": "1/8452712498170643941637436558664265704301557216577944354047371344426782440907597751590676094202515006314790319892114058862117560952042968596008623655407033230534186943984081346699704282822823056848387726531379014466368452684024987821414350380272583623832617294363807973376",
+      "approximate_preparation_probability": "1",
+      "bounded_rank_one_correction_for_each_fixed_k": true
+    }
+  ],
+  "count": 29,
+  "all_pass": true
+}
