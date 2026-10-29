@@ -1,0 +1,71 @@
+{
+  "created_at": "2026-10-29T13:48:34.526Z",
+  "candidate": "interpolation-semidefinite-boundary",
+  "source_cards": 78,
+  "candidates": 17,
+  "canonical_graph_changed": false,
+  "confidence": "speculative candidate; attributed literature/abstract reading and own elementary derivation with exact controls. No independent review, new paper or grade.",
+  "source_bodies_redistributed": false,
+  "files": [
+    {
+      "path": "CONTROL1275.json",
+      "sha256": "d01ec0ebfaf4499b1c02abf5d9bb7e90da91cdfb0deef4d5d77939cbc4b9a265",
+      "bytes": 1297
+    },
+    {
+      "path": "CONTROL1276.json",
+      "sha256": "c6356d4000bb60345c74d71c3ab1c89b749c254f9f68be80d8411750f135aa4c",
+      "bytes": 1362
+    },
+    {
+      "path": "DEPENDENCIES1277.json",
+      "sha256": "0509bf0f86d2e632671c44fa7ee3f343e6a75ea6b217eef58571cd832ba7a029",
+      "bytes": 1680
+    },
+    {
+      "path": "DERIVATION1275.json",
+      "sha256": "4b489ec4f03108784460f608cbc219d2facf71cd3a8d5547c06dce661b4d41a7",
+      "bytes": 3299
+    },
+    {
+      "path": "DERIVATION1276.json",
+      "sha256": "48fda78411a60cacb5df203a30a27d04476ecb6174736e6c3ace26e90850387f",
+      "bytes": 3589
+    },
+    {
+      "path": "failed-sympy1275.log",
+      "sha256": "99ee51a87675896b6440b63467f8eab87e1a1b283cdfe34db847488ff2a03442",
+      "bytes": 193
+    },
+    {
+      "path": "PRIOR-ART1276.json",
+      "sha256": "2e8c37b1c2543fb6b7eef3d65cae4e1c66861c128b0edb52b3b225118d853c91",
+      "bytes": 2047
+    },
+    {
+      "path": "SOURCES1277.json",
+      "sha256": "5eb410101fd6c7aff28277218263f383e96d791502bf6c7633720a9612a55c0e",
+      "bytes": 3889
+    },
+    {
+      "path": "SUBGRAPH1277.json",
+      "sha256": "9c05e3a6c257ab651a465bc1512fcc3018e907f95659bf0e19c550d079794a90",
+      "bytes": 13457
+    },
+    {
+      "path": "SYNTHESIS1277.txt",
+      "sha256": "d3813f5d2258aa8fe6216f204bef2b7ca3bbc45dd514fc0d73000f7a19748abb",
+      "bytes": 5431
+    },
+    {
+      "path": "verify_pick1275_pure.py",
+      "sha256": "9f41e84374a4cc998cf99ca14a9d8f506ff49d06c34bb4372510971eeb33c9fa",
+      "bytes": 3663
+    },
+    {
+      "path": "verify_pick1276.py",
+      "sha256": "9d654b131cfef6b2cef3a9c85d89be693c4021068284cac985b80dfe2bc8a7f7",
+      "bytes": 4013
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "scope": "Exact bounded symbolic identities and rational calibrations, not an independent review or variable-c SDP lift",
+  "general_Pick_determinant_identity": true,
+  "general_confluent_coefficient": "4*((c0^2+1)*(a^2+b^2)-4*c0^2)",
+  "arrow_determinant_identity": true,
+  "rational_eigenpair_and_quadratic_form": true,
+  "rows": [
+    {
+      "x": "2",
+      "y": "1",
+      "c0": 2,
+      "r_squared": "2/7",
+      "quartic": "-128/5",
+      "LMIs_PSD": true,
+      "label": "valid_constant_interior"
+    },
+    {
+      "x": "-2",
+      "y": "-1",
+      "c0": 2,
+      "r_squared": "2/7",
+      "quartic": "-128/5",
+      "LMIs_PSD": false,
+      "label": "wrong_sign_branch"
+    },
+    {
+      "x": "8",
+      "y": "1",
+      "c0": 2,
+      "r_squared": "2/7",
+      "quartic": "18208/5",
+      "LMIs_PSD": false,
+      "label": "outside"
+    },
+    {
+      "x": "0",
+      "y": "1",
+      "c0": 2,
+      "r_squared": "2/7",
+      "quartic": "32",
+      "LMIs_PSD": false,
+      "label": "axis_excluded"
+    }
+  ],
+  "intersection_halfplanes_falsifier": {
+    "c0": 1,
+    "r": "3/5",
+    "target": "5/2+5i/2",
+    "right_halfplane_Pick_determinant": "9/8",
+    "upper_halfplane_Pick_determinant": "9/8",
+    "quadrant_quartic": "54",
+    "quadrant_interpolant_exists": false
+  },
+  "new_source_counterexample": false,
+  "full_variable_c_lift": false
+}

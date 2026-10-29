@@ -1,0 +1,29 @@
+{
+  "observed_at": "2026-10-29T13:43:57.662Z",
+  "candidate": "interpolation-semidefinite-boundary",
+  "confidence": "heuristic own elementary analytical derivation from attributed Pick theorem; not independent review or formal proof",
+  "scope": "Two VALUE nodes0,z, with|z|=r<1 and any fixed normalizationf(0)=c0+i,c0>0. Not one jointly affine pencil when c0 is itself an optimization variable.",
+  "construction": {
+    "constants": "kappa=(1+r^2)/(1-r^2); a=2*(c0^2-1),b=4*c0*kappa;lambda=sqrt(a^2+b^2)>0. Choose positive eigenvectore=(b,lambda-a),n=e1^2+e2^2,alpha=lambda/n. SetX=e1*x+e2*y,Y=-e2*x+e1*y,C=c0^2+1.",
+    "first_LMI": "[[t,x,y],[x,1,0],[y,0,1]] >=0",
+    "second_LMI": "[[alpha*X,t,C,alpha*Y],[t,X,0,0],[C,0,X,0],[alpha*Y,0,0,alpha*X]] >=0",
+    "equivalence": "There existst iff the givenvalueu=x+iy is attained by a quadrant map withf(0)=c0+i. Coefficients are real algebraic wheneverc0 andr^2 are real algebraic."
+  },
+  "argument": [
+    "The two-point half-plane Pick determinant for g=f^2 is nonnegative iffF=(x^2+y^2)^2+(c0^2+1)^2-2(c0^2-1)(x^2-y^2)-8*c0*kappa*x*y<=0, withx,y>0.",
+    "The real symmetric matrixQ=[[a,b],[b,-a]] has eigenvalues+lambda,-lambda and a positive eigenvectore. ThusQform=alpha*(X^2-Y^2). FirstLMI gives t>=x^2+y^2>=0.",
+    "SecondLMI forcesX>0: diagonalX>=0 and the constantC>0 makesalpha*X^2>=C^2. Its Schur complement is t^2+C^2+alpha*Y^2<=alpha*X^2, equivalent toF<=0 after minimizingt=x^2+y^2.",
+    "F<=0 cannot hold withxy<=0, since it is minus the Pick determinant and equals a squared modulus minus16*c0*x*y/(1-r^2). Thereforex,y share a nonzero sign. Sincee has positive entries,X>0 selects the first quadrant.",
+    "Conversely, first-quadrantF<=0 yields both matrices at t=x^2+y^2. Singular determinant data andr=0 collision are retained. No strict-positive-definite replacement is made."
+  ],
+  "confluent_boundary": "A separate first-derivative jet at0 obeys|fprime(0)|<=2*c0/sqrt(c0^2+1). This follows from|gprime(0)|<=2*Im g(0)=4c0 andgprime=2(c0+i)fprime. It is not the unscaledr=0 value constraint.",
+  "shortcut_falsifier": "Even imposing both right-half-plane and upper-half-plane two-node Pick PSD conditions does not suffice for the quadrant: atc0=1,r=3/5,u=5/2+5i/2, both half-plane determinants=9/8>0 but quadrant quarticF=54>0.",
+  "hypothesis_reduction": "Fixed-normalization two-node slices have an explicit affine semidefinite lift. The specialc0=1 assumption from1275 is unnecessary for those slices. The full variablec body and higher jets still have no displayed jointly affine lift.",
+  "limits": [
+    "lambda,e,alpha depend nonlinearly onc0. A parameterized family of pencils is not a joint affine pencil in(c0,x,y).",
+    "The source already supplies the classical Pick characterization; these are scoped elementary representation consequences, novelty unestablished, no manuscript or score.",
+    "Imported classical Pick theorem and source manuscript not re-reviewed; bounded exact controls are not a kernel proof or computational campaign certification."
+  ],
+  "falsifier": "A joint-variable claim must supply affine coefficients in every variable and all singular/confluent cases. A target passing the fixed-parameter LMIs but violating the exact Pick inequality would defeat this claimed slice representation.",
+  "next": "Check symbolic identities, fixedc0=2 rational-eigenvector cases and the intersection-of-halfplanes falsifier exactly. Then integrate1275/1276 once into the existing candidate; preserve the general variablec/higher-jet obligation and stop short of another minor paper."
+}
