@@ -1,0 +1,78 @@
+{
+  "utc": "2026-10-29T12:55:43.840Z",
+  "confidence": "literature; selected primary argument reading, no end-to-end proof or kernel certification",
+  "sources": [
+    {
+      "repository": "project-numina/kakeya-3d",
+      "commit": "a26427e3c2fcaf9f98694fbd0d4dd49e41dcf5e3",
+      "path": "Unconditional/PairedParentSelection.lean",
+      "url": "https://raw.githubusercontent.com/project-numina/kakeya-3d/a26427e3c2fcaf9f98694fbd0d4dd49e41dcf5e3/Unconditional/PairedParentSelection.lean",
+      "sha256": "7df25a4805299f2e7fe8281e79efa7754d70dd05d4b948ffe8e312a8b713e2d4",
+      "bytes": 4384,
+      "reading": "Complete local statement and adapter proof22-82 read"
+    },
+    {
+      "repository": "project-numina/kakeya-3d",
+      "commit": "a26427e3c2fcaf9f98694fbd0d4dd49e41dcf5e3",
+      "path": "Unconditional/JointColorAdapter.lean",
+      "url": "https://raw.githubusercontent.com/project-numina/kakeya-3d/a26427e3c2fcaf9f98694fbd0d4dd49e41dcf5e3/Unconditional/JointColorAdapter.lean",
+      "sha256": "57eae0d89a62afa8ddccdade630b55000ef859acb4e0e6f67de75ef5534127a8",
+      "bytes": 4363,
+      "reading": "Complete local statement/adapter24-90 read"
+    },
+    {
+      "repository": "project-numina/kakeya-3d",
+      "commit": "a26427e3c2fcaf9f98694fbd0d4dd49e41dcf5e3",
+      "path": "Unconditional/JointColoredSelection.lean",
+      "url": "https://raw.githubusercontent.com/project-numina/kakeya-3d/a26427e3c2fcaf9f98694fbd0d4dd49e41dcf5e3/Unconditional/JointColoredSelection.lean",
+      "sha256": "d02c33b47afba56157fd92a53ce20d1f012536793fd5aaedde419b9aa3d439a5",
+      "bytes": 4655,
+      "reading": "Complete local statement and proof23-97 read"
+    },
+    {
+      "repository": "M32026/3d-sticky-kakeya",
+      "commit": "42f739b484fd055e0aa29601c35677ad996f2ef2",
+      "path": "MyLeanRepo/Kakeya/Assouad/PureWZ2/GWZConversion/FiniteColoredDegreeSelection.lean",
+      "url": "https://raw.githubusercontent.com/M32026/3d-sticky-kakeya/42f739b484fd055e0aa29601c35677ad996f2ef2/MyLeanRepo/Kakeya/Assouad/PureWZ2/GWZConversion/FiniteColoredDegreeSelection.lean",
+      "sha256": "9d9e894fbad0d997263c7217dd5b52d284c09b641a6446ab1f3c43cba4b9fd2c",
+      "bytes": 8648,
+      "reading": "Weighted color-vector pigeonhole23-129 and packaged selector135-237 read; imported regularizer audited separately in this record"
+    },
+    {
+      "repository": "M32026/3d-sticky-kakeya",
+      "commit": "42f739b484fd055e0aa29601c35677ad996f2ef2",
+      "path": "MyLeanRepo/Kakeya/Assouad/PropStickyPaperFiniteWeightedDegreeSelection.lean",
+      "url": "https://raw.githubusercontent.com/M32026/3d-sticky-kakeya/42f739b484fd055e0aa29601c35677ad996f2ef2/MyLeanRepo/Kakeya/Assouad/PropStickyPaperFiniteWeightedDegreeSelection.lean",
+      "sha256": "5aeece61c9dacb01f266e1139d60949f5b9bb7673d0923a52300626d6e0038b0",
+      "bytes": 3450,
+      "reading": "Complete local data and adapter16-92 read"
+    },
+    {
+      "repository": "M32026/3d-sticky-kakeya",
+      "commit": "42f739b484fd055e0aa29601c35677ad996f2ef2",
+      "path": "MyLeanRepo/Kakeya/Assouad/WZ1/SimultaneousDegreeRegularization.lean",
+      "url": "https://raw.githubusercontent.com/M32026/3d-sticky-kakeya/42f739b484fd055e0aa29601c35677ad996f2ef2/MyLeanRepo/Kakeya/Assouad/WZ1/SimultaneousDegreeRegularization.lean",
+      "sha256": "164627486d49c99f495129f3a245d2949deec9b833cb134862f4f6151308ff40",
+      "bytes": 31781,
+      "reading": "Complete main local argument22-638 read; wrappers640-693 and imported WeightBinning/TCore/HeavyColorClass proofs not fully audited"
+    }
+  ],
+  "sourced_fact": "Paired selection tags old/new parents by coordinate and sum type, feeds2q coordinates to one joint selector, and obtains one common selected set. JointColorAdapter adds one fine-color coordinate with trivial parent. One weighted pigeonhole chooses the entire color vector before simultaneous degree regularization.",
+  "mechanism": "A heavy joint color class is selected once. Restricting weights to zero outside this class lets positive selected weights force containment in that same class. The finite regularizer first selects a positive dyadic weight band, then one joint dyadic DEGREE VECTOR across all m coordinates, then applies one T-core pruning. This is not repeated arbitrary restriction by scale.",
+  "loss_accounting": "For q original coordinates, paired adapter pays fineColorCount*parentColorCount^(2q), weight loss8*L^(2q+2) and degree factor16*(2q+1)*L^(2q+1), L=Nat.log2(2|I|)+1. Extra constant-color coordinates overcount colors harmlessly; these factors match the existing caller envelope. No loss-free claim or optimal constants asserted.",
+  "core_argument": "Finite nonzero weights have total finite. Weight band c<=w<=2c has0<c<infinity, so cancellation by c is guarded. One degree-vector class S0 pays L^m. Vertex counting bounds I-double-prime.card by2*L^m*S0.card. Thresholds floor(2^b_k/(4mL^m)) feed T-core existence; removed count is at most half S0. Weight comparability then pays factor4, giving total retention8*L^(m+1). Degree uniformity explicitly separates zero threshold from positive threshold, avoiding division by zero.",
+  "degenerate_cases": "Total zero returns empty selection. m=0 handled before positive-coordinate arguments. An infinite individual weight selects a singleton and weightLevel=infinity. Only afterward is the all-finite branch entered, and the cancellation of c uses c!=0 and c!=infinity. Upper adapters demand positive total to prove nonempty output; their added coordinate guarantees positive coordinate count for band packaging.",
+  "preserved": [
+    "same retained set for every supplied finite coordinate",
+    "exact tags preventing old/new parent and coordinate collisions",
+    "positive selected weights and inherited color membership",
+    "explicit nonzero finite c at ENNReal cancellation",
+    "case split for zero integer threshold",
+    "paid product-color and logarithmic losses"
+  ],
+  "hypothesis_reduction_audit": "The inspected adapters and local assembly do not require an added bounded original weight-spread hypothesis or independent per-coordinate witnesses. The actual weight-bin and T-core primitive proofs still need auditing; do not certify the full theorem from wrapper compatibility.",
+  "falsifier": "A failed joint-vector identification, a changed parent map after restriction, illegal cancellation, wrong integer-floor branch, or T-core/weight-bin primitive failing its actual stated contract would defeat the corresponding link. No such local algebraic issue found in the inspected ranges.",
+  "limits": "No imported primitive proof audit completed, no upstream build, no computed axiom closure, no main Kakeya or all-dimensional local-smoothing theorem certification. This is source reading of attributed mathematics, no new manuscript, novelty certificate, independent model assessment or score.",
+  "formal_result": "No new formal theorem produced. A source declaration and a manual local-argument check are distinct from running the kernel.",
+  "next": "Close PR184 main CI first. Then read the pinned WeightBinning, TCore and HeavyColorClass contracts/proofs, especially total/(2n) truncation, charging of deleted edges and finite termination. Batch further findings before another knowledge PR; do not make a standalone minor paper."
+}

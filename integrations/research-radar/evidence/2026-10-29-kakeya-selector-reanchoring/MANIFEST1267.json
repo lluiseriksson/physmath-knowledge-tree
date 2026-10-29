@@ -1,0 +1,40 @@
+{
+  "utc": "2026-10-29T13:04:13.552Z",
+  "files": [
+    {
+      "file": "DEPENDENCY-BINDING1267.json",
+      "sha256": "bd5904e98f72cf470833f51f7cbd5fc746125c78bbf8ca2bf3fd8133fe2e731c"
+    },
+    {
+      "file": "READING1265.json",
+      "sha256": "285b05d2f4892773d44612c931846e88c4ee060d7182bfa8877317f49a3799b6"
+    },
+    {
+      "file": "READING1266.json",
+      "sha256": "125fabe767cdc5a77311294d794590cefdb79288ab130a37e935e7eba52f2de9"
+    },
+    {
+      "file": "READING1267.json",
+      "sha256": "8be53d1a89c61568f3d0c1faa783c41971cc5f45c9ff898d0eda9d1147498eea"
+    },
+    {
+      "file": "RECONCILIATION1267.json",
+      "sha256": "63519e05e1e2109ed721fcde45de17424aaedcc6d7e1b3a7b967c63b198a4709"
+    },
+    {
+      "file": "SOURCES1267.json",
+      "sha256": "5a019f1bfed8f042cf868ebed86eb82bba1cde3818a3e9dde00d7d8f521d7c47"
+    },
+    {
+      "file": "SUBGRAPH1267.json",
+      "sha256": "a4d19806a0b8db107b8b10510a9ddd751165a6f6b3aa51ae38cdaa8576aeff1c"
+    }
+  ],
+  "source_cards": 78,
+  "candidates": 17,
+  "canonical_graph_changed": false,
+  "new_manuscript": false,
+  "new_assessment": false,
+  "source_bodies_redistributed": false,
+  "reading_scope": "Manual local proof-argument audit of attributed pinned source; no upstream kernel replay or whole-theorem certification"
+}
