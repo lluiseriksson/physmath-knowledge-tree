@@ -155,3 +155,5 @@ The [exact-review continuity reconciliation](notes/2026-10-28-exact-review-conti
 - [Measurement coefficients and positive Choi remainders](notes/2026-10-28-measurement-cp-order.md): prior formula identified; unreviewed count-free CP-order component; exact finite primal/dual witness.
 
 - [Terminal unscored component audit1208](notes/2026-10-29-component-audit.md): supported hypotheses, minor clarifications, all adverses and provenance retained; novelty unresolved.
+
+- [Preparation prior map and sufficient block thresholds](notes/2026-10-29-preparation-prior-map.md): prior complete-contraction consequences separated from unresolved dimension-envelope originality; no new paper or grade.
