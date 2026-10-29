@@ -1,0 +1,61 @@
+{
+  "scope": "Own unreviewed arguments and bounded exact controls; native archives retained on D, no foreign full text",
+  "files": [
+    {
+      "file": "ARGUMENT1301.txt",
+      "native_sha256": "42b39d91eb724ace92d8c58dba3532a80073868da94bff79fa8e08eae39a842a",
+      "public_sha256": "42b39d91eb724ace92d8c58dba3532a80073868da94bff79fa8e08eae39a842a",
+      "bytes_equal": true,
+      "native_archive_checkpoint": "ea8741b289196370cbd70a99bbc6bb350afdc8778192e2c17f4b063f466e5f47"
+    },
+    {
+      "file": "DISPOSITION1301.json",
+      "native_sha256": "a1122657c6dfc7685e6a642940d53cf39bcee07cdd89cf0a94f0399e0ed5f177",
+      "public_sha256": "a1122657c6dfc7685e6a642940d53cf39bcee07cdd89cf0a94f0399e0ed5f177",
+      "bytes_equal": true,
+      "native_archive_checkpoint": "ea8741b289196370cbd70a99bbc6bb350afdc8778192e2c17f4b063f466e5f47"
+    },
+    {
+      "file": "READING1301.json",
+      "native_sha256": "638edf4f091d8f1db8a4609200512258fe2ef67335289b46fbbf5577f216f61a",
+      "public_sha256": "638edf4f091d8f1db8a4609200512258fe2ef67335289b46fbbf5577f216f61a",
+      "bytes_equal": true,
+      "native_archive_checkpoint": "ea8741b289196370cbd70a99bbc6bb350afdc8778192e2c17f4b063f466e5f47"
+    },
+    {
+      "file": "ARGUMENT1302.txt",
+      "native_sha256": "e8da7d0a445f22ac02ddaf87341445b98ca7d4c6da4d83ad5876a4b6fccd04a0",
+      "public_sha256": "e8da7d0a445f22ac02ddaf87341445b98ca7d4c6da4d83ad5876a4b6fccd04a0",
+      "bytes_equal": true,
+      "native_archive_checkpoint": "50ad60db921ccf16c80c9394411b9bb8f88ec2ac3a15ba4154c159e03166641e"
+    },
+    {
+      "file": "CONTROL1302.json",
+      "native_sha256": "23bd32bd473057a819f0a59efb1c4f82d0cb5c0c83dc750b40282427f4243087",
+      "public_sha256": "23bd32bd473057a819f0a59efb1c4f82d0cb5c0c83dc750b40282427f4243087",
+      "bytes_equal": true,
+      "native_archive_checkpoint": "50ad60db921ccf16c80c9394411b9bb8f88ec2ac3a15ba4154c159e03166641e"
+    },
+    {
+      "file": "verify_uncertainty1302.py",
+      "native_sha256": "ae57651645ab4e2320c59f3169d2aa248e822c64441918044fd75422f6b3d362",
+      "public_sha256": "ae57651645ab4e2320c59f3169d2aa248e822c64441918044fd75422f6b3d362",
+      "bytes_equal": true,
+      "native_archive_checkpoint": "50ad60db921ccf16c80c9394411b9bb8f88ec2ac3a15ba4154c159e03166641e"
+    },
+    {
+      "file": "READINGS1302.json",
+      "native_sha256": "665ac06eac156dffa75ea1cb920e14474f232db397da64919ff83f6b4dfa0d34",
+      "public_sha256": "665ac06eac156dffa75ea1cb920e14474f232db397da64919ff83f6b4dfa0d34",
+      "bytes_equal": true,
+      "native_archive_checkpoint": "50ad60db921ccf16c80c9394411b9bb8f88ec2ac3a15ba4154c159e03166641e"
+    },
+    {
+      "file": "DISPOSITION1302.json",
+      "native_sha256": "9ec83c35eb7725749d22211ab693055064335c7a8e18e0bd04be75cca85a7682",
+      "public_sha256": "9ec83c35eb7725749d22211ab693055064335c7a8e18e0bd04be75cca85a7682",
+      "bytes_equal": true,
+      "native_archive_checkpoint": "50ad60db921ccf16c80c9394411b9bb8f88ec2ac3a15ba4154c159e03166641e"
+    }
+  ]
+}

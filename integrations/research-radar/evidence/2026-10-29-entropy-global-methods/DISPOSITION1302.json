@@ -1,0 +1,18 @@
+{
+  "scope": "Own exact dictionary plus insufficiency control, unreviewed",
+  "standard_uncertainty_plug_in_certifies_global_Q": false,
+  "known_Q_equality_control": "rho_A=|+><+|,R trivial,p=1/2",
+  "standard_bound_upper": "-1123/7975",
+  "global_Q_proved": false,
+  "global_Q_refuted": false,
+  "fawzi_renner_applied": false,
+  "missing_recovery_premises": [
+    "CMI identification",
+    "appropriate upper bound on best recovery fidelity"
+  ],
+  "formal": false,
+  "model_review": false,
+  "new_paper_or_grade": false,
+  "publication": "bundle1301/1302 only in existing-candidate global-method audit, no standalone paper",
+  "computation": "single Fraction algebra controller; no entropy grid"
+}

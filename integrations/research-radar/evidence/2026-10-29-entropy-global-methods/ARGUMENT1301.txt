@@ -1,0 +1,134 @@
+DEPHASING-FIBER COHERENCE RETENTION1301 — own unreviewed argument
+Fixed N(x,y,z)=(3x/5,3y/5,z/4+1/5), complement Nhat, natural logarithms.
+No new manuscript, score, formal theorem, assessment or priority claim.
+Global Q=G>=0 remains unproved; this argument only rejects a strict,
+population-independent multiplicative SDPI route.
+
+Quantifiers recovered from the existing primary source
+Hirche et al.,2608.27171v1, first preprint27August2026:
+https://arxiv.org/html/2608.27171v1
+Definition2 Eqs2.12–2.15 and finite-positive-denominator convention read:
+product-reference, equal-reference-marginal complete and conditional
+coefficients are distinct. The dephasing pair has equal R marginals, so
+the subtracted reference divergence is exactly zero. No MI/product-reference
+identity, article theorem proof, fixed-population sharp coefficient or
+automatic entropy-offset comparison is invoked. This is selected definition
+reading, not a full84-page audit or a new-to-index source.
+
+Own exact mechanism
+For0<p<1 take the already-covered pure Schmidt input
+ |psi_p>=sqrt(1-p)|00>+sqrt(p)|11>, rho_p=|psi_p><psi_p|,
+ sigma_p=(DeltaZ tensor id)(rho_p).
+Both reference marginals are diag(1-p,p). On their common2-dimensional
+support, D(rho_p||sigma_p)=h(p)>0 and finite.
+
+Write a0=29/40, a1=19/40, a_p=(1-p)a0+p a1.
+N(diag(1-p,p))=diag(a_p,1-a_p).
+Complementarity for the pure Stinespring output gives
+ S((Nhat tensor id)rho_p)=h(a_p).
+The dephased output is an orthogonally flagged mixture, giving
+ S((Nhat tensor id)sigma_p)=h(p)+(1-p)h(a0)+p h(a1).
+Using the previously checked phase covariance/pinching identity906,
+ C_E(p)=D((Nhat tensor id)rho_p||(Nhat tensor id)sigma_p)
+       =h(p)-chi_Z(p),
+ chi_Z(p)=h(a_p)-(1-p)h(a0)-p h(a1)>=0.
+No quantum reference was discarded or classicalized in the input.
+
+Let P0=(29/40,11/40), P1=(19/40,21/40), Pp=(1-p)P0+pP1.
+Expanding the classical logarithms gives the exact Donald identity
+ chi_Z(p)=p D(P1||P0)-D(Pp||P0)<=p D(P1||P0).
+All coordinates of P0 are positive, so no singular denominator appears.
+Moreover
+ 0<D(P1||P0)
+  =(19/40)log(19/29)+(21/40)log(21/11)
+  <=log(21/11)<log2.
+The upper bound follows by bounding each log likelihood ratio by its
+maximum; the strict last inequality uses21<22.
+
+For the rational population sequence p_n=2^(-n), n>=1,
+ h(p_n)>=n p_n log2, hence
+ 1-1/n < C_E(p_n)/D(rho_pn||sigma_pn) <=1.
+Thus the supremum restricted even to these dephasing pairs and dimR=2
+equals1. Any uniform eta<1 in C_E<=eta D(rho||DeltaZ rho) fails for n
+with n>1/(1-eta). Ordinary DPI supplies the matching upper1.
+
+These same pairs are admissible in the complete equal-marginal coefficient.
+They are also admissible in the conditional coefficient, with reference
+divergence zero. DPI gives upper1 for each, so
+ eta_D^c(Nhat)=eta_D^Delta(Nhat)=1
+under the recovered finite-positive-denominator definitions.
+No statement about the product-reference/MI coefficient follows.
+
+If faithful input pairs are required, fix n and regularize BOTH states by
+the same full-rank dephasing-invariant
+ omega_n=diag(1-p_n,p_n) tensor I_R/2:
+ rho_eps=(1-eps)rho+eps omega_n, sigma_eps=DeltaZ rho_eps.
+The population remains exactly p_n, the two R marginals remain identical,
+and inputs are faithful for eps>0. Joint convexity and lower
+semicontinuity sandwich both input and output relative entropies to their
+finite original values as eps->0. The positive denominator tends h(p_n),
+so the ratio limit is unchanged. No uncontrolled faithfulness assumption.
+
+Fixed-population strengthening by an orthogonal reference flag
+For ANY fixed p0 in(0,1), set w=min(p0,1-p0)/2>0 and
+ q_n=(p0-w p_n)/(1-w). Then0<q_n<1 because w<p0 and w<1-p0.
+On R=C^2 direct-sum C, form
+ rho_tilde_n = w rho_pn direct-sum
+              (1-w) diag(1-q_n,q_n) tensor |2><2|.
+This is a state on A tensor R, with EXACT population p0. Its dephasing
+sigma_tilde_n preserves the same reference marginal. Direct-sum relative
+entropy, with identical block weights, gives
+ D(rho_tilde||sigma_tilde)=w h(p_n),
+ D(Nhat rho_tilde||Nhat sigma_tilde)=w C_E(p_n).
+The incoherent block contributes zero to each divergence. Consequently
+the ratio remains >1-1/n at fixed p0 and dimR=3.
+These states are mixed (rank3) and contain an entangled2x2 flagged sector;
+they are not a reduction of arbitrary references to classical states.
+They are still existing pure/diagonal sectors for Q, so this is a method
+obstruction and not new Q coverage or a Q counterexample.
+
+Therefore even a coefficient eta(p0)<1 depending only on the fixed
+population cannot bound C_E by eta(p0) D(rho||DeltaZ rho) uniformly over
+quantum references and diagonal geometries. A fixed-A,B/condition-number
+restriction is different and has not been refuted.
+For faithful pairs, mix both with the same
+diag(1-p0,p0) tensor I_R/3 and take the mixture parameter to zero.
+Population remains p0; the same joint-convexity/semicontinuity sandwich
+preserves the ratio limit. This limiting construction has small reference
+eigenvalues and small coherence denominators. No robust finite-resource
+or uniformly conditioned claim follows.
+
+What this removes / does not remove
+This rejects a channel-only strict multiplicative contraction bound uniform
+over all populations, even when restricted to the actual dephasing fiber.
+It also rejects a population-only strict coefficient by the flag construction.
+It does not reject a state-dependent offset, a fixed-diagonal/conditioning
+restriction, a joint-information tradeoff or the global Q. Indeed the example
+has I(Z:R)=h(p) and lies in the previously proved pure-input case. It is a
+falsifier of a proposed method, not new coverage of Q on pure states.
+The O(p) lost information is negligible relative to p log(1/p); a uniform
+strict factor erases precisely that endpoint scale.
+
+Deduplication / reading limits
+Compared existing901/906 scopes,914/917 AD MI obstruction, support/cq-support
+notes and the published1295–1298 route closure. Those distinguish coefficient
+notions and already show complete-retention phenomena for other channels.
+This specialized dephasing-fiber argument is not asserted new in the
+literature or outside the inspected records. No old audit/score extends to it.
+An initial Windows rg wildcard directory search failed and was corrected to
+explicit existing paths; no original file was changed.
+The primary-source inventory is directed, not exhaustive. No foreign body,
+evaluation task, private data or credential was retained or redistributed.
+
+Layers and disposition
+formal: none.
+literature: selected source definitions and standard DPI/entropy identities.
+heuristic: no floating computation used or needed.
+speculative: global mixed-saturated Q and downstream additivity remain open.
+Falsifier: an error in the complementary entropy/pinching identity or
+relative-entropy expansion; a uniform eta<1 valid for these exact pairs
+would contradict the displayed rational sequence.
+Retire both uniform and population-only strict-coefficient routes. Keep this as a scoped guard
+for the next substantive global candidate update, not a separate paper/PR
+or another numerical family. Preserve all population and joint ER data
+when seeking a genuinely different mechanism.

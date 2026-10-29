@@ -1,0 +1,26 @@
+{
+  "scope": "Own unreviewed analytic obstruction, not a manuscript or independent review",
+  "channel": "Nhat complement of N=(3/5,1/4,1/5)",
+  "dephasing_fiber_coherence_ratio_supremum": 1,
+  "complete_equal_reference_coefficient": 1,
+  "conditional_coefficient": 1,
+  "proof_basis": "exact entropy/direct-sum identities, classical Donald identity, DPI, regularization limit",
+  "fixed_population_extension": {
+    "p0": "any0<p0<1",
+    "reference_dimension": 3,
+    "weight": "min(p0,1-p0)/2",
+    "ratio_lower": "strictly greater than1-1/n for p_n=2^-n",
+    "uniform_conditioning_claim": false
+  },
+  "product_reference_MI_coefficient_claimed": false,
+  "global_Q_proved": false,
+  "global_Q_refuted": false,
+  "hypothesis_in_Q_removed": false,
+  "method_rejected": "strict multiplicative coherence factor depending only on channel or population, uniform over reference geometry",
+  "scientific_computation_run": false,
+  "formal": false,
+  "reviewed": false,
+  "novelty_certified": false,
+  "paper_or_score": false,
+  "publication": "guard queued only for next substantive global knowledge update, no standalone minor PR"
+}

@@ -1,0 +1,113 @@
+{
+  "scope": "Directed inventory only, not exhaustive; local smoothing deduplicated; no publication novelty inferred from index changes.",
+  "sources": [
+    {
+      "source": "openai",
+      "url": "https://github.com/openai/math",
+      "status": 200,
+      "bytes": 236584,
+      "sha256": "4a12a110fa535a47503cde993f6564296ebe73bb918fda30ecc46bdeeb61155b",
+      "observed_at": "2026-10-29T16:54:25.110Z",
+      "reading": "inventory only, not statement or proof audit"
+    },
+    {
+      "source": "anthropic",
+      "url": "https://www.anthropic.com/research",
+      "status": 200,
+      "bytes": 413129,
+      "sha256": "bc4001b3a718f48e2e7d97cbb75ce39b3b65dfdb97eae5e903f598ae21791c0c",
+      "observed_at": "2026-10-29T16:54:24.350Z",
+      "reading": "inventory only, not statement or proof audit"
+    },
+    {
+      "source": "deepmind",
+      "url": "https://github.com/google-deepmind/formal-conjectures",
+      "status": 200,
+      "bytes": 304988,
+      "sha256": "9c65f650b1b5864feda822daa0739aac60ee5c9cce98ecb82b23f75da38386e0",
+      "observed_at": "2026-10-29T16:54:25.491Z",
+      "reading": "inventory only, not statement or proof audit"
+    },
+    {
+      "source": "microsoft",
+      "url": "https://www.microsoft.com/en-us/research/research-area/computational-sciences-mathematics/",
+      "status": 200,
+      "bytes": 607703,
+      "sha256": "f4e6ffe3c29b16b5c9bf60677190ff34579554a46d243aa42c150a18553df2a8",
+      "observed_at": "2026-10-29T16:54:25.695Z",
+      "reading": "inventory only, not statement or proof audit"
+    },
+    {
+      "source": "meta",
+      "url": "https://ai.meta.com/results/",
+      "status": 200,
+      "bytes": 305942,
+      "sha256": "9592d044d163e2f3f5b0bdebb408ea06c55be169e47d3659dbf51e472abe073f",
+      "observed_at": "2026-10-29T16:54:28.563Z",
+      "reading": "inventory only, not statement or proof audit"
+    },
+    {
+      "source": "numina",
+      "url": "https://github.com/project-numina",
+      "status": 200,
+      "bytes": 244376,
+      "sha256": "de1331e5f841a1ff3da69b5f7849deaad7cfea9f016e5ee4409ef7711bd9ff5c",
+      "observed_at": "2026-10-29T16:54:25.044Z",
+      "reading": "inventory only, not statement or proof audit"
+    },
+    {
+      "source": "bytedance-nankai",
+      "url": "https://github.com/M32026/3d-sticky-kakeya",
+      "status": 200,
+      "bytes": 225588,
+      "sha256": "2ab91d7ef6cba85added9b2dc0490434427cc65c6076abe526d76c96857cc693",
+      "observed_at": "2026-10-29T16:54:25.178Z",
+      "reading": "inventory only, not statement or proof audit"
+    },
+    {
+      "source": "eth-sri",
+      "url": "https://www.sri.inf.ethz.ch/research/mathllm",
+      "status": 200,
+      "bytes": 32567,
+      "sha256": "dd4f2c486ef7f3dc3f3f1cfd861bd669cfc163f665d4b1c38ae6af08184c7a2a",
+      "observed_at": "2026-10-29T16:54:24.388Z",
+      "reading": "inventory only, not statement or proof audit"
+    },
+    {
+      "source": "harmonic",
+      "url": "https://www.harmonic.fun/news/",
+      "status": 200,
+      "bytes": 110404,
+      "sha256": "62fbc07745a764d876241c42bbd5879ea4b7aff788b1163cd7f9b671fe05d51d",
+      "observed_at": "2026-10-29T16:54:24.328Z",
+      "reading": "inventory only, not statement or proof audit"
+    },
+    {
+      "source": "arxiv",
+      "url": "https://arxiv.org/list/math/new",
+      "status": 200,
+      "bytes": 1738130,
+      "sha256": "4b7a875de055255054a0c172bff500a369587c5e356a45c9e4fed312d2e6b64e",
+      "observed_at": "2026-10-29T16:54:25.605Z",
+      "reading": "inventory only, not statement or proof audit"
+    },
+    {
+      "source": "airr",
+      "url": "https://airr.science/catalog.json",
+      "status": 200,
+      "bytes": 1456595,
+      "sha256": "e321991f93b1a0c8f14c9a1445a716a8671cd7d2bdeb9361ce3ea7eee90a1116",
+      "observed_at": "2026-10-29T16:54:25.389Z",
+      "reading": "inventory only, not statement or proof audit"
+    },
+    {
+      "source": "vixra",
+      "url": "https://www.ai.vixra.org/author/lluis_eriksson",
+      "status": 200,
+      "bytes": 70183,
+      "sha256": "7a5f950e1a001dd86ef8303c1104d2c3e27779603f577e21f226cf623347ca62",
+      "observed_at": "2026-10-29T16:54:25.677Z",
+      "reading": "inventory only, not statement or proof audit"
+    }
+  ]
+}
