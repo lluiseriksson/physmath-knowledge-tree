@@ -1,0 +1,21 @@
+{
+  "scope": "Exact t=0 geometry, not entropy-sign certification",
+  "trace_one": true,
+  "population": "3/7",
+  "rank": 3,
+  "mixed": true,
+  "diagonal_blocks_noncommuting": true,
+  "partial_transpose_negative_principal_minors": [
+    {
+      "indices": [
+        0,
+        4
+      ],
+      "determinant": "-1724/180075"
+    }
+  ],
+  "entangled": true,
+  "saturated_support_coupling": true,
+  "global_Q_proved": false,
+  "G_evaluated_exactly": false
+}

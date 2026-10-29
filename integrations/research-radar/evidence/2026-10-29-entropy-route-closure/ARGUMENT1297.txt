@@ -1,0 +1,81 @@
+GLOBAL SATURATED ENDPOINT ATTEMPT1297 — unreviewed working dossier
+No manuscript, grade, formal proof, independent assessment or novelty claim.
+Target: G=S((Nhat tensor id)rho)-S((DeltaZ tensor id)rho)-e_N(p)+h(p).
+Global Q remains speculative for arbitrary finite R.
+
+Scope/deduplication:
+Read controls906.py's seeded dimensions/ranks and structured rank-two sweep,
+its369-state diagnostic summary, and1284's exact contraction reduction and
+mixed endpoint guard. Those already contain reference dimension3. Dimension3,
+mixedness or entanglement alone are not new coverage. No seeded sweep was
+replayed. Compared the present specified deterministic complex one-parameter
+family against those explicit controllers and existing boundary899 files;
+this is not an exhaustive audit of every historical numerical input.
+No previous model review was rerun. No source confidence was upgraded.
+
+One bounded attempt:
+p=3/7, P=diag(1,2,2)/3,
+Q(t)=(R diag(2,3,6)+i t S)/sqrt(49+14t^2), -2<=t<=2,
+R=[[3,-4,0],[4,3,0],[0,0,5]]/5,
+S=[[0,1,0],[0,0,2],[3,0,0]].
+rho=W W*, W=vertical(sqrt(1-p)P,sqrt(p)Q).
+Frobenius norms of P,Q are1: the real and imaginary terms are orthogonal,
+R is orthogonal, and squared norms of the two terms are49,14.
+Thus trace rho=1 and rho>=0. Invertible P makes rank rho=3, so rho is mixed.
+Via polar decompositions its support coupling is saturated, as in1284.
+No independent branch rotation or physical gauging of K toI was used.
+
+At t=0 the exact Fraction controller verifies noncommuting diagonal blocks
+and a partial-transpose principal determinant -1724/180075 at indices[0,4].
+This certifies entanglement for this anchor, not all parameter values.
+The t=0 state also has an orthogonal reference-sector decomposition2+1;
+it must not be advertised as an irreducible new three-dimensional mechanism.
+The nonzero imaginary cyclic perturbation couples those sectors, but no
+universal conclusion is deduced from that coupling.
+
+Numerics:
+One golden-section run,32 updates plus3 anchors,37 total evaluations.
+No unimodality assumption, global optimizer claim, grid or restart.
+Best observed diagnostic G=0.0668921476122123 nats at the t=0 anchor.
+No negative above the predeclared1e-9 trigger was observed.
+Every evaluation also compared the6x6 ordinary-output dictionary with
+the12x12 complementary output. Best-point discrepancy3.33e-16.
+These are floating diagnostics, not entropy intervals. They certify neither
+G>=0 over the interval nor the global Q. Exact geometry does not certify
+the entropy sign. No numerical negative needed a follow-up witness certificate.
+
+Decision:
+The one predeclared family attempt found no certified negative G witness.
+Stop this family instead of expanding its parameter range or restarting.
+Do not publish a positive-value table or subclass paper. No external
+hypothesis in Q has been removed and no additivity result follows.
+The local product/Hessian route1295 and depolarizing transfer1296 stay parked.
+
+Evidence layers:
+formal: none;
+literature: existing audited/scoped entropy identities901/906, unchanged;
+heuristic: the recorded finite diagnostic only;
+speculative: Q for unrestricted mixed quantum references remains open.
+Falsifier: a negative G with certified input PSD/trace and entropy intervals.
+If none is found, sampling success supplies no universal evidence certificate.
+
+Operational record:
+Initial library discovery found no NumPy in C:/Python312/python.exe and no
+SciPy in the bundled current Python. No packages were installed. The current
+bundled Python3.12.14 has NumPy2.3.5, so a small explicit golden search was
+used without SciPy. Failed import outputs were inspected before selecting
+the runtime. An initial registry-directory search used a nonexistent
+candidates/ directory; corrected to the registry's actual path, no edit.
+No changes to other chats, graph, formal dependencies, AIRR submissions,
+licences, reviews or publication state. Historical states match1296 hashes.
+The source inventory is directed, not exhaustive; index changes do not imply
+new papers. No foreign corpus/evaluation tasks or private data were copied.
+This is a single bounded diagnostic, not a capsule-certified campaign.
+
+Next:
+Consolidate1295 route-parking,1296 scoped literature/transfer rejection and
+1297 failed global attempt into the EXISTING knowledge candidate, keeping
+its speculative/unscored status. No new route, paper or review before that
+pending integration. Use a single knowledge update, normal branch/PR/checks,
+remote main/Pages verification, no administrative bypass. Preserve adverse
+reports901/906 and native hashes. No confidence upgrade or inherited score.

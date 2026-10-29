@@ -1,0 +1,45 @@
+{
+  "scope": "Exact rational falsifier of one common-unscaled-resolvent pointwise-PSD proof ansatz, NOT of the integrated local kernel M or entropy Q.",
+  "p": "1/2",
+  "d": "9/25",
+  "t": "1/100",
+  "Q": [
+    [
+      "3/5",
+      "3/10"
+    ],
+    [
+      "3/10",
+      "2/5"
+    ]
+  ],
+  "A": [
+    [
+      "19/80",
+      "0"
+    ],
+    [
+      "3/10",
+      "21/80"
+    ]
+  ],
+  "density_W": [
+    [
+      "-81977909370/232820898973",
+      "114735915/290844346"
+    ],
+    [
+      "114735915/290844346",
+      "62309349585/1862567191784"
+    ]
+  ],
+  "negative_rayleigh_vector": [
+    "1",
+    "0"
+  ],
+  "negative_rayleigh_value": "-81977909370/232820898973",
+  "determinant": "-490497559678428575175/2930030864788966078634",
+  "continuous_interval": "All denominators are strictly positive at t=1/100, so the negative entry persists on some positive-length t-neighborhood.",
+  "no_entropy_or_global_sign_inferred": true,
+  "disposition": "Pointwise positivity of this unscaled density is false. Other decompositions/reparameterizations/cancellations remain possible. Stop this bounded product-base local-instability route rather than start another minor ansatz cycle."
+}

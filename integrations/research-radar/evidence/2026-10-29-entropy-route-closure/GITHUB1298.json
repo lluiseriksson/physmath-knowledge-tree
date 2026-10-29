@@ -1,0 +1,94 @@
+{
+  "observed_at": "2026-10-29T16:13:40.054Z",
+  "reading": "metadata inventory only, no proof replay",
+  "scope": "directed first public repository page, not exhaustive",
+  "heads": [
+    {
+      "repository": "openai/math",
+      "sha": "7ef5c0cc5ca4b0e072b7a050fca09ab24bc6fa3a",
+      "date": "2026-10-26T21:18:03Z"
+    },
+    {
+      "repository": "google-deepmind/formal-conjectures",
+      "sha": "909a8bec155bc5a6f3c72e12baaaa610ae293281",
+      "date": "2026-10-29T14:47:57Z"
+    }
+  ],
+  "repositories": [
+    {
+      "name": "THE-ERIKSSON-PROGRAMME",
+      "url": "https://github.com/lluiseriksson/THE-ERIKSSON-PROGRAMME",
+      "branch": "main"
+    },
+    {
+      "name": "lean-2d-yang-mills",
+      "url": "https://github.com/lluiseriksson/lean-2d-yang-mills",
+      "branch": "main"
+    },
+    {
+      "name": "mathlib-plane-tree-catalan",
+      "url": "https://github.com/lluiseriksson/mathlib-plane-tree-catalan",
+      "branch": "main"
+    },
+    {
+      "name": "mathlib4",
+      "url": "https://github.com/lluiseriksson/mathlib4",
+      "branch": "master"
+    },
+    {
+      "name": "ym-lattice-numerics",
+      "url": "https://github.com/lluiseriksson/ym-lattice-numerics",
+      "branch": "main"
+    },
+    {
+      "name": "many-body-filling-maintenance-floor",
+      "url": "https://github.com/lluiseriksson/many-body-filling-maintenance-floor",
+      "branch": "main"
+    },
+    {
+      "name": "lean-transfer-matrix",
+      "url": "https://github.com/lluiseriksson/lean-transfer-matrix",
+      "branch": "main"
+    },
+    {
+      "name": "finite-sample-spectral-certificates",
+      "url": "https://github.com/lluiseriksson/finite-sample-spectral-certificates",
+      "branch": "main"
+    },
+    {
+      "name": "irynayoutube",
+      "url": "https://github.com/lluiseriksson/irynayoutube",
+      "branch": "main"
+    },
+    {
+      "name": "reset-minimax-lab",
+      "url": "https://github.com/lluiseriksson/reset-minimax-lab",
+      "branch": "main"
+    },
+    {
+      "name": "riemann-prime-resolvent",
+      "url": "https://github.com/lluiseriksson/riemann-prime-resolvent",
+      "branch": "main"
+    },
+    {
+      "name": "neuralsnakes",
+      "url": "https://github.com/lluiseriksson/neuralsnakes",
+      "branch": "main"
+    },
+    {
+      "name": "lean-ym-flow",
+      "url": "https://github.com/lluiseriksson/lean-ym-flow",
+      "branch": "main"
+    },
+    {
+      "name": "riemann-resolvent-programme",
+      "url": "https://github.com/lluiseriksson/riemann-resolvent-programme",
+      "branch": "main"
+    },
+    {
+      "name": "lean-os-positivity",
+      "url": "https://github.com/lluiseriksson/lean-os-positivity",
+      "branch": "main"
+    }
+  ]
+}

@@ -1307,6 +1307,38 @@
         "domain.algebra",
         "domain.complexity_theory"
       ]
+    },
+    {
+      "id": "fukuda-asymmetric-transfer-2005-v4-scoped",
+      "title": "Extending additivity from symmetric to asymmetric channels",
+      "url": "https://arxiv.org/html/quant-ph/0505022v4",
+      "kind": "preprint",
+      "published_on": "2005-05-04",
+      "observed_on": "2026-10-29",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Version4 revised14August2005: lemma and short proof, depolarizing examples and axial conditions read. Minimum-output-entropy optimizer transfer requires its stated channel/image hypotheses.",
+      "limits": "Not a population-conditioned complete quantum-reference entropy theorem or full source audit. Earlier v2 differs in title/scope; no Holevo conclusion is imported from it. Own1296 excludes only the stated depolarizing pure-output representation for N.",
+      "reuse": "Primary metadata and own synthesis only, no foreign full text, corpus eligibility or priority certificate.",
+      "anchors": [
+        "domain.quantum_information_theory"
+      ]
+    },
+    {
+      "id": "filippov-nonunital-bounds-2018-v2-scoped",
+      "title": "Lower and upper bounds on nonunital qubit channel capacities",
+      "url": "https://arxiv.org/html/1802.00646v2",
+      "kind": "preprint",
+      "published_on": "2018-02-02",
+      "observed_on": "2026-10-29",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Version2 revised21March2019: abstract, SectionII normal-form discussion and Theorem1 statement read. Invertible CP filtering relates a nonunital map to a unital channel with normalization/norm corrections in capacity bounds.",
+      "limits": "Theorem proof not audited. Individual filters need not be trace preserving; no exact preservation of p or the global G is supplied. Newly indexed here, not newly published in2026.",
+      "reuse": "Primary metadata and original synthesis only; no foreign text redistribution or training permission inferred.",
+      "anchors": [
+        "domain.quantum_information_theory"
+      ]
     }
   ],
   "candidates": [
@@ -1591,18 +1623,20 @@
         "shirokov-classical-continuity-2022-scoped",
         "audenaert-2xn-2007-scoped",
         "hirche-partial-orders-2022-scoped",
-        "belzig-reverse-dpi-v3-scoped"
+        "belzig-reverse-dpi-v3-scoped",
+        "fukuda-asymmetric-transfer-2005-v4-scoped",
+        "filippov-nonunital-bounds-2018-v2-scoped"
       ],
       "node_ids": [
         "domain.quantum_information_theory"
       ],
       "dictionary": "Partner-channel Kraus columns map branch states to arbitrary normalized rectangular X,Y; computational population p is retained in the fixed channel axial roof.",
       "preserved": "CPTP partner, pure joint inputs, original computational basis population, arbitrary finite output dimension and the distinction between one-step sufficient entropy inequality and channel additivity. Fixed-diagonal fiber reduction1284 preserves common reference embeddings, A,B,p and noncommuting supports; saturated endpoint rank is max(rankA,rankB). Own1291 local product-base reduction retains latitude p, quantum-reference orientation and exact phase flat directions, reducing four off-reference curvature directions to one2x2 kernel.",
-      "lost_or_unproved": "No universal rectangular bound, arbitrary-partner theorem, tensor-power formula, global open-status/novelty certificate or exact numerical certificate. The480 qubit-input float probes are diagnostics only. The P5 hypothesis, mixed-entangled-reference balance and global novelty remain unproved. Conditional reference distinguishability, separability and the isotropic line are restrictions, not arbitrary-partner additivity. Saturated endpoints remain generally mixed; reference dimension remains unbounded. No independent rotation gauging, universal coefficient-domain reduction, new review or formal promotion. Own1290–1292 local analysis excludes a selected base and the reference boundary/center bifurcation at each fixed interior latitude; it does not prove kernel positivity at intermediate spectra, higher-order/globalQ, a uniform joint endpoint limit or arbitrary-reference additivity.",
+      "lost_or_unproved": "No universal rectangular bound, arbitrary-partner theorem, tensor-power formula, global open-status/novelty certificate or exact numerical certificate. The480 qubit-input float probes are diagnostics only. The P5 hypothesis, mixed-entangled-reference balance and global novelty remain unproved. Conditional reference distinguishability, separability and the isotropic line are restrictions, not arbitrary-partner additivity. Saturated endpoints remain generally mixed; reference dimension remains unbounded. No independent rotation gauging, universal coefficient-domain reduction, new review or formal promotion. Own1290–1292 local analysis excludes a selected base and the reference boundary/center bifurcation at each fixed interior latitude; it does not prove kernel positivity at intermediate spectra, higher-order/globalQ, a uniform joint endpoint limit or arbitrary-reference additivity. Batch1298 parks the failed1295 pointwise-resolvent ansatz,1296 depolarizing pure-output transfer and1297 single dimR3 diagnostic family. None refutes global Q or additivity; no certified entropy minimum or universal dimension bound follows.",
       "hypothesis_to_remove": "Remove the restricted partner-family rectangle for fixed N=(3/5,1/4,1/5), if a uniform rectangular entropy theorem can be proved. This N violates the source GAD relation c^2=r.",
       "falsifier": "An exact negative rectangular entropy instance refutes the proposed sufficient mechanism; a preceding theorem covering this N defeats the novelty route. Neither automatically refutes channel additivity.",
-      "next_finite_task": "The mixed-saturated global tradeoff C_E<=delta_e(p)+I(Z:ER) is still the target. Local M(p,d) analysis1291/1292 leaves intermediate reference spectra; pursue only a concrete CP/integral decomposition or exact sign-changing kernel. Otherwise park product-base local instability. Do not repeat center flat-mode scans, pure/separable/isotropic subcases or minor-paper/review cycles.",
-      "review_packet": "Own conditional leakage derivation889 is unreviewed and not selected as a frontier paper; exact rational partial-trace controls890 and floating diagnostic892 are recorded in the evidence sidecar. No model score. Follow-up895 gives exact missing coefficient -(11/100)p(1-p) and the analytic derivative bound F_prime(3/5)<-(23/50)ln5. This refutes only a monotonic transfer mechanism, not channel additivity. No new review or score. Component audit901 validates reductions with nine preserved objections, no score. Original899/corrected903/input905 are bound in evidence899. Audit906 status is explicitly recorded there. Post907 and908 are separate unreviewed extensions. No new PDF, grade or canonical formal promotion. Audit906 is now complete: the scoped bound is supported with seven objections and no grade. Its exact report/input hashes are in evidence899. No review extends to the later907/908/910 notes. Full recovery1283 retains all16 adverse items; original reports are reused, not rescored. Own fixed-fiber reduction1284 and exact controls are outside those reviews. Evidence: integrations/research-radar/evidence/2026-10-29-entropy-fixed-fiber/SYNTHESIS1285.txt Batch1293 preserves the initial1290 incorrect6D strict-positivity assertion and exact flat-phase correction, one-base interval calibration, general2x2 local kernel, CP-Schur boundary margin and1292 center splitting bound. All are own unreviewed analysis outside901/906; no score or formal promotion. Evidence: integrations/research-radar/evidence/2026-10-29-entropy-local-kernel/SYNTHESIS1293.txt"
+      "next_finite_task": "Global mixed-saturated G=delta_e(p)+I(Z:ER)-C_E>=0 remains unresolved for arbitrary finite R. First require a concrete quantum-reference estimate retaining p and joint ER, or a nonduplicate negative-witness mechanism with certified PSD/trace and entropy intervals. Otherwise retain the unresolved target. Do not restart parked1295 local densities,1296 depolarizing pure-output transfer,1297 family, center flat-mode scans or pure/separable/isotropic minor-paper cycles.",
+      "review_packet": "Own conditional leakage derivation889 is unreviewed and not selected as a frontier paper; exact rational partial-trace controls890 and floating diagnostic892 are recorded in the evidence sidecar. No model score. Follow-up895 gives exact missing coefficient -(11/100)p(1-p) and the analytic derivative bound F_prime(3/5)<-(23/50)ln5. This refutes only a monotonic transfer mechanism, not channel additivity. No new review or score. Component audit901 validates reductions with nine preserved objections, no score. Original899/corrected903/input905 are bound in evidence899. Audit906 status is explicitly recorded there. Post907 and908 are separate unreviewed extensions. No new PDF, grade or canonical formal promotion. Audit906 is now complete: the scoped bound is supported with seven objections and no grade. Its exact report/input hashes are in evidence899. No review extends to the later907/908/910 notes. Full recovery1283 retains all16 adverse items; original reports are reused, not rescored. Own fixed-fiber reduction1284 and exact controls are outside those reviews. Evidence: integrations/research-radar/evidence/2026-10-29-entropy-fixed-fiber/SYNTHESIS1285.txt Batch1293 preserves the initial1290 incorrect6D strict-positivity assertion and exact flat-phase correction, one-base interval calibration, general2x2 local kernel, CP-Schur boundary margin and1292 center splitting bound. All are own unreviewed analysis outside901/906; no score or formal promotion. Evidence: integrations/research-radar/evidence/2026-10-29-entropy-local-kernel/SYNTHESIS1293.txt Consolidation1298 records exact failed1295/1296 mechanisms, version-scoped antecedents and the single unsuccessful global1297 diagnostic; all unreviewed and outside901/906. Evidence: integrations/research-radar/evidence/2026-10-29-entropy-route-closure/SYNTHESIS1298.txt"
     },
     {
       "id": "complete-noise-and-kernel",
@@ -1817,6 +1851,10 @@
     "followup1267": {
       "evidence": "integrations/research-radar/evidence/2026-10-29-kakeya-selector-reanchoring/MANIFEST1267.json",
       "scope": "Batch manual local argument reading for the common selector and reanchored containment; exact hypotheses and dependency boundaries retained. No new sourcecard, candidate, canonical graph edit, paper or assessment."
+    },
+    "followup1298": {
+      "evidence": "integrations/research-radar/evidence/2026-10-29-entropy-route-closure/MANIFEST1298.json",
+      "scope": "Directed12-endpoint primary inventory and first15public owner repository metadata; OpenAI7ef5c0 and DeepMind909a8bec remain pinned. Two historical source cards newly indexed with selected reading only. Existing speculative/unscored candidate updated; no canonical graph change, paper or assessment."
     }
   }
 }
