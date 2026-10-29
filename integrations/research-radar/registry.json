@@ -1361,7 +1361,7 @@
     {
       "id": "planar-rational-height",
       "title": "Coefficient-height bounds for rational planar Lyapunov certificates",
-      "status": "under_audit",
+      "status": "queued",
       "confidence": "speculative",
       "source_ids": [
         "ahmadi-el-khadir-2018",
@@ -1377,12 +1377,12 @@
       ],
       "dictionary": "Rational input height -> algebraic separation; angular polynomial multiplier -> bounded logarithmic derivative; positive rational angular profile -> a C1 homogeneous certificate.",
       "preserved": "Fixed field degree, rational dense input, strict stability margins, angular zeros and sign cases, total output encoding.",
-      "lost_or_unproved": "General solver, useful explicit constants, higher dimensions and exhaustive priority remain unestablished. The exponential dense lower scale is an attributed consequence of a prior Fourier lemma, not an independent discovery. Final candidate3 has an exact-artifact8.9 technical/4.3 importance report, not an importance above7.",
+      "lost_or_unproved": "General solver, useful explicit constants, higher dimensions and exhaustive priority remain unestablished. The exponential dense lower scale is an attributed consequence of a prior Fourier lemma, not an independent discovery. Audit42 assessed existence and encoding, not the later full-manuscript deterministic runtime claim. No exact-version numerical model assessment is publicly released for v1.",
       "hypothesis_to_remove": "Nonvanishing angular velocity in the existing quantitative certificate-size analysis; use rational rather than polynomial certificates.",
       "falsifier": "A stable planar input that defeats an angular sign case, invalidates a margin or forces a second exponential in the stated encoding proof.",
-      "next_finite_task": "Complete the authorized Working-paper release after operator access is available; the exact PDF is already privately deposited and clean. Broaden the next research target rather than repeatedly regrading minor variants.",
+      "next_finite_task": "Existing Working paper v1 is public; do not repeat deposit, release or component audit42. Resume only for a substantive new hypothesis reduction or mechanism, preserving the angular sign and encoding falsifiers. Keep private reports and objections; do not publish private numerical grades without their corresponding exact-PDF reports.",
       "paper_score": null,
-      "review_packet": "Draft1: technical8.7, AIRR importance4.3, minor_revision, PDF711e728115e61d7348155281dc0e372dfc37d3a45bdc1275881552d102db6b41. Candidate2: technical8.9, importance4.3, accept with minor R3; PDF3cd4c5bb60b99943b2edffaf2319b9e660b99d812d24118c8b739f29749f26ec, addendum SHA6b51aacab16e770e639032d75a002caf57d8700be42345a8b270bc00c3590cff. Candidate3 closes R3 in a verified one-line delta; PDFdea974aaef07c8442856c26293bc9a20c236d1cf8cea89bcdb1a94bb35007610, addendum SHAb61df86876c47d833702870ccd73eecba6a1448e9e5ea36829c8ded5bccdf579 explicitly maintains8.9/4.3 for that hash. Context reused, no fresh or human review claim. Privately deposited24October; public release pending. Audit44 report SHA27dae8a4ff484f8677554efba0c9ae18d49ba404fa647eaf8f2459ab948b37eb limits novelty; no score for44."
+      "review_packet": "Public Working paper v1: https://airr.science/papers/ARR-2026-7WEARWS49J8CVTCV/versions/v1/ ; published2026-10-24T06:12:39Z; PDF SHA256 dea974aaef07c8442856c26293bc9a20c236d1cf8cea89bcdb1a94bb35007610. Live metadata rechecked29October against the existing exact-byte release receipts; no fresh PDF download. Public page says Not yet rated. Private candidate reports and all objections remain preserved; no private or earlier-version numerical grade is asserted here. Unscored component audit42 does not certify the final runtime claim; audit44 limits novelty. Requested Astra xhigh, effective runtime/effort and independence not independently attested, shared filesystem and manuscript participation disclosed; no human review, formal verification or editorial acceptance. See evidence/2026-10-29-workflow-reconciliation/SYNTHESIS1309.txt."
     },
     {
       "id": "interpolation-semidefinite-boundary",
@@ -1475,7 +1475,7 @@
     {
       "id": "reset-energy-minimax-curve",
       "title": "Exact fixed-ratio loss for quantum identity/replacement channels",
-      "status": "under_audit",
+      "status": "queued",
       "confidence": "speculative",
       "source_ids": [
         "reset-minimax-lab-reference"
@@ -1486,12 +1486,12 @@
       ],
       "dictionary": "Quantum branch conditional entropy -> uniform classical entropy game -> positive discrete saddle certificates -> fixed energy-ratio limiting loss.",
       "preserved": "Fixed transmission probability, separate mean-energy constraints, known reset channel, order of infimum and supremum, full infinite oscillator model in the analytical argument.",
-      "lost_or_unproved": "No unknown-channel universal code, finite-energy exact capacity, regularized C/P/Q result, uniqueness of every optimizer, exhaustive priority claim or importance grade.",
+      "lost_or_unproved": "No unknown-channel universal code, finite-energy exact capacity, regularized C/P/Q result, uniqueness of every optimizer or exhaustive priority claim. Existing public model assessment retains its specialized-scope and exposition objections; it supplies no human review or formal certification.",
       "hypothesis_to_remove": "A fixed reset state or negligible reset budget; quantify the positive loss when reset energy grows proportionally to input energy.",
       "falsifier": "A coherent-input or dephasing counterexample to the uniform reduction; a failed global saddle inequality, singular Riemann limit or feasible-sequence construction; an earlier equivalent theorem.",
-      "next_finite_task": "Freeze and review the full manuscript in a fresh Astra context, preserving any adverse result. Finish the thermal-comparison supplement separately. Keep known depolarizing binary-entropy plateau attributed to Bennett et al.1999.",
+      "next_finite_task": "Existing Working paper v1 and the full exact-PDF model assessment are public. Reuse report53 and its public rendering60; do not initiate a duplicate full-paper review, supplement review, deposit or release. Resume only for a substantive new mechanism or hypothesis reduction. Keep known depolarizing binary-entropy plateau attributed to Bennett et al.1999.",
       "paper_score": null,
-      "review_packet": "Internal reused-context audits48/50/51 support the threshold, uniform quantum-to-classical reduction and explicit atom/diffuse certificate limit. These are conditional chains, not fresh full-paper review, human review or Lean verification. The first solver failure and all corrected finite runs remain available in the linked laboratory. No assigned paper importance."
+      "review_packet": "Public Working paper v1: https://airr.science/papers/ARR-2026-2EXHFGWW0S8MG8QA/versions/v1/#model-assessments ; published2026-10-24T06:12:38Z; PDF SHA256 f472a6c9380da16347a66b390d12b967a50d221e77a0c96905fb5f3d4868df7e. Existing full-manuscript report53, public rendering60, assessment arr:assessment:f4a549f3-2c34-4cc8-867a-6525ec0b4a44, source_response SHA256 53ba13b952969486f4faeaba9931e9159befcd0318dd2047d832b383c0609a83. Rendering60 is not a new assessment. Requested Astra xhigh; public provenance openai/gpt-6-astra, involved_in_manuscript; effective runtime/effort/isolation and independence not independently attested. All objections remain in the linked report, including mixed-measure saddle exposition, fixed-lambda endpoint derivation, attribution and unavailable Baitenov full-text overlap. Live metadata checked29October against existing release receipts; no fresh PDF download, new score, human peer review, formal proof or editorial acceptance. See evidence/2026-10-29-workflow-reconciliation/SYNTHESIS1309.txt."
     },
     {
       "id": "lorentzian-singleton-extension",
