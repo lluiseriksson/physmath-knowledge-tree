@@ -1,0 +1,124 @@
+{
+  "status": "complete_scoped_component_audit",
+  "source": {
+    "url": "https://arxiv.org/pdf/2607.01446v1",
+    "version": "v1",
+    "pages": 40,
+    "bytes": 728264,
+    "sha256": "005628bd018d9850f79e26f6371995f8b9bd20c1e40205ccef7e588beb10f9dd",
+    "manifest_all_four_entries_match": true,
+    "manifest_sha256": "8c2e628b7ea7be8413f9092ac9743eb3aefb192d63335ca1569f59b708e9aca6",
+    "printed_p34_and_p37_visually_checked": true
+  },
+  "configuration": {
+    "requested_model": "GPT-6 Astra",
+    "requested_effort": "xhigh",
+    "effective_model": "unverified",
+    "effective_effort": "unverified",
+    "observed_runtime": "delegated Codex environment, Windows PowerShell, bundled Python",
+    "context_isolation": "unattested",
+    "reviewer_independence": "unattested; shared filesystem and declared supplements",
+    "pass": "single audit; supplements added without restart"
+  },
+  "lemma_A1": {
+    "valid_as_written": false,
+    "first_length_equality_refuted": true,
+    "eventual_length_equality_refuted": true,
+    "defect": "Pointwise local adjoints on the forward base do not reverse the time arguments or composition order.",
+    "normalization_or_two_sided_faithfulness_repairs_it": false
+  },
+  "original_reset_model": {
+    "phase_order": [
+      0,
+      1
+    ],
+    "ell0_original": [
+      2,
+      3
+    ],
+    "ell_original": [
+      "infinity",
+      "infinity"
+    ],
+    "ell0_pointwise_adjoint": [
+      "infinity",
+      2
+    ],
+    "ell_pointwise_adjoint": [
+      "infinity",
+      2
+    ],
+    "ell0_true_reverse": [
+      2,
+      "infinity"
+    ],
+    "ell_true_reverse": [
+      2,
+      "infinity"
+    ],
+    "original_trace_preserving": true,
+    "original_unital": false,
+    "S_faithful": true,
+    "Sstar_faithful_almost_surely": false,
+    "all_length_proof": "explicit subspace recurrences"
+  },
+  "supplement_two_phase": {
+    "audited": true,
+    "all_channels_bistochastic_and_two_sided_faithful": true,
+    "ell0_equals_ell_original": [
+      3,
+      2
+    ],
+    "ell0_equals_ell_pointwise_adjoint": [
+      2,
+      3
+    ],
+    "all_length_proof": "Z H Z=M2 and persistence of the exact depolarizer"
+  },
+  "supplement_three_phase": {
+    "audited": true,
+    "all_channels_bistochastic_and_two_sided_faithful": true,
+    "ell0_equals_ell_original": [
+      4,
+      3,
+      2
+    ],
+    "ell0_equals_ell_pointwise_adjoint": [
+      2,
+      2,
+      2
+    ],
+    "ell0_equals_ell_true_reverse": [
+      4,
+      2,
+      3
+    ],
+    "same_forward_adjoint_onset_laws_differ": true,
+    "all_length_proof": "exact compositions of D_Z, Ad_H and D_X; depolarizer persistence"
+  },
+  "time_reversal": {
+    "requested_identity_correct": true,
+    "definition": "base T^-1, local tuple S(T^-1 omega)*",
+    "fixed_n": "dimension_rev(n,omega)=dimension_original(n,T^-n omega); equal fixed-n laws",
+    "automatic_first_onset_law_equality_without_further_assumptions": false,
+    "automatic_pathwise_eventual_equality": false,
+    "two_sided_faithfulness": "gives persistence and equal onset laws for genuine reversal, but not same-omega equality"
+  },
+  "proof_scope": {
+    "A7_A8_printed_invocations_need_repair": true,
+    "A6_A8_direct_extension_and_recurrence_repair_described": true,
+    "additional_A9_proof_objection": "Proper word span does not imply a nonzero common-right-kernel projection; a TP word family has trivial common right kernel.",
+    "A9_statement_refuted": false,
+    "main_parent_or_gap_theorem_refuted": false,
+    "whole_paper_verdict": "not supplied",
+    "novelty_claim": "not supplied",
+    "Lean_proof": "not requested or claimed"
+  },
+  "supplement_hashes": {
+    "check_bistochastic1221.py": "3ffffc5d41c7250f842c9699eee4ecdc0a609a0c5a620795f4c122ead51a972c",
+    "BISTOCHASTIC1221.json": "26be33ab5291c332c5d71e3e4016d2043feed9e9fa0598eea48e7e39817166af",
+    "check_three_phase1222.py": "23326341703d094123ba626a7aff9f8d05939dcf0d0dad12328a8ae092a0b716",
+    "THREE-PHASE1222.json": "17bbafb7ba69fdf1ed0e8e2fb5c4a1b559e8a12cf281107c5f008db317aaf2cf"
+  },
+  "report": "REVIEW1220.txt"
+}
