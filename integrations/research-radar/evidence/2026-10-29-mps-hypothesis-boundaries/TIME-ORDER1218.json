@@ -1,0 +1,63 @@
+{
+  "scope": "Own exact counterexample to LemmaA.1 as written, not a refutation of parent gap theorems",
+  "model": "Two-point probability space with uniform measure; invertible ergodic swap T; phase0 reset-to-|1>, phase1 amplitude damping with survival1/4; g=d=2.",
+  "channels": "R(a)=|1><1|Tr(a), B amplitude damping Kraus diag(1,1/2), (sqrt3/2)|0><1|",
+  "all_TP": true,
+  "source_verified_in_PDF": {
+    "url": "https://arxiv.org/pdf/2607.01446v1",
+    "sha256": "005628bd018d9850f79e26f6371995f8b9bd20c1e40205ccef7e588beb10f9dd",
+    "page": 34,
+    "pages": 40,
+    "full_PDF_redistributed": false
+  },
+  "phase0_original_first_injectivity_length": 2,
+  "phase0_pointwise_adjoint_first_injectivity_length": "infinity",
+  "positive_probability_of_inequality": "1/2",
+  "finite_rank_controls": [
+    {
+      "steps": 1,
+      "original_word_span_rank": 2,
+      "pointwise_adjoint_word_span_rank": 2
+    },
+    {
+      "steps": 2,
+      "original_word_span_rank": 4,
+      "pointwise_adjoint_word_span_rank": 2
+    },
+    {
+      "steps": 3,
+      "original_word_span_rank": 2,
+      "pointwise_adjoint_word_span_rank": 2
+    },
+    {
+      "steps": 4,
+      "original_word_span_rank": 4,
+      "pointwise_adjoint_word_span_rank": 2
+    },
+    {
+      "steps": 5,
+      "original_word_span_rank": 2,
+      "pointwise_adjoint_word_span_rank": 2
+    },
+    {
+      "steps": 6,
+      "original_word_span_rank": 4,
+      "pointwise_adjoint_word_span_rank": 2
+    },
+    {
+      "steps": 7,
+      "original_word_span_rank": 2,
+      "pointwise_adjoint_word_span_rank": 2
+    },
+    {
+      "steps": 8,
+      "original_word_span_rank": 4,
+      "pointwise_adjoint_word_span_rank": 2
+    }
+  ],
+  "all_assertions_pass": true,
+  "formal_Lean_certificate": false,
+  "independent_review": false,
+  "new_manuscript": false,
+  "score": null
+}

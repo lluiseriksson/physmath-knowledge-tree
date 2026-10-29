@@ -1256,6 +1256,40 @@
         "domain.algebraic_quantum_field_theory",
         "domain.quantum_information_theory"
       ]
+    },
+    {
+      "id": "ekblad-wielandt-2025-scoped",
+      "title": "A note on the quantum Wielandt inequality",
+      "url": "https://arxiv.org/html/2504.21638v3",
+      "kind": "preprint",
+      "published_on": "2025-04-30",
+      "observed_on": "2026-10-29",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Primitive unital Schwarz maps admit index at most2(D-1)^2 without trace preservation; selected2-positive corollary also drops unitality.",
+      "limits": "Selected statements/definitions only; positivity index is not identical to same-block Choi full rank, uniform random onset or a many-body spectral gap.",
+      "reuse": "Metadata and own derivation only; no redistributed source full text, evaluation tasks or inferred training permission.",
+      "anchors": [
+        "domain.quantum_information_theory",
+        "domain.functional_analysis"
+      ]
+    },
+    {
+      "id": "ergodic-mps-gap-2026-scoped",
+      "title": "Parent Hamiltonians of Ergodic Matrix Product States",
+      "url": "https://arxiv.org/html/2607.01446v1",
+      "kind": "preprint",
+      "published_on": "2026-07-01",
+      "observed_on": "2026-10-29",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Selected gap criterion retains worst-case onset and stationary conditioning; Problem1.1 explicitly asks for classification of gapped injective EMPS. A selected helper-lemma time-order error is recorded separately from these source-level claims; do not rely on it downstream without repair.",
+      "limits": "Selected sections only. PDFp34 LemmaA.1 pointwise-adjoint time-order equality has an exact2-phase CP/TP counterexample, with an all-length reset argument and8finite rank controls. AppendixA.9 common-right-kernel step separately flagged with conditional Choi repair. Neither parent-gap theorems nor eventual equivalence are refuted here; no full-paper judgment, independent model review or solved classification.",
+      "reuse": "Metadata and own derivation only; no redistributed source full text, evaluation tasks or inferred training permission.",
+      "anchors": [
+        "domain.quantum_information_theory",
+        "domain.functional_analysis"
+      ]
     }
   ],
   "candidates": [
@@ -1734,6 +1768,10 @@
     "followup1216": {
       "evidence": "integrations/research-radar/evidence/2026-10-29-modular-preparation/MANIFEST1216.json",
       "scope": "Directed primary refresh; general preparation-cost direction already has antecedents; no candidate score or new manuscript. Geometry convention objection retained. Canonical graph unchanged."
+    },
+    "followup1218": {
+      "evidence": "integrations/research-radar/evidence/2026-10-29-mps-hypothesis-boundaries/MANIFEST1218.json",
+      "scope": "Directed refresh plus new-to-index 2025Wielandt/2026EMPS sources; same-block and uniformity shortcuts rejected; formal graph unchanged, no new manuscript or score."
     }
   }
 }

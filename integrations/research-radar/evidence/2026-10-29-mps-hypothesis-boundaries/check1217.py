@@ -1,0 +1,43 @@
+from fractions import Fraction as F
+from pathlib import Path
+import json
+C=Path(__file__).parent
+cases=[]
+for k in range(2,31):
+    # 0 and n Schmidt levels of one faithful countable reference lambda_j=2^(-j-1).
+    n=k**4
+    t=F(1,k*k)
+    assert t*n==k*k
+    # xi=sqrt(1-t)Omega+sqrt(t)|0,n>, orthogonal components.
+    # Purified distance(Omega,xi)^2=t. K Omega=0 and K|0,n>=-n ln2 |0,n>.
+    # B=I succeeds with p=1 and output Omega, within tolerance sqrt(t).
+    # A naive substitution of the target expectation into the exact-output bound
+    # would incorrectly require 1<=2^(-k^2).
+    naive_upper=F(1,2**(k*k))
+    assert 1>naive_upper
+    # Target is exactly locally reachable with a bounded rank-one correction
+    # for every finite n: A=sqrt(1-t)I+sqrt(t/lambda_n)|0><n|.
+    # There is no uniform bound on that correction as k grows.
+    correction_norm_squared=t*2**(n+1)
+    assert correction_norm_squared>1
+    cases.append({'k':k,'n':n,'purified_distance_squared':str(t),'modular_expectation_over_ln2':-k*k,'naive_probability_upper':str(naive_upper),'approximate_preparation_probability':'1','bounded_rank_one_correction_for_each_fixed_k':True})
+(C/'ROBUSTNESS1217.json').write_text(json.dumps({'scope':'Elementary known spectral discontinuity calibration, not a QFT proof or originality claim','fixed_reference':'lambda_j=2^(-j-1), j>=0; algebra B(l2) on first factor of its standard purification','cases':cases,'count':len(cases),'all_pass':True},indent=2)+'\n',encoding='utf-8',newline='\n')
+(C/'DERIVATION1217.txt').write_text('''Exact-output cost does not transfer by inserting the target modular expectation at finite error.
+
+Level: own elementary derivation of a known unbounded-observable discontinuity mechanism. Not a new theorem or paper. No claim of transfer from type-I standard form to relativistic type-III local algebras.
+
+Fix a single faithful trace-class state on l2: lambda_j=2^(-j-1), j>=0, with purification Omega=sum_j sqrt(lambda_j)|j,j>. For the first-factor algebra the full modular operator is rho tensor rho^-1, K=-log Delta. Hence K Omega=0 and K|0,n>=-n log(2)|0,n>.
+
+For k>=2, n=k^4 and t=1/k^2, set xi_k=sqrt(1-t)Omega+sqrt(t)|0,n>. The components are orthogonal, so xi_k is normalized and its purified distance from Omega is1/k. Its modular expectation is -k^2 log(2), while the identity Kraus operator prepares Omega with success probability1 within that tolerance. Thus p<=exp(<K>target)=2^(-k^2) is false as an approximate-output rule. The exact-output theorem is not contradicted: its expectation belongs to the actual successful output, which is Omega here.
+
+Every xi_k is itself exactly reachable by bounded A_k=sqrt(1-t)I+sqrt(t/lambda_n)|0><n|, so the example stays within the exact theorem's class for each finite k. The controls are not uniformly bounded. The numerical checker verifies29 exact exponent/rational instances; the displayed symbolic derivation, not the finite sample, establishes the entire family. No Lean verification.
+
+Preserved: fixed faithful reference, explicit complete modular generator, stated error metric, actual success probability, exact-versus-approximate distinction. Not preserved: QFT locality, finite control resources, Minkowski energy bound or noise model. Do not call n a physical energy without a specified Hamiltonian.
+
+Hypothesis boundary: Hilbert-norm/purified-distance approximation alone cannot justify retaining an unbounded modular expectation from the target. A useful robust bound must optimize over allowed outputs or impose suitable spectral/energy-tail control. Abandon claims that omit this dependence. Smooth max-relative-entropy treatments already handle error in finite-dimensional remote-state-preparation communication tasks; these are different operational tasks, not a direct equality for QFT heralded probability.
+
+Primary follow-up: Bab Hadiashar, Nayak, Renner, Communication Complexity of One-Shot Remote State Preparation, author PDF February2018. Selected Sec2 definitions and Theorems4.1/4.2 read, not full proof audit. https://www.math.uwaterloo.ca/~anayak/papers/BNR18.pdf . No novelty claim; distinguish author-PDF date from first arXiv date (not verified here).
+
+Next finite target: compare an explicitly energy-tail-constrained approximation class against a smoothed operational bound, only after literature and model audit. Do not publish the present elementary counterexample as a standalone manuscript.
+''',encoding='utf-8',newline='\n')
+print('29 exact controls pass; known discontinuity mechanism, no new manuscript')

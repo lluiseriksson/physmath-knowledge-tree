@@ -1,0 +1,76 @@
+{
+  "utc": "2026-10-29T08:05:44.912275+00:00",
+  "scope": "Own synthesis and exact calibration plus primary metadata only; no foreign corpus",
+  "files": [
+    {
+      "name": "SUBGRAPH1218.json",
+      "sha256": "ffcbd8a76a369812a601a9d74fb3ab7d8efeed29d8e60c2d48e65ec6cb24784a",
+      "transport_sha256": "ffcbd8a76a369812a601a9d74fb3ab7d8efeed29d8e60c2d48e65ec6cb24784a"
+    },
+    {
+      "name": "SOURCES1218.json",
+      "sha256": "c329079f893ec0e1ec59288008ee01658ad62cc0c81886bd45cecf686beabc6b",
+      "transport_sha256": "91550e66c8f723a91253cc01ed1a3af01ff6fbdbe462c3f5f95b8abee26a6873"
+    },
+    {
+      "name": "RECONCILIATION1218.json",
+      "sha256": "0323460f27b68cec2ed7001f839c4622bf1eee67d6ea1ace724e3bbdd42b8c67",
+      "transport_sha256": "2b44ecf99deb210bf7c5f20643b988b75cfb30177284ac1881e9b8e21b264d72"
+    },
+    {
+      "name": "PRIMARY1218.json",
+      "sha256": "d728551a4ce2d7ebee74d0071ff849a16f1f011fd72486dd3ebdaebc1d360192",
+      "transport_sha256": "d728551a4ce2d7ebee74d0071ff849a16f1f011fd72486dd3ebdaebc1d360192"
+    },
+    {
+      "name": "PAULI1218.json",
+      "sha256": "1cb8d5746ab38db7f27f32f3b8f23d7c5e5e4acc9e664db2ef0d8c665e24e27b",
+      "transport_sha256": "1cb8d5746ab38db7f27f32f3b8f23d7c5e5e4acc9e664db2ef0d8c665e24e27b"
+    },
+    {
+      "name": "SYNTHESIS1218.txt",
+      "sha256": "02121e5b436e6b35b2a003d4ed24ff00b1f5accedc6650c13a3ceed17bad4b24",
+      "transport_sha256": "02121e5b436e6b35b2a003d4ed24ff00b1f5accedc6650c13a3ceed17bad4b24"
+    },
+    {
+      "name": "integrate1218.py",
+      "sha256": "0f2abbef335ee1367cb308f00b9861adba7486bec7573ddbfd9cd7301dec8ab5",
+      "transport_sha256": "0f2abbef335ee1367cb308f00b9861adba7486bec7573ddbfd9cd7301dec8ab5"
+    },
+    {
+      "name": "DERIVATION1217.txt",
+      "sha256": "2efec349a64720a83a40e563ebd720da7ff824ac27a8838651117d2dfc8cce29"
+    },
+    {
+      "name": "ROBUSTNESS1217.json",
+      "sha256": "7bd100c43ac8cd5df0092946f313fccbeaf36d1837bd30586e59da044ef1718d"
+    },
+    {
+      "name": "PRIMARY1217.json",
+      "sha256": "daf5188a00bff8a5bcfe23d32e2f6d57c14a8fb4d9e7217f3dd4e950ec77f969"
+    },
+    {
+      "name": "check1217.py",
+      "sha256": "c11f9d98775429ca74974d8dbbeadd5fd5cadcca234ebfab95d31ff16395c03a"
+    },
+    {
+      "name": "check_time_order1218.py",
+      "sha256": "2f3beb21e5fdaa2203136b8316f853185caf975650d2116015e9a62646c00d6a"
+    },
+    {
+      "name": "TIME-ORDER1218.json",
+      "sha256": "f54569c70710d7aa2d9e058d17a5dd04619f6dece10988e4e487db5977a376a3"
+    },
+    {
+      "name": "TIME-ORDER1218.txt",
+      "sha256": "d065b01f619a7b710e9ad76db6906434e0b65c5e945d9b2305b8c72f03ed9fb5"
+    },
+    {
+      "name": "augment1218.py",
+      "sha256": "c6c3cc5786841beea58e9935424b204ce32c7374b25577d3c2c30c285b9f9735"
+    }
+  ],
+  "new_paper": false,
+  "new_score": false,
+  "formal": false
+}
