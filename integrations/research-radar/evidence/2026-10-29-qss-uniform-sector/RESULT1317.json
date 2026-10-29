@@ -1,0 +1,69 @@
+{
+  "scope": "Exact integer/roots-of-unity universal coefficient and frame checks; no B positivity or manuscript review",
+  "logical_variables": "all complex psi_j retained by complex linearity; no sampled anchors",
+  "M": [
+    {
+      "logical_basis": 0,
+      "scaled_by": 8,
+      "rows": 729,
+      "columns": 27,
+      "nonzero": 375,
+      "X_intertwiner": true,
+      "Z_intertwiner": true,
+      "code_stabilizers": true
+    },
+    {
+      "logical_basis": 1,
+      "scaled_by": 8,
+      "rows": 729,
+      "columns": 27,
+      "nonzero": 375,
+      "X_intertwiner": true,
+      "Z_intertwiner": true,
+      "code_stabilizers": true
+    },
+    {
+      "logical_basis": 2,
+      "scaled_by": 8,
+      "rows": 729,
+      "columns": 27,
+      "nonzero": 375,
+      "X_intertwiner": true,
+      "Z_intertwiner": true,
+      "code_stabilizers": true
+    }
+  ],
+  "A": {
+    "scaled_by": 8,
+    "nonzero": 3375,
+    "X_covariance": true,
+    "Z_covariance": true
+  },
+  "sectors": [
+    {
+      "charge": 0,
+      "orbits": 81,
+      "characters": 3,
+      "dimension_each": 81
+    },
+    {
+      "charge": 1,
+      "orbits": 81,
+      "characters": 3,
+      "dimension_each": 81
+    },
+    {
+      "charge": 2,
+      "orbits": 81,
+      "characters": 3,
+      "dimension_each": 81
+    }
+  ],
+  "dimension_total": 729,
+  "Fourier_Gram_exact": true,
+  "M_sha256": "6545a2ea350b92892fc83ae6af2f426bd6dbff9fb5e039507d7b3b38511dc82b",
+  "frames_sha256": "43c0bbf2665467071d9ac0ee4e3829352867ac2d1cafce15029541be4e536455",
+  "positivity_checked": false,
+  "uniform_gap_proved": false,
+  "formal_kernel_checked": false
+}

@@ -1,0 +1,113 @@
+Uniform QSS operator reduction1317 — own derivation, not signed positivity
+
+Domain and normalization
+Keep the original three qutrit slots and INPUT/OUTPUT order, D=27.
+Let w_j=sum_t|t,t+j,t+2j> and V have columns w_j/sqrt3.
+For every complex unit psi put L=psi psi*, a=sum_j psi_j w_j=sqrt3 Vpsi.
+B is invariant under a nonzero scalar rescaling: M scales linearly and H
+quadratically, so using a instead of Vpsi changes no signed comparison.
+The logical domain is exactly L=L*, TrL=1, L^2=L. By the spectral theorem
+these are precisely rank-one projections. Do not replace it with all mixed
+states; the code-block inverse below uses purity. L retains all logical
+coherences; only the irrelevant global phase is quotiented out.
+
+Explicit coefficient matrices
+For physical indices b,r,t define M_j[(b,r),t] by summing over slot subsetsS:
+ (-1/2)^|S| times w_j[r_outsideS,t_insideS]
+ times delta_(b,(t_outsideS,r_insideS)).
+These are fixed rational729by27 matrices, M(a)=sum_j psi_j M_j.
+verify1317.mjs computes every entry as an integer after multiplication by8.
+Each matrix has375 nonzero entries. The complete M0+M1 agrees entry-for-entry
+with the archived410 six-term convention (750 nonzeros); this calibration is
+not an additional anchor positivity experiment.
+
+Uniform covariance, including the conjugation
+Let S_X=X^tensor3 and S_Z=Z^tensor3, with Z|j>=omega^j|j>,
+omega^2+omega+1=0. Both fix each w_j. On every one of the THREE complex-linear
+coefficient matrices, the exact integer/support checks establish
+ (bar(S) tensor S) M_j = M_j bar(S), S=S_X,S_Z.
+For X this is invariance under simultaneously shifting b,r,t. For Z every
+nonzero entry has charge(b)=charge(r)+charge(t) modulo3. Complex linearity
+therefore proves the identities for every complex psi, not from pure-state
+samples. Phi(Y)=Tr(Y)I-Y/2 is unitarily covariant, so H(a) commutes withS
+and bar(H(a))^-1 commutes withbar(S). Consequently the CP matrix
+ C(L)=M(a) bar(H(a))^-1 M(a)*
+commutes withbar(S) tensor S. Partial transpose on INPUT transforms that
+covariance into commutation of B(L)=Gamma_INPUT(C(L)) with S tensor S.
+No partial-transpose preservation of arbitrary PSD order is used.
+A=product_i(I-F_i/2) commutes with those same two-copy stabilizers; the exact
+3375-nonzero scaled-integer table verifies both covariances as a control.
+
+Complete nine-sector frames
+On a pair (b,r), simultaneous shift has orbits of length3 and preserves
+charge(b)+charge(r). Each charge has81 disjoint orbits. For chargec and
+characterp use columns sum_(t=0..2)omega^(-p*t)|orbit[t]>/sqrt3.
+Call the resulting729by81 isometry W_cp. Exact Fourier sums in Q(omega)
+prove orthogonality and completeness of all nine frames (total729).
+Both A and B(L) therefore have no entries between these sectors for EVERY
+pure logical L. A±B(L)>=0 is equivalent to all nine81by81 blocks beingPSD.
+This is an equivalence, not a proof of any of those signs or a uniform gap.
+
+An explicit rational formula retaining every logical variable
+For s=(c,p), let T_s be the27by3 unnormalized frame whose j-column is
+ sum_t omega^(-p*t)|t,t+j,t+c-j>.
+Thus T_00 has columnsw_j. The existing415 H reduction gives unit-normalized
+h_00(L)=I/2+L/8 and h_s(L)=I/2+(1/4)sum_k Tr(F_s,k L)P_s,k otherwise.
+For c=0,p!=0, P_s,k=F_s,k=|k><k|. For c!=0 let q=p/c modulo3;
+P_s,k is the kth eigenprojector of X Z^q and F_s,k=P_(q,k+p).
+These input-label permutations must not be dropped. Each of four Weyl MUB
+bases appears twice. The four basis projectors are the ones fixed in415;
+this derivation neither invents those bases nor repeats their audit.
+
+Because a=sqrt3 Vpsi, H(a)=3H(Vpsi), and T_s/sqrt3 are the physical
+sector isometries. Hence
+ bar(H(a))^-1=(1/9)sum_s bar(T_s) bar(h_s(L)^-1) T_s^T.
+The factor1/9 is essential (one factor3 from anchor scaling and one from
+frame normalization). Define the explicit bilinear fixed-coefficient map
+ K_s(L,Y)=sum_(i,j=0..2) L_ij M_i bar(T_s) Y T_s^T M_j^T.
+The M_j are real rational, which explains the ordinary final transpose.
+For Hermitian pureL the exact CP expression is
+ C(L)=(1/9)[2K_00(L,I)-(2/5)K_00(L,L^T)
+        +4sum_(s!=00,k) K_s(L,bar(P_s,k))/(2+Tr(F_s,k L))].
+Then B(L)=Gamma_INPUT(C(L)). In particular both the conjugated sector
+embeddings and the transposeL^T in the pure code inverse are retained.
+The formula follows by expanding M(a) and using psi_i bar(psi_j)=L_ij;
+it is not a claimed positivity certificate.
+
+A finite polynomial target, with the original hard obligation exposed
+Let D(L)=product_(four bases b, k=0..2)(2+Tr(P_b,k L)). On the pure domain,
+all probabilities lie in[0,1], so D>=2^12>0. It contains every denominator
+above; duplicated/permuted sectors do not require squared factors because
+C is a sum of single inverse terms. For every c,p and sign define
+ P_cp^sign(L)=5D(L) W_cp* [A+sign*Gamma_INPUT(C(L))] W_cp.
+Each entry is a polynomial of degree at most14 in the Hermitian entriesL:
+D has degree12, K_00(L,L^T) degree2, and other inverse numerators have
+degree1 after cancelling one linear denominator. Coefficients are fixed
+algebraic numbers (Q(omega) before real-coordinate expansion); no efficiency,
+integer-coefficient or real-rational claim is made. Real and imaginary
+coordinates can be kept explicitly; no coherence or reference variable is
+silently erased. Positivity of all these matrices over the PURE domain is
+equivalent to the original universal signed comparison. It is still UNPROVED.
+The scalar clearing and sector reduction create a finite explicit certificate
+target; they do not eliminate the mathematical positivity hypothesis itself.
+No full polynomial coefficient expansion, SOS certificate or quantifier
+elimination was executed1317. Stop if this becomes only enumeration without
+an actual uniform estimate or an exact falsifier.
+
+Checks, sources and review context
+Three exact coefficient intertwiners, A covariance and all sector frames passed;
+a fresh-directory replay produced byte-identical JSON. This is the same
+producer implementation, not an independent reviewer or a formal kernel.
+The initial script failed at parse time because an outer template inserted a
+literal newline; it ran no mathematical checks. Original source/error metadata
+are retained, and only output-string escaping was repaired.
+Existing410 proof sections4-5 provide the tensor/index conventions and local
+covariance; existing415 supplies the H map and pure inverse only, with their
+original dependent context and objections retained. Selected primary source
+Theorem7.3/Lemma7.4 at https://arxiv.org/html/2608.02647v1 has a PRODUCT
+reference premise;1316 records why an encoded reference does not supply it.
+Neither this note nor those source mechanisms prove a global Werner result,
+novelty, human review, formal verification or a manuscript score.
+No new assessment or paper. Preserve the result for a substantive knowledge
+batch with its exact inputs/outputs and, before any campaign reproducibility
+claim, the repository Research Capsule protocol. No new graph confidence.

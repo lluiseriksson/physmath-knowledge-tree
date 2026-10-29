@@ -1,0 +1,74 @@
+Normalization closure1318 for the existing uniform QSS reduction
+
+This is own exact transcription checking, not a new model assessment or a
+new anchor positivity experiment. The general signed B question remains open.
+The analytical reduction1317 and the old415 universal H map remain distinct
+from these two finite convention calibrations.
+
+For raw logical x in Q(omega)^3, put s=sum_j |x_j|^2, L=xx*/s, a_raw=sum x_j w_j.
+The physical a used1317 is a_raw/sqrt(s), so H_raw=s H_physical. Let
+ J=(1/9)sum_s T_s h_s(L)^-1 T_s*.
+The claimed factor means H_raw J=sI, or H_raw^-1=J/s. It is checked by an
+explicit partial-trace construction of H_raw and exact Fraction arithmetic,
+with no numerical inverse or eigensolver. All729 entries of the27by27 inverse
+identity agree for the existing410 real six-term control and existing415
+complex control. The conjugated inverse also satisfies its full identity.
+Replacing1/9 by1/3 produces3sI instead of sI and therefore fails the intended
+normalization. For the old complex control x=(1,omega,0), dropping the bar on
+the inverse reproduces the old415 residual1/120+omega/240 at physical000.
+This confirms an existing convention guard, not a new counterexample to415.
+
+For x=(1,1,0), the new H_raw and J/s equal the complete archived410 H/Hinv.
+Using all coefficient entries M0+M1 from1317 and J/s, direct CP contraction
+followed by INPUT partial transpose reproduces the ENTIRE archived729by729 B.
+The23355 nonzeros and all implicit zeros agree exactly. No B spectrum or
+positivity test is rerun and no score is assigned. The original artifact and
+new coefficient file hashes are recorded in RESULT1318.json.
+
+Universal algebraic meaning and limits
+The K_s(L,Y) expression1317 follows by expanding M=sum psi_i M_i and
+psi_i bar(psi_j)=L_ij; the correctly conjugated pure inverse415 then gives the
+stated rational C(L) exactly. The scalar1/9 is accounted for by physical
+anchor scaling and sector-frame normalization, rather than fitted to a test.
+The calibrations above check its implementation/conventions; they do not
+supply a logical extrapolation from two anchors to positivity for all L.
+The nine-sector covariance1317 retains the full729-dimensional input/output
+space. It does not restrict both supports to the code. All logical coherences
+and the PURE domain L=L*,TrL=1,L^2=L remain mandatory. Extending the pure code
+inverse to arbitrary mixed L would invalidate the formula.
+
+The positive denominator and degree<=14 polynomial target are still an own
+unreviewed analytical construction. No full symbolic coefficient expansion,
+SOS decomposition, quantifier elimination, global kernel or uniform spectral
+gap is claimed. The next substantive step must prove a genuine uniform sector
+bound or find an exact negative direction. Stop if it merely names the missing
+positivity estimate as a hypothesis, or accumulates isolated anchor tables.
+
+Model assessments and review context
+No new review/model/grade was requested or run1317-1318. Root derivation and
+Fraction checks share the existing chat context and old410/415 data. The old
+unscored415 report retains its requested Astra xhigh, reused410 context,
+shared filesystem and unattested effective runtime/effort/independence.
+No new human review, formal kernel verification or originality claim.
+Literature: existing415 H formula and the attributed code/source contracts.
+Own unreviewed argument: the combined rational uniform-sector reduction.
+Speculative: universal signed positivity. Formal: no new checked result.
+Failure conditions remain wrong conjugations, labels, normalization or a
+negative sector direction on a pure L. Only the latter would refute the
+proposed universal signed comparison; a transcription failure would instead
+refute this implementation. Neither occurred in1318. Keep the initial1317
+parse failure and all earlier adverse source/manuscript objections intact.
+
+Consolidate1316 applicability guard,1317 uniform coefficients/frames and1318
+normalization controls in one evidence-labelled knowledge update. This is no
+standalone paper or new manuscript assessment. No foreign source body copied.
+
+Portable verification boundary
+verify1318-portable.py reads only the adjacent own coefficient/reference JSON.
+It regenerates the full B table and compares its canonical SHA256 binding to
+the old table. The strict archived scriptcheck1318.py separately compared
+all entries of oldH/Hinv/B directly and passed; those direct H/Hinv reference
+comparisons are not repeated by the portable mode. Both modes retain the full
+inverse and conjugation identities. The two reference modes are explicitly
+distinguished; neither constitutes an independent model review or a campaign
+reproducibility certification. No private old matrix table is shipped.

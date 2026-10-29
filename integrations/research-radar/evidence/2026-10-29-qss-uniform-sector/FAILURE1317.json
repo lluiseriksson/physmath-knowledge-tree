@@ -1,0 +1,9 @@
+{
+  "attempt": 0,
+  "phase": "JavaScript parse before any mathematical computation",
+  "exit": 1,
+  "error": "SyntaxError Invalid or unexpected token at line62: literal newline inserted inside a single-quoted string by outer template",
+  "mathematical_checks_ran": false,
+  "original_preserved": "verify1317-attempt0-syntax.mjs",
+  "repair": "Escape output newlines in the generated script; no mathematical condition or verifier assertion changed"
+}

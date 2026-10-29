@@ -1,0 +1,49 @@
+Existing QSS route1316 — product-reference applicability guard
+
+PR194 is fully closed: mainCI40929128432, Pages40929128433 and
+CodeQL40929128434 all succeeded at mergefe52e76c231fef0757d51519eb25c26595f87864.
+All13 public artifacts are byte-identical to the merged source; no new assessment
+was run. Existing415 is a dependent unscored component report, not a manuscript
+grade or human review. No local validation sessions remain.
+
+Selected primary argument read
+https://arxiv.org/html/2608.02647v1
+Theorem7.3 and Lemma7.4, equations40-43, require a product reference ray.
+The lemma factors the compressed diagonal/cross term into one-site maps.
+Their signed co-Choi comparisons yield contractions whose tensor product
+supplies the switched Schur inequality. Local unitary covariance moves the
+product reference to the chosen basis vector. Theorem7.3 applies when either
+rank-two support plane contains a product ray. This is selected local argument
+reading only; no full external theorem audit or new publication discovery.
+
+Own applicability inference from the existing CGL code identity
+For V with columns v_j=(1/sqrt3)sum_t|t,t+j,t+2j>, every unit Vpsi has
+one-share marginal I3/3, as already established in the known code/410 identity.
+A fully product pure state has rank-one one-share marginals. Therefore a
+nonzero vector in range(V) cannot be fully product. In particular the explicit
+plane span(v_0,v_1) contains an encoded ray and has dimension2 but contains no
+product ray. The operator C=V diag(1,1,0) V* has that plane as both supports;
+its nonnegativity is already supplied by the old both-supports code compression,
+not by the product-ray premise. This is an applicability control, not a negative
+q3 counterexample or a failure of Theorem7.3.
+
+Consequences and stopping condition
+Containing one encoded anchor does not supply the source product-reference
+hypothesis. Nor does the MUB-sector inverse from415 create a one-site tensor
+factorization of H or remove the partial-transpose order obstruction. Abandon
+that automatic product-ray/tensor transfer unless an actual additional
+hypothesis or new comparison theorem is proved. The global signed B inequality
+for every unit complex logical psi remains open; its positive-denominator
+polynomial reduction alone is not a positivity certificate. One more isolated
+anchor cannot resolve the universal obligation.
+
+Evidence levels and falsifier
+Literature: the selected source argument and known CGL erasure identity.
+Own elementary inference: the support-plane applicability control above,
+not a new independent review or novelty claim. Speculative: the full signed B
+extension. Formal: no new kernel-checked result or graph confidence promotion.
+A correct theorem genuinely removing the product-reference requirement for
+these encoded anchors would supersede this applicability guard; a negative
+A±B direction would instead refute the proposed universal signed comparison.
+No new paper, grade, review or isolated control campaign. Keep this note for a
+future substantive batch; do not open a standalone minor PR for this guard.
