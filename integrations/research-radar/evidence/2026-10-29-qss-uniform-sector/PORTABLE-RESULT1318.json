@@ -1,0 +1,38 @@
+{
+  "scope": "Inverse/conjugation/normalization and entire oldB transcription controls, not new anchor positivity or a proof for allL",
+  "calibrations": [
+    {
+      "calibration": "existing410_plus",
+      "logical_raw_norm": "2",
+      "all729_inverse_entries_identity": true,
+      "conjugated_inverse_identity": true,
+      "wrong_unconjugated_residual_000": [
+        "0",
+        "0"
+      ],
+      "factor1_over9_verified": true
+    },
+    {
+      "calibration": "existing415_complex",
+      "logical_raw_norm": "2",
+      "all729_inverse_entries_identity": true,
+      "conjugated_inverse_identity": true,
+      "wrong_unconjugated_residual_000": [
+        "1/120",
+        "1/240"
+      ],
+      "factor1_over9_verified": true
+    }
+  ],
+  "old410_B_canonical_sha256_match": true,
+  "B_canonical_sha256": "4c22bffbfa5d5239605c6dcaf79a7785558972ded315d96af71e113deb00b30c",
+  "reference_mode": "Portable canonical-table digest; original full-entry calibration is separately preserved in RESULT1318.json",
+  "old410_B_nonzero": 23355,
+  "old410_artifact_sha256": "09a1f91001f6b11d84700fcdc7b252c2c5cf1f008fc7eb55b861235722b3fd34",
+  "M_coefficients1317_sha256": "6545a2ea350b92892fc83ae6af2f426bd6dbff9fb5e039507d7b3b38511dc82b",
+  "exact_arithmetic": "Python fractions over Q(omega); no floating eigensolver",
+  "sampled_PSD_campaign": false,
+  "universal_signed_positivity_proved": false,
+  "independent_reviewer": false,
+  "formal_kernel": false
+}

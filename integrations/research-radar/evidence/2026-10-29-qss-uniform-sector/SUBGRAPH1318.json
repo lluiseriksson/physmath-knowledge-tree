@@ -1,0 +1,164 @@
+{
+  "scope": "Selected target nodes and induced edges, not full neighborhoods; no graph mutation",
+  "nodes": [
+    {
+      "id": "domain.foundation_logic",
+      "kind": "domain",
+      "title": "Foundations, logic and type theory",
+      "summary": "Logical foundations, dependent type theory, proof terms and the formal substrate used by Lean.",
+      "confidence": "literature",
+      "tags": [
+        "logic",
+        "type-theory",
+        "lean",
+        "foundations"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib"
+        ],
+        "declarations": [
+          "Prop",
+          "Sort"
+        ],
+        "targets": [
+          "Map graph node semantics to Lean structures and metadata."
+        ]
+      },
+      "questions": [
+        "Which informal mathematical structures need explicit universe or typeclass control?"
+      ],
+      "references": [
+        {
+          "label": "Lean Language Reference",
+          "url": "https://lean-lang.org/doc/reference/latest/",
+          "type": "documentation",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "domain.algebra",
+      "kind": "domain",
+      "title": "Algebra",
+      "summary": "Groups, rings, modules, fields, algebras and their structure-preserving maps.",
+      "confidence": "literature",
+      "tags": [
+        "algebra",
+        "groups",
+        "rings",
+        "modules"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Algebra.Group.Basic",
+          "Mathlib.RingTheory.Ideal.Basic"
+        ],
+        "declarations": [
+          "Group",
+          "Ring",
+          "Module"
+        ],
+        "targets": [
+          "Connect algebraic structure nodes to mathlib typeclass hierarchies."
+        ]
+      },
+      "questions": [
+        "Which bridge requires structure, representation or invariant theory?"
+      ],
+      "references": [
+        {
+          "label": "The Stacks Project",
+          "url": "https://stacks.math.columbia.edu/",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "domain.harmonic_analysis",
+      "kind": "domain",
+      "title": "Harmonic analysis",
+      "summary": "Fourier analysis, singular integrals, oscillation and scale-sensitive decomposition.",
+      "confidence": "literature",
+      "tags": [
+        "fourier",
+        "harmonic-analysis",
+        "scales"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Analysis.Fourier.FourierTransform"
+        ],
+        "declarations": [],
+        "targets": [
+          "Identify available Fourier transform infrastructure for toy estimates."
+        ]
+      },
+      "questions": [
+        "Which hidden frequency interaction blocks a global estimate?"
+      ],
+      "references": [
+        {
+          "label": "E. M. Stein — Harmonic Analysis",
+          "url": "https://doi.org/10.1515/9781400883929",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "domain.quantum_information_theory",
+      "kind": "domain",
+      "title": "Quantum information theory",
+      "summary": "Studies quantum states, channels, entropies, correlations, recovery, error correction and operational constraints such as no-signalling, with explicit attention to uniform channels and preservation of reference-system entanglement.",
+      "confidence": "literature",
+      "tags": [
+        "quantum-information",
+        "channels",
+        "entropy",
+        "recovery"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib"
+        ],
+        "declarations": [],
+        "targets": [
+          "Formalize finite matrix channels, Kraus completeness and a no-signalling calculation.",
+          "Represent the quantifier distinction between one uniform recovery map and state-dependent recovery maps."
+        ]
+      },
+      "questions": [
+        "Which finite recovery statements transfer to operator-algebraic or split AQFT settings without assuming a tensor factorization?"
+      ],
+      "references": [
+        {
+          "label": "M. A. Nielsen and I. L. Chuang — Quantum Computation and Quantum Information",
+          "url": "https://www.cambridge.org/highereducation/books/quantum-computation-and-quantum-information/01E10196D0A682A6AEFFEA52D53BE9AE",
+          "type": "book",
+          "scope": "claim"
+        },
+        {
+          "label": "O. Fawzi and R. Renner — Quantum conditional mutual information and approximate Markov chains",
+          "url": "https://arxiv.org/abs/1410.0664",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "Depth-1 expanders on the unitary group and applications (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.01605v1",
+          "type": "paper",
+          "scope": "context"
+        },
+        {
+          "label": "Quantum speed limits based on quantifiers of quantum-state texture (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.08752v1",
+          "type": "paper",
+          "scope": "context"
+        }
+      ]
+    }
+  ],
+  "edges": []
+}

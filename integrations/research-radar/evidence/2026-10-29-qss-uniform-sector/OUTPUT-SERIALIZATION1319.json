@@ -1,0 +1,22 @@
+{
+  "reason": "Repository format gate rejected CRLF in two Windows-produced JSON outputs; gate unchanged",
+  "files": [
+    {
+      "file": "PORTABLE-RESULT1318.json",
+      "original_windows_sha256": "b40673638b194370a2ae3517ac933a7a194ea0642ec97382b95c46ba99c06513",
+      "public_LF_sha256": "df3ab8cf56ba88921d429d9557b5978797ceba872ca14d8944ecce76f3661270",
+      "parsed_JSON_identical": true
+    },
+    {
+      "file": "RESULT1318.json",
+      "original_windows_sha256": "d49394b4e1e4482f0884d61c00647e67b67beffda0ac9e2156ea4ca8bbd9c38e",
+      "public_LF_sha256": "1f6c3a71458e309f468c993fe495d060feb2bd425e2da435fab8617639ec33f2",
+      "parsed_JSON_identical": true
+    }
+  ],
+  "portable_code": {
+    "archived_original_sha256": "f09dabf48e19c7e18b2ca380a71ad1819a436f8b3ac6d3d2a5de8b61de39eb22",
+    "public_sha256": "6de748665a56dbeb84afad0a56d3b7b42eedfdb9339b16f4efb3e5b9b7477367",
+    "change": "Output write_text newline LF explicitly; mathematical construction and assertions unchanged"
+  }
+}

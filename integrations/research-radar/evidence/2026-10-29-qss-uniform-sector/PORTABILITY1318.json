@@ -1,0 +1,15 @@
+{
+  "portable_script": "verify1318-portable.py",
+  "public_inputs": [
+    "M-COEFFICIENTS1317.json",
+    "REFERENCE1318.json"
+  ],
+  "old_full_entry_comparison_script": "check1318.py retained only for archival direct comparisons",
+  "portable_mode": "regenerates B and checks canonical-table SHA256 and nonzero count",
+  "direct_old_H_Hinv_comparisons": "original strict mode only; not present in portable checker",
+  "inverse_and_conjugated_inverse_identities": "preserved in both modes",
+  "no_private_path_dependency_in_portable_checker": true,
+  "repository_gates_modified": false,
+  "comparison_modes_distinguished": true,
+  "research_capsule_claim": false
+}

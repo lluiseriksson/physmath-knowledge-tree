@@ -1,0 +1,31 @@
+Finite exact controls, not a reproducible-campaign certification
+
+Use Node22+ and Python3.12 standard library in this evidence directory:
+  node verify1317.mjs
+  python verify1318-portable.py
+
+The first command regenerates the own M coefficients, frames and RESULT1317.
+The second uses adjacent M-COEFFICIENTS1317.json and REFERENCE1318.json only.
+It regenerates the whole B table and compares a compact canonical-table digest.
+It writes PORTABLE-RESULT1318.json in the current directory. Run in a scratch
+copy when preserving a clean checkout. The canonical B digest is independent
+of output JSON line endings; recorded output-file bytes reflect the original
+Windows run, normalized to LF for public repository format. These are exact convention controls, not a global PSD solver.
+
+check1318.py and the old410 raw matrix archive are intentionally not public
+inputs. RESULT1318.json records the separately archived full-entry comparison;
+the portable checker uses its explicitly bound canonical-table SHA256 instead.
+The 1317 first parse error occurred before mathematical checks. The exact
+failed source is preserved as verify1317-attempt0-syntax.txt, a text archive;
+FAILURE1317.json retains its original historical filename. It must not be run
+as the corrected verifier. No mathematical assertion or repo gate was removed.
+The three-file byte-identical replay1317 uses the same producer implementation,
+not an independent proof. No model grade, formal theorem or campaign Research
+Capsule certification is implied by running these scripts.
+
+Publication serialization: OUTPUT-SERIALIZATION1319.json binds original
+Windows output hashes to semantically identical public LF JSON. The public
+portable checker explicitly writes LF; only its output newline setting differs
+from the archived original. Math code/assertions and canonical B digest are
+unchanged. The original format failure/log is conserved in the research dossier;
+no repository validator was modified or bypassed.

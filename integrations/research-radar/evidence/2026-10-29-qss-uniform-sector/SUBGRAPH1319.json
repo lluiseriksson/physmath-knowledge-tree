@@ -1,0 +1,96 @@
+{
+  "scope": "Two existing target nodes and their induced edges; no graph-proximity proof or graph mutation",
+  "nodes": [
+    {
+      "id": "domain.algebra",
+      "kind": "domain",
+      "title": "Algebra",
+      "summary": "Groups, rings, modules, fields, algebras and their structure-preserving maps.",
+      "confidence": "literature",
+      "tags": [
+        "algebra",
+        "groups",
+        "rings",
+        "modules"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Algebra.Group.Basic",
+          "Mathlib.RingTheory.Ideal.Basic"
+        ],
+        "declarations": [
+          "Group",
+          "Ring",
+          "Module"
+        ],
+        "targets": [
+          "Connect algebraic structure nodes to mathlib typeclass hierarchies."
+        ]
+      },
+      "questions": [
+        "Which bridge requires structure, representation or invariant theory?"
+      ],
+      "references": [
+        {
+          "label": "The Stacks Project",
+          "url": "https://stacks.math.columbia.edu/",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "domain.quantum_information_theory",
+      "kind": "domain",
+      "title": "Quantum information theory",
+      "summary": "Studies quantum states, channels, entropies, correlations, recovery, error correction and operational constraints such as no-signalling, with explicit attention to uniform channels and preservation of reference-system entanglement.",
+      "confidence": "literature",
+      "tags": [
+        "quantum-information",
+        "channels",
+        "entropy",
+        "recovery"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib"
+        ],
+        "declarations": [],
+        "targets": [
+          "Formalize finite matrix channels, Kraus completeness and a no-signalling calculation.",
+          "Represent the quantifier distinction between one uniform recovery map and state-dependent recovery maps."
+        ]
+      },
+      "questions": [
+        "Which finite recovery statements transfer to operator-algebraic or split AQFT settings without assuming a tensor factorization?"
+      ],
+      "references": [
+        {
+          "label": "M. A. Nielsen and I. L. Chuang — Quantum Computation and Quantum Information",
+          "url": "https://www.cambridge.org/highereducation/books/quantum-computation-and-quantum-information/01E10196D0A682A6AEFFEA52D53BE9AE",
+          "type": "book",
+          "scope": "claim"
+        },
+        {
+          "label": "O. Fawzi and R. Renner — Quantum conditional mutual information and approximate Markov chains",
+          "url": "https://arxiv.org/abs/1410.0664",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "Depth-1 expanders on the unitary group and applications (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.01605v1",
+          "type": "paper",
+          "scope": "context"
+        },
+        {
+          "label": "Quantum speed limits based on quantifiers of quantum-state texture (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.08752v1",
+          "type": "paper",
+          "scope": "context"
+        }
+      ]
+    }
+  ],
+  "edges": []
+}
