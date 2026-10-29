@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-29T12:14:03.088651+00:00",
+  "primary_url": "https://galton.uchicago.edu/~lalley/Courses/383/MarkovChains.pdf",
+  "transport_sha256": "99a317b5841036b099b83199355cc7f1f8ba552cd1061fabe4c9700a62f9599a",
+  "bytes": 180410,
+  "coverage": "Theorems19/20 selected statements read, not complete general coupling proof audit",
+  "PDF_redistributed": false,
+  "python_version": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "sympy_version": "1.14.0",
+  "control_script_sha256": "977d1b47bb012d6483d87c7fe1d7d3dd7de1695c12b2ccd58568fb18a8c600ba",
+  "analytic_argument_sha256": "7ce4a4c205ed6b0ff4640f5f244fa83db329821d456aa0e71c493dd3e6739b12",
+  "generalization_scope": "Within this renewal-reset family only, Tonelli gives E N = E[G(G+1)]/(2 E G), allowing infinity. Finite mean onset iff finite second gap moment, with finite mean gap already assumed. This is textbook renewal theory, not a new theorem or a general bound for arbitrary CP cocycles.",
+  "other_primary_limit": "UMass EMP opening timed out; located only, not used as proof evidence."
+}

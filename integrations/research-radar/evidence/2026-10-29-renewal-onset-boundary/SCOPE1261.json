@@ -1,0 +1,61 @@
+{
+  "confidence": "heuristic",
+  "sourced_fact": "Standard stationary renewal residual law and countable Markov-chain convergence/occupation statements; selected reading, not complete imported proof audit",
+  "own_argument": "Almost-sure finite injectivity onset does not imply finite mean, even with constant faithful target and bistochastic channels. Analytic argument plus bounded exact controls, no independent assessment.",
+  "dictionary": "Residual waiting time R0 maps to first/eventual full-Choi onset N. Identity has rank1 Choi; reset has rank4. Renewal gap G is not stationary residual R0.",
+  "hypotheses": "Countable stationary positive recurrent countdown chain; irreducible and aperiodic; bilateral stationary path shift. Fixed qubit reset L=Tr(.)I/2.",
+  "moment_formula": "For renewal-reset family with0<E G<infinity: E N=E[G(G+1)]/(2 E G), allowing infinity, by Tonelli. Integrability iff E G^2 finite. Not a general CP-cocycle theorem.",
+  "falsifier": "Invalid stationary balance, Choi rank, onset indexing or cylinder mixing argument defeats corresponding claim. Finite controls cannot replace the analytic all-length and infinite-sum arguments.",
+  "limits": "No new manuscript, score, formal result, novelty certificate, main EMPS theorem refutation, or arbitrary-rate interpretation of imported theorem. No canonical graph upgrade.",
+  "prior_deduplication": "Existing reviewed-reset evidence concerns Poisson continuous-time Hamiltonian resetting; it is prior machinery, not this stationary heavy-tail residual law. Its assessment does not transfer. Original v2 synthesis prospective wording remains historical.",
+  "abandonment": "Do not split textbook renewal specialization into a new paper. Require a defined quantitative question and explicit moment/dependence data before further development.",
+  "formal_dependencies": [
+    {
+      "name": "mathlib",
+      "pinned": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+      "observed": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f"
+    },
+    {
+      "name": "plausible",
+      "pinned": "63045536fe95024e6c18fc7b48e03f506701c5bc",
+      "observed": "63045536fe95024e6c18fc7b48e03f506701c5bc"
+    },
+    {
+      "name": "LeanSearchClient",
+      "pinned": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+      "observed": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843"
+    },
+    {
+      "name": "importGraph",
+      "pinned": "5c7542ed018c78194f1e2b903eaf6a792b74c03d",
+      "observed": "5c7542ed018c78194f1e2b903eaf6a792b74c03d"
+    },
+    {
+      "name": "proofwidgets",
+      "pinned": "24b0d9dc081c5423f8eec7e866c441e5184f29d9",
+      "observed": "24b0d9dc081c5423f8eec7e866c441e5184f29d9"
+    },
+    {
+      "name": "aesop",
+      "pinned": "e3cb2f741431ce31bf73549fb52316a57368b06f",
+      "observed": "e3cb2f741431ce31bf73549fb52316a57368b06f"
+    },
+    {
+      "name": "Qq",
+      "pinned": "f46324995fca5f0483b742e4eb4daec7f4ee50d2",
+      "observed": "f46324995fca5f0483b742e4eb4daec7f4ee50d2"
+    },
+    {
+      "name": "batteries",
+      "pinned": "fa08db58b30eb033edcdab331bba000827f9f785",
+      "observed": "fa08db58b30eb033edcdab331bba000827f9f785"
+    },
+    {
+      "name": "Cli",
+      "pinned": "92564e5770e4d09f2d86dfbf8ada1e9c715b384c",
+      "observed": "92564e5770e4d09f2d86dfbf8ada1e9c715b384c"
+    }
+  ],
+  "replay": "python verify_renewal.py; SymPy1.14.0 used locally. No network in this derived pure control. Original network-dependent script retained separately; source PDF bytes are hashed in memory only.",
+  "reproducibility_boundary": "One bounded exact check, not a campaign or Research Capsule certification. No failed control execution omitted. UMass PDF opening timeout recorded in reading metadata; that source is not a proof dependency."
+}

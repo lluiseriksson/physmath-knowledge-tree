@@ -1,0 +1,607 @@
+{
+  "anchors": [
+    "domain.probability_stochastics",
+    "domain.quantum_information_theory"
+  ],
+  "radius": 1,
+  "nodes": [
+    {
+      "id": "domain.probability_stochastics",
+      "kind": "domain",
+      "title": "Probability and stochastic processes",
+      "summary": "Random variables, stochastic dynamics, concentration and probabilistic method.",
+      "confidence": "literature",
+      "tags": [
+        "probability",
+        "stochastic",
+        "randomness"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Probability.ProbabilityMassFunction.Basic"
+        ],
+        "declarations": [
+          "ProbabilityTheory.ProbabilityMassFunction"
+        ],
+        "targets": [
+          "Build finite probabilistic toy models for analytic or complexity barriers."
+        ]
+      },
+      "questions": [
+        "Does randomness reveal the typical obstruction or only average it away?"
+      ],
+      "references": [
+        {
+          "label": "O. Kallenberg — Foundations of Modern Probability",
+          "url": "https://link.springer.com/book/10.1007/978-3-030-61871-1",
+          "type": "book",
+          "scope": "claim"
+        },
+        {
+          "label": "Restricted typicality in non-equilibrium quantum many-body systems (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.07832v1",
+          "type": "paper",
+          "scope": "context"
+        }
+      ]
+    },
+    {
+      "id": "domain.pde",
+      "kind": "domain",
+      "title": "Partial differential equations",
+      "summary": "Equations involving functions and derivatives across space, time and boundary data.",
+      "confidence": "literature",
+      "tags": [
+        "pde",
+        "regularity",
+        "weak-solutions",
+        "energy"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Analysis.Calculus.FDeriv.Basic"
+        ],
+        "declarations": [
+          "ContDiff"
+        ],
+        "targets": [
+          "Represent weak and strong toy PDE statements with explicit assumptions."
+        ]
+      },
+      "questions": [
+        "Where does regularity transfer fail: estimates, compactness or uniqueness?"
+      ],
+      "references": [
+        {
+          "label": "L. C. Evans — Partial Differential Equations",
+          "url": "https://bookstore.ams.org/gsm-19-r/",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "bridge.random_matrix_zeta_spectra",
+      "kind": "bridge",
+      "title": "Random matrices, zeta zeros and spectra",
+      "summary": "Compares statistical behavior of zeta zeros with eigenvalue statistics from random matrix ensembles.",
+      "confidence": "heuristic",
+      "tags": [
+        "random-matrix",
+        "zeta",
+        "spectra",
+        "statistics"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Probability.ProbabilityMassFunction.Basic",
+          "Mathlib.LinearAlgebra.Matrix.Spectrum"
+        ],
+        "declarations": [],
+        "targets": [
+          "Formalize finite eigenvalue-statistic toy examples."
+        ]
+      },
+      "questions": [
+        "What part of the analogy is structural, and what part is only statistical?"
+      ],
+      "references": [
+        {
+          "label": "J. P. Keating and N. C. Snaith — Random matrix theory and zeta functions",
+          "url": "https://doi.org/10.1007/s002220000108",
+          "type": "paper",
+          "scope": "context"
+        },
+        {
+          "label": "A new proof that more than $2/3$ of the zeros of the Riemann zeta function are simple and on the critical line (v2, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.02882v2",
+          "type": "paper",
+          "scope": "context"
+        },
+        {
+          "label": "Simple critical zeros and distinct zeros of the Riemann zeta-function in short intervals (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.07918v1",
+          "type": "paper",
+          "scope": "context"
+        }
+      ]
+    },
+    {
+      "id": "problem.navier_stokes",
+      "kind": "problem",
+      "title": "Navier-Stokes existence and smoothness",
+      "summary": "Determine global existence and smoothness, or finite-time breakdown, for 3D incompressible Navier-Stokes.",
+      "confidence": "literature",
+      "tags": [
+        "millennium",
+        "pde",
+        "fluid",
+        "regularity"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Analysis.Calculus.FDeriv.Basic"
+        ],
+        "declarations": [],
+        "targets": [
+          "Formalize a simplified energy inequality with explicit norms."
+        ]
+      },
+      "questions": [
+        "Can critical-scale energy cascade be blocked by a hidden monotonicity?"
+      ],
+      "status": "unsolved",
+      "references": [
+        {
+          "label": "Clay Mathematics Institute — Millennium Prize Problems",
+          "url": "https://www.claymath.org/millennium-problems/",
+          "type": "official",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "domain.constructive_quantum_field_theory",
+      "kind": "domain",
+      "title": "Constructive quantum field theory",
+      "summary": "Rigorous construction and analysis of interacting quantum field theories through measures, Gaussian estimates, renormalization, cluster expansions, locality and reconstruction criteria, with every uniformity assumption made explicit.",
+      "confidence": "literature",
+      "tags": [
+        "constructive-qft",
+        "cluster-expansion",
+        "renormalization",
+        "rigorous-qft"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib"
+        ],
+        "declarations": [],
+        "targets": [
+          "Isolate finite Gaussian, locality and cluster-expansion interfaces before making any continuum claim."
+        ]
+      },
+      "questions": [
+        "Which finite estimates can be proved uniformly in volume, cutoff and renormalization scale?"
+      ],
+      "references": [
+        {
+          "label": "J. Glimm and A. Jaffe — Quantum Physics: A Functional Integral Point of View",
+          "url": "https://link.springer.com/book/10.1007/978-1-4612-4728-9",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "bridge.gaussian_covariance_collar",
+      "kind": "bridge",
+      "title": "Gaussian covariance decay to collar factorization",
+      "summary": "Combines support locality, exponential covariance decay and Gaussian interpolation or integration by parts to convert geometric separation into a quantitative factorization defect. The defect must become a local activity rather than being mistaken for exact independence.",
+      "confidence": "literature",
+      "tags": [
+        "gaussian",
+        "covariance",
+        "factorization",
+        "collar"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib"
+        ],
+        "declarations": [],
+        "targets": [
+          "Prove a finite exponential-linear factorization defect, then generalize it through covariance interpolation and local derivatives."
+        ]
+      },
+      "questions": [
+        "Can derivative growth and cross-covariance tails be combined without losing the coupling power needed by the raw activity bound?"
+      ],
+      "references": [
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban I",
+          "url": "https://arxiv.org/abs/1108.1335",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban II",
+          "url": "https://arxiv.org/abs/1212.5562",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "On overlap concentration in the Curie-Weiss Random Field model (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.08169v1",
+          "type": "paper",
+          "scope": "context"
+        },
+        {
+          "label": "Thick points of log-correlated Gaussian fields do not depend on the mollifier (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.08132v1",
+          "type": "paper",
+          "scope": "context"
+        },
+        {
+          "label": "Height fluctuation for Lozenge Tilings of Polygons (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.04789v1",
+          "type": "paper",
+          "scope": "context"
+        }
+      ]
+    },
+    {
+      "id": "domain.quantum_information_theory",
+      "kind": "domain",
+      "title": "Quantum information theory",
+      "summary": "Studies quantum states, channels, entropies, correlations, recovery, error correction and operational constraints such as no-signalling, with explicit attention to uniform channels and preservation of reference-system entanglement.",
+      "confidence": "literature",
+      "tags": [
+        "quantum-information",
+        "channels",
+        "entropy",
+        "recovery"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib"
+        ],
+        "declarations": [],
+        "targets": [
+          "Formalize finite matrix channels, Kraus completeness and a no-signalling calculation.",
+          "Represent the quantifier distinction between one uniform recovery map and state-dependent recovery maps."
+        ]
+      },
+      "questions": [
+        "Which finite recovery statements transfer to operator-algebraic or split AQFT settings without assuming a tensor factorization?"
+      ],
+      "references": [
+        {
+          "label": "M. A. Nielsen and I. L. Chuang — Quantum Computation and Quantum Information",
+          "url": "https://www.cambridge.org/highereducation/books/quantum-computation-and-quantum-information/01E10196D0A682A6AEFFEA52D53BE9AE",
+          "type": "book",
+          "scope": "claim"
+        },
+        {
+          "label": "O. Fawzi and R. Renner — Quantum conditional mutual information and approximate Markov chains",
+          "url": "https://arxiv.org/abs/1410.0664",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "Depth-1 expanders on the unitary group and applications (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.01605v1",
+          "type": "paper",
+          "scope": "context"
+        },
+        {
+          "label": "Quantum speed limits based on quantifiers of quantum-state texture (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.08752v1",
+          "type": "paper",
+          "scope": "context"
+        }
+      ]
+    },
+    {
+      "id": "bridge.local_operations_no_signalling",
+      "kind": "bridge",
+      "title": "Local complete operations preserve spacelike statistics",
+      "summary": "For Kraus operators in one local algebra that commute with a distant observable, a complete nonselective operation leaves the distant expectation unchanged: completeness moves through the observable and collapses the sum to the identity. Postselection does not satisfy this conclusion without classical outcome information.",
+      "confidence": "formal",
+      "tags": [
+        "no-signalling",
+        "kraus-operators",
+        "microcausality",
+        "channels"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib",
+          "PhysMathKnowledgeTree.Formal.Microtheorems"
+        ],
+        "declarations": [
+          "nonselectiveExpectationCollapse"
+        ],
+        "targets": [
+          "Prove the finite matrix identity sum_i omega(K_i† Y K_i) = omega(Y) from commutation and sum_i K_i†K_i = 1."
+        ]
+      },
+      "questions": [
+        "Which operator-algebraic hypotheses are sufficient for the same proof with infinite Kraus families or normal completely positive maps?"
+      ],
+      "references": [
+        {
+          "label": "D. Beckman et al. — Causal and localizable quantum operations",
+          "url": "https://arxiv.org/abs/quant-ph/0102043",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "M. A. Nielsen and I. L. Chuang — Quantum Computation and Quantum Information",
+          "url": "https://www.cambridge.org/highereducation/books/quantum-computation-and-quantum-information/01E10196D0A682A6AEFFEA52D53BE9AE",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "bridge.conditional_mutual_information_recovery",
+      "kind": "bridge",
+      "title": "Conditional mutual information to uniform recovery",
+      "summary": "Small quantum conditional mutual information controls reconstruction of a tripartite state from a marginal by a channel acting on the conditioning system. The useful research discipline is the uniform quantifier order: one recovery map should work for every state in the chosen code or extension class.",
+      "confidence": "literature",
+      "tags": [
+        "conditional-mutual-information",
+        "recovery-map",
+        "markov-chain",
+        "uniformity"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib"
+        ],
+        "declarations": [],
+        "targets": [
+          "State a finite-dimensional recovery interface with an explicit reference system and uniform channel quantifiers.",
+          "Keep any split/type-III AQFT extension conditional until its operator-algebraic recovery inequality is sourced."
+        ]
+      },
+      "questions": [
+        "Can a collar-conditioned recovery channel be made uniform over a finite low-energy code while preserving entanglement with a reference?"
+      ],
+      "references": [
+        {
+          "label": "D. Sutter, O. Fawzi and R. Renner — Universal recovery map for approximate Markov chains",
+          "url": "https://arxiv.org/abs/1504.07251",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "O. Fawzi and R. Renner — Quantum conditional mutual information and approximate Markov chains",
+          "url": "https://arxiv.org/abs/1410.0664",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "A quantum oracle separation between QMA(2) and QMA (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.02865v1",
+          "type": "paper",
+          "scope": "context"
+        },
+        {
+          "label": "Semidefinite extension complexity of the separable set, with applications to approximate disentanglers (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.09033v1",
+          "type": "paper",
+          "scope": "context"
+        }
+      ]
+    },
+    {
+      "id": "bridge.gaussian_precision_markov_blanket",
+      "kind": "bridge",
+      "title": "Sparse Gaussian precision as an exact Markov blanket",
+      "summary": "For a nondegenerate finite Gaussian split into interior, collar and exterior variables, a zero interior–exterior block in the precision matrix implies exact conditional factorization of interior and exterior given the collar. Decay of inverse diagonal blocks then bounds how collar values influence conditional means.",
+      "confidence": "formal",
+      "tags": [
+        "gaussian",
+        "precision-matrix",
+        "conditional-independence",
+        "markov-blanket"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib"
+        ],
+        "declarations": [],
+        "targets": [
+          "Prove conditional Gaussian factorization for a positive-definite three-block precision matrix with a zero A-C block.",
+          "Derive a boundary-influence estimate from exponential decay of the relevant inverse block."
+        ]
+      },
+      "questions": [
+        "Do gauge constraints, projectors or hard block constraints preserve the required sparse precision structure after restriction?"
+      ],
+      "references": [
+        {
+          "label": "S. L. Lauritzen — Graphical Models",
+          "url": "https://global.oup.com/academic/product/graphical-models-9780198522195",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge.probability.pde",
+      "source": "domain.probability_stochastics",
+      "target": "domain.pde",
+      "relation": "bridge",
+      "confidence": "literature",
+      "mechanism": "Stochastic processes model diffusion, random forcing and probabilistic representations of PDE.",
+      "references": [
+        {
+          "label": "L. C. Evans — Partial Differential Equations",
+          "url": "https://bookstore.ams.org/gsm-19-r/",
+          "type": "book",
+          "scope": "claim"
+        },
+        {
+          "label": "O. Kallenberg — Foundations of Modern Probability",
+          "url": "https://link.springer.com/book/10.1007/978-3-030-61871-1",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.probability.navier",
+      "source": "domain.probability_stochastics",
+      "target": "problem.navier_stokes",
+      "relation": "suggests",
+      "confidence": "heuristic",
+      "mechanism": "Stochastic analogues may expose typical cascade behavior or regularization effects.",
+      "references": [
+        {
+          "label": "C. Fefferman — Existence and smoothness of the Navier-Stokes equation",
+          "url": "https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf",
+          "type": "paper",
+          "scope": "context"
+        },
+        {
+          "label": "O. Kallenberg — Foundations of Modern Probability",
+          "url": "https://link.springer.com/book/10.1007/978-3-030-61871-1",
+          "type": "book",
+          "scope": "context"
+        }
+      ]
+    },
+    {
+      "id": "edge.probability.random_matrix_bridge",
+      "source": "domain.probability_stochastics",
+      "target": "bridge.random_matrix_zeta_spectra",
+      "relation": "transfers_via",
+      "confidence": "literature",
+      "mechanism": "Random matrix ensembles provide probabilistic eigenvalue statistics.",
+      "references": [
+        {
+          "label": "J. P. Keating and N. C. Snaith — Random matrix theory and zeta functions",
+          "url": "https://doi.org/10.1007/s002220000108",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "O. Kallenberg — Foundations of Modern Probability",
+          "url": "https://link.springer.com/book/10.1007/978-3-030-61871-1",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.probability.constructive_qft",
+      "source": "domain.probability_stochastics",
+      "target": "domain.constructive_quantum_field_theory",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "Euclidean field measures, Gaussian integration and stochastic estimates provide the probabilistic substrate for constructive models.",
+      "references": [
+        {
+          "label": "J. Glimm and A. Jaffe — Quantum Physics: A Functional Integral Point of View",
+          "url": "https://link.springer.com/book/10.1007/978-1-4612-4728-9",
+          "type": "book",
+          "scope": "claim"
+        },
+        {
+          "label": "O. Kallenberg — Foundations of Modern Probability",
+          "url": "https://link.springer.com/book/10.1007/978-3-030-61871-1",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.probability.gaussian_collar",
+      "source": "domain.probability_stochastics",
+      "target": "bridge.gaussian_covariance_collar",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "Gaussian expectations and covariance interpolation express factorization defects through cross-covariance contractions.",
+      "references": [
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban I",
+          "url": "https://arxiv.org/abs/1108.1335",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "O. Kallenberg — Foundations of Modern Probability",
+          "url": "https://link.springer.com/book/10.1007/978-3-030-61871-1",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.qinfo.no_signalling",
+      "source": "domain.quantum_information_theory",
+      "target": "bridge.local_operations_no_signalling",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "Quantum channel and Kraus formalisms make the distinction between conditioned branches and complete operations explicit.",
+      "references": [
+        {
+          "label": "D. Beckman et al. — Causal and localizable quantum operations",
+          "url": "https://arxiv.org/abs/quant-ph/0102043",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "M. A. Nielsen and I. L. Chuang — Quantum Computation and Quantum Information",
+          "url": "https://www.cambridge.org/highereducation/books/quantum-computation-and-quantum-information/01E10196D0A682A6AEFFEA52D53BE9AE",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.qinfo.cmi_recovery",
+      "source": "domain.quantum_information_theory",
+      "target": "bridge.conditional_mutual_information_recovery",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "Conditional mutual information quantifies approximate quantum Markov structure and controls recovery from a marginal.",
+      "references": [
+        {
+          "label": "O. Fawzi and R. Renner — Quantum conditional mutual information and approximate Markov chains",
+          "url": "https://arxiv.org/abs/1410.0664",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.probability.gaussian_markov_blanket",
+      "source": "domain.probability_stochastics",
+      "target": "bridge.gaussian_precision_markov_blanket",
+      "relation": "uses",
+      "confidence": "formal",
+      "mechanism": "Finite Gaussian conditional independence is encoded by zero blocks of the precision matrix rather than zero covariance blocks.",
+      "references": [
+        {
+          "label": "O. Kallenberg — Foundations of Modern Probability",
+          "url": "https://link.springer.com/book/10.1007/978-3-030-61871-1",
+          "type": "book",
+          "scope": "claim"
+        },
+        {
+          "label": "S. L. Lauritzen — Graphical Models",
+          "url": "https://global.oup.com/academic/product/graphical-models-9780198522195",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    }
+  ],
+  "graph_changed": false
+}

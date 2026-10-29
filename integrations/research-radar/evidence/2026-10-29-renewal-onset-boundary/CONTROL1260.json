@@ -1,0 +1,78 @@
+{
+  "utc": "2026-10-29T12:12:00.058697+00:00",
+  "confidence": "heuristic; exact symbolic identities and analytic argument supplied, not formal verification or independent review",
+  "general_symbolic_identities": {
+    "gap_telescoping": "0",
+    "mean_gap_telescoping": "0",
+    "stationary_balance": "0",
+    "stationary_telescoping": "0",
+    "truncated_onset_mean": "0"
+  },
+  "finite_controls": [
+    {
+      "cutoff": 1,
+      "gap_mass": "2/3",
+      "gap_first_moment": "2/3",
+      "residual_mass": "1/2"
+    },
+    {
+      "cutoff": 2,
+      "gap_mass": "5/6",
+      "gap_first_moment": "1",
+      "residual_mass": "2/3"
+    },
+    {
+      "cutoff": 3,
+      "gap_mass": "9/10",
+      "gap_first_moment": "6/5",
+      "residual_mass": "3/4"
+    },
+    {
+      "cutoff": 8,
+      "gap_mass": "44/45",
+      "gap_first_moment": "8/5",
+      "residual_mass": "8/9"
+    },
+    {
+      "cutoff": 32,
+      "gap_mass": "560/561",
+      "gap_first_moment": "32/17",
+      "residual_mass": "32/33"
+    },
+    {
+      "cutoff": 128,
+      "gap_mass": "8384/8385",
+      "gap_first_moment": "128/65",
+      "residual_mass": "128/129"
+    }
+  ],
+  "channel_convention": "Superoperator row-vectorization basis (00,01,10,11); output-first unnormalized Choi J(Id)=vec(I)vec(I)^T, J(reset)=I4/2",
+  "choi_ranks": {
+    "identity": 1,
+    "complete_depolarizing": 4
+  },
+  "stationary_law": "pi(r)=1/[r(r+1)], r>=1",
+  "gap_law": "P(G=k)=4/[k(k+1)(k+2)], E G=2",
+  "onset_convention": "Length n includes local channels at times0,...,n-1; channel at time0 reset iff R0=1. First and eventual full-Choi onset N=R0.",
+  "tail": "P(N>n)=1/(n+1), n>=0",
+  "mean_onset": "infinite, by harmonic sum; N finite almost surely",
+  "reset_frequency": "pi(1)=1/2 under stationary ergodic path law",
+  "uniform_limit": "I2/2, smallest eigenvalue1/2; product exactly reset once n>=N",
+  "exponential_prefactor": "For any fixed q in(0,1), ||Phi^(n)-Delta||_(1->1)<=2*q^(-N)*q^n. Prefactor finite almost surely; its mean is infinite. This is a construction-specific bound, not an arbitrary-rate assertion for the imported theorem.",
+  "prior_art": {
+    "url": "https://galton.uchicago.edu/~lalley/Courses/313/RenewalTheory.pdf",
+    "transport_sha256": "5f860646b810d7cf50f32403dec1089048ff379fb510a0dcc352f15d395e97a2",
+    "bytes": 143611,
+    "reading": "Selected Section1.4/1.7 stationary countdown equations and Section2 Example4 residual distribution read through web; no full proof audit. Standard renewal mechanism, no novelty claim.",
+    "PDF_redistributed": false
+  },
+  "not_claimed": [
+    "new manuscript",
+    "new model grade",
+    "full imported theorem proof audit",
+    "Lean theorem",
+    "new renewal theorem",
+    "global novelty",
+    "universal quantitative bound"
+  ]
+}
