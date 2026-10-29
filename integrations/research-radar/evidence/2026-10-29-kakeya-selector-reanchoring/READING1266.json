@@ -1,0 +1,54 @@
+{
+  "utc": "2026-10-29T12:58:26.780Z",
+  "confidence": "literature; selected local proof arguments manually audited, no kernel replay or new formal result",
+  "sources": [
+    {
+      "repository": "M32026/3d-sticky-kakeya",
+      "commit": "42f739b484fd055e0aa29601c35677ad996f2ef2",
+      "path": "MyLeanRepo/Kakeya/Assouad/WZ1/SimultaneousDegreeRegularization/WeightBinning.lean",
+      "url": "https://raw.githubusercontent.com/M32026/3d-sticky-kakeya/42f739b484fd055e0aa29601c35677ad996f2ef2/MyLeanRepo/Kakeya/Assouad/WZ1/SimultaneousDegreeRegularization/WeightBinning.lean",
+      "sha256": "ea505d4794228f59a41219db3baf6aec7d7fc37d4a45010e15fc4b550b7c8512",
+      "bytes": 13944,
+      "lines": 318,
+      "reading": "Complete statement23-31 and local argument32-315 read"
+    },
+    {
+      "repository": "M32026/3d-sticky-kakeya",
+      "commit": "42f739b484fd055e0aa29601c35677ad996f2ef2",
+      "path": "MyLeanRepo/Kakeya/Assouad/WZ1/SimultaneousDegreeRegularization/TCore.lean",
+      "url": "https://raw.githubusercontent.com/M32026/3d-sticky-kakeya/42f739b484fd055e0aa29601c35677ad996f2ef2/MyLeanRepo/Kakeya/Assouad/WZ1/SimultaneousDegreeRegularization/TCore.lean",
+      "sha256": "4ef1244c3e8bec276437b25d28e6d8711a9c0316a4c5b3902bc0371ba447957f",
+      "bytes": 9163,
+      "lines": 204,
+      "reading": "IsTCore/capacity18-29, capacity_decrease46-100 and complete t_core_existence106-201 read"
+    },
+    {
+      "repository": "M32026/3d-sticky-kakeya",
+      "commit": "42f739b484fd055e0aa29601c35677ad996f2ef2",
+      "path": "MyLeanRepo/Kakeya/Assouad/WZ1/SimultaneousDegreeRegularization/HeavyColorClass.lean",
+      "url": "https://raw.githubusercontent.com/M32026/3d-sticky-kakeya/42f739b484fd055e0aa29601c35677ad996f2ef2/MyLeanRepo/Kakeya/Assouad/WZ1/SimultaneousDegreeRegularization/HeavyColorClass.lean",
+      "sha256": "b23c8ad6ec1973761872d44af1dc3702056b99ad8343c39a1c34867f72723343",
+      "bytes": 2383,
+      "lines": 78,
+      "reading": "Complete exists_heavy_color_class20-75 read"
+    }
+  ],
+  "mechanism": "HeavyColorClass partitions a finite weighted family by colors and selects a maximum-mass class. WeightBinning discards weights below total/(2n), losing at most half the finite positive total; every retained weight lies between threshold and total, hence O(log n) dyadic bands suffice independently of original weight spread. One maximal-mass band retains at least total/(2L). TCore deletes whole deficient fibers from a single current edge set until all nonempty fibers meet their coordinate thresholds.",
+  "proof_checks": "WeightBinning explicitly proves n>0, finite nonzero2n, positive finite threshold, total/2 finite for additive cancellation, complete/disjoint half-open bands and positive selected-band level. TCore proves other-coordinate images only shrink, the selected-coordinate image loses exactly one parent, capacity drops by at leastTk, and each nonempty bad-fiber deletion strictly decreases edge cardinality. Removed-edge sets are disjointly charged through strong induction. HeavyColorClass uses no division and allows infinite color mass.",
+  "hypotheses_retained": [
+    "WeightBinning: finite index type, total equal to weight sum,0<total<infinity",
+    "HeavyColorClass: finite supplied index family and positive finite color count q",
+    "TCore: finite edge set, finitely many coordinate maps, decidable equality, natural thresholds; no positive threshold assumption needed",
+    "full deletion of the actual current deficient fiber, not arbitrary subset deletion",
+    "capacity and all images evaluated on the same evolving edge set"
+  ],
+  "hypothesis_reduction_audit": "No extra bounded original weight-spread assumption is needed in the inspected selector: truncation gives a bounded retained spread at explicit mass cost. The finite regularizer handles infinite weights separately before calling WeightBinning. TCore termination and charging do not require probabilistic independence or sequential per-coordinate witnesses.",
+  "dictionary": "Edges are localized fine indices; parent maps are the finite old/new parent systems. A color/degree vector packages all coordinates at once. Natural capacity is a charging potential; it is not a geometric measure, volume lower bound or spectral gap.",
+  "limits": "No source main Kakeya theorem certification, imported geometric/coloring/parent-preparation audit, compiled upstream package, computed axiom closure or new mathematical novelty. The TCore theorem asserts existence and a removal bound; its documentation uses maximal language but maximality is not an additional conclusion certified here. No score or independent reviewer identity is claimed.",
+  "formal_result": "No new Lean theorem produced. Local arguments were inspected in pinned source, not run through a fresh kernel build.",
+  "falsifier": "Failure of the truncation half-mass bound, half-open band coverage/disjointness, finite cancellation guards, strict cardinality decrease, exact selected-coordinate image loss or disjoint removed-edge charge invalidates the corresponding local proof. No such error found in these selected arguments.",
+  "next": "Close PR184 main CI, then batch selector reading1265 and primitive audit1266 into the existing Kakeya evidence. Proceed to the genuinely geometric parent-preparation/coaxial/John bridge, whose assumptions remain unaudited; no standalone paper or repeated score from the finite combinatorial lemmas.",
+  "source_bodies_retained": false,
+  "new_manuscript": false,
+  "new_assessment": false
+}

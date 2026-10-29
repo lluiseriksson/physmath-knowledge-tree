@@ -1,0 +1,35 @@
+{
+  "utc": "2026-10-29T13:03:03.851Z",
+  "confidence": "literature; complete local source argument manually read, imported geometric lemmas not fully audited",
+  "source": {
+    "repository": "M32026/3d-sticky-kakeya",
+    "commit": "42f739b484fd055e0aa29601c35677ad996f2ef2",
+    "path": "MyLeanRepo/Kakeya/Assouad/PureWZ2/GWZConversion/AnchoredParentContainment.lean",
+    "url": "https://raw.githubusercontent.com/M32026/3d-sticky-kakeya/42f739b484fd055e0aa29601c35677ad996f2ef2/MyLeanRepo/Kakeya/Assouad/PureWZ2/GWZConversion/AnchoredParentContainment.lean",
+    "sha256": "932a597e1286598b3525242afb369b96df3e2925eb2403d30056c0ff3769e13a",
+    "bytes": 32205,
+    "lines": 927,
+    "reading": "Definitions24-53, projection helpers55-245, clamp247-290, complete reanchored_axis_distance292-786 and complete parent-containment792-922 read"
+  },
+  "mechanism": "Reanchor both unit segments at the orthogonal projections of one common localization center onto their supporting lines. This changes longitudinal placement along each original axis, while retaining its direction. Complete source containment in an A-dilated parent gives projective angular control. The common anchor bounds axial displacement; clamping a target coordinate to[-1/2,1/2] handles finite segment endpoints.",
+  "hypotheses": [
+    "0<delta<=rho",
+    "A>=1",
+    "rho<=1/(200A)",
+    "0<=localization radius<=1/4",
+    "a source-carrier point in the common localization ball",
+    "complete source carrier contained in the centered A-dilated parent carrier",
+    "unit directions and three-dimensional tube model"
+  ],
+  "local_budget": "Source reanchored midpoint is within radius+delta of the common center. Imported projective direction bounds give transverse direction errors<=2A rho. Midpoint longitudinal difference<=2A rho and transverse difference<=3A rho. A source-axis point is compared with a clamped parent point at cost3A rho+(1/2)*2A rho+2A rho=6A rho. Add source thickness delta<=rho to fit inside parent radius8A rho. Final proof uses compact segment closest points and triangle inequality; no endpoint is left outside the finite target segment.",
+  "dictionary": "Reanchoring preserves direction, supporting axis and individual unit-segment length, but changes carrier placement. The parent radius becomes8A rho. Ordinary full-fiber containment means containment in this actual non-dilated carrier; it is not a claim that the original carrier stayed fixed, or that the theorem asserts strict set inclusion. Shade-union monotonicity later comes from subshading provenance, not equality of unions of shifted tube bodies.",
+  "orientation_boundary": "The proof uses projective perpendicular direction errors, not the oriented norm||u-v||. For exact u=(1,0,0),v=(-1,0,0), both perpendicular projection errors vanish while||u-v||=2. Substituting an oriented-direction estimate without an additional sign choice is invalid; this is a dictionary guard, not a counterexample to the source.",
+  "graph_supported_inference": "The common-center hypothesis and actual reanchoring are essential inputs to this inspected repair mechanism. One cannot transfer the conclusion to arbitrary unchanged carriers or discard the dilation/scale/radius hypotheses. The paid parent-volume factor in the later John budget is not established as1 by this containment argument.",
+  "limits": "Imported gwz_direction_constraint, pureWZ2_projective_parent_direction, general-dilation closest-point and reanchoring definitions still require separate selected proof audits. No compiled upstream package, computed axiom closure, global Kakeya certification, new mathematical novelty, independent model review or score. No historical false-theorem claim is inferred solely from a source comment.",
+  "falsifier": "Failure of the imported projective bounds under their actual hypotheses, common-center projection identity, clamp gap estimate, positive scale guards or addition of source thickness would invalidate the corresponding link. No local algebraic issue found in the inspected argument. Cases violating these hypotheses do not refute the source.",
+  "formal_result": "No new Lean result produced or confidence promoted to formal; this is attributed source-code proof reading.",
+  "next": "Batch selector/primitive reading1265-1266 and this geometry audit into the existing Kakeya evidence. Next audit actual gwz_direction_constraint/projective counterpart and parent preparation/John volume interface at pinned42f739b/a26427e. Preserve the distinction between projected directions, shifted body carriers and subshading union; no standalone minor paper or inherited score.",
+  "source_body_redistributed": false,
+  "new_manuscript": false,
+  "new_assessment": false
+}
