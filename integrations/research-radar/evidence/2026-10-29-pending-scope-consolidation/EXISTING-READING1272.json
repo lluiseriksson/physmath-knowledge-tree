@@ -1,0 +1,57 @@
+{
+  "observed_at": "2026-10-29T13:29:42.417Z",
+  "confidence": "literature: selected local source arguments; not full kernel replay, computed axiom closure, novel result or assessment",
+  "pin": "42f739b484fd055e0aa29601c35677ad996f2ef2",
+  "sources": [
+    {
+      "path": "MyLeanRepo/Kakeya/Assouad/PropStickyDefinition2_12NestedJohnCWATransport.lean",
+      "sha256": "83e2d64c343d24583767724e5e70d20fa70e80e3a950e761a81487d0ce8c3623",
+      "lines": 515,
+      "coverage": "12–104 coordinate-change definitions and affine transport local proof;138–180 complete27-volume proof and wrapper.106–136 statement/adapter inspected,191–515 not audited."
+    },
+    {
+      "path": "MyLeanRepo/Kakeya/Assouad/PropStickyDefinition2_12RescalingBridge.lean",
+      "sha256": "7aced8d19004b8d4f4f84b159eed4a006bb74c1dcee195decb89e112051e3235",
+      "lines": 644,
+      "coverage": "27–79 complete translation and affine image-volume local proofs.81–111 definitions/identity inspected; later bridge not audited."
+    },
+    {
+      "path": "MyLeanRepo/Kakeya/Geometry/OuterJohnEllipsoid.lean",
+      "sha256": "c86e8c5ac6167f5cbfe7734f5624578cefc3148db3f2ab9283976cadd6767d0f",
+      "lines": 82,
+      "coverage": "38–40 general inclusion wrapper; imports/provenance inspected, uniqueness/symmetric proof not claimed audited."
+    },
+    {
+      "path": "MyLeanRepo/Kakeya/Geometry/JohnEllipsoid/GeneralInclusionMain.lean",
+      "sha256": "795920a9e85dcedd3a286334b96948a942c0cff65402492269756a555fb97e8b",
+      "lines": 232,
+      "coverage": "21–229 complete local general-inclusion main argument read, with imported existence, augmented FritzJohn and inclusion lemmas retained as dependencies."
+    }
+  ],
+  "locator_only": [
+    {
+      "path": "MyLeanRepo/Kakeya/Assouad/PropStickyDefinition2_12RescalingJacobian.lean",
+      "sha256": "7bccd305f26e27f3de30e2b937b1edd05aca8eea1d540f3b793d09a20a0d6239",
+      "lines": 252,
+      "scope": "Inspected beginning as locator, not the affine-volume theorem location. No full determinant-lower-bound proof claim."
+    }
+  ],
+  "mechanism": [
+    "27-volume follows from the actual outer John ellipsoid E, its center and(1/3)-homothetic inclusion inK; exact homothety volume givesvolume(E)/27<=volume(K), and multiplication by27 yields the bound. No division by the body volume or extra measurability hypothesis is inserted.",
+    "The affine image-volume identity decomposes the affine equivalence into its continuous linear part plus translation. Translation invariance and mathlib addHaar_image_continuousLinearMap give the exact absolute determinant for arbitrary sets; the target-set volume remains present.",
+    "GeneralInclusionMain normalizes a volume-minimizing outer ellipsoid to the unit ball, proves the transformed set convex/compact with nonempty interior, and transfers volume minimality through positive determinant cancellation. Imported augmented FritzJohn contact data and general inclusion yield the1/n ball inclusion, which is mapped back. n=0 is handled separately with the subsingleton/nonempty-body case.",
+    "The inspected dependency is an ellipsoid theorem, not the separate Numina weak circumscribed-box theorem. An upstream extension commit is mentioned by the wrapper comment, but the audited bytes are the nested42f739b source; the provenance comment is not a second verified dependency pin."
+  ],
+  "hypotheses": [
+    "IsConvexBody includes convexity, compactness and nonempty interior.",
+    "Affine transport requires a genuine affine equivalence, exact index equivalence, actual carrier containment and a supplied inverse-volume bound. The81million constant adapter alone does not prove that bound.",
+    "The normalized minimality proof uses nonzero determinant of a linear equivalence before cancellation."
+  ],
+  "limits": [
+    "Existence, augmented FritzJohn/contact decomposition, general inclusion and mathlib measure lemmas remain transitive dependencies; their complete proofs/kernel axioms have not been audited here.",
+    "These are attributed classical geometric mechanisms, not a new Kakeya theorem, new paper, grade or full upstream certification."
+  ],
+  "hypothesis_reduction": "The local imported27-volume and affine-image steps now have explicit source mechanisms; this does not eliminate the geometric inputs that produce Frostman or establish the complete sticky/Frostman scale conversion.",
+  "falsifier": "Reject transfer wrappers that merely assume inverse_volume, suppress target-set volume, identify weak-box and ellipsoid statements, or treat provenance comments as verified external commits.",
+  "next": "First close PR186 exact-head CI and normal merge, then verify13 merged files and main CI/Pages. Batch this selected dependency clarification into the existing candidate only if needed; stop recursively enumerating classical imports absent a concrete unresolved estimate or mismatch. No standalone paper or review."
+}

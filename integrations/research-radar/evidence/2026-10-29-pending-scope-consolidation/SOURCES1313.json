@@ -1,0 +1,113 @@
+{
+  "scope": "Directed primary perimeter, not exhaustive; known local smoothing deduplicated; bodies discarded; no AIRR statistics or publication novelty from indexes",
+  "sources": [
+    {
+      "source": "openai",
+      "url": "https://github.com/openai/math",
+      "status": 200,
+      "bytes": 236584,
+      "sha256": "533788640f206ae25a94b8e2de10a2c83f6e9ad67c52809cc26660dafc14d8f4",
+      "observed_at": "2026-10-29T18:08:21.716Z",
+      "reading": "inventory only; no new abstract, statement or proof audit"
+    },
+    {
+      "source": "anthropic",
+      "url": "https://www.anthropic.com/research",
+      "status": 200,
+      "bytes": 413250,
+      "sha256": "75adbef2877e4200e2dfb5e49a1c1d3582951a188f7664492ef0a586691e1632",
+      "observed_at": "2026-10-29T18:08:21.318Z",
+      "reading": "inventory only; no new abstract, statement or proof audit"
+    },
+    {
+      "source": "deepmind",
+      "url": "https://github.com/google-deepmind/formal-conjectures",
+      "status": 200,
+      "bytes": 304988,
+      "sha256": "ae6cb330c7324d4f4ead4bc7ee3842bf48a5550f0a68301d6ae48776e340bc4b",
+      "observed_at": "2026-10-29T18:08:21.844Z",
+      "reading": "inventory only; no new abstract, statement or proof audit"
+    },
+    {
+      "source": "microsoft",
+      "url": "https://www.microsoft.com/en-us/research/research-area/computational-sciences-mathematics/",
+      "status": 200,
+      "bytes": 607731,
+      "sha256": "91b9eec53cc85ad9bfc58d7694db4e7b495a41e985f2e3d216a5360d3a7af673",
+      "observed_at": "2026-10-29T18:08:22.329Z",
+      "reading": "inventory only; no new abstract, statement or proof audit"
+    },
+    {
+      "source": "meta",
+      "url": "https://ai.meta.com/results/",
+      "status": 200,
+      "bytes": 304767,
+      "sha256": "ae9fb290f783cdd8ead94a3563c8ed49eb3d663facc2c8fb605ed6d415e9faf7",
+      "observed_at": "2026-10-29T18:08:25.289Z",
+      "reading": "inventory only; no new abstract, statement or proof audit"
+    },
+    {
+      "source": "numina",
+      "url": "https://github.com/project-numina",
+      "status": 200,
+      "bytes": 244376,
+      "sha256": "e7b59a896c8de9e341d1c8c470cbc56231cb786854524393f067d382ccd9aabd",
+      "observed_at": "2026-10-29T18:08:21.862Z",
+      "reading": "inventory only; no new abstract, statement or proof audit"
+    },
+    {
+      "source": "bytedance-nankai",
+      "url": "https://github.com/M32026/3d-sticky-kakeya",
+      "status": 200,
+      "bytes": 225588,
+      "sha256": "848095e8ed5256520a00a593cafd9087d74d241daa2af1446eb0d09cc1b1f443",
+      "observed_at": "2026-10-29T18:08:21.865Z",
+      "reading": "inventory only; no new abstract, statement or proof audit"
+    },
+    {
+      "source": "eth-sri",
+      "url": "https://www.sri.inf.ethz.ch/research/mathllm",
+      "status": 200,
+      "bytes": 32567,
+      "sha256": "dd4f2c486ef7f3dc3f3f1cfd861bd669cfc163f665d4b1c38ae6af08184c7a2a",
+      "observed_at": "2026-10-29T18:08:21.431Z",
+      "reading": "inventory only; no new abstract, statement or proof audit"
+    },
+    {
+      "source": "harmonic",
+      "url": "https://www.harmonic.fun/news/",
+      "status": 200,
+      "bytes": 110404,
+      "sha256": "62fbc07745a764d876241c42bbd5879ea4b7aff788b1163cd7f9b671fe05d51d",
+      "observed_at": "2026-10-29T18:08:21.137Z",
+      "reading": "inventory only; no new abstract, statement or proof audit"
+    },
+    {
+      "source": "arxiv",
+      "url": "https://arxiv.org/list/math/new",
+      "status": 200,
+      "bytes": 1738130,
+      "sha256": "4b7a875de055255054a0c172bff500a369587c5e356a45c9e4fed312d2e6b64e",
+      "observed_at": "2026-10-29T18:08:21.783Z",
+      "reading": "inventory only; no new abstract, statement or proof audit"
+    },
+    {
+      "source": "airr",
+      "url": "https://airr.science/catalog.json",
+      "status": 200,
+      "bytes": 1456595,
+      "sha256": "e321991f93b1a0c8f14c9a1445a716a8671cd7d2bdeb9361ce3ea7eee90a1116",
+      "observed_at": "2026-10-29T18:08:21.583Z",
+      "reading": "inventory only; no new abstract, statement or proof audit"
+    },
+    {
+      "source": "vixra",
+      "url": "https://www.ai.vixra.org/author/lluis_eriksson",
+      "status": 200,
+      "bytes": 70183,
+      "sha256": "7a5f950e1a001dd86ef8303c1104d2c3e27779603f577e21f226cf623347ca62",
+      "observed_at": "2026-10-29T18:08:22.078Z",
+      "reading": "inventory only; no new abstract, statement or proof audit"
+    }
+  ]
+}

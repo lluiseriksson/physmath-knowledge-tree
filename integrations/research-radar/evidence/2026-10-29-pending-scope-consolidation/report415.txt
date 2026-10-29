@@ -1,0 +1,47 @@
+AUDITORÍA415 — H UNIVERSAL E INVERSA PURA EN LOS SECTORESMUB
+Entrada24oct2026; cierre25oct2026(Europe/Stockholm). Sin nota ni prioridad.
+
+DICTAMEN
+PASS matemático de la reducción deH para todo operador lógico complejo, de la inversa para entradas puras unitarias y de sus consecuencias espectrales. No se encontró un falsificador de esas afirmaciones. La comparación universal firmadaB, su núcleo y un gap uniforme continúan NO PROBADOS. Se confirma una errata bibliográfica separada:03Jul2023, no23Jul2023. El original414 permanece intacto.
+
+ENTRADA Y PROCEDENCIA
+PaqueteD2026-10-24_werner414-universal-h-reduction:10archivos contando el manifiesto.
+ManifestSHA256:4e5a7cb7d0174bffc5a05e4c3723959268e6cb5fa44204df8afd94984dcb8b99.
+Nota414SHA256:6fe58b7e4e76349e8e56234a5746485b7c4c31fd0add673bb88db1af307310be.
+Se congelaron todos los bytes eninputs414 y se comparan nuevamente al sellar. Los scripts412/413 se leyeron pero no se ejecutaron ni importaron. El archivoverify414-audit410.json se preservó opaco, sin leerlo como dictamen o premisa. No se leyeron notas/calificaciones ajenas ni se buscó una nota objetivo.
+
+La revisión reutiliza contexto410 y filesystem/entorno compartidos. La reconstrucción central es propia: índices de traza parcial y paresFraction enQ(omega), en vez del cálculoSymPy de productosKronecker del productor. SymPy sólo parsea los coeficientes impresos del productor al final para compararlos con la reconstrucción ya pasada. No se afirma independencia humana o deinfraestructura. Astraxhigh solicitado, identidad/esfuerzo efectivos del runtime no atestiguados. No agentes, publicación, manuscrito nuevo oESTADO modificado.
+
+VERIFICACIÓN UNIVERSAL
+Se comprueba que los nueveT_cp/sqrt3 son isometrías con imágenes mutuamente ortogonales que cubren27dimensiones. Sus etiquetas de estabilizador tienen el signo declarado: omega^c paraZ^tensor3 yomega^p paraX^tensor3. El bloque00 coincide con el código.
+
+Se reconstruyeH(E_kl) para las NUEVE unidades matriciales lógicas mediante los ocho términos de traza parcial e identidad reinsertada. Se comprueban729coeficientes de bloque y81identidades completas de invariancia. Al ser identidades de aplicaciones complejamente lineales en una base deM3(C), se concluye para TODOX complejo, no sólo matricesHermíticas o estadosmuestreados. Las barras de los embeddings y los factores1/3 de normalización están incluidos.
+
+La tablaMUB coincide con413 en todos los sectores. Una fórmula compacta es: si c=0,p!=0, baseZ sin permutar resultados; si c!=0, baseX_W Z^(p/c) y el resultado de entrada para la etiqueta de salidak es k+p módulo3. El bloque00 esTr(X)I/2+X/8. Deben mantenerse las permutaciones; los mapas no son todos la dephasing sin reetiquetado.
+
+Los proyectores se construyen desde autovectoresWeyl explícitos. Se verifican rango1, ortogonalidad, completitud, relacionesMUB ysumP tensorP=I+SWAP exactamente. Estas bases y herramientas son estándar y no se presentan como una invención.
+
+INVERSA, ESPECTRO Y CONSTANTES
+Para X=psi psi* unitario, el bloque00 tiene inversa2I-(2/5)X; los demás tienen inversasum_k4P_cp,k/(2+p_input,k), con denominadoresentre2y3. La inversa física incluye todos los embeddingsQ_cp. La fórmula00 requierepureza; no se usa para unX arbitrario.
+
+Espectrocompleto:1/2 dosveces,5/8 unavez, y(2+p_b,k)/4 dosveces por cada uno de los12resultadosMUB. Las coincidencias suman multiplicidades. Son27autovalores. De ahíI/2<=H<=3I/4 yTrH²=585/64. Se verifica tambiénTrH=125/8 como control de normalización. La cota superior tiene además una prueba elemental por los marginalesI3/3 y los espectrosSchmidt; no depende de un supuesto nuevo principioMUB.
+
+Cuatro controles puros exactos, dos de ellos complejos, verificanH H^-1=I en las27dimensiones. La validez universal proviene deX²=X y la resolución de proyectores, no de esos cuatro controles.
+
+CONJUGACIÓN
+EnB se requiereoverline(H)^-1=overline(H^-1), incluyendo la conjugación de las bases de sector. Para psi=(1,omega,0)/sqrt2, usarH^-1 en lugar deoverline(H)^-1 da el residual físico
+ [overline(H)H^-1-I]_(000,000)=1/120+omega/240≠0.
+La identidad correctamente conjugada pasa exactamente. Esto falsifica ese atajo, no la nota414, que lo advierte.
+
+QUÉ CAMINO ABRE Y QUÉ NO DEMUESTRA
+Las fórmulas proporcionan un denominador común positivoD=producto_(b,k)(2+p_b,k)>=2^12. MultiplicarA±B por5D convierte el problema en positividad de matricesHermíticas polinómicas sobre las seis coordenadas reales depsi con||psi||²=1. Es una reducción algebraica concreta de la obligación pendiente, sin certificado de positividad, eliminación de cuantificadores o eficiencia demostrada.
+
+No es válido pasar la cotaH^-1<=2I a un orden arbitrario después de la transposición parcial. No se deducen la comparación universalB, núcleo/gap, positividadWerner global, filtradoSLOCC permitido, operacionalidad o novedad.
+
+FUENTES Y ERRATA
+Se consultó Jaffali–Holweck–Oeding2307.00970v1,§2.1 yEq11–12: aparece la misma baseCGL como forma semisimple compleja bajoSLOCC, con atribución aNurmiev. No es una afirmación de equivalenciaLU universal. El encabezado primario fecha la versión03Jul2023 y confirma el aviso de errata conservado enbibliographic-notice415.txt. No hay cambio matemático necesario.
+
+De Briand–Luque–Thibon–Verstraetequant-ph/0306122v4 sólo se revisó abstract/registrobibliográfico; no la prueba completa de clasificación. Se guardan fuente y alcance. No se hizo un barrido de prioridad. La notaoriginal414 y la metadata de sus accesosfallidos se preservan; esos fallos del productor no se atribuyen a este revisor.
+
+FALLOS, ARCHIVO Y LÍMITES
+La primera y única ejecución propia deverify415.py pasó completa; no hubo excepción o testfallido que reparar. No se eliminaron datos. Los controles, matricesbase, mapasMUB yproyectores quedan legibles enJSON con racionales exactos. proof415.txt desarrolla la demostración; verdict415.json separa los cuantificadores;manifest415.json yreceipt415.json verifican las copiasC/D y la integridadfinal de414. La verificación es aritmética exacta asistida por ordenador, noLean ni revisión humana.

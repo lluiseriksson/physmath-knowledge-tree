@@ -1,0 +1,83 @@
+{
+  "audit": "415",
+  "closed_local_date": "2026-10-25",
+  "input_date": "2026-10-24",
+  "status": "PASS_UNIVERSAL_H_AND_PURE_UNIT_INVERSE__B_SIGNED_COMPARISON_UNPROVED",
+  "input_manifest_sha256": "4e5a7cb7d0174bffc5a05e4c3723959268e6cb5fa44204df8afd94984dcb8b99",
+  "input_text_sha256": "6fe58b7e4e76349e8e56234a5746485b7c4c31fd0add673bb88db1af307310be",
+  "input_count": 10,
+  "claims": {
+    "H_sector_map_for_every_complex_logical_X": "PASS",
+    "nine_sectors_full_27dimensional_coverage": "PASS",
+    "MUB_axes_and_all_input_label_permutations": "PASS",
+    "pure_unit_inverse_including_physical_embeddings": "PASS",
+    "full_pure_unit_27eigenvalue_spectrum": "PASS",
+    "TrH_squared_pure_unit": "585/64",
+    "H_bounds_pure_unit": ["1/2", "3/4"],
+    "conjugate_H_inverse_required_in_B": "PASS_AND_EXACT_WRONG_SHORTCUT_DETECTED"
+  },
+  "quantifiers": {
+    "linear_map_identity": "Every complex3x3X, including non-Hermitian; verified on its nine complex matrix units",
+    "inverse_and_stated_spectrum": "X=psi psi*, ||psi||=1; code block inverse formula uses X^2=X",
+    "global_dimension": 27,
+    "arbitrary_X_positivity_or_invertibility_claimed": false
+  },
+  "checks": {
+    "implementation": "Independent partial-trace index expansion and Python Fraction pairs in Q(omega)",
+    "all_logical_matrix_units": 9,
+    "sector_invariance_identities": 81,
+    "block_coefficients_checked": 729,
+    "all_MUB_projector_relations": true,
+    "exact_two_design_I_plus_SWAP": true,
+    "pure_inverse_controls": 4,
+    "producer_code_executed_or_imported": false,
+    "SymPy_usage": "Only parsing frozen producer coefficient strings for comparison after own identities passed",
+    "formal_proof_assistant": false
+  },
+  "wrong_shortcut_control": {
+    "psi": "(1,omega,0)/sqrt2",
+    "wrong_residual": "[conjugate(H)*H^-1-I]_(000,000)=1/120+omega/240",
+    "correct_conjugated_inverse_residual": "0 matrix",
+    "is_failure_of_414": false
+  },
+  "bibliographic_correction": {
+    "original": "23Jul2023primary",
+    "correct": "03Jul2023primary",
+    "verified_primary_version": "arXiv2307.00970v1",
+    "original_unchanged": true,
+    "mathematical_effect": "none",
+    "separate_notice": "bibliographic-notice415.txt"
+  },
+  "remaining_obligations": [
+    "Signed co-Choi order -A<=B_(Vpsi)<=A for every arbitrary unit complex logicalpsi",
+    "Its exact kernel and a uniform nonunit spectral gap",
+    "Any unrestricted Werner endpoint/NPT result"
+  ],
+  "algebraic_path_not_a_proof": "Positive common denominator D=product(2+p_b,k)>=2^12 permits polynomial Hermitian inequalities5D(A±B) on the unit sphere; no positivity certificate or efficient algorithm supplied.",
+  "source_scope": {
+    "Jaffali_Holweck_Oeding": "2307.00970v1 section2.1,Eq11-12 and version date only; no complete classification proof audit",
+    "Briand_Luque_Thibon_Verstraete": "quant-ph0306122v4 abstract and bibliographic record only; full proof not read",
+    "CGL_and_MUB_novelty": "Not claimed; prior code, standard Weyl MUBs and known normal form acknowledged",
+    "priority_certified": false
+  },
+  "failures": {
+    "own_failed_runs": 0,
+    "mathematical_failure_in_audited_414_claims": false,
+    "producer_access_failures": "Preserved as producer metadata, not reenacted or attributed to auditor"
+  },
+  "provenance": {
+    "dependent_AI_audit": true,
+    "context410_reused": true,
+    "shared_filesystem_and_environment": true,
+    "runtime_requested": "Astra xhigh",
+    "runtime_attested": false,
+    "human_independence": false,
+    "other_auditor_verdicts_used": false,
+    "verify414_audit410_file": "Copied/hash-checked only, content not read as a premise",
+    "new_agents": false,
+    "scores": null,
+    "publication": false,
+    "ESTADO_or_originals_modified": false
+  },
+  "archive": "manifest415.json and receipt415.json certify payload hashes, final input integrity and C/D byte equality"
+}
