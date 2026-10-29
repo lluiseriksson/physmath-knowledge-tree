@@ -1,0 +1,24 @@
+{
+  "observed_at": "2026-10-29T13:58:49.669Z",
+  "candidate": "interpolation-semidefinite-boundary",
+  "confidence": "Own elementary analytical reduction of the recorded Pick quartic; not independent review, kernel proof or novelty claim",
+  "assumptions": "Fix0<r<1,kappa=(1+r^2)/(1-r^2). Allowc>0 to vary; putp=x-c,y=Imf(z).",
+  "definitions": {
+    "S": "p^2+y^2+1",
+    "H": "2*kappa*y-S",
+    "B": "S^2-4*y^2=(p^2+(y-1)^2)*(p^2+(y+1)^2)",
+    "D": "H>0, equivalentlyp^2+(y-kappa)^2<kappa^2-1",
+    "psi": "(-p+sqrt(p^2+B/H))/2"
+  },
+  "reduction": [
+    "Substitutionx=c+p gives the exact Pick quarticF=B-4*c*(c+p)*H. All data feasible withc>0 are exactly(p,y)inD andc>=psi(p,y), with the one zero-threshold pointp=0,y=1 allowingeveryc>0.",
+    "Dforcesy>0. B>=0 with equality only atp=0,y=1. Away fromthatpoint,B/H>0 impliespsi>max(0,-p), sox=c+p>0 is automatic; no wrong-sign branch is lost.",
+    "Atp=0,y=1,psi=0, and anyconstantf=c+i is feasible. The closed epigraph includesc=0 there, corresponding only toboundaryconstantf=i. The original openquadrant family excludes thatvertex.",
+    "H=0 cannot hold at a feasible finitec: B>0 ontheboundaryofD forr>0. As(p,y)approachesthatboundary,psi diverges. No division byHzero or compactness of thefullunboundedbody is assumed.",
+    "The fullclosedbody is a convex epigraph in(c,p,y), because it is the closure of the convex analytic interpolation image after a linear coordinate change. Its only nonzero recession direction ispositive(1,0,0) in(c,p,y), equivalentlypositive(1,1,0) in(c,x,y): D is bounded, and adding a nonnegative realconstanttof preserves feasibility."
+  ],
+  "two_node_objective": "If the residue functional isLambda(f)=gamma*(f(z)-f(0)) (two simple value nodes andLambda(1)=0), thenJ=Im(gamma)*p+Re(gamma)*(y-1)-c. Since the coefficient ofc is-1, eliminatec by takingpsi; the threshold becomes sup_D[Im(gamma)*p+Re(gamma)*(y-1)-psi]. At the zero-threshold vertex this is a supremum approached byc downarrow0, not necessarily an admissible maximizer. This does not assert that every profile has onlythese two value nodes.",
+  "hypothesis_reduction": "The joint variablec two-node membership problem has an explicit scalar epigraph formula and the normalized variablec can be eliminated from the stated two-residue objective. This is not a jointly affine semidefinite lift or a higher-jet formula.",
+  "falsifier": "Reject any extension toH=0 by dividingbyH, any claimthat projectionD isclosed/compact, any finitec optimizer assertionatthec0vertex, or applying thetwo-residue reductionwhen additional jets/nodes occur.",
+  "next": "Validate exact polynomial identity and rational threshold/interior/exterior/Hzero controls. Batch with a later substantive existing-candidate update, not a newminor paper. First close PR187 finalhead checks/normalmerge/verification."
+}

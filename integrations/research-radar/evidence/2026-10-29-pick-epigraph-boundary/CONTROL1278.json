@@ -1,0 +1,91 @@
+{
+  "scope": "Exact polynomial reduction and rational boundary guards, not a full SDP lift, novelty claim or independent assessment",
+  "polynomial_identities": 3,
+  "rows": [
+    {
+      "p": "1",
+      "y": "2",
+      "H": "5/2",
+      "B": "20",
+      "psi": "1",
+      "label": "upper_boundary_c1",
+      "tests": [
+        {
+          "c": "1/2",
+          "F": "25/2",
+          "feasible": false
+        },
+        {
+          "c": "1",
+          "F": "0",
+          "feasible": true
+        },
+        {
+          "c": "2",
+          "F": "-40",
+          "feasible": true
+        }
+      ]
+    },
+    {
+      "p": "-1/2",
+      "y": "1/2",
+      "H": "5/8",
+      "B": "5/4",
+      "psi": "1",
+      "label": "lower_boundary_c1",
+      "tests": [
+        {
+          "c": "1/2",
+          "F": "5/4",
+          "feasible": false
+        },
+        {
+          "c": "1",
+          "F": "0",
+          "feasible": true
+        },
+        {
+          "c": "2",
+          "F": "-25/4",
+          "feasible": true
+        }
+      ]
+    },
+    {
+      "p": "0",
+      "y": "1",
+      "H": "9/4",
+      "B": "0",
+      "psi": "0",
+      "label": "constant_vertex",
+      "tests": [
+        {
+          "c": "1/2",
+          "F": "-9/4",
+          "feasible": true
+        },
+        {
+          "c": "1",
+          "F": "-9",
+          "feasible": true
+        },
+        {
+          "c": "2",
+          "F": "-36",
+          "feasible": true
+        }
+      ]
+    }
+  ],
+  "H_zero_guard": {
+    "p": "0",
+    "y": "4",
+    "r": "3/5",
+    "H": "0",
+    "B": "225",
+    "finite_c_feasible": false
+  },
+  "r_zero": "Excluded from division formula and treated as colliding value constraints in1275/1276",
+  "full_variable_c_SDP_lift": false
+}

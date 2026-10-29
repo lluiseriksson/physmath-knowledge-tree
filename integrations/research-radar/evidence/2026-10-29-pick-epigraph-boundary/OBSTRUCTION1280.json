@@ -1,0 +1,34 @@
+{
+  "observed_at": "2026-10-29T14:04:37.253Z",
+  "candidate": "interpolation-semidefinite-boundary",
+  "confidence": "Own elementary analytical obstruction using the classical necessary real-zero property of a definite affine pencil; unreviewed and not a kernel formalization",
+  "scope": "Rules out an exact direct affine LMI with NO auxiliary variables, of any finite size, already in thec0=1,r=3/5 two-value slice. Does not rule out a spectrahedral shadow; an explicit lift is already recorded1275–1277.",
+  "set": "K={(x,y):x>0,y>0,F(x,y)<=0}, F=(x^2+y^2)^2+4-17*x*y. Point(1,1)is interiorF=-9; point(2,2)is a nonsingular boundary pointF=0,gradF=(30,30).",
+  "irreducibility_argument": [
+    "F is irreducible overR. Its homogeneousleadingpart is(x^2+y^2)^2, whose only nonconstant irreducible realfactor isx^2+y^2; a real linear or cubic-linear factorization is therefore impossible.",
+    "Any real quadratic factorization, after scaling, must be(s+L+C)(s-L+D), wheres=x^2+y^2,L=l*x+m*y; cancellationofcubictermsforcesoppositelinearparts. ConstanttermgivesCD=4 andlineartermgives(D-C)L=0.",
+    "IfL=0, thequadraticpartis(C+D)s andcannotbe-17xy. OtherwiseD=C,soC=+/-2. Coefficients ofx^2,y^2 force l^2=m^2=2C. C=-2is impossible; C=2giveslm=+/-4 andxycoefficient-2lm=+/-8, never-17. Hence nofactorization."
+  ],
+  "pencil_argument": [
+    "AssumeK={L0+xLx+yLy>=0}. SinceK has interior, compress away the common kernel to obtain a positive definite pencil at(1,1). Tojustifythis: a vector in thekernelat aninteriorpoint liesinthekernelofboth nearbypositiveandnegative perturbations, hence ofallcoefficientmatrices.",
+    "The nonzero determinant polynomialq vanishes on the realboundaryarc near(2,2). Irreducibility andthe nonsingulararc forceF todivideq: otherwise the two realplanealgebraiccurves have only finitelymanycommonpoints (standard resultant/common-factor argument).",
+    "Restricty=1. A definiteaffinepencil alongtheline through(1,1) has only realdeterminantzeros, by diagonalizing L(1,1)^(-1/2)LxL(1,1)^(-1/2). ButF(x,1)=P(x)=x^4+2x^2-17x+5 dividesq(x,1).",
+    "P has preciselytworealroots: Psecond=12x^2+4>0, hencePprime isstrictlyincreasing withonezero; P(0)=5,P(1)=-9,P(3)=53. Strictconvexity givesone crossingoneachside oftheminimum andnootherrealroots. The remainingtwoquarticroots are nonreal. Contradiction."
+  ],
+  "consequence": "The full variablec body cannot itself be a direct spectrahedron either, since itsc=1 affine slice would beK. This eliminates only unlifted affine-pencil searches; a jointly affine lifted representation ofthefullbody remains open.",
+  "falsifier": "A claimed finite directpencil forK would contradict the analytic proof above and must be checked against the irreducible boundary/real-zero step. Do not infer absenceofanylift: the known fixedslice lift is an explicit counterexample to that inference.",
+  "limits": [
+    "This uses standard realalgebraic curve common-factor facts; no independent component review or Lean certificate is claimed.",
+    "No new manuscript, grade, graphconfidencepromotion or noveltyclaim. The realzero obstruction is classical; primary metadata/abstract is recorded separately."
+  ],
+  "next": "Exact-check Fvalues/gradient, quartic derivative coefficients andthefactorization coefficient constraints. Thenpreserve this defined-class obstruction with1278 epigraph foralater substantivebatch; do not create aminor standalonepaper.",
+  "general_fixed_parameter_extension": {
+    "assumptions": "Anyc0>0 and0<r<1; C=c0^2+1,kappa=(1+r^2)/(1-r^2),lambda=2*sqrt((c0^2-1)^2+4*c0^2*kappa^2).",
+    "gap": "lambda^2-4C^2=16*c0^2*(kappa^2-1)>0, solambda>2C.",
+    "rotated_boundary": "An orthogonal rotation diagonalizesQ and givesG(X,Y)=(X^2+Y^2)^2+C^2-lambda*X^2+lambda*Y^2; choose the componentX>0.",
+    "irreducibility": "Any quadratic factorization must be(s+L+D)(s-L+E). IfL=0 no anisotropicquadraticpart results. OtherwiseE=D=+/-C; matchingtheY^2coefficient forcesm^2=2D-lambda<0 forbothDchoices since lambda>2C. No realfactorization.",
+    "real_zero_failure": "At the interiorpoint(X,Y)=(sqrt(lambda/2),0), the vertical line restrictionisY^4+2*lambda*Y^2+C^2-lambda^2/4. Its constantisnegative, itis strictlyconvex, andits quarticroots compriseexactlytwo realandtwo nonrealroots. A nonsingularrealboundaryarc exists onY=0, so thesame determinant-divisibility argumentapplies.",
+    "conclusion": "Every distincttwo-node fixednormalization slice has no direct affine LMI ofanyfinite size. Consequentlyforanyfixed0<r<1 thefullvariablec body isnotadirectspectrahedron. Auxiliary-variable lifts remainallowed andthefixedslices alreadyhaveexplicitones.",
+    "degenerate_boundary": "r=0 gives a collidingvalueconstraint andisexcludedfromthisnonrepresentation argument."
+  }
+}

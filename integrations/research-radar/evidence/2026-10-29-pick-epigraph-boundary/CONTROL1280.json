@@ -1,0 +1,36 @@
+{
+  "scope": "Exact arithmetic checks supporting a separately written analytical irreducibility/real-zero argument. No independent review, formal kernel proof or obstruction to lifted SDP representation.",
+  "interior": {
+    "point": [
+      1,
+      1
+    ],
+    "F": -9
+  },
+  "nonsingular_boundary": {
+    "point": [
+      2,
+      2
+    ],
+    "F": 0,
+    "gradient": [
+      30,
+      30
+    ]
+  },
+  "line_y1_polynomial": "x^4+2*x^2-17*x+5",
+  "second_derivative": "12*x^2+4>0 for every realx",
+  "bracket_values": {
+    "0": 5,
+    "1": -9,
+    "3": 53
+  },
+  "root_count_basis": "Strict convexity plus positive/negative/positive brackets gives exactlytwo realroots; other two quarticroots nonreal. This is analytical,not sampling as proof.",
+  "quadratic_factor_possible_cross_coefficients": [
+    -8,
+    8
+  ],
+  "required_cross_coefficient": -17,
+  "direct_affine_LMI_without_auxiliaries": "excluded by analytical real-zero argument",
+  "lifted_affine_LMI": "not excluded; fixedslice has explicit lift1275/1277"
+}
