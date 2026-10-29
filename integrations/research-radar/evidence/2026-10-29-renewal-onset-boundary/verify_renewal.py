@@ -35,5 +35,5 @@ for initial in range(1,17):
         assert product==(I if length<initial else L)
 
 out={'symbolic_identities':{a:str(b) for a,b in identities.items()},'finite_truncations':finite,'choi_ranks':[Jid.rank(),Jreset.rank()],'countdown_cases':16,'network_required':False,'formal_proof':False}
-(C/'REPLAY1261.json').write_text(json.dumps(out,indent=2)+'\n',encoding='utf-8')
+(C/'REPLAY1261.json').write_text(json.dumps(out,indent=2)+'\n',encoding='utf-8',newline='\n')
 print('Exact symbolic, truncation, Choi and countdown controls passed; not a formal proof.')
