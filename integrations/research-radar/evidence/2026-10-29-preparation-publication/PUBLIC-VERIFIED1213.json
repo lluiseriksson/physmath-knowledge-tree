@@ -1,0 +1,35 @@
+{
+  "utc": "2026-10-29T04:39:00.033131+00:00",
+  "public_url": "https://airr.science/notes/ARR-2026-1PBZ1Q7T588FW9M1/versions/v1/#model-assessments",
+  "native_case": "SUB-D762F2FF53E5DC53",
+  "public_pdf_sha256": "65b320e9a3277ce6565ec3496acf3466f1d59313c1c3aafc016f573eec08bd71",
+  "public_pdf_bytes": 207797,
+  "full_original_report_sha256": "ac9794b0e35217253234874d6d1541d077ce9a1ad1406d1d973d0ce6ee1f81be",
+  "original_verdict_sha256": "55d3a33e2a9ae746633a72e3ab6d48b9ae37f31ef967a9cc8af339c1b0c45e12",
+  "original_source_bundle_sha256": "d45413b51c33ef2a76be5745ed54086fc7df55f348702f19972d7f6328e409bd",
+  "source_bundle_report_and_verdict_exact": true,
+  "citation_correction_separate_assets": true,
+  "original_release_assets_not_overwritten": true,
+  "timestamp": {
+    "id": "ARR-2026-1PBZ1Q7T588FW9M1",
+    "version": "v1",
+    "deposit_recorded_at": "2026-10-29T05:21:52+01:00",
+    "deposit_timestamp_basis": "first_repository_commit",
+    "deposit_commit": "7a1f67cf658cab56b82b0f65a62624261080e7ba",
+    "publication_state": "published",
+    "published_at": "2026-10-29T04:31:14Z",
+    "publication_timestamp_basis": "github_release",
+    "release_tag": "ARR-2026-1PBZ1Q7T588FW9M1-v1"
+  },
+  "scores": {
+    "overall": 3.5,
+    "technical": 8.5,
+    "importance": 3.0
+  },
+  "working_paper": true,
+  "editorial_acceptance": false,
+  "effective_review_identity_effort_independence": "unattested",
+  "publication_PR": 336,
+  "publication_merge": "bef2ad30660f2efd5d1964003681b9a0ad47b595",
+  "timestamp_PR": 337
+}

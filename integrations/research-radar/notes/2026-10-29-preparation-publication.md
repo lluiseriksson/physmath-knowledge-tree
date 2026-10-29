@@ -1,0 +1,35 @@
+# Preparation publication, its exact review, and remaining research boundary
+
+## Sourced facts: literature and recorded assessment
+
+The five-page [technical note](https://airr.science/notes/ARR-2026-1PBZ1Q7T588FW9M1/versions/v1/#model-assessments) is now a public Working paper, not admitted to the AIRR accepted collection. PDF SHA-256 `65b320e9a3277ce6565ec3496acf3466f1d59313c1c3aafc016f573eec08bd71` is the exact artifact assessed by REVIEW1211. Its single assessment gives overall3.5/10, technical8.5/10 and importance3.0/10, with minor revision and no material mathematical error found. Those are separate judgments, not a correctness probability or inherited score for the broader candidate.
+
+The [full original report](https://github.com/arr-research/arr-research.github.io/blob/cee19ac100fa31ae1e7c3c1d91802a79f1f8c515/papers/2026/10/1P/ARR-2026-1PBZ1Q7T588FW9M1/screening/REVIEW1211.txt) and [structured verdict](https://github.com/arr-research/arr-research.github.io/blob/cee19ac100fa31ae1e7c3c1d91802a79f1f8c515/papers/2026/10/1P/ARR-2026-1PBZ1Q7T588FW9M1/screening/verdict1211.json) preserve nonblocking O1 attribution, O2 the optional N-1 count refinement, O3 checker coverage/navigation and the raw newline mismatch, and O4 unresolved originality. The requested reviewer was GPT-6 Astra xhigh in a separate context; effective identity, effort, isolation and independence are unattested, with shared filesystem, parent authoring involvement and the PDF's favorable unscored-audit summary disclosed. The operator projection is the same judgment, not a second evaluation. Technical execution is appreciably stronger than demonstrated research importance; the grade is not a reason to hide a defensible modest note or invent a stronger contribution.
+
+The [prior map](2026-10-29-preparation-prior-map.md) remains applicable: measurement common-component formulas, CP replacement machinery and downstream complete contraction are prior results. The manuscript's modest dimension comparison has no certified worldwide priority. The exact PDF's pending-assessment paragraph is preparation-time history; the public context records the later full review. No old grade applies to the optional subsequent supplement.
+
+## Graph-supported inference: heuristic
+
+The retrieved incident subgraph around quantum information and probability is ten nodes/eight edges. It supplies context, not a proof. Canonical nodes, edges and confidence remain unchanged. Do not turn the published elementary certificate into an alleged general channel-mixing or entropy theorem.
+
+Mechanism retained: a d-dimensional contracting prefix controls oscillations of dual effects; the explicitly specified final measurable preparation makes positive effect remainders yield a positive Choi integral. Equal-reference conditions remain essential downstream. The whole observed instrument is part of the hypothesis.
+
+## New hypothesis: unreviewed joint dimension/cardinality supplement
+
+The referee's O2 yields b>=max(0,1-(N-1)r) for a finite N-outcome POVM. Combining it with the dimension estimate suggests the sharp restricted-family envelope max(0,1-(min(d,N)-1)r). A surjective classical input partition embeds an exclusion witness in larger input spaces; splitting identical preparation labels adjusts N while preserving the grouped channel. The full own derivation and440 exact Fraction calibrations are in the linked evidence directory. This is an unreviewed supplemental candidate, not a new scored manuscript or separate paper. Output dimension at least min(d,N) is available in this witness. Fixing a smaller output dimension is a different unresolved optimization problem.
+
+Preserved structure: square input/prefix dimension, CPTP, actual finite POVM/preparation, positive component, and allowed output dimension. Lost or unresolved: fixed-smaller-output sharpness, novelty, new operational applications, and arbitrary-instrument conclusions. Falsifiers are a violation of the N-1 inequality under these assumptions, an admissible lower-envelope counterexample, or earlier covering prior art; the latter eliminates a novelty claim even if the algebra is correct. A minimal formal target is the finite minimum/oscillation inequality and the stochastic exclusion column formula. No such Lean proof is claimed here.
+
+## Rejected shortcut: intrinsic entanglement breaking is insufficient
+
+Let Xi(rho)=rho00 |0><0|+rho11 |psi><psi|, where psi=(c,s), c²+s²=1 and0<s<1. This is itself an entanglement-breaking qubit channel with ordinary trace contraction exactly s: output distance is s times the diagonal probability difference, bounded by input trace distance and attained on basis inputs. Yet its positive CP common-component coefficient is zero. Any feasible positive W must be below both nonparallel rank-one output states, so its support lies in their zero intersection.
+
+Thus even arbitrarily small ordinary contraction plus entanglement breaking of the total channel cannot replace the specific factorization into a contracting prefix followed by a preparation channel. Choosing Psi=Xi would still require a terminal preparation map; choosing E=Xi and Psi=identity has prefix coefficient1, not s. This is an application of the already [published CQ support criterion](https://airr.science/papers/ARR-2026-564FZ70CSN83KACD/versions/v3/#model-assessments), not a new discovery. Thirty-two rational pure-output controls verify trace/determinant identities. Abandon the shortcut rather than write another paper from this elementary example.
+
+## Speculative payoff and formal boundary
+
+A stronger next contribution needs a real application or a genuinely sharper constrained theorem, for example a fixed-output-dimension envelope with full factorization constraints and a proved extremizer. Retain the dependence on d, N and available output k until each is extracted. The two-pure-output example blocks a naive ordinary-contraction-only argument. No current result solves that constrained problem or establishes significance beyond this modest note.
+
+Formal result: none added. Own rational calibrations are finite checks, not a formal proof certificate. Dependency pins in current inventory are availability/version observations, not upstream kernel replay. The directed15-endpoint sweep is inventory only, not exhaustive reading; dates and transport hashes are recorded. No new corpus, review, grade or deposit was created in this follow-up.
+
+Evidence: [publication binding and exact controls](../evidence/2026-10-29-preparation-publication/MANIFEST1214.json), [joint-envelope derivation](../evidence/2026-10-29-preparation-publication/JOINT1212.txt), [EB boundary checker](../evidence/2026-10-29-preparation-publication/check_eb_boundary1214.py), and [current directed inventory](../evidence/2026-10-29-preparation-publication/SOURCES1214.json).

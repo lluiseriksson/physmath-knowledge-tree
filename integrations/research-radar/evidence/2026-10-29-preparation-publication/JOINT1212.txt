@@ -1,0 +1,23 @@
+Bounded follow-up to referee observation O2, 29 October 2026
+
+Status: own unreviewed derivation, novelty unresolved. This is a supplement candidate for manuscript1211, not a new scored manuscript, not a replacement for its frozen PDF, and not a public-priority claim. The existing review1211 grade remains attached only to PDF65b320e9a3277ce6565ec3496acf3466f1d59313c1c3aafc016f573eec08bd71.
+
+Question. Can the dimension certificate and the referee's N-1 finite-outcome observation be combined sharply, including fixed input dimension d and exactly N nonzero preparation branches?
+
+Hypotheses. Same d-dimensional square CPTP prefix Psi as1211, eta_tr(Psi)<=r, 0<=r<=1; finite POVM F_1,...,F_N with sum I, terminal T_a(X)=Tr(F_a X)tau_a, and freely allowed output dimension at least min(d,N). b=sum_a lambda_min(Psi*(F_a)). Positive CP common-component coefficient alpha_+ uses positive replacement operators, not its Hermitian relaxation.
+
+Candidate conclusion. With m=min(d,N), both the universal lower bound on b and the infimum of alpha_+(E composed Psi) over this class are max(0,1-(m-1)r). All d,N>=1 endpoints included. Freely allowed output dimension matters; the value need not hold for a fixed smaller output. The expression is not an optimal entropy-contraction coefficient.
+
+Lower bound. The dimension argument in1211 gives 1-(d-1)r. For the count argument fix rho_0 minimizing p_1(rho)=Tr(Psi*(F_1)rho). Since 0<=F_a<=I for a finite POVM, osc(Psi*(F_a))<=r. For a>1, min p_a>=p_a(rho_0)-r. Summing including the exact first minimum gives b>=1-(N-1)r. Positivity completes max(0,1-min(d-1,N-1)r). b gives a feasible positive CP component by the already reviewed Choi argument.
+
+Attainment for m>=2. Set s=min(1,(m-1)r) and P_s(y|j)=(1-s)/m+s*(1-delta_yj)/(m-1). Choose a surjection c:{1,...,d}->{1,...,m}. Define the square prefix Psi(rho)=sum_i rho_ii sum_y P_s(y|c(i)) |y><y| on the first m output basis states. It is CPTP. Its trace contraction is s/(m-1): dephasing followed by the classical channel bounds all inputs, and basis states in different classes attain the column distance.
+
+For m=N<=d, choose F_y=|y><y| for y<m and F_m=I-sum_{y<m}F_y. This is a finite POVM with N branches; the unused d-m coordinates never occur after the prefix. Prepare distinct orthogonal output states |y><y|. For N>m=d, start with the d basis-projector effects and split the first into N-d+1 identical positive fractions, all preparing the same first output state. All N branches are nonzero, and grouped channel unchanged. Thus b=1-s. The grouped classical channel has alpha_+=sum_y min_i P_s(y|c(i))=1-s, by dephasing any proposed positive replacement operator and using diagonal Choi blocks. This reaches the lower bound. For m=1 every resulting channel is a replacer; choose identical states and N equal effects when d=1, or F_1=I when N=1. Then b=alpha_+=1.
+
+Mechanism: a surjective classical input partition embeds the exclusion extremizer into larger input spaces; splitting identical preparation labels adjusts the outcome count without altering the grouped channel. Eliminated limitation: the sharp witness need no longer be phrased only with an available d-dimensional output and unconstrained branch count. Retained limitations: preparation structure, fixed reference conditions for downstream consequences, unrestricted available output dimension, and lack of originality verification.
+
+Finite check. check_joint1212.py uses exact Fraction arithmetic for d=1..8, N=1..11 and five rational r values (440 cases). It checks nonnegative stochastic columns, contraction, branch mass and the target expression. This calibration does not certify the general quantum argument or priority.
+
+Falsifiers/abandonment: a finite POVM violating the N-1 bound; an admissible quantum channel below the proposed combined envelope; an error in trace contraction of the partitioned prefix; or an earlier exact statement removing originality. Do not extend to arbitrary terminal instruments. Fixed output dimension1 is an immediate obstruction to the unrestricted-output interpretation whenever the proposed value is below1.
+
+Evidence layers: literature—trace/oscillation duality and positive common-component machinery, sources already mapped in1211; referee observation—N-1 count bound in REVIEW1211, not a separate published theorem; heuristic—own combined-envelope extension pending review; speculative—application payoff beyond a modest methods note. No Lean/formal result is asserted. No new dependency or corpus downloaded.

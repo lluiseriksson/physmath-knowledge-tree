@@ -63,3 +63,5 @@ All proposed finite investigations remain unexecuted. The exact-rational witness
 ## 28 October: support criterion
 
 The [support-criterion follow-up](../../integrations/research-radar/notes/2026-10-28-support-criterion.md) records the published symmetric-channel review, a technically audited finite classical-channel extension, its failed selectors and regularizers, and a pending full review of the new exact PDF. Historical scores do not grade the extension. No canonical confidence or solved status changes.
+
+The [29October preparation-publication reconciliation](../../integrations/research-radar/notes/2026-10-29-preparation-publication.md) binds the real exact-PDF assessment to its public Working paper, preserves its modest grade and objections, and keeps later joint-cardinality controls unscored. A close-pure-output EB shortcut is rejected using the already published CQ criterion; no new paper or graph confidence is inferred.

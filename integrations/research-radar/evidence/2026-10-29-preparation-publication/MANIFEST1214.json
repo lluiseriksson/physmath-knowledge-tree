@@ -1,0 +1,55 @@
+{
+  "scope": "own bounded proof notes and exact finite controls; versioned publication evidence and current source inventory, no foreign source corpus",
+  "files": [
+    {
+      "path": "SOURCES1214.json",
+      "sha256": "0b698a125c4d22dd20673d64d7172cb3ab31a7f546f3b8d0872b31f01f07fa57",
+      "bytes": 4822,
+      "original_transport_sha256": "92cf089ffafc8b2790c928cfed0e8ee031e1a11acfc40e442b9974b72ba46271"
+    },
+    {
+      "path": "SUBGRAPH1214.json",
+      "sha256": "b70c01a0525261ce09714a6cb41b6e3f3c382a0a2a900924f44ef89055d16b49",
+      "bytes": 23022,
+      "original_transport_sha256": "48f2313a9123cbf36c5a4fcd879ed549381406fcd109317e2abe12a4487c18c8"
+    },
+    {
+      "path": "check_eb_boundary1214.py",
+      "sha256": "3ece1af6807f418e8326b063c5ad9c6a419bc48b6fc507ce6bdc5940271d9dd7",
+      "bytes": 1042,
+      "original_transport_sha256": "3ece1af6807f418e8326b063c5ad9c6a419bc48b6fc507ce6bdc5940271d9dd7"
+    },
+    {
+      "path": "EB-BOUNDARY1214.json",
+      "sha256": "65e5b9561aea22e5792bfc48aa2abcf538f8516556a416219507d12c0c8ddeaf",
+      "bytes": 6330,
+      "original_transport_sha256": "ae0b444e1ffef8c836a1fc9e7dcde7659bd552c363f42bd89a1a41b56fd0ba62"
+    },
+    {
+      "path": "check_joint1212.py",
+      "sha256": "d8e83c4979b4d9b8d6a97afd56ac2bf495c6db6c2b4e3128993ac1c11fb208a8",
+      "bytes": 1440,
+      "original_transport_sha256": "d8e83c4979b4d9b8d6a97afd56ac2bf495c6db6c2b4e3128993ac1c11fb208a8"
+    },
+    {
+      "path": "JOINT1212.json",
+      "sha256": "5aa81fbf2365e660dc1f84852177e0d34272e89dbdc36e954fa1c0e7defb92b4",
+      "bytes": 50828,
+      "original_transport_sha256": "1f4c5f8ad1eee494658f1d56e43e60e3426ebbf62f526b99007317df9c184131"
+    },
+    {
+      "path": "JOINT1212.txt",
+      "sha256": "dd22db034e3369f364e0981759a6f98d57d8aed37c5874ed9bb18b1610ecc426",
+      "bytes": 4530,
+      "original_transport_sha256": "dd22db034e3369f364e0981759a6f98d57d8aed37c5874ed9bb18b1610ecc426"
+    },
+    {
+      "path": "PUBLIC-VERIFIED1213.json",
+      "sha256": "5d6f2026242b7d2373b83f4a345a4731c79573442df23adb46d14d837539b346",
+      "bytes": 1530,
+      "original_transport_sha256": "f95f52fd6553e6dd84a4bf76bc3dc08fd39bc077c35c9f226f12e0efb447638b"
+    }
+  ],
+  "formal_proof_certificate": false,
+  "new_review_or_grade": false
+}
