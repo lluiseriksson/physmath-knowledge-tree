@@ -1,0 +1,32 @@
+{
+  "sources": [
+    {
+      "id": "1208.3865v4",
+      "title": "Semidefinite representation for convex hulls of real algebraic curves",
+      "first": "2012-08-19",
+      "revision": "2017-09-18",
+      "claim": "Abstract states that every convex semialgebraic subset of the plane admits a semidefinite representation. Abstract/metadata read only; no full proof audit.",
+      "url": "https://arxiv.org/abs/1208.3865v4",
+      "status": 200,
+      "sha256": "b2c8258a34786964dedba827b60e2986b37b9af6c1d0dea3f61e08498e783e04",
+      "observed_at": "2026-10-29T13:45:26.176Z",
+      "classification": "known mathematical manuscript, not new2026 publication or product announcement",
+      "level": "abstract read"
+    },
+    {
+      "id": "2004.04196v2",
+      "title": "Second-order cone representation for convex subsets of the plane",
+      "first": "2020-04-08",
+      "revision": "2021-01-28",
+      "claim": "Abstract states that every closed convex semialgebraic subset of R2 has second-order cone representability. Abstract/metadata read only; no proof or complexity bound audited.",
+      "url": "https://arxiv.org/abs/2004.04196v2",
+      "status": 200,
+      "sha256": "c1a2a220f30b435dadf49eb0009b3e8df8497b35892dbd6c893aebce8ddc373b",
+      "observed_at": "2026-10-29T13:45:28.491Z",
+      "classification": "known mathematical manuscript, not new2026 publication or product announcement",
+      "level": "abstract read"
+    }
+  ],
+  "own_application": "The fixedc0,r slice is convex by convex combinations of quadrant analytic maps with the same anchor, semialgebraic by the quartic, and closed/bounded via F<=0 and the positive eigenvector branch. Thus general planar representability was already covered by these prior statements; explicit small matrices remain only a scoped elementary construction. The variablec body has3real variables and is not covered by the quoted planar theorem.",
+  "decision": "Reject a generic planar-SDP or SOC-existence novelty claim and do not create a minor paper. Full prior proofs not audited."
+}

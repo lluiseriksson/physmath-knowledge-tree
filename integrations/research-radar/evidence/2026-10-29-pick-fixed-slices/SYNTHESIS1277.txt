@@ -1,0 +1,36 @@
+Fixed two-node quadrant slices: explicit affine lifts and boundaries
+
+Evidence and scope
+The existing interpolation-semidefinite-boundary candidate remains speculative for its full variable-normalization/higher-jet goal. The following is an own elementary analytical construction from the attributed classical Pick criterion in the exact public20-page manuscript. It is not a new manuscript, independent model assessment, formal kernel proof or novelty certification. Source PDF SHA256:4a6b5d54cac9e0042dcbfdaaf8b055088a99bab7fe751ff7176ef64c65d2e5aa. Its source lines439–533 were re-read; previous planar42 audit was consulted, not repeated.
+
+Actual set map
+Fixc0>0 and a value nodez in the unit disk withr=|z|<1. The unknown target isu=x+iy, withf analytic into the open first quadrant andf(0)=c0+i. These are two VALUE constraints whenr>0. Squaring givesg=f^2 withg(0)=(c0+i)^2 andg(z)=u^2. The half-plane Pick determinant, together with the first-quadrant branch, is exactly
+ F=(x^2+y^2)^2+(c0^2+1)^2-2(c0^2-1)(x^2-y^2)-8*c0*kappa*x*y<=0,
+ kappa=(1+r^2)/(1-r^2).
+The square map is quadratic and is not called a linear lift.
+
+Explicit fixed-parameter lift
+Seta=2(c0^2-1),b=4c0*kappa,lambda=sqrt(a^2+b^2),e=(b,lambda-a),alpha=lambda/(e1^2+e2^2),C=c0^2+1. Both entries ofe andalpha are positive. DefineX=e1*x+e2*y,Y=-e2*x+e1*y. The target is feasible exactly when there exists realt such that
+ M1=[[t,x,y],[x,1,0],[y,0,1]] >=0,
+ M2=[[alpha*X,t,C,alpha*Y],[t,X,0,0],[C,0,X,0],[alpha*Y,0,0,alpha*X]] >=0.
+For fixedc0,r these are affine real symmetric pencils inx,y,t; coefficients are algebraic for algebraicc0,r^2.
+
+Why the lift is exact
+DiagonalizingQ=[[a,b],[b,-a]] givesQform=alpha*(X^2-Y^2). M1 is equivalent tot>=x^2+y^2. The positive constantC forcesX>0 inM2: a principal minor givesalpha*X^2>=C^2. The Schur complement then gives t^2+C^2+alpha*Y^2<=alpha*X^2. Minimizingt atx^2+y^2 recoversF<=0. F<=0 cannot hold withxy<=0, sinceF is the squared modulus of the Pick off-diagonal minus16c0xy/(1-r^2); ifxy=0 that squared modulus cannot vanish becausec0>0. Sincee has positive entries,X>0 selectsx,y>0. The converse follows by choosingt=x^2+y^2. The classical half-plane interpolant has positive imaginary part; its analytic first-quadrant square root recoversf. Singular semidefinite data are retained.
+
+Forc0=1, a smaller equivalent pair of3x3 pencils is recorded inDERIVATION1275.json. The general construction removes this special fixed-normalization assumption; it does not remove the fixed-parameter requirement.
+
+Collision and confluent data
+Atr=0 the repeated value must beu=c0+i. This unscaled collision is different from prescribing a derivative. For the separate first derivative at0, the classical Schwarz bound ong gives |fprime(0)|<=2c0/sqrt(c0^2+1); the boundary is attained by square roots of half-plane automorphisms. The exact coefficient of the coalescing quartic divided byr^2 is4*((c0^2+1)*(a^2+b^2)-4c0^2), wherea+ib is the normalized value difference. Higher jets are not treated.
+
+A failed shortcut
+Separate right-half-plane and upper-half-plane Pick tests do not characterize quadrant interpolation. Atc0=1,r=3/5,u=5/2+5i/2, both separate determinants equal9/8>0, whileF=54>0. This is an exact falsifier of that shortcut, not a source-theorem counterexample. The scripts also preserve the negative-sign branch control and the invalid application of ac0=1 pencil to the valid constantf=2+i.
+
+Prior art and abandonment
+https://arxiv.org/abs/1208.3865v4 (first19August2012, revision18September2017) states planar convex semialgebraic SDP representability. https://arxiv.org/abs/2004.04196v2 (first8April2020, revision28January2021) states second-order cone representability for every closed convex semialgebraic planar set. Only abstracts/metadata were read here, not their proofs. Our fixedc0,r slice is convex by convex combinations of analytic quadrant maps with the same anchor; it is semialgebraic byF and its sign branch, and closed/bounded fromF and the positive-eigenvalue bound. General existence was therefore already covered. No generic planar SDP/SOC-existence originality claim or separate paper follows from these matrices.
+
+Remaining hypothesis and falsifier
+lambda,e,alpha depend nonlinearly onc0. A parameterized family of affine pencils is not a single jointly affine pencil in(c0,x,y). The full variablec body has three real variables, and the cited planar theorem does not resolve it. A future claim must exhibit its exact jointly affine map, preserve the singular/confluent conditions and specify higher-jet coverage. Abandon any proof based only on squaring, a pointwise Gram factor or the intersection of the two separate half-plane tests.
+
+Validation and provenance
+verify_pick1275_pure.py andverify_pick1276.py use only standard-library exact rational/polynomial arithmetic. Their recorded controls include determinant/coalescence identities, rational interior/exterior and singular cases, and the two failed shortcuts. The initial sympy-based invocation failed before calculations; that failure is disclosed infailed-sympy1275.log and the original attempt remains in the private research archive. No installation or relaxed check was used. These bounded controls are not presented as a Research Capsule-certified computational campaign. No external formal dependency or canonical graph confidence is changed, and manuscript reviews/grades remain bound to their original PDFs.

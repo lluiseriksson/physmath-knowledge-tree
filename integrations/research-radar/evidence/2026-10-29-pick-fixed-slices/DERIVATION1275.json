@@ -1,0 +1,26 @@
+{
+  "created_at": "2026-10-29T13:38:12.294Z",
+  "task": "Explicit fixed-normalization two-node lift for existing interpolation candidate; bounded own derivation, not a manuscript or review",
+  "input": {
+    "tex_path": "D:/Entregas/airr/2026-10-18_jerarquia-lyapunov/candidate-3/main.tex",
+    "tex_sha256": "66a258eeab4628a5631cb631cb7ec52870407a40c4cf999fcf9b5581927fd10c",
+    "exact_public_PDF_sha256": "4a6b5d54cac9e0042dcbfdaaf8b055088a99bab7fe751ff7176ef64c65d2e5aa",
+    "coverage": "Own published source lines439–533 finite quadrant-jet definition and Pick statement re-read; old planar42 audit consulted1274, not repeated"
+  },
+  "statement": "Fixf(0)=1+i and a distinct value nodez with0<|z|=r<1. Setu=f(z)=x+iy andkappa=(1+r^2)/(1-r^2). Thenu is attainable by an analytic map into the open first quadrant iff there exists realt with M1=[[t,x,y],[x,1,0],[y,0,1]]>=0 and M2=[[4*kappa*x,t,2],[t,2*y,0],[2,0,2*y]]>=0.",
+  "derivation": [
+    "Atg=f^2,g0=2i, the2x2 half-plane Pick matrix is P00=4,P11=4xy/(1-r^2),P01=2+2xy+i(x^2-y^2). Positive diagonal plus determinant>=0 gives(x^2+y^2)^2+4<=8*kappa*x*y, withx,y>0.",
+    "M1 PSD iff t>=x^2+y^2. M2 PSD implies x,y>=0 and its2x2 principal minor with the constant2 forcesxy>=1/(2*kappa)>0. Sincey>0, its Schur complement is t^2+4<=8*kappa*x*y.",
+    "The two LMIs therefore imply the quartic inequality because t>=x^2+y^2>=0. Conversely, choose t=x^2+y^2; the quartic andx,y>0 imply both LMIs.",
+    "The positive-imaginary interpolantg has a unique analytic square root in the first quadrant. Singular semidefinite Pick data are retained, not replaced by strictly positive determinant."
+  ],
+  "boundary": [
+    "At r=0 the two distinct value constraints collapse to u=1+i; the quartic becomes(x^2-y^2)^2+4(x*y-1)^2<=0. This is the collision value boundary, not a derivative interpolation theorem.",
+    "For the separate confluent first-derivative jet f(0)=1+i,fprime(0)=a+ib, half-plane Schwarz-Pick gives|fprime(0)|^2<=2; equality is attained by square roots of half-plane automorphisms. The coalescing value difference must be divided byr before passing to this derivative condition."
+  ],
+  "hypothesis_reduction": "Removes the opaque membership oracle only for fixedc=1, one anchored plus one distinct VALUE node. It does not give a joint affine pencil in the variablec of the manuscript or a full higher-multiplicity lift.",
+  "falsifier": "Any extension allowing variablec must display an affine pencil in all variables; substitutingc into the c=1 formula or calling the quadratic square map a linear lift is invalid. A candidate violating the exact quartic but passing the two LMIs would refute this proposed lift.",
+  "prior_art": "Own previously audited manuscript already supplies the Pick criterion. This is an elementary scoped representation consequence; novelty unestablished and no new paper justified.",
+  "confidence": "heuristic own analytical derivation pending exact symbolic controls and any independent audit; classical Pick statement attributed literature",
+  "next": "Perform exact symbolic expansion, rational interior/exterior and rank-one boundary controls, and a normalized coalescence check. Keep variablec and higher jets separate; batch as existing-candidate knowledge, not a new sourcecard or paper."
+}

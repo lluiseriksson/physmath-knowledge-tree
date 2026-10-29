@@ -1339,7 +1339,7 @@
     {
       "id": "interpolation-semidefinite-boundary",
       "title": "Which convex interpolation bodies admit useful semidefinite lifts?",
-      "status": "queued",
+      "status": "under_audit",
       "confidence": "speculative",
       "source_ids": [
         "openai-math-catalogue",
@@ -1351,13 +1351,13 @@
         "domain.analysis"
       ],
       "dictionary": "A convex jet body -> candidate lifted positivity representation; cone examples -> controls on representation claims.",
-      "preserved": "Convexity, input encoding and exact feasible-set quantifiers.",
-      "lost_or_unproved": "No direct implication from hyperbolicity-cone results to the quadrant interpolation body has been proved. Nonspectrahedral does not mean no semidefinite lift.",
+      "preserved": "Actual quadrant-jet map, fixed positive normalization, exact two-node value feasibility, singular semidefinite data, separate first-derivative confluent boundary, algebraic input coefficients and affine auxiliary-variable pencils.",
+      "lost_or_unproved": "Explicit3x3+4x4 affine lift derived only for each fixedc0,r two-value slice. Coefficients depend nonlinearly onc0; no jointly affine variablec or higher-jet lift, independent audit or kernel proof. Planar SDP/SOC existence is already covered by Scheiderer2012/2020; this is not a novelty claim.",
       "hypothesis_to_remove": "Opaque weak-membership oracle implementation, if an explicit valid lift exists.",
-      "falsifier": "The proposed lift fails a two-node or singular confluent interpolation instance, or its domain does not match the cone theorem.",
-      "next_finite_task": "Construct and test an explicit two-node interpolation representation, including singular and confluent boundaries. First state the actual set map; abandon any argument based only on the shared words convex or hyperbolic.",
+      "falsifier": "Atc0=1,r=3/5,u=5/2+5i/2 both separate half-plane Pick determinants are9/8 but the quadrant quartic is54>0, defeating that intersection shortcut. A claimed full lift must be affine in all variables and preserve actual singular/confluent interpolation; a pointwise square/Gram factor is insufficient.",
+      "next_finite_task": "Either construct an actual jointly affine representation for variablec and specified higher jets, or prove a scoped obstruction to a defined representation class. Preserve fixed-parameter versus joint-variable distinction. Do not revisit generic planar SDP/SOC-existence novelty or create a minor standalone paper. Exact boundary/Schur-complement evidence1275–1277 is available for reuse.",
       "paper_score": null,
-      "review_packet": "Two primary introductions/main statements now read with immutable PDF hashes. The examples have different dimensions and representation classes; no contradiction or transfer to our body is established."
+      "review_packet": "Two primary introductions/main statements now read with immutable PDF hashes. The examples have different dimensions and representation classes; no contradiction or transfer to our body is established. Reading1275–1276 reuses the exact public own PDF criterion, with own unreviewed analytical construction and standard-library exact controls. Abstracts of Scheiderer1208.3865v4 and2004.04196v2 read, no full-proof audit or source novelty. No manuscript grade or independent assessment. Evidence: integrations/research-radar/evidence/2026-10-29-pick-fixed-slices/SYNTHESIS1277.txt"
     },
     {
       "id": "quantum-evaluator-resource-transfer",

@@ -1,0 +1,55 @@
+{
+  "scope": "Exact standard-library polynomial coefficient identities and selected rational controls; not an independent review, novelty claim or full variable-c lift",
+  "symbolic_identities": 5,
+  "coalescence_quartic_over_r_squared": "8*(a^2+b^2-2)",
+  "rows": [
+    {
+      "x": "1",
+      "y": "1",
+      "r": "3/5",
+      "quartic": "-9",
+      "both_LMIs_PSD": true,
+      "label": "interior",
+      "M1_rank": 2,
+      "M2_rank": 3
+    },
+    {
+      "x": "2",
+      "y": "2",
+      "r": "3/5",
+      "quartic": "0",
+      "both_LMIs_PSD": true,
+      "label": "rank_one_boundary",
+      "M1_rank": 2,
+      "M2_rank": 2
+    },
+    {
+      "x": "1/2",
+      "y": "1/2",
+      "r": "3/5",
+      "quartic": "0",
+      "both_LMIs_PSD": true,
+      "label": "rank_one_boundary",
+      "M1_rank": 2,
+      "M2_rank": 2
+    },
+    {
+      "x": "3",
+      "y": "3",
+      "r": "3/5",
+      "quartic": "175",
+      "both_LMIs_PSD": false,
+      "label": "exterior",
+      "M1_rank": 2,
+      "M2_rank": 3
+    }
+  ],
+  "variable_c_guard": {
+    "valid_constant_f": "2+i",
+    "normalization_c": 2,
+    "r": "1/5",
+    "c1_quartic_positive": "35/3",
+    "claimed_general_extension": false
+  },
+  "confluent_first_derivative": "|fprime(0)|^2<=2, attained by sqrt(2i*(1+eta*z)/(1-eta*z)), |eta|=1"
+}
