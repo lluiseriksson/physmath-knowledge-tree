@@ -1,0 +1,42 @@
+{
+  "observed_at": "2026-10-29T13:18:04.503Z",
+  "level": "literature: selected complete local Lean arguments read; upstream kernel replay and transitive axiom closure not performed",
+  "pin": "a26427e3c2fcaf9f98694fbd0d4dd49e41dcf5e3",
+  "sources": [
+    {
+      "path": "Unconditional/NuminaReanchoredGeometry.lean",
+      "url": "https://github.com/project-numina/kakeya-3d/blob/a26427e3c2fcaf9f98694fbd0d4dd49e41dcf5e3/Unconditional/NuminaReanchoredGeometry.lean",
+      "sha256": "af5f4dc224f3fa6c4cba6d793ce6937aa62f79315e30ffdb278b75b5ea7ee1f8",
+      "lines": 59,
+      "coverage": "26–56"
+    },
+    {
+      "path": "Unconditional/ReanchoredParentVolume.lean",
+      "url": "https://github.com/project-numina/kakeya-3d/blob/a26427e3c2fcaf9f98694fbd0d4dd49e41dcf5e3/Unconditional/ReanchoredParentVolume.lean",
+      "sha256": "7aaa67c6f45ff798d863244fb0eb12b5cfd966c5e88903c1ae5610e607a673f5",
+      "lines": 53,
+      "coverage": "23–50"
+    },
+    {
+      "path": "Unconditional/ReanchoredParentEnclosure.lean",
+      "url": "https://github.com/project-numina/kakeya-3d/blob/a26427e3c2fcaf9f98694fbd0d4dd49e41dcf5e3/Unconditional/ReanchoredParentEnclosure.lean",
+      "sha256": "46e628cc0077fcce5db289ef223e3aeca49559851bad97894c696fd91d56a50b",
+      "lines": 129,
+      "coverage": "20–126"
+    }
+  ],
+  "mechanism": [
+    "The reanchored thick parent is enclosed in the centered (8A)-homothety of a thin tube with the same new axis/base and radius rho. This intermediate thin carrier need not coincide with the original parent carrier.",
+    "Equal-volume unit tubes at a common radius and homothety volume scaling then give volume(new) <= (8A)^3 volume(oldParent), even for a different old parent at radius rho. This is an upper bound, not an exact Jacobian for thickening a fixed-length tube.",
+    "The raw volume bound needs rho>=0 and A>=1, with arbitrary center, no small-scale or axial-shift hypothesis. Those geometric restrictions enter other containment uses.",
+    "The general coaxial helper separately requires equal oriented directions, base displacement shift, positive inner/outer factors, radial inequality inner*r_source<=outer*r_target and axial inequality abs(shift)+inner/2<=outer/2. Its explicit inverse homothety verifies both segment parameter and transverse distance.",
+    "Doubled reanchored parent containment in the original 32A-dilation additionally assumes abs(axialShift)<=4A. The active-parent wrapper derives this from positive delta/rho, delta<=1,rho<=1,radius<=1/4,A>=1, common point and FULL source-carrier containment."
+  ],
+  "limits": [
+    "Imported closest-point, tube-volume equality, homothety-volume and active-parent axial-shift arguments are dependencies, not newly fully audited here.",
+    "No deletion of the volume overhead, no global scale-free transport, no full John-rescaling audit, no upstream Kakeya theorem certification, new theorem, score or paper."
+  ],
+  "hypothesis": "A scale contract for common-anchor regrouping must retain an explicit finite volume overhead and the distinct provenance/containment conditions; equal tube radius alone does not identify carriers.",
+  "falsifier": "A claimed sharp identity volume(new)=(8A)^3 volume(old), or original-parent doubled-containment without an axial displacement restriction, would require a new argument; the present source asserts neither.",
+  "next": "Read the actual John rescaling/parent-preparation interface and imported volume/shift lemmas at the fixed nested upstream commit42f739b484fd055e0aa29601c35677ad996f2ef2. Then batch1268 angular guard and1269 volume audit into the existing candidate."
+}

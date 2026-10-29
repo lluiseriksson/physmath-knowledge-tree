@@ -1,0 +1,125 @@
+{
+  "scope": "Directed primary inventory; not exhaustive. Index hashes are not publication dates. Local smoothing deduplicated against existing sourcecard.",
+  "sources": [
+    {
+      "source": "openai",
+      "url": "https://github.com/openai/math",
+      "status": 200,
+      "bytes": 236588,
+      "sha256": "93d84d49f6591efa27523fad8b4513266a2e45c25b382efb57c74c43fba47544",
+      "observed_at": "2026-10-29T13:21:34.423Z",
+      "reading": "inventoried only",
+      "same_as1270": false
+    },
+    {
+      "source": "anthropic",
+      "url": "https://www.anthropic.com/research",
+      "status": 200,
+      "bytes": 413129,
+      "sha256": "bc4001b3a718f48e2e7d97cbb75ce39b3b65dfdb97eae5e903f598ae21791c0c",
+      "observed_at": "2026-10-29T13:21:33.725Z",
+      "reading": "inventoried only",
+      "same_as1270": true
+    },
+    {
+      "source": "deepmind",
+      "url": "https://github.com/google-deepmind/formal-conjectures",
+      "status": 200,
+      "bytes": 304988,
+      "sha256": "baaf92256983a00ea04c47151e4f490bb1721382589513944191f1bbc905d8fd",
+      "observed_at": "2026-10-29T13:21:34.348Z",
+      "reading": "inventoried only",
+      "same_as1270": false
+    },
+    {
+      "source": "microsoft",
+      "url": "https://www.microsoft.com/en-us/research/research-area/computational-sciences-mathematics/",
+      "status": 200,
+      "bytes": 607711,
+      "sha256": "c099ab33f1f090ba4b86ae382d2a88ba44e4c509a138117dd6999ac75019f889",
+      "observed_at": "2026-10-29T13:21:34.728Z",
+      "reading": "inventoried only",
+      "same_as1270": true
+    },
+    {
+      "source": "meta",
+      "url": "https://ai.meta.com/results/",
+      "status": 200,
+      "bytes": 305956,
+      "sha256": "1e9690cf98e857f59b93342702553ebdf3d028bae5bce7f9496b0863cfccd368",
+      "observed_at": "2026-10-29T13:21:39.825Z",
+      "reading": "inventoried only",
+      "same_as1270": false
+    },
+    {
+      "source": "numina",
+      "url": "https://github.com/project-numina",
+      "status": 200,
+      "bytes": 244376,
+      "sha256": "560a03be1d10a5df6e8cf2d209f91b141abe5dbfd87aa05f020878791f1e4d94",
+      "observed_at": "2026-10-29T13:21:34.404Z",
+      "reading": "inventoried only",
+      "same_as1270": false
+    },
+    {
+      "source": "bytedance-nankai",
+      "url": "https://github.com/M32026/3d-sticky-kakeya",
+      "status": 200,
+      "bytes": 225592,
+      "sha256": "dbb5f9fff8735d4c98954ba7ffa4d060ace49d079d44b0ca54be853417bd2930",
+      "observed_at": "2026-10-29T13:21:34.357Z",
+      "reading": "inventoried only",
+      "same_as1270": false
+    },
+    {
+      "source": "eth-sri",
+      "url": "https://www.sri.inf.ethz.ch/research/mathllm",
+      "status": 200,
+      "bytes": 32567,
+      "sha256": "d9feedd5f120e179b3710ac3884e39d9a15725c9e9a9974d266e10b7221eb9b9",
+      "observed_at": "2026-10-29T13:21:33.783Z",
+      "reading": "inventoried only",
+      "same_as1270": true
+    },
+    {
+      "source": "harmonic",
+      "url": "https://www.harmonic.fun/news/",
+      "status": 200,
+      "bytes": 110404,
+      "sha256": "62fbc07745a764d876241c42bbd5879ea4b7aff788b1163cd7f9b671fe05d51d",
+      "observed_at": "2026-10-29T13:21:33.764Z",
+      "reading": "inventoried only",
+      "same_as1270": true
+    },
+    {
+      "source": "arxiv",
+      "url": "https://arxiv.org/list/math/new",
+      "status": 200,
+      "bytes": 1738129,
+      "sha256": "57affc4c148328485c6720b9709c3642959a912caaa2b9498543e6ecf6adf8d3",
+      "observed_at": "2026-10-29T13:21:34.276Z",
+      "reading": "inventoried only",
+      "same_as1270": true
+    },
+    {
+      "source": "airr",
+      "url": "https://airr.science/catalog.json",
+      "status": 200,
+      "bytes": 1456595,
+      "sha256": "e321991f93b1a0c8f14c9a1445a716a8671cd7d2bdeb9361ce3ea7eee90a1116",
+      "observed_at": "2026-10-29T13:21:34.050Z",
+      "reading": "inventoried only",
+      "same_as1270": true
+    },
+    {
+      "source": "vixra",
+      "url": "https://www.ai.vixra.org/author/lluis_eriksson",
+      "status": 200,
+      "bytes": 70183,
+      "sha256": "7a5f950e1a001dd86ef8303c1104d2c3e27779603f577e21f226cf623347ca62",
+      "observed_at": "2026-10-29T13:21:34.649Z",
+      "reading": "inventoried only",
+      "same_as1270": true
+    }
+  ]
+}

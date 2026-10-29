@@ -1,0 +1,35 @@
+{
+  "scope": "Refutes only the axis-only weakening of the sharp direction bound; not the full-carrier source theorem or its final8A*rho containment conclusion",
+  "exact": true,
+  "delta": "1/200",
+  "rho": "1/200",
+  "A": "1",
+  "source_direction": [
+    "159999/160001",
+    "800/160001",
+    "0"
+  ],
+  "parent_direction": [
+    "1",
+    "0",
+    "0"
+  ],
+  "both_segment_midpoints": [
+    "0",
+    "0",
+    "0"
+  ],
+  "axis_all_parameters_argument": "For every|t|<=1/2, |t*ux|<=1/2 and |t*uy|<=uy/2<rho; projection lies on parent unit segment",
+  "axis_transverse_max": "400/160001",
+  "source_direction_perpendicular_norm": "800/160001",
+  "sharp_direction_bound_rhs": "0",
+  "outward_source_carrier_point": [
+    "159999/320002",
+    "240001/32000200",
+    "0"
+  ],
+  "distance_outward_point_to_parent_segment": "240001/32000200",
+  "full_carrier_containment": false,
+  "new_source_counterexample": false,
+  "formal_proof_or_novelty_claim": false
+}
