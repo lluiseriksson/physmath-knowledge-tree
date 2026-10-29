@@ -1,0 +1,101 @@
+{
+  "retrieval": "Selected passages read using web tools; primary sources used for substantive claims.",
+  "source_response_transport_hashes_reproduced": false,
+  "stored_foreign_full_text": false,
+  "read_sources": [
+    {
+      "id": "S1",
+      "authors": "Hafouta–Pathirana",
+      "version": "2609.40096v1",
+      "url": "https://arxiv.org/html/2609.40096v1",
+      "read": "Selected Appendix A.2: Proposition A.2, finite/general-outcome criterion and proof; finite-preparation bound.",
+      "not_read_or_not_audited": "Main limit-theorem proofs; full environmental machinery.",
+      "use": "Prior general-outcome posterior criterion and finite-label contraction sufficient condition."
+    },
+    {
+      "id": "S2",
+      "authors": "George–Hirche–Nuradha–Wilde",
+      "version": "2503.22823v3",
+      "url": "https://arxiv.org/html/2503.22823v3#S7.SS2",
+      "read": "Proposition 35 and Corollary 11 statements and proofs.",
+      "not_read_or_not_audited": "Full paper; neighboring Proposition 36 proof/PDF direction issue; earlier unspecified Theorem 5 diagnostic.",
+      "use": "Prior finite measurement-channel eigenvalue formula and equality of variants for measurement outputs."
+    },
+    {
+      "id": "S3",
+      "authors": "Hirche",
+      "version": "2405.00105v2",
+      "url": "https://arxiv.org/html/2405.00105v2#S3",
+      "read": "Choi conventions, Lemma III.2, Proposition III.3 and Corollary III.4, with selected proofs.",
+      "not_read_or_not_audited": "Remaining full paper and all historical dependencies.",
+      "use": "Prior CP-replacer decomposition, ordinary contraction consequence, positive Choi SDP; normalize and swap factors when translating."
+    },
+    {
+      "id": "S4",
+      "authors": "Makur–Singh",
+      "version": "2309.08475v2",
+      "url": "https://arxiv.org/html/2309.08475v2#S2.SS1",
+      "read": "Definition 1, relevant Theorem 1 properties, normalization/polyhedron proof portions.",
+      "not_read_or_not_audited": "Remaining proofs and applications; exact prior occurrence of the dimension-envelope formula.",
+      "use": "Classical common-component formula is prior. Property 6 is an upper comparison and is not the target dimension lower comparison."
+    },
+    {
+      "id": "S5",
+      "authors": "Gaubert–Qu",
+      "version": "Author-hosted paper",
+      "url": "https://www.cmap.polytechnique.fr/~gaubert/PAPERS/GaubertQuIEOTD14QuFinal.pdf",
+      "read": "Theorem 1.1 statement; Section 7 norm definitions, Corollary 7.1 and its local proof.",
+      "not_read_or_not_audited": "Complete general-cone theory and earlier dependency proofs.",
+      "use": "Spectral-oscillation/trace-contraction duality is prior."
+    },
+    {
+      "id": "S6",
+      "authors": "Pathirana",
+      "version": "2605.00157v1",
+      "url": "https://arxiv.org/html/2605.00157v1",
+      "read": "Selected Section 2.1 and Appendix A CP-order comparison, especially Example 4.",
+      "not_read_or_not_audited": "Full channel-product/MPS results.",
+      "use": "State-level versus CP-order distinction; symmetric-support falsifier to dropping EB postprocessing."
+    },
+    {
+      "id": "S7",
+      "authors": "Lee–Lu–Makur–Singh",
+      "version": "2606.19859v1",
+      "url": "https://arxiv.org/html/2606.19859v1",
+      "read": "Introductory general-kernel common-component definitions, equations (8)-(12).",
+      "not_read_or_not_audited": "Doeblin-curve theorems, their proofs, and possible implications for this envelope.",
+      "use": "Further prior-art lead only; no novelty verdict."
+    }
+  ],
+  "search_queries": [
+    "\"Doeblin\" \"Dobrushin\" \"n-1\"",
+    "\"quantum\" \"Doeblin\" \"dimension\" contraction measurement",
+    "\"Doeblin coefficient\" \"lower bound\" \"Dobrushin\"",
+    "\"quantum\" \"oscillation\" \"trace distance\" contraction coefficient",
+    "\"Asymptotic Replacement for Quantum Channel Products\" arxiv",
+    "\"Dobrushin\" \"oscillation\" \"Gaubert\" quantum",
+    "\"Doeblin\" \"1-(d-1)\"",
+    "\"Doeblin\" \"1 - (n - 1)\""
+  ],
+  "search_only_leads": [
+    {
+      "title": "On Properties of Doeblin Coefficients",
+      "url": "https://japneet644.github.io/files/DoeblinCoef.pdf",
+      "status": "Search snippet only; not used as an independently read proof."
+    },
+    {
+      "title": "Computational aspects of the trace norm contraction coefficient",
+      "url": "https://www.researchgate.net/publication/393923013_Computational_aspects_of_the_trace_norm_contraction_coefficient",
+      "status": "Search snippet only; not used as a proof source."
+    },
+    {
+      "title": "AIRR manuscript metadata result",
+      "status": "Incidental search result; manuscript not opened or assessed."
+    }
+  ],
+  "unresolved": [
+    "Exact historical priority or worldwide novelty of the combined dimension envelope.",
+    "Neighboring Proposition 36 HTML direction flag from READINGS1207; no PDF/proof adjudication.",
+    "Prior unspecified Theorem 5 diagnostic lacks supplied details; not treated as cleared."
+  ]
+}

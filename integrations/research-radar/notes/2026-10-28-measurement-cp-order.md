@@ -19,7 +19,7 @@ Using the unnormalized input-first Choi convention J(N)=sum Eij tensor N(Eij), t
 
 The Choi integral is well-defined: G_a>=0 and integral G_a=I, so integral Tr(G_a)=d; also0<=c_a<=Tr(G_a)/d. The positive integrand has integrable trace Tr(G_a)-d*c_a and hence integrable entries and norm in finite dimension. Its integral is positive. Thus E o Psi-R_Omega is CP and has trace(1-b)Tr(X). For b<1 it normalizes to a channel Q; for b=1 its positive Choi matrix has trace0 and vanishes. This supplies the positive decomposition
 
-    E o Psi = b R_(Omega/b) + (1-b) Q  (when b>0).
+    E o Psi = b R_(Omega/b) + (1-b) Q  (when 0<b<1); at b=1 use E o Psi=R_Omega separately.
 
 The chosen positive component is not the optimization over an arbitrary Hermitian common operator. In the2026 coefficient conventions this is a lower bound on the positive version alpha_+, and hence also a feasible bound for the relaxed versions; they are not identified for a general entanglement-breaking output channel.
 
@@ -30,3 +30,5 @@ Exact finite calibration. The four-point planar preparation channel from1206 has
 Falsifier and next task (`speculative`). Reject the extension if positivity/integrability of the Choi remainder or the retained preparation identity fails. Compare the dimension-only step with prior induced/coefficient comparison results before a priority claim. The CP channel decomposition permits an alternative implementation with a recorded reset; it does not supply that reset to an already observed instrument. The Pauli counterexample from1206 remains valid. Keep the actual record, posterior-law TV, trace-Wasserstein metric, positive CP order and Hermitian relaxation separate.
 
 Formal result. No new Lean declaration, upstream replay, model assessment, manuscript or score. [Reading identities](../evidence/2026-10-28-measurement-cp/READINGS1207.json), the prior-to-synthesis [subgraph](../evidence/2026-10-28-measurement-cp/SUBGRAPH1207.json), and [exact finite controls](../evidence/2026-10-28-measurement-cp/EXACT1207.json) delimit the evidence. The current directed laboratory/arXiv/AIRR/aiViXra/public-repository refresh is inventory only. The general analytic implication remains under audit; do not turn the finite calibration into a separate paper or transfer a predecessor's grade.
+
+Component audit1208 is now terminal and supports the stated hypotheses, with no grade or novelty certification. The endpoint display above was clarified after the audit; frozen original proofs and the full report remain in the [audit context](2026-10-29-component-audit.md).

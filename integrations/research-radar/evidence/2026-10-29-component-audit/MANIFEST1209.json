@@ -1,0 +1,177 @@
+{
+  "scope": "Original own component audit and controls; no foreign source bodies",
+  "original_files": [
+    {
+      "path": "input/check_classical1207.py",
+      "sha256": "caa4659ff28546a5629fca72aaee54bdad282329fc4a283bdc66df598a374c44",
+      "bytes": 971
+    },
+    {
+      "path": "input/check_exact1206.py",
+      "sha256": "7e39b3467675b14d11976c0539b50ab810ddac17d48e1cd76dc12c71082473a3",
+      "bytes": 3076
+    },
+    {
+      "path": "input/check_exact1207.py",
+      "sha256": "3ddfb8d3a40a5c1da7eda753d82c6199363e63f53267b7da3faf1ade3d0e4dfa",
+      "bytes": 3067
+    },
+    {
+      "path": "input/CLASSICAL1207.json",
+      "sha256": "cc6aec13189f3e60fa689a99869d57a1905ed91e985567188ffbe7b4627616e5",
+      "bytes": 6297
+    },
+    {
+      "path": "input/ENVELOPE1207.md",
+      "sha256": "7290beb325d0f4843db73bcaf8f849997b713ff54dec281e00a6d04c8035d8b6",
+      "bytes": 2581
+    },
+    {
+      "path": "input/EXACT1206.json",
+      "sha256": "3c3134e7c54316cecae2ca6c0ae5e3a6a58f10eddcc692682568895fb5fb5ab6",
+      "bytes": 3743
+    },
+    {
+      "path": "input/EXACT1207.json",
+      "sha256": "cdd059e82ac759c9de66ca66a8fd9746df60276e3ebd8bc73ad55a5d4f4027be",
+      "bytes": 1596
+    },
+    {
+      "path": "input/INPUT1208.json",
+      "sha256": "9cc1630ae94b9ff6a6580d463bd01e72062a78053c2b78bf4ae992f826464c12",
+      "bytes": 2161
+    },
+    {
+      "path": "input/PROOF1206.md",
+      "sha256": "d88051f7e152da6568d13b1149d5982a8ce112c3919cafc561d6c3b37608a7e0",
+      "bytes": 6843
+    },
+    {
+      "path": "input/PROOF1207.md",
+      "sha256": "07ff81c1aaff3c031d112c8d8b67066f0c19c89f899e06a614854609cb5c3b3a",
+      "bytes": 5576
+    },
+    {
+      "path": "input/READINGS1206.json",
+      "sha256": "c32a5f3579ce6b397e12a748e0eeb56a4376e43f8f38287728db154a0ede89b6",
+      "bytes": 1194
+    },
+    {
+      "path": "input/READINGS1207.json",
+      "sha256": "24388d17f4de8f10bcaff91f5c8c53c46e22337d4b8a066dc16e0a4d8087ca9a",
+      "bytes": 1628
+    },
+    {
+      "path": "input/REQUEST1208.md",
+      "sha256": "4fc7f70940d3a7799c443f202ba2c603fa5381b02837a5f883f5f0d9d600e4b5",
+      "bytes": 3139
+    },
+    {
+      "path": "output/AUDIT1208.txt",
+      "sha256": "b8cf457ea9bb82346d59d5fc5c4e6dccb1f9c995c997af827934ef7fe0291dc2",
+      "bytes": 26386
+    },
+    {
+      "path": "output/controls1208.json",
+      "sha256": "70ab3ca40832dd81fac9be669ffde66b3dd056848b8dd9dfea5b91296f315479",
+      "bytes": 11245
+    },
+    {
+      "path": "output/MANIFEST1208.sha256.json",
+      "sha256": "d853a366c72589236ec86d73cc32989505b711837c52f41c67374fc12f68554a",
+      "bytes": 7899
+    },
+    {
+      "path": "output/scratch_audit1208/check_classical1207.py",
+      "sha256": "caa4659ff28546a5629fca72aaee54bdad282329fc4a283bdc66df598a374c44",
+      "bytes": 971
+    },
+    {
+      "path": "output/scratch_audit1208/check_classical1207.py.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "output/scratch_audit1208/check_classical1207.py.stdout.txt",
+      "sha256": "04ab0c0db9cc77a8cddeef190682078aa230442d4f80669a4cb767b9b36312c1",
+      "bytes": 79
+    },
+    {
+      "path": "output/scratch_audit1208/check_exact1206.py",
+      "sha256": "7e39b3467675b14d11976c0539b50ab810ddac17d48e1cd76dc12c71082473a3",
+      "bytes": 3076
+    },
+    {
+      "path": "output/scratch_audit1208/check_exact1206.py.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "output/scratch_audit1208/check_exact1206.py.stdout.txt",
+      "sha256": "e846dc7884a4af96b3e576358161571f13a224cb247358d488e82d3c890a63c8",
+      "bytes": 3887
+    },
+    {
+      "path": "output/scratch_audit1208/check_exact1207.py",
+      "sha256": "3ddfb8d3a40a5c1da7eda753d82c6199363e63f53267b7da3faf1ade3d0e4dfa",
+      "bytes": 3067
+    },
+    {
+      "path": "output/scratch_audit1208/check_exact1207.py.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "output/scratch_audit1208/check_exact1207.py.stdout.txt",
+      "sha256": "cdd059e82ac759c9de66ca66a8fd9746df60276e3ebd8bc73ad55a5d4f4027be",
+      "bytes": 1596
+    },
+    {
+      "path": "output/scratch_audit1208/CLASSICAL1207.json",
+      "sha256": "cc6aec13189f3e60fa689a99869d57a1905ed91e985567188ffbe7b4627616e5",
+      "bytes": 6297
+    },
+    {
+      "path": "output/scratch_audit1208/EXACT1206.json",
+      "sha256": "e846dc7884a4af96b3e576358161571f13a224cb247358d488e82d3c890a63c8",
+      "bytes": 3887
+    },
+    {
+      "path": "output/scratch_audit1208/EXACT1207.json",
+      "sha256": "cdd059e82ac759c9de66ca66a8fd9746df60276e3ebd8bc73ad55a5d4f4027be",
+      "bytes": 1596
+    },
+    {
+      "path": "output/scratch_audit1208/finalize1208.py",
+      "sha256": "34f5234d7ec11deb8e79d360673bde498a7d5f1f3d68520987ea6fb6748ddcd6",
+      "bytes": 17366
+    },
+    {
+      "path": "output/scratch_audit1208/run_controls1208.py",
+      "sha256": "cadd50f5899b0c03898b3e9d53d376550776056b177c52a93ea8fcb6789cfaf2",
+      "bytes": 3151
+    },
+    {
+      "path": "output/scratch_audit1208/supplement_controls1208.py",
+      "sha256": "e1ffd749444b45476d26705e9811fed37f75b75d92d5fc3ff11ae134e1f089b5",
+      "bytes": 1893
+    },
+    {
+      "path": "output/sources1208_audit.json",
+      "sha256": "8527533f67f158055ca42b84bb9e171f8f9284d01f4dc3ca60d266a8be9a3587",
+      "bytes": 5130
+    },
+    {
+      "path": "output/supplement1208.json",
+      "sha256": "2d42acd6eb957e423c5db1d91733c396d838db8cc52297010c3b58101c306857",
+      "bytes": 586
+    },
+    {
+      "path": "output/verdict1208.json",
+      "sha256": "7ab50c2359efb01e291e5f81aebead18bd7afd7e3c44bda57181aa42d0804e6d",
+      "bytes": 11286
+    }
+  ],
+  "zip_sha256": "03ee29482fef004492d18bf724f9e6faa5db9b8fbbb0f1b5addc2a8f007441ae",
+  "display_policy": "LF views; exact bytes and failed newline comparison retained in zip"
+}
