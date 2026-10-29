@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "observed_on": "2026-10-28",
+  "observed_on": "2026-10-29",
   "coverage": "Directed primary-source radar with version-pinned catalogue metadata. Bibliographic coverage is never proof coverage.",
   "source_cards": [
     {
@@ -1239,6 +1239,23 @@
       "anchors": [
         "domain.quantum_information_theory"
       ]
+    },
+    {
+      "id": "modular-preparation-2026-scoped",
+      "title": "Modular Lower Bounds on Reeh-Schlieder State Preparation: scoped cost and generator audit",
+      "url": "https://arxiv.org/html/2605.18640v1",
+      "kind": "preprint",
+      "published_on": "2026-05-18",
+      "observed_on": "2026-10-29",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Core Tomita/Jensen preparation bound checked; direct antecedent blocks generic preparation-cost novelty. Own synthesis records full-versus-reduced modular-generator objection in ball geometry.",
+      "limits": "Not complete QFT or manuscript audit; Proposition1 retained. Interior-only CHM integral must not be silently identified with full -logDelta. 203 finite rational controls are calibration, not formal or continuum certification.",
+      "reuse": "Metadata and own derivation only; no source text or user video redistributed.",
+      "anchors": [
+        "domain.algebraic_quantum_field_theory",
+        "domain.quantum_information_theory"
+      ]
     }
   ],
   "candidates": [
@@ -1713,6 +1730,10 @@
     "followup1214": {
       "evidence": "integrations/research-radar/evidence/2026-10-29-preparation-publication/SOURCES1214.json",
       "scope": "15primary endpoints current inventory; OpenAI7ef5c0, DeepMind5a2fb8 unchanged. Not exhaustive. Exact published review1211 reconciled; no new score or review.32rational EB-boundary controls and440 joint-family controls, own finite calibration only."
+    },
+    "followup1216": {
+      "evidence": "integrations/research-radar/evidence/2026-10-29-modular-preparation/MANIFEST1216.json",
+      "scope": "Directed primary refresh; general preparation-cost direction already has antecedents; no candidate score or new manuscript. Geometry convention objection retained. Canonical graph unchanged."
     }
   }
 }
