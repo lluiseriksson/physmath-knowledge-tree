@@ -1,0 +1,24 @@
+{
+  "observed_at": "2026-10-29T14:29:10.014Z",
+  "candidate": "non-gad-rectangular-entropy",
+  "confidence": "Own elementary finite-dimensional analytical reduction; no independentreview,formalproof,priorityornewpaperclaim",
+  "prior_deduplication": {
+    "PROOF899_sha256": "f3d705673d176269cfa176e34deaded00d7ce46718cd97d18372d50c8b57268f",
+    "reading": "complete899read;901/906andpost907/908/910read1283. Prior899reducescoefficientrays,notcross-blockcouplings. Alloldadversesandthermalmismatchremain."
+  },
+  "setup": "Fixpositive blocksA,B onthe SAME finite referenceR,Tr(A+B)=1. Letp=TrB. Forrho(C)=[[A,C],[C*,B]]>=0, sigma=diag(A,B)andpstayfixed. Workon supportsHA=suppA,HB=suppB; a=rankA,b=rankB. Their embeddingsinR remainfixedandmayoverlap/noncommute.",
+  "factorization": [
+    "PositivityforcesCtoannihilatekerB andC*toannihilatekerA. Restricttopositivedefinitesupportblocks; writeC=A^(1/2) K B^(1/2) withK:HB->HA. Congruencegivesthemiddleblock[[I,K],[K*,I]],PSD iff||K||<=1. No inverseoutsideasupportandnobranchisrotatedorclassicalized.",
+    "For0<p<1,a,b>=1,m=min(a,b). SVDK=U D(s1,...,sm)V*,0<=sj<=1. ExpressK asfiniteconvexcombinationofthe2^m saturatedmapsK_epsilon=U J_epsilon V*,whereJ_epsilonhasrectangularsingulardiagonalentries+/-1. Weightsw_epsilon=product_j(1+epsilon_j*sj)/2are nonnegative,sumto1 andaveragetheprescribedK.",
+    "Ifa>=b,eachK_epsilonis an isometry(K_epsilon*K_epsilon=I_b); ifa<=b,acoisometry(K_epsilon K_epsilon*=I_a). For a=b thesearesupportunitaries. OriginalA,B,p andtheirrelativeRgeometryareunchanged.",
+    "Because(Nhat tensorid)rho(C)isaffineinC andsigma,p fixed, G(C)=S((Nhat tensorid)rho(C))-S(sigma)-e_N(p)+h(p)is concaveonthisfiber. HenceG(K)>=sum_epsilon w_epsilon G(K_epsilon)."
+  ],
+  "conclusion": "ForallfixedA,B, validityofQforallcontractions isequivalenttovalidityonthesaturatedsupport-isometry/coisometrycouplings: sufficiencybyconcavityandnecessitybyrestriction. AnynegativeGinstance forcesanegativeGinstancewiththesameA,B,pandoneofthesecouplings. No entropycomparisonornormcompressionhypothesiswasassumed.",
+  "rank_boundary": "Thesaturatedmiddleblockhasrankmax(a,b),bySchurcomplementonI;supportcongruencepreservesrank. Endpointinputstateshaverankmax(a,b),notgenerallyone. Thusarbitrarymixedquantumreferencesarenotreducedtopureinputs. Ifa=b=1theendpointsarepuresotheknownpure-statecasecoversallrank-oneconditionalbranches; ifa=1,b>1theendpointsarestillmixed.",
+  "endpoints": "Forp=0or1,PSDforcesC=0andtheknownfixedtargetgapG=0;handleitdirectlyratherthandividingbyabranchmass.",
+  "hypothesis_reduction": "Eliminatesunsaturatedcross-blockcontractionsfromtheuniversalproof/counterexampletargetandboundsrequiredinputrankbymax(rankA,rankB)ineachfixedfiber. Itdoesnotboundreference dimension,diagonalranks,noncommutativityorproveG>=0onsaturatedmixedendpoints.",
+  "falsifier": "ChangedA/B/p,loss oftheirrelativeembedding,wrongconcavitydirection,divisiononzerosupport,orcallingallendpoints pure invalidatesthereduction. No inferencefromnonnegativefinitecontrolstoarbitraryG.",
+  "next": "VerifyexactrationalSVD-signmixturewithnoncommutingfixeddiagonals,andamixedentangledsaturatedcoisometryendpointtoruleoutfalsepure-stateextension. ThenfocusontheunprovedmixedsaturatedendpointtradeoffC_E<=delta_e+I(Z:ER),notanotherfloatgridorpaper.",
+  "warning_on_gauges": "TheSVDrotationsconstructcross-blockcouplings only; theyarenotindependentchangesofthephysicalbranchreferencebases. Acontrolledreferenceunitaryneednotpass throughthechannelorleaveoutputentropyunchanged andcannotbesilentlyusedtosetK=I. Preserveoriginalrelativeembeddingsandmixeddiagonalranks.",
+  "fixed_channel_rectangular_consequence": "Usingthealready scopedB_N<=>Qdictionary901, anyfixed-channelnegativeG witness canbechosenwithrank(rho_AR)=max(rankA,rankB)<=dimR. A purificationthereforehasBdimension<=dimR, yieldingnormalizedbranchrectanglesX,Y ofshape m-by-n withm<=n. ThusforTHISfixedN universalB_N canbecheckedon m<=n withoutlosingcounterexamples. Thisdoesnotboundn, preserveoriginalX/Y, orassertthesame restrictionforallP5-E coefficientfamilies."
+}

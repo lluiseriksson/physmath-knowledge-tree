@@ -1,0 +1,31 @@
+{
+  "scope": "Exact ansatz-specific falsifiers, not a fulljointlift impossibility ornewpaper",
+  "matrix_concavity_guard": {
+    "r": "3/5",
+    "c": 1,
+    "y": 1,
+    "h": "1/10",
+    "x_values": [
+      "9/10",
+      "1",
+      "11/10"
+    ],
+    "feasible_quartics": [
+      "-80239/10000",
+      "-9",
+      "-98159/10000"
+    ],
+    "offdiagonal_midpoint_gap_real": "0",
+    "offdiagonal_midpoint_gap_imag": "-1/100",
+    "gap_determinant": "-1/10000",
+    "PSD": false
+  },
+  "anisotropic_normalization_guard": {
+    "c": "2",
+    "epsilon": "1/2",
+    "antiholomorphic_coefficient": "-1/8",
+    "normalization_preserves_analyticity": false
+  },
+  "fulljointlift_impossibility": false,
+  "decision": "Park pending a concrete new affine mechanism or exact applicable primary theorem"
+}

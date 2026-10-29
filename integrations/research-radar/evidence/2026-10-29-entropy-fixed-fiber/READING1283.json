@@ -1,0 +1,79 @@
+{
+  "observed_at": "2026-10-29T14:24:56.821Z",
+  "candidate": "non-gad-rectangular-entropy",
+  "scope": "Recovery and full reading of already completed component audits901/906 and own later907/908/910; no new assessment, reviewer, grade or scientific certification",
+  "reports": [
+    {
+      "path": "D:/Proyectos/airr-investigacion/2026-10-27_entropy901-audit/AUDIT901.txt",
+      "bytes": 24882,
+      "sha256": "a1fce0159ffb5daf5c005797b3f43bb10c15afcbc87193e5d65764f147392d97",
+      "reading": "complete terminal report read this activation; reused assessment, not a new model review",
+      "public_repository_normalized_text_equal": true
+    },
+    {
+      "path": "D:/Proyectos/airr-investigacion/2026-10-27_entropy906-audit/AUDIT906.txt",
+      "bytes": 20822,
+      "sha256": "370165da2e921120801917d65f0d326a7123adef59fd152b04e784dc2cc8aa16",
+      "reading": "complete terminal report read this activation; reused assessment, not a new model review",
+      "public_repository_normalized_text_equal": true
+    }
+  ],
+  "manifests": [
+    {
+      "id": 901,
+      "sha256": "d7ea9f794bed17461844c5c2888a413879d5455ed56891c2f9e7a2580408d769",
+      "matches_canonical": true
+    },
+    {
+      "id": 906,
+      "sha256": "f85a5334c05ebae5349b7f1fd354dac7333fdef98b7fd9999115f9b067d50f75",
+      "matches_canonical": true
+    }
+  ],
+  "review_context": "RequestedGPT6Astraxhigh, effectiveidentity/effort/independence notattested, sharedfilesystem, component-only unscoredreports. No reviewrestarted andno score transferred.",
+  "audit901_objections": [
+    "O1: K^2=U0U1 forcescorner onlywhenU0U1>0; zeroextremes direct.",
+    "O2: SupportcontainedinP5; exactP5onlyifallfourmasses positive.",
+    "O3: Normalizebranchentropies and justifyfixedsupport spectralderivative at2 includingzeros.",
+    "O4: B_N<=>Q onlyforthefixedchannelandallfinite references, notthewholecoefficientdomain.",
+    "O5: MissingP5-E onattainedrays oruniversalfixedQ. Rankloss,compressionpositivity,integer moments do notsupplyit.",
+    "O6: Rayis sufficient notnecessaryforthefixedchannel; no exclusionofotheradditivityroutes.",
+    "O7: Olderown546/551priority/background notverifiedwithinaudit.",
+    "O8: Do notexecuteoriginalcheck900 withitsoutside-scopewrites; use safecheckedcalculationifneeded.",
+    "O9: Directedversionreading, notexhaustivepriorart orfullsourcetheoremproof."
+  ],
+  "audit906_objections": [
+    "A: DefineN,e_N andallpremises explicitly; original904notselfcontained.",
+    "B: BudgetH(Z|R)<=44/125*p(1-p)isrestrictiveandsufficient,notnecessaryoruniversal.",
+    "C: Missingexacttradeoff C_E<=delta_e+I(Z:ER); DPI+h(p)alone leavesgap.",
+    "D: Curvatureconstantnotoptimalandclassnotmaximal.",
+    "E: Purebranchsupportsoverlapmeansnonorthogonal,notnontrivialsubspaceintersection.",
+    "F: Finitepassedcontrols/matrixgrids do notprovetheuniversalentropyinequality.",
+    "G: No Lean,attestedruntimeidentity,independenceorfullnoveltyaudit."
+  ],
+  "later_notes": [
+    {
+      "name": "POST907.txt",
+      "sha256": "2d637f5b958d24be91e01abc90a3be518d16d18f9d6e6ef29109cd9e1c99f7b9",
+      "bytes": 2483,
+      "reading": "complete own working note read; explicitly notcoveredby906 review"
+    },
+    {
+      "name": "PROOF908.txt",
+      "sha256": "9b4060252c27429ce37637a90a32e91c2e727e85e0ba45b078fb78077ffb6ee9",
+      "bytes": 3214,
+      "reading": "complete own working note read; explicitly notcoveredby906 review"
+    },
+    {
+      "name": "PROOF910.txt",
+      "sha256": "77b568ec8b0a73b0905d8cac3d7b57ba0b04699d87bab04b2a324df14f9c627c",
+      "bytes": 2592,
+      "reading": "complete own working note read; explicitly notcoveredby906 review"
+    }
+  ],
+  "known_results": "Purestates, classicalreference andA-diagonalstates coveredbyaudits; own907separablecondition and908isotropicline/910scopegate remainlaterunreviewed extensions. Neither coversarbitrarymixedentangledreference.",
+  "fixed_target": "ForN:(x,y,z)->(3x/5,3y/5,z/4+1/5), allfiniteR andallrho_AR: G=S((Nhat tensorid)rho)-S((DeltaZ tensorid)rho)-e_N(p)+h(p)>=0. ExactG=delta_e+I(Z:ER)-C_E. AnegativeGrefutesfixedB_N, notautomaticallyHolevoadditivity.",
+  "new_hypothesis": "A fixed-diagonal block-fiber/extremal-contraction reduction may give a useful missinghypothesis target. FirstdeduplicateagainstPROOF899andlaternotes; preserveallmixeddiagonalbranchstatesanddimensionquantifiers. Do notinferfrompurestatevaliditywithoutafixed-affinefiberargument.",
+  "falsifier": "Incorrectconcavitydirection, changeddiagonalmarginals/p, unproveduniformreferencedimension, orhiddenreuseofthermalidentitydefeatsaproposedreduction.",
+  "next": "ReadoriginalPROOF899beforetheblock-fiberattempt; aimforanexplicitfinite-dimensionalstatementandexactcontrol,notafloatgrid oranotherminor paper. No gradeorfulladditivityclaim."
+}
