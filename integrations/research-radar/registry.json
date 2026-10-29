@@ -1284,7 +1284,7 @@
       "reading_status": "selected_sections_read",
       "evidence": "literature",
       "claim": "Selected gap criterion retains worst-case onset and stationary conditioning; Problem1.1 explicitly asks for classification of gapped injective EMPS. A selected helper-lemma time-order error is recorded separately from these source-level claims; do not rely on it downstream without repair.",
-      "limits": "Selected source-helper identity A.1 refuted by explicit periodic bistochastic examples; sourceA.3 persistence is prior. Main parent/gap theorems and A.9 are not refuted or certified. Later five-page correction1225 is now a published Working paper with one exactPDF full AI review: overall4,technical5,importance3; all M1-M5 retained with accompanying clarification. Effective reviewer identity/effort/independence unattested. This is not a whole-source-paper proof audit, editorial admission, novelty certificate or Lean proof; no grade inherited from component audit1220.",
+      "limits": "Selected source-helper identity A.1 refuted by explicit periodic bistochastic examples; sourceA.3 persistence is prior. Main parent/gap theorems and A.9 are not refuted or certified. Later five-page correction1225 is now a published Working paper with one exactPDF full AI review: overall4,technical5,importance3; all M1-M5 retained with accompanying clarification. Effective reviewer identity/effort/independence unattested. This is not a whole-source-paper proof audit, editorial admission, novelty certificate or Lean proof; no grade inherited from component audit1220. Follow-up v2 repairs the scoped A.9 proof under explicit stationary convergence assumptions, without certifying source main theorems. Eight-page PDF bca2edda25970c0f4250fb110e2683e8de200073128427d8ad84abef803baef4 has its own complete assessment: overall4.20, supplementary technical8.30/importance3.70, minor revision; M1-M6/L1-L4 and all v1 adverses preserved. The imported exponential rate is existential/admissible, not arbitrary. No quantitative onset/moment result or verified independence follows.",
       "reuse": "Metadata and own derivation only; no redistributed source full text, evaluation tasks or inferred training permission.",
       "anchors": [
         "domain.quantum_information_theory",
@@ -1801,6 +1801,10 @@
     "followup1238": {
       "evidence": "integrations/research-radar/evidence/2026-10-29-nonlinear-codes-boundary/READING1238.json",
       "scope": "One deduplicated Microsoft mathematical manuscript added, first preprint14October not today. Selected statement/overview read; own exact falsifier rejects a naive modular-sphere bridge, not the source. No canonical graph or new manuscript candidate."
+    },
+    "followup1259": {
+      "evidence": "integrations/research-radar/evidence/2026-10-29-temporal-v2-review/MANIFEST1259.json",
+      "scope": "Existing EMPS source updated with exact v2 full report, adverse comments, scoped Choi repair, primary antecedents and public binding; v1 preserved. No new sourcecard, candidate, graph edit or assessment."
     }
   }
 }
