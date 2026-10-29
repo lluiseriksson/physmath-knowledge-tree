@@ -1,0 +1,92 @@
+{
+  "schema": "full_manuscript_assessment_v1",
+  "assessment_id": "optical-review1336",
+  "created_utc": "2026-10-29T23:02:36.041050+00:00",
+  "paper_id": "ARR-2026-2WNM69XY548JHVMC",
+  "artifact_scope": "exact frozen v4 candidate, 24 pages; existing paper",
+  "pdf_sha256": "1285a454550aaaac58d583d26f15dd05175f6112606aa8530b4f06a9f829bed0",
+  "source_sha256": "a8092f18a95f6f6a1528295be7b224c1982e2738320cb5373fb74fda8f24d2ef",
+  "recommendation": "minor revisions",
+  "material_mathematical_error_found": false,
+  "importance_significance": {
+    "score": 6,
+    "scale": [
+      0,
+      10
+    ],
+    "explanation": "Solid specialized uniform bosonic comparison, Gaussian/marginal converse and explicit witness; established feedback/minimax mechanisms and no practical numerical performance."
+  },
+  "technical_quality": {
+    "score": 8,
+    "scale": [
+      0,
+      10
+    ],
+    "explanation": "Coherent handling of quantifiers, common decoding, cost, reference memory and analytic certificate; trusted computation and minor reproducibility/exposition limitations remain."
+  },
+  "scores_subjective_ai_assessment": true,
+  "inherited_score": false,
+  "target_score": null,
+  "explicit_pair_conclusion": "Supported under the stated analytic contract, frozen scalar premises and trusted ball arithmetic: Delta_exp >= 6e-52; resource difference >= 6e-52-(6+log(2))/E >0 for E>=1e53.",
+  "old_capacity_matched_pair_numerically_evaluated": false,
+  "full_numerical_campaign_rerun": false,
+  "refit_performed": false,
+  "independence_claimed": false,
+  "formal_proof_claimed": false,
+  "worldwide_priority_claimed": false,
+  "objections": [
+    {
+      "id": "O1",
+      "severity": "minor",
+      "kind": "portable_verification",
+      "blocking": false,
+      "summary": "Portable static verifier checks integrity and coverage, not all stored mathematical inequalities; add a lightweight numerical-record verifier."
+    },
+    {
+      "id": "O2",
+      "severity": "limitation",
+      "kind": "backend_provenance",
+      "blocking": false,
+      "summary": "Recorded binary hashes omit acb.pyd and complete shared-library dependency closure; avoid full-environment or retroactive attestation claims."
+    },
+    {
+      "id": "O3",
+      "severity": "substantive_reservation",
+      "kind": "significance",
+      "blocking": false,
+      "summary": "Training/minimax and non-Gaussian fading mechanisms have prior antecedents; tiny explicit bound establishes existence for one pair, not practical advantage or actual-gap estimation."
+    },
+    {
+      "id": "O4",
+      "severity": "minor",
+      "kind": "exposition",
+      "blocking": false,
+      "summary": "Dense abstract/provenance history should be streamlined; fix Consequently Writing and clarify zero transmitted-photon wording."
+    }
+  ],
+  "checks": {
+    "archive_payloads": 49,
+    "input_manifest_files": 6,
+    "run_manifest_artifacts": 19,
+    "workers": 8,
+    "segments": 320,
+    "exact_coverage": [
+      0,
+      400
+    ],
+    "all_stored_bounds_below_1e_minus6": true,
+    "largest_bound_upper_approx": "1.828391617374686366193344451e-7",
+    "largest_bound_segment": 160,
+    "all32_table_constants_match": true,
+    "scalar779_coarse_bounds_pass": true,
+    "exact_rational_log_bracket_pass": true,
+    "exact_rational_gap_check_pass": true,
+    "small_M_and_tail_recomputation_pass": true,
+    "pdf_pages": 24,
+    "all24_render_hashes_reproduced": true
+  },
+  "retained_failures": [
+    "Inspection assertions completed, then cp1252 Unicode page-map output error; ASCII-safe read-only inspection and exact Fraction endpoint checks passed. No campaign or assessment restart.",
+    "Initial report-writing process creation rejected because Windows command line exceeded length limit. No files written; same report written in bounded parts."
+  ]
+}

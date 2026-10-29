@@ -1,0 +1,72 @@
+{
+  "scope": "Public exact-artifact assessment/native provenance and read-only stored-record inspection; no manuscript release, new assessment or score",
+  "reviewed_pdf_sha256": "1285a454550aaaac58d583d26f15dd05175f6112606aa8530b4f06a9f829bed0",
+  "native_report_sha256": "408ec74968caded1df8391b560be862fc4da3da523683db33a0dd35211386a63",
+  "files": [
+    {
+      "file": "BYTE-PROVENANCE1339.json",
+      "bytes": 2750,
+      "sha256": "e59b9551ddcf923eda7f1a343102fcdfe42760e179684bd8ca9374bbfa2ea727"
+    },
+    {
+      "file": "CONSTANTS1339.json",
+      "bytes": 4408,
+      "sha256": "8e036bfafffc473ac0a849926191081ea4cdcca158dd472f7d304274c46573de"
+    },
+    {
+      "file": "COPY-VERIFICATION.json",
+      "bytes": 1881,
+      "sha256": "d58c27ecfdbfc06acd3f4123e5c74f69908b2f9e761a5c1aef8aee692b77de70"
+    },
+    {
+      "file": "README.md",
+      "bytes": 6493,
+      "sha256": "10cc80d901a70c99ff6798ab7a2d33b54487c359e4a1eb022e82e132ce975a6e"
+    },
+    {
+      "file": "RECORD-CHECK1339.json",
+      "bytes": 1097,
+      "sha256": "62bf9ef386a3a0f4bc0060171fba6bf9e163334ad3a84e308f8800da1f68cc65"
+    },
+    {
+      "file": "RESPONSE1338.md",
+      "bytes": 5930,
+      "sha256": "532bf4281acb7da4b88059f02109fc2151871d5ba9b39069d67e14c90063be67"
+    },
+    {
+      "file": "SOURCE-CHECK1339.json",
+      "bytes": 1133,
+      "sha256": "04baae6c2b679edc03e4cbfc53ad8279531dd3094340e9607ce37fca65be0802"
+    },
+    {
+      "file": "context.json",
+      "bytes": 3530,
+      "sha256": "c2fbf502b338fb44d711863582aba3d55be12520f9e66716d3be8c5158eecf09"
+    },
+    {
+      "file": "native-review1336.zip",
+      "bytes": 21227,
+      "sha256": "8bfe0e88e249b2802592455f83d5a45753ac9c8d133f65fd4d58610fe3a66002"
+    },
+    {
+      "file": "report.txt",
+      "bytes": 23224,
+      "sha256": "408ec74968caded1df8391b560be862fc4da3da523683db33a0dd35211386a63"
+    },
+    {
+      "file": "source_pins.json",
+      "bytes": 13017,
+      "sha256": "aba9ef1ea66f4cd24829ef47de80297c3e55533092ee249e9e4876af1b925759"
+    },
+    {
+      "file": "verdict.json",
+      "bytes": 3829,
+      "sha256": "3502432f1942538dfae1611f0b11c297cd29a246cbee4648f115f6211867117f"
+    },
+    {
+      "file": "verify-records1339.py",
+      "bytes": 10874,
+      "sha256": "c7f10eb8dc6030d9ea8ca83098b3ea3d7aa7df084b371268ec549e98d2b81b67"
+    }
+  ]
+}
