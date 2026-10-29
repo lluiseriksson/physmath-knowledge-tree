@@ -1,0 +1,108 @@
+PHASE-ORBIT DICTIONARY AND UNCERTAINTY PLUG-IN1302
+Own unreviewed analytic note. Fixed N=(3/5,1/4,1/5), natural logarithms.
+No new manuscript, grade, formal result or global-Q proof/refutation.
+
+1. Exact systems, without discarding the reference
+For arbitrary rho_AR choose a purification
+ |psi>_ABR=sum_i sqrt(p_i)|i>_A |u_i>_BR.
+Let V:A->DE be a pure Stinespring isometry for N, so E implements Nhat.
+Coherently copy the computational label to a fresh qubit C:
+ |Omega>_CDEBR=sum_i sqrt(p_i)|i>_C V|i>_DE |u_i>_BR.
+Define M=ER and L=DB. This state is pure on CML, for every finite R/B.
+No independent reference rotation or gauging of the support coupling is used.
+
+Measuring C in Z gives exactly
+ xi_ZM=sum_i p_i |i><i| tensor E_i tensor rho_R^i.
+Measuring C in X gives two equiprobable states on M:
+ tau=(Nhat tensor id)rho_AR and W_E tau W_E.
+Uniformity follows from <V0,V1>=0, not from p=1/2.
+Their average is bartau=(Nhat tensor id)(DeltaZ tensor id)rho.
+The checked phase covariance906 identifies the second state with this
+W conjugate. Therefore
+ I(X:M)=S(bartau)-S(tau)=C_E,
+ I(Z:M)=I(Z:ER)_xi,
+ G=delta_e(p)+I(Z:M)-I(X:M).
+This is an exact cq dictionary, not a new proof of its sign.
+H(X|M)=ln2-C_E, while H(Z|M)=h(p)-I(Z:M).
+
+2. What the standard uncertainty theorem actually supplies
+Berta et al.,0909.0950v4 (1March2011; first preprint7September2009):
+https://arxiv.org/html/0909.0950v4
+Selected main Eq2 and system/entropy conventions read; full proof not audited.
+Its same-memory expression, after converting bits to nats,
+is H(X|M)+H(Z|M)>=ln2+H(C|M).
+For pure Omega, rank-one Z measurement has pure conditional ML states.
+Consequently H(Z|M)-H(Z|L)=S(L)-S(M)=H(C|M).
+Thus its application here yields
+ H(X|M)+H(Z|L)>=ln2,
+ C_E<=H(Z|L),
+ G>=B_U:=delta_e(p)+I(Z:M)-H(Z|L).
+Neither the sign of B_U nor a channel-dependent positive uncertainty
+remainder is supplied automatically. The purifier B remains in L.
+
+3. Exact insufficiency control, at an already-known Q equality
+Take rho_A=|+><+| and R,B trivial, p=1/2. Then M=E and L=D.
+Write a=(h(29/40)+h(19/40))/2, e=e_N(1/2).
+Complementarity gives G=0 exactly and delta_e+I(Z:E)=I(X:E).
+Hence the proposed lower bound reduces to
+ B_U=I(X:E)+I(Z:D)-ln2.
+
+For the X signal states, choose their Stinespring purifications and
+rotate the D subsystem of one by U=[[0,1],[-1,0]].
+The E marginals stay unchanged. Their overlap has magnitude3/5:
+ N(|+><-|)=[[1/8,-3/10],[3/10,-1/8]],
+ Tr[U N(|+><-|)]=3/5.
+The equiprobable mixture of these two pure purifications has entropy h(4/5).
+DPI under discarding D gives I(X:E)<=h(4/5).
+The elementary atanh integral for binary entropy gives
+ ln2-h(4/5)>= (3/5)^2/2=9/50.
+
+For the Z signals on D the two probability vectors have first
+coordinates a0=29/40 and a1=19/40. On this interval
+ a(1-a)>=319/1600, so -h''(a)<=1600/319.
+The bounded-curvature Jensen gap at the midpoint gives
+ I(Z:D)<= (a0-a1)^2/[8*(319/1600)]=25/638.
+Combining yields the certified bound
+ B_U<=-9/50+25/638=-1123/7975<0.
+The Fraction controller checks the channel/unitary arithmetic and the
+rational constants. The entropy inequalities are the analytic arguments
+above, not numerical eigenvalue probes or a formal proof.
+
+Thus this unstrengthened uncertainty plug-in cannot certify even this
+saturating instance of the already-established pure Q sector. This does
+not refute the uncertainty theorem, global Q, other strengthened
+uncertainty relations or channel additivity. It does not show that no
+combination of the theorem with additional channel structure could work.
+
+4. Recoverability: identify the missing premise before applying it
+Fawzi--Renner1410.0664v3 (21January2015; first preprint2October2014):
+https://arxiv.org/html/1410.0664v3
+Selected Main result Eqs2–3 and root-fidelity convention read, not proof.
+For a specified tripartite state there exists a recovery operation with
+F>=exp[-I(A:C|B)/2] in nats.
+No identification of our uncertainty remainder with that particular CMI
+has yet been proved. Even with such an identification, the existence
+statement alone is not a uniform positive lower bound on the remainder:
+that would require an appropriate upper bound on the best recovery
+fidelity, not merely one chosen recovery map with poor fidelity.
+No Fawzi--Renner conclusion is instantiated here, and no claim that all
+recoverability mechanisms fail is made.
+
+5. Scope, falsifiers and disposition
+Preserved: p, jointER, arbitrary finite reference/purifier, support geometry.
+Removed: only the proposed automatic route from the unstrengthened standard
+uncertainty inequality to G>=0. No hypothesis of the target Q was removed.
+Falsifiers: an incorrect X/Z marginal dictionary, conditional-entropy
+duality, channel/purification overlap or curvature inequality.
+No root model assessment covers this note;901/906 and1301 remain distinct.
+formal:none; literature:selected statements; heuristic:no floating search;
+speculative:global Q and a channel-specific positive-remainder mechanism.
+Primary reading is directed, not an exhaustive prior-art survey.
+The public radar search found unrelated phase-orbit notes; no identical
+tripartite plug-in was located in that bounded search. This is not novelty.
+
+Keep1301/1302 together as one scoped global-method audit for the existing
+candidate, without a separate minor manuscript, grade or claim of Q progress.
+Do not repeat product-base local scans,1301 strict-coefficient attempts or
+this automatic uncertainty plug-in. Any future strengthened remainder
+must come with an actual channel estimate, not a renamed G>=0.
