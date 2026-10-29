@@ -1,0 +1,72 @@
+{
+  "utc": "2026-10-29T12:40:31.186Z",
+  "confidence": "literature; selected local formal-source argument checked by reading, no end-to-end kernel replay",
+  "sources": [
+    {
+      "repository": "project-numina/kakeya-3d",
+      "commit": "a26427e3c2fcaf9f98694fbd0d4dd49e41dcf5e3",
+      "path": "Unconditional/FiniteJointGeometry.lean",
+      "url": "https://raw.githubusercontent.com/project-numina/kakeya-3d/a26427e3c2fcaf9f98694fbd0d4dd49e41dcf5e3/Unconditional/FiniteJointGeometry.lean",
+      "sha256": "052c7e812d6cb7363f2c22fb033448bc5c47f3f5e9c6bd29a57fce9f61611b06",
+      "bytes": 30360,
+      "reading": "Complete finite_selected_old_class_mass_ratio statement and local proof lines33-123; remaining file not audited"
+    },
+    {
+      "repository": "M32026/3d-sticky-kakeya",
+      "commit": "42f739b484fd055e0aa29601c35677ad996f2ef2",
+      "path": "MyLeanRepo/Kakeya/Assouad/PropStickyFiniteFiberRatio.lean",
+      "url": "https://raw.githubusercontent.com/M32026/3d-sticky-kakeya/42f739b484fd055e0aa29601c35677ad996f2ef2/MyLeanRepo/Kakeya/Assouad/PropStickyFiniteFiberRatio.lean",
+      "sha256": "9965f52200b530dac60d911b31a983c82e273bb727170c4a2e412c9d0823c1d3",
+      "bytes": 9726,
+      "reading": "Complete finite_uniform_fiber_ratio statement/proof lines18-99 and weighted companion101-186 read; later geometric application declarations188-268 read; imports not replayed"
+    },
+    {
+      "path": "Unconditional/JointGeometricDefinitions.lean",
+      "url": "https://raw.githubusercontent.com/project-numina/kakeya-3d/a26427e3c2fcaf9f98694fbd0d4dd49e41dcf5e3/Unconditional/JointGeometricDefinitions.lean",
+      "commit": "a26427e3c2fcaf9f98694fbd0d4dd49e41dcf5e3",
+      "sha256": "f70b4ef265d74e06cb82df8518c5b3a4ddff3c93ec0b6272ec3351a77aea7158",
+      "bytes": 2511,
+      "lines": 61,
+      "reading": "JointLocalizedSelectionData fields38-57 read"
+    },
+    {
+      "path": "Unconditional/JointLocalizedRefinement.lean",
+      "url": "https://raw.githubusercontent.com/project-numina/kakeya-3d/a26427e3c2fcaf9f98694fbd0d4dd49e41dcf5e3/Unconditional/JointLocalizedRefinement.lean",
+      "commit": "a26427e3c2fcaf9f98694fbd0d4dd49e41dcf5e3",
+      "sha256": "bdbf1886eeac626d7b2903829a540eeee7bf91379cea7d7d707ad5f768730336",
+      "bytes": 8440,
+      "lines": 177,
+      "reading": "exists_joint_localized_refinement contract48-72 and local argument73-140 read; construction of raw localization and its imported lemmas not audited"
+    }
+  ],
+  "locator_only": [
+    {
+      "url": "https://raw.githubusercontent.com/M32026/3d-sticky-kakeya/42f739b484fd055e0aa29601c35677ad996f2ef2/MyLeanRepo/Kakeya/Assouad/AbsorptionHelpers.lean",
+      "sha256": "cac79b314f95b2f349ae14100e2aadc308305eb04e5338117b4fd230cf149865",
+      "status": "Fetched and searched; requested lemma not in this file, no proof-reading claim"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/project-numina/kakeya-3d/a26427e3c2fcaf9f98694fbd0d4dd49e41dcf5e3/Unconditional/SpatialLocalization.lean",
+      "sha256": "8a5a10e6692f892b43c259ca4578096e7d25fe482d7ffbb84f70035853f069a9",
+      "status": "Fetched/searched, selected interface locator only; full proof not audited"
+    }
+  ],
+  "sourced_fact": "The finite per-parent mass ratio is derived from ambient class uniformity H, selected class uniformity uniformLoss and one global retention ratio weightLoss/density on a nonempty finite set of active parents.",
+  "mechanism": "Summing ambient(parent)<=H*ambient(other) and selected(other)<=uniformLoss*selected(parent) bounds parentCount*ambient(parent) by parentCount*H*retention*uniformLoss*selected(parent). Only positive finite parentCount is cancelled. The source transfers carrier counts to masses through common tube volume, then applies the finite lemma. It does not divide by that tube volume.",
+  "density_interface": "The selection structure stores the global ratio as a field. Its actual refinement producer requires0<density and density!=infinity and uses ENNReal.le_div_iff_mul_le. Original density, retained shading mass, shade-subset-body monotonicity and exact restricted mass identity yield the ratio. It is not a free hypothesis silently assumed by this producer.",
+  "hypotheses_retained": [
+    "nonempty finite active-parent type",
+    "ambient and selected fiber uniformity both required",
+    "global retention with weightLoss/density",
+    "common tube carrier volumes",
+    "sourceIndex provenance/injectivity from supplied localized data",
+    "positive finite density at the division step",
+    "raw localized reanchoring, positive selected weights, nonempty selected indices and essential-distinctness passed by producer"
+  ],
+  "graph_supported_inference": "The inspected local link does pay a geometric-to-mass loss; one cannot infer a loss-free full-fiber transfer or treat raw localization, class uniformization and final loss absorption as already checked merely because this small finite lemma works.",
+  "falsifier": "A source-index collision, invalid active-parent restriction, illegal ENNReal cancellation, or actual producer lacking its stated positive finite density would defeat this inspected link. None found in the selected local algebra. An arbitrary subset violating uniformity/retention is not a source counterexample.",
+  "limits": "No new theorem, paper, model score, main Kakeya certification, complete DirectConversion855-line audit, upstream build or computed axiom closure. Finiteness of H/uniformLoss/weightLoss and final exponent absorption still need the actual calling construction. Infinite constants can make a true local inequality vacuous.",
+  "new_hypothesis": "None promoted; any transfer must retain all loss factors until the final budget proof.",
+  "formal_result": "No new checked Lean result produced; this is inspection of attributed upstream formal source.",
+  "next": "Read the actual caller finite_scale_of_regularized_selection and its simultaneous regularization producer: where hnewOld, density, finite weightLoss and uniformLoss are established, and how their powers/logarithms fit DirectConversion final absorption. Batch this with1262 before a knowledge PR; do not create a minor standalone paper."
+}

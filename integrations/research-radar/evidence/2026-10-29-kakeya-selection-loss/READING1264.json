@@ -1,0 +1,60 @@
+{
+  "utc": "2026-10-29T12:45:14.986Z",
+  "confidence": "literature; selected primary-source argument reading, no new formal certification",
+  "sources": [
+    {
+      "repository": "project-numina/kakeya-3d",
+      "commit": "a26427e3c2fcaf9f98694fbd0d4dd49e41dcf5e3",
+      "path": "Unconditional/FiniteJointGeometry.lean",
+      "url": "https://raw.githubusercontent.com/project-numina/kakeya-3d/a26427e3c2fcaf9f98694fbd0d4dd49e41dcf5e3/Unconditional/FiniteJointGeometry.lean",
+      "sha256": "052c7e812d6cb7363f2c22fb033448bc5c47f3f5e9c6bd29a57fce9f61611b06",
+      "bytes": 30360,
+      "reading": "finite_scale_of_regularized_selection137-310, exists_finiteJoint_of_positive_localization313-469 and exists_jointFiniteGeometricSelection472-544 read; local proof arguments checked by reading, imports not replayed"
+    },
+    {
+      "repository": "project-numina/kakeya-3d",
+      "commit": "a26427e3c2fcaf9f98694fbd0d4dd49e41dcf5e3",
+      "path": "Unconditional/SelectionPolylog.lean",
+      "url": "https://raw.githubusercontent.com/project-numina/kakeya-3d/a26427e3c2fcaf9f98694fbd0d4dd49e41dcf5e3/Unconditional/SelectionPolylog.lean",
+      "sha256": "e562d144c1a4b7a29af640e168d165c6b781533e3a3bc33918a59c6dbd4728a6",
+      "bytes": 7753,
+      "reading": "Complete local envelope statement/proof20-155 read; imported background results not replayed"
+    },
+    {
+      "repository": "project-numina/kakeya-3d",
+      "commit": "a26427e3c2fcaf9f98694fbd0d4dd49e41dcf5e3",
+      "path": "Unconditional/DirectConversion.lean",
+      "url": "https://raw.githubusercontent.com/project-numina/kakeya-3d/a26427e3c2fcaf9f98694fbd0d4dd49e41dcf5e3/Unconditional/DirectConversion.lean",
+      "sha256": "933dcab30b1ab794fba3c3ed169ac409b18dd0ad374736af1edede9bae37922e",
+      "bytes": 46201,
+      "reading": "FiniteGeometry contract581-597, quantified witness/threshold selection599-697, complete final budget and output assembly698-852 read. Earlier helpers350-579 not completely audited; entire upstream proof not certified."
+    }
+  ],
+  "sourced_fact": "One paired-parent selection supplies the SAME finite index set for old-parent and representative-parent uniformity at every supplied coordinate. Fine and parent monochromaticity then give essential distinctness and conflict-free complete fibers. Source retains all density and mass losses.",
+  "mechanism": "Positive localized shading mass feeds exists_paired_parent_selection once for both parent systems. Exact injective reindexing transfers old/new uniformities to the final localized family. A common polylogarithmic envelope dominates fixed spatial/color/degree costs under a fixed-ball cardinality bound proportional to delta^(-6).",
+  "quantifier_audit": "For a fixed positive outputLoss, sparse schedule parameter m is chosen before delta. finiteGeometry(m+1) then fixes logExponent and dG. The input preparation and all absorption thresholds are also fixed before delta. Their positive minimum delta0 is chosen before universal delta and input families. Grid radii vary with delta but the number m+1 is fixed. One resulting fine/shading pair is used for EVERY requested nearby scale; only the covering witness is chosen afterward.",
+  "loss_budget": "alpha=outputLoss/16. newH<=delta^(-2alpha), per-parent Frostman factor delta^(-alpha), and density delta^(alpha) produce a total algebraic factor delta^(-4alpha). Two selection-loss factors produce log(1/delta)^(2logExponent). Finite John overhead and a strict exponent gap absorb this into delta^(-outputLoss/2); no loss is silently erased. Separate uniform, large-scale and density thresholds feed the final delta0.",
+  "finite_and_division_guards": "density=ofReal(delta^alpha) is positive and finite; logarithm is positive for0<delta<1, allowing inverse-power cancellation. Parent volume and John overhead are explicitly finite in the caller. Envelope requires overlap!=infinity and fixes its threshold after finite coefficients. These local checks do not certify geometric imports.",
+  "preserved": [
+    "three-dimensional fixed-ball support",
+    "nonempty localized selection and positive shading weights",
+    "both parent systems and every fixed finite coordinate share one selected set",
+    "strict conflict-free representative fibers",
+    "injective source provenance",
+    "positive finite density and logarithm at division/cancellation",
+    "all multiplicative H/uniformLoss/weightLoss/density costs",
+    "output shade-union volume no larger than input, by subshading and preparation monotonicity"
+  ],
+  "not_preserved_or_unproved": [
+    "arbitrary infinite number of simultaneous coordinates",
+    "uniform threshold independent of requested output loss",
+    "source geometry/localization/coloring imports fully audited",
+    "entire DirectConversion or main Kakeya theorem kernel replay",
+    "computed axiom closure",
+    "all-dimensional local smoothing result"
+  ],
+  "falsifier": "A per-coordinate change of the retained fine family, m chosen after delta, invalid strict full-fiber equality, absent positive finite cancellation guard, or unpaid loss factor defeats the corresponding transfer. None found in these selected local ranges. A counterexample outside the typed construction hypotheses is not a refutation.",
+  "formal_result": "None produced. This records attributed upstream formalization and source-code argument inspection, not an independent Lean build or an AI manuscript assessment.",
+  "new_hypothesis": "None promoted; no new paper or score warranted by this source audit.",
+  "next": "Audit the actual paired-parent selection/regularization primitive and finite parent preparation plus imported coaxial/John containment before claiming the full bridge. Preserve the already checked common-witness quantifiers and loss budget. Batch1262-1264 into existing knowledge candidate, without a new sourcecard or canonical graph edit."
+}

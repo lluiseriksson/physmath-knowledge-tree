@@ -1,0 +1,52 @@
+{
+  "utc": "2026-10-29T12:45:40.340Z",
+  "files": [
+    {
+      "file": "DEPENDENCIES1262.json",
+      "sha256": "51d824261ea18ea544bbb5e937cd452614ade439c4a62959e9e78dfef8bda994"
+    },
+    {
+      "file": "DEPENDENCY-BINDING1264.json",
+      "sha256": "cfd613241866ca16ecd86c9a637cd52cd582afcdbe8730cb6837ada39540f656"
+    },
+    {
+      "file": "LOCKS1262.json",
+      "sha256": "b88197e979e39d115349785b5cfd40badea11e1451a90de3c3bf9dbb6b30d896"
+    },
+    {
+      "file": "READING1262.json",
+      "sha256": "17caf9dab00cbd332c46b4ccd8ccd04873b82d987fe489c4230c569ef1577772"
+    },
+    {
+      "file": "READING1263.json",
+      "sha256": "50e5f4a76b114b988cba46e00e9c75f7901c4cdbd3c2dad226f308748934f497"
+    },
+    {
+      "file": "READING1264.json",
+      "sha256": "3e26ef1f737e343eefb2084dcf3c8a4aaf571d8ed973b26ef67c2efde1c55db3"
+    },
+    {
+      "file": "RECONCILIATION1264.json",
+      "sha256": "6db6ed03d3a4937d0edff186dce5d206c031fcbdcd78ab8a0a06909f8d42733b"
+    },
+    {
+      "file": "SOURCES1264.json",
+      "sha256": "258f31b8964c4337cdba526dcfd77ba289ee875bafe77432142744f344657e37"
+    },
+    {
+      "file": "SUBGRAPH1264.json",
+      "sha256": "a4d19806a0b8db107b8b10510a9ddd751165a6f6b3aa51ae38cdaa8576aeff1c"
+    },
+    {
+      "file": "SUBMODULE1262.json",
+      "sha256": "10d088e0b35f64ab2cb06680db61b49846a9296a86abe063985a4457f2ddb146"
+    }
+  ],
+  "source_cards": 78,
+  "candidates": 17,
+  "canonical_graph_changed": false,
+  "new_paper": false,
+  "new_model_assessment": false,
+  "source_bodies_redistributed": false,
+  "reading_boundary": "Selected formal-source argument reading; not abstract-only but also not end-to-end proof certification or kernel replay."
+}
