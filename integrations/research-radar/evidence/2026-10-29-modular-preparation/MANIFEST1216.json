@@ -1,0 +1,39 @@
+{
+  "utc": "2026-10-29T06:06:44.631489+00:00",
+  "scope": "Own synthesis, exact finite calibration and primary-source metadata only; no foreign corpus",
+  "files": [
+    {
+      "name": "SUBGRAPH1216.json",
+      "sha256": "0d0919f550cf6c5c9d1abeec7c4acc2dc9be3bec48ef2395ef6d16917f1208f6"
+    },
+    {
+      "name": "SOURCES1216.json",
+      "sha256": "2d20c3f3327a6447a436280e65753030ca7f67134b7f1522ccce16642d4bb9fe",
+      "transport_sha256": "e8121e3653d8003b157385fa31cd6fd03a8a823485f5f445f110a5c51b8824c9"
+    },
+    {
+      "name": "RECONCILIATION1216.json",
+      "sha256": "ad0dd99e1f3bc244786f77824f006bed56275ea8787d4dcfe8cb6b1e55fe69e8",
+      "transport_sha256": "2e1dffc2b5491fb22696ca79c4b2d8060bbf0b1cdad8a8290451b581c9a85829"
+    },
+    {
+      "name": "PRIMARY1216.json",
+      "sha256": "8f4eac57fb36ed59db637ac9a8271a49807b2a1917630b6886f61478e81b622a"
+    },
+    {
+      "name": "FINITE1216.json",
+      "sha256": "9bdbb02b1d3e8352d6498246aa7be729d69d24d8b497b6fc18dbb2f3da41c650"
+    },
+    {
+      "name": "SYNTHESIS1216.txt",
+      "sha256": "d0723734839b048ad92efa97c307a37835bd31d7fcd165f002e275c85d1a960b"
+    },
+    {
+      "name": "integrate1216.py",
+      "sha256": "e42d2bfa0f6f392a522c0b5f14588df8ae7f432952b2a3deddb7be0981266560"
+    }
+  ],
+  "formal": false,
+  "manuscript": false,
+  "score": null
+}
