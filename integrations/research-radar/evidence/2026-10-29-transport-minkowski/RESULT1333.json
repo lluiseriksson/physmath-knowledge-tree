@@ -1,0 +1,84 @@
+{
+  "scope": "Real transportation Minkowski equality fails for these fixed endpoint margins; no Jensen/theorem counterexample",
+  "row_margins": [
+    [
+      4,
+      2
+    ],
+    [
+      2,
+      4
+    ]
+  ],
+  "column_margins": [
+    [
+      4,
+      2
+    ],
+    [
+      2,
+      4
+    ]
+  ],
+  "weights": [
+    "1/2",
+    "1/2"
+  ],
+  "common_total": 6,
+  "central_rows": [
+    3,
+    3
+  ],
+  "central_columns": [
+    3,
+    3
+  ],
+  "endpoint_x11_intervals": [
+    [
+      2,
+      4
+    ],
+    [
+      0,
+      2
+    ]
+  ],
+  "midpoint_Minkowski_x11_interval": [
+    "1",
+    "3"
+  ],
+  "central_x11_interval": [
+    0,
+    3
+  ],
+  "central_table_without_endpoint_decomposition": [
+    [
+      0,
+      3
+    ],
+    [
+      3,
+      0
+    ]
+  ],
+  "integer_fiber_counts": [
+    3,
+    3,
+    4
+  ],
+  "correct_inclusion": "(P1+P2)/2 is a strict subset of P(mean margins)",
+  "inequality_control": {
+    "Barvinok_Theorem2_1_LHS": "256/405",
+    "RHS": "9/64",
+    "holds": true,
+    "uncorrected_Jensen_4_ge_3": true
+  },
+  "positive_control": "Identical endpoint margins have equal midpoint and central intervals",
+  "mechanism": "Endpoint lower bounds max(0,r1+c1-N) cross an affine chamber wall; averaging the maxima exceeds the maximum at the mean.",
+  "falsifier": "An endpoint decomposition of the displayed central table despite each first-endpoint x11>=2 and each second-endpoint x11>=0.",
+  "limits": [
+    "ArXivv1/linked author PDF selected geometric sentence only; journal PDF not inspected",
+    "Does not establish an error in the main inequality or its proof",
+    "No novelty, independent review, manuscript grade or formal verification"
+  ]
+}
