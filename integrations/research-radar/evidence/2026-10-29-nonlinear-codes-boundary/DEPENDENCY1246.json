@@ -1,0 +1,22 @@
+{
+  "version": "arXiv2508.03835v1",
+  "first_preprint": "2025-08-05T18:28:35Z",
+  "observed_on": "2026-10-29",
+  "newly_published_today": false,
+  "title": "Slow graph bootstrap percolation III: Chain constructions",
+  "authors": [
+    "David Fabian",
+    "Patrick Morris",
+    "Tibor Szabo"
+  ],
+  "url": "https://arxiv.org/html/2508.03835v1",
+  "sha256_transport": "6951a7aed29ea8cee03515004e741d2123f79b31a971ba2195429c3ac56bf66c",
+  "reading_level": "Section7.1, Definition7.1 and Theorems7.2/7.3 read; proof in AppendixA not audited",
+  "confidence": "literature",
+  "finding": "The authors explicitly report being unable to recover the cited unpublished general K-fold Sidon proof. Their replacement Theorem7.3 restricts four-variable coefficient magnitudes to an m-dependent progression and parity; it does not establish unrestricted simultaneous avoidance for every bounded coefficient pattern.",
+  "implication": "Do not treat this restricted theorem as the unrestricted estimate required by2610.19960v1 Remark5.3. Keep the localization route unless a matching proof is supplied.",
+  "limits": "This is a dependency mismatch and unresolved proof provenance, not a disproof of the general Sidon estimate or the Microsoft construction. No theorem from the complete bootstrap-percolation paper is audited.",
+  "falsifier": "A checked construction satisfying the exact unrestricted coefficient family and size needed for the intended checksum application would discharge this hold.",
+  "new_source_card": false,
+  "reason": "Supporting bibliography for existing Microsoft source; no new discovery or paper."
+}

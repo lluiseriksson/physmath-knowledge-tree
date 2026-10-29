@@ -1,0 +1,25 @@
+{
+  "source_id": "microsoft-nonlinear-codes-261019960",
+  "version": "2610.19960v1",
+  "url": "https://arxiv.org/html/2610.19960v1",
+  "observed_sha256_transport": "f6f853e5e812c5c78351daf2fb6e6ae3880429c8689d360f3e49f60aa8333564",
+  "reading_level": "selected statements and proof passages read; not whole-paper proof audited",
+  "literature": "Remark5.3 warns that a simultaneous k-fold Sidon shortcut depends on an unpublished construction whose proof others could not recover. The source uses localization instead. Section7.1 labels positive-dimensional residual configurations a limitation of its method, not a code lower bound.",
+  "reference_inventory_only": {
+    "id": "arXiv2508.03835",
+    "role": "Selected primary Section7.1 and Theorem7.3 now read; see DEPENDENCY1246.json, not full proof audited"
+  },
+  "own_scope_guard": {
+    "confidence": "heuristic; elementary exact computation and argument, no Lean proof",
+    "mechanism": "The ternary collision uses coefficients of magnitude2. For binary words differing at five coordinates, all nonzero differences are +/-1, and their sum is odd and nonzero. In characteristic greater than5 it cannot vanish. Therefore this particular five-position obstruction is not a binary obstruction.",
+    "checks": "32binary signpatterns, integer first2momentcollision, thirdmoment756 verified",
+    "hypotheses": "Same symbol-sum checksum and nonwrapping characteristic>5, exactlyfivechangedbinarycoordinates.",
+    "limits": "This excludes only this odd-support pattern. It does not exclude binary collisions with even support or prove minimum distance6 for two moments. The ternary witness embeds into any q>=3 alphabet, without proving a bound for restricted locator sets.",
+    "falsifier": "A binary five-position nonzero +/-1 difference with zero sum in characteristic>5 would refute the guard; parity and magnitude<=5 rule it out."
+  },
+  "dependency_hold": "Do not replace localization by an assumed simultaneous Sidon estimate without obtaining and checking its actual proof. The cited unresolved proof provenance is not a disproof of the estimate.",
+  "next": "Bundle this scope guard and staged1240 rational family into the existing source synthesis on the next substantial knowledge update; no new paper, grade, source-card duplication or confidence promotion.",
+  "formal": "No formal declaration added; no formal dependency introduced",
+  "graph_supported_inference": "Retrieved existing information/number-theory neighborhood is context only; graph proximity proves nothing",
+  "speculative": "No claim of new code construction or novelty."
+}

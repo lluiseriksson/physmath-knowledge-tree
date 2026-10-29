@@ -1301,7 +1301,7 @@
       "reading_status": "selected_sections_read",
       "evidence": "literature",
       "claim": "For fixed q>=2,d>=4, the stated redundancy coefficient is at mostd-3 with O(sqrt(log n)) loss. Distances4/5 match the Hamming leading coefficient; a real-lift locator restriction replaces an extra moment check.",
-      "limits": "Theorem statement/overview only, no construction-proof audit. Not optimal at general distance; linear separation is for prime-power q>2. New to this index, not published today. Finite-field sphere shortcut refuted separately without refuting the source.",
+      "limits": "Selected statements, Sections6.4/7.1 and Remark5.3 read; no construction-proof audit. Whole-field two-moment ternary shortcut fails, without refuting restricted locators or source. Binary odd-support scope differs. Unrestricted Sidon shortcut has an unresolved-proof dependency; cited replacement Theorem7.3 has narrower coefficient hypotheses. Not optimal at general distance; linear separation only prime-power q>2. New to index, not published today.",
       "reuse": "Bibliographic metadata, own synthesis and own finite counterexample only; no source corpus, tasks or training permission inferred.",
       "anchors": [
         "domain.algebra",
