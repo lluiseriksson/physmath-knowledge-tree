@@ -157,3 +157,5 @@ The [exact-review continuity reconciliation](notes/2026-10-28-exact-review-conti
 - [Terminal unscored component audit1208](notes/2026-10-29-component-audit.md): supported hypotheses, minor clarifications, all adverses and provenance retained; novelty unresolved.
 
 - [Preparation prior map and sufficient block thresholds](notes/2026-10-29-preparation-prior-map.md): prior complete-contraction consequences separated from unresolved dimension-envelope originality; no new paper or grade.
+
+- [Preparation publication and the remaining factorization boundary](notes/2026-10-29-preparation-publication.md): exact public3.5/8.5/3.0 review retained; optional joint-cardinality supplement unreviewed; intrinsic EB shortcut rejected without a new paper.
