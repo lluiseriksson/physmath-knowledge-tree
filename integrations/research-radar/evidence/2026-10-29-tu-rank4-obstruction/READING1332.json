@@ -1,0 +1,33 @@
+{
+  "observed_on": "2026-10-29",
+  "sources": [
+    {
+      "id": "barvinok-contingency-brunn-minkowski-2006",
+      "arxiv": "math/0603655",
+      "first_preprint": "2006-03-28",
+      "journal": "Advances in Mathematics211(1)(2007),105–122",
+      "doi": "10.1016/j.aim.2006.07.012",
+      "selected": "Theorem2.1, equations2.3–2.4; selected statements/proof outline only",
+      "reading_status": "selected_sections_read",
+      "proof_audited": false,
+      "html_sha256": "dc8bb972bd414ea2cf1f67a1fc5e26768ce113c6a297a75d74bde50fb52d1612",
+      "author_pdf_sha256": "1416dd9fb20c04336e5dd87489a3b7403d206a22ce338ad7224dd81e087b29e9",
+      "author_pdf_title_date": "April2006",
+      "author_pdf_url": "https://sites.lsa.umich.edu/barvinok/wp-content/uploads/sites/1434/2025/05/brunn.pdf",
+      "version_limit": "HTML rendering and linked author PDF not asserted byte-identical to arXivv1; server2025 upload path not first publication"
+    }
+  ],
+  "own_evidence": {
+    "certificate": "RESULT1331.json",
+    "native_sha256": "7a0b5a91e4f19e7090139dfdacb8a804c17e973456d6d52c5949a06bc2b935b6",
+    "portability": "Verifier removes private absolute-path dependency and compares the entire fixed result JSON; unchanged assertions/scientific fields. Original checker retained in private archive1331. Public RESULT1331.json is LF-normalized; JSON values equal the native CRLF result. Initial format gate rejected CRLF and is retained in npm-check1332.log.",
+    "review_context": "Current Codex assistant in ongoing research context. No separate reviewer, manuscript or grade; actual underlying model identity/settings and independence not independently attested; not peer review, formal proof or editorial acceptance."
+  },
+  "layers": {
+    "formal": "No proof-assistant promotion",
+    "literature": "Selected primary statements and previously audited lowdim scope",
+    "heuristic": "Direct A4 mechanism rejected by exact fixed computation",
+    "speculative": "General higher-dimensional Jensen unresolved"
+  },
+  "scope": "Own bounded exact certificate and source curation, not a Research Capsule-certified campaign. No foreign full text redistributed."
+}
