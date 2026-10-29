@@ -1,0 +1,52 @@
+{
+  "utc": "2026-10-29T12:17:59.106400+00:00",
+  "files": [
+    {
+      "file": "ARGUMENT1260.txt",
+      "sha256": "7ce4a4c205ed6b0ff4640f5f244fa83db329821d456aa0e71c493dd3e6739b12"
+    },
+    {
+      "file": "check_renewal1260.py",
+      "sha256": "977d1b47bb012d6483d87c7fe1d7d3dd7de1695c12b2ccd58568fb18a8c600ba"
+    },
+    {
+      "file": "CONTROL1260.json",
+      "sha256": "199d4e632086812500ccdbb93f108149272e8d82e1aba5610373fc67d9d1afca"
+    },
+    {
+      "file": "READING1261.json",
+      "sha256": "f93c6bd28d1f764ec290454a609f1fac006fd603cf50785fea02dfacce1c9dcc"
+    },
+    {
+      "file": "RECONCILIATION1261.json",
+      "sha256": "8de5b40f2e4f65844d9f2dd4d71fe75ed3e642a959aef7a969cefe07a36a33b2"
+    },
+    {
+      "file": "REPLAY1261.json",
+      "sha256": "e6f104ecbf9a79ea013c767112583e15d327a8a875ffde4e7e3c9cd150929af5"
+    },
+    {
+      "file": "SCOPE1261.json",
+      "sha256": "34671a56fc8ab62b6e9258cf1981140743f351fd527d64e72d224a501043e216"
+    },
+    {
+      "file": "SOURCES1261.json",
+      "sha256": "92e9a6e5583b56d486c0e3615f43d45c6a0f01ff371ac8bcaf09eb64f1cb1f67"
+    },
+    {
+      "file": "SUBGRAPH1261.json",
+      "sha256": "2417fe8419bd3d0731cb6ef0fba36caa8b4754779dc7fe12fe7c5d21b1a252c8"
+    },
+    {
+      "file": "verify_renewal.py",
+      "sha256": "7bd7f596157b58a415ca53ef04e01292969b4853266f37d50bce8ac2936d029b"
+    }
+  ],
+  "source_cards": 78,
+  "candidates": 17,
+  "canonical_graph_changed": false,
+  "foreign_fulltext_redistributed": false,
+  "new_assessment": false,
+  "prior_control_sha256": "977d1b47bb012d6483d87c7fe1d7d3dd7de1695c12b2ccd58568fb18a8c600ba",
+  "reading_projection": "Selected original metadata fields; transient local parser detail omitted; complete original preserved in checkpoint1260 archive."
+}

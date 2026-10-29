@@ -1,0 +1,54 @@
+{
+  "symbolic_identities": {
+    "gap_telescoping": "0",
+    "mean_gap_telescoping": "0",
+    "stationary_balance": "0",
+    "stationary_telescoping": "0",
+    "truncated_onset_mean": "0"
+  },
+  "finite_truncations": [
+    {
+      "cutoff": 1,
+      "gap_mass": "2/3",
+      "gap_first_moment": "2/3",
+      "residual_mass": "1/2"
+    },
+    {
+      "cutoff": 2,
+      "gap_mass": "5/6",
+      "gap_first_moment": "1",
+      "residual_mass": "2/3"
+    },
+    {
+      "cutoff": 3,
+      "gap_mass": "9/10",
+      "gap_first_moment": "6/5",
+      "residual_mass": "3/4"
+    },
+    {
+      "cutoff": 8,
+      "gap_mass": "44/45",
+      "gap_first_moment": "8/5",
+      "residual_mass": "8/9"
+    },
+    {
+      "cutoff": 32,
+      "gap_mass": "560/561",
+      "gap_first_moment": "32/17",
+      "residual_mass": "32/33"
+    },
+    {
+      "cutoff": 128,
+      "gap_mass": "8384/8385",
+      "gap_first_moment": "128/65",
+      "residual_mass": "128/129"
+    }
+  ],
+  "choi_ranks": [
+    1,
+    4
+  ],
+  "countdown_cases": 16,
+  "network_required": false,
+  "formal_proof": false
+}
