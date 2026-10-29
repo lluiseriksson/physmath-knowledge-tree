@@ -1,0 +1,67 @@
+{
+  "scope": "Exact finite algebra calibrations of a separately written universal convex-fiber argument; no entropy inequality tested or certified",
+  "sign_mixture": {
+    "fixed_diagonal_traces": [
+      "1/2",
+      "1/2"
+    ],
+    "diagonals_noncommuting": true,
+    "original_rank": 4,
+    "endpoint_ranks": 2,
+    "weights_sum": "1",
+    "mixture_equal_original": true,
+    "rows": [
+      {
+        "signs": [
+          -1,
+          -1
+        ],
+        "weight": "2/15",
+        "input_rank": 2,
+        "Gram_factor_verified": true
+      },
+      {
+        "signs": [
+          -1,
+          1
+        ],
+        "weight": "1/15",
+        "input_rank": 2,
+        "Gram_factor_verified": true
+      },
+      {
+        "signs": [
+          1,
+          -1
+        ],
+        "weight": "8/15",
+        "input_rank": 2,
+        "Gram_factor_verified": true
+      },
+      {
+        "signs": [
+          1,
+          1
+        ],
+        "weight": "4/15",
+        "input_rank": 2,
+        "Gram_factor_verified": true
+      }
+    ]
+  },
+  "mixed_saturated_endpoint": {
+    "diagonal_support_ranks": [
+      1,
+      2
+    ],
+    "input_rank": 2,
+    "population_p": "16/25",
+    "partial_transpose_principal_minor": "-81/625",
+    "entangled": true,
+    "pure": false,
+    "entropy_gap_evaluated": false
+  },
+  "universal_Q_proved": false,
+  "uniform_reference_dimension_bound": false,
+  "new_paper_or_score": false
+}

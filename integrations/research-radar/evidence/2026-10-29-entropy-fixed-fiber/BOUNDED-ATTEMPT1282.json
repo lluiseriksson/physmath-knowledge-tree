@@ -1,0 +1,19 @@
+{
+  "observed_at": "2026-10-29T14:18:09.951Z",
+  "candidate": "interpolation-semidefinite-boundary",
+  "scope": "Bounded attempt at a joint affine lift; neither new liftedrepresentation nor proof ofnon-liftability",
+  "attempts": [
+    {
+      "proposal": "Normalize the variableanchorc+i to1+i by scaling only the realcomponent, then reuse thefixedc1 pencil.",
+      "failure": "T_c(w)=Re(w)/c+iIm(w) is not holomorphic whenc!=1. Forf(z)=c+i+epsilon*z, T_cf=1+i+epsilon*((1+1/c)/2*z+(1/c-1)/2*conj(z)). Atc=2,epsilon=1/2,theantiholomorphic coefficientis-1/8,nonzero. Theoriginalf remainsstrictlyinsidequadrantontheunitdisk; pointwisecodomainpreservationdoesnotpreserveanalytic interpolation."
+    },
+    {
+      "proposal": "Use a global matrix-concave quadratic-Pick-matrix Schur-complement conversion to obtain a jointlyaffine pencil.",
+      "failure": "Theactual2x2Pickmatrix isnotmatrixconcave, evenalongafeasibleinteriorsegment. Forfixedc=y=1,r=3/5 andx=1+/-h, P(mid)-average(Pplus,Pminus)=[[0,-i*h^2],[i*h^2,0]], withdet=-h^4<0. Itisindefinite; itsnegativeisalsoindefinite. Convexityofthefeasiblesetdoesnotimplymatrixconcavityofthepolynomialmatrix."
+    }
+  ],
+  "conclusion": "No validjointaffineprojectionmap was obtained. These failuresexcludeonlythetwo specifiednormalization/concavityansatzes, notallspectrahedralshadows. Theexistingdirectunliftedobstruction remainsseparate andthefixedsliceliftsvalid.",
+  "decision": "Park thefulljointlift/higherjet routependinganexplicitnewmechanism orprimarysource. GenericplanarSOCexistence andelementaryquarticreformulationsareknown/insufficient; do notproduceanotherminor paper,review orparametergrid.",
+  "restart_condition": "Anactualjointlyaffinepencil andprojectionwithallvariables/degenerate/confluentconditions, oraprimarytheoremappliabletothisexact3variablebody. No restart basedonlyonconvexity,nonspectrahedralityorpointwiseGramfactorization.",
+  "review_status": "Ownunreviewedanalyticalansatz audit; no independentreview,numericalgrade orformalproof"
+}

@@ -1,0 +1,81 @@
+Existing fixed-channel entropy candidate: fixed diagonal fibers
+
+Scope and mechanism
+The fixed channel has Bloch action (x,y,z)->(3x/5,3y/5,z/4+1/5).
+ARGUMENT1284.txt gives an own finite-dimensional reduction: keep A,B on the
+same reference space, p=Tr B, Tr(A+B)=1, and all support embeddings fixed.
+PSD block states are parametrized by contractions K between the supports.
+A signed-SVD convex decomposition expresses every such state as a mixture
+of saturated isometry/coisometry couplings. The gap G is concave along this
+fiber, so proving G>=0 on those endpoints is equivalent to proving it on
+the full fiber. A negative witness has a negative saturated endpoint.
+This removes unsaturated coupling parameters, not the mixed-state core.
+
+Preserved/lost dictionary
+The same A,B,p, common reference, noncommuting branch operators and relative
+support geometry survive. Endpoint rank is max(rank A,rank B), usually mixed.
+Using only the already scoped audit901 B_N<=>Q dictionary, a counterexample
+can be chosen with purification dimension <= reference dimension; branch
+matrices can have m<=n. Reference dimension n remains unbounded. This is not
+a reduction of the entire coefficient-domain P5-E conjecture. Independent
+support rotations cannot be commuted through the physical channel to set K=I.
+The exact entangled mixed coisometry control prevents a pure-state shortcut.
+
+Four evidence levels
+Literature: classical SVD and entropy concavity underpin the mechanism.
+PRIMARY1283.json records the exact OpenAI thermal.tex commit/content hash and
+statement lines read; not a full-proof audit. That theorem requires the exact
+relation alpha*delta-beta*eta=K^2. For our fixed channel its defect is
+-(11/100)p(1-p); a generic PSD condition cannot replace that hypothesis.
+Heuristic/own analytical: ARGUMENT1284 and REDUCTION1284 are our written
+reduction, not independently reviewed or kernel checked. Finite rational
+controls check algebra only and evaluate no entropy gap.
+Speculative: the surviving universal claim G>=0 for mixed saturated endpoints,
+equivalently C_E<=delta_e(p)+I(Z:ER), is still open in this dossier.
+Formal: no new Lean declaration or formal confidence upgrade. Nine local
+formal dependency commits match the fixed manifest in DEPENDENCIES1285.json.
+
+Review and provenance recovery
+READING1283.json recovers both full original component reports901/906, all
+nine plus seven adverse observations, and later own notes907/908/910. Existing
+reports are linked, not duplicated: ../2026-10-27-entropy899/ contains their
+public LF-normalized texts and native-evidence899.zip preserves original
+bytes. Original901 SHA256 a1fce0159ffb5daf5c005797b3f43bb10c15afcbc87193e5d65764f147392d97;
+original906 SHA256 370165da2e921120801917d65f0d326a7123adef59fd152b04e784dc2cc8aa16.
+Requested model was GPT-6 Astra xhigh; effective model/effort/isolation and
+independence are unattested, shared filesystem. These were unscored component
+reviews, not manuscript grades. Neither report reviews907/908/910 or1284.
+The pure/separable balance907 and isotropic-line908/910 results remain scoped
+own unreviewed notes; no score, novelty or arbitrary-partner theorem follows.
+No reviewer was restarted, no new paper, deposit or assessment was created.
+
+Exact controls and falsifiers
+verify_fiber1284.py uses Python standard-library rational arithmetic. It
+checks noncommuting A/B, a rank-four mixture of four rank-two endpoints,
+exact fixed-block Gram factors and weights, plus an entangled rank-two
+coisometry with partial-transpose minor -81/625. CONTROL1284.json is the
+reference output. This bounded algebra check is not a computational campaign
+or Research Capsule certification and proves no universal entropy inequality.
+Falsify the reduction by a failure of the fixed-block convex decomposition,
+rank statement or concavity implication; falsify the surviving entropy
+mechanism by an exact negative G endpoint. Such a counterexample alone would
+not refute channel additivity. Next: attack the actual mixed saturated
+endpoint coherence/information tradeoff; do not accumulate another pure,
+separable or isotropic subcase, float grid or minor-paper wrapper.
+
+Separate parked route
+BOUNDED-ATTEMPT1282 and its rational controls document two failed Pick-lift
+ansatzes: anisotropic normalization introduces an antiholomorphic term, and
+quadratic matrix concavity fails on a feasible interior segment. They do not
+exclude all auxiliary SDP lifts. Existing Pick candidate is queued/parked
+until a concrete jointly affine pencil with projection and boundary guards,
+or an exact applicable primary theorem, supplies a new mechanism. Direct
+unlifted LMI obstruction and fixed-slice lifts remain as previously recorded.
+
+Directed current inventory
+SOURCES1285.json hashes twelve primary index responses and records dates and
+reading=inventory only. PUBLIC-REPOS1285.json is a directed public repository
+inventory. This is not exhaustive, source bodies/corpora/evaluation tasks are
+not redistributed, local smoothing stays deduplicated, and index differences
+are not new publication dates. No source card or confidence label is added.
+Graph nodes/edges unchanged; SUBGRAPH1285.json precedes this prose.

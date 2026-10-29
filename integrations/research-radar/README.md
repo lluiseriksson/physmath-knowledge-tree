@@ -185,3 +185,5 @@ The [exact-review continuity reconciliation](notes/2026-10-28-exact-review-conti
 - [Fixed two-node quadrant slices: affine lifts and exact shortcut boundaries](evidence/2026-10-29-pick-fixed-slices/SYNTHESIS1277.txt): explicit fixed-normalization matrices, singular/confluent scope, exact failed half-plane intersection and known planar representability antecedents. Joint variable-normalization/higher-jet lift remains open; no new paper, grade or formal confidence promotion.
 
 - [Two-node epigraph and the unlifted LMI boundary](evidence/2026-10-29-pick-epigraph-boundary/SYNTHESIS1281.txt): exact normalization elimination, degenerate-boundary guards and a classical real-zero obstruction to direct affine pencils. Auxiliary-variable lifts remain allowed; analytical claims are own unreviewed reasoning, with no paper, grade or formal confidence promotion.
+
+Fixed-channel entropy: [fixed diagonal fiber reduction and preserved review limits](evidence/2026-10-29-entropy-fixed-fiber/SYNTHESIS1285.txt). Includes the separate bounded Pick-route parking condition; no new paper, score or formal promotion.
