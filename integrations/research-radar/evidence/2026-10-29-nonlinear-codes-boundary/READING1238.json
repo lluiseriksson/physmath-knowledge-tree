@@ -1,0 +1,35 @@
+{
+  "utc": "2026-10-29T10:28:53.217915+00:00",
+  "source_id": "microsoft-nonlinear-codes-261019960",
+  "version": "arXiv2610.19960v1",
+  "first_preprint": "2026-10-14T10:46:50Z",
+  "new_to_our_index": true,
+  "newly_published_today": false,
+  "lab": "Microsoft Research; author affiliation and primary lab listing checked",
+  "sources": [
+    {
+      "url": "https://arxiv.org/abs/2610.19960v1",
+      "sha256_transport": "1603773dc2eb93d3fd83738fa84572b8b6a36b81c02e5760863c9788b313ce28",
+      "bytes": 41416,
+      "reading_scope": "abstract and submission-history read",
+      "raw_source_redistributed": false
+    },
+    {
+      "url": "https://arxiv.org/html/2610.19960v1",
+      "sha256_transport": "f6f853e5e812c5c78351daf2fb6e6ae3880429c8689d360f3e49f60aa8333564",
+      "bytes": 569629,
+      "reading_scope": "selected Theorem1.1,Corollary1.2,Proposition1.3 and introduction mechanism/limits read; construction proof not audited",
+      "raw_source_redistributed": false
+    },
+    {
+      "url": "https://arxiv.org/pdf/2610.19960v1",
+      "sha256_transport": "690cd1aa858780c3fd64991f795c50cf908303c92bb2047ec3d3388e78a3fe0d",
+      "bytes": 424646,
+      "reading_scope": "transport/version hash only; not a proof audit",
+      "raw_source_redistributed": false
+    }
+  ],
+  "classification": "mathematical manuscript; not benchmark, known-result formalization or product announcement",
+  "no_foreign_corpus_or_tasks_downloaded": true,
+  "no_formal_dependency_claim": true
+}

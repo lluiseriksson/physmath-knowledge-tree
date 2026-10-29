@@ -1290,6 +1290,23 @@
         "domain.quantum_information_theory",
         "domain.functional_analysis"
       ]
+    },
+    {
+      "id": "microsoft-nonlinear-codes-261019960",
+      "title": "Nonlinear fixed-distance codes via real lifts of moment configurations",
+      "url": "https://arxiv.org/abs/2610.19960v1",
+      "kind": "preprint",
+      "published_on": "2026-10-14",
+      "observed_on": "2026-10-29",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "For fixed q>=2,d>=4, the stated redundancy coefficient is at mostd-3 with O(sqrt(log n)) loss. Distances4/5 match the Hamming leading coefficient; a real-lift locator restriction replaces an extra moment check.",
+      "limits": "Theorem statement/overview only, no construction-proof audit. Not optimal at general distance; linear separation is for prime-power q>2. New to this index, not published today. Finite-field sphere shortcut refuted separately without refuting the source.",
+      "reuse": "Bibliographic metadata, own synthesis and own finite counterexample only; no source corpus, tasks or training permission inferred.",
+      "anchors": [
+        "domain.algebra",
+        "domain.complexity_theory"
+      ]
     }
   ],
   "candidates": [
@@ -1780,6 +1797,10 @@
     "followup1234": {
       "evidence": "integrations/research-radar/evidence/2026-10-29-temporal-publication-review/MANIFEST1234.json",
       "scope": "Published exactPDF1225 correction and whole-manuscript review distinct from unscored componentaudit. Full original report, minor objections, requested/observed provenance and all confidence boundaries preserved. No additional sourcecard/candidate/canonicalgraph node or edge."
+    },
+    "followup1238": {
+      "evidence": "integrations/research-radar/evidence/2026-10-29-nonlinear-codes-boundary/READING1238.json",
+      "scope": "One deduplicated Microsoft mathematical manuscript added, first preprint14October not today. Selected statement/overview read; own exact falsifier rejects a naive modular-sphere bridge, not the source. No canonical graph or new manuscript candidate."
     }
   }
 }
