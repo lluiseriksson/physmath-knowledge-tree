@@ -1,0 +1,7 @@
+{
+  "stage": "terminal display after successful PDF extraction and UTF8 file save",
+  "error": "UnicodeEncodeError: cp1252 cannot encode character U+FB01",
+  "pdf_parse_and_selected_extract_succeeded": true,
+  "mathematical_checks_affected": false,
+  "repair": "Read the existing UTF8 extract directly; no PDF extraction or scientific calculation repeated."
+}

@@ -1,0 +1,932 @@
+{
+  "status": "PASS_SELECTED_ALGEBRA_ONLY",
+  "source_pdf_sha256": "fefc3ad35c98e327cdabdf01b147393f561ba7d149f84c61c60f0e9304d11d9f",
+  "script_sha256": "62e59fa1a59e1ed99b0da166c98950ef44c289a8f80d403c016b793622c300cb",
+  "exact_arithmetic": "fractions.Fraction, no numeric eigensolver",
+  "eigenspace_dimensions": {
+    "1": 1,
+    "-1": 3,
+    "-2": 5,
+    "0": 3
+  },
+  "quotient_inertia": {
+    "positive": 1,
+    "negative": 8
+  },
+  "sign_patterns_checked": 64,
+  "min_rho": "11/9",
+  "max_R_norm_squared": "32",
+  "least_negative_remainder": "-20/3",
+  "quadratic_identity": "13x13 coefficient matrices equal for every sign vector; all12 gradient/triangle-slack identities exact",
+  "records": [
+    {
+      "signs": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "R_norm_squared": "32",
+      "rho": "11/9",
+      "remainder": "-20/3",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1
+      ],
+      "R_norm_squared": "32",
+      "rho": "11/9",
+      "remainder": "-20/3",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        -1
+      ],
+      "R_norm_squared": "32",
+      "rho": "11/9",
+      "remainder": "-20/3",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        1
+      ],
+      "R_norm_squared": "32",
+      "rho": "11/9",
+      "remainder": "-20/3",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        -1,
+        -1,
+        -1,
+        1,
+        -1,
+        -1
+      ],
+      "R_norm_squared": "16",
+      "rho": "23/18",
+      "remainder": "-70/3",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        -1,
+        -1,
+        -1,
+        1,
+        -1,
+        1
+      ],
+      "R_norm_squared": "24",
+      "rho": "5/4",
+      "remainder": "-15",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        -1
+      ],
+      "R_norm_squared": "24",
+      "rho": "5/4",
+      "remainder": "-15",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        1
+      ],
+      "R_norm_squared": "32",
+      "rho": "11/9",
+      "remainder": "-20/3",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        -1,
+        -1,
+        1,
+        -1,
+        -1,
+        -1
+      ],
+      "R_norm_squared": "16",
+      "rho": "23/18",
+      "remainder": "-70/3",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        -1,
+        -1,
+        1,
+        -1,
+        -1,
+        1
+      ],
+      "R_norm_squared": "24",
+      "rho": "5/4",
+      "remainder": "-15",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "R_norm_squared": "24",
+      "rho": "5/4",
+      "remainder": "-15",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        1
+      ],
+      "R_norm_squared": "32",
+      "rho": "11/9",
+      "remainder": "-20/3",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        -1,
+        -1,
+        1,
+        1,
+        -1,
+        -1
+      ],
+      "R_norm_squared": "0",
+      "rho": "4/3",
+      "remainder": "-40",
+      "min_L_coefficient": "1/3"
+    },
+    {
+      "signs": [
+        -1,
+        -1,
+        1,
+        1,
+        -1,
+        1
+      ],
+      "R_norm_squared": "16",
+      "rho": "23/18",
+      "remainder": "-70/3",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        -1
+      ],
+      "R_norm_squared": "16",
+      "rho": "23/18",
+      "remainder": "-70/3",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "R_norm_squared": "32",
+      "rho": "11/9",
+      "remainder": "-20/3",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        -1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "R_norm_squared": "32",
+      "rho": "11/9",
+      "remainder": "-20/3",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        -1,
+        1,
+        -1,
+        -1,
+        -1,
+        1
+      ],
+      "R_norm_squared": "24",
+      "rho": "5/4",
+      "remainder": "-15",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        -1
+      ],
+      "R_norm_squared": "24",
+      "rho": "5/4",
+      "remainder": "-15",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        1
+      ],
+      "R_norm_squared": "16",
+      "rho": "23/18",
+      "remainder": "-70/3",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        -1
+      ],
+      "R_norm_squared": "24",
+      "rho": "5/4",
+      "remainder": "-15",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1
+      ],
+      "R_norm_squared": "24",
+      "rho": "5/4",
+      "remainder": "-15",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        -1
+      ],
+      "R_norm_squared": "24",
+      "rho": "5/4",
+      "remainder": "-15",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        1
+      ],
+      "R_norm_squared": "24",
+      "rho": "5/4",
+      "remainder": "-15",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        -1,
+        1,
+        1,
+        -1,
+        -1,
+        -1
+      ],
+      "R_norm_squared": "24",
+      "rho": "5/4",
+      "remainder": "-15",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        -1,
+        1,
+        1,
+        -1,
+        -1,
+        1
+      ],
+      "R_norm_squared": "24",
+      "rho": "5/4",
+      "remainder": "-15",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "R_norm_squared": "24",
+      "rho": "5/4",
+      "remainder": "-15",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        1
+      ],
+      "R_norm_squared": "24",
+      "rho": "5/4",
+      "remainder": "-15",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        -1,
+        1,
+        1,
+        1,
+        -1,
+        -1
+      ],
+      "R_norm_squared": "16",
+      "rho": "23/18",
+      "remainder": "-70/3",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        -1,
+        1,
+        1,
+        1,
+        -1,
+        1
+      ],
+      "R_norm_squared": "24",
+      "rho": "5/4",
+      "remainder": "-15",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        -1,
+        1,
+        1,
+        1,
+        1,
+        -1
+      ],
+      "R_norm_squared": "24",
+      "rho": "5/4",
+      "remainder": "-15",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        -1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "R_norm_squared": "32",
+      "rho": "11/9",
+      "remainder": "-20/3",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "R_norm_squared": "32",
+      "rho": "11/9",
+      "remainder": "-20/3",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1
+      ],
+      "R_norm_squared": "24",
+      "rho": "5/4",
+      "remainder": "-15",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        1,
+        -1,
+        -1,
+        -1,
+        1,
+        -1
+      ],
+      "R_norm_squared": "24",
+      "rho": "5/4",
+      "remainder": "-15",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        1,
+        -1,
+        -1,
+        -1,
+        1,
+        1
+      ],
+      "R_norm_squared": "16",
+      "rho": "23/18",
+      "remainder": "-70/3",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        -1
+      ],
+      "R_norm_squared": "24",
+      "rho": "5/4",
+      "remainder": "-15",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        1
+      ],
+      "R_norm_squared": "24",
+      "rho": "5/4",
+      "remainder": "-15",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        -1
+      ],
+      "R_norm_squared": "24",
+      "rho": "5/4",
+      "remainder": "-15",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        1
+      ],
+      "R_norm_squared": "24",
+      "rho": "5/4",
+      "remainder": "-15",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        -1
+      ],
+      "R_norm_squared": "24",
+      "rho": "5/4",
+      "remainder": "-15",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        1
+      ],
+      "R_norm_squared": "24",
+      "rho": "5/4",
+      "remainder": "-15",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "R_norm_squared": "24",
+      "rho": "5/4",
+      "remainder": "-15",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        1
+      ],
+      "R_norm_squared": "24",
+      "rho": "5/4",
+      "remainder": "-15",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        -1
+      ],
+      "R_norm_squared": "16",
+      "rho": "23/18",
+      "remainder": "-70/3",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        1
+      ],
+      "R_norm_squared": "24",
+      "rho": "5/4",
+      "remainder": "-15",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        1,
+        -1,
+        1,
+        1,
+        1,
+        -1
+      ],
+      "R_norm_squared": "24",
+      "rho": "5/4",
+      "remainder": "-15",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        1,
+        -1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "R_norm_squared": "32",
+      "rho": "11/9",
+      "remainder": "-20/3",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "R_norm_squared": "32",
+      "rho": "11/9",
+      "remainder": "-20/3",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        1
+      ],
+      "R_norm_squared": "16",
+      "rho": "23/18",
+      "remainder": "-70/3",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        -1
+      ],
+      "R_norm_squared": "16",
+      "rho": "23/18",
+      "remainder": "-70/3",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        1
+      ],
+      "R_norm_squared": "0",
+      "rho": "4/3",
+      "remainder": "-40",
+      "min_L_coefficient": "1/3"
+    },
+    {
+      "signs": [
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        -1
+      ],
+      "R_norm_squared": "32",
+      "rho": "11/9",
+      "remainder": "-20/3",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        1
+      ],
+      "R_norm_squared": "24",
+      "rho": "5/4",
+      "remainder": "-15",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        1,
+        1,
+        -1,
+        1,
+        1,
+        -1
+      ],
+      "R_norm_squared": "24",
+      "rho": "5/4",
+      "remainder": "-15",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        1,
+        1,
+        -1,
+        1,
+        1,
+        1
+      ],
+      "R_norm_squared": "16",
+      "rho": "23/18",
+      "remainder": "-70/3",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        -1
+      ],
+      "R_norm_squared": "32",
+      "rho": "11/9",
+      "remainder": "-20/3",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        1
+      ],
+      "R_norm_squared": "24",
+      "rho": "5/4",
+      "remainder": "-15",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        1,
+        1,
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "R_norm_squared": "24",
+      "rho": "5/4",
+      "remainder": "-15",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        1,
+        1,
+        1,
+        -1,
+        1,
+        1
+      ],
+      "R_norm_squared": "16",
+      "rho": "23/18",
+      "remainder": "-70/3",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        1,
+        1,
+        1,
+        1,
+        -1,
+        -1
+      ],
+      "R_norm_squared": "32",
+      "rho": "11/9",
+      "remainder": "-20/3",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        1,
+        1,
+        1,
+        1,
+        -1,
+        1
+      ],
+      "R_norm_squared": "32",
+      "rho": "11/9",
+      "remainder": "-20/3",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        -1
+      ],
+      "R_norm_squared": "32",
+      "rho": "11/9",
+      "remainder": "-20/3",
+      "min_L_coefficient": "1/6"
+    },
+    {
+      "signs": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "R_norm_squared": "32",
+      "rho": "11/9",
+      "remainder": "-20/3",
+      "min_L_coefficient": "1/6"
+    }
+  ],
+  "not_checked": [
+    "volume/count chamber polynomial identities",
+    "Minkowski generator and normal-fan hypotheses",
+    "Lorentzian support comparison and all other derivative cases",
+    "external Alexandrov-Fenchel/Lorentzian theorems",
+    "wall gluing and degenerate exact values",
+    "Theorem1.1 complete proof"
+  ],
+  "conclusion": "No algebraic obstruction found in this selected block. Its negative remainder controls only the fourth-t-derivative block, conditional on the source representation. No global Jensen theorem or new result certified.",
+  "new_paper": false,
+  "formal_proof": false,
+  "model_assessment": false,
+  "foreign_supplement_downloaded": false
+}

@@ -1,0 +1,108 @@
+{
+  "source_pdf_sha256": "fefc3ad35c98e327cdabdf01b147393f561ba7d149f84c61c60f0e9304d11d9f",
+  "artifacts": [
+    {
+      "file": "algebra-audit1324.txt",
+      "bytes": 1479,
+      "sha256": "04ec027aef3da0970c02e9a5e2b4ab46781eaceb23e7de0b29531ee9aa859af3"
+    },
+    {
+      "file": "boundary-audit1325.txt",
+      "bytes": 5870,
+      "sha256": "38575ec567e37d8119e30335640e71e31d27e1f31ecdce4b52891068b17b6c56"
+    },
+    {
+      "file": "chamber-audit1326.txt",
+      "bytes": 5488,
+      "sha256": "f28dbc23651dad1e0d7b8fcd582738ad9c0e65b1238df5cd37dc39a2cd6b2976"
+    },
+    {
+      "file": "check-algebra1324.py",
+      "bytes": 5367,
+      "sha256": "62e59fa1a59e1ed99b0da166c98950ef44c289a8f80d403c016b793622c300cb"
+    },
+    {
+      "file": "check-chambers1326.py",
+      "bytes": 10280,
+      "sha256": "91b89e80cb9e115a31e1235ee46e866609cde06302956705d17a3bb41b5c1b4a"
+    },
+    {
+      "file": "check-derivatives1327.py",
+      "bytes": 4028,
+      "sha256": "c8b91c3813c9d912717dfd67a1f06c5fd54d45189df2549f9d819cf27a1af6e4"
+    },
+    {
+      "file": "check-walls1328.py",
+      "bytes": 8171,
+      "sha256": "0fc9b78039004a1305b158f4b79e9b5526a6847d1e0e9593d84422a4e8f972ec"
+    },
+    {
+      "file": "CONTEXT1329.json",
+      "bytes": 712,
+      "sha256": "086e82fb3c575fbcef1c276625ae643e85997abb1cb73ca77e49d5a8cc9512ce"
+    },
+    {
+      "file": "EXTRACTION-DISPLAY-FAILURE1328.json",
+      "bytes": 360,
+      "sha256": "ada27fd82c995dd6b7c8cfa7121c7bf969bd0f01f9c3d44a7035a4f50d55d05f"
+    },
+    {
+      "file": "GENERATION-FAILURE1327.json",
+      "bytes": 354,
+      "sha256": "3b9e121277c044510af70339c1c456f23e19f6a331c1ba024f2621065a6fc008"
+    },
+    {
+      "file": "lorentzian-audit1327.txt",
+      "bytes": 6698,
+      "sha256": "d3c7aeb7b75deedf8d67602646bab7aff64bf04ed3d08bfa4becfc9fa42e8b42"
+    },
+    {
+      "file": "PORTABILITY1329.json",
+      "bytes": 1601,
+      "sha256": "cc89aedff6285ed00ba64223c54453e20ff707972ee3a99dab7306947fbfa714"
+    },
+    {
+      "file": "READING1329.json",
+      "bytes": 798,
+      "sha256": "cde5c2edd10e41f868372b6868ca4d763ceb7acb282cf35b07670ee8d2097bdc"
+    },
+    {
+      "file": "README.md",
+      "bytes": 5961,
+      "sha256": "13c688733ce189ab346d614ea26aacd81ac06a269281cd44c78ce36fb660f7a1"
+    },
+    {
+      "file": "RESULT1324.json",
+      "bytes": 15315,
+      "sha256": "b50024dfba76cbe1e6237d836a095a9ad8bb6d79fa3f55ecc14168f99b9af200"
+    },
+    {
+      "file": "RESULT1326.json",
+      "bytes": 489636,
+      "sha256": "cc067bd12ea39cde9606ad6b6e06e4102555ad19b939ebf8d714cff6d687bea1"
+    },
+    {
+      "file": "RESULT1327.json",
+      "bytes": 34981,
+      "sha256": "4db9f69aef9ece7e7548e49f1aeb6e812dedf06ac066532b6c9a2f52e8dfbcc0"
+    },
+    {
+      "file": "RESULT1328.json",
+      "bytes": 2212681,
+      "sha256": "4f494b3ac32ae88572efa4bf7996637912f19ba89ed0621e16688d1993f810cf"
+    },
+    {
+      "file": "transfer-audit1329.txt",
+      "bytes": 8720,
+      "sha256": "5240e4ff242afa71a309254da4c116aab0b857b4a4e380ce601e0b585c09acca"
+    },
+    {
+      "file": "wall-audit1328.txt",
+      "bytes": 5905,
+      "sha256": "1c8865e0d535d779842b2bba167a74c27ef76a0216dd337d6d3d2c2e740d4f80"
+    }
+  ],
+  "foreign_source_vendored": false,
+  "formal_verification": false,
+  "independent_model_review": false
+}

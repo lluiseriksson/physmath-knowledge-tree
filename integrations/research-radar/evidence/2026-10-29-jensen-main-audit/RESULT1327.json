@@ -1,0 +1,1659 @@
+{
+  "status": "PASS_SELECTED_LORENTZIAN_DERIVATIVE_ALGEBRA",
+  "input_sha256": "cc067bd12ea39cde9606ad6b6e06e4102555ad19b939ebf8d714cff6d687bea1",
+  "input_file": "RESULT1326.json",
+  "script_sha256": "c8b91c3813c9d912717dfd67a1f06c5fd54d45189df2549f9d819cf27a1af6e4",
+  "source_pdf_sha256": "fefc3ad35c98e327cdabdf01b147393f561ba7d149f84c61c60f0e9304d11d9f",
+  "exact_arithmetic": "Fraction; symbolic coefficient identities, no sampled cone directions",
+  "chambers": 6,
+  "one_shape_three_t_13x13_identities": 72,
+  "gradient_V_at_K_is_one_all_chambers": true,
+  "derivative_cases": [
+    {
+      "shape_derivatives": 0,
+      "t_derivatives": 4,
+      "terms": [
+        [
+          "Q",
+          24,
+          0
+        ],
+        [
+          "L",
+          120,
+          1
+        ],
+        [
+          "constant",
+          360,
+          2
+        ]
+      ]
+    },
+    {
+      "shape_derivatives": 1,
+      "t_derivatives": 3,
+      "terms": [
+        [
+          "V",
+          6,
+          0
+        ],
+        [
+          "Q",
+          24,
+          1
+        ],
+        [
+          "L",
+          60,
+          2
+        ]
+      ]
+    },
+    {
+      "shape_derivatives": 2,
+      "t_derivatives": 2,
+      "terms": [
+        [
+          "V",
+          6,
+          1
+        ],
+        [
+          "Q",
+          12,
+          2
+        ]
+      ]
+    },
+    {
+      "shape_derivatives": 3,
+      "t_derivatives": 1,
+      "terms": [
+        [
+          "V",
+          3,
+          2
+        ]
+      ]
+    },
+    {
+      "shape_derivatives": 4,
+      "t_derivatives": 0,
+      "terms": []
+    }
+  ],
+  "records": [
+    {
+      "chamber": 1,
+      "grad_V_at_K": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "matrix_identities": [
+        {
+          "unit_direction": 0,
+          "Hd_times_one": [
+            "-2",
+            "1",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-14",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 1,
+          "Hd_times_one": [
+            "1",
+            "-2",
+            "1",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-4",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 2,
+          "Hd_times_one": [
+            "1",
+            "1",
+            "-2",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "6",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 3,
+          "Hd_times_one": [
+            "0",
+            "0",
+            "0",
+            "-2",
+            "1",
+            "1",
+            "1",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-4",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 4,
+          "Hd_times_one": [
+            "0",
+            "1",
+            "0",
+            "1",
+            "-2",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-4",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 5,
+          "Hd_times_one": [
+            "0",
+            "0",
+            "1",
+            "1",
+            "1",
+            "-2",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-4",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 6,
+          "Hd_times_one": [
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "-2",
+            "1",
+            "1",
+            "1",
+            "0",
+            "0"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-4",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 7,
+          "Hd_times_one": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "-2",
+            "1",
+            "0",
+            "1",
+            "0"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "6",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 8,
+          "Hd_times_one": [
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "1",
+            "1",
+            "1",
+            "-2",
+            "0",
+            "0",
+            "0"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-14",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 9,
+          "Hd_times_one": [
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "-2",
+            "1",
+            "1"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-4",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 10,
+          "Hd_times_one": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "1",
+            "-2",
+            "1"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-4",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 11,
+          "Hd_times_one": [
+            "0",
+            "1",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "1",
+            "-2"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-4",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        }
+      ],
+      "identities_checked": 12
+    },
+    {
+      "chamber": 2,
+      "grad_V_at_K": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "matrix_identities": [
+        {
+          "unit_direction": 0,
+          "Hd_times_one": [
+            "-2",
+            "1",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-14",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 1,
+          "Hd_times_one": [
+            "1",
+            "-2",
+            "1",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-4",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 2,
+          "Hd_times_one": [
+            "1",
+            "1",
+            "-2",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "6",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 3,
+          "Hd_times_one": [
+            "0",
+            "0",
+            "0",
+            "-2",
+            "1",
+            "1",
+            "1",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "6",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 4,
+          "Hd_times_one": [
+            "0",
+            "1",
+            "0",
+            "1",
+            "-2",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-4",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 5,
+          "Hd_times_one": [
+            "0",
+            "0",
+            "1",
+            "1",
+            "1",
+            "-2",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-14",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 6,
+          "Hd_times_one": [
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "-2",
+            "1",
+            "1",
+            "1",
+            "0",
+            "0"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-4",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 7,
+          "Hd_times_one": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "-2",
+            "1",
+            "0",
+            "1",
+            "0"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-4",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 8,
+          "Hd_times_one": [
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "1",
+            "1",
+            "1",
+            "-2",
+            "0",
+            "0",
+            "0"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-4",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 9,
+          "Hd_times_one": [
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "-2",
+            "1",
+            "1"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-14",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 10,
+          "Hd_times_one": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "1",
+            "-2",
+            "1"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "6",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 11,
+          "Hd_times_one": [
+            "0",
+            "1",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "1",
+            "-2"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-4",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        }
+      ],
+      "identities_checked": 12
+    },
+    {
+      "chamber": 3,
+      "grad_V_at_K": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "matrix_identities": [
+        {
+          "unit_direction": 0,
+          "Hd_times_one": [
+            "-2",
+            "1",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-14",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 1,
+          "Hd_times_one": [
+            "1",
+            "-2",
+            "1",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-4",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 2,
+          "Hd_times_one": [
+            "1",
+            "1",
+            "-2",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "6",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 3,
+          "Hd_times_one": [
+            "0",
+            "0",
+            "0",
+            "-2",
+            "1",
+            "1",
+            "1",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "6",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 4,
+          "Hd_times_one": [
+            "0",
+            "1",
+            "0",
+            "1",
+            "-2",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-4",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 5,
+          "Hd_times_one": [
+            "0",
+            "0",
+            "1",
+            "1",
+            "1",
+            "-2",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-14",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 6,
+          "Hd_times_one": [
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "-2",
+            "1",
+            "1",
+            "1",
+            "0",
+            "0"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-14",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 7,
+          "Hd_times_one": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "-2",
+            "1",
+            "0",
+            "1",
+            "0"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "6",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 8,
+          "Hd_times_one": [
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "1",
+            "1",
+            "1",
+            "-2",
+            "0",
+            "0",
+            "0"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-4",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 9,
+          "Hd_times_one": [
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "-2",
+            "1",
+            "1"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-4",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 10,
+          "Hd_times_one": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "1",
+            "-2",
+            "1"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-4",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 11,
+          "Hd_times_one": [
+            "0",
+            "1",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "1",
+            "-2"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-4",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        }
+      ],
+      "identities_checked": 12
+    },
+    {
+      "chamber": 4,
+      "grad_V_at_K": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "matrix_identities": [
+        {
+          "unit_direction": 0,
+          "Hd_times_one": [
+            "-2",
+            "1",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-14",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 1,
+          "Hd_times_one": [
+            "1",
+            "-2",
+            "1",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-4",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 2,
+          "Hd_times_one": [
+            "1",
+            "1",
+            "-2",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "6",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 3,
+          "Hd_times_one": [
+            "0",
+            "0",
+            "0",
+            "-2",
+            "1",
+            "1",
+            "1",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-14",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 4,
+          "Hd_times_one": [
+            "0",
+            "1",
+            "0",
+            "1",
+            "-2",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "6",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 5,
+          "Hd_times_one": [
+            "0",
+            "0",
+            "1",
+            "1",
+            "1",
+            "-2",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-4",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 6,
+          "Hd_times_one": [
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "-2",
+            "1",
+            "1",
+            "1",
+            "0",
+            "0"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-4",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 7,
+          "Hd_times_one": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "-2",
+            "1",
+            "0",
+            "1",
+            "0"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "6",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 8,
+          "Hd_times_one": [
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "1",
+            "1",
+            "1",
+            "-2",
+            "0",
+            "0",
+            "0"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-14",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 9,
+          "Hd_times_one": [
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "-2",
+            "1",
+            "1"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "6",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 10,
+          "Hd_times_one": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "1",
+            "-2",
+            "1"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-4",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 11,
+          "Hd_times_one": [
+            "0",
+            "1",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "1",
+            "-2"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-14",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        }
+      ],
+      "identities_checked": 12
+    },
+    {
+      "chamber": 5,
+      "grad_V_at_K": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "matrix_identities": [
+        {
+          "unit_direction": 0,
+          "Hd_times_one": [
+            "-2",
+            "1",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-14",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 1,
+          "Hd_times_one": [
+            "1",
+            "-2",
+            "1",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-4",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 2,
+          "Hd_times_one": [
+            "1",
+            "1",
+            "-2",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "6",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 3,
+          "Hd_times_one": [
+            "0",
+            "0",
+            "0",
+            "-2",
+            "1",
+            "1",
+            "1",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-4",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 4,
+          "Hd_times_one": [
+            "0",
+            "1",
+            "0",
+            "1",
+            "-2",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "6",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 5,
+          "Hd_times_one": [
+            "0",
+            "0",
+            "1",
+            "1",
+            "1",
+            "-2",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-14",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 6,
+          "Hd_times_one": [
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "-2",
+            "1",
+            "1",
+            "1",
+            "0",
+            "0"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-14",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 7,
+          "Hd_times_one": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "-2",
+            "1",
+            "0",
+            "1",
+            "0"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "6",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 8,
+          "Hd_times_one": [
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "1",
+            "1",
+            "1",
+            "-2",
+            "0",
+            "0",
+            "0"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-4",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 9,
+          "Hd_times_one": [
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "-2",
+            "1",
+            "1"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "6",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 10,
+          "Hd_times_one": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "1",
+            "-2",
+            "1"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-4",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 11,
+          "Hd_times_one": [
+            "0",
+            "1",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "1",
+            "-2"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-14",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        }
+      ],
+      "identities_checked": 12
+    },
+    {
+      "chamber": 6,
+      "grad_V_at_K": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "matrix_identities": [
+        {
+          "unit_direction": 0,
+          "Hd_times_one": [
+            "-2",
+            "1",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "1",
+            "0"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-14",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 1,
+          "Hd_times_one": [
+            "1",
+            "-2",
+            "1",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-4",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 2,
+          "Hd_times_one": [
+            "1",
+            "1",
+            "-2",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "6",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 3,
+          "Hd_times_one": [
+            "0",
+            "0",
+            "0",
+            "-2",
+            "1",
+            "1",
+            "1",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-14",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 4,
+          "Hd_times_one": [
+            "0",
+            "1",
+            "0",
+            "1",
+            "-2",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "6",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 5,
+          "Hd_times_one": [
+            "0",
+            "0",
+            "1",
+            "1",
+            "1",
+            "-2",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-4",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 6,
+          "Hd_times_one": [
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "-2",
+            "1",
+            "1",
+            "1",
+            "0",
+            "0"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "6",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 7,
+          "Hd_times_one": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "-2",
+            "1",
+            "0",
+            "1",
+            "0"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-4",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 8,
+          "Hd_times_one": [
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "1",
+            "1",
+            "1",
+            "-2",
+            "0",
+            "0",
+            "0"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-14",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 9,
+          "Hd_times_one": [
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "-2",
+            "1",
+            "1"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-4",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 10,
+          "Hd_times_one": [
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "0",
+            "1",
+            "-2",
+            "1"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "6",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        },
+        {
+          "unit_direction": 11,
+          "Hd_times_one": [
+            "0",
+            "1",
+            "0",
+            "0",
+            "1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "1",
+            "1",
+            "-2"
+          ],
+          "one_Hd_one": "2",
+          "algebraic_remainder": "-14",
+          "remainder_sign_for_raw_unit_direction_not_assumed": true
+        }
+      ],
+      "identities_checked": 12
+    }
+  ],
+  "warning": "Raw e_j check algebra only. Some raw-unit remainders are positive; chamber/gauge/sign constraints are indispensable for the actual negative-remainder argument.",
+  "not_checked_by_program": [
+    "all cone-generator signs",
+    "Lorentzian theorem hypotheses/analytic lifting",
+    "wall gluing",
+    "whole source theorem"
+  ],
+  "independent_referee": false,
+  "formal_proof": false,
+  "new_paper_or_score": false
+}

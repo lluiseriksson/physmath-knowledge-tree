@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1327,
+    "original_code_sha256": "c2b1c2e028afabfab78203903fbe6cc3f74735e9ead9f83195b6c812feff527a",
+    "portable_code_sha256": "c8b91c3813c9d912717dfd67a1f06c5fd54d45189df2549f9d819cf27a1af6e4",
+    "original_result_sha256": "7de71f6ee9422baf4b6c621909396db17f82a124adcfb71477bf650d6fbca21d",
+    "portable_result_sha256": "4db9f69aef9ece7e7548e49f1aeb6e812dedf06ac066532b6c9a2f52e8dfbcc0",
+    "metadata_fields_excluded": [
+      "script_sha256",
+      "input_file"
+    ],
+    "scientific_payload_identical": true,
+    "change": "Only resolve own immutable RESULT1326.json beside the script;1327 reports its basename. No mathematical assertion/domain/seed changed.",
+    "validation": "Same-agent portability check, not a new scientific search or independent replication."
+  },
+  {
+    "id": 1328,
+    "original_code_sha256": "ddeecb8295fefd6c1d94a4d9ec41e66955333a3f1ebd5de5da4d4c650c7d74c2",
+    "portable_code_sha256": "0fc9b78039004a1305b158f4b79e9b5526a6847d1e0e9593d84422a4e8f972ec",
+    "original_result_sha256": "277d6121da3d3bfe05c5337034e0113e75dde0e115561c1b4d5e99e973c66afb",
+    "portable_result_sha256": "4f494b3ac32ae88572efa4bf7996637912f19ba89ed0621e16688d1993f810cf",
+    "metadata_fields_excluded": [
+      "script_sha256",
+      "duration_seconds"
+    ],
+    "scientific_payload_identical": true,
+    "change": "Only resolve own immutable RESULT1326.json beside the script;1327 reports its basename. No mathematical assertion/domain/seed changed.",
+    "validation": "Same-agent portability check, not a new scientific search or independent replication."
+  }
+]
