@@ -1,0 +1,128 @@
+415 — REDUCCIÓN UNIVERSAL DE H Y SU INVERSA PURA
+Entrada414 de24oct2026; cierre25oct2026 Europe/Stockholm.
+Prueba exacta dependiente, sin nota, prioridad o comparación universalB.
+
+1. CONVENCIONES Y CUANTIFICADORES
+
+Se trabaja enF3 para los índices, omega²+omega+1=0, omega=exp(2pi i/3). Para evitar conflicto entre el operador WeylX y la entrada lógica, llamaré L a una matriz lógica compleja3x3 y X_W al desplazamiento X_W|j>=|j+1>. Z|j>=omega^j|j>.
+
+El código previo CGL tiene columnas v_j=(1/sqrt3)sum_t|t,t+j,t+2j>; V*V=I3. La aplicación examinada es
+ H(L)=Phi_3^tensor3(V L V*), Phi_3(Y)=Tr(Y)I3-Y/2.
+La reducción LINEAL se prueba para todoL complejo, incluso no Hermítico. Las fórmulas espectrales, la inversa declarada y las cotas de orden siguientes se refieren a L=psi psi*, ||psi||=1. No se afirma que H(L) sea positiva/invertible para cualquier matriz complejaL.
+
+2. LOS NUEVE SECTORES
+
+Sea T_cp de27x3 con columna j
+ sum_t omega^(-pt)|t,t+j,t+c-j>, y Q_cp=T_cp/sqrt3.
+Para distintas cargasc, sus soportes son disjuntos. Para igualc y distinto j también lo son. A igualc,j, la suma de fases da3delta_pp'. Así
+ T_cp* T_c'p'=3delta_cc' delta_pp' I3.
+Son nueve subespacios ortogonales de dimensión3, por tanto cubren27 dimensiones. T_00/sqrt3=V.
+
+S_X=X_W^tensor3 desplaza t a t+1 y actúa sobreT_cp poromega^p. S_Z=Z^tensor3 multiplica cada palabra poromega^(3t+c)=omega^c. El código es fijado por ambos. La covariancia dePhi bajo unitarias locales implica queH(E_kl) conmuta con ambos estabilizadores para toda unidad matricial lógica; de ahí no hay entradas entre los nueve sectores de caracteres distintos. También se verifica la invariancia exactamente por índices, sin deducirla de muestras puras.
+
+3. FÓRMULA EXPLÍCITA DE LOS BLOQUES
+
+Para q=0,1,2, los vectores
+ f_q,k(j)=omega^[q*j(j-1)/2-k*j]/sqrt3
+son autovectores deX_W Z^q con autovaloromega^k. Definir P_q,k=f_q,k f_q,k*, yP_Z,k=|k><k|. Sus entradas son
+ P_q,k(i,j)=(1/3)omega^[q(A_i-A_j)-k(i-j)], A_i=i(i-1)/2.
+
+La identidad de bloque es
+ h_00(L)=Tr(L)I3/2+L/8;
+ h_0p(L)=Tr(L)I3/2+(1/4)sum_k L_kk P_Z,k, p=1,2;
+ h_cp(L)=Tr(L)I3/2+(1/4)sum_k Tr(P_q,k+p L)P_q,k,
+              c!=0, q=p/c modulo3.                       (1)
+Los subíndicesk+p se reducen módulo3. Para c!=0,p!=0 hay un reetiquetado cíclico de los resultados; no es correcto borrar esa permutación y llamarlo a todos efectos la misma dephasing sin etiquetas.
+
+La tabla, en orden lexicográfico(c,p), es:
+ (0,1):Z,input0,1,2; (0,2):Z,input0,1,2;
+ (1,0):X_W,input0,1,2;
+ (1,1):X_W Z,input1,2,0;
+ (1,2):X_W Z²,input2,0,1;
+ (2,0):X_W,input0,1,2;
+ (2,1):X_W Z²,input1,2,0;
+ (2,2):X_W Z,input2,0,1.
+Esta coincide exactamente con413JSON. Cada base ocurre dos veces.
+
+Una fórmula por índices que permite verificar(1), sin diagonalización numérica, es la siguiente. Para r,s físicos y la entradaE_kl,
+ H(E_kl)_(r,s)=(1/3)sum_(t,u) product_(i=0,1,2)
+ [delta_(r_i,s_i)delta_(t+ik,u+il)
+       -(1/2)delta_(r_i,t+ik)delta_(s_i,u+il)].            (2)
+El código propio expande(2) por los ocho subconjuntos de slots: traza el complemento y reinserta la identidad, con coeficiente(-1/2)^|S|/3. Es una implementación distinta de los productos Kronecker del productor.
+
+Para c!=0, la parteD_cp=4h_cp-2Tr(.)I tiene los coeficientes cerrados
+ D_cp(E_kl)_(i,j)=(1/3)delta_(i-j,k-l)
+       omega^[q(A_i-A_j+A_l-A_k)-p(l-k)].                (3)
+Se obtiene al multiplicar las dos entradas de proyectores de(1) y sumar el carácterk deF3. Para c=0,p!=0, D_0p(E_kl)=delta_kl E_kk. Para00, h_00 está dado arriba.
+
+verify415.py comprueba exactamente las729 entradas de bloque (nueve entradasE_kl por nueve sectores por nueve entradas3x3) y las81 identidades H(E_kl)T_cp=T_cp h_cp(E_kl). También comprueba la ortogonalidad/completitud. Toda la aritmética central usa pares deFraction: (a,b) representa a+b*omega, con producto(aa'-bb',ab'+ba'-bb') y conjugado(a-b,-b). No se ejecuta/importa412/413. Al final se comparan los coeficientes impresos por el productor; SymPy se usa sólo para leer esos coeficientes congelados, después de haber pasado las identidades propias.
+
+Como E_kl es una base COMPLEJA deM3(C) y ambos lados son aplicaciones complejamente lineales, estos controles algebraicos completos demuestran(1) para todoL complejo. No es una interpolación entre estados puros ni un muestreo.
+
+4. MUB Y LA IDENTIDAD DE SEGUNDO MOMENTO
+
+Los doce proyectores explícitos de la sección3 satisfacen exactamente
+ P*=P, P²=P, TrP=1;
+ sum_k P_b,k=I3, P_b,k P_b,l=delta_kl P_b,k;
+ Tr(P_b,k P_b',l)=1/3 para b!=b'.
+Las matrices enprojectors415.json conservan todas sus entradas enQ(omega). El código comprueba además la identidad9x9
+      sum_(b,k) P_b,k tensor P_b,k=I9+F,                (4)
+conF el intercambio de las dos copias3-dimensionales. Son las cuatro bases WeylMUB estándar, no una construcción de bases nueva.
+
+Para L=psi psi* unitario, p_b,k=Tr(P_b,k L) es real,0<=p<=1, ysum_k p_b,k=1 para cada base. Por(4),
+ sum_(b,k) p_b,k²=Tr[(L tensor L)(I+F)]
+                 =(TrL)²+Tr(L²)=2.                     (5)
+
+5. INVERSA, ESPECTRO COMPLETO Y COTAS
+
+En el sector00, L es una proyección de rango1, por tanto
+ (I/2+L/8)^-1=2I-(2/5)L.                               (6)
+La multiplicación usaL²=L y daI exactamente. Sus autovaloresH son1/2,1/2,5/8. No se aplica(6) a una matrizL arbitraria o a un estado mixto sin cambiar la fórmula.
+
+Cada otro bloque es diagonal en sus tres proyectoresP_cp,k, con autovalores(2+p_input,k)/4. Como los proyectores son ortogonales,
+ h_cp^-1=sum_k 4P_cp,k/(2+p_input,k).                    (7)
+Aquíinputk es k para c=0 yk+p para c!=0 en la baseq=p/c. Todo denominador está en[2,3]. La inversa física completa es
+      H^-1=sum_cp Q_cp h_cp^-1 Q_cp*.                  (8)
+
+Cada base aparece dos veces y sólo se permutan los resultados. El espectro COMPLETO de27 dimensiones es
+ 1/2 multiplicidad2;5/8 multiplicidad1;
+ (2+p_b,k)/4 multiplicidad2 para cada una de las12 parejas(b,k).
+Si coinciden valores se suman sus multiplicidades. La cuenta es3+24=27. En particularI/2<=H<=3I/4. La cota superior no requiere asumir que algúnp sea1; sólo es una cota uniforme y puede ser estricta para un estado concreto.
+
+Comprobación analítica adicional de las cotas: el código tiene marginalesI3/3, así que en el desarrollo H=I/2+(1/4)sum_i rho_otros2 tensor I_i-aa*/8 cada lift está entre0 eI/3 y tienea como autovector1/3. Esto daH>=I/2 por descomposicióna/a-perp, yH<=I/2+I/4=3I/4 directamente. Por tanto esas cotas no necesitan atribuirse a una nueva propiedadMUB.
+
+De(5) y del espectro,
+ TrH²=2*(1/2)²+(5/8)²+(2/16)sum_(b,k)(2+p_b,k)²
+      =1/2+25/64+(1/8)(48+16+2)=585/64.                (9)
+TambiénTrH=125/8, coherente conTrPhi(Y)=(5/2)TrY en cada slot.
+
+Se reconstruyeronH yH^-1 físicos para cuatro controles exactos, entre ellos estados complejos proporcionales a(1,omega,0) y(1,omega,2+omega). Esos controles confirman la transcripción; la universalidad de(6)–(9) proviene deL²=L, la descomposición ortogonal y(1),(4), no de cuatro muestras.
+
+6. LA BARRA EN LA CONSTRUCCIÓN DEB
+
+El operador requerido es
+ B_a=[M_a overline(H_a)^-1 M_a*]^Gamma_INPUT,
+no[M_a H_a^-1 M_a*]^Gamma para un anchor complejo. La fórmula correcta a partir de(8) es
+ overline(H)^-1=overline(H^-1)
+       =sum_cp overline(Q_cp) overline(h_cp^-1) Q_cp^T.  (10)
+Hay que conjugar también los embeddings de sector, no sólo las probabilidades. En particularoverline(T_cp)=T_c,-p; no debe suponerse que la conjugación deje cada etiqueta de sector inalterada.
+
+Control exacto: para psi=(1,omega,0)/sqrt2,
+ [overline(H) H^-1-I]_(000,000)=1/120+omega/240 !=0.
+Por el contrariooverline(H) overline(H^-1)=I exactamente. El valor es una advertencia contra un atajo equivocado, NO un falsificador de414, que conserva expresamente la barra.
+
+7. CAMINO ALGEBRAICO PARA B Y OBLIGACIÓN QUE NO DESAPARECE
+
+La reducción elimina la inversión genérica27x27: M_a es lineal enpsi, y(8),(10) expresan la inversa con denominadores2+p_b,k. Para psi unitario, el producto
+       D(psi)=product_(b,k)(2+p_b,k)>=2^12>0
+es un denominador común válido (pueden existir cancelaciones, pero no son necesarias). Así5D(psi)(A+B_a) y5D(psi)(A-B_a) tienen entradas polinómicas Hermíticas en las partes reales e imaginarias depsi, sobre la esfera||psi||²=1, con coeficientes algebraicos fijos. Se obtiene una obligación algebraica concreta de positividad matricial, no un certificado de sus signos ni una complejidad eficiente.
+
+La cotaH^-1<=2I implica una desigualdad para matricesChoi CP antes deGamma; no se puede aplicarGamma preservando arbitrariamente el orden. Por ejemplo|Omega2><Omega2|/2 esPSD y su transposición parcialF/2 tiene autovalor-1/2 en la dirección antisimétrica. La comparación firmada729-dimensional, su núcleo y un gap uniforme para TODOpsi siguen por demostrar. Ni las fórmulasH, ni la recuperaciónCGL, ni la normalformaSLOCC eliminan esa obligación.
+
+8. FUENTES Y CORRECCIÓN BIBLIOGRÁFICA
+
+Jaffali–Holweck–Oeding,arXiv:2307.00970v1,§2.1,Eq11–12, usa exactamente estos tres vectores en su forma semisimple compleja y atribuye la clasificación aNurmiev. Se verificó ese alcance y el registro primario de versión:03Jul2023. La frase23Jul2023 de414 es una errata bibliográfica; se conserva el aviso separado y no se modifica el original. El pasaje no establece una equivalencia LU de todos los estados ni preservación deq bajo filtrosSLOCC.
+
+Para Briand–Luque–Thibon–Verstraete,quant-ph/0306122, sólo se leyó abstract/registrobibliográfico de la versiónv4; no el desarrollo completo. La fuente primaria se archiva con hash. No se certifica prioridad del código, lasMUB, la normalforma ni esta reducción. Las fuentes fallidas declaradas por el productor quedan en su metadata; no se presentan como fallos reproducidos por este revisor.
+
+No hubo fallo computacional propio en415 ni resultado adverso oculto. La prueba es asistida por aritmética exacta, no formalizaciónLean. Contexto410 y filesystem compartidos; revisiónIA dependiente, no humana. Astraxhigh solicitado, runtime no atestiguado. Se conserva el paquete414 íntegro, incluido el archivo de verificación410 como bytes opacos no usados para probar nada.

@@ -1,0 +1,42 @@
+{
+  "pin": "42f739b484fd055e0aa29601c35677ad996f2ef2",
+  "sources": [
+    {
+      "url": "https://raw.githubusercontent.com/M32026/3d-sticky-kakeya/42f739b484fd055e0aa29601c35677ad996f2ef2/MyLeanRepo/Kakeya/Assouad/PropStickyDefinition2_12NestedJohnCWATransport.lean",
+      "path": "MyLeanRepo/Kakeya/Assouad/PropStickyDefinition2_12NestedJohnCWATransport.lean",
+      "status": 200,
+      "sha256": "83e2d64c343d24583767724e5e70d20fa70e80e3a950e761a81487d0ce8c3623",
+      "expected_sha256": "83e2d64c343d24583767724e5e70d20fa70e80e3a950e761a81487d0ce8c3623",
+      "match": true,
+      "reading": "bytes revalidated only; selected arguments already read1272, not a new proof audit"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/M32026/3d-sticky-kakeya/42f739b484fd055e0aa29601c35677ad996f2ef2/MyLeanRepo/Kakeya/Assouad/PropStickyDefinition2_12RescalingBridge.lean",
+      "path": "MyLeanRepo/Kakeya/Assouad/PropStickyDefinition2_12RescalingBridge.lean",
+      "status": 200,
+      "sha256": "7aced8d19004b8d4f4f84b159eed4a006bb74c1dcee195decb89e112051e3235",
+      "expected_sha256": "7aced8d19004b8d4f4f84b159eed4a006bb74c1dcee195decb89e112051e3235",
+      "match": true,
+      "reading": "bytes revalidated only; selected arguments already read1272, not a new proof audit"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/M32026/3d-sticky-kakeya/42f739b484fd055e0aa29601c35677ad996f2ef2/MyLeanRepo/Kakeya/Geometry/OuterJohnEllipsoid.lean",
+      "path": "MyLeanRepo/Kakeya/Geometry/OuterJohnEllipsoid.lean",
+      "status": 200,
+      "sha256": "c86e8c5ac6167f5cbfe7734f5624578cefc3148db3f2ab9283976cadd6767d0f",
+      "expected_sha256": "c86e8c5ac6167f5cbfe7734f5624578cefc3148db3f2ab9283976cadd6767d0f",
+      "match": true,
+      "reading": "bytes revalidated only; selected arguments already read1272, not a new proof audit"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/M32026/3d-sticky-kakeya/42f739b484fd055e0aa29601c35677ad996f2ef2/MyLeanRepo/Kakeya/Geometry/JohnEllipsoid/GeneralInclusionMain.lean",
+      "path": "MyLeanRepo/Kakeya/Geometry/JohnEllipsoid/GeneralInclusionMain.lean",
+      "status": 200,
+      "sha256": "795920a9e85dcedd3a286334b96948a942c0cff65402492269756a555fb97e8b",
+      "expected_sha256": "795920a9e85dcedd3a286334b96948a942c0cff65402492269756a555fb97e8b",
+      "match": true,
+      "reading": "bytes revalidated only; selected arguments already read1272, not a new proof audit"
+    }
+  ],
+  "scope": "Not a kernel replay or transitive proof audit"
+}
