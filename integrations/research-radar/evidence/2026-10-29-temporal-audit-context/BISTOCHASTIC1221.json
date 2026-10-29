@@ -1,0 +1,118 @@
+{
+  "scope": "Additional exact candidate control for the same one running component audit; no new reviewer or grade",
+  "base": "Two-point uniform probability space with ergodic invertible swap",
+  "phase0": "Dephasing D_Z with Kraus P0,P1",
+  "phase1": "Hadamard after D_Z with Kraus H P0,H P1",
+  "both_channels": "CP,TP,unital; both channel and dual are faithful",
+  "source": "arXiv2607.01446v1 AppendixA definitions and LemmaA.1",
+  "chronological_convention": "Later Kraus matrix multiplies on the left",
+  "phase0_onsets": {
+    "original_first_and_eventual": 3,
+    "pointwise_adjoint_first_and_eventual": 2
+  },
+  "phase1_onsets": {
+    "original_first_and_eventual": 2,
+    "pointwise_adjoint_first_and_eventual": 3
+  },
+  "analytic_extension": "D_Z composed with H composed with D_Z is the complete depolarizer. After first depolarizing block, all later bistochastic steps preserve it.",
+  "finite_controls": [
+    {
+      "phase": 0,
+      "steps": 1,
+      "choi_rank": 2,
+      "pointwise_adjoint_choi_rank": 2
+    },
+    {
+      "phase": 0,
+      "steps": 2,
+      "choi_rank": 2,
+      "pointwise_adjoint_choi_rank": 4
+    },
+    {
+      "phase": 0,
+      "steps": 3,
+      "choi_rank": 4,
+      "pointwise_adjoint_choi_rank": 4
+    },
+    {
+      "phase": 0,
+      "steps": 4,
+      "choi_rank": 4,
+      "pointwise_adjoint_choi_rank": 4
+    },
+    {
+      "phase": 0,
+      "steps": 5,
+      "choi_rank": 4,
+      "pointwise_adjoint_choi_rank": 4
+    },
+    {
+      "phase": 0,
+      "steps": 6,
+      "choi_rank": 4,
+      "pointwise_adjoint_choi_rank": 4
+    },
+    {
+      "phase": 0,
+      "steps": 7,
+      "choi_rank": 4,
+      "pointwise_adjoint_choi_rank": 4
+    },
+    {
+      "phase": 0,
+      "steps": 8,
+      "choi_rank": 4,
+      "pointwise_adjoint_choi_rank": 4
+    },
+    {
+      "phase": 1,
+      "steps": 1,
+      "choi_rank": 2,
+      "pointwise_adjoint_choi_rank": 2
+    },
+    {
+      "phase": 1,
+      "steps": 2,
+      "choi_rank": 4,
+      "pointwise_adjoint_choi_rank": 2
+    },
+    {
+      "phase": 1,
+      "steps": 3,
+      "choi_rank": 4,
+      "pointwise_adjoint_choi_rank": 4
+    },
+    {
+      "phase": 1,
+      "steps": 4,
+      "choi_rank": 4,
+      "pointwise_adjoint_choi_rank": 4
+    },
+    {
+      "phase": 1,
+      "steps": 5,
+      "choi_rank": 4,
+      "pointwise_adjoint_choi_rank": 4
+    },
+    {
+      "phase": 1,
+      "steps": 6,
+      "choi_rank": 4,
+      "pointwise_adjoint_choi_rank": 4
+    },
+    {
+      "phase": 1,
+      "steps": 7,
+      "choi_rank": 4,
+      "pointwise_adjoint_choi_rank": 4
+    },
+    {
+      "phase": 1,
+      "steps": 8,
+      "choi_rank": 4,
+      "pointwise_adjoint_choi_rank": 4
+    }
+  ],
+  "all_assertions_pass": true,
+  "no_independent_verdict_yet": true
+}

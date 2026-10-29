@@ -1,0 +1,82 @@
+{
+  "utc": "2026-10-29T09:38:29.755500+00:00",
+  "scope": "One unscored component audit and declared supplements, not an exact-PDF assessment of the later manuscript",
+  "original_report_sha256": "f059e7d612a72ef18d596d4307e716e01602d2afc551c4ff3003c7f897484545",
+  "original_verdict_sha256": "473aac9eae464c8be1b25abd0630bf9d8d0f39de15ef3908354b843256393c95",
+  "original_zip_sha256": "2b0ec580fa6c47f1f1b2b2ce41e3cf653ff26e84c4ef25ce8a25b9751349c7d4",
+  "zip_contents": "Exact original bytes; adjacent text projections normalize only CRLF to LF for repository formatting",
+  "files": [
+    {
+      "name": "REVIEW1220.txt",
+      "sha256": "f059e7d612a72ef18d596d4307e716e01602d2afc551c4ff3003c7f897484545",
+      "original_transport_sha256": "f059e7d612a72ef18d596d4307e716e01602d2afc551c4ff3003c7f897484545"
+    },
+    {
+      "name": "verdict1220.json",
+      "sha256": "473aac9eae464c8be1b25abd0630bf9d8d0f39de15ef3908354b843256393c95",
+      "original_transport_sha256": "473aac9eae464c8be1b25abd0630bf9d8d0f39de15ef3908354b843256393c95"
+    },
+    {
+      "name": "SUBGRAPH1226.json",
+      "sha256": "651313780b52ed860264df8ab4964ea103c8a284b453dc414aaf91aa960139b2",
+      "original_transport_sha256": "651313780b52ed860264df8ab4964ea103c8a284b453dc414aaf91aa960139b2"
+    },
+    {
+      "name": "SOURCES1226.json",
+      "sha256": "16f3bdceb7874cd2876dfd5ed17b0d846778250d933f7784f594b5439e0e72cb",
+      "original_transport_sha256": "8521ffe4296fbaeda8c41e1225761cf5f06d0515fc797d86f1caee9d8bcdcbb3"
+    },
+    {
+      "name": "RECONCILIATION1226.json",
+      "sha256": "a939e83e6b7ca82d14062fa8cafb5d8fbd5a525fb4ce342b1acec76b9eda5d19",
+      "original_transport_sha256": "13357859b2db23951c1039e0977b3fd88055edd2dce5219eb649583a78fdaedb"
+    },
+    {
+      "name": "integrate1226.py",
+      "sha256": "76bab61e4ec32f1d8ccf3335c71373cd466638c00b2126ee81f62c823dfbda09",
+      "original_transport_sha256": "76bab61e4ec32f1d8ccf3335c71373cd466638c00b2126ee81f62c823dfbda09"
+    },
+    {
+      "name": "check_bistochastic1221.py",
+      "sha256": "3ffffc5d41c7250f842c9699eee4ecdc0a609a0c5a620795f4c122ead51a972c",
+      "original_transport_sha256": "3ffffc5d41c7250f842c9699eee4ecdc0a609a0c5a620795f4c122ead51a972c"
+    },
+    {
+      "name": "BISTOCHASTIC1221.json",
+      "sha256": "26be33ab5291c332c5d71e3e4016d2043feed9e9fa0598eea48e7e39817166af",
+      "original_transport_sha256": "26be33ab5291c332c5d71e3e4016d2043feed9e9fa0598eea48e7e39817166af"
+    },
+    {
+      "name": "check_three_phase1222.py",
+      "sha256": "23326341703d094123ba626a7aff9f8d05939dcf0d0dad12328a8ae092a0b716",
+      "original_transport_sha256": "23326341703d094123ba626a7aff9f8d05939dcf0d0dad12328a8ae092a0b716"
+    },
+    {
+      "name": "THREE-PHASE1222.json",
+      "sha256": "17bbafb7ba69fdf1ed0e8e2fb5c4a1b559e8a12cf281107c5f008db317aaf2cf",
+      "original_transport_sha256": "17bbafb7ba69fdf1ed0e8e2fb5c4a1b559e8a12cf281107c5f008db317aaf2cf"
+    },
+    {
+      "name": "check_reverse1223.py",
+      "sha256": "9c164ae73820dfbc18cd8e0229585c72f3a32fb65e42fba86d73cc07b83707f3",
+      "original_transport_sha256": "9c164ae73820dfbc18cd8e0229585c72f3a32fb65e42fba86d73cc07b83707f3"
+    },
+    {
+      "name": "REVERSE1223.json",
+      "sha256": "626b4b3fc58dc5589cc6376e3644ecbdfa7a07bc4ce53fad1fea8f7ec19dd9f2",
+      "original_transport_sha256": "626b4b3fc58dc5589cc6376e3644ecbdfa7a07bc4ce53fad1fea8f7ec19dd9f2"
+    },
+    {
+      "name": "STATEMENT1223.txt",
+      "sha256": "282708f18f1903570bf77832f5fb8f5c6d0c9ad5276b6851ee4452b71c8dcb2c",
+      "original_transport_sha256": "282708f18f1903570bf77832f5fb8f5c6d0c9ad5276b6851ee4452b71c8dcb2c"
+    }
+  ],
+  "requested_model": "gpt-6-astra",
+  "requested_effort": "xhigh",
+  "effective_model_effort_independence": "unverified/unattested; shared filesystem; supplements declared",
+  "input_source_pdf_sha256": "005628bd018d9850f79e26f6371995f8b9bd20c1e40205ccef7e588beb10f9dd",
+  "foreign_PDF_or_images_redistributed": false,
+  "new_score": null,
+  "formal_proof": false
+}

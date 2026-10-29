@@ -1,0 +1,127 @@
+{
+  "scope": "Own exact supporting control for an unreviewed corrected-statement draft, not new score or formal proof",
+  "proper_reverse": "Inverse base T^-1 and local adjoint tuple at T^-1 omega",
+  "original_onsets": [
+    4,
+    3,
+    2
+  ],
+  "proper_reverse_onsets": [
+    4,
+    2,
+    3
+  ],
+  "same_distribution": true,
+  "pointwise_equal": false,
+  "rank_identity_controls": [
+    {
+      "phase": 0,
+      "n": 1,
+      "reverse_rank": 2,
+      "shifted_original_rank": 2
+    },
+    {
+      "phase": 0,
+      "n": 2,
+      "reverse_rank": 2,
+      "shifted_original_rank": 2
+    },
+    {
+      "phase": 0,
+      "n": 3,
+      "reverse_rank": 2,
+      "shifted_original_rank": 2
+    },
+    {
+      "phase": 0,
+      "n": 4,
+      "reverse_rank": 4,
+      "shifted_original_rank": 4
+    },
+    {
+      "phase": 0,
+      "n": 5,
+      "reverse_rank": 4,
+      "shifted_original_rank": 4
+    },
+    {
+      "phase": 0,
+      "n": 6,
+      "reverse_rank": 4,
+      "shifted_original_rank": 4
+    },
+    {
+      "phase": 1,
+      "n": 1,
+      "reverse_rank": 2,
+      "shifted_original_rank": 2
+    },
+    {
+      "phase": 1,
+      "n": 2,
+      "reverse_rank": 4,
+      "shifted_original_rank": 4
+    },
+    {
+      "phase": 1,
+      "n": 3,
+      "reverse_rank": 4,
+      "shifted_original_rank": 4
+    },
+    {
+      "phase": 1,
+      "n": 4,
+      "reverse_rank": 4,
+      "shifted_original_rank": 4
+    },
+    {
+      "phase": 1,
+      "n": 5,
+      "reverse_rank": 4,
+      "shifted_original_rank": 4
+    },
+    {
+      "phase": 1,
+      "n": 6,
+      "reverse_rank": 4,
+      "shifted_original_rank": 4
+    },
+    {
+      "phase": 2,
+      "n": 1,
+      "reverse_rank": 2,
+      "shifted_original_rank": 2
+    },
+    {
+      "phase": 2,
+      "n": 2,
+      "reverse_rank": 2,
+      "shifted_original_rank": 2
+    },
+    {
+      "phase": 2,
+      "n": 3,
+      "reverse_rank": 4,
+      "shifted_original_rank": 4
+    },
+    {
+      "phase": 2,
+      "n": 4,
+      "reverse_rank": 4,
+      "shifted_original_rank": 4
+    },
+    {
+      "phase": 2,
+      "n": 5,
+      "reverse_rank": 4,
+      "shifted_original_rank": 4
+    },
+    {
+      "phase": 2,
+      "n": 6,
+      "reverse_rank": 4,
+      "shifted_original_rank": 4
+    }
+  ],
+  "all_assertions_pass": true
+}

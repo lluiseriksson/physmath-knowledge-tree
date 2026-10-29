@@ -1,0 +1,143 @@
+Scoped mathematical source audit, completed 2026-10-29
+
+Lemma A.1 of arXiv:2607.01446v1 is false under the Appendix's stated definitions. Both asserted almost-sure equalities fail for the originally requested two-phase reset model. Two declared supplements strengthen this finding: the two-phase dephasing/Hadamard model violates both equalities despite trace preservation, unitality, two-sided faithfulness and finite eventual injectivity; the three-phase bistochastic model also separates the distributions of the onset lengths for the same-forward pointwise-adjoint process. These are findings about the helper lemma and the specific proof steps discussed below. No main parent-Hamiltonian or spectral-gap theorem is disproved by these calculations.
+
+This is one component audit. No numerical assessment, novelty claim, whole-paper judgment, Lean proof, or claim of reviewer independence is supplied. Requested configuration: GPT-6 Astra, xhigh. Actually observed: a delegated Codex tool environment using Windows PowerShell and the bundled Python runtime. No trustworthy exact model identifier or effective reasoning-effort telemetry is exposed to this audit. The requested model and effort are therefore UNVERIFIED, not treated as the effective identity. The filesystem is shared with the authoring context; isolation and reviewer independence are UNATTESTED. This pass was not restarted to seek a desired result. The two later candidate supplements were declared additions to the same pass.
+
+The research inputs read were input/REQUEST.txt, input/MANIFEST.json, input/SOURCE.json, input/appendix.txt, input/source.pdf, the exact public arXiv PDF URL, and the four explicitly authorized supplemental files listed below. No parent research state, old score, or old review report was read. Operational reads also included the owner's D:\LEEME.md storage instructions, the PDF skill, and the bundled-runtime information. Those were not research or evaluation inputs. The supplied supplemental calculations were treated as candidate claims and recalculated, not accepted as prior verdicts.
+
+The frozen PDF is Parent Hamiltonians of Ergodic Matrix Product States, by Owen Ekblad, Eloy Moreno-Nadales, Eric B. Roon and Jeffrey H. Schenker, arXiv:2607.01446v1, dated 1 July 2026, 40 PDF pages. Primary source: https://arxiv.org/pdf/2607.01446v1 . The local PDF has 728264 bytes and SHA256 005628bd018d9850f79e26f6371995f8b9bd20c1e40205ccef7e588beb10f9dd. Its page count, printed version label, title and authors were checked. The public URL also resolves to this title and a 40-page PDF; a separate remote byte-for-byte download comparison was not performed.
+
+All four hashes in the original frozen manifest matched the local bytes:
+  appendix.txt  59264b52fb4a2227f71ae7d5383f227802552edfcd134929aa31b2345b3ae8e4
+  REQUEST.txt   4de102bfff67992499328173434a813feb0fa316a971187819034910ae1b18e3
+  SOURCE.json   71acd9f81e2577b24ffb1338fd33e4c6736686fb851134611defe323c9a7bf27
+  source.pdf    005628bd018d9850f79e26f6371995f8b9bd20c1e40205ccef7e588beb10f9dd
+The manifest itself was hashed as 8c2e628b7ea7be8413f9092ac9743eb3aefb192d63335ca1569f59b708e9aca6. It does not contain an independent expected hash for itself. The original manifest and inputs were not modified.
+
+The declared supplemental inputs and their observed SHA256 hashes are:
+  C:\Trabajo\airr\2026-10-29_followup1221\check_bistochastic1221.py
+    3ffffc5d41c7250f842c9699eee4ecdc0a609a0c5a620795f4c122ead51a972c
+  C:\Trabajo\airr\2026-10-29_followup1221\BISTOCHASTIC1221.json
+    26be33ab5291c332c5d71e3e4016d2043feed9e9fa0598eea48e7e39817166af
+  C:\Trabajo\airr\2026-10-29_law1222\check_three_phase1222.py
+    23326341703d094123ba626a7aff9f8d05939dcf0d0dad12328a8ae092a0b716
+  C:\Trabajo\airr\2026-10-29_law1222\THREE-PHASE1222.json
+    17bbafb7ba69fdf1ed0e8e2fb5c4a1b559e8a12cf281107c5f008db317aaf2cf
+These are observed supplement hashes, not entries in the original frozen manifest.
+
+The source convention and the exact defect are as follows. Appendix A, beginning on PDF page 33, permits a measurable matrix tuple S over an invertible ergodic measure-preserving base T. It defines S* pointwise by taking the adjoint of each local matrix; it does not reverse T. On PDF page 34, (A.1) is
+  Pi(S,n;omega;sigma) = A_{i_n}(T^{n-1}omega) ... A_{i_1}(omega).
+Thus later matrices multiply on the left. Write W_n(omega) for the complex span of ALL these length-n words. Definitions (A.2) and (A.3) give
+  ell_0(S;omega) = inf{n>=1 : W_n(omega)=M_d},
+  ell(S;omega) = inf{n>=1 : W_m(omega)=M_d for every m>=n},
+with infimum infinity when appropriate. These are site counts in Appendix A. Main-body definitions using an endpoint in Gamma[0,k] have a possible one-site indexing shift; no silent identification with those endpoint indices is made here.
+
+Lemma A.1 asserts ell_0(S)=ell_0(S*) and ell(S)=ell(S*) almost surely. There is no trace-preserving, unital, faithfulness, mixing or eventual-injectivity assumption in this lemma. I rendered and inspected the complete printed PDF page 34; the printed definition and proof agree with the supplied extracted text. The error is not an extraction ambiguity.
+
+Its word identity fails because
+  Pi(S*,n;omega;sigma)
+    = A_{i_n}(T^{n-1}omega)* ... A_{i_1}(omega)*,
+whereas
+  Pi(S,n;omega;reverse(sigma))*
+    = A_{i_n}(omega)* ... A_{i_1}(T^{n-1}omega)*.
+Reversing the word labels has not reversed the site arguments. For instance, in the reset model at phase 0 and sigma=(0,0), the first expression at n=2 is B_0 R_0*=E_01, while the purported right-hand side is (B_0 R_0)*=(1/2)E_01. More importantly, the full spans differ, as shown next. The autonomous, site-independent case does have the claimed reversal identity. That restriction is not part of the source's general setting.
+
+For the original reset model, let E_ab=|a><b|, a,b in {0,1}; M=M_2(C); D=diag(1,1/2); c=sqrt(3)/2. The two phases are R=(E_10,E_11) and B=(D,c E_01). The base swaps {0,1}, with probabilities 1/2 each. It is invertible, measure preserving and ergodic: its only invariant subsets are the empty and full sets. It is periodic and not mixing, but mixing or total ergodicity is not required in Appendix A. All random variables are measurable. Relabeling Kraus labels 0,1 as 1,2 matches the source alphabet.
+
+The exact normalizations are
+  sum_i R_i*R_i = I,       sum_i R_i R_i* = 2 E_11,
+  sum_i B_i*B_i = I,       sum_i B_i B_i* = diag(7/4,1/4).
+Consequently phi_S(a)=sum_i A_i a A_i* is trace preserving in both phases, and S is faithful in the source's sense. Neither local map is unital. The pointwise-adjoint maps are unital. At the reset phase phi_R*(a)=a_11 I, so phi_R*(E_00)=0: S* is NOT faithful almost surely. At the B phase it is faithful, since D is invertible. A unital CP map need not itself be faithful. For CP maps the exact criteria are
+  phi_S faithful iff sum_i A_i*A_i is positive definite;
+  phi_S* faithful iff sum_i A_i A_i* is positive definite.
+This distinction matters for later lemmas but does not exclude the model from Lemma A.1.
+
+Here is an all-length span calculation, not an extrapolation from small n. Products of subspaces below mean the span of all products. Set
+  V=span{E_10,E_11},  C=span{E_01,E_11},
+  U=span{D,E_01},    U*=span{D,E_10}.
+Nonzero scalar c does not change a span. Direct multiplication gives
+  U V=M,  V M=V,  V U=V,
+  U* C=C, C C=C, C U*=M,
+  U* M=M, C M=M.
+Together with W_{n+1}=span_i A_i(T^n omega) W_n, these identities prove every entry in the following table for all positive lengths:
+
+  process / starting phase    W_1       W_n for n>=2                 dimensions
+  S / 0                       V         V if n odd; M if n even     2 odd, 4 even
+  S / 1                       U         V if n even; M if n odd     2 at n=1 and even; 4 odd>=3
+  S* on same T / 0             C         C for every n               2 for every n
+  S* on same T / 1             U*        M for every n               2 at n=1; 4 thereafter
+
+Therefore the source's first and eventual lengths, in phase order (0,1), are
+  ell_0(S)  = (2,3),             ell(S)  = (infinity,infinity),
+  ell_0(S*) = (infinity,2),      ell(S*) = (infinity,2).
+The first-length equality fails at both points; the eventual-length equality fails at phase 1, a set of probability 1/2. This is a counterexample to both claims of Lemma A.1 as written. It also shows why first occurrence and eventual occurrence cannot be interchanged without an appropriate preservation hypothesis.
+
+For completeness, strict positivity in this reset model has the same first/eventual patterns. A reset maps every input a to Tr(a)E_11. A subsequent B step maps this to Tr(a)diag(3/4,1/4), which is strictly positive for every density matrix. A subsequent reset loses full output rank again. On the adjoint side, phase 0 kills E_00 at the first step forever; starting at phase 1 the two-step map is a -> ((3/4)a_00+(1/4)a_11)I and is strictly positive, with unital later maps preserving strict positivity. Thus q_0(S)=(2,3), q(S)=(infinity,infinity), q_0(S*)=(infinity,2), q(S*)=(infinity,2). In particular this model does NOT contradict Proposition A.9 for the trace-preserving process S: both of its almost-sure eventual-finiteness conditions fail. The pointwise-adjoint process is not trace preserving here, so A.9's trace-preserving hypothesis cannot simply be transferred to it.
+
+The first declared supplement removes the two-sided-faithfulness objection. Let P_0=E_00, P_1=E_11 and H=(1/sqrt(2))[[1,1],[1,-1]]. On the same two-cycle set phase 0 to (P_0,P_1) and phase 1 to (H P_0,H P_1). For both tuples, both sums sum A_i*A_i and sum A_i A_i* are I. Each local map and its adjoint are therefore trace preserving, unital and faithful.
+
+Write Z for the diagonal matrix subspace. The local word spans are Z and HZ; their pointwise adjoints are Z and ZH. Since P_a H P_b=H_ab E_ab with H_ab nonzero, Z H Z=M. Consequently
+  S, phase 0:     Z, HZ, M, M, ...       ell_0=ell=3;
+  S, phase 1:     HZ, M, M, ...          ell_0=ell=2;
+  S*, phase 0:    Z, M, M, ...           ell_0=ell=2;
+  S*, phase 1:    ZH, ZH, M, M, ...      ell_0=ell=3.
+Persistence for every later length follows from the positive-definite sums of joint ranges, or from the depolarizer argument below. Both equalities in A.1 fail at both phases even within this normalized, two-sided-faithful, eventually injective subclass. The distributions happen to coincide in this two-phase supplement; it alone would not refute equality in distribution.
+
+A convenient exact channel calculation proves the all-length statement. Let D_Z be dephasing in the standard basis, U=Ad_H, and L(a)=Tr(a)I/2. Then U^2=Id, D_Z^2=D_Z, and
+  D_Z U D_Z = L.
+The original local maps are D_Z and U D_Z, and their pointwise adjoints are D_Z and D_Z U. At the displayed onset times the composed map is exactly L, whose Choi matrix is I_4/2 and whose Kraus-word span has dimension 4. Every subsequent local map phi is unital, so phi L=L. Before those onsets the maps are dephasing followed or preceded by a unitary, with Choi rank 2. This proves the ranks for all n.
+
+The second declared supplement shows that replacing pointwise equality by equality of onset distributions would not repair the same-forward pointwise-adjoint assertion either. It uses a uniform three-cycle T(p)=p+1 mod 3, with local channels
+  phase 0: D_Z, with Kraus P_0,P_1;
+  phase 1: U D_Z, with Kraus H P_0,H P_1;
+  phase 2: D_X=U D_Z U, with Kraus H P_0 H,H P_1 H.
+Again every channel and dual is trace preserving, unital and faithful. The three-cycle is ergodic in exactly the required sense.
+
+For the original process the successive products before the depolarizer are:
+  phase 0: D_Z, U D_Z, U D_Z, then L;
+  phase 1: U D_Z, U D_Z, then L;
+  phase 2: D_X, then L.
+For the pointwise-adjoint process on the same forward three-cycle the local maps are D_Z, D_Z U, D_X. Every two-step composition from any starting phase is L. The one-step Choi ranks are 2. Unitality preserves L thereafter. It follows symbolically for all n that
+  dim W_n(p)=2 for n<4-p and 4 for n>=4-p, p=0,1,2,
+  dim W_n^pointwise-adjoint(p)=2 for n=1 and 4 for every n>=2,
+  ell_0(S)=ell(S)=(4,3,2),
+  ell_0(S*)=ell(S*)=(2,2,2).
+For example, the original probability of first onset by length 2 is 1/3; for its same-forward pointwise adjoint it is 1. This addresses a possible weakened repair, not an additional assertion attributed to the paper.
+
+The requested genuine time reversal is a different process. Put U_base=T^{-1}, and define the reversed tuple by A_i^rev(omega)=A_i(T^{-1}omega)*. Then, for every n, omega and sigma=(i_1,...,i_n),
+  Pi_rev(n,omega;sigma)
+   = A_{i_n}(T^{-n}omega)* ... A_{i_1}(T^{-1}omega)*
+   = Pi(n,T^{-n}omega;reverse(sigma))*.
+The proposed relation is correct with BOTH the inverse base and this one-step shift in the local tuple. In particular
+  W_n^rev(omega)=W_n(T^{-n}omega)*,
+  dim W_n^rev(omega)=dim W_n(T^{-n}omega),
+  Phi_rev^(n)(omega)=(Phi^(n)(T^{-n}omega))*.
+The last star is the Hilbert-Schmidt adjoint of the whole composition; it reverses the composition order. A pointwise adjoint cocycle on unchanged T does not generally satisfy it.
+
+At each fixed n the word-span dimensions, Choi ranks, and full-span indicators have equal distributions for the forward and genuinely reversed processes, since T preserves the measure. Also strict positivity of a positive map is equivalent to strict positivity of its Hilbert-Schmidt adjoint: both mean Tr(y Phi(x))>0 for every nonzero positive semidefinite x,y. Thus the analogous fixed-n strict-positivity event also has the same probability. Normalization is exchanged: the true reverse of a trace-preserving local process is unital, and need not be trace preserving unless the relevant local maps are also unital.
+
+These fixed-n statements alone do not equate first-onset laws or pathwise eventual claims. With E_n={omega:W_n(omega)=M_d}, one has E_n^rev=T^n E_n, so
+  {ell_0<=N}=union_{1<=n<=N} E_n,
+  {ell_0^rev<=N}=union_{1<=n<=N} T^n E_n,
+  {ell<infinity}=union_N intersection_{m>=N} E_m,
+  {ell^rev<infinity}=union_N intersection_{m>=N} T^m E_m.
+The shifts depend on n or m; they cannot be pulled out of these unions or intersections. Equal individual event probabilities do not specify their joint occurrence over lengths.
+
+The original reset model makes this obstruction explicit even with the correct time reversal. Because T^{-1}=T, the shifted reversed tuple has B* at phase 0 and R* at phase 1. Its dimensions are 2 at n=1 and 4 for all n>=2 at phase 0, but 2 at every n at phase 1. Hence
+  ell_0^rev=ell^rev=(2,infinity).
+Forward first lengths have law (1/2)delta_2+(1/2)delta_3, while reversed first lengths have law (1/2)delta_2+(1/2)delta_infinity. Forward eventual finiteness has probability 0; reversed eventual finiteness has probability 1/2. Nevertheless at every fixed n>=2 both full-span event probabilities are 1/2. No claim of a discrepancy in almost-sure eventual-finiteness truth values is needed: neither of these particular processes is eventually injective almost surely, but their eventual-finiteness events and probabilities already differ.
+
+There is a useful qualified repair for genuine reversal. If both S and S* are faithful almost surely, full spans persist when a block is extended at either end. Algebraically, with G=sum A_i*A_i>0 and F=sum A_i A_i*>0,
+  span_i A_i M_d=M_d,       span_i M_d A_i=M_d;
+for example Y=sum_i A_i(A_i*F^{-1}Y) and Y=sum_i(YG^{-1}A_i*)A_i. On a common full-measure set of all integer shifts, the forward and genuinely reversed events E_n are then increasing in n, and ell=ell_0 for each process. Consequently their first-length and eventual-length distributions agree by the fixed-n identity. This is a consequence of the added persistence hypotheses, not of fixed-n stationarity alone, and still does not give equality at the same omega.
+
+The three-phase supplement demonstrates this last distinction without losing faithfulness. For its genuine reversal the first and eventual lengths are (4,2,3), whereas they are (4,3,2) for the original. For example E_2={2}, so E_2^rev=T^2{2}={1}; E_3={1,2}, so E_3^rev=T^3{1,2}={1,2}. All length-4 spans are full. The laws agree, but the lengths disagree at phases 1 and 2. These are not the same-forward pointwise-adjoint lengths (2,2,2).
+
+The scope of the defect must remain bounded. Lemma A.1 is false, and the uses of that pointwise adjoint identification in the printed proofs of Lemmas A.7 and A.8 on page 36 are not justified as written. This does not itself disprove their statements. Their relevant faithfulness/propagation claims can instead be established directly. A failure of faithfulness of S gives a common right kernel at that initial site, precluding any full prefix span. A positive-measure failure of faithfulness of S* gives deficient joint output ranges at that site; ergodic recurrence places such sites at arbitrarily late endpoints of a typical prefix and precludes eventual full span. Conversely, if both are faithful and a finite full block has positive probability, ergodicity supplies such a future block and the two extension identities above extend it back to the initial point and then to every later endpoint. This gives the mechanism required for the A.6/A.8 finite-eventual-injectivity characterization without assuming the false A.1 identity. It is not a verification of every proof detail elsewhere in the manuscript.
+
+One additional local proof objection was visible in the supplied Appendix and is preserved here. On printed PDF page 37, the proof of Proposition A.9 infers from a proper Kraus-word span a nonzero orthogonal projection p with Pi_sigma p=0 for all words. I rendered and inspected this page too. That linear-algebra inference is invalid: a proper span yields a nonzero Hilbert-Schmidt annihilator, not necessarily a positive projection and not a common right kernel. In fact, for every trace-preserving composition, sum_sigma Pi_sigma*Pi_sigma=I, so a common right kernel must be zero. This flags another proof-level gap; it does NOT give a counterexample to the statement of A.9. Resolving its full proof and the assumptions of its cited ergodic results is outside this selected audit.
+
+The original reset model has ell(S)=infinity at both phases. It therefore fails the injectivity premise used for the main parent-Hamiltonian construction (Theorem 4.2, pages 20-21) and the subsequent gap framework (Section 5, especially Theorem 5.5 on page 31 and Corollary 5.9 on page 32). It cannot refute those conclusions. The two bistochastic supplements do satisfy finite eventual injectivity, with uniformly bounded Appendix site lengths and invariant density I/2; their long-enough products are exactly depolarizing. They exhibit no failure of any parent-Hamiltonian uniqueness or gap conclusion. Their role is to show that normalization, faithfulness and eventual injectivity do not rescue A.1 itself, even in a subclass compatible with the principal setting. An invalid auxiliary identity and gaps in printed auxiliary proofs must not be promoted into a claimed counterexample to a main theorem without an example violating that theorem's conclusion under its actual hypotheses. No such example has been established here.
+
+As exact computational checks, a separately composed SymPy calculation propagated the span of all words (using a basis at each step, which preserves the entire span) for lengths 1-8 in the original reset and two-phase bistochastic models, for both phases and for forward, same-forward adjoint, and true-reverse orientations. It checked lengths 1-7 for all three phases of the three-phase supplement in those same orientations. The normalizations were checked exactly, without floating point. Full Choi matrices I_4/2 at lengths 3 and 4 were also checked exactly for both phases and forward/pointwise-adjoint orientations of the two-phase bistochastic model. All these checks agreed with the displayed formulas. The all-length conclusions rely on the symbolic subspace recurrences, exact channel compositions, and persistence arguments above, not on extrapolating those finite checks.

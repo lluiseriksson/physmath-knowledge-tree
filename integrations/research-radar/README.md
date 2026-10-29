@@ -163,3 +163,5 @@ The [exact-review continuity reconciliation](notes/2026-10-28-exact-review-conti
 - [Modular preparation cost: prior art and full/reduced generator boundary](evidence/2026-10-29-modular-preparation/SYNTHESIS1216.txt): direct antecedents defeat generic novelty; exact finite calibration retains the complement contribution; no new paper or grade.
 
 - [MPS injectivity and uniform-disorder boundaries](evidence/2026-10-29-mps-hypothesis-boundaries/SYNTHESIS1218.txt): source-defined gap-classification problem, strict positivity versus Choi injectivity control, an exact periodic counterexample to the PDFp34 adjoint-order helper lemma, conditional AppendixA.9 repair, and retained finite-error limits; no new paper or grade.
+
+- [Temporal-adjoint component audit and declared supplements](evidence/2026-10-29-temporal-audit-context/MANIFEST1226.json): exact original report/verdict retained in ZIP with LF reading projections, no numerical component score or claim of verified reviewer independence; the later whole PDF is a distinct assessment.
