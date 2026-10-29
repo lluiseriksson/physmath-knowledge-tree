@@ -1,0 +1,43 @@
+{
+  "utc": "2026-10-29T10:10:43.451947+00:00",
+  "scope": "Full exactPDF1225 assessment and independently downloaded public release artifact identities; one model judgment, not another audit",
+  "original_report_sha256": "2ef94aa1ce33afc42ac06c80620c3105abe277435f31d9219cdfc4a1f07661bf",
+  "original_verdict_sha256": "854792bada72d8bc97f3104b249fcdb9c40767c14d14fc5f02e986bb2182d305",
+  "original_zip_sha256": "28af0a1eac5d6524e30c759f7210cdf0c8e5e3234184fd9cf239dea442bbc824",
+  "zip_contents": "Exact original bytes; adjacent text reading projections normalize CRLF toLF",
+  "files": [
+    {
+      "name": "REVIEW1225.txt",
+      "sha256": "2ef94aa1ce33afc42ac06c80620c3105abe277435f31d9219cdfc4a1f07661bf",
+      "original_transport_sha256": "2ef94aa1ce33afc42ac06c80620c3105abe277435f31d9219cdfc4a1f07661bf"
+    },
+    {
+      "name": "verdict1225.json",
+      "sha256": "854792bada72d8bc97f3104b249fcdb9c40767c14d14fc5f02e986bb2182d305",
+      "original_transport_sha256": "854792bada72d8bc97f3104b249fcdb9c40767c14d14fc5f02e986bb2182d305"
+    },
+    {
+      "name": "integrity_final1225.json",
+      "sha256": "74544f6b75f03b3a0f0849fd17f369c6d72fd02b044795f94ff86b49c0099e91",
+      "original_transport_sha256": "74544f6b75f03b3a0f0849fd17f369c6d72fd02b044795f94ff86b49c0099e91"
+    },
+    {
+      "name": "RESPONSE1230.json",
+      "sha256": "ef3dd4b5628cb0f33cd92da39cba8e014d5c06b713924b1af9184342fc66ac3d",
+      "original_transport_sha256": "ef3dd4b5628cb0f33cd92da39cba8e014d5c06b713924b1af9184342fc66ac3d"
+    },
+    {
+      "name": "SUBGRAPH1234.json",
+      "sha256": "0d8f8666da7858b85e05aa24dd7cfd8bbe02c0920268cfacffe1c8de109d8404",
+      "original_transport_sha256": "0d8f8666da7858b85e05aa24dd7cfd8bbe02c0920268cfacffe1c8de109d8404"
+    },
+    {
+      "name": "SOURCES1234.json",
+      "sha256": "30c2261fafe4f3c734a3ab8734f4e9cf0ce2609c0762ea0a5d779e2e73843301",
+      "original_transport_sha256": "8e490f9c8dc53ce0a21ce42fc30d3b1a57762aa971cd345ba38d139ea7000d40"
+    }
+  ],
+  "PDF_redistributed": false,
+  "foreign_corpus_redistributed": false,
+  "formal_confidence_promotion": false
+}
