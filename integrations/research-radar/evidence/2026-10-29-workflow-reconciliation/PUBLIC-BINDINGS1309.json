@@ -1,0 +1,50 @@
+{
+  "scope": "Two existing exact-version publication metadata checks; no deposit, release, rating, PDF download or statistics request",
+  "records": [
+    {
+      "id": "ARR-2026-2EXHFGWW0S8MG8QA",
+      "url": "https://airr.science/papers/ARR-2026-2EXHFGWW0S8MG8QA/versions/v1/",
+      "status": 200,
+      "bytes": 36244,
+      "page_sha256": "808c77bd81e2aa5a7bbc1a77b36e0ee079b1fe5090f64d79e998db693f33773a",
+      "observed_at": "2026-10-29T17:42:23.383Z",
+      "title": "Sharp minimax losses for energy-constrained quantum reset channels — AIRR.SCIENCE",
+      "h1": "Sharp minimax losses for energy-constrained quantum reset channels",
+      "working_paper": true,
+      "expected_pdf_sha256": "f472a6c9380da16347a66b390d12b967a50d221e77a0c96905fb5f3d4868df7e",
+      "not_rated": false,
+      "known_assessment_present": true,
+      "selected_report_links": [
+        "/assessments/",
+        "#model-assessments",
+        "/assessments/#scale",
+        "/assessments/#rating-method",
+        "/registry/model-assessments.json",
+        "/registry/model-assessments.json"
+      ],
+      "expected_pdf_sha256_present": true
+    },
+    {
+      "id": "ARR-2026-7WEARWS49J8CVTCV",
+      "url": "https://airr.science/papers/ARR-2026-7WEARWS49J8CVTCV/versions/v1/",
+      "status": 200,
+      "bytes": 23061,
+      "page_sha256": "abd990b609a8c1f8a2b0b0b3671e75593bd7d658767ad42ef43c09c2d6cdfc0a",
+      "observed_at": "2026-10-29T17:42:23.589Z",
+      "title": "Constructing rational Lyapunov certificates for planar homogeneous fields — AIRR.SCIENCE",
+      "h1": "Constructing rational Lyapunov certificates for planar homogeneous fields",
+      "working_paper": true,
+      "expected_pdf_sha256": "dea974aaef07c8442856c26293bc9a20c236d1cf8cea89bcdb1a94bb35007610",
+      "not_rated": true,
+      "known_assessment_present": false,
+      "selected_report_links": [
+        "/assessments/",
+        "#model-assessments",
+        "/assessments/#scale",
+        "/registry/model-assessments.json"
+      ],
+      "expected_pdf_sha256_present": true
+    }
+  ],
+  "web_cache_miss": "Web reader failed for2EX; direct public fetch succeeded200, not evidence of absence"
+}

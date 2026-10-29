@@ -1,0 +1,113 @@
+{
+  "scope": "Directed inventory only, not exhaustive; local smoothing deduplicated; no publication novelty inferred from index changes.",
+  "sources": [
+    {
+      "source": "openai",
+      "url": "https://github.com/openai/math",
+      "status": 200,
+      "bytes": 236587,
+      "sha256": "a2c19aed85b448ac0ef13d95e42f9712bafa88ed3ee2b9e335c8a331ef576d8c",
+      "observed_at": "2026-10-29T17:46:38.020Z",
+      "reading": "inventory only; no statement or proof coverage inferred"
+    },
+    {
+      "source": "anthropic",
+      "url": "https://www.anthropic.com/research",
+      "status": 200,
+      "bytes": 413218,
+      "sha256": "49f74ef939210036e888f069fab973dd8141c07d44c938dda2a1fa2688f828af",
+      "observed_at": "2026-10-29T17:46:37.110Z",
+      "reading": "inventory only; no statement or proof coverage inferred"
+    },
+    {
+      "source": "deepmind",
+      "url": "https://github.com/google-deepmind/formal-conjectures",
+      "status": 200,
+      "bytes": 304988,
+      "sha256": "070ec7391ff8ae89f59fc7bac0ae71cb2ac6f224a509212484d7d292d6c11515",
+      "observed_at": "2026-10-29T17:46:38.063Z",
+      "reading": "inventory only; no statement or proof coverage inferred"
+    },
+    {
+      "source": "microsoft",
+      "url": "https://www.microsoft.com/en-us/research/research-area/computational-sciences-mathematics/",
+      "status": 200,
+      "bytes": 608259,
+      "sha256": "ef05bec4d8e218d325f56e6c027bbea381c1d26b811eeef9b2bb0d73bc5b8f9a",
+      "observed_at": "2026-10-29T17:46:38.698Z",
+      "reading": "inventory only; no statement or proof coverage inferred"
+    },
+    {
+      "source": "meta",
+      "url": "https://ai.meta.com/results/",
+      "status": 200,
+      "bytes": 305749,
+      "sha256": "5926deab2d7bf945fb4d715781c09cba75fed65d4e8ec46cde04bfaab2666934",
+      "observed_at": "2026-10-29T17:46:43.893Z",
+      "reading": "inventory only; no statement or proof coverage inferred"
+    },
+    {
+      "source": "numina",
+      "url": "https://github.com/project-numina",
+      "status": 200,
+      "bytes": 244376,
+      "sha256": "e3414da6cd4a21cd7746046767a36bde62ca3078e10ef0813c14fbac3ddeb3aa",
+      "observed_at": "2026-10-29T17:46:37.927Z",
+      "reading": "inventory only; no statement or proof coverage inferred"
+    },
+    {
+      "source": "bytedance-nankai",
+      "url": "https://github.com/M32026/3d-sticky-kakeya",
+      "status": 200,
+      "bytes": 225588,
+      "sha256": "3d3eb3d1b32c1194bfaaeca1294125dddc8a9956fb7bf8b619b71c4c8812e6ad",
+      "observed_at": "2026-10-29T17:46:38.136Z",
+      "reading": "inventory only; no statement or proof coverage inferred"
+    },
+    {
+      "source": "eth-sri",
+      "url": "https://www.sri.inf.ethz.ch/research/mathllm",
+      "status": 200,
+      "bytes": 32567,
+      "sha256": "dd4f2c486ef7f3dc3f3f1cfd861bd669cfc163f665d4b1c38ae6af08184c7a2a",
+      "observed_at": "2026-10-29T17:46:37.587Z",
+      "reading": "inventory only; no statement or proof coverage inferred"
+    },
+    {
+      "source": "harmonic",
+      "url": "https://www.harmonic.fun/news/",
+      "status": 200,
+      "bytes": 110404,
+      "sha256": "62fbc07745a764d876241c42bbd5879ea4b7aff788b1163cd7f9b671fe05d51d",
+      "observed_at": "2026-10-29T17:46:37.354Z",
+      "reading": "inventory only; no statement or proof coverage inferred"
+    },
+    {
+      "source": "arxiv",
+      "url": "https://arxiv.org/list/math/new",
+      "status": 200,
+      "bytes": 1738130,
+      "sha256": "4b7a875de055255054a0c172bff500a369587c5e356a45c9e4fed312d2e6b64e",
+      "observed_at": "2026-10-29T17:46:38.946Z",
+      "reading": "inventory only; no statement or proof coverage inferred"
+    },
+    {
+      "source": "airr",
+      "url": "https://airr.science/catalog.json",
+      "status": 200,
+      "bytes": 1456595,
+      "sha256": "e321991f93b1a0c8f14c9a1445a716a8671cd7d2bdeb9361ce3ea7eee90a1116",
+      "observed_at": "2026-10-29T17:46:38.530Z",
+      "reading": "inventory only; no statement or proof coverage inferred"
+    },
+    {
+      "source": "vixra",
+      "url": "https://www.ai.vixra.org/author/lluis_eriksson",
+      "status": 200,
+      "bytes": 70183,
+      "sha256": "7a5f950e1a001dd86ef8303c1104d2c3e27779603f577e21f226cf623347ca62",
+      "observed_at": "2026-10-29T17:46:38.754Z",
+      "reading": "inventory only; no statement or proof coverage inferred"
+    }
+  ]
+}

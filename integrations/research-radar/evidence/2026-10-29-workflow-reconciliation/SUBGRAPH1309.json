@@ -1,0 +1,195 @@
+{
+  "scope": "Selected candidate nodes and edges whose endpoints are both selected; no full-neighborhood claim",
+  "nodes": [
+    {
+      "id": "domain.analysis",
+      "kind": "domain",
+      "title": "Analysis",
+      "summary": "Limits, differentiability, integration, measure and analytic estimates.",
+      "confidence": "literature",
+      "tags": [
+        "analysis",
+        "measure",
+        "integration",
+        "estimates"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Analysis.Calculus.Deriv.Basic",
+          "Mathlib.MeasureTheory.Measure.MeasureSpace"
+        ],
+        "declarations": [
+          "HasDerivAt",
+          "MeasureTheory.Measure"
+        ],
+        "targets": [
+          "Create toy estimates that can be reused by PDE and spectral nodes."
+        ]
+      },
+      "questions": [
+        "Which estimate is the actual bottleneck of a proposed proof route?"
+      ],
+      "references": [
+        {
+          "label": "T. Tao — Analysis I",
+          "url": "https://terrytao.wordpress.com/books/analysis-i/",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "domain.harmonic_analysis",
+      "kind": "domain",
+      "title": "Harmonic analysis",
+      "summary": "Fourier analysis, singular integrals, oscillation and scale-sensitive decomposition.",
+      "confidence": "literature",
+      "tags": [
+        "fourier",
+        "harmonic-analysis",
+        "scales"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Analysis.Fourier.FourierTransform"
+        ],
+        "declarations": [],
+        "targets": [
+          "Identify available Fourier transform infrastructure for toy estimates."
+        ]
+      },
+      "questions": [
+        "Which hidden frequency interaction blocks a global estimate?"
+      ],
+      "references": [
+        {
+          "label": "E. M. Stein — Harmonic Analysis",
+          "url": "https://doi.org/10.1515/9781400883929",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "domain.complexity_theory",
+      "kind": "domain",
+      "title": "Complexity theory",
+      "summary": "Resources needed for computation, reductions, circuits, proof systems and barriers.",
+      "confidence": "literature",
+      "tags": [
+        "complexity",
+        "computation",
+        "circuits",
+        "reductions"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Computability.Basic"
+        ],
+        "declarations": [],
+        "targets": [
+          "Formalize finite languages, reductions and toy circuit classes."
+        ]
+      },
+      "questions": [
+        "Which lower-bound barrier is structural rather than technical?"
+      ],
+      "references": [
+        {
+          "label": "S. Arora and B. Barak — Computational Complexity: A Modern Approach",
+          "url": "https://theory.cs.princeton.edu/complexity/book.pdf",
+          "type": "book",
+          "scope": "claim"
+        },
+        {
+          "label": "Semidefinite extension complexity of the separable set, with applications to approximate disentanglers (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.09033v1",
+          "type": "paper",
+          "scope": "context"
+        },
+        {
+          "label": "A quantum oracle separation between QMA(2) and QMA (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.02865v1",
+          "type": "paper",
+          "scope": "context"
+        },
+        {
+          "label": "Quantum Meta-Complexity Is All You Need: Characterizing One-Way Puzzles via Time-Bounded Kolmogorov Complexity (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.02687v1",
+          "type": "paper",
+          "scope": "context"
+        }
+      ]
+    },
+    {
+      "id": "domain.quantum_information_theory",
+      "kind": "domain",
+      "title": "Quantum information theory",
+      "summary": "Studies quantum states, channels, entropies, correlations, recovery, error correction and operational constraints such as no-signalling, with explicit attention to uniform channels and preservation of reference-system entanglement.",
+      "confidence": "literature",
+      "tags": [
+        "quantum-information",
+        "channels",
+        "entropy",
+        "recovery"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib"
+        ],
+        "declarations": [],
+        "targets": [
+          "Formalize finite matrix channels, Kraus completeness and a no-signalling calculation.",
+          "Represent the quantifier distinction between one uniform recovery map and state-dependent recovery maps."
+        ]
+      },
+      "questions": [
+        "Which finite recovery statements transfer to operator-algebraic or split AQFT settings without assuming a tensor factorization?"
+      ],
+      "references": [
+        {
+          "label": "M. A. Nielsen and I. L. Chuang — Quantum Computation and Quantum Information",
+          "url": "https://www.cambridge.org/highereducation/books/quantum-computation-and-quantum-information/01E10196D0A682A6AEFFEA52D53BE9AE",
+          "type": "book",
+          "scope": "claim"
+        },
+        {
+          "label": "O. Fawzi and R. Renner — Quantum conditional mutual information and approximate Markov chains",
+          "url": "https://arxiv.org/abs/1410.0664",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "Depth-1 expanders on the unitary group and applications (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.01605v1",
+          "type": "paper",
+          "scope": "context"
+        },
+        {
+          "label": "Quantum speed limits based on quantifiers of quantum-state texture (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.08752v1",
+          "type": "paper",
+          "scope": "context"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge.analysis.harmonic",
+      "source": "domain.analysis",
+      "target": "domain.harmonic_analysis",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "Fourier and oscillatory tools refine analytic estimates by scale and frequency.",
+      "references": [
+        {
+          "label": "E. M. Stein — Harmonic Analysis",
+          "url": "https://doi.org/10.1515/9781400883929",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    }
+  ]
+}
