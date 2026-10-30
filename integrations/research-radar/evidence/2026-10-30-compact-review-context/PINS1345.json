@@ -1,0 +1,104 @@
+{
+  "heads": [
+    {
+      "repository": "openai/math",
+      "url": "https://api.github.com/repos/openai/math/commits?per_page=1",
+      "status": 200,
+      "response_sha256": "8d0bd150aa8050a7578bb003223e61268ff24ffdd266d61d95922cf8db9d526e",
+      "at": "2026-10-30T00:46:54.249Z",
+      "head": "4eaee87548250b2682affda7d05d947c05554bae",
+      "date": "2026-10-30T00:35:35Z",
+      "message": "Merge pull request #4 from openai/codex/update-10-29",
+      "level": "inventory_metadata_only"
+    },
+    {
+      "repository": "google-deepmind/formal-conjectures",
+      "url": "https://api.github.com/repos/google-deepmind/formal-conjectures/commits?per_page=1",
+      "status": 200,
+      "response_sha256": "a73f11e69d5815f294ad527c37a3dd4fa62066c468ed483bd745553fb16bbbfa",
+      "at": "2026-10-30T00:46:54.229Z",
+      "head": "feacabbcf6ed2e7b622663c3e1c0f61038183392",
+      "date": "2026-10-29T22:54:24Z",
+      "message": "feat(ErdosProblems/1195): add Erdős Problem 1195 (#7585)",
+      "level": "inventory_metadata_only"
+    },
+    {
+      "repository": "lluiseriksson/physmath-knowledge-tree",
+      "url": "https://api.github.com/repos/lluiseriksson/physmath-knowledge-tree/commits?per_page=1",
+      "status": 200,
+      "response_sha256": "ddca376a8ae1eeae5962dc7de9ed27053958d77975a31abcd095b69a27012428",
+      "at": "2026-10-30T00:46:54.219Z",
+      "head": "5590c4f552a15252d91cc3221869e2e52444b1de",
+      "date": "2026-10-30T00:15:19Z",
+      "message": "Merge pull request #202 from lluiseriksson/codex/compact-feedback-20261030",
+      "level": "inventory_metadata_only"
+    },
+    {
+      "repository": "lluiseriksson/the-eriksson-programme",
+      "url": "https://api.github.com/repos/lluiseriksson/the-eriksson-programme/commits?per_page=1",
+      "status": 200,
+      "response_sha256": "76d49077174dcb8cf0b7b434b5ea0743fdc132f3db915e73f572610cb0c59dd9",
+      "at": "2026-10-30T00:46:54.271Z",
+      "head": "54adb99a03ba9c71f6016f6fcfc56ba510a26ff6",
+      "date": "2026-10-30T00:39:02Z",
+      "message": "Merge pull request #93 from lluiseriksson/codex/physical-shift-20261030",
+      "level": "inventory_metadata_only"
+    }
+  ],
+  "formal_packages": [
+    {
+      "name": "mathlib",
+      "required": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+      "observed": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+      "matches": true
+    },
+    {
+      "name": "plausible",
+      "required": "63045536fe95024e6c18fc7b48e03f506701c5bc",
+      "observed": "63045536fe95024e6c18fc7b48e03f506701c5bc",
+      "matches": true
+    },
+    {
+      "name": "LeanSearchClient",
+      "required": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+      "observed": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+      "matches": true
+    },
+    {
+      "name": "importGraph",
+      "required": "5c7542ed018c78194f1e2b903eaf6a792b74c03d",
+      "observed": "5c7542ed018c78194f1e2b903eaf6a792b74c03d",
+      "matches": true
+    },
+    {
+      "name": "proofwidgets",
+      "required": "24b0d9dc081c5423f8eec7e866c441e5184f29d9",
+      "observed": "24b0d9dc081c5423f8eec7e866c441e5184f29d9",
+      "matches": true
+    },
+    {
+      "name": "aesop",
+      "required": "e3cb2f741431ce31bf73549fb52316a57368b06f",
+      "observed": "e3cb2f741431ce31bf73549fb52316a57368b06f",
+      "matches": true
+    },
+    {
+      "name": "Qq",
+      "required": "f46324995fca5f0483b742e4eb4daec7f4ee50d2",
+      "observed": "f46324995fca5f0483b742e4eb4daec7f4ee50d2",
+      "matches": true
+    },
+    {
+      "name": "batteries",
+      "required": "fa08db58b30eb033edcdab331bba000827f9f785",
+      "observed": "fa08db58b30eb033edcdab331bba000827f9f785",
+      "matches": true
+    },
+    {
+      "name": "Cli",
+      "required": "92564e5770e4d09f2d86dfbf8ada1e9c715b384c",
+      "observed": "92564e5770e4d09f2d86dfbf8ada1e9c715b384c",
+      "matches": true
+    }
+  ]
+}

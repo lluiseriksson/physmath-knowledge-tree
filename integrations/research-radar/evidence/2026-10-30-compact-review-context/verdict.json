@@ -1,0 +1,86 @@
+{
+  "assessment_type": "Participating AI full-manuscript evaluation",
+  "artifact_pdf_sha256": "e8627ddd910c1dac2b54ffb6407ae0caf44d5c076d27a2f7046559f8617baaf8",
+  "artifact_source_sha256": "fd53c02e7feb8b6d2eb0e30e62fb1fbee1e9c39918b83e753aa8ff4a4c79a613",
+  "pages": 26,
+  "completed_at_utc": "2026-10-30T00:48:37.801895+00:00",
+  "recommendation": "minor revisions, technical opinion only; not editorial decision",
+  "blocking_mathematical_defect_identified": false,
+  "importance": {
+    "score": 6,
+    "scale_min": 1,
+    "scale_max": 10,
+    "subjective": true,
+    "reason": "Useful specialized quantitative synthesis and compact extension, with established learning antecedents, restricted joint scaling, and no practical bound"
+  },
+  "technical_quality": {
+    "score": 8,
+    "scale_min": 1,
+    "scale_max": 10,
+    "subjective": true,
+    "reason": "Analytic chain and compact learning interfaces withstand targeted checks; historical numerical trust and exposition limitations remain"
+  },
+  "score_target": null,
+  "inherited_score": false,
+  "blind_to_historical_scores": false,
+  "scope_note": "Historical scores printed in the mandatory manuscript context were seen, but none was imported as an evaluation of this PDF.",
+  "compact_extension": {
+    "selector_fibres": "no defect identified",
+    "boundaries": "no defect identified",
+    "closed_cell_uniform_codes": "no defect identified",
+    "gaussian_continuity": "no defect identified",
+    "message_independence": "no defect identified",
+    "wrong_classification_per_law_cost": "no defect identified",
+    "order_of_limits": "consistent",
+    "general_arbitrary_quantum_feedback_solved": false
+  },
+  "numerical_result": {
+    "record_inspection_passed": true,
+    "integrations_rerun": false,
+    "refit_performed": false,
+    "trusted_interval_premises_remain": true,
+    "backend_historical_closure_attested": false,
+    "lean_verified": false
+  },
+  "objections": [
+    {
+      "id": "O1",
+      "kind": "minor_reproducibility_presentation",
+      "title": "Bind a future public release to the current exact package and verifier",
+      "blocking_mathematics": false
+    },
+    {
+      "id": "O2",
+      "kind": "persistent_computational_trust_limit",
+      "title": "Historical integration enclosures and backend remain trusted; scalar generator absent from inspected portable payloads",
+      "blocking_mathematics": false,
+      "condition": "Explicit numeric theorem remains conditional on certified premises"
+    },
+    {
+      "id": "O3",
+      "kind": "minor_exposition",
+      "title": "Dense exposition and missing compact theorem dependency map",
+      "blocking_mathematics": false
+    },
+    {
+      "id": "O4",
+      "kind": "material_significance_and_scope_reservation",
+      "title": "Specialized joint scaling; no general quantum feedback or practical performance claim",
+      "blocking_mathematics": false
+    },
+    {
+      "id": "O5",
+      "kind": "minor_editorial",
+      "title": "Page 21 cumulative assumptions: replace or with and",
+      "blocking_mathematics": false
+    }
+  ],
+  "full_report": "report.txt",
+  "full_report_sha256": "3abdc5b39a3c4558faec15084e773c9add5741c091814dfd1b36e22cff223596",
+  "all_objections_must_accompany_any_score": true,
+  "human_peer_review": false,
+  "editorial_acceptance_promised": false,
+  "worldwide_priority_verified": false,
+  "airr_score_predicted": false,
+  "independence_verified": false
+}

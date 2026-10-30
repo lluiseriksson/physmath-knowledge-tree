@@ -1,0 +1,45 @@
+{
+  "scope": "Full unchanged report text and JSON values; native bytes authoritative in ZIP",
+  "files": [
+    {
+      "file": "report.txt",
+      "native_bytes": 33457,
+      "native_sha256": "3abdc5b39a3c4558faec15084e773c9add5741c091814dfd1b36e22cff223596",
+      "reading_bytes": 33457,
+      "reading_sha256": "3abdc5b39a3c4558faec15084e773c9add5741c091814dfd1b36e22cff223596",
+      "transformation": "none"
+    },
+    {
+      "file": "verdict.json",
+      "native_bytes": 3528,
+      "native_sha256": "50cb59be9ac45db42b6464f6c1c229b10bf485a1dfa1c9958d611b7b9a45ec3f",
+      "reading_bytes": 3442,
+      "reading_sha256": "55b22330c2af2432d5d6aadecde474c6570ff711b7f7ee932d1fd0bc4fd06c0d",
+      "transformation": "CRLF-to-LF reading projection and one finalLF; native ZIP preserves exact original"
+    },
+    {
+      "file": "context.json",
+      "native_bytes": 6606,
+      "native_sha256": "a7ff2d37cab7674913b39e81e6ba013b5b5b532f6ad086b3eff4b0d47d486e25",
+      "reading_bytes": 6406,
+      "reading_sha256": "da84724cfb2c5f240b4c0cd604ba6f7dc0f7396b2ca8513ca7c1b11e5744fcce",
+      "transformation": "CRLF-to-LF reading projection and one finalLF; native ZIP preserves exact original"
+    },
+    {
+      "file": "source_pins.json",
+      "native_bytes": 7024,
+      "native_sha256": "bb1254b38aeed305bc9c06d5959eef3b987ee0e21ad50364a2e278b27ca6576b",
+      "reading_bytes": 6878,
+      "reading_sha256": "d219a19f66f90ae199bd55771cf8ed0cd52ea97fabe1a4e6b030063b7fea4aa2",
+      "transformation": "CRLF-to-LF reading projection and one finalLF; native ZIP preserves exact original"
+    },
+    {
+      "file": "COPY-CHECK.json",
+      "native_bytes": 1340,
+      "native_sha256": "658f66dd11c0bf1d49849c44e6e0b7d58a81e482aee0ca78eeab914f83572d84",
+      "reading_bytes": 1304,
+      "reading_sha256": "78915a4fb7b2651718b5acfab4a178818da0a547491356ab9c8e8981a4858995",
+      "transformation": "CRLF-to-LF reading projection and one finalLF; native ZIP preserves exact original"
+    }
+  ]
+}
