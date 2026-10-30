@@ -1,0 +1,252 @@
+{
+  "schema": "AIRR-LIMITED-EXACT-ARTIFACT-CONTEXT-REVIEW-1",
+  "review_date": "2026-10-30",
+  "review_type": "single_unscored_context_and_diff_assessment",
+  "target": {
+    "title": "Capacity duality, certified optimization and tensor regularization of amplified determinants",
+    "pdf_path": "D:/Proyectos/airr-investigacion/2026-10-30_capacity-context1442/manuscript/main.pdf",
+    "pdf_sha256": "0c36e9cc6f2e153aa2bb2ada9bd0a099e83b89bacc57ab555871e008adcf4d40",
+    "tex_sha256": "73d34e6537f9196e117ded6dffb92e52f6832e9495255214e61311989bcfcb45",
+    "pages": 22,
+    "bytes": 488443
+  },
+  "score": null,
+  "new_scores": null,
+  "new_independent_vote": false,
+  "historical_scores_inherited": false,
+  "readiness": {
+    "judgment": "minor_observations_no_material_objection_within_limited_scope",
+    "ordinary_author_intake": "acceptable_with_report_observations_and_dependency_limits_attached",
+    "material_issue_requiring_mathematical_revision_found": false,
+    "minor_editorial_recommendation": true,
+    "editorial_acceptance": false,
+    "publication_authorized_by_review": false,
+    "summary": "The exact-artifact context is materially faithful and preserves historical objections and limitations. Chronology shorthand and generic historical metadata naming merit minor clarification. Main theorem scope is distinct from the identified sharpness predecessor; full novelty is not certified."
+  },
+  "provenance": {
+    "requested_model": "GPT-6 Astra",
+    "requested_reasoning_effort": "xhigh",
+    "configured_model_label_from_dispatch": "GPT-6 Astra",
+    "configured_effort_label_from_dispatch": "xhigh",
+    "configuration_evidence": "Dispatch/request labels only; not provider or tool-returned routing telemetry.",
+    "actual_runtime_model_observed": null,
+    "actual_runtime_effort_observed": null,
+    "runtime_identity_independently_attested": false,
+    "observable_identity_limit": "Instructions identify Codex based on GPT-6 family; actual model variant and effort setting are not independently observable.",
+    "fresh_context_requested": true,
+    "context_actually_available": "Task/global instructions and parent coordination messages; no preceding parent conversation transcript. Required historical reports and author preparation evidence intentionally read.",
+    "context_isolation_independently_attested": false,
+    "shared_filesystem": true,
+    "substantial_prior_openai_model_family_participation_disclosed": true,
+    "blind_review": false,
+    "independent_human_review": false,
+    "separate_model_replication": false,
+    "historical_reports_and_scores_seen": true,
+    "historical_scores_treatment": "Historical provenance only, never a target or current grade.",
+    "target_score_sought": false,
+    "assessment_attempts": 1,
+    "assessment_restart": false,
+    "subagents_spawned": 0,
+    "full_proof_audit": false,
+    "formal_proof_verification": false
+  },
+  "integrity": {
+    "actual_hashes_computed": true,
+    "hashes": {
+      "target_pdf": "0c36e9cc6f2e153aa2bb2ada9bd0a099e83b89bacc57ab555871e008adcf4d40",
+      "target_tex": "73d34e6537f9196e117ded6dffb92e52f6832e9495255214e61311989bcfcb45",
+      "baseline_pdf": "d71b57c29e4f0ed9230f3b7e30e23270e33a41cf30e664d72cc83e4022cd9cad",
+      "baseline_tex": "55ccf2d4a6dadb828aa6fabf5a6a6617e671724d2b5c65a1d7ac0238cdf60932",
+      "original_pdf": "0401ba38126420cd92205b617125a8e3d3e2f27dcc9a263a25fa8df3132c1247",
+      "original_tex": "ef681c4b6c617abab184721549235bafc7e8d4becabccbe485fdbae7e7fa1ca6",
+      "predecessor_pdf": "1eaea4ec8f9a53ed894f58f9af3e33984e824aa074b7a74a8e90fdf6939c1224"
+    },
+    "original_pdf_pages": 21,
+    "original_pdf_bytes": 236112,
+    "baseline_pdf_pages": 21,
+    "baseline_pdf_bytes": 239238,
+    "retained_reports": [
+      {
+        "path": "review/0401-full-report.txt",
+        "sha256": "b237d1bb154d85752fd130f185844559525a4e46d3bdf37de8589c74c8493c0f",
+        "byte_equal_to_preserved_original": true
+      },
+      {
+        "path": "review/0401-assessment.json",
+        "sha256": "8abbc094252c43f0159b140fda6a189a14e4ffd0ef32e38b0f39abe1b831f859",
+        "byte_equal_to_preserved_original": true
+      },
+      {
+        "path": "review/d71-followup-report.txt",
+        "sha256": "701446f7451628e1d72907ac6a4f24a8bb2b4aece2285bbd6c5c02248966dfcf",
+        "byte_equal_to_preserved_original": true
+      },
+      {
+        "path": "review/d71-followup.json",
+        "sha256": "3129dbbd8509ac45346bcc9bf199814ec4b6a81e3ac18c233ff90776562d5ed4",
+        "byte_equal_to_preserved_original": true
+      }
+    ],
+    "original_report_inventory_entries_match": true,
+    "independently_generated_diff_equals_supplied_patch": true,
+    "mathematical_source_prefix_equal_after_date_and_newline_normalization": true,
+    "normalized_prefix_characters": 67444,
+    "baseline_mappings_checked": 29,
+    "baseline_mappings_all_equal": true,
+    "baseline_mapping_count_caveat": "28 other unchanged files plus old main.pdf preserved as baseline-d71.pdf; not unchanged current main.pdf.",
+    "certificate_data_unchanged": true,
+    "extracted_pdf_body_text_equal": false,
+    "extracted_pdf_comparison_limit": "PDF-font decoding, ligatures, ordering/layout and reference numbering differ; no PDF-body byte-equality claim. Preservation conclusion uses source diff/file hashes and stated PDF spot checks."
+  },
+  "reading_scope": {
+    "full_historical_reports_read": 2,
+    "full_historical_structured_assessments_read": 2,
+    "complete_tex_diff_read": true,
+    "current_pdf_pages_text_read": [
+      1,
+      2,
+      3,
+      8,
+      12,
+      19,
+      20,
+      21,
+      22
+    ],
+    "relevant_source_passages_read": [
+      "Theorem statements in current PDF",
+      "complete change diff",
+      "operational assumptions and order of limits",
+      "dependency and verification paragraphs",
+      "bibliography and model review context",
+      "REPRODUCIR.txt and historical revision-record.json"
+    ],
+    "current_pdf_pages_visually_inspected": [
+      20,
+      21,
+      22
+    ],
+    "those_render_pixels_match_fresh_in_memory_render": true,
+    "render_dimensions": [
+      715,
+      1011
+    ],
+    "render_scale": 1.2,
+    "current_compilation_log_read": true,
+    "recompiled": false,
+    "certificate_scripts_rerun": false,
+    "general_m1_gls_implemented_or_benchmarked": false,
+    "predecessor_primary_pdf_fetched_read_only": true,
+    "predecessor_pdf_sha256": "1eaea4ec8f9a53ed894f58f9af3e33984e824aa074b7a74a8e90fdf6939c1224",
+    "predecessor_pdf_bytes": 129011,
+    "predecessor_pdf_pages": 11,
+    "predecessor_pages_read": [
+      1,
+      2
+    ],
+    "predecessor_scope": "Definitions, Theorem 1 and Corollary 2; not full proof audit.",
+    "predecessor_url": "https://airr.science/papers/ARR-2026-418PW0QXGN812RDC/versions/v1/ARR-2026-418PW0QXGN812RDC-v1.pdf",
+    "predecessor_written_to_disk": false,
+    "azg_check_scope": "Pinned v1 matches version named in retained original report; no new M1/source appendix proof audit."
+  },
+  "historical_comments": [
+    {
+      "id": "C1",
+      "historical_followup_status": "resolved",
+      "current_context_faithful": true,
+      "current_retention": "Roofeh-Karimipour Eqs. (13)-(15) retained; external source not re-audited."
+    },
+    {
+      "id": "C2",
+      "historical_followup_status": "resolved",
+      "current_context_faithful": true,
+      "current_retention": "Relative perturbation condition and local log-determinant bridge retained; full M1 remains external."
+    },
+    {
+      "id": "C3",
+      "historical_followup_status": "resolved",
+      "current_context_faithful": true,
+      "current_retention": "Positive contraction, exact feasibility, N=1 bisection and split precision budgets retained."
+    },
+    {
+      "id": "C4",
+      "historical_followup_status": "resolved",
+      "current_context_faithful": true,
+      "current_retention": "Earlier geodesic minimax theorem and concrete-scope distinction retained; no worldwide-priority claim."
+    }
+  ],
+  "current_comments": [
+    {
+      "id": "R1",
+      "severity": "minor_editorial_provenance",
+      "location": {
+        "pdf_pages": [
+          1,
+          20
+        ],
+        "tex_lines": [
+          23,
+          839
+        ]
+      },
+      "finding": "Retained wording attributes addressing C1-C4 to this revision although D71 already addressed them; exact-hash section gives correct chronology.",
+      "recommendation": "State that the 17 October mathematical revision addressed the four comments and this contextual revision clarifies the record.",
+      "material_intake_blocker": false,
+      "manuscript_changed": false
+    },
+    {
+      "id": "R2",
+      "severity": "minor_package_provenance",
+      "location": {
+        "file": "manuscript/revision-record.json"
+      },
+      "finding": "Generic root filename retains D71 hashes, 21 pages, historical numbers and obsolete pending-follow-up status; it is explicit historical data but can be mistaken for current metadata.",
+      "recommendation": "Label it historical D71 metadata in the current handoff/release manifest; bind the present PDF and actual unscored assessment separately; preserve old file.",
+      "material_intake_blocker": false,
+      "can_address_without_pdf_change": true
+    }
+  ],
+  "predecessor_comparison": {
+    "level": "bounded_statement_comparison",
+    "definitions_compatible": true,
+    "predecessor_main_claim": "Existence of identity-Gram tuples approaching universal factor e and optimality of that constant.",
+    "current_main_claim": "Optimized-capacity Gram duality and multiplicativity over arbitrary joint covariances; value/covariance certificates and conditional tensor regularization.",
+    "added_distinction_supported": true,
+    "exact_duplication_of_main_stated_theorem_found": false,
+    "complete_nonoverlap_certified": false,
+    "worldwide_novelty_certified": false,
+    "predecessor_proof_audited": false
+  },
+  "unresolved_limits": [
+    "Prior universal comparison and singular-value/finite-matrix input not independently re-audited.",
+    "Prior operational testing theorem and earlier sharp single-copy input not independently re-audited.",
+    "No general M1/GLS implementation or performance benchmark supplied or run.",
+    "No general small/polynomial finite determinant-witness-size bound established.",
+    "Worldwide priority, comprehensive nonduplication and broad practical consequence not established.",
+    "No independent human review, full fresh proof audit, formal verification or editorial acceptance."
+  ],
+  "tooling_limitations": [
+    "Initial text stdout encountered UnicodeEncodeError after successful hash checks; UTF-8 continuation recovered requested PDF text.",
+    "Web opening tool could not access predecessor PDF; direct HTTPS in-memory fetch succeeded with exact expected SHA256.",
+    "Raw extracted PDF-body equality check failed; not treated as an equality certificate."
+  ],
+  "actions": {
+    "manuscript_modified": false,
+    "prior_reports_modified": false,
+    "certificate_data_modified": false,
+    "repository_modified": false,
+    "state_or_checkpoint_modified": false,
+    "intake_or_case_action": false,
+    "publication": false,
+    "credentials_accessed": false,
+    "other_chat_action": false,
+    "parent_review_coordination_only": true
+  },
+  "artifacts": {
+    "report": "REVIEW1443.txt",
+    "assessment": "ASSESSMENT1443.json",
+    "persistent_directory": "D:/Proyectos/airr-investigacion/2026-10-30_capacity-context-review1443",
+    "manifest": "SHA256-MANIFEST1443.json"
+  },
+  "created_at_utc": "2026-10-30T19:30:48.037255+00:00"
+}

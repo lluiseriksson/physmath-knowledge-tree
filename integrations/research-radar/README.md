@@ -1,5 +1,7 @@
 # Research radar
 
+Latest dependency boundary: [capacity duality, tensor limits and witness size](notes/2026-10-30-capacity-dependencies.md) adds two17October source cards with distinct reading depths and an exact unscored context report for an own unpublished draft. No new AIRR publication, formal promotion or inherited manuscript grade.
+
 > Selected source audit · 29 October 2026: [low-dimensional unimodular Jensen proof scope, exact own checkers and higher-dimensional limits](evidence/2026-10-29-jensen-main-audit/README.md). Contextual AI-assisted source checking; no new theorem, formal promotion or manuscript grade.
 
 A dated, searchable bridge between primary-source discovery, the existing knowledge graph and bounded research tasks. It records what has actually been inspected. It does not assign scientific truth from a repository title, formal statement, model score or graph path.

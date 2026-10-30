@@ -1,0 +1,48 @@
+{
+  "observed_on": "2026-10-30",
+  "coverage": "Directed source/statement comparison, not exhaustive survey or proof audit",
+  "published_sources": [
+    {
+      "id": "ARR-2026-1DGGW5KX2M9R4VJT",
+      "version": "v1",
+      "reading_status": "abstract_read",
+      "proof_audited_this_cycle": false,
+      "published_on": "2026-10-17"
+    },
+    {
+      "id": "ARR-2026-418PW0QXGN812RDC",
+      "version": "v1",
+      "reading_status": "selected_sections_read",
+      "selected": "Definitions, Theorem1 and Corollary2, PDFpages1-2",
+      "pdf_sha256": "1eaea4ec8f9a53ed894f58f9af3e33984e824aa074b7a74a8e90fdf6939c1224",
+      "bytes": 129011,
+      "proof_audited_this_cycle": false,
+      "published_on": "2026-10-17"
+    }
+  ],
+  "own_draft": {
+    "title": "Capacity duality, certified optimization and tensor regularization of amplified determinants",
+    "pdf_sha256": "0c36e9cc6f2e153aa2bb2ada9bd0a099e83b89bacc57ab555871e008adcf4d40",
+    "pages": 22,
+    "public_AIRR_release_verified": false,
+    "manuscript_grade": null,
+    "assessment_type": "one limited unscored context/diff review",
+    "report": "REVIEW1443.txt",
+    "report_sha256": "21edae1e6b75ab21ca960e449c678c80878d9f33c8433294386b79793c731f7e",
+    "assessment": "ASSESSMENT1443.json",
+    "assessment_sha256": "c56013cab50a5d5a361be477adf4fcbe7e94195b3a231ed9b5023a9dc7c623fb",
+    "requested_model": "GPT-6 Astra",
+    "requested_effort": "xhigh",
+    "actual_runtime_identity_effort_attested": false,
+    "new_independent_vote": false,
+    "blind": false,
+    "historical_reports_intentionally_read": true,
+    "full_new_proof_audit": false,
+    "minor_observations": "R1 chronology wording retained and disclosed; R2 oldD71metadata labelled historical in release packet, no PDFchange",
+    "editorial_acceptance": false
+  },
+  "no_foreign_corpus_vendored": true,
+  "canonical_graph_changed": false,
+  "formal_confidence_promoted": false,
+  "limits": "Notes/report are own synthesis and provenance; source metadata does not certify old or current mathematical claims. No publication, numerical grade, globally novel theorem or witness-size result inferred."
+}
