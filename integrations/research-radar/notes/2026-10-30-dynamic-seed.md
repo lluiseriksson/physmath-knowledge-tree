@@ -38,7 +38,7 @@ Consider the standard dimensionless Brusselator, with A>0 and B>=0:
 
 The positive quadrant is forward invariant: x=0 gives x'=A and y=0 gives y'=Bx. The flux Bx converts x to y; x²y returns y to x autocatalytically and requires x already present. Constant feed A and the x drain make the dictionary asymmetric. A literal internal-seed-only account would omit a necessary model input. Gallas's selected equations(1)–(4) supply this model context; the later externally forced study is not being reproduced.
 
-The unique positive equilibrium is (A,B/A). Its Jacobian is [[B-1,A²],[-B,-A²]], with trace B-1-A² and determinant A². It is linearly asymptotically stable below B=1+A² and unstable above. Pure imaginary eigenvalues at the boundary alone do not prove a nonlinear Hopf branch or its stability. No such proof is claimed here.
+The unique nonnegative equilibrium is (A,B/A); it is strictly positive when B>0, while B=0 puts it on the boundary y=0. Its Jacobian is [[B-1,A²],[-B,-A²]], with trace B-1-A² and determinant A². It is linearly asymptotically stable below B=1+A² and unstable above. Pure imaginary eigenvalues at the boundary alone do not prove a nonlinear Hopf branch or its stability. No such proof is claimed here.
 
 For c=x+y>0 and p=x/c, direct differentiation yields
 
