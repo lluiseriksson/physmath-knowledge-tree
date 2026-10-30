@@ -128,3 +128,26 @@ Stop a proposed producer if these source-compatibility steps cannot be derived. 
 ## Raw small-field reconstruction and chart follow-up
 
 The [grouped raw-chart note](RAW-SMALL-FIELD-CHART.md) incorporates executions1411–1416: the actual nonlinear source reconstruction, a conservative sparse-h candidate estimate, original-cutoff/background matching, explicit complex coordinate-norm limits and a bounded SU2 falsifier. These are participating-agent component arguments, not a new formal theorem, independent review, paper or physical activity producer. The [own run archive](RAW-CONTOUR1415.zip) retains the first failed execution and its disclosed serialization repair; its verified capsule remains BLOCKED. Source PDFs/private reading extracts are not redistributed. The source-compatibility/large-field/marked-carrier gates above remain open; no graph confidence, source count or manuscript grade changes.
+
+## Normalized observables and the physical remainder: grouped source reconciliation
+
+This continuation consolidates the source/transport findings of executions1425–1437 in this existing dossier. The private working manuscript remains unfinished. These findings are knowledge synthesis, not a new paper, model assessment or physical decay theorem.
+
+**Literature.** Balaban, *Convergent Renormalization Expansions for Lattice Gauge Theories*, CMP119,243–285(1988), explicitly treats normalized localized expectations in Eq3.44–3.47, printed277–278. A distinguished numerator activity is multiplied by the same remaining vacuum activities as in the denominator. Subtraction of the restricted and unrestricted vacuum exponents leaves clusters touching the distinguished support. This normalization mechanism is an antecedent, not a new method here; its particular inserted functions come from Eq3.37. Their estimates do not automatically apply to plaquette marks. Selected statements and construction steps were read; the full proof was not independently audited.
+
+The same source, printed243–244, distinguishes the physical blocking T from the additional R operation modifying large-field densities. A pushforward identity for T cannot silently be iterated through R with an unchanged observable. The actual R density/observable action and integrability would have to be established. Its first-step history representation, Eq1.28–1.30, retains outer variables and boundary contributions; a signed localized H is not a positive history probability.
+
+**Own analytic inference.** Let nu=T_*mu be an actual positive physical blocking, F_p=E_mu[O_p|T], and psi_p the specified coarse observable with an explicit geometry dictionary. Write delta_p=F_p-psi_p. Then the exact one-step difference is
+
+    Cov_mu(O_p,O_q)-Cov_nu(psi_p,psi_q)
+      =E_nu[Cov_mu(O_p,O_q|T)]
+        +Cov_nu(psi_p,delta_q)+Cov_nu(delta_p,psi_q)
+        +Cov_nu(delta_p,delta_q).
+
+The current programme's fixed-observable consecutive-measure remainder is therefore not automatically the conditional fluctuation covariance. A tower transporting observables by conditional expectation defines a different remainder until its dictionary is proved. At programme commit532254025bff0ec1ccbb88de3f575062193f0cfa the relevant interface definitions were read; no fresh build or verification of that commit is claimed. The earlier c454 build record is not inherited by this later head.
+
+For the normalized real unitary plaquette, O=1-||P-I||_(HS,N)^2/2. Hence a complete retained-input cutoff bounds the local insertion pointwise and also bounds its expectation under the actual positive normalized branch kernel, without an unrelated global lower bound for its partition factor. This is a cutoff-dependent amplitude estimate under the declared chart/support assumptions, not separation decay. Source norm conversions, carrier sizes and logarithms remain explicit. A coarse square and an elementary fine plaquette have different areas; block averaging does not commute their traces.
+
+**Limits and falsifier.** Pointwise small curvature alone cannot supply the missing coarse-law decay. An equal mixture of the identity configuration and constant SU(2) links exp(i a sigma1), exp(i a sigma2) has same-orientation plaquette covariance sin(a)^8 at every separation. This exact matrix calculation was checked symbolically; the mixture is not asserted to be a Yang–Mills Gibbs measure or a source minimizing family. It refutes only the proposed implication from local smallness to clustering, not a physical mass-gap theorem. A mark depending on exterior localization parameters, a carrier missing an actual cutoff, or an invalid positive-kernel dictionary invalidates the corresponding transfer.
+
+**Remaining hypothesis.** Actual normalized observable transport and spatially connected good/bad-history bounds must identify the physical Rsc with uniform constants. Generic marking, ratio cancellation and provenance wrappers are not standalone publication results. Confidence remains literature for the cited source mechanism, heuristic for these unformalized component arguments, and speculative for the physical bridge. No new formal result, hRpoly discharge, independent review, grade or continuum conclusion is claimed.

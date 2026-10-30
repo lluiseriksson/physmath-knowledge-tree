@@ -51,7 +51,7 @@
       }
     },
     {
-      "source": "Balaban CMP119",
+      "source": "Balaban CMP119 Convergent Renormalization Expansions",
       "doi": "10.1007/BF01217741",
       "sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
       "bytes": 4172827,
@@ -62,8 +62,25 @@
         18,
         19
       ],
-      "status": "statement_read; PDF18 Eq2.31 visually checked",
-      "complete_proof_audited": false
+      "status": "Selected statements/construction steps read: T versus R, first-step histories, normalized anchored expectations Eq3.44-3.47; not a full proof audit",
+      "complete_proof_audited": false,
+      "publication": "CMP119,243-285(1988)",
+      "selected_pages": [
+        1,
+        2,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        32,
+        33,
+        35,
+        36
+      ],
+      "body_redistributed": false
     },
     {
       "source": "Dimock RG II",
@@ -298,5 +315,40 @@
     "observed_programme_head": "1545066253520178ff3680e1f7297e9790ccd908",
     "new_nonlinear_tangent_files_status": "Inventory only; historical c454 kernel result not inherited",
     "deduplication": "Same existing raw-source dossier; no new graph node/source/candidate/paper/grade; finite numerical lane closed."
+  },
+  "physical_transport_followup1437": {
+    "scope": "Grouped own synthesis1425-1437 in existing dossier, not a new paper or grade",
+    "source_normalization_antecedent": "CMP119 Eq3.44-3.47, inserted functions Eq3.37; plaquette marked estimates not inherited",
+    "programme_commit": "532254025bff0ec1ccbb88de3f575062193f0cfa",
+    "programme_files": [
+      {
+        "path": "HYPOTHESIS_FRONTIER.md",
+        "blob": "df76766bf18d129ac9d16d0ad70a907efae29887"
+      },
+      {
+        "path": "YangMills/RG/CorrelatorBridge.lean",
+        "blob": "f9df568d2f8aedd76a77cf818cbc1207a009582e"
+      },
+      {
+        "path": "YangMills/RG/CorrelatorBridgeProvenance.lean",
+        "blob": "219a61bc38f9362a88bd78aa90d9fcc20f0799de"
+      }
+    ],
+    "programme_reading": "selected interfaces/definitions read, no fresh build; c454 verification not inherited",
+    "mechanism": "Exact physical one-step difference contains conditional covariance plus three coarse observable-transport covariance terms",
+    "amplitude_boundary": "Actual retained-cutoff support gives normalized physical amplitude under explicit chart/carrier assumptions; no spatial decay",
+    "negative_result": "SU2 two-background mixture covariance sin(a)^8 independent of separation; exact SymPy1.14 matrix check; NOT YM Gibbs/source minimizing family or mass-gap counterexample",
+    "falsifier": "Lost cutoff carrier, exterior-parameter-dependent mark or invalid positive physical kernel dictionary invalidates transfer",
+    "confidence": {
+      "literature": "selected source mechanism",
+      "heuristic": "participating-agent unformalized component arguments",
+      "speculative": "uniform physical Rsc bridge",
+      "formal": "no new checked Lean theorem"
+    },
+    "new_assessment": false,
+    "new_grade": null,
+    "new_paper": false,
+    "physical_hypothesis_removed": false,
+    "canonical_graph_changed": false
   }
 }
