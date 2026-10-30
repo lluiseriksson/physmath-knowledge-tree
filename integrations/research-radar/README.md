@@ -199,3 +199,5 @@ The [combined dynamic-seed note](notes/2026-10-30-dynamic-seed.md) checks why re
 The same [dynamic-seed note](notes/2026-10-30-dynamic-seed.md) now includes a concrete classical bromide-regeneration case, state-dependent response and a local recovery calculation. Its [scoped evidence](evidence/2026-10-30-bromide1360/README.md) separates known chemical mechanisms, source-access limits and untested predictive/causal applications; no new paper or score follows.
 
 The same [dynamic-seed note](notes/2026-10-30-dynamic-seed.md) now qualifies hidden-state claims against complete ideal output history, preserving the invariant-plane exception and the boundary to noisy, sampled and uncertain models. [Own exact evidence](evidence/2026-10-30-observer1363/README.md) and the scoped classical observability source do not supply an empirical sensor advantage or a new paper.
+
+Werner research now has a [physical-coverage gate](evidence/2026-10-30-werner-coverage/README.md): an earlier pinned preprint claim must be reconciled before further QSS signed-operator work. Selected source reading is separate from certificate validation; no new paper or score follows.
