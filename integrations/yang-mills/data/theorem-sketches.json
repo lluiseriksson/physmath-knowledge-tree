@@ -3,7 +3,7 @@
   "sketches": [
     {
       "id": "sketch.raw-hsharp-geometric-m3",
-      "status": "unverified-template",
+      "status": "historical-unreconciled-template",
       "theorem": "YangMills.RG.lattice_mass_gap_of_cmp116RawSource_hsharp_geometric",
       "new_parameters": [
         "covIR : Nat -> Real",
@@ -34,11 +34,12 @@
         "drop source/support hypotheses",
         "remove _geometric suffix",
         "claim hRpoly"
-      ]
+      ],
+      "caveat": "Not an implementation request: reconcile exact-name presence at current HEAD first."
     },
     {
       "id": "sketch.named-marginal-consumer",
-      "status": "unverified-template",
+      "status": "implemented-conditional-remote-ci",
       "theorem": "YangMills.RG.lattice_mass_gap_of_singleScaleUVDecay_marginal",
       "reuse_signature_from": "YangMills.RG.lattice_mass_gap_of_cluster_and_marginal_coupling",
       "replacement": "Replace the unfolded scalar remainder inequality argument with hUV : SingleScaleUVDecay Rsc g A c0 kappa0.",
@@ -49,7 +50,8 @@
       "forbidden_simplifications": [
         "assume geometric g",
         "rename the result without _marginal"
-      ]
+      ],
+      "caveat": "Historical sketch retained; actual named adapter already exists at the pinned 30 October HEAD."
     }
   ]
 }

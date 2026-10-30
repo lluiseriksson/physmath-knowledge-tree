@@ -63,8 +63,8 @@ gate('resolved-obligations', () => {
 
 gate('status-discipline', () => {
   for (const d of declarationsDoc.declarations) {
-    if (!['verified', 'planned'].includes(d.status)) fail(`bad declaration status ${d.id}`);
-    if (d.status === 'planned' && d.verified_at) fail(`planned declaration has verified_at: ${d.id}`);
+    if (!['verified', 'planned', 'historical-unreconciled'].includes(d.status)) fail(`bad declaration status ${d.id}`);
+    if (d.status !== 'verified' && d.verified_at) fail(`unverified declaration has verified_at: ${d.id}`);
     if (d.status === 'verified' && !d.verified_at) fail(`verified declaration lacks verified_at: ${d.id}`);
   }
 });

@@ -7,13 +7,13 @@ Return:
 
 1. exact current HEAD and declarations found;
 2. the shortest unresolved producer → semantic predicate → consumer route;
-3. one smallest commit with exact theorem statement sketch;
+3. one concrete source-obligation audit; propose a theorem only after reconciling every existing name;
 4. consumed declarations;
 5. every hypothesis still explicit, grouped by source/support/H#/assembly;
 6. exact conclusion and information forgotten;
 7. what remains conditional;
 8. isolated Lean, core, oracle, consistency and diff verification commands;
-9. the next 5–8 commits with risk and dependency ordering.
+9. distinguish the active next move from historical roadmap records held for reconciliation.
 
 Rules:
 
@@ -21,4 +21,4 @@ Rules:
 - Suffix geometric and marginal wrappers explicitly.
 - Do not claim `hRpoly`, a physical source theorem, continuum reconstruction or Clay.
 - Do not collapse support roles.
-- Prefer a direct composition theorem when a named producer and consumer already agree.
+- Check whether the direct composition already exists. The named marginal consumer and raw-source marginal composition are present in the 30 October snapshot; do not recreate them.

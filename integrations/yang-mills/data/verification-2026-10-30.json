@@ -1,0 +1,165 @@
+{
+  "schema_version": "1.0.0",
+  "observed_date": "2026-10-30",
+  "repository": "lluiseriksson/THE-ERIKSSON-PROGRAMME",
+  "head": "a9937ee1dd5978bf372174500a2395cf259eb395",
+  "head_commit_date": "2026-10-30T08:50:03Z",
+  "head_commit_message": "Merge pull request #97 from lluiseriksson/codex/consolidated-flat-wall-20261030: Consolidate the closed flat rank walls and audit the actual CT route",
+  "reading_status": "Selected declaration statements and adapter bodies read; remote CI/oracle records inspected; no independent local build or physical source proof audit.",
+  "current_ci": {
+    "url": "https://github.com/lluiseriksson/THE-ERIKSSON-PROGRAMME/actions/runs/41029119825",
+    "run_id": 41029119825,
+    "job_id": 123974312813,
+    "status": "success",
+    "head": "a9937ee1dd5978bf372174500a2395cf259eb395",
+    "selected_log_lines": [
+      "2026-10-30T08:53:26.8121094Z Build completed successfully (8466 jobs).",
+      "2026-10-30T08:55:06.5750290Z Build completed successfully (8313 jobs).",
+      "2026-10-30T09:15:57.3252755Z 2854/2854 readouts; 2828 on [propext, Classical.choice, Quot.sound] or a subset, 26 axiom-free, 0 non-standard"
+    ],
+    "core_jobs": 8466,
+    "other_oracle_import_jobs": 8313,
+    "oracle": {
+      "readouts": 2854,
+      "standard_axioms_or_subset": 2828,
+      "axiom_free": 26,
+      "nonstandard": 0
+    }
+  },
+  "auxiliary_ci": {
+    "name": "orchestrator",
+    "run_id": 41039826220,
+    "status": "failure",
+    "investigated": false,
+    "scope": "Separate from the successful Lean core/oracle run; not all repository checks are green."
+  },
+  "recorded_canonical_source_checkpoint": "02fae0add25d05a3a10d1c5e8ec515320843172d",
+  "source_tree_guard": {
+    "old": "44f844aedae65c0813b30943b8fbe1d6b069b6c6",
+    "current": "59dbfeef379e2bab4811cb09f606a00437f07d89",
+    "equal": false,
+    "consequence": "Equal entrypoint/manifest blobs alone do not transport an old build across changed source trees; current-head CI was inspected separately."
+  },
+  "toolchain": "leanprover/lean4:v4.29.0-rc6",
+  "manifest_blob": "a9ef7ddbb466ffb360718a5e0f3e54f5b5217a87",
+  "dependencies": [
+    {
+      "name": "mathlib",
+      "repository": "leanprover-community/mathlib4",
+      "required_commit": "07642720480157414db592fa85b626dafb71355b",
+      "observed_commit": "07642720480157414db592fa85b626dafb71355b",
+      "matches": true,
+      "commit_date": "2026-03-13T19:39:29Z",
+      "scope": "Pinned upstream commit existence/identity, not independent CI checkout or kernel rebuild."
+    },
+    {
+      "name": "plausible",
+      "repository": "leanprover-community/plausible",
+      "required_commit": "e84e3e16aea6b72cc5d311ca1bb25caad417e162",
+      "observed_commit": "e84e3e16aea6b72cc5d311ca1bb25caad417e162",
+      "matches": true,
+      "commit_date": "2026-03-10T01:57:11Z",
+      "scope": "Pinned upstream commit existence/identity, not independent CI checkout or kernel rebuild."
+    },
+    {
+      "name": "LeanSearchClient",
+      "repository": "leanprover-community/LeanSearchClient",
+      "required_commit": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+      "observed_commit": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+      "matches": true,
+      "commit_date": "2026-02-12T00:28:04Z",
+      "scope": "Pinned upstream commit existence/identity, not independent CI checkout or kernel rebuild."
+    },
+    {
+      "name": "importGraph",
+      "repository": "leanprover-community/import-graph",
+      "required_commit": "f207d9fcf0cef00ba79962a33ef156061914d9c7",
+      "observed_commit": "f207d9fcf0cef00ba79962a33ef156061914d9c7",
+      "matches": true,
+      "commit_date": "2026-03-10T00:12:49Z",
+      "scope": "Pinned upstream commit existence/identity, not independent CI checkout or kernel rebuild."
+    },
+    {
+      "name": "proofwidgets",
+      "repository": "leanprover-community/ProofWidgets4",
+      "required_commit": "2e58165a9dcdca9837b666528f974299ee1a51cc",
+      "observed_commit": "2e58165a9dcdca9837b666528f974299ee1a51cc",
+      "matches": true,
+      "commit_date": "2026-03-09T23:51:19Z",
+      "scope": "Pinned upstream commit existence/identity, not independent CI checkout or kernel rebuild."
+    },
+    {
+      "name": "aesop",
+      "repository": "leanprover-community/aesop",
+      "required_commit": "c3361708f266893de5d1769192b60d4b1831f2bb",
+      "observed_commit": "c3361708f266893de5d1769192b60d4b1831f2bb",
+      "matches": true,
+      "commit_date": "2026-03-10T00:46:35Z",
+      "scope": "Pinned upstream commit existence/identity, not independent CI checkout or kernel rebuild."
+    },
+    {
+      "name": "Qq",
+      "repository": "leanprover-community/quote4",
+      "required_commit": "221e8088e3a066b8676dc471ff10638cf1c10835",
+      "observed_commit": "221e8088e3a066b8676dc471ff10638cf1c10835",
+      "matches": true,
+      "commit_date": "2026-03-09T23:51:10Z",
+      "scope": "Pinned upstream commit existence/identity, not independent CI checkout or kernel rebuild."
+    },
+    {
+      "name": "batteries",
+      "repository": "leanprover-community/batteries",
+      "required_commit": "87f6314ff2cc922489cd73cd0fbc2252f39aa153",
+      "observed_commit": "87f6314ff2cc922489cd73cd0fbc2252f39aa153",
+      "matches": true,
+      "commit_date": "2026-03-12T22:48:40Z",
+      "scope": "Pinned upstream commit existence/identity, not independent CI checkout or kernel rebuild."
+    },
+    {
+      "name": "Cli",
+      "repository": "leanprover/lean4-cli",
+      "required_commit": "3de531c1135f5e3a01f3ac04830996fda476b28e",
+      "observed_commit": "3de531c1135f5e3a01f3ac04830996fda476b28e",
+      "matches": true,
+      "commit_date": "2026-03-09T23:50:44Z",
+      "scope": "Pinned upstream commit existence/identity, not independent CI checkout or kernel rebuild."
+    }
+  ],
+  "declarations": [
+    {
+      "name": "YangMills.RG.lattice_mass_gap_of_singleScaleUVDecay_marginal",
+      "file": "YangMills/RG/MarginalUVMassGap.lean",
+      "blob": "14ff70a23cfb6b400de44044cd3754897d989218",
+      "reading_status": "statement and adapter body read",
+      "ci_import": "YangMillsCore.lean directly imports YangMills.RG.MarginalUVMassGap"
+    },
+    {
+      "name": "YangMills.RG.lattice_mass_gap_of_cmp116RawSource_hsharp_marginal",
+      "file": "YangMills/RG/PhysicalGaugeCMP116RawM3.lean",
+      "blob": "e93fde029a7f032aba215bfa51393a99b2f808c0",
+      "reading_status": "statement and adapter body read",
+      "ci_import": "YangMillsCore.lean:691 directly imports YangMills.RG.PhysicalGaugeCMP116RawM3"
+    }
+  ],
+  "unresolved": [
+    {
+      "name": "YangMills.RG.lattice_mass_gap_of_cmp116RawSource_hsharp_geometric",
+      "status": "Historical plan, no global declaration search completed; do not assert absent or implement from this snapshot."
+    }
+  ],
+  "scope": {
+    "formal": "Conditional scalar lattice-decay adapters with fixed-parameter assumptions, positive gap existential before time quantifier.",
+    "literature": "Source references are provenance, not proofs of the Lean hypotheses.",
+    "heuristic": "Existing marginal branch is the appropriate adapter to inspect for marginal recursion; no missing physical estimate is eliminated.",
+    "speculative": "No new physical claim; abandon any wrapper proposal when its exact name already exists."
+  },
+  "not_proved": [
+    "physical raw-source estimates",
+    "hRpoly",
+    "uniform constants independent of volume/cutoff/background/holes",
+    "continuum limit",
+    "OS/Wightman reconstruction",
+    "Clay mass gap"
+  ],
+  "retention": "Own metadata and synthesis only; no upstream code or job-log corpus retained."
+}

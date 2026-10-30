@@ -3,17 +3,20 @@
   "scenarios": [
     {
       "id": "ym.next-smallest-commit",
-      "prompt": "At HEAD 4ac576, raw source reaches SingleScaleUVDecay. Design the next smallest high-value commit.",
+      "prompt": "At the refreshed 2026-10-30 snapshot, both named marginal adapters exist. Identify the next high-value research move without duplicating historical plans.",
       "required": [
-        "lattice_mass_gap_of_cmp116RawSource_hsharp_geometric",
-        "thin composition",
+        "existing marginal adapters",
         "all source hypotheses remain explicit",
+        "audit one concrete physical source obligation",
+        "historical plans require reconciliation",
         "verification commands"
       ],
       "forbidden": [
         "hRpoly proved",
         "Clay",
-        "new duplicate UV predicate"
+        "new duplicate UV predicate",
+        "reimplement the named marginal adapters",
+        "geometric adapter absent without a current global search"
       ],
       "score": 10
     },

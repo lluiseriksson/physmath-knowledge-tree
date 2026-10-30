@@ -11,11 +11,13 @@
   "purpose": "Give research agents a precise, refreshable and falsifiable interface for continuing the verified Yang–Mills RG development.",
   "yang_mills_repository": {
     "repository": "lluiseriksson/THE-ERIKSSON-PROGRAMME",
-    "inspected_head": "4ac57638396f62c4cb968676a07a9ae95bd982be",
-    "previous_frontier_head": "d1023e1f7bd7cb315b931f0592cb4334ba1b71e4",
-    "latest_ledger_addendum": 296,
-    "verified_core_jobs": 8349,
-    "snapshot_date": "2026-06-23"
+    "inspected_head": "a9937ee1dd5978bf372174500a2395cf259eb395",
+    "previous_frontier_head": "4ac57638396f62c4cb968676a07a9ae95bd982be",
+    "verified_core_jobs": 8466,
+    "snapshot_date": "2026-10-30",
+    "verification_record": "integrations/yang-mills/data/verification-2026-10-30.json",
+    "verification_mode": "Recorded GitHub CI, not an independent local programme rebuild",
+    "historical_ledger_addendum": 296
   },
   "entrypoints": [
     "integrations/yang-mills/README.md",
@@ -36,7 +38,8 @@
     "rules": "integrations/yang-mills/data/decision-rules.json",
     "evaluations": "integrations/yang-mills/evaluation/scenarios.json",
     "search_queries": "integrations/yang-mills/data/search-queries.json",
-    "theorem_sketches": "integrations/yang-mills/data/theorem-sketches.json"
+    "theorem_sketches": "integrations/yang-mills/data/theorem-sketches.json",
+    "verification": "integrations/yang-mills/data/verification-2026-10-30.json"
   },
   "quality_gates": [
     "all JSON files parse",
@@ -56,6 +59,7 @@
     "Do not call a geometric-coupling theorem the honest 4D marginal branch.",
     "Do not collapse spectator, fluctuation, active, Omega, skeleton and full-target support.",
     "Do not treat source anchors as Lean proofs.",
-    "Refresh the Yang–Mills HEAD before proposing code changes."
+    "Refresh the Yang–Mills HEAD before proposing code changes.",
+    "Historical-unreconciled plans are not evidence that a declaration is absent; never reimplement an observed adapter."
   ]
 }

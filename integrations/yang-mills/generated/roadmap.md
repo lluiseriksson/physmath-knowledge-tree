@@ -1,8 +1,20 @@
 # Yang–Mills commit roadmap
 
-## 1. feat(RG): assemble raw-source Hsharp into geometric M3
+## 1. Audit one physical source obligation after reconciling historical plans
 
 - Status: next
+- Risk: medium
+- Files: `HYPOTHESIS_FRONTIER.md`, `YangMills/RG/PhysicalGaugeCMP116RawM3.lean`
+- Conclusion: Produce a source-to-binder audit for one concrete physical remainder identity or uniform estimate, with exact quantifier order and a falsifier. Reconcile each old proposed name before any implementation; no new adapter or theorem is asserted.
+- Remains conditional: all unproved physical source estimates, hRpoly, continuum limit and reconstruction
+- Verification:
+  - `resolve current HEAD and planned names`
+  - `inspect the exact source statement and consumer`
+  - `record whether any external hypothesis was actually eliminated`
+
+## 2. feat(RG): assemble raw-source Hsharp into geometric M3
+
+- Status: historical-unreconciled
 - Risk: low
 - Files: `YangMills/RG/PhysicalGaugeCMP116RawUVMassGap.lean`, `YangMillsCore.lean`, `oracle_check.lean`, `CURRENT-STATE.md`, `docs/VERIFICATION-LEDGER.md`
 - Conclusion: A positive uniform lattice decay rate for covIR + covUV_concrete, conditional on the complete raw-source/H# package and a geometric scale profile.
@@ -14,21 +26,21 @@
   - `python scripts/check_consistency.py`
   - `git diff --check`
 
-## 2. feat(RG): add the marginal SingleScaleUVDecay M3 consumer
+## 3. feat(RG): add the marginal SingleScaleUVDecay M3 consumer
 
-- Status: planned
+- Status: implemented-conditional-remote-ci
 - Risk: low
-- Files: `YangMills/RG/MarginalUVMassGap.lean`, `YangMills/RG/PhysicalGaugeCMP116RawUVMassGap.lean`, `oracle_check.lean`
-- Conclusion: The raw-source/H# frontier reaches the faithful 4D marginal M3 assembly without a geometric-coupling surrogate.
+- Files: `YangMills/RG/MarginalUVMassGap.lean`, `YangMills/RG/PhysicalGaugeCMP116RawM3.lean`, `oracle_check.lean`
+- Conclusion: Already implemented conditional marginal adapters; do not recreate them. No physical source hypothesis or hRpoly is eliminated.
 - Remains conditional: obl.hsharp-remainder-identity, obl.marginal-recursion, obl.uniform-constants
 - Verification:
   - `lake env lean YangMills/RG/MarginalUVMassGap.lean`
-  - `lake env lean YangMills/RG/PhysicalGaugeCMP116RawUVMassGap.lean`
+  - `lake env lean YangMills/RG/PhysicalGaugeCMP116RawM3.lean`
   - `lake env lean oracle_check.lean`
 
-## 3. refactor(RG): name the raw Hsharp hypothesis frontier
+## 4. refactor(RG): name the raw Hsharp hypothesis frontier
 
-- Status: planned
+- Status: historical-unreconciled
 - Risk: medium
 - Files: `YangMills/RG/PhysicalGaugeCMP116RawHsharpFrontier.lean`, `YangMills/RG/PhysicalGaugeCMP116RawUVMassGap.lean`
 - Conclusion: One stable bundle with projections to SingleScaleUVDecay and both M3 branches.
@@ -37,9 +49,9 @@
   - `lake env lean YangMills/RG/PhysicalGaugeCMP116RawHsharpFrontier.lean`
   - `#print axioms on every projection`
 
-## 4. docs(RG): audit the CMP116 raw Hsharp analytic frontier
+## 5. docs(RG): audit the CMP116 raw Hsharp analytic frontier
 
-- Status: planned
+- Status: historical-unreconciled
 - Risk: low
 - Files: `docs/CMP116-RAW-HSHARP-M3-FRONTIER.md`, `HYPOTHESIS_FRONTIER.md`, `CURRENT-STATE.md`
 - Conclusion: A binder-to-source audit table that an agent can query without re-reading the entire RG tree.
@@ -48,9 +60,9 @@
   - `check every declaration name with grep/#check`
   - `validate links and ledger references`
 
-## 5. refactor(RG): replace opaque source Props with typed source facts
+## 6. refactor(RG): replace opaque source Props with typed source facts
 
-- Status: planned
+- Status: historical-unreconciled
 - Risk: medium-high
 - Files: `YangMills/RG/PhysicalGaugeCMP116ActivityConstruction.lean`, `YangMills/RG/PhysicalGaugeCMP116RawHsharpFrontier.lean`
 - Conclusion: Source hypotheses mention concrete operators, activities and equalities instead of arbitrary Prop parameters.
@@ -59,9 +71,9 @@
   - `compile the full raw-source -> H# chain`
   - `ensure each new field is consumed downstream`
 
-## 6. feat(RG): make finite-volume and scale uniformity explicit
+## 7. feat(RG): make finite-volume and scale uniformity explicit
 
-- Status: planned
+- Status: historical-unreconciled
 - Risk: high
 - Files: `YangMills/RG/PhysicalGaugeCMP116UniformRawHsharp.lean`
 - Conclusion: A single constants package lies outside all finite-volume, cutoff, background, hole and scale quantifiers.
@@ -71,9 +83,9 @@
   - `instantiate with a finite toy index`
   - `prove pointwise projections`
 
-## 7. test(RG): prove non-vacuity of the numerical Hsharp shell
+## 8. test(RG): prove non-vacuity of the numerical Hsharp shell
 
-- Status: planned
+- Status: historical-unreconciled
 - Risk: medium
 - Files: `YangMills/RG/AppendixFHsharpNumericalWindow.lean`, `oracle_check.lean`
 - Conclusion: The numerical smallness and denominator conditions are jointly satisfiable without asserting a physical source package.
@@ -82,9 +94,9 @@
   - `construct explicit witnesses`
   - `oracle output is standard only`
 
-## 8. feat(RG): state the Balaban-Dimock raw Hsharp source estimate interface
+## 9. feat(RG): state the Balaban-Dimock raw Hsharp source estimate interface
 
-- Status: planned
+- Status: historical-unreconciled
 - Risk: medium-high
 - Files: `YangMills/RG/BalabanDimockCMP116SourceEstimate.lean`, `docs/BALABAN-DIMOCK-CMP116-SOURCE-TARGET.md`
 - Conclusion: One source theorem-shaped object projects directly to the raw H# frontier and marginal M3 conditional.

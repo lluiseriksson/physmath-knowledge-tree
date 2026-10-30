@@ -34,14 +34,14 @@
       "tool": "GitHub code search",
       "query": "lattice_mass_gap_of_cmp116RawSource_hsharp_geometric",
       "why": "Do not propose a theorem that has already landed.",
-      "expected": "zero hits at stored snapshot"
+      "expected": "Historical plan; current global presence/absence unresolved. Do not infer zero hits."
     },
     {
       "id": "q.planned-marginal-wrapper",
       "tool": "GitHub code search",
       "query": "lattice_mass_gap_of_singleScaleUVDecay_marginal",
       "why": "Check whether the named marginal semantic consumer now exists.",
-      "expected": "zero hits at stored snapshot"
+      "expected": "Present at a9937ee1dd5978bf372174500a2395cf259eb395 in MarginalUVMassGap.lean; preserve conditional scope."
     },
     {
       "id": "q.mass-gap-assemblies",
