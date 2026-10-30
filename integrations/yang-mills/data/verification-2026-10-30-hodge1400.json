@@ -1,0 +1,153 @@
+{
+  "schema_version": "1.0.0",
+  "observed_date": "2026-10-30",
+  "repository": "lluiseriksson/THE-ERIKSSON-PROGRAMME",
+  "head": "c454346d873385e3a03e38e0f85f4f1439a032c7",
+  "head_commit_date": "2026-10-30T13:00:53Z",
+  "head_commit_message": "Merge PR100: all-cochain flat Hodge identity and concrete weighted repair comparison",
+  "reading_status": "New Hodge statements and all proof bodies read; selected actual RawM3 binders and projection inspected. No new independent source kernel build or physical-source proof.",
+  "baseline_core_record": "integrations/yang-mills/data/verification-2026-10-30.json",
+  "baseline_core_head": "a9937ee1dd5978bf372174500a2395cf259eb395",
+  "baseline_core_jobs": 8466,
+  "current_core_ci": {
+    "run_id": 41059745862,
+    "head": "c454346d873385e3a03e38e0f85f4f1439a032c7",
+    "name": "Lean – YangMillsCore build + axiom oracle",
+    "status": "in_progress",
+    "conclusion": null,
+    "url": "https://github.com/lluiseriksson/THE-ERIKSSON-PROGRAMME/actions/runs/41059745862",
+    "created_at": "2026-10-30T13:00:56Z",
+    "updated_at": "2026-10-30T13:01:00Z",
+    "scope": "Run-level primary status only; this turn did not retrieve raw core/oracle job logs or independently rebuild programme."
+  },
+  "new_focal_source_report": {
+    "status": "TWO_FRESH_CLONES_GLOBAL_HODGE_MATCH",
+    "source_sha": "dfd49d0b0730a4d36f58a4cbb7a17d6a41fb60bc",
+    "target_olean_sha256": "1ed9034ec15b651e1b22cba39be73a774bbc23ed1e9f313b69c96d0d2e83f6b8",
+    "oracle_log_sha256": "5795bc34e56443e06534f3f825c9c3de0f3191e8a5086580a87c699d1b9ae3a5",
+    "source_manifest_sha256": "0ea09a2f986529ff6a7fb91262d24b38b4f9c9c845e63aaaeeff6b61193c7b65",
+    "first": {
+      "status": "GLOBAL_FLAT_HODGE_VALIDATED",
+      "zip_sha256": "79476ccd15ef1ee0f96469c91ff01f0178021cbfd2136386fb011135a957ac3c",
+      "source_sha": "dfd49d0b0730a4d36f58a4cbb7a17d6a41fb60bc",
+      "manifest_entries": 12,
+      "source_files": 2,
+      "exit_zero_steps": 9,
+      "oracle_reports": 4,
+      "target_olean_sha256": "1ed9034ec15b651e1b22cba39be73a774bbc23ed1e9f313b69c96d0d2e83f6b8",
+      "oracle_log_sha256": "5795bc34e56443e06534f3f825c9c3de0f3191e8a5086580a87c699d1b9ae3a5",
+      "source_manifest_sha256": "0ea09a2f986529ff6a7fb91262d24b38b4f9c9c845e63aaaeeff6b61193c7b65",
+      "started_utc": "2026-10-30T13:01:51.206377+01:00",
+      "finished_utc": "2026-10-30T13:07:25.461484+01:00",
+      "scope": "Actual all-cochain Hodge equals stacked-gradient energy, with derived weighted Hodge comparison"
+    },
+    "second": {
+      "status": "GLOBAL_FLAT_HODGE_VALIDATED",
+      "zip_sha256": "1d47edf258deea83ff86a21a8a2dbc36cf43ef22e49d3e600c19b354720fb4fa",
+      "source_sha": "dfd49d0b0730a4d36f58a4cbb7a17d6a41fb60bc",
+      "manifest_entries": 12,
+      "source_files": 2,
+      "exit_zero_steps": 9,
+      "oracle_reports": 4,
+      "target_olean_sha256": "1ed9034ec15b651e1b22cba39be73a774bbc23ed1e9f313b69c96d0d2e83f6b8",
+      "oracle_log_sha256": "5795bc34e56443e06534f3f825c9c3de0f3191e8a5086580a87c699d1b9ae3a5",
+      "source_manifest_sha256": "0ea09a2f986529ff6a7fb91262d24b38b4f9c9c845e63aaaeeff6b61193c7b65",
+      "started_utc": "2026-10-30T13:08:40.954816+01:00",
+      "finished_utc": "2026-10-30T13:14:33.051234+01:00",
+      "scope": "Actual all-cochain Hodge equals stacked-gradient energy, with derived weighted Hodge comparison"
+    },
+    "global_hodge_transport_formalized": true,
+    "weighted_hodge_comparison_formalized": true,
+    "independent_scientific_review": false,
+    "physical_hypothesis_removed": false
+  },
+  "focal_source_hashes_match_at_current_and_reported_refs": true,
+  "raw_focal_ZIPs_or_oracle_logs_retrieved": false,
+  "independent_programme_rebuild": false,
+  "canonical_graph_confidence_changed": false,
+  "new_source_card": false,
+  "new_model_review": false,
+  "new_grade": null,
+  "physical_hypothesis_removed": false,
+  "flat_constructed_family_comparison_premise_removed": "Source proves all-cochain gradient/Hodge quadratic identity and explicit V_w comparison, with upper coefficient bound retained.",
+  "rooted_hsharp_identity": "Still a field for actual physical Rsc and the same source/support data.",
+  "uniformity": "forall fixed N,L/data, exists gap, forall t; no exists common final amplitude/rate before forall physical family. Arbitrary nsc is an RG schedule, not a quantifier over N.",
+  "toolchain": "leanprover/lean4:v4.29.0-rc6",
+  "dependencies": [
+    {
+      "name": "mathlib",
+      "required": "07642720480157414db592fa85b626dafb71355b",
+      "observed": "07642720480157414db592fa85b626dafb71355b",
+      "matches": true,
+      "url": "https://api.github.com/repos/leanprover-community/mathlib4/git/commits/07642720480157414db592fa85b626dafb71355b",
+      "scope": "Pinned upstream commit identity exists; not a kernel rebuild or installed dependency check"
+    },
+    {
+      "name": "plausible",
+      "required": "e84e3e16aea6b72cc5d311ca1bb25caad417e162",
+      "observed": "e84e3e16aea6b72cc5d311ca1bb25caad417e162",
+      "matches": true,
+      "url": "https://api.github.com/repos/leanprover-community/plausible/git/commits/e84e3e16aea6b72cc5d311ca1bb25caad417e162",
+      "scope": "Pinned upstream commit identity exists; not a kernel rebuild or installed dependency check"
+    },
+    {
+      "name": "LeanSearchClient",
+      "required": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+      "observed": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+      "matches": true,
+      "url": "https://api.github.com/repos/leanprover-community/LeanSearchClient/git/commits/c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+      "scope": "Pinned upstream commit identity exists; not a kernel rebuild or installed dependency check"
+    },
+    {
+      "name": "importGraph",
+      "required": "f207d9fcf0cef00ba79962a33ef156061914d9c7",
+      "observed": "f207d9fcf0cef00ba79962a33ef156061914d9c7",
+      "matches": true,
+      "url": "https://api.github.com/repos/leanprover-community/import-graph/git/commits/f207d9fcf0cef00ba79962a33ef156061914d9c7",
+      "scope": "Pinned upstream commit identity exists; not a kernel rebuild or installed dependency check"
+    },
+    {
+      "name": "proofwidgets",
+      "required": "2e58165a9dcdca9837b666528f974299ee1a51cc",
+      "observed": "2e58165a9dcdca9837b666528f974299ee1a51cc",
+      "matches": true,
+      "url": "https://api.github.com/repos/leanprover-community/ProofWidgets4/git/commits/2e58165a9dcdca9837b666528f974299ee1a51cc",
+      "scope": "Pinned upstream commit identity exists; not a kernel rebuild or installed dependency check"
+    },
+    {
+      "name": "aesop",
+      "required": "c3361708f266893de5d1769192b60d4b1831f2bb",
+      "observed": "c3361708f266893de5d1769192b60d4b1831f2bb",
+      "matches": true,
+      "url": "https://api.github.com/repos/leanprover-community/aesop/git/commits/c3361708f266893de5d1769192b60d4b1831f2bb",
+      "scope": "Pinned upstream commit identity exists; not a kernel rebuild or installed dependency check"
+    },
+    {
+      "name": "Qq",
+      "required": "221e8088e3a066b8676dc471ff10638cf1c10835",
+      "observed": "221e8088e3a066b8676dc471ff10638cf1c10835",
+      "matches": true,
+      "url": "https://api.github.com/repos/leanprover-community/quote4/git/commits/221e8088e3a066b8676dc471ff10638cf1c10835",
+      "scope": "Pinned upstream commit identity exists; not a kernel rebuild or installed dependency check"
+    },
+    {
+      "name": "batteries",
+      "required": "87f6314ff2cc922489cd73cd0fbc2252f39aa153",
+      "observed": "87f6314ff2cc922489cd73cd0fbc2252f39aa153",
+      "matches": true,
+      "url": "https://api.github.com/repos/leanprover-community/batteries/git/commits/87f6314ff2cc922489cd73cd0fbc2252f39aa153",
+      "scope": "Pinned upstream commit identity exists; not a kernel rebuild or installed dependency check"
+    },
+    {
+      "name": "Cli",
+      "required": "3de531c1135f5e3a01f3ac04830996fda476b28e",
+      "observed": "3de531c1135f5e3a01f3ac04830996fda476b28e",
+      "matches": true,
+      "url": "https://api.github.com/repos/leanprover/lean4-cli/git/commits/3de531c1135f5e3a01f3ac04830996fda476b28e",
+      "scope": "Pinned upstream commit identity exists; not a kernel rebuild or installed dependency check"
+    }
+  ],
+  "source_manifest": "integrations/yang-mills/evidence/2026-10-30-hodge-source-boundary/SOURCE-HASHES1400.json",
+  "audit": "integrations/yang-mills/evidence/2026-10-30-hodge-source-boundary/README.md",
+  "next": "Do not repeat binder/flat-Hodge audit or implement another adapter. Need the actual physical source identity/profile and uniform final constants; hRpoly/continuum remain open."
+}

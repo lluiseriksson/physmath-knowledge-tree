@@ -1,10 +1,10 @@
 # Compact Yang–Mills agent context
 
-- Inspected HEAD: `a9937ee1dd5978bf372174500a2395cf259eb395` (Merge pull request #97 from lluiseriksson/codex/consolidated-flat-wall-20261030: Consolidate the closed flat rank walls and audit the actual CT route)
-- Core: 8466 jobs; Recorded GitHub CI, not an independent local programme rebuild. Historical ledger anchors are retained separately.
-- Current frontier: Both formerly planned marginal adapters exist and are imported by the successful exact-head core build. They preserve explicit source, H# identity, IR and marginal-recursion assumptions. hRpoly and physical uniform estimates remain open. The old geometric and later roadmap plans have not been globally reconciled and must not be proposed from this snapshot.
-- Next commit: **Audit one physical source obligation after reconciling historical plans** (risk: medium).
-- Preferred physical follow-up: Audit one concrete physical source obligation and its volume/cutoff quantifiers; do not reimplement the existing marginal adapters.
+- Inspected HEAD: `c454346d873385e3a03e38e0f85f4f1439a032c7` (Merge PR100: all-cochain flat Hodge identity and concrete weighted repair comparison)
+- Core: 8466 jobs; Historical successful8466-job core/oracle record at a9937ee1; current c454 HEAD selected-source inspection and source-reported focal Hodge checks only; current core CI still in progress at observation, not independently replayed. Historical ledger anchors are retained separately.
+- Current frontier: New current-head all-cochain flat Hodge and constructed weighted-repair comparisons exist; selected proof bodies read and reported focal source hashes matched, not a new independent kernel replay. The physical RawM3 rooted Hsharp identity and profile remain carried fields at fixed N,L. Uniformity over arbitrary RG truncation nsc does not supply uniformity over physical volume. Old successful core/oracle evidence stays anchored at a993, and current c454 core CI was still pending at observation. No hRpoly or physical source hypothesis was discharged.
+- Next commit: **Resolve the actual physical remainder/profile after the completed binder audit** (risk: medium).
+- Preferred physical follow-up: Binder audit1400 is complete; do not repeat it or the flat-Hodge construction. Identify the actual physical Rsc and derive its rooted Hsharp identity or physical profile with uniform final amplitude/rate over the declared family. Another adapter or manufactured scalar sequence does not discharge the source obligation.
 
 ## Declarations with recorded verification anchors
 
@@ -27,7 +27,7 @@
 
 **Files:** `HYPOTHESIS_FRONTIER.md`, `YangMills/RG/PhysicalGaugeCMP116RawM3.lean`
 
-**Conclusion:** Produce a source-to-binder audit for one concrete physical remainder identity or uniform estimate, with exact quantifier order and a falsifier. Reconcile each old proposed name before any implementation; no new adapter or theorem is asserted.
+**Conclusion:** Audit1400 is complete: the new flat Hodge/weighted comparison does not discharge RawM3 rooted-Hsharp identity or profile fields, and fixed-volume binders do not provide uniform physical constants. Next progress needs an actual physical remainder identity or uniform estimate with declared volume/cutoff dependencies. No new wrapper, repeated binder audit or formal result is proposed.
 
 **Still conditional:** all unproved physical source estimates, hRpoly, continuum limit and reconstruction.
 

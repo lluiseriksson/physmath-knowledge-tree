@@ -20,7 +20,11 @@ test('verified and planned declarations cannot be confused', () => {
   assert.ok(decls.some(x => x.name.endsWith('lattice_mass_gap_of_cmp116RawSource_hsharp_geometric') && x.status === 'historical-unreconciled' && !x.verified_at));
   const state = read(base + 'data/repository-state.json');
   const record = read(base + 'data/verification-2026-10-30.json');
-  assert.equal(record.current_ci.head, state.snapshot.head);
+  const observation = read(base + 'data/verification-2026-10-30-hodge1400.json');
+  assert.equal(record.current_ci.head, observation.baseline_core_head);
+  assert.equal(observation.head, state.snapshot.head);
+  assert.equal(observation.current_core_ci.head, observation.head);
+  assert.notEqual(observation.baseline_core_head, observation.head);
   for (const source of record.declarations) {
     const declaration = decls.find(x => x.name === source.name);
     assert.equal(declaration.verified_at, record.current_ci.head);

@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0.0",
-  "base_head": "a9937ee1dd5978bf372174500a2395cf259eb395",
+  "base_head": "c454346d873385e3a03e38e0f85f4f1439a032c7",
   "commits": [
     {
       "id": "commit.source-frontier-reconciliation",
       "order": 1,
-      "title": "Audit one physical source obligation after reconciling historical plans",
+      "title": "Resolve the actual physical remainder/profile after the completed binder audit",
       "risk": "medium",
       "status": "next",
       "files": [
@@ -21,7 +21,7 @@
         "obl.hsharp-remainder-identity",
         "obl.uniform-constants"
       ],
-      "conclusion": "Produce a source-to-binder audit for one concrete physical remainder identity or uniform estimate, with exact quantifier order and a falsifier. Reconcile each old proposed name before any implementation; no new adapter or theorem is asserted.",
+      "conclusion": "Audit1400 is complete: the new flat Hodge/weighted comparison does not discharge RawM3 rooted-Hsharp identity or profile fields, and fixed-volume binders do not provide uniform physical constants. Next progress needs an actual physical remainder identity or uniform estimate with declared volume/cutoff dependencies. No new wrapper, repeated binder audit or formal result is proposed.",
       "verification": [
         "resolve current HEAD and planned names",
         "inspect the exact source statement and consumer",

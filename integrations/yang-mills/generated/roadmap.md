@@ -1,11 +1,11 @@
 # Yang–Mills commit roadmap
 
-## 1. Audit one physical source obligation after reconciling historical plans
+## 1. Resolve the actual physical remainder/profile after the completed binder audit
 
 - Status: next
 - Risk: medium
 - Files: `HYPOTHESIS_FRONTIER.md`, `YangMills/RG/PhysicalGaugeCMP116RawM3.lean`
-- Conclusion: Produce a source-to-binder audit for one concrete physical remainder identity or uniform estimate, with exact quantifier order and a falsifier. Reconcile each old proposed name before any implementation; no new adapter or theorem is asserted.
+- Conclusion: Audit1400 is complete: the new flat Hodge/weighted comparison does not discharge RawM3 rooted-Hsharp identity or profile fields, and fixed-volume binders do not provide uniform physical constants. Next progress needs an actual physical remainder identity or uniform estimate with declared volume/cutoff dependencies. No new wrapper, repeated binder audit or formal result is proposed.
 - Remains conditional: all unproved physical source estimates, hRpoly, continuum limit and reconstruction
 - Verification:
   - `resolve current HEAD and planned names`

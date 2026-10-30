@@ -1,0 +1,116 @@
+{
+  "head": "c454346d873385e3a03e38e0f85f4f1439a032c7",
+  "reported_reproduction_source": "dfd49d0b0730a4d36f58a4cbb7a17d6a41fb60bc",
+  "matching_hodge_sources_at_both_refs": true,
+  "artifacts": [
+    {
+      "path": "YangMills/RG/ComponentwiseFlatGradient.lean",
+      "ref": "c454346d873385e3a03e38e0f85f4f1439a032c7",
+      "url": "https://raw.githubusercontent.com/lluiseriksson/THE-ERIKSSON-PROGRAMME/c454346d873385e3a03e38e0f85f4f1439a032c7/YangMills/RG/ComponentwiseFlatGradient.lean",
+      "bytes": 5207,
+      "sha256": "1abddbf5c9132b121ad1c5cc4bc91976dfa0c356c82afc89258090554acee870",
+      "at": "2026-10-30T13:19:38.959Z",
+      "reading_status": "constructed definitions and selected proof bodies read"
+    },
+    {
+      "path": "YangMills/RG/ComponentwiseFlatHodge.lean",
+      "ref": "c454346d873385e3a03e38e0f85f4f1439a032c7",
+      "url": "https://raw.githubusercontent.com/lluiseriksson/THE-ERIKSSON-PROGRAMME/c454346d873385e3a03e38e0f85f4f1439a032c7/YangMills/RG/ComponentwiseFlatHodge.lean",
+      "bytes": 6815,
+      "sha256": "06e66ecfde85f9f3d5a143e3ed0470869fade1bd6461032a7d1a255f78e27da3",
+      "at": "2026-10-30T13:19:38.952Z",
+      "reading_status": "statement_and_all_proof_bodies_read; not independently kernel-replayed"
+    },
+    {
+      "path": "YangMills/RG/ComponentwiseFlatHodgeOracle.lean",
+      "ref": "c454346d873385e3a03e38e0f85f4f1439a032c7",
+      "url": "https://raw.githubusercontent.com/lluiseriksson/THE-ERIKSSON-PROGRAMME/c454346d873385e3a03e38e0f85f4f1439a032c7/YangMills/RG/ComponentwiseFlatHodgeOracle.lean",
+      "bytes": 287,
+      "sha256": "c473985dcdac31f560f5c8208baad8faa539a11a2624d5222712a850b2f19bf7",
+      "at": "2026-10-30T13:19:38.962Z",
+      "reading_status": "exact-name oracle statements read; raw execution logs not retrieved"
+    },
+    {
+      "path": "YangMills/RG/PhysicalGaugeCMP116RawM3.lean",
+      "ref": "c454346d873385e3a03e38e0f85f4f1439a032c7",
+      "url": "https://raw.githubusercontent.com/lluiseriksson/THE-ERIKSSON-PROGRAMME/c454346d873385e3a03e38e0f85f4f1439a032c7/YangMills/RG/PhysicalGaugeCMP116RawM3.lean",
+      "bytes": 20222,
+      "sha256": "71280509c3974b1cdab5353a231afcdcc8de752a8302aa71b22f37d27a95e1d9",
+      "at": "2026-10-30T13:19:38.959Z",
+      "reading_status": "selected binders, frontier fields and final projection body read"
+    },
+    {
+      "path": "docs/COMPONENTWISE-GRADIENT-FRONTIER-20261030.md",
+      "ref": "c454346d873385e3a03e38e0f85f4f1439a032c7",
+      "url": "https://raw.githubusercontent.com/lluiseriksson/THE-ERIKSSON-PROGRAMME/c454346d873385e3a03e38e0f85f4f1439a032c7/docs/COMPONENTWISE-GRADIENT-FRONTIER-20261030.md",
+      "bytes": 11322,
+      "sha256": "613af2f478ef0b350ae2a019c3b77628c6806b3a6f6134935983cdcce30fcfcc",
+      "at": "2026-10-30T13:19:39.288Z",
+      "reading_status": "source author mathematical note read; asymptotic claims remain analytic"
+    },
+    {
+      "path": "reproducibility/component-gradient-20261030/global-hodge-reproduction.json",
+      "ref": "c454346d873385e3a03e38e0f85f4f1439a032c7",
+      "url": "https://raw.githubusercontent.com/lluiseriksson/THE-ERIKSSON-PROGRAMME/c454346d873385e3a03e38e0f85f4f1439a032c7/reproducibility/component-gradient-20261030/global-hodge-reproduction.json",
+      "bytes": 2211,
+      "sha256": "eb4fd9ee0734f0884cfb23091592d85dbb6d4633120216a205fc6822d1819b43",
+      "at": "2026-10-30T13:19:39.238Z",
+      "reading_status": "source-reported focal metadata read; no raw ZIP/oracle/olean verification"
+    },
+    {
+      "path": "reproducibility/component-gradient-20261030/global-hodge-source-hashes.json",
+      "ref": "c454346d873385e3a03e38e0f85f4f1439a032c7",
+      "url": "https://raw.githubusercontent.com/lluiseriksson/THE-ERIKSSON-PROGRAMME/c454346d873385e3a03e38e0f85f4f1439a032c7/reproducibility/component-gradient-20261030/global-hodge-source-hashes.json",
+      "bytes": 201,
+      "sha256": "1c62e2ee7bf9f95827c2173e0c6620ef49d2bc5dbedb33d8989456f7f6b3eb55",
+      "at": "2026-10-30T13:19:39.234Z",
+      "reading_status": "source hash metadata read and matched to fetched files at two pinned commits"
+    },
+    {
+      "path": "lake-manifest.json",
+      "ref": "c454346d873385e3a03e38e0f85f4f1439a032c7",
+      "url": "https://raw.githubusercontent.com/lluiseriksson/THE-ERIKSSON-PROGRAMME/c454346d873385e3a03e38e0f85f4f1439a032c7/lake-manifest.json",
+      "bytes": 3141,
+      "sha256": "1c72b465ab37a0418de6f82573c18bb0e79f9e0165e901fd9da0ddabecdb2611",
+      "at": "2026-10-30T13:19:39.224Z",
+      "reading_status": "all nine upstream commit identities checked; no installed source checkout audit"
+    },
+    {
+      "path": "lean-toolchain",
+      "ref": "c454346d873385e3a03e38e0f85f4f1439a032c7",
+      "url": "https://raw.githubusercontent.com/lluiseriksson/THE-ERIKSSON-PROGRAMME/c454346d873385e3a03e38e0f85f4f1439a032c7/lean-toolchain",
+      "bytes": 29,
+      "sha256": "dc6d65016fad3123d44bf17b5bf0598286284ab16ba75d5c17eb22ed11f47361",
+      "at": "2026-10-30T13:19:39.538Z",
+      "reading_status": "exact toolchain pin read"
+    },
+    {
+      "path": "YangMillsCore.lean",
+      "ref": "c454346d873385e3a03e38e0f85f4f1439a032c7",
+      "url": "https://raw.githubusercontent.com/lluiseriksson/THE-ERIKSSON-PROGRAMME/c454346d873385e3a03e38e0f85f4f1439a032c7/YangMillsCore.lean",
+      "bytes": 56887,
+      "sha256": "8571a1f92c4779ea2c5a33c2cd27c084ce6c39333952b9230cd26036703afa31",
+      "at": "2026-10-30T13:19:39.576Z",
+      "reading_status": "direct import list inspected; not an independent kernel build"
+    },
+    {
+      "path": "YangMills/RG/ComponentwiseFlatHodge.lean",
+      "ref": "dfd49d0b0730a4d36f58a4cbb7a17d6a41fb60bc",
+      "url": "https://raw.githubusercontent.com/lluiseriksson/THE-ERIKSSON-PROGRAMME/dfd49d0b0730a4d36f58a4cbb7a17d6a41fb60bc/YangMills/RG/ComponentwiseFlatHodge.lean",
+      "bytes": 6815,
+      "sha256": "06e66ecfde85f9f3d5a143e3ed0470869fade1bd6461032a7d1a255f78e27da3",
+      "at": "2026-10-30T13:19:39.555Z",
+      "reading_status": "bytes matched to current source and declared focal hash; no separate execution"
+    },
+    {
+      "path": "YangMills/RG/ComponentwiseFlatHodgeOracle.lean",
+      "ref": "dfd49d0b0730a4d36f58a4cbb7a17d6a41fb60bc",
+      "url": "https://raw.githubusercontent.com/lluiseriksson/THE-ERIKSSON-PROGRAMME/dfd49d0b0730a4d36f58a4cbb7a17d6a41fb60bc/YangMills/RG/ComponentwiseFlatHodgeOracle.lean",
+      "bytes": 287,
+      "sha256": "c473985dcdac31f560f5c8208baad8faa539a11a2624d5222712a850b2f19bf7",
+      "at": "2026-10-30T13:19:39.556Z",
+      "reading_status": "bytes matched to current source and declared focal hash; no separate execution"
+    }
+  ],
+  "scope": "Public primary source URLs and hashes only. Selected own source snapshots are conserved privately; no source copies or raw-run archives are included in this public packet. No source code executed."
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "name": "mathlib",
+    "required": "07642720480157414db592fa85b626dafb71355b",
+    "observed": "07642720480157414db592fa85b626dafb71355b",
+    "matches": true,
+    "url": "https://api.github.com/repos/leanprover-community/mathlib4/git/commits/07642720480157414db592fa85b626dafb71355b",
+    "scope": "Pinned upstream commit identity exists; not a kernel rebuild or installed dependency check"
+  },
+  {
+    "name": "plausible",
+    "required": "e84e3e16aea6b72cc5d311ca1bb25caad417e162",
+    "observed": "e84e3e16aea6b72cc5d311ca1bb25caad417e162",
+    "matches": true,
+    "url": "https://api.github.com/repos/leanprover-community/plausible/git/commits/e84e3e16aea6b72cc5d311ca1bb25caad417e162",
+    "scope": "Pinned upstream commit identity exists; not a kernel rebuild or installed dependency check"
+  },
+  {
+    "name": "LeanSearchClient",
+    "required": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+    "observed": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+    "matches": true,
+    "url": "https://api.github.com/repos/leanprover-community/LeanSearchClient/git/commits/c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+    "scope": "Pinned upstream commit identity exists; not a kernel rebuild or installed dependency check"
+  },
+  {
+    "name": "importGraph",
+    "required": "f207d9fcf0cef00ba79962a33ef156061914d9c7",
+    "observed": "f207d9fcf0cef00ba79962a33ef156061914d9c7",
+    "matches": true,
+    "url": "https://api.github.com/repos/leanprover-community/import-graph/git/commits/f207d9fcf0cef00ba79962a33ef156061914d9c7",
+    "scope": "Pinned upstream commit identity exists; not a kernel rebuild or installed dependency check"
+  },
+  {
+    "name": "proofwidgets",
+    "required": "2e58165a9dcdca9837b666528f974299ee1a51cc",
+    "observed": "2e58165a9dcdca9837b666528f974299ee1a51cc",
+    "matches": true,
+    "url": "https://api.github.com/repos/leanprover-community/ProofWidgets4/git/commits/2e58165a9dcdca9837b666528f974299ee1a51cc",
+    "scope": "Pinned upstream commit identity exists; not a kernel rebuild or installed dependency check"
+  },
+  {
+    "name": "aesop",
+    "required": "c3361708f266893de5d1769192b60d4b1831f2bb",
+    "observed": "c3361708f266893de5d1769192b60d4b1831f2bb",
+    "matches": true,
+    "url": "https://api.github.com/repos/leanprover-community/aesop/git/commits/c3361708f266893de5d1769192b60d4b1831f2bb",
+    "scope": "Pinned upstream commit identity exists; not a kernel rebuild or installed dependency check"
+  },
+  {
+    "name": "Qq",
+    "required": "221e8088e3a066b8676dc471ff10638cf1c10835",
+    "observed": "221e8088e3a066b8676dc471ff10638cf1c10835",
+    "matches": true,
+    "url": "https://api.github.com/repos/leanprover-community/quote4/git/commits/221e8088e3a066b8676dc471ff10638cf1c10835",
+    "scope": "Pinned upstream commit identity exists; not a kernel rebuild or installed dependency check"
+  },
+  {
+    "name": "batteries",
+    "required": "87f6314ff2cc922489cd73cd0fbc2252f39aa153",
+    "observed": "87f6314ff2cc922489cd73cd0fbc2252f39aa153",
+    "matches": true,
+    "url": "https://api.github.com/repos/leanprover-community/batteries/git/commits/87f6314ff2cc922489cd73cd0fbc2252f39aa153",
+    "scope": "Pinned upstream commit identity exists; not a kernel rebuild or installed dependency check"
+  },
+  {
+    "name": "Cli",
+    "required": "3de531c1135f5e3a01f3ac04830996fda476b28e",
+    "observed": "3de531c1135f5e3a01f3ac04830996fda476b28e",
+    "matches": true,
+    "url": "https://api.github.com/repos/leanprover/lean4-cli/git/commits/3de531c1135f5e3a01f3ac04830996fda476b28e",
+    "scope": "Pinned upstream commit identity exists; not a kernel rebuild or installed dependency check"
+  }
+]
