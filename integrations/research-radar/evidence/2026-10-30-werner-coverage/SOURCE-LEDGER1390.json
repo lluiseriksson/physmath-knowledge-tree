@@ -1,0 +1,31 @@
+{
+  "observed_on": "2026-10-30",
+  "kind": "preprint_not_peer_reviewed",
+  "first_posted_author_page": "2026-10-23",
+  "version_record": 23718035,
+  "version_created": "2026-10-28T16:12:31.552716+00:00",
+  "doi": "10.5281/zenodo.23718035",
+  "concept_doi": "10.5281/zenodo.23604343",
+  "author_page": "https://www.mefyi.com/papers/werner-states-copies/",
+  "main_pdf": {
+    "bytes": 261776,
+    "sha256": "07acff7153eb72f9ea80446dfb936eb40a93b0dcd82cf48d04813def9b392438",
+    "reading": "Statements1-3; selected proof framework4-7; AppendixA.1 on14-15. Pages2-3 visually inspected. Not full proof audit."
+  },
+  "supplement": {
+    "bytes": 115041,
+    "pages": 7,
+    "sha256": "0c20f7a0319c2a23240775386ff2c826a3abdeb100e6a349c10f471b247873c8",
+    "reading": "Pages1-3 and final bibliography page7; intervening sections not read."
+  },
+  "packages_acquired": false,
+  "certificate_run": false,
+  "external_lean_pins_verified": false,
+  "new_formal_result": false,
+  "source_bodies_retained": false,
+  "access_limits": "Author PDF link timed out/returned403 previously; normal public immutable Zenodo file links used. Text extraction truncation corrected with bounded normalized selected pages, not a mathematical replay.",
+  "earlier_lead": {
+    "doi": "10.5281/zenodo.23134454",
+    "reading": "Record/search snippet only; not abstract or theorem read; no package acquired."
+  }
+}

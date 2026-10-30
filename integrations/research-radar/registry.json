@@ -1658,6 +1658,23 @@
       "anchors": [
         "domain.quantum_information_theory"
       ]
+    },
+    {
+      "id": "tomar-werner-three-four-five-23718035",
+      "title": "Undistillability of Werner states from three, four and five copies",
+      "url": "https://zenodo.org/records/23718035",
+      "kind": "preprint",
+      "published_on": "2026-10-28",
+      "observed_on": "2026-10-30",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Author claims three-copy Werner undistillability in every dimension d>=3 at alpha>=-1/2. First posted23October; this pinned version is28October, newly indexed30October.",
+      "limits": "Selected statements, proof framework, AppendixA.1 and supplementS1 read. No full proof, certificate execution or external Lean dependency audit. Claimed matrix result conditionally covers physical rank-two subcases, not our stronger signed operator PSD. Not peer reviewed.",
+      "reuse": "Bibliographic metadata and own scope analysis only; no source bodies or certificate packages redistributed.",
+      "anchors": [
+        "domain.quantum_information_theory",
+        "domain.algebra"
+      ]
     }
   ],
   "candidates": [
@@ -1874,7 +1891,8 @@
       "confidence": "speculative",
       "source_ids": [
         "cleve-gottesman-lo-qss-1999",
-        "wu-zou-werner-sectors-2026"
+        "wu-zou-werner-sectors-2026",
+        "tomar-werner-three-four-five-23718035"
       ],
       "node_ids": [
         "domain.quantum_information_theory",
@@ -1882,12 +1900,12 @@
       ],
       "dictionary": "Logical pure qutrit -> known three-share encoding -> a physical support anchor and its auxiliary co-Choi comparison.",
       "preserved": "Original3qutritslots,ordinarypartialtraces,rank-twooperatorcondition,complexconjugationsandtheattributedSchurmechanism. The pure logical domain and full729-dimensional INPUT/OUTPUT space are retained; only an irrelevant global phase is quotiented, not arbitrary local filters or mixed-state inverse formulas.",
-      "lost_or_unproved": "No uniform PSD certificate over arbitrary logical amplitudes; the own1317-1318 nine-sector/positive-denominator construction is a reduction, not a proof of its signs, exact kernel or uniform gap. Known21floating controls and the single exact410 member are not universal proofs. No extension under arbitrary local filters, all GHZ dimensions or all support planes. The inverse-error budget1377does not make its sufficient full-space margin feasible:1378refutes that target only, not the original QSS inequality. No projected all-L certificate is supplied.",
+      "lost_or_unproved": "No uniform PSD certificate over arbitrary logical amplitudes; the own1317-1318 nine-sector/positive-denominator construction is a reduction, not a proof of its signs, exact kernel or uniform gap. Known21floating controls and the single exact410 member are not universal proofs. No extension under arbitrary local filters, all GHZ dimensions or all support planes. The inverse-error budget1377does not make its sufficient full-space margin feasible:1378refutes that target only, not the original QSS inequality. No projected all-L certificate is supplied. A newly indexed pinned Tomar preprint claims the broader physical rank-two q3 conclusion. Its certificates are not audited here. Physical coverage does not establish the stronger operator PSD, exact kernel or quotient gap.",
       "hypothesis_to_remove": "The fixed GHZ basis-vector anchor, replacing it by an arbitrary unit logical state encoded in the known three-qutrit code.",
       "falsifier": "An exact normalized encoded anchor whose auxiliary A+B or A-B has a negative direction, a failed conjugation/norm claim, or an earlier theorem already giving this full comparison.",
-      "next_finite_task": "Generic numerical probing and dense SOS are parked. Own unreviewed1380index algebra supplies all-complex BJ=AJ kernel inclusion with exact3coefficient/9cross-coefficient calibration; it is not exact kernel equality or a sign proof. A kernel-preserving degree7m4target now exists but its uniform PSD remains unproved; the single known-member1381floating check is not a certificate. Resume only with a concrete all-L Gamma-aware factorization/structural ansatz or exact falsifier, retaining all logical coherences, Schur couplings, support and degree/error budgets. Do not add anchors/seeds/degrees, repeat old audits or assume the missing PSD estimate.",
+      "next_finite_task": "First resolve the physical-coverage gate against Tomar version23718035 and its exact certificate provenance; source proof and external formal pins remain unaudited. Do not resume a stronger signed-PSD campaign merely to recover a conditionally covered physical consequence. Any further operator target needs its own payoff and proved dictionary. Existing Gamma-aware structural-factorization requirement and parking of anchors/seeds/degrees/denseSOS remain; no review restart.",
       "paper_score": null,
-      "review_packet": "Existing410 closes only one exact member; existing415 proves the H map on all nine complex logical matrix units and its pure-unit inverse/spectrum. Both audits are already closed; the full415 report/proof/verdict and selected410 proof were reread1312, not commissioned again.415 manifest9e5ecf95c490fbf6e94d3070d52f02a26125305458c51dd13cb42c2a357b721a; report SHA256 fc40831f57f1105b7712704cdac72f6191651a0cb3e0bb117e87c941b78b5d9f. Requested Astra xhigh; context410 reused, filesystem shared, effective runtime/effort and independence unattested. No score. The full signed B comparison, its exact kernel and uniform gap remain unproved; H inverse order cannot be transported through partial transpose. All original objections and bibliographic date erratum retained; no fixed-anchor numerical grade is inherited. Consolidated evidence: integrations/research-radar/evidence/2026-10-29-pending-scope-consolidation/INTEGRATION1313.txt (existing unscored415 report/proof/verdict and selected1272 source scope). Own1316-1318 follow-up is not a model review: product-reference scope retained; all3complex-linear M coefficient intertwiners and complete sector frames checked exactly; normalization/conjugation checked against old410/415 controls and all archived410 B entries. New analytical uniform-sector/polynomial reduction remains unreviewed, no positivity/kernel/gap or novelty claim. No old grade transfers. Consolidated own1316-1318 evidence: integrations/research-radar/evidence/2026-10-29-qss-uniform-sector/INTEGRATION1319.txt. The initial parse failure and same-implementation replay limits remain disclosed; public portable digest calibration differs from private archival direct-entry comparison. No computational campaign Research Capsule or new assessment is claimed. Own1377budget and1378exact equality-ray obstruction are consolidated in integrations/research-radar/evidence/2026-10-30-qss-kernel-gate/README.md. No new model review, grade, formal result or confidence promotion. The portable exact control is a same-producer path/output adaptation, not a repeated optimizer or independent implementation. Continuation1380/1381: integrations/research-radar/evidence/2026-10-30-qss-kernel-gate/CLOSURE1382.md. All-complex kernel inclusion is an unreviewed author index derivation, coefficient-calibrated not model-audited. One predeclared known-member projected-target diagnostic found no negative witness; its floating values are not interval/PSD evidence. Generic numeric/dense-SOS routes are parked; no new review, grade, paper or formal confidence."
+      "review_packet": "Existing410 closes only one exact member; existing415 proves the H map on all nine complex logical matrix units and its pure-unit inverse/spectrum. Both audits are already closed; the full415 report/proof/verdict and selected410 proof were reread1312, not commissioned again.415 manifest9e5ecf95c490fbf6e94d3070d52f02a26125305458c51dd13cb42c2a357b721a; report SHA256 fc40831f57f1105b7712704cdac72f6191651a0cb3e0bb117e87c941b78b5d9f. Requested Astra xhigh; context410 reused, filesystem shared, effective runtime/effort and independence unattested. No score. The full signed B comparison, its exact kernel and uniform gap remain unproved; H inverse order cannot be transported through partial transpose. All original objections and bibliographic date erratum retained; no fixed-anchor numerical grade is inherited. Consolidated evidence: integrations/research-radar/evidence/2026-10-29-pending-scope-consolidation/INTEGRATION1313.txt (existing unscored415 report/proof/verdict and selected1272 source scope). Own1316-1318 follow-up is not a model review: product-reference scope retained; all3complex-linear M coefficient intertwiners and complete sector frames checked exactly; normalization/conjugation checked against old410/415 controls and all archived410 B entries. New analytical uniform-sector/polynomial reduction remains unreviewed, no positivity/kernel/gap or novelty claim. No old grade transfers. Consolidated own1316-1318 evidence: integrations/research-radar/evidence/2026-10-29-qss-uniform-sector/INTEGRATION1319.txt. The initial parse failure and same-implementation replay limits remain disclosed; public portable digest calibration differs from private archival direct-entry comparison. No computational campaign Research Capsule or new assessment is claimed. Own1377budget and1378exact equality-ray obstruction are consolidated in integrations/research-radar/evidence/2026-10-30-qss-kernel-gate/README.md. No new model review, grade, formal result or confidence promotion. The portable exact control is a same-producer path/output adaptation, not a repeated optimizer or independent implementation. Continuation1380/1381: integrations/research-radar/evidence/2026-10-30-qss-kernel-gate/CLOSURE1382.md. All-complex kernel inclusion is an unreviewed author index derivation, coefficient-calibrated not model-audited. One predeclared known-member projected-target diagnostic found no negative witness; its floating values are not interval/PSD evidence. Generic numeric/dense-SOS routes are parked; no new review, grade, paper or formal confidence. Source-coverage gate1390: integrations/research-radar/evidence/2026-10-30-werner-coverage/README.md. This is own unreviewed conditional scope analysis and selected primary reading, not a new model assessment or source-proof certification."
     },
     {
       "id": "optical-explicit-learning-gap",
@@ -2378,6 +2396,10 @@
     "followup1369": {
       "evidence": "integrations/research-radar/evidence/2026-10-30-uniform-qubit1369/MANIFEST1369.json",
       "scope": "Same candidate closure, historical2013source added and one actual full unscored conditional report preserved; no newpaper/grade/corpus/graph confidence change. Directed12primaryinventory/9formalpinmatches/4HEADmetadata."
+    },
+    "followup1390": {
+      "evidence": "integrations/research-radar/evidence/2026-10-30-werner-coverage/SOURCE-LEDGER1390.json",
+      "scope": "One28October version of a23October preprint newly indexed; physical-coverage gate precedes further QSS work. Selected reading only, no certificate/Lean audit, score, new paper or canonical graph edit. Directed12primary inventory,9localformalpinmatches,4HEADmetadata."
     }
   }
 }
