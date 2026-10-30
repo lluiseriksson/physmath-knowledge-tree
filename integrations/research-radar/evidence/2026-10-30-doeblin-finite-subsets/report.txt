@@ -1,0 +1,174 @@
+INSPECCIÓN MATEMÁTICA DIRIGIDA DE ARGUMENT1386
+30 de octubre de 2026. Una sola inspección del componente suministrado.
+
+Conclusión
+
+La reparación finita es válida bajo las hipótesis que declara. Obtiene, para cada núcleo W y 0 < s = rho(W) <= t <= 1,
+
+  rho(WK) <= s G((p + 24 sigma I_U)/s)
+          <= t G((p + 24 sigma I_U)/t)
+          <= t G((p + 32 sigma I_U)/t).
+
+No necesita un supremo aleatorio sobre todo U, ni un evento medible de coincidencia de todas las coordenadas, ni que la restricción del acoplamiento global sea maximal. No he encontrado un defecto que invalide esos pasos en el ámbito declarado. Esta conclusión es una comprobación analítica, no una certificación formal ni una auditoría integral del artículo.
+
+La recuperación de una cota para la curva, que toma el supremo sobre una clase de núcleos W, exige mantener fijos p y un mismo sigma admisible para toda esa clase. El componente demuestra directamente la desigualdad por núcleo. Una mera afirmación de existencia de algún sigma que puede variar con W no produce una cota de clase con un sigma único. Esta precisión de cuantificadores se conserva como reserva de alcance; no es una refutación del teorema fuente.
+
+Entrada inmutable
+
+Archivo inspeccionado:
+C:/Trabajo/airr/2026-10-30_separability1386/ARGUMENT1386.md
+
+SHA-256:
+fbbc22c00efdafdbcd894ab45573f8a0bdc3defd634300b4465e6c26d00f7293
+
+La copia ARGUMENT1386.input.md conserva exactamente sus bytes. No se modifica la entrada ni el repositorio de investigación.
+
+1. Comprobación de las fuentes y alcance
+
+He contrastado Definition 1, Proposition 8 y su fórmula (34), la construcción (68), Theorem 1/(14), Proposition 2/(15), las definiciones (26)-(27) y los pasos geométricos pertinentes de Theorem 2. La fuente impone dominación común sigma-finita y densidades conjuntamente medibles; Proposition 8 formula incrementos centrados y una hipótesis adicional de medibilidad del supremo. El componente coincide con la primera condición y evita utilizar la segunda. [Lee, Lu, Makur y Singh, arXiv:2606.19859v1](https://arxiv.org/html/2606.19859v1).
+
+La alternativa para Dudley está efectivamente en Corollary 5.25: constante 12; Theorem 5.24 prueba primero el caso finito. Definition 5.20 fija la normalización de incrementos; Definition 5.5 y Remark 5.6 explican la convención de redes; Remark 5.26 permite truncar en el diámetro. La edición consultada lleva fecha 21 de diciembre de 2016, páginas impresas 120 y 132-134. [Ramon van Handel, APC 550](https://web.math.princeton.edu/~rvan/APC550.pdf).
+
+La lectura fue dirigida. No se certifican todas las demostraciones ni las referencias históricas de esos documentos. No se ha leído ni evaluado Wainwright, Theorem 5.22. La comprobación usa la alternativa primaria indicada; no le atribuye a Wainwright la constante 12.
+
+2. Dudley finito y constantes
+
+Para F no vacío y finito, cada Y_u = Z_u - E Z_u es integrable y tiene media cero. La condición de la entrada es exactamente la condición subgaussiana de los incrementos para la métrica sigma d, cuando sigma > 0. El proceso finito es separable tomando como conjunto separante F.
+
+Por tanto,
+
+  E max_F Y_u <= 12 sigma int_0^{diam(F)}
+                               sqrt(log N_int(F,d,epsilon)) d epsilon.
+
+N_int indica centros en el propio conjunto. Esta elección es admisible aunque las notas permitan centros externos cuando se dispone de un proceso en un espacio mayor. No se importa aquí el paso del teorema de Dudley que extiende el resultado a índices infinitos.
+
+La constante también se puede seguir en la demostración finita: a escala 2^{-k}, un incremento entre dos aproximaciones sucesivas tiene distancia <= 3·2^{-k}; hay como máximo N_k^2 incrementos. La desigualdad exponencial para el máximo da 6·2^{-k} sqrt(log N_k). Para un conjunto finito, el resto desaparece en una escala suficientemente pequeña. Convertir esa suma diádica en integral introduce como máximo otro factor 2. Todo esto emplea logaritmos naturales. No se necesita que los valores individuales Y_u, sin restar una coordenada, tengan una cota subgaussiana de varianza uniforme.
+
+Para comparar las redes, se parte de una cobertura de U de radio epsilon/2 con centros en U. En cada bola que interseca F se escoge un punto de esa intersección. Cualquier punto de F cubierto por esa bola dista a lo sumo epsilon de su nuevo centro. Así,
+
+  N_int(F,d,epsilon) <= N_int(U,d,epsilon/2).
+
+El cambio r = epsilon/2 da
+
+  int_0^{diam(F)} sqrt(log N_int(F,d,epsilon)) d epsilon
+  <= 2 int_0^{diam(F)/2} sqrt(log N_int(U,d,r)) d r
+  <= 2 I_U.
+
+Además max_F Z_u <= max_F Y_u + max_F E Z_u <= max_F Y_u + p. Se obtiene C = p + 24 sigma I_U, uniformemente en F. La comparación final con 32 usa solamente 24 <= 32 y monotonía de G.
+
+Comprobación adversa conservada: para U = {-1,0,1}, F = {-1,1} y radio 1, las coberturas con centros internos dan N(U,1)=1 y N(F,1)=2. Por ello, sustituir el recentrado por N(F,epsilon)<=N(U,epsilon) no estaría justificado con la convención de la entrada. El factor 2 incluido sí resuelve esa dificultad.
+
+El caso F singleton da E max_F Y_u = 0. Si se permite sigma=0, los incrementos centrados son cero casi seguramente para cada par; una intersección finita basta para concluir el mismo resultado. No hace falta declarar sigma d como una métrica en ese extremo. La fuente trabaja con sigma>0.
+
+3. Rama común global y restricciones finitas
+
+Es suficiente una variable Bernoulli auxiliar I, con P(I=1)=alpha=tau(W), y la ley conjunta finita inducida por la construcción prescrita. Si nu es la submedida común de masa alpha, para 0<alpha<1 cada fila se escribe
+
+  W_u = nu + s R_u,  s=1-alpha,
+
+y la construcción mezcla una coordenada común con ley nu/alpha y las coordenadas residuales. Para cada F se puede realizar esta mezcla junto con I en un espacio finito ampliado. No se requiere que I sea recuperable como función de las coordenadas de la realización canónica. La ampliación conserva sus leyes finito-dimensionales, por lo que conserva la hipótesis sobre los incrementos.
+
+En I=1 todas las coordenadas de cualquier F coinciden. Esa propiedad, con la misma probabilidad alpha, es todo lo utilizado. No se condiciona Dudley a I=0 y no se afirma que las cotas subgaussianas sobrevivan a ese condicionamiento.
+
+La advertencia sobre maximalidad es necesaria. Ejemplo finito: tres filas sobre {0,1,2,3},
+
+  W_a = W_b = (1/2,1/4,1/4,0),
+  W_c       = (1/2,0,0,1/2).
+
+La componente común global tiene masa 1/2. Para F={a,b}, tau(W_F)=1. Sin embargo, la construcción con residuales independientes hace que a y b coincidan con probabilidad 1/2 + (1/2)(1/2)=3/4. La restricción no es maximal y la prueba del componente sigue siendo aplicable: utiliza el indicador de la rama común, no la probabilidad maximal de coincidencia de F.
+
+No he empleado la afirmación de que el evento de coincidencia de todas las coordenadas sea medible por ser U Polish. Tampoco he decidido aquí todas las cuestiones que pudiera plantear la definición de potencia extremal media en una realización no separable.
+
+4. Solapamiento finito y medibilidad
+
+Sean q_i(y) = E[k(y|X_{u_i})], las densidades de las filas de W_F K. La dominación de K y Tonelli dan esa representación. Las hipótesis deben entenderse con una versión no negativa conjuntamente medible de k, como en la fuente. La medibilidad separada, por sí sola, no es lo que se está usando.
+
+Para cada y,
+
+  E min_i k(y|X_{u_i}) <= min_i E k(y|X_{u_i}).
+
+La dirección es correcta: el mínimo aleatorio es menor o igual que cada coordenada antes de tomar esperanzas. Integrando,
+
+  tau(W_F K) = int min_i q_i d mu
+             >= E int min_i k(y|X_{u_i}) d mu.
+
+La fórmula finita puede comprobarse directamente: min_i q_i es la densidad de una submedida común; cualquier otra submedida común tiene densidad <= q_i casi en todas partes para cada i, y la intersección de las excepciones es finita. No hay un ínfimo puntual no numerable.
+
+Con L_F=1-int min_i k(y|X_{u_i}) d mu, resulta 0<=L_F<=1 y rho(W_F K)<=E L_F. L_F es medible, porque sólo se usan una tupla finita, mínimo finito e integración de una función no negativa conjuntamente medible. En I=1 se tiene L_F=0.
+
+5. Geometría, envolvente y Jensen
+
+Para una tupla determinista finita S={x_i}, el mismo solapamiento identifica L(S) con rho_S(K). Si Delta=diam(S)>0, la definición de radio y la constante gamma dan, para todo eta>0, un centro a_eta tal que
+
+  S está contenido en B(a_eta, gamma Delta + eta).
+
+Esto implica L(S)<=Theta_hat(gamma Delta+eta). Como el Banach de la fuente es no trivial, 1/2<=gamma<=1, y gamma Delta>0 es un punto interior del dominio de la envolvente. La concavidad finita asegura continuidad allí. Haciendo eta bajar a cero y usando Delta<=2 max_i ||x_i||,
+
+  L(S) <= Theta_hat(2 gamma max_i ||x_i||)
+        = G(max_i M(||x_i||)).
+
+La frase inicial de la entrada acerca de una “Chebyshev ball” no debe leerse como una afirmación de existencia de un centro óptimo en todo Banach. Su cláusula posterior con epsilon resuelve justamente ese punto. No se necesita seleccionar a_eta de forma medible: la desigualdad anterior es determinista y el resultado integrado depende sólo del máximo finito de costes.
+
+Si Delta=0, todas las filas de K de la tupla son iguales y L(S)=0 directamente, incluso si su coste es positivo. Así se evita tomar un límite de la envolvente en cero. En particular, no se presupone continuidad por la derecha en ese extremo. Una envolvente concava y no decreciente puede tener allí un salto.
+
+M, finita, convexa y estrictamente creciente en [0,infinito), con M(0)=0, es continua y no acotada; por tanto M^{-1} está definida en [0,infinito), es creciente y cóncava. La composición G tiene las propiedades asumidas. No se calcula un valor especial o una constante óptima de Jung.
+
+Poniendo R_F=max_F Z_u, para s>0,
+
+  E L_F = s E[L_F | I=0]
+       <= s E[G(R_F) | I=0]
+       <= s G(E[R_F | I=0])
+       <= s G(C/s).
+
+La última desigualdad usa s E[R_F|I=0] = E[R_F 1_{I=0}] <= E R_F <= C. La no negatividad de los costes es esencial y está presente. Jensen es legítimo: R_F es no negativo e integrable; G es acotada, medible y cóncava. Si la media condicionada es cero, R_F=0 casi seguramente bajo esa condición. Si es positiva, se trabaja en el interior. No se necesita continuidad de G en cero.
+
+6. Paso del conjunto finito al núcleo y perspectiva
+
+WK es un núcleo entre los espacios Polish pertinentes y está dominado por la misma mu: si mu(A)=0, K(A|x)=0 para todo x y (WK)(A|u)=0 para todo u. Por ello se cumplen los requisitos de la caracterización finita. Repeticiones en la lista de índices no cambian el mínimo y todos los subconjuntos finitos aparecen. En consecuencia,
+
+  tau(WK)=inf_{F finito no vacío} tau(W_F K),
+  rho(WK)=sup_{F finito no vacío} rho(W_F K).
+
+Una verificación adicional de esta identidad evita confundirla con una igualdad de supremos aleatorios. Sea b el ínfimo de las masas de los mínimos finitos de las densidades q_u. Se pueden escoger familias finitas con masas que se aproximan a b y unirlas de modo creciente, incluyendo un índice fijo u_0. Sus mínimos h_n decrecen, están dominados por q_{u_0} y tienen integrales que convergen a b. Su límite h tiene integral b. Para cualquier u fijo, añadir u a cada familia mantiene la integral del mínimo >=b; por convergencia dominada, int min(h,q_u)>=b=int h. Luego h<=q_u casi en todas partes para ese u, y h mu es una submedida común de masa b. Esto da tau(WK)>=b; la desigualdad opuesta es inmediata. Las excepciones pueden depender de u: no se toma su unión no numerable.
+
+Tomar el supremo de las cotas deterministas uniformes da rho(WK)<=sG(C/s). Para 0<s<=t,
+
+  C/t = (s/t)(C/s)+(1-s/t)0,
+  t G(C/t) >= s G(C/s)+(t-s)G(0) >= s G(C/s).
+
+El sentido de la perspectiva es, por tanto, correcto. No se necesita G(0)=0, sólo G(0)>=0. Este paso preserva la dependencia en s hasta haber extraído el factor correspondiente; no se pierde y luego se restaura sin prueba.
+
+7. Extremos y objeciones conservadas
+
+s=0: las filas de W son iguales y también sus salidas; rho(WK)=0. No se divide por s. t=0 con s<=t reduce a ese caso.
+
+p=0: para cada u fijo, E Z_u=0 y Z_u>=0, luego X_u=0 casi seguramente por la estricta monotonía de M. Todas las leyes W_u son delta_0; no se requiere una intersección de sucesos sobre todo U. C=0 implica p=0. U singleton y tuplas de diámetro cero son inmediatos.
+
+I_U infinito: no queda una cota finita de coste por esta ruta. La desigualdad rho(WK)<=rho(W)<=t sigue de transportar una submedida común por K. No se asigna sin definición un valor a G(infinito). El resultado sustantivo inspeccionado es el caso I_U finito.
+
+Reservas que permanecen:
+- La hipótesis de incrementos debe corresponder a la misma ley finito-dimensional prescrita por la rama común. No basta verificarla en un acoplamiento distinto.
+- La cota de una clase entera necesita parámetros uniformes, especialmente sigma.
+- La existencia de la componente común de masa tau(W), la realización de las leyes prescritas y los resultados generales de integración de núcleos se aceptan como ingredientes estándar/fuente; no se formalizaron desde axiomas.
+- No se ha auditado todo Theorem 2, Proposition 1, las referencias externas sobre medidas, Jung o envolventes, ni otras aplicaciones del artículo.
+- La advertencia clásica sobre procesos spike sigue siendo pertinente para supremos de trayectorias. No produce una refutación de esta cota de núcleos, que sólo depende de familias finitas y de sus leyes.
+
+Estas reservas no invalidan la reparación concreta bajo sus hipótesis. Sí impiden presentarla como certificación integral de todas las definiciones y pruebas originales.
+
+8. Capas de evidencia y límites de la inspección
+
+Hechos de fuente: los enunciados y fórmulas indicados en el apartado 1 fueron contrastados en los dos documentos primarios.
+Inferencia apoyada en el grafo: ninguna; no se utilizó proximidad ni contenido del grafo para justificar la conclusión.
+Hipótesis nueva: ninguna.
+Resultado formal verificado por máquina: ninguno. El resultado obtenido es una verificación analítica dirigida de las implicaciones del componente.
+
+Se mantuvo una sola entrada, una sola inspección y un solo veredicto. No se buscó una calificación, novedad, prioridad ni un manuscrito menor. No se contactó con autores, no se hicieron pagos, no se abrieron otros chats y no se modificó ESTADO ni el repositorio.
+
+La configuración solicitada fue GPT-6 Astra con razonamiento xhigh y contexto separado. Desde esta ejecución no dispongo de una atestación del modelo o del esfuerzo realmente resueltos. El nombre de la tarea no demuestra la identidad del modelo. Las herramientas declaran un filesystem compartido; no hay aislamiento físico verificado. No leí los informes de otras revisiones. Un mensaje del coordinador señaló localizadores de fuente y reiteró el alcance; eso está documentado en context.json, por lo que esta revisión no se presenta como ciega ni plenamente independiente.
+
+source_pins.json contiene URLs, fechas, tamaño y SHA-256 de los bytes HTTP consultados para fijar las fuentes, además del alcance leído. Los documentos completos sólo se procesaron transitoriamente en memoria para obtener sus hashes; no se retienen PDFs, HTML ni textos ajenos completos en el paquete. Las herramientas web pueden mantener su propia caché, que no controlo. Acceso público no equivale a autorización de corpus, entrenamiento o redistribución.
+
+Entrega duradera:
+D:/Proyectos/airr-investigacion/2026-10-30_separability1386-review
+
+El manifiesto vincula la entrada y los archivos producidos. La verificación de integridad de archivos es separada de la verificación matemática: los hashes no prueban un teorema.

@@ -1,0 +1,127 @@
+{
+  "schema_version": "1.0",
+  "inspection_id": "separability1386-directed-review-2026-10-30",
+  "task_path_observed": "/root/astra_separability1386_check",
+  "requested_configuration": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "xhigh",
+    "context": "separate",
+    "reviews": "one at a time",
+    "inspection_count": 1,
+    "restarts_to_improve_evaluation": false,
+    "source": "Coordinator NEW_TASK explicitly reports human authorization"
+  },
+  "observed_configuration": {
+    "role": "Codex subagent",
+    "runtime_self_description": "Developer instruction describes Codex as an agent based on GPT-6; this is not a resolved backend model identifier.",
+    "resolved_model_id": null,
+    "resolved_reasoning_effort": null,
+    "attestation_available": false,
+    "task_name_not_identity_evidence": true,
+    "effective_context_isolation_verified": false,
+    "prior_parent_discussion_visible": false,
+    "filesystem_shared": true,
+    "filesystem_isolation_verified": false,
+    "observation_basis": "Task delivery metadata and developer collaboration instructions; no model-resolution or process-isolation metadata tool was supplied or queried."
+  },
+  "independence": {
+    "claim": "Directed separate agent turn with constrained reading; not a blind, physically isolated, independently attested review.",
+    "input_argument_seen": true,
+    "other_reviews_or_chats_read": false,
+    "root_estado_read": false,
+    "additional_agents_spawned": false,
+    "inbound_coordinator_messages": [
+      {
+        "kind": "source_locator_and_scope",
+        "summary": "Identified source HTML lines 125-127 and Theorem 2 proof (241), reiterated finite-family scope, common branch, no Wainwright audit and no input edits."
+      },
+      {
+        "kind": "close_scope",
+        "summary": "Requested no expansion to a global source audit or novelty search and delivery with surviving objections."
+      }
+    ],
+    "same_filesystem_limitation": "Other agents can access the same directories. Read discipline and file hashes do not prove absence of shared-state influence.",
+    "evaluation_reset_or_resampling": false,
+    "mathematical_verdict_revised_to_seek_acceptance": false
+  },
+  "files_read": [
+    {
+      "path": "C:/Trabajo/airr/2026-10-30_separability1386/ARGUMENT1386.md",
+      "sha256": "fbbc22c00efdafdbcd894ab45573f8a0bdc3defd634300b4465e6c26d00f7293",
+      "purpose": "Only mathematical input evaluated"
+    },
+    {
+      "path": "D:/LEEME.md",
+      "sha256": "7ec14c1a7848b9228a4fa7f0bb6f85e53fb9ade4cbd11249fe8cb34a1e6c87a2",
+      "purpose": "Storage instructions"
+    },
+    {
+      "path": "C:/Trabajo/physmath-knowledge-tree/weyl-stability-20261024/AGENTS.md",
+      "sha256": "161421bc08fbca6651bd27fb1ca07b34a1bf5784b557aa2725d566dbe1c379c4",
+      "purpose": "Required research protocol"
+    },
+    {
+      "path": "C:/Trabajo/physmath-knowledge-tree/weyl-stability-20261024/graph/index.json",
+      "sha256": "78617d9f38de1b7af949226aabe8ff884a842a3e5f517a295711f71412cd981f",
+      "purpose": "Required canonical index only; no graph-derived mathematical inference"
+    },
+    {
+      "path": "C:/Trabajo/physmath-knowledge-tree/weyl-stability-20261024/integrations/frontier-math-corpus/generated/agent-context.md",
+      "sha256": "e9dc9ae9dbc258c4f2e3c9b5f8f265e6f5633f2c273dd9bc6da49e0f48a2337f",
+      "purpose": "Source-handling boundaries; no corpus created"
+    }
+  ],
+  "source_handling": {
+    "primary_urls_only": [
+      "https://arxiv.org/html/2606.19859v1",
+      "https://web.math.princeton.edu/~rvan/APC550.pdf"
+    ],
+    "read_scope": "Targeted statements/proof steps listed in source_pins.json; navigation tools also returned surrounding context.",
+    "local_source_fulltext_retained": false,
+    "full_http_entities_hashed_in_memory": true,
+    "external_tool_cache_controlled": false,
+    "corpus_created": false,
+    "training_ingestion_authorized_or_claimed": false,
+    "third_party_book_mirrors_used": false,
+    "wainwright_5_22_read": false
+  },
+  "method": {
+    "type": "One directed analytic mathematical inspection",
+    "numerical_campaign": false,
+    "formal_proof_checker": false,
+    "source_proofs_fully_audited": false,
+    "derived_checks": "Finite chaining and covers; finite overlap; Bernoulli branch; deterministic geometry; Jensen; finite-family identity; perspective and endpoints",
+    "adverse_examples": "Three-point cover example and nonmaximal finite restriction example retained",
+    "scope_changes": "None; metadata and artifact checks are not additional mathematical evaluations."
+  },
+  "technical_events": [
+    {
+      "event": "Initial source-pin Python command exited 1 with no diagnostic output after creating the output directory",
+      "resolution": "Repeated the HTTP hashing operation with explicit Python path and exception reporting; both sources returned HTTP 200 and metadata hashes. No evaluation restart."
+    },
+    {
+      "event": "A JSON-construction functions.exec call had a JavaScript property-name syntax error before execution",
+      "resolution": "Corrected the property name and wrote the same planned verdict. No additional mathematical inspection or input change."
+    }
+  ],
+  "artifacts": {
+    "live_work_directory": "C:/Trabajo/airr/2026-10-30_separability1386-review",
+    "durable_directory": "D:/Proyectos/airr-investigacion/2026-10-30_separability1386-review",
+    "input_snapshot": "ARGUMENT1386.input.md",
+    "archive_policy": "Copy exact regular files to a new directory on D, compare bytes and SHA-256, and remove only this task's temporary review directory on C after success.",
+    "input_original_remains_unchanged": true,
+    "repo_changes": false,
+    "estado_changes": false,
+    "author_contacts": false,
+    "payments": false
+  },
+  "evidence_layers": {
+    "sourced_fact": "Selected primary statements checked",
+    "graph_supported_inference": "none",
+    "new_hypothesis": "none",
+    "formal_result": "none",
+    "analytic_result": "Validity under the declared/source hypotheses"
+  },
+  "limits": "This metadata reports what was requested and what was observed. It does not attest the requested model identity, effective reasoning level, complete independence, full source correctness, novelty or machine-checked mathematics.",
+  "created_at_utc": "2026-10-30T08:23:09.031Z"
+}

@@ -1,0 +1,131 @@
+{
+  "schema_version": "1.0",
+  "purpose": "One directed mathematical inspection; metadata-only source pins, no corpus or training ingestion",
+  "sources": [
+    {
+      "source_id": "lee-lu-makur-singh-arxiv2606.19859v1",
+      "requested_url": "https://arxiv.org/html/2606.19859v1",
+      "resolved_url": "https://arxiv.org/html/2606.19859v1",
+      "retrieved_at_utc": "2026-10-30T08:12:19.236131+00:00",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "last_modified": "Mon, 24 Aug 2026 20:05:40 GMT",
+      "etag": "\"CO3ahJWIupYDEAE=\"",
+      "bytes": 3058576,
+      "sha256": "86935309c781c5afaf69f29606fe646e4d9de7363a584f0afda2ff551ee8376d",
+      "hash_scope": "HTTP response entity bytes in memory; no local source content retained",
+      "full_text_retained": false,
+      "title": "Doeblin Curves",
+      "authors": [
+        "Dongmin Lee",
+        "William Lu",
+        "Anuran Makur",
+        "Japneet Singh"
+      ],
+      "version": "arXiv:2606.19859v1",
+      "document_date_observed": "2026-06-18",
+      "inspection_scope": [
+        {
+          "locator": "I-C, equations (2), (7)-(11)",
+          "use": "Definitions and required common domination/joint density measurability"
+        },
+        {
+          "locator": "II introductory coupling discussion, (13); IV-A, (68)",
+          "use": "Finite-dimensional mixture and auxiliary common branch; no certification of an uncountable all-equal event"
+        },
+        {
+          "locator": "II-A, Theorem 1 (14), Proposition 2 (15); IV-A, selected proof steps (69)-(81), (95)-(104)",
+          "use": "Finite overlap and finite-family characterization"
+        },
+        {
+          "locator": "II-C, Definition 1 (23)-(24)",
+          "use": "Cost function and uniform average power; no general AE certification"
+        },
+        {
+          "locator": "II-D, (26)-(27), Proposition 8 (34), assumptions 1-3",
+          "use": "Target bound, centered increments, covering definition and geometry"
+        },
+        {
+          "locator": "IV-C, selected Theorem 2 proof steps (241), (251)-(264), definition of G immediately following (264)",
+          "use": "Cylinder context, deterministic tuple radius/diameter bound and concavity; no full proof audit"
+        },
+        {
+          "locator": "IV-C, Proposition 8 proof (315)-(324)",
+          "use": "Compare target and original entropy step"
+        },
+        {
+          "locator": "Appendix A, Lemma 9 statement and selected proof for parts 1-2",
+          "use": "Envelope endpoints and monotonicity; no audit of external convex-analysis references"
+        }
+      ],
+      "assumed_or_not_fully_audited": [
+        "Existence and general measure-theoretic dependencies of greatest common component",
+        "Full Proposition 1 and Theorem 2 proofs",
+        "External references for Radon-Nikodym kernels, coupling construction, Jung and envelope theory",
+        "Wainwright Theorem 5.22",
+        "Applications and remaining article"
+      ],
+      "license_evidence": {
+        "kind": "Badge observed in source HTML",
+        "locator": "Header license link",
+        "statement": "arXiv.org perpetual non-exclusive license",
+        "evidence_artifact_sha256": "86935309c781c5afaf69f29606fe646e4d9de7363a584f0afda2ff551ee8376d",
+        "scope": "Metadata only; does not authorize corpus, training or redistribution; linked generic license page not audited"
+      }
+    },
+    {
+      "source_id": "van-handel-apc550-2016-12-21",
+      "requested_url": "https://web.math.princeton.edu/~rvan/APC550.pdf",
+      "resolved_url": "https://web.math.princeton.edu/~rvan/APC550.pdf",
+      "retrieved_at_utc": "2026-10-30T08:12:25.318204+00:00",
+      "http_status": 200,
+      "content_type": "application/pdf",
+      "last_modified": "Wed, 20 Jun 2018 19:37:04 GMT",
+      "etag": "\"176740-56f17ec67bada\"",
+      "bytes": 1533760,
+      "sha256": "e347497e91d45294229faf440240c7e77b08988ca20f1e654efdeb47ec2661e6",
+      "hash_scope": "HTTP response entity bytes in memory; no local source content retained",
+      "full_text_retained": false,
+      "title": "Probability in High Dimension, APC 550 Lecture Notes",
+      "author": "Ramon van Handel",
+      "version": "2016-12-21",
+      "document_date_observed": "2016-12-21",
+      "inspection_scope": [
+        {
+          "locator": "Title page, PDF page index 0",
+          "use": "Edition date"
+        },
+        {
+          "locator": "Printed page 120; PDF page index 125; Definition 5.5 and Remark 5.6",
+          "use": "Covering/net conventions, including optional ambient centers"
+        },
+        {
+          "locator": "Printed page 132; PDF page index 137; Definitions 5.20 and 5.22",
+          "use": "Centered subgaussian increments and separability"
+        },
+        {
+          "locator": "Printed pages 133-134; PDF page indices 138-139; Theorem 5.24 finite proof, Corollary 5.25 and Remark 5.26",
+          "use": "Constant 12, finite chaining, sum-to-integral factor and diameter cutoff"
+        }
+      ],
+      "assumed_or_not_fully_audited": [
+        "Remaining lecture notes",
+        "General infinite-index extension not needed",
+        "Historical attribution and cited literature"
+      ],
+      "license_evidence": {
+        "kind": "No reuse license audited",
+        "evidence_artifact_sha256": "e347497e91d45294229faf440240c7e77b08988ca20f1e654efdeb47ec2661e6",
+        "scope": "Official author-hosted access used for targeted inspection only; no training or redistribution permission inferred"
+      }
+    }
+  ],
+  "retention": {
+    "retained": "URLs, dates, hashes, scope metadata and own analytic report only",
+    "external_fulltexts_retained_in_bundle": false,
+    "http_entity_hashing": "Transient in-memory retrieval, immediately discarded by local scripts",
+    "web_cache": "Not controlled by this inspection"
+  },
+  "view_hash_binding": "Web reading and independent byte-hashing requests used the same official URLs during this session. The web tool does not attest that its rendered snapshot is byte-identical to the separate HTTP entity hash. The hashes pin those exact retrieved entities, not a claimed immutable rendering.",
+  "retrieval_note": "HTTP Last-Modified and ETag are server metadata; document dates are separately observed title/header dates. No inference that these dates must coincide."
+}

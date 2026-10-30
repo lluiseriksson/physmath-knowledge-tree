@@ -1,0 +1,3 @@
+# Class-level guard for the finite-subset reconstruction
+
+The frozen ARGUMENT1386.md first establishes a bound for each fixed kernel W with its stated p,sigma and index metric. Taking a supremum over a class G yields one numerical curve bound only if those parameters (or uniform upper bounds for them, including the metric entropy integral) are common to every W in that class. A collection with merely a separate finite sigma_W for each W does not supply one finite uniform constant. This is an explicit guard on the class-level interpretation, not a new bound or a counterexample to the primary source. The fixed-kernel repair and original frozen input are preserved unchanged. No numerical grade, novelty or quantum transfer is asserted.
