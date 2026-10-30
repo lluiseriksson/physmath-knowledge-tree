@@ -1,0 +1,83 @@
+{
+  "producer": "Own root exact rational control, no independent review",
+  "anchor": "psi=(1,0,0), a=w0=|000>+|111>+|222>, v=a tensor a; this is the existing known member, not a new anchor search",
+  "M_input_sha256": "6545a2ea350b92892fc83ae6af2f426bd6dbff9fb5e039507d7b3b38511dc82b",
+  "A_construction": "Exact8swap-subset expansion; H=J*AJ unnormalized anchor, no numerical eigensolver",
+  "norm_a_squared": "3",
+  "norm_v_squared": "9",
+  "nonzero_Mstar_v": [
+    [
+      0,
+      "15/8"
+    ],
+    [
+      13,
+      "15/8"
+    ],
+    [
+      26,
+      "15/8"
+    ]
+  ],
+  "Ha_equals_Mstar_v": true,
+  "H_eigenvalue_on_u": "15/8",
+  "v_A_v": "45/8",
+  "v_Bm_v_all_m": "45/8",
+  "all_m_proof": "(I-8H/15)u=0 and p_m(H)u=8u/15 for every m>=0. Since v is a real product vector across the transposed cut, its expectation is invariant under Gamma. Thus v*((1-r_m)A-B_m)v=-(45/8)r_m<0 for EVERY m>=0.",
+  "display_controls": [
+    {
+      "m": 0,
+      "r_m": "1331/20",
+      "raw_quadratic": "-11979/32",
+      "unit_vector_quadratic": "-1331/32",
+      "sign": "strictly_negative"
+    },
+    {
+      "m": 1,
+      "r_m": "1331/100",
+      "raw_quadratic": "-11979/160",
+      "unit_vector_quadratic": "-1331/160",
+      "sign": "strictly_negative"
+    },
+    {
+      "m": 2,
+      "r_m": "1331/500",
+      "raw_quadratic": "-11979/800",
+      "unit_vector_quadratic": "-1331/800",
+      "sign": "strictly_negative"
+    },
+    {
+      "m": 3,
+      "r_m": "1331/2500",
+      "raw_quadratic": "-11979/4000",
+      "unit_vector_quadratic": "-1331/4000",
+      "sign": "strictly_negative"
+    },
+    {
+      "m": 4,
+      "r_m": "1331/12500",
+      "raw_quadratic": "-11979/20000",
+      "unit_vector_quadratic": "-1331/20000",
+      "sign": "strictly_negative"
+    },
+    {
+      "m": 5,
+      "r_m": "1331/62500",
+      "raw_quadratic": "-11979/100000",
+      "unit_vector_quadratic": "-1331/100000",
+      "sign": "strictly_negative"
+    },
+    {
+      "m": 6,
+      "r_m": "1331/312500",
+      "raw_quadratic": "-11979/500000",
+      "unit_vector_quadratic": "-1331/500000",
+      "sign": "strictly_negative"
+    }
+  ],
+  "refutes": "Only the proposed FULL-SPACE polynomial-margin sufficient target1377, all truncation degrees.",
+  "does_not_refute": "The original A\u00b1B signed comparison, the inverse approximation error bound, or the Gram identity. No universal positivity/gap result.",
+  "scientific_replays": "No old optimizer or1322campaign; one predeclared exact known-anchor diagnostic for a new method target.",
+  "new_review": false,
+  "new_grade": null
+}
