@@ -71,6 +71,27 @@ For the analogy, the two poles map to dominant regimes and the seed to a regener
 
 The remaining speculative application must test whether a separately calibrated Y signal improves reversal forecasts beyond the HISTORY of Z, forcing and noise with comparable model complexity and splits by experiment. Comparing Y with one instantaneous color sample is insufficient. Measurement selectivity and other states remain unresolved; prediction is distinct from controlled causal perturbation. Abandon the application if the incremental effect disappears or an appropriately controlled intervention contradicts the model in its valid domain. No experiment, data download, new manuscript review or score was performed here.
 
+## Hidden state need not mean new information beyond the complete output history
+
+This qualification uses the same model with positive KNOWN coefficients, exact continuous noiseless z(t)=Z(t), and derivatives through order3 available at an interior observation time. It is not about one instantaneous color sample, unknown parameters or sampled noisy signals.
+
+Our constructive calculation gives X=(z'+hz)/c and X'=(z''+hz')/c. If a-bX!=0, then
+
+    Y=(X'-cX+dX²)/(a-bX).
+
+The determinant of (Z,Z',Z'') with respect to (X,Y,Z) is c²(a-bX). Its vanishing at X=a/b does not by itself imply inability to identify the state. At that surface, if ad!=bc, X'=X(c-dX)!=0 and
+
+    X''=(z'''+hz'')/c,
+    Y=(c-2dX-X''/X')/b.
+
+The corresponding minor of (Z,Z',Z''') is ac²(ad-bc)/b. Thus, for known positive coefficients with ad!=bc, equal output derivatives through order3 determine the same state by this explicit case split. This pointwise algebraic identification is not inferred from a general local-rank criterion alone and asserts no numerical stability of the inverse.
+
+The exception ad=bc is retained: X'=(a/b-X)(bY+dX), so X=a/b is invariant. On that plane Z'=ca/b-hZ is independent of Y and Y'=-2aY+eZ. Different hiddenY states therefore have identical future Z. A normalized exact witness has all coefficients1, X=Z=1 and Y0=0or2, with Y(t)=1/2+(Y0-1/2)exp(-2t). Outside the plane the regular reconstruction still applies. The hidden difference on the plane cannot justify a forecast advantage for that same output.
+
+These [exact identities and exceptions](../evidence/2026-10-30-observer1363/README.md) exclude only the stronger ideal claim that an addedY sensor always supplies state information absent the entire exact Zhistory. They do not refute the practical noisy/sampled/unknown-parameter question. Small denominators and high-order differentiation can be severely ill conditioned; no robust margin, implemented observer or finite-resource advantage was established. A meaningful application must define its noise, sampling, bandwidth and model-uncertainty budget and compare matched baselines. The generic novelty route is parked rather than expanded into more classical-oscillator papers.
+
+Hermann–Krener1977provides the classical differential framework for local weak observability. Selected definitions and Theorem3.1with its short inverse-function argument were read, not the full source or its global quotient theory. That local criterion alone does not give a global or robust observer. The explicit model calculation above is own algebra, not an empirical discovery, a priority finding, an exact-PDF assessment or a new Lean result.
+
 ## Source scope, novelty and assessment context
 
 - R. Lefever, G. Nicolis and P. Borckmans, The brusselator: it does oscillate all the same, J. Chem. Soc. Faraday Trans.1 84 (1988),1013–1023, [DOI10.1039/F19888401013](https://doi.org/10.1039/F19888401013). Abstract read: model oscillation is compatible with equilibrium detailed balance and closed-system mass conservation; it discusses elementary reaction realizations. Full proof not audited. Publisher open returned403; an institutional copy was identified without bypassing that restriction.
@@ -82,3 +103,5 @@ Additional classical primary sources for the concrete case:
 
 - Field, Körös and Noyes, JACS94 (1972),8649–8664, [DOI10.1021/ja00780a001](https://doi.org/10.1021/ja00780a001). Publisher bibliography and an indexed original abstract excerpt only; no full experimental audit. Use year1972: publisher issue-day1December conflicts with indexed first-page13December; exact day unresolved. Online2002 is not treated as the original publication.
 - Field and Noyes, JCP60(5) (1974),1877–1884, [DOI10.1063/1.1681288](https://doi.org/10.1063/1.1681288), [selected primary copy](https://www.math.us.edu.pl/mtyran/dydaktyka/biomatematyka/field_noyes_1974.pdf). Published1March1974; received23July1973. Selected indexed SectionsII–III/Ia–Ic, not the whole8pages, original integrations or a proof audit. Direct access failed and ambiguous dimensionless OCR was excluded; no paywall bypass or fabricated PDF hash.
+
+- Hermann and Krener, Nonlinear Controllability and Observability, IEEE TAC22(5),728–740 (October1977), [DOI10.1109/TAC.1977.1101601](https://doi.org/10.1109/TAC.1977.1101601), [author-hosted copy](https://www.math.ucdavis.edu/~krener/1-25/10.IEEETAC77.pdf). Received16December1976and revised7June1977; these are distinct from publication. Selected local definitions/statement/argument only; no entire-paper/global-proof audit or Oregonator-specific priority determination. The [source record](../evidence/2026-10-30-observer1363/SOURCE1362.json) binds the observed PDF response checksum without redistributing its body.
