@@ -37,3 +37,13 @@ or product correctness threshold; original failure logs remain archived.
 
 [Exact public version and review context](https://airr.science/papers/ARR-2026-77DGRYDGXD8MDSY2/versions/v1/#model-assessments).
 [Byte-binding ledger](../evidence/2026-10-28-review-continuity/REVIEW-RECONCILIATION1203.json).
+
+## Update30October2026: later component and exact-PDF closure
+
+The pending997/1003 language above is a historical snapshot, superseded by [terminal unscored1012](../evidence/2026-10-27-pauli-components/audit1012/AUDIT1012.txt) and the later manuscript chain. The isotropy extension and envelope were already checked within their stated metric/normalization/support scope; another component review is not pending.
+
+The evolving project is now the existing [23-page Working paper v4](https://airr.science/papers/ARR-2026-77DGRYDGXD8MDSY2/versions/v4/#model-assessments), published27October2026, PDF SHA256 `255ca15a68df24944e2f3623265e9912ca7cad1d75e96074fadb304c0f83eb7e`. [Current review context and full1084 report](2026-10-27-classical-reference.md) bind that exact artifact and preserveO1-O6. This is a chronology correction, not a new publication, assessment or inherited grade. Earlier v1 and predecessor reports remain distinct evidence. Requested model settings, effective identity/effort and independence limits remain declared.
+
+Literature/provenance: the existing version/report records. Heuristic: the already model-audited analytic arguments. Speculative: novelty and further operational applications. Formal: none added. Precise Lee-Makur coverage remains unresolved; an author bibliography entry does not supply the missing full theorem/proof. Neither publication nor a failed lookup establishes priority.
+
+Do not repeat audits, finite controls, deposits or reviews for these closed artifacts. Further work requires a defined additional hypothesis reduction or operational mechanism, retaining metric, actual input/reference/resource quantifiers and an explicit falsifier. No unrestricted BKM/Umegaki/actual-MI, capacity, fixed-noise robustness or resource optimum is inferred from this reconciliation.
