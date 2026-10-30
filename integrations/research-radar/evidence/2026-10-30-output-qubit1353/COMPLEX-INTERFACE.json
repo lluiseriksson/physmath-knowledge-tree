@@ -1,0 +1,15 @@
+{
+  "all_assertions_passed": true,
+  "sympy_version": "1.14.0",
+  "scope": "One exact non-real CP/unital dual-normalization and composition identity instance, plus the symbolic trine commutator and explicit dual objective. These checks are not a proof of the general SDP statement.",
+  "dimensions": {
+    "d": 3,
+    "k": 2
+  },
+  "Zprime_rank": 1,
+  "partial_trace_Z": "Matrix([[4, 0], [0, 9]])",
+  "complex_transpose_is_necessary_in_this_instance": true,
+  "dual_trine_partial_trace": "I_2",
+  "dual_trine_objective": "1-u",
+  "trine_commutator_01": "sqrt(3)*u**2/9"
+}

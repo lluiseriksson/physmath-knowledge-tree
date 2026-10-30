@@ -1,0 +1,7 @@
+# Later unscored author clarification to the frozen1351argument
+
+This does not edit the frozen argument or count as another component review. Complete audit report and any objections remain required before marking its outcome.
+
+For a trace-preserving Hermiticity-preserving map, let Delta be any Hermitian traceless matrix. Its Jordan decomposition is Delta=t(rho_plus-rho_minus), where the two states have orthogonal supports and ||Delta||_1=2t. Thus any output-diameter bound D in trace distance implies ||Psi(Delta)||_1/||Delta||_1<=D. Conversely a contraction factor bounds every pair of output states because their input trace distance is at most1. Therefore ordinary trace-distance contraction equals the output-state diameter. For a finite measurement channel, total variation is a maximum over outcome subsets; interchanging finite maximum and supremum over the two states gives eta_tr=max_B osc(H_B). Three outcomes reduce the nontrivial subsets to singleton/complement pairs. This supplies the ratio step for the exact trine prefix, including input coherences and not just basis-state tests.
+
+The later antecedent check reads Delsol–Fawzi–Kochanowski–Ramachandran2507.16737v3Sec4.1Prop28/localproof/Remark29. Its classical exclusion obstruction is prior art; no new priority claim is made for that mechanism. The selected source uses Hermitian/induced Doeblin coefficients and does not by itself certify this positive-component fixed-output envelope. Full external proofs and worldwide novelty are unaudited.

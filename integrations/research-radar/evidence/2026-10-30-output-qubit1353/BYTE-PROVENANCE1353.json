@@ -1,0 +1,46 @@
+{
+  "native_report_and_metadata": "Public report/verdict/context/source_pins/COPY-CHECK and complex-checker files are exact native bytes, not edited reading projections.",
+  "native_archive": {
+    "file": "native-audit1351.zip",
+    "sha256": "4ce304862d86dfc943c6b4c26cefc0d52dc7822008c2079144c86b02e4300dee",
+    "members": 9,
+    "excluded": "Administrative finalize_audit.py retained in D dossier and referenced by nativeCOPYCHECK; no assessment content omitted."
+  },
+  "own_exact_output": {
+    "file": "EXACT1351.json",
+    "public_serialization": "LF-normalized own JSON reading projection",
+    "public_sha256": "c500adf95f720059b7207402cabbd5224249aeb4e213d8b4e8d4ac78ce75a905",
+    "native_sha256": "6b254c56a009df0ca335401ffa4394fce2d1a2083eb4529f438fbc8f5387bede",
+    "native_archive_member": "checker-replay/EXACT1351.json",
+    "scope": "Same parsed own symbolic result; nativeCRLF bytes preserved, no report normalization."
+  },
+  "argument_sha256": "fd637fad91828dc772bc0aa89cac32ff1c89c677b3f65c41fe2b831e1b57b859",
+  "native_files": [
+    {
+      "file": "report.txt",
+      "bytes": 16364,
+      "sha256": "69b2702c5966481bfdb17bc2260dd07e41ced824f3b952c53f517a99bd9b6f36"
+    },
+    {
+      "file": "verdict.json",
+      "bytes": 2425,
+      "sha256": "4fa7ba16379e5fb7d8e07f0a282a7797413c2f0835370436ee707a6f350e8f21"
+    },
+    {
+      "file": "context.json",
+      "bytes": 9233,
+      "sha256": "6c622b48028f74855422bdf870febc55ace7e72d37648029b7113bfbadd7318d"
+    },
+    {
+      "file": "source_pins.json",
+      "bytes": 3724,
+      "sha256": "9453c5f0fad0c7d5a8f5bcd0b5a55526c1bbe1ce4cef81b02b23a741430741a6"
+    },
+    {
+      "file": "COPY-CHECK.json",
+      "bytes": 5152,
+      "sha256": "4b8e5dd55d5fb9855bac97dcbf17174dac33cd39dbb31c9a9130bc315878ac67"
+    }
+  ],
+  "publication_does_not_create_grade": true
+}

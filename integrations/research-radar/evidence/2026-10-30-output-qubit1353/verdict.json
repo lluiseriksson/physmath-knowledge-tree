@@ -1,0 +1,57 @@
+{
+  "audit_type": "one unscored mathematical component inspection",
+  "frozen_draft_sha256": "fd637fad91828dc772bc0aa89cac32ff1c89c677b3f65c41fe2b831e1b57b859",
+  "outcome": "supported_with_nonblocking_clarifications_and_context_limitations",
+  "claims": [
+    {
+      "claim": "Admissible trine family: eta_tr=2u/3, alpha_plus=1-u for 0<=u<=1",
+      "finding": "supported by analytic reconstruction and exact symbolic replay"
+    },
+    {
+      "claim": "Output-only alpha_plus>=1-r for k=2",
+      "finding": "refuted by the exact admissible trine family; u=1 gives r=2/3 and alpha_plus=0"
+    },
+    {
+      "claim": "alpha_plus>=max(0,1-r min(d-1,N-1,d(k-1)/k))",
+      "finding": "analytic derivation supported for the stated finite preparation class"
+    },
+    {
+      "claim": "inf alpha_plus=max(0,1-3r/2) for d=3,k=2,N=3 and eta_tr<=r",
+      "finding": "supported; all r in [0,1] attained"
+    },
+    {
+      "claim": "Sharp formula for every d,k,N",
+      "finding": "not claimed or established"
+    }
+  ],
+  "material_mathematical_objections": [],
+  "nonblocking_objections": [
+    {
+      "id": "clarify_contraction_ratio",
+      "detail": "Add the Jordan-decomposition argument connecting output diameter to the ordinary trace-distance contraction ratio."
+    },
+    {
+      "id": "clarify_dimensions_and_notation",
+      "detail": "State positive integer d,k,N, set eta_tr=0 for one-dimensional input or handle it separately, and distinguish channel notation from outcome count N."
+    }
+  ],
+  "material_context_limitations": [
+    "Initial targeted search accidentally displayed a prior-audit summary and review-context references; audit is not fully blinded.",
+    "Requested GPT-6 Astra xhigh is not an independently verified runtime identity/effort.",
+    "Separate context shares filesystem and tools; verified independence is not claimed."
+  ],
+  "evidence_limits": [
+    "no formal Lean proof",
+    "no manuscript assessment",
+    "no human peer review",
+    "no numeric grades",
+    "no editorial decision",
+    "no broad novelty or current-open-problem certification",
+    "no general proof inferred from finite checks",
+    "no random or exhaustive general SDP search"
+  ],
+  "formal_result": false,
+  "grades_issued": false,
+  "audit_restarted": false,
+  "recommended_scope": "Bounded supplement integration with all objections and context limits retained; no acceptance or publication claim."
+}
