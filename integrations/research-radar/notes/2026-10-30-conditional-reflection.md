@@ -193,3 +193,172 @@ for this participating-agent analytic application; **speculative** for the
 unproved physical outer transport; **formal**: none new. Canonical graph,
 Lean declarations and evaluation routes are unchanged. Independence is
 unverified; no peer-review or editorial decision is represented.
+
+## 31 October update: a fixed retained step and its adverse audit
+
+This extends the same supporting synthesis. It does not restore the abandoned
+conditional-to-global shortcut or create a separate paper. Four OLD source
+cards were added at selected-statement reading depth, not as new publications:
+
+| Primary source | Selected reading | Exact inspected bytes |
+|---|---|---|
+| [CMP109(1987),249–301](https://doi.org/10.1007/BF01215223) | Averaging, actual cutoff2.9, action2.11–2.12, old-action1.3/1.6/1.7 and current3.10–3.17 dictionaries | PDF5490078bytes; SHA256 `1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a` |
+| [CMP102(1985),277–309](https://doi.org/10.1007/BF01229381) | Complex domain172, Proposition9 and kernel190; special current/second-order norms | PDF3355501bytes; SHA256 `838056b5c578f81d058deb3d394c66d934690e3b94c6cf2956534ec6d211b541` |
+| [CMP99(1985),389–434](https://doi.org/10.1007/BF01240355) | Printed421–429, hard-axial precision gap/decay statement428 | Held fusion container35847780bytes; SHA256 `00cc6b218dcf0e1c2884e135caa1d57b3591df036540b685e7440f30cbd4ff16` |
+| [CMP96(1984),223–250](https://doi.org/10.1007/BF01240221) | Printed223,230–231, weighted contour distance2.46 | Same held fusion container; no separately acquired article-PDF hash |
+
+The CMP99/CMP96 DOI metadata was cross-checked against the author's
+[Rutgers CMP99 record](https://www.researchwithrutgers.org/en/publications/propagators-for-lattice-gauge-theories-in-a-background-field/)
+and [Rutgers CMP96 record](https://www.researchwithrutgers.org/en/publications/propagators-and-renormalization-transformations-for-lattice-gauge-2/).
+The source's lengthy kernel calculation before189 is explicitly omitted there;
+the regular-background hard-gap proof is referenced/outlined. Both remain
+literature inputs, not reproduced proof audits. No source PDF bodies are copied.
+
+The [exact technical audit packet](../evidence/2026-10-31-retained-step-audit/README.md)
+contains one real, unscored, separate-context review of six own notes. Requested
+model/effort were `gpt-6-astra/xhigh`; actual routing and independence are
+unverified. The parent authored the notes. The report found the conditional
+mechanism viable but a **material incomplete full-density dictionary**. Full
+objections and immutable inputs are retained. This is not a manuscript/PDF
+grade, human peer review, editorial acceptance or a new assessed version of the
+parent's subsequent repair.
+
+### Exact law and density corrections
+
+At the NEXT retained step, source2.12 contains the old action evaluated at
+`U1(V(x))`; it is not the first bare Wilson density with a renamed background.
+At `k=1`, source1.3/1.6 gives
+
+```text
+E_old,1(U)=-beta1(g0) A(U)+mathcal E1(g0,U)-mathcal E1(g0,1),
+1/g0^2=1/g1^2+beta1(g0).
+```
+
+Here `mathcal E1` explicitly includes the previous `log Z^(0)` under source1.6's
+aggregated activity convention. That old normalization depends on the current
+raw variable through `U1(V(x))`; it is not a factor constant outside the integral.
+The negative log density has signs
+
+```text
+H_next(a)=g1^-2 S(g1 a)+beta1(g0) A(U1(V(g1 a)))
+          -mathcal E1(g0,U1(V(g1 a)))
+          -log J_sel(g1 a)-log Haar(R_h(C g1 a)),
+```
+
+up to constants in a. The beta-action contribution was missing from the
+submitted complete Hessian budget. Its raw Hessian is
+`g1^2 beta1(g0) Hess_x A(U1(V(x)))`; the source bounds beta on its admitted
+coupling interval. Local action chains and exponential reconstruction envelopes
+would bound its weighted norm by `g1^2 B_beta C_A,L`. This is the parent's
+explicit repair, not a second review.
+
+The actual source2.9 cutoff is exactly
+
+```text
+product over FREE bonds b of 1{|g1 a_b|<epsilon_cut}.
+```
+
+The selected correction hD vanishes on those coordinates and C is identity
+there. Selected outputs have induced bounds; they are not independent
+equal-radius hard indicators. Keep the product of convex Lie bond factors and
+block-scalar spatial weights. The older note's literal all-reconstructed-bond
+cutoff definition is withdrawn. A sufficiently smaller product cutoff can
+place the complete reconstructed image in the uniform source charts through
+explicit finite norm bounds; it does not require a convex nonlinear image.
+
+For the continuing deduction, the smaller next law is **additional conditioning
+of the existing next retained law**, retaining its original old E1 and original
+first conditional means. It does not bound the removed annulus or the previously
+fixed maximal-cutoff law. Its support must actually remain in the original
+first admissible background class; normalization alone cannot establish this.
+
+### Mechanism and retained hypotheses
+
+The source hard-tree precision gap cannot be transferred by identifying its
+coordinates with the averaged-soft ones. On the real constrained critical
+background, let T be the root-fixed infinitesimal gauge map and G the linearized
+averaged contour map. With `G T=I`, hard-tree representative B_h and `mu=G B`,
+
+```text
+B=B_h+T(mu-G B_h).
+```
+
+The slice term `G B_h` stays. Gauge-null mixed terms vanish for the INTRINSIC
+constrained physical Hessian at a stationary constrained background, including
+both source J/constraint-curvature corrections. They need not vanish for an
+arbitrary ambient Wilson Hessian. With actual finite reconstruction norms,
+the source hard gap yields a symbolic positive soft gap at fixed step. Real
+unitary transports are used; arbitrary complex-background l2 coercivity is not
+inferred.
+
+The common complex INPUT neighborhood and kernel190 allow Cauchy bounds on
+second/third reconstruction derivatives. Keep the complete source current norm.
+At a FIXED external reference background on the Landau subspace, source272 gives
+`P1 H=Delta H-D*D H+lower-order local terms`, linking the two second-order kernel
+bounds to the current norm. The reference operator is not varied in those input
+derivatives. The source OUTPUT Cauchy fraction273 is alpha2/3, not alpha2/4;
+the erroneous attribution in an original input is preserved with its correction.
+The smaller quarter contour remains a valid conservative choice.
+
+For an activity composed with the nonlinear background, keep BOTH terms
+`D2F[H_b,H_c]+DF[H_bc]`, with the actual J substitution in F. Complex Cauchy and
+input symmetry give exponential maximum-distance tails; rooted polymer
+incidence/entropy sums turn them into weighted row/column bounds without a
+volume multiplier. A positive entropy reserve is essential. For the physical
+action retain all third chains, including `f' H_bcd`; Taylor along the physical
+raw window costs `C_R,L epsilon_phys`, not uniformly O(g1) merely because
+fixed-raw expressions vanish as g1 tends to zero.
+
+The repaired candidate budget is
+
+```text
+||Hess H_next-Q_soft||_alpha
+ <= C_R,L epsilon_phys
+    +g1^2(C_Haar,L+C_sel,L+C_activity,L+B_beta C_A,L).
+```
+
+Its constants are fixed-step existence constants, not extracted numerical
+values. Source-admissible odd L>11, d=4, the source group/regularity class,
+M/kappa/coupling restrictions, uniform inverse/complex margins and compatible
+background inclusion all remain. If this budget fits the positive Gaussian
+margin and its exponential weighted moment, reflected covariance accommodates
+nonlocal observable gradients; finite support at the next scale is unnecessary.
+
+### Two-level scope and assessment boundary
+
+Keep the ORIGINAL normalized first means and conditional covariance
+`a_p(V),a_q(V),k_pq(V)`, formed from the complete actual inserted preimages.
+For the joint law `mu0,V(dA) nu1,W^small(dV)` at fixed next background W,
+
+```text
+Cov_joint(O_p,O_q)=E_nu1,W^small k_pq(V)
+                  +Cov_nu1,W^small(a_p(V),a_q(V)).
+```
+
+This is a normalized two-level law with an explicit extra retained event, not
+the full physical history disintegration. If the original first covariance
+bound is uniform on its support, its expectation keeps that bound. If the
+complete original first means have the derived localized angular response,
+local next coarse reconstruction yields nonlocal raw gradients of size
+`g1 A_L exp(-sigma Dcoarse(p*,b))`. Under the repaired next curvature/reflection
+hypotheses their covariance would be `O(g1^2)` with an exponential coarse
+separation tail. No g0 factor is inherited across running couplings.
+
+The review did NOT assess the prior first-mean gradient/reflection proofs or
+certify a particular background/window. Their exact score, normalization,
+original-gauge response, product factors and source margins are separate
+participating-parent dependencies. Thus this transport implication must not be
+called fully verified by that six-note review. It is not a global fine-observable
+bound, an all-scale result or control of the outer W/history covariance.
+
+The abandoned shortcut remains abandoned. Falsifiers include omitted beta/logZ,
+wrong product cutoff, incompatible first/next laws, lost source scale/current
+factors, singular inverse margins or an insufficient weighted entropy reserve.
+Next work should certify actual compatible-class inclusion and the original
+first-mean/reflection dependencies before promoting physical transport; no
+additional paper for the tower identity or another scalar wrapper is warranted.
+
+Evidence levels remain **literature** for selected primary statements,
+**heuristic** for the source-dependent parent deduction and repaired mechanism,
+**speculative** for actual physical/global closure, **formal**: none new.
+Canonical graph, Lean declarations and evaluation routes are unchanged.

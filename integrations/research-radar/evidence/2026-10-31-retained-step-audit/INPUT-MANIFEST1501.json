@@ -1,0 +1,55 @@
+{
+  "at": "2026-10-30T23:02:29.323218+00:00",
+  "requested_model": "gpt-6-astra",
+  "requested_effort": "xhigh",
+  "context": "fork_turns=none; technical unscored audit of exact note set, not a PDF/manuscript assessment",
+  "participation": "Parent authored notes; review is separate context, scientific independence and actual runtime model/effort unverified",
+  "one_run": true,
+  "no_target_score": true,
+  "inputs": [
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1501/review/inputs/FIXED-SECOND-STEP1500.md",
+      "bytes": 7313,
+      "sha256": "27bd53f7bb28cf98646dab3af40ec01af116ba49f78a4423d82e822fada1568a"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1501/review/inputs/SOFT-GAP1495.md",
+      "bytes": 6122,
+      "sha256": "97af0f79b89caf4d7f60ed1ae93cce6e73590985bf8d720fe42a7a4691d6d972"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1501/review/inputs/CUTOFF-BUDGET1496.md",
+      "bytes": 5301,
+      "sha256": "366fffa4c367199622c22724fe24980362db67c35462af5d9a0031dec2003564"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1501/review/inputs/CAUCHY1497.md",
+      "bytes": 4858,
+      "sha256": "aef01cb628b4769f112e722734ba1e047537aa41396467a22e67e141f888bb29"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1501/review/inputs/INPUT-RADIUS1498.md",
+      "bytes": 4611,
+      "sha256": "9a2c504d0432eee34d9222ecc227b8d0aac142d914461cfd8f2ff3c7e0fc3e0e"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1501/review/inputs/CURRENT-POLYMERS1499.md",
+      "bytes": 5829,
+      "sha256": "64bb8a58cff2a07e65c1b0ad782a40058cb2cb4b70274f7278c00358d561a0f9"
+    }
+  ],
+  "sources": [
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-rg-I-cmp109-1104116842.pdf",
+      "sha256": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a"
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/cmp102_variational/1104114383.pdf",
+      "sha256": "838056b5c578f81d058deb3d394c66d934690e3b94c6cf2956534ec6d211b541"
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balabanfusion.pdf",
+      "sha256": "00cc6b218dcf0e1c2884e135caa1d57b3591df036540b685e7440f30cbd4ff16"
+    }
+  ]
+}

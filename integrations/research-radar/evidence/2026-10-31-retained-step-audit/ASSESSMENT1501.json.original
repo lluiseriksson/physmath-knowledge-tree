@@ -1,0 +1,292 @@
+{
+  "audit_id": "1501",
+  "created_at_utc": "2026-10-30T23:16:36.992379+00:00",
+  "review_kind": "one unscored critical technical audit of six exact notes",
+  "scope": {
+    "main_note": "FIXED-SECOND-STEP1500.md",
+    "retained_step": "k=1",
+    "branch": "full small-field branch without large-field boundaries",
+    "parameters": "fixed source-admissible L and M, strict uniform source/background/selected-inverse margins, explicitly smaller physical cutoff",
+    "not_assessed": [
+      "manuscript or PDF quality",
+      "novelty",
+      "global mass gap",
+      "large-field or arbitrary-history contributions",
+      "other tower term",
+      "later-scale uniformity"
+    ]
+  },
+  "provenance": {
+    "requested_model": "gpt-6-astra",
+    "requested_effort": "xhigh",
+    "actual_runtime_model": null,
+    "actual_runtime_effort": null,
+    "runtime_identity_status": "unverified: no independent runtime model/effort attestation available in this context",
+    "context": "separate task context; assignment identifies fork_turns=none; no independent routing attestation",
+    "parent_authored_reviewed_notes": true,
+    "scientific_independence": "unverified",
+    "review_runs": 1,
+    "subagents_spawned": 0,
+    "retries": 0,
+    "model_substitution": false,
+    "target_score": null,
+    "numeric_grade_assigned": false,
+    "new_corpus_downloaded": false,
+    "inputs_or_sources_edited": false,
+    "scope_extension": "Parent expressly authorized related already-held CMP109 pages to verify (1.3), (1.6), (1.7), (1.18) and connected dictionary definitions."
+  },
+  "disposition": {
+    "overall": "conditionally_viable_with_material_full_density_dictionary_repair_required",
+    "as_written": "The claimed bound on the complete old E1 is not established by the displayed activity calculation; the beta1 A counterterm must be included and the previous Gaussian normalization convention fixed.",
+    "conditional_analytic_validity": "The hard/soft bridge, source-complex Cauchy derivative/star mechanism, and rooted activity sum are supportable under their actual uniform source hypotheses. The identified full-density omission has a fixed-step repair using those same inputs.",
+    "actual_applicability": "Not certified for a specific law/background/window, a prior maximal cutoff, or the actual first conditional means from this six-note set.",
+    "mean_transport": "Valid as an implication conditional on the repaired curvature estimate and the separately asserted actual mean-gradient and reflected covariance inputs; those earlier inputs were not audited.",
+    "source_proof_status": "Stated literature results accepted as inputs; CMP102 calculation leading to (189)/(190) and CMP99 regular-background gap proof not reproduced.",
+    "promotion": "Do not describe the submitted complete-density proof or the actual mean-transport statement as fully verified by audit 1501."
+  },
+  "findings": [
+    {
+      "id": "F01",
+      "kind": "material_repair",
+      "title": "Complete old E1 includes a coupling counterterm and a previous Gaussian normalization",
+      "note_anchors": [
+        "FIXED-SECOND-STEP1500.md:26",
+        "CAUCHY1497.md:7-31",
+        "CURRENT-POLYMERS1499.md:13-32"
+      ],
+      "source_anchors": [
+        "CMP109 p256 (0.22)-(0.23)",
+        "CMP109 p260 (1.3)",
+        "CMP109 p261 (1.6)-(1.7)",
+        "CMP109 p265 after (2.1)",
+        "CMP109 p268 (2.12)",
+        "CMP109 p264 after (1.22)"
+      ],
+      "finding": "The activity calculation does not explicitly budget -beta1(g0) A in E1. The old log Z^(0)(U1(V(x))) is variable-dependent, unlike the current normalization outside the integral. Source (1.6)-(1.7) permits including that old log Z in the aggregated activity family.",
+      "minimal_repair": "Specify aggregated E^(1), add +g1^2 beta1(g0) Hess_x A to the negative-log-density Hessian, and include B_beta C_A in the constant. Keep 1/g0^2 = 1/g1^2 + beta1(g0).",
+      "impact": "Incomplete full-density proof as written, not a counterexample to the desired estimate or its g1^2 scaling."
+    },
+    {
+      "id": "F02",
+      "kind": "coordinate_correction",
+      "title": "Source cutoff excludes selected bonds",
+      "note_anchors": [
+        "CUTOFF-BUDGET1496.md:5",
+        "FIXED-SECOND-STEP1500.md:17-24,33"
+      ],
+      "source_anchors": [
+        "CMP109 p266 (2.9)",
+        "CMP109 p267 selected h support and induced selected-bond bounds",
+        "CMP109 p268 free-coordinate elimination"
+      ],
+      "finding": "The literal all-reconstructed-bond cutoff in 1496 is not (2.9). Since h is supported on selected bonds and C is identity on free bonds, the actual cutoff is the product of |g1 a_b| < epsilon1 over free bonds.",
+      "minimal_repair": "Write the exact free-bond product. Identify convex bond norm factors rather than assume scalar rectangles. Do not add equal-radius selected-bond constraints.",
+      "impact": "Repairs rather than defeats the required product geometry."
+    },
+    {
+      "id": "F03",
+      "kind": "law_scope_limit",
+      "title": "Smaller-window result is for the explicitly chosen smaller-cutoff law",
+      "note_anchors": [
+        "FIXED-SECOND-STEP1500.md:5,24,33-35",
+        "INPUT-RADIUS1498.md:9"
+      ],
+      "finding": "Shrinking an already fixed cutoff changes the law; no annulus estimate transfers the result to the original maximal cutoff. Old E1 and conditional means must match the chosen construction or additional-conditioning interpretation.",
+      "minimal_repair": "State which smaller-cutoff law is meant and preserve the explicit exclusion of a previously fixed maximal cutoff.",
+      "impact": "Declared scope can be consistent; applicability is not established for a different law."
+    },
+    {
+      "id": "F04",
+      "kind": "supported_with_dictionary_clarification",
+      "title": "Hard-to-soft bridge retains the correct constraint curvature and GB_h term",
+      "note_anchors": [
+        "SOFT-GAP1495.md:5-30",
+        "FIXED-SECOND-STEP1500.md:7,13"
+      ],
+      "source_anchors": [
+        "CMP109 pp253-255 (0.5)-(0.16)",
+        "CMP109 pp265-267 (2.2)-(2.11)",
+        "CMP99 p421 (3.127)-(3.128)",
+        "CMP99 p428 (3.156)-(3.158)"
+      ],
+      "finding": "Under constrained stationarity and source gauge covariance, the decomposition and fixed-block norm inequality are valid. The actual constrained quadratic includes both relevant J/constraint-curvature corrections. Numerical gauge/basis normalization is not extracted.",
+      "minimal_repair": "Record the concrete Lie-algebra norm and positive gauge coefficient; retain the literature-input status of the hard gap and averaging identification.",
+      "impact": "No invalid slice equality or missing volume factor identified."
+    },
+    {
+      "id": "F05",
+      "kind": "operator_dictionary_clarification",
+      "title": "P1 current norm follows through the Landau identity",
+      "note_anchors": [
+        "CURRENT-POLYMERS1499.md:5-11",
+        "INPUT-RADIUS1498.md:11-13"
+      ],
+      "source_anchors": [
+        "CMP102 p308 (190)",
+        "CMP102 p309 Proposition 9",
+        "CMP109 p272 (3.11)-(3.14)"
+      ],
+      "finding": "Equation (190) lists D*D and Laplacian derivative bounds, not P1 separately. The fixed-background Landau identity P1 H = Delta H - D*D H + lower-order local terms provides the missing operator link.",
+      "minimal_repair": "Write this identity and keep the reference external background fixed when taking input derivatives. Preserve a common uniform complex domain for all composed maps.",
+      "impact": "A source-supported bridge is available; an arbitrary projection or real-only decay would not suffice."
+    },
+    {
+      "id": "F06",
+      "kind": "source_parameter_clarification",
+      "title": "Fixed odd L must be source-admissible",
+      "note_anchors": [
+        "FIXED-SECOND-STEP1500.md:5,33"
+      ],
+      "source_anchors": [
+        "CMP109 p251 geometric conventions",
+        "CMP109 p264 Theorem 3"
+      ],
+      "finding": "The source fixes odd L > 11 and imposes its other regularity, M, kappa and coupling requirements. Fixed odd L alone does not state those restrictions.",
+      "minimal_repair": "Use fixed source-admissible L and retain the exact source model/parameter class.",
+      "impact": "No extension to all odd L, arbitrary dimensions/groups or arbitrary regularity classes established."
+    },
+    {
+      "id": "F07",
+      "kind": "conditional_analytic_support",
+      "title": "Cauchy higher derivatives, star envelopes and rooted activity sum are adequate",
+      "note_anchors": [
+        "CAUCHY1497.md:7-31",
+        "INPUT-RADIUS1498.md:5-13",
+        "CURRENT-POLYMERS1499.md:13-32",
+        "FIXED-SECOND-STEP1500.md:11-24"
+      ],
+      "source_anchors": [
+        "CMP102 pp305-309 (172)-(190), Proposition 9",
+        "CMP109 p257 localization-domain/tree definition",
+        "CMP109 pp271-273 (3.7)-(3.17)"
+      ],
+      "finding": "Uniform complex first-derivative kernels plus a common input radius give the minimum/max-distance bounds by Cauchy and symmetry. The star loss is summable. The two-term activity Hessian and rooted entropy comparison avoid a volume multiplier.",
+      "conditions": [
+        "Uniform complex bounds, not real-only decay",
+        "Input radius distinct from output Cauchy radius",
+        "Both Hessian chain terms retained",
+        "Fixed scale/cell factors retained",
+        "Strict polymer entropy reserve",
+        "Actual current substitution included"
+      ],
+      "historical_correction": "The source radius is alpha2/3, as correctly restored by 1498. The quarter-radius in 1497 is permissible but was falsely attributed to the source.",
+      "impact": "Conditional analytic deductions supported; source (189) computation remains unperformed."
+    },
+    {
+      "id": "F08",
+      "kind": "external_dependency_unverified",
+      "title": "Actual first conditional-mean gradients and prior covariance proof are outside the hashed set",
+      "note_anchors": [
+        "FIXED-SECOND-STEP1500.md:33-35"
+      ],
+      "finding": "Notes 1492 and 1493 are referenced but are not among the six audited files. Their actual gradient, normalization, cutoff and boundary calculations were not inspected.",
+      "minimal_repair": "Keep mean transport explicitly conditional on those precise inputs and do not claim they were certified by this audit.",
+      "impact": "Formal covariance implication supported; actual mean-transport theorem not verified solely from these six notes."
+    }
+  ],
+  "repaired_budget": "delta <= C_R,L epsilon_phys + g1^2(C_Haar,L + C_sel,L + C_activity,L + B_beta C_A,L)",
+  "unresolved_or_unverified": [
+    "Actual runtime model and effort",
+    "Scientific independence",
+    "Full reproduction of source (189)/(190) proof",
+    "Full reproduction of CMP99 regular-background hard-gap proof",
+    "Numerical constants and an actual certified common background/window",
+    "Compatibility with a previously fixed maximal-cutoff law",
+    "Actual earlier conditional means and reflected covariance proof in unaudited 1492-1493"
+  ],
+  "adverse_findings_preserved": true,
+  "integrity": {
+    "all_six_input_hashes_match": true,
+    "all_six_input_byte_counts_match": true,
+    "all_three_source_hashes_match": true,
+    "input_manifest": {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1501/review/INPUT-MANIFEST1501.json",
+      "bytes": 2400,
+      "sha256": "c8363c0edcf06ab70c87ad921e1a31b90acdb411e011d18d8e44722b4ca5e5ba"
+    },
+    "inputs": [
+      {
+        "path": "C:/Trabajo/airr/2026-10-31_execution1501/review/inputs/FIXED-SECOND-STEP1500.md",
+        "bytes": 7313,
+        "sha256": "27bd53f7bb28cf98646dab3af40ec01af116ba49f78a4423d82e822fada1568a",
+        "expected_sha256": "27bd53f7bb28cf98646dab3af40ec01af116ba49f78a4423d82e822fada1568a",
+        "sha256_match": true,
+        "expected_bytes": 7313,
+        "bytes_match": true
+      },
+      {
+        "path": "C:/Trabajo/airr/2026-10-31_execution1501/review/inputs/SOFT-GAP1495.md",
+        "bytes": 6122,
+        "sha256": "97af0f79b89caf4d7f60ed1ae93cce6e73590985bf8d720fe42a7a4691d6d972",
+        "expected_sha256": "97af0f79b89caf4d7f60ed1ae93cce6e73590985bf8d720fe42a7a4691d6d972",
+        "sha256_match": true,
+        "expected_bytes": 6122,
+        "bytes_match": true
+      },
+      {
+        "path": "C:/Trabajo/airr/2026-10-31_execution1501/review/inputs/CUTOFF-BUDGET1496.md",
+        "bytes": 5301,
+        "sha256": "366fffa4c367199622c22724fe24980362db67c35462af5d9a0031dec2003564",
+        "expected_sha256": "366fffa4c367199622c22724fe24980362db67c35462af5d9a0031dec2003564",
+        "sha256_match": true,
+        "expected_bytes": 5301,
+        "bytes_match": true
+      },
+      {
+        "path": "C:/Trabajo/airr/2026-10-31_execution1501/review/inputs/CAUCHY1497.md",
+        "bytes": 4858,
+        "sha256": "aef01cb628b4769f112e722734ba1e047537aa41396467a22e67e141f888bb29",
+        "expected_sha256": "aef01cb628b4769f112e722734ba1e047537aa41396467a22e67e141f888bb29",
+        "sha256_match": true,
+        "expected_bytes": 4858,
+        "bytes_match": true
+      },
+      {
+        "path": "C:/Trabajo/airr/2026-10-31_execution1501/review/inputs/INPUT-RADIUS1498.md",
+        "bytes": 4611,
+        "sha256": "9a2c504d0432eee34d9222ecc227b8d0aac142d914461cfd8f2ff3c7e0fc3e0e",
+        "expected_sha256": "9a2c504d0432eee34d9222ecc227b8d0aac142d914461cfd8f2ff3c7e0fc3e0e",
+        "sha256_match": true,
+        "expected_bytes": 4611,
+        "bytes_match": true
+      },
+      {
+        "path": "C:/Trabajo/airr/2026-10-31_execution1501/review/inputs/CURRENT-POLYMERS1499.md",
+        "bytes": 5829,
+        "sha256": "64bb8a58cff2a07e65c1b0ad782a40058cb2cb4b70274f7278c00358d561a0f9",
+        "expected_sha256": "64bb8a58cff2a07e65c1b0ad782a40058cb2cb4b70274f7278c00358d561a0f9",
+        "sha256_match": true,
+        "expected_bytes": 5829,
+        "bytes_match": true
+      }
+    ],
+    "sources": [
+      {
+        "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-rg-I-cmp109-1104116842.pdf",
+        "bytes": 5490078,
+        "sha256": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+        "expected_sha256": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+        "sha256_match": true
+      },
+      {
+        "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/cmp102_variational/1104114383.pdf",
+        "bytes": 3355501,
+        "sha256": "838056b5c578f81d058deb3d394c66d934690e3b94c6cf2956534ec6d211b541",
+        "expected_sha256": "838056b5c578f81d058deb3d394c66d934690e3b94c6cf2956534ec6d211b541",
+        "sha256_match": true
+      },
+      {
+        "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balabanfusion.pdf",
+        "bytes": 35847780,
+        "sha256": "00cc6b218dcf0e1c2884e135caa1d57b3591df036540b685e7440f30cbd4ff16",
+        "expected_sha256": "00cc6b218dcf0e1c2884e135caa1d57b3591df036540b685e7440f30cbd4ff16",
+        "sha256_match": true
+      }
+    ]
+  },
+  "report": {
+    "path": "C:/Trabajo/airr/2026-10-31_execution1501/review/REVIEW1501.md",
+    "bytes": 26117,
+    "sha256": "3db3edf9c88647d4901166dac748a417389a8f5f7d8a683f0adc360690b2c7b0"
+  }
+}

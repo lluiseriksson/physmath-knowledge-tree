@@ -1,6 +1,6 @@
 # Research radar
 
-Latest conditional-source boundary: [weighted reflection and outer-history transport](notes/2026-10-30-conditional-reflection.md) consolidates four old primary sources at explicit reading depths, a conditional analytic deduction, and an abandoned shortcut to global covariance. No canonical graph/formal promotion, independent review or manuscript score.
+Latest conditional-source boundary: [weighted reflection and outer-history transport](notes/2026-10-30-conditional-reflection.md) consolidates four old primary sources at explicit reading depths, a conditional analytic deduction, and an abandoned shortcut to global covariance. The31October update retains a real unscored six-note technical audit and its material corrections; runtime identity and independence remain unverified. No canonical graph/formal promotion or manuscript score.
 
 Latest dependency boundary: [capacity duality, tensor limits and witness size](notes/2026-10-30-capacity-dependencies.md) adds two17October source cards with distinct reading depths and an exact unscored context report for an own unpublished draft. No new AIRR publication, formal promotion or inherited manuscript grade.
 

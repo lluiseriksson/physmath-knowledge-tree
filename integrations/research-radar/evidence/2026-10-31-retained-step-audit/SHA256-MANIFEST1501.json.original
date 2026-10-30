@@ -1,0 +1,195 @@
+{
+  "audit_id": "1501",
+  "created_at_utc": "2026-10-30T23:16:36.992379+00:00",
+  "hash_algorithm": "SHA-256",
+  "input_manifest": {
+    "path": "C:/Trabajo/airr/2026-10-31_execution1501/review/INPUT-MANIFEST1501.json",
+    "bytes": 2400,
+    "sha256": "c8363c0edcf06ab70c87ad921e1a31b90acdb411e011d18d8e44722b4ca5e5ba"
+  },
+  "verified_inputs": [
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1501/review/inputs/FIXED-SECOND-STEP1500.md",
+      "bytes": 7313,
+      "sha256": "27bd53f7bb28cf98646dab3af40ec01af116ba49f78a4423d82e822fada1568a",
+      "expected_sha256": "27bd53f7bb28cf98646dab3af40ec01af116ba49f78a4423d82e822fada1568a",
+      "sha256_match": true,
+      "expected_bytes": 7313,
+      "bytes_match": true
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1501/review/inputs/SOFT-GAP1495.md",
+      "bytes": 6122,
+      "sha256": "97af0f79b89caf4d7f60ed1ae93cce6e73590985bf8d720fe42a7a4691d6d972",
+      "expected_sha256": "97af0f79b89caf4d7f60ed1ae93cce6e73590985bf8d720fe42a7a4691d6d972",
+      "sha256_match": true,
+      "expected_bytes": 6122,
+      "bytes_match": true
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1501/review/inputs/CUTOFF-BUDGET1496.md",
+      "bytes": 5301,
+      "sha256": "366fffa4c367199622c22724fe24980362db67c35462af5d9a0031dec2003564",
+      "expected_sha256": "366fffa4c367199622c22724fe24980362db67c35462af5d9a0031dec2003564",
+      "sha256_match": true,
+      "expected_bytes": 5301,
+      "bytes_match": true
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1501/review/inputs/CAUCHY1497.md",
+      "bytes": 4858,
+      "sha256": "aef01cb628b4769f112e722734ba1e047537aa41396467a22e67e141f888bb29",
+      "expected_sha256": "aef01cb628b4769f112e722734ba1e047537aa41396467a22e67e141f888bb29",
+      "sha256_match": true,
+      "expected_bytes": 4858,
+      "bytes_match": true
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1501/review/inputs/INPUT-RADIUS1498.md",
+      "bytes": 4611,
+      "sha256": "9a2c504d0432eee34d9222ecc227b8d0aac142d914461cfd8f2ff3c7e0fc3e0e",
+      "expected_sha256": "9a2c504d0432eee34d9222ecc227b8d0aac142d914461cfd8f2ff3c7e0fc3e0e",
+      "sha256_match": true,
+      "expected_bytes": 4611,
+      "bytes_match": true
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1501/review/inputs/CURRENT-POLYMERS1499.md",
+      "bytes": 5829,
+      "sha256": "64bb8a58cff2a07e65c1b0ad782a40058cb2cb4b70274f7278c00358d561a0f9",
+      "expected_sha256": "64bb8a58cff2a07e65c1b0ad782a40058cb2cb4b70274f7278c00358d561a0f9",
+      "sha256_match": true,
+      "expected_bytes": 5829,
+      "bytes_match": true
+    }
+  ],
+  "verified_sources": [
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-rg-I-cmp109-1104116842.pdf",
+      "bytes": 5490078,
+      "sha256": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+      "expected_sha256": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+      "sha256_match": true
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/cmp102_variational/1104114383.pdf",
+      "bytes": 3355501,
+      "sha256": "838056b5c578f81d058deb3d394c66d934690e3b94c6cf2956534ec6d211b541",
+      "expected_sha256": "838056b5c578f81d058deb3d394c66d934690e3b94c6cf2956534ec6d211b541",
+      "sha256_match": true
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balabanfusion.pdf",
+      "bytes": 35847780,
+      "sha256": "00cc6b218dcf0e1c2884e135caa1d57b3591df036540b685e7440f30cbd4ff16",
+      "expected_sha256": "00cc6b218dcf0e1c2884e135caa1d57b3591df036540b685e7440f30cbd4ff16",
+      "sha256_match": true
+    }
+  ],
+  "deliverables": [
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1501/review/REVIEW1501.md",
+      "bytes": 26117,
+      "sha256": "3db3edf9c88647d4901166dac748a417389a8f5f7d8a683f0adc360690b2c7b0"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1501/review/ASSESSMENT1501.json",
+      "bytes": 15638,
+      "sha256": "df7e8165564aeb670a5973a16f4ad6bdddaed3623b32ef1d793eeee909fab7ad"
+    }
+  ],
+  "self_hash_note": "This manifest does not include its own hash. Its SHA-256 is reported in the audit completion message.",
+  "temporary_evidence_note": "Rendered page PNGs are temporary inspection files in the review work directory, not report deliverables.",
+  "temporary_inspection_images": [
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1501/review/source0-printed255.png",
+      "bytes": 247839,
+      "sha256": "e978baeb0b8d03dd87010c3dfa01b8c462bfa0ab2d447af59d4b58077def007e"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1501/review/source0-printed257.png",
+      "bytes": 290084,
+      "sha256": "29d4b39b8c907b6d514b920fb7e4fc072d28a55e1e8d19460ca265ba13f5802e"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1501/review/source0-printed258.png",
+      "bytes": 321380,
+      "sha256": "75e91152cf19d77c3a0f5cd5986e7e37e80061a57fd7cd11aae4178d0120a340"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1501/review/source0-printed260.png",
+      "bytes": 294432,
+      "sha256": "56b3698a98a3ac93cbf19a104abdd5195353a8aeb2a340ce5ac1757f5b8879c8"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1501/review/source0-printed261.png",
+      "bytes": 268404,
+      "sha256": "7e9f7254b0f584e722b718bdf6a69c356325097fa7f1194e3759462c84c3c5b1"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1501/review/source0-printed262.png",
+      "bytes": 277243,
+      "sha256": "7e59250e8da98d5b0bfd271623b82c030cb98d0947cbe7894a49467e039a7014"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1501/review/source0-printed263.png",
+      "bytes": 311888,
+      "sha256": "2d72ea460e91d8111ea22239d7aae2c1771c3852a3ea068a515ea27103091588"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1501/review/source0-printed265.png",
+      "bytes": 303334,
+      "sha256": "adda5061ea916d526e518789ea33a1256fdd3ddae8a51a67e672d7c7af197a36"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1501/review/source0-printed266.png",
+      "bytes": 276799,
+      "sha256": "d2a8db47a6afb0923149080ce9cab6457b9ea5d736976af8b57a73cd50aa6aba"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1501/review/source0-printed267.png",
+      "bytes": 273663,
+      "sha256": "96ec209540fa59ecbf94bc2e92ef1974bd5384841c298a9ffa03eff24eba1c8d"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1501/review/source0-printed268.png",
+      "bytes": 221966,
+      "sha256": "acd443233aef46da5f0f057a951255ef85978ddf8a876a0de0ec316a253bb390"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1501/review/source0-printed271.png",
+      "bytes": 242934,
+      "sha256": "bfe9c37c87929b3db8acbacbd51aee3c929902169f82e993df01c990438ba7db"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1501/review/source0-printed272.png",
+      "bytes": 300752,
+      "sha256": "a85a4ef256d9d822c909361df0b6293a88f3819e0259d58ee35152703702881a"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1501/review/source0-printed273.png",
+      "bytes": 255188,
+      "sha256": "155162c585d47d2cace2c64ad8ac0299ba57d82404d7327e8271bdb6324aaa11"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1501/review/source0-printed275.png",
+      "bytes": 264984,
+      "sha256": "8c34ea7acf180a77b8a0777b99c65b87404f437a7a62ead5c8d5db4fb6688fad"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1501/review/source1-printed308.png",
+      "bytes": 192784,
+      "sha256": "2e79b31323abc8969ea3b211b5a322f7ebd23b40f8f849caf495270c2b68ece2"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1501/review/source1-printed309.png",
+      "bytes": 212624,
+      "sha256": "7de2647a09883238a8bbe965bee671dfab5bb6447609498a19877c2c98716f0d"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1501/review/source2-printed428.png",
+      "bytes": 247217,
+      "sha256": "33928c47e1fec88334d12d9528899b73501fb9252cff8db8117b0ea081e31647"
+    }
+  ]
+}
