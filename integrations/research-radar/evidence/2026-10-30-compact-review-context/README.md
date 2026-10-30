@@ -39,3 +39,8 @@ The reviewer's additional supporting evidence remains conserved privately with i
 ## Literature and directed inventory boundaries
 
 PRIMARY1342.json binds selected reading of the historical20December2005Mitran author draft, newly indexed here rather than newly published. CATALOGUE-BOUNDARY1345.json records the OpenAI CM-Hodge namespace-maintenance announcement and unchangedCONTENTS/preprintstree; it certifies no formal solution/build. SOURCES1345/PINS1345 are directed12-endpoint inventory,4repositoryheads and9matching installed formal pins. Owner programme54adb99 is metadata only. No index entry becomes a new paper or proof audit. SUBGRAPH1345 is actual small canonical context; the core graph, routing and speculative candidate confidence stay unchanged.
+
+
+## Later source-location follow-up1346 (unscored)
+
+The scalar generator absent from the review's inspected15payloadpacket has now been located and hash-bound in an already-public original archive. The [direct source/archive route and read-only check](../2026-10-30-scalar-source1346/README.md) bind certificate779.py bf0255c5ec751622bf92a28e5e61cb8939f5c6ba859155c0d436a4f0b969cfbb and interval778.py4fa44ba0a03659707abc68a9ec0391c7375967aec7b69d0ebae533d1e38235d2 to the certificate actually retained by the campaign. This later author lookup resolves the direct availability pointer only: it does not retrospectively expand the reviewer's inspected inputs, execute integrals, attest historical binaries or remove O2's trusted-computation reservation. Full original report/O1–O5, exact PDF/source and ratings are unchanged.

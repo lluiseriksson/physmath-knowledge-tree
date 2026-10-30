@@ -1,0 +1,41 @@
+{
+  "J_cells_from_source_AST": [
+    [
+      "0",
+      "1/2"
+    ],
+    [
+      "1/2",
+      "2"
+    ],
+    [
+      "2",
+      "6"
+    ],
+    [
+      "6",
+      "20"
+    ]
+  ],
+  "campaign_certificate_bound": true,
+  "generator_executed": false,
+  "historical_backend_closure_attested": false,
+  "integrations_rerun": false,
+  "manifest_files_checked": 11,
+  "native_archive_payloads": 12,
+  "new_model_assessment": false,
+  "original_archive_sha256": "35b58032822963106bfea8e5f00ef48201bca754dc260c6233aa365ab8409dc2",
+  "precision_bits": [
+    128,
+    160
+  ],
+  "recorded_python_flint_version": "0.9.0",
+  "scalar_engine_T": 200,
+  "scope": "Provenance/source-location closure only; no historical execution, ball correctness, environment closure, theorem or score certification",
+  "source_pins": {
+    "CERTIFICATE779.json": "9b7374901ac3ec6a2d4870d3dcaaab8e07c61a718ef9fe8be287e3f8d209362b",
+    "certificate779.py": "bf0255c5ec751622bf92a28e5e61cb8939f5c6ba859155c0d436a4f0b969cfbb",
+    "interval778.py": "4fa44ba0a03659707abc68a9ec0391c7375967aec7b69d0ebae533d1e38235d2"
+  },
+  "status": "source availability and recorded bindings verified"
+}
