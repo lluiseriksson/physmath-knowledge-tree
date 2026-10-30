@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-30",
+  "task": "Single separate inspection of the frozen substantive extension 1368 closing the conditional uniform qubit constant over growing finite dimension and outcome count",
+  "requested_configuration": { "model": "gpt-6-astra", "reasoning_effort": "xhigh" },
+  "effective_configuration": { "model": null, "reasoning_effort": null, "attested": false, "reason": "No observable runtime identity or reasoning-effort metadata was available to this reviewer." },
+  "execution_context": { "shared_filesystem": true, "independence_verified": false, "blind_review_claimed": false, "reviewer_task_name": "/root/astra_uniform1368_component" },
+  "accepted_input": "alpha_+(E Psi) >= max(0,1-2r) for each finite square CPTP prefix with eta(Psi)<=r followed by finite-outcome qubit preparation",
+  "scope_limits": [
+    "No previous evaluations, grades or grading files opened",
+    "No prior assessment transferred",
+    "No lower-bound re-audit",
+    "No fixed-resource profile certified",
+    "No novelty, importance or separate-paper assessment",
+    "No repeated checker execution or restarted inspection",
+    "No original argument, original checker, original output, repository, global status, other chat or editorial case modified"
+  ],
+  "local_material_read": [
+    "D:/LEEME.md",
+    "C:/Trabajo/airr/2026-10-30_qubit-overlap1368/ARGUMENT1368.md (complete)",
+    "C:/Trabajo/airr/2026-10-30_qubit-overlap1368/checker1368.py (complete)",
+    "C:/Trabajo/airr/2026-10-30_qubit-overlap1368/EXACT1368.json (complete)",
+    "This inspection's own replay log and generated output"
+  ],
+  "ancestor_instruction_paths_checked_and_absent": [
+    "C:/AGENTS.md",
+    "C:/Trabajo/AGENTS.md",
+    "C:/Trabajo/airr/AGENTS.md",
+    "D:/AGENTS.md",
+    "D:/Proyectos/AGENTS.md",
+    "D:/Proyectos/airr-investigacion/AGENTS.md"
+  ],
+  "primary_source_policy": "Only the two cited versioned arXiv primary sources were consulted, with bounded relevant passages and incidental returned context; see source_pins.json. No coverage search performed.",
+  "local_output_root": "C:/Trabajo/airr/2026-10-30_uniform-review1368",
+  "preserved_output_root": "D:/Proyectos/airr-investigacion/2026-10-30_uniform-review1368",
+  "replay_directory": "replay_once",
+  "replay_execution_count": 1,
+  "python_observed": "3.12.6",
+  "sympy_observed_from_replay": "1.14.0",
+  "failures_or_discrepancies_observed": []
+}

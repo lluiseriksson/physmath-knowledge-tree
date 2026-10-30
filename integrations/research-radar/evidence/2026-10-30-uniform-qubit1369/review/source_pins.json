@@ -1,0 +1,58 @@
+{
+  "local_frozen_inputs": [
+    {
+      "path": "C:/Trabajo/airr/2026-10-30_qubit-overlap1368/ARGUMENT1368.md",
+      "sha256": "51e0636d5e2fca611758ed343afef649573f81891ced0257986f415890bb63f5",
+      "supplied_hash_matched": true,
+      "read_scope": "complete, lines 1-88",
+      "post_replay_hash_unchanged": true
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-30_qubit-overlap1368/checker1368.py",
+      "sha256": "59646b1ac3d07633d78eb3edf29c46eabb3bc7b82c9791777cf3f86258e0722d",
+      "supplied_hash_matched": true,
+      "read_scope": "complete",
+      "post_replay_hash_unchanged": true,
+      "replay_copy_sha256_matched": true
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-30_qubit-overlap1368/EXACT1368.json",
+      "sha256": "6772f4a5773d97388b3c8ab97316e588efe228f0298988cf9e68b599195426de",
+      "supplied_hash_matched": true,
+      "read_scope": "complete",
+      "post_replay_hash_unchanged": true,
+      "new_replay_output_byte_identical": true
+    }
+  ],
+  "primary_sources": [
+    {
+      "authors": "Guillaume Aubrun; Cecilia Lancien",
+      "title": "Zonoids and sparsification of quantum measurements",
+      "arxiv_version": "1309.6003v3",
+      "url": "https://arxiv.org/pdf/1309.6003v3",
+      "access_date": "2026-10-30",
+      "read_scope": "Section 2.1: Proposition 2.1 statement and displayed proof through the converse, printed pages 3-4; Corollary 2.2 statement and entire displayed proof, printed page 4; focus on barycenter and support preservation.",
+      "not_read_as_proof": "Deferred uniqueness argument after Proposition 2.5; remainder of article.",
+      "incidental_context": "Opening and find calls returned title, abstract, surrounding definitions and other occurrence snippets; no systematic full-article reading claimed.",
+      "supported_fact": "Finite POVM approximation preserving the barycenter and support is an existing antecedent; pure support is retained when the original support is pure.",
+      "pdf_downloaded": false,
+      "pdf_sha256": null,
+      "pin_type": "versioned primary URL and section/page locations; not a byte hash"
+    },
+    {
+      "authors": "William Matthews; Stephanie Wehner; Andreas Winter",
+      "title": "Distinguishability of quantum states under restricted families of measurements with an application to quantum data hiding",
+      "arxiv_version": "0810.2327v2",
+      "url": "https://arxiv.org/pdf/0810.2327v2",
+      "access_date": "2026-10-30",
+      "read_scope": "Definitions around equations (6)-(9) and Lemma 6 statement, printed page 6; Theorem 9 statement and equations (11)-(12), printed page 8; final proof paragraph for mu(U)=1/2, printed pages 9-10.",
+      "not_read_as_proof": "Appendix B; proof of the lambda(U) claims; remainder of article.",
+      "incidental_context": "Opening and targeted lookup returned initial context and contiguous passages including material on lambda(U); no systematic full-article reading or validation of that material claimed.",
+      "supported_fact": "The full-Hermitian upper domination constant is 1; the traceless-Hermitian upper constant of the uniform POVM is 1/2.",
+      "pdf_downloaded": false,
+      "pdf_sha256": null,
+      "pin_type": "versioned primary URL and section/page locations; not a byte hash"
+    }
+  ],
+  "literature_scope": "Bounded verification of stated antecedents only. No novelty or covering-prior-art conclusion."
+}

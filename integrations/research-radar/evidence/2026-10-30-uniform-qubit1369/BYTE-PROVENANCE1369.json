@@ -1,0 +1,131 @@
+{
+  "files": [
+    {
+      "file": "ARGUMENT1368.md",
+      "native_sha256": "51e0636d5e2fca611758ed343afef649573f81891ced0257986f415890bb63f5",
+      "public_lf_sha256": "51e0636d5e2fca611758ed343afef649573f81891ced0257986f415890bb63f5",
+      "byte_identical": true,
+      "native_zip_member": "ARGUMENT1368.md"
+    },
+    {
+      "file": "checker1368.py",
+      "native_sha256": "59646b1ac3d07633d78eb3edf29c46eabb3bc7b82c9791777cf3f86258e0722d",
+      "public_lf_sha256": "59646b1ac3d07633d78eb3edf29c46eabb3bc7b82c9791777cf3f86258e0722d",
+      "byte_identical": true,
+      "native_zip_member": "checker1368.py"
+    },
+    {
+      "file": "EXACT1368.json",
+      "native_sha256": "6772f4a5773d97388b3c8ab97316e588efe228f0298988cf9e68b599195426de",
+      "public_lf_sha256": "6772f4a5773d97388b3c8ab97316e588efe228f0298988cf9e68b599195426de",
+      "byte_identical": true,
+      "native_zip_member": "EXACT1368.json"
+    },
+    {
+      "file": "PRIMARY-PINS1368.json",
+      "native_sha256": "be6f2a790bff202ded79f56c1bca4ce6b3ec431dfbe888b7dcf911707f7168b2",
+      "public_lf_sha256": "be6f2a790bff202ded79f56c1bca4ce6b3ec431dfbe888b7dcf911707f7168b2",
+      "byte_identical": true,
+      "native_zip_member": "PRIMARY-PINS1368.json"
+    },
+    {
+      "file": "review/context.json",
+      "native_sha256": "9206899d3dadb66dbd1640d874d836cf05fb6b48d27e0ddbbccb180e7ffcc911",
+      "public_lf_sha256": "9206899d3dadb66dbd1640d874d836cf05fb6b48d27e0ddbbccb180e7ffcc911",
+      "byte_identical": true,
+      "native_zip_member": "review/context.json"
+    },
+    {
+      "file": "review/copy_verification.json",
+      "native_sha256": "bc4333e7be05ed0899d76a017ede61bb102672674c29e331c6af551d73fb71f3",
+      "public_lf_sha256": "0da8499c56ca383814a63bceeb882dcf3e0be6bb1a1b27870efe06df27752891",
+      "byte_identical": false,
+      "native_zip_member": "review/copy_verification.json"
+    },
+    {
+      "file": "review/copy_verification.sha256",
+      "native_sha256": "1d9a9d4346daee59492bdfdf900e5cd66f865a308523f35568b11b6656b6eb08",
+      "public_lf_sha256": "bdabf88762175867abe11ae2fe4b0498f106ee2e7dcbbc15fb8d1cbb4eaf0964",
+      "byte_identical": false,
+      "native_zip_member": "review/copy_verification.sha256"
+    },
+    {
+      "file": "review/replay_comparison.json",
+      "native_sha256": "8657950d08e81698cb15adc52926bae2d277fe328d9f84eb294883eeb71d805c",
+      "public_lf_sha256": "8657950d08e81698cb15adc52926bae2d277fe328d9f84eb294883eeb71d805c",
+      "byte_identical": true,
+      "native_zip_member": "review/replay_comparison.json"
+    },
+    {
+      "file": "review/replay_execution.json",
+      "native_sha256": "ebcb1a852e45465a974b90ac4a3b76932399e737981159527da34adb396aacc6",
+      "public_lf_sha256": "3df8834e765b28114ef5e93899ae9f250f2ba67abf758077e2d23d4b4f13caa6",
+      "byte_identical": false,
+      "native_zip_member": "review/replay_execution.json"
+    },
+    {
+      "file": "review/report.txt",
+      "native_sha256": "62621e0bf9f6a6d431d6ee5b2df9abb621240c758de9a050dbbe7a2b1a7e0ae8",
+      "public_lf_sha256": "62621e0bf9f6a6d431d6ee5b2df9abb621240c758de9a050dbbe7a2b1a7e0ae8",
+      "byte_identical": true,
+      "native_zip_member": "review/report.txt"
+    },
+    {
+      "file": "review/source_pins.json",
+      "native_sha256": "3454893206370008235bb61966541855fc881c9552d6e497aebb41a0780fe3a5",
+      "public_lf_sha256": "3454893206370008235bb61966541855fc881c9552d6e497aebb41a0780fe3a5",
+      "byte_identical": true,
+      "native_zip_member": "review/source_pins.json"
+    },
+    {
+      "file": "review/verdict.json",
+      "native_sha256": "2b1e7def01692cca06a69bd51d69022181fc593417ce0fa869606e7bfa3c2ff0",
+      "public_lf_sha256": "2b1e7def01692cca06a69bd51d69022181fc593417ce0fa869606e7bfa3c2ff0",
+      "byte_identical": true,
+      "native_zip_member": "review/verdict.json"
+    },
+    {
+      "file": "review/replay_once/checker1368.py",
+      "native_sha256": "59646b1ac3d07633d78eb3edf29c46eabb3bc7b82c9791777cf3f86258e0722d",
+      "public_lf_sha256": "59646b1ac3d07633d78eb3edf29c46eabb3bc7b82c9791777cf3f86258e0722d",
+      "byte_identical": true,
+      "native_zip_member": "review/replay_once/checker1368.py"
+    },
+    {
+      "file": "review/replay_once/EXACT1368.json",
+      "native_sha256": "6772f4a5773d97388b3c8ab97316e588efe228f0298988cf9e68b599195426de",
+      "public_lf_sha256": "6772f4a5773d97388b3c8ab97316e588efe228f0298988cf9e68b599195426de",
+      "byte_identical": true,
+      "native_zip_member": "review/replay_once/EXACT1368.json"
+    },
+    {
+      "file": "SCOPE1369.md",
+      "native_sha256": "94c7bf88327f7a85a1b703f57b45b5db4bfc2da11df0dc9cd980a18db4cbf55a",
+      "public_lf_sha256": "94c7bf88327f7a85a1b703f57b45b5db4bfc2da11df0dc9cd980a18db4cbf55a",
+      "byte_identical": true,
+      "native_zip_member": "SCOPE1369.md"
+    },
+    {
+      "file": "SOURCES1369.json",
+      "native_sha256": "d00e706c9e5d6c9344497765c276d9bf0781fdbb4fefa110d02d35d3364c6c66",
+      "public_lf_sha256": "d00e706c9e5d6c9344497765c276d9bf0781fdbb4fefa110d02d35d3364c6c66",
+      "byte_identical": true,
+      "native_zip_member": "SOURCES1369.json"
+    },
+    {
+      "file": "PINS1369.json",
+      "native_sha256": "48b408be45f9db03812cf9e1fb2fbbd08af87c98e373baceb050afbaf620eb3d",
+      "public_lf_sha256": "48b408be45f9db03812cf9e1fb2fbbd08af87c98e373baceb050afbaf620eb3d",
+      "byte_identical": true,
+      "native_zip_member": "PINS1369.json"
+    },
+    {
+      "file": "SUBGRAPH-QUBIT1369.json",
+      "native_sha256": "e0ce63091fe5a1d7aee17d9e87d8bc3a1b7778e93b13b8acaa640549b6a087ad",
+      "public_lf_sha256": "e0ce63091fe5a1d7aee17d9e87d8bc3a1b7778e93b13b8acaa640549b6a087ad",
+      "byte_identical": true,
+      "native_zip_member": "SUBGRAPH-QUBIT1369.json"
+    }
+  ],
+  "scope": "Native18own inputs/review/metadata preserved, readable projections only normalize CRLF to LF. No private root state, access records, author case, credentials or foreign article bodies."
+}

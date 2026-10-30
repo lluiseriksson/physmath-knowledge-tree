@@ -1632,6 +1632,22 @@
       "anchors": [
         "domain.quantum_information_theory"
       ]
+    },
+    {
+      "id": "aubrun-lancien-zonoid-povm-2013-scoped",
+      "title": "Zonoids and sparsification of quantum measurements",
+      "url": "https://arxiv.org/abs/1309.6003v3",
+      "kind": "preprint",
+      "published_on": "2013-09-23",
+      "observed_on": "2026-10-30",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Selected Proposition2.1 barycenter representation and Corollary2.2 statement/local proof give support- and exact-barycenter-preserving finite POVM approximation; pure support can be preserved.",
+      "limits": "Firstpreprint2013-09-23, v3 2015-06-13, Positivity20(1),1-23(2016), DOI10.1007/s11117-015-0337-5. Historical source newly indexed, not new2026publication. No fullpaper/main sparsification-rate proof audit or covering-prior-art/novelty certification for the factorized transfer.",
+      "reuse": "Metadata and own synthesis only; no foreign article body, figure, corpus or task data retained.",
+      "anchors": [
+        "domain.quantum_information_theory"
+      ]
     }
   ],
   "candidates": [
@@ -2099,7 +2115,8 @@
         "george-doeblin-2026-scoped",
         "hirche-doeblin-2024-scoped",
         "delsol-fawzi-trace-contraction-v3-scoped",
-        "matthews-wehner-winter-measurement-norms-2008-scoped"
+        "matthews-wehner-winter-measurement-norms-2008-scoped",
+        "aubrun-lancien-zonoid-povm-2013-scoped"
       ],
       "node_ids": [
         "domain.probability_stochastics",
@@ -2110,8 +2127,8 @@
       "lost_or_unproved": "Exact five-page1211 note is published with full review: overall3.5, technical8.5, importance3.0 for PDF65b320... only. Broader candidate and optional1212 joint-cardinality supplement remain unscored; originality, global all-d/k/N fixed-output envelope and actual new application unresolved. Effective reviewer identity/effort/independence unattested. No arbitrary-instrument, complete-coefficient optimality, capacity, full limit theorem or Lean proof claimed.",
       "hypothesis_to_remove": "Replace finite prepared-label count N in the source sufficient1-N*q^(L-1) argument by a dimension-only1-(d-1)*q^(L-1) bound, allowing standard-Borel prepared outcomes under stated measurability.",
       "falsifier": "A valid-assumption violation of osc(Psi*(F))<=r*osc(F) or the final-preparation kernel identity refutes the component. Pauli and deterministic depolarizing instruments already refute the unrestricted transfer and TV/Wasserstein identification. A covering antecedent defeats novelty.",
-      "next_finite_task": "1365single unscored inspection supports qubit Bloch/positive-dual dimension elimination and exact JOINT d4/k2/N4profile after explicit preparation quantification; arbitrary fixedEreading refuted. Integrate this extension, not another minorpaper. Exact antecedent overlap, practical application and wider sharpness remain unresolved; do not rerun reviews, inheritPDFgrades or add randomseeds.",
-      "review_packet": "One unscored terminal component audit1208, requestedGPT6Astraxhigh, fork-none requested/sharedfilesystem; effectiveidentity,effort,independenceunattested. ReportSHAb8cf457ea9bb82346d59d5fc5c4e6dccb1f9c995c997af827934ef7fe0291dc2; verdictSHA7ab50c2359efb01e291e5f81aebead18bd7afd7e3c44bda57181aa42d0804e6d. All13frozen input identities and21output bytes verified and archived. Scoped minorization, CP remainder, equal-reference consequences and positive common-component envelope supported; noveltyunresolved. Two minor presentation/coverage corrections; rawLF/CRLFfailure and adverse extensions preserved. No PDF assessment, grade or extra vote. BSC/involution sketch excluded. Full-PDF REVIEW1211 completed subsequently and published with exactPDF65b320e9a3277ce6565ec3496acf3466f1d59313c1c3aafc016f573eec08bd71 at https://airr.science/notes/ARR-2026-1PBZ1Q7T588FW9M1/versions/v1/#model-assessments . Overall3.5, technical8.5, importance3.0; minor_revision; no material error found; O1-O4 retained. ReportSHAac9794b0e35217253234874d6d1541d077ce9a1ad1406d1d973d0ce6ee1f81be; effectiveconfiguration/independenceunattested; operator serialization same vote. This does not grade the wider candidate or optional1212 extension. Separate1351unscored component audit supports the finite positive-dual bound and exactd3/k2/N3envelope, with two nonblocking clarifications and prior-unscored-summary exposure. Full original report69b2702c5966481bfdb17bc2260dd07e41ced824f3b952c53f517a99bd9b6f36 preserved; no new manuscript grade, blind/independent-review or formalproof claim. One unscored1365component inspection supports the qubit bounds and tetrahedral witness, with required joint-preparation quantifier clarification and byte-identical result rewrite retained. Complete reportSHAf576d8fa17efa3e2b5c70da69183161c49e154bc76da12796aa8616a0e787e15; effectiveidentity/effort/independenceunattested. No new manuscript or numericgrade.",
+      "next_finite_task": "Universalqubit coefficient2closure over growing finite d,N now integrated conditionally on1365lowerbound. This route is CLOSED; do not repeat reviews, frame tables or another corollary paper. Fixed-resource envelopes, exactcoveringpriorart and a substantive constrained application remain unresolved. Select a defined material resource/application question only with a mechanism and falsifier; keep every d,N/E quantifier and no score inheritance.",
+      "review_packet": "One unscored terminal component audit1208, requestedGPT6Astraxhigh, fork-none requested/sharedfilesystem; effectiveidentity,effort,independenceunattested. ReportSHAb8cf457ea9bb82346d59d5fc5c4e6dccb1f9c995c997af827934ef7fe0291dc2; verdictSHA7ab50c2359efb01e291e5f81aebead18bd7afd7e3c44bda57181aa42d0804e6d. All13frozen input identities and21output bytes verified and archived. Scoped minorization, CP remainder, equal-reference consequences and positive common-component envelope supported; noveltyunresolved. Two minor presentation/coverage corrections; rawLF/CRLFfailure and adverse extensions preserved. No PDF assessment, grade or extra vote. BSC/involution sketch excluded. Full-PDF REVIEW1211 completed subsequently and published with exactPDF65b320e9a3277ce6565ec3496acf3466f1d59313c1c3aafc016f573eec08bd71 at https://airr.science/notes/ARR-2026-1PBZ1Q7T588FW9M1/versions/v1/#model-assessments . Overall3.5, technical8.5, importance3.0; minor_revision; no material error found; O1-O4 retained. ReportSHAac9794b0e35217253234874d6d1541d077ce9a1ad1406d1d973d0ce6ee1f81be; effectiveconfiguration/independenceunattested; operator serialization same vote. This does not grade the wider candidate or optional1212 extension. Separate1351unscored component audit supports the finite positive-dual bound and exactd3/k2/N3envelope, with two nonblocking clarifications and prior-unscored-summary exposure. Full original report69b2702c5966481bfdb17bc2260dd07e41ced824f3b952c53f517a99bd9b6f36 preserved; no new manuscript grade, blind/independent-review or formalproof claim. One unscored1365component inspection supports the qubit bounds and tetrahedral witness, with required joint-preparation quantifier clarification and byte-identical result rewrite retained. Complete reportSHAf576d8fa17efa3e2b5c70da69183161c49e154bc76da12796aa8616a0e787e15; effectiveidentity/effort/independenceunattested. No new manuscript or numericgrade. One1368unscored conditional inspection accepts1365lowerbound asINPUT, supports weightedpureframe/full-prefixcontraction/uniformquadrature/union-infimum closure; fullreportSHA62621e0bf9f6a6d431d6ee5b2df9abb621240c758de9a050dbbe7a2b1a7e0ae8. Equivalently->Consequently precision retained. Onecopiedchecker replay,byteidenticalJSON,originalsuntouched. Effectiveidentity/effort/independenceunattested; noPDFassessment/grade or lowerboundre-audit.",
       "fixed_output_component": {
         "status": "single_unscored_component_audit_supported_with_nonblocking_clarifications",
         "evidence": "integrations/research-radar/evidence/2026-10-30-output-qubit1353/README.md",
@@ -2132,6 +2149,18 @@
         "sharp_scope": "d4/k2/N4 joint infimum over prefix, terminal POVM and prepared states, eta(prefix)<=r: max(0,1-sqrt(3)r)",
         "rejected": "Same profile for every arbitrary fixedE is false; four identical prepared states give alpha_+=1.",
         "limits": "Known alpha_+ definition/application and spherical measurement antecedents attributed; exact covering prior art unresolved. Universal2not claimed sharp, no all-d/k/N result or PDFassessment.",
+        "new_manuscript_or_score": false
+      },
+      "uniform_qubit_component": {
+        "status": "single_conditional_unscored_inspection_supported_with_wording_precision",
+        "evidence": "integrations/research-radar/evidence/2026-10-30-uniform-qubit1369/README.md",
+        "argument_sha256": "51e0636d5e2fca611758ed343afef649573f81891ced0257986f415890bb63f5",
+        "native_report_sha256": "62621e0bf9f6a6d431d6ee5b2df9abb621240c758de9a050dbbe7a2b1a7e0ae8",
+        "accepted_lower_bound": "1365alpha_+>=max(0,1-2r), not re-audited in1368",
+        "sharp_scope": "Joint infimum over UNION of all finite d>=2,N and admissible prefix/terminalPOVM/preparedstates equals max(0,1-2r).",
+        "resource_cost": "Explicit d=N=2q^2 grows; no finite minimizer in full class at r1/2 asserted.",
+        "known_antecedent": "Pure-support/barycenter finite POVM approximation already Aubrun–Lancien1309.6003v3Cor2.2.",
+        "limits": "Not a fixed-resource or arbitrary-fixed-E profile, complete-contraction optimum, novelty certificate, manuscript or formal theorem.",
         "new_manuscript_or_score": false
       }
     },
@@ -2316,6 +2345,10 @@
     "followup1367": {
       "evidence": "integrations/research-radar/evidence/2026-10-30-qubit-geometry1367/MANIFEST1367.json",
       "scope": "One existing candidate extended, one historical2008source added, one actual complete unscored report with objections/context/nativebytes. Directed12endpoint inventory,9pinneddependencies,4HEADmetadata. No canonicalgraph/confidence change, newpaper, grade or corpus."
+    },
+    "followup1369": {
+      "evidence": "integrations/research-radar/evidence/2026-10-30-uniform-qubit1369/MANIFEST1369.json",
+      "scope": "Same candidate closure, historical2013source added and one actual full unscored conditional report preserved; no newpaper/grade/corpus/graph confidence change. Directed12primaryinventory/9formalpinmatches/4HEADmetadata."
     }
   }
 }

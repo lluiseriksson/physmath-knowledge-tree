@@ -1,0 +1,137 @@
+INSPECCIÓN MATEMÁTICA DE COMPONENTE 1368
+Fecha: 2026-10-30. Una sola inspección; sin calificaciones ni objetivo de nota.
+
+CONCLUSIÓN Y DEPENDENCIA
+
+No he identificado una objeción matemática que invalide la construcción o el cierre propuesto. Tomando explícitamente como INPUT la cota universal alpha_+ >= max(0,1-2r), la prueba establece
+
+  inf_{d>=2, N finitos} inf_{C_(d,N)(r)} alpha_+(E Psi)
+       = max(0,1-2r),  0<=r<=1.
+
+También demuestra que cualquier coeficiente universal 0<=c<2 falla. La parte que produce esos contraejemplos no necesita la cota inferior; la validez de c=2 y la igualdad completa del perfil sí dependen del input aceptado. Esto se refiere a la unión sobre dimensiones y números de resultados finitos, que pueden crecer. No certifica perfiles con d,N fijos, optimalidad para cada preparación fija ni existencia de un minimizador finito en r=1/2.
+
+Hay una precisión de redacción, no un obstáculo para la prueba: en la línea 18 del argumento, «Equivalently» presenta como equivalentes la igualdad de todo el perfil y la optimalidad de un único coeficiente. La primera implica la segunda, pero la segunda por sí sola no determina todo el perfil. Sustituir esa palabra por «In particular» dejaría exacta la relación lógica. Las secciones posteriores prueban efectivamente ambas afirmaciones y no usan esa equivalencia en sentido inverso. No he modificado el original.
+
+ALCANCE, IDENTIDAD Y MATERIAL
+
+Leí completo ARGUMENT1368.md (88 líneas), completo checker1368.py y completo EXACT1368.json. Los tres SHA256 coinciden con los suministrados y continuaban iguales en la comprobación posterior. No abrí la inspección anterior, calificaciones ni expedientes ajenos. La cifra citada para el caso d=4,N=4 en la línea 18 pertenece al antecedente y no se vuelve a certificar aquí; no interviene en el cierre revisado. Tampoco inspeccioné el grafo ni su confianza canónica.
+
+Configuración solicitada: gpt-6-astra / xhigh. No dispongo en esta inspección de un dato observable de ejecución que ateste el identificador efectivo del modelo o el esfuerzo efectivo. Por tanto no los atesto. Es una revisión separada dentro de un entorno de agentes con filesystem compartido; la independencia de ejecución no está verificada. No se presenta como revisión ciega ni como certificación formal.
+
+No evalué novedad, importancia, adecuación editorial ni publicación separada. La revisión no reinició la evaluación previa ni transfirió sus resultados. No realicé campañas numéricas, tareas de corpus, estadísticas AIRR, pagos ni operaciones administrativas.
+
+1. FRAME BALANCEADO, NORMALIZACIÓN Y FACTORIZACIÓN
+
+Con w_y>0, sum_y w_y=1, |n_y|=1 y sum_y w_y n_y=0, cada sigma_y=(I+n_y.sigma)/2 es un estado puro y sum_y w_y sigma_y=I/2. El bloque lógico de H_y(u) puede escribirse
+
+  w_y I_2 + u w_y (n_y.sigma)^T.
+
+Sus autovalores son w_y(1+u) y w_y(1-u). El bloque complementario tiene autovalor w_y. Son no negativos para 0<=u<=1. La suma de efectos es I_d, porque el primer momento se anula exactamente, también después de transponer.
+
+El canal que mide estos efectos y escribe el resultado en |y><y| es completamente positivo y preserva la traza. Tomar d=N hace que su dominio y su codominio sean M_d, como exige el prefijo cuadrado. Los F_y=|y><y| forman una medición proyectiva de N resultados sobre ese mismo espacio. La preparación final tiene salida qubit. No se introduce ninguna etiqueta continua dentro de una salida finita. El caso d=2 no necesita bloque complementario y la misma demostración se aplica.
+
+2. CONTRACCIÓN SOBRE TODA LA ENTRADA
+
+Para un canal de medición con efectos H_y y X=X*, Tr X=0, los números x_y=Tr(H_y X) suman cero. Por eso
+
+  ||Psi(X)||_1 = sum_y |x_y| = 2 max_S Tr(H_S X),
+  H_S = sum_{y in S} H_y.
+
+La descomposición de Jordan escribe X=(||X||_1/2)(rho_+-rho_-), con estados de soportes ortogonales cuando X es no nulo. Así, para cada S,
+
+  2 Tr(H_S X)/||X||_1 <= lambda_max(H_S)-lambda_min(H_S).
+
+La igualdad en el máximo global se consigue con estados propios extremos del H_S que maximiza esa anchura. Si la anchura es cero, el resultado es trivial. Esto prueba, con la convención ordinaria de distancia de traza, eta(Psi)=max_S diam(spec H_S). Los factores 1/2 de la distancia se cancelan en el cociente. No se está usando una contracción asistida por ancilla.
+
+Sea v_S=sum_{y in S} w_y n_y y w_S=sum_{y in S} w_y. El espectro de H_S(u) es w_S +/- u|v_S| en el bloque lógico, junto a w_S en el complementario. Este último valor pertenece al intervalo entre los extremos. En consecuencia la anchura sobre TODO C^d es 2u|v_S|. Las coherencias entre los dos bloques no cambian esa anchura ni permiten superar la desigualdad de Jordan anterior.
+
+Finalmente,
+
+  max_{|a|=1} sum_y w_y |a.n_y|
+   = max_{epsilon_y=+/-1} |sum_y epsilon_y w_y n_y|
+   = 2 max_S |v_S|.
+
+La segunda igualdad usa sum_y w_y n_y=0. Con ello eta(Psi_u)=u t_frame exactamente, no sólo una cota superior ni una optimización restringida al bloque lógico. La transposición refleja la coordenada Y del vector de Bloch mediante una transformación ortogonal y conserva |v_S| y el máximo sobre a.
+
+3. TRANSPOSE COMPLEJO, KERNEL SINGLETE Y alpha_+
+
+En la convención Choi declarada, el efecto de entrada aparece como H_y(u)^T. Por tanto el transpose ya insertado en el bloque lógico se cancela y el bloque de J_1 es 2 sum_y w_y sigma_y tensor sigma_y, sin conjugación residual de uno de los dos estados. Este detalle es correcto también cuando las entradas de sigma_y son complejas.
+
+Escribiendo sigma_y=|psi_y><psi_y|, su producto tensorial tiene soporte sobre |psi_y> tensor |psi_y>, un vector simétrico. El singlete z=(|0,1>-|1,0>)/sqrt(2), embebido en el bloque lógico de entrada por la salida qubit, es ortogonal a todos esos vectores. Por ello J_1 z=0. La demostración sólo exige pureza; no usa isotropía del segundo momento ni un 2-design.
+
+El bloque complementario de J_1 es I_(d-2) tensor sum_y w_y sigma_y = I_(d-2) tensor I_2/2, y no hay bloques cruzados. En u=0, J_0=I_d tensor I_2/2. De aquí resulta la interpolación exacta J_u=(1-u)J_0+uJ_1.
+
+Para u en el intervalo permitido, W_0=(1-u)I_2/2 es positivo y J_u-I_d tensor W_0=uJ_1 es positivo. Esto da alpha_+>=1-u. Para cualquier W factible,
+
+  <z|J_u|z> = (1-u)/2,
+  <z|I_d tensor W|z> = Tr(W)/2,
+
+de modo que Tr W<=1-u. Se obtiene alpha_+=1-u sin invocar dualidad fuerte ni condiciones de interior. Z=2|z><z| también da un testigo dual válido: Tr_entrada Z=I_2 y Tr(J_u Z)=1-u. Si se formula el dual completo para W>=0, su restricción es Tr_entrada Z>=I_2; la igualdad del testigo satisface esa restricción.
+
+4. CUADRATURA ANTIPODAL Y ERROR UNIFORME
+
+La integral del área normalizada sobre una celda de anchura azimutal pi/q es
+
+  (1/(4pi)) (pi/q) [cos(jpi/q)-cos((j+1)pi/q)],
+
+exactamente el peso dado. Es positivo. Al sumar las 2q celdas azimutales y telescopar en j, la suma de pesos es 1. El mapa (j,ell)->(q-1-j,ell+q mod 2q) conserva el peso y cambia n por -n. Así se obtiene el primer momento nulo con igualdad algebraica. El argumento no sustituye este requisito por un balance aproximado.
+
+Si n pertenece a la celda de n_y, un recorrido por meridiano y paralelo tiene longitud a lo sumo pi/(2q)+sin(theta)pi/(2q)<=pi/q; se puede tomar theta como la latitud polar del punto al que llega el primer tramo. La cuerda euclídea no supera esa longitud. El tratamiento de los polos y bordes no afecta a las integrales.
+
+Para cualquier a unitario, ||a.n|-|a.n_y||<=|n-n_y|. Al integrar por celdas resulta
+
+  |sum_y w_y |a.n_y| - integral_S2 |a.n| dmu(n)|
+       <= sum_y integral_celda_y |n-n_y| dmu(n) <= pi/q.
+
+La última cantidad es independiente de a: esto prueba uniformidad real, no convergencia puntual seguida de un intercambio injustificado con un máximo. Por invariancia rotacional, la integral restante es (1/2) integral_{-1}^1 |s| ds=1/2. De ahí t_q<=1/2+pi/q. Promediando ahora la suma FINITA sobre a, su media también es 1/2, y por ello t_q>=1/2. Además |a.n_y|<=1 da t_q<=1. Las tres desigualdades justifican t_q->1/2.
+
+Los ángulos son múltiplos racionales de pi, por lo que sus senos y cosenos, los pesos y las entradas de los estados son algebraicos. No se requiere evaluar numéricamente un máximo sobre la esfera para definir o justificar la familia. El costo d_q=N_q=2q^2 se mantiene explícito.
+
+5. PASO AL ÍNFIMO, EXTREMOS Y CONSTANTE UNIFORME
+
+Como t_q>=1/2>0, u_q=min(1,r/t_q) está bien definido en [0,1]. Cada canal satisface eta=min(t_q,r)<=r y alpha_+=max(0,1-r/t_q). La continuidad en t>0 de esta última expresión y t_q->1/2 dan la sucesión de valores propuesta.
+
+Para cada q, el ínfimo de la unión es menor o igual que el valor de ese miembro finito. Pasar al límite proporciona F_union(r)<=max(0,1-2r). El INPUT universal proporciona la desigualdad contraria para cada miembro y, por tanto, también para el ínfimo. No hace falta construir un canal límite de dimensión infinita ni pasar un ínfimo a través de un límite de canales.
+
+En r=0, u=0 alcanza alpha_+=1. En r>1/2 se puede elegir q finito con pi/q<r-1/2; entonces t_q<r y u=1 alcanza cero. En r=1/2 sólo se obtiene aquí un ínfimo cero. Para 0<r<1/2 tampoco se demuestra un optimizador finito general.
+
+Como observación adicional limitada a ESTA familia de frames finitos, t_frame es estrictamente mayor que 1/2. Si fuese igual, la función continua f(a)=sum_y w_y|a.n_y|, con media 1/2, tendría que ser constante 1/2 en toda la esfera. En cualquier abierto que evite los finitos círculos a.n_y=0, los signos son fijos y f(a)=a.v para un vector fijo v. Una función lineal no puede valer una constante positiva en un abierto de la esfera. Esto excluye la igualdad. Así, los miembros finitos aquí construidos no alcanzan cero en r=1/2; esta observación no excluye otros canales fuera de la familia y no resuelve el alcanzamiento en toda la clase.
+
+Para 0<c<2, basta tomar q con 1/2+pi/q<1/c. En u=1 se tiene alpha_+=0 y eta=t_q<1/c, contradiciendo la pretendida cota con c. Para c=0 cualquier miembro con u=1 sirve. Se establece la imposibilidad de mejorar el coeficiente uniformemente, sin reclamar un resultado con recursos fijos.
+
+6. INSPECCIÓN DEL CÓDIGO Y REPLAY ÚNICO
+
+El script sólo construye el caso q=2, d=N=8 en SymPy exacto, conserva el Pauli Y complejo y enumera los 256 subconjuntos. Verifica suma de pesos, primer momento, pureza, normalización de efectos, interpolación Choi, kernel, marginal y objetivo del testigo, factibilidad algebraica y el máximo de sumas de subconjuntos. Comprueba además que el segundo momento no es I_3/3 y que eliminar un átomo y renormalizar rompe el primer momento.
+
+La positividad para 0<=u<=1 y la identidad general de contracción se justifican analíticamente arriba; no son sustituidas por una prueba automatizada independiente del código. El espectro se calcula y se registra en el JSON, sin una aserción específica contra una tabla espectral esperada; comprobé que coincide con lo anunciado. El script no demuestra la cuadratura, el límite ni la cota inferior de entrada.
+
+Creé una carpeta C: nueva y una subcarpeta replay_once vacía. Copié a esta última solamente checker1368.py, verifiqué su hash y lo ejecuté UNA vez mediante PowerShell con C:/Python312/python.exe. No se ejecutó sobre los originales; no se copió el JSON anterior al replay. Su salida exclusiva creó el JSON nuevo sin colisión.
+
+Ejecución: 2026-10-30T05:13:26.0167733Z a 05:13:27.6682424Z.
+Python observado: 3.12.6. SymPy declarado por la ejecución: 1.14.0.
+Exit code: 0. Estado: all_exact_assertions_passed.
+Resultado: t_2=1/sqrt(2), eta=u/sqrt(2), alpha_+=1-u.
+Segundo momento: diag(1/4,1/4,1/2), deliberadamente anisótropo.
+Espectro de J_1: 3/4 con multiplicidad 2; 1/2 con multiplicidad 13; 0 con multiplicidad 1.
+JSON original y replay: 817 bytes, ambos SHA256
+6772f4a5773d97388b3c8ab97316e588efe228f0298988cf9e68b599195426de.
+
+La comparación es byte a byte, no una comparación tolerante ni sólo de campos seleccionados. No hubo fallo de ejecución ni discrepancia. No se hicieron reintentos del checker ni nuevas variantes.
+
+7. FUENTES PRIMARIAS: QUÉ SE CONSULTÓ
+
+Aubrun–Lancien, Zonoids and sparsification of quantum measurements, arXiv:1309.6003v3:
+https://arxiv.org/pdf/1309.6003v3
+Consulté la sección 2.1: enunciado y argumento disponible de la Proposición 2.1 (páginas impresas 3–4), y enunciado y prueba de Corolario 2.2 (página impresa 4), particularmente la conservación del baricentro y del soporte. El corolario ya suministra aproximaciones finitas con soporte contenido en el original; si éste es puro, se mantiene puro. No atribuyo esa aproximación a este argumento. No inspeccioné el resultado de unicidad remitido a la sección siguiente.
+
+Matthews–Wehner–Winter, Distinguishability of quantum states under restricted families of measurements with an application to quantum data hiding, arXiv:0810.2327v2:
+https://arxiv.org/pdf/0810.2327v2
+Consulté la distinción entre mu_1 y mu en las ecuaciones (6)–(9) y el enunciado de Lemma 6 (página impresa 6); el enunciado de Theorem 9, ecuaciones (11)–(12) (página 8); y el argumento específico de mu(U)=1/2 al final de su prueba (páginas 9–10). Apoya la distinción declarada entre operadores hermíticos generales y los de traza cero. No inspeccioné Appendix B ni reaudité la parte de lambda(U).
+
+El navegador devolvió además contexto contiguo y encabezamientos al abrir y localizar esos pasajes. No leí sistemáticamente ninguno de los dos artículos completos. No descargué ni hice hash de los PDF; source_pins.json fija URL, versión y localización, y lo declara. No consulté otras fuentes ni hice una búsqueda de cobertura bibliográfica. Estos pasajes confirman antecedentes delimitados; no certifican novedad o ausencia de precedentes del traslado al kernel/Choi ni de la envolvente.
+
+8. OBJECIONES, LIMITACIONES Y CONSERVACIÓN
+
+No hay objeción invalidante identificada en las partes analíticas inspeccionadas. La precisión editorial sobre «Equivalently» está localizada arriba. Deben conservarse la hipótesis externa de la cota inferior, el cuantificador conjunto sobre d,N, la ausencia de afirmación general de alcanzamiento en r=1/2 y la separación entre un control exacto finito y la prueba analítica general.
+
+Los originales no se modificaron. Los artefactos de esta inspección y su replay se conservan en C:/Trabajo/airr/2026-10-30_uniform-review1368 y, con hashes idénticos, en D:/Proyectos/airr-investigacion/2026-10-30_uniform-review1368. La verificación de copias está en copy_verification.json; sus hashes quedan en copy_verification.sha256. source_pins.json registra los hashes de entrada, context.json registra el alcance y las limitaciones de identidad e independencia, y verdict.json contiene únicamente la conclusión cualitativa y sus condiciones. Ningún archivo de evaluación anterior, repositorio o ESTADO global fue modificado.
