@@ -1,0 +1,11 @@
+# Kernel-preserving continuation and stop gate
+
+This extends the existing method packet, with no new paper, model assessment or sign certificate. ARGUMENT1380.md gives an unreviewed all-complex index derivation of BJ_a=AJ_a, using M=Gamma_FIRST(A)J_a and J_a*M=bar(H). coefficient-control.py checks all three encoded coefficients and nine cross-coefficients against the pinned own table. It is read-only, stdlib-only and uses the same producer's integer assertions. The initial metadata failure and separate native/portable hashes remain in TRANSPORT1382.json. The identity establishes kernel inclusion, not exact kernel equality or a quotient gap.
+
+The projected approximation Bhat_m=Q B_m Q+AK+KA-KAK retains Bhat_m K=AK and localizes B-Bhat_m to Q. Its sufficient target A±Bhat_m-e_mQ>=0, e_m=1331/[32*5^(m+1)], is still unproved for all pure logical states. The old FULL-SPACE reserve remains refuted at every degree and is not reactivated.
+
+CONFIG1381.json and RESULT1381.json retain ONE predeclared necessary m4check on the already known psi0member. The floating eigenvalues are not intervals, fixed-member PSD proofs, universal bounds or a new scientific review. No negative witness was found. No additional logical anchors, seeds, optimizers, dense SOS expansion or formal overflow certification were used. The numerical helper is not presented as a portable campaign; its limited output is an inconclusive diagnostic.
+
+INTERPRETATION1381.md records the remaining Schur coupling and the resource gate; RESOURCE-GATE1381.json is an illustrative dense-lift size, not an algorithmic lower bound. Park generic numeric/dense-SOS attempts until an actual factorization or other structural ansatz is supplied. No original QSS sign, exact-kernel or uniform-gap conclusion follows.
+
+Run `python coefficient-control.py` from any directory. Its selected algebra fields must match EXACT1380.json; source-observation metadata are deliberately not regenerated. The six native argument/result/config files are byte-identical copies. This finite path/packaging check is not an independent implementation, analytic proof review or Research Capsule. Evidence: literature inputs unchanged; own analytic reasoning heuristic/unreviewed; successful uniform certificate speculative; formal:none.

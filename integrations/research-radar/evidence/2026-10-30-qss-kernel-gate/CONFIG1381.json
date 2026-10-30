@@ -1,0 +1,14 @@
+{
+  "target": "1380projected polynomial target, fixed m4 only",
+  "anchor": "Existing known psi=(1,0,0), not additional anchors or global positivity sampling",
+  "comparisons": [
+    "A+Bhat4-e4Q",
+    "A-Bhat4-e4Q+K (remove known exact zero subspace for diagnostic only)"
+  ],
+  "m": 4,
+  "e4": "1331/100000",
+  "optimizer": false,
+  "new_random_seeds": 0,
+  "negative_witness_threshold": -1e-07,
+  "if_negative": "Validate a rounded rational direction against exact integer matrix; otherwise no global inference and no added cases."
+}
