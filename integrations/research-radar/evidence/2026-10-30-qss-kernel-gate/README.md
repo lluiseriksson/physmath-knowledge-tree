@@ -9,3 +9,7 @@ Run `python control.py` from any directory using Python3.12 or later. It parses 
 The two native argument Markdown files are byte-identical archival copies. EXACT1378.json has LF transport line endings; its parsed mathematical fields are identical to the CRLF native archive. control.py changes only local path resolution and output handling relative to the native1378 helper; it omits archival/prose-writing code. All scientific contractions are retained. The transport ledger binds native and portable bytes separately; equality of those script hashes is not claimed. Earlier1317/1318 normalization conventions and all415/product-reference limitations remain.
 
 Evidence labels: literature for attributed QSS/spectrum/source inputs, heuristic for own unreviewed analysis, speculative for any successful all-L quotient certificate, formal:none. No score, model identity or independence claim. The local portability check validates this finite exact diagnostic only.
+
+## Kernel-preserving continuation
+
+[Continuation and stop gate](CLOSURE1382.md) binds1380complex coefficient identities and the single inconclusive1381necessary check. The original full-space margin remains refuted; the projected all-L target is not proved. No more generic numeric or dense-SOS campaign is queued.

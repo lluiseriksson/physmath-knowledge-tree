@@ -1,0 +1,47 @@
+{
+  "native_files": [
+    {
+      "file": "ARGUMENT1380.md",
+      "native_sha256": "536dca35204f4071ce9766d5e300411e1c22c6dc36ce8dee30901a968bcee335",
+      "public_sha256": "536dca35204f4071ce9766d5e300411e1c22c6dc36ce8dee30901a968bcee335",
+      "byte_identical": true
+    },
+    {
+      "file": "EXACT1380.json",
+      "native_sha256": "e41fc8534d4ec4eabaae57b8876dcfdd246c2f6e16ccfa17e71f8955ed10e58d",
+      "public_sha256": "e41fc8534d4ec4eabaae57b8876dcfdd246c2f6e16ccfa17e71f8955ed10e58d",
+      "byte_identical": true
+    },
+    {
+      "file": "CONFIG1381.json",
+      "native_sha256": "85259545173d6b860fcf57d814bbfe8bd1ab3deb4489996b0772ca293738d0a9",
+      "public_sha256": "85259545173d6b860fcf57d814bbfe8bd1ab3deb4489996b0772ca293738d0a9",
+      "byte_identical": true
+    },
+    {
+      "file": "RESULT1381.json",
+      "native_sha256": "166f6d5e67578ddf49e13a6790ab36c7f120bc49ee80a325b42488e349cbc328",
+      "public_sha256": "166f6d5e67578ddf49e13a6790ab36c7f120bc49ee80a325b42488e349cbc328",
+      "byte_identical": true
+    },
+    {
+      "file": "INTERPRETATION1381.md",
+      "native_sha256": "6e07d7958dfc899140315c943b9e66abf9416d471a97e45b03d0664412d2bf63",
+      "public_sha256": "6e07d7958dfc899140315c943b9e66abf9416d471a97e45b03d0664412d2bf63",
+      "byte_identical": true
+    },
+    {
+      "file": "RESOURCE-GATE1381.json",
+      "native_sha256": "a2c8fe1e2d5abf129f7db095f6fbb7982a6fcf1b221b188a814ac214574e06e0",
+      "public_sha256": "a2c8fe1e2d5abf129f7db095f6fbb7982a6fcf1b221b188a814ac214574e06e0",
+      "byte_identical": true
+    }
+  ],
+  "native_checker_sha256": "80c7f28b692c81fe21064bc29d564ff4d9fde77485b6cc3d94bc99bee43ddc18",
+  "portable_checker_sha256": "c2c7f328e74e95103a8b894f522b13bc8df4348d856f15fc96595e34ea54a48e",
+  "checker_transform": "Same integer assertions; relative sibling input, stdout selected algebra fields, graph/source-network/archive/prose-writing code omitted. Not byte-identical or independent.",
+  "numerical1381_not_rerun": true,
+  "initial1380_incident": "All coefficient assertions passed before metadata failure from b shadowing input bytes; original source retained in private checkpoint. Input hash variable repaired; target/assertions unchanged.",
+  "new_review": false,
+  "new_grade": null
+}

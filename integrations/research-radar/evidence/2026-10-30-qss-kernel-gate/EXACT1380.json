@@ -1,0 +1,73 @@
+{
+  "A_nonzero": 3375,
+  "A_scale": 8,
+  "M_nonzero": [
+    375,
+    375,
+    375
+  ],
+  "input_sha256": "6545a2ea350b92892fc83ae6af2f426bd6dbff9fb5e039507d7b3b38511dc82b",
+  "M_equals_Gamma_FIRST_A_times_J_all_three_coefficients": true,
+  "nine_cross_coefficient_checks": [
+    {
+      "i": 0,
+      "j": 0,
+      "J_i_star_M_j_equals_H_ij_transpose": true
+    },
+    {
+      "i": 0,
+      "j": 1,
+      "J_i_star_M_j_equals_H_ij_transpose": true
+    },
+    {
+      "i": 0,
+      "j": 2,
+      "J_i_star_M_j_equals_H_ij_transpose": true
+    },
+    {
+      "i": 1,
+      "j": 0,
+      "J_i_star_M_j_equals_H_ij_transpose": true
+    },
+    {
+      "i": 1,
+      "j": 1,
+      "J_i_star_M_j_equals_H_ij_transpose": true
+    },
+    {
+      "i": 1,
+      "j": 2,
+      "J_i_star_M_j_equals_H_ij_transpose": true
+    },
+    {
+      "i": 2,
+      "j": 0,
+      "J_i_star_M_j_equals_H_ij_transpose": true
+    },
+    {
+      "i": 2,
+      "j": 1,
+      "J_i_star_M_j_equals_H_ij_transpose": true
+    },
+    {
+      "i": 2,
+      "j": 2,
+      "J_i_star_M_j_equals_H_ij_transpose": true
+    }
+  ],
+  "W_star_W": "3I3",
+  "new_anchor_samples": 0,
+  "new_optimizers": 0,
+  "new_review": false,
+  "uniform_signed_positivity_proved": false,
+  "kernel_identity": "Author index derivation B(a)J_a=A J_a for every nonzero complex a with the stated contraction conventions; exact coefficient checks calibrate encoded allpsi, not a formal kernel.",
+  "incidents": "First execution passed all coefficient assertions but failed metadata serialization because loop index b shadowed input bytes. Original source retained; input hash variable repaired. No math target or checks changed. Broad old-folder search output was truncated and included existing source-cache excerpts; not counted as a new source/proof audit or redistributed. Selected proof410 section4 was then read separately.",
+  "source": {
+    "url": "https://arxiv.org/html/2608.02647v1",
+    "status": 200,
+    "bytes": 634160,
+    "sha256": "4706822f57fd065a60fcd2ed2cf02c192cc03645ef20c8b5fe445d197c95fac1",
+    "observed_at": "2026-10-30T07:08:51.734250+00:00",
+    "reading": "Selected product-reference Theorem7.3/Lemma7.4context only; not full paper audit; body not retained."
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "scope": {
+    "target": "1380projected polynomial target, fixed m4 only",
+    "anchor": "Existing known psi=(1,0,0), not additional anchors or global positivity sampling",
+    "comparisons": [
+      "A+Bhat4-e4Q",
+      "A-Bhat4-e4Q+K (remove known exact zero subspace for diagnostic only)"
+    ],
+    "m": 4,
+    "e4": "1331/100000",
+    "optimizer": false,
+    "new_random_seeds": 0,
+    "negative_witness_threshold": -1e-07,
+    "if_negative": "Validate a rounded rational direction against exact integer matrix; otherwise no global inference and no added cases."
+  },
+  "source_sha256": "6545a2ea350b92892fc83ae6af2f426bd6dbff9fb5e039507d7b3b38511dc82b",
+  "integer_matrix_scale": 218700000,
+  "integer_matrix_dtype": "int64, explicit magnitude guards; no formal overflow verification",
+  "known_kernel_exact_zero": true,
+  "results": [
+    {
+      "target": "plus",
+      "floating_min_eigenvalue": 0.042059505061728106,
+      "numeric_not_interval": true,
+      "exact_negative_witness": false
+    },
+    {
+      "target": "minus_known_kernel_removed",
+      "floating_min_eigenvalue": 0.05332999999795659,
+      "numeric_not_interval": true,
+      "exact_negative_witness": false
+    }
+  ],
+  "global_projected_PSD_proved": false,
+  "original_QSS_comparison_proved_or_refuted": false,
+  "new_model_review": false,
+  "same_producer": true,
+  "scipy": "1.18.0",
+  "numpy": "2.2.6"
+}
