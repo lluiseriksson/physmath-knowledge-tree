@@ -21,7 +21,7 @@
 - Minimal formal target: finite-dimensional positive-matrix tensor spectral-norm identity plus the exact trace/conjugation dictionary. No implementation is claimed; general minimax and operator-scaling dependencies must remain explicit.
 - Next finite task: preserve and inspect exact rational lower/upper value certificates under this dictionary, rather than infer finite determinant-witness complexity from floating-point optimization. Existing finite diagnostics are auxiliary, not a complete M1/GLS implementation or proof of the complexity theorem.
 
-The [claim dependency map](../evidence/2026-10-30-capacity-dependencies/CLAIM-DEPENDENCIES1444.json) separates these obligations. The short tensor-limit consequence stays within the substantive duality/optimization manuscript; it is not a separate paper.
+The [historical preparation dependency map](../evidence/2026-10-30-capacity-dependencies/CLAIM-DEPENDENCIES1444.json) separates these obligations. Its pending-review wording predates the completed context report linked above; the source-reading record labels that boundary explicitly. The short tensor-limit consequence stays within the substantive duality/optimization manuscript; it is not a separate paper.
 
 ## Deduplication and actual review context
 
