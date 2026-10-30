@@ -1796,6 +1796,15 @@
           "effective_identity_effort_independence": "unattested",
           "historical_grades_visible_in_PDF": true,
           "external_historical_reports_opened": false
+        },
+        "scalar_source_followup": {
+          "packet": "integrations/research-radar/evidence/2026-10-30-scalar-source1346/README.md",
+          "generator_sha256": "bf0255c5ec751622bf92a28e5e61cb8939f5c6ba859155c0d436a4f0b969cfbb",
+          "engine_sha256": "4fa44ba0a03659707abc68a9ec0391c7375967aec7b69d0ebae533d1e38235d2",
+          "original_archive_sha256": "35b58032822963106bfea8e5f00ef48201bca754dc260c6233aa365ab8409dc2",
+          "scope": "Direct source-location and record binding resolved by later author lookup only; O2historicalbackend/balltrust remains",
+          "generator_executed": false,
+          "new_review_or_score": false
         }
       }
     },
@@ -2082,6 +2091,11 @@
       "pins": "integrations/research-radar/evidence/2026-10-30-compact-review-context/PINS1345.json",
       "scope": "Directed12-endpoint primary metadata inventory;9formal checkout pins match. Historical2005author-draft source newly indexed, not newly published. OpenAI currentHEAD4eaee875 reports formalization-maintenance, with identicalCONTENTSblob/preprintstree versus previous7efcatalogue; no new manuscript or proof audit. Owner programmeHEAD54adb99 inventoried only; no theorem/build claim. Actual new exact26pagePDF full assessment1343 preserved with native report and5objections; older scores not inherited. No manuscript release/coregraph/confidence promotion.",
       "full_review_packet": "integrations/research-radar/evidence/2026-10-30-compact-review-context/README.md"
+    },
+    "followup1346": {
+      "evidence": "integrations/research-radar/evidence/2026-10-30-scalar-source1346/SOURCES1346.json",
+      "pins": "integrations/research-radar/evidence/2026-10-30-scalar-source1346/PINS1346.json",
+      "scope": "Directed12-endpoint inventory/4heads/9matchinginstalledformal pins. Exact already-public own scalar generator/archive sources located and hash-bound, no new integration/refit/modelreview/manuscript or confidence promotion."
     }
   }
 }
