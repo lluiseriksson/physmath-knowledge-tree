@@ -1600,6 +1600,22 @@
       "anchors": [
         "domain.analysis"
       ]
+    },
+    {
+      "id": "hermann-krener-observability-1977-scoped",
+      "title": "Nonlinear Controllability and Observability",
+      "url": "https://doi.org/10.1109/TAC.1977.1101601",
+      "kind": "journal_article",
+      "published_on": "1977-10",
+      "observed_on": "2026-10-30",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Selected local weak-observability definitions and Theorem3.1use differentiated outputs and a nonsingular local coordinate map.",
+      "limits": "Selected primary indexed statement and short local inverse-function argument only; no complete13page source/global quotient audit. Does not by itself establish global reconstruction, robustness or Oregonator-specific novelty. Published October1977, distinct from receipt1976-12-16and revision1977-06-07.",
+      "reuse": "Metadata and own explicit polynomial identities only; no source body, figure, dataset or corpus copied.",
+      "anchors": [
+        "domain.analysis"
+      ]
     }
   ],
   "candidates": [
@@ -2101,17 +2117,18 @@
         "lefever-nicolis-borckmans-brusselator-1988",
         "gallas-forced-brusselator-2015-scoped",
         "field-koros-noyes-bz-1972-scoped",
-        "field-noyes-oregonator-1974-scoped"
+        "field-noyes-oregonator-1974-scoped",
+        "hermann-krener-observability-1977-scoped"
       ],
       "node_ids": [
         "domain.analysis"
       ],
       "dictionary": "Visible dominance becomes a signed state or concentration fraction; seed becomes an independently measurable reserve or delayed response. Reciprocal generation is preserved; geometric symmetry and literal universal-force interpretations are lost.",
       "preserved": "Autonomous locally Lipschitz dynamics, positivity and explicit supply/drainage for the chosen model; coordinate reduction retains total c whenever the fraction is not closed.",
-      "lost_or_unproved": "Concrete BZ/Oregonator case now selected, with known classical feedback mechanism; no original experimental curves, calibrated independent signals, causal validation, new cycle proof, novelty certification, PDF assessment or Lean theorem. Local polynomial identities are not new discoveries.",
+      "lost_or_unproved": "Concrete BZ/Oregonator case now selected, with known classical feedback mechanism; no original experimental curves, calibrated independent signals, causal validation, new cycle proof, novelty certification, PDF assessment or Lean theorem. Local polynomial identities are not new discoveries. Exact known-parameter noiseless finite-jet identification is now checked with its singular exception; no robust/noisy/sampled/unknown-parameter inference follows.",
       "hypothesis_to_remove": "Reject the unconditional claim that reciprocal conversion forces cycling, and the universal claim that visible fraction alone determines direction. In an application test whether independent reserve changes predictive/causal sufficiency.",
       "falsifier": "Positive linear interconversion relaxes; the exact Brusselator witness has equal p=1/2 and opposite derivatives for totals2and4. Abandon application if reserve gives no out-of-sample improvement over complexity-matched memory/forcing/noise baselines or controlled removal/restoration has no predicted effect.",
-      "next_finite_task": "The known Oregonator mechanism already covers regeneration and timing: abandon novelty-by-renaming. Audit calibrated bromide/catalyst measurements and whether bromide adds information beyond catalyst HISTORY/forcing/noise, with matched complexity and experiment-level splits; separate causal intervention. No extra oscillator corollary paper, random simulations or repeat review.",
+      "next_finite_task": "Park generic regeneration/information-novelty routes. Only a defined finite-noise, sampling, bandwidth or model-uncertainty problem with an uncovered primary antecedent could justify further chemical work. Compare against catalyst HISTORY and retain the singular exception; no further classical oscillator corollary paper, repeat review or random campaign.",
       "review_packet": "Own exact SymPy1.14algebra for normal form, linear conversion, positive reservoir Jacobian and rational nonclosure witnesses; first structural-zero assertion corrected with simplification and failure disclosed. No new manuscript review, numeric grade, independence certification or editorial decision. Concrete1359own SymPy1.14checks verify state-dependent bromide response and local recovery from Y0=Z0=0,X0>0 through positive second derivative; all-zero state remains equilibrium. No source integration/experiment replay, manuscript review, score or formal promotion.",
       "evidence": "integrations/research-radar/notes/2026-10-30-dynamic-seed.md",
       "concrete_case": {
@@ -2123,6 +2140,15 @@
         "dictionary": "Regimes and kinetic regeneration capacity, not complementary conserved species or invariably opposing forces",
         "novelty": "Known1972–1974 mechanism; not a new paper/discovery",
         "limits": "Local deterministic constant-reservoir calculation only; no sustained-cycle proof, calibrated measurements, empirical causality, assessment or grade"
+      },
+      "ideal_history_boundary": {
+        "evidence": "integrations/research-radar/evidence/2026-10-30-observer1363/README.md",
+        "assumptions": "Known positive coefficients; exact continuous noiselessZ and derivatives through order3 at an interior observation time",
+        "regular": "det(Z,Z_prime,Z_second)=c^2(a-bX)",
+        "critical": "AtX=a/b, third-jet minor=a*c^2(ad-bc)/b; ad!=bc restores identification",
+        "exception": "ad=bc: invariantX=a/b plane, differentY produce identical futureZ; exact all-ones two-trajectory witness retained",
+        "interpretation": "Stronger ideal information claim excluded; practical noisy/sampled prediction question untested",
+        "novelty": "Classical observability framework; no new manuscript/score/robustness or Lean claim"
       }
     }
   ],
