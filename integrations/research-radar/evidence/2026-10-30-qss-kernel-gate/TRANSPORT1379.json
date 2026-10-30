@@ -1,0 +1,16 @@
+{
+  "native_checker_sha256": "3799b14da60e0a8900980e85383ef1a2f6158ad5246ceea778928118c6f6f510",
+  "portable_checker_sha256": "2faf6367efc12df5843b64d49d9f92fa28b8da342328679fc300079cfb109bff",
+  "scientific_scope": "Same exact known-anchor algebra; paths/output transformed; no claim of byte identity or independence.",
+  "new_review": false,
+  "new_grade": null,
+  "universal_comparison_proved": false,
+  "full_space_margin_target": "refuted for all truncation degrees",
+  "native_result_sha256": "64fcdee91568f831941d745f194609acca147a4167318ac7092434e945a6ad07",
+  "public_LF_result_sha256": "06ade93f99ab0b04c5617ba99564b110a8b68a3d6c1d0f49f115a77c3f6407cb",
+  "result_transform": "CRLF to LF only, all parsed fields identical; native archived result unchanged.",
+  "incidents": [
+    "Initial portability output reader incorrectly assumed UTF16; corrected to UTF8 without another scientific execution.",
+    "Initial full check rejected native JSON CRLF. Public transport normalized to LF; script/math and archived native artifact unchanged. Required format gate retained."
+  ]
+}

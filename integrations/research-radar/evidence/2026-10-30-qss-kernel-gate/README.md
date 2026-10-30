@@ -1,0 +1,11 @@
+# QSS inverse budget and its full-space kernel obstruction
+
+One method attempt and its adverse result, preserved together. This is not a paper, model assessment, formal certificate or computational campaign capsule. The universal signed QSS comparison remains unproved.
+
+ARGUMENT1377.md gives an unreviewed uniform inverse-error budget and proposes a sufficient full-space polynomial-margin target. OBSTRUCTION1378.md then refutes that target for EVERY truncation degree on an existing equality ray. Read the obstruction before attempting any margin/SOS expansion. The norm budget and Gram identity are not themselves refuted; the original QSS comparison is not refuted. Increasing degree cannot repair the full-space reserve. Any salvage must first prove exact all-L kernel identities and preserve their quotient with correct Gamma/conjugations.
+
+Run `python control.py` from any directory using Python3.12 or later. It parses the existing hash-pinned OWN M coefficient table, reconstructs H by an exact rational swap-subset contraction and prints JSON without modifying the evidence. Its output must equal EXACT1378.json as parsed JSON. It uses stdlib Fraction, no third-party runtime, network, optimizer or new anchor campaign. This is the same producer implementation made portable, not an independent review or formal kernel.
+
+The two native argument Markdown files are byte-identical archival copies. EXACT1378.json has LF transport line endings; its parsed mathematical fields are identical to the CRLF native archive. control.py changes only local path resolution and output handling relative to the native1378 helper; it omits archival/prose-writing code. All scientific contractions are retained. The transport ledger binds native and portable bytes separately; equality of those script hashes is not claimed. Earlier1317/1318 normalization conventions and all415/product-reference limitations remain.
+
+Evidence labels: literature for attributed QSS/spectrum/source inputs, heuristic for own unreviewed analysis, speculative for any successful all-L quotient certificate, formal:none. No score, model identity or independence claim. The local portability check validates this finite exact diagnostic only.
