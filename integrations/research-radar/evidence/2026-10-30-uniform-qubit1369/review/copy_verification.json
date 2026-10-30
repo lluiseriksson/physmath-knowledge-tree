@@ -1,0 +1,67 @@
+{
+  "checked_utc": "2026-10-30T05:18:59.8661496Z",
+  "c_root": "C:\\Trabajo\\airr\\2026-10-30_uniform-review1368",
+  "d_root": "D:\\Proyectos\\airr-investigacion\\2026-10-30_uniform-review1368",
+  "all_listed_copies_sha256_and_byte_identical": true,
+  "frozen_inputs_rechecked_and_unchanged": true,
+  "replay_count": 1,
+  "files": [
+    {
+      "relative_path": "report.txt",
+      "c_sha256": "62621e0bf9f6a6d431d6ee5b2df9abb621240c758de9a050dbbe7a2b1a7e0ae8",
+      "d_sha256": "62621e0bf9f6a6d431d6ee5b2df9abb621240c758de9a050dbbe7a2b1a7e0ae8",
+      "bytes": 15008,
+      "byte_identical": true
+    },
+    {
+      "relative_path": "verdict.json",
+      "c_sha256": "2b1e7def01692cca06a69bd51d69022181fc593417ce0fa869606e7bfa3c2ff0",
+      "d_sha256": "2b1e7def01692cca06a69bd51d69022181fc593417ce0fa869606e7bfa3c2ff0",
+      "bytes": 2569,
+      "byte_identical": true
+    },
+    {
+      "relative_path": "context.json",
+      "c_sha256": "9206899d3dadb66dbd1640d874d836cf05fb6b48d27e0ddbbccb180e7ffcc911",
+      "d_sha256": "9206899d3dadb66dbd1640d874d836cf05fb6b48d27e0ddbbccb180e7ffcc911",
+      "bytes": 2407,
+      "byte_identical": true
+    },
+    {
+      "relative_path": "source_pins.json",
+      "c_sha256": "3454893206370008235bb61966541855fc881c9552d6e497aebb41a0780fe3a5",
+      "d_sha256": "3454893206370008235bb61966541855fc881c9552d6e497aebb41a0780fe3a5",
+      "bytes": 3398,
+      "byte_identical": true
+    },
+    {
+      "relative_path": "replay_execution.json",
+      "c_sha256": "ebcb1a852e45465a974b90ac4a3b76932399e737981159527da34adb396aacc6",
+      "d_sha256": "ebcb1a852e45465a974b90ac4a3b76932399e737981159527da34adb396aacc6",
+      "bytes": 650,
+      "byte_identical": true
+    },
+    {
+      "relative_path": "replay_comparison.json",
+      "c_sha256": "8657950d08e81698cb15adc52926bae2d277fe328d9f84eb294883eeb71d805c",
+      "d_sha256": "8657950d08e81698cb15adc52926bae2d277fe328d9f84eb294883eeb71d805c",
+      "bytes": 535,
+      "byte_identical": true
+    },
+    {
+      "relative_path": "replay_once/checker1368.py",
+      "c_sha256": "59646b1ac3d07633d78eb3edf29c46eabb3bc7b82c9791777cf3f86258e0722d",
+      "d_sha256": "59646b1ac3d07633d78eb3edf29c46eabb3bc7b82c9791777cf3f86258e0722d",
+      "bytes": 3416,
+      "byte_identical": true
+    },
+    {
+      "relative_path": "replay_once/EXACT1368.json",
+      "c_sha256": "6772f4a5773d97388b3c8ab97316e588efe228f0298988cf9e68b599195426de",
+      "d_sha256": "6772f4a5773d97388b3c8ab97316e588efe228f0298988cf9e68b599195426de",
+      "bytes": 817,
+      "byte_identical": true
+    }
+  ],
+  "self_reference_note": "This manifest and its SHA256 sidecar are checked separately after copying; neither is recursively included in its own digest."
+}

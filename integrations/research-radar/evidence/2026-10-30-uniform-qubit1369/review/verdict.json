@@ -1,0 +1,49 @@
+{
+  "component": "1368_uniform_qubit_constant",
+  "review_kind": "single_mathematical_component_inspection",
+  "verdict": "conditional_union_envelope_supported",
+  "blocking_mathematical_objections_identified": [],
+  "conditional_conclusion": "With alpha_+ >= max(0,1-2r) explicitly accepted as input, the joint infimum over all finite d>=2 and finite N equals max(0,1-2r) for 0<=r<=1.",
+  "uniform_constant_conclusion": "Each 0<=c<2 is contradicted by a finite constructed factorization. Validity of c=2 is the accepted input.",
+  "analytic_checks": {
+    "balanced_pure_frame_normalization": "verified",
+    "actual_square_CPTP_prefix_and_finite_preparation": "verified",
+    "full_input_contraction_including_complement_and_coherences": "verified",
+    "complex_transpose_convention": "verified",
+    "singlet_kernel_without_second_design_assumption": "verified",
+    "primal_and_dual_witnesses": "verified",
+    "exact_antipodal_first_moment": "verified",
+    "uniform_in_direction_quadrature_error_pi_over_q": "verified",
+    "finite_dimension_union_infimum_step": "verified",
+    "infimum_attainment_distinction_at_half": "preserved"
+  },
+  "nonblocking_precision": {
+    "file": "ARGUMENT1368.md",
+    "line": 18,
+    "text": "Replace Equivalently by In particular: the full envelope implies sharpness of the constant, whereas sharpness alone does not determine the entire envelope. The actual proof establishes both and does not rely on the converse."
+  },
+  "attainment": {
+    "r_zero": "finite attainment shown",
+    "r_above_half": "finite attainment shown",
+    "r_equal_half": "joint infimum zero shown; general finite attainment unresolved by this argument",
+    "r_between_zero_and_half": "joint infimum shown; general finite optimizer not asserted",
+    "constructed_finite_frame_family_at_half": "does not attain zero because every finite pure frame has t_frame>1/2"
+  },
+  "replay": {
+    "execution_count": 1,
+    "exit_code": 0,
+    "result": "all_exact_assertions_passed",
+    "original_and_replay_byte_identical": true,
+    "json_sha256": "6772f4a5773d97388b3c8ab97316e588efe228f0298988cf9e68b599195426de",
+    "failures_or_discrepancies": []
+  },
+  "not_certified": [
+    "accepted universal lower bound itself",
+    "previous fixed d=4,N=4 envelope statement",
+    "any other fixed-resource envelope",
+    "finite attainment in the whole class at r=1/2",
+    "novelty, importance, editorial suitability or separate publication",
+    "formal proof certification",
+    "effective model identity, effective effort or execution independence"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "status": "all_exact_assertions_passed",
+  "q": 2,
+  "N": 8,
+  "d": 8,
+  "k": 2,
+  "weighted_barycenter": "I_2/2",
+  "second_moment": "Matrix([[1/4, 0, 0], [0, 1/4, 0], [0, 0, 1/2]])",
+  "not_a_2design": true,
+  "eta_prefix": "u/sqrt(2)",
+  "alpha_positive": "1-u",
+  "subsets_examined": 256,
+  "choi_at_u1_eigenvalues": {
+    "3/4": 2,
+    "1/2": 13,
+    "0": 1
+  },
+  "negative_control": "Deleting one atom and renormalizing weights loses the exact zero first moment; it does not define the same normalized POVM.",
+  "scope": "Finite exact anisotropic-frame/control only. No asymptotic integral, general SDP theorem, optimal finite N, Lean proof, novelty or manuscript assessment certified.",
+  "sympy_version": "1.14.0",
+  "checker_sha256": "59646b1ac3d07633d78eb3edf29c46eabb3bc7b82c9791777cf3f86258e0722d"
+}
