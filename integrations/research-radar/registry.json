@@ -1568,6 +1568,38 @@
       "anchors": [
         "domain.analysis"
       ]
+    },
+    {
+      "id": "field-koros-noyes-bz-1972-scoped",
+      "title": "Oscillations in chemical systems. II. Thorough analysis of temporal oscillation in the bromate-cerium-malonic acid system",
+      "url": "https://doi.org/10.1021/ja00780a001",
+      "kind": "journal_article",
+      "published_on": "1972",
+      "observed_on": "2026-10-30",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "An indexed original abstract excerpt reports potentiometric tracking of bromide and oxidized cerium during chemical oscillations.",
+      "limits": "Publisher bibliography plus abstract excerpt only, not full text, original curves, calibration or causal audit. Publisher issue day1December and indexed firstpage13December conflict; exact day unresolved. Online2002 is not original publication. Purchase-required access not bypassed.",
+      "reuse": "Bibliographic metadata and own synthesis only; no foreign text, PDF, figures or data copied.",
+      "anchors": [
+        "domain.analysis"
+      ]
+    },
+    {
+      "id": "field-noyes-oregonator-1974-scoped",
+      "title": "Oscillations in chemical systems. IV. Limit cycle behavior in a model of a real chemical reaction",
+      "url": "https://doi.org/10.1063/1.1681288",
+      "kind": "journal_article",
+      "published_on": "1974-03-01",
+      "observed_on": "2026-10-30",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Selected dimensionalIa–Ic and SectionsII–III give a three-intermediate constant-reservoir model and describe bromide-mediated switching with parameter-dependent regeneration.",
+      "limits": "Indexed primary search extracts only; no full8page source reading, original numerical replay or proof audit. Received1973-07-23, distinct from publication. Direct PDF access failed; ambiguous dimensionless OCR excluded. No article PDF hash available; error-response hash is not an article hash.",
+      "reuse": "Own exact derivative checks, metadata and synthesis only; no source corpus, PDF, foreign figures or experimental data copied.",
+      "anchors": [
+        "domain.analysis"
+      ]
     }
   ],
   "candidates": [
@@ -2067,19 +2099,31 @@
       "paper_score": null,
       "source_ids": [
         "lefever-nicolis-borckmans-brusselator-1988",
-        "gallas-forced-brusselator-2015-scoped"
+        "gallas-forced-brusselator-2015-scoped",
+        "field-koros-noyes-bz-1972-scoped",
+        "field-noyes-oregonator-1974-scoped"
       ],
       "node_ids": [
         "domain.analysis"
       ],
       "dictionary": "Visible dominance becomes a signed state or concentration fraction; seed becomes an independently measurable reserve or delayed response. Reciprocal generation is preserved; geometric symmetry and literal universal-force interpretations are lost.",
       "preserved": "Autonomous locally Lipschitz dynamics, positivity and explicit supply/drainage for the chosen model; coordinate reduction retains total c whenever the fraction is not closed.",
-      "lost_or_unproved": "No selected natural system, empirical data, causal validation, new Hopf proof, novelty certification, exact-PDF assessment or Lean theorem. Known normal form/Brusselator identities are not new discoveries.",
+      "lost_or_unproved": "Concrete BZ/Oregonator case now selected, with known classical feedback mechanism; no original experimental curves, calibrated independent signals, causal validation, new cycle proof, novelty certification, PDF assessment or Lean theorem. Local polynomial identities are not new discoveries.",
       "hypothesis_to_remove": "Reject the unconditional claim that reciprocal conversion forces cycling, and the universal claim that visible fraction alone determines direction. In an application test whether independent reserve changes predictive/causal sufficiency.",
       "falsifier": "Positive linear interconversion relaxes; the exact Brusselator witness has equal p=1/2 and opposite derivatives for totals2and4. Abandon application if reserve gives no out-of-sample improvement over complexity-matched memory/forcing/noise baselines or controlled removal/restoration has no predicted effect.",
-      "next_finite_task": "Use the combined1354–1356note, not a separate minorpaper. Select one measurable system and define observable/input/held-out prediction/intervention before new discovery claims. A0monotonicity excludes nonconstant nonnegative periodic orbits only for the stated model. No repeat review or random simulations.",
-      "review_packet": "Own exact SymPy1.14algebra for normal form, linear conversion, positive reservoir Jacobian and rational nonclosure witnesses; first structural-zero assertion corrected with simplification and failure disclosed. No new manuscript review, numeric grade, independence certification or editorial decision.",
-      "evidence": "integrations/research-radar/notes/2026-10-30-dynamic-seed.md"
+      "next_finite_task": "The known Oregonator mechanism already covers regeneration and timing: abandon novelty-by-renaming. Audit calibrated bromide/catalyst measurements and whether bromide adds information beyond catalyst HISTORY/forcing/noise, with matched complexity and experiment-level splits; separate causal intervention. No extra oscillator corollary paper, random simulations or repeat review.",
+      "review_packet": "Own exact SymPy1.14algebra for normal form, linear conversion, positive reservoir Jacobian and rational nonclosure witnesses; first structural-zero assertion corrected with simplification and failure disclosed. No new manuscript review, numeric grade, independence certification or editorial decision. Concrete1359own SymPy1.14checks verify state-dependent bromide response and local recovery from Y0=Z0=0,X0>0 through positive second derivative; all-zero state remains equilibrium. No source integration/experiment replay, manuscript review, score or formal promotion.",
+      "evidence": "integrations/research-radar/notes/2026-10-30-dynamic-seed.md",
+      "concrete_case": {
+        "system": "BZ reaction / irreversible Oregonator",
+        "evidence": "integrations/research-radar/evidence/2026-10-30-bromide1360/README.md",
+        "status": "known_model_local_boundaries_checked_application_queued",
+        "regeneration": "X->Z->Y; Y_second(0)=e*c*X0>0 at Y0=Z0=0,X0>0",
+        "sign_boundary": "d(X_dot)/dY=a-bX",
+        "dictionary": "Regimes and kinetic regeneration capacity, not complementary conserved species or invariably opposing forces",
+        "novelty": "Known1972–1974 mechanism; not a new paper/discovery",
+        "limits": "Local deterministic constant-reservoir calculation only; no sustained-cycle proof, calibrated measurements, empirical causality, assessment or grade"
+      }
     }
   ],
   "source_refresh": {

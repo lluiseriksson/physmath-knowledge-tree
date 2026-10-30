@@ -1,0 +1,54 @@
+{
+  "initial_reading_at": "2026-10-30T03:35:28.243Z",
+  "sources": [
+    {
+      "doi": "10.1063/1.1681288",
+      "authors": [
+        "Richard J. Field",
+        "Richard M. Noyes"
+      ],
+      "title": "Oscillations in chemical systems. IV. Limit cycle behavior in a model of a real chemical reaction",
+      "journal": "Journal of Chemical Physics60(5),1877–1884",
+      "published_on": "1974-03-01",
+      "received_on": "1973-07-23",
+      "first_preprint": null,
+      "reading": "Selected primary search extracts: abstract, SectionsII–III, equationsIa–Ic and parameter discussion on printed1878–1879; not a full8page reading or numerical proof audit",
+      "access": "Direct web.open timed out; selected indexed primary PDF text was available. No copied PDF/foreign text saved.",
+      "limits": "Use dimensional equationsIa–Ic, not the ambiguous OCR dimensionlessIIIa rendering. Original illustrative f and kM5 choices are not a quantitative fit certified here."
+    },
+    {
+      "doi": "10.1021/ja00780a001",
+      "authors": [
+        "Richard J. Field",
+        "Endre Koros",
+        "Richard M. Noyes"
+      ],
+      "title": "Oscillations in chemical systems. II. Thorough analysis of temporal oscillation in the bromate-cerium-malonic acid system",
+      "journal": "Journal of the American Chemical Society94,8649–8664",
+      "published_year": 1972,
+      "publisher_issue_date": "1972-12-01",
+      "indexed_original_firstpage_header": "1972-12-13",
+      "exact_day_status": "Conflicting primary publisher metadata/header; use year1972 until resolved, never online2002 date as first publication",
+      "first_preprint": null,
+      "reading": "Bibliographic publisher record plus indexed original-first-page abstract excerpt; not full text or experimental audit",
+      "access": "Publisher marks purchase required; no payment, account request or bypass. Search-displayed first-page excerpt only.",
+      "limits": "No raw experimental curves, instrument calibration or independent causal validation inspected."
+    }
+  ],
+  "responses": [
+    {
+      "url": "https://www.math.us.edu.pl/mtyran/dydaktyka/biomatematyka/field_noyes_1974.pdf",
+      "error": "TypeError: fetch failed"
+    },
+    {
+      "url": "https://pubs.acs.org/doi/10.1021/ja00780a001",
+      "status": 403,
+      "bytes": 5461,
+      "sha256": "cf79f15163f29a498dbd72ae7b8b4ea7f4fe55fa7ee099b57fe97586f71599c6",
+      "at": "2026-10-30T03:35:28.242Z",
+      "scope": "Response identity only; body not retained; this hash is not evidence of full reading"
+    }
+  ],
+  "native_reading_sha256": "7e1ac21556952192f32e3869a305529cff4b32121b39123ebb67ab5684215f07",
+  "scope": "Own metadata projection; historical local-workflow status omitted. No foreign source text or figures retained. Hashing error responses is not hashing an article."
+}
