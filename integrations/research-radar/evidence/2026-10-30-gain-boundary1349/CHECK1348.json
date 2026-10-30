@@ -1,0 +1,91 @@
+{
+  "status": "exact rational spot checks passed; general proofs are in NOTE1348.md",
+  "geometric_second_moment": 6,
+  "geometric_tail_checks": [
+    {
+      "N": 1,
+      "second_moment_partial": "1/2",
+      "exact_tail": "11/2"
+    },
+    {
+      "N": 2,
+      "second_moment_partial": "3/2",
+      "exact_tail": "9/2"
+    },
+    {
+      "N": 3,
+      "second_moment_partial": "21/8",
+      "exact_tail": "27/8"
+    },
+    {
+      "N": 10,
+      "second_moment_partial": "2999/512",
+      "exact_tail": "73/512"
+    },
+    {
+      "N": 100,
+      "second_moment_partial": "3802951800684688204490109610925/633825300114114700748351602688",
+      "exact_tail": "5203/633825300114114700748351602688"
+    }
+  ],
+  "physicality_counterexamples": [
+    {
+      "E": "0",
+      "positive_mass_branch_n": 2,
+      "weight": "2^(-2)",
+      "physicality_margin_E_minus_n2_plus1": "-3"
+    },
+    {
+      "E": "1/3",
+      "positive_mass_branch_n": 2,
+      "weight": "2^(-2)",
+      "physicality_margin_E_minus_n2_plus1": "-8/3"
+    },
+    {
+      "E": "1",
+      "positive_mass_branch_n": 2,
+      "weight": "2^(-2)",
+      "physicality_margin_E_minus_n2_plus1": "-2"
+    },
+    {
+      "E": "10",
+      "positive_mass_branch_n": 4,
+      "weight": "2^(-4)",
+      "physicality_margin_E_minus_n2_plus1": "-5"
+    },
+    {
+      "E": "1000000",
+      "positive_mass_branch_n": 1001,
+      "weight": "2^(-1001)",
+      "physicality_margin_E_minus_n2_plus1": "-2000"
+    },
+    {
+      "E": "1000000000000000000000000000000",
+      "positive_mass_branch_n": 1000000000000001,
+      "weight": "2^(-1000000000000001)",
+      "physicality_margin_E_minus_n2_plus1": "-2000000000000000"
+    }
+  ],
+  "weak_compactness_shortcut": [
+    {
+      "n": 2,
+      "TV_to_delta1": "1/4",
+      "second_moment": "7/4",
+      "W2_to_delta1_squared": "1/4"
+    },
+    {
+      "n": 10,
+      "TV_to_delta1": "1/100",
+      "second_moment": "199/100",
+      "W2_to_delta1_squared": "81/100"
+    },
+    {
+      "n": 100,
+      "TV_to_delta1": "1/10000",
+      "second_moment": "19999/10000",
+      "W2_to_delta1_squared": "9801/10000"
+    }
+  ],
+  "formal_proof": false,
+  "new_capacity_or_nonCP_mixture_theorem": false
+}

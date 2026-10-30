@@ -1504,6 +1504,22 @@
         "domain.quantum_information_theory"
       ],
       "response_sha256": "e12ee1f5051ebaaa55843f37ddfd3309af53ec3289299c819d1d7c831aeb2e1f"
+    },
+    {
+      "id": "panaretos-zemel-wasserstein-space-2020",
+      "title": "The Wasserstein Space",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-030-38438-8_2",
+      "kind": "book_chapter",
+      "published_on": "2020-03-11",
+      "observed_on": "2026-10-30",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Selected Theorem2.2.1/Proposition2.2.3 distinguish weak convergence, moments and uniform p-moment tails in Wasserstein compactness.",
+      "limits": "Selected statements read; full chapter proofs and broader book not audited. Historical source newly indexed, not newly published. No optical physicality or capacity theorem inferred from topology alone.",
+      "reuse": "Own short synthesis and response hash only; no full source copied.",
+      "anchors": [
+        "domain.quantum_information_theory"
+      ]
     }
   ],
   "candidates": [
@@ -1751,7 +1767,8 @@
         "berta-gharibyan-walter-compound-ea-2016",
         "boche-janssen-kaltenstadler-compound-ea-2017",
         "loyka-charalambous-additive-feedback-2016",
-        "mitran-devroye-tarokh-continuous-compound-author-draft"
+        "mitran-devroye-tarokh-continuous-compound-author-draft",
+        "panaretos-zemel-wasserstein-space-2020"
       ],
       "node_ids": [
         "domain.quantum_information_theory"
@@ -1806,6 +1823,15 @@
           "generator_executed": false,
           "new_review_or_score": false
         }
+      },
+      "bounded_gain_hypothesis_audit": {
+        "status": "unchanged_model_moment_only_replacement_rejected",
+        "note": "integrations/research-radar/evidence/2026-10-30-gain-boundary1349/NOTE1348.md",
+        "mechanism": "Physical branch domain is pointwise in positive-mass support; moment compactness is an averaged condition.",
+        "counterexample": "Singleton geometric law mass2^(-n) at (a,v)=(n,1), second moment6; for every finiteE some positive-mass branch violates t>=|a|^2-1.",
+        "scope": "Not a non-CP-average claim, cost-normalization claim, new capacity theorem, manuscript assessment or confidence promotion.",
+        "repair_unproved": "Gain-dependent noise or another physical branch law changes the model and requires new comparison/coding interfaces.",
+        "next": "Abandon the unchanged-model moment-only route; preserve bounded-gain theorem and exact-PDF assessments."
       }
     },
     {
@@ -2096,6 +2122,11 @@
       "evidence": "integrations/research-radar/evidence/2026-10-30-scalar-source1346/SOURCES1346.json",
       "pins": "integrations/research-radar/evidence/2026-10-30-scalar-source1346/PINS1346.json",
       "scope": "Directed12-endpoint inventory/4heads/9matchinginstalledformal pins. Exact already-public own scalar generator/archive sources located and hash-bound, no new integration/refit/modelreview/manuscript or confidence promotion."
+    },
+    "followup1349": {
+      "evidence": "integrations/research-radar/evidence/2026-10-30-gain-boundary1349/SOURCES1349.json",
+      "pins": "integrations/research-radar/evidence/2026-10-30-gain-boundary1349/PINS1349.json",
+      "scope": "Directed12-endpoint inventory/4metadataheads/9matchingformal pins. One historical2020chapter newly indexed at selected-statement level; Shirokov existingcard deduplicated. Elementary physicality counterexample rejects one proposed extension, no newpaper/review/grade/coregraph edit."
     }
   }
 }
