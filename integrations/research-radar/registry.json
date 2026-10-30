@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "observed_on": "2026-10-30",
+  "observed_on": "2026-10-31",
   "coverage": "Directed primary-source radar with version-pinned catalogue metadata. Bibliographic coverage is never proof coverage.",
   "source_cards": [
     {
@@ -1821,6 +1821,78 @@
       ],
       "inspected_pdf_sha256": "dcdf9cac93105892648500f6deb91e05a5a78a521c3a5d656f685e401af7bbe9",
       "inspected_pdf_bytes": 305597
+    },
+    {
+      "id": "balaban-cmp109-effective-actions",
+      "title": "Renormalization Group Approach to Lattice Gauge Field Theories I (1987)",
+      "url": "https://doi.org/10.1007/BF01215223",
+      "kind": "journal_article",
+      "publication_year": 1987,
+      "observed_on": "2026-10-31",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Selected252-275 definitions/statements, including1.3/1.6/1.7/1.18,2.9-2.12,3.10-3.17 read. Exact cutoff excludes selected bonds. The old action includes beta-action and variable-dependent previous logZ, which may enter the aggregated activity convention.",
+      "limits": "No full-proof audit. Smaller-cutoff conditioning does not establish the maximal retained law or a global physical covariance.",
+      "reuse": "Bibliographic metadata and own synthesis only; no source PDF body or inferred training permission.",
+      "anchors": [
+        "domain.analysis"
+      ],
+      "inspected_pdf_sha256": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+      "inspected_pdf_bytes": 5490078
+    },
+    {
+      "id": "balaban-cmp102-variational-background",
+      "title": "The Variational Problem and Background Fields in Renormalization Group Method for Lattice Gauge Theories (1985)",
+      "url": "https://doi.org/10.1007/BF01229381",
+      "kind": "journal_article",
+      "publication_year": 1985,
+      "observed_on": "2026-10-31",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Selected305-309 complex input domain, Proposition9 and190 visually read, with related source norm/weight definitions. The stated derivative bounds include gradient and special second-order/current operators.",
+      "limits": "The source omits the lengthy calculation leading to189/190. Its kernel is a literature input, not an independently reproduced proof or arbitrary-complex-background theorem.",
+      "reuse": "Bibliographic metadata and own synthesis only; no source PDF body or inferred training permission.",
+      "anchors": [
+        "domain.analysis"
+      ],
+      "inspected_pdf_sha256": "838056b5c578f81d058deb3d394c66d934690e3b94c6cf2956534ec6d211b541",
+      "inspected_pdf_bytes": 3355501
+    },
+    {
+      "id": "balaban-cmp99-background-propagators",
+      "title": "Propagators for lattice gauge theories in a background field (1985)",
+      "url": "https://doi.org/10.1007/BF01240355",
+      "kind": "journal_article",
+      "publication_year": 1985,
+      "observed_on": "2026-10-31",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Selected421-429, especially4283.156-3.158, read in the held fusion PDF: a uniform hard-axial free-coordinate precision gap and exponential decay are stated under the source regularity class.",
+      "limits": "Source hard gap and regular-background extension not independently reconstructed. Hard-axial and averaged-soft free coordinates differ; a separate constrained gauge/slice bridge is needed. Fusion hash identifies the container, not a separately acquired article PDF.",
+      "reuse": "Bibliographic metadata and own synthesis only; no source PDF body or inferred training permission.",
+      "anchors": [
+        "domain.analysis"
+      ],
+      "inspected_pdf_sha256": "00cc6b218dcf0e1c2884e135caa1d57b3591df036540b685e7440f30cbd4ff16",
+      "inspected_pdf_bytes": 35847780
+    },
+    {
+      "id": "balaban-cmp96-weighted-distance",
+      "title": "Propagators and renormalization transformations for lattice gauge theories II (1984)",
+      "url": "https://doi.org/10.1007/BF01240221",
+      "kind": "journal_article",
+      "publication_year": 1984,
+      "observed_on": "2026-10-31",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Selected223,230-231 and2.46 visually read in the held fusion PDF: source distance uses scale-weighted contour lengths and block-root projection, not raw fine-lattice distance.",
+      "limits": "Distance definition only; no propagator proof audit. Fixed-step metric padding does not establish a scale-uniform comparison. Fusion hash identifies the held container.",
+      "reuse": "Bibliographic metadata and own synthesis only; no source PDF body or inferred training permission.",
+      "anchors": [
+        "domain.analysis"
+      ],
+      "inspected_pdf_sha256": "00cc6b218dcf0e1c2884e135caa1d57b3591df036540b685e7440f30cbd4ff16",
+      "inspected_pdf_bytes": 35847780
     }
   ],
   "candidates": [
@@ -2411,18 +2483,22 @@
         "balaban-cmp119-conditional-boundary",
         "slominski-reflected-sde-1993",
         "ambrosio-savare-zambotti-logconcave",
-        "menz-covariance-comparison-2014"
+        "menz-covariance-comparison-2014",
+        "balaban-cmp109-effective-actions",
+        "balaban-cmp102-variational-background",
+        "balaban-cmp99-background-propagators",
+        "balaban-cmp96-weighted-distance"
       ],
       "node_ids": [
         "domain.analysis"
       ],
       "dictionary": "Independent raw bond blocks map to reflected coordinates; actual primitive carriers to S/T; original positive history disintegration to pi. Preserve the actual composed inserted observable, normalization and carrier distance.",
       "preserved": "Conditional covariance decay follows on a verified uniformly convex finite-range product class via weighted synchronous reflection; exact total covariance retains the outer means.",
-      "lost_or_unproved": "Original physical dictionary/coercivity/exterior history margin, bad-history control, marked outer response and continuum/global physical conclusions remain unproved. Formal R-expanded terms are not automatically probabilities.",
+      "lost_or_unproved": "Actual compatible background/window certification; prior first-mean/reflection proofs were outside the six-note audit. Removed annulus, outer W/history covariance, bad histories, increasing scales and global physical conclusions remain open.",
       "hypothesis_to_remove": "An actual two-mark outer response estimate with uniform volume and distance constants; it cannot be replaced by a named conditional mixing wrapper or a scalar vacuum majorant.",
       "falsifier": "Nonproduct raw cutoff, failed full exterior/inside Hessian margin, nonuniform block row/column bounds, or lost mark distance invalidates the corresponding application. Conditional decay alone leaves the outer covariance even with no bad histories.",
-      "next_finite_task": "Reconcile actual composed two-mark numerator with the existing R I/II extraction packet before attempting a marked bound; do not duplicate its inventory or claim unmarked local activities solve the connected problem.",
-      "review_packet": "integrations/research-radar/notes/2026-10-30-conditional-reflection.md; participating current Codex synthesis, no independent review, PDF assessment or score."
+      "next_finite_task": "Check the exact two-level joint-law conditioning and original first-mean/reflection dependencies. A source-dependent fixed-k1 curvature mechanism survives technical audit only with the repaired beta-action/logZ dictionary, actual free cutoff and strict complex/source margins; no global shortcut is restored.",
+      "review_packet": "integrations/research-radar/notes/2026-10-30-conditional-reflection.md and evidence/2026-10-31-retained-step-audit/README.md; one unscored six-note technical review, material old-action/cutoff corrections retained, runtime identity and independence unverified; no PDF/manuscript grade."
     }
   ],
   "source_refresh": {

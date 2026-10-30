@@ -1,0 +1,85 @@
+{
+  "scope": "Own exact notes/reports/original snapshots, explicitly normalized JSON reading copies, README and parent disposition. Original byte hashes are preserved; no source PDF bodies.",
+  "artifacts": [
+    {
+      "file": ".gitattributes",
+      "bytes": 17,
+      "sha256": "ed504f4fc773d4d480a17ec0a456cd7b94d21b35fb50036b33876bb887519d55"
+    },
+    {
+      "file": "ASSESSMENT1501.json",
+      "bytes": 15346,
+      "sha256": "e3fbc526d462ca1f42632b642eb4f81237fbccaeccdf0b0ff45db494cb202413"
+    },
+    {
+      "file": "ASSESSMENT1501.json.original",
+      "bytes": 15638,
+      "sha256": "df7e8165564aeb670a5973a16f4ad6bdddaed3623b32ef1d793eeee909fab7ad"
+    },
+    {
+      "file": "DISPOSITION1505.md",
+      "bytes": 6053,
+      "sha256": "d93986c71d6b31d833bb474549a253ed9affa6ae8e9d57c4a057af86f892ac4a"
+    },
+    {
+      "file": "INPUT-MANIFEST1501.json",
+      "bytes": 2345,
+      "sha256": "c447cb92518ee7a968daa4f69efceb2caf114ee271a6b7606fbf5d4953cb95de"
+    },
+    {
+      "file": "INPUT-MANIFEST1501.json.original",
+      "bytes": 2400,
+      "sha256": "c8363c0edcf06ab70c87ad921e1a31b90acdb411e011d18d8e44722b4ca5e5ba"
+    },
+    {
+      "file": "inputs/CAUCHY1497.md",
+      "bytes": 4858,
+      "sha256": "aef01cb628b4769f112e722734ba1e047537aa41396467a22e67e141f888bb29"
+    },
+    {
+      "file": "inputs/CURRENT-POLYMERS1499.md",
+      "bytes": 5829,
+      "sha256": "64bb8a58cff2a07e65c1b0ad782a40058cb2cb4b70274f7278c00358d561a0f9"
+    },
+    {
+      "file": "inputs/CUTOFF-BUDGET1496.md",
+      "bytes": 5301,
+      "sha256": "366fffa4c367199622c22724fe24980362db67c35462af5d9a0031dec2003564"
+    },
+    {
+      "file": "inputs/FIXED-SECOND-STEP1500.md",
+      "bytes": 7313,
+      "sha256": "27bd53f7bb28cf98646dab3af40ec01af116ba49f78a4423d82e822fada1568a"
+    },
+    {
+      "file": "inputs/INPUT-RADIUS1498.md",
+      "bytes": 4611,
+      "sha256": "9a2c504d0432eee34d9222ecc227b8d0aac142d914461cfd8f2ff3c7e0fc3e0e"
+    },
+    {
+      "file": "inputs/SOFT-GAP1495.md",
+      "bytes": 6122,
+      "sha256": "97af0f79b89caf4d7f60ed1ae93cce6e73590985bf8d720fe42a7a4691d6d972"
+    },
+    {
+      "file": "README.md",
+      "bytes": 2954,
+      "sha256": "c69e36bbf468557e7b88d25fbe0a2a3da3d6b0bc53c8fe93611fbbf9f608aefc"
+    },
+    {
+      "file": "REVIEW1501.md",
+      "bytes": 26117,
+      "sha256": "3db3edf9c88647d4901166dac748a417389a8f5f7d8a683f0adc360690b2c7b0"
+    },
+    {
+      "file": "SHA256-MANIFEST1501.json",
+      "bytes": 8235,
+      "sha256": "5fc966b148359fe125f99345475145d552e37256d53a13bdcb6b0e31d752a268"
+    },
+    {
+      "file": "SHA256-MANIFEST1501.json.original",
+      "bytes": 8430,
+      "sha256": "6d9c517779ec0254f2e37e5ecb541f96a650b535dd34f4c81066933916773b08"
+    }
+  ]
+}
