@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "inspection_id": "separability1386-directed-review-2026-10-30",
+  "created_at_utc": "2026-10-30T08:24:06.250Z",
+  "algorithm": "SHA-256",
+  "input_sha256": "fbbc22c00efdafdbcd894ab45573f8a0bdc3defd634300b4465e6c26d00f7293",
+  "files": [
+    {
+      "file": "ARGUMENT1386.input.md",
+      "bytes": 6918,
+      "sha256": "fbbc22c00efdafdbcd894ab45573f8a0bdc3defd634300b4465e6c26d00f7293"
+    },
+    {
+      "file": "report.txt",
+      "bytes": 15846,
+      "sha256": "ca9a3aae03d8350224ee336912b728a3f19b8ec16ed6edddb4dfd297cb3960a4"
+    },
+    {
+      "file": "verdict.json",
+      "bytes": 3557,
+      "sha256": "a8f9322dce14e3bc38fe3b4929afb96f132623dbed34200b43889e3e54366098"
+    },
+    {
+      "file": "context.json",
+      "bytes": 6332,
+      "sha256": "9c4d9046b37ad6a803e8961a7be4130443d3da5ed1d4b9e74e240b2f426d3791"
+    },
+    {
+      "file": "source_pins.json",
+      "bytes": 6390,
+      "sha256": "35626c8d2f15c2517caa75681e5198a6f3d222a41800127be716194b95a4e1cb"
+    }
+  ],
+  "scope": "All five payload files. manifest.json is hashed by SHA256SUMS.txt; SHA256SUMS.txt does not hash itself.",
+  "mathematical_certification": false
+}

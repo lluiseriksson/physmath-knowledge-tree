@@ -1,0 +1,62 @@
+{
+  "scope": "Own input/full actual unscored review/provenance; not a manuscript, source corpus or independent peer review. All copied review files are byte-identical to native D artifacts. No normalization or score inheritance.",
+  "native_review_manifest_sha256": "a64ce3b10030ed45e59f21f45e173b0061a947191330073b843f044c57b6cb86",
+  "files": [
+    {
+      "file": "ARGUMENT1386.input.md",
+      "bytes": 6918,
+      "sha256": "fbbc22c00efdafdbcd894ab45573f8a0bdc3defd634300b4465e6c26d00f7293",
+      "native_bytes_identical": true
+    },
+    {
+      "file": "CLASS-GUARD1386.md",
+      "bytes": 742,
+      "sha256": "fa453d48997b0a8676d4d26281281874d2b078f498d74fe588b3058fd14df752",
+      "native_bytes_identical": true
+    },
+    {
+      "file": "context.json",
+      "bytes": 6332,
+      "sha256": "9c4d9046b37ad6a803e8961a7be4130443d3da5ed1d4b9e74e240b2f426d3791",
+      "native_bytes_identical": true
+    },
+    {
+      "file": "manifest.json",
+      "bytes": 1177,
+      "sha256": "a64ce3b10030ed45e59f21f45e173b0061a947191330073b843f044c57b6cb86",
+      "native_bytes_identical": true
+    },
+    {
+      "file": "report.txt",
+      "bytes": 15846,
+      "sha256": "ca9a3aae03d8350224ee336912b728a3f19b8ec16ed6edddb4dfd297cb3960a4",
+      "native_bytes_identical": true
+    },
+    {
+      "file": "SHA256SUMS.txt",
+      "bytes": 486,
+      "sha256": "0a8accdfb61ef8e10f0c3780717fd2a66b1e748a742e1b5fc9687da3e670089b",
+      "native_bytes_identical": true
+    },
+    {
+      "file": "source_pins.json",
+      "bytes": 6390,
+      "sha256": "35626c8d2f15c2517caa75681e5198a6f3d222a41800127be716194b95a4e1cb",
+      "native_bytes_identical": true
+    },
+    {
+      "file": "SOURCES1387.json",
+      "bytes": 4373,
+      "sha256": "39d9ae077b46d93a3ed1bb6061609f1aa5d940fc4c9d99640ae19b6f151b18c8",
+      "native_bytes_identical": true
+    },
+    {
+      "file": "verdict.json",
+      "bytes": 3557,
+      "sha256": "a8f9322dce14e3bc38fe3b4929afb96f132623dbed34200b43889e3e54366098",
+      "native_bytes_identical": true
+    }
+  ],
+  "source_bodies_retained": false,
+  "canonical_graph_unchanged": true
+}

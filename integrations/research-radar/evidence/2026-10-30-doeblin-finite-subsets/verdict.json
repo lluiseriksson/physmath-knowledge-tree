@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0",
+  "inspection_id": "separability1386-directed-review-2026-10-30",
+  "verdict": "valid_under_stated_assumptions",
+  "conclusion_es": "La reparación por familias finitas obtiene la cota por núcleo con 24 y, por monotonía, la anunciada con 32, sin supremo aleatorio no separable.",
+  "input_sha256": "fbbc22c00efdafdbcd894ab45573f8a0bdc3defd634300b4465e6c26d00f7293",
+  "inspection_count": 1,
+  "input_modified": false,
+  "blocking_findings": [],
+  "checks": [
+    {
+      "id": "finite_dudley_12",
+      "result": "verified_for_finite_index_sets",
+      "basis": "van Handel, Definitions 5.20/5.22, finite proof of Theorem 5.24 and Corollary 5.25"
+    },
+    {
+      "id": "cover_12_to_24_to_32",
+      "result": "valid",
+      "basis": "Internal epsilon/2 cover of U recenters to an internal epsilon cover of F; change of variable gives factor 2; 24 <= 32"
+    },
+    {
+      "id": "global_common_branch",
+      "result": "valid_without_maximality_of_restriction",
+      "basis": "Use auxiliary Bernoulli I and source finite-dimensional mixture; only P(I=1)=tau(W) and equality on I=1 are needed"
+    },
+    {
+      "id": "finite_overlap",
+      "result": "valid_direction_and_measurability",
+      "basis": "E min <= min E, Tonelli and jointly measurable densities"
+    },
+    {
+      "id": "finite_tuple_geometry",
+      "result": "valid_with_approximate_centers",
+      "basis": "Approximate Chebyshev centers; interior continuity for positive diameter; direct zero for diameter zero"
+    },
+    {
+      "id": "conditional_jensen_and_cost",
+      "result": "valid",
+      "basis": "Nonnegative R_F, E R_F <= C; s E[R_F|I=0] <= C; bounded concave nondecreasing G"
+    },
+    {
+      "id": "rho_finite_family_identity",
+      "result": "valid",
+      "basis": "WK inherits common domination; finite characterization applies; deterministic supremum only"
+    },
+    {
+      "id": "perspective",
+      "result": "valid",
+      "basis": "Concavity at C/t=(s/t)(C/s)+(1-s/t)0 and G(0)>=0"
+    },
+    {
+      "id": "endpoints",
+      "result": "valid",
+      "basis": "s=0, t=0, p=0, C=0, singleton and diameter-zero cases treated separately"
+    }
+  ],
+  "scope_caveats": [
+    {
+      "id": "class_uniformity",
+      "text_es": "Una cota para la curva de una clase de núcleos requiere un mismo sigma admisible para toda la clase. La existencia de un sigma distinto por núcleo sólo da cotas individuales."
+    },
+    {
+      "id": "same_coupling",
+      "text_es": "Los incrementos deben corresponder a la misma ley finito-dimensional de la construcción de rama común, no a otro acoplamiento."
+    },
+    {
+      "id": "source_dependencies",
+      "text_es": "La componente común, sus leyes prescritas y los ingredientes generales de integración/geometría se aceptan como supuestos fuente; no se auditaron todas sus dependencias."
+    },
+    {
+      "id": "no_global_supremum_claim",
+      "text_es": "No se valida E sup_U Z_u <= C en una realización no separable ni se certifica un evento global de coincidencia medible."
+    },
+    {
+      "id": "model_attestation",
+      "text_es": "Se pidió GPT-6 Astra xhigh; no hay metadatos de esta ejecución que acrediten el modelo o esfuerzo efectivamente resueltos."
+    }
+  ],
+  "spike_warning": {
+    "status": "retained_for_pathwise_suprema",
+    "kernel_level_refutation_certified": false
+  },
+  "formal_proof_checker_used": false,
+  "novelty_or_priority_assessed": false,
+  "full_source_proof_certification": false,
+  "wainwright_theorem_5_22": "not_read_or_audited"
+}
