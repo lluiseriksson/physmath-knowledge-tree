@@ -89,8 +89,38 @@ Primary PDFs were reused in their existing private cache. No primary PDF/corpus 
 
 The fixed-torus periodicity concern is inapplicable to the actual `wilsonRayCorrelator`: it chooses a pair with touch-distance at least 2t and returns zero if no such pair exists. No periodic unwrapped correlator was substituted. Do not reopen this as an alleged programme flaw.
 
-This synthesis is kept in the existing Yang–Mills pack. No new graph node, source count, candidate, paper or review is warranted. Next select an actual source observable/insertion family and prove its two-active-support property and physical scale dictionary. Abandon a proposed source family if these cannot be derived; do not repeat kernel/binder/Hodge metadata audits or generate artificial R sequences as physical progress. The actual raw Rsc/rooted-H-sharp identity, activity/profile estimate, uniform physical constants and continuum conclusion remain open.
+This synthesis is kept in the existing Yang–Mills pack. No new graph node, source count, candidate, paper or review is warranted. The physical insertion selection and source-compatibility gate below refine this next task; its two-active-support property and physical scale dictionary remain to be proved. Abandon a proposed source family if these cannot be derived; do not repeat kernel/binder/Hodge metadata audits or generate artificial R sequences as physical progress. The actual raw Rsc/rooted-H-sharp identity, activity/profile estimate, uniform physical constants and continuum conclusion remain open.
 
 ## Integration provenance
 
 Integrated in execution1403 from the conserved execution1402 reading dossier. See [source reading and pin ledger](SOURCE-READING.json) and [two symbolic identity checks](ALGEBRA-CHECK1402.json). The later observed programme HEAD `7a69e8127a73a0be495af94c5cfcaafca25768a4` changes two nonlinear-observation documentation files only; the five cited implementation files are unchanged in that compare. The new nonlinear note is inventoried, not audited here. Existing source CI anchors retain their exact scope; no programme build or model review was repeated.
+
+## Physical insertions and the CMP116 compatibility gate
+
+This grouped continuation incorporates executions1405–1407 in the same dossier. The following elementary identities are unformalized analytic derivations; they are not new source estimates, model assessments or papers.
+
+For the actual finite normalized Wilson Gibbs probability mu and normalized real plaquette traces O_p,O_q, unitarity gives |O_p|,|O_q|<=1. Select the polynomial source family already used by the programme's weighted-gas observable construction:
+
+    F(s,t)=E_mu[(1+s O_p)(1+t O_q)]=1+s a+t b+st c.
+
+Here a=E O_p, b=E O_q, c=E O_p O_q. For complex |s|,|t|<=1/4, |F-1|<=9/16, so the power-series log is defined uniformly in finite volume, beta and Nc. Only w and -w^2/2 in log(1+w) contribute to [st], giving [st]log F=c-ab. This supplies a global normalized-partition zero-free neighborhood, not individual RG-factor analyticity or spatial decay. A Cauchy estimate on the whole log F erases separation.
+
+For a justified source-independent probability conditional kernel K_A of the actual measure, the transported factor is 1+s a(A)+t b(A)+st c(A), with a=K_A O_p, b=K_A O_q and c=K_A(O_p O_q). It differs from the product of separately transported single-source factors by st J(A), where J=Cov_(K_A)(O_p,O_q). Thus total covariance reads Cov_mu=E J+Cov(a,b). Retain this mixed internal contribution. As a limited physical sanity check, coincident normalized SU(2) plaquette insertions at beta=0, with constant coarse map, give F=1+st/4: a Haar holonomy is a uniform unit quaternion, its scalar coordinate has mean0 and variance1/4. The factorized single-source expression would be1. This refutes only a universal naive factorization rule; it is not a separated-plaquette or actual RG counterexample.
+
+The covariance identity is classical and already appears in the programme's retired KD centered-series dossier. That failed numerical campaign remains retired. The source-deformation/log-partition route is also antecedent in the historical CLUSTER-CORRELATION-PLAN. Neither is a new research method here, and historical open labels do not imply a current theorem is absent. Existing small-coupling two-plaquette results must not be relabelled as the sought weak-coupling/UV estimate.
+
+### Source comparison rejects probability normalization of each localized activity
+
+Additional primary CMP116 reading: pp3–4 and12–16, with pp12,13,15 visually checked. Eq2.3 introduces inclusion–exclusion signs; Eq2.4 groups them into F(Z0,B). Eq2.5 conditions the correlated Gaussian but retains its cross exponential and weighted inner integral. The exterior change B'=(C^(k))^(1/2)X yields Eq2.6, which defines the **whole weighted integrand G** against white Gaussian dmu0. It does not make the interaction/cutoff weight a probability density. Eq2.7 localizes the square root through a resolvent, Eq2.8 applies decoupling derivatives, and Eqs2.9–2.13 form localized H and its connected expansion.
+
+On p15, Eq2.14 uses complex contours/configurations; the source explicitly discusses nonsymmetric operators and a complex second measure. The real symmetric positive case is the reference for the perturbative and determinant estimates in Eq2.15 onward. Therefore reject our attempted shortcut of normalizing **each localized H** as a positive conditional probability and inheriting radius1/4 from the global physical Gibbs calculation. Inclusion–exclusion and complex analytic continuation do not preserve that premise. This rejects our transfer, not Balaban's theorem or the actual Wilson source family.
+
+The real plaquette bound1 also does not carry automatically to complex gauge configurations. A holomorphic continuation on the invertible complex domain is (Tr P+Tr P^(-1))/(2Nc); on SU(Nc) it equals the normalized real trace. For SL(2,C), P=diag(exp(u),exp(-u)), real u>0, gives cosh(u)>1. Actual restricted-domain holonomy bounds are needed; this example does not show that they fail on the source's domain.
+
+The exact-c454 Gaussian pushforward/integral-rewrite interfaces identify a Gaussian law under explicit hypotheses. They do not identify the source interaction F/G with the actual source-deformed Wilson density or prove a complex-source activity estimate. This comparison does not reopen the completed binder/kernel audit. Likewise WilsonGibbsPolymerRep.h_correlator assumes its correlation conclusion and cannot serve as an estimate producer.
+
+### Concrete remaining source task
+
+Insert both actual Wilson factors in the original density before Eq2.1. Carry them jointly through Eq2.3 and Eq2.5–2.8, using a proved physical holonomy/field dictionary, to obtain the mixed coefficient of G and H. Establish complex-domain majorants, normalization and cutoff/domain control, and justify coefficient extraction through the sums. Prove two active contacts or separately estimate marked holes before using the distance argument above; preserve the internal connected insertion. Finally match the actual remainder/scale sum to Rsc with uniform physical constants.
+
+Stop a proposed producer if these source-compatibility steps cannot be derived. Do not substitute a postulated J, free Rsc, another adapter, or more generic Gaussian/probability identities. Literature confidence applies to the selected source construction; the marked-integrand translation is heuristic and its uniform physical use speculative. No new formal result, physical hypothesis, hRpoly input or continuum conclusion is claimed. The [updated reading ledger](SOURCE-READING.json) records exact hashes, reading scopes and symbolic-control limits; no primary PDF or source corpus is redistributed.

@@ -10,11 +10,24 @@
       "bytes": 2286864,
       "pdf_pages": 22,
       "selected_pages": [
+        3,
+        4,
+        12,
+        13,
+        14,
+        15,
+        16,
         20,
         21
       ],
-      "status": "statement_read; Eq2.38 visually checked",
-      "complete_proof_audited": false
+      "status": "Selected construction, statement and analytic-boundary reading; full proof not audited",
+      "complete_proof_audited": false,
+      "visually_checked": [
+        12,
+        13,
+        15,
+        20
+      ]
     },
     {
       "source": "Balaban CMP119",
@@ -79,6 +92,24 @@
       "ref": "c454346d873385e3a03e38e0f85f4f1439a032c7",
       "sha256": "9da88ff0c29c39c00e5c381cbf0df1e39852b64342990646f99a53289db2bdd1",
       "bytes": 6147
+    },
+    {
+      "path": "YangMills/RG/PhysicalGaugeCMP116ActivityConstruction.lean",
+      "ref": "c454346d873385e3a03e38e0f85f4f1439a032c7",
+      "sha256": "55bad24fe19070194cdb8f4698da5c31c1a46e824e20b7bbb1bba0fe2878f067",
+      "bytes": 118609
+    },
+    {
+      "path": "YangMills/RG/PhysicalGaugeCMP116ActivityAdapter.lean",
+      "ref": "c454346d873385e3a03e38e0f85f4f1439a032c7",
+      "sha256": "674a11c581e3debbb3cf642647ac21c2b0c8424958db20549e000a0dbced32d1",
+      "bytes": 30837
+    },
+    {
+      "path": "YangMills/RG/PhysicalGaugeCMP116RawHsharp.lean",
+      "ref": "c454346d873385e3a03e38e0f85f4f1439a032c7",
+      "sha256": "f62e19cb67b877ba2a1c1a5bc5a9b54cce8162204ec4f4c1555341c9c72bd47a",
+      "bytes": 13276
     }
   ],
   "latest_metadata_compare": {
@@ -118,5 +149,43 @@
   "new_paper": false,
   "canonical_graph_changed": false,
   "deduplication": "Reuse existing papers, source cards, active-skeleton counterexample and closed kernel audit. Per-scale/uniform-rate countermodel refutes only an explicitly weaker auxiliary inference. Not an exhaustive novelty claim.",
-  "acquisition": "Metadata and own synthesis only; no primary PDF, source text corpus, private paths or credentials redistributed."
+  "acquisition": "Metadata and own synthesis only; no primary PDF, source text corpus, private paths or credentials redistributed.",
+  "insertion_followup": {
+    "executions": [
+      1405,
+      1406,
+      1407
+    ],
+    "physical_source_family": "Actual normalized finite Wilson two-plaquette polynomial insertions",
+    "proved_elementary_scope": "Global radius1/4 zero-free neighborhood; mixed log coefficient covariance; exact conditional mixed insertion identity",
+    "rejected_shortcut": "Treat each signed/complex localized H as a positive probability kernel and inherit the global physical radius",
+    "still_open": [
+      "Physical marked F/G/H identity",
+      "Actual RG/source kernel and holonomy dictionary",
+      "Complex-domain insertion majorants",
+      "Source-compatible termwise extraction",
+      "Two-active-contact or marked-hole estimate",
+      "Actual Rsc/rooted-Hsharp identity and uniform physical rate"
+    ],
+    "symbolic_controls": [
+      {
+        "sympy": "1.14.0",
+        "exact_controls": {
+          "mixed_log_coefficient_equals_covariance": true,
+          "rational_radius_gap": "1-(2r+r^2)=7/16 at r=1/4"
+        },
+        "scope": "Two symbolic identities only; not a Lean result or physical RG activity estimate"
+      },
+      {
+        "sympy": "1.14.0",
+        "identity": "(1+s*a+t*b+s*t*c)-(1+s*a)*(1+t*b)=s*t*(c-a*b)",
+        "verified_by": "simplify(lhs-rhs)==0",
+        "verified": true,
+        "scope": "Exact polynomial algebra; no physical RG-kernel construction, model review or new Lean result",
+        "initial_failure_preserved": "INITIAL-STRUCTURAL-CHECK-FAILURE1406.json"
+      }
+    ],
+    "failed_control_disclosure": "First1406 SymPy test compared expanded/factored syntax structurally and failed; exact simplification of their difference passed. Original failure conserved privately. This was not a mathematical counterexample or model review.",
+    "deduplication": "Classical covariance and source-deformation antecedents reused; retired KD campaign not rerun; no new graph node, source/candidate count, paper or assessment."
+  }
 }
