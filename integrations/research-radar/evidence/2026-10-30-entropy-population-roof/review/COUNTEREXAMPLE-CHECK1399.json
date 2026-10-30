@@ -1,0 +1,78 @@
+{
+  "status": "analytic_refutation_of_T_on_saturated_endpoints",
+  "scope": "T only; not a negative G witness or additivity refutation",
+  "selection": "One explicit rational Gram pair derived from a product-state limit; no scan or optimizer",
+  "python": "3.12.6",
+  "sympy": "1.14.0",
+  "assertions_enabled": true,
+  "C_unnormalized": [
+    [
+      "100",
+      "1"
+    ],
+    [
+      "0",
+      "1"
+    ]
+  ],
+  "D_unnormalized": [
+    [
+      "100",
+      "-1"
+    ],
+    [
+      "0",
+      "1"
+    ]
+  ],
+  "normalization_squared": "20004",
+  "reference_dimension": 2,
+  "rho_rank": 2,
+  "physical_diagonal_ranks": [
+    2,
+    2
+  ],
+  "saturated_schur_complement_exact": true,
+  "Sigma": [
+    [
+      "5000/5001",
+      "0"
+    ],
+    [
+      "0",
+      "1/5001"
+    ]
+  ],
+  "P": [
+    [
+      "1/2",
+      "-sqrt(2)/4"
+    ],
+    [
+      "-sqrt(2)/4",
+      "1/2"
+    ]
+  ],
+  "P_eigenvalues": [
+    "1/2 - sqrt(2)/4",
+    "sqrt(2)/4 + 1/2"
+  ],
+  "spectral_weights": [
+    "1/2",
+    "1/2"
+  ],
+  "population": "1/2",
+  "variance": "1/8",
+  "scalar_convexity_input": "e_N'' >= 88/125; audit906 Section 7",
+  "Jensen_excess_lower_bound": "11/250",
+  "mixture_weight_epsilon": "1/5001",
+  "exp9_positive_series_lower_bound": "3003406453997144161/370812682240000",
+  "strict_T_upper_bound": "-52261/1250250",
+  "strict_T_upper_bound_less_than_minus_1_over_25": true,
+  "entropy_numerics_performed": false,
+  "formal_verification_claim": false,
+  "trusted_boundary": "AI-assisted analytic entropy derivation plus exact SymPy premise checks; not yet human-reviewed and not a proof-assistant certificate",
+  "script_sha256": "25855da7da38757bf4cb1f4d1f6a7b50fdd57f929aabc1faddac53c0cce91063",
+  "executed_script_sha256": "bd529099a93c9a1681ce5bb3e930b34436ec3bdd32aa471bd293c9b127fee0bc",
+  "metadata_correction": "Trusted-boundary label corrected from an inaccurate human-argument attribution to AI-assisted derivation; original execution artifacts preserved as historical; no mathematical reexecution or changed result."
+}

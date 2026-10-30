@@ -1,0 +1,334 @@
+UNSCORED COMPONENT AUDIT 1399
+Population-operator entropy estimate and fixed-population Jensen obstruction
+2026-10-30. Natural logarithms throughout.
+
+VERDICT
+
+The proposed stronger inequality T>=0 is FALSE, including on mixed saturated
+fixed-diagonal endpoints with dim R=rank rho=2, faithful Sigma, full-rank
+physical diagonal blocks, and 0<P<I. One explicit Gram pair gives the rigorous
+analytic bound
+
+    T < -52261/1250250 < -1/25.
+
+The conditional implication T>=0 => G>=0 is correct. The supplied weighted
+operator-Jensen obstruction is also correct and reproducible in its stated
+trusted arithmetic. Neither the new analytic refutation of T nor the Jensen
+obstruction refutes G or channel additivity. No score, manuscript verdict,
+novelty claim, or proof-assistant certification is made.
+
+1. DEFINITIONS, SUPPORTS, AND INVARIANCE
+
+For G=[C;D], let rho=GG*, Sigma=C*C+D*D, Bg=D*D. The physical diagonal
+blocks are Ar=CC* and Br=DD*; they must not be confused with Bg. Since
+0<=Bg<=Sigma, ker Sigma is contained in ker Bg. On supp Sigma,
+
+    P=Sigma^(-1/2) Bg Sigma^(-1/2),  0<=P<=I,
+    Tr Sigma=1,  Tr Sigma P=Tr Bg=p.
+
+The proposed trace functional is well-defined there. Padding with zero
+Gram columns contributes zero weight and does not change it. Functional
+calculus on the support, rather than an unqualified full-space inverse,
+is essential. At p=0 or 1, positivity forces one branch to vanish, P is
+respectively 0 or I on the support, and T=G=0 using the pure input factor
+and complementary-output entropy e_N(0) or e_N(1).
+
+Under C->CU, D->DU with U unitary, Sigma and P transform by U* (.) U and
+Tr Sigma e_N(P) is invariant. This extends to ALL Gram factors of the same
+rho, not just equal-width unitary changes. Choose a minimal factor F of
+rho; every factor is F V* for an isometry V from the minimal Gram space.
+Sigma, Bg and their supported P are isometric embeddings of the minimal
+objects. Trace functional calculus on the support is therefore invariant.
+Independent branch rotations are not such a change and cannot be imposed.
+
+The physical purification convention should be explicit. In fixed bases,
+
+    |Psi> = sum_(r,k) [C_rk |0,r,k> + D_rk |1,r,k>].
+
+Its A--purifier reduced blocks are
+
+    C^T bar(C), C^T bar(D);
+    D^T bar(C), D^T bar(D).
+
+The purifier marginal is Sigma^T, its population block is Bg^T, and the
+corresponding supported effect is P^T. Simultaneous transposition preserves
+the trace functional. For real C,D this is exactly the diagnostic dictionary
+C^T C, C^T D, D^T C, D^T D. Replacing transpose/conjugation by adjoint
+without this convention would be wrong in general complex data. The proposal
+already warns against that shortcut; there is no error in its real example.
+
+An additional issue not addressed by support invariance is CONTINUITY at a
+rank drop. The trace functional need not approach its value on the limiting
+compressed support. Section 4 below turns this into an actual counterexample.
+
+2. THE SUFFICIENCY ARGUMENT IS CORRECT, CONDITIONAL ON ITS FALSE PREMISE
+
+Let E_lambda be P's spectral projections. The numbers
+w_lambda=Tr Sigma E_lambda are nonnegative, sum to one, and have mean p.
+Thus ordinary scalar Jensen proves
+
+    Tr Sigma e_N(P) >= e_N(p).
+
+The supplied scalar result e_N''>=88/125 gives the stronger useful identity
+
+    Tr Sigma e_N(P)-e_N(p)
+       >= (44/125) [Tr Sigma P^2-p^2].                 (1)
+
+This follows by applying scalar Jensen to e_N(x)-(44/125)x^2. It is valid
+without [Sigma,P]=0 and without operator convexity. In particular, the trace
+functional is a genuinely stronger demand when P has positive weighted
+variance. It is not an algebraic renaming of G.
+
+For the target in the proposal,
+
+    G = T + Tr Sigma e_N(P)-e_N(p).
+
+Consequently a universal nonnegative T on saturated endpoints would prove G
+there. ARGUMENT1284 then proves G on every fixed-diagonal fiber by concavity
+of its output entropy, with the same physical Ar,Br,p and reference geometry.
+No concavity or endpoint reduction of T itself is needed for this implication.
+Conversely, one must not claim that ARGUMENT1284 extends T from endpoints to
+all states: that would need an additional argument. Rank rho<=dim R is a
+consequence of saturation, not a characterization of all saturated states.
+
+The scalar audit was used only for Section 7's explicit scalar derivation,
+not its old verdict, grade, or any global quantum assertion. Its proof bounds
+e_N'' using q*=243/595 and the positive series for atanh(sqrt(q))/sqrt(q).
+The nats constant and the factor four from z=1-2p are consistent.
+
+3. CONTROLS AND THE DECLARED REAL DIAGNOSTIC
+
+Product control: C=sqrt(1-p)K and D=exp(i theta)sqrt(p)K imply P=pI on
+the support and rho is a pure A factor times KK*. Output entropy equals
+e_N(p)+S(KK*), the branch term is S(KK*), and T=0. This is correct.
+
+Pure rho_AR control: the Gram support is one-dimensional, hence T=G.
+Both conditional reference states are pure. Complementarity reduces the
+remaining output entropy to S(N(rho_A)); for fixed population p its Bloch
+transverse radius is at most that of a pure state, so S(N(rho_A))>=e_N(p).
+This is correct; T need not vanish for an entangled pure rho_AR.
+
+Orthogonal reference flags: for rho=sum_j q_j |phi_j><phi_j| tensor |j><j|,
+with pure phi_j and populations p_j, Sigma=diag(q_j) and P=diag(p_j) in the
+flag Gram factor. The branch entropy is H(q)+sum q_j h(p_j)-h(p), while the
+output entropy is H(q)+sum q_j e_N(p_j). Thus
+
+    T=h(p)-sum_j q_j h(p_j)>=0.
+
+This control is correct. It is a nonnegativity control, not generic equality;
+strict concavity of h makes equality require common p_j on positive weights.
+
+The one declared real diagnostic C=diag(1,2), D=CV, Z=10 passes exact
+dictionary and saturation checks. Sigma=[[49,18],[18,76]]/125 is faithful,
+p=1/2, [Sigma,Bg]!=0, the physical diagonal blocks coincide, and the
+coupling is saturated. The channel coefficients 29/40,19/40,3/5 and
+11/40,21/40 follow directly from its affine Bloch action. Applying N to the
+A--purifier state has the same entropy as applying Nhat to rho_AR, by a
+pure Stinespring extension. Gram/physical branch entropies agree by their
+common nonzero singular-value spectra.
+
+The exact output characteristic polynomial is
+
+ x^4-x^3+(36269/125000)x^2-(7287/250000)x+57635361/62500000000,
+
+and det(Bg-x Sigma)=(136/625)x^2-(136/625)x+1/25.
+For the two distinct population eigenvalues, weights recovered from total
+weight one and mean p are valid. This recovery would not by itself suffice
+in a general higher-dimensional example.
+
+The declared example is separable: with equal physical diagonal blocks, its
+unitary coupling can be diagonalized to a sum of product vectors, followed
+by a common positive filter on R. That observation does not authorize such
+a reduction for general saturated endpoints. The positive 90-digit G and T
+values in the supplied proposal remain unverified floating diagnostics.
+The mpmath script was inspected but not rerun here; its entropy evaluation
+is not a certificate. The exact dictionary checker evaluates no entropy.
+No new positive probes or search were performed.
+
+4. EXPLICIT ANALYTIC REFUTATION OF T ON SATURATED ENDPOINTS
+
+Take the two normalized real 2-by-2 Gram blocks
+
+                  [100  1]                  [100 -1]
+    C=1/sqrt(20004)[  0  1],   D=1/sqrt(20004)[  0  1].
+
+They are invertible and Tr(C*C+D*D)=1. Put rho=[C;D][C;D]*. Its physical
+diagonal blocks Ar=CC*, Br=DD* have full rank two. Its off-diagonal block
+X=CD* satisfies X Br^(-1) X*=Ar exactly. Hence
+Ar^(-1/2) X Br^(-1/2) is unitary: this is a genuine saturated endpoint of
+the fixed-diagonal contraction ball, not just a rank-bounded state. Also
+rank rho=2=dim R. All states and supports are finite-dimensional.
+
+Direct algebra gives
+
+    Sigma=diag(5000/5001,1/5001),
+    P=[[1/2,-sqrt(2)/4],[-sqrt(2)/4,1/2]],   p=1/2.
+
+Sigma is faithful. P has eigenvalues lambda_+/-=1/2 +/- sqrt(2)/4 strictly
+inside (0,1), each with spectral weight Tr Sigma E_+/-=1/2. They do not
+commute: [Sigma,P]!=0. Therefore the variance in (1) is 1/8 and
+
+    Tr Sigma e_N(P) >= e_N(1/2)+11/250.                (2)
+
+Let epsilon=1/5001 and, in |00>,|01>,|10>,|11> order, put
+
+    |psi>=(1,0,1,0)/sqrt(2)=|+>_A |0>_R,
+    |chi>=(1,1,-1,1)/2.
+
+The Gram columns give the exact orthogonal mixture
+
+    rho=(1-epsilon)|psi><psi|+epsilon|chi><chi|.       (3)
+
+The state chi is maximally entangled, since its A marginal is I/2. For
+tau_psi=(Nhat tensor id_R)(|psi><psi|) and tau_chi analogously,
+pure Stinespring complementarity yields
+
+    S(tau_psi)=e_N(1/2),
+    S(tau_chi)=S(N(I/2))=h(3/5)<=ln 2.
+
+The standard entropy-of-mixture upper bound, equivalently the fact that
+the Holevo information of a binary ensemble is at most its Shannon entropy,
+gives
+
+    S((Nhat tensor id_R)rho)
+       <=h(epsilon)+(1-epsilon)e_N(1/2)+epsilon h(3/5)
+       <=e_N(1/2)+h(epsilon)+epsilon ln 2.            (4)
+
+Both normalized branch entropies in T are nonnegative. Subtract (2) from
+(4), and drop these subtracted nonnegative branch terms, to obtain
+
+    T<=h(epsilon)+epsilon ln 2-11/250.
+
+For 0<epsilon<1, -(1-epsilon)ln(1-epsilon)<=epsilon. The exact finite
+Taylor sum sum_(k=0)^20 9^k/k! is
+
+    3003406453997144161/370812682240000 > 5001.
+
+Its positive remaining tail proves exp(9)>5001, hence ln5001<9. Also
+exp(1)>1+1=2 gives ln2<1. Since epsilon=1/5001,
+
+    h(epsilon)+epsilon ln2
+       <=epsilon ln5001+epsilon+epsilon ln2 <11/5001.
+
+Consequently
+
+    T < 11/5001-11/250 = -52261/1250250 < -1/25.     (5)
+
+This is an analytic sign proof for one explicit admissible instance. It
+requires no floating entropy evaluation and no interval eigensolver. The
+exact checker verifies all stated matrix identities, ranks, saturation,
+spectral weights, the mixture, the A marginal of chi, the Taylor-sum bound,
+and the final rational inequalities with SymPy. The entropy-of-mixture
+inequality and the already supplied scalar convexity bound are its analytic
+premises. This is not a proof-assistant theorem and does not independently
+verify Python/SymPy internals.
+
+How it was selected, without scanning: the family
+
+    C_t=[[1,t],[0,t]]/sqrt(2+4t^2),
+    D_t=[[1,-t],[0,t]]/sqrt(2+4t^2),  t>0,
+
+consists of saturated endpoints and has the same P and spectral weights
+for every t. As t decreases to zero its physical state tends to psi, the
+branch entropies tend to zero, and its output entropy tends to e_N(1/2).
+But Tr Sigma_t e_N(P_t) stays equal to
+[e_N(lambda_-)+e_N(lambda_+)]/2, strictly above e_N(1/2). At t=0 the support
+compresses to dimension one and the supported P is 1/2, so the trace
+functional drops to e_N(1/2). The singular-support definition is invariant
+but discontinuous at this rank drop. Choosing t=1/100 makes the above
+elementary mixture bound decisive. This single family argument and single
+explicit instance were used; there was no seed campaign or optimizer.
+
+5. THE FIXED-POPULATION JENSEN COUNTEREXAMPLE
+
+The supplied script's exact construction is correct. With u=(1,epsilon),
+v=(-epsilon,1), n=1+epsilon^2 and w=delta/n, the orthogonal unit directions
+u/sqrt(n), v/sqrt(n) have Sigma eigenvalues w and 1-w. In the predeclared
+tuple these are 1/1010000 and 1009999/1010000. Since u*Sigma u=w n=delta,
+H=uu*-delta I obeys Tr Sigma H=0. Thus P0 and P0+/-sH have the SAME
+faithful Sigma and the SAME exact population 62513938219/121391900000.
+Positive-contraction premises and noncommutation are checked exactly.
+
+For a real symmetric 2-by-2 P, the script sets mu=Tr P/2 and
+r=sqrt(((P00-P11)/2)^2+P01^2). Then
+
+ e_N(P)=[e_N(mu+r)+e_N(mu-r)]I/2
+       +[e_N(mu+r)-e_N(mu-r)](P-mu I)/(2r).
+
+This is exact functional calculus for the two distinct eigenvalues, so the
+implemented trace contraction is the intended weighted Jensen gap. All
+rational constants are passed as rational strings to Arb, avoiding a
+binary-float conversion. Domain and sign comparisons are interval tests.
+The official python-flint 0.9.0 documentation confirms that arb represents
+midpoint-radius real balls, accepts rational strings, and uses ctx.prec for
+midpoint precision: https://python-flint.readthedocs.io/en/latest/arb.html .
+The documentation is external supporting context, not a formal guarantee
+about this execution or a separate implementation.
+
+One exact-copy replay in this audit's own directory reproduced
+
+ J in [-2.07284614985105710290955364216829353499233157823315556401094e-11
+       +/- 2.00e-71],
+ -1/10^10 < J < -1/10^12 < 0.
+
+The replayed JSON is byte-identical to the supplied JSON, SHA256
+d09703e180c5e4bf4d40199f1e4cddb7e81bc32bb0e85d742701953b32c2cdda.
+This is a reproducibility check using the SAME source implementation and
+runtime family. It is not independent arithmetic certification. SymPy and
+python-flint/Arb remain trusted components; no formal Lean claim is made.
+
+The witness refutes the claimed weighted convexity of P->Tr Sigma e_N(P)
+even on this fixed-population affine slice. Its negative trace also excludes
+a positive-semidefinite operator Jensen difference. It does not invalidate
+the scalar spectral Jensen inequality of Section 2. Nor does it, by itself,
+refute T: no entropy lower bound follows from, or is shown equivalent to,
+that weighted convexity assertion. T is refuted separately by Section 4.
+
+The analytic quartic explanation has the stated sign. Writing r=sqrt(q),
+f(q)=h((1+r)/2) gives
+
+ f''(q)=[atanh(r)-r/(1-r^2)]/(4r^3)<0 for 0<q<1.
+
+Thus e_N(c+x)=f(a)-b f'(a)x^2+(b^2/2)f''(a)x^4+O(x^6) has a negative
+quartic coefficient. That calculation is explanatory; the finite interval
+witness supplies the actual noncommutative Jensen refutation without relying
+on an unquoted general matrix-convexity criterion.
+
+6. RETAINED OBJECTIONS AND STOPPING POINT
+
+The central defect is not a missing proof of a plausibly universal T:
+the proposed T is false under its own strongest allowed endpoint restriction.
+There is therefore no unresolved universal T of this form left to prove.
+The stronger term adds a real positive variance cost, so it was a distinct
+hypothesis; the physical entropy need not pay that cost near a rank drop.
+
+G remains unresolved by this audit. Equation G=T+Jensen-excess allows T<0
+with G>=0; no negative G value was established or claimed. Accordingly no
+claim about channel additivity, global Q, or the broader coefficient family
+is obtained. The dimension-two counterexample to T supplies no universal
+reference-dimension reduction for G. Reference geometry was retained in
+every construction, and no classicalization or independent branch rotation
+was used to establish the counterexample.
+
+The original product/pure/flag controls and the one positive diagnostic do
+not rescue a universally false bound. The method-level Jensen obstruction
+retains its narrower status. No existing literature covering theorem was
+identified or invoked to settle G; no literature search or novelty claim
+was made. Old audit verdicts and grades do not transfer to this component.
+
+Actual checks: one copied Jensen replay; one exact checker for the single
+analytically selected counterexample; one exact dictionary check of the
+already declared real diagnostic. All three completed on their first run
+with assertions enabled. No failed scientific run, discarded witness,
+precision loop, random sample, or optimizer exists in this audit. The
+original mpmath diagnostic was not rerun. The complete request, source
+copies, scoped scalar excerpt, fixed-fiber argument, check scripts/results,
+run log, and hash manifest are preserved in the audit directories.
+
+Requested model/effort and context independence were not independently
+attested. Filesystem sharing and same-implementation replay are disclosed.
+This is an AI-assisted analytic derivation, not yet human-reviewed. A first
+result's inaccurate human-argument label was corrected as provenance
+metadata without reexecuting its mathematics; see RUN-LOG1399.txt and the
+historical source/result copies. This is one component audit, not another
+manuscript review or score.

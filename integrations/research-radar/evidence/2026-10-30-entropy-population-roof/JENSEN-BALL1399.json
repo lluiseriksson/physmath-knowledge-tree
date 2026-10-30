@@ -1,0 +1,98 @@
+{
+  "status": "certified_proxy_counterexample",
+  "python": "3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)]",
+  "sympy": "1.14.0",
+  "python_flint": "0.9.0",
+  "arb_precision_bits": 256,
+  "assertions_enabled": true,
+  "parameter_selection": "One predeclared rational tuple, no search, optimization, precision loop or discarded run.",
+  "channel": "N(x,y,z)=(3x/5,3y/5,z/4+1/5)",
+  "profile": "e_N(p)=h((1+sqrt(243/595-(119/100)*(p-99/238)^2))/2), nats",
+  "parameters": {
+    "center": "99/238",
+    "t": "1/10",
+    "epsilon": "1/10",
+    "delta": "1/1000000",
+    "step": "1/1000"
+  },
+  "reference_weight": [
+    [
+      "1010099/102010000",
+      "-504999/5100500"
+    ],
+    [
+      "-504999/5100500",
+      "100999901/102010000"
+    ]
+  ],
+  "reference_weight_eigenvalues": [
+    "1/1010000",
+    "1009999/1010000"
+  ],
+  "direction": [
+    [
+      "999999/1000000",
+      "1/10"
+    ],
+    [
+      "1/10",
+      "9999/1000000"
+    ]
+  ],
+  "base": [
+    [
+      "99/238",
+      "0"
+    ],
+    [
+      "0",
+      "307/595"
+    ]
+  ],
+  "plus": [
+    [
+      "49618999881/119000000000",
+      "1/10000"
+    ],
+    [
+      "1/10000",
+      "61401189881/119000000000"
+    ]
+  ],
+  "minus": [
+    [
+      "49381000119/119000000000",
+      "-1/10000"
+    ],
+    [
+      "-1/10000",
+      "61398810119/119000000000"
+    ]
+  ],
+  "all_inputs_positive_contractions": true,
+  "same_faithful_reference_weight": true,
+  "fixed_population": "62513938219/121391900000",
+  "trace_sigma_direction": "0",
+  "noncommuting_population_operators": true,
+  "weighted_jensen_gap_enclosure": "[-2.07284614985105710290955364216829353499233157823315556401094e-11 +/- 2.00e-71]",
+  "certified_rational_lower": "-1/10000000000",
+  "certified_rational_upper": "-1/1000000000000",
+  "strict_rational_interval_verified": true,
+  "matrix_jensen_gap": [
+    [
+      "[7.11443488735114994653043287825463598515779699e-7 +/- 8.20e-53]",
+      "[7.09222209246363295278915429046175333468323435e-8 +/- 4.87e-53]"
+    ],
+    [
+      "[7.09222209246363295278915429046175333468323435e-8 +/- 4.87e-53]",
+      "[7.04835501673910439452317525887445332518141012e-9 +/- 4.38e-54]"
+    ]
+  ],
+  "scope": "Counterexample only to weighted operator-Jensen convexity of the scalar roof at fixed mean population. It does not refute the stronger physical entropy-perspective estimate, global G, or channel additivity; the ordinary scalar spectral Jensen bound remains valid.",
+  "new_model_review": false,
+  "new_grade": null,
+  "new_paper": false,
+  "formal_lean_claim": false,
+  "trusted_runtime_boundary": "Exact SymPy rational premises and python-flint Arb outward ball arithmetic; neither interpreter nor native library formally verified.",
+  "script_sha256": "cdf6cd2e51f9849badcc55fa7325f7b8e13bb9f3eb584083f2f16b36f761654f"
+}

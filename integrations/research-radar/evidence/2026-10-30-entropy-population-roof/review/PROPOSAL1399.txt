@@ -1,0 +1,125 @@
+POPULATION-OPERATOR ENTROPY CANDIDATE AND A FAILED JENSEN TOOL
+Own working proposal; not a paper, assessment, formal result or global-Q proof.
+Fixed N(x,y,z)=(3x/5,3y/5,z/4+1/5), natural logarithms.
+
+1. Existing target and scalar input
+For rho_AR=[[A_R,C_R],[C_R*,B_R]], p=Tr B_R, the existing target is
+ G=S((Nhat tensor id_R)rho_AR)
+   -(1-p)S(A_R/(1-p))-p S(B_R/p)-e_N(p) >=0.
+Endpoints p=0,1 are treated directly, without dividing by zero.
+The known scalar profile is
+ e_N(p)=h((1+sqrt(q(p)))/2),
+ q(p)=81/400+(99/100)p-(119/100)p^2
+     =243/595-(119/100)(p-99/238)^2.
+The existing audit906 Section7 establishes e_N'' >=88/125 on [0,1].
+This scalar input does NOT establish operator convexity or the new bound.
+Prior901/906 opinions do not assess anything proposed below.
+
+2. A stronger, genuinely reference-dependent candidate
+Take any finite Gram factor rho_AR=G G*, G=[C;D], normalized by
+ Tr(C*C+D*D)=1. C,D share the original reference-output row space.
+Put Sigma=C*C+D*D and B=D*D on the Gram-column/purifying space. On
+support(Sigma), define the effect P=Sigma^(-1/2) B Sigma^(-1/2).
+Then 0<=P<=I and Tr Sigma P=Tr B=p. No separate branch rotations,
+reference classicalization, or uniform dimension bound is allowed.
+
+The proposed stronger estimate, NOT established, is
+ T=S((Nhat tensor id_R)rho_AR)
+   -(1-p)S(CC*/(1-p))-p S(DD*/p)-Tr[Sigma e_N(P)] >=0.      (T)
+It may be restricted to the saturated endpoints from the existing fixed-
+diagonal reduction1284; those have rank rho<=dim R. No claim that T is
+equivalent to G or follows from it is made.
+
+Why T would suffice: spectral projectors of P give nonnegative weights
+Tr Sigma E_lambda summing to one, even when Sigma and P do not commute.
+Ordinary SCALAR Jensen therefore gives
+ Tr Sigma e_N(P)>=e_N(Tr Sigma P)=e_N(p).
+Consequently G=T+Tr Sigma e_N(P)-e_N(p)>=0 if T>=0.
+This scalar Jensen step does not need operator convexity.
+
+Right-unitary changes C->CU,D->DU conjugate Sigma and P together and leave
+the proposed trace functional unchanged. Support restriction is essential
+for singular Sigma; unused zero-weight directions must not change the value.
+
+Known saturation checks: for C=sqrt(1-p)K and D=e^(i theta)sqrt(p)K,
+Tr K*K=1, the input is a pure A factor times a reference state. P=p I
+on support and T=0. For rank-one rho_AR the Gram space is one-dimensional,
+so T=G and the known pure sector applies. For a direct sum of pure A
+states with orthogonal reference flags q_j and populations p_j, one gets
+ T=h(sum_j q_j p_j)-sum_j q_j h(p_j)>=0.
+These checks do not establish T for arbitrary mixed noncommuting references.
+
+3. One predeclared physical diagnostic; no numerical search
+C=diag(1,2), V=[[3/5,-4/5],[4/5,3/5]], D=C V, with the common
+normalization Tr(C*C+D*D)=10. In the probe all Gram products and states
+are divided by 10. Thus p=1/2 and the reference Gram weight is faithful.
+For these REAL matrices the complementary input on A and the purifier has
+blocks A=C^T C/10, B=D^T D/10, F=C^T D/10. For general complex data the
+appropriate transposes/conjugates in this purification dictionary cannot
+be dropped. The proposal T itself is defined on rho_AR without this shortcut.
+
+Applying N to the real diagnostic gives the exact 4x4 block matrix
+ [[(29/40)A+(19/40)B, (3/5)F],
+  [(3/5)F^T, (11/40)A+(21/40)B]].
+Pure Stinespring complementarity supplies the same entropy as Nhat on rho_AR.
+The eigenvalues of P solve det(B-lambda Sigma)=0; the scalar weights for
+the two eigenvalues are recovered from Tr Sigma=1 and Tr Sigma P=p.
+
+At 90-digit mpmath precision this ONE specified diagnostic gave
+ G approximately 0.0869727576830464 and T approximately 0.0418103034267784.
+These are NOT interval certificates, a minimum, a proof of T, or a global
+positive result. The state is separable (unitary coupling between equal
+physical diagonal blocks); it is a first sanity control, not new Q coverage.
+No further state scan or optimizer has been run or is requested.
+
+4. A useful but false automatic tool
+One might try to establish a noncommutative lifting argument by asserting
+weighted operator-Jensen convexity of the scalar roof. That extra property
+is false even with the SAME faithful Sigma and fixed Tr Sigma P.
+It is not claimed to be equivalent to T or necessary for every proof of T.
+
+The predeclared exact parameters are c=99/238, t=1/10, eps=1/10,
+delta=1/1000000, s=1/1000, u=(1,eps), v=(-eps,1), n=1+eps^2,
+w=delta/n. Define
+ Sigma=w uu^T/n+(1-w)vv^T/n,
+ H=uu^T-delta I,
+ P0=diag(c,c+t), Pplus=P0+sH, Pminus=P0-sH.
+All three P are strictly between0 andI. Sigma is faithful with eigenvalues
+1/1010000 and1009999/1010000, Tr Sigma H=0, and all three weighted
+populations equal62513938219/121391900000. The matrices do not commute.
+
+The exact rational premise checks plus 256-bit outward Arb arithmetic give
+ J=Tr Sigma[(e_N(Pplus)+e_N(Pminus))/2-e_N(P0)]
+ inside [-2.07284614985105710290955364216829353499233157823315556401094e-11
+         +/-2.00e-71], and verify the rational inequalities
+ -1/10^10 < J < -1/10^12 <0.
+This refutes the operator-Jensen tool, NOT T, G, or channel additivity.
+The ordinary spectral scalar Jensen step in Section2 is unaffected.
+
+An analytic explanation is the negative quartic coefficient at the profile
+minimum: writing f(q)=h((1+sqrt(q))/2), one has f''(q)<0 for0<q<1,
+because atanh(r)<r/(1-r^2). Thus e_N(c+x)=f(a-bx^2) has negative x^4
+coefficient (b^2/2)f''(a). The actual finite witness above, rather than an
+unquoted general Kraus criterion, controls the claimed proxy refutation.
+
+5. Trust, novelty and stopping boundary
+The scripts perspective-probe1399.py and jensen-ball1399.py each ran once.
+The first is diagnostic floating arithmetic only. The second uses exact
+SymPy rational premises and python-flint0.9.0 Arb at256bits, with no random
+fixtures, precision loop or discarded scientific run. Neither runtime is
+formally verified, no Lean theorem or independent implementation is claimed.
+
+The unresolved substantive hypothesis is T for all admissible saturated
+Gram factors. A certified negative T would refute that stronger mechanism;
+it would not automatically refute G. A certified negative G would refute
+the original sufficient mechanism, not automatically channel additivity.
+A prior covering result defeats any novelty claim. No novelty is claimed.
+Do not replace T by the false operator-Jensen tool or continue blind probes.
+Any continuation needs an actual entropy estimate preserving Sigma, P and
+their relative geometry. No separate minor paper, numerical score or old
+review transfer is proposed.
+
+Evidence levels: formal:none; literature:existing scalar audit and targets;
+heuristic:own new stronger estimate and analytic explanation;
+speculative:T/globalQ. The finite operator-Jensen counterexample is an
+interval-checked method obstruction only, with the stated trusted runtime.

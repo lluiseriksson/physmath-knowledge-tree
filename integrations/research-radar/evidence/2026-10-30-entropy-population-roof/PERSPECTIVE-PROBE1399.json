@@ -1,0 +1,76 @@
+{
+  "status": "diagnostic_not_interval_certified",
+  "python": "3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)]",
+  "mpmath_dps": 90,
+  "hypothesis": "S((Nhat tensor id)rho_AR)-sum_i p_i S(rho_R^i) >= Tr Sigma e_N(P), P=Sigma^(-1/2)B Sigma^(-1/2), for saturated endpoints",
+  "scope": "New stronger population/reference-dependent estimate, not the original G inequality. No inference from finite positive probes.",
+  "C": [
+    [
+      "1",
+      "0"
+    ],
+    [
+      "0",
+      "2"
+    ]
+  ],
+  "D": [
+    [
+      "3/5",
+      "-4/5"
+    ],
+    [
+      "8/5",
+      "6/5"
+    ]
+  ],
+  "normalization": "10",
+  "population": "1/2",
+  "sigma": [
+    [
+      "49/125",
+      "18/125"
+    ],
+    [
+      "18/125",
+      "76/125"
+    ]
+  ],
+  "commutator_sigma_B": [
+    [
+      "0",
+      "-27/625"
+    ],
+    [
+      "27/625",
+      "0"
+    ]
+  ],
+  "rho_AB_rank": 2,
+  "output_characteristic_polynomial": [
+    "1",
+    "-1",
+    "36269/125000",
+    "-7287/250000",
+    "57635361/62500000000"
+  ],
+  "generalized_population_polynomial": [
+    "136/625",
+    "-136/625",
+    "1/25"
+  ],
+  "population_roots": [
+    "0.2427521222862367439320226671671066289769971322844424137742644083146554",
+    "0.7572478777137632560679773328328933710230028677155575862257355916853446"
+  ],
+  "weighted_roof": "0.5222280147664294585798471147509936027987749083599537733721528403407483",
+  "branch_entropy": "0.5004024235381878795331879388931051306048011392921093153195598762847492",
+  "output_entropy": "1.064440741731395693945112693508840148254583180482964477415057692708963",
+  "G_diagnostic": "0.08697275768304641930051527348199537602814167896893060803096541999792154",
+  "stronger_gap_diagnostic": "0.04181030342677835583207763986474141485100713283090138872334497608346499",
+  "script_sha256": "2f50c2f4a4dea189620339a4994c51b4bfc08c39b4d5828a66c153c1a1743789",
+  "runs": 1,
+  "new_review": false,
+  "new_grade": null,
+  "new_paper": false
+}

@@ -1,0 +1,81 @@
+ACTUAL OPERATIONS AND TRUST BOUNDARIES
+
+The four parent-supplied controlling hashes matched exactly before work:
+PROPOSAL1399.txt
+879e0a13b1237b5c91e1ff4b8d2b8235d4ad230b14dc9b20fe7a05b8cc46cc15
+perspective-probe1399.py
+2f50c2f4a4dea189620339a4994c51b4bfc08c39b4d5828a66c153c1a1743789
+jensen-ball1399.py
+cdf6cd2e51f9849badcc55fa7325f7b8e13bb9f3eb584083f2f16b36f761654f
+JENSEN-BALL1399.json
+d09703e180c5e4bf4d40199f1e4cddb7e81bc32bb0e85d742701953b32c2cdda
+
+Proposal and both supplied scripts were read completely. The Jensen JSON
+was read completely. ARGUMENT1284 was read completely; only Section 7 of
+AUDIT906 was used substantively. An initial locator search in AUDIT906
+returned matching line snippets outside that section; no prior verdict,
+grade, or unrelated scientific conclusion was imported from them.
+
+Before creating artifacts: D:/LEEME.md read; C: free space ~272.94 GB.
+An inventory command for the not-yet-existing C/D review directories returned
+exit code 1 with no directory entries. This was an expected discovery miss,
+not a scientific failure or a missing input. The C directory was then made.
+
+Source copies were placed in the own audit directory. All executions used
+C:/Python312/python.exe and the own C audit working directory.
+
+RUN 1: jensen-ball1399.py (exact byte copy of parent source), exit code 0.
+Output: certified_proxy_counterexample; population
+62513938219/121391900000; eigenvalues 1/1010000 and1009999/1010000;
+weighted gap
+[-2.07284614985105710290955364216829353499233157823315556401094e-11
+ +/- 2.00e-71]; rational lower -1/10000000000 and upper -1/1000000000000.
+The replayed JENSEN-BALL1399.json matched the parent byte-for-byte and hash.
+One replay only. Same implementation; no independent arithmetic claim.
+
+RUN 2: counterexample-check1399.py, exit code 0, first execution.
+Executed source SHA256
+bd529099a93c9a1681ce5bb3e930b34436ec3bdd32aa471bd293c9b127fee0bc.
+Initial result SHA256
+12b8d490a53f0feac2ba4fbE4de491718bf590d6fc3a23bd1557e9ab894aebdd.
+All exact premises and final bound passed. T<-52261/1250250<-1/25.
+No numerical entropy evaluation. Script and result preserve the complete
+checked matrices, exact mixture, variance, Taylor sum and rational bound.
+
+RUN 3: diagnostic-exact-check1399.py, exit code 0, first execution.
+Source SHA256
+bc162e3d3cb36dc823422f35126b19e1b0ba9be9790992835fd5d26576131801.
+Result SHA256
+4dce033ec636dd7180fa2ca8f64c76933ed2e8fd83a5dd07ab71b7da201cae30.
+Only the already declared real diagnostic was checked exactly. No new
+physical input and no entropy sign evaluation was introduced by this run.
+
+No script failed, no scientific result was discarded, no precision loop
+was performed, and no random scan or optimizer was started. The original
+mpmath probe was not replayed. There was no numerical estimate of the new
+counterexample's actual T or G: the asserted T sign is the analytic bound.
+
+PROVENANCE METADATA CORRECTION (NO SCIENTIFIC REEXECUTION)
+The first counterexample run mistakenly called its trusted boundary
+"Human analytic entropy argument". The parent correctly requested removal:
+this is an AI-assisted analytic derivation, not yet human-reviewed. The
+active script and result now state that accurately. Exact original executed
+source/result are retained as *.historical.* for audit history, and must
+NOT be read as current human-review claims. Their inaccurate label is
+superseded by this correction and the active result's metadata. No matrix,
+assertion, mathematical result or bound changed, and no mathematical script
+was rerun solely for this label correction. Active result records both the
+executed source hash and the current source-artifact hash.
+
+External consultation: official python-flint 0.9.0 arb documentation,
+https://python-flint.readthedocs.io/en/latest/arb.html . Used only to check
+ball representation, rational-string constructor and precision conventions.
+No code was downloaded. No literature or evaluation corpus was searched.
+
+The report is an AI-assisted component audit, without a score. Requested
+GPT-6 Astra xhigh identity/effort and isolation were not independently
+attested; filesystem was shared. No own subagents or other user chats were
+created or messaged. Parent received progress/counterexample notifications.
+No root state, knowledge repository, parent input, publication or deployment
+was changed. No C artifact was deleted. D conservation uses ordinary file
+copies followed by hash verification; it does not change mathematical files.

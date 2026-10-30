@@ -1,0 +1,46 @@
+7. Derivación escalar completa: no se usa audit901
+
+Escriba A=119/400 y q_*=243/595. Completando el cuadrado,
+
+ q(z)=q_*-A(z-20/119)^2,
+ (q'(z))^2=4A(q_*-q(z)), q''(z)=-2A.
+
+En -1<=z<=1 se tiene 1/400<=q(z)<=q_*<1. El mínimo está en z=-1;
+q(1)=81/400. No aparece singularidad escalar q=0 o q=1.
+Para 0<=q<1 defina
+
+ F(q)=atanh(sqrt(q))/sqrt(q)=sum_{n>=0} q^n/(2n+1).
+
+La derivación de h((1+sqrt(q))/2) da exactamente -F(q)/2.
+Al derivar otra vez y usar las identidades de q,
+
+ d^2 e_N/dz^2 = A F(q) -(q')^2 F'(q)/2
+              = A[F(q)-2(q_*-q)F'(q)].
+
+La serie converge y se puede derivar uniformemente en cualquier subintervalo
+cerrado con q<1, incluido todo el rango del canal. Por coeficientes,
+
+ F(q)+2qF'(q)=sum_{n>=0}q^n=1/(1-q),
+ 2F'(q)=sum_{n>=1} [2n/(2n+1)]q^(n-1) <= 1/(1-q).
+
+Como q_*>=0,
+
+ d^2 e_N/dz^2
+ = A[1/(1-q)-2q_*F'(q)]
+ >= A(1-q_*)/(1-q)
+ >= A(1-q_*)=22/125.
+
+El cambio z=1-2p introduce el factor 4 correcto, no 2:
+
+ e_N''(p)>=4A(1-q_*)=88/125.
+
+Así g(p)=e_N(p)-(44/125)p^2 es convexa en [0,1]. Su desigualdad de cuerda
+g(p)<=(1-p)g(0)+p g(1) equivale precisamente a
+
+ delta_e(p)>=(44/125)p(1-p).
+
+El coeficiente tiene unidades de nats, no bits. No es una afirmación de
+optimalidad. La derivación anterior cubre el intervalo completo; el muestreo
+de derivadas sólo es un diagnóstico adicional. La función h(p) de f_N no
+es diferenciable en los extremos, pero en esta parte se deriva e_N, que sí
+es suave allí; el resultado final admite esos extremos directamente.
