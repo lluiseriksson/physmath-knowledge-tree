@@ -997,8 +997,8 @@
       "observed_on": "2026-10-27",
       "reading_status": "selected_sections_read",
       "evidence": "literature",
-      "claim": "Selected Def4/Eq3.1, Theorem5, Lemma6 and theorem proof read; published PDFpage52 visually checked. Parent exact primal/dual diagnostic records a counterexample to Theorem5 as printed for(id+AdX+AdY)/3. Selected follow-up1207 reads Proposition35 and Corollary11: finite measurement-channel coefficient is the sum of minimum effect eigenvalues, with the positive and Hermitian-relaxed/induced variants agreeing there. This formula is prior, not an own discovery.",
-      "limits": "The diagnostic has no external audit or priority certificate. It targets one equivalence, not the whole108page paper. arXiv and journal byte hashes differ; no byte identity is asserted.",
+      "claim": "Selected Def4/Eq3.1, Theorem5, Lemma6 and theorem proof read; published PDFpage52 visually checked. Parent exact primal/dual diagnostic records a counterexample to Theorem5 as printed for(id+AdX+AdY)/3. Selected follow-up1207 reads Proposition35 and Corollary11: finite measurement-channel coefficient is the sum of minimum effect eigenvalues, with the positive and Hermitian-relaxed/induced variants agreeing there. This formula is prior, not an own discovery. Follow-up1366 reads Definition7/eq3.25 exact positive CP coefficient and Proposition31/eq6.21–6.28 local proof, plus Corollary7 stated integral consequence. These definitions/application bounds are existing literature, not new claims.",
+      "limits": "The diagnostic has no external audit or priority certificate. It targets one equivalence, not the whole108page paper. arXiv and journal byte hashes differ; no byte identity is asserted. The earlier diagnostic of Theorem5 is preserved; this follow-up does not validate that theorem or the full paper. Source first2025-03-28/v3 2026-05-19, Quantum10,2115, DOI10.22331/q-2026-05-22-2115.",
       "reuse": "Bibliographic metadata and original synthesis only; no source body redistribution.",
       "anchors": [
         "domain.quantum_information_theory"
@@ -1616,6 +1616,22 @@
       "anchors": [
         "domain.analysis"
       ]
+    },
+    {
+      "id": "matthews-wehner-winter-measurement-norms-2008-scoped",
+      "title": "Distinguishability of quantum states under restricted families of measurements with an application to quantum data hiding",
+      "url": "https://arxiv.org/abs/0810.2327v2",
+      "kind": "preprint",
+      "published_on": "2008-10-13",
+      "observed_on": "2026-10-30",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Selected abstract and Sec2.1 Theorem9 statement/formula12/local proof opening supply known uniform-POVM and measurement-norm antecedents.",
+      "limits": "First preprint2008-10-13, v2 2008-10-26, CMP291(2009), DOI10.1007/s00220-009-0890-5. Not new2026publication, full-paper proof audit or a source proving the new factorized envelope. No novelty inferred from a directed search.",
+      "reuse": "Metadata and own synthesis only; no article body, figures, corpus or evaluation data copied.",
+      "anchors": [
+        "domain.quantum_information_theory"
+      ]
     }
   ],
   "candidates": [
@@ -2082,7 +2098,8 @@
         "hafouta-pathirana-trajectories-2026",
         "george-doeblin-2026-scoped",
         "hirche-doeblin-2024-scoped",
-        "delsol-fawzi-trace-contraction-v3-scoped"
+        "delsol-fawzi-trace-contraction-v3-scoped",
+        "matthews-wehner-winter-measurement-norms-2008-scoped"
       ],
       "node_ids": [
         "domain.probability_stochastics",
@@ -2090,11 +2107,11 @@
       ],
       "dictionary": "Ordinary trace contraction bounds the spectral oscillation of dual effects; POVM normalization replaces outcome count by input dimension. Positive effect remainders give a positive Choi integral after a measure-and-prepare postprocessor, retaining every finite quantum reference.",
       "preserved": "Finite square prefix dimensiond, CPTP prefix with ordinary trace factorr, finite-output entanglement-breaking postprocessor with explicit measurable preparation representation, positive trace-one outputs, integrable normalized POVM, equal-reference constraint for complete contraction. Actual observed instrument is distinct from an alternative channel decomposition.",
-      "lost_or_unproved": "Exact five-page1211 note is published with full review: overall3.5, technical8.5, importance3.0 for PDF65b320... only. Broader candidate and optional1212 joint-cardinality supplement remain unscored; originality, general fixed-output envelope beyond d3,k2,N3 and actual new application unresolved. Effective reviewer identity/effort/independence unattested. No arbitrary-instrument, complete-coefficient optimality, capacity, full limit theorem or Lean proof claimed.",
+      "lost_or_unproved": "Exact five-page1211 note is published with full review: overall3.5, technical8.5, importance3.0 for PDF65b320... only. Broader candidate and optional1212 joint-cardinality supplement remain unscored; originality, global all-d/k/N fixed-output envelope and actual new application unresolved. Effective reviewer identity/effort/independence unattested. No arbitrary-instrument, complete-coefficient optimality, capacity, full limit theorem or Lean proof claimed.",
       "hypothesis_to_remove": "Replace finite prepared-label count N in the source sufficient1-N*q^(L-1) argument by a dimension-only1-(d-1)*q^(L-1) bound, allowing standard-Borel prepared outcomes under stated measurability.",
       "falsifier": "A valid-assumption violation of osc(Psi*(F))<=r*osc(F) or the final-preparation kernel identity refutes the component. Pauli and deterministic depolarizing instruments already refute the unrestricted transfer and TV/Wasserstein identification. A covering antecedent defeats novelty.",
-      "next_finite_task": "JOINT1212is already integrated in1214, do not duplicate it. Fixed-output1351component is now supported by a single unscored audit with all context/clarifications preserved. Retain the exact d3,k2,N3 envelope and reject output-only1-r. Broader all-d,k,N sharpness or a substantive application needs a new mechanism/primary prior-art audit; do not add random seeds, repeat this review, inherit the1211grade or fragment a minorpaper.",
-      "review_packet": "One unscored terminal component audit1208, requestedGPT6Astraxhigh, fork-none requested/sharedfilesystem; effectiveidentity,effort,independenceunattested. ReportSHAb8cf457ea9bb82346d59d5fc5c4e6dccb1f9c995c997af827934ef7fe0291dc2; verdictSHA7ab50c2359efb01e291e5f81aebead18bd7afd7e3c44bda57181aa42d0804e6d. All13frozen input identities and21output bytes verified and archived. Scoped minorization, CP remainder, equal-reference consequences and positive common-component envelope supported; noveltyunresolved. Two minor presentation/coverage corrections; rawLF/CRLFfailure and adverse extensions preserved. No PDF assessment, grade or extra vote. BSC/involution sketch excluded. Full-PDF REVIEW1211 completed subsequently and published with exactPDF65b320e9a3277ce6565ec3496acf3466f1d59313c1c3aafc016f573eec08bd71 at https://airr.science/notes/ARR-2026-1PBZ1Q7T588FW9M1/versions/v1/#model-assessments . Overall3.5, technical8.5, importance3.0; minor_revision; no material error found; O1-O4 retained. ReportSHAac9794b0e35217253234874d6d1541d077ce9a1ad1406d1d973d0ce6ee1f81be; effectiveconfiguration/independenceunattested; operator serialization same vote. This does not grade the wider candidate or optional1212 extension. Separate1351unscored component audit supports the finite positive-dual bound and exactd3/k2/N3envelope, with two nonblocking clarifications and prior-unscored-summary exposure. Full original report69b2702c5966481bfdb17bc2260dd07e41ced824f3b952c53f517a99bd9b6f36 preserved; no new manuscript grade, blind/independent-review or formalproof claim.",
+      "next_finite_task": "1365single unscored inspection supports qubit Bloch/positive-dual dimension elimination and exact JOINT d4/k2/N4profile after explicit preparation quantification; arbitrary fixedEreading refuted. Integrate this extension, not another minorpaper. Exact antecedent overlap, practical application and wider sharpness remain unresolved; do not rerun reviews, inheritPDFgrades or add randomseeds.",
+      "review_packet": "One unscored terminal component audit1208, requestedGPT6Astraxhigh, fork-none requested/sharedfilesystem; effectiveidentity,effort,independenceunattested. ReportSHAb8cf457ea9bb82346d59d5fc5c4e6dccb1f9c995c997af827934ef7fe0291dc2; verdictSHA7ab50c2359efb01e291e5f81aebead18bd7afd7e3c44bda57181aa42d0804e6d. All13frozen input identities and21output bytes verified and archived. Scoped minorization, CP remainder, equal-reference consequences and positive common-component envelope supported; noveltyunresolved. Two minor presentation/coverage corrections; rawLF/CRLFfailure and adverse extensions preserved. No PDF assessment, grade or extra vote. BSC/involution sketch excluded. Full-PDF REVIEW1211 completed subsequently and published with exactPDF65b320e9a3277ce6565ec3496acf3466f1d59313c1c3aafc016f573eec08bd71 at https://airr.science/notes/ARR-2026-1PBZ1Q7T588FW9M1/versions/v1/#model-assessments . Overall3.5, technical8.5, importance3.0; minor_revision; no material error found; O1-O4 retained. ReportSHAac9794b0e35217253234874d6d1541d077ce9a1ad1406d1d973d0ce6ee1f81be; effectiveconfiguration/independenceunattested; operator serialization same vote. This does not grade the wider candidate or optional1212 extension. Separate1351unscored component audit supports the finite positive-dual bound and exactd3/k2/N3envelope, with two nonblocking clarifications and prior-unscored-summary exposure. Full original report69b2702c5966481bfdb17bc2260dd07e41ced824f3b952c53f517a99bd9b6f36 preserved; no new manuscript grade, blind/independent-review or formalproof claim. One unscored1365component inspection supports the qubit bounds and tetrahedral witness, with required joint-preparation quantifier clarification and byte-identical result rewrite retained. Complete reportSHAf576d8fa17efa3e2b5c70da69183161c49e154bc76da12796aa8616a0e787e15; effectiveidentity/effort/independenceunattested. No new manuscript or numericgrade.",
       "fixed_output_component": {
         "status": "single_unscored_component_audit_supported_with_nonblocking_clarifications",
         "evidence": "integrations/research-radar/evidence/2026-10-30-output-qubit1353/README.md",
@@ -2104,6 +2121,17 @@
         "bound": "max(0,1-r min(d-1,N-1,d(k-1)/k)) for finite preparation",
         "sharp_scope": "d3,k2,N3 class eta<=r: max(0,1-3r/2)",
         "limits": "No globalall-d,k,Nsharpness, continuum extension, novelty/importance assessment or newPDFgrade. RequestedAstra/xhigh; effectiveidentity/effort/independenceunattested, priorunscoredaudit-summary exposure disclosed.",
+        "new_manuscript_or_score": false
+      },
+      "qubit_geometry_component": {
+        "status": "single_unscored_inspection_supported_with_required_quantifier_clarification",
+        "evidence": "integrations/research-radar/evidence/2026-10-30-qubit-geometry1367/README.md",
+        "argument_sha256": "8d3572dee6442b5b978e0a0d1c69d62a0919a597a8a743a4f35d5937de4571d9",
+        "native_report_sha256": "f576d8fa17efa3e2b5c70da69183161c49e154bc76da12796aa8616a0e787e15",
+        "bound": "finite qubit preparation: max(0,1-2r); four outcomes: max(0,1-sqrt(3)r)",
+        "sharp_scope": "d4/k2/N4 joint infimum over prefix, terminal POVM and prepared states, eta(prefix)<=r: max(0,1-sqrt(3)r)",
+        "rejected": "Same profile for every arbitrary fixedE is false; four identical prepared states give alpha_+=1.",
+        "limits": "Known alpha_+ definition/application and spherical measurement antecedents attributed; exact covering prior art unresolved. Universal2not claimed sharp, no all-d/k/N result or PDFassessment.",
         "new_manuscript_or_score": false
       }
     },
@@ -2284,6 +2312,10 @@
       "evidence": "integrations/research-radar/evidence/2026-10-30-output-qubit1353/SOURCES1353.json",
       "pins": "integrations/research-radar/evidence/2026-10-30-output-qubit1353/PINS1353.json",
       "scope": "Directed12primaryindex inventory/4metadataheads/9matchingformal pins. One historical2025source at selected2026v3 added; full original unscored1351component report/context/objections integrated. No newpaper, PDFgrade, confidence upgrade or canonicalgraph change."
+    },
+    "followup1367": {
+      "evidence": "integrations/research-radar/evidence/2026-10-30-qubit-geometry1367/MANIFEST1367.json",
+      "scope": "One existing candidate extended, one historical2008source added, one actual complete unscored report with objections/context/nativebytes. Directed12endpoint inventory,9pinneddependencies,4HEADmetadata. No canonicalgraph/confidence change, newpaper, grade or corpus."
     }
   }
 }

@@ -1,0 +1,113 @@
+Inspección matemática de componente 1365 — 30 de octubre de 2026
+
+El núcleo matemático del argumento congelado se sostiene: para el coeficiente positivo y las convenciones especificadas se obtiene alpha_+(E Psi) >= max(0,1-2r), y con cuatro resultados se obtiene alpha_+(E Psi) >= max(0,1-sqrt(3)r), sin dependencia de d. La familia tetraédrica propuesta es admisible y alcanza el segundo perfil. Hay una objeción explícita que debe conservarse: la fórmula del ínfimo impresa no cuantifica E. Es correcta si E es la preparación tetraédrica construida, y es correcta como ínfimo sobre toda la clase en que también varía E. Es falsa si se interpreta como igualdad para cualquier E fijada de antemano. Se ofrece abajo un contraejemplo a esa lectura. Esto exige precisar el enunciado; no invalida la prueba de la cota universal ni el testigo de optimalidad para la clase.
+
+Esta es una sola inspección matemática de componente. No es evaluación de un manuscrito o PDF, revisión humana, decisión editorial, certificación de novedad ni prueba formal mecanizada. No se han utilizado calificaciones ni un resultado numérico objetivo. Se leyeron completos ARGUMENT1365.md, checker1365.py y EXACT1365.json, con los tres SHA256 pedidos comprobados antes y después de la ejecución. No se buscaron ni se leyeron otras evaluaciones, notas o expedientes de calificaciones. El contexto de trabajo está separado y el sistema de archivos es compartido; la independencia respecto de otros agentes no está verificada. Se solicitó gpt-6-astra con esfuerzo xhigh, pero no hay en esta inspección un identificador verificable de modelo efectivo ni telemetría verificable de esfuerzo efectivo: ambos quedan no atestados.
+
+La convención examinada es J = sum_y A_y^T tensor sigma_y, con A_y = Psi*(F_y), input primero, Choi no normalizado y Tr J = d. El coeficiente es el máximo de Tr W sujeto a W >= 0 y J >= I_d tensor W. La contracción ordinaria se entiende como el supremo del cociente de distancias de traza entre estados distintos, sin sistema auxiliar. El dominio del parámetro es 0 <= r <= 1. Psi es CPTP de M_d a M_d; E es una medición con un número finito de resultados seguida de preparación de estados de dimensión dos. Estas hipótesis son necesarias para identificar exactamente qué se ha probado.
+
+La reducción geométrica de la sección 1 es válida. Todo efecto de un POVM qubit puede escribirse B_y = a_y I + v_y·sigma, con a_y >= |v_y|, sum a_y = 1 y sum v_y = 0. Sus autovalores son a_y +/- |v_y|, así que sum lambda_min(B_y) = 1-L, donde L = sum |v_y|. Para una diferencia de estados X = (w·sigma)/2, la norma de traza es |w| y el resultado y de la medición es w·v_y. Por homogeneidad, la contracción de la medición es
+
+  eta(M) = max_{|w|=1} sum_y |w·v_y|.
+
+No falta un factor dos: dos estados puros antipodales producen w de longitud dos, y ese mismo factor aparece en el denominador de la contracción. Para obtener la segunda expresión, se maximiza la suma de valores absolutos sobre signos epsilon_y en {-1,1}, se intercambian los dos máximos finitos/compactos y se usa sum v_y = 0. Resulta
+
+  eta(M) = max_epsilon |sum epsilon_y v_y|
+         = 2 max_{S subset [N]} |sum_{y in S} v_y|.
+
+El promedio esférico también tiene la normalización correcta. Para una dirección uniforme w en S^2 y un vector fijo v, la proyección sobre el eje de v es uniforme en [-1,1], de modo que E|w·v| = |v|/2. Al sumar y comparar máximo con promedio se obtiene eta(M) >= L/2. Por tanto sum lambda_min(B_y) >= 1-2 eta(M). Esto vale para cualquier N finito, incluidos efectos nulos. No requiere hipótesis sobre d. El argumento prueba que 2 es una constante universal válida; no demuestra por sí mismo su optimalidad para la clase completa de canales factorizados.
+
+Para cuatro resultados, sea M0 el máximo de los módulos de todas las sumas de subconjuntos, y sean x = v1+v2, y = v1+v3, z = v1+v4. La condición de suma cero da
+
+  v1 = (x+y+z)/2,     v2 = (x-y-z)/2,
+  v3 = (-x+y-z)/2,    v4 = (-x-y+z)/2.
+
+Al sumar cuadrados desaparecen los términos cruzados y queda sum_i |v_i|^2 = |x|^2+|y|^2+|z|^2. Cada uno de x,y,z es una suma de dos resultados, por lo que su norma no supera M0. Cauchy-Schwarz da
+
+  L <= 2 sqrt(sum_i |v_i|^2) <= 2 sqrt(3) M0
+    = sqrt(3) eta(M).
+
+No hay división por M0, L o un autovalor; el caso totalmente nulo y las configuraciones degeneradas quedan cubiertos. La geometría tetraédrica satura las dos desigualdades. También son correctas las observaciones auxiliares para dos y tres resultados: para dos, v2 = -v1 y L = eta(M); para tres, los subconjuntos no triviales son singletes o sus complementos, de donde eta(M) = 2 max |v_i| y L <= (3/2) eta(M). No se atribuye novedad a estas identidades.
+
+La transferencia de la sección 2 usa el dual correcto del problema con W positivo. Para Z >= 0, el lagrangiano es
+
+  Tr(JZ) + Tr[(I_2 - Tr_A Z)W].
+
+El supremo sobre W >= 0 es finito precisamente cuando Tr_A Z >= I_2. Por tanto el dual es inf Tr(JZ) sujeto a Z >= 0 y Tr_A Z >= I_2. Si W fuera Hermitiano sin restricción de signo, aparecería una igualdad de marginales; sustituir aquí la desigualdad por igualdad sin justificación cambiaría el problema. La prueba no realiza esa sustitución.
+
+El primal es factible en W = 0 porque J >= 0. Tomando la traza total de J >= I_d tensor W se obtiene d >= d Tr W, así que el objetivo está acotado por uno. El conjunto factible de W es cerrado y está contenido en {W >= 0, Tr W <= 1}, por lo que el máximo se alcanza. El dual tiene un punto estrictamente factible Z = t I_(2d), con t > 1/d: Z es definido positivo y Tr_A Z-I_2 = (dt-1)I_2 es definido positivo. La condición de Slater dual en dimensión finita, junto con la factibilidad primal, justifica la igualdad entre máximo primal e ínfimo dual. No se necesita que J sea invertible ni que el primal tenga interior estricto. Tampoco se necesita demostrar que todo ínfimo dual se alcance para el paso usado en el texto.
+
+Para cualquier Z factible, S = Tr_A Z >= I_2 es invertible aunque Z sea singular. Por congruencia, Z' = (I tensor S^(-1/2)) Z (I tensor S^(-1/2)) es positivo y tiene Tr_A Z' = I_2. La aplicación
+
+  Omega(X) = Tr_A[(X^T tensor I_2) Z']
+
+es CP. La transposición es la correspondiente a la base fija del Choi input-first. En efecto, descomponer Z' como suma de proyectores sobre vectores de la forma sum_i |i> tensor K_a|i> produce Omega(X) = sum_a K_a X K_a^*. Además Omega(I_d) = Tr_A Z' = I_2: es unital. Su adjunta de traza Lambda = Omega* es CPTP de M_2 a M_d. Este razonamiento funciona con matrices complejas y no presupone que los efectos sean reales.
+
+Entonces B'_y = Omega(Psi*(F_y)) = (Psi Lambda)*(F_y) forma un POVM qubit. Las dimensiones y el orden de composición son correctos: primero Lambda lleva un estado qubit a M_d, después actúa el prefijo cuadrado Psi, y finalmente se mide el POVM F. Para dos estados qubit rho,tau,
+
+  ||Psi Lambda(rho)-Psi Lambda(tau)||_1
+    <= r ||Lambda(rho)-Lambda(tau)||_1
+    <= r ||rho-tau||_1.
+
+La medición final tampoco aumenta la distancia. Por tanto eta(M_{B'}) <= r. Esta es una aplicación de la contracción del prefijo, y no una identificación con la contracción del compuesto E Psi. La preparación E puede reducir mucho más las distancias; la prueba no necesita invertir ese efecto ni supone que la contracción del compuesto controle la del prefijo.
+
+Para B_y = Tr_A[(A_y^T tensor I)Z], la relación exacta es B_y = S^(1/2) B'_y S^(1/2). Si m_y = lambda_min(B'_y), entonces m_y >= 0 y
+
+  B_y >= m_y S >= m_y I_2.
+
+El segundo paso depende del signo m_y >= 0; por eso la positividad de los efectos y del problema dual no puede omitirse. No se está usando ninguna desigualdad generalmente falsa del tipo Z' <= Z o B_y >= B'_y. Como cada sigma_y es positivo de traza uno,
+
+  Tr(JZ) = sum_y Tr(sigma_y B_y) >= sum_y m_y.
+
+Aplicar la geometría anterior a B' demuestra que todo punto dual factible tiene objetivo al menos 1-2r, y al menos 1-sqrt(3)r si hay cuatro resultados. Dualidad fuerte y la factibilidad de W = 0 proporcionan las cotas con max(0,...). Queda así comprobada la afirmación general, no solamente una colección de ejemplos.
+
+Los extremos no introducen excepciones ocultas. Para r = 0 ambas cotas valen uno, que es también el máximo posible del coeficiente. Para d = 1 la única dependencia de la entrada es su traza, el compuesto prepara un estado fijo tau y J = tau; W = tau alcanza uno. La convención eta = 0 es consistente. La normalización S^(-1/2) nunca falla porque S >= I_2. Los Choi singulares y los efectos con autovalor mínimo cero ya están incluidos. Cuando la expresión lineal es negativa, la conclusión utilizada es la cota cero, sin pretender que W negativo sea admisible.
+
+La comparación de la sección 2 con un resultado anterior de coeficiente d/2 es condicional a ese resultado previo: no se abrió ARGUMENT1351 ni su evaluación. La aritmética declarada es correcta: sqrt(3) < d/2 para d >= 4 y 2 < d/2 para d >= 5. Si el resultado previo y sus hipótesis coinciden, se puede tomar el máximo de las cotas válidas. La mejora estricta es de esos coeficientes; las cotas numéricas coinciden en r = 0 y pueden coincidir en cero una vez truncadas. La inspección presente no certifica el argumento anterior ni sus eventuales mínimos adicionales.
+
+La familia de la sección 3 sí pertenece a la clase requerida. Los cuatro vectores n_y tienen norma uno, suma cero y productos mutuos -1/3; su segundo momento es sum n_y n_y^T = (4/3)I_3. Los estados sigma_y = (I+n_y·sigma)/2 son puros y suman 2I_2. Para 0 <= u <= 1, el bloque lógico de H_y(u) tiene autovalores (1+u)/4 y (1-u)/4, mientras que el bloque complementario tiene dos autovalores 1/4. Por tanto todos los efectos son positivos y suman I_4. La salida de Psi_u es la base ortonormal de cuatro etiquetas de C^4. Es un canal CPTP cuadrado, no un canal rectangular ni una codificación cuántica ficticia de esas etiquetas. E mide F_y = |y><y| y prepara el sigma_y correspondiente, por lo que E Psi_u posee exactamente el Choi indicado.
+
+La contracción de ese prefijo debe calcularse en toda C^4, y así se ha comprobado. Para cualquier canal de medición con efectos H_y,
+
+  eta(QC_H) = max_S [lambda_max(H_S)-lambda_min(H_S)],
+  H_S = sum_{y in S} H_y.
+
+Una justificación es escribir una entrada Hermitiana de traza cero como X = t(rho-tau), mediante sus partes positiva y negativa, con rho y tau de soportes ortogonales y ||X||_1 = 2t. La norma l1 de la salida, cuya suma es cero, es dos veces el máximo de su suma sobre un subconjunto. El cociente está acotado por la oscilación de H_S. Para un subconjunto maximizador, los estados propios de autovalor máximo y mínimo alcanzan esa oscilación; si esta es cero la conclusión es inmediata. Esto prueba la igualdad para entradas generales, incluidas las que originalmente presentan coherencias entre bloques.
+
+En la familia propuesta, si k = |S|, el bloque complementario de H_S es kI_2/4 y el lógico tiene autovalores k/4 +/- u|sum_S n_y|/4. El autovalor complementario está entre los dos lógicos. La oscilación total es por ello u|sum_S n_y|/2. Las normas de las sumas tetraédricas son cero para vacío/total, uno para un elemento o tres elementos y 2/sqrt(3) para dos elementos. El máximo es u/sqrt(3), con igualdad incluso al considerar toda la entrada de dimensión cuatro. Por tanto eta(Psi_u) = u/sqrt(3), no la contracción del compuesto preparado.
+
+La conjugación de los efectos es esencial. Puesto que el Choi usa H_y^T, el sigma_y^T presente en el bloque lógico de H_y vuelve a sigma_y. El segundo momento da
+
+  (1/2) sum_y sigma_y tensor sigma_y = (I_4+Swap)/3.
+
+De ahí el bloque lógico J_u = (1-u)I_4/2 + u(I_4+Swap)/3, y el bloque complementario es I_4/2. El espectro lógico consiste en (3+u)/6 con multiplicidad tres y (1-u)/2 con multiplicidad uno; el complementario tiene 1/2 con multiplicidad cuatro. La traza total es cuatro y la traza parcial sobre la salida es I_4, consistentes con el Choi no normalizado de un canal de entrada cuatro. En particular el Choi es singular en u = 1, precisamente donde se usa el singlete.
+
+El candidato W0 = (1-u)I_2/2 es positivo. Su holgura es u(I_4+Swap)/3 en el bloque lógico y uI_4/2 en el complementario. Sus autovalores son 2u/3 con multiplicidad tres, cero con multiplicidad uno y u/2 con multiplicidad cuatro; es positiva en todo el intervalo. Así alpha_+ >= 1-u. Para el singlete lógico normalizado z, su marginal de salida es I_2/2 y J_u z = (1-u)z/2. Toda W factible satisface
+
+  0 <= <z,(J_u-I tensor W)z> = (1-u-Tr W)/2,
+
+de donde alpha_+ <= 1-u. Equivalentemente Z = 2|z><z| es un punto dual factible con marginal I_2 y objetivo 1-u. La normalización dos del testigo dual es correcta. Se obtiene alpha_+(E_tet Psi_u) = 1-u con un par primal/dual explícito; no se depende de un optimizador numérico.
+
+Si se omite el transpose en H_y, el bloque lógico a u = 1 pasa a (I_4+2|Phi+><Phi+|)/3, donde |Phi+> = (|00>+|11>)/sqrt(2). Su expectativa en el singlete es 1/3, no cero. La ruta incorrecta no produce el testigo anunciado. Este control negativo coincide con el checker y confirma la necesidad de tratar sigma_y como matrices realmente complejas, incluida la matriz de Pauli Y. No constituye un contraejemplo a la construcción corregida.
+
+Para 0 <= r <= 1/sqrt(3), u = sqrt(3)r da eta(Psi_u) = r y alpha_+ = 1-sqrt(3)r. Para r >= 1/sqrt(3), u = 1 conserva eta(Psi_u) <= r y da alpha_+ = 0. El extremo u = 0 es el canal constante uniforme sobre las cuatro etiquetas, seguido de la preparación I_2/2; alpha_+ = 1. El extremo u = 1 tiene el singlete en el núcleo del Choi y alpha_+ = 0. El uso del mismo u = 1 por encima del umbral es válido porque la restricción es eta(Psi) <= r, no eta(Psi) = r.
+
+La objeción de cuantificación es la siguiente. El texto escribe, tras introducir E de forma general,
+
+  inf_{eta(Psi)<=r} alpha_+(E Psi) = max(0,1-sqrt(3)r).
+
+Si se entiende que E es cualquier preparación fijada, la igualdad es falsa. Tómese d = 4, N = 4, F_y = |y><y| y sigma_y = tau para los cuatro resultados, con tau cualquier estado qubit. Entonces E(X) = Tr(X)tau y E Psi = E para todo prefijo CPTP. Su Choi es I_4 tensor tau, W = tau es factible y el límite general Tr W <= 1 da alpha_+ = 1. El ínfimo sobre Psi vale uno para todo r, y difiere del perfil propuesto para cualquier r > 0. Este ejemplo usa exactamente cuatro resultados no nulos y respeta toda la clase salvo la lectura adicional no especificada de fijar E tetraédrica.
+
+Hay dos enunciados precisos demostrados por el argumento: (a) para la E_tet específica de la sección 3, el ínfimo sobre prefijos cuadrados CPTP con eta(Psi) <= r es max(0,1-sqrt(3)r); (b) el ínfimo sobre todos los pares admisibles (E,Psi) con d = 4, salida qubit y cuatro resultados también es ese perfil. En ambos casos la cota universal da la desigualdad inferior y la familia da la superior. Conviene escribir uno de estos dos enunciados explícitamente. Esta observación no debe desaparecer al resumir el resultado como «perfil exacto».
+
+El checker congelado se ejecutó una sola vez en esta inspección, mediante PowerShell con C:/Python312/python.exe. El entorno observado fue Python 3.12.6, Windows AMD64, y SymPy 1.14.0. Terminó con código cero y el estado all_exact_assertions_passed. No se modificó su código ni se reinició la inspección para obtener otro resultado. Sus aserciones comprueban identidades exactas de matrices complejas para la familia, la marginal y el objetivo dual, el singlete, la holgura primal, el control negativo de transposición y la identidad polinómica de cuatro vectores generales de suma cero. Enumera los dieciséis subconjuntos y sus valores usando la fórmula analítica de oscilación. No diagonaliza cada H_S para derivar esa fórmula ni formaliza por sí mismo el paso general de oscilación a contracción. Ese paso fue reconstruido arriba.
+
+También debe distinguirse imprimir autovalores de certificar una desigualdad parametrizada: el símbolo u se declara real y el dominio 0 <= u <= 1 se incorpora al informe de salida, no como una batería de pruebas de desigualdades en SymPy. La positividad y sus extremos se justifican analíticamente por las expresiones espectrales. El JSON divide el mismo autovalor lógico en las expresiones equivalentes (u+3)/6 y u/6+1/2 con multiplicidades dos y uno; ambas suman la multiplicidad tres correcta. Esto es una representación no simplificada, no un fallo matemático. El checker no demuestra la dualidad SDP general, la completa positividad de Omega para todo Z ni el promedio esférico para todo POVM. La validación de esos pasos es la argumentación analítica de esta inspección.
+
+Se conserva una incidencia de procedimiento: el checker se ejecutó directamente en la carpeta de origen y su instrucción final reescribió EXACT1365.json. Debió ejecutarse sobre una copia para evitar esa escritura. El hash anterior y el posterior son idénticos, 38c4f52bc54b3844f3d4a1ff00560238dfc2049a2871be76a13c0a78295ea48d; no hubo cambio de bytes, pero pudo cambiar el metadato temporal. No se afirma que todos los metadatos del original hayan quedado intactos ni se oculta la reescritura. Los hashes del argumento y del checker permanecieron asimismo idénticos. No se repitió la ejecución para borrar o sustituir esta evidencia.
+
+El propio argumento relata un fallo histórico anterior por igualdad simbólica no simplificada y su reparación. Se conserva aquí como hecho informado por el autor en el material congelado; esta inspección no abrió READING1365.json ni verificó directamente aquella ejecución histórica. No debe confundirse ese antecedente con la única ejecución observada aquí, que pasó.
+
+No se consultaron fuentes externas ni se verificaron las fechas, versiones o afirmaciones de prioridad de los antecedentes bibliográficos enumerados por el autor. Los resultados geométricos y de normalización se reconstruyeron desde las definiciones, sin apoyarse en una búsqueda por palabras clave. Queda fuera de esta inspección determinar si el enunciado factorizado exacto ya aparece en una fuente primaria, si merece una publicación separada o si coincide con otro resultado existente. Tampoco se certifica la pertinencia de un grafo bibliográfico, una revisión completa del corpus ni una comparación editorial. Los antecedentes citados por el autor figuran en source_pins.json solamente como referencias no consultadas, no como evidencia examinada.
+
+El resultado matemático utilizable es, por tanto, la cota general independiente de la entrada, su mejora para cuatro resultados y una familia cuadrada explícita que hace exacta la segunda cota para la clase de pares admisibles, o para la preparación tetraédrica fijada. Deben conservarse la objeción a la lectura de E arbitraria fijada, la limitación del checker, la comparación condicional con el resultado previo y la incidencia de reescritura byteidéntica. El expediente de esta única inspección se conserva íntegro en las dos rutas indicadas en context.json, con igualdad de bytes comprobada por SHA256.

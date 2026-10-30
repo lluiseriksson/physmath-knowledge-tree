@@ -1,0 +1,96 @@
+{
+  "inspection_id": "qubit-review1365",
+  "date": "2026-10-30",
+  "type": "single_mathematical_component_inspection",
+  "overall": "core_mathematics_supported_with_required_quantifier_clarification",
+  "claims": [
+    {
+      "id": "universal_bound",
+      "statement": "alpha_positive(E Psi) >= max(0,1-2r) for finite N under the stated square-prefix factorization",
+      "result": "supported_by_analytic_reconstruction"
+    },
+    {
+      "id": "four_outcome_bound",
+      "statement": "alpha_positive(E Psi) >= max(0,1-sqrt(3)r) for N=4",
+      "result": "supported_by_analytic_reconstruction"
+    },
+    {
+      "id": "positive_dual",
+      "statement": "dual marginal is Tr_A Z >= I_2; normalized Choi defines CP unital Omega and CPTP Lambda",
+      "result": "supported_including_complex_transposes_and_singular_J"
+    },
+    {
+      "id": "tetrahedral_family",
+      "statement": "d=4,k=2,N=4; eta(Psi_u)=u/sqrt(3) and alpha_positive(E_tet Psi_u)=1-u for 0<=u<=1",
+      "result": "supported_analytically_and_by_finite_exact_checker"
+    },
+    {
+      "id": "exact_envelope_over_pairs",
+      "statement": "inf over all admissible pairs (E,Psi), d=4,k=2,N=4, eta(Psi)<=r, is max(0,1-sqrt(3)r)",
+      "result": "supported"
+    },
+    {
+      "id": "exact_envelope_fixed_tetrahedral_E",
+      "statement": "inf over Psi with eta(Psi)<=r for the explicitly constructed E_tet is max(0,1-sqrt(3)r)",
+      "result": "supported"
+    },
+    {
+      "id": "exact_envelope_arbitrary_fixed_E",
+      "statement": "the same equality for every arbitrary E fixed in advance",
+      "result": "refuted_if_this_is_the_intended_reading",
+      "counterexample": "Take F_y=|y><y| on C^4 and all four sigma_y=tau. Then E Psi is a replacement channel and alpha_positive=1 for all r, contradicting the displayed profile for r>0."
+    },
+    {
+      "id": "prior_d_over_2_comparison",
+      "result": "arithmetic_verified_conditional_on_uninspected_prior_theorem",
+      "limitation": "ARGUMENT1351 and its inspection were not read. Strict improvement refers to coefficients; clipped numerical bounds can coincide."
+    },
+    {
+      "id": "novelty_and_antecedent_overlap",
+      "result": "not_assessed"
+    }
+  ],
+  "required_clarification": "Specify whether the exact envelope varies E as well as Psi, or fix E=E_tet. Do not state the equality for an arbitrary fixed preparation E.",
+  "preserved_findings": [
+    {
+      "id": "F01",
+      "kind": "mathematical_quantifier_objection",
+      "description": "The displayed infimum binds only Psi after E was introduced generally. One natural fixed-E reading is false; both precise valid readings are given in the report."
+    },
+    {
+      "id": "F02",
+      "kind": "procedure_incident",
+      "description": "The checker was run directly from its source folder and rewrote EXACT1365.json byte-identically. Pre/post SHA256 equality was verified, but metadata may have changed. It should have been run on a copy. No rerun was used to remove this incident."
+    },
+    {
+      "id": "F03",
+      "kind": "evidence_scope",
+      "description": "The finite checker supports one parameterized witness and a polynomial identity; it does not establish the general SDP/Bloch theorem. The theorem was examined analytically."
+    },
+    {
+      "id": "F04",
+      "kind": "historical_failure_provenance",
+      "description": "The frozen argument reports an earlier unsimplified symbolic equality failure. This is preserved as author-reported and was not independently rerun or verified against READING1365.json."
+    }
+  ],
+  "checker": {
+    "executions_in_this_inspection": 1,
+    "exit_code": 0,
+    "status": "all_exact_assertions_passed",
+    "python_version": "3.12.6",
+    "sympy_version": "1.14.0",
+    "executable": "C:/Python312/python.exe",
+    "shell": "PowerShell",
+    "source_hashes_unchanged_after_execution": true,
+    "source_metadata_untouched": "not_asserted"
+  },
+  "excluded_conclusions": [
+    "No numerical assessment or target score",
+    "No worldwide novelty claim or exhaustive literature review",
+    "No formal proof-assistant certification",
+    "No manuscript/PDF assessment, human peer review, or editorial decision",
+    "No theorem for arbitrary EB composites based only on composite contraction",
+    "No exact envelope for every d,k,N",
+    "No effective model or reasoning-effort attestation"
+  ]
+}

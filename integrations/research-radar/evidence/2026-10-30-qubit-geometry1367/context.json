@@ -1,0 +1,69 @@
+{
+  "inspection_id": "qubit-review1365",
+  "date": "2026-10-30",
+  "timezone": "Europe/Stockholm",
+  "filesystem_timestamp_observed": "2026-10-30T05:44:13.8934697+01:00",
+  "requested_model": "gpt-6-astra",
+  "requested_reasoning_effort": "xhigh",
+  "effective_model": null,
+  "effective_reasoning_effort": null,
+  "effective_identity_attestation": "not_attested_no_verifiable_runtime_identifier_or_effort_telemetry_available",
+  "agent_task_context": "/root/astra_qubit1365_component",
+  "context_separated": true,
+  "filesystem_shared": true,
+  "independence_verified": false,
+  "single_inspection": true,
+  "inspection_restarts": 0,
+  "checker_executions": 1,
+  "materials_read_in_full": [
+    "C:/Trabajo/airr/2026-10-30_qubit-geometry1365/ARGUMENT1365.md",
+    "C:/Trabajo/airr/2026-10-30_qubit-geometry1365/checker1365.py",
+    "C:/Trabajo/airr/2026-10-30_qubit-geometry1365/EXACT1365.json"
+  ],
+  "other_operational_material_read": [
+    "D:/LEEME.md"
+  ],
+  "other_evaluations_or_grading_files_read": [],
+  "external_sources_consulted": [],
+  "prior_argument_or_review_consulted": false,
+  "source_content_changes": false,
+  "procedure_incident": {
+    "source_result_rewritten_by_checker": true,
+    "path": "C:/Trabajo/airr/2026-10-30_qubit-geometry1365/EXACT1365.json",
+    "sha256_before": "38c4f52bc54b3844f3d4a1ff00560238dfc2049a2871be76a13c0a78295ea48d",
+    "sha256_after": "38c4f52bc54b3844f3d4a1ff00560238dfc2049a2871be76a13c0a78295ea48d",
+    "bytes_unchanged": true,
+    "metadata_unchanged": "not_asserted",
+    "description": "Direct source execution caused the checker's documented output write. This should have been isolated in a copy; the incident is preserved."
+  },
+  "runtime_observed": {
+    "shell": "PowerShell",
+    "executable": "C:/Python312/python.exe",
+    "python_version": "3.12.6",
+    "python_build": "tags/v3.12.6:a4a2d2b, Sep 6 2024, 20:11:23",
+    "python_platform": "MSC v.1940 64 bit (AMD64)",
+    "sympy_version": "1.14.0",
+    "exit_code": 0
+  },
+  "live_output_directory": "C:/Trabajo/airr/2026-10-30_qubit-review1365",
+  "preserved_output_directory": "D:/Proyectos/airr-investigacion/2026-10-30_qubit-review1365",
+  "requested_artifacts": [
+    "report.txt",
+    "verdict.json",
+    "context.json",
+    "source_pins.json"
+  ],
+  "additional_evidence": [
+    "checker_execution.txt",
+    "sha256_manifest.json"
+  ],
+  "prohibited_or_out_of_scope_actions_performed": {
+    "paid_services": false,
+    "airr_statistics": false,
+    "corpus_or_task_downloads": false,
+    "administrative_service_tools": false,
+    "other_chat_or_editorial_case_changes": false,
+    "global_state_changes": false,
+    "repository_changes": false
+  }
+}
