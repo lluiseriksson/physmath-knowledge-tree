@@ -1675,6 +1675,45 @@
         "domain.quantum_information_theory",
         "domain.algebra"
       ]
+    },
+    {
+      "id": "lu-ncabp-matrix-hitting-2610-37677",
+      "title": "Explicit matrix hitting points for noncommutative algebraic branching programs",
+      "url": "https://arxiv.org/abs/2610.37677v1",
+      "kind": "preprint",
+      "published_on": "2026-10-11",
+      "observed_on": "2026-10-30",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Claims a fixed polynomial-resource matrix query for bounded-size affine noncommutative ABPs, using a universal cyclic frame and coefficient-dual readouts.",
+      "limits": "Selected characteristic-zero core statements and proof steps read. The cited formal repository returned 404 through two primary access paths; source HEAD, statement map, dependency pins and kernel build remain unverified. No scalar commutative/general-circuit PIT, unrestricted rational-formula, peer-review or priority conclusion is imported. First preprint is 11 October, not the 30 October listing.",
+      "reuse": "Bibliographic metadata and own scope synthesis only; no manuscript, source code or model-assessment report redistributed.",
+      "anchors": [
+        "domain.complexity_theory",
+        "domain.algebra"
+      ],
+      "source_version": "arXiv:2610.37677v1",
+      "source_pdf_sha256": "b808247dde5d62bf489ac1c2643959642c992f5b8aa63f1a972bfcc46648511e",
+      "mechanism": "A fixed coefficient frame replaces query dependence on hidden transitions and seed.",
+      "hypotheses": "Bounded affine ncABP size, ordinary full-matrix oracle access and the stated field characteristic.",
+      "falsifier": "An admissible nonzero ABP annihilated by the query, or a missed cyclic direction.",
+      "levels": {
+        "formal": "Admission held; external formal artifact unverified.",
+        "literature": "Attributed preprint claim.",
+        "heuristic": "Check statement correspondence and total resources.",
+        "speculative": "No new own theorem proposed."
+      },
+      "prior_model_reference": {
+        "authors": "Michael A. Forbes and Amir Shpilka",
+        "url": "https://www.cs.tau.ac.il/~shpilka/publications/ForbesShpilka12.pdf",
+        "version_date": "2012-09-11",
+        "conference_year": 2013,
+        "anchors": [
+          "Definition 1.4",
+          "Corollary 4.7"
+        ],
+        "reading_status": "Selected oracle definition and statement only."
+      }
     }
   ],
   "candidates": [
