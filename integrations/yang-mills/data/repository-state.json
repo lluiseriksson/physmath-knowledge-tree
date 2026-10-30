@@ -1,6 +1,63 @@
 {
   "schema_version": "1.0.0",
   "snapshot": {
+    "date": "2026-10-30",
+    "repository": "lluiseriksson/THE-ERIKSSON-PROGRAMME",
+    "head": "a9937ee1dd5978bf372174500a2395cf259eb395",
+    "head_message": "Merge pull request #97 from lluiseriksson/codex/consolidated-flat-wall-20261030: Consolidate the closed flat rank walls and audit the actual CT route",
+    "head_commit_date": "2026-10-30T08:50:03Z",
+    "previous_head": "4ac57638396f62c4cb968676a07a9ae95bd982be",
+    "verified_core_jobs": 8466,
+    "oracle_target": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "verification_mode": "Recorded GitHub CI, not an independent local programme rebuild",
+    "verification_record": "data/verification-2026-10-30.json"
+  },
+  "formal_pipeline": [
+    "raw-source compatibility package",
+    "PhysicalGaugeCMP116ActivityTransport.of_cmp116RawSource",
+    "physicalGaugeCMP116SupportHypotheses_of_cmp116RawSource",
+    "balabanCMP116_hraw_of_cmp116RawSource",
+    "physicalGaugeCMP116RawSourceScaleFamily",
+    "singleScaleUVDecay_of_cmp116RawSource_hsharp",
+    "SingleScaleUVDecay",
+    "lattice_mass_gap_of_singleScaleUVDecay_marginal",
+    "lattice_mass_gap_of_cmp116RawSource_hsharp_marginal"
+  ],
+  "current_frontier": "Both formerly planned marginal adapters exist and are imported by the successful exact-head core build. They preserve explicit source, H# identity, IR and marginal-recursion assumptions. hRpoly and physical uniform estimates remain open. The old geometric and later roadmap plans have not been globally reconciled and must not be proposed from this snapshot.",
+  "recommended_next_commit": "commit.source-frontier-reconciliation",
+  "preferred_physical_follow_up": "Audit one concrete physical source obligation and its volume/cutoff quantifiers; do not reimplement the existing marginal adapters.",
+  "refresh_protocol": [
+    "Resolve the current default-branch HEAD without assuming the stored SHA.",
+    "Search for every planned declaration name before proposing it.",
+    "Inspect consumers of SingleScaleUVDecay and compare geometric versus marginal assumptions.",
+    "Bind the declaration import closure and exact source HEAD to a successful core/oracle record; disclose remote CI versus independent local replay. Preserve older verification anchors as historical.",
+    "Do not interpret historical-unreconciled plans as absent declarations or authorized duplicate implementation tasks."
+  ],
+  "honest_scope": {
+    "proved": [
+      "formal adapters from raw-source packages to CMP116 support/hraw",
+      "scale-family construction",
+      "H# consumer producing SingleScaleUVDecay under explicit hypotheses",
+      "geometric and marginal M3 assembly theorems at the scalar remainder level",
+      "named marginal semantic consumer and raw-source/H# marginal composition under explicit hypotheses (remote exact-head CI)"
+    ],
+    "not_proved": [
+      "concrete Yang–Mills Gaussian pushforward",
+      "covariance-root localization with uniform constants",
+      "Wilson Hessian identification",
+      "construction of the physical local activity",
+      "raw pointwise source estimate",
+      "physical H# remainder identity",
+      "hRpoly",
+      "continuum limit or Clay mass gap"
+    ],
+    "quantifier_scope": "At fixed source parameters, there exists gap > 0 for all times. Volume-independent constants require a separate exists-constants-before-forall-indices theorem; the adapter does not supply it."
+  },
+  "historical_snapshot": {
     "date": "2026-06-23",
     "repository": "lluiseriksson/THE-ERIKSSON-PROGRAMME",
     "head": "4ac57638396f62c4cb968676a07a9ae95bd982be",
@@ -12,42 +69,6 @@
       "propext",
       "Classical.choice",
       "Quot.sound"
-    ]
-  },
-  "formal_pipeline": [
-    "raw-source compatibility package",
-    "PhysicalGaugeCMP116ActivityTransport.of_cmp116RawSource",
-    "physicalGaugeCMP116SupportHypotheses_of_cmp116RawSource",
-    "balabanCMP116_hraw_of_cmp116RawSource",
-    "physicalGaugeCMP116RawSourceScaleFamily",
-    "singleScaleUVDecay_of_cmp116RawSource_hsharp",
-    "SingleScaleUVDecay"
-  ],
-  "current_frontier": "SingleScaleUVDecay is verified; a clean top-level raw-source/H# to M3 theorem is not present at the inspected HEAD.",
-  "recommended_next_commit": "commit.raw-hsharp-geometric-m3",
-  "preferred_physical_follow_up": "commit.named-marginal-consumer",
-  "refresh_protocol": [
-    "Resolve the current default-branch HEAD without assuming the stored SHA.",
-    "Search for every planned declaration name before proposing it.",
-    "Inspect consumers of SingleScaleUVDecay and compare geometric versus marginal assumptions.",
-    "Update this snapshot only after Lean and oracle verification."
-  ],
-  "honest_scope": {
-    "proved": [
-      "formal adapters from raw-source packages to CMP116 support/hraw",
-      "scale-family construction",
-      "H# consumer producing SingleScaleUVDecay under explicit hypotheses",
-      "geometric and marginal M3 assembly theorems at the scalar remainder level"
-    ],
-    "not_proved": [
-      "concrete Yang–Mills Gaussian pushforward",
-      "covariance-root localization with uniform constants",
-      "Wilson Hessian identification",
-      "construction of the physical local activity",
-      "raw pointwise source estimate",
-      "physical H# remainder identity",
-      "hRpoly",
-      "continuum limit or Clay mass gap"
     ]
   }
 }

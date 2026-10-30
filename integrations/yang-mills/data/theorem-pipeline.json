@@ -57,8 +57,8 @@
     },
     {
       "id": "route.raw-source-to-m3-geometric",
-      "status": "one-adapter-missing",
-      "purpose": "Expose the existing geometric M3 conclusion directly at the raw-source/H# frontier.",
+      "status": "historical-unreconciled",
+      "purpose": "Historical route proposal only; current exact-name presence/absence remains unresolved. Do not infer a missing adapter.",
       "steps": [
         "decl.raw-hsharp-single-scale",
         "decl.planned-raw-hsharp-geometric-m3",
@@ -73,8 +73,8 @@
     },
     {
       "id": "route.raw-source-to-m3-marginal",
-      "status": "two-adapters-missing",
-      "purpose": "Expose the physically faithful 4D marginal branch directly at the raw-source/H# frontier.",
+      "status": "verified-conditional-remote-ci",
+      "purpose": "Use the existing named marginal adapters; fixed-parameter scalar lattice decay remains conditional on every listed physical and analytic input.",
       "steps": [
         "decl.raw-hsharp-single-scale",
         "decl.planned-named-marginal-consumer",

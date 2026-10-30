@@ -25,17 +25,17 @@ const roadmap = read('data/commit-roadmap.json').commits;
 const rules = read('data/decision-rules.json');
 
 const verified = decls.filter(x => x.status === 'verified');
-const planned = decls.filter(x => x.status === 'planned');
+const planned = decls.filter(x => x.status !== 'verified');
 const next = roadmap.find(x => x.status === 'next');
 
 const context = `# Compact Yang–Mills agent context\n\n` +
 `- Inspected HEAD: \`${state.snapshot.head}\` (${state.snapshot.head_message})\n` +
-`- Ledger: Addendum ${state.snapshot.ledger_addendum}; verified core ${state.snapshot.verified_core_jobs} jobs.\n` +
+`- Core: ${state.snapshot.verified_core_jobs} jobs; ${state.snapshot.verification_mode}. Historical ledger anchors are retained separately.\n` +
 `- Current frontier: ${state.current_frontier}\n` +
 `- Next commit: **${next.title}** (risk: ${next.risk}).\n` +
-`- Preferred physical follow-up: named marginal SingleScaleUVDecay consumer.\n\n` +
-`## Verified declaration path\n\n` + verified.map(x => `- \`${x.name}\` — ${x.role}`).join('\n') +
-`\n\n## Planned declarations\n\n` + planned.map(x => `- \`${x.name}\` — ${x.role}`).join('\n') +
+`- Preferred physical follow-up: ${state.preferred_physical_follow_up}\n\n` +
+`## Declarations with recorded verification anchors\n\n` + verified.map(x => `- \`${x.name}\` — ${x.role} Anchor: \`${x.verified_at}\`; ${x.verification_mode ?? 'historical verification, not re-audited at current HEAD'}.`).join('\n') +
+`\n\n## Historical plans requiring reconciliation\n\n` + planned.map(x => `- \`${x.name}\` — ${x.status}. ${x.caveat}`).join('\n') +
 `\n\n## Next commit contract\n\n` +
 `**Files:** ${next.files.map(x => `\`${x}\``).join(', ')}\n\n` +
 `**Conclusion:** ${next.conclusion}\n\n` +

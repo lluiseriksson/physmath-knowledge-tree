@@ -8,15 +8,25 @@ const frontier = read(base + 'data/hypothesis-frontier.json').obligations;
 const roadmap = read(base + 'data/commit-roadmap.json').commits;
 const scenarios = read(base + 'evaluation/scenarios.json');
 
-test('next theorem is the raw Hsharp geometric M3 adapter', () => {
+test('next move audits a physical obligation without duplicating existing adapters', () => {
   const next = roadmap.find(x => x.status === 'next');
-  assert.equal(next.declarations[0], 'decl.planned-raw-hsharp-geometric-m3');
-  assert.match(next.title, /geometric M3/);
+  assert.deepEqual(next.declarations, []);
+  assert.match(next.conclusion, /physical remainder identity or uniform estimate/);
+  for (const id of next.consumes) assert.equal(decls.find(d => d.id === id).status, 'verified');
 });
 
 test('verified and planned declarations cannot be confused', () => {
   assert.ok(decls.some(x => x.name.endsWith('singleScaleUVDecay_of_cmp116RawSource_hsharp') && x.status === 'verified'));
-  assert.ok(decls.some(x => x.name.endsWith('lattice_mass_gap_of_cmp116RawSource_hsharp_geometric') && x.status === 'planned'));
+  assert.ok(decls.some(x => x.name.endsWith('lattice_mass_gap_of_cmp116RawSource_hsharp_geometric') && x.status === 'historical-unreconciled' && !x.verified_at));
+  const state = read(base + 'data/repository-state.json');
+  const record = read(base + 'data/verification-2026-10-30.json');
+  assert.equal(record.current_ci.head, state.snapshot.head);
+  for (const source of record.declarations) {
+    const declaration = decls.find(x => x.name === source.name);
+    assert.equal(declaration.verified_at, record.current_ci.head);
+    assert.equal(declaration.source_blob, source.blob);
+    assert.match(declaration.verification_mode, /no independent local replay/);
+  }
 });
 
 test('support roles are explicitly separated', () => {

@@ -11,19 +11,22 @@ raw-source package
 → SingleScaleUVDecay
 ```
 
-## Immediate move
+## Reconciled endpoint (30 October 2026)
 
-Add `lattice_mass_gap_of_cmp116RawSource_hsharp_geometric` as a thin composition
-of the verified H# producer and `lattice_mass_gap_of_singleScaleUVDecay_geometric`.
-Derive only the final H# amplitude nonnegativity from existing positivity and
-denominator hypotheses.
+The named marginal consumer and raw-source marginal composition now exist.
+The exact-head core imports both files; GitHub core/oracle verification passed.
+Older geometric and later roadmap plans require name-by-name reconciliation
+before implementation. No current global absence claim has been established.
 
 ## Next physical move
 
-Add `lattice_mass_gap_of_singleScaleUVDecay_marginal`, then
-`lattice_mass_gap_of_cmp116RawSource_hsharp_marginal`. The marginal wrapper is
-the faithful 4D route because it uses summability of `g_k ^ kappa0` under the
-marginal recursion rather than assuming geometric coupling decay.
+Inspect `lattice_mass_gap_of_singleScaleUVDecay_marginal` and
+`lattice_mass_gap_of_cmp116RawSource_hsharp_marginal`; do not add duplicates.
+The branch uses summability of `g_k ^ kappa0` with `kappa0 > 1` under marginal
+recursion. Its scalar conclusion at fixed source parameters does not supply
+volume-independent physical constants. The next useful move is to bind one
+concrete physical remainder identity or uniform estimate to its source and
+consumer, retaining the quantifier order and a falsifier.
 
 ## Stop conditions
 

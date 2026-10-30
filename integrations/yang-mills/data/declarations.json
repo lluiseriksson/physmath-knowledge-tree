@@ -187,12 +187,12 @@
       "forgets": [
         "source construction"
       ],
-      "caveat": "At the inspected HEAD it does not accept SingleScaleUVDecay by a named semantic wrapper."
+      "caveat": "Historical verification anchor retained. A named SingleScaleUVDecay marginal consumer is now present; see decl.planned-named-marginal-consumer (stable historical ID)."
     },
     {
       "id": "decl.planned-raw-hsharp-geometric-m3",
       "name": "YangMills.RG.lattice_mass_gap_of_cmp116RawSource_hsharp_geometric",
-      "status": "planned",
+      "status": "historical-unreconciled",
       "file": "YangMills/RG/PhysicalGaugeCMP116RawUVMassGap.lean",
       "kind": "theorem",
       "role": "Compose the verified raw-source H# producer directly with the named geometric SingleScaleUVDecay consumer.",
@@ -209,12 +209,12 @@
         "geometric-coupling"
       ],
       "forgets": [],
-      "caveat": "Must retain the _geometric suffix and all analytic hypotheses."
+      "caveat": "Historical proposed name and file only. Current global presence/absence was not checked; do not propose or implement before reconciling it."
     },
     {
       "id": "decl.planned-named-marginal-consumer",
       "name": "YangMills.RG.lattice_mass_gap_of_singleScaleUVDecay_marginal",
-      "status": "planned",
+      "status": "verified",
       "file": "YangMills/RG/MarginalUVMassGap.lean",
       "kind": "theorem",
       "role": "Give the marginal assembly a named semantic consumer of SingleScaleUVDecay.",
@@ -231,13 +231,16 @@
         "positivity"
       ],
       "forgets": [],
-      "caveat": "Should be a thin definitional adapter, not a new analytic theorem."
+      "caveat": "Conditional adapter only: source estimates, H# remainder identity, IR input, marginal recursion and uniform constants are not discharged.",
+      "verified_at": "a9937ee1dd5978bf372174500a2395cf259eb395",
+      "verification_mode": "remote exact-head CI; direct core import; no independent local replay",
+      "source_blob": "14ff70a23cfb6b400de44044cd3754897d989218"
     },
     {
       "id": "decl.planned-raw-hsharp-marginal-m3",
       "name": "YangMills.RG.lattice_mass_gap_of_cmp116RawSource_hsharp_marginal",
-      "status": "planned",
-      "file": "YangMills/RG/PhysicalGaugeCMP116RawUVMassGap.lean",
+      "status": "verified",
+      "file": "YangMills/RG/PhysicalGaugeCMP116RawM3.lean",
       "kind": "theorem",
       "role": "Compose the raw-source H# producer with the faithful named marginal consumer.",
       "consumes": [
@@ -253,7 +256,10 @@
         "marginal-recursion"
       ],
       "forgets": [],
-      "caveat": "Still conditional on hR and the concrete source package."
+      "caveat": "Conditional adapter only: source estimates, H# remainder identity, IR input, marginal recursion and uniform constants are not discharged.",
+      "verified_at": "a9937ee1dd5978bf372174500a2395cf259eb395",
+      "verification_mode": "remote exact-head CI; direct core import; no independent local replay",
+      "source_blob": "e93fde029a7f032aba215bfa51393a99b2f808c0"
     }
   ]
 }
