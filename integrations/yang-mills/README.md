@@ -63,3 +63,6 @@ npm run validate:yang-mills-generated
 ## Latest source and physical-boundary audit
 
 The [Hodge/source-boundary audit1400](evidence/2026-10-30-hodge-source-boundary/README.md) records the new all-cochain flat identity and the constructed weighted comparison, with selected proof-body inspection and matching source-reported focal hashes. The previous successful8466-job core/oracle anchor remains a993; current c454 core CI was still in progress at this observation. These scopes are separate. The physical rooted-Hsharp remainder identity, profile estimates and uniform final constants remain unproved. Read the [new scoped observation](data/verification-2026-10-30-hodge1400.json) before proposing work; the completed binder audit and existing flat construction must not be repeated as new tasks.
+
+
+The subsequent [native core/oracle closure](evidence/2026-10-30-hodge-source-boundary/CI-CLOSURE1401.json) supersedes the earlier pending CI observation: the c454 run succeeded and its original archive was retrieved and separately parsed. The updated compact context retains the distinction from focal Hodge verification and from physical source estimates.
