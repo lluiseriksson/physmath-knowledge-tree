@@ -1487,6 +1487,23 @@
       "anchors": [
         "domain.quantum_information_theory"
       ]
+    },
+    {
+      "id": "mitran-devroye-tarokh-continuous-compound-author-draft",
+      "title": "On Compound Channels with Side-Information at the Transmitter",
+      "url": "https://ece.uwaterloo.ca/~pmitran/compound3.pdf",
+      "kind": "author_draft",
+      "published_on": "2005-12-20",
+      "observed_on": "2026-10-30",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Selected introduction, Lemmas3-5 and Theorem3 provide standard-alphabet compact quantization and power-cost context; already cited in frozen optical source.",
+      "limits": "Receiver is informed of the channel parameter. The lower power-cost statement assumes a finite fourth moment. Not a feedback theorem or a replacement for a common decoder without parameter side information. Selected proof reading only; no full-paper audit or identity with published2006bytes.",
+      "reuse": "Metadata and own synthesis; author PDF body hashed in memory, not redistributed.",
+      "anchors": [
+        "domain.quantum_information_theory"
+      ],
+      "response_sha256": "e12ee1f5051ebaaa55843f37ddfd3309af53ec3289299c819d1d7c831aeb2e1f"
     }
   ],
   "candidates": [
@@ -1733,7 +1750,8 @@
         "shrader-permuter-compound-feedback-2007",
         "berta-gharibyan-walter-compound-ea-2016",
         "boche-janssen-kaltenstadler-compound-ea-2017",
-        "loyka-charalambous-additive-feedback-2016"
+        "loyka-charalambous-additive-feedback-2016",
+        "mitran-devroye-tarokh-continuous-compound-author-draft"
       ],
       "node_ids": [
         "domain.quantum_information_theory"
@@ -1743,7 +1761,7 @@
       "lost_or_unproved": "Full320manifest-bound1334 remains conditional on analytic contract798 and trusted Arb. A real full assessment1336 now supports the exact private24pagev4candidate (PDF1285a454550aaaac58d583d26f15dd05175f6112606aa8530b4f06a9f829bed0), importance6/technical8/minorrevisions, no materialerrorfound; native report/context/pins retained. This is not verified independent review, formal proof, publicv4release or editorial acceptance. Newread-only record checker addresses O1 inspection convenience without integration; O2 incomplete historical complex/backend closure, O3 specialized nonpractical significance and O4 exposition remain explicit. Original795/798 exclusions and all adverse evidence remain unchanged.",
       "hypothesis_to_remove": "The reviewed explicit component replaces the unknown-capacity gain choice for a different rational-gain pair and gives a tiny conditional positive common-input-gap lower bound; it does not evaluate old capacity-matched Delta or remove the finitefamily/fixedlaw/expectedcost/jointscaling hypotheses.",
       "falsifier": "Reject if analytic M, branch guards, tail bounds or rate-interval separation fail; never infer a Delta lower bound from a single-law gain.",
-      "next_finite_task": "Keep exactv4PDF/source unchanged under report1336; complete supported normal author-case reconciliation, quota, exact-version license/permission, receipt and public verification before anyv4manuscript release. No duplicatecase, adminbypass, newgrade/reviewrestart, numericalrefit/integration or separateminor paper. Read-only checker/constant record are public with default versus exact-source scope explicit; do not infer historic completebinaryclosure or practical performance.",
+      "next_finite_task": "Preserve exact26pagee862PDF/sourcefd53 and actual fullreport1343/O1–O5. Later author response supplies currentrecordinspection and dependencyguide/externalor-anderratum without changing/scoring the assessedPDF; O1fullpublicmanuscriptbinding and O2historicalbackend/scalargenerator reproducibility remain, O3density and O4specializedsignificance remain. No newgrade/reviewrestart, numericrefit/integration or separateminorpaper. Normal existing-author case, quota, exact-version license/permission, receipt and public verification remain before manuscript release; pending1339request targets older v4 and must not silently change.",
       "review_packet": "integrations/research-radar/evidence/2026-10-30-optical-review1336/README.md; actual native fullreport/context/pins in native-review1336.zip, PDF1285a454550aaaac58d583d26f15dd05175f6112606aa8530b4f06a9f829bed0 only, no v4PDF/TeX included. Historical781/798/754 and full320packet remain distinct.",
       "compact_feedback_extension": {
         "status": "single_unscored_conditional_component_audit_no_defect_found",
@@ -1764,6 +1782,20 @@
             "classical deterministic cost versus expected photon energy"
           ],
           "identity_and_independence": "requested Astra xhigh, effective identity/effort and independence unverified"
+        },
+        "full_manuscript_assessment": {
+          "PDF_sha256": "e8627ddd910c1dac2b54ffb6407ae0caf44d5c076d27a2f7046559f8617baaf8",
+          "source_sha256": "fd53c02e7feb8b6d2eb0e30e62fb1fbee1e9c39918b83e753aa8ff4a4c79a613",
+          "report_sha256": "3abdc5b39a3c4558faec15084e773c9add5741c091814dfd1b36e22cff223596",
+          "packet": "integrations/research-radar/evidence/2026-10-30-compact-review-context/README.md",
+          "importance": 6,
+          "technical_quality": 8,
+          "subjective_participating_AI": true,
+          "scope": "Exact26pageprivatePDF only, allO1–O5retained; no nativeAIRRgrade/peerreview/acceptance",
+          "requested": "gpt-6-astra/xhigh",
+          "effective_identity_effort_independence": "unattested",
+          "historical_grades_visible_in_PDF": true,
+          "external_historical_reports_opened": false
         }
       }
     },
@@ -2044,6 +2076,12 @@
       "evidence": "integrations/research-radar/evidence/2026-10-30-compact-feedback/SOURCES1341.json",
       "pins": "integrations/research-radar/evidence/2026-10-30-compact-feedback/PINS1341.json",
       "scope": "Directed12-endpoint inventory and4repository heads;9formal dependencies match pins. Four historical antecedents added with explicit abstract/selected-section reading, no new publication-date claim. Existing speculative candidate only; no coregraph/candidate-count/grade change."
+    },
+    "followup1345": {
+      "evidence": "integrations/research-radar/evidence/2026-10-30-compact-review-context/SOURCES1345.json",
+      "pins": "integrations/research-radar/evidence/2026-10-30-compact-review-context/PINS1345.json",
+      "scope": "Directed12-endpoint primary metadata inventory;9formal checkout pins match. Historical2005author-draft source newly indexed, not newly published. OpenAI currentHEAD4eaee875 reports formalization-maintenance, with identicalCONTENTSblob/preprintstree versus previous7efcatalogue; no new manuscript or proof audit. Owner programmeHEAD54adb99 inventoried only; no theorem/build claim. Actual new exact26pagePDF full assessment1343 preserved with native report and5objections; older scores not inherited. No manuscript release/coregraph/confidence promotion.",
+      "full_review_packet": "integrations/research-radar/evidence/2026-10-30-compact-review-context/README.md"
     }
   }
 }

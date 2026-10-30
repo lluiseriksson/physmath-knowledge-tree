@@ -1,0 +1,146 @@
+{
+  "artifact_sha256": {
+    "main.pdf": "e8627ddd910c1dac2b54ffb6407ae0caf44d5c076d27a2f7046559f8617baaf8",
+    "main.tex": "fd53c02e7feb8b6d2eb0e30e62fb1fbee1e9c39918b83e753aa8ff4a4c79a613",
+    "PRODUCTION1343.zip": "9376ff21dd1f007dda74d8c4dbcd4ff90604d1a60edc14b8a8ba95d6afcdc8a7"
+  },
+  "checked_at_utc": "2026-10-30T00:48:37.801895+00:00",
+  "scope": "Directed primary-source attribution and scope checks, not exhaustive novelty or literature audit. Web sources pinned by explicit arXiv version, DOI/date, commit, or formula/access date; no web byte hashes asserted.",
+  "sources": [
+    {
+      "id": "holevo_eb",
+      "url": "https://arxiv.org/html/0802.0235v1",
+      "version_pin": "arXiv:0802.0235v1",
+      "read_scope": "Section 5, Theorem 2; measure-prepare antecedent",
+      "retrieval": "web tool",
+      "local_snapshot_sha256": null,
+      "full_source_proof_audited": false
+    },
+    {
+      "id": "shrader_permuter",
+      "url": "https://arxiv.org/html/0711.0705v1",
+      "version_pin": "arXiv:0711.0705v1",
+      "read_scope": "Section VII A/B, Theorem 10; classical finite/arbitrary memoryless compound feedback",
+      "retrieval": "web tool",
+      "local_snapshot_sha256": null,
+      "full_source_proof_audited": false
+    },
+    {
+      "id": "berta_gharibyan_walter",
+      "url": "https://arxiv.org/html/1603.02282v1",
+      "version_pin": "arXiv:1603.02282v1",
+      "read_scope": "Introduction, Theorem 4 and Section VI; finite-dimensional, finite-family quantum feedback scope",
+      "retrieval": "web tool",
+      "local_snapshot_sha256": null,
+      "full_source_proof_audited": false
+    },
+    {
+      "id": "boche_janssen_kaltenstadler",
+      "url": "https://arxiv.org/html/1606.09314v3",
+      "version_pin": "arXiv:1606.09314v3",
+      "read_scope": "Theorem 3.1 and Section 4.1 Remark 2; common input and assistance dimension convention",
+      "retrieval": "web tool",
+      "local_snapshot_sha256": null,
+      "full_source_proof_audited": false
+    },
+    {
+      "id": "mitran_devroye_tarokh",
+      "url": "https://ece.uwaterloo.ca/~pmitran/compound3.pdf",
+      "version_pin": "Author draft dated 20 December 2005, not identified as final published bytes",
+      "read_scope": "Introduction and model; Dini discussion/Lemma 4 and neighboring quantization discussion",
+      "retrieval": "web tool",
+      "local_snapshot_sha256": null,
+      "full_source_proof_audited": false
+    },
+    {
+      "id": "huber_koenig",
+      "url": "https://arxiv.org/html/1710.06734v2",
+      "version_pin": "arXiv:1710.06734v2",
+      "read_scope": "Abstract and Theorem 1; fixed-channel energy-independent gap scope",
+      "retrieval": "web tool",
+      "local_snapshot_sha256": null,
+      "full_source_proof_audited": false
+    },
+    {
+      "id": "catalano_et_al",
+      "url": "https://arxiv.org/html/2604.26874v2",
+      "version_pin": "arXiv:2604.26874v2, 30 September 2026",
+      "read_scope": "Abstract and selected introduction only; non-Gaussian fading antecedent, not full proof audit",
+      "retrieval": "web tool",
+      "local_snapshot_sha256": null,
+      "full_source_proof_audited": false
+    },
+    {
+      "id": "adesso_lami_giovannetti",
+      "url": "https://arxiv.org/html/2610.22308v1",
+      "version_pin": "arXiv:2610.22308v1, 15 October 2026",
+      "read_scope": "Abstract, Section IV/Theorem 2; single-mode Gaussian-channel scope",
+      "retrieval": "web tool",
+      "local_snapshot_sha256": null,
+      "full_source_proof_audited": false
+    },
+    {
+      "id": "tu_li_dhillon",
+      "url": "https://www.nature.com/articles/s44459-026-00074-7",
+      "version_pin": "DOI 10.1038/s44459-026-00074-7; version of record 1 October 2026",
+      "read_scope": "Publisher-indexed abstract, introduction and selected on-off model/results. Direct open failed with identity-provider redirect; primary-domain search returned article text. No audit of its proofs.",
+      "retrieval": "web tool",
+      "local_snapshot_sha256": null,
+      "full_source_proof_audited": false
+    },
+    {
+      "id": "winter",
+      "url": "https://arxiv.org/html/1507.07775v6",
+      "version_pin": "arXiv:1507.07775v6",
+      "read_scope": "Lemma 2 and common-mixture proof; antecedent only",
+      "retrieval": "web tool",
+      "local_snapshot_sha256": null,
+      "full_source_proof_audited": false
+    },
+    {
+      "id": "shirokov",
+      "url": "https://arxiv.org/html/1610.08870v5",
+      "version_pin": "arXiv:1610.08870v5",
+      "read_scope": "Section 6, ensemble metrics, beginning 6.2 and Proposition 7 statement; not full propositions proof audit",
+      "retrieval": "web tool",
+      "local_snapshot_sha256": null,
+      "full_source_proof_audited": false
+    },
+    {
+      "id": "nist_bessel",
+      "url": "https://dlmf.nist.gov/10.9.E1",
+      "version_pin": "DLMF formula 10.9.1, accessed this review date; live reference not immutable commit",
+      "read_scope": "Bessel integral only",
+      "retrieval": "web tool",
+      "local_snapshot_sha256": null,
+      "full_source_proof_audited": false
+    },
+    {
+      "id": "trefethen",
+      "url": "https://raw.githubusercontent.com/chebfun/ATAP/96e888be8c3f8bde8488f42eb3ed96321a2416d1/chap8.m",
+      "version_pin": "Git commit 96e888be8c3f8bde8488f42eb3ed96321a2416d1",
+      "read_scope": "Theorems 8.1 and 8.2 and selected coefficient-bound proof; not whole book",
+      "retrieval": "web tool",
+      "local_snapshot_sha256": null,
+      "full_source_proof_audited": false
+    },
+    {
+      "id": "python_flint",
+      "url": "https://raw.githubusercontent.com/flintlib/python-flint/572c8a213a88c0f92feb1bdb938ce4622f4517fa/src/flint/types/acb.pyx",
+      "version_pin": "Git commit 572c8a213a88c0f92feb1bdb938ce4622f4517fa, cited python-flint 0.9.0",
+      "read_scope": "Integration callback dispatch and analytic-flag contract; not backend correctness or binary audit",
+      "retrieval": "web tool",
+      "local_snapshot_sha256": null,
+      "full_source_proof_audited": false
+    }
+  ],
+  "local_numerical_pins": {
+    "campaign_zip_sha256": "ab729762abdbc770b34b5ee98ba8b92cdaa8ce6ff999fcbc9b0194b1a00a6c93",
+    "current_verifier_sha256": "dbec730a09b650c8e99c1daffc64e78ba2fa67ad352e35cee750027cf23ac3f1",
+    "constants_sha256": "356f70f352b24c32389d4717f8fc9af117fe5d9de9f675da8c47da5456e4e588",
+    "input_manifest_sha256": "7330dee63da9a4c9beba63764ab0a8f2638667c94c5a72964b09ce867d03b0e3",
+    "executed_mathematical_region_recorded_sha256": "0b438a21cf64d164da6e0b8267a89cf8fc62052639f94f047325680d1335bef5"
+  },
+  "historical_external_review_archives_opened": [],
+  "not_audited": "Other bibliography items not listed were read as manuscript references but not independently verified in this session. No claims of worldwide priority, currently open general quantum-feedback status, formal verification or complete backend closure."
+}

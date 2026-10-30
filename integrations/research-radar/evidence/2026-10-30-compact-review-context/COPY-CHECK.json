@@ -1,0 +1,36 @@
+{
+  "checked_at_utc": "2026-10-30T00:48:37.801895+00:00",
+  "inputs_final": {
+    "main.pdf": "e8627ddd910c1dac2b54ffb6407ae0caf44d5c076d27a2f7046559f8617baaf8",
+    "main.tex": "fd53c02e7feb8b6d2eb0e30e62fb1fbee1e9c39918b83e753aa8ff4a4c79a613",
+    "PRODUCTION1343.zip": "9376ff21dd1f007dda74d8c4dbcd4ff90604d1a60edc14b8a8ba95d6afcdc8a7"
+  },
+  "required_files": [
+    {
+      "file": "report.txt",
+      "bytes": 33457,
+      "sha256": "3abdc5b39a3c4558faec15084e773c9add5741c091814dfd1b36e22cff223596",
+      "copied_bytes_identical": true
+    },
+    {
+      "file": "verdict.json",
+      "bytes": 3528,
+      "sha256": "50cb59be9ac45db42b6464f6c1c229b10bf485a1dfa1c9958d611b7b9a45ec3f",
+      "copied_bytes_identical": true
+    },
+    {
+      "file": "context.json",
+      "bytes": 6606,
+      "sha256": "a7ff2d37cab7674913b39e81e6ba013b5b5b532f6ad086b3eff4b0d47d486e25",
+      "copied_bytes_identical": true
+    },
+    {
+      "file": "source_pins.json",
+      "bytes": 7024,
+      "sha256": "bb1254b38aeed305bc9c06d5959eef3b987ee0e21ad50364a2e278b27ca6576b",
+      "copied_bytes_identical": true
+    }
+  ],
+  "supporting_evidence_sha256": "f01bec9067b0d2129aad881687189bb73acf80e21f83637bf6f0223e95ae96c8",
+  "destination": "D:\\Proyectos\\airr-investigacion\\2026-10-30_compact-full-review1343"
+}

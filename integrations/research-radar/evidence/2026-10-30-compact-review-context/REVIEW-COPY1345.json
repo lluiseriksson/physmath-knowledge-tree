@@ -1,0 +1,34 @@
+{
+  "native": {
+    "report.txt": {
+      "bytes": 33457,
+      "sha256": "3abdc5b39a3c4558faec15084e773c9add5741c091814dfd1b36e22cff223596",
+      "D_matches": true
+    },
+    "verdict.json": {
+      "bytes": 3528,
+      "sha256": "50cb59be9ac45db42b6464f6c1c229b10bf485a1dfa1c9958d611b7b9a45ec3f",
+      "D_matches": true
+    },
+    "context.json": {
+      "bytes": 6606,
+      "sha256": "a7ff2d37cab7674913b39e81e6ba013b5b5b532f6ad086b3eff4b0d47d486e25",
+      "D_matches": true
+    },
+    "source_pins.json": {
+      "bytes": 7024,
+      "sha256": "bb1254b38aeed305bc9c06d5959eef3b987ee0e21ad50364a2e278b27ca6576b",
+      "D_matches": true
+    },
+    "COPY-CHECK.json": {
+      "bytes": 1340,
+      "sha256": "658f66dd11c0bf1d49849c44e6e0b7d58a81e482aee0ca78eeab914f83572d84",
+      "D_matches": true
+    }
+  },
+  "all5_C_D_match": true,
+  "parent_full_report_read": true,
+  "truncated_output_recovered_from_char14000": true,
+  "exactPDF_sha256": "e8627ddd910c1dac2b54ffb6407ae0caf44d5c076d27a2f7046559f8617baaf8",
+  "no_grade_transfer_to_new_response_or_code": true
+}
