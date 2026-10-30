@@ -1,0 +1,98 @@
+"""Exact checks for one analytically selected saturated counterexample to T.
+
+No state scan, optimizer, floating entropy evaluation, or precision loop.
+The entropy bound is proved in REPORT1399.txt; these assertions check its
+finite algebraic premises and its final rational upper bound.
+"""
+from pathlib import Path
+import hashlib
+import json
+import platform
+import sympy as s
+
+assert __debug__
+R = s.Rational
+C0 = s.Matrix([[100, 1], [0, 1]])
+D0 = s.Matrix([[100, -1], [0, 1]])
+Z = s.trace(C0.T*C0 + D0.T*D0)
+A = C0*C0.T/Z
+B = D0*D0.T/Z
+X = C0*D0.T/Z
+rho = A.row_join(X).col_join(X.T.row_join(B))
+Sigma = (C0.T*C0 + D0.T*D0)/Z
+Bg = D0.T*D0/Z
+P = s.Matrix([[R(1,2), -s.sqrt(2)/4], [-s.sqrt(2)/4, R(1,2)]])
+Sinv = s.diag(1/s.sqrt(Sigma[0,0]), 1/s.sqrt(Sigma[1,1]))
+assert Z == 20004
+assert C0.det() == D0.det() == 100
+assert s.trace(rho) == 1 and rho.rank() == 2
+assert A.det() > 0 and B.det() > 0
+assert X*B.inv()*X.T == A  # saturated Schur complement, hence unitary coupling
+assert Sigma == s.diag(R(5000,5001), R(1,5001))
+assert s.simplify(Sinv*Bg*Sinv-P) == s.zeros(2)
+assert P.det() == (s.eye(2)-P).det() == R(1,8)
+assert P[0,0] > 0 and (s.eye(2)-P)[0,0] > 0
+assert s.trace(Sigma*P) == R(1,2)
+assert Sigma*P != P*Sigma
+lm = (1-1/s.sqrt(2))/2
+lp = (1+1/s.sqrt(2))/2
+Em = s.simplify((lp*s.eye(2)-P)/(lp-lm))
+Ep = s.simplify((P-lm*s.eye(2))/(lp-lm))
+assert s.simplify(P*Em-lm*Em) == s.zeros(2)
+assert s.simplify(P*Ep-lp*Ep) == s.zeros(2)
+assert s.trace(Sigma*Em) == s.trace(Sigma*Ep) == R(1,2)
+variance = s.trace(Sigma*(P-R(1,2)*s.eye(2))**2)
+assert variance == R(1,8)
+jensen_floor = R(44,125)*variance
+assert jensen_floor == R(11,250)
+
+eps = R(1,5001)
+psi = s.Matrix([1,0,1,0])/s.sqrt(2)
+chi = s.Matrix([1,1,-1,1])/2
+assert (psi.T*chi)[0] == 0
+assert rho == (1-eps)*psi*psi.T + eps*chi*chi.T
+chi_A = s.Matrix([[sum(chi[2*i+r]*chi[2*j+r] for r in range(2))
+                   for j in range(2)] for i in range(2)])
+assert chi_A == s.eye(2)/2
+
+# The positive Taylor tail makes exp(9) greater than this rational sum.
+# A fixed finite exact check, not a numerical approximation to log(5001).
+exp9_lower = sum(R(9)**k/s.factorial(k) for k in range(21))
+assert exp9_lower > 5001
+# Thus log(5001)<9. Likewise exp(1)>1+1=2, so log(2)<1.
+# h(eps) <= eps*log(5001)+eps; mixture entropy gives the bound below.
+upper = 11*eps-jensen_floor
+assert upper == -R(52261,1250250)
+assert upper < -R(1,25)
+
+record = {
+    "status": "analytic_refutation_of_T_on_saturated_endpoints",
+    "scope": "T only; not a negative G witness or additivity refutation",
+    "selection": "One explicit rational Gram pair derived from a product-state limit; no scan or optimizer",
+    "python": platform.python_version(), "sympy": s.__version__,
+    "assertions_enabled": __debug__,
+    "C_unnormalized": [[str(x) for x in C0.row(i)] for i in range(2)],
+    "D_unnormalized": [[str(x) for x in D0.row(i)] for i in range(2)],
+    "normalization_squared": str(Z),
+    "reference_dimension": 2, "rho_rank": rho.rank(),
+    "physical_diagonal_ranks": [A.rank(), B.rank()],
+    "saturated_schur_complement_exact": True,
+    "Sigma": [[str(x) for x in Sigma.row(i)] for i in range(2)],
+    "P": [[str(x) for x in P.row(i)] for i in range(2)],
+    "P_eigenvalues": [str(lm), str(lp)],
+    "spectral_weights": ["1/2", "1/2"],
+    "population": "1/2", "variance": str(variance),
+    "scalar_convexity_input": "e_N'' >= 88/125; audit906 Section 7",
+    "Jensen_excess_lower_bound": str(jensen_floor),
+    "mixture_weight_epsilon": str(eps),
+    "exp9_positive_series_lower_bound": str(exp9_lower),
+    "strict_T_upper_bound": str(upper),
+    "strict_T_upper_bound_less_than_minus_1_over_25": True,
+    "entropy_numerics_performed": False,
+    "formal_verification_claim": False,
+    "trusted_boundary": "AI-assisted analytic entropy derivation plus exact SymPy premise checks; not yet human-reviewed and not a proof-assistant certificate",
+    "script_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest()
+}
+out = Path(__file__).with_name("COUNTEREXAMPLE-CHECK1399.json")
+out.write_text(json.dumps(record, indent=2)+"\n", encoding="utf-8")
+print(json.dumps(record, indent=2))

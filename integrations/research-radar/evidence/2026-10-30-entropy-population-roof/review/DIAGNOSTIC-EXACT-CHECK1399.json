@@ -1,0 +1,33 @@
+{
+  "status": "exact_dictionary_and_saturation_checks_passed",
+  "scope": "Only the previously declared real diagnostic; no entropy sign certificate or new state sample",
+  "normalization": "10",
+  "physical_state_rank": 2,
+  "physical_equal_diagonal_blocks": true,
+  "saturated": true,
+  "Sigma": [
+    [
+      "49/125",
+      "18/125"
+    ],
+    [
+      "18/125",
+      "76/125"
+    ]
+  ],
+  "complementary_state_dictionary_exact": true,
+  "output_characteristic_polynomial": [
+    "1",
+    "-1",
+    "36269/125000",
+    "-7287/250000",
+    "57635361/62500000000"
+  ],
+  "generalized_population_polynomial": [
+    "136/625",
+    "-136/625",
+    "1/25"
+  ],
+  "entropy_numerics_performed": false,
+  "script_sha256": "bc162e3d3cb36dc823422f35126b19e1b0ba9be9790992835fd5d26576131801"
+}

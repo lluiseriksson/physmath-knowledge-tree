@@ -1,0 +1,75 @@
+Fixed-diagonal contraction reduction for the existing entropy target
+
+Own analytical working argument; no independent assessment, formal proof,
+manuscript score or novelty claim. This is a finite-dimensional convex-geometry
+reduction, not a proof of the remaining entropy inequality.
+
+Fix positive operators A,B on the same finite reference space R, with
+Tr(A+B)=1, and let p=Tr B. Consider all states
+ rho(C) = [[A,C],[C*,B]].
+The measured state sigma=diag(A,B) and p are fixed along this fiber. All
+relative positions of the two supports inside R remain fixed; they may overlap
+and their density operators need not commute.
+
+For 0<p<1, let a=rank A, b=rank B. Positivity forces C to vanish on ker B
+and C* to vanish on ker A. On the respective supports, A and B are invertible.
+Congruence by their inverse square roots identifies positivity with
+ [[I,K],[K*,I]] >= 0, where C=A^(1/2) K B^(1/2).
+Its Schur complement is equivalent to ||K||<=1. No inverse is used outside
+a support, and these support spaces are not identified with orthogonal
+subspaces of the original reference R.
+
+Take an SVD K=U D(s_1,...,s_m) V*, m=min(a,b), with 0<=s_j<=1.
+For epsilon in {+1,-1}^m set
+ w_epsilon = product_j (1+epsilon_j*s_j)/2,
+ K_epsilon = U J_epsilon V*,
+where J_epsilon has the rectangular singular diagonal epsilon_j. The weights
+are nonnegative, sum to one, and their weighted average of K_epsilon is K.
+When a>=b each endpoint is an isometry; when a<=b it is a coisometry. In
+the square case it is a unitary between the two supports. Thus
+ rho(K)=sum_epsilon w_epsilon rho(K_epsilon)
+with exactly the same A,B,p and reference geometry.
+
+For the fixed channel N in the existing candidate, define
+ G(C)=S((Nhat tensor id_R)(rho(C)))-S(sigma)-e_N(p)+h(p).
+Only the first term varies with C. It is concave because the channel is
+linear and entropy is concave. Consequently
+ G(K) >= sum_epsilon w_epsilon G(K_epsilon).
+It therefore suffices to establish G>=0 on these saturated support couplings.
+The converse follows by restriction. If G(K)<0, the weighted average on the
+right is negative, so at least one positive-weight endpoint is a negative
+witness with the same fixed diagonal blocks. This is not a claim that a
+particular negative endpoint makes every mixture negative.
+
+The saturated middle block has rank max(a,b): use the Schur complement of
+an identity block and K* K=I or K K*=I. Support congruence preserves rank.
+The endpoint states are generally mixed. When p is 0 or 1, positivity instead
+forces C=0 and the previously audited target gives G=0 directly.
+
+Using only the already scoped B_N<=>Q dictionary in audit901, a negative
+fixed-channel witness can thus be chosen with rank rho<=dim R. Purifying it
+requires a system B of dimension at most dim R. Its two normalized branch
+matrices have shape m-by-n with m<=n. This restricts a proof/counterexample
+search for this fixed B_N; it does not bound n or assert the same reduction
+for every coefficient family in the stronger P5-E problem.
+
+Exact calibrations are in verify_fiber1284.py. One uses noncommuting diagonal
+blocks and decomposes a rank-four state into four rank-two unitary-coupled
+states with rational weights 2/15,1/15,8/15,4/15. Each endpoint has an exact
+Gram factor, and the mixture is checked entry by entry. No entropy gap is
+computed or certified by that test.
+
+A separate saturated coisometry has
+ A=diag(9/25,0), B=diag(7/25,9/25), C=(9/25)|0><1|.
+The state is (9/25) v v*+(7/25) e e*, with v=(1,0,0,1) and e=(0,0,1,0).
+It has trace one and rank two; its diagonal support ranks are one and two.
+A partial-transpose principal minor equals -81/625, so it is entangled.
+This explicitly prevents replacing all saturated endpoints by pure states.
+No claim about its entropy gap is made.
+
+The original universal core remains G>=0 for mixed saturated endpoints, or
+equivalently the missing tradeoff C_E<=delta_e(p)+I(Z:ER). No reference-dimension
+bound, classicalization, independent branch rotation, or universal P5 theorem
+has been supplied. SVD coordinates parametrize the coupling; they do not
+justify gauging K to the identity through the physical channel. This is not
+a separate paper and does not acquire a grade from audits901/906.
