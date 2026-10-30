@@ -1,0 +1,49 @@
+{
+  "target": "Existing Capacity duality, certified optimization and tensor regularization manuscript",
+  "target_pdf_sha256": "0c36e9cc6f2e153aa2bb2ada9bd0a099e83b89bacc57ab555871e008adcf4d40",
+  "purpose": "Own synthesis for defensible intake and eventual knowledge-tree integration; no new theorem, paper or graph confidence promotion",
+  "levels": {
+    "formal": "No newly checked proof-assistant result. Rational certificate acceptance is exact finite arithmetic, not a formal proof of all source theorems.",
+    "literature": "Current frozen manuscript claims and cited prior results, with exact-source/report boundaries; the current scope review is still pending.",
+    "heuristic": "Statement-level distinctness from the Sharpness predecessor supports treating the manuscript as a substantive sequel, pending ordinary case reconciliation. It does not certify worldwide priority.",
+    "speculative": "No general efficient small finite determinant-witness construction follows from capacity-value approximation; abandon any such inference without a separate theorem."
+  },
+  "claims": [
+    {
+      "claim": "Optimized capacity Gram duality",
+      "source": "Theorem1, equation dual; Lemmas fixed and convex",
+      "mechanism": "For each covariance, determinant-one scaling gives a continuous linear Gram pairing. Polar/geodesic interpolation makes the Loewner upper image convex. Sion exchanges compact covariance maximization and the convex upper-image infimum.",
+      "hypothesis_eliminated": "No need for a false ordinary convexity assumption on SL(d,C)^2, nor attainment of its scaling infimum.",
+      "limits": "Uses classical minimax; not a new general minimax theorem. Complex covariance conventions must stay consistent.",
+      "falsifier": "A complex tuple/covariance violating the trace-pairing identity, or endpoint scalings violating Loewner convex interpolation, defeats the argument."
+    },
+    {
+      "claim": "Optimized-capacity tensor multiplicativity, including entangled joint covariance",
+      "source": "Theorem1, equation mult",
+      "mechanism": "Known fixed-map capacity multiplicativity and product covariances give the lower bound. The Gram dual permits product scalings and the largest-eigenvalue product rule to bound every joint covariance from above.",
+      "hypothesis_eliminated": "No product/separability restriction on the maximizing covariance is imposed in the conclusion.",
+      "limits": "Fixed-map multiplicativity is an explicit external theorem. Zero factors require the epsilon-to-infimum argument, not minimizer existence.",
+      "falsifier": "A tuple pair with an exact certified joint-covariance lower value exceeding the separate dual upper witnesses would contradict the claimed optimized identity."
+    },
+    {
+      "claim": "Tensor-regularized amplified determinant equals optimized capacity",
+      "source": "Theorem2",
+      "mechanism": "Apply the earlier universal C/e comparison once to the tensor-power tuple and use optimized-capacity multiplicativity, then take the nth root.",
+      "hypothesis_eliminated": "No interchange of auxiliary-amplification supremum and tensor limit, and no uniform auxiliary witness-size estimate is used.",
+      "retained_hypothesis": "Earlier universal comparison ARR-2026-1DGGW5KX2M9R4VJT v1; not independently re-audited by this context review.",
+      "limits": "This short consequence stays inside the substantive duality/optimization paper; not a separate paper. Dimension of direct tensor evaluation still grows exponentially.",
+      "falsifier": "Failure of the cited universal comparison would remove this identification while leaving the stated duality/optimization core logically separable."
+    },
+    {
+      "claim": "Finite-bit value/covariance approximation and rational value certificates",
+      "source": "Finite-bit section and certificate sections; existing retained exact examples",
+      "mechanism": "Published fixed-map scaling oracle plus rational cutting-plane reduction, positive feasible center and explicit precision budgets. Rational Gram witnesses bracket the value by exact matrix arithmetic.",
+      "hypothesis_eliminated": "Certification of selected finite output values need not trust a floating-point search as its acceptance oracle.",
+      "limits": "General M1/GLS implementation and benchmarks are absent. Existing finite certificate examples do not prove the full complexity theorem or construct general finite determinant witnesses.",
+      "falsifier": "A malformed or false rational certificate accepted by the exact checker, or a hidden precision/feasible-center hypothesis in the reduction, is a material objection; preserved negative-control evidence must remain available."
+    }
+  ],
+  "deduplication": "The existing Sharpness theorem constructs tuples approaching the universal factor e. This manuscript must cite that result and retain its distinct construction scope; it must not sell the same factor-e optimality as a new current result.",
+  "review_boundary": "No numerical grade assigned by this synthesis. One requested Astra xhigh isolated unscored context/diff review is running; no duplicate review or restart authorized by this file.",
+  "publication_boundary": "Metadata and own synthesis only. No intake, license, case message, acceptance decision or public release performed."
+}

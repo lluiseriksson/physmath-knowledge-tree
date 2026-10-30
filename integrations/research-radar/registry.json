@@ -1715,6 +1715,40 @@
         "reading_status": "Selected oracle definition and statement only."
       },
       "scope_control": "integrations/research-radar/evidence/2026-10-30-pit-order-domain-scope/README.md"
+    },
+    {
+      "id": "airr-universal-amplified-capacity",
+      "title": "A universal capacity bound for amplified determinants and polynomial witnesses in the Hermitian case",
+      "url": "https://airr.science/papers/ARR-2026-1DGGW5KX2M9R4VJT/versions/v1/",
+      "kind": "preprint",
+      "published_on": "2026-10-17",
+      "observed_on": "2026-10-30",
+      "reading_status": "abstract_read",
+      "evidence": "literature",
+      "claim": "Public v1 abstract records a universal comparison between optimized operator capacity and the amplified determinant; Hermitian witness claims have a separately restricted domain.",
+      "limits": "Abstract and public metadata read, not a fresh full-proof or finite-transfer audit; the unrestricted comparison remains an explicit external dependency of the own tensor-limit draft.",
+      "reuse": "Bibliographic metadata and own synthesis only; no foreign manuscript or evaluation corpus copied.",
+      "anchors": [
+        "domain.analysis",
+        "domain.quantum_information_theory"
+      ]
+    },
+    {
+      "id": "airr-sharpness-amplified-capacity",
+      "title": "Sharpness of the universal capacity bound for amplified determinants",
+      "url": "https://airr.science/papers/ARR-2026-418PW0QXGN812RDC/versions/v1/",
+      "kind": "preprint",
+      "published_on": "2026-10-17",
+      "observed_on": "2026-10-30",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Definitions and Theorem1/Corollary2 on v1 PDFpages1-2 read. The main construction approaches the optimal factor e even with identity Gram; exact publicPDF hash verified in the linked source-reading packet.",
+      "limits": "No random-matrix proof audit or worldwide priority certification. This is a17October Working paper newly added to this directed index, not a new30October publication. Main-statement distinction from the own duality draft is bounded.",
+      "reuse": "Bibliographic metadata and own synthesis only; no foreign manuscript or evaluation corpus copied.",
+      "anchors": [
+        "domain.analysis",
+        "domain.quantum_information_theory"
+      ]
     }
   ],
   "candidates": [

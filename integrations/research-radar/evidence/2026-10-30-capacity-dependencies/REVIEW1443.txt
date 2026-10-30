@@ -1,0 +1,142 @@
+LIMITED UNSCORED EXACT-ARTIFACT CONTEXT AND DIFF ASSESSMENT
+30 October 2026
+
+Manuscript: Capacity duality, certified optimization and tensor regularization of amplified determinants
+Author: Lluis Eriksson
+Target: D:/Proyectos/airr-investigacion/2026-10-30_capacity-context1442/manuscript/main.pdf
+Target PDF SHA256: 0c36e9cc6f2e153aa2bb2ada9bd0a099e83b89bacc57ab555871e008adcf4d40
+Target PDF: 22 pages, 488443 bytes
+Target TeX SHA256: 73d34e6537f9196e117ded6dffb92e52f6832e9495255214e61311989bcfcb45
+
+score: null
+new_independent_vote: false
+Editorial acceptance: not issued
+Publication/intake action: none
+
+1. DISPOSITION
+
+MINOR OBSERVATIONS; NO MATERIAL OBJECTION FOUND WITHIN THIS LIMITED SCOPE.
+
+The new exact-artifact review-context section is materially faithful to the retained reports. It distinguishes the two historical PDF versions, records the four original comments and their limited follow-up disposition, discloses substantial model assistance and shared filesystem access, and expressly refuses numerical-score inheritance, independent human review, separate-model replication, formal verification and editorial acceptance. I found no evidence that the contextual changes alter the mathematical source statements or certificate data.
+
+This supports proceeding to ordinary author intake with this actual assessment and its limitations attached. It is not an acceptance decision, a fresh full proof audit, a new grade, a certification of all cited dependencies, or authority to publish. Two minor provenance/presentation observations below should remain visible in any handoff. Neither calls for additional theorem work.
+
+The separate sharpness article and this manuscript have distinct main theorem statements. That statement-level finding supports the added distinction; it does not establish worldwide novelty, absence of overlap elsewhere, or a right to reuse any earlier editorial case or approval.
+
+2. REQUESTED CONFIGURATION AND OBSERVABLE LIMITS
+
+The dispatch request and REVIEW-REQUEST1443.txt specify GPT-6 Astra with xhigh reasoning in a fresh context. That is the requested/configured label supplied to this reviewer, not independently observed runtime routing. The available instructions identify the assistant as Codex based on the GPT-6 family; no tool result or provider telemetry available in this review independently identifies the executing model variant or reasoning-effort setting. Actual runtime model and effort therefore remain unverified. I do not certify that the named runtime was executed.
+
+This child context contains its task, global instructions and parent coordination messages, rather than the parent's preceding conversation transcript. It intentionally reads historical assessments and preparation records. It is consequently neither blind nor independent of the supplied author/reviewer context. Context isolation is not externally attested. Filesystem access is shared, and substantial earlier OpenAI model-family participation in construction and review is disclosed. Separately written hash/diff checks below mean checks written in this context; they do not create an independent scientific vote or independent human review.
+
+One assessment was performed. No subagent was spawned, no assessment was restarted to improve an outcome, and no desired numerical result was sought. Historical numerical judgments were encountered in the required retained reports and revision record; they were treated only as historical provenance and are neither repeated as current grades nor used as a target.
+
+3. EXACT-ARTIFACT AND PRESERVATION VERIFICATION
+
+I computed SHA256 values from the actual bytes, not merely from the author's JSON declarations.
+
+Current PDF:
+  0c36e9cc6f2e153aa2bb2ada9bd0a099e83b89bacc57ab555871e008adcf4d40
+Current main.tex:
+  73d34e6537f9196e117ded6dffb92e52f6832e9495255214e61311989bcfcb45
+
+Corrected D71 baseline, in D:/Entregas/airr/2026-10-17_regularizacion-tensorial/revised-final-candidate/:
+  main.pdf: d71b57c29e4f0ed9230f3b7e30e23270e33a41cf30e664d72cc83e4022cd9cad
+  main.tex: 55ccf2d4a6dadb828aa6fabf5a6a6617e671724d2b5c65a1d7ac0238cdf60932
+  PDF: 21 pages, 239238 bytes.
+The current package's baseline-d71.pdf is byte-identical to that baseline.
+
+Original 0401 artifact, in D:/Entregas/airr/2026-10-17_regularizacion-tensorial/:
+  main.pdf: 0401ba38126420cd92205b617125a8e3d3e2f27dcc9a263a25fa8df3132c1247
+  main.tex: ef681c4b6c617abab184721549235bafc7e8d4becabccbe485fdbae7e7fa1ca6
+  PDF: 21 pages, 236112 bytes.
+
+Historical reports in the current manuscript/review directory:
+  0401-full-report.txt:
+    b237d1bb154d85752fd130f185844559525a4e46d3bdf37de8589c74c8493c0f
+  0401-assessment.json:
+    8abbc094252c43f0159b140fda6a189a14e4ffd0ef32e38b0f39abe1b831f859
+  d71-followup-report.txt:
+    701446f7451628e1d72907ac6a4f24a8bb2b4aece2285bbd6c5c02248966dfcf
+  d71-followup.json:
+    3129dbbd8509ac45346bcc9bf199814ec4b6a81e3ac18c233ff90776562d5ed4
+
+Each report/assessment was compared byte-for-byte with its preserved original in the 17 October delivery directories. All four match. Their hashes also agree with the original review-final-hash-inventory.json and followup-hash-inventory.json entries. This verifies preservation of these particular files; it is not cryptographic attestation of authorship, runtime identity, or all events described inside them.
+
+I independently generated the complete normalized-text unified diff between the baseline and target TeX. It exactly equals SOURCE-DIFF1442.patch. The source prefix preceding "Our bounded search includes" is identical after newline normalization and substitution of the declared date line (67444 normalized characters). The differences consist of that date, the added sharpness distinction/reference, the replacement review-context disclosure, and the AZG v1 URL pin. No theorem/proof/certificate-formula edit appears.
+
+I independently compared every one of the 29 mappings in COMPILE-QA1442.json with actual baseline/current bytes and recorded hashes. All match. For precision, this count includes the old main.pdf preserved under baseline-d71.pdf; it is 28 other unchanged files plus that baseline PDF, not a claim that the newly compiled main.pdf is unchanged. The checked set includes certificate data, verifiers, figures, reproduction instructions and the historical revision record.
+
+4. ACTUAL READING, RENDER AND COMPILATION SCOPE
+
+I read both historical reports in full, both structured assessments, the complete source diff, the compilation/QA record, selected relevant source passages including the dependency and operational-scope paragraphs, and current PDF text on pages 1-3, 8, 12 and 19-22. These pages include the abstract, definitions, Theorem 1, the conditional tensor statement, the corrected perturbation interface, feasible-center interface, diagnostics, new context and bibliography. I did not re-read every proof in pages 4-18.
+
+I visually inspected the supplied page-20, page-21 and page-22 PNGs. I independently rendered those exact pages from the hashed target PDF in memory with PyMuPDF and compared RGB pixels at scale 1.2 with the supplied images: all three are exactly equal, each 715 by 1011 pixels. No clipping, overlap, missing hash text or unreadable bibliography entry was observed. The review paragraph crosses pages 20-21 midword; this is typographically awkward but legible and not material. Page 22 has substantial blank space after the references, also not a material defect.
+
+The existing compilation log identifies a 22-page, 488443-byte PDF, agreeing with the actual file. No undefined-reference or overfull-box message was found. Its shell-escape warning is not evidence of a failed build here. I did not recompile, run the certificate scripts, repeat the older numerical experiments, or rerun a proof assistant.
+
+A trial equality check of extracted baseline/current PDF body text did not pass even after whitespace/date normalization. Spot comparison on the read pages shows old-font character decoding, ligatures, layout ordering and citation renumbering differences. I do not claim byte-equal PDF body text. The preservation conclusion rests on the independently verified source diff and file hashes, supported by the specified PDF content/visual checks; it is not a fresh full visual comparison of every page.
+
+Two tooling issues were preserved as limitations rather than hidden: an initial text-printing command stopped on a Windows stdout Unicode encoding error after completing its hash/diff checks; text extraction was then read successfully with UTF-8 output. The web opening tool could not access the predecessor PDF; a direct read-only HTTPS fetch into memory succeeded. Neither issue caused an assessment restart or a change to any input.
+
+5. TRUTHFULNESS OF THE HISTORICAL CONTEXT
+
+The new section on pages 20-21 correctly binds the full 17 October report to 0401 and the limited same-reviewer follow-up to D71. It does not silently turn the original report into a review of the current hash.
+
+C1: The original report requested a corrected Roofeh-Karimipour pinpoint, Eqs. (13)-(15). The follow-up records resolution. The current bibliography retains that pinpoint. I did not newly audit that external paper in this assessment.
+
+C2: The original objection concerned erroneous printed perturbation/logarithmic implications in AZG Appendix C.4 and requested an explicit corrected local bridge, not a claimed counterexample to this manuscript. The follow-up records resolution by the relative-condition estimate. The current page 8 retains the condition ||V^{-1}E|| <= c < 1/2, its positive-map/log-determinant consequence and the distinction between this local argument and the cited algorithm's full complexity guarantee. Pinning the bibliography to arXiv:1804.01076v1 agrees with the version named in the original read-scope record. I did not re-audit M1 or the source appendix.
+
+C3: The original report regarded the feasible-center proof as substantively adequate but requested a positive explicit contraction and clearer precision budgets. D71 records resolution. Current page 12 retains tau = min{zeta,1}/[8(M+2)], exact feasibility checks, the N=1 bisection case and separate zeta/2 budgets. Reporting this as resolved within the old follow-up's scope is faithful; it must not be enlarged into a claim that a general rational M1/GLS implementation has been run.
+
+C4: The earlier general geodesic minimax theorem and the distinction from the concrete Gram upper image/certificates remain in the current text. The new section accurately records the earlier follow-up's resolution without converting the bounded literature assessment into a priority certificate.
+
+The full adverse observations remain in the supplied reports, rather than only their favorable final sentences. The new section also preserves the crucial unreviewed-dependency and non-independence limitations. Its description is sufficiently complete for a limited contextual revision, provided the report files and historical version identifiers remain available with the handoff.
+
+6. STATEMENT-LEVEL PREDECESSOR COMPARISON
+
+I fetched the primary public PDF into memory:
+https://airr.science/papers/ARR-2026-418PW0QXGN812RDC/versions/v1/ARR-2026-418PW0QXGN812RDC-v1.pdf
+HTTP 200; 129011 bytes; 11 pages; SHA256:
+  1eaea4ec8f9a53ed894f58f9af3e33984e824aa074b7a74a8e90fdf6939c1224
+It matches the exact predecessor identified in the request. No source PDF was written to disk.
+
+I read its definitions and main statements on pages 1-2. Its Theorem 1 constructs, for every s >= 4096 and theta > 0, a finite tuple B with identity Gram matrix, capacity between 1-23/sqrt(s) and 1, and positive amplified determinant at most exp(-1+theta). Its Corollary 2 identifies the optimal comparison factor e, using the prior universal comparison.
+
+The current Theorem 1 instead gives an optimized-capacity Gram spectral-norm infimum and exact tensor multiplicativity over arbitrary joint covariances. Its later results concern value/covariance certificates and conditional tensor regularization. These are different statements about the same functionals. The new distinction on page 20 is therefore supported at statement level. I did not audit the predecessor's random-matrix proof or establish that all subsidiary material is nonoverlapping. No worldwide-priority or full-novelty conclusion follows.
+
+7. ADVERSE AND MINOR OBSERVATIONS
+
+R1 - Minor chronology ambiguity in the retained abstract and discussion.
+Locations: PDF page 1 final abstract sentences; page 20 related-work paragraph; main.tex lines 23 and 839.
+
+The retained wording says that "the present revision" addresses earlier minor observations and that "this revision addresses its four minor comments." In the actual chronology, C1-C4 were already addressed in the D71 mathematical revision and recorded as resolved in its follow-up. The 30 October revision clarifies the review context and bibliography. The exact-hash section immediately following supplies the correct history, so this does not materially misrepresent the overall record or create a new vote, but the shorthand is avoidably ambiguous.
+
+Recommended editorial wording: "The 17 October mathematical revision addressed the earlier model report's four comments; the present contextual revision clarifies that record." In the abstract an equally short past-tense formulation would suffice. This is a minor clarity recommendation, not a demand for a new mathematical audit. No manuscript change was made. If text is changed and a new PDF is compiled, this report remains bound to the current hash; any later association must state the actual limited follow-up/diff scope.
+
+R2 - Minor package-level historical-metadata ambiguity.
+The current package retains revision-record.json unchanged at its manuscript root. That file identifies the D71 PDF/TeX, 21 pages, historical scores and an old "pending_exact_revision_followup" status. Its own explicit old hashes and score limitations prevent it from being a false current assessment, but its generic filename could be misread by downstream automation or a hurried reader.
+
+The current release/assessment manifest should label this file as historical D71 metadata and point to the actual current PDF, this unscored assessment and both old reports. It should not treat the old status, page count or historical numbers as the current record. Preserve the file rather than silently rewriting history. This can be handled in handoff metadata without changing the reviewed PDF. This assessment itself supplies the current exact-artifact binding.
+
+Material objections found in this limited scope: none.
+Independent full-proof endorsement: not supplied.
+
+8. UNRESOLVED ASSUMPTIONS AND LIMITS
+
+- The earlier universal comparison, including its singular-value/finite-matrix input, was not independently re-audited here. The current tensor-regularization theorem remains explicitly conditional on it.
+- The earlier operational testing theorem was not independently re-audited. The current interpretation retains its global-unitary-null, repeated-call and fixed-rotation assumptions and distinguishes the order of limits from a finite-resource experiment.
+- The earlier sharp single-copy input likewise receives no new proof-audit credit here.
+- The general M1/GLS finite-bit implementation is absent from the supplied diagnostics and was not implemented or benchmarked in this review. The theorem-level reduction and selected exact certificates should not be advertised as such an implementation.
+- No general small/polynomial finite determinant-witness-size bound is supplied. A capacity value/covariance certificate does not solve that separate problem.
+- Worldwide priority, broad practical consequences and comprehensive nonduplication remain unproved. This review adds only a bounded statement comparison with the identified sharpness predecessor.
+- No proof assistant, full external-source audit, independent human referee or editorial decision is supplied.
+
+These are retained scope limits, not newly demanded research projects. The minor provenance recommendations do not justify moving the goalposts to an unrelated new theorem.
+
+9. CONSERVATION AND FINAL BOUNDARY
+
+Only the requested review/assessment outputs and, under the parent's subsequent instruction, their preserved D: copies and SHA256 manifest were created. No manuscript, certificate, prior report, state/checkpoint file, repository source, author form, intake case, account, credential or other chat was changed. Parent coordination messages about this assigned review are not editorial or external-service actions.
+
+Final readiness wording: acceptable for ordinary author intake with minor provenance/editorial observations and the stated dependency limits; not editorial acceptance.
+No numerical score is assigned. No independent new vote is created. No historical grade is transferred.
