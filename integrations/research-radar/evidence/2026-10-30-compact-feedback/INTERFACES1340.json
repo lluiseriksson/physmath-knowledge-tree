@@ -1,0 +1,50 @@
+{
+  "at": "2026-10-29T23:58:14.005Z",
+  "source_sha256": "a8092f18a95f6f6a1528295be7b224c1982e2738320cb5373fb74fda8f24d2ef",
+  "interfaces": [
+    {
+      "id": "compact_output_information",
+      "needle": "Dini's theorem on compact",
+      "present": true,
+      "line": 327
+    },
+    {
+      "id": "constant_composition_cost",
+      "needle": "Each word has exact additive cost",
+      "present": true,
+      "line": 358
+    },
+    {
+      "id": "common_decoder",
+      "needle": "This decoder is independent of",
+      "present": true,
+      "line": 336
+    },
+    {
+      "id": "deterministic_uniform_book",
+      "needle": "The expected \\emph{sum} of average errors",
+      "present": true,
+      "line": 352
+    },
+    {
+      "id": "finite_feedback_restriction",
+      "needle": "If \\(\\Gamma\\) is finite, then",
+      "present": true,
+      "line": 1000
+    },
+    {
+      "id": "arbitrary_feedback_upper",
+      "needle": "The upper feedback bound holds without the finiteness restriction.",
+      "present": true,
+      "line": 1006
+    },
+    {
+      "id": "fixed_E_first",
+      "needle": "For the finite-family direct part fix \\(E\\) first.",
+      "present": true,
+      "line": 1051
+    }
+  ],
+  "scope": "Author source/interface inspection, not independent review, full coding audit, numerical rerun or formal proof",
+  "result": "located_all_selected_interfaces"
+}

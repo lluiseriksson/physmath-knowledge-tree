@@ -1,0 +1,29 @@
+{
+  "at": "2026-10-30T00:08:18.130Z",
+  "files": {
+    "report.txt": {
+      "bytes": 14730,
+      "sha256": "169bdafc5fb089b8b933ead80aa22ca0f0fc69ae04c91359de215149abe4384a",
+      "copy_matches": true
+    },
+    "verdict.json": {
+      "bytes": 2519,
+      "sha256": "d347e6cf787fc85d90158d28a291c1d6c3cffa2e64e2595f12c7c4e6620866f8",
+      "copy_matches": true
+    },
+    "context.json": {
+      "bytes": 1642,
+      "sha256": "b51c18e53d37886df62576150246069fa5ba1f5468be7de15f9bb1599f71f9a5",
+      "copy_matches": true
+    },
+    "source_pins.json": {
+      "bytes": 2792,
+      "sha256": "caa54357dc265d27721bfcb0497161d11f271ef2bf8d54d3e244f69b70fbfbbe",
+      "copy_matches": true
+    }
+  },
+  "all_native_copies_match": true,
+  "argument_sha256": "fe9b9316c19ee3b5efe71b8380204de0ff9f0d6de62a48323e910c75061d9af4",
+  "full_report_read_by_parent": true,
+  "no_rating": true
+}

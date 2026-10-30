@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "observed_on": "2026-10-29",
+  "observed_on": "2026-10-30",
   "coverage": "Directed primary-source radar with version-pinned catalogue metadata. Bibliographic coverage is never proof coverage.",
   "source_cards": [
     {
@@ -1423,6 +1423,70 @@
         "domain.algebra",
         "domain.complexity_theory"
       ]
+    },
+    {
+      "id": "shrader-permuter-compound-feedback-2007",
+      "title": "Feedback Capacity of the Compound Channel",
+      "url": "https://arxiv.org/html/0711.0705v1",
+      "published_on": "2007-11-05",
+      "reading_status": "selected_sections_read",
+      "claim": "Section VII-B Theorem10 already covers arbitrary discrete memoryless families. Selected Lemma11 proof and related statements read; general learning/minimax novelty is not claimed.",
+      "limits": "AppendixE and whole paper not audited. Finite alphabets do not themselves discharge the optical cost/continuous-output reductions.",
+      "kind": "preprint",
+      "observed_on": "2026-10-30",
+      "evidence": "literature",
+      "reuse": "Bibliographic metadata and own scoped synthesis only; no copied abstract/proof or inferred training permission.",
+      "anchors": [
+        "domain.quantum_information_theory"
+      ]
+    },
+    {
+      "id": "berta-gharibyan-walter-compound-ea-2016",
+      "title": "Entanglement-assisted capacities of compound quantum channels",
+      "url": "https://arxiv.org/html/1603.02282v1",
+      "published_on": "2016-03-07",
+      "reading_status": "selected_sections_read",
+      "claim": "Selected overview and feedback achievability proof distinguish arbitrary-family no-feedback from finite-family feedback in this version.",
+      "limits": "Historical2016 open remark is not a current open-status or novelty claim. Quantum resources/fidelity are not proved by the optical classifier analogy. Selected v2(6March2017) VI/VII scope also checked; restriction remains in that revision, without current open-status claim.",
+      "kind": "preprint",
+      "observed_on": "2026-10-30",
+      "evidence": "literature",
+      "reuse": "Bibliographic metadata and own scoped synthesis only; no copied abstract/proof or inferred training permission.",
+      "anchors": [
+        "domain.quantum_information_theory"
+      ]
+    },
+    {
+      "id": "boche-janssen-kaltenstadler-compound-ea-2017",
+      "title": "Entanglement-assisted classical capacities of compound and arbitrarily varying quantum channels",
+      "url": "https://arxiv.org/html/1606.09314v3",
+      "published_on": "2016-06-30",
+      "reading_status": "abstract_read",
+      "claim": "Compound entanglement-assisted classical capacity is a related coding interface; v3dated25January2017 was refreshed at abstract/introduction level.",
+      "limits": "No full proof audit and not used as a feedback theorem. Firstpreprintdate differs from selectedrevisiondate.",
+      "kind": "preprint",
+      "observed_on": "2026-10-30",
+      "evidence": "literature",
+      "reuse": "Bibliographic metadata and own scoped synthesis only; no copied abstract/proof or inferred training permission.",
+      "anchors": [
+        "domain.quantum_information_theory"
+      ]
+    },
+    {
+      "id": "loyka-charalambous-additive-feedback-2016",
+      "title": "Feedback Does Not Increase the Capacity of Compound Channels with Additive Noise",
+      "url": "https://arxiv.org/abs/1612.06900v1",
+      "published_on": "2016-12-20",
+      "reading_status": "abstract_read",
+      "claim": "Abstract reports no feedback advantage for discrete additive-noise compound channels without input cost.",
+      "limits": "Does not imply no feedback advantage for constrained optical mixed-gain channels. Abstract only; not statement/proof audit.",
+      "kind": "preprint",
+      "observed_on": "2026-10-30",
+      "evidence": "literature",
+      "reuse": "Bibliographic metadata and own scoped synthesis only; no copied abstract/proof or inferred training permission.",
+      "anchors": [
+        "domain.quantum_information_theory"
+      ]
     }
   ],
   "candidates": [
@@ -1665,7 +1729,11 @@
         "python-flint-acb09-contract",
         "nist-bessel-integral",
         "sason-verdu-pinsker",
-        "trefethen-chebyshev-coefficient-bound"
+        "trefethen-chebyshev-coefficient-bound",
+        "shrader-permuter-compound-feedback-2007",
+        "berta-gharibyan-walter-compound-ea-2016",
+        "boche-janssen-kaltenstadler-compound-ea-2017",
+        "loyka-charalambous-additive-feedback-2016"
       ],
       "node_ids": [
         "domain.quantum_information_theory"
@@ -1676,7 +1744,28 @@
       "hypothesis_to_remove": "The reviewed explicit component replaces the unknown-capacity gain choice for a different rational-gain pair and gives a tiny conditional positive common-input-gap lower bound; it does not evaluate old capacity-matched Delta or remove the finitefamily/fixedlaw/expectedcost/jointscaling hypotheses.",
       "falsifier": "Reject if analytic M, branch guards, tail bounds or rate-interval separation fail; never infer a Delta lower bound from a single-law gain.",
       "next_finite_task": "Keep exactv4PDF/source unchanged under report1336; complete supported normal author-case reconciliation, quota, exact-version license/permission, receipt and public verification before anyv4manuscript release. No duplicatecase, adminbypass, newgrade/reviewrestart, numericalrefit/integration or separateminor paper. Read-only checker/constant record are public with default versus exact-source scope explicit; do not infer historic completebinaryclosure or practical performance.",
-      "review_packet": "integrations/research-radar/evidence/2026-10-30-optical-review1336/README.md; actual native fullreport/context/pins in native-review1336.zip, PDF1285a454550aaaac58d583d26f15dd05175f6112606aa8530b4f06a9f829bed0 only, no v4PDF/TeX included. Historical781/798/754 and full320packet remain distinct."
+      "review_packet": "integrations/research-radar/evidence/2026-10-30-optical-review1336/README.md; actual native fullreport/context/pins in native-review1336.zip, PDF1285a454550aaaac58d583d26f15dd05175f6112606aa8530b4f06a9f829bed0 only, no v4PDF/TeX included. Historical781/798/754 and full320packet remain distinct.",
+      "compact_feedback_extension": {
+        "status": "single_unscored_conditional_component_audit_no_defect_found",
+        "confidence": "speculative",
+        "note": "integrations/research-radar/notes/2026-10-30-compact-feedback.md",
+        "target": "finite Gamma in lower feedback comparison25",
+        "mechanism": "finite payoff observation cells plus robust common payload codes and deterministic cost slack",
+        "current_open_quantum_problem_claim": false,
+        "new_manuscript_or_grade": false,
+        "audit": {
+          "packet": "integrations/research-radar/evidence/2026-10-30-compact-feedback/README.md",
+          "argument_sha256": "fe9b9316c19ee3b5efe71b8380204de0ff9f0d6de62a48323e910c75061d9af4",
+          "native_report_sha256": "169bdafc5fb089b8b933ead80aa22ca0f0fc69ae04c91359de215149abe4384a",
+          "whole_PDF_review": false,
+          "score": null,
+          "nonblocking_clarifications": [
+            "empty-observation t=Q=0",
+            "classical deterministic cost versus expected photon energy"
+          ],
+          "identity_and_independence": "requested Astra xhigh, effective identity/effort and independence unverified"
+        }
+      }
     },
     {
       "id": "unimodular-midpoint-equality-rigidity",
@@ -1950,6 +2039,11 @@
     "followup1303": {
       "evidence": "integrations/research-radar/evidence/2026-10-29-entropy-global-methods/MANIFEST1303.json",
       "scope": "Directed12-endpoint primary inventory and first15public owner repository metadata, not exhaustive. One historical Berta source card added; Hirche/Fawzi provenance deduplicated. Existing candidate queued without confidence upgrade, grade, new paper or canonical graph edit."
+    },
+    "followup1341": {
+      "evidence": "integrations/research-radar/evidence/2026-10-30-compact-feedback/SOURCES1341.json",
+      "pins": "integrations/research-radar/evidence/2026-10-30-compact-feedback/PINS1341.json",
+      "scope": "Directed12-endpoint inventory and4repository heads;9formal dependencies match pins. Four historical antecedents added with explicit abstract/selected-section reading, no new publication-date claim. Existing speculative candidate only; no coregraph/candidate-count/grade change."
     }
   }
 }
