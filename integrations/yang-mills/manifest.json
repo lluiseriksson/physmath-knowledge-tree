@@ -11,12 +11,12 @@
   "purpose": "Give research agents a precise, refreshable and falsifiable interface for continuing the verified Yang–Mills RG development.",
   "yang_mills_repository": {
     "repository": "lluiseriksson/THE-ERIKSSON-PROGRAMME",
-    "inspected_head": "a9937ee1dd5978bf372174500a2395cf259eb395",
-    "previous_frontier_head": "4ac57638396f62c4cb968676a07a9ae95bd982be",
+    "inspected_head": "c454346d873385e3a03e38e0f85f4f1439a032c7",
+    "previous_frontier_head": "a9937ee1dd5978bf372174500a2395cf259eb395",
     "verified_core_jobs": 8466,
     "snapshot_date": "2026-10-30",
-    "verification_record": "integrations/yang-mills/data/verification-2026-10-30.json",
-    "verification_mode": "Recorded GitHub CI, not an independent local programme rebuild",
+    "verification_record": "integrations/yang-mills/data/verification-2026-10-30-hodge1400.json",
+    "verification_mode": "Historical successful8466-job core/oracle record at a9937ee1; current c454 HEAD selected-source inspection and source-reported focal Hodge checks only; current core CI still in progress at observation, not independently replayed",
     "historical_ledger_addendum": 296
   },
   "entrypoints": [
@@ -39,7 +39,7 @@
     "evaluations": "integrations/yang-mills/evaluation/scenarios.json",
     "search_queries": "integrations/yang-mills/data/search-queries.json",
     "theorem_sketches": "integrations/yang-mills/data/theorem-sketches.json",
-    "verification": "integrations/yang-mills/data/verification-2026-10-30.json"
+    "verification": "integrations/yang-mills/data/verification-2026-10-30-hodge1400.json"
   },
   "quality_gates": [
     "all JSON files parse",

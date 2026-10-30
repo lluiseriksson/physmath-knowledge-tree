@@ -3,7 +3,7 @@
 This integration turns the generic PhysMath graph into a precise working memory
 for the verified Yang–Mills RG repository.
 
-**Inspected formal HEAD:** `a9937ee1dd5978bf372174500a2395cf259eb395` (30 October 2026)
+**Inspected source HEAD:** `c454346d873385e3a03e38e0f85f4f1439a032c7` (30 October 2026)
 **Previous H# checkpoint:** `d1023e1f7bd7cb315b931f0592cb4334ba1b71e4`
 **Knowledge-tree baseline:** `25769e669cbc43b7a82bfa7498305ed872b9abb5` (`v2.6.0`)
 
@@ -41,8 +41,8 @@ continuum limit, or the Clay result. Its purpose is to make the next correct
 formal move easier to identify and harder to overstate.
 
 The two formerly planned marginal adapters already exist. Their conditional
-statements and direct core imports were inspected, and the exact-head GitHub
-core/oracle run passed. This is recorded CI evidence, not an independent local
+statements and direct core imports were inspected at a9937ee1dd5978bf372174500a2395cf259eb395,
+and that exact-head GitHub core/oracle run passed. This is recorded CI evidence, not an independent local
 programme rebuild. See the [verification record](data/verification-2026-10-30.json)
 and [scope audit](PROVENANCE-2026-10-30.md). Older declaration anchors remain
 historical. Unreconciled plans do not establish that a theorem is absent.
@@ -58,3 +58,8 @@ npm run validate:yang-mills
 npm run generate:yang-mills
 npm run validate:yang-mills-generated
 ```
+
+
+## Latest source and physical-boundary audit
+
+The [Hodge/source-boundary audit1400](evidence/2026-10-30-hodge-source-boundary/README.md) records the new all-cochain flat identity and the constructed weighted comparison, with selected proof-body inspection and matching source-reported focal hashes. The previous successful8466-job core/oracle anchor remains a993; current c454 core CI was still in progress at this observation. These scopes are separate. The physical rooted-Hsharp remainder identity, profile estimates and uniform final constants remain unproved. Read the [new scoped observation](data/verification-2026-10-30-hodge1400.json) before proposing work; the completed binder audit and existing flat construction must not be repeated as new tasks.
