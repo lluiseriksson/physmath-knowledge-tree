@@ -1,0 +1,22 @@
+{
+  "scope": "Exact algebraic controls only; analytic inequality proof is in the companion synthesis; not a simulation, Lean proof, model review or physical activity producer",
+  "sympy_version": "1.14.0",
+  "recursion": "g[0]=1/4; g[k+1]=g[k]*(1-g[k])",
+  "identities": {
+    "g-g_next=g^2": true,
+    "1/g_next-1/g=1/(1-g)": true
+  },
+  "consequences_proved_in_note": [
+    "0<g[k]<=1/4",
+    "sum g[k]^2 = 1/4",
+    "g[k]>=3/(12+4k)",
+    "R(2^m,m)>=9*exp(-1)/(12+4m)^2",
+    "No constants A,c>0 uniformly bound the truncated sum by A exp(-c t)"
+  ],
+  "target_refuted": "Only the auxiliary inference from per-scale exp(-t/2^k) and marginal summability to uniform physical exp(-c t)",
+  "not_refuted": [
+    "actual M3 assuming uniform c0",
+    "Yang-Mills",
+    "Balaban or Dimock source theorems"
+  ]
+}

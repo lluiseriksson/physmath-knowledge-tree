@@ -66,3 +66,7 @@ The [Hodge/source-boundary audit1400](evidence/2026-10-30-hodge-source-boundary/
 
 
 The subsequent [native core/oracle closure](evidence/2026-10-30-hodge-source-boundary/CI-CLOSURE1401.json) supersedes the earlier pending CI observation: the c454 run succeeded and its original archive was retrieved and separately parsed. The updated compact context retains the distinction from focal Hodge verification and from physical source estimates.
+
+## Active-support distance and physical scale
+
+The [source-grounded distance synthesis](evidence/2026-10-30-active-support/README.md) explains how two active support contacts can extract a residual spatial exponential after rooted summation. Its explicit marginal-flow countermodel rejects replacing a uniform physical rate by rates tending to zero. The actual observable-insertion identity, physical scale dictionary and activity bounds remain unproved; no hRpoly, new Lean result or model assessment is claimed.

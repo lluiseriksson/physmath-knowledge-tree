@@ -1,0 +1,122 @@
+{
+  "observed_on": "2026-10-30",
+  "confidence": "heuristic",
+  "scope": "Own conditional synthesis and auxiliary countermodel; selected primary statement/proof-step reading; no full proof audit, new formal proof or physical hypothesis elimination",
+  "primary_sources": [
+    {
+      "source": "Balaban CMP116",
+      "doi": "10.1007/BF01239022",
+      "sha256": "ee39523a0f7b83af958513c7bd6f9c7731934b40355ef5d6b0f7a68ee6d022fc",
+      "bytes": 2286864,
+      "pdf_pages": 22,
+      "selected_pages": [
+        20,
+        21
+      ],
+      "status": "statement_read; Eq2.38 visually checked",
+      "complete_proof_audited": false
+    },
+    {
+      "source": "Balaban CMP119",
+      "doi": "10.1007/BF01217741",
+      "sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+      "bytes": 4172827,
+      "pdf_pages": 43,
+      "selected_pdf_pages": [
+        1,
+        2,
+        18,
+        19
+      ],
+      "status": "statement_read; PDF18 Eq2.31 visually checked",
+      "complete_proof_audited": false
+    },
+    {
+      "source": "Dimock RG II",
+      "arxiv": "1212.5562v2",
+      "arxiv_version_date": "2013-04-02",
+      "printed_document_date": "2018-08-25",
+      "sha256": "9b5216ec475c98c1acaaf82f7ac82e19567b9ab099a17a08f142162adac7589c",
+      "bytes": 953179,
+      "pdf_pages": 94,
+      "selected_pages": [
+        20,
+        21,
+        68,
+        90
+      ],
+      "status": "statement_and_selected_proof_steps_read;21,68,90 visually checked",
+      "complete_proof_audited": false
+    }
+  ],
+  "programme_sources": [
+    {
+      "path": "YangMills/RG/ModifiedMetric.lean",
+      "ref": "c454346d873385e3a03e38e0f85f4f1439a032c7",
+      "sha256": "78a2ce6599d73e010de2117df50da41f696db1a319c4f9d0712af1580f9b0311",
+      "bytes": 55725
+    },
+    {
+      "path": "YangMills/RG/HolePolymerSystem.lean",
+      "ref": "c454346d873385e3a03e38e0f85f4f1439a032c7",
+      "sha256": "5b6145bafbd7b2ce8d0ab85469c4119940fd74c7a3fa2552d2dd0ba1832b642f",
+      "bytes": 14934
+    },
+    {
+      "path": "YangMills/RG/CorrelatorBridge.lean",
+      "ref": "c454346d873385e3a03e38e0f85f4f1439a032c7",
+      "sha256": "7287ee728c1447ae8a572cc842d7d3062ccf0de12a14fc5193191ba9da41e328",
+      "bytes": 15861
+    },
+    {
+      "path": "YangMills/RG/PhysicalGaugeCMP116RawM3.lean",
+      "ref": "c454346d873385e3a03e38e0f85f4f1439a032c7",
+      "sha256": "71280509c3974b1cdab5353a231afcdcc8de752a8302aa71b22f37d27a95e1d9",
+      "bytes": 20222
+    },
+    {
+      "path": "YangMills/RG/CubeLattice.lean",
+      "ref": "c454346d873385e3a03e38e0f85f4f1439a032c7",
+      "sha256": "9da88ff0c29c39c00e5c381cbf0df1e39852b64342990646f99a53289db2bdd1",
+      "bytes": 6147
+    }
+  ],
+  "latest_metadata_compare": {
+    "base": "c454346d873385e3a03e38e0f85f4f1439a032c7",
+    "head": "7a69e8127a73a0be495af94c5cfcaafca25768a4",
+    "ahead_by": 2,
+    "commits": [
+      {
+        "sha": "44956b5b4dd04a03fc49e2164e8cb566240da969",
+        "date": "2026-10-30T13:17:21Z",
+        "title": "c454346d: derive nonlinear flat-observation frontier and explicit escapes"
+      },
+      {
+        "sha": "7a69e8127a73a0be495af94c5cfcaafca25768a4",
+        "date": "2026-10-30T14:13:52Z",
+        "title": "Merge pull request #102 from lluiseriksson/codex/nonlinear-coarse-flat-20261030"
+      }
+    ],
+    "files": [
+      {
+        "path": "docs/COMPONENTWISE-GRADIENT-FRONTIER-20261030.md",
+        "blob": "4fd96cf178ee6b3c1481210008035142267017ab",
+        "status": "modified"
+      },
+      {
+        "path": "docs/NONLINEAR-COARSE-FLAT-FRONTIER-20261030.md",
+        "blob": "f0efaedbe12b0f38df1e0994c3d0f7692fd2ec77",
+        "status": "added"
+      }
+    ],
+    "scope": "Compare metadata/diff only; new nonlinear note inventoried, not audited; all five fixed-commit source files used for active-support synthesis unchanged; no source kernel rerun"
+  },
+  "physical_hypothesis_removed": false,
+  "new_formal_proof": false,
+  "new_assessment": false,
+  "new_grade": null,
+  "new_paper": false,
+  "canonical_graph_changed": false,
+  "deduplication": "Reuse existing papers, source cards, active-skeleton counterexample and closed kernel audit. Per-scale/uniform-rate countermodel refutes only an explicitly weaker auxiliary inference. Not an exhaustive novelty claim.",
+  "acquisition": "Metadata and own synthesis only; no primary PDF, source text corpus, private paths or credentials redistributed."
+}
