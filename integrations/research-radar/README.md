@@ -191,3 +191,7 @@ The [exact-review continuity reconciliation](notes/2026-10-28-exact-review-conti
 Fixed-channel entropy: [fixed diagonal fiber reduction and preserved review limits](evidence/2026-10-29-entropy-fixed-fiber/SYNTHESIS1285.txt). Includes the separate bounded Pick-route parking condition; no new paper, score or formal promotion.
 
 Fixed-channel entropy: [local kernel, preserved correction, and scoped boundary/center exclusions](evidence/2026-10-29-entropy-local-kernel/SYNTHESIS1293.txt). The global quantum-reference inequality remains open; no new paper or assessment. Current DeepMind head is separately classified from commit metadata only.
+
+## Reciprocal transformation and observable closure
+
+The [combined dynamic-seed note](notes/2026-10-30-dynamic-seed.md) checks why reciprocal production need not cycle, how a hidden measurable total can reverse the direction at equal visible balance, and where supply is indispensable in the chosen reservoir model. Known models and exact own algebra remain separate from the speculative natural-system application; no new paper, assessment or formal confidence is assigned.

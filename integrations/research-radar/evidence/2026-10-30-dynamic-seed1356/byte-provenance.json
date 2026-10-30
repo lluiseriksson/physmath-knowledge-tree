@@ -1,0 +1,23 @@
+{
+  "reason": "First npm check stopped at format gate because native result JSON used CRLF; preserve native hashes and use explicit LF public projection",
+  "artifacts": [
+    {
+      "file": "CHECK1354.json",
+      "native_sha256": "47fff687b20075fa31a9e4c7eb04e600762ae843558bb6ebefe734353945b745",
+      "public_sha256": "f1f0bf0810db86a005a5bbfd08553fcc95a84d50a0fff43a9a0b25c31f15a898",
+      "transform": "CRLF to LF only; native bytes retained in original frozen dossier; semantic JSON unchanged"
+    },
+    {
+      "file": "CHECK1355.json",
+      "native_sha256": "a40b4a1ee5dd4c9721677c73e1875b70b65e85207e4bb8e5321571de73d29399",
+      "public_sha256": "32dbd4b41f62ee4b197bc6bdb2022cd02b66e861864fda545c1f09a4511333f8",
+      "transform": "CRLF to LF only; native bytes retained in original frozen dossier; semantic JSON unchanged"
+    },
+    {
+      "file": "check-normal-form.py",
+      "native_sha256": "5032d3784b43f748bca39644f173f6d742ac0ae05039861c968708ef93539154",
+      "public_sha256": "d3d7696c18eaf9dad2c450157c22eaab339b4dad4adf4cd12f7b6aa4bac71445",
+      "transform": "Explicit LF output for repository formatting; equations/assertions unchanged"
+    }
+  ]
+}

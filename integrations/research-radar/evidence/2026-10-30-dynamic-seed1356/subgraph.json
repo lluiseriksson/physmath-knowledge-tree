@@ -1,0 +1,1419 @@
+{
+  "root": "domain.analysis",
+  "radius": 2,
+  "nodes": [
+    {
+      "id": "domain.analysis",
+      "kind": "domain",
+      "title": "Analysis",
+      "summary": "Limits, differentiability, integration, measure and analytic estimates.",
+      "confidence": "literature",
+      "tags": [
+        "analysis",
+        "measure",
+        "integration",
+        "estimates"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Analysis.Calculus.Deriv.Basic",
+          "Mathlib.MeasureTheory.Measure.MeasureSpace"
+        ],
+        "declarations": [
+          "HasDerivAt",
+          "MeasureTheory.Measure"
+        ],
+        "targets": [
+          "Create toy estimates that can be reused by PDE and spectral nodes."
+        ]
+      },
+      "questions": [
+        "Which estimate is the actual bottleneck of a proposed proof route?"
+      ],
+      "references": [
+        {
+          "label": "T. Tao — Analysis I",
+          "url": "https://terrytao.wordpress.com/books/analysis-i/",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "domain.functional_analysis",
+      "kind": "domain",
+      "title": "Functional analysis",
+      "summary": "Normed spaces, Banach and Hilbert spaces, operators and weak convergence.",
+      "confidence": "literature",
+      "tags": [
+        "functional-analysis",
+        "hilbert",
+        "banach",
+        "operators"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Analysis.Normed.Module.Basic",
+          "Mathlib.Analysis.InnerProductSpace.Basic"
+        ],
+        "declarations": [
+          "NormedSpace",
+          "InnerProductSpace"
+        ],
+        "targets": [
+          "Formalize operator-theoretic toy bridges."
+        ]
+      },
+      "questions": [
+        "Can a nonlinear problem be embedded into a linear or spectral setting?"
+      ],
+      "references": [
+        {
+          "label": "J. B. Conway — A Course in Functional Analysis",
+          "url": "https://link.springer.com/book/10.1007/978-1-4757-4383-8",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "domain.harmonic_analysis",
+      "kind": "domain",
+      "title": "Harmonic analysis",
+      "summary": "Fourier analysis, singular integrals, oscillation and scale-sensitive decomposition.",
+      "confidence": "literature",
+      "tags": [
+        "fourier",
+        "harmonic-analysis",
+        "scales"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Analysis.Fourier.FourierTransform"
+        ],
+        "declarations": [],
+        "targets": [
+          "Identify available Fourier transform infrastructure for toy estimates."
+        ]
+      },
+      "questions": [
+        "Which hidden frequency interaction blocks a global estimate?"
+      ],
+      "references": [
+        {
+          "label": "E. M. Stein — Harmonic Analysis",
+          "url": "https://doi.org/10.1515/9781400883929",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "domain.spectral_theory",
+      "kind": "domain",
+      "title": "Spectral theory",
+      "summary": "Eigenvalues, spectra of operators, spectral gaps and trace information.",
+      "confidence": "literature",
+      "tags": [
+        "spectra",
+        "operators",
+        "eigenvalues",
+        "trace"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Analysis.InnerProductSpace.Spectrum"
+        ],
+        "declarations": [
+          "spectrum"
+        ],
+        "targets": [
+          "State finite-dimensional spectral gap toy problems."
+        ]
+      },
+      "questions": [
+        "Can a zero, obstruction or phase transition be reinterpreted as spectral data?"
+      ],
+      "references": [
+        {
+          "label": "J. B. Conway — A Course in Functional Analysis",
+          "url": "https://link.springer.com/book/10.1007/978-1-4757-4383-8",
+          "type": "book",
+          "scope": "claim"
+        },
+        {
+          "label": "mathlib4 — Inner-product-space spectrum documentation",
+          "url": "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/InnerProductSpace/Spectrum.html",
+          "type": "documentation",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "domain.probability_stochastics",
+      "kind": "domain",
+      "title": "Probability and stochastic processes",
+      "summary": "Random variables, stochastic dynamics, concentration and probabilistic method.",
+      "confidence": "literature",
+      "tags": [
+        "probability",
+        "stochastic",
+        "randomness"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Probability.ProbabilityMassFunction.Basic"
+        ],
+        "declarations": [
+          "ProbabilityTheory.ProbabilityMassFunction"
+        ],
+        "targets": [
+          "Build finite probabilistic toy models for analytic or complexity barriers."
+        ]
+      },
+      "questions": [
+        "Does randomness reveal the typical obstruction or only average it away?"
+      ],
+      "references": [
+        {
+          "label": "O. Kallenberg — Foundations of Modern Probability",
+          "url": "https://link.springer.com/book/10.1007/978-3-030-61871-1",
+          "type": "book",
+          "scope": "claim"
+        },
+        {
+          "label": "Restricted typicality in non-equilibrium quantum many-body systems (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.07832v1",
+          "type": "paper",
+          "scope": "context"
+        }
+      ]
+    },
+    {
+      "id": "domain.pde",
+      "kind": "domain",
+      "title": "Partial differential equations",
+      "summary": "Equations involving functions and derivatives across space, time and boundary data.",
+      "confidence": "literature",
+      "tags": [
+        "pde",
+        "regularity",
+        "weak-solutions",
+        "energy"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Analysis.Calculus.FDeriv.Basic"
+        ],
+        "declarations": [
+          "ContDiff"
+        ],
+        "targets": [
+          "Represent weak and strong toy PDE statements with explicit assumptions."
+        ]
+      },
+      "questions": [
+        "Where does regularity transfer fail: estimates, compactness or uniqueness?"
+      ],
+      "references": [
+        {
+          "label": "L. C. Evans — Partial Differential Equations",
+          "url": "https://bookstore.ams.org/gsm-19-r/",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "domain.quantum_field_theory",
+      "kind": "domain",
+      "title": "Quantum field theory",
+      "summary": "Fields, quantization, path integrals, operator algebras and renormalization heuristics.",
+      "confidence": "heuristic",
+      "tags": [
+        "qft",
+        "fields",
+        "renormalization",
+        "path-integral"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib"
+        ],
+        "declarations": [],
+        "targets": [
+          "Replace informal path-integral claims with finite or algebraic toy models."
+        ]
+      },
+      "questions": [
+        "Which physical heuristic has a finite, constructive or operator-algebraic version?"
+      ],
+      "references": [
+        {
+          "label": "A. Jaffe and E. Witten — Quantum Yang-Mills Theory",
+          "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
+          "type": "paper",
+          "scope": "context"
+        },
+        {
+          "label": "R. Haag — Local Quantum Physics",
+          "url": "https://link.springer.com/book/10.1007/978-3-642-61458-3",
+          "type": "book",
+          "scope": "context"
+        }
+      ]
+    },
+    {
+      "id": "problem.navier_stokes",
+      "kind": "problem",
+      "title": "Navier-Stokes existence and smoothness",
+      "summary": "Determine global existence and smoothness, or finite-time breakdown, for 3D incompressible Navier-Stokes.",
+      "confidence": "literature",
+      "tags": [
+        "millennium",
+        "pde",
+        "fluid",
+        "regularity"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Analysis.Calculus.FDeriv.Basic"
+        ],
+        "declarations": [],
+        "targets": [
+          "Formalize a simplified energy inequality with explicit norms."
+        ]
+      },
+      "questions": [
+        "Can critical-scale energy cascade be blocked by a hidden monotonicity?"
+      ],
+      "status": "unsolved",
+      "references": [
+        {
+          "label": "Clay Mathematics Institute — Millennium Prize Problems",
+          "url": "https://www.claymath.org/millennium-problems/",
+          "type": "official",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "domain.constructive_quantum_field_theory",
+      "kind": "domain",
+      "title": "Constructive quantum field theory",
+      "summary": "Rigorous construction and analysis of interacting quantum field theories through measures, Gaussian estimates, renormalization, cluster expansions, locality and reconstruction criteria, with every uniformity assumption made explicit.",
+      "confidence": "literature",
+      "tags": [
+        "constructive-qft",
+        "cluster-expansion",
+        "renormalization",
+        "rigorous-qft"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib"
+        ],
+        "declarations": [],
+        "targets": [
+          "Isolate finite Gaussian, locality and cluster-expansion interfaces before making any continuum claim."
+        ]
+      },
+      "questions": [
+        "Which finite estimates can be proved uniformly in volume, cutoff and renormalization scale?"
+      ],
+      "references": [
+        {
+          "label": "J. Glimm and A. Jaffe — Quantum Physics: A Functional Integral Point of View",
+          "url": "https://link.springer.com/book/10.1007/978-1-4612-4728-9",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "domain.renormalization_group",
+      "kind": "domain",
+      "title": "Renormalization group",
+      "summary": "Multiscale transformations that replace microscopic degrees of freedom by effective actions while tracking relevant, marginal and irrelevant structures across changing resolutions.",
+      "confidence": "literature",
+      "tags": [
+        "renormalization-group",
+        "multiscale",
+        "effective-action",
+        "scaling"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib"
+        ],
+        "declarations": [],
+        "targets": [
+          "Model a finite renormalization step with explicit scale maps, supports and preserved quantities."
+        ]
+      },
+      "questions": [
+        "Which estimates survive iteration with constants uniform in the number of renormalization steps?"
+      ],
+      "references": [
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban I",
+          "url": "https://arxiv.org/abs/1108.1335",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "K. G. Wilson and J. Kogut — The renormalization group and the epsilon expansion",
+          "url": "https://doi.org/10.1016/0370-1573(74)90023-4",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "bridge.cluster_expansion_with_holes",
+      "kind": "bridge",
+      "title": "Cluster expansion with holes and active skeletons",
+      "summary": "Transforms raw local activities into renormalized polymer activities by connected Mayer covers, ultralocal integration and a second Ursell expansion. The active skeleton controls connectivity and incompatibility, while the full target controls union and locality.",
+      "confidence": "literature",
+      "tags": [
+        "cluster-expansion",
+        "polymers",
+        "modified-metric",
+        "active-skeleton"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib"
+        ],
+        "declarations": [],
+        "targets": [
+          "Preserve the exact union target and incompatibility tree until target decay has been extracted.",
+          "Prove rooted leaf-moment summation or instantiate a source-faithful Appendix-F cluster theorem.",
+          "Keep raw H, connected K, integrated K-sharp and renormalized H-sharp as distinct typed objects."
+        ]
+      },
+      "questions": [
+        "Can the fixed-order second Ursell term be bounded without replacing a target fiber by a global vertex mass?",
+        "What exact source constants produce the residual loss kappa minus three kappa-zero minus three?"
+      ],
+      "references": [
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban II",
+          "url": "https://arxiv.org/abs/1212.5562",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban III",
+          "url": "https://arxiv.org/abs/1304.0705",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "bridge.lattice_physical_scaling",
+      "kind": "bridge",
+      "title": "Lattice units to physical distance and mass",
+      "summary": "Separates graph distance from physical scale through d_phys = a n and m_phys = m_lat / a, giving the exact exponent identity m_lat n = m_phys d_phys. Continuum conclusions additionally require calibrated spacing and convergence of renormalized correlators.",
+      "confidence": "formal",
+      "tags": [
+        "lattice",
+        "physical-units",
+        "mass-gap",
+        "continuum-limit"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib",
+          "PhysMathKnowledgeTree.Formal.Microtheorems"
+        ],
+        "declarations": [
+          "physicalExponentIdentity"
+        ],
+        "targets": [
+          "Prove the exact exponent identity, ceiling discretization bounds and block-scale invariance of physical mass."
+        ]
+      },
+      "questions": [
+        "How should the lattice spacing be tied to the renormalization trajectory rather than chosen as an arbitrary coordinate scale?"
+      ],
+      "references": [
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban I",
+          "url": "https://arxiv.org/abs/1108.1335",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "K. G. Wilson and J. Kogut — The renormalization group and the epsilon expansion",
+          "url": "https://doi.org/10.1016/0370-1573(74)90023-4",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "bridge.block_average_coercivity",
+      "kind": "bridge",
+      "title": "Block-average mass term as a coercivity bridge",
+      "summary": "A block Poincare estimate turns a nonnegative kinetic operator K plus a positive term a Q†Q into a coercive precision with lower bound min(1,a)/C_P. The abstract lemma isolates the model-specific task of proving the gauge block estimate.",
+      "confidence": "formal",
+      "tags": [
+        "coercivity",
+        "block-average",
+        "adjoint",
+        "poincare"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib"
+        ],
+        "declarations": [],
+        "targets": [
+          "Prove the finite-dimensional coercivity lemma and a perturbation-stability corollary for self-adjoint precision operators."
+        ]
+      },
+      "questions": [
+        "Which gauge slice and weighted inner products make the source block Poincare estimate true uniformly in volume?"
+      ],
+      "references": [
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban I",
+          "url": "https://arxiv.org/abs/1108.1335",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban II",
+          "url": "https://arxiv.org/abs/1212.5562",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "problem.uniform_yang_mills_rg_activity",
+      "kind": "problem",
+      "title": "Uniform one-step Yang-Mills RG activity bound",
+      "summary": "Define the local activity produced by the actual gauge-fixed one-step renormalization integral and prove support, coupling-power and modified-metric decay estimates with constants uniform in volume, cutoff, scale, background and admissible hole geometry.",
+      "confidence": "literature",
+      "status": "unsolved",
+      "tags": [
+        "yang-mills",
+        "renormalization-group",
+        "polymer",
+        "raw-activity"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib"
+        ],
+        "declarations": [],
+        "targets": [
+          "Define the one-step gauge fluctuation identity and concrete raw activity before stating its decay.",
+          "Separate block coercivity, background-Hessian stability, covariance decay, collar localization and local R-operation gain into auditable inputs."
+        ]
+      },
+      "questions": [
+        "Can the physical gauge producer be built without hiding the desired activity estimate inside a package field?",
+        "Which constants are uniform in volume, cutoff, scale, background and hole geometry?"
+      ],
+      "references": [
+        {
+          "label": "A. Jaffe and E. Witten — Quantum Yang-Mills Theory",
+          "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban I",
+          "url": "https://arxiv.org/abs/1108.1335",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban II",
+          "url": "https://arxiv.org/abs/1212.5562",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban III",
+          "url": "https://arxiv.org/abs/1304.0705",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "domain.polymer_cluster_expansions",
+      "kind": "domain",
+      "title": "Polymer and cluster expansions",
+      "summary": "Hard-core polymer gases and connected expansions built from Mayer factors, Ursell coefficients, Kotecky-Preiss criteria, rooted tree representations and local moment bounds, with target fibers retained whenever quantitative decay depends on the exact union.",
+      "confidence": "literature",
+      "tags": [
+        "polymer-gas",
+        "cluster-expansion",
+        "ursell",
+        "tree-graph"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Combinatorics.SimpleGraph.Basic",
+          "Mathlib.Data.Finset.Basic"
+        ],
+        "declarations": [
+          "SimpleGraph",
+          "Finset"
+        ],
+        "targets": [
+          "Formalize target-fiber tree sums without quotienting away distinct covers or exact unions.",
+          "Derive rooted fixed-tree assignment bounds from local parent-child moment hypotheses."
+        ]
+      },
+      "questions": [
+        "Which projections preserve enough target information for volume-uniform decay estimates?",
+        "Can parent-dependent moment kernels improve constants beyond a uniform tree majorant?"
+      ],
+      "references": [
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban I",
+          "url": "https://arxiv.org/abs/1108.1335",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "R. Kotecký and D. Preiss — Cluster expansion for abstract polymer models",
+          "url": "https://doi.org/10.1007/BF01010924",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "Uniform Partition-Function Estimates for Coulomb Modulated Energy at All Positive Temperatures (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.00867v1",
+          "type": "paper",
+          "scope": "context"
+        }
+      ]
+    },
+    {
+      "id": "bridge.rooted_leaf_factorial_moments",
+      "kind": "bridge",
+      "title": "Rooted leaf elimination by factorial moments",
+      "summary": "Orient a tree from a marked root and sum polymer assignments from leaves upward. Rooted and parent-child incompatibility moments absorb child metric powers, yielding a fixed-tree bound governed by factorials of child counts before the remaining tree shapes are summed.",
+      "confidence": "formal",
+      "tags": [
+        "rooted-tree",
+        "leaf-elimination",
+        "factorial-moments",
+        "parent-child",
+        "cluster-bound"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Combinatorics.SimpleGraph.Connectivity",
+          "Mathlib.Algebra.BigOperators.Group.Finset.Basic"
+        ],
+        "declarations": [
+          "SimpleGraph.Walk"
+        ],
+        "targets": [
+          "Prove a generic RootedLeafKernelBound from rooted moments and parent-child incompatibility moments.",
+          "Derive the fixed-tree assignment estimate M^(2n+1) * product_v childCount(v)! under explicit nonnegative kernel hypotheses.",
+          "Separate leaf elimination from the later combinatorial sum over rooted tree shapes.",
+          "Normalize child kernels by the positive parent shifted metric and prove exact cancellation of all parent denominators through rooted child counts."
+        ]
+      },
+      "questions": [
+        "Can a parent-dependent moment kernel improve the uniform moment constant?",
+        "Which rooted-tree enumeration gives the sharpest normalized bound compatible with the local kernel?",
+        "Can parent-metric normalization expose a vertexwise walk theorem without introducing a volume-dependent global sum?"
+      ],
+      "references": [
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban I",
+          "url": "https://arxiv.org/abs/1108.1335",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban II",
+          "url": "https://arxiv.org/abs/1212.5562",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "R. P. Stanley — Enumerative Combinatorics, Volume 2",
+          "url": "https://doi.org/10.1017/CBO9780511609589",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "domain.algebraic_quantum_field_theory",
+      "kind": "domain",
+      "title": "Algebraic quantum field theory",
+      "summary": "Studies relativistic quantum fields through nets of local operator algebras, isotony, microcausality, covariance, vacuum structure, modular theory and the time-slice principle rather than through a preferred particle decomposition.",
+      "confidence": "literature",
+      "tags": [
+        "aqft",
+        "operator-algebras",
+        "microcausality",
+        "vacuum"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib"
+        ],
+        "declarations": [],
+        "targets": [
+          "Model two commuting finite-dimensional local algebras and state cyclicity/separation as a bounded prototype.",
+          "Separate algebraic locality from tensor-factor assumptions in every finite formalization."
+        ]
+      },
+      "questions": [
+        "Which AQFT statements can be represented faithfully before type-III von Neumann algebra infrastructure exists in Lean?"
+      ],
+      "references": [
+        {
+          "label": "E. Witten — Notes on Some Entanglement Properties of Quantum Field Theory",
+          "url": "https://arxiv.org/abs/1803.04993",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "R. Haag — Local Quantum Physics",
+          "url": "https://link.springer.com/book/10.1007/978-3-642-61458-3",
+          "type": "book",
+          "scope": "claim"
+        },
+        {
+          "label": "Ancilla mediated steady-state engineering in open quantum systems (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.04905v1",
+          "type": "paper",
+          "scope": "context"
+        },
+        {
+          "label": "Work Extraction Across a Thermodynamic Hierarchy in Quantum Many-Body Systems (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2608.31001v1",
+          "type": "paper",
+          "scope": "context"
+        }
+      ]
+    },
+    {
+      "id": "bridge.localized_homotopy_boundary_defect",
+      "kind": "bridge",
+      "title": "Boundary defect from localizing a homotopy",
+      "summary": "Localizing a global contraction homotopy by a support projector produces an explicit boundary defect built from commutators with that projector. In the ungraded form, the difference between the localized global identity and the localized homotopy is a sum of two commutator terms supported near the boundary.",
+      "confidence": "formal",
+      "tags": [
+        "homotopy",
+        "boundary-defect",
+        "commutator",
+        "localization"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib",
+          "PhysMathKnowledgeTree.Formal.Microtheorems"
+        ],
+        "declarations": [
+          "localizedHomotopyBoundaryDefect"
+        ],
+        "targets": [
+          "Prove the ungraded projector-localization identity in finite linear algebra.",
+          "Add the graded Koszul-sign version only after the degree conventions are fixed."
+        ]
+      },
+      "questions": [
+        "Can a concrete RG-compatible local homotopy and exponentially decaying kernel make the boundary defect small in a polymer metric?"
+      ],
+      "references": [
+        {
+          "label": "M. Doubek, B. Jurčo and J. Pulmann — Quantum L-infinity algebras and the homological perturbation lemma",
+          "url": "https://arxiv.org/abs/1712.02696",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "bridge.yang_mills_critical_dimension",
+      "kind": "bridge",
+      "title": "Four-dimensional Yang–Mills as the marginal dimension",
+      "summary": "Canonical power counting gives [A] = (d-2)/2 and [g] = (4-d)/2 for Yang–Mills. Thus d=4 makes the gauge coupling dimensionless and marginal, distinguishing the four-dimensional problem from superrenormalizable lower dimensions and power-counting nonrenormalizable higher dimensions.",
+      "confidence": "literature",
+      "tags": [
+        "yang-mills",
+        "critical-dimension",
+        "power-counting",
+        "marginality"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib"
+        ],
+        "declarations": [],
+        "targets": [
+          "Formalize the dimensional-analysis equations as rational identities with assumptions clearly separated from the constructive field theory."
+        ]
+      },
+      "questions": [
+        "Which constructive estimates exploit marginal running rather than a fictitious geometrically decaying coupling?"
+      ],
+      "references": [
+        {
+          "label": "A. Jaffe and E. Witten — Quantum Yang-Mills Theory",
+          "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "K. G. Wilson and J. Kogut — The renormalization group and the epsilon expansion",
+          "url": "https://doi.org/10.1016/0370-1573(74)90023-4",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge.analysis.functional_analysis",
+      "source": "domain.analysis",
+      "target": "domain.functional_analysis",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "Analytic estimates become structural in normed and inner product spaces.",
+      "references": [
+        {
+          "label": "J. B. Conway — A Course in Functional Analysis",
+          "url": "https://link.springer.com/book/10.1007/978-1-4757-4383-8",
+          "type": "book",
+          "scope": "claim"
+        },
+        {
+          "label": "T. Tao — Analysis I",
+          "url": "https://terrytao.wordpress.com/books/analysis-i/",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.functional.spectral",
+      "source": "domain.functional_analysis",
+      "target": "domain.spectral_theory",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "Spectral theory studies operators on functional-analytic spaces.",
+      "references": [
+        {
+          "label": "J. B. Conway — A Course in Functional Analysis",
+          "url": "https://link.springer.com/book/10.1007/978-1-4757-4383-8",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.analysis.harmonic",
+      "source": "domain.analysis",
+      "target": "domain.harmonic_analysis",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "Fourier and oscillatory tools refine analytic estimates by scale and frequency.",
+      "references": [
+        {
+          "label": "E. M. Stein — Harmonic Analysis",
+          "url": "https://doi.org/10.1515/9781400883929",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.harmonic.pde",
+      "source": "domain.harmonic_analysis",
+      "target": "domain.pde",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "Frequency decompositions and singular integral estimates control PDE behavior.",
+      "references": [
+        {
+          "label": "E. M. Stein — Harmonic Analysis",
+          "url": "https://doi.org/10.1515/9781400883929",
+          "type": "book",
+          "scope": "claim"
+        },
+        {
+          "label": "L. C. Evans — Partial Differential Equations",
+          "url": "https://bookstore.ams.org/gsm-19-r/",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.probability.pde",
+      "source": "domain.probability_stochastics",
+      "target": "domain.pde",
+      "relation": "bridge",
+      "confidence": "literature",
+      "mechanism": "Stochastic processes model diffusion, random forcing and probabilistic representations of PDE.",
+      "references": [
+        {
+          "label": "L. C. Evans — Partial Differential Equations",
+          "url": "https://bookstore.ams.org/gsm-19-r/",
+          "type": "book",
+          "scope": "claim"
+        },
+        {
+          "label": "O. Kallenberg — Foundations of Modern Probability",
+          "url": "https://link.springer.com/book/10.1007/978-3-030-61871-1",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.pde.navier",
+      "source": "domain.pde",
+      "target": "problem.navier_stokes",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "Navier-Stokes is a central nonlinear PDE regularity problem.",
+      "references": [
+        {
+          "label": "C. Fefferman — Existence and smoothness of the Navier-Stokes equation",
+          "url": "https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "Clay Mathematics Institute — Navier-Stokes Equation",
+          "url": "https://www.claymath.org/millennium/navier-stokes-equation/",
+          "type": "official",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.harmonic.navier",
+      "source": "domain.harmonic_analysis",
+      "target": "problem.navier_stokes",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "Critical spaces and frequency interactions are central in regularity analysis.",
+      "references": [
+        {
+          "label": "C. Fefferman — Existence and smoothness of the Navier-Stokes equation",
+          "url": "https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.probability.navier",
+      "source": "domain.probability_stochastics",
+      "target": "problem.navier_stokes",
+      "relation": "suggests",
+      "confidence": "heuristic",
+      "mechanism": "Stochastic analogues may expose typical cascade behavior or regularization effects.",
+      "references": [
+        {
+          "label": "C. Fefferman — Existence and smoothness of the Navier-Stokes equation",
+          "url": "https://www.claymath.org/wp-content/uploads/2022/06/navierstokes.pdf",
+          "type": "paper",
+          "scope": "context"
+        },
+        {
+          "label": "O. Kallenberg — Foundations of Modern Probability",
+          "url": "https://link.springer.com/book/10.1007/978-3-030-61871-1",
+          "type": "book",
+          "scope": "context"
+        }
+      ]
+    },
+    {
+      "id": "edge.qft.constructive_qft",
+      "source": "domain.quantum_field_theory",
+      "target": "domain.constructive_quantum_field_theory",
+      "relation": "specializes",
+      "confidence": "literature",
+      "mechanism": "Constructive QFT restricts quantum field theory to models built and controlled by explicit analytic and probabilistic estimates.",
+      "references": [
+        {
+          "label": "J. Glimm and A. Jaffe — Quantum Physics: A Functional Integral Point of View",
+          "url": "https://link.springer.com/book/10.1007/978-1-4612-4728-9",
+          "type": "book",
+          "scope": "claim"
+        },
+        {
+          "label": "R. Haag — Local Quantum Physics",
+          "url": "https://link.springer.com/book/10.1007/978-3-642-61458-3",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.analysis.constructive_qft",
+      "source": "domain.analysis",
+      "target": "domain.constructive_quantum_field_theory",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "Constructive field theory relies on integration, functional inequalities, operator bounds and convergence estimates.",
+      "references": [
+        {
+          "label": "J. Glimm and A. Jaffe — Quantum Physics: A Functional Integral Point of View",
+          "url": "https://link.springer.com/book/10.1007/978-1-4612-4728-9",
+          "type": "book",
+          "scope": "claim"
+        },
+        {
+          "label": "T. Tao — Analysis I",
+          "url": "https://terrytao.wordpress.com/books/analysis-i/",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.probability.constructive_qft",
+      "source": "domain.probability_stochastics",
+      "target": "domain.constructive_quantum_field_theory",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "Euclidean field measures, Gaussian integration and stochastic estimates provide the probabilistic substrate for constructive models.",
+      "references": [
+        {
+          "label": "J. Glimm and A. Jaffe — Quantum Physics: A Functional Integral Point of View",
+          "url": "https://link.springer.com/book/10.1007/978-1-4612-4728-9",
+          "type": "book",
+          "scope": "claim"
+        },
+        {
+          "label": "O. Kallenberg — Foundations of Modern Probability",
+          "url": "https://link.springer.com/book/10.1007/978-3-030-61871-1",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.qft.renormalization_group",
+      "source": "domain.quantum_field_theory",
+      "target": "domain.renormalization_group",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "Renormalization organizes how effective field-theory parameters and interactions change across scales.",
+      "references": [
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban I",
+          "url": "https://arxiv.org/abs/1108.1335",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban III",
+          "url": "https://arxiv.org/abs/1304.0705",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.analysis.renormalization_group",
+      "source": "domain.analysis",
+      "target": "domain.renormalization_group",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "Multiscale estimates and stability bounds are the analytic core of rigorous renormalization iterations.",
+      "references": [
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban I",
+          "url": "https://arxiv.org/abs/1108.1335",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.constructive_qft.cluster_holes",
+      "source": "domain.constructive_quantum_field_theory",
+      "target": "bridge.cluster_expansion_with_holes",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "Cluster expansions with holes provide a locality-preserving compiler from raw activities to connected effective activities.",
+      "references": [
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban I",
+          "url": "https://arxiv.org/abs/1108.1335",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban II",
+          "url": "https://arxiv.org/abs/1212.5562",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.rg.cluster_holes",
+      "source": "domain.renormalization_group",
+      "target": "bridge.cluster_expansion_with_holes",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "The holes and active skeletons encode scale-dependent excluded regions and the local geometry of an RG step.",
+      "references": [
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban I",
+          "url": "https://arxiv.org/abs/1108.1335",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban II",
+          "url": "https://arxiv.org/abs/1212.5562",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.cluster_holes.ym_rg_activity",
+      "source": "bridge.cluster_expansion_with_holes",
+      "target": "problem.uniform_yang_mills_rg_activity",
+      "relation": "transfers_via",
+      "confidence": "literature",
+      "mechanism": "Once a raw gauge activity is bounded, the connected-cover and Ursell machinery transfers it to a renormalized modified-metric profile.",
+      "references": [
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban II",
+          "url": "https://arxiv.org/abs/1212.5562",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban III",
+          "url": "https://arxiv.org/abs/1304.0705",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.rg.ym_rg_activity",
+      "source": "domain.renormalization_group",
+      "target": "problem.uniform_yang_mills_rg_activity",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "The desired activity is a local output of one renormalization step and must be stable under subsequent scale iteration.",
+      "references": [
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban I",
+          "url": "https://arxiv.org/abs/1108.1335",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban II",
+          "url": "https://arxiv.org/abs/1212.5562",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.functional.block_coercivity",
+      "source": "domain.functional_analysis",
+      "target": "bridge.block_average_coercivity",
+      "relation": "formalizes_as",
+      "confidence": "formal",
+      "mechanism": "Adjoints, positive operators and Poincare inequalities turn block averaging into a quantitative lower bound for the precision.",
+      "references": [
+        {
+          "label": "J. B. Conway — A Course in Functional Analysis",
+          "url": "https://link.springer.com/book/10.1007/978-1-4757-4383-8",
+          "type": "book",
+          "scope": "claim"
+        },
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban I",
+          "url": "https://arxiv.org/abs/1108.1335",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.block_coercivity.ym_rg_activity",
+      "source": "bridge.block_average_coercivity",
+      "target": "problem.uniform_yang_mills_rg_activity",
+      "relation": "suggests",
+      "confidence": "heuristic",
+      "mechanism": "Coercivity is a prerequisite for a bounded covariance, but the source gauge slice and block Poincare estimate must still be proved.",
+      "references": [
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban I",
+          "url": "https://arxiv.org/abs/1108.1335",
+          "type": "paper",
+          "scope": "context"
+        },
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban II",
+          "url": "https://arxiv.org/abs/1212.5562",
+          "type": "paper",
+          "scope": "context"
+        }
+      ]
+    },
+    {
+      "id": "edge.rg.lattice_scaling",
+      "source": "domain.renormalization_group",
+      "target": "bridge.lattice_physical_scaling",
+      "relation": "formalizes_as",
+      "confidence": "formal",
+      "mechanism": "A renormalization step changes lattice spacing and dimensionless decay rates while preserving the corresponding physical exponent when scales are transformed consistently.",
+      "references": [
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban I",
+          "url": "https://arxiv.org/abs/1108.1335",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "K. G. Wilson and J. Kogut — The renormalization group and the epsilon expansion",
+          "url": "https://doi.org/10.1016/0370-1573(74)90023-4",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.constructive_qft.ym_rg_activity",
+      "source": "domain.constructive_quantum_field_theory",
+      "target": "problem.uniform_yang_mills_rg_activity",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "The problem asks for a constructive, support-local and quantitatively uniform realization of a gauge-theory RG step.",
+      "references": [
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban I",
+          "url": "https://arxiv.org/abs/1108.1335",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "J. Glimm and A. Jaffe — Quantum Physics: A Functional Integral Point of View",
+          "url": "https://link.springer.com/book/10.1007/978-1-4612-4728-9",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.constructive_qft.polymer_expansions",
+      "source": "domain.constructive_quantum_field_theory",
+      "target": "domain.polymer_cluster_expansions",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "Constructive field theory uses polymer gases and connected cluster expansions to localize interactions and control extensive partition functions.",
+      "references": [
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban I",
+          "url": "https://arxiv.org/abs/1108.1335",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban III",
+          "url": "https://arxiv.org/abs/1304.0705",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.rg.polymer_expansions",
+      "source": "domain.renormalization_group",
+      "target": "domain.polymer_cluster_expansions",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "Rigorous renormalization steps encode local remainders as polymer activities and reconstruct effective actions with connected expansions.",
+      "references": [
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban I",
+          "url": "https://arxiv.org/abs/1108.1335",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban III",
+          "url": "https://arxiv.org/abs/1304.0705",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.polymer.cluster_holes",
+      "source": "domain.polymer_cluster_expansions",
+      "target": "bridge.cluster_expansion_with_holes",
+      "relation": "specializes",
+      "confidence": "literature",
+      "mechanism": "The with-holes construction specializes polymer and Ursell methods to active skeletons, full target unions and a modified metric.",
+      "references": [
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban I",
+          "url": "https://arxiv.org/abs/1108.1335",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban II",
+          "url": "https://arxiv.org/abs/1212.5562",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.rg.rooted_leaf",
+      "source": "domain.renormalization_group",
+      "target": "bridge.rooted_leaf_factorial_moments",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "Constructive renormalization estimates orient trees and eliminate local variables using summable parent-child kernels and rooted moments.",
+      "references": [
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban I",
+          "url": "https://arxiv.org/abs/1108.1335",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.qft.aqft",
+      "source": "domain.quantum_field_theory",
+      "target": "domain.algebraic_quantum_field_theory",
+      "relation": "specializes",
+      "confidence": "literature",
+      "mechanism": "AQFT specializes relativistic quantum field theory to a net of local operator algebras with causal and covariance axioms.",
+      "references": [
+        {
+          "label": "E. Witten — Notes on Some Entanglement Properties of Quantum Field Theory",
+          "url": "https://arxiv.org/abs/1803.04993",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.functional.aqft",
+      "source": "domain.functional_analysis",
+      "target": "domain.algebraic_quantum_field_theory",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "AQFT relies on Hilbert spaces, operator algebras, cyclic vectors and modular structures from functional analysis.",
+      "references": [
+        {
+          "label": "E. Witten — Notes on Some Entanglement Properties of Quantum Field Theory",
+          "url": "https://arxiv.org/abs/1803.04993",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.rg.localized_homotopy_defect",
+      "source": "domain.renormalization_group",
+      "target": "bridge.localized_homotopy_boundary_defect",
+      "relation": "uses",
+      "confidence": "formal",
+      "mechanism": "Restricting a global homotopy to an active RG region produces commutators with the region projector and hence an explicit boundary term.",
+      "references": [
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban I",
+          "url": "https://arxiv.org/abs/1108.1335",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "M. Doubek, B. Jurčo and J. Pulmann — Quantum L-infinity algebras and the homological perturbation lemma",
+          "url": "https://arxiv.org/abs/1712.02696",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.localized_homotopy.ym_activity",
+      "source": "bridge.localized_homotopy_boundary_defect",
+      "target": "problem.uniform_yang_mills_rg_activity",
+      "relation": "suggests",
+      "confidence": "speculative",
+      "mechanism": "A concrete local BRST or BV homotopy could isolate a boundary-supported remainder before norms are taken.",
+      "notes": "Falsifier: abandon this edge unless an explicit gauge-compatible differential, homotopy kernel, support theorem and polymer-norm estimate are constructed.",
+      "references": [
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban I",
+          "url": "https://arxiv.org/abs/1108.1335",
+          "type": "paper",
+          "scope": "context"
+        },
+        {
+          "label": "M. Doubek, B. Jurčo and J. Pulmann — Quantum L-infinity algebras and the homological perturbation lemma",
+          "url": "https://arxiv.org/abs/1712.02696",
+          "type": "paper",
+          "scope": "context"
+        }
+      ]
+    },
+    {
+      "id": "edge.rg.ym_critical_dimension",
+      "source": "domain.renormalization_group",
+      "target": "bridge.yang_mills_critical_dimension",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "Marginality in four dimensions forces logarithmic running and scale-by-scale control rather than a superrenormalizable power gain.",
+      "references": [
+        {
+          "label": "A. Jaffe and E. Witten — Quantum Yang-Mills Theory",
+          "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.ym_critical_dimension.rg_activity",
+      "source": "bridge.yang_mills_critical_dimension",
+      "target": "problem.uniform_yang_mills_rg_activity",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "A uniform one-step activity theorem must respect marginal coupling flow rather than assume geometric decay of the coupling.",
+      "references": [
+        {
+          "label": "A. Jaffe and E. Witten — Quantum Yang-Mills Theory",
+          "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    }
+  ],
+  "canonical_graph_sha256": {
+    "nodes": "d9d284363730558ecf3dd095b11d6f2cfacd113519ef832ae61535ea48a2b6c1",
+    "edges": "308897f439d817cbdadc51b8bf9e42299d806fa1f663c5ffcf794ba93ca74dfe"
+  },
+  "scope": "Context only; no graph edge, confidence or solved-status changes"
+}
