@@ -27,7 +27,28 @@
         13,
         15,
         20
-      ]
+      ],
+      "rate_eq_2_38": "(1-8 delta)*(L/2)*kappa*d_(k+1)(Z)",
+      "rate_corrigendum1423": {
+        "observed_on": "2026-10-30",
+        "source_pages_rechecked": [
+          19,
+          20,
+          21
+        ],
+        "visual_pages": [
+          20,
+          21
+        ],
+        "previous_note_error": "Read printed fraction1/2 as sqrt and incorrectly attributed a transcription error to programme prose.",
+        "withdrawn_claim": "Programme factor(1-8delta)*(1/2) was erroneous; that factor actually agrees with the source.",
+        "cross_checks": [
+          "Eq2.36 factor2 in scale comparison",
+          "Eq2.41 normalization (1-10delta)*(L/2)=1 and delta=(1-2/L)/10"
+        ],
+        "effect": "Correct source rate and attribution; symbolic conditional active-support proof unchanged; no new source theorem/refutation/formal result.",
+        "historical_error_preserved": "Original committed note and original private reading checkpoints retained, not rewritten."
+      }
     },
     {
       "source": "Balaban CMP119",
