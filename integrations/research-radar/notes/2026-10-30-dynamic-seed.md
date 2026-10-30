@@ -14,7 +14,7 @@ The yin-yang image motivates a model-selection question: can a dominant regime g
 - Hypothesis to remove: reciprocal conversion alone forces cycling, or the visible fraction always closes as an autonomous scalar equation.
 - Falsifier: the first assertion fails in a positive linear conversion model; the second fails for two explicit reservoir states below. A proposed natural-system application is abandoned if its independently measured reserve adds no out-of-sample predictive value or its controlled removal/restoration has no predicted causal effect.
 - Minimal formal target: prove the rational nonclosure witness and the scalar uniqueness obstruction. Neither has been added to Lean here.
-- Next finite task: select one system with independently measurable balance, reserve and input; compare matched-complexity balance-only, memory, forcing and stochastic baselines before any causal intervention or novelty claim.
+- Next finite task: audit calibrated bromide/catalyst observations in the concrete chemical case below; compare against catalyst history, inputs and noise with matched complexity before any causal or novelty claim.
 
 ## Two obstructions and a model that can cycle
 
@@ -51,9 +51,34 @@ Set A=0. Then c'=-x<=0. A nonnegative periodic trajectory would satisfy integral
 
 [Exact reservoir checks](../evidence/2026-10-30-dynamic-seed1356/CHECK1355.json) verify identities and rational witnesses. No simulation, chemical experiment, full nonlinear bifurcation proof or general empirical discovery follows.
 
+## A concrete chemical case: regeneration capacity rather than a pre-existing amount
+
+Field–Noyes1974 connects two reaction regimes through bromide consumption and regeneration involving an oxidized catalyst. Its selected dimensional equationsIa–Ic describe three intermediates: X is bromous acid, Y bromide, and Z oxidized cerium. Constant reservoirs and irreversible kinetics are model assumptions; illustrative parameters are not a quantitative experimental fit certified here. A selected original1972abstract excerpt reports potentiometric tracking of bromide and oxidized cerium; calibration and raw curves were not inspected.
+
+Write the dimensional model as
+
+    X'=aY-bXY+cX-dX²
+    Y'=-aY-bXY+eZ
+    Z'=cX-hZ,
+
+where a=kM1*A, b=kM2, c=kM3*B, d=2*kM4, e=f*kM5 and h=kM5 are positive. The following are our exact local calculations in that stated model, not newly discovered chemistry.
+
+First, d(X')/dY=a-bX changes sign at X=a/b. With mathematical normalization a=b=1 it is +1/2 at X=1/2 and -1 at X=2. Calling bromide an invariably opposing force therefore loses state information; these are normalized algebraic witnesses, not measured concentrations.
+
+Second, at Y0=Z0=0 and X0>0, Y'(0)=0, Z'(0)=cX0 and Y''(0)=ecX0>0. Smoothness gives Y(t)=ecX0*t²/2+O(t³): Y can recover locally through X→Z→Y despite its initial absence. A positive initial Y population is not necessary for this LOCAL recovery. If all three states are zero they remain at equilibrium. An exact continuum boundary is not a claim about discrete noisy molecule counts. Neither calculation proves sustained cycling, a nonlinear bifurcation or a natural-system causal effect. [Exact own checks and provenance](../evidence/2026-10-30-bromide1360/README.md) keep these limits separate from source reading.
+
+For the analogy, the two poles map to dominant regimes and the seed to a regeneration pathway. Regime-dependent feedback is preserved; complementary conserved substances, geometric symmetry and fundamental-force interpretations are lost. This known classical mechanism and its timing constraints defeat novelty-by-renaming, so that route is abandoned rather than made into a separate paper.
+
+The remaining speculative application must test whether a separately calibrated Y signal improves reversal forecasts beyond the HISTORY of Z, forcing and noise with comparable model complexity and splits by experiment. Comparing Y with one instantaneous color sample is insufficient. Measurement selectivity and other states remain unresolved; prediction is distinct from controlled causal perturbation. Abandon the application if the incremental effect disappears or an appropriately controlled intervention contradicts the model in its valid domain. No experiment, data download, new manuscript review or score was performed here.
+
 ## Source scope, novelty and assessment context
 
 - R. Lefever, G. Nicolis and P. Borckmans, The brusselator: it does oscillate all the same, J. Chem. Soc. Faraday Trans.1 84 (1988),1013–1023, [DOI10.1039/F19888401013](https://doi.org/10.1039/F19888401013). Abstract read: model oscillation is compatible with equilibrium detailed balance and closed-system mass conservation; it discusses elementary reaction realizations. Full proof not audited. Publisher open returned403; an institutional copy was identified without bypassing that restriction.
 - J. A. C. Gallas, Periodic oscillations of the forced Brusselator, Modern Physics Letters B29 (2015),1530018, [DOI10.1142/S0217984915300185](https://doi.org/10.1142/S0217984915300185), [author copy](https://inaesp.org/PublicJG/gallas_periodic_osc_of_forced_brusselator_MPLB2015.pdf). Header and selected equations(1)–(4) read through primary search extracts. Header states publication30December2015; first-preprint date unverified. Forced oscillation diagrams and complete proof were not audited. Newly indexed here does not mean newly published.
 
 Response hashes are recorded in the [evidence packet](../evidence/2026-10-30-dynamic-seed1356/README.md); bodies, foreign figures and the supplied book image are not redistributed. Bibliography status remains separate from exact own algebra. Literature/heuristic/speculative labels are retained; there is no formal Lean result, manuscript/PDF assessment, model score, independent referee certification or editorial decision for this note. Earlier manuscripts and their actual reports remain unchanged. A meaningful new discovery would require a defined system, novel independently tested mechanism and a primary antecedent audit. This note keeps the failed unconditional-cycling and fraction-only routes together rather than fragmenting minor papers.
+
+Additional classical primary sources for the concrete case:
+
+- Field, Körös and Noyes, JACS94 (1972),8649–8664, [DOI10.1021/ja00780a001](https://doi.org/10.1021/ja00780a001). Publisher bibliography and an indexed original abstract excerpt only; no full experimental audit. Use year1972: publisher issue-day1December conflicts with indexed first-page13December; exact day unresolved. Online2002 is not treated as the original publication.
+- Field and Noyes, JCP60(5) (1974),1877–1884, [DOI10.1063/1.1681288](https://doi.org/10.1063/1.1681288), [selected primary copy](https://www.math.us.edu.pl/mtyran/dydaktyka/biomatematyka/field_noyes_1974.pdf). Published1March1974; received23July1973. Selected indexed SectionsII–III/Ia–Ic, not the whole8pages, original integrations or a proof audit. Direct access failed and ambiguous dimensionless OCR was excluded; no paywall bypass or fabricated PDF hash.

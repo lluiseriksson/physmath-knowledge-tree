@@ -195,3 +195,5 @@ Fixed-channel entropy: [local kernel, preserved correction, and scoped boundary/
 ## Reciprocal transformation and observable closure
 
 The [combined dynamic-seed note](notes/2026-10-30-dynamic-seed.md) checks why reciprocal production need not cycle, how a hidden measurable total can reverse the direction at equal visible balance, and where supply is indispensable in the chosen reservoir model. Known models and exact own algebra remain separate from the speculative natural-system application; no new paper, assessment or formal confidence is assigned.
+
+The same [dynamic-seed note](notes/2026-10-30-dynamic-seed.md) now includes a concrete classical bromide-regeneration case, state-dependent response and a local recovery calculation. Its [scoped evidence](evidence/2026-10-30-bromide1360/README.md) separates known chemical mechanisms, source-access limits and untested predictive/causal applications; no new paper or score follows.
