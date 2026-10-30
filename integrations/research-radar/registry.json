@@ -840,12 +840,12 @@
       "id": "gao-cp-order-2025-scoped",
       "title": "Complete positivity order and relative entropy decay",
       "url": "https://doi.org/10.1017/fms.2024.117",
-      "kind": "preprint",
-      "observed_on": "2026-10-27",
+      "kind": "journal_article",
+      "observed_on": "2026-10-30",
       "reading_status": "selected_sections_read",
       "evidence": "literature",
-      "claim": "Selected Theorem2.5 statement and proof uses conditional expectation/multiplicative domain and CP return time. Audit942 checked a printed orientation issue in Eq2.6 against an exact diagonal example and the earlier correct lemma.",
-      "limits": "Erratum observation concerns the literal printed line, not refutation of the theorem. Does not establish originality of our sharp restricted MI constant; selected reading only.",
+      "claim": "Editorial publication6February2025, Forum of Mathematics,Sigma13:e31. Audit942 already read Theorem2.5 statement/displayed proof; the subsequent bounded comparison reads Lemma2.1/Theorem2.5 statements/displayed proofs and Theorem4.8 statement/context. Complete contraction relative to a multiplicative-domain conditional expectation and CP return time is prior work.",
+      "limits": "Selected reading only, not a full paper or Haagerup-reduction proof audit. No direct reduction of arbitrary channel-pair comparison925/929 or global originality established. Preserve942 printed Eq2.6 orientation diagnostic; it does not refute the theorem. Editorial date is not asserted as first-preprint date.",
       "reuse": "Bibliographic metadata and original synthesis only; no foreign full text, training authorization or global-priority certificate.",
       "anchors": [
         "domain.quantum_information_theory"
@@ -2024,7 +2024,8 @@
         "han-li-ad-2026-scoped",
         "iyer-riemannian-v2-scoped",
         "hirche-conditional-2026-scoped",
-        "laracuente-robustness-v1-scoped"
+        "laracuente-robustness-v1-scoped",
+        "gao-cp-order-2025-scoped"
       ],
       "node_ids": [
         "domain.quantum_information_theory"
@@ -2034,7 +2035,7 @@
       "lost_or_unproved": "Global novelty unresolved; no sharp kernel comparison constant or capacity/additivity conclusion.931 supports925/929 with strict Choi faithfulness, support compression and full-rank-input restrictions for general Petz divergences. Noninjective arbitrary perturbation robustness is refuted.",
       "hypothesis_to_remove": "914 avoids small perturbation under finite nilpotency;925 proposes eliminating nilpotency and the jump-filter identity in a distinct strict-Choi regime, with kernel inclusion retained.",
       "falsifier": "A valid-assumption counterexample to a metric step refutes the mechanism. Missing kernel inclusion already has an exact dephasing counterexample. A covering antecedent defeats novelty, not algebraic validity.",
-      "next_finite_task": "Full923 is terminal and published with all objections;931 supports925/929 under strict Choi/support hypotheses. Compare remaining prior art and address novelty/operational limitations before any strengthened exact-PDF manuscript assessment.",
+      "next_finite_task": "Full923 is terminal and published; unscored931 supports925/929 under strict Choi/support hypotheses. Existing Gao CP-order source is deduplicated:942 already read Theorem2.5; selected2.1/2.5/4.8 comparison now retained in the complete-noise note. No direct arbitrary-pair reduction or priority established. Further work requires a concrete operational question or additional hypothesis reduction; no repeat component review or generic bibliographic/finite-sampling loop.",
       "review_packet": "Exact eight-page nilpotent PDF96d340... has full923 global4.00/10 and significance2/5, allO1-O8 retained, not an official/editorial score; no combined technical score. Published Working paper ARR-2026-5A13QJ5MZ98GWVFBv1. Separate931 validates925 kernel criterion and929 Petz extension without grade; does not subsume singular-Choi AD. Both requested Astra xhigh, runtime/independence unattested."
     },
     {
