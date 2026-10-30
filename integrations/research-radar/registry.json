@@ -1686,7 +1686,7 @@
       "reading_status": "selected_sections_read",
       "evidence": "literature",
       "claim": "Claims a fixed polynomial-resource matrix query for bounded-size affine noncommutative ABPs, using a universal cyclic frame and coefficient-dual readouts.",
-      "limits": "Selected characteristic-zero core statements and proof steps read. The cited formal repository returned 404 through two primary access paths; source HEAD, statement map, dependency pins and kernel build remain unverified. No scalar commutative/general-circuit PIT, unrestricted rational-formula, peer-review or priority conclusion is imported. First preprint is 11 October, not the 30 October listing.",
+      "limits": "Selected characteristic-zero core statements and proof steps read. The cited formal repository returned 404 through two primary access paths; source HEAD, statement map, dependency pins and kernel build remain unverified. No scalar commutative/general-circuit PIT, unrestricted rational-formula, peer-review or priority conclusion is imported. First preprint is 11 October, not the 30 October listing. A separate own scope control shows that identity hitting does not itself certify uniform positivity; optional Hermitian replacements can also lose rational-domain admissibility. It does not refute the source theorem.",
       "reuse": "Bibliographic metadata and own scope synthesis only; no manuscript, source code or model-assessment report redistributed.",
       "anchors": [
         "domain.complexity_theory",
@@ -1713,7 +1713,8 @@
           "Corollary 4.7"
         ],
         "reading_status": "Selected oracle definition and statement only."
-      }
+      },
+      "scope_control": "integrations/research-radar/evidence/2026-10-30-pit-order-domain-scope/README.md"
     }
   ],
   "candidates": [
