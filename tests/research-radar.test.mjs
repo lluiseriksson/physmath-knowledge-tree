@@ -11,7 +11,7 @@ const nodes = read('../graph/nodes/core.json').map((node) => node.id);
 
 test('radar snapshots reconcile source scopes, graph anchors and catalogue counts', () => {
   assert.deepEqual(validateResearchRadar(registry, catalogue, inventory, nodes), {
-    sources: 103, candidates: 18, families: 373, manuscripts: 721, repositories: 29,
+    sources: 107, candidates: 19, families: 373, manuscripts: 721, repositories: 29,
   });
   assert.equal(catalogue.withdrawal_notices.titles.length, 3);
 });
