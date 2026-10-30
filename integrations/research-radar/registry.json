@@ -2041,7 +2041,7 @@
     {
       "id": "sharp-separable-reset-depth",
       "title": "Reference-assisted contraction: sharp separable reset and complete SLD candidates",
-      "status": "under_audit",
+      "status": "queued",
       "confidence": "speculative",
       "paper_score": null,
       "source_ids": [
@@ -2065,21 +2065,39 @@
       ],
       "dictionary": "The uniform Pauli twirl kills same-reference differences, allowing harmonic coefficient cancellation in positive inverse quadratic forms. A two-support A2R3 ladder maps the limiting Sylvester system to the same harmonic expression; signed qubit normal form maps Pauli probabilities to normalized Choi eigenvalues.",
       "preserved": "Every finite reference and equal-reference constraint, faithful finitePetz pairs, positive weights for the direct interior argument, ordered t/xi/epsilon limits. Boundary channel regularization is separate. Actual-product MI and complete two-state coefficients stay distinct.",
-      "lost_or_unproved": "988supports979/981 and separately delivered991/993 within hypotheses, without a manuscript score.997proposes allPauli/allunitalSLD, minimalchi-square and triangularPetz exactness but remains unaudited. BKM/Umegaki1/3 remains open; no nonunital/higherWeyl/capacity/tensorization result, minimum reference dimension or worldwide originality.",
-      "hypothesis_to_remove": "997seeks to eliminate isotropy from the exactSLD993result; signed normal form then eliminates a preferred Pauli basis for unitalqubit channels. This does not eliminate the metric restriction or solve the separate BKM problem.",
-      "falsifier": "Invalid Sylvester/block/regularization identities or a valid-assumption pair exceedingh refute997. A BKM tangent exceeding1/3 refutes971, whereas991Petz does not. A covering earlier theorem defeats novelty. Preserve989centering barrier and exact991failed variance route.",
-      "next_finite_task": "Do not restart review998/1006 or redeposit995/1005: corrected1005 is already public with its exact report/context. Any future substantive997/1003 extension needs separate proof/source audit and an exact new artifact before review/publication; preserve all prior failures/objections, do not reuse the old grade or fragment minor lemmas into papers.",
-      "review_packet": "Historical995 PDF37926f59287d95e7eb2c005713504d7339e1142a170f70ba1f8cb2734caf7db3 has terminal fullreview998: importance4.3,global4.4,technical8.6,minor_revision_before_publication. Corrected eight-page1005 PDFb4728f44f7af59809be26e0eba957336695ff34cfc3cb10c17fcfa06ffb93381 has terminal full/currentreview1006 explicitly reaffirming4.3/4.4/8.6 after exact-PDF inspection; not automatic transfer and not another current vote. Published Working paper ARR-2026-77DGRYDGXD8MDSY2v1, not Accepted; exact public PDF and both public reports byte-verified1203. RequestedAstraxhigh; reused952/998context/sharedfilesystem; effective identity,effort,blinding,independence unattested. Original998 objections retained; O1-O5 resolution belongs to1006 only and does not resolve CQv3 review1168 Lee-MakurO1. Unreviewed997/1003 extensions are outside this PDF and inherit no grade.",
+      "lost_or_unproved": "Terminal unscored1012 supports997/1003 under the stated metric, normalization and support restrictions. The evolving project has a reviewed public23pagev4, not an active997audit. Unrestricted BKM/Umegaki/actual-MI optima, nonunital classification, capacity/tensorization, minimal reference resources and worldwide originality do not follow.",
+      "hypothesis_to_remove": "Isotropy is already removed within the unital-qubit SLD/minimal-chi-square/triangular result by997 and terminal1012, with prior signed normal form. A new task must identify a substantive additional hypothesis or operational mechanism; the metric and resource restrictions remain.",
+      "falsifier": "Retain original block/Sylvester/regularization, centering and failed variance controls and all1012/1084objections. A covering earlier theorem defeats novelty; an applicable exact counterexample defeats only the stated scoped claim. Do not reinterpret later full reviews as independent votes or settled capacity/robustness claims.",
+      "next_finite_task": "997/1003component audit1012 and subsequent manuscript chain through exact1083/full1084/publicv4 are CLOSED. Do not restart reviews998/1006/1012/1084, repeat controls, redeposit or inherit a grade. Further research requires a defined additional hypothesis reduction or operational mechanism with resource/input quantifiers and a falsifier. Precise Lee-Makur full-text coverage remains unresolved; metadata and failed access do not establish priority.",
+      "review_packet": "Current23page1083PDF255ca15a68df24944e2f3623265e9912ca7cad1d75e96074fadb304c0f83eb7e has terminal full1084 native reportdc668797009a6a368e8ec8e775360fb36cbd5feb227dd786bf50cf65713abf4d and allO1-O6, linked through the classical-reference note and exact publicv4 Model assessments context. Historical995/1005and1031/1042/1048 reports concern predecessors; no inheritance or extra current votes. RequestedAstraxhigh,reused952/1048context/sharedfilesystem; effective identity,effort,isolation,independence unattested. Working paper, not Accepted or independent human peer review. Earlier1012is component-only and unscored.",
       "historical_review_packet_before1203": "One full exact9page review958 is terminal: importance4.0, global4.5, technical8.5, original minor_revision. Exact PDF5542d250... has public Working-paper release ARR-2026-0JN84GQ1MD8FW9WRv1; not Accepted. Same-review967 is format-only, not another vote; O1 unchanged and clarified nonblocking minor bibliographic revision. Effective identity/independence unattested. Audit952 is terminal for950; full958 covers955. Later977/979/981/983 are NOT part of exact957, its review958, or its scores. No scientific review of these later derivations has been obtained. Later988 is terminal, component-only and unscored:979/981valid,991certificates and993SLDsharpness supported; all objections retained, reused942context/sharedfilesystem, identity and independence unverified. Exactsevenpage995PDF37926f... has one full998review in progress with reused952context; no score available.997is outside995 and has no review or grade.",
-      "status_note": "under_audit refers only to later997/1003 research extensions. The995/1005 publication and998/1006 review chain are closed, not active tasks.",
+      "status_note": "queued denotes a future substantive research mechanism, not a pending review/publication of997/1003or1083. Historical snapshots remain preserved; no canonical confidence upgrade or new score.",
       "current_publication": {
-        "url": "https://airr.science/papers/ARR-2026-77DGRYDGXD8MDSY2/versions/v1/#model-assessments",
-        "pdf_sha256": "b4728f44f7af59809be26e0eba957336695ff34cfc3cb10c17fcfa06ffb93381",
-        "full_review": "1006",
-        "report_sha256": "b179331da60c87e842db4156280f9ac90430de85d4daa0a5e18073c9f4ce15eb",
+        "url": "https://airr.science/papers/ARR-2026-77DGRYDGXD8MDSY2/versions/v4/#model-assessments",
+        "pdf_sha256": "255ca15a68df24944e2f3623265e9912ca7cad1d75e96074fadb304c0f83eb7e",
+        "full_review": "1084",
+        "report_sha256": "dc668797009a6a368e8ec8e775360fb36cbd5feb227dd786bf50cf65713abf4d",
         "review_status": "terminal",
         "one_current_vote": true,
         "working_paper_not_accepted": true
+      },
+      "historical_snapshot_before1376": {
+        "status": "under_audit",
+        "lost_or_unproved": "988supports979/981 and separately delivered991/993 within hypotheses, without a manuscript score.997proposes allPauli/allunitalSLD, minimalchi-square and triangularPetz exactness but remains unaudited. BKM/Umegaki1/3 remains open; no nonunital/higherWeyl/capacity/tensorization result, minimum reference dimension or worldwide originality.",
+        "hypothesis_to_remove": "997seeks to eliminate isotropy from the exactSLD993result; signed normal form then eliminates a preferred Pauli basis for unitalqubit channels. This does not eliminate the metric restriction or solve the separate BKM problem.",
+        "falsifier": "Invalid Sylvester/block/regularization identities or a valid-assumption pair exceedingh refute997. A BKM tangent exceeding1/3 refutes971, whereas991Petz does not. A covering earlier theorem defeats novelty. Preserve989centering barrier and exact991failed variance route.",
+        "next_finite_task": "Do not restart review998/1006 or redeposit995/1005: corrected1005 is already public with its exact report/context. Any future substantive997/1003 extension needs separate proof/source audit and an exact new artifact before review/publication; preserve all prior failures/objections, do not reuse the old grade or fragment minor lemmas into papers.",
+        "review_packet": "Historical995 PDF37926f59287d95e7eb2c005713504d7339e1142a170f70ba1f8cb2734caf7db3 has terminal fullreview998: importance4.3,global4.4,technical8.6,minor_revision_before_publication. Corrected eight-page1005 PDFb4728f44f7af59809be26e0eba957336695ff34cfc3cb10c17fcfa06ffb93381 has terminal full/currentreview1006 explicitly reaffirming4.3/4.4/8.6 after exact-PDF inspection; not automatic transfer and not another current vote. Published Working paper ARR-2026-77DGRYDGXD8MDSY2v1, not Accepted; exact public PDF and both public reports byte-verified1203. RequestedAstraxhigh; reused952/998context/sharedfilesystem; effective identity,effort,blinding,independence unattested. Original998 objections retained; O1-O5 resolution belongs to1006 only and does not resolve CQv3 review1168 Lee-MakurO1. Unreviewed997/1003 extensions are outside this PDF and inherit no grade.",
+        "status_note": "under_audit refers only to later997/1003 research extensions. The995/1005 publication and998/1006 review chain are closed, not active tasks.",
+        "current_publication": {
+          "url": "https://airr.science/papers/ARR-2026-77DGRYDGXD8MDSY2/versions/v1/#model-assessments",
+          "pdf_sha256": "b4728f44f7af59809be26e0eba957336695ff34cfc3cb10c17fcfa06ffb93381",
+          "full_review": "1006",
+          "report_sha256": "b179331da60c87e842db4156280f9ac90430de85d4daa0a5e18073c9f4ce15eb",
+          "review_status": "terminal",
+          "one_current_vote": true,
+          "working_paper_not_accepted": true
+        }
       }
     },
     {
