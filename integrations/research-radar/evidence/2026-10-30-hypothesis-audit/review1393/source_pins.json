@@ -1,0 +1,44 @@
+{
+  "schema": "review-source-pins-v1",
+  "retrieved_date_utc": "2026-10-30",
+  "sources": [
+    {
+      "author": "Motohisa Fukuda",
+      "retrieval": "Read using the web tool; separately saved the exact version URL with Invoke-WebRequest.",
+      "passages_read": [
+        "Definitions and lemma/proof, equations 1-10",
+        "Remark immediately following the lemma",
+        "Canonical qubit setup, equations 17-19",
+        "Examples c), d), e), equations 20-27"
+      ],
+      "snapshot_sha256": "e37ab2db8dc2cfc12a00e7b41050e3dc99aa5f6117ba849015dda7bf6014d91f",
+      "version_pinned": "v4",
+      "not_audited": [
+        "Whole article and all examples",
+        "Referenced papers and their proofs",
+        "Full converse claims in examples",
+        "Historical priority or novelty",
+        "Publication history or version dates beyond version identifier"
+      ],
+      "id": "Fukuda-quant-ph-0505022v4",
+      "uses": [
+        "Covariance and pure-output hypotheses versus optimizer-matching remark",
+        "Choi determinant context",
+        "Comparison with interior and polar pure-output forms"
+      ],
+      "title": "Extending additivity from symmetric to asymmetric channels",
+      "snapshot_limit": "Snapshot is evidence of fetched bytes, not evidence that every part was audited.",
+      "url": "https://arxiv.org/html/quant-ph/0505022v4",
+      "local_snapshot": "fukuda_quant-ph-0505022v4.html",
+      "caution": "HTML strict inequalities in prose before Eq.19 should not be used to exclude boundary channels; this review derives the needed non-strict conditions directly."
+    }
+  ],
+  "local_input_pins": "context.json original_inputs and hashes.sha256",
+  "historical_material_not_read": [
+    "901",
+    "906",
+    "1296",
+    "Werner verifier",
+    "Full global-Q formulation and its prior objections"
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "scope": "Readable native review files are UTF8/LF transport copies for repository style. Exact selected native bytes are in original1393.zip; no new review or grade.",
+  "native_zip_sha256": "32cfbed348e893805f0c003907d0fdd9ccc21421953fbd9a410ffb8ebe527e80",
+  "native_report_sha256": "21bcd59d0e2e947c8409d98ef9f5b0d86d7cae988f06ab2fa97261da48591f83",
+  "native_manifest_sha256": "0acd8d3f5f1718ecc63e956e0ec5d759845fe128975d3fe05ebc80f78d1fa7c5",
+  "omitted_foreign_snapshot": "fukuda_quant-ph-0505022v4.html remains private, hash/URL in SOURCE-OMISSIONS.json",
+  "files": [
+    {
+      "path": "review1393/ALIGNED-CONTROL1393-review.json",
+      "native_sha256": "269b67ece537b1ed836e1fe83e976de4b6c827f6b8a51732c53838df0100a60e",
+      "readable_sha256": "269b67ece537b1ed836e1fe83e976de4b6c827f6b8a51732c53838df0100a60e",
+      "native_bytes": 431,
+      "readable_bytes": 431,
+      "transformation": "UTF8(noBOM)/LF and one final newline where missing; mathematical content unchanged"
+    },
+    {
+      "path": "review1393/cleanup.json",
+      "native_sha256": "8b41a2dca1a1e6688407645b8a137be96285a8b4eea696b2203fea72b0c4346c",
+      "readable_sha256": "d14476c6644cca4e3a326ce869bc1b27eea06af090c95138cd9c77875e08510f",
+      "native_bytes": 638,
+      "readable_bytes": 626,
+      "transformation": "UTF8(noBOM)/LF and one final newline where missing; mathematical content unchanged"
+    },
+    {
+      "path": "review1393/context.json",
+      "native_sha256": "ecc21cfcd1c15d435e85232624950c8f2588df5a3eb6ccf3e9bc0a1e4744b210",
+      "readable_sha256": "edd95081e9e5002a2a9c8e0ae07267e1371c9be9cd090e7a840b811d64e26992",
+      "native_bytes": 2837,
+      "readable_bytes": 2767,
+      "transformation": "UTF8(noBOM)/LF and one final newline where missing; mathematical content unchanged"
+    },
+    {
+      "path": "review1393/control_aligned1393_output_redirect_only.py",
+      "native_sha256": "24cba1f2943ab94a2570f67cff4020de6ef3b385c8008cbd3011cb12317377e9",
+      "readable_sha256": "24cba1f2943ab94a2570f67cff4020de6ef3b385c8008cbd3011cb12317377e9",
+      "native_bytes": 1160,
+      "readable_bytes": 1160,
+      "transformation": "UTF8(noBOM)/LF and one final newline where missing; mathematical content unchanged"
+    },
+    {
+      "path": "review1393/control_execution_stdout.txt",
+      "native_sha256": "74c0371238d8bf3867b1f0129fabb6aa4dbf3a65a00922ec2bf80bd8b7bde29d",
+      "readable_sha256": "ea924c7b69631ee2f70ce6075879e811c8c10e8930e098e001195d3f3c2066ac",
+      "native_bytes": 400,
+      "readable_bytes": 401,
+      "transformation": "UTF8(noBOM)/LF and one final newline where missing; mathematical content unchanged"
+    },
+    {
+      "path": "review1393/execution.json",
+      "native_sha256": "37659417e69905e393c97a3fbb691a56a655d045312a458ee861e50207a7beff",
+      "readable_sha256": "c1dce740aa56e5493ac490f16e72c5cce618b90bee8ba032ae20a8f2561dd8df",
+      "native_bytes": 761,
+      "readable_bytes": 744,
+      "transformation": "UTF8(noBOM)/LF and one final newline where missing; mathematical content unchanged"
+    },
+    {
+      "path": "review1393/hashes.sha256",
+      "native_sha256": "0acd8d3f5f1718ecc63e956e0ec5d759845fe128975d3fe05ebc80f78d1fa7c5",
+      "readable_sha256": "0acd8d3f5f1718ecc63e956e0ec5d759845fe128975d3fe05ebc80f78d1fa7c5",
+      "native_bytes": 1252,
+      "readable_bytes": 1252,
+      "transformation": "UTF8(noBOM)/LF and one final newline where missing; mathematical content unchanged"
+    },
+    {
+      "path": "review1393/inputs/ALIGNED-CONTROL1393.json",
+      "native_sha256": "b2b174c2da5c5361c078dc34aa3124c09c7783babb628674d800438c7a07f891",
+      "readable_sha256": "b2b174c2da5c5361c078dc34aa3124c09c7783babb628674d800438c7a07f891",
+      "native_bytes": 431,
+      "readable_bytes": 431,
+      "transformation": "UTF8(noBOM)/LF and one final newline where missing; mathematical content unchanged"
+    },
+    {
+      "path": "review1393/inputs/ALIGNED-FACTOR1393.txt",
+      "native_sha256": "6710bbd8f1b61c155ddae02f7ffc6ce33f607f2ad634fb4b519ded969b7aafd6",
+      "readable_sha256": "6710bbd8f1b61c155ddae02f7ffc6ce33f607f2ad634fb4b519ded969b7aafd6",
+      "native_bytes": 5056,
+      "readable_bytes": 5056,
+      "transformation": "UTF8(noBOM)/LF and one final newline where missing; mathematical content unchanged"
+    },
+    {
+      "path": "review1393/inputs/control_aligned1393.py",
+      "native_sha256": "ae19e72bcd4c9f986bfb1d5eb5ae18dc04fc8ac54bce29c3a31f363d3e521812",
+      "readable_sha256": "ae19e72bcd4c9f986bfb1d5eb5ae18dc04fc8ac54bce29c3a31f363d3e521812",
+      "native_bytes": 1149,
+      "readable_bytes": 1149,
+      "transformation": "UTF8(noBOM)/LF and one final newline where missing; mathematical content unchanged"
+    },
+    {
+      "path": "review1393/report.txt",
+      "native_sha256": "21bcd59d0e2e947c8409d98ef9f5b0d86d7cae988f06ab2fa97261da48591f83",
+      "readable_sha256": "21bcd59d0e2e947c8409d98ef9f5b0d86d7cae988f06ab2fa97261da48591f83",
+      "native_bytes": 16295,
+      "readable_bytes": 16295,
+      "transformation": "UTF8(noBOM)/LF and one final newline where missing; mathematical content unchanged"
+    },
+    {
+      "path": "review1393/source_pins.json",
+      "native_sha256": "4fb4309424e782a8fe64530521784886b4e8df7148c5178331b05a6ee678770b",
+      "readable_sha256": "6cb3fdc518585c8cbccc4efbf896989f94530b815473d008da15315112865211",
+      "native_bytes": 1890,
+      "readable_bytes": 1846,
+      "transformation": "UTF8(noBOM)/LF and one final newline where missing; mathematical content unchanged"
+    },
+    {
+      "path": "review1393/verdict.json",
+      "native_sha256": "b8ec51a48c5ba855b0141319ca1b6462d03c20506aa9239577e3b969ac53a375",
+      "readable_sha256": "a638037aacfa60f580187d9a97ff94ed5ff162a3bbaf5f23e1ba6cbce0fd6bfd",
+      "native_bytes": 3485,
+      "readable_bytes": 3395,
+      "transformation": "UTF8(noBOM)/LF and one final newline where missing; mathematical content unchanged"
+    },
+    {
+      "path": "review1393/verification.json",
+      "native_sha256": "aba988d5f958ec93aa52f5574567a3e45e27f4c57de3b0fab12b11d14287b9d5",
+      "readable_sha256": "6b5bbfebc55903fcb39209034ce8237bdbddcc1a48142d0d9fa3febb4db1fbfe",
+      "native_bytes": 481,
+      "readable_bytes": 471,
+      "transformation": "UTF8(noBOM)/LF and one final newline where missing; mathematical content unchanged"
+    }
+  ]
+}

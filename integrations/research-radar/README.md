@@ -201,3 +201,5 @@ The same [dynamic-seed note](notes/2026-10-30-dynamic-seed.md) now includes a co
 The same [dynamic-seed note](notes/2026-10-30-dynamic-seed.md) now qualifies hidden-state claims against complete ideal output history, preserving the invariant-plane exception and the boundary to noisy, sampled and uncertain models. [Own exact evidence](evidence/2026-10-30-observer1363/README.md) and the scoped classical observability source do not supply an empirical sensor advantage or a new paper.
 
 Werner research now has a [physical-coverage gate](evidence/2026-10-30-werner-coverage/README.md): an earlier pinned preprint claim must be reconciled before further QSS signed-operator work. Selected source reading is separate from certificate validation; no new paper or score follows.
+
+The [consolidated hypothesis audit](evidence/2026-10-30-hypothesis-audit/README.md) closes an unscored aligned-factor review with all9reservations and separates Werner code/structural reading from an unexecuted exact certificate. Two existing candidates remain speculative; no new paper, score or formal promotion.

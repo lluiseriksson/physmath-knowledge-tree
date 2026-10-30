@@ -1,0 +1,238 @@
+{
+  "at": "2026-10-30T09:32:06.100287+00:00",
+  "kind": "own_structural_admissibility_guard",
+  "data_sha256": "8409f87ef6670971efdec513dc28341e32e5b4f72536eca6e7b4222636ccfc5c",
+  "types_checked": 715,
+  "kind_counts": {
+    "src": 651,
+    "gram": 64
+  },
+  "row_pair_family_counts": {
+    "31": 257,
+    "22": 392,
+    "13": 258
+  },
+  "diagram_modules_checked": [
+    {
+      "m": 3,
+      "key": "S||f0_111_e",
+      "dimension": 1,
+      "keys": 6,
+      "fixed_values_in_qutrit_range": true
+    },
+    {
+      "m": 3,
+      "key": "S||f0_21_e",
+      "dimension": 2,
+      "keys": 3,
+      "fixed_values_in_qutrit_range": true
+    },
+    {
+      "m": 3,
+      "key": "S||f0_3_e",
+      "dimension": 1,
+      "keys": 1,
+      "fixed_values_in_qutrit_range": true
+    },
+    {
+      "m": 4,
+      "key": "S|0,1|f0_11_2",
+      "dimension": 1,
+      "keys": 2,
+      "fixed_values_in_qutrit_range": true
+    },
+    {
+      "m": 4,
+      "key": "S|0,1|f0_2_11",
+      "dimension": 1,
+      "keys": 2,
+      "fixed_values_in_qutrit_range": true
+    },
+    {
+      "m": 4,
+      "key": "S|0,1|f1_1_1",
+      "dimension": 4,
+      "keys": 4,
+      "fixed_values_in_qutrit_range": true
+    },
+    {
+      "m": 4,
+      "key": "S|0,1|f2_e_e",
+      "dimension": 2,
+      "keys": 2,
+      "fixed_values_in_qutrit_range": true
+    },
+    {
+      "m": 4,
+      "key": "S|0,2|f0_11_2",
+      "dimension": 1,
+      "keys": 2,
+      "fixed_values_in_qutrit_range": true
+    },
+    {
+      "m": 4,
+      "key": "S|0,2|f0_2_11",
+      "dimension": 1,
+      "keys": 2,
+      "fixed_values_in_qutrit_range": true
+    },
+    {
+      "m": 4,
+      "key": "S|0,2|f0_2_2",
+      "dimension": 1,
+      "keys": 1,
+      "fixed_values_in_qutrit_range": true
+    },
+    {
+      "m": 4,
+      "key": "S|0,2|f1_1_1",
+      "dimension": 4,
+      "keys": 4,
+      "fixed_values_in_qutrit_range": true
+    },
+    {
+      "m": 4,
+      "key": "S|0,2|f2_e_e",
+      "dimension": 2,
+      "keys": 2,
+      "fixed_values_in_qutrit_range": true
+    },
+    {
+      "m": 4,
+      "key": "S|0|f0_21_1",
+      "dimension": 2,
+      "keys": 3,
+      "fixed_values_in_qutrit_range": true
+    },
+    {
+      "m": 4,
+      "key": "S|0|f0_3_1",
+      "dimension": 1,
+      "keys": 1,
+      "fixed_values_in_qutrit_range": true
+    },
+    {
+      "m": 4,
+      "key": "S|0|f1_11_e",
+      "dimension": 3,
+      "keys": 6,
+      "fixed_values_in_qutrit_range": true
+    },
+    {
+      "m": 4,
+      "key": "S|0|f1_2_e",
+      "dimension": 3,
+      "keys": 3,
+      "fixed_values_in_qutrit_range": true
+    },
+    {
+      "m": 4,
+      "key": "S|2|f0_21_1",
+      "dimension": 2,
+      "keys": 3,
+      "fixed_values_in_qutrit_range": true
+    },
+    {
+      "m": 4,
+      "key": "S|2|f0_3_1",
+      "dimension": 1,
+      "keys": 1,
+      "fixed_values_in_qutrit_range": true
+    },
+    {
+      "m": 4,
+      "key": "S|2|f1_11_e",
+      "dimension": 3,
+      "keys": 6,
+      "fixed_values_in_qutrit_range": true
+    },
+    {
+      "m": 4,
+      "key": "S|2|f1_2_e",
+      "dimension": 3,
+      "keys": 3,
+      "fixed_values_in_qutrit_range": true
+    },
+    {
+      "m": 4,
+      "key": "S|3|f0_21_1",
+      "dimension": 2,
+      "keys": 3,
+      "fixed_values_in_qutrit_range": true
+    },
+    {
+      "m": 4,
+      "key": "S|3|f0_3_1",
+      "dimension": 1,
+      "keys": 1,
+      "fixed_values_in_qutrit_range": true
+    },
+    {
+      "m": 4,
+      "key": "S|3|f1_11_e",
+      "dimension": 3,
+      "keys": 6,
+      "fixed_values_in_qutrit_range": true
+    },
+    {
+      "m": 4,
+      "key": "S|3|f1_2_e",
+      "dimension": 3,
+      "keys": 3,
+      "fixed_values_in_qutrit_range": true
+    },
+    {
+      "m": 4,
+      "key": "S||f0_211_e",
+      "dimension": 3,
+      "keys": 12,
+      "fixed_values_in_qutrit_range": true
+    },
+    {
+      "m": 4,
+      "key": "S||f0_22_e",
+      "dimension": 2,
+      "keys": 6,
+      "fixed_values_in_qutrit_range": true
+    },
+    {
+      "m": 4,
+      "key": "S||f0_31_e",
+      "dimension": 3,
+      "keys": 4,
+      "fixed_values_in_qutrit_range": true
+    },
+    {
+      "m": 4,
+      "key": "S||f0_4_e",
+      "dimension": 1,
+      "keys": 1,
+      "fixed_values_in_qutrit_range": true
+    }
+  ],
+  "auxiliary_modules_checked": 23,
+  "equality_groups": {
+    "stiefel31": {
+      "kind": "Stiefel at an a replica",
+      "slot": 0
+    },
+    "stiefel22": {
+      "kind": "Stiefel at an a replica",
+      "slot": 0
+    },
+    "stiefel13": {
+      "kind": "Stiefel at an a replica",
+      "slot": 3
+    },
+    "aab": {
+      "kind": "Common whole-replica marginal",
+      "surviving_letters": "aab"
+    },
+    "abb": {
+      "kind": "Common whole-replica marginal",
+      "surviving_letters": "abb"
+    }
+  },
+  "result": "PASS for declared row-charge/cut, qutrit basis-range/shape and equality-letter admissibility only",
+  "scope": "No foreign executable code imported or executed. No coefficient-map, orbit enumeration, exact correction, final dual identity, actual multiplier PSD or Lean audit. Same coordinating producer; not independent model review."
+}

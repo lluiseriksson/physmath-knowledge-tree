@@ -1,0 +1,132 @@
+REVISIÓN CRÍTICA ÚNICA DEL ARGUMENTO ALIGNED-FACTOR1393
+Fecha: 2026-10-30. Componente analítico; no manuscrito, PDF ni revisión humana.
+
+DICTAMEN Y ALCANCE
+No encontré un contraejemplo ni un fallo matemático en la exclusión propuesta, bajo su hipótesis expresa: N = Lambda o M, donde ambos factores son canales qubit a qubit CPTP, Lambda es unital y diagonal en las mismas coordenadas de Pauli de N, y M tiene al menos una salida pura. La contradicción es universal dentro de esa clase; no depende de muestreo ni de que la salida pura optimice Lambda. El control simbólico corrobora tres identidades y dos constantes, pero no demuestra por sí mismo esa universalidad.
+
+No se infiere inexistencia de factores unitales rotados o no diagonales, inexistencia de otros mecanismos de transferencia, ni incumplimiento o demostración de aditividad de MOE para N. Tampoco se prueba una desigualdad global dependiente de poblaciones con referencia cuántica Q. Conservo las reservas y límites que siguen. Esta revisión no otorga nota, objetivo numérico, garantía de novedad ni certificación formal.
+
+MATERIAL CONGELADO
+Se leyeron íntegramente ALIGNED-FACTOR1393.txt, control_aligned1393.py y ALIGNED-CONTROL1393.json del directorio 2026-10-30_werner-run1393. Se copiaron sin cambio en inputs/. Los SHA-256 originales son:
+  ALIGNED-FACTOR1393.txt
+  6710bbd8f1b61c155ddae02f7ffc6ce33f607f2ad634fb4b519ded969b7aafd6
+  control_aligned1393.py
+  ae19e72bcd4c9f986bfb1d5eb5ae18dc04fc8ac54bce29c3a31f363d3e521812
+  ALIGNED-CONTROL1393.json
+  b2b174c2da5c5361c078dc34aa3124c09c7783babb628674d800438c7a07f891
+Estos hashes se comprobaron de nuevo tras el cálculo auxiliar y no cambiaron. El manifiesto registra las copias y el resto de los archivos entregados.
+
+1. FORMULACIÓN Y NORMALIZACIÓN DE SIGNOS
+Es esencial que los dos factores actúen sobre un qubit y que la diagonalidad se refiera a los ejes físicos fijados. Esta es la lectura natural de la formulación, no una libertad de diagonalizar arbitrariamente Lambda cambiando también N.
+
+Escribo el bloque lineal de N como D = diag(a,a,b), con a=3/5, b=1/4 y c=1/5. Si L=diag(l1,l2,l3), la ecuación LB=D fuerza L invertible y B=L^{-1}D; por tanto, un M inicialmente arbitrario queda forzado a tener bloque diagonal. Su traslación es L^{-1}(0,0,c). No queda una traslación transversal ni un bloque no diagonal oculto. Un multiplicador cero de Lambda es imposible por rango.
+
+Las entradas ecuatoriales +/-e1 y +/-e2 dan, en realidad,
+  (a/li)^2 + (c/l3)^2 <= 1  (i=1,2).
+La cota más débil |li|>=a utilizada en el texto es correcta. No depende del signo de l3.
+
+Con si=sign(li) para i=1,2, R=diag(s1,s2,s1*s2) tiene determinante +1 y es una conjugación de Pauli: identidad o giro de pi alrededor de un eje. R^2=I. Sustituir Lambda por Lambda o R y M por R o M conserva la composición, la condición CPTP y la existencia de salida pura. Los multiplicadores nuevos son |l1|, |l2| y v=l3*s1*s2.
+
+La positividad de Choi del factor unital impone
+  1+v >= |l1|+|l2| >= 6/5.
+En esta expresión l1,l2 ya pueden leerse como los valores normalizados positivos. De aquí v>=1/5>0; no se ha supuesto sin demostrar la positividad del tercer signo. Los patrones originales con producto de signos negativo resultan incompatibles con esta desigualdad. Los patrones con dos signos negativos quedan cubiertos por R. La positividad sobre el polo del factor unital da v<=1.
+
+Los parámetros forzados de M son ahora
+  alpha=a/l1>0, gamma=a/l2>0, beta=b/v>0, tau=c/v>0.
+Su entrada norte tiene componente z igual a beta+tau, positiva. La positividad de M exige beta+tau<=1, luego v>=9/20. Por consiguiente
+  v in [9/20,1], beta in [1/4,5/9], tau=(4/5)*beta.
+Los extremos están incluidos; no se necesita positividad estricta de Choi. Esta reducción sólo emplea las rotaciones discretas R que preservan la estructura diagonal; no justifica una reducción general por rotaciones arbitrarias.
+
+2. CHOI: QUÉ SE USA Y POR QUÉ LOS SIGNOS SON CORRECTOS
+Para un mapa diagonal con traslación axial, el Choi no normalizado, en el orden |00>,|01>,|10>,|11>, es un medio de la matriz
+  [ 1+beta+tau     0               0             alpha+gamma ]
+  [ 0             1-beta-tau      alpha-gamma   0           ]
+  [ 0             alpha-gamma     1-beta+tau    0           ]
+  [ alpha+gamma   0               0             1+beta-tau  ].
+Así, cuatro veces los dos determinantes de bloque son
+  Dplus  = (1+beta)^2-tau^2-(alpha+gamma)^2,
+  Dminus = (1-beta)^2-tau^2-(alpha-gamma)^2.
+Ambos deben ser no negativos. Intercambiar alpha y gamma por X=max(alpha,gamma), Y=min(alpha,gamma) no altera estas expresiones; no exige ninguna rotación adicional.
+
+El argumento usa estas condiciones como necesarias. No confunde dos menores arbitrarios con una prueba de positividad de toda una matriz. Aquí el Choi tiene dos bloques de tamaño dos; además beta+tau<=1 y beta,tau>=0 hacen no negativas todas sus diagonales. Con esas condiciones las dos desigualdades también serían suficientes, aunque la exclusión sólo precisa necesidad.
+
+Como comprobación de que el problema no se refiere a un N no físico, para N las diagonales de la matriz anterior son 29/20, 11/20, 19/20 y 21/20. Sus Dplus y Dminus valen 33/400 y 209/400, respectivamente: N es CPTP. Esta comprobación es algebraica y no una simulación.
+
+3. EXHAUSTIVIDAD DE LAS SALIDAS PURAS
+Si una entrada mixta produce una salida pura, una descomposición espectral de la entrada produce una combinación convexa de estados de salida cuyo resultado es extremo. Cada componente con peso positivo tiene esa misma salida pura. Por ello basta estudiar entradas puras. No se asume que la entrada dada originalmente sea pura.
+
+Para una entrada pura de coordenada z, la máxima norma de salida al variar su ángulo transversal es
+  Q(z)=X^2+tau^2+2*beta*tau*z-(X^2-beta^2)*z^2.
+Se consigue poniendo el componente transversal en el eje con mayor contracción X. La positividad exige Q(z)<=1 en [-1,1], y una salida pura implica que el máximo global de Q es exactamente 1.
+
+Sea A=X^2. Como beta*tau>0, Q(1)>Q(-1). Si A<=beta^2, Q es convexa o lineal y su máximo es el polo norte. Si A>beta^2, es cóncava y su vértice está en z0=beta*tau/(A-beta^2)>0. El máximo es norte cuando z0>=1 y es interior cuando 0<z0<1. No hay máximo sur, ni vértice cero, ni caso plano bajo las hipótesis presentes. La igualdad z0=1 se incluye en el caso norte.
+
+CASO NORTE. Q(1)=1 equivale a beta+tau=1, pues ambos son positivos. Entonces Dminus=-(X-Y)^2 exige X=Y. Dplus=4*(beta-X^2) exige X^2<=beta. Así alpha*gamma<=beta. La tangencia de transición z0=1 corresponde a A=beta y está incluida. Un contacto polar con A<beta también está permitido; el argumento no impone por error que todos los contactos polares sean extremos de amplitud amortiguada.
+
+CASO INTERIOR. Se tiene A>beta^2 y 0<z0<1. La igualdad Q(z0)=1 implica
+  tau^2=(1-A)*(A-beta^2)/A.
+No se divide por cero: A>0, A-beta^2>0 y X>0. Además tau>0 implica A<1. De z0<1 se obtiene
+  (A-beta^2)^2-beta^2*tau^2>0.
+Al sustituir tau^2, esta expresión es
+  (A-beta^2)*(A-beta)*(A+beta)/A.
+Todos los factores salvo A-beta son positivos, luego A>beta. El signo y la estricta desigualdad son correctos.
+
+Las sustituciones en Choi dan exactamente
+  Dplus  = (beta/X-Y)*(beta/X+Y+2*X),
+  Dminus = (beta/X-Y)*(beta/X+Y-2*X).
+El segundo factor de Dplus es estrictamente positivo. Por tanto q=beta/X-Y>=0. Si q>0, Dminus>=0 exigiría beta+XY>=2X^2. Como Y<=X, se seguiría beta>=2A-XY>=A, contrario a A>beta. Luego q=0 y XY=beta.
+
+Este paso necesita los DOS bloques de Choi: usar sólo Dplus permitiría q>0 y perdería la exclusión. No se divide por q cuando q=0. En el caso interior quedan Dplus=Dminus=0 y tau^2=(1-X^2)*(1-Y^2), coherente con el tipo de ejemplo c) de la fuente. X=Y no puede pertenecer al caso interior porque entonces A=XY=beta contradice A>beta.
+
+Conclusión de la clasificación: toda salida pura de este M positivo y CPTP, con parámetros estrictamente positivos como aquí, fuerza alpha*gamma<=beta. No se han omitido multiplicadores nulos, tau=0 o beta=0 dentro del problema, pues ya fueron excluidos por los parámetros fijos. Esos casos sí requerirían otro tratamiento en una afirmación general sin tales hipótesis.
+
+4. CONTRADICCIÓN UNIVERSAL Y CASOS LÍMITE
+Para el factor externo normalizado, 1+v>=l1+l2. Multiplicando por beta>0 y usando v=b/beta y li=a/alpha_i,
+  beta+b >= a*beta*(1/alpha+1/gamma).
+Por AM-GM y alpha*gamma<=beta,
+  1/alpha+1/gamma >= 2/sqrt(alpha*gamma) >= 2/sqrt(beta).
+Por tanto beta+b>=2*a*sqrt(beta). Ambos lados son positivos, de modo que elevar al cuadrado no invierte ni debilita incorrectamente la condición:
+  a^2 <= f(beta)=(beta+b)^2/(4*beta).
+
+Se verifica f'(beta)=(1-b^2/beta^2)/4. Como beta>=b=1/4, f no decrece en el intervalo admisible y
+  f(beta)<=f(5/9)=841/2880.
+Pero
+  a^2 - 841/2880 = 9/25 - 841/2880 = 979/14400 > 0.
+Esto es una contradicción estricta para TODO beta en [1/4,5/9]. Las posibles faltas de saturación de AM-GM o de Choi sólo fortalecen la exclusión. No se necesita encontrar los valores realizables exactos de beta dentro de ese intervalo; ampliar a un intervalo necesario y contradicirlo entero es válido.
+
+En v=9/20, beta=5/9 y tau=4/9: el polo norte está en la esfera y se aplica el caso norte. En v=1, beta=1/4: f alcanza su extremo inferior en el intervalo, también contradictorio. La igualdad de multiplicadores transversales, su desigualdad, las matrices de Choi de rango reducido y el vértice que llega al polo están incluidos. No hay un escape por signos o por igualdad en una condición no estricta.
+
+5. AUDITORÍA DEL CONTROL Y SUS EFECTOS
+El control congelado contiene tres comprobaciones simbólicas: Dplus, Dminus y la factorización de la condición del vértice, multiplicadas por X^2 para eliminar denominadores. Son las identidades relevantes y no sustituyen la comprobación de positividad de los factores, hecha arriba. Usa aritmética Fraction para 841/2880 y 979/14400.
+
+Hallazgo operativo: el script original escribe en una ruta absoluta del paquete original. Ejecutarlo sin adaptación habría reescrito ALIGNED-CONTROL1393.json, una entrada congelada, incluso al ejecutarlo desde otra carpeta. No se ejecutó el original. Se creó control_aligned1393_output_redirect_only.py con un único reemplazo de esa ruta por la ruta de salida dentro de la carpeta propia; no se modificó ninguna expresión matemática, assert, importación ni texto de alcance.
+
+Se ejecutó esa copia UNA vez con C:\Python312\python.exe -B. Inicio UTC: 2026-10-30T09:51:46.5795387Z. Fin UTC: 2026-10-30T09:51:48.2345977Z. Código de salida: 0. SymPy informado: 1.14.0. Los tres residuos simbólicos fueron 0; la cota y brecha coincidieron con el JSON original. Sólo se tolera diferencia de marca temporal en esa comparación del resultado. La ruta de salida del código está confinada a la carpeta de revisión; -B evita escrituras de bytecode. No se afirma una auditoría completa de todos los efectos del sistema operativo o del entorno compartido.
+
+execution.json y control_execution_stdout.txt registran la ejecución. No se ejecutó el verificador Werner, no se hizo búsqueda numérica de parámetros ni se modificaron las tres entradas. Este control no verifica por sí solo: la reducción por Pauli, la exhaustividad geométrica, las condiciones de signo al dividir, la interpretación bibliográfica, MOE, Q ni formalización en Lean.
+
+6. FUENTE PRIMARIA Y LÍMITES BIBLIOGRÁFICOS
+Fuente: Motohisa Fukuda, Extending additivity from symmetric to asymmetric channels, quant-ph/0505022v4, https://arxiv.org/html/quant-ph/0505022v4 . Se leyeron el lema, su demostración, la observación posterior y las ecuaciones 18-27 con ejemplos c)-e). Se conservó el HTML recuperado y su hash; su descarga no constituye auditoría integral del artículo.
+
+El lema requiere covarianza unitaria del factor externo y salida pura del interno. La observación permite sustituir esas condiciones por coincidencia con un optimizador. El ejemplo e) añade una condición sobre los multiplicadores para asegurarla. Por ello, tener salida pura no basta por sí solo para aplicar una transferencia a cualquier factor unital.
+
+La ecuación 19 aporta las dos condiciones de Choi; los ejemplos c) y d) concuerdan con los contactos interior y polar descritos. Advertencia literal: el HTML usa desigualdades estrictas en la frase anterior a la ecuación 19, mientras el ejemplo d) incluye frontera. La revisión usa las condiciones no estrictas derivadas directamente de Choi y no depende de esa literalidad.
+
+No se auditaron los resultados de las referencias citadas, las demostraciones generales de aditividad/multiplicatividad ni las afirmaciones conversas completas de los ejemplos. Tampoco se verificaron historia de prioridad, versiones anteriores o novedad.
+
+7. OBJECIONES Y RESERVAS QUE SE CONSERVAN
+O1. Riesgo real de alterar una entrada al ejecutar el control original: mitigado sólo en esta revisión mediante cambio declarado de ruta. El original sigue teniendo esa conducta; no se ha reparado porque está congelado.
+O2. El ámbito depende de diagonalidad en ejes fijos y de canales qubit CPTP. No hay reducción demostrada desde factores generales rotados/no diagonales a esta clase. Extender la conclusión de ese modo sería un salto lógico.
+O3. La clasificación de tangencias usa beta>0, tau>0 y X,Y>0, demostrados aquí. Presentarla sin esas hipótesis como teorema universal exigiría revisar los casos degenerados excluidos.
+O4. El control confirma identidades y constantes, no una prueba exhaustiva ni una formalización. La universalidad procede de la cadena analítica revisada.
+O5. El lema bibliográfico no aplica a cualquier factor unital por el mero hecho de que M tenga salida pura. El texto congelado distingue correctamente la observación de optimizadores; la exclusión prueba algo más fuerte respecto de esta clase de factores y por ello también excluye su subconjunto compatible con optimizadores.
+O6. MOE y la desigualdad global con referencia cuántica Q son afirmaciones distintas. Esta revisión no elimina objeciones previas sobre referencia, poblaciones, dimensión o fuerza de la cota; tampoco concluye nada sobre canales compuestos en orden inverso o filtros no TP.
+O7. La frontera en la formulación literal del HTML exige cuidado; la derivación directa de los menores resuelve ese punto en el argumento presente.
+O8. No se aportaron ni se leyeron los expedientes completos 901, 906 o 1296. Sus objeciones, pruebas, estado y deduplicación histórica no han sido auditados ni se declaran cerrados. Las menciones a ellos dentro del argumento son contexto del autor.
+O9. Se hizo una única revisión por un agente de IA. El contexto de tarea es separado, pero el sistema de archivos es compartido. No se afirma independencia, aislamiento, revisión humana ni atestación del modelo/backend o del nivel de razonamiento.
+
+CIERRE
+La exclusión alineada está sustentada por la cadena de desigualdades revisada. No solicito correcciones matemáticas indispensables para esa conclusión concreta. Recomiendo conservar junto a ella sus restricciones explícitas y el aviso sobre el efecto de escritura del control. No se reinició la revisión, no se ajustó un objetivo de nota, no se publicó y no se abrió ningún nuevo intento de resolver Q. Los archivos context.json, source_pins.json, verdict.json y hashes.sha256 fijan el alcance documental y las reservas de esta revisión.
+
+NOTA FINAL DE ARCHIVO Y LIMPIEZA
+Se copiaron los entregables a D:/Proyectos/airr-investigacion/2026-10-30_aligned-review1393 y se cotejaron sus hashes con los archivos de trabajo. El intento posterior de eliminar sólo la carpeta temporal propia, con comprobación de ruta exacta y ausencia de puntos de reanálisis, fue rechazado antes de ejecutar el proceso por la revisión automática de aprobación. El único motivo devuelto fue "blocked by policy". No se repitió ni se buscó una vía alternativa de borrado. La carpeta temporal C:/Trabajo/airr/2026-10-30_aligned-review1393 permanece además de la entrega en D:. No se eliminó ni modificó el paquete de entradas original. cleanup.json registra esta limitación operativa; no cambia el dictamen matemático.
