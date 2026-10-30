@@ -1,0 +1,13 @@
+{
+  "native_review_manifest": "review1393/hashes.sha256",
+  "native_manifest_scope": "Fourteen private payloads. Exact unchanged manifest and selected14nativefiles are inside original1393.zip; readable text copies are UTF8/LF transport. The foreignHTMLsnapshot is explicitly omitted. No claim that every native manifest member is public.",
+  "omitted_source": {
+    "name": "fukuda_quant-ph-0505022v4.html",
+    "sha256": "e37ab2db8dc2cfc12a00e7b41050e3dc99aa5f6117ba849015dda7bf6014d91f",
+    "url": "https://arxiv.org/html/quant-ph/0505022v4",
+    "reason": "Primary full-text snapshot retained privately; not redistributed here."
+  },
+  "public_selection_manifest": "PUBLIC-MANIFEST1394.json",
+  "native_archive": "original1393.zip",
+  "transport": "TRANSPORT1394.json"
+}

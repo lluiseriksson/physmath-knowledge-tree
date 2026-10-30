@@ -1,0 +1,12 @@
+{
+  "recorded_utc": "2026-10-30T10:00:59.7719996Z",
+  "target": "C:\\Trabajo\\airr\\2026-10-30_aligned-review1393",
+  "intended_action": "Delete only the archived and hash-verified temporary review folder after checking the exact resolved path and absence of reparse points.",
+  "tool_result": "CreateProcess rejected before execution: blocked by policy",
+  "automatic_approval_review_rejected": true,
+  "reason_detail_available": "No specific reason beyond blocked by policy was returned.",
+  "deletion_executed": false,
+  "retry_or_bypass": false,
+  "temporary_folder_retained": true,
+  "verified_archive_preserved": true
+}

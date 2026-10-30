@@ -1,0 +1,70 @@
+{
+  "schema": "review-context-v1",
+  "recorded_utc": "2026-10-30T09:57:46.0609736Z",
+  "observable_agent_task": "/root/astra_aligned1393_referee",
+  "observable_role": "Codex assistant subagent carrying out one assigned critical review",
+  "requested_configuration": {
+    "model": "gpt-6-astra (Astra)",
+    "reasoning_effort": "xhigh",
+    "changed_by_reviewer": false,
+    "basis": "Parent task states this was authorized by Lluis"
+  },
+  "configuration_attestation": {
+    "reason": "No provider or runtime metadata confirming the actual backend model or reasoning setting is exposed in the reviewed record; requested configuration is distinguished from observed task identity.",
+    "reasoning_effort_verified": false,
+    "backend_model_verified": false
+  },
+  "context_limits": {
+    "isolation_attested": false,
+    "runtime_attested": false,
+    "human_review": false,
+    "filesystem_shared": true,
+    "new_assigned_task_context": true,
+    "independence_attested": false
+  },
+  "process": {
+    "werner_executed": false,
+    "heavy_numerical_search": false,
+    "other_chats_modified": false,
+    "subagents_spawned": 0,
+    "restart_count": 0,
+    "original_inputs_modified": false,
+    "review_count": 1,
+    "target_rating": "none",
+    "publication": false,
+    "root_state_modified": false
+  },
+  "working_directory": "C:/Trabajo/airr/2026-10-30_aligned-review1393",
+  "archive_directory": "D:/Proyectos/airr-investigacion/2026-10-30_aligned-review1393",
+  "instructions_read": [
+    "User-supplied global AGENTS.md instructions",
+    "D:/LEEME.md",
+    "Assigned review task and preservation follow-up"
+  ],
+  "original_inputs": [
+    {
+      "sha256": "6710bbd8f1b61c155ddae02f7ffc6ce33f607f2ad634fb4b519ded969b7aafd6",
+      "path": "C:/Trabajo/airr/2026-10-30_werner-run1393/ALIGNED-FACTOR1393.txt"
+    },
+    {
+      "sha256": "ae19e72bcd4c9f986bfb1d5eb5ae18dc04fc8ac54bce29c3a31f363d3e521812",
+      "path": "C:/Trabajo/airr/2026-10-30_werner-run1393/control_aligned1393.py"
+    },
+    {
+      "sha256": "b2b174c2da5c5361c078dc34aa3124c09c7783babb628674d800438c7a07f891",
+      "path": "C:/Trabajo/airr/2026-10-30_werner-run1393/ALIGNED-CONTROL1393.json"
+    }
+  ],
+  "execution_record": "execution.json",
+  "control_adaptation": "Single exact replacement of output pathname, preserved mathematical code and assertions.",
+  "native_report": "report.txt",
+  "archival_policy": "Archive copies and verify SHA-256 before deleting only the temporary review folder; do not change or delete source packages.",
+  "cleanup": {
+    "temporary_folder_retained": true,
+    "reason": "blocked by policy",
+    "status": "blocked_by_automatic_approval_review",
+    "record": "cleanup.json",
+    "archive_verified": true,
+    "no_retry_or_bypass": true
+  }
+}

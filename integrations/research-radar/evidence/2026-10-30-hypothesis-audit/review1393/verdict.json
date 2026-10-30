@@ -1,0 +1,90 @@
+{
+  "schema": "aligned-factor-critical-review-v1",
+  "review_date": "2026-10-30",
+  "review_count": 1,
+  "disposition": "No mathematical defect or counterexample found within the explicitly aligned qubit CPTP factorization class.",
+  "scope": "N(x,y,z)=(3x/5,3y/5,z/4+1/5) = Lambda o M; Lambda unital Pauli-diagonal in the same fixed axes; M qubit CPTP with at least one pure output.",
+  "analytical_result": "The stated exclusion follows from the reviewed sign normalization, exhaustive tangency cases, both Choi blocks, and the strict universal contradiction.",
+  "formal_verification": false,
+  "human_review": false,
+  "novelty_assessment": false,
+  "contradiction": {
+    "positive_gap": "979/14400",
+    "upper_bound": "841/2880",
+    "a_squared": "9/25",
+    "beta_interval": [
+      "1/4",
+      "5/9"
+    ]
+  },
+  "control": {
+    "only_adaptation": "Absolute output path redirected to the review folder",
+    "input_hashes_unchanged": true,
+    "symbolic_residuals": [
+      "0",
+      "0",
+      "0"
+    ],
+    "original_executed": false,
+    "adapted_copy_run_count": 1,
+    "exit_code": 0
+  },
+  "objections": [
+    {
+      "id": "O1",
+      "classification": "operational",
+      "finding": "Original control overwrites a frozen input through a hard-coded absolute path; only an output-redirected copy was run."
+    },
+    {
+      "id": "O2",
+      "classification": "scope",
+      "finding": "No reduction for general rotated or non-diagonal unital factors is proved."
+    },
+    {
+      "id": "O3",
+      "classification": "hypotheses",
+      "finding": "Pure-output classification requires the positive nonzero parameters established for this specific channel; omitted degenerate cases cannot be imported into a broader theorem."
+    },
+    {
+      "id": "O4",
+      "classification": "verification_limit",
+      "finding": "Symbolic control proves identities/constants only; no formal Lean proof or numerical universal certification."
+    },
+    {
+      "id": "O5",
+      "classification": "transfer_limit",
+      "finding": "Pure output alone does not enable the Fukuda transfer for an arbitrary unital outer; optimizer matching matters."
+    },
+    {
+      "id": "O6",
+      "classification": "global_limit",
+      "finding": "No conclusion about the population-dependent global entropy inequality with quantum reference Q, reverse composition or non-TP filters."
+    },
+    {
+      "id": "O7",
+      "classification": "source_boundary",
+      "finding": "The HTML phrase before Eq.19 uses strict inequalities while example d) includes the boundary; the review derives non-strict Choi conditions directly."
+    },
+    {
+      "id": "O8",
+      "classification": "not_audited",
+      "finding": "Historical files 901, 906, 1296, priority claims and their objections were not reviewed or closed."
+    },
+    {
+      "id": "O9",
+      "classification": "provenance_limit",
+      "finding": "Single AI-agent review with shared filesystem; no independence, isolation, human review or runtime attestation."
+    }
+  ],
+  "excluded_claims": [
+    "arbitrarily rotated/non-diagonal outer factors",
+    "reverse composition",
+    "non-TP filters",
+    "MOE transfer without its hypotheses",
+    "global Q proof",
+    "novelty guarantee",
+    "human review",
+    "formal certification"
+  ],
+  "required_mathematical_repair_for_stated_result": "None identified in this single review."
+}

@@ -1,0 +1,89 @@
+Fixed-channel fallback after a resource-gated Werner run did not start
+Own unreviewed analytic argument, not a new paper or assessment.
+
+Question, strictly larger than the depolarizing-only test1296
+For N(x,y,z)=(a x,a y,b z+c), a=3/5,b=1/4,c=1/5, can N=Lambda o M
+where Lambda is ANY CPTP unital Pauli-diagonal map in these SAME physical
+axes and M is CPTP with a pure output? No optimizer-matching assumption is
+imposed, so excluding this class also excludes its optimizer-matched subset.
+This is NOT a claim about arbitrarily rotated/non-diagonal unital factors.
+
+Primary context and deduplication
+Fukuda quant-ph/0505022v4,14Aug2005, first preprint4May2005:
+https://arxiv.org/html/quant-ph/0505022v4
+Selected lemma/proof, Eq19 and examples c-e read; previous1296 already
+excluded depolarizing outers and existing901/sourceEq24 tests remain prior.
+The primary lemma uses covariance, or the subsequent remark needs matching
+optimizers. Pure output alone is not sufficient for every unital outer.
+An MOE transfer would still not prove the prescribed population-dependent
+global entropy inequality with a quantum reference. No global Q claim.
+
+1. Sign normalization, including negative Pauli multipliers
+Write Lambda=diag(l1,l2,l3). All are nonzero since N's linear part is
+invertible. Composition forces M's linear part to diag(a/l1,a/l2,b/l3)
+and translation (0,0,c/l3). Positivity on equatorial inputs gives |li|>=a
+for i=1,2. Let R=diag(sign(l1),sign(l2),sign(l1)sign(l2)); this is a proper
+Pauli-unitary Bloch rotation. Replace Lambda by Lambda R and M by R M.
+Their composition and pure-output property are unchanged. Thus l1,l2>0.
+Unital Choi positivity gives 1+v>=l1+l2>=2a>1, for the transformed l3=v;
+hence v>0. Also v<=1. Now M has positive canonical parameters
+alpha=a/l1, gamma=a/l2, beta=b/v, tau=c/v.
+Positivity on the north pole gives beta+tau<=1, hence
+ v>=b+c=9/20 and beta in[b,b/(b+c)]=[1/4,5/9].
+
+2. Pure-output constraint for this forced canonical M
+Claim: alpha*gamma<=beta. If a mixed input has pure output, a pure input
+in one of its convex decompositions has that same output, so consider pure
+Bloch inputs. Put X=max(alpha,gamma),Y=min(alpha,gamma),A=X^2. At fixed z,
+the largest squared output norm is
+ Q(z)=A+tau^2+2 beta tau z-(A-beta^2)z^2.
+Positivity bounds Q by1. Its maximum, if1, occurs either at the north pole
+or at an interior positive vertex. The south pole cannot maximize since
+beta*tau>0; the linear/convex cases also maximize at the north pole.
+
+North-pole case: tau=1-beta. The two necessary Choi block determinants
+ (1+beta)^2-tau^2-(X+Y)^2>=0,
+ (1-beta)^2-tau^2-(X-Y)^2>=0
+give X=Y and X^2<=beta, proving the claim.
+
+Interior case: A>beta^2 and z0=beta*tau/(A-beta^2) in(0,1). From Q(z0)=1,
+ tau^2=(1-A)(A-beta^2)/A.
+The condition z0<1 implies A>beta: after substitution the sign of
+ (A-beta^2)^2-beta^2 tau^2
+is that of (A-beta^2)(A-beta)(A+beta), with positive denominator A.
+Substituting tau^2 into the two Choi determinants gives
+ Dplus =(beta/X-Y)(beta/X+Y+2X),
+ Dminus=(beta/X-Y)(beta/X+Y-2X).
+The first implies beta/X-Y>=0. If strictly positive, the second implies
+beta>=2X^2-XY>=X^2=A, contradicting A>beta. Therefore beta=XY, proving
+the claim also in this case. These cases exhaust the pure-output condition.
+
+3. Contradiction for every aligned unital Pauli outer
+Outer Choi positivity, multiplied by beta, requires
+ beta+b>=a beta(1/alpha+1/gamma)>=2a sqrt(beta),
+using alpha*gamma<=beta and AM-GM. Consequently
+ a^2 <= f(beta)=(beta+b)^2/(4 beta).
+For beta>=b, f'(beta)=(1-b^2/beta^2)/4>=0. On the interval from step1,
+ f(beta)<=f(5/9)=841/2880.
+But a^2=9/25 exceeds this by EXACTLY979/14400>0.
+Thus no such aligned Pauli-diagonal CPTP outer/pure-output CPTP inner exists.
+
+Scope, mechanism, falsifier and disposition
+Mechanism: pure-output tangency plus the two Choi blocks bound the product
+of inner transverse contractions; the outer CP tetrahedron then contradicts
+the fixed channel's transverse contraction. This rejects choosing unequal
+aligned transverse Pauli multipliers as an escape from1296. No sampling,
+entropy optimizer, reference truncation or population-erasing bound is used.
+It does not exclude non-diagonal/rotated outer factors, reverse composition,
+non-TP filters or other transfer mechanisms, and does not settle global Q.
+A falsifier is an aligned unital CPTP Lambda and pure-output CPTP M with
+exact composition N, or an error in the sign reduction, tangency or Choi
+algebra. The Fraction/symbolic control checks identities/constants only;
+universality is the analytic argument, not finitely many channel samples.
+
+Layers: literature is the scoped primary transfer/Choi context; heuristic is
+this own unreviewed applicability argument; speculative is any successful
+remaining global entropy route; formal:none checked in Lean. No priority,
+new-paper, score or independent-review claim. Preserve all901/906 objections.
+Do not restart aligned Pauli parameter searches or publish this as a separate
+minor paper. Consolidate only with a substantive manuscript/knowledge update.

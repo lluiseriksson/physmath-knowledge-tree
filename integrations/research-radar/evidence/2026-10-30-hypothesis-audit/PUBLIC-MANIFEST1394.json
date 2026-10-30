@@ -1,0 +1,130 @@
+{
+  "scope": "Every selected public payload excluding this manifest. Exact native bytes in original1393.zip; readable copies normalized as disclosed; foreignHTML omitted.",
+  "files": [
+    {
+      "path": "ADMISSIBILITY1392.json",
+      "bytes": 5070,
+      "sha256": "0220878c48b6ce5ed8733f9b4afa0efc7ee23c28d8fa12780723b7c3bd1b5b31"
+    },
+    {
+      "path": "ARGUMENT1393.txt",
+      "bytes": 5056,
+      "sha256": "6710bbd8f1b61c155ddae02f7ffc6ce33f607f2ad634fb4b519ded969b7aafd6"
+    },
+    {
+      "path": "EXACT-ALGEBRA1393.json",
+      "bytes": 431,
+      "sha256": "b2b174c2da5c5361c078dc34aa3124c09c7783babb628674d800438c7a07f891"
+    },
+    {
+      "path": "native-admissibility1392.py",
+      "bytes": 5877,
+      "sha256": "21468dcf911449f8c5ae3ac256b9c6b0b6b38ab0ff5ae03159cdbe9f146060b4"
+    },
+    {
+      "path": "original1393.zip",
+      "bytes": 19117,
+      "sha256": "32cfbed348e893805f0c003907d0fdd9ccc21421953fbd9a410ffb8ebe527e80"
+    },
+    {
+      "path": "PINS1394.json",
+      "bytes": 2533,
+      "sha256": "60c788d530706bd8d032e1f6f720b09e867b84e683fb1615f000a93036d98c4a"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5595,
+      "sha256": "2f0340f8181ba365dc4865d14c5b8d857d46fad8d7a579fc6e33f0a369827ef1"
+    },
+    {
+      "path": "review1393/ALIGNED-CONTROL1393-review.json",
+      "bytes": 431,
+      "sha256": "269b67ece537b1ed836e1fe83e976de4b6c827f6b8a51732c53838df0100a60e"
+    },
+    {
+      "path": "review1393/cleanup.json",
+      "bytes": 626,
+      "sha256": "d14476c6644cca4e3a326ce869bc1b27eea06af090c95138cd9c77875e08510f"
+    },
+    {
+      "path": "review1393/context.json",
+      "bytes": 2767,
+      "sha256": "edd95081e9e5002a2a9c8e0ae07267e1371c9be9cd090e7a840b811d64e26992"
+    },
+    {
+      "path": "review1393/control_aligned1393_output_redirect_only.py",
+      "bytes": 1160,
+      "sha256": "24cba1f2943ab94a2570f67cff4020de6ef3b385c8008cbd3011cb12317377e9"
+    },
+    {
+      "path": "review1393/control_execution_stdout.txt",
+      "bytes": 401,
+      "sha256": "ea924c7b69631ee2f70ce6075879e811c8c10e8930e098e001195d3f3c2066ac"
+    },
+    {
+      "path": "review1393/execution.json",
+      "bytes": 744,
+      "sha256": "c1dce740aa56e5493ac490f16e72c5cce618b90bee8ba032ae20a8f2561dd8df"
+    },
+    {
+      "path": "review1393/hashes.sha256",
+      "bytes": 1252,
+      "sha256": "0acd8d3f5f1718ecc63e956e0ec5d759845fe128975d3fe05ebc80f78d1fa7c5"
+    },
+    {
+      "path": "review1393/inputs/ALIGNED-CONTROL1393.json",
+      "bytes": 431,
+      "sha256": "b2b174c2da5c5361c078dc34aa3124c09c7783babb628674d800438c7a07f891"
+    },
+    {
+      "path": "review1393/inputs/ALIGNED-FACTOR1393.txt",
+      "bytes": 5056,
+      "sha256": "6710bbd8f1b61c155ddae02f7ffc6ce33f607f2ad634fb4b519ded969b7aafd6"
+    },
+    {
+      "path": "review1393/inputs/control_aligned1393.py",
+      "bytes": 1149,
+      "sha256": "ae19e72bcd4c9f986bfb1d5eb5ae18dc04fc8ac54bce29c3a31f363d3e521812"
+    },
+    {
+      "path": "review1393/report.txt",
+      "bytes": 16295,
+      "sha256": "21bcd59d0e2e947c8409d98ef9f5b0d86d7cae988f06ab2fa97261da48591f83"
+    },
+    {
+      "path": "review1393/source_pins.json",
+      "bytes": 1846,
+      "sha256": "6cb3fdc518585c8cbccc4efbf896989f94530b815473d008da15315112865211"
+    },
+    {
+      "path": "review1393/verdict.json",
+      "bytes": 3395,
+      "sha256": "a638037aacfa60f580187d9a97ff94ed5ff162a3bbaf5f23e1ba6cbce0fd6bfd"
+    },
+    {
+      "path": "review1393/verification.json",
+      "bytes": 471,
+      "sha256": "6b5bbfebc55903fcb39209034ce8237bdbddcc1a48142d0d9fa3febb4db1fbfe"
+    },
+    {
+      "path": "SOURCE-OMISSIONS.json",
+      "bytes": 775,
+      "sha256": "f7baa43de87e102b3f5118b6e61e2bb82296564ea78aaf94f204a928252ca8bf"
+    },
+    {
+      "path": "SOURCES1394.json",
+      "bytes": 4373,
+      "sha256": "5f6e74c359d8bf55426fe5afb85b457f5382976619c316a30b524437fb4a55b8"
+    },
+    {
+      "path": "TRANSPORT1394.json",
+      "bytes": 6376,
+      "sha256": "86ddd4fa8ae88b3a91985d5a3b61d72fca88e8083e9c83a8e4d463245c278fb9"
+    },
+    {
+      "path": "WERNER-STATUS1394.json",
+      "bytes": 1949,
+      "sha256": "e0435a06cec9beda50d6baa6dcf85d6510a3dad3b316fdda8494eec402fc361a"
+    }
+  ]
+}

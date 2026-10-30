@@ -281,3 +281,11 @@ bounds are negative, while908 certifies its uniform positive margin. Exact
 series/integer comparisons establish this distinction; no worldwide novelty
 is inferred. The earlier pure-branch example904 is also covered by907 and
 is not counted as a separate advance over that bound.
+
+## 30October2026: retire the broader aligned unital factor detour
+
+The [consolidated argument and full actual component review](../evidence/2026-10-30-hypothesis-audit/README.md) exclude N=Lambda o M for this fixed channel when Lambda is any unital Pauli-diagonal qubit channel in the SAME axes and M is qubit CPTP with a pure output. Sign normalization, tangency and both Choi blocks give alpha*gamma<=beta; outer CP then requires a^2<=841/2880, contradicted by9/25with exact gap979/14400. This covers unequal aligned transverse multipliers beyond the older depolarizing-only test.
+
+The one unscored AI review supports that restricted conclusion, preserving O1-O9, all native context and its output-path-only control adaptation. Requested Astra xhigh; actual backend/effort/independence are unattested. Source [Fukuda v4](https://arxiv.org/html/quant-ph/0505022v4) remains attributed; boundary inequalities are derived directly from Choi, not inferred from strict source prose. This is not a PDF grade, human peer review or novelty certification.
+
+The hypothesis reduction rejects a method class; it removes NO hypothesis from global Q. Do not extend it to arbitrary rotated/non-diagonal outer factors, reverse composition or non-TP filters. Retire aligned Pauli searches and minor subclass/review cycles. Resume Q only with a concrete population/jointER-preserving estimate or applicable new primary mechanism. Literature is scoped source context, heuristic is own applicability reasoning, speculative is global Q, formal:none newly checked. A valid aligned factorization or error in the exact Choi/tangency chain would falsify this guard. No new paper or score follows.
