@@ -1536,6 +1536,38 @@
       "anchors": [
         "domain.quantum_information_theory"
       ]
+    },
+    {
+      "id": "lefever-nicolis-borckmans-brusselator-1988",
+      "title": "The brusselator: it does oscillate all the same",
+      "url": "https://doi.org/10.1039/F19888401013",
+      "kind": "journal_article",
+      "published_on": "1988",
+      "observed_on": "2026-10-30",
+      "reading_status": "abstract_read",
+      "evidence": "literature",
+      "claim": "The abstract addresses compatibility of Brusselator oscillations with equilibrium detailed balance and closed-system conservation, and elementary-step realizations.",
+      "limits": "Abstract only; no full mathematical or thermodynamic proof audit. Known background, not a new2026paper. Symbolic analogy is not physical evidence.",
+      "reuse": "Bibliographic metadata and own synthesis only; no full source text or image copied.",
+      "anchors": [
+        "domain.analysis"
+      ]
+    },
+    {
+      "id": "gallas-forced-brusselator-2015-scoped",
+      "title": "Periodic oscillations of the forced Brusselator",
+      "url": "https://doi.org/10.1142/S0217984915300185",
+      "kind": "journal_article",
+      "published_on": "2015-12-30",
+      "observed_on": "2026-10-30",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Selected header and equations1–4 describe the standard two-intermediate reaction model with constant inputs and drainage before external forcing is introduced.",
+      "limits": "Primary search extracts of selected equations/header only; not a full27-page proof or numerical-diagram audit. First-preprint date unverified; newly indexed does not mean newly published.",
+      "reuse": "Bibliographic metadata and own model-selection synthesis; no source PDF, foreign figures, corpus or evaluation tasks retained.",
+      "anchors": [
+        "domain.analysis"
+      ]
     }
   ],
   "candidates": [
@@ -2026,6 +2058,28 @@
         "limits": "No globalall-d,k,Nsharpness, continuum extension, novelty/importance assessment or newPDFgrade. RequestedAstra/xhigh; effectiveidentity/effort/independenceunattested, priorunscoredaudit-summary exposure disclosed.",
         "new_manuscript_or_score": false
       }
+    },
+    {
+      "id": "dynamic-seed-observable-closure",
+      "title": "Does an independently measured reserve predict and cause reversals?",
+      "status": "queued",
+      "confidence": "speculative",
+      "paper_score": null,
+      "source_ids": [
+        "lefever-nicolis-borckmans-brusselator-1988",
+        "gallas-forced-brusselator-2015-scoped"
+      ],
+      "node_ids": [
+        "domain.analysis"
+      ],
+      "dictionary": "Visible dominance becomes a signed state or concentration fraction; seed becomes an independently measurable reserve or delayed response. Reciprocal generation is preserved; geometric symmetry and literal universal-force interpretations are lost.",
+      "preserved": "Autonomous locally Lipschitz dynamics, positivity and explicit supply/drainage for the chosen model; coordinate reduction retains total c whenever the fraction is not closed.",
+      "lost_or_unproved": "No selected natural system, empirical data, causal validation, new Hopf proof, novelty certification, exact-PDF assessment or Lean theorem. Known normal form/Brusselator identities are not new discoveries.",
+      "hypothesis_to_remove": "Reject the unconditional claim that reciprocal conversion forces cycling, and the universal claim that visible fraction alone determines direction. In an application test whether independent reserve changes predictive/causal sufficiency.",
+      "falsifier": "Positive linear interconversion relaxes; the exact Brusselator witness has equal p=1/2 and opposite derivatives for totals2and4. Abandon application if reserve gives no out-of-sample improvement over complexity-matched memory/forcing/noise baselines or controlled removal/restoration has no predicted effect.",
+      "next_finite_task": "Use the combined1354–1356note, not a separate minorpaper. Select one measurable system and define observable/input/held-out prediction/intervention before new discovery claims. A0monotonicity excludes nonconstant nonnegative periodic orbits only for the stated model. No repeat review or random simulations.",
+      "review_packet": "Own exact SymPy1.14algebra for normal form, linear conversion, positive reservoir Jacobian and rational nonclosure witnesses; first structural-zero assertion corrected with simplification and failure disclosed. No new manuscript review, numeric grade, independence certification or editorial decision.",
+      "evidence": "integrations/research-radar/notes/2026-10-30-dynamic-seed.md"
     }
   ],
   "source_refresh": {

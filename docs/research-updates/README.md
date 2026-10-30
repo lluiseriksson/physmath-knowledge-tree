@@ -65,3 +65,7 @@ All proposed finite investigations remain unexecuted. The exact-rational witness
 The [support-criterion follow-up](../../integrations/research-radar/notes/2026-10-28-support-criterion.md) records the published symmetric-channel review, a technically audited finite classical-channel extension, its failed selectors and regularizers, and a pending full review of the new exact PDF. Historical scores do not grade the extension. No canonical confidence or solved status changes.
 
 The [29October preparation-publication reconciliation](../../integrations/research-radar/notes/2026-10-29-preparation-publication.md) binds the real exact-PDF assessment to its public Working paper, preserves its modest grade and objections, and keeps later joint-cardinality controls unscored. A close-pure-output EB shortcut is rejected using the already published CQ criterion; no new paper or graph confidence is inferred.
+
+## 30 October: dynamic seed and state reduction
+
+The [dynamic-seed synthesis](../../integrations/research-radar/notes/2026-10-30-dynamic-seed.md) joins two bounded checks into one mechanism/falsifier note. Positive reciprocal conversion can relax; equal fractions can have opposite directions when total reserve differs. Known Brusselator and normal-form identities do not establish a universal yin-yang law or a new discovery. The application remains speculative with no score, new manuscript or graph promotion.

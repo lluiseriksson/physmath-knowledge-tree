@@ -1,0 +1,9 @@
+{
+  "sympy_version": "1.14.0",
+  "all_exact_algebraic_assertions_passed": true,
+  "radial_squared_derivative": "2*mu*r^2-2*r^4",
+  "phase_derivative": "omega when r>0",
+  "half_turn_equivariance": true,
+  "positive_conversion_markov_solution": "p*=a/(a+b); p(t)=p*+(p0-p*)exp(-(a+b)t)",
+  "scope": "Known-model identities only. No natural-system fit, novel theorem, manuscript score or formal Lean proof."
+}
