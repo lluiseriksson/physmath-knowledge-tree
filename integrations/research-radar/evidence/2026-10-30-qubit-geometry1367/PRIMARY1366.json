@@ -1,0 +1,35 @@
+{
+  "url": "https://arxiv.org/html/2503.22823v3",
+  "status": 200,
+  "bytes": 2794981,
+  "sha256": "90616d8403064b982204e654817b8c1beba5ef391017c8ce9d07b241cad8849d",
+  "at": "2026-10-30T04:45:14.643Z",
+  "body_retained": false,
+  "first_preprint": "2025-03-28",
+  "selected_version_date": "2026-05-19",
+  "journal": "Quantum10,2115(2026)",
+  "doi": "10.22331/q-2026-05-22-2115",
+  "read": [
+    {
+      "scope": "Definition7, eq3.25/3.26",
+      "status": "statement_read",
+      "finding": "Exactly the same positive CP common-component coefficient is established literature, distinct from positive-map and Hermitian variants."
+    },
+    {
+      "scope": "Proposition31, eq6.21–6.28",
+      "status": "selected_local_proof_read",
+      "finding": "Positive replacer decomposition; equal reference marginals and gamma>=1 justify discarding a negative term. No full-paper proof audit."
+    },
+    {
+      "scope": "Corollary7, eq6.29–6.33",
+      "status": "statement_and_local_proof_read",
+      "finding": "Known integral f-divergence consequence; not a new divergence theorem."
+    },
+    {
+      "scope": "Proposition39",
+      "status": "statement_read_only",
+      "finding": "Qubit-to-qubit context, not applied to a d->2 channel."
+    }
+  ],
+  "scope": "Directed selected primary reading. Response hash identifies transport content, not a theorem or novelty certificate. No source body/corpus/tasks retained."
+}

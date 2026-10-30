@@ -1,0 +1,57 @@
+{
+  "inspection_id": "qubit-review1365",
+  "hash_algorithm": "SHA256",
+  "primary_examined_materials": [
+    {
+      "path": "C:/Trabajo/airr/2026-10-30_qubit-geometry1365/ARGUMENT1365.md",
+      "sha256": "8d3572dee6442b5b978e0a0d1c69d62a0919a597a8a743a4f35d5937de4571d9",
+      "expected_hash_matched_before_execution": true,
+      "same_hash_observed_after_execution": true,
+      "read_extent": "complete",
+      "use": "Full analytic statement and proof inspected; bibliographic provenance claims not independently audited."
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-30_qubit-geometry1365/checker1365.py",
+      "sha256": "2fb2168d17717f23a327a7e31ba14fd05b6b43854956b7831dbc969464a76417",
+      "expected_hash_matched_before_execution": true,
+      "same_hash_observed_after_execution": true,
+      "read_extent": "complete",
+      "use": "Source inspected and executed once using the requested PowerShell/Python/SymPy runtime."
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-30_qubit-geometry1365/EXACT1365.json",
+      "sha256": "38c4f52bc54b3844f3d4a1ff00560238dfc2049a2871be76a13c0a78295ea48d",
+      "expected_hash_matched_before_execution": true,
+      "same_hash_observed_after_execution": true,
+      "read_extent": "complete",
+      "use": "Frozen finite evidence compared with successful execution output; source file was rewritten with identical bytes by the checker."
+    }
+  ],
+  "operational_materials": [
+    {
+      "path": "D:/LEEME.md",
+      "sha256": "7ec14c1a7848b9228a4fa7f0bb6f85e53fb9ade4cbd11249fe8cb34a1e6c87a2",
+      "read_extent": "complete",
+      "use": "Storage instructions only; not mathematical evidence."
+    }
+  ],
+  "external_primary_sources_consulted": [],
+  "author_cited_references_not_consulted": [
+    {
+      "reference_as_given": "Matthews, Wehner, Winter, arXiv:0810.2327v2; DOI 10.1007/s00220-009-0890-5",
+      "status": "not_consulted_in_this_inspection",
+      "version_and_date_verified": false
+    },
+    {
+      "reference_as_given": "George, Hirche, Nuradha, Wilde, arXiv:2503.22823v3",
+      "status": "not_consulted_in_this_inspection",
+      "version_and_date_verified": false
+    },
+    {
+      "reference_as_given": "Delsol, Fawzi, Kochanowski, Ramachandran, arXiv:2507.16737v3",
+      "status": "not_consulted_in_this_inspection",
+      "version_and_date_verified": false
+    }
+  ],
+  "scope": "The report reconstructs the mathematical proof directly from frozen materials. No prior evaluation, external corpus, novelty search, or full literature audit was performed."
+}
