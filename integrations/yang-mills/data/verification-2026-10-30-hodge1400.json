@@ -11,14 +11,19 @@
   "baseline_core_jobs": 8466,
   "current_core_ci": {
     "run_id": 41059745862,
+    "job_id": 124076205270,
+    "artifact_id": 12980533614,
     "head": "c454346d873385e3a03e38e0f85f4f1439a032c7",
-    "name": "Lean – YangMillsCore build + axiom oracle",
-    "status": "in_progress",
-    "conclusion": null,
+    "status": "completed",
+    "conclusion": "success",
     "url": "https://github.com/lluiseriksson/THE-ERIKSSON-PROGRAMME/actions/runs/41059745862",
-    "created_at": "2026-10-30T13:00:56Z",
-    "updated_at": "2026-10-30T13:01:00Z",
-    "scope": "Run-level primary status only; this turn did not retrieve raw core/oracle job logs or independently rebuild programme."
+    "native_artifact_sha256": "sha256:da739a78d7f94076f5ea14a6250ace985e91000d7b798839cc1f355234d84956",
+    "core_jobs": 8466,
+    "separate_oracle_import_jobs": 8313,
+    "readouts": 2854,
+    "distinct_readout_names": 2851,
+    "nonstandard_axioms": 0,
+    "scope": "Actual native remote-run archive retrieved and separately checked; not an independent rebuild; new Hodge focal endpoints remain outside this oracle."
   },
   "new_focal_source_report": {
     "status": "TWO_FRESH_CLONES_GLOBAL_HODGE_MATCH",
@@ -149,5 +154,17 @@
   ],
   "source_manifest": "integrations/yang-mills/evidence/2026-10-30-hodge-source-boundary/SOURCE-HASHES1400.json",
   "audit": "integrations/yang-mills/evidence/2026-10-30-hodge-source-boundary/README.md",
-  "next": "Do not repeat binder/flat-Hodge audit or implement another adapter. Need the actual physical source identity/profile and uniform final constants; hRpoly/continuum remain open."
+  "next": "Do not repeat binder/flat-Hodge audit or implement another adapter. Need the actual physical source identity/profile and uniform final constants; hRpoly/continuum remain open.",
+  "earlier_core_ci_observation": {
+    "run_id": 41059745862,
+    "head": "c454346d873385e3a03e38e0f85f4f1439a032c7",
+    "name": "Lean – YangMillsCore build + axiom oracle",
+    "status": "in_progress",
+    "conclusion": null,
+    "url": "https://github.com/lluiseriksson/THE-ERIKSSON-PROGRAMME/actions/runs/41059745862",
+    "created_at": "2026-10-30T13:00:56Z",
+    "updated_at": "2026-10-30T13:01:00Z",
+    "scope": "Run-level primary status only; this turn did not retrieve raw core/oracle job logs or independently rebuild programme."
+  },
+  "current_core_closure_record": "integrations/yang-mills/evidence/2026-10-30-hodge-source-boundary/CI-CLOSURE1401.json"
 }

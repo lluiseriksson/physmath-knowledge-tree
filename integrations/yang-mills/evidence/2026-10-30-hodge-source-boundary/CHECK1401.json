@@ -1,0 +1,18 @@
+{
+  "status": "exact_native_artifact_checked",
+  "readouts": 2854,
+  "unique_names": 2851,
+  "standard_or_subset": 2828,
+  "axiom_free": 26,
+  "nonstandard": 0,
+  "repeated_names": {
+    "YangMills.RG.PhysicalGaugeCMP116Dictionary.image_bondToCube_subset_iff_physicalBondsOfCells": 2,
+    "YangMills.RG.PhysicalGaugeCMP116Dictionary.physicalBondsOfCells": 2,
+    "YangMills.RG.regimeCoherent_of_nontrivialConcreteRGWilsonBridge": 2
+  },
+  "selected_marginal_endpoints_present": true,
+  "new_Hodge_focal_endpoints_absent": true,
+  "core_jobs": 8466,
+  "separate_oracle_import_jobs": 8313,
+  "scope": "Producer-owned remote kernel evidence with separate local parsing; no independent rebuild or mathematical/physical proof audit."
+}

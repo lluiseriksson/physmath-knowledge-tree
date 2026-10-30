@@ -1,0 +1,165 @@
+{
+  "observed_date": "2026-10-30",
+  "head": "c454346d873385e3a03e38e0f85f4f1439a032c7",
+  "run": {
+    "id": 41059745862,
+    "head": "c454346d873385e3a03e38e0f85f4f1439a032c7",
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/lluiseriksson/THE-ERIKSSON-PROGRAMME/actions/runs/41059745862",
+    "created_at": "2026-10-30T13:00:56Z",
+    "updated_at": "2026-10-30T13:37:36Z"
+  },
+  "job": [
+    {
+      "id": 124076205270,
+      "head": "c454346d873385e3a03e38e0f85f4f1439a032c7",
+      "name": "lake build YangMillsCore + oracle",
+      "conclusion": "success",
+      "started_at": "2026-10-30T13:00:59Z",
+      "completed_at": "2026-10-30T13:37:36Z",
+      "steps": [
+        {
+          "number": 1,
+          "name": "Set up job",
+          "conclusion": "success"
+        },
+        {
+          "number": 2,
+          "name": "Run actions/checkout@v4",
+          "conclusion": "success"
+        },
+        {
+          "number": 3,
+          "name": "Free runner disk space",
+          "conclusion": "success"
+        },
+        {
+          "number": 4,
+          "name": "Install elan and the pinned Lean toolchain",
+          "conclusion": "success"
+        },
+        {
+          "number": 5,
+          "name": "Compute .lake cache key",
+          "conclusion": "success"
+        },
+        {
+          "number": 6,
+          "name": "Restore .lake",
+          "conclusion": "success"
+        },
+        {
+          "number": 7,
+          "name": "lake exe cache get (prebuilt Mathlib for the pinned commit)",
+          "conclusion": "success"
+        },
+        {
+          "number": 8,
+          "name": "lake build YangMillsCore",
+          "conclusion": "success"
+        },
+        {
+          "number": 9,
+          "name": "Save .lake",
+          "conclusion": "success"
+        },
+        {
+          "number": 10,
+          "name": "Build the other modules imported by oracle_check.lean",
+          "conclusion": "success"
+        },
+        {
+          "number": 11,
+          "name": "lake env lean oracle_check.lean",
+          "conclusion": "success"
+        },
+        {
+          "number": 12,
+          "name": "Record the build in the run summary",
+          "conclusion": "success"
+        },
+        {
+          "number": 13,
+          "name": "Upload build log and oracle output",
+          "conclusion": "success"
+        },
+        {
+          "number": 26,
+          "name": "Post Run actions/checkout@v4",
+          "conclusion": "success"
+        },
+        {
+          "number": 27,
+          "name": "Complete job",
+          "conclusion": "success"
+        }
+      ]
+    }
+  ],
+  "artifact": {
+    "id": 12980533614,
+    "name": "lean-core-evidence-41059745862",
+    "size_in_bytes": 41382,
+    "digest": "sha256:da739a78d7f94076f5ea14a6250ace985e91000d7b798839cc1f355234d84956",
+    "expired": false,
+    "workflow_run": {
+      "id": 41059745862,
+      "repository_id": 1180223547,
+      "head_repository_id": 1180223547,
+      "head_branch": "main",
+      "head_sha": "c454346d873385e3a03e38e0f85f4f1439a032c7"
+    }
+  },
+  "native_artifact": "integrations/yang-mills/evidence/2026-10-30-hodge-source-boundary/core-evidence-1401.zip",
+  "native_members": [
+    {
+      "name": "core-build.log",
+      "bytes": 106396,
+      "sha256": "ae1dada0ce1bccdabf61292b82062cbf37d044dde887ca039ad4e8ef8ee406e9"
+    },
+    {
+      "name": "oracle-imports-build.log",
+      "bytes": 13216,
+      "sha256": "40506ebe38111ddbf2c7d21c36df87cd8419845eb18a12e114d4781aac780e40"
+    },
+    {
+      "name": "oracle-output.txt",
+      "bytes": 346388,
+      "sha256": "4ef9016c2f81cda5401363f74459e78a9c9365aca1b817e49e1df3491e493839"
+    },
+    {
+      "name": "oracle-stats.json",
+      "bytes": 117,
+      "sha256": "1b2e14617c9c2cb7329a0d355baa40da837a3174cdf34aaef092a2ff13298088"
+    }
+  ],
+  "separate_readout_check": {
+    "status": "exact_native_artifact_checked",
+    "readouts": 2854,
+    "unique_names": 2851,
+    "standard_or_subset": 2828,
+    "axiom_free": 26,
+    "nonstandard": 0,
+    "repeated_names": {
+      "YangMills.RG.PhysicalGaugeCMP116Dictionary.image_bondToCube_subset_iff_physicalBondsOfCells": 2,
+      "YangMills.RG.PhysicalGaugeCMP116Dictionary.physicalBondsOfCells": 2,
+      "YangMills.RG.regimeCoherent_of_nontrivialConcreteRGWilsonBridge": 2
+    },
+    "selected_marginal_endpoints_present": true,
+    "new_Hodge_focal_endpoints_absent": true,
+    "core_jobs": 8466,
+    "separate_oracle_import_jobs": 8313,
+    "scope": "Producer-owned remote kernel evidence with separate local parsing; no independent rebuild or mathematical/physical proof audit."
+  },
+  "parser_private_executed_sha256": "a52a5513c3151e93b4d623d866b5562d5b0093b4d0e9de077e0886a5e6872219",
+  "parser_public_transport_sha256": "4a6e1eee42434ddaacefb493bac7bf7beb30a4bf5e681b58b0f722b24f0f2e67",
+  "parser_transport": "UTF8/LF view of executed own read-only checker; native ZIP and its four members unchanged",
+  "count_scope": "2854 readouts,2851 distinct names; three repeated names each twice. Separate8466 core and8313 oracle-import jobs are not added.",
+  "independent_programme_rebuild": false,
+  "new_Hodge_focal_run": false,
+  "physical_hypothesis_removed": false,
+  "kernel_scope": "Producer-owned remote kernel record, plus separately parsed native output; no independent scientific review, physical source proof, manuscript assessment or score.",
+  "read_history": "First decoded job-log parse failed because it was only an excerpt. First native parser excluded prime marks and assumed uniqueness; corrected delimiter and explicitly reported repeated names. Initial sources/results privately preserved; no source/kernel execution was repeated.",
+  "upstream_pins": "Unchanged manifest a9ef7ddbb466ffb360718a5e0f3e54f5b5217a87; immutable nine upstream commit identity evidence from1400 reused, not a new installed-runner dependency audit."
+}
