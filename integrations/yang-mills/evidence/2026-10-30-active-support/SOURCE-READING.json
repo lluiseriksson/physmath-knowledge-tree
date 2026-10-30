@@ -187,5 +187,95 @@
     ],
     "failed_control_disclosure": "First1406 SymPy test compared expanded/factored syntax structurally and failed; exact simplification of their difference passed. Original failure conserved privately. This was not a mathematical counterexample or model review.",
     "deduplication": "Classical covariance and source-deformation antecedents reused; retired KD campaign not rerun; no new graph node, source/candidate count, paper or assessment."
+  },
+  "raw_chart_followup": {
+    "executions": [
+      1411,
+      1412,
+      1413,
+      1414,
+      1415,
+      1416
+    ],
+    "confidence": "heuristic",
+    "independent_review": false,
+    "new_formal_proof": false,
+    "physical_hypothesis_removed": false,
+    "source_compilation_sha256": "00cc6b218dcf0e1c2884e135caa1d57b3591df036540b685e7440f30cbd4ff16",
+    "selected_compilation_pages": [
+      141,
+      142,
+      143,
+      144,
+      165,
+      297,
+      299,
+      300,
+      301,
+      302,
+      303,
+      304,
+      305,
+      312,
+      313,
+      314,
+      315,
+      316,
+      326,
+      327,
+      328,
+      359,
+      360,
+      361
+    ],
+    "source_reading_status": "Selected statements/proof steps; not full proof audit. Eq208-214 site-valued transfer rejected; original Eq42 retained.",
+    "cmp109": {
+      "doi": "10.1007/BF01215223",
+      "sha256": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+      "selected_pages": [
+        1,
+        2,
+        6,
+        7,
+        11,
+        17,
+        18,
+        19,
+        20
+      ],
+      "visually_checked": [
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    "numerical_probe": {
+      "dimension": 2,
+      "coarse_period": 3,
+      "L": [
+        2,
+        3
+      ],
+      "backgrounds": [
+        "flat",
+        "noncommuting"
+      ],
+      "cases": 4,
+      "rows": 72,
+      "floating_point_only": true,
+      "outcome": "Not falsified on frozen cases; first serialization failure retained; disclosed bool-only repair, no plan tuning.",
+      "archive": "RAW-CONTOUR1415.zip",
+      "archive_sha256": "b4fcf8ab92beaec138cf47984f4635feae56a308cb8a0b38901db3480541a0d4",
+      "archive_bytes": 32661,
+      "capsule_fingerprint": "71896f795b007b476b2d592646c0938467cd642756abfbaf433b818ebb1227de",
+      "capsule_readiness": "blocked",
+      "dossier_readiness": "attention",
+      "existing_hashed_artifacts_verified": 13,
+      "missing_first_output_produced": false
+    },
+    "observed_programme_head": "1545066253520178ff3680e1f7297e9790ccd908",
+    "new_nonlinear_tangent_files_status": "Inventory only; historical c454 kernel result not inherited",
+    "deduplication": "Same existing raw-source dossier; no new graph node/source/candidate/paper/grade; finite numerical lane closed."
   }
 }
