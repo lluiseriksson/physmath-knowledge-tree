@@ -1,0 +1,83 @@
+{
+  "status": "all_exact_scope_controls_passed",
+  "python": "3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)]",
+  "sympy": "1.14.0",
+  "assertions_enabled": true,
+  "field": "Q(i), exact symbolic arithmetic; no floating arithmetic or random fixtures",
+  "degree_bound": 2,
+  "old_nilpotent_query": [
+    [
+      "0",
+      "1",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "1"
+    ],
+    [
+      "0",
+      "0",
+      "0"
+    ]
+  ],
+  "hermitian_lift": {
+    "formula": "diag(A+t*B for t=0,1,2)/3; A=(N+N*)/2; B=(N-N*)/(2i)",
+    "order": 9,
+    "hermitian": true,
+    "max_exact_row_absolute_upper_bound": "1",
+    "old_monomial_rank": 3,
+    "lift_monomial_rank": 3
+  },
+  "positive_contraction_query": {
+    "eigenvalues": [
+      "0",
+      "1/2",
+      "1"
+    ],
+    "degree_le_2_monomial_rank": 3,
+    "polynomial": "x^2-x/2+1/32",
+    "affine_abp_edges": [
+      [
+        "0",
+        "1",
+        "x"
+      ],
+      [
+        "1",
+        "2",
+        "x-1/2"
+      ],
+      [
+        "0",
+        "2",
+        "1/32"
+      ]
+    ],
+    "p_at_query_eigenvalues": [
+      "1/32",
+      "1/32",
+      "17/32"
+    ],
+    "negative_target": "X=I_3/4",
+    "p_at_target_eigenvalues": [
+      "-1/32",
+      "-1/32",
+      "-1/32"
+    ]
+  },
+  "origin_domain_control": {
+    "rational_expression": "(1-18*x^2)^(-1)",
+    "denominator_at_zero": "1",
+    "determinant_at_original_N": "1",
+    "determinant_at_hermitian_lift": "0",
+    "singular_block": "t=0, A/3"
+  },
+  "scope": "Refutes only generic direct order-reflection and automatic origin-domain preservation by this optional Hermitian lift. Not a counterexample to Lu, an oracle lower bound with arbitrary postprocessing, or a counterexample to the actual QSS inequality. The general polynomial lift is a separate unreviewed hand derivation, not proved by these finite controls.",
+  "source_script_sha256": "7a6af506612563486f23fc4b853c152748279a1083c6f1616c52336787d8fd63",
+  "new_model_review": false,
+  "new_grade": null,
+  "new_paper": false,
+  "formal_lean_claim": false
+}
