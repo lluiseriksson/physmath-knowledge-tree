@@ -1,0 +1,123 @@
+{
+  "iteration": 1396,
+  "source_author": "Tejasvi Singh Tomar",
+  "source_doi": "10.5281/zenodo.23718035",
+  "source_version_date": "2026-10-28",
+  "first_posted_date": "2026-10-23",
+  "source_archive_sha256": "2314805738a4f41b79eb3c1593e694ad337fe6f52d13e18a70db1acc726ff5e3",
+  "input_sha256": "8409f87ef6670971efdec513dc28341e32e5b4f72536eca6e7b4222636ccfc5c",
+  "members": [
+    {
+      "member": "ep3core.py",
+      "local_name": "ep3core.py",
+      "bytes": 32801,
+      "sha256": "0f0d84a9ce257edbf9b0b6cbbff2690041fbd6aad18d139c8845e8edf547d450"
+    },
+    {
+      "member": "verify_perd.py",
+      "local_name": "verify_perd.py",
+      "bytes": 8063,
+      "sha256": "98311b321bad13d2c2ea7d4b5469cc7c3ca519b96da17f78d74118297e7e1d62"
+    },
+    {
+      "member": "certs/ep3_perd_d3.pkl.xz",
+      "local_name": "ep3_perd_d3.pkl.xz",
+      "bytes": 210188,
+      "sha256": "8409f87ef6670971efdec513dc28341e32e5b4f72536eca6e7b4222636ccfc5c"
+    },
+    {
+      "member": "LICENSE",
+      "local_name": "LICENSE",
+      "bytes": 354,
+      "sha256": "5eb6101ed1d5464c73cc123ad1246ed57e41480299ea147682ef73bb6ac38f9e"
+    }
+  ],
+  "adapted_verifier_sha256": "a6f83e4c4ff13249981c910f2a1089bf4c082bc2a22915b9964f0f6f73e1cfda",
+  "wrapper_original_sha256": "19267056aad59d6ec760131530646d64a9e954508a60de9b84242efb25a49cd6",
+  "wrapper_output_adaptation_sha256": "a3a4aff22c78f92d9d5ea0515784c5e9ace560144d2f4a0c95bb046a9cddbebe",
+  "only_wrapper_change": "W output directory changed; T explicitly retains the frozen 1393 verification source. All resource gates, source hashes, arithmetic, final checks, filenames and serialization unchanged.",
+  "run": {
+    "started_at": "2026-10-30T11:06:58.090511+00:00",
+    "python": "3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "numpy": "2.2.6",
+    "python_flint": "0.9.0",
+    "assertions_enabled": true,
+    "free_before_kib": 4732164,
+    "required_free_kib": 4194304,
+    "source_dependency": "DEPENDENCY1393.json",
+    "transport_patch": "TRANSPORT-PATCH1393.diff",
+    "scientific_runs_started": 1,
+    "automatic_restarts": 0,
+    "thread_settings": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1"
+    },
+    "owned_child_pid": 34036,
+    "completed_at": "2026-10-30T11:10:54.288781+00:00",
+    "elapsed_seconds": 236.09400000001187,
+    "exit_code": 0,
+    "minimum_observed_free_kib": 3465004,
+    "resource_cutoff": false,
+    "foreign_code_executed": true,
+    "completed_certificate_sha256": "dec5d3947b5b7cc108fdd48462b84c5ef8494c715b9d997d79c9a385b1f6f8ab",
+    "completed_certificate_bytes": 12028340,
+    "final_checks": {
+      "d": 3,
+      "k": 3,
+      "identity_nonzero_orbit_sums": 0,
+      "total_orbit_sums": 4675,
+      "multiplier_failures": 0,
+      "total_multipliers": 715,
+      "checks_passed": true
+    },
+    "status": "source_exact_checks_passed"
+  },
+  "completed_coordinates": {
+    "sha256": "dec5d3947b5b7cc108fdd48462b84c5ef8494c715b9d997d79c9a385b1f6f8ab",
+    "bytes": 12028340,
+    "retention": "Conserved privately with hashes, not redistributed in this public packet."
+  },
+  "native_files": [
+    {
+      "file": "RUN-START1393.json",
+      "sha256": "051add478365571bfe17e54d3ca46555e798632e9ecfec5b7b02300dd57adfd9",
+      "bytes": 663
+    },
+    {
+      "file": "RUN-RESULT1393.json",
+      "sha256": "ea2d8333f02e28b9179b7f73c70433cce660679554180b3c7994d8f4f2c9dca5",
+      "bytes": 1267
+    },
+    {
+      "file": "RUN1393.log",
+      "sha256": "287ab1c338483e4ba5347cb8c403b7014a31b805b9d0b16ba3647590200081ed",
+      "bytes": 559
+    },
+    {
+      "file": "WRAPPER-STDOUT1396.log",
+      "sha256": "a62e7c9b369dca9501431b0b8bf8ece1a40a9c41204ff4ded32189b923a14e94",
+      "bytes": 304
+    }
+  ],
+  "native_zip_sha256": "f2c3d14242041b8bd38f518c548b96d9081c0ac4feec12d652a79f31d0f3ffef",
+  "readable_log_transport": {
+    "native_sha256": "287ab1c338483e4ba5347cb8c403b7014a31b805b9d0b16ba3647590200081ed",
+    "public_sha256": "4eb77af2f2d182602a223c4e3a06f58ed8292550ab3ffadd6de3b85b6c48da27",
+    "change": "UTF-8 CRLF to LF only; exact native bytes retained in the ZIP."
+  },
+  "reading_status": "selected source statements and code read; one exact d3 source-verifier execution completed",
+  "independent_implementation": false,
+  "complete_source_proof_audit": false,
+  "external_lean_dependency_audit": false,
+  "new_model_review": false,
+  "new_manuscript_assessment": false,
+  "new_score": null,
+  "reproducible_campaign_capsule_claimed": false,
+  "all_dimension_verification": false,
+  "all_copy_verification": false,
+  "stronger_signed_operator_comparison_proved": false,
+  "source_license": "CC-BY-4.0; source software/input bodies not redistributed."
+}
