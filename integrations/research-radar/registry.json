@@ -1749,6 +1749,78 @@
         "domain.analysis",
         "domain.quantum_information_theory"
       ]
+    },
+    {
+      "id": "balaban-cmp119-conditional-boundary",
+      "title": "Convergent renormalization expansions for lattice gauge theories (1988)",
+      "url": "https://doi.org/10.1007/BF01217741",
+      "kind": "journal_article",
+      "publication_year": 1988,
+      "observed_on": "2026-10-30",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Selected cutoff/reconstruction passages and printed254/260 inspected: T1 is an outer integral operation, not a normalized history probability; the effective action absorbs inside log normalization. Local unmarked R-action bounds do not supply a marked covariance theorem.",
+      "limits": "No full-proof audit or R I/II construction audit. Original coupling-flow, physical dictionary and marked outer-response obligations retained.",
+      "reuse": "Bibliographic metadata and original synthesis only; no copied source PDF or inferred training permission.",
+      "anchors": [
+        "domain.analysis"
+      ],
+      "inspected_pdf_sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+      "inspected_pdf_bytes": 4172827
+    },
+    {
+      "id": "slominski-reflected-sde-1993",
+      "title": "Reflected SDE existence, uniqueness and stability (1993)",
+      "url": "https://www.numdam.org/item/AIHPB_1993__29_2_163_0.pdf",
+      "kind": "journal_article",
+      "publication_year": 1993,
+      "observed_on": "2026-10-30",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Abstract, domain assumptions(A),(B), and Theorem5 read. Bounded Lipschitz coefficients and a finite-dimensional convex compact domain with an inball provide a normal-reflection framework for the conditional calculation.",
+      "limits": "Selected statements only; no full-proof audit. Existence-domain constants may depend on volume and are not claimed uniform covariance constants.",
+      "reuse": "Bibliographic metadata and original synthesis only; no copied source PDF or inferred training permission.",
+      "anchors": [
+        "domain.analysis"
+      ],
+      "inspected_pdf_sha256": "b01a032420ad4b4b31275a6319d9d98d731f2a32b46cf26d41276375eaeb0c73",
+      "inspected_pdf_bytes": 2426875
+    },
+    {
+      "id": "ambrosio-savare-zambotti-logconcave",
+      "title": "Log-concave Fokker-Planck reference measures (first preprint2007)",
+      "url": "https://cvgmt.sns.it/media/doc/paper/697/asz.pdf",
+      "kind": "journal_article",
+      "publication_year": 2007,
+      "observed_on": "2026-10-30",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Abstract, author-PDF Theorem1.2 and adjacent convex-domain reflection example read: symmetric gradient form, invariance and reversible process support the stated finite-dimensional conditional argument.",
+      "limits": "No full-proof audit. Author-deposited PDF is not asserted byte-identical to arXiv0704.2458 or a journal version. No physical global correlation conclusion.",
+      "reuse": "Bibliographic metadata and original synthesis only; no copied source PDF or inferred training permission.",
+      "anchors": [
+        "domain.analysis"
+      ],
+      "inspected_pdf_sha256": "ffdd8f79df957447f37c83f3884e8a3fcbf33992ba002e16fabb947eeab67f5d",
+      "inspected_pdf_bytes": 399178
+    },
+    {
+      "id": "menz-covariance-comparison-2014",
+      "title": "A Brascamp-Lieb type covariance estimate (2014)",
+      "url": "https://doi.org/10.1214/EJP.v19-2997",
+      "kind": "journal_article",
+      "publication_year": 2014,
+      "observed_on": "2026-10-30",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Abstract and selected journal-PDF3/4/8 statements read. The positive absolute comparison matrix needed by its covariance estimate is a separate condition, not a consequence of a positive signed physical precision.",
+      "limits": "No full-proof audit. This comparison theorem is not imported into the hard-cutoff calculation; arXiv1402.5160v1 identifies the first preprint, not exact journal bytes.",
+      "reuse": "Bibliographic metadata and original synthesis only; no copied source PDF or inferred training permission.",
+      "anchors": [
+        "domain.analysis"
+      ],
+      "inspected_pdf_sha256": "dcdf9cac93105892648500f6deb91e05a5a78a521c3a5d656f685e401af7bbe9",
+      "inspected_pdf_bytes": 305597
     }
   ],
   "candidates": [
@@ -2328,6 +2400,29 @@
         "interpretation": "Stronger ideal information claim excluded; practical noisy/sampled prediction question untested",
         "novelty": "Classical observability framework; no new manuscript/score/robustness or Lean claim"
       }
+    },
+    {
+      "id": "conditional-reflection-to-global-shortcut",
+      "title": "Conditional reflection does not replace marked outer-history transport",
+      "status": "abandoned",
+      "confidence": "speculative",
+      "paper_score": null,
+      "source_ids": [
+        "balaban-cmp119-conditional-boundary",
+        "slominski-reflected-sde-1993",
+        "ambrosio-savare-zambotti-logconcave",
+        "menz-covariance-comparison-2014"
+      ],
+      "node_ids": [
+        "domain.analysis"
+      ],
+      "dictionary": "Independent raw bond blocks map to reflected coordinates; actual primitive carriers to S/T; original positive history disintegration to pi. Preserve the actual composed inserted observable, normalization and carrier distance.",
+      "preserved": "Conditional covariance decay follows on a verified uniformly convex finite-range product class via weighted synchronous reflection; exact total covariance retains the outer means.",
+      "lost_or_unproved": "Original physical dictionary/coercivity/exterior history margin, bad-history control, marked outer response and continuum/global physical conclusions remain unproved. Formal R-expanded terms are not automatically probabilities.",
+      "hypothesis_to_remove": "An actual two-mark outer response estimate with uniform volume and distance constants; it cannot be replaced by a named conditional mixing wrapper or a scalar vacuum majorant.",
+      "falsifier": "Nonproduct raw cutoff, failed full exterior/inside Hessian margin, nonuniform block row/column bounds, or lost mark distance invalidates the corresponding application. Conditional decay alone leaves the outer covariance even with no bad histories.",
+      "next_finite_task": "Reconcile actual composed two-mark numerator with the existing R I/II extraction packet before attempting a marked bound; do not duplicate its inventory or claim unmarked local activities solve the connected problem.",
+      "review_packet": "integrations/research-radar/notes/2026-10-30-conditional-reflection.md; participating current Codex synthesis, no independent review, PDF assessment or score."
     }
   ],
   "source_refresh": {
