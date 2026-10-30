@@ -1,0 +1,101 @@
+{
+  "scope": "Directed12-endpoint primary inventory, not exhaustive",
+  "sources": [
+    {
+      "url": "https://github.com/openai/math",
+      "status": 200,
+      "bytes": 236624,
+      "sha256": "32be8fbaba0e167de98b833c4dda9f6101a57b241e075892601bcb547691bb97",
+      "at": "2026-10-30T02:12:25.685Z",
+      "level": "inventory_only"
+    },
+    {
+      "url": "https://www.anthropic.com/research",
+      "status": 200,
+      "bytes": 363738,
+      "sha256": "f9d3732e88c59525f77e6d4e61a53e8fe91ffc68c11794cf76228afa0fd6dc9f",
+      "at": "2026-10-30T02:12:25.301Z",
+      "level": "inventory_only"
+    },
+    {
+      "url": "https://github.com/google-deepmind/formal-conjectures",
+      "status": 200,
+      "bytes": 305025,
+      "sha256": "049a2357db36655c97c667791b057fc8f26004101d2d8615d25a0c7fd5751f65",
+      "at": "2026-10-30T02:12:25.699Z",
+      "level": "inventory_only"
+    },
+    {
+      "url": "https://www.microsoft.com/en-us/research/research-area/computational-sciences-mathematics/",
+      "status": 200,
+      "bytes": 605132,
+      "sha256": "fa9018a0480e19c2857f9e4dc4cc021117699da0d7ee174e621c9bded71a8c75",
+      "at": "2026-10-30T02:12:26.408Z",
+      "level": "inventory_only"
+    },
+    {
+      "url": "https://ai.meta.com/results/",
+      "status": 200,
+      "bytes": 305982,
+      "sha256": "ffdd00b664c943dae930ff21d6565bb265730526b483913385d7249cc4513121",
+      "at": "2026-10-30T02:12:30.637Z",
+      "level": "inventory_only"
+    },
+    {
+      "url": "https://github.com/project-numina",
+      "status": 200,
+      "bytes": 244412,
+      "sha256": "6e64ec0cf956a3c986247d2c061a085e298d97023741696eadf0f7ec36a64ab1",
+      "at": "2026-10-30T02:12:25.669Z",
+      "level": "inventory_only"
+    },
+    {
+      "url": "https://github.com/M32026/3d-sticky-kakeya",
+      "status": 200,
+      "bytes": 225623,
+      "sha256": "5e157cfe6db719c04cefdf6397978cccd389795ac1a37304b5dac88287f29bc8",
+      "at": "2026-10-30T02:12:25.724Z",
+      "level": "inventory_only"
+    },
+    {
+      "url": "https://www.sri.inf.ethz.ch/research/mathllm",
+      "status": 200,
+      "bytes": 32567,
+      "sha256": "dd4f2c486ef7f3dc3f3f1cfd861bd669cfc163f665d4b1c38ae6af08184c7a2a",
+      "at": "2026-10-30T02:12:25.355Z",
+      "level": "inventory_only"
+    },
+    {
+      "url": "https://www.harmonic.fun/news/",
+      "status": 200,
+      "bytes": 111559,
+      "sha256": "b4b006b56b8734f439333732ab85001cd5dfc54c3c28a4a52ca0ae5dab7aee6d",
+      "at": "2026-10-30T02:12:25.388Z",
+      "level": "inventory_only"
+    },
+    {
+      "url": "https://arxiv.org/list/math/new",
+      "status": 200,
+      "bytes": 1738130,
+      "sha256": "4b7a875de055255054a0c172bff500a369587c5e356a45c9e4fed312d2e6b64e",
+      "at": "2026-10-30T02:12:25.666Z",
+      "level": "inventory_only"
+    },
+    {
+      "url": "https://airr.science/catalog.json",
+      "status": 200,
+      "bytes": 1456595,
+      "sha256": "e321991f93b1a0c8f14c9a1445a716a8671cd7d2bdeb9361ce3ea7eee90a1116",
+      "at": "2026-10-30T02:12:25.453Z",
+      "level": "inventory_only"
+    },
+    {
+      "url": "https://www.ai.vixra.org/author/lluis_eriksson",
+      "status": 200,
+      "bytes": 70183,
+      "sha256": "fb83cafd9e59186d286bc0b0e82ad95813128b02af7d906fb80f301a2e572afd",
+      "at": "2026-10-30T02:12:26.143Z",
+      "level": "inventory_only"
+    }
+  ]
+}

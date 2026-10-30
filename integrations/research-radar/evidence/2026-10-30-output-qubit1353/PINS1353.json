@@ -1,0 +1,100 @@
+{
+  "heads": [
+    {
+      "repository": "openai/math",
+      "status": 200,
+      "head": "4eaee87548250b2682affda7d05d947c05554bae",
+      "date": "2026-10-30T00:35:35Z",
+      "subject": "Merge pull request #4 from openai/codex/update-10-29",
+      "response_sha256": "8d0bd150aa8050a7578bb003223e61268ff24ffdd266d61d95922cf8db9d526e",
+      "at": "2026-10-30T02:12:31.459Z",
+      "scope": "metadata_only"
+    },
+    {
+      "repository": "google-deepmind/formal-conjectures",
+      "status": 200,
+      "head": "feacabbcf6ed2e7b622663c3e1c0f61038183392",
+      "date": "2026-10-29T22:54:24Z",
+      "subject": "feat(ErdosProblems/1195): add Erdős Problem 1195 (#7585)",
+      "response_sha256": "a73f11e69d5815f294ad527c37a3dd4fa62066c468ed483bd745553fb16bbbfa",
+      "at": "2026-10-30T02:12:31.185Z",
+      "scope": "metadata_only"
+    },
+    {
+      "repository": "lluiseriksson/physmath-knowledge-tree",
+      "status": 200,
+      "head": "43d450a98c58cc62e4149347b1be08c7e728c9cd",
+      "date": "2026-10-30T01:44:29Z",
+      "subject": "Merge pull request #205 from lluiseriksson/codex/optical-gain-boundary-20261030",
+      "response_sha256": "c9be80142fc8d5e84baff2aa70ad421b3b07125e1cad2a7fc4ae0579331a3411",
+      "at": "2026-10-30T02:12:31.189Z",
+      "scope": "metadata_only"
+    },
+    {
+      "repository": "lluiseriksson/the-eriksson-programme",
+      "status": 200,
+      "head": "73deb84908819e399cd3aa33205ad243ff8a0e74",
+      "date": "2026-10-30T01:37:21Z",
+      "subject": "Merge pull request #94 from lluiseriksson/codex/physical-hodge-20261030",
+      "response_sha256": "28b4b4ffa505b986be26e77ac8f31982a8b0461e8bb83ef7fda664fd07777cfa",
+      "at": "2026-10-30T02:12:31.437Z",
+      "scope": "metadata_only"
+    }
+  ],
+  "formal_packages": [
+    {
+      "name": "mathlib",
+      "required": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+      "observed": "fabf563a7c95a166b8d7b6efca11c8b4dc9d911f",
+      "matches": true
+    },
+    {
+      "name": "plausible",
+      "required": "63045536fe95024e6c18fc7b48e03f506701c5bc",
+      "observed": "63045536fe95024e6c18fc7b48e03f506701c5bc",
+      "matches": true
+    },
+    {
+      "name": "LeanSearchClient",
+      "required": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+      "observed": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+      "matches": true
+    },
+    {
+      "name": "importGraph",
+      "required": "5c7542ed018c78194f1e2b903eaf6a792b74c03d",
+      "observed": "5c7542ed018c78194f1e2b903eaf6a792b74c03d",
+      "matches": true
+    },
+    {
+      "name": "proofwidgets",
+      "required": "24b0d9dc081c5423f8eec7e866c441e5184f29d9",
+      "observed": "24b0d9dc081c5423f8eec7e866c441e5184f29d9",
+      "matches": true
+    },
+    {
+      "name": "aesop",
+      "required": "e3cb2f741431ce31bf73549fb52316a57368b06f",
+      "observed": "e3cb2f741431ce31bf73549fb52316a57368b06f",
+      "matches": true
+    },
+    {
+      "name": "Qq",
+      "required": "f46324995fca5f0483b742e4eb4daec7f4ee50d2",
+      "observed": "f46324995fca5f0483b742e4eb4daec7f4ee50d2",
+      "matches": true
+    },
+    {
+      "name": "batteries",
+      "required": "fa08db58b30eb033edcdab331bba000827f9f785",
+      "observed": "fa08db58b30eb033edcdab331bba000827f9f785",
+      "matches": true
+    },
+    {
+      "name": "Cli",
+      "required": "92564e5770e4d09f2d86dfbf8ada1e9c715b384c",
+      "observed": "92564e5770e4d09f2d86dfbf8ada1e9c715b384c",
+      "matches": true
+    }
+  ]
+}

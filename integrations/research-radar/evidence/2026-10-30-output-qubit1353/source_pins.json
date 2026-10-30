@@ -1,0 +1,87 @@
+{
+  "recorded_utc": "2026-10-30T02:14:30.764143+00:00",
+  "local_sources": [
+    {
+      "role": "frozen_author_draft",
+      "path": "C:\\Trabajo\\airr\\2026-10-30_output-qubit1351\\ARGUMENT1351.md",
+      "sha256": "fd637fad91828dc772bc0aa89cac32ff1c89c677b3f65c41fe2b831e1b57b859",
+      "bytes": 7115,
+      "expected_pin_matches": true,
+      "inspection_scope": "Entire draft, sections 1-6"
+    },
+    {
+      "role": "author_exact_checker",
+      "path": "C:\\Trabajo\\airr\\2026-10-30_output-qubit1351\\check_trine1351.py",
+      "sha256": "f1e580ba0bdd35254ce75a61be535b2c77c0ef35017d7748e49a0dcad0e72b48",
+      "bytes": 2523,
+      "expected_pin_matches": true,
+      "inspection_scope": "Entire source; replayed from audit-owned copy only"
+    },
+    {
+      "role": "frozen_exact_output",
+      "path": "C:\\Trabajo\\airr\\2026-10-30_output-qubit1351\\EXACT1351.json",
+      "sha256": "6b254c56a009df0ca335401ffa4394fce2d1a2083eb4529f438fbc8f5387bede",
+      "bytes": 1160,
+      "expected_pin_matches": true,
+      "inspection_scope": "Entire output; original bytes unchanged"
+    },
+    {
+      "role": "local_spectral_antecedent",
+      "path": "D:\\Proyectos\\airr-investigacion\\2026-10-29_preparation1211\\main.tex",
+      "sha256": "e4f19e5ea08a3a3f696649a32d2e7334c7a2bafbc87dc88073fffb883b274a17",
+      "bytes": 16264,
+      "expected_pin_matches": true,
+      "inspection_scope": "Intended spectral/interface passage, lines 28-96; incidental search excerpts disclosed in context.json; whole-file hash is not a whole-file assessment"
+    },
+    {
+      "role": "local_outcome_count_antecedent",
+      "path": "D:\\Proyectos\\airr-investigacion\\2026-10-29_joint1212\\JOINT1212.txt",
+      "sha256": "dd22db034e3369f364e0981759a6f98d57d8aed37c5874ed9bb18b1610ecc426",
+      "bytes": 4530,
+      "expected_pin_matches": true,
+      "inspection_scope": "Intended hypotheses and N-1 lower bound, lines 7-11; initial search also returned other passages, disclosed"
+    },
+    {
+      "role": "storage_instructions",
+      "path": "D:\\LEEME.md",
+      "sha256": "7ec14c1a7848b9228a4fa7f0bb6f85e53fb9ade4cbd11249fe8cb34a1e6c87a2",
+      "bytes": 15491,
+      "expected_pin_matches": true,
+      "inspection_scope": "Entire instruction file"
+    },
+    {
+      "role": "agent_instructions",
+      "path": "C:\\Trabajo\\physmath-knowledge-tree\\weyl-stability-20261024\\AGENTS.md",
+      "sha256": "161421bc08fbca6651bd27fb1ca07b34a1bf5784b557aa2725d566dbe1c379c4",
+      "bytes": 4497,
+      "expected_pin_matches": true,
+      "inspection_scope": "Entire instruction file; no graph/corpus claim or modification"
+    }
+  ],
+  "web_sources": [
+    {
+      "title": "Quantum Doeblin Coefficients: Interpretations and Applications",
+      "authors": "Ian George; Christoph Hirche; Theshani Nuradha; Mark M. Wilde",
+      "url": "https://arxiv.org/html/2503.22823v3",
+      "version": "v3",
+      "retrieved_utc_date": "2026-10-30",
+      "selected_use": "Section 3.1 Definition 4 / Proposition 3 (Hermitian primal, equality-marginal dual); Section 7.1 Proposition 34 (CQ formulation).",
+      "page_lines_used": [
+        {
+          "first": 404,
+          "last": 433
+        },
+        {
+          "first": 1607,
+          "last": 1628
+        }
+      ],
+      "incidental_tool_return": "TOC, abstract/introduction and find snippets outside selected sections returned by browser; no broad source assessment drawn from them.",
+      "local_snapshot_saved": false,
+      "sha256": null,
+      "pin_limit": "Exact versioned URL and retrieval date, not a byte-pinned local snapshot. No full-source proof audit."
+    }
+  ],
+  "input_mutations": false,
+  "unchanged_frozen_input_pins_verified_at_finalize": true
+}
