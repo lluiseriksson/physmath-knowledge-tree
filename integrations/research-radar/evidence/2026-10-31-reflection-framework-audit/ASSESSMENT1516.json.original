@@ -1,0 +1,178 @@
+{
+  "audit_id": "1516",
+  "created_at_utc": "2026-10-31T00:32:54.133586+00:00",
+  "audit_count": 1,
+  "scoring": "unscored; no numeric grade or target score",
+  "identity": {
+    "requested_model": "gpt-6-astra",
+    "requested_reasoning_effort": "xhigh",
+    "observed_runtime_model": "unverified",
+    "observed_runtime_reasoning_effort": "unverified",
+    "runtime_attestation_available": false,
+    "configuration_provenance": "Parent task and input manifest specify the request; they do not attest actual routing."
+  },
+  "independence": {
+    "separate_assigned_review_context": true,
+    "scientific_independence": "unverified",
+    "input_authorship": "Participating parent, according to supplied provenance",
+    "independent_peer_review_claim": false
+  },
+  "scope": "Mathematical weighted normal reflection and reversible covariance inference in exactly REFLECTION1473.md, FRAMEWORK1474.md and CONDITIONAL-DOSSIER1475.md; primary statement applicability only.",
+  "input_manifest": {
+    "file": "INPUT-MANIFEST1516.json",
+    "sha256": "70757cbe8348ef4fcbfcd04e20e48126fa6aaa3c9ac3bc0469e0377d52c5ac6f",
+    "verified": true
+  },
+  "inputs": [
+    {
+      "file": "REFLECTION1473.md",
+      "bytes": 6819,
+      "sha256": "6a046dd5573c3dcb486a802312ed79f54e47b842649e222ac6d00ee39827854c",
+      "verified": true,
+      "read_completely": true
+    },
+    {
+      "file": "FRAMEWORK1474.md",
+      "bytes": 6458,
+      "sha256": "c02371b3f7937193399c162915aa1dfcdd669749235df554a5a7a431294cb45e",
+      "verified": true,
+      "read_completely": true
+    },
+    {
+      "file": "CONDITIONAL-DOSSIER1475.md",
+      "bytes": 9678,
+      "sha256": "04269b524379768a01c1fc27cf62db00971ee18ef595086aa00b53e782c9a189",
+      "verified": true,
+      "read_completely": true
+    }
+  ],
+  "primary_sources": [
+    {
+      "name": "asz",
+      "url": "https://cvgmt.sns.it/media/doc/paper/697/asz.pdf",
+      "bytes": 399178,
+      "sha256": "ffdd8f79df957447f37c83f3884e8a3fcbf33992ba002e16fabb947eeab67f5d",
+      "pages": 43,
+      "verified": true,
+      "inspected_pdf_pages_one_based": [
+        3
+      ],
+      "inspection": "Selected statements visually inspected and checked against extracted text; proofs not fully audited.",
+      "temporary_local_path": "C:\\Trabajo\\airr\\2026-10-31_execution1516\\review-tmp\\asz.pdf",
+      "foreign_pdf_preservation": "Temporary inspection only; not an output or a file to preserve on D/public repositories."
+    },
+    {
+      "name": "slominski",
+      "url": "https://www.numdam.org/item/AIHPB_1993__29_2_163_0.pdf",
+      "bytes": 2426875,
+      "sha256": "b01a032420ad4b4b31275a6319d9d98d731f2a32b46cf26d41276375eaeb0c73",
+      "pages": 37,
+      "verified": true,
+      "inspected_pdf_pages_one_based": [
+        4,
+        5,
+        6,
+        25,
+        29
+      ],
+      "inspection": "Selected statements visually inspected and checked against extracted text; proofs not fully audited.",
+      "temporary_local_path": "C:\\Trabajo\\airr\\2026-10-31_execution1516\\review-tmp\\slominski.pdf",
+      "foreign_pdf_preservation": "Temporary inspection only; not an output or a file to preserve on D/public repositories."
+    }
+  ],
+  "disposition": {
+    "analytic_theorem": "conditionally_valid_with_minor_specification_repairs",
+    "material_refutation_of_conditional_estimate_found": false,
+    "source_framework": "supported_at_selected_statement_level_with_explicit_square_dimension_reduction",
+    "physical_application": "not_verified",
+    "unconditional_or_global_decay": "not_established",
+    "novelty_assessed": false,
+    "formal_verification_claim": false
+  },
+  "accepted_conditions": [
+    "The exact retained domain is a full-dimensional compact convex product in distinct independent raw blocks.",
+    "The exact real potential is C2 near that product and Hess H >= m I with m > 0.",
+    "Actual raw Hessian blocks have finite graph range R_H and both row and column block-norm sums bounded by B_H.",
+    "The observables have full Euclidean Lipschitz bounds and fixed coordinate-gradient carriers.",
+    "For uniformity, m, B_H, R_H and observable Lipschitz constants are uniform over the asserted volumes, histories and interpolation parameters.",
+    "The history and interpolation parameter are fixed during each autonomous semigroup argument."
+  ],
+  "findings": [
+    {
+      "id": "A1",
+      "classification": "accepted",
+      "topic": "Weighted Hessian and corner signs",
+      "finding": "Schur conjugation bound and blockwise normal-cone inequalities give synchronous decay exp(-m s/2). No smooth flow or boundary smoothness is required."
+    },
+    {
+      "id": "A2",
+      "classification": "accepted",
+      "topic": "Gradient metric and normalization",
+      "finding": "The dual norm is |W^-1 grad f|. Pairing with |W grad g| gives spatial decay; sqrt(2) noise yields E(u,v)=integral grad u dot grad v with no extra factor two."
+    },
+    {
+      "id": "A3",
+      "classification": "accepted",
+      "topic": "Covariance identity and uniform constants",
+      "finding": "Finite-volume convergence plus the uniformly integrable gradient bound gives coefficient 2/m, hence 4 gamma^2/a_soft for the assumed primitive bound. Auxiliary diameter and inball constants do not enter the final estimate."
+    },
+    {
+      "id": "F1",
+      "classification": "minor_specification",
+      "location": "FRAMEWORK1474.md:14",
+      "topic": "Literal Słomiński theorem setup",
+      "finding": "The printed setup uses square coefficients and a driver of the state dimension, while the note inserts an n by n+1 matrix. A direct application needs bookkeeping.",
+      "repair": "Use state (A,q) in U x R, driver (s,B_s), append a zero final coefficient row and initial q=0, and project the strong solution. Domain conditions and bounded Lipschitz coefficients are preserved.",
+      "effect": "No new analytic hypothesis; not a material refutation."
+    },
+    {
+      "id": "F2",
+      "classification": "minor_specification",
+      "location": "REFLECTION1473.md:9",
+      "topic": "Finite weights and degenerate carriers",
+      "finding": "Finite volume alone does not rule out infinite graph distance or an empty carrier.",
+      "repair": "Treat constant observables separately; assume a connected graph or use weights exp(-alpha min(dist(b,S),M)) and let M tend to infinity.",
+      "effect": "No material change to the claimed estimate."
+    },
+    {
+      "id": "G1",
+      "classification": "material_application_gate",
+      "topic": "Actual physical law",
+      "finding": "Product geometry, hard-to-soft coercivity, complete inside/exterior Hessian margin, raw-coordinate finite range and uniform block sums, primitive Lipschitz constant and observable transport remain unverified assumptions."
+    },
+    {
+      "id": "G2",
+      "classification": "material_application_gate",
+      "topic": "History averaging",
+      "finding": "The law-of-total-covariance argument is correct, but a conditional bound and even zero bad-history probability leave the covariance of conditional means uncontrolled. A small distance-independent bad probability leaves a distance-independent remainder."
+    }
+  ],
+  "checked": [
+    "All three complete input texts and all input hashes.",
+    "Exact primary PDF bytes, hashes, page counts and selected actual statements.",
+    "Domain assumptions (A),(B), including all supporting normals at corners.",
+    "Bounded Lipschitz drift, continuous driver, measurable synchronous construction and dimension bookkeeping.",
+    "Block Schur norm, conjugation orientation, mean Hessian and weighted finite-variation inequality.",
+    "Dual gradient norm, Sobolev/form-domain passage, invariant/reversible semigroup identification and form normalization.",
+    "Covariance identity, endpoint convergence, constant 2/m and volume-uniformity under uniform hypotheses.",
+    "Conditional-to-physical limitations and elementary averaging inequality."
+  ],
+  "not_checked": [
+    "Full proofs of the cited primary source theorems.",
+    "Original CMP/Yang-Mills sources, actual physical cutoff dictionary, hard-gap bridge or primitive derivative calculations.",
+    "A manuscript or manuscript PDF, other notes, root state, repositories or other chats.",
+    "Probability or nonemptiness of the admitted event, complement estimates, outer covariance or exact fine-observable transport.",
+    "Lean proofs, builds, all-scale claims, novelty or a physical mass-gap theorem.",
+    "Actual runtime routing/effort, scientific independence, exhaustive audit deduplication or an independent concurrency inventory."
+  ],
+  "actions": {
+    "inputs_modified": false,
+    "other_chats_modified": false,
+    "repository_modified": false,
+    "subagents_spawned": false,
+    "builds_run": false,
+    "published": false,
+    "foreign_pdf_bodies_copied_to_D_or_public_repository": false
+  },
+  "report": "REVIEW1516.md"
+}

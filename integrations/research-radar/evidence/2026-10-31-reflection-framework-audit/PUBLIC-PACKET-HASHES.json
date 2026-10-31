@@ -1,0 +1,102 @@
+{
+  "scope": "Own exact notes/report/manifests and parent disposition only; exact CRLF snapshots distinguished from LF reading copies. No source PDF corpus.",
+  "exact_inputs_outputs": {
+    "ASSESSMENT1516.json": {
+      "exact_file": "ASSESSMENT1516.json.original",
+      "bytes": 9107,
+      "sha256": "470a7c48bdd0b1f6558efa1c7be307650c5fa07405698e551d7e36c835075b7b"
+    },
+    "CONDITIONAL-DOSSIER1475.md": {
+      "exact_file": "CONDITIONAL-DOSSIER1475.md",
+      "bytes": 9678,
+      "sha256": "04269b524379768a01c1fc27cf62db00971ee18ef595086aa00b53e782c9a189"
+    },
+    "FRAMEWORK1474.md": {
+      "exact_file": "FRAMEWORK1474.md",
+      "bytes": 6458,
+      "sha256": "c02371b3f7937193399c162915aa1dfcdd669749235df554a5a7a431294cb45e"
+    },
+    "INPUT-MANIFEST1516.json": {
+      "exact_file": "INPUT-MANIFEST1516.json",
+      "bytes": 2788,
+      "sha256": "70757cbe8348ef4fcbfcd04e20e48126fa6aaa3c9ac3bc0469e0377d52c5ac6f"
+    },
+    "REFLECTION1473.md": {
+      "exact_file": "REFLECTION1473.md",
+      "bytes": 6819,
+      "sha256": "6a046dd5573c3dcb486a802312ed79f54e47b842649e222ac6d00ee39827854c"
+    },
+    "REVIEW1516.md": {
+      "exact_file": "REVIEW1516.md",
+      "bytes": 19156,
+      "sha256": "04ffc7f9ecdf52e6eeadf419f355d78c1c5015a1f434f4c58889c4d94dc2665a"
+    },
+    "SHA256-MANIFEST1516.json": {
+      "exact_file": "SHA256-MANIFEST1516.json.original",
+      "bytes": 1927,
+      "sha256": "b961ba27af678f5e7da4a9bff68d231c81ef957f17376802e9944ad53ef826c0"
+    }
+  },
+  "artifacts": [
+    {
+      "file": ".gitattributes",
+      "bytes": 18,
+      "sha256": "df543f10aa3726e8e4f80f1faf60131496e5948ea08f5cd0509675dc538d0a38"
+    },
+    {
+      "file": "ASSESSMENT1516.json",
+      "bytes": 8929,
+      "sha256": "218188481056f66758595110af7bbfec20c93761d2a54e84bec6ba9bd3535e59"
+    },
+    {
+      "file": "ASSESSMENT1516.json.original",
+      "bytes": 9107,
+      "sha256": "470a7c48bdd0b1f6558efa1c7be307650c5fa07405698e551d7e36c835075b7b"
+    },
+    {
+      "file": "CONDITIONAL-DOSSIER1475.md",
+      "bytes": 9678,
+      "sha256": "04269b524379768a01c1fc27cf62db00971ee18ef595086aa00b53e782c9a189"
+    },
+    {
+      "file": "DISPOSITION1520.md",
+      "bytes": 4115,
+      "sha256": "867fae2544550c34d20019d30f182e781f7a8f6145a50458018bf92b4112bc0e"
+    },
+    {
+      "file": "FRAMEWORK1474.md",
+      "bytes": 6458,
+      "sha256": "c02371b3f7937193399c162915aa1dfcdd669749235df554a5a7a431294cb45e"
+    },
+    {
+      "file": "INPUT-MANIFEST1516.json",
+      "bytes": 2788,
+      "sha256": "70757cbe8348ef4fcbfcd04e20e48126fa6aaa3c9ac3bc0469e0377d52c5ac6f"
+    },
+    {
+      "file": "README.md",
+      "bytes": 1779,
+      "sha256": "b547035a52cad3a43a6eef2bcdc5ff6b25d5a7a8e458d132531bf37185034a82"
+    },
+    {
+      "file": "REFLECTION1473.md",
+      "bytes": 6819,
+      "sha256": "6a046dd5573c3dcb486a802312ed79f54e47b842649e222ac6d00ee39827854c"
+    },
+    {
+      "file": "REVIEW1516.md",
+      "bytes": 19156,
+      "sha256": "04ffc7f9ecdf52e6eeadf419f355d78c1c5015a1f434f4c58889c4d94dc2665a"
+    },
+    {
+      "file": "SHA256-MANIFEST1516.json",
+      "bytes": 1866,
+      "sha256": "5cad1553afbc7d87f8e7d8269625b91b97fe269adfcdd4a108e0f94925837e8d"
+    },
+    {
+      "file": "SHA256-MANIFEST1516.json.original",
+      "bytes": 1927,
+      "sha256": "b961ba27af678f5e7da4a9bff68d231c81ef957f17376802e9944ad53ef826c0"
+    }
+  ]
+}
