@@ -1,0 +1,167 @@
+{
+  "scope": "Own exact review inputs/report/manifests and parent disposition. Binary originals retain CRLF or original trailing blank lines;readable copies explicitly differ in whitespace only;no foreign PDF bodies.",
+  "exact_inputs_outputs": {
+    "ASSESSMENT1524.json": {
+      "exact_file": "ASSESSMENT1524.json.original",
+      "bytes": 15216,
+      "sha256": "81904aaec9670b97024a576bdde72f1e5ab14df0ac0d7e8158bf59b75794fe11"
+    },
+    "AXIAL-TANGENT1489.md": {
+      "exact_file": "AXIAL-TANGENT1489.md",
+      "bytes": 6675,
+      "sha256": "ac514a73bacc4896e08261c1be2296e5eb2af9265acf1284cf90e0607416e64d"
+    },
+    "BACKGROUND-RESPONSE1488.md": {
+      "exact_file": "BACKGROUND-RESPONSE1488.md",
+      "bytes": 6912,
+      "sha256": "3784d21bb6bd5174320d53a56012d1e07fe8afd9b1ca99717758dc84250d465b"
+    },
+    "CARRIERS1491.md": {
+      "exact_file": "CARRIERS1491.md",
+      "bytes": 5019,
+      "sha256": "3ba15e0f9ebba72952f18de5c06d0eb73cad285eeaabdead7d732b6527fe62a4"
+    },
+    "CONTEXT-REVIEW1516.md": {
+      "exact_file": "CONTEXT-REVIEW1516.md",
+      "bytes": 19156,
+      "sha256": "04ffc7f9ecdf52e6eeadf419f355d78c1c5015a1f434f4c58889c4d94dc2665a"
+    },
+    "FIRST-T-INSERTION1485.md": {
+      "exact_file": "FIRST-T-INSERTION1485.md",
+      "bytes": 6655,
+      "sha256": "79d9d285ef63623d62a56995dfc3f334915af99b0a2ef3a05f8de98e2d0d6faf"
+    },
+    "FIRST-T-SCORE1486.md": {
+      "exact_file": "FIRST-T-SCORE1486.md",
+      "bytes": 6435,
+      "sha256": "261223c0145c44f4b10e2a75c19a9a6708d753e9de0067071b8d35aee18c9015"
+    },
+    "INPUT-MANIFEST1524.json": {
+      "exact_file": "INPUT-MANIFEST1524.json",
+      "bytes": 6333,
+      "sha256": "917cb9c1b7d2b7bfb66e8450b8ffdd35276f9bd9229c986c7ae8c6d2cac64c24"
+    },
+    "LIFT-RESPONSE1487.md": {
+      "exact_file": "LIFT-RESPONSE1487.md",
+      "bytes": 5535,
+      "sha256": "13e21c1fd12b9dc6b9b1cc5232c4af04b806b108e186cd6a64255938314f07d8"
+    },
+    "METRIC1492.md": {
+      "exact_file": "METRIC1492.md",
+      "bytes": 5790,
+      "sha256": "577c4b717f966d56da36e1298a0752e9dc41394ff9297ff45505b3b98fc54521"
+    },
+    "MIXED-SCORE1490.md": {
+      "exact_file": "MIXED-SCORE1490.md",
+      "bytes": 8778,
+      "sha256": "fecf8752af2c18387b95f4fc15d35860f6cc8087851f8ce3bda4010adc80837d"
+    },
+    "REVIEW1524.md": {
+      "exact_file": "REVIEW1524.md.original",
+      "bytes": 37479,
+      "sha256": "a5da1b699524ff2ea30f9b5d0023e3eb494218ea2e7b3e12b4753d28d51b8ee0"
+    },
+    "SHA256-MANIFEST1524.json": {
+      "exact_file": "SHA256-MANIFEST1524.json.original",
+      "bytes": 5183,
+      "sha256": "1b4cf4aeb682b5439bca093e3214025cea1be218b1ae8ce3ef42f95e1b8332b5"
+    }
+  },
+  "artifacts": [
+    {
+      "file": ".gitattributes",
+      "bytes": 18,
+      "sha256": "df543f10aa3726e8e4f80f1faf60131496e5948ea08f5cd0509675dc538d0a38"
+    },
+    {
+      "file": "ASSESSMENT1524.json",
+      "bytes": 14847,
+      "sha256": "390157b3c89e82727739295c32723e9c218de832169a675e14e7ba6e9e68a5bc"
+    },
+    {
+      "file": "ASSESSMENT1524.json.original",
+      "bytes": 15216,
+      "sha256": "81904aaec9670b97024a576bdde72f1e5ab14df0ac0d7e8158bf59b75794fe11"
+    },
+    {
+      "file": "AXIAL-TANGENT1489.md",
+      "bytes": 6675,
+      "sha256": "ac514a73bacc4896e08261c1be2296e5eb2af9265acf1284cf90e0607416e64d"
+    },
+    {
+      "file": "BACKGROUND-RESPONSE1488.md",
+      "bytes": 6912,
+      "sha256": "3784d21bb6bd5174320d53a56012d1e07fe8afd9b1ca99717758dc84250d465b"
+    },
+    {
+      "file": "CARRIERS1491.md",
+      "bytes": 5019,
+      "sha256": "3ba15e0f9ebba72952f18de5c06d0eb73cad285eeaabdead7d732b6527fe62a4"
+    },
+    {
+      "file": "CONTEXT-REVIEW1516.md",
+      "bytes": 19156,
+      "sha256": "04ffc7f9ecdf52e6eeadf419f355d78c1c5015a1f434f4c58889c4d94dc2665a"
+    },
+    {
+      "file": "DISPOSITION1530.md",
+      "bytes": 5358,
+      "sha256": "e4723b7ed2c6fbaca4280c41c8213e5811114e847371bd55883596c6ff371e31"
+    },
+    {
+      "file": "FIRST-T-INSERTION1485.md",
+      "bytes": 6655,
+      "sha256": "79d9d285ef63623d62a56995dfc3f334915af99b0a2ef3a05f8de98e2d0d6faf"
+    },
+    {
+      "file": "FIRST-T-SCORE1486.md",
+      "bytes": 6435,
+      "sha256": "261223c0145c44f4b10e2a75c19a9a6708d753e9de0067071b8d35aee18c9015"
+    },
+    {
+      "file": "INPUT-MANIFEST1524.json",
+      "bytes": 6333,
+      "sha256": "917cb9c1b7d2b7bfb66e8450b8ffdd35276f9bd9229c986c7ae8c6d2cac64c24"
+    },
+    {
+      "file": "LIFT-RESPONSE1487.md",
+      "bytes": 5535,
+      "sha256": "13e21c1fd12b9dc6b9b1cc5232c4af04b806b108e186cd6a64255938314f07d8"
+    },
+    {
+      "file": "METRIC1492.md",
+      "bytes": 5790,
+      "sha256": "577c4b717f966d56da36e1298a0752e9dc41394ff9297ff45505b3b98fc54521"
+    },
+    {
+      "file": "MIXED-SCORE1490.md",
+      "bytes": 8778,
+      "sha256": "fecf8752af2c18387b95f4fc15d35860f6cc8087851f8ce3bda4010adc80837d"
+    },
+    {
+      "file": "README.md",
+      "bytes": 2246,
+      "sha256": "1462ace39b394af8321ad1a60e7fb4391c88e342de1f356998166d4363b62186"
+    },
+    {
+      "file": "REVIEW1524.md",
+      "bytes": 37478,
+      "sha256": "68f05b08ead85f76816b216aec896f73aac62d20a43da3239e5cd58167da4cf9"
+    },
+    {
+      "file": "REVIEW1524.md.original",
+      "bytes": 37479,
+      "sha256": "a5da1b699524ff2ea30f9b5d0023e3eb494218ea2e7b3e12b4753d28d51b8ee0"
+    },
+    {
+      "file": "SHA256-MANIFEST1524.json",
+      "bytes": 5058,
+      "sha256": "262f7e0c3dd8c44d125dd6472790c42dab0ec83bc885352a87b6c466108a3b20"
+    },
+    {
+      "file": "SHA256-MANIFEST1524.json.original",
+      "bytes": 5183,
+      "sha256": "1b4cf4aeb682b5439bca093e3214025cea1be218b1ae8ce3ef42f95e1b8332b5"
+    }
+  ]
+}

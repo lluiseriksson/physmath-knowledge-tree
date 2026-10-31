@@ -1,5 +1,13 @@
 # Conditional reflection and the outer-history boundary
 
+**31October correction (audit1524):** the earlier1489 original-gauge return
+identity is invalid as written and is withdrawn. The scalar mean-response
+estimate survives conditionally through a different whole-integral pullback
+on the FULL boundary-free branch. [Full adverse report and exact inputs](../evidence/2026-10-31-first-score-audit/README.md)
+are preserved; later original-gauge interpretations in this historical note
+must be read with the correction below. No physical/global theorem follows.
+
+
 This is supporting research synthesis, not a paper, manuscript assessment or
 formal result. A finite-dimensional conditional estimate is separated from the
 unproved physical source dictionary and global observable transport. No score,
@@ -474,3 +482,108 @@ none new. The unscored analytic review is an additional assessment, not a
 graph-confidence promotion. Falsifiers remain a coupled actual cutoff,
 failed uniform Hessian/block/chart bounds, circular background inclusion,
 incorrect marginal normalization or erased outer response.
+
+
+## Material gauge-fiber correction and the FULL scalar repair
+
+The [single eight-note audit1524](../evidence/2026-10-31-first-score-audit/README.md)
+rejects a specific source/application identity in1489. The relative Landau
+construction normalizes averages of a gauge transformation; it does not in
+general fix its values at coarse roots. The source expressly gives a changed
+prescribed-average fiber. A root-fixed contour return cannot automatically
+restore the originally prescribed averages, so its three-term derivative
+was not proved to be the actual derivative of U1(V). Its later use as the
+ORIGINAL-GAUGE tangent is withdrawn. This is a material correction, distinct
+from the already repaired input-cell factor and finite-carrier check.
+
+The relevant old papers are distinct:
+
+- [Balaban, CMP99(1985),75–102](https://doi.org/10.1007/BF01466594),
+  selected77–83, especially80–82 Eq1.27–1.38, states the gauge/fiber distinction.
+- [Balaban, CMP98(1985),17–51](https://doi.org/10.1007/BF01211042),
+  selected inverse-gauge formulas inspected in audit1524, has nonidentity
+  coarse-root factors in general. The held fusion's following page is blank;
+  the historical17–52 reference/report is retained unchanged. It is not a
+  second article or a newly published result.
+
+The exact input notes and full adverse report remain unchanged. Requested
+configuration was GPT-6 Astra/xhigh; actual runtime model/effort and scientific
+independence are unverified. A separate assigned context is not certification
+of independence or peer review. No numerical grade or manuscript/PDF
+assessment was made. The report's Section5 supplies the DIFFERENT repair;
+it does not validate the incorrect original identity.
+
+### The equality is for the complete normalized integral
+
+On the strictly FULL boundary-free original first branch, extend the same
+bare retained numerator and denominator to a background U by the actual
+source formulas, denoting the normalized inserted mean by widehat a_p(U).
+CMP1191.17 simultaneous covariance, the ORIGINAL chi^(0) product cutoff
+from1.18 and strict selected-chart equivariance imply
+
+```text
+widehat a_p(U^u)=widehat a_p(U),
+a_p(V(theta))=widehat a_p(W_theta),
+W_theta=exp(i eta Hcal(B(theta))) U0.
+```
+
+The real adjoint change acts orthogonally on each independent raw block,
+preserves its norm ball and has absolute Jacobian1. Selected/free labels,
+original thresholds and the true reconstructed fine plaquette remain the
+same. All lift, nonlinear correction, current, Jacobian and exposed coarse
+frame arguments transform together. Keeping an unrelated original coarse
+frame while changing only U would not be this extension.
+
+The relative Landau W_theta is gauge-related to the physical minimizer even
+though it need not have the original coarse averages. Differentiate the
+WHOLE normalized equality with raw A fixed on that extension:
+
+```text
+partial_theta a_p=E_W(partial_theta O_p)+Cov_W(O_p,partial_theta F).
+```
+
+These two summands are not individually asserted equal to the original-gauge
+summands. Their combined scalar identity handles the parameter-dependent
+coordinate connection. No derivative/locality estimate for the unknown
+original-gauge return is used. At each fixed parameter block orthogonal
+conjugacy transfers the admitted raw Hessian, block norm and carrier bounds.
+
+### What the audit verifies and what remains admitted
+
+The exact first insertion, original full product domain, fixed-raw score
+identity, selected lift/correction derivatives, finite bare action/Jacobian
+carriers, corrected source input-cell weighting and ambient metric
+convolution were checked at the report's stated source-reading depth.
+With the ACTUAL source Landau tangent, the local score factor C_S/g0
+cancels the primitive gamma_L*g0. Rebase at each admissible V and retain
+common margins to obtain the repaired conditional scalar target
+
+```text
+|partial_theta_c a_p(V)|<=C_L exp[-lambda Dfine(p,c)],
+lambda=min(alpha,(delta0/8)/L)/2.
+```
+
+Eq189/190 remains a stated literature kernel input; its omitted proof was
+not reproduced. A common positive physical Hessian margin and strict
+source/implicit-inverse margins on the ENTIRE original cutoff remain
+substantive admissions. The report does not prove their uniform availability,
+class probability or a numerical background/window certificate. There is no
+negative coupling loss from the score calculation on that common-margin
+class; deterioration of the margins cannot be hidden in its constant.
+
+With frozen exterior raw data, a parameter-dependent adjoint pullback also
+changes that exterior path. The FULL repair therefore does not certify
+partial-history/boundary fibers,1493next covariance, removed events, outer
+W/history covariance, iteration or a global physical result. The earlier
+adverse1482/1501 reports and distinct1516 assessment remain in force at
+their own scopes. This new synthesis itself was not the assessed manuscript.
+
+Mechanism: whole retained integral covariance replaces a false pointwise
+background identity. Falsifiers are an untransformed numerator/frame/lift,
+noninvariant surviving cutoff, fixed-exterior path silently moved, wrong
+source kernel/scale dictionary or failed common physical margin. Levels:
+**literature** for inspected original statements, **heuristic** for the
+source/application argument and subsequent synthesis, **speculative** for
+physical/global closure, **formal**: none new. The global shortcut stays
+**abandoned**. Two historical bibliography cards and one exact assessment
+packet are supporting knowledge, not new papers or separate results.

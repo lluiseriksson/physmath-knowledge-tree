@@ -1893,6 +1893,42 @@
       ],
       "inspected_pdf_sha256": "00cc6b218dcf0e1c2884e135caa1d57b3591df036540b685e7440f30cbd4ff16",
       "inspected_pdf_bytes": 35847780
+    },
+    {
+      "id": "balaban-cmp99-gauge-fixing",
+      "title": "Spaces of regular gauge field configurations on a lattice and gauge fixing conditions (1985)",
+      "url": "https://doi.org/10.1007/BF01466594",
+      "kind": "journal_article",
+      "publication_year": 1985,
+      "observed_on": "2026-10-31",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Audit1524 reads selected77-83, especially80-82 Eq1.27-1.38: averaged gauge normalization differs from root-fixed normalization and the relative Landau image need not lie in the original prescribed-average fiber. Parent visually corroborated printed81.",
+      "limits": "Distinct from CMP99,389-434 propagators. Full proof not audited; the original1489 fiber-return identity is rejected. Publisher/author-institution metadata gives99(1),75-102. Metadata primary: https://www.researchwithrutgers.org/en/publications/spaces-of-regular-gauge-field-configurations-on-a-lattice-and-gau/",
+      "reuse": "Bibliographic metadata and own synthesis only;no source PDF body or inferred training permission.",
+      "anchors": [
+        "domain.analysis"
+      ],
+      "inspected_pdf_sha256": "00cc6b218dcf0e1c2884e135caa1d57b3591df036540b685e7440f30cbd4ff16",
+      "inspected_pdf_bytes": 35847780
+    },
+    {
+      "id": "balaban-cmp98-averaging",
+      "title": "Averaging operations for lattice gauge theories (1985)",
+      "url": "https://doi.org/10.1007/BF01211042",
+      "kind": "journal_article",
+      "publication_year": 1985,
+      "observed_on": "2026-10-31",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Audit1524 reads selected27-31,33-35,43-44 and visually checks inverse transformation/averaged-gauge formulas: the inverse return can have nonidentity coarse-root values.",
+      "limits": "Selected statements/equations only, not a full averaging-proof audit. Article title page and Rutgers metadata give98(1),17-51; the held fusion has an extra blank page afterward. Historical report/reference17-52 is preserved unchanged rather than silently relabelled. Metadata primary: https://www.researchwithrutgers.org/en/publications/averaging-operations-for-lattice-gauge-theories/",
+      "reuse": "Bibliographic metadata and own synthesis only;no source PDF body or inferred training permission.",
+      "anchors": [
+        "domain.analysis"
+      ],
+      "inspected_pdf_sha256": "00cc6b218dcf0e1c2884e135caa1d57b3591df036540b685e7440f30cbd4ff16",
+      "inspected_pdf_bytes": 35847780
     }
   ],
   "candidates": [
@@ -2487,18 +2523,20 @@
         "balaban-cmp109-effective-actions",
         "balaban-cmp102-variational-background",
         "balaban-cmp99-background-propagators",
-        "balaban-cmp96-weighted-distance"
+        "balaban-cmp96-weighted-distance",
+        "balaban-cmp99-gauge-fixing",
+        "balaban-cmp98-averaging"
       ],
       "node_ids": [
         "domain.analysis"
       ],
       "dictionary": "Independent raw bond blocks map to reflected coordinates; actual primitive carriers to S/T; original positive history disintegration to pi. Preserve the actual composed inserted observable, normalization and carrier distance.",
       "preserved": "Conditional covariance decay follows on a verified uniformly convex finite-range product class via weighted synchronous reflection; exact total covariance retains the outer means.",
-      "lost_or_unproved": "Physical product/Hessian/source chart and original-observable applicability; original first-mean/source/gauge/metric chain1485-1493 remains outside both technical audits. Removed annulus, outer W/history covariance, bad histories, increasing scales and global physical conclusions remain open.",
+      "lost_or_unproved": "Uniform physical Hessian/inverse/source margins on the entire original cutoff and class availability; partial-history fixed-exterior paths,1493nextlaw covariance,removed annulus,outer W/history,bad sets,increasing scales and global conclusions remain open.1489original-gauge identity is rejected; scalar response survives only through the explicit FULL-integral repair of audit1524.",
       "hypothesis_to_remove": "An actual two-mark outer response estimate with uniform volume and distance constants; it cannot be replaced by a named conditional mixing wrapper or a scalar vacuum majorant.",
       "falsifier": "Nonproduct raw cutoff, failed full exterior/inside Hessian margin, nonuniform block row/column bounds, or lost mark distance invalidates the corresponding application. Conditional decay alone leaves the outer covariance even with no bad histories.",
-      "next_finite_task": "Verify actual source-specific first-mean score/gauge/metric applicability on the same admitted event. Three-note audit1516 accepts the conditional reflection implication with dimension/distance specifications; six-note audit1501 retains separate old-action repairs. Neither supplies physical/global closure; no new minor paper or duplicate review.",
-      "review_packet": "Existing synthesis and evidence/2026-10-31-retained-step-audit/README.md retain adverse six-note1501 findings; evidence/2026-10-31-reflection-framework-audit/README.md preserves the distinct three-note1516 report and F1/F2 parent specifications. Both unscored, exact-input scoped, runtime identity and scientific independence unverified; no manuscript/PDF grade."
+      "next_finite_task": "Use the corrected FULL-integral scalar connection explicitly, and verify remaining actual uniform physical margins before a physical two-level application. Do not infer a fixed-exterior or global theorem;do not restart the assessed reflection/score chains or create minor auxiliary papers.",
+      "review_packet": "Existing synthesis and three distinct exact-note packets: evidence/2026-10-31-retained-step-audit/README.md (adverse1501), evidence/2026-10-31-reflection-framework-audit/README.md (1516), evidence/2026-10-31-first-score-audit/README.md (material1489identity rejection and scopedFULLscalarrepair1524). Unscored;runtime identity/scientific independenceunverified;no manuscript/PDFgrade."
     }
   ],
   "source_refresh": {
