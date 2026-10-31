@@ -1,0 +1,40 @@
+{
+  "scope": "Original first-step Q^s step-field algebra and local averaging arrow for P1 defects. Parent unreviewed deduction on actual compatible block stencils plus stated source averaging bound; not a full physical P1/large-field theorem.",
+  "step_field_word_proof": {
+    "definition": "Use EXACT CMP1191.3: Q^s V=I on within-block bonds and V(c) on fine interface bonds in the corridor of coarse c, with inverse orientation. Keep the original partition phase and coarse labels.",
+    "ordinary_plaquettes": "A fine elementary plaquette crosses zero, one or two block interfaces. With zero crossings its word is I. With one interface, the two opposite crossing bonds carry the same coarse generator with inverse orientation and cancel, so its word is I. With two interfaces the four crossing factors, in their ORIGINAL order, are the corresponding coarse plaquette word. No commutativity is assumed.",
+    "one_step_average": "Every actual root-to-root averaging contour for coarse c has internal legs equal to I and a parallel segment crossing its interface exactly once with value V(c). All path transports, including the reference transport, therefore equal V(c). Their relative products are I; the actual nonlinear mean at those relative identities returns I, giving M(Q^s V)(c)=V(c). No logarithm of an arbitrary V(c) or small-link gauge is required for this algebra.",
+    "hybrid_boundary": "At k=1, where the missing coarse bond in CMP102Eq7 is filled by averaging the prescribed finer Q^s V datum over the COMPLETE required stencil, that bond equals the same V(c). Hence the hybrid plaquette equals the corresponding ordinary coarse plaquette. Finer-level plaquettes of the step datum obey the three-case identity above.",
+    "support_caveat": "All used fine bonds, paths and coarse plaquettes must actually lie in the source determining-data support. The algebra does not supply missing boundary stencils, alter domains, certify variational admissibility or extend to arbitrary multilayer data.",
+    "finite_check": "Exact free-group computation:78856 plaquette-word and20094 parallel-path checks across selected stencils, dimensions2/3/4, centered/uncentered phases and L3/5/13. Nonexhaustive geometric sanity check; L3/5 are not admissible physical-source choices. Failed helper version preserved and corrected; no Lean proof."
+  },
+  "local_averaging_arrow": {
+    "source": "CMP98printed26 Proposition2Eq52/54, with Proposition1Eq51: if fine plaquettes in the FOUR endpoint blocks obey ||U(dp)-I||_avg<alpha/L^2, alpha<=c2, then the actual one-step coarse plaquette obeys ||M(U)(dpprime)-I||_avg<2alpha. The source explicitly states this local support.",
+    "norms": "Let c_norm be a fixed verified conversion with ||X||_variational<=c_norm ||X||_avg. Do not identify the two papers norms by notation; trace/Wilson conversions belong in the action constant.",
+    "contrapositive": "A coarse variational-norm defect >=t forces an original fine averaging-norm plaquette defect >=t/(2*c_norm*L^2), provided t/(2*c_norm)<=c2 and M(U)=V on this actual stencil.",
+    "P1_chain": "Combine1623 with the step/hybrid identity, on a genuinely admitted original determining domain and complete stencils. With t=epsilon1/(2B3), P1 implies a fine-field excursion at least epsilon1/(4*c_norm*B3*L^2) in the corresponding enlarged local support.",
+    "gain": "This supplies the previously missing noncommutative algebra and the sourced local coarse-to-fine arrow. It uses the actual averaging constraint, not minimality between mismatched boundary problems."
+  },
+  "conditional_payment": {
+    "energy": "Real Wilson positivity then charges c*epsilon1^2/g0^2 for a witnessed P1 defect, with fixed norm/L/B3 constants, if actual source patches have bounded incidence. Original compatible fixed-layer cubes have a fixed incidence count; exact allocation must be retained when summing defect families.",
+    "scaling": "With epsilon1=g1 A0(log g1^-2)^p and the ACTUAL linked coupling ratio bounded above/below, the penalty has logarithmic order q1^(2p). A fixed enlarged P1 patch has O(R1^4) sites and R1 is the least L-power >=q1^r, so the same declared p>=5r dominates a conservative count/log cost q1^(4r+1).",
+    "notP0": "This fine excursion threshold can be below epsilon0. It is a separate P1 energy charge, not a reclassification as an original P0 bad cube. Avoid charging the same action budget twice when combining P0/P1/R1.",
+    "remaining": "Genuine mixed-domain admissibility, norm conversion, complete original support, bounded witness/patch incidence and joint action allocation still accompany the implication. R1 raw defects, shifted interactions, normalization and history are not covered."
+  },
+  "decision": "Do not continue treating Q^s step algebra or the local averaging theorem as an unnamed missing hypothesis. Their conditional first-step mechanism is now explicit. No full source theorem, independent assessment or physical marked-marginal/continuum result is claimed.",
+  "falsifiers": [
+    "Actual step assignment/partition phase differs from1.3",
+    "A required hybrid averaging stencil leaves the prescribed finer datum",
+    "The actual V is not the original average of the integration field on the identified support",
+    "Norm or scale conversion invalidates the printed smallness threshold",
+    "Variational/domain admissibility fails before applying1623",
+    "Defect witnesses or combined action allocations are counted without a uniform incidence bound"
+  ],
+  "evidence_levels": {
+    "literature": "Selected CMP98 averaging statements and original step/mixed definitions; not full source proof audit",
+    "heuristic": "Parent exact-word proof, conditional P1 energy chain and checks, outside1604",
+    "formal": "No new Lean result/build",
+    "speculative": "Full original combined-defect/boundary/marked/history/global admission"
+  },
+  "next": "Inspect the ORIGINAL R1 raw-fluctuation bad event and its actual action/conditional energy charge, preserving exterior means and the full fixed cutoff. Keep the P1 support/admissibility/norm/incidence and shared-action budget explicit. Do not repeat the now explicit Q^s/averaging algebra or create a minor-paper/review route."
+}

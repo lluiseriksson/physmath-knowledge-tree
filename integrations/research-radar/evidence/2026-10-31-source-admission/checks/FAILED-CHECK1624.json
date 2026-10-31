@@ -1,0 +1,15 @@
+{
+  "file": "step_words1624-failed-v1.py",
+  "sha256": "ad41e4d299b2ea184ff67b99e866d75296e4656b2610714fea96a34c3b5dbc24",
+  "failure": "AssertionError in first plaquette word comparison",
+  "cause": "Test helper started the third, negative-direction edge at x+e_j instead of x+e_i+e_j, so it did not traverse a closed plaquette.",
+  "correction": "Fixed starting point of third edge, preserving failed original. This was a check-helper error, not a counterexample to the source identity.",
+  "corrected_file_sha256": "567634ec5a7b3fd66c624c45b828fdde07833793b43bb51c1a444e9798a6b659",
+  "result": {
+    "plaquette_word_checks": 78856,
+    "parallel_path_word_checks": 20094,
+    "failures": 0,
+    "group": "Exact free-group words, no commutativity/numerics",
+    "scope": "Finite stencil/orientation/phase sanity check. General identity is the separate three-case proof. L3/L5 test geometry only; not source-admissible physical L. L13 also checked. No general source hierarchy/averaging regularity/proof audit or formal promotion."
+  }
+}

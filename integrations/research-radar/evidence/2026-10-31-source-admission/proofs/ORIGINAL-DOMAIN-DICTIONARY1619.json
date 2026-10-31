@@ -1,0 +1,59 @@
+{
+  "scope": "Original CMP119 first-step localized determining domains, unchanged source definitions. Historical statement reading and participating-parent dictionary, not admission of the Gaussian conditioning domain or new theorem/paper.",
+  "primary_anchors": [
+    {
+      "page": 245,
+      "identity": "M1 is declared the fixed cube scale where previous theorems, especially variational results, are valid; M1<M2<M, with possible M2=L^2 M1. This is a source declaration, not an extracted numerical admissible base-pair certificate."
+    },
+    {
+      "page": 246,
+      "equations": "1.2-1.4",
+      "identity": "The localized minimizer U_(1,Pi)(V) is constructed from B1(Pi enlarged4) and coarse determining data restricted to that enlarged domain. Its plaquette test in1.4 is on Pi enlarged1. R1 is the smallest L-power >=(log g1^-2)^r, r>=2."
+    },
+    {
+      "page": 256,
+      "identity": "The ORIGINAL maximal sequence for a domain Omega made of M1 cubes contains Omega eroded2 inside its last domain Omega_j. Each erosion here uses M1 cubes in T_xi."
+    },
+    {
+      "page": 257,
+      "equations": "2.13-2.16",
+      "identity": "Localized determining sets and minimizers are explicitly constructed by restricting/replacing determining data. This is not a statement of Gaussian conditioning of raw free fluctuations."
+    }
+  ],
+  "geometry_extraction": {
+    "unchanged_objects": "Omega=Pi enlarged4, Theta=Pi enlarged1, same source partitions and phases; no new domain sequence or increased M1.",
+    "units": "Measure lengths in one matched T_xi/fine-anchor metric. Let w be the ACTUAL width of one source enlargement layer in that metric, and u=xi*M1 the width of one erosion layer. The conversion to1618 scalar anchors must be stated, not silently identified with a printed L-power.",
+    "bound": "Cube geometry and Omega eroded2 subset Omega_j imply dist(Theta,Omega_j complement)>=3*w-2*u, up to a fixed bond/carrier anchor padding when transported to whole free-bond supports. If RHS<=0 there is no useful margin. The printed dist(Omega_j,Omega complement)<=2M1 is not reversed into a lower bound.",
+    "coupling_comparison": "At fixed first step, w=c_scale*M2*R1 with fixed positive scale conversion. Thus for any fixed Gaussian alpha,K and a declared raw radius rho<=C*(log g1^-2)^p, this already-existing source buffer eventually dominates1618 ell_abs=alpha^-1 log max(1,c_ext*rho*K/mu_star), since R1 grows at least as (log g1^-2)^r. No numerical threshold, original cutoff-prefactor identity or parameter-chain witness is certified.",
+    "limited_gain": "The source has actual enlarged-domain buffer geometry; lack of a possible collar width is not by itself the remaining fixed-step obstruction. Actual operator/free-coordinate and boundary-factor passage remain separate."
+  },
+  "type_check": {
+    "source_object": "B1(Omega) is a determining set for a localized constrained minimizer U_(1,Pi)(V); Omega_j is its geometric domain. The data are coarse/mixed-scale gauge constraints.",
+    "gaussian_object": "1618 requires D to be a principal subset of ONE fixed original bare free-coordinate precision Qfree, with actual raw exterior fluctuations in the same product cutoff.",
+    "rejected_inference": "Omega_j being geometrically thick does not identify its newly constrained/minimized Hessian with (Qfree)_D, or place the raw exterior in the original product cutoff. Neither1.2 nor2.13-2.16 is an identity of those Gaussian measures.",
+    "normalization": "Do not identify a localized constrained integral/determinant with a conditioned full Gaussian normalizer.1513 source delta/Gaussian allocation stays once, and1618 original boundary factors stay in the law.",
+    "decision": "Do not invoke the Gaussian collar result as a physical marked-marginal theorem on this original hierarchy until an actual same-coordinate identity or a controlled source localization comparison has been supplied."
+  },
+  "hypothesis_reduction": "Actual source enlargement/erosion supplies a conditional buffer lower bound on the unchanged maximal domains. The missing dictionary is narrowed to localized constrained minimizers versus principal free Gaussian conditionals and their raw exterior/normalization, rather than adding more arbitrary geometry.",
+  "retained_gates": [
+    "Genuine nonlinear variational base-pair/phase/scale and mixed-boundary field admissibility, as1587/1588 distinguish",
+    "Actual fixed-law cutoff version and scalar-coordinate conversion",
+    "Original constrained operator versus principal Qfree, including current/frame terms",
+    "Raw-exterior data, boundary factors and normalizer/marginal/history transfer",
+    "No all-scale/global conclusion"
+  ],
+  "falsifiers": [
+    "An enlargement operation uses a different partition/phase than assumed in the cube-margin subtraction",
+    "The required principal free domain does not contain the source geometric core or comes from a different constraint solve",
+    "The actual raw radius has not been shown to obey the declared logarithmic bound for the same fixed law",
+    "Constants deteriorate with coupling/volume outside the fixed real family",
+    "Boundary-data restrictions or Gaussian delta determinants are dropped during a purported identification"
+  ],
+  "evidence_levels": {
+    "literature": "Selected original definitions/statements read in exact CMP119 copy, not full proof audit",
+    "heuristic": "Parent geometric subtraction, growth comparison and type dictionary; unreviewed, not assessed by1604",
+    "formal": "No new Lean statement/build",
+    "speculative": "Full localized physical fluctuation and marked/history passage"
+  },
+  "next": "Trace the exact localized constrained quadratic/constraint operator used by the ORIGINAL determining set and compare it with the fixed bare free precision. Seek a genuine same-coordinate conditioning identity or source localization comparison; otherwise retain the mismatch. Do not replace the original hierarchy with propagator auxiliaries, repeat buffer estimates or start a minor-paper/review route."
+}

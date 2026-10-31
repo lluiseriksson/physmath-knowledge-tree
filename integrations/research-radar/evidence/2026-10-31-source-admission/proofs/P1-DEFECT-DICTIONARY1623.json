@@ -1,0 +1,44 @@
+{
+  "scope": "Original P1 localized-minimizer defect audit: exact variational regularity contrapositive identified, actual mixed-boundary/averaging event correspondence remains to check. No full P1 suppression or new theorem/paper.",
+  "source_lemma": {
+    "doi": "10.1007/BF01229381",
+    "anchor": "CMP102278Eq2,Eq7;279Theorem1Eq8",
+    "statement": "Under the genuine domain/parameter assumptions and mixed-scale input defect <epsilon_V<=a1, the actual selected minimal orbit belongs to U_k({Omega_j},B3 epsilon_V). For p in Omega_j, |U(dp)-I|<B3 epsilon_V L^(-2j), including the current condition in that same space.",
+    "essential_boundary_definition": "Eq7 uses actual mixed plaquettes. For a plaquette crossing Lambda_j, missing bonds are filled by the source finer-level datum, rather than omitted. A nearest-neighbor coarse plaquette supremum alone is not that condition."
+  },
+  "P1_contrapositive": {
+    "original_target": "CMP1191.4 declares a P1 defect when the ACTUAL localized minimizer has |U_(1,Pi)(dp)-I|>=epsilon1 L^-2 on the original test set.",
+    "margin": "Use epsilon_V=epsilon1/(2*B3), provided epsilon_V<=a1 and the same variational domain/gauge/data hypotheses hold. For a tested plaquette inside the actual last Omega1, the theorem gives <epsilon1 L^-2/2. Hence a P1 defect implies failure of at least one required mixed input bound, once the other admissibility hypotheses are established.",
+    "geometric_gate": "The tested Pi enlarged1 must genuinely lie in the last domain of B1(Pi enlarged4), using the actual source scales/phases and margin1619. One may not replace Omega1 with an arbitrary principal Gaussian domain.",
+    "no_extra_derivative_chart": "This uses basic regularity membership Eq8/Eq2. The additional cube bounds Eq9-10, with their M(epsilon_V) restriction, are not silently asserted or needed for this simple plaquette implication.",
+    "what_is_not_proved": "The actual datum is the CMP119 Q^s V construction. Its ordinary and hybrid boundary plaquettes must be identified with the concrete original coarse/fine field. The exact event inclusion into a fine-field energy defect has not yet been certified."
+  },
+  "invalid_minimum_shortcut": {
+    "temptation": "A bad localized minimum has a Wilson cost, so compare its action directly with that of the original integration field.",
+    "reason_rejected": "That comparison requires the original field to belong to the SAME determining constraint set and boundary problem. B1(Pi enlarged4), its Q^s V datum and mixed boundary constraints are different objects. No such admissibility map or controlled extension/gluing estimate has been established. The source minimality theorem alone does not supply it.",
+    "scope": "This rejects an unsupported inference, not the historical source theorem or the possibility of a valid comparison."
+  },
+  "candidate_energy_chain": {
+    "route": "Actual mixed datum defect -> actual coarse curvature defect -> a local fine-field curvature/energy defect through the ORIGINAL averaging estimate. Each arrow must carry its support, norm and scale constants.",
+    "why_distinct_fromP0": "The resulting fine threshold could be smaller than the original epsilon0. Therefore P1 suppression need not be a count of original P0 cubes; a P1 defect can require a separate energy charge even where P0 is empty.",
+    "conditional_budget": "If a genuine estimate gives a local fine threshold c*epsilon1 at fixed L/B3, its Wilson cost would be of order epsilon1^2/g0^2. With the ACTUAL linked g1/g0 bounds and logarithmic cutoff convention this has the same log-power payment mechanism, but this conditional scaling is not the missing event/energy proof.",
+    "next_check": "Read the original averaging/step-embedding plaquette identities on the mixed boundary, rather than assuming the two arrows or changing a cutoff."
+  },
+  "historical_reference_boundary": "CMP109 reference16 is3D UV stability, CMP102255-275 (1985), DOI10.1007/BF01229380. Its body was not obtained in this execution. Its citation by the4D construction does not justify importing all3D bounds/parameter powers unchanged.",
+  "decision": "The P1 source lemma and its conditional threshold are now explicit, but the physical mixed-boundary/averaging event map remains open. Do not charge all B^(1) costs to the P0 penalty, claim the inaccessible3D source audited, or open a minor-paper/review route.",
+  "falsifiers": [
+    "The original Q^s V mixed plaquette contains uncontrolled boundary data rather than the claimed coarse plaquette",
+    "The P1 test lies outside the genuine last Omega1 where the L^-2 gain holds",
+    "Variational base-pair/regularity hypotheses fail for the actual localized problem",
+    "A comparison applies minimality to a field with different constraints without an extension cost",
+    "Averaging multiplicity or energy support grows outside the declared fixed-step family",
+    "3D suppression exponents are transplanted into4D without checking the source hypotheses"
+  ],
+  "evidence_levels": {
+    "literature": "Selected CMP102 theorem/definitions and CMP109 bibliography read;3D reference metadata only",
+    "heuristic": "Parent P1 threshold contrapositive and proposed event/energy dictionary, unreviewed and outside1604",
+    "formal": "No new Lean statement/build",
+    "speculative": "Actual original P1 suppression, total boundary/large-field and marked/history completion"
+  },
+  "next": "Verify the ORIGINAL Q^s V mixed-boundary plaquette identity and averaging energy/event estimate on B1(Pi enlarged4). Preserve the concrete determining data, norms and L^-2 region. Do not repeat the located variational theorem or3D blocked request, use bare minimality with mismatched constraints, or claim the P1 suppression paid before both arrows are checked."
+}

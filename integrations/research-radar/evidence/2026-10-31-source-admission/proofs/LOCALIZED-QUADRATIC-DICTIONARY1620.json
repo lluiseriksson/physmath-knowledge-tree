@@ -1,0 +1,61 @@
+{
+  "scope": "Actual CMP102 localized variational quadratic/linearization dictionary versus the bare first-integral Gaussian. Selected historical source identities and participating-parent critical-Hessian calculation, unreviewed; no new paper/review or physical admission.",
+  "source_anchors": [
+    {
+      "page": 281,
+      "equations": "19-21",
+      "identity": "Variational coordinates satisfy mixed-scale nonlinear averages and RD* A=0 in the Landau representation; later an original axial-gauge representative is recovered."
+    },
+    {
+      "page": 284,
+      "equations": "41-43",
+      "identity": "The action expansion is constant+<A,J>+1/2<A,Delta_pi A>+V0(A); replacing Delta by Delta_pi uses the stated Landau restriction. This is not an equality with a soft-gauge free precision on the entire integration space."
+    },
+    {
+      "page": 285,
+      "equations": "44-50",
+      "identity": "H minimizes a quadratic under the mixed average and Landau constraints, Lj eta Qj H=I on the corresponding data. The source linearizes with A=Aprime-H D(Aprime), where D begins at quadratic order."
+    },
+    {
+      "page": 287,
+      "identity": "The source expressly says there are many linearizing transformations and h=H is a convenient nonunique choice. It introduces pseudo-locality of functional derivatives, not exact finite support."
+    },
+    {
+      "page": 289,
+      "equations": "70-76",
+      "identity": "A Neumann series and exponential derivative bound are stated for the nonlinear map; the transformed action and mixed linear constraints retain H, D and the Landau condition."
+    }
+  ],
+  "nonidentifications": [
+    "CMP102 H is a variational extension tied to its mixed-scale determining set and gauge; it is not CMP109 selected-interface h or the free reconstruction R_rec.",
+    "Do not transfer the bare selected-map finite-carrier incidence to H D merely because both maps linearize an average. The source offers pseudo-local kernels and their own scales/weights instead.",
+    "Do not identify the variational Landau quadratic with the bare soft-gauge Gaussian. Restriction/gauge integration, coordinate volume and constraint determinants require an actual correspondence.",
+    "Different right-inverse maps alone do NOT prove different constrained quadratic laws. The source itself permits different choices; critical cancellation must be checked before claiming an obstruction."
+  ],
+  "critical_hessian_check": {
+    "premises": "One SAME real action S, SAME smooth constraint F=0 and SAME critical point on a common admissible chart. Let L=DF(0) and dS(0)=lambda composed with L. Let T_h,T_H linearize the same constraint, both based at0 and tangent to identity; take b,c in ker L.",
+    "identity": "Differentiating F(T_i(tb+uc))=0 on the tangent slice gives L D2T_i[b,c]=-D2F[b,c]. Thus D2(S composed T_i)[b,c]=D2S[b,c]-lambda(D2F[b,c]), independent of the right inverse i.",
+    "equivalent_cancellation": "When normalized right inverses satisfy Lh=LH=I, L(H-h)=0; the critical linear/current functional annihilates (H-h)D2F. Dropping the current correction would erase this identity.",
+    "what_it_reduces": "The mere choice h versus H need not be added as an independent Gaussian-Hessian obstruction for one identical critical constrained problem. The actual source current/constraint term is the appropriate correction.",
+    "what_it_does_not_reduce": "The localized and global source problems have different determining constraints/backgrounds, possibly gauges and coordinate spaces. The premises are not established between them. Nonlinear remainders, Jacobians and original cutoff sets need not agree even when same-problem quadratic Hessians agree."
+  },
+  "research_decision": {
+    "rejected_shortcuts": "Neither h=H by notation nor h differs from H therefore inequivalent physical Gaussian is adopted. No principal-conditioning identity follows from the inspected source statements.",
+    "useful_comparison_target": "Treat the source localized minimizer first as a BACKGROUND function. A genuine source comparison of global and localized critical backgrounds, followed by matched-frame finite-prototype estimates for their SAME bare Qfree, could provide an operator-localization estimate. This avoids demanding that a different variational H itself be the raw Gaussian conditional covariance.",
+    "still_required": "The actual determining-set change and common-coordinate/frame/gauge transport, quantitative background comparison kernel, original free cutoff and all Jacobian/normalizer/boundary factors. A derivative bound within one fixed constraint problem alone does not compare two different determining sets.",
+    "next": "Locate the source statement that compares minimal backgrounds for changed/localized determining data, with its exact metric, gauge return and domain hypotheses. Bind it to the original CMP119 construction before transporting Qfree; if only fixed-data derivatives are available, retain that narrower scope. No repeated abstract right-inverse/Gaussian lemma or new minor-paper/review route."
+  },
+  "falsifiers": [
+    "Different base critical points or determining constraints invalidate the same-problem Hessian cancellation application",
+    "The source gauge-fixed action or constraint derivative is mismatched with the bare soft law",
+    "Pseudo-local H-dependent maps are assigned finite support without an actual cancellation/localization proof",
+    "A fixed-determining-set derivative is used to compare changed determining domains without a comparison argument",
+    "Nonlinear chart Jacobians/cutoff images are discarded after a quadratic equivalence"
+  ],
+  "evidence_levels": {
+    "literature": "Selected CMP102 identities and stated pseudo-local derivative bounds read, not their full proof audited",
+    "heuristic": "Parent critical-Hessian cancellation and cross-source type dictionary, unreviewed and outside1604",
+    "formal": "No new Lean declaration/build",
+    "speculative": "Actual localized-background-to-bare-Gaussian and physical marginal/history completion"
+  }
+}

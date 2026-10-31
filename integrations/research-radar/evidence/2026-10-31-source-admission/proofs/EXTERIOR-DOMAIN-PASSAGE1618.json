@@ -1,0 +1,50 @@
+{
+  "scope": "Exact Gaussian-conditioning passage on the same original free coordinates, confronted with1513/1514/1588 source-domain gates. Participating-parent unreviewed calculation; no source hierarchy admission or new theorem/paper claim.",
+  "fixed_law_conditions": [
+    "Use the1617 actual bare Qfree, principal subset D of its original free scalar coordinates, and the same real near-flat source family. No new local variational solve or marginal Schur complement is substituted.",
+    "Exterior data must actually lie in the SAME original raw product cutoff of radius rho in the fixed source norm. A bound on coarse V or on a differently reconstructed field is not this hypothesis.",
+    "Let c_ext be the fixed norm-conversion constant bounding each exterior scalar by c_ext*rho. Retain original rho(g0), norm, coupling and geometry. No smaller first cutoff is introduced."
+  ],
+  "mean_kernel": {
+    "identity": "mu_D=-C_D Q_(D,Dc) a_ext",
+    "inputs": "1617 weighted covariance Schur bound M with rate alpha; actual scalar precision Schur bound B_S and range R on the same coordinates.",
+    "kernel_bound": "||C_D Q_(D,Dc)||_alpha<=M*B_S*exp(alpha*R)=K. Since kernel targets Dc, a scalar x at ambient distance >=ell from Dc satisfies |mu_x|<=c_ext*rho*K*exp(-alpha*ell).",
+    "bond_bound": "For a whole free bond b with all r_g scalar coordinates in D and at distance >=ell from Dc, ||mu_b||_2<=H*rho*exp(-alpha*ell), H=sqrt(r_g)*c_ext*K.",
+    "mechanism": "Weighted Schur multiplication and exterior scalar supremum; no sum over exterior volume, no claimed compact support of the mean."
+  },
+  "tail_passage": {
+    "collar": "ell_tail=alpha^-1*log(max(1,2*H/kappa)) ensures ||mu_b||_2<=kappa*rho/2, where the original cutoff complement implies ||A_b||_2>=kappa*rho.",
+    "joint_bound": "For h distinct complete interior bonds beyond this collar, the event all original tails are active forces sum_b ||A_b-mu_b||_2^2>=h*kappa^2*rho^2/4. The SAME covariance upper bound a_Q^-1 I and its Gaussian exponential moment give probability <=[2^(r_g/2)*exp(-a_Q*kappa^2*rho^2/16)]^h, capped at1. No independence is used.",
+    "gain": "A fixed collar and actual original exterior cutoff suffice for a uniform joint tail estimate on the deep interior; arbitrary exterior means need not be separately assumed small there.",
+    "boundary_retained": "This does not estimate tails on the collar. Every original tail factor there stays in the integral; setting it to1 or conditioning away a bad layer would change the law."
+  },
+  "interaction_moment_passage": {
+    "exact_mean_charge": "For selected scalar S, E exp(epsilon||A_S||^2)=det(I-2epsilon C_S)^(-1/2)*exp[epsilon mu_S^T(I-2epsilon C_S)^(-1)mu_S].",
+    "safe_bound": "For 0<epsilon<=a_Q/4, the mean factor is <=exp[2epsilon*|S|*(c_ext*rho*K*exp(-alpha*ell))^2].",
+    "obstruction": "The tail collar is fixed, but this bound still grows with rho when rho diverges. Hence it does not restore the centered1616 all-subsets interaction norm unchanged.",
+    "stronger_collar": "To ensure a fixed scalar mean bound mu_star>0, it suffices to use ell_abs=alpha^-1*log(max(1,c_ext*rho*K/mu_star)). Then the mean charge is <=exp(2epsilon*mu_star^2*|S|), allowing a declared change of moment constants, not automatic inheritance of K4.",
+    "scaling": "If the EXACT original law has rho=delta0(g0)/g0 diverging like a logarithmic power, ell_abs grows like log rho. This is conditional on that chosen law version; no conflicting historical threshold expressions are identified.",
+    "retained_cost": "This only partitions estimates on the unchanged original domain. A growing excluded-from-interior layer, thin determining sets and their original factors must be paid. No volume-uniform boundary normalization or history sum is supplied."
+  },
+  "source_reconciliation": {
+    "1513": "The Gaussian/delta/baseline normalization is counted once; neither collar argument controls its reciprocal or licenses dropping boundary factors.",
+    "1514": "Small coarse input plus the cited variational theorem can control the genuine global minimizer current. It does not impose the same mixed-boundary condition on every localized determining field or prove the raw exterior cutoff premise.",
+    "1588": "The earlier propagator R0,M0 and its smaller auxiliary domains are not automatically an admissible nonlinear variational pair or the original maximal hierarchy. They cannot be used to certify either collar on the original domains.",
+    "decision": "No whole-domain conditional product theorem is invoked for the actual maximal determining hierarchy. Its identity, genuine mixed-boundary admissibility and capacity to pay the retained boundary layer remain unverified."
+  },
+  "hypothesis_reduction": "Replaces an unquantified interior-mean requirement by an explicit original-cutoff/collar inequality within the admitted principal-coordinate family; distinguishes tail recovery from interaction-moment recovery. Does not rename the physical domain/mean gate as a proven source theorem.",
+  "falsifiers": [
+    "The physical determining-domain precision is not a principal block of the fixed Qfree.",
+    "Exterior source data do not satisfy this original free-coordinate cutoff.",
+    "The original hierarchy cannot accommodate the required collars or their boundary factors cannot be controlled.",
+    "M,alpha^-1,B_S or original norm conversions grow beyond the declared family, invalidating uniform collar estimates.",
+    "A transfer uses the centered K4 without paying the exact nonzero-mean factor."
+  ],
+  "evidence_levels": {
+    "literature": "1513/1514/1588 retain selected source definitions/statements and historical parameter types; no fresh external proof audit",
+    "heuristic": "Unreviewed parent conditional Gaussian/collar calculation and physical dictionary",
+    "formal": "No new declaration/build or confidence promotion",
+    "speculative": "Admission and boundary/marked/history transfer for the original maximal source hierarchy"
+  },
+  "next": "Inspect the original maximal determining-domain construction and its genuine nonlinear variational parameter chain before applying the collar passage. Keep physical raw-exterior admissibility and boundary factors explicit. Do not substitute the earlier auxiliary propagator hierarchy, alter the first law, repeat Gaussian lemmas, or open a minor-paper/review route."
+}

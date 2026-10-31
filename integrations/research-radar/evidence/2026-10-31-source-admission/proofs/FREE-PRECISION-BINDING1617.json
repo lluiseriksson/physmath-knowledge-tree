@@ -1,0 +1,58 @@
+{
+  "scope": "Binding of the real, centered bare first-step free Gaussian to existing source-local antecedents. Participating-parent deduction, no new paper, review, numerical certificate or formal promotion.",
+  "source_identity": {
+    "doi": "10.1007/BF01215223",
+    "printed_page": 268,
+    "formula": "C_G=(R_rec^* A0 R_rec)^(-1)",
+    "read_status": "Exact cached primary identity visually read; not a full source proof audit"
+  },
+  "law_and_coordinates": [
+    "Bare k=0 only, source0.17 and same original free raw product cutoff. Higher-step H1/effective-action structure is not admitted by this argument.",
+    "R_rec is the selected-bond lift with identity on free rows, not covariance. Source averaging Q is not precision. Physical current/constraint curvature remains in A0.",
+    "Qfree is the Hessian of the reconstructed LEADING classical action at zero in the same matched real free-coordinate basis. It is not the Hessian of the complete log density H: Haar and nonlinear selected-Jacobian logarithms remain interactions. Their g0^2 Hessians must not be absorbed silently into this Gaussian.",
+    "The same complete physical critical/frame extension and actual fixed-law cutoff convention must be admitted. A different off-shell gauge-return map or density cannot be substituted."
+  ],
+  "source_local_reconstruction": {
+    "flat_anchor": "1546 gives physical selected coefficient L^(1-d) I, or L^-d I for the source scale-normalized averaging Q. Preserve the normalization consistently.",
+    "mechanism": "Each selected interface solve involves only free inputs in its two endpoint blocks and its own selected Lie block. The invertible flat coefficient and a fixed smaller finite-prototype chart bound the local inverse and its derivatives, with finite row AND column incidence at fixed L.",
+    "range": "If R_rec has fine-anchor range r_R and A0 has range r_A on this bare source family, Qfree has range at most R_Q=2*r_R+r_A; take an integer R>=max(1,R_Q). Use the original finite Wilson/soft/current/constraint carriers. No claim of this range for later effective actions.",
+    "remaining_gate": "The prototype/current/frame identification is an unreviewed participating-parent source correspondence. It must hold for the actual original critical branch; locality in raw variables is not locality of the coarse-background response."
+  },
+  "real_spectral_binding": {
+    "flat": "1533 constructs a_flat=min(c_W/(2*C_L),kappa_G/(8*d))>0 from actual flat contour means, zero block averages and local Stokes fillings. Numerical filling coefficients were not enumerated and that parent argument is not independently assessed.",
+    "perturbation": "Apply the finite-prototype mean-value estimate to the LEADING classical Hessian at zero: both Schur sums of Qfree(U)-Qflat are <=C_Q*r, r=max local background chart size. Unlike1534 full-density/whole-cutoff Hessians, no delta0 or logarithmic g0^2 term is needed for this Gaussian-only difference.",
+    "family": "Use only source-admitted critical backgrounds in the same fixed real chart with C_Q*r<=a_flat/2.1534 literature-kernel response and FULL orthogonal frame repair supply a conditional way to place near-identity coarse inputs there; they do not admit the full original characteristic hierarchy.",
+    "bounds": "a_Q=a_flat/2 and B_Q=B_flat+a_flat/2, with B_flat a fixed flat Schur upper bound, give a_Q I<=Qfree(U)<=B_Q I. Empty domains are trivial. Constants remain symbolic and source-family conditional."
+  },
+  "actual_scalar_J": {
+    "coordinate_geometry": "Use individual real scalar free-bond coordinates, each with its original fine-lattice anchor, and periodic ambient l-infinity anchor distance. At d=4, a conservative ball bound is N_x(t)<=C_ball*(1+t)^4, C_ball=2*d*r_g*3^4. Free-coordinate deletion and periodic identification cannot increase this bound. Zero distance between different coordinates at one anchor is allowed.",
+    "conditional_domains": "For every FIXED subset D of these same free coordinates, Q_D is the principal precision for Gaussian conditioning. It is not a newly solved local physical operator, not the principal block of ambient A0, and not the marginal precision after integrating the exterior.",
+    "series": "Set B0=2*B_Q, theta=1-a_Q/B0 in (0,1), T_D=I-Q_D/B0. Then C_D=B0^-1 sum_(n>=0) T_D^n; ||T_D||_2<=theta and each scalar row is supported inside distance nR.",
+    "weighted_bound": "With alpha=-log(theta)/(2R), s=sqrt(theta), scalar Cauchy-Schwarz gives ||C_D||_alpha<=M, uniformly in D, background and volume. M=sqrt(C_ball)/B0 * [1/(1-s)+2*R*s/(1-s)^2+R^2*s*(1+s)/(1-s)^3].",
+    "J": "The required unweighted absolute scalar covariance row sum J is <=M for this actual centered/free Gaussian and these principal conditional covariance matrices. This uses finite range and scalar polynomial growth in addition to a gap; no spectral-gap-only claim.",
+    "gain": "This directly reuses1540 on the same actual real precision, replacing an independently assumed scalar J inside the narrow admitted family by explicit symbolic source-local constants. No extra small complex-chart perturbation is needed for this real result.",
+    "not_covered": "Complex source/interpolation families, moving domains and non-principal variational operators still require their own matching. A fixed-domain covariance estimate does not establish source hierarchy or physical marked/history transport."
+  },
+  "exterior_mean_correction": {
+    "mean": "Conditioning at exterior value a_ext gives mu_D=-Q_D^-1 Q_(D,Dc) a_ext. It generally does not vanish or have literal finite support.",
+    "centered_scope": "The1616 centered tail formula q=2^(r_g/2)*exp[-a_Q*kappa^2*rho^2/4] and centered determinant moment cannot be reused unchanged on such a shifted Gaussian.",
+    "shifted_tail": "For a free bond b, put v_b=max(0,kappa*rho-||mu_b||_2). The same Euclidean covariance bound gives P(||A_b||_2>=kappa*rho)<=min(1,2^(r_g/2)*exp[-a_Q*v_b^2/4]). A source-norm cutoff is bounded through its original norm-equivalence constant.",
+    "shifted_moment": "For any selected scalar set S and epsilon with 2*epsilon*||C_S||_2<1, E exp(epsilon||A_S||_2^2)=det(I-2epsilon C_S)^(-1/2)*exp[epsilon mu_S^T(I-2epsilon C_S)^(-1)mu_S]. Keep this mean charge; no centered all-subsets bound follows without controlling it.",
+    "consequence": "The real J estimate concerns covariance only. Arbitrary exterior data can destroy the small-tail/remainder window even with uniformly controlled covariance. Do not promote this calculation to conditional physical admission."
+  },
+  "hypothesis_reduction": "Explicitly bind a_Q, B_Q and J to the same original free precision in the already stated real near-flat fixed-step family. The remaining independent requirements are the actual physical prototype/frame/law correspondence, uniform original remainder/cutoff smallness and the hierarchy/normalization/exterior/history transfer; these are not renamed as a scalar J assumption.",
+  "falsifiers": [
+    "A selected reconstruction uses a second coarse selected interface, destroying the admitted finite-prototype structure.",
+    "The actual source A0/current contains a raw-variable nonlocal term at bare k0, invalidating the finite range.",
+    "The leading Hessian fails to equal R_rec^* A0 R_rec in the same normalization/frame, or an earlier full-density Hessian is substituted.",
+    "Local source derivative/gap constants deteriorate with volume or the actual critical background leaves the fixed chart.",
+    "A purported conditional application drops mu_D, or its domain is not a principal subset of the fixed original free coordinates."
+  ],
+  "evidence_levels": {
+    "literature": "Selected original covariance/selected-elimination identities read; historical definitions, not new2026 publication",
+    "heuristic": "Participating-parent deduction from1533/1534/1540/1546 with their explicit source correspondence; not assessed by1604",
+    "formal": "No new Lean statement/build",
+    "speculative": "Physical all-hierarchy, exterior/marked/history/global completion"
+  },
+  "next": "Check the actual original hierarchy/domain and exterior-mean passage before feeding the1616 mixed all-subsets norms into a physical marked marginal. Reconcile1513/1514/1588 with the fixed cutoff version; do not re-prove the real Gaussian criterion or create a separate minor paper."
+}

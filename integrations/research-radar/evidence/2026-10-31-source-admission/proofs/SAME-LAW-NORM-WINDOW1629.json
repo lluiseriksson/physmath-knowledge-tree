@@ -1,0 +1,51 @@
+{
+  "scope": "One exact original-inner-cutoff centered finite-label integral, with actual mixed-domain real Gaussian input roles and local continuations bound. Participating-parent unreviewed application of the existing finite-log criterion; no new theorem/paper or full conditional physical transfer.",
+  "fixed_law": {
+    "literal": "The actual source1.18/1.19 pair is rho=delta0/g0 and outer group-defect threshold2delta0. Retain SAME declared delta0.1451 already fixed this interpretation and its A1*p0 conversion; no new coefficient is selected.",
+    "unresolved_history": "The separate equality involving (A1/A0)epsilon0 is not equated with the incompatible printed form. That historical normalization issue is retained rather than silently repaired.",
+    "interior_indicator": "On eligible interior cubes, source1.19 and the same-norm real unitary exponential bound give ||exp(i g0 A)U1 Ulocal^-1-I||<=g0||A||+delta_bg<delta0+delta_bg<2delta0 when delta_bg<delta0. The source explicitly states this removal. It does not hold automatically on boundary/R1-bad cubes, whose factors stay in the law.",
+    "asymptotics": "For the declared original logarithmic family rho=C_delta*(log g0^-2)^p with fixed positive C_delta,p, rho->infinity and g0*rho->0. Both printed constant conventions can be discussed separately; no equality of them or retroactive law change is inferred."
+  },
+  "fixed_local_continuation": {
+    "choice": "For each ACTUAL raw carrier D_i choose K_i as the projection of the ORIGINAL product K onto D_i, using that same rho and original bond norm. Set f_i=(exp(v_i)-1)*1_K_i, interpreted as zero outside the common local source chart.",
+    "validity": "The actual mixed-domain near-flat prototypes have a common chart. For sufficiently small g0, g0*rho is within it on every K_i, uniformly in volume and source inputs in the admitted family. Hence the source v_i and its Taylor bound hold on the WHOLE chosen K_i; no additional physical indicator or tail label is introduced.",
+    "exact_identity": "1_K exp(sum_i v_i)=product_b(1+zeta_b) product_i(1+f_i), zeta_b=-1_(K_b complement), with DISTINCT original free-bond labels only. Outside K some tail factor vanishes, so values of local continuations there do not change the integral.",
+    "parameter_analyticity": "Because THIS chosen K_i is independent of background/label parameters at fixed coupling and original raw coordinates, f_i(z,A) is holomorphic in a common background parameter z for each fixed real A whenever v_i is. This is a restricted improvement over arbitrary parameter-dependent1564 extension sets, not a claim that f_i is holomorphic in A.",
+    "derivatives": "Do not differentiate the artificial boundary in A. Gaussian forest derivatives may act on the density while these measurable insertions remain fixed. Changed coordinates/moving cutoffs, the real smooth source switch, and uniform COMPLEX Gaussian/source interpolation need their own exact dictionary and bounds."
+  },
+  "actual_domination": {
+    "classical_terms": "Allocate original carrier constants/linear/quadratic jets consistently; the SUM of classical linear terms cancels only at the actual constrained critical branch. The Gaussian includes the COMPLETE current/constraint quadratic. The remainder starts cubically in the original physical free input g0*A.",
+    "log_terms": "Haar and nonlinear selected-Jacobian logarithms retain every nonconstant term, INCLUDING their linear terms. Fixed baselines and the linear delta/Gaussian determinant remain counted once under1513.",
+    "bound": "On fixed K_i, finite prototype Taylor bounds give |v_i|<=t0 W_i, W_i=c+sum_(x in D_i) A_x^2, with t0<=C*g0*(1+rho) for one conservative common constant C. Cubic action terms use g0||A_D||^3<=C*g0*rho||A_D||^2; log-density linear terms use |A_x|<=(1+A_x^2)/2. C is fixed on the admitted near-flat chart, not numerical or all-regular."
+  },
+  "joint_inputs": {
+    "supports": "Use1616 ORIGINAL combined D=max(D_int,r_g), m=m_int+1, Delta<=D*(m-1). Boundary masks remove free inputs rather than enlarging the raw carrier. Extra physical/parameter localization tags are not covered by these raw counts automatically.",
+    "gaussian": "Use actual leading Qfree=R_rec* A0 R_rec at the SAME critical branch. On admitted1627/1628 real mixed domains take a_Q=a_flat/2 and a fixed Schur upper B_Q; fixed range and scalar polynomial geometry give J<=the1617 explicit Neumann row-sum constant. The1.26 covariance on a fixed free subset is its principal conditional inverse, with mean retained separately.",
+    "moments": "Set epsilon=a_Q/(32*m), require t0<=epsilon and use the recorded L4 constant K4=epsilon^-1*exp(2*epsilon*(c+2/a_Q)*D). With q_tail=2^(r_g/2)*exp(-a_Q*kappa^2*rho^2/4), the mixed centered L2 product bound is <=(K4*t0)^n*q_tail^(h/4) for n interaction labels and h DISTINCT tails. No independence of fields/tails is assumed.",
+    "lambda": "lambda=max(K4*t0,q_tail^(1/4)) tends to0 as g0->0 for the SAME fixed original C_delta,p and uniform source/chart constants.",
+    "window": "For fixed eta>0,theta>=0, let A=e*sqrt(6), R=max(1,Delta+2*B_Q*D*m*J). Eventually lambda*exp(eta+theta)<=min(1/(2*A*R),eta/((Delta+1)*(1+A*log2))). This binds the existing finite-log sufficient window without a new cutoff, fitted volume constant or independent norm hypothesis."
+  },
+  "scope_boundaries": [
+    "The result concerns the centered real reference finite-label integral with exact K and chosen local continuation. It is not automatically the whole original conditional1.26 integral with exterior h, shifted interactions and residual boundary indicators.",
+    "The source completing-square factor, conditional means, real switch/BCH/Jacobian and B^(1) remain in their original boundary/energy ledger. Centered product constants cannot be inherited under arbitrary exterior shifts.",
+    "Finite label-weight holomorphy/zero-free log is distinct from uniform holomorphy for the ORIGINAL complex background or source operator-interpolation family. Fixed-K insertion analyticity alone does not control a complex Gaussian phase/determinant or prove all interpolation hypotheses.",
+    "The log/normalizer cost is extensive in original labels; no volume-independent reciprocal or normalization close to1 follows.",
+    "Original source orbit/uniqueness/regularity and exact support premises from1627/1628 remain explicit. No theorem at arbitrary regular backgrounds, moving domains, all RG scales, marked histories or continuum is claimed."
+  ],
+  "hypothesis_reduction": "The raw inner threshold, actual local extension, t0 and the Gaussian/support inputs now form one same-law real finite-label smallness mechanism. Literal1.18 resolves the inner/outer SYMBOLIC relation without resolving incompatible printed prefactor equalities. The missing physical source boundary/complex/marked transfer is not renamed as a free norm assumption.",
+  "falsifiers": [
+    "The target uses a different cutoff value/version or coordinates than the recorded1.18 pair",
+    "A local carrier projection leaves the common source chart or its constants grow with volume",
+    "A parameter-dependent continuation boundary is treated as fixed during differentiation",
+    "Density linear terms or the current quadratic are omitted",
+    "Gaussian means/phases or boundary indicators are discarded when importing centered constants",
+    "Raw support counts are promoted to physical source localization without a map"
+  ],
+  "evidence_levels": {
+    "literature": "Selected original1.18/1.19 read, older declared threshold and exact-source packets reconciled; no full proof audit",
+    "heuristic": "Parent same-law continuation/Taylor/window application and fixed-set parameter observation, unreviewed/outside1604",
+    "formal": "No new Lean declaration/build",
+    "speculative": "Complete original boundary/complex interpolation/marked-history/global admission"
+  },
+  "next": "Consolidate ONE exact-source admission packet for the centered finite-label integral and its separate1.26 boundary insertion, marking all source uniqueness/regularity and complex-interpolation obligations. Check the original background/source tag dictionary before promoting the real label-log window to physical analytic activity. Do not repeat norm lemmas, change the cutoff, infer a volume-independent normalizer or create a minor-paper/score-seeking review route."
+}

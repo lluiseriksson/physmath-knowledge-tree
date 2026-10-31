@@ -52,6 +52,12 @@ The right side is eta, not eta+theta. Total costs remain extensive: |log Z|<=|I|
 
 This is a known-criterion application dictionary and supporting knowledge, not a new standalone paper or a novelty claim. The classical statement was read at its pinned author-copy hash; its full proof and the original1986article were not audited. The [parent disposition](../evidence/2026-10-31-cluster-criterion-source/DISPOSITION1612.md) maps every retained finding to its limit and next source obligation.
 
+## Original first step source admission
+
+The [consolidated source-admission audit](../evidence/2026-10-31-source-admission/README.md) binds the actual first-step raw factors, rho=delta0/g0 cutoff and free precision C* A0 C to the real finite-label input roles. It preserves the original boundary indicators, density/current terms and extensive normalizers. Parent mixed-domain prototype, cover and near-flat branch arguments remain conditional on the genuine source geometry and uniqueness/regularity class; they do not admit every regular background or a physical marked/history theorem.
+
+The same packet distinguishes label weights and positive real min-path covariance interpolation from the ORIGINAL complex cube WALK tags of CMP116. An exact rational3x3 witness shows why entrywise covariance contraction and an unchanged absolute row bound alone do not preserve positivity. The witness refutes that generic shortcut, not the published source interpolation. Five existing historical source records are reused with selected-reading limits; no new paper, score or source-proof confidence is claimed.
+
 ## Model assessments and review context
 
 One completed separate-context, unscored AI technical assessment1592 supports the conditional arguments in the exact notes LOCAL-NOISE1591.md and LABEL-TREE1592.md. The requested configuration is GPT-6 Astra with xhigh effort. Runtime identity/effort attestation and scientific independence are unverified. The participating parent authored the target notes and this summary. This summary itself is outside that frozen target packet.
@@ -59,3 +65,5 @@ One completed separate-context, unscored AI technical assessment1592 supports th
 The [complete report, all objections, metadata and exact byte mapping](../evidence/2026-10-31-label-tree-audit/README.md) are preserved. The report retains the separate absolute-row-sum requirement, combined-label incidence, uniform product and smallness hypotheses, actual source admission and zero-free/logarithm obligations. No assessment is inherited from1575, no PDF or manuscript has been scored, and there is no peer-review or editorial decision. The [parent disposition](../evidence/2026-10-31-label-tree-audit/DISPOSITION1597.md) records those limits; the parent source-input ledger is outside the assessed texts.
 
 Assessment1604 is a separate completed unscored contextual AI assessment of FINITE-LOG1603 and DOBRUSHIN-DICTIONARY1604 only. Requested routing was GPT-6 Astra/xhigh; observed runtime model/effort and scientific independence remain unverified, with parent participation disclosed. Its [complete report, frozen inputs, checks and all objections](../evidence/2026-10-31-finite-log-audit/README.md) accompany the conditional follow-up. Neither this evolving summary nor any PDF, including Capacity, inherits that assessment or a numerical score.
+
+The new source-admission package and its normalized mathematical antecedents are outside both frozen assessments1592 and1604. They were authored by the participating parent and have no independent review or PDF score. The original reports and all objections remain unchanged.
