@@ -1,0 +1,237 @@
+{
+  "execution": 1741,
+  "assessment": "ASSESSMENT1741",
+  "created_utc": "2026-10-31T18:07:59Z",
+  "unscored": true,
+  "input": {
+    "path": "C:/Trabajo/airr/2026-10-31_execution1741/LOCAL-MEAN-CURRIED-DENSITY1741.json",
+    "sha256": "9c6c18ea8a294e340fb471fa0e2f511ea55bb09cf283033a7836435d74ddbbb1",
+    "hash_verified_before_review": true,
+    "hash_verified_before_report": true,
+    "frozen_input_modified": false
+  },
+  "reviewer_provenance": {
+    "requested_configuration": "Astra / xhigh",
+    "actual_model_identity_authenticated": false,
+    "actual_effort_authenticated": false,
+    "external_independence_authenticated": false,
+    "statement": "A separate delegated review context was used. The requested model/effort and external independence are not authenticated by this report. No external-independent-review claim is made.",
+    "subagents_spawned": false
+  },
+  "scope": {
+    "evaluated": "Only the new local first-density, curried second-derivative, Cauchy, support, and measure calculation in frozen execution1741.",
+    "source_depth": "Selected original definitions, statements, and nearby derivation needed to check their scope. The complete source proofs have not been independently audited.",
+    "excluded": [
+      "Reassessment or scoring of execution1740",
+      "Ancestral audit or treating source_bindings metadata as proof",
+      "Completion of the T/R/H/current mixed-volume convolutions",
+      "Proof of CMP102 equation(189)",
+      "Identification with a later mean",
+      "Manuscript/PDF/Capacity review, grading, target setting, or restarts",
+      "A physical theorem, common-parameter construction, or history-wide uniformity"
+    ]
+  },
+  "disposition": {
+    "label": "ACCEPTED_AT_STATED_CONDITIONAL_LOCAL_SCOPE",
+    "narrow_verdict": "The local curried-density calculation is correct at its stated original-source, conditional scope. The original complex q_j premise is supported at source-statement depth under the original admissibility hypotheses; it is not an inference from real analyticity alone. No material missing measure, chain factor, Cauchy factorial, or full-V(77) direction assumption was found in the displayed local calculation. The explicit local smallness/admissibility conditions must remain attached. This does not complete the current kernel or(189).",
+    "completed_here": [
+      "The normalized first-density convention and its original-scale conversion",
+      "A source-supported uniform local complex domain, conditional on the original background hypotheses",
+      "The directional bounds 4 C3 and 16 C3/a, including the local difference estimate",
+      "The support inclusion in the original two-block bond set",
+      "One inserted direction with contact contributions retained",
+      "The bookkeeping for one fine output evaluation"
+    ],
+    "not_completed_here": [
+      "A proof that arbitrary new backgrounds or geometries satisfy the original source hypotheses",
+      "The global weighted bounds on M_c(Tz), the first T leg, R-I/N terms, or H/current sums",
+      "The output s_y^(-3) and exp[-delta0 d(y,y')/4] estimate"
+    ]
+  },
+  "primary_sources": [
+    {
+      "id": "CMP98",
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balabanfusion.pdf",
+      "sha256": "00cc6b218dcf0e1c2884e135caa1d57b3591df036540b685e7440f30cbd4ff16",
+      "article": "T. Balaban, Averaging Operations for Lattice Gauge Theories, Commun. Math. Phys. 98, 17-51 (1985)",
+      "relevant_locations": [
+        "Printed26 / PDF304: (52), eta=L^(-k), original background plaquette regularity",
+        "Printed31 / PDF309 and printed34 / PDF312: two-block dependence; (109) explicitly uses complexified Lie algebra variables",
+        "Printed36-39 / PDF314-317: Proposition3, Proposition4, (134)-(138), and constants independent of k",
+        "Printed40-42 / PDF318-320: (148)-(157), derivative induction and C3",
+        "Printed43 / PDF321: Proposition7 and the stated analyticity/uniformity extension of Proposition5"
+      ],
+      "verification": "Relevant text extracted and critical complete pages rendered and inspected in memory. No source PDFs or page/crop files saved."
+    },
+    {
+      "id": "CMP102",
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/cmp102_variational/1104114383.pdf",
+      "sha256": "838056b5c578f81d058deb3d394c66d934690e3b94c6cf2956534ec6d211b541",
+      "article": "T. Balaban, The Variational Problem and Background Fields in Renormalization Group Method for Lattice Gauge Theories, Commun. Math. Phys. 102, 277-309 (1985)",
+      "relevant_locations": [
+        "Printed277-278 / PDF1-2: mixed domains and the source's incident-bond convention",
+        "Printed280 / PDF4: (14), fixed original background hypotheses",
+        "Printed282 / PDF6: (27)-(28), fine pairing and the epsilon1 current bound",
+        "Printed285-287 / PDF9-11: (44), (47)-(57), original C_j and transformed field",
+        "Printed288-289 / PDF12-13: (65)-(73), both input measures and explicit scale conversion in(72)",
+        "Printed290-291 / PDF14-15: (77), (80), and current derivative(85)",
+        "Printed308 / PDF32: (189) is the later full-kernel target, not established by the candidate"
+      ],
+      "verification": "Selected complete pages read; critical measure/current/geometry pages also rendered and inspected in memory."
+    }
+  ],
+  "findings": [
+    {
+      "id": "F01",
+      "status": "verified",
+      "topic": "Frozen input and limited assessment",
+      "finding": "The file hash equals the assigned SHA256. Only execution1741's substantive derivation and claim/limit fields were assessed. The large list of ancestral source_bindings was not used as mathematical proof, and the previous assessment was not reopened or rescored."
+    },
+    {
+      "id": "F02",
+      "status": "verified_with_notational_scope",
+      "topic": "Actual fluctuation support",
+      "source": [
+        "CMP98 printed31,34,38 / PDF309,312,316"
+      ],
+      "finding": "For the original averaging map with its background fixed, C_j inherits dependence only on the fine bonds in S_c=B^j(c_-) union B^j(c_+), with the original incidence convention. Subtracting the local linear part does not enlarge that dependence. The normalized first density vanishes for b outside that bond set; its field derivative also vanishes when its inserted direction is zero on that set. No locality in the background or in a later Tz is obtained.",
+      "qualification": "The defensible statement is support contained in S_c. The candidate's phrase 'EXACT support' should be read as the precise source support region, not a claim that every bond in the region has a nonzero coefficient. The union must be interpreted as the source bond set, not silently replaced by two disjoint lists of interior bonds."
+    },
+    {
+      "id": "F03",
+      "status": "supported_at_source_statement_depth",
+      "topic": "Uniform complex q_j premise",
+      "source": [
+        "CMP98 (52), (109), Proposition4, (149)-(157), printed43 extension"
+      ],
+      "finding": "This premise is supported for the original mean under the source hypotheses. Complex fluctuation variables are explicit already in(109). Proposition4 gives analyticity of the local original mean, and differentiation gives analyticity of its first coefficient. Equation(157) supplies the normalized coefficient bound C3|X|. The nearby induction chooses constants using d,L and the smallness parameters, not the number j of averaging steps. Printed43 additionally states the extension of Proposition5 with analyticity and uniformity when the fixed original background is allowed its prescribed small complex perturbation.",
+      "distinction": "The last paragraph on printed43 is a stated source extension, not a detailed independently checked proof. Its use here is legitimate at the depth the candidate declares. It does not give a bound for arbitrary complex backgrounds, a later mean, or a new family of histories. For the original fixed real background, complex X analyticity does not depend solely on that final paragraph.",
+      "required_hypotheses": [
+        "The original U0 satisfies the local rescaled version of(52), with alpha0 sufficiently small.",
+        "The fluctuation variable lies in the original sup-norm complex Lie-algebra domain.",
+        "Any complex perturbation of the background is within the source's prescribed extension domain.",
+        "C3 is the applicable source constant for that fixed domain; if using the complex-background extension, a common source constant must first be fixed."
+      ]
+    },
+    {
+      "id": "F04",
+      "status": "verified_at_source_statement_depth",
+      "topic": "Choice of one j-uniform radius",
+      "source": [
+        "CMP98 printed39-42 / PDF317-320, especially (149), (155), (157)"
+      ],
+      "finding": "For a local level j, use the original theorem with k=j and rescaled spacing rho=eta/s_c=L^(-j). Then X=s_c F is the field variable A of that theorem and its input weight is rho^d. The final-level field domain is |X|<alpha1; the intermediate induction's factors L^ell rho do not require a radius shrinking with j.",
+      "radius_check": "The source gives C3=6 C1'' as an available choice and, among its sufficient restrictions, 4 d C1' alpha0 L^(-1)<=1/3 and (C2 L^(-1)+12 d C1'' L^(-1)) alpha1<=2/3. Combined with Proposition4's c4 and the earlier background restrictions, these provide a positive radius depending on the fixed source parameters and d,L, independent of j. For example choose a strictly inside the resulting alpha1 threshold. There is no numerical value for a in the candidate, but a numerical value is not needed for the displayed symbolic estimates.",
+      "limitation": "This establishes the existence of the cited local radius only after the original background/domain hypotheses have been fixed. It is not a proof of an enlarged common radius for any new setting."
+    },
+    {
+      "id": "F05",
+      "status": "verified",
+      "topic": "Local Cauchy constants and no factorial error",
+      "calculation": [
+        "For |X|<=a/4 and normalized directions e,f, |X+t e+u f|<=3a/4 when |t|=|u|=a/4.",
+        "The coarse source bound on this polydisc is |q_j|<=C3 a.",
+        "The one-variable Cauchy estimate is |Dq_j(X)[w]|<=4 C3 |w|.",
+        "The mixed coefficient in q_j(X+t e+u f) is D^2q_j(X)[e,f]; its two-variable Cauchy bound is 16 C3/a. No additional factor 2 is present.",
+        "Integrating D^2q_j(tX)[X,w] for real t from0 to1 yields |(Dq_j(X)-Dq_j(0))[w]|<=(16 C3/a)|X||w|."
+      ],
+      "finding": "All three estimates(L) follow. Zero directions are handled directly by linearity. The entire closed polydisc remains strictly inside the source domain, including at |X|=a/4. Operator-valued Cauchy estimates use the same coefficient norm and introduce no factor equal to the number of lattice bonds."
+    },
+    {
+      "id": "F06",
+      "status": "verified",
+      "topic": "No hidden full-V(77) direction admissibility",
+      "source": [
+        "CMP98 (109), Proposition4; CMP102 (77), (80)"
+      ],
+      "finding": "The Cauchy paths vary only the local averaging coefficient in its sup-norm complex field domain. A direction supported on S_c is normalized in that local norm; one may use a zero extension in the independent bond coordinates while respecting the source orientation convention. No derivative or gradient bound on that localized direction is needed for this local map. The reasoning does not assert that the corresponding perturbation of A remains in the full functional V domain(77).",
+      "limitation": "When v=T(A)z is inserted, it is a fixed vector for this C_j second-derivative term. This is not differentiation of the whole composition or of T itself."
+    },
+    {
+      "id": "F07",
+      "status": "verified",
+      "topic": "Functional derivative normalization and two chain factors",
+      "source": [
+        "CMP98 (138), (157); CMP102 (66), (72)"
+      ],
+      "calculation": [
+        "omega_j=(eta/s_c)^d.",
+        "DC_j(X)[w](c)=sum_b omega_j q_j(c;b;X)[w(b)].",
+        "D Ccal(F)[u](c)=sum_b omega_j q_j(c;b;s_c F)[s_c u(b)].",
+        "omega_j s_c=eta^d s_c^(1-d), so B_F=s_c^(1-d) q_j(c;b;s_c F).",
+        "D^2 Ccal(F)[u,v](c)=sum_b eta^d s_c^(1-d) D_X q_j(c;b;s_c F)[s_c v][u(b)]."
+      ],
+      "finding": "The density L_F in the candidate has both chain factors: one in s_c^(1-d), the other inside D_X q_j[ s_c v ]. No extra input or output volume belongs inside q_j. This is consistent with the source's explicit factor L^j eta (L^j eta)^(-d) in(72)."
+    },
+    {
+      "id": "F08",
+      "status": "verified_conditionally_on_local_smallness",
+      "topic": "Curried second density and difference bound",
+      "calculation": [
+        "M_c(v)=s_c sup_{b in S_c}|v(b)|.",
+        "|L_F(c;b;v)|<=4 C3 s_c^(1-d) M_c(v).",
+        "|L_F(c;b;v)-L_0(c;b;v)|<=(16 C3/a) s_c^(1-d) |X_c| M_c(v).",
+        "If |X_c|<=2 epsilon3 and epsilon3<=a/8, the last bound is at most (32 C3/a) epsilon3 s_c^(1-d) M_c(v)."
+      ],
+      "finding": "The scaling, epsilon3 factor, radius restriction, and constants in(K) are correct. L_0 is the generally nonzero quadratic coefficient at zero fluctuation; the difference estimate does not incorrectly set it to zero."
+    },
+    {
+      "id": "F09",
+      "status": "verified",
+      "topic": "Contact terms retained without a smooth joint-density claim",
+      "finding": "Leaving the second direction inside D_X q_j is mathematically sufficient for the stated estimate and retains diagonal/contact contributions. A bound for that directional coefficient does not imply a uniform pointwise density in both input bonds.",
+      "illustrative_normalization_check": "For the scalar model C(X)=(1/2) sum_b omega_j X(b)^2, one has q_b(X)=X(b) and Dq_b(X)[w]=w(b), whereas the joint normalized second density is delta_{bb'}/omega_j. This illustrates why the candidate's curried bound can be uniform while an unweighted smooth joint-density assertion would fail. This example is only a normalization check, not an asserted formula for the original mean."
+    },
+    {
+      "id": "F10",
+      "status": "explicit_application_condition_retained",
+      "topic": "Source(57) and the entire local support",
+      "source": [
+        "CMP102 printed277, (57), (69), (72)"
+      ],
+      "finding": "The application requires the sup bound on every actual input bond in S_c, and the background regularity needed on the corresponding original patch. Equation(57) is stated on the original Omega_j domains; it should not be read as a new theorem for an arbitrary substituted block geometry. The source itself uses the 2 epsilon3 local estimate in(69)/(72) in its original construction. The candidate explicitly says 'If' |X_c|<=2 epsilon3 and retains that condition, so its local inequality does not require an unproved global mixed-stratum norm identification.",
+      "limitation": "This assessment does not add a collar/geometry theorem at incident stratum boundaries. Any later application that derives the local condition from a different weighted field norm must verify coverage of S_c and keep any scale-ratio factors. The source incident-bond convention must be maintained."
+    },
+    {
+      "id": "F11",
+      "status": "verified",
+      "topic": "Insertion of Tz and remaining spatial work",
+      "finding": "For fixed v=T(A)z, the coefficient inequality remains valid for the value of that vector, with M_c(Tz) explicitly retained. It does not prove dependence only on local z or exponential decay in the support of z. The first leg T u and the other terms of the current Hessian require their own sums. Thus the candidate adds useful retained-stratum information without collapsing it into a global scalar bound, but it does not close the current convolution."
+    },
+    {
+      "id": "F12",
+      "status": "verified",
+      "topic": "Coarse measure, adjoint current contraction, and one output evaluation",
+      "source": [
+        "CMP102 (27), (28), (66), (85)"
+      ],
+      "calculation": [
+        "With (H B)(a)=sum_c s_c^d H(a,c)B(c), the fine/coarse pairing gives Hsharp J(c)=sum_a eta^d H(a,c)^t J(a).",
+        "The current contraction is sum_c s_c^d tr[(Hsharp J)(c) Ccal''(F)[u,v](c)].",
+        "For the fine pairing <u,Kv>=sum_b eta^d tr[u(b)(Kv)(b)], u supported at b0 with u(b0)=eta^(-d) xi gives tr[xi(Kv)(b0)]."
+      ],
+      "finding": "The fine evaluation removes its own weight exactly once. It does not justify multiplying the already normalized B_F or L_F by another eta^(-d). The transpose is the one associated with the source bilinear trace pairing. No full bound on K follows merely from this bookkeeping.",
+      "current_check": "The original source(28) indeed retains C1 B3 epsilon1 s_y^(-3). The future sums must retain epsilon1 in addition to the epsilon3 difference factor."
+    },
+    {
+      "id": "F13",
+      "status": "scope_limit_confirmed",
+      "topic": "What the result establishes",
+      "finding": "The displayed local coefficient result is a valid, source-bound increment at the declared depth. Its uniform complex premise is supportable in the original source setting, rather than being an unexplained inference from real analyticity. It remains a local lemma with explicit input hypotheses. Neither the full-V neighborhood issue for arbitrary localized directions, nor the T/R/H sums, the output spatial decay, equation(189), a later-mean transfer, or a physical theorem is proved here."
+    }
+  ],
+  "required_carry_forward": [
+    "Keep the original mean and fixed source-admissible background identified.",
+    "Keep a, C3, and their original uniform complex domain attached to the estimates.",
+    "Keep the condition |X_c|<=a/4, and the stronger source specialization |X_c|<=2 epsilon3 with epsilon3<=a/8.",
+    "Interpret S_c using original bond incidence and retain the two distinct input measures.",
+    "Retain M_c(Tz), the coarse s_c^d measure, the fine eta^d measures, and the epsilon1 current factor in later convolutions.",
+    "Use eta^(-d) once for a fine output evaluation, not as an additional factor on an already normalized density."
+  ],
+  "actions": {
+    "candidate_changed": false,
+    "manuscript_or_repository_changed": false,
+    "source_pdf_or_crop_saved": false,
+    "report_only_written_to": "C:/Trabajo/airr/2026-10-31_execution1741/ASSESSMENT1741.json"
+  }
+}

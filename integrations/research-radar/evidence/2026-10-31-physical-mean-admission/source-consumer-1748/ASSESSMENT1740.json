@@ -1,0 +1,230 @@
+{
+  "report": "ASSESSMENT1740",
+  "execution": 1740,
+  "date": "2026-10-31",
+  "unscored": true,
+  "input": {
+    "path": "C:/Trabajo/airr/2026-10-31_execution1740/CURRENT-TERM-SECOND-DERIVATIVE1740.json",
+    "sha256": "1e368094527542d6e9db1949dd7384e710a72f6ccc926d49fd340195e5e97365",
+    "sha256_verified": true,
+    "frozen_input_changed": false,
+    "assessed_scope": "Only the new fixed-background current-term second differentiation and its claims. No reassessment or scoring of preceding records."
+  },
+  "reviewer_provenance": {
+    "requested_model": "gpt-6-astra",
+    "requested_reasoning_effort": "xhigh",
+    "actual_model_identity": "Unauthenticated: no provider attestation available to this reviewer.",
+    "actual_reasoning_effort": "Unauthenticated: no provider attestation available to this reviewer.",
+    "context": "A delegated review context received the frozen candidate and a narrow source-checking assignment.",
+    "external_independence": "Not claimed or authenticated. Separate delegated context does not establish external expert independence.",
+    "subagents_spawned": false,
+    "prior_assessments_reopened_or_rescored": false
+  },
+  "disposition": {
+    "label": "Exact fixed-background current-Hessian identities; localized estimate (189) remains unproved",
+    "conclusion": "Equations (I), (II), and (III) are correct as analytic finite-dimensional identities for the original CMP102 composite map, original fixed H, and original fixed current J, on the admitted chart where the stated inverse exists. The five-term subtraction has the correct signs and normalization. This is a calculation of one of the terms needed for (189), but neither the current term's weighted off-diagonal bound nor full (189) has been established.",
+    "accepted_at_scope": [
+      "The composite Ccal, with a separate s_c=L^{j(c)} eta in every output stratum.",
+      "D'=R B and D''[u,v]=R Ccal''(F)[Tu,Tv], with B=Ccal'(F), R=(I+B H)^{-1}, and T=I-H D'.",
+      "D2''=Ccal''(0), and the exact five-term decomposition of D3''.",
+      "The negative fixed-current Hessian -<H D3''[u,v],J>, equivalently its weighted bilinear-transpose expression."
+    ],
+    "not_established": [
+      "The localized current contribution to (189), with its output scale s_y^{-3}, input norm and support, and exp[-delta0 d(y,y')/4].",
+      "A completed calculation for (88), (89), (90), and (93).",
+      "Transfer from CMP102's original averaging map to the later CMP109 physical averaging operation.",
+      "Equation (190), physical attenuation or history results, or any whole-manuscript conclusion."
+    ]
+  },
+  "source_check": {
+    "primary": {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/cmp102_variational/1104114383.pdf",
+      "sha256": "838056b5c578f81d058deb3d394c66d934690e3b94c6cf2956534ec6d211b541",
+      "sha256_verified": true
+    },
+    "inspected": [
+      {
+        "printed_pages": "285-286",
+        "pdf_pages_1based": "9-10",
+        "method": "Text and full-page visual inspection in memory",
+        "equations": "44-56"
+      },
+      {
+        "printed_pages": "287",
+        "pdf_pages_1based": "11",
+        "method": "Text inspection",
+        "equations": "57-63 and fixed-background analyticity discussion"
+      },
+      {
+        "printed_pages": "288-293",
+        "pdf_pages_1based": "12-17",
+        "method": "Text and full-page visual inspection in memory",
+        "equations": "64-105, especially 68-73 and 78-85"
+      },
+      {
+        "printed_pages": "281-284",
+        "pdf_pages_1based": "5-8",
+        "method": "Text inspection; page 282 also visually inspected",
+        "equations": "Fixed U0 and eta; current definition 27-28; action expansion"
+      },
+      {
+        "printed_pages": "308",
+        "pdf_pages_1based": "32",
+        "method": "Text and full-page visual inspection in memory",
+        "equations": "185-190"
+      },
+      {
+        "printed_pages": "309",
+        "pdf_pages_1based": "33",
+        "method": "Text inspection of reference list",
+        "equations": "Reference [4] identification only"
+      }
+    ],
+    "image_handling": "Rendered bytes were inspected in memory. No new PDF, page-image file, or crop-image file was saved.",
+    "source_scope_limit": "Selected definitions and formulas were checked. This is not verification of all cited results in CMP95/96/98/99 or of the complete CMP102 proof.",
+    "inherited_bindings": "Prior external source bindings and assessments in the input were metadata only; their files were not audited or their conclusions inherited.",
+    "reference_dictionary": "CMP102 reference [4] is Averaging operations for lattice gauge theories, CMP98, 17-52 (1985). The later CMP109 physical-mean difference is retained as a supplied scope limitation, not independently re-audited here."
+  },
+  "exact_calculation": {
+    "spaces": "E is the original fine-bond field space and K the original mixed-stratum coarse configuration space. H:K->E is fixed. Ccal:E->K and D:E->K retain the source restrictions, including zero correction on Lambda_0. Derivatives are Frechet derivatives of the admitted analytic extensions.",
+    "scale_rule": "For c in Lambda_j, s_c=L^j eta and Ccal(X)(c)=C_j(s_c X,c). Exactly, Ccal^{(m)}(X)[u1,...,um](c)=C_j^{(m)}(s_c X)[s_c u1,...,s_c um](c). This action-level identity does not derive the rescaled density-kernel prefactors.",
+    "first_derivative": "F=A-H D(A), F'[u]=u-H D'[u]=Tu. Differentiating D=Ccal(F) gives D'[u]=B Tu=B u-B H D'[u]; hence (I+B H)D'=B and D'=R B.",
+    "second_derivative": "F''[u,v]=-H D''[u,v]. Therefore D''[u,v]=Ccal''(F)[Tu,Tv]-B H D''[u,v], yielding D''[u,v]=R Ccal''(F)[Tu,Tv]. Differentiating R separately produces an equivalent formula, not an additional omitted term.",
+    "quadratic_normalization": "Ccal(0)=Ccal'(0)=0 gives D(0)=D'(0)=0, R(0)=I, T(0)=I. With C_0=Ccal''(0), D2(A)=Ccal2(A)=(1/2)C_0[A,A]; consequently D2''=C_0, without an extra factor of 2.",
+    "five_term_identity": "With C_F=Ccal''(F) and N=H D', D3''[u,v]=(R-I)C_F[Tu,Tv]+(C_F-C_0)[Tu,Tv]-C_0[Nu,v]-C_0[u,Nv]+C_0[Nu,Nv]. Add/subtract C_F[Tu,Tv] and C_0[Tu,Tv], then expand T=I-N. Also R-I=-R B H. The final plus sign is correct.",
+    "cubic_cross_check": "The part linear in A of D3'' is Ccal'''(0)[A,u,v]-C_0[A,H C_0[u,v]]-C_0[u,H C_0[A,v]]-C_0[v,H C_0[A,u]]. It agrees with twice differentiating the cubic homogeneous term Ccal3(A)-C_0[A,H Ccal2(A)] from source (56).",
+    "current_hessian": "For fixed J and H, Vcur=-<H D3,J>_fine gives Vcur''[u,v]=-<H D3''[u,v],J>_fine=-<D3''[u,v],Hsharp J>_coarse. This is a symmetric complex-bilinear Hessian, not a sesquilinear one."
+  },
+  "findings": [
+    {
+      "id": "F01",
+      "status": "exact_with_original_dictionary",
+      "topic": "Original implicit equation and scale placement",
+      "evidence": "CMP102 (44), (49), (56), printed 285-286.",
+      "finding": "The candidate matches (49) with the full composite Ccal(X)(c)=C_j(s_c X,c). No missing exterior s_c is needed in B=Ccal'(F). In source (68), s_c multiplies the derivative of the uncomposed C_j; multiplying the already composed B by s_c again double-counts that chain-rule scale.",
+      "qualification": "This identifies the operator action. Normalized derivative kernels additionally require the lattice-measure changes emphasized after (72). The input correctly leaves those unverified."
+    },
+    {
+      "id": "F02",
+      "status": "exact_on_admitted_chart",
+      "topic": "Resolvent and second implicit differentiation",
+      "evidence": "CMP102 (49), (68)-(71).",
+      "finding": "I+B H has a plus sign because F=A-H D. R acts on the coarse space; T acts on the fine space. D''=R Ccal''(F)[Tu,Tv] has no missing derivative-of-R or derivative-of-T term: implicit second differentiation collects them.",
+      "qualification": "Invertibility is inherited from the source small-chart construction, not proved anew. Retain its epsilon restrictions and invariant coarse space. Candidate R must not be confused with the source Landau-gauge projection also named R."
+    },
+    {
+      "id": "F03",
+      "status": "exact",
+      "topic": "Quadratic subtraction, signs, and factor of two",
+      "evidence": "CMP102 (55)-(56), (78)-(80).",
+      "finding": "The source D3 contains all terms of degree at least three, not just D^(3). The candidate uses it correctly. D2=(1/2)C_0[A,A] implies D2''=C_0. All five signs in (II) are correct; positive C_0[Nu,Nv] is necessary.",
+      "consequence": "The quadratic current contribution stays in (79); it is not counted again in the displayed nonlinear Hessian."
+    },
+    {
+      "id": "F04",
+      "status": "exact_with_fixed_background",
+      "topic": "Current sign and background derivatives",
+      "evidence": "CMP102 printed 281, (27)-(28), (74), (78)-(85).",
+      "finding": "U0 and eta are fixed in this expansion. The background current J=D_cov^* eta^{-2} Im(partial U0), with source conventions, is fixed in the A derivative. The minus sign in (III) agrees with (80) and (85).",
+      "qualification": "Constrained stationarity and the gauge condition do not imply full J=0. An external-background or history derivative would introduce H/J derivatives and is outside this calculation."
+    },
+    {
+      "id": "F05",
+      "status": "consistent_with_source",
+      "topic": "Gauge and variation domain",
+      "evidence": "CMP102 (45), (75)-(77), (83)-(84), and the continuation onto printed 291.",
+      "finding": "The original H obeys the source right-inverse and Landau-gauge conditions. The source calculates functional derivatives on the ambient analytic space without restricting variations, before imposing the tangent constraints. There is no missing tangent projection in (I)-(III).",
+      "qualification": "Later constrained operator equations or gauge return require their own projections and original domains. This does not establish a different gauge or right inverse."
+    },
+    {
+      "id": "F06",
+      "status": "correct_but_weights_not_instantiated",
+      "topic": "Complex transpose and exact source pairing",
+      "evidence": "Complex analyticity at printed 285-287 and 290; trace contraction (85).",
+      "finding": "Hsharp is the transpose for the bilinear continuation of the source trace pairing, with no complex conjugation. A Hermitian adjoint would not give the holomorphic Hessian.",
+      "explicit_weights": "For source density kernels, mu_f=eta^d, mu_c=s_c^d, (Hz)(b)=sum_c mu_c H(b,c)z(c), <x,y>_fine=sum_b mu_f tr(x(b)y(b)), <z,w>_coarse=sum_c mu_c tr(z(c)w(c)). Thus Hsharp J(c)=sum_b mu_f H(b,c)^t J(b), with t the trace-bilinear Lie-algebra transpose.",
+      "qualification": "This realizes (85); it does not estimate Hsharp J. In ordinary unweighted component matrices, the equivalent transpose includes the two pairing-weight matrices and cannot be an unweighted transpose."
+    },
+    {
+      "id": "F07",
+      "status": "open_substantive",
+      "topic": "Source kernels and mixed-stratum volume factors",
+      "evidence": "CMP102 (66), (71)-(73), (85)-(86).",
+      "finding": "The input does not perform the mixed-volume sums for a localized estimate. Equation (71) carries the inverse-kernel density s_{c'}^{-d}; (73) carries the fine-input factor s_y^{-d+1}. Equation (85) explicitly includes eta^d in the fine sum and s_c^d in the coarse sum.",
+      "checked_source_bounds": [
+        "|R(c,c')| <= 2 s_{c'}^{-d} exp[-(delta0/2)d(c_-,c'_-)] under source smallness assumptions.",
+        "|D'(A;c,b)| <= O(1) C3 epsilon3 s_y^{-d+1} exp[-(delta0/2)d(c_-,y)], b in B^j(y).",
+        "For D3', called mathfrakD_2 after subtraction, the paragraph after (73) replaces epsilon3 by epsilon3^2.",
+        "Equation (86) sums with J and H and obtains O(1) epsilon1 epsilon3^2 s_y^{-3} for the first current derivative."
+      ],
+      "required_next": "Write an explicit density-kernel ledger for the second derivative and all R/Ccal/H/current convolutions. Do not suppress cell weights or normalize delta kernels incorrectly."
+    },
+    {
+      "id": "F08",
+      "status": "open_substantive",
+      "topic": "Localized higher derivatives of the actual averaging map",
+      "evidence": "CMP102 (69)-(73), referring to Proposition 5 of reference [4].",
+      "finding": "The input proves no block-supported second- or third-derivative kernel bounds for actual C_j. Action-level factors s_c^2 and s_c^3 alone supply neither rescaled kernel densities nor support.",
+      "required_next": "Establish the original support and uniform derivative bounds with all scale conversions, or a localized Cauchy argument proving the same information. One may write C_F-C_0=integral_0^1 Ccal'''(tF)[F,.,.]dt on an admitted segment, but must bound that supported kernel.",
+      "qualification": "A separately named third-derivative theorem is unnecessary if a rigorous localized substitute suffices. A global norm-Cauchy estimate cannot by itself prove off-diagonal decay."
+    },
+    {
+      "id": "F09",
+      "status": "exact_cancellation_not_estimate",
+      "topic": "Smallness in epsilon3",
+      "evidence": "Five-term identity; CMP102 (77), (185)-(189).",
+      "finding": "Each term in (II) vanishes at A=0, so the quadratic cancellation is real and identifies an O(epsilon3) mechanism. Vanishing at zero alone does not yield a uniform coefficient in the multiscale norm.",
+      "required_next": "Bound R-I, N, C_F-C_0, and Ccal'' with uniform constants and an analytic margin respecting both field and covariant-derivative restrictions in (77).",
+      "parameter_accounting": "J also carries epsilon1 via (28). Track epsilon1 epsilon3 in the current Hessian before explaining any absorption of epsilon1 into the overall constant of (189)."
+    },
+    {
+      "id": "F10",
+      "status": "open_substantive",
+      "topic": "Remaining current leg",
+      "evidence": "CMP102 (28), (85)-(86).",
+      "finding": "Keeping J is correct, but naming Hsharp J does not estimate it. The remaining current leg is spread over the fine lattice, and its contraction with H and the two differentiated legs requires the original scales and geometry.",
+      "required_next": "Use |J| <= C1 B3 epsilon1 s_j^{-3} and applicable original H kernel estimates inside the mixed-stratum sums. Show those sums recover output s_y^{-3} with residual exponential decay. The input does not do this."
+    },
+    {
+      "id": "F11",
+      "status": "open_substantive",
+      "topic": "Bilinear Hessian versus the operator in (189)",
+      "evidence": "CMP102 (189), printed 308.",
+      "finding": "Equation (III) is a scalar bilinear form in two directions. Equation (189) bounds the field-valued Hessian applied to one supported direction, restricted to an output block. The conversion requires the normalized fine pairing and an output-localized test field.",
+      "exact_conversion": "Define Kcur by Vcur''[u,v]=<u,Kcur v>_fine. For an ordinary component vector u equal to xi at one fine bond b, Vcur''[u,v]=eta^d tr(xi (Kcur v)(b)); divide out eta^d to extract the output. Equivalently use the evaluation direction eta^{-d}xi at b.",
+      "required_next": "Construct or estimate Kcur(b,b') in the source density convention, keep v supported in original tilde-Delta(y'), and prove the Delta(y) output bound with max{|v|_(-1),|nabla v|_(-2)} and exp[-delta0 d(y,y')/4]."
+    },
+    {
+      "id": "F12",
+      "status": "open_substantive",
+      "topic": "Full (189) and downstream scope",
+      "evidence": "Paragraph before CMP102 (189), listing (85), (88), (89), (90), and (93).",
+      "finding": "Even a completed bound for (III) handles only the first listed contribution. The other second differentiations, including covariant-derivative and integration-by-parts terms, are absent.",
+      "consequence": "Neither full (189) nor (190) follows. The candidate acknowledges this correctly; this assessment gives no downstream admission."
+    },
+    {
+      "id": "F13",
+      "status": "dictionary_limit_retained",
+      "topic": "Original averaging versus the later physical mean",
+      "evidence": "CMP102 (44), (56), (72), and reference [4]; supplied limitation concerning later CMP109 averaging.",
+      "finding": "This derivation uses the original CMP102 C_j and H from its CMP98-derived averaging construction. Keeping that dictionary fixed and forbidding a silent mean replacement is appropriate.",
+      "consequence": "Correct algebra for source (85) proves neither equality with the derivatives of the later CMP109 physical mean nor transfer of the localized estimate to it. An explicit operator identification or a separate calculation for the later mean remains necessary and is not provided or authenticated here."
+    }
+  ],
+  "minimum_remaining_work_for_current_part_of_189": [
+    "Fix the original density-kernel conventions and derive the two-input Ccal derivative kernels with true block supports and scale factors.",
+    "Realize all five terms of (II), using source R/H kernels and actual J, as normalized mixed-volume contractions.",
+    "Prove uniform smallness and convolution estimates retaining supported input, output block, and source derivative norm.",
+    "Convert the bilinear expression into the field-valued Hessian without losing fine evaluation normalization.",
+    "Recover s_y^{-3} and exp[-delta0 d(y,y')/4] with an explicit admitted parameter range."
+  ],
+  "limitations": [
+    "Only the frozen 1740 candidate was assessed. No preceding review was repeated, rescored, or used as independent validation.",
+    "No manuscript, root record, repository, or frozen input was modified.",
+    "No new proof of cited H/resolvent theorems or original C_j kernel estimates was performed.",
+    "No full CMP102 proof, CMP109 averaging proof, Capacity review, physical attenuation argument, or whole-manuscript review was performed.",
+    "No formal verification, numerical substitute for proof, or external independence certification was performed.",
+    "Exact algebra assumes the original admitted analytic chart and inverse existence; it does not establish uniform kernel constants.",
+    "Requested model and reasoning effort are recorded as requested, not authenticated actual runtime properties."
+  ]
+}

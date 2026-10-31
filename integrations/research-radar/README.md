@@ -1,6 +1,6 @@
 # Research radar
 
-Latest physical-source dictionary: [mean, hard-gap and current admission boundary](notes/2026-10-31-physical-mean-admission.md) distinguishes the actual hard uniform-gap statement, background-dependent mean and real Hsharp-current units. Reading depths and conditional deductions remain explicit; no physical gap, marked/history theorem, manuscript score or graph promotion.
+Latest physical-source dictionary: [mean, hard-gap and current admission boundary](notes/2026-10-31-physical-mean-admission.md) distinguishes the actual hard uniform-gap statement, background-dependent mean and real Hsharp-current units. The same note now records the conditional source189 reconstruction, complete focused reports and adverse carrier/log-chart findings. Reading depths remain explicit; no physical gap, marked/history theorem, manuscript score or graph promotion.
 
 Latest scoped admission assessment: [first-integral audit and covariance/reference repairs](evidence/2026-10-31-first-admission-audit/README.md) preserves one unscored exact-note report, both adverse findings and unchanged inputs. Conditional subgates are separated from full activity/marginal admission; no manuscript score or canonical formal promotion.
 

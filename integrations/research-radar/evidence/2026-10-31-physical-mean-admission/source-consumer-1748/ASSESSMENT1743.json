@@ -1,0 +1,192 @@
+{
+  "assessment": "ASSESSMENT1743",
+  "created_utc": "2026-10-31T18:42:07.354921+00:00",
+  "input": {
+    "path": "C:\\Trabajo\\airr\\2026-10-31_execution1743\\KINETIC-COARSE-HESSIAN1743.json",
+    "sha256": "559be55b7b13db519ce4e978146476ada1ed0d5f22697cc3d7cd872428b18c7a",
+    "frozen_input_verified": true
+  },
+  "unscored": true,
+  "review_identity": {
+    "requested_model": "gpt-6-astra",
+    "requested_reasoning_effort": "xhigh",
+    "actual_model_identity": "unauthenticated",
+    "actual_reasoning_effort": "unauthenticated",
+    "independence": "unauthenticated; a separate delegated task context was used, but this is not authentication of model identity, reasoning setting, or scientific independence",
+    "method": "Own mathematical assessment of the frozen 1743 text, selected primary-source pages, and direct 1741/1742 mathematical inputs. No prior assessment was opened or inherited."
+  },
+  "disposition": {
+    "label": "conditional_acceptance_of_joint_source88_89_component",
+    "verdict": "No blocking mathematical error found in the normalized coarse reduction, the four-term ambient Hessian, or the conditional weighted convolution. The conclusion is an O(epsilon3) localized bound at exp[-delta d/4] for the two kinetic-coordinate terms of CMP102 equation (80) associated with (88)/(89), subject to every stated original-source kernel, geometry, complex-chart, smallness, and summability premise at the chosen common delta.",
+    "qualification": "One nonblocking source-attribution precision: Theorem 3.12 explicitly excludes the covariant-Laplace estimate for G and G1, whereas (3.133) supplies no such H estimate. The candidate does not need an H Laplacian estimate, so its algebra and bound are unaffected.",
+    "not_established": [
+      "A fixed physical domain/profile satisfying all these premises simultaneously",
+      "The later physical averaging map or a substitution of its covariance",
+      "The original previously named delta0/4 if delta is smaller than that delta0",
+      "The other source90/93 terms or full189/190",
+      "A positive physical gap, normalized/marked/sector/history conclusions, or whole-manuscript admission"
+    ]
+  },
+  "scope": {
+    "only_candidate1743_assessed": true,
+    "previous1742_reopened_or_rescored": false,
+    "ancestral_chain_audited": false,
+    "direct_antecedents_consulted": [
+      "1741 mathematical derivation of the local curried coefficient",
+      "1742 mathematical derivation of the weighted maps, collar, and block-summation premises"
+    ],
+    "excluded": [
+      "grades or numerical scores",
+      "target or restart decisions",
+      "manuscript, Capacity, or publication review",
+      "candidate/manuscript/repository edits",
+      "new source-image or source-PDF files"
+    ],
+    "source_depth": "Selected original equations and statements were checked, including visual inspection of mathematically decisive pages rendered only in memory. Complete source proofs were not audited."
+  },
+  "sources_read": [
+    {
+      "path": "C:\\Users\\lluis\\Documents\\CodexYangMillsAutopilot\\runtime\\sources\\primary\\cmp102_variational\\1104114383.pdf",
+      "sha256": "838056b5c578f81d058deb3d394c66d934690e3b94c6cf2956534ec6d211b541",
+      "selected_printed_pages": "285-293",
+      "visually_checked": "289 and 291",
+      "relevant": "44-57, 66-73, 74-80, 83-89"
+    },
+    {
+      "path": "C:\\Users\\lluis\\Documents\\CodexYangMillsAutopilot\\runtime\\sources\\primary\\cmp99\\1103942769.pdf",
+      "sha256": "39f8033b35838c7bdd14f97c7fb1edb0b35d4190b8b88f31d19d12a72d542861",
+      "selected_printed_pages": "397-398, 419-424",
+      "visually_checked": "422 and 423",
+      "relevant": "weighted norms/supports; 3.122-3.126, normalized-H qualification on421/422, 3.132-3.133, Theorem3.12 and the following common-rate convention"
+    },
+    {
+      "path": "C:\\Users\\lluis\\Documents\\CodexYangMillsAutopilot\\runtime\\sources\\primary\\balabanfusion.pdf",
+      "sha256": "00cc6b218dcf0e1c2884e135caa1d57b3591df036540b685e7440f30cbd4ff16",
+      "selected_pages": "CMP98 printed39-43, containerPDF317-321; CMP96 printed233-234, containerPDF341-342",
+      "visually_checked": "CMP98 printed40",
+      "relevant": "functional density138, linear coefficient147, nonlinear157, complex-extension statement43; triangle/summability Lemma2.1"
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-10-31_execution1741\\LOCAL-MEAN-CURRIED-DENSITY1741.json",
+      "sha256": "9c6c18ea8a294e340fb471fa0e2f511ea55bb09cf283033a7836435d74ddbbb1",
+      "depth": "Mathematical derivation only, not a new evaluation of1741"
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-10-31_execution1742\\LOCALIZED-CURRENT-CONVOLUTION1742.json",
+      "sha256": "bca0d89789f0bc8882ce3fc3c22e8a7dce561d5d6cee234ba40571cd07e1ffa0",
+      "depth": "Direct mathematical input to1743 only; no assessment file read and no reopening/rescoring"
+    }
+  ],
+  "findings": [
+    {
+      "id": "F01",
+      "status": "verified",
+      "topic": "Actual operator dictionary and normalized H",
+      "detail": "CMP102(44)-(45) normalizes the coarse constraint as S Q H=I. CMP99(3.126) is unnormalized, and printed421/422 expressly requires the extra right input factor S^-1 for the variational H. Thus P=S Q and H=G_q Qsharp B_q S^-1 are the correct orderings. The G_q in this calculation is the operator with inverse Delta_pi+D_cov R_g D_cov^sharp+Qsharp S^-2 Q from CMP99(3.122)/CMP102(87), not SectionG(180). R_g is the gauge projection, and does not become the nonlinear fixed-point inverse R_c."
+    },
+    {
+      "id": "F02",
+      "status": "verified",
+      "topic": "Exact coarse reduction without a commutator assumption",
+      "detail": "QH=S^-1 and R_g D_cov^sharp H=0 give Delta_pi H=G_q^-1 H-Qsharp S^-2 QH=Qsharp(B_q-S^-2)S^-1. Since Psharp=Qsharp S, this is Psharp W with W=S^-1(B_q-S^-2)S^-1. Multiplication by Hsharp gives Hsharp Delta_pi H=(PH)sharp W=W. No S/B_q commutation and no Laplacian bound on H appear. The source87 cancellation is the same identity."
+    },
+    {
+      "id": "F03",
+      "status": "verified",
+      "topic": "Coarse density and diagonal normalization",
+      "detail": "With coarse integration mass mu_c=s_c^4, the B_q part of W has density s_c^-1 B_q(c,cprime)s_cprime^-1. Source3.132 therefore gives C_B s_c^-3 s_cprime^-5 exp[-delta_B d]. The subtracted multiplication operator S^-4 has density s_c^-4 delta_ccprime/mu_cprime, not a Kronecker delta of amplitude1 in density notation. Its weighted coarse0 to coarse(-4) block coefficient is exactly -delta_ccprime. The label nonlocal should be read as the B_q contribution, which can also have its own diagonal entries; no zero-diagonal premise is needed."
+    },
+    {
+      "id": "F04",
+      "status": "verified",
+      "topic": "Weighted symmetry and the min-ratio bound in dimension four",
+      "detail": "W is symmetric for the source bilinear pairing because Delta_pi is symmetric. Adding the symmetric diagonal S^-4 I shows that the B_q contribution is also symmetric. A weighted-transpose density satisfies K(c,cprime)^t=K(cprime,c); it does not acquire an extra measure ratio. Multiplying its first bound by output normalization s_c^4 and source mass s_cprime^4 gives C_B(s_c/s_cprime)e^-delta_B d. Using the transposed bound gives C_B(s_cprime/s_c)e^-delta_B d. Taking their minimum proves the stated uniform block estimate and K_W=1+C_B, up to the fixed component constants. This cancellation is specifically four-dimensional."
+    },
+    {
+      "id": "F05",
+      "status": "verified_with_condition",
+      "topic": "Rate ledger",
+      "detail": "Visual inspection confirms exp[-delta1 d] in printed3.132 and exp[-(delta1/2)d] in3.133. Printed423 subsequently introduces a common positive decay-rate convention. The candidate does not need literal equality of those printed labels: a sufficiently small common positive delta can be used, with all intermediate bounds weakened consistently. Its final certificate is delta/4. If delta is smaller than a rate used earlier, the collar condition delta*ell>=16 log L, Lemma2.1 conditions at all used fractions, and Neumann smallness constants must be retested at that delta. The text retains precisely this obligation; it does not prove it for a fixed profile."
+    },
+    {
+      "id": "F06",
+      "status": "verified",
+      "topic": "Combined energy and signs",
+      "detail": "Equation80 has -<A,Delta_pi H D> plus one half<HD,Delta_pi HD>. Applying F02 gives -<PA,W D>+one half<D,W D>. For x=PA and r=x-D, this equals one half<r,W r>-one half<x,W x>. Therefore the sign of the mixed cross term used in1743 is the sign in80. The positive-cross-term derivative displayed in88 is an estimate of that cross expression and does not reverse the sign inherited from80."
+    },
+    {
+      "id": "F07",
+      "status": "verified",
+      "topic": "Full implicit second derivative",
+      "detail": "Differentiating D=Ccal(A-HD) once gives (I+Ccalprime H)Dprime=Ccalprime and T=I-HDprime. A second ambient differentiation gives (I+Ccalprime H)Ddoubleprime[u,v]=Ccaldoubleprime[Tu,Tv], hence Ddoubleprime=R_c Ccaldoubleprime[T,T]. This is the full D second derivative. No quadratic subtraction belongs to this term, in contrast with the separate current contribution involving D3. The derivative exists in the field chart; source290 expressly calculates unrestricted variations before imposing tangent restrictions."
+    },
+    {
+      "id": "F08",
+      "status": "verified",
+      "topic": "Exact four-term scalar and field Hessian",
+      "detail": "For fixed W, the derivative of r is P-Dprime and its second derivative is -Ddoubleprime. Expanding <(P-Dprime)u,W(P-Dprime)v>-<Pu,WPv>-<Wr,Ddoubleprime[u,v]> gives exactly the three displayed P/Dprime terms and the negative Ddoubleprime term. With Z=R_csharp W r and <u,L_Z,F v>_fine=<Z,Ccaldoubleprime[u,v]>_coarse, the fourth term is -Tsharp L_Z,F T. The operator is symmetric under the source bilinear transpose. No derivative of Z is missing, because Z is introduced after the scalar second derivative has been computed. At A=0, Dprime=0 and r=0, so Kmix=0, consistent with the cubic-and-higher scope."
+    },
+    {
+      "id": "F09",
+      "status": "verified_with_condition",
+      "topic": "P and Psharp block weights",
+      "detail": "Changing the old normalized averaging coefficient to the fine measure gives P density s_c^(1-d)q_j=s_c^-3 q_j. For a fine block with owner scale s_z comparable to s_c, its volume s_z^4 and input amplitude s_z^-1 give a dimensionless output, with only the retained finite scale ratios. In the transpose, source mass s_c^4 times input amplitude s_c^-4 cancels; the remaining density s_c^-3 is comparable to the desired output s_y^-3. Hence P:fine(-1)->coarse0 and Psharp:coarse(-4)->fine(-3) are correct. Uniform local block constants and inserted exponential require the original two-block support, finite incidence, and collar comparability premises, not arbitrary replacement geometry."
+    },
+    {
+      "id": "F10",
+      "status": "verified_with_condition",
+      "topic": "Dprime, T, Tsharp, and R_csharp maps",
+      "detail": "Source73 has fine input density bounded by C_D epsilon3 s_z^-3 exp[-delta0 d(c,z)/2]. Fine integration gives s_z^4*s_z^-3*s_z^-1=1, proving its stated fine(-1)->coarse0 block scaling. For the transpose, s_c^4*s_c^-4=1 leaves s_y^-3. The direct1742 H Dprime calculation yields N:fine(-1)->fine(-1) and Nsharp:fine(-3)->fine(-3); therefore T and Tsharp have block constants1+n at the stated rate. These are block constants; global norms additionally contain the corresponding summability factor unless absorbed in constants. The R_c-I density with input factor s_cprime^-4 likewise shows that R_csharp preserves coarse(-4), with identity plus O(epsilon3) norm. The identity is an actual normalized delta. These deductions use the original kernels and smallness/summability premises; no adjoint norm equality for unrelated weighted spaces is assumed."
+    },
+    {
+      "id": "F11",
+      "status": "verified_with_condition",
+      "topic": "The coefficient Z=R_csharp W(PA-D)",
+      "detail": "PH=I gives r=PA-D=P(A-HD)=PF exactly. Source57 gives |F|_(-1)<=2epsilon3. The local P row bound then gives |r|_0<=2K_P epsilon3. The uniform W block bound and the actual coarse exponential row sum yield |Wr|_(-4)<=K_W C_sum |r|_0. Applying R_csharp gives the stated K_Z epsilon3 bound for epsilon3<=1. This is a bound on the base coefficient, not on a localized forcing direction, so a global row estimate is appropriate here. It contains no current J and therefore no epsilon1 factor. C_sum must remain a uniform source-domain constant, not the number of coarse sites."
+    },
+    {
+      "id": "F12",
+      "status": "verified_with_condition",
+      "topic": "Local Ccaldoubleprime contraction and contact terms",
+      "detail": "The direct1741 coefficient is s_c^-3 D_X q_j(s_cF)[s_c v], with one input already inserted. In <Z,Ccaldoubleprime[u,v]> the coarse factor s_c^4 cancels the coarse(-4) coefficient Z; one output evaluation removes the fine mass only once. The local coefficient then gives the desired fine(-1)->fine(-3) map. It retains contact contributions inside the directional derivative rather than replacing them by a bounded smooth two-input kernel. The owner-level comparison requires sup_Sc s_c|F|<=2L epsilon3, so epsilon3<=a_chart/(8L), as explicitly kept in1743. The original uniform complex coefficient premise remains necessary."
+    },
+    {
+      "id": "F13",
+      "status": "verified_with_condition",
+      "topic": "Composition of the four Hessian terms",
+      "detail": "Every composition is type-correct: Dprime maps fine(-1) to coarse0; W maps coarse0 to coarse(-4); Psharp or Dprimesharp maps back to fine(-3). The fourth term uses T:fine(-1)->fine(-1), L_Z,F:fine(-1)->fine(-3), and Tsharp:fine(-3)->fine(-3). Each product has at most three block factors, all decaying at least exp[-3delta d/8]. The triangle inequality extracts exp[-delta d(y,z)/4], leaving exp[-delta d/8] on every edge. At most two intermediate block sums are then bounded by C(1/8)^2, including the fixed coarse-bond/fine-block multiplicities. This proves precisely the bracket in7: K_W(2K_P K_D epsilon3+K_D^2 epsilon3^2)+(1+K_N epsilon3)^2 K_L K_Z epsilon3. For epsilon3<=1 it is O(epsilon3)."
+    },
+    {
+      "id": "F14",
+      "status": "verified_with_condition",
+      "topic": "Original enlarged support and input norm",
+      "detail": "Under the retained collar/owner-block premise, an input supported in the original tildeDelta(z), of side2s_z, meets a bounded number of owner blocks at the adjacent levels. Restricting to these blocks and using their bounded label distance from z multiplies the bound by C_ext exp[(delta/4)D_ext] and preserves its decay exponent. Once the exact coarse reduction has been made, no derivative acts on the inserted direction. Rough restriction masks therefore cause no hidden gradient term in this component. The field norm estimate is legitimately bounded by the max(field,gradient) input norm of189. This does not establish the derivative-containing90/93 contributions."
+    },
+    {
+      "id": "F15",
+      "status": "nonblocking_source_precision",
+      "topic": "What Theorem3.12 actually excludes",
+      "detail": "The sentence that Theorem3.12 expressly excludes a Laplacian-H estimate is imprecise if read literally. The theorem explicitly says the covariant-Laplace member of3.42 fails for G,G1. H,H1 are supplied with the field/first-derivative/Holder bounds of3.133, which do not include a Laplacian-H estimate. A precise formulation is: no needed Laplacian-H bound is provided, and the theorem explicitly excludes the corresponding G/G1 estimate. The actual1743 proof uses the exact identity Delta_pi H=Psharp W and does not invoke either unavailable bound. Consequently this is a citation correction, not a failure of the component estimate."
+    },
+    {
+      "id": "F16",
+      "status": "scope_condition_retained",
+      "topic": "Nonlinear coarse subspace and identity conventions",
+      "detail": "The source nonlinear mean has zero rows on Lambda0. The displayed R_c inverse can be read on that nonlinear subspace, with the coefficient restricted before applying its transpose, or extended to the full coarse space by the identity on the zero rows. Since Ccaldoubleprime has those zero rows, both readings give the same fourth Hessian term. No extra nonzero nonlinear component on Lambda0 is required. W and P may act on the full original coarse space, as the energy formula requires. This is a harmless convention to keep explicit in any later implementation."
+    },
+    {
+      "id": "F17",
+      "status": "scope_condition_retained",
+      "topic": "Exact boundary of the conclusion",
+      "detail": "The gain is an actual normalized coarse reduction and a conditional O(epsilon3) localized estimate for the source88/89 component. It is stronger than merely writing an abstract Hessian, but it still assumes original source kernels at selected-statement depth and the original domain/gauge/background/mean. No simultaneous fixed-profile test, parameter certificate, replacement of the mean, positivity/gap theorem, or full189/190 follows. Neither conditional acceptance nor the candidate is a score or a review of the manuscript. The earlier1742 assessment is not reopened or inherited."
+    }
+  ],
+  "verification": {
+    "algebra": "Re-derived the Delta_pi H identity, the weighted-density symmetry bound, both implicit derivatives, and the four-term Hessian directly.",
+    "weights": "Checked fine/coarse insertion and output powers separately for W, P, Dprime, N/T, R_csharp, and L_Z,F, with d=4 throughout.",
+    "convolution": "Checked the at-most-three-factor composition, residual delta/8 on every edge, and the finite tildeDelta extension under the retained hypotheses.",
+    "numerics_or_formal_proof": "None; no numerical experiment or formal build is claimed.",
+    "input_unchanged": true,
+    "no_saved_source_images_or_pdfs": true
+  }
+}

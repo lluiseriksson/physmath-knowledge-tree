@@ -1,0 +1,303 @@
+{
+  "execution": 1745,
+  "assessment_kind": "Una revisión técnica acotada del candidato exacto; sin nota, objetivo ni evaluación del manuscrito",
+  "candidate": {
+    "path": "C:/Trabajo/airr/2026-10-31_execution1745/SOURCE-BRANCH-RADIUS1745.json",
+    "sha256_expected": "3062f4a39daebb0c2f5eba22831d8ef868263681e6e424e81f9e9eb38fbb6cc6",
+    "sha256_observed": "3062f4a39daebb0c2f5eba22831d8ef868263681e6e424e81f9e9eb38fbb6cc6",
+    "hash_matches": true,
+    "input_modified": false
+  },
+  "reviewer_provenance": {
+    "requested_model": "Astra",
+    "requested_effort": "xhigh",
+    "effective_model_identity": "No autenticada mediante evidencia verificable disponible en esta revisión",
+    "effective_reasoning_effort": "No autenticado mediante evidencia verificable disponible en esta revisión",
+    "effective_independence": "No autenticada por la plataforma. Comprobación propia de este candidato y de fuentes directas; no se leyeron ni heredaron los veredictos de ASSESSMENT1744, ASSESSMENT1645 u otras evaluaciones anteriores. Contexto y archivos compartidos con el agente principal.",
+    "subagents_created": false,
+    "restarts_to_improve_a_grade": false,
+    "grade_assigned": false
+  },
+  "scope": {
+    "included": [
+      "Todo el argumento nuevo: rama original Section G; radios 113/114 y 172/173; inversión 59-62; extensión compleja; intersección de restricciones; acoplamientos enlazados; uniformidad; tasa y soporte del consumidor 1744; circularidad y alcance físico.",
+      "Derivaciones directas 1742,1743,1744C,1739 y 1672 únicamente para identificar los inputs consumidos."
+    ],
+    "excluded": [
+      "Reevaluación de los cálculos cerrados de 1744 o 1645; auditoría ancestral de todas las referencias.",
+      "Pruebas completas de los teoremas publicados de propagadores; manuscrito completo, PDF del manuscrito, Capacity, nota o publicación.",
+      "Integrales marcadas, normalización exterior, sectores e historias."
+    ],
+    "status_of_1744_result": "Input matemático condicional con sus propias hipótesis; aquí se verifica la nueva aplicación de radios."
+  },
+  "source_checks": {
+    "all_seven_direct_bindings_hash_verified": true,
+    "bindings": [
+      {
+        "path": "C:/Trabajo/airr/2026-10-31_execution1744/PLAQUETTE-JET-HESSIAN1744C.json",
+        "sha256": "1b4e7a703af2ce67a1d416979bf1b95073f3a23c60e6da4154d3bf7a20d1fcb5",
+        "matches": true
+      },
+      {
+        "path": "C:/Trabajo/airr/2026-10-31_execution1743/KINETIC-COARSE-HESSIAN1743.json",
+        "sha256": "559be55b7b13db519ce4e978146476ada1ed0d5f22697cc3d7cd872428b18c7a",
+        "matches": true
+      },
+      {
+        "path": "C:/Trabajo/airr/2026-10-31_execution1742/LOCALIZED-CURRENT-CONVOLUTION1742.json",
+        "sha256": "bca0d89789f0bc8882ce3fc3c22e8a7dce561d5d6cee234ba40571cd07e1ffa0",
+        "matches": true
+      },
+      {
+        "path": "C:/Trabajo/airr/2026-10-31_execution1739/CORRECTED-COVERAGE-CURVATURE1739.json",
+        "sha256": "ce1ad19b878cd1a1103f19a2b1b8966add5b83b86f8de30cf03ca3121a252d91",
+        "matches": true
+      },
+      {
+        "path": "C:/Trabajo/airr/2026-10-31_execution1672/HARD-PROPAGATOR-COLLAR1672.json",
+        "sha256": "730f92914760adaec055ba17f78552480bbb8cdb8740db1c4bb9085b39f841b9",
+        "matches": true
+      },
+      {
+        "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/cmp102_variational/1104114383.pdf",
+        "sha256": "838056b5c578f81d058deb3d394c66d934690e3b94c6cf2956534ec6d211b541",
+        "matches": true,
+        "text_pages_read": [
+          277,
+          278,
+          279,
+          280,
+          281,
+          285,
+          286,
+          287,
+          290,
+          291,
+          293,
+          294,
+          295,
+          296,
+          303,
+          304,
+          305,
+          306,
+          307,
+          308
+        ],
+        "complete_pages_visually_inspected_in_memory": [
+          287,
+          294,
+          295,
+          296,
+          305,
+          308
+        ],
+        "depth": "Lectura seleccionada y comprobación visual de fórmulas decisivas; no auditoría integral de la prueba publicada."
+      },
+      {
+        "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/cmp99/1103942769.pdf",
+        "sha256": "39f8033b35838c7bdd14f97c7fb1edb0b35d4190b8b88f31d19d12a72d542861",
+        "matches": true,
+        "text_pages_read": [
+          396,
+          397,
+          422,
+          423,
+          424,
+          425
+        ],
+        "depth": "Regularidad local, normas, normalización de H, declaración publicada de constantes y tasa comunes; pruebas completas no auditadas."
+      }
+    ],
+    "bibliographic_crosscheck": {
+      "doi": "10.1007/BF01229381",
+      "url": "https://www.researchwithrutgers.org/en/publications/the-variational-problem-and-background-fields-in-renormalization-/",
+      "use": "Solo identidad bibliográfica; comprobaciones matemáticas desde el PDF local vinculado."
+    },
+    "pdfs_images_or_corpus_saved": false,
+    "only_authored_file": "C:/Trabajo/airr/2026-10-31_execution1745/ASSESSMENT1745.json"
+  },
+  "findings": [
+    {
+      "id": "F01",
+      "status": "verificado",
+      "subject": "Rama exacta de Section G",
+      "evidence": "CMP102 pp.278-281,305; 7,14,19-21,172-175",
+      "finding": "La fuente fija U0=Uk(V0), exige la condición mixta 7 para V0 y toma V=V'V0 en el entorno 172. Theorem 1 y la regularidad original son premisas explícitas. El candidato no sustituye U0 por el fondo híbrido físico de 1672. La pequeñez de g no demuestra 7, compatibilidad de promedio ni 172.",
+      "impact": "Aplicación válida sobre esta rama condicionada, no sobre fondos físicos arbitrarios."
+    },
+    {
+      "id": "F02",
+      "status": "verificado_con_convenciones_originales",
+      "subject": "Radio de 173 y B5",
+      "evidence": "CMP102 p.305,173, visualmente comprobada",
+      "finding": "La fórmula impresa es epsilon2_src=B1[B3(1+4C1)+C1]epsilon1 <=6B1B3C1 epsilon1=B5 epsilon1. E2=B5 epsilon1 es por ello un radio superior legítimo para mathcalH real, en las mismas normas y gauge. B5 no se elige independientemente después de epsilon1.",
+      "qualification": "Se heredan las normalizaciones originales de constantes grandes que hacen válida la desigualdad impresa (C1>=1 y B3>=1 son suficientes). 'C1 fijo absoluto' por sí solo no la justificaría para cualquier C1 positivo diminuto. El candidato se interpreta con las constantes originales."
+    },
+    {
+      "id": "F03",
+      "status": "verificado",
+      "subject": "113/114 y la bola epsilon0",
+      "evidence": "CMP102 pp.281,294,113-114",
+      "finding": "A-F exige B3 epsilon1<=epsilon0 y B1(epsilon0+C1 epsilon1)<=epsilon2<=epsilon3/4. Para toda esa clase, la elección mínima es epsilon3=4B1(epsilon0+C1 epsilon1). La pareja real de Section G tiene el control pertinente B3(1+4C1)epsilon1, que conduce a 173. Usar su radio no cubre una bola epsilon0 fija mayor. El candidato reconoce esta diferencia.",
+      "impact": "No hay compresión injustificada de la clase A-F ni reinterpretación del cutoff físico."
+    },
+    {
+      "id": "F04",
+      "status": "verificado",
+      "subject": "Inversión 59-62 y margen estricto",
+      "evidence": "CMP102 pp.285-287,45-62",
+      "finding": "Escribiendo ||A||_J=max(|A|_(-1),|nabla A|_(-2)), para ||mathcalH||_J<E2 las ecuaciones 59-62 dan A'=mathcalH+HX, F(A')=mathcalH y ||A'||_J<E2+16C2B0 E2^2<2E2. Con epsilon3=4E2 resulta ||A'||_J<epsilon3/2. Es una cota simultánea de campo y primera derivada. B conserva 2epsilon3<c4 y epsilon3<1/(18C2B0); esta última incluso da 16C2B0 E2<2/9. Igualar E2=epsilon3/4 no coloca A' en la frontera abierta de 77.",
+      "impact": "1744 recibe efectivamente una coordenada A' dentro de su chart."
+    },
+    {
+      "id": "F05",
+      "status": "verificado_con_justificacion_compleja_explicita",
+      "subject": "Entorno complejo",
+      "evidence": "CMP102 pp.293,295-296,305-307;103,174-175;Proposition 6",
+      "finding": "Una cota real no pasa a todo el entorno complejo por analiticidad sola. Aquí Proposition 6 conserva la cota para H1B complejo con los mismos límites: ||A1||_J<3B0C1B3 epsilon1, y 103 da ||H1B||_J<2dLB0C1 epsilon1. Así A'=A1+H1B satisface ||A'||_J<K_A epsilon1, K_A=B0C1(3B3+2dL). Usando B1=5dLB0 de p.296 y B3>=1, en d=4 se obtiene 2K_A<B5. Por 57-58, bajo sus restricciones originales, F(A') conserva ||mathcalH||_J<E2. La inversión 62 y su margen son entonces aplicables en el chart complejo. La unicidad identifica esta solución con la prolongación original de Section G.",
+      "qualification": "La cota amplia 8B5 epsilon1 para A1 mencionada después de 175 no bastaría sola; la cota fuerte de Proposition 6 resuelve el punto. Se verifican aquí campo y primera derivada, no un nuevo teorema de regularidad compleja de segundo orden ni una extensión a todas las órbitas complejas."
+    },
+    {
+      "id": "F06",
+      "status": "verificado",
+      "subject": "Dominio holomorfo y fondo fijo",
+      "evidence": "CMP102 pp.287,290,307",
+      "finding": "D hereda respecto de U0 el dominio de analiticidad de H, que puede ser menor que otros dominios aparentes. V(A') es holomorfa en el chart 77. U0 permanece fijo al diferenciar fluctuaciones. Variar B no autoriza variar U0 fuera de su dominio ni sustituir la acción holomorfa por una operación literal Re tr. Para B complejo se trata de prolongación analítica de la rama mínima real, sin afirmación de minimización o positividad compleja.",
+      "impact": "Las premisas complejas retenidas son necesarias; no hay prolongación ilimitada."
+    },
+    {
+      "id": "F07",
+      "status": "verificado",
+      "subject": "Diccionario de campos y promedios",
+      "evidence": "CMP102 47,59-62,173-175;1744C",
+      "finding": "mathcalH es el campo relativo no lineal; H es el inverso derecho lineal normalizado usado en F=A'-HD(A'); H1 aparece en A'=A1+H1B. Ninguno se identifica con un h seleccionado, una media gaussiana física o un promedio posterior. 62 entrega la coordenada antigua A'.",
+      "qualification": "B' de 172 y B de las ecuaciones de promedio deben seguir las transformaciones originales. Se consumen sus cotas originales; no se introduce una identidad nueva entre coordenadas."
+    },
+    {
+      "id": "F08",
+      "status": "verificado_condicional",
+      "subject": "Intersección E_star",
+      "evidence": "1745 B,C;1744C 15",
+      "finding": "Si los límites originales traducidos a epsilon3 son positivos y uniformes, un E_star estrictamente menor que su mínimo y que las pruebas mostradas es legítimo. epsilon1<min(E_star/(4B5),1,1/(C1B3)) implica epsilon3<E_star, epsilon1<1 y C1B3 epsilon1<1 simultáneamente. No se selecciona un epsilon3 distinto por componente.",
+      "qualification": "epsilon_source y q_original son marcadores de hipótesis, no valores certificados. Deben contener a1,a3,a4, las bolas ampliadas de contracción/Cauchy y la regularidad de la pareja perturbada con los factores convertidos. Si hay una familia de restricciones, no basta que cada una sea positiva: el ínfimo relevante debe ser uniformemente positivo."
+    },
+    {
+      "id": "F09",
+      "status": "verificado",
+      "subject": "Ventana de acoplamientos",
+      "evidence": "1745 SAME COUPLING THRESHOLD;input1672",
+      "finding": "La ventana (2/3)g0^2<=g1^2<=2g0^2 da g1<=sqrt(2)exp(-q/2) y q-log2<=log(g1^-2)<=q+log(3/2). Para q>=1 el logaritmo es positivo y <=2q. Con A0>0 y p0 fijo no negativo, epsilon1<=K1 exp(-q/2)q^p0, K1=sqrt(2)A0 2^p0. No se escoge g1 independientemente.",
+      "qualification": "La ventana verdadera para la ley original continúa siendo input admitido; 1745 no la vuelve a demostrar."
+    },
+    {
+      "id": "F10",
+      "status": "verificado",
+      "subject": "q>=16p0^2 y umbral abierto",
+      "evidence": "Comprobación elemental propia",
+      "finding": "Para q>0, log q<=sqrt(q). Para q>=16p0^2 y p0>=0, p0 log q<=p0 sqrt(q)<=q/4. Luego epsilon1<=K1 exp(-q/4). Si q_star>max(1,16p0^2,4log(max(1,K1/e_adm)),q_link,q_original), entonces para todo q>=q_star se tiene epsilon1<e_adm. La desigualdad es estricta incluso en q=q_star y también cuando K1/e_adm<=1. No hay error de factor 2, signo ni frontera.",
+      "impact": "Paga las restricciones decrecientes enumeradas, sujetas a las premisas uniformes."
+    },
+    {
+      "id": "F11",
+      "status": "precaucion_de_cuantificadores",
+      "subject": "Sentido de todo q>=q_star",
+      "evidence": "1745 ORIGINAL BRANCH y SAME COUPLING THRESHOLD",
+      "finding": "El intervalo es uniforme sobre familias que satisfacen 7/172 en cada q con las mismas cotas uniformes. No convierte un V0 fijo no plano en admisible para todo q mientras epsilon1(g) tiende a cero: ese dato fijo puede dejar de satisfacer 7. Tampoco uniformiza geometrias o charts degenerados.",
+      "impact": "El candidato retiene 7/172 como condiciones adicionales, por lo que no afirma esa conclusión falsa. Esta lectura es obligatoria."
+    },
+    {
+      "id": "F12",
+      "status": "verificado_a_nivel_de_premisas_publicadas",
+      "subject": "Constantes uniformes",
+      "evidence": "CMP102 pp.279,293,295,305;CMP99 pp.396-397,423-424",
+      "finding": "Las declaraciones de fuente sostienen constantes B1,B3,B5 y de propagadores uniformes sobre la clase original con d,L,C1 y parámetros geométricos fijados. Tras Theorem 3.12, CMP99 declara una tasa positiva y constantes comunes dependientes de d,L y de parámetros Holder indicados. Esto respalda el tipo de uniformidad, no la pertenencia de una familia física concreta.",
+      "qualification": "No se certifica uniformidad sobre fondos arbitrarios, volúmenes incompatibles con la construcción, charts próximos a singularidades ni historias posteriores. Una dependencia oculta en g o volumen sin cota uniforme invalida el umbral fijo para esa familia."
+    },
+    {
+      "id": "F13",
+      "status": "verificado_condicional",
+      "subject": "Tasa común y sumas",
+      "evidence": "1742,1743,1744C;1745 B",
+      "finding": "Una única delta positiva no mayor que las tasas de todos los kernels es correcta. C_delta(alpha), contracciones y geometría deben evaluarse otra vez a esa delta: conservar C de una tasa mayor sería incorrecto. 1745 lo exige y retiene fracciones 1/16,1/8,1/2, ell>=32dL y delta ell>=16logL.",
+      "qualification": "No se certificó una instancia geométrica ni se reprobó íntegramente el lema de sumabilidad. La finitud uniforme de sus sumas es un input explícito, no efecto nuevo de epsilon1 pequeño."
+    },
+    {
+      "id": "F14",
+      "status": "verificado",
+      "subject": "R_src M1 frente a R1(g)",
+      "evidence": "CMP102 1;diccionario1742/1672/1745",
+      "finding": "ell=R_src M1 pertenece a la geometría fija original de propagadores. R1(g), logarítmico en la aplicación posterior, es distinto. El crecimiento del segundo no repara un test fallido para el primero. El candidato conserva esta separación."
+    },
+    {
+      "id": "F15",
+      "status": "verificado_condicional",
+      "subject": "Prefactor, soporte y tasa del consumidor",
+      "evidence": "1744C 16;1745 A,C",
+      "finding": "C_total epsilon3 se transforma exactamente en 4B5 C_total epsilon1. No hay nueva convolución ni nueva suma espacial, de modo que permanece delta/4 y el soporte tildeDelta(z). Los factores de dirección, volúmenes de bloque y sumas permanecen en las constantes condicionales identificadas.",
+      "qualification": "No mejora la tasa, demuestra 190, ni vuelve a validar las derivaciones internas de 1744."
+    },
+    {
+      "id": "F16",
+      "status": "sin_circularidad_interna_detectada_en_este_alcance",
+      "subject": "Dependencias de la rama",
+      "evidence": "CMP102 Proposition6,Theorem1,SectionG,189",
+      "finding": "62 y Proposition 6 usan la transformación local y el control global del primer derivado, anteriores al resultado localizado 189. Insertar con ellas la rama original en 1744 no presupone el nuevo Hessiano localizado. Theorem 1 y la pertenencia a Section G se toman explícitamente como premisas publicadas.",
+      "qualification": "No se certifica independencia global de todas las fuentes. Si posteriormente se usa la localidad física de 1739 para probar hipótesis que necesita su propio kernel, hará falta verificar ese ciclo aparte. 1745 no efectúa ese cierre."
+    },
+    {
+      "id": "F17",
+      "status": "abierto_y_no_pagable_por_g",
+      "subject": "B0 físico, base, promedio y C1",
+      "evidence": "1739 y último bloque1745",
+      "finding": "32d^2 C_log(1+2C_M)(1+C_A)<C1 compara coeficientes fijos: epsilon1>0 cancela. q_star no mejora el cociente. Siguen abiertos el dato mixto físico/base, la identificación del promedio y la pertenencia del B0 físico a 172.",
+      "impact": "No hay admisión del perfil físico. Aumentar C1 exigiría revisar B5, e_adm y todos los márgenes originales; no queda justificado automáticamente."
+    },
+    {
+      "id": "F18",
+      "status": "limite_de_lectura_confirmado",
+      "subject": "Regularidad exterior",
+      "evidence": "CMP99 p.396;alcance1745",
+      "finding": "La regularidad del propagador es local al dominio/collar original y no impone regularidad fuera de Omega0. Esto no elimina sus requisitos internos ni identifica el fondo híbrido físico con Uk(V0). 1745 no impone regularidad global exterior y tampoco obtiene admisión física a partir de su ausencia."
+    },
+    {
+      "id": "F19",
+      "status": "precision_terminologica",
+      "subject": "Qué significa epsilon3 forzado",
+      "evidence": "CMP102 62,113-114;conclusión1745",
+      "finding": "La fuente exige epsilon3>=4epsilon2 y propone la elección saturada; no prueba que sea el único radio posible. A fija deliberadamente epsilon3=4B5 epsilon1 como elección suficiente. 'Forced' debe entenderse como vinculación dentro de esa elección declarada, no como unicidad del radio ni igualdad entre E2 y el tamaño real del campo.",
+      "impact": "No invalida el argumento, pero limita la atribución literal a la fuente."
+    },
+    {
+      "id": "F20",
+      "status": "alcance_final",
+      "subject": "Consecuencia condicional, sin avance físico nuevo",
+      "finding": "El nuevo resultado es una compatibilidad explícita de radios y un umbral común simbólico para un consumidor condicional ya calculado sobre la rama analítica mínima original. Corrige el uso de epsilon3 como libre al representar ese input. No aporta una instancia de pertenencia física, valores numéricos de E_star/q_star, una prueba completa nueva de la fuente, una tasa nueva ni un resultado marcado/conexo/normalizado/de sectores o historias.",
+      "impact": "Contabilizar solo como consecuencia condicional de aplicabilidad, no como nuevo avance físico ni admisión del perfil1642."
+    }
+  ],
+  "verdict": {
+    "status": "VALIDO_COMO_CONSECUENCIA_CONDICIONAL_CON_CUALIFICACIONES",
+    "mathematical_disposition": "No se encontró fallo invalidante en la nueva compatibilidad de radios ni en el umbral, con las constantes, charts y restricciones de la rama original. La extensión compleja se respalda mediante las cotas uniformes de Proposition 6, no mediante analiticidad sola.",
+    "physical_admission": false,
+    "new_physical_advance": false,
+    "concrete_uniform_threshold_certified": false,
+    "numerical_or_global_source_certificate": false,
+    "interpretive_qualifications": [
+      "Mantener las normalizaciones de constantes que justifican B5.",
+      "Usar la cota fuerte de Proposition 6 y conservar el dominio complejo original.",
+      "Leer el intervalo de q solo para familias que sigan satisfaciendo las hipótesis con cotas uniformes.",
+      "Tratar epsilon_source,q_original y sumas como premisas necesarias, no certificados producidos.",
+      "Entender A como elección suficiente fijada aquí, no único radio posible."
+    ],
+    "remaining_required_for_physical_use": [
+      "Dato mixto/base7 y rama mínima originales para el input físico.",
+      "Identificación del promedio y coordenadas antiguos con el input posterior.",
+      "B0 en172 y margen fijo frente a C1.",
+      "Geometría, collar, charts, kernels y sumas uniformes a una misma tasa positiva.",
+      "Compatibilidad de la ley fija y restantes restricciones originales sin retocar parámetros.",
+      "Los demás resultados físicos expresamente excluidos de esta revisión."
+    ],
+    "summary": "Se admite el paso condicional de radios para Section G; no se admite el perfil físico ni se atribuye un avance físico nuevo."
+  }
+}

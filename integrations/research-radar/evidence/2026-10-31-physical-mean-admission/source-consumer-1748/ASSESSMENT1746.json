@@ -1,0 +1,437 @@
+{
+  "execution": 1746,
+  "artifact": "ASSESSMENT1746",
+  "scope": "Una evaluación del candidato exacto congelado MIXED-REFINEMENT-AMPLITUDE1746.json. Sin nota numérica, sin objetivo de mejorar un resultado, sin reinicio y sin modificación del candidato.",
+  "review_configuration": {
+    "requested_model": "Astra",
+    "requested_effort": "xhigh",
+    "effective_model_identity_authenticated": false,
+    "effective_reasoning_effort_authenticated": false,
+    "effective_independence_authenticated": false,
+    "method": "Contraste directo con los archivos primarios locales y las derivaciones directas indicadas. No se leyeron ni heredaron evaluaciones cerradas de 1645 o 1744. La derivación 1744C se usó únicamente como antecedente de los requisitos del consumidor; no se reabrió su revisión."
+  },
+  "verdict": {
+    "code": "AUXILIARY_AMPLITUDE_DISTINCTION_VALID_CONDITIONALLY__REAL_BASE7_ADMISSION_NOT_ESTABLISHED",
+    "auxiliary_parameter_argument": "Válido como implicación condicional de las fuentes. K_rel<C1 no es una condición necesaria de CMP102 cuando se permite aplicar su teorema con e_var=K e y se han demostrado previamente cotas uniformes para todos los datos requeridos.",
+    "refinement_identity": "La identidad local de Q1*V es correcta en bloques completos compatibles, incluidas las cancelaciones no conmutativas y la reproducción exacta de la media.",
+    "frozen_coarse_bound": "La cota (1) no queda certificada en el portador físico declarado. Una plaqueta gruesa requiere cuatro bloques de esquina, no la caja de dos bloques adyacentes de 1737; además no se justifica el C_A preciso para todas las versiones de la media invocadas.",
+    "actual_physical_application": "No admitida. No hay una demostración de pertenencia de todos los datos del conjunto determinante real a la condición 7 con un mismo K finito, ni testigo uniforme K_old para el exterior requerido.",
+    "profile1642": "NOT ADMITTED",
+    "conclusion": "Hay una distinción auxiliar legítima y un lema exacto de refinamiento, pero el intento de certificado de base mixta real permanece incompleto. La lista explícita de premisas abiertas no las demuestra. El defecto del portador y la obligación de tipar la media deben conservarse en el resultado del input congelado."
+  },
+  "input_hashes": [
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1746/MIXED-REFINEMENT-AMPLITUDE1746.json",
+      "expected_sha256": "906e252ba2b5e39498dcccaa46320fa38a7b4f9d62ee6291b69bd6b16237e738",
+      "observed_sha256": "906e252ba2b5e39498dcccaa46320fa38a7b4f9d62ee6291b69bd6b16237e738",
+      "matches": true
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1737/REAL-MIXED-INPUT-BOUND1737.json",
+      "expected_sha256": "e45eca568fbdb9686316513e6eef48d67802966b8594a7330193c2303edd8767",
+      "observed_sha256": "e45eca568fbdb9686316513e6eef48d67802966b8594a7330193c2303edd8767",
+      "matches": true
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1739/CORRECTED-COVERAGE-CURVATURE1739.json",
+      "expected_sha256": "ce1ad19b878cd1a1103f19a2b1b8966add5b83b86f8de30cf03ca3121a252d91",
+      "observed_sha256": "ce1ad19b878cd1a1103f19a2b1b8966add5b83b86f8de30cf03ca3121a252d91",
+      "matches": true
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1744/PLAQUETTE-JET-HESSIAN1744C.json",
+      "expected_sha256": "1b4e7a703af2ce67a1d416979bf1b95073f3a23c60e6da4154d3bf7a20d1fcb5",
+      "observed_sha256": "1b4e7a703af2ce67a1d416979bf1b95073f3a23c60e6da4154d3bf7a20d1fcb5",
+      "matches": true
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1745/SOURCE-BRANCH-RADIUS1745.json",
+      "expected_sha256": "3062f4a39daebb0c2f5eba22831d8ef868263681e6e424e81f9e9eb38fbb6cc6",
+      "observed_sha256": "3062f4a39daebb0c2f5eba22831d8ef868263681e6e424e81f9e9eb38fbb6cc6",
+      "matches": true
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1736/PHYSICAL-BOUNDARY-INPUT1736.json",
+      "expected_sha256": "66e2fd7a9cb2eb771f21891dd9d72c93aed6ced539d697605c94feb8690cdff8",
+      "observed_sha256": "66e2fd7a9cb2eb771f21891dd9d72c93aed6ced539d697605c94feb8690cdff8",
+      "matches": true
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/cmp102_variational/1104114383.pdf",
+      "expected_sha256": "838056b5c578f81d058deb3d394c66d934690e3b94c6cf2956534ec6d211b541",
+      "observed_sha256": "838056b5c578f81d058deb3d394c66d934690e3b94c6cf2956534ec6d211b541",
+      "matches": true
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-convergent-cmp119-from-fusion.pdf",
+      "expected_sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+      "observed_sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+      "matches": true
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-rg-I-cmp109-1104116842.pdf",
+      "expected_sha256": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+      "observed_sha256": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+      "matches": true
+    }
+  ],
+  "optional_material": [
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1746/SELF-CHECK-REFINEMENT1746.json",
+      "sha256": "405ea626a0ffeae77f6ad6df91eee3f80a7b1cb66248120682e4a57751d24b27",
+      "access": "read only; script not executed",
+      "assessment": "El recibo y la lógica del script se inspeccionaron; no se ejecutó el script que escribe el recibo. Sus 1218 casos declarados son apoyo propio finito, no prueba de geometría ni de admisión real."
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1746/refinement-check1746.py",
+      "sha256": "5e088d4d95669a52d4bb8440ad23d253a80431df21c83e7aa3746a7c26399518",
+      "access": "read only; script not executed",
+      "assessment": "El recibo y la lógica del script se inspeccionaron; no se ejecutó el script que escribe el recibo. Sus 1218 casos declarados son apoyo propio finito, no prueba de geometría ni de admisión real."
+    }
+  ],
+  "primary_reading": [
+    {
+      "source": "CMP102",
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/cmp102_variational/1104114383.pdf",
+      "printed_pages_read": [
+        277,
+        278,
+        279,
+        280,
+        281,
+        287,
+        294,
+        305,
+        306,
+        307,
+        308
+      ],
+      "items": [
+        "Geometría e incidencias (1)-(3); condición mixta (7); Teorema 1 y constantes; condiciones (14),(19)-(21); transformación (59)-(62); radios (113)-(114); Section G (172)-(190)."
+      ],
+      "depth": "Lectura de las páginas indicadas y verificación visual de las fórmulas decisivas. No auditoría completa de los artículos anteriores citados ni reconstrucción nueva de (189)-(190)."
+    },
+    {
+      "source": "CMP119",
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-convergent-cmp119-from-fusion.pdf",
+      "printed_pages_read": [
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        254,
+        255,
+        256,
+        257
+      ],
+      "items": [
+        "Particiones, indicadores P0/P1 y amplitud física; (1.2)-(1.4), mínimo y gauge (1.12), comparación junto a (1.19), localización (1.21); estratos (2.2), amplitudes (2.4), media (2.11), dominios máximos y pegado (2.13)-(2.15)."
+      ],
+      "depth": "Lectura local de las páginas indicadas; se añadieron 254-255 para comprobar los estratos y no inferir que el exterior sea solo una frontera idealizada."
+    },
+    {
+      "source": "CMP109",
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-rg-I-cmp109-1104116842.pdf",
+      "printed_pages_read": [
+        251,
+        252,
+        253,
+        254,
+        255
+      ],
+      "items": [
+        "Convenciones geométricas; caminos (0.3); media con logaritmos de corredores (0.4); media de grupo (0.5)-(0.11); versión con medias de extremos (0.12)."
+      ],
+      "depth": "Definiciones y propiedades locales leídas directamente. No prueba de identidad entre la media física posterior y la media anterior de todos los operadores CMP102."
+    }
+  ],
+  "accepted_findings": [
+    {
+      "id": "P1",
+      "title": "La amplitud del teorema es un parámetro auxiliar disponible",
+      "evidence": [
+        "CMP102 p278 (7), p279 Teorema 1; p294 (113)-(114); CMP119 p246 (1.4), p255 (2.4)."
+      ],
+      "finding": "CMP119 fija e(g)=A0 g1(log g1^-2)^p0 en sus indicadores. CMP102 enuncia el teorema para datos que satisfacen (7) con cualquier parámetro positivo suficientemente pequeño; a0,a1,B3 dependen de d,L, no del acoplamiento ni del volumen. No se encontró una identidad de ley que obligue a igualar ese parámetro auxiliar con el umbral del indicador físico. Aplicar la estimación a una clase mayor, manteniendo los datos y la ley, no cambia el indicador.",
+      "limit": "Esta libertad solo es utilizable después de probar la inclusión de los datos reales en la clase mayor. No permite ampliar una constante física ni una clase del problema sin contabilizar los costes y la identificación del mismo mínimo."
+    },
+    {
+      "id": "P2",
+      "title": "Refinamiento fino exacto y media exacta",
+      "evidence": [
+        "CMP119 p246 (1.3); CMP109 pp252-254 (0.3),(0.4),(0.12)."
+      ],
+      "finding": "En una plaqueta fina orientada positivamente, cero cruces de caras da I; un cruce da dos factores iguales e inversos adyacentes; dos cruces dan V_mu(y)V_nu(y+mu)V_mu(y+nu)^-1 V_nu(y)^-1 en ese orden. Las orientaciones inversas o cambios de punto base dan inversos o conjugados, preservando la norma real unitaria. Los caminos interiores al bloque tienen transporte I y cada corredor definitorio entre centros cruza una vez la interfaz apropiada, de modo que transporta V(c). El argumento de cada logaritmo en (0.4) es entonces I; en (0.12) las medias de extremos son I. Ambas medias devuelven exactamente V(c), aunque V(c) no esté cerca de I.",
+      "limit": "Este resultado supone que todo el soporte de los caminos utilizados está realmente ocupado por los datos de refinamiento indicados. No se extiende por declaración a datos fijos antiguos o a una interfaz no cubierta."
+    },
+    {
+      "id": "P3",
+      "title": "Sustitución mixta exacta en la categoría cubierta",
+      "evidence": [
+        "CMP102 p278 explicación de (7); CMP119 pp256-257 (2.11),(2.14)."
+      ],
+      "finding": "Si un enlace grueso ausente se sustituye por la media del estrato inferior completamente refinado, la sustitución vale exactamente V(c). Por ello la plaqueta mixta correspondiente tiene el mismo holonomía y la misma cota gruesa. La cota que consume (7) es e_var sobre los datos mixtos; no hace falta inventar un factor L^-2 adicional en esa condición.",
+      "limit": "Es una implicación por categoría de datos, no un inventario de todas las plaquetas del conjunto determinante real."
+    },
+    {
+      "id": "P4",
+      "title": "Section G exige base (7) y perturbación (172), no (7) original en todo el segmento",
+      "evidence": [
+        "CMP102 pp305-307 (172)-(173) y continuación analítica."
+      ],
+      "finding": "La fuente toma V0 que satisface (7), V=Vprime V0 y |Vprime-I|<C1 e_var. Su (173) incorpora el aumento B3(1+4C1)e_var. Por tanto no se debe añadir como requisito que cada V_t vuelva a satisfacer (7) con el mismo umbral e_var. Si B0 es el logaritmo real hermitiano en la carta correcta y ||B0||<C1 e_var, entonces ||exp(i t B0)-I||<=t||B0||<C1 e_var para 0<=t<=1. El test del candidato es incluso suficiente con margen respecto al límite de logaritmo 2 C1 e_var escrito en (172).",
+      "limit": "La existencia y la carta del dato base, los predicados mixtos y las restricciones de pequeñez para la clase perturbada siguen siendo necesarios. B0, logaritmo de Vprime, no debe identificarse automáticamente con todas las coordenadas B de (20)/(174) sin la transformación original."
+    },
+    {
+      "id": "P5",
+      "title": "El máximo con K elimina el cociente fijo solo como condición suficiente auxiliar",
+      "evidence": [
+        "Álgebra de (2)-(3) del candidato y cuantificador del Teorema 1 CMP102."
+      ],
+      "finding": "Con cotas ya demostradas sup_p ||dV_base(p)-I||<=C_base e y ||B0||<=K_rel e, constantes uniformes fijas, cualquier K>max(1,C_base,K_rel/C1) da base estricta <e_var y perturbación estricta <C1 e_var. No se necesita K_rel<C1. Esto es una relajación legítima del requisito suficiente anterior, no una mejora de ese cociente por g pequeño.",
+      "limit": "No se ha demostrado aquí C_base para todos los datos reales. Cambiar el nombre epsilon1 a e_var sin tal cota sería insuficiente; el candidato reconoce esta limitación pero no la resuelve."
+    },
+    {
+      "id": "P6",
+      "title": "Radios y umbral de acoplamiento: consumo condicional consistente",
+      "evidence": [
+        "CMP102 pp287,294,305; derivación directa 1745."
+      ],
+      "finding": "La elección epsilon3=4 B5 K e es suficiente y no es un radio único forzado. Una vez fijados todos los parámetros uniformes y el intervalo enlazado real, sustituir e_adm por e_adm/K paga los tests de amplitud que tienden a cero. El término logarítmico suficiente pasa a 4 log(max(1,K K1/e_adm)); aumentar en 4 log K el umbral previo es también una elección suficiente conservadora. No se altera la ley g1(g0).",
+      "limit": "Esto no paga desigualdades geométricas fijas, cambios de media, condiciones de base, ni todos los presupuestos físicos por componente. Las constantes de la clase uniforme y su techo deben existir antes de elegir K y el umbral."
+    }
+  ],
+  "adverse_findings": [
+    {
+      "id": "A1",
+      "severity": "bloquea la certificación de (1) en el input exacto",
+      "title": "El portador de dos bloques no contiene una vuelta gruesa",
+      "location": "LOCAL COARSE REGULARITY CONSUMER, antes de (1)",
+      "finding": "El texto exige que los cuatro corredores de las aristas de una plaqueta gruesa y sus superficies estén en la misma caja de dos bloques de 1737. Una plaqueta gruesa en direcciones mu,nu tiene centros y, y+L e_mu, y+L e_nu, y+L(e_mu+e_nu), situados en cuatro bloques de esquina distintos. La unión de dos bloques adyacentes usada para una sola arista en 1737 no contiene esa vuelta, incluso antes de añadir todos los corredores alternativos. El paso de una arista a una plaqueta no conserva ese portador.",
+      "constant_check": "A_box=16 d^2 L^2 es grande, pero el tamaño numérico de una cota de área no prueba que las superficies estén dentro del parche donde se conoce la curvatura. No se ha encontrado un contraejemplo puramente numérico a esa constante en un portador mayor; tampoco se certifica aquí esa extensión. No se reinterpretó silenciosamente two-block como una caja de cuatro bloques.",
+      "consequence": "La cota (1) es válida algebraicamente si se aportan todas sus superficies y su cobertura; el candidato congelado no las aporta en el portador que declara. Se conserva el defecto, sin reparar ni modificar el candidato."
+    },
+    {
+      "id": "A2",
+      "severity": "constante y dominio de la media no certificados",
+      "title": "El C_A de (1) necesita un dominio de entrada preciso",
+      "location": "Each of the four actual averaged coarse transports differs ... C_A A_box e L^-2",
+      "finding": "Para (0.4), con el corredor recto original como referencia y toda la familia de lazos relativa en la carta, una cota de Lipschitz para la operación logaritmo-promedio-exponencial puede justificar esta forma. Para (0.12), los extremos son a su vez medias no lineales de caminos. Una comparación directa desde las holonomías de caminos pasa primero por esas medias; con las cotas separadas de 1737 aparece una contribución de extremos controlada por C_M, típicamente el factor suficiente 1+2 C_M antes de la operación exterior. 1737 retuvo explícitamente ese factor en su estimación de entrada. El nuevo paso no demuestra por qué el mismo C_A anterior controla ahora la composición completa con coeficiente de entrada A_box e L^-2.",
+      "qualification": "Esto identifica una falta de tipado y prueba de constante, no un contraejemplo universal a la desigualdad: C_A podría ser una cota de la composición completa si tal cota y la carta correspondiente se verificasen. No se permite convertirlo silenciosamente en una constante nueva o ampliada. El candidato tampoco fija cuál de (0.4)/(0.12) es exactamente la media física que está consumiendo.",
+      "consequence": "El coeficiente exacto K_coarse=(1+4 C_A)A_box L^-2 no queda certificado para la media real invocada por el candidato."
+    },
+    {
+      "id": "A3",
+      "severity": "pertenencia real a base (7) abierta",
+      "title": "La identidad local no enumera las plaquetas reales del pegado",
+      "location": "EXACT REFINEMENT CHECK y WHAT REMAINS UNRESOLVED",
+      "finding": "El candidato condiciona su uso a bloques completos, compatibilidad, separación de Gamma respecto del estrato fino antiguo y a que toda plaqueta nueva sea del tipo ya comprobado. No deduce esas condiciones del conjunto exacto de (1.21) y de (2.14). Hay que incluir todas las incidencias de enlaces y plaquetas de CMP102, todos los soportes de promedios que sustituyen enlaces ausentes y todos los estratos conservados. No basta contener el enlace central ni adoptar una convención de complemento continuo.",
+      "antecedent_limit": "1739 ofrece una desigualdad geométrica suficiente para una subfamilia de constantes y particiones compatibles, no la identificación de un perfil físico simultáneo. Sus cajas para entradas de enlaces no justifican por sí solas el portador adicional de A1. La pertenencia a la clase P0/P1 de los cubos originales continúa siendo una obligación independiente.",
+      "consequence": "No se ha demostrado que el máximo de (3) domine la condición 7 del conjunto determinante real completo."
+    },
+    {
+      "id": "A4",
+      "severity": "no existe testigo K_old aportado",
+      "title": "El exterior fijo no obtiene regularidad por ampliar epsilon",
+      "location": "K_old en (3)",
+      "finding": "La fuente física mantiene variables exteriores y el candidato las conserva correctamente. CMP119 p255 (2.2) define los estratos y p256 declara una hipótesis de regularidad de los datos; esa declaración no es por sí sola una verificación para todos los datos exteriores físicos de este intento. Debe precisarse qué plaquetas exteriores, de interfaz y gruesas conservadas exige el problema variacional efectivamente usado, cuáles quedan fuera de su soporte/Ω0, y qué indicador o cota uniforme controla cada una. No se aportó ese inventario ni un testigo K_old.",
+      "adversarial_check": "Si una plaqueta antigua efectivamente exigida tiene holonomía H fija con ||H-I||=h>0 mientras e(g) tiende a cero, la condición h<=K_old e(g) falla para todo K_old fijo. Este ejemplo prueba que la ampliación auxiliar no regulariza un exterior arbitrario; no afirma que tal plaqueta pertenezca necesariamente al soporte concreto de (1.21), cuya identificación sigue pendiente.",
+      "consequence": "No se define K_old mediante un supremo potencialmente divergente. Solo se podría omitir su entrada si se prueba que no hay plaquetas antiguas requeridas, o usarla tras demostrar su cota uniforme. No se impone globalmente regularidad fuera de Ω0."
+    },
+    {
+      "id": "A5",
+      "severity": "cota relativa física todavía condicional",
+      "title": "(2) conserva las dependencias de localidad, gauge e indicadores",
+      "location": "Combine this with the1737/1739 actual relative fine-data bound",
+      "finding": "La aritmética K_rel=2 C_log(1+2 C_M)(1+C_A) A_box L^-2=32 d^2 C_log(1+2 C_M)(1+C_A) es correcta. Sin embargo, la cota usa la comparación global-local junto a (1.19), la pertenencia original de cada cubo a la clase pequeña, el gauge axial promediado real y las cartas de media y logaritmo. Esos datos no se verifican para todo Gamma en 1746. La disminución de g puede pagar una vez fijadas las constantes la cola exponencial de 1739, pero no acredita sus hipótesis.",
+      "dependency_guard": "Si se pretende obtener precisamente aquella localidad mediante la instancia de (190) cuya entrada se está certificando, persiste la posible dependencia circular. Esta evaluación no reconstruye esa dependencia ni convierte la cita de localidad en una prueba nueva independiente.",
+      "consequence": "K_rel se conserva como coeficiente de una implicación previa condicional, no como una norma física global ya demostrada."
+    },
+    {
+      "id": "A6",
+      "severity": "identificación de consumidor y dominio pendiente",
+      "title": "Ampliar la clase no identifica automáticamente el mínimo físico",
+      "location": "Aplicación de CMP102 Section G a CMP119 (1.21)",
+      "finding": "La unicidad del mínimo en una clase común admisible puede justificar que el mismo dato define el mismo objeto al usar una cota mayor. Pero todavía hay que verificar la misma media, restricciones mixtas, exterior y gauge, y pertenencia a esa clase común. La identidad exacta de la media sobre Q1*V no prueba identidad entre las distintas medias fuera de ese conjunto especial, ni entre sus Hessianos o propagadores.",
+      "source_ceiling": "La clase perturbada incorpora (1+4 C1)e_var y debe satisfacer los techos pertinentes del Teorema 1 y de las cartas. B3 e_var<=epsilon0<=a0 no autoriza reemplazar el epsilon0 del indicador físico por una clase mayor. Además M(epsilon1)=R1 M1(a1/epsilon1) en CMP102 p279 depende del parámetro: cualquier uso de esa regularidad local debe conservar también su restricción M<=M(e_var), no tratar todas las cantidades de ese teorema como independientes de epsilon.",
+      "consequence": "No se concluye una aplicación física de Section G a partir del solo cambio de parámetro. Estas son obligaciones de identificación; no refutan la libertad auxiliar P1."
+    },
+    {
+      "id": "A7",
+      "severity": "no cierre del consumidor físico completo",
+      "title": "El coste K y las puertas fijas permanecen",
+      "location": "CONSUME THE EXISTING SAME-COUPLING WINDOW",
+      "finding": "Los tests de amplitud decreciente pueden pagarse con un único acoplamiento menor si K es fijo y uniforme. Los requisitos de tasa común, soporte/collar, sumabilidad y geometría fija no se pagan por esa reducción. Tampoco se han verificado la identificación de la media posterior, el retorno de gauge de (190), las absorciones por componente, el integral marcado operativo, la suma conexa, normalizadores, sectores o historia. Los factores K no pueden suprimirse al volver a la amplitud física ni introducirse en constantes que deban permanecer previamente fijadas sin comprobar sus márgenes.",
+      "consequence": "1744C y 1745 se consumen únicamente a su alcance condicional. No se emite prueba de (190) real, del manuscrito completo ni del perfil 1642."
+    }
+  ],
+  "constant_and_cost_ledger": {
+    "A_box": "16 d^2 L^2; su cobertura para la vuelta gruesa no está demostrada en el portador declarado.",
+    "K_coarse": "16 d^2(1+4 C_A), condicional a A1/A2 y la pertenencia del mínimo local.",
+    "K_rel": "32 d^2 C_log(1+2 C_M)(1+C_A), condicional a 1737/1739.",
+    "dimension_four": "A_box=256 L^2; K_coarse=256(1+4 C_A); K_rel=512 C_log(1+2 C_M)(1+C_A).",
+    "required_choice": "K>max(1,C_base,K_rel/C1), con C_base probado sobre TODAS las plaquetas requeridas; la sustitución C_base=max(K_coarse,K_old) es válida solo tras un inventario exhaustivo.",
+    "auxiliary_regular_class": "B3 K e para la base; B3(1+4 C1)K e para la clase perturbada de Section G.",
+    "radius": "epsilon2=B5 K e, epsilon3=4 B5 K e como elección suficiente.",
+    "background_factor": "b_bg=C1 B3 K e.",
+    "current_contribution": "La expresión previa C_cur epsilon1 epsilon3 pasa a 4 C_cur B5 K^2 e^2; si se absorbe en una cota O(epsilon3), se usa explícitamente e_var<=1.",
+    "final_conditional_hessian": "4 B5 C_total K e con la tasa común y soporte originales, si todas las premisas de 1744C/1745 están satisfechas.",
+    "physical_cutoffs": "e(g), delta_cut, rho y las selecciones físicas permanecen los originales. Ningún coste K se considera gratis frente a esos parámetros."
+  },
+  "exact_conclusions": {
+    "ratio_question": "Sí: la condición suficiente rígida K_rel<C1 deja de ser necesaria para el consumidor auxiliar, una vez que existe un K uniforme admisible. No: 1746 no ha demostrado ese K para la totalidad del problema físico real.",
+    "renaming_question": "La distinción de parámetros tiene contenido matemático por el cuantificador del Teorema 1; no es un mero cambio de nombre. Pero usarla como admisión física sin probar A1-A6 sería reemplazar una obligación no demostrada por otra.",
+    "all_t_question": "No se exige base (7) con el mismo e_var para todo V_t. Sí se exige base admisible, (172) en el segmento y todos los dominios de Section G, incluida la pequeñez de su clase ampliada.",
+    "scope_of_new_result": "Identidad algebraica de refinamiento y regla condicional de elección de amplitud auxiliar. No certificado de toda la geometría, del exterior ni de los operadores físicos."
+  },
+  "retained_open_obligations": [
+    "Portador real de la vuelta gruesa, superficies y pertenencia de todos sus plaquetas a un mismo mínimo local con indicador original válido.",
+    "Definición exacta y carta de la media física; testigo uniforme del C_A que realmente usa (1), sin rebautizar una constante.",
+    "Clasificación exhaustiva de plaquetas del conjunto determinante parcheado, con la convención real de incidencias y soportes de promedios.",
+    "Separación y datos de todos los estratos antiguos; testigo K_old o demostración precisa de que ciertas plaquetas no son requeridas.",
+    "Gauge, cartas, indicador y localidad necesarios para el B0 físico de 1737/1739, sin ciclo de dependencia no resuelto.",
+    "Identidad del mínimo y de la media entre fuentes, todos los techos de la clase auxiliar y de la perturbada, y puertas fijas de 1744C/1745.",
+    "Retorno de gauge/source190 y presupuestos físicos restantes; admisión de1642, integral marcado, normalización y manuscrito completo siguen abiertos."
+  ],
+  "prohibited_inferences": [
+    "No toda geometría real queda cubierta.",
+    "No K_old uniforme ha sido inventado o certificado.",
+    "No se ha incrementado C1 ni alterado la ley, el cutoff o el exterior.",
+    "No se ha reparado el candidato congelado redefiniendo two-block, ampliando C_A o cambiando dominios.",
+    "No se ha reinterpretado una premisa admitida condicionalmente como resultado verificado.",
+    "No se ha reabierto ni heredado una evaluación cerrada; no se asigna nota."
+  ],
+  "visual_receipts": [
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/cmp102_variational/1104114383.pdf",
+      "page": 278,
+      "render": "full page, matrix1.5, memory only",
+      "bytes": 231682,
+      "sha256": "56d75eb20722537630f339bc0bc332c3a4cbe6f154dcc240efd9309ee3e1ba40"
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/cmp102_variational/1104114383.pdf",
+      "page": 305,
+      "render": "full page, matrix1.5, memory only",
+      "bytes": 205044,
+      "sha256": "95c94d9454742fb4c7cb76cd75baf3721cb06192ac868c13e13643339e91e60b"
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-convergent-cmp119-from-fusion.pdf",
+      "page": 246,
+      "render": "full page, matrix1.5, memory only",
+      "bytes": 231484,
+      "sha256": "1754ff8b98235d9832f8034a8c536e4788a00b30c42961bb487d31891c0d4281"
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-convergent-cmp119-from-fusion.pdf",
+      "page": 251,
+      "render": "full page, matrix1.5, memory only",
+      "bytes": 244152,
+      "sha256": "a84dba9ed4744fe4b072e434c93dd8812d65a36679fe3d3ea405b18160b2a6d9"
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-rg-I-cmp109-1104116842.pdf",
+      "page": 253,
+      "render": "full page, matrix1.5, memory only",
+      "bytes": 225900,
+      "sha256": "90d0db734446792fe7a92cdaf24b440321e1358a39b48383bc8045aaa607af89"
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-rg-I-cmp109-1104116842.pdf",
+      "page": 254,
+      "render": "full page, matrix1.5, memory only",
+      "bytes": 279214,
+      "sha256": "0bdf1ad1f6d3850bb931540a96651ed3d1ea182cb251a3633c3704dd278468a9"
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-convergent-cmp119-from-fusion.pdf",
+      "page": 256,
+      "render": "full page, matrix1.5, memory only",
+      "bytes": 240272,
+      "sha256": "fbef8918c29b54007c70951f341b698c34dc4fab72e12129fc1206433a0ca579"
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-convergent-cmp119-from-fusion.pdf",
+      "page": 257,
+      "render": "full page, matrix1.5, memory only",
+      "bytes": 231723,
+      "sha256": "0d48feba38fe16033044bb6c12c9d815a9b4029695c6b1257fd262b8d69866e8"
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/cmp102_variational/1104114383.pdf",
+      "page": 279,
+      "render": "full page, matrix1.5, memory only",
+      "bytes": 244912,
+      "sha256": "695332f6da42d6d9695428d69fb864c8b49c9bd9ddbdac24be2957f3326692e3"
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/cmp102_variational/1104114383.pdf",
+      "page": 294,
+      "render": "full page, matrix1.5, memory only",
+      "bytes": 185374,
+      "sha256": "1fbf6ea6f43fb315b9d31d0976bc3202617f96eb0d04bdfb25b80ce3ab9f530e"
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-convergent-cmp119-from-fusion.pdf",
+      "page": 255,
+      "render": "full page, matrix1.5, memory only",
+      "bytes": 196956,
+      "sha256": "7c804ac1d38077e7d03a5289e4671f3a62a3b5ca43af8d6fbe0f18e583a1d5fd"
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/cmp102_variational/1104114383.pdf",
+      "page": 277,
+      "render": "full page, matrix1.5, memory only",
+      "bytes": 198954,
+      "sha256": "366d08d67e9d4395a3e2d599799e687d080082fd079ca057379f452dc8606e6c"
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-rg-I-cmp109-1104116842.pdf",
+      "page": 252,
+      "render": "full page, matrix1.5, memory only",
+      "bytes": 308741,
+      "sha256": "310173043ca8f07f70afa70d8dea110c168474a550c21e3667a9ec13e601d48e"
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/cmp102_variational/1104114383.pdf",
+      "page": 281,
+      "render": "full page, matrix1.5, memory only",
+      "bytes": 232557,
+      "sha256": "9ab332c6fbde5ac8bffd0292063ca3877d7c9fa880729dad491821d2f105b84b"
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/cmp102_variational/1104114383.pdf",
+      "page": 287,
+      "render": "full page, matrix1.5, memory only",
+      "bytes": 239499,
+      "sha256": "257df171ec6a073ebd48076947c02b99a4276f3f8d4b5642b116ec7010a0bfba"
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/cmp102_variational/1104114383.pdf",
+      "page": 308,
+      "render": "full page, matrix1.5, memory only",
+      "bytes": 192784,
+      "sha256": "2e79b31323abc8969ea3b211b5a322f7ebd23b40f8f849caf495270c2b68ece2"
+    }
+  ],
+  "handling": {
+    "pdfs_read_locally": true,
+    "renders": "PNG generados por PyMuPDF y transferidos como bytes en memoria; no se guardó ningún PDF, PNG ni corpus.",
+    "intentional_output_files": [
+      "C:/Trabajo/airr/2026-10-31_execution1746/ASSESSMENT1746.json"
+    ],
+    "candidate_modified": false,
+    "root_or_manuscript_modified": false,
+    "subagents_created": false
+  },
+  "created_at": "2026-10-31T19:35:41.090Z",
+  "integrity": {
+    "all_bound_input_hashes_match": true,
+    "rechecked_immediately_before_write": true,
+    "exact_candidate_sha256": "906e252ba2b5e39498dcccaa46320fa38a7b4f9d62ee6291b69bd6b16237e738"
+  }
+}

@@ -1,0 +1,389 @@
+{
+  "execution": 1747,
+  "document_type": "Fresh technical assessment of the frozen FOUR-CORNER-MEAN-CONSUMER1747 input",
+  "assessed_at_utc": "2026-10-31 19:49:02 UTC",
+  "scope": {
+    "requested": "One technical assessment of the new four-corner/path-gauge/full-mean argument and its stated source transfer.",
+    "excluded": [
+      "No grade or score",
+      "No whole-manuscript, PDF, or Capacity evaluation",
+      "No reopening, rewriting, or rescoring of 1746",
+      "No alteration of the input, root state, manuscript, source PDFs, or prior assessments",
+      "No sub-agents created"
+    ],
+    "assessment_method": "Direct mathematical reconstruction and selected primary-source reading. Prior assessment files were not opened. The optional parent carrier self-check was not relied on.",
+    "reviewer_identity": {
+      "requested_model": "Astra",
+      "requested_reasoning_effort": "xhigh",
+      "effective_model_authenticated": false,
+      "effective_reasoning_effort_authenticated": false,
+      "independence_authenticated": false,
+      "note": "Requested model/effort and a separate agent task are not authentication of effective identity, effort, or external independence."
+    }
+  },
+  "input": {
+    "path": "C:/Trabajo/airr/2026-10-31_execution1747/FOUR-CORNER-MEAN-CONSUMER1747.json",
+    "expected_sha256": "29652d7a0b0c42dbe829ccb4a21b657c193823a475e76ddd6bb461d5b14c5fd9",
+    "observed_sha256": "29652d7a0b0c42dbe829ccb4a21b657c193823a475e76ddd6bb461d5b14c5fd9",
+    "hash_match": true
+  },
+  "conclusion": {
+    "local_consumer": "The four-block carrier, monotone-path gauge construction, noncommutative swap estimate, finite-arity mean derivative argument, full accounting of 0.4 and 0.12, and the resulting K4 have a valid mathematical mechanism. This is substantive new work, not the old two-block claim with a renamed constant.",
+    "as_written_caveat": "The asserted sufficiency of the log test in (3) requires an explicit fixed logarithm/group-chart choice. The bare implication |Z-I|<1/2 => principal-log chart is not valid in the normalized trace norm visible in CMP109 (0.14) for arbitrary allowed matrix representations. Shrinking the already existential a_M once to include the actual logarithm chart repairs this without changing 12 B_len or K4. No unconditional acceptance of the exact stated chart implication is made.",
+    "source_transfer": "Conditional for the actual source family. The explicit subfamily pays inequality (7) and the needed single-cube halo margins. A source-faithful first-step Omega1 also permits a precise P0/P1 membership deduction, stated below. No actual simultaneous profile, complete mixed-plaquette classification, unchanged-exterior bound K_old, or full physical admission is supplied by this finite consumer.",
+    "no_grade": true,
+    "no_physical_admission": true
+  },
+  "findings": [
+    {
+      "id": "F1",
+      "topic": "Four-corner carrier",
+      "status": "verified",
+      "finding": "For a lifted coarse mu-nu square, the four vertex blocks have 2L fine sites in the two square directions and L in the others. Their induced fine rectangle contains every source 0.3 endpoint contour, each translated straight coarse corridor, all four reference corridors, and the L by L reference square. A pair of adjacent blocks is sufficient for one edge, not for all four; C4 corrects that issue.",
+      "details": "With m=(L-1)/2, endpoint contours have length at most d m < d L. A translated corridor from x to x+L e_i remains in the two adjacent endpoint blocks. This needs an embedded compatible local lift, exactly as the input stipulates.",
+      "source_refs": [
+        "CMP109 pp.252-254, (0.3), (0.4), (0.12)"
+      ]
+    },
+    {
+      "id": "F2",
+      "topic": "Canonical gauge and noncommutative swaps",
+      "status": "verified",
+      "finding": "With the source convention U^g(u,v)=g(u)U(u,v)g(v)^-1 and g(v)=U(T_v), U_g(e)=U(T_u e)U(T_v)^-1. Both words are positive monotone paths of the same displacement. Swapping adjacent steps changes the path holonomy by a conjugate of a fine plaquette holonomy or its inverse. Multiplying the successive ratios in their actual order gives the required exact product; no commutation is used.",
+      "details": "Every intermediate path lies in [r,v], hence inside C4. All conjugating transports are unitary for real input. Unitary invariance and telescoping give |U_g(e)-I| <= number_of_swaps * epsilon_f. Reversed orientations have the same distance from I.",
+      "source_refs": [
+        "CMP119 p.250, (1.17)"
+      ]
+    },
+    {
+      "id": "F3",
+      "topic": "A_edge and B_len",
+      "status": "verified",
+      "finding": "A_edge=(2dL+1)^2 is a safe, very loose upper bound. A word of length n needs at most n(n-1)/2 adjacent swaps to reach any other ordering with the same letter counts, and n<=2dL+1 here. For the particular coordinate-order paths, substantially fewer swaps suffice, but optimality is not needed.",
+      "details": "The exact C4 displacement sum is at most (d+2)L-d <= 2dL for d>=2. Applying the per-edge estimate to any endpoint contour of length <=dL, or a reference/translated corridor of length L, gives B_len=dL A_edge without extra norm constants in a unitarily invariant matrix norm.",
+      "equations": [
+        "A_edge=(2*d*L+1)^2",
+        "B_len=d*L*A_edge"
+      ]
+    },
+    {
+      "id": "F4",
+      "topic": "Mean radius and the constant 2",
+      "status": "verified_as_existence_statement",
+      "finding": "The fixed group's analytic mean has M(I,...,I)=I and derivative (H_1,...,H_n) -> n^-1 sum H_j at identity by source (0.8). This derivative has norm at most 1 for the maximum input norm. Analyticity in local coordinates gives an O(b^2) remainder, so a sufficiently small positive radius gives |M(P_j)-I|<=2b.",
+      "details": "There are only the endpoint arities k!, 0<=k<=d, hence finitely many, all <=d!. Taking the minimum of their admissible radii is legitimate for one already fixed mean. The radius can depend on the fixed group/representation and mean, and on the fixed d,L convention; it is independent of coupling and volume. No numerical radius is established or needed for this existence statement. This argument does not identify two different physical averaging rules.",
+      "source_refs": [
+        "CMP109 p.253, (0.5)-(0.11)"
+      ]
+    },
+    {
+      "id": "F5",
+      "topic": "Actual compositions 0.4 and 0.12",
+      "status": "verified_on_their_charts",
+      "finding": "For 0.4 the logarithm argument has four unitary factors with distances <=B_len epsilon_f, giving 4B_len epsilon_f. For 0.12, the two endpoint means have distances <=2B_len epsilon_f by F4, while the translated corridor and inverse reference each cost <=B_len epsilon_f, giving 6B_len epsilon_f. Property (0.5) handles inverse endpoint means.",
+      "details": "The 0.4 weights are L^-d times reciprocal endpoint-family cardinalities; summing over x and both contour families gives 1. The 0.12 site weights L^-d also sum to 1. Source exp[i sum (1/i)log Z] is exp[sum log Z]. On an admitted real logarithm chart, |log Z|<=2|Z-I| yields the common 12B_len epsilon_f bound for the averaged logarithm. It is skew-Hermitian, so |exp X-I|<=|X|. Keeping U(c) on the right exactly reproduces (4).",
+      "source_refs": [
+        "CMP109 p.253, (0.4), (0.5), (0.9), (0.11)",
+        "CMP109 p.254, (0.12)"
+      ]
+    },
+    {
+      "id": "F6",
+      "topic": "Principal logarithm and source norm",
+      "status": "clarification_required_for_exact_input",
+      "finding": "The step claiming that |Z-I|<1/2 alone places Z in the principal logarithm chart is not justified in the source norm as written. CMP109 defines tr as normalized on p.252, and (0.14) identifies |U-I|^2 with 2(1-Re tr U), i.e. normalized Hilbert-Schmidt distance for group differences. This norm does not dominate spectral norm with constant 1.",
+      "counterexample": "In SU(64), Z=diag(-1,-1,I_62) has |Z-I|=sqrt(8/64)=0.3535533905932738<1/2, but has eigenvalues on the principal matrix-logarithm cut. This refutes the bare norm-to-chart implication, not the carrier construction and not a claim that such Z necessarily occurs in the actual fixed small-field profile.",
+      "additional_group_issue": "For a general fixed subgroup of U(N), the source group logarithm must also be the local branch in its Lie algebra. Near-identity unitary membership alone, without the chosen group chart, should not silently replace that requirement.",
+      "minimal_repair": "Choose once a positive a_log for the actual real group/logarithm chart in the source norm, on which the principal logarithm is the required local group logarithm and |log Z|<=2|Z-I|. Then also choose a_M<=a_log/6, or add 6B_len epsilon_f<a_log. A suitable a_log exists for the fixed group. The existing existential mean radius can be reduced in this way without redefining the mean, importing C_A, or changing the displayed coefficients.",
+      "norm_bound_after_repair": "For real unitary Z on that chart, the spectral scalar inequality |theta|<=2|exp(i theta)-1| proves the same bound in normalized Hilbert-Schmidt norm. Thus no extra factor sqrt(N) is needed in 12B_len or K4 after the chart is admitted.",
+      "scope": "If a spectral norm was intended instead, the 1/2 power-series argument is valid there, but an explicit conversion from the actual source indicator norm would be required. No such conversion or fixed-representation chart guarantee is present in this input.",
+      "source_refs": [
+        "CMP109 p.252, normalized tr following (0.2)",
+        "CMP109 p.254, (0.14)"
+      ]
+    },
+    {
+      "id": "F7",
+      "topic": "Reference surface and K4",
+      "status": "verified_conditional_on_F6_chart",
+      "finding": "The four reference corridors bound the L by L fine square. A noncommutative plaquette-peeling identity expresses its holonomy as an ordered product of L^2 conjugated fine plaquette holonomies, giving L^2 epsilon_f. Comparing the four mean edges with the four reference edges by unitary telescoping costs 4*12B_len epsilon_f.",
+      "equations": [
+        "|M^1(U)(dp_coarse)-I| <= (L^2+48*B_len)*epsilon_f",
+        "epsilon_f<=e/L^2 => |V(dp_coarse)-I|<=K4*e",
+        "K4=1+48*d*A_edge/L"
+      ],
+      "details": "The coefficient and the powers of L are correct. Gauge covariance transports this estimate back to the same original physical field; the auxiliary gauge is not a modification of the measure, fixed exterior, or physical mean. The constant is conservative and finite for fixed d,L."
+    },
+    {
+      "id": "F8",
+      "topic": "One local minimum and distinct halo roles",
+      "status": "conditional_with_explicit_sufficient_margin",
+      "finding": "Source (1.2) determines U_{1,D'} using the mixed determining set based on D'~4; source (1.4) controls its fine curvature only on D'~, not throughout D'~4. The same D' and the same U_{1,D'} must supply all four edges. The input's enlarged-halo wording must retain this distinction.",
+      "sufficient_implementation": "Choose an original partition cube D' containing a vertex of the loop. If b>2L+2 (a conservative incidence allowance), then the full C4 and its needed plaquettes lie in D'~. The cube D' itself need not contain C4 when the loop meets a partition boundary. D'~4 is the larger determining halo to place inside Omega1.",
+      "constraint_check": "The required coarse edges must also lie in the j=1 stratum of B1(D'~4), where the imposed mixed data give M^1(U_{1,D'})=V. Containment in the determining halo alone would not suffice. C4 inside D'~, together with the gap of about 3b to the boundary of D'~4, supplies this margin once it dominates the source two-M1 boundary layers. The stated subfamily has b=LM2R1>=L^3M1 and more than enough room for b>2L+2 and 3b>2LM1+2L.",
+      "details": "The curvature bound does not follow merely from existence of a minimum, and four different local minima cannot be patched into one coarse-loop estimate.",
+      "source_refs": [
+        "CMP119 p.246, (1.2)-(1.4)",
+        "CMP119 pp.256-257, (2.11)-(2.16)"
+      ]
+    },
+    {
+      "id": "F9",
+      "topic": "Geometric radius and inequality (7)",
+      "status": "verified_as_sufficient_conditional_geometry",
+      "finding": "In original fine steps, a=L^2M2R1 and b=LM2R1 match the source special test-cube partition and its thinner enlargement; h=LMR1 is the large-domain cube scale. They are different enlargements. The diameter allowance d(a+8b)+8d safely pays for one entire D'~4 plus incidences once a point in D' is within r4 of the protected domain.",
+      "details": "For a coarse plaquette whose actual substituted support meets the original Gamma layer, moving across its four-block carrier costs O(dL); the added 4dL+4d beyond the prior link allowance is conservative. Combined with the original one-layer LM1 boundary support, r4=2dLM1+8dL+8d is ample. With the actual Lambda subset of Omega1 eroded by two h-layers, a conservative clearance h and (7) put the whole chosen halo in Omega1.",
+      "limitation": "This is a metric enclosure for the indicated family. It does not itself classify every condition-(7) mixed plaquette or prove that every required one belongs to that family. Embedded lifts and compatible original partitions remain necessary; nominal wrapping cells are excluded.",
+      "source_refs": [
+        "CMP119 pp.245-246, partition/enlargement definitions",
+        "CMP119 pp.248,251, (1.10), (1.20), (1.21)",
+        "1739 direct geometry antecedent"
+      ]
+    },
+    {
+      "id": "F10",
+      "topic": "Source-allowed symbolic subfamily and M arithmetic",
+      "status": "verified_for_inequality_7",
+      "finding": "For d=4, odd L>=13, M2=L^2M1, M>=L^3M2 and R1>=1, h>=L^4M2R1; d(a+8b)=4L(L+8)M2R1<=8L^2M2R1; and r4+8d=8LM1+32L+64<=48LM1. Since M2R1>=L^2M1, the right side of (7) is <=(8L^2+48/L)M2R1<L^4M2R1.",
+      "details": "All powers and constants in this comparison are correct. Source p.245 explicitly allows M2=L^2M1 and M much larger than M2. Taking powers of L gives the required divisibility of these two scales. The symbols M and a_M play unrelated roles; increasing M does not establish an analytic mean/log radius.",
+      "limitation": "This is sufficient for the new geometric inequality, not for every condition determining source M, L or M1. The already source-admissible M1/L choices, all simultaneous profile requirements, compatible torus periods, and actual maximal domains must still be retained. In particular, the numerical arithmetic example M1=1 is not an assertion that M1=1 meets all source variational theorems.",
+      "source_refs": [
+        "CMP119 p.245",
+        "CMP119 pp.246,256-257"
+      ]
+    },
+    {
+      "id": "F11",
+      "topic": "P0/P1 membership in the actual first-step construction",
+      "status": "conditional_source_implication_identified",
+      "finding": "A generic statement D'~4 subset Omega1 is not by itself a field-smallness indicator. However, when Omega1 is exactly the original first-step set of (1.10), the source definitions do give a membership deduction: Omega1 is contained in B(P1^1); the definition of P1^1 on p.246 excludes P0'~ and the enlarged P1' region. Compatibility therefore puts any original D' contained there in (P0'~)^c minus P1, namely the relative small-background class used by chi1 in (1.4).",
+      "details": "For an admissible original sector/configuration, its chi1 factor then supplies the U_{1,D'} curvature bound. This uses the original domain construction, class definitions, and indicator support; it is not a consequence of geometric containment in an arbitrary set merely named Omega1. Source (2.17) expresses the corresponding localized background product.",
+      "limitation": "The input does not supply a particular simultaneous profile or list of actual selected cubes and sectors. It is correct not to turn this conditional source implication into a completed all-domain admission. Conversely, it would be too strong to claim that P0/P1 membership can never be deduced from the original Omega1 construction.",
+      "source_refs": [
+        "CMP119 p.246, definition of P1^1 and (1.4)",
+        "CMP119 p.248, (1.10)-(1.11)",
+        "CMP119 p.257, (2.17)"
+      ]
+    },
+    {
+      "id": "F12",
+      "topic": "Mean/minimum identity and refinement data",
+      "status": "conditional",
+      "finding": "The estimate applies to whichever one of 0.4 or 0.12 is the actual fixed mean, with its corresponding actual local minimum. The new proof does not require equality between those two formulas, but it also proves no equality of their values, derivatives or Hessians, and no replacement of the old variational mean.",
+      "details": "On the source refinement Q1*V, intrablock endpoint contours are I, a coarse corridor is V(c), and the relative loop inside either averaging formula is I. Thus the original mean returns V(c) on the appropriate coarse stratum. This supports the local constraint identity for the same minimum when its determining set has that coarse entry. It does not authorize overwriting old exterior fine data.",
+      "source_refs": [
+        "CMP109 pp.252-254",
+        "CMP119 p.246, (1.2)-(1.3)",
+        "CMP119 pp.256-257, (2.11)-(2.16)",
+        "1746 exact refinement portion only"
+      ]
+    },
+    {
+      "id": "F13",
+      "topic": "Mixed categories and condition 7",
+      "status": "not_completed_by_this_input",
+      "finding": "CMP102 (7) is a condition on every required mixed plaquette, with missing coarse entries replaced by the actual lower-stratum average. For the new refinement category whose substituted data exactly equal V and whose coarse carrier is covered by the present consumer, e_var>K4e pays the strict inequality. Pure intrablock and one-face refinement plaquettes are exactly flat; two-face plaquettes reproduce a coarse V holonomy.",
+      "limitation": "The input does not give an exhaustive classification of all actual patched determining-set plaquettes. Unchanged old fine/exterior plaquettes, possible contacts with those strata, and any coarse plaquette not in the proved carrier family need their own uniform witness or a precise exclusion. No K_old is produced by K4, and arbitrary fixed exterior data cannot be regularized by shrinking e.",
+      "source_refs": [
+        "CMP102 p.278, (7) and its mixed substitution paragraph",
+        "CMP119 p.251, (1.21)",
+        "CMP119 pp.256-257, (2.11), (2.14)",
+        "1746 exact refinement portion only"
+      ]
+    },
+    {
+      "id": "F14",
+      "topic": "Scope of the new result",
+      "status": "verified_scope_boundary",
+      "finding": "This input supplies a genuine finite local mechanism once its exact premises and log chart are admitted. It neither repairs the frozen 1746 report retroactively nor certifies the full physical construction. Its own remaining-obligation list is consistent with that boundary.",
+      "excluded_inferences": [
+        "No complete relative B0/source172 admission follows solely from K4",
+        "No new proof of source locality/current-kernel estimates is supplied",
+        "No per-component absorption, marked integral, connected sum, normalization, sector/history, or whole-manuscript conclusion is inferred"
+      ]
+    }
+  ],
+  "precise_conditional_consumer": {
+    "premises": [
+      "One embedded compatible C4 carrier and real unitary field in the fixed source group.",
+      "All needed fine plaquettes of C4 satisfy the same epsilon_f bound for one actual local source minimum.",
+      "The fixed source mean is 0.4 or 0.12, with its actual finite-arity analytic endpoint means and real-group property.",
+      "B_len*epsilon_f<a_M, 6*B_len*epsilon_f<1/2, and 6*B_len*epsilon_f<a_log; equivalently shrink a_M beforehand to include a_log/6.",
+      "All four required coarse edges are entries where that same minimum satisfies M^1(U)=V.",
+      "For source transfer, the original D' lies in the actual chi1 class, C4 lies in its curvature-test halo D'~, and its determining halo and coarse-stratum margins are admitted."
+    ],
+    "conclusion": "|V(dp_coarse)-I| <= (L^2+48B_len)*epsilon_f <= (1+48d(2dL+1)^2/L)*e when epsilon_f<=eL^-2.",
+    "no_constant_change_from_chart_fix": true,
+    "existence_only_for_chart_radius": true
+  },
+  "validation": {
+    "mathematical_checks": [
+      "Reconstructed path-swap identity and carrier bounds",
+      "Checked both source formulas and their actual positive weights/order",
+      "Derived finite-arity derivative norm and chart reduction",
+      "Recomputed K4 and all powers in inequality (7)",
+      "Distinguished D'~, D'~2, D'~4 and the mixed determining core",
+      "Read original P0/P1/Omega1 and condition-(7) definitions"
+    ],
+    "arithmetic_spot_checks": [
+      {
+        "d": 4,
+        "L": 13,
+        "M1": 1,
+        "M2": 169,
+        "R1": 1,
+        "M": 371293,
+        "A_edge": 11025,
+        "B_len": 573300,
+        "h": 4826809,
+        "rhs_7": 185132,
+        "positive_margin": 4641677,
+        "note": "Arithmetic check only; not a source-admissible physical instance."
+      },
+      {
+        "counterexample_group": "SU(64)",
+        "normalized_HS_distance": "sqrt(8/64)",
+        "value": 0.3535533905932738,
+        "principal_log_cut_eigenvalues": 2
+      }
+    ],
+    "no_formal_build": true,
+    "no_existing_assessment_read": true
+  },
+  "source_bindings": [
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1746/MIXED-REFINEMENT-AMPLITUDE1746.json",
+      "sha256": "906e252ba2b5e39498dcccaa46320fa38a7b4f9d62ee6291b69bd6b16237e738",
+      "hash_verified": true,
+      "reading_scope": "Direct derivation antecedent, especially exact refinement; old coarse-loop claim not reused and no prior report read."
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1739/CORRECTED-COVERAGE-CURVATURE1739.json",
+      "sha256": "ce1ad19b878cd1a1103f19a2b1b8966add5b83b86f8de30cf03ca3121a252d91",
+      "hash_verified": true,
+      "reading_scope": "Direct units/geometry/locality premise; no historical assessment opened."
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1736/PHYSICAL-BOUNDARY-INPUT1736.json",
+      "sha256": "66e2fd7a9cb2eb771f21891dd9d72c93aed6ced539d697605c94feb8690cdff8",
+      "hash_verified": true,
+      "reading_scope": "Direct mixed determining-data and physical input derivation; no historical audit."
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-rg-I-cmp109-1104116842.pdf",
+      "sha256": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+      "hash_verified": true,
+      "printed_pages_text_read": [
+        252,
+        253,
+        254
+      ],
+      "printed_pages_visually_read": [
+        252,
+        253,
+        254
+      ],
+      "reading_scope": "0.3-0.12 and the norm/trace identity 0.14; selected definitions only."
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-convergent-cmp119-from-fusion.pdf",
+      "sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+      "hash_verified": true,
+      "printed_pages_text_read": [
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        256,
+        257
+      ],
+      "printed_pages_visually_read": [
+        245,
+        246,
+        248,
+        250,
+        251,
+        256,
+        257
+      ],
+      "reading_scope": "Original partitions, indicators, minima, Omega1/Lambda1, (1.21), and mixed determining geometry."
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/cmp102_variational/1104114383.pdf",
+      "sha256": "838056b5c578f81d058deb3d394c66d934690e3b94c6cf2956534ec6d211b541",
+      "hash_verified": true,
+      "printed_pages_text_read": [
+        277,
+        278,
+        279
+      ],
+      "printed_pages_visually_read": [
+        278
+      ],
+      "reading_scope": "Only the directly necessary regularity condition (7), its mixed-category definition and local theorem context. A targeted norm-keyword search did not constitute a proof audit."
+    }
+  ],
+  "visual_receipts": {
+    "format": "JPEG render in memory only, PyMuPDF matrix(1.5,1.5), JPEG quality 75; no PDF/image/corpus output file created.",
+    "CMP109": [
+      {
+        "page": 252,
+        "sha256": "eb4cc68f2e59799fa86e3412143767ceb4349dff5b55c6b01fa5259de7c9ea5a"
+      },
+      {
+        "page": 253,
+        "sha256": "b1dcd439e14eed66e611d0b41744febe2e52c0b4b0146971d4490bd007a2364b"
+      },
+      {
+        "page": 254,
+        "sha256": "33f9a3fbdeca8629e23076b30315c8ac9ba1e0303f2687a8d11accda3274d0e1"
+      }
+    ],
+    "CMP119": [
+      {
+        "page": 245,
+        "sha256": "5ce0301cfe0f07dd5b0523b28cfa8b6e264be5bf628df3f1957cd2baf9c6c9d6"
+      },
+      {
+        "page": 246,
+        "sha256": "f96291c216dd5213579f1a8c429779d68aec1bf2fa5eb9be979265202c7f7d92"
+      },
+      {
+        "page": 248,
+        "sha256": "5472356391f64c9c44219c6e00be5f9d0559385bce56b25169a8ad2b1c302c3c"
+      },
+      {
+        "page": 250,
+        "sha256": "1aa5137fe0c76f062ab1cbf31333c1424389950690115451285111dde8e002b9"
+      },
+      {
+        "page": 251,
+        "sha256": "366ab92395de855e6679d62398144aaf95556ae30b40c403c277da05fc003296"
+      },
+      {
+        "page": 256,
+        "sha256": "afa3b2fb5671066e98e2634c0453a16141405837101d0e5e48a4e7ad375e0f26"
+      },
+      {
+        "page": 257,
+        "sha256": "49dbb414efba4aa990a10b4ad13ceb60bde5b0ea7504b5a78313c8a2c87f80e0"
+      }
+    ],
+    "CMP102": [
+      {
+        "page": 278,
+        "sha256": "f14b248678a9698937b3eb60978f25d2212ac030027393eddf48bcf3777cfa6a"
+      }
+    ]
+  },
+  "preservation": {
+    "only_authored_file": "C:/Trabajo/airr/2026-10-31_execution1747/ASSESSMENT1747.json",
+    "input_and_sources_read_only": true,
+    "prior_reports_unchanged": true,
+    "root_and_manuscript_untouched": true,
+    "no_pdf_png_or_corpus_saved": true
+  }
+}

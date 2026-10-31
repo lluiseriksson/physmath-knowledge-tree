@@ -1,0 +1,228 @@
+{
+  "execution": 1744,
+  "assessment": "First delegated assessment of the corrected frozen 1744B input only",
+  "unscored": true,
+  "created_utc": "2026-10-31T19:00:56Z",
+  "input": {
+    "path": "C:/Trabajo/airr/2026-10-31_execution1744/PLAQUETTE-JET-HESSIAN1744B.json",
+    "sha256": "0be82c15482f7c1c7e03688979ec219f6e88d9e50a6d3a1baa13119b518a5293",
+    "hash_verified": true,
+    "candidate_modified": false
+  },
+  "reviewer": {
+    "requested_model": "Astra",
+    "requested_effort": "xhigh",
+    "actual_model_identity": "Unauthenticated; this report does not attest that the requested routing was the actual model used.",
+    "actual_effort": "Unauthenticated; no independent runtime attestation is available in this context.",
+    "independence": "A separate delegated review context was used. No prior assessment report was read or treated as proof, no child reviewer was spawned, and the candidate was not edited. External independence and model-routing identity are not authenticated by this report."
+  },
+  "disposition": {
+    "label": "CONDITIONAL_HESSIAN_ESTIMATE_SUPPORTED_WITH_ADVERSE_EXACT_IDENTITY_FINDING",
+    "exact_frozen_derivation": "Not validated in all its displayed equalities: candidate (4) reverses the final commutator in printed source (94). This remains an actual error in the unchanged frozen input.",
+    "new_norm_calculation": "The local analytic remainder, first-jet cubic bound, full nonlinear second chain rule, normalized gradient-H transport and final potential-component estimate are supported at the declared conditional source-input scope. The commutator-order error does not refute these norm estimates.",
+    "combination": "The finite sum with the original current and joint kinetic contributions gives the stated source-189-type O(epsilon3) bound at delta/4, conditional on one common original source domain, the original operator/mean definitions, all retained local complex-kernel and geometric premises, and the same positive rate and smallness intersection. This is not a certificate that those premises hold on the fixed physical profile.",
+    "precise_remaining_actual_gap": "The exact claim that candidate (4) is source (94) is false. It must not be silently marked correct. Its difference from source (94) is trace-null in the cubic action, and the absolute first-jet proof is sign-insensitive, so this particular error does not leave an unbounded Hessian term. Physical admission, later-mean identification and the claims beyond this conditional Hessian calculation remain unproved here."
+  },
+  "scope": {
+    "included": [
+      "The corrected frozen 1744B candidate and its actual source-90/source-93 calculation",
+      "All six commutator terms of printed CMP102 (94), their polarization, and the backward product rule (96)",
+      "The raw local source (40) bound, local complex Cauchy differentiation and fine/plaquette measure cancellation",
+      "The full F=A-HD second chain rule, including the lower-order second-chain contribution",
+      "Normalized first-gradient H, unmasked Tv jets, support enlargement, transpose convolution and common-rate combination"
+    ],
+    "excluded": [
+      "Reopening or rescoring execution 1743 or any earlier assessment",
+      "Ancestral audit of all cited records or complete published propagator/averaging proofs",
+      "Fixed physical-profile admission, later physical averaging, source (190), C1/base mixed data",
+      "Marked sums, outer normalizers, sectors, history, manuscript, PDF, Capacity, publication or numerical grade"
+    ],
+    "prior_input_policy": "Only the direct mathematical derivations in 1741-1743 were read as declared conditional inputs for the new combination. Their status language and previous assessment outcomes were not used as proof."
+  },
+  "pre_assessment_correction_provenance": {
+    "original_path": "C:/Trabajo/airr/2026-10-31_execution1744/PLAQUETTE-JET-HESSIAN1744.json",
+    "original_sha256": "42d5b1092d75662b6180d42dc3c110d65105f0cebbdff8710779ee8b8d421a3a",
+    "check_path": "C:/Trabajo/airr/2026-10-31_execution1744/SELF-CHECK-SIGN1744.json",
+    "check_sha256": "1ba74f9dc362df24d4624f27b5e21007f07ed427b8101748e6884b18c35dde88",
+    "hashes_verified": true,
+    "recorded_history": "The parent and preserved self-check identify the minus-eta in the original draft's product rule as a transcription error caught before any delegated 1744 review. That draft was not assessed or validated, and this review was not restarted.",
+    "independent_check_here": "CMP99 printed 392 (3.8) and CMP102 printed 292 (96) were visually inspected. Their backward adjoint convention gives PLUS eta. Candidate B's (6) agrees with that convention.",
+    "distinct_remaining_error": "That pre-assessment correction does not correct the reversed eta-squared commutator in B's separate equation (4), identified below."
+  },
+  "sources_checked": [
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/cmp102_variational/1104114383.pdf",
+      "sha256": "838056b5c578f81d058deb3d394c66d934690e3b94c6cf2956534ec6d211b541",
+      "printed_pages": "282-293 and 308",
+      "depth": "Selected relevant text extracted; complete printed pages 283, 284, 292 and 308 rendered in memory and visually inspected. The displayed source formulas were checked directly, including the raw bound (40), all six terms of (94), the sign in (96) and the target (189). No source images or PDFs were saved."
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/cmp99/1103942769.pdf",
+      "sha256": "39f8033b35838c7bdd14f97c7fb1edb0b35d4190b8b88f31d19d12a72d542861",
+      "printed_pages": "390-392, 397-398, 422-423",
+      "depth": "All these pages rendered in memory and visually inspected: oriented covariant derivative and adjoint, weighted norms and tildeDelta support, normalized H factor and first gradient, and the common-rate statement. The full theorems' proofs were not audited."
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1741/LOCAL-MEAN-CURRIED-DENSITY1741.json",
+      "sha256": "9c6c18ea8a294e340fb471fa0e2f511ea55bb09cf283033a7836435d74ddbbb1",
+      "depth": "Direct derivation only: local complex q_j premise, curried second derivative, support and normalized fine evaluation. Original CMP98 theorem remains a premise, not newly audited."
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1742/LOCALIZED-CURRENT-CONVOLUTION1742.json",
+      "sha256": "bca0d89789f0bc8882ce3fc3c22e8a7dce561d5d6cee234ba40571cd07e1ffa0",
+      "depth": "Direct derivation only: actual normalized H/D1/R kernels, dimension-four weighted transpose, curried contraction, owner geometry, support enlargement and current-component hypothesis. No review inherited."
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1743/KINETIC-COARSE-HESSIAN1743.json",
+      "sha256": "559be55b7b13db519ce4e978146476ada1ed0d5f22697cc3d7cd872428b18c7a",
+      "depth": "Direct mathematical input only: the joint kinetic component and single common-rate convention. No reopening, rescoring or separate new verdict on 1743."
+    }
+  ],
+  "findings": [
+    {
+      "id": "F01",
+      "status": "verified",
+      "topic": "Frozen input and review provenance",
+      "detail": "The input hash matches the requested 0be82c... file. This is the first delegated assessment of B. The original draft and pre-assessment self-check hashes also match their records. Only this report is authored; no candidate, repository, manuscript or source artifact is changed."
+    },
+    {
+      "id": "F02",
+      "status": "verified",
+      "topic": "Plus-eta backward covariant product rule",
+      "candidate_location": "Equation (6)",
+      "source_location": "CMP99 printed 392 (3.8); CMP102 printed 292 (96)",
+      "detail": "Write B_nu X=Ad(U_minus)X_minus and nabla_nu^sharp X=(B_nu X-X)/eta. Since Ad(U_minus) preserves commutators, B_nu[X,Y]=[B_nu X,B_nu Y]. Substituting B_nu X=X+eta nabla_nu^sharp X and the analogous expression for Y yields [nabla^sharp X,Y]+[X,nabla^sharp Y]+eta[nabla^sharp X,nabla^sharp Y]. The plus sign in B is correct; the minus in the preserved original draft is not validated."
+    },
+    {
+      "id": "F03",
+      "status": "adverse_exact_identity_error",
+      "topic": "Last commutator in the claimed six-term source identity is reversed",
+      "candidate_location": "Equation (4), sixth term",
+      "source_location": "CMP102 printed 292 (94)",
+      "detail": "With alpha=nabla_mu F_nu and beta=nabla_nu F_mu, the source's last term is -i eta^2[alpha,beta]. B writes -i eta^2[beta,alpha], which is its negative. The first five terms agree in coefficient, sign and commutator order with printed (94). There is no simultaneous orientation change of the entire plaquette expression in B that would justify reversing this term alone. Consequently the statement that (4) reads exactly as source (94) is false, even after the separate product-rule correction.",
+      "all_six_terms": [
+        {"term": 1, "source": "2i[F_mu,F_nu]", "candidate_matches": true},
+        {"term": 2, "source": "2i eta[F_mu,nabla_mu F_nu]", "candidate_matches": true},
+        {"term": 3, "source": "2i eta[nabla_nu F_mu,F_nu]", "candidate_matches": true},
+        {"term": 4, "source": "-i eta[F_mu,nabla_nu F_mu]", "candidate_matches": true},
+        {"term": 5, "source": "-i eta[nabla_mu F_nu,F_nu]", "candidate_matches": true},
+        {"term": 6, "source": "-i eta^2[nabla_mu F_nu,nabla_nu F_mu]", "candidate_matches": false}
+      ],
+      "exact_witness": "At U0=I take F_mu(x)=F_nu(x)=0, alpha=t sigma_x and beta=t sigma_y. All first five terms vanish. Source (94) gives 2 eta^2 t^2 sigma_z, while B gives -2 eta^2 t^2 sigma_z. A nonzero t can be chosen arbitrarily small to fit the local field/jet domain. An exact SymPy Pauli calculation reproduced these opposite matrices."
+    },
+    {
+      "id": "F04",
+      "status": "verified_limitation_of_adverse_finding",
+      "topic": "The commutator error is trace-null in the scalar cubic action and does not refute the estimate",
+      "detail": "The difference between B's six-term expression and printed (94) is E(F,F)=2i eta^2[alpha,beta]. CMP99 (3.4) gives d0F=alpha-beta in the same root convention. Cyclicity gives tr((alpha-beta)[alpha,beta])=0 identically for complex matrices. Thus (1/2)tr((d0F)E(F,F)) is identically zero at each plaquette. Its first and second field variations vanish, so this isolated discrepancy changes neither the scalar cubic functional nor its actual Hessian. Also, replacing a commutator by its negative changes none of the absolute first-jet estimates. This distinguishes an actual false displayed matrix identity from a counterexample to the Hessian norm statement; no such counterexample follows from this error.",
+      "caution": "This observation is part of the assessment and is not a silent amendment of the frozen input. In particular B's exact equation (4) is not marked valid. Any use of C as an uncontracted plaquette-valued field still requires the correct source ordering."
+    },
+    {
+      "id": "F05",
+      "status": "supported_with_F03_qualification",
+      "topic": "Full polarization and fixed-background transport",
+      "detail": "The four link transports and orientation signs are fixed by U0 and therefore have no A-variation. Symmetric polarization has delta C(F,F)[v]=2C(F,v). In printed-(94) ordering its six polarized contributions are: i([F_mu,v_nu]+[v_mu,F_nu]); i eta([F_mu,nabla_mu v_nu]+[v_mu,nabla_mu F_nu]); i eta([nabla_nu F_mu,v_nu]+[nabla_nu v_mu,F_nu]); -(i eta/2)([F_mu,nabla_nu v_mu]+[v_mu,nabla_nu F_mu]); -(i eta/2)([nabla_mu F_nu,v_nu]+[nabla_mu v_nu,F_nu]); and -(i eta^2/2)([nabla_mu F_nu,nabla_nu v_mu]+[nabla_mu v_nu,nabla_nu F_mu]). All six must be retained. B defines symmetric polarization rather than writing these terms individually; its only source-order discrepancy is F03. No ordinary-difference substitution for the covariant transports is needed."
+    },
+    {
+      "id": "F06",
+      "status": "verified",
+      "topic": "Cubic Euler derivative and applied Hessian",
+      "candidate_location": "Equation (5)",
+      "detail": "For the defined scalar V3=(1/2)<d0F,C(F,F)>, bilinear summation by parts gives G3=(1/2)d0sharp C(F,F)+C_Fsharp d0F. Differentiating gives exactly K3(F)v=d0sharp C(F,v)+C_vsharp d0F+C_Fsharp d0v. The half and polarization factors cancel as stated. There is no missing fourth term or omitted derivative of a field-dependent transport. These formulas concern the full scalar cubic functional, for which the trace-null discrepancy in F04 does not change the result."
+    },
+    {
+      "id": "F07",
+      "status": "supported",
+      "topic": "Applied first-jet estimate without an eta inverse or second-derivative loss",
+      "candidate_location": "Equations (7)-(8)",
+      "detail": "For the leading commutator, the verified backward product rule bounds d0sharp C(F,v) by |F||nabla v|+|nabla F||v|+eta|nabla F||nabla v| on a fixed enlarged star. Every other polarized source-(94) term contains eta, so eta d0sharp is a bounded finite shifted difference; the eta-squared term leaves one eta. This bounds differences of first derivatives by shifted suprema, without invoking a second derivative norm. The four-link formula bounds C_vsharp d0F and C_Fsharp d0v directly by |v||nabla F| and |F||nabla v|. For compact fixed U0, neighboring transports preserve the matrix norm. With the retained local owner-scale factors and source (57)-(58), the bound is C_L epsilon3 s_y^-3 X_star(v). Homogeneity K3(F)F=2G3(F) yields |G3|_(-3)<=C_L epsilon3^2. The F03 sign error does not change these inequalities."
+    },
+    {
+      "id": "F08",
+      "status": "supported_conditionally_on_original_complex_domain",
+      "topic": "Raw remainder bound and local Cauchy derivatives",
+      "candidate_location": "Equations (1)-(2)",
+      "source_location": "CMP102 printed 282-284, (28)-(40)",
+      "detail": "The source explicitly treats the complexified field and states that (40) uses only the field bound. Its first line has the required eta times curvature times cubic field term and quartic field term. For r=epsilon3/s_y, a two-scalar local polydisc with unit field directions stays within (A_L+2)r. Dividing its supremum eta b_bg epsilon3^3 s_y^-5+epsilon3^4 s_y^-4 by r or r^2 gives exactly the powers in (2), with constants depending on the fixed local conversion factors. Mixed differentiation is first order in each scalar and introduces no factor 2 factorial. The stated smallness keeps eta||X|| small because eta<=s_y. This argument uses the holomorphic action extension and does not apply a literal real-part map to complex X or require the perturbing local direction to have a controlled gradient."
+    },
+    {
+      "id": "F09",
+      "status": "verified",
+      "topic": "Fine/plaquette weights and the local remainder operator",
+      "candidate_location": "Equation (3)",
+      "detail": "Both plaquette action and fine bond pairing carry eta^4. Varying one fine bond gives only its finitely many incident plaquettes, and the output Euler-gradient normalization cancels the same eta^4 once. No extra eta^-4 belongs in (2) or (3). Inserting |v|<=s_y^-1 X_star(v), using eta<=s_y and b_bg,epsilon3<=1, gives |Krem v|<=C_L epsilon3 s_y^-3 X_star(v); the first derivative similarly gives |Grem|_(-3)<=C_L epsilon3^2. Contact terms are retained through this applied-operator argument. Continuity at epsilon3=0 is legitimate because the remainder begins in degree at least three."
+    },
+    {
+      "id": "F10",
+      "status": "verified",
+      "topic": "Full implicit second derivative and nonlinear chain rule",
+      "candidate_location": "Equation (9)",
+      "detail": "Differentiating D=Ccal(A-HD) twice gives (I+Ccal'(F)H)D''[u,v]=Ccal''(F)[Tu,Tv], hence D''=R_c Ccal''(F)[Tu,Tv]. Since F'=T and F''=-HD'', Vpot''[u,v]=<Tu,K0Tv>-<G0,HD''[u,v]>. This is the full D'', not the cubic-subtracted D3''. With Xi=R_csharp Pi_nl Hsharp G0, the field operator is Tsharp K0 T-Tsharp L_(Xi,F)T. Its minus sign is correct. The dependence of Xi on A is already included by deriving the scalar Hessian first; differentiating a fictitious energy with Xi frozen is neither used nor justified."
+    },
+    {
+      "id": "F11",
+      "status": "supported_with_domain_convention_retained",
+      "topic": "Nonlinear coarse projection and weighted adjoints",
+      "detail": "The nonlinear correction has zero Lambda0 component by source (51). Pi_nl before the resolvent transpose is the correct restriction of Hsharp G0 to that correction space. It is not a projection that discards physical data, fine exterior conditions or arbitrary Hessian directions. All sharps in this calculation are the weighted bilinear transposes for the analytic complex field calculus. Neither a Hermitian transpose nor a missing cell measure is introduced. The original boundary/exterior convention remains a premise."
+    },
+    {
+      "id": "F12",
+      "status": "supported_from_selected_source_statement",
+      "topic": "Normalized first-gradient H and the gradient of N",
+      "candidate_location": "Equation (10)",
+      "source_location": "CMP99 printed 422 (3.133), normalization paragraph; printed 423 Theorem 3.12",
+      "detail": "The source gradient factor is s_y^-1 and its unnormalized coarse density factor is s_c^-4. The following paragraph adds s_c^-1 for the variational H used here, giving C_H s_y^-1 s_c^-5 exp(-delta_H d/2). In N=HD1 the spatial output derivative acts on H alone, since D1(A)v is the already fixed coarse coefficient. Multiplication by the coarse measure s_c^4 leaves s_c^-1. The same retained scale-transfer sum as for N contributes another s_y^-1, yielding nabla N<=C_N epsilon3 s_y^-2 s_z^-3 exp(-3delta d/8). The corresponding field bound has s_y^-1 instead. This uses only the available first gradient; the excluded covariant-Laplacian estimate is never invoked."
+    },
+    {
+      "id": "F13",
+      "status": "supported_conditionally_on_retained_owner_geometry",
+      "topic": "Real unmasked Tv jets and gradient-input admissibility",
+      "candidate_location": "Equation (11)",
+      "detail": "A first covariant difference of the actual supported v enlarges its support by one fine layer. The collar and finite adjacent-owner-level assumptions retained from 1742 make this enlargement meet only finitely many labels at bounded weighted distance from the original tildeDelta(z). This bounds the actual jet of v, including the cost of any boundary jump through the given norm |nabla v|_(-2). To apply N and nabla N, only field values of v are summed; disjoint owner restrictions are not differentiated. Therefore the genuine Tv and nabla(Tv) satisfy (11). This does not assume that a sharp mask preserves a gradient norm. Ambient field derivatives are admissible on the original field chart; the estimate uses the supplied actual gradient norm, not an invented smoothness property of a restriction."
+    },
+    {
+      "id": "F14",
+      "status": "supported",
+      "topic": "Left transpose transport after the local jet estimate",
+      "candidate_location": "Equation (12)",
+      "detail": "Apply K0 to the unmasked Tv jet first. The resulting field f=K0Tv has weight -3 and decay 3delta/8. In Nsharp f, the fine-block volume s_w^4, reversed N density factor s_w^-1 s_y^-3 and f factor s_w^-3 cancel all intermediate scale powers. Restricting f by owners at this stage is harmless because no derivative of f or a mask is taken. Extracting delta/4 by the triangle inequality leaves delta/8 on each edge, giving the asserted one-intermediate-sum constant. This establishes the leading O(epsilon3) potential contribution without using a generic block norm that falsely treats gradients as mask-stable."
+    },
+    {
+      "id": "F15",
+      "status": "supported_conditionally_on_original_curried_density_premise",
+      "topic": "Xi and the retained lower-order second-chain term",
+      "candidate_location": "Equations (13)-(14)",
+      "detail": "The normalized Hsharp calculation is a linear map independent of whether its input is J or G0. For |G0|<=C_G epsilon3^2 s_y^-3, its fine block sum is s_c^-5 sum_y s_y exp(-delta d/2), which is bounded by C s_c^-4 under the retained scale-transfer and summability premises. R_csharp preserves that coarse weight, so |Xi|_(-4)<=C_Xi epsilon3^2. The local Ccal'' contraction then maps fine(-1) to fine(-3) with coefficient K_L C_Xi epsilon3^2. The two T legs produce at most three factors and the same delta/4 convolution. Fine eta^4, coarse s_c^4, identity/contact densities and the single output evaluation remain accounted for. Thus the second-chain term is controlled and is not discarded merely because it is lower order."
+    },
+    {
+      "id": "F16",
+      "status": "conditional_common_parameter_requirement",
+      "topic": "One common decay rate and all domain/smallness tests",
+      "candidate_location": "Equations (10)-(16), especially (15)",
+      "detail": "The source explicitly permits a common positive propagator rate, but the selected delta must be no larger than every rate actually used by the H, D1, R and coarse inverse inputs. The collar tests, scale-transfer expenditure and C(1/16), C(1/8), C(1/2) sums must be evaluated at that same delta. Weakening an exponent and keeping smallness constants evaluated at an incompatible larger rate would not be justified. Candidate B explicitly retains the necessary reevaluation and combines the chart radius, local remainder radius, resolvent smallness and original epsilon_source restrictions. This is a valid conditional intersection, not evidence that a particular profile admits a positive numerical window. The printed inequalities of (15) alone cannot replace the original geometric and background hypotheses or any original parameter relations hidden in epsilon_source."
+    },
+    {
+      "id": "F17",
+      "status": "supported_conditional_combination",
+      "topic": "All original V80 contributions and no extra exponent loss on addition",
+      "candidate_location": "Equation (16)",
+      "source_location": "CMP102 printed 290 (80), 291-292 (85), (88)-(90), (93), and printed 308 (189)",
+      "detail": "Source (80) consists of the current remainder -<HD3,J>, the two joint kinetic-coordinate terms and V0(F). The current input contributes Ccur epsilon1 epsilon3, the joint kinetic input Cmix epsilon3, and the present potential calculation Cpot epsilon3 after epsilon3<=1. With epsilon1<=1, the same original support tildeDelta(z), one admitted domain and the same delta/4, their finite sum has coefficient C_total epsilon3 and input max(|v|_(-1),|nabla v|_(-2)). Addition requires no further convolution and therefore no further exponent loss. This is a reconstruction of the conditional source-189-type estimate; it does not justify a previously named stronger rate or transfer it to a different physical mean. The remaining exact-identity defect F03 is expressly retained rather than concealed by the norm conclusion."
+    },
+    {
+      "id": "F18",
+      "status": "scope_limit",
+      "topic": "What this assessment does not establish",
+      "detail": "The published kernel, averaging-chart, multiscale summability and regular-background theorems remain assumptions at selected source-statement depth. No fixed physical profile has been tested against the common domain/rate/smallness conditions; no later-mean dictionary, source (190), physical C1/base mixed data, marked/normalized/history conclusion or manuscript claim follows from this report. These limits are not missing terms in the present formal second variation; they are separate admission and transfer obligations."
+    }
+  ],
+  "checks": {
+    "input_and_direct_source_hashes": "Verified before authoring the report.",
+    "visual_source_review": "Relevant original equations rendered directly from the local PDFs to memory; no source screenshot or PDF saved.",
+    "symbolic_countercheck": "Exact Pauli matrices verify the nonzero matrix discrepancy in F03 and zero trace contraction in that test. The general trace-null conclusion follows independently by trace cyclicity, not by the test alone.",
+    "algebraic_checks": "Backward product rule, six-term symmetric polarization, cubic Euler/Hessian factors, implicit D'', chain-rule sign, fine/coarse measure cancellation and exponential triangle-inequality expenditures checked directly.",
+    "not_performed": "No formal proof-assistant build, numerical physical-profile test, full source-theorem audit, manuscript/PDF/Capacity assessment, score or publication action."
+  },
+  "recommended_record_handling": "Preserve the frozen B bytes and the adverse F03 finding. If a later candidate corrects the displayed source-(94) order or explicitly explains the trace-null representation, that is changed evidence and should not overwrite this input or report. This review itself does not start another assessment.",
+  "final_verdict": "The conditional localized Hessian norm calculation and conditional finite sum are supported under their explicitly retained original-source premises. The frozen candidate is not exact-source-correct as written: its equation (4) has a reversed eta-squared commutator. This actual error is trace-null in the scalar cubic action and does not invalidate the first-jet Hessian bound, but the displayed identity must remain unvalidated. No physical admission or broader theorem is certified."
+}
