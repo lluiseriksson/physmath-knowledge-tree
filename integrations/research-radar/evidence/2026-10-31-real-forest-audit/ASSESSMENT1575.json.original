@@ -1,0 +1,467 @@
+{
+  "schema": "airr.contextual-ai-unscored-technical-audit.v1",
+  "review_id": 1575,
+  "date": "2026-10-31",
+  "status": "complete",
+  "disposition": "finite_conditional_results_supported_with_explicit_open_application_gates",
+  "summary": "No incorrect displayed numerical constant or false exact finite identity was found with the inherited nonnegative insertion-size convention and the declared finite forest premise. A minor standalone omission of t>=0 in 1565 is repaired explicitly. Source admission, rooted spatial summation, normalization and complex-background transfer remain open; the spatial attachment counterexample is valid.",
+  "scoring": {
+    "performed": false,
+    "numeric_score_assigned": false,
+    "pdf_or_manuscript_assessed": false
+  },
+  "identity": {
+    "requested_model": "gpt-6-astra",
+    "requested_reasoning_effort": "xhigh",
+    "requested_context": "one separate task context",
+    "actual_runtime_model_attestation": "unverified",
+    "actual_runtime_effort_attestation": "unverified",
+    "actual_evidence": "No tool exposed a verifiable runtime model/version or reasoning-effort attestation.",
+    "scientific_independence": "unverified",
+    "participation": "Parent authored the nine target notes and supplied the frozen review packet.",
+    "classification": "contextual AI technical assessment; not peer review or editorial decision",
+    "audit_count": 1,
+    "restarted": false,
+    "substituted_reviewer": false,
+    "delegated_subreview": false
+  },
+  "input_binding": {
+    "manifest": "INPUT-MANIFEST1575.json",
+    "manifest_sha256": "b502012003b61ed2188aad3b4f72a00768308469aa02a39bfabf52d3170a0042",
+    "expected_input_count": 11,
+    "target_count": 9,
+    "context_only": "inputs/DISPOSITION1554.md",
+    "scope_guide": "inputs/REVIEW-GUIDE1575.md",
+    "all_frozen_bodies_fully_read": true,
+    "frozen_body_bytes": 56092,
+    "frozen_body_lines": 452,
+    "target_body_bytes": 47008,
+    "target_body_lines": 404,
+    "pre_hash_and_size_check": "all 11 matched",
+    "post_hash_and_size_check": "all 11 matched; individual comparisons recorded in SHA256-MANIFEST1575.json",
+    "manifest_unchanged": true,
+    "frozen_inputs_modified": false
+  },
+  "findings": [
+    {
+      "id": "F1",
+      "classification": "open_source_application_gate",
+      "title": "Original carrier and product-cutoff admission remain conditional",
+      "locations": [
+        "CARRIER-CUTOFF1564.md:7-21",
+        "CARRIER-CUTOFF1564.md:25-31",
+        "EXACT-CUTOFF-FACTORS1566.md:7",
+        "EXACT-CUTOFF-FACTORS1566.md:25-30"
+      ],
+      "finding": "Support and overlap arithmetic is consistent if the asserted selected-map locality, original factor inventory, fixed constants and exact FREE product cutoff hold. The older source construction needed to establish these facts was not in the audit packet.",
+      "unsupported_inference": "The generic real-Gaussian estimates establish the actual historical law, geometry, complete factor list, or selected-output restrictions.",
+      "required_work": "Instantiate and verify the original source-law, norm, cutoff, counterterm, factor and geometric dictionary.",
+      "resolved_in_this_audit": false,
+      "note": "These are acknowledged conditions in the targets, not a newly found algebraic contradiction."
+    },
+    {
+      "id": "F2",
+      "classification": "open_summation_gate_with_valid_counterexample",
+      "title": "Fixed-support dimension payment does not pay spatial attachments",
+      "locations": [
+        "COMPONENT-ALGEBRA1574.md:24-53",
+        "ATTACHMENT-WITNESS1575.md:5-16"
+      ],
+      "finding": "The perpendicular typed-chain witness has translation sum epsilon*n^2 and square-root size n, so a universal square-root-size translation bound is false under the stated abstract assumptions.",
+      "unsupported_inference": "A covariance gap, finite range, bounded original carrier size and overlap supply the missing rooted translation/attachment sum.",
+      "required_work": "Derive a rooted attachment-coordinate enumeration or a different local-degree mechanism and charge all shape, dimension, translation and factorial costs once.",
+      "resolved_in_this_audit": false,
+      "note": "A larger valid O(|U||V|) bound is supplied, but its naive degree majorant remains superexponential; neither actual-series divergence nor impossibility of a different method follows."
+    },
+    {
+      "id": "F3",
+      "classification": "open_normalization_and_enumeration_gate",
+      "title": "N! tree normalization and normalizer control have not been derived",
+      "locations": [
+        "DEGREE-POLYDISC1573.md:56-62",
+        "COMPONENT-ALGEBRA1574.md:20",
+        "COMPONENT-ALGEBRA1574.md:49-53"
+      ],
+      "finding": "The divided tree sums are correct identities. Exact rooted activity enumeration and zero-free/logarithm or reciprocal-normalizer estimates are separate requirements.",
+      "unsupported_inference": "A finite signed polymer gas or small individual tail factors gives uniform closeness of the original normalizer to one.",
+      "counterexample": "For independent scalar Gaussians with fixed finite cutoff, the cutoff probability is p^M with 0<p<1.",
+      "resolved_in_this_audit": false
+    },
+    {
+      "id": "F4",
+      "classification": "declared_external_premise_not_newly_verified",
+      "title": "Finite forest identity remains a literature premise",
+      "locations": [
+        "REAL-FOREST-GATE1567.md:5-9",
+        "REAL-FOREST-GATE1567.md:31-35",
+        "COMPONENT-ALGEBRA1574.md:3",
+        "COMPONENT-ALGEBRA1574.md:13-18"
+      ],
+      "finding": "The finite smooth extension meets the stated globally smooth scalar requirement, conditional on the declared forest identity. Complex observables can be handled by real and imaginary parts.",
+      "unsupported_inference": "Reading the abstract/history or a selected repository declaration is a proof audit, local Lean build, or formal dependency certification.",
+      "resolved_in_this_audit": false
+    },
+    {
+      "id": "F5",
+      "classification": "open_complex_background_and_domain_gate",
+      "title": "Fixed real observables and auxiliary covariance holomorphy do not admit source domains",
+      "locations": [
+        "CARRIER-CUTOFF1564.md:31",
+        "CUTOFF-SCORE1565.md:46-48",
+        "DEGREE-POLYDISC1573.md:24-32",
+        "DEGREE-POLYDISC1573.md:60-64"
+      ],
+      "finding": "Density differentiation requires fixed measurable observables and supports. The local symmetric covariance polydisc does not extend moving cutoffs, charts, backgrounds, currents or source tags.",
+      "required_work": "Verify the complete original complex-background and interpolation conditions with genuine symmetric covariance and the correct localized reference.",
+      "resolved_in_this_audit": false
+    },
+    {
+      "id": "F6",
+      "classification": "retained_prior_adverse_findings",
+      "title": "Nonsymmetric tagged covariance and mismatched exterior reference objections remain",
+      "locations": [
+        "DISPOSITION1554.md:F1",
+        "DISPOSITION1554.md:F2"
+      ],
+      "finding": "The real packet uses genuine symmetric covariances and does not retroactively validate a nonsymmetric tagged inverse. A localized reference must retain the same exterior support.",
+      "adopted_prior_repairs": "Untagged genuine symmetric covariance used consistently with its compensator; same-support zero-tag localized exterior reference, as recorded in DISPOSITION1554.",
+      "prior_original_constructions_reaudited": false,
+      "resolved_in_this_audit": false
+    },
+    {
+      "id": "F7",
+      "classification": "minor_standalone_hypothesis_omission_repaired_in_same_audit",
+      "title": "Restate t>=0 when citing 1565 standalone",
+      "locations": [
+        "CUTOFF-SCORE1565.md:27-30",
+        "BARE-PRODUCT1563.md:11"
+      ],
+      "finding": "1565 states t<=epsilon without explicitly repeating t>=0 from 1563. If read standalone, one nonempty carrier with empty K_1 and t<0 satisfies the on-K_1 domination vacuously, while its n=1 displayed norm bound has a negative right side.",
+      "repair": "Write 0<=t<=epsilon, with inherited a>0, m>=1, c>=0 and nonnegative t0 throughout.",
+      "interpretation": "The intended continuing-packet convention already comes from 1563; no numerical constant or substantive argument changes.",
+      "resolved_in_this_audit": true,
+      "frozen_input_edited": false
+    }
+  ],
+  "new_demonstrated_errors_in_stated_finite_lemmas": [],
+  "per_target": [
+    {
+      "file": "inputs/BARE-PRODUCT1563.md",
+      "disposition": "supported_under_stated_finite_hypotheses",
+      "checked": [
+        "quadratic determinant constant K",
+        "actual marginal covariance",
+        "degenerate covariance and empty cases",
+        "complex-valued insertions on real fields",
+        "two-factor correlated counterexample"
+      ],
+      "limits": [
+        "actual carrier domination unverified",
+        "no connectivity or normalization result"
+      ]
+    },
+    {
+      "file": "inputs/CARRIER-CUTOFF1564.md",
+      "disposition": "abstract_cutoff_extension_supported_source_carrier_admission_conditional",
+      "checked": [
+        "zero extension as real measurable factor",
+        "exact identity on original cutoff",
+        "conditional support and overlap arithmetic"
+      ],
+      "limits": [
+        "per-coarse-bond source reconstruction not inspected",
+        "factor inventory not source-certified",
+        "zero extension not holomorphic"
+      ]
+    },
+    {
+      "file": "inputs/CUTOFF-SCORE1565.md",
+      "disposition": "supported_with_nonnegative_t_hypothesis_made_explicit",
+      "checked": [
+        "both endpoint spectral bounds",
+        "centered score and variance",
+        "L2 constant K2",
+        "bilinear pair covariance identity",
+        "entrywise pair decay"
+      ],
+      "limits": [
+        "fixed domains only",
+        "global original cutoff must be allocated",
+        "F7 standalone t>=0 omission repaired explicitly"
+      ]
+    },
+    {
+      "file": "inputs/EXACT-CUTOFF-FACTORS1566.md",
+      "disposition": "supported_under_exact_product_cutoff_hypothesis",
+      "checked": [
+        "simultaneous correlated tail q^k",
+        "mixed finite identity",
+        "Holder/Cauchy-Schwarz factor q^(k/2)",
+        "coupling-scale comparison"
+      ],
+      "limits": [
+        "actual source product law unverified",
+        "no reciprocal normalizer or logarithm bound"
+      ]
+    },
+    {
+      "file": "inputs/REAL-FOREST-GATE1567.md",
+      "disposition": "finite_matrix_and_smoothness_arguments_supported_forest_theorem_assumed",
+      "checked": [
+        "threshold-pinching identity",
+        "uniform covariance lower and upper bounds",
+        "nonforest cube counterexample",
+        "finite globally smooth extension"
+      ],
+      "limits": [
+        "forest identity external premise",
+        "no source complex admission",
+        "no formal build"
+      ]
+    },
+    {
+      "file": "inputs/FOREST-DERIVATIVE1569.md",
+      "disposition": "supported_with_averaged_symmetrization_convention",
+      "checked": [
+        "heat/Hermite mixed derivative identity",
+        "HS constants and sqrt(2) edge factor",
+        "L4 K4 and q^(h/4) bound",
+        "genuine factorial growth"
+      ],
+      "limits": [
+        "generic factorial majorant not summable",
+        "no actual-series divergence claim"
+      ]
+    },
+    {
+      "file": "inputs/DEGREE-POLYDISC1573.md",
+      "disposition": "supported_under_fixed_observable_symmetric_covariance_hypotheses",
+      "checked": [
+        "normalized-adjacency operator bound",
+        "analytic determinant branch",
+        "Kden density L2 bound",
+        "Cauchy distinct-edge degree factors",
+        "Ktree and Prufer identity"
+      ],
+      "limits": [
+        "auxiliary covariance domain only",
+        "component dimensions retained",
+        "rooted spatial and factorial normalization open"
+      ]
+    },
+    {
+      "file": "inputs/COMPONENT-ALGEBRA1574.md",
+      "disposition": "finite_algebra_and_fixed_support_counting_supported_conditionally_on_forest_identity",
+      "checked": [
+        "moment-level forest bijection",
+        "disjoint-support compatibility",
+        "absence of label reuse",
+        "dimension and degree inequalities",
+        "factorial tree identity",
+        "rooted overlap-shape count"
+      ],
+      "limits": [
+        "no translation/attachment payment",
+        "no rooted norm enumeration",
+        "no zero-free/logarithm conclusion"
+      ]
+    },
+    {
+      "file": "inputs/ATTACHMENT-WITNESS1575.md",
+      "disposition": "exact_abstract_counterexample_supported",
+      "checked": [
+        "uniform covariance eigenvalues",
+        "disjoint typed coordinates under translations",
+        "one-entry cross blocks",
+        "n^2 distinct translations",
+        "bounded-size bounded-overlap chain supports"
+      ],
+      "strengthening": "For the specified shapes on a torus of side at least 4n, the complete translation sum equals epsilon*n^2.",
+      "limits": [
+        "not a source-family counterexample",
+        "not proof of series divergence"
+      ]
+    }
+  ],
+  "same_audit_clarifications_and_supplements": [
+    {
+      "id": "S1",
+      "result": "t0<=a/(32m), already used in 1569, is a sufficient explicit growth margin for the 1567 enlarged covariance support.",
+      "proof_scope": "Density decay at least exp(-a||A||^2/4) minus insertion growth t0*m leaves at least 7a/32; finite covariance derivatives add polynomials.",
+      "closes_application_gate": false
+    },
+    {
+      "id": "S2",
+      "result": "Apply the real-scalar forest premise separately to real and imaginary parts; interpret Hermite Sym as averaged symmetrization.",
+      "kind": "convention and proof completion",
+      "closes_application_gate": false
+    },
+    {
+      "id": "S3",
+      "result": "If interaction multiplicity is m and cutoff bonds partition coordinates, the combined factor graph has degree at most D*m with D=max(d0,r_g).",
+      "kind": "conditional overlap bookkeeping",
+      "closes_application_gate": false
+    },
+    {
+      "id": "S4",
+      "result": "A valid summable-entrywise translation bound is sum_t ||C_(U,V+t)||op <= Cdec*J_alpha*|U|*|V|.",
+      "consequence": "With the polydisc degree cost, naive mass absorption yields product_i(d_i!)^(3/2); for N>=3 labelled stars alone give sqrt((N-1)!) after division by N!.",
+      "kind": "honest replacement bound and retained failure of its naive majorant",
+      "closes_application_gate": false
+    },
+    {
+      "id": "S5",
+      "result": "Explicitly retain 0<=t<=epsilon and the inherited nonnegative size-parameter convention when quoting 1565 standalone.",
+      "kind": "same-audit repair of minor hypothesis omission F7",
+      "closes_application_gate": false
+    }
+  ],
+  "reading_scope": {
+    "complete_frozen_inputs": true,
+    "external_scientific_sources_opened": [],
+    "other_reading": [
+      "D:\\LEEME.md storage instructions"
+    ],
+    "underlying_source_notes_inspected": false,
+    "original_paper_proofs_audited": false,
+    "repository_proofs_audited": false,
+    "source_scope_preserved": "Parent reported forest paper abstract/history and repository README/selected declaration only, with no source proof audit, local build, CI verification or new dependency.",
+    "manuscript_or_pdf_read": false,
+    "other_chats_accessed": false
+  },
+  "computation_scope": {
+    "runtime": "Python 3.12.6",
+    "dependencies": "standard library only; no installation",
+    "scalar_hermite": {
+      "orders": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "arithmetic": "exact Fraction and integer Gaussian moments",
+      "squared_norms": [
+        "1",
+        "1/2",
+        "3/2",
+        "45/4",
+        "315/2",
+        "14175/4",
+        "467775/4"
+      ],
+      "all_match": true
+    },
+    "prufer_factorial": {
+      "N": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "sequences_enumerated": 18248,
+      "arithmetic": "exact integers",
+      "weighted_sums": [
+        1,
+        6,
+        72,
+        1320,
+        32760,
+        1028160
+      ],
+      "all_match": true
+    },
+    "prufer_degree_power": {
+      "N": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "arithmetic": "floating coefficient convolution versus direct sequence enumeration",
+      "relative_tolerance": 1e-10,
+      "all_match": true
+    },
+    "attachment": {
+      "n": [
+        2,
+        3,
+        5,
+        8
+      ],
+      "torus_side": "4*n",
+      "translations_enumerated": 1632,
+      "nonzero_translation_counts": [
+        4,
+        9,
+        25,
+        64
+      ],
+      "max_nonzero_cross_rank": 1,
+      "epsilon": "1/3",
+      "translation_sums": [
+        "4/3",
+        "3",
+        "25/3",
+        "64/3"
+      ],
+      "all_match": true
+    },
+    "constants": {
+      "eta": "1/8",
+      "Kden_approx": 1.1628614739364387,
+      "Ktree_upper_bound_approx": 89.6445871606925
+    },
+    "lean_build": false,
+    "formal_proof_check": false,
+    "numeric_integration": false,
+    "source_lattice_simulation": false,
+    "scope_note": "Finite computations corroborate, but do not replace, the analytic arguments in REVIEW1575.md."
+  },
+  "operational_scope": {
+    "written_artifacts": [
+      "REVIEW1575.md",
+      "ASSESSMENT1575.json",
+      "SHA256-MANIFEST1575.json"
+    ],
+    "review_tmp_created": false,
+    "foreign_source_bodies_or_renders_preserved": false,
+    "working_manuscript_modified": false,
+    "repository_modified": false,
+    "payments": false,
+    "logins": false,
+    "corpus_download": false,
+    "external_messages": false,
+    "durable_preservation": "Parent to preserve in D:; review work remained in the authorized C: directory."
+  },
+  "allowed_conclusions": [
+    "conditional finite real Gaussian insertion and tail bounds",
+    "density pair and all-order derivative identities",
+    "forest covariance positivity and finite smoothness",
+    "local complex covariance polydisc derivative bound",
+    "fixed-support degree and mass/tree counting",
+    "exact finite hard-core polymer algebra under forest premise",
+    "valid abstract spatial attachment counterexample"
+  ],
+  "not_established": [
+    "actual historical source-law identification",
+    "original B1 determining geometry and simultaneous geometric parameter family",
+    "complete source carrier/factor/counterterm dictionary",
+    "rooted spatial attachment norm and exact factorial normalization",
+    "zero-free/logarithm or reciprocal-normalizer bounds",
+    "full source complex-background/current/tag admission",
+    "maximal next marginal or probability",
+    "global or continuum physical mass-gap conclusion",
+    "independent peer review or formal certification"
+  ],
+  "standalone_statement_omissions": [
+    "F7: explicit t>=0 in 1565"
+  ],
+  "algebraic_error_scope_note": "No incorrect numerical constant or exact finite identity found; F7 records the separately repaired standalone hypothesis omission."
+}

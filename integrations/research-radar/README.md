@@ -33,6 +33,8 @@ npm run validate:research-radar
 
 ## Update cycle
 
+New exact evidence packet: [real Gaussian/cutoff/forest audit1575](evidence/2026-10-31-real-forest-audit/README.md) preserves the full unscored report, eleven inputs, all objections and the nonnegative-parameter clarification. Finite conditional results are supported; rooted spatial sums, normalizer and source/complex admission remain open. The existing DeepMind card is reconciled at commit-metadata depth without a new source card or proof claim.
+
 New bibliography and conditional synthesis: [real forest interpolation boundary](notes/2026-10-31-real-forest-boundary.md) distinguishes an old1994 preprint, a known-formula formalization and an unreviewed real Gaussian/cutoff argument. All-order connected estimates, source geometry and complex admission remain open; no formal dependency or assessment is inherited.
 
 New source perimeter: [nine laboratories and research groups](frontier-labs.json), with [eight newly indexed source cards and two bounded mechanism checks](notes/2026-10-28-frontier-labs.md). The screenshot wave paper was already indexed; no duplicate manuscript or new grade is created. Publication dates, actual reading depth, benchmark restrictions and formal dependency locks are explicit.

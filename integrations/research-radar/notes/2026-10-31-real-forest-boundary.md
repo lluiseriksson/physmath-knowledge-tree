@@ -2,6 +2,8 @@
 
 This note combines two bibliographic locators with an **unreviewed parent synthesis**. It creates no manuscript, score, canonical graph change or formal dependency. The [admission assessment1547](../evidence/2026-10-31-first-admission-audit/README.md) does not assess these later deductions.
 
+A later [exact contextual audit1575](../evidence/2026-10-31-real-forest-audit/README.md) supports finite conditional statements in nine named frozen notes and records the explicit nonnegative-parameter clarification. This summary itself is not an assessed manuscript or PDF. The full spatial, original-source and complex-background gates remain open; the exact report and all objections are preserved.
+
 ## Source scope and chronology
 
 - Abdesselam and Rivasseau, [Trees, forests and jungles](https://arxiv.org/abs/hep-th/9409094v1), first preprint16September1994 at13:33:09UTC, related DOI10.1007/3-540-59190-7_20. Abstract/history read; statement and proof not read. Newly indexed here does not mean newly published.
