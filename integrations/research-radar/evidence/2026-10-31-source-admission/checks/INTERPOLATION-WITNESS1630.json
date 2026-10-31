@@ -1,0 +1,60 @@
+{
+  "initial_covariance": [
+    [
+      "1",
+      "4/5",
+      "4/5"
+    ],
+    [
+      "4/5",
+      "1",
+      "4/5"
+    ],
+    [
+      "4/5",
+      "4/5",
+      "1"
+    ]
+  ],
+  "entrywise_contracted_matrix": [
+    [
+      "1",
+      "0",
+      "4/5"
+    ],
+    [
+      "0",
+      "1",
+      "4/5"
+    ],
+    [
+      "4/5",
+      "4/5",
+      "1"
+    ]
+  ],
+  "initial_all_principal_minors": [
+    "1",
+    "1",
+    "1",
+    "9/25",
+    "9/25",
+    "9/25",
+    "13/125"
+  ],
+  "initial_determinant": "13/125",
+  "contracted_determinant": "-7/25",
+  "negative_quadratic_witness": {
+    "vector": [
+      1,
+      1,
+      -1
+    ],
+    "value": "-1/5"
+  },
+  "absolute_scalar_row_sum_both": "13/5",
+  "real_min_path_forest_patterns_checked": 75,
+  "method": "Exact rational arithmetic;3node finite sanity grid for valid forest patterns, exact counterexample for invalid generic implication",
+  "refuted_claim": "Entrywise contraction with unchanged diagonal and bounded row sum automatically preserves covariance positivity",
+  "not_refuted": "The actual published CMP116 construction, whose tags have separate operator/analytic bounds, or real PSD min-path forest interpolation. No source construction is identified with this bad matrix."
+}

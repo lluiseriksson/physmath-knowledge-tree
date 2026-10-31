@@ -1,0 +1,365 @@
+{
+  "schema_version": "1.0",
+  "scope": "Own conditional source-admission artifacts; publication byte/provenance mapping, not an assessment or proof certificate",
+  "normalization": "UTF8/LF/final newline/trailing spaces; portable helper writes force LF. Full private checkpoint and foreign bodies excluded.",
+  "original_mapping": [
+    {
+      "file": "proofs/FLAT-GAP1533.md",
+      "kind": "Own parent proof or source dictionary, unreviewed",
+      "original_file": "FLAT-GAP1533.md",
+      "original_sha256": "0c49e4d69f5daba3f2b20e5200098a8a0712718699fc7c4f3e45e897cca6d6d1",
+      "public_sha256": "0c49e4d69f5daba3f2b20e5200098a8a0712718699fc7c4f3e45e897cca6d6d1",
+      "transformation": "UTF8/LF/trailing-space normalization"
+    },
+    {
+      "file": "proofs/FULL-CUTOFF1534.md",
+      "kind": "Own parent proof or source dictionary, unreviewed",
+      "original_file": "FULL-CUTOFF1534.md",
+      "original_sha256": "a0422960f27c16e4d08bcab046f589d1e1588a248fe3fc98fd9810b97ee5a4c8",
+      "public_sha256": "a0422960f27c16e4d08bcab046f589d1e1588a248fe3fc98fd9810b97ee5a4c8",
+      "transformation": "UTF8/LF/trailing-space normalization"
+    },
+    {
+      "file": "proofs/GAUSSIAN-LOCAL1540.md",
+      "kind": "Own parent proof or source dictionary, unreviewed",
+      "original_file": "GAUSSIAN-LOCAL1540.md",
+      "original_sha256": "397aa5cd0560450febb098347d4d06ad38988a5fbd16dea1bfb1d716932b5008",
+      "public_sha256": "397aa5cd0560450febb098347d4d06ad38988a5fbd16dea1bfb1d716932b5008",
+      "transformation": "UTF8/LF/trailing-space normalization"
+    },
+    {
+      "file": "proofs/SOURCE-ANCHORS1546.md",
+      "kind": "Own parent proof or source dictionary, unreviewed",
+      "original_file": "SOURCE-ANCHORS1546.md",
+      "original_sha256": "5d2b242c5e830d3ab9b748c40b51318d183db499dad9c28e776cd0b14c9fb6f0",
+      "public_sha256": "5d2b242c5e830d3ab9b748c40b51318d183db499dad9c28e776cd0b14c9fb6f0",
+      "transformation": "UTF8/LF/trailing-space normalization"
+    },
+    {
+      "file": "proofs/CARRIER-CUTOFF1564.md",
+      "kind": "Own parent proof or source dictionary, unreviewed",
+      "original_file": "CARRIER-CUTOFF1564.md",
+      "original_sha256": "25d466c7bb64ffa8347f8a6e8e738b16e62872e472ef29ce4d64a092fdfae863",
+      "public_sha256": "25d466c7bb64ffa8347f8a6e8e738b16e62872e472ef29ce4d64a092fdfae863",
+      "transformation": "UTF8/LF/trailing-space normalization"
+    },
+    {
+      "file": "proofs/EXACT-CUTOFF-FACTORS1566.md",
+      "kind": "Own parent proof or source dictionary, unreviewed",
+      "original_file": "EXACT-CUTOFF-FACTORS1566.md",
+      "original_sha256": "0783b59a4e94265e2b497a22d6a8e1817fca3a8be037fdf9c0865e938aa8e4b9",
+      "public_sha256": "0783b59a4e94265e2b497a22d6a8e1817fca3a8be037fdf9c0865e938aa8e4b9",
+      "transformation": "UTF8/LF/trailing-space normalization"
+    },
+    {
+      "file": "proofs/SOURCE-INPUT-INVENTORY1616.json",
+      "kind": "Own parent proof or source dictionary, unreviewed",
+      "original_file": "SOURCE-INPUT-INVENTORY1616.json",
+      "original_sha256": "00ab183ba00c8df27e5bf559200e629503ba872cce71c24b422aa2db5c61942b",
+      "public_sha256": "00ab183ba00c8df27e5bf559200e629503ba872cce71c24b422aa2db5c61942b",
+      "transformation": "UTF8/LF/trailing-space normalization"
+    },
+    {
+      "file": "proofs/FREE-PRECISION-BINDING1617.json",
+      "kind": "Own parent proof or source dictionary, unreviewed",
+      "original_file": "FREE-PRECISION-BINDING1617.json",
+      "original_sha256": "a7795ce52b8d545363e89e05f8810cd8b556d3411935bbae4ad09ac0690e9ca9",
+      "public_sha256": "208743461f2e6b413daaa05b67eb585dc7877ab6436645f246a8dec8273e52e9",
+      "transformation": "UTF8/LF/trailing-space normalization"
+    },
+    {
+      "file": "proofs/EXTERIOR-DOMAIN-PASSAGE1618.json",
+      "kind": "Own parent proof or source dictionary, unreviewed",
+      "original_file": "EXTERIOR-DOMAIN-PASSAGE1618.json",
+      "original_sha256": "23aa06134bfc9e473f60044c8c897de51ebfcfed7f79f09cb1b18f78bb9d3372",
+      "public_sha256": "a57a01cc13f36d83d6848eb8f10831473712abd68aaf90e1d45f1a4abaff5eb0",
+      "transformation": "UTF8/LF/trailing-space normalization"
+    },
+    {
+      "file": "proofs/ORIGINAL-DOMAIN-DICTIONARY1619.json",
+      "kind": "Own parent proof or source dictionary, unreviewed",
+      "original_file": "ORIGINAL-DOMAIN-DICTIONARY1619.json",
+      "original_sha256": "c627e20196e3f7d74ad29b1452bb49ad5afedae472352541f968a4b58d2b07d4",
+      "public_sha256": "a0b5de0d2a43082c8000ce01878604dfd96b6dd1e51e179562e5e8deca263b2e",
+      "transformation": "UTF8/LF/trailing-space normalization"
+    },
+    {
+      "file": "proofs/LOCALIZED-QUADRATIC-DICTIONARY1620.json",
+      "kind": "Own parent proof or source dictionary, unreviewed",
+      "original_file": "LOCALIZED-QUADRATIC-DICTIONARY1620.json",
+      "original_sha256": "e5f966a417368fc57cb39b921f0ced66c2b2b9ea79e54869ab8f87664a16723f",
+      "public_sha256": "77afcb2d62f17594433556cc177ad8928236aa0a1d28efeb20d940bb46fd2b5a",
+      "transformation": "UTF8/LF/trailing-space normalization"
+    },
+    {
+      "file": "proofs/SOURCE-CONDITIONAL-DICTIONARY1621.json",
+      "kind": "Own parent proof or source dictionary, unreviewed",
+      "original_file": "SOURCE-CONDITIONAL-DICTIONARY1621.json",
+      "original_sha256": "68eb239b63483e1622478730ff62f10f66de4b34c1968c6b6f48b87e6378da21",
+      "public_sha256": "58bc59909387afacab35e99e7a2f652b4d55359065cae3626f7a7373d1ff2be3",
+      "transformation": "UTF8/LF/trailing-space normalization"
+    },
+    {
+      "file": "proofs/BOUNDARY-LARGE-FIELD-LEDGER1622.json",
+      "kind": "Own parent proof or source dictionary, unreviewed",
+      "original_file": "BOUNDARY-LARGE-FIELD-LEDGER1622.json",
+      "original_sha256": "50f7833fe6481e249d8e384b73a6f0344035865f284421ac5265bdf8214c3181",
+      "public_sha256": "7fd2f30004872a4077b883638a09e40de02710f04f1e1753970c2edacefbcc27",
+      "transformation": "UTF8/LF/trailing-space normalization"
+    },
+    {
+      "file": "proofs/P1-DEFECT-DICTIONARY1623.json",
+      "kind": "Own parent proof or source dictionary, unreviewed",
+      "original_file": "P1-DEFECT-DICTIONARY1623.json",
+      "original_sha256": "c277aba9e7d7a5c7d74c7f5988ddb08bc9297f7ba1bb482967b20b733acf7f2d",
+      "public_sha256": "13dcac559736686a04ee5c93037744da0e3197d53fe5fd499728507370ef7c98",
+      "transformation": "UTF8/LF/trailing-space normalization"
+    },
+    {
+      "file": "proofs/P1-STEP-AVERAGING1624.json",
+      "kind": "Own parent proof or source dictionary, unreviewed",
+      "original_file": "P1-STEP-AVERAGING1624.json",
+      "original_sha256": "487486d37c8d724133dd477e0d5f57a0400805defea1feae91b6880183cc5b22",
+      "public_sha256": "1b0e294583533f78c064f748c60b723027b717fe19c967a18c8aa91b5e6fcdc0",
+      "transformation": "UTF8/LF/trailing-space normalization"
+    },
+    {
+      "file": "proofs/R1-OUTER-ENERGY1625.json",
+      "kind": "Own parent proof or source dictionary, unreviewed",
+      "original_file": "R1-OUTER-ENERGY1625.json",
+      "original_sha256": "1f5d86c07b51779a9828bae88e9ed52bceefd78cf8eb75962c2844979201e332",
+      "public_sha256": "760a2b54e2452af4ee9e03f81a6a5a7bb18a4a94bc102e67019549125899740e",
+      "transformation": "UTF8/LF/trailing-space normalization"
+    },
+    {
+      "file": "proofs/OUTER-COVER-JOINT-LEDGER1626.json",
+      "kind": "Own parent proof or source dictionary, unreviewed",
+      "original_file": "OUTER-COVER-JOINT-LEDGER1626.json",
+      "original_sha256": "3f7e6b8884bf33e1ef00cea25823f0ef67919cdf29bdd5549daa2fd8208572e4",
+      "public_sha256": "746587b970d56ba768021bf38a5a57aed9cff23378d9ef369f5ce9a70933b36f",
+      "transformation": "UTF8/LF/trailing-space normalization"
+    },
+    {
+      "file": "proofs/MIXED-CRITICAL-BRANCH1627.json",
+      "kind": "Own parent proof or source dictionary, unreviewed",
+      "original_file": "MIXED-CRITICAL-BRANCH1627.json",
+      "original_sha256": "c08bda59d3bd808dcc016988b5e19e179a99580f15916f0cf4aed612d89ee41a",
+      "public_sha256": "5161b63d4440038e2471183d4e5edbc440682c93fa70293cdd96251d2bca4c73",
+      "transformation": "UTF8/LF/trailing-space normalization"
+    },
+    {
+      "file": "proofs/BOUNDARY-PROTOTYPES-COVER1628.json",
+      "kind": "Own parent proof or source dictionary, unreviewed",
+      "original_file": "BOUNDARY-PROTOTYPES-COVER1628.json",
+      "original_sha256": "e7cf57c54a52b1b6207b5b485946fd51068db9d50de941cadd57b50fd81808aa",
+      "public_sha256": "d4c4afce163ca8d27ddb5348db9d8f87a028d7e64ad5ac1c919e4c8f8e1a5adf",
+      "transformation": "UTF8/LF/trailing-space normalization"
+    },
+    {
+      "file": "proofs/SAME-LAW-NORM-WINDOW1629.json",
+      "kind": "Own parent proof or source dictionary, unreviewed",
+      "original_file": "SAME-LAW-NORM-WINDOW1629.json",
+      "original_sha256": "2ebe95f3fde7fd8b215f9ab2af8eb9512c3709edbe44ed8b3ddfc05d25b35c72",
+      "public_sha256": "34ea87e64f2e5a5750f8051d9bb47a74a12b9d57714c3754e2ec5db634dcf031",
+      "transformation": "UTF8/LF/trailing-space normalization"
+    },
+    {
+      "file": "checks/step_words1624.py",
+      "kind": "Exact finite geometric check; no general formal proof",
+      "original_file": "step_words1624.py",
+      "original_sha256": "567634ec5a7b3fd66c624c45b828fdde07833793b43bb51c1a444e9798a6b659",
+      "public_sha256": "c0b1ce674882dd338839453b06231c95f8524c9eec339b909f9f15cb53b1c539",
+      "transformation": "UTF8/LF/trailing-space normalization; helper output forced to LF"
+    },
+    {
+      "file": "checks/step_words1624-failed-v1.py",
+      "kind": "Historical failed helper retained",
+      "original_file": "step_words1624-failed-v1.py",
+      "original_sha256": "ad41e4d299b2ea184ff67b99e866d75296e4656b2610714fea96a34c3b5dbc24",
+      "public_sha256": "ad41e4d299b2ea184ff67b99e866d75296e4656b2610714fea96a34c3b5dbc24",
+      "transformation": "UTF8/LF/trailing-space normalization"
+    },
+    {
+      "file": "checks/STEP-WORD-CHECK1624.json",
+      "kind": "Exact finite geometric check; no general formal proof",
+      "original_file": "STEP-WORD-CHECK1624.json",
+      "original_sha256": "dc36c280c3dd2df7f4327c8352771992a36def71b856edc8efd7642794871127",
+      "public_sha256": "447df12a95fd7657637eb61f630316363d24e03e6752ac3f7668b67b2be284ca",
+      "transformation": "UTF8/LF/trailing-space normalization"
+    },
+    {
+      "file": "checks/FAILED-CHECK1624.json",
+      "kind": "Historical failed helper retained",
+      "original_file": "FAILED-CHECK1624.json",
+      "original_sha256": "345edb3aafc65997ee12013fc85fe477eb5eeb3e598a408976faf363c1caa668",
+      "public_sha256": "307ebce00a47141fad654fdf6dd2a1d86e8f0c7d956f10c11f75aaaba3f71bc6",
+      "transformation": "UTF8/LF/trailing-space normalization"
+    },
+    {
+      "file": "checks/interpolation_witness1630.py",
+      "kind": "Exact rational generic nonimplication witness, not a source counterexample",
+      "original_file": "interpolation_witness1630.py",
+      "original_sha256": "2db843dad2dc0416b0b870f433400aaacd2de78f752e4cb2ae10e9824603a846",
+      "public_sha256": "e0f284cc50fa1d22ada524cc4c84d881aced4789cacf9a313142ab9c5feb1627",
+      "transformation": "UTF8/LF/trailing-space normalization; helper output forced to LF"
+    },
+    {
+      "file": "checks/INTERPOLATION-WITNESS1630.json",
+      "kind": "Exact rational generic nonimplication witness, not a source counterexample",
+      "original_file": "INTERPOLATION-WITNESS1630.json",
+      "original_sha256": "734828506c974f6d1979cddc44d802cb35587129d52243dc51367ef787463eb7",
+      "public_sha256": "42e003986371e1bdc1e5c7c7fd0d24047e07ef85b93485c9e0ca4f9b75be72df",
+      "transformation": "UTF8/LF/trailing-space normalization"
+    },
+    {
+      "file": "ADMISSION.json",
+      "kind": "Portable consolidated parent admission packet",
+      "original_file": "ADMISSION-PACKET1630.json",
+      "original_sha256": "cbb9fd41e2b297cf2352c6d40f464e19386068184463107ff23bc5ba79e94ec7",
+      "public_sha256": "3b1599291da24c85e24b009708960359fd832f732918a8916acc08f9ee6a137c",
+      "transformation": "Portable publication context and scientific next obligation; source bibliography DOI reconciled with existing registry"
+    }
+  ],
+  "files": [
+    {
+      "file": "ADMISSION.json",
+      "sha256": "3b1599291da24c85e24b009708960359fd832f732918a8916acc08f9ee6a137c",
+      "bytes": 8441
+    },
+    {
+      "file": "checks/FAILED-CHECK1624.json",
+      "sha256": "307ebce00a47141fad654fdf6dd2a1d86e8f0c7d956f10c11f75aaaba3f71bc6",
+      "bytes": 1040
+    },
+    {
+      "file": "checks/INTERPOLATION-WITNESS1630.json",
+      "sha256": "42e003986371e1bdc1e5c7c7fd0d24047e07ef85b93485c9e0ca4f9b75be72df",
+      "bytes": 1244
+    },
+    {
+      "file": "checks/interpolation_witness1630.py",
+      "sha256": "e0f284cc50fa1d22ada524cc4c84d881aced4789cacf9a313142ab9c5feb1627",
+      "bytes": 2909
+    },
+    {
+      "file": "checks/STEP-WORD-CHECK1624.json",
+      "sha256": "447df12a95fd7657637eb61f630316363d24e03e6752ac3f7668b67b2be284ca",
+      "bytes": 428
+    },
+    {
+      "file": "checks/step_words1624-failed-v1.py",
+      "sha256": "ad41e4d299b2ea184ff67b99e866d75296e4656b2610714fea96a34c3b5dbc24",
+      "bytes": 2231
+    },
+    {
+      "file": "checks/step_words1624.py",
+      "sha256": "c0b1ce674882dd338839453b06231c95f8524c9eec339b909f9f15cb53b1c539",
+      "bytes": 2253
+    },
+    {
+      "file": "proofs/BOUNDARY-LARGE-FIELD-LEDGER1622.json",
+      "sha256": "7fd2f30004872a4077b883638a09e40de02710f04f1e1753970c2edacefbcc27",
+      "bytes": 6602
+    },
+    {
+      "file": "proofs/BOUNDARY-PROTOTYPES-COVER1628.json",
+      "sha256": "d4c4afce163ca8d27ddb5348db9d8f87a028d7e64ad5ac1c919e4c8f8e1a5adf",
+      "bytes": 7457
+    },
+    {
+      "file": "proofs/CARRIER-CUTOFF1564.md",
+      "sha256": "25d466c7bb64ffa8347f8a6e8e738b16e62872e472ef29ce4d64a092fdfae863",
+      "bytes": 5432
+    },
+    {
+      "file": "proofs/EXACT-CUTOFF-FACTORS1566.md",
+      "sha256": "0783b59a4e94265e2b497a22d6a8e1817fca3a8be037fdf9c0865e938aa8e4b9",
+      "bytes": 5124
+    },
+    {
+      "file": "proofs/EXTERIOR-DOMAIN-PASSAGE1618.json",
+      "sha256": "a57a01cc13f36d83d6848eb8f10831473712abd68aaf90e1d45f1a4abaff5eb0",
+      "bytes": 6398
+    },
+    {
+      "file": "proofs/FLAT-GAP1533.md",
+      "sha256": "0c49e4d69f5daba3f2b20e5200098a8a0712718699fc7c4f3e45e897cca6d6d1",
+      "bytes": 7768
+    },
+    {
+      "file": "proofs/FREE-PRECISION-BINDING1617.json",
+      "sha256": "208743461f2e6b413daaa05b67eb585dc7877ab6436645f246a8dec8273e52e9",
+      "bytes": 8377
+    },
+    {
+      "file": "proofs/FULL-CUTOFF1534.md",
+      "sha256": "a0422960f27c16e4d08bcab046f589d1e1588a248fe3fc98fd9810b97ee5a4c8",
+      "bytes": 11723
+    },
+    {
+      "file": "proofs/GAUSSIAN-LOCAL1540.md",
+      "sha256": "397aa5cd0560450febb098347d4d06ad38988a5fbd16dea1bfb1d716932b5008",
+      "bytes": 7978
+    },
+    {
+      "file": "proofs/LOCALIZED-QUADRATIC-DICTIONARY1620.json",
+      "sha256": "77afcb2d62f17594433556cc177ad8928236aa0a1d28efeb20d940bb46fd2b5a",
+      "bytes": 6087
+    },
+    {
+      "file": "proofs/MIXED-CRITICAL-BRANCH1627.json",
+      "sha256": "5161b63d4440038e2471183d4e5edbc440682c93fa70293cdd96251d2bca4c73",
+      "bytes": 9833
+    },
+    {
+      "file": "proofs/ORIGINAL-DOMAIN-DICTIONARY1619.json",
+      "sha256": "a0b5de0d2a43082c8000ce01878604dfd96b6dd1e51e179562e5e8deca263b2e",
+      "bytes": 6080
+    },
+    {
+      "file": "proofs/OUTER-COVER-JOINT-LEDGER1626.json",
+      "sha256": "746587b970d56ba768021bf38a5a57aed9cff23378d9ef369f5ce9a70933b36f",
+      "bytes": 7123
+    },
+    {
+      "file": "proofs/P1-DEFECT-DICTIONARY1623.json",
+      "sha256": "13dcac559736686a04ee5c93037744da0e3197d53fe5fd499728507370ef7c98",
+      "bytes": 5800
+    },
+    {
+      "file": "proofs/P1-STEP-AVERAGING1624.json",
+      "sha256": "1b0e294583533f78c064f748c60b723027b717fe19c967a18c8aa91b5e6fcdc0",
+      "bytes": 6233
+    },
+    {
+      "file": "proofs/R1-OUTER-ENERGY1625.json",
+      "sha256": "760a2b54e2452af4ee9e03f81a6a5a7bb18a4a94bc102e67019549125899740e",
+      "bytes": 7056
+    },
+    {
+      "file": "proofs/SAME-LAW-NORM-WINDOW1629.json",
+      "sha256": "34ea87e64f2e5a5750f8051d9bb47a74a12b9d57714c3754e2ec5db634dcf031",
+      "bytes": 8398
+    },
+    {
+      "file": "proofs/SOURCE-ANCHORS1546.md",
+      "sha256": "5d2b242c5e830d3ab9b748c40b51318d183db499dad9c28e776cd0b14c9fb6f0",
+      "bytes": 8387
+    },
+    {
+      "file": "proofs/SOURCE-CONDITIONAL-DICTIONARY1621.json",
+      "sha256": "58bc59909387afacab35e99e7a2f652b4d55359065cae3626f7a7373d1ff2be3",
+      "bytes": 6681
+    },
+    {
+      "file": "proofs/SOURCE-INPUT-INVENTORY1616.json",
+      "sha256": "00ab183ba00c8df27e5bf559200e629503ba872cce71c24b422aa2db5c61942b",
+      "bytes": 8301
+    },
+    {
+      "file": "README.md",
+      "sha256": "3692d6e0af37a23eded1827b5af588128b5c3907af6f66fa14865a064ed3a505",
+      "bytes": 8857
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "scope": "Actual source boundary selected-variable incidence and retained good-cube FREE-bond cover. Parent geometric proof on the printed compatible k=1 partitions, not numerical parameter certification or full physical admission.",
+  "selected_interface_masks": {
+    "four_cases": "For a coarse bond c, its two endpoint averaging blocks have masks00,01,10,11. The actual b0(c) interface bond has one fine endpoint in each block. With the source at-least-one-endpoint convention it is variable exactly in01/10/11, exactly the cases when c touches Omega^(1). In00 it is fixed and c is not an active constraint.",
+    "flat_inverse": "1546 counts the actual selected coefficient L^(1-d) I for the physical average, or L^-d I for its normalized Q. Fixing other boundary inputs does not change that selected coefficient or introduce another selected interface into its path family. Thus all active boundary masks have the same nonzero flat selected block.",
+    "finite_prototypes": "The per-c nonlinear selected solve therefore has finitely many boundary prototypes on its fixed endpoint-block carrier. Turning a local free input into fixed exterior data removes a free column; it does not increase the raw carrier or free incidence. Wilson/soft and composed selected carriers likewise have finitely many local masks, fixed in L/group rather than total volume.",
+    "restriction": "This statement uses complete compatible blocks and the actual source selected interface, not arbitrary cut domains or a different right inverse H."
+  },
+  "actual_good_cube_cover": {
+    "source_sizes": "At the first step let original test cube side S=L^2*M2*R1, containing coarser resummation block side H=L*M*R1, and one test enlargement layer width w=L*M2*R1. The printed M,M2 are L-powers with M>M2, so M>=L*M2 and S<=H. Source partitions are declared compatible; no new M is chosen.",
+    "eligibility": "Take a fine bond b with an endpoint x in Omega1. The source Omega1 is made of H blocks and separated from preliminary excluded regions by at least2H. Its containing original S cube Pi is eligible for1.8; S<=H and4w<=4H/L<H for source L>11 keep the required local determining neighborhood inside the available source buffer. Preserve the exact source set conventions and compatible phase.",
+    "not_bad": "If Pi were one of the bad Q1 cubes, x would belong to Q1, hence to its covering union Q1prime of H blocks. But Omega1 is disjoint from the two-layer enlargement of Q1prime. This is impossible; the containing Pi has the original GOOD factor.",
+    "free_star": "The bond b belongs to Pi enlarged2 because at least one endpoint is in Pi and the enlargement includes its fine neighbor. If b is an ORIGINAL Omega1-free bond, it is not any selected b0(c) touching Omega1. A globally selected bond not touching Omega1 cannot have a fine endpoint in Omega1, by the same endpoint-block masks. Thus b is also in the test star (Pi enlarged2)*.",
+    "bound": "Every original free Omega1 bond is therefore controlled by some retained good factor ||U_b U_(1,Pi),b^-1-I||<2delta0. This is a support COVER, not an identity of that factor with a new centered product cutoff.",
+    "resummation": "For fixed Omega1,V,V0 the global critical background is the same for each original real nonnegative summand. A uniform support consequence of every such summand survives the real resummation giving zeta*chi0prime in1.11. No assertion is made for a later signed/complex Mayer resummation.",
+    "selected_map": "Source249 explicitly states the nonlinear linearizing transformation changes only the selected bonds and LEAVES chi0prime unchanged. Scaling by g0 then identifies the same original free variables. The cover is not lost by that selected solve."
+  },
+  "admission_table": [
+    {
+      "item": "Actual boundary selected bond/inverse chart",
+      "status": "Parent geometry proof above plus selected source1546 coefficient; no volume-dependent boundary inverse hypothesis needed"
+    },
+    {
+      "item": "Original good-cube free cover",
+      "status": "Parent proof on actual compatible source partitions above; support consequence retained, not a replaced cutoff"
+    },
+    {
+      "item": "Uniform real near-flat critical contraction",
+      "status": "Parent1627 construction using1626 gap, scalar inverse bound and these prototypes; constants symbolic/unreviewed"
+    },
+    {
+      "item": "Original source orbit/representative identification",
+      "status": "Still invoke genuine variational geometry/data and SAME uniqueness class; verify constructed and source-selected configurations both belong. The auxiliary proof regularity class is not the coupling cutoff"
+    },
+    {
+      "item": "Whole outer R1 Hessian/energy",
+      "status": "Available from1627 relative prototypes once the branch identifications and near-flat input bound hold; current cover supplies its previously unverified free support"
+    },
+    {
+      "item": "All-subsets interaction/tail constants",
+      "status": "Must bind the actual local continuation/taming1566 and exact inner cutoff version, with log-density linear terms and conditional means retained"
+    },
+    {
+      "item": "Joint P0/P1/R1 and boundary cost",
+      "status": "Apply fixed action fractions only on SAME admitted family; source large-field/marginal/history normalization and all-scale conclusions remain separate"
+    }
+  ],
+  "same_family_budget": "Retain theta0=theta1=thetaR=1/4 with1/4 reserved, CONDITIONAL on all three real original action charges on one configuration family. The support proof does not discharge their remaining variational/norm/energy premises, pay normalizer reciprocals or promote real estimates to complex/moving domains.",
+  "hypothesis_reduction": "Boundary selected invertibility and full original FREE-bond good-cover support are now derived from actual source geometry, rather than separately assumed in1627. Remaining source identification and exact cutoff/continuation obligations are explicitly separated from these kinematic facts.",
+  "falsifiers": [
+    "Printed partition phases or scale meanings differ from the assumed compatible first-step nesting",
+    "An active selected bond lies outside the source variable fine-bond set",
+    "An eligible test cube or required averaging stencil leaves the actual source buffer",
+    "A purported free bond is selected in its controlling test star",
+    "The original real resummation is replaced by a signed/complex sum when using support",
+    "A source uniqueness or cutoff-version obligation is promoted to a proven geometric fact"
+  ],
+  "evidence_levels": {
+    "literature": "Selected actual partition/free-variable identities and previously read support definitions, not full source proof audit",
+    "heuristic": "Parent boundary-mask/cover proof and admission table, outside1604",
+    "formal": "No new Lean declaration/build",
+    "speculative": "Complete original source identification, exact all-subsets/boundary/marked/history/global application"
+  },
+  "next": "Read the EXACT-CUTOFF-FACTORS1566 continuation/taming and declared first-law threshold record. Bind its actual original inner cutoff, D/m support, log-density linear terms, a_Q/B_Q/J and joint lambda window to the admitted near-flat mixed-domain family. Keep source uniqueness/regularity premises and any incompatible printed prefactor identity explicit; no new cutoff, independent tail labels, minor paper or score-seeking review."
+}

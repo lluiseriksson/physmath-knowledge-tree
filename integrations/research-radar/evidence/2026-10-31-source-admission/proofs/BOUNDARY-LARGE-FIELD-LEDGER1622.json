@@ -1,0 +1,56 @@
+{
+  "scope": "First-step boundary/large-field payment ledger for the original source law. Historical theorem/assumption scope and one original P0 defect mechanism separated. No new UV/global result, independent source-proof audit or new paper.",
+  "source_boundary_ledger": [
+    {
+      "anchor": "CMP119260-2612.40-2.42",
+      "item": "B_k is a sum over scales and connected localization domains meeting the relevant large-field set. The source assumes/propagates a local activity bound B0 exp(-kappa d_j(X)) on its multi-scale analytic class U_j(X,alpha0,alpha1). The class includes plaquette/current/local-gauge conditions, not a plaquette cutoff alone."
+    },
+    {
+      "anchor": "CMP119262Theorem1",
+      "item": "Existence of constants and propagation of ALL inductive assumptions require the coupling recursion and many earlier/new parameter restrictions. Reading this statement does not independently check all those restrictions or prove its induction."
+    },
+    {
+      "anchor": "CMP119263-2642.47-2.49",
+      "item": "The activity decay pays the domain sum, then the scale sum. The displayed total B bound is proportional to a sum of coarse counts |Gamma_n|; the source then retains the negative Wilson action, logarithmic terms and an O(1) count cost. These are not a volume-independent boundary constant or a universal surface-area bound."
+    },
+    {
+      "anchor": "CMP119264Corollary3",
+      "item": "UV stability bounds are stated under Theorem1, uniform in eta and total lattice T, but their constants depend on the effective coupling g_k. This is a historical literature result; it is not a new mass-gap/continuum result or a verified coupling-uniform normalizer."
+    }
+  ],
+  "completion_square_allocation": {
+    "original1621_identity": "1.26 retains +1/2 h^T C_I h and the shifted interaction/indicator expectation. The positive square cannot be charged to B^(1) without an estimate, nor dropped because Q has a gap.",
+    "available_exact_check": "When recombined with the ORIGINAL exterior Gaussian quadratic, -1/2 a_O^T Q_OO a_O+1/2 h^T Q_II^-1 h=-1/2 a_O^T(Q_OO-Q_OI Q_II^-1 Q_IO)a_O. This is the positive Schur-complement exterior precision for the same full positive Q.",
+    "limit": "This identity preserves the quadratic cost; it does not bound the nonlinear shifted activity, original indicators, Jacobians or normalizer reciprocals. It is not permission to replace a changed-background Q by the original one."
+  },
+  "defect_family_separation": {
+    "P0": "Original1.1 fine-plaquette bad cubes: at least one actual fine plaquette violates epsilon0=g0*A0*(log g0^-2)^p in each P0 cube.",
+    "P1": "Original1.4 localized-minimizer plaquette defects. A bad localized minimizer is not by definition a bad ORIGINAL fine plaquette; a quantitative variational/energy or event-comparison step is needed.",
+    "R1": "Original1.18 raw-fluctuation bad cubes. These require the actual conditional quadratic/interaction/mean analysis and source support; their suppression cannot be inferred merely by counting P0.",
+    "source_S1": "The retained boundary sets and final Lambda1 involve these families and prescribed geometric enlargements. Setting P1/R1 or their transported indicators aside would change the original decomposition."
+  },
+  "P0_payment_check": {
+    "real_action": "For real unitary fine links, the original normalized Wilson plaquette term controls c_W*||U(dp)-I||_*^2 with a positive fixed trace/norm conversion c_W. This uses the real compact group, not independent complex variables.",
+    "counting": "Assign one violating plaquette to each disjoint original P0 cube. Shared-boundary multiplicity is at most a fixed nu. Then g0^-2 S_W>=c_W*A0^2*q^(2p)*N_P0/nu, q=log g0^-2.",
+    "source_geometry": "Source R0 is the smallest L-power >=q^r, so for q>=1, R0<L*q^r. A fixed-layer neighborhood of the original LM2R0 cubes has at most C_geom*(M2 R0)^4*N_P0 lattice sites at fixed L,M2,d=4. This concerns that actual P0 neighborhood, not the whole final large-field region generated also by P1/R1.",
+    "conservative_budget": "A cost <=C_cost*(1+q) per such site is <=C_prime*q^(4r+1)*N_P0 for q>=1, including a deliberately conservative logarithmic measure allowance. No numerical C_cost is extracted from the source here.",
+    "comparison": "The declared source p>=5r,r>=2 gives 2p-(4r+1)>=6r-1>0. Thus for fixed matched constants sufficiently small original g0 lets the actual Wilson penalty dominate this P0-local count/log cost, leaving a positive defect penalty. No favorable change of the first threshold is made.",
+    "scope": "This verifies the exponent mechanism for the original fine-plaquette defect family, not all-defect entropy summability or full UV stability. epsilon0 is not identified with the separate raw delta0 cutoff; the historical raw prefactor issue remains."
+  },
+  "decision": "Keep the full source B^(1) estimate as a literature theorem under its genuine hypotheses, not a new independent achievement. The explicit P0 payment cannot stand in for P1/R1 energy estimates or the full boundary/marked/history transfer. No fresh review, score, paper or global claim is justified.",
+  "falsifiers": [
+    "A source cost has more than the declared polynomial/log budget or constants are not fixed uniformly over the claimed family",
+    "One P0 defect is counted many times beyond the bounded original cube/plaquette multiplicity",
+    "A localized-minimizer or raw-fluctuation defect is silently reclassified as a P0 Wilson defect",
+    "The completed-square term is retained without its original exterior action or interactions are discarded",
+    "The real Wilson positivity is used on independent complex configurations",
+    "Coupling-dependent UV stability constants are advertised as uniform in coupling"
+  ],
+  "evidence_levels": {
+    "literature": "Selected boundary assumptions and Theorem1/Corollary3 statements, historical not a new2026 paper; no full proof audit",
+    "heuristic": "Parent Schur-complement bookkeeping and P0 exponent budget under explicit norms/costs, outside1604",
+    "formal": "No new Lean declaration/build",
+    "speculative": "Complete actual P1/R1 boundary/large-field, normalization, marked/history and global passage"
+  },
+  "next": "Inspect an ORIGINAL P1 localized-minimizer bad-cube energy/event estimate, keeping it distinct from the already checked P0 Wilson defect and the R1 raw-fluctuation event. Identify the exact source lemma and constants/support before claiming the total B^(1) cost is paid; do not repeat UV-stability statements or turn this ledger into a paper."
+}

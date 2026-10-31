@@ -1,0 +1,51 @@
+{
+  "scope": "Participating-parent construction of the near-flat REAL k=1 critical branch for actual whole-block mixed domains, and its conditional original outer-cutoff cover. Fixed L/group, original source maps/gauges/cutoffs. No numerical constant certificate, independent review, new paper or formal theorem.",
+  "input_family": {
+    "domain": "Source-compatible Omega, a union of complete first-step blocks. Fixed outside datum V0 on the source exterior bonds and coarse averages V on every coarse bond touching Omega. Keep original crossing Wilson plaquettes and soft contour gauge. Actual source variational geometry/parameter hypotheses still accompany identification with its selected minimum.",
+    "small_data": "Let e collect real principal logs of V and V0 in ONE fixed matched original gauge, with sup scalar size r. Restrict to r<=r_star below, independent of volume. This is an explicit near-flat SUBFAMILY of source inputs, not every regular/large-field configuration or all scales.",
+    "norms": "All scalar/Lie/matrix norm and scale conversions are fixed in the finite prototype constants. The original coupling-dependent characteristic thresholds are not replaced by r."
+  },
+  "exact_constraint_chart": {
+    "selected_variables": "For each touching coarse bond c its selected interface bond b0(c) belongs to the variable source fine bond set. Other selected interfaces do not occur in its averaging constraint. At flat data its selected coefficient is the actual nonzero scalar Lie block from1546, with its L normalization retained.",
+    "finite_masks": "A local averaging/action carrier has finitely many sites at fixed L. Every possible inside/outside mask yields one of finitely many local prototype maps; exterior inputs are parameters. This gives a common smaller inverse chart and derivative bounds, rather than a volume-growing global implicit-function assertion.",
+    "map": "Solve the actual nonlinear averaging constraint locally for selected s_c=phi_c(a_local,e_local,V_c), leaving ORIGINAL free variables a unchanged and exterior links fixed to V0. Denote the resulting actual link field by T_Omega(a;e). The selected reconstruction is not a Gaussian covariance."
+  },
+  "uniform_critical_contraction": {
+    "action": "S_Omega(a;e) is the exact leading Wilson plus original soft-gauge action composed with T_Omega. The exterior-only constant can be displayed separately. Haar and nonlinear selected-Jacobian logarithms are not part of its classical critical cancellation.",
+    "flat": "F=gradient_a S, F(0;0)=0. Q_Omega=D_a F(0;0) has the1626 flat gap a_flat and fixed row/column bound/range from the actual prototypes. Scalar polynomial geometry and1540 Neumann construction give ||Q_Omega^-1||_(infinity->infinity)<=M uniformly in Omega/volume. This is for the actual Q_Omega, not an ambient inverse substitution.",
+    "local_bounds": "On a joint fixed scalar chart ||a||_infinity+||e||_infinity<=rho0, finite prototype derivatives give ||F(0;e)||_infinity<=C0*r and BOTH Hessian Schur sums of [D_a F(a;e)-Q_Omega] <=C1*(||a||_infinity+r), with C0,C1,M>=1 fixed and volume-independent.",
+    "threshold": "Set K=2*M*C0+1. It suffices to take r<=min(rho0/(2*K),1/(4*M*C1*K),a_flat/(4*C1*K)); further reduce for the relative-chart margin below. Constants are symbolic, not numerically extracted.",
+    "map": "On ||a||_infinity<=2*M*C0*r, iterate a -> -Q_Omega^-1 F(0;e)-Q_Omega^-1 [F(a;e)-F(0;e)-Q_Omega*a]. Its derivative norm is <=1/4 and its image is in the same ball. Contraction gives a unique critical branch a_star(e) in that ball, ||a_star||_infinity<=2*M*C0*r, uniformly in domain/volume.",
+    "real_minimum": "The exact Hessian there is >=a_flat/2, giving a strict local minimum. Empty free domains are trivial. This is a constructive infinite-family bound from fixed local constants; it is not a source-wide global-minimum theorem."
+  },
+  "identification_with_source": {
+    "soft_gauge": "Under internal site gauge variations fixing coarse roots and the exterior, Wilson action and the fixed averages are invariant. The source contour mean transforms covariantly. Near I, the real function1-Re tr on the group has I as its unique nearby critical point. Thus the near-flat soft-action critical branch has the original contour gauge equal to I and is a Wilson constrained critical configuration in the source gauge.",
+    "larger_proof_class": "To identify it with the source-selected critical orbit, use the SAME determining data and genuine source geometry. Fixed-step link/current/plaquette estimates from the prototype field give a variational regularity radius <=C_reg*r; the data mixed plaquette radius is <=C_V*r. Choose an AUXILIARY uniqueness class epsilon_proof with B3*C_V*r<=epsilon_proof<=a0, C_reg*r<=epsilon_proof, and actual data radius<=a1. The source minimum must also belong to this same class before uniqueness is invoked.",
+    "cutoff_distinction": "This auxiliary variational proof class is not the original epsilon0(g0), delta0(g0), raw cutoff or integration domain. Enlarging a proof class does not authorize changing any of those. Original source membership/regularity and exact determining geometry remain inputs, not numerical certificates.",
+    "claim_boundary": "When these actual source uniqueness premises hold, the constructed near-flat branch is the source-selected orbit/representative. Without them it is only a critical branch of the exact local constraint/action problem; do not label it physically admitted."
+  },
+  "relative_chart_and_outer_box": {
+    "relative_maps": "Recenter at this SAME branch using the actual source relative link coordinates and selected-only linearization. Absolute-free differences and relative free logarithms are related by a local BCH map; they are not identical or globally orthogonal. Include its first/second derivatives and all source frames in the prototype bounds.",
+    "outer_margin": "For the exact relative reduced classical action S_rel(f;e), f=g0*A, classical gradient at0 is zero. Some fixed C_rel from these prototypes gives both Schur sums ||Hess_f S_rel-Q_Omega||<=C_rel*(K*r+||f||_infinity). Reducing r_star to also satisfy r<=a_flat/(4*C_rel*K) and taking u<=min(rho_rel/2,a_flat/(4*C_rel)) with K*r<=rho_rel/2 gives a whole-box Hessian >=a_flat/2.",
+    "actual_cover_route": "Apply the same near-flat branch/uniqueness bounds to each ACTUAL local minimizer U_(1,Pi), whose step datum Q^s V has the same small-link size. Then U_global and each such U_local have uniform link distance <=C_map*K*r from I. The RETAINED preliminary good indicator bounds the actual U relative to the local minimizer by2delta0 on its tested free bonds. On a COMPLETE original good-cube cover of Omega free bonds, triangle and the principal-log chart give ||g0*A||_infinity<=C_log*(2delta0+C_cover*r). This is uniform even at boundary carriers; no bulk-only exponential estimate is being extended there.",
+    "resummation": "The support implication is proved term by term for original decompositions with the same Omega and data. It then survives their nonnegative resummation. It does NOT turn chi0prime(Omega) into a centered product cutoff or discard exterior zeta.",
+    "admission": "For sufficiently small r and then sufficiently small g0 in the EXACT original delta0 convention, the displayed actual cover bound is <=u. The whole raw segment lies in the enclosing analytic box, giving the1625 leading-action R1 quadratic charge. Actual complete cover and the two source branch identifications must be checked; no claim for arbitrary regular-gauge exterior data.",
+    "remaining_costs": "Haar/Jacobian gradients, real smooth switch, conditional means, completing-square term, indicators, source baselines/normalizers and same-family action fractions remain. No transfer of convexity through BCH is assumed without the displayed relative-prototype bound."
+  },
+  "hypothesis_reduction": "The nonlinear critical-branch bound need not be a new assumed Hessian margin on a growing-volume space: flat mixed-domain gap plus scalar inverse row sum and finitely many actual boundary prototypes produce a uniform contraction. Matching this branch to original source data/cover retains explicit theorem and support obligations.",
+  "falsifiers": [
+    "A touching constraint selected bond is actually fixed exterior or couples to another selected interface",
+    "Boundary masks introduce volume-growing derivative/column sums or inverse row sum",
+    "The source soft gauge does not permit the required independent internal site variations",
+    "The constructed point and original selected minimum are not in the same genuine uniqueness class",
+    "The original good-cube support fails to cover a free boundary bond after resummation",
+    "BCH/frame derivative terms are omitted, or the near-flat subfamily is promoted to all regular data"
+  ],
+  "evidence_levels": {
+    "literature": "Previously read source constraints/soft gauge/uniqueness statements, exact support anchors and normalization context; no fresh full source proof audit",
+    "heuristic": "Parent uniform contraction, gauge-critical identification route and relative outer-box application, outside1604 and unreviewed",
+    "formal": "No new Lean result/build",
+    "speculative": "All original source-family identification/cover instances, complete combined defect and marked/history/global conclusions"
+  },
+  "next": "Check the finite boundary prototype/selected-bond incidence and original good-cube free-bond cover as actual source geometry, then consolidate which near-flat mixed-domain branch/outer inputs are proved versus source uniqueness/regularity premises. Bind the resulting R1 charge to the single P0/P1/R1 budget and existing all-subsets constants without changing cutoffs; no separate minor paper or score-seeking review."
+}

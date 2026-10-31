@@ -1,0 +1,90 @@
+{
+  "scope": "One consolidated actual bare-first-step source-input inventory; participating-parent synthesis, not a new theorem/review/paper or completed physical admission",
+  "source_anchor": "CMP109, DOI10.1007/BF01215223, exact cached SHA2561c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a; selected definitions/identities only",
+  "law_lock": {
+    "bare_step": "k=0 only, original Eq0.17; later Eq0.19/2.12 includes the preceding effective action and is not covered by this bare factor list",
+    "soft_gauge_coefficient": "Eq0.17 gives the same g0^(-2) coefficient for the soft contour action and Wilson action. The alpha in Eq0.14 is not an independently adjustable gap parameter in this fixed first-step law.",
+    "cutoff": "Keep the exact original free-coordinate product cutoff and its already fixed threshold/norm. Eq2.9 gives its structure; this reading does not equate its two cutoff options with a selected CMP116 threshold or resolve the historical fixed-constant discrepancy.",
+    "normalization": "Keep N0 from the same integral at V=1 and the fixed1513 Gaussian/delta/baseline allocation. No reciprocal probability or independent-volume normalizer is supplied."
+  },
+  "coordinate_dictionary": {
+    "source_Q": "linearized coarse averaging constraint, not precision",
+    "source_C": "linear selected reconstruction from free to all bond variables, not the Gaussian covariance",
+    "source_A0": "classical quadratic form after the physical critical cancellation, including the source current/constraint correction",
+    "ours_Qfree": "R_rec^* A0 R_rec, with R_rec=source C; Gaussian covariance is Qfree^(-1), as source printed268 states",
+    "conditioning_warning": "If using a restricted domain D, first identify its actual fixed free-coordinate precision. An ambient principal block of A0 or a separately reconstructed local operator is not automatically that precision; keep induced exterior/conditional means."
+  },
+  "factor_families": [
+    {
+      "family": "Wilson plaquette action remainders",
+      "carrier": "Original four-link plaquette after the actual two-block selected reconstruction",
+      "allocation": "Subtract carrierwise classical Taylor constants/linear/quadratic pieces consistently; their full linear sum vanishes only at the actual constrained critical point. Sum of quadratics is the actual Gaussian precision, not an extra interaction."
+    },
+    {
+      "family": "Soft gauge contour remainders",
+      "carrier": "Original root-to-site contour/group mean within one block, with all source contours retained",
+      "allocation": "Use Eq0.17 coefficient g0^(-2), retain the exact group-mean convention and complete physical quadratic."
+    },
+    {
+      "family": "Haar logarithms on free and selected bonds",
+      "carrier": "One free bond, or the original endpoint-block union for a selected output",
+      "allocation": "Keep every nonconstant term, including any linear contribution. Allocate only the already declared constants to the baseline; do not discard logarithmic density terms as critical action terms."
+    },
+    {
+      "family": "Nonlinear selected-constraint Jacobian",
+      "carrier": "One finite selected Lie block per coarse bond under the exact1546 per-c locality convention",
+      "allocation": "Its log is separate from the constant linear delta-elimination determinant. Neither is counted twice or replaced by an uncontrolled global determinant."
+    },
+    {
+      "family": "Original cutoff tails",
+      "carrier": "The r_g scalar coordinates of one distinct FREE Lie-valued bond",
+      "allocation": "zeta_b=-1_(K_b complement), so product_b(1+zeta_b)=1_K exactly. Selected outputs are not extra independent cutoff labels; their chart/source restrictions remain explicit admission conditions."
+    }
+  ],
+  "combined_support_budget": {
+    "premise": "The exact original interaction carriers have scalar size <=D_int and scalar incidence <=m_int as conditionally counted in1564; source orientations/anchor convention must match that original list.",
+    "combined_D": "max(D_int,r_g)",
+    "combined_m": "m_int+1: each free scalar coordinate belongs to exactly one original cutoff-bond tail",
+    "overlap_Delta_upper": "D*(m-1), a conservative union bound for the original-label overlap graph; no bounded-size assumption on an overlap component",
+    "conditional1564_count": "If its stated fixed-L,d,r and positive-original-label convention is admitted: D_int=3^d*d*(L+2)^d*r and m_int=3^d*p with p=[d(d-1)/2+d+1]*L^d+d. This is not an independent source-constant certificate."
+  },
+  "mixed_norm_binding": {
+    "covariance_upper_role": "C_Gauss<=a_Q^(-1) I, where a_Q is a lower bound for the ACTUAL Qfree; it is not the B role in density derivatives",
+    "fourth_moment_epsilon": "epsilon=a_Q/(32*m), t0<=epsilon; using combined m is conservative",
+    "interaction_K4": "epsilon^(-1)*exp(2*epsilon*(c+2/a_Q)*D)",
+    "original_tail_q": "2^(r_g/2)*exp(-a_Q*kappa^2*rho^2/4), with the original norm-equivalence kappa and original rho",
+    "all_subsets_bound": "||product interaction f_i product distinct tail zeta_b||_2 <=(K4*t0)^n*q^(h/4), from the determinant moment and Cauchy-Schwarz; no independence of coordinates or tail events",
+    "lambda": "max(K4*t0,q^(1/4))",
+    "remaining_uniformity": "Actual common chart, t0 domination, a_Q and every fixed source/norm constant must be uniform on the stated physical family. The formula does not verify those premises."
+  },
+  "link_budget_binding": {
+    "density_B": "B_Q from the actual upper precision bound, since C_Gauss>=B_Q^(-1)I",
+    "scalar_J": "A separate actual absolute scalar covariance row sum;1540 offers a conditional weighted-Schur route with its extra finite-range/geometry/gap premises. Never infer J from spectral positivity alone.",
+    "R": "max(1,Delta+2*B_Q*D*m*J)",
+    "criterion": "For eta>0 and requested theta>=0, lambda*exp(eta+theta)<=min(1/(2*A*R),eta/((Delta+1)*(1+A*log2))), A=e*sqrt6, is only a sufficient declared-input window. Actual source satisfaction is still to be proved."
+  },
+  "hypothesis_reduction": "The bare source supplies the interaction families and absence of an older E term; the original free product cutoff then fixes its tail-label incidence with no extra unspecified tail multiplicity. This binds previously separate input roles without admitting the whole physical family.",
+  "retained_gates": [
+    "Exact original cutoff version and source norm constants",
+    "Actual critical/off-shell/current/frame dictionary and full pulled-back Qfree",
+    "Uniform a_Q,B_Q and weighted scalar J for the same source family",
+    "Uniform original local t0/all-subsets norm and common chart",
+    "Original maximal/variational hierarchy versus auxiliary localized domains",
+    "Correct baseline/normalizer and physical marked marginal/history transport",
+    "Complex/moving domains, spatial/global/continuum conclusions"
+  ],
+  "falsifiers": [
+    "A selected solve involving another coarse selected interface invalidates the per-c carrier/Jacobian budget",
+    "Any omitted effective/nonlocal density term or residual independent indicator requires enlarging the actual factor inventory, not deleting it",
+    "A reconstruction changing free coordinates would defeat the claimed original cutoff identity",
+    "Growth of actual D,m,a_Q^(-1),B_Q,J or remainder constants can destroy the joint window even when t0 or q separately tends to zero",
+    "Dropping logarithmic linear terms or adjusting soft alpha/cutoff constants would change the fixed law"
+  ],
+  "evidence_levels": {
+    "literature": "Selected original identities and definitions read in the exact primary copy; no full external proof audit",
+    "formal": "No new Lean result/build or promotion",
+    "heuristic": "Participating-parent physical dictionary and conditional carrier/norm application, not assessed by1604",
+    "speculative": "Completion of actual physical source/marginal/history/global admission"
+  },
+  "next": "Identify the same actual pulled-back bare precision Qfree and source-family margins, then bind its weighted Schur/scalar J with actual geometry. Do not substitute an ambient principal inverse, re-prove the abstract logarithm theorem, reopen a minor-paper route or inherit an assessment."
+}
