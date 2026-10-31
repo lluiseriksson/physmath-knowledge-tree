@@ -2001,6 +2001,39 @@
       ],
       "inspected_pdf_sha256": "ee39523a0f7b83af958513c7bd6f9c7731934b40355ef5d6b0f7a68ee6d022fc",
       "inspected_pdf_bytes": 2286864
+    },
+    {
+      "id": "abdesselam-rivasseau-forest-1994",
+      "title": "Trees, forests and jungles: a botanical garden for cluster expansions",
+      "url": "https://arxiv.org/abs/hep-th/9409094v1",
+      "kind": "preprint",
+      "published_on": "1994-09-16",
+      "observed_on": "2026-10-31",
+      "reading_status": "abstract_read",
+      "evidence": "literature",
+      "claim": "Historical tree-formula bibliography, abstract and version history read. First preprint16September1994 at13:33:09UTC; related DOI10.1007/3-540-59190-7_20.",
+      "limits": "Statement/proof not read. Old literature newly indexed, not a new2026 paper; no activity or lattice hypothesis imported.",
+      "reuse": "Metadata and own synthesis only; no foreign corpus copied or training permission inferred.",
+      "anchors": [
+        "domain.analysis"
+      ]
+    },
+    {
+      "id": "armstrong-bkar-formula-formalization-2026",
+      "title": "BKARForestFormula: formalization of the known forest interpolation formula",
+      "url": "https://github.com/scottnarmstrong/BKARForestFormula/tree/a07f44a534240fe6339558951dd78a19e4ef7c51",
+      "kind": "repository",
+      "published_on": null,
+      "observed_on": "2026-10-31",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "README and selected flagship declaration read at exact HEADa07f44a534240fe6339558951dd78a19e4ef7c51; manifest/toolchain inventoried. Known-formula formalization with a global smoothness hypothesis.",
+      "limits": "Repository verification/model claims attributed only. No proof/import audit, build or CI replay. Declared pins inventoried; not added as a formal dependency. Not a new theorem or discharge of physical activity estimates.",
+      "reuse": "Bibliographic metadata and own synthesis only; no source corpus copied or training permission inferred.",
+      "anchors": [
+        "domain.analysis",
+        "domain.foundation_logic"
+      ]
     }
   ],
   "candidates": [
@@ -2759,6 +2792,10 @@
     "followup1394": {
       "evidence": "integrations/research-radar/evidence/2026-10-30-hypothesis-audit/PUBLIC-MANIFEST1394.json",
       "scope": "Consolidates one actual unscored analytic report and own Werner reading/guard/preflight limits in2existingcandidates.100sources/18candidates unchanged. No coregraph, newpaper, grade, scientific certificate run or source-body redistribution.12directedindexes/9localformalpinmatches/4HEADmetadata."
+    },
+    "followup1568": {
+      "evidence": "integrations/research-radar/evidence/2026-10-31-real-forest/bibliography.json",
+      "scope": "Directed primary sweep; two deduplicated locators with exact reading boundaries. Parent real forest/cutoff synthesis unreviewed, outside1547. No formal dependency, candidate, score or canonical graph promotion."
     }
   }
 }
