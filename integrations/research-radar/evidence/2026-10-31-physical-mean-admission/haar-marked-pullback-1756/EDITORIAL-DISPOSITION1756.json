@@ -1,0 +1,19 @@
+{
+  "scope": "Adoption of the exact two nonblocking wording replacements W01/W02 in the closed editorial assessment; no new mathematical claim or assessment restart",
+  "assessment_sha256": "ddff7318271236b477a5e2f652ee150c4cf2bdfb673231df1af25094095c982e",
+  "assessed_B_sha256": "04cde71c9fe69a54c633e2d3caf2a78167fbc91cb4c18339d0e7c99e759c7a73",
+  "final_D_sha256": "e176966f79f8a82b812a7febc4933853474ffa5dfc416e780d2c7aca7b12be22",
+  "replacements": [
+    {
+      "before": "Only the real/unitary Wilson action is invariant.",
+      "after": "The real/unitary Wilson action is invariant; all other factors retain their actual pullbacks unless their own invariance has been established."
+    },
+    {
+      "before": "Any normalized identity uses the same full original denominator, already known nonzero.",
+      "after": "Any normalized identity must use the same full original denominator, including the off-chart contribution, and requires that denominator to have already been proved nonzero."
+    }
+  ],
+  "all_other_bytes_unchanged": true,
+  "report_unchanged": true,
+  "note": "Report1756 assesses snapshotB plus README LF addendumC. FinalD adopts its exact two wording suggestions; this receipt checks the complete delta, and does not label an unreviewed PDF or physical result as evaluated."
+}

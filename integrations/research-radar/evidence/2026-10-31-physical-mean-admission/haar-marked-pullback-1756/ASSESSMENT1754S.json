@@ -1,0 +1,289 @@
+{
+  "assessment_id": "1754S",
+  "created_utc": "2026-10-31T22:03:16.164641+00:00",
+  "scope": "Separate assessment of the complete frozen FIXED-BACKGROUND-RAW-FIBER1754S input. Fixed admitted real/unitary U0, its unchanged exterior V0, the unchanged chosen physical mean, and an interior supported gauge perturbation. No reassessment of reports 1754/1753 or P1.",
+  "input": {
+    "path": "C:/Trabajo/airr/2026-10-31_execution1754/FIXED-BACKGROUND-RAW-FIBER1754S.json",
+    "sha256": "a62d0e656cdc0e5d9f6fc5ad72418e0add542ea4143c941d01231ad883381325",
+    "read_in_full": true,
+    "modified": false
+  },
+  "review_provenance": {
+    "requested_model": "Astra",
+    "requested_reasoning_effort": "xhigh",
+    "actual_model_identity_authenticated": false,
+    "actual_reasoning_effort_authenticated": false,
+    "independence_authenticated": false,
+    "statement": "Astra/xhigh was requested. The reviewer cannot authenticate model identity, effort, or institutional/statistical independence. This is an AI source-and-algebra assessment, not peer review.",
+    "prior_reports_read_or_used": false,
+    "new_agents_spawned": false,
+    "not_a_peer_review": true,
+    "not_a_manuscript_or_pdf_revision": true,
+    "not_a_capacity_or_grade_assessment": true
+  },
+  "source_bindings": [
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balabanfusion.pdf",
+      "sha256": "00cc6b218dcf0e1c2884e135caa1d57b3591df036540b685e7440f30cbd4ff16",
+      "hash_verified": true,
+      "work": "T. Balaban, Averaging Operations for Lattice Gauge Theories, Communications in Mathematical Physics 98 (1985), 17-51.",
+      "primary_anchors": [
+        {
+          "printed_page": 27,
+          "pdf_index_zero_based": 304,
+          "equations": [
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            "60"
+          ],
+          "use": "Relative gauge action, background adjoint, relative path product, and the coarse-background adjoint."
+        },
+        {
+          "printed_page": 28,
+          "pdf_index_zero_based": 305,
+          "equations": [
+            "61",
+            "62",
+            "63"
+          ],
+          "use": "Exact relative averaging formula and normalized gauge-selection condition."
+        },
+        {
+          "printed_page": 30,
+          "pdf_index_zero_based": 307,
+          "equations": [
+            "78",
+            "79",
+            "80",
+            "81"
+          ],
+          "use": "Averaging of gauge transformations and its additional restriction."
+        },
+        {
+          "printed_page": 31,
+          "pdf_index_zero_based": 308,
+          "equations": [
+            "87",
+            "88",
+            "89",
+            "90",
+            "91"
+          ],
+          "use": "Definition of the new relative averaging operation and its multistep context."
+        }
+      ],
+      "additional_anchors": [
+        {
+          "printed_page": 17,
+          "pdf_index_zero_based": 294,
+          "equations": [
+            "1",
+            "2",
+            "3"
+          ],
+          "use": "Anchored block geometry."
+        },
+        {
+          "printed_page": 18,
+          "pdf_index_zero_based": 295,
+          "equations": [
+            "7",
+            "8",
+            "9"
+          ],
+          "use": "Orientation, gauge transformations, and ordered path products."
+        },
+        {
+          "printed_page": 19,
+          "pdf_index_zero_based": 296,
+          "equations": [
+            "11",
+            "15"
+          ],
+          "use": "Point-gauge equivariance of the original native mean."
+        }
+      ],
+      "visual_inspection_in_memory_pdf_indices": [
+        294,
+        296,
+        304,
+        305,
+        307,
+        308
+      ]
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-rg-I-cmp109-1104116842.pdf",
+      "sha256": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+      "hash_verified": true,
+      "work": "T. Balaban, Renormalization Group Approach to Lattice Gauge Field Theories I, Communications in Mathematical Physics 109 (1987), 249-301.",
+      "primary_anchors": [
+        {
+          "printed_page": 253,
+          "pdf_index_zero_based": 4,
+          "equations": [
+            "0.4",
+            "0.6",
+            "0.11"
+          ],
+          "use": "Physical contour mean and two-sided equivariance of the group-valued average."
+        },
+        {
+          "printed_page": 254,
+          "pdf_index_zero_based": 5,
+          "equations": [
+            "0.12",
+            "0.13",
+            "0.14",
+            "0.15"
+          ],
+          "use": "Alternative physical mean and the distinction between coarse constraints and gauge weights/restrictions."
+        }
+      ],
+      "additional_anchors": [
+        {
+          "printed_page": 252,
+          "pdf_index_zero_based": 3,
+          "equations": [
+            "0.3"
+          ],
+          "use": "Centered physical block and path-family geometry."
+        }
+      ],
+      "visual_inspection_in_memory_pdf_indices": [
+        3,
+        4,
+        5
+      ]
+    }
+  ],
+  "verification_method": {
+    "input_and_source_bytes_hashed": true,
+    "equations_checked_from_rendered_pages": true,
+    "text_extraction_used_as_navigation_only_for_equations": true,
+    "pdf_or_png_corpus_copies_saved": false,
+    "proof_method": "Exact noncommutative path identities and differentiation on the admitted small logarithm branch; no replacement by a scalar or invented linear mean. No numerical model substitution."
+  },
+  "verdict": {
+    "status": "VALID_CONDITIONAL_BARE_FIBER_COUNTERTEST_WITH_A_GAUGE_SECTION_SCOPE_QUALIFICATION",
+    "conclusion": "Under the frozen input common-chart, common embedded coarse-grid, support, and admission premises, the exact row value is (R(U0) W_a)(c)=exp(i a T/L^d), whereas the fixed physical coarse mean is constant along U_a. Thus the basepoint bare fixed-exterior level fibers differ, and their coarse-only differential kernels differ. This conclusion does not require U0=I, V0=I, a different physical mean, or a different group.",
+    "qualification": "The computation of the averaged gauge value of h is also correct. Equation (78), with (61)/(81), is a condition on transformations used in gauge selection; by itself it does not define a complete final field section or weighted constrained operator. The supplied h (and its inverse) fails that transformation condition. The input therefore supplies no counterexample inside a fully reconstructed final gauge/measure construction.",
+    "fatal_algebraic_objection_found_within_explicit_premises": false,
+    "physical_admission_proved": false,
+    "final_operator_inequivalence_proved": false,
+    "normalized_measure_identity_proved": false
+  },
+  "premises_preserved": [
+    "U0 is the same fixed real/unitary background throughout; V0=U0 on the originally prescribed exterior coordinates is not reset.",
+    "M_fix denotes whichever CMP109 mean, (0.4) or (0.12), was already chosen. The proof uses a property of that unchanged map, not permission to select another mean.",
+    "The required common chart and common embedded coarse representative grid are assumptions of this input. They are not derived from an identification of anchored CMP98 blocks with centered CMP109 blocks.",
+    "The chosen active row and its source paths exist in the actual full field domain, the patch has no wrapping, and z_star and its incident fine links lie inside the complete physical block contained in X.",
+    "The original fixed group admits the stipulated nonzero Hermitian generator T in the source convention exp(i a T). P lies in the same original group, so conjugation preserves its Lie algebra.",
+    "The old native means and relative means are defined at the admitted background and along the sufficiently small curve in their genuine domains. Small a preserves a strict local chart margin; it does not prove a missing background admission.",
+    "Calling the level set the independently prescribed original coarse fiber presupposes that its prescribed coarse datum is C0=M_fix(U0), as required by admission of U0 to that fiber."
+  ],
+  "exact_relative_formula": {
+    "notation": [
+      "N=L^d. O(U) denotes the original point-equivariant native CMP98 mean, not the new relative operation R(U0). Set C_old(c)=O(U0)(c).",
+      "For a native block representative r and z in B_old(r), P_rz=U0(Gamma_rz), and A_rz(W)=product over ordered b in Gamma_rz of Ad_{U0(Gamma_{r,b_-})}(W_b).",
+      "Define S_r(W)=exp(i sum_{z in B_old(r)} N^(-1) (1/i) Log A_rz(W)). Equivalently S_r=exp(sum N^(-1) Log A_rz), with the same small source branch."
+    ],
+    "equation_63_89": "(R(U0)W)(c)=S_{c_-}(W)^(-1) [O(W U0)(c) C_old(c)^(-1)] Ad_{C_old(c)}(S_{c_+}(W)).",
+    "coarse_adjoint": "The last adjoint is by the original averaged coarse background C_old(c)=O(U0)(c), as defined in (59). It is not silently replaced by I or by an unaveraged straight transport U0(c). In this example its argument is I, so its value is I.",
+    "orientation_caution": "W is the source background-relative link variable W_b=U_a(b) U0(b)^(-1). On reversed links it obeys W_{-b}=Ad_{U0(b)^(-1)}(W_b^(-1)); it should not be treated as an independent ordinary gauge field with untwisted inversion."
+  },
+  "derivation_checks": [
+    {
+      "claim": "Correct transport of the supported gauge element.",
+      "calculation": "P=P_y,z_star. h(z_star)=P^(-1) exp(i a T) P implies Ad_P(h(z_star))=exp(i a T), and Ad_P(h(z_star)^(-1))=exp(-i a T). No commutation of P with T is assumed.",
+      "result": "PASS"
+    },
+    {
+      "claim": "Exact telescoping for a general fixed U0.",
+      "calculation": "For any source path Gamma_rz, A_rz(W_a)=U_a(Gamma_rz) U0(Gamma_rz)^(-1)=h(r) Ad_{P_rz}(h(z)^(-1)). This follows by expanding each W_b and cancelling adjacent background transports. Interior visits to z_star along a path cancel; only the endpoints survive.",
+      "result": "PASS"
+    },
+    {
+      "claim": "Local source averages and central factor.",
+      "calculation": "h is I at every common coarse representative. Therefore O(U_a)=O(U0) and the central factor in (63)/(89) is I on all available coarse rows. At r=y, A_y,z_star=exp(-i a T), all other A_yz=I, and S_y(W_a)=exp(-i a T/N). At r=y+L e1, every endpoint is outside the supported site because the native anchored blocks are disjoint, so S_r(W_a)=I. All other native blocks likewise have S_r=I.",
+      "result": "PASS"
+    },
+    {
+      "claim": "Exact nonzero row, with no missing adjoint.",
+      "calculation": "For c=(y,y+L e1), (R(U0)W_a)(c)=exp(i a T/N) I Ad_{C_old(c)}(I)=exp(i a T/N). At a=0 it is I. Taking a>0 sufficiently small with nonzero T ensures this is not I; for example 0<a||T||<pi puts the relevant one-site logarithms on the local principal branch. For L=13 and d=4, N=28561 and the coefficient is exactly 1/28561.",
+      "result": "PASS"
+    },
+    {
+      "claim": "The unchanged physical map remains constant.",
+      "calculation": "For (0.4), each loop based at c_- conjugates by h(c_-), while the final open transport transforms by h(c_-) on the left and h(c_+)^(-1) on the right. The small logarithm commutes with conjugation. For (0.12), first use (0.6) to transform each averaged contour by its two endpoints, then use the same loop calculation. Hence either already chosen M_fix satisfies M_fix(U_a)(c)=h(c_-) M_fix(U0)(c) h(c_+)^(-1)=M_fix(U0)(c) on every common coarse row.",
+      "result": "PASS"
+    }
+  ],
+  "support_and_bare_fibers": {
+    "fine_support": "U_a(b)=U0(b) whenever neither endpoint of b is z_star. The changed fine links are the star of z_star. In fine-lattice units, z_star=y+(1,1,0,...) and its nearest neighbors remain strictly within the complete centered physical L-block for odd L>11. Thus this star is inside X under the stated embedding; in particular every link with both endpoints outside X is unchanged. Any differently specified E_fix would have to be checked against this star, rather than inferred from the name exterior.",
+    "fixed_exterior": "W_a|E_fix=I and U_a|E_fix=V0 on the stipulated exterior. The same conclusion holds for the derivative. No prescribed value is assigned a new number.",
+    "comparison_in_matching_target_coordinates": "For comparison only, write F_phys(W)=M_fix(W U0) M_fix(U0)^(-1). This is right translation of the fixed target coordinates, not replacement of M_fix. F_old(W)=R(U0)W. Both equal I at W=I.",
+    "fibers": "F_phys^(-1)(I) intersect {W|E_fix=I} contains W_a and I. F_old^(-1)(I) intersect {W|E_fix=I} contains I and excludes W_a for sufficiently small nonzero a. This proves distinct basepoint bare fibers and failure of the inclusion of the first in the second. No reverse inclusion or quotient statement is established.",
+    "coarse_support": "Put G_y=exp(i a T/N), G_r=I at all other native representatives. On every row on which the formula is defined, F_old(W_a)(c)=G_{c_-} Ad_{C_old(c)}(G_{c_+}^(-1)). Thus the coarse response is supported on rows incident to the block representative y. The designated outgoing active row already suffices.",
+    "action_and_indicators": "Plaquette matrices transform by conjugation. Gauge-invariant curvature quantities and the Wilson action are unchanged, as are bounds expressed in unitary-conjugation invariant norms. Gauge-dependent indicators, axial restrictions, marks, sources, and full weights need not be unchanged."
+  },
+  "tangent_check": {
+    "generator": "lambda(z_star)=P^(-1) T P, lambda(z)=0 otherwise, and h_a(z)=exp(i a lambda(z)).",
+    "fine_velocity": "dU_a(b)/da at 0 = i lambda(b_-) U0(b) - i U0(b) lambda(b_+). In the left-relative W coordinate, Xi_b=dW_a(b)/da at 0=i[lambda(b_-)-Ad_{U0(b)}lambda(b_+)].",
+    "exterior_velocity": "Xi_b=0 on E_fix; its support lies in the same interior fine star.",
+    "physical_derivative": "D F_phys(I)[Xi]=0 on all coarse rows, because the entire curve is constant under F_phys.",
+    "native_derivative": "D F_old(I)[Xi](c)=i T/L^d, which is nonzero on the selected row.",
+    "conclusion": "The kernels of these coarse differentials, even after imposing the exterior linear restriction, are different. The curve gives an actual allowed tangent to the bare physical level fiber. This does not identify tangent spaces of final gauge slices, H/Hsharp, gauge projections, Hessian inverses, or physical response kernels. Calling a differential kernel the entire tangent space of a level-set manifold would additionally require regularity; that stronger assertion is unnecessary here."
+  },
+  "averaged_gauge_restriction": {
+    "source_formula_78": "A_{U0}(h)(r)=h(r) exp(i sum_{z in B_old(r)} N^(-1) (1/i) Log[h(r)^(-1) Ad_{P_rz}(h(z))]).",
+    "evaluation": "A_{U0}(h_a)(y)=exp(i a T/N), and A_{U0}(h_a)(r)=I at every other native coarse representative. The inverse transformation has average exp(-i a T/N) at y. Thus neither h_a nor h_a^(-1) satisfies the one-step condition A_{U0}(h)=I from (61)/(81) for small nonzero a.",
+    "linear_restriction": "The differential of this gauge average at I is Q0_prime lambda(r)=sum_{z in B_old(r)} N^(-1) Ad_{P_rz}lambda(z). At y this equals T/N, not zero. The same raw gauge direction fails the linear averaged-gauge condition.",
+    "interpretation": "The equation restricts gauge transformations used in the source change of gauge. It is not by itself a complete definition of a final field section. The valid conclusion is that this h cannot be used as an allowed averaged-zero transformation and that the countertest does not establish a final gauge-restricted fiber or operator mismatch. An unconditional claim that (78) alone excludes a particular field from every conceivable final section would be too strong.",
+    "exact_local_source_selection_check": {
+      "definition": "Ignoring extra boundary restrictions for this local check, set v_a(z)=Ad_{P_rz^(-1)}(G_r) h_a(z)^(-1) for z in B_old(r), where G_y=exp(i a T/N) and G_r=I otherwise.",
+      "verification": "Then v_a(r)=G_r and Ad_{P_rz}v_a(z)=G_r A_rz(W_a). This solves (60); (62) gives exactly v_a(r)=S_r(W_a)^(-1)=G_r. Substitution in (78) yields A_{U0}(v_a)(r)=I. The transformed relative field satisfies the local native axial path conditions (58).",
+      "coarse_effect": "This source-selected v_a is not pointwise I on the coarse grid: v_a(y)=G_y. Consequently M_fix(U_a^{v_a})(c)=G_{c_-} M_fix(U0)(c) G_{c_+}^(-1). Gauge selection changes the coarse frame and cannot be inserted while holding the same numerical coarse datum without additional bookkeeping.",
+      "boundary_effect": "Although the original h_a is supported inside X, v_a generally occupies the entire native block B_old(y), which need not be contained in X. Its action on prescribed exterior coordinates therefore must be checked or recorded as a transported boundary datum. This is a local source calculation, not a claim that v_a is an admissible global boundary-preserving selector for the physical problem."
+    }
+  },
+  "objections_and_disposition": [
+    {
+      "objection": "The old and physical block conventions are different, and admissibility of the required common patch has not been established for an actual fixed sector.",
+      "disposition": "This remains an explicit prior gate, not a flaw in the conditional algebra. The test does not establish the gate or authorize changing the actual field domain to obtain it."
+    },
+    {
+      "objection": "At a nontrivial background one might have lost a conjugation or confused the physical mean with the old relative mean.",
+      "disposition": "Resolved within the derivation: P^(-1) exp(i a T) P is the correct orientation; (63)/(89) has the central old-mean ratio and Ad_{O(U0)(c)} explicitly; that last adjoint acts on I. The fixed physical mean is handled separately only through its own endpoint equivariance."
+    },
+    {
+      "objection": "Support at one fine site does not by itself prove preservation of every possible prescribed coordinate or gauge condition.",
+      "disposition": "The argument proves support on the incident-link star and preservation of the stipulated exterior; the complete interior block makes the star interior. It does not prove preservation of unrelated hard gauges, indicators, or marks."
+    },
+    {
+      "objection": "The phrase final averaged gauge section could overstate what (78) proves.",
+      "disposition": "Read it as the input explicit limitation on the countertest, not as a definition of a field section. The transformation h violates the genuine average condition; a full section and constrained operator still require their own construction. This terminological qualification does not affect the raw-fiber verdict."
+    },
+    {
+      "objection": "Different raw coarse kernels might be promoted to different final constrained operators.",
+      "disposition": "That inference is unsupported and is explicitly excluded by the input. Composition with the actual gauge selection, boundary-data transport, and measure/source transformations must precede any final operator comparison."
+    }
+  ],
+  "requirements_for_a_final_comparison": [
+    "Specify the actual physical domain, prescribed coarse datum, exterior coordinates E_fix, native charts, and common geometric embedding, without replacing the frozen problem.",
+    "Specify the genuine physical-to-native selector and its inverse or disintegration on the relevant fiber, including axial/averaged restrictions, stabilizers if relevant, and existence/uniqueness domains. The local v_a calculation above is not a substitute for this global construction.",
+    "Track how that selector transforms the numerical coarse data and the fixed exterior/boundary datum B. A coarse or exterior gauge rotation cannot be dropped merely because the original h was supported inside X.",
+    "Transform the Haar/constraint measures, any Jacobian or gauge-fixing factor, cutoff and indicator functions, and all fixed source/mark insertions. Prove the claimed normalization rather than inferring it from unchanged action.",
+    "Only after these transformations compare the final constraints and linearized spaces; differentiate the full reconstruction, including the selector and boundary restrictions. Raw coarse-only kernels provide no direct identification of final response operators."
+  ],
+  "limits": [
+    "No claim that all physical backgrounds obey CMP98 hypotheses or that this particular admitted common-chart configuration has been realized in the physical first-RG problem.",
+    "No reopening or correction of P1, no amendment of the frozen input, and no use of the separate exterior-supported/background-identity example or prior assessments.",
+    "No positive first-RG sector, positive normalized measure identity, physical profile, gauge-weight equality, or final constrained operator inequivalence has been established.",
+    "No change of fixed group, coupling, cutoff, chosen physical mean, original exterior field, marks, or global domain.",
+    "Only ASSESSMENT1754S.json is authored. No publication, payment, manuscript/PDF editing, Capacity activity, or saved PDF/PNG corpus is part of this review."
+  ]
+}

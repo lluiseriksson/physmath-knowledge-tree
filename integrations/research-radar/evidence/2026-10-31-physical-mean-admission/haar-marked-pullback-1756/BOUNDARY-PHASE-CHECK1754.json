@@ -1,0 +1,37 @@
+{
+  "scope": "Exact rational phase of the boundary correction in native source1.31, not numerical gauge fixing or proof of a physical RG sector",
+  "L": 13,
+  "d": 4,
+  "native_block_volume": 28561,
+  "old_anchor": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "interior_old_site": [
+    1,
+    1,
+    0,
+    0
+  ],
+  "inside_anchor": [
+    13,
+    0,
+    0,
+    0
+  ],
+  "coarse_phase_at_endpoints": [
+    0,
+    0
+  ],
+  "old_path_phase_at_special_site": -1,
+  "other_old_path_phases": 0,
+  "old_path_average_phase_numerator": -1,
+  "old_path_average_phase_denominator": 28561,
+  "corrected_group_target_phase_numerator": 1,
+  "corrected_group_target_phase_denominator": 28561,
+  "naive_group_target_phase": 0,
+  "nonzero_correction_for_small_nonzero_a": true,
+  "fixed_data_no_group_or_coupling_substitution": true
+}

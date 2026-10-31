@@ -1,0 +1,3 @@
+# Boundary and marked Haar-pullback evidence
+
+Exact unchanged own inputs, finite checks and three complete unscored reports are listed in [manifest.json](manifest.json). The consolidated note states the report limitations, including the Lie-group log chart, domain of the physical mean and omitted phase-check endpoint. No closed assessment was restarted. Requested Astra/xhigh; effective identity, effort and external independence unauthenticated. These are AI assessments, not peer review, a manuscript/PDF grade or a physical admission. Source paths and hashes are provenance metadata, not redistributed source content.

@@ -1,0 +1,692 @@
+{
+  "schema_version": "1.0",
+  "execution": 1756,
+  "artifact": "ASSESSMENT1756",
+  "assessment_type": "Una evaluación nueva de integración editorial de evidencia y entrega fiel; sin reevaluación matemática ni nota",
+  "language": "es",
+  "scope": {
+    "assessed_section": "Native boundary data, unequal raw fibers and the marked Haar pullback (1754–1755)",
+    "snapshot_lines": {
+      "start": 95,
+      "end": 124
+    },
+    "criterion": "Publicable como síntesis condicional acompañada de tres informes completos; no como paper, evaluación de manuscrito ni admisión física.",
+    "excluded": [
+      "Reabrir o repetir las evaluaciones matemáticas 1754, 1754S y 1755",
+      "Evaluar o heredar validación a apartados anteriores de la nota",
+      "Evaluar manuscrito privado/PDF, buscar nota o certificar un resultado físico",
+      "Modificar input, nota, reportes, manuscrito, estado u otros chats"
+    ],
+    "mathematical_rederivation_performed": false
+  },
+  "review_provenance": {
+    "requested_model": "Astra",
+    "requested_reasoning_effort": "xhigh",
+    "effective_model_identity_authenticated": false,
+    "effective_reasoning_effort_authenticated": false,
+    "external_independence_authenticated": false,
+    "statement": "Configuración solicitada según el encargo. Este artefacto no autentica el modelo que lo ejecutó, esfuerzo efectivo ni independencia externa.",
+    "previous_reports_read_as_closed_evidence": true,
+    "previous_reviews_reopened": false,
+    "new_agents_spawned": false,
+    "score_assigned": false,
+    "peer_review": false,
+    "only_output_file_written": "C:/Trabajo/airr/2026-10-31_execution1756/ASSESSMENT1756.json",
+    "source_pdfs_opened_or_copied": false,
+    "method": "Lectura íntegra de los tres inputs, dos checks y tres informes completos entregados; comparación editorial línea a línea del apartado nuevo; SHA256/tamaños, resolución de enlaces relativos, cotejo de recibos y metadatos de las cinco obras en páginas editoriales Springer. No se ejecutaron de nuevo las pruebas matemáticas de los informes."
+  },
+  "verdict": {
+    "code": "PUBLICABLE_AS_CONDITIONAL_SYNTHESIS_WITH_COMPLETE_REPORTS_NONBLOCKING_WORDING_ADVICE",
+    "publicable_under_requested_editorial_criterion": true,
+    "substantive_editorial_blockers_found": false,
+    "summary": "La sección nueva transfiere fielmente los resultados condicionales y límites de los tres informes cerrados y conserva la entrega íntegra de sus inputs, checks e informes. Las objeciones que cambian el alcance están visibles, particularmente Lie(G), dominio de M_fix, extremo omitido, identidad débil conjunta, targets móviles, complemento y normalización condicionada. Hay dos mejoras menores de redacción; no requieren una nueva revisión matemática ni constituyen un motivo para reiniciar las revisiones cerradas.",
+    "literal_qualifications": "El denominador no nulo debe leerse como premisa externa de cualquier identidad normalizada, no como resultado establecido aquí; la invariancia de Wilson no afirma que ningún otro observable pueda ser invariante.",
+    "permission_to_publish_or_merge_issued": false,
+    "physical_admission": false,
+    "full_manuscript_or_pdf_review": false,
+    "new_paper_or_candidate": false
+  },
+  "hash_bindings": [
+    {
+      "role": "frozen_editorial_task_manifest",
+      "path": "C:/Trabajo/airr/2026-10-31_execution1756/PUBLIC-INTEGRATION1756B.json",
+      "expected_sha256": "3587cf384889409bbb209dbb6158c056524c21e84379b85b51c17791897c2561",
+      "observed_sha256": "3587cf384889409bbb209dbb6158c056524c21e84379b85b51c17791897c2561",
+      "verified": true
+    },
+    {
+      "role": "frozen_public_note_snapshot",
+      "path": "C:/Trabajo/airr/2026-10-31_execution1756/PUBLIC-NOTE-PROPOSED1756B.txt",
+      "expected_sha256": "04cde71c9fe69a54c633e2d3caf2a78167fbc91cb4c18339d0e7c99e759c7a73",
+      "observed_sha256": "04cde71c9fe69a54c633e2d3caf2a78167fbc91cb4c18339d0e7c99e759c7a73",
+      "verified": true
+    },
+    {
+      "role": "current_note_same_bytes_at_read_time",
+      "path": "C:/Trabajo/physmath-knowledge-tree/physical-mean-admission1728/integrations/research-radar/notes/2026-10-31-physical-mean-admission.md",
+      "sha256": "04cde71c9fe69a54c633e2d3caf2a78167fbc91cb4c18339d0e7c99e759c7a73",
+      "verified": true
+    },
+    {
+      "role": "public_evidence_manifest",
+      "path": "C:/Trabajo/physmath-knowledge-tree/physical-mean-admission1728/integrations/research-radar/evidence/2026-10-31-physical-mean-admission/haar-marked-pullback-1756/manifest.json",
+      "expected_sha256": "2f451837e9601637239812c5403d10c559f97dd52e4f5f9e96194770cfd30dfe",
+      "observed_sha256": "2f451837e9601637239812c5403d10c559f97dd52e4f5f9e96194770cfd30dfe",
+      "verified": true
+    },
+    {
+      "role": "evidence_readme_original_at_initial_read",
+      "path": "C:/Trabajo/physmath-knowledge-tree/physical-mean-admission1728/integrations/research-radar/evidence/2026-10-31-physical-mean-admission/haar-marked-pullback-1756/README.md",
+      "expected_sha256": "edfc768e274883168651781d39ed4560fd81030178925c926f456fcfdc45abea",
+      "observed_sha256": "edfc768e274883168651781d39ed4560fd81030178925c926f456fcfdc45abea",
+      "verified": true
+    },
+    {
+      "role": "frozen_input",
+      "path": "C:/Trabajo/physmath-knowledge-tree/physical-mean-admission1728/integrations/research-radar/evidence/2026-10-31-physical-mean-admission/haar-marked-pullback-1756/NATIVE-BOUNDARY-TARGET1754.json",
+      "expected_sha256": "50812322eeaa5d981ee6757e3a20cab54c440df569c61f058363736308c54f03",
+      "observed_sha256": "50812322eeaa5d981ee6757e3a20cab54c440df569c61f058363736308c54f03",
+      "expected_bytes": 7040,
+      "observed_bytes": 7040,
+      "verified": true,
+      "read_in_full": true
+    },
+    {
+      "role": "finite_check",
+      "path": "C:/Trabajo/physmath-knowledge-tree/physical-mean-admission1728/integrations/research-radar/evidence/2026-10-31-physical-mean-admission/haar-marked-pullback-1756/BOUNDARY-PHASE-CHECK1754.json",
+      "expected_sha256": "953b6ef5f02e3d1942670cf092f5c2fd643702d7da7a23686aba01f38c2e6757",
+      "observed_sha256": "953b6ef5f02e3d1942670cf092f5c2fd643702d7da7a23686aba01f38c2e6757",
+      "expected_bytes": 810,
+      "observed_bytes": 810,
+      "verified": true,
+      "read_in_full": true
+    },
+    {
+      "role": "complete_closed_report",
+      "path": "C:/Trabajo/physmath-knowledge-tree/physical-mean-admission1728/integrations/research-radar/evidence/2026-10-31-physical-mean-admission/haar-marked-pullback-1756/ASSESSMENT1754.json",
+      "expected_sha256": "3ee9f49aa117b490f717b577627700d7f4a2982942e94a4f5c8dc679ee53ccfd",
+      "observed_sha256": "3ee9f49aa117b490f717b577627700d7f4a2982942e94a4f5c8dc679ee53ccfd",
+      "expected_bytes": 21417,
+      "observed_bytes": 21417,
+      "verified": true,
+      "read_in_full": true
+    },
+    {
+      "role": "frozen_input",
+      "path": "C:/Trabajo/physmath-knowledge-tree/physical-mean-admission1728/integrations/research-radar/evidence/2026-10-31-physical-mean-admission/haar-marked-pullback-1756/FIXED-BACKGROUND-RAW-FIBER1754S.json",
+      "expected_sha256": "a62d0e656cdc0e5d9f6fc5ad72418e0add542ea4143c941d01231ad883381325",
+      "observed_sha256": "a62d0e656cdc0e5d9f6fc5ad72418e0add542ea4143c941d01231ad883381325",
+      "expected_bytes": 5489,
+      "observed_bytes": 5489,
+      "verified": true,
+      "read_in_full": true
+    },
+    {
+      "role": "complete_closed_report",
+      "path": "C:/Trabajo/physmath-knowledge-tree/physical-mean-admission1728/integrations/research-radar/evidence/2026-10-31-physical-mean-admission/haar-marked-pullback-1756/ASSESSMENT1754S.json",
+      "expected_sha256": "c8b87c12e011514d731cc5a09d7c466cabcf2c62be38fddc19704a227318cf36",
+      "observed_sha256": "c8b87c12e011514d731cc5a09d7c466cabcf2c62be38fddc19704a227318cf36",
+      "expected_bytes": 21253,
+      "observed_bytes": 21253,
+      "verified": true,
+      "read_in_full": true
+    },
+    {
+      "role": "frozen_input",
+      "path": "C:/Trabajo/physmath-knowledge-tree/physical-mean-admission1728/integrations/research-radar/evidence/2026-10-31-physical-mean-admission/haar-marked-pullback-1756/HAAR-MARKED-PULLBACK1755.json",
+      "expected_sha256": "635c3e7d856b14ce8e1c158a49097ba0ee4cfb1184a328be68846e3bd2f5a58f",
+      "observed_sha256": "635c3e7d856b14ce8e1c158a49097ba0ee4cfb1184a328be68846e3bd2f5a58f",
+      "expected_bytes": 11655,
+      "observed_bytes": 11655,
+      "verified": true,
+      "read_in_full": true
+    },
+    {
+      "role": "finite_check",
+      "path": "C:/Trabajo/physmath-knowledge-tree/physical-mean-admission1728/integrations/research-radar/evidence/2026-10-31-physical-mean-admission/haar-marked-pullback-1756/HAAR-COORDINATE-CHECK1755.json",
+      "expected_sha256": "74d2a0f4679bacaf14afb8f07f6078d390d4a2245c9becf39d7bef647e1a7217",
+      "observed_sha256": "74d2a0f4679bacaf14afb8f07f6078d390d4a2245c9becf39d7bef647e1a7217",
+      "expected_bytes": 820,
+      "observed_bytes": 820,
+      "verified": true,
+      "read_in_full": true
+    },
+    {
+      "role": "complete_closed_report",
+      "path": "C:/Trabajo/physmath-knowledge-tree/physical-mean-admission1728/integrations/research-radar/evidence/2026-10-31-physical-mean-admission/haar-marked-pullback-1756/ASSESSMENT1755.json",
+      "expected_sha256": "fbcb2ef30f6b189794885ecc4f6e9577c0d11b99409ca01b86e84c561020d463",
+      "observed_sha256": "fbcb2ef30f6b189794885ecc4f6e9577c0d11b99409ca01b86e84c561020d463",
+      "expected_bytes": 42141,
+      "observed_bytes": 42141,
+      "verified": true,
+      "read_in_full": true
+    },
+    {
+      "role": "format_only_supplementary_manifest",
+      "path": "C:/Trabajo/airr/2026-10-31_execution1756/PUBLIC-INTEGRATION1756C.json",
+      "expected_sha256": "a7aea133eca1d291ccfc9c4dfd4a32c33b8bba13a28d5ac87cb2b3631fbf4676",
+      "observed_sha256": "a7aea133eca1d291ccfc9c4dfd4a32c33b8bba13a28d5ac87cb2b3631fbf4676",
+      "verified": true
+    },
+    {
+      "role": "preserved_original_readme",
+      "path": "C:/Trabajo/airr/2026-10-31_execution1756/README-BEFORE-LF1756.txt",
+      "sha256": "edfc768e274883168651781d39ed4560fd81030178925c926f456fcfdc45abea",
+      "verified": true
+    },
+    {
+      "role": "current_readme_after_format_only_change",
+      "path": "C:/Trabajo/physmath-knowledge-tree/physical-mean-admission1728/integrations/research-radar/evidence/2026-10-31-physical-mean-admission/haar-marked-pullback-1756/README.md",
+      "sha256": "2b61f2fe0b2cae557dfa2f8951a80038ebf612aa8c32da905546f11f3ed08e05",
+      "verified": true
+    }
+  ],
+  "section_binding": {
+    "method": "UTF-8 bytes of the exact snapshot substring beginning at the heading '### Native boundary data,' and continuing to end of file, with existing LF and final newline retained; no BOM.",
+    "sha256": "86b918eaa32f8f5d60d5a99ed296b9554d341e67dbd2df8b7b04a867a3f313ec"
+  },
+  "delivery_checks": {
+    "task_and_public_manifest_entries_identical": true,
+    "three_unchanged_inputs": true,
+    "two_unchanged_finite_checks": true,
+    "three_complete_unchanged_reports": true,
+    "all_four_new_section_relative_links_resolve_locally": true,
+    "directory_contents": "Exactly the eight declared own JSON input/check/report files plus manifest.json and README.md.",
+    "foreign_source_body_or_pdf_in_delivery": false,
+    "local_provenance_paths_not_public_download_links": true,
+    "remote_publication_or_live_link_check_performed": false,
+    "full_reports_not_replaced_by_selected_findings": true
+  },
+  "findings": [
+    {
+      "id": "E01",
+      "type": "delivery_integrity",
+      "status": "supported",
+      "note_lines": [
+        119
+      ],
+      "evidence": [
+        "PUBLIC-INTEGRATION1756B.frozen_sources_and_reports",
+        "manifest.files"
+      ],
+      "finding": "Los ocho archivos declarados existen, sus SHA256 y tamaños coinciden exactamente con ambos manifiestos y los tres informes se entregan completos. No se han sustituido por extractos favorables. La lista de ambos manifiestos es idéntica.",
+      "limit": "La integridad local no certifica una futura subida o publicación remota; esta evaluación es previa a esa operación."
+    },
+    {
+      "id": "E02",
+      "type": "native_boundary_transfer",
+      "status": "faithful",
+      "note_lines": [
+        97
+      ],
+      "evidence": [
+        "ASSESSMENT1754.verdict",
+        "ASSESSMENT1754.source_formula_check",
+        "ASSESSMENT1754.exact_boundary_calculation"
+      ],
+      "finding": "La síntesis conserva la corrección izquierda de (1.31), el caso U0=I, la identidad de los targets coarse originales y el valor B_b=aT/28561 del ejemplo nativo. Presenta el fallo de la sustitución universal por log(Vprime)/i dentro de esa instancia, sin convertirlo en refutación de la fuente.",
+      "limit": "El informe admite una geometría existencial de fuente y pequeñez suficiente; no una realización del sector físico fijo ni un umbral numérico uniforme. La nota lo dice expresamente."
+    },
+    {
+      "id": "E03",
+      "type": "native_adverse_preservation",
+      "status": "faithful",
+      "note_lines": [
+        97
+      ],
+      "evidence": [
+        "ASSESSMENT1754.adverse_and_qualifying_findings",
+        "ASSESSMENT1754.no_admission"
+      ],
+      "finding": "Se conserva la objeción a la explicación del transporte de grado cero: la simplificación procede del background identidad, no del grado por sí solo. También permanece abierta la correspondencia con la media física elegida y con datos exteriores físicos reales.",
+      "limit": "La nueva sección no calcula un campo Landau, un selector global, peso positivo de sector ni normalización a partir de este ejemplo."
+    },
+    {
+      "id": "E04",
+      "type": "raw_fiber_transfer",
+      "status": "faithful",
+      "note_lines": [
+        99
+      ],
+      "evidence": [
+        "ASSESSMENT1754S.verdict",
+        "ASSESSMENT1754S.premises_preserved",
+        "ASSESSMENT1754S.support_and_bare_fibers",
+        "ASSESSMENT1754S.tangent_check"
+      ],
+      "finding": "El segundo ejemplo queda separado del primero: fondo fijo no reemplazado, exterior fino conservado y M_fix ya escogida. La conclusión se limita a fibras de nivel sin selección completa de gauge y kernels de los diferenciales coarse, bajo las hipótesis expresas de grid común, soporte y carta.",
+      "limit": "La síntesis no identifica la media física con el promedio relativo antiguo, no afirma inclusión inversa de fibras y no equipara un kernel diferencial con toda la geometría regular de una fibra."
+    },
+    {
+      "id": "E05",
+      "type": "gauge_scope",
+      "status": "faithful",
+      "note_lines": [
+        99
+      ],
+      "evidence": [
+        "ASSESSMENT1754S.averaged_gauge_restriction",
+        "ASSESSMENT1754S.exact_relative_formula.orientation_caution",
+        "ASSESSMENT1754S.objections_and_disposition"
+      ],
+      "finding": "El texto conserva que h falla la condición de promedio de gauge y que ello no demuestra desigualdad de secciones finales, Hessianos o propagadores. También mantiene la inversión de enlace relativo torcida por el fondo.",
+      "limit": "No interpreta (78) como definición completa de una sección final de campos. La advertencia concisa de la nota debe leerse junto con el informe completo."
+    },
+    {
+      "id": "E06",
+      "type": "coordinate_map_transfer",
+      "status": "faithful",
+      "note_lines": [
+        101,
+        103,
+        104,
+        105,
+        109
+      ],
+      "evidence": [
+        "ASSESSMENT1755.mathematical_setting_required",
+        "ASSESSMENT1755.own_mathematical_verification.P01-P06"
+      ],
+      "finding": "Se trasladan el mismo toro fino, la partición nativa auxiliar compatible, el bosque canónico, P_rz, Y de árbol, k con raíces fijadas, el orden u=l_g k y la inversa explícita. La palabra intermedio evita atribuir a la construcción una selección Landau final.",
+      "limit": "La nota no certifica que un toro físico concreto, no suministrado, admita esa partición o una carta aplicable."
+    },
+    {
+      "id": "E07",
+      "type": "adverse_A01",
+      "status": "preserved_and_explicit",
+      "note_lines": [
+        107
+      ],
+      "evidence": [
+        "ASSESSMENT1755.adverse_findings_and_limits.A01",
+        "ASSESSMENT1755.mathematical_setting_required.G3"
+      ],
+      "finding": "La hipótesis añadida a la síntesis exige Log suave con valores en Lie(G); conserva el contraejemplo SU(3), su traza 2 pi i y el determinante exp(2 pi i/L^d). No presenta como válida sin condiciones la formulación congelada basada solo en una rama matricial definida.",
+      "limit": "La restricción editorial no modifica ni borra el input original. El ejemplo adverso no se presenta como defecto de la construcción local de la fuente."
+    },
+    {
+      "id": "E08",
+      "type": "adverse_A03_and_finite_checks",
+      "status": "preserved_and_explicit",
+      "note_lines": [
+        107,
+        119
+      ],
+      "evidence": [
+        "HAAR-COORDINATE-CHECK1755.json",
+        "ASSESSMENT1755.adverse_findings_and_limits.A03",
+        "ASSESSMENT1755.independent_checks",
+        "BOUNDARY-PHASE-CHECK1754.json",
+        "ASSESSMENT1754.independent_witness_check"
+      ],
+      "finding": "La nota explica que el finite check 1755 no da el segundo extremo y requiere otro bloque trivial. No lo convierte en un toro físico de un bloque ni en prueba no abeliana o de Haar. Los dos checks originales se conservan sin cambios.",
+      "limit": "La síntesis no repite cada dato del sanity check SU(2) ni la ausencia de cota numérica de amplitud, pero esas limitaciones permanecen en el informe íntegro. La exigencia general de carta local evita presentarlos como comprobación universal."
+    },
+    {
+      "id": "E09",
+      "type": "haar_scope",
+      "status": "faithful",
+      "note_lines": [
+        109
+      ],
+      "evidence": [
+        "ASSESSMENT1755.own_mathematical_verification.P06",
+        "ASSESSMENT1755.own_mathematical_verification.P07"
+      ],
+      "finding": "dU=dY_free dk se atribuye a coordenadas completas de grupo, con grados de raíz retenidos, sin dividir volumen residual. Se excluyen explícitamente una densidad exponencial unitaria, un determinante de constraints eliminadas y un Faddeev-Popov final.",
+      "limit": "El resumen omite lícitamente el cálculo adicional de medida gauge de sitios ponderada con delta; no reclama que la carta tenga masa total uno ni Haar intrínseca sobre el conjunto de promedio cero."
+    },
+    {
+      "id": "E10",
+      "type": "moving_targets",
+      "status": "faithful",
+      "note_lines": [
+        111
+      ],
+      "evidence": [
+        "ASSESSMENT1755.own_mathematical_verification.P09"
+      ],
+      "finding": "La orientación de V^u y V0^u coincide con el informe. Se usan extremos finos reales, sin identificar por conveniencia raíces nativas con extremos físicos, y se advierte que u puede tener soporte mayor que k. Todas las coordenadas exteriores originales siguen presentes como targets transportados.",
+      "limit": "No se afirma que Psi preserve punto a punto la fibra exterior con sus valores numéricos originales."
+    },
+    {
+      "id": "E11",
+      "type": "adverse_A02",
+      "status": "preserved_and_explicit",
+      "note_lines": [
+        111,
+        113
+      ],
+      "evidence": [
+        "ASSESSMENT1755.adverse_findings_and_limits.A02",
+        "ASSESSMENT1755.own_mathematical_verification.P08"
+      ],
+      "finding": "Se conserva el dominio de definición de M_fix(Y) en el pullback real del dominio original o una extensión covariante ya admitida. La advertencia sobre el indicador impide justificar una expresión indefinida mediante multiplicación formal por cero.",
+      "limit": "La covariancia de las ramas naturales no convierte Y en miembro del dominio físico D con sus cutoffs; se mantiene el dominio íntegro evaluado en Psi."
+    },
+    {
+      "id": "E12",
+      "type": "weak_joint_versus_fixed_target_A05",
+      "status": "faithful_and_essential",
+      "note_lines": [
+        113
+      ],
+      "evidence": [
+        "ASSESSMENT1755.adverse_findings_and_limits.A05",
+        "ASSESSMENT1755.mathematical_setting_required.G5-G6",
+        "ASSESSMENT1755.own_mathematical_verification.P10"
+      ],
+      "finding": "La nueva sección nombra la identidad débil conjunta en datos coarse y exteriores, y niega que cree una medida condicionada para cada target fijo. Mantiene evaluación integrable sobre el grafo real y una sola aparición de cada constraint.",
+      "limit": "El informe conserva además el caso de deltas redundantes y gauge singular. Para cualquier aplicación a datos fijos sigue siendo indispensable una interpretación original de medida o distribución ya admitida. El resumen no ofrece un nuevo teorema de productos de distribuciones."
+    },
+    {
+      "id": "E13",
+      "type": "marks_and_sources",
+      "status": "faithful",
+      "note_lines": [
+        113
+      ],
+      "evidence": [
+        "ASSESSMENT1755.own_mathematical_verification.P12-P13"
+      ],
+      "finding": "La conjugación de Phi y la de J tienen el sentido del informe. Se mantienen enteros los words cruzados, el orden del factor exterior completo y sus marcos de raíz, los dos extremos de words abiertos y el tratamiento coeficiente a coeficiente de fuentes polinomiales complejas.",
+      "limit": "No se infiere independencia de trozos de una marca, positividad de pesos complejos ni una expansión de log conectado."
+    },
+    {
+      "id": "E14",
+      "type": "global_limits_A04_A06",
+      "status": "faithful",
+      "note_lines": [
+        101,
+        115,
+        124
+      ],
+      "evidence": [
+        "ASSESSMENT1755.adverse_findings_and_limits.A04",
+        "ASSESSMENT1755.adverse_findings_and_limits.A06",
+        "ASSESSMENT1755.own_mathematical_verification.P11",
+        "ASSESSMENT1755.final_scope"
+      ],
+      "finding": "La suma K_chart+K_out retiene íntegro el complemento. La nota deja abiertos la carta/cubierta física concreta, el funcional de borde para V0^u, los Jacobianos posteriores, parámetros uniformes, Hsharp, cotas conectadas, P1 y sectores/historia.",
+      "limit": "No se acredita una conclusión normalizada global, no anulación de denominadores ni un perfil físico."
+    },
+    {
+      "id": "E15",
+      "type": "attribution_and_source_locators",
+      "status": "adequate_for_conditional_synthesis",
+      "note_lines": [
+        97,
+        99,
+        109,
+        111,
+        113,
+        119,
+        121,
+        122
+      ],
+      "evidence": [
+        "ASSESSMENT1754.read_pages",
+        "ASSESSMENT1754S.source_bindings",
+        "ASSESSMENT1755.source_read_log",
+        "ASSESSMENT1755.source_vs_new_proof"
+      ],
+      "finding": "Los localizadores de página/ecuación de la sección coinciden con los recibos específicos de los informes. CMP95 I p.18 (1.6)-(1.7) incorpora el localizador preciso del camino canónico señalado en 1755. Los DOI remiten a las obras y volúmenes declarados; las demostraciones nuevas se identifican como propias y se enlazan sus informes.",
+      "limit": "La comprobación bibliográfica nueva es de metadatos editoriales; las páginas/equaciones se cotejaron contra los recibos cerrados, sin repetir su revisión primaria ni una auditoría de pruebas completas."
+    },
+    {
+      "id": "E16",
+      "type": "review_provenance",
+      "status": "appropriately_limited",
+      "note_lines": [
+        119,
+        121,
+        122,
+        123,
+        124
+      ],
+      "evidence": [
+        "ASSESSMENT1754.review_provenance",
+        "ASSESSMENT1754S.review_provenance",
+        "ASSESSMENT1755.review_provenance"
+      ],
+      "finding": "La nota conserva solicitud Astra/xhigh sin autenticar identidad efectiva, esfuerzo o independencia externa. No llama peer review a los informes ni les asigna nota. El recuento 13 componentes y 6 adverses de 1755 coincide con sus arrays íntegros.",
+      "limit": "La afirmación de producción secuencial en contextos separados se conserva como procedencia declarada; esta revisión no autentica trazas de ejecución, aislamiento estadístico o cronología externa."
+    },
+    {
+      "id": "E17",
+      "type": "no_validation_by_proximity",
+      "status": "scope_respected",
+      "note_lines": [
+        95,
+        119,
+        121,
+        122,
+        123,
+        124
+      ],
+      "evidence": [
+        "PUBLIC-INTEGRATION1756B.scope"
+      ],
+      "finding": "El dictamen de esta evaluación vincula solo el nuevo apartado final del snapshot. La lectura necesaria para delimitarlo no otorga evaluación a los apartados anteriores. Tampoco da validación a manuscrito/PDF, resultado físico, paper, candidato, tarjeta de fuente, Lean ni confianza del grafo.",
+      "limit": "Los tres dictámenes matemáticos permanecen cerrados, con sus inputs originales y objeciones. Esta decisión editorial no reabre, sustituye ni mejora sus resultados."
+    },
+    {
+      "id": "E18",
+      "type": "format_only_supplement",
+      "status": "verified_no_content_change",
+      "evidence": [
+        "PUBLIC-INTEGRATION1756C.json",
+        "README-BEFORE-LF1756.txt",
+        "current README.md"
+      ],
+      "finding": "Se comprobó la corrección CRLF a LF de README y su procedencia exacta. Manifiesto B, nota, snapshot, manifiesto público y los ocho archivos congelados siguen idénticos. El añadido C no provoca otra evaluación matemática.",
+      "limit": "La existencia del log de control fallido se recibió como información del padre; aquí se verificó directamente el original de README conservado y la transformación exacta."
+    }
+  ],
+  "adverse_coverage": [
+    {
+      "source": "1754",
+      "item": "Naive B=log(Vprime)/i shortcut false",
+      "note_lines": [
+        97
+      ],
+      "status": "explicit"
+    },
+    {
+      "source": "1754",
+      "item": "R0^0 simplification requires U0=I",
+      "note_lines": [
+        97
+      ],
+      "status": "explicit"
+    },
+    {
+      "source": "1754",
+      "item": "Native source geometry is not physical admission",
+      "note_lines": [
+        97,
+        115
+      ],
+      "status": "explicit"
+    },
+    {
+      "source": "1754S",
+      "item": "Common-chart/common-grid/support premises remain unproved for actual physical sector",
+      "note_lines": [
+        99
+      ],
+      "status": "explicit_conditional_summary_and_full_report"
+    },
+    {
+      "source": "1754S",
+      "item": "Point gauge fails averaged transformation restriction; no final section/operator comparison",
+      "note_lines": [
+        99
+      ],
+      "status": "explicit"
+    },
+    {
+      "source": "1754S",
+      "item": "Background-twisted relative inversion and transported coarse/exterior frames",
+      "note_lines": [
+        99,
+        111
+      ],
+      "status": "explicit"
+    },
+    {
+      "source": "1755",
+      "item": "A01 Lie-group log closure",
+      "note_lines": [
+        107
+      ],
+      "status": "explicit_with_counterexample"
+    },
+    {
+      "source": "1755",
+      "item": "A02 mean domain and covariance",
+      "note_lines": [
+        111
+      ],
+      "status": "explicit"
+    },
+    {
+      "source": "1755",
+      "item": "A03 missing phase-check endpoint",
+      "note_lines": [
+        107
+      ],
+      "status": "explicit"
+    },
+    {
+      "source": "1755",
+      "item": "A04 actual physical instance absent",
+      "note_lines": [
+        101,
+        115
+      ],
+      "status": "explicit"
+    },
+    {
+      "source": "1755",
+      "item": "A05 weak joint measure is not a fixed-target conditional measure",
+      "note_lines": [
+        113
+      ],
+      "status": "explicit_main_limit_with_redundancy_details_in_full_report"
+    },
+    {
+      "source": "1755",
+      "item": "A06 no global coverage, denominator, connected result, Hsharp or Landau",
+      "note_lines": [
+        115,
+        124
+      ],
+      "status": "explicit"
+    }
+  ],
+  "nonblocking_editorial_findings": [
+    {
+      "id": "W01",
+      "line": 113,
+      "quoted_fragment": "Only the real/unitary Wilson action is invariant.",
+      "issue": "El adverbio 'Only' puede leerse como exclusión universal de cualquier otra invariancia, mientras que el informe reconoce, por ejemplo, la invariancia de la traza de un word cerrado. El contexto correcto es que la invariancia de Wilson no autoriza eliminar los demás factores.",
+      "suggested_replacement": "The real/unitary Wilson action is invariant; all other factors retain their actual pullbacks unless their own invariance has been established.",
+      "severity": "Claridad menor; no altera el dictamen condicional porque el mismo párrafo conserva factores no invariantes y transporte de marcas.",
+      "requires_mathematical_reassessment": false
+    },
+    {
+      "id": "W02",
+      "line": 115,
+      "quoted_fragment": "Any normalized identity uses the same full original denominator, already known nonzero.",
+      "issue": "La aposición 'already known nonzero' conviene expresar inequívocamente como hipótesis. Ninguno de los tres informes demuestra aquí que el denominador físico sea no nulo. Leída en contexto como requisito para cualquier identidad normalizada, la frase es fiel; aislada puede sonar a un hecho ya certificado.",
+      "suggested_replacement": "Any normalized identity must use the same full original denominator, including the off-chart contribution, and requires that denominator to have already been proved nonzero.",
+      "severity": "Claridad menor dentro de una sección que no afirma haber obtenido una identidad física normalizada.",
+      "requires_mathematical_reassessment": false
+    }
+  ],
+  "citation_checks": [
+    {
+      "doi": "10.1007/BF01466594",
+      "publisher_url": "https://link.springer.com/article/10.1007/BF01466594",
+      "metadata": "T. Balaban, Spaces of regular gauge field configurations on a lattice and gauge fixing conditions, CMP 99, 75-102 (1985).",
+      "note_locator": "p.82, (1.31)",
+      "report_locator": "ASSESSMENT1754.source_formula_check; read_pages",
+      "status": "Publisher metadata and report locator match."
+    },
+    {
+      "doi": "10.1007/BF01211042",
+      "publisher_url": "https://link.springer.com/article/10.1007/BF01211042",
+      "metadata": "T. Balaban, Averaging operations for lattice gauge theories, CMP 98, 17-51 (1985).",
+      "note_locator": "pp.27-31, (55)-(63), (78), (89); p.30, (78)",
+      "report_locator": "ASSESSMENT1754S.source_bindings; ASSESSMENT1755.source_read_log",
+      "status": "Publisher metadata and report locators match."
+    },
+    {
+      "doi": "10.1007/BF01215753",
+      "publisher_url": "https://link.springer.com/article/10.1007/BF01215753",
+      "metadata": "T. Balaban, Propagators and renormalization transformations for lattice gauge theories. I, CMP 95, 17-40 (1984).",
+      "note_locator": "p.18, (1.6)-(1.7)",
+      "report_locator": "ASSESSMENT1755.own_mathematical_verification.P02 and source_read_log, fusion index 359",
+      "status": "Publisher metadata and corrected canonical-path locator match; no Gaussian theorem transferred."
+    },
+    {
+      "doi": "10.1007/BF01215223",
+      "publisher_url": "https://link.springer.com/article/10.1007/BF01215223",
+      "metadata": "T. Balaban, Renormalization group approach to lattice gauge field theories. I, CMP 109, 249-301 (1987).",
+      "note_locator": "pp.253-254, (0.4), (0.6), (0.12)",
+      "report_locator": "ASSESSMENT1754S.source_bindings; ASSESSMENT1755.source_read_log and P08",
+      "status": "Publisher metadata and report locators match."
+    },
+    {
+      "doi": "10.1007/BF01217741",
+      "publisher_url": "https://link.springer.com/article/10.1007/BF01217741",
+      "metadata": "T. Balaban, Convergent renormalization expansions for lattice gauge theories, CMP 119, 243-285 (1988).",
+      "note_locator": "pp.243, 247-249, (0.1), (1.6), (1.12)-(1.15)",
+      "report_locator": "ASSESSMENT1755.source_read_log, individual article indices 0,4,5,6",
+      "status": "Publisher metadata and report locators match; marks/pullback theorem remains own argument, not attributed as a source theorem."
+    }
+  ],
+  "citation_method_limits": "Direct DOI opens initially failed; official Springer /article pages succeeded and supplied title/volume/pages/DOI. Search hits from other domains were not used as mathematical evidence. No PDF was downloaded, copied, reopened, or re-audited for this editorial review. The fusion hash continues to identify the multi-article container, not a fabricated extracted article.",
+  "continuing_application_gates": [
+    "Admit the actual fine torus, native auxiliary partition, common charts, group/log branch, full original domain and physical data without substitution.",
+    "At fixed target, establish the original constrained measure/distribution and integrability, including any redundant or singular constraints.",
+    "Retain moving targets and determine the genuine native boundary functional for transported exterior data.",
+    "Keep all original weights, marks, complete words, gauge factors, full K_out and full normalization denominator.",
+    "Prove nonzero normalization and any needed uniform cover/parameter chain separately.",
+    "Construct any final Landau/constraint Jacobian and physical H/Hsharp/source-(190) transfer before operator claims.",
+    "Do not infer P1 repair, connected marked estimates, sectors/history or physical manuscript completion."
+  ],
+  "mutation_record": {
+    "note_changed": false,
+    "inputs_changed": false,
+    "checks_changed": false,
+    "closed_reports_changed": false,
+    "manuscript_or_state_changed": false,
+    "other_chats_changed": false,
+    "external_messages_sent": false,
+    "new_output": "C:/Trabajo/airr/2026-10-31_execution1756/ASSESSMENT1756.json",
+    "scope": "Acciones propias de este evaluador; la corrección README del padre está registrada aparte."
+  },
+  "technical_addendum_C": {
+    "scope": "Verificación técnica adicional dentro de esta misma evaluación, solicitada durante su elaboración; no nuevo examen ni reinicio.",
+    "reported_by_parent": "El control de formato detectó CRLF en README; se preservó el original y se cambió únicamente a LF. El padre informó que conservó también el control fallido.",
+    "checked_here": {
+      "original_readme_preserved_with_B_hash": true,
+      "new_readme_exactly_original_after_CRLF_to_LF": true,
+      "new_readme_contains_no_CR": true,
+      "C_changed_fields_relative_to_B": [
+        "readme_sha256",
+        "scope"
+      ],
+      "C_scope_change": "Añade la explicación de la corrección de finales de línea y la conservación del original/control fallido.",
+      "B_manifest_still_exact": true,
+      "note_and_snapshot_still_exact": true,
+      "public_evidence_manifest_still_exact": true,
+      "eight_frozen_files_still_exact": true
+    },
+    "failed_format_check_artifact_read_by_this_reviewer": false,
+    "finding": "La corrección comprobada no cambia texto, matemáticas, alcance ni informes. Es un cambio de representación de README, debidamente separado del snapshot B de la nota.",
+    "responsibility": "Esta corrección la realizó el agente padre; el evaluador no editó README ni ningún archivo ajeno a ASSESSMENT1756.json."
+  }
+}

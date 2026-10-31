@@ -1,0 +1,667 @@
+{
+  "schema_version": "1.0",
+  "execution": 1755,
+  "artifact": "ASSESSMENT1755",
+  "assessment_type": "Evaluación matemática nueva, completa dentro del alcance declarado, sin nota numérica",
+  "language": "es",
+  "input": {
+    "path": "C:/Trabajo/airr/2026-10-31_execution1755/HAAR-MARKED-PULLBACK1755.json",
+    "expected_sha256": "635c3e7d856b14ce8e1c158a49097ba0ee4cfb1184a328be68846e3bd2f5a58f",
+    "observed_sha256": "635c3e7d856b14ce8e1c158a49097ba0ee4cfb1184a328be68846e3bd2f5a58f",
+    "hash_match": true,
+    "assessed_content": "El texto completo del campo derivation y sus bindings, sin modificarlo.",
+    "finite_check": {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1755/HAAR-COORDINATE-CHECK1755.json",
+      "expected_sha256": "74d2a0f4679bacaf14afb8f07f6078d390d4a2245c9becf39d7bef647e1a7217",
+      "observed_sha256": "74d2a0f4679bacaf14afb8f07f6078d390d4a2245c9becf39d7bef647e1a7217",
+      "hash_match": true
+    }
+  },
+  "review_provenance": {
+    "requested_configuration": "Astra / xhigh",
+    "effective_model_identity": "No autenticada por una prueba de ejecución disponible a este evaluador.",
+    "effective_reasoning_effort": "No autenticado.",
+    "independent_external_review": "No autenticada; esta es una evaluación delegada en la sesión, no una certificación de independencia externa.",
+    "previous_assessments_read": false,
+    "previous_reviews_reopened": false,
+    "source_corpus_copied": false,
+    "source_access": "Lectura y renderizado en memoria de los PDF vinculados. No se copiaron PDF, corpus ni páginas a archivos.",
+    "output_mutations": [
+      "Solo ASSESSMENT1755.json; sin cambios al input, finite check, manuscrito, estado ni otros chats."
+    ],
+    "target_score": null,
+    "score_assigned": false
+  },
+  "verdict": {
+    "code": "CORE_LOCAL_IDENTITY_VALID_ON_A_GENUINELY_SOURCE_ADMISSIBLE_LIE_GROUP_CHART",
+    "unconditional_literal_admission": false,
+    "summary": "El núcleo de la propuesta es correcto como cambio completo de coordenadas de Haar y transporte débil conjunto del kernel marcado en una carta realmente admisible del grupo de Lie. Los órdenes de multiplicación, la inversa, el árbol canónico, la prueba triangular de Haar, los datos móviles y las conjugaciones de las marcas son correctos. No se encontró un fallo algebraico en esos pasos. La expresión 'todos los logaritmos definidos en la misma rama' no basta por sí sola para garantizar esa admisibilidad para un subgrupo compacto general: se exhibe un contraejemplo SU(3). La identidad con M_fix(Y) debe interpretarse en el pullback del dominio original, con el promedio y su rama definidos covariantemente allí, no como una afirmación de que están definidos en todo S0 x C.",
+    "interpretation_of_admissible": "Si 'admissible/source-compatible' ya significa una carta local de logaritmo con valores en Lie(G), y se usa el dominio natural covariante del promedio fuente, la objeción de cierre en G queda excluida y la prueba local cierra. Si se interpreta únicamente como existencia del logaritmo matricial sobre una rama común, la formulación universal es falsa.",
+    "finite_check_verdict": "Aritmética racional correcta; prueba de fase local condicionada a un extremo final en un bloque trivial, no especificado en el archivo. No constituye prueba no abeliana, de Haar ni de realización del sector físico.",
+    "physical_admission": "No se acredita una instancia física completa, un resultado de manuscrito, una sección Landau, un determinante Faddeev-Popov final ni una reparación P1.",
+    "normalized_or_global_conclusion": "No autorizada por este cálculo; depende del denominador original completo no nulo, de K_out y de los demás requisitos explícitamente excluidos."
+  },
+  "mathematical_setting_required": [
+    {
+      "id": "G1",
+      "requirement": "G es el grupo de Lie compacto matricial original; U0 y todos los campos/gauges reales usados pertenecen a G.",
+      "assessment": "Es la categoría de las fuentes. La palabra 'difeomorfismo' y la construcción por logaritmos necesitan esta estructura; no bastan un grupo compacto abstracto y un logaritmo matricial cualquiera."
+    },
+    {
+      "id": "G2",
+      "requirement": "El mismo toro fino admite la partición auxiliar nativa anclada en bloques L con L^d sitios, sin aristas periódicas dentro de cada árbol.",
+      "assessment": "Hipótesis declarada y legítima. No se suministra una instancia del toro para comprobarla. No se permite sustituir el toro físico por otro."
+    },
+    {
+      "id": "G3",
+      "requirement": "En C, los logaritmos Log(Ad_P k(z)) son suaves, de una misma rama fuente y con valores en Lie(G), usando la convención antihermítica para Log.",
+      "assessment": "Es suficiente tomar una carta de identidad suficientemente pequeña: k(z)=exp X(z), X(z) en Lie(G), y Log(exp X)=X; Ad_P conserva Lie(G). La existencia de una rama matricial sola es insuficiente; véase A01."
+    },
+    {
+      "id": "G4",
+      "requirement": "M_fix está definido con su elección original y una rama covariante en los campos Y que realmente aparecen cuando U=Psi(Y,k) pertenece a D.",
+      "assessment": "Los dominios naturales unitarios de CMP109(0.4)/(0.12) tienen la invariancia necesaria. No se deduce de la apertura de C que M_fix esté definido en todos los Y arbitrarios de S0. Véase A02."
+    },
+    {
+      "id": "G5",
+      "requirement": "El peso sobre el grafo original es medible e integrable, coeficiente a coeficiente si hay fuentes polinomiales complejas.",
+      "assessment": "El input lo exige correctamente. Para la identidad conjunta se usa la evaluación real F(U;M_fix(U),U_Efix,J), no una clase L1 ambiente sin traza."
+    },
+    {
+      "id": "G6",
+      "requirement": "A datos fijos, las restricciones originales ya poseen una interpretación de medida/distribución compatible y la integrabilidad necesaria.",
+      "assessment": "El cambio difeomorfo transporta esa interpretación; no la crea, ni elimina automáticamente redundancias o productos singulares."
+    }
+  ],
+  "own_mathematical_verification": [
+    {
+      "id": "P01",
+      "topic": "Convención de gauge y composición",
+      "conclusion": "Correcto.",
+      "derivation": [
+        "La fuente usa V^h_ab=h(a)V_ab h(b)^(-1), con el producto de camino en el orden de recorrido.",
+        "(V^a)^b_ab=b_- a_- V_ab a_+^(-1)b_+^(-1)=V^(ba)_ab.",
+        "Por tanto u=l_g k implica u^(-1)=k^(-1)l_g^(-1); intercambiar esos factores destruiría la inversa."
+      ],
+      "source_support": [
+        "CMP98 p.18, eqs.(7)-(9), fusion índice295"
+      ],
+      "status": "Demostración propia contrastada con la convención fuente."
+    },
+    {
+      "id": "P02",
+      "topic": "Árbol canónico real de la fuente",
+      "conclusion": "Correcto para los bloques nativos anclados declarados.",
+      "derivation": [
+        "Los caminos fuente recorren primero la coordenada d, luego d-1, hasta 1; no son la familia simetrizada de todos los caminos de CMP109.",
+        "Para z distinto de la raíz, sea mu el menor índice cuya coordenada relativa z_mu es positiva. Su padre es z-e_mu. Es el penúltimo sitio del camino canónico a z.",
+        "Cada sitio no raíz tiene exactamente un padre; la suma de coordenadas disminuye estrictamente al ir al padre. Por ello no hay ciclo y todos llegan a la raíz.",
+        "La unión contiene n-1=L^d-1 aristas. Equivalentemente, sum_{mu=1}^d (L-1)L^(d-mu)=L^d-1.",
+        "Todos los prefijos de un camino son caminos canónicos a sus extremos. En consecuencia Y(Gamma_rz)=P_rz para todos los sitios equivale a Y_e=U0_e en todas las aristas del árbol.",
+        "La condición fuente (58), escrita para el campo relativo Y U0^(-1), tiene producto transportado igual a Y(Gamma_rz)P_rz^(-1); por tanto esta S0 coincide con esa condición axial de grupo, no con una sección Landau."
+      ],
+      "source_support": [
+        "CMP98 p.17, eq.(2), fusion índice294: bloques anclados.",
+        "CMP98 p.24, fusion índice301: fórmula explícita de Gamma_yx en el argumento axial.",
+        "CMP95 I p.18, eqs.(1.6)-(1.7), fusion índice359: definición original de los caminos, citada como [2] por CMP98.",
+        "CMP98 p.27, eq.(58), fusion índice304."
+      ],
+      "locator_correction": "CMP98 pp.18-19 contienen convención, productos y referencia a los caminos, pero no son el mejor localizador de su construcción explícita. Esta se comprobó en p.24 y en CMP95 p.18 de la misma fusion.",
+      "status": "Definición fuente más prueba combinatoria propia; no se postula un árbol ajeno."
+    },
+    {
+      "id": "P03",
+      "topic": "Promedio de gauge (78)",
+      "conclusion": "Orden y parametrización exactos, sujetos a G3.",
+      "derivation": [
+        "La fórmula fuente v(r) exp[i sum L^(-d) (1/i)log(v(r)^(-1) Ad_P v(z))] coincide con A0 del input; los factores i y 1/i se cancelan.",
+        "Para q=l_g k, q(r)=g_r y Ad_P q(z)=g_r Ad_P k(z). Entonces q(r)^(-1) Ad_P q(z)=Ad_P k(z), exactamente, sin BCH ni linealización.",
+        "Se sigue A0(l_g k)(r)=g_r a_r(k). Tomando g_r=a_r(k)^(-1) se obtiene A0(u)=I.",
+        "A la inversa, para q con A0(q)=I cuyo k normalizado esté en C, se toma g_r=q(r) y k(z)=P_rz^(-1)g_r^(-1)P_rz q(z). Entonces k(r)=I y g_r a_r(k)=I.",
+        "La correspondencia es uno a uno sobre ese conjunto. No necesita ni afirma que A0^(-1)(I) sea un subgrupo."
+      ],
+      "source_support": [
+        "CMP98 pp.27-28, eqs.(60)-(62), índices304-305",
+        "CMP98 p.30, eq.(78), índice307"
+      ],
+      "status": "Identidad propia exacta basada en la fórmula fuente."
+    },
+    {
+      "id": "P04",
+      "topic": "Preservación de los valores axiales por l_g",
+      "conclusion": "Correcto.",
+      "derivation": [
+        "Si e=(p,z) es una arista de árbol orientada desde el padre, P_z=P_p U0_e.",
+        "l_g(p) U0_e l_g(z)^(-1)=P_p^(-1)g P_p U0_e P_z^(-1)g^(-1)P_z=U0_e.",
+        "Por ello Z en S0 implica Y=Z^(l_g) en S0, con independencia de los enlaces libres.",
+        "Si se usa la orientación contraria del representante original, se toma el inverso del enlace; no se introduce otra variable independiente."
+      ],
+      "status": "Demostración propia."
+    },
+    {
+      "id": "P05",
+      "topic": "Inversa explícita y carta completa",
+      "conclusion": "Correcto, sujeto a G2-G3.",
+      "derivation": [
+        "Dado U, k_U(z)=P_rz^(-1)U(Gamma_rz), k_U(r)=I.",
+        "Z=U^(k_U) satisface Z(Gamma_rz)=U(Gamma_rz)k_U(z)^(-1)=P_rz.",
+        "Con g=a(k_U)^(-1), Y=Z^(l_g) pertenece a S0 y (Z^(l_g))^(k_U^(-1)l_g^(-1))=Z^(k_U^(-1))=U.",
+        "Recíprocamente, si U=Psi(Y,k), entonces U(Gamma_rz)=u(r)^(-1)P_rz u(z)=g_r^(-1)P_rz P_rz^(-1)g_r P_rz k(z)=P_rz k(z). Así k_U=k.",
+        "Como los productos y la rama logarítmica son suaves, Psi y esta inversa son suaves entre S0 x C y U_C={U:k_U en C}. Es un difeomorfismo completo sobre esa imagen, no una aplicación que elimina variables.",
+        "El número de variables de grupo es (m-n+R)+(n-R)=m. Las dimensiones reales se obtienen multiplicando por dim G."
+      ],
+      "status": "Demostración propia; no depende de un solucionador implícito ni del promedio físico."
+    },
+    {
+      "id": "P06",
+      "topic": "Jacobian de Haar",
+      "conclusion": "dU=dY_free dk exactamente en la carta.",
+      "derivation": [
+        "En las coordenadas ordinarias U=Z^(k^(-1)), una arista de árbol padre-hijo satisface U_e=k(p)^(-1)U0_e k(z).",
+        "Ordenando los vértices desde la raíz, a k(p) fijo la transformación k(z)->U_e es una traslación izquierda por un elemento de G y conserva Haar normalizada. La transformación de todas las aristas de árbol es triangular.",
+        "A k fijo, cada enlace no árbol U_b=k_-^(-1)Z_b k_+ es una traslación izquierda/derecha de su propia variable libre. Así dU=dZ_free dk.",
+        "A k fijo, Z_b->Y_b=l_g(b_-)Z_b l_g(b_+)^(-1) conserva Haar en cada enlace libre. Como k no cambia, la dependencia de l_g en k solo produce bloques fuera de la diagonal en el cambio conjunto.",
+        "En formulación puramente de medidas, Fubini y la invariancia de Haar bastan; no hace falta hablar de determinantes de coordenadas euclídeas ni de una medida sobre un conjunto que no es grupo.",
+        "La inversión usada para representantes orientados al revés también conserva Haar de un grupo compacto.",
+        "No se integra ni divide un volumen adicional de G^R. Las variables Y no están cocientadas por el gauge residual de las raíces."
+      ],
+      "limitations": [
+        "Es Haar en variables de grupo. No afirma que la densidad del exponencial respecto a coordenadas del álgebra valga uno.",
+        "No suprime la densidad sigma(A), los determinantes de linealización ni otros factores presentes en CMP119(1.14)-(1.15).",
+        "No es un determinante Faddeev-Popov de la sección axial-a-Landau final."
+      ],
+      "status": "Demostración propia exacta; la prueba finita abeliana no es su fundamento."
+    },
+    {
+      "id": "P07",
+      "topic": "Medida de gauge de sitios ponderada con delta",
+      "conclusion": "Correcto, sujeto al cierre de a(k) en G.",
+      "derivation": [
+        "Para q arbitrario en el dominio relevante, g_r=q(r), k(r)=I y q(z)=P_rz^(-1)g_r P_rz k(z) dan una parametrización invertible por (g,k).",
+        "Las raíces son directamente g; fijado g, los demás sitios son traslaciones izquierdas independientes de k. Por ello dq=dg dk.",
+        "El dominio de la rama de A0 queda descrito por k en C, porque sus argumentos logarítmicos son exactamente Ad_P k.",
+        "A0(q)=g a(k). La identidad integral int_G dg delta_G(g a)=1 es la normalización de la delta de grupo respecto a Haar.",
+        "Por tanto int_{k(q) en C} dq product_r delta_G(A0(q)(r)) H(q)=int_C dk H(u(k)), cuando la expresión tiene la interpretación de medida correspondiente.",
+        "No aparece un factor L^d: a(k) no se está diferenciando a g variable con k dependiente; en estas coordenadas g entra por una traslación de grupo.",
+        "La masa sin inserción es Haar_K(C), no necesariamente uno. Esto no dota a A0^(-1)(I) de Haar intrínseca."
+      ],
+      "status": "Demostración propia exacta con interpretación de delta normalizada."
+    },
+    {
+      "id": "P08",
+      "topic": "Promedio físico, dominio y rama",
+      "conclusion": "Equivarianza correcta en el dominio admitido; debe explicitarse dónde se evalúa.",
+      "derivation": [
+        "U=Psi(Y,k)=Y^(u^(-1)) y Y=U^u. Para el promedio original equivarante, M_fix(U)(c)=u(c_-)^(-1)M_fix(Y)(c)u(c_+).",
+        "En CMP109(0.4), cada lazo bajo Log basado en c_- se transforma por conjugación unitaria por u(c_-). Conserva espectro, distancia a I y exclusión del corte espectral; el Log funcional de la misma rama se conjuga por la misma matriz. El factor de camino final U(c) aporta el extremo c_+.",
+        "En CMP109(0.12), todos los caminos de una familia G(y,x) tienen los mismos extremos, de modo que cada U(Gamma) recibe la misma traslación izquierda y derecha. Estas son unitarias, conservan los diámetros/normas y la condición de agrupación local. La propiedad fuente (0.6) transporta el promedio de esa familia. Los lazos posteriores bajo Log vuelven a transformarse por conjugación.",
+        "Así los dominios naturales unitarios de esas definiciones, con la misma rama covariante, se preservan a lo largo del gauge compacto. Es una justificación adicional verificable, no una consecuencia de que C sea abierto.",
+        "La pertenencia de U a un dominio físico D con cutoffs o gauge no invariantes no implica Y en D. Esto no es necesario: se conserva 1_D(Psi).",
+        "Si el 'dominio admitido' de M_fix ha sido estrechado por una carta adicional no covariante, hay que comprobar que incluye estos Y, o usar su extensión covariante ya admitida. No se puede inventar M_fix(Y) donde no está definido.",
+        "La integral sobre todo S0 x C debe entenderse como integral sobre Psi^(-1)(D), o con el integrando extendido por cero fuera de ese conjunto después de definirlo dentro. El símbolo 1_D no vuelve definida una expresión indefinida por multiplicarla por cero."
+      ],
+      "source_support": [
+        "CMP98 p.24, índice301: argumento espectral explícito de equivarianza",
+        "CMP109 pp.253-254, eqs.(0.4),(0.6),(0.10)-(0.12), índices4-5"
+      ],
+      "status": "Argumento propio para las dos medias, contrastado con sus fórmulas y axiomas fuente."
+    },
+    {
+      "id": "P09",
+      "topic": "Orientación de targets coarse y exteriores",
+      "conclusion": "Correcto; los targets deben moverse con k.",
+      "derivation": [
+        "Sea V^u=u_- V u_+^(-1). Entonces M_fix(U)V^(-1)=u_-^(-1)[M_fix(Y)(V^u)^(-1)]u_-.",
+        "La delta normalizada en la identidad es invariante por conjugación, por lo que los factores coarse de ambos lados coinciden con su interpretación correspondiente.",
+        "Exactamente el mismo cálculo da U_b V0_b^(-1)=u_-^(-1)[Y_b(V0_b^u)^(-1)]u_- para cada enlace fino exterior prescrito.",
+        "Se usan los extremos finos reales. u(r)=g_r solo sirve si ese extremo es realmente la raíz auxiliar de su bloque.",
+        "Aunque k=I fuera de X, l_g puede ser no trivial en otros sitios del mismo bloque; por tanto u no tiene en general el mismo soporte que k.",
+        "Una vez impuestas las deltas transportadas, Y_Efix=V0^u. En general Y_Efix no es V0: no hay preservación punto a punto de la fibra exterior fija."
+      ],
+      "status": "Demostración propia exacta."
+    },
+    {
+      "id": "P10",
+      "topic": "Identidad débil conjunta y datos fijos",
+      "conclusion": "La formulación débil conjunta es rigurosa bajo los requisitos declarados.",
+      "derivation": [
+        "Defina h(U)=(M_fix(U),U_Efix) en D. El objeto conjunto es la medida de grafo 1_D(U)F(U;h(U),J)dU delta_{h(U)}(dV,dV0), restringida a k_U en C.",
+        "Al emparejarla con una función de prueba acotada phi(V,V0), las deltas solo evalúan phi y F sobre el grafo. Se obtiene int_{D intersect U_C} dU F(U;h(U),J)phi(h(U)).",
+        "El cambio U=Psi(Y,k) sustituye dU por dY_free dk. A k fijo, V->V^u y V0->V0^u son traslaciones izquierda/derecha independientes en cada coordenada de target y preservan Haar. Las relaciones de P09 reproducen exactamente las deltas escritas en el input.",
+        "No hace falta que h sea una submersión ni que su imagen tenga densidad. Si hay relaciones entre filas, la medida conjunta puede ser singular; cada coordenada de target original continúa una sola vez.",
+        "Un F dependiente de los datos necesita su verdadera evaluación sobre h(U). Una clase ambiente L1 no determina sus valores sobre ese grafo.",
+        "Al fijar V,V0, no se concluye automáticamente existencia, finitud o unicidad de una medida de fibra. Las restricciones redundantes pueden volver ilegítimo un producto formal de deltas en U. La reserva del input sobre una medida original ya admitida es esencial.",
+        "Una restricción gauge singular adicional exige su propia interpretación original y el pullback completo. No se obtiene aquí un teorema nuevo de multiplicación de distribuciones."
+      ],
+      "status": "Prueba propia de pushforward de medidas; no una inferencia de condicionamiento punto a punto."
+    },
+    {
+      "id": "P11",
+      "topic": "Dominio, offchart y denominadores",
+      "conclusion": "Tratamiento correcto y limitado.",
+      "derivation": [
+        "Como k_U se define globalmente por productos del árbol, D se descompone exactamente en D intersect {k_U en C} y D intersect {k_U no en C}.",
+        "K_C usa el primer conjunto y K_out conserva íntegro el segundo. No se supone que el complemento tenga masa cero ni que sea pequeño.",
+        "D no se reemplaza por S0 x C, por un producto de bolas ni por una condición axial más fuerte.",
+        "Un cociente normalizado requiere el mismo denominador original completo y todos sus factores exteriores, incluyendo K_out, y que dicho denominador ya sea no nulo.",
+        "El cálculo local no ofrece una cubierta global, una partición de unidad ni estimaciones uniformes en la cadena de parámetros físicos."
+      ],
+      "status": "Corrección lógica del alcance declarado."
+    },
+    {
+      "id": "P12",
+      "topic": "Acción, raíces y fuentes complejas",
+      "conclusion": "Correcto en la integración real/unitaria.",
+      "derivation": [
+        "Cada holonomía de plaqueta se conjuga por u en su base; la traza real del Wilson original es invariante y A(Psi)=A(Y).",
+        "Un cutoff, peso gauge, función de sector o normalizador no invariante sigue siendo F(Psi;V,V0,J); la invariancia de la acción no los elimina.",
+        "Para un word cerrado completo con raíz r, Phi_r(Psi)=u(r)^(-1)Phi_r(Y)u(r). Los factores de gauge internos telescopan conservando el orden.",
+        "Por ciclicidad, tr[J_r u(r)^(-1)Phi_r(Y)u(r)]=tr[(u(r)J_r u(r)^(-1))Phi_r(Y)]. El sentido de la conjugación de J en el input es el correcto.",
+        "Para un word abierto de a a b, Phi_ab(Psi)=u(a)^(-1)Phi_ab(Y)u(b); no procede una conjugación de raíz única.",
+        "La identidad para un álgebra polinomial finita de fuentes complejas se verifica coeficiente a coeficiente bajo integrabilidad. No se necesita positividad de un peso complejo ni se demuestra analiticidad de un log conectado."
+      ],
+      "source_support": [
+        "CMP109 p.252, eq.(0.2), índice3: acción Wilson",
+        "CMP98 p.18, eqs.(8)-(9), índice295: telescopado de caminos"
+      ],
+      "status": "Prueba propia de transporte de marcas y fuentes."
+    },
+    {
+      "id": "P13",
+      "topic": "Words interiores, cruzados y exteriores",
+      "conclusion": "Correcto.",
+      "derivation": [
+        "La clasificación por el soporte del word entero evita considerar independiente una parte de un observable que cruza la frontera.",
+        "Si todas las aristas del word original están en E_fix, el word sobre U es Phi(V0) sobre la restricción original, con sus inversos y orden originales.",
+        "En la restricción transformada, Phi(Y)=Phi(V0^u)=u(r)Phi(V0)u(r)^(-1) para un word cerrado. Solo al incluir las conjugaciones exteriores de Phi(Psi) se recupera la constante Phi(V0).",
+        "Por tanto el factor exterior se extrae una sola vez de la expresión original completa. No se puede declarar constante Phi(Y) por sí misma sin los datos y marcos transportados.",
+        "Para un word cruzado o abierto se retiene la estructura completa; la cancelación de gauges internos no autoriza factorizar una esperanza ni crear independencia."
+      ],
+      "status": "Demostración propia."
+    }
+  ],
+  "adverse_findings_and_limits": [
+    {
+      "id": "A01",
+      "type": "Insuficiencia de hipótesis bajo la lectura literal; contraejemplo exacto",
+      "severity": "Bloquea la afirmación para cartas descritas solamente por existencia de Log; no bloquea una carta fuente genuinamente local en Lie(G).",
+      "issue": "Que todos los logaritmos matriciales existan en la misma rama no garantiza que a_r(k), g_r(k) y u(k) pertenezcan al grupo G original.",
+      "counterexample": [
+        "Tome G=SU(3), U0=I, N=L^d>1 sitios en un bloque y omega=exp(2*pi*i/3).",
+        "Ponga k=omega I en un único sitio no raíz y k=I en los demás, incluida la raíz. Todos estos valores están en SU(3).",
+        "El logaritmo matricial principal está definido suavemente cerca de omega I y de I; sus espectros no tocan el corte negativo. Es la misma rama.",
+        "Log(omega I)=(2*pi*i/3)I tiene traza 2*pi*i y no pertenece a su(3).",
+        "a=exp[(2*pi*i/(3N))I] tiene det(a)=exp(2*pi*i/N), que no es uno. Así a no pertenece a SU(3).",
+        "Con otro bloque trivial, una arista entre bloques transforma Y=I en un enlace cuyo determinante es exp(2*pi*i/N), de modo que Psi tampoco conserva el espacio de campos SU(3).",
+        "Existe una vecindad abierta de este k en K con los mismos logaritmos definidos y el mismo problema. La mera apertura o existencia de rama no lo evita."
+      ],
+      "interpretation": "El input llama 'admissible' a C y afirma que las cantidades son de grupo. Si ese término incorpora el logaritmo local en Lie(G) de las fuentes, el ejemplo está fuera de C. Si la única definición de admisibilidad es la frase sobre logs definidos, esta afirmación necesita completarse. No se declara un error de la prueba bajo la interpretación fuente restringida.",
+      "sufficient_condition": "Exigir explícitamente Log(Ad_P k(z)) en Lie(G), suave en C; una carta de identidad suficientemente pequeña es una elección suficiente que respeta el mismo campo, grupo, mean y toro.",
+      "source_context": "CMP98 distingue logaritmos matriciales generales y análisis local del álgebra; CMP109 trabaja con el grupo compacto semisimple original y dominios locales. No existe en las páginas leídas una garantía de que cualquier rama matricial conserve un subgrupo propio."
+    },
+    {
+      "id": "A02",
+      "type": "Dominio de definición y escritura de la integral",
+      "severity": "Condición necesaria de interpretación; no se encontró un fallo de equivarianza en las medias fuente naturales.",
+      "issue": "No puede suponerse M_fix(Y) definido para todo S0 x C solo porque C es abierto, ni porque U=Psi(Y,k) pertenezca al dominio físico D.",
+      "resolution_supported_by_sources": "Para CMP109(0.4), la admisión espectral de los lazos se preserva bajo conjugación unitaria; para (0.12), también se preserva el pequeño diámetro de las familias con mismos extremos y se aplica (0.6). Esto acredita la rama natural sobre la órbita compacta pertinente cuando el mean original usa ese dominio.",
+      "remaining_requirement": "La fórmula se evalúa en Psi^(-1)(D), con el promedio definido allí de manera covariante; si se ha fijado un dominio artificialmente más estrecho, se necesita comprobar inclusión o una extensión covariante ya admitida. No debe usarse el producto formal 0 por una expresión indefinida fuera del soporte.",
+      "not_required": "No se requiere Y en D, ni se autoriza ensanchar el dominio físico de integración."
+    },
+    {
+      "id": "A03",
+      "type": "Finite check incompleto como ejemplo geométrico",
+      "severity": "Limita la verificabilidad del ejemplo, no contradice la aritmética ni el teorema local.",
+      "issue": "Las fases del enlace coarse saliente presuponen un segundo extremo cuya u vale I. El JSON no da ese extremo ni un segundo bloque.",
+      "precise_condition": "Si el enlace/word va desde la raíz del bloque activo a la raíz de otro bloque trivial y Z tiene fase cero, Y tiene fase -1/N y U vuelve a cero. Si ambos extremos están en el mismo bloque y tienen la misma fase l_g, esa rotación se cancela y Y no tiene fase -1/N. En un toro de un único bloque con un lazo raíz-a-raíz, la fase anunciada no sería la correspondiente.",
+      "interpretation": "La denominación 'one-block phase sanity check' puede significar un único bloque activo, pero no demuestra por sí sola una geometría de un solo bloque. Se conserva esta ambigüedad; no se rellenó el ejemplo con una supuesta instancia física.",
+      "other_limit": "El factor de amplitud a mencionado en 'a multiplies every phase' no tiene valor ni cota explícitos. La verificación de rama requiere escogerlo suficientemente pequeño; por ejemplo amplitud 1 radián evita el corte en este ejemplo abeliano."
+    },
+    {
+      "id": "A04",
+      "type": "Instancia física no suministrada",
+      "severity": "Gate pendiente para aplicación concreta, ya reconocido por el input.",
+      "issue": "No se especifican el toro fino real, su partición auxiliar, la carta C concreta, el listado de E_fix, las filas coarse ni los parámetros del dominio físico. Por tanto no se puede certificar que esos datos de una instancia satisfagan G2-G6.",
+      "effect": "La evaluación acredita la construcción condicional y sus fórmulas, no una realización original P1 ni un sector completo. No se sustituyeron esos datos por otros."
+    },
+    {
+      "id": "A05",
+      "type": "Datos fijos, redundancias y restricciones singulares",
+      "severity": "Límite matemático esencial y correctamente reconocido.",
+      "issue": "Una identidad conjunta de medidas de grafo no da automáticamente una densidad o medida condicionada para cada target. Productos de deltas redundantes a datos fijos pueden carecer de significado ordinario.",
+      "effect": "Debe conservarse la admisión original de la medida fija; el Haar unitario no resuelve este problema. Las restricciones se transportan una sola vez y no se añade un normalizador independiente."
+    },
+    {
+      "id": "A06",
+      "type": "No cobertura ni conclusión física global",
+      "severity": "Límite esencial correctamente reconocido.",
+      "issue": "El cálculo no estima K_out, no establece un denominador no nulo, no trata intercambios infinitos, no identifica H/Hsharp, no construye la sección Landau y no da una cadena uniforme de parámetros.",
+      "effect": "No permite promoción del estado a resultado de manuscrito, ni una conclusión global de teoría física. No hay una nota o puntuación que sustituya esas obligaciones."
+    }
+  ],
+  "independent_checks": {
+    "exact_rational_phase": {
+      "method": "Cálculo nuevo en memoria con fractions.Fraction; no se cambió el archivo vinculado.",
+      "L": 13,
+      "d": 4,
+      "N": 28561,
+      "A_k_phase": "1/28561",
+      "g_phase": "-1/28561",
+      "u_root_phase": "-1/28561",
+      "u_special_phase": "28560/28561",
+      "u_other_phase": "-1/28561",
+      "sum_u_phases": "0",
+      "average_u_phase": "0",
+      "Y_outgoing_phase_under_required_endpoint_assumption": "-1/28561",
+      "U_outgoing_phase_reconstructed": "0",
+      "passed": true,
+      "caveat": "El resultado del enlace saliente usa un extremo final en bloque trivial; véase A03."
+    },
+    "native_comb_enumeration": {
+      "method": "Unión en memoria de todos los caminos coordenados fuente d->1 en un bloque {0,...,12}^4.",
+      "vertices": 28561,
+      "edges": 28560,
+      "root_incoming": 0,
+      "every_nonroot_has_one_parent": true,
+      "acyclicity": "La suma de coordenadas aumenta estrictamente en cada arista hacia el hijo.",
+      "significance": "Comprobación discreta de la geometría; la prueba general está en P02.",
+      "original_torus_realization": false
+    },
+    "nonabelian_su2_sanity": {
+      "method": "30 ensayos nuevos en memoria, semilla 1755; dos árboles peine 2x2 con raíces distintas, referencias SU(2) no conmutativas, gauges pequeños, enlaces libres aleatorios y una fuente matricial compleja.",
+      "purpose": "Detectar inversiones, órdenes o conjugaciones incorrectos; no reemplaza una demostración de Haar ni evalúa una instancia física original.",
+      "max_abs_errors": {
+        "tree_inverse": 6.6369060214126715e-15,
+        "preservation_of_tree_by_lg": 8.082545620880531e-16,
+        "average_zero": 1.444107022360569e-15,
+        "roundtrip": 1.7235296186091125e-15,
+        "recovery_of_point_gauge_k": 3.6753088102836684e-15,
+        "target_residual_conjugacy_for_path_word": 1.9984496305075622e-15,
+        "fine_exterior_target_residual_conjugacy": 8.326672684688674e-16,
+        "closed_word_root_conjugacy": 2.221139830254355e-15,
+        "complex_matrix_source_trace": 5.421936431859633e-15,
+        "open_word_endpoint_factors": 2.1649348980190553e-15,
+        "gauge_composition": 4.742874840267547e-16
+      },
+      "mean_limitation": "El ensayo de target usó un word de camino con extremos no raíz para comprobar el álgebra de dos extremos; no implementó CMP109(0.4) ni (0.12). Su equivarianza se comprobó analíticamente desde las fuentes en P08.",
+      "passed_to_floating_precision": true
+    },
+    "su3_log_chart_counterexample": {
+      "status": "Contraejemplo exacto a la suficiencia de una rama matricial meramente definida.",
+      "N": 28561,
+      "trace_principal_log_exact": "2*pi*i",
+      "determinant_a_exact": "exp(2*pi*i/28561)",
+      "determinant_a_numeric_real": 0.9999999758018078,
+      "determinant_a_numeric_imag": 0.00021999178097752216,
+      "a_in_SU3": false,
+      "interpretation": "El cálculo numérico solo ilustra el argumento exacto de A01."
+    }
+  },
+  "source_read_log": [
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balabanfusion.pdf",
+      "expected_sha256": "00cc6b218dcf0e1c2884e135caa1d57b3591df036540b685e7440f30cbd4ff16",
+      "observed_sha256": "00cc6b218dcf0e1c2884e135caa1d57b3591df036540b685e7440f30cbd4ff16",
+      "hash_match": true,
+      "text_pages_actually_extracted_and_read_zero_based": [
+        293,
+        294,
+        295,
+        296,
+        297,
+        298,
+        299,
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        307,
+        328,
+        358,
+        359,
+        360,
+        361,
+        362
+      ],
+      "rendered_pages_visually_read_zero_based": [
+        294,
+        295,
+        301,
+        304,
+        305,
+        307,
+        359
+      ],
+      "page_mapping": [
+        {
+          "zero_based": 293,
+          "printed": "Página vacía anterior a CMP98; sin contenido usado."
+        },
+        {
+          "zero_based": 294,
+          "printed": "CMP98 p.17",
+          "used_for": "Bloques anclados y categoría geométrica."
+        },
+        {
+          "zero_based": 295,
+          "printed": "CMP98 p.18",
+          "used_for": "Gauge, inversión y producto ordenado de contornos, eqs.(6)-(9)."
+        },
+        {
+          "zero_based": 296,
+          "printed": "CMP98 p.19",
+          "used_for": "Haar RG, equivarianza y referencia a los caminos, eqs.(10)-(15)."
+        },
+        {
+          "zero_based": 297,
+          "printed": "CMP98 p.20",
+          "used_for": "Grupo matricial y álgebra; contexto de complexificación."
+        },
+        {
+          "zero_based": 298,
+          "printed": "CMP98 p.21",
+          "used_for": "Logaritmo matricial local y espectral, eqs.(21)-(23)."
+        },
+        {
+          "zero_based": 299,
+          "printed": "CMP98 p.22",
+          "used_for": "Contexto de logaritmos locales y BCH; no se usó como aproximación de la prueba."
+        },
+        {
+          "zero_based": 300,
+          "printed": "CMP98 p.23",
+          "used_for": "Definición del promedio (42)."
+        },
+        {
+          "zero_based": 301,
+          "printed": "CMP98 p.24",
+          "used_for": "Prueba fuente por conjugación espectral, caminos coordenados y gauge axial."
+        },
+        {
+          "zero_based": 302,
+          "printed": "CMP98 p.25",
+          "used_for": "Contexto de regularidad local y pequeño campo."
+        },
+        {
+          "zero_based": 303,
+          "printed": "CMP98 p.26",
+          "used_for": "Contexto de regularidad y comienzo de la sección C."
+        },
+        {
+          "zero_based": 304,
+          "printed": "CMP98 p.27",
+          "used_for": "Eqs.(55)-(60), gauge relativo y condición axial."
+        },
+        {
+          "zero_based": 305,
+          "printed": "CMP98 p.28",
+          "used_for": "Eqs.(61)-(63), condición promediada y orden de factores."
+        },
+        {
+          "zero_based": 307,
+          "printed": "CMP98 p.30",
+          "used_for": "Eq.(78) leída visualmente; contexto (77)-(84)."
+        },
+        {
+          "zero_based": 328,
+          "printed": "CMP98 p.51",
+          "used_for": "Referencia [2] a CMP95 I para localizar la definición canónica."
+        },
+        {
+          "zero_based": 358,
+          "printed": "CMP95 I p.17",
+          "used_for": "Identificación de la fuente y contexto del toro."
+        },
+        {
+          "zero_based": 359,
+          "printed": "CMP95 I p.18",
+          "used_for": "Eqs.(1.6)-(1.7), definición original de bloques y caminos."
+        },
+        {
+          "zero_based": 360,
+          "printed": "CMP95 I p.19",
+          "used_for": "Promedio, gauge axial y contexto de los caminos."
+        },
+        {
+          "zero_based": 361,
+          "printed": "CMP95 I p.20",
+          "used_for": "Contexto de composiciones; no se trasladó un teorema gaussiano al problema no abeliano."
+        },
+        {
+          "zero_based": 362,
+          "printed": "CMP95 I p.21",
+          "used_for": "Contexto Faddeev-Popov lineal; no se usó para justificar un determinante final no abeliano."
+        }
+      ],
+      "search_only_note": "Se ejecutaron búsquedas de cadenas en el texto del PDF en memoria para localizar la referencia de caminos. Los hits de búsqueda en otras páginas no se trataron como lectura completa ni como evidencia matemática del dictamen."
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-rg-I-cmp109-1104116842.pdf",
+      "expected_sha256": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+      "observed_sha256": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+      "hash_match": true,
+      "text_pages_actually_extracted_and_read_zero_based": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "rendered_pages_visually_read_zero_based": [
+        4,
+        5
+      ],
+      "page_mapping": [
+        {
+          "zero_based": 1,
+          "printed": "p.250",
+          "used_for": "Contexto del alcance RG, sin extraer una conclusión física nueva."
+        },
+        {
+          "zero_based": 2,
+          "printed": "p.251",
+          "used_for": "Toro, bloques centrados y grupo compacto; distinción de la partición auxiliar anclada."
+        },
+        {
+          "zero_based": 3,
+          "printed": "p.252",
+          "used_for": "Acción Wilson (0.2), grupo y familia simetrizada de caminos."
+        },
+        {
+          "zero_based": 4,
+          "printed": "p.253",
+          "used_for": "(0.4), propiedades de M especialmente (0.6), (0.10) y (0.11)."
+        },
+        {
+          "zero_based": 5,
+          "printed": "p.254",
+          "used_for": "(0.12), kernel RG y gauge exponencial (0.14)-(0.15)."
+        }
+      ]
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-convergent-cmp119-from-fusion.pdf",
+      "expected_sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+      "observed_sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+      "hash_match": true,
+      "text_pages_actually_extracted_and_read_zero_based": [
+        0,
+        4,
+        5,
+        6
+      ],
+      "rendered_pages_visually_read_zero_based": [
+        4,
+        5,
+        6
+      ],
+      "page_mapping": [
+        {
+          "zero_based": 0,
+          "printed": "p.243",
+          "used_for": "Kernel Haar (0.1), mean original y alcance del artículo."
+        },
+        {
+          "zero_based": 4,
+          "printed": "p.247",
+          "used_for": "Factores originales en (1.5)-(1.7) y comentario sobre alternativas de gauge."
+        },
+        {
+          "zero_based": 5,
+          "printed": "p.248",
+          "used_for": "Datos exteriores V0 y restricciones en (1.11)-(1.13)."
+        },
+        {
+          "zero_based": 6,
+          "printed": "p.249",
+          "used_for": "Densidades, determinantes y restricciones de (1.14)-(1.15); no se cancelan por el nuevo cambio Haar."
+        }
+      ]
+    }
+  ],
+  "source_vs_new_proof": {
+    "source_facts": [
+      "Convención de gauge y producto de caminos.",
+      "Bloques anclados y caminos coordenados canónicos.",
+      "Gauge relativo axial (58) y promedio de gauge (61)/(78).",
+      "Definiciones físicas CMP109(0.4)/(0.12), covariancia de la media de elementos (0.6) y gauge exponencial.",
+      "Kernel original CMP119(0.1)/(1.6), datos exteriores y factores de (1.12)-(1.15)."
+    ],
+    "new_arguments_checked_here": [
+      "La identificación de los caminos como árbol peine y su conteo exacto.",
+      "La carta completa (Y,k), su inversa y la preservación del árbol por l_g.",
+      "El cálculo de Haar triangular y la reducción de la delta de promedio a dk.",
+      "El pushforward débil conjunto con targets transportados.",
+      "El transporte completo de marcas y fuentes.",
+      "El contraejemplo SU(3) a la admisibilidad entendida solo como existencia de una rama matricial."
+    ],
+    "no_inherited_theorem_claim": "Las páginas fuente no se invocan como si contuvieran este teorema completo de coordenadas o una identidad de sección Landau. Los pasos nuevos se demostraron por separado."
+  },
+  "final_scope": {
+    "accepted": [
+      "Cambio completo exacto de variables Haar en una carta genuinamente admisible.",
+      "Identidad conjunta débil de la parte de carta del kernel original, con dominio, factores y constraints originales íntegros.",
+      "Transporte correcto de acción Wilson, words, raíces, extremos y fuentes complejas finitas."
+    ],
+    "conditional_or_unresolved": [
+      "La definición precisa de C debe incluir cierre logarítmico en Lie(G).",
+      "M_fix(Y) debe existir covariantemente en el pullback relevante; no se afirma su definición en todo S0.",
+      "La geometría concreta y el extremo final del finite check no están suministrados.",
+      "La aplicación a targets fijos necesita su medida original ya admitida.",
+      "La cobertura global, K_out, normalización no nula y la cadena de parámetros físicos siguen pendientes."
+    ],
+    "expressly_not_established": [
+      "Positividad o no anulación de denominadores.",
+      "Expansiones de log conectado.",
+      "Intercambios infinitos de sectores o historias.",
+      "Perfil uniforme de fuentes.",
+      "Reparación P1.",
+      "Jacobian de una sección axial-a-Landau final.",
+      "Identificación H/Hsharp.",
+      "Resultado global físico o de manuscrito."
+    ],
+    "no_score": "No se asigna nota ni objetivo de puntuación."
+  }
+}
