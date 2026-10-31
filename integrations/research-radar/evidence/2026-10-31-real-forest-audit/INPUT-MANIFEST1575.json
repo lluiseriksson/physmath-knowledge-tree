@@ -1,0 +1,76 @@
+{
+  "review_id": 1575,
+  "requested_model": "gpt-6-astra",
+  "requested_reasoning_effort": "xhigh",
+  "runtime_identity_attestation": "unverified",
+  "scientific_independence": "unverified; participating parent authored targets",
+  "scope": "one unscored technical audit of9newnotes; no PDF/manuscript score",
+  "files": [
+    {
+      "file": "inputs/BARE-PRODUCT1563.md",
+      "bytes": 4795,
+      "sha256": "71998a12a2c5879760f5894ad19a412a145437e4a8c33cc02488cd4008b91ea6",
+      "role": "exact new review target"
+    },
+    {
+      "file": "inputs/CARRIER-CUTOFF1564.md",
+      "bytes": 5432,
+      "sha256": "25d466c7bb64ffa8347f8a6e8e738b16e62872e472ef29ce4d64a092fdfae863",
+      "role": "exact new review target"
+    },
+    {
+      "file": "inputs/CUTOFF-SCORE1565.md",
+      "bytes": 4715,
+      "sha256": "52a5f607e3e47556f4d03dc25ac17685895a7ab7cecf037dcb7333bd9c33ba6d",
+      "role": "exact new review target"
+    },
+    {
+      "file": "inputs/EXACT-CUTOFF-FACTORS1566.md",
+      "bytes": 5124,
+      "sha256": "0783b59a4e94265e2b497a22d6a8e1817fca3a8be037fdf9c0865e938aa8e4b9",
+      "role": "exact new review target"
+    },
+    {
+      "file": "inputs/REAL-FOREST-GATE1567.md",
+      "bytes": 6440,
+      "sha256": "91c733b0814d0d32115e74de5634a337293e46e667d69d1ea7df85f5c7407e57",
+      "role": "exact new review target"
+    },
+    {
+      "file": "inputs/FOREST-DERIVATIVE1569.md",
+      "bytes": 4930,
+      "sha256": "3e7539e0dc766bc16e6a5c6dbe28cc7d331956c13bc1b15df9fff6ccdf74de15",
+      "role": "exact new review target"
+    },
+    {
+      "file": "inputs/DEGREE-POLYDISC1573.md",
+      "bytes": 6047,
+      "sha256": "3ba9e36c1cb71fb8ae5e208673f26f49f3a61044dd2d72a3c548e429e55db5f1",
+      "role": "exact new review target"
+    },
+    {
+      "file": "inputs/COMPONENT-ALGEBRA1574.md",
+      "bytes": 6478,
+      "sha256": "922573bede0eb109aa7f836d40295654db2dd2949b25805f4c9761d0f1123fd3",
+      "role": "exact new review target"
+    },
+    {
+      "file": "inputs/ATTACHMENT-WITNESS1575.md",
+      "bytes": 3047,
+      "sha256": "d029616ba323792a60b4ba5598b3370586b6687192932a02819c24827ae3d94e",
+      "role": "exact new review target"
+    },
+    {
+      "file": "inputs/DISPOSITION1554.md",
+      "bytes": 6211,
+      "sha256": "bdeeabbecf142c8a1acd7c8ff1558bc0d4bd7d018fe0e742a50e89b0b46b6633",
+      "role": "prior context only"
+    },
+    {
+      "file": "inputs/REVIEW-GUIDE1575.md",
+      "bytes": 2873,
+      "sha256": "8da96d0dc54aa9e2451559e30d36c6e1921edd48e1b5c2160e407ef41bff2771",
+      "role": "review scope guide"
+    }
+  ]
+}

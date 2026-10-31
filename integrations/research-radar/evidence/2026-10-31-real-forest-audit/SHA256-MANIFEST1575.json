@@ -1,0 +1,253 @@
+{
+  "schema": "airr.portable-review-sha256-manifest.v1",
+  "review_id": 1575,
+  "created_utc": "2026-10-31T03:48:19+00:00",
+  "base_directory": "C:/Trabajo/airr/2026-10-31_execution1575/review",
+  "path_semantics": "All file entries are relative to this review directory and remain valid on durable relocation.",
+  "input_manifest": {
+    "file": "INPUT-MANIFEST1575.json",
+    "bytes": 2572,
+    "initial_observed_sha256": "b502012003b61ed2188aad3b4f72a00768308469aa02a39bfabf52d3170a0042",
+    "final_sha256": "b502012003b61ed2188aad3b4f72a00768308469aa02a39bfabf52d3170a0042",
+    "unchanged": true
+  },
+  "inputs": [
+    {
+      "file": "inputs/BARE-PRODUCT1563.md",
+      "role": "exact new review target",
+      "expected_sha256": "71998a12a2c5879760f5894ad19a412a145437e4a8c33cc02488cd4008b91ea6",
+      "expected_bytes": 4795,
+      "before": {
+        "sha256": "71998a12a2c5879760f5894ad19a412a145437e4a8c33cc02488cd4008b91ea6",
+        "bytes": 4795,
+        "matches": true,
+        "evidence": "Pre-audit Get-FileHash/Get-Item comparison returned these observed values; recorded in tool transcript."
+      },
+      "after": {
+        "sha256": "71998a12a2c5879760f5894ad19a412a145437e4a8c33cc02488cd4008b91ea6",
+        "bytes": 4795,
+        "matches": true
+      },
+      "fully_read": true,
+      "line_count": 39
+    },
+    {
+      "file": "inputs/CARRIER-CUTOFF1564.md",
+      "role": "exact new review target",
+      "expected_sha256": "25d466c7bb64ffa8347f8a6e8e738b16e62872e472ef29ce4d64a092fdfae863",
+      "expected_bytes": 5432,
+      "before": {
+        "sha256": "25d466c7bb64ffa8347f8a6e8e738b16e62872e472ef29ce4d64a092fdfae863",
+        "bytes": 5432,
+        "matches": true,
+        "evidence": "Pre-audit Get-FileHash/Get-Item comparison returned these observed values; recorded in tool transcript."
+      },
+      "after": {
+        "sha256": "25d466c7bb64ffa8347f8a6e8e738b16e62872e472ef29ce4d64a092fdfae863",
+        "bytes": 5432,
+        "matches": true
+      },
+      "fully_read": true,
+      "line_count": 39
+    },
+    {
+      "file": "inputs/CUTOFF-SCORE1565.md",
+      "role": "exact new review target",
+      "expected_sha256": "52a5f607e3e47556f4d03dc25ac17685895a7ab7cecf037dcb7333bd9c33ba6d",
+      "expected_bytes": 4715,
+      "before": {
+        "sha256": "52a5f607e3e47556f4d03dc25ac17685895a7ab7cecf037dcb7333bd9c33ba6d",
+        "bytes": 4715,
+        "matches": true,
+        "evidence": "Pre-audit Get-FileHash/Get-Item comparison returned these observed values; recorded in tool transcript."
+      },
+      "after": {
+        "sha256": "52a5f607e3e47556f4d03dc25ac17685895a7ab7cecf037dcb7333bd9c33ba6d",
+        "bytes": 4715,
+        "matches": true
+      },
+      "fully_read": true,
+      "line_count": 52
+    },
+    {
+      "file": "inputs/EXACT-CUTOFF-FACTORS1566.md",
+      "role": "exact new review target",
+      "expected_sha256": "0783b59a4e94265e2b497a22d6a8e1817fca3a8be037fdf9c0865e938aa8e4b9",
+      "expected_bytes": 5124,
+      "before": {
+        "sha256": "0783b59a4e94265e2b497a22d6a8e1817fca3a8be037fdf9c0865e938aa8e4b9",
+        "bytes": 5124,
+        "matches": true,
+        "evidence": "Pre-audit Get-FileHash/Get-Item comparison returned these observed values; recorded in tool transcript."
+      },
+      "after": {
+        "sha256": "0783b59a4e94265e2b497a22d6a8e1817fca3a8be037fdf9c0865e938aa8e4b9",
+        "bytes": 5124,
+        "matches": true
+      },
+      "fully_read": true,
+      "line_count": 49
+    },
+    {
+      "file": "inputs/REAL-FOREST-GATE1567.md",
+      "role": "exact new review target",
+      "expected_sha256": "91c733b0814d0d32115e74de5634a337293e46e667d69d1ea7df85f5c7407e57",
+      "expected_bytes": 6440,
+      "before": {
+        "sha256": "91c733b0814d0d32115e74de5634a337293e46e667d69d1ea7df85f5c7407e57",
+        "bytes": 6440,
+        "matches": true,
+        "evidence": "Pre-audit Get-FileHash/Get-Item comparison returned these observed values; recorded in tool transcript."
+      },
+      "after": {
+        "sha256": "91c733b0814d0d32115e74de5634a337293e46e667d69d1ea7df85f5c7407e57",
+        "bytes": 6440,
+        "matches": true
+      },
+      "fully_read": true,
+      "line_count": 41
+    },
+    {
+      "file": "inputs/FOREST-DERIVATIVE1569.md",
+      "role": "exact new review target",
+      "expected_sha256": "3e7539e0dc766bc16e6a5c6dbe28cc7d331956c13bc1b15df9fff6ccdf74de15",
+      "expected_bytes": 4930,
+      "before": {
+        "sha256": "3e7539e0dc766bc16e6a5c6dbe28cc7d331956c13bc1b15df9fff6ccdf74de15",
+        "bytes": 4930,
+        "matches": true,
+        "evidence": "Pre-audit Get-FileHash/Get-Item comparison returned these observed values; recorded in tool transcript."
+      },
+      "after": {
+        "sha256": "3e7539e0dc766bc16e6a5c6dbe28cc7d331956c13bc1b15df9fff6ccdf74de15",
+        "bytes": 4930,
+        "matches": true
+      },
+      "fully_read": true,
+      "line_count": 45
+    },
+    {
+      "file": "inputs/DEGREE-POLYDISC1573.md",
+      "role": "exact new review target",
+      "expected_sha256": "3ba9e36c1cb71fb8ae5e208673f26f49f3a61044dd2d72a3c548e429e55db5f1",
+      "expected_bytes": 6047,
+      "before": {
+        "sha256": "3ba9e36c1cb71fb8ae5e208673f26f49f3a61044dd2d72a3c548e429e55db5f1",
+        "bytes": 6047,
+        "matches": true,
+        "evidence": "Pre-audit Get-FileHash/Get-Item comparison returned these observed values; recorded in tool transcript."
+      },
+      "after": {
+        "sha256": "3ba9e36c1cb71fb8ae5e208673f26f49f3a61044dd2d72a3c548e429e55db5f1",
+        "bytes": 6047,
+        "matches": true
+      },
+      "fully_read": true,
+      "line_count": 64
+    },
+    {
+      "file": "inputs/COMPONENT-ALGEBRA1574.md",
+      "role": "exact new review target",
+      "expected_sha256": "922573bede0eb109aa7f836d40295654db2dd2949b25805f4c9761d0f1123fd3",
+      "expected_bytes": 6478,
+      "before": {
+        "sha256": "922573bede0eb109aa7f836d40295654db2dd2949b25805f4c9761d0f1123fd3",
+        "bytes": 6478,
+        "matches": true,
+        "evidence": "Pre-audit Get-FileHash/Get-Item comparison returned these observed values; recorded in tool transcript."
+      },
+      "after": {
+        "sha256": "922573bede0eb109aa7f836d40295654db2dd2949b25805f4c9761d0f1123fd3",
+        "bytes": 6478,
+        "matches": true
+      },
+      "fully_read": true,
+      "line_count": 55
+    },
+    {
+      "file": "inputs/ATTACHMENT-WITNESS1575.md",
+      "role": "exact new review target",
+      "expected_sha256": "d029616ba323792a60b4ba5598b3370586b6687192932a02819c24827ae3d94e",
+      "expected_bytes": 3047,
+      "before": {
+        "sha256": "d029616ba323792a60b4ba5598b3370586b6687192932a02819c24827ae3d94e",
+        "bytes": 3047,
+        "matches": true,
+        "evidence": "Pre-audit Get-FileHash/Get-Item comparison returned these observed values; recorded in tool transcript."
+      },
+      "after": {
+        "sha256": "d029616ba323792a60b4ba5598b3370586b6687192932a02819c24827ae3d94e",
+        "bytes": 3047,
+        "matches": true
+      },
+      "fully_read": true,
+      "line_count": 20
+    },
+    {
+      "file": "inputs/DISPOSITION1554.md",
+      "role": "prior context only",
+      "expected_sha256": "bdeeabbecf142c8a1acd7c8ff1558bc0d4bd7d018fe0e742a50e89b0b46b6633",
+      "expected_bytes": 6211,
+      "before": {
+        "sha256": "bdeeabbecf142c8a1acd7c8ff1558bc0d4bd7d018fe0e742a50e89b0b46b6633",
+        "bytes": 6211,
+        "matches": true,
+        "evidence": "Pre-audit Get-FileHash/Get-Item comparison returned these observed values; recorded in tool transcript."
+      },
+      "after": {
+        "sha256": "bdeeabbecf142c8a1acd7c8ff1558bc0d4bd7d018fe0e742a50e89b0b46b6633",
+        "bytes": 6211,
+        "matches": true
+      },
+      "fully_read": true,
+      "line_count": 35
+    },
+    {
+      "file": "inputs/REVIEW-GUIDE1575.md",
+      "role": "review scope guide",
+      "expected_sha256": "8da96d0dc54aa9e2451559e30d36c6e1921edd48e1b5c2160e407ef41bff2771",
+      "expected_bytes": 2873,
+      "before": {
+        "sha256": "8da96d0dc54aa9e2451559e30d36c6e1921edd48e1b5c2160e407ef41bff2771",
+        "bytes": 2873,
+        "matches": true,
+        "evidence": "Pre-audit Get-FileHash/Get-Item comparison returned these observed values; recorded in tool transcript."
+      },
+      "after": {
+        "sha256": "8da96d0dc54aa9e2451559e30d36c6e1921edd48e1b5c2160e407ef41bff2771",
+        "bytes": 2873,
+        "matches": true
+      },
+      "fully_read": true,
+      "line_count": 13
+    }
+  ],
+  "input_count": 11,
+  "all_inputs_match_before_and_after": true,
+  "all_input_byte_counts_match": true,
+  "total_frozen_input_bytes": 56092,
+  "total_frozen_input_lines": 452,
+  "outputs": [
+    {
+      "file": "REVIEW1575.md",
+      "bytes": 31944,
+      "sha256": "62f4f555c3484918e9a6fc777f2c1a5d995f7f9dbfd371024c0e233e6368ad70"
+    },
+    {
+      "file": "ASSESSMENT1575.json",
+      "bytes": 19680,
+      "sha256": "e1ed6fadfbe6f9123ef44ddcb6e157daacd37a30d3a6e60d21820ea79d8e4a80"
+    }
+  ],
+  "created_artifacts": [
+    "REVIEW1575.md",
+    "ASSESSMENT1575.json",
+    "SHA256-MANIFEST1575.json"
+  ],
+  "self_hash_policy": "This manifest omits its own hash to avoid a circular digest. Its SHA256 is reported separately upon delivery.",
+  "foreign_bodies_or_renders_included": false,
+  "review_tmp_included": false,
+  "frozen_inputs_modified": false,
+  "json_validation": "ASSESSMENT1575.json parsed successfully; nine targets and findings F1-F7 verified.",
+  "durable_preservation": "Parent will preserve authorized outputs and frozen-input binding in D:."
+}

@@ -75,19 +75,26 @@
     {
       "id": "deepmind-formal-conjectures",
       "title": "Formal Conjectures repository",
-      "url": "https://github.com/google-deepmind/formal-conjectures/tree/909a8bec155bc5a6f3c72e12baaaa610ae293281",
+      "url": "https://github.com/google-deepmind/formal-conjectures/tree/b6939a3a0d89e5f999fa8c6483a6ef646c1e2923",
       "kind": "repository",
       "published_on": null,
-      "observed_on": "2026-10-29",
-      "reading_status": "selected_sections_read",
+      "observed_on": "2026-10-31",
+      "reading_status": "catalogued",
       "evidence": "literature",
-      "claim": "Earlier README plus selected new Erdos777 commit description/diff inspected. The added entry points to known1985/2015 results and external formal proofs; an index update is not a newly solved mathematical problem. Current909a8bec parent5a2fb850 commit metadata describes an unchanged RamanujanTau summability support statement completed from existing Mathlib API. This is author-described formalization maintenance for known identities, not a new mathematical manuscript or solved conjecture.",
-      "limits": "No current statement count, external proof replay, dependency closure or upstream build. Retain earlier statement/benchmark caveats. This is a bibliographic update, not formal proof certification. Current909a8bec reading is commit metadata only; upstream claimed axiom/build results are not independently replayed. No task/proof bodies downloaded. Evidence: integrations/research-radar/evidence/2026-10-29-entropy-local-kernel/DEEPMIND-METADATA1293.json",
+      "claim": "Latest two immutable git-commit metadata objects read:30October b6939a3a completes an existing small test lemma with unchanged statement;29October feacabbc adds a formal catalogue entry with an attributed external solution/proof link. These are distinct metadata changes, not independently verified new mathematics.",
+      "limits": "Current reading is commit metadata only, not actual formal declaration/proof reading. No task/proof file fetched, build/axiom replay or full external dependency verification. Reported solution/model/build claims remain attributed. The earlier selected-reading snapshot is retained separately; no formal dependency is imported.",
       "reuse": "Metadata and source links. Per-source rights and benchmark boundaries remain applicable.",
       "anchors": [
         "domain.foundation_logic",
         "domain.number_theory"
-      ]
+      ],
+      "historical_reading_snapshot_1581": {
+        "url": "https://github.com/google-deepmind/formal-conjectures/tree/909a8bec155bc5a6f3c72e12baaaa610ae293281",
+        "observed_on": "2026-10-29",
+        "reading_status": "selected_sections_read",
+        "claim": "Earlier README plus selected new Erdos777 commit description/diff inspected. The added entry points to known1985/2015 results and external formal proofs; an index update is not a newly solved mathematical problem. Current909a8bec parent5a2fb850 commit metadata describes an unchanged RamanujanTau summability support statement completed from existing Mathlib API. This is author-described formalization maintenance for known identities, not a new mathematical manuscript or solved conjecture.",
+        "limits": "No current statement count, external proof replay, dependency closure or upstream build. Retain earlier statement/benchmark caveats. This is a bibliographic update, not formal proof certification. Current909a8bec reading is commit metadata only; upstream claimed axiom/build results are not independently replayed. No task/proof bodies downloaded. Evidence: integrations/research-radar/evidence/2026-10-29-entropy-local-kernel/DEEPMIND-METADATA1293.json"
+      }
     },
     {
       "id": "korda-2026",
@@ -2796,6 +2803,10 @@
     "followup1568": {
       "evidence": "integrations/research-radar/evidence/2026-10-31-real-forest/bibliography.json",
       "scope": "Directed primary sweep; two deduplicated locators with exact reading boundaries. Parent real forest/cutoff synthesis unreviewed, outside1547. No formal dependency, candidate, score or canonical graph promotion."
+    },
+    "followup1581": {
+      "evidence": "integrations/research-radar/evidence/2026-10-31-real-forest-audit/PUBLIC-PACKET-HASHES.json",
+      "scope": "Full exact unscored audit1575 with11frozeninputs, minor nonnegative-t clarification and retained F1–F6; no manuscript/PDF score or formal promotion. Existing DeepMind card reconciled at metadata depth, no duplicate card.119sources/19candidates."
     }
   }
 }

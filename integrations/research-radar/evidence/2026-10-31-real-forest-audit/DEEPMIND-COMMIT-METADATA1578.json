@@ -1,0 +1,39 @@
+{
+  "observed_at": "2026-10-31T03:44:42.010Z",
+  "repo": "google-deepmind/formal-conjectures",
+  "scope": "Directed latest two git-commit objects only; not exhaustive or a proof audit",
+  "reason": "Connected commit fetch includes diffs; git-object metadata endpoint avoids downloading evaluation/task/proof bodies",
+  "rows": [
+    {
+      "sha": "b6939a3a0d89e5f999fa8c6483a6ef646c1e2923",
+      "url": "https://github.com/google-deepmind/formal-conjectures/commit/b6939a3a0d89e5f999fa8c6483a6ef646c1e2923",
+      "commit_date": "2026-10-30T17:17:13Z",
+      "tree": "c78d728fcd31feedd25adb0ea4371bca57e4ee1f",
+      "parents": [
+        "feacabbcf6ed2e7b622663c3e1c0f61038183392"
+      ],
+      "response_sha256": "d2a75a56ae16d9b557958ad7f1225dbcdfe7a948f6d05a25b3e27126baaeddf1",
+      "reading_depth": "commit metadata only; no formal task/proof file fetched; mathematical commit prose is not declaration/proof reading",
+      "title": "feat(ErdosProblems/675): prove minTranslation_squarefree_three (#7700)",
+      "message_sha256": "df60bb9807d62af0e3b3a03737dd355311bf568c5dc14c95c714c40859bda2db",
+      "own_synthesis": "Author-described proof completion of an existing small squarefree-translation test lemma, with unchanged statement; reported builds and axioms not independently replayed. Not a new mathematical manuscript or resolution of the active source hypotheses."
+    },
+    {
+      "sha": "feacabbcf6ed2e7b622663c3e1c0f61038183392",
+      "url": "https://github.com/google-deepmind/formal-conjectures/commit/feacabbcf6ed2e7b622663c3e1c0f61038183392",
+      "commit_date": "2026-10-29T22:54:24Z",
+      "tree": "28378c34fb6e831b1b77e10a383a8f7e12c5631e",
+      "parents": [
+        "c91dbb394077d43bc0f9b71f70d11397c9caaa57"
+      ],
+      "response_sha256": "7c10080a74bcfb0ddd9c00bcb1c08f60bda58230bd9f01cefc6abea152f46738",
+      "reading_depth": "commit metadata only; no formal task/proof file fetched; mathematical commit prose is not declaration/proof reading",
+      "title": "feat(ErdosProblems/1195): add Erdős Problem 1195 (#7585)",
+      "message_sha256": "5ce9d761ee9a8109cceb7f69986621441b3aa63967403856332d10aa024b0f27",
+      "own_synthesis": "New catalogue/formal problem entry with an attributed external solution and external formalization link. Mathematical solution, exact theorem equivalence, full external commit and dependency closure not audited. Catalogue addition is not independently verified new mathematics."
+    }
+  ],
+  "OpenAI_dedup": "Current4eaee875 metadata/catalogue comparison already recorded1345/1349; not repeated as a new manuscript",
+  "foreign_commit_body_retained": false,
+  "queued_integration": "Update existing deepmind-formal-conjectures card in next substantive knowledge batch; do not create another source card or paper case"
+}
