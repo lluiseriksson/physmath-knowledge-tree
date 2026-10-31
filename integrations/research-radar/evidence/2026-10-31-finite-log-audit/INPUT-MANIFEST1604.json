@@ -1,0 +1,81 @@
+{
+  "audit": "single unscored technical assessment1604",
+  "inputs": [
+    {
+      "role": "target",
+      "original_path": "C:/Trabajo/airr/2026-10-31_execution1603/FINITE-LOG1603.md",
+      "file": "inputs/FINITE-LOG1603.md",
+      "bytes": 7485,
+      "sha256": "3d384acdc7cfb4b87466b2afc8c1167bff7e33e68cb18f72941ccc8cd8865e39"
+    },
+    {
+      "role": "target",
+      "original_path": "C:/Trabajo/airr/2026-10-31_execution1604/DOBRUSHIN-DICTIONARY1604.md",
+      "file": "inputs/DOBRUSHIN-DICTIONARY1604.md",
+      "bytes": 6291,
+      "sha256": "58f254830a26fe629b8ab5b96a430fef1d806e7f9773d00ced8f52eaf6f7529e"
+    },
+    {
+      "role": "context",
+      "original_path": "D:/Proyectos/airr-investigacion/2026-10-31_label-tree-audit-intake1597/review/REVIEW1592.md",
+      "file": "inputs/REVIEW1592.md",
+      "bytes": 28221,
+      "sha256": "957530fd965c46da0cc0dd063a20aa23bdecca48a57d4f443f3b87179620b0cd"
+    },
+    {
+      "role": "context",
+      "original_path": "C:/Trabajo/airr/2026-10-31_execution1574/COMPONENT-ALGEBRA1574.md",
+      "file": "inputs/COMPONENT-ALGEBRA1574.md",
+      "bytes": 6478,
+      "sha256": "922573bede0eb109aa7f836d40295654db2dd2949b25805f4c9761d0f1123fd3"
+    },
+    {
+      "role": "context",
+      "original_path": "C:/Trabajo/airr/2026-10-31_execution1592/LABEL-TREE1592.md",
+      "file": "inputs/LABEL-TREE1592.md",
+      "bytes": 8653,
+      "sha256": "fccd0932cbe9db91957ba50541c0276952c5cf0afb44a8a1d5a4117281171e3b"
+    },
+    {
+      "role": "check",
+      "original_path": "C:/Trabajo/airr/2026-10-31_execution1603/FINITE-LOG-CHECK1603.json",
+      "file": "inputs/FINITE-LOG-CHECK1603.json",
+      "bytes": 1912,
+      "sha256": "5b66acd71594ae72b847c78572328c1541374a08a5137d0f05efc4b2c0cc97e8"
+    },
+    {
+      "role": "check_code",
+      "original_path": "C:/Trabajo/airr/2026-10-31_execution1603/finite-log-check1603.py",
+      "file": "inputs/finite-log-check1603.py",
+      "bytes": 2656,
+      "sha256": "92a6ff5611297222897fc9a1353154e8933ab3d9bd77b4d9877ee205d013b1ce"
+    },
+    {
+      "role": "source_reading",
+      "original_path": "C:/Trabajo/airr/2026-10-31_execution1604/SOURCE-READING1604.json",
+      "file": "inputs/SOURCE-READING1604.json",
+      "bytes": 1769,
+      "sha256": "912e68d72322ce0e5ebafb26fb844eb4133119975d49d61a1eef232d63511d37"
+    },
+    {
+      "role": "access_record",
+      "original_path": "C:/Trabajo/airr/2026-10-31_execution1604/PRIMARY-ACCESS1604.json",
+      "file": "inputs/PRIMARY-ACCESS1604.json",
+      "bytes": 451,
+      "sha256": "94d56eb29f48a05526f573dc73b2662d38fcaecc75da9cf130b13f30d034dc98"
+    },
+    {
+      "role": "access_record",
+      "original_path": "C:/Trabajo/airr/2026-10-31_execution1604/CRITERION-READING1604.json",
+      "file": "inputs/CRITERION-READING1604.json",
+      "bytes": 447,
+      "sha256": "032139d6af2e11b8670b7ec34ad013a2ccd38eea11a034ef7f8ef09988be5790"
+    },
+    {
+      "role": "guide",
+      "file": "REVIEW-GUIDE1604.txt",
+      "bytes": 3350,
+      "sha256": "8c067ca761edac7db539eafe5397b5f1cdc2f30d1a8d263b43d396b04b629442"
+    }
+  ]
+}

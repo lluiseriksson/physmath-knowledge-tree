@@ -30,8 +30,32 @@ Mechanism: integrate a local Gaussian slice exactly, retain coordinate occupanci
 
 Evidence levels: literature for the selected historical forest statements; an analytic conditional deduction for the two target notes, with no Lean theorem or build; heuristic for identifying the actual source parameters; speculative for complete physical activity, normalization and marginal transfer. The original maximal-domain/variational hierarchy and the exact physical first-law dictionary are not certified here. The former translated-component counterexample remains valid; its endpoint choices are included in the original-label count.
 
+## Conditional finite logarithm and absolute cluster follow-up
+
+The [two exact additional target notes and completed unscored assessment1604](../evidence/2026-10-31-finite-log-audit/README.md) close a narrower abstract step once the exact finite gas and rooted norm above are actually supplied. They do not admit physical source hypotheses. Keep incompatibility defined by raw-support overlap, including each type with itself.
+
+For fixed radii rho and budgets a, put mu=rho exp(a). If the self-including incompatible sum of mu is at most a for each type, deletion from a proper subset gives
+
+    |Z_Gamma/Z_(Gamma-gamma)-1|
+      <= mu_gamma exp(-mu_gamma) <= 1-exp(-mu_gamma) < 1.
+
+The self term supplies the subtracted mu. Each deletion ratio has a principal logarithm; summing them gives the total analytic logarithm normalized at zero. That total need not be principal Log(Z). Freeze zero-radius coordinates and use the relative interior. For a fixed finite gas, neighborhood analyticity also gives qualitative absolute Taylor convergence; the explicit quantitative pinned-cluster bound below is the distinct classical input.
+
+With a_S=eta|S|, the rooted norm pays incompatibility when (Delta+1)b_eta<=eta. Setting r_S=1-exp(-mu_S) gives the self-excluding neighbor product in the [selected historical Kotecky exposition](../evidence/2026-10-31-cluster-criterion-source/README.md). The selected theorem pins presence of a polymer type. A nonnegative union bound over types containing an original label gives the original-root absolute cluster bound b_eta, without inserting X(S) or an extra factorial.
+
+For an additional repeated-type size weight exp(theta L(X)), L(X)=sum_S X(S)|S|, retain eta as the criterion budget and require
+
+    (Delta+1)b_(eta+theta) <= eta,
+    lambda exp(eta+theta) A R < 1.
+
+The right side is eta, not eta+theta. Total costs remain extensive: |log Z|<=|I|b_eta and |1/Z|<=exp(|I|b_eta). Abstract deletion is not physical conditioning or a normalized marginal identity. The actual joint source smallness, all-subsets norm, combined incidence and uniform row sum still require source admission. A spectral-gap claim alone is insufficient. Earlier failed requests, all adverse source findings and the independent-negative-weight reciprocal falsifier remain preserved. No spatial mass gap, physical counterterm or global conclusion follows here.
+
+This is a known-criterion application dictionary and supporting knowledge, not a new standalone paper or a novelty claim. The classical statement was read at its pinned author-copy hash; its full proof and the original1986article were not audited. The [parent disposition](../evidence/2026-10-31-cluster-criterion-source/DISPOSITION1612.md) maps every retained finding to its limit and next source obligation.
+
 ## Model assessments and review context
 
 One completed separate-context, unscored AI technical assessment1592 supports the conditional arguments in the exact notes LOCAL-NOISE1591.md and LABEL-TREE1592.md. The requested configuration is GPT-6 Astra with xhigh effort. Runtime identity/effort attestation and scientific independence are unverified. The participating parent authored the target notes and this summary. This summary itself is outside that frozen target packet.
 
 The [complete report, all objections, metadata and exact byte mapping](../evidence/2026-10-31-label-tree-audit/README.md) are preserved. The report retains the separate absolute-row-sum requirement, combined-label incidence, uniform product and smallness hypotheses, actual source admission and zero-free/logarithm obligations. No assessment is inherited from1575, no PDF or manuscript has been scored, and there is no peer-review or editorial decision. The [parent disposition](../evidence/2026-10-31-label-tree-audit/DISPOSITION1597.md) records those limits; the parent source-input ledger is outside the assessed texts.
+
+Assessment1604 is a separate completed unscored contextual AI assessment of FINITE-LOG1603 and DOBRUSHIN-DICTIONARY1604 only. Requested routing was GPT-6 Astra/xhigh; observed runtime model/effort and scientific independence remain unverified, with parent participation disclosed. Its [complete report, frozen inputs, checks and all objections](../evidence/2026-10-31-finite-log-audit/README.md) accompany the conditional follow-up. Neither this evolving summary nor any PDF, including Capacity, inherits that assessment or a numerical score.

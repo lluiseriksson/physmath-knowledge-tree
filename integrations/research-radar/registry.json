@@ -2068,6 +2068,46 @@
         "domain.analysis",
         "domain.foundation_logic"
       ]
+    },
+    {
+      "id": "kotecky-cluster-expansion-2006",
+      "title": "Cluster Expansion (author exposition)",
+      "url": "https://www.cts.cuni.cz/~kotecky/publ/K-CE-EMP06.pdf",
+      "kind": "book_chapter",
+      "published_year": 2006,
+      "publication_date_precision": "year",
+      "observed_on": "2026-10-31",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Selected abstract-model definitions, condition24 and Theorem(i)(ii) read: a classical incompatibility criterion controls finite partition functions and type-presence cluster sums. Historical exposition, not new2026research.",
+      "limits": "Author PDF printed3-5 selected statements/discussion only; no full proof audit, formal build or physical source admission. The pinned sum counts presence of a polymer type, not occurrence multiplicity or an activity derivative. The separate unscored technical assessment1604 supports exactly two conditional parent notes; it is not a full external-proof, physical-source or manuscript/PDF assessment.",
+      "reuse": "Metadata and own synthesis only; public author copy read in memory, no foreign body/corpus retained or training permission inferred.",
+      "anchors": [
+        "domain.analysis"
+      ],
+      "version_pin": {
+        "sha256": "2a56f2e4a3285aedf7934c6aa235e3da0dca3131b5ce52f4076e8c94819c6e5a",
+        "bytes": 208045,
+        "author_copy_pages": 11,
+        "full_proof_audited": false
+      },
+      "publication_metadata": {
+        "author": "Roman Kotecky",
+        "book": "Encyclopedia of Mathematical Physics",
+        "volume": 1,
+        "pages": "531-536",
+        "year": 2006,
+        "primary_author_record": "https://www.cts.cuni.cz/~kotecky/soubory/publications.htm",
+        "scope": "Book chapter pagination differs from11-page author version; exact first preprint date not established"
+      },
+      "related_original_reference": {
+        "DOI": "10.1007/BF01211762",
+        "year": 1986,
+        "reading_status": "abstract_read",
+        "source": "https://link.springer.com/article/10.1007/BF01211762",
+        "original_theorem_or_proof_read": false
+      },
+      "reading_evidence": "integrations/research-radar/evidence/2026-10-31-cluster-criterion-source/README.md"
     }
   ],
   "candidates": [

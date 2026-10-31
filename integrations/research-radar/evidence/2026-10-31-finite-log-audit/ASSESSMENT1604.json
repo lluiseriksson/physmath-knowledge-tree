@@ -1,0 +1,226 @@
+{
+  "assessment_id": "1604",
+  "date": "2026-10-31",
+  "kind": "one unscored contextual AI technical assessment",
+  "targets": [
+    "inputs/FINITE-LOG1603.md",
+    "inputs/DOBRUSHIN-DICTIONARY1604.md"
+  ],
+  "disposition": "Both exact new targets are supported within their stated conditional finite abstract scope; no material error found. Physical source admission and normalization remain unverified.",
+  "identity": {
+    "requested_model": "GPT-6 Astra",
+    "requested_reasoning_effort": "xhigh",
+    "observed_interface_identity": "Codex assistant in a separate task context",
+    "runtime_model_attestation": "unverified",
+    "runtime_reasoning_effort_attestation": "unverified",
+    "requested_configuration_is_observed_evidence": false,
+    "scientific_independence": "unverified",
+    "independence_limits": [
+      "Parent authored both targets and selected the packet",
+      "Separate context and independent finite calculations do not establish scientific independence",
+      "No verifiable runtime model/version/effort attestation exposed"
+    ]
+  },
+  "process": {
+    "review_contexts": 1,
+    "restarted": false,
+    "delegated": false,
+    "alternate_reviewer_used": false,
+    "other_model_service_used": false,
+    "prior_assessment_inherited": false,
+    "numeric_grade_issued": false,
+    "manuscript_or_pdf_assessed": false,
+    "novelty_assessed": false,
+    "peer_review_or_editorial_acceptance": false,
+    "lean_import_or_build": false,
+    "frozen_checker_executed": false,
+    "only_new_files_within_review_directory": true,
+    "durable_D_copy_responsibility": "parent"
+  },
+  "input_integrity": {
+    "listed_frozen_inputs_fully_read": 11,
+    "total_listed_input_bytes": 67713,
+    "manifest_bytes": 3094,
+    "manifest_sha256": "18f0222e84cd25b2bc8df0c4a69a0930e8b600351b2f125afe1c953a314760bc",
+    "pre_hashes_match": true,
+    "post_hashes_match": true,
+    "manifest_unchanged": true,
+    "detailed_record": "SHA256-MANIFEST1604.json"
+  },
+  "premises_not_duplicate_review_targets": [
+    "Exact connected forest activity and hard-core gas identity in COMPONENT-ALGEBRA1574",
+    "Rooted activity estimate and its uniform hypotheses in LABEL-TREE1592",
+    "REVIEW1592 retained context and adverse source obligations",
+    "Finite forest identity and fixed-factor regularity bridge as supplied external premises"
+  ],
+  "selected_primary_source": {
+    "url": "https://www.cts.cuni.cz/~kotecky/publ/K-CE-EMP06.pdf",
+    "http_status": 200,
+    "bytes": 208045,
+    "sha256": "2a56f2e4a3285aedf7934c6aa235e3da0dca3131b5ce52f4076e8c94819c6e5a",
+    "pinned_length_and_hash_match": true,
+    "pdf_pages": 11,
+    "independently_read_printed_pages": [3, 4, 5],
+    "selected_scope": [
+      "Finite graph independent-set partition definition",
+      "Taylor multiindices and repeated-type connected-graph coefficients",
+      "Condition 24 with distinct incompatible neighbors",
+      "Cluster expansion theorem (i) and (ii), including closed-polydisc absolute convergence and support-presence pinning"
+    ],
+    "reading_status": "selected definitions and theorem statement independently read",
+    "full_external_proof_audited": false,
+    "original_1986_article_accessed": false,
+    "publication_list_accessed": false,
+    "foreign_body_or_excerpts_saved": false,
+    "source_requests": 2,
+    "first_attempt": "Pinned bytes fetched successfully; local cp1252 display failed on a ligature; failure metadata preserved",
+    "second_attempt": "Pinned bytes fetched successfully and selected pages displayed in UTF-8",
+    "metadata_files": [
+      "review-tmp/selected-source1604-attempt1-display-failure.json",
+      "review-tmp/selected-source1604.json"
+    ],
+    "other_network_sources_accessed": false,
+    "prior_packet_access_failures_retained": true
+  },
+  "findings": [
+    {
+      "id": "F1604-1",
+      "topic": "Finite complex deletion induction",
+      "status": "supported",
+      "target_location": "FINITE-LOG1603.md lines 7-34",
+      "details": [
+        "Majorants and mu remain fixed on the entire domain",
+        "Every invoked partition and deletion ratio is a proper-subset induction case",
+        "The exact hard-core recursion holds for arbitrary complex weights",
+        "The self term yields the subtraction of mu_gamma",
+        "The scalar bound mu exp(-mu) <= 1-exp(-mu) gives a strict nonzero margin, including at budget equality",
+        "Zero activity radii cause no division or limiting defect"
+      ],
+      "adverse_example": "One type at w=-1 has Z=0 if the self term is incorrectly omitted"
+    },
+    {
+      "id": "F1604-2",
+      "topic": "Logarithm branch and boundary",
+      "status": "supported with explicit interpretation",
+      "target_location": "FINITE-LOG1603.md lines 11-40",
+      "details": [
+        "Each deletion ratio has a principal logarithm in the disk centered at one",
+        "The total log is the analytic branch normalized to zero at zero activities, not necessarily principal Log of total Z",
+        "Deletion-chain order independence follows from connectedness and normalization",
+        "Closed-polydisc bounds hold; zero-radius coordinates use relative interior or a local extension",
+        "For a fixed finite gas, neighborhood analyticity already gives qualitative absolute Taylor convergence; the later theorem supplies the identified quantitative pinned bound"
+      ],
+      "adverse_example": "32 independent types at w=i/8 have normalized-log imaginary part in (191/48,4), exceeding pi"
+    },
+    {
+      "id": "F1604-3",
+      "topic": "Exact activity and support incompatibility",
+      "status": "conditionally supported",
+      "target_location": "FINITE-LOG1603.md lines 44-55; DOBRUSHIN-DICTIONARY1604.md lines 13-30",
+      "details": [
+        "Types are nonempty original label subsets with the exact supplied z(S), including subsets with multiple raw-overlap components",
+        "Compatibility is disjoint raw scalar support, not merely disjoint label sets",
+        "Nonempty original supports enforce self incompatibility and prohibit reuse of labels in a family",
+        "Closed original-label neighborhoods give the exact union-bound dictionary and its Delta+1 self contribution",
+        "No new component, original-set or Mayer factorial is inserted"
+      ],
+      "remaining_limit": "Original physical factor/support/forest dictionary unverified"
+    },
+    {
+      "id": "F1604-4",
+      "topic": "Selected external criterion",
+      "status": "statement independently verified; application supported",
+      "target_location": "DOBRUSHIN-DICTIONARY1604.md lines 7-30",
+      "details": [
+        "Selected primary theorem uses the simple graph of other incompatible types",
+        "r_S=1-exp(-mu_S) translates the self-including budget exactly to condition 24",
+        "Self is paid once and removed from the neighbor product",
+        "The pinned bound equals mu_S and counts presence in multiindex support",
+        "The full external proof remains a literature premise"
+      ]
+    },
+    {
+      "id": "F1604-5",
+      "topic": "Repeated types and eta/theta budgets",
+      "status": "supported",
+      "target_location": "DOBRUSHIN-DICTIONARY1604.md lines 34-48",
+      "details": [
+        "Repeated types occur in log Z even though independent sets contain each type once",
+        "Original-root presence is bounded by a union over containing polymer types",
+        "Additional size weight uses sum_S X(S)|S| with multiplicities retained",
+        "Inflating radii by exp(theta|S|) gives mu'_S=|z(S)|exp((eta+theta)|S|)",
+        "The sufficient incompatibility budget is (Delta+1)b_(eta+theta)<=eta, not eta+theta on the right",
+        "No occurrence-weighted or physical field derivative is supplied by the selected presence-pinned statement"
+      ]
+    },
+    {
+      "id": "F1604-6",
+      "topic": "Smallness and uniform constants",
+      "status": "abstract window supported; source satisfaction unverified",
+      "target_location": "FINITE-LOG1603.md lines 46-62; DOBRUSHIN-DICTIONARY1604.md lines 40-48,52",
+      "details": [
+        "The logarithmic majorant bound at argument at most one half proves both explicit sufficient inequalities",
+        "B,D,m,Delta,J and product constants must be uniform in the intended family",
+        "m includes interactions and original cutoff-tail labels together",
+        "A spectral gap or bounded operator norm does not supply the required absolute covariance row sum",
+        "Actual joint scale/coupling/background dependence and smallness remain unverified"
+      ]
+    },
+    {
+      "id": "F1604-7",
+      "topic": "Extensive costs and physical transfer",
+      "status": "limits correctly retained; physical obligations unresolved",
+      "target_location": "FINITE-LOG1603.md lines 64-66; DOBRUSHIN-DICTIONARY1604.md lines 48-54",
+      "details": [
+        "sum_S mu_S <= |I|b_eta follows by root overcounting",
+        "The reciprocal bound exp(|I|b_eta) remains extensive",
+        "The incompatible-test-set deletion cost is valid only as an abstract gas deletion",
+        "Auxiliary original-label intensities are distinct from physical complex background/current variables",
+        "No physical conditional measure, normalized marginal, counterterm, spatial decay or mass-gap conclusion follows"
+      ],
+      "adverse_example": "Independent singleton activities -1/8 give Z=(7/8)^M and reciprocal (8/7)^M"
+    },
+    {
+      "id": "F1604-8",
+      "topic": "Checks and provenance",
+      "status": "exact finite checks passed; universal and physical limits retained",
+      "details": [
+        "Independent checks do not call the frozen hard-coded checker",
+        "No source PDF or extracted body saved",
+        "First display failure and older packet access failures preserved",
+        "No runtime identity, effort, scientific independence, formal proof or novelty attested"
+      ]
+    }
+  ],
+  "independent_checks": {
+    "helper": "review-tmp/independent-check1604.py",
+    "result": "review-tmp/independent-check1604.json",
+    "status": "all_checks_passed",
+    "python": "3.12.6",
+    "arithmetic": "exact integers and fractions",
+    "simple_four_type_graphs": 64,
+    "complex_phase_patterns_per_graph": 20,
+    "complex_systems": 1280,
+    "direct_partition_values": 20480,
+    "deletion_checks": 40960,
+    "formal_log_vs_connected_blowup_coefficient_comparisons": 4416,
+    "coefficient_total_degree_limit": 4,
+    "pinned_partial_sum_checks": 256,
+    "additional_rational_dobrushin_checks": 256,
+    "support_dictionary_polymer_types": 15,
+    "source_hypotheses_verified": false,
+    "universal_theorem_proved_by_tests": false
+  },
+  "retained_unresolved_obligations": [
+    "Actual finite source law and factor/support inventory",
+    "Maximal-domain and variational geometry; selected/free carriers",
+    "Uniform absolute covariance row sum J and combined-label incidence",
+    "Uniform all-subsets mixed-factor norm and actual smallness regime",
+    "External finite forest proof and full selected cluster-theorem proof not audited",
+    "Old failed component majorant and spatial-placement witness not retroactively validated",
+    "Old tagged covariance and exterior-reference source repairs not inspected",
+    "Moving cutoffs and physical complex-background/current domains",
+    "Correct baseline allocation, physical normalized marginal and intrinsic counterterm identity",
+    "Spatial decay, physical thermodynamic/continuum construction and mass gap"
+  ]
+}

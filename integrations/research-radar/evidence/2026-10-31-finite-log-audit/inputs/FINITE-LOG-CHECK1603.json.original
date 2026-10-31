@@ -1,0 +1,89 @@
+{
+  "scope": "Exact finite rational-complex checks, not source admission, source theorem audit or universal proof",
+  "polymer_types": [
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [
+      2
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      0,
+      1,
+      2
+    ]
+  ],
+  "epsilon": "1/64",
+  "complex_phases": [
+    "1",
+    "-1",
+    "i",
+    "-i",
+    "1",
+    "i"
+  ],
+  "a_i": "|type_i| log2",
+  "mu": [
+    "1/32",
+    "1/32",
+    "1/32",
+    "1/1024",
+    "1/1024",
+    "1/32768"
+  ],
+  "polydisc_majorant_criterion_certified_by_rational_upper_bound": true,
+  "type_subsets_checked": 64,
+  "nonzero_partitions": 64,
+  "exact_deletion_ratio_checks": 192,
+  "stronger_rational_disk_checks_passed": true,
+  "self_term_omission_counterexample": {
+    "one_activity": "-1",
+    "Z": "0",
+    "without_self_incompatibility_budget": "0"
+  },
+  "independent_negative_singleton_weights_extensive_normalizer": [
+    {
+      "sites": 1,
+      "Z": "63/64",
+      "reciprocal": "64/63"
+    },
+    {
+      "sites": 2,
+      "Z": "3969/4096",
+      "reciprocal": "4096/3969"
+    },
+    {
+      "sites": 4,
+      "Z": "15752961/16777216",
+      "reciprocal": "16777216/15752961"
+    },
+    {
+      "sites": 8,
+      "Z": "248155780267521/281474976710656",
+      "reciprocal": "281474976710656/248155780267521"
+    },
+    {
+      "sites": 16,
+      "Z": "61581291280182164914327485441/79228162514264337593543950336",
+      "reciprocal": "79228162514264337593543950336/61581291280182164914327485441"
+    },
+    {
+      "sites": 32,
+      "Z": "3792255435734639939700427436560372449070499280862066964481/6277101735386680763835789423207666416102355444464034512896",
+      "reciprocal": "6277101735386680763835789423207666416102355444464034512896/3792255435734639939700427436560372449070499280862066964481"
+    }
+  ],
+  "actual_source_hypotheses_verified": false,
+  "new_assessment": false
+}

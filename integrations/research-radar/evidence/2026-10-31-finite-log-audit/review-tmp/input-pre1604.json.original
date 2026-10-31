@@ -1,0 +1,113 @@
+{
+  "phase": "pre",
+  "recorded_at_utc": "2026-10-31T05:04:23.546340+00:00",
+  "inputs": [
+    {
+      "file": "inputs/FINITE-LOG1603.md",
+      "role": "target",
+      "bytes": 7485,
+      "sha256": "3d384acdc7cfb4b87466b2afc8c1167bff7e33e68cb18f72941ccc8cd8865e39",
+      "expected_bytes": 7485,
+      "expected_sha256": "3d384acdc7cfb4b87466b2afc8c1167bff7e33e68cb18f72941ccc8cd8865e39",
+      "matches_expected": true
+    },
+    {
+      "file": "inputs/DOBRUSHIN-DICTIONARY1604.md",
+      "role": "target",
+      "bytes": 6291,
+      "sha256": "58f254830a26fe629b8ab5b96a430fef1d806e7f9773d00ced8f52eaf6f7529e",
+      "expected_bytes": 6291,
+      "expected_sha256": "58f254830a26fe629b8ab5b96a430fef1d806e7f9773d00ced8f52eaf6f7529e",
+      "matches_expected": true
+    },
+    {
+      "file": "inputs/REVIEW1592.md",
+      "role": "context",
+      "bytes": 28221,
+      "sha256": "957530fd965c46da0cc0dd063a20aa23bdecca48a57d4f443f3b87179620b0cd",
+      "expected_bytes": 28221,
+      "expected_sha256": "957530fd965c46da0cc0dd063a20aa23bdecca48a57d4f443f3b87179620b0cd",
+      "matches_expected": true
+    },
+    {
+      "file": "inputs/COMPONENT-ALGEBRA1574.md",
+      "role": "context",
+      "bytes": 6478,
+      "sha256": "922573bede0eb109aa7f836d40295654db2dd2949b25805f4c9761d0f1123fd3",
+      "expected_bytes": 6478,
+      "expected_sha256": "922573bede0eb109aa7f836d40295654db2dd2949b25805f4c9761d0f1123fd3",
+      "matches_expected": true
+    },
+    {
+      "file": "inputs/LABEL-TREE1592.md",
+      "role": "context",
+      "bytes": 8653,
+      "sha256": "fccd0932cbe9db91957ba50541c0276952c5cf0afb44a8a1d5a4117281171e3b",
+      "expected_bytes": 8653,
+      "expected_sha256": "fccd0932cbe9db91957ba50541c0276952c5cf0afb44a8a1d5a4117281171e3b",
+      "matches_expected": true
+    },
+    {
+      "file": "inputs/FINITE-LOG-CHECK1603.json",
+      "role": "check",
+      "bytes": 1912,
+      "sha256": "5b66acd71594ae72b847c78572328c1541374a08a5137d0f05efc4b2c0cc97e8",
+      "expected_bytes": 1912,
+      "expected_sha256": "5b66acd71594ae72b847c78572328c1541374a08a5137d0f05efc4b2c0cc97e8",
+      "matches_expected": true
+    },
+    {
+      "file": "inputs/finite-log-check1603.py",
+      "role": "check_code",
+      "bytes": 2656,
+      "sha256": "92a6ff5611297222897fc9a1353154e8933ab3d9bd77b4d9877ee205d013b1ce",
+      "expected_bytes": 2656,
+      "expected_sha256": "92a6ff5611297222897fc9a1353154e8933ab3d9bd77b4d9877ee205d013b1ce",
+      "matches_expected": true
+    },
+    {
+      "file": "inputs/SOURCE-READING1604.json",
+      "role": "source_reading",
+      "bytes": 1769,
+      "sha256": "912e68d72322ce0e5ebafb26fb844eb4133119975d49d61a1eef232d63511d37",
+      "expected_bytes": 1769,
+      "expected_sha256": "912e68d72322ce0e5ebafb26fb844eb4133119975d49d61a1eef232d63511d37",
+      "matches_expected": true
+    },
+    {
+      "file": "inputs/PRIMARY-ACCESS1604.json",
+      "role": "access_record",
+      "bytes": 451,
+      "sha256": "94d56eb29f48a05526f573dc73b2662d38fcaecc75da9cf130b13f30d034dc98",
+      "expected_bytes": 451,
+      "expected_sha256": "94d56eb29f48a05526f573dc73b2662d38fcaecc75da9cf130b13f30d034dc98",
+      "matches_expected": true
+    },
+    {
+      "file": "inputs/CRITERION-READING1604.json",
+      "role": "access_record",
+      "bytes": 447,
+      "sha256": "032139d6af2e11b8670b7ec34ad013a2ccd38eea11a034ef7f8ef09988be5790",
+      "expected_bytes": 447,
+      "expected_sha256": "032139d6af2e11b8670b7ec34ad013a2ccd38eea11a034ef7f8ef09988be5790",
+      "matches_expected": true
+    },
+    {
+      "file": "REVIEW-GUIDE1604.txt",
+      "role": "guide",
+      "bytes": 3350,
+      "sha256": "8c067ca761edac7db539eafe5397b5f1cdc2f30d1a8d263b43d396b04b629442",
+      "expected_bytes": 3350,
+      "expected_sha256": "8c067ca761edac7db539eafe5397b5f1cdc2f30d1a8d263b43d396b04b629442",
+      "matches_expected": true
+    }
+  ],
+  "listed_input_count": 11,
+  "all_match_expected": true,
+  "total_listed_input_bytes": 67713,
+  "manifest": {
+    "file": "INPUT-MANIFEST1604.json",
+    "bytes": 3094,
+    "sha256": "18f0222e84cd25b2bc8df0c4a69a0930e8b600351b2f125afe1c953a314760bc"
+  }
+}

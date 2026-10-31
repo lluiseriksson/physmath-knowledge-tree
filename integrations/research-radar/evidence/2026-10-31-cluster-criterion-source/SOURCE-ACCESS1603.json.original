@@ -1,0 +1,35 @@
+{
+  "bibliographic_identity": {
+    "authors": ["R. Kotecky", "D. Preiss"],
+    "title": "Cluster expansion for abstract polymer models",
+    "journal": "Communications in Mathematical Physics",
+    "volume": 103,
+    "pages": "491-498",
+    "publication_year": 1986,
+    "DOI": "10.1007/BF01211762",
+    "primary_publisher_url": "https://doi.org/10.1007/BF01211762",
+    "reading_status": "catalogued_from_primary_publisher_search_metadata",
+    "original_theorem_read": false,
+    "original_proof_audited": false,
+    "paper_body_sha256": null
+  },
+  "access_attempts": [
+    {
+      "url": "https://www.math.ucla.edu/~biskup/290k.1.24w/PDFs/Kotecky-Preiss.pdf",
+      "method": "web.open",
+      "observed_result": "404 Not Found",
+      "body_retained": false,
+      "paper_hash_available": false
+    },
+    {
+      "url": "https://www.cts.cuni.cz/~kotecky/publ/K-CE-EMP06.pdf",
+      "method": "web.open",
+      "observed_result": "timeout; tool reported400",
+      "body_retained": false,
+      "paper_hash_available": false
+    }
+  ],
+  "deduplication": "No matching Kotecky/Preiss/DOI text found in existing research-radar registry; no card created or repository edited this activation.",
+  "own_work": "FINITE-LOG1603.md contains a complete new parent finite induction; it is not represented as the unseen original source proof, novel mathematics, or assessed1592.",
+  "scope": "Directed bibliographic lookup, not an exhaustive search; no corpus, paywall bypass, login or paid service. The separate12endpoint radar inventory has its own statuses/hashes."
+}
