@@ -33,6 +33,8 @@ npm run validate:research-radar
 
 ## Update cycle
 
+New bibliography and conditional synthesis: [real forest interpolation boundary](notes/2026-10-31-real-forest-boundary.md) distinguishes an old1994 preprint, a known-formula formalization and an unreviewed real Gaussian/cutoff argument. All-order connected estimates, source geometry and complex admission remain open; no formal dependency or assessment is inherited.
+
 New source perimeter: [nine laboratories and research groups](frontier-labs.json), with [eight newly indexed source cards and two bounded mechanism checks](notes/2026-10-28-frontier-labs.md). The screenshot wave paper was already indexed; no duplicate manuscript or new grade is created. Publication dates, actual reading depth, benchmark restrictions and formal dependency locks are explicit.
 
 New connected extension: [common support with noncommuting prepared outputs](notes/2026-10-28-cq-support.md) records the dependent technical audit, certified separation from trace contraction, NPT readout limitation and a falsified uniform-cost explanation. The classical-support v2 is public with importance7.0/global6.7/technical8.8; its full reports and correction chain remain linked. The new exact21-page PDF is under full review and inherits no grade. No graph confidence is promoted.
