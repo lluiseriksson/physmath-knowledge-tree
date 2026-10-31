@@ -1,0 +1,330 @@
+{
+  "execution": 1754,
+  "assessment_kind": "FRESH_NATIVE_BOUNDARY_CONSTRAINT_DATUM_REVIEW",
+  "verdict": {
+    "code": "NATIVE_COUNTERTEST_SUPPORTED_PHYSICAL_ADMISSION_WITHHELD",
+    "summary": "En la instancia nativa existencial descrita, con el bloque grande alineado y a suficientemente pequeño, el dato es compatible con las hipótesis de la fuente y la ecuación (1.31) da exactamente B_b=aT/28561, no cero. La identidad universal B_b=(1/i)log(V_prime_b) falla en esta frontera. Esto no es una identificación ni una admisión de la fibra física elegida.",
+    "native_formula_matches_source": true,
+    "native_hypotheses_supported_for_declared_source_instance": true,
+    "naive_identity_bridge_refuted_on_that_native_domain": true,
+    "actual_physical_M1_equality_established": false,
+    "physical_admission": false,
+    "input_modified_or_repaired": false,
+    "qualification": "Se acepta una construcción de instancia de la fuente, con sus parámetros geométricos y umbral de pequeñez existenciales. No se certifica una geometría física fija no suministrada, una cota numérica uniforme de carta, ni una prueba completa de Theorem 2."
+  },
+  "review_provenance": {
+    "requested_model": "gpt-6-astra",
+    "requested_reasoning_effort": "xhigh",
+    "actual_model_identity_authenticated": false,
+    "actual_reasoning_effort_authenticated": false,
+    "reviewer_independence_authenticated": false,
+    "actual_model_or_effort_asserted": null,
+    "context_statement": "Revisión realizada en el contexto separado de esta tarea. No se abrieron ni se heredaron como evidencia evaluaciones 1753, 1752 u otras anteriores. La identidad real del modelo, el esfuerzo real y la independencia epistemológica no quedan autenticados por esta respuesta.",
+    "assessment_basis": "Lectura íntegra del objetivo y testigo fijados, verificación SHA256, lectura visual de páginas primarias indicadas y páginas de apoyo, y cálculo exacto propio de fases enteras/racionales.",
+    "ai_review_not_peer_review": true,
+    "full_manuscript_review": false,
+    "full_proof_audit": false,
+    "capacity_or_acceptance_certification": false,
+    "new_paper_or_publication": false,
+    "scores_or_numeric_grade_assigned": false,
+    "additional_agents_spawned": false,
+    "payments_or_external_publication": false,
+    "pdf_or_png_files_created": false,
+    "rendering": "PyMuPDF rendered complete pages to PNG bytes in memory; images were emitted for visual inspection without saving corpus PDF/PNG copies.",
+    "only_output_file_written": "ASSESSMENT1754.json",
+    "output_encoding": "UTF-8 without BOM, LF line endings"
+  },
+  "hash_bindings": [
+    {
+      "role": "frozen_target",
+      "path": "C:/Trabajo/airr/2026-10-31_execution1754/NATIVE-BOUNDARY-TARGET1754.json",
+      "sha256": "50812322eeaa5d981ee6757e3a20cab54c440df569c61f058363736308c54f03",
+      "verified": true,
+      "read_entire": true
+    },
+    {
+      "role": "frozen_witness",
+      "path": "C:/Trabajo/airr/2026-10-31_execution1754/BOUNDARY-PHASE-CHECK1754.json",
+      "sha256": "953b6ef5f02e3d1942670cf092f5c2fd643702d7da7a23686aba01f38c2e6757",
+      "verified": true,
+      "read_entire": true
+    },
+    {
+      "role": "primary_fused_pdf",
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balabanfusion.pdf",
+      "sha256": "00cc6b218dcf0e1c2884e135caa1d57b3591df036540b685e7440f30cbd4ff16",
+      "verified": true,
+      "read_entire": false
+    }
+  ],
+  "read_pages": {
+    "required_complete_visual_and_text": [
+      {
+        "work": "Spaces of Regular Gauge Field Configurations on a Lattice and Gauge Fixing Conditions, CMP 99 (1985), 75-102",
+        "printed": [
+          81,
+          82,
+          83
+        ],
+        "fusion_zero_based": [
+          218,
+          219,
+          220
+        ],
+        "use": "Equations (1.28)-(1.39), boundary datum (1.31), explicit noncontainment remark, Theorem 2 statement."
+      },
+      {
+        "work": "Averaging Operations for Lattice Gauge Theories, CMP 98 (1985), 17-51",
+        "printed": [
+          30,
+          31,
+          32,
+          33
+        ],
+        "fusion_zero_based": [
+          307,
+          308,
+          309,
+          310
+        ],
+        "use": "Equations (78)-(105), especially the distinction between original and new relative averages, (87), (89)-(92), (97), (99), (105)."
+      }
+    ],
+    "supporting_complete_visual_and_text": [
+      {
+        "work": "Spaces",
+        "printed": [
+          77,
+          78,
+          79
+        ],
+        "fusion_zero_based": [
+          214,
+          215,
+          216
+        ],
+        "use": "Geometry, graded strata, bond-star convention, regularity (1.7)-(1.9), original averaging constraint and equivariance, axial condition (1.19)."
+      },
+      {
+        "work": "Averaging",
+        "printed": [
+          17,
+          18,
+          19,
+          21,
+          23,
+          24,
+          28,
+          29
+        ],
+        "fusion_zero_based": [
+          294,
+          295,
+          296,
+          298,
+          300,
+          301,
+          305,
+          306
+        ],
+        "use": "Anchored blocks (2), group and ordered contours (8)-(9), original average (11),(15),(42), original equivariance proof, principal logarithm, coordinate contour, and relative formula (63)."
+      },
+      {
+        "work": "Propagators for Lattice Gauge Theories in a Background Field, CMP 99 (1985), 389-434",
+        "printed": [
+          396
+        ],
+        "fusion_zero_based": [
+          173
+        ],
+        "use": "Additional regularity condition (3.35), checked directly for U0=I with A=0."
+      }
+    ],
+    "additional_text_only_reading": "Spaces pages 75,76,80,102 and Averaging pages 20,22,25-27; Background pages 389-391. Searches of the fused PDF located (3.35) and checked for restrictions on L. Extracted search hits and some unrelated neighboring pages (fusion 278-293) were not used as a substitute for the cited primary statements. No entire-source or entire-proof reading is claimed.",
+    "source_lookup_warning": "Fusion page numbers do not form one continuous printed-page offset across papers. The required page pairs above were confirmed by their visible printed headings and page numbers."
+  },
+  "source_formula_check": {
+    "status": "CONFIRMED",
+    "locator": "Spaces printed 81-82, fusion 218-219, (1.30)-(1.31)",
+    "notation": "Let Ubar_old denote the original average, Ubar_new the new background-relative average, and V_prime_j=V_j*(Ubar_old_0_j)^(-1). These objects are not interchangeable.",
+    "boundary_orientation": "b_minus in Lambda_(j-1), b_plus in Lambda_j; the frozen bond goes from old anchor y to inside anchor y+L e1.",
+    "boundary_formula": "W_b = exp(-i * sum_{z in B(b_minus)} L^(-d) * (1/i)log((Rbar_(0,b_minus)^(j-1) V_prime)(Gamma_(b_minus,z)))) * V_prime_b; B_b=(1/i)log(W_b).",
+    "multiplication_order": "The correction is on the LEFT of V_prime_b, exactly as printed. No orientation reversal or matrix commutation is needed.",
+    "interior_formula": "For both endpoints in Lambda_j, W_b=V_prime_b.",
+    "graded_context": "The source derives this datum after replacing anchor-fixed gauge transformations by averaged gauge constraints (1.29); it explicitly states that the resulting Sigma_k is not in general contained in the original fixed-original-average space.",
+    "new_constraint": "Equation (1.37) uses Q_j(U0,eta A)=B with B from (1.31), not the raw logarithm of unmodified coarse V_prime.",
+    "notation_precision_finding": "The frozen phrase that R0^0 is a zero-step identity is an incomplete explanation of this symbol. In the contour term it is background parallel transport at level zero, not merely the zero-fold averaging operation. For U0=I all those conjugations are indeed identity, so this imprecision does not change the frozen calculation. The simplification would not hold for an arbitrary U0 merely because j=1.",
+    "noncommutative_order_limit": "The one-parameter witness is commutative and V_prime_b=I, so numerical phases alone could not detect a left/right error. The LEFT placement was checked in the primary printed formula independently of the witness."
+  },
+  "original_mean_versus_new_relative_mean": {
+    "original_definition": "Averaging (15)/(42): Ubar_old_c=exp(i sum_z L^(-d)(1/i)log[U(Gamma_(c,z))*U(c)^(-1)])*U(c).",
+    "original_equivariance": "Averaging (11), proved after (43), and Spaces (1.13)-(1.14): the original average transforms by h at the coarse endpoints.",
+    "pure_gauge_evaluation": "For U_prime(v,w)=h(v)h(w)^(-1), every full path telescopes to h(start)h(end)^(-1). Thus U_prime(Gamma_(c,z))*U_prime(c)^(-1)=I. Since h=I at every coarse anchor, Ubar_old_prime_c=I exactly. This also follows from original anchor equivariance. At grade zero V_prime is U_prime, including the nonzero old fine data.",
+    "relative_definition": "Averaging (63), reformulated in (89): for U0=I the new one-step relative average is M_(c_minus)^(-1) * Ubar_old_prime_c * M_(c_plus), where M_y=exp(i sum_{z in B(y)}L^(-d)(1/i)log U_prime(Gamma_(y,z))).",
+    "relative_evaluation": "M_y=exp(-i aT/28561), M_(y+13e1)=I, and Ubar_old_prime_b=I. Therefore the new relative average at this boundary equals exp(i aT/28561), in agreement with Spaces (1.31). This uses the new average definition as an algebraic cross-check; it does not set the source Landau transformation equal to identity.",
+    "logical_distinction": "Flatness and anchor equivariance force the original average to be I. They do not force the new relative average to be I. A claim identifying both would discard the endpoint path factors."
+  },
+  "native_hypotheses": [
+    {
+      "item": "Geometry and scale conventions",
+      "status": "SUPPORTED_FOR_THE_DECLARED_SOURCE_INSTANCE",
+      "evidence": "Averaging (2) uses corner-anchored half-open cubes, not centered blocks. In fine-lattice integer coordinates at j=1, B(y)=y+{0,...,12}^4. The local edge of length 13 is a nearest-neighbor bond on the coarse lattice. Physical coordinates multiply these local coordinates by eta.",
+      "reason": "Spaces (1.3)-(1.5) requires X to be a union of big blocks of side M1*L*eta with the separation determined by R. Choose the sufficiently large torus and aligned large box already allowed by the frozen input; translate a flat face patch so its outside coarse anchor is 0 and its inside coarse anchor is (13,0,0,0), keeping tangential edges and torus seams away. Translation does not require X itself to be a single L-block.",
+      "separation": "With k=1 and Omega0 equal to the whole torus, which Spaces explicitly permits, the separation from Omega0 complement is vacuous. Lambda0=Omega0 minus X; Lambda1=X intersected with the coarse lattice. The coarse crossing edge is part of the Lambda1 bond-star because its positive endpoint is in Lambda1.",
+      "limit": "No actual numerical torus, M1 or R was supplied or changed. This verifies the existence of the described native realization; it does not verify placement in a separately fixed physical torus. L=13 meets the Averaging stated requirement that L is an integer greater than 1; no contrary L-specific restriction was found in the cited theorem setting."
+    },
+    {
+      "item": "Support and allowed old contours",
+      "status": "CONFIRMED",
+      "evidence": "For every z in B(0), the native coordinate contour Gamma_(0,z) stays within this block and hence within Lambda0. In particular its first coordinate remains below 13.",
+      "reason": "The one exceptional site z_star=(1,1,0,0) has positive distance from X and is not a coarse anchor. Some of its coordinates are on faces of B(0); strict old means strictly outside X, not topological interior in all four block coordinates. This does not violate any source requirement. The global field includes every incident bond, even those leaving this particular old block, and all such nontrivial incident bonds remain outside X.",
+      "no_exterior_deletion": true
+    },
+    {
+      "item": "Fixed group and logarithm branch",
+      "status": "CONFIRMED_UNDER_THE_STATED_NONZERO_LIE_ALGEBRA_CHOICE",
+      "reason": "For a nonzero Hermitian T in the fixed Lie algebra, all h and U_prime values lie in that same group. No substitution of the physical group, couplings or cutoff is used. With a*operator_norm(T)<pi and sufficiently smaller if required by the source chart, the primary logarithm of exp(-i aT) is exactly -i aT.",
+      "limit": "The input does not identify a separate concrete physical group or its chosen representation; the argument requires the stated nonzero T to exist in its Lie algebra. The optional SU(2) example was not substituted for the fixed group or used to claim physical admission."
+    },
+    {
+      "item": "Gauge invariant regularity and additional background regularity",
+      "status": "CONFIRMED",
+      "reason": "Every plaquette product of the globally defined pure gauge telescopes to I, including plaquettes touching the exceptional site. Covariant derivatives of the identity plaquette configuration vanish. Thus (1.7)-(1.9) hold with zero left sides for every positive alpha0, independently of a. U0=I satisfies the same conditions. For the separate Background (3.35) condition, on every required cube take the identity gauge transformation and A=0; both bounds vanish.",
+      "limit": "Flatness alone is not a claim that arbitrarily large a remains in the logarithm/mean chart or satisfies (1.35). Those are checked separately."
+    },
+    {
+      "item": "Native axial condition",
+      "status": "CONFIRMED",
+      "evidence": "Spaces (1.19) at k=1 imposes the background-relative axial path condition only inside B(x1) for x1 in Lambda1.",
+      "reason": "The support of h is in the old exterior; h=I at every vertex of every active block in X. Consequently U_prime=I on the corresponding internal paths, and U0=I makes the relative transports trivial. There is no native requirement to impose the active-block axial condition inside this old Lambda0 block. Adding such an exterior axial condition would change the problem."
+    },
+    {
+      "item": "Original averaging constraint and closeness (1.35)",
+      "status": "CONFIRMED_FOR_SUFFICIENTLY_SMALL_NONZERO_A",
+      "reason": "V is defined by the actual original graded averages, so (1.13) holds by construction. For j=1, original V and the original average of U0 are I. For j=0, each difference from I has norm at most a*norm(T), up to the fixed norm convention, and tends to zero with a. Choose positive alpha0 and alpha1 satisfying alpha0+alpha1<=c1 in Theorem 2, then choose nonzero a small enough for the grade-zero bound and the relative-mean charts. This choice does not alter the field shape or domain.",
+      "limit": "No numerical value for c1 or uniform chart radius has been proved. The exact rational coefficient below does not depend on such a numerical estimate."
+    },
+    {
+      "item": "Use of Theorem 2 and Landau gauge",
+      "status": "SOURCE_THEOREM_APPLICABLE_CONDITIONALLY_ON_ITS_STATED_RESULT",
+      "reason": "The preceding direct checks support the stated hypotheses (1.33)-(1.35) for this native instance. Accepting the source Theorem 2, its gauge-fixed U1=exp(i eta A) obeys (1.29) and Q_j(U0,eta A)=B with the nonzero boundary value calculated here.",
+      "not_assumed": "Neither a Landau field A nor its gauge transformation u was computed, and u=I or U_prime already being Landau was not assumed. The proof of Theorem 2 was not re-audited."
+    }
+  ],
+  "exact_boundary_calculation": {
+    "fixed_coordinates": {
+      "old_anchor": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "special_old_site": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "inside_anchor": [
+        13,
+        0,
+        0,
+        0
+      ]
+    },
+    "L": 13,
+    "d": 4,
+    "number_of_fine_block_sites": 28561,
+    "path_product": "U_prime(Gamma_(y,z))=h(y)*h(z)^(-1). It equals exp(-i aT) for z=z_star and I otherwise, even for paths that pass through z_star and then leave it.",
+    "principal_path_log_divided_by_i": "-aT at the one exceptional endpoint, 0 at all other endpoints.",
+    "old_path_average": "S_y=-aT/28561",
+    "coarse_original_datum": "V_prime_b=I",
+    "actual_group_target": "W_b=exp(-i*S_y)*I=exp(i*aT/28561)",
+    "actual_lie_algebra_target": "B_b=(1/i)log(W_b)=aT/28561",
+    "naive_target": "(1/i)log(V_prime_b)=0",
+    "nonzero_statement": "For T nonzero and sufficiently small nonzero a, B_b is nonzero and W_b differs from I. This is an exact identity in the one-parameter subgroup, not a first-order truncation or small-factor approximation.",
+    "eta_convention": "B is the dimensionless logarithmic target in Q_j(U0,eta A). No additional eta factor belongs in aT/28561 under the frozen definition h=exp(i aT)."
+  },
+  "independent_witness_check": {
+    "method": "In-memory exhaustive integer-phase calculation over {0,...,12}^4 using the source coordinate order d through 1, followed by exact rational averaging. No floating-point SU(2) specialization and no Landau solver.",
+    "phase_distribution": {
+      "zero": 28560,
+      "minus_one": 1
+    },
+    "unique_exceptional_endpoint": [
+      1,
+      1,
+      0,
+      0
+    ],
+    "all_old_path_vertices_in_old_block": true,
+    "original_mean_closed_contour_phase_values": [
+      0
+    ],
+    "old_path_average_phase": "-1/28561",
+    "left_correction_phase": "1/28561",
+    "matches_frozen_witness": true,
+    "evidentiary_limit": "The witness checks exact combinatorics and signs after the native formula is identified. It cannot by itself authenticate a physical fiber, the source hypotheses, matrix order in a noncommuting case, or the model identity."
+  },
+  "falsifier_results": [
+    {
+      "falsifier": "Wrong orientation or order in (1.31)",
+      "result": "Not found: the printed formula has exactly the frozen old-to-inside orientation and LEFT factor."
+    },
+    {
+      "falsifier": "An old contour leaves its finer stratum",
+      "result": "Not found: the entire anchored block lies in Lambda0 and every coordinate path stays in it."
+    },
+    {
+      "falsifier": "The actual original mean is not I",
+      "result": "Not found: both original equivariance and the original contour definition yield I exactly."
+    },
+    {
+      "falsifier": "The source axial condition excludes the field",
+      "result": "Not found: active X blocks are identically I; the nontrivial site is in the old stratum."
+    },
+    {
+      "falsifier": "Regularity or smallness excludes every nonzero amplitude",
+      "result": "Not found: invariant curvature bounds vanish, U0 satisfies (3.35) trivially, and original grade-zero closeness can be arbitrarily small."
+    },
+    {
+      "falsifier": "The patch assumes a single small block satisfies large-block geometry",
+      "result": "Not found in the frozen claim: it explicitly embeds the patch into a large aligned box. That existential construction is compatible with (1.4). No particular physical embedding is established."
+    }
+  ],
+  "adverse_and_qualifying_findings": [
+    {
+      "target": "Naive universal identity bridge",
+      "finding": "Adverse: B=(1/i)log(V_prime) is false on this admitted native boundary instance. A correct source constraint map must retain the boundary functional of the fine exterior data."
+    },
+    {
+      "target": "Explanation of R0^0",
+      "finding": "Minor notation precision issue preserved: triviality comes from U0=I, not from treating the level-zero background transport as automatically a zero-fold average. The result and frozen datum are unchanged."
+    },
+    {
+      "target": "Physical interpretation",
+      "finding": "The input does not provide the dictionary from this source-instance geometry and these original means to an actual chosen physical M^1. Source-level validity does not supply that dictionary."
+    }
+  ],
+  "established_scope": [
+    "The stated native boundary formula, its orientation, and its multiplication order match the primary source.",
+    "The anchored old-block pure-gauge datum can satisfy the native original-mean, axial, geometric, regularity and smallness hypotheses in the existential source setting described.",
+    "The exact native replacement datum is nonzero although the original coarse datum is identity.",
+    "The boundary functional depends on the old fine data and cannot universally be replaced by the raw coarse logarithm."
+  ],
+  "no_admission": {
+    "physical_admission": false,
+    "positive_original_P0_P1_Q1_sector_weight_proved": false,
+    "zero_or_impossible_sector_weight_proved": false,
+    "actual_chosen_physical_M1_identified": false,
+    "normalized_marked_fiber_map_constructed": false,
+    "inverse_or_gauge_reconstruction_constructed": false,
+    "constrained_jacobian_or_haar_fp_factors_proved": false,
+    "source_action_marks_normalizers_collars_sector_labels_history_closed": false,
+    "held_P1_issues_repaired": false,
+    "full_change_of_measure_formula_proved": false,
+    "new_physical_family_or_cutoff_replacement": false,
+    "paper_manuscript_pdf_capacity_or_publication_admission": false,
+    "interpretation": "Este resultado es un cálculo nativo de dato/constraint y un contraejemplo a una especialización ingenua de identidad. No decide las cuestiones físicas anteriores ni afirma su imposibilidad."
+  }
+}

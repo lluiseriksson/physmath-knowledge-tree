@@ -1,0 +1,20 @@
+{
+  "scope": "Exact rational one-block phase sanity check for the explicit coordinate map, not a non-Abelian Haar proof or physical sector realization",
+  "L": 13,
+  "d": 4,
+  "N": 28561,
+  "point_gauge_k_root_phase": "0",
+  "point_gauge_k_special_phase": "1",
+  "point_gauge_k_other_phase": "0",
+  "A_k_phase": "1/28561",
+  "g_phase": "-1/28561",
+  "u_root_phase": "-1/28561",
+  "u_special_phase": "28560/28561",
+  "u_other_phase": "-1/28561",
+  "u_block_average_phase": "0",
+  "point_axial_Z_coarse_outgoing_phase": "0",
+  "averaged_axial_Y_coarse_outgoing_phase": "-1/28561",
+  "original_U_coarse_outgoing_phase": "0",
+  "relation": "Y=Z^(l_g), u=l_g*k, U=Y^(u^-1)=Z^(k^-1); a multiplies every phase",
+  "warning": "Setting Y=Z while changing k would be wrong: the compensating coarse frame rotation is essential."
+}

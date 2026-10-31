@@ -1,0 +1,37 @@
+{
+  "scope": "Additional editorial-integration assessment, not a repeat of1754/1754S/1755. Source manifest and reviewed note snapshot unchanged.",
+  "inputB": {
+    "path": "PUBLIC-INTEGRATION1756B.json",
+    "sha256": "3587cf384889409bbb209dbb6158c056524c21e84379b85b51c17791897c2561"
+  },
+  "line_ending_addendumC": {
+    "path": "PUBLIC-INTEGRATION1756C.json",
+    "sha256": "a7aea133eca1d291ccfc9c4dfd4a32c33b8bba13a28d5ac87cb2b3631fbf4676"
+  },
+  "full_editorial_assessment": {
+    "path": "ASSESSMENT1756.json",
+    "sha256": "ddff7318271236b477a5e2f652ee150c4cf2bdfb673231df1af25094095c982e"
+  },
+  "note_snapshot": {
+    "path": "PUBLIC-NOTE-PROPOSED1756B.txt",
+    "sha256": "04cde71c9fe69a54c633e2d3caf2a78167fbc91cb4c18339d0e7c99e759c7a73"
+  },
+  "baseline_note": {
+    "path": "PUBLIC-NOTE-BEFORE1756.txt",
+    "sha256": "d44c7a104e3969efa6c1bdd0198dd79acd3faca997fdb7bf7571c13d6f32134e"
+  },
+  "preserved_pre_review_errors": [
+    "EDITORIAL-CORRECTION1756.json: initial guessed DOI corrected against publisher before review",
+    "README-BEFORE-LF1756.json: base64-encoded original CRLF bytes, hash verified; final README is LF"
+  ],
+  "provenance": "Requested Astra/xhigh; effective identity/effort/independence unauthenticated, unscored AI assessment, not peer review or a manuscript/PDF grade.",
+  "final_note_D": {
+    "path": "PUBLIC-NOTE-FINAL1756D.txt",
+    "sha256": "e176966f79f8a82b812a7febc4933853474ffa5dfc416e780d2c7aca7b12be22",
+    "delta": "Only the two exact W01/W02 wording replacements recommended by report1756; no new mathematical claims."
+  },
+  "exact_wording_disposition": {
+    "path": "EDITORIAL-DISPOSITION1756.json",
+    "sha256": "38017d7d71c7790c6a13729873bc33d1c221af8bfa97e58194be86c95d2a5491"
+  }
+}
