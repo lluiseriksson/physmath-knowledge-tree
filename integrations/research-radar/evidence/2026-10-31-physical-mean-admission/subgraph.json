@@ -1,0 +1,82 @@
+{
+  "scope": "Small canonical context retrieved before synthesis; graph proximity is not proof; no graph edit",
+  "nodes": [
+    {
+      "id": "domain.analysis",
+      "kind": "domain",
+      "title": "Analysis",
+      "summary": "Limits, differentiability, integration, measure and analytic estimates.",
+      "confidence": "literature",
+      "tags": [
+        "analysis",
+        "measure",
+        "integration",
+        "estimates"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Analysis.Calculus.Deriv.Basic",
+          "Mathlib.MeasureTheory.Measure.MeasureSpace"
+        ],
+        "declarations": [
+          "HasDerivAt",
+          "MeasureTheory.Measure"
+        ],
+        "targets": [
+          "Create toy estimates that can be reused by PDE and spectral nodes."
+        ]
+      },
+      "questions": [
+        "Which estimate is the actual bottleneck of a proposed proof route?"
+      ],
+      "references": [
+        {
+          "label": "T. Tao — Analysis I",
+          "url": "https://terrytao.wordpress.com/books/analysis-i/",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "domain.quantum_field_theory",
+      "kind": "domain",
+      "title": "Quantum field theory",
+      "summary": "Fields, quantization, path integrals, operator algebras and renormalization heuristics.",
+      "confidence": "heuristic",
+      "tags": [
+        "qft",
+        "fields",
+        "renormalization",
+        "path-integral"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib"
+        ],
+        "declarations": [],
+        "targets": [
+          "Replace informal path-integral claims with finite or algebraic toy models."
+        ]
+      },
+      "questions": [
+        "Which physical heuristic has a finite, constructive or operator-algebraic version?"
+      ],
+      "references": [
+        {
+          "label": "A. Jaffe and E. Witten — Quantum Yang-Mills Theory",
+          "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
+          "type": "paper",
+          "scope": "context"
+        },
+        {
+          "label": "R. Haag — Local Quantum Physics",
+          "url": "https://link.springer.com/book/10.1007/978-3-642-61458-3",
+          "type": "book",
+          "scope": "context"
+        }
+      ]
+    }
+  ],
+  "edges": []
+}
