@@ -362,3 +362,115 @@ Evidence levels remain **literature** for selected primary statements,
 **heuristic** for the source-dependent parent deduction and repaired mechanism,
 **speculative** for actual physical/global closure, **formal**: none new.
 Canonical graph, Lean declarations and evaluation routes are unchanged.
+
+
+## Three-note reflection audit and explicit source specifications
+
+The separate [audit1516 packet](../evidence/2026-10-31-reflection-framework-audit/README.md)
+contains the full report, exact1473–1475 inputs, original assessment bytes and
+all objections. It accepts the **conditional finite-dimensional analytic
+implication** under the stated product domain, C2 real potential, uniform
+positive Hessian, finite Hessian range, both block sums and full Euclidean
+observable Lipschitz bounds. Weighted corner signs, Schur conjugation, dual
+gradient orientation, covariance normalization and final2/m constant were
+checked without finding a material error or hidden volume factor.
+
+Requested configuration was GPT-6 Astra/xhigh; actual runtime routing/effort
+and scientific independence are unverified. Inputs were authored by the
+participating parent and reviewed in a separately assigned context. This is
+not a peer-review claim or an assessment of this evolving synthesis/PDF.
+There is no numerical grade. The adverse six-note1501 report above remains
+intact; its subject and the present three-note subject are different.
+
+Two minor specifications are adopted from the full report:
+
+1. Slominski's printed theorem uses a square coefficient/driver. For n raw
+   coordinates, use state(A,q) in U x R, driver(s,B_s), first n coefficient
+   rows(-gradH,sqrt(2)I), final row zero. The auxiliary q remains zero and
+   boundary normals have zero last component. Source domain(A),(B) constants
+   inherit those of U, and projection gives the desired reflected SDE.
+2. A finite disconnected graph can have infinite distances. Constant
+   observables have zero covariance. Otherwise use positive weights
+   exp[-alpha min(dist(b,S),M)] and then M->infinity. This retains the same
+   interaction-block conjugation estimate and gives zero covariance across
+   disconnected components. Treat the diagonal R_H=0 case separately and
+   keep the interpolation parameter fixed during each diffusion time s.
+
+These are subsequent parent specifications in the synthesis, not a newly
+reviewed manuscript version. The review does **not** verify actual physical
+product cutoffs, the hard-to-soft gap bridge, full inside/exterior margins,
+raw finite-range action/Jacobian, primitive constants or the nine1485–1493
+first-mean/source/gauge/metric notes. Those retain their prior evidence level.
+
+### Exact first normalization and a sufficient global current criterion
+
+Subsequent selected-source readings clarify the remaining dictionary.
+CMP109 printed260 Eq1.4 defines its Gaussian integral WITH the linear
+average delta constraint. Splitting selected and free coordinates in
+Ms+Na=0 gives z0=|detM|^-1, Ca=(-M^-1Na,a), and
+
+```text
+ZG_source=C_norm z0 IG_free,
+Z_full,delta=z0 I_delta=ZG_source E_gamma[1_K exp(v-g0^-2 Vrem)].
+```
+
+Use matching measure conventions throughout. The aggregated Gaussian/activity
+convention already allocates z0: it must not be added a second time. No source
+omission or nonconstant-z0 claim is made. Background-only terms cancel from
+first normalized score covariances while still belonging in the next marginal.
+
+CMP109260 Eq1.2 explicitly includes both fine plaquette regularity and current
+J regularity, and cites CMP102277–279 Theorem1 for a sufficient SMALL COARSE
+INPUT criterion. On the boundary-free global first-minimizer branch, that
+literature theorem supplies both bounds when epsilon_V<=a1 and
+B3 epsilon_V<=epsilon_reg<=a0. Its proof was not audited here. For an
+independently admitted next reconstruction with original-gauge coarse-link
+response K_V epsilon_next, four-link telescoping gives
+rV<=r_base+4K_V epsilon_next. Thus
+
+```text
+tV=min(a1/2,epsilon_reg/(2B3)),
+r_base<tV/2,
+epsilon_next<=tV/(8 max(1,K_V))
+```
+
+is a sufficient symbolic global admission criterion. K_V must not be obtained
+circularly by assuming the desired first current class. Local determining
+fields still require the source's actual mixed-scale/boundary condition7;
+global admission does not certify those localized hypotheses. Prior matched
+first-cutoff prefactor ambiguity, inner margins and linked couplings remain.
+No numerical constant, event probability, arbitrary-background or all-scale
+certificate is supplied.
+
+### What the two-level implication still needs
+
+Let E depend on NEXT free raw coordinates only. The exact joint law
+mu0,V(dA) nu1,W(dV|E) preserves the original first cutoff and original means.
+If the uniform first conditional and actual nonlocal first-mean estimates
+hold on that whole event, the repaired next curvature plus deterministic
+anchor geometry D0>=L D1-cL give a conditional C_L g1^2 exp(-lambda D1)
+bound. Coupling comparison g0^2<=(3/2)g1^2 is explicit, not a relabeling.
+The tower identity itself proves none of those physical estimates.
+
+For real normalized traces |f|,|g|<=1, p=P(E), q=1-p, the exact Bernoulli
+covariance tower gives
+
+```text
+|Cov_P(f,g)-p Cov_(P|E)(f,g)| <= q+4pq <=5q,
+|Cov_P(f,g)-Cov_(P|E)(f,g)| <=6q.
+```
+
+A separation-independent small q leaves a separation-independent floor.
+Complement connected estimates or appropriate distance-sensitive control
+are still required, together with the outer W covariance of means. Thus the
+global shortcut remains **abandoned**, and the next substantive task is the
+actual source-specific score/gauge/metric application, not more generic
+reflection constants or separate auxiliary papers.
+
+Levels: **literature** for inspected primary statements; **heuristic** for
+participating-parent source/application and threshold compositions;
+**speculative** for physical complement/history/global closure; **formal**:
+none new. The unscored analytic review is an additional assessment, not a
+graph-confidence promotion. Falsifiers remain a coupled actual cutoff,
+failed uniform Hessian/block/chart bounds, circular background inclusion,
+incorrect marginal normalization or erased outer response.

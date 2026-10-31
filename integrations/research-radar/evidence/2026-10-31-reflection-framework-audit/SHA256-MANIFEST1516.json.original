@@ -1,0 +1,61 @@
+{
+  "audit_id": "1516",
+  "created_at_utc": "2026-10-31T00:32:54.145101+00:00",
+  "hash_algorithm": "SHA256",
+  "input_manifest": {
+    "file": "INPUT-MANIFEST1516.json",
+    "sha256": "70757cbe8348ef4fcbfcd04e20e48126fa6aaa3c9ac3bc0469e0377d52c5ac6f",
+    "bytes": 2788
+  },
+  "inputs": [
+    {
+      "file": "REFLECTION1473.md",
+      "bytes": 6819,
+      "sha256": "6a046dd5573c3dcb486a802312ed79f54e47b842649e222ac6d00ee39827854c",
+      "verified": true,
+      "read_completely": true
+    },
+    {
+      "file": "FRAMEWORK1474.md",
+      "bytes": 6458,
+      "sha256": "c02371b3f7937193399c162915aa1dfcdd669749235df554a5a7a431294cb45e",
+      "verified": true,
+      "read_completely": true
+    },
+    {
+      "file": "CONDITIONAL-DOSSIER1475.md",
+      "bytes": 9678,
+      "sha256": "04269b524379768a01c1fc27cf62db00971ee18ef595086aa00b53e782c9a189",
+      "verified": true,
+      "read_completely": true
+    }
+  ],
+  "primary_sources": [
+    {
+      "name": "asz",
+      "url": "https://cvgmt.sns.it/media/doc/paper/697/asz.pdf",
+      "bytes": 399178,
+      "sha256": "ffdd8f79df957447f37c83f3884e8a3fcbf33992ba002e16fabb947eeab67f5d"
+    },
+    {
+      "name": "slominski",
+      "url": "https://www.numdam.org/item/AIHPB_1993__29_2_163_0.pdf",
+      "bytes": 2426875,
+      "sha256": "b01a032420ad4b4b31275a6319d9d98d731f2a32b46cf26d41276375eaeb0c73"
+    }
+  ],
+  "outputs": [
+    {
+      "file": "REVIEW1516.md",
+      "bytes": 19156,
+      "sha256": "04ffc7f9ecdf52e6eeadf419f355d78c1c5015a1f434f4c58889c4d94dc2665a"
+    },
+    {
+      "file": "ASSESSMENT1516.json",
+      "bytes": 9107,
+      "sha256": "470a7c48bdd0b1f6558efa1c7be307650c5fa07405698e551d7e36c835075b7b"
+    }
+  ],
+  "self_hash_note": "The SHA256 of this manifest is returned separately; a self-referential hash is not embedded.",
+  "temporary_foreign_sources_not_deliverables": true
+}
