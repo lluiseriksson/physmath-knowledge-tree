@@ -1929,6 +1929,60 @@
       ],
       "inspected_pdf_sha256": "00cc6b218dcf0e1c2884e135caa1d57b3591df036540b685e7440f30cbd4ff16",
       "inspected_pdf_bytes": 35847780
+    },
+    {
+      "id": "yang-mills-flow-casey-chan-hong-2026",
+      "title": "The Yang-Mills flow in vector bundles over higher dimensional Riemannian manifolds",
+      "url": "https://arxiv.org/abs/2610.38124v1",
+      "kind": "preprint",
+      "published_on": "2026-10-28",
+      "observed_on": "2026-10-31",
+      "reading_status": "abstract_read",
+      "evidence": "literature",
+      "claim": "The abstract attributes maximal flow existence on compact manifolds of dimension at least four, curvature/higher-derivative estimates and blow-up analysis to a parabolic gauge construction.",
+      "limits": "Explicit author comment says this replaces1701.00601; preserve that lineage. No discrete fixed-average response theorem or source-transfer dictionary checked. Abstract/history only; no theorem statement or proof audited. Does not remove an admission hypothesis from the active first-integral packet.",
+      "reuse": "Bibliographic metadata and own synthesis only; no foreign body/PDF copied or inferred training permission.",
+      "anchors": [
+        "domain.analysis"
+      ],
+      "first_submission_utc": "Wed, 28 Oct 2026 01:00:15 UTC",
+      "observed_abstract_html_sha256": "3d97bac3617361a06c6670efe8fe09da85f956d31fa0094e5f3ae7d0a1d5f609"
+    },
+    {
+      "id": "yang-mills-weak-uniqueness-chan-hong-2026",
+      "title": "Uniqueness of the weak solutions of the Yang-Mills flow in four dimensions",
+      "url": "https://arxiv.org/abs/2610.38134v1",
+      "kind": "preprint",
+      "published_on": "2026-10-28",
+      "observed_on": "2026-10-31",
+      "reading_status": "abstract_read",
+      "evidence": "literature",
+      "claim": "The abstract claims improved weak-flow existence and uniqueness on compact four-manifolds for W1,2 initial connections through parabolic gauge fixing.",
+      "limits": "Distinct paper from2610.38124; shared authors/gauge topic does not establish equivalent results or a lattice response kernel. Abstract/history only; no theorem statement or proof audited. Does not remove an admission hypothesis from the active first-integral packet.",
+      "reuse": "Bibliographic metadata and own synthesis only; no foreign body/PDF copied or inferred training permission.",
+      "anchors": [
+        "domain.analysis"
+      ],
+      "first_submission_utc": "Wed, 28 Oct 2026 01:14:52 UTC",
+      "observed_abstract_html_sha256": "a9ed4f87b051ece1a925d167e12a3d1c5be7a571982412dd6130d00eb216efe8"
+    },
+    {
+      "id": "parabolic-gauge-hong-2017",
+      "title": "The gauge fixing theorem with applications to the Yang-Mills flow over Riemannian manifolds",
+      "url": "https://arxiv.org/abs/1701.00601v1",
+      "kind": "preprint",
+      "published_on": "2017-01-03",
+      "observed_on": "2026-10-31",
+      "reading_status": "abstract_read",
+      "evidence": "literature",
+      "claim": "Historical abstract concerns parabolic gauge fixing and weak Yang-Mills flow existence, with a four-dimensional uniqueness claim.",
+      "limits": "Predecessor explicitly replaced by2610.38124 according to that later source; not a newly published2026 manuscript and not asserted byte-equivalent to its successor. Abstract/history only; no theorem statement or proof audited. Does not remove an admission hypothesis from the active first-integral packet.",
+      "reuse": "Bibliographic metadata and own synthesis only; no foreign body/PDF copied or inferred training permission.",
+      "anchors": [
+        "domain.analysis"
+      ],
+      "first_submission_utc": "Tue, 3 Jan 2017 07:55:24 UTC",
+      "observed_abstract_html_sha256": "a4769768b085b827c1f134741fa71804356e889fd15a086c99af6cf770664ddb"
     }
   ],
   "candidates": [
