@@ -1,0 +1,189 @@
+{
+  "audit_id": "1547",
+  "generated_utc": "2026-10-31T02:28:38.020726+00:00",
+  "algorithm": "SHA256",
+  "final_own_outputs": [
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1547/review/REVIEW1547.md",
+      "bytes": 41017,
+      "sha256": "14e6cdc14a92ec848ad79b383192935268228ca809cde451193085b440a58af3"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1547/review/ASSESSMENT1547.json",
+      "bytes": 17947,
+      "sha256": "fb90c3cf1223d39fc77d2b843db94c888afb9cd8c791a8ecc46797c9aab8e553"
+    }
+  ],
+  "input_manifest": {
+    "path": "C:/Trabajo/airr/2026-10-31_execution1547/review/INPUT-MANIFEST1547.json",
+    "bytes": 7160,
+    "sha256": "ec7ed6a84c0ff8c4047f2fb1ebd81a6dcc39241a5eef2ba16660894f3ed4bf7a"
+  },
+  "immutable_inputs": [
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1547/review/inputs/FLAT-GAP1533.md",
+      "bytes": 7768,
+      "sha256": "0c49e4d69f5daba3f2b20e5200098a8a0712718699fc7c4f3e45e897cca6d6d1",
+      "file": "FLAT-GAP1533.md",
+      "role": "unreviewed_participating_parent_note",
+      "matches_initial_manifest": true
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1547/review/inputs/FULL-CUTOFF1534.md",
+      "bytes": 11723,
+      "sha256": "a0422960f27c16e4d08bcab046f589d1e1588a248fe3fc98fd9810b97ee5a4c8",
+      "file": "FULL-CUTOFF1534.md",
+      "role": "unreviewed_participating_parent_note",
+      "matches_initial_manifest": true
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1547/review/inputs/SOURCE-ORDERING1535.md",
+      "bytes": 7140,
+      "sha256": "348756df882cd92c818c358c8353ca8d253d237a440f280e4a6b6f7bbc718305",
+      "file": "SOURCE-ORDERING1535.md",
+      "role": "unreviewed_participating_parent_note",
+      "matches_initial_manifest": true
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1547/review/inputs/LOCAL-INDICATOR1536.md",
+      "bytes": 7032,
+      "sha256": "c5317831f97887145f5091ff6013a363c0c37d7ecd45a8e659d15f696b3460a5",
+      "file": "LOCAL-INDICATOR1536.md",
+      "role": "unreviewed_participating_parent_note",
+      "matches_initial_manifest": true
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1547/review/inputs/CLUSTER-TAIL1537.md",
+      "bytes": 5624,
+      "sha256": "5048ef341e737a37ba7a728c2e2c8fa76a902d0de2d59f24704df1478d4a0f62",
+      "file": "CLUSTER-TAIL1537.md",
+      "role": "unreviewed_participating_parent_note",
+      "matches_initial_manifest": true
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1547/review/inputs/ANALYTIC-SPACE1538.md",
+      "bytes": 5997,
+      "sha256": "ed00f5cda7a9002a14c4ae91c54682d8c4c7442a52b13ea05c4ff710df7c24ea",
+      "file": "ANALYTIC-SPACE1538.md",
+      "role": "unreviewed_participating_parent_note",
+      "matches_initial_manifest": true
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1547/review/inputs/BARE-FIRST1539.md",
+      "bytes": 6199,
+      "sha256": "64204f712285888c99cbf90e1057b66b21d56da0544eb2f99fdca031534f21cf",
+      "file": "BARE-FIRST1539.md",
+      "role": "unreviewed_participating_parent_note",
+      "matches_initial_manifest": true
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1547/review/inputs/GAUSSIAN-LOCAL1540.md",
+      "bytes": 7978,
+      "sha256": "397aa5cd0560450febb098347d4d06ad38988a5fbd16dea1bfb1d716932b5008",
+      "file": "GAUSSIAN-LOCAL1540.md",
+      "role": "unreviewed_participating_parent_note",
+      "matches_initial_manifest": true
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1547/review/inputs/INTERPOLATION-GATE1541.md",
+      "bytes": 4905,
+      "sha256": "d175cba0e86e7168bc4e67e6480fba43b0b338138332dbcde4d25385eeff2f8d",
+      "file": "INTERPOLATION-GATE1541.md",
+      "role": "unreviewed_participating_parent_note",
+      "matches_initial_manifest": true
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1547/review/inputs/BUFFERED-WALKS1542.md",
+      "bytes": 8034,
+      "sha256": "7c3dbe5bbf7e81017d18d5e4bf607323f79536497bbab04f88b3fc4fe809c8d1",
+      "file": "BUFFERED-WALKS1542.md",
+      "role": "unreviewed_participating_parent_note",
+      "matches_initial_manifest": true
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1547/review/inputs/PROTECTED-ROOT1543.md",
+      "bytes": 7848,
+      "sha256": "adacf7d9ecdd04f15f18f8574b19f9ef4ef1e715b43dd0a6f53e1eec1768e011",
+      "file": "PROTECTED-ROOT1543.md",
+      "role": "unreviewed_participating_parent_note",
+      "matches_initial_manifest": true
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1547/review/inputs/CONDITIONING1544.md",
+      "bytes": 7758,
+      "sha256": "93fdd45ca1517a920185f424886006006298e369c97656724394fc693585be89",
+      "file": "CONDITIONING1544.md",
+      "role": "unreviewed_participating_parent_note",
+      "matches_initial_manifest": true
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1547/review/inputs/REVIEW1524-context.md",
+      "bytes": 37479,
+      "sha256": "a5da1b699524ff2ea30f9b5d0023e3eb494218ea2e7b3e12b4753d28d51b8ee0",
+      "file": "REVIEW1524-context.md",
+      "role": "prior_adverse_review_context_NOT_assessment_of_new_notes",
+      "matches_initial_manifest": true
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1547/review/inputs/ADMISSION-PACKET1545.md",
+      "bytes": 9905,
+      "sha256": "eb72bc8b12376e1ef632cf83d923a654f93ae5806b1bd5564fe24ef2ebc29ffc",
+      "file": "ADMISSION-PACKET1545.md",
+      "role": "consolidated_scope_guide_unreviewed",
+      "matches_initial_manifest": true
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1547/review/inputs/SOURCE-ANCHORS1546.md",
+      "bytes": 8387,
+      "sha256": "5d2b242c5e830d3ab9b748c40b51318d183db499dad9c28e776cd0b14c9fb6f0",
+      "file": "SOURCE-ANCHORS1546.md",
+      "role": "new_source_anchor_addendum_unreviewed",
+      "matches_initial_manifest": true
+    }
+  ],
+  "immutable_cached_sources": [
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-convergent-cmp119-from-fusion.pdf",
+      "bytes": 4172827,
+      "sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+      "matches_initial_manifest": true,
+      "cached_file_modified": false,
+      "copied": false
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-rg-I-cmp109-1104116842.pdf",
+      "bytes": 5490078,
+      "sha256": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+      "matches_initial_manifest": true,
+      "cached_file_modified": false,
+      "copied": false
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/cmp102_variational/1104114383.pdf",
+      "bytes": 3355501,
+      "sha256": "838056b5c578f81d058deb3d394c66d934690e3b94c6cf2956534ec6d211b541",
+      "matches_initial_manifest": true,
+      "cached_file_modified": false,
+      "copied": false
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-rg-II-cmp116-1104161193.pdf",
+      "bytes": 2286864,
+      "sha256": "ee39523a0f7b83af958513c7bd6f9c7731934b40355ef5d6b0f7a68ee6d022fc",
+      "matches_initial_manifest": true,
+      "cached_file_modified": false,
+      "copied": false
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balabanfusion.pdf",
+      "bytes": 35847780,
+      "sha256": "00cc6b218dcf0e1c2884e135caa1d57b3591df036540b685e7440f30cbd4ff16",
+      "matches_initial_manifest": true,
+      "cached_file_modified": false,
+      "copied": false
+    }
+  ],
+  "all_15_inputs_and_5_sources_match_initial_manifest": true,
+  "temporary_files_excluded": "C:/Trabajo/airr/2026-10-31_execution1547/review/review-tmp",
+  "self_hash_policy": "This manifest excludes its own circular hash; its final SHA256 is reported separately in the completion message"
+}

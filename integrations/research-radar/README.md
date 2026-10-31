@@ -1,5 +1,7 @@
 # Research radar
 
+Latest scoped admission assessment: [first-integral audit and covariance/reference repairs](evidence/2026-10-31-first-admission-audit/README.md) preserves one unscored exact-note report, both adverse findings and unchanged inputs. Conditional subgates are separated from full activity/marginal admission; no manuscript score or canonical formal promotion.
+
 Latest bibliography boundary: [parabolic gauge fixing and discrete admission](notes/2026-10-31-parabolic-gauge-boundary.md) indexes two28October preprints and their explicitly linked2017 predecessor at abstract/history depth. No discrete response hypothesis, proof confidence or manuscript score is inherited.
 
 Latest conditional-source boundary: [weighted reflection and outer-history transport](notes/2026-10-30-conditional-reflection.md) consolidates four old primary sources at explicit reading depths, a conditional analytic deduction, and an abandoned shortcut to global covariance. The31October update retains the adverse six-note1501 audit and the separate three-note1516 reflection audit with its two specifications. Both are unscored and scoped to exact notes; runtime identity and independence remain unverified. No canonical graph/formal promotion or manuscript score.

@@ -1,0 +1,38 @@
+# The activity theorem needs an analytic-space hierarchy
+
+Participating-parent deduction, unreviewed. This refines the remaining gate of1537; it does not assert a completed transfer of the activity theorem.
+
+Sources read: CMP119 printed259 Eq2.25–2.28 (DOI10.1007/BF01217741, SHA256 db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a); CMP109 printed261–263 Eq1.8–1.18 and276–280 Eq3.31–3.54/Lemma4 (DOI10.1007/BF01215223, SHA256 1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a); CMP116 printed20–21 Lemma3 and final summation (DOI10.1007/BF01239022, SHA256 ee39523a0f7b83af958513c7bd6f9c7731934b40355ef5d6b0f7a68ee6d022fc). Selected statements read; not full proofs audited. Visual check of119259 and109277/280 accompanies this record.
+
+## Four conditions, not a plaquette ball alone
+
+CMP1091.11–1.16 defines the external complex space as a union of gauge orbits, including (i) a real-group representative with small curvature and local gauge-coordinate regularity; (ii) a small complex multiplicative perturbation; (iii) curvature AND the separately extended current J; (iv) regularity of all prescribed lower-level minimal fields reconstructed from averages on the maximal nested determining domains, also for the real representative. A pointwise lower Hessian bound for one real background does not establish this space or its analytic extensions.
+
+Printed263 gives a sufficient smaller space via Prop9, with reconstructed curvature/current bounded by 2 B3 times the smaller input parameter. Thus a quantitative factor between an inner real neighborhood and the outer source analytic radius is legitimate, provided all the actual mixed input and geometry hypotheses of the reconstruction are admitted.1536 supplies a one-step mixed-input mechanism only on its stated geometries. It must not be advertised as an all-depth complex-space proof.
+
+For a real first-step argument, Uprime=I pays condition(ii), but conditions(i),(iii),(iv) still require their own bounds. The global current estimate1514 and local determining argument1536 concern different parts of that obligation. At j=1 condition(iv) has only n=1, yet every required localization domain remains in scope. No complex current is identified with the real variational current off shell.
+
+## Actual parameter relations visible in the proof
+
+1192.28 uses alpha0,j=g_j C0 (log g_j^-2)^q0 and alpha1,j=g_j C1 (log g_j^-2)^q1 with integer q0,q1>1. This statement alone gives no ordering between q0,q1 and the fluctuation exponent p.
+
+109 printed277 explicitly requires B3^2 O(1) M alpha0 < alpha1/2. Printed280 requires B3 alpha3 < alpha1/2 and 2 B3 alpha3 <= beta L^-2 alpha0; these control an additional complex Bprime perturbation. The regular variable A of3.31, bounded by alpha2, must also be small enough for the substitution in3.36. Finally printed280 explains that recovery of the inductive E0 constant uses a factor O(1) alpha2^-1 epsilon_cut. None of these ratios is paid just by saying every physical radius tends to zero.
+
+At fixed L,M and fixed positive prefactors:
+
+    alpha0/alpha1=(C0/C1) ell^(q0-q1),
+    delta0/alpha0=(C_delta/C0) ell^(p-q0).
+
+Therefore q1>q0>p is a sufficient logarithmic ordering for THESE TWO ratios to tend to zero, and is compatible with all three radii tending to zero. For equal exponents the actual prefactor inequality must be checked. If q0<p, making coupling smaller worsens delta0/alpha0; if q0>q1 it worsens alpha0/alpha1. This is a conditional parameter diagnostic, not permission to change already fixed source constants silently. The printed statement q0,q1>1 does not by itself imply the stronger ordering.
+
+One possible intermediate auxiliary radius for these linear-ratio gates is alpha2=c alpha0 and alpha3=cprime alpha0 with small fixed c,cprime, while an inner coarse-link radius pays the real current/reconstruction margins. Then delta0/alpha2 tends to zero if q0>p. But the cited source's complete constants and Cauchy estimates must be retraced before this is a uniform analytic-space certificate.
+
+## Important qualification to1537
+
+1537's Gaussian tail calculation is valid with its stated FIXED D,C3 and auxiliary gamma2. In a simultaneous shrinking analytic-space application, constants from the analytic estimates may depend on alpha2,alpha3 and other margins. Do not call D,C3 uniform without tracing that dependence. If they grow at most exp(O(ell)) times powers of ell, the negative tail exponent -a C_delta^2 ell^(2p) still dominates for p>1/2. However interaction/activity SMALLNESS involves D delta0 and C3 delta0 as well; polynomial inverse-radius losses can destroy it. Tail domination alone does not repair such losses.
+
+For example a hypothetical C3~alpha0^-2 gives C3 delta0~g0^-1 ell^(p-2q0), which diverges. This is a scalar warning about an unproved constant bound, NOT a claim that the source C3 actually has this dependence. The source's renormalized cancellations and full parameter hierarchy cannot be replaced by that example either.
+
+Next finite target: trace the constants in the first-step source potentials feeding116Lemma2/3, separating bare first-step terms (no previous E activity) from the general inductive Taylor/Cauchy argument. Establish the needed uniform dependence or retain the full activity transfer as an explicit literature assumption. No source activity norm or its derivatives have been certified here merely from a real small-field neighborhood.
+
+Levels: literature—selected actual space and parameter conditions; heuristic—parent exponent/ratio diagnostic and scope ledger; formal—none new; speculative/open—uniform first-step activity constants, complete complex admission and exterior/history/global target. Falsifiers: ignored nested reconstruction/current condition, wrong scale, unproved parameter ordering, or a claimed uniform constant that hides inverse shrinking-radius factors. No new manuscript score, review, case, PR or paper.

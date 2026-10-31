@@ -1,5 +1,8 @@
 # Conditional reflection and the outer-history boundary
 
+**31October admission audit1547:** the conditional near-flat soft-gap and whole-original-cutoff argument is supported, with symbolic fixed-scale constants and explicit source/geometry hypotheses. The generic tagged-Gaussian application needs two repairs: an actually symmetric covariance and a zero-tag real reference supported in the same localization region. [Full adverse report, exact inputs and repairs](../evidence/2026-10-31-first-admission-audit/README.md) are preserved. This assesses notes only, not a manuscript/PDF; full connected activities, exact historical law correspondence and the maximal next marginal remain open.
+
+
 **31October correction (audit1524):** the earlier1489 original-gauge return
 identity is invalid as written and is withdrawn. The scalar mean-response
 estimate survives conditionally through a different whole-integral pullback
