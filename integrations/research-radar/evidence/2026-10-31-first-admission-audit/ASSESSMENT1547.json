@@ -1,0 +1,474 @@
+{
+  "audit_id": "1547",
+  "created_utc": "2026-10-31T02:28:38.020726+00:00",
+  "review_type": "one unscored fixed-packet mathematical and source-specific admission audit",
+  "scoring_performed": false,
+  "manuscript_or_pdf_assessed": false,
+  "target_grade": null,
+  "restart_performed": false,
+  "requested_configuration": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "xhigh"
+  },
+  "observed_configuration": {
+    "model": null,
+    "reasoning_effort": null,
+    "runtime_identity_verified": false,
+    "reason": "No direct runtime attestation available in this context"
+  },
+  "participation": {
+    "parent_authored_new_inputs": true,
+    "separate_assigned_review_context_observed": true,
+    "scientific_independence_verified": false,
+    "peer_review_claimed": false,
+    "subagents_used": false,
+    "other_review_absence": "Stated by parent input manifest; not independently observed session-wide",
+    "prior_review_use": "REVIEW1524-context read as adverse context only; older target not reassessed and acceptance not inherited"
+  },
+  "disposition": "Conditional near-flat bare-first admission deductions supported; generic arbitrary-tag Gaussian covariance promotion requires the explicit symmetry repair R1 and localized-reference specification R2; full source/activity/law correspondence remains open",
+  "exact_reviewed_scope": {
+    "new_parent_note_ids": [
+      "1533",
+      "1534",
+      "1535",
+      "1536",
+      "1537",
+      "1538",
+      "1539",
+      "1540",
+      "1541",
+      "1542",
+      "1543",
+      "1544",
+      "1546"
+    ],
+    "scope_guide": "ADMISSION-PACKET1545.md",
+    "adverse_context_only": "REVIEW1524-context.md",
+    "input_manifest": {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1547/review/INPUT-MANIFEST1547.json",
+      "bytes": 7160,
+      "sha256": "ec7ed6a84c0ff8c4047f2fb1ebd81a6dcc39241a5eef2ba16660894f3ed4bf7a"
+    },
+    "inputs": [
+      {
+        "path": "C:/Trabajo/airr/2026-10-31_execution1547/review/inputs/FLAT-GAP1533.md",
+        "bytes": 7768,
+        "sha256": "0c49e4d69f5daba3f2b20e5200098a8a0712718699fc7c4f3e45e897cca6d6d1",
+        "file": "FLAT-GAP1533.md",
+        "role": "unreviewed_participating_parent_note",
+        "matches_initial_manifest": true
+      },
+      {
+        "path": "C:/Trabajo/airr/2026-10-31_execution1547/review/inputs/FULL-CUTOFF1534.md",
+        "bytes": 11723,
+        "sha256": "a0422960f27c16e4d08bcab046f589d1e1588a248fe3fc98fd9810b97ee5a4c8",
+        "file": "FULL-CUTOFF1534.md",
+        "role": "unreviewed_participating_parent_note",
+        "matches_initial_manifest": true
+      },
+      {
+        "path": "C:/Trabajo/airr/2026-10-31_execution1547/review/inputs/SOURCE-ORDERING1535.md",
+        "bytes": 7140,
+        "sha256": "348756df882cd92c818c358c8353ca8d253d237a440f280e4a6b6f7bbc718305",
+        "file": "SOURCE-ORDERING1535.md",
+        "role": "unreviewed_participating_parent_note",
+        "matches_initial_manifest": true
+      },
+      {
+        "path": "C:/Trabajo/airr/2026-10-31_execution1547/review/inputs/LOCAL-INDICATOR1536.md",
+        "bytes": 7032,
+        "sha256": "c5317831f97887145f5091ff6013a363c0c37d7ecd45a8e659d15f696b3460a5",
+        "file": "LOCAL-INDICATOR1536.md",
+        "role": "unreviewed_participating_parent_note",
+        "matches_initial_manifest": true
+      },
+      {
+        "path": "C:/Trabajo/airr/2026-10-31_execution1547/review/inputs/CLUSTER-TAIL1537.md",
+        "bytes": 5624,
+        "sha256": "5048ef341e737a37ba7a728c2e2c8fa76a902d0de2d59f24704df1478d4a0f62",
+        "file": "CLUSTER-TAIL1537.md",
+        "role": "unreviewed_participating_parent_note",
+        "matches_initial_manifest": true
+      },
+      {
+        "path": "C:/Trabajo/airr/2026-10-31_execution1547/review/inputs/ANALYTIC-SPACE1538.md",
+        "bytes": 5997,
+        "sha256": "ed00f5cda7a9002a14c4ae91c54682d8c4c7442a52b13ea05c4ff710df7c24ea",
+        "file": "ANALYTIC-SPACE1538.md",
+        "role": "unreviewed_participating_parent_note",
+        "matches_initial_manifest": true
+      },
+      {
+        "path": "C:/Trabajo/airr/2026-10-31_execution1547/review/inputs/BARE-FIRST1539.md",
+        "bytes": 6199,
+        "sha256": "64204f712285888c99cbf90e1057b66b21d56da0544eb2f99fdca031534f21cf",
+        "file": "BARE-FIRST1539.md",
+        "role": "unreviewed_participating_parent_note",
+        "matches_initial_manifest": true
+      },
+      {
+        "path": "C:/Trabajo/airr/2026-10-31_execution1547/review/inputs/GAUSSIAN-LOCAL1540.md",
+        "bytes": 7978,
+        "sha256": "397aa5cd0560450febb098347d4d06ad38988a5fbd16dea1bfb1d716932b5008",
+        "file": "GAUSSIAN-LOCAL1540.md",
+        "role": "unreviewed_participating_parent_note",
+        "matches_initial_manifest": true
+      },
+      {
+        "path": "C:/Trabajo/airr/2026-10-31_execution1547/review/inputs/INTERPOLATION-GATE1541.md",
+        "bytes": 4905,
+        "sha256": "d175cba0e86e7168bc4e67e6480fba43b0b338138332dbcde4d25385eeff2f8d",
+        "file": "INTERPOLATION-GATE1541.md",
+        "role": "unreviewed_participating_parent_note",
+        "matches_initial_manifest": true
+      },
+      {
+        "path": "C:/Trabajo/airr/2026-10-31_execution1547/review/inputs/BUFFERED-WALKS1542.md",
+        "bytes": 8034,
+        "sha256": "7c3dbe5bbf7e81017d18d5e4bf607323f79536497bbab04f88b3fc4fe809c8d1",
+        "file": "BUFFERED-WALKS1542.md",
+        "role": "unreviewed_participating_parent_note",
+        "matches_initial_manifest": true
+      },
+      {
+        "path": "C:/Trabajo/airr/2026-10-31_execution1547/review/inputs/PROTECTED-ROOT1543.md",
+        "bytes": 7848,
+        "sha256": "adacf7d9ecdd04f15f18f8574b19f9ef4ef1e715b43dd0a6f53e1eec1768e011",
+        "file": "PROTECTED-ROOT1543.md",
+        "role": "unreviewed_participating_parent_note",
+        "matches_initial_manifest": true
+      },
+      {
+        "path": "C:/Trabajo/airr/2026-10-31_execution1547/review/inputs/CONDITIONING1544.md",
+        "bytes": 7758,
+        "sha256": "93fdd45ca1517a920185f424886006006298e369c97656724394fc693585be89",
+        "file": "CONDITIONING1544.md",
+        "role": "unreviewed_participating_parent_note",
+        "matches_initial_manifest": true
+      },
+      {
+        "path": "C:/Trabajo/airr/2026-10-31_execution1547/review/inputs/REVIEW1524-context.md",
+        "bytes": 37479,
+        "sha256": "a5da1b699524ff2ea30f9b5d0023e3eb494218ea2e7b3e12b4753d28d51b8ee0",
+        "file": "REVIEW1524-context.md",
+        "role": "prior_adverse_review_context_NOT_assessment_of_new_notes",
+        "matches_initial_manifest": true
+      },
+      {
+        "path": "C:/Trabajo/airr/2026-10-31_execution1547/review/inputs/ADMISSION-PACKET1545.md",
+        "bytes": 9905,
+        "sha256": "eb72bc8b12376e1ef632cf83d923a654f93ae5806b1bd5564fe24ef2ebc29ffc",
+        "file": "ADMISSION-PACKET1545.md",
+        "role": "consolidated_scope_guide_unreviewed",
+        "matches_initial_manifest": true
+      },
+      {
+        "path": "C:/Trabajo/airr/2026-10-31_execution1547/review/inputs/SOURCE-ANCHORS1546.md",
+        "bytes": 8387,
+        "sha256": "5d2b242c5e830d3ab9b748c40b51318d183db499dad9c28e776cd0b14c9fb6f0",
+        "file": "SOURCE-ANCHORS1546.md",
+        "role": "new_source_anchor_addendum_unreviewed",
+        "matches_initial_manifest": true
+      }
+    ],
+    "physical_target": "Boundary-free first retained free-coordinate integral, fixed L/group, explicitly indexed original cutoff delta_0=C_delta g_0(log g_0^-2)^p, near-flat source-admitted background and compatible finite-volume geometry",
+    "not_assessed": [
+      "evolving manuscript or PDF",
+      "older report target",
+      "second-step old E1 curvature budget",
+      "full source cluster proof",
+      "full next marginal support or probability",
+      "exterior histories",
+      "continuum or global mass gap"
+    ]
+  },
+  "source_reading_scope": [
+    {
+      "source_file": "balaban-rg-I-cmp109-1104116842.pdf",
+      "article": "CMP109, 249-301",
+      "doi": "10.1007/BF01215223",
+      "text_printed_pages": [
+        "252-254",
+        "261-263",
+        "265-270",
+        "276-280"
+      ],
+      "visually_inspected_printed_pages": [
+        253,
+        254,
+        267
+      ],
+      "visually_inspected_one_based_pdf_pages": [
+        5,
+        6,
+        19
+      ],
+      "full_source_proof_audited": false
+    },
+    {
+      "source_file": "balaban-convergent-cmp119-from-fusion.pdf",
+      "article": "CMP119, 243-285",
+      "doi": "10.1007/BF01217741",
+      "text_printed_pages": [
+        "246-250",
+        "253-257",
+        "259"
+      ],
+      "visually_inspected_printed_pages": [
+        246,
+        247,
+        249,
+        250,
+        253,
+        256
+      ],
+      "visually_inspected_one_based_pdf_pages": [
+        4,
+        5,
+        7,
+        8,
+        11,
+        14
+      ],
+      "full_source_proof_audited": false
+    },
+    {
+      "source_file": "cmp102_variational/1104114383.pdf",
+      "article": "CMP102, 277-309",
+      "doi": "10.1007/BF01229381",
+      "text_printed_pages": [
+        "277-279",
+        "288",
+        "305-309"
+      ],
+      "visually_inspected_printed_pages": [
+        278,
+        279,
+        288,
+        307,
+        308
+      ],
+      "visually_inspected_one_based_pdf_pages": [
+        2,
+        3,
+        12,
+        31,
+        32
+      ],
+      "full_source_proof_audited": false,
+      "response_kernel_status": "Eq190 and Proposition 9 retained as stated literature input; omitted Eq189 calculation not reproduced"
+    },
+    {
+      "source_file": "balaban-rg-II-cmp116-1104161193.pdf",
+      "article": "CMP116, 1-22",
+      "doi": "10.1007/BF01239022",
+      "text_printed_pages": [
+        "1-5",
+        "9-21"
+      ],
+      "visually_inspected_printed_pages": [
+        13,
+        15,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "visually_inspected_one_based_pdf_pages": [
+        13,
+        15,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "full_source_proof_audited": false
+    },
+    {
+      "source_file": "balabanfusion.pdf",
+      "article": "Propagator article CMP99, 389-434",
+      "doi": "10.1007/BF01240355",
+      "text_printed_pages": [
+        "414-416"
+      ],
+      "text_one_based_pdf_pages": [
+        192,
+        193,
+        194
+      ],
+      "visually_inspected_printed_pages": [
+        414,
+        416
+      ],
+      "visually_inspected_one_based_pdf_pages": [
+        192,
+        194
+      ],
+      "full_source_proof_audited": false
+    },
+    {
+      "source_file": "balabanfusion.pdf",
+      "article": "Propagators and Renormalization Transformations for Lattice Gauge Theories II, CMP96, 223-250",
+      "doi": null,
+      "text_printed_pages": [
+        "230-231"
+      ],
+      "text_one_based_pdf_pages": [
+        338,
+        339
+      ],
+      "visually_inspected_printed_pages": [
+        231
+      ],
+      "visually_inspected_one_based_pdf_pages": [
+        339
+      ],
+      "full_source_proof_audited": false
+    }
+  ],
+  "source_search_incidental_pages": {
+    "balabanfusion.pdf": [
+      8,
+      113,
+      205
+    ],
+    "claim": "Incidental search hits only, not independently audited arguments"
+  },
+  "adverse_findings": [
+    {
+      "id": "F1",
+      "classification": "false generic implication / repairable missing covariance-symmetry property",
+      "input_files": [
+        "BUFFERED-WALKS1542.md",
+        "PROTECTED-ROOT1543.md",
+        "CONDITIONING1544.md"
+      ],
+      "claim_affected": "A near-reference invertible tagged parametrix can be used as the covariance in the normalized complex Gaussian/compensator merely from the recorded inverse and branch conditions",
+      "obstruction": "A_H-A_H^t=(I+K_H^t)^-1[G_H,D_H](I+K_H)^-1; incomplete tagged partitions need not commute with G_H",
+      "exact_rational_local_witness": {
+        "Q": [
+          [
+            "2",
+            "-1/10"
+          ],
+          [
+            "-1/10",
+            "2"
+          ]
+        ],
+        "chi_diagonal": [
+          "1/2",
+          "3/4"
+        ],
+        "max_absolute_row_sum_K": "31/3192",
+        "A": [
+          [
+            "6400/51083",
+            "540/51083"
+          ],
+          [
+            "390/51083",
+            "14400/51083"
+          ]
+        ],
+        "A_minus_transpose_12": "150/51083",
+        "scope": "Exact local-factor algebra, not an actual-lattice numerical counterexample"
+      },
+      "gaussian_witness": "C=[[1,t],[-t,1]] has positive quadratic inverse for small real t, but the det(C)-normalized purported density has mass sqrt(1+t^2)",
+      "physical_endpoint_refuted": false,
+      "source_theorem_refuted": false,
+      "repair_id": "R1"
+    },
+    {
+      "id": "F2",
+      "classification": "missing reference/support specification; local bound false if the all-tags-one physical Gamma_0 is used",
+      "input_files": [
+        "PROTECTED-ROOT1543.md",
+        "CONDITIONING1544.md"
+      ],
+      "claim_affected": "Bounds only in X_Z and a dim Z Gaussian cost from a comparison to an unspecified real reference",
+      "obstruction": "The full physical Gamma_0 generally has columns outside Z; global norm smallness cannot remove those X coordinates",
+      "source_anchor": "CMP116 p15 explicitly replaces sigma by zero before Eq2.23-2.25",
+      "repair_id": "R2"
+    }
+  ],
+  "repairs_derived_in_this_audit": [
+    {
+      "id": "R1",
+      "verified_conditional": true,
+      "construction": "Symmetrize any tagged covariance as (G(s)+G(s)^t)/2; alternatively for finite-range first precision leave C_s=Q_D(U)^-1 untagged after protecting its whole finite background carrier",
+      "preserved": [
+        "physical endpoint",
+        "weighted row/column bounds",
+        "holomorphy",
+        "component localization",
+        "protected comparison",
+        "original cutoff"
+      ],
+      "remaining_requirement": "Use the same resulting symmetric C_s in measure and compensator with the protected positive inverse margin"
+    },
+    {
+      "id": "R2",
+      "verified_conditional": true,
+      "construction": "Use a real zero-tag reference whose Gamma_0 columns lie in the same Z; compare both it and the localized family through the physical endpoint via the witness estimate",
+      "result": "Finite Gaussian majorant exp[C(t_0+u)(dim D+dim Z)] with exterior variables and all local dimension costs retained"
+    }
+  ],
+  "proved_conditional": [
+    "Actual flat positive contour average, L^(1-d) physical selected coefficient and finite per-bond selected solve/Jacobian structure",
+    "Volume-uniform flat soft free gap by local fillings and both coefficient sums on the admitted lifted geometries",
+    "Entire original physical-cutoff Hessian perturbation C_f(r+delta_0)+C_j g_0^2 from the complete local density",
+    "Fixed-ratio and mixed-input neighborhood bounds subject to exact law and source geometry",
+    "Bare first cubic plus logarithmic linear/Young local domination with t_0=C(delta_0+g_0^2+g_0^2/delta_0)",
+    "Uniform principal Gaussian inverse/mean and determinant locality in a small fixed complex chart",
+    "Absolute buffered patch/resolvent/square-root operator representation and two-scale protected witness estimates",
+    "Exact physical block-Gaussian conditional covariance P^-1 and compensator/Schur normalization",
+    "Repaired finite tagged Gaussian gate with R1 and R2"
+  ],
+  "source_correspondence_not_established": [
+    "Which incompatible printed cutoff prefactor identifies an earlier unindexed first law and old E1",
+    "One fully instantiated simultaneous source-compatible geometry and parameter ordering",
+    "The parent interpolation equals every original projected multiscale source propagator or decoupling family",
+    "Full inductive complex analytic-space/current/nested reconstruction and uniform activity constants",
+    "Full connected activity estimates and original maximal next marginal"
+  ],
+  "literature_dependencies_not_fully_audited": [
+    "CMP102 Theorem 1 variational existence/uniqueness/regularity for mixed determining input",
+    "CMP102 Proposition 9 / Eq189-190 response theorem, including omitted kernel calculation",
+    "Applicability of earlier source constructions to CMP109 symmetric group averaging",
+    "CMP119 Eq1.19 protected local/global background comparison",
+    "Full source analytic-space and connected cluster theorem if imported"
+  ],
+  "verification": {
+    "initial_input_files_verified": 15,
+    "initial_cached_source_files_verified": 5,
+    "final_input_files_verified": 15,
+    "final_cached_source_files_verified": 5,
+    "all_inputs_unchanged": true,
+    "all_cached_sources_unchanged": true,
+    "input_manifest_unchanged": true,
+    "no_input_silent_repair": true,
+    "exact_matrix_arithmetic": "SymPy rational arithmetic verified the F1 witness and zero residual of the commutator identity; no numerical tolerance or lattice certificate"
+  },
+  "operations_not_performed": [
+    "web statistics",
+    "AIRR submission",
+    "credential access",
+    "paid services",
+    "Lean run",
+    "repository build",
+    "input edit",
+    "manuscript edit",
+    "root state edit",
+    "other chat edit",
+    "corpus copying",
+    "subagent delegation"
+  ],
+  "temporary_files": {
+    "directory": "C:/Trabajo/airr/2026-10-31_execution1547/review/review-tmp",
+    "final_deliverables": false,
+    "foreign_page_images_must_not_be_promoted": true
+  }
+}
