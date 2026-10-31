@@ -1,0 +1,38 @@
+{
+  "label": "1753S",
+  "scope": "Separately frozen new primary typed-index witness and corrected anchored local gauge test. Does NOT amend or sanitize frozen1753 centered-geometry errors.",
+  "derivation": "1753S. Two new predecessor passages make the local coordinate test and the typed Lambda0 issue more precise. Preserve the original1753 input and its adverse geometry/separation findings unchanged.\n\n1. Actual old blocks are anchored. CMP98 Averaging Operations, printed17 eq2 (fusion zero-index294) defines B^j(y) by y_mu<=x_mu<y_mu+L^j eta. CMP95I printed18 eq1.6 gives the same anchored convention; Spaces77-80 inherits predecessor conventions, not a newly proved centered-block definition. Thus main1753's center-at-origin [−6,6]^4 illustration is NOT certified as the actual old source block. In particular6→7 is inside [0,12]^4 when0 is the old coarse anchor. The claimed automatic separation of a block center from its boundary is false for an anchor:12→13 at transverse0 connects an interior point to the next coarse anchor.\n\n2. Corrected old-source local witness only. Set L=13 in the old anchored coordinates, boundary block B(0)=[0,12]^4, and take x=(12,1,0,0), y=(13,1,0,0), with that block in X and its positive-first-direction neighbor outside X. For source-large domains use a translated copy at a flat face of a union of whole admissible large blocks; it is not asserted that a lone13-block pays M1/R. Take O containing the full patch and the required separation. x is not in the coarse anchor lattice13Z^4. U=I,V=I and u supported ONLY at x with SU2 value diag(exp(it),exp(−it)) give the same exact flat-field gauge argument. In particular u=I on ALL of X^c, not just on O\\X, as well as on all coarse anchors. It preserves the actual coarse data by endpoint equivariance and changes the crossing bond. The naive E(O\\X) fine constraint would wrongly freeze that bond. The attached integer-phase check at t=pi/3 verifies all24 incident plaquettes telescope; every other plaquette is trivially unchanged. No claim about a proper X arising from a nonzero original first-RG sector is made. This corrects a coordinate test, not the frozen main input.\n\n3. New explicit typed primary definition: CMP96II, printed224 eq2.3 (fusion zero-index331) first defines Omega for sites and for incident bonds, then defines the Lambda_j differences and Lambda0=Omega1^c explicitly FOR THE SETS OF SITES AND THE SETS OF BONDS. It is therefore legitimate there to evaluate the complement at its own type: Lambda0_sites=T_sites\\X_sites, Lambda0_bonds=T_bonds\\E(X). It is not the incidence lift E(T_sites\\X_sites). This is direct primary typing evidence, stronger than inferring an order from a diagram or from gauge invariance alone. Eq2.6 fixes A=B0 on that typed Lambda0; eq2.7 separately gives site gauge restrictions. CMP99 Background printed393 explicitly states that its only geometric change is to start the sequence at Omega0 and defines the analogous differences; Spaces77 eq1.5 and78 eq1.12-1.13 invoke the same predecessor setting and define the nonlinear fixed averages. On the type-sensitive reading, the finite-support fine stratum is E(O)\\E(X); the scale-zero average is the identity, so it fixes the corresponding original fine coordinates, rather than their point-ring lift. Q0 for fine link fluctuations and Q0-prime for gauge SITE functions must not be conflated.\n\nThis source evidence supports binding the RAW FINE INDEX SET, with the declared common point regions and their native block conventions, to the original kernel partition inside O. It does not prove equality of any older coarse mean with the chosen physical M^1, identify their block-root conventions by wishful renaming, or match a final eliminated/gauge-fixed fiber, scalar products, inverses, Jacobians or normalizers. For O proper the global gauge issue also requires its exterior boundary condition: the site restriction only on O\\X does not fix the far endpoint of a fine edge leaving O. In this corrected witness and in the original fixed-exterior comparison we explicitly impose u=I on ALL X^c and retain V0 on every E_fix coordinate. Under that restriction the fine mask and its fixed exterior extension are invariant. No claim is made that the bare formula1.14 alone has already supplied the full finite-O boundary/gauge completion.\n\n4. In particular the index-set evidence is not a full theorem application. Source action-contained plaquettes, collars/regularity, P1 ambiguity, actual coarse/gauge maps and the p80 warning about averaged gauge restrictions not forming a group remain material. The corrected anchored witness and typed complement do not validate the earlier center-based arithmetic, authenticate physical sector realizability, or change the law/domain/marks. All adverse main findings must remain. No new paper, score, manuscript/PDF evaluation or physical admission is asserted.\n",
+  "checks": {
+    "L": 13,
+    "d": 4,
+    "x": [
+      12,
+      1,
+      0,
+      0
+    ],
+    "y": [
+      13,
+      1,
+      0,
+      0
+    ],
+    "inside_anchored_block": true,
+    "outside_neighbor": true,
+    "x_coarse_anchor": false,
+    "crossing_phase": 1,
+    "incident_plaquettes": 24,
+    "all_zero_phase": true,
+    "scope": "Exact phase arithmetic only; source-geometry and actual index typing require separate primary evaluation."
+  },
+  "source_bindings": [
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balabanfusion.pdf",
+      "sha256": "00cc6b218dcf0e1c2884e135caa1d57b3591df036540b685e7440f30cbd4ff16"
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/cmp99/1103942769.pdf",
+      "sha256": "39f8033b35838c7bdd14f97c7fb1edb0b35d4190b8b88f31d19d12a72d542861"
+    }
+  ]
+}

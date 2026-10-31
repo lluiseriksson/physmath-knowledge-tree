@@ -1,0 +1,619 @@
+{
+  "execution": 1753,
+  "assessment_kind": "Fresh, bounded AI assessment of frozen 1753 and separately frozen 1753S",
+  "assessment_date_local": "2026-10-31",
+  "review_status": "COMPLETED_SCOPED_REVIEW",
+  "numerical_score": null,
+  "verdict": {
+    "main_1753": "PARTIALLY_SUPPORTED_WITH_MATERIAL_SOURCE_GEOMETRY_ERROR_PRESERVED",
+    "main_explanation": "The pure-gauge algebra and the failure of the naive mask on the declared centered patch are correct. The fixed 6-to-7 edge is not a boundary edge of the predecessor's anchored block B(0)=[0,12]^4. The supplied claim of source-compatible centered geometry and the anchor-to-boundary separation justification are not established and must not be retroactively sanitized.",
+    "supplement_1753S": "SUPPORTED_FOR_ANCHORED_LOCAL_COUNTERTEST_AND_TYPED_RAW_FINE_INDEX_ONLY",
+    "supplement_explanation": "The corrected anchored 12-to-13 witness is valid with the declared global exterior gauge condition. CMP96 II (2.3), read together with the explicit Omega0 extension in CMP99 Background, supplies direct primary evidence for typewise differences/complements. At k=1 the bond stratum is E(O) minus E(X), not E(O minus X), under the declared common point regions and native source blocks.",
+    "global_conclusion": "The naive incidence lift of the point complement is ruled out as a reconstruction of the raw fine fixed-bond stratum in the corrected anchored setting. This is neither a refutation of a source theorem nor a completed identification of the physical conditional kernel, final gauge-fixed fiber, or normalized marked law.",
+    "manuscript_or_full_pdf_grade": null,
+    "physical_admission": false,
+    "public_addition_B": "SUPPORTED_EXACT_B_HASH_SCOPED_TO_THREE_NEW_PARAGRAPHS",
+    "public_addition_A": "SCOPE_OVERSTATEMENT_AND_CITATION_LIMIT_PRESERVED_IN_HISTORICAL_A"
+  },
+  "provenance": {
+    "requested_model_label": "Astra",
+    "requested_reasoning_effort": "xhigh",
+    "actual_model_identity_authenticated": false,
+    "actual_reasoning_effort_authenticated": false,
+    "model_or_provider_independence_authenticated": false,
+    "independent_peer_review": false,
+    "fresh_source_reading_performed": true,
+    "previous_assessments_1752_1751_1750_1749_read": false,
+    "previous_verdicts_inherited": false,
+    "subagents_spawned": 0,
+    "paid_calls_or_purchases": false,
+    "publication_performed": false,
+    "objective_or_goal_created_or_restarted": false,
+    "capacity_assessment_performed": false,
+    "full_manuscript_or_full_pdf_evaluation_performed": false,
+    "source_pdf_passages_inspected": true,
+    "original_P1_issue_reopened": false,
+    "no_original_sector_realizability_claim": true,
+    "persisted_source_pdf_or_png_copies": false,
+    "rendering_method": "PyMuPDF rendered selected source pages to PNG bytes in memory; bytes were displayed through the persistent Node tool without saving image files.",
+    "authored_files": [
+      "C:/Trabajo/airr/2026-10-31_execution1753/ASSESSMENT1753.json"
+    ],
+    "scope_note": "Primary pages were read and finite arithmetic was independently recomputed in this turn. Authentication of the requested model/effort/independence is unavailable. AI review is not peer review. The parent's later supplement was reviewed as a separate object, not as an amendment to the frozen main input. The separately frozen public addition A and correction B were examined only through their inserted paragraphs/differences; the A overstatement remains recorded even though B corrects it."
+  },
+  "inputs": [
+    {
+      "label": "1753",
+      "path": "C:/Trabajo/airr/2026-10-31_execution1753/POINT-GAUGE-TYPING1753.json",
+      "sha256": "10e66998415ed8cc4f9082a64f2317ea1bc3f971b3ccd4d0a8a5b53f0588f699",
+      "full_content_read": true,
+      "sha256_verified": true,
+      "modified": false
+    },
+    {
+      "label": "1753 finite witness",
+      "path": "C:/Trabajo/airr/2026-10-31_execution1753/PURE-GAUGE-CHECK1753.json",
+      "sha256": "9010faa18ed2cf800c2a390806f874a4fa51505943a33fbef92dee20539e794f",
+      "full_content_read": true,
+      "sha256_verified": true,
+      "modified": false
+    },
+    {
+      "label": "1753S separate supplement",
+      "path": "C:/Trabajo/airr/2026-10-31_execution1753/ANCHORED-TYPED-SUPPLEMENT1753S.json",
+      "sha256": "60e715dff06ae6d06f027d3c5ec7a0a2e88725880540ca565bdeafd5bb262b89",
+      "full_content_read": true,
+      "sha256_verified": true,
+      "modified": false
+    },
+    {
+      "label": "1753 public-addition manifest, first frozen version",
+      "path": "C:/Trabajo/airr/2026-10-31_execution1753/PUBLIC-ADDITION1753.json",
+      "sha256": "cd9363cfc21bd19fd07203a64f66f624990a64dde30804ce33361ee3ef9fb39f",
+      "full_content_read": true,
+      "sha256_verified": true,
+      "modified": false
+    },
+    {
+      "label": "1753 public correction B, separately frozen",
+      "path": "C:/Trabajo/airr/2026-10-31_execution1753/PUBLIC-CORRECTION1753B.json",
+      "sha256": "508d5fda7f9def1b1c4e8cb4deb5091d9d90a3c0722484a6cdf35bb07257407f",
+      "full_content_read": true,
+      "sha256_verified": true,
+      "modified": false
+    }
+  ],
+  "source_manifest": [
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balabanfusion.pdf",
+      "sha256": "00cc6b218dcf0e1c2884e135caa1d57b3591df036540b685e7440f30cbd4ff16",
+      "sha256_verified": true,
+      "page_count": 382,
+      "reading_kind": "Selected complete pages by text extraction, with visual verification of decisive formulas; not a full reading of the compilation.",
+      "complete_text_pages_read_zero_based": [
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        212,
+        213,
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        295,
+        296,
+        297,
+        307,
+        308,
+        309,
+        330,
+        331,
+        332,
+        358,
+        359,
+        360
+      ],
+      "complete_visual_pages_read_zero_based": [
+        170,
+        171,
+        214,
+        215,
+        217,
+        218,
+        219,
+        294,
+        296,
+        307,
+        331,
+        359
+      ],
+      "title_or_header_search": "A read-only in-memory title/header search across the compilation located the predecessor articles. Search hits and short headers are not counted as complete article readings.",
+      "decisive_passages": [
+        {
+          "article": "Spaces of Regular Gauge Field Configurations on a Lattice and Gauge Fixing Conditions, CMP99, 75-102",
+          "printed_pages": [
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82
+          ],
+          "pdf_indices": [
+            212,
+            213,
+            214,
+            215,
+            216,
+            217,
+            218,
+            219
+          ],
+          "use": "Raw configuration space, point gauge invariance, incidence convention, regularity, and the change to averaged gauge conditions."
+        },
+        {
+          "article": "Averaging Operations for Lattice Gauge Theories, CMP98, 17-51",
+          "printed_pages": [
+            17,
+            18,
+            19,
+            20,
+            30,
+            31,
+            32
+          ],
+          "pdf_indices": [
+            294,
+            295,
+            296,
+            297,
+            307,
+            308,
+            309
+          ],
+          "use": "Anchored block convention (2), gauge transformation (8), actual field-mean equivariance (11) and definition (15), gauge averages (78)-(80), and distinction from later relative means."
+        },
+        {
+          "article": "Propagators and Renormalization Transformations for Lattice Gauge Theories. I, CMP95, 17-40",
+          "printed_pages": [
+            17,
+            18,
+            19
+          ],
+          "pdf_indices": [
+            358,
+            359,
+            360
+          ],
+          "use": "Anchored block convention (1.6) and distinction between point-restricted and averaged gauge transformations."
+        },
+        {
+          "article": "Propagators and Renormalization Transformations for Lattice Gauge Theories. II, CMP96, 223-250",
+          "printed_pages": [
+            223,
+            224,
+            225
+          ],
+          "pdf_indices": [
+            330,
+            331,
+            332
+          ],
+          "use": "Inherited notation, explicit separate site/bond strata and complements in (2.3), fixed data in (2.6), gauge-site restrictions in (2.7), and the j=0 site convention."
+        },
+        {
+          "article": "Propagators for Lattice Gauge Theories in a Background Field, CMP99, 389-434",
+          "printed_pages": [
+            389,
+            390,
+            391,
+            392,
+            393,
+            394
+          ],
+          "pdf_indices": [
+            166,
+            167,
+            168,
+            169,
+            170,
+            171
+          ],
+          "use": "Inherited averaging definitions, extension of the predecessor geometry to Omega0, typed bond and site operators, and Dirichlet boundary/support conditions."
+        }
+      ],
+      "modified": false
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/cmp102_variational/1104114383.pdf",
+      "sha256": "838056b5c578f81d058deb3d394c66d934690e3b94c6cf2956534ec6d211b541",
+      "sha256_verified": true,
+      "contents_read": false,
+      "evidentiary_use": "Binding integrity only; no mathematical claim here is certified from reading this standalone file.",
+      "modified": false
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-convergent-cmp119-from-fusion.pdf",
+      "sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+      "sha256_verified": true,
+      "contents_read": false,
+      "evidentiary_use": "Binding integrity only; no original physical-sector or kernel identification was verified from this file.",
+      "modified": false
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/cmp99/1103942769.pdf",
+      "sha256": "39f8033b35838c7bdd14f97c7fb1edb0b35d4190b8b88f31d19d12a72d542861",
+      "sha256_verified": true,
+      "page_count": 46,
+      "complete_text_pages_read_zero_based": [
+        0
+      ],
+      "evidentiary_use": "Standalone article identity and binding checked. The operative Background pp393-394 were read in the already bound fusion PDF, not falsely reported as read from this standalone copy.",
+      "modified": false
+    }
+  ],
+  "external_metadata": {
+    "url": "https://link.springer.com/article/10.1007/BF01466594",
+    "read_in_this_turn": true,
+    "use": "Publisher metadata and abstract only.",
+    "verified_metadata": {
+      "author": "T. Balaban",
+      "title": "Spaces of regular gauge field configurations on a lattice and gauge fixing conditions",
+      "publication": "Communications in Mathematical Physics 99, 75-102",
+      "publication_date": "March 1985",
+      "doi": "10.1007/BF01466594"
+    },
+    "new_publication_claim": false,
+    "source_count_increment_claim": false,
+    "downloaded_pdf": false
+  },
+  "main_1753_findings": [
+    {
+      "id": "M_RAW_SPACE",
+      "status": "SUPPORTED",
+      "finding": "Spaces (1.13) is a raw space of group-valued configurations with fixed scale-j means; (1.14) imposes pointwise identity at the mixed-scale site set. The associated invariance statement is explicitly before the later averaged-gauge modification.",
+      "evidence": "Spaces pp77-78, (1.5), (1.12)-(1.14).",
+      "consequence": "A test of this raw point-gauge space is logically distinct from an edge count after axial or Landau gauge fixing."
+    },
+    {
+      "id": "M_MEAN_AND_FLATNESS",
+      "status": "SUPPORTED",
+      "finding": "The mean is not replaced by an invented average. Spaces p78 gives endpoint equivariance; Averaging p19 gives (11) and the actual definition (15). The unit field has mean I. A pure gauge supported away from all coarse representatives leaves every coarse mean I, since the values at both coarse endpoints are I.",
+      "proof": "For U=I, U^u(a,b)=u(a)u(b)^(-1). Every path holonomy equals u(start)u(end)^(-1), every plaquette holonomy is I, and the covariant derivative/divergence of the constant identity curvature is zero. The logarithms in the mean of a closed holonomy are log I=0.",
+      "consequence": "The curvature conditions (1.7)-(1.9) hold for every positive amplitude; sufficiently small nonzero t can satisfy any additionally required local chart neighborhood. The finite pi/3 phase witness does not itself assert a theorem-specific smallness threshold."
+    },
+    {
+      "id": "M_FINITE_CHECK",
+      "status": "SUPPORTED_EXACT_ARITHMETIC",
+      "finding": "All 24 listed loops were read and independently checked. They are distinct closed nearest-neighbor elementary plaquettes and exactly the full set incident to the support site in d=4. Their integer phases recompute to zero; the selected edge phase recomputes to one.",
+      "consequence": "This verifies flatness arithmetic, not source block membership or membership in an original RG sector."
+    },
+    {
+      "id": "M_ANCHORED_GEOMETRY",
+      "status": "MATERIAL_ADVERSE_FINDING",
+      "finding": "The inherited source blocks are anchored: B(y) has y_mu <= z_mu < y_mu+L in fine units. CMP98 (2) and CMP95 I (1.6) agree. No conversion to blocks centered at the coarse representative was found in Spaces pp75-82 or the consulted geometric inheritance passages.",
+      "exact_issue": "When 0 is the source coarse representative, B(0)=[0,12]^4. Both (6,1,0,0) and (7,1,0,0) lie in that block. Thus the frozen original edge is not a crossing edge, is not in E(O minus X) on this source patch, and cannot witness the claimed source-compatible loss of its fine fixed datum.",
+      "nuance": "The same algebra is valid in the separately stipulated centered patch [-6,6]^4. An explicitly declared coordinate recentering would also shift the source coarse lattice and block representatives. Such an unprovided re-identification must not be silently inserted into the frozen input, nor identify old anchors with physical block centers.",
+      "consequence": "The literal main-input source-geometric realization is not accepted. The separate corrected witness does not retroactively validate it."
+    },
+    {
+      "id": "M_FALSE_ANCHOR_SEPARATION",
+      "status": "ADVERSE_FINDING",
+      "finding": "The center-distance argument is not valid for the old anchored source convention. In B(0)=[0,12]^4, z=(12,0,0,0) is a nonrepresentative inside site and w=(13,0,0,0) is the neighboring exterior coarse representative; they are one fine step apart.",
+      "consequence": "The assertion that an interior free site cannot neighbor an exterior constrained representative cannot be transferred to this source. The after-lift fine mask has a different valid justification: every fixed fine bond under that mask has neither endpoint in X. It does not require the false separation claim."
+    },
+    {
+      "id": "M_NAIVE_MASK_LOGIC",
+      "status": "SUPPORTED_AS_ABSTRACT_OBSTRUCTION_NOT_AS_FROZEN_SOURCE_PATCH",
+      "finding": "Whenever an actual crossing bond has an unconstrained endpoint x in X, an endpoint y in O minus X, and x is not a constrained coarse representative, E(O minus X) fixes that bond while the stipulated point-site gauge permits u_t(x) nontrivial.",
+      "proof": "U^u(x,y)=diag(exp(it),exp(-it)) is not I for 0<t<pi. The incidence lift fixes this coordinate because y belongs to the point ring. This contradicts invariance of that reconstructed raw space, even though the actual means remain equivariant.",
+      "consequence": "The failure belongs to the naive reconstruction. It is not a counterexample to the source theorem and does not require x to be a surviving final gauge-fixed coordinate."
+    },
+    {
+      "id": "M_LARGE_BLOCKS",
+      "status": "LIMITATION_AND_SEPARATE_RESOLUTION",
+      "finding": "A lone 13-block is not shown to satisfy the source M1 and R conditions, and making a centered picture larger does not change its representative convention. The local algebra is independent of M1. A correctly anchored patch can be embedded in arbitrarily large admissibly aligned boxes; this is justified separately for 1753S.",
+      "consequence": "No original P0/P1/Q1 sector with U=I and proper X is inferred from geometric admissibility."
+    },
+    {
+      "id": "M_OUTER_BOUNDARY",
+      "status": "LIMITATION",
+      "finding": "For proper O, E(O) minus E(X) can contain a bond leaving O. The point restriction only on (O minus X) union I does not on its face constrain the far endpoint outside O. Therefore avoiding the inner-crossing defect does not alone prove invariance under every globally defined transformation satisfying only that displayed site restriction.",
+      "consequence": "One must supply the relevant exterior support/boundary convention, or use O=T, before asserting global invariance. The main input's remaining-boundary obligation is material. This is a limitation of the proposed transfer, not an allegation that a source theorem is false. The actual test gauge, supported within X, has no exterior problem."
+    },
+    {
+      "id": "M_FINAL_AVERAGED_GAUGE",
+      "status": "SUPPORTED_EXCLUSION_WITH_EXPLICIT_FAILURE",
+      "finding": "Spaces p80 replaces point values by averaged restrictions and explains that these restrictions generally fail to form a group. Page81 states that the resulting final image Sigma_k need not lie in the original fixed-data space (1.13). Thus raw point-gauge invariance cannot be imported unchanged to the final section.",
+      "direct_check": "For background I and the one-site diagonal gauge in an anchored L=13 block, Averaging (78) gives its block gauge average at the representative as diag(exp(it/13^4),exp(-it/13^4)). This is not I for 0<t<pi. Inverting the gauge only changes the sign. The same supported gauge therefore fails the final averaged restriction.",
+      "consequence": "No final Landau-section, Jacobian, hard-propagator, eliminated-coordinate, or normalized-law result follows."
+    },
+    {
+      "id": "M_FALSIFIER_SCOPE",
+      "status": "ADVERSE_TO_AN_EXHAUSTIVE_FALSIFIER_READING",
+      "finding": "The input's suggested falsifiers do not exhaust source-applicability objections. The source geometry can fail because the declared edge is not crossing, while x is still unconstrained and its transformed edge value is still nontrivial.",
+      "consequence": "Source compatibility must be tested independently of the algebraic nonidentity. Requiring only an unchanged crossing value or a constrained x would miss the actual anchored-block objection."
+    }
+  ],
+  "original_finite_verification": {
+    "witness_sha256": "9010faa18ed2cf800c2a390806f874a4fa51505943a33fbef92dee20539e794f",
+    "support_site": [
+      6,
+      1,
+      0,
+      0
+    ],
+    "edge": [
+      [
+        6,
+        1,
+        0,
+        0
+      ],
+      [
+        7,
+        1,
+        0,
+        0
+      ]
+    ],
+    "loops_read": 24,
+    "distinct_plaquettes": 24,
+    "exact_incident_set_matches": true,
+    "nearest_neighbor_closed_loops": true,
+    "recomputed_phases_all_zero": true,
+    "stored_phases_match": true,
+    "recomputed_edge_phase": 1,
+    "coarse_representative_membership_in_13Z4": false,
+    "nearest_coarse_representative_l1_distance": 7,
+    "centered_patch": {
+      "bounds": [
+        -6,
+        6
+      ],
+      "x_in_X": true,
+      "y_in_X": false,
+      "naive_edge_fixed": true,
+      "after_lift_edge_fixed": false
+    },
+    "anchored_source_patch": {
+      "bounds": [
+        0,
+        12
+      ],
+      "x_in_X": true,
+      "y_in_X": true,
+      "naive_edge_fixed": false,
+      "after_lift_edge_fixed": false
+    },
+    "finite_geometry_check_scope": "Local membership only; the small illustrative containing box was not claimed to satisfy fixed source M1/R."
+  },
+  "supplement_1753S_findings": [
+    {
+      "id": "S_ANCHORED_COUNTERTEST",
+      "status": "SUPPORTED",
+      "finding": "For B(0)=[0,12]^4 and x=(12,1,0,0), y=(13,1,0,0), the prescribed edge crosses the block face and x is not a coarse anchor. The gauge supported only at x is I on all of X^c and all coarse anchors. It satisfies the point-site restriction, preserves coarse means, and changes the naive fixed fine crossing datum.",
+      "consequence": "The corrected source-native local obstruction is valid. The additional exterior condition does not remove the offending gauge; it is already satisfied by this witness. Hence this is not an illicit restriction that evades the countertest."
+    },
+    {
+      "id": "S_TYPED_PRIMARY_INDEX",
+      "status": "SUPPORTED_BY_DIRECT_PRIMARY_DEFINITION",
+      "finding": "CMP96 II p224 (2.3) expressly defines the differences and Lambda0=Omega1^c for sets of sites and sets of bonds. With incidence E, the bond complement is T_bonds minus E(X), not E(T_sites minus X). Background p393 says its geometric change is to start the sequence at Omega0 and gives the corresponding differences; Spaces (1.5), (1.12)-(1.13) uses this setting.",
+      "exact_raw_binding": "For common point regions Omega0=O and Omega1=X at k=1, Lambda0_sites=O minus X and Lambda0_bonds=E(O) minus E(X). The zero-step field average is the identity on its fine-link domain. The zero-step site/gauge operation has a different domain and is not to be conflated with it.",
+      "consequence": "This pays the typed raw fine-index identification in this common-region source setting. It is stronger than a uniqueness inference from gauge invariance alone, but does not reconstruct every source object or the physical model's different coarse map."
+    },
+    {
+      "id": "S_EXTERIOR_EXTENSION",
+      "status": "SUPPORTED_WITH_THE_EXPLICIT_EXTERIOR_RESTRICTION",
+      "finding": "For X subset O, adjoining the old fixed exterior gives (E(O) minus E(X)) disjoint-union (T_bonds minus E(O)) = T_bonds minus E(X). Under u=I on X^c, every fine bond in this fixed set has both endpoints fixed by the gauge, so its value is preserved for arbitrary fixed exterior data V0.",
+      "coarse_condition": "Coarse fixed means additionally need the declared identity at every coarse representative. The supported witness meets this condition.",
+      "boundary_limit": "Background pp393-394 supplies Dirichlet/support structure for the relevant linear operators and gauge functions. This supports the importance of exterior conditions but is not automatically a complete proof that the bare nonlinear Spaces (1.14), read in isolation for proper O, supplies the same global completion.",
+      "consequence": "The raw coordinate partition is justified as a set identity and as an invariant fine-data extension under the explicitly declared subgroup. It is not a product parametrization of the already constrained or gauge-fixed fiber."
+    },
+    {
+      "id": "S_LARGE_M1_R_EMBEDDING",
+      "status": "SUPPORTED_GEOMETRIC_EXISTENCE_ONLY",
+      "construction": "Work in fine-lattice units with L=13. Choose an integer m=n*M1 >=3 and X={0,...,L*m-1}^4, a union of source large cubes of side L*M1 and of anchored L-blocks. Let O={-q*M1,...,L*m+q*M1-1}^4 with integer q>R. It is a union of fine-scale cubes of side M1. Its collar distance in fine units is at least q*M1, hence exceeds R*M1. Use a sufficiently large compatible torus so these boxes do not wrap.",
+      "patch": "Choose a fine block with first anchor coordinate L*(m-1) and transverse anchor coordinates L*r, 1<=r<=m-2. Translating by that coarse anchor gives the exact local x=(12,1,0,0), y=(13,1,0,0) patch at a flat boundary face, preserving the anchor lattice.",
+      "limit": "This proves compatibility of the local corrected witness with arbitrarily large admissible block and separation parameters. It fixes no source numerical M1/R value, applies no propagator theorem, and proves no realization by the original first RG sector."
+    },
+    {
+      "id": "S_NO_RETROACTIVE_OR_FINAL_TRANSFER",
+      "status": "SUPPORTED_LIMIT",
+      "finding": "1753S correctly leaves the original centered-geometry and anchor-distance defects intact. It also retains the distinction between the raw source index, the physical block convention and mean, and the final averaged-gauge section.",
+      "consequence": "Acceptance of 1753S is local to its anchored countertest, typed raw-index definition, and explicitly stated exterior comparison. It is not approval of the main input as written or of the historical/master summary as a whole."
+    }
+  ],
+  "supplement_finite_verification": {
+    "recomputed_from_supplement_coordinates": true,
+    "support_site": [
+      12,
+      1,
+      0,
+      0
+    ],
+    "edge": [
+      [
+        12,
+        1,
+        0,
+        0
+      ],
+      [
+        13,
+        1,
+        0,
+        0
+      ]
+    ],
+    "x_inside_anchored_block": true,
+    "y_outside_anchored_block": true,
+    "x_is_coarse_anchor": false,
+    "y_is_coarse_anchor": false,
+    "nearest_neighbor_edge": true,
+    "incident_plaquettes_generated": 24,
+    "distinct_plaquettes": 24,
+    "all_exact_integer_phases_zero": true,
+    "exact_edge_phase": 1,
+    "support_subset_X": true,
+    "identity_at_all_coarse_anchors": true,
+    "naive_edge_fixed": true,
+    "after_lift_edge_fixed": false,
+    "note": "The supplement contains summary checks, not the full 24-loop list. The complete incident set and phases were generated independently in memory during this review; no substitute witness file was saved."
+  },
+  "remaining_obligations_and_nonclaims": [
+    "Identify common point regions, lattices, block representatives, and any coordinate change explicitly before transferring from old anchored blocks to the original physical construction.",
+    "Keep original 1753 geometry and separation findings visible. Neither the anchored correction nor direct typed source evidence rewrites their history.",
+    "The raw fine bond index is not a complete bond/plaquette dictionary, action-summation domain, or final conditional fiber.",
+    "Actual coarse field means and actual gauge-average maps must be identified separately. No older average is certified equal to the chosen physical M^1.",
+    "Boundary extension, allowed global gauges, source collars, regularity predicates, and any operator-specific support or scalar product still require their own matching.",
+    "A raw integration coordinate can participate in a coarse constraint or be eliminated later. No free-coordinate dimension, inverse, propagator, or Jacobian is identified by this index calculation.",
+    "The final averaged restrictions generally are not a group, and the displayed supported gauge fails them explicitly.",
+    "No theorem application, beta_ref/g1_ref substitution, cutoff change, P1 repair, original sector realization, or physical admission follows.",
+    "No normalized connected sum/history, normalizer, law/domain/mark change, full-manuscript assessment, public paper, or Capacity conclusion is established."
+  ],
+  "public_addition_review": {
+    "review_scope": "Only the single inserted 1753 heading and three new paragraphs. Historical/unchanged note text and earlier public corrections were not reassessed.",
+    "first_frozen_version": {
+      "manifest_sha256": "cd9363cfc21bd19fd07203a64f66f624990a64dde30804ce33361ee3ef9fb39f",
+      "before_path": "C:/Trabajo/airr/2026-10-31_execution1753/PUBLIC-NOTE-BEFORE1753.md",
+      "before_sha256": "18283f1fa3c36987e29e660d339527a863f9676099b6b9c73cabc4303bc8df8a",
+      "proposed_path": "C:/Trabajo/physmath-knowledge-tree/physical-mean-admission1728/integrations/research-radar/notes/2026-10-31-physical-mean-admission.md",
+      "proposed_sha256": "c632135a54d3c9ce2e4b3d19b430084def1e0e1ebd79eb9395d9cee4f4784fe6",
+      "both_note_hashes_verified_at_read": true,
+      "diff": {
+        "single_insert": true,
+        "new_line_numbers": [
+          85,
+          92
+        ],
+        "new_heading_count": 1,
+        "new_prose_paragraphs": 3,
+        "deleted_or_modified_baseline_lines": 0
+      },
+      "verdict": "SUPPORTED_CONTENT_WITH_ONE_REQUIRED_SCOPE_WORDING_CORRECTION",
+      "findings": [
+        {
+          "id": "P_RAW_INDEX",
+          "status": "SUPPORTED",
+          "finding": "The first paragraph correctly cites the explicit typewise strata and the Omega0 extension, states the raw E(O) minus E(X) index, distinguishes Q0 from Q0-prime by domain, and withholds a physical mean/fiber identification."
+        },
+        {
+          "id": "P_CENTERED_HISTORY",
+          "status": "SUPPORTED",
+          "finding": "The second paragraph correctly discloses the original centered-versus-anchored defect, preserves that historical input and the adverse findings, and presents the anchored correction separately."
+        },
+        {
+          "id": "P_SECTOR_WORDING",
+          "status": "CORRECTION_REQUIRED",
+          "quoted_text": "It is not a realizable proper first-RG sector or a counterexample to the source theorem.",
+          "finding": "The first clause asserts non-realizability. The bounded review has not proved such impossibility and was expressly not to reopen the original sector/P1 analysis. Absence of an established realization must not be stated as a proved impossibility.",
+          "recommended_replacement": "It does not establish realization of a proper first-RG sector and is not a counterexample to the source theorem."
+        },
+        {
+          "id": "P_AVERAGED_GAUGE",
+          "status": "SUPPORTED_WITH_CITATION_PRECISION_RECOMMENDATION",
+          "finding": "The third paragraph correctly excludes the final averaged restriction, states the nonidentity block mean, preserves the non-group warning, and lists material dictionary obligations. The explicit block-mean computation follows from CMP98 p30 (78); cite that formula next to this assertion in addition to Spaces p80."
+        },
+        {
+          "id": "P_NO_GLOBAL_ENDORSEMENT",
+          "status": "LIMIT",
+          "finding": "The phrase referring to a previously published P1 correction is treated as unchanged historical context, not a freshly verified claim. Approval of the new addition would not be approval of the rest of the note or any manuscript."
+        }
+      ],
+      "note_modified_by_reviewer": false,
+      "publication_performed": false,
+      "preserved_snapshot": {
+        "path": "C:/Trabajo/airr/2026-10-31_execution1753/PUBLIC-NOTE-PROPOSED1753A.md",
+        "sha256": "c632135a54d3c9ce2e4b3d19b430084def1e0e1ebd79eb9395d9cee4f4784fe6",
+        "sha256_verified": true,
+        "note": "The formerly proposed live note path now contains separately reviewed version B. The original A finding remains bound to this preserved snapshot and to the A hash."
+      }
+    },
+    "doi_checks": [
+      {
+        "doi": "10.1007/BF01240221",
+        "publisher_url": "https://link.springer.com/article/10.1007/BF01240221",
+        "verified_article": "CMP96, 223-250, Propagators and renormalization transformations for lattice gauge theories. II",
+        "metadata_read": true
+      },
+      {
+        "doi": "10.1007/BF01240355",
+        "publisher_url": "https://link.springer.com/article/10.1007/BF01240355",
+        "verified_article": "CMP99, 389-434, Propagators for lattice gauge theories in a background field",
+        "metadata_read": true
+      },
+      {
+        "doi": "10.1007/BF01211042",
+        "publisher_url": "https://link.springer.com/article/10.1007/BF01211042",
+        "verified_article": "CMP98, 17-51, Averaging operations for lattice gauge theories",
+        "metadata_read": true
+      },
+      {
+        "doi": "10.1007/BF01466594",
+        "publisher_url": "https://link.springer.com/article/10.1007/BF01466594",
+        "verified_article": "CMP99, 75-102, Spaces of regular gauge field configurations on a lattice and gauge fixing conditions",
+        "metadata_read": true
+      }
+    ],
+    "doi_check_limit": "The DOI resolver URLs returned access errors in the web tool for the three added references; their official Springer article pages were then read and explicitly confirmed the corresponding DOI and article identity. Mathematical claims were checked against the bound local primary passages.",
+    "correction_B": {
+      "manifest_path": "C:/Trabajo/airr/2026-10-31_execution1753/PUBLIC-CORRECTION1753B.json",
+      "manifest_sha256": "508d5fda7f9def1b1c4e8cb4deb5091d9d90a3c0722484a6cdf35bb07257407f",
+      "note_path": "C:/Trabajo/physmath-knowledge-tree/physical-mean-admission1728/integrations/research-radar/notes/2026-10-31-physical-mean-admission.md",
+      "note_sha256": "d44c7a104e3969efa6c1bdd0198dd79acd3faca997fdb7bf7571c13d6f32134e",
+      "both_hashes_verified": true,
+      "diff_against_preserved_A": {
+        "changed_lines": [
+          90,
+          92
+        ],
+        "only_declared_changes_found": true,
+        "other_text_unchanged": true
+      },
+      "changes_verified": [
+        "The unsupported non-realizability assertion is replaced by the statement that this work does not establish realization of a proper first-RG sector.",
+        "The last paragraph adds the direct CMP98 averaging p30 (78) citation for the nonidentity gauge average."
+      ],
+      "verdict": "SUPPORTED_FOR_THE_THREE_NEW_PARAGRAPHS_WITH_THE_STATED_LIMITS",
+      "explanation": "The scope overstatement is resolved in B, and the direct formula citation is supplied. The corrected addition accurately distinguishes the direct primary raw-index result, the separately corrected anchored test, the uncorrected historical main-input defects, and the unfulfilled physical/final-gauge identifications.",
+      "previous_adverse_findings_preserved": true,
+      "unchanged_baseline_or_P1_reassessed": false,
+      "full_note_or_manuscript_endorsed": false,
+      "physical_confidence_or_admission_inferred": false,
+      "final_gauge_fiber_identification_inferred": false,
+      "reviewer_modified_note": false,
+      "publication_performed": false,
+      "remaining_required_text_corrections_found_within_this_bounded_B_addition": [],
+      "limits": [
+        "Acceptance attaches only to this exact B hash and the three new 1753 paragraphs, not to the entire note.",
+        "The raw mask is bound for common point regions and the native source convention; it does not identify anchored representatives with physical centers or prove equality of different coarse means.",
+        "The original 1753 centered patch and anchor-distance claim remain adverse findings.",
+        "The gauge test uses the explicit exterior condition and cannot be extended unchanged to the averaged-gauge section.",
+        "No source theorem application, original-sector realization, impossibility of such a realization, full dictionary, normalized-law conclusion, or physical admission is certified."
+      ]
+    }
+  },
+  "completion_integrity": {
+    "all_frozen_input_source_and_public_snapshot_hashes_rechecked": true,
+    "all_rechecked_hashes_match": true,
+    "original_main_input_unchanged": true,
+    "original_finite_witness_unchanged": true,
+    "separate_supplement_unchanged": true,
+    "all_bound_primary_source_files_unchanged": true,
+    "public_A_preserved_at_its_verified_snapshot": true,
+    "exact_public_B_hash_rechecked": true,
+    "only_assessment_file_authored_by_this_reviewer": true,
+    "output_encoding": "UTF-8 without BOM",
+    "output_newline": "LF",
+    "no_media_or_extra_manuscript_artifacts_saved": true,
+    "archival_handoff": "The parent task is responsible for retaining the finished assessment in D: under the owner's storage rules; this subtask writes only its authorized temporary assessment path."
+  }
+}
