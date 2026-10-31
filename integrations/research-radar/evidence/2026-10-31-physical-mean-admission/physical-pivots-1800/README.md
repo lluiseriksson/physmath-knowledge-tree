@@ -1,0 +1,3 @@
+# Fine exterior, target dependence and physical-pivot evidence
+
+[manifest.json](manifest.json) binds the exact unchanged inputs and complete reports1757,1758,1759. No review was restarted. They preserve the order-of-elimination qualification, actual graph traces, the zero matched-centre target block, independent orientations, original pivot availability, uniformity limits and Haar/Lie non-double-counting. Requested Astra/xhigh; effective identity, effort and independence unauthenticated. Unscored AI assessment, not peer review, a manuscript/PDF grade or physical admission. Only own texts and provenance metadata are delivered.

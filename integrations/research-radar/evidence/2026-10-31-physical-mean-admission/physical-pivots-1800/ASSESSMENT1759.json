@@ -1,0 +1,506 @@
+{
+  "execution": 1759,
+  "artifact": "ASSESSMENT1759",
+  "assessment_type": "Una revisión nueva del input exacto; sin nota, sin objetivo de puntuación y sin reinicios",
+  "input": {
+    "path": "C:/Trabajo/airr/2026-11-01_execution1759/PHYSICAL-PIVOT-DICTIONARY1759.json",
+    "sha256_expected": "3f6cf4079f019c25f817977a2662d47a5174aaf1e67dfc32352893ec14b3b1a2",
+    "sha256_observed": "3f6cf4079f019c25f817977a2662d47a5174aaf1e67dfc32352893ec14b3b1a2",
+    "hash_matches": true,
+    "read_scope": "JSON completo, incluidos derivación, referencias, límites, law_binding y contexto cerrado."
+  },
+  "review_configuration": {
+    "requested_model": "Astra",
+    "requested_reasoning_effort": "xhigh",
+    "effective_model_identity_authenticated": false,
+    "effective_reasoning_effort_authenticated": false,
+    "independence_authenticated": false,
+    "operational_record": "Revisión en una tarea separada. No se leyeron ni se heredaron los veredictos ASSESSMENT1753/1755/1757/1758; no se reabrió PR249. Se leyó exclusivamente el input TARGET-DEPENDENT-CENTER1758 como contexto de las definiciones del chart, sin tomar su veredicto como prueba.",
+    "score": null,
+    "target_score": null,
+    "restarts": 0
+  },
+  "scope": {
+    "assessed": [
+      "Soporte de los pivotes físicos de corredor en cada una de las medias (0.4) y (0.12), por separado.",
+      "Derivada no plana A_c, orientación y cuentas periódicas.",
+      "Normalización P, Q, h, L, eta, g0; eliminación en Haar y representación en coordenadas de Lie.",
+      "Densidades sigma y Jacobiano de la transformación no lineal D de las páginas originales.",
+      "Distinción entre pivote físico y enlace libre Y del chart nativo.",
+      "Pullback explícito de una variación del pivote raw a kappa/Y y conservación de los enlaces prescritos."
+    ],
+    "not_admitted": [
+      "Familia física original K_C, sus parámetros simultáneos y su correspondencia con las coordenadas fuente.",
+      "Identificación por semejanza de un Q de propagadores con la derivada física actual.",
+      "Invertibilidad uniforme de A_c en la clase física original.",
+      "Certificación de la lista efectiva I/F/pivotes en el sector concreto.",
+      "Normalizador físico completo, positividad, denominador no nulo, expansiones conectadas o intercambio de historias."
+    ],
+    "no_new_paper_or_pdf_grade": true,
+    "physical_admission": false
+  },
+  "sources_actually_read": [
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-rg-I-cmp109-1104116842.pdf",
+      "sha256": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+      "hash_verified": true,
+      "complete_pages_text_read": [
+        {
+          "printed_page": 251,
+          "zero_based_pdf_index": 2,
+          "purpose": "Torus, paridad de L, escalas y convención de bloques."
+        },
+        {
+          "printed_page": 252,
+          "zero_based_pdf_index": 3,
+          "purpose": "(0.3), bloques centrados y familias de caminos."
+        },
+        {
+          "printed_page": 253,
+          "zero_based_pdf_index": 4,
+          "purpose": "(0.4)-(0.11), pesos y factores de extremo."
+        },
+        {
+          "printed_page": 254,
+          "zero_based_pdf_index": 5,
+          "purpose": "(0.12), media alternativa y contexto."
+        },
+        {
+          "printed_page": 266,
+          "zero_based_pdf_index": 17,
+          "purpose": "(2.4), media relativa física antes de linealizar."
+        },
+        {
+          "printed_page": 267,
+          "zero_based_pdf_index": 18,
+          "purpose": "(2.10), b0(c), h, LQh, D y escala g_k."
+        },
+        {
+          "printed_page": 268,
+          "zero_based_pdf_index": 19,
+          "purpose": "Eliminación B'=CB, sigma, Tr log y argumento no lineal de (2.12)."
+        }
+      ],
+      "complete_pages_visually_read": [
+        252,
+        253,
+        254,
+        266,
+        267,
+        268
+      ],
+      "limitations": "No se leyó la prueba completa del artículo. No se atribuye a esta revisión lectura de la bibliografía p.299."
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-convergent-cmp119-from-fusion.pdf",
+      "sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+      "hash_verified": true,
+      "complete_pages_text_read": [
+        {
+          "printed_page": 248,
+          "zero_based_pdf_index": 5,
+          "purpose": "(1.12)-(1.13), mínimo con datos finos y medios prescritos; fluctuación."
+        },
+        {
+          "printed_page": 249,
+          "zero_based_pdf_index": 6,
+          "purpose": "(1.14)-(1.16), sigma, D, escalado y eliminación exacta de A'(b0(c))."
+        }
+      ],
+      "complete_pages_visually_read": [
+        248,
+        249
+      ],
+      "limitations": "No se leyó p.285 ni la prueba completa del mínimo. Los prefactores impresos se conservan; no se resuelve aquí su comparación entre versiones."
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balabanfusion.pdf",
+      "sha256": "00cc6b218dcf0e1c2884e135caa1d57b3591df036540b685e7440f30cbd4ff16",
+      "hash_verified": true,
+      "complete_pages_text_read": [
+        {
+          "article": "CMP95 (1984), Propagators and Renormalization Transformations for Lattice Gauge Theories. I",
+          "printed_page": 17,
+          "zero_based_pdf_index": 358,
+          "purpose": "Identificación del artículo y contexto geométrico."
+        },
+        {
+          "article": "CMP95 (1984), mismo artículo",
+          "printed_page": 18,
+          "zero_based_pdf_index": 359,
+          "purpose": "(1.1)-(1.7): orientaciones, bloques anclados y caminos canónicos."
+        }
+      ],
+      "complete_pages_visually_read": [
+        {
+          "printed_page": 18,
+          "zero_based_pdf_index": 359
+        }
+      ],
+      "limitations": "Se usa para la geometría nativa anclada. Su Q/propagador no queda identificado con el Q físico nuevo."
+    }
+  ],
+  "other_inputs_read": [
+    {
+      "path": "D:/LEEME.md",
+      "purpose": "Reglas de archivos y trabajo; sin modificaciones."
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1559/LAW-BINDING1559.json",
+      "sha256": "a78244cb62773f907346968b16470892a00f1405219d0e9752f17b578af806dd",
+      "hash_verified": true,
+      "purpose": "Identificar el K_C y beta_ref/g1_ref congelados; no admitirlos de nuevo."
+    },
+    {
+      "path": "D:/Proyectos/airr-investigacion/2026-11-01_target-dependent-center1758/TARGET-DEPENDENT-CENTER1758.json",
+      "sha256": "113e0ff5f1f3da11f16c44558d627c36bdbdd562a7fd78171895afa8b1a01bc9",
+      "hash_verified": true,
+      "purpose": "Sólo definiciones explícitas de P, k, g, l_g, u, F y coordenadas residuales. No se leyó ASSESSMENT1758."
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-11-01_execution1759/INPUTS-PINS1759.json",
+      "purpose": "Inventario de contexto, sin importar como prueba sus certificaciones históricas."
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-11-01_execution1759/SOURCES1759.json",
+      "purpose": "Inventario de metadatos. No se utiliza como prueba matemática ni como nueva lectura web."
+    }
+  ],
+  "mathematical_findings": [
+    {
+      "id": "F01",
+      "claim": "Soporte diagonal de los pivotes físicos originales.",
+      "status": "VALIDO_CONDICIONAL_EN_FILAS_INDEPENDIENTES",
+      "derivation": [
+        "En un lift con c:y->y+L eta e_mu, B(y) contiene los offsets enteros -h,...,h en cada coordenada, h=(L-1)/2. Todo camino de G(y,x) cambia monótonamente sus coordenadas hasta x y permanece en ese bloque.",
+        "El pivote beta(c) es el enlace h->h+1 en el eje mu a través del centro transversal. Ningún camino de extremo dentro de un bloque usa un enlace entre dos bloques distintos.",
+        "El camino medio desde x=y+s hasta x+L eta e_mu tiene un único cruce del corredor propio. Puede contener beta(c) si y sólo si s_nu=0 para nu distinto de mu. Para cada s_mu en [-h,h], el intervalo de L enlaces contiene exactamente una vez h->h+1. Hay L valores de s_mu.",
+        "Ningún otro pivote seleccionado de un corredor distinto está en esos caminos medios. El camino c contiene su propio pivote una vez. Por tanto todas las dependencias respecto de pivotes seleccionados quedan en la diagonal, para todos los fondos del dominio de la fórmula, sin aproximación de campo pequeño.",
+        "En (0.12), el promedio de los caminos de extremo sigue siendo función exclusiva de enlaces del bloque; no se necesita inventar una propiedad nueva del promedio para obtener este soporte."
+      ],
+      "periodicity": "El argumento usa los lifts de los bloques y luego los enlaces orientados proyectados. En el toro fuente de p.251 las escalas son compatibles con la teselación; no se colapsa un contorno largo a un solo enlace. En la instancia concreta siguen siendo necesarias la unicidad de las ocurrencias relevantes y la inyectividad de c->beta(c) como variables independientes; el input las pide y no las certifica.",
+      "orientation_qualification": "La frase 'No row c' distinct from c' sólo vale para otras filas independientes seleccionadas, bajo la premisa previa de pivotes independientes. No vale para toda etiqueta orientada: la fila -c usa el mismo enlace independiente. Invertir la orientación no crea una nueva variable ni una nueva delta."
+    },
+    {
+      "id": "F02",
+      "claim": "Orientaciones inversas y variables independientes.",
+      "status": "RESTRICCION_ESENCIAL",
+      "analysis": "Con M(-c)=M(c)^-1, la velocidad de la fila inversa es -Ad_(M(c)^-1)(dot M(c) M(c)^-1). Por ello su derivada respecto del mismo pivote raw es -Ad_(M(c)^-1) A_c, que en general no es cero. Para el enlace invertido, rho_(beta^-1)=-Ad_(U_beta^-1)rho_beta es la regla correcta. Cambiar simultáneamente la orientación de entrada y de salida añade esos mapas de inversión; no produce un pivote adicional y no cambia el valor absoluto del Jacobiano Haar.",
+      "consequence": "La admisión condicional de F01 usa exactamente la premisa de pivotes independientes de 1759. No se certifica que el I efectivo ya cumpla esa premisa. Una interpretación literal que incluya a -c entre las 'otras filas' sería falsa, y queda expresamente rechazada sin modificar el input."
+    },
+    {
+      "id": "F03",
+      "claim": "Derivada no plana A_c con ellLog, dexp y término final C.",
+      "status": "VALIDO_EN_EL_CHART_DECLARADO",
+      "derivation": [
+        "Para W_alpha=A_alpha T_x B_alpha, la regla del producto con velocidad dot U U^-1 da dot W_alpha W_alpha^-1=chi_alpha Ad_(R_alpha)rho y dot C C^-1=Ad_(R_c)rho.",
+        "Para L_alpha=W_alpha C^-1 resulta dot L_alpha L_alpha^-1=(chi_alpha Ad_(R_alpha)-Ad_(L_alpha)Ad_(R_c))rho.",
+        "Con ell_Z(B)=DLog_Z[BZ], dot S=sum omega ell_L(dot L L^-1). La fórmula de D exp con esta trivialización es dot exp(S) exp(-S)=dexp_S(dot S), con dexp_S=integral_0^1 Ad_exp(tS) dt.",
+        "Al derivar M=exp(S)C aparece además Ad_exp(S) Ad_(R_c)rho. La A_c escrita en el input tiene ese término, el orden de adjuntos y el signo de C^-1 correctos."
+      ],
+      "limits": "La conclusión requiere el Log real, Lie(G)-valuado y suave que declara el input. ell_Z=dexp_Log(Z)^-1 sólo se usa donde esos mapas son realmente inversos locales. No se infiere un control de norma, una rama global ni una continuación del valor absoluto de un determinante a datos complejos.",
+      "separate_means": "La prueba se aplica a (0.4) y a (0.12) por separado, con sus factores de extremo efectivos. No demuestra que sus A_c no planos sean iguales, ni los identifica con un promedio relativo nativo antiguo."
+    },
+    {
+      "id": "F04",
+      "claim": "Calibración plana P_beta y factores L.",
+      "status": "VALIDO",
+      "calculation": "En I, ell_I=dexp_0=I y todos los adjuntos son I. La contribución -sum omega=-1 se cancela con el +1 del C final. Queda sum omega chi=L/L^d=L^(1-d). En (0.4), al fijar x la suma de pesos de los pares de caminos de extremo es L^-d; en (0.12) el peso es directamente L^-d.",
+      "numerical_values": {
+        "d": 4,
+        "L": 13,
+        "P_pivot": "1/2197",
+        "Q_pivot": "1/28561",
+        "h_pivot": "2197"
+      },
+      "limits": "Es una calibración en la identidad. No sustituye el fondo físico U0 por I y no da por sí sola una cota inferior uniforme del valor singular mínimo."
+    },
+    {
+      "id": "F05",
+      "claim": "Conversión entre la velocidad de grupo, el potencial relativo y Q.",
+      "status": "VALIDO_COMO_LINEALIZACION_EN_A_IGUAL_A_CERO",
+      "analysis": "Para U(A)=exp(i eta A)U0, la velocidad en A=0 es i eta A. El residual M(U(A))M(U0)^-1 vale I en A=0, de modo que D(Log)/i convierte la velocidad de grupo en eta P, identificando coherentemente bases anti-Hermitianas e i veces bases Hermitianas. Dividir por L eta produce Q=P/L. La afirmación 'su derivada es eta P A' debe entenderse como esta linealización en el punto A=0; en A distinto de cero entran también dexp_(i eta A) y la derivada del Log residual.",
+      "source_binding": "CMP109 p.266 (2.4) muestra la media relativa física; p.267 escribe su parte lineal como L Q B' y su resto no lineal. El ajuste de las notaciones del input es consistente a espaciamiento fino unidad.",
+      "not_implied": "No identifica los productos escalares, escalas ni el Q de cualquier otro propagador o versión fuente."
+    },
+    {
+      "id": "F06",
+      "claim": "h disperso en los pivotes y comparación con la fuente.",
+      "status": "VALIDO_CONDICIONAL_A_C_INVERTIBLE",
+      "analysis": "Con la matriz por filas diagonal y cada A_c(U0) invertible, definir h_beta=A_c^-1 da P h=I y L Q h=I. En la fuente, h(c) es L^-1 veces la inversa del coeficiente de Q en b0(c). Puesto que Q_beta=A_c/L, la misma prescripción es A_c^-1. Por tanto h plano=L^(d-1), y no L^d ni 1.",
+      "source_binding": "La definición está efectivamente en CMP109 p.267, después de (2.10).",
+      "limits": "La igualdad sólo identifica la normalización puntual del h fuente cuando promedio, fondo, orientación y escala se han emparejado efectivamente. No identifica h con H variacional, H_n, H1, H_sigma, Hsharp ni con una derivada del mínimo. No prueba invertibilidad uniforme ni estimaciones de esos operadores."
+    },
+    {
+      "id": "F07",
+      "claim": "Eliminación local de las deltas en variables raw de grupo.",
+      "status": "VALIDO_EN_RAICES_REGULARES_ADMITIDAS",
+      "analysis": "Al fijar los demás enlaces raw y usar una fila target por variable independiente, el mapa de pivotes a targets tiene derivada diagonal con bloques A_c. Con Haar y delta normalizados de forma compatible en la misma G, la coárea/cambio local de variables da product_c |det_R A_c(U_solution)|^-1. Para el residual M_c V_c^-1, en la raíz M_c=V_c, la trivialización no introduce un factor adicional. Las distintas raíces regulares se suman sólo con sus dominios originales.",
+      "essential_conditions": [
+        "Cada beta(c) es una variable original independiente y está fuera de F.",
+        "Se conserva el dominio original y se integran únicamente las ramas admitidas.",
+        "No se deduce regularidad de raíces singulares ni se descartan por este cálculo.",
+        "Las demás deltas o restricciones originales se transportan una vez; su producto conjunto requiere su interpretación previamente admitida.",
+        "La solución y el determinante dependen de los demás enlaces y del fondo; no son en general funciones sólo de V0."
+      ],
+      "limits": "La fórmula es puntual y real. Ni la existencia global de soluciones ni la invertibilidad de todos los pivotes en todo el cutoff quedan probadas."
+    },
+    {
+      "id": "F08",
+      "claim": "Haar versus coordenadas de Lie; sigma, L, eta y g0.",
+      "status": "VALIDO_CON_DISTINCION_DE_REPRESENTACIONES",
+      "calculation": [
+        "En el centro, para W=exp(i a), dW=sigma_G(a)da y delta_G(exp(i z))=sigma_G(0)^-1 delta_g(z). La derivada lineal del residual es LQ a. Por pivote, sigma_G(0) sigma_G(0)^-1 L^-r |det Q_beta|^-1=L^((d-1)r).",
+        "Para a=eta g0 B, el volumen del pivote añade (eta g0)^r y la delta aporta (L eta g0)^-r. Queda el mismo L^-r |det Q_beta|^-1. Es cancelación por pivote, sin cancelar los poderes de las variables libres ni los otros factores del normalizador.",
+        "Fuera del centro, la fórmula en Haar ya es exactamente |det A_c|^-1. Si se reescribe en coordenadas exponenciales a, en una raíz regular se obtiene sigma_G(a)/(sigma_G(0)|det D_a z|). Como D_a z=A_c dexp_(i a) bajo la identificación de bases y sigma_G(a)=sigma_G(0)|det dexp_(i a)|, ambas expresiones coinciden."
+      ],
+      "non_double_counting_requirement": "La instrucción de conservar sigma y los determinantes no lineales pertenece a la representación en variables de Lie y a la secuencia fuente de cambios. No autoriza multiplicar el factor Haar exacto por una segunda densidad del mismo pivote. En particular, |det A_c|^-1 y sigma(a)/(sigma(0)|det D_a z|) son dos representaciones del mismo factor, no factores independientes. No encontré en el input una igualdad que ordene explícitamente esa doble multiplicación, pero esta distinción es obligatoria.",
+      "limitations": "No se obtiene aquí una fórmula numérica completa de z^(0), N_k ni del normalizador físico. r=dim G y la base real debe ser coherente en dominio y target."
+    },
+    {
+      "id": "F09",
+      "claim": "Secuencia no lineal fuente A_old'=A_linear-hD(A_linear), escala y C.",
+      "status": "CONTRASTADO_CON_LAS_PAGINAS_ORIGINALES",
+      "analysis": "CMP109 p.267 linealiza B'=B-hD(B), luego escala B=g_k B'; p.268 resuelve Q B'=0 como B'=CB y conserva en (2.12) log sigma(g_k CB-hD(g_k CB)), Tr log(I-h D'(g_k CB)) y la configuración con ese argumento no lineal. CMP119 p.249 muestra la misma estructura en (1.14), escala A=g0 A', resuelve A'=CA y retiene z^(0), dependencia de U1 y los demás términos en (1.15).",
+      "accepted_consequence": "El argumento de la exponencial raw no se puede sustituir por g0 CA_free si el cambio D se ha efectuado: es g0 CA_free-hD(g0 CA_free), con la referencia multiplicativa original aún presente en la configuración completa.",
+      "limits": "El cambio al grupo raw y la secuencia fuente de linealización son rutas de coordenadas distintas. No se multiplican sus Jacobianos como si fueran operaciones adicionales sobre las mismas variables sin escribir la composición. No se resolvió ninguna discrepancia histórica de prefactores ni la identificación de E1/g1_ref; tampoco se reemplaza el cutoff original por una caja favorable."
+    },
+    {
+      "id": "F10",
+      "claim": "El pivote físico L13 puede pertenecer al árbol nativo y no ser un Y libre.",
+      "status": "VALIDO_GEOMETRICAMENTE",
+      "analysis": "En coordenadas trasladadas con centro físico 0, la frontera entre los bloques físicos centrados está entre 6 y 7. El enlace (6,0,...)->(7,0,...) está dentro de [0,12]^d. El camino canónico nativo de (1.7), fusion índice359, hacia (7,0,...) recorre ese enlace del eje y lo incluye en el peine. Por tanto no hay contradicción entre ser frontera física de corredor e interior del bloque auxiliar anclado.",
+      "consequence": "Si ese enlace pertenece al árbol T del chart considerado, Y_beta=U0_beta está fijado por la construcción del chart. U_beta puede seguir siendo una variable raw activa; la variación se representa en kappa y en los Y realmente libres. Eliminar Y_beta como variable libre sería incorrecto.",
+      "limits": "Es una compatibilidad geométrica, no una certificación de la elección efectiva de T/F/I ni una realización del sector físico. No se ha repetido ni reinterpretado un contrajemplo de anillo nativo de revisiones cerradas."
+    },
+    {
+      "id": "F11",
+      "claim": "Pullback explícito de una dirección raw a q a referencia fija.",
+      "status": "VALIDO_EN_EL_CHART_DECLARADO",
+      "derivation": [
+        "P fijo y k=P^-1 U(Gamma) dan chi=dot k k^-1=Ad_(P^-1) C_z. C_z es la suma ordenada de prefijos de las ocurrencias orientadas del enlace variado; para una ocurrencia inversa se usa -Ad_(U_beta^-1)rho_beta.",
+        "Para h_z=P k P^-1, su velocidad es Ad_P chi. Por tanto dot X_z=ell_(h_z)(Ad_P chi_z), y dot A_r=sum L^-d dot X_z.",
+        "g=exp(-A)=exp(A)^-1 da gamma=-Ad_g dexp_A(dot A). Con l_g=P^-1 g P y u=l_g k, alpha=Ad_(P^-1)gamma+Ad_(l_g)chi. El signo y el orden son correctos.",
+        "Y_b=u_- U_b u_+^-1 da dot Y_b Y_b^-1=alpha_-+Ad_(u_-)z_b-Ad_(Y_b)alpha_+. Para w_b=Y_b U0_b^-1, fijo U0, la velocidad es la misma.",
+        "En una arista del árbol p->z, P_z=P_p U0_e y k_z=U0_e^-1 k_p U_e. Sustituirlo en Y_e=u_p U_e u_z^-1 da exactamente Y_e=U0_e. Su derivada es cero, también cuando el enlace raw es el pivote activo.",
+        "En enlaces raw prescritos z_b=0, lo que no implica que el Y transportado tenga velocidad cero. Los términos de alpha conservan precisamente el target transportado. En componentes de T intersección F, los tops son las coordenadas kappa independientes y su velocidad es chi en esos sitios."
+      ],
+      "limits": "Es derivación a target/referencia fijos. No se puede reemplazar dot k por cero usando la fórmula de una derivada de targets a k fijo. El chart común suave y la compatibilidad de T/F se usan como premisas; no se establece aquí su cobertura global."
+    },
+    {
+      "id": "F12",
+      "claim": "Haar del chart completo y recuperación de la derivada física.",
+      "status": "VALIDO_CONDICIONAL_SIN_HEREDAR_UN_VEREDICTO",
+      "analysis": "La propiedad Haar se comprueba con la estructura triangular: en cada arista raw activa del árbol, k_z=U0_e^-1 k_p U_e es, fijados los ancestros, una traslación izquierda/derecha de U_e. Las aristas del árbol en F determinan las restantes k por la recursión prescrita. Después, fijadas todas las k, cada enlace no árbol fuera de F se transforma por Y_b=u_- U_b u_+^-1, otra traslación Haar. g(k) sólo depende de los datos del árbol, de modo que no altera este argumento. Los Y de árbol no se integran como variables libres.",
+      "chain_rule": "Con el inverso exacto U=Psi(q) en ese dominio, aplicar D M a la dirección q construida en F11 equivale a aplicar D M a la variación raw inicial. Se recupera A_c en la fila independiente propia y cero en las otras filas independientes, por F01. Esto no da un determinante de eliminación igual a 1: el Jacobiano ambiental Haar y la derivada del constraint son operaciones diferentes.",
+      "limits": "No se admite ningún bloque de eliminación de targets uniforme, no se usa el bloque N de 1758 para eliminar y no se reabre su análisis."
+    },
+    {
+      "id": "F13",
+      "claim": "Palabras marcadas, densidad original y límites declarados.",
+      "status": "CORRECTO_COMO_TRANSPORTE_CONDICIONAL",
+      "analysis": "Sustituir una solución local dentro del integrando completo transporta las palabras ordenadas enteras, sus marcos y sus dominios. Las palabras hechas sólo de enlaces finos prescritos conservan el producto V0 original una vez; las palabras que cruzan la frontera no se separan artificialmente. Para fuentes polinómicas complejas finitas, el tratamiento coeficiente a coeficiente es compatible con integrabilidad original. Diferenciar soluciones, determinantes, dominios y marcos requiere hipótesis adicionales.",
+      "limits": "No se obtiene positividad, masa no nula del chart, denominador no nulo, logaritmo conectado, estimación de historias ni control de las contribuciones fuera del chart."
+    }
+  ],
+  "finite_verifier": {
+    "kind": "Verificador propio finito de aritmética y convenciones, ejecutado en memoria sin guardar un nuevo script o corpus",
+    "admissibility": "No es una instancia de la clase física fuente: d=2, L=3, mientras el problema físico requiere L>11. No se extrapolan sus valores a L13, d4, al mínimo original, a K_C ni a estimaciones uniformes.",
+    "source_formulas_implemented": [
+      "Bloques centrados y todos los caminos de permutación de (0.4).",
+      "Media (0.12) con el promedio local de (0.10); en d2 cada familia tiene uno o dos elementos, y el promedio de dos se calcula como su punto medio geodésico próximo a identidad.",
+      "Caminos nativos canónicos de fusion índice359 (orden de ejes descendente)."
+    ],
+    "parameters": {
+      "seed": 1759,
+      "group": "SU(2), base i veces las tres matrices de Pauli",
+      "dimension": 2,
+      "L": 3,
+      "fine_period_each_axis": 9,
+      "independent_positive_coarse_rows": 18,
+      "raw_positive_fine_links": 162,
+      "numpy_version": "2.2.6",
+      "scipy_version": "1.18.0",
+      "nonflat_links": "U_b=exp(i v_b.sigma), v_b Gaussianos escala 0.06; U0 escala 0.04, con la misma semilla.",
+      "finite_difference_steps": [
+        0.00001,
+        0.000003
+      ]
+    },
+    "incidence_result": {
+      "independent_pivots": 18,
+      "selected_pivot_occurrences_in_endpoint_paths": 0,
+      "other_selected_pivots_in_middle_paths": 0,
+      "other_selected_pivots_in_coarse_paths": 0,
+      "own_pivot_middle_hit_counts": "3 en cada una de las 18 filas"
+    },
+    "mean_0_4": {
+      "derivative_error_inf_by_step": [
+        2.596665937826259e-12,
+        1.084306255894063e-11
+      ],
+      "other_independent_rows_finite_change_max": 0,
+      "inverse_row_group_consistency_error": 2.536495558929408e-16,
+      "flat_A_minus_one_third_I_error_inf": 5.551115123125783e-17,
+      "A_matrix": [
+        [
+          0.33612055372075555,
+          0.019824335756847694,
+          0.022114900713296165
+        ],
+        [
+          -0.023717402033839784,
+          0.3425028367061522,
+          -0.02514905326640443
+        ],
+        [
+          -0.028035553225023727,
+          0.021007257166851805,
+          0.3446526656138643
+        ]
+      ],
+      "determinant_A": 0.04023212606062784,
+      "haar_elimination_factor": 24.85575826872905,
+      "exponential_coordinate_factor": 24.85575826872905
+    },
+    "mean_0_12": {
+      "derivative_error_inf_by_step": [
+        4.652639384872259e-12,
+        1.004834063178528e-11
+      ],
+      "other_independent_rows_finite_change_max": 0,
+      "inverse_row_group_consistency_error": 1.1156308648295148e-16,
+      "flat_A_minus_one_third_I_error_inf": 5.551115123125783e-17,
+      "A_matrix": [
+        [
+          0.33530827578006694,
+          0.019492957484039487,
+          0.022045199934004306
+        ],
+        [
+          -0.023817702676074932,
+          0.3402732131138393,
+          -0.024979402467748615
+        ],
+        [
+          -0.027826690039776947,
+          0.020824392776783412,
+          0.3419270343185532
+        ]
+      ],
+      "determinant_A": 0.03955717613063706,
+      "haar_elimination_factor": 25.279863170654874,
+      "exponential_coordinate_factor": 25.279863170654863,
+      "measure_factor_absolute_difference": 1.0658141036401503e-14
+    },
+    "raw_pivot_pullback": {
+      "pivot": "(1,0)->(2,0), centered physical corridor and anchored native tree",
+      "pivot_in_native_tree": true,
+      "pivot_outside_F": true,
+      "fixed_raw_links": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          2,
+          1,
+          1
+        ],
+        [
+          5,
+          5,
+          0
+        ]
+      ],
+      "fixed_links_count": 4,
+      "variation_vector": [
+        0.31,
+        -0.23,
+        0.17
+      ],
+      "step": 0.000003,
+      "chi_velocity_finite_difference_error_max": 1.0658198393080935e-11,
+      "alpha_velocity_finite_difference_error_max": 1.3098321450121696e-11,
+      "Y_velocity_finite_difference_error_max": 1.9636157771818737e-11,
+      "native_tree_Y_velocity_max": 4.918300529807393e-16,
+      "native_tree_Y_minus_U0_max": 1.1381800522950428e-15
+    },
+    "interpretation": "Corrobora signos, prefijos, cancelación del C final, soporte y conversión de medida en esta malla. El argumento matemático de las fórmulas es F01-F12; la prueba finita no lo sustituye ni aporta una familia uniforme."
+  },
+  "material_objections_and_unresolved_gates": [
+    {
+      "id": "M01",
+      "severity": "IMPIDE_LA_ADMISION_FISICA",
+      "issue": "No está certificada la lista efectiva de filas independientes, la inyectividad de sus pivotes ni beta(c) fuera de F.",
+      "full_objection": "El input conserva correctamente esta verificación como requisito previo. No proporciona la tabla efectiva de I/F, las ocurrencias periódicas y los representantes independientes del sector original. Si un beta está fijado, no se puede eliminar en esa variable ni sustituirlo por otro enlace favorable. Si I incluye simultáneamente orientaciones inversas del mismo enlace coarse, no hay diagonal cuadrada de variables independientes ni se deben integrar dos deltas como restricciones independientes. Los resultados de soporte de esta revisión son condicionales a esa premisa y no la descargan."
+    },
+    {
+      "id": "M02",
+      "severity": "IMPIDE_LA_ADMISION_UNIFORME",
+      "issue": "Invertibilidad puntual/plana no prueba una cota uniforme en el dominio físico original.",
+      "full_objection": "A_c(I)=L^(1-d)I sólo demuestra la calibración y, por continuidad en una malla fija con charts admitidos, regularidad en alguna vecindad local de I. No demuestra que todos los fondos/soluciones del cutoff original, del mínimo físico y de la familia simultánea permanezcan en esa vecindad ni que las cotas sean uniformes en las escalas relevantes. No se ha probado una cota de A_c^-1 o del determinante, una cobertura de ramas, masa del chart ni control de raíces fuera de él."
+    },
+    {
+      "id": "M03",
+      "severity": "RESTRICCION_DE_LECTURA_MATERIAL",
+      "issue": "La frase sobre otras filas no incluye las orientaciones inversas.",
+      "full_objection": "Sin restringir 'otra fila' a representantes independientes, la afirmación de ausencia de dependencia es falsa: la fila -c es M(c)^-1 y su derivada es -Ad_(M(c)^-1)A_c. Esta revisión no corrige el texto, sino que conserva el alcance preciso que permite su premisa inicial de pivotes distintos e independientes. Cualquier uso posterior sin esa restricción queda rechazado."
+    },
+    {
+      "id": "M04",
+      "severity": "RESTRICCION_DE_MEDIDA_MATERIAL",
+      "issue": "Los factores de Haar y de Lie no se pueden duplicar ni eliminar por el Jacobiano ambiental 1.",
+      "full_objection": "El factor raw exacto |det A_c|^-1 ya usa la medida Haar. En coordenadas de Lie, la densidad sigma y el determinante del Log producen ese mismo factor. Si se utiliza además la linealización fuente, deben escribirse su composición, sigma(A-hD(A)), det(I-hD') y el pivote de Q en el orden fuente; no es lícito añadir todos esos factores sobre el factor raw sin justificar la composición, ni poner el determinante de constraints igual a 1 por la triangularidad de la transformación ambiental. El input puede leerse coherentemente con esta distinción, pero no proporciona una fórmula cerrada del normalizador físico completo."
+    },
+    {
+      "id": "M05",
+      "severity": "IMPIDE_IDENTIFICACIONES_Y_TRANSFERENCIAS",
+      "issue": "No hay diccionario admitido completo con K_C, el propagador fuente y los operadores estimados.",
+      "full_objection": "La normalización correcta del h disperso no identifica Hsharp, H1, H_n, H_sigma, la derivada del mínimo, los productos escalares ni un Q de otra construcción. Tampoco construye el mapa a las variables libres del K_C original. Persisten los asuntos expresamente no admitidos: diccionario B nativo/frontera, sección de Landau, estimaciones fuente190, amplitudes beta_ref/g1_ref, P1, absorciones simultáneas, normalización y contribuciones fuera de chart. No se resuelven por semejanza de notación, por el test L3 ni por la existencia de algún menor invertible."
+    }
+  ],
+  "verdict": {
+    "code": "DICCIONARIO_LOCAL_CONDICIONAL_VALIDO_SIN_ADMISION_FISICA",
+    "summary": "La derivada no plana, la cuenta de pivotes y sus factores L, el h puntual, la eliminación local en Haar y el pullback explícito al chart nativo son correctos con las premisas de independencia, exterior, chart y raíces regulares declaradas. No se encontró un error material nuevo en esas identidades bajo dichas premisas. La orientación inversa debe excluirse de las otras filas independientes, y las representaciones Haar/Lie deben mantenerse coherentes. Las condiciones físicas y uniformes siguen sin demostrarse.",
+    "accepted_new_content": [
+      "Soporte por filas independientes de los pivotes físicos de corredor.",
+      "Fórmula exacta no plana A_c para cada M_fix por separado, incluido el C final.",
+      "P_beta plano=L^(1-d), Q=P/L, h plano=L^(d-1).",
+      "Factor local raw de grupo product |det A_c|^-1 y su calibración/conversión de escala.",
+      "Compatibilidad del pivote físico L13 con un enlace del árbol nativo fijo en Y.",
+      "Pullback explícito con dot k no nulo, ellLog, dexp y cancelación de velocidades Y en el árbol."
+    ],
+    "not_accepted": [
+      "Una realización de la familia física original o del K_C congelado.",
+      "Uniformidad de A_c^-1 en todo el dominio físico.",
+      "Certificación del sector real I/F y disponibilidad de todos sus pivotes.",
+      "Identificación del Q físico con un propagador anterior por semejanza.",
+      "Un valor numérico completo del normalizador fuente o eliminación de sigma/D.",
+      "Un nuevo teorema físico, paper o calificación de PDF."
+    ],
+    "physical_admission": false,
+    "uniform_admission": false,
+    "manuscript_edit_authorized_or_performed": false,
+    "score_assigned": false
+  },
+  "preservation": {
+    "input_modified": false,
+    "source_pdfs_or_corpus_copied": false,
+    "manuscript_modified": false,
+    "shared_state_modified": false,
+    "other_chats_modified": false,
+    "previous_reviews_reopened": false,
+    "output_files_created_by_review": [
+      "C:/Trabajo/airr/2026-11-01_execution1759/ASSESSMENT1759.json"
+    ],
+    "rendering": "Páginas renderizadas y examinadas en memoria; no se guardaron imágenes ni copias de PDF.",
+    "final_hash_note": "El SHA256 del informe se calcula después de escribirlo y se entrega separadamente para evitar un hash autorreferente."
+  }
+}

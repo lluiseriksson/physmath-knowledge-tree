@@ -1,0 +1,28 @@
+{
+  "scope": "New editorial integration assessment; the three mathematical reviews remain closed and unchanged. No new paper, grade, source card, candidate or physical admission.",
+  "assessed_snapshot": {
+    "path": "PUBLIC-NOTE-PROPOSED1800A.txt",
+    "sha256": "6815c4e5a90514df0988551e1625bb35bc9fcf4213df9b15c6d2be0e6b2d6b2c"
+  },
+  "editorial_input": {
+    "path": "PUBLIC-INTEGRATION1800A.json",
+    "sha256": "252982baeaab066ace3b3c998c9e99df32d1415780811dc653bb5af2189d1402"
+  },
+  "complete_editorial_report": {
+    "path": "ASSESSMENT1800.json",
+    "sha256": "6cbbdc7d464289ef4b51c697815a34a82cef2d1d21b25928760404054e564c14"
+  },
+  "final_note_snapshot": {
+    "path": "PUBLIC-NOTE-FINAL1800B.txt",
+    "sha256": "34e171313bd1bbd2ca9902d17d947a3c0b53e861c7316d93be96f12ed4099bab"
+  },
+  "exact_editorial_delta": {
+    "path": "EDITORIAL-DISPOSITION1800.json",
+    "sha256": "998b93bdc18b03db3b2eca80448d8d05cf1b4152d625e7b6c8f07b215498d42c"
+  },
+  "baseline": {
+    "path": "PUBLIC-NOTE-BEFORE1800.txt",
+    "sha256": "e176966f79f8a82b812a7febc4933853474ffa5dfc416e780d2c7aca7b12be22"
+  },
+  "provenance": "Requested Astra/xhigh; effective identity, effort and external independence unauthenticated. Unscored AI assessment, not peer review or a manuscript/PDF grade."
+}

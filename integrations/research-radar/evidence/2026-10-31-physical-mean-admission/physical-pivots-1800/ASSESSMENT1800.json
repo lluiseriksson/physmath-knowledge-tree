@@ -1,0 +1,698 @@
+{
+  "schema_version": "1.0",
+  "execution": 1800,
+  "artifact": "ASSESSMENT1800",
+  "assessment_type": "Una única evaluación editorial nueva de la sección pública exacta; sin puntuación, reinicio ni reapertura matemática",
+  "created_at_utc": "2026-10-31T23:36:38.1189201Z",
+  "review_configuration": {
+    "requested_model": "Astra",
+    "requested_reasoning_effort": "xhigh",
+    "effective_model_identity_authenticated": false,
+    "effective_reasoning_effort_authenticated": false,
+    "external_independence_authenticated": false,
+    "configuration_is_a_request_not_attestation": true,
+    "review_instances": 1,
+    "restarts": 0,
+    "score_assigned": false,
+    "target_score": null
+  },
+  "scope": {
+    "section_heading": "Fixed fine data, target-dependent references and the original physical pivots (1757–1759)",
+    "snapshot_start_line": 127,
+    "snapshot_end_line": 154,
+    "evaluated": "Fidelidad editorial de esta sección frente a los tres inputs exactos y sus tres informes completos, entrega local íntegra, citas y límites de publicación.",
+    "not_evaluated": [
+      "La corrección matemática de 1757, 1758 y 1759 como revisión nueva.",
+      "Los apartados anteriores de la nota, el manuscrito, cualquier PDF o PR249.",
+      "La admisión física, uniformidad, novedad/publicabilidad de un artículo científico o confianza del grafo."
+    ],
+    "reading_scope": "Los tres inputs, los tres informes y los dos archivos de entrega se leyeron íntegramente. Las salidas truncadas se completaron mediante lecturas separadas de sus campos. Una extracción auxiliar de líneas emitió incidentalmente fragmentos anteriores de la nota; no se evaluaron ni se usaron como evidencia para este dictamen.",
+    "source_scope": "Las páginas y ecuaciones se contrastan con los registros de lectura de los informes cerrados. Se comprobó en las fichas editoriales primarias la identidad bibliográfica de los dos DOI citados. No se releyeron las pruebas ni se abrieron, copiaron o renderizaron los PDF.",
+    "closed_mathematical_verdicts_used_only_as_synthesis_evidence": true
+  },
+  "integrity": {
+    "descriptor": {
+      "path": "C:\\Trabajo\\airr\\2026-11-01_execution1800\\PUBLIC-INTEGRATION1800A.json",
+      "expected_sha256": "252982baeaab066ace3b3c998c9e99df32d1415780811dc653bb5af2189d1402",
+      "observed_sha256": "252982baeaab066ace3b3c998c9e99df32d1415780811dc653bb5af2189d1402",
+      "match": true
+    },
+    "snapshot": {
+      "path": "C:\\Trabajo\\airr\\2026-11-01_execution1800\\PUBLIC-NOTE-PROPOSED1800A.txt",
+      "expected_sha256": "6815c4e5a90514df0988551e1625bb35bc9fcf4213df9b15c6d2be0e6b2d6b2c",
+      "observed_sha256": "6815c4e5a90514df0988551e1625bb35bc9fcf4213df9b15c6d2be0e6b2d6b2c",
+      "match": true
+    },
+    "note": {
+      "path": "C:\\Trabajo\\physmath-knowledge-tree\\physical-mean-admission1728\\integrations\\research-radar\\notes\\2026-10-31-physical-mean-admission.md",
+      "expected_sha256": "6815c4e5a90514df0988551e1625bb35bc9fcf4213df9b15c6d2be0e6b2d6b2c",
+      "observed_sha256": "6815c4e5a90514df0988551e1625bb35bc9fcf4213df9b15c6d2be0e6b2d6b2c",
+      "match": true
+    },
+    "section": {
+      "extraction": "From exact ### heading to end, UTF-8 without newline normalization",
+      "sha256": "138298a69076f8231f1e9cfd9bf6a006a3b9f385a7419b23b9ed22875dbb5019",
+      "utf8_bytes": 10241
+    },
+    "evidence_directory": "C:\\Trabajo\\physmath-knowledge-tree\\physical-mean-admission1728\\integrations\\research-radar\\evidence\\2026-10-31-physical-mean-admission\\physical-pivots-1800",
+    "manifest": {
+      "path": "C:\\Trabajo\\physmath-knowledge-tree\\physical-mean-admission1728\\integrations\\research-radar\\evidence\\2026-10-31-physical-mean-admission\\physical-pivots-1800\\manifest.json",
+      "expected_sha256": "d1c78f65ea3f7ae9bda734fa178d53c3ac952641ad433c7fdf84cd3bb18ab770",
+      "observed_sha256": "d1c78f65ea3f7ae9bda734fa178d53c3ac952641ad433c7fdf84cd3bb18ab770",
+      "match": true,
+      "entries_match_descriptor": true
+    },
+    "readme": {
+      "path": "C:\\Trabajo\\physmath-knowledge-tree\\physical-mean-admission1728\\integrations\\research-radar\\evidence\\2026-10-31-physical-mean-admission\\physical-pivots-1800\\README.md",
+      "expected_sha256": "e1bd23d5110798794ecc619d0b0b9d42c3b20e4be817ba0fcae6bfa1665a2914",
+      "observed_sha256": "e1bd23d5110798794ecc619d0b0b9d42c3b20e4be817ba0fcae6bfa1665a2914",
+      "match": true
+    },
+    "files": [
+      {
+        "path": "C:\\Trabajo\\physmath-knowledge-tree\\physical-mean-admission1728\\integrations\\research-radar\\evidence\\2026-10-31-physical-mean-admission\\physical-pivots-1800\\FINE-EXTERIOR-ELIMINATION1757.json",
+        "expected_sha256": "be5365612aec1b9fb5f262253f4b42e6d421a00acddfa5bbf898e663692f42b3",
+        "observed_sha256": "be5365612aec1b9fb5f262253f4b42e6d421a00acddfa5bbf898e663692f42b3",
+        "expected_bytes": 13472,
+        "observed_bytes": 13472,
+        "hash_and_bytes_match": true,
+        "complete_content_read": true
+      },
+      {
+        "path": "C:\\Trabajo\\physmath-knowledge-tree\\physical-mean-admission1728\\integrations\\research-radar\\evidence\\2026-10-31-physical-mean-admission\\physical-pivots-1800\\ASSESSMENT1757.json",
+        "expected_sha256": "3c50f0a737e8af4163ca1449ac0926cdf7c53b3f9dd0a61b6e936d74ba025e4a",
+        "observed_sha256": "3c50f0a737e8af4163ca1449ac0926cdf7c53b3f9dd0a61b6e936d74ba025e4a",
+        "expected_bytes": 33451,
+        "observed_bytes": 33451,
+        "hash_and_bytes_match": true,
+        "complete_content_read": true
+      },
+      {
+        "path": "C:\\Trabajo\\physmath-knowledge-tree\\physical-mean-admission1728\\integrations\\research-radar\\evidence\\2026-10-31-physical-mean-admission\\physical-pivots-1800\\TARGET-DEPENDENT-CENTER1758.json",
+        "expected_sha256": "113e0ff5f1f3da11f16c44558d627c36bdbdd562a7fd78171895afa8b1a01bc9",
+        "observed_sha256": "113e0ff5f1f3da11f16c44558d627c36bdbdd562a7fd78171895afa8b1a01bc9",
+        "expected_bytes": 14340,
+        "observed_bytes": 14340,
+        "hash_and_bytes_match": true,
+        "complete_content_read": true
+      },
+      {
+        "path": "C:\\Trabajo\\physmath-knowledge-tree\\physical-mean-admission1728\\integrations\\research-radar\\evidence\\2026-10-31-physical-mean-admission\\physical-pivots-1800\\ASSESSMENT1758.json",
+        "expected_sha256": "4b692091ae690f3ec409c1f1215ca766ca00c211c29536343b58ad6bffa6934a",
+        "observed_sha256": "4b692091ae690f3ec409c1f1215ca766ca00c211c29536343b58ad6bffa6934a",
+        "expected_bytes": 24316,
+        "observed_bytes": 24316,
+        "hash_and_bytes_match": true,
+        "complete_content_read": true
+      },
+      {
+        "path": "C:\\Trabajo\\physmath-knowledge-tree\\physical-mean-admission1728\\integrations\\research-radar\\evidence\\2026-10-31-physical-mean-admission\\physical-pivots-1800\\PHYSICAL-PIVOT-DICTIONARY1759.json",
+        "expected_sha256": "3f6cf4079f019c25f817977a2662d47a5174aaf1e67dfc32352893ec14b3b1a2",
+        "observed_sha256": "3f6cf4079f019c25f817977a2662d47a5174aaf1e67dfc32352893ec14b3b1a2",
+        "expected_bytes": 16647,
+        "observed_bytes": 16647,
+        "hash_and_bytes_match": true,
+        "complete_content_read": true
+      },
+      {
+        "path": "C:\\Trabajo\\physmath-knowledge-tree\\physical-mean-admission1728\\integrations\\research-radar\\evidence\\2026-10-31-physical-mean-admission\\physical-pivots-1800\\ASSESSMENT1759.json",
+        "expected_sha256": "90f10953a29687ba62f1e6ad42c385766fc9bfefac0638ead5ae90d7baa2f134",
+        "observed_sha256": "90f10953a29687ba62f1e6ad42c385766fc9bfefac0638ead5ae90d7baa2f134",
+        "expected_bytes": 34521,
+        "observed_bytes": 34521,
+        "hash_and_bytes_match": true,
+        "complete_content_read": true
+      }
+    ],
+    "relative_links": [
+      {
+        "link": "../evidence/2026-10-31-physical-mean-admission/physical-pivots-1800/manifest.json",
+        "resolved_path": "C:\\Trabajo\\physmath-knowledge-tree\\physical-mean-admission1728\\integrations\\research-radar\\evidence\\2026-10-31-physical-mean-admission\\physical-pivots-1800\\manifest.json",
+        "exists": true
+      },
+      {
+        "link": "../evidence/2026-10-31-physical-mean-admission/physical-pivots-1800/ASSESSMENT1757.json",
+        "resolved_path": "C:\\Trabajo\\physmath-knowledge-tree\\physical-mean-admission1728\\integrations\\research-radar\\evidence\\2026-10-31-physical-mean-admission\\physical-pivots-1800\\ASSESSMENT1757.json",
+        "exists": true
+      },
+      {
+        "link": "../evidence/2026-10-31-physical-mean-admission/physical-pivots-1800/ASSESSMENT1758.json",
+        "resolved_path": "C:\\Trabajo\\physmath-knowledge-tree\\physical-mean-admission1728\\integrations\\research-radar\\evidence\\2026-10-31-physical-mean-admission\\physical-pivots-1800\\ASSESSMENT1758.json",
+        "exists": true
+      },
+      {
+        "link": "../evidence/2026-10-31-physical-mean-admission/physical-pivots-1800/ASSESSMENT1759.json",
+        "resolved_path": "C:\\Trabajo\\physmath-knowledge-tree\\physical-mean-admission1728\\integrations\\research-radar\\evidence\\2026-10-31-physical-mean-admission\\physical-pivots-1800\\ASSESSMENT1759.json",
+        "exists": true
+      }
+    ],
+    "report1759_findings_count": 13,
+    "report1759_material_objections_count": 5,
+    "delivered_contents_preserved_byte_for_byte": true,
+    "verification_time_utc": "2026-10-31T23:36:38.6069615Z"
+  },
+  "verdict": {
+    "code": "PUBLICABLE_COMO_CONSOLIDACION_CONDICIONAL_CON_PRECISION_EDITORIAL_E01",
+    "summary": "La sección representa fielmente el alcance condicional de los tres trabajos y mantiene accesibles sus informes íntegros, incluidas las objeciones. No convierte el Jacobiano ambiental en un determinante de constraints, no duplica Haar/Lie, no transforma N=0 en fallo de la medida conjunta y no declara admisión física. Antes de publicarla conviene aplicar E01 para no denominar d4,L13 clase original cuando el expediente lo usa como calibración/ejemplo. E02 y E03 son aclaraciones opcionales de alcance y notación. El dictamen no asigna nota ni revalida las matemáticas cerradas.",
+    "publication_recommendation": "Publicable únicamente como consolidación editorial de cálculos propios condicionales y de sus evaluaciones de IA, conservando íntegra la evidencia enlazada y corrigiendo E01. No es una decisión de aceptación de revista ni una revisión por pares.",
+    "as_submitted_literal_text_without_any_qualification_accepted": false,
+    "reason_for_literal_qualification": "La expresión original d4,L13 class puede atribuir al sector efectivo una elección de L que el expediente no certifica.",
+    "physical_admission": false,
+    "uniform_admission": false,
+    "manuscript_or_pdf_admission": false,
+    "graph_confidence_promotion": false,
+    "source_or_candidate_increment": 0,
+    "prior_grade_inherited": false
+  },
+  "editorial_findings": [
+    {
+      "id": "E01",
+      "kind": "precision_editorial_recomendada_antes_de_publicar",
+      "location": "Línea 149, límite del diagnóstico SU(2).",
+      "finding": "El input usa L13 como calibración plana y ejemplo geométrico; el diagnóstico es d2,L3 y el problema fuente exige L>11. El informe excluye extrapolar a L13,d4, al mínimo original, a K_C y a una familia uniforme. Esto no identifica por sí solo el L efectivo del sector original. Debe evitarse original d4,L13 class.",
+      "evidence": [
+        "PHYSICAL-PIVOT-DICTIONARY1759: UNCHANGED DATA; FLAT CALIBRATION; WHY THESE PIVOTS ARE NOT AUTOMATICALLY FREE Y LINKS.",
+        "ASSESSMENT1759: F04, finite_verifier.admissibility y M01–M02."
+      ],
+      "mathematical_review_reopened": false,
+      "delta_id": "D01"
+    },
+    {
+      "id": "E02",
+      "kind": "aclaracion_opcional_de_alcance",
+      "location": "Línea 131, frase sobre el bloque de fluctuaciones onto.",
+      "finding": "El contexto apunta al centro emparejado, pero conviene decirlo dentro de la propia frase. ASSESSMENT1758 F07 obtiene que D_qH es onto en q0; la regularidad conjunta no autoriza afirmar que ese bloque particular sea onto en todo punto.",
+      "evidence": [
+        "ASSESSMENT1758 F05 y F07.",
+        "TARGET-DEPENDENT-CENTER1758: MATCHED PHYSICAL CENTER."
+      ],
+      "effect": "La lectura local actualmente contextual es coherente. La propuesta elimina una posible lectura global sin cambiar la conclusión.",
+      "delta_id": "D02"
+    },
+    {
+      "id": "E03",
+      "kind": "aclaracion_opcional_de_notacion",
+      "location": "Línea 135, párrafo inmediatamente anterior a A_c.",
+      "finding": "El resumen remite al input, pero no define explícitamente L_alpha ni rho_beta y puede dejar un prefijo R_alpha aparentemente indefinido cuando chi_alpha=0. El input sí define los tres extremos. Reponer sus definiciones hace la fórmula pública más autónoma y evita un producto formal con un término indefinido.",
+      "evidence": [
+        "PHYSICAL-PIVOT-DICTIONARY1759: EXACT NONFLAT DIAGONAL BLOCK FOR BOTH FIXED DEFINITIONS.",
+        "ASSESSMENT1759 F03."
+      ],
+      "effect": "No se modifica la fórmula ni se crea una nueva estimación.",
+      "delta_id": "D03"
+    },
+    {
+      "id": "E04",
+      "kind": "fidelidad_confirmada",
+      "location": "Líneas 129–145 y contexto de revisión.",
+      "finding": "Se conservan los límites que podrían perderse al resumir: traces reales e integrabilidad por fibra, orden no esencial, targets originales, centro admitido, orientaciones independientes, pivotes fuera de F, regularidad sólo local, factores finales C, Q=P/L en cero fluctuación, representaciones alternativas de medida y falta de diccionario físico/uniformidad.",
+      "effect": "No se identificó una supresión material de objeciones de los informes completos."
+    },
+    {
+      "id": "E05",
+      "kind": "citas_y_atribucion",
+      "location": "Citas DOI y apartados literature/heuristic/formal/speculative.",
+      "finding": "Los DOI identifican las publicaciones correctas y sus rangos contienen las páginas citadas. Los registros de lectura de los informes vinculan esas páginas a las definiciones, geometría, mínimos y cambios fuente descritos. Los cálculos propios no pasan a ser teoremas de esas fuentes por llevar una cita: el cierre heuristic/own y los informes exactos conservan esa distinción.",
+      "limit": "La validación bibliográfica no es un nuevo cotejo de ecuaciones impresas ni una auditoría completa de sus pruebas."
+    }
+  ],
+  "coverage_1759_mathematical_findings": [
+    {
+      "id": "F01",
+      "section_lines": [
+        133
+      ],
+      "fidelity": "preservado",
+      "content": "Soporte geométrico por filas independientes, extremos dentro de bloques y L impactos del camino medio; periodicidad e inyectividad pendientes."
+    },
+    {
+      "id": "F02",
+      "section_lines": [
+        133,
+        145
+      ],
+      "fidelity": "preservado_explicitamente",
+      "content": "La fila inversa no es independiente y tiene derivada -Ad_(M(c)^(-1))A_c, no cero. No se crea una segunda variable/delta."
+    },
+    {
+      "id": "F03",
+      "section_lines": [
+        135,
+        137,
+        139
+      ],
+      "fidelity": "preservado_con_aclaracion_notacional_opcional_E03",
+      "content": "A_c no plano conserva dexp, DLog, signos y adjuntos y el término final C; cada media usa sus propios factores y rama suave. No se igualan las dos medias no planas."
+    },
+    {
+      "id": "F04",
+      "section_lines": [
+        139
+      ],
+      "fidelity": "preservado",
+      "content": "P_beta plano=L^(1-d), valores d4,L13 y condición de calibración, sin sustituir el fondo real por identidad."
+    },
+    {
+      "id": "F05",
+      "section_lines": [
+        139
+      ],
+      "fidelity": "preservado_explicitamente",
+      "content": "Q=P/L se enuncia al linealizar en cero fluctuación y normalizar por L eta; no como derivada constante a fluctuación arbitraria."
+    },
+    {
+      "id": "F06",
+      "section_lines": [
+        139,
+        145
+      ],
+      "fidelity": "preservado",
+      "content": "h plano=L^(d-1), LQh=I y exclusión de identificarlo con derivada del mínimo, H1, Hsharp, inversos localizados u otro Q. La lectura no plana requiere A_c invertible y diccionario emparejado, como permanece en el informe."
+    },
+    {
+      "id": "F07",
+      "section_lines": [
+        133,
+        141,
+        145
+      ],
+      "fidelity": "preservado",
+      "content": "Eliminación sólo en pivotes originales independientes fuera de F y raíces regulares locales; factor producto |det A_c|^-1, suma de ramas con soportes originales. No se certifican todas las raíces ni el cutoff."
+    },
+    {
+      "id": "F08",
+      "section_lines": [
+        141
+      ],
+      "fidelity": "preservado_explicitamente",
+      "content": "Haar y Lie representan un mismo factor. Cancelación eta g0 por pivote, L^((d-1)dim G), resto libre y normalizador conservados."
+    },
+    {
+      "id": "F09",
+      "section_lines": [
+        141
+      ],
+      "fidelity": "preservado",
+      "content": "Argumento no lineal g0 C A_free-hD(g0 C A_free), sigma, determinante linealizante y pivote Q en su orden compuesto. Sin fórmula numérica nueva del normalizador ni arreglo de prefactores históricos."
+    },
+    {
+      "id": "F10",
+      "section_lines": [
+        143
+      ],
+      "fidelity": "preservado",
+      "content": "Ejemplo L13 del enlace 6->7, frontera física y árbol nativo anclado; Y_beta fijo no implica U_beta raw fijo. No realiza el sector ni reabre el contrajemplo antiguo."
+    },
+    {
+      "id": "F11",
+      "section_lines": [
+        143
+      ],
+      "fidelity": "resumido_fielmente_con_formula_completa_en_input_entregado",
+      "content": "Pullback a q a referencia fija, productos de caminos, DLog/dexp y dot k retenido. Se prohíbe usar la derivada de targets a k fijo para esa variación raw."
+    },
+    {
+      "id": "F12",
+      "section_lines": [
+        129,
+        131,
+        141,
+        143
+      ],
+      "fidelity": "preservado",
+      "content": "Chart ambiental Haar uno, direcciones raw representadas en q y determinante del constraint diferente. No se usa N como bloque invertible."
+    },
+    {
+      "id": "F13",
+      "section_lines": [
+        145
+      ],
+      "fidelity": "preservado",
+      "content": "Densidad, dominio, palabras completas, orden V0, marcos, fuentes polinómicas coeficiente a coeficiente e hipótesis adicionales para derivar integrales."
+    }
+  ],
+  "coverage_1759_material_objections": [
+    {
+      "id": "M01",
+      "section_lines": [
+        133,
+        143,
+        145
+      ],
+      "status": "preservada_sin_descarga",
+      "objection": "I/F efectivo, representantes independientes, ocurrencias periódicas, inyectividad beta y disponibilidad beta fuera de F no certificados. No sustituir un pivote prescrito."
+    },
+    {
+      "id": "M02",
+      "section_lines": [
+        139,
+        141,
+        145,
+        149,
+        154
+      ],
+      "status": "preservada_sin_descarga",
+      "objection": "Calibración y raíces locales no prueban A_c^-1 uniforme en cutoff original, cobertura, masa de chart ni control fuera de él. E01 precisa el alcance del diagnóstico."
+    },
+    {
+      "id": "M03",
+      "section_lines": [
+        133,
+        145
+      ],
+      "status": "preservada_y_hecha_explicita",
+      "objection": "Otra fila sólo significa otra fila independiente; -c depende del mismo pivote y su derivada no es cero."
+    },
+    {
+      "id": "M04",
+      "section_lines": [
+        141,
+        145
+      ],
+      "status": "preservada_y_hecha_explicita",
+      "objection": "No multiplicar el factor raw Haar por una segunda sigma/determinante que represente el mismo cambio; ni ponerlo a uno por Haar ambiental. La ruta fuente requiere su composición y normalizador original."
+    },
+    {
+      "id": "M05",
+      "section_lines": [
+        139,
+        143,
+        145
+      ],
+      "status": "preservada_sin_descarga",
+      "objection": "No identificación automática h/H/Q, K_C libre, B multiescala, Landau, fuente190/Hsharp, P1, beta_ref/g1_ref, absorciones, normalización ni off-chart."
+    }
+  ],
+  "coverage_1757": {
+    "proof_components": [
+      {
+        "ids": [
+          "P01",
+          "P02",
+          "P03",
+          "P04",
+          "P05",
+          "P06"
+        ],
+        "section_lines": [
+          129
+        ],
+        "fidelity": "Bosque, tops, orden de recursión, |E|-|F| coordenadas de grupo, identidad por cada V0, chart posiblemente vacío y dominio real conservados. Dimensión real es esa cuenta por dim G; el resumen cuenta coordenadas, no dimensiones reales."
+      },
+      {
+        "ids": [
+          "P07",
+          "P08",
+          "P09"
+        ],
+        "section_lines": [
+          129,
+          131,
+          133,
+          145
+        ],
+        "fidelity": "Pushforward coarse débil y traces; cambio a fondo dependiente tratado por el desarrollo 1758, sin heredar la independencia en V del caso fijo. No se afirma soporte exterior de una fila a partir sólo de sus extremos."
+      },
+      {
+        "ids": [
+          "P10",
+          "P11",
+          "P12"
+        ],
+        "section_lines": [
+          129,
+          143,
+          145
+        ],
+        "fidelity": "Palabras y marcos íntegros; exterior raw no identificado con datos B ni K_C; no segunda eliminación y normalizador completo pendiente."
+      }
+    ],
+    "adverse_findings": [
+      {
+        "id": "F01",
+        "section_lines": [
+          129,
+          149
+        ],
+        "status": "Corrección explícita: árbol primero es válido, no esencial; ambos órdenes conservan las dependencias."
+      },
+      {
+        "id": "F02",
+        "section_lines": [
+          129
+        ],
+        "status": "Traces efectivas de fibra/grafo e integrabilidad por fibra expresamente preservadas; no se usa una clase L1 ambiente como traza universal."
+      },
+      {
+        "id": "F03",
+        "section_lines": [
+          129,
+          133,
+          145
+        ],
+        "status": "F se define sobre variables raw independientes y se excluye duplicar orientaciones. El criterio S_c no se vuelve a enunciar con una certificación falsa."
+      },
+      {
+        "id": "F04",
+        "section_lines": [
+          131
+        ],
+        "status": "La dependencia del fondo en V se trata mediante el mapa conjunto y la derivada W; no se congelan los targets."
+      }
+    ],
+    "limits": "El test exacto S3 se conserva completo en el informe, sin ascenderlo a toro físico o carta Log; no se extrapola ni se repite."
+  },
+  "coverage_1758": [
+    {
+      "ids": [
+        "F01",
+        "F02"
+      ],
+      "section_lines": [
+        129,
+        131,
+        145
+      ],
+      "fidelity": "I original, F fijo, resto de targets/restricciones intacto; chart recenterado con q0 fijo y Haar conjunto uno, sin caja nueva."
+    },
+    {
+      "ids": [
+        "F03",
+        "F04"
+      ],
+      "section_lines": [
+        131,
+        143,
+        145
+      ],
+      "fidelity": "Convención explícita dot U U^-1 y W a q fijo conservadas. Las fórmulas completas de conexión quedan en input/informe; se distingue la posterior variación raw con dot k."
+    },
+    {
+      "ids": [
+        "F05",
+        "F06",
+        "F07"
+      ],
+      "section_lines": [
+        131,
+        141
+      ],
+      "fidelity": "N=0 en centro admitido excluye eliminación uniforme de v allí; no destruye delta conjunta ni impide toda desintegración a.e. o raíz regular off-center. E02 hace inequívoco el alcance de onto. No se inserta |det N|^-1 en el centro."
+    },
+    {
+      "ids": [
+        "F08"
+      ],
+      "section_lines": [
+        131,
+        133,
+        145
+      ],
+      "fidelity": "Familia física, soporte, centro, pivotes y cutoff no admitidos por el argumento abstracto. 1759 sigue los pivotes originales condicionalmente; no certifica esas puertas."
+    },
+    {
+      "ids": [
+        "F09"
+      ],
+      "section_lines": [
+        131,
+        149
+      ],
+      "fidelity": "No se promueve el contraensayo compacto a sector físico ni a fallo de kernel. Permanece completo en el informe; el resumen conserva su distinción conceptual."
+    },
+    {
+      "ids": [
+        "F10"
+      ],
+      "section_lines": [
+        145
+      ],
+      "fidelity": "Fuentes, palabras, marcos y límites de derivación bajo integral con dominio móvil preservados."
+    }
+  ],
+  "normalization_table": [
+    {
+      "object": "Haar ambiental de fibra fina y mapa conjunto",
+      "reported_factor": "1",
+      "scope": "Coordenadas de grupo y dominios admitidos; no determinante de constraints, FP/Landau o densidad plana de álgebra."
+    },
+    {
+      "object": "A_c(U)",
+      "reported_factor": "Bloque real en dot M_c M_c^-1=A_c rho_beta, con término final +Ad_(exp S_c)Ad_(R_c)",
+      "scope": "Cada definición física por separado; rama Log suave real Lie(G); no bound uniforme nuevo."
+    },
+    {
+      "object": "P_beta en identidad",
+      "reported_factor": "L^(1-d) I; d4,L13: 1/2197",
+      "scope": "Calibración plana, no identidad de fondos no planos."
+    },
+    {
+      "object": "Q",
+      "reported_factor": "P/L; Q_beta plano=L^(-d) I; d4,L13: 1/28561",
+      "scope": "Linealización en cero fluctuación del log relativo normalizado por L eta."
+    },
+    {
+      "object": "h_piv",
+      "reported_factor": "A_c(U0)^(-1) donde exista; plano L^(d-1) I; d4,L13: 2197; P h=I y LQh=I",
+      "scope": "Sólo normalización puntual con media/fondo/orientación/escala emparejados; no H1/Hsharp/H_n/H_sigma ni derivada mínima."
+    },
+    {
+      "object": "Pivote raw en Haar",
+      "reported_factor": "product_c |det_R A_c(U_solution)|^(-1)",
+      "scope": "Raíces regulares admitidas, bases reales compatibles, resto raw fijo y soportes conservados."
+    },
+    {
+      "object": "Mismo pivote en coordenadas exponenciales",
+      "reported_factor": "sigma_G(a)/(sigma_G(0)|det D_a z|)",
+      "scope": "Representación alternativa del factor anterior, no multiplicador adicional. Se retienen las densidades de las variables libres."
+    },
+    {
+      "object": "Escala plana por pivote r=dim G",
+      "reported_factor": "(eta g0)^r (L eta g0)^(-r) |det Q_beta|^(-1)=L^((d-1)r)",
+      "scope": "Cancelación por pivote; no cancela poderes libres, sigma completa ni normalizador."
+    },
+    {
+      "object": "Ruta fuente compuesta",
+      "reported_factor": "Argumento g0 C A_free-hD(g0 C A_free), sigma, determinante linealizante y pivote Q en su composición",
+      "scope": "No se añade mecánicamente toda esta ruta encima de la eliminación raw."
+    },
+    {
+      "object": "Bloque target N en q0",
+      "reported_factor": "N=I-PW=0",
+      "scope": "No hay inverso target regular en centro admitido; la medida conjunta conserva su significado."
+    }
+  ],
+  "support_and_orientation_table": [
+    {
+      "object": "E",
+      "meaning": "Una orientación independiente por enlace raw fino; una aparición inversa usa el mismo enlace invertido."
+    },
+    {
+      "object": "F",
+      "meaning": "Exterior raw original prescrito V0; no ampliación favorable de la región activa."
+    },
+    {
+      "object": "T intersect F",
+      "meaning": "k(z)=U0_e^-1 k(p) V0_e, invirtiendo datos si el representante está al revés; tops libres sólo en componentes sin raíz nativa."
+    },
+    {
+      "object": "F minus T",
+      "meaning": "Y_b=u_-V0_bu_+^-1 transportado, no una nueva variable libre."
+    },
+    {
+      "object": "E minus (T union F)",
+      "meaning": "Y verdaderamente libres; con kappa dan |E|-|F| coordenadas de grupo."
+    },
+    {
+      "object": "beta(c)",
+      "meaning": "Debe ser raw independiente, inyectivo entre filas y fuera de F. Si está en T, Y_beta fijo no impide variación raw a través de q."
+    },
+    {
+      "object": "-c",
+      "meaning": "M(-c)=M(c)^-1; derivada -Ad_(M(c)^-1)A_c; no segunda fila/pivote independiente."
+    }
+  ],
+  "reference_check": {
+    "method": "Metadatos primarios en Springer; páginas/ecuaciones confrontadas con los recibos íntegros de los informes, sin reabrir PDF.",
+    "doi_direct_access_note": "La apertura directa de los DOI falló en la herramienta; las URL editoriales /article correspondientes se abrieron correctamente.",
+    "references": [
+      {
+        "doi": "10.1007/BF01215223",
+        "publisher_url": "https://link.springer.com/article/10.1007/BF01215223",
+        "metadata": "Tadeusz Bałaban, Renormalization group approach to lattice gauge field theories. I, Communications in Mathematical Physics 109, 249–301 (1987).",
+        "cited_pages": "252–254 y 266–268",
+        "report_receipt": "ASSESSMENT1759 sources_actually_read y F01–F09; ASSESSMENT1757 source_read_log; ASSESSMENT1758 source_ledger S109.",
+        "status": "Identidad bibliográfica confirmada y locators congruentes con los informes."
+      },
+      {
+        "doi": "10.1007/BF01217741",
+        "publisher_url": "https://link.springer.com/article/10.1007/BF01217741",
+        "metadata": "T. Bałaban, Convergent renormalization expansions for lattice gauge theories, Communications in Mathematical Physics 119, 243–285 (1988).",
+        "cited_pages": "248–249, (1.12)–(1.16)",
+        "report_receipt": "Los tres informes registran lectura de 248–249 para campos críticos, fine data, pivotes y secuencia de medida.",
+        "status": "Identidad bibliográfica confirmada y locators congruentes con los informes."
+      }
+    ],
+    "native_geometry_provenance": "La geometría anclada/peine del párrafo 143 procede también de CMP95 p.18 (1.6)–(1.7), según ASSESSMENT1759 F10 y su registro de fusion índices358–359. No se atribuye esa geometría auxiliar exclusivamente a CMP109.",
+    "source_pdf_hashes": "Los hashes de PDF contenidos en inputs/informes son procedencia preservada, no hashes de PDF recalculados por esta evaluación.",
+    "attribution_limit": "Las publicaciones respaldan definiciones y pasos fuente seleccionados. Las identidades propias consolidadas se evalúan aquí sólo por fidelidad a los informes cerrados."
+  },
+  "editorial_deltas": [
+    {
+      "id": "D01",
+      "finding_id": "E01",
+      "priority": "precision_recomendada_antes_de_publicar",
+      "operation": "Reemplazar exactamente una frase en línea 149",
+      "old_text": "Its d2,L3 SU(2) diagnostics check conventions only, not the original d4,L13 class or a uniform physical family.",
+      "new_text": "Its d2,L3 SU(2) diagnostics check conventions only, not the d4,L13 calibration, the original minimum or a uniform physical family.",
+      "applied": false,
+      "old_text_occurrences_verified": 1
+    },
+    {
+      "id": "D02",
+      "finding_id": "E02",
+      "priority": "opcional",
+      "operation": "Reemplazar exactamente una frase en línea 131",
+      "old_text": "This does not invalidate the joint graph measure: its fluctuation-variable block remains onto.",
+      "new_text": "This does not invalidate the joint graph measure: at that center, its fluctuation-variable block is onto.",
+      "applied": false,
+      "old_text_occurrences_verified": 1
+    },
+    {
+      "id": "D03",
+      "finding_id": "E03",
+      "priority": "opcional",
+      "operation": "Reemplazar íntegramente el párrafo de línea 135; no cambiar la fórmula de línea 137",
+      "old_text": "There is an explicit **nonflat** block, not just an unspecified invertible minor. In the chosen row write `M_c=exp(S_c) C_c`, `S_c=sum_alpha omega_alpha Log L_alpha`, with the actual endpoint factors, translated path and final coarse straight path `C_c`. Let `chi_alpha` indicate a middle-path hit on the pivot, `R_alpha` be the endpoint factor followed by its pre-pivot prefix, and `R_c` the pre-pivot prefix in `C_c`. For `ell_Z(B)=DLog_Z[B Z]` and `dexp_S(B)=integral_0^1 Ad_(exp(tS))B dt`, the block in `dot M_c M_c^(-1)=A_c rho_beta` is",
+      "new_text": "The nonflat pivot block is explicit. For the chosen physical mean, write `M_c=exp(S_c) C_c`, `S_c=sum_alpha omega_alpha Log L_alpha` and `L_alpha=A_alpha T_x B_alpha C_c^(-1)`. Here `A_alpha,B_alpha` are that mean's actual endpoint factors, `T_x` is the translated middle-path product, `C_c` is the final coarse straight-path product and `omega_alpha` are the original weights. Set `rho_beta=dot U_beta U_beta^(-1)`. Let `chi_alpha` indicate a middle-path hit on the pivot, `R_alpha` be the initial endpoint factor followed by the pre-pivot middle-path prefix when there is a hit, and `R_c` the pre-pivot prefix in `C_c`. When there is no hit, define `chi_alpha Ad_(R_alpha)=0` without using an undefined prefix. For `ell_Z(B)=DLog_Z[B Z]` and `dexp_S(B)=integral_0^1 Ad_(exp(tS))B dt`, the block in `dot M_c M_c^(-1)=A_c rho_beta` is",
+      "applied": false,
+      "old_text_occurrences_verified": 1
+    }
+  ],
+  "public_delivery_limits": [
+    "La entrega local contiene exactamente los seis JSON propios, el manifiesto y el README; los inputs y dictámenes conservan sus bytes.",
+    "Los cuatro enlaces relativos de la nueva sección resuelven desde la ubicación real de la nota al manifiesto y los tres informes. El manifiesto referencia los seis archivos existentes.",
+    "Esta revisión no publica ni comprueba despliegue, renderizado público, permisos externos o acceso en vivo. Publicabilidad editorial y entrega local completa no equivalen a disponibilidad pública verificada.",
+    "Los paths locales presentes en los informes son procedencia, no permisos ni enlaces remotos utilizables.",
+    "No se redistribuyó PDF fuente, corpus ajeno ni manuscrito. No se elimina ni corrige silenciosamente ningún hallazgo adverso del expediente."
+  ],
+  "preservation": {
+    "descriptor_modified": false,
+    "snapshot_modified": false,
+    "note_modified": false,
+    "inputs_modified": false,
+    "previous_reports_modified": false,
+    "manuscript_modified": false,
+    "source_pdf_or_corpus_copied": false,
+    "source_pdfs_opened_by_this_review": false,
+    "closed_mathematics_reopened": false,
+    "PR249_reopened": false,
+    "shared_state_or_other_chats_modified": false,
+    "editorial_deltas_applied": false,
+    "new_mathematical_tests_run": false,
+    "output_files_created": [
+      "C:/Trabajo/airr/2026-11-01_execution1800/ASSESSMENT1800.json"
+    ],
+    "final_hash_note": "El hash del informe se entrega aparte después de escribirlo para evitar autorreferencia."
+  }
+}
