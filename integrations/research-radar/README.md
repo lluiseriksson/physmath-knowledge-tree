@@ -217,3 +217,6 @@ Werner research now has a [physical-coverage gate](evidence/2026-10-30-werner-co
 The [consolidated hypothesis audit](evidence/2026-10-30-hypothesis-audit/README.md) closes an unscored aligned-factor review with all9reservations and separates Werner code/structural reading from an unexecuted exact certificate. Two existing candidates remain speculative; no new paper, score or formal promotion.
 
 The [exact first-score audit1524](evidence/2026-10-31-first-score-audit/README.md) now preserves a material rejection of the old gauge-fiber identity and a different conditional FULL-integral scalar repair. The original input/error remains visible; physical margins and global transport stay open.
+
+
+The [original-label fixed-cutoff response](notes/2026-10-31-original-label-forest-response.md) now has a [complete unscored technical assessment1592](evidence/2026-10-31-label-tree-audit/README.md): a conditional abstract attachment/counting repair, with all exact inputs, report and objections preserved. Actual physical source admission and zero-free/logarithm obligations remain open. The same batch records the existing1994forest source's selected-section reading depth without a duplicate card, new paper or grade.

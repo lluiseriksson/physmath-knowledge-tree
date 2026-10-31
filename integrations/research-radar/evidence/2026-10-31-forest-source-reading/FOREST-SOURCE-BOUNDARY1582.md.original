@@ -1,0 +1,9 @@
+# Direct historical theorem reading after audit1575
+
+Read [hep-th/9409094v1](https://arxiv.org/html/hep-th/9409094v1), TheoremsIII.1/III.2/IV.5 and selected proof paragraphs. III.1 uses globally smooth Banach-valued functions on real edge space, with distinct-edge derivatives evaluated at path-minimum forest points. IV.5 gives positivity through convex combinations of block-diagonal pinchings. The source explicitly warns that the alternative rooted interpolation does not preserve positivity. The full upstream algebraic proof chain was not audited.
+
+Use III.1, together with the finite smooth extension, for the conditional Gaussian dictionary. A root in a polymer norm is not permission to replace that interpolation by III.2. The pinching mechanism is classical1994 literature, not a new result or separate paper.
+
+This new parent reading is outside audit1575 and the fixed PR241 head. Its frozen F4 statement remains historically accurate. Queue a reading-depth update to the existing source card after publication closure. No source-law, spatial-summation, normalization or full complex-domain gate is discharged.
+
+Levels: literature—selected statements/proof paragraphs; heuristic—application dictionary; formal—no import/build; speculative—full source transfer. Falsifier: a mismatch of smoothness/domain or interpolation choice.

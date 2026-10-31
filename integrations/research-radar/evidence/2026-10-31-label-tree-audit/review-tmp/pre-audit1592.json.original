@@ -1,0 +1,86 @@
+{
+  "inputs": [
+    {
+      "file": "inputs/LOCAL-NOISE1591.md",
+      "expected_sha256": "f28470026fdf16e71ae5f7cc82a6403854ee8d92bc0ddf7df3dce5ce8643eb54",
+      "actual_sha256": "f28470026fdf16e71ae5f7cc82a6403854ee8d92bc0ddf7df3dce5ce8643eb54",
+      "expected_bytes": 7992,
+      "actual_bytes": 7992,
+      "match": true
+    },
+    {
+      "file": "inputs/LABEL-TREE1592.md",
+      "expected_sha256": "fccd0932cbe9db91957ba50541c0276952c5cf0afb44a8a1d5a4117281171e3b",
+      "actual_sha256": "fccd0932cbe9db91957ba50541c0276952c5cf0afb44a8a1d5a4117281171e3b",
+      "expected_bytes": 8653,
+      "actual_bytes": 8653,
+      "match": true
+    },
+    {
+      "file": "inputs/EXACT-CUTOFF-FACTORS1566.md",
+      "expected_sha256": "0783b59a4e94265e2b497a22d6a8e1817fca3a8be037fdf9c0865e938aa8e4b9",
+      "actual_sha256": "0783b59a4e94265e2b497a22d6a8e1817fca3a8be037fdf9c0865e938aa8e4b9",
+      "expected_bytes": 5124,
+      "actual_bytes": 5124,
+      "match": true
+    },
+    {
+      "file": "inputs/FOREST-DERIVATIVE1569.md",
+      "expected_sha256": "3e7539e0dc766bc16e6a5c6dbe28cc7d331956c13bc1b15df9fff6ccdf74de15",
+      "actual_sha256": "3e7539e0dc766bc16e6a5c6dbe28cc7d331956c13bc1b15df9fff6ccdf74de15",
+      "expected_bytes": 4930,
+      "actual_bytes": 4930,
+      "match": true
+    },
+    {
+      "file": "inputs/COMPONENT-ALGEBRA1574.md",
+      "expected_sha256": "922573bede0eb109aa7f836d40295654db2dd2949b25805f4c9761d0f1123fd3",
+      "actual_sha256": "922573bede0eb109aa7f836d40295654db2dd2949b25805f4c9761d0f1123fd3",
+      "expected_bytes": 6478,
+      "actual_bytes": 6478,
+      "match": true
+    },
+    {
+      "file": "inputs/REVIEW1575.md",
+      "expected_sha256": "62f4f555c3484918e9a6fc777f2c1a5d995f7f9dbfd371024c0e233e6368ad70",
+      "actual_sha256": "62f4f555c3484918e9a6fc777f2c1a5d995f7f9dbfd371024c0e233e6368ad70",
+      "expected_bytes": 31944,
+      "actual_bytes": 31944,
+      "match": true
+    },
+    {
+      "file": "inputs/NOISE-CHECK1591.json",
+      "expected_sha256": "42a04958272a11dc2e018b63bc0073d0ca45044e698698d2e4253bbe2ad916af",
+      "actual_sha256": "42a04958272a11dc2e018b63bc0073d0ca45044e698698d2e4253bbe2ad916af",
+      "expected_bytes": 1592,
+      "actual_bytes": 1592,
+      "match": true
+    },
+    {
+      "file": "inputs/LABEL-TREE-CHECK1592.json",
+      "expected_sha256": "203f601d932e3c917c073f1c97130842322aa398fc889bc7df6888cc85ad4f31",
+      "actual_sha256": "203f601d932e3c917c073f1c97130842322aa398fc889bc7df6888cc85ad4f31",
+      "expected_bytes": 631,
+      "actual_bytes": 631,
+      "match": true
+    },
+    {
+      "file": "inputs/label-tree1592.py",
+      "expected_sha256": "aef3a9e51f69d946843250e81abfd15c2156504e2c04f77a2fb76849b4509457",
+      "actual_sha256": "aef3a9e51f69d946843250e81abfd15c2156504e2c04f77a2fb76849b4509457",
+      "expected_bytes": 2985,
+      "actual_bytes": 2985,
+      "match": true
+    },
+    {
+      "file": "REVIEW-GUIDE1592.txt",
+      "expected_sha256": "aa40c196c8ca55d10d2fe7867f24a1ef42cd827332c172aa95b10443d637b17b",
+      "actual_sha256": "aa40c196c8ca55d10d2fe7867f24a1ef42cd827332c172aa95b10443d637b17b",
+      "expected_bytes": 2592,
+      "actual_bytes": 2592,
+      "match": true
+    }
+  ],
+  "manifest_sha256": "ff3cbb4a54a8280c9a1702fd69437cf52f89bcc18ff1e49c5d5f97399c8542d7",
+  "manifest_bytes": 2782
+}

@@ -1,0 +1,59 @@
+{
+  "scope": "Exact finite Gaussian-split/orthant-derivative normalization and occupancy checks; not an original source instance or a rooted-sum proof",
+  "c": "1/4",
+  "rho": "1/3",
+  "residual_determinant": "65/144",
+  "orthant_derivative_denominator_squared_without_4pi2": "8/9",
+  "original_determinant": "8/9",
+  "normalization_identity_exact": true,
+  "occupancies": [
+    {
+      "degree": 1,
+      "distinct_port_factor_squared": 1,
+      "single_repeated_port_factor_squared": 1
+    },
+    {
+      "degree": 2,
+      "distinct_port_factor_squared": 1,
+      "single_repeated_port_factor_squared": 2
+    },
+    {
+      "degree": 3,
+      "distinct_port_factor_squared": 1,
+      "single_repeated_port_factor_squared": 6
+    },
+    {
+      "degree": 4,
+      "distinct_port_factor_squared": 1,
+      "single_repeated_port_factor_squared": 24
+    },
+    {
+      "degree": 5,
+      "distinct_port_factor_squared": 1,
+      "single_repeated_port_factor_squared": 120
+    },
+    {
+      "degree": 6,
+      "distinct_port_factor_squared": 1,
+      "single_repeated_port_factor_squared": 720
+    },
+    {
+      "degree": 7,
+      "distinct_port_factor_squared": 1,
+      "single_repeated_port_factor_squared": 5040
+    },
+    {
+      "degree": 8,
+      "distinct_port_factor_squared": 1,
+      "single_repeated_port_factor_squared": 40320
+    },
+    {
+      "degree": 9,
+      "distinct_port_factor_squared": 1,
+      "single_repeated_port_factor_squared": 362880
+    }
+  ],
+  "original_law_changed": false,
+  "actual_source_geometry_verified": false,
+  "rooted_summability_proved": false
+}

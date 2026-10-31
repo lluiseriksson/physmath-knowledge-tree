@@ -1,0 +1,163 @@
+{
+  "scope": "All18nativeauditfiles exactly preserved; readable copies separate. Full reviewer-owned standard-library helpers/results included, no foreign source corpus.",
+  "native_artifacts": [
+    {
+      "original_file": "ASSESSMENT1592.json",
+      "file": "ASSESSMENT1592.json.original",
+      "bytes": 14745,
+      "sha256": "9f7569fd188c6f7104883dda62000a42113895e3d03340f351e4ecbcf5824279"
+    },
+    {
+      "original_file": "INPUT-MANIFEST1592.json",
+      "file": "INPUT-MANIFEST1592.json.original",
+      "bytes": 2782,
+      "sha256": "ff3cbb4a54a8280c9a1702fd69437cf52f89bcc18ff1e49c5d5f97399c8542d7"
+    },
+    {
+      "original_file": "inputs/COMPONENT-ALGEBRA1574.md",
+      "file": "inputs/COMPONENT-ALGEBRA1574.md.original",
+      "bytes": 6478,
+      "sha256": "922573bede0eb109aa7f836d40295654db2dd2949b25805f4c9761d0f1123fd3"
+    },
+    {
+      "original_file": "inputs/EXACT-CUTOFF-FACTORS1566.md",
+      "file": "inputs/EXACT-CUTOFF-FACTORS1566.md.original",
+      "bytes": 5124,
+      "sha256": "0783b59a4e94265e2b497a22d6a8e1817fca3a8be037fdf9c0865e938aa8e4b9"
+    },
+    {
+      "original_file": "inputs/FOREST-DERIVATIVE1569.md",
+      "file": "inputs/FOREST-DERIVATIVE1569.md.original",
+      "bytes": 4930,
+      "sha256": "3e7539e0dc766bc16e6a5c6dbe28cc7d331956c13bc1b15df9fff6ccdf74de15"
+    },
+    {
+      "original_file": "inputs/LABEL-TREE-CHECK1592.json",
+      "file": "inputs/LABEL-TREE-CHECK1592.json.original",
+      "bytes": 631,
+      "sha256": "203f601d932e3c917c073f1c97130842322aa398fc889bc7df6888cc85ad4f31"
+    },
+    {
+      "original_file": "inputs/LABEL-TREE1592.md",
+      "file": "inputs/LABEL-TREE1592.md.original",
+      "bytes": 8653,
+      "sha256": "fccd0932cbe9db91957ba50541c0276952c5cf0afb44a8a1d5a4117281171e3b"
+    },
+    {
+      "original_file": "inputs/label-tree1592.py",
+      "file": "inputs/label-tree1592.py.original",
+      "bytes": 2985,
+      "sha256": "aef3a9e51f69d946843250e81abfd15c2156504e2c04f77a2fb76849b4509457"
+    },
+    {
+      "original_file": "inputs/LOCAL-NOISE1591.md",
+      "file": "inputs/LOCAL-NOISE1591.md.original",
+      "bytes": 7992,
+      "sha256": "f28470026fdf16e71ae5f7cc82a6403854ee8d92bc0ddf7df3dce5ce8643eb54"
+    },
+    {
+      "original_file": "inputs/NOISE-CHECK1591.json",
+      "file": "inputs/NOISE-CHECK1591.json.original",
+      "bytes": 1592,
+      "sha256": "42a04958272a11dc2e018b63bc0073d0ca45044e698698d2e4253bbe2ad916af"
+    },
+    {
+      "original_file": "inputs/REVIEW1575.md",
+      "file": "inputs/REVIEW1575.md.original",
+      "bytes": 31944,
+      "sha256": "62f4f555c3484918e9a6fc777f2c1a5d995f7f9dbfd371024c0e233e6368ad70"
+    },
+    {
+      "original_file": "REVIEW-GUIDE1592.txt",
+      "file": "REVIEW-GUIDE1592.txt.original",
+      "bytes": 2592,
+      "sha256": "aa40c196c8ca55d10d2fe7867f24a1ef42cd827332c172aa95b10443d637b17b"
+    },
+    {
+      "original_file": "review-tmp/audit-check1592.json",
+      "file": "review-tmp/audit-check1592.json.original",
+      "bytes": 7041,
+      "sha256": "e01268a8ee0da6bca921bbb8cb46af638202f7b6621dd213e61f45aacd1fe8d9"
+    },
+    {
+      "original_file": "review-tmp/audit-check1592.py",
+      "file": "review-tmp/audit-check1592.py.original",
+      "bytes": 11503,
+      "sha256": "bcea693fdc7aa0b2e785e48a03602b15477dded022b77f7872ff4491df5de79b"
+    },
+    {
+      "original_file": "review-tmp/finalize1592.py",
+      "file": "review-tmp/finalize1592.py.original",
+      "bytes": 11610,
+      "sha256": "f5af3285e0e86437db0e908e44a1b5e18964b39587deff9f82609a953c1e9235"
+    },
+    {
+      "original_file": "review-tmp/pre-audit1592.json",
+      "file": "review-tmp/pre-audit1592.json.original",
+      "bytes": 3420,
+      "sha256": "af0e1811b38a17430d8250fce0513d09618467e5f89a2f71693d9aeb087ba14a"
+    },
+    {
+      "original_file": "REVIEW1592.md",
+      "file": "REVIEW1592.md.original",
+      "bytes": 28221,
+      "sha256": "957530fd965c46da0cc0dd063a20aa23bdecca48a57d4f443f3b87179620b0cd"
+    },
+    {
+      "original_file": "SHA256-MANIFEST1592.json",
+      "file": "SHA256-MANIFEST1592.json.original",
+      "bytes": 6669,
+      "sha256": "99f2ad21fcbc88e31e3cb7e9d34b29182386c3a3c67680e176d328ea4f229bc7"
+    }
+  ],
+  "reading_copies": [
+    {
+      "file": "REVIEW1592.md",
+      "sha256": "957530fd965c46da0cc0dd063a20aa23bdecca48a57d4f443f3b87179620b0cd",
+      "native_file": "REVIEW1592.md.original",
+      "native_sha256": "957530fd965c46da0cc0dd063a20aa23bdecca48a57d4f443f3b87179620b0cd",
+      "transformation": "CRLF to LF only; no scientific text edits"
+    },
+    {
+      "file": "ASSESSMENT1592.json",
+      "sha256": "b43954f8898fd51e7e273091b984e39569a43cbf7a67a7af43df0d6170cf6542",
+      "native_file": "ASSESSMENT1592.json.original",
+      "native_sha256": "9f7569fd188c6f7104883dda62000a42113895e3d03340f351e4ecbcf5824279",
+      "transformation": "CRLF to LF only; no scientific text edits"
+    },
+    {
+      "file": "SHA256-MANIFEST1592.json",
+      "sha256": "7685e1fecb9ba75057f6a49d1bd7856c643a366efcfca7e635d5e43460897fb9",
+      "native_file": "SHA256-MANIFEST1592.json.original",
+      "native_sha256": "99f2ad21fcbc88e31e3cb7e9d34b29182386c3a3c67680e176d328ea4f229bc7",
+      "transformation": "CRLF to LF only; no scientific text edits"
+    },
+    {
+      "file": "INPUT-MANIFEST1592.json",
+      "sha256": "ff3cbb4a54a8280c9a1702fd69437cf52f89bcc18ff1e49c5d5f97399c8542d7",
+      "native_file": "INPUT-MANIFEST1592.json.original",
+      "native_sha256": "ff3cbb4a54a8280c9a1702fd69437cf52f89bcc18ff1e49c5d5f97399c8542d7",
+      "transformation": "CRLF to LF only; no scientific text edits"
+    },
+    {
+      "file": "inputs/LOCAL-NOISE1591.md",
+      "sha256": "f28470026fdf16e71ae5f7cc82a6403854ee8d92bc0ddf7df3dce5ce8643eb54",
+      "native_file": "inputs/LOCAL-NOISE1591.md.original",
+      "native_sha256": "f28470026fdf16e71ae5f7cc82a6403854ee8d92bc0ddf7df3dce5ce8643eb54",
+      "transformation": "CRLF to LF only; no scientific text edits"
+    },
+    {
+      "file": "inputs/LABEL-TREE1592.md",
+      "sha256": "fccd0932cbe9db91957ba50541c0276952c5cf0afb44a8a1d5a4117281171e3b",
+      "native_file": "inputs/LABEL-TREE1592.md.original",
+      "native_sha256": "fccd0932cbe9db91957ba50541c0276952c5cf0afb44a8a1d5a4117281171e3b",
+      "transformation": "CRLF to LF only; no scientific text edits"
+    }
+  ],
+  "parent_notes_outside_assessed_targets": [
+    "DISPOSITION1597.md",
+    "GAUSSIAN-INPUT-MAP1595.md"
+  ],
+  "numeric_grade": null,
+  "PDF_assessed": false
+}

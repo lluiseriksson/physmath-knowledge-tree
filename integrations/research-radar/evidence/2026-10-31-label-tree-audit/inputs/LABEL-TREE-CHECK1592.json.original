@@ -1,0 +1,33 @@
+{
+  "scope": "Own exact finite combinatorial test of original-label canonical overlap tree/coordinate-owner injection; no physical source identification",
+  "supports": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      3
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      5,
+      6
+    ]
+  ],
+  "root_label": 0,
+  "rooted_subsets_checked": 16,
+  "decorated_assignments_checked": 253,
+  "max_overlap_components": 3,
+  "tree_and_injection_checks_passed": true,
+  "integer_occupancy_inequalities_passed": true,
+  "uniform_source_hypotheses_verified": false,
+  "formal_build": false,
+  "new_assessment": false
+}

@@ -1,0 +1,372 @@
+{
+  "scope": "Independent finite corroboration only; analytic proof is in REVIEW1592.md",
+  "arithmetic": "Python 3.12.6 standard-library integers and fractions; no floating-point comparisons",
+  "input_checker_executed": false,
+  "input_checker_reason": "Its hard-coded output path is outside the authorized review directory.",
+  "canonical_owner_tree_checks": [
+    {
+      "supports": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "rooted_subsets": 16,
+      "decorated_assignments": 253,
+      "max_components": 3
+    },
+    {
+      "supports": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          7,
+          8
+        ]
+      ],
+      "rooted_subsets": 64,
+      "decorated_assignments": 6188,
+      "max_components": 4
+    },
+    {
+      "supports": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ]
+      ],
+      "rooted_subsets": 32,
+      "decorated_assignments": 2117,
+      "max_components": 6
+    },
+    {
+      "supports": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6
+        ]
+      ],
+      "rooted_subsets": 32,
+      "decorated_assignments": 573,
+      "max_components": 3
+    }
+  ],
+  "prufer_formal_degree_weight_checks": [
+    {
+      "vertices": 2,
+      "trees": 1,
+      "degree_weight_monomials": 1,
+      "exact_coefficient_identity": true
+    },
+    {
+      "vertices": 3,
+      "trees": 3,
+      "degree_weight_monomials": 1,
+      "exact_coefficient_identity": true
+    },
+    {
+      "vertices": 4,
+      "trees": 16,
+      "degree_weight_monomials": 2,
+      "exact_coefficient_identity": true
+    },
+    {
+      "vertices": 5,
+      "trees": 125,
+      "degree_weight_monomials": 3,
+      "exact_coefficient_identity": true
+    },
+    {
+      "vertices": 6,
+      "trees": 1296,
+      "degree_weight_monomials": 5,
+      "exact_coefficient_identity": true
+    },
+    {
+      "vertices": 7,
+      "trees": 16807,
+      "degree_weight_monomials": 7,
+      "exact_coefficient_identity": true
+    }
+  ],
+  "hermite_norm_checks": [
+    {
+      "degree": 0,
+      "squared_norm": "1"
+    },
+    {
+      "degree": 1,
+      "squared_norm": "1"
+    },
+    {
+      "degree": 2,
+      "squared_norm": "2"
+    },
+    {
+      "degree": 3,
+      "squared_norm": "6"
+    },
+    {
+      "degree": 4,
+      "squared_norm": "24"
+    },
+    {
+      "degree": 5,
+      "squared_norm": "120"
+    },
+    {
+      "degree": 6,
+      "squared_norm": "720"
+    },
+    {
+      "degree": 7,
+      "squared_norm": "5040"
+    },
+    {
+      "degree": 8,
+      "squared_norm": "40320"
+    },
+    {
+      "degree": 9,
+      "squared_norm": "362880"
+    },
+    {
+      "degree": 10,
+      "squared_norm": "3628800"
+    }
+  ],
+  "affine_gaussian_response_checks": [
+    {
+      "groups": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "powers": [
+        3,
+        1,
+        1,
+        1
+      ],
+      "endpoint_assignments": 1,
+      "affine_derivative": "3/256",
+      "local_noise_response": "3/256",
+      "nonzero_off_edge_path_minimum_correlations": true
+    },
+    {
+      "groups": [
+        [
+          0
+        ],
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "powers": [
+        1,
+        2,
+        2,
+        1
+      ],
+      "endpoint_assignments": 1,
+      "affine_derivative": "1/128",
+      "local_noise_response": "1/128",
+      "nonzero_off_edge_path_minimum_correlations": true
+    },
+    {
+      "groups": [
+        [
+          0,
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ]
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "powers": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "endpoint_assignments": 4,
+      "affine_derivative": "17/640",
+      "local_noise_response": "17/640",
+      "nonzero_off_edge_path_minimum_correlations": true
+    }
+  ],
+  "orthant_rational_check": {
+    "noise_variance": "1/4",
+    "correlation": "1/3",
+    "residual_determinant": "65/144",
+    "original_determinant": "8/9",
+    "normalization_note": "c^2 det(I+(C-cI)/c)=det(C); the scalar correlation derivative and affine forest derivative differ by C_original_12."
+  },
+  "rooted_set_and_leaf_checks": {
+    "label_count": 5,
+    "row_bound": "11/10",
+    "diagonal_included": true,
+    "degree_weights": "product d! used only to test permutation-invariant enumeration",
+    "cases": [
+      {
+        "size": 2,
+        "exact_unordered_weight": "4/5",
+        "exact_ordered_weight": "4/5",
+        "ordering_multiplicity": 1,
+        "max_leaf_bound_ratio": "9/11"
+      },
+      {
+        "size": 3,
+        "exact_unordered_weight": "69/50",
+        "exact_ordered_weight": "69/25",
+        "ordering_multiplicity": 2,
+        "max_leaf_bound_ratio": "92/121"
+      },
+      {
+        "size": 4,
+        "exact_unordered_weight": "1059/500",
+        "exact_ordered_weight": "3177/250",
+        "ordering_multiplicity": 6,
+        "max_leaf_bound_ratio": "86/121"
+      },
+      {
+        "size": 5,
+        "exact_unordered_weight": "97/50",
+        "exact_ordered_weight": "1164/25",
+        "ordering_multiplicity": 24,
+        "max_leaf_bound_ratio": "9782/14641"
+      }
+    ]
+  },
+  "owner_reassignment_countercheck": {
+    "same_scalar_used_twice_factorial": 2,
+    "incorrectly_split_between_two_owners_factorial_product": 1,
+    "single_owner_is_essential": true
+  },
+  "physical_source_verified": false,
+  "theorem_proved_by_tests": false
+}
