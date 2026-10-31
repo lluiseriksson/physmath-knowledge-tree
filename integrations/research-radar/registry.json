@@ -2016,14 +2016,41 @@
       "kind": "preprint",
       "published_on": "1994-09-16",
       "observed_on": "2026-10-31",
-      "reading_status": "abstract_read",
+      "reading_status": "selected_sections_read",
       "evidence": "literature",
-      "claim": "Historical tree-formula bibliography, abstract and version history read. First preprint16September1994 at13:33:09UTC; related DOI10.1007/3-540-59190-7_20.",
-      "limits": "Statement/proof not read. Old literature newly indexed, not a new2026 paper; no activity or lattice hypothesis imported.",
+      "claim": "Historical 1994 preprint, first 16 September 1994 at 13:33:09 UTC; related DOI 10.1007/3-540-59190-7_20. Selected Theorems III.1, III.2 and IV.5, their smoothness/interpolation/positivity conditions and selected proof paragraphs read, plus selected V.A/V.B formulas and introductory V.C. The positive path-minimum forest interpolation and alternative rooted formula have different positivity guarantees.",
+      "limits": "Selected statements/formulas and selected proof paragraphs only, not a full proof audit or upstream algebraic derivation. Rooted interpolation is not assumed positivity preserving. Field derivatives require a valid fixed-cutoff dictionary; ignoring cutoff boundary terms is invalid. Mayer family factorials do not supply internal component factorials. Later parent readings are outside frozen assessment1575; no retrospective assessment upgrade, actual source-law admission, rooted physical estimate, formal import/build or new2026paper claimed.",
       "reuse": "Metadata and own synthesis only; no foreign corpus copied or training permission inferred.",
       "anchors": [
         "domain.analysis"
-      ]
+      ],
+      "reading_scope": {
+        "statements_read": [
+          "TheoremIII.1",
+          "TheoremIII.2",
+          "TheoremIV.5"
+        ],
+        "selected_proof_paragraphs_read": [
+          "III.1/III.2 reduction/approximation discussion",
+          "IV.5 positivity argument"
+        ],
+        "selected_formulas_read": [
+          "V.A6-10",
+          "V.B1-6",
+          "V.C introductory two-object distinction"
+        ],
+        "full_proof_audited": false,
+        "formal_import_or_build": false,
+        "version": "hep-th/9409094v1",
+        "snapshot_sha256": "76cfb1038a401621289e5e2f07976655ed787c051da1ec9e6e7b12ab8ab52a78"
+      },
+      "prior_reading_snapshot": {
+        "reading_status": "abstract_read",
+        "claim": "Historical tree-formula bibliography, abstract and version history read. First preprint16September1994 at13:33:09UTC; related DOI10.1007/3-540-59190-7_20.",
+        "limits": "Statement/proof not read. Old literature newly indexed, not a new2026 paper; no activity or lattice hypothesis imported.",
+        "boundary": "Public PR240/241 snapshot; later source reading must not rewrite frozen audit1575 context"
+      },
+      "reading_evidence": "integrations/research-radar/evidence/2026-10-31-forest-source-reading/README.md"
     },
     {
       "id": "armstrong-bkar-formula-formalization-2026",

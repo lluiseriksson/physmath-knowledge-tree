@@ -1,0 +1,330 @@
+{
+  "assessment": "1592",
+  "date": "2026-10-31",
+  "kind": "single contextual AI technical audit, unscored",
+  "scope": {
+    "targets": [
+      "inputs/LOCAL-NOISE1591.md",
+      "inputs/LABEL-TREE1592.md"
+    ],
+    "target_scope": "Exact fixed-factor local-noise response and original-label rooted unnormalized activity estimate",
+    "older_inputs": "Context and adverse findings, not wholesale re-review",
+    "frozen_guide": "REVIEW-GUIDE1592.txt",
+    "numeric_grade": null,
+    "pdf_or_manuscript_assessment": false,
+    "novelty_claim": false,
+    "physical_source_theorem": false,
+    "source_proof_audit": false,
+    "journal_review": false,
+    "editorial_acceptance": false,
+    "audit_contexts_used": 1,
+    "restart_count": 0,
+    "subreview_delegations": 0
+  },
+  "identity": {
+    "requested_model": "GPT-6 Astra",
+    "requested_reasoning_effort": "xhigh",
+    "observed_interface_role": "Codex assistant in a separate task context",
+    "observed_runtime_model": null,
+    "observed_runtime_reasoning_effort": null,
+    "runtime_model_attestation": "unverified",
+    "runtime_effort_attestation": "unverified",
+    "evidence_limit": "No available tool exposed verifiable runtime model/version or effort evidence."
+  },
+  "independence": {
+    "scientific_independence": "unverified",
+    "parent_authored_targets": true,
+    "parent_selected_packet": true,
+    "separate_review_context": true,
+    "other_chats_read": false,
+    "independent_analytic_reconstruction_and_local_checks": true,
+    "limitation": "Context separation and new calculations do not establish scientific independence."
+  },
+  "input_provenance": {
+    "manifest": "INPUT-MANIFEST1592.json",
+    "manifest_sha256": "ff3cbb4a54a8280c9a1702fd69437cf52f89bcc18ff1e49c5d5f97399c8542d7",
+    "manifest_bytes": 2782,
+    "frozen_guide_and_input_count": 10,
+    "frozen_guide_and_input_bytes": 72921,
+    "frozen_guide_and_input_lines": 671,
+    "all_fully_read": true,
+    "pre_and_post_hashes_match": true,
+    "initial_display_truncation_remedied": [
+      "inputs/REVIEW1575.md",
+      "inputs/label-tree1592.py"
+    ],
+    "read_outside_review": [
+      "D:/LEEME.md, owner storage instructions only"
+    ],
+    "original_source_corpus_read": false,
+    "actual_lattice_instance_read": false,
+    "external_forest_proof_read": false,
+    "lean_build_performed": false,
+    "inputs": [
+      {
+        "file": "inputs/LOCAL-NOISE1591.md",
+        "role": "target",
+        "expected_sha256": "f28470026fdf16e71ae5f7cc82a6403854ee8d92bc0ddf7df3dce5ce8643eb54",
+        "pre_sha256": "f28470026fdf16e71ae5f7cc82a6403854ee8d92bc0ddf7df3dce5ce8643eb54",
+        "post_sha256": "f28470026fdf16e71ae5f7cc82a6403854ee8d92bc0ddf7df3dce5ce8643eb54",
+        "expected_bytes": 7992,
+        "pre_bytes": 7992,
+        "post_bytes": 7992,
+        "fully_read": true,
+        "unchanged_and_matches_manifest": true
+      },
+      {
+        "file": "inputs/LABEL-TREE1592.md",
+        "role": "target",
+        "expected_sha256": "fccd0932cbe9db91957ba50541c0276952c5cf0afb44a8a1d5a4117281171e3b",
+        "pre_sha256": "fccd0932cbe9db91957ba50541c0276952c5cf0afb44a8a1d5a4117281171e3b",
+        "post_sha256": "fccd0932cbe9db91957ba50541c0276952c5cf0afb44a8a1d5a4117281171e3b",
+        "expected_bytes": 8653,
+        "pre_bytes": 8653,
+        "post_bytes": 8653,
+        "fully_read": true,
+        "unchanged_and_matches_manifest": true
+      },
+      {
+        "file": "inputs/EXACT-CUTOFF-FACTORS1566.md",
+        "role": "context",
+        "expected_sha256": "0783b59a4e94265e2b497a22d6a8e1817fca3a8be037fdf9c0865e938aa8e4b9",
+        "pre_sha256": "0783b59a4e94265e2b497a22d6a8e1817fca3a8be037fdf9c0865e938aa8e4b9",
+        "post_sha256": "0783b59a4e94265e2b497a22d6a8e1817fca3a8be037fdf9c0865e938aa8e4b9",
+        "expected_bytes": 5124,
+        "pre_bytes": 5124,
+        "post_bytes": 5124,
+        "fully_read": true,
+        "unchanged_and_matches_manifest": true
+      },
+      {
+        "file": "inputs/FOREST-DERIVATIVE1569.md",
+        "role": "context",
+        "expected_sha256": "3e7539e0dc766bc16e6a5c6dbe28cc7d331956c13bc1b15df9fff6ccdf74de15",
+        "pre_sha256": "3e7539e0dc766bc16e6a5c6dbe28cc7d331956c13bc1b15df9fff6ccdf74de15",
+        "post_sha256": "3e7539e0dc766bc16e6a5c6dbe28cc7d331956c13bc1b15df9fff6ccdf74de15",
+        "expected_bytes": 4930,
+        "pre_bytes": 4930,
+        "post_bytes": 4930,
+        "fully_read": true,
+        "unchanged_and_matches_manifest": true
+      },
+      {
+        "file": "inputs/COMPONENT-ALGEBRA1574.md",
+        "role": "context",
+        "expected_sha256": "922573bede0eb109aa7f836d40295654db2dd2949b25805f4c9761d0f1123fd3",
+        "pre_sha256": "922573bede0eb109aa7f836d40295654db2dd2949b25805f4c9761d0f1123fd3",
+        "post_sha256": "922573bede0eb109aa7f836d40295654db2dd2949b25805f4c9761d0f1123fd3",
+        "expected_bytes": 6478,
+        "pre_bytes": 6478,
+        "post_bytes": 6478,
+        "fully_read": true,
+        "unchanged_and_matches_manifest": true
+      },
+      {
+        "file": "inputs/REVIEW1575.md",
+        "role": "adverse_context",
+        "expected_sha256": "62f4f555c3484918e9a6fc777f2c1a5d995f7f9dbfd371024c0e233e6368ad70",
+        "pre_sha256": "62f4f555c3484918e9a6fc777f2c1a5d995f7f9dbfd371024c0e233e6368ad70",
+        "post_sha256": "62f4f555c3484918e9a6fc777f2c1a5d995f7f9dbfd371024c0e233e6368ad70",
+        "expected_bytes": 31944,
+        "pre_bytes": 31944,
+        "post_bytes": 31944,
+        "fully_read": true,
+        "unchanged_and_matches_manifest": true
+      },
+      {
+        "file": "inputs/NOISE-CHECK1591.json",
+        "role": "check",
+        "expected_sha256": "42a04958272a11dc2e018b63bc0073d0ca45044e698698d2e4253bbe2ad916af",
+        "pre_sha256": "42a04958272a11dc2e018b63bc0073d0ca45044e698698d2e4253bbe2ad916af",
+        "post_sha256": "42a04958272a11dc2e018b63bc0073d0ca45044e698698d2e4253bbe2ad916af",
+        "expected_bytes": 1592,
+        "pre_bytes": 1592,
+        "post_bytes": 1592,
+        "fully_read": true,
+        "unchanged_and_matches_manifest": true
+      },
+      {
+        "file": "inputs/LABEL-TREE-CHECK1592.json",
+        "role": "check",
+        "expected_sha256": "203f601d932e3c917c073f1c97130842322aa398fc889bc7df6888cc85ad4f31",
+        "pre_sha256": "203f601d932e3c917c073f1c97130842322aa398fc889bc7df6888cc85ad4f31",
+        "post_sha256": "203f601d932e3c917c073f1c97130842322aa398fc889bc7df6888cc85ad4f31",
+        "expected_bytes": 631,
+        "pre_bytes": 631,
+        "post_bytes": 631,
+        "fully_read": true,
+        "unchanged_and_matches_manifest": true
+      },
+      {
+        "file": "inputs/label-tree1592.py",
+        "role": "check_code",
+        "expected_sha256": "aef3a9e51f69d946843250e81abfd15c2156504e2c04f77a2fb76849b4509457",
+        "pre_sha256": "aef3a9e51f69d946843250e81abfd15c2156504e2c04f77a2fb76849b4509457",
+        "post_sha256": "aef3a9e51f69d946843250e81abfd15c2156504e2c04f77a2fb76849b4509457",
+        "expected_bytes": 2985,
+        "pre_bytes": 2985,
+        "post_bytes": 2985,
+        "fully_read": true,
+        "unchanged_and_matches_manifest": true
+      },
+      {
+        "file": "REVIEW-GUIDE1592.txt",
+        "role": "guide",
+        "expected_sha256": "aa40c196c8ca55d10d2fe7867f24a1ef42cd827332c172aa95b10443d637b17b",
+        "pre_sha256": "aa40c196c8ca55d10d2fe7867f24a1ef42cd827332c172aa95b10443d637b17b",
+        "post_sha256": "aa40c196c8ca55d10d2fe7867f24a1ef42cd827332c172aa95b10443d637b17b",
+        "expected_bytes": 2592,
+        "pre_bytes": 2592,
+        "post_bytes": 2592,
+        "fully_read": true,
+        "unchanged_and_matches_manifest": true
+      }
+    ]
+  },
+  "findings": [
+    {
+      "id": "F1592-1",
+      "status": "supported_conditionally",
+      "claim": "Exact local-noise response and coordinate-occupancy bound",
+      "reason": "The split preserves the original marginal; kernel derivatives use probabilists Hermites; affine symmetric edge entries cancel the heat factor 1/2; joint Cauchy-Schwarz gives the original marginal L2 norm and product alpha_x!.",
+      "required_limits": [
+        "fixed measurable factors and supports",
+        "genuine real symmetric covariance",
+        "uniform positive gap",
+        "sufficient growth/integrability neighborhood",
+        "distinct affine edge derivatives",
+        "noise variance held fixed"
+      ]
+    },
+    {
+      "id": "F1592-2",
+      "status": "supported_conditionally",
+      "claim": "Original-label injection, single row bound and rooted activity estimate",
+      "reason": "The owner is fixed once per selected set; colored endpoint-decorated trees retain all data; the original rooted set has (s-1)! orderings; leaf sums cost R^(s-1); the Pruefer generating function has F(1)<=e sqrt(6).",
+      "repaired_scope": "Abstract attachment and original first-stage counting for precisely z(S) in COMPONENT-ALGEBRA1574",
+      "not_repaired": "Old component majorants, unsupported component N!, or actual physical source admission"
+    },
+    {
+      "id": "F1592-3",
+      "status": "unresolved_source_hypothesis",
+      "claim": "Uniform absolute covariance row sum J must be established separately",
+      "reason": "Uniform spectral upper/lower bounds alone permit absolute row sums growing as sqrt(volume); a symmetric Hadamard construction is given in the report."
+    },
+    {
+      "id": "F1592-4",
+      "status": "noncircular_but_source_unverified",
+      "claim": "The uniform all-subsets mixed L2 product bound is a sufficient noncircular input",
+      "reason": "It bounds an individual product before any connected-set or tree enumeration; individual-factor norm bounds are insufficient. Actual local growth/carrier and combined-label multiplicity constants remain unverified."
+    },
+    {
+      "id": "F1592-5",
+      "status": "unresolved",
+      "claim": "Original physical admission, complex domain and normalizer/log obligations remain open",
+      "reason": "No source geometry/law instance, correct complex admission, external forest proof or zero-free theorem is supplied and audited; the activity is unnormalized."
+    }
+  ],
+  "prior_adverse_findings": [
+    {
+      "prior": "REVIEW1575 F1",
+      "status": "retained_unresolved",
+      "subject": "Actual carriers, original cutoff and selected-output/domain admission"
+    },
+    {
+      "prior": "REVIEW1575 F2",
+      "status": "old_witness_retained_new_abstract_route_supported",
+      "subject": "n^2 attachment witness and failure of the old square-root-size shortcut remain true"
+    },
+    {
+      "prior": "REVIEW1575 F3 enumeration",
+      "status": "conditionally_repaired_for_exact_original_label_activity",
+      "subject": "Original rooted-set (s-1)! is derived; no component N! is granted"
+    },
+    {
+      "prior": "REVIEW1575 F3 normalizer",
+      "status": "retained_unresolved",
+      "subject": "Zero-free/logarithm, reciprocal normalizer and normalized transfer"
+    },
+    {
+      "prior": "REVIEW1575 F4",
+      "status": "retained_external_premise",
+      "subject": "Finite forest formula, without source proof audit or local formal build"
+    },
+    {
+      "prior": "REVIEW1575 F5",
+      "status": "retained_unresolved_source",
+      "subject": "Fixed real factors do not admit moving or complex source domains"
+    },
+    {
+      "prior": "REVIEW1575 F6",
+      "status": "retained",
+      "subject": "Old nonsymmetric tagged inverse and exterior-reference support mismatch are not repaired by this deduction"
+    },
+    {
+      "prior": "REVIEW1575 F7",
+      "status": "nonnegative_parameter_convention_retained",
+      "subject": "0<=t0 and appropriate positive constants/multiplicity must accompany the inherited product bound"
+    }
+  ],
+  "conditional_result": {
+    "lambda_nonnegative": true,
+    "A": "e*sqrt(6)",
+    "R": "max(1, Delta+2*B*D*m*J)",
+    "hypotheses": [
+      "finite original distinct-label factor universe",
+      "nonempty scalar supports of size at most D",
+      "combined-label coordinate multiplicity at most m",
+      "overlap degree at most Delta",
+      "original real symmetric covariance with uniform lower spectral bound and absolute row sum J",
+      "appropriate forest spectral upper/lower bounds and smoothness/integrability",
+      "uniform mixed-factor L2 norm at most lambda^|S| at all required forest points",
+      "exact finite forest identity as external premise",
+      "z(S) as defined in COMPONENT-ALGEBRA1574"
+    ],
+    "size_s_bound": "lambda^s * R^(s-1) * A^s / (s-1), s>=2",
+    "singleton_bound": "lambda",
+    "sufficient_size_sum_condition": "lambda*A*R<1",
+    "rooted_bound": "lambda-lambda*A*log(1-lambda*A*R)",
+    "exponential_weight": "Replace lambda by lambda*exp(eta) throughout and require lambda*exp(eta)*A*R<1.",
+    "elementary_incompatibility_consequence": "sum over S incompatible with B of |z(S)| exp(eta |S|) <= |B|*(Delta+1)*b_eta; no zero-free theorem applied.",
+    "actual_source_hypotheses_verified": false
+  },
+  "computations": {
+    "helper": "review-tmp/audit-check1592.py",
+    "results": "review-tmp/audit-check1592.json",
+    "runtime": "Python 3.12.6, standard library only",
+    "exact_arithmetic": true,
+    "floating_point_comparisons": false,
+    "rooted_subsets": 144,
+    "decorated_assignments": 9131,
+    "prufer_sequences": 18248,
+    "hermite_norm_degrees": [
+      0,
+      10
+    ],
+    "exact_response_results": [
+      "3/256",
+      "1/128",
+      "17/640"
+    ],
+    "frozen_checker_read_but_not_executed": true,
+    "reason_frozen_checker_not_executed": "Its hard-coded output location is outside the allowed review folder.",
+    "finite_checks_are_not_general_proofs": true
+  },
+  "actions": {
+    "network_used": false,
+    "paid_services_used": false,
+    "delegation_used": false,
+    "repository_or_manuscript_edits": false,
+    "frozen_inputs_edited": false,
+    "new_files_outside_review": false,
+    "original_source_corpus_used": false,
+    "external_messages_sent": false,
+    "parent_coordination_messages_only": true,
+    "durable_D_copy_responsibility": "parent"
+  },
+  "disposition": "Supported as an explicitly conditional finite real-Gaussian response and volume-uniform original-label rooted activity estimate; not physical source admission, zero-free/logarithm transfer, a numeric score or a manuscript assessment.",
+  "report": "REVIEW1592.md",
+  "hash_manifest": "SHA256-MANIFEST1592.json"
+}

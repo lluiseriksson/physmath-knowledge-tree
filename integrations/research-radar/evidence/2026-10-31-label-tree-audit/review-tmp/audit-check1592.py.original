@@ -1,0 +1,299 @@
+from pathlib import Path
+from collections import Counter, defaultdict
+from fractions import Fraction as Q
+from functools import lru_cache
+from itertools import product, combinations, permutations
+from math import factorial
+import json
+
+OUT = Path(__file__).resolve().parent / 'audit-check1592.json'
+
+def trees(n):
+    if n == 1:
+        yield ()
+        return
+    for seq in product(range(n), repeat=n-2):
+        deg = [1]*n
+        for x in seq:
+            deg[x] += 1
+        edges = []
+        for x in seq:
+            leaf = next(i for i in range(n) if deg[i] == 1)
+            edges.append(tuple(sorted((leaf, x))))
+            deg[leaf] -= 1
+            deg[x] -= 1
+        last = [i for i in range(n) if deg[i] == 1]
+        edges.append(tuple(last))
+        yield tuple(sorted(edges))
+
+def connected_tree(vertices, edges):
+    if len(edges) != len(vertices)-1:
+        return False
+    reached = {vertices[0]}
+    while True:
+        new = reached | {b for a,b in edges if a in reached} | {a for a,b in edges if b in reached}
+        if new == reached:
+            return len(reached) == len(vertices)
+        reached = new
+
+def test_universe(supports):
+    count = assignments = max_n = 0
+    for mask in range(1, 1 << len(supports), 2):
+        labels = [i for i in range(len(supports)) if mask & (1 << i)]
+        count += 1
+        # Kruskal's lexicographic canonical internal forest, independently of supplied checker.
+        groups = [{i} for i in labels]
+        internal = []
+        for a,b in combinations(labels, 2):
+            if not supports[a] & supports[b]:
+                continue
+            ga = next(g for g in groups if a in g)
+            gb = next(g for g in groups if b in g)
+            if ga is not gb:
+                internal.append((a,b))
+                groups.remove(ga)
+                groups.remove(gb)
+                groups.append(ga | gb)
+        groups.sort(key=min)
+        unions = [set().union(*(supports[i] for i in g)) for g in groups]
+        owners = [{x:min(i for i in g if x in supports[i]) for x in u} for g,u in zip(groups,unions)]
+        max_n = max(max_n, len(groups))
+        seen = set()
+        for t in trees(len(groups)):
+            choices = [tuple(product(sorted(unions[a]), sorted(unions[b]))) for a,b in t]
+            for endpoints in product(*choices):
+                ext = []
+                occupied = Counter()
+                edeg = Counter()
+                for (a,b),(x,y) in zip(t,endpoints):
+                    i,j = owners[a][x], owners[b][y]
+                    occupied[x] += 1
+                    occupied[y] += 1
+                    edeg[i] += 1
+                    edeg[j] += 1
+                    ext.append((i,j,x,y) if i<j else (j,i,y,x))
+                edges = tuple(internal) + tuple((i,j) for i,j,x,y in ext)
+                assert connected_tree(labels, edges)
+                key = (tuple(internal),tuple(sorted(ext)))
+                assert key not in seen
+                seen.add(key)
+                deg = Counter(v for edge in edges for v in edge)
+                left = factorial_product(occupied.values())
+                mid = factorial_product(edeg[i] for i in labels)
+                right = factorial_product(deg[i] for i in labels)
+                assert left <= mid <= right
+                assignments += 1
+    return dict(supports=[sorted(s) for s in supports], rooted_subsets=count,
+                decorated_assignments=assignments, max_components=max_n)
+
+def factorial_product(values):
+    out = 1
+    for v in values:
+        out *= factorial(v)
+    return out
+
+def compositions(total,n):
+    if n == 1:
+        yield (total,)
+        return
+    for v in range(total+1):
+        for rest in compositions(total-v,n-1):
+            yield (v,) + rest
+
+def prufer_test():
+    out=[]
+    for n in range(2,8):
+        direct=Counter()
+        for t in trees(n):
+            d=Counter(v for e in t for v in e)
+            direct[tuple(sorted(d.values()))] += 1
+        coeff=Counter()
+        for ls in compositions(n-2,n):
+            coeff[tuple(sorted(x+1 for x in ls))] += factorial(n-2)//factorial_product(ls)
+        assert direct == coeff
+        out.append(dict(vertices=n, trees=sum(direct.values()),
+                        degree_weight_monomials=len(direct), exact_coefficient_identity=True))
+    return out
+
+def hermite(n):
+    p=[Q(1)]
+    if n == 0:
+        return p
+    q=[Q(0),Q(1)]
+    for k in range(1,n):
+        r=[Q(0)]+q
+        for j,v in enumerate(p):
+            r[j] -= k*v
+        p,q=q,r
+    return q
+
+def gaussian_moment_engine(cov):
+    @lru_cache(None)
+    def moment(counts):
+        if not any(counts):
+            return Q(1)
+        if sum(counts)%2:
+            return Q(0)
+        i=next(i for i,v in enumerate(counts) if v)
+        rem=list(counts)
+        rem[i]-=1
+        out=Q(0)
+        for j,m in enumerate(rem):
+            if m and cov[i][j]:
+                rest=rem.copy()
+                rest[j]-=1
+                out += m*cov[i][j]*moment(tuple(rest))
+        return out
+    return moment
+
+def derivative_moment(cov, directions, counts):
+    # Exact squarefree polynomial in independent affine edge variables.
+    @lru_cache(None)
+    def recur(counts):
+        if not any(counts):
+            return {0:Q(1)}
+        if sum(counts)%2:
+            return {}
+        i=next(i for i,v in enumerate(counts) if v)
+        rem=list(counts)
+        rem[i]-=1
+        out=defaultdict(Q)
+        for j,m in enumerate(rem):
+            if not m:
+                continue
+            rest=rem.copy()
+            rest[j]-=1
+            for mask,value in recur(tuple(rest)).items():
+                out[mask] += m*cov[i][j]*value
+                for k,h in enumerate(directions):
+                    if not mask & (1<<k):
+                        out[mask | (1<<k)] += m*h[i][j]*value
+        return dict(out)
+    return recur(tuple(counts)).get((1<<len(directions))-1,Q(0))
+
+def noise_case(groups, edges, exponents):
+    n=sum(map(len,groups))
+    c=Q(1,4)
+    orig=[[Q(1) if i==j else Q(1,8) for j in range(n)] for i in range(n)]
+    params=[Q(k+2,k+4) for k in range(len(edges))]
+    adjacent=defaultdict(list)
+    for (a,b),v in zip(edges,params):
+        adjacent[a].append((b,v)); adjacent[b].append((a,v))
+    weights={}
+    for source in range(len(groups)):
+        todo=[(source,Q(1),-1)]
+        while todo:
+            node,value,parent=todo.pop()
+            weights[source,node]=value
+            todo += [(b,min(value,v),node) for b,v in adjacent[node] if b!=parent]
+    membership={x:i for i,g in enumerate(groups) for x in g}
+    cf=[[orig[i][j]*weights[membership[i],membership[j]] for j in range(n)] for i in range(n)]
+    directions=[]
+    for a,b in edges:
+        h=[[Q(0)]*n for _ in range(n)]
+        for x,y in product(groups[a],groups[b]):
+            h[x][y]=h[y][x]=orig[x][y]
+        directions.append(h)
+    exact=derivative_moment(cf,directions,exponents)
+    joint=[[Q(0)]*(2*n) for _ in range(2*n)]
+    for i in range(n):
+        for j in range(n):
+            joint[i][j]=cf[i][j]
+        joint[i][n+i]=joint[n+i][i]=joint[n+i][n+i]=c
+    moment=gaussian_moment_engine(joint)
+    noise=Q(0)
+    assignments=0
+    for endpoints in product(*(tuple(product(groups[a],groups[b])) for a,b in edges)):
+        alpha=Counter(x for edge in endpoints for x in edge)
+        covfactor=Q(1)
+        for x,y in endpoints:
+            covfactor *= orig[x][y]
+        terms=[tuple((p,coef*2**p) for p,coef in enumerate(hermite(alpha[x])) if coef) for x in range(n)]
+        expectation=Q(0)
+        for term in product(*terms):
+            coef=Q(1)
+            for p,v in term:
+                coef*=v
+            expectation += coef*moment(tuple(exponents)+tuple(p for p,v in term))
+        noise += c**(-len(edges))*covfactor*expectation
+        assignments += 1
+    assert exact == noise
+    return dict(groups=groups, edges=edges, powers=exponents, endpoint_assignments=assignments,
+                affine_derivative=str(exact), local_noise_response=str(noise),
+                nonzero_off_edge_path_minimum_correlations=True)
+
+def rooted_set_check():
+    nlabels=5
+    w=[[Q(1+(i+j)%3,10) for j in range(nlabels)] for i in range(nlabels)]
+    R=max(map(sum,w))
+    out=[]
+    for s in range(2,6):
+        ts=list(trees(s))
+        direct=Q(0)
+        ordered=Q(0)
+        worst=Q(0)
+        for t in ts:
+            degree=Counter(v for edge in t for v in edge)
+            weight=factorial_product(degree.values())
+            def term(values):
+                val=Q(1)
+                for a,b in t:
+                    val*=w[values[a]][values[b]]
+                return val
+            for labels in combinations(range(1,nlabels),s-1):
+                direct += weight*term((0,)+labels)
+            for labels in permutations(range(1,nlabels),s-1):
+                ordered += weight*term((0,)+labels)
+            placements=sum((term((0,)+values) for values in product(range(nlabels),repeat=s-1)),Q(0))
+            assert placements<=R**(s-1)
+            worst=max(worst,placements/R**(s-1))
+        assert ordered == factorial(s-1)*direct
+        out.append(dict(size=s, exact_unordered_weight=str(direct), exact_ordered_weight=str(ordered),
+                        ordering_multiplicity=factorial(s-1), max_leaf_bound_ratio=str(worst)))
+    return dict(label_count=nlabels, row_bound=str(R), diagonal_included=True,
+                degree_weights='product d! used only to test permutation-invariant enumeration', cases=out)
+
+universes=[
+    [{0,1},{1,2},{3},{4,5},{5,6}],
+    [{0,1},{1,2},{1,3},{4},{5},{6,7},{7,8}],
+    [{i} for i in range(6)],
+    [{0,1},{1,2},{2,0},{3,4},{4,5},{6}],
+]
+hermite_checks=[]
+scalar_moment=gaussian_moment_engine([[Q(1)]])
+for n in range(11):
+    h=hermite(n)
+    norm=sum((a*b*scalar_moment((i+j,)) for i,a in enumerate(h) for j,b in enumerate(h)),Q(0))
+    assert norm==factorial(n)
+    hermite_checks.append(dict(degree=n, squared_norm=str(norm)))
+
+result={
+    'scope':'Independent finite corroboration only; analytic proof is in REVIEW1592.md',
+    'arithmetic':'Python 3.12.6 standard-library integers and fractions; no floating-point comparisons',
+    'input_checker_executed':False,
+    'input_checker_reason':'Its hard-coded output path is outside the authorized review directory.',
+    'canonical_owner_tree_checks':[test_universe(u) for u in universes],
+    'prufer_formal_degree_weight_checks':prufer_test(),
+    'hermite_norm_checks':hermite_checks,
+    'affine_gaussian_response_checks':[
+        noise_case([[0],[1],[2],[3]],[(0,1),(0,2),(0,3)],[3,1,1,1]),
+        noise_case([[0],[1],[2],[3]],[(0,1),(1,2),(2,3)],[1,2,2,1]),
+        noise_case([[0,1],[2],[3]],[(0,1),(0,2)],[2,2,2,2]),
+    ],
+    'orthant_rational_check':{
+        'noise_variance':'1/4','correlation':'1/3',
+        'residual_determinant':str((1-Q(1,4))**2-Q(1,3)**2),
+        'original_determinant':str(1-Q(1,3)**2),
+        'normalization_note':'c^2 det(I+(C-cI)/c)=det(C); the scalar correlation derivative and affine forest derivative differ by C_original_12.'
+    },
+    'rooted_set_and_leaf_checks':rooted_set_check(),
+    'owner_reassignment_countercheck':{
+        'same_scalar_used_twice_factorial':2,
+        'incorrectly_split_between_two_owners_factorial_product':1,
+        'single_owner_is_essential':True
+    },
+    'physical_source_verified':False,
+    'theorem_proved_by_tests':False,
+}
+OUT.write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8')
+print(json.dumps(result,indent=2))

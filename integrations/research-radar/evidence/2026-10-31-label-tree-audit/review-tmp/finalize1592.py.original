@@ -1,0 +1,168 @@
+from pathlib import Path
+import hashlib
+import json
+
+ROOT = Path(__file__).resolve().parents[1]
+
+def sha(path):
+    return hashlib.sha256(path.read_bytes()).hexdigest()
+
+manifest_path = ROOT / 'INPUT-MANIFEST1592.json'
+manifest = json.loads(manifest_path.read_text(encoding='utf-8-sig'))
+pre = json.loads((ROOT / 'review-tmp/pre-audit1592.json').read_text(encoding='utf-8-sig'))
+pre_by_file = {v['file']:v for v in pre['inputs']}
+verified = []
+for item in manifest['inputs']:
+    path = ROOT / item['file']
+    prior = pre_by_file[item['file']]
+    current = sha(path)
+    count = path.stat().st_size
+    assert prior['actual_sha256'] == current == item['sha256']
+    assert prior['actual_bytes'] == count == item['bytes']
+    verified.append({
+        'file':item['file'], 'role':item['role'],
+        'expected_sha256':item['sha256'], 'pre_sha256':prior['actual_sha256'],
+        'post_sha256':current, 'expected_bytes':item['bytes'],
+        'pre_bytes':prior['actual_bytes'], 'post_bytes':count,
+        'fully_read':True, 'unchanged_and_matches_manifest':True,
+    })
+assert sha(manifest_path) == pre['manifest_sha256']
+assert manifest_path.stat().st_size == pre['manifest_bytes']
+checks = json.loads((ROOT / 'review-tmp/audit-check1592.json').read_text(encoding='utf-8'))
+
+assessment = {
+    'assessment':'1592', 'date':'2026-10-31',
+    'kind':'single contextual AI technical audit, unscored',
+    'scope':{
+        'targets':['inputs/LOCAL-NOISE1591.md','inputs/LABEL-TREE1592.md'],
+        'target_scope':'Exact fixed-factor local-noise response and original-label rooted unnormalized activity estimate',
+        'older_inputs':'Context and adverse findings, not wholesale re-review',
+        'frozen_guide':'REVIEW-GUIDE1592.txt',
+        'numeric_grade':None, 'pdf_or_manuscript_assessment':False,
+        'novelty_claim':False, 'physical_source_theorem':False,
+        'source_proof_audit':False, 'journal_review':False, 'editorial_acceptance':False,
+        'audit_contexts_used':1, 'restart_count':0, 'subreview_delegations':0,
+    },
+    'identity':{
+        'requested_model':'GPT-6 Astra', 'requested_reasoning_effort':'xhigh',
+        'observed_interface_role':'Codex assistant in a separate task context',
+        'observed_runtime_model':None, 'observed_runtime_reasoning_effort':None,
+        'runtime_model_attestation':'unverified', 'runtime_effort_attestation':'unverified',
+        'evidence_limit':'No available tool exposed verifiable runtime model/version or effort evidence.',
+    },
+    'independence':{
+        'scientific_independence':'unverified',
+        'parent_authored_targets':True, 'parent_selected_packet':True,
+        'separate_review_context':True, 'other_chats_read':False,
+        'independent_analytic_reconstruction_and_local_checks':True,
+        'limitation':'Context separation and new calculations do not establish scientific independence.',
+    },
+    'input_provenance':{
+        'manifest':'INPUT-MANIFEST1592.json',
+        'manifest_sha256':sha(manifest_path), 'manifest_bytes':manifest_path.stat().st_size,
+        'frozen_guide_and_input_count':len(verified),
+        'frozen_guide_and_input_bytes':sum(v['post_bytes'] for v in verified),
+        'frozen_guide_and_input_lines':sum(len((ROOT/v['file']).read_text(encoding='utf-8').splitlines()) for v in verified),
+        'all_fully_read':True, 'pre_and_post_hashes_match':True,
+        'initial_display_truncation_remedied':['inputs/REVIEW1575.md','inputs/label-tree1592.py'],
+        'read_outside_review':['D:/LEEME.md, owner storage instructions only'],
+        'original_source_corpus_read':False, 'actual_lattice_instance_read':False,
+        'external_forest_proof_read':False, 'lean_build_performed':False,
+        'inputs':verified,
+    },
+    'findings':[
+        {
+            'id':'F1592-1','status':'supported_conditionally',
+            'claim':'Exact local-noise response and coordinate-occupancy bound',
+            'reason':'The split preserves the original marginal; kernel derivatives use probabilists Hermites; affine symmetric edge entries cancel the heat factor 1/2; joint Cauchy-Schwarz gives the original marginal L2 norm and product alpha_x!.',
+            'required_limits':['fixed measurable factors and supports','genuine real symmetric covariance','uniform positive gap','sufficient growth/integrability neighborhood','distinct affine edge derivatives','noise variance held fixed'],
+        },
+        {
+            'id':'F1592-2','status':'supported_conditionally',
+            'claim':'Original-label injection, single row bound and rooted activity estimate',
+            'reason':'The owner is fixed once per selected set; colored endpoint-decorated trees retain all data; the original rooted set has (s-1)! orderings; leaf sums cost R^(s-1); the Pruefer generating function has F(1)<=e sqrt(6).',
+            'repaired_scope':'Abstract attachment and original first-stage counting for precisely z(S) in COMPONENT-ALGEBRA1574',
+            'not_repaired':'Old component majorants, unsupported component N!, or actual physical source admission',
+        },
+        {
+            'id':'F1592-3','status':'unresolved_source_hypothesis',
+            'claim':'Uniform absolute covariance row sum J must be established separately',
+            'reason':'Uniform spectral upper/lower bounds alone permit absolute row sums growing as sqrt(volume); a symmetric Hadamard construction is given in the report.',
+        },
+        {
+            'id':'F1592-4','status':'noncircular_but_source_unverified',
+            'claim':'The uniform all-subsets mixed L2 product bound is a sufficient noncircular input',
+            'reason':'It bounds an individual product before any connected-set or tree enumeration; individual-factor norm bounds are insufficient. Actual local growth/carrier and combined-label multiplicity constants remain unverified.',
+        },
+        {
+            'id':'F1592-5','status':'unresolved',
+            'claim':'Original physical admission, complex domain and normalizer/log obligations remain open',
+            'reason':'No source geometry/law instance, correct complex admission, external forest proof or zero-free theorem is supplied and audited; the activity is unnormalized.',
+        },
+    ],
+    'prior_adverse_findings':[
+        {'prior':'REVIEW1575 F1','status':'retained_unresolved','subject':'Actual carriers, original cutoff and selected-output/domain admission'},
+        {'prior':'REVIEW1575 F2','status':'old_witness_retained_new_abstract_route_supported','subject':'n^2 attachment witness and failure of the old square-root-size shortcut remain true'},
+        {'prior':'REVIEW1575 F3 enumeration','status':'conditionally_repaired_for_exact_original_label_activity','subject':'Original rooted-set (s-1)! is derived; no component N! is granted'},
+        {'prior':'REVIEW1575 F3 normalizer','status':'retained_unresolved','subject':'Zero-free/logarithm, reciprocal normalizer and normalized transfer'},
+        {'prior':'REVIEW1575 F4','status':'retained_external_premise','subject':'Finite forest formula, without source proof audit or local formal build'},
+        {'prior':'REVIEW1575 F5','status':'retained_unresolved_source','subject':'Fixed real factors do not admit moving or complex source domains'},
+        {'prior':'REVIEW1575 F6','status':'retained','subject':'Old nonsymmetric tagged inverse and exterior-reference support mismatch are not repaired by this deduction'},
+        {'prior':'REVIEW1575 F7','status':'nonnegative_parameter_convention_retained','subject':'0<=t0 and appropriate positive constants/multiplicity must accompany the inherited product bound'},
+    ],
+    'conditional_result':{
+        'lambda_nonnegative':True,
+        'A':'e*sqrt(6)', 'R':'max(1, Delta+2*B*D*m*J)',
+        'hypotheses':['finite original distinct-label factor universe','nonempty scalar supports of size at most D','combined-label coordinate multiplicity at most m','overlap degree at most Delta','original real symmetric covariance with uniform lower spectral bound and absolute row sum J','appropriate forest spectral upper/lower bounds and smoothness/integrability','uniform mixed-factor L2 norm at most lambda^|S| at all required forest points','exact finite forest identity as external premise','z(S) as defined in COMPONENT-ALGEBRA1574'],
+        'size_s_bound':'lambda^s * R^(s-1) * A^s / (s-1), s>=2',
+        'singleton_bound':'lambda',
+        'sufficient_size_sum_condition':'lambda*A*R<1',
+        'rooted_bound':'lambda-lambda*A*log(1-lambda*A*R)',
+        'exponential_weight':'Replace lambda by lambda*exp(eta) throughout and require lambda*exp(eta)*A*R<1.',
+        'elementary_incompatibility_consequence':'sum over S incompatible with B of |z(S)| exp(eta |S|) <= |B|*(Delta+1)*b_eta; no zero-free theorem applied.',
+        'actual_source_hypotheses_verified':False,
+    },
+    'computations':{
+        'helper':'review-tmp/audit-check1592.py',
+        'results':'review-tmp/audit-check1592.json',
+        'runtime':'Python 3.12.6, standard library only',
+        'exact_arithmetic':True, 'floating_point_comparisons':False,
+        'rooted_subsets':sum(v['rooted_subsets'] for v in checks['canonical_owner_tree_checks']),
+        'decorated_assignments':sum(v['decorated_assignments'] for v in checks['canonical_owner_tree_checks']),
+        'prufer_sequences':sum(v['trees'] for v in checks['prufer_formal_degree_weight_checks']),
+        'hermite_norm_degrees':[0,10],
+        'exact_response_results':['3/256','1/128','17/640'],
+        'frozen_checker_read_but_not_executed':True,
+        'reason_frozen_checker_not_executed':'Its hard-coded output location is outside the allowed review folder.',
+        'finite_checks_are_not_general_proofs':True,
+    },
+    'actions':{
+        'network_used':False, 'paid_services_used':False, 'delegation_used':False,
+        'repository_or_manuscript_edits':False, 'frozen_inputs_edited':False,
+        'new_files_outside_review':False, 'original_source_corpus_used':False,
+        'external_messages_sent':False, 'parent_coordination_messages_only':True,
+        'durable_D_copy_responsibility':'parent',
+    },
+    'disposition':'Supported as an explicitly conditional finite real-Gaussian response and volume-uniform original-label rooted activity estimate; not physical source admission, zero-free/logarithm transfer, a numeric score or a manuscript assessment.',
+    'report':'REVIEW1592.md', 'hash_manifest':'SHA256-MANIFEST1592.json',
+}
+
+(ROOT/'ASSESSMENT1592.json').write_text(json.dumps(assessment,indent=2)+'\n',encoding='utf-8')
+
+output_names = ['REVIEW1592.md','ASSESSMENT1592.json',
+                'review-tmp/pre-audit1592.json','review-tmp/audit-check1592.py',
+                'review-tmp/audit-check1592.json','review-tmp/finalize1592.py']
+hashes = {
+    'audit':'1592', 'algorithm':'SHA256',
+    'frozen_input_manifest':{
+        'file':'INPUT-MANIFEST1592.json','pre_sha256':pre['manifest_sha256'],
+        'post_sha256':sha(manifest_path), 'bytes':manifest_path.stat().st_size,
+        'unchanged':True,
+    },
+    'frozen_inputs':verified,
+    'outputs':[{'file':name,'bytes':(ROOT/name).stat().st_size,'sha256':sha(ROOT/name)} for name in output_names],
+    'self_hash_policy':'This file does not contain its own hash. Its SHA256 is reported separately on delivery.',
+}
+(ROOT/'SHA256-MANIFEST1592.json').write_text(json.dumps(hashes,indent=2)+'\n',encoding='utf-8')
+for name in ['REVIEW1592.md','ASSESSMENT1592.json','SHA256-MANIFEST1592.json']:
+    print(json.dumps({'file':name,'bytes':(ROOT/name).stat().st_size,'sha256':sha(ROOT/name)}))

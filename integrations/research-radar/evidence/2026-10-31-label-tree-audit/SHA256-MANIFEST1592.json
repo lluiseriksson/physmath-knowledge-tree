@@ -1,0 +1,166 @@
+{
+  "audit": "1592",
+  "algorithm": "SHA256",
+  "frozen_input_manifest": {
+    "file": "INPUT-MANIFEST1592.json",
+    "pre_sha256": "ff3cbb4a54a8280c9a1702fd69437cf52f89bcc18ff1e49c5d5f97399c8542d7",
+    "post_sha256": "ff3cbb4a54a8280c9a1702fd69437cf52f89bcc18ff1e49c5d5f97399c8542d7",
+    "bytes": 2782,
+    "unchanged": true
+  },
+  "frozen_inputs": [
+    {
+      "file": "inputs/LOCAL-NOISE1591.md",
+      "role": "target",
+      "expected_sha256": "f28470026fdf16e71ae5f7cc82a6403854ee8d92bc0ddf7df3dce5ce8643eb54",
+      "pre_sha256": "f28470026fdf16e71ae5f7cc82a6403854ee8d92bc0ddf7df3dce5ce8643eb54",
+      "post_sha256": "f28470026fdf16e71ae5f7cc82a6403854ee8d92bc0ddf7df3dce5ce8643eb54",
+      "expected_bytes": 7992,
+      "pre_bytes": 7992,
+      "post_bytes": 7992,
+      "fully_read": true,
+      "unchanged_and_matches_manifest": true
+    },
+    {
+      "file": "inputs/LABEL-TREE1592.md",
+      "role": "target",
+      "expected_sha256": "fccd0932cbe9db91957ba50541c0276952c5cf0afb44a8a1d5a4117281171e3b",
+      "pre_sha256": "fccd0932cbe9db91957ba50541c0276952c5cf0afb44a8a1d5a4117281171e3b",
+      "post_sha256": "fccd0932cbe9db91957ba50541c0276952c5cf0afb44a8a1d5a4117281171e3b",
+      "expected_bytes": 8653,
+      "pre_bytes": 8653,
+      "post_bytes": 8653,
+      "fully_read": true,
+      "unchanged_and_matches_manifest": true
+    },
+    {
+      "file": "inputs/EXACT-CUTOFF-FACTORS1566.md",
+      "role": "context",
+      "expected_sha256": "0783b59a4e94265e2b497a22d6a8e1817fca3a8be037fdf9c0865e938aa8e4b9",
+      "pre_sha256": "0783b59a4e94265e2b497a22d6a8e1817fca3a8be037fdf9c0865e938aa8e4b9",
+      "post_sha256": "0783b59a4e94265e2b497a22d6a8e1817fca3a8be037fdf9c0865e938aa8e4b9",
+      "expected_bytes": 5124,
+      "pre_bytes": 5124,
+      "post_bytes": 5124,
+      "fully_read": true,
+      "unchanged_and_matches_manifest": true
+    },
+    {
+      "file": "inputs/FOREST-DERIVATIVE1569.md",
+      "role": "context",
+      "expected_sha256": "3e7539e0dc766bc16e6a5c6dbe28cc7d331956c13bc1b15df9fff6ccdf74de15",
+      "pre_sha256": "3e7539e0dc766bc16e6a5c6dbe28cc7d331956c13bc1b15df9fff6ccdf74de15",
+      "post_sha256": "3e7539e0dc766bc16e6a5c6dbe28cc7d331956c13bc1b15df9fff6ccdf74de15",
+      "expected_bytes": 4930,
+      "pre_bytes": 4930,
+      "post_bytes": 4930,
+      "fully_read": true,
+      "unchanged_and_matches_manifest": true
+    },
+    {
+      "file": "inputs/COMPONENT-ALGEBRA1574.md",
+      "role": "context",
+      "expected_sha256": "922573bede0eb109aa7f836d40295654db2dd2949b25805f4c9761d0f1123fd3",
+      "pre_sha256": "922573bede0eb109aa7f836d40295654db2dd2949b25805f4c9761d0f1123fd3",
+      "post_sha256": "922573bede0eb109aa7f836d40295654db2dd2949b25805f4c9761d0f1123fd3",
+      "expected_bytes": 6478,
+      "pre_bytes": 6478,
+      "post_bytes": 6478,
+      "fully_read": true,
+      "unchanged_and_matches_manifest": true
+    },
+    {
+      "file": "inputs/REVIEW1575.md",
+      "role": "adverse_context",
+      "expected_sha256": "62f4f555c3484918e9a6fc777f2c1a5d995f7f9dbfd371024c0e233e6368ad70",
+      "pre_sha256": "62f4f555c3484918e9a6fc777f2c1a5d995f7f9dbfd371024c0e233e6368ad70",
+      "post_sha256": "62f4f555c3484918e9a6fc777f2c1a5d995f7f9dbfd371024c0e233e6368ad70",
+      "expected_bytes": 31944,
+      "pre_bytes": 31944,
+      "post_bytes": 31944,
+      "fully_read": true,
+      "unchanged_and_matches_manifest": true
+    },
+    {
+      "file": "inputs/NOISE-CHECK1591.json",
+      "role": "check",
+      "expected_sha256": "42a04958272a11dc2e018b63bc0073d0ca45044e698698d2e4253bbe2ad916af",
+      "pre_sha256": "42a04958272a11dc2e018b63bc0073d0ca45044e698698d2e4253bbe2ad916af",
+      "post_sha256": "42a04958272a11dc2e018b63bc0073d0ca45044e698698d2e4253bbe2ad916af",
+      "expected_bytes": 1592,
+      "pre_bytes": 1592,
+      "post_bytes": 1592,
+      "fully_read": true,
+      "unchanged_and_matches_manifest": true
+    },
+    {
+      "file": "inputs/LABEL-TREE-CHECK1592.json",
+      "role": "check",
+      "expected_sha256": "203f601d932e3c917c073f1c97130842322aa398fc889bc7df6888cc85ad4f31",
+      "pre_sha256": "203f601d932e3c917c073f1c97130842322aa398fc889bc7df6888cc85ad4f31",
+      "post_sha256": "203f601d932e3c917c073f1c97130842322aa398fc889bc7df6888cc85ad4f31",
+      "expected_bytes": 631,
+      "pre_bytes": 631,
+      "post_bytes": 631,
+      "fully_read": true,
+      "unchanged_and_matches_manifest": true
+    },
+    {
+      "file": "inputs/label-tree1592.py",
+      "role": "check_code",
+      "expected_sha256": "aef3a9e51f69d946843250e81abfd15c2156504e2c04f77a2fb76849b4509457",
+      "pre_sha256": "aef3a9e51f69d946843250e81abfd15c2156504e2c04f77a2fb76849b4509457",
+      "post_sha256": "aef3a9e51f69d946843250e81abfd15c2156504e2c04f77a2fb76849b4509457",
+      "expected_bytes": 2985,
+      "pre_bytes": 2985,
+      "post_bytes": 2985,
+      "fully_read": true,
+      "unchanged_and_matches_manifest": true
+    },
+    {
+      "file": "REVIEW-GUIDE1592.txt",
+      "role": "guide",
+      "expected_sha256": "aa40c196c8ca55d10d2fe7867f24a1ef42cd827332c172aa95b10443d637b17b",
+      "pre_sha256": "aa40c196c8ca55d10d2fe7867f24a1ef42cd827332c172aa95b10443d637b17b",
+      "post_sha256": "aa40c196c8ca55d10d2fe7867f24a1ef42cd827332c172aa95b10443d637b17b",
+      "expected_bytes": 2592,
+      "pre_bytes": 2592,
+      "post_bytes": 2592,
+      "fully_read": true,
+      "unchanged_and_matches_manifest": true
+    }
+  ],
+  "outputs": [
+    {
+      "file": "REVIEW1592.md",
+      "bytes": 28221,
+      "sha256": "957530fd965c46da0cc0dd063a20aa23bdecca48a57d4f443f3b87179620b0cd"
+    },
+    {
+      "file": "ASSESSMENT1592.json",
+      "bytes": 14745,
+      "sha256": "9f7569fd188c6f7104883dda62000a42113895e3d03340f351e4ecbcf5824279"
+    },
+    {
+      "file": "review-tmp/pre-audit1592.json",
+      "bytes": 3420,
+      "sha256": "af0e1811b38a17430d8250fce0513d09618467e5f89a2f71693d9aeb087ba14a"
+    },
+    {
+      "file": "review-tmp/audit-check1592.py",
+      "bytes": 11503,
+      "sha256": "bcea693fdc7aa0b2e785e48a03602b15477dded022b77f7872ff4491df5de79b"
+    },
+    {
+      "file": "review-tmp/audit-check1592.json",
+      "bytes": 7041,
+      "sha256": "e01268a8ee0da6bca921bbb8cb46af638202f7b6621dd213e61f45aacd1fe8d9"
+    },
+    {
+      "file": "review-tmp/finalize1592.py",
+      "bytes": 11610,
+      "sha256": "f5af3285e0e86437db0e908e44a1b5e18964b39587deff9f82609a953c1e9235"
+    }
+  ],
+  "self_hash_policy": "This file does not contain its own hash. Its SHA256 is reported separately on delivery."
+}

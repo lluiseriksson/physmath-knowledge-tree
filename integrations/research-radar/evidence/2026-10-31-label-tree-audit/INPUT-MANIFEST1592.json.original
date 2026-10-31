@@ -1,0 +1,74 @@
+{
+  "audit": "single unscored technical assessment1592",
+  "inputs": [
+    {
+      "role": "target",
+      "original_path": "C:/Trabajo/airr/2026-10-31_execution1591/LOCAL-NOISE1591.md",
+      "file": "inputs/LOCAL-NOISE1591.md",
+      "bytes": 7992,
+      "sha256": "f28470026fdf16e71ae5f7cc82a6403854ee8d92bc0ddf7df3dce5ce8643eb54"
+    },
+    {
+      "role": "target",
+      "original_path": "C:/Trabajo/airr/2026-10-31_execution1592/LABEL-TREE1592.md",
+      "file": "inputs/LABEL-TREE1592.md",
+      "bytes": 8653,
+      "sha256": "fccd0932cbe9db91957ba50541c0276952c5cf0afb44a8a1d5a4117281171e3b"
+    },
+    {
+      "role": "context",
+      "original_path": "C:/Trabajo/airr/2026-10-31_execution1566/EXACT-CUTOFF-FACTORS1566.md",
+      "file": "inputs/EXACT-CUTOFF-FACTORS1566.md",
+      "bytes": 5124,
+      "sha256": "0783b59a4e94265e2b497a22d6a8e1817fca3a8be037fdf9c0865e938aa8e4b9"
+    },
+    {
+      "role": "context",
+      "original_path": "C:/Trabajo/airr/2026-10-31_execution1569/FOREST-DERIVATIVE1569.md",
+      "file": "inputs/FOREST-DERIVATIVE1569.md",
+      "bytes": 4930,
+      "sha256": "3e7539e0dc766bc16e6a5c6dbe28cc7d331956c13bc1b15df9fff6ccdf74de15"
+    },
+    {
+      "role": "context",
+      "original_path": "C:/Trabajo/airr/2026-10-31_execution1574/COMPONENT-ALGEBRA1574.md",
+      "file": "inputs/COMPONENT-ALGEBRA1574.md",
+      "bytes": 6478,
+      "sha256": "922573bede0eb109aa7f836d40295654db2dd2949b25805f4c9761d0f1123fd3"
+    },
+    {
+      "role": "adverse_context",
+      "original_path": "D:/Proyectos/airr-investigacion/2026-10-31_real-forest-audit-intake1580/review/REVIEW1575.md",
+      "file": "inputs/REVIEW1575.md",
+      "bytes": 31944,
+      "sha256": "62f4f555c3484918e9a6fc777f2c1a5d995f7f9dbfd371024c0e233e6368ad70"
+    },
+    {
+      "role": "check",
+      "original_path": "C:/Trabajo/airr/2026-10-31_execution1591/NOISE-CHECK1591.json",
+      "file": "inputs/NOISE-CHECK1591.json",
+      "bytes": 1592,
+      "sha256": "42a04958272a11dc2e018b63bc0073d0ca45044e698698d2e4253bbe2ad916af"
+    },
+    {
+      "role": "check",
+      "original_path": "C:/Trabajo/airr/2026-10-31_execution1592/LABEL-TREE-CHECK1592.json",
+      "file": "inputs/LABEL-TREE-CHECK1592.json",
+      "bytes": 631,
+      "sha256": "203f601d932e3c917c073f1c97130842322aa398fc889bc7df6888cc85ad4f31"
+    },
+    {
+      "role": "check_code",
+      "original_path": "C:/Trabajo/airr/2026-10-31_execution1592/label-tree1592.py",
+      "file": "inputs/label-tree1592.py",
+      "bytes": 2985,
+      "sha256": "aef3a9e51f69d946843250e81abfd15c2156504e2c04f77a2fb76849b4509457"
+    },
+    {
+      "role": "guide",
+      "file": "REVIEW-GUIDE1592.txt",
+      "bytes": 2592,
+      "sha256": "aa40c196c8ca55d10d2fe7867f24a1ef42cd827332c172aa95b10443d637b17b"
+    }
+  ]
+}

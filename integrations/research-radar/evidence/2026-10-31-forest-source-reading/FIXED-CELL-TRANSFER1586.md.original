@@ -1,0 +1,31 @@
+# Two transfer checks before using a fixed-cell cluster/Mayer route
+
+Parent unreviewed follow-up,31October2026. Outside audit1575 and published PR241; no new manuscript, grade or source theorem claim.
+
+## Primary reading scope
+
+Read selected equations and discussion in [hep-th/9409094v1, SectionsV.A–V.B](https://arxiv.org/html/hep-th/9409094v1): covariance interpolation leads to field derivatives of the interaction and cluster amplitudes; the later Mayer stage first separates singleton normalization and then converts unordered polymer families to ordered sequences. The introductoryV.C discussion distinguishes these two levels of objects. Quantitative amplitude control is referred to earlier literature, not independently proved/audited here. No full paper proof audit or formal build occurred.
+
+## Own cutoff test
+
+The actual original FREE cutoff must stay fixed. For a scalar Gaussian with variance v>0 and radius r>0, its inside-cutoff probability is erf(r/sqrt(2v)). Its variance derivative equals
+
+    -r exp[-r^2/(2v)]/[sqrt(2pi) v^(3/2)].
+
+This is nonzero. The ordinary almost-everywhere second derivative of the indicator is zero, so substituting that derivative into a Gaussian heat identity would incorrectly give zero. The correct second derivative is distributional: delta-prime terms at both boundary points give exactly the displayed derivative after integration against the density.
+
+Thus the fixed-cell FIELD-derivative formula cannot be transferred by differentiating our measurable zero extensions and discarding their boundaries. The real DENSITY-derivative route in1575 avoids that invalid step but still has its own attachment costs. A replacement would need all boundary/surface contributions, or a controlled exact approximation limit preserving the original law. A smooth cutoff with a different finite width/radius is not silently substituted. A small Gaussian tail does not mean a boundary term vanishes.
+
+## Own factorial test
+
+For the finite hard-core gas derived1574, an unordered compatible family of m polymers has m! orderings. Replacing families by sequences therefore contributes1/m! at that stage; repeated incompatible polymers contribute zero. This identity is exact.
+
+However one polymer may itself contain N overlap components connected by its FIRST-stage tree. Its contribution to the linear term in the Mayer logarithm has m=1 and coefficient1, regardless of N. The later1/m! is therefore not automatically a1/N! for those internal components. Any first-stage N! normalization must come from its own exact enumeration. This does not prove that such a normalization is impossible; it rejects borrowing it from the wrong counting stage.
+
+For example, three polymer types with weights x,y,z and supports A,B,A-union-B give Z=1+x+y+z+xy. The two ordered compatible pairs account for xy through1/2!, while z still has coefficient1. If z denotes an activity with many internal components, its internal tree sum is not altered by this identity.
+
+## Disposition
+
+Abandon the immediate transplantation of the fixed-cell FIELD-derivative estimate with boundary-free zero extensions, and abandon the identification of the two factorials without a dictionary. Neither test refutes the source construction or the actual series. The open target is an exact rooted attachment enumeration that includes original cutoff boundary costs and its own component multiplicities before claiming a zero-free/logarithm estimate.
+
+Mechanism: compare an exact scalar boundary derivative and the two counting stages. Hypotheses: fixed positive variance/radius and the exact finite gas; no source-law change. Falsifiers: a nonzero missing boundary contribution or a component/polymer mismatch defeats the proposed shortcut, as demonstrated. Levels: literature—selected source formulas/discussion only; heuristic—application dictionary; formal—no new machine proof; speculative—complete rooted/source transfer. Source geometry, normalization and full complex-background gates remain open.

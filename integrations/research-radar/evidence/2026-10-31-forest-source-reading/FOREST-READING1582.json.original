@@ -1,0 +1,24 @@
+{
+  "url": "https://arxiv.org/html/hep-th/9409094v1",
+  "version": "hep-th/9409094v1",
+  "observed_at": "2026-10-31T03:58:38.772Z",
+  "status": 200,
+  "bytes": 811215,
+  "sha256": "76cfb1038a401621289e5e2f07976655ed787c051da1ec9e6e7b12ab8ab52a78",
+  "reading_scope": {
+    "statements": [
+      "Theorem III.1",
+      "Theorem III.2",
+      "Theorem IV.5"
+    ],
+    "selected_proof_paragraphs": [
+      "III.1/III.2 reduction and approximation discussion",
+      "IV.5 positivity argument"
+    ],
+    "full_algebraic_proof_chain_audited": false,
+    "formal_build_or_import": false
+  },
+  "foreign_body_retained": false,
+  "assessment_boundary": "New parent reading after audit1575; does not change the frozen report or PR241 head",
+  "queued_update": "Existing abdesselam-rivasseau-forest-1994 source card, after current publication closure"
+}

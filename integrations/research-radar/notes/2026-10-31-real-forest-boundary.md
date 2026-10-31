@@ -6,7 +6,7 @@ A later [exact contextual audit1575](../evidence/2026-10-31-real-forest-audit/RE
 
 ## Source scope and chronology
 
-- Abdesselam and Rivasseau, [Trees, forests and jungles](https://arxiv.org/abs/hep-th/9409094v1), first preprint16September1994 at13:33:09UTC, related DOI10.1007/3-540-59190-7_20. Abstract/history read; statement and proof not read. Newly indexed here does not mean newly published.
+- Abdesselam and Rivasseau, [Trees, forests and jungles](https://arxiv.org/abs/hep-th/9409094v1), first preprint16September1994 at13:33:09UTC, related DOI10.1007/3-540-59190-7_20. The original catalogue snapshot was abstract/history only; the later [selected theorem/formula reading](../evidence/2026-10-31-forest-source-reading/README.md) does not amount to a full proof audit. Newly indexed here does not mean newly published.
 - Scott Armstrong, [BKARForestFormula](https://github.com/scottnarmstrong/BKARForestFormula/tree/a07f44a534240fe6339558951dd78a19e4ef7c51), observed HEAD `a07f44a534240fe6339558951dd78a19e4ef7c51`. README and selected declaration `bkar_formula_forestIndex_cube_contributions` read. This is a formalization of a known formula, with a global smoothness hypothesis, rather than a new mathematical result. Manifest revisions were inventoried; no build, proof/import audit or CI replay occurred. The repository's verification/model claims remain attributed to its author. It is not imported as a dependency.
 
 [Bibliographic hashes and reading depths](../evidence/2026-10-31-real-forest/bibliography.json) preserve the exact observations. No foreign paper, source corpus or inferred training permission is included. The accompanying primary sweep is directed and at inventory depth, not exhaustive or a proof audit.
@@ -43,3 +43,6 @@ The next finite task is to bound forest density derivatives with one decaying li
 - **Speculative:** a complete connected analytic expansion and transfer to the original lattice marginal.
 
 These observations do not establish a continuum conclusion or discharge the physical source hypotheses of another research repository. The parameter and support boundaries of the earlier assessment remain in force.
+
+
+A later [original-label fixed-cutoff response](2026-10-31-original-label-forest-response.md), with its [exact unscored assessment1592](../evidence/2026-10-31-label-tree-audit/README.md), conditionally repairs the abstract attachment/counting gate using original labels. It preserves the old adverse witness and leaves actual physical source admission, uniform source inputs and zero-free/logarithm transfer open. The summary itself is outside the assessed target texts.
