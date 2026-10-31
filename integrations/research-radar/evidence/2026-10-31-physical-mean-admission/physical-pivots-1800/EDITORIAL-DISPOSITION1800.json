@@ -1,0 +1,26 @@
+{
+  "scope": "Exact adoption of D01,D02,D03 from the editorial report, plus factual delivery-context link; no new mathematical claims or review restart",
+  "assessment_sha256": "6cbbdc7d464289ef4b51c697815a34a82cef2d1d21b25928760404054e564c14",
+  "assessed_note_sha256": "6815c4e5a90514df0988551e1625bb35bc9fcf4213df9b15c6d2be0e6b2d6b2c",
+  "final_note_sha256": "34e171313bd1bbd2ca9902d17d947a3c0b53e861c7316d93be96f12ed4099bab",
+  "replacements": [
+    {
+      "before": "Its d2,L3 SU(2) diagnostics check conventions only, not the original d4,L13 class or a uniform physical family.",
+      "after": "Its d2,L3 SU(2) diagnostics check conventions only, not the d4,L13 calibration, the original minimum or a uniform physical family.",
+      "finding": "E01"
+    },
+    {
+      "before": "This does not invalidate the joint graph measure: its fluctuation-variable block remains onto.",
+      "after": "This does not invalidate the joint graph measure: at that center, its fluctuation-variable block is onto.",
+      "finding": "E02"
+    },
+    {
+      "before": "There is an explicit **nonflat** block, not just an unspecified invertible minor. In the chosen row write `M_c=exp(S_c) C_c`, `S_c=sum_alpha omega_alpha Log L_alpha`, with the actual endpoint factors, translated path and final coarse straight path `C_c`. Let `chi_alpha` indicate a middle-path hit on the pivot, `R_alpha` be the endpoint factor followed by its pre-pivot prefix, and `R_c` the pre-pivot prefix in `C_c`. For `ell_Z(B)=DLog_Z[B Z]` and `dexp_S(B)=integral_0^1 Ad_(exp(tS))B dt`, the block in `dot M_c M_c^(-1)=A_c rho_beta` is",
+      "after": "The nonflat pivot block is explicit. For the chosen physical mean, write `M_c=exp(S_c) C_c`, `S_c=sum_alpha omega_alpha Log L_alpha` and `L_alpha=A_alpha T_x B_alpha C_c^(-1)`. Here `A_alpha,B_alpha` are that mean's actual endpoint factors, `T_x` is the translated middle-path product, `C_c` is the final coarse straight-path product and `omega_alpha` are the original weights. Set `rho_beta=dot U_beta U_beta^(-1)`. Let `chi_alpha` indicate a middle-path hit on the pivot, `R_alpha` be the initial endpoint factor followed by the pre-pivot middle-path prefix when there is a hit, and `R_c` the pre-pivot prefix in `C_c`. When there is no hit, define `chi_alpha Ad_(R_alpha)=0` without using an undefined prefix. For `ell_Z(B)=DLog_Z[B Z]` and `dexp_S(B)=integral_0^1 Ad_(exp(tS))B dt`, the block in `dot M_c M_c^(-1)=A_c rho_beta` is",
+      "finding": "E03"
+    }
+  ],
+  "metadata_appendix": "\nThe separate [editorial integration assessment](../evidence/2026-10-31-physical-mean-admission/physical-pivots-1800/ASSESSMENT1800.json) assesses only this extension in snapshot A. [The exact disposition](../evidence/2026-10-31-physical-mean-admission/physical-pivots-1800/EDITORIAL-DISPOSITION1800.json) records its three editorial corrections and this delivery-context addition in the final text. It does not reopen the mathematical reports or assess the entire note or a PDF.\n",
+  "all_other_bytes_unchanged": true,
+  "original_inputs_reports_unchanged": true
+}

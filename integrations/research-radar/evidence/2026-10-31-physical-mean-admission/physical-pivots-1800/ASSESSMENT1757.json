@@ -1,0 +1,609 @@
+{
+  "schema_version": "1.0",
+  "execution": 1757,
+  "artifact": "ASSESSMENT1757",
+  "language": "es",
+  "assessment_type": "Una revisión matemática nueva del input exacto completo, sin nota numérica, sin reinicios y sin instancia física global.",
+  "created_at_utc": "2026-10-31T22:55:04.670Z",
+  "input": {
+    "path": "C:/Trabajo/airr/2026-10-31_execution1757/FINE-EXTERIOR-ELIMINATION1757.json",
+    "expected_sha256": "be5365612aec1b9fb5f262253f4b42e6d421a00acddfa5bbf898e663692f42b3",
+    "observed_sha256": "be5365612aec1b9fb5f262253f4b42e6d421a00acddfa5bbf898e663692f42b3",
+    "hash_match": true,
+    "coverage": "Se leyó y evaluó todo derivation y sus bindings. El objeto evaluado es la nueva eliminación de restricciones originales de enlaces finos."
+  },
+  "review_provenance": {
+    "requested_configuration": "Astra / xhigh",
+    "effective_model_identity_authenticated": false,
+    "effective_reasoning_effort_authenticated": false,
+    "effective_external_independence_authenticated": false,
+    "configuration_statement": "No hay evidencia de ejecución disponible que autentique modelo, esfuerzo o independencia externa; esta evaluación no certifica esos extremos.",
+    "closed_context": {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1755/ASSESSMENT1755.json",
+      "expected_sha256": "fbcb2ef30f6b189794885ecc4f6e9577c0d11b99409ca01b86e84c561020d463",
+      "observed_sha256": "fbcb2ef30f6b189794885ecc4f6e9577c0d11b99409ca01b86e84c561020d463",
+      "hash_match": true,
+      "reading": "Se consultaron las partes visibles del informe cerrado como contexto. La salida quedó parcialmente truncada; no se declara lectura íntegra. Ningún argumento nuevo se acepta por herencia de su veredicto.",
+      "reopened": false
+    },
+    "PR249_controls_reopened": false,
+    "source_corpus_copied": false,
+    "source_access": "Texto y páginas renderizadas leídos en memoria. No se guardaron copias de PDF, imágenes ni corpus.",
+    "finite_check": "Ensayo exacto propio ejecutado en memoria, diferente del de 1755.",
+    "numeric_grade_assigned": false,
+    "target_grade": null,
+    "output_mutations": [
+      "Solo ASSESSMENT1757.json; ningún cambio al input, manuscrito, estado u otros chats."
+    ]
+  },
+  "verdict": {
+    "code": "FINE_EXTERIOR_HAAR_ELIMINATION_VALID_ON_DECLARED_CHART_WITH_NONBLOCKING_ORDER_CORRECTION",
+    "new_elimination_identity_accepted": true,
+    "all_literal_sentences_accepted_without_correction": false,
+    "blocking_falsifier_found_for_declared_identity": false,
+    "summary": "La eliminación explícita del exterior fino es correcta, con factor Haar uno, para cada V0 fijo y para los integrandos realmente definidos e integrables sobre esa fibra, dentro de la carta admisible declarada. Hay una prueba triangular directa en cada fibra, sin inferir todo target a partir de una desintegración a.e. El conteo, recursión no abeliana, inversa, transporte de targets, palabras completas y medida coarse débil son consistentes. Hay una exageración no bloqueante: el orden árbol primero/no árbol después es suficiente pero no esencial. No se acredita aplicación al K_C original, sección Landau final, normalización ni resultado físico global.",
+    "nonblocking_correction": "Sustituir la afirmación de que el orden elegido es esencial por que es un orden triangular válido. También puede integrarse primero Y_F_N a k fijo y después aplicar Step A.",
+    "fine_targets": "Identidad para todo V0 de la medida base de su parte de carta; no implica carta no vacía ni integrabilidad de un peso físico para todo V0 simultáneamente.",
+    "coarse_targets": "Solo pushforward débil en el espacio original de targets. No hay densidad ni condicional especificada para todo V.",
+    "physical_admission": false,
+    "manuscript_or_pdf_admission": false,
+    "numeric_grade": null
+  },
+  "assumptions_used_as_declared_not_newly_instantiated": [
+    "El mismo toro original admite la partición nativa auxiliar anclada y su bosque peine. No se cambia el toro ni F.",
+    "E tiene una sola variable independiente por enlace; la orientación inversa representa su inversa.",
+    "G es compacto matricial; U0 pertenece a G y está fijado, sin dependencia de las coordenadas libres ni del target coarse V en este cambio.",
+    "En C los logaritmos son suaves y Lie(G)-valuados, por lo que a_r, g_r, l_g y u pertenecen a G.",
+    "La media física original M_fix usa la misma rama covariante allí donde el pullback real de D exige evaluarla; no se supone definida en cualquier Y.",
+    "Los integrandos tienen valores reales especificados sobre las fibras y grafos correspondientes y la integrabilidad necesaria allí. Las restricciones singulares adicionales necesitan un significado de medida ya admitido.",
+    "Haar y delta usan una normalización compatible; no se cambia a coordenadas de álgebra ni se divide un volumen de raíces."
+  ],
+  "mathematical_verification": [
+    {
+      "id": "P01",
+      "topic": "Bosque, top sites, orientaciones y conteo",
+      "conclusion": "Correcto.",
+      "argument": [
+        "Cada componente de T_F está dentro de un árbol nativo y tiene un único vértice de profundidad mínima: si hubiera dos, su camino dentro de la componente contendría un ancestro de menor profundidad.",
+        "T_F tiene n-t componentes. Exactamente r0 contienen una raíz, pues T no conecta raíces distintas. Por tanto |A|=n-r0-t.",
+        "A equivale a los no raíces cuyo enlace entrante de T no está en F. Esto permite construir el cambio de coordenadas directamente en cada fibra.",
+        "La ecuación k(p)^(-1) U0_e k(z)=V0_e se resuelve como k(z)=U0_e^(-1) k(p) V0_e, con ese orden no abeliano.",
+        "Si E representa el enlace al revés, se invierten U0_e y V0_e para escribir la ecuación padre-hijo. No se duplica variable ni constraint."
+      ]
+    },
+    {
+      "id": "P02",
+      "topic": "Carta completa, gauge promedio y Haar",
+      "conclusion": "Correcto bajo las hipótesis explícitas.",
+      "argument": [
+        "P_z=P_p U0_e implica l_g(p) U0_e l_g(z)^(-1)=U0_e. Así Psi_e=k(p)^(-1) U0_e k(z) en T.",
+        "Para U=Psi(Y,k), U(Gamma_rz)=u(r)^(-1)P_rz u(z)=P_rz k(z); por ello k_U=P_rz^(-1)U(Gamma_rz) recupera k.",
+        "Con U^h_ab=h(a)U_ab h(b)^(-1), (U^a)^b=U^(ba). Y=U^u y U=Y^(u^(-1)) tienen el orden correcto.",
+        "En el promedio fuente (78), u(r)^(-1)Ad_P u(z)=Ad_P k(z); su valor es g_r a_r(k)=I. El requisito explícito de Log en Lie(G) asegura cierre en G.",
+        "Las coordenadas (Z,k) conservan Haar por triangularidad en T y traslaciones independientes en los otros enlaces. A k fijo, Z->Y=Z^(l_g) conserva Haar otra vez. La dependencia de l_g en k introduce bloques fuera de diagonal, sin alterar la identidad de medidas.",
+        "u depende solo de k y U0 fijo; tras Step A depende solo de kappa,V0_TF,U0. Nunca depende de eta, Y libre ni V0_F_N.",
+        "No se integra ni cocienta un G^R adicional. No se afirma densidad exponencial de álgebra igual a uno ni determinante Landau igual a uno."
+      ]
+    },
+    {
+      "id": "P03",
+      "topic": "Step A, eliminación del árbol prescrito",
+      "conclusion": "Correcto como inserción canónica de targets.",
+      "argument": [
+        "Cada componente comienza en I si contiene raíz y en kappa_s en otro caso. Recorrerla de arriba abajo determina todos sus k mediante la recursión exacta.",
+        "El cambio desde los k no top a v_e=k(p)^(-1)U0_e k(z), e en T_F, es triangular global en productos de G. Cada diagonal es una traslación Haar. De ahí dk=dkappa dv_TF.",
+        "Fijar v_TF=V0_TF mediante la delta normalizada elimina cada coordenada una vez con factor uno. Las otras dependencias de H se sustituyen completas, incluidos descendientes y todos los Y.",
+        "Los targets del árbol son coordenadas independientes; no es un producto de restricciones dependientes asumido sin prueba.",
+        "La evaluación de H requiere su traza especificada e integrable, como precisa la formulación final del input. Una clase L1 ambiente no basta; véase F02."
+      ]
+    },
+    {
+      "id": "P04",
+      "topic": "Step B, enlaces no árbol y conteo residual",
+      "conclusion": "Correcto.",
+      "argument": [
+        "A kappa fijo, U_b=u_-^(-1)Y_b u_+ da la única solución Y_b=u_- V0_b u_+^(-1) para cada b en F_N. Los multiplicadores son independientes de Y, de modo que cada eliminación tiene factor Haar uno.",
+        "eta son precisamente las Y en E menos (T unión F). U*_F=V0 en todas las orientaciones originales.",
+        "La inversa obtiene k_U, toma sus valores en A y recupera eta de Y=U^u. Es una parametrización completa de la parte de carta de la fibra.",
+        "|A|+|E menos (T unión F)|=(n-r0-t)+(m-(n-r0)-f_N)=m-|F|. La dimensión real multiplica por dim G.",
+        "No se elimina ningún pivote coarse, variable libre de fluctuación previa ni restricción ya pagada.",
+        "El orden adoptado es válido; llamarlo esencial es demasiado fuerte, como demuestra F01."
+      ]
+    },
+    {
+      "id": "P05",
+      "topic": "Prueba por fibra para CADA V0, no solo a.e.",
+      "conclusion": "Correcto; esta justificación evita el salto de desintegración.",
+      "argument": [
+        "Contraer las componentes de T_F deja en cada bloque un árbol enraizado en la componente de la raíz nativa.",
+        "Cada s en A tiene exactamente una arista entrante e_s=(p,s) de T menos F. Con V0 fijo, K(p) depende solo del kappa de la componente progenitora, o solo de datos fijos si esa componente contiene raíz.",
+        "El enlace activo original es U_e_s=K(p)^(-1)U0_e_s kappa_s en dirección padre-hijo. Ordenando componentes desde la raíz, es un cambio triangular de las kappa. A las anteriores fijas, su diagonal es una traslación Haar.",
+        "Si el representante está invertido, se compone con inversión, que conserva Haar compacto. Por tanto el producto Haar de enlaces activos de T menos F es dkappa para ese V0 concreto.",
+        "Los enlaces activos no árbol fuera de F satisfacen U_b=u_-^(-1)eta_b u_+. A kappa fijo son traslaciones independientes. Así dU_(E menos F)=dkappa deta en cada fibra.",
+        "k_U en C se convierte exactamente en K en C, restringiendo ambos lados al mismo subconjunto. No hay que extender Log ni u fuera de C.",
+        "Una identidad conjunta por sí sola solo identificaría condicionales a.e.; aquí se usan desde el inicio las coordenadas activas de cada fibra. Esto justifica todo V0.",
+        "Existe la medida base para cada V0, pero puede tener parte de carta vacía; la integrabilidad de un peso concreto sobre cada fibra no se deduce de su integrabilidad ambiente."
+      ]
+    },
+    {
+      "id": "P06",
+      "topic": "Casos extremos, dominio y rama",
+      "conclusion": "Consistentes.",
+      "argument": [
+        "F vacío recupera la carta completa. F=T deja k totalmente fijado y ninguna kappa. F contenido en E menos T solo elimina Y prescritas. F=E deja una masa puntual, multiplicada por el indicador k_V0 en C y por D si corresponde.",
+        "Raíces aisladas, T vacío y top sites sin descendientes prescritos no alteran el conteo. Las aristas no árbol pueden ser paralelas sin introducir duplicación si están correctamente etiquetadas.",
+        "El indicador de carta puede ser cero en toda una fibra, incluso con F=T o F=E. La igualdad sigue siendo válida.",
+        "Se conserva 1_D(U*) y el dominio real de evaluación. No puede reemplazarse por una caja producto en kappa,eta ni inferirse Y* en D.",
+        "Las integrales con U* y Log se leen restringidas a K en C y al pullback admitido, o como extensión por cero de un integrando ya definido dentro. Cero multiplicado por una expresión indefinida no la define.",
+        "Las hipótesis de rama de la media física deben valer en el pullback; no se deducen solo de que la carta de k sea abierta."
+      ]
+    },
+    {
+      "id": "P07",
+      "topic": "Medida coarse débil con exterior fino fijo",
+      "conclusion": "Correcto bajo integrabilidad del peso real de grafo.",
+      "argument": [
+        "A V0 fijo se define la medida ponderada sobre la fibra raw, restringida por C y D, con peso f(U;M_fix(U),V0,J). Su pushforward por M_fix da el objeto coarse.",
+        "Emparejar con phi acotada da la fórmula débil escrita; P05 transporta exactamente esa integral a kappa,eta.",
+        "Para fuentes complejas y peso absolutamente integrable se obtiene una medida compleja finita. Los polinomios finitos se tratan coeficiente a coeficiente.",
+        "No se requiere submersión ni independencia de filas de M_fix. La medida puede contener átomos o estar soportada en relaciones entre targets.",
+        "Las deltas coarse representan Dirac en las coordenadas originales de target, dentro del emparejamiento débil; no se interpretan como medidas de nivel ya construidas en U para cada V.",
+        "La mejora todo V0 no demuestra densidad coarse, regularidad en V ni condicionales para todo V. Las restricciones gauge singulares adicionales siguen necesitando su medida original admitida."
+      ]
+    },
+    {
+      "id": "P08",
+      "topic": "Transporte coarse y dependencias",
+      "conclusion": "Correcto con U0 fijo y rama covariante.",
+      "argument": [
+        "M_fix(U*)(c)=u(c_-)^(-1)M_fix(Y*)(c)u(c_+), usando los extremos reales, que no tienen por qué ser raíces nativas.",
+        "CMP109(0.4) usa lazos bajo Log conjugados en el extremo inicial y un camino final con ambos extremos. La misma rama funcional respeta la conjugación compacta.",
+        "CMP109(0.12) usa promedios de caminos con extremos comunes; (0.6) da su covariancia izquierda/derecha. Los lazos y el camino final se transportan después de igual modo.",
+        "Con V^u=u_- V u_+^(-1), M_fix(U*)V^(-1)=u_-^(-1)[M_fix(Y*)(V^u)^(-1)]u_-. La delta normalizada es invariante por conjugación.",
+        "A kappa,V0 fijos, V->V^u es una traslación Haar en cada target; emparejar las deltas recupera P07.",
+        "f(U*;V,V0,J) conserva su dependencia original y se evalúa realmente sobre el grafo. No se cambia a f(Y*;V^u,V0^u,J) sin una invariancia propia demostrada.",
+        "U0 fijo es material: tomar más adelante U0=U1(V,V0) puede hacer u dependiente de V y exige rehacer el transporte de targets; véase F04."
+      ]
+    },
+    {
+      "id": "P09",
+      "topic": "Soportes exteriores y redundancias coarse",
+      "conclusion": "Criterio suficiente correcto, sin certificación de soportes concretos.",
+      "argument": [
+        "Si toda variable fina requerida por una fila y todos sus caminos está en F, la fila queda fijada por V0 con su misma media y rama. No basta que sus extremos sean exteriores.",
+        "El soporte se proyecta a los representantes independientes de E, incluidas apariciones invertidas; una arista negativa no crea otra variable. Véase F03.",
+        "Una fila realmente fija da una masa en su target original. No se añade otra delta, ecuación independiente ni normalizador.",
+        "Varias filas iguales o relacionadas producen una medida conjunta posiblemente singular; no autorizan productos de restricciones redundantes a V fijo como si fueran independientes.",
+        "Filas de soporte cruzado permanecen completas y no lineales. El input no aporta una lista de soportes que certifique S_c contenido en F para ninguna fila física concreta."
+      ]
+    },
+    {
+      "id": "P10",
+      "topic": "Palabras, fuentes, acción y normalización",
+      "conclusion": "Correcto en el alcance declarado.",
+      "argument": [
+        "Los factores de gauge se cancelan consecutivamente en el orden de un camino. Los words abiertos retienen ambos extremos; los cerrados basados en r satisfacen Phi_r(U*)=u(r)^(-1)Phi_r(Y*)u(r).",
+        "Por ciclicidad, tr[J_r Phi_r(U*)] transporta la fuente a u(r)J_r u(r)^(-1), sin invertir ese orden ni sustituir la raíz efectiva por otra auxiliar.",
+        "Los words enteramente prescritos se evalúan con V0 en su orden original, incluidas repeticiones e inversas. Los cruzados nunca se parten.",
+        "La acción Wilson real/unitaria es invariante por conjugación de holonomías cerradas, por lo que A(U*)=A(Y*). Los demás factores conservan su pullback salvo invariancia propia demostrada.",
+        "Se retiene la parte off-chart. Una expresión normalizada requiere el denominador original completo y su no anulación ya probada; el cambio no las aporta."
+      ]
+    },
+    {
+      "id": "P11",
+      "topic": "B multiescala y exterior raw",
+      "conclusion": "La separación declarada es correcta y necesaria.",
+      "argument": [
+        "CMP99 pp.81-82, (1.30)-(1.31), usa V primo=V (U0 promedio a escala j)^(-1), tipado en Lambda_j. Para un enlace entre estratos aparece una corrección a la izquierda construida con caminos y datos de la escala anterior.",
+        "p.82 justifica la sustitución porque todos los sitios de esos contornos concretos están en el estrato anterior; no dice que todo camino cruzado esté fijado por un F raw arbitrario.",
+        "V0^u solo transporta los enlaces de F, atados además al árbol fijo. No suministra automáticamente todas las entradas V primo de B.",
+        "Aplicar B exige clasificar entrada, estrato, camino, escala, fondo relativo y pullback. La corrección izquierda no se sustituye por Log de un target coarse.",
+        "Las fuentes respaldan convenciones y límites; no contienen como teorema la eliminación nueva completa de 1757, que se verificó mediante P01-P10."
+      ]
+    },
+    {
+      "id": "P12",
+      "topic": "K_C original y variables previamente eliminadas",
+      "conclusion": "Aplicación física todavía no acreditada.",
+      "argument": [
+        "LAW-BINDING1559 define K_C(g0) como producto sobre coordenadas libres de álgebra con bound C_delta ell^p y beta_ref/g1_ref fijos. No proporciona el diccionario con esta fibra raw.",
+        "CMP119 p.248 introduce V0 raw fuera de Omega1 y luego la fluctuación relativa al punto crítico U1(Omega1,V).",
+        "CMP119 p.249 distingue densidad sigma, determinantes, pivotes b0(c), eliminación y coordenadas libres A con A prima=CA. Esas variables no son sin más todos los enlaces raw activos.",
+        "La identidad presente no puede aplicarse otra vez a variables ya eliminadas de (1.15), ni borrar sigma, z^(0), determinantes o factores de escalado.",
+        "Siguen pendientes diccionario K_C, sección nativa-física, pivotes coarse, determinante constrained/Landau final, collares, P1, amplitud beta_ref/g1_ref, absorción simultánea, off-chart, normalización, sumas conectadas e historias.",
+        "No se cambió la ley, cutoff ni acoplamiento, y no se acredita que esos requisitos físicos estén satisfechos."
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "id": "F01",
+      "severity": "nonblocking_correction",
+      "status": "Literal overstatement established",
+      "location": "STEP B: The chosen order is essential.",
+      "finding": "Árbol primero y no árbol después es un orden válido, pero no esencial.",
+      "proof": "Antes de Step A, u=u(k) ya es independiente de Y. A k fijo se integra primero Y_b para b en F_N, sustituyendo Y_b=u_-V0_b u_+^(-1). Las deltas del árbol no dependen de Y. El resultado es H_tilde(k,eta), con todas sus dependencias de k intactas. Step A se aplica a esa función y sustituye k=K; se obtiene exactamente Y*(eta,K;V0) con factor uno. La composición canónica por targets permite ambos órdenes; Fubini, cuando se invoque, usa la integrabilidad de fibra pertinente.",
+      "minimal_correction": "Decir que el orden elegido es triangular válido y conveniente. No es necesario cambiar las fórmulas.",
+      "effect_on_main_identity": "Ninguno."
+    },
+    {
+      "id": "F02",
+      "severity": "interpretation_precision",
+      "status": "The definitive statement already supplies the needed restriction",
+      "location": "STEP A, any integrable test function H; sección exacta de identidad y graph evaluation.",
+      "finding": "Una clase L1 ambiente no determina la traza en todos los targets. H debe ser una función real especificada sobre la fibra, con traza integrable, o un test regular suficiente.",
+      "adverse_example": "En U(1), con una arista prescrita y target I, H=0 y H_tilde=1_{U_e=I} son la misma clase L1 ambiente. La inserción canónica U_e=I da integrales 0 y 1, respectivamente. No contradice el cambio: demuestra que hay que especificar los valores de la traza.",
+      "resolution_in_input": "La sección exacta exige H medible absolutamente integrable en la fibra original, y la sección coarse exige evaluación real de f sobre el grafo. Con esa lectura, la identidad aceptada está bien definida.",
+      "minimal_clarification": "Repetir esa misma condición en Step A; no es necesario rebajar todo V0 a a.e."
+    },
+    {
+      "id": "F03",
+      "severity": "notation_precision",
+      "status": "No false support certification found",
+      "location": "EXTERIOR COARSE ROWS, S_c contenido en F y reversed edges.",
+      "finding": "F vive en las orientaciones independientes E. El soporte debe identificar cada aparición inversa con su representante de E.",
+      "effect": "Si se leyera como conjuntos de aristas dirigidas sin identificar inversión, el criterio podría ser innecesariamente falso o vacuo. La implicación suficiente sobre constancia no se vuelve falsa.",
+      "minimal_clarification": "Definir S_c como los representantes independientes requeridos por todos los caminos, incluidas apariciones invertidas."
+    },
+    {
+      "id": "F04",
+      "severity": "scope_boundary",
+      "status": "Not a counterexample to the stated fixed-background theorem",
+      "location": "U0 fixed; transporte coarse; futura aplicación al K_C físico.",
+      "finding": "La independencia de U0 y u respecto al target V es necesaria para el argumento escrito de traslaciones Haar en target.",
+      "evidence": "CMP119 p.248 escribe U1(Omega1,V). Si en una aplicación se identifica ese fondo dependiente de V con U0, deben rehacerse el argumento y sus dependencias. Esta revisión no hace tal identificación.",
+      "effect": "Obligación futura coherente con physical_admission=false y con el diccionario K_C todavía ausente."
+    }
+  ],
+  "source_read_log": [
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balabanfusion.pdf",
+      "expected_sha256": "00cc6b218dcf0e1c2884e135caa1d57b3591df036540b685e7440f30cbd4ff16",
+      "observed_sha256": "00cc6b218dcf0e1c2884e135caa1d57b3591df036540b685e7440f30cbd4ff16",
+      "hash_match": true,
+      "text_pages_actually_read_zero_based": [
+        218,
+        219,
+        304,
+        307,
+        359
+      ],
+      "rendered_pages_visually_read_zero_based": [
+        218,
+        219,
+        304,
+        307,
+        359
+      ],
+      "page_mapping": [
+        {
+          "zero_based": 218,
+          "printed": "CMP99 p.81",
+          "used_for": "(1.28)-(1.30), sección, targets relativos e inicio de corrección para enlace entre estratos."
+        },
+        {
+          "zero_based": 219,
+          "printed": "CMP99 p.82",
+          "used_for": "(1.31), V primo multiescala y caminos del estrato anterior; (1.32)-(1.38), B y sección Landau."
+        },
+        {
+          "zero_based": 304,
+          "printed": "CMP98 Averaging p.27",
+          "used_for": "Convención de gauge, orden relativo, (55)-(60), condición axial por contornos."
+        },
+        {
+          "zero_based": 307,
+          "printed": "CMP98 Averaging p.30",
+          "used_for": "Promedio de gauge (78), transportes y recursión multiescala cercana."
+        },
+        {
+          "zero_based": 359,
+          "printed": "CMP95 I p.18",
+          "used_for": "Bloques anclados (1.6), caminos canónicos ordenados (1.7). No se trasladó su teoría lineal a un determinante no abeliano."
+        }
+      ]
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-rg-I-cmp109-1104116842.pdf",
+      "expected_sha256": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+      "observed_sha256": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+      "hash_match": true,
+      "text_pages_actually_read_zero_based": [
+        4,
+        5
+      ],
+      "rendered_pages_visually_read_zero_based": [
+        4,
+        5
+      ],
+      "page_mapping": [
+        {
+          "zero_based": 4,
+          "printed": "p.253",
+          "used_for": "Media (0.4), covariancia (0.6), condiciones del promedio de grupos y contornos (0.10)-(0.11)."
+        },
+        {
+          "zero_based": 5,
+          "printed": "p.254",
+          "used_for": "Media (0.12), kernel (0.13), gauge exponencial (0.14)-(0.15); los pesos permanecen originales."
+        }
+      ]
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-convergent-cmp119-from-fusion.pdf",
+      "expected_sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+      "observed_sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+      "hash_match": true,
+      "text_pages_actually_read_zero_based": [
+        5,
+        6
+      ],
+      "rendered_pages_visually_read_zero_based": [
+        5,
+        6
+      ],
+      "page_mapping": [
+        {
+          "zero_based": 5,
+          "printed": "p.248",
+          "used_for": "(1.11)-(1.13), V0 raw y campo crítico U1(Omega1,V) antes de fluctuaciones."
+        },
+        {
+          "zero_based": 6,
+          "printed": "p.249",
+          "used_for": "(1.14)-(1.16), densidades, determinantes, pivotes b0(c), A prima=CA y variables libres posteriores."
+        }
+      ]
+    }
+  ],
+  "own_exact_finite_check": {
+    "purpose": "Buscar errores no abelianos de orden, orientación, top sites, dependencias y Haar a target fijo para F arbitrario.",
+    "performed": true,
+    "arithmetic": "Exacta sobre S3; sin coma flotante ni muestreo.",
+    "group": {
+      "name": "S3",
+      "representation": "Permutaciones de {0,1,2} en orden lexicográfico. p*r significa p después de r.",
+      "elements": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          2,
+          1
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          2,
+          0,
+          1
+        ],
+        [
+          2,
+          1,
+          0
+        ]
+      ],
+      "identity_index": 0,
+      "haar": "Conteo uniforme: una coordenada libre pesa 1/6; delta en la identidad vale 6."
+    },
+    "graph": {
+      "vertices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "roots": [
+        0,
+        4
+      ],
+      "independent_orientations": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          2
+        ]
+      ],
+      "tree_parent_child_edge_index_orientation_sign": [
+        [
+          0,
+          1,
+          0,
+          -1
+        ],
+        [
+          1,
+          2,
+          1,
+          1
+        ],
+        [
+          1,
+          3,
+          2,
+          -1
+        ]
+      ],
+      "background_indices_in_independent_orientations": [
+        1,
+        3,
+        4,
+        2,
+        5
+      ],
+      "features": "Árbol ramificado de profundidad dos, dos raíces, dos orientaciones de árbol invertidas, enlace no árbol interno y enlace entre bloques."
+    },
+    "root_translation_and_chart": {
+      "rule": "P por productos del árbol; g_0=k(1)*k(2)^(-1)*k(3), g_4=I; u(z)=P_z^(-1)*g_root*P_z*k(z).",
+      "indicator": "k(1)=I y k(2) distinto de k(3).",
+      "scope": "g(k) es una función no constante no abeliana de varios sitios; no se implementó a(k) mediante Log. El indicador es discreto, no una carta logarítmica de un grupo conectado."
+    },
+    "method": [
+      "Enumerar los 6^5=7776 campos raw y calcular su inversa (k,Y).",
+      "Para los 32 subconjuntos F, enumerar todos los 6^|F| targets y las 6^(5-|F|) coordenadas residuales.",
+      "Construir K,u,Y*,U* y comprobar exactamente U*_F=V0, recuperación de K y todos los Y y de las coordenadas residuales.",
+      "Por target, verificar que todos los campos activos producidos son distintos y cubren los 6^(5-|F|) posibles. Esto da igualdad de las medidas normalizadas para cada target en este caso finito.",
+      "Aplicar el indicador de carta y comparar los conjuntos aceptados con los calculados desde los campos raw originales, por fibra.",
+      "Registrar un test negativo de orden para comprobar que la no conmutatividad detecta una recursión errónea."
+    ],
+    "counts": {
+      "subsets_F": 32,
+      "fixed_target_fibers": 16807,
+      "residual_points_checked": 248832,
+      "accepted_chart_points_checked": 34560,
+      "empty_chart_fibers": 12593,
+      "nonempty_chart_fibers": 4214
+    },
+    "all_exact_checks_passed": true,
+    "extreme_subsets": [
+      {
+        "F": [],
+        "top_sites": [
+          1,
+          2,
+          3
+        ],
+        "free_non_tree": [
+          3,
+          4
+        ],
+        "targets": 1,
+        "points": 7776,
+        "accepted": 1080,
+        "empty_fibers": 0
+      },
+      {
+        "F": [
+          0,
+          1,
+          2
+        ],
+        "top_sites": [],
+        "free_non_tree": [
+          3,
+          4
+        ],
+        "targets": 216,
+        "points": 7776,
+        "accepted": 1080,
+        "empty_fibers": 186
+      },
+      {
+        "F": [
+          3,
+          4
+        ],
+        "top_sites": [
+          1,
+          2,
+          3
+        ],
+        "free_non_tree": [],
+        "targets": 36,
+        "points": 7776,
+        "accepted": 1080,
+        "empty_fibers": 0
+      },
+      {
+        "F": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "top_sites": [],
+        "free_non_tree": [],
+        "targets": 7776,
+        "points": 7776,
+        "accepted": 1080,
+        "empty_fibers": 6696
+      }
+    ],
+    "wrong_order_witness": {
+      "F": [
+        0
+      ],
+      "fixed_independent_edge_value_index": 2,
+      "edge_index": 0,
+      "parent_k_index": 0,
+      "background_parent_to_child_index": 1,
+      "target_parent_to_child_index": 2,
+      "correct_k_child_index": 4,
+      "wrong_reordered_V_kparent_U0inverse_index": 3,
+      "meaning": "Se aplicó la orientación inversa; el orden correcto y el reordenado dan elementos distintos aun con padre identidad."
+    },
+    "runtime_seconds_observed": 3.904916999999841,
+    "scope_limits": [
+      "No es una instancia del toro físico ni certifica compatibilidad geométrica.",
+      "Comprueba eliminación y Haar de conteo; la carta Log del grupo original se trata analíticamente bajo las hipótesis.",
+      "No implementa las medias CMP109, B multiescala, K_C, Landau, denominadores ni estimaciones off-chart.",
+      "La prueba general se funda en P01-P08, no en extrapolar el ensayo."
+    ]
+  },
+  "law_binding_checked": {
+    "path": "C:/Trabajo/airr/2026-10-31_execution1559/LAW-BINDING1559.json",
+    "expected_sha256": "a78244cb62773f907346968b16470892a00f1405219d0e9752f17b578af806dd",
+    "observed_sha256": "a78244cb62773f907346968b16470892a00f1405219d0e9752f17b578af806dd",
+    "hash_match": true,
+    "content_read_in_full": true,
+    "scope": "Mantiene el cutoff de álgebra K_C, C_delta y beta_ref/g1_ref. El input no demuestra el diccionario de esas coordenadas con el dominio raw fino."
+  },
+  "final_scope": {
+    "accepted": [
+      "Eliminación explícita completa de las restricciones finas originales, una vez cada una.",
+      "Cambio Haar de factor uno por cada fibra V0 en la parte de carta, incluso cuando esa parte es vacía.",
+      "Conteo residual, orientaciones y sustitución completa de dependencias de u.",
+      "Pushforward coarse débil con media, dominio, factores, palabras y targets originales transportados.",
+      "Separación del exterior raw F y las entradas de frontera multiescala."
+    ],
+    "correction_needed_for_literal_text": [
+      "El orden elegido no es esencial; ambos órdenes son válidos manteniendo dependencias."
+    ],
+    "clarifications_recommended": [
+      "Repetir en Step A la condición de traza de H ya incluida después.",
+      "Definir S_c sobre representantes independientes, incluidas apariciones invertidas."
+    ],
+    "not_established": [
+      "Instancia geométrica/física compatible del toro original.",
+      "Carta no vacía para el V0 físico prescrito.",
+      "Integrabilidad del peso físico para todos los V0.",
+      "Condicional coarse especificada para cada V, densidad o regularidad en V.",
+      "Diccionario de esta fibra raw con K_C de coordenadas libres de álgebra.",
+      "Eliminación de pivotes coarse, sección Landau final o su determinante.",
+      "Correspondencia completa de B multiescala con las variables físicas.",
+      "P1, collares, estimaciones uniformes, cadena de parámetros o absorciones.",
+      "Control off-chart, denominador no nulo, log conectado, historias o resultado global de manuscrito."
+    ],
+    "no_numeric_grade": true,
+    "no_physical_admission": true
+  }
+}

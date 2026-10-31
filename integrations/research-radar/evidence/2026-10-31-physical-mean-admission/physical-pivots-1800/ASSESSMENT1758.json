@@ -1,0 +1,241 @@
+{
+  "execution": 1758,
+  "assessment_kind": "one_new_local_source_bound_mathematical_review_without_score",
+  "requested_configuration": {
+    "model": "Astra",
+    "reasoning_effort": "xhigh",
+    "effective_model_identity_authenticated": false,
+    "effective_reasoning_effort_authenticated": false,
+    "reviewer_independence_authenticated": false,
+    "qualification": "The requested configuration is recorded, not independently authenticated. No earlier assessment was used as a verdict premise."
+  },
+  "input": {
+    "path": "C:/Trabajo/airr/2026-10-31_execution1758/TARGET-DEPENDENT-CENTER1758.json",
+    "expected_sha256": "113e0ff5f1f3da11f16c44558d627c36bdbdd562a7fd78171895afa8b1a01bc9",
+    "observed_sha256": "113e0ff5f1f3da11f16c44558d627c36bdbdd562a7fd78171895afa8b1a01bc9",
+    "hash_match": true,
+    "whole_input_read": true
+  },
+  "verdict": {
+    "code": "VALID_CONDITIONAL_JOINT_TRANSPORT_AND_EXACT_CENTER_OBSTRUCTION_NO_PHYSICAL_ADMISSION",
+    "summary": "The stated local conditional result is mathematically coherent. Recentring the auxiliary group coordinates around an admitted target-dependent reference family preserves the full joint product Haar measure. The explicit connection and residual derivatives are correct with the velocity convention specified in the input. At its fixed matched centre q0, the identity M_I(U0(v))=v forces N(q0,v)=0 exactly. This rules out a uniformly regular elimination of the active target on a chart containing that centre. It does not invalidate the original graph measure, a previously admitted kernel, the source minimum, or the fine-exterior chart.",
+    "fatal_error_found_in_stated_conditional_claim": false,
+    "target_dependence_issue_addressed": "The missing target derivative is explicitly included and yields an obstruction to the suggested regular target-elimination shortcut, rather than a positive invertibility theorem.",
+    "physical_admission": false,
+    "original_cutoff_law_admitted": false,
+    "uniform_physical_family_admitted": false,
+    "source_pivot_identification_admitted": false,
+    "new_paper_or_pdf_grade": false,
+    "score_assigned": false
+  },
+  "review_scope": {
+    "examined": [
+      "Original active target slice I, fixed fine exterior, and retention of other targets and constraints",
+      "Target-dependent recentered chart, fixed q0, local inverse, and joint Haar transport",
+      "Path orientations, exponential differential, inverse and adjoint signs, gauge connection, and fine-exterior cancellation",
+      "Active residual derivative, conjugation, regular-root determinant, and exact matched-centre degeneracy",
+      "Distinction between joint graph measure, conditional kernels, and target elimination",
+      "Use and limits of the source variational minimum and fluctuation pivots",
+      "Marked words, moving source derivatives, finite complex polynomials, domains, and uniformity exclusions"
+    ],
+    "not_reopened": [1755, 1757, "PR249"],
+    "assessment1757_read": false,
+    "closed_context_hashes": "Recorded in the input only; neither the prior assessment nor checkpoint was opened or inherited as evidence.",
+    "no_input_manuscript_or_project_state_modified": true,
+    "only_written_artifact": "C:/Trabajo/airr/2026-10-31_execution1758/ASSESSMENT1758.json",
+    "pdf_or_corpus_copied": false,
+    "source_rendering": "Selected source pages rendered in memory only; no PDF or image copy written.",
+    "online_inventory": "SOURCES1758.json was inspected but supplies no mathematical evidence in this review. No web-search or publication-novelty conclusion was made."
+  },
+  "source_ledger": [
+    {
+      "id": "S119",
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-convergent-cmp119-from-fusion.pdf",
+      "expected_sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+      "observed_sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+      "hash_match": true,
+      "pages_actually_read": [
+        {"printed_page": 248, "pdf_index_zero_based": 5, "method": "complete text extraction and complete visual render", "used": true},
+        {"printed_page": 249, "pdf_index_zero_based": 6, "method": "complete text extraction and complete visual render", "used": true}
+      ],
+      "supports": "Equation (1.12) imposes the fine exterior and active coarse mean constraints on the target-dependent critical point, with the stated axial conditions and source hypotheses. Page 249 removes constraints by solving for A'(b0(c)) in the fluctuation variables and retains background-dependent operators and measure factors.",
+      "does_not_establish_here": "No review of the cited variational theorem or its complete hypotheses, common C1 parameter domain, uniform estimates, or identification of the new group chart with the source free-algebra cutoff was performed."
+    },
+    {
+      "id": "SFUSION",
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balabanfusion.pdf",
+      "expected_sha256": "00cc6b218dcf0e1c2884e135caa1d57b3591df036540b685e7440f30cbd4ff16",
+      "observed_sha256": "00cc6b218dcf0e1c2884e135caa1d57b3591df036540b685e7440f30cbd4ff16",
+      "hash_match": true,
+      "pages_actually_read": [
+        {"source": "CMP98", "printed_page": 29, "pdf_index_zero_based": 306, "method": "complete extracted text", "used": "context only"},
+        {"source": "CMP98", "printed_page": 30, "pdf_index_zero_based": 307, "method": "complete text extraction and complete visual render", "used": true},
+        {"source": "CMP95", "printed_page": 17, "pdf_index_zero_based": 358, "method": "complete extracted text", "used": "title and context only"},
+        {"source": "CMP95", "printed_page": 18, "pdf_index_zero_based": 359, "method": "complete text extraction and complete visual render", "used": true}
+      ],
+      "supports": "CMP98 (78) gives the background-transported group gauge average; CMP95 (1.6)-(1.7) gives the native block and oriented canonical path convention.",
+      "does_not_establish_here": "These selected pages are not a proof of all gauge-fixing, multiscale, domain, or physical cutoff identifications needed by the larger programme."
+    },
+    {
+      "id": "S109",
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-rg-I-cmp109-1104116842.pdf",
+      "observed_sha256": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+      "binding_status": "Existing local source-cache supplement; hash computed during this review, not an additional pinned input binding.",
+      "pages_actually_read": [
+        {"printed_page": 249, "pdf_index_zero_based": 0, "method": "first 200 extracted characters only", "used": "source title and page-number alignment only"},
+        {"printed_page": 253, "pdf_index_zero_based": 4, "method": "complete text extraction and complete visual render", "used": true},
+        {"printed_page": 254, "pdf_index_zero_based": 5, "method": "complete text extraction and complete visual render", "used": true},
+        {"printed_page": 257, "pdf_index_zero_based": 8, "method": "complete extracted text", "used": false, "reason": "Incidental initial index lookup; not relied on."},
+        {"printed_page": 258, "pdf_index_zero_based": 9, "method": "complete extracted text", "used": false, "reason": "Incidental initial index lookup; not relied on."}
+      ],
+      "supports": "Equations (0.4)-(0.12) distinguish the physical link averages and their covariance from a simple replacement by a linear mean. In particular the left/right covariance of the contour mean and conjugation-covariant logarithms yield the endpoint gauge law used in the input. Page 254 describes the kernel and additional gauge factors.",
+      "qualification": "The review does not choose a new mean. Gauge covariance is sufficient for the displayed transport identities; all derivatives P_U must still belong to the unchanged chosen M_fix."
+    },
+    {
+      "id": "LAW1559",
+      "path": "C:/Trabajo/airr/2026-10-31_execution1559/LAW-BINDING1559.json",
+      "expected_sha256": "a78244cb62773f907346968b16470892a00f1405219d0e9752f17b578af806dd",
+      "observed_sha256": "a78244cb62773f907346968b16470892a00f1405219d0e9752f17b578af806dd",
+      "hash_match": true,
+      "whole_file_read": true,
+      "supports": "The recorded original K_C, fixed C_delta, beta_ref and g1_ref scheme remain unchanged.",
+      "does_not_establish_here": "This binding is not a proof of the chart-to-free-algebra dictionary, historical operator identification, source normalization, or a uniformly admitted physical family."
+    }
+  ],
+  "findings": [
+    {
+      "id": "F01",
+      "type": "verified_conditional",
+      "title": "The active target slice and fixed exterior are used consistently",
+      "result": "v ranges only over the original active rows I. The input does not use free variation of exterior rows to manufacture a right inverse. U0(v)|F=V0 makes rho|F=0 and makes the T_F recursion K(kappa) independent of v. Other original targets and constraints remain pulled back.",
+      "reasoning": "On a tree exterior edge, k(z)=V0_e^(-1) k(p) V0_e. With fixed root and component-top data, differentiating at fixed kappa gives dot k=0 throughout T_F. A nonempty positive-dimensional target family cannot exist if all fine links are prescribed; the input explicitly excludes that impossible case.",
+      "source": "S119 p.248 (1.12) and the stated hypotheses"
+    },
+    {
+      "id": "F02",
+      "type": "verified_conditional",
+      "title": "The chart is locally invertible with fixed-v and full joint Haar factor one",
+      "result": "The v dependence adds no Jacobian to the joint change (q,v)->(Psi_v(q),v).",
+      "reasoning": "For tree edges, l_g(p)U0_e=U0_e l_g(z), hence U_e=k(p)^(-1)U0_e k(z). Ordered from roots, the unfixed tree links determine exactly the free component-top coordinates by left/right Haar translations. With k fixed, each remaining free link is U_b=u_-^(-1) w_b U0_b u_+, again a Haar translation in w_b. Fine-prescribed links are fixed identically. Thus the fixed-v derivative is triangular with Haar factor one and is an isomorphism. Retaining v as the unchanged second coordinate makes the full map block triangular. This is a statement on the actual local pulled-back domain, not on an invented product box.",
+      "limits": "No final Faddeev-Popov determinant, source-pivot determinant, flat Lie-algebra density, global cover, or positive chart mass follows. Haar measure here is the product of the original normalized group measures, restricted to the chart."
+    },
+    {
+      "id": "F03",
+      "type": "verified",
+      "title": "Path, dexp and gauge-connection signs are correct",
+      "result": "All displayed connection formulas agree with the explicitly defined velocity convention dot g g^(-1).",
+      "reasoning": "For P=U1...Un, dot P P^(-1) is the sum of prefix-adjoint velocities. Reversal gives rho_(e^-1)=-Ad_(U0_e^-1)rho_e. Since k and Z are fixed, dot X=[p,X]. The differential satisfies dot a a^(-1)=dexp_A(dot A), with dexp_A(B)=integral_0^1 Ad_exp(tA)(B)dt. Inverting a gives gamma=-Ad_g dexp_A(dot A). Differentiating P^(-1)gP gives alpha=Ad_(P^-1)(gamma+(Ad_g-I)p). No sign or inverse correction is needed.",
+      "convention_note": "The input calls dot g g^(-1) a left logarithmic velocity. Some references use a different terminology; the explicit formula fixes the convention and the algebra is internally consistent.",
+      "source": "SFUSION CMP98 p.30 (78) for the gauge average; derivatives checked directly"
+    },
+    {
+      "id": "F04",
+      "type": "verified",
+      "title": "The actual coordinate derivative includes all target dependence and vanishes on F",
+      "result": "y_e=rho_e on T, y_b=Ad_w rho_b on free non-tree links, and y_b=alpha_- -Ad_Y alpha_+ on F minus T. Therefore W xi=Ad_(u_-^-1)(y-alpha_-+Ad_Y alpha_+) is correct.",
+      "reasoning": "Differentiate U_b=u_-^(-1)Y_bu_+ as a matrix product. On F minus T the y terms cancel exactly. On T intersect F, rho_e=0 and differentiation of l_g(p)U0_e l_g(z)^(-1)=U0_e gives alpha_p=Ad_(U0_e)alpha_z, producing the same zero. At q0, X=A=0 and g=I imply gamma=alpha=0, while w=I; consequently W(q0,v)=D_v U0(v).",
+      "limits": "Writing W explicitly gives no uniform norm, spatial decay, locality bound, or control of higher or mixed target derivatives."
+    },
+    {
+      "id": "F05",
+      "type": "verified_conditional",
+      "title": "Joint graph transport is distinct from elimination of v",
+      "result": "The pulled-back active delta is well defined as the transported canonical weak graph measure. It need not be a graph over q.",
+      "reasoning": "The original residual R(U,v)=M_I(U)v^(-1) is a submersion in the independent v coordinate. A local joint diffeomorphism preserves this property even when its v block at fixed q becomes singular. Therefore dq dv delta_G^I(H(q,v)) is legitimate locally in the weak/coarea sense with the original support and weights. It does not mean that delta_G^I(H(q,cdot)) is separately defined as a regular delta in v at every fixed q.",
+      "conjugation_check": "Writing C=M_I(Y)(v^u)^(-1), the exact identity is H_c=u_-^(-1) C_c u_-. On H=I, D C_c=Ad_(u_-) D H_c; derivative terms of the conjugator vanish there. The absolute Haar determinant of the adjoint is one. This justifies the residual delta equality on the full submersion. It does not justify a Haar translation in v when u depends on v.",
+      "limits": "An additional product with other singular constraints still needs its original admitted measure interpretation. Active-residual submersion alone does not prove that product exists."
+    },
+    {
+      "id": "F06",
+      "type": "verified_conditional",
+      "title": "The residual block and regular-root determinant are correct",
+      "result": "At H=I, D_v H xi=(P_U W-I)xi=-N xi. A regular target elimination has factor |det N|^(-1), only on patches where the roots are isolated and regular.",
+      "reasoning": "For m=M_I(Psi_v(q)), the general left velocity of m v^(-1) is dot m m^(-1)-Ad_(m v^-1)xi. At m=v this becomes P_U W xi-xi. The determinant of -N has the same absolute value as that of N. The ordinary local group change-of-variables formula then yields the inverse absolute determinant with the original Haar normalization, support, and sum over regular roots.",
+      "limits": "No determinant may be inserted without regular roots and integrability of the resulting sum. It is not a multiplier of the earlier full joint Haar change. In the conjugated residual, the precise output derivative is multiplied by the corresponding endpoint adjoint; one must not reinterpret v^u as an independent target with u frozen."
+    },
+    {
+      "id": "F07",
+      "type": "verified_exact_obstruction",
+      "title": "The matched-centre target block is exactly zero, while the full active residual remains regular",
+      "result": "H(q0,v)=I for all v in O, P_(U0)D_vU0=I, W(q0,v)=D_vU0, and N(q0,v)=0.",
+      "reasoning": "These identities follow by differentiating the assumed defining equation M_I(U0(v))=v in the fixed centre coordinates. For n=|I|dim G>0, the entire n by n target block vanishes; smallness cannot make it invertible at that point. Conversely P_(U0) has a right inverse D_vU0 tangent to the fixed-fine-data space. Since D_qPsi is an isomorphism, D_qH=P_(U0)D_qPsi is onto at q0. Thus the full residual differential has rank n despite its zero v block.",
+      "scope": "This excludes a uniform regular-target-elimination argument on a domain containing an admitted centre. It does not prove that all off-centre target roots are singular, that no almost-everywhere or stratified disintegration could ever exist, or that every fixed-target kernel fails. A centre excluded by the actual domain gives no physical obstruction until its membership is established.",
+      "implication": "A suitable q minor exists locally by finite-dimensional rank and inverse-function arguments. Its identity, normalization and compatibility with the original cutoff are not supplied."
+    },
+    {
+      "id": "F08",
+      "type": "source_consistent_with_unresolved_admission",
+      "title": "The minimum and fluctuation pivots are invoked within their actual scope",
+      "result": "CMP119 p.248 supports the defining constrained target dependence; p.249 supports solving in fluctuation/pivot variables rather than using an invertible target derivative at the matched centre.",
+      "reasoning": "The input uses no replacement minimum and no replacement physical mean. Its obstruction depends only on a C1 constrained family, not on stationarity. Minimality is relevant to the intended application, but is not needed for N=0. The source's uniqueness, positive second differential and references do not, on these pages alone, verify every uniform family/domain hypothesis required here.",
+      "remaining_adverse": "A common admitted C1 family with fixed exterior, the exact original active target slice, common charts/collars, all remaining constraints, and membership of q0 in the original support remain unproved."
+    },
+    {
+      "id": "F09",
+      "type": "verified_nonphysical_countertest",
+      "title": "The one-group example correctly separates degeneracy from kernel failure",
+      "result": "For M(U)=U, U0(v)=v and U=w v, the transformed graph measure is delta_G(w)dw dv and H=w. At w=I all v are roots and D_vH=N=0, while the fixed-v kernel evaluates the test function at (v,v).",
+      "limits": "This is an exact compact-group toy calculation only. It has no original fine torus, native L>11 blocks, original physical sector, K_C, or source theorem counterexample. It cannot establish physical realizability or transfer a numerical result to the physical problem."
+    },
+    {
+      "id": "F10",
+      "type": "verified_with_integrability_limits",
+      "title": "Source frames, full marked words and complex polynomials are treated consistently",
+      "result": "For J'=uJu^(-1), dot J'=[alpha,J'] at fixed J, with the additional Ad_u(dot J) when J varies. At q0 the frame term vanishes, but background, field, weight, support and mixed derivatives remain.",
+      "reasoning": "Closed word conjugations and open endpoint factors follow by telescoping only the actual ordered gauge factors. A wholly fine-prescribed word evaluates to its ordered V0 word once; crossing words cannot be split into independent factors. Finite polynomial insertions can be transported coefficientwise provided the original coefficient integrals exist.",
+      "limits": "Coefficientwise transport proves no positivity, nonvanishing partition function, analytic logarithm, connected expansion, or differentiation under an integral with moving domains. Such derivative interchanges need their own domination and boundary control."
+    }
+  ],
+  "independent_checks": {
+    "analytic_checks": [
+      "Reconstructed the triangular inverse from raw unfixed tree links to K(kappa), followed by the free non-tree links.",
+      "Differentiated the ordered path, inverse path, conjugated logarithm, exponential inverse, and P^(-1)gP directly.",
+      "Differentiated U=u_-^(-1)Yu_+ and checked cancellation separately on both kinds of prescribed fine links.",
+      "Differentiated the residual before restricting to the constraint locus, retaining its Ad_H term until H=I.",
+      "Verified that variable conjugation changes only the normal residual derivative by a Haar-preserving adjoint on the zero set.",
+      "Used the right-inverse identity to distinguish the zero v block from the surjective q block.",
+      "Checked the one-group graph measure and conditional kernel exactly."
+    ],
+    "numerical_diagnostic": {
+      "description": "Independent in-memory SU(2) finite-difference diagnostic on an arbitrary four-site rooted tree with two free tree edges, one prescribed tree edge, one prescribed non-tree edge, and one free non-tree edge. Noncommuting backgrounds and residual group variables were used. This is not the physical lattice or its mean, and is not evidence for physical admission.",
+      "seed": 1758,
+      "central_difference_step": 0.000001,
+      "max_path_velocity_error": 9.176157151762624e-11,
+      "max_dotX_error": 2.8117599146073824e-11,
+      "gamma_error": 2.0431060185874194e-11,
+      "max_alpha_error": 1.5521403298504046e-10,
+      "max_y_error": 1.9995534001298916e-10,
+      "max_W_error": 2.5460871591140174e-10,
+      "fixed_F_formula_W_norm": 2.4532694666933968e-18,
+      "fixed_F_finite_difference_norm": 2.5460871591887625e-10,
+      "centre_W_equals_rho_error": 3.125432689277826e-10,
+      "centre_Psi_equals_U0_error": 1.3516112184391875e-15,
+      "fixed_v_absolute_Haar_jacobian": 0.999999999978347,
+      "source_frame_derivative_error": 6.457546468875909e-11,
+      "reversed_edge_velocity_error": 8.006527676653853e-11,
+      "interpretation": "Sanity check of signs, adjoints, exterior cancellation and the triangular Haar calculation; the analytic identities, not this diagnostic, support the verdict."
+    }
+  },
+  "preserved_adverses_and_open_requirements": [
+    "No admitted uniformly controlled physical C1 reference/minimum family or parameter domain is constructed.",
+    "No physical realization or nonzero chart mass is demonstrated, and q0 membership in every original cutoff domain is not assumed without proof.",
+    "The original active rows alone may vary. Fixed fine data cannot be reconciled by freely varying exterior rows or discarding remaining coarse constraints.",
+    "Original target-dependent domains must remain exact pullbacks; replacing them by a fixed q box is unsupported.",
+    "The inverse determinant |det N|^(-1) is unavailable at the matched centre, and no uniform lower bound is possible on a domain containing that centre.",
+    "Zero N is a coordinate-projection obstruction, not a failure of the source theorem, fine-fiber chart, joint graph measure or admitted fixed-target kernel.",
+    "No actual source pivot b0(c), scalar metric/scale factor, pivot determinant, or source free-algebra chart is identified by the abstract q-minor argument.",
+    "The unchanged K_C, C_delta, beta_ref and g1_ref law is retained but not newly admitted or matched to the group-coordinate domain.",
+    "The off-chart contribution, remaining constraints, original ordinary and noninvariant weights, gauge factors and normalizers are not eliminated.",
+    "The well-definedness of products with additional singular constraints is not established by the active residual alone.",
+    "No nonzero normalization denominator, uniform profile, source190/Hsharp operator identity, native multiscale B dictionary, P1 repair, or simultaneous parameter chain is proved.",
+    "No connected sum, logarithmic source expansion, positivity claim, or history/sector sum is obtained from finite complex polynomial transport.",
+    "The compact-group countertest and SU(2) diagnostic remain explicitly nonphysical and cannot be promoted to source counterexamples or physical sector constructions.",
+    "No whole-source proof review, publication-novelty determination, manuscript change, new paper, or PDF grade is supplied."
+  ],
+  "disposition": {
+    "accept_for": "A local conditional lemma for target-dependent joint transport, its explicit gauge derivative, and the exact obstruction to regular target elimination at a matched centre.",
+    "do_not_accept_for": "A positive physical admission, a replacement for the source fluctuation-pivot construction, an original-cutoff estimate, or a completion of the larger programme.",
+    "necessary_text_correction": "None found in the stated conditional result. Preserve its domain and admission qualifications. Interpret conjugated residual derivatives precisely as in F05-F06 and the elimination obstruction only within the scope in F07.",
+    "next_mathematical_requirement_if_continued": "Work with the joint formulation or a source-compatible fluctuation pivot, and separately prove the admitted physical family, support, retained constraints, original cutoff dictionary and required uniform bounds. Do not add invertibility of N at q0 as a new hypothesis: it contradicts the matched defining identity."
+  }
+}
