@@ -1,0 +1,125 @@
+{
+  "audit_id": "1524",
+  "created_at_utc": "2026-10-31T01:04:49.362172+00:00",
+  "hash_algorithm": "SHA256",
+  "input_manifest": {
+    "file": "INPUT-MANIFEST1524.json",
+    "bytes": 6333,
+    "sha256": "917cb9c1b7d2b7bfb66e8450b8ffdd35276f9bd9229c986c7ae8c6d2cac64c24",
+    "matches_requested_hash": true
+  },
+  "immutable_files_reverified_after_review": [
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1524/review/FIRST-T-INSERTION1485.md",
+      "bytes": 6655,
+      "sha256": "79d9d285ef63623d62a56995dfc3f334915af99b0a2ef3a05f8de98e2d0d6faf",
+      "matches_input_manifest": true,
+      "role": "immutable_note_or_context"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1524/review/FIRST-T-SCORE1486.md",
+      "bytes": 6435,
+      "sha256": "261223c0145c44f4b10e2a75c19a9a6708d753e9de0067071b8d35aee18c9015",
+      "matches_input_manifest": true,
+      "role": "immutable_note_or_context"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1524/review/LIFT-RESPONSE1487.md",
+      "bytes": 5535,
+      "sha256": "13e21c1fd12b9dc6b9b1cc5232c4af04b806b108e186cd6a64255938314f07d8",
+      "matches_input_manifest": true,
+      "role": "immutable_note_or_context"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1524/review/BACKGROUND-RESPONSE1488.md",
+      "bytes": 6912,
+      "sha256": "3784d21bb6bd5174320d53a56012d1e07fe8afd9b1ca99717758dc84250d465b",
+      "matches_input_manifest": true,
+      "role": "immutable_note_or_context"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1524/review/AXIAL-TANGENT1489.md",
+      "bytes": 6675,
+      "sha256": "ac514a73bacc4896e08261c1be2296e5eb2af9265acf1284cf90e0607416e64d",
+      "matches_input_manifest": true,
+      "role": "immutable_note_or_context"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1524/review/MIXED-SCORE1490.md",
+      "bytes": 8778,
+      "sha256": "fecf8752af2c18387b95f4fc15d35860f6cc8087851f8ce3bda4010adc80837d",
+      "matches_input_manifest": true,
+      "role": "immutable_note_or_context"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1524/review/CARRIERS1491.md",
+      "bytes": 5019,
+      "sha256": "3ba15e0f9ebba72952f18de5c06d0eb73cad285eeaabdead7d732b6527fe62a4",
+      "matches_input_manifest": true,
+      "role": "immutable_note_or_context"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1524/review/METRIC1492.md",
+      "bytes": 5790,
+      "sha256": "577c4b717f966d56da36e1298a0752e9dc41394ff9297ff45505b3b98fc54521",
+      "matches_input_manifest": true,
+      "role": "immutable_note_or_context"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1524/review/CONTEXT-REVIEW1516.md",
+      "bytes": 19156,
+      "sha256": "04ffc7f9ecdf52e6eeadf419f355d78c1c5015a1f434f4c58889c4d94dc2665a",
+      "matches_input_manifest": true,
+      "role": "immutable_note_or_context"
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-rg-I-cmp109-1104116842.pdf",
+      "bytes": 5490078,
+      "sha256": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+      "matches_input_manifest": true,
+      "role": "read_only_primary_source"
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/cmp102_variational/1104114383.pdf",
+      "bytes": 3355501,
+      "sha256": "838056b5c578f81d058deb3d394c66d934690e3b94c6cf2956534ec6d211b541",
+      "matches_input_manifest": true,
+      "role": "read_only_primary_source"
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-convergent-cmp119-from-fusion.pdf",
+      "bytes": 4172827,
+      "sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+      "matches_input_manifest": true,
+      "role": "read_only_primary_source"
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balabanfusion.pdf",
+      "bytes": 35847780,
+      "sha256": "00cc6b218dcf0e1c2884e135caa1d57b3591df036540b685e7440f30cbd4ff16",
+      "matches_input_manifest": true,
+      "role": "read_only_primary_source"
+    }
+  ],
+  "review_outputs": [
+    {
+      "file": "REVIEW1524.md",
+      "path": "C:/Trabajo/airr/2026-10-31_execution1524/review/REVIEW1524.md",
+      "bytes": 37479,
+      "sha256": "a5da1b699524ff2ea30f9b5d0023e3eb494218ea2e7b3e12b4753d28d51b8ee0"
+    },
+    {
+      "file": "ASSESSMENT1524.json",
+      "path": "C:/Trabajo/airr/2026-10-31_execution1524/review/ASSESSMENT1524.json",
+      "bytes": 15216,
+      "sha256": "81904aaec9670b97024a576bdde72f1e5ab14df0ac0d7e8158bf59b75794fe11"
+    }
+  ],
+  "self_hash_convention": "This manifest excludes its own digest to avoid circular hashing. Its SHA256 is returned in the final message.",
+  "excluded_from_durable_public_packet": [
+    "C:/Trabajo/airr/2026-10-31_execution1524/review-tmp/*"
+  ],
+  "source_pdfs_copied_to_output_packet": false,
+  "numerical_grade_assigned": false,
+  "publication": false
+}

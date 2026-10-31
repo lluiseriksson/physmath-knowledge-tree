@@ -1,0 +1,369 @@
+{
+  "audit_id": "1524",
+  "audit_kind": "single_unscored_source_specific_technical_audit",
+  "created_at_utc": "2026-10-31T01:04:01.644639+00:00",
+  "requested_configuration": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "xhigh"
+  },
+  "observed_configuration": {
+    "model": "unverified",
+    "reasoning_effort": "unverified",
+    "runtime_attestation_available": false,
+    "separately_assigned_review_context": true
+  },
+  "independence": {
+    "scientific_independence": "unverified",
+    "parent_authored_inputs": true,
+    "separate_context_is_certification": false,
+    "parent_corroborated_gauge_source_warning_after_reviewer_reported_finding": true
+  },
+  "numerical_grade_assigned": false,
+  "review_count": 1,
+  "restarted_or_regraded": false,
+  "disposition": {
+    "as_written_original_gauge_chain": "not_validated_material_false_source_application_identity_in_1489",
+    "original_gauge_tangent": "not_established_by_1489",
+    "scalar_target_after_explicit_full_integral_repair": "conditionally_established",
+    "summary": "The root-fixed return in1489 does not in general restore the original prescribed-average fiber. The original FULL retained scalar mean is nevertheless exactly equal to its gauge-covariant raw-integral extension evaluated along the source Landau representative. With the common admitted analytic/convex margins and the stated literature kernel, the actual local-score bound, coupling cancellation and metric convolution establish the requested scalar estimate.",
+    "repair_is_in_original_notes": false,
+    "repair_provided_in_review_sections": [
+      "5.1",
+      "5.2",
+      "5.3",
+      "6"
+    ],
+    "physical_or_allscale_claim": false
+  },
+  "target": {
+    "formula": "|partial_theta_c a_p(V)| <= C_L exp[-lambda Dfine(p,c)]",
+    "observable": "actual fine plaquette preimage in the original normalized first retained integral",
+    "domain": "original chi^(0) cutoff; boundary-free FULL first bare branch",
+    "parameter": "one dimensionless real coarse-bond group-angle direction of norm1",
+    "dimension": 4,
+    "L": "fixed source-admissible odd integer >11",
+    "uniformity": "volume, within the declared class with common source, chart, inverse and Hessian constants",
+    "coupling": "0<g0<=1; no negative g0 power from the response estimate when admitted margins are common",
+    "rate": "lambda = min(alpha,(delta0/8)/L)/2; alpha recomputed for ambient raw metric",
+    "constants_depend_on": [
+      "L",
+      "Lie group and fixed norm",
+      "source regularity/decay constants",
+      "common logarithm and implicit-inverse margins",
+      "common positive raw Hessian margin m",
+      "raw Hessian block bound B_H and interaction range R_H",
+      "finite carrier sizes and padding"
+    ]
+  },
+  "findings": [
+    {
+      "id": "F1",
+      "severity": "material",
+      "kind": "false_source_application_identity",
+      "files": [
+        "AXIAL-TANGENT1489.md",
+        "MIXED-SCORE1490.md",
+        "METRIC1492.md"
+      ],
+      "claim": "The Proposition9 relative Landau field already has the original prescribed averages, and a return fixed at all coarse roots yields the actual U1(V).",
+      "finding": "The Landau construction normalizes averaged gauge values, not values at coarse roots. Its image need not be in the original prescribed-average fiber. The proposed root-fixed return preserves the average of that image and cannot generally restore the prescribed V.",
+      "source_evidence": [
+        "CMP102 printed281 Proposition2 and Eq19-21",
+        "CMP99(1985)75-102 printed80-82, Eq1.29-1.32, fusionPDF218-220",
+        "CMP98 printed28 Eq62-63 and printed31 Eq87-92, fusionPDF306/309"
+      ],
+      "effect": "Original-gauge tangent and the original-gauge reading of kappa in1490 are not proved by1489.",
+      "surviving_repair": "The exact FULL normalized integral is gauge covariant/invariant after simultaneous background/raw/frame transformation; the original chi^(0) cutoff is invariant and no fixed exterior path remains. Evaluate the same scalar functional along the source Landau background.",
+      "repair_does_not_validate_false_identity": true
+    },
+    {
+      "id": "G1",
+      "severity": "substantive_admitted_application_gate",
+      "kind": "uniform_physical_hypotheses_not_certified",
+      "finding": "The common positive Hessian lower bound must hold throughout the original cutoff, not just at the critical point. Common analytic/logarithm/inverse margins and source regularity are required. Their physical availability or probability has not been derived here.",
+      "conditional_target_refuted": false,
+      "source": "CONTEXT-REVIEW1516 assumptions retained; source compactness/positivity alone is not a uniform certificate"
+    },
+    {
+      "id": "G2",
+      "severity": "literature_input_limit",
+      "kind": "kernel_proof_not_reproduced",
+      "finding": "CMP102 omits the calculation leading to Eq189. Eq189/Eq190 and Proposition9 are accepted as identified literature inputs at statement level. This audit does not certify the omitted proof.",
+      "conditional_target_refuted": false
+    }
+  ],
+  "known_updates_not_new_findings": [
+    {
+      "from": "1488",
+      "to": "1489",
+      "status": "correction_verified",
+      "detail": "Input factor (L^jprime eta)^(-d) cancels the source input cell measure in an ordinary one-coordinate derivative."
+    },
+    {
+      "from": "1490",
+      "to": "1491",
+      "status": "restricted_carrier_deduction_supported",
+      "detail": "Actual two-block contour geometry and selected-row determinant reduction yield finite raw action/Jacobian carriers for the first bare full branch."
+    }
+  ],
+  "checked_surviving_pieces": [
+    "actual reconstructed plaquette and normalized joint insertion coefficients",
+    "original full chi^(0) cutoff is a fixed product of independent raw norm balls",
+    "fixed-raw score identity with direct observable term and covariance; no moving cutoff term in theta",
+    "C_dot=-L h Q_dot C and h_dot=-L h Q_dot h on fixed selected subspace",
+    "nonlinear correction derivative with plus sign in I+N_x h and all explicit/argument derivatives",
+    "finite first-step reconstruction carriers and block factorization of nonlinear selected Jacobian",
+    "source constrained-response Eq184 and reconstruction Eq182 at statement level",
+    "correct input cell measure cancellation and physical eta factor",
+    "full-integral gauge pullback including actual insertion, cutoff, chart, Jacobians and frames",
+    "Hessian/Lipschitz/carrier transfer under block orthogonal raw rotations",
+    "actual mixed raw/coarse local derivative bound C_S kappa/g0 and primitive Lip <=gamma_L g0",
+    "g0 cancellation, with admitted margins held uniform",
+    "source-distance lower bound with one-step weights and finite padding",
+    "ambient metric finite range and volume-independent two-kernel convolution"
+  ],
+  "reading_depth": {
+    "eight_notes": "complete",
+    "context_report": "complete; prior analytic result used, not re-audited",
+    "cmp109": {
+      "text_printed_pages": [
+        "251-254",
+        "260-268",
+        "274-275"
+      ],
+      "visual_printed_pages": [
+        253,
+        254,
+        267
+      ],
+      "visual_pdf_pages": [
+        5,
+        6,
+        19
+      ]
+    },
+    "cmp102": {
+      "text_printed_pages": [
+        "277-282",
+        "287-289",
+        "297",
+        "305-309"
+      ],
+      "visual_printed_pages": [
+        281,
+        288,
+        307,
+        308
+      ],
+      "visual_pdf_pages": [
+        5,
+        12,
+        31,
+        32
+      ]
+    },
+    "cmp119": {
+      "text_printed_pages": [
+        "248-253"
+      ],
+      "additional_complete_image_read": [
+        247
+      ],
+      "visual_printed_pages": [
+        247,
+        248,
+        249,
+        250,
+        253
+      ],
+      "visual_pdf_pages": [
+        5,
+        6,
+        7,
+        8,
+        11
+      ]
+    },
+    "fusion_cmp96": {
+      "text_and_visual_printed_pages": [
+        223,
+        230,
+        231
+      ],
+      "visual_fusion_pdf_pages": [
+        331,
+        338,
+        339
+      ]
+    },
+    "fusion_cmp99_gauge_fixing_75_102": {
+      "text_selected_printed_pages": [
+        "77-83"
+      ],
+      "visual_printed_pages": [
+        80,
+        81,
+        82
+      ],
+      "visual_fusion_pdf_pages": [
+        218,
+        219,
+        220
+      ],
+      "bibliographic_distinction": "This is CMP102 reference[6], distinct from the CMP99 propagator paper on389-434."
+    },
+    "fusion_cmp98_averaging": {
+      "text_selected_printed_pages": [
+        "27-31",
+        "33-35",
+        "43-44 short excerpt"
+      ],
+      "visual_printed_pages": [
+        27,
+        28,
+        30,
+        31,
+        33
+      ],
+      "visual_fusion_pdf_pages": [
+        305,
+        306,
+        308,
+        309,
+        311
+      ]
+    },
+    "full_primary_proofs_audited": false,
+    "cmp102_189_derivation_reproduced": false,
+    "source_asserted_symmetric_averaging_extension": "retained as literature-level applicability, not rederived",
+    "temporary_extractions_and_renders": "C:/Trabajo/airr/2026-10-31_execution1524/review-tmp; excluded from durable/public packet"
+  },
+  "scope_exclusions": [
+    "Full evolving manuscript or any PDF/score",
+    "Repeating1501next-curvature/beta/logZaudit",
+    "Repeating1516reflectionanalyticproof",
+    "1493nextlawcovariancetheorem",
+    "Full source omitted189kernelproof unless actually reproduced",
+    "Largefieldhistory/allscale/globalmassgap",
+    "Numerical background/cutoff certificate"
+  ],
+  "additional_exclusions": [
+    "partial-history fixed-exterior gauge-pullback claim",
+    "certification of1489 original-gauge tangent",
+    "probability/nonemptiness of admitted class"
+  ],
+  "operations": {
+    "subagents_spawned": false,
+    "tests_or_builds_run": false,
+    "integer_checker_rerun": false,
+    "inputs_modified": false,
+    "sources_modified": false,
+    "manuscript_modified": false,
+    "publication": false,
+    "other_chat_modified": false
+  },
+  "immutable_inputs": {
+    "manifest": {
+      "file": "INPUT-MANIFEST1524.json",
+      "bytes": 6333,
+      "sha256": "917cb9c1b7d2b7bfb66e8450b8ffdd35276f9bd9229c986c7ae8c6d2cac64c24"
+    },
+    "notes": [
+      {
+        "file": "FIRST-T-INSERTION1485.md",
+        "original": "C:/Trabajo/airr/2026-10-30_execution1485/FIRST-T-INSERTION1485.md",
+        "bytes": 6655,
+        "sha256": "79d9d285ef63623d62a56995dfc3f334915af99b0a2ef3a05f8de98e2d0d6faf"
+      },
+      {
+        "file": "FIRST-T-SCORE1486.md",
+        "original": "C:/Trabajo/airr/2026-10-30_execution1486/FIRST-T-SCORE1486.md",
+        "bytes": 6435,
+        "sha256": "261223c0145c44f4b10e2a75c19a9a6708d753e9de0067071b8d35aee18c9015"
+      },
+      {
+        "file": "LIFT-RESPONSE1487.md",
+        "original": "C:/Trabajo/airr/2026-10-30_execution1487/LIFT-RESPONSE1487.md",
+        "bytes": 5535,
+        "sha256": "13e21c1fd12b9dc6b9b1cc5232c4af04b806b108e186cd6a64255938314f07d8"
+      },
+      {
+        "file": "BACKGROUND-RESPONSE1488.md",
+        "original": "C:/Trabajo/airr/2026-10-30_execution1488/BACKGROUND-RESPONSE1488.md",
+        "bytes": 6912,
+        "sha256": "3784d21bb6bd5174320d53a56012d1e07fe8afd9b1ca99717758dc84250d465b"
+      },
+      {
+        "file": "AXIAL-TANGENT1489.md",
+        "original": "C:/Trabajo/airr/2026-10-30_execution1489/AXIAL-TANGENT1489.md",
+        "bytes": 6675,
+        "sha256": "ac514a73bacc4896e08261c1be2296e5eb2af9265acf1284cf90e0607416e64d"
+      },
+      {
+        "file": "MIXED-SCORE1490.md",
+        "original": "C:/Trabajo/airr/2026-10-30_execution1490/MIXED-SCORE1490.md",
+        "bytes": 8778,
+        "sha256": "fecf8752af2c18387b95f4fc15d35860f6cc8087851f8ce3bda4010adc80837d"
+      },
+      {
+        "file": "CARRIERS1491.md",
+        "original": "C:/Trabajo/airr/2026-10-30_execution1491/CARRIERS1491.md",
+        "bytes": 5019,
+        "sha256": "3ba15e0f9ebba72952f18de5c06d0eb73cad285eeaabdead7d732b6527fe62a4"
+      },
+      {
+        "file": "METRIC1492.md",
+        "original": "C:/Trabajo/airr/2026-10-30_execution1492/METRIC1492.md",
+        "bytes": 5790,
+        "sha256": "577c4b717f966d56da36e1298a0752e9dc41394ff9297ff45505b3b98fc54521"
+      }
+    ],
+    "context": [
+      {
+        "file": "CONTEXT-REVIEW1516.md",
+        "sha256": "04ffc7f9ecdf52e6eeadf419f355d78c1c5015a1f434f4c58889c4d94dc2665a",
+        "bytes": 19156,
+        "scope": "Prior conditional analytic reflection assessment with F1/F2specifications;assume analytic lemma only if exact hypotheses verified;do not repeat this audit"
+      }
+    ],
+    "sources": [
+      {
+        "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-rg-I-cmp109-1104116842.pdf",
+        "bytes": 5490078,
+        "sha256": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+        "doi": "10.1007/BF01215223",
+        "selected_printed_pages": "252-254,260-268,274-275",
+        "scope": "Existing read-only primary source; do not copy PDF to D/public packet;selected statements only unless actually audited"
+      },
+      {
+        "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/cmp102_variational/1104114383.pdf",
+        "bytes": 3355501,
+        "sha256": "838056b5c578f81d058deb3d394c66d934690e3b94c6cf2956534ec6d211b541",
+        "doi": "10.1007/BF01229381",
+        "selected_printed_pages": "277-282,287-289,297,305-309;Eq179-190",
+        "scope": "Existing read-only primary source; do not copy PDF to D/public packet;selected statements only unless actually audited"
+      },
+      {
+        "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-convergent-cmp119-from-fusion.pdf",
+        "bytes": 4172827,
+        "sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+        "doi": "10.1007/BF01217741",
+        "selected_printed_pages": "248-253;first integral1.26",
+        "scope": "Existing read-only primary source; do not copy PDF to D/public packet;selected statements only unless actually audited"
+      },
+      {
+        "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balabanfusion.pdf",
+        "bytes": 35847780,
+        "sha256": "00cc6b218dcf0e1c2884e135caa1d57b3591df036540b685e7440f30cbd4ff16",
+        "doi": "10.1007/BF01240221",
+        "selected_printed_pages": "CMP96 printed223,230-231 Eq2.46; fusionPDF339",
+        "scope": "Existing read-only primary source; do not copy PDF to D/public packet;selected statements only unless actually audited"
+      }
+    ]
+  },
+  "review_artifact": {
+    "file": "REVIEW1524.md",
+    "bytes": 37479,
+    "sha256": "a5da1b699524ff2ea30f9b5d0023e3eb494218ea2e7b3e12b4753d28d51b8ee0"
+  }
+}

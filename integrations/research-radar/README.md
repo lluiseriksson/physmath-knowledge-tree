@@ -207,3 +207,5 @@ The same [dynamic-seed note](notes/2026-10-30-dynamic-seed.md) now qualifies hid
 Werner research now has a [physical-coverage gate](evidence/2026-10-30-werner-coverage/README.md): an earlier pinned preprint claim must be reconciled before further QSS signed-operator work. Selected source reading is separate from certificate validation; no new paper or score follows.
 
 The [consolidated hypothesis audit](evidence/2026-10-30-hypothesis-audit/README.md) closes an unscored aligned-factor review with all9reservations and separates Werner code/structural reading from an unexecuted exact certificate. Two existing candidates remain speculative; no new paper, score or formal promotion.
+
+The [exact first-score audit1524](evidence/2026-10-31-first-score-audit/README.md) now preserves a material rejection of the old gauge-fiber identity and a different conditional FULL-integral scalar repair. The original input/error remains visible; physical margins and global transport stay open.
