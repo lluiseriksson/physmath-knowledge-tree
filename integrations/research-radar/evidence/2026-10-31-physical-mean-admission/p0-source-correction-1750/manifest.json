@@ -1,0 +1,33 @@
+{
+  "scope": "Own exact frozen derivation, full adverse unscored assessment, separately frozen correction manifest and historical before-note. No foreign source PDF/image/corpus, private law file, manuscript, Capacity or credentials copied. Local paths in provenance do not grant access.",
+  "files": [
+    {
+      "path": "OLD-FINE-P0-SUPPORT1750.json",
+      "sha256": "ddbdf0bef4795a417428d4b6f986b2682db744f3fc6f8b8f1705ff194e4d01af",
+      "bytes": 6930
+    },
+    {
+      "path": "ASSESSMENT1750.json",
+      "sha256": "346635d858f680ba6cc62bf5e5adfabc91b216730559056a7e98d21e0dff934e",
+      "bytes": 30176
+    },
+    {
+      "path": "PUBLIC-CORRECTION1750.json",
+      "sha256": "88b739b57ed1900fcf8b17646ee60f33f16c7186cd38e7a16e2b19db30eac2a9",
+      "bytes": 1090
+    },
+    {
+      "path": "PUBLIC-NOTE-BEFORE1750.txt",
+      "sha256": "30eeda9b3f689f269ee0e61cd2a49202ce1dec2e2dc8121e3430f6f6a2b3961c",
+      "bytes": 14358
+    }
+  ],
+  "main_findings": 13,
+  "separate_public_correction_findings": 7,
+  "review_context": "Requested Astra/xhigh in separate context, actual model identity/effort/independence unauthenticated. AI technical review, not peer review or editorial decision. Exact main input has a material source-attribution defect; no clean approval. Supplement reviews changed source assertions only.",
+  "historical_before_git_commit": "74be4d4c04d9605687aebdab12505cbfb5aa2369",
+  "note_after_sha256": "18283f1fa3c36987e29e660d339527a863f9676099b6b9c73cabc4303bc8df8a",
+  "levels": "Source definitions: literature; own local support inference conditional, not formal; no heuristic/speculative bridge promoted.",
+  "no_graph_source_registry_candidate_count_or_dependency_change": true,
+  "before_delivery_note": "The historical Markdown bytes are delivered unchanged with .txt extension so relocated relative links are not treated as live links; original filename remains in the frozen assessment manifest."
+}

@@ -1,0 +1,463 @@
+{
+  "execution": 1750,
+  "assessment_type": "ONE_NEW_UNSCORED_EXACT_INPUT_TECHNICAL_REVIEW",
+  "status": "COMPLETE_WITH_ADVERSE_SOURCE_ATTRIBUTION_FINDING",
+  "language": "es",
+  "input": {
+    "path": "C:/Trabajo/airr/2026-10-31_execution1750/OLD-FINE-P0-SUPPORT1750.json",
+    "expected_sha256": "ddbdf0bef4795a417428d4b6f986b2682db744f3fc6f8b8f1705ff194e4d01af",
+    "verified_sha256": "ddbdf0bef4795a417428d4b6f986b2682db744f3fc6f8b8f1705ff194e4d01af",
+    "hash_match": true,
+    "input_modified": false
+  },
+  "requested_configuration": {
+    "model": "gpt-6-astra",
+    "reasoning_effort": "xhigh",
+    "actual_model_identity_authenticated": false,
+    "actual_reasoning_effort_authenticated": false,
+    "reviewer_independence_authenticated": false,
+    "statement": "Configuración solicitada indicada únicamente como tal. No se aporta autenticación de identidad, esfuerzo ni independencia."
+  },
+  "review_protocol": {
+    "one_new_review": true,
+    "score": null,
+    "target_score": null,
+    "restarted_for_better_result": false,
+    "prior_assessments_read": false,
+    "full_manuscript_read": false,
+    "new_agents_spawned": false,
+    "paid_services_used": false,
+    "publication_performed": false,
+    "source_files_modified": false,
+    "input_files_modified": false,
+    "only_output_file": "C:/Trabajo/airr/2026-10-31_execution1750/ASSESSMENT1750.json",
+    "pdf_method": "Extracción de texto en memoria y renderizados fitz transmitidos como imágenes en memoria. No se guardaron corpus, páginas PNG ni copias PDF.",
+    "background_scope": "Se leyeron solamente los dos antecedentes matemáticos1749 fijados. Sus enlaces internos a evaluaciones o antecedentes adicionales no se siguieron. La revisión no reabre ni sustituye las evaluaciones históricas.",
+    "no_admission": "No es evaluación del manuscrito completo, PDF, Capacity ni admisión1642."
+  },
+  "verdict": {
+    "code": "LOCAL_P0_SUPPORT_VALID_BUT_EXACT_INPUT_HAS_FALSE_SOURCE_LIFT_ATTRIBUTION",
+    "exact_frozen_derivation_unqualified_pass": false,
+    "target_local_P0_implication": "VERIFIED_WITH_ORIGINAL_S_AND_DECLARED_COMPATIBILITY",
+    "finite_sector_sum_at_fixed_X": "VERIFIED_AT_ORIGINAL_INDICATOR_OR_WEAK_MEASURE_LEVEL",
+    "original_lift_formula_as_quoted_by_input": "FALSE_SOURCE_ATTRIBUTION",
+    "whole_fixed_family_O_e1": "NOT_ESTABLISHED",
+    "complete_K_old_or_Omega0_dictionary": "NOT_ESTABLISHED",
+    "explanation": "El factor P0 original sí controla todos los plaquettes de la categoría fina inalterada y cercana declarada, usando el segundo factor del lift realmente impreso y el buffer1.10. La suma finita a X fijo conserva esa restricción. Sin embargo, el input atribuye a p246 una fórmula de P1^1 que la página no imprime. No se acepta como derivación íntegramente exacta de la fuente y no se corrige el input. La discrepancia alcanza cualquier intento de importar del antecedente1749S una exclusión de P1 basada solo en esa lectura; no destruye el argumento P0 autónomo."
+  },
+  "source_bindings_verified": [
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-convergent-cmp119-from-fusion.pdf",
+      "sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+      "matches": true,
+      "primary": true,
+      "text_pages_read": [
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258
+      ],
+      "partially_visible_text_pages": [
+        250,
+        251
+      ],
+      "full_pages_visually_inspected": [
+        245,
+        246,
+        247,
+        248
+      ],
+      "magnified_regions": [
+        "p246 ecuación1.1, incluido el dominio del supremo",
+        "p246 definición final de P1^1, incluidos ambos subíndices y las ampliaciones"
+      ],
+      "relevant_items": [
+        "1.1",
+        "1.2",
+        "1.3",
+        "1.4",
+        "1.6",
+        "1.8",
+        "1.10",
+        "1.11",
+        "1.12",
+        "1.14",
+        "1.15",
+        "2.2",
+        "2.4",
+        "2.5"
+      ],
+      "entire_source_proof_audited": false
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-rg-I-cmp109-1104116842.pdf",
+      "sha256": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+      "matches": true,
+      "primary": true,
+      "text_pages_read": [
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259
+      ],
+      "full_pages_visually_inspected": [
+        251
+      ],
+      "relevant_items": [
+        "convención de dominios/incidencia p251",
+        "0.3",
+        "0.4",
+        "0.11",
+        "0.12",
+        "0.18",
+        "0.20"
+      ],
+      "entire_source_proof_audited": false
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/cmp102_variational/1104114383.pdf",
+      "sha256": "838056b5c578f81d058deb3d394c66d934690e3b94c6cf2956534ec6d211b541",
+      "matches": true,
+      "primary": true,
+      "text_pages_read": [
+        277,
+        278,
+        279
+      ],
+      "full_pages_visually_inspected": [
+        277,
+        278
+      ],
+      "relevant_items": [
+        "convención de al menos un vértice p277",
+        "condición7 y distinción incidencia/contención p278",
+        "Theorem1 p279"
+      ],
+      "entire_source_proof_audited": false
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1559/LAW-BINDING1559.json",
+      "sha256": "a78244cb62773f907346968b16470892a00f1405219d0e9752f17b578af806dd",
+      "matches": true,
+      "primary": false,
+      "read_scope": "Archivo completo como fijación de la ley preservada; no como prueba de sus hipótesis."
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1749/OUTER-DELTA-OLD-STRATA1749.json",
+      "sha256": "ec4f6d0bc5bfc208e15f3d9e69557694be827bcc8944ac1aa5b106d490962e18",
+      "matches": true,
+      "primary": false,
+      "read_scope": "Antecedente matemático completo; ninguna evaluación ni referencia interna adicional abierta."
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1749/OUTER-BOUNDARY-WITNESS1749S.json",
+      "sha256": "9e7c5b87fa24a03c9a59930d6e639f6c8d257b38f8407526dc12142e6f4f7444",
+      "matches": true,
+      "primary": false,
+      "read_scope": "Antecedente matemático completo; ninguna evaluación ni referencia interna adicional abierta."
+    }
+  ],
+  "findings": [
+    {
+      "id": "F1",
+      "severity": "MATERIAL_ADVERSE",
+      "status": "FALSE_LITERAL_SOURCE_ATTRIBUTION",
+      "claim": "El input dice que P1^1 es el lift de (P1')^c intersección (P0'~2)^c y atribuye esa fórmula a CMP119p246.",
+      "evidence": "La imagen ampliada de p246 imprime P1^1 = ((P0'~)^c intersección (P0'~2)^c)^(1). El primer subíndice visible es 0, no 1, y el primer factor lleva ampliación ~. La línea previa sí define P1' como unión de h-cubos que intersectan P1.",
+      "assessment": "Hay una discordancia real entre la fórmula impresa y la atribuida. El hecho de que P1' se defina inmediatamente antes sugiere una posible errata del original, pero no prueba su corrección pretendida. No se cambia P0 por P1 ni se elimina/restaura una ampliación por conveniencia.",
+      "consequence": "Si S se interpreta como B(P1^1) ORIGINAL, se puede usar1.10. Si se interpreta como el conjunto alternativo descrito por la paráfrasis del input, su igualdad con el S original y la aplicación de1.10 a él no están demostradas.",
+      "scope": "Impide aceptar sin reservas toda la derivación congelada como transcripción exacta. No basta, por sí solo, para refutar P0-near.",
+      "source": "CMP119p246, definición final de P1^1, inspección visual ampliada."
+    },
+    {
+      "id": "F2",
+      "severity": "VERIFIED_LOCAL_RESULT",
+      "status": "P0_EXCLUSION_INDEPENDENT_OF_F1_FIRST_FACTOR",
+      "claim": "El S original está separado de P0 y de su cubierta de h-cubos.",
+      "evidence": "El segundo factor impreso del lift es (P0'~2)^c. P0' es la unión de h=LMR1 cubos que intersectan P0, por lo que P0 está contenido en P0'.",
+      "reasoning": "Sea A el conjunto fino anterior al lift en la fórmula realmente impresa. A está contenido en (P0'~2)^c cualquiera que sea el primer factor. Con las particiones compatibles de unidades L y de h-cubos, B(A^(1)) reproduce el dominio de bloques correspondiente; los márgenes declarados absorben cualquier convención de incidencia en las fronteras. Por ello S original es disjunto de P0, y de P0'~2 en la interpretación por bloques.",
+      "consequence": "Este es un argumento autónomo para P0. No necesita inferir exclusión de P1 ni confiar en1749S.",
+      "source": "CMP119pp245-246; CMP109pp251-252."
+    },
+    {
+      "id": "F3",
+      "severity": "VERIFIED_GEOMETRY",
+      "status": "BUFFER_SUFFICIENT_FOR_DECLARED_CATEGORY",
+      "claim": "El collar fino con r+2d+2<2h permanece dentro de S original.",
+      "evidence": "CMP119p248 imprime Omega1=(Q1'~2)^c intersección (B(P1^1))^(~-3) en1.10 y declara una separación mínima 2LMR1 respecto a la unión de regiones grandes.",
+      "reasoning": "Con X=Omega1 y S original, X está en la erosión de tres capas de h-cubos de S. En la retícula compatible, una vecindad de radio fino l1 estrictamente menor que2h, con los márgenes finitos indicados, permanece en S. Si una esquina q del plaquette está a distancia<=r de X, entonces q pertenece a S. La condición r+2d+2<2h es más que suficiente para las incidencias finitas involucradas.",
+      "qualifications": [
+        "Se emplean cubos originales compatibles y distancia del toro o un lift embebido.",
+        "No se usa distancia euclídea falsa a través de una costura.",
+        "La afirmación es sobre S original, no sobre S alternativo definido por la atribución errónea F1.",
+        "X vacío o sin enlaces fijos puede dar una categoría vacía; no se demuestra aquí la existencia de un sector no vacío con X no trivial."
+      ],
+      "source": "CMP119p248,1.10."
+    },
+    {
+      "id": "F4",
+      "severity": "VERIFIED_INCIDENCE",
+      "status": "NO_CELL_PARTITION_COUNTEREXAMPLE",
+      "claim": "Una esquina q fuera de P0 tiene una celda original D0 buena cuyo indicador controla p.",
+      "evidence": "CMP109p251 identifica el dominio con plaquettes que lo intersectan; CMP102p277 usa al menos una esquina. CMP119p245 fija la partición de celdas LM2R0, su compatibilidad y la ampliación ~ por una capa de cubos M2R0. La1.1 de p246 controla el supremo de curvatura en el cubo ampliado D0~ para cada celda D0 del complemento de P0.",
+      "reasoning": "P0 es una unión de celdas completas de la partición original. Un punto fino q fuera de P0 está en una celda buena D0; en las retículas de centros compatibles, las fronteras continuas de celdas no generan una asignación contradictoria del punto fino. Si q es esquina de p, p pertenece al conjunto de plaquettes incidentes a D0. Además, todo plaquette fino incidente queda dentro de la ampliación D0~ usada efectivamente en1.1, cuyo espesor M2R0 es al menos una unidad fina en el régimen fuente.",
+      "warning_preserved": "Pertenecer al conjunto de plaquettes incidentes NO significa que las cuatro esquinas estén en el interior continuo de D0. CMP102p278 distingue expresamente p' en Lambda_j de p' contenido en Lambda_j. La demostración no puede fundarse en esa falsa equivalencia; el input la evita y el factor original tiene además el halo mencionado.",
+      "assessment": "No se encontró un fallo de partición de celdas que deje sin factor a un p de la categoría declarada. No se sustituye la partición por celdas móviles, ni se supone que cada cuadrado cabe en una sola celda sin halo.",
+      "source": "CMP119pp245-246,1.1; CMP109p251; CMP102pp277-278."
+    },
+    {
+      "id": "F5",
+      "severity": "VERIFIED_LOCAL_RESULT",
+      "status": "ORIGINAL_CHI0_IMPLIES_STRICT_CURVATURE_BOUND",
+      "claim": "En cada sector original no nulo, |U(dp)-I|<e0 para todos los p de la categoría cercana declarada.",
+      "reasoning": "Por F2-F4, D0 es una celda del complemento de P0 y el supremo original en1.1 incluye p. El producto chi0(P0^c) de1.6 contiene su factor pequeño. Un término de sector con peso de indicador no nulo obliga a satisfacer ese factor, y por tanto la desigualdad estricta.",
+      "not_used": [
+        "pequeñez del acoplamiento por sí sola",
+        "chi1 de otro mínimo",
+        "Delta_out",
+        "media física",
+        "una nueva cota de norma de enlaces",
+        "un nuevo cutoff"
+      ],
+      "scope": "Afirmación del indicador original, en la categoría local y antes de cualquier cambio de ley que pudiera alterar factores.",
+      "source": "CMP119pp246-247,1.1 y1.6."
+    },
+    {
+      "id": "F6",
+      "severity": "VERIFIED_IDENTITY",
+      "status": "EXACT_TRANSFER_TO_V0_FOR_UNCHANGED_LINKS",
+      "claim": "|V0(dp)-I|<e0 en la categoría definida.",
+      "reasoning": "Cada una de las cuatro coordenadas de enlace está en E_fix, el complemento por incidencia de los enlaces con al menos un extremo en X. Ambas puntas están fuera de X y U(b)=V0(b) para esas coordenadas. El producto ordenado con la orientación original de la frontera es idéntico: U(dp)=V0(dp). No se necesita conmutatividad.",
+      "exclusions": [
+        "Un plaquette con un enlace integrado no pertenece a la categoría.",
+        "Un plaquette que contiene enlaces refinados o una mezcla vieja/nueva no recibe esta identidad.",
+        "No se identifica el V0 exterior con el mínimo local de chi1."
+      ],
+      "source": "CMP119p248, definición de V0 y1.12; CMP109p251; CMP102p277."
+    },
+    {
+      "id": "F7",
+      "severity": "VERIFIED_ARITHMETIC_AND_CARRIER_BOUND",
+      "status": "R_OVER_H_AND_DECLARED_SUBFAMILY_SUFFICIENT",
+      "claim": "El carrier C_X con distancia gruesa king<=1 queda cubierto por r=2dL+2d y por la subfamilia indicada.",
+      "reasoning": "Un punto fino de un bloque vecino king puede compararse con un punto de su bloque activo: el desplazamiento de centros aporta a lo sumo L por coordenada y los desplazamientos dentro de bloques aportan a lo sumo otro L. Así d1(z,X)<=2dL es una cota conservadora. Una incidencia de plaquette añade solo un margen fino acotado, cubierto por el +2d de r. Entonces r+2d+2=2dL+4d+2. El supuesto escrito h>2dL+4d+2 es más fuerte de lo necesario para r+2d+2<2h, pero válido.",
+      "parameter_audit": {
+        "source_L": "CMP109p251: L entero impar>11; L>=13 impar cumple.",
+        "source_M": "CMP119p245: M y M2 son potencias de L, M1<M2<M y compatibilidad de particiones; estas restricciones siguen siendo necesarias.",
+        "family": "M2=L^2 M1 y M>=L^3 M2 implican h=LMR1>=L^6 M1R1.",
+        "d4_minimal_arithmetic_witness": {
+          "L": 13,
+          "M1": 1,
+          "M2": 169,
+          "M": 371293,
+          "R1": 1,
+          "h": 4826809,
+          "r": 112,
+          "r_plus_2d_plus_2": 122,
+          "two_h": 9653618
+        },
+        "witness_warning": "M1=1 se usa solo como cota inferior aritmética. No se declara que M1=1 satisfaga los teoremas fuente; el input exige M1 fuente-admisible. Cualquier M1>=1 admisible aumenta el margen."
+      },
+      "limits": "No instancia simultáneamente todos los parámetros de la ley fija, ni garantiza que un toro dado tenga suficientes celdas o un X no trivial. No prueba que C_X sea el Omega0 o todo el collar de un teorema variacional/propagador.",
+      "source": "CMP109pp251-254 para bloques y caminos; CMP119pp245-248 para escalas y buffer."
+    },
+    {
+      "id": "F8",
+      "severity": "VERIFIED_DEPENDENCY_SCOPE",
+      "status": "CARRIER_IS_LOCAL_FUNCTIONAL_DEPENDENCY_ONLY",
+      "claim": "C_X sirve como carrier finito de dependencia activa, sin identificar el soporte del teorema.",
+      "reasoning": "El término de Wilson que varía con enlaces activos usa plaquettes incidentes a X; en una esquina puede alcanzar un bloque diagonal, de modo que vecinos king son adecuados. Los caminos G(y,x), sus traslados de fila gruesa y los términos de gauge activos viven en el bloque de un extremo o en la unión de los dos bloques de extremos. El carrier dado cubre esas dependencias con las incidencias finitas.",
+      "limits": [
+        "Esto no elimina el Wilson exterior, factores exteriores, marcas ni pesos sectoriales de la densidad completa.",
+        "No prueba localidad del propagador duro ni regularidad en el Omega0 admitido por CMP102.",
+        "No convierte todo Gamma0=Omega1^c en campo pequeño."
+      ],
+      "source": "CMP109pp252-254,0.3,0.4,0.11,0.12; CMP119pp247-248,1.7 y1.12; CMP102pp277-279."
+    },
+    {
+      "id": "F9",
+      "severity": "VERIFIED_FINITE_SUM",
+      "status": "FIXED_X_SECTOR_SUPPORT_PRESERVED",
+      "claim": "La suma sobre sectores originales que dan el mismo X conserva P0-near.",
+      "reasoning": "A X fijo, E_fix, la categoría de plaquettes y su predicado dependen de X y del campo exterior V0 retenido, no del nombre del sector. Si el predicado falla para un p de la categoría, cada término original correspondiente a X lleva un factor chi0 igual a cero. La suma de ese número finito de términos sigue siendo cero. La red finita y las particiones finitas dan una descomposición finita P0,P1,Q1.",
+      "caveats": [
+        "No se requiere positividad ni masa sectorial positiva.",
+        "No se divide por una función de partición sectorial.",
+        "No se intercambia una expansión infinita con integrales.",
+        "La afirmación se conserva bajo la reagrupación exacta1.11 con TODOS sus factores; no se atribuye por separado a zeta un soporte que solo tiene el producto completo.",
+        "La fuente elimina algunos chi0 redundantes en Omega1~ bajo su jerarquía A0 suficientemente mayor que A1. La igualdad fuente debe retenerse íntegra; omitir arbitrariamente un indicador no está autorizado.",
+        "El soporte aquí significa la restricción del indicador/densidad o de la medida original donde ésta está definida. No se demuestra que el soporte topológico cerrado de una distribución esté contenido en el conjunto abierto de desigualdades estrictas.",
+        "Tras integrar y eliminar V0, no se afirma un predicado en una variable que ya no se conserva."
+      ],
+      "source": "CMP119pp246-248,1.1,1.4,1.8,1.10-1.11."
+    },
+    {
+      "id": "F10",
+      "severity": "VERIFIED_CONDITIONAL_ALGEBRA",
+      "status": "E0_OVER_E1_BOUND_CORRECT_IF_SAME_LAW_HYPOTHESES_HOLD",
+      "claim": "Bajo las hipótesis de conversión escritas, e0<=sqrt(3/2)*2^p0*e1.",
+      "derivation": [
+        "Poner b=beta_ref*g0^2. La ley fija da g1_ref^2=g0^2/(1-b).",
+        "Si -1/2<=b<=1/2, entonces (2/3)g0^2<=g1_ref^2<=2g0^2 y g0/g1_ref<=sqrt(3/2).",
+        "q1=log(g1_ref^-2)=q+log(1-b)>=q-log2>=q/2>0 si q>=max(1,2log2).",
+        "Con el mismo A0, el mismo p0>0 y e_j=A0*g_j*q_j^p0, e0/e1=(g0/g1_ref)*(q/q1)^p0<=sqrt(3/2)*2^p0."
+      ],
+      "source_qualification": "CMP119p246 efectivamente utiliza e0=g0 p0(g0), e1=g1 p0(g1) y la primera elección logarítmica, con exigencias fuente más fuertes sobre p0 (entero y al menos5r). p0>0 basta para la desigualdad algebraica, pero no sustituye esas exigencias fuente.",
+      "source": "CMP119pp245-246; LAW-BINDING1559."
+    },
+    {
+      "id": "F11",
+      "severity": "OPEN_REQUIRED_GATE",
+      "status": "FIXED_G1_REFERENCE_CORRESPONDENCE_AND_BETA_WINDOW_UNPROVED",
+      "claim": "La conversión anterior no produce un teorema O(e1) de toda la familia fija.",
+      "evidence": "LAW-BINDING1559 conserva beta_ref y g1_ref^-2=g0^-2-beta_ref, pero no da valor numérico ni prueba de beta acotada. También deja sin identificar el E1 histórico y sin resolver la discrepancia de prefactor fuente.",
+      "assessment": "No se ha demostrado ni la ventana de b ni que el indicador e1 original use exactamente g1_ref de la ley preservada. Las ecuaciones fuente de acoplamiento y las estimaciones del g1 fuente no autentican por sí solas esta identificación.",
+      "prohibited_inference_avoided": "No se elige un beta distinto, un nuevo g1, otro cutoff o una nueva familia de dominio fijo. P0-near usa e0 original y no depende de esta conversión.",
+      "source": "LAW-BINDING1559 completo; CMP109pp255-256,0.18 y0.20; CMP119pp246,253,255-256."
+    },
+    {
+      "id": "F12",
+      "severity": "ADVERSE_DEPENDENCY_LIMIT",
+      "status": "BACKGROUND_1749S_P1_EXCLUSION_NOT_CERTIFIED_BY_LITERAL_LIFT",
+      "claim": "El antecedente1749S afirma que el lift de p246 excluye los conjuntos malos P0 y P1, lo que convierte cierto D' en celda P1 buena.",
+      "assessment": "La fórmula literalmente impresa que se ha inspeccionado no demuestra exclusión de P1: sus dos factores muestran P0'. La definición previa de P1' no resuelve por sí sola la discordancia. Por tanto no se puede importar aquí, como hecho fuente ya demostrado, la conclusión P1-buena de1749S mediante esa fórmula.",
+      "consequence_for_this_review": "No se usa ese paso para P0-near. El segundo factor de P0 basta autónomamente. Esta revisión conserva el defecto que afecta al uso del antecedente; no reabre, cambia ni reemplaza sus informes históricos ni adjudica una nueva evaluación global de1749S.",
+      "source": "CMP119p246; OUTER-BOUNDARY-WITNESS1749S, como antecedente matemático."
+    },
+    {
+      "id": "F13",
+      "severity": "PRESERVED_BOUNDARIES",
+      "status": "NO_EXTENSION_TO_UNDECLARED_PLAQUETTES_OR_THEOREMS",
+      "assessment": "Todos los límites sustantivos declarados en1750 son necesarios y se mantienen.",
+      "exclusions_and_gates": [
+        "Plaquettes viejos lejanos, incluidos los que caen en P0, quedan fuera del resultado.",
+        "Plaquettes con enlaces integrados, refinados o híbridos quedan fuera de la identidad U(dp)=V0(dp).",
+        "La clasificación completa de interfaces viejas/nuevas y el control de stencils híbridos no están demostrados.",
+        "No se ha identificado el Omega0/collar real de CMP102 o de los resultados de propagadores con C_X.",
+        "No se ha probado la identificación entre medias/mínimos viejos y físicos ni sus cartas logarítmicas.",
+        "No hay prueba nueva sobre source190/gauge, absorciones por componente, sumas marcadas conectadas, normalizadores, historia o admisión física.",
+        "Las deltas mantienen el significado original en cartas/medidas débiles; no se suministra un teorema nuevo de trazas o pullbacks.",
+        "No hay nuevo paper, nota numérica, evaluación de manuscrito/PDF/Capacity ni admisión1642."
+      ],
+      "source": "CMP102pp277-279 para condiciones geométricas y regularidad; alcance expreso del input y ley1559."
+    }
+  ],
+  "falsifier_audit": {
+    "original_surviving_sector_with_near_unchanged_p_lacking_P0_factor": "No encontrado; F2-F6 muestran por qué no puede ocurrir bajo las hipótesis de compatibilidad y el S original.",
+    "incompatible_incidence_or_partition_counterexample": "No encontrado para las convenciones primarias comprobadas. Una lectura de contención continua sin incidencia sería falsa, pero no es la convención necesaria.",
+    "actual_adverse_finding": "Fórmula del lift atribuida falsamente a la fuente; no se oculta ni corrige.",
+    "no_counterexample_claimed_outside_checked_scope": true
+  },
+  "limits_of_review": [
+    "Lectura técnica local de las fuentes fijadas y prueba matemática de los pasos relevantes; no auditoría de todas las demostraciones de Balaban.",
+    "No prueba formal ni compilación de un desarrollo formal.",
+    "La palabra verificado en el resultado local se limita a las hipótesis declaradas, las convenciones primarias inspeccionadas y la ley original con factores conservados.",
+    "No hay testigo construido de no vacuidad para cada X o cada elección finita del toro.",
+    "No se autentican modelo, esfuerzo ni independencia.",
+    "No se han consultado evaluaciones previas; no hay nota ni objetivo de nota."
+  ],
+  "final_summary": "P0-near y su preservación por la suma sectorial finita a X fijo se sostienen en el alcance declarado. El input no es íntegramente fiel a la fuente: su fórmula de P1^1 difiere literalmente de CMP119p246. El segundo factor impreso basta para P0, pero la exclusión de P1 usada por1749S no queda certificada por esa lectura. No se obtiene Omega0, K_old completo ni O(e1) de la familia fija.",
+  "supplement_public_assessment": {
+    "scope": "Separately frozen proposed public correction, added to the same ongoing review. Only changed source-reading assertions in the replaced paragraph and the newly added1750 section are assessed. No historical assessment is reopened.",
+    "manifest": {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1750/PUBLIC-CORRECTION1750.json",
+      "expected_sha256": "88b739b57ed1900fcf8b17646ee60f33f16c7186cd38e7a16e2b19db30eac2a9",
+      "verified_sha256": "88b739b57ed1900fcf8b17646ee60f33f16c7186cd38e7a16e2b19db30eac2a9",
+      "match": true
+    },
+    "before": {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1750/PUBLIC-NOTE-BEFORE1750.md",
+      "verified_sha256": "30eeda9b3f689f269ee0e61cd2a49202ce1dec2e2dc8121e3430f6f6a2b3961c",
+      "matches_manifest": true
+    },
+    "proposed": {
+      "path": "C:/Trabajo/physmath-knowledge-tree/physical-mean-admission1728/integrations/research-radar/notes/2026-10-31-physical-mean-admission.md",
+      "expected_sha256": "18283f1fa3c36987e29e660d339527a863f9676099b6b9c73cabc4303bc8df8a",
+      "verified_sha256": "18283f1fa3c36987e29e660d339527a863f9676099b6b9c73cabc4303bc8df8a",
+      "matches_manifest": true,
+      "reviewed_changed_lines": [
+        63,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84
+      ]
+    },
+    "main_input_reverified_sha256": "ddbdf0bef4795a417428d4b6f986b2682db744f3fc6f8b8f1705ff194e4d01af",
+    "main_report_before_supplement_sha256": "a5e500abbf0c289fff57f612eae1ee4526a668e8a40df0491df9363c7324319d",
+    "main_report_status_at_append": "Written but not delivered/frozen. Main findings and verdict retained unchanged; this section is additive.",
+    "verdict": "CHANGED_SOURCE_CORRECTION_AND_LOCAL_P0_STATEMENTS_SUPPORTED_WITH_STATED_SCOPE",
+    "exact_main_input_clean_approval_inherited": false,
+    "reviewed_findings": [
+      {
+        "id": "SP1",
+        "result": "SUPPORTED",
+        "statement": "El párrafo corregido identifica (P0'~)^c y (P0'~2)^c como factores literalmente impresos.",
+        "basis": "Coincide con la inspección visual de CMP119p246 y F1. Reconoce explícitamente que la lectura previa (P1')^c no es la fórmula mostrada."
+      },
+      {
+        "id": "SP2",
+        "result": "SUPPORTED_AND_NECESSARY",
+        "statement": "Se retira la deducción de pertenencia P1-pequeña fundada solo en esa fórmula.",
+        "basis": "El segundo factor excluye P0, no P1, y la lectura literal del primero tampoco ofrece exclusión de P1. La corrección no pretende reparar silenciosamente una errata fuente ni refutar los teoremas publicados."
+      },
+      {
+        "id": "SP3",
+        "result": "SUPPORTED_IN_LOCAL_DECLARED_SCOPE",
+        "statement": "El argumento P0 es separado y usa el buffer original, incidencia y halo de la celda.",
+        "basis": "Coincide con F2-F9. La proposición nueva no hereda una aprobación íntegra del input1750 ni afirma la fórmula equivocada. Los cuantificadores siguen limitados a los sectores originales no nulos y a los plaquettes finos inalterados del vecindario declarado."
+      },
+      {
+        "id": "SP4",
+        "result": "LIMITS_ACCURATELY_PRESERVED",
+        "statement": "La corrección excluye interfaces viejas/refinadas, exterior global, identificación de Omega0 y conversión de ley fija e0/e1.",
+        "basis": "Coincide con F6-F13. No extiende la cota a stencils híbridos ni transforma la desigualdad condicional en admisión física."
+      },
+      {
+        "id": "SP5",
+        "result": "HISTORICAL_ASSERTIONS_NOT_INDEPENDENTLY_AUDITED",
+        "statement": "El nuevo texto se refiere a informes1747/1748 no modificados y a una valoración favorable previa de1749S.",
+        "basis": "No se han abierto aquellos informes ni comprobado su contenido, valoración o integridad. Se evalúa aquí la necesidad matemática de la limitación y la política declarada de conservarlos; no se autentica la descripción histórica de informes excluidos del alcance.",
+        "consequence": "La aceptación del suplemento no debe presentarse como una nueva revisión, ratificación o autenticación de esos informes."
+      },
+      {
+        "id": "SP6",
+        "result": "UNCHANGED_CONTEXT_NOT_REASSESSED",
+        "statement": "Las frases del párrafo sobre K4, la construcción de gauge, ambas medias y el control de cuatro aristas permanecen idénticas al before.",
+        "basis": "Se usó un diff de contexto cero. Su permanencia en una línea reemplazada no constituye una auditoría nueva ni una ratificación de esos cálculos anteriores."
+      },
+      {
+        "id": "SP7",
+        "result": "PRESERVATION_CLAIM_REQUIRES_ACTUAL_DELIVERY",
+        "statement": "El suplemento dice que la evaluación exacta y sus calificaciones se preservan con la evidencia.",
+        "basis": "Este informe preserva los hallazgos del input1750 y añade el suplemento sin sustituirlos. La conservación futura en la entrega o PR es una acción posterior del agente principal, no ejecutada ni verificada por esta revisión."
+      }
+    ],
+    "limitations": [
+      "No se modificaron nota propuesta, manifiesto ni inputs.",
+      "No se leyó ni reevaluó el resto de la nota.",
+      "No se reabrieron informes históricos.",
+      "No se efectuó publicación ni se revisó un PR final.",
+      "La aprobación se refiere a las nuevas afirmaciones fuente y de alcance, no a la totalidad del documento ni a un teorema completo.",
+      "No se atribuye una nota numérica ni identidad, esfuerzo o independencia autenticados."
+    ]
+  }
+}
