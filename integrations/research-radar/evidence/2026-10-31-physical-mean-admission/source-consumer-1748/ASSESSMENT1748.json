@@ -1,0 +1,896 @@
+{
+  "execution": 1748,
+  "artifact": "ASSESSMENT1748",
+  "created_utc": "2026-10-31T20:00:58.596245+00:00",
+  "assessment_kind": "One new unscored exact-input assessment of public assembly accuracy, privacy and provenance",
+  "unscored": true,
+  "reviewer_provenance": {
+    "requested_model": "Astra / gpt-6-astra",
+    "requested_reasoning_effort": "xhigh",
+    "effective_model_identity_authenticated": false,
+    "effective_reasoning_effort_authenticated": false,
+    "external_independence_authenticated": false,
+    "context": "Separate delegated assembly-assessment context with access to the shared workspace. The nine prior reports were intentionally read as preserved evidence; this is not a blind review.",
+    "attestation_limit": "Requested configuration and a separate task context do not authenticate the actual runtime model, effort or external scientific independence.",
+    "subagents_created": false,
+    "prior_reviews_reopened_or_rescored": false,
+    "desired_grade_or_target_used": false
+  },
+  "input": {
+    "manifest_path": "C:/Trabajo/airr/2026-10-31_execution1748/PUBLIC-FILES1748.json",
+    "manifest_sha256": "a4d0b4f93b782cebf630d2d249919a7975169ebca8554fa6ab8f7984b9441cbe",
+    "manifest_sha256_verified": true,
+    "worktree": "C:/Trabajo/physmath-knowledge-tree/physical-mean-admission1728",
+    "observed_branch": "research/source-consumer1748",
+    "file_count": 23,
+    "total_bytes": 360611,
+    "files": [
+      {
+        "path": "integrations/research-radar/notes/2026-10-31-physical-mean-admission.md",
+        "sha256": "278ed0d5ca079250ef122533a3a8709a3710bfe9c6261a6bbe4e56073666b3b4",
+        "bytes": 13840,
+        "sha256_verified": true,
+        "size_verified": true
+      },
+      {
+        "path": "integrations/research-radar/README.md",
+        "sha256": "572dc11d0441d370c762f2bf3cc3209be5db9519984893cefff93ba1aeee56ff",
+        "bytes": 38802,
+        "sha256_verified": true,
+        "size_verified": true
+      },
+      {
+        "path": "integrations/research-radar/evidence/2026-10-31-physical-mean-admission/source-consumer-1748/ASSESSMENT1740.json",
+        "sha256": "33db42f548f280bdda739414e1667fa235349e554beb646b58f1941b90363f4d",
+        "bytes": 18254,
+        "sha256_verified": true,
+        "size_verified": true
+      },
+      {
+        "path": "integrations/research-radar/evidence/2026-10-31-physical-mean-admission/source-consumer-1748/ASSESSMENT1741.json",
+        "sha256": "b7e78a3a70239fdafeea2bcb2d86dd0d8c36ef2dc7868f3f5a601ffd29a9093b",
+        "bytes": 18479,
+        "sha256_verified": true,
+        "size_verified": true
+      },
+      {
+        "path": "integrations/research-radar/evidence/2026-10-31-physical-mean-admission/source-consumer-1748/ASSESSMENT1742.json",
+        "sha256": "7430b010fe186f58bc27f6d4f6d2264a02209b6fce8cc46c57f3f268f4b51fdd",
+        "bytes": 16934,
+        "sha256_verified": true,
+        "size_verified": true
+      },
+      {
+        "path": "integrations/research-radar/evidence/2026-10-31-physical-mean-admission/source-consumer-1748/ASSESSMENT1743.json",
+        "sha256": "74afdaa26b71c50e4719c386601e344f1ce101cfb07e3e93a957adf3d682ff81",
+        "bytes": 18281,
+        "sha256_verified": true,
+        "size_verified": true
+      },
+      {
+        "path": "integrations/research-radar/evidence/2026-10-31-physical-mean-admission/source-consumer-1748/ASSESSMENT1744.json",
+        "sha256": "161b15be85e2398eb998b8e9bdefd345838a4c369bf09cdd866fbfa6fed92a0b",
+        "bytes": 25514,
+        "sha256_verified": true,
+        "size_verified": true
+      },
+      {
+        "path": "integrations/research-radar/evidence/2026-10-31-physical-mean-admission/source-consumer-1748/ASSESSMENT1744C.json",
+        "sha256": "08902ae25d761eaccdcba4cacfb4c3429b68279c32ee9faf12671920d55d1f9a",
+        "bytes": 24410,
+        "sha256_verified": true,
+        "size_verified": true
+      },
+      {
+        "path": "integrations/research-radar/evidence/2026-10-31-physical-mean-admission/source-consumer-1748/ASSESSMENT1745.json",
+        "sha256": "d22ec7473ac990dd1a3f54be91b76a9c3690f6bcffd3d5c981746b0379c7009c",
+        "bytes": 20694,
+        "sha256_verified": true,
+        "size_verified": true
+      },
+      {
+        "path": "integrations/research-radar/evidence/2026-10-31-physical-mean-admission/source-consumer-1748/ASSESSMENT1746.json",
+        "sha256": "5baed22f8d0444c3a20baaac5e2a2890747ce179abe01faf68bfb687b3da3620",
+        "bytes": 32844,
+        "sha256_verified": true,
+        "size_verified": true
+      },
+      {
+        "path": "integrations/research-radar/evidence/2026-10-31-physical-mean-admission/source-consumer-1748/ASSESSMENT1747.json",
+        "sha256": "d851010d71678f78115c92baed4b689251e15ef46c19e438fc598634db4c5610",
+        "bytes": 26083,
+        "sha256_verified": true,
+        "size_verified": true
+      },
+      {
+        "path": "integrations/research-radar/evidence/2026-10-31-physical-mean-admission/source-consumer-1748/math-CURRENT-TERM-SECOND-DERIVATIVE1740.json",
+        "sha256": "3712bacdfc47eadbbb7621e9b03505bb8cbeecaf6cb2f5f38b734858105550ca",
+        "bytes": 5189,
+        "sha256_verified": true,
+        "size_verified": true
+      },
+      {
+        "path": "integrations/research-radar/evidence/2026-10-31-physical-mean-admission/source-consumer-1748/math-FOUR-CORNER-MEAN-CONSUMER1747.json",
+        "sha256": "81f5a8af8115c9bf12ae5c130120e7bde0a74155c7e5538a180138790838ff43",
+        "bytes": 8898,
+        "sha256_verified": true,
+        "size_verified": true
+      },
+      {
+        "path": "integrations/research-radar/evidence/2026-10-31-physical-mean-admission/source-consumer-1748/math-KINETIC-COARSE-HESSIAN1743.json",
+        "sha256": "3f0bda174b4a9896ae2018e38ea2713ca02c4d22a1c0f0a152373b90d5af3298",
+        "bytes": 10026,
+        "sha256_verified": true,
+        "size_verified": true
+      },
+      {
+        "path": "integrations/research-radar/evidence/2026-10-31-physical-mean-admission/source-consumer-1748/math-LOCAL-MEAN-CURRIED-DENSITY1741.json",
+        "sha256": "dcf58a11c56f11f2233e94961f9627a7cad295131b15a4a8db67701f5f5637df",
+        "bytes": 6562,
+        "sha256_verified": true,
+        "size_verified": true
+      },
+      {
+        "path": "integrations/research-radar/evidence/2026-10-31-physical-mean-admission/source-consumer-1748/math-LOCALIZED-CURRENT-CONVOLUTION1742.json",
+        "sha256": "37fdc51f2921db9f00fc7b48a4bc9b56c9edcecd2c226b7634bf61b9f3a61f46",
+        "bytes": 10485,
+        "sha256_verified": true,
+        "size_verified": true
+      },
+      {
+        "path": "integrations/research-radar/evidence/2026-10-31-physical-mean-admission/source-consumer-1748/math-MIXED-REFINEMENT-AMPLITUDE1746.json",
+        "sha256": "86b5301d1139d99e78e87aca30d70f78b9ad07f8a7aa059306acbb006c2a9f91",
+        "bytes": 9376,
+        "sha256_verified": true,
+        "size_verified": true
+      },
+      {
+        "path": "integrations/research-radar/evidence/2026-10-31-physical-mean-admission/source-consumer-1748/math-PLAQUETTE-JET-HESSIAN1744.json",
+        "sha256": "c476fbb32b39c42c855d929940470643cc1162a49f35bcc3c561c9272663a727",
+        "bytes": 12764,
+        "sha256_verified": true,
+        "size_verified": true
+      },
+      {
+        "path": "integrations/research-radar/evidence/2026-10-31-physical-mean-admission/source-consumer-1748/math-PLAQUETTE-JET-HESSIAN1744B.json",
+        "sha256": "bb44d19de8b7b0b2d3b6dbaa2103d0ed8fbe297b09a21c215c8356d8467a6b81",
+        "bytes": 12765,
+        "sha256_verified": true,
+        "size_verified": true
+      },
+      {
+        "path": "integrations/research-radar/evidence/2026-10-31-physical-mean-admission/source-consumer-1748/math-PLAQUETTE-JET-HESSIAN1744C.json",
+        "sha256": "58fb4c47cf97d5e8d5bec8f4947e80e3e8524b25380c4583ab648f98a005f9c3",
+        "bytes": 13463,
+        "sha256_verified": true,
+        "size_verified": true
+      },
+      {
+        "path": "integrations/research-radar/evidence/2026-10-31-physical-mean-admission/source-consumer-1748/math-SOURCE-BRANCH-RADIUS1745.json",
+        "sha256": "1bff65da09a7b04560a91eb2dfd3ecddced47e40b1119ba78dd29649448ac028",
+        "bytes": 7134,
+        "sha256_verified": true,
+        "size_verified": true
+      },
+      {
+        "path": "integrations/research-radar/evidence/2026-10-31-physical-mean-admission/source-consumer-1748/public-input-manifest.json",
+        "sha256": "ee672b0c3a550741845fa9d3b17a3ceed8aab9c54d3c8e5feef55bd8a3238c21",
+        "bytes": 7464,
+        "sha256_verified": true,
+        "size_verified": true
+      },
+      {
+        "path": "integrations/research-radar/evidence/2026-10-31-physical-mean-admission/source-consumer-1748/subgraph.json",
+        "sha256": "7ef193ce78ec7bbd059b20d46cff0e89e14c039a9f8cbf22e0530ecef7dc5e6b",
+        "bytes": 2350,
+        "sha256_verified": true,
+        "size_verified": true
+      }
+    ],
+    "input_scope": "The exact 23 files enumerated by the assigned manifest. New note synthesis and README change assessed against all preserved reports. Existing older note mathematics and unrelated README entries are context, not newly mathematically validated.",
+    "review_report_excluded_from_its_own_input": true
+  },
+  "scope": {
+    "included": [
+      "All new synthesis in the note and changed README opening paragraph",
+      "Exact hashes and sizes of all 23 manifested files",
+      "Exact derivation-field identity against ten original frozen inputs",
+      "Whole-file byte identity and complete reading of nine original reports, including all 134 findings",
+      "Bibliographic identity, privacy/content inspection, local links and small canonical subgraph provenance"
+    ],
+    "excluded": [
+      "Reopening, regrading or replacing reviews1740-1747",
+      "A new proof audit of every calculation or the complete imported source theorems",
+      "Validation of original1728 unreviewed mathematics",
+      "The complete private manuscript, a manuscript PDF or Capacity",
+      "Physical profile1642 admission, source190/gauge transfer or downstream marked/connected/normalized/sector/history results",
+      "Repository edits, manuscript edits, root-state edits, source-media copies or publishing actions"
+    ],
+    "method": "Read the complete public note and README, their tracked diff, every report and every distinct derivation (using the exact A/B/C text diffs for the near-identical versions), compare originals in memory, verify manifests, inspect privacy patterns, and check bibliographic metadata. No source proofs were reconstructed and no source PDFs/images were copied."
+  },
+  "extract_verification": [
+    {
+      "public_file": "math-CURRENT-TERM-SECOND-DERIVATIVE1740.json",
+      "public_sha256": "3712bacdfc47eadbbb7621e9b03505bb8cbeecaf6cb2f5f38b734858105550ca",
+      "original_path": "C:/Trabajo/airr/2026-10-31_execution1740/CURRENT-TERM-SECOND-DERIVATIVE1740.json",
+      "original_sha256": "1e368094527542d6e9db1949dd7384e710a72f6ccc926d49fd340195e5e97365",
+      "original_hash_verified": true,
+      "derivation_utf8_sha256": "0baabb0df39b342027bbe601fa762d3a4af449903cb329440425a4231a65a40e",
+      "derivation_exact_string_and_utf8_bytes_equal": true,
+      "derivation_hash_verified": true,
+      "derivation_characters": 4548,
+      "whole_json_byte_identity_or_inherited_assessment_claimed": false
+    },
+    {
+      "public_file": "math-LOCAL-MEAN-CURRIED-DENSITY1741.json",
+      "public_sha256": "dcf58a11c56f11f2233e94961f9627a7cad295131b15a4a8db67701f5f5637df",
+      "original_path": "C:/Trabajo/airr/2026-10-31_execution1741/LOCAL-MEAN-CURRIED-DENSITY1741.json",
+      "original_sha256": "9c6c18ea8a294e340fb471fa0e2f511ea55bb09cf283033a7836435d74ddbbb1",
+      "original_hash_verified": true,
+      "derivation_utf8_sha256": "4671f7fadeed6e603bc8fb8fbe1eb5b37f5b5b67ca1d6e1b7a2442c64886a88f",
+      "derivation_exact_string_and_utf8_bytes_equal": true,
+      "derivation_hash_verified": true,
+      "derivation_characters": 5932,
+      "whole_json_byte_identity_or_inherited_assessment_claimed": false
+    },
+    {
+      "public_file": "math-LOCALIZED-CURRENT-CONVOLUTION1742.json",
+      "public_sha256": "37fdc51f2921db9f00fc7b48a4bc9b56c9edcecd2c226b7634bf61b9f3a61f46",
+      "original_path": "C:/Trabajo/airr/2026-10-31_execution1742/LOCALIZED-CURRENT-CONVOLUTION1742.json",
+      "original_sha256": "bca0d89789f0bc8882ce3fc3c22e8a7dce561d5d6cee234ba40571cd07e1ffa0",
+      "original_hash_verified": true,
+      "derivation_utf8_sha256": "9dc79fd87e35ccd514b9417dc89bab3743e92d7dc73274426676daa1b575648b",
+      "derivation_exact_string_and_utf8_bytes_equal": true,
+      "derivation_hash_verified": true,
+      "derivation_characters": 9796,
+      "whole_json_byte_identity_or_inherited_assessment_claimed": false
+    },
+    {
+      "public_file": "math-KINETIC-COARSE-HESSIAN1743.json",
+      "public_sha256": "3f0bda174b4a9896ae2018e38ea2713ca02c4d22a1c0f0a152373b90d5af3298",
+      "original_path": "C:/Trabajo/airr/2026-10-31_execution1743/KINETIC-COARSE-HESSIAN1743.json",
+      "original_sha256": "559be55b7b13db519ce4e978146476ada1ed0d5f22697cc3d7cd872428b18c7a",
+      "original_hash_verified": true,
+      "derivation_utf8_sha256": "09922614c2fcbd3da35e706a3de9019b93497cca4daf856303056c3a77b8458d",
+      "derivation_exact_string_and_utf8_bytes_equal": true,
+      "derivation_hash_verified": true,
+      "derivation_characters": 9368,
+      "whole_json_byte_identity_or_inherited_assessment_claimed": false
+    },
+    {
+      "public_file": "math-PLAQUETTE-JET-HESSIAN1744.json",
+      "public_sha256": "c476fbb32b39c42c855d929940470643cc1162a49f35bcc3c561c9272663a727",
+      "original_path": "C:/Trabajo/airr/2026-10-31_execution1744/PLAQUETTE-JET-HESSIAN1744.json",
+      "original_sha256": "42d5b1092d75662b6180d42dc3c110d65105f0cebbdff8710779ee8b8d421a3a",
+      "original_hash_verified": true,
+      "derivation_utf8_sha256": "54374741c807b37ed71f6e8805a0ddd3cf57f21fbe2ba05f320d8a3d6fb4dbda",
+      "derivation_exact_string_and_utf8_bytes_equal": true,
+      "derivation_hash_verified": true,
+      "derivation_characters": 12052,
+      "whole_json_byte_identity_or_inherited_assessment_claimed": false
+    },
+    {
+      "public_file": "math-PLAQUETTE-JET-HESSIAN1744B.json",
+      "public_sha256": "bb44d19de8b7b0b2d3b6dbaa2103d0ed8fbe297b09a21c215c8356d8467a6b81",
+      "original_path": "C:/Trabajo/airr/2026-10-31_execution1744/PLAQUETTE-JET-HESSIAN1744B.json",
+      "original_sha256": "0be82c15482f7c1c7e03688979ec219f6e88d9e50a6d3a1baa13119b518a5293",
+      "original_hash_verified": true,
+      "derivation_utf8_sha256": "3839d93f231289a8774d641019db97eca6f498a8de22418dc6ac18ed401edd0b",
+      "derivation_exact_string_and_utf8_bytes_equal": true,
+      "derivation_hash_verified": true,
+      "derivation_characters": 12052,
+      "whole_json_byte_identity_or_inherited_assessment_claimed": false
+    },
+    {
+      "public_file": "math-PLAQUETTE-JET-HESSIAN1744C.json",
+      "public_sha256": "58fb4c47cf97d5e8d5bec8f4947e80e3e8524b25380c4583ab648f98a005f9c3",
+      "original_path": "C:/Trabajo/airr/2026-10-31_execution1744/PLAQUETTE-JET-HESSIAN1744C.json",
+      "original_sha256": "1b4e7a703af2ce67a1d416979bf1b95073f3a23c60e6da4154d3bf7a20d1fcb5",
+      "original_hash_verified": true,
+      "derivation_utf8_sha256": "29644272dd1f600c4a6e69211168a3ca2d01c7ed816994244545c93522e1b28e",
+      "derivation_exact_string_and_utf8_bytes_equal": true,
+      "derivation_hash_verified": true,
+      "derivation_characters": 12750,
+      "whole_json_byte_identity_or_inherited_assessment_claimed": false
+    },
+    {
+      "public_file": "math-SOURCE-BRANCH-RADIUS1745.json",
+      "public_sha256": "1bff65da09a7b04560a91eb2dfd3ecddced47e40b1119ba78dd29649448ac028",
+      "original_path": "C:/Trabajo/airr/2026-10-31_execution1745/SOURCE-BRANCH-RADIUS1745.json",
+      "original_sha256": "3062f4a39daebb0c2f5eba22831d8ef868263681e6e424e81f9e9eb38fbb6cc6",
+      "original_hash_verified": true,
+      "derivation_utf8_sha256": "a26e5f2ed35443009574f66fd51ba66c24d0cfb9624128ac868979a1cca5036e",
+      "derivation_exact_string_and_utf8_bytes_equal": true,
+      "derivation_hash_verified": true,
+      "derivation_characters": 6516,
+      "whole_json_byte_identity_or_inherited_assessment_claimed": false
+    },
+    {
+      "public_file": "math-MIXED-REFINEMENT-AMPLITUDE1746.json",
+      "public_sha256": "86b5301d1139d99e78e87aca30d70f78b9ad07f8a7aa059306acbb006c2a9f91",
+      "original_path": "C:/Trabajo/airr/2026-10-31_execution1746/MIXED-REFINEMENT-AMPLITUDE1746.json",
+      "original_sha256": "906e252ba2b5e39498dcccaa46320fa38a7b4f9d62ee6291b69bd6b16237e738",
+      "original_hash_verified": true,
+      "derivation_utf8_sha256": "4ecff70e401638567c9eefd87544c37d00fb8575766dcfa8b2291238efe7e4a5",
+      "derivation_exact_string_and_utf8_bytes_equal": true,
+      "derivation_hash_verified": true,
+      "derivation_characters": 8752,
+      "whole_json_byte_identity_or_inherited_assessment_claimed": false
+    },
+    {
+      "public_file": "math-FOUR-CORNER-MEAN-CONSUMER1747.json",
+      "public_sha256": "81f5a8af8115c9bf12ae5c130120e7bde0a74155c7e5538a180138790838ff43",
+      "original_path": "C:/Trabajo/airr/2026-10-31_execution1747/FOUR-CORNER-MEAN-CONSUMER1747.json",
+      "original_sha256": "29652d7a0b0c42dbe829ccb4a21b657c193823a475e76ddd6bb461d5b14c5fd9",
+      "original_hash_verified": true,
+      "derivation_utf8_sha256": "68489a717c0c0ce6d124e1c5a40854f60ee3bd3c68b48c6ddd818aac73cb548e",
+      "derivation_exact_string_and_utf8_bytes_equal": true,
+      "derivation_hash_verified": true,
+      "derivation_characters": 8260,
+      "whole_json_byte_identity_or_inherited_assessment_claimed": false
+    }
+  ],
+  "report_verification": [
+    {
+      "public_file": "ASSESSMENT1740.json",
+      "original_path": "C:/Trabajo/airr/2026-10-31_execution1740/ASSESSMENT1740.json",
+      "sha256": "33db42f548f280bdda739414e1667fa235349e554beb646b58f1941b90363f4d",
+      "whole_file_byte_identical": true,
+      "complete_report_read": true,
+      "finding_count": 13,
+      "all_finding_ids_read": [
+        "F01",
+        "F02",
+        "F03",
+        "F04",
+        "F05",
+        "F06",
+        "F07",
+        "F08",
+        "F09",
+        "F10",
+        "F11",
+        "F12",
+        "F13"
+      ],
+      "prior_verdict_reopened_or_replaced": false
+    },
+    {
+      "public_file": "ASSESSMENT1741.json",
+      "original_path": "C:/Trabajo/airr/2026-10-31_execution1741/ASSESSMENT1741.json",
+      "sha256": "b7e78a3a70239fdafeea2bcb2d86dd0d8c36ef2dc7868f3f5a601ffd29a9093b",
+      "whole_file_byte_identical": true,
+      "complete_report_read": true,
+      "finding_count": 13,
+      "all_finding_ids_read": [
+        "F01",
+        "F02",
+        "F03",
+        "F04",
+        "F05",
+        "F06",
+        "F07",
+        "F08",
+        "F09",
+        "F10",
+        "F11",
+        "F12",
+        "F13"
+      ],
+      "prior_verdict_reopened_or_replaced": false
+    },
+    {
+      "public_file": "ASSESSMENT1742.json",
+      "original_path": "C:/Trabajo/airr/2026-10-31_execution1742/ASSESSMENT1742.json",
+      "sha256": "7430b010fe186f58bc27f6d4f6d2264a02209b6fce8cc46c57f3f268f4b51fdd",
+      "whole_file_byte_identical": true,
+      "complete_report_read": true,
+      "finding_count": 15,
+      "all_finding_ids_read": [
+        "F01",
+        "F02",
+        "F03",
+        "F04",
+        "F05",
+        "F06",
+        "F07",
+        "F08",
+        "F09",
+        "F10",
+        "F11",
+        "F12",
+        "F13",
+        "F14",
+        "F15"
+      ],
+      "prior_verdict_reopened_or_replaced": false
+    },
+    {
+      "public_file": "ASSESSMENT1743.json",
+      "original_path": "C:/Trabajo/airr/2026-10-31_execution1743/ASSESSMENT1743.json",
+      "sha256": "74afdaa26b71c50e4719c386601e344f1ce101cfb07e3e93a957adf3d682ff81",
+      "whole_file_byte_identical": true,
+      "complete_report_read": true,
+      "finding_count": 17,
+      "all_finding_ids_read": [
+        "F01",
+        "F02",
+        "F03",
+        "F04",
+        "F05",
+        "F06",
+        "F07",
+        "F08",
+        "F09",
+        "F10",
+        "F11",
+        "F12",
+        "F13",
+        "F14",
+        "F15",
+        "F16",
+        "F17"
+      ],
+      "prior_verdict_reopened_or_replaced": false
+    },
+    {
+      "public_file": "ASSESSMENT1744.json",
+      "original_path": "C:/Trabajo/airr/2026-10-31_execution1744/ASSESSMENT1744.json",
+      "sha256": "161b15be85e2398eb998b8e9bdefd345838a4c369bf09cdd866fbfa6fed92a0b",
+      "whole_file_byte_identical": true,
+      "complete_report_read": true,
+      "finding_count": 18,
+      "all_finding_ids_read": [
+        "F01",
+        "F02",
+        "F03",
+        "F04",
+        "F05",
+        "F06",
+        "F07",
+        "F08",
+        "F09",
+        "F10",
+        "F11",
+        "F12",
+        "F13",
+        "F14",
+        "F15",
+        "F16",
+        "F17",
+        "F18"
+      ],
+      "prior_verdict_reopened_or_replaced": false
+    },
+    {
+      "public_file": "ASSESSMENT1744C.json",
+      "original_path": "C:/Trabajo/airr/2026-10-31_execution1744/ASSESSMENT1744C.json",
+      "sha256": "08902ae25d761eaccdcba4cacfb4c3429b68279c32ee9faf12671920d55d1f9a",
+      "whole_file_byte_identical": true,
+      "complete_report_read": true,
+      "finding_count": 11,
+      "all_finding_ids_read": [
+        "C01",
+        "C02",
+        "C03",
+        "C04",
+        "C05",
+        "C06",
+        "C07",
+        "C08",
+        "C09",
+        "C10",
+        "C11"
+      ],
+      "prior_verdict_reopened_or_replaced": false
+    },
+    {
+      "public_file": "ASSESSMENT1745.json",
+      "original_path": "C:/Trabajo/airr/2026-10-31_execution1745/ASSESSMENT1745.json",
+      "sha256": "d22ec7473ac990dd1a3f54be91b76a9c3690f6bcffd3d5c981746b0379c7009c",
+      "whole_file_byte_identical": true,
+      "complete_report_read": true,
+      "finding_count": 20,
+      "all_finding_ids_read": [
+        "F01",
+        "F02",
+        "F03",
+        "F04",
+        "F05",
+        "F06",
+        "F07",
+        "F08",
+        "F09",
+        "F10",
+        "F11",
+        "F12",
+        "F13",
+        "F14",
+        "F15",
+        "F16",
+        "F17",
+        "F18",
+        "F19",
+        "F20"
+      ],
+      "prior_verdict_reopened_or_replaced": false
+    },
+    {
+      "public_file": "ASSESSMENT1746.json",
+      "original_path": "C:/Trabajo/airr/2026-10-31_execution1746/ASSESSMENT1746.json",
+      "sha256": "5baed22f8d0444c3a20baaac5e2a2890747ce179abe01faf68bfb687b3da3620",
+      "whole_file_byte_identical": true,
+      "complete_report_read": true,
+      "finding_count": 13,
+      "all_finding_ids_read": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6",
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "A6",
+        "A7"
+      ],
+      "prior_verdict_reopened_or_replaced": false
+    },
+    {
+      "public_file": "ASSESSMENT1747.json",
+      "original_path": "C:/Trabajo/airr/2026-10-31_execution1747/ASSESSMENT1747.json",
+      "sha256": "d851010d71678f78115c92baed4b689251e15ef46c19e438fc598634db4c5610",
+      "whole_file_byte_identical": true,
+      "complete_report_read": true,
+      "finding_count": 14,
+      "all_finding_ids_read": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6",
+        "F7",
+        "F8",
+        "F9",
+        "F10",
+        "F11",
+        "F12",
+        "F13",
+        "F14"
+      ],
+      "prior_verdict_reopened_or_replaced": false
+    }
+  ],
+  "prior_findings_total": 134,
+  "findings": [
+    {
+      "id": "F01",
+      "status": "verified",
+      "topic": "Exact 23-file assembly identity",
+      "evidence": [
+        "PUBLIC-FILES1748.json",
+        "input.files"
+      ],
+      "finding": "The assigned manifest has the exact requested SHA256. All 23 paths exist under the assigned worktree, and every SHA256 and byte count matches. Total input size is 360611 bytes. The observed branch is research/source-consumer1748. No differing or missing manifested input was found."
+    },
+    {
+      "id": "F02",
+      "status": "verified",
+      "topic": "Ten exact derivation extracts",
+      "evidence": [
+        "extract_verification"
+      ],
+      "finding": "For all ten extracts, the original file named in the wrapper was opened from its execution1740-1747 directory, its whole-file hash was checked, and the decoded derivation string was compared exactly, including whitespace and line breaks. Its UTF-8 bytes and SHA256 also match. The public wrapper and original JSON are different artifacts. The original whole-file hashes are provenance bindings, not hashes of the public extracts and not inherited exact-input verdicts."
+    },
+    {
+      "id": "F03",
+      "status": "verified",
+      "topic": "Nine complete unchanged reports and 134 findings",
+      "evidence": [
+        "report_verification"
+      ],
+      "finding": "All nine public report files are byte-identical to the originals. The counts are 13,13,15,17,18,11,20,13,14, totaling 134 top-level findings. For 1746 the count includes P1-P6 and A1-A7. All report text, qualifications, adverse observations and conclusions were read as preserved evidence. The repeated quotation of B/F03 inside 1744C is not counted as an additional top-level finding. No earlier verdict is reissued or rescored here."
+    },
+    {
+      "id": "F04",
+      "status": "verified",
+      "topic": "Public manifest and canonical context",
+      "evidence": [
+        "public-input-manifest.json",
+        "subgraph.json",
+        "graph/index.json",
+        "graph/nodes/core.json"
+      ],
+      "finding": "The public evidence manifest correctly binds ten extracts and nine reports, their original and derivation hashes, and all finding counts. Its 21 evidence-directory files match the manifested evidence set. Both subgraph nodes equal their canonical node objects; edges are empty. The observed tracked diff changes only the note and the opening README paragraph. No graph, source-card or candidate modification is part of this assembly."
+    },
+    {
+      "id": "F05",
+      "status": "verified",
+      "topic": "Separation of original-source reconstruction from physical admission",
+      "location": "note lines 51-61, 73-78; README line 3",
+      "evidence": [
+        "ASSESSMENT1740 F07-F13",
+        "ASSESSMENT1742 F14-F15",
+        "ASSESSMENT1743 F05,F17",
+        "ASSESSMENT1744 F16-F18",
+        "ASSESSMENT1744C C10-C11"
+      ],
+      "finding": "The new prose correctly treats the current, joint kinetic and plaquette calculations as a conditional source-(189)-type reconstruction. It retains the old averaging map, original background/domain/chart, normalized kernels, geometry and summability as premises at selected-source-statement depth. It does not claim a new audit of all literature proofs or a fixed physical parameter witness. This consistency check does not perform those mathematical audits again."
+    },
+    {
+      "id": "F06",
+      "status": "required_scope_correction_before_publication",
+      "severity": "medium",
+      "topic": "The displayed localized bound omits its essential input support and dimension",
+      "location": "integrations/research-radar/notes/2026-10-31-physical-mean-admission.md:55-59",
+      "evidence": [
+        "math-PLAQUETTE-JET-HESSIAN1744C.json derivation opening and equation (16)",
+        "ASSESSMENT1744 F17",
+        "ASSESSMENT1745 F15",
+        "math-LOCALIZED-CURRENT-CONVOLUTION1742.json support extension"
+      ],
+      "finding": "The new standalone displayed bound contains exp[-delta d(y,z)/4], but the note never says that v is supported in the original tildeDelta(z), and does not identify z as the input-support label. It also omits the d=4 restriction used by the combined weighted estimates. The linked derivation and reports state both explicitly. General conditional-language about backgrounds, rates and domains does not itself specify the localization of v. Without that condition, z is free and the display could be read as an estimate for an arbitrary field v at arbitrarily distant z, which is stronger than the preserved result. This is an omission in the new summary, not a new adverse verdict on 1744C or any previous calculation.",
+      "required_action": "Attach to the displayed estimate that d=4 and supp(v) is contained in the original tildeDelta(z), with its original incident-bond convention. Identify tildeDelta(z) as the original enlarged input block. The existing assumptions on one common admitted source domain, background, mean, rate and smallness intersection must remain.",
+      "minimal_scope_text": "In d=4, for v supported in the original tildeDelta(z), with the original incident-bond convention, the conditional bound is ...",
+      "publication_effect": "The exact input snapshot should not be presented as a fully cleared standalone mathematical summary before this local scope correction. The unchanged evidence files remain suitable for publication with their existing qualifications."
+    },
+    {
+      "id": "F07",
+      "status": "verified_with_dictionary_limit",
+      "topic": "Current, scales, contacts and ordered coarse reduction",
+      "location": "note line 53",
+      "evidence": [
+        "ASSESSMENT1740 F01-F06",
+        "ASSESSMENT1741 F07-F12",
+        "ASSESSMENT1742 F01,F08-F12",
+        "ASSESSMENT1743 F01-F04,F15"
+      ],
+      "finding": "The exact implicit derivative, five-piece subtraction with positive mixed term, retained current, local curried support/contact/measure accounting and extra normalized-H input factor agree with the preserved reports. The ordered W expression agrees with 1743 when G denotes that derivation's original G_q and P=S Q; it is not an arbitrary later covariance or the shifted Section-G propagator. The new formulation that no unavailable Laplacian-H estimate is assumed avoids 1743's recorded source-attribution imprecision."
+    },
+    {
+      "id": "F08",
+      "status": "verified",
+      "topic": "First-jet mechanism and common-rate finite sum",
+      "location": "note lines 55-59",
+      "evidence": [
+        "ASSESSMENT1744 F07-F17",
+        "ASSESSMENT1744C C08-C10"
+      ],
+      "finding": "The prose preserves the genuine unmasked Tv, later restriction of field values only, local complex remainder differentiation, covariant cubic integration by parts and full second-chain term. Its single positive-rate requirement, retesting of collar/scale/summability constants, absence of an extra convolution on finite addition and refusal to restore a larger previous exponent accurately reflect the reports. F06 is the remaining missing scope condition in the displayed summary."
+    },
+    {
+      "id": "F09",
+      "status": "verified",
+      "topic": "1744 historical errors remain visible",
+      "location": "note line 65",
+      "evidence": [
+        "math-PLAQUETTE-JET-HESSIAN1744.json",
+        "math-PLAQUETTE-JET-HESSIAN1744B.json",
+        "math-PLAQUETTE-JET-HESSIAN1744C.json",
+        "ASSESSMENT1744 F02-F05",
+        "ASSESSMENT1744C exact_diff,C02-C07"
+      ],
+      "finding": "The public derivation diff A to B changes only the backward-product eta sign; B to C adds the cyclic-representative qualification and corrects the final commutator order. The note correctly distinguishes the pre-review sign correction from the adverse exact-matrix identity finding on B. It retains the trace-null scalar consequence without retroactively validating B. C is distinct changed evidence, and its bounded correction verification does not erase the closed B report."
+    },
+    {
+      "id": "F10",
+      "status": "verified",
+      "topic": "Auxiliary amplitude and Section G limits",
+      "location": "note line 61",
+      "evidence": [
+        "ASSESSMENT1745 F01-F08,F11-F20",
+        "ASSESSMENT1746 P1,P4-P6,A3-A7"
+      ],
+      "finding": "The separation e_var=K e is explicitly contingent on a uniform bound for all required actual data. The same law, cutoff, exterior and mean are retained. The note accurately distinguishes a base satisfying (7) and relative factor satisfying (172) from an invented requirement that every segment point again satisfy the original base bound. It correctly calls epsilon3=4 B5 e_var a sufficient choice, not a uniquely forced radius. It neither manufactures K_old nor claims that a small coupling pays fixed geometric or mean-identification gates."
+    },
+    {
+      "id": "F11",
+      "status": "verified",
+      "topic": "1746 adverse carrier and composed-mean finding preserved",
+      "location": "note lines 63-65,78",
+      "evidence": [
+        "ASSESSMENT1746 A1-A7",
+        "ASSESSMENT1747 F1-F5,F12-F14"
+      ],
+      "finding": "The two-adjacent-block coarse-loop carrier and untyped composed-mean coefficient are explicitly left uncertified for the frozen 1746 input. The new four-corner argument is described as new work with separately counted endpoint means and outer log-average-exponential. No inference that this repairs 1746 retroactively or supplies every mixed-plaquette category is made."
+    },
+    {
+      "id": "F12",
+      "status": "verified_conditional_summary",
+      "topic": "K4, actual mean, common minimum and source halo roles",
+      "location": "note line 63",
+      "evidence": [
+        "ASSESSMENT1747 F1-F5,F7-F13"
+      ],
+      "finding": "K4=1+48d(2dL+1)^2/L matches the preserved conditional consumer. The new prose retains admitted real charts and one common minimum for all four edges, distinguishes curvature halo D'~ from determining halo D'~4, and does not identify the values or Hessians of means (0.4) and (0.12). The underlying fine-curvature premise epsilon_f<=e L^-2 and coarse constraints remain part of the linked source-consumer conditions. The first-step P0/P1 implication is correctly tied to the actual source domain construction, rather than arbitrary geometric containment in a set named Omega1."
+    },
+    {
+      "id": "F13",
+      "status": "verified_required_guard_preserved",
+      "topic": "1747 normalized-trace log-chart defect and SU(64)",
+      "location": "note line 65",
+      "evidence": [
+        "ASSESSMENT1747 F6 and precise_conditional_consumer"
+      ],
+      "finding": "The note explicitly rejects the bare normalized-trace-distance <1/2 implication and preserves the SU(64) diagonal example with distance sqrt(8/64) and two cut eigenvalues. It attaches the actual fixed real group/log radius a_log, the reduction a_M<=a_log/6 or direct condition 6 B_len epsilon_f<a_log, and the unchanged displayed coefficients. The example is correctly a counterexample to the claimed norm-to-chart implication; the note does not present it as a realized physical-profile counterexample or as a refutation of the published sources. The frozen 1747 extract remains unchanged and is not silently corrected."
+    },
+    {
+      "id": "F14",
+      "status": "verified",
+      "topic": "Source (189), source (190), and profile1642",
+      "location": "note lines 51-59,73-78; README line 3",
+      "evidence": [
+        "ASSESSMENT1744 F18",
+        "ASSESSMENT1745 F17-F20",
+        "ASSESSMENT1746 A7",
+        "ASSESSMENT1747 F13-F14"
+      ],
+      "finding": "Only the conditional (189)-type Hessian reconstruction is claimed. No source-(190)/gauge-return result is stated or inherited. The all-domain mixed-data classification, old-stratum bound or exclusion, later-mean transfer, locality-dependency cycle, fixed common-rate/domain tests and physical completion remain open. Candidate1642 is not admitted. The note does not certify marked operational integrals, connected sums, outer normalization, sectors/history or a whole manuscript."
+    },
+    {
+      "id": "F15",
+      "status": "verified_with_provenance_limit",
+      "topic": "Requested reviewer configuration and unauthenticated independence",
+      "location": "note line 71",
+      "evidence": [
+        "all nine complete report provenance sections"
+      ],
+      "finding": "All nine reports record Astra/xhigh as requested and disclaim authentication of effective identity, effort and independence. Their separate delegated contexts do not establish external expert independence. The 1744C report expressly says it read the B report, so it was not blind; the new note does not claim blindness. Sequential separate requests and no grade-seeking restart are consistent with the supplied history and preserved artifact chain, but this assembly check does not independently authenticate orchestration logs, actual execution order or the absence of every undisclosed attempt. These historical statements must not be repurposed as runtime or scientific-independence attestation."
+    },
+    {
+      "id": "F16",
+      "status": "verified",
+      "topic": "No inherited validation for modified wrappers or older synthesis",
+      "location": "note lines 25,46,69,71; extract public_extract_scope",
+      "finding": "The ten extract wrappers explicitly distinguish the unchanged derivation text from the original assessed JSON bytes. The note is stronger still: no exact-input assessment is inherited. Earlier 1728 participating-agent synthesis, including the conditional chain-rule comparison, remains labeled unreviewed. The addition of later reports and this assembly review does not validate that older mathematics or the private manuscript by proximity. Unrelated historical scores elsewhere in the unchanged README are not new scores on this assembly."
+    },
+    {
+      "id": "F17",
+      "status": "verified_at_bibliographic_metadata_depth",
+      "topic": "Citations and the CMP119 DOI",
+      "location": "note lines 7-17,51-65",
+      "evidence": [
+        "bibliographic_verification"
+      ],
+      "finding": "The six DOI/article-volume identities used by the note are correct at bibliographic metadata depth. In particular BF01217741 identifies T. Balaban, Convergent renormalization expansions for lattice gauge theories, CMP119(2),243-285 (1988), as confirmed by publisher-deposited Crossref metadata. The new citation is not a mistaken DOI for another volume. The older frozen 1740 report retains the source bibliography's 17-52 rendering for CMP98; the actual article metadata and the new note correctly use 17-51. Preserving that historical quotation does not change the new bibliography. Equation-level support was compared with the preserved reports, not reaudited from complete source proofs."
+    },
+    {
+      "id": "F18",
+      "status": "no_sensitive_payload_found_within_inspected_scope",
+      "topic": "Privacy and source redistribution",
+      "evidence": [
+        "all 23 manifested files",
+        "privacy_checks"
+      ],
+      "finding": "The assembly contains two Markdown files and 21 JSON files with own mathematics, own reports, hashes and metadata. No foreign article body, private evolving manuscript body, manuscript PDF, source PDF/image bytes, credential material or full-text corpus was found. Targeted patterns for token/key assignments, private-key blocks, provider tokens, email addresses and embedded PDF/image payloads returned no matches. The reports do preserve historical absolute local paths, including a local home-directory identifier and source filenames; the public manifest explicitly discloses this retention. Those paths are provenance text, not redistributed file contents or an access grant. This is a bounded content check, not a universal security certification."
+    },
+    {
+      "id": "F19",
+      "status": "delivery_condition",
+      "topic": "Forward link and non-self-referential input manifest",
+      "location": "note line 69; public-input-manifest assembly_review_file",
+      "finding": "The only missing local Markdown target at inspection was the deliberately prospective ASSESSMENT1748.json. The parent has stated that this report will be copied unchanged to the evidence directory and that the exact original PUBLIC-FILES1748.json will also be copied as ASSEMBLY-INPUT1748.json. These are delivery artifacts, not members of the 23-file input they identify. Their exclusion avoids circular self-hashing and is not an omission from the reviewed snapshot.",
+      "required_action": "Before publishing the assembled delivery, materialize the exact report at the linked path and the exact manifest copy at its declared public path, check byte identity, and preserve the assigned input hashes. Do not describe a subsequent changed-note hash as covered automatically by this exact-input review."
+    },
+    {
+      "id": "F20",
+      "status": "verified_scope_boundary",
+      "topic": "Publicability is not peer review, a score or a physical theorem",
+      "location": "note lines 69-78; README line 3",
+      "finding": "The assembly accurately labels the reports as unscored AI assessments rather than peer review or an editorial decision. The literature/heuristic/formal/speculative layers remain distinct. This report evaluates the accuracy, privacy and provenance of the new public assembly; it creates no mathematical grade, formal theorem, publication acceptance, manuscript/PDF/Capacity assessment, physical admission or canonical confidence promotion."
+    }
+  ],
+  "bibliographic_verification": [
+    {
+      "source": "CMP102",
+      "doi": "10.1007/BF01229381",
+      "volume": "102",
+      "pages": "277-309",
+      "year": 1985,
+      "support": "Publisher article metadata",
+      "url": "https://link.springer.com/article/10.1007/BF01229381"
+    },
+    {
+      "source": "CMP99",
+      "doi": "10.1007/BF01240355",
+      "volume": "99",
+      "pages": "389-434",
+      "year": 1985,
+      "support": "Publisher article metadata",
+      "url": "https://link.springer.com/article/10.1007/BF01240355"
+    },
+    {
+      "source": "CMP109",
+      "doi": "10.1007/BF01215223",
+      "volume": "109",
+      "pages": "249-301",
+      "year": 1987,
+      "support": "Publisher article metadata",
+      "url": "https://link.springer.com/article/10.1007/BF01215223"
+    },
+    {
+      "source": "CMP98",
+      "doi": "10.1007/BF01211042",
+      "volume": "98",
+      "pages": "17-51",
+      "year": 1985,
+      "support": "Publisher article metadata",
+      "url": "https://link.springer.com/article/10.1007/BF01211042"
+    },
+    {
+      "source": "CMP96",
+      "doi": "10.1007/BF01240221",
+      "volume": "96",
+      "pages": "223-250",
+      "year": 1984,
+      "support": "Publisher article metadata",
+      "url": "https://link.springer.com/article/10.1007/BF01240221"
+    },
+    {
+      "source": "CMP119",
+      "doi": "10.1007/BF01217741",
+      "title": "Convergent renormalization expansions for lattice gauge theories",
+      "volume": "119",
+      "issue": "2",
+      "pages": "243-285",
+      "year": 1988,
+      "support": "Publisher-deposited Crossref metadata fetched directly in memory; the institution record independently agrees. Direct Springer fetch was unavailable during this check.",
+      "url": "https://api.crossref.org/works/10.1007/BF01217741",
+      "institution_record": "https://scholarship.libraries.rutgers.edu/esploro/outputs/journalArticle/Convergent-renormalization-expansions-for-lattice-gauge/991031665034304646"
+    }
+  ],
+  "privacy_checks": {
+    "files_inspected": 23,
+    "formats": {
+      "markdown": 2,
+      "json": 21
+    },
+    "credential_or_embedded_media_pattern_matches": 0,
+    "foreign_full_source_bodies_found": false,
+    "private_evolving_manuscript_body_found": false,
+    "pdf_or_image_payload_found": false,
+    "credentials_found": false,
+    "full_text_corpus_found": false,
+    "historical_local_paths_present": true,
+    "historical_local_paths_disclosed_in_public_manifest": true,
+    "limit": "Only the manifested assembly was checked. Referenced private/local files are not published by their path strings and were not treated as redistributed bodies."
+  },
+  "delivery_context": {
+    "planned_report_copy": "integrations/research-radar/evidence/2026-10-31-physical-mean-admission/source-consumer-1748/ASSESSMENT1748.json",
+    "planned_exact_input_manifest_copy": "integrations/research-radar/evidence/2026-10-31-physical-mean-admission/source-consumer-1748/ASSEMBLY-INPUT1748.json",
+    "planned_manifest_copy_sha256": "a4d0b4f93b782cebf630d2d249919a7975169ebca8554fa6ab8f7984b9441cbe",
+    "copy_status": "Parent-declared delivery plan, not performed by this assessor. Neither delivery artifact is part of the 23-file input.",
+    "observed_missing_markdown_targets": [
+      "../evidence/2026-10-31-physical-mean-admission/source-consumer-1748/ASSESSMENT1748.json"
+    ]
+  },
+  "disposition": {
+    "code": "PUBLIC_EVIDENCE_INTEGRITY_AND_PROVENANCE_SUPPORTED__LOCAL_SCOPE_CORRECTION_REQUIRED",
+    "publicability": "The preserved evidence package is suitable for public release at its stated limited scope. The new note needs the local correction F06 before its displayed formula is presented as fully cleared. The exact 23-file snapshot is therefore not given unconditional publication clearance.",
+    "required_synthesis_corrections": [
+      "F06: state d=4 and the original tildeDelta(z) input support directly with the localized estimate"
+    ],
+    "delivery_conditions": [
+      "F19: materialize and verify the exact linked report and exact public manifest copy"
+    ],
+    "new_invalidating_finding_on_prior_mathematics": false,
+    "physical_profile1642_admitted": false,
+    "source190_established": false,
+    "whole_manuscript_or_pdf_assessed": false,
+    "peer_review_or_editorial_acceptance_claimed": false,
+    "preservation": "Keep this exact report and all prior reports unchanged. A note with corrected scope has different bytes and must be identified as changed evidence; no prior exact-input verdict or numerical score transfers automatically.",
+    "summary": "All 23 hashes/sizes, all ten derivation identities and all nine byte-identical reports with 134 findings check out. The new synthesis accurately preserves the adverse 1744/1746/1747 record, SU(64)/log guard, conditional source189 boundary and non-admission of the physical profile. One standalone formula omits its explicit dimension and localization premise. No secret/source-body/PDF/corpus payload was found."
+  },
+  "handling": {
+    "only_authored_file": "C:/Trabajo/airr/2026-10-31_execution1748/ASSESSMENT1748.json",
+    "candidate_repo_root_manuscript_and_prior_reports_modified": false,
+    "source_pdf_image_or_corpus_saved": false,
+    "inputs_rechecked_immediately_before_write": true,
+    "no_source_proof_reaudit": true,
+    "no_subagents_created": true
+  }
+}
