@@ -1,0 +1,324 @@
+{
+  "execution": 1744,
+  "assessment": "One bounded verification of correction B to C; closed B assessment is neither reopened nor rewritten",
+  "unscored": true,
+  "created_utc": "2026-10-31T19:11:40+00:00",
+  "purpose": "Verification of changed evidence required by always evaluate everything; no numerical grade, target grade, or restart to improve an outcome.",
+  "reviewer": {
+    "requested_model": "Astra",
+    "requested_effort": "xhigh",
+    "actual_model_identity": "Unauthenticated. This report does not attest the effective model identity or requested routing.",
+    "actual_effort": "Unauthenticated. No independent runtime attestation is available here.",
+    "independence": "Unauthenticated. This is a delegated verification context which read the closed B report as explicitly requested; it is not a blind review and is not evidence of external independence. No child agents were created."
+  },
+  "inputs": [
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1744/PLAQUETTE-JET-HESSIAN1744C.json",
+      "sha256": "1b4e7a703af2ce67a1d416979bf1b95073f3a23c60e6da4154d3bf7a20d1fcb5",
+      "hash_verified": true,
+      "reading_depth": "Read completely in this verification"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1744/PLAQUETTE-JET-HESSIAN1744B.json",
+      "sha256": "0be82c15482f7c1c7e03688979ec219f6e88d9e50a6d3a1baa13119b518a5293",
+      "hash_verified": true,
+      "reading_depth": "Read completely in this verification"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1744/ASSESSMENT1744.json",
+      "sha256": "161b15be85e2398eb998b8e9bdefd345838a4c369bf09cdd866fbfa6fed92a0b",
+      "hash_verified": true,
+      "reading_depth": "Read completely in this verification"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1744/SELF-CHECK-COMMUTATOR1744.json",
+      "sha256": "9153c9fdf1d64ccb77d6390d5498b951406ce148f198a8af1a16001b759dfcd9",
+      "hash_verified": true,
+      "reading_depth": "Read completely in this verification"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1744/correct1744-commutator.py",
+      "sha256": "316738105712c3485148d556cd40d3d7f632953be921d45146a6c9ee0d57f0f3",
+      "hash_verified": true,
+      "reading_depth": "Read completely in this verification"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1744/correct1744-sign.py",
+      "sha256": "e9d865e885b8e90f756b97369d63934c819d299308bd5f9c28449944e3b91a98",
+      "hash_verified": true,
+      "reading_depth": "Read completely in this verification"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1744/PLAQUETTE-JET-HESSIAN1744.json",
+      "sha256": "42d5b1092d75662b6180d42dc3c110d65105f0cebbdff8710779ee8b8d421a3a",
+      "hash_verified": true,
+      "reading_depth": "Hash and correction-script provenance only; original draft not reassessed"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1744/SELF-CHECK-SIGN1744.json",
+      "sha256": "1ba74f9dc362df24d4624f27b5e21007f07ed427b8101748e6884b18c35dde88",
+      "hash_verified": true,
+      "reading_depth": "Read completely in this verification"
+    }
+  ],
+  "scope": {
+    "included": [
+      "Exact bytes and complete derivations of B and C; all 18 findings of the closed B report; both correct1744 scripts and both self-check receipts",
+      "The exact B-to-C diff, printed (94) commutator order, fixed-base-point four-link representative and sum eta d0F",
+      "Cyclic-prefix scalar invariance and first/second field variations, including consistent symmetric polarization and Hessian terms",
+      "A full read of C for incompatibilities introduced by the correction, retaining all original conditional premises"
+    ],
+    "excluded": [
+      "Reopening, overwriting, rescoring or silently amending B and its report",
+      "Auditing every ancestral source binding, complete propagator/mean theorems, or earlier assessments again",
+      "Fixed physical-profile admission, a numerical common-rate/smallness witness, later physical mean, source (190) or gauge return",
+      "C1/base mixed data, marked/normalized sums, outer normalizers, sectors, history, manuscript/PDF/Capacity validation, publication or grade"
+    ],
+    "earlier_results_policy": "The unchanged portions are checked here for compatibility with the correction, not granted a fresh independent global validation. The closed B findings remain at their original scope, and source-binding status language is not treated as proof.",
+    "read_only_policy": "The correction scripts were inspected, not executed, because their normal execution writes inputs and self-check files. Independent algebra was run in memory. Only this ASSESSMENT1744C.json is authored."
+  },
+  "exact_diff": {
+    "changed_top_level_keys": [
+      "derivation",
+      "during_assessment_correction",
+      "source_bindings",
+      "status"
+    ],
+    "derivation_changed_lines": 2,
+    "derivation_patch": [
+      "--- B/derivation",
+      "+++ C/derivation",
+      "@@ -29,12 +29,12 @@",
+      " ",
+      " where Grem is the fine Euler gradient, Krem its Hessian, and X_star(v) is the dimensionless field/first-derivative jet bound on the fixed output neighborhood, using s_y. The remainder actually needs only its field part. At epsilon3=0 use continuity. These are applied-operator estimates; no smooth joint density or deletion of contact terms is assumed.",
+      " ",
+      "-ACTUAL CUBIC INTEGRATION BY PARTS AND SECOND VARIATION. Source94, in its transported plaquette-root notation, reads at x for mu<nu:",
+      "+ACTUAL CUBIC INTEGRATION BY PARTS AND SECOND VARIATION. Fix the cyclic plaquette representative a=(X,Y+eta alpha,-X-eta beta,-Y), with X=F_mu(x),Y=F_nu(x),alpha=nabla_mu F_nu(x),beta=nabla_nu F_mu(x), all at the source base point with the original fixed transports. Its sum S=eta d0F. The ordered commutator sum for this representative has the printed94 order below. If the earlier source34/39 cycle starts at another edge, rotating a prefix changes the commutator sum by a commutator with S, whose contraction Tr(S[B,S]) is zero. Thus the SCALAR cubic V3, its exact gradient/Hessian and Wrem are unchanged; no equality of the two matrix-valued commutator sums is asserted. Use this fixed representative for C_p and its polarization in this calculation. Source94, in its transported plaquette-root notation, reads at x for mu<nu:",
+      " ",
+      "  C_p(F,F)=2i[F_mu,F_nu]+2i eta[F_mu,nabla_mu F_nu]",
+      "           +2i eta[nabla_nu F_mu,F_nu]-i eta[F_mu,nabla_nu F_mu]",
+      "           -i eta[nabla_mu F_nu,F_nu]",
+      "-          -i eta^2[nabla_nu F_mu,nabla_mu F_nu].         (4)",
+      "+          -i eta^2[nabla_mu F_nu,nabla_nu F_mu].         (4)",
+      " ",
+      " This is the original covariant identity, not ordinary differences replacing the transports. If C_F maps v to C_p(F,v), direct variation and the original summation-by-parts convention give",
+      " "
+    ],
+    "metadata_changes": "Status changed; during_assessment_correction added with B/self-check hashes; two source bindings appended for B and SELF-CHECK-COMMUTATOR1744. Existing source bindings remain identical and in the same order.",
+    "unchanged_top_level_keys": [
+      "execution",
+      "gain",
+      "limits",
+      "next",
+      "levels",
+      "pre_assessment_correction"
+    ],
+    "equations_other_than_4": "Unchanged, including the already corrected plus-eta rule (6), exact scalar variations (5), chain rule (9), and estimates (1)-(3), (7)-(16).",
+    "limits_unchanged": true
+  },
+  "sources_checked": [
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/cmp102_variational/1104114383.pdf",
+      "sha256": "838056b5c578f81d058deb3d394c66d934690e3b94c6cf2956534ec6d211b541",
+      "printed_pages": [
+        283,
+        284,
+        292
+      ],
+      "pdf_page_indices_zero_based": [
+        6,
+        7,
+        15
+      ],
+      "depth": "Selected complete pages visually inspected from in-memory PyMuPDF renders, with text extraction as an aid. Equations (34), (39), (94), and unchanged (96) checked at the depth required for the correction. No PDF or PNG copy saved; no complete-paper proof audit."
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/cmp99/1103942769.pdf",
+      "sha256": "39f8033b35838c7bdd14f97c7fb1edb0b35d4190b8b88f31d19d12a72d542861",
+      "printed_pages": [
+        391
+      ],
+      "pdf_page_indices_zero_based": [
+        2
+      ],
+      "depth": "Complete printed page 391 visually inspected in memory for (3.4), oriented fields and d0F=alpha-beta. Printed 392 (3.8) additionally read by text extraction only. No complete propagator audit or saved image."
+    }
+  ],
+  "preserved_closed_B_assessment": {
+    "path": "C:/Trabajo/airr/2026-10-31_execution1744/ASSESSMENT1744.json",
+    "sha256": "161b15be85e2398eb998b8e9bdefd345838a4c369bf09cdd866fbfa6fed92a0b",
+    "finding_count": 18,
+    "finding_ids": [
+      "F01",
+      "F02",
+      "F03",
+      "F04",
+      "F05",
+      "F06",
+      "F07",
+      "F08",
+      "F09",
+      "F10",
+      "F11",
+      "F12",
+      "F13",
+      "F14",
+      "F15",
+      "F16",
+      "F17",
+      "F18"
+    ],
+    "disposition": "All 18 findings and original verdict remain unchanged in the closed report. This report applies only to the different C bytes and does not turn B equation (4) into a valid matrix identity.",
+    "adverse_F03_verbatim": {
+      "id": "F03",
+      "status": "adverse_exact_identity_error",
+      "topic": "Last commutator in the claimed six-term source identity is reversed",
+      "candidate_location": "Equation (4), sixth term",
+      "source_location": "CMP102 printed 292 (94)",
+      "detail": "With alpha=nabla_mu F_nu and beta=nabla_nu F_mu, the source's last term is -i eta^2[alpha,beta]. B writes -i eta^2[beta,alpha], which is its negative. The first five terms agree in coefficient, sign and commutator order with printed (94). There is no simultaneous orientation change of the entire plaquette expression in B that would justify reversing this term alone. Consequently the statement that (4) reads exactly as source (94) is false, even after the separate product-rule correction.",
+      "all_six_terms": [
+        {
+          "term": 1,
+          "source": "2i[F_mu,F_nu]",
+          "candidate_matches": true
+        },
+        {
+          "term": 2,
+          "source": "2i eta[F_mu,nabla_mu F_nu]",
+          "candidate_matches": true
+        },
+        {
+          "term": 3,
+          "source": "2i eta[nabla_nu F_mu,F_nu]",
+          "candidate_matches": true
+        },
+        {
+          "term": 4,
+          "source": "-i eta[F_mu,nabla_nu F_mu]",
+          "candidate_matches": true
+        },
+        {
+          "term": 5,
+          "source": "-i eta[nabla_mu F_nu,F_nu]",
+          "candidate_matches": true
+        },
+        {
+          "term": 6,
+          "source": "-i eta^2[nabla_mu F_nu,nabla_nu F_mu]",
+          "candidate_matches": false
+        }
+      ],
+      "exact_witness": "At U0=I take F_mu(x)=F_nu(x)=0, alpha=t sigma_x and beta=t sigma_y. All first five terms vanish. Source (94) gives 2 eta^2 t^2 sigma_z, while B gives -2 eta^2 t^2 sigma_z. A nonzero t can be chosen arbitrarily small to fit the local field/jet domain. An exact SymPy Pauli calculation reproduced these opposite matrices."
+    },
+    "original_final_verdict_verbatim": "The conditional localized Hessian norm calculation and conditional finite sum are supported under their explicitly retained original-source premises. The frozen candidate is not exact-source-correct as written: its equation (4) has a reversed eta-squared commutator. This actual error is trace-null in the scalar cubic action and does not invalidate the first-jet Hessian bound, but the displayed identity must remain unvalidated. No physical admission or broader theorem is certified."
+  },
+  "findings": [
+    {
+      "id": "C01",
+      "status": "verified",
+      "topic": "Pinned inputs and limited change",
+      "detail": "C and the closed B report match the requested hashes. B, both scripts, both self-check receipts and the original draft also match their recorded hashes. The only mathematical edits B to C are the added cyclic-representative paragraph and reversal of the last commutator to printed-(94) ordering. No premise, weight, operator, exponent or smallness condition was silently changed. Source bindings were only appended. The original draft was hashed for provenance, not newly assessed."
+    },
+    {
+      "id": "C02",
+      "status": "verified_selected_source_identity",
+      "topic": "C equation (4) matches all six printed (94) terms",
+      "source_location": "CMP102 printed 292, (94)",
+      "detail": "With X=F_mu(x), Y=F_nu(x), alpha=nabla_mu F_nu(x), beta=nabla_nu F_mu(x), printed (94) is 2i[X,Y]+2i eta[X,alpha]+2i eta[beta,Y]-i eta[X,beta]-i eta[alpha,Y]-i eta^2[alpha,beta]. C has exactly this coefficient, sign and ordering in each term. B alone has the opposite sixth term. The printed plus-eta product rule (96) also agrees with C equation (6), which is unchanged from B. This is a selected identity check, not a validation of every published result."
+    },
+    {
+      "id": "C03",
+      "status": "verified",
+      "topic": "Actual fixed-root transported fields and S=eta d0F",
+      "source_location": "CMP102 printed 283 (34); CMP99 printed 391 (3.4)",
+      "detail": "Set p=(x,y,z,w), y=x+eta e_mu and w=x+eta e_nu. At the same fixed base point x, the oriented fields along (x,y),(y,z),(z,w),(w,x) are X, R(U0(x,y))F_nu(y)=Y+eta alpha, -R(U0(x,w))F_mu(w)=-X-eta beta, -Y. Thus C uses the actual covariant fields, not untransported differences. Their sum is eta(alpha-beta)=eta d0F by source (3.4). The (34) order (z,w),(w,x),(x,y),(y,z) is the two-edge cyclic rotation of this same list. No flat-background assumption or new transport path is required. The comparison is at a common base point; it does not authorize arbitrary spatial-root or transport changes."
+    },
+    {
+      "id": "C04",
+      "status": "verified_by_general_algebra",
+      "topic": "The ordered four-field commutator expands to corrected equation (4)",
+      "detail": "For a=(X,Y+eta alpha,-X-eta beta,-Y), Q(a)=i sum_(r<s)[a_r,a_s]. Expanding its six pairs gives the six terms of C02 exactly, including -i eta^2[alpha,beta]. An independent exact calculation with noncommuting symbols reproduced this as a free-polynomial identity, so the check is not limited to 2 by 2 matrices. The original self-check uses arbitrary symbolic 2 by 2 matrices and is consistent with this stronger algebraic check."
+    },
+    {
+      "id": "C05",
+      "status": "verified_by_general_trace_identity",
+      "topic": "Cyclic-prefix invariance has precisely scalar scope",
+      "detail": "For any prefix sum P and total sum S, moving that prefix behind the remaining fields gives Q(rotated a)-Q(a)=-2i[P,S]. Since Tr(S[P,S])=Tr(SPS-S^2P)=0 by trace cyclicity, (1/2)Tr(d0F Q) is invariant when S=eta d0F. All three nontrivial prefix rotations were also checked by exact cyclic-word reduction. The common-root matrix-valued Q generally changes; C explicitly declines to equate those matrices. The initially inherited wording describing C_p as the original ordered sum is qualified by the later explicit representative and scalar-only statement, and does not require a false matrix equality. Fixed-background complex bilinear trace has the same cyclic identity."
+    },
+    {
+      "id": "C06",
+      "status": "verified_with_historical_adverse_finding_preserved",
+      "topic": "B error remains a matrix error although its scalar contribution vanishes",
+      "detail": "Q_B-Q_C=2i eta^2[alpha,beta] is not identically zero. B report F03 and its exact Pauli witness remain adverse for B. However (1/2)Tr((d0F)(Q_B-Q_C))=i eta^2 Tr((alpha-beta)[alpha,beta])=0 as an identity for arbitrary complex matrices. Each of Tr(alpha[alpha,beta]) and Tr(beta[alpha,beta]) vanishes by cyclicity. Consequently the correction fixes the claimed matrix identity without altering this scalar cubic action. It does not retroactively validate B or claim the uncontracted expressions are interchangeable."
+    },
+    {
+      "id": "C07",
+      "status": "verified",
+      "topic": "First and second variations remain consistent after correction",
+      "detail": "Both the cyclic-root difference and B-to-C scalar difference vanish identically as cubic functions on the fixed-U0 linear field coordinates, not only at one chosen F. Their first and second Frechet variations therefore vanish. Independent exact expansion at F+t u+s v verified the zero scalar polynomial and its coefficients of t and ts for each difference. With Q(F,v) the symmetric polarization, delta Q(F,F)[v]=2Q(F,v). Direct variation gives G3=(1/2)d0sharp Q(F,F)+Q_Fsharp d0F and K3(F)v=d0sharp Q(F,v)+Q_vsharp d0F+Q_Fsharp d0v, exactly C equation (5). In bilinear form the Hessian is <d0u,Q(F,v)>+<d0v,Q(F,u)>+<d0F,Q(u,v)>. The three combined terms are invariant; individual matrix terms or their adjoints need not coincide across representatives. No derivative of a field-dependent transport is omitted because U0 is fixed."
+    },
+    {
+      "id": "C08",
+      "status": "compatible_with_unchanged_conditional_estimates",
+      "topic": "Remainder split and first-jet bounds introduce no correction-dependent loss",
+      "detail": "V3 is the same scalar functional, so Wrem=V0-V3 and its derivatives are unchanged as well. This preserves the raw field-only remainder premise, local Cauchy radii and eta^4 cancellation used in (1)-(3). The corrected final term still carries eta^2; its polarized term is -(i eta^2/2)([alpha(F),beta(v)]+[alpha(v),beta(F)]). In the differentiated local estimate one eta absorbs d0sharp as a finite shifted difference, leaving one eta. The other five terms and plus-eta backward rule are unchanged. There is no new eta inverse, second-derivative requirement, discarded contact term or gradient of a sharp mask. Equation (7) remains compatible with the same fixed-star and owner-scale premises; this is a check of the correction effect, not a new audit of those geometric premises."
+    },
+    {
+      "id": "C09",
+      "status": "compatible_with_unchanged_chain_rule",
+      "topic": "Full nonlinear Hessian and transported bounds remain coherent",
+      "detail": "Since G0=V0 prime and K0=V0 double-prime are unchanged, F=A-HD, T=I-HD1, D double-prime=R_c Ccal double-prime(F)[Tu,Tv], Xi=R_csharp Pi_nl Hsharp G0 and Kpot=Tsharp K0 T-Tsharp L_(Xi,F)T remain unchanged. C still derives the scalar second variation first, includes the full second-chain term, uses weighted bilinear transposes, and keeps all coefficients at the same A. No extra derivative of Xi must be added to an already computed Hessian. The unmasked Tv argument, output-H derivative, finite support enlargement, weight cancellations and delta/4 sums in (10)-(14) are unaffected by the local commutator/root correction. Their original kernel, curried-density and summability assumptions remain conditional inputs."
+    },
+    {
+      "id": "C10",
+      "status": "full_C_compatibility_read_no_new_incompatibility_found",
+      "topic": "Complete corrected derivation and unchanged admission limits",
+      "detail": "The entire C derivation, its metadata, limits and appended provenance were read. No incompatibility introduced by the two mathematical changes was found in (1)-(16). In particular the common positive delta, all sums evaluated at that rate, original source domain, compact fixed U0, old averaging/mean, local chart restrictions and epsilon_source intersection are retained. The finite sum in (16) remains a conditional source-189-type statement at delta/4 with no extra convolution on addition. This report supplies no numerical witness that the fixed physical profile satisfies those requirements and does not rereview every antecedent."
+    },
+    {
+      "id": "C11",
+      "status": "provenance_and_scope_limit",
+      "topic": "What is and is not verified by the correction scripts and this report",
+      "detail": "correct1744-sign.py records the earlier A-to-B product-rule correction; that provenance remains unchanged. correct1744-commutator.py tests the four-field identity, matrix discrepancy, sum, scalar trace and a two-edge rotation, then applies precisely the C changes observed here. Neither script was executed in this verification, so its normal writes were avoided. This report independently checked the required algebra and source pages. No formal proof-assistant build, whole-source audit, physical admission, later-mean dictionary, source (190), C1/base mixed theorem, normalized marked/history conclusion, manuscript/PDF/Capacity assessment, grade or publication is established. Effective model, effort and independence remain unauthenticated."
+    }
+  ],
+  "checks": {
+    "full_reads": [
+      "PLAQUETTE-JET-HESSIAN1744C.json",
+      "PLAQUETTE-JET-HESSIAN1744B.json",
+      "ASSESSMENT1744.json: all 18 findings",
+      "SELF-CHECK-COMMUTATOR1744.json",
+      "correct1744-commutator.py",
+      "correct1744-sign.py",
+      "SELF-CHECK-SIGN1744.json"
+    ],
+    "source_rendering": "PyMuPDF 1.26.6; selected full pages rendered to memory and passed directly to the image viewer; no PDF/PNG/corpus copy created.",
+    "symbolic_method": "SymPy 1.14.0, exact noncommutative free-polynomial expansion and cyclic trace-word reduction; positive powers of a noncommuting symbol expanded into repeated letters before canonical cyclic rotation.",
+    "symbolic_results": {
+      "four_field_sum": true,
+      "six_term_matrix_identity": true,
+      "all_three_prefix_matrix_change_formulas": true,
+      "all_three_prefix_trace_invariances": true,
+      "B_matrix_error_nonzero": true,
+      "B_scalar_error_zero": true,
+      "B_correction_first_variation_zero": true,
+      "B_correction_mixed_second_variation_zero": true,
+      "source34_rotation_first_variation_zero": true,
+      "source34_rotation_mixed_second_variation_zero": true,
+      "symmetric_polarization_factor_two": true,
+      "cubic_gradient_factors": true,
+      "cubic_hessian_three_terms": true
+    },
+    "check_implementation_note": "An initial exploratory trace reducer did not expand repeated-symbol powers into letters and reported false nonzero remnants. That reducer was corrected, checked on Tr(alpha beta^2-beta alpha beta)=0, and all required reductions were rerun successfully. This was a checking-code issue, not a candidate change. The general cyclicity proofs above do not rely on that reducer.",
+    "input_hashes_before_authoring": "All pinned input and directly inspected PDF hashes match.",
+    "not_performed": "No execution of the writing correction scripts, no full ancestral audit, no formal build or physical-profile test, and no manuscript/PDF/Capacity or score validation."
+  },
+  "disposition": {
+    "label": "BOUNDED_B_TO_C_CORRECTION_VERIFIED_WITH_UNCHANGED_CONDITIONAL_SCOPE",
+    "correction": "C equation (4) matches printed CMP102 (94); the explicit cyclic representative and S=eta d0F are consistent with the original fixed transports; scalar cyclic invariance and its derivatives are valid.",
+    "compatibility": "No incompatibility introduced by this correction was found on reading the complete C derivation. The exact scalar gradient/Hessian and conditional norm calculation remain coherent at the retained source-premise scope.",
+    "historical_record": "B and ASSESSMENT1744.json remain closed and unchanged, including F03. This is not a replacement verdict on B and not a restart to improve a grade.",
+    "physical_and_manuscript_limit": "No physical admission or manuscript/PDF/Capacity validation is inherited or supplied."
+  },
+  "final_verdict": "The exact B-to-C correction is verified at the stated bounded scope. C fixes the reversed final commutator, uses a valid common-root cyclic representative with sum eta d0F, and correctly restricts cyclic invariance to the scalar trace contraction. First and second variations are consistent, with no new incompatibility found in the complete C derivation. The closed adverse finding on B remains preserved. Every physical, original-source and common-parameter admission premise remains conditional; no broader theorem, manuscript, PDF, Capacity, publication or grade is certified."
+}

@@ -1,0 +1,234 @@
+{
+  "assessment": "ASSESSMENT1742",
+  "unscored": true,
+  "input": {
+    "path": "C:/Trabajo/airr/2026-10-31_execution1742/LOCALIZED-CURRENT-CONVOLUTION1742.json",
+    "sha256": "bca0d89789f0bc8882ce3fc3c22e8a7dce561d5d6cee234ba40571cd07e1ffa0",
+    "frozen_input_verified": true
+  },
+  "reviewer_provenance": {
+    "requested_model": "Astra",
+    "requested_reasoning_effort": "xhigh",
+    "actual_model_identity": "Unauthenticated in this assessment context.",
+    "actual_reasoning_effort": "Unauthenticated in this assessment context.",
+    "review_independence": "Unauthenticated. A separate assessment context was supplied; no provider-level evidence authenticates independence, model identity, or reasoning effort.",
+    "method": "Direct mathematical checking of this frozen candidate and selected original source pages. No numerical grade, target, restart, whole-manuscript, PDF-quality, or Capacity assessment."
+  },
+  "disposition": {
+    "label": "accepted_conditional_single_current_contribution",
+    "verdict": "No blocking mathematical gap found in the localized d=4 bound for the actual fixed-background SOURCE85 current contribution, conditional on the original quoted kernel/complex-mean premises and every explicit collar, summability, and smallness test in the frozen input.",
+    "established_scope": "The five-piece current Hessian has block output weight s_y^-3, input field weight (-1), coefficient C_cur epsilon1 epsilon3, and decay exp[-delta0 d(y,z)/4], including the original tildeDelta input support. With epsilon1<=1 this is the current contribution to the epsilon3 bound in original (189).",
+    "not_established": "A verified fixed physical parameter/domain profile, the other (88)/(89)/(90)/(93) contributions, later-mean identification, full (189), (190), or a physical/marked/normalized/history theorem.",
+    "blocking_findings": 0,
+    "required_mathematical_corrections_to_this_component": []
+  },
+  "review_scope": {
+    "new_result_only": 1742,
+    "antecedents_read": "Only directly needed derivations and limits of CURRENT-TERM-SECOND-DERIVATIVE1740.json and LOCAL-MEAN-CURRIED-DENSITY1741.json. Earlier assessments were not reopened, repeated, or rescored; no ancestral hash audit was performed.",
+    "source_statement_depth": "Selected original definitions, kernels, geometry, density conventions, and summability statements were checked. Complete literature proofs of the propagator and complex averaging theorems were not independently re-proved.",
+    "media": "Selected pages were rendered in memory for visual inspection. No source images or other source media were saved.",
+    "modifications": "Only this ASSESSMENT1742.json report is authored."
+  },
+  "source_checks": [
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/cmp102_variational/1104114383.pdf",
+      "printed_pages": [
+        277,
+        282,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290,
+        291,
+        292,
+        293,
+        307,
+        308,
+        309
+      ],
+      "checked": "Original incident-bond domains/collar (1), current (28), normalized right inverse (45), fixed point (49), zero Lambda0 sector (51), field bound (57), density compositions (66)-(73), subtraction/current functional (78)-(85), ambient derivatives, and actual support/coefficient/decay in (189)."
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/cmp99/1103942769.pdf",
+      "printed_pages": [
+        397,
+        398,
+        420,
+        421,
+        422
+      ],
+      "checked": "Weighted norm (3.41), Delta and tildeDelta, H formula (3.126), explicit variational normalization following (3.133), and distinction from the unnormalized H*J discussion following (3.136)."
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balabanfusion.pdf",
+      "cmp96_pdf_pages": [
+        331,
+        332,
+        337,
+        338,
+        339,
+        340,
+        341,
+        342
+      ],
+      "cmp96_printed_pages": [
+        223,
+        224,
+        229,
+        230,
+        231,
+        232,
+        233,
+        234
+      ],
+      "checked": "Aligned block geometry (2.1)-(2.4), admissible distance (2.46), triangle inequality, collar-dependent hypothesis (2.59), scale separation (2.60), and summability/convolution (2.61)-(2.63)."
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balabanfusion.pdf",
+      "cmp98_pdf_pages": [
+        309,
+        312,
+        317,
+        318,
+        319,
+        320,
+        321
+      ],
+      "cmp98_printed_pages": [
+        31,
+        34,
+        39,
+        40,
+        41,
+        42,
+        43
+      ],
+      "checked": "Two-block fluctuation locality, functional-density normalization (138), first coefficient (157), and stated analyticity/uniform extension of Proposition 5. These support the conditional coefficient premise used from1741."
+    }
+  ],
+  "findings": [
+    {
+      "id": "F01",
+      "classification": "validated",
+      "topic": "Correct normalized H input power",
+      "location": "Published kernels; remaining current leg",
+      "analysis": "CMP99 (3.133) bounds the first H component by C s_c^-d exp[-delta0 d(y,c)/2] for the unnormalized right inverse. The paragraph below explicitly requires an additional input factor s_c^-1 for the variational problem. CMP102 (45)/(49) uses that normalized inverse. Thus d=4 gives s_c^-5. Importing the unnormalized s_c^-3 current contraction after (3.136) would be wrong here;1742 does not do that.",
+      "consequence": "The current leg starts with the correct dimension and measure."
+    },
+    {
+      "id": "F02",
+      "classification": "validated_conditional",
+      "topic": "Original scale separation and summability",
+      "location": "Geometry and (a)",
+      "analysis": "From (2.60), d(y,z)>=ell max(|j_y-j_z|-1,0). Hence s_y/s_z and its reciprocal are at most L exp[(log L/ell)d(y,z)]. The explicit delta0 ell>=16 log L bounds this cost by L exp[delta0 d/16]. The candidate separately retains the actual (2.59) conditions needed for C(1/16), C(1/8), C(1/2), rather than deriving them from the scale-ratio test alone.",
+      "consequence": "The scale transfer and all summability uses are valid if the stated tests hold. Their truth for a fixed physical profile is not established."
+    },
+    {
+      "id": "F03",
+      "classification": "validated",
+      "topic": "Gamma dimension and absence of volume growth",
+      "location": "Remaining current leg",
+      "analysis": "Fine block integration contributes at most C_d s_y^4, and source current (28) contributes J0 epsilon1 s_y^-3. Thus |Gamma(c)|<=C epsilon1 s_c^-5 sum_y s_y exp[-delta0 d(y,c)/2]. Equation (a) replaces s_y by L s_c exp[delta0 d/16], leaving exponent 7delta0/16. Bounding the remaining sum by the weaker C(1/16) is valid, giving Gamma=O(epsilon1 s_c^-4). Bond/color multiplicities are fixed constants.",
+      "consequence": "The g=C_Gamma epsilon1 coefficient is justified; no extensive volume factor remains."
+    },
+    {
+      "id": "F04",
+      "classification": "validated_conditional",
+      "topic": "Resolvent difference and coarse transpose",
+      "location": "(b)",
+      "analysis": "For S(c,cprime)<=C_S epsilon3 s_cprime^-4 exp[-delta0 d(c,cprime)], every intermediate coarse factor s_c^4 cancels its input density. The nth Neumann term is bounded by (C_S epsilon3)^n C(1/2)^(n-1) s_cprime^-4 exp[-delta0 d/2]. Under C_S epsilon3 C(1/2)<=1/2 the sum is bounded by twice its first coefficient. In (R-I)^sharp Gamma, s_c^4 |Gamma(c)|<=g, leaving the row sum C(1/2), exactly as in (b).",
+      "consequence": "The series starts with S, and no identity delta density is replaced by 1. The transpose cancellation uses d=4."
+    },
+    {
+      "id": "F05",
+      "classification": "validated",
+      "topic": "N density and first decay allocation",
+      "location": "(c)",
+      "analysis": "The coarse composition leaves s_c^4 s_c^-5 s_z^-3=s_c^-1 s_z^-3. Comparing s_c^-1 with s_y^-1 costs L exp[delta0 d(y,c)/16]. The edge exponents become 7delta0/16 and 8delta0/16. Extracting 6delta0/16 times d(y,z) leaves delta0/16 and delta0/8. The C(1/16) sum therefore gives K_N epsilon3 s_y^-1 s_z^-3 exp[-3delta0 d(y,z)/8].",
+      "consequence": "Both density powers and the retained 3delta0/8 exponent are correct."
+    },
+    {
+      "id": "F06",
+      "classification": "validated",
+      "topic": "The two fine transport bounds",
+      "location": "(c)-(d)",
+      "analysis": "For N acting on a weight (-1) field supported in Delta(z), the fine factors are s_z^4 s_z^-3 s_z^-1=1. For Nsharp acting on a weight (-3) field there, the transposed density is s_z^-1 s_y^-3 and the factors are s_z^4 s_z^-1 s_z^-3=1. The output is s_y^-3. Both block estimates consequently have the stated common constant after fixed incidence factors, on their respective weighted spaces.",
+      "consequence": "The transpose estimate comes from the fine pairing, not an assumed equality of unrelated norms."
+    },
+    {
+      "id": "F07",
+      "classification": "validated_conditional",
+      "topic": "Owner levels, finite incidence, admissible local paths",
+      "location": "Actual local averaging Hessian; geometry",
+      "analysis": "S_c consists of two adjacent level-j blocks. A fine site within O(d s_c) of an endpoint in Lambda_j cannot leave Omega_(j-1): the gap to its complement is at least ell s_c/L. Nor can it reach Omega_(j+2) through the adjacent inner collar. The explicit ell>=32dL supplies slack for these distances and incident fine bonds. Owner levels are j-1,j,j+1, truncated at the endpoint levels. For any fixed output bond, only finitely many adjacent roots/coarse bonds per level can contain it in S_c. The aligned complete-block geometry also gives bounded admissible paths: each annular portion follows its own coarse lattice, with transitions on aligned interface grids. Such paths may use the adjacent full owner block, including a coarser owner block when needed, and cost a constant depending on d,L rather than eta, scale count, or volume.",
+      "consequence": "C_geom and D_geom are justified under the stated original geometry and collar. An arbitrary fine-lattice path, or an unrelated eroded/replacement domain, would not justify this step and is not authorized by the proof."
+    },
+    {
+      "id": "F08",
+      "classification": "validated_conditional",
+      "topic": "Local field radius and factor L",
+      "location": "Before (f)",
+      "analysis": "Source (57) gives the global weight (-1) bound. On S_c the worst owner level is j-1, so sup_Sc s_c |F|<=2L epsilon3. The explicit epsilon3<=a/(8L) implies the a/4 radius required by1741. Its difference coefficient is at most (32L C3/a) epsilon3 s_c^-3 M_c(v). Also M_c(v)<=L |v|_(-1) on an intersecting input block and s_c^-3<=L^3 s_y^-3 at the output.",
+      "consequence": "The required L factors are retained. The uniform complex radius a and its original hypotheses remain conditional literature premises."
+    },
+    {
+      "id": "F09",
+      "classification": "validated",
+      "topic": "Curried density, evaluation, contact terms",
+      "location": "(e)-(f)",
+      "analysis": "The1741 density already uses eta^4. Reading the output from <u,L_Gamma,F v>_fine removes that evaluation weight once and leaves sum_c s_c^4 L_F(c;b;v)^t Gamma(c), with no extra eta^-4. Then s_c^4 |Gamma(c)|<=g and the density s_c^-3 M_c(v), together with F07/F08, gives s_y^-3 with finite constants. Gamma1 adds K_R epsilon3; the F-minus-zero difference adds its explicit epsilon3. Finite metric support permits the inserted exp[-3delta0 d(y,z)/8] at cost exp[(3delta0/8)D_geom].",
+      "consequence": "The three bounds in (f) follow without a smooth joint two-input density assumption or deletion of contact terms."
+    },
+    {
+      "id": "F10",
+      "classification": "validated",
+      "topic": "All five operators and exact signs",
+      "location": "(g)",
+      "analysis": "The five terms in1740 are (R-I) C_F[Tu,Tv], (C_F-C_0)[Tu,Tv], -C_0[Nu,v], -C_0[u,Nv], +C_0[Nu,Nv]. Contracting with Gamma produces Tsharp L_Gamma1,F T, Tsharp(L_Gamma,F-L_Gamma,0)T, -Nsharp L_Gamma,0, -L_Gamma,0 N, +Nsharp L_Gamma,0 N. The single overall minus comes from Vcur=-<HD3,J>. These are exactly (g).",
+      "consequence": "No factor or sign is missing. This is the already computed Hessian at one A, not differentiation of an artificial frozen-coefficient energy."
+    },
+    {
+      "id": "F11",
+      "classification": "validated",
+      "topic": "Final decay allocation and mixed sums",
+      "location": "(h)",
+      "analysis": "After expanding T=I-N, each product has at most three block operators, with spaces (-1) to (-1), (-1) to (-3), and (-3) to (-3) in the correct order. Each nonidentity factor has 3delta0/8 decay; identity retains exact local support. The triangle inequality extracts delta0/4 of endpoint distance, leaving delta0/8 on each edge. At most two intermediate sums cost C(1/8)^2. No cell measure is reinserted into the already normalized block estimates.",
+      "consequence": "C_conv=max(1,C(1/8)^2) and the bracket in (h), including both T factors and 2n+n^2, are valid. The delta0/4 spatial exponent survives the actual sums."
+    },
+    {
+      "id": "F12",
+      "classification": "validated",
+      "topic": "Retained coefficient and printed target",
+      "location": "After (h); CMP102 (189)",
+      "analysis": "With n=K_Nprime epsilon3 and epsilon3<=1, the bracket in (h) is O(epsilon3) with fixed constants. Since g=C_Gamma epsilon1, the estimate is C_cur epsilon1 epsilon3. Direct high-resolution inspection of original (189) confirms its printed coefficient is epsilon_3. An initial low-resolution glyph ambiguity was resolved by that inspection and is not an adverse finding.",
+      "consequence": "The retained epsilon1<=1 yields the current part of the epsilon3 bound. No printed-source correction is needed."
+    },
+    {
+      "id": "F13",
+      "classification": "validated_conditional",
+      "topic": "Original tildeDelta support and rough masks",
+      "location": "Support extension",
+      "analysis": "CMP99 printed397 defines tildeDelta(z) as the centered cube of side 2s_z. The same collar restricts intersecting owner levels to j_z-1,j_z,j_z+1 and bounds both their number and their label distances by constants depending on d,L. Disjoint site-owner restrictions each have norm at most the original field norm. The triangle inequality changes exp[-delta0 d(y,z_i)/4] by at most exp[(delta0/4)D_ext], giving the stated C_ext factor. Incident bond assignments have bounded multiplicity. Rough masks need not preserve gradients: this current contribution uses only the field norm, and D has ambient field-chart derivatives by CMP102 (49)-(57), (63)-(73), and the discussion after (84).",
+      "consequence": "The actual input support in (189) is covered, and the field estimate is bounded by max(field norm, gradient norm) without an invalid gradient-admissibility inference."
+    },
+    {
+      "id": "F14",
+      "classification": "scope_condition_not_verified",
+      "topic": "Original profile and literature premises",
+      "location": "Source inputs and scope",
+      "analysis": "The implication retains original H/Dprime/S/current bounds, the complex q_j premise, actual source domain/incidence, ell>=32dL, delta0 ell>=16 log L, the (2.59) tests at all three fractions, C_S epsilon3 C(1/2)<=1/2, epsilon3<=a/(8L), epsilon3<=1, and inherited source small-field/background assumptions. No concrete simultaneous fixed physical instantiation of those tests is supplied.",
+      "consequence": "This is an essential stated limitation, not a completed physical admission. Constants are not certified for arbitrary backgrounds, later histories, altered means, or unrelated excluded volumes."
+    },
+    {
+      "id": "F15",
+      "classification": "scope_respected",
+      "topic": "One actual current contribution",
+      "location": "Status, derivation, gain, limits, scope",
+      "analysis": "The candidate concerns only fixed-background (85), with the quadratic current already subtracted by (78)/(79). Other (88)/(89)/(90)/(93) contributions, later-mean identification, full (189), (190), and physical uses are expressly open. This new convolution review validates none of them by inheritance.",
+      "consequence": "No scope overclaim requiring rejection was found; acceptance is only at the conditional component level."
+    }
+  ],
+  "summary": "All requested critical checks pass at the stated conditional source-component scope. The new result is the localized current estimate with coefficient epsilon1 epsilon3 and decay delta0/4, with density weights and supports accounted for. No fixed physical profile or full189 conclusion is admitted."
+}

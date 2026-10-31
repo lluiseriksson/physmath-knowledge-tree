@@ -1,0 +1,221 @@
+{
+  "execution": 1748,
+  "artifact": "TECHNICAL-BYTE-PRESERVATION1748",
+  "created_utc": "2026-10-31T20:07:02.439718+00:00",
+  "inspection_kind": "Separate bounded technical inspection of byte-preservation formatting exceptions",
+  "unscored": true,
+  "scope": {
+    "worktree": "C:/Trabajo/physmath-knowledge-tree/physical-mean-admission1728",
+    "reviewed_files": [
+      {
+        "path": "scripts/immutable-evidence.mjs",
+        "sha256": "76617b635f5d96355fd1d4173c67fa4affe8f2a879cc21e98d5556506e893ebc",
+        "bytes": 766,
+        "matches_live_file_at_report_write": false
+      },
+      {
+        "path": "scripts/check-format.mjs",
+        "sha256": "a6504c8066579551771426fe34184b205f91636975b523c13621787c71b6b0b2",
+        "bytes": 1986,
+        "matches_live_file_at_report_write": true
+      },
+      {
+        "path": "integrations/research-radar/immutable-evidence.json",
+        "sha256": "f581cba732a5a0236b3d6327349f92cd043432abcee5613efd4132540e4bfad9",
+        "bytes": 1426,
+        "matches_live_file_at_report_write": true
+      },
+      {
+        "path": "test/immutable-evidence.test.mjs",
+        "sha256": "0f06d294b090255f8eb12d1d6005483aa7e17ce1a992f21e7b695ee824f5652f",
+        "bytes": 1388,
+        "matches_live_file_at_report_write": false
+      }
+    ],
+    "included": "Complete reading of the four files, tracked check-format diff, exact hashes and strict UTF-8/JSON checks of the five registered historical files, and one memory-only probe of invalid UTF-8 acceptance.",
+    "excluded": [
+      "Mathematical review or source proof",
+      "Reopening or changing ASSESSMENT1748B",
+      "Extending the 26-file B input set",
+      "Whole final-release review or remote publication validation",
+      "Independent attestation of model, effort or reviewer independence",
+      "A hostile-filesystem security audit or exhaustive validator tests"
+    ],
+    "independence_attestation_claimed": false,
+    "no_score_or_grade_target": true
+  },
+  "separation_from_B": {
+    "B_report_sha256_unchanged": "1b21be6e26dd51a48588051b756007981404c00eb2c0cc0ead78850070d95d48",
+    "B_report_bytes": 43788,
+    "B_input_manifest_sha256": "4cc66ab5a874f7b3818b2ee3989ec8770fbdcb8c075fc2e9cae869d1e23bc791",
+    "these_four_files_are_outside_B_26_inputs": true,
+    "B_coverage_extended": false,
+    "B_or_prior_mathematical_verdicts_reissued": false
+  },
+  "registered_historical_files": [
+    {
+      "path": "integrations/research-radar/evidence/2026-10-31-physical-mean-admission/source-consumer-1748/ASSEMBLY-INPUT1748.json",
+      "sha256": "a4d0b4f93b782cebf630d2d249919a7975169ebca8554fa6ab8f7984b9441cbe",
+      "bytes": 5666,
+      "sha256_verified": true,
+      "strict_utf8_valid": true,
+      "json_parse_valid": true,
+      "CRLF_count": 117,
+      "has_final_LF": true
+    },
+    {
+      "path": "integrations/research-radar/evidence/2026-10-31-physical-mean-admission/source-consumer-1748/ASSESSMENT1741.json",
+      "sha256": "b7e78a3a70239fdafeea2bcb2d86dd0d8c36ef2dc7868f3f5a601ffd29a9093b",
+      "bytes": 18479,
+      "sha256_verified": true,
+      "strict_utf8_valid": true,
+      "json_parse_valid": true,
+      "CRLF_count": 0,
+      "has_final_LF": false
+    },
+    {
+      "path": "integrations/research-radar/evidence/2026-10-31-physical-mean-admission/source-consumer-1748/ASSESSMENT1742.json",
+      "sha256": "7430b010fe186f58bc27f6d4f6d2264a02209b6fce8cc46c57f3f268f4b51fdd",
+      "bytes": 16934,
+      "sha256_verified": true,
+      "strict_utf8_valid": true,
+      "json_parse_valid": true,
+      "CRLF_count": 1,
+      "has_final_LF": true
+    },
+    {
+      "path": "integrations/research-radar/evidence/2026-10-31-physical-mean-admission/source-consumer-1748/ASSESSMENT1743.json",
+      "sha256": "74afdaa26b71c50e4719c386601e344f1ce101cfb07e3e93a957adf3d682ff81",
+      "bytes": 18281,
+      "sha256_verified": true,
+      "strict_utf8_valid": true,
+      "json_parse_valid": true,
+      "CRLF_count": 192,
+      "has_final_LF": true
+    },
+    {
+      "path": "integrations/research-radar/evidence/2026-10-31-physical-mean-admission/source-consumer-1748/public-input-manifest.json",
+      "sha256": "ee672b0c3a550741845fa9d3b17a3ceed8aab9c54d3c8e5feef55bd8a3238c21",
+      "bytes": 7464,
+      "sha256_verified": true,
+      "strict_utf8_valid": true,
+      "json_parse_valid": true,
+      "CRLF_count": 126,
+      "has_final_LF": true
+    }
+  ],
+  "tests_inspected": [
+    {
+      "name": "immutable evidence preserves the original CRLF bytes",
+      "inspection": "Checks the exact receipt is returned for a CRLF JSON fixture with matching SHA256.",
+      "executed_by_this_assessor": false
+    },
+    {
+      "name": "normalizing a pinned report is an integrity failure",
+      "inspection": "Converts the same fixture CRLF to LF and expects a hash mismatch.",
+      "executed_by_this_assessor": false
+    },
+    {
+      "name": "format exception cannot escape evidence or accept duplicate receipts",
+      "inspection": "Checks rejection of ../report.json and a duplicated identical path string. This is not a symlink or canonical-alias containment test.",
+      "executed_by_this_assessor": false
+    },
+    {
+      "name": "a matching digest cannot exempt malformed JSON",
+      "inspection": "Uses matching hash for the ASCII text not JSON and expects SyntaxError. It does not cover invalid UTF-8 embedded inside an otherwise JSON-shaped byte stream.",
+      "executed_by_this_assessor": false
+    }
+  ],
+  "test_run_provenance": "The parent reported four tests passing. This inspection read the complete tests but did not repeat their execution, and does not attest the reported prior run. A separate memory-only probe was executed as described below.",
+  "executed_memory_probe": {
+    "purpose": "Check whether the generic valid-JSON-byte claim includes strict UTF-8 decoding.",
+    "fixture_hex": "7b2276616c7565223a22ff227d",
+    "fixture_sha256": "161f0360f615fb47c59dd14d9ae01eb6449378d169c1532b10ebe3abafb30b04",
+    "synthetic_path": "integrations/research-radar/evidence/example/invalid-utf8.json",
+    "files_created": false,
+    "repository_files_modified": false,
+    "strict_fatal_utf8_decoder_accepted": false,
+    "validateImmutableEvidence_with_matching_hash_accepted": true,
+    "observed_result": {
+      "memoryOnlyProbe": true,
+      "strictUtf8Accepted": false,
+      "validatorAccepted": true
+    }
+  },
+  "findings": [
+    {
+      "id": "T01",
+      "status": "verified",
+      "topic": "Exact separate technical snapshot",
+      "finding": "All four technical files were read completely and bound to the listed whole-file hashes and sizes. They are outside the 26 inputs reviewed by ASSESSMENT1748B. This technical report does not change that report or enlarge its input coverage. Any later code correction has different bytes and is not automatically covered by this inspection."
+    },
+    {
+      "id": "T02",
+      "status": "verified_for_current_five_receipts",
+      "topic": "Actual historical formats and valid bytes",
+      "finding": "All five registered payloads match their declared hashes and pass strict UTF-8 decoding and JSON parsing. ASSEMBLY-INPUT1748 has 117 CRLF sequences; ASSESSMENT1741 has no final LF; ASSESSMENT1742 has one CRLF sequence; ASSESSMENT1743 has 192; public-input-manifest has 126. Preserving those bytes avoids invalidating their existing hash bindings. The invalid-UTF-8 limitation T07 does not occur in these five files."
+    },
+    {
+      "id": "T03",
+      "status": "verified",
+      "topic": "Exact format exemption rather than normalization",
+      "finding": "The registry is validated before the repository walk. Only canonical relative path strings present in the resulting Map are skipped. Skipping preserves the bytes and exempts all three canonical-text checks: CRLF rejection, required final LF and trailing whitespace. Unregistered files still undergo those checks. The mechanism neither rewrites files nor validates their mathematics."
+    },
+    {
+      "id": "T04",
+      "status": "verified_with_trust_boundary",
+      "topic": "Hash and parse failures precede exemption",
+      "finding": "A differing byte stream fails SHA256 comparison, and JSON.parse failures abort before the allowed Map is returned. Missing files and malformed records also fail rather than silently adding an exemption. The registry itself is trusted version-controlled input: changing both a payload and its recorded hash changes the approved evidence set and requires review; hashing does not independently prove historical authenticity."
+    },
+    {
+      "id": "T05",
+      "status": "verified_at_lexical_path_scope",
+      "topic": "Path restrictions and duplicate handling",
+      "finding": "Receipt paths must have the research-radar evidence JSON prefix/suffix, contain only the accepted characters, have no literal .. segment and no repeated identical path string; SHA256 values must be 64 lowercase hex digits. The reviewed five paths are ordinary canonical repository-relative paths. The code does not implement realpath/symlink containment or canonical-alias duplicate detection, and the tests do not demonstrate those properties. The mechanism should not be presented as a general hostile-filesystem security boundary. No such escape or alias is present in the reviewed registry."
+    },
+    {
+      "id": "T06",
+      "status": "tests_inspected_not_reexecuted",
+      "topic": "Coverage of the four committed tests",
+      "finding": "The four tests directly cover a matching CRLF receipt, byte normalization mismatch, an obvious outside path plus exact duplicate path, and ASCII malformed JSON with a matching digest. They were read completely. The parent-reported passing run is not independently reattested here. They do not cover strict UTF-8 rejection or every possible invalid record/filesystem case."
+    },
+    {
+      "id": "T07",
+      "status": "adverse_generic_validation_limit",
+      "severity": "low_for_current_pinned_release",
+      "topic": "Lossy UTF-8 decoding can admit invalid original JSON bytes",
+      "location": "scripts/immutable-evidence.mjs:15",
+      "finding": "JSON.parse(bytes.toString(utf8)) parses the decoded string after Node replaces invalid UTF-8 bytes. A memory-only fixture with byte 0xFF inside a quoted JSON value was rejected by a fatal UTF-8 decoder but accepted by validateImmutableEvidence when its SHA256 matched. Therefore the generic claim that every accepted original byte payload is valid UTF-8 JSON is too strong for this exact implementation. All five current registered files separately passed strict decoding, so this does not invalidate their preservation or B.",
+      "recommended_action": "Before claiming generic strict UTF-8 JSON validation, decode with a fatal UTF-8 decoder before JSON.parse and add a rejection test using a matching digest for invalid UTF-8 bytes. Preserve this adverse observation if a later corrected code snapshot is inspected."
+    },
+    {
+      "id": "T08",
+      "status": "verified_no_observed_rule_weakening",
+      "topic": "Additional check-format diff",
+      "finding": "Besides importing/initializing the receipt validator and skipping matched paths, the diff changes the trailing-whitespace scan to normalize CRLF in memory first. Unregistered CRLF files still fail the explicit carriage-return check. The in-memory replacement can expose trailing spaces that were previously followed by CR, but does not write normalized bytes or relax the CRLF prohibition. Thus the diff includes this diagnostic change as well as the receipt exemption."
+    },
+    {
+      "id": "T09",
+      "status": "verified_scope_boundary",
+      "topic": "No mathematical, independence or complete-release claim",
+      "finding": "The code and registry provide integrity-bound exceptions to text formatting. They do not prove a mathematical statement, authenticate a model or independent reviewer, certify every final-release file, confer a score, or alter the closed A/B correction assessments. This report is technical evidence about the listed snapshot only."
+    }
+  ],
+  "disposition": {
+    "code": "CURRENT_FIVE_BYTE_PRESERVATION_SUPPORTED__GENERIC_UTF8_VALIDATION_LIMIT_RECORDED",
+    "current_five_files_preserve_exact_hashes": true,
+    "current_five_files_strict_utf8_json_valid": true,
+    "generic_strict_utf8_json_validation_established": false,
+    "known_issue": "T07: lossy UTF-8 decoding accepts a malformed original byte stream with a matching hash.",
+    "current_B_inputs_or_B_verdict_invalidated": false,
+    "whole_release_assessed": false,
+    "summary": "The four-file mechanism preserves the five current historical files with their exact hashes and limits the formatting exceptions to registered matching paths. Those five files are independently confirmed as strict UTF-8 JSON. A separate reproduced limitation prevents a universal claim that the validator rejects every invalid UTF-8 JSON byte stream. No numerical grade, independence attestation or mathematical validation is given."
+  },
+  "handling": {
+    "only_additional_authored_file": "C:/Trabajo/airr/2026-10-31_execution1748/TECHNICAL-BYTE-PRESERVATION1748.json",
+    "repository_and_B_report_modified": false,
+    "new_test_file_authored": false,
+    "memory_probe_saved_as_file": false,
+    "subagents_created": false
+  }
+}
