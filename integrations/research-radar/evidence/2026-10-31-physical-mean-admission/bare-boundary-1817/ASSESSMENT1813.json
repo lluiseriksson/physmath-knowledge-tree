@@ -1,0 +1,348 @@
+{
+  "schema": "airr.exact_source_math_assessment.v1",
+  "assessment_id": "ASSESSMENT1813",
+  "created_utc": "2026-11-01T02:13:21.027Z",
+  "requested_review": {
+    "model_label": "Astra",
+    "reasoning_effort_label": "xhigh",
+    "requested_by": "Lluis, as relayed in this task",
+    "actual_model_identity_authenticated": false,
+    "actual_reasoning_effort_authenticated": false,
+    "independence_authenticated": false,
+    "peer_review_claim": false,
+    "note": "Requested labels are recorded as requested labels. This execution does not authenticate model identity, effort, independence, or peer-review status."
+  },
+  "verdict": "CONDITIONAL_ACCEPT_BARE_PHYSICAL_QUADRATIC_DICTIONARY_ONLY",
+  "verdict_summary": "The submitted bare first-step quadratic, its negative current-curvature term, and the distinct G^(2) versus selected C^(2) normalizations agree with the visually checked source displays. The algebra is correct on one stipulated admitted real chart with the original mean, critical configuration, rows, boundaries, and pairings. This accepts a conditional symbolic dictionary, not an instantiated physical operator, an admission witness, an equality with the old hard-gauge precision, an inverse estimate, or a gap theorem.",
+  "input": {
+    "path": "C:/Trabajo/airr/2026-11-01_execution1813/BARE-PHYSICAL-QUADRATIC1813.json",
+    "supplied_sha256": "87fed618860b71d69c6f6533a22b31e1a0b0e39224fcc58967407ab64732815e",
+    "observed_sha256": "87fed618860b71d69c6f6533a22b31e1a0b0e39224fcc58967407ab64732815e",
+    "hash_matches": true
+  },
+  "scope": {
+    "assessed": "Only the new bare physical first-step operator and its source notation/normalization, by local differential calculus and targeted original-display inspection.",
+    "prior_1808": "The input declares the original N, C_rec, h, P and reconstruction context from 1808 as premises. 1808 was not opened, re-reviewed, or re-certified; its supplied hash was not independently checked here.",
+    "private_1723_1727": "The input expressly acknowledges existing private UNREVIEWED observations about gauge stiffness, Ward/current dictionaries, and related matters. They were not opened or assessed; this report makes no novelty claim against them and does not convert them into reviewed evidence.",
+    "excluded": [
+      "1808, 1810, 1655 and 1645 re-review",
+      "Earlier assessment reports and source-proof re-review",
+      "Private manuscript or whole manuscript PDF",
+      "Capacity assessment",
+      "New manuscript grade or review restart",
+      "Any further delegation"
+    ],
+    "manuscript_opened": false,
+    "manuscript_changed": false,
+    "earlier_assessments_opened": false,
+    "subagents_spawned": 0
+  },
+  "verification": {
+    "skill": "C:/Users/lluis/.codex/plugins/cache/openai-primary-runtime/pdf/26.1026.10807/skills/pdf/SKILL.md",
+    "method": "Read-only original PDFs. Poppler pdftoppm rendered complete relevant pages to stdout; PNG bytes were held in memory and visually inspected. PyMuPDF text extraction was used as a navigation aid, not as the sole authority for displayed mathematics.",
+    "source_hashes": [
+      {
+        "path": "C:\\Users\\lluis\\Documents\\CodexYangMillsAutopilot\\runtime\\sources\\primary\\balaban-convergent-cmp119-from-fusion.pdf",
+        "expected_sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+        "observed_sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+        "hash_matches": true
+      },
+      {
+        "path": "C:\\Users\\lluis\\Documents\\CodexYangMillsAutopilot\\runtime\\sources\\primary\\balaban-rg-I-cmp109-1104116842.pdf",
+        "expected_sha256": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+        "observed_sha256": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+        "hash_matches": true
+      },
+      {
+        "path": "C:\\Users\\lluis\\Documents\\CodexYangMillsAutopilot\\runtime\\sources\\primary\\cmp99\\1103942769.pdf",
+        "expected_sha256": "39f8033b35838c7bdd14f97c7fb1edb0b35d4190b8b88f31d19d12a72d542861",
+        "observed_sha256": "39f8033b35838c7bdd14f97c7fb1edb0b35d4190b8b88f31d19d12a72d542861",
+        "hash_matches": true
+      }
+    ],
+    "law_bindings": [
+      {
+        "path": "C:\\Trabajo\\airr\\2026-10-31_execution1535\\LAW-VERSION1535.json",
+        "expected_sha256": "f668b5b57350dcdf9d60b579be927b260d9aaf2138ce4667462d0af4c6ca8388",
+        "observed_sha256": "f668b5b57350dcdf9d60b579be927b260d9aaf2138ce4667462d0af4c6ca8388",
+        "hash_matches": true,
+        "verification_scope": "Byte hash only; no re-assessment of the binding contents."
+      },
+      {
+        "path": "C:\\Trabajo\\airr\\2026-10-31_execution1559\\LAW-BINDING1559.json",
+        "expected_sha256": "a78244cb62773f907346968b16470892a00f1405219d0e9752f17b578af806dd",
+        "observed_sha256": "a78244cb62773f907346968b16470892a00f1405219d0e9752f17b578af806dd",
+        "hash_matches": true,
+        "verification_scope": "Byte hash only; no re-assessment of the binding contents."
+      }
+    ],
+    "visually_inspected": [
+      {
+        "source": "CMP119",
+        "printed_pages": [
+          247,
+          248,
+          249
+        ],
+        "pdf_pages_one_based": [
+          5,
+          6,
+          7
+        ]
+      },
+      {
+        "source": "CMP109",
+        "printed_pages": [
+          266,
+          267
+        ],
+        "pdf_pages_one_based": [
+          18,
+          19
+        ]
+      },
+      {
+        "source": "CMP99",
+        "printed_pages": [
+          427,
+          428
+        ],
+        "pdf_pages_one_based": [
+          39,
+          40
+        ]
+      }
+    ],
+    "text_navigation_pages": [
+      {
+        "source": "CMP119",
+        "printed_pages": [
+          247,
+          248,
+          249,
+          250
+        ]
+      },
+      {
+        "source": "CMP109",
+        "printed_pages": [
+          265,
+          266,
+          267,
+          268
+        ]
+      },
+      {
+        "source": "CMP99",
+        "printed_pages": [
+          427,
+          428
+        ]
+      }
+    ],
+    "first_page_metadata_read": true,
+    "source_files_modified": false,
+    "pdf_copies_written": false,
+    "rendered_images_written": false,
+    "extracted_source_body_files_written": false,
+    "authorized_written_artifact": "C:/Trabajo/airr/2026-11-01_execution1813/ASSESSMENT1813.json"
+  },
+  "source_findings": [
+    {
+      "id": "S1",
+      "locator": "CMP119 p247, (1.5)-(1.7); p248, (1.11)-(1.12)",
+      "finding": "The exponential gauge is the original sum of 1-Re tr of the averaged contour variables. After localization its rows are the source rows associated with Omega_1^(1), with x in the relevant block and x different from its center. The base configuration in (1.12) is a critical point of A+G with raw exterior fixed and the physical coarse mean fixed. The source then identifies its averaged-axial representative and states minimum/strict-second-differential properties under its hypotheses.",
+      "consequence": "G, its trace convention, its row set, and the actual source critical configuration cannot be replaced by arbitrary gauge penalties or a generic minimum. Application of the existence/regularity statement to a physical family is not established by this input."
+    },
+    {
+      "id": "S2",
+      "locator": "CMP119 p249, (1.14)",
+      "finding": "The displayed exponent keeps log Haar and Tr log of the selected straightening Jacobian separate from the g0^-2 classical terms. The latter contain G(N(B)) and the action expansion with J_1 and Delta.",
+      "consequence": "The classical reference precision does not exhaust the finite-g0 coordinate log-density."
+    },
+    {
+      "id": "S3",
+      "locator": "CMP119 p249, paragraph before (1.15) and (1.15)-(1.16)",
+      "finding": "The source eliminates only the selected pivot bonds for the linearized coarse constraint and writes the free quadratic through C* Delta_1 C. Display (1.16) has the current term -2<h C_tilde^(2)(B),J_1> and the gauge term +G^(2)(B).",
+      "consequence": "The submitted current sign and coefficient, and its use of the physical selected lift C_rec, match the bare source formula when its fixed-setting premises hold. C_rec is not thereby the old hard-axial lift."
+    },
+    {
+      "id": "S4",
+      "locator": "CMP109 p266, (2.5)",
+      "finding": "The visual display explicitly has G(B_prime)=one-half G^(2)(B_prime)+G_3(B_prime), with G_3 starting at degree three.",
+      "consequence": "Here G^(2)(z) is G_second(0)[z,z], not one-half of that value. No factor-two erratum is needed to reconcile it with CMP119 (1.14)-(1.16)."
+    },
+    {
+      "id": "S5",
+      "locator": "CMP109 p267, selected-linearization paragraph preceding (2.11)",
+      "finding": "The local selected h is supported on the original b0(c) pivot bonds and obeys L Q_tilde h=I. The printed selected straightening equation is L Q_tilde B_prime+C_tilde(B_prime)=L Q_tilde B-D_tilde(B)+C_tilde(B-h D_tilde(B))=L Q_tilde B. The text states D_tilde^(2)=C_tilde^(2).",
+      "consequence": "The relevant selected C_tilde^(2) is the homogeneous degree-two coefficient of the undivided group logarithm, namely one-half F_second. This is the appropriate normalization for the bare current correction."
+    },
+    {
+      "id": "S6",
+      "locator": "CMP109 p266, (2.6)-(2.8), compared with p267 selected-linearization paragraph and (2.11)",
+      "finding": "The untilded variational D^(2)=C^(2) discussed after (2.6) belongs to the variational H-family calculation. The selected local D_tilde/C_tilde introduced on p267 is a separate pair. Formula (2.11) still contains the variational H_1 together with the local h.",
+      "consequence": "Suppressing tildes is harmless only within the explicitly fixed bare dictionary. One must not identify the p266 variational D/C with the p267 selected D_tilde/C_tilde, or infer H_1=I at k=0. The present acceptance uses the direct CMP119 bare display and the p267 local equation, not such an identification."
+    },
+    {
+      "id": "S7",
+      "locator": "CMP109 p267, text after (2.11)",
+      "finding": "The source relates the quadratic to CMP99 (3.156) with delta gauge fixing replaced by exponential gauge fixing.",
+      "consequence": "This records a comparison with a specified replacement. It is not a proof that the old and current independent-coordinate spaces, constraint means, current operators, metrics, or lower-bound constants coincide."
+    },
+    {
+      "id": "S8",
+      "locator": "CMP99 p427, Section E and (3.155); p428, (3.156)-(3.158)",
+      "finding": "The hard form is restricted to zero exterior fluctuations, zero axial bonds, and Q_1 B=0. Its free coordinates remove both axial bonds and selected pivot bonds. The p427 setup includes a domain/collar requirement and source conditions (3.35)-(3.36); p428 states a positive lower bound gamma_0 independent of k and U within the cited regime, including M alpha_0 sufficiently small.",
+      "consequence": "That lower bound is a statement about this hard source space under its actual predicates. This assessment neither re-proves it nor transports it to Q_free."
+    }
+  ],
+  "mathematical_assessment": {
+    "setting": "Let X be the actual real active fine-link fluctuation space with exterior frozen, Y the actual coarse-log row space, and E the original selected free-coordinate space. Fix one physical mean version throughout. All derivatives are taken at x=0 in U_x=exp(i x)U_1, at fixed outer data and fixed source metrics.",
+    "selected_straightening": {
+      "status": "correct under stated local premises",
+      "proof": "F(0)=0, P=DF(0), Ph=I and the source branch D(0)=0 give DN(0)=I and D_second(0)=F_second(0) by differentiating F(B-hD(B))=PB twice. Consequently N_second(0)[v,w]=-h F_second(0)[v,w], and D(B)=F2(B)+O(norm(B)^3), F2(B)=one-half F_second(0)[B,B]. This is an exact derivative identity at the base point, not a uniform chart theorem."
+    },
+    "multiplier": {
+      "status": "correct under stated criticality and surjectivity",
+      "proof": "The covector j=DA_W(0) annihilates ker P. Since P is onto, j factors uniquely through P: j=lambda composed with P. In the declared metric representatives this is J=P_sharp Lambda. Composing with h gives h_sharp J=Lambda because Ph=I. This multiplier belongs to the actual physical coarse-log constraint. No old H, R_sc, or old hard-current derivative is identified."
+    },
+    "classical_current": {
+      "status": "correct; nonzero in general",
+      "bilinear_formula": "D_second(A_W composed with N)(0)[v,w]=A_W_second(0)[v,w]-<Lambda,F_second(0)[v,w]>.",
+      "proof": "The chain rule gives the second term <J,N_second[v,w]>=-<J,h F_second[v,w]>=-<Lambda,F_second[v,w]>. Restricting z=C_rec a removes the linear term because PC_rec=0. The source expression -2<J,h F2(z)> therefore equals -<Lambda,F_second[z,z]>. The current-curvature correction remains at order g0^0 after the source rescaling; it is not discarded."
+    },
+    "gauge": {
+      "status": "correct with the actual original gauge rows and trace metric",
+      "definition": "Let s(x) be the rowwise real logarithm of the original averaged gauge-contour variables and S=Ds(0). Define the row bilinear form B_R as the Hessian at s=0 of the original sum of 1-Re tr exp(i s_r), with exactly the source row multiplicities and trace normalization. Represent it as B_R(u,v)=<u,Wv>_R relative to a specified row reference pairing.",
+      "proof": "At the averaged-axial base point all original contour values are I, so G(0)=0 and DG(0)=0. The chain rule yields G_second(0)[v,w]=B_R(Sv,Sw)=<Sv,W Sw>_R. Because DG(0)=0 and DN(0)=I, N does not alter this Hessian. Thus G(N(g0 z))/g0^2=one-half <Sz,W Sz>_R+O(g0) locally for fixed z and fixed data.",
+      "normalization": "G^(2)(z)=G_second(0)[z,z], whereas the selected C_tilde^(2)(z)=F2(z)=one-half F_second(0)[z,z]. These different superscript conventions account for the source coefficients."
+    },
+    "free_precision": {
+      "status": "correct conditional symbolic source dictionary",
+      "bilinear_formula": "q_free(v,w)=A_W_second(0)[C_rec v,C_rec w]-<Lambda,F_second(0)[C_rec v,C_rec w]>+<S C_rec v,W S C_rec w>_R.",
+      "operator_formula": "Q_free=C_rec_sharp (Delta_W-K_Lambda+S_sharp W S) C_rec, where <u,K_Lambda v>_X=<Lambda,F_second(0)[u,v]>_Y.",
+      "source_identification": "This is the metric-consistent representation of the bare extracted C* Delta_1 C in CMP119 (1.15)-(1.16), conditional on the actual source data stipulated in the input. It is the Hessian of the constrained classical A_W+G pullback at its base point. An actual covariance inverse is not certified by this dictionary alone."
+    },
+    "scale_conversion": {
+      "status": "correct when both factors and the declared pairings are converted together",
+      "formula": "With P=LQ and unchanged target pairing, Lambda_Q=L Lambda for the multiplier represented against Q. The Q-normalized nonlinear coefficient is F2_Q=F2/L. Hence <Lambda_Q,F2_Q>=<Lambda,F2>, and likewise for the second derivative.",
+      "right_inverse_guard": "The actual selected h obeys Ph=I and Qh=I/L. A separately Q-normalized right inverse would be h_Q=Lh; then h_Q F2_Q=h F2. One may not set Qh=I while retaining this h, or silently drop the inverse L in the source definition. If one changes target metrics as well, multiplier representatives must also be transformed by those metrics."
+    },
+    "metric_guard": {
+      "status": "essential interpretation condition",
+      "content": "Each sharp must be the adjoint for its specified domain and codomain pairings. In coordinates with fine metric M_X, row reference metric M_R, and trace-Hessian matrix T_R, take S_sharp=M_X^-1 S^T M_R and W=M_R^-1 T_R, giving S_sharp W S=M_X^-1 S^T T_R S. This makes explicit that the trace metric is included once. If the row pairing already is the trace pairing then W is the identity as an endomorphism; if W denotes the Gram matrix in a coordinate dot-product pairing, W=I requires an orthonormal trace basis. The input is acceptable only with a consistent one-time metric representation, not a mixture of these conventions."
+    },
+    "remainder_guard": "The displayed O(g0) statements are local at fixed source data with g0 z inside the chosen neighborhood. They do not assert uniform constants as sector, mean, volume, history, background, or g0-dependent source data vary."
+  },
+  "finite_coupling_density": {
+    "distinction": "The bare precision is not automatically the exact Hessian of the full finite-g0 negative coordinate log-density. CMP119 (1.14)-(1.15) leaves the Haar and nonlinear change-of-variables terms in v, and retains all other source factors.",
+    "precise_local_check": "At fixed outer data and on an interior where indicators are locally constant, the smooth fluctuation density in free coordinates has negative logarithm one-half q_free(a,a)-v(g0 C_rec a)+g0^-2 V(g0 C_rec a)+constant. Since V begins at degree three, its Hessian at a=0 is zero. The Hessian there is Q_free-g0^2 C_rec_sharp v_second(0) C_rec, interpreted in the same coordinate metrics. This expression is only for that fixed smooth local density; indicators, boundaries, further sources/marks, or integrations require their actual treatment. Away from a=0 the classical higher terms can also affect the Hessian.",
+    "retained_factors": [
+      "Baseline action at U_1",
+      "Selected delta elimination factor z^(0)",
+      "Original exponential-gauge normalizer",
+      "Haar normalization and log Haar ratio",
+      "Nonlinear selected Jacobian",
+      "Characteristic functions and domain restrictions",
+      "Gaussian normalization/determinant and any completing-square terms",
+      "Marks and outer-data factors",
+      "Outer and sector integrations"
+    ],
+    "conclusion": "Correctly labeling Q_free as the extracted classical Gaussian reference prevents the full-density substitution error. No exact finite-coupling measure comparison is proved."
+  },
+  "surviving_objections": [
+    {
+      "id": "O1",
+      "subject": "Actual physical admission and source minimum",
+      "status": "OPEN / NOT SUPPLIED",
+      "detail": "No finite parameter instance or source-admitted physical family is constructed. The actual U_1, its source regularity and minimum predicates, and the selected pivot invertibility on the claimed family remain premises. The source statement on p248 does not establish that an arbitrary supplied physical family meets them."
+    },
+    {
+      "id": "O2",
+      "subject": "Mean version and independent variables",
+      "status": "FIXED CONDITIONALLY; NO CROSS-VERSION IDENTIFICATION",
+      "detail": "Versions 0.4 and 0.12 must be treated separately. For each version one must use its own actual F, P, selected h and C_rec, critical configuration and coarse rows. This report does not replace either by the old CMP99 mean or assert that their derivatives agree."
+    },
+    {
+      "id": "O3",
+      "subject": "Actual gauge rows and trace normalization",
+      "status": "OPEN AT INSTANTIATION",
+      "detail": "The row set, orientation/multiplicity, averaged-contour derivative S, and trace metric W must be the original sector data. The JSON supplies them symbolically, not as an instantiated row list or matrix. A generic gauge-gradient ansatz, extra gauge weights, or an unrelated identity metric would not satisfy this dictionary."
+    },
+    {
+      "id": "O4",
+      "subject": "Hard-gauge comparison",
+      "status": "OPEN",
+      "detail": "The old source removes axial variables in addition to pivots. The current soft gauge has a genuine gauge-stiffness term on its actual free tangent. Equality or quantitative comparison requires an explicit map with matching means, meshes, active and exterior restrictions, gauge rows, pairings, and current-curvature terms. The CMP109 replacement sentence does not perform that map."
+    },
+    {
+      "id": "O5",
+      "subject": "h versus H and source superscripts",
+      "status": "GUARD RETAINED",
+      "detail": "The selected local h is not a variational propagator H or H_1. The p266 variational C^(2)/D^(2) and p267 selected tilde C^(2)/tilde D^(2) must not be merged. No H_1=I statement at k=0 is established or used."
+    },
+    {
+      "id": "O6",
+      "subject": "P/Q and adjoints",
+      "status": "GUARD RETAINED",
+      "detail": "Use P=LQ, Ph=I and the actual pairings throughout. Converting only the multiplier, only the nonlinear coefficient, only h, or only the row metric changes the formula. Plain unweighted transposes across unmatched bases are invalid."
+    },
+    {
+      "id": "O7",
+      "subject": "Gap, inverse and uniformity",
+      "status": "NOT PROVED",
+      "detail": "No hard-to-soft gap transfer, physical gamma_0, uniform inverse, common chart radius, all-history admission, full K_C coverage, complex contour control, or random-walk estimate follows. The old source positivity statement remains restricted to its actual hard-space hypotheses."
+    },
+    {
+      "id": "O8",
+      "subject": "Finite-g0 full density",
+      "status": "NOT IDENTIFIED WITH BARE PRECISION",
+      "detail": "Haar/Jacobian and all original density factors remain. The distinction between the classical reference Hessian and the complete finite-coupling coordinate log-density must persist in all subsequent uses."
+    }
+  ],
+  "corrections_or_clarifications": {
+    "fatal_algebraic_error_found": false,
+    "factor_two_error_found": false,
+    "source_erratum_required": false,
+    "required_for_safe_reuse": [
+      "Keep the tilde/local-selected versus untilded/variational source distinction explicit.",
+      "Specify the row reference pairing when W and S_sharp are written together, so the trace metric is counted exactly once.",
+      "Retain the fixed-data/local meaning of the Taylor remainder and the lack of an actual admitted family."
+    ],
+    "assessment_of_input": "With these explicit interpretation guards, the narrow derivation is acceptable as written. None of the clarifications licenses a larger physical, spectral, or hard-source claim."
+  },
+  "paid_and_unpaid": {
+    "paid": [
+      "Visual source check of the bare current sign and its factor 2",
+      "Visual source check of G=one-half G^(2)+G_3",
+      "Identification of the local undivided F2 with the selected tilde C^(2)",
+      "Exact conditional chain-rule derivation of current curvature and gauge Hessian",
+      "Metric- and scale-consistent symbolic free precision",
+      "Explicit separation from hard-gauge coordinates and complete finite-coupling density"
+    ],
+    "unpaid": [
+      "An actual physical/source-admitted finite instance or family",
+      "An explicit physical-to-old-hard operator comparison",
+      "Uniform coercivity, inverse, gap or norm conclusions",
+      "Any manuscript assessment, grade, novelty adjudication or review restart"
+    ],
+    "next_mathematical_obligation": "Match this actual physical free precision, after specifying its source data, to a correctly admitted hard/gauge-current source operator with all means, meshes, boundary restrictions, row metrics, and current terms accounted for. A scalar parameter or norm recipe does not supply that missing comparison."
+  },
+  "final_flags": {
+    "physical_admission": false,
+    "candidate1642_admitted": false,
+    "hard_source_precision_identity_proved": false,
+    "hard_gamma0_transferred": false,
+    "H1_equals_identity_asserted": false,
+    "current_removed": false,
+    "uniform_inverse_proved": false,
+    "physical_gap_proved": false,
+    "full_finite_g0_hessian_identified_with_Q_free": false,
+    "new_paper_grade": false,
+    "review_restart": false,
+    "manuscript_changed": false,
+    "private_observations_1723_1727_remain_unreviewed": true,
+    "peer_review_claim": false
+  }
+}

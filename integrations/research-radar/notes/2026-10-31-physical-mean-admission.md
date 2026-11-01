@@ -254,3 +254,84 @@ Requested Astra/xhigh in one separate context, without a score or restart. Effec
 - **speculative:** full fixed-law chart coverage, normalized physical marked completion and history remain open. Source/candidate counts stay 120/19; this is the same knowledge dossier, not a separate paper.
 
 The separate [editorial delivery assessment1809](../evidence/2026-10-31-physical-mean-admission/composed-measure-1809/ASSESSMENT1809.json) checks only the appended composition section in snapshot A against the unchanged1808 input, complete report and controlling receipt. The [delivery disposition](../evidence/2026-10-31-physical-mean-admission/composed-measure-1809/EDITORIAL-DISPOSITION1809.json) binds that assessed snapshot and this delivery-only paragraph in final B. It does not reopen the mathematics or evaluate previous note sections, the whole note, a manuscript/PDF or Capacity. Requested Astra/xhigh; actual identity, effort and independence unauthenticated; no score.
+
+### Bare precision, incident conditional boundary and the mean/gauge interface (1813–1816)
+
+This extension consolidates the existing dossier. It pays a **conditional local operator and support dictionary**; the physical uniform activity problem remains unsolved. No physical family has been instantiated or admitted. Keep the original mean (0.4) **or** (0.12), background `U1`, independent orientations, pivot list, trace metrics, source geometry and fixed LAW1535/1559. The local reconstruction and shell support from1808 remain premises with all their limitations. The [delivery manifest](../evidence/2026-10-31-physical-mean-admission/bare-boundary-1817/manifest.json) binds eight complete own evidence files; no foreign source body or private manuscript is redistributed.
+
+#### The current and gauge remain in the bare quadratic
+
+For the selected straightening, write `N(B)=B-h D_sel(B)`, `F(N(B))=P B`, `P h=I` and `N_S(B)=B_S`. Here `D_sel` is the local **selected** correction, rather than the earlier variational map with a similar symbol. With `F2=F''(0)/2`, its quadratic coefficient is `D_sel^(2)=F2`. At a real constrained classical minimum, `J=A_W'(0)=P^sharp lambda_mult`, where `lambda_mult=h^sharp J`. Thus the constrained classical quadratic contains
+
+`A_W''[z,z]-<lambda_mult,F''[z,z]>`.
+
+The current term is the source's `-2<J,h F2(z)>`; scaling does not remove it. `lambda_mult` is the coarse constraint multiplier in this dictionary, not an identification with the older variational `Hsharp` or physical remainder `Rsc`. [CMP119, p.249, (1.15)–(1.16)](https://doi.org/10.1007/BF01217741), [CMP109, pp.266–267](https://doi.org/10.1007/BF01215223).
+
+Let `S_g` denote the derivative of the original real gauge contour logs. Keep `S_g` distinct from the free-coordinate index set `S`. The gauge Hessian is `S_g^sharp W S_g` in the declared pairings. CMP109 (2.5) uses `G=G^(2)/2+G3`; its `G^(2)` is a Hessian quadratic value, whereas `F2` above is a Taylor coefficient. With `<u,K_lambda v>=<lambda_mult,F''[u,v]>`, the bare free precision is
+
+`Q_free=C_rec^sharp (Delta_W-K_lambda+S_g^sharp W S_g) C_rec`.
+
+Count the trace metric once. If fine and row reference Grams are `M_X,M_R` and the original gauge trace Hessian Gram is `T_R`, then `W=M_R^-1 T_R`, `S_g^sharp=M_X^-1 S_g^T M_R`, and the gauge contribution is `M_X^-1 S_g^T T_R S_g`. When the row reference pairing already **is** the trace pairing, `W` is the identity endomorphism in any basis. When the reference pairing is the coordinate dot product, `W` is the trace Gram; its matrix is identity only for an orthonormal trace basis. This is the controlling clarification in the [1813 receipt](../evidence/2026-10-31-physical-mean-admission/bare-boundary-1817/ASSESSMENT-RECEIPT1813.json), preserving the frozen input's broader wording rather than silently rewriting it.
+
+This precision is the extracted classical Gaussian reference. It is not the Hessian of the full finite-`g0` log density: Haar and nonlinear Jacobian terms remain. No positivity, inverse bound, old axial gap or uniform remainder follows. The original `P=LQ`, `Ph=I` conventions and their multiplier/adjoint scalings remain essential.
+
+#### Conditioning uses the actual incident region
+
+Use the source's final `Lambda=Lambda1`, including its original convexification. It is a union of compatible whole cells; its reduction preserves alignment with the first-level blocks. Let `A` be active fine links, `I` active coarse rows, `beta(I)` their original pivots and `S=A\beta(I)`. Define
+
+`A_in=A intersect E_fine(Lambda), A_out=A\A_in`,
+
+`I_in=I intersect E_coarse(Lambda), J=I\I_in`,
+
+`D=S intersect A_in, E=S\D`.
+
+All incidence conventions are those of the source. In particular a crossing link incident to `Lambda` belongs to `A_in`; an arbitrary geometric complement must not be substituted. `A_out` is an active **fine** index set, `E` a **free** index set, and neither is the raw exterior `F_src` fixed by `V0`. This `J` is the local exterior row set, not the global row complement denoted `J` in1806. [CMP119, pp.247, 251, 253](https://doi.org/10.1007/BF01217741), [CMP109, pp.252–254](https://doi.org/10.1007/BF01215223).
+
+The actual root paths, translated corridor and reference path of a row in `J` use only its two exterior endpoint blocks. Consequently `F_J` has no fine input in `A_in`, and `P_(J,A_in)=0`. The original pivots of `I_in` are inside; those of `J` are outside. On the assumed invertible selected branch, the exterior equations force the outside selected entries of `C_rec i_D u` to vanish, as its outside free entries already do. Hence
+
+`pi_Aout C_rec i_D=0`,
+
+`image(C_rec i_D)={x in ker P: x_Aout=0}`.
+
+Uniqueness of the same selected elimination gives `C_rec i_D=i_Ain C_Lambda`, and therefore
+
+`Q_D=i_D^sharp Q_free i_D=C_Lambda^sharp i_Ain^sharp Delta1 i_Ain C_Lambda`.
+
+The restricted form retains the **original** background, current, soft gauge and boundary contributions; it does not select only strictly interior plaquettes or change to a local minimum. It introduces no extra Gram or surface Jacobian. The historical generic1665 clamp example is retained: it did not test this source-admitted incident geometry and is neither rerun nor withdrawn.
+
+For `B=g0 C_rec(i_D a_D+i_E R_E(a_E))`, the outside part of `B` is independent of `a_D`. The ambient nonlinear identity and the locally invertible exterior selected derivative then imply the same local independence for `N(B)_Aout` and the reconstructed links. Constancy holds on each connected **fixed-exterior section** of the admitted chart. A connected ambient branch may have disconnected sections; retain the exterior inverse sheet or determining section-component label. No global uniqueness, full `K_C` coverage, multiplicity removal or sector division has been established. The offset `B^E=g0 C_rec i_E R_E(a_E)` may contain selected **inside** entries: retain `N(B^E+g0 C_rec i_D a_D)` rather than replacing it by a homogeneous local map.
+
+#### The post-shell correction is required
+
+The [1814 assessment](../evidence/2026-10-31-physical-mean-admission/bare-boundary-1817/ASSESSMENT1814.json) identifies a material qualification of its frozen input. Put `r=R_E(a_E)`. Direct pullback of the Gaussian has exponent
+
+`-1/2<a_D,Q_D a_D>-<a_D,Q_DE r>-1/2<r,Q_EE r>`.
+
+If the chosen reference instead writes `a_E` in both exterior positions, its remaining exponent must contain exactly
+
+`L_shell=-<a_D,Q_DE(r-a_E)>-1/2[<r,Q_EE r>-<a_E,Q_EE a_E>]`.
+
+The direct reference mean is `-Q_D^-1 Q_DE r`; the chosen compensated reference mean is `-Q_D^-1 Q_DE a_E`. These statements require real positive `Q_D`, which has not been proved for an actual family. Both reference covariances are `Q_D^-1`, not the marginal block of `Q_free^-1` and not the covariance of the full truncated/interacting conditional law. All composed arguments `v(g0 C_rec R(a))`, `V(g0 C_rec R(a))`, original indicators, Jacobians, words, exterior action and baselines remain. Replacing those arguments also requires their exact differences. The [controlling1814 receipt](../evidence/2026-10-31-physical-mean-admission/bare-boundary-1817/ASSESSMENT-RECEIPT1814.json) records the algebraic disposition without editing or re-reviewing the input.
+
+Normalizing a reference with forcing `j` retains `Z_D exp[<j,Q_D^-1 j>/2]`. Centering translates the original cutoff **and** chart support. An empty `D` uses the zero-dimensional integral/determinant1, retaining every exterior factor. The source Gaussian conditioning displays preserve the forcing and its exterior normalization; they do not replace the interacting law by a Gaussian. [CMP116, pp.12–13, (2.5)–(2.6)](https://doi.org/10.1007/BF01239022).
+
+A complete exterior marked word must include every link, inverse, root transport and variable endpoint frame. On the fixed exterior sheet it is independent of `a_D`; a word in `A_out` is a reconstructed outer function, while a word wholly in `F_src` is prescribed by `V0`. An exterior root alone is insufficient. For an exterior scalar insertion `c_p`, the coefficient identity is `(I0,c_p I0,I_q,c_p I_q)`, including `I0=0`. For matrix-valued open words retain the original scalar contraction or exact ordered/tensor insertion; this formula permits no matrix commutation. The mixed conditional logarithm needs `I0!=0`. Every `c_p` remains inside all exterior, background, sheet, sector and history integrations before the final log, so conditional cancellation gives no physical covariance cancellation.
+
+#### The old mean/gauge interface remains an admission gate
+
+The own [1815 source intake](../evidence/2026-10-31-physical-mean-admission/bare-boundary-1817/OLD-MEAN-SOURCE-INTAKE1815.json) follows CMP99 (3.13)–(3.15) to the background-dependent averages of CMP98 (89)–(92) and their **full** derivative (124). Equation (125) separately names the leading path average `Q0`; the other terms are bounded in the source regime, not declared zero. The [1816 intake](../evidence/2026-10-31-physical-mean-admission/bare-boundary-1817/MEAN-GAUGE-INTERFACE1816.json) follows the gauge change in CMP98 pp.27–28. Its displayed linearized variation retains a terminal background-loop transport. A zero site-average gauge parameter alone does not justify exact preservation of `Q0`; the source explicitly treats that preservation as approximate. The exact transformed average includes endpoint factors in (63)/(89). [CMP98, pp.27–31, 36](https://doi.org/10.1007/BF01211042), [CMP99, pp.392–394, 427–428](https://doi.org/10.1007/BF01240355).
+
+This is source reading and a guard against an unsupported import, not an actual non-flat counterexample, a failed Ward identity of the correctly transformed constraint, or a new physical estimate. Matching1814 support does not identify the old and physical means. Transport the full derivative, quadratic current, gauge density, endpoint factors, old/centered block coordinates and original metrics together before importing source regularity or decay. The later source's stated gauge replacement does not authorize leaving the old inverse unchanged. No `gamma0` is transferred.
+
+The remaining task is the actual same-family operator/domain/regularity identification or full nonlinear marked operational equality under the fixed law. `K_C` coverage, source190/Hsharp, P1, simultaneous component absorptions and fixed-base1810 parameters, nonzero physical normalizers, connected sums and history stay open. A new norm bound, flat calibration or conditional parameter recipe does not replace that task. Falsifiers include an actual source row/path entering the declared exterior support, a failed selected inverse on a claimed admitted branch, a missing shell factor, an omitted variable word frame or a dropped mean/gauge transport. None challenges a source theorem by changing its hypotheses.
+
+#### Model assessments and review context for this extension
+
+The manifest preserves exact [input1813](../evidence/2026-10-31-physical-mean-admission/bare-boundary-1817/BARE-PHYSICAL-QUADRATIC1813.json), complete [assessment1813](../evidence/2026-10-31-physical-mean-admission/bare-boundary-1817/ASSESSMENT1813.json) and its receipt, plus [input1814](../evidence/2026-10-31-physical-mean-admission/bare-boundary-1817/PHYSICAL-CONDITIONAL-BOUNDARY1814.json), complete assessment1814 and its receipt. All eight1813 objections and twelve1814 objections are retained. The trace-pairing clarification, shell compensation, section-component limitation, noncommutative insertion guard and earlier adverse reports remain controlling. Three CRLF evidence files have exact byte hashes and scoped preservation; they were not normalized for delivery.
+
+Requested Astra/xhigh, sequential separate contexts, no score target or restart; effective model identity, effort and external independence are unauthenticated. These are AI assessments of their exact JSON inputs, not peer review, manuscript/PDF grades, whole-note assessments or Capacity evaluations. The1815/1816 source syntheses and this editorial consolidation are own work, with **no separate independent assessment**. No prior editorial assessment is inherited by this extension.
+
+- **literature:** selected source definitions and stated relationships with the precise reading scope in the attached evidence; no complete source-proof audit.
+- **heuristic:** the own conditional operator/support derivations and their bounded assessments; no physical-family certification.
+- **formal:** no new Lean theorem, global upstream build audit or graph-confidence promotion.
+- **speculative:** uniform physical completion, normalized connected marks and history remain open. Source/candidate counts remain120/19; candidate1642 is not admitted. This is the same knowledge note, not a new paper.

@@ -1,0 +1,99 @@
+{
+  "kind": "Exact first-step physical quadratic/operator dictionary assessed once, not a new spectral/norm lemma or physical gap theorem",
+  "at": "2026-11-01T02:08:36.035014+00:00",
+  "sources": [
+    {
+      "path": "C:\\Users\\lluis\\Documents\\CodexYangMillsAutopilot\\runtime\\sources\\primary\\balaban-convergent-cmp119-from-fusion.pdf",
+      "sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a"
+    },
+    {
+      "path": "C:\\Users\\lluis\\Documents\\CodexYangMillsAutopilot\\runtime\\sources\\primary\\balaban-rg-I-cmp109-1104116842.pdf",
+      "sha256": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a"
+    },
+    {
+      "path": "C:\\Users\\lluis\\Documents\\CodexYangMillsAutopilot\\runtime\\sources\\primary\\cmp99\\1103942769.pdf",
+      "sha256": "39f8033b35838c7bdd14f97c7fb1edb0b35d4190b8b88f31d19d12a72d542861"
+    }
+  ],
+  "law_bindings": [
+    {
+      "path": "C:\\Trabajo\\airr\\2026-10-31_execution1535\\LAW-VERSION1535.json",
+      "sha256": "f668b5b57350dcdf9d60b579be927b260d9aaf2138ce4667462d0af4c6ca8388"
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-10-31_execution1559\\LAW-BINDING1559.json",
+      "sha256": "a78244cb62773f907346968b16470892a00f1405219d0e9752f17b578af806dd"
+    }
+  ],
+  "prior_closed_input": {
+    "path": "D:/Proyectos/airr-investigacion/2026-11-01_composed-reconstruction1808/PHYSICAL-COMPOSED-RECONSTRUCTION1808.json",
+    "sha256": "0022ce4ee9dad8dc6fa08b521354acfab2e2bdc8e7ac1a6223190f977863d38b",
+    "use": "Original local N,C,h,P and unchanged reconstruction context as a premise; do not re-review1808."
+  },
+  "participation_and_novelty": "Parent-authored synthesis. Existing private UNREVIEWED notes1723/1727 already discuss gauge stiffness/Ward/current dictionaries. No novelty is claimed against them, and they are not manuscript assessments. This input isolates the BARE first source1.14-1.16 operator and its two different superscript(2) conventions for an exact bounded assessment. Do not open/edit the private manuscript.",
+  "fixed_setting": [
+    "Original first-step sector, mean version0.4 OR0.12 kept separately, independent active fine links A, coarse rows I, prescribed raw exterior V0, actual source critical U1 with M_I(U1)=V_I and averaged contour U1(y,x)=I.",
+    "All real Lie bases, trace pairing, target pairing, scale factors, gauge rows and boundary restrictions remain the declared ones. U_x=exp(i x)U1 on active links, prescribed exterior unchanged.",
+    "One actually admitted C3 real mean/log neighborhood with original selected pivot block invertible. No common radius, fullK_C coverage or all-history admission asserted.",
+    "Coarse F(x)=(1/i)Log[M_I(U_x)V_I^-1] with F(0)=0. P=Fprime(0) is undivided, Q=P/L. h is the original selected right inverse Ph=I=LQh, h_S=0.",
+    "C_rec is the original selected linear lift: P C_rec=0, (C_rec a)_S=a. Actual straightening N(B)=B-h D(B) satisfies F(N(B))=P B on its ambient neighborhood.",
+    "The original constrained criticality of Wilson action on the active variable space is assumed as source1.12: J=A_Wprime(0) annihilates kerP. Surjectivity of P gives the unique multiplier Lambda with J=Psharp Lambda. Sharp denotes actual declared bilinear transpose/metric dual, including any target/fine weights.",
+    "The original G is sum of1-Re tr of actual equivariantly averaged contours, with the printed real trace convention. G(0)=0 and Gprime(0)=0 on this real averaged-axial representative. No arbitrary new gauge weights or physical gauge change."
+  ],
+  "source_notation_anchors": [
+    {
+      "locator": "CMP119 p249,1.14",
+      "content": "Original exponent contains -G(N(B))/g0^2 and -[<N(B),J>+1/2<N(B),Delta N(B)>+V0(N(B))]/g0^2, with log Haar and TrlogDN retained separately."
+    },
+    {
+      "locator": "CMP119 p249,1.16",
+      "content": "Printed extracted quadratic is <B,Delta1 B>=<B,Delta B>-2<h C^(2)(B),J>+G^(2)(B)."
+    },
+    {
+      "locator": "CMP109 p266,2.5",
+      "content": "Printed convention is G(Bprime)=1/2 G^(2)(Bprime)+G3(Bprime). Therefore this G^(2) denotes the Hessian quadratic value, not the coefficient of degree2 without its1/2."
+    },
+    {
+      "locator": "CMP109 p266-267,2.6 and following selected-linearization paragraph",
+      "content": "D^(2)=C^(2) is the SECOND-ORDER COEFFICIENT of the nonlinear coarse correction, and the selected h obeys LQh=I. Its superscript convention is different from the printed G^(2) convention."
+    },
+    {
+      "locator": "CMP109 p267,2.11",
+      "content": "The source explicitly compares the resulting quadratic to CMP99 3.156 with delta gauge fixing replaced by the exponential gauge; this does not identify their independent coordinate spaces or eliminate the required replacement calculation."
+    },
+    {
+      "locator": "CMP99 p428,3.156-3.158",
+      "content": "The hard source restricts to zero exterior, axial gauge bonds and Q1B=0, then eliminates axial and selected variables. Its positive lower bound is a source statement on that hard space under actual regularity/collar conditions."
+    }
+  ],
+  "derivation": {
+    "coarse_second_order": "Write F(B)=P B+F2(B)+O(||B||^3), with F2(B)=1/2 Fsecond(0)[B,B]. Then D(B)=F2(B)+O(||B||^3), because F(B-hD)=P B and Ph=I. In source compatible undivided convention C^(2)=F2.",
+    "multiplier": "J=Psharp Lambda implies hsharp J=Lambda because Ph=I. This is the multiplier of the ACTUAL first coarse group-log constraint, not an identification with an old variational Hsharp/current operator or Rsc.",
+    "classical_expansion": "For z=C_rec a, A_W(N(g0 z))=A_W(0)+g0<J,z>+g0^2[1/2 A_Wsecond(0)[z,z]-<J,h F2(z)>]+O(g0^3). The linear term vanishes since Pz=0. Division by g0^2 gives classical Gaussian precision q_cl(z,z)=A_Wsecond(0)[z,z]-<Lambda,Fsecond(0)[z,z]>. The current correction is g0-neutral; it is not set to zero.",
+    "gauge_expansion": "Let s(x)=(1/i)Log U_x(y,x_site) over the ORIGINAL gauge rows, and S=sprime(0). Set W by the original trace pairing on those rows. Since contour at0 isI, Gsecond(0)[v,w]=<Sv,W Sw>. Thus G(N(g0 z))/g0^2=1/2< S z,W S z>+O(g0) and its extracted precision contribution is Ssharp W S. The nonlinear correction N does not change this quadratic because Gprime(0)=0.",
+    "leading_reference_precision": "On the ACTUAL free tangent, q_free(v,w)=A_Wsecond(0)[C_rec v,C_rec w]-<Lambda,Fsecond(0)[C_rec v,C_rec w]>+<S C_rec v,W S C_rec w>. Equivalently Q_free=C_recsharp (Delta_W-K_Lambda+Ssharp W S) C_rec, where <z,K_Lambda z>=<Lambda,Fsecond[z,z]>. This is the source extracted classical Gaussian reference in1.15/1.16.",
+    "notation_check": "-2<J,h F2(z)>=-<Lambda,Fsecond[z,z]>. Source G^(2)(z)=Gsecond[z,z]=<Sz,W Sz>, because source2.5 puts1/2 before it. This removes an apparent factor2 mismatch without inventing an erratum.",
+    "P_Q_scale": "P=LQ. The multiplier of Qx is Lambda_Q=L Lambda, while a Q-normalized nonlinear second coefficient is F2/L. Their contraction is unchanged when BOTH are converted. No numeric L power is dropped from h, the pairing or a target-space definition.",
+    "sharp_guard": "The identity uses the declared metric duals, not unweighted matrix transposes across unmatched scale bases. It does not identify the lower-case local selected h with any propagator H."
+  },
+  "complete_density_guard": [
+    "Q_free is the LEADING extracted classical Gaussian reference, not the exact Hessian of the full finite-g0 negative logarithmic density. Haar ratios and nonlinear Jacobian remain in sourcev(g0 C_rec a); their derivatives can modify the latter Hessian at finiteg0.",
+    "All original baseline, selected delta factor, source gauge normalizer, indicators, Gaussian determinant/completing-square, marks, outer data and sector integrations remain. Gauge trace W is the original one; identity W is permitted only in an explicitly orthonormal basis for it.",
+    "An exact local straightening/source Taylor identity supplies no uniform inverse, hard/soft gap, random-walk/complex contour or fullK_C chart witness.",
+    "Do NOT assert H1=I at k0 merely from notation. Do NOT identify the CMP99 old mean/hard C_ax/current derivative with this physical mean/C_rec automatically, or transfer its gamma0 to Q_free.",
+    "No generic decomposition of gauge directions is used to erase boundary restrictions; all source gauge rows and active variable predicates remain those of the original sector."
+  ],
+  "what_is_and_is_not_paid": "This input aims only to make the actual bare physical quadratic and its gauge/current/scale coefficients unambiguous against the source displays. It does not prove equality of that precision with the old hard-source operator, any lower bound or the physical/source-family regularity predicates. Existing unpublished1723/1727 observations are context, not a novelty claim or inherited assessment.",
+  "falsifiers": [
+    "A misread source G=1/2G^(2)+G3, a mismatch of C^(2) with the undivided F2, or an inconsistent P/Q pairing would invalidate the source dictionary.",
+    "Nonzero Gprime(0), failure of actual constrained criticality or non-surjective P would invalidate the stated expansion/multiplier inference.",
+    "Dropping the current, replacing W by an unrelated metric, importing hard C_ax as C_rec, or calling Q_free the exact full finiteg0 log-density Hessian would exceed this result.",
+    "No actual source-admitted family or finite parameter instance is manufactured by this input."
+  ],
+  "physical_admission": false,
+  "candidate1642_admitted": false,
+  "manuscript_changed": false,
+  "new_paper_grade_or_physical_gap": false,
+  "review_scope": "One exact new bare-operator/source-notation assessment only. No review restart, earlier input/report re-review, full source proof, whole manuscript/PDF or Capacity assessment. Preserve adverse evidence, requested model labels and unauthenticated actual identity/effort/independence.",
+  "next": "Match the actual physical free precision just defined to a correctly admitted source hard/gauge-current operator with all means, meshes, boundary constraints and trace metrics. Do not replace this missing comparison by another scalar norm/parameter recipe."
+}
