@@ -1,0 +1,89 @@
+{
+  "execution": 1950,
+  "at": "2026-11-01T12:51:34.165902+00:00",
+  "status": "UNREVIEWED_CONDITIONAL_NEAR_RAW_EXTERIOR_RESPONSE; ACTUAL_SECTOR_DOMAIN_ADMISSION_OPEN",
+  "source": {
+    "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-convergent-cmp119-from-fusion.pdf",
+    "sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+    "reading": "Reuse selected CMP119 source readings and completed1941 support review. New attempted multipage extraction was truncated and is not credited as read. No full proof audit."
+  },
+  "fixed_inputs": [
+    {
+      "path": "C:/Trabajo/airr/marked-rg-manuscript/WORKING-MANUSCRIPT.md",
+      "sha256": "b3042d6ab2a9cb3f4414b818e322953d7088a7a2befa4c1a79b8dcddef2457d2"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-11-01_execution1939/BARE-BOUNDARY-SUPPORT-SEPARATION1939.json",
+      "sha256": "5823470699498e79727875e2fab78a1e597b682269245f1e28fc8797977fc9f3"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-11-01_execution1940/BARE-BOUNDARY-FOUR-COEFFICIENTS1940.json",
+      "sha256": "d5398d038b04091765e8c09fd431a7f932c81b6f67360ed9ae43d440f825257f"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-11-01_execution1941/ASSESSMENT1941.json",
+      "sha256": "bbf7d764a8396d9122a5c30c157f1ad70f143396437742eb854d6846eb187a1c"
+    },
+    {
+      "path": "D:/Proyectos/airr-investigacion/2026-11-01_boundary-review-integrated1948/CHECKPOINT1948.json",
+      "sha256": "09d3a572c5e92d47d19df17d3f7ea54a7ec0ab7e89119dfe7ebd92fc37c33442"
+    }
+  ],
+  "deduplication": {
+    "existing": "Manuscript1472-1474 already derives nonlinear reflected conditional mixing on actual uniformly convex raw product domains. 1695/1697 already constructs real selected-chart derivative bounds at its stated source scope. Neither is a new1950 theorem.",
+    "bounded_new_work": "Combine that existing nonlinear estimate with bare1941 support separation to derive a near-raw-exterior susceptibility and retain the unpaid far/background conditional-mean covariance. This is a participating-parent conditional derivation, not admission of the physical class.",
+    "closed": "PR261/review1941 and PR260/review1925 remain closed; all adverse findings retained; no new review, score, PDF, paper or graph change."
+  },
+  "law_and_domain": [
+    "Freeze original LAW1535 and LAW1559, sector/history theta, U1, gauge, V/V0 and original cutoffs. No replacement of U1 by a local background, no altered radius, no selected-output product domain.",
+    "Let D be actual disjoint free interior indices, E=I_free\\D. Choose N as a fixed envelope of exterior free indices of original bare primitives meeting D; F=E\\N. N must not depend on field values. Only original fine raw variables are varied, not coarse V or exterior V0.",
+    "With h=LMR1, b=LM2R1 require Rstar+2b+4<h so the entire source bad-indicator halos and changed S1 miss N. This is a sufficient geometric condition, not proof of analytic cutoff reorganization. L>11, M/M2>=L, floor(M/6)>=Rstar, R1>=1 imply this inequality: Rstar/h<=1/(6L), 2b/h<=2/L, 4/h<=2/(3L Rstar), hence sum<=17/(6L)<1 for Rstar>=1. Units and actual periodic partitions must agree. No actual tuple checked.",
+    "Source1.19-1.25 reorganization with its analytic gates must establish that, at fixed theta,F, original good indicators on D union N are exactly their raw product balls. Repeated good indicators may be deduplicated by idempotence. A bad supremum indicator cannot be split; its FULL halo must miss D union N or its dependence must remain explicit.",
+    "The real source chart and full Hamiltonian estimates must hold on the entire ORIGINAL K_D times K_N, including n=0 and every segment used below. Fixed-domain differentiation requires this actual disintegration, not merely labels or source geometry. These physical cutoff/chart/sector gates remain open.",
+    "Use only the positive unexpanded original normalized joint law. Retain rho_out, exact map Jacobian, baselines and all W_H factors once. Do not use signed Mayer activities as probability measures or cancel W_H before outer integration."
+  ],
+  "existing_nonlinear_input": {
+    "Hessian": "H_DD >= m I, m=a_soft/2, on the entire actual K_D x K_N. Sufficient existing physical criterion C_H epsilon_phys+C_J g0^2<=a_soft/2 must include inside AND exterior terms.",
+    "range": "Actual full bare H has mixed/interior Hessian range R_H>0 and absolute block row AND column bounds B_H; J_H bounds each mixed column gradient in the chosen Euclidean block norm, uniformly in n and theta,F.",
+    "alpha": "alpha=log(1+m/(2B_H))/R_H for B_H>0; block-diagonal degeneracies treated separately.",
+    "covariance": "For real local Lipschitz f,g: |Cov_mu_n(f,g)| <= (2/m) Lip_D(f) Lip_D(g) exp[-alpha dist(S_f,S_g)]. This is the existing1473-1474 deduction, not re-proved or independently reviewed in1950.",
+    "literature": "Slominski1993 selected Theorem5, PDF SHA b01a032420ad4b4b31275a6319d9d98d731f2a32b46cf26d41276375eaeb0c73; ASZ author PDF selected Theorem1.2/reflection example SHA ffdd8f79df957447f37c83f3884e8a3fcbf33992ba002e16fabb947eeab67f5d. Reused statement-level application; no full source proof audit."
+  },
+  "near_response_derivation": [
+    "For an original local Wilson root with complete carrier S_p subset D, set u_p(n)=E_mu_n[M_p]. There is no direct n dependence in M_p under this carrier condition. Fixed compact real chart and fixed K_D justify differentiation under the integral.",
+    "For each j in N and unit block direction v, d_{n_j,v} u_p = -Cov_mu_n(M_p,d_{n_j,v} H). No hard inner-boundary flux is discarded: the original fixed-domain probability and existing reflected covariance theorem are used. A moving cutoff would invalidate this formula.",
+    "Let X_j=support_D grad_D(d_{n_j,v}H) subset N_R_H(j) intersect D. Full mixed Hessian column bound yields Lip_D(d_{n_j,v}H)<=J_H. If X_j empty the response is zero.",
+    "Ordered real unitary link products and original selected derivatives give Lip_D M_p<=g0 L_p, with a safe source-dependent L_p=4 c_Lie c_frame(1+K1) when those norm constants and selected slope bound are supplied. Inverse orientations preserve this bound. No numerical derivative constant or complex-background chart certified.",
+    "Write c_K=1 for real scalar roots and c_K=2 for complex scalar roots split into real and imaginary parts. Then ||d_{n_j}u_p|| <= (2 c_K/m) g0 L_p J_H exp(alpha R_H) exp[-alpha dist(S_p,j)]. Norm of complex response is bounded safely by the sum of the two real responses.",
+    "Let rho_N be the original per-block Euclidean cutoff radius including all norm-conversion factors; if the actual source ball gives rho_N=C_norm delta0/g0, keep that exact radius. Do not introduce a smaller cutoff.",
+    "Define H_half=sup_x sum_j exp[-alpha dist(x,j)/2] on the actual bounded-multiplicity fine graph. For d_p=dist(S_p,N), sum_{j in N} exp[-alpha dist(S_p,j)] <= |S_p| H_half exp[-alpha d_p/2]. Triangle/minimum distance and a union bound over S_p prove this estimate; H_half is finite in the actual fixed-dimensional graph.",
+    "If the actual K_N contains zero and all radial segments, define u_p^0(theta,F)=u_p(0). Integrating each block directional derivative on n(t)=t n gives |u_p(n)-u_p^0|<=A_p, where A_p=(2 c_K/m) g0 L_p J_H rho_N exp(alpha R_H) |S_p| H_half exp[-alpha d_p/2]. Oscillation between two arbitrary near fields is <=2A_p. This is a reference value in the same domain, not a new physical outer law.",
+    "When rho_N=C_norm delta0/g0, g0 rho_N=C_norm delta0. The smallness is at most O(delta0) with the displayed m,J_H,L_p,alpha,H_half factors; these may depend on the simultaneous parameter chain. No uniform decay/smallness conclusion follows without their actual common bounds."
+  ],
+  "outer_allocation": [
+    "At fixed theta,F let pi_N be the actual positive normalized near marginal, retaining every exterior weight W_H and original normalizer. Put r_p=u_p-u_p^0, so |r_p|<=A_p. Arbitrary pi_N is allowed at this level; no mixing property of pi_N is asserted.",
+    "For bounded pure-exterior G(n), |Cov_pi_N(u_p,G)|=|Cov_pi_N(r_p,G)|<=2 A_p ||G||_infinity. Its transported exterior value is retained. A crossing root with direct n arguments needs the additional E_mu_n[d_n M] term and is NOT covered by the deep-root estimate.",
+    "For two deep roots, Cov_pi_N(u_p,u_q)=Cov_pi_N(r_p,r_q), hence absolute value <=2 A_p A_q, including complex bilinear covariance. The reference values are constants ONLY at fixed theta,F.",
+    "Law of total covariance at fixed theta,F gives |Cov_joint(D,N)(M_p,M_q)| <= (2 c_K^2/m) g0^2 L_p L_q exp[-alpha dist(S_p,S_q)] + 2 A_p A_q. The safe complex factor c_K^2 follows by four real covariance components.",
+    "There are two different distances: inner separation and depth from N. The boundary bridge does not give decay with root separation for roots near the boundary.",
+    "After integrating theta,F one must ADD Cov_{theta,F}(E[M_p|theta,F],E[M_q|theta,F]). Also u_p^0(theta,F) can depend on global U1 and history. This term is uncontrolled here. No cancellation of far/background/history covariance, no Rsc/Hsharp identification or unconditional connected physical theorem follows."
+  ],
+  "falsifiers": [
+    "Actual source bad-indicator halo meets D or N, or source cutoff reorganization not valid: retain indicator dependence and withhold product-domain application.",
+    "Actual chart fails at zero or along a segment, domain varies with n, or original positivity/finite normalization missing: withhold differentiation or covariance disintegration.",
+    "Full mixed Hessian bounds, inside/exterior convexity or finite original bare range fail: existing reflected estimate cannot be imported. Leading Gaussian precision alone does not supply these assumptions.",
+    "Root carrier includes near exterior inputs or a long/nonlocal word: direct derivative and full carrier must be retained; no four-link shortcut.",
+    "No simultaneous original parameter/torus tuple: no all-sector or cutoff-removal admission. Remaining theta,F covariance cannot be suppressed by calling the near law arbitrary."
+  ],
+  "levels": {
+    "formal": "No new formal result or global build. Nine cached fixed dependency commits only verified as inventory.",
+    "literature": "Reused exact selected primary statements and source/review1941 support dictionary. No newly audited full proof. Current12-primary directed scan is metadata only.",
+    "heuristic": "Explicit unreviewed participating-parent conditional nonlinear near-raw response derivation; algebra and conditional probability identities stated with all domain gates.",
+    "speculative": "Actual all-sector chart/cutoff admission, one simultaneous parameter chain, far/background/history response and Rsc/Hsharp remain open."
+  },
+  "physical_admission": false,
+  "candidate1642_admitted": false,
+  "new_paper": false,
+  "new_review": false,
+  "next": "Admit the actual source1.19-1.25 cutoff disintegration and full real K_D x K_N chart/Hessian on ONE original simultaneous finite-period parameter tuple, or exhibit the actual obstruction. Near susceptibility1950 is conditional and leaves far/background/history conditional-mean covariance unpaid. Preserve all12 review1941 findings, all22 review1645 findings, original radii and exact weights; no duplicate reviews, papers or elementary covariance substitutes."
+}

@@ -1,0 +1,83 @@
+{
+  "execution": 1951,
+  "at": "2026-11-01T12:54:21.497708+00:00",
+  "status": "BARE_RAW_FAR_KERNEL_INDEPENDENCE_CONDITIONAL; ACTUAL_CUTOFF_COVER_AND_BACKGROUND_HISTORY_OPEN",
+  "source": {
+    "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-convergent-cmp119-from-fusion.pdf",
+    "sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+    "reading": "Printed247-251 text read this turn; printed250 formula1.18/1.19 visually inspected from exact PDF. Selected source reading only, no full source proof audit.",
+    "render": {
+      "printed_page": 250,
+      "sha256": "3f5a21cc5a48830b1010d5a57b865caec7aa645fd023d52a82daf16be49e2f79",
+      "temporary_only": true
+    }
+  },
+  "fixed_inputs": [
+    {
+      "path": "C:/Trabajo/airr/2026-11-01_execution1950/NEAR-EXTERIOR-NONLINEAR-RESPONSE1950.json",
+      "sha256": "a662b857b69e801ace5214967c3af02381da81db6057e3b5091ceef16974e7cb"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-11-01_execution1939/BARE-BOUNDARY-SUPPORT-SEPARATION1939.json",
+      "sha256": "5823470699498e79727875e2fab78a1e597b682269245f1e28fc8797977fc9f3"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-11-01_execution1940/BARE-BOUNDARY-FOUR-COEFFICIENTS1940.json",
+      "sha256": "d5398d038b04091765e8c09fd431a7f932c81b6f67360ed9ae43d440f825257f"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-11-01_execution1941/ASSESSMENT1941.json",
+      "sha256": "bbf7d764a8396d9122a5c30c157f1ad70f143396437742eb854d6846eb187a1c"
+    },
+    {
+      "path": "C:/Trabajo/airr/marked-rg-manuscript/WORKING-MANUSCRIPT.md",
+      "sha256": "b3042d6ab2a9cb3f4414b818e322953d7088a7a2befa4c1a79b8dcddef2457d2"
+    }
+  ],
+  "problem": "1950 retained an unpaid far RAW exterior conditional-mean covariance even at fixed complete background theta. For the original bare finite-support Hamiltonian and a fixed cutoff disintegration this is overly conservative: its conditional kernel cannot depend on far raw F. This does not remove global background/history dependence.",
+  "source_cutoff_admission_reading": [
+    "Source1.18 good factors are sup_{b in (cube-eroded2)*}|A(b)|<delta0/g0. Bad factors use the complementary >= condition on the same complete bond carrier. These are genuine original raw-free-index restrictions after the selected linear constraints have been removed; selected dependent outputs must not be added as independent variables.",
+    "A product of good sup indicators equals the product of identical single-bond norm indicators over their UNION of free carriers, using idempotence on overlaps. The source norm itself must be retained: a norm ball is convex, but replacing it by a Euclidean equivalent ball changes the cutoff. Euclidean norm equivalence is only used to bound its radius in1950.",
+    "The bad sup condition does not factor into single-bond indicators. Its full carrier must be disjoint from D union N to put it entirely into the exterior weight; a cube-label argument is insufficient.",
+    "Source1.19 removes the old approximate-fluctuation good indicator only with the actual background comparison. The real Hermitian/unitary estimate ||exp(i g0 A)-I||<=g0||A|| and ||U1 Ulocal^-1-I||<=eta imply its strict 2delta0 bound when ||A||<delta0/g0 and eta<=delta0. The source supplies eta<=C B3 exp(-delta L M2 R1) epsilon1 under its stated background/good-collar hypotheses. Their constants and original source domain remain to be admitted; qualitative large M2 R1 is not a numerical certificate.",
+    "Printed251 states only small fluctuation indicators on final D and describes a change on S1. To extend an exact product factor to D union N, one must enumerate the actual free-carrier cover and verify every original good ball on those indices occurs, every surviving bad/approximate factor is exterior, and source analytic deletion holds for all relevant good cubes. Geometry Rstar+2b+4<h is a sufficient separation condition for a verified finite halo model; it is not by itself that enumeration or the source regularity proof.",
+    "No source coefficient B3, good-collar regularity, source exponential rate or actual finite-period tuple was silently chosen. The actual first-step disintegration is therefore still not fully admitted."
+  ],
+  "fixed_theta_dictionary": [
+    "Theta fixes all non-raw variables: sector/history, Omega1,D, U1, coarse V, external compact-group V0, gauge and the original real selected chart. The statement does not vary V0, V or U1.",
+    "Partition original independent raw free indices into D and E. Define N from the COMPLETE exterior support envelope of all original bare Hamiltonian primitives that contain any D coordinate, including soft gauge, Haar and selected Jacobian/current terms, plus the exterior carriers of any observable under consideration. For1950 deep roots those observable carriers are wholly in D. Put F=E minus N.",
+    "This N is an envelope over the whole admitted chart, not derivative support at one point. A vanishing mixed derivative at one configuration does not establish finite support. Later old E/H1 actions or long nonlocal words are not covered.",
+    "Once the actual cutoff disintegration has established a fixed original K_D independent of n,f, the unexpanded density has exact form rho_theta(n,f) 1_K_D(a) exp[-H_DN,theta(a,n)]. All purely exterior bare terms, indicators and coordinate Jacobians are included in rho_theta once. H_DN is the sum of complete bare primitives that involve D; finite support puts all their exterior inputs in N. No division by an indicator or exterior density is needed."
+  ],
+  "kernel_independence_derivation": [
+    "For each admissible exterior pair (n,f) with positive finite conditional normalizer, k_theta(a|n,f)=1_K_D(a) exp[-H_DN,theta(a,n)] / integral_K_D exp[-H_DN,theta(x,n)] dx. The right side depends on n and theta, and does not depend on f.",
+    "Exterior rho_theta can have arbitrary n-f coupling, far bad indicators or other exterior weights. They cancel only within this conditional density at fixed (theta,n,f); they do not cancel from the outer marginal or any of the four unnormalized coefficients.",
+    "For a deep original root M_p(a;theta), u_p(theta,n,f)=u_p(theta,n). Thus u_p(theta,0,f)=u_p^0(theta), independent of far RAW f. The zero reference still requires the entire original near product/chart used in1950; null marginal points may be evaluated by the well-defined mathematical conditional kernel only after this chart check.",
+    "The full raw exterior marginal pi_theta(dn,df) may now be arbitrary positive and normalized. Since u_p-u_p^0(theta) is bounded by A_p uniformly in all admitted n, the outer contribution obeys |Cov_pi_theta(u_p,u_q)|<=2 A_p A_q. Integrating far raw f introduces no additional separate conditional-mean error at fixed theta.",
+    "Therefore, conditional on exactly the1950 full real chart, original product cutoff, uniform mixed Hessian and convexity hypotheses, |Cov_original_raw|theta(M_p,M_q)| <= (2 c_K^2/m) g0^2 L_p L_q exp[-alpha dist(S_p,S_q)] + 2 A_p A_q, with the SAME A_p, original radius, depth and parameters as1950. This bound covers the actual arbitrary raw exterior marginal at fixed theta. It supplies no decay in root separation from its depth term for near-boundary roots.",
+    "No hypothesis on mixing of the far RAW marginal is required in this conditional deduction. This removes only an unnecessary far-raw response assumption. It does not remove the required physical cutoff/chart/Hessian/source background gates."
+  ],
+  "remaining_background_term": [
+    "Upon integrating theta, law of total covariance still contains Cov_theta(E[M_p|theta],E[M_q|theta]). The references u_p^0(theta) vary with global U1, coarse V/V0 and history. This term is not bounded or eliminated.",
+    "Calling V0 part of far raw f would be a category error: U1 depends on V0 and theta was held fixed throughout the support argument. A change in these backgrounds changes H_DN even when its explicit raw f arguments are absent.",
+    "Purely exterior marked roots retain their transported values; crossing roots with direct n inputs require additional derivative terms. Four-coefficient normalization and W_H allocation from1941 remain controlling. No full physical Rsc/Hsharp, connected-history summation or all-sector interpolation closure follows."
+  ],
+  "controls_and_falsifiers": [
+    "If any surviving cutoff involving D depends on f, the fixed K_D density formula fails and the far-kernel independence is withheld. This is a domain error, not something the Hessian estimate repairs.",
+    "If any actual primitive involving D has an omitted far carrier, enlarge N using its full support; if the support becomes nonlocal, bare depth estimates may be useless. Do not replace the action or freeze an actual raw argument to force locality.",
+    "If source chart bounds hold only on a subset of original K_N, the arbitrary exterior marginal is unsupported; no pointwise-to-all-sector inference is allowed.",
+    "All12 findings of completed1941 review and all22 of1645 remain intact. This parent derivation is unreviewed and is not covered by their scope; neither assessment/score is inherited.",
+    "No repeated review, CI, public release, login, deposit, statistics query, payment, other-chat mutation, source body archival or new repository."
+  ],
+  "levels": {
+    "formal": "No new formalization/build. Nine fixed cached commits inventoried/resolved only.",
+    "literature": "Exact source1.18/1.19 selected statement read and printed250 visually checked; reuse1941 and1474 scopes without full proof audit. Current directed primary sweep metadata only.",
+    "heuristic": "Participating-parent exact factor-support and conditional-density deduction on the explicitly stated source-admitted class; physical-class admission still open.",
+    "speculative": "Actual all-sector domain/tuple admission and remaining background/history connected covariance."
+  },
+  "physical_admission": false,
+  "candidate1642_admitted": false,
+  "new_review": false,
+  "new_paper": false,
+  "next": "Verify the ACTUAL original good-carrier union covers D union N, all surviving bad/approximate carriers miss it, and source1.19 comparison holds on the same real product chart and simultaneous finite-period tuple. Then1950/1951 bounds apply to all raw exterior at fixed theta; only background/sector/history covariance remains unpaid. Do not restart1941/1925 reviews or create more abstract covariance lemmas."
+}

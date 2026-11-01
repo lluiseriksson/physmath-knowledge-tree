@@ -1,0 +1,75 @@
+{
+  "execution": 1952,
+  "at": "2026-11-01T12:56:56.534303+00:00",
+  "status": "SOURCE_TILDE_SIGN_CORRECTION_AND_GOOD_CARRIER_COVER_REDUCTION; ANALYTIC_PHYSICAL_ADMISSION_OPEN",
+  "source": {
+    "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-convergent-cmp119-from-fusion.pdf",
+    "sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+    "reading": "Printed244-246 text read; printed245 tilde convention visually checked. Printed250 formula1.18 visually read in1951 is reinterpreted using that convention. Selected source statements, not full proof audit.",
+    "temporary_render": {
+      "printed_page": 245,
+      "sha256": "14191719308208a847cb4d44f42cf5c31d5cdc3fe84ec0dce1d49984cafdffb4",
+      "not_archived": true
+    }
+  },
+  "fixed_inputs": [
+    {
+      "path": "C:/Trabajo/airr/2026-11-01_execution1951/BARE-RAW-FAR-KERNEL1951.json",
+      "sha256": "1f39585c0d7345c77758dd378d52a18dce583e7d824203fe82115890660356f6"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-11-01_execution1950/NEAR-EXTERIOR-NONLINEAR-RESPONSE1950.json",
+      "sha256": "a662b857b69e801ace5214967c3af02381da81db6057e3b5091ceef16974e7cb"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-11-01_execution1941/ASSESSMENT1941.json",
+      "sha256": "bbf7d764a8396d9122a5c30c157f1ad70f143396437742eb854d6846eb187a1c"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-11-01_execution1939/BARE-BOUNDARY-SUPPORT-SEPARATION1939.json",
+      "sha256": "5823470699498e79727875e2fab78a1e597b682269245f1e28fc8797977fc9f3"
+    },
+    {
+      "path": "C:/Trabajo/airr/marked-rg-manuscript/WORKING-MANUSCRIPT.md",
+      "sha256": "b3042d6ab2a9cb3f4414b818e322953d7088a7a2befa4c1a79b8dcddef2457d2"
+    }
+  ],
+  "controlling_correction": {
+    "affected": "1951 source_cutoff_admission_reading entries1-2 describe (cube tilde2)* as cube-eroded2. That textual interpretation is wrong and is withdrawn. Preserve the exact old record for provenance.",
+    "correct": "Positive tilde adds layers. Printed245 explicitly defines tilde as enlargement by a layer of the specified cubes. Thus (square-prime tilde2)* in1.18/1.19 is an ENLARGED carrier, not an eroded cube. Omega1 tilde(-1) and tilde(-2) remain erosions. Do not reverse their negative signs.",
+    "impact": "The identity for products of good sup indicators remains valid on the CORRECT enlarged carriers. The wrong eroded-carrier wording would create artificial uncovered gaps. No eroded-cell coverage conclusion is retained. 1941 already retained full bad halos; its completed report is not changed or restarted."
+  },
+  "geometric_cover_reduction": [
+    "Let h=LMR1 and s=L^2 M2 R1 be the actual coarse and decomposition-cell side lengths in the same fine-lattice units. M=L^m, M2=L^m2, M>M2 imply M/M2>=L, so h/s=M/(L M2) is an integer power of L. Use the source-required compatible aligned periodic partitions; no arbitrary shifted grids.",
+    "Omega1 and its h-cell erosions are unions of decomposition s-cells when those partitions are nested. This is stronger than merely comparing diameters: a point in a union of aligned h-cells belongs to an s-cell wholly contained in that union.",
+    "D_final subset Omega1 tilde(-2), and the complement enlargement used in1939 only shrinks D. For a complete near envelope N of radius Rstar with the retained endpoint/incident guard and Rstar+2b+4<h, every endpoint used in D union N lies in Omega1 tilde(-1). The h-layer buffer is not consumed by the s-cell diameter because nested-cell containment is used.",
+    "Choose the s-cell containing one endpoint of an actual free bond b in D union N. It lies in Omega1 tilde(-1). It cannot be a bad R1 cell if the full R1 bad-carrier halo is separated from D union N by the verified buffer. Hence this cell occurs among the good cells of1.18.",
+    "The positive enlarged tilde2 carrier contains that cell and its incident bonds. An actual independent raw free bond is not one of the globally eliminated b0(c) variables. For a local cell whose selected indices lie in the original eliminated region, the star deletion therefore does not remove an actual free index. This global/local selected-index inclusion must be checked using the actual Ω1 and selected-row definition, never using D* and its overlapping incident complement as a partition.",
+    "These steps give coverage of D union N by good carriers on the source-compatible sector geometry, provided the stated complete-halo and selected-index inclusions hold. Product/idempotence then gives the ORIGINAL single-bond norm balls on these coordinates. Overlaps cause no extra power of an indicator, and no smaller equivalent Euclidean ball is substituted.",
+    "Every bad sup indicator stays as one unsplit exterior factor when its full enlarged carrier misses D union N. Good indicators may cover additional exterior indices; their remaining single-index factors go into the exterior density exactly once. This algebra does not authorize deletion of old approximate-fluctuation indicators before1.19 applies."
+  ],
+  "actual_remaining_analytic_gate": [
+    "The source1.19 background comparison requires its stated local source regularity and C B3 exp(-delta L M2 R1) epsilon1 <= delta0 in the same original chart. The original good norm ball plus this bound makes the old approximate good restriction redundant by the real unitary triangle bound. No numerical C,B3,delta or all-sector good-collar verification was obtained.",
+    "The source chart and the full bare inside/exterior Hessian margin on the ENTIRE original K_D times K_N are separate analytic obligations. The geometric good-carrier cover does not prove them. Retain1697 bounds only at their established source-dependent scope and all1941 qualifiers.",
+    "The actual finite torus must support every nested partition at the actual source g1, simultaneously with1927 coupling upper window and all chart/contour lower windows. No common concrete tuple or all-sector certificate is supplied.",
+    "1950-1951 nonlinear response/far-raw independence therefore remains conditional. The remaining background/sector/history covariance is unbounded. Do not report admission of1642, marked interpolation, Rsc/Hsharp or a new physical theorem."
+  ],
+  "falsifiers": [
+    "A shifted/non-nested partition, period not divisible by required cell lengths, incorrect tilde units or a missing endpoint invalidates the cover argument.",
+    "A globally free bond omitted by every good star carrier disproves the selected-index inclusion and blocks product-domain admission; do not fill that bond with an ambient identity or add a cutoff.",
+    "A surviving bad/approximate factor with an interior argument blocks the exterior-density factorization.",
+    "A failed source comparison/chart/Hessian bound on any original near-field segment blocks the nonlinear arbitrary-exterior application even if carrier coverage holds."
+  ],
+  "deduplication": "This corrects a source-notation mistake in1951 and advances its actual good-carrier geometry; it does not re-prove1473 covariance or open another review. No source/publication/candidate counts increase.",
+  "levels": {
+    "formal": "No new formalization or global dependency build; nine cached pins metadata only.",
+    "literature": "Selected original primary convention and formulas read; exact PDF hash; no full proof audit.",
+    "heuristic": "Participating-parent source-geometry deduction under explicitly retained nested-periodic/selected-index conditions, unreviewed.",
+    "speculative": "Analytic all-sector admission, actual common tuple and background/history covariance remain open."
+  },
+  "physical_admission": false,
+  "candidate1642_admitted": false,
+  "new_paper": false,
+  "new_review": false,
+  "next": "Use corrected POSITIVE enlarged good/bad carriers. Resolve the actual selected-index inclusion and source1.19 uniform background comparison, then full real chart/Hessian on ONE original common finite-period tuple. Keep physical admission open until these gates and remaining background/history covariance are proved; no new elementary covariance layer or repeat review."
+}

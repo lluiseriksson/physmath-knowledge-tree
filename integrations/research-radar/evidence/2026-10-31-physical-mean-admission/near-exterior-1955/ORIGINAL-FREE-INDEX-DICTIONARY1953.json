@@ -1,0 +1,75 @@
+{
+  "execution": 1953,
+  "at": "2026-11-01T12:58:50.107847+00:00",
+  "status": "ORIGINAL_GLOBAL_FREE_INDEX_DICTIONARY_RESOLVED_AT_SOURCE_GEOMETRY_SCOPE; ANALYTIC_ADMISSION_OPEN",
+  "source": {
+    "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-convergent-cmp119-from-fusion.pdf",
+    "sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+    "reading": "Printed252-253 text read; printed253 Eq1.26 visually checked. CMP109 printed250-252 selected text read, especially geometric incident-set convention on251. Source statements only; no full proof audit.",
+    "temporary_render": {
+      "printed_page": 253,
+      "sha256": "4e37cf5536cc0b1c3f5bb99c803f6cf24b451989535ce500c823d0623f7404c8",
+      "not_archived": true
+    }
+  },
+  "fixed_inputs": [
+    {
+      "path": "C:/Trabajo/airr/2026-11-01_execution1952/SOURCE-GOOD-CARRIER-COVER1952.json",
+      "sha256": "6d969fc033082d5cd0204669284779f509dcae1a3ae7bc5edbe5e8a514bf4e7d"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-11-01_execution1951/BARE-RAW-FAR-KERNEL1951.json",
+      "sha256": "1f39585c0d7345c77758dd378d52a18dce583e7d824203fe82115890660356f6"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-11-01_execution1941/ASSESSMENT1941.json",
+      "sha256": "bbf7d764a8396d9122a5c30c157f1ad70f143396437742eb854d6846eb187a1c"
+    },
+    {
+      "path": "C:/Trabajo/airr/marked-rg-manuscript/WORKING-MANUSCRIPT.md",
+      "sha256": "b3042d6ab2a9cb3f4414b818e322953d7088a7a2befa4c1a79b8dcddef2457d2"
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-rg-I-cmp109-1104116842.pdf",
+      "sha256": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a"
+    }
+  ],
+  "physical_index_problem": "Source X* depends on X and deletes selected bonds based on X^(1). It must not be treated as an independent local coordinate system when the selected variables were already eliminated globally on Omega1. In particular D* can contain some globally eliminated boundary bonds. The actual conditional integral must restrict the original GLOBAL free field, not add these bonds back.",
+  "actual_coordinate_dictionary": [
+    "Fix once the original fine torus and one orientation representative for each nearest-neighbor bond; opposite orientations are group inverses of the same coordinate. Let B(Omega1) be the source incident-bond set, as defined by CMP109251, and J=Omega1^(1) the coarse selected-row set eliminated in CMP119249. Let S={b0(c): c in J}.",
+    "The original independent coordinate set is I_free=B(Omega1) minus S, exactly the set in source1.15. Original variables A are indexed only by I_free. The local selected values CA and original nonlinear selected output are functions of these coordinates, not additional integration variables.",
+    "For the original final physical D=A1, define I_D=I_free intersect B(D). Define E=I_free minus I_D. These sets are genuinely disjoint and exhaust I_free, independently of overlap between incident B(D) and B(D^c). A bond intersecting both continuous sets is integrated once if in I_D; it is not also an exterior coordinate.",
+    "This is the literal restriction of the already-defined field A to D in source1.26, whose first line integrates dA|A1. It does not assert that D* alone enumerates free variables. The restriction operators in1.26 must be read on this global free space.",
+    "For any local continuous carrier X within Omega1 with X^(1) subset J, let S_X={b0(c):c in X^(1)}. Then S_X subset S by monotonicity, and X*=B(X) minus S_X. Consequently X* intersect I_free = B(X) intersect I_free. This identity removes the selected-index inclusion premise in1952 whenever the actual carrier is contained as stated. It never asserts X*=B(X) intersect I_free.",
+    "For a good decomposition cell Q chosen in the nested partition as in1952, use its positive enlarged carrier X=Q tilde2. The one h-layer collar and 2b+4<h keep its endpoints/selected rows within Omega1 at the original units. Thus the monotonicity premise applies. Every actual free bond in the covered D union N carrier remains in that good X* after intersecting I_free.",
+    "If a carrier touches the Omega1 boundary and X^(1) is not contained in J, do not apply this identity blindly. Restrict to its actual integration indices and keep the remaining boundary coordinates in their original source roles. The deep D union N cover uses the buffer explicitly."
+  ],
+  "cutoff_consequence": [
+    "Combine1952 corrected positive enlarged carriers with the preceding global-free identity. At the admitted nested periodic geometry, each covered raw free coordinate in I_D union N has an original good norm-ball restriction. Repeated equal-radius good factors reduce by idempotence to one ball per coordinate.",
+    "No globally eliminated selected output is integrated or given a new independent cutoff. No missing edge is supplied with an ambient identity. Cutoff norms and original radius are unchanged.",
+    "Full bad/approximate carrier separation and source1.19 analytic redundancy are still required before identifying an exact fixed K_D times K_N disintegration. This coordinate resolution does not establish those analytic claims."
+  ],
+  "normalization_and_background_controls": [
+    "Only after that original disintegration and full real chart/Hessian admission may1950 reflected response and1951 far-raw kernel independence be used. Exterior rho and W_H remain in the actual outer marginal and all four unnormalized marked coefficients.",
+    "Fixing all background theta is essential. Global U1, coarse V/V0 and sector/history variation remain in the unpaid outer conditional-mean covariance.",
+    "Purely exterior and crossing marks retain their correct carrier and transported value. No normalization, history summability, Rsc/Hsharp identification or all-sector physical theorem is proved."
+  ],
+  "falsifiers": [
+    "An implementation that integrates D* without intersecting I_free can reintroduce a globally dependent selected bond and is rejected.",
+    "An implementation that uses both incident D and incident D^c as two free-variable sets duplicates boundary coordinates and is rejected.",
+    "A selected row outside J in a claimed interior carrier, a violated buffer, incompatible periodic partitions or wrong units invalidates this deep-cover application.",
+    "Full chart/source comparison/Hessian failure on the original product radius blocks admission even with the corrected coordinate dictionary."
+  ],
+  "prior_review_scope": "F02 and F06 of completed1941 were read this turn and remain fully preserved. This is a new participating-parent application dictionary, not a replacement assessment, independently reviewed result, grade or manuscript/PDF assessment.",
+  "levels": {
+    "formal": "No new formal proof or global build; nine cached fixed commits inventoried only.",
+    "literature": "Selected exact source definitions and1.26 read, with PDF/source hashes; no full proof audit.",
+    "heuristic": "Parent source-coordinate deduction, with explicit set equality and actual global domain; not a numerical sector certification.",
+    "speculative": "Uniform source1.19 background comparison, original full chart/Hessian and common tuple; background/history covariance remains open."
+  },
+  "physical_admission": false,
+  "candidate1642_admitted": false,
+  "new_paper": false,
+  "new_review": false,
+  "next": "Use I_D=I_free intersect B(D), E=I_free minus I_D, and always intersect local stars with the original global free set. The remaining substantive gate is source1.19 uniform background comparison plus full original real chart/Hessian and ONE simultaneous finite-period parameter chain. Preserve1952 positive-tilde correction and all adverse reviews. No additional elementary covariance lemma, duplicate review or new paper."
+}
