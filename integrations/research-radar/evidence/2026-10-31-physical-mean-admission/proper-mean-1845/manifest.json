@@ -1,0 +1,42 @@
+{
+  "scope": "Own proper-domain old/new mean conditional comparison, complete bounded assessment and receipt; no original physical admission, new paper, count increment or graph edit.",
+  "base_commit": "9c3ea84ceb4f37d9458b0115a8ddc69e2de96461",
+  "baseline_note_sha256": "9c76fc5cff72a1c825eb3cc993d1b22060f976bd46d884bb2747b8abd654cadd",
+  "append_sha256": "c59301d66f077f6ca1376c1111b4f1623f5eedd03878a19f08a330c33227d813",
+  "final_note_sha256": "9d5a7c59766cb053efb31258e871cd7910a960f095b926b15cb85b68f8418ce4",
+  "files": [
+    {
+      "path": "integrations/research-radar/evidence/2026-10-31-physical-mean-admission/proper-mean-1845/PROPER-MEAN-OPERATOR-COMPARISON1839.json",
+      "sha256": "8fe520155c5f6a56fa6e21171ef92d894a87b53ec9398fcf88e4d4dba74f5418",
+      "bytes": 13532
+    },
+    {
+      "path": "integrations/research-radar/evidence/2026-10-31-physical-mean-admission/proper-mean-1845/ASSESSMENT1839.json",
+      "sha256": "2ae474e99837a263f8b7ae71bbc08e973123b9f27e47a2047d4c459996076ddd",
+      "bytes": 38536
+    },
+    {
+      "path": "integrations/research-radar/evidence/2026-10-31-physical-mean-admission/proper-mean-1845/ASSESSMENT-RECEIPT1844.json",
+      "sha256": "805747f020630c8179c20f122996840576757b6dd4e26a39579d8884dcb23fa6",
+      "bytes": 7971
+    }
+  ],
+  "exact_crlf_preservation": [
+    {
+      "path": "integrations/research-radar/evidence/2026-10-31-physical-mean-admission/proper-mean-1845/PROPER-MEAN-OPERATOR-COMPARISON1839.json",
+      "sha256": "8fe520155c5f6a56fa6e21171ef92d894a87b53ec9398fcf88e4d4dba74f5418"
+    }
+  ],
+  "review_context": "One requested gpt-6-astra/xhigh separate-context assessment1839 of exact JSON; effective identity/effort/independence unauthenticated. Ten findings, ten condition rows and nine falsifiers retained. No score/restart or manuscript/PDF/Capacity/global source/build assessment. Antecedent JSONs and prior reviews were not read by reviewer. Editorial consolidation1845 unassessed, no inherited grade.",
+  "levels": {
+    "source_conventions": "literature",
+    "physical_application": "heuristic conditional, not admitted",
+    "formal_certification": false
+  },
+  "physical_admission": false,
+  "candidate1642_admitted": false,
+  "counts_unchanged": {
+    "sources": 120,
+    "candidates": 19
+  }
+}

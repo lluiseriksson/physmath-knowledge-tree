@@ -1,0 +1,356 @@
+{
+  "assessment_id": "ASSESSMENT1839",
+  "at_utc": "2026-11-01T04:44:59Z",
+  "language": "es",
+  "review_kind": "Una revisión adversarial nueva del argumento ensamblado, sin nota, sin reinicio y sin heredar evaluaciones anteriores",
+  "input": {
+    "path": "C:/Trabajo/airr/2026-11-01_execution1839/PROPER-MEAN-OPERATOR-COMPARISON1839.json",
+    "sha256_expected": "8fe520155c5f6a56fa6e21171ef92d894a87b53ec9398fcf88e4d4dba74f5418",
+    "sha256_observed": "8fe520155c5f6a56fa6e21171ef92d894a87b53ec9398fcf88e4d4dba74f5418",
+    "hash_matches": true,
+    "frozen_input_modified": false
+  },
+  "execution_disclosure": {
+    "requested_configuration": "Astra/xhigh; contexto separado",
+    "effective_model_authenticated": false,
+    "effective_reasoning_effort_authenticated": false,
+    "independence_authenticated": false,
+    "statement": "No se infiere identidad efectiva, esfuerzo efectivo ni independencia autenticada de la configuración solicitada. La revisión se realizó en este contexto separado, contrastando el input con los PDF locales fijados.",
+    "prior_assessments_read": false,
+    "antecedent_json_files_read": false,
+    "extra_agents_used": false,
+    "network_used": false,
+    "publication_performed": false,
+    "saved_pdf_corpus_or_renders": false,
+    "only_authored_file": "C:/Trabajo/airr/2026-11-01_execution1839/ASSESSMENT1839.json",
+    "pdf_skill_read": "C:/Users/lluis/.codex/plugins/cache/openai-primary-runtime/pdf/26.1026.10807/skills/pdf/SKILL.md",
+    "pdf_method": "Extracción de páginas completas con PyMuPDF en memoria; inspección visual de páginas relevantes mediante renders PNG transmitidos en memoria. No se guardaron extracciones ni imágenes."
+  },
+  "scope": {
+    "reviewed": [
+      "Especialización ambiente k=0, separada del paso unitario no trivial",
+      "FULL124 frente a las medias 0.4 y 0.12, con normalización y marcos relativos",
+      "Referencia auxiliar Qstar V, shear, transporte exacto y proyección 3.169",
+      "Máscaras de enlaces incidentes, filas gruesas, árboles y fronteras propias",
+      "Comparación de formas con corriente y aceleración de Ward",
+      "Cota local del polinomio unitario Dtilde^(2)",
+      "Descomposición física hard-to-soft con marcos de sitio y árbol distintos",
+      "Diferencia entre un lema condicional y la admisión de la familia física original"
+    ],
+    "not_reviewed": [
+      "Calificación de un manuscrito o PDF de trabajo",
+      "Capacity, expediente global de fuentes o build global",
+      "Evaluaciones anteriores, aunque el input las mencione",
+      "Elección de nuevos parámetros, acoplamientos, toro, dominio o media",
+      "Publicación, normalizadores completos, estimaciones complejas o cierre de otros consumidores"
+    ]
+  },
+  "sources": [
+    {
+      "id": "S99",
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/cmp99/1103942769.pdf",
+      "sha256": "39f8033b35838c7bdd14f97c7fb1edb0b35d4190b8b88f31d19d12a72d542861",
+      "hash_verified": true,
+      "title": "Propagators for Lattice Gauge Theories in a Background Field, CMP 99, 389-434 (1985)",
+      "used_pages_printed": [391, 392, 393, 394, 395, 396, 397, 398, 406, 407, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431],
+      "visually_inspected_pdf_pages_1_based": [39, 42],
+      "key_locators": ["3.14-3.26", "3.35-3.38", "3.79-3.83", "3.110", "3.114-3.120", "3.127-3.138", "3.155-3.158", "3.168-3.169"]
+    },
+    {
+      "id": "SF",
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balabanfusion.pdf",
+      "sha256": "00cc6b218dcf0e1c2884e135caa1d57b3591df036540b685e7440f30cbd4ff16",
+      "hash_verified": true,
+      "components_used": [
+        {
+          "title": "Averaging Operations for Lattice Gauge Theories, CMP 98, 17-52 (1985)",
+          "locators": "PDF pp.297-298, 303-307, 310-320; impresas pp.19-20, 25-29, 32-42; especialmente 55-63, 109-126, 134-157"
+        },
+        {
+          "title": "Spaces of Regular Gauge Field Configurations on a Lattice and Gauge Fixing Conditions, CMP 99, 75-102 (1985)",
+          "locators": "PDF pp.215-221; impresas pp.77-83; especialmente 1.3-1.9, 1.19, Lemma 1 y 1.25, 1.33-1.42"
+        },
+        {
+          "title": "The Variational Problem and Background Fields in Renormalization Group Method for Lattice Gauge Theories, CMP 102, 277-309 (1985)",
+          "locators": "PDF pp.133-135, 158-165; impresas pp.277-279, 302-309; especialmente Theorem 1, Proposition 8 y Proposition 9"
+        },
+        {
+          "title": "Propagators and Renormalization Transformations for Lattice Gauge Theories. II, CMP 96, 223-250 (1984)",
+          "locators": "PDF pp.332, 353, 357-358; impresas pp.224, 245, 249-250; especialmente Lemma 2.4 y 2.153-2.157"
+        }
+      ],
+      "visually_inspected_pdf_pages_1_based": [314, 353]
+    },
+    {
+      "id": "S109",
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-rg-I-cmp109-1104116842.pdf",
+      "sha256": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+      "hash_verified": true,
+      "title": "Renormalization Group Approach to Lattice Gauge Field Theories. I, CMP 109, 249-301 (1987)",
+      "used_pages_printed": [250, 251, 252, 253, 254, 255, 256, 264, 265, 266, 267],
+      "visually_inspected_pdf_pages_1_based": [5, 6],
+      "key_locators": ["Convención geométrica de p.251", "0.4-0.16", "0.21", "Theorem 3", "2.2-2.5", "2.9-2.11 y definición del pivote h"]
+    },
+    {
+      "id": "S119",
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-convergent-cmp119-from-fusion.pdf",
+      "sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+      "hash_verified": true,
+      "title": "Convergent Renormalization Expansions for Lattice Gauge Theories, CMP 119, 243-285 (1988)",
+      "used_pages_printed": [243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 254, 255, 256, 257, 262, 263, 266, 268, 271],
+      "key_locators": ["1.1-1.4 y Qstar de 1.3", "1.8-1.12", "1.14-1.16", "1.18-1.20", "2.1-2.3", "2.10-2.17", "Theorem 1 y sus restricciones de constantes"]
+    }
+  ],
+  "overall_result": {
+    "verdict": "Resultado parcial: el esquema de comparación es matemáticamente coherente bajo sus hipótesis conjuntas; la positividad de la precisión física original no queda acreditada por este input.",
+    "conditional_operator_comparison": "Aceptable como proposición condicional, con identificación de dominios, cartas, métricas, polinomio fuente y constantes todavía por autenticar para la familia fijada.",
+    "unconditional_physical_gap_proved": false,
+    "physical_admission": false,
+    "candidate1642_admitted": false,
+    "fatal_algebraic_counterexample_under_all_stated_hypotheses_found": false,
+    "essential_reason": "Las identidades de transporte, la proyección con Qprime y las dos cancelaciones de Ward no bastan para demostrar que el U1 y los parámetros originales satisfacen simultáneamente la clase antigua, la carta relativa alrededor de Qstar V y los umbrales nuevos. Las fuentes proporcionan ingredientes y teoremas en clases precisas, no una admisión automática del conjunto físico mencionado por nombre en el input.",
+    "positive_partial_conclusion": "La especialización k=0 evita confundir el operador ambiente con el promedio unitario. La referencia covariante no exige holonomía global trivial. La convención fuente de enlaces incidentes permite la frontera física indicada. Con las verificaciones conjuntas pendientes, las fórmulas dan los valores condicionales a_h y a_soft escritos en el input.",
+    "not_a_refutation_of_existence_of_a_gap": true
+  },
+  "findings": [
+    {
+      "id": "F01",
+      "status": "Verificado como especialización de las definiciones, condicionado a la admisibilidad geométrica y regularidad fuente",
+      "topic": "Sucesión ambiente zeroth y operador unitario distinto",
+      "evidence": ["S99 pp.393-394, 3.14-3.26", "S99 pp.417-423, 3.110, 3.127-3.138", "S99 pp.427-428, 3.155-3.158"],
+      "analysis": "Para la sucesión realmente construida con k=0, eta=1 y Lambda0=Omega0, Q0 y Qprime0 son identidades. El término cuadrático de la media de orden cero es nulo, N(Qprime0)={0}, R=0 y 3.110 impone A=B. Por tanto H=H1=I y G1=(Delta+aI)^(-1); la expresión (QG1Qstar)^(-1)-aI es Delta. La conclusión no elimina Q1 ni Dtilde_unit^(2) de 3.155. Ambos pertenecen al paso adicional unitario y permanecen no triviales. El factor dos del término de corriente es compatible con que Dtilde^(2) sea el coeficiente cuadrático y no el diferencial segundo completo.",
+      "objection_retained": "Que el índice cero figure en las definiciones no acredita por sí solo que el Omega0 y Lambda físicos cumplan las separaciones y regularidad de 3.35-3.36 y Section E. La especialización de un teorema fuente no identifica automáticamente su dominio con el dominio fijado en otra construcción.",
+      "consequence": "La reducción formal al Hessiano Wilson corregido por el polinomio unitario es válida. La aplicación de su gap antiguo continúa siendo un gate fuente."
+    },
+    {
+      "id": "F02",
+      "status": "Referencia y primera derivada verificables; coeficientes perturbados no certificados para la familia concreta",
+      "topic": "FULL124, nuevas medias y Qstar V",
+      "evidence": ["SF CMP98 pp.34-36, 109-126, fórmula 124 inspeccionada visualmente", "S109 pp.253-254, 0.4-0.12", "S119 p.246, 1.3"],
+      "analysis": "La referencia de 1.3 es I en enlaces internos de bloque y V(c) en su corredor. En un portador de dos bloques, las rutas internas de raíz valen I y las rutas paralelas de corredor valen el mismo V(c). Por ello los lazos Y_x y su promedio Y que aparecen en FULL124 son cero; se anulan todos sus términos correctores, no solo una parte de ellos. El término principal conserva los transportes adjuntos del corredor. Al derivar 0.4, las contribuciones de raíz dan alpha(c_-)-Ad(V(c))alpha(c_+), con la convención de tangente de gauge izquierda. En 0.12 el mismo diferencial en W se obtiene de 0.8. Así, con signos y trivializaciones compatibles, Pnew,W=Pold,W+d_V alpha_W. Esto no afirma igualdad de las medias fuera de W ni identifica sus fibras no lineales.",
+      "objection_retained": "FULL124 es la derivada de la operación relativa construida en CMP98, no una licencia para sustituirla por cualquier promedio antiguo de aspecto parecido. La normalización respecto al valor efectivo en U y las métricas gruesas han de ser las declaradas. Para 0.12, los axiomas de M fijan el primer diferencial en la diagonal, pero no una constante universal de todos los derivados para toda M posible; las cotas deben pertenecer a la M y la carta originales seleccionadas.",
+      "consequence": "No se requiere V globalmente próximo a I ni se ha encontrado una obstrucción por holonomía no trivial. La selección efectiva de la media y su carta sigue sin verificarse fuera de la declaración del input."
+    },
+    {
+      "id": "F03",
+      "status": "Puente local plausible y derivable con hipótesis adicionales explícitas; no demostrado por la regularidad fuente aislada",
+      "topic": "Carta uniforme U/(Qstar V) y constantes de portador",
+      "evidence": ["S99 p.396, 3.35-3.38", "SF CMP99 pp.79-80, Lemma 1, 1.24-1.25", "SF CMP102 pp.278-279, Theorem 1", "S109 pp.253-255, 0.5-0.16", "S119 pp.246-248, 1.2-1.12"],
+      "analysis": "3.35 asegura una representación pequeña después de un gauge local; no asegura directamente proximidad a Qstar de la media nueva en el representante fijado. Un campo plano puro gauge U=g(x)g(x')^(-1), con g=I en raíces y g grande en sitios internos, tiene curvatura y corriente nulas y pertenece a la clase regular gauge-invariante, mientras que V=I y U/(Qstar V) puede ser grande. Ese ejemplo queda excluido si se impone realmente el representante de raíz promediada U(y,x)=I, como hace el candidato. Con esa condición exacta, una cota de curvatura en todos los portadores, rutas de longitud acotada y una rama común de Log/M, las rutas de raíz difieren entre sí en O_L(epsilon); su promedio I obliga a que cada una sea próxima a I. Comparando rutas paralelas se obtiene después la proximidad de los enlaces de corredor a V. Este argumento es local, tolera holonomía gruesa y ofrece el puente adecuado, pero sus hipótesis conjuntas deben comprobarse en todos los bloques vecinos del borde.",
+      "objection_retained": "El input etiqueta el control de esta carta como hipótesis a autenticar y no proporciona la derivación con los cortes, portadores y escalas originales. La regularidad de CMP99 o la frase de universalidad de CMP109 no reemplazan ese paso. El Lemma 1 antiguo trata una carta relativa de árbol, por lo que no se puede citar sin explicar el paso al representante de raíz promediada nuevo.",
+      "consequence": "No trato la carta común como resultado físico ya pagado. Tampoco uso el ejemplo puro gauge para refutar el candidato completo, pues viola su representante físico exacto."
+    },
+    {
+      "id": "F04",
+      "status": "Lema uniforme local válido una vez autenticada la carta y las ramas",
+      "topic": "Analiticidad, pivotes y paso de estimaciones locales a norma global",
+      "evidence": ["SF CMP98 pp.34-42, 109-157", "S99 pp.406-407, 3.79-3.83", "S109 p.267, definición del operador h"],
+      "analysis": "Sobre un número fijo de enlaces por portador, una carta uniforme separada de singularidades de Log/M y de los pivotes da cotas uniformes de los derivados. En W el pivote del corredor tiene un coeficiente escalar geométrico no nulo multiplicando una transformación adjunta unitaria; por continuidad, h_old y h_new tienen cota uniforme en una vecindad suficientemente pequeña. La finitud del portador por sí sola no basta, pero una cota de coeficientes y un número de solapamientos acotado sí implican las cotas L2 por el test de Schur. La identidad exacta en W entonces da E=O(epsilon), las diferencias de D, alpha, H_tree y mu, y las cotas de T y T_h, con constantes dependientes de L, d, las métricas y la carta seleccionada, no del número de bloques.",
+      "objection_retained": "No se aportan el radio común, las cotas de los pivotes ni el cómputo de conversiones de unidad y solapamiento para los objetos físicos originales. Analiticidad puntual y un inverso existente a volumen fijo no serían suficientes. Las cotas universales para todas las posibles medias M tampoco se siguen de sus axiomas.",
+      "consequence": "Las estimaciones son consecuencias matemáticas razonables de una carta uniforme autenticada; no constituyen una prueba de que esa carta y los umbrales valgan para el tuple fijo."
+    },
+    {
+      "id": "F05",
+      "status": "Objeción genérica de crossing links descartada; compatibilidad concreta todavía condicionada",
+      "topic": "Dominio fuente incidente y preservación de soporte",
+      "evidence": ["SF CMP96 p.245, Lemma 2.4, inspección visual", "SF CMP96 pp.249-250, 2.153-2.157", "SF CMP99 p.77, convención geométrica", "S109 p.251", "S119 p.247, 1.8-1.9", "S99 pp.427-430, 3.155-3.169"],
+      "analysis": "La fuente del gap antiguo define expresamente Lambda como el conjunto de enlaces con al menos un extremo en el conjunto de sitios Lambda y pone B=0 fuera de ese conjunto. Incluye enlaces que cruzan el borde. Sean I(Lambda)={b: b_- o b_+ pertenece a Lambda} y E(Lambda)=enlaces totales menos I(Lambda). E(Lambda) contiene los enlaces con ambos extremos fuera. No es I(Lambda_sitios^c): esta última colección incluye también los enlaces cruzados. La lectura compatible de B=0 on Lambda^c en este contexto es el complemento del conjunto de enlaces tipado. Por tanto el conjunto físico INCIDENTE mencionado en el encargo es compatible con la convención fuente.",
+      "support_argument": "Si Lambda es unión de bloques completos, las rutas de raíz de un bloque exterior son internas a ese bloque y solo recorren enlaces de E(Lambda); alpha(B) se anula allí. El gauge constante por bloque, extendido por cero en bloques exteriores, genera D iota alpha únicamente en I(Lambda), incluidos los enlaces cruzados. Las filas de la media que pueden ver B son las filas gruesas incidentes. Sus pivotes de corredor pertenecen a I(Lambda), de modo que h_old E conserva soporte si se retienen todas esas filas. La misma propiedad vale para mu_old de 3.169: para un bloque exterior, sus datos de árbol son cero y tanto su promedio como mu son cero; D mu solo actúa en enlaces incidentes. El collar debe contener los portadores vecinos completos usados para calcular estas filas.",
+      "objection_retained": "No hay en el JSON una lista tipada de los conjuntos de sitios, enlaces, filas gruesas, raíces y pivotes que permita verificar identidad con la máscara física original. No basta decir block-aligned si se han omitido filas gruesas cruzadas, se truncan rutas o se interpreta el exterior como incidentes al complemento de sitios. Tampoco una mera distancia geométrica garantiza que el portador completo esté en la región donde se dispone de las cotas de fondo.",
+      "consequence": "Con la máscara incidente y las filas completas, el soporte no ofrece una refutación. Se conserva un gate de identificación concreta, no la afirmación incorrecta de que la literatura excluye todos los crossing links."
+    },
+    {
+      "id": "F06",
+      "status": "Identidades exactas verificadas con el Qprime fuente",
+      "topic": "T=R+h_old E y proyección Pi_old",
+      "evidence": ["S99 p.418, 3.113-3.115", "S99 p.430, 3.168-3.169", "SF CMP98 pp.27-29, operaciones relativas"],
+      "analysis": "La definición E=Pnew-Pold R y Pold h_old=I implican Pold T=Pnew sin aproximación. 3.169 resuelve simultáneamente el gauge de árbol y Qprime1 mu=0; la identidad completa 3.114 implica Pold D mu=0. Por ello Pold Pi_old=Pold, y Pi_old es identidad en la sección de árbol correspondiente. T_h=Pi_old T lleva el kernel nuevo con árbol al kernel antiguo con árbol siempre que se cumpla la compatibilidad de soporte de F05. La condición Qprime mu=0 es una media covariante de sitio; no equivale a fijar mu en la raíz. El input conserva correctamente esta distinción.",
+      "reference_check": "En W, D_W iota_const alpha_W no tiene enlaces internos, por lo que H_tree,W R_W=H_tree,W y alpha_W D_W iota_const=0. El inverso I-D_W iota_const alpha_W es exacto. Para un B que cumple H_tree,U B=0, H_tree,W B=(H_tree,W-H_tree,U)B es O(epsilon). Este término, que no es cero en general, permite justificar Pi_old,U T B-R_W B=O(epsilon), usando F04; no se debe aplicar directamente la identidad de la sección en W al B de la sección en U.",
+      "objection_retained": "Se necesitan el mismo árbol relativo de la fórmula fuente, el signo correcto de la tangente izquierda y el Qprime construido con el fondo U. Reemplazarlos por el árbol medio físico o por Q0 destruye la identidad exacta. La cota inferior uniforme no sigue del transporte exacto por sí solo.",
+      "consequence": "La cota ||T_h B|| >= ||B||/(2 Kref) se deduce correctamente si C_T epsilon <= 1/(2 Kref)."
+    },
+    {
+      "id": "F07",
+      "status": "Cancelación correcta, con corriente y aceleración esenciales",
+      "topic": "Comparación Wilson bajo el shear físico",
+      "evidence": ["S99 pp.392,418-419, 3.11-3.12 y 3.116-3.120", "S109 pp.265-267, expansión en el punto crítico"],
+      "analysis": "Sea mathcalR(B) la coordenada logarítmica relativa del campo obtenido al aplicar al campo perturbado exp(iB)U el gauge por bloques exp(i alpha_U(B)). Es necesario que esta, y no solo el elemento de gauge, sea la aplicación cuya derivada es R_U. La invariancia exacta de Wilson da A''_U[R_U B,R_U B]-A''_U[B,B]=-<J_U,mathcalR''(0)[B,B]>. 3.117 muestra precisamente por qué el Hessiano Wilson no es gauge-invariante cuando J no es cero. El input conserva el término correcto de aceleración. Sus productos locales son sumables con una cota de tipo l1 en B^2, por lo que una cota puntual de J produce O(epsilon)||B||_2^2 sin factor de volumen.",
+      "current_check": "La fuente identifica J=D* eta^(-2) Im(dU). En la especialización eta=1, una cota puntual de curvatura en todos los plaquettes incidentes da también una cota puntual de J por grado local acotado. En las escalas fuente generales las potencias de eta y las hipótesis 3.36 no pueden omitirse. La criticidad nueva no implica J=0 ni criticidad antigua; solo identifica J con el adjunto del diferencial nuevo en el dominio correspondiente.",
+      "small_correction_check": "Si delta=T_h-R_U tiene norma <=C_corr epsilon y ||A''_U||<=K_A en las unidades fijadas, la diferencia entre sus términos cuadráticos se acota por K_A(2||R_U||C_corr epsilon+C_corr^2 epsilon^2)||B||^2. No se necesita interpretar T_h como cambio físico de variables.",
+      "objection_retained": "Se debe controlar J en todos los enlaces donde cae la aceleración, no solo en enlaces internos o después de una contracción global L2 que crezca con el volumen. No está autenticada la cota numérica de epsilon para la familia física fijada.",
+      "consequence": "No se ha encontrado el error de omitir la aceleración ni una falsa invariancia del Hessiano sin corregir. La comparación de formas permanece condicionada a las cotas locales."
+    },
+    {
+      "id": "F08",
+      "status": "Cota suficiente demostrable para la clase local fuente; identidad con el polinomio nuevo no requerida",
+      "topic": "Dtilde_unit^(2) y fuente del gap antiguo",
+      "evidence": ["S99 pp.421-423, 3.127-3.137", "S99 pp.427-428, 3.155-3.158", "SF CMP98 pp.36-42, 123,135,148-157"],
+      "analysis": "Section E describe Dtilde^(2) como un polinomio cuadrático con propiedades análogas a C^(2), localizado en bloques unitarios. Las estimaciones de C y sus derivados en CMP98 muestran la clase de cotas uniformes usada en este argumento. Para explicitar el paso: si |Dtilde_b^(2)(B)| <= c_D sum_{u in C_b}|B_u|^2 y cada enlace u pertenece a lo sumo N_D portadores, entonces |2<J,Dtilde^(2)(B)>| <= 2 c_D N_D ||J||_infinity ||B||_2^2, con los pesos de traza y unidad incorporados. En k=0 no interviene un H1 no local, pues H1=I. Aplicado a T_h B, el límite contiene además la cota uniforme de ||T_h||^2. No hace falta identificar Dtilde^(2) con h_old F_old^(2), ni mucho menos con el polinomio nuevo.",
+      "objection_retained": "3.155 no escribe un coeficiente explícito c_D ni determina en esa página cada coeficiente del polinomio. La frase propiedades similares debe usarse con su contenido cuantitativo de la clase fuente, no como autorización para un polinomio cuadrático arbitrario. El input no autentica el polinomio particular ni esas constantes en las unidades físicas originales. Si el gap antiguo se invoca como resultado para la clase fuente ya fijada, esta ausencia es un gate de aplicación, no una contradicción del resultado de literatura.",
+      "old_gap_check": "3.158 afirma un límite gamma_old>0 para C_ax* Delta_k C_ax, uniforme en k y U de la clase regular, con M alpha0 suficientemente pequeño. Con ||C_ax||<=Kax en métricas compatibles, q_old(B)>=gamma_old/Kax^2 ||B||^2 en su sección dura. No basta que C_ax sea finito para un solo volumen. El pivote y la localidad ofrecen una vía de cota uniforme en la carta común, pero sus valores no están calibrados para el tuple físico.",
+      "consequence": "La sustitución de una identidad no probada por una cota local es una mejora matemáticamente legítima. No certifica por sí sola la aplicación del gap a U1."
+    },
+    {
+      "id": "F09",
+      "status": "Forma física y umbral de transferencia algebraicamente correctos",
+      "topic": "Corrección nueva de multiplicadores y consumidor hard",
+      "evidence": ["S109 pp.265-267, 2.2-2.11", "S119 pp.248-250, 1.12-1.16", "S99 p.428, 3.158"],
+      "analysis": "En la carta normalizada F_new(0)=0, con Pnew=F_new'(0) y criticidad restringida J=Pnew*lambda, la forma intrínseca es q_new,cl(B)=A''_U[B,B]-<lambda,F_new''[B,B]> sobre ker Pnew. Si h_new es un inverso derecho para todas las filas activas, lambda=h_new*J. Una cota local de h_new y del segundo diferencial da O(epsilon)||B||^2 mediante la cota puntual de J y solapamientos finitos. Al restringir la criticidad original a innerLambda1 deben conservarse las filas incidentes que ven variaciones de ese dominio. La equivalencia no requiere que U1 sea crítico para la media antigua.",
+      "threshold_check": "De q_old(T_h B)>=a_old||T_h B||^2 y ||T_h B||>=||B||/(2Kref), la comparación de formas produce q_new,cl(B)>=(a_old/(4Kref^2)-C_form epsilon)||B||^2. El umbral epsilon<=a_old/(8Kref^2 C_form) da a_h=a_old/(8Kref^2), como escribe el input.",
+      "objection_retained": "Las fuentes expresan restricciones de pequeñez mediante constantes existenciales y parámetros fuente. No autorizan elegir retrospectivamente epsilon más pequeño que el fondo real ni ajustar L, M o los acoplamientos originales para hacer funcionar el umbral. Deben verificarse las dos desigualdades simultáneamente para el epsilon efectivo de la misma familia.",
+      "consequence": "Consumidor hard válido como implicación. No hay en este expediente un epsilon autenticado que active la implicación física."
+    },
+    {
+      "id": "F10",
+      "status": "Descomposición física correcta si se usan las filas y métricas originales",
+      "topic": "Hard-to-soft con marcos de sitio y de árbol distintos",
+      "evidence": ["S109 pp.253-255, 0.6,0.11,0.14-0.16", "S109 pp.265-266, 2.2-2.5", "S99 p.430, telescopía de árbol en 3.169", "S119 pp.248-249, 1.12-1.16"],
+      "analysis": "La covariancia de la media nueva bajo gauges fijados en raíces implica Pnew D_site=0. En el representante con U(y,x)=I, la variación del contorno promediado bajo ese grupo es mas o menos la variable de sitio, según la convención. Para la fila de árbol relativa H, la telescopía da H D_site=Ktree, con el adjunto unitario del transporte de raíz en cada sitio; no tiene por qué ser I. Definiendo D_H=D_site Ktree^(-1) se obtiene H D_H=I. Entonces K=S D_H es invertible; si S D_site=I exactamente, K=Ktree^(-1), y D_H K^(-1)=D_site. Esta comprobación evita asignar simultáneamente dos identidades a una base de gauge no examinada.",
+      "ward_and_decomposition": "La función A restringida a la fibra nueva es invariante bajo el verdadero grupo root-fixed. En un punto crítico de esa restricción, su Hessiano intrínseco anula las direcciones verticales y los términos mixtos con cualquier B en ker Pnew. Por eso h=B-D_H H B pertenece a la sección hard y q_new,cl(B)=q_new,cl(h). Con y=S B se sigue B=h+D_H K^(-1)(y-S h) y q_new,soft(B)=q_new,cl(h)+<y,K_G y>. La desigualdad de norma y el mínimo propuesto para a_soft son correctos. La propiedad de conservar coordenadas libres da ||C_rec a||>=||a|| únicamente cuando las normas heredadas usan los mismos pesos de esas coordenadas.",
+      "objection_retained": "H debe ser la fila de árbol relativa y trivializada de la fuente. Si se toma en cambio el diferencial del Log de un contorno absoluto no trivial, aparece el diferencial de Log y no se puede afirmar un Ktree unitario sin más. S debe ser la fila de la raíz promediada física en su representante, y el grupo debe respetar los sitios exteriores y las raíces exactas. Las métricas y sus pesos de escala no están especificados como matrices en el input, por lo que su cota inferior uniforme para la familia fijada no está autenticada aquí.",
+      "consequence": "La separación de marcos repara el riesgo conceptual del paso hard-to-soft. El resultado no establece igualdad de covarianzas, factorización de cutoffs o identidades de normalizadores."
+    }
+  ],
+  "source_conditions_matrix": [
+    {
+      "condition": "Existencia de la sucesión k=0 y reducción de su operador ambiente",
+      "source_status": "Verificada en las definiciones y por sustitución directa",
+      "same_physical_family_status": "Pendiente la identificación de Omega0, Lambda y unidades",
+      "new_assumption": "No se necesita nueva identidad algebraica; sí un gate de aplicación"
+    },
+    {
+      "condition": "Máscara fuente de enlaces incidentes y condiciones de frontera",
+      "source_status": "Verificada expresamente por CMP96 Lemma 2.4 y convenciones de CMP109/CMP119",
+      "same_physical_family_status": "Compatible con la descripción física incidente, sin inventario tipado verificable",
+      "new_assumption": "No es nueva la convención incidente; la igualdad concreta de filas y pivotes exige comprobación"
+    },
+    {
+      "condition": "Pequeñez de curvatura y corriente en los portadores requeridos",
+      "source_status": "Disponible para campos de las clases regulares y mínimos admitidos; corriente definida en 3.11",
+      "same_physical_family_status": "No autenticada por el input congelado; 1737 se menciona pero no se usa como prueba heredada",
+      "new_assumption": "Es una hipótesis fuente legítima, pero su validez para el U1 original no está demostrada en este expediente"
+    },
+    {
+      "condition": "Carta relativa uniforme alrededor de Qstar de la media nueva",
+      "source_status": "Hay ingredientes locales y gauge-covariantes; 3.35 aislada no la suministra",
+      "same_physical_family_status": "Pendiente el puente con el representante promediado, todos los portadores y las ramas originales",
+      "new_assumption": "En el argumento actual funciona como una hipótesis conjunta adicional, no como un resultado físico ya autenticado"
+    },
+    {
+      "condition": "Cotas locales de P, h, alpha, D, H y mu y de sus diferencias",
+      "source_status": "Se deducen de las fórmulas fuente en una carta uniforme con pivotes invertibles; FULL124 incluido",
+      "same_physical_family_status": "No constan radios y constantes en las unidades del tuple fijado",
+      "new_assumption": "No hace falta un nuevo principio físico; hace falta ejecutar y autenticar el lema local y sus conversiones"
+    },
+    {
+      "condition": "Qprime1 mu_old=0 y preservación exacta de la media vieja",
+      "source_status": "Verificada por 3.114-3.115 y 3.168-3.169",
+      "same_physical_family_status": "Válida si el árbol y el Qprime son los relativos al mismo U y la máscara es la de F05",
+      "new_assumption": "No es nueva; no puede sustituirse por root-fixed ni por Q0"
+    },
+    {
+      "condition": "Cota del polinomio unitario Dtilde^(2)",
+      "source_status": "Clase local cuadrática descrita en Section E; las cotas análogas de C constan en CMP98",
+      "same_physical_family_status": "No se autentican coeficientes y conversiones del polinomio particular",
+      "new_assumption": "Cota estándar de la clase fuente si sus propiedades cuantitativas se incluyen; no vale para un polinomio arbitrario"
+    },
+    {
+      "condition": "Gap antiguo y Kax uniforme",
+      "source_status": "Gap afirmado en 3.158 para M alpha0 suficientemente pequeño; localidad y pivote descritos",
+      "same_physical_family_status": "Pendiente el gate regular y la cota Kax en las normas físicas",
+      "new_assumption": "Literatura antigua condicionada, no positividad automáticamente transportada"
+    },
+    {
+      "condition": "Ward de la forma intrínseca nueva y transversales de sitio/árbol",
+      "source_status": "Covariancia y representante de raíz promediada están en CMP109/CMP119; la identidad Hessiana sigue de criticidad en la fibra",
+      "same_physical_family_status": "La criticidad y el representante son declaraciones del input; no se inspeccionaron sus datos originales",
+      "new_assumption": "No se necesita criticidad vieja; se necesita la criticidad nueva real y los dominios exactos"
+    },
+    {
+      "condition": "Epsilon cumple conjuntamente los umbrales de transporte y comparación sin retuning",
+      "source_status": "Las fuentes ofrecen pequeños parámetros sujetos a numerosas restricciones, no este chequeo del tuple fijado",
+      "same_physical_family_status": "No verificada",
+      "new_assumption": "Condición decisiva todavía abierta para la conclusión física"
+    }
+  ],
+  "falsifiers_and_adversarial_tests": [
+    {
+      "id": "X01",
+      "test": "Campo plano puro gauge, gauge no constante dentro del bloque y fijado en raíces",
+      "result": "Refuta que 3.35-3.36 o curvatura/corriente pequeñas por sí solas impliquen U próximo a Qstar V en la carta física",
+      "limitation": "No refuta el candidato con la condición adicional exacta de raíz promediada; se conserva como falsador de un atajo de justificación fuente"
+    },
+    {
+      "id": "X02",
+      "test": "Distinguir complemento de enlaces incidentes de incidentes al complemento de sitios",
+      "result": "Con la segunda interpretación un gauge de sitio interior puede producir un enlace cruzado prohibido y fallaría la preservación de soporte",
+      "limitation": "El lema fuente verificado usa la primera interpretación y es compatible con el conjunto físico incidente; no se declara que el fallo ocurra en la familia original"
+    },
+    {
+      "id": "X03",
+      "test": "Fila gruesa cruzada eliminada mientras se conserva su corredor fino activo",
+      "result": "Pold h_old=I y la identificación con el espacio hard de 3.156 dejan de corresponder al mismo sistema; la comparación no queda probada",
+      "limitation": "Falsador concreto de una eventual implementación o definición incompleta; no se inspeccionó una implementación"
+    },
+    {
+      "id": "X04",
+      "test": "Usar solo Q0 o imponer mu(root)=0 en la proyección vieja",
+      "result": "Se pierde la garantía exacta Pold D mu=0 para FULL124 en fondo no trivial",
+      "limitation": "El input evita expresamente este atajo"
+    },
+    {
+      "id": "X05",
+      "test": "Omitir la aceleración de la transformación gauge con J distinto de cero",
+      "result": "La invariancia de Wilson no implica la identidad de Hessianos pretendida; 3.117 proporciona el término que falta",
+      "limitation": "El argumento nuevo conserva ese término y supera esta prueba algebraica"
+    },
+    {
+      "id": "X06",
+      "test": "Dtilde^(2) con coeficientes sin cota uniforme o M de 0.12 variando sin control de sus derivados",
+      "result": "La localidad y el orden cuadrático solos no producen C_old o C_new uniforme",
+      "limitation": "No es contraejemplo a una media y un polinomio fuente fijos con sus cotas autenticadas"
+    },
+    {
+      "id": "X07",
+      "test": "H interpretado como diferencial de Log absoluto de un contorno no trivial",
+      "result": "Ktree incluye el diferencial de Log y no se puede identificar automáticamente con una matriz unitaria de transporte",
+      "limitation": "La fila relativa de 3.169 sí tiene la propiedad unitaria necesaria; debe quedar identificada con H"
+    },
+    {
+      "id": "X08",
+      "test": "Epsilon efectivo supera uno de los dos umbrales, aunque todas las operaciones existan a volumen fijo",
+      "result": "No se obtiene la cota inferior positiva anunciada; la continuidad local y la existencia de inversos no bastan",
+      "limitation": "El input no suministra un valor o una desigualdad fuente que descarte esta posibilidad para la familia original"
+    },
+    {
+      "id": "X09",
+      "test": "V plano con holonomía gruesa no trivial, portadores locales sin envolver el toro",
+      "result": "No refuta el esquema: los factores Ad(V) son unitarios y la nilpotencia del shear procede de las rutas internas, no de V=I",
+      "limitation": "No establece el caso de un toro corto o portadores que se envuelven; esas geometrías requieren sus propias verificaciones y permanecen excluidas"
+    }
+  ],
+  "minimal_unpaid_work_for_physical_use": [
+    "Identificar, sin cambiar geometría, los conjuntos tipados de enlaces, filas gruesas incidentes, raíces, árboles y pivotes del espacio físico con los de 3.155-3.169; verificar los portadores completos dentro del collar fuente.",
+    "Derivar para el mismo U1, con la media 0.4 o 0.12 efectivamente seleccionada y su representante promediado, una carta relativa uniforme U/(Qstar V) desde las restricciones originales; incluir ramas y márgenes de Log/M.",
+    "Dar cotas locales y de solapamiento para FULL124, ambos pivotes, alpha, D, H, mu y el polinomio unitario fuente en las métricas y unidades originales; basta con constantes simbólicas explícitamente dependientes de parámetros fijados, no hace falta inventar una instancia numérica.",
+    "Autenticar el gate de regularidad del gap antiguo y la cota de C_ax, y demostrar que el epsilon real de la familia satisface simultáneamente los umbrales escritos, sin escoger nuevos parámetros.",
+    "Identificar S, H, D_site y K_G en los marcos físicos originales y verificar que C_rec conserva coordenadas con los pesos de norma declarados."
+  ],
+  "explicit_physical_conclusion": {
+    "statement": "Este argumento no demuestra todavía una cota inferior uniforme para la precisión física propia de la familia original fijada. Sí proporciona una comparación condicional consistente entre la forma antigua fuente y la forma intrínseca nueva, seguida de una descomposición física hard-to-soft correcta bajo los gates exactos. Las fuentes verificadas apoyan varias de esas hipótesis y la convención de frontera incidente; no autentican por sí solas su cumplimiento conjunto para el U1, la carta y los parámetros originales nombrados en el input.",
+    "what_may_be_claimed": "Proposición condicional de comparación de formas y transporte de positividad en dominios propios incidentes, con requisitos de aplicación abiertos y explícitos.",
+    "what_may_not_be_claimed": [
+      "Admisión física del candidato o del tuple original",
+      "Igualdad de las medias o de sus fibras no lineales",
+      "Criticidad antigua del mínimo nuevo",
+      "Invariancia del Hessiano Wilson sin corriente/aceleración",
+      "Identificación de Dtilde_unit^(2) con un polinomio nuevo no verificado",
+      "Igualdad de covarianzas hard y soft o factorización de la densidad",
+      "Cierre de cutoffs, Haar, Jacobianos, normalizadores, márgenes complejos o consumidores externos"
+    ],
+    "new_paper": false,
+    "manuscript_changed": false,
+    "state_changed": false,
+    "assessment_complete_for_requested_bounded_scope": true
+  }
+}
