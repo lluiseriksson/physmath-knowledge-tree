@@ -1,0 +1,161 @@
+{
+  "at": "2026-11-01T05:34:49.903602+00:00",
+  "status": "SUPPORTED_BOUNDED_STRUCTURAL_RESULT_WITH_EXPLICIT_ADMISSION_AND_DENSITY_GATES",
+  "input_sha256": "bc8e13ce419a12b4ace6f0132481e5adbf5c118be5b88e9f84692d241e9ad8cc",
+  "report_sha256": "f8a32c450887d3b9283e7ff0acb597a26548658bb9c8cc5515643fc64e6bd98f",
+  "report_bytes": 33697,
+  "report_read_complete": true,
+  "remaining_gates": [
+    {
+      "id": "G1",
+      "gate": "Actual source/mean/branch admission",
+      "detail": "Existence and regularity of the fixed U1 and the actual mean/Log branch, constrained criticality, surjective row derivative, and invertibility of the original selected coefficient must hold at the chosen data. The source asserts relevant theorems, but their full hypotheses and proof are not audited here. No full K_C coverage is proved."
+    },
+    {
+      "id": "G2",
+      "gate": "Original localized mixed-data configuration",
+      "detail": "The support mask does not prove that the 1.21 configuration exists with the required boundary/exterior prescription or that its H has the assumed regularity. Earlier unadmitted boundary issues remain unadmitted. The effective H normalization is not resolved or altered by a support zero; its actual units must be retained in all surviving shell factors."
+    },
+    {
+      "id": "G3",
+      "gate": "Positive definite real conditional precision",
+      "detail": "Q_DE P_S=0 is independent of positivity, but C_D, normalized Gaussian formulas and the proposed transport as a Gaussian operation require the declared real Q_D>0. No gap, inverse bound, or transfer from an old hard/axial source covariance is provided. The printed minimum statement is not itself a checked all-family certificate."
+    },
+    {
+      "id": "G4",
+      "gate": "Definition and integrability of section density",
+      "detail": "The original density must be defined on its actual source section before zero extension. Smooth j,p,g,z do not define an off-chart N or a missing shell Jacobian. Coefficientwise joint local L1 in (f,a_D), and any outer integrability needed for interchange, remain to be proved."
+    },
+    {
+      "id": "G5",
+      "gate": "Weak derivative, interfaces and endpoints",
+      "detail": "The unexpanded zero-extended density can only be differentiated as a distribution when its integrability is established. Splitting this derivative into bulk, moving-section and cutoff surfaces requires the corresponding trace/product hypotheses. Absolute continuity or an appropriate endpoint theorem and actual endpoint traces are needed for an integral FTC formula. The multiplier continuation alone supplies none of these."
+    },
+    {
+      "id": "G6",
+      "gate": "Exact retained factors",
+      "detail": "Retain Q_EE outer action and its f derivative, R_E and its Jacobian, all other L_shell/V^(0)(S1) allocations, selected N and Haar/nonlinear Jacobian factors, original K and other cutoffs, background/sector labels, O_dot, baseline factors, all Gaussian determinants and p conversion to the uncompensated contribution, and the full fixed-law normalizers."
+    },
+    {
+      "id": "G7",
+      "gate": "Fixed family and simultaneous inequalities",
+      "detail": "LAW1535/1559 remain unchanged, including fixed C_delta, beta_ref, source prefactor discrepancy and ordering restrictions. The source hierarchy pays this one range inequality only; no coupling window, simultaneous absorption, source-family regularity or all-history conclusion is proved."
+    },
+    {
+      "id": "G8",
+      "gate": "Outer integration and connected quantities",
+      "detail": "A conditional free-word identity and a smooth inner forcing do not commute away exterior/background/sector integration, normalized logarithms, connected sums or history dependence. These operations and their nonvanishing/analyticity/integrability requirements remain outside this result."
+    },
+    {
+      "id": "G9",
+      "gate": "Fixed data along f",
+      "detail": "The conclusion uses fixed masks, U1, P, h, C_rec, Q and source H data while evaluating the outer free variables at f a_E. Re-minimizing U1, varying the source geometry, changing g0, or moving a branch label with f beyond the prescribed section requires extra derivative terms and is not covered."
+    }
+  ],
+  "falsifiers": [
+    {
+      "id": "F1",
+      "test": "A visual source reading yields a different sign or number of ell-layers in 1.20, or only face-neighbor erasure rather than a layer of touching cubes.",
+      "effect": "The continuous ell gap proof must be redone and may fail. The pinned displays inspected here support the stated layers."
+    },
+    {
+      "id": "F2",
+      "test": "Rectangular modification adds sites to Lambda1, or redefines S1 as all of the new exterior.",
+      "effect": "The monotonic separation or shell support premise fails. The pinned source enlarges the complement and retains the original S1."
+    },
+    {
+      "id": "F3",
+      "test": "An allegedly shell-changed free bond lies outside S1*, or an identity exterior coordinate is assigned the gamma=1 transformation.",
+      "effect": "Q_DE P_S=0 for the source S no longer controls the actual displacement; linear forcing may fail."
+    },
+    {
+      "id": "F4",
+      "test": "Use a both-endpoints-inside partition, delete independent crossing bonds, retain selected bonds as free, double-count inverse orientations, or use a non-whole-block region.",
+      "effect": "The D/E and source-star dictionary is no longer the one verified here. Recompute the masks rather than importing the conclusion."
+    },
+    {
+      "id": "F5",
+      "test": "A row of mean 0.4/0.12 or a gauge contour uses variable links outside its stated endpoint block(s).",
+      "effect": "The derivative carrier must be enlarged. The displayed path definitions inspected here have no such link."
+    },
+    {
+      "id": "F6",
+      "test": "The actual selected matrix couples distinct coarse rows, a selected inverse is singular, or C_rec is replaced by a global propagator.",
+      "effect": "The local selected lift either does not exist or can have longer range, invalidating the stated bound."
+    },
+    {
+      "id": "F7",
+      "test": "The precision includes nonlocal effective-action/history terms, a spatially off-diagonal gauge weight, or a background response varied with the fluctuation slots.",
+      "effect": "It is not the fixed bare Q_free assessed here; long-range entries may survive."
+    },
+    {
+      "id": "F8",
+      "test": "M2 or M is not the specified integral power of L, they are not distinct in the stated order, R1<1, or incompatible lattices/scales are used.",
+      "effect": "The supplied scale inequality is not available. M1 being a power is neither required nor a repair."
+    },
+    {
+      "id": "F9",
+      "test": "Exhibit d in actual D and s in actual S1* with nonzero Q_free(d,s), despite their verified gap and the displayed bare local reconstruction.",
+      "effect": "This directly falsifies the zero-coupling conclusion and identifies an omitted carrier, mask or operator term."
+    },
+    {
+      "id": "F10",
+      "test": "On one admitted source section, R_E(f a_E)-f a_E has a non-shell free component, or Q/U1/masks vary along f.",
+      "effect": "The forcing proof no longer applies; direct nonlinear or coefficient-derivative terms must be retained."
+    },
+    {
+      "id": "F11",
+      "test": "Q_D is singular or not positive definite in the declared real metric.",
+      "effect": "The support zero may still hold, but the asserted positive Gaussian covariance/normalization/transport package is unavailable as stated."
+    },
+    {
+      "id": "F12",
+      "test": "Use the smooth multiplier extension to assign a density off its chart, discard density/section jumps, omit cutoff surfaces, or apply endpoint FTC without traces/absolute continuity.",
+      "effect": "This is an unsupported globalization even though the multiplier extension itself is valid."
+    },
+    {
+      "id": "F13",
+      "test": "Remove the Q_EE correction, JR, other shell terms, selected/Haar factors, O_dot, source normalizers, or the p conversion.",
+      "effect": "The resulting integral is not the original physical contribution."
+    },
+    {
+      "id": "F14",
+      "test": "One chosen 1850 word has a selected link, an extra variable frame path, a different boundary incidence, or an exterior factor actually in S1*.",
+      "effect": "Its simplified insertion/velocity formula requires correction. The two precisely specified plaquettes pass the stated geometry check."
+    },
+    {
+      "id": "F15",
+      "test": "Call all f=0 exterior fields U1/vacuum, declare c_q_prime=0, or infer full conditional or physical connected factorization.",
+      "effect": "These claims are false in general and are not consequences of the support result."
+    }
+  ],
+  "all_preserved": "Complete raw report copied byte for byte; no adverse condition or falsifier removed.",
+  "result": {
+    "status": "SUPPORTED_BOUNDED_STRUCTURAL_RESULT_WITH_EXPLICIT_ADMISSION_AND_DENSITY_GATES",
+    "conclusion": "For the original compatible masks and either original mean 0.4 or 0.12, at a fixed admitted real bare background with the original invertible selected pivots, the source shell lies farther from the inner incident free coordinates than the finite variable-slot range of Q_free. Consequently Q_DE P_S=0. On every actual shell section, Q_DE R_E(f a_E)=f Q_DE a_E. The proposed 8L+10 is safe padding, not an exponential estimate or a quoted source constant. No counterexample to this structural assertion was found under the actual masks.",
+    "consumer": "The forcing and the Gaussian multipliers admit explicit smooth continuations in f independent of far-shell Log continuation; C_D and the covariance interpretation remain conditional on the declared positive definite real Q_D. This removes the particular multiplier-extension obstruction only.",
+    "adverse_or_limiting_findings": [
+      "The input supplies no admitted full physical family or numerical background/precision witness.",
+      "The original mixed-data/localized-minimum construction is not admitted by a geometric support proof.",
+      "The density, its sections, Jacobians, outer action and endpoints remain independent obligations.",
+      "No full shell factor, conditional factorization, or normalized connected/history result follows."
+    ],
+    "physical_admission": false,
+    "candidate1642_admitted": false,
+    "full_integral_closed": false,
+    "new_paper": false,
+    "manuscript_changed": false
+  },
+  "requested_model": "gpt-6-astra",
+  "requested_effort": "xhigh",
+  "context": "/root/astra_shell_support1852",
+  "effective_identity_effort_independence_authenticated": false,
+  "prior_assessments_reopened": false,
+  "review_scope": "Exact new1852 JSON structural support/forcing argument. Selected primary statements and masks checked; six exact premise inputs read. No prior1819/1839 reports, nested premises, manuscript/PDF/Capacity or global source/build assessment inherited.",
+  "grade": null,
+  "restart": false,
+  "physical_admission": false,
+  "candidate1642_admitted": false,
+  "new_paper": false,
+  "next": "Review1852 COMPLETE and integrated1854. Exact report SHA f8a32c450887d3b9283e7ff0acb597a26548658bb9c8cc5515643fc64e6bd98f, full nine remaining gates and fifteen falsifiers preserved. One requested gpt-6-astra/xhigh separate-context assessment; effective identity/effort/independence unauthenticated, no score/restart. Supports the actual bare source structural zero Q_DE P_S1*=0 and therefore j_f=f Q_DE a_E, smooth Gaussian multipliers if fixed real Q_D>0; does NOT admit physical family or close full integral. Near-Lambda1850 free Wilson links are in the IDENTITY shell part, not gamma=1; exterior contact derivative remains. Next integrate this meaningful source-support synthesis into ONE existing knowledge-tree note with exact frozen input/report/receipt (and exact1850 input if cited), full nine gates/fifteen falsifiers and bibliography; AGENTS/small-subgraph/branch/PR/checks/remote bytes required. No new paper, grade/count/confidence promotion or duplicate review. Then substantive physical work is actual zero-extended section density joint L1, interface/trace/endpoint theorem retaining outer Q_EE shell correction, JR, original K/chi/selected Haar/Jacobian/O-dot/p conversion and full normalizers. Keep fixed LAW1535/1559, all1839 real-gap source admission,1826F10,1655/1810/1832 simultaneous parameters, connected sums/backgrounds/sectors/Rsc-Hsharp/history open.1642 NOT ADMITTED. PR254 and deposits/previous reviews/checks remain closed; no identical local Lean or old blocked cleanup retry."
+}

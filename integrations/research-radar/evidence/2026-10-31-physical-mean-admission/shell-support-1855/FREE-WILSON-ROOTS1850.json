@@ -1,0 +1,67 @@
+{
+  "scope": "Concrete crossing and purely exterior original Wilson words in the exact1819 density. Removes selected-reconstruction/Log derivative requirements for these specific free-bond insertions, not for the weight or whole integral. Own unreviewed application; no new paper/review.",
+  "premises": [
+    {
+      "path": "C:/Trabajo/airr/2026-11-01_execution1819/MARKED-SHELL-INTERPOLATION1819.json",
+      "sha256": "e466d15a3f51d1508f8d086e9fe9da0024850fd58814cefab7b35e9af14e312d"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-11-01_execution1819/ASSESSMENT1819.json",
+      "sha256": "d6030e1709a5a45b90a4d700a3e432f21e7209c5c9a90bd0f6c470b6d52ee929"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-11-01_execution1814/PHYSICAL-CONDITIONAL-BOUNDARY1814.json",
+      "sha256": "3d99e9ee4f771782e0c602094a4a94a4db2d97a319dd2253a998b4951c9b3559"
+    }
+  ],
+  "exact_types": "Use the unchanged real physical background, final aligned Lambda, direct Q_D/Q_DE, source shell R_E and its actual effective H units as1819. The fixed physical positivity and branch/support assumptions remain conditional. Selected C_rec is identity on free coordinates and N changes only the original selected b0(c), as source1192491.14-1.15 states. No new background or mean is chosen.",
+  "actual_geometry": [
+    "In an embedded original unit-block chart with odd source L>11 and r=(L-1)/2, suppose the block rooted at0 is inside Lambda and its direction1 neighbor rooted at(L,0,0,0) is outside Lambda but inside the active Omega1. If this boundary pair is absent, this local case is absent; no new finite physical instance is instantiated.",
+    "Choose a crossing plaquette in directions1,2 with lower corner x=(r,1,1,0). Its positive links are b1:x->x+e1, b2:x+e1->x+e1+e2, b3:x+e2->x+e1+e2, b4:x->x+e2. In the incident-bond convention b1,b3,b4 are inside D and b2 is outside E. The crossing links have transverse coordinate3=1 and therefore are not the selected central corridor b0(c). All four links are original FREE bonds.",
+    "Choose a second plaquette wholly inside that outside unit block in directions2,3, with corners(L,1,1,0),(L,2,1,0),(L,2,2,0),(L,1,2,0). All links are intrablock, hence free, all belong to E. These are the actual complete closed fine Wilson words; no variable root/frame transport is appended. Fixed source matrices Jp,Jq use those declared basepoint frames. Other words with extra paths or selected bonds are outside this certificate."
+  ],
+  "pure_exterior_word": [
+    "For each exterior free link b, set E_b(f)=exp(i*g0*f*a_b) exp(-i*gamma_b(f*a_b)*H_eff,b). On every admitted original shell Log sheet, exp(i*g0*R_E(f*a_E)_b)=E_b(f). Since C_rec and N leave this free slot unchanged, its actual fine group link is L_b(f)=E_b(f)*U1_b. This identity does not replace r_f by f*r_1, and keeps r_0=-gamma_b(0)H_eff,b/g0 where that Log is admitted.",
+    "Consequently c_q(f)=tr[Jq L_d1 L_d2 L_d3^-1 L_d4^-1] is independent of a_D AND of the selected-output sheet labels for these four slots. It has a smooth group-valued continuation over0<=f<=1 from the original smooth gamma and fixed real H/background, even if a Lie Log chart stops. This is a continuation of the INSERTION only; it supplies no continuation of r_f,j_f,p_f,g_f,z_f or the density.",
+    "Its exact right velocity X_b=(dL_b/df)L_b^-1 is i*g0*a_b - i*Dgamma_b(f*a_b)[a_b]*Ad_exp(i*g0*f*a_b)(H_eff,b). No DLog or selected inverse occurs. In the original second shell class gamma=1, this reduces exactly to i*g0*a_b. The H term and its true effective scale remain for the guarded class.",
+    "Differentiate the ordered word with Ldot=X L and (L^-1)dot=-L^-1 X. No matrices are commuted. Thus c_q_prime is a finite exact four-factor derivative, not assumed zero, not suppressed by an inner covariance and not a raw V0 mark. If the word were instead wholly in the original prescribed raw exterior, it would be its fixed V0 word and its f derivative would be zero; these cases stay distinct."
+  ],
+  "crossing_word_and_actual_transport": [
+    "Let P_f=tr[Jp L1 L2 L3^-1 L4^-1] for the crossing plaquette above. Along1819 D_f=partial_f-z_f dot grad_aD, with z_f=C_D Q_DE r_dot_f, the free fine direction is g0*C_rec(i_E r_dot_f-i_D z_f). Its D free component is -g0*z_f and its E free component is g0*r_dot_f. This is the exact derivative used in the marked identity, not an added change of variables or a new covariance theorem.",
+    "For b1,b3,b4 the right velocity is X_b=-i*g0*integral_0^1 Ad_exp(i*s*g0*a_b)(z_f,b) ds. For the exterior b2 it is the exact shell velocity above, because its inner derivative is zero. Selected fine entries of C_rec may vary, but none is a factor of this particular word; N/selected derivatives are unnecessary for this insertion only.",
+    "For W=L1 L2 L3^-1 L4^-1, D_f W = X1 W + L1 X2 L2 L3^-1 L4^-1 - L1 L2 L3^-1 X3 L4^-1 - W X4. The X2 term is an explicit exterior contact term and cannot be deleted by an inside integration by parts or by calling the root outside. Tracing with Jp gives the actual P insertion. Q_D, z and all weight terms retain their original conditional status; no bound, decay or volume-uniform inverse is proved here."
+  ],
+  "four_coefficient_density": [
+    "With u^2=v^2=0, the actual marked factor is (1+v*c_q(f))*(1+u*P_f). Write the actual unmarked exterior/inner weight as B_f, allocated exactly as1819, including shell Jacobian, L_shell or equivalent direct post-shell extraction, original K/chi/sector and all normalizers. Since c_q is a_D independent and smooth, D_f[B_f(1+uP_f)(1+vc_q)] = (1+vc_q)D_f[B_f(1+uP_f)] + v*c_q_prime*B_f(1+uP_f), on each admitted coefficientwise distribution interval.",
+    "If A0,Ap are the two exact compensated integrals of B_f and B_f P_f, the four coefficients are A0,Ap,c_q A0,c_q Ap; their derivatives include c_q_prime*A0 and c_q_prime*Ap. No division by A0 or O_f is made. The same external polynomial factors the uncompensated contribution after retaining p_f^-1. All f dependence of O_f, all cutoff/section distribution terms and the current/background-dependent weight remain.",
+    "Because these insertion values agree across admitted selected sheets, a sheet boundary supplies no extra jump of THIS free-bond mark. It can still supply a density/section jump, and shell Log exit can still prevent applying1819 globally. Endpoint traces/FTC, full K coverage, normalized connected sums and outer/background/history integration are not established by smooth insertions."
+  ],
+  "source_reading": [
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-convergent-cmp119-from-fusion.pdf",
+      "sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+      "locator": "Printed2491.14-1.15 selected-only linearization and251-2521.22 smooth per-bond shell; exact definitions reused, not a full proof audit"
+    }
+  ],
+  "falsifiers": [
+    "A chosen Wilson factor is actually a selected b0 or has an additional variable frame path",
+    "The declared D/E split uses a different crossing-bond convention",
+    "The shell H/background varies with f contrary to the fixed path",
+    "N changes a free slot in the actual declared source map",
+    "The insertion continuation is used to globalize undefined Gaussian multipliers or density",
+    "The exterior c_q_prime contact term or the shell/normalization weight is omitted"
+  ],
+  "next": "Use this actual free-bond crossing/exterior pair as the concrete1819 insertion. The insertion itself needs no selected-output/DLog branch derivative, and q agrees on selected sheets; density and shell Gaussian multipliers still do. Next address the actual supported f-path/interface density terms and endpoints with the original shell guard, K/chi and normalizers, rather than another mark chain-rule lemma. Keep the parked1847-1849 source-admission boundary issue, all1839 real-gap gates, fixed LAW1535/1559,1655/1810/1832 simultaneous absorptions, connected sum/backgrounds/sectors/history open. No new paper or repeated review.1642 NOT ADMITTED.",
+  "levels": {
+    "literature": "Original selected-only and shell definitions",
+    "heuristic": "Own exact algebraic application to two actual geometric Wilson words, unreviewed",
+    "formal": "No formal theorem/build",
+    "speculative": "Full physical marked equality/globalization and normalized connected/history result"
+  },
+  "physical_admission": false,
+  "candidate1642_admitted": false,
+  "new_paper": false,
+  "new_review": false,
+  "manuscript_changed": false,
+  "at": "2026-11-01T05:19:44.109590+00:00"
+}
