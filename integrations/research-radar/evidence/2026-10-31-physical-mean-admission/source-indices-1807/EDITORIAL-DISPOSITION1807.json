@@ -1,0 +1,22 @@
+{
+  "assessment_sha256": "52f3478d3a12145c8281072a3a7737eadbbaa720d7a127a1aa05bc9a072edf49",
+  "assessed_input_sha256": "a85b2467a7f76315b3127e7aea7bb7b387eb77337f130bec6c271e6d2e2584a2",
+  "assessed_note_sha256": "9898dbfd804258eeafa710084a3813c2d2f29534130b6f0bd01d39000316b1c9",
+  "required_editorial_corrections": [],
+  "final_note_sha256": "7a95661745602bd3cda5f4f0eccdfe0321466d2056365cc8d61b19235a27b020",
+  "exact_post_assessment_delta_utf8": "\nThe separate [editorial integration assessment1807](../evidence/2026-10-31-physical-mean-admission/source-indices-1807/ASSESSMENT1807.json) evaluates only the new status paragraph and extension in snapshot A, against the three complete closed reports. It required no editorial corrections. [The exact delivery disposition](../evidence/2026-10-31-physical-mean-admission/source-indices-1807/EDITORIAL-DISPOSITION1807.json) binds that assessed snapshot and this delivery-context addition in the final note; it does not reopen mathematics or assess earlier sections, the whole note or a manuscript/PDF.\n",
+  "delta_scope": "Only this delivery-context paragraph is appended. All mathematical prose and assessed status paragraph remain byte-identical. No new mathematical review or grade.",
+  "prior_baseline_sha256": "34e171313bd1bbd2ca9902d17d947a3c0b53e861c7316d93be96f12ed4099bab",
+  "coverage": {
+    "distinct_report_components": 43,
+    "distinct_objections_or_falsifiers": 18,
+    "additional_inherited_objection_entries_in1805": 5,
+    "complete_delivered_reports": 3,
+    "complete_delivered_inputs": 3,
+    "components_unaccounted_for": [],
+    "objections_unaccounted_for": []
+  },
+  "physical_admission": false,
+  "fixed_law_K_C_bridge_paid": false,
+  "effective_identity_effort_independence": "Unauthenticated; requested Astra/xhigh"
+}

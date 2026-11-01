@@ -1,0 +1,1023 @@
+{
+  "schema_version": "1.0",
+  "execution": 1807,
+  "assessment_type": "Una sola evaluación editorial nueva y acotada de PUBLIC-INTEGRATION1807A y snapshotA; sin nota ni reinicio",
+  "created_at_utc": "2026-11-01T00:53:13.727101+00:00",
+  "reviewer_configuration": {
+    "requested_model": "Astra",
+    "requested_reasoning_effort": "xhigh",
+    "effective_model_identity": "NO_AUTENTICADA",
+    "effective_reasoning_effort": "NO_AUTENTICADO",
+    "independence": "NO_AUTENTICADA",
+    "qualification": "La configuración solicitada no acredita la identidad, esfuerzo efectivos ni independencia. Este informe es una evaluación editorial de una versión concreta, no revisión por pares ni nueva evaluación matemática.",
+    "additional_reviewers_spawned": false,
+    "review_restarted": false,
+    "assessment_count_for_this_input": 1
+  },
+  "input": {
+    "path": "C:\\Trabajo\\airr\\2026-11-01_execution1807\\PUBLIC-INTEGRATION1807A.json",
+    "bytes": 3522,
+    "sha256": "a85b2467a7f76315b3127e7aea7bb7b387eb77337f130bec6c271e6d2e2584a2",
+    "expected_sha256": "a85b2467a7f76315b3127e7aea7bb7b387eb77337f130bec6c271e6d2e2584a2",
+    "hash_verified": true,
+    "modified": false
+  },
+  "snapshot": {
+    "path": "C:\\Trabajo\\airr\\2026-11-01_execution1807\\PUBLIC-NOTE-PROPOSED1807A.txt",
+    "bytes": 48679,
+    "sha256": "9898dbfd804258eeafa710084a3813c2d2f29534130b6f0bd01d39000316b1c9",
+    "expected_sha256": "9898dbfd804258eeafa710084a3813c2d2f29534130b6f0bd01d39000316b1c9",
+    "hash_verified": true,
+    "modified": false,
+    "new_status_line": 3,
+    "new_section_start_line": 161,
+    "new_section_end_line": 194
+  },
+  "note_at_assessment": {
+    "path": "C:\\Trabajo\\physmath-knowledge-tree\\physical-mean-admission1728\\integrations\\research-radar\\notes\\2026-10-31-physical-mean-admission.md",
+    "bytes": 48679,
+    "sha256": "9898dbfd804258eeafa710084a3813c2d2f29534130b6f0bd01d39000316b1c9",
+    "byte_identical_to_snapshot": true,
+    "modified_by_reviewer": false
+  },
+  "baseline": {
+    "path": "C:\\Trabajo\\airr\\2026-11-01_execution1807\\PUBLIC-NOTE-BEFORE1807.txt",
+    "bytes": 38430,
+    "sha256": "34e171313bd1bbd2ca9902d17d947a3c0b53e861c7316d93be96f12ed4099bab",
+    "expected_sha256": "34e171313bd1bbd2ca9902d17d947a3c0b53e861c7316d93be96f12ed4099bab",
+    "hash_verified": true
+  },
+  "scope": {
+    "assessed": [
+      "Párrafo nuevo de estado, línea3 del snapshotA",
+      "Apéndice nuevo The physical source's own fine exterior and coarse-row partition (1801–1806), líneas161–194",
+      "Fidelidad editorial frente a los tres inputs y tres informes completos e inalterados",
+      "Preservación de límites, objeciones, falsificadores y correcciones documentales/de extremos",
+      "Identidad de bytes, hashes y tamaños de la entrega, enlaces locales y conservación del texto previo",
+      "Ausencia de cuerpos de PDF, corpus, manuscrito privado y credenciales dentro del paquete exacto inspeccionado"
+    ],
+    "not_assessed": [
+      "Nueva demostración de resultados geométricos o matemáticos",
+      "Reapertura de1801,1805 o1806",
+      "Evaluación de otras secciones de la nota",
+      "Manuscrito o PDF completo, Capacity, candidato1642",
+      "Auditoría nueva de fuentes primarias o sus teoremas",
+      "Igualdad de la ley1559/K_C con el kernel fuente",
+      "Publicación, despliegue o disponibilidad web en vivo"
+    ],
+    "six_evidence_files_read_in_full": true,
+    "primary_pdfs_opened": false,
+    "private_manuscript_opened": false,
+    "LAW1559_opened": false,
+    "context_source_method": "Se comparó la nueva prosa con las exposiciones completas, localizadores y límites de fuente registrados en los tres inputs y reportes. No se reabrieron PDFs ni se reauditaron las matemáticas cerradas. Se usaron los originales locales solo para comparación de bytes de esos seis mismos archivos.",
+    "only_output_written": "C:\\Trabajo\\airr\\2026-11-01_execution1807\\ASSESSMENT1807.json",
+    "prior_note_content_assessed": false
+  },
+  "overall_disposition": {
+    "status": "INTEGRACION_EDITORIAL1807A_ACEPTADA_EN_SU_ALCANCE; ENTREGA_EXACTA_VERIFICADA; SOLO_INDICES_BRUTOS_FUENTE_PAGADOS; PUENTE1559_K_C_A_OUT_MARCADO_Y_FISICA_ABIERTOS",
+    "summary": "La versión concreta sintetiza fielmente las conclusiones cerradas1801/1805 y el nuevo alcance fuente1806, conserva todas sus objeciones materiales y aplica las correcciones pertinentes sin alterar sus inputs o informes. La definición propia de CMP119 se distingue de la evidencia antecedente1985; F_src/I/J y disponibilidad bruta no se confunden con A_out, K_C ni admisión física. Los seis archivos públicos son idénticos a los originales y el texto previo de la nota se conserva byte por byte salvo la inserción y el apéndice autorizados. No he encontrado un error editorial concreto que requiera corrección antes de integrar esta versión.",
+    "material_editorial_error_found": false,
+    "required_corrections_count": 0,
+    "optional_changes_required_for_acceptance": false,
+    "source_raw_gate_reported_as_paid": true,
+    "fixed_law_bridge_reported_as_paid": false,
+    "physical_admission": false,
+    "score_given": false,
+    "source_candidate_or_graph_confidence_change": false,
+    "acceptance_is_not_new_mathematical_certification": true
+  },
+  "status_paragraph_assessment": {
+    "line": 3,
+    "finding": "ADECUADO_Y_ACOTADO",
+    "reason": "Actualiza solo el exterior y las filas del primer paso de la fuente; restringe expresamente qué cualificación antigua queda superada y mantiene abierto el puente de coordenadas libres, cutoff e integral marcada. La frase sobre informes y snapshots previos se verifica para los materiales comparados; no convierte la nueva nota en una evaluación del manuscrito.",
+    "line_is_not_unchanged_old_note": true
+  },
+  "preservation_verification": {
+    "method": "Comparación binaria: quitar de snapshotA los bytes del párrafo de estado y comparar los primeros38430 bytes restantes con el baseline; el resto es exclusivamente el apéndice nuevo.",
+    "baseline_bytes": 38430,
+    "snapshot_bytes": 48679,
+    "inserted_status_start_byte_zero_based": 58,
+    "inserted_status_bytes": 413,
+    "appended_bytes": 9836,
+    "total_added_bytes": 10249,
+    "old_note_reconstructed_sha256": "34e171313bd1bbd2ca9902d17d947a3c0b53e861c7316d93be96f12ed4099bab",
+    "old_note_byte_identical": true,
+    "heading_unchanged": true,
+    "no_old_section_rewritten": true,
+    "six_original_inputs_reports_unchanged": true,
+    "limitation": "Se certifica la diferencia de los archivos congelados proporcionados y la igualdad de la nota actual con snapshotA al leerla. No es una auditoría de todo el historial del repositorio."
+  },
+  "delivery_verification": {
+    "evidence_directory": "C:\\Trabajo\\physmath-knowledge-tree\\physical-mean-admission1728\\integrations\\research-radar\\evidence\\2026-10-31-physical-mean-admission\\source-indices-1807",
+    "manifest": {
+      "path": "C:\\Trabajo\\physmath-knowledge-tree\\physical-mean-admission1728\\integrations\\research-radar\\evidence\\2026-10-31-physical-mean-admission\\source-indices-1807\\manifest.json",
+      "bytes": 2137,
+      "sha256": "187fd308b15631d1bdac2c004a5606e0d8cc10d07bded3c8170ed8347705a6ca",
+      "expected_sha256": "187fd308b15631d1bdac2c004a5606e0d8cc10d07bded3c8170ed8347705a6ca",
+      "hash_verified": true
+    },
+    "readme": {
+      "path": "C:\\Trabajo\\physmath-knowledge-tree\\physical-mean-admission1728\\integrations\\research-radar\\evidence\\2026-10-31-physical-mean-admission\\source-indices-1807\\README.md",
+      "bytes": 725,
+      "sha256": "386a35b29868b9cf7234ead0d8e83a4a6d6d7cd38e6b511755e2bc9157619a0e",
+      "expected_sha256": "386a35b29868b9cf7234ead0d8e83a4a6d6d7cd38e6b511755e2bc9157619a0e",
+      "hash_verified": true
+    },
+    "files": [
+      {
+        "path": "C:\\Trabajo\\physmath-knowledge-tree\\physical-mean-admission1728\\integrations\\research-radar\\evidence\\2026-10-31-physical-mean-admission\\source-indices-1807\\PHYSICAL-CENTER-GEOMETRY1801.json",
+        "bytes": 7832,
+        "sha256": "8b18436367f39e0af0c6668828564add62126f012a4f9cd39de29a2bf34fe8bb",
+        "expected_bytes": 7832,
+        "expected_sha256": "8b18436367f39e0af0c6668828564add62126f012a4f9cd39de29a2bf34fe8bb",
+        "hash_and_size_match": true,
+        "read_complete": true,
+        "original_path": "C:\\Trabajo\\airr\\2026-11-01_execution1801\\PHYSICAL-CENTER-GEOMETRY1801.json",
+        "byte_identical_to_original": true
+      },
+      {
+        "path": "C:\\Trabajo\\physmath-knowledge-tree\\physical-mean-admission1728\\integrations\\research-radar\\evidence\\2026-10-31-physical-mean-admission\\source-indices-1807\\ASSESSMENT1801.json",
+        "bytes": 27272,
+        "sha256": "ef7fba8a2422a7f33ecda7809ad5a2ccd3e3d433d28bdccfe56356837fbbe4dc",
+        "expected_bytes": 27272,
+        "expected_sha256": "ef7fba8a2422a7f33ecda7809ad5a2ccd3e3d433d28bdccfe56356837fbbe4dc",
+        "hash_and_size_match": true,
+        "read_complete": true,
+        "original_path": "C:\\Trabajo\\airr\\2026-11-01_execution1801\\ASSESSMENT1801.json",
+        "byte_identical_to_original": true
+      },
+      {
+        "path": "C:\\Trabajo\\physmath-knowledge-tree\\physical-mean-admission1728\\integrations\\research-radar\\evidence\\2026-10-31-physical-mean-admission\\source-indices-1807\\CITED-EXTERIOR-PRODUCT1805.json",
+        "bytes": 7087,
+        "sha256": "32c61b5992059f1506165cd3288d1ec33261df9763bef037c5755c605a6e74a2",
+        "expected_bytes": 7087,
+        "expected_sha256": "32c61b5992059f1506165cd3288d1ec33261df9763bef037c5755c605a6e74a2",
+        "hash_and_size_match": true,
+        "read_complete": true,
+        "original_path": "C:\\Trabajo\\airr\\2026-11-01_execution1805\\CITED-EXTERIOR-PRODUCT1805.json",
+        "byte_identical_to_original": true
+      },
+      {
+        "path": "C:\\Trabajo\\physmath-knowledge-tree\\physical-mean-admission1728\\integrations\\research-radar\\evidence\\2026-10-31-physical-mean-admission\\source-indices-1807\\ASSESSMENT1805.json",
+        "bytes": 33310,
+        "sha256": "220570fb9aa81f33a2e84f8c76cbfa0cc20fbeb18464d514db68654237c61da7",
+        "expected_bytes": 33310,
+        "expected_sha256": "220570fb9aa81f33a2e84f8c76cbfa0cc20fbeb18464d514db68654237c61da7",
+        "hash_and_size_match": true,
+        "read_complete": true,
+        "original_path": "C:\\Trabajo\\airr\\2026-11-01_execution1805\\ASSESSMENT1805.json",
+        "byte_identical_to_original": true
+      },
+      {
+        "path": "C:\\Trabajo\\physmath-knowledge-tree\\physical-mean-admission1728\\integrations\\research-radar\\evidence\\2026-10-31-physical-mean-admission\\source-indices-1807\\PHYSICAL-DETERMINING-SET1806.json",
+        "bytes": 9941,
+        "sha256": "744f358588fda7969fe9e4a3fb679056b1174bb33888f992708aa2183c3dea06",
+        "expected_bytes": 9941,
+        "expected_sha256": "744f358588fda7969fe9e4a3fb679056b1174bb33888f992708aa2183c3dea06",
+        "hash_and_size_match": true,
+        "read_complete": true,
+        "original_path": "C:\\Trabajo\\airr\\2026-11-01_execution1806\\PHYSICAL-DETERMINING-SET1806.json",
+        "byte_identical_to_original": true
+      },
+      {
+        "path": "C:\\Trabajo\\physmath-knowledge-tree\\physical-mean-admission1728\\integrations\\research-radar\\evidence\\2026-10-31-physical-mean-admission\\source-indices-1807\\ASSESSMENT1806.json",
+        "bytes": 31407,
+        "sha256": "9ea3abc13c02323b563f07e76f3288eef759deab028e3a7df3e069a27dc2e2c5",
+        "expected_bytes": 31407,
+        "expected_sha256": "9ea3abc13c02323b563f07e76f3288eef759deab028e3a7df3e069a27dc2e2c5",
+        "hash_and_size_match": true,
+        "read_complete": true,
+        "original_path": "C:\\Trabajo\\airr\\2026-11-01_execution1806\\ASSESSMENT1806.json",
+        "byte_identical_to_original": true
+      }
+    ],
+    "manifest_file_list_matches_public_integration": true,
+    "directory_files": [
+      "ASSESSMENT1801.json",
+      "ASSESSMENT1805.json",
+      "ASSESSMENT1806.json",
+      "CITED-EXTERIOR-PRODUCT1805.json",
+      "PHYSICAL-CENTER-GEOMETRY1801.json",
+      "PHYSICAL-DETERMINING-SET1806.json",
+      "README.md",
+      "manifest.json"
+    ],
+    "unexpected_files": [],
+    "all_six_json_parse": true,
+    "all_delivery_relative_links_resolve_locally": true,
+    "public_deployment_checked": false,
+    "full_reports_not_extracts": true,
+    "adverse_findings_omitted_from_delivered_reports": false
+  },
+  "coverage_by_report": {
+    "1801": {
+      "components_expected": 15,
+      "components_covered": 15,
+      "objections_expected": 5,
+      "objections_covered": 5,
+      "components": [
+        {
+          "id": "C01",
+          "component": "Objeto y conservación de la ley",
+          "snapshot_lines": [
+            3,
+            165,
+            171,
+            181,
+            183,
+            194
+          ],
+          "coverage": "La fuente y la media se mantienen; la ley fijada y K_C no adquieren admisión por el resultado de índices.",
+          "editorial_disposition": "FIEL_EN_EL_ALCANCE_RESUMIDO"
+        },
+        {
+          "id": "C02",
+          "component": "Bloques centrados",
+          "snapshot_lines": [
+            167
+          ],
+          "coverage": "Los centros finos/gruesos y h reproducen la geometría del informe. El resumen conserva las celdas originales compatibles; no ofrece una nueva familia de retículas.",
+          "editorial_disposition": "FIEL_EN_EL_ALCANCE_RESUMIDO"
+        },
+        {
+          "id": "C03",
+          "component": "b0(c) original",
+          "snapshot_lines": [
+            167,
+            169
+          ],
+          "coverage": "Se reproduce el índice longitudinal Lj_mu+L-1 y el transversal Lj_nu+h, con el pivote original y no uno elegido a conveniencia.",
+          "editorial_disposition": "FIEL_EN_EL_ALCANCE_RESUMIDO"
+        },
+        {
+          "id": "C04",
+          "component": "Periodos y representantes",
+          "snapshot_lines": [
+            167
+          ],
+          "coverage": "Se mantienen los periodos originales compatibles y se excluye un toro sustituto. El detalle N=2L^(m+K), n=N/L y la costura permanece en el informe completo; no se publica un resultado más amplio.",
+          "editorial_disposition": "FIEL_EN_EL_ALCANCE_RESUMIDO"
+        },
+        {
+          "id": "C05",
+          "component": "Inyectividad y orientaciones",
+          "snapshot_lines": [
+            167,
+            169
+          ],
+          "coverage": "La inyección se limita a representantes positivos independientes módulo periodos originales. Los inversos no constituyen variables adicionales.",
+          "editorial_disposition": "FIEL_EN_EL_ALCANCE_RESUMIDO"
+        },
+        {
+          "id": "C06",
+          "component": "Particiones y divisibilidad",
+          "snapshot_lines": [
+            167
+          ],
+          "coverage": "Alineación y divisibilidad efectiva del toro aparecen explícitamente; no basta una potencia arbitraria.",
+          "editorial_disposition": "FIEL_EN_EL_ALCANCE_RESUMIDO"
+        },
+        {
+          "id": "C07",
+          "component": "Booleanas y erosiones",
+          "snapshot_lines": [
+            167
+          ],
+          "coverage": "Las booleanas permanecen en celdas completas o conjuntos de sitios; se conserva el contraejemplo de una cara aislada.",
+          "editorial_disposition": "FIEL_EN_EL_ALCANCE_RESUMIDO"
+        },
+        {
+          "id": "C08",
+          "component": "Incidencia fina/gruesa",
+          "snapshot_lines": [
+            165,
+            167,
+            169,
+            171
+          ],
+          "coverage": "La incidencia se aplica en la geometría de celdas completas; no se generaliza a regiones arbitrarias ni a plaquetas.",
+          "editorial_disposition": "FIEL_EN_EL_ALCANCE_RESUMIDO"
+        },
+        {
+          "id": "C09",
+          "component": "Filas interiores y de cruce",
+          "snapshot_lines": [
+            169
+          ],
+          "coverage": "Se usa el bloque del extremo interior, incluyendo una fila que entra en X. La nueva corrección1806 mejora la precisión sin alterar el informe1801.",
+          "editorial_disposition": "FIEL_EN_EL_ALCANCE_RESUMIDO"
+        },
+        {
+          "id": "C10",
+          "component": "Disponibilidad condicional bajo F",
+          "snapshot_lines": [
+            165,
+            169,
+            189
+          ],
+          "coverage": "1801 queda intacto con su premisa condicional; solo1806 paga la identificación del F_src de esta fuente. No se atribuye ese pago al resultado geométrico1801.",
+          "editorial_disposition": "CONDICIONAL_HISTORICA_PRESERVADA; PARTE_FUENTE_ACTUALIZADA_POR1806"
+        },
+        {
+          "id": "C11",
+          "component": "Soporte de filas puramente exteriores",
+          "snapshot_lines": [
+            171,
+            173,
+            177
+          ],
+          "coverage": "El soporte se limita al mapa de media por caminos originales; se define M_J^F sobre datos parciales admitidos. No se factoriza Phi ni el mínimo.",
+          "editorial_disposition": "FIEL_EN_EL_ALCANCE_RESUMIDO"
+        },
+        {
+          "id": "C12",
+          "component": "Dos complementos distintos",
+          "snapshot_lines": [
+            165,
+            183
+          ],
+          "coverage": "Se niega una regla universal de conmutación y se conserva el falsificador del bond fino de cruce.",
+          "editorial_disposition": "FIEL_EN_EL_ALCANCE_RESUMIDO"
+        },
+        {
+          "id": "C13",
+          "component": "Apoyo operativo y delta exterior",
+          "snapshot_lines": [
+            163,
+            171,
+            177,
+            189
+          ],
+          "coverage": "Se distingue el apoyo de pivotes y recuentos de la nueva definición vinculante. La lista J se reconstruye operacionalmente sin atribuir un subíndice inexistente a p249.",
+          "editorial_disposition": "FIEL_EN_EL_ALCANCE_RESUMIDO"
+        },
+        {
+          "id": "C14",
+          "component": "Instancia LAW1559",
+          "snapshot_lines": [
+            3,
+            181,
+            183,
+            194
+          ],
+          "coverage": "La identificación del exterior bruto fuente no se presenta como mapa completo hacia la ley fijada. El nombre LAW1559 está explícito en los inputs/reportes íntegros; la prosa identifica su K_C y referencia.",
+          "editorial_disposition": "FIEL_EN_EL_ALCANCE_RESUMIDO"
+        },
+        {
+          "id": "C15",
+          "component": "No planitud, jacobianos y normalización",
+          "snapshot_lines": [
+            169,
+            177,
+            181,
+            183
+          ],
+          "coverage": "Se conservan las obligaciones de inversa no plana, composición completa, sección, parámetros, denominador, marcas e historia.",
+          "editorial_disposition": "FIEL_EN_EL_ALCANCE_RESUMIDO"
+        }
+      ],
+      "objections": [
+        {
+          "id": "O01",
+          "issue": "F original no vinculado en1801",
+          "snapshot_lines": [
+            3,
+            163,
+            165,
+            181,
+            189
+          ],
+          "handling": "La advertencia histórica sigue íntegra. La nueva definición paga solo F_src de CMP119; el exterior libre y la ley1559 siguen sin puente.",
+          "editorial_disposition": "PARTE_FUENTE_RESUELTA_POR_NUEVA_EVIDENCIA; PARTE_LEY_FIJADA_ABIERTA"
+        },
+        {
+          "id": "O02",
+          "issue": "Filas del delta exterior no vinculadas conjuntamente en1801",
+          "snapshot_lines": [
+            171,
+            173,
+            175,
+            177,
+            189
+          ],
+          "handling": "J=E1\\I se obtiene de la operación fuente completa. Todas las filas de cruce permanecen en I; el puente al kernel libre fijado no se presume.",
+          "editorial_disposition": "PARTE_FUENTE_RESUELTA_POR1806; PUENTE_POSTERIOR_ABIERTO"
+        },
+        {
+          "id": "O03",
+          "issue": "Intersecciones geométricas que solo dejan caras",
+          "snapshot_lines": [
+            167
+          ],
+          "handling": "Se mantiene explícitamente la restricción a celdas/sitios y el contraejemplo de cara.",
+          "editorial_disposition": "PRESERVADA"
+        },
+        {
+          "id": "O04",
+          "issue": "Divisibilidad y alineación periódica",
+          "snapshot_lines": [
+            167
+          ],
+          "handling": "Se exige la partición original que divide el mismo toro; no se permite escoger otro.",
+          "editorial_disposition": "PRESERVADA"
+        },
+        {
+          "id": "O05",
+          "issue": "Suficiencia no equivale a necesidad abstracta",
+          "snapshot_lines": [
+            165,
+            189
+          ],
+          "handling": "El texto no transforma la antigua hipótesis en un bicondicional sobre todos los posibles F. Ahora identifica el F_src de una operación concreta y niega una regla universal; la precisión lógica íntegra permanece en el reporte.",
+          "editorial_disposition": "PRESERVADA"
+        }
+      ],
+      "extra_context": "La ausencia histórica local del antecedente y su aviso posterior de localizador no se transforman en inexistencia del artículo; la prosa179 dice recién legible. El experimento d2,L13, sus cifras y su carácter auxiliar permanecen en el reporte completo. La línea189 evita presentarlos como una campaña reproducida por esta integración."
+    },
+    "1805": {
+      "components_expected": 13,
+      "components_covered": 13,
+      "new_objections_expected": 6,
+      "new_objections_covered": 6,
+      "inherited_objections_expected": 5,
+      "inherited_objections_covered": 5,
+      "components": [
+        {
+          "id": "N01",
+          "component": "Novedad y objeto congelado",
+          "snapshot_lines": [
+            179,
+            187,
+            189
+          ],
+          "coverage": "La disponibilidad posterior del antecedente se presenta como evidencia nueva, conservando los informes previos y sus inputs.",
+          "editorial_disposition": "FIEL_EN_EL_ALCANCE_RESUMIDO"
+        },
+        {
+          "id": "N02",
+          "component": "Producto exterior literal1985",
+          "snapshot_lines": [
+            179
+          ],
+          "coverage": "Se cita el producto ya en p259(13), además de(18) y(22); no se sustituye contención por incidencia.",
+          "editorial_disposition": "FIEL_EN_EL_ALCANCE_RESUMIDO"
+        },
+        {
+          "id": "N03",
+          "component": "Partición geométrica I/J",
+          "snapshot_lines": [
+            167,
+            171
+          ],
+          "coverage": "Celdas completas, mismo toro y cruce en I se conservan; la vinculación actual procede de1806, no de una promoción retroactiva de1805.",
+          "editorial_disposition": "FIEL_EN_EL_ALCANCE_RESUMIDO"
+        },
+        {
+          "id": "N04",
+          "component": "Soporte de J para cada media",
+          "snapshot_lines": [
+            171,
+            177
+          ],
+          "coverage": "Cada media permanece fijada por separado, sus links están en F_src y el delta exterior se conserva. No se infiere independencia del peso.",
+          "editorial_disposition": "FIEL_EN_EL_ALCANCE_RESUMIDO"
+        },
+        {
+          "id": "N05",
+          "component": "Complemento fino operativo",
+          "snapshot_lines": [
+            163,
+            165,
+            189
+          ],
+          "coverage": "La definición propia de CMP119 se distingue del anterior argumento de coherencia de Haar; no se afirma que1805 ya autenticara F.",
+          "editorial_disposition": "FIEL_EN_EL_ALCANCE_RESUMIDO"
+        },
+        {
+          "id": "N06",
+          "component": "Cruces finos y gruesos",
+          "snapshot_lines": [
+            169,
+            171,
+            183
+          ],
+          "coverage": "El bond fino de cruce pertenece a A; el grueso de cruce permanece en I. El solapamiento de incidentes del complemento es un falsificador de lectura, no refutación de la fuente.",
+          "editorial_disposition": "FIEL_EN_EL_ALCANCE_RESUMIDO"
+        },
+        {
+          "id": "N07",
+          "component": "Alcance de la remisión",
+          "snapshot_lines": [
+            163,
+            179
+          ],
+          "coverage": "La remisión antecedente no se trata como identidad automática. El vínculo nuevo es interno a CMP119/CMP109.",
+          "editorial_disposition": "FIEL_EN_EL_ALCANCE_RESUMIDO"
+        },
+        {
+          "id": "N08",
+          "component": "Media relativa antigua frente a física",
+          "snapshot_lines": [
+            171,
+            179
+          ],
+          "coverage": "Q/h/D y gauge axial antiguos no se identifican con los objetos físicos actuales ni se intercambian las dos medias.",
+          "editorial_disposition": "FIEL_EN_EL_ALCANCE_RESUMIDO"
+        },
+        {
+          "id": "N09",
+          "component": "Cota, ampliación e igualdad",
+          "snapshot_lines": [
+            179
+          ],
+          "coverage": "Se conserva la cota de1985, la insuficiencia de una igualdad interna y las igualdades propias de CMP119.",
+          "editorial_disposition": "FIEL_EN_EL_ALCANCE_RESUMIDO"
+        },
+        {
+          "id": "N10",
+          "component": "Medida y jacobiano compuesto",
+          "snapshot_lines": [
+            177,
+            181,
+            183
+          ],
+          "coverage": "La partición bruta sin nuevo determinante no cancela los factores posteriores de Haar/Lie, delta, pivotes y escala. Los detalles sigma/sigma0, determinantes y z^(0) quedan íntegros en el reporte.",
+          "editorial_disposition": "FIEL_EN_EL_ALCANCE_RESUMIDO"
+        },
+        {
+          "id": "N11",
+          "component": "Dimensión, acoplamiento y cutoff",
+          "snapshot_lines": [
+            179,
+            181
+          ],
+          "coverage": "No se transporta el conteo tridimensional a cuatro dimensiones ni la ampliación a K_C; acoplamientos y parámetros permanecen abiertos.",
+          "editorial_disposition": "FIEL_EN_EL_ALCANCE_RESUMIDO"
+        },
+        {
+          "id": "N12",
+          "component": "Falsificadores",
+          "snapshot_lines": [
+            183
+          ],
+          "coverage": "Se retienen el cruce grueso asignado a J y el fino asignado a Gamma0 por complemento geométrico primero. No se alega dependencia no nula para toda configuración excepcional.",
+          "editorial_disposition": "FIEL_EN_EL_ALCANCE_RESUMIDO"
+        },
+        {
+          "id": "N13",
+          "component": "Ley y obligaciones abiertas",
+          "snapshot_lines": [
+            181,
+            183,
+            194
+          ],
+          "coverage": "Inversa, K_C, composición de medida, sección/source190/Hsharp, P1, amplitudes, absorciones, marcas e historia no se promueven.",
+          "editorial_disposition": "FIEL_EN_EL_ALCANCE_RESUMIDO"
+        }
+      ],
+      "new_objections": [
+        {
+          "id": "1805-O01",
+          "issue": "La coherencia de Haar no fija por sí sola los índices",
+          "snapshot_lines": [
+            163,
+            165,
+            189
+          ],
+          "handling": "El vínculo nuevo se apoya en la definición fuente de1806. No se adjudica al argumento operativo de1805 una conclusión que no obtuvo. La traducción a1559 sigue abierta.",
+          "editorial_disposition": "PARTE_FUENTE_RESUELTA_POR1806; LIMITE_METODOLOGICO_CONSERVADO"
+        },
+        {
+          "id": "1805-O02",
+          "issue": "Subíndice exterior no impreso",
+          "snapshot_lines": [
+            177,
+            189
+          ],
+          "handling": "Se declara que el delta es comprimido y se interpreta operacionalmente en J; el subíndice Omega1^(c,(1)) solo se menciona para negar su atribución literal.",
+          "editorial_disposition": "CORRECCION_APLICADA_EN_LA_SINTESIS; ORIGINAL_PRESERVADO"
+        },
+        {
+          "id": "1805-O03",
+          "issue": "Localizadores p259 del producto y condición exterior",
+          "snapshot_lines": [
+            179,
+            189
+          ],
+          "handling": "El producto se localiza ya en p259(13); la condición Uprime=1 no se relocaliza erróneamente en la prosa nueva. El reporte íntegro conserva su localización correcta.",
+          "editorial_disposition": "CORRECCION_APLICADA_EN_LA_SINTESIS; ORIGINAL_PRESERVADO"
+        },
+        {
+          "id": "1805-O04",
+          "issue": "Igualdad de kernels no pagada",
+          "snapshot_lines": [
+            179,
+            181
+          ],
+          "handling": "La ampliación1985 continúa siendo una cota y no se identifica con el kernel posterior ni con K_C.",
+          "editorial_disposition": "PRESERVADA"
+        },
+        {
+          "id": "1805-O05",
+          "issue": "Transporte de Q, h/D y media no probado",
+          "snapshot_lines": [
+            171,
+            179,
+            181
+          ],
+          "handling": "No se equiparan mapas no planos ni gauge; las medias se fijan separadamente.",
+          "editorial_disposition": "PRESERVADA"
+        },
+        {
+          "id": "1805-O06",
+          "issue": "Soporte del promedio no factoriza densidad",
+          "snapshot_lines": [
+            173,
+            177
+          ],
+          "handling": "Phi conserva sector, gauge, acción, observable y todas sus dependencias. La división de las listas no elimina ni factoriza el peso.",
+          "editorial_disposition": "PRESERVADA"
+        }
+      ],
+      "inherited_objections": [
+        {
+          "id": "O01",
+          "issue": "F original no vinculado en1801",
+          "snapshot_lines": [
+            3,
+            163,
+            165,
+            181,
+            189
+          ],
+          "handling": "La advertencia histórica sigue íntegra. La nueva definición paga solo F_src de CMP119; el exterior libre y la ley1559 siguen sin puente.",
+          "editorial_disposition": "PARTE_FUENTE_RESUELTA_POR_NUEVA_EVIDENCIA; PARTE_LEY_FIJADA_ABIERTA"
+        },
+        {
+          "id": "O02",
+          "issue": "Filas del delta exterior no vinculadas conjuntamente en1801",
+          "snapshot_lines": [
+            171,
+            173,
+            175,
+            177,
+            189
+          ],
+          "handling": "J=E1\\I se obtiene de la operación fuente completa. Todas las filas de cruce permanecen en I; el puente al kernel libre fijado no se presume.",
+          "editorial_disposition": "PARTE_FUENTE_RESUELTA_POR1806; PUENTE_POSTERIOR_ABIERTO"
+        },
+        {
+          "id": "O03",
+          "issue": "Intersecciones geométricas que solo dejan caras",
+          "snapshot_lines": [
+            167
+          ],
+          "handling": "Se mantiene explícitamente la restricción a celdas/sitios y el contraejemplo de cara.",
+          "editorial_disposition": "PRESERVADA"
+        },
+        {
+          "id": "O04",
+          "issue": "Divisibilidad y alineación periódica",
+          "snapshot_lines": [
+            167
+          ],
+          "handling": "Se exige la partición original que divide el mismo toro; no se permite escoger otro.",
+          "editorial_disposition": "PRESERVADA"
+        },
+        {
+          "id": "O05",
+          "issue": "Suficiencia no equivale a necesidad abstracta",
+          "snapshot_lines": [
+            165,
+            189
+          ],
+          "handling": "El texto no transforma la antigua hipótesis en un bicondicional sobre todos los posibles F. Ahora identifica el F_src de una operación concreta y niega una regla universal; la precisión lógica íntegra permanece en el reporte.",
+          "editorial_disposition": "PRESERVADA"
+        }
+      ],
+      "extra_context": "La limitación de CMP98 se conserva explícitamente en189: el archivo fallido de una página no se usó como matemática, y las referencias antiguas se verificaron en CMP102 sin afirmar una rederivación completa. Se conservan la dimensión3, ampliación y límites de transferencia."
+    },
+    "1806": {
+      "components_expected": 15,
+      "components_covered": 15,
+      "objections_or_falsifiers_expected": 7,
+      "objections_or_falsifiers_covered": 7,
+      "components": [
+        {
+          "id": "C01",
+          "component": "Objeto preservado y alcance nuevo",
+          "snapshot_lines": [
+            3,
+            163,
+            181,
+            189,
+            194
+          ],
+          "coverage": "Solo se actualiza el estado de los índices brutos fuente. No se cambia la ley, la media o un estado físico.",
+          "editorial_disposition": "FIEL_EN_EL_ALCANCE_RESUMIDO"
+        },
+        {
+          "id": "C02",
+          "component": "Contenido literal de(2.2)",
+          "snapshot_lines": [
+            163,
+            165
+          ],
+          "coverage": "La aplicación a puntos/bonds/plaquetas se atribuye al texto y E0\\A se marca expresamente como especialización propia, no cita literal.",
+          "editorial_disposition": "FIEL_EN_EL_ALCANCE_RESUMIDO"
+        },
+        {
+          "id": "C03",
+          "component": "Orden complemento/levantamiento",
+          "snapshot_lines": [
+            165,
+            183
+          ],
+          "coverage": "Se presenta la inferencia tipada de esta fuente y su falsificador, sin convertirla en ley universal.",
+          "editorial_disposition": "FIEL_EN_EL_ALCANCE_RESUMIDO"
+        },
+        {
+          "id": "C04",
+          "component": "k=1 y M^0",
+          "snapshot_lines": [
+            165
+          ],
+          "coverage": "Se conservan las escalas distintas y la identidad del campo fino; se distingue el promedio de gauge sobre sitios.",
+          "editorial_disposition": "FIEL_EN_EL_ALCANCE_RESUMIDO"
+        },
+        {
+          "id": "C05",
+          "component": "Vínculo al primer paso y mínimo",
+          "snapshot_lines": [
+            163,
+            183
+          ],
+          "coverage": "El enlace expreso de p256 y(2.10)-(2.12) está presente; la regularidad del mínimo y sus datos no se certifican para todo exterior.",
+          "editorial_disposition": "FIEL_EN_EL_ALCANCE_RESUMIDO"
+        },
+        {
+          "id": "C06",
+          "component": "Geometría y representantes",
+          "snapshot_lines": [
+            167,
+            169
+          ],
+          "coverage": "Celdas originales, compatibilidad, divisibilidad, alineación y orientaciones independientes permanecen.",
+          "editorial_disposition": "FIEL_EN_EL_ALCANCE_RESUMIDO"
+        },
+        {
+          "id": "C07",
+          "component": "Disponibilidad y corrección del extremo",
+          "snapshot_lines": [
+            169
+          ],
+          "coverage": "Se usa el bloque del extremo interior, con el caso entrante B(c_+) explícito. No se infiere inversa no plana ni independencia tras eliminar constraints.",
+          "editorial_disposition": "FIEL_EN_EL_ALCANCE_RESUMIDO"
+        },
+        {
+          "id": "C08",
+          "component": "Partición completa I/J",
+          "snapshot_lines": [
+            171
+          ],
+          "coverage": "E1 original e I fuente determinan J exhaustivo. Todos los cruces pertenecen a I.",
+          "editorial_disposition": "FIEL_EN_EL_ALCANCE_RESUMIDO"
+        },
+        {
+          "id": "C09",
+          "component": "Mapa parcial M_J^F",
+          "snapshot_lines": [
+            171
+          ],
+          "coverage": "La evaluación se hace por caminos originales sobre datos parciales admitidos, sin campo global inventado ni extensión de ramas.",
+          "editorial_disposition": "FIEL_EN_EL_ALCANCE_RESUMIDO"
+        },
+        {
+          "id": "C10",
+          "component": "Haar y delta originales",
+          "snapshot_lines": [
+            173,
+            175,
+            177
+          ],
+          "coverage": "La identidad reproduce todos los factores y filas. No se afirma factorización de Phi.",
+          "editorial_disposition": "FIEL_EN_EL_ALCANCE_RESUMIDO"
+        },
+        {
+          "id": "C11",
+          "component": "Sentido débil conjunto y gráfica",
+          "snapshot_lines": [
+            173,
+            175,
+            177
+          ],
+          "coverage": "La debilidad conjunta en todo V es visible antes de la fórmula y después por tests. Se conserva la integrabilidad sobre la gráfica y la insuficiencia de L1 ambiente; no se prometen fibras regulares ni densidad puntual normalizada.",
+          "editorial_disposition": "FIEL_EN_EL_ALCANCE_RESUMIDO"
+        },
+        {
+          "id": "C12",
+          "component": "Delta comprimido de p249",
+          "snapshot_lines": [
+            177,
+            189
+          ],
+          "coverage": "J se reconstruye operacionalmente a partir de la operación original y eliminación de I, sin atribución tipográfica falsa.",
+          "editorial_disposition": "FIEL_EN_EL_ALCANCE_RESUMIDO"
+        },
+        {
+          "id": "C13",
+          "component": "F_src frente a A_out",
+          "snapshot_lines": [
+            181
+          ],
+          "coverage": "Se distinguen valores de grupo antes de traducir al mínimo y coordenadas libres de álgebra tras linealización, eliminación y división regional.",
+          "editorial_disposition": "FIEL_EN_EL_ALCANCE_RESUMIDO"
+        },
+        {
+          "id": "C14",
+          "component": "1559/K_C y composición",
+          "snapshot_lines": [
+            181,
+            183,
+            194
+          ],
+          "coverage": "No se suministra por esta evidencia el mapa a K_C ni la composición Haar/Lie/delta/pivotes/escala, soporte e inserciones marcadas.",
+          "editorial_disposition": "FIEL_EN_EL_ALCANCE_RESUMIDO"
+        },
+        {
+          "id": "C15",
+          "component": "Límites de teorema y admisión",
+          "snapshot_lines": [
+            181,
+            183,
+            187,
+            191,
+            194
+          ],
+          "coverage": "No hay auditoría completa de pruebas, admisión de candidato1642, normalización, suma marcada, historia, source190/Hsharp, P1 o parámetros uniformes.",
+          "editorial_disposition": "FIEL_EN_EL_ALCANCE_RESUMIDO"
+        }
+      ],
+      "objections_or_falsifiers": [
+        {
+          "id": "1806-O01",
+          "issue": "Complemento tipado no es conmutación universal",
+          "snapshot_lines": [
+            165,
+            183
+          ],
+          "handling": "La interpretación fuente es acotada; una definición primaria aplicable con un cruce fino en Gamma0 revocaría el vínculo o exigiría variables compartidas.",
+          "editorial_disposition": "PRESERVADA"
+        },
+        {
+          "id": "1806-O02",
+          "issue": "Bloque inicial frente a bloque interior",
+          "snapshot_lines": [
+            169,
+            189
+          ],
+          "handling": "La corrección se realiza de forma expresa: al entrar en X el bloque interior es B(c_+), no B(c_-).",
+          "editorial_disposition": "CORRECCION_APLICADA_EN_LA_SINTESIS; ORIGINAL_PRESERVADO"
+        },
+        {
+          "id": "1806-O03",
+          "issue": "Cruce grueso en J",
+          "snapshot_lines": [
+            171,
+            183
+          ],
+          "handling": "El cruce queda en I; introducirlo en J invalida el argumento de soporte, sin afirmar dependencia no nula en toda configuración.",
+          "editorial_disposition": "PRESERVADA"
+        },
+        {
+          "id": "1806-O04",
+          "issue": "Fibras y valores puntuales; integrabilidad gráfica",
+          "snapshot_lines": [
+            173,
+            177
+          ],
+          "handling": "La fórmula solo se afirma débilmente en todo V sobre dominio/ramas originales. No se usa L1 ambiente como garantía ni se produce densidad normalizada en cada target.",
+          "editorial_disposition": "PRESERVADA"
+        },
+        {
+          "id": "1806-O05",
+          "issue": "Disponibilidad bruta no es eliminación no plana",
+          "snapshot_lines": [
+            169,
+            181,
+            183
+          ],
+          "handling": "La inversa seleccionada, su uniformidad y sus jacobianos siguen abiertos.",
+          "editorial_disposition": "PRESERVADA"
+        },
+        {
+          "id": "1806-O06",
+          "issue": "A_out/K_C no se identifican con F_src",
+          "snapshot_lines": [
+            181,
+            183,
+            194
+          ],
+          "handling": "La distinción es destacada y la identificación sin reconstrucción aparece como conclusión inválida.",
+          "editorial_disposition": "PRESERVADA"
+        },
+        {
+          "id": "1806-O07",
+          "issue": "Hipótesis variacionales y dominios de media",
+          "snapshot_lines": [
+            171,
+            177,
+            183,
+            191
+          ],
+          "handling": "Se conservan dominio, ramas, regularidad y sector original; no se afirma regularidad para cualquier dato exterior.",
+          "editorial_disposition": "PRESERVADA"
+        }
+      ],
+      "extra_context": "La nueva definición paga solo la parte fuente de los antiguos O01/O02. El texto no exige que informes previos cambien retroactivamente. La precisión lógica O05 permanece: identificar F_src en esta operación no prueba que ese complemento sea la única manera abstracta de liberar pivotes."
+    }
+  },
+  "coverage_totals": {
+    "distinct_report_components": 43,
+    "distinct_objections_or_falsifiers": 18,
+    "additional_inherited_objection_entries_in1805": 5,
+    "complete_delivered_reports": 3,
+    "complete_delivered_inputs": 3,
+    "components_unaccounted_for": [],
+    "objections_unaccounted_for": []
+  },
+  "source_context_fidelity": [
+    {
+      "source": "CMP109",
+      "reported_hash": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+      "locators_used_by_new_prose": "p251, pp252–254, p267",
+      "fidelity": "Geometría, medias separadas, caminos y pivote original corresponden al contexto registrado; no se atribuye identidad no plana de las medias.",
+      "source_hash_recomputed_here": false
+    },
+    {
+      "source": "CMP119",
+      "reported_hash": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+      "locators_used_by_new_prose": "p243(0.1), pp247–249, pp249–253(1.15)–(1.26), pp254–256(2.2),(2.10)–(2.12)",
+      "fidelity": "La inferencia E0\\A se distingue de una fórmula literal. La referencia a A_out es posterior a los cambios de variables. El delta comprimido recibe significado operacional sin subíndice inventado.",
+      "source_hash_recomputed_here": false
+    },
+    {
+      "source": "CMP102,255–275",
+      "doi": "10.1007/BF01229380",
+      "reported_hash": "b10a444f8122d5e1b2999c54f120c647e33e5ad834943b00285b15bcf8d719f4",
+      "locators_used_by_new_prose": "pp259–261,(13),(18),(22)",
+      "fidelity": "No se confunde con CMP102,277–309 de secciones antiguas. El primer producto queda bien localizado y las cotas no se convierten en igualdades de kernels.",
+      "source_hash_recomputed_here": false
+    },
+    {
+      "source": "LAW-BINDING1559",
+      "reported_hash": "a78244cb62773f907346968b16470892a00f1405219d0e9752f17b578af806dd",
+      "fidelity": "La nueva síntesis mantiene K_C y la referencia fijados sin afirmar el mapa completo; esta revisión no abrió ni evaluó de nuevo la ley.",
+      "source_hash_recomputed_here": false
+    },
+    {
+      "source": "Manuscrito privado mencionado como contexto en1806",
+      "reported_hash": "b3042d6ab2a9cb3f4414b818e322953d7088a7a2befa4c1a79b8dcddef2457d2",
+      "fidelity": "Solo se entrega referencia de procedencia y descripción del alcance ya registrado. No se abrió ni incorporó su cuerpo y no recibe evaluación por proximidad.",
+      "source_hash_recomputed_here": false
+    }
+  ],
+  "paid_open_boundary": {
+    "paid_as_reported_by1806": [
+      "Complemento fino tipado F_src=E0\\A de la propia fuente",
+      "I=E_coarse(X) y J=E1\\I para filas originales independientes",
+      "Cruces finos asignados a A y gruesos a I",
+      "Disponibilidad bruta de beta(I), bajo geometría fuente",
+      "Soporte parcial de M_J^F en su dominio admitido",
+      "Identidad de la separación del delta débilmente conjunta en V"
+    ],
+    "still_open": [
+      "Mapa completo de links brutos de grupo a coordenadas libres posteriores y A_out",
+      "Igualdad de la integral fijada1559 y su K_C con el sector original sin ampliar dominios",
+      "Coeficientes no planos seleccionados, inversa uniforme y reconstrucción no lineal original",
+      "Composición completa de Haar/Lie, delta, pivotes, determinantes, escala y normalizador",
+      "Sección/localización física, source190/Hsharp, P1 y requisitos de regularidad de mínimos",
+      "Amplitudes de acoplamiento y parámetros/absorciones simultáneos",
+      "Operadores e integral marcados, suma conectada, denominador no nulo, normalización e historia",
+      "Candidato1642, manuscrito y conclusión física"
+    ],
+    "no_new_payment_created_by_this_editorial_report": true
+  },
+  "data_minimization_and_delivery_audit": {
+    "inspected_scope": "Los ocho archivos exactos de source-indices-1807 y el nuevo texto de snapshotA.",
+    "pdf_files_present": false,
+    "embedded_pdf_or_binary_payload_found": false,
+    "foreign_source_full_text_body_found": false,
+    "private_manuscript_body_found": false,
+    "foreign_corpus_found": false,
+    "credential_found": false,
+    "local_provenance_paths_present": true,
+    "local_paths_grant_access": false,
+    "source_formulas_present": "Hay fórmulas breves, referencias y análisis propios necesarios para los inputs y reportes; no se entrega el cuerpo de los artículos.",
+    "method": "Inventario exhaustivo del directorio y lectura completa de todos los seis JSON, manifest y README, más la prosa nueva. No se copiaron ni abrieron los cuerpos fuente o privados.",
+    "limit": "Conclusión acotada a estos bytes y este paquete; no se certifica otra carpeta, otro despliegue ni una detección universal de secretos."
+  },
+  "editorial_findings": [],
+  "required_minimal_corrections": [],
+  "final_statement": "La integración1807A es fiel y apta en el alcance editorial acotado evaluado. Se verifican hashes, bytes, entrega completa de adversidades y conservación del texto anterior. Solo la fuente F_src/I/J queda descrita como pagada por1806; A_out, LAW1559/K_C, integral marcada y física permanecen abiertos. No se emite nota, no se reabre ninguna evaluación matemática y no se modifica la publicación."
+}

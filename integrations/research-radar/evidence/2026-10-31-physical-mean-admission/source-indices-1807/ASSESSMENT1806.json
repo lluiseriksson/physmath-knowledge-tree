@@ -1,0 +1,342 @@
+{
+  "schema_version": "1.0",
+  "execution": 1806,
+  "assessment_type": "Una evaluación nueva y completa del input1806, sin nota ni reinicio",
+  "created_at_utc": "2026-11-01T00:42:39Z",
+  "input": {
+    "path": "C:/Trabajo/airr/2026-11-01_execution1806/PHYSICAL-DETERMINING-SET1806.json",
+    "expected_sha256": "744f358588fda7969fe9e4a3fb679056b1174bb33888f992708aa2183c3dea06",
+    "observed_sha256": "744f358588fda7969fe9e4a3fb679056b1174bb33888f992708aa2183c3dea06",
+    "hash_verified": true,
+    "modified": false
+  },
+  "reviewer_configuration": {
+    "requested_model": "GPT-6 Astra",
+    "requested_reasoning_effort": "xhigh",
+    "effective_model_identity": "NO_AUTENTICADA",
+    "effective_reasoning_effort": "NO_AUTENTICADO",
+    "independence": "NO_AUTENTICADA",
+    "qualification": "Se registra la configuración solicitada; no se certifican identidad efectiva, esfuerzo efectivo ni independencia. La evaluación consiste en una lectura crítica nueva del input1806 y sus fuentes locales.",
+    "additional_reviewers_spawned": false,
+    "assessment_restarted": false
+  },
+  "overall_disposition": {
+    "status": "VINCULO_DE_INDICES_BRUTOS_F_SRC_I_J_DE_LA_FUENTE_ACEPTADO; PARTICION_DE_DELTA_ACEPTADA_SOLO_DEBILMENTE_EN_V_COMPLETO; PUENTE_A_LEY1559_Y_K_C_NO_PAGADO; SIN_ADMISION_FISICA",
+    "summary": "Sí: la nueva evidencia de CMP119(2.2), su aplicación a puntos, bonds y plaquetas, y el vínculo expreso de p256 con el primer paso permiten identificar el exterior fino bruto de esa fuente como F_src=E0\\E_fine(Omega1), y las filas gruesas activas como I=E_coarse(Omega1). Con el conjunto completo de filas de(0.1), J=E1\\I queda determinado simultáneamente. Esta conclusión usa la definición de la propia fuente y su operación original, no un préstamo del artículo antecedente. Se acepta el paso de índices en el dominio geométrico fuente y la disponibilidad bruta de los pivotes originales. No identifica las variables libres exteriores de(1.26), ni la integral fijada por LAW1559, ni K_C, ni coeficientes no planos, ni un resultado físico normalizado.",
+    "source_raw_F_identified": true,
+    "source_active_I_identified": true,
+    "source_full_I_J_partition_identified": true,
+    "source_raw_pivots_available": true,
+    "current_law_F_identified": false,
+    "current_law_I_J_F_coordinate_bridge_complete": false,
+    "source_free_exterior_identified_with_raw_F": false,
+    "nonflat_selected_inverse_admitted": false,
+    "K_C_identified_with_original_source_domain": false,
+    "candidate1642_admitted": false,
+    "physical_admission": false,
+    "score_given": false,
+    "source_theorem_refuted": false,
+    "material_refutation_of_scoped_source_binding_found": false,
+    "required_wording_correction": "La frase 'its entire first block in X' debe significar el bloque de primer nivel correspondiente al extremo interior, B(c_-) o B(c_+). No es cierto que siempre sea B(c_-). La inclusión del pivote no cambia."
+  },
+  "scope": {
+    "assessed": [
+      "Toda la derivación del input1806 y sus exclusiones",
+      "Definición fuente(2.2), orden de tipado/complemento y especialización k=1",
+      "Vínculo con los datos y el mínimo de(2.10)-(2.12) y con el primer paso(1.11)-(1.12)",
+      "Partición conjunta de índices finos y filas gruesas, cruces y pivotes originales",
+      "Soporte local de M_J para las medias físicas originales consideradas por separado",
+      "Identidad operacional del delta como medida gráfica conjunta en V",
+      "Separación entre exterior bruto fuente, exterior de coordenadas libres y ley fijada"
+    ],
+    "not_assessed": [
+      "Reevaluación o sustitución de los informes1801/1805",
+      "Manuscrito completo, PDF completo como candidato o Capacity",
+      "Pruebas completas de los teoremas fuente y todos sus antecedentes",
+      "Existencia global de ramas logarítmicas o admisión de todos los datos por el teorema variacional",
+      "Invertibilidad uniforme no plana, jacobiano compuesto o normalización física",
+      "source190/Hsharp, P1, intervalo común de parámetros, amplitudes, suma marcada conexa o historia"
+    ],
+    "prior_reports_read_as_frozen_context_only": true,
+    "prior_reports_reopened": false,
+    "source_pdfs_copied": false,
+    "corpus_or_source_bodies_saved": false,
+    "rendering": "Páginas renderizadas en memoria; no se guardaron imágenes ni copias de PDF.",
+    "only_output_written": "C:/Trabajo/airr/2026-11-01_execution1806/ASSESSMENT1806.json",
+    "law_manuscript_or_state_changed": false
+  },
+  "source_verification": [
+    {
+      "id": "CMP119",
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-convergent-cmp119-from-fusion.pdf",
+      "expected_sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+      "observed_sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+      "hash_verified": true,
+      "printed_pages_read": [243,244,245,246,247,248,249,250,251,252,253,254,255,256,257,258],
+      "printed_pages_visually_inspected": [248,249,253,255,256],
+      "critical_evidence": {
+        "243(0.1)": "La transformación inicial conserva el campo grueso completo y adopta las medias de CMP109(0.4) o(0.12).",
+        "245": "Las particiones deben ser compatibles entre sí y con las demás particiones usadas.",
+        "247(1.8)-(1.9)": "El conjunto estrella se forma con bonds incidentes y excluye b0(c) para filas gruesas incidentes; el texto incluye al menos un extremo.",
+        "248(1.10)-(1.12)": "Omega1 es unión de cubos compatibles; V0 son datos exteriores y el mínimo mantiene esos datos y los promedios en Omega1^(1).",
+        "249(1.14)-(1.15)": "Se eliminan precisamente los pivotes de Omega1^(1), se descuentan del número de bonds y queda un delta exterior comprimido. No se imprime un subíndice Omega1^(c,(1)) en ese delta.",
+        "251-253(1.20)-(1.26)": "La integral posterior fija coordenadas libres complementarias y conserva acoplamientos de frontera; no integra una copia del campo bruto U|F_src.",
+        "254": "La descripción inductiva se presenta expresamente como generalización de la construcción del primer paso.",
+        "255(2.2)": "Define Gamma0=Omega1^c, Gamma_j=Omega_j^(j)\\Omega_(j+1)^(j), Gamma_k=Omega_k^(k), B=union Gamma_j. La frase inmediata aplica esta definición a conjuntos de puntos, bonds y plaquetas, remitiendo a Sect.0[I].",
+        "256(2.10)-(2.12)": "Remite explícitamente a la integración V0 del primer paso; define V por estratos y M_B por M^j en cada estrato. Estos son los datos del problema variacional. En el párrafo también aparece la notación Omega_j^((j-1)c), con la selección de escala antes del complemento."
+      }
+    },
+    {
+      "id": "CMP109",
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-rg-I-cmp109-1104116842.pdf",
+      "expected_sha256": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+      "observed_sha256": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+      "hash_verified": true,
+      "printed_pages_read": [251,252,253,254,267],
+      "critical_evidence": {
+        "251": "Torus original, L impar mayor que11, celdas y centros, regiones por uniones de cubos; la misma notación representa sus puntos y los bonds o plaquetas que las intersectan.",
+        "252-254(0.3)-(0.12)": "Los promedios usan contornos internos a los bloques extremos y el segmento grueso trasladado. La media de contornos de(0.11) y la iteración espacial M^j de CMP119 no son el mismo objeto por compartir la letra M.",
+        "267": "b0(c) es el bond fino contenido en c y situado en el corredor entre los bloques de sus dos extremos. Su coeficiente inverso pertenece a una obligación posterior distinta."
+      }
+    },
+    {
+      "id": "LAW-BINDING1559",
+      "path": "C:/Trabajo/airr/2026-10-31_execution1559/LAW-BINDING1559.json",
+      "expected_sha256": "a78244cb62773f907346968b16470892a00f1405219d0e9752f17b578af806dd",
+      "observed_sha256": "a78244cb62773f907346968b16470892a00f1405219d0e9752f17b578af806dd",
+      "hash_verified": true,
+      "read_scope": "Vinculación congelada; sin evaluar de nuevo la ley.",
+      "finding": "K_C es un producto de restricciones sobre coordenadas libres y beta_ref permanece fijada. No contiene el mapa completo desde los links brutos fuente ni prueba igualdad con su dominio original."
+    },
+    {
+      "id": "WORKING-MANUSCRIPT",
+      "path": "C:/Trabajo/airr/marked-rg-manuscript/WORKING-MANUSCRIPT.md",
+      "expected_sha256": "b3042d6ab2a9cb3f4414b818e322953d7088a7a2befa4c1a79b8dcddef2457d2",
+      "observed_sha256": "b3042d6ab2a9cb3f4414b818e322953d7088a7a2befa4c1a79b8dcddef2457d2",
+      "hash_verified": true,
+      "read_scope": "Búsqueda y lectura de descripciones seleccionadas de la integral(1.26), coordenadas libres, exterior y K_C; no revisión del manuscrito entero.",
+      "finding": "Las descripciones seleccionadas distinguen precisión restringida, campo libre exterior, reconstrucción y forzamiento de frontera. No proporcionan por esta evidencia la igualdad de la ley fijada con el kernel bruto."
+    }
+  ],
+  "components": [
+    {
+      "id": "C01",
+      "component": "Conservación del objeto y alcance nuevo",
+      "verdict": "RESPETADO",
+      "analysis": "El input propone un vínculo de índices para la misma operación fuente, no una nueva media, un nuevo toro, un nuevo mínimo o un cutoff diferente. Su exclusión expresa de la admisión de K_C/1559 y candidate1642 es esencial. La lectura de1801/1805 se usa para preservar los límites de aquellos informes, no para reabrirlos."
+    },
+    {
+      "id": "C02",
+      "component": "Contenido literal de(2.2)",
+      "verdict": "VERIFICADO",
+      "analysis": "La imagen confirma las fórmulas de los estratos y la declaración inmediata de que la definición se aplica a conjuntos de puntos, bonds y plaquetas. El input dice 'por separado': esa es la interpretación tipada de la frase, no una cita literal adicional. No hay en el display la fórmula moderna E0\\E_fine(X); esta se deriva de aplicar la definición al tipo bond."
+    },
+    {
+      "id": "C03",
+      "component": "Orden complemento/levantamiento",
+      "verdict": "VINCULO_FUENTE_ACEPTADO",
+      "analysis": "CMP109 p251 fija primero qué conjunto de bonds representa Omega1: los incidentes a la región. CMP119 p255 declara que las operaciones de(2.2) son una definición también para esos conjuntos de bonds. En ese tipo, Gamma0=Omega1^c significa el complemento del conjunto de bonds Omega1 dentro del universo fino. Por tanto Gamma0_bond=E0\\E_fine(X). Aplicar el complemento a la región continua y volver a levantar por incidencia ejecutaría otra composición; no es la aplicación de la fórmula al conjunto de bonds ya seleccionado. La introducción de Omega_j como subconjuntos de T_eta, los estratos por escala y la notación de p256 refuerzan esta lectura. No hace falta postular un nuevo F ni deducirlo únicamente de la plausibilidad de una medida producto.",
+      "strongest_alternative_considered": "Leer primero todos los Gamma como regiones continuas y levantar después cada resultado por incidencia. Esa lectura incluiría en Gamma0 los bonds finos de cruce. No basta la convención de CMP109 aislada para excluirla, pero sí la aplicación de la definición de CMP119 al tipo bond junto con su operación de primer paso y el recuento de pivotes. No se ha encontrado una instancia primaria aplicable que ordene explícitamente esa lectura alternativa.",
+      "limit": "Esta es una inferencia documental y matemática fundada, no una transcripción literal de una fórmula E0\\E_fine(X), ni una regla para todas las apariciones de complementos geométricos en todos los artículos."
+    },
+    {
+      "id": "C04",
+      "component": "Especialización k=1 y M^0",
+      "verdict": "CORRECTA",
+      "analysis": "Para k=1 desaparece la familia intermedia: Gamma0 está en la escala fina y Gamma1=Omega1^(1) en la gruesa. B es la unión de estratos con escala identificada, no una partición de un único conjunto de bonds finos. En(2.11), M^0 es la iteración cero, identidad del campo fino; la tipificación y el enlace expreso V0=U exterior del primer paso lo confirman. Interpretarlo como el promedio de variables de gauge de sitios sería incompatible con estos datos."
+    },
+    {
+      "id": "C05",
+      "component": "Aplicabilidad al primer paso y al mínimo",
+      "verdict": "VINCULO_DIRECTO_VERIFICADO_CON_LIMITE_VARIACIONAL",
+      "analysis": "P254 introduce la expansión como generalización del primer paso. P256 nombra expresamente la integración exterior V0 que allí se dejó intacta;(2.10)-(2.12) construyen sus datos y el problema variacional. En k=1 estos datos son (U|F_src,M_I(U)), concordantes con(1.12). Esto supera la remisión metodológica al antecedente de1985. La conclusión identifica los datos prescritos; no verifica que todo v arbitrario del toro satisfaga las hipótesis de regularidad ni prueba por nuevo argumento existencia, unicidad o gauge de cada mínimo."
+    },
+    {
+      "id": "C06",
+      "component": "Geometría y representantes independientes",
+      "verdict": "HIPOTESIS_FUENTE_CONSERVADAS",
+      "analysis": "Se mantienen el toro original, L impar mayor que11, divisibilidades, alineación y compatibilidad de particiones, y Omega1 como unión de celdas completas. Los argumentos son sobre esos conjuntos de sitios/bonds y no sobre caras aisladas producidas por intersecciones degeneradas. Cada bond posee una sola variable independiente; su orientación inversa es dependiente. El cierre periódico se interpreta mediante levantamientos locales y proyección al mismo toro. No se crea una nueva familia de índices físicos distinta de la fuente."
+    },
+    {
+      "id": "C07",
+      "component": "Disponibilidad de beta(I), incluidos cruces",
+      "verdict": "ACEPTADA_PARA_LINKS_BRUTOS_FUENTE_CON_CORRECCION_VERBAL",
+      "analysis": "Toda fila c de I tiene al menos un extremo grueso en X. El bloque fino de ese extremo está en X. b0(c) tiene un extremo fino en cada uno de B(c_-) y B(c_+), así que al menos un extremo fino está en X y beta(c) pertenece a A=E_fine(X). Como F_src es ahora su complemento tipado fuente, beta(I) no intersecta F_src. La inyección periódica bajo las condiciones de1801 se conserva y(1.8)-(1.9), junto con el recuento de p249, concuerdan con ella.",
+      "correction": "Si 'first block' quiere decir siempre B(c_-), la frase del input es falsa para una fila orientada que entra en X. Debe decir 'el bloque de primer nivel del extremo interior'. El resultado sobre beta no usa que el extremo interior sea el inicial.",
+      "limit": "Disponibilidad como variable bruta no prueba coeficiente no plano invertible, independencia después de imponer las restricciones ni un jacobiano de eliminación."
+    },
+    {
+      "id": "C08",
+      "component": "Partición gruesa I/J de la operación completa",
+      "verdict": "ACEPTADA_EN_LA_FUENTE",
+      "analysis": "(0.1) tiene todas las filas gruesas independientes E1. Una vez fijado I por el estrato Gamma1, J=E1\\I es su complemento exhaustivo. En la geometría compatible de celdas completas, J coincide con los segmentos gruesos cuyos dos centros extremos están fuera de X y que quedan enteramente fuera de X. Las filas de cruce están en I, nunca se omiten y nunca se duplican en J. Esta conclusión combina la nueva definición fuente con la operación fuente; no se hereda como identidad de notaciones del artículo anterior."
+    },
+    {
+      "id": "C09",
+      "component": "Soporte y definición parcial de M_J^F",
+      "verdict": "ACEPTADOS_EN_EL_DOMINIO_ORIGINAL_DEL_MAPA",
+      "analysis": "Para c en J, los dos bloques extremos están fuera de X. Los contornos internos, el segmento c y sus traslaciones usados en CMP109(0.4) o(0.12) tienen todos sus bonds en la unión de esos dos bloques y su corredor; sus extremos finos están fuera de X. Por la geometría de celdas completas, pertenecen a F_src. La evaluación local original de esa fila puede hacerse directamente sobre v=U|F_src, sin asignar ningún valor a A. Dos extensiones admitidas con el mismo v dan la misma fila. Esto define M_J^F sobre los datos para los que la evaluación original está admitida.",
+      "limit": "No se define un promedio global de un campo parcial, no se elige una extensión artificial y no se amplía el dominio de una rama logarítmica. Se mantiene fija una de las medias originales y su prescripción de ramas; no se intercambian(0.4) y(0.12) dentro de una misma ley."
+    },
+    {
+      "id": "C10",
+      "component": "Partición de Haar y del delta original",
+      "verdict": "IDENTIDAD_DE_COORDENADAS_Y_FILAS_ACEPTADA",
+      "analysis": "E0=A disjoint_union F_src da exactamente dU=du_A dv_F en las variables independientes con las normalizaciones originales. E1=I disjoint_union J parte el producto de deltas en sus factores de fila. La localidad comprobada permite escribir el factor J como delta_J(M_J^F(v)V_J^-1). Todos los factores de sector, gauge, acción y observables permanecen dentro de Phi_X((u,v),V). La factorización de la lista de restricciones no factoriza Phi_X ni elimina su dependencia de V, del exterior o del mínimo."
+    },
+    {
+      "id": "C11",
+      "component": "Sentido débil conjunto y prueba operacional",
+      "verdict": "CORRECTO_CON_INTEGRABILIDAD_EN_LA_GRAFICA",
+      "analysis": "Para un test f(V) en el campo grueso completo, se integran ambos lados contra dV_I dV_J con Haar normalizado. En ambos casos los deltas evalúan f y Phi_X exactamente en V=M(U). Se obtiene la misma integral de f(M(U))Phi_X(U,M(U)) contra dU en el dominio original. Ello demuestra igualdad de las medidas/distribuciones gráficas conjuntas, sin usar un teorema de fibras regulares ni resolver una ecuación por variables finas. No aparece determinante adicional en este paso.",
+      "required_condition": "Integrabilidad absoluta sobre esa gráfica para las expresiones con signo o complejas; para medidas positivas puede usarse Tonelli en su alcance. Pertenecer a L1 del producto ambiente dU dV no basta: modificar valores en una gráfica de medida ambiente nula puede cambiar la expresión. Los pesos fuente acotados de volumen finito con la evaluación original definida satisfacen la condición relevante; un observable adicional no acotado necesita su propia integrabilidad.",
+      "nonconclusion": "No se obtiene una fórmula puntual bien definida y regular para cada V, ni una cota uniforme, ni una integral condicional normalizada o un denominador no nulo. La notación iterada del input debe conservar explícitamente este significado débil conjunto."
+    },
+    {
+      "id": "C12",
+      "component": "Lectura operacional del delta comprimido de p249",
+      "verdict": "LISTA_DE_FILAS_RECONSTRUIDA_DESDE_LA_OPERACION_FUENTE",
+      "analysis": "La fuente conserva un delta comprimido escrito con V0, mientras las restricciones de I se linealizan y eliminan en p249. La partición original completa permite darle el significado restringido a J, evaluado mediante M_J^F. Esta es una reconstrucción operacional de su lista implícita, respaldada por la eliminación explícita de I, no la atribución de un subíndice inexistente al display. Los cambios interiores no alteran el valor de las filas J porque no alteran sus links brutos."
+    },
+    {
+      "id": "C13",
+      "component": "Separación de F_src y A_out",
+      "verdict": "NECESARIA_Y_CORRECTAMENTE_MANTENIDA",
+      "analysis": "F_src indexa los links de grupo U fijados antes de traducir al mínimo. En(1.15), A indexa coordenadas de álgebra de Lie restantes sobre Omega1 estrella después de linealizar y resolver restricciones. En(1.26), A_out son las coordenadas libres complementarias a la región de integración interior dentro de ese sistema. Los universos, valores y momentos de la construcción son diferentes. A_out no es U|F_src ni se identifica con F_src por una coincidencia de la palabra exterior. El fondo U1 y el lift de las variables resueltas pueden depender de los datos brutos exteriores."
+    },
+    {
+      "id": "C14",
+      "component": "Ley1559, K_C y factores de medida",
+      "verdict": "NO_IDENTIFICADOS_POR_ESTA_ENTRADA",
+      "analysis": "La igualdad de índices brutos fuente no proporciona la aplicación completa que lleva el sector original a las coordenadas libres del producto K_C. Deben conservarse reconstrucción no lineal, selección real de pivotes, densidad Haar/Lie, factores de delta, eliminación, escala, gauge, soporte e inserciones marcadas. Los factores z^(0) y los determinantes posteriores no desaparecen porque la partición bruta no genere ninguno. Tampoco se demuestra igualdad con el dominio ampliado de1985 ni se reinterpreta una cota de aquel artículo como igualdad de kernels."
+    },
+    {
+      "id": "C15",
+      "component": "Límites de teorema, parámetros y admisión",
+      "verdict": "CONSERVADOS",
+      "analysis": "Esta lectura no audita las pruebas completas fuente, sus hipótesis globales, la regularidad de cada mínimo o todas las ramas logarítmicas. No paga el coeficiente seleccionado no plano, su inversa uniforme, source190/Hsharp, P1, cotas de acoplamiento, ventana común de parámetros, absorciones, normalizador, logZ, suma marcada conexa o historia. El vínculo fuente ganado es sustantivo, pero no promueve candidate1642 ni el manuscrito a admitido."
+    }
+  ],
+  "exact_operational_statement": {
+    "universes": "E0 y E1 son los representantes independientes finos y gruesos del toro original; los inversos no son índices adicionales.",
+    "definitions": {
+      "X": "Omega1 original, unión de celdas completas compatible con las particiones y el toro fuente",
+      "A": "E_fine(X)",
+      "F_src": "E0\\A, estrato bond Gamma0 de(2.2)",
+      "I": "E_coarse(X), estrato bond Gamma1 para k=1",
+      "J": "E1\\I",
+      "M_J^F": "Evaluación de las filas J por sus caminos originales sobre los datos parciales v en F_src, en su dominio fuente"
+    },
+    "identity": "int dU Phi_X(U,V) delta_E1(M(U)V^-1) = int dv_F delta_J(M_J^F(v)V_J^-1) int du_A Phi_X((u,v),V) delta_I(M_I(u,v)V_I^-1)",
+    "meaning": "Igualdad débil conjunta en V=(V_I,V_J), restringida al mismo dominio y ramas fuente.",
+    "test_identity": "Para todo test f con integrabilidad gráfica, ambos lados emparejados con f(V)dV dan int dU f(M(U)) Phi_X(U,M(U)).",
+    "preserved": [
+      "Todas las características y el dominio fuente original",
+      "Gauge, acción, observable, mínima configuración y elección original de la media",
+      "Medidas Haar originales y una sola orientación independiente por bond",
+      "Dependencia completa del peso en los campos y sectores"
+    ],
+    "not_asserted": [
+      "Factorización del peso o independencia estadística entre interior y exterior",
+      "Existencia de una densidad regular a todo V",
+      "Extensión global de M_J^F fuera de sus datos admitidos",
+      "Normalización, regular-fiber/coarea o eliminación sin jacobiano posterior"
+    ]
+  },
+  "adversarial_objections_and_falsifiers": [
+    {
+      "id": "1806-O01",
+      "target": "Orden del complemento en(2.2)",
+      "severity": "DECISIVO_SI_APARECE_EVIDENCIA_PRIMARIA_CONTRARIA",
+      "objection": "La frase de aplicación a varios tipos no debe convertirse en una licencia general para conmutar complemento geométrico e incidencia.",
+      "check": "Se contrastó con CMP109 p251, la selección de escala en p256, el vínculo al primer paso y los pivotes de p247/249.",
+      "disposition": "La definición tipada de esta operación sí paga F_src. No se afirma una ley general de conmutación.",
+      "falsifier": "Una definición o enumeración primaria aplicable al mismo primer paso que imponga en Gamma0 un bond fino de cruce por levantar primero el complemento geométrico revocaría este vínculo o exigiría una descripción distinta con variables compartidas. No se halló tal instancia en las páginas examinadas."
+    },
+    {
+      "id": "1806-O02",
+      "target": "Primer bloque de una fila activa",
+      "severity": "CORRECCION_DE_REDACCION_CON_EJEMPLO_CONCRETO",
+      "objection": "Una fila orientada de fuera hacia dentro tiene B(c_-) exterior y B(c_+) interior; no siempre está dentro el bloque inicial.",
+      "disposition": "Sustituir por el bloque del extremo interior. El pivote entre ambos bloques sigue siendo incidente a X y libre de F_src; no invalida la conclusión."
+    },
+    {
+      "id": "1806-O03",
+      "target": "Soporte de J",
+      "severity": "DECISIVO_PARA_LA_PARTICION",
+      "objection": "Una fila gruesa de cruce incluida en J no tendría el soporte exterior demostrado.",
+      "disposition": "J se define como complemento de I en el conjunto completo de filas fuente. Los cruces quedan en I.",
+      "falsifier": "Una fila c con un extremo en X que apareciera como restricción exclusivamente exterior rompería esta lectura de J. No probaría por sí sola que la fila depende no trivialmente del interior en toda configuración excepcional, pero invalidaría el argumento de soporte usado."
+    },
+    {
+      "id": "1806-O04",
+      "target": "Igualdad débil y notación de integral iterada",
+      "severity": "LIMITE_DE_VALIDEZ",
+      "objection": "Los símbolos con delta no garantizan fibras regulares ni valores puntuales para cada V; L1 ambiente no garantiza evaluaciones integrables en la gráfica.",
+      "disposition": "El input incorpora correctamente esas restricciones. La aceptación es como identidad de la medida gráfica conjunta con el peso fuente y sus dominios.",
+      "falsifier": "Una extensión de ramas no admitida, un peso no integrable sobre la gráfica o una exigencia puntual para todos los V quedaría fuera del resultado aceptado."
+    },
+    {
+      "id": "1806-O05",
+      "target": "Disponibilidad bruta versus eliminación no plana",
+      "severity": "BLOQUEO_POSTERIOR_NO_PAGADO",
+      "objection": "Que beta(I) no esté fijado por v no establece que los coeficientes reales del constraint sean invertibles ni uniformemente controlados.",
+      "disposition": "Se paga la máscara de índices, no el inverso seleccionado, ni h/D/C, ni su jacobiano o cota."
+    },
+    {
+      "id": "1806-O06",
+      "target": "A_out y K_C",
+      "severity": "BLOQUEO_DE_ADMISION_DE_LA_LEY_FIJADA",
+      "objection": "La identificación de F_src con las coordenadas libres exteriores o con el dominio K_C saltaría los cambios de variables y las restricciones reales.",
+      "disposition": "El input evita ese salto. El puente completo permanece abierto.",
+      "falsifier": "Cualquier conclusión posterior que declare A_out=F_src sin la reconstrucción no lineal y el lift de constraints no se sigue de esta evaluación."
+    },
+    {
+      "id": "1806-O07",
+      "target": "Hipótesis del mínimo y dominios de la media",
+      "severity": "LIMITE_DE_AUDITORIA_FUENTE",
+      "objection": "(2.12) contiene regularidad y remite a una teoría variacional; identificar sus datos no verifica sus hipótesis en todos los sectores.",
+      "disposition": "Mantener el sector y dominio fuente en Phi_X, sin extenderlos o reemplazarlos. No se declara una solución regular para todo dato exterior arbitrario."
+    }
+  ],
+  "relation_to_frozen_1801_1805": {
+    "principle": "Los informes cerrados siguen describiendo exactamente la evidencia que evaluaron. Este informe no los modifica; declara el alcance añadido exclusivamente por la nueva definición fuente.",
+    "O01_exterior_binding": "La parte relativa al exterior bruto de CMP119 se paga ahora por(2.2) y su vínculo al primer paso. La parte relativa al F efectivo de la ley1559 sigue abierta.",
+    "O02_joint_rows_and_exterior": "La lista fuente I/J/F_src queda vinculada mediante(2.2), (0.1) y la eliminación de I. La identificación con el kernel libre posterior de la ley fijada sigue abierta.",
+    "O03_cell_boolean_scope": "Se conserva como condición: celdas completas/sitios, no caras aisladas.",
+    "O04_periodic_compatibility": "Se conserva íntegra: mismo toro, divisibilidad, alineación y representantes independientes.",
+    "O05_sufficient_versus_necessary": "No se convierte en bicondicional abstracto. La nueva definición identifica el F de esta fuente; sigue siendo falso que tal complemento sea la única manera lógica posible de dejar pivotes libres en cualquier otro problema.",
+    "1805_cross_source_limits": "No se transportan operadores, dominios ampliados, constantes o pruebas dimensionales desde el antecedente. El nuevo vínculo es interno a CMP119/CMP109.",
+    "prior_reports_unchanged": true
+  },
+  "what_gate_is_actually_paid": {
+    "paid": [
+      "La convención fuente para el complemento de bonds finos en el primer paso",
+      "La identificación conjunta F_src=E0\\A e I=E_coarse(X)",
+      "La partición exhaustiva J=E1\\I de las restricciones originales",
+      "La asignación de los cruces gruesos a I y de los cruces finos a A",
+      "La disponibilidad bruta de beta(I) y su coherencia con los pivotes eliminados por la fuente",
+      "El soporte de M_J^F y el significado débil operacional del delta exterior comprimido"
+    ],
+    "not_paid": [
+      "Correspondencia completa entre links de grupo brutos y coordenadas libres posteriores",
+      "A_out, K_C, soporte y operadores marcados de la ley1559 en un único sistema de coordenadas",
+      "Inversos no planos, Haar/Lie, delta, determinantes, escala y jacobiano compuesto",
+      "Un kernel físico normalizado, logZ o denominador no nulo",
+      "Suma marcada conexa, historia, source190/Hsharp, P1 o ventana uniforme de parámetros"
+    ],
+    "next_bounded_requirement": "Vincular la reconstrucción no lineal ORIGINAL y los pivotes seleccionados con las coordenadas libres reales, sus factores de medida, el dominio K_C sin alterarlo y las inserciones originales. No basta otra capa de lemas de norma o covarianza."
+  },
+  "verification": {
+    "method": "Hashing de archivos, extracción de páginas fuente locales, inspección visual en memoria de las fórmulas decisivas, comparación de tipos y prueba directa por tests de la identidad gráfica. No se usó un experimento numérico como prueba.",
+    "input_and_declared_source_hashes_match": true,
+    "law_and_manuscript_hashes_match": true,
+    "full_source_theorem_audit_claimed": false,
+    "no_additional_reviewer": true,
+    "no_score": true,
+    "no_restart": true,
+    "no_new_manuscript_or_pdf": true,
+    "only_requested_json_authored": true
+  },
+  "final_statement": "La nueva evidencia sí cierra el vínculo de índices brutos F_src/I/J para el primer paso de la propia fuente física CMP119, bajo su geometría compatible y con la corrección menor sobre qué bloque extremo está dentro. No queda reducido a un préstamo condicional del antecedente: hay definición tipada y enlace explícito al primer paso. La identidad de separación del delta es aceptada débilmente en todo V sobre el mismo dominio fuente. Nada de ello identifica el exterior libre A_out ni paga el puente a LAW1559/K_C, los inversos no planos, candidate1642 o una conclusión física. Los informes1801/1805, el manuscrito, la ley y todos los demás estados permanecen intactos."
+}

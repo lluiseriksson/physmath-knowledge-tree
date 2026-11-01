@@ -1,0 +1,464 @@
+{
+  "schema_version": "1.0",
+  "execution": 1805,
+  "assessment_type": "Una sola evaluación nueva y completa del input congelado CITED-EXTERIOR-PRODUCT1805, sin nota ni reinicio",
+  "created_at_utc": "2026-11-01T00:31:36Z",
+  "input": {
+    "path": "C:\\Trabajo\\airr\\2026-11-01_execution1805\\CITED-EXTERIOR-PRODUCT1805.json",
+    "expected_sha256": "32c61b5992059f1506165cd3288d1ec33261df9763bef037c5755c605a6e74a2",
+    "observed_sha256": "32c61b5992059f1506165cd3288d1ec33261df9763bef037c5755c605a6e74a2",
+    "hash_verified": true,
+    "modified": false
+  },
+  "reviewer_configuration": {
+    "requested_model": "Astra",
+    "requested_reasoning_effort": "xhigh",
+    "effective_model_identity": "NO_AUTENTICADA",
+    "effective_reasoning_effort": "NO_AUTENTICADO",
+    "independence": "NO_AUTENTICADA",
+    "qualification": "La solicitud Astra/xhigh se registra como configuración solicitada. No certifico la identidad efectiva del modelo, el esfuerzo efectivo ni la independencia de este revisor.",
+    "additional_reviewers_spawned": false,
+    "review_restarted": false,
+    "assessment_count_for_this_input": 1
+  },
+  "scope": {
+    "assessed": [
+      "Toda la derivación del input1805 y sus límites declarados.",
+      "Nueva evidencia primaria de CMP102, 255-275, Sect. A, especialmente las fórmulas (12)-(22).",
+      "Producto exterior b' contenido en Omega1^c frente a levantamiento incidente del complemento.",
+      "Diccionario geométrico condicional I/J, inclusión de las filas de cruce y soporte exterior de la media elegida.",
+      "Alcance documental de las remisiones de CMP119(1.11)-(1.15) y diferencias de promedios, gauge, dominio y normalizaciones.",
+      "Lo que falta para vincular F, I/J y la ley física fijada."
+    ],
+    "not_assessed": [
+      "Reapertura o recalificación de la evaluación1801.",
+      "Manuscrito completo, PDF del manuscrito, Capacity o una nota nueva.",
+      "Auditoría completa de los teoremas de estabilidad ultravioleta o de convergencia.",
+      "Una nueva elección de media, pivotes, toro, mínimo, gauge, cutoff o referencia.",
+      "Prueba de invertibilidad uniforme no plana, P1 o normalización física no nula."
+    ],
+    "prior_context_read": {
+      "path": "C:\\Trabajo\\airr\\2026-11-01_execution1801\\ASSESSMENT1801.json",
+      "sha256": "ef7fba8a2422a7f33ecda7809ad5a2ccd3e3d433d28bdccfe56356837fbbe4dc",
+      "purpose": "Conservar el dominio condicional de los 15 componentes y las cinco objeciones ya cerradas. No se reejecutaron sus pruebas o verificaciones finitas ni se modificó su disposición.",
+      "assessment1801_reopened": false,
+      "input1801_opened": false
+    },
+    "source_pdfs_copied": false,
+    "corpus_copied": false,
+    "rendered_pages_written_to_disk": false,
+    "manuscript_changed": false,
+    "law_or_project_state_changed": false,
+    "only_output_written": "C:\\Trabajo\\airr\\2026-11-01_execution1805\\ASSESSMENT1805.json",
+    "physical_admission": false,
+    "score_given": false
+  },
+  "overall_disposition": {
+    "status": "NUEVA_EVIDENCIA_PRIMARIA_EXTERIOR_1985_ACEPTADA; DICCIONARIO_I_J_CONDICIONAL_ACEPTADO; F_Y_VINCULACION_FISICA_CONJUNTA_ABIERTOS",
+    "summary": "El producto exterior contenido en Omega1^c es legible y explícito en CMP102: aparece ya en (13), p259, y se conserva en (18), p260, y (22), p261. Para la geometría compatible de celdas completas, su lectura como filas totalmente exteriores tiene el diccionario condicional J=E_coarse\\I, con I incidente y todas las filas de cruce en I. La operación de integración de 1985 aporta evidencia adicional para un complemento de variables finas, pero ni sus símbolos ni la remisión posterior autentican por sí solos el F de la ley1559. CMP119 escribe igualdades para su propia construcción; ello no identifica sus kernels con la cota ampliada de 1985 ni con el cutoff físico fijado. La disposición conservadora propuesta es sustancialmente correcta, con las precisiones de localizador y notación registradas abajo.",
+    "accepted": [
+      "Existe nueva evidencia primaria explícita de un producto grueso exterior indexado por contención del bond.",
+      "No es lícito reemplazar ese índice por el levantamiento incidente del complemento continuo sin una demostración que preserve los conjuntos.",
+      "El diccionario J totalmente exterior e I incidente es válido bajo las hipótesis geométricas conservadas de1801.",
+      "Las filas de cruce pertenecen a I; no se eliminan ni se pasan automáticamente al delta exterior.",
+      "Bajo F=E_fine_total\\E_fine(X), el soporte bruto de cada fila J de cualquiera de las dos medias físicas consideradas separadamente queda en V0.",
+      "La remisión de CMP119 transmite antecedentes y métodos concretos de la construcción, pero no una identidad automática de operaciones, dominios, índices o constantes.",
+      "Deben conservarse densidad de Haar, determinante no lineal, factores de delta, escala y eliminación de pivotes."
+    ],
+    "not_admitted": [
+      "Identificación del F físico original.",
+      "Identificación conjunta y exhaustiva de las filas I/J efectivas de CMP119 y de la ley1559.",
+      "Disponibilidad física de todos los pivotes de cruce en la integral fijada.",
+      "Igualdad de kernels o de dominios entre CMP102, CMP119 y la ley física actual.",
+      "Traslado de Q, h, D, gauge, cutoff o constantes desde1985 como objetos idénticos.",
+      "Un teorema físico en cuatro dimensiones obtenido del resultado tridimensional de1985.",
+      "Invertibilidad uniforme no plana de A_c, integral condicional normalizada o denominador no nulo."
+    ],
+    "explicit_1985_exterior_product_verified": true,
+    "conditional_geometric_dictionary_accepted": true,
+    "actual_F_identified": false,
+    "actual_CMP119_I_J_partition_fully_authenticated": false,
+    "actual_current_law_I_J_partition_fully_authenticated": false,
+    "source_theorem_refuted": false,
+    "physical_admission": false,
+    "source_candidate_counts_changed": false,
+    "score_given": false,
+    "material_refutation_of_narrow_proposal_found": false
+  },
+  "sources": [
+    {
+      "id": "CMP102_1985",
+      "path": "D:\\Cache\\airr-primary\\balaban-cmp102-255-275.pdf",
+      "doi": "10.1007/BF01229380",
+      "expected_sha256": "b10a444f8122d5e1b2999c54f120c647e33e5ad834943b00285b15bcf8d719f4",
+      "observed_sha256": "b10a444f8122d5e1b2999c54f120c647e33e5ad834943b00285b15bcf8d719f4",
+      "hash_verified": true,
+      "pdf_pages": 22,
+      "printed_article_pages": [
+        255,
+        275
+      ],
+      "printed_pages_read": [
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261,
+        262,
+        263,
+        264,
+        265,
+        274,
+        275
+      ],
+      "printed_pages_visually_inspected": [
+        258,
+        259,
+        260,
+        261
+      ],
+      "complete_relevant_section_read": "Sect. A, desde p257 hasta el inicio de Sect. B en p265.",
+      "last_pdf_page": "La página22 no devuelve texto; la paginación del artículo termina en275, página21. No se usa la última página como evidencia.",
+      "use": "Fuente primaria nueva para la operación de1985; no auditoría del resto del teorema."
+    },
+    {
+      "id": "CMP119",
+      "path": "C:\\Users\\lluis\\Documents\\CodexYangMillsAutopilot\\runtime\\sources\\primary\\balaban-convergent-cmp119-from-fusion.pdf",
+      "expected_sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+      "observed_sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+      "hash_verified": true,
+      "printed_pages_read": [
+        243,
+        244,
+        245,
+        247,
+        248,
+        249,
+        250,
+        284,
+        285
+      ],
+      "printed_pages_visually_inspected": [
+        248,
+        249
+      ],
+      "use": "Comparación de las operaciones de primera escala y alcance de la remisión; p284 apareció como contexto de la bibliografía y no se usa para certificar ningún resultado."
+    },
+    {
+      "id": "CMP109_AUXILIAR",
+      "path": "C:\\Users\\lluis\\Documents\\CodexYangMillsAutopilot\\runtime\\sources\\primary\\balaban-rg-I-cmp109-1104116842.pdf",
+      "observed_sha256": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+      "printed_pages_read": [
+        251,
+        252,
+        253,
+        254,
+        299,
+        300,
+        301
+      ],
+      "use": "Verificación restringida de las dos medias (0.4)/(0.12), de su modificación respecto de CMP98 y de la cadena bibliográfica [16]. No reabre1801."
+    },
+    {
+      "id": "LAW_BINDING1559",
+      "path": "C:\\Trabajo\\airr\\2026-10-31_execution1559\\LAW-BINDING1559.json",
+      "expected_sha256": "a78244cb62773f907346968b16470892a00f1405219d0e9752f17b578af806dd",
+      "observed_sha256": "a78244cb62773f907346968b16470892a00f1405219d0e9752f17b578af806dd",
+      "hash_verified": true,
+      "finding": "Fija K_C/C_delta y beta_ref, y conserva abierta la identificación histórica de E1; no enumera ni define inequívocamente F, I y J."
+    }
+  ],
+  "auxiliary_source_limit": {
+    "local_path_inspected": "C:\\Users\\lluis\\Documents\\CodexYangMillsAutopilot\\runtime\\sources\\primary\\cmp98-averaging.pdf",
+    "observed_sha256": "a3f29c49f88b8b4797df856d8e2b38df4d2617be3e15b3243c6948285a762558",
+    "result": "El archivo local tiene una página de fallo de acceso; no contiene el artículo CMP98. No se utilizó como fuente matemática ni se reemplazó.",
+    "consequence": "La referencia exacta a (89)/(63) y a (124) de CMP98 queda verificada directamente en CMP102 p259, y la diferencia de definiciones queda corroborada por CMP109 pp252-254. No se afirma haber rederivado aquí las fórmulas (63), (89) o (124) a partir de su artículo completo."
+  },
+  "evidence_chain": [
+    {
+      "locator": "CMP102 p258, (8)-(12)",
+      "observed": "La descomposición conserva factores de región; (10) es una igualdad con la restricción gruesa original y gauge axial. (12) fija U=V0 en el exterior y la media gruesa en Omega1^(1).",
+      "limit": "'Media dentro' no significa necesariamente filas con ambos extremos interiores. La lista activa completa debe tiparse y puede incluir cruces."
+    },
+    {
+      "locator": "CMP102 p259, párrafo previo a (13) y (13)",
+      "observed": "El autor amplía expresamente el dominio de fluctuación y escribe una cota superior. El primer producto exterior visible ya tiene índice b' contenido en Omega1^c.",
+      "mathematical_reading": "Producto sobre bonds gruesos cuya contención en el complemento se exige; no producto sobre todos los bonds que meramente tocan ese complemento.",
+      "limit": "No se obtiene igualdad con el kernel de partida tras la ampliación."
+    },
+    {
+      "locator": "CMP102 p259, texto tras (13), (14)-(16)",
+      "observed": "Se fija U'=1 y U1=V0 fuera. La fórmula (14) expresa el promedio relativo al fondo U1 y cita (89), o (63), de [4]; (15) cita el operador lineal (124); (16) conserva el factor sigma0^-1 por delta.",
+      "bibliographic_binding": "[4] es Averaging operations for lattice gauge theories, CMP98,17-51, según CMP102 p274."
+    },
+    {
+      "locator": "CMP102 p260, (17)-(18)",
+      "observed": "La corrección no lineal se apoya en el b0(c) original; aparecen el determinante de la transformación, sigma/sigma0 evaluada en el campo transformado, delta(QA), gauge axial y cutoff. El producto b' contenido en Omega1^c permanece fuera de la integral de fluctuación.",
+      "limit": "No identifica el operador no plano físico, sus cotas uniformes ni el jacobiano compuesto actual."
+    },
+    {
+      "locator": "CMP102 p261, (20)-(22)",
+      "observed": "Se exponentian determinante y densidad de Haar y se reescala A por g0. El producto exterior permanece. (22) empieza con una desigualdad y después contiene una igualdad entre dos representaciones de su lado derecho.",
+      "limit": "La igualdad interna no revierte la ampliación del dominio ni restaura igualdad con la densidad original."
+    },
+    {
+      "locator": "CMP119 pp243-245 y CMP109 p299",
+      "observed": "CMP119 define la media mediante (0.4) o (0.12) de [I], remite la numeración de otras referencias a [I] y distingue explícitamente su descripción precisa de las cotas de[16]. [I] identifica [16] con CMP102,255-275.",
+      "limit": "La referencia es real y relevante, pero la segunda construcción incorpora modificaciones, entre ellas gauge y tratamiento de grandes campos."
+    },
+    {
+      "locator": "CMP119 p248, (1.11)-(1.13) y último párrafo",
+      "observed": "Se remite a (8)[16] para resumir, a Sect. A para la traslación U=U'U1 y a (14)-(18)[16] o las fórmulas correspondientes de[I] para expandir y linealizar. El funcional tiene el término G de gauge.",
+      "limit": "La frase que identifica el siguiente paso con Sect. A refiere una operación concreta; no declara que todos los datos o dominios de ambos artículos sean idénticos."
+    },
+    {
+      "locator": "CMP119 p249, (1.14)-(1.16)",
+      "observed": "La página escribe igualdades para rho1 y conserva un delta exterior comprimido delta(bar(V0)V^-1), junto a la restricción de dV0 a Omega1^c. Describe los pivotes de Omega1^(1), su eliminación, el recuento de variables, sigma, el determinante, la escala y z^(0).",
+      "limit": "En estos displays no aparece un producto exterior desplegado que enumere sus filas. Tampoco aparece literalmente un subíndice Omega1^(c,(1)) en ese delta."
+    }
+  ],
+  "components": [
+    {
+      "id": "N01",
+      "component": "Novedad y objeto congelado",
+      "verdict": "ACEPTADO",
+      "analysis": "El hash del input coincide exactamente. La fuente CMP102 recién disponible aporta información que no fue leída en1801, de modo que esta evaluación tiene un objeto nuevo. Consultar la disposición cerrada de1801 como contexto no altera sus 15 componentes ni sus cinco objeciones."
+    },
+    {
+      "id": "N02",
+      "component": "Lectura literal del índice exterior1985",
+      "verdict": "VERIFICADO_VISUALMENTE",
+      "analysis": "En (13), (18) y (22), el índice es b' contenido en Omega1^c. La prima identifica la fila gruesa y el símbolo expresa contención del bond. No es el índice b' perteneciente al levantamiento incidente del complemento. La hipótesis propuesta tiene así apoyo primario positivo, más fuerte que una mera ausencia de contraejemplo.",
+      "limit": "La transcripción literal no aporta por sí sola una definición completa del exterior fino ni una equivalencia de notaciones entre artículos."
+    },
+    {
+      "id": "N03",
+      "component": "Partición geométrica I/J",
+      "verdict": "CORRECTA_BAJO_LAS_HIPOTESIS_CONSERVADAS",
+      "analysis": "Sea X una unión de celdas gruesas completas de la partición compatible del toro. Un segmento grueso de vecinos solo recorre las dos celdas de sus centros extremos; por la alineación de caras no puede tocar otra celda seleccionada sin un extremo en ella. Por tanto c contenido en X^c equivale a c_- y c_+ fuera de X, y equivale a c no incidente en X. Para representantes independientes con orientación fija, I=E_coarse(X) y J={c:c contenido en X^c} son disjuntos y cubren todas las filas. Toda fila con un extremo dentro y otro fuera está en I.",
+      "limit": "Se conserva el dominio de1801: celdas completas, no caras aisladas; compatibilidad periódica, no periodos o particiones sustitutos."
+    },
+    {
+      "id": "N04",
+      "component": "Soporte de J para la media física fijada",
+      "verdict": "CONDICIONAL_VALIDO",
+      "analysis": "Bajo F=E_fine_total\\E_fine(X), los bloques de los dos centros de una fila J contienen solo sitios exteriores. Los contornos de CMP109(0.4) y (0.12) quedan en esos bloques y sus segmentos trasladados recorren solo su unión. Sus links brutos están por ello fuera de E_fine(X) y pertenecen a F. Fijada una de esas medias, su fila J depende solo de V0. Esta es la consecuencia de soporte ya aceptada en1801, aplicada al nuevo diccionario.",
+      "limit": "No se intercambian las dos medias en una misma ley. No se prueba independencia del mínimo U1, del determinante, de la acción o del resto de la densidad. Que el delta exterior dependa solo de V0 no permite suprimirlo de la integral exterior."
+    },
+    {
+      "id": "N05",
+      "component": "Lectura operativa del complemento fino",
+      "verdict": "EVIDENCIA_POSITIVA_CONDICIONAL",
+      "analysis": "La separación de dV0 en Omega1^c y de dU' o dA en Omega1, junto a U'=1 fuera, es coherente con una partición de los índices finos originales. Si se lee como una descomposición ordinaria de variables Haar independientes y exhaustivas, el conjunto exterior debe ser el complemento del conjunto interior integrado antes de eliminar restricciones. Esta coherencia favorece el complemento tipado por variables.",
+      "limit": "No constituye una nueva definición explícita del conjunto de bonds denotado por cada símbolo. Tampoco demuestra que el conjunto interior efectivo de la ley1559 sea E_fine(X). La inferencia presupone la lectura de variables independientes; una convención con variables compartidas requeriría condiciones de identificación adicionales."
+    },
+    {
+      "id": "N06",
+      "component": "Bonds finos y filas gruesas de cruce",
+      "verdict": "FALSIFICADOR_DE_SOLAPAMIENTO_CONSERVADO",
+      "analysis": "Un bond fino que cruza una cara tiene un extremo en X y otro en el complemento. Pertenece a ambos levantamientos incidentes E_fine(X) y E_fine(X_continuous^c). No pertenece al complemento por bonds de E_fine(X). Interpretar simultáneamente ambos factores de medida como conjuntos independientes incidentes duplicaría ese índice. En escala gruesa, el mismo cruce pertenece a I y no a J.",
+      "limit": "Esto falsifica una interpretación simultánea de las notaciones, no el teorema de la fuente. La geometría no autoriza elegir F a conveniencia."
+    },
+    {
+      "id": "N07",
+      "component": "Qué transmite la remisión de CMP119",
+      "verdict": "METODO_Y_ANTECEDENTE_VERIFICADOS; IDENTIDAD_DE_INDICES_PENDIENTE",
+      "analysis": "Las remisiones verificadas vinculan la resuma, la traslación al mínimo, la expansión de las restricciones y la linealización con Sect. A. El producto explícito del antecedente elimina la afirmación de que ninguna operación citada muestra una restricción totalmente exterior. Además, la descripción de los pivotes y recuentos de CMP119 es evidencia operativa concordante. Sin embargo, la media de CMP119 se define por CMP109 y su gauge y restricciones se modifican. La remisión no equivale a una enumeración conjunta de I, J y F ni prueba que esas modificaciones preserven la misma lista en la instancia física.",
+      "limit": "La lectura heredada es plausible y está documentada; no se promociona a igualdad de conjuntos autenticada ni a resultado físico."
+    },
+    {
+      "id": "N08",
+      "component": "Promedio relativo antiguo y media física",
+      "verdict": "SEPARACION_NECESARIA_Y_RESPETADA",
+      "analysis": "CMP102(14) linealiza una expresión relativa al fondo U1 con la definición antigua y las condiciones de gauge. CMP109 pp252-254 modifica las definiciones para preservar simetría euclídea y ofrece (0.4) y (0.12); CMP119 p243 adopta esas opciones. Que CMP109 declare transportables propiedades y resultados bajo modificaciones no demuestra identidad puntual de mapas, operadores o jacobianos. Para la ley fijada deben derivarse el Q, h y D de su propia media y gauge.",
+      "limit": "No se afirma que los resultados antiguos sean inutilizables ni que haya contradicción entre fuentes. Se exige verificar el transporte correspondiente, especialmente para coeficientes y cotas no planas."
+    },
+    {
+      "id": "N09",
+      "component": "Desigualdad, ampliación e identidades",
+      "verdict": "DISTINCION_CORRECTA_CON_PRECISION",
+      "analysis": "CMP102(10) es una igualdad antes de ampliar el dominio; (13), (18) y el inicio de(22) son cotas superiores. Los cambios de variables o las igualdades entre expresiones del lado derecho no devuelven el dominio descartado. CMP119(1.14)-(1.15), en cambio, imprime igualdades de su construcción propia. Ninguno de esos hechos identifica el kernel1985 ampliado con el kernel posterior o con el dominio fijo K_C.",
+      "limit": "No debe describirse toda fórmula posterior o todo paso de CMP119 como una desigualdad. La advertencia del input se acepta referida a las cotas sucesoras de(13) respecto del kernel original1985."
+    },
+    {
+      "id": "N10",
+      "component": "Medida y jacobiano compuesto",
+      "verdict": "FACTORES_PRIMARIOS_PRESENTES; VINCULACION_ACTUAL_NO_PROBADA",
+      "analysis": "La fuente mantiene sigma(A') en Haar/Lie, sigma0^-1 por delta en(16), det(I-dD/dA), la densidad evaluada en A-D, las restricciones y el factor de escala dependiente de d(g) y del número de grados libres. CMP119 añade la eliminación de pivotes y z^(0) en su propia representación. Estos factores son obligaciones de una composición completa, no permisos para omitir alguno.",
+      "limit": "El informe no calcula el determinante no plano físico ni certifica el prefactor o jacobiano final de la ley1559."
+    },
+    {
+      "id": "N11",
+      "component": "Dimensión, acoplamiento y cutoff",
+      "verdict": "NO_TRANSPORTABLE_COMO_RESULTADO_FISICO",
+      "analysis": "El artículo1985 prueba un resultado tridimensional y usa g0=g sqrt(epsilon) para que ciertos errores sean potencias positivas de epsilon; Sect. A lo usa expresamente. CMP119 p244 distingue este caso de cuatro dimensiones y de su problema de grandes campos. La geometría local puede ser independiente de la dimensión, pero ese argumento no transporta el power counting, los errores, las constantes ni el dominio ampliado al esquema fijo K_C/beta_ref.",
+      "limit": "No se cambia la ley para hacer aplicable un teorema fuente. La identificación de K_C y el control de sus diferencias siguen pendientes."
+    },
+    {
+      "id": "N12",
+      "component": "Falsificadores propuestos",
+      "verdict": "CORRECTOS_CON_ALCANCE_EXPLICITO",
+      "analysis": "Si una definición aplicable de la fuente posterior coloca una fila gruesa de cruce en el delta exterior retenido, falla la identificación de ese delta con J. Deberá analizarse su soporte conjuntamente con las variables interiores o demostrarse por separado una independencia especial; no basta llamarla exterior. Si el conjunto fino exterior comparte un índice original con el integrado, falla la lectura como producto de Haar independientes sin condiciones de identificación.",
+      "limit": "Una dependencia interior posible no es un teorema de dependencia no nula para toda configuración excepcional. Estos falsificadores atacan la partición propuesta, no prueban por sí solos un fallo del artículo."
+    },
+    {
+      "id": "N13",
+      "component": "Estado de la ley y obligaciones restantes",
+      "verdict": "ABIERTAS_Y_NO_RESUELTAS",
+      "analysis": "LAW-BINDING1559 no aporta los índices I/J/F. La nueva lectura no resuelve A_c no plano, identificación de K_C, un solo jacobiano Haar/Lie/escala compuesto, gauge físico/source190/Hsharp, P1, amplitudes de acoplamiento, absorciones simultáneas, normalización marcada conexa ni historia. La lista del input se conserva como tareas pendientes, sin certificar sus resultados ni cambiar sus estados."
+    }
+  ],
+  "inherited_1801_objections": [
+    {
+      "id": "O01",
+      "issue": "F original no vinculado; disponibilidad condicional.",
+      "effect_of_new_evidence": "La separación operativa de1985 añade apoyo, pero no identifica F en la ley1559.",
+      "disposition": "SE_CONSERVA_ABIERTA_COMO_BLOQUEO_DE_ADMISION_FISICA"
+    },
+    {
+      "id": "O02",
+      "issue": "Partición efectiva del delta exterior posterior y filas activas no vinculadas conjuntamente.",
+      "effect_of_new_evidence": "Se acredita una restricción exterior explícita en el antecedente citado; no la lista completa de CMP119 o de la ley actual.",
+      "disposition": "SE_CONSERVA_ABIERTA; NO_SE_BORRA_POR_LA_REMISION"
+    },
+    {
+      "id": "O03",
+      "issue": "Las operaciones booleanas y la incidencia deben permanecer en el ámbito de celdas completas o sus conjuntos de sitios.",
+      "effect_of_new_evidence": "Ninguno que amplíe el dominio del lema. Las caras aisladas siguen siendo contraejemplos a una formulación más amplia.",
+      "disposition": "SE_CONSERVA_COMO_CONDICION_DE_TIPO"
+    },
+    {
+      "id": "O04",
+      "issue": "Compatibilidad periódica, divisibilidad y alineación de las particiones.",
+      "effect_of_new_evidence": "Las regiones fuente son compatibles, pero la nueva lectura no verifica los índices de una instancia física adicional.",
+      "disposition": "SE_CONSERVA_COMO_HIPOTESIS_DE_INSTANCIACION"
+    },
+    {
+      "id": "O05",
+      "issue": "F=E_total\\E_fine(X) es hipótesis suficiente del argumento, no condición necesaria abstracta para liberar pivotes.",
+      "effect_of_new_evidence": "El input1805 la formula correctamente como convención suficiente; no se convierte en bicondicional.",
+      "disposition": "SE_CONSERVA_COMO_PRECISION_LOGICA"
+    }
+  ],
+  "new_adversarial_objections": [
+    {
+      "id": "1805-O01",
+      "severity": "BLOQUEO_DE_VINCULACION_FISICA",
+      "target": "CROSS-SOURCE LIMIT y OPERATIONAL FINE SPLIT",
+      "issue": "La coherencia de una integración independiente no enumera automáticamente los bonds de la ley fija.",
+      "resolution_needed": "Definiciones aplicables al primer paso o un listado de índices que establezca, conjuntamente, cobertura y disjunción de variables finas originales, de filas gruesas y de pivotes.",
+      "disposition": "La propuesta reconoce la limitación; se admite evidencia documental, no F físico."
+    },
+    {
+      "id": "1805-O02",
+      "severity": "PRECISION_DOCUMENTAL",
+      "target": "Frase sobre la notación posterior Omega1^(c,(1))",
+      "issue": "En las imágenes de CMP119(1.14)-(1.15) no se imprime ese subíndice en el delta. Se ve delta(bar(V0)V^-1), con la restricción exterior en dV0; su lista gruesa está implícita.",
+      "resolution_needed": "Presentar Omega1^(c,(1)) como expansión interpretativa pendiente o aportar el localizador exacto donde esa notación se defina. No atribuirla literalmente a estos displays.",
+      "disposition": "Corrección de descripción; fortalece la cautela del input y no refuta su conclusión."
+    },
+    {
+      "id": "1805-O03",
+      "severity": "PRECISION_DOCUMENTAL_MENOR",
+      "target": "Localización del producto y de U'=1 fuera",
+      "issue": "El producto exterior ya está en p259(13), y el texto U'=1, U1=V0 fuera está en p259. P260 conserva y desarrolla esa operación.",
+      "resolution_needed": "Citar p259(13), además de p260(18) y p261(22), y localizar allí la condición exterior.",
+      "disposition": "No cambia el resultado."
+    },
+    {
+      "id": "1805-O04",
+      "severity": "BLOQUEO_DE_IGUALDAD_ENTRE_KERNELS",
+      "target": "Uso de las fórmulas1985 y la remisión posterior",
+      "issue": "Ni una igualdad dentro del lado derecho de(22), ni las igualdades propias de CMP119, pagan la diferencia de dominios tras la ampliación1985 o respecto de K_C.",
+      "resolution_needed": "Para una identificación de kernels, conservar exactamente restricciones, variables, medida y argumentos o probar un control explícito de la diferencia bajo la ley fija.",
+      "disposition": "No se reclama esa identificación; permanece prohibida por esta evaluación."
+    },
+    {
+      "id": "1805-O05",
+      "severity": "BLOQUEO_DE_TRANSPORTE_DE_OPERADORES",
+      "target": "Q, h/D y media elegida",
+      "issue": "La localidad geométrica compartida no identifica la derivada no plana de promedios distintos ni el gauge correspondiente.",
+      "resolution_needed": "Derivar o verificar el mapa real y su jacobiano para la media física seleccionada, sin sustituirla por el promedio relativo antiguo.",
+      "disposition": "Se acepta la cautela del input; no se certifican operadores físicos."
+    },
+    {
+      "id": "1805-O06",
+      "severity": "LIMITE_DE_SOPORTE",
+      "target": "Afirmación de que las filas J dependen solo de V0",
+      "issue": "La afirmación solo cubre el mapa de promedio sobre sus links brutos. No factoriza toda la densidad ni elimina la dependencia exterior del minimizador o de los coeficientes.",
+      "resolution_needed": "Mantener explícito ese alcance en cualquier integración futura y conservar el delta exterior en su integral.",
+      "disposition": "La afirmación local se acepta; cualquier factorización adicional requiere prueba distinta."
+    }
+  ],
+  "precise_conditional_dictionary": {
+    "hypotheses": [
+      "X es unión de celdas gruesas completas de una partición alineada y compatible con el toro fijado.",
+      "Los bonds son segmentos de vecinos y se elige una sola variable por orientación independiente.",
+      "Las medias físicas se consideran por separado, con sus caminos y parámetros fijados.",
+      "El conjunto de links finos fijados se supone igual a F=E_fine_total\\E_fine(X); todavía no se afirma que sea el F efectivo."
+    ],
+    "definitions": {
+      "I": "{c: c intersecta X} = {c: c_- pertenece a X o c_+ pertenece a X}",
+      "J": "{c: c está contenido en X_continuous^c} = {c: ambos centros extremos están fuera de X}",
+      "F_sufficient": "E_fine_total\\E_fine(X)"
+    },
+    "conclusions": [
+      "I y J son disjuntos y exhaustivos para las filas gruesas independientes.",
+      "Toda fila de cruce está en I.",
+      "Los pivotes originales beta(I) están en E_fine(X) y, bajo la hipótesis suficiente sobre F, no están fijados.",
+      "El soporte de links brutos de las filas J de las medias locales publicadas está en F."
+    ],
+    "nonconclusions": [
+      "No se identifica F_sufficient con F_actual.",
+      "No se identifica automáticamente J con la lista implícita posterior.",
+      "No se prueba rango uniforme, invertibilidad o factor de normalización.",
+      "No se sustituye la media, el gauge, el mínimo, K_C, beta_ref o el toro."
+    ]
+  },
+  "next_required_evidence": [
+    {
+      "order": 1,
+      "requirement": "Fijar el conjunto fino integrado y su exterior en la misma operación física.",
+      "acceptance_criterion": "Definición o listado aplicable de bonds originales, con disjunción y cobertura; los cruces se asignan una sola vez y los pivotes originales permanecen disponibles donde se reclama."
+    },
+    {
+      "order": 2,
+      "requirement": "Vincular todas las filas activas y el delta exterior posterior.",
+      "acceptance_criterion": "Mostrar que cada fila original queda exactamente una vez en I o J, y que las modificaciones CMP119 conservan esa partición; si hay filas de cruce exteriores, analizar su dependencia conjunta."
+    },
+    {
+      "order": 3,
+      "requirement": "Mantener la media, el gauge, el mínimo, K_C y beta_ref de la ley fijada.",
+      "acceptance_criterion": "Un puente explícito entre los objetos de la fuente y los de la instancia, sin usar la ampliación1985 como igualdad ni intercambiar promedios."
+    },
+    {
+      "order": 4,
+      "requirement": "Componer los cambios de variables reales y sus factores.",
+      "acceptance_criterion": "Incluir Haar/Lie, transformación no lineal, deltas, eliminación de pivotes, escala y restricciones sobre los mismos índices; resolver las cotas del A_c no plano por separado."
+    },
+    {
+      "order": 5,
+      "requirement": "Conservar las demás obligaciones físicas abiertas.",
+      "acceptance_criterion": "Ninguna promoción por esta evidencia geométrica de P1, source190/Hsharp, acoplamiento, absorciones, normalización marcada conexa o historia."
+    }
+  ],
+  "verification": {
+    "method": "Lectura de fuentes locales, comparación de fórmulas y de referencias, inspección visual en memoria con Poppler y argumento lógico tipado; no nueva prueba numérica ni reejecución de1801.",
+    "critical_visual_checks": [
+      "b' contenido en Omega1^c en CMP102(13), (18) y (22).",
+      "Desigualdad inicial y posterior igualdad interna de CMP102(22).",
+      "Dominio ampliado y condición exterior de CMP102 p259.",
+      "Factores de medida y determinante en CMP102(18)-(22).",
+      "Igualdades, delta comprimido y recuento de pivotes de CMP119(1.14)-(1.15)."
+    ],
+    "hash_checks": "Coinciden el input, ambas fuentes principales y LAW-BINDING1559 con los hashes declarados.",
+    "no_source_theorem_audit_claimed": true,
+    "no_score": true,
+    "no_restart": true,
+    "no_additional_reviewer": true,
+    "only_requested_json_authored": true
+  },
+  "final_statement": "Se admite como evidencia primaria nueva el producto grueso exterior literal de1985 y, bajo las hipótesis expresas conservadas, el diccionario geométrico I/J que incluye los cruces en I. No se admite F físico, igualdad de kernels, identificación completa de los índices posteriores ni resultado físico. Se conservan las cinco objeciones1801 y todas las obligaciones pendientes de la ley fijada. No se emite nota ni se reabre1801."
+}

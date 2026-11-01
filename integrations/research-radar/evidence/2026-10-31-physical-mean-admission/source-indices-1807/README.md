@@ -1,0 +1,3 @@
+# Physical-source index evidence
+
+[manifest.json](manifest.json) binds the three exact own inputs and complete reports1801,1805,1806. All adverse findings and the original frozen wording remain intact. Only1806 pays the source raw-index gate, using new evidence; it does not admit the fixed-law free-coordinate/domain bridge. Preserve whole-cell/periodic hypotheses, entering-row endpoint correction, weak joint graph interpretation, and all original measure factors. Requested Astra/xhigh, sequential separate contexts, effective identity/effort/external independence unauthenticated. No score, peer review, manuscript/PDF assessment or new paper. No source body, private manuscript body, corpus or credential is delivered.

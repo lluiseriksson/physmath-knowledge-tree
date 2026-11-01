@@ -1,0 +1,352 @@
+{
+  "schema_version": "1.0",
+  "execution": 1801,
+  "assessment_type": "Una sola evaluación completa del input geométrico congelado, sin nota",
+  "created_at_utc": "2026-11-01T00:15:44.400170+00:00",
+  "input": {
+    "path": "C:\\Trabajo\\airr\\2026-11-01_execution1801\\PHYSICAL-CENTER-GEOMETRY1801.json",
+    "expected_sha256": "8b18436367f39e0af0c6668828564add62126f012a4f9cd39de29a2bf34fe8bb",
+    "observed_sha256": "8b18436367f39e0af0c6668828564add62126f012a4f9cd39de29a2bf34fe8bb",
+    "hash_verified": true,
+    "modified": false
+  },
+  "reviewer_configuration": {
+    "requested_model": "Astra",
+    "requested_reasoning_effort": "xhigh",
+    "effective_model_identity": "NO_AUTENTICADA",
+    "effective_reasoning_effort": "NO_AUTENTICADO",
+    "independence": "NO_AUTENTICADA",
+    "qualification": "La configuración solicitada se declara como solicitud, no como identidad o esfuerzo efectivos comprobados. Este informe tampoco certifica independencia del revisor.",
+    "additional_reviewers_spawned": false,
+    "review_restarted": false
+  },
+  "scope": {
+    "assessed": [
+      "Derivación completa del input1801",
+      "Coordenadas centradas y cocientes periódicos",
+      "Inyectividad de los pivotes b0(c) originales",
+      "Compatibilidad de bloques y dominios",
+      "Incidencia de bonds y filas interiores/de cruce",
+      "Soporte de las filas puramente exteriores bajo hipótesis tipadas",
+      "Diferencia entre complemento geométrico y complemento en el conjunto de bonds",
+      "Alcance de la evidencia primaria citada y de la vinculación de la ley"
+    ],
+    "not_assessed": [
+      "Revisiones anteriores",
+      "Manuscrito completo",
+      "Capacity",
+      "Auditoría completa de los teoremas de los artículos fuente",
+      "Invertibilidad uniforme no plana de A_c",
+      "Prueba de admisión física",
+      "Resolución del exterior físico real F",
+      "Reapertura de P1",
+      "Normalizador o denominador no nulo",
+      "Evaluación con nota"
+    ],
+    "prior_assessments_opened": false,
+    "source_pdfs_copied": false,
+    "corpus_copied": false,
+    "only_output_written": "C:\\Trabajo\\airr\\2026-11-01_execution1801\\ASSESSMENT1801.json",
+    "law_or_state_changed": false
+  },
+  "overall_disposition": {
+    "status": "GEOMETRIA_ACEPTADA_BAJO_HIPOTESIS_EXPLICITAS_Y_SOPORTE_EXTERIOR_CONDICIONAL; F_REAL_NO_IDENTIFICADO; SIN_ADMISION_FISICA",
+    "summary": "No encuentro un error en la fórmula del pivote original, su inyectividad periódica ni su pertenencia al conjunto fino incidente para una unión de celdas compatibles como la Ω1 declarada por la fuente. La afirmación sobre filas puramente exteriores se demuestra para los caminos locales publicados cuando F es el complemento por bonds. El input mantiene correctamente abierta la identificación de ese F y de las filas exteriores originales. No se obtiene un resultado de integración de la ley física.",
+    "accepted_mathematical_content": [
+      "Fórmula de índices del b0(c) original en bloques centrados",
+      "Inyección de representantes positivos en el toro fuente bajo los periodos indicados",
+      "Saturación por bloques de los conjuntos de sitios de un dominio compatible",
+      "Equivalencia de incidencia y pertenencia de algún extremo para uniones de celdas completas",
+      "Inclusión beta(I) en E_fine(X), incluso para filas de cruce",
+      "Independencia respecto de variables finas interiores de las filas puramente exteriores para las medias locales publicadas, bajo F=E_total\\E_fine(X)",
+      "Contraejemplo de frontera a la conmutación de complemento geométrico y levantamiento incidente"
+    ],
+    "not_admitted": [
+      "F físico efectivo",
+      "Partición efectiva de todas las filas gruesas originales",
+      "Disponibilidad física efectiva de los pivotes en la integral fijada",
+      "Cambio de la ley, del cutoff, de la media, del toro o del gauge",
+      "Invertibilidad uniforme",
+      "Factorización o integral condicional puntual",
+      "Normalización no nula",
+      "Resultado físico"
+    ],
+    "actual_F_identified": false,
+    "actual_I_and_exterior_rows_jointly_bound": false,
+    "physical_admission": false,
+    "score_given": false,
+    "material_defect_in_narrow_geometric_lemma_found": false,
+    "wording_and_scope_qualifications_required": [
+      "Mantener las operaciones booleanas en la álgebra de celdas o conjuntos de sitios; no extender la equivalencia de incidencia a intersecciones geométricas que solo son caras.",
+      "Hacer explícita la compatibilidad con la identificación periódica cuando se instancie el lema.",
+      "Leer la condición sobre F como hipótesis suficiente de este argumento, no como necesidad lógica.",
+      "No identificar el delta exterior efectivo de (1.15) solo mediante la prueba de soporte de filas puramente exteriores."
+    ]
+  },
+  "source_verification": [
+    {
+      "id": "CMP109",
+      "path": "C:\\Users\\lluis\\Documents\\CodexYangMillsAutopilot\\runtime\\sources\\primary\\balaban-rg-I-cmp109-1104116842.pdf",
+      "expected_sha256": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+      "observed_sha256": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+      "hash_verified": true,
+      "printed_pages_read": [
+        251,
+        252,
+        253,
+        254,
+        257,
+        261,
+        262,
+        267
+      ],
+      "relevant_evidence": {
+        "251": "Sitios como centros de celdas, toro de semilado L^m, L impar mayor que 11, regiones por uniones de cubos y levantamiento incidente a bonds.",
+        "252": "Bloques B(y) por intersección del cubo centrado con la malla fina; contornos de coordenadas monótonas y segmento trasladado de c.",
+        "253-254": "Medias locales (0.4), (0.11), (0.12): todas sus entradas proceden de los contornos de los dos bloques extremos y del segmento grueso recto.",
+        "257": "Cubos M centrados en la malla de centros de escala compatible.",
+        "267": "b0(c) es el bond fino contenido en c que cruza entre B(c_-) y B(c_+). El papel posterior de h no prueba aquí invertibilidad física."
+      }
+    },
+    {
+      "id": "CMP119",
+      "path": "C:\\Users\\lluis\\Documents\\CodexYangMillsAutopilot\\runtime\\sources\\primary\\balaban-convergent-cmp119-from-fusion.pdf",
+      "expected_sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+      "observed_sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+      "hash_verified": true,
+      "printed_pages_read": [
+        244,
+        245,
+        247,
+        248,
+        249,
+        250
+      ],
+      "printed_pages_visually_inspected": [
+        248,
+        249
+      ],
+      "relevant_evidence": {
+        "244": "Remisión a la geometría y las operaciones de [I] y de [16].",
+        "245": "Compatibilidad mutua requerida entre las particiones utilizadas.",
+        "247": "(1.8) precisa bonds con al menos un extremo en el dominio y excluye b0(c) de las filas gruesas incidentes; (1.9) conserva esa operación.",
+        "248": "Ω1 se declara unión de cubos LMR1; (1.11)-(1.12) introducen V0 mediante restricción al exterior. No extraigo de esa notación por sí sola un orden inequívoco de complemento y levantamiento.",
+        "249": "(1.14)-(1.15) varían/eliminan los pivotes de Ω1^(1), descuentan su número y conservan un delta exterior. Esto respalda el papel operativo de los pivotes, sin vincular por sí solo el F concreto de la ley evaluada."
+      }
+    },
+    {
+      "id": "LAW-BINDING1559",
+      "path": "C:\\Trabajo\\airr\\2026-10-31_execution1559\\LAW-BINDING1559.json",
+      "expected_sha256": "a78244cb62773f907346968b16470892a00f1405219d0e9752f17b578af806dd",
+      "observed_sha256": "a78244cb62773f907346968b16470892a00f1405219d0e9752f17b578af806dd",
+      "hash_verified": true,
+      "purpose": "Comprobar únicamente la vinculación de ley aportada por el propio input, sin abrir una evaluación anterior.",
+      "finding": "Mantiene el cutoff K_C, la referencia beta_ref y las expresiones de acción/comparación, pero no enumera ni identifica los índices efectivos I, F o las filas del delta exterior."
+    }
+  ],
+  "components": [
+    {
+      "id": "C01",
+      "component": "Ámbito y conservación de la ley",
+      "verdict": "RESPETADO_COMO_RESTRICCION",
+      "analysis": "La derivación no necesita variar el grupo, la media, el campo de referencia, el cutoff ni el toro para probar sus afirmaciones geométricas. Tampoco puede certificar que todos esos objetos efectivos queden vinculados por este input: la vinculación aportada no contiene I/F. El alcance explícito y las exclusiones finales son adecuados. No he reabierto P1 ni leído su evaluación previa."
+    },
+    {
+      "id": "C02",
+      "component": "Coordenadas de los bloques centrados",
+      "verdict": "CORRECTO",
+      "analysis": "Con x_i=eta(i+1/2) y y_j=L eta(j+1/2), la celda gruesa centrada en y_j tiene caras L eta j y L eta(j+1). Los sitios finos contenidos en ella tienen índices Lj+s, 0<=s_mu<=L-1. Como L es impar, y_j es el sitio fino de índice Lj+h, h=(L-1)/2. Las caras tienen coordenadas enteras en unidades eta y no contienen centros finos, por lo que el uso de cubos cerrados no duplica sitios finos."
+    },
+    {
+      "id": "C03",
+      "component": "Identificación del b0(c) original",
+      "verdict": "CORRECTO_EN_LA_GEOMETRIA_FUENTE",
+      "analysis": "Para c=(j,mu) positivo, la recta de y_j a y_(j+e_mu) mantiene los índices transversales Lj_nu+h. El único bond de esta recta con un extremo en B(y_j) y otro en B(y_(j+e_mu)) comienza en i_mu=Lj_mu+L-1. Su extremo final es i+e_mu. Esto coincide con la caracterización de b0(c) en CMP109 p267; no es un pivote alternativo elegido a conveniencia."
+    },
+    {
+      "id": "C04",
+      "component": "Periodos y representantes periódicos",
+      "verdict": "CORRECTO_CON_PERIODOS_INDICADOS",
+      "analysis": "Un toro de semilado L^m y paso eta=L^(-K) tiene N=2L^(m+K) sitios por dirección. La primera malla gruesa tiene n=N/L=2L^(m+K-1). Las fórmulas de bloques y pivotes se interpretan en Z_N y Z_n. En el cierre periódico, j_mu=n-1 produce un pivote de inicio fino N-1 y final 0, justamente el cruce de los últimos y primeros bloques. Es suficiente levantar localmente c al recubrimiento, aplicar la fórmula y proyectar. No se autoriza una identificación larga y errónea del segmento a través del intervalo fundamental."
+    },
+    {
+      "id": "C05",
+      "component": "Inyectividad y orientaciones",
+      "verdict": "CORRECTO",
+      "analysis": "Para una misma dirección mu, la igualdad módulo N de dos inicios beta(j,mu) y beta(j_prime,mu) permite cancelar el vector residual fijo; queda L(j-j_prime)=0 módulo N componente a componente. Como N=L n, equivale a j=j_prime módulo n. Si las direcciones difieren, los representantes positivos llevan etiquetas de dirección distintas. La inversión de orientación no crea una segunda variable independiente. Con m>=1, K>=1 y L>=13 se obtiene n>=26, de modo que no hay la identificación excepcional de aristas positivas de un ciclo de uno o dos sitios."
+    },
+    {
+      "id": "C06",
+      "component": "Compatibilidad de cubos de lado S eta",
+      "verdict": "CORRECTO_PARA_CUBOS_DE_LA_PARTICION_COMPATIBLE",
+      "analysis": "Si S=L^s, s>=1, el intervalo [S a eta,S(a+1)eta] contiene exactamente los índices finos Sa,...,S(a+1)-1 y los índices gruesos (S/L)a,...,(S/L)(a+1)-1. Cada bloque fino B(y_j) de estos centros está íntegramente contenido como conjunto de sitios. S/L es un entero impar; su integridad basta para la saturación por bloques y su paridad es coherente con los centros anidados. En el toro se requiere que estos cubos pertenezcan realmente a la partición periódica compatible; para una partición regular sin recubrimientos esto exige S|N, además de la alineación. No basta con escoger cualquier s o trasladar arbitrariamente la partición."
+    },
+    {
+      "id": "C07",
+      "component": "Uniones, intersecciones, complementos y erosiones",
+      "verdict": "VALIDO_EN_LA_ALGEBRA_DE_CELDAS_CON_PRECISION_DE_TIPOS",
+      "analysis": "Los conjuntos de sitios de uniones de celdas completas están saturados por bloques B(y); las operaciones booleanas sobre las celdas seleccionadas y la retirada de capas completas conservan esa saturación. Los sitios finos y gruesos no se hallan en caras de región. Esta afirmación no debe interpretarse como permiso para aplicar después la equivalencia de incidencia a cualquier intersección geométrica de cubos cerrados: dos cubos adyacentes pueden intersectar solo en una cara. La propiedad unilateral y en X implica B(y) contenido en X, considerada aislada para subconjuntos arbitrarios, tampoco es suficiente para asegurar su conservación bajo complementos. La restricción explícita del input a uniones compatibles como Ω1 salva la aplicación principal."
+    },
+    {
+      "id": "C08",
+      "component": "Incidencia fina y gruesa",
+      "verdict": "CORRECTO_PARA_UNIONES_DE_CELDAS_COMPLETAS",
+      "analysis": "En una arista fina, las coordenadas transversales son semienteras en unidades eta y no coinciden con caras de la región. La única coordenada variable recorre longitud eta entre dos centros adyacentes. Una frontera de un cubo alineado tiene coordenada entera múltiplo de S; si el segmento entra en un cubo seleccionado, uno de sus dos extremos está en ese cubo. No puede entrar y salir de una celda completa entre los dos extremos. La implicación inversa es inmediata. En la malla gruesa el mismo razonamiento se aplica porque las caras están en múltiplos de L eta y el dominio es unión de celdas gruesas completas. La proyección periódica se trata con un levantamiento local. No se está probando una equivalencia para regiones arbitrarias ni para plaquetas."
+    },
+    {
+      "id": "C09",
+      "component": "Pertenencia de pivotes para filas interiores y de cruce",
+      "verdict": "CORRECTO_CON_I=E_COARSE(X)",
+      "analysis": "Para c incidente en X, al menos uno de sus centros extremos pertenece a X. Si es el inicial, el extremo inicial de beta(c) pertenece a su bloque B(y); si es el final, el extremo final de beta(c) pertenece al bloque de ese centro. La saturación por bloques coloca ese extremo fino en X y la incidencia coloca beta(c) en E_fine(X). Se incluyen las filas que cruzan la frontera. Junto con C05 esto prueba beta:I->E_fine(X) inyectiva. No se ha demostrado que una lista efectiva de filas de otra convención sea exactamente este I."
+    },
+    {
+      "id": "C10",
+      "component": "Disponibilidad bajo el complemento por bonds",
+      "verdict": "CONDICIONAL_CORRECTO",
+      "analysis": "Si F=E_total\\E_fine(X), C09 implica beta(I) intersección F vacía. La prueba no requiere que el otro extremo del pivote esté dentro de X: los pivotes de cruce siguen libres bajo esta convención incidente. La igualdad propuesta para F es una hipótesis suficiente de este argumento; no es una condición necesaria abstracta para que los pivotes estén libres, pues cualquier F que evite beta(I) también tendría esa propiedad. Esto último no autoriza sustituir el F físico."
+    },
+    {
+      "id": "C11",
+      "component": "Afirmación condicional sobre filas puramente exteriores",
+      "verdict": "DEMOSTRADA_PARA_EL_SOPORTE_DE_LAS_MEDIAS_LOCALES_PUBLICADAS",
+      "analysis": "Sea c con ambos centros extremos fuera de X. Por la saturación por bloques, todos los sitios de ambos bloques B_- y B_+ están fuera de X. Los contornos G(y,x) de CMP109 p252 cambian coordenadas monótonamente entre y y x, por lo que permanecen dentro de B(y). Si x=Lj+s y x_prime=x+L e_mu, el segmento trasladado recorre la coordenada mu desde Lj_mu+s_mu hasta Lj_mu+s_mu+L y mantiene las otras: solo visita B_- y B_+, incluidos sus bonds de cruce. El segmento central c y su inverso tienen la misma propiedad. Por tanto todo bond usado por (0.4) o (0.12) tiene ambos extremos fuera de X; por C08 no pertenece a E_fine(X). Bajo la igualdad de F de C10 todas las entradas de esa fila son variables V0. La media y la fila dependen solo de V0, con los parámetros y la elección de media fijados. El argumento es local, también en la costura periódica, y vale en cualquier dimensión. No afirma independencia del resto de la densidad, del minimizador interior o de un jacobiano."
+    },
+    {
+      "id": "C12",
+      "component": "Diferencia de los dos complementos",
+      "verdict": "CORRECTO_Y_MATERIAL",
+      "analysis": "Tómese una cara en S eta y, en su interior transversal, el pivote que une (S-1/2)eta con (S+1/2)eta en la dirección normal. El extremo izquierdo pertenece a X y el derecho al complemento geométrico. El segmento intersecta ambos dominios, tanto si el complemento se toma abierto como si se cierra por celdas. Por ello beta(c) pertenece a E_fine(X) y a E_fine(X_continuous^c), pero no a E_total\\E_fine(X). Así E_fine(X_continuous^c) no puede identificarse con el complemento de E_fine(X). El mismo problema de orden puede afectar a las filas gruesas de cruce. Este ejemplo no prueba que la fuente elija una convención errónea."
+    },
+    {
+      "id": "C13",
+      "component": "Soporte documental del split y delta exterior conservado",
+      "verdict": "APOYO_OPERATIVO_SIN_IDENTIFICACION_COMPLETA",
+      "analysis": "CMP119 p247 hace explícita la incidencia y excluye exactamente los b0(c) correspondientes. P249 conserva el recuento y usa esos pivotes en la linearización y eliminación. Son evidencia positiva de que la frontera de cruce no puede ignorarse al leer la construcción. Sin embargo, demostrar que una fila puramente exterior tiene soporte en F no demuestra que todas las filas del delta exterior escrito en (1.15) sean puramente exteriores según este mismo levantamiento. Si se levantara primero el complemento geométrico grueso, aparecerían también filas de cruce. Se necesita una definición conjunta del exterior fino y de la partición de filas gruesas. El input describe el split como compatible, no como ya identificado, y esa cautela es correcta."
+    },
+    {
+      "id": "C14",
+      "component": "Vinculación de la instancia original",
+      "verdict": "PENDIENTE_EXPLICITAMENTE_RECONOCIDO",
+      "analysis": "LAW-BINDING1559 fija datos de cutoff y esquema de referencia, pero no fija una enumeración o definición inequívoca de I, F y todas las filas externas en la instancia. Tampoco una ausencia local reportada de CMP102 decide la convención. La prueba permite un lema sobre geometría fuente; no paga la premisa necesaria para afirmar disponibilidad en la integral física original. La disposición del input conserva correctamente esa puerta abierta."
+    },
+    {
+      "id": "C15",
+      "component": "Invertibilidad, cambios de variables y otras obligaciones",
+      "verdict": "NO_ESTABLECIDO_Y_NO_RECLAMADO",
+      "analysis": "La inyección de posiciones geométricas de pivotes no es una cota inferior para los coeficientes no planos, ni una demostración de rango o invertibilidad uniforme de A_c. No valida un minor sustituto ni permite cambiar cutoff, sección o media. Tampoco justifica transportar el soporte de sigma, omitir el determinante, omitir factores de Q o de acoplamiento, ni afirmar normalización no nula. La lista NEXT contiene tareas pendientes y se acepta únicamente como tal. No se ha evaluado aquí la verdad de esos resultados futuros."
+    }
+  ],
+  "adversarial_objections": [
+    {
+      "id": "O01",
+      "severity": "BLOQUEO_DE_ADMISION_FISICA_YA_DECLARADO",
+      "target": "TYPED COMPLEMENT GATE / DISPOSITION",
+      "issue": "No está vinculado el F original de la ley; la prueba de disponibilidad es condicional.",
+      "evidence": "Las coordenadas y la incidencia identifican E_fine(X), mientras LAW-BINDING1559 no identifica F. La restricción V0=U|Omega1^c por sí sola no resuelve el orden entre complemento y levantamiento.",
+      "resolution_needed": "Una convención primaria explícita aplicable a esta misma operación, o una enumeración de los bonds efectivos de la instancia que verifique disjunción y cobertura.",
+      "disposition": "No impide aceptar el lema geométrico; impide cualquier admisión de disponibilidad física."
+    },
+    {
+      "id": "O02",
+      "severity": "BLOQUEO_DE_LA_INTERPRETACION_FISICA_DEL_DELTA_EXTERIOR",
+      "target": "Frase sobre compatibilidad con CMP119(1.15)",
+      "issue": "Fijar F por bonds y probar soporte de filas puramente exteriores no identifica por sí solo el conjunto de filas del delta exterior publicado.",
+      "evidence": "El levantamiento incidente del complemento geométrico grueso incluye las filas que cruzan la frontera; esas filas tienen un bloque interior y pueden depender de variables no fijadas.",
+      "resolution_needed": "Vincular conjuntamente I, sus filas externas y F bajo una convención periódica; verificar que no se pierde ni se duplica una restricción gruesa.",
+      "disposition": "La afirmación de soporte es válida; la compatibilidad documental no se promueve a igualdad de conjuntos efectivos."
+    },
+    {
+      "id": "O03",
+      "severity": "PRECISION_DE_TIPO_NO_FATAL_PARA_OMEGA1",
+      "target": "BLOCK COMPATIBILITY / INCIDENCE",
+      "issue": "No extender el cierre booleano a la afirmación de incidencia para intersecciones geométricas degeneradas de cubos cerrados.",
+      "counterexample": "En una dimensión, [0,L eta] intersección [L eta,2L eta]={L eta}. El bond de (L-1/2)eta a (L+1/2)eta intersecta ese conjunto y ninguno de sus extremos pertenece a él. En más dimensiones se toma el interior transversal de la cara compartida.",
+      "resolution_needed": "Interpretar booleanas y erosiones como operaciones sobre celdas seleccionadas o conjuntos de sitios; mantener en el lema de incidencia que X es unión de celdas completas.",
+      "disposition": "No refuta la Ω1 de CMP119 p248; sí refuta una lectura más amplia de la frase si eliminara esta hipótesis."
+    },
+    {
+      "id": "O04",
+      "severity": "HIPOTESIS_DE_INSTANCIACION_PERIODICA",
+      "target": "COORDINATES / BLOCK COMPATIBILITY",
+      "issue": "No toda potencia S=L^s define una partición regular admisible del toro dado.",
+      "evidence": "Una partición regular de lado S eta sin solapamiento requiere S divisor de N en cada dirección y caras alineadas con la división original.",
+      "resolution_needed": "Conservar la compatibilidad fuente y verificar las divisibilidades cuando se introduzcan los índices reales; usar levantamientos locales para las aristas que cierran el toro.",
+      "disposition": "La compatibilidad ya exigida por el input basta para el lema; la condición no permite elegir un toro sustituto."
+    },
+    {
+      "id": "O05",
+      "severity": "PRECISION_LOGICA_MENOR",
+      "target": "If, and only for this argument if",
+      "issue": "No leer esa formulación como un bicondicional que haría necesaria la igualdad F=E_total\\E_fine(X).",
+      "evidence": "Abstractamente, F vacío o cualquier conjunto que no intersecte beta(I) deja los pivotes libres aunque no sea ese complemento.",
+      "resolution_needed": "Expresar la frase como una hipótesis suficiente bajo la cual se aplica este argumento.",
+      "disposition": "La lectura condicional del resto del input es correcta; no se propone modificar el F original."
+    }
+  ],
+  "verification": {
+    "method": "Prueba algebraica independiente de coordenadas y soporte, lectura de páginas primarias cacheadas, inspección visual de las fórmulas (1.11)-(1.15) y comprobación combinatoria exacta auxiliar en memoria.",
+    "hash_checks": "Input, los dos PDFs fuente y LAW-BINDING1559 coinciden con los hashes declarados.",
+    "finite_geometry_check": {
+      "purpose": "Comprobar errores de índice, costura y soporte de caminos en un ejemplo abstracto; no instanciar ni sustituir la ley física.",
+      "parameters": {
+        "L": 13,
+        "h": 6,
+        "m": 1,
+        "K": 1,
+        "N": 338,
+        "n": 26,
+        "dimension": 2
+      },
+      "positive_coarse_rows_checked": 1352,
+      "distinct_positive_pivots": 1352,
+      "periodic_seam_pivots_checked": 52,
+      "cases": [
+        {
+          "shape": "single_cell",
+          "active_rows": 4,
+          "purely_exterior_rows": 1348,
+          "support_vertices_checked": 3448184,
+          "failures": 0
+        },
+        {
+          "shape": "seam_union",
+          "active_rows": 12,
+          "purely_exterior_rows": 1340,
+          "support_vertices_checked": 3427720,
+          "failures": 0
+        },
+        {
+          "shape": "nonconvex_union",
+          "active_rows": 16,
+          "purely_exterior_rows": 1336,
+          "support_vertices_checked": 3417488,
+          "failures": 0
+        },
+        {
+          "shape": "all_except_one",
+          "active_rows": 1352,
+          "purely_exterior_rows": 0,
+          "support_vertices_checked": 0,
+          "failures": 0
+        }
+      ],
+      "coverage": "Se comprobaron todas las filas gruesas, todos los sitios iniciales de sus segmentos trasladados cuando las filas eran exteriores, y los contornos por permutaciones a las esquinas extremas de ambos bloques. El argumento matemático, no esa muestra de contornos extremos, cubre todos los contornos internos y toda dimensión.",
+      "limit": "No es una verificación del F, de Ω1 ni de la dimensión de una instancia física efectiva. No sustituye la prueba general ni la vinculación de fuentes."
+    }
+  },
+  "later_locator_notice": {
+    "origin": "Mensaje del coordinador recibido durante esta misma evaluación",
+    "reported_locator": "https://doi.org/10.1007/BF01229380",
+    "reported_status": "Se localizó la ficha del publisher del antecedente CMP102, 255-275; según el coordinador solo se leyeron metadata y abstract.",
+    "reviewer_read_full_article": false,
+    "independently_verified_here": false,
+    "effect": "Ninguno sobre el input congelado, el análisis geométrico o la identificación de F. La declaración de ausencia en la caché del input es histórica respecto de su inspección; no se transforma en una afirmación de inexistencia del artículo. No se extendió la evaluación a ese artículo."
+  },
+  "next_required_evidence": [
+    "Vinculación primaria explícita o por índices del exterior fino F de la ley original y su orden de complemento/levantamiento.",
+    "Vinculación simultánea de todas las filas activas I y de las filas gruesas exteriores conservadas, sin eliminar las de cruce por una reinterpretación.",
+    "Compatibilidad periódica de los índices y particiones de esa misma instancia.",
+    "Solo después, análisis del A_c no plano original y de la composición real de cambios de variables con sigma, determinante y factores de Q/acoplamiento. Esta evaluación no anticipa su resultado."
+  ],
+  "final_statement": "La contribución geométrica del input1801 es válida en su dominio declarado y la afirmación sobre filas puramente exteriores dispone de una prueba local de soporte. Sus límites de exterior efectivo y de integración física permanecen abiertos. No se emite nota ni resultado físico."
+}

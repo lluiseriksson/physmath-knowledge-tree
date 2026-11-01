@@ -1,0 +1,29 @@
+{
+  "scope": "One scoped editorial assessment; three mathematical reports remain frozen. No new paper, source/candidate, score or physical admission.",
+  "assessed_snapshot": {
+    "path": "PUBLIC-NOTE-PROPOSED1807A.txt",
+    "sha256": "9898dbfd804258eeafa710084a3813c2d2f29534130b6f0bd01d39000316b1c9"
+  },
+  "editorial_input": {
+    "path": "PUBLIC-INTEGRATION1807A.json",
+    "sha256": "a85b2467a7f76315b3127e7aea7bb7b387eb77337f130bec6c271e6d2e2584a2"
+  },
+  "complete_editorial_report": {
+    "path": "ASSESSMENT1807.json",
+    "sha256": "52f3478d3a12145c8281072a3a7737eadbbaa720d7a127a1aa05bc9a072edf49"
+  },
+  "exact_disposition": {
+    "path": "EDITORIAL-DISPOSITION1807.json",
+    "sha256": "4d5bbf3da061ed175e577dc9fa0fc9c25b2c6c102d1be8c4efa506e1b4148678"
+  },
+  "final_snapshot": {
+    "path": "PUBLIC-NOTE-FINAL1807B.txt",
+    "sha256": "7a95661745602bd3cda5f4f0eccdfe0321466d2056365cc8d61b19235a27b020"
+  },
+  "baseline": {
+    "path": "PUBLIC-NOTE-BEFORE1807.txt",
+    "sha256": "34e171313bd1bbd2ca9902d17d947a3c0b53e861c7316d93be96f12ed4099bab"
+  },
+  "provenance": "Requested Astra/xhigh; effective identity/effort/external independence unauthenticated. Unscored AI assessment, not peer review, whole-note or manuscript/PDF assessment.",
+  "immutable_report_delivery": "Original report CRLF bytes preserved by exact path/hash registry and scoped Git -text. No normalization or mathematical change."
+}
