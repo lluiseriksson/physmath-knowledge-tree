@@ -1,0 +1,396 @@
+{
+  "schema_version": 1,
+  "execution": 1864,
+  "at": "2026-11-01T06:42:47.066232+00:00",
+  "status": "COMPLETE_CONDITIONED_ENDPOINT_REVIEW_INTEGRATED",
+  "input": {
+    "path": "D:\\Proyectos\\airr-investigacion\\2026-11-01_source-endpoint-review-integrated1864\\SOURCE-ENDPOINT-TRACE1861.json",
+    "sha256": "8facfcce2b29b0294ff925cc87dc7aed9a67c28dccebe7a8afd021ac3a78076a"
+  },
+  "report": {
+    "path": "D:\\Proyectos\\airr-investigacion\\2026-11-01_source-endpoint-review-integrated1864\\ASSESSMENT1861.json",
+    "sha256": "7e2ccbbf0ce122761c3f9e95fd405b1ab77133c462ade82af9f5c2e62339e079",
+    "bytes": 43640,
+    "parent_full_report_read": true,
+    "reading_chunks_pretty_json": [
+      0,
+      12000,
+      18000,
+      27000,
+      36000,
+      43300
+    ]
+  },
+  "disposition": "VALIDO_EN_EL_ALCANCE_CONDICIONADO_DEL_CHART_COMPLETO: TRAZA_DERECHA_L1_Y_PROMEDIADA_CASI_TODO; CERO_POR_SECTOR_GRANDE_NO_VACIO; IDENTIDAD_DISTRIBUCIONAL_CON_TEST_EXTERIOR_COMPACTO. SIN_FTC_ORDINARIO_NI_CIERRE_FISICO.",
+  "exact_conclusion": [
+    "La dilatación F(theta,e) -> F(theta,f e) es fuertemente continua en L1(d beta de) cuando f sube a1. Por tanto J_alpha(f)=1_B(e)F_alpha(theta,f e) tiene traza fuerte J_alpha(1), para los cuatro coeficientes de la densidad COMPLETA de1856. La afirmación usa la base producto compatible explícita y el mismo representante medible del chart; no una densidad interna despojada de pesos.",
+    "La diferenciación unidimensional a lo largo de radios da, para casi todo (theta,e), una traza unilateral promediada, incluso en promedio del valor absoluto de la diferencia. No da el límite puntual J(f,theta,e) cuando f sube a1 para todos los datos, ni siquiera necesariamente para casi todos bajo todas las sucesiones de f.",
+    "La lectura directa de CMP119 pp245-252 confirma el ancho b=L M2 R_log para una capa tilde del cubo q de lado L^2 M2 R_log, las estrellas de enlaces libres incidentes con los pivotes excluidos, la máscara1.20 y la conservación del factor grande en las variables nuevas A' de1.23, renombradas A en1.25. Con la jerarquía ya fijada, todos los enlaces probados de Gamma_q=(q tilde^2)* pertenecen a E. No se ha encontrado un enlace de ese carrier que pueda pertenecer a D.",
+    "Si B_bad no es vacío, elegir un solo q contenido en B_bad da un factor 1_{max_Gamma_q |A'_c| >= delta_source/g0}. En el recorrido completo A'_c=f e_c sobre Gamma_q, ese factor es cero en un intervalo inicial positivo para cada vector e finito. La densidad de chart cero-extendida y sus cuatro coeficientes se anulan allí para todo a_D. No se necesita R_E(0)=0 ni continuidad de N fuera de su dominio.",
+    "Para perfiles suaves de endpoint con soporte y altura controlados, el límite de <D_f J_alpha,phi_epsilon> es J_alpha(1), para casi todo dato del chart no vacío en B_bad. Con un test exterior acotado de soporte compacto en e, el mismo límite puede tomarse después de integrar respecto de d beta de. Es una identidad de la derivada distribucional COMPLETA, no una integral de la derivada ordinaria.",
+    "Con Q_D real positivo y los multiplicadores ya fijados de1852/1819, I=pJ tiene la traza p_1 J(1), y el consumidor para J conserva +f<j,C_D j>J. La descomposición en sus términos gaussianos sigue siendo una identidad a dato fijo; la compacidad en e no basta para garantizar integrabilidad exterior de cada término por separado si C_D u otros coeficientes divergen al variar theta.",
+    "No se acredita una instancia física nueva, cobertura de todos los charts/sectores, positividad de Q_D, admisión de1642, normalización completa, igualdad integral física completa ni uniformidad.1859 se usó como recibo de alcance condicionado;1856,1852 y1819 no se reabrieron."
+  ],
+  "findings_and_adverse_limits": [
+    {
+      "id": "F01",
+      "status": "CONFIRMADO_EN_EL_ALCANCE_FIJADO",
+      "title": "El indicador grande sobrevive al shell en los libres nuevos.",
+      "finding": "Las fórmulas1.18,1.23 y1.25 son coherentes: el supremo de norma de A' conserva >=delta0/g0. La segunda restricción de1.23 cambia su fondo, pero no reemplaza ese primer evento.",
+      "falsifier": "Si se probara R_E(f e), se congelara el indicador en e o se omitiera de la densidad interna tomada como objeto, el cero inicial dejaría de seguir.",
+      "anchors": [
+        "S1 p250 1.18",
+        "S1 p252 1.23,1.25"
+      ]
+    },
+    {
+      "id": "F02",
+      "status": "CONFIRMADO_CON_DISTINCION_DE_ESCALAS",
+      "title": "Las dos capas de q quedan separadas de D.",
+      "finding": "El ancho es b=L M2 R_log, no el lado a=L^2 M2 R_log ni ell. El margen ell-2b-2 es positivo bajo la jerarquía ya fijada. La modificación rectangular solo lo mejora.",
+      "falsifier": "Cambiar la convención de tilde por una capa de lado a hace que la desigualdad no esté pagada por M>=L M2. No se permite reparar esa lectura eligiendo un nuevo M.",
+      "anchors": [
+        "S1 pp245-246",
+        "S1 p251 1.20"
+      ]
+    },
+    {
+      "id": "F03",
+      "status": "CONFIRMADO_CON_MASCARA_FUENTE",
+      "title": "Las estrellas no reintroducen pivotes seleccionados.",
+      "finding": "La estrella es incidencia de enlaces con exclusión de b0(c), y p249 conserva las filas libres. El carrier del evento es un conjunto de slots independientes de E, no el carrier de una salida seleccionada C_rec ni de N.",
+      "falsifier": "Reemplazar el evento por un supremo sobre todos los enlaces reconstruidos, incluyendo un pivote, exige un nuevo análisis y puede introducir dependencia de a_D.",
+      "anchors": [
+        "S1 p247 1.8-1.9",
+        "S1 p249"
+      ]
+    },
+    {
+      "id": "F04",
+      "status": "CONFIRMADO",
+      "title": "Cero exacto de los cuatro coeficientes cerca de0.",
+      "finding": "Un q basta para anular el producto completo en un intervalo positivo para cada e finito. La conclusión es más fuerte que un límite inicial a.e, pero solo para la densidad de chart cero-extendida; no asegura finitud de la integral a cada dato lejos de0.",
+      "falsifier": "B_bad vacío, ausencia del factor grande o carrier que alcance D. No es lícito inferir el cero de la pequeñez de H ni de j_0=0.",
+      "anchors": [
+        "S1 1.18,1.23,1.25",
+        "separation_proof"
+      ]
+    },
+    {
+      "id": "F05",
+      "status": "CONFIRMADO",
+      "title": "La nueva traza derecha fuerte no estaba pagada por1856 pero sí sigue de su densidad completa.",
+      "finding": "La continuidad fuerte de dilataciones en L1 y la restricción estática1_B dan J(f)->J(1) sin asumir regularidad de la frontera del chart. El recibo1859 no se usa como autoridad de este paso; aquí se aporta el argumento nuevo.",
+      "falsifier": "Usar una medida exterior ponderada por e como si fuera Lebesgue o cambiar algún factor a un argumento distinto rompe el operador T_f y su norma f^-N_E.",
+      "anchors": [
+        "P1856",
+        "analytic_proofs.strong_right_trace"
+      ]
+    },
+    {
+      "id": "F06",
+      "status": "LIMITE_ESENCIAL",
+      "title": "La traza radial es promediada y casi-todo.",
+      "finding": "El resultado fuerte L1 no selecciona límites puntuales a cada dato. La diferenciación radial da la traza promediada absoluta a.e; los valores sobre las fronteras de cutoffs o sobre un conjunto radial excepcional siguen sin control puntual.",
+      "falsifier": "Sustituir la traza promediada por lim_f J(f,theta,e) en todos los datos. T05 muestra fallo de límite puntual incluso en un conjunto de datos de medida positiva.",
+      "anchors": [
+        "analytic_proofs.averaged_right_trace"
+      ]
+    },
+    {
+      "id": "F07",
+      "status": "PRECISION_NECESARIA",
+      "title": "Los perfiles del test de endpoint necesitan control de escala.",
+      "finding": "El input es válido interpretando 'en el sentido promediado unilateral' mediante perfiles suaves de masa1, ancho O(epsilon) y altura O(1/epsilon), como los escritos aquí. Una aproximación débil arbitraria a delta1 no basta contra L1.",
+      "falsifier": "Concentrar cada kernel dentro de un pico estrecho invisible al promedio de Lebesgue puede dar un límite distinto. Ver T08.",
+      "anchors": [
+        "analytic_proofs.precise_endpoint_tests"
+      ]
+    },
+    {
+      "id": "F08",
+      "status": "CONDICION_DE_ASIGNACION_CONSERVADA",
+      "title": "Todo el producto variable debe recorrer el mismo argumento.",
+      "finding": "Se conserva una matriz explícita de pesos. Son estáticos solo los factores de theta, el verdadero K(a_D) y la restricción adicional1_B(e). Un cutoff denominado 'interno' que use slots E se recorre dentro de chi_f.",
+      "falsifier": "Congelar chi^(0)c(B_bad) o cualquier factor h(f e) sustituyéndolo por h(e), retirar J_R, Q_EE o L_shell, o aplicar la conclusión a1.26 aislada.",
+      "anchors": [
+        "complete_weight_matrix",
+        "P1859 F04-F05"
+      ]
+    },
+    {
+      "id": "F09",
+      "status": "LIMITE_ESENCIAL",
+      "title": "La compacidad del test exterior no puede descartarse a partir del cero por dato.",
+      "finding": "tau(e) puede tender a0 cuando |e| crece. Una masa que se desplaza hacia |e|~1/f puede impedir el intercambio exterior en0 aun cuando F tenga soporte compacto y cada trayectoria individual se anule cerca de0.",
+      "falsifier": "El ejemplo T06 satisface masa finita, soporte alejado de0 y cero por dato, pero el emparejamiento exterior sin soporte compacto diverge.",
+      "anchors": [
+        "analytic_proofs.compact_outer_test"
+      ]
+    },
+    {
+      "id": "F10",
+      "status": "CONFIRMADO_CON_COMPENSACION",
+      "title": "I y J tienen endpoints distintos y la corrección de J' permanece.",
+      "finding": "La traza de I es p_1 J(1). La fórmula de J' incluye +f<j,C_D j>J; el factor p no se elimina ni se usa p^-1 para deducir masa sin compensar.",
+      "falsifier": "Omitir la corrección equivale a consumir el endpoint del objeto compensado como si fuera el original.",
+      "anchors": [
+        "P1819 weak_operational_identity",
+        "P1852 new_consumer"
+      ]
+    },
+    {
+      "id": "F11",
+      "status": "PRECISION_ADVERSA_DEL_CONSUMIDOR_EXTERIOR",
+      "title": "El ensayo exterior controla la derivada completa, no cada sumando gaussiano.",
+      "finding": "La compacidad en e no acota C_D al variar theta. Pueden existir cancelaciones necesarias entre <partial_f H-z grad H,g> y f<j,C_D j>J. La integración exterior término por término no ha sido demostrada por este argumento.",
+      "correction": "Aplicar el límite a D_f J entero; conservar el consumidor a dato fijo. Para separarlo tras integrar theta, probar integrabilidad absoluta o una regularización común que mantenga la suma.",
+      "falsifier": "T07 muestra sumandos de integral infinita con suma distribucional finita en un modelo analítico que cumple las hipótesis de masa y positividad puntual.",
+      "anchors": [
+        "analytic_proofs.compensated_consumer",
+        "T07"
+      ]
+    },
+    {
+      "id": "F12",
+      "status": "LIMITE_DE_MEDIDA_Y_COBERTURA",
+      "title": "La conclusión conserva el grafo I/J y la asignación única.",
+      "finding": "La base original aquí es la base compatible de Fubini d beta de. El resultado a.e pasa al marginal del mismo chart, pero el test endpoint no repondera por ese marginal. No certifica una cobertura global, una familia de charts por mera admisión individual ni un resultado para todos los fondos.",
+      "falsifier": "Integrar V_J como Haar libre, introducir un peso e-dependiente en d beta, duplicar charts o extrapolar a una pieza física no representada.",
+      "anchors": [
+        "P1856",
+        "P1859 F02-F03,F06"
+      ]
+    },
+    {
+      "id": "F13",
+      "status": "NO_FTC_ORDINARIO",
+      "title": "Los saltos de indicadores siguen en la derivada distribucional.",
+      "finding": "Incluso con los dos endpoints resueltos, la derivada puede contener átomos o una parte más singular. No se obtiene BV, continuidad absoluta, derivada ordinaria integrable ni superficies separadas.",
+      "falsifier": "T04 tiene derivada ordinaria0 a.e y una diferencia de endpoints igual a1, recuperada solo por el átomo de la derivada distribucional.",
+      "anchors": [
+        "analytic_proofs.precise_endpoint_tests",
+        "P1819"
+      ]
+    },
+    {
+      "id": "F14",
+      "status": "PREMISAS_FISICAS_NO_PROMOVIDAS",
+      "title": "El éxito del endpoint no admite una ley completa.",
+      "finding": "Se mantienen C_delta, beta_ref, media, normas, unidades, geometría y discrepancia de prefactor; no se ha elegido un nuevo tuple físico. No se pagan Q_D>0, chart/familia/cobertura, normalizador no nulo, logaritmos conectados, bounds de historia o actividad.",
+      "falsifier": "Presentar el límite débil localizado como admisión de1642 o igualdad integral física completa.",
+      "anchors": [
+        "P1535",
+        "P1559",
+        "fixed_scope del input"
+      ]
+    }
+  ],
+  "explicit_adversarial_tests": [
+    {
+      "id": "T01",
+      "kind": "Comprobación algebraica de la geometría bajo las premisas fijadas; no elección de una nueva familia física.",
+      "construction": "b/ell=M2/M<=1/L y ell>=L^3.",
+      "calculation": "ell-2b-2 >= L^3-2L^2-2. Para el menor L impar permitido,13, la cota es1857>0, y aumenta para L>=13. La desigualdad es simbólica para toda la jerarquía; los valores13,15,17 se comprobaron como sanidad aritmética.",
+      "disposition": "Pasa. Si erróneamente se toma b=a, el mínimo ell=a ya no paga ell-2a-2; confirma que la lectura de capas es decisiva."
+    },
+    {
+      "id": "T02",
+      "kind": "Falsador analítico de un carrier que alcance D; no instancia fuente.",
+      "construction": "Un libre interior a con h(a)>=0 de masa1 soportado en[2,3], un exterior e acotado, y evento grande1_{max(|a|,|f e|)>=1}.",
+      "calculation": "El evento vale1 para todos los a en el soporte incluso en f=0; la integral interior puede seguir siendo1.",
+      "disposition": "La afirmación de cero exigiría excluir a del carrier. La máscara fuente comprobada lo excluye mediante Gamma_q contenido en E."
+    },
+    {
+      "id": "T03",
+      "kind": "Falsador del congelamiento del indicador grande; no instancia fuente.",
+      "construction": "W(y)=1_{|y|>=1}*1_{0<=y<=2}; fijar e=3/2.",
+      "calculation": "El recorrido completo W(f e) es0 para f<2/3. Si se congela el primer factor en e y se recorre solo el segundo, el producto vale1 cerca de0.",
+      "disposition": "La densidad completa especificada pasa. No puede atribuirse el endpoint a1.26 aislada ni mover chi^(0)c a una medida estática."
+    },
+    {
+      "id": "T04",
+      "kind": "Prueba exacta de salto y signo distribucional; no instancia fuente.",
+      "construction": "F(y)=1_{1<=y<=2}; e=3/2. Entonces J(f)=1_{f>=2/3} para0<f<1.",
+      "calculation": "J(1)-J(0)=1, mientras la derivada ordinaria es0 a.e. D_f J=delta_(2/3), y <D_f J,phi_epsilon>=1 una vez el plateau contiene2/3.",
+      "disposition": "Confirma el signo positivo del endpoint y la necesidad de la derivada completa; refuta el FTC ordinario sin hipótesis adicionales."
+    },
+    {
+      "id": "T05",
+      "kind": "Falsadores de endpoint puntual desde L1; no instancia fuente.",
+      "construction": "Primero F=1_[1,2] y e=1 con F(1)=1. Segundo, F=1_C para un conjunto de Cantor de medida positiva, cerrado y sin interior, contenido en[1,2].",
+      "calculation": "En el primer caso F(f e)=0 para todo f<1, por lo que su traza izquierda no coincide con el valor asignado F(1). En el segundo, para casi todo e en C el promedio izquierdo tiende a1 por diferenciación, pero hay puntos de C y de su complemento arbitrariamente cerca por la izquierda, salvo excepciones nulas; el límite puntual de F(f e) no existe en un subconjunto de medida positiva.",
+      "disposition": "La traza fuerte y la promediada a.e siguen siendo válidas; no se promueven a traza puntual para cada dato ni a todas las sucesiones f."
+    },
+    {
+      "id": "T06",
+      "kind": "Falsador de quitar el soporte exterior compacto; no instancia fuente.",
+      "construction": "n=1, beta de masa1, B=R y F(y)=1_[1,2](y). F tiene masa1, soporte compacto y alejado de0; cada e finito tiene un intervalo inicial de cero.",
+      "calculation": "Para f>0, int_R J(f,e)de=1/f. Con los perfiles rho escritos, int_R <D_f J,phi_epsilon>de = -epsilon^-1 int_1^2 rho(u)/u du + int r_epsilon(f)/f df. El segundo término tiende a1 y el primero a menos infinito.",
+      "disposition": "El límite por dato no conmuta con todo el exterior. El test compacto del input evita exactamente esta fuga de masa."
+    },
+    {
+      "id": "T07",
+      "kind": "Falsador de integrabilidad exterior término a término del consumidor; no instancia fuente.",
+      "construction": "theta en(0,1), Q_D=theta>0, Q_DE=1, C_D=1/theta, j=e. Sea h(a) suave, par, compacta, no negativa y de masa1; F(y)=1_[1,3](y); W(theta,a,y)=h(a)F(y). Para el test exterior tomar e en[3/2,2] y f en[4/5,9/10].",
+      "calculation": "En ese rectángulo J(f)=1. Con g_f=exp[-theta a^2/2-f e a] y H_f=h(a)F(f e)/g_f, el sumando <partial_f H-z grad_a H,g_f> es -f e^2/theta y el de compensación es +f e^2/theta. Cada uno tiene integral absoluta infinita en theta; su suma es0, que coincide con D_f J en el rectángulo.",
+      "disposition": "La masa completa es finita y Q_D es positivo en cada dato. Eso no paga la separación exterior de términos. Mantener el miembro distribucional completo o aportar una cota adicional."
+    },
+    {
+      "id": "T08",
+      "kind": "Falsador de kernels arbitrarios que solo convergen débilmente a delta1; no instancia fuente.",
+      "construction": "J(f)=1 en intervalos centrados en1-2^-n de longitud2^-3n y0 en el resto cercano a1; J(1)=0. Elegir kernels suaves de masa1 contenidos dentro de cada intervalo.",
+      "calculation": "El promedio unilateral ordinario de |J| en una ventana de longitud epsilon tiende a0: la longitud total de los picos es o(epsilon). Sin embargo cada kernel adaptado al pico integra J a1 y converge débilmente a delta1. Su altura no es O(1/epsilon) para la escala de distancia al endpoint.",
+      "disposition": "Justifica escribir explícitamente perfiles de escala controlada. Los perfiles rho de este informe sí satisfacen la traza promediada necesaria."
+    }
+  ],
+  "paid_and_unpaid": {
+    "paid": [
+      "Lectura fuente del indicador grande y de su conservación post-shell con umbral original.",
+      "Separación de Gamma_q respecto de D con las capas, estrellas y jerarquía ya fijadas.",
+      "Anulación inicial exacta de cada coeficiente de la densidad de chart completa para e finito en B_bad no vacío.",
+      "Traza fuerte L1 en1 de la densidad completa integrada en a_D, y traza unilateral promediada absoluta para casi todo dato.",
+      "Límite de la derivada distribucional completa emparejada con perfiles suaves adecuados.",
+      "Mismo límite después de un test exterior acotado con soporte compacto en e, usando la base gráfica original.",
+      "Transporte de esos resultados a I=pJ bajo Q_D positivo y conservación explícita de la corrección para J."
+    ],
+    "unpaid": [
+      "Cero en0 para B_bad vacío; no hay inferencia nueva en esos sectores.",
+      "Límite puntual en1 para todo dato o para toda sucesión, y finitud interior a cada dato excepcional.",
+      "Control de todo el exterior sin test compacto ni una hipótesis real de soporte acotado/integrabilidad uniforme.",
+      "Integrabilidad exterior por separado de los términos del consumidor gaussiano, de superficies o de la corrección de compensación.",
+      "BV, continuidad absoluta, derivada ordinaria L1, FTC ordinario y normas de variación.",
+      "Admisión/continuación física de charts, cobertura conjunta completa, todo K_C, parámetros simultáneos y todos los fondos.",
+      "Positividad de Q_D y cualquier cota uniforme de su inversa, del pivote, de volumen, acoplamiento o historia.",
+      "Normalizador completo no nulo, logaritmos/cumulantes conectados, cota de actividad y cualquier conclusión espectral.",
+      "Admisión física de1642 o igualdad integral física completa."
+    ]
+  },
+  "assessment_method_and_integrity": {
+    "review_count": 1,
+    "prior_reviews_reopened": false,
+    "no_grade_assigned": true,
+    "restart": false,
+    "requested_model": "gpt-6-astra",
+    "requested_effort": "xhigh",
+    "requested_context": "separado",
+    "task_context": "/root/astra_source_endpoint1861",
+    "effective_identity_effort_isolation_independence_authenticated": false,
+    "primary_source_access": "Solo lectura de un PDF local fijado por hash. Sin consultas web ni recuperación de fuentes adicionales.",
+    "premise_use": "Se leyeron completos los seis JSON fijados.1859 solo delimita el alcance condicionado. No se abrieron los informes previos completos de1819/1852 ni se volvió a evaluar1856.",
+    "mathematical_depth": "Demostración analítica nueva de las trazas y del límite distribucional; comprobación directa de fórmulas/máscaras/capas necesarias para el cero. Ocho pruebas/falsadores explícitos, sin pretender que los ejemplos abstractos sean instancias del modelo fuente.",
+    "subagents_spawned": 0,
+    "credentials_used": false,
+    "publication_or_payment": false,
+    "repositories_or_other_chats_modified": false,
+    "ESTADO_read_or_modified": false,
+    "manuscript_or_Capacity_or_global_build_assessed": false,
+    "source_pdf_modified": false,
+    "source_bodies_or_images_saved": false,
+    "source_visual_buffers": "Solo memoria del proceso y visualización transitoria; no archivos fuente derivados.",
+    "authorized_output_only": "C:/Trabajo/airr/2026-11-01_execution1861/ASSESSMENT1861.json",
+    "all_findings_preserved": true,
+    "finding_count": 14,
+    "adversarial_test_count": 8
+  },
+  "source_and_premise_bindings_reverified": [
+    {
+      "id": "S1",
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-convergent-cmp119-from-fusion.pdf",
+      "sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+      "hash_match": true,
+      "bibliographic_identity": "T. Balaban, Convergent Renormalization Expansions for Lattice Gauge Theories, Communications in Mathematical Physics 119 (1988), 243-285; DOI10.1007/BF01217741.",
+      "exact_depth": "Texto de pp243-253 pertinentes; lectura visual completa en memoria de pp245,246,247,248,249,250,251,252,253. Verificación puntual de definiciones y fórmulas0.1,1.8-1.10,1.12-1.18,1.20,1.22-1.26. No lectura ni auditoría de la demostración global.",
+      "decisive_anchors": [
+        "p245: el tilde especial de un cubo LM2 R0 añade una capa de cubos M2 R0.",
+        "p246: a escala fina q tiene lado L^2 M2 R_log y, a escala L^-1, lado L M2 R_log; de aquí el ancho fino L M2 R_log de cada capa.",
+        "p247,1.8-1.9: estrella= enlaces con al menos un extremo en el conjunto, excluyendo los pivotes b0(c) correspondientes.",
+        "p249: la linealización cambia solo pivotes; tras A=g0 A' los libres conservan sus valores y C reconstruye los pivotes.",
+        "p250,1.18: producto de eventos grandes con supremo sobre (q tilde^2)* y umbral g0^-1 delta0.",
+        "p251,1.20: Lambda_pre=Omega1^(-2) intersección complemento de (R'_bad tilde); la modificación rectangular reduce Lambda.",
+        "p252,1.23: el evento grande es en A', con idéntico umbral;1.25 retiene chi^(0)c(R_bad).",
+        "p253,1.26: la función interna condicional no contiene todo el producto de pesos exteriores; no es el objeto completo de esta revisión."
+      ],
+      "source_modified": false,
+      "source_text_or_image_file_created": false,
+      "visual_method": "PyMuPDF renderizó cada página a bytes PNG en memoria; el visor recibió esos bytes. Ninguna página, imagen ni extracción de texto fue guardada como archivo."
+    },
+    {
+      "id": "P1856",
+      "path": "C:/Trabajo/airr/2026-11-01_execution1856/JOINT-MEASURE-L1-APPLICATION1856.json",
+      "sha256": "0f0d8782d541713e67ad2784d7ee1af1448c2b9303b39be42fd7454dd2710f9e",
+      "hash_match": true,
+      "read_complete": true,
+      "role": "Premisa congelada: masa conjunta finita y recorrido de la densidad completa de un chart real conjuntamente medible, inyectivo y asignado una sola vez. No nueva revisión de su admisión física."
+    },
+    {
+      "id": "P1859",
+      "path": "D:/Proyectos/airr-investigacion/2026-11-01_joint-measure-review-integrated1859/ASSESSMENT-RECEIPT1859.json",
+      "sha256": "cd4798032241517b6f3de9d3fbd9a7d56aa0e972f3bdc944080bd2acaff22b5c",
+      "hash_match": true,
+      "read_complete": true,
+      "role": "Recibo condicionado y límites de medida/asignación de1856; no grado heredado, no demostración de existencia global, no reapertura del informe anterior."
+    },
+    {
+      "id": "P1852",
+      "path": "C:/Trabajo/airr/2026-11-01_execution1852/SHELL-SUPPORT-FORCING1852.json",
+      "sha256": "bc8e13ce419a12b4ace6f0132481e5adbf5c118be5b88e9f84692d241e9ad8cc",
+      "hash_match": true,
+      "read_complete": true,
+      "role": "Jerarquía y máscaras fijas; consecuencia j_f=f j y z=C_D j condicionada a las premisas ya fijadas. No nueva auditoría de Q_free, su soporte o positividad."
+    },
+    {
+      "id": "P1819",
+      "path": "C:/Trabajo/airr/2026-11-01_execution1819/MARKED-SHELL-INTERPOLATION1819.json",
+      "sha256": "e466d15a3f51d1508f8d086e9fe9da0024850fd58814cefab7b35e9af14e312d",
+      "hash_match": true,
+      "read_complete": true,
+      "role": "Recorrido compuesto original, cuatro marcas escalares y consumidor distribucional compensado/sin compensar. No nueva revisión de ese teorema."
+    },
+    {
+      "id": "P1535",
+      "path": "C:/Trabajo/airr/2026-10-31_execution1535/LAW-VERSION1535.json",
+      "sha256": "f668b5b57350dcdf9d60b579be927b260d9aaf2138ce4667462d0af4c6ca8388",
+      "hash_match": true,
+      "read_complete": true,
+      "role": "Ley original, C_delta, normas, media, discrepancia del prefactor de delta y puerta de cociente conservados."
+    },
+    {
+      "id": "P1559",
+      "path": "C:/Trabajo/airr/2026-10-31_execution1559/LAW-BINDING1559.json",
+      "sha256": "a78244cb62773f907346968b16470892a00f1405219d0e9752f17b578af806dd",
+      "hash_match": true,
+      "read_complete": true,
+      "role": "Misma ley y referencia beta; ninguna identificación nueva de versiones históricas ni cambio de dominio."
+    }
+  ],
+  "parent_disposition": {
+    "accepted_scope": "Densidad completa de un chart realmente admitido, medible y asignado una vez; cuatro coeficientes, volumen fijo y sector grande no vacío. Traza fuerte L1 derecha, traza promediada absoluta casi todo, cero inicial por indicador fuente y límite distribucional con test exterior compacto.",
+    "F07_required": "Perfiles con masa1, anchura O(epsilon), altura O(1/epsilon); convergencia débil arbitraria de kernels insuficiente.",
+    "F11_required": "Integrar solo la derivada distribucional completa. La compacidad exterior no acota C_D al variar theta; los sumandos pueden tener integrales absolutas infinitas que se cancelan. T07 es un modelo analítico, no un contraejemplo a la fuente.",
+    "F09_required": "No intercambio exterior irrestricto desde cero por dato; fuga e~1/f y masa f^-N_E.",
+    "not_assessed_by1861": [
+      "OUTER-ENDPOINT-GUARD1862.json",
+      "OUTER-DOMAIN-READING1863.json"
+    ],
+    "no_grade_or_restart": true,
+    "no_whole_manuscript_PDF_or_Capacity_assessment": true
+  },
+  "working_manuscript_unchanged": {
+    "path": "C:\\Trabajo\\airr\\marked-rg-manuscript\\WORKING-MANUSCRIPT.md",
+    "before_sha256": "a3b2ae94b7bd8754becf004d05a5a8f99abd9fd247111b87c7b73b48b1d89bb0",
+    "after_sha256": "b3042d6ab2a9cb3f4414b818e322953d7088a7a2befa4c1a79b8dcddef2457d2",
+    "bytes": 559364,
+    "scope": "Single unfinished private manuscript; exact1744B assessment and separate C correction verification only. No complete manuscript/PDF or physical admission.",
+    "focused_input_sha256": "1b4e7a703af2ce67a1d416979bf1b95073f3a23c60e6da4154d3bf7a20d1fcb5",
+    "focused_report_sha256": "08902ae25d761eaccdcba4cacfb4c3429b68279c32ee9faf12671920d55d1f9a",
+    "adverse_original_report_sha256": "161b15be85e2398eb998b8e9bdefd345838a4c369bf09cdd866fbfa6fed92a0b"
+  },
+  "physical_admission": false,
+  "candidate1642_admitted": false,
+  "complete_physical_integral_equality_asserted": false,
+  "new_paper": false,
+  "graph_changed": false,
+  "public_knowledge_integration": "PENDING_EXISTING_NOTE_ONLY",
+  "next": "Consolidar el resultado1861 y sus 14 hallazgos/8 falsadores en la nota existente del árbol mediante una sola actualización autorizada, conservando informe e input exactos. Después identificar el dominio exterior estático post-shell original y la asignación de pesos; no quitar el test compacto ni separar los términos gaussianos sin control. Sin nueva revisión, paper, admisión1642 ni reinicio."
+}
