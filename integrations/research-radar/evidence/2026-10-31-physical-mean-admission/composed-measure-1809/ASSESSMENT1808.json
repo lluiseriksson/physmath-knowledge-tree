@@ -1,0 +1,419 @@
+{
+  "execution": 1808,
+  "assessment_kind": "One new exact mathematical assessment of the specified local composition",
+  "input": {
+    "path": "C:/Trabajo/airr/2026-11-01_execution1808/PHYSICAL-COMPOSED-RECONSTRUCTION1808.json",
+    "sha256_expected": "0022ce4ee9dad8dc6fa08b521354acfab2e2bdc8e7ac1a6223190f977863d38b",
+    "sha256_observed": "0022ce4ee9dad8dc6fa08b521354acfab2e2bdc8e7ac1a6223190f977863d38b",
+    "hash_match": true
+  },
+  "assessment_date": "2026-11-01",
+  "identity_and_independence": {
+    "requested_model_and_effort": "GPT-6 Astra / xhigh",
+    "effective_model_identity_authenticated": false,
+    "effective_reasoning_effort_authenticated": false,
+    "independence_authenticated": false,
+    "statement": "These requested execution labels are recorded, not certified. This assessment is a delegated child-agent calculation with the supplied input and source bindings; no independent model identity, effort level, or reviewer independence is asserted."
+  },
+  "disposition": {
+    "code": "LOCAL_COMPOSITION_VALID_WITH_EXPLICIT_H_NORMALIZATION_AND_RELATIVE_DOMAIN_QUALIFICATIONS",
+    "conclusion": "The two displayed densities are equivalent local representations of one measure on an actually admitted real branch. The chain U=exp(i N(g0 C R(a))) U1, delta elimination, sigma0 and g0 powers, P-versus-Q factor, determinant identity, pivot-Haar cancellation, and evaluation of complete words are mathematically correct with the conventions made precise below. The shell acts on free coordinates and leaves the inner cutoff indicator unchanged relative to its domain. A literal identification of the H appearing without a scale in (1.22) with the unscaled operator value displayed in (1.21) is not verified: (1.21) visibly contains L^{-1}. Define the effective shell displacement from the two actual backgrounds, or carry that factor explicitly. This is a source-dictionary qualification, not a refutation of the local change-of-variables theorem.",
+    "unconditional_source_identification_of_unscaled_H": false,
+    "local_density_equivalence": true,
+    "full_original_KC_coverage_proved": false,
+    "uniform_history_admission_proved": false,
+    "physical_admission": false,
+    "candidate1642_closed": false,
+    "new_grade_or_review": false,
+    "next_actual_falsifier": "Supply an actually source-admitted configuration and its precise index/scale dictionary for which the H matching, independent-variable count, target-delta normalization, shell/inner separation, or nonsingularity fails. No such source-admitted counterexample is exhibited by this assessment."
+  },
+  "boundaries": {
+    "files_written": [
+      "C:/Trabajo/airr/2026-11-01_execution1808/ASSESSMENT1808.json"
+    ],
+    "pdf_or_corpus_copied": false,
+    "render_method": "PyMuPDF page images rendered in process memory and displayed directly; no page-image or extraction files created.",
+    "prior_cases_reopened": [],
+    "statement": "No assessment of 1759, 1806, PR251, the manuscript, manuscript PDF, Capacity, or the physical result was reopened. The input's already-closed index context is used as a premise, not re-audited. Only the frozen law/version files and the named source-ordering note were read for their stated narrow role."
+  },
+  "sources": [
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-convergent-cmp119-from-fusion.pdf",
+      "sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+      "hash_verified": true,
+      "printed_pages_text_read": [
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253
+      ],
+      "printed_pages_visually_read": [
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253
+      ],
+      "anchors": [
+        "247 (1.5)-(1.9): exponential gauge weight, original approximate cutoff, selected-bond exclusions, and printed delta0 discrepancy.",
+        "248 (1.10)-(1.13): domain, fixed raw exterior, constrained background, U=U' U1 and Hermitian logarithmic coordinates.",
+        "249 (1.14)-(1.16): selected-only nonlinear straightening, free-coordinate elimination, g0 and sigma0 powers, z^(0), and gauge-site normalizer.",
+        "250 (1.18)-(1.19): free-bond fluctuation tests and separate background-comparison requirement.",
+        "251 (1.20)-(1.22): buffered Lambda1/S1 geometry, shrinking Lambda1, background displacement with printed L^{-1}, and shell map on S1*.",
+        "252 (1.22)-(1.25): C-infinity guard, exact classes of shell bonds, Jacobian, and transformed characteristic functions.",
+        "253 first (1.26)-(1.27): conditional inner integration and original spatial counterterm cutoff phi1."
+      ],
+      "reading_scope": "Selected stated pages and displays only, not a complete proof audit."
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-rg-I-cmp109-1104116842.pdf",
+      "sha256": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+      "hash_verified": true,
+      "printed_pages_text_read": [
+        252,
+        253,
+        254,
+        260,
+        261,
+        262,
+        266,
+        267,
+        268
+      ],
+      "printed_pages_visually_read": [
+        253,
+        254,
+        267
+      ],
+      "anchors": [
+        "252-254 (0.4)-(0.12): actual choices of Euclidean-symmetric mean, group-valuedness on real data, and complete contour products.",
+        "254 (0.14)-(0.15): exponential gauge fixing and its nontrivial normalizer.",
+        "260-262: regular-background and extension conditions; these are not supplied by the local identity.",
+        "267: h supported on original b0(c), L Q h=Id, and nonlinear equation L Q B' + C(B')=L Q B.",
+        "268: selected elimination, Gaussian normalization, and separation of nonlinear density terms."
+      ],
+      "reading_scope": "Selected stated pages and displays only; no global source theorem imported."
+    },
+    {
+      "path": "D:/Cache/airr-primary/balaban-cmp102-255-275.pdf",
+      "sha256": "b10a444f8122d5e1b2999c54f120c647e33e5ad834943b00285b15bcf8d719f4",
+      "hash_verified": true,
+      "printed_pages_text_read": [
+        259,
+        260,
+        261
+      ],
+      "printed_pages_visually_read": [
+        259,
+        260,
+        261
+      ],
+      "anchors": [
+        "259 (14)-(16): logarithmic mean and sigma0^{-1} per group delta.",
+        "260 (17)-(18): pivot-supported straightening, sigma(A') dA', and the older extra axial-gauge variable removal.",
+        "261 (20)-(22): v already combines nonlinear Jacobian and transformed Haar ratios; real dimension enters the g0 exponent."
+      ],
+      "reading_scope": "Used to check conventions and distinguish the older axial-delta construction; its mean or gauge deletion is not substituted for CMP119."
+    }
+  ],
+  "frozen_law": {
+    "law_binding_path": "C:/Trabajo/airr/2026-10-31_execution1559/LAW-BINDING1559.json",
+    "law_binding_sha256_verified": "a78244cb62773f907346968b16470892a00f1405219d0e9752f17b578af806dd",
+    "version_path": "C:/Trabajo/airr/2026-10-31_execution1535/LAW-VERSION1535.json",
+    "version_sha256_verified": "f668b5b57350dcdf9d60b579be927b260d9aaf2138ce4667462d0af4c6ca8388",
+    "selected_note_read": "C:/Trabajo/airr/2026-10-31_execution1535/SOURCE-ORDERING1535.md",
+    "retained": "The same C_delta, p_cut, declared norm, beta_ref, g1_ref convention, and full first normalizer are retained. No threshold, amplitude, or historical unindexed law is reidentified.",
+    "prefactor_discrepancy": "CMP119 p.247 prints delta0=g0 A1 p0(g0)=(A1/A0) epsilon0. With p0=A0 ell^{p_cut} and epsilon0=g0 p0 these are not the same normalization of A1. The discrepancy remains unresolved. This assessment uses the explicitly frozen delta0=C_delta g0 ell^{p_cut}.",
+    "ratio_gate": "The small ratio C_delta/A0 and all norm-conversion, background, comparison-tail, and determining-set requirements remain separate. Decreasing g0 does not itself reduce this fixed ratio."
+  },
+  "fixed_types_and_premises": {
+    "coordinate_dimensions": {
+      "fine_independent_bonds": "n=|A|",
+      "active_independent_coarse_rows": "m=|I|",
+      "real_lie_dimension": "r=dim_R(g)",
+      "free_bonds": "p=n-m=|S|",
+      "ambient_dimension": "nr",
+      "target_dimension": "mr",
+      "constrained_free_dimension": "pr",
+      "shell_block_dimension": "r per independent shell bond"
+    },
+    "premises": [
+      "One actual source group, Lie basis, Lebesgue measure, Haar normalization, norm, mean M, and orientation convention are fixed.",
+      "The source mean and logarithms are defined on the actual real configurations in the chosen neighborhood; M_I(U1)=V_I.",
+      "I, J, A, F_src and beta(I) are the original index sets, with distinct independent pivots and retained exterior constraints.",
+      "P=DF(0) is the undivided coarse group-log derivative, with invertible original P_beta; h_beta=P_beta^{-1} and h_S=0.",
+      "N is the actual local source solution, or the identical solution obtained by uniqueness of the implicit equation, on an open ambient neighborhood.",
+      "R, N, exponential coordinates and the source mean are all defined and one-to-one on the contribution under discussion; nonzero selected determinants and actual support are retained.",
+      "V, histories, backgrounds, H, C, h, gauge frames and all coefficient parameters are fixed during fluctuation differentiation.",
+      "Any transfer from the first unit lattice to another scale includes its declared coordinate maps and determinant factors.",
+      "No condition here asserts a common chart or uniform constants on the complete original K_C/history family."
+    ],
+    "orientation_rule": "Choose each independent fine/coarse orientation once. The opposite link is the inverse of the reconstructed link. Relative to U1, the reverse Hermitian fluctuation is -Ad_{U1(b)^{-1}} a_phys,b, not generally just -a_phys,b. It is not an extra coordinate. Fixed Ad or inversion transports have unit absolute volume determinant in the compact-group conventions; they must still be placed correctly in matrix derivative formulas.",
+    "norm_rule": "Multiplication by i identifies the declared Hermitian and anti-Hermitian real bases isometrically. That fact does not identify arbitrary matrix/operator norms with the source cutoff norm. No radius or sigma0 may be carried across an unmatched change of basis without its Jacobian."
+  },
+  "components": [
+    {
+      "id": "C01_original_physical_reconstruction",
+      "result": "VALID_LOCAL",
+      "formula": "B=g0 C R(a), a_phys=N(B)=B-h D(B), U_A=exp(i a_phys) U1_A, U_F=V0.",
+      "reasoning": "C_S=Id and h_S=0 imply a_phys,S=g0 R(a) exactly. The selected components are outputs of C followed by N. Since P C=0, the ambient equation F(N(B))=P B gives F(a_phys)=0 on this reconstruction. Changing a free shell link changes selected outputs through the same original C and N. Replacing selected links by a minimum or by exp(i g0 C a) times a new background generally does not preserve this map.",
+      "local_existence_paid": "On an actually defined mean/log neighborhood, P_beta invertible gives an implicit-function construction of D from F(B-h D)=P B, because the derivative in D at (0,0) is -P h=-Id. It gives D(0)=D'(0)=0 and N'(0)=Id on some neighborhood. This does not supply the radius needed to cover K_C, and it does not establish the source hypotheses at every history."
+    },
+    {
+      "id": "C02_P_Q_L",
+      "result": "VALID_WITH_FIXED_CONVENTION",
+      "equations": [
+        "Q=P/L, L Q h=Id.",
+        "|det P_beta|^{-1}=L^{-mr}|det Q_beta|^{-1} for L>0.",
+        "At flat calibration P_beta=L^{1-d} Id_(mr), the inverse determinant is L^{(d-1)mr}.",
+        "At the same calibration Q_beta=L^{-d} Id_(mr); its L^{dmr} inverse determinant must be multiplied by L^{-mr}."
+      ],
+      "reasoning": "The real target dimension is m r, not m, and the coarse group-log has no arbitrary extra factor of L. At the flat source mean each selected corridor bond has coefficient L/L^d=L^{1-d}; root-path contributions cancel the reference U(c) terms at first order. This is a calibration, not a nonflat uniform invertibility theorem.",
+      "source_normalizer_status": "The formula for the raw active integral is fixed. An isolated printed z^(0) can be identified with it only after matching the displayed source delta variable and any constants already moved to the normalizer. The assessment does not assert a new identification of source z^(0) from its symbol alone."
+    },
+    {
+      "id": "C03_shell_source_and_H",
+      "result": "VALID_MAP_WITH_REQUIRED_SOURCE_DICTIONARY_CLARIFICATION",
+      "exact_map": "R_b(a_b)=(1/(i g0)) Log(exp(i g0 a_b) exp(-i gamma_b(a_b) H_eff,b)).",
+      "source_classes": "CMP119 (1.22) acts on free b in (R1^{~2} intersect S1)* with the smooth guard. On S1* outside (R1^{~2})* the guard is replaced by 1. R is the identity off the original free shell set. The source operates after selected-variable elimination.",
+      "H_correction": "Define H_eff,b=(1/i) Log(U1_b U1_local,b^{-1}) on the actual matching real chart. Then U1_b=exp(i H_eff,b) U1_local,b. The displayed operator expression in (1.21) is U1=exp(i L^{-1} H_{1,Ax}(arguments)) U1_local, so H_eff=L^{-1} H_{1,Ax}(arguments) on that chart. The source subsequently abbreviates H_{1,Ax}(b) in (1.22). That shorthand must be explicitly interpreted as the effective bond displacement, or the L^{-1} must remain in R. The input's phrase 'fixed by the two actual backgrounds' permits this correct interpretation, but does not justify identifying it with the unscaled operator value.",
+      "gamma_one_identity": "With this definition, exp(i g0 R_b(a_b)) U1_b=exp(i g0 a_b) U1_local,b when gamma_b=1. It holds for free links. It does not give a replacement rule for selected reconstructed links.",
+      "guard": "The source guard is C-infinity, equals 0 for |a'|<=4 delta0/(3 g0), and equals 1 when |exp(i g0 a')-1|>=5 delta0/3, in its own norm and source domain. It is not a holomorphic cutoff. H is a fixed background displacement, not h, Hsharp, or a fluctuation variable."
+    },
+    {
+      "id": "C04_shell_jacobian",
+      "result": "VALID_LOCAL_WITH_EXPLICIT_NONZERO_BRANCH_PREMISE",
+      "definition": "J_R(a)=product_(b in S1*) |det_R DR_b(a_b)|; identity blocks contribute 1.",
+      "exact_derivative": "Let J(x) v=(1/i) [(d/dt) exp(i(x+t v))|_(t=0)] exp(-i x), the right-trivialized exponential differential in real coordinates. On a strict chart, DR_b=J(g0 R_b)^{-1}[J(g0 a_b) - g0^{-1}(Ad_{exp(i g0 a_b)} H_eff,b) tensor d gamma_b].",
+      "exact_nonsingularity_test": "det DR_b = [det J(g0 a_b)/det J(g0 R_b)] [1-g0^{-1} d gamma_b(J(g0 a_b)^{-1} Ad_{exp(i g0 a_b)} H_eff,b)]. The last scalar must be nonzero for the guarded block. No derivative of H is added while backgrounds are held fixed.",
+      "gamma_one_check": "For gamma=1 the scalar bracket is 1 and sigma(g0 R_b)|det DR_b|=sigma(g0 a_b), as expected from fixed right translation of Haar measure. This optional simplification of a free shell factor does not remove selected-link factors or the original physical weight.",
+      "source_sign_caution": "The printed BCH expansion in (1.22) has -g0^{-1} F(g0 A',-g H), whereas (1.24) displays +g0^{-1} F(...) inside the differentiated perturbation. With the same F and the same arguments these signs cannot be copied as one identity; the ellipsis might conceal a convention change. This assessment does not invent an erratum. The exact Log/product definition determines DR and bypasses that ambiguity.",
+      "unproved": "Source smallness assertions can motivate nonvanishing, but no uniform bound for this bracket, chart image, or inverse over all histories/K_C is established here."
+    },
+    {
+      "id": "C05_shell_inner_geometry",
+      "result": "SUPPORTED_BY_SOURCE_BUFFERED_GEOMETRY",
+      "exact_geometry": "CMP119 (1.20): Lambda1=Omega1^{~-2} intersect (R1'^{~})^c; S1=(Omega1 minus Omega1^{~-1}) union R1. R1' is the union of L M R1 cubes intersecting R1. The later filling of small complementary components only shrinks Lambda1.",
+      "reasoning": "The inner set lies at least a coarse protective layer away from the original shell sets. With the source's independent-bond and star conventions, this gives S1* intersect S_in=empty. Shrinking Lambda1 cannot create an intersection. Thus R_in(a)=a_in and the shell blocks are exterior to the conditional free integration.",
+      "limits": "The symbols E_fine, X*, and set complements must retain the source's endpoint and pivot conventions. An arbitrary geometric region called Lambda, or an index set enlarged across the buffer, would not inherit this fact. No concrete enumeration of an unspecified history is purported."
+    },
+    {
+      "id": "C06_fixed_KC",
+      "result": "EXACT_INDICATOR_INVARIANCE_RELATIVE_TO_DOMAIN",
+      "event": "K_C(g0)={a_in: ||a_b||_*<C_delta [log(g0^{-2})]^{p_cut} for every b in S_in}.",
+      "precise_identity": "For every a in the actual domain D_R, 1_(K_C)(R_in(a))=1_(K_C)(a_in). Equivalently R^{-1}(K_C times E_out) intersect D_R=(K_C times E_out) intersect D_R, where E_out is the entire free exterior coordinate space appropriate to the map.",
+      "qualification": "Writing the right side as an unrestricted product is only shorthand for this relative identity. D_R or the full reconstruction domain can have inner-dependent boundaries, need not be a product, and need not contain all of K_C. For fixed a_out the actual chart contribution integrates over K_C intersect D_{a_out}.",
+      "retained_factors": "All other original characteristic functions, chart indicators, gauge restrictions, sector labels and complements remain composed with the original reconstruction. Their equality to 1 is not inferred. No full Z_C is identified with one chart contribution, and no source cutoff is resized."
+    },
+    {
+      "id": "C07_measure_prefactors",
+      "result": "VALID_EXACT_LOCAL",
+      "first_density": "(g0^r sigma0)^p |det P_beta|^{-1} [product_(b in A) s(a_phys,b)] |det DN(B)| J_R(a) Phi(U(a),V) da, restricted to the exact pulled-back contribution.",
+      "derivation": [
+        "Right translation by U1 preserves group Haar measure.",
+        "Fine exponential coordinates contribute sigma0^n product_A s(a_phys).",
+        "On the identity chart, delta_G(exp(i x))=sigma0^{-1} delta_g(x); m independent group constraints contribute sigma0^{-m}.",
+        "The ambient substitution a_phys=N(B) contributes |det DN(B)| and replaces F by P B.",
+        "For positive g0, B=g0 y contributes g0^{nr} and delta(P g0 y) contributes g0^{-mr}. The net power is g0^{pr}.",
+        "Integrating the original pivot coordinates of y against delta(P_beta y_beta+P_S y_S) gives |det P_beta|^{-1}, with y=C a_pre.",
+        "The remaining measure is the original coordinate-projection measure da_pre on S. The change a_pre=R(a) contributes J_R."
+      ],
+      "surface_measure_correction": "There is no extra sqrt(det(C^T C)) in this coordinate-delta elimination. A coarea derivation using induced surface measure would contain compensating normal Jacobians; mixing its surface element with the displayed projection measure would double count geometry.",
+      "conditions": "Use absolute real determinants, a single actual branch, its support, and g0>0. If multiple preimages are admitted, sum their separate contributions with actual multiplicity; do not declare a global inverse from local nonsingularity."
+    },
+    {
+      "id": "C08_gauge_counts_and_source_v",
+      "result": "VALID_SEPARATION_OF_DISTINCT_NORMALIZATIONS",
+      "counting": "p=n-m counts independent fine bonds less selected coarse-bond pivots. The gauge prefactor in CMP119 arises from site integrations: (L^4-1) times the number of relevant coarse sites in d=4. That site count is not m. The dimension r multiplies the g0 exponent; sigma0 is already the Haar-density scalar for one whole group coordinate.",
+      "source_distinction": "CMP102 (18) removes an additional axial-gauge set because that older calculation uses delta gauge fixing. CMP119 (1.5)-(1.7), (1.14)-(1.15) uses the actual exponential gauge weight. Its gauge bonds must not be deleted from A or p on the strength of CMP102.",
+      "source_v": "CMP102 (20)-(21), and the definition recalled after CMP119 (1.16), combine the transformed Haar ratio and nonlinear Jacobian into v. If this v is already retained in an expanded density, the same sigma/det factors must not be added again. The notation sigma in the abbreviated later display must be matched to its separated sigma0 normalization.",
+      "retained": "The gauge normalizer z, the exterior delta on J, original prescribed V0, source sector sum, and their original positions remain untouched. No numerical reevaluation or z=1 replacement is justified."
+    },
+    {
+      "id": "C09_detDN_Pbeta_identity",
+      "result": "VALID_EXACT_LOCAL",
+      "equations": [
+        "N_S(B)=B_S, hence DN=[[DN_beta,beta,DN_beta,S],[0,Id_S]].",
+        "Differentiate the ambient equation F(N(B))=P B with respect to B_beta, holding B_S and all parameters fixed.",
+        "F'_beta(a_phys) DN_beta,beta(B)=P_beta.",
+        "|det DN(B)|/|det P_beta|=|det F'_beta(a_phys)|^{-1}."
+      ],
+      "reasoning": "The beta block is square of real dimension m r. The bottom-left block is zero, so no missing derivative through free rows exists. The equation requires an ambient straightening identity on an open neighborhood, not an equality stated only on the constraint set. The supplied source solution has that ambient form. Its nonsingularity and P_beta invertibility force the selected F' block to be nonsingular on the chosen branch."
+    },
+    {
+      "id": "C10_raw_group_cancellation",
+      "result": "VALID_WITH_EXPLICIT_VELOCITY_CONVENTION",
+      "definition": "A_c(U) is the real r-by-r derivative of the actual mean's c-th output for a left increment U_beta(c)(t)=exp(i t X) U_beta(c), expressed by the right output velocity (1/i) dot M_c M_c^{-1}. All other independent links are held fixed.",
+      "diagonal_property": "For the source means (0.4)/(0.12), each selected b0(c) lies in its own inter-block corridor. Root paths are internal to blocks, so the other active rows do not contain that selected crossing. Thus the selected block is diagonal by coarse row. The actual ordered full contour dependence, not a surrogate relative mean, is essential.",
+      "matrix_identity": "On F=0, M_c=V_c and the derivative of (1/i) Log(M_c V_c^{-1}) is the identity on that right output velocity. In the preceding convention F'_beta=diag_c[A_c(U) J(a_phys,beta(c))]. If another left/right trivialization is used, insert its Ad transports in the matrix identity; their absolute determinants are 1.",
+      "haar_identity": "On the same strict exponential chart s(x)=|det J(x)|. Therefore the pivot factors s(a_phys,beta) cancel the pivot exponential differentials in |det F'_beta|.",
+      "second_density": "g0^{pr} [product_(b in S) sigma(g0 R_b(a_b))] J_R(a) [product_(c in I)|det A_c(U(a))|^{-1}] Phi(U(a),V) da, with exactly the same support and branch.",
+      "no_double_count": "This raw-group density replaces the first density; it is not an additional multiplier. Multiplying product_c |det A_c|^{-1} into the first density would count the selected elimination twice.",
+      "limits": "No new nonflat lower bound on A_c, no uniform admitted chart, and no target/history derivative is obtained."
+    },
+    {
+      "id": "C11_inner_outer_normalization",
+      "result": "VALID_CONDITIONAL_FACTOR_PLACEMENT",
+      "outside_inner": "At fixed history, V and a_out, R changes only exterior free coordinates and each block uses only its own free a_b and fixed H. J_R and product_(b in S_out) sigma(g0 R_b(a_b)) are independent of a_in and may be factored outside the inner integral.",
+      "conditional_cancellation": "They cancel from a normalized inner expectation only when numerator and denominator use the identical nonzero inner integral and actual domain. This remains true even when the common chart section is not all K_C, but it does not identify that expectation with the full-law expectation.",
+      "retained_outer": "These factors remain in the outer/history measure. Their V/history variation cannot be discarded. P_beta(U1) is also constant only for a fixed background; its variation and the matched source z^(0)(V) belong to the full first normalizer.",
+      "selected_factor": "A_c(U(a)) is generally a function of a_in through the complete physical reconstruction and is not an exterior constant.",
+      "nonclaims": "A vacuum ratio, moving-domain differentiation, or passage to the full logarithmic normalizer requires its own argument."
+    },
+    {
+      "id": "C12_original_weight_and_phi",
+      "result": "RETAIN_ORIGINAL_COMPOSED_FACTORS",
+      "Phi": "Phi is the original physical weight evaluated at U=exp(i N(g0 C R(a))) U1, with prescribed exterior V0 and all original factors. It is not the weight of a new minimum, a mere free-shell substitution, or an unproved Gaussian replacement. Its location in the integral and any constants already extracted must be kept consistent.",
+      "spatial_phi1": "CMP119 p.253 uses its original spatial phi1 in the renormalization subtraction, supported in Lambda1 and equal to 1 on its eroded interior. That spatial cutoff is not the C-infinity shell guard gamma and is not the free-field radius C_delta. The local measure identity supplies no new authorization to alter it.",
+      "original_indicators": "The source operations dropping or localizing individual characteristic functions require their original ratios and comparison bounds. The measure change alone does not prove those inequalities or replace all indicators by K_C."
+    },
+    {
+      "id": "C13_complete_words_marks",
+      "result": "VALID_LOCAL_SUBSTITUTION_AND_CONDITIONAL_DOMINATION",
+      "exact_insertion": "Every original W is evaluated as W(U(a),V0,V) with all ordered factors, reconstructed selected links, dependent inverse orientations, the original root, and both endpoint frames.",
+      "boundary_cases": "A word supported entirely on F_src remains its prescribed ordered V0 word. A word merely rooted outside may enter A and is not fixed. An open word retains its endpoint transformation law; it must not be treated as a gauge-invariant scalar without its original contraction/frames.",
+      "source_terms": "Finite exp(sum_alpha tr[J_alpha W_alpha]) uses the same real reconstruction and same domain. Nonanalyticity of gamma as a function of a does not prevent holomorphy in independent finite source coefficients J.",
+      "domination": "If the actual unmarked contribution is absolutely integrable and these complete words are bounded on the real unitary data, then on every compact source set the marked integrand and every fixed source derivative are bounded by a finite constant times the original absolute density. Differentiation of the unnormalized marked integral follows by domination.",
+      "not_paid": "No derivative in V or a moving domain, nonzero full denominator, normalized logarithm, uniform connected cumulant bound, history sum, or full-K_C marked-integral equality follows. A nonzero denominator must be proved before a normalized logarithm or cumulant is claimed."
+    }
+  ],
+  "adverse_evidence_and_corrections": [
+    {
+      "id": "A1_H_scale",
+      "severity": "Required source-convention clarification",
+      "evidence": "CMP119 p.251 (1.21) visibly prints L^{-1} multiplying H_{1,Ax}; (1.22) uses H_{1,Ax}(b) without that visible factor.",
+      "correction": "Use H_eff=(1/i)Log(U1 U1_local^{-1})=L^{-1}H_operator on the common chart, or explicitly include L^{-1} in the shell exponential. Preserve the distinction from h and Hsharp.",
+      "falsification_check": "If one instead inserts an unscaled commuting H_operator=T into exp(-i H) while U1=exp(i T/L)U1_local, gamma=1 leaves exp[-i(1-1/L)T] between the new free field and U1_local. That demonstrates the normalization error algebraically. It is not claimed to be a constructed source-admitted background counterexample.",
+      "effect": "Does not invalidate the exact local density identities for a fixed admitted R. It blocks an unqualified claim that an ambiguous H notation already proves exact source localization."
+    },
+    {
+      "id": "A2_BCH_sign",
+      "severity": "Printed formula ambiguity retained",
+      "evidence": "The visible minus sign on the BCH remainder in (1.22) and plus sign in the abbreviated (1.24) cannot be identified without a convention explanation.",
+      "correction": "Differentiate the exact Log/product map; use the absolute determinant of that derivative. Do not silently repair the source or copy a sign from the abbreviated expansion.",
+      "effect": "No error in the input's exact R definition is established by this discrepancy."
+    },
+    {
+      "id": "A3_domain_product",
+      "severity": "Logical qualification",
+      "evidence": "Identity of R on inner coordinates implies equality of cutoff indicators on the chart, not that the chart domain is the full product K_C times all outer data.",
+      "correction": "Write all equalities relative to D_R and the complete reconstruction support, and retain the complementary contribution.",
+      "effect": "The input already warns that global coverage is open; the precise relative formulation prevents its set equality from being overread."
+    },
+    {
+      "id": "A4_left_right_dexp",
+      "severity": "Convention specification",
+      "evidence": "The matrix equality involving dexp depends on the selected input velocity and output trivialization.",
+      "correction": "Use the right-trivialized J defined in C04/C10, or insert the corresponding Ad transports. Absolute determinant cancellation is unchanged.",
+      "effect": "No missing target-dependent determinant survives at M=V on the strict log chart."
+    },
+    {
+      "id": "A5_original_cutoff_normalization",
+      "severity": "Existing unresolved source issue preserved",
+      "evidence": "The two printed A1 prefactors do not agree under the quoted p0 convention.",
+      "correction": "Retain the fixed LAW1535/1559 C_delta without identifying both printed expressions or resetting any threshold.",
+      "effect": "No source-prefactor resolution or full physical law admission is supplied."
+    }
+  ],
+  "falsifier_ledger": [
+    {
+      "test": "Missing g0 or real dimension",
+      "outcome": "No missing factor in the displayed density: exponent pr=(n-m)r, conditional on independent counts and g0>0."
+    },
+    {
+      "test": "Missing sigma0",
+      "outcome": "No missing factor: n Haar coordinates minus m group deltas gives sigma0^p."
+    },
+    {
+      "test": "Missing P/Q factor L",
+      "outcome": "Correctly supplied L^{-mr}; L^{dmr} alone would be the wrong flat raw factor."
+    },
+    {
+      "test": "Missing shell/background scale L",
+      "outcome": "Explicit H_eff dictionary required by visible L^{-1} in source (1.21); not silently discharged."
+    },
+    {
+      "test": "Missing i",
+      "outcome": "F=(1/i)Log and R=(1/(i g0))Log are correct in the declared Hermitian basis. A different Lie convention needs the same real identification."
+    },
+    {
+      "test": "Gauge sites confused with coarse rows",
+      "outcome": "Not permitted; the source gauge-site count remains distinct and its z is retained."
+    },
+    {
+      "test": "Double-counted inverse orientations or gauge removal",
+      "outcome": "Independent orientations only; no CMP102 axial-delta deletion transferred into CMP119."
+    },
+    {
+      "test": "Changed norm or cutoff radius",
+      "outcome": "Not permitted; norm conversions and fixed ratio gate remain unpaid unless separately verified."
+    },
+    {
+      "test": "Jacobian sign or branch multiplicity",
+      "outcome": "Absolute real determinants and actual supports required; local nonsingularity alone is not global injectivity."
+    },
+    {
+      "test": "Double-counted raw selected determinant",
+      "outcome": "Prohibited; the two density formulas are alternatives."
+    },
+    {
+      "test": "Selected outputs replaced by localized minimum",
+      "outcome": "Invalid in general; complete N(g0 C R(a)) must remain in words and weight."
+    },
+    {
+      "test": "C-infinity guard treated as analytic",
+      "outcome": "Not permitted; source differentiations in J remain a separate dominated finite-source statement."
+    },
+    {
+      "test": "Shell-inner overlap",
+      "outcome": "Absent in the source buffered construction and after shrinking Lambda1; must be rechecked if any actual index dictionary differs."
+    },
+    {
+      "test": "K_C indicator invariance promoted to full admission",
+      "outcome": "Not permitted; chart sections may truncate K_C and original complementary contributions survive."
+    },
+    {
+      "test": "Exterior factors omitted from outer normalization",
+      "outcome": "Invalid; only the identical fixed-outer nonzero inner ratio cancels them."
+    },
+    {
+      "test": "Unchanged Phi or original phi1 lost",
+      "outcome": "Both the original composed physical weight and spatial subtraction cutoff are retained; neither is replaced by the shell guard or a new threshold."
+    },
+    {
+      "test": "Original rooted/open word endpoints lost",
+      "outcome": "All factors, roots, inverses and endpoint frames are required."
+    },
+    {
+      "test": "Positive denominator or log inferred from formal formula",
+      "outcome": "Not established; absolute integrability and nonzero normalization are distinct obligations."
+    }
+  ],
+  "what_is_actually_paid": [
+    "A dimensionally and conventionally correct local change of variables from the original constrained physical measure to free coordinates followed by the actual shell map.",
+    "An exact reconciliation of nonlinear-straightening and raw-group pivot-elimination densities, including the cancellation of the selected Haar/dexp factors.",
+    "A source-supported explanation that shell localization takes place after free-coordinate elimination, and that its Jacobian lies outside the conditional inner integration.",
+    "An exact inner cutoff-indicator invariance on the admitted domain, without changing C_delta.",
+    "A correct reconstruction rule for full interior, crossing and raw-exterior words, and a conditional finite-source domination argument.",
+    "A precise list of source-normalization qualifications, especially the effective H displacement and the BCH display ambiguity."
+  ],
+  "premises_and_open_gates": [
+    "Actual source-defined mean/log neighborhoods and invertible original reference pivots for the histories in question.",
+    "Uniform N/C/R reconstruction, one-to-one branch coverage, denominators bounded away from zero, and complete original K_C admission.",
+    "Source190/Hsharp comparison and the effective H amplitude/scale matching on actual source backgrounds.",
+    "P1 and all mixed-boundary determining-set/localized-background assumptions.",
+    "Fixed threshold-ratio budget, all original characteristic-function removals, and the unresolved A1/A0 source prefactor.",
+    "Physical localization, common geometric/coupling parameter families, simultaneous absorptions and actual beta_ref/g1_ref amplitude matching.",
+    "Off-chart and complementary contributions, the full outer/history normalizer, and any moving V-domain derivatives.",
+    "Nonzero full marked/unmarked normalizers, normalized logs, connected sums and uniform cumulant/history bounds.",
+    "Physical admission and candidate1642."
+  ],
+  "final_statement": "This assessment closes only the explicitly local symbolic composition and the equivalence of its two measures, subject to the stated source H dictionary and actual admitted branch. It does not close a physical or global gate. The normalization/shell interpretation is reviewable against the original pages, and adverse source evidence has been retained rather than silently repaired."
+}
