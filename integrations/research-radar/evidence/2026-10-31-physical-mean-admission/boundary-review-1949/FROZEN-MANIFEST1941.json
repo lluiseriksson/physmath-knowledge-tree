@@ -1,0 +1,68 @@
+{
+  "at": "2026-11-01T12:08:52.896920+00:00",
+  "scope": "ONE new unscored technical assessment of actual first-step far-exterior support/four-coefficient allocation1939-1940 and its eight fixed JSON inputs. Not a manuscript/PDF/Capacity/1642/global source/build assessment. No prior assessments supplied or repeated.",
+  "requested_model": "gpt-6-astra",
+  "requested_effort": "xhigh",
+  "requested_context": "separate fork none",
+  "actual_identity_effort_isolation_independence": "not authenticated; no inference from request",
+  "inputs": [
+    {
+      "path": "C:\\Trabajo\\airr\\2026-11-01_execution1941\\INPUT-BARE-BOUNDARY-SUPPORT-SEPARATION1939.json",
+      "original": "C:\\Trabajo\\airr\\2026-11-01_execution1939\\BARE-BOUNDARY-SUPPORT-SEPARATION1939.json",
+      "sha256": "5823470699498e79727875e2fab78a1e597b682269245f1e28fc8797977fc9f3",
+      "bytes": 9883
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-11-01_execution1941\\INPUT-BARE-BOUNDARY-FOUR-COEFFICIENTS1940.json",
+      "original": "C:\\Trabajo\\airr\\2026-11-01_execution1940\\BARE-BOUNDARY-FOUR-COEFFICIENTS1940.json",
+      "sha256": "d5398d038b04091765e8c09fd431a7f932c81b6f67360ed9ae43d440f825257f",
+      "bytes": 9985
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-11-01_execution1941\\INPUT-BULK-BOUNDARY-MARKS1662.json",
+      "original": "C:\\Trabajo\\airr\\2026-10-31_execution1662\\BULK-BOUNDARY-MARKS1662.json",
+      "sha256": "f8934aadf589ba3fc30658804fe9cf6e200eef28b25edd6b222b6a683f56f3dd",
+      "bytes": 7397
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-11-01_execution1941\\INPUT-BARE-BOUNDARY-STRUCTURE1694.json",
+      "original": "C:\\Trabajo\\airr\\2026-10-31_execution1694\\BARE-BOUNDARY-STRUCTURE1694.json",
+      "sha256": "d191ee676f268d23ff91920eb9ae49b2202cc5ba3c4e8192988cd7593a888530",
+      "bytes": 18686
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-11-01_execution1941\\INPUT-BARE-SOFT-FREE-STENCIL1926.json",
+      "original": "C:\\Trabajo\\airr\\2026-11-01_execution1926\\BARE-SOFT-FREE-STENCIL1926.json",
+      "sha256": "4982431e5b3dbec7ae3d03244aa5d80708975599895c8b901426dbbab40d3680",
+      "bytes": 5207
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-11-01_execution1941\\INPUT-ACTUAL-FIRST-SECTOR-F-INPUT1917.json",
+      "original": "C:\\Trabajo\\airr\\2026-11-01_execution1917\\ACTUAL-FIRST-SECTOR-F-INPUT1917.json",
+      "sha256": "ef5662e3cdb8f897278a5afad0dd07d48a7dfbaa6906bba8c7d6f5ae96a8a9b3",
+      "bytes": 6100
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-11-01_execution1941\\INPUT-LAW-VERSION1535.json",
+      "original": "C:\\Trabajo\\airr\\2026-10-31_execution1535\\LAW-VERSION1535.json",
+      "sha256": "f668b5b57350dcdf9d60b579be927b260d9aaf2138ce4667462d0af4c6ca8388",
+      "bytes": 1803
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-11-01_execution1941\\INPUT-LAW-BINDING1559.json",
+      "original": "C:\\Trabajo\\airr\\2026-10-31_execution1559\\LAW-BINDING1559.json",
+      "sha256": "a78244cb62773f907346968b16470892a00f1405219d0e9752f17b578af806dd",
+      "bytes": 867
+    }
+  ],
+  "source_hashes": [
+    {
+      "path": "C:\\Users\\lluis\\Documents\\CodexYangMillsAutopilot\\runtime\\sources\\primary\\balaban-convergent-cmp119-from-fusion.pdf",
+      "sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a"
+    },
+    {
+      "path": "C:\\Users\\lluis\\Documents\\CodexYangMillsAutopilot\\runtime\\sources\\primary\\balaban-rg-I-cmp109-1104116842.pdf",
+      "sha256": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a"
+    }
+  ]
+}

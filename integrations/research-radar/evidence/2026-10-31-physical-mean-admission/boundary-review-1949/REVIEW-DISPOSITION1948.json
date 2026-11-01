@@ -1,0 +1,192 @@
+{
+  "execution": 1948,
+  "source": {
+    "path": "C:\\Trabajo\\airr\\2026-11-01_execution1948\\ASSESSMENT1941.json",
+    "sha256": "bbf7d764a8396d9122a5c30c157f1ad70f143396437742eb854d6846eb187a1c"
+  },
+  "fixed_inputs": [
+    {
+      "path": "C:\\Trabajo\\airr\\2026-11-01_execution1948\\FROZEN-MANIFEST1941.json",
+      "sha256": "fbdaedea2b3ce1f1921c7a718c116b93d57a10d319db036faa730c04c0886dd8"
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-11-01_execution1948\\adversarial1941.py",
+      "sha256": "1a9c66c1014f60a9291a85b4322273f58e1ae6a5d3dcd3ae8377329fa265d8ab"
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-11-01_execution1948\\adversarial-results1941.json",
+      "sha256": "cb6d3d36c14b3868b2cbbde938f72ca04e789be35fa0faeb3e62bb1dd8a7200f"
+    }
+  ],
+  "status": "REVIEW1941_COMPLETE_INTEGRATED_UNSCORED_TWELVE_FINDINGS_PHYSICAL_ADMISSION_OPEN",
+  "report_complete_read_by_parent": true,
+  "report_bytes": 53860,
+  "findings": [
+    {
+      "id": "F01",
+      "type": "supported_conditional_claim",
+      "claim": "Geometría h-4 de1939-1940",
+      "finding_verbatim": "La lectura visual de1.20 confirma dos erosiones de Ω1, una tilde sobre R1 prima y S1 construido con R1 raw. La ampliación rectangular del complemento solo encoge D. El margen propuesto es conservador bajo la conversión de índices indicada.",
+      "review_disposition_verbatim": "Conservar como afirmación condicionada a las particiones y los índices originales; no degradarla a una única erosión.",
+      "review_limits_verbatim": "Las pruebas discretas son de juguete y no validan períodos físicos ni sectores.",
+      "parent_disposition": "retained_conditional",
+      "parent_action": "Keep two erosions, tilde of R1_prime, final rectangular enlargement of complement and compatible periodic distance; no all-sector/domain pass."
+    },
+    {
+      "id": "F02",
+      "type": "operational_definition_caveat",
+      "claim": "Enlaces incidentes frente a propietarios",
+      "finding_verbatim": "La fuente denota con el mismo conjunto continuo los enlaces que lo intersectan. Los conjuntos incidentes asociados a D y D^c se solapan en el borde; no son automáticamente una partición de variables. Retener ambos extremos es correcto para la distancia, pero no resuelve por sí solo el índice de la integración y Q_DE.",
+      "review_disposition_verbatim": "Exigir E=I_free menos I_D y una única asignación de cada coordenada independiente al instanciar1.26. No se encontró que este punto invalide h-4: cualquier asignación legítima de enlaces de longitud uno queda dentro del margen.",
+      "review_limits_verbatim": "El paquete no enumera una geometría física final; no se inventó una.",
+      "parent_disposition": "operational_indices_open",
+      "parent_action": "Use the actual integrated independent index set I_D of1.26 and E=I_free minus I_D. Never use overlapping incident D* and (D complement)* as an algebraic partition. Concrete all-sector enumeration remains open."
+    },
+    {
+      "id": "F03",
+      "type": "adversarial_objection_resolved",
+      "claim": "Posible solución seleccionada o Jacobiano global no local",
+      "finding_verbatim": "Para las medias originales0.4/0.12 y el pivote indicado, no hay acoplamiento entre incógnitas seleccionadas de corredores distintos. La factorización del determinante se deduce de esta estructura; no de una cota de decaimiento.",
+      "review_disposition_verbatim": "Aceptar la localidad en la carta original única. No transferirla a otras medias, al mínimo U1(V) o a H1.",
+      "review_limits_verbatim": "No se verificaron márgenes analíticos uniformes ni una carta común para todos los sectores.",
+      "parent_disposition": "retained_on_original_unique_chart",
+      "parent_action": "Keep finite per-c selected equations and determinant factors for the original mean/branch; no transfer to H1 or locality through U1(V), no uniform chart admission."
+    },
+    {
+      "id": "F04",
+      "type": "supported_range_with_limits",
+      "claim": "Primitivas completas y R_star",
+      "finding_verbatim": "Wilson reconstruido/cuatro-link, Haar, gauge suave y Jacobiano tienen los portadores finitos descritos. La caja de cuatro bloques para una plaqueta es necesaria en esquinas; la cota32(L+1) es holgada en posición fina. El término de corriente de1.16 no puede omitirse.",
+      "review_disposition_verbatim": "Usar la cota solo para el exponente bare original y raíces realmente finas/locales, con toda la reconstrucción.",
+      "review_limits_verbatim": "El límite geométrico no acota derivadas, resolventes, H1, acción histórica ni sensibilidad del fondo coarse.",
+      "parent_disposition": "retained_finite_bare_scope",
+      "parent_action": "Keep complete four-block plaquette/selected/Haar/gauge carriers, actual current and R_star=32(L+1) fine-position range only. No old action/long transported word/derivative norm inference."
+    },
+    {
+      "id": "F05",
+      "type": "fixed_background_requirement_verified",
+      "claim": "Dependencia oculta de H respecto del interior",
+      "finding_verbatim": "H_(1,Lambda1) en1.21 procede de U1 y datos coarse/de borde fijados antes de integrar las fluctuaciones. No se encontró dependencia de a_D en este paso. La dependencia global respecto de V sí permanece y no debe llamarse exterior-local.",
+      "review_disposition_verbatim": "La exterioridad sobrevive con theta fijo. Reabrirla si un operador cambia U1, el sector, H, la carta o los datos que fueron condicionados.",
+      "review_limits_verbatim": "La prueba no justifica derivar el multiplicador con respecto a parámetros físicos como si fuera constante.",
+      "parent_disposition": "retained_fixed_conditioning",
+      "parent_action": "At this step original sector,U1,V,V0,H and chart are fixed before a_D integration. Physical parameter derivatives must still differentiate their genuine dependencies."
+    },
+    {
+      "id": "F06",
+      "type": "proof_completeness_qualification",
+      "claim": "Características absorbidas en W_H",
+      "finding_verbatim": "R_star y h-4 para primitivas de acción no bastan por sí solos para una función bad con un halo extendido. Es una omisión en la versión abreviada del argumento si se interpreta como prueba de todos los factores. La fuente da la reorganización1.19-1.25 y distingue la escala del halo de la de h; al conservarlas puede justificarse la separación estructural.",
+      "review_disposition_verbatim": "Añadir explícitamente CUT-1 como obligación de aplicación; retener sus condiciones analíticas. No declarar una rama admitida solo porque pase h-4>R_star.",
+      "review_limits_verbatim": "A6 es un contraejemplo al atajo de etiquetar un factor exterior por su cubo, no un contraejemplo físico a la reorganización original.",
+      "parent_disposition": "material_qualification_controlling",
+      "parent_action": "Complete indicator halos and exact source1.19-1.25 reorganization are required in addition to action/Jacobian R_star. Keep analytic cutoff-removal gates and fixed C_delta; do not declare the complete W_H exterior from h-4>R_star alone."
+    },
+    {
+      "id": "F07",
+      "type": "valid_exact_identity",
+      "claim": "Multiplicador explícito exterior",
+      "finding_verbatim": "Con los portadores separados, fondo fijo y cutoffs correctamente asignados, la diferencia del exponente y el Jacobiano raw son funciones exteriores. La palabra almost-local en252 no obliga a introducir una cola en variables libres bare a fondo fijo; puede referirse también a sus datos de fondo.",
+      "review_disposition_verbatim": "Aceptar FAC-1 como identidad exacta no expandida en este alcance. No identificarla con el B^(1) resummado.",
+      "review_limits_verbatim": "Ninguna estimación uniforme de tamaño, integrabilidad exterior o respuesta física sale de esta identidad.",
+      "parent_disposition": "retained_exact_conditional_identity",
+      "parent_action": "Use exact exponent difference and exact raw map Jacobian for exterior-only multiplier after all source cutoff allocations pass. No estimate of exterior size, integrability or response follows."
+    },
+    {
+      "id": "F08",
+      "type": "gaussian_scope_limit",
+      "claim": "La fuerza cruzada no cambia",
+      "finding_verbatim": "Q_DE delta_e=0 se sigue del alcance de Q bare; Q_DE e no desaparece. Las inversas y complementos de Schur pueden conectar puntos que Q no conectaba.",
+      "review_disposition_verbatim": "Conservar el chequeo gaussiano limitado de1940; no usarlo para cancelar fibras ni para acciones posteriores. La identidad Ward adicional de1694 no se utilizó ni se validó globalmente aquí.",
+      "review_limits_verbatim": "No es una cota de media condicional ni una prueba de equivalencia entre gauges.",
+      "parent_disposition": "retained_gaussian_scope",
+      "parent_action": "Only Q_DE(T e-e)=0 follows from bare range and separation; retain nonzero forcing Q_DE e, nonlocal inverse, means and physical gauge fibers."
+    },
+    {
+      "id": "F09",
+      "type": "root_transport_supported",
+      "claim": "Raíces crossing y exteriores",
+      "finding_verbatim": "Una raíz local que cruza D puede permanecer sin cambio porque su portador reconstruido no alcanza S. Una raíz puramente exterior puede cambiar y debe conservar ese valor. La clasificación por centro o por enlace seleccionado de salida sería incorrecta.",
+      "review_disposition_verbatim": "Aceptar la clasificación por portador completo de1940; mantener todas las marcas exteriores transportadas y excluir palabras largas de esta cota.",
+      "review_limits_verbatim": "No prueba localidad de U1(V) ni estimaciones conectadas de dos raíces.",
+      "parent_disposition": "retained_complete_root_carriers",
+      "parent_action": "Original local crossing four-link roots with full carrier separated from S are unchanged under this raw T step. Pure exterior roots keep their transported value. No claim for long/history roots or U1(V) locality."
+    },
+    {
+      "id": "F10",
+      "type": "normalization_and_boundary_requirement",
+      "claim": "Cuatro coeficientes con peso exterior conservado",
+      "finding_verbatim": "La identidad de extracción es correcta. Un factor común condicionado a e modifica la distribución de e después de integrar. Además el kernel mantiene interacciones con el exterior cercano aunque T actúe más lejos; los clusters de frontera no desaparecen.",
+      "review_disposition_verbatim": "Conservar W en Z_empty,Z_p,Z_q,Z_pq, el normalizador y el prefactor gaussiano una sola vez, y el B^(1) marcado pendiente.",
+      "review_limits_verbatim": "No implica independencia, cancelación exterior, decaimiento o estimaciones de historia.",
+      "parent_disposition": "retained_outer_weight_and_boundary_obligations",
+      "parent_action": "Keep W in all four full Z coefficients, every outer baseline/delta/FP/Haar/normalizer once and all near-boundary clusters. Normalized connected expression requires finite nonzero Z_empty."
+    },
+    {
+      "id": "F11",
+      "type": "exact_map_implementation_caveat",
+      "claim": "Uso operativo de1.22/1.24",
+      "finding_verbatim": "El cambio usado debe ser A_old=T_H(A_new), con las dos ramas del interruptor indicadas por la fuente. La primera línea de1.22 define el cambio sin ambigüedad. La fórmula abreviada1.24 presenta F(...) con puntos suspensivos; no conviene reconstruir signos o argumentos del BCH por copia parcial.",
+      "review_disposition_verbatim": "Definir el Jacobiano por la derivada del mapa exacto1.22, con su rama real admitida y valor absoluto de determinante en la sustitución de Lebesgue. No se certifica aquí una implementación numérica de BCH.",
+      "review_limits_verbatim": "No se declara una errata demostrada de la fuente ni un fallo de la identidad del paquete, que usa el Jacobiano exacto.",
+      "parent_disposition": "exact_map_definition_controlling",
+      "parent_action": "Define the actual substitution by the first line of source1.22 with its two real branches and original H/scale convention. Define its Lebesgue Jacobian as absolute determinant of the derivative of that exact map. Do not reconstruct BCH signs/arguments from abbreviated1.24."
+    },
+    {
+      "id": "F12",
+      "type": "uninstantiated_physical_gates",
+      "claim": "Del soporte a admisión completa",
+      "finding_verbatim": "Las entradas fijan una familia y condiciones, pero no una tabla completa de valores, períodos, índices de sectores, márgenes de la carta, eliminación de cutoff ni respuesta exterior. floor(M/6)>=R_star implicaría h-4>R_star para L>11,R1>=1, pero no hay autorización lógica para inferirla de una frase cualitativa ni seleccionar otro M.",
+      "review_disposition_verbatim": "No admitir la geometría física completa ni cerrar los costes exteriores. La reducción condicionada sigue siendo utilizable como lema de soporte con hipótesis declaradas.",
+      "review_limits_verbatim": "No se modificó ningún parámetro, ley, dominio o constante y no se presentó un ejemplo de juguete como testigo físico.",
+      "parent_disposition": "physical_admission_open",
+      "parent_action": "No numeric/all-sector tuple or common cutoff/chart/domain/response witness is supplied. Do not infer floor(M/6)>=R_star from qualitative scale language or retune M/domain."
+    }
+  ],
+  "controlling_operational_clarifications": {
+    "source_indicator_halos": "Preserve CUT-1 in full. In native first-step units b_halo=L M2 R1, h_geom=L M R1. With compatible source powers M=L^m, M2=L^m2 and M>M2, M/M2>=L; hence h_geom>=L*b_halo. For L>11 and b_halo>=1, two halo layers plus a four-cell bond allowance obey2*b_halo+4<h_geom. This is the geometric scale argument for factors actually labelled on S1; it does not replace the analytic/source conditions used to remove or reorganize the original approximate cutoff, nor identify every label without its full halo.",
+    "complete_outer_allocation": "Use the original factorization rho_out(theta,e)*K_theta(a_D,e) with its actual allocation of purely exterior terms. Then W_theta(e)=rho_out(theta,T_theta e)*abs(det D_e T_theta(e))*exp(Delta_theta(e)), where Delta is only the change of exponent terms actually retained in K. Do not count the EE quadratic/baselines twice, multiply rho_out again, or divide by a possibly zero indicator.",
+    "coefficient_ring": "Use C[eta_p,eta_q]/(eta_p^2,eta_q^2) for possibly complex scalar Wilson traces, or R only when marks are explicitly real. This algebraic choice changes no physical observable.",
+    "normalization": "Only after computing all four full outer integrals and proving finite nonzero Z_empty may one form Z_pq/Z_empty-Z_p Z_q/Z_empty^2. A conditional common weight does not cancel from the outer connected expression.",
+    "scale_and_guard": "Keep h_geom distinct from selected insertion h_sel, original U1 distinct from Uloc, original current correction and exact real1.22 branches. Earlier1872 guard correction and1808 H/operator scale distinction remain controlling; this report supplies no different physical H convention."
+  },
+  "scope_and_provenance": {
+    "model": "gpt-6-astra",
+    "effort": "xhigh",
+    "context": "separate fork none",
+    "observable_limit": "La orden recibida solicita esos valores. Este evaluador no dispone de una atestación del backend que autentique identidad efectiva, esfuerzo, aislamiento de contexto o independencia. No se deducen de la petición ni de un nombre de agente.",
+    "observed_conduct": "Una evaluación continua de las ocho entradas congeladas; no se abrieron informes de evaluaciones anteriores ni se iniciaron subagentes. Las menciones a evaluaciones previas que ya estaban dentro de los INPUT se leyeron como contenido, sin heredar sus conclusiones.",
+    "external_verification_of_independence": false
+  },
+  "review_scope": {
+    "included": "Propuesta1939-1940: separación entre dominio libre interior y cambios raw de T_H; primitivas originales bare, selección y Jacobianos; raíces Wilson originales de cuatro enlaces; cuatro coeficientes condicionados y peso exterior. Contraste local con CMP119 y CMP109.",
+    "excluded": [
+      "Evaluación de manuscrito/PDF propio",
+      "Capacity",
+      "1642",
+      "Novedad",
+      "Historia completa",
+      "Reevaluación de resultados anteriores",
+      "Auditoría global de las fuentes",
+      "Construcción o admisión de una instancia física simultánea",
+      "Cambios en parámetros, ley, dominio, repositorios, ESTADO u otros chats"
+    ],
+    "fixed_input_count": 8,
+    "transitive_reference_policy": "Las rutas y hashes citados dentro de los INPUT no ampliaron el paquete. No se abrieron sus archivos históricos, el manuscrito ni otros PDF. Los hashes verificados son los del manifiesto, sus ocho archivos INPUT y sus dos PDF; además se comprobó la coincidencia del vínculo1559 con el hash1535.",
+    "write_scope": "C:\\Trabajo\\airr\\2026-11-01_execution1941",
+    "network_or_credentials_used": false
+  },
+  "remaining_limits": [
+    "La lectura de fuentes fue focalizada; no valida todos sus resultados ni los trabajos citados por ellas.",
+    "No se autenticó la configuración efectiva ni independencia del backend; solo se describe la conducta observable en esta ejecución.",
+    "La independencia respecto de a_D se obtiene a fondo y sector fijos; no equivale a independencia o localidad en V, datos de borde o historia.",
+    "La prueba no construye una carta analítica uniforme ni demuestra la invertibilidad global de T_H para toda la familia de campos.",
+    "Los cutoffs se conservan con sus radios originales. Las condiciones para omitir la función aproximada y para reorganizarlos siguen siendo parte de la admisión de la fuente.",
+    "El exterior conserva baselines, factores delta, Faddeev-Popov, Haar, determinantes, normalización y todas las marcas exteriores. No se afirma un nuevo cambio de ley.",
+    "No se auditó como resultado independiente la identidad Ward de1694 ni su contabilidad detallada de constantes de derivadas, pues no son necesarias para este lema de separación.",
+    "Los ejemplos adversariales se preservan incluso cuando sus hipótesis son excluidas por el caso condicionado que sí sobrevive."
+  ],
+  "tests": "All12 full adversarial tests and three instrumental failures/recoveries retained in exact report. Seed1941 code and results retained with reported hashes. Finite G tests are not physical4D witnesses; no rerun required for disposition.",
+  "unreviewed_parent_clarification_boundary": "The report itself contains CUT-1 and FAC-1/COEF-1. The parent operational summary above follows that scope; it is not a reviewed complete manuscript/PDF, a source theorem proof or a new formal/all-sector certificate. No score is assigned or inherited.",
+  "next": "Review1941 is CLOSED: do not restart, repeat or seek a score. Preserve all12 findings/tests and the full exact report. Integrate this completed assessment and its exact frozen inputs into the knowledge tree with clear conditional scope and all indicator-halo, index, exact-Jacobian and exterior-weight qualifications; use branch/PR/checks/public verification. Then resume actual original cutoff/sector-domain and marked near-boundary/outer response with the SAME physical parameter chain. PR260/review1925 remain closed."
+}

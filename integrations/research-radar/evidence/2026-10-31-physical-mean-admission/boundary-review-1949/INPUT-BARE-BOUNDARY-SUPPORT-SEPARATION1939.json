@@ -1,0 +1,91 @@
+{
+  "execution": 1939,
+  "source": {
+    "path": "C:\\Users\\lluis\\Documents\\CodexYangMillsAutopilot\\runtime\\sources\\primary\\balaban-convergent-cmp119-from-fusion.pdf",
+    "sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+    "doi": "10.1007/BF01217741",
+    "text_pages": [
+      245,
+      246,
+      250,
+      251,
+      252,
+      253
+    ],
+    "visual_pages": [
+      251
+    ],
+    "anchors": "1.20 final small domain versus exterior change set;1.22 raw change;1.24-1.26 boundary allocation",
+    "reading_status": "selected original geometry and coordinate-change formulas read; not global proof audit"
+  },
+  "fixed_inputs": [
+    {
+      "path": "C:\\Users\\lluis\\Documents\\CodexYangMillsAutopilot\\runtime\\sources\\primary\\balaban-rg-I-cmp109-1104116842.pdf",
+      "sha256": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+      "read_pages": [
+        256,
+        257
+      ]
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1662/BULK-BOUNDARY-MARKS1662.json"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1694/BARE-BOUNDARY-STRUCTURE1694.json"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-11-01_execution1926/BARE-SOFT-FREE-STENCIL1926.json"
+    },
+    {
+      "path": "C:/Trabajo/airr/marked-rg-manuscript/WORKING-MANUSCRIPT.md"
+    }
+  ],
+  "status": "UNREVIEWED_BARE_SUPPORT_SEPARATION_REDUCTION_NOT_ALL_SECTOR_ADMISSION",
+  "target": "Resolve the missing scalar separation in manuscript line1367 for the actual first-step unexpanded boundary multiplier and local original Wilson roots. This is an actual source-support compatibility check, not a new covariance/norm lemma.",
+  "dedup": "1662 already states T_H is identity on inner free coordinates and gives the general exact multiplier split. Manuscript1367 only conditions on an inner stencil separated from S1 and asks for the scalar source separation.1694 gives finite bare selected primitive supports;1926 gives a loose fine-cell stencil candidate. This record combines the actual1.20 geometry with those complete carriers; it does not repeat the bulk/background ownership or Gaussian comparison.",
+  "source_geometry": {
+    "units": "First-step native fine-cell coordinates. h=L M R1 is the side of the source cells used for Omega1, R1_prime and the operations in1.20; do not confuse h with M1 collars or L^2 M2 R1 defect cubes. R1_prime is the union of h-cubes intersecting raw R1, so raw R1 is contained in R1_prime even if its original larger grid is different.",
+    "initial_sets": "The visually checked1.20 is D_pre=Omega1 eroded2 intersect complement(tilde R1_prime), and S1=(Omega1\\Omega1 eroded1) union raw R1. Tilde adds the touching layer in the defining cube family, as explained245-246.",
+    "final_domain": "The prescribed rectangular hull replacements enlarge small components of D_pre complement. Consequently the final conditional D=Lambda1 is a subset of D_pre; they cannot reduce distance from D to the fixed change set S1.",
+    "gap": "In the compatible periodic h-grid, the second erosion is separated by one full h-cell layer from Omega1\\Omega1 eroded1. Complement of tilde R1_prime is separated by one h-cell layer from R1_prime, hence from raw R1. Thus continuous sup-distance(D,S1)>=h before fine bond/data endpoint padding. A conservative fine index gap is h-4; endpoint/owner conventions must be matched to the actual source free bonds. This is a periodic-distance statement on source-compatible partitions; no varying torus is substituted."
+  },
+  "finite_bare_gate": {
+    "actual_range": "Let R_star bound the sup-diameter of EVERY actual first-step action/soft-gauge/Haar/selected-Jacobian primitive free-input carrier, the actual pulled-back precision couplings, and any original four-link Wilson-root complete free-input carrier under consideration. Use finite per-c selected reconstruction1694 at fixed original U1, not H1/old effective action or a later history precision.",
+    "sufficient_test": "Require h-4>R_star on this same law/domain. The loose1926 R_bare=8 d(L+1) may supply R_star only after its original chart/stencil conventions are verified. Its already proposed stronger floor(M/6)>=R_bare condition, with L>11 and R1>=1, would imply this separation. No M, R1, periods or physical constants are selected or enlarged here.",
+    "not_certified": "The original fixed hierarchy/stencil tuple and all-sector reconstruction binding have not been certified. The conclusions below apply only to branches satisfying the actual complete-carrier separation; do not promote a geometric containment into missing physical data or an all-sector pass."
+  },
+  "support_proof": [
+    "Fix the original sector/domain/background and all exterior conditioning, so H_(1,Lambda1) is an exterior parameter, not a function of the inner free a_D. The1.22 maps act independently on the specified raw free bonds in S1; their switch g(a_b) and one-bond Jacobians depend only on those exterior inputs and fixed H.",
+    "Write the ORIGINAL bare first exponent as the actual finite sum of Wilson and soft-gauge primitives plus free/selected Haar and selected-Jacobian terms, retaining carrierwise classical Taylor pieces and current-corrected quadratic as1694/1616. Under h-4>R_star, no such complete free-input carrier can meet both D and changed S1.",
+    "For a primitive meeting D, none of its inputs is changed by T_H. For a changed primitive, all its free inputs are exterior. Therefore the exact exponent difference L(T_H(a_D,e))-L(a_D,e) depends only on e. The raw T_H Jacobian also depends only on e. Original outside characteristic functions are pushed into the outer weight, without dividing by a possibly zero indicator.",
+    "Likewise Q_D,E (T_H(e)-e)=0 by the same precision support. At fixed original U1, the inner Gaussian precision and its cross forcing/conditional completion center are unchanged by this far-exterior coordinate change. This statement is about the bare finite matrix and does not integrate out physical gauge fibers.",
+    "Hence the UNEXPANDED explicit coordinate-change multiplier of1662 can be kept as an exterior factor R_H(e) for this separated bare branch: the four inner coefficients have the common form R_H(e) times the corresponding original inner integrals, with the marks still composed with the genuine exterior transport where required. Do not confuse R_H with the resummed logarithmic B^(1)."
+  ],
+  "root_cases": {
+    "interior_and_local_crossing": "For an original fine four-link Wilson root whose COMPLETE reconstructed raw-free carrier meets D and has diameter<=R_star, its carrier cannot meet changed S1. Thus this raw T_H acts identically on its inputs even if some lie just outside D. This reduces the explicit T_H-slot obligation for these local crossing roots; it does not localize U1 as a function of coarse V or identify Uloc with U1. Classification is by complete free carrier, not geometric center or selected output label.",
+    "pure_exterior": "A root with no inner free carrier remains its exact exterior factor M(T_H(e)); if it meets S1 it can change. Retain it in all four outer coefficients. Do not replace it by1 or infer independence after outer integration.",
+    "excluded": "Long transported/history words, a mark carrier with diameter exceeding the actual gap, varying H/background during an operator step, nonlocal old effective action, unmatched metrics/owners or unresolved proper-domain data are outside this support reduction."
+  },
+  "remaining_boundary_costs": "The exterior factor R_H can be nonlocal in exterior/coarse/background variables and must still be estimated and integrated with the ORIGINAL outer law. Near-boundary clusters of the bulk integral remain and still contribute to B^(1); this factorization does not remove them, their marked responses, cutoff flux, full normalizer/sectors, connected sums or history. No full B^(1) or simultaneous physical profile is obtained.",
+  "hypothesis_reduction": "Conditional on the actual finite bare support and scalar source separation, no separate inner-variable domination or covariance-sigma differentiation of the explicit far-exterior T_H multiplier is needed: it is an outer coefficient. This is a narrow participating-parent support conclusion. It is not reviewed1939, not covered by1925, and not a numeric/all-sector physical admission.",
+  "falsifiers": [
+    "A complete original primitive/precision/mark carrier bridges D and changed S1, or the fine-cell gap/owner conversion fails.",
+    "The original nonlinear selected determinant is not the finite per-c factorization used in1694.",
+    "H or T_H actually varies with the inner coordinate or the proposed covariance parameter while called fixed.",
+    "An old nonlocal effective action or long transported Wilson word is treated as an original bare finite primitive.",
+    "The exterior multiplier or near-boundary clusters are dropped from the outer integral, or U1 is replaced by Uloc."
+  ],
+  "levels": {
+    "literature": "selected1.20-1.26 geometry/change statements",
+    "heuristic": "unreviewed actual finite-carrier support reduction under explicit separation",
+    "formal": "none new",
+    "speculative": "all-sector physical boundary/locality/connected and history closure"
+  },
+  "temporary_render": {
+    "sha256": "a84dba9ed4744fe4b072e434c93dd8812d65a36679fe3d3ea405b18160b2a6d9",
+    "bytes": 244152,
+    "viewed": true,
+    "archived": false
+  },
+  "next": "Verify the actual source fine-bond/owner padding and complete first-step carrier bound against h-4, then carry the exterior-only multiplier and all four original root coefficients through the genuine outer law. Do not drop near-boundary clusters or inherit an all-sector pass; retain every1925 finding and the unchanged single physical parameter/domain chain. No new review, paper or recheck of PR260."
+}
