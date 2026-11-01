@@ -1,0 +1,44 @@
+{
+  "id": "source-operator-reading1914",
+  "date": "2026-11-01",
+  "kind": "own bounded literature synthesis; no new paper or review",
+  "sources": [
+    {
+      "doi": "10.1007/BF01239022",
+      "sha256": "ee39523a0f7b83af958513c7bd6f9c7731934b40355ef5d6b0f7a68ee6d022fc",
+      "anchors": "printed16 Eq2.18-2.22;17 Eq2.23;20 Eq2.37-2.38",
+      "reading": "selected statements and local resource allocation read;16 and20 visually checked; not whole-proof audited"
+    },
+    {
+      "doi": "10.1007/BF01238433",
+      "sha256": "80ab1ee09fff0a5b6840a568b72c400a812858425da3200bc5c1c9e2d6941482",
+      "anchors": "printed378-380 Eq1.71-1.75;389-392 Eq1.95-1.104",
+      "reading": "selected operator, partition and exponentiation statements read;378-380,389,391 visually checked; not whole-proof audited"
+    }
+  ],
+  "literature": {
+    "CMP116_alpha4": "Positive auxiliary Cauchy allocation chosen in2.18, not the original Jacobian amplitude. Its inverse occurs in1/abs(tau(Y)) and the final activity prefactor. Reducing it lowers quadratic/volume costs but raises the ordinary prefactor.",
+    "CMP116_gamma_2": "A subscripted auxiliary tail/quadratic constant in2.22, not gamma squared or automatically a physical Hessian margin. It controls both the negative bad-set exponent and positive quadratic cost. Alpha5 contains +gamma_2; the volume assumption uses (LM)^4 gamma_2.",
+    "CMP122_normalized": "For the native positive-base/small-complex-perturbation family,1.74 proves relative nonvanishing and1.75 bounds the normalized operator by exp(3 sup abs(sigma))*sup abs(F). The possibly small unmarked base mass cancels; no absolute volume-uniform inverse-mass floor is required for that particular estimate.",
+    "CMP122_partition": "X_j are the new small-field component class; Y_i are the retained large-field class. In1.95 q counts selected X_j and can be zero on domains meeting Y_i. The extracted exp(-p0) factor is for domains disjoint from all Y_i.",
+    "CMP122_mass": "Representation1.103 retains T_prime(Y_i)1 once and normalizes the remaining operator.1.104 retains those field-dependent mass factors; normalization does not discard them."
+  },
+  "own_inference": {
+    "confidence": "heuristic",
+    "mechanism": "Reuse the actual relative operator estimate for a bounded source-compatible insertion rather than introducing an independent absolute inverse-mass hypothesis. Carry a marked mass coefficient as well as the normalized boundary response.",
+    "hypotheses": "The insertion must be a genuine function on the original1.71 integration contour and its actual complex source domain; all histories, measures, gauges, cutoffs and original denominators stay fixed.",
+    "limits": "No original microscopic-mark identity, common LAW1535/1559 complex-domain matching, uniform marked carrier estimate, simultaneous physical parameter tuple or connected/history sum follows. Current-scale words cannot replace transported microscopic words.",
+    "falsifier": "A missing old input, incompatible Log/mean domain, erased q=0 retained-Y term, omitted mass factor or inconsistent reuse of alpha4/gamma_2 invalidates the application."
+  },
+  "correction_history": "Private1912 misread gamma_2 as gamma squared and alpha4 as a physical Jacobian amplitude.1913 corrected both from original displays; original record and correction remain conserved privately. Neither error is adopted here. Existing1895 and manuscript source formulas already use gamma2 correctly; this is not a novel source discovery.",
+  "assessment_context": "No independent assessment of this consolidation, no grade, no exact-PDF assessment and no inherited review validation. Closed1482/1645/1879 reports retain their own inputs and adverse limits.",
+  "formal": "No new formal result, Lean declaration or confidence promotion.",
+  "speculative": "Physical marked closure remains open; candidate1642 NOT ADMITTED.",
+  "counts": {
+    "sources": 120,
+    "candidates": 19,
+    "increment": 0
+  },
+  "graph_changed": false,
+  "foreign_source_bodies_copied": false
+}
