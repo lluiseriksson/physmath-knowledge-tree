@@ -1,0 +1,40 @@
+{
+  "scope": "Complete original graph-density local a.e L1 application; actual fixed one-copy chart and complete-weight conditions explicit. No full physical admission, endpoints or integral closure.",
+  "base_commit": "cbbf16e7c5afe690bbcd57760a7a1d4caed41f63",
+  "baseline_note_sha256": "4186f1a85d3f5c77e81a81ca1333b1b87a947bbfa72e8d5b4c0fe815eecf7808",
+  "append_sha256": "78d424bada332530dc92046992002cc8622ff09c47999135b3bc32e31235cd1b",
+  "final_note_sha256": "3ff17cb8d22b61a219d44bcdf9737bff114043928d4aebeaa1db100544af7bb5",
+  "files": [
+    {
+      "path": "integrations/research-radar/evidence/2026-10-31-physical-mean-admission/joint-measure-1860/JOINT-MEASURE-L1-APPLICATION1856.json",
+      "sha256": "0f0d8782d541713e67ad2784d7ee1af1448c2b9303b39be42fd7454dd2710f9e",
+      "bytes": 10267
+    },
+    {
+      "path": "integrations/research-radar/evidence/2026-10-31-physical-mean-admission/joint-measure-1860/ASSESSMENT1856.json",
+      "sha256": "6c25c89783494adabdb1f668c5e9db81e6fcd65793f88913e74e0a25fb6316eb",
+      "bytes": 34785
+    },
+    {
+      "path": "integrations/research-radar/evidence/2026-10-31-physical-mean-admission/joint-measure-1860/ASSESSMENT-RECEIPT1859.json",
+      "sha256": "cd4798032241517b6f3de9d3fbd9a7d56aa0e972f3bdc944080bd2acaff22b5c",
+      "bytes": 16938
+    }
+  ],
+  "exact_crlf_preservation": [],
+  "review_context": "One requested gpt-6-astra/xhigh separate-context assessment1856. Effective model/effort/context isolation/independence unauthenticated. Full unscored report with10 findings/adverse limits and5 adversarial tests; no restart, manuscript/PDF/Capacity/prior assessment/global build review. Editorial consolidation1860 unassessed, no inherited grade.",
+  "levels": {
+    "source_definitions": "literature",
+    "assessed_original_measure_application": "heuristic, conditional application",
+    "full_physical_closure": "speculative",
+    "formal_certification": false
+  },
+  "physical_admission": false,
+  "candidate1642_admitted": false,
+  "counts_unchanged": {
+    "sources": 120,
+    "candidates": 19
+  },
+  "new_paper": false,
+  "graph_edit": false
+}

@@ -1,0 +1,70 @@
+{
+  "kind": "New attempted original-measure application to the remaining1819/1852 density L1 gate. Not a Gaussian norm lemma, not a uniform activity bound or a new paper.",
+  "fixed_scope": "Fixed finite original lattice/sector and g0>0, unchanged LAW1535/1559 and source means/coordinate choices. Use the UNCOMPENSATED, unexpanded real bare first-step density with all original positive weights, delta/Haar normalization, selected determinant, shell Jacobian, original K and other indicators. No division by a full unknown Z_C or a connected logarithm. The target is local joint L1 on f in(0,1), followed by a.e compatible exterior/target data; not all-background or f=0 endpoint admission.",
+  "sources": [
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-convergent-cmp119-from-fusion.pdf",
+      "sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+      "locators": "243 original finite compact-group bare graph kernel0.1 and initial rho0;247-249 positive sector/gauge factors and exact selected-coordinate change1.12-1.15;251-253 shell composition and conditional integral"
+    }
+  ],
+  "premises": [
+    {
+      "path": "C:/Trabajo/airr/2026-11-01_execution1808/PHYSICAL-COMPOSED-RECONSTRUCTION1808.json",
+      "sha256": "0022ce4ee9dad8dc6fa08b521354acfab2e2bdc8e7ac1a6223190f977863d38b"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-11-01_execution1806/PHYSICAL-DETERMINING-SET1806.json",
+      "sha256": "744f358588fda7969fe9e4a3fb679056b1174bb33888f992708aa2183c3dea06"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1758/TARGET-DEPENDENT-CENTER1758.json",
+      "sha256": "113e0ff5f1f3da11f16c44558d627c36bdbdd562a7fd78171895afa8b1a01bc9"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-11-01_execution1819/MARKED-SHELL-INTERPOLATION1819.json",
+      "sha256": "e466d15a3f51d1508f8d086e9fe9da0024850fd58814cefab7b35e9af14e312d"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-11-01_execution1852/SHELL-SUPPORT-FORCING1852.json",
+      "sha256": "bc8e13ce419a12b4ace6f0132481e5adbf5c118be5b88e9f84692d241e9ad8cc"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1535/LAW-VERSION1535.json",
+      "sha256": "f668b5b57350dcdf9d60b579be927b260d9aaf2138ce4667462d0af4c6ca8388"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1559/LAW-BINDING1559.json",
+      "sha256": "a78244cb62773f907346968b16470892a00f1405219d0e9752f17b578af806dd"
+    }
+  ],
+  "ordered_original_measure_argument": [
+    "Start on ORIGINAL physical group variables U and independent active coarse targets V_I. For the actual measurable source average, integrating the normalized group delta delta(M_I(U)V_I^-1) over target Haar at FIXED U gives1. The finite-volume bare Wilson density exp[-A(U)/g0^2-E_norm] has finite mass on compact group space. Original sector indicators are nonnegative and bounded; the finite original gauge-fixing normalization is retained. Thus each original supported sector graph measure has finite mass, up to its actual finite fixed-volume baseline constants.",
+    "Keep J coarse rows determined solely by fixed raw exterior as their ORIGINAL compatible outer measure, not independent active target variables. For the actual source split1806, let xi denote the retained raw exterior/compatible target labels; its integration uses that original positive measure. Do not silently make the J rows free or divide by the mass of a sector.",
+    "Use ONE actually admitted source selected-coordinate/shell chart with its ORIGINAL chosen pivot coefficients and real branch. At fixed V_I,xi, the full unnormalized density W_b(V_I,xi,a_D,e) da_D de is the exact1808 pullback, including absolute determinant and branch support. It is zero off that actual chart. Require the chart to be one-to-one on the physical constrained graph; use its original graph once, not overlapping copies. On a disjoint original chart part, integrating this density over V_I and xi counts a subset of the original finite graph measure. Hence M_b=integral W_b dV_I dnu(xi) da_D de is finite.",
+    "The chart may depend on V_I through U1, C_rec, N and R. The preceding statement uses the full fixed-target source-pivot delta elimination or equivalently the full joint graph pullback; it does NOT integrate the centered residual delta in V at fixed fluctuation coordinates. The1758 exact matched-center zero of I-P_U D_V U1 is retained. No inverse determinant of that target block is inserted. Failure to justify this graph identification invalidates the proposed M_b bound.",
+    "An uncovered/off-chart part is not declared zero in the full physical law. The argument concerns the actual chart contribution only; any other original charts/sectors stay separate and require their own original allocation without multiplicity. It supplies no common K_C branch radius or physical family admission."
+  ],
+  "actual_f_density_identification_to_audit": [
+    "Hold V_I,xi,U1, masks and branch label fixed along f as1819. Since the source shell is identity on D, define the full uncompensated path contribution by the SAME actual pullback density evaluated at e=f a_E: W_b,f(V_I,xi,a_D,a_E)=1_B(a_E) W_b(V_I,xi,a_D,f a_E). B is any unchanged outer coordinate restriction; it need not be star-shaped. The original chart section and all coordinate-dependent exterior/inner factors must be evaluated consistently at that same argument, not merely the mark or the Gaussian. Static original inner K is unchanged because R_D=Id.",
+    "The equality W_b,f=W_b(...,f a_E), including JR(f a_E), direct Q_EE action, chosen-reference L_shell correction and all indicators/normalizations, is the proposed actual-density identification. If the1819 allocation leaves an additional unbounded static exterior weight, an extra f-dependent section selection, a changed background, or a nonlinear factor evaluated at a_E rather than f a_E, this identification must be corrected; those factors cannot be erased. Bounded static restrictions can only decrease the positive integral."
+  ],
+  "local_joint_integrability": [
+    "Let N_E=dim_real(g)*number_of_independent_E_bonds, with inverse orientations excluded. For0<epsilon<1 and f>=epsilon, a change y=f a_E in the OUTER integration used to estimate mass gives integral W_b,f dV_I dnu da_D da_E = f^(-N_E) integral_(y in f B) W_b(V_I,xi,a_D,y) dV_I dnu da_D dy <= f^(-N_E) M_b. Therefore the joint integral on f in[epsilon,1] is at most(1-epsilon)*epsilon^(-N_E)*M_b.",
+    "This is only a proof estimate after also integrating exterior variables. There is NO inserted f^N_E or change of variables in the original fixed-a_E conditional identity. The bound is explicitly dimension/volume dependent, not a uniform cluster/activity estimate. If E is empty, N_E=0 and the corresponding convention is unchanged.",
+    "Complete original real Wilson words have bounded complex scalar contractions for fixed source matrices, and finite complex sources have a fixed compact-source bound. Thus the same estimate applies coefficientwise with the actual finite word bound C_J. No positivity of complex weights or nonvanishing of a normalizer is asserted.",
+    "Tonelli/Fubini, applied to a countable exhaustion epsilon=1/n, then gives coefficientwise local L1 in(f,a_D) for almost every compatible (V_I,xi,a_E) with respect to the ORIGINAL target/exterior measure, for this admitted chart contribution. This does not establish it at every fixed background or exterior datum.",
+    "On a fixed actual real Q_D>0 background,1852 supplies smooth j_f=f Q_DE a_E,p_f,g_f,z_f on the whole f interval. On compact f intervals and fixed compact inner K, g_f and its inverse are bounded for that fixed datum. Hence writing the exact uncompensated density as g_f H_f transfers the above local L1 to H_f for a.e such data. p_f<=1 for the real positive precision, so compensation does not increase the positive total density. This pays the local density hypothesis of the existing1819 weak theorem only at that a.e/chart/fixed-volume scope.",
+    "No new proof or assessment of1819 is requested. If the actual density and graph identifications above hold, its existing coefficientwise distribution identity can be used on(0,1) for those a.e data, retaining the whole zero-extended density and any distributional section/cutoff derivatives. Splitting those derivatives into separate surfaces still requires traces/product hypotheses."
+  ],
+  "endpoint_and_uniformity_guard": [
+    "The bound epsilon^(-N_E) gives no integrability or trace at f=0, and no uniform volume/background/coupling bound. It also does not prove absolute continuity in f or integrability of the distributional derivative. Even f=1 pointwise traces require their actual hypotheses.",
+    "Adversarial finite-dimensional measure example, NOT a physical source instance: W(y)=|y|^(-3/2) on the two-dimensional unit disk, W=0 outside. Its total mass is4*pi, but W(f e)=f^(-3/2)|e|^(-3/2) has nonintegrable f behavior near0 for each nonzero e. Thus finite original joint mass alone cannot justify the global endpoint FTC. This refutes only that generic inference, not the source theorem or actual Wilson density.",
+    "Do not promote a.e admitted-chart local L1 into all-sector reconstruction, full normalized connected quantities, a spectral gap, fixed-parameter admission, or source/history estimates. All original unadmitted pieces and full normalizers remain."
+  ],
+  "review_request": "Assess this ONE new original-measure-to-a.e-density application, especially the exact graph-measure/pullback and f-density identification. Does it legitimately remove the local L1 assumption for admitted chart contributions after actual target/exterior integration, without reviving the refuted1758 target-elimination shortcut? Identify every source allocation, multiplicity, target-dependent-chart or static-weight error. A limited/adverse result is useful. No grade/restart, no new paper, no manuscript/PDF/Capacity/global source build or prior1819/1852 report assessment. Requested gpt-6-astra/xhigh separate context; effective identity/effort/independence unauthenticated.",
+  "physical_admission": false,
+  "candidate1642_admitted": false,
+  "new_paper": false,
+  "manuscript_changed": false
+}
