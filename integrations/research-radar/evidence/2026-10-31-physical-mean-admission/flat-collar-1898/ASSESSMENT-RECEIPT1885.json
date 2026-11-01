@@ -1,0 +1,514 @@
+{
+  "schema_version": 1,
+  "execution": 1885,
+  "at": "2026-11-01T07:53:24.837083+00:00",
+  "status": "COMPLETE_ADVERSE_PHYSICAL_WITNESS_DISPOSITION_LOCAL_GERM_ONLY",
+  "frozen_files": [
+    {
+      "path": "D:\\Proyectos\\airr-investigacion\\2026-11-01_flat-collar-review-integrated1885\\FLAT-COLLAR-INITIAL-TRACE1879.json",
+      "sha256": "6c9f7588eafaac81beeda7b64e8f8614d94ceec22f229c7aa6b6e41263896eff",
+      "bytes": 13121
+    },
+    {
+      "path": "D:\\Proyectos\\airr-investigacion\\2026-11-01_flat-collar-review-integrated1885\\FROZEN-MANIFEST1879.json",
+      "sha256": "bd102aaf062e68355c2012c5ab6fc17879e0a4b7383b0907f73d9bb301ddf472",
+      "bytes": 3239
+    },
+    {
+      "path": "D:\\Proyectos\\airr-investigacion\\2026-11-01_flat-collar-review-integrated1885\\ASSESSMENT1879.json",
+      "sha256": "e195ff78ca2353a51d456cfe0212347aa532e1eec319bbe9dd5bac030ac2c247",
+      "bytes": 48130
+    }
+  ],
+  "coordinator_full_report_read": {
+    "complete": true,
+    "pretty_json_characters": 47686,
+    "chunks": [
+      0,
+      10000,
+      20000,
+      30000,
+      40000,
+      47686
+    ]
+  },
+  "configuration": {
+    "requested_model": "gpt-6-astra",
+    "requested_effort": "xhigh",
+    "requested_context": "separate fork none",
+    "effective_model_identity_authenticated": false,
+    "effective_reasoning_effort_authenticated": false,
+    "effective_context_isolation_authenticated": false,
+    "reviewer_independence_authenticated": false,
+    "statement": "Se registran las etiquetas solicitadas. No se certifican identidad efectiva, esfuerzo efectivo, aislamiento ni independencia. Esta revisión es un cálculo delegado con el input y las premisas suministradas.",
+    "one_assessment": true,
+    "subagents_used": false,
+    "score_given": false,
+    "restart_performed": false
+  },
+  "controlling_disposition": {
+    "status": "GERMEN_PLANO_Y_ARGUMENTOS_CONDICIONALES_VALIDOS; TESTIGO_FISICO_PROPIO_NO_NULO_Y_TRAZA_COMPLETA_NO_ESTABLECIDOS",
+    "answer": "El archivo no acredita todavía un sector original propio con peso no nulo ni los dos fondos fuente con sus datos originales. La perturbación remota es una configuración legítima cerca de la identidad, y el mecanismo analítico por filas puede justificarse. Esto no paga la selección de Omega1 por las particiones originales, el cierre F10 del mínimo localizado, la compatibilidad simultánea de geometría y acoplamiento, ni una traza puntual de una densidad completa que conserve una delta exterior. No se ha construido un contraejemplo al teorema fuente ni se ha probado que sea imposible realizar tal testigo.",
+    "levels": {
+      "a_actual_physical_source_witness": "NO ACREDITADO. Existen un candidato global y un mecanismo local plausible; faltan un término original admisible no nulo, las máscaras y datos originales, y una elección simultánea admisible de parámetros.",
+      "b_flat_local_algebra_analytic_germ": "VERIFICADO con el significado preciso de una fila original plana, pivotes originales libres y sus portadores completos. La separación no lineal entre pivotes y la inclusión asintótica de un cubo físico pequeño no requieren invertir la derivada centrada respecto al target.",
+      "c_complete_initial_trace": "NO ACREDITADA como afirmación sobre la densidad completa en el dato propuesto. Hay una prueba condicional correcta para un núcleo interior escalar después de conservar la delta exterior como medida/restricción exterior; el input no completa esa definición ni sus premisas físicas.",
+      "d_outer_family_closure": "NO OBTENIDO: no traza L1 en datos exteriores, ni intercambio exterior irrestricto, ni normalizador completo no nulo, ni logaritmo conectado, ni regularidad AC, ni igualdad para la familia física."
+    },
+    "physical_admission": false,
+    "candidate1642_admitted": false,
+    "complete_physical_integral_equality_asserted": false,
+    "source_theorem_refuted": false
+  },
+  "verified_local_deductions": [
+    {
+      "id": "V01_remote_defect",
+      "statement": "En un retículo no aliasado, una sola arista fina no identidad en d=4 produce seis plaquetas elementales no identidad, con valores exp(±itT). Para t dentro de una vecindad exponencial inyectiva y T no nulo, su distancia a I es positiva. Todo portador que no toque esa arista tiene producto identidad.",
+      "derivation": "Hay dos plaquetas por cada una de las tres direcciones transversales. Las otras aristas son I; no se requiere conmutar productos no triviales.",
+      "limits": "No identifica una geometría/partición fuente admitida. 'Pequeño' debe referirse a las normas y radios fijos originales, no a una nueva convención numérica."
+    },
+    {
+      "id": "V02_mean_support",
+      "statement": "En las medias (0.4)/(0.12), los caminos de raíz permanecen dentro de sus bloques y el camino transportado cruza la interfaz de esos dos bloques. Una fila completa que no encuentra b* vale exactamente I al evaluar U*.",
+      "derivation": "Cada factor ordenado de esa fila es I; M({I})=I. Las filas exteriores que sí encuentran el defecto son M(U*) y no objetivos Haar independientes.",
+      "sources": [
+        "S109 pp.252-254, (0.4)-(0.12)"
+      ],
+      "limits": "La propiedad solo se aplica a portadores completos y efectivamente disponibles en el problema original."
+    },
+    {
+      "id": "V03_original_variational_candidate",
+      "statement": "Si se toma una máscara original bien definida cuya región variada y todas las plaquetas/gauge que la tocan estén en el collar identidad, U* es un competidor factible de (1.12), idéntico a I en la parte variada. Al separar el exterior fijo, alcanza el mínimo de la suma de los términos no negativos que pueden variar.",
+      "derivation": "U*=V0 en el exterior prescrito y M(U*)=V por construcción. Todo término Wilson/gauge que contiene una variable tiene valor cero en U*. Los términos remotos son constantes. Así A(U)+G(U) >= A_ext(U*) y se alcanza la igualdad.",
+      "limits": "Esto prueba un mínimo para esa máscara y esos datos completos, no que la máscara sea el Omega1 de un término no nulo, ni el representante canónico fuente, ni el mínimo localizado de (1.21). U1 no es I globalmente: retiene el defecto raw exterior."
+    },
+    {
+      "id": "V04_selected_flat_pivot",
+      "statement": "P_beta,c=L^(1-d) Id, y Q_beta,c=L^(-d) Id cuando P=LQ. La dependencia entre pivotes de filas distintas desaparece exactamente en la media no lineal original.",
+      "derivation": "Un puente seleccionado de una interfaz solo pertenece a los contornos de esa fila; los caminos de raíz internos no usan puentes seleccionados ajenos. En la derivada plana, el puente aparece en L de los L^d términos trasladados. Las contribuciones del contorno de referencia U(c)^-1 y del U(c) final se cancelan a primer orden.",
+      "sources": [
+        "S109 pp.252-254",
+        "P1808 C02 y C10"
+      ],
+      "limits": "La normalización se aplica al pivote fino original y no a la derivada centrada I-P_U D_V U1."
+    },
+    {
+      "id": "V05_nonlinear_row_germ",
+      "statement": "Con h_beta=P_beta^-1 y h_S=0, la ecuación F(B-hD)=PB se separa por filas en la incógnita D. Su derivada respecto a D en (B,D)=(0,0) es -Id. Por el teorema de función implícita analítica existe una rama D(0)=D'(0)=0, N(B)=B-hD(B), única cerca de 0.",
+      "derivation": "Las ecuaciones pueden compartir variables libres, pero no otras incógnitas D_c. Cada fila usa un número acotado de enlaces dependiente de L. En fondo plano las ecuaciones son las mismas, o un número finito de tipos de borde/orientación con entradas fijas I. Intersectar esas vecindades da un radio positivo y cotas en norma máxima que no dependen del número de filas.",
+      "limits": "Se presupone el conjunto original de filas/pivotes independientes, sin eliminar enlaces de gauge ni usar un dato raw como pivote libre. Es un resultado local analítico, no una admisión física."
+    },
+    {
+      "id": "V06_cutoff_absolute_smallness",
+      "statement": "Para un conjunto finito fijo de coordenadas y un fondo verdaderamente plano en sus portadores, la clausura del cutoff libre interior entra en esa rama cuando C_L C_delta g0[log(g0^-2)]^p es suficientemente pequeña. Para e finito también entra g0 C_rec(a_D, f e), uniformemente en a_D del cutoff, en un intervalo 0<=f<=f0.",
+      "derivation": "La norma física está acotada por C_L g0(C_delta ell^p+f||e||_max). Se elige un radio interior estricto de la rama, se usa g ell^p ->0, y después se elige f0 positivo. Compacidad a g0 fijo da un mínimo positivo de los módulos de los determinantes en una rama real no singular.",
+      "limits": "No acredita un intervalo físico de g0 para una geometría fuente finita fija ni autoriza ampliar el dominio fuente por continuación analítica. La inclusión absoluta no mejora C_delta/A0."
+    },
+    {
+      "id": "V07_zero_H",
+      "statement": "Si los dos fondos fuente originales coinciden con I en todos los enlaces shell necesarios, H_eff=(1/i)Log(U1 Ulocal^-1)=0 en la rama matching. Entonces R(a)=a y J_R=1 en esa rama para ambas clases de gamma.",
+      "derivation": "Log(exp(i g0 a))=i g0 a solo en la hoja admitida. El factor gamma H_eff es exactamente cero, de modo que ni la no analiticidad de gamma ni su soporte intervienen.",
+      "limits": "No elimina F10 ni prueba que los dos fondos existan con esos datos. Se mantiene H_eff=L^-1 H_operator. No se usa la inferencia retirada sobre soporte compacto."
+    },
+    {
+      "id": "V08_empty_new_bad_set",
+      "statement": "Si A=0 es el origen de las coordenadas fuente realmente admitidas, (1.18) obliga R_bad=vacío: todos los supremos son cero y delta0/g0>0.",
+      "sources": [
+        "S119 p.250, (1.18)"
+      ],
+      "limits": "No se debe confundir el R_bad nuevo vacío con P0 vacío. Un defecto raw puede hacer P0 no vacío mientras R_bad es vacío. Esta deducción requiere antes la identificación del origen con el fondo fuente."
+    }
+  ],
+  "findings_preserved_complete": [
+    {
+      "id": "O01_sector_not_selected",
+      "status": "DEPENDENCIA_FISICA_NO_PAGADA",
+      "claim": "El dato produce un sector original propio no nulo.",
+      "finding": "Omega1 no es un índice libre que pueda elegirse solo por quedar lejos de b*. La fuente determina Omega1 por P0, P1 y Q1 mediante (1.10), después resuma exactamente los índices que dan ese Omega1. El input no exhibe esa selección ni prueba simbólicamente que la máscara supuesta sea una de las resultantes.",
+      "evidence": "S119 pp.245-248, (1.1), (1.4), (1.8), (1.10)-(1.11). P0 usa supremos sobre cubos ampliados, no solo la localización de b*; P1 usa mínimos locales en cubos ampliados cuatro veces; Q1 usa fluctuaciones aproximadas y el conjunto estrella.",
+      "required": "Identificar los tests de esos cubos con los tamaños, ampliaciones y convenciones originales; demostrar que la Omega1 obtenida es propia y no vacía y conserva los portadores del collar. Se acepta una prueba simbólica suficiente: no se exige cambiar el grupo o fijar números arbitrarios.",
+      "falsifier": "Una sola condición grande obligatoria en el término elegido que tenga supremo cero, o una condición pequeña que vea el defecto por un portador omitido, hace cero ese término."
+    },
+    {
+      "id": "O02_nonzero_weight",
+      "status": "NO_NULIDAD_NO_DEMOSTRADA",
+      "claim": "Una configuración compatible basta para un término fuente no nulo.",
+      "finding": "La compatibilidad puntual M(U*)=V coloca el dato en el soporte de las restricciones; no demuestra por sí sola masa positiva de la fibra ni densidad exterior regular. En una suma finita de indicadores y factores de gauge positivos, un sumando estrictamente admisible sería suficiente para positividad de zeta; ese sumando no está establecido aquí.",
+      "evidence": "S119 (0.1), (1.5)-(1.6), (1.11), (1.15).",
+      "required": "Un término original con todas sus desigualdades pertinentes, una vecindad relativa no vacía de la fibra de medias, y rango completo/coarea para las restricciones que se integren. La IFT de los pivotes activos no prueba por sí sola el rango de las filas exteriores J.",
+      "qualifications": "Un defecto t fijo produce un factor exp(-c(t)/g0^2) extremadamente pequeño pero estrictamente positivo a g0>0; esa supresión no es el obstáculo. Tampoco es necesario que el integrando marcado de cada palabra Wilson sea positivo.",
+      "falsifier": "Un punto compatible que quede en una frontera sin vecindad relativa admisible, una fibra singular o un producto de indicadores nulo no paga la no nulidad."
+    },
+    {
+      "id": "O03_fixed_volume_small_g",
+      "status": "FALLO_DEL_ARGUMENTO_ASINTOTICO_COMO_ADMISION_DE_GEOMETRIA_FIJA",
+      "claim": "Se fija una geometría finita fuente y se toma g0 suficientemente pequeño sin más.",
+      "finding": "R0 es la menor potencia de L mayor o igual que ell^r, y R1 depende análogamente de g1. Los cubos MR0, LMR1 y L^2 M2 R1 deben caber en particiones compatibles. A número finito fijo de sitios, R0 crece sin cota cuando g0->0; por tanto no existe todo un intervalo final 0<g0<g* con esa misma geometría fuente finita admisible.",
+      "evidence": "S119 pp.245-246; S109 p.251, toro finito y retículos.",
+      "derivation": "Si N mide un lado del retículo en unidades finas, ya MR0<=N es una condición necesaria básica; la existencia de un Omega1 propio con collars exige espacio adicional. La cota analítica da una restricción superior sobre g0; la geometría impone un límite inferior efectivo. Hace falta probar que sus rangos se solapan.",
+      "required": "Una elección simultánea en la geometría original, o una cuantificación explícita que elija primero g0 y una geometría fuente permitida y luego mantenga ambos fijos para f->0. Esta última elección no puede presentarse como una prueba para el dominio fijo si lo cambia.",
+      "falsifier": "R0 o R1 mayores que el tamaño compatible disponible, o la erosión/filling que vacíe el interior, invalida ese caso sin refutar el germen analítico."
+    },
+    {
+      "id": "O04_parameters_original_law",
+      "status": "GATES_ORIGINALES_CONSERVADOS",
+      "claim": "La pequeña norma física resuelve toda admisibilidad fuente.",
+      "finding": "g0 ell^p->0 paga un radio analítico absoluto. No paga theta=C_delta/A0 ni la hipótesis fuente A0 mucho mayor que A1 empleada para eliminar características en (1.10)-(1.11). Tampoco resuelve la discrepancia impresa de delta0 ni el esquema g1_ref/beta_ref. La fuente impone además p0>=5r en la elección de epsilon0 de p.246, mientras LAW1535 enumera solamente p entero positivo. El argumento local g0 ell^p->0 vale para todo p fijo, pero una admisión como sector fuente necesita las condiciones originales sobre ese p fijo y sobre las particiones; no se obtienen de la mera positividad de p.",
+      "evidence": "P1535, P1559; S119 pp.247-248; S109 p.255, (0.18).",
+      "required": "Para identificar exactamente el término con la ley fuente transformada deben mantenerse y comprobarse los gates necesarios. Se puede estudiar un núcleo local conservando todas las características raw, pero no identificarlo sin prueba con una expresión que las ha eliminado.",
+      "falsifier": "Rebajar C_delta, ampliar A0, variar p, escoger otra media, cambiar beta_ref/g1_ref o sustituir un prefactor para obtener espacio sería otro problema."
+    },
+    {
+      "id": "O05_original_minimum_vs_global_identity",
+      "status": "MINIMO_LOCALMENTE_JUSTIFICABLE; IDENTIFICACION_FUENTE_PENDIENTE",
+      "claim": "U1=I.",
+      "finding": "La igualdad solo puede referirse a la parte activa y al collar. Globalmente U1 debe conservar V0, incluido b*. El argumento de energía no negativa es válido si cada plaqueta con una variable y cada portador gauge está en la zona identidad; un defecto remoto añade una constante solo después de verificar esa incidencia.",
+      "evidence": "S119 (1.7), (1.12); S102 (2)-(6); S109 (0.2), (0.11), (0.14).",
+      "required": "Máscara de variación y datos completos originales; pertenencia al dominio regular pertinente; compatibilidad de la órbita y del representante de gauge seleccionado. Theorem 1 exige datos de (7), epsilon1<=a1 y B3 epsilon1<=epsilon0_var<=a0 en el dominio al que se aplica.",
+      "qualifications": "No se confunde epsilon0_var del problema variacional con epsilon0(g0) bare. La existencia de un competidor regular no identifica automáticamente toda regularidad de datos más fuerte ni el representante canónico. La positividad Wilson sola tampoco es una prueba de unicidad módulo gauge.",
+      "falsifier": "Una plaqueta incidente o un portador gauge que una b* a un enlace variado destruye la separación en baseline fijo más términos anulados por I."
+    },
+    {
+      "id": "O06_F10_preserved",
+      "status": "F10_ABIERTO_Y_BLOQUEANTE_PARA_Ulocal",
+      "claim": "El mínimo localizado original de (1.21) también vale I.",
+      "finding": "El input vuelve a proporcionar un campo global U*. Ese campo prueba que se puede imaginar una extensión plana de los nuevos datos; no identifica cuál es el dato original disponible en todos los enlaces de la frontera exterior del dominio propio O=Lambda1^c. En particular, una plaqueta fina incidente a O puede necesitar el enlace opuesto fuera de B_loc. Que su valor ambientemente escrito sea I no demuestra que (1.21) lo prescriba.",
+      "evidence": "P1826, F10 y 1826-X03/X04/X05; S102 pp.277-278, incidencia y (7); S119 p.251, prescripciones retenidas y Q1*V en (1.21).",
+      "required": "Para esa plaqueta: exclusión documentada por la definición fuente o valor/dependencia prescrito de cada enlace, incluidos inputs de medias inferiores. No completar por U*, por un W global o por datos interiores a Lambda no autorizados; no alterar 2.14 ni V0.",
+      "qualifications": "En todo portador cerrado efectivamente prescrito, el caso identidad elimina productos no conmutativos y sus cotas son cero. Esto simplifica la regularidad, pero no convierte un enlace no definido en un dato fuente. No se construye un contraejemplo al Theorem 1 ni se reabre 1826.",
+      "falsifier": "Si la plaqueta F10 está exigida y su enlace opuesto no está prescrito, el uso del mínimo localizado y de H_eff=0 sigue sin justificación."
+    },
+    {
+      "id": "O07_canonical_gauge",
+      "status": "DEPENDENCIA_NO_RESUELTA_POR_ENERGIA",
+      "claim": "Un mínimo plano obliga el representante fuente utilizado en C/N y en (1.21).",
+      "finding": "La mínima órbita y su representante no son el mismo objeto. Se debe usar el gauge fuente, sus raíces y sus datos de borde. I satisface los portadores gauge identidad, pero esa comprobación exige que sean precisamente los portadores originales en las dos construcciones.",
+      "evidence": "S102 pp.278-280, (4), Theorem 1 y (18); S119 (1.5), (1.7), (1.12); S109 (0.11), (0.14)-(0.16).",
+      "required": "Identificación de la órbita regular y de la sección canónica matching para ambos fondos, sin transferir eliminación por delta axial desde otro cálculo a los enlaces independientes actuales.",
+      "falsifier": "Una transformación de gauge no trivial en un extremo retenido, una raíz cambiada o una sección distinta puede conservar la acción y cambiar el fondo/enlace que entra en H."
+    },
+    {
+      "id": "O08_local_germ_not_source_domain",
+      "status": "DISTINCION_DE_DOMINIOS_NECESARIA",
+      "claim": "La rama IFT sobre K_D es el chart canónico fuente completo.",
+      "finding": "Se verifica el germen no lineal y su inclusión absoluta asintótica. La unicidad IFT identifica dos soluciones cercanas cuando ambas están definidas; no demuestra que el dominio fuente ya incluya toda esa vecindad, ni que no haya una restricción/partición de charts adicional, ni que la continuación matemática represente el término original.",
+      "evidence": "S119 (1.13)-(1.15); P1808 C01, C06, A3.",
+      "required": "Identificar la rama fuente que contiene el origen y su vecindad abierta real, demostrar que el cutoff cerrado queda estrictamente dentro de ella para un g0 físicamente admisible, y conservar las demás restricciones como indicadores. No sirve una extensión cero de una sección que excluya 0.",
+      "qualifications": "Si esos datos se acreditan, la coincidencia con el germen es automática por unicidad local y la prueba de inclusión es suficiente; no se exige un nuevo teorema uniforme para todos los fondos.",
+      "falsifier": "Una sola fila sin pivote disponible, un portador con fondo no plano, una frontera de hoja dentro del cutoff o un trozo fuente que excluya el origen invalida la cobertura afirmada."
+    },
+    {
+      "id": "O09_full_cutoff_and_selected_outputs",
+      "status": "CONDICION_CORRECTA_QUE_DEBE_PRESERVARSE",
+      "claim": "El cutoff interior basta para reconstruir la integral completa.",
+      "finding": "K_C incluye todos los enlaces libres originales. La traza a e fijo debe conservar k_E(f e), además de K_D; los pivotes son salidas N(g0 C_rec(a_D,f e)), no variables Haar nuevas ni los enlaces del mínimo localizado.",
+      "evidence": "P1535, P1559, P1808 C01/C06/C09/C10; S119 (1.9), (1.14)-(1.15).",
+      "required": "Diccionario real de I, J, S_D, S_E y raw F, con orientaciones independientes y la máscara Lambda1 final tras (1.20) y el filling de componentes.",
+      "qualifications": "A f=0, k_E es estrictamente interior porque tau_C>0; para e finito se mantiene en 1 durante un intervalo corto. Esto no elimina otros indicadores ni demuestra que Lambda1 tenga enlaces libres interiores.",
+      "falsifier": "Omitir k_E, cambiar el radio de K_D, borrar enlaces de gauge, incluir inversas como variables nuevas o sustituir pivotes por I cambia la ley o la medida."
+    },
+    {
+      "id": "O10_outer_delta_not_scalar",
+      "status": "ERROR_SI_SE_LEE_COMO_DENSIDAD_PUNTUAL_COMPLETA_ACOTADA",
+      "claim": "Todos los factores de la densidad completa, incluidas las deltas originales, están acotados por una constante finita en el dato compatible.",
+      "finding": "Después de eliminar los pivotes activos, la fuente conserva la delta exterior delta(M_J(V0)V_J^-1) bajo dV0. Está visible en (1.15) y (1.29). Una delta de grupo no es una función acotada sobre el producto de datos; en M_J(V0)=V_J no se convierte en el número 1 ni en una constante finita.",
+      "evidence": "S119 pp.249 y 254, (1.15), (1.29); P1808 C08.",
+      "required": "Definir J_alpha como núcleo interior condicionado, dejando la delta en la medida/restricción exterior original, o efectuar una eliminación/disintegración exterior justificada con sus jacobianos y rango. La primera opción permite una traza puntual del núcleo, pero debe declararse y no llamarse valor escalar de la densidad completa respecto a Haar producto.",
+      "qualifications": "Retener la delta en su lugar es correcto; no se propone eliminarla de la ley. Si 'densidad completa' ya significa densidad relativa a una medida exterior restringida, hay que especificar esa medida y el representante del núcleo. La mera compatibilidad de las filas J no paga la disintegración.",
+      "falsifier": "Un paso que evalúe delta(I) como 1, que la absorba en la constante dominante o que cambie dV0 delta por Haar libre es inválido."
+    },
+    {
+      "id": "O11_density_bound_fixed_datum",
+      "status": "VALIDO_PARA_FACTORES_ESCALARES_EN_COMPACTO_ADMITIDO",
+      "claim": "Existe un majorante finito.",
+      "finding": "En una rama real admitida con derivadas seleccionadas uniformemente invertibles sobre la clausura, todos los factores escalares suaves originales sí tienen una cota finita a volumen y g0 fijos. Las características son acotadas por 1 y una resummación finita sigue acotada. Esto no depende de una cota uniforme en g0 o volumen.",
+      "evidence": "P1808 fórmulas alternativas de medida; S119 (1.5), (1.11), (1.14)-(1.15).",
+      "required": "Mantener baseline exterior, gauge z, potencias de g0 y sigma0, inversos seleccionados, Haar, v si se usa su combinación fuente, y cada indicador con el mismo soporte. Excluir la delta exterior del listado de funciones escalares, sin excluirla de la ley.",
+      "qualifications": "z del gauge es positivo finito para epsilon0>0 porque integra una función positiva sobre una vecindad abierta de I en un grupo compacto. Eso no prueba positividad del normalizador completo. No duplicar producto |det A_c|^-1 y |det DN|/|det P_beta|: son formas alternativas.",
+      "falsifier": "Si un determinante alcanza cero en la clausura, la palabra 'compacto' no da una cota del inverso. Si se ha dividido por un normalizador no demostrado no nulo, tampoco."
+    },
+    {
+      "id": "O12_characteristic_inventory",
+      "status": "ARGUMENTO_DE_FRONTERA_PARCIAL; INVENTARIO_FISICO_PENDIENTE",
+      "claim": "Todas las fronteras restantes tienen medida interior cero.",
+      "finding": "La estrategia es válida para un número finito de restricciones con función real analítica y nivel no idéntico en la componente conectada de la rama. No basta afirmar que todo es una norma. En (0.14), la norma matricial de grupo satisface |U-I|^2=2(1-Re tr U), por lo que su cuadrado es real analítico en la rama. Los supremos finitos se tratan por la unión de las fronteras de sus entradas. Las esferas de cualquier norma genuina de un espacio real finito dimensional tienen medida de Lebesgue cero; no hace falta que esa norma sea analítica.",
+      "evidence": "S109 p.254, (0.14); S119 (1.1), (1.4), (1.5), (1.8), (1.18), (1.23).",
+      "required": "Clasificar cada característica conservada como fija exterior, de una norma libre, o de una función analítica física definida en la rama. Para cada igualdad interior relevante debe haber un punto de la misma componente donde no se alcance el nivel, normalmente a_D=0 si todo su portador activo es I. El input no demuestra esto para todos los portadores fuente y todos los mínimos locales que aparecen.",
+      "qualifications": "No se ha probado que una norma arbitraria compuesta con una aplicación analítica tenga nivel nulo. La norma operatorial, si fuera la elegida, requeriría otro argumento, por ejemplo el determinante analítico de X*X-tau^2 I; no se sustituye aquí por la norma de traza sin licencia. No se aplica un teorema de ceros analíticos al guard C-infinity ni a un indicador de asignación de chart.",
+      "falsifier": "Una restricción dependiente de f cuyo valor en f=0 sea exactamente el umbral para todo a_D, o una asignación no retenida de chart con salto, puede tener frontera de medida interior positiva."
+    },
+    {
+      "id": "O13_fixed_exterior_thresholds",
+      "status": "DISTINCION_ENTRE_SOPORTE_Y_CONTINUIDAD",
+      "claim": "Elegir t/g0 fuera de los umbrales resuelve todas las características exteriores.",
+      "finding": "Los umbrales fuente se aplican a normas de productos de grupo, mínimos y supremos específicos, no solo al cociente t/g0. Deben comprobarse esas cantidades reales. Para un factor puramente raw que sea independiente de a_D y de f, incluso estar exactamente en un umbral no rompe por sí mismo la continuidad en f: el indicador es constante. Pero no proporciona la vecindad estricta que se usa para demostrar un sector de masa positiva.",
+      "evidence": "S119 (1.1), (1.4), (1.8), (1.11), (1.23).",
+      "required": "Separar las características fijas de las que varían con f. La estrictitud en el origen debe exigirse donde se use para estabilidad de soporte o para positividad, no como argumento genérico de medida cero en las coordenadas interiores.",
+      "falsifier": "Una igualdad exterior dependiente de f que persista para todos los a_D en f=0 invalida el argumento que invoca solo analiticidad en a_D."
+    },
+    {
+      "id": "O14_trace_definition",
+      "status": "TRAZA_CONDICIONAL_CORRECTA; RESULTADO_FISICO_PENDIENTE",
+      "claim": "J_alpha(f,theta_flat,e)->J_alpha(0,theta_flat,e) para los cuatro coeficientes.",
+      "finding": "DCT daría un límite ordinario por la derecha de un núcleo interior escalar definido por el mismo integrando completo escalar en f=0, si hay chart común, cota integrable y convergencia de todos los indicadores casi por doquier. No basta una igualdad para casi todo dato exterior: la traza exige el representante canónico puntual que el input intenta fijar.",
+      "required": "Definir el núcleo y la medida de referencia, comprobar O01-O13 para el dato real y no para una extensión, y conservar el valor exacto en f=0. La delta exterior debe permanecer en la medida original o eliminarse de forma justificada, según O10.",
+      "qualifications": "El mayorante constante es integrable porque K_D a g0 fijo y dimensión finita tiene volumen finito. No se toma g0->0 en el paso DCT: se usa un solo g0 ya admitido y después f->0.",
+      "falsifier": "Una modificación arbitraria del valor del núcleo solo en f=0 puede mantener integrales casi por doquier y destruir la igualdad con el límite. Una frontera forzada f-dependiente también puede destruirla."
+    },
+    {
+      "id": "O15_words_retained",
+      "status": "LIMITACION_DE_IDENTIFICACION; SIN_REPETIR_TESTS_ANTERIORES",
+      "claim": "Los cuatro coeficientes Wilson y el valor exterior en 0.",
+      "finding": "Las palabras escalares finitas sobre enlaces unitarios son acotadas, por lo que no añaden una dificultad a DCT una vez que el núcleo real está controlado. Deben conservarse orden, orientaciones, raíces, extremos y pivotes reconstruidos. Enlaces raw que contienen b* no tienen valor I. Un enlace seleccionado geométricamente exterior puede depender de a_D si su fila contiene variables interiores.",
+      "evidence": "P1808 C13 y disposición de palabras.",
+      "required": "Usar las palabras originales. El valor identidad en f=0 solo se deduce para una palabra formada por los enlaces libres exteriores apropiados con fondo I, o tras comprobar su reconstrucción completa. Una palabra raw tiene su producto V0, posiblemente no identidad.",
+      "qualifications": "El input acierta al no afirmar factorización genérica por tener raíz exterior. No se han reejecutado tests de derivadas ni se han inventado las cuatro palabras no explicitadas en este input.",
+      "falsifier": "Asignar I a todo lo llamado 'exterior', quitar un pivote reconstruido o factorizar una palabra que cruza el interior cambia el coeficiente."
+    },
+    {
+      "id": "O16_no_outer_upgrade",
+      "status": "LIMITES_CONSERVADOS",
+      "claim": "Una traza en un fondo plano cierra la igualdad física.",
+      "finding": "Aun pagando el caso plano, la constante dominante puede depender de volumen, g0, V0, sector y e. No se ha integrado esa constante sobre las variables exteriores ni demostrado cobertura de la familia. No hay conclusión de L1(theta,e), intercambio exterior, derivada ordinaria/AC, no nulidad del normalizador completo o logaritmo conectado.",
+      "evidence": "P1808 y limitaciones explícitas del input.",
+      "required": "Mantener separadas esas obligaciones futuras; no presentarlas como corolarios del caso finito.",
+      "falsifier": "Usar una cota finita que depende de theta/e como si fuese una cota integrable uniforme, o dividir por un normalizador solo formal, sería una promoción inválida."
+    }
+  ],
+  "source_characteristic_and_measure_ledger": [
+    {
+      "factor": "Partición fine P0",
+      "source": "S119 (1.1)",
+      "dependence": "Supremos de plaquetas en cubos ampliados; raw cerca de b*, activos según portador.",
+      "review": "t pequeño fijo da una plaqueta mala frente a epsilon0(g0) para g0 pequeño, pero falta construir la máscara P0 y el término completo con geometría admitida."
+    },
+    {
+      "factor": "Partición coarse P1 y chi1",
+      "source": "S119 (1.2)-(1.4)",
+      "dependence": "Mínimos de datos canónicos Q1*V en cubos ampliados cuatro veces.",
+      "review": "Identidad si todos los datos originales de ese problema local son identidad y el mínimo canónico está identificado; no basta que el centro del cubo esté lejos."
+    },
+    {
+      "factor": "Gauge chiAx, G y z",
+      "source": "S119 (1.5)-(1.7); S109 (0.11),(0.14)-(0.16)",
+      "dependence": "Contornos internos de bloques originales.",
+      "review": "Positividad/finitez de z verificable; a fondo identidad cada término gauge pertinente vale cero. No eliminar enlaces independientes como si el gauge actual fuera una delta axial."
+    },
+    {
+      "factor": "Partición Q1 y chi0",
+      "source": "S119 (1.8)-(1.9)",
+      "dependence": "Supremos sobre enlaces libres estrella de U U1,box^-1.",
+      "review": "Mantener pivotes excluidos y el mínimo aproximado original. Requiere portadores/datos y selección original."
+    },
+    {
+      "factor": "zeta(Omega1^c)",
+      "source": "S119 (1.11)",
+      "dependence": "Resummación exterior de características y pesos gauge.",
+      "review": "Finita a volumen finito; no negativa como suma original. No nulidad exige al menos un sumando admisible, que no está acreditado."
+    },
+    {
+      "factor": "Restricción activa de medias y pivotes",
+      "source": "S119 (1.14)-(1.15); P1808",
+      "dependence": "F(N(B))=PB, P_beta y N originales.",
+      "review": "Eliminación local y formas alternativas exactas de densidad; cota solo en chart real admitido."
+    },
+    {
+      "factor": "Delta exterior en J",
+      "source": "S119 (1.15),(1.29)",
+      "dependence": "M_J(V0)=V_J.",
+      "review": "Medida/restricción, no factor escalar acotado. No evaluar delta(I)."
+    },
+    {
+      "factor": "Partición nueva R_bad",
+      "source": "S119 (1.18)",
+      "dependence": "Supremos de norma de variables libres A en cubos estrella.",
+      "review": "En A=0, solo R_bad vacío. Normas libres y cutoff ALL-free conservados."
+    },
+    {
+      "factor": "Características shell",
+      "source": "S119 (1.19),(1.23),(1.25)",
+      "dependence": "A libre y Ulocal U1,box^-1 en portadores exteriores apropiados.",
+      "review": "Requieren Ulocal original/F10 y el mínimo local de cada cubo; si ambos son I, el origen es estricto y la dependencia en f es continua en intervalo corto."
+    },
+    {
+      "factor": "Guard gamma",
+      "source": "S119 (1.22), p.252; P1872",
+      "dependence": "C-infinity en enlaces shell libres.",
+      "review": "gamma=0 cerca de 0. Con H_eff=0 la aplicación exacta R es identidad; no se necesita ni se obtiene soporte no nulo compacto."
+    },
+    {
+      "factor": "Haar, jacobianos, baselines",
+      "source": "S119 (1.14)-(1.16); P1808",
+      "dependence": "Reconstrucción real completa y fondos fijos.",
+      "review": "Acotados sobre compacto admitido no singular a g0 fijo. Conservar g0^((n-m)dim G), normalización Haar, L de P=LQ y gauge-site count. No duplicar formas alternativas de eliminación."
+    },
+    {
+      "factor": "Cutoff K_C",
+      "source": "P1535/P1559",
+      "dependence": "Todos los enlaces libres, interior y exterior.",
+      "review": "K_D cerrado cabe solo tras la inclusión estricta de chart. k_E(fe)=1 cerca de 0 para cada e finito, pero sigue en la expresión exacta."
+    },
+    {
+      "factor": "Coeficientes Wilson",
+      "source": "P1808 C13; input1879",
+      "dependence": "Palabras originales de enlaces completos reconstruidos.",
+      "review": "Acotación unitaria suficiente para la traza condicional; no se presume factorización ni identidad de palabras raw."
+    }
+  ],
+  "precise_conditional_trace": {
+    "purpose": "Explicitar qué parte matemática queda válida, sin aceptar sus premisas como realizadas.",
+    "hypotheses": [
+      "Se ha fijado un g0>0, una geometría finita fuente admitida y un término original que produce el Omega1/Lambda1 original.",
+      "Se han cerrado los datos del problema original y del localizado sin completar F10 arbitrariamente; U1 y Ulocal son I en todos los portadores necesarios.",
+      "La rama canónica real C/N/R existe en una vecindad abierta de la clausura de K_D por [0,f0] para el e finito fijado; se retienen los indicadores originales.",
+      "La delta exterior queda en la medida exterior original, o hay disintegración justificada. q_alpha es entonces el núcleo interior escalar con todos sus factores escalares originales, sin normalización nueva.",
+      "El integrando escalar suave y las palabras están uniformemente acotados en ese compacto, y cada indicador f-dependiente converge para casi todo a_D al valor puntual especificado en f=0."
+    ],
+    "formula": "J_alpha(f;theta,e) = integral_{K_D} q_alpha(a_D,f;theta,e) da_D; |q_alpha| <= M_alpha 1_{K_D}, M_alpha<infinity a theta,e,g0,volumen fijos.",
+    "conclusion": "Para cada uno de los cuatro coeficientes retenidos, lim_{f->0+} J_alpha(f;theta,e)=integral_{K_D} q_alpha(a_D,0;theta,e) da_D=J_alpha(0;theta,e). Es un límite ordinario de ese núcleo, no solo una subsucesión ni una traza definida a posteriori.",
+    "indicator_argument": "Si h_j(a_D,0) es real analítica en una componente conectada que contiene el cutoff y h_j(0,0) no alcanza el umbral, h_j-umbral no es idéntica. Sus ceros tienen medida interior cero; una unión finita mantiene esa propiedad. Normas libres se manejan por esferas de medida cero. Los factores exteriores totalmente fijos son constantes y se tratan aparte.",
+    "diagnostic_failure": "Un indicador estricto 1_{h<tau} con h(a_D,f)=tau-f tiene valor 0 para todo a_D en f=0 y valor 1 para todo f>0. Es un diagnóstico lógico de frontera forzada, no una configuración fuente construida. Analiticidad sola no basta.",
+    "not_a_physical_admission": true
+  },
+  "dependencies_to_close_for_this_attempt": [
+    "D1. Determinar el término P0/P1/Q1 original y la Omega1 derivada, con collar y Lambda1 final no degenerados.",
+    "D2. Probar una elección simultánea admisible de geometría, g0, g1_ref, t y constantes originales, incluidas las condiciones fuente sobre el p fijo y las particiones, sin sustituir el dominio ni reajustar la ley.",
+    "D3. Probar estrictitud y no nulidad de al menos un término resummado y masa positiva de la fibra pertinente; no basta un punto compatible.",
+    "D4. Identificar los datos y portadores originales de (1.12), el baseline fijo y el representante canónico de U1.",
+    "D5. Resolver F10 para la prescripción localizada (1.21), conservando raw V0 y sin acceso a datos interiores no permitidos.",
+    "D6. Identificar H_eff=0 y la hoja fuente; demostrar cobertura estricta de K_D y del intervalo exterior corto por la rama canónica, con todos los pivotes originales.",
+    "D7. Definir la medida de referencia de la traza y la posición de la delta exterior; verificar el inventario completo de factores e indicadores.",
+    "D8. Aplicar la dominación solo después de D1-D7. Mantener abiertas todas las obligaciones exteriores/familiares."
+  ],
+  "retained_prior_objections": {
+    "F10": "Preservado íntegramente en su obligación concreta: enlace opuesto de la plaqueta exterior, disponibilidad y dependencia de datos; no se reemplaza por la existencia de U*.",
+    "P1808": "Se preservan las cinco cualificaciones: escala L^-1 de H, ambigüedad de signos BCH, dominio relativo, convenciones de dexp/Ad y discrepancia de cutoff. No se duplican determinantes ni se confunden sitios gauge y filas.",
+    "P1826": "Se conservan las clases cerradas verificadas y las restricciones: sin M>=L^3 M2 impuesto, sin M1 potencia de L añadida, sin ganancia L^-2 inventada, sin conmutación de productos, sin overwrite raw V0, sin nuevo toro favorable.",
+    "P1872": "Ningún uso de 1867/1871 para inferir soporte compacto de gamma no nula. H=0, cuando se demuestre, anula exactamente su intervención sin reparar aquella prueba.",
+    "source_norms_and_law": "No se han cambiado A0, C_delta, p, grupo, media, g1_ref, beta_ref ni ninguna licencia; no se ha resuelto por convenio una ambigüedad impresa."
+  },
+  "final_assessment": {
+    "substantive_gain": "La incidencia no lineal de los pivotes permite justificar un germen analítico de tamaño local en el fondo plano. A nivel puramente analítico, el cutoff físico g0 K_D cabe en un radio fijo para g0 pequeño, y H_eff=0 eliminaría por completo el problema del guard. La técnica de fronteras analíticas más dominación es adecuada para un núcleo condicionado escalar con sus características efectivamente verificadas.",
+    "decisive_open_points": "El input no convierte ese germen en un sector fuente propio no nulo: falta la selección y la ventana geométrica/paramétrica originales, F10 sigue sin cerrar el fondo localizado, y la delta exterior impide leer la densidad completa como una función escalar acotada en el dato compatible. Por tanto no se admite la traza inicial física completa solicitada.",
+    "counterexample_scope": "Se identifican inferencias inválidas y dependencias no probadas. No se ha mostrado que todo defecto remoto con collar identidad sea imposible, ni se refuta un teorema de Balaban, ni se atribuye un resultado desfavorable a informes previos.",
+    "next_review_requested": false,
+    "score_given": false,
+    "physical_admission": false,
+    "candidate1642_admitted": false,
+    "complete_physical_integral_equality_asserted": false,
+    "new_paper": false,
+    "manuscript_changed": false,
+    "repositories_or_state_changed": false
+  },
+  "sources_actually_read_and_reverified": [
+    {
+      "id": "S119",
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-convergent-cmp119-from-fusion.pdf",
+      "expected_sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+      "actual_sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+      "match": true,
+      "reading_depth": "Texto completo de las páginas impresas 243-254. Inspección visual en memoria de las páginas completas 246-254 para las fórmulas (1.1)-(1.30), restricciones, máscaras, delta exterior y gamma. No auditoría de las pruebas del artículo completo.",
+      "used_for": "Kernel, tamaños dependientes de g, particiones P0/P1/Q1/R1, resummación, mínimo (1.12), reconstrucción, localización (1.21), shell y densidad."
+    },
+    {
+      "id": "S102",
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/cmp102_variational/1104114383.pdf",
+      "expected_sha256": "838056b5c578f81d058deb3d394c66d934690e3b94c6cf2956534ec6d211b541",
+      "actual_sha256": "838056b5c578f81d058deb3d394c66d934690e3b94c6cf2956534ec6d211b541",
+      "match": true,
+      "reading_depth": "Texto completo de las páginas impresas 277-280; inspección visual en memoria de 277-279, definiciones (1)-(7), Theorem 1 y comienzo de la reducción. No lectura de la prueba completa ni de su sección G.",
+      "used_for": "Dominio propio por incidencia, regularidad de configuraciones frente a regularidad de datos mixtos, condiciones exactas de existencia/unicidad y persistencia de F10."
+    },
+    {
+      "id": "S109",
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-rg-I-cmp109-1104116842.pdf",
+      "expected_sha256": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+      "actual_sha256": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+      "match": true,
+      "reading_depth": "Texto completo de las páginas impresas 252-255; inspección visual en memoria de 253-254. Se leyó también el texto de la página adyacente 251 para las definiciones de toro finito, L y grupo que continúan en 252. Portada 249 consultada para mapear paginación. No auditoría de las pruebas posteriores.",
+      "used_for": "Medias originales (0.4)/(0.12), caminos internos, gauge (0.11)/(0.14)-(0.17), norma matricial de (0.14), geometría finita y esquema (0.18)."
+    }
+  ],
+  "premises_actually_read_and_reverified": [
+    {
+      "id": "P1535",
+      "path": "C:/Trabajo/airr/2026-10-31_execution1535/LAW-VERSION1535.json",
+      "expected_sha256": "f668b5b57350dcdf9d60b579be927b260d9aaf2138ce4667462d0af4c6ca8388",
+      "actual_sha256": "f668b5b57350dcdf9d60b579be927b260d9aaf2138ce4667462d0af4c6ca8388",
+      "match": true,
+      "read_in_full": true,
+      "retained": "C_delta, A0, p, media y K_C originales; gate relativo theta=C_delta/A0; discrepancia impresa A1/A0 no resuelta."
+    },
+    {
+      "id": "P1559",
+      "path": "C:/Trabajo/airr/2026-10-31_execution1559/LAW-BINDING1559.json",
+      "expected_sha256": "a78244cb62773f907346968b16470892a00f1405219d0e9752f17b578af806dd",
+      "actual_sha256": "a78244cb62773f907346968b16470892a00f1405219d0e9752f17b578af806dd",
+      "match": true,
+      "read_in_full": true,
+      "retained": "Mismos C_delta, beta_ref y g1_ref; ninguna identificación nueva del E1 histórico ni ajuste de constantes."
+    },
+    {
+      "id": "P1808",
+      "path": "C:/Trabajo/airr/2026-11-01_execution1808/ASSESSMENT-RECEIPT1808.json",
+      "expected_sha256": "4aae42a5938343ee13a69a1814a61fbc1acd14ed972fa12863b436ccd867356d",
+      "actual_sha256": "4aae42a5938343ee13a69a1814a61fbc1acd14ed972fa12863b436ccd867356d",
+      "match": true,
+      "read_in_full": true,
+      "retained": "Recibo completo, componentes C01-C13, cinco cualificaciones y falsadores. Reconstrucción C/N, h, P=LQ, determinantes alternativos, H_eff=L^-1 H_operator, dominio relativo, delta exterior y palabras completas. No se abrió ni reevalúo el informe anterior."
+    },
+    {
+      "id": "P1826",
+      "path": "D:/Proyectos/airr-investigacion/2026-11-01_localized-mixed-data1826/ASSESSMENT-RECEIPT1826.json",
+      "expected_sha256": "6b99a097fc673f71599f2487c46c632c49f9ef78309813ded80d56d3555ce655",
+      "actual_sha256": "6b99a097fc673f71599f2487c46c632c49f9ef78309813ded80d56d3555ce655",
+      "match": true,
+      "read_in_full": true,
+      "retained": "F10 sigue abierto; se conservan las ocho clases y los ocho falsadores del recibo, la distinción portador cerrado/dato disponible y las limitaciones geométricas. No se abrió ni reevalúo el informe anterior."
+    },
+    {
+      "id": "P1872",
+      "path": "D:/Proyectos/airr-investigacion/2026-11-01_gamma-guard-correction1872/GAMMA-GUARD-CORRECTION1872.json",
+      "expected_sha256": "ed98bd0c6bc92947594121a9433180e06b99e681a4e29e408bb6b74e64fa21a4",
+      "actual_sha256": "ed98bd0c6bc92947594121a9433180e06b99e681a4e29e408bb6b74e64fa21a4",
+      "match": true,
+      "read_in_full": true,
+      "retained": "gamma=0 cerca de 0, gamma=1 bajo la condición grande de grupo; retirada la inferencia de soporte no nulo compacto de 1867/1871. No se abrió ninguno de esos informes."
+    }
+  ],
+  "coordinator_disposition": {
+    "accepted": "Only exact remote-defect support, original mean carrier, local flat pivot/analytic germ, and the explicitly conditioned scalar-kernel DCT argument at their recorded scopes.",
+    "not_admitted": "Actual nonzero proper source sector, source U1/Ulocal canonical identity datum, whole original domain, complete physical initial trace or family/outer closure. No statement of impossibility of every such witness and no source-theorem refutation.",
+    "adopted_corrections": [
+      "Original P0/P1/Q1 mask and a nonzero relative fiber neighbourhood required.",
+      "Fixed finite geometry and g0->0 cannot be combined without a common admissible window.",
+      "Fine selected-pivot IFT is local and does not authenticate original source chart coverage.",
+      "Group delta on J rows belongs to the original exterior measure; never bound or evaluate delta(I) as a number.",
+      "Every actual characteristic and its boundary must be inventoried; analyticity of a norm is not automatic.",
+      "Preserve F10, source-law prefactor/relative-threshold and beta_ref/g1_ref mismatches, and1872 gamma correction."
+    ],
+    "parent_unreviewed_material": [
+      "DEFECT-INCIDENCE1880.json",
+      "REVIEW-CONTINUITY1881.json",
+      "REVIEW-CONTINUITY1882.json"
+    ],
+    "no_inherited_validation": "Those later parent diagnostics/possible repairs were outside frozen1879 input; the report does not assess them. No new review requested to improve disposition.",
+    "public_integration": "Not published in this execution. Future consolidation must preserve full adverse report and limits in existing note, no separate paper/count/confidence increase."
+  },
+  "working_manuscript_unchanged": {
+    "path": "C:\\Trabajo\\airr\\marked-rg-manuscript\\WORKING-MANUSCRIPT.md",
+    "before_sha256": "a3b2ae94b7bd8754becf004d05a5a8f99abd9fd247111b87c7b73b48b1d89bb0",
+    "after_sha256": "b3042d6ab2a9cb3f4414b818e322953d7088a7a2befa4c1a79b8dcddef2457d2",
+    "bytes": 559364,
+    "scope": "Single unfinished private manuscript; exact1744B assessment and separate C correction verification only. No complete manuscript/PDF or physical admission.",
+    "focused_input_sha256": "1b4e7a703af2ce67a1d416979bf1b95073f3a23c60e6da4154d3bf7a20d1fcb5",
+    "focused_report_sha256": "08902ae25d761eaccdcba4cacfb4c3429b68279c32ee9faf12671920d55d1f9a",
+    "adverse_original_report_sha256": "161b15be85e2398eb998b8e9bdefd345838a4c369bf09cdd866fbfa6fed92a0b"
+  },
+  "physical_admission": false,
+  "candidate1642_admitted": false,
+  "complete_physical_integral_equality_asserted": false,
+  "new_paper": false,
+  "new_review": false,
+  "next": "1879 assessment COMPLETE and integrated1885; no score/restart or new assessment requested. Do not present the far-defect/identity-collar attempt as an admitted physical/source witness or complete initial trace. Preserve all16 findings and8 dependencies. Local flat selected-row analytic germ is verified only at its exact scope. NEXT concrete task, if this route is pursued: identify an ACTUAL nonzero original P0/P1/Q1 summand and its derived proper Omega1 with the original carrier/collar data and one admissible geometry/coupling choice; do not assume the mask. F10 still blocks the localized source minimum; exterior delta is a measure, not a bounded scalar, and original ALL-free K_C/threshold/reference gates remain. Parent1880/1881/1882 repairs are unreviewed, not a validated replacement proof. If the physical summand cannot be established, abandon that unsupported witness rather than opening generic norm/endpoint layers or another review. Full physical trace, simultaneous parameters, connected sums/normalizers/backgrounds/sectors and Rsc/Hsharp/history stay open;1642 NOT ADMITTED. PR257/deposits/older reviews/checks remain closed."
+}

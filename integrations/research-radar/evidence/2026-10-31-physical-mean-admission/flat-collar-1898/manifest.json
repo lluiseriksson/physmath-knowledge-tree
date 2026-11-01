@@ -1,0 +1,50 @@
+{
+  "scope": "Completed adverse flat-collar assessment: local fine-chart germ conditional; physical nonzero proper sector and full initial trace not established. No new review or physical admission.",
+  "base_commit": "81a09466e3c3764346cee9d76dcb11fc8c0ca069",
+  "baseline_note_sha256": "a58ef5e134e9a98be183a590fc0a637d72a6430cd2b32b7137f09f889f0f5133",
+  "append_sha256": "425b313d91e107efcffe469488ec0e22469009dc4872e11310ed7e8a9e8a98c4",
+  "final_note_sha256": "1ec84f929c946e1249cee4fad31cb0e33ef917f955236b3aa2e6df3d2bf990ce",
+  "files": [
+    {
+      "path": "integrations/research-radar/evidence/2026-10-31-physical-mean-admission/flat-collar-1898/FLAT-COLLAR-INITIAL-TRACE1879.json",
+      "sha256": "6c9f7588eafaac81beeda7b64e8f8614d94ceec22f229c7aa6b6e41263896eff",
+      "bytes": 13121
+    },
+    {
+      "path": "integrations/research-radar/evidence/2026-10-31-physical-mean-admission/flat-collar-1898/FROZEN-MANIFEST1879.json",
+      "sha256": "bd102aaf062e68355c2012c5ab6fc17879e0a4b7383b0907f73d9bb301ddf472",
+      "bytes": 3239
+    },
+    {
+      "path": "integrations/research-radar/evidence/2026-10-31-physical-mean-admission/flat-collar-1898/ASSESSMENT1879.json",
+      "sha256": "e195ff78ca2353a51d456cfe0212347aa532e1eec319bbe9dd5bac030ac2c247",
+      "bytes": 48130
+    },
+    {
+      "path": "integrations/research-radar/evidence/2026-10-31-physical-mean-admission/flat-collar-1898/ASSESSMENT-RECEIPT1885.json",
+      "sha256": "204cf726c2d1abb35163bacccfb85951a75a250d9e1faf8c3ebcfc9523a460a2",
+      "bytes": 50590
+    }
+  ],
+  "exact_crlf_preservation": [
+    {
+      "path": "integrations/research-radar/evidence/2026-10-31-physical-mean-admission/flat-collar-1898/FROZEN-MANIFEST1879.json",
+      "sha256": "bd102aaf062e68355c2012c5ab6fc17879e0a4b7383b0907f73d9bb301ddf472"
+    }
+  ],
+  "review_context": "One requested gpt-6-astra/xhigh separate-context assessment1879. Effective model/effort/context isolation/independence unauthenticated. Full unscored report with16 findings,8 local deductions,8 open dependencies and all adverse limits; no restart, manuscript/PDF/Capacity/prior assessment/global build review. Editorial consolidation1898 unassessed, no inherited grade.",
+  "levels": {
+    "source_definitions": "literature",
+    "assessed_original_measure_application": "heuristic, conditional application",
+    "full_physical_closure": "speculative",
+    "formal_certification": false
+  },
+  "physical_admission": false,
+  "candidate1642_admitted": false,
+  "counts_unchanged": {
+    "sources": 120,
+    "candidates": 19
+  },
+  "new_paper": false,
+  "graph_edit": false
+}
