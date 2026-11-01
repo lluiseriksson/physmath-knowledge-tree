@@ -1,0 +1,412 @@
+{
+  "execution": 1856,
+  "kind": "Una revisión técnica nueva y acotada: medida física original finita -> L1 local conjunto -> L1 local para casi todo dato exterior/target de un chart admitido.",
+  "assessed_at_utc": "2026-11-01T06:00:03Z",
+  "disposition": "VALIDA_EN_EL_ALCANCE_LOCAL_DEL_CHART_COMPLETO_CON_PRECISIONES_DE_MEDIDA_Y_ASIGNACION; NO_ADMISION_FISICA_NUEVA",
+  "input": {
+    "path": "C:/Trabajo/airr/2026-11-01_execution1856/JOINT-MEASURE-L1-APPLICATION1856.json",
+    "expected_sha256": "0f0d8782d541713e67ad2784d7ee1af1448c2b9303b39be42fd7454dd2710f9e",
+    "observed_sha256": "0f0d8782d541713e67ad2784d7ee1af1448c2b9303b39be42fd7454dd2710f9e",
+    "hash_matches": true,
+    "reading_depth": "Leído íntegramente, incluidos argumento ordenado, identificación de la densidad, estimación conjunta, marcas, consumidor1819 y salvaguardas."
+  },
+  "review_configuration": {
+    "requested": "gpt-6-astra / xhigh / contexto separado",
+    "effective_model_authenticated": false,
+    "effective_reasoning_effort_authenticated": false,
+    "context_isolation_authenticated": false,
+    "independence_authenticated": false,
+    "statement": "No se infiere identidad efectiva, esfuerzo, aislamiento ni independencia del nombre de esta tarea o de la solicitud de configuración.",
+    "one_new_review_only": true,
+    "no_grade": true,
+    "no_restart": true,
+    "no_subdelegation": true
+  },
+  "exact_conclusion": [
+    "Sí: para una familia conjuntamente medible de un chart real original admitido, inyectivo y asignado una sola vez, la densidad COMPLETA y sin compensar de1808 tiene masa conjunta finita si es exactamente el pullback de la parte correspondiente de la medida original positiva de volumen finito. La eliminación por los pivotes originales, a target fijo, justifica esa representación local. La dependencia del centro, C_rec, N y R respecto del target no añade un determinante del bloque target.",
+    "La trayectoria completa de1819, interpretada con TODOS los factores evaluados en el mismo argumento y con soporte cero fuera de la sección verdadera, da W_b,f(theta,a_D,a_E)=1_B(a_E) W_b(theta,a_D,f a_E). La estimación de1856 y Fubini son entonces correctos y pagan la hipótesis local L1 de1819 para casi todo dato de ese chart; no requieren una cota inferior uniforme del pivote ni un dominio estrellado.",
+    "La expresión 'medida original target/exterior' debe precisarse: la estimación usa Haar en V_I, la medida gráfica compatible de los datos finos exteriores y Lebesgue en las coordenadas libres a_E. El marginal físico del MISMO chart es absolutamente continuo respecto de esa base y hereda el resultado casi en todas partes. No se ha probado esa afirmación para un marginal físico completo que incluya piezas no representadas por el chart.",
+    "No se detectó un factor concreto omitido en la representación completa de1808 y en el recorrido explícito de1819 cuando se aplican literalmente sus cláusulas de exactitud. No obstante, una mera expresión interna de(1.26), una asignación exterior distinta o una colección de charts admitidos solo por separado a cada target no bastan.1856 no aporta una instancia física nueva que certifique todas esas premisas.",
+    "No se obtiene admisión de1642, igualdad integral física completa, un resultado para todos los fondos, un endpoint FTC, trazas, uniformidad, normalizadores no nulos, cantidades conectadas o historia."
+  ],
+  "scope_controls": {
+    "read_previous_assessment_reports": false,
+    "reassessed_1819_or_1852": false,
+    "role_of_1819": "Se leyó su entrada íntegra solo para identificar el recorrido, el producto O_f exp(V_f), las marcas y la hipótesis local L1 consumidora; no se rehízo su revisión.",
+    "role_of_1852": "Se leyó su entrada íntegra solo para conservar el alcance condicional de j_f=f Q_DE a_E y los multiplicadores suaves; no se reabrió su argumento de alcance de soportes.",
+    "manuscript_read_or_changed": false,
+    "source_pdf_read_only": true,
+    "source_pdf_proof_globally_audited": false,
+    "corpus_or_third_party_bodies_copied": false,
+    "credentials_used": false,
+    "published_or_paid": false,
+    "state_or_other_chats_modified": false,
+    "artifacts_written": [
+      "C:/Trabajo/airr/2026-11-01_execution1856/ASSESSMENT1856.json"
+    ]
+  },
+  "sources_and_depth": [
+    {
+      "kind": "primary_source",
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-convergent-cmp119-from-fusion.pdf",
+      "expected_sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+      "observed_sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+      "hash_matches": true,
+      "printed_pages_text_read_in_full": [
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256
+      ],
+      "printed_pages_visually_read_in_full": [
+        247,
+        248,
+        249,
+        251,
+        252,
+        253,
+        255
+      ],
+      "anchors": [
+        "243(0.1): transformación original completa y densidad inicial Wilson.",
+        "246–248(1.1),(1.4)–(1.12): particiones positivas, normalizador de gauge z, resuma zeta, máscaras, mínimo dependiente del target.",
+        "249(1.14)–(1.16): Haar, Jacobiano no lineal, eliminación de b0(c), conteo de coordenadas libres, z^(0), prefactores y acción.",
+        "250–252(1.18)–(1.25): restricciones originales, shell en S1*, su Jacobiano y términos adicionales.",
+        "253(1.26),254(1.29)–(1.30): distinción entre integral condicional interna y factores externos completos.",
+        "255–256(2.2),(2.10)–(2.12): estratos separados de puntos/bonds/plaquetas, datos determinantes y enlace explícito con V0 del primer paso."
+      ],
+      "depth_limit": "Lectura local de definiciones y fórmulas relevantes; no comprobación de las pruebas citadas sobre mínimos, localización o admisión uniforme."
+    },
+    {
+      "kind": "primary_source_supporting_premises",
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-rg-I-cmp109-1104116842.pdf",
+      "expected_sha256": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+      "observed_sha256": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+      "hash_matches": true,
+      "printed_pages_text_read_in_full": [
+        251,
+        252,
+        253,
+        254,
+        255,
+        266,
+        267,
+        268
+      ],
+      "printed_pages_visually_read": [],
+      "anchors": [
+        "251: convención geométrica por estratos.",
+        "252–254(0.3),(0.4),(0.11),(0.12): dos bloques extremos y caminos de la media física; no se intercambian sus dos alternativas.",
+        "254–255(0.14)–(0.16): gauge exponencial y z.",
+        "266–268(2.4)–(2.12): straightening por h en el pivote original y eliminación posterior en b0(c)."
+      ],
+      "depth_limit": "Comprobación textual selectiva de soporte y mecanismo de eliminación; no auditoría del argumento completo ni nueva prueba de1852."
+    },
+    {
+      "kind": "premise",
+      "path": "C:/Trabajo/airr/2026-11-01_execution1808/PHYSICAL-COMPOSED-RECONSTRUCTION1808.json",
+      "expected_sha256": "0022ce4ee9dad8dc6fa08b521354acfab2e2bdc8e7ac1a6223190f977863d38b",
+      "observed_sha256": "0022ce4ee9dad8dc6fa08b521354acfab2e2bdc8e7ac1a6223190f977863d38b",
+      "hash_matches": true,
+      "reading_depth": "Íntegra: mapas, dominios, medida, cancelación alternativa, exterior y marcas."
+    },
+    {
+      "kind": "premise",
+      "path": "C:/Trabajo/airr/2026-11-01_execution1806/PHYSICAL-DETERMINING-SET1806.json",
+      "expected_sha256": "744f358588fda7969fe9e4a3fb679056b1174bb33888f992708aa2183c3dea06",
+      "observed_sha256": "744f358588fda7969fe9e4a3fb679056b1174bb33888f992708aa2183c3dea06",
+      "hash_matches": true,
+      "reading_depth": "Íntegra: F_src/I/J, soporte de J, medida gráfica débil y límites de la identificación con coordenadas libres."
+    },
+    {
+      "kind": "premise",
+      "path": "C:/Trabajo/airr/2026-10-31_execution1758/TARGET-DEPENDENT-CENTER1758.json",
+      "expected_sha256": "113e0ff5f1f3da11f16c44558d627c36bdbdd562a7fd78171895afa8b1a01bc9",
+      "observed_sha256": "113e0ff5f1f3da11f16c44558d627c36bdbdd562a7fd78171895afa8b1a01bc9",
+      "hash_matches": true,
+      "reading_depth": "Íntegra, incluido transporte conjunto, derivada del target, cero exacto del bloque y contraejemplo compacto."
+    },
+    {
+      "kind": "premise_consumer_only",
+      "path": "C:/Trabajo/airr/2026-11-01_execution1819/MARKED-SHELL-INTERPOLATION1819.json",
+      "expected_sha256": "e466d15a3f51d1508f8d086e9fe9da0024850fd58814cefab7b35e9af14e312d",
+      "observed_sha256": "e466d15a3f51d1508f8d086e9fe9da0024850fd58814cefab7b35e9af14e312d",
+      "hash_matches": true,
+      "reading_depth": "Íntegra como especificación de consumidor y asignación, sin revisión nueva de su teorema débil."
+    },
+    {
+      "kind": "premise_scope_only",
+      "path": "C:/Trabajo/airr/2026-11-01_execution1852/SHELL-SUPPORT-FORCING1852.json",
+      "expected_sha256": "bc8e13ce419a12b4ace6f0132481e5adbf5c118be5b88e9f84692d241e9ad8cc",
+      "observed_sha256": "bc8e13ce419a12b4ace6f0132481e5adbf5c118be5b88e9f84692d241e9ad8cc",
+      "hash_matches": true,
+      "reading_depth": "Íntegra para conservar su premisa de soporte, Q_D>0 condicional y sus obligaciones residuales; no se revisó su informe."
+    },
+    {
+      "kind": "frozen_law",
+      "path": "C:/Trabajo/airr/2026-10-31_execution1535/LAW-VERSION1535.json",
+      "expected_sha256": "f668b5b57350dcdf9d60b579be927b260d9aaf2138ce4667462d0af4c6ca8388",
+      "observed_sha256": "f668b5b57350dcdf9d60b579be927b260d9aaf2138ce4667462d0af4c6ca8388",
+      "hash_matches": true,
+      "reading_depth": "Íntegra: K, C_delta, discrepancia de prefactor, normalizador y falta de identificación de versiones."
+    },
+    {
+      "kind": "frozen_law",
+      "path": "C:/Trabajo/airr/2026-10-31_execution1559/LAW-BINDING1559.json",
+      "expected_sha256": "a78244cb62773f907346968b16470892a00f1405219d0e9752f17b578af806dd",
+      "observed_sha256": "a78244cb62773f907346968b16470892a00f1405219d0e9752f17b578af806dd",
+      "hash_matches": true,
+      "reading_depth": "Íntegra: mismo C_delta y esquema beta_ref/g1_ref, sin nueva calibración."
+    }
+  ],
+  "source_checks": [
+    {
+      "id": "S01",
+      "result": "CONFIRMADO_LOCALMENTE",
+      "claim": "La descomposición I/J no libera targets incompatibles.",
+      "evidence": "CMP119(2.2) se declara por separado para puntos, bonds y plaquetas; (2.10)–(2.12) y el texto de p256 enlazan los datos finos V0 del primer paso. CMP119(1.8)–(1.9) retiene las filas incidentes y excluye sus pivotes. CMP109(0.4)/(0.12) usa los dos bloques extremos.",
+      "qualification": "Con la geometría compatible congelada de1806, J=E1\\I usa solo F_src=E0\\A y V_J=M_J^F(v_F). Se conserva la condición de geometría original; no se considera un exterior libre de coordenadas a_E como si fuera F_src."
+    },
+    {
+      "id": "S02",
+      "result": "CONFIRMADO_CON_CONSTANTES_FINITO_VOLUMEN",
+      "claim": "La medida gráfica original del sector posee masa finita.",
+      "evidence": "CMP119(0.1),(1.5)–(1.11). Haar normalizado en un producto compacto; acción Wilson y gauge reales; z es un normalizador positivo fijo para un cutoff admitido; las particiones y resumas a volumen finito tienen un número finito de términos.",
+      "qualification": "La comparación es con la medida gráfica del sector, incluyendo su gauge, z y constantes. No con una submedida de la densidad Wilson desnuda con constante1: z elevado a exponente negativo y zeta pueden aumentar el peso. Una cota finita dependiente de volumen/g0/sector basta. No se introduce ningún Z_C desconocido."
+    },
+    {
+      "id": "S03",
+      "result": "CONFIRMADO_COMO_FORMULA_LOCAL",
+      "claim": "La fuente elimina las constraints en los pivotes de fluctuación, no en el target centrado.",
+      "evidence": "CMP119 p249(1.14)–(1.15) y CMP109 p267–268: el cambio no lineal actúa en b0(c), se escala y se resuelven las ecuaciones lineales para esos mismos pivotes.",
+      "qualification": "La inversión, rama real y normalización exacta son las de1808; no se sustituye un minor conveniente ni se identifica sin conversión el Q impreso con P."
+    },
+    {
+      "id": "S04",
+      "result": "CONFIRMADO_CON_ASIGNACION_COMPLETA",
+      "claim": "La fórmula condicional interna no contiene por sí sola toda la medida cuya masa se controla.",
+      "evidence": "CMP119(1.15) muestra z^(0), z, sigma0, g0, exp[-A(U1)/g0^2-E], zeta y medidas externas; (1.24)–(1.25) añade Jacobiano y restricciones del shell; (1.26) es la integral interna; (1.29) conserva factores externos.",
+      "qualification": "1856 es válido para el producto íntegro reconstruido. Ninguna cota de una densidad interna a la que se hayan retirado estos factores se deduce automáticamente de la masa gráfica."
+    }
+  ],
+  "corrected_measure_statement": {
+    "notation": "theta=(V_I,xi), xi=(v_F,V_J), V_J=M_J^F(v_F). a=(a_D,e) son coordenadas finales libres del MISMO sector/chart.",
+    "original_sector_graph": "mu_X(dU,dV)=Phi_X(U,V) dU delta_{M(U)}(dV), sobre el dominio original donde la media está admitida. Phi_X contiene los pesos reales originales positivos, constantes y restricciones una sola vez.",
+    "compatible_base": "dnu(xi)=dv_F delta_{M_J^F(v_F)}(dV_J); d beta(theta)=dV_I dnu(xi). Equivalente: integrar solo (V_I,v_F) y evaluar V_J=M_J^F(v_F). dV_I y dv_F son Haar normalizados. No se hace de nu una densidad regular respecto del producto libre dv_F dV_J.",
+    "original_measure_finiteness": "Integrar la delta en V a U RAW fijo da1; con pesos dependientes de V da Phi_X(U,M(U)), cuya cota es la original en el grafo. La finitud ambiente de un peso arbitrario no sería suficiente. Para los pesos bare originales y el sector finito se obtiene mu_X(total)<infinito.",
+    "partial_mean_guard": "Si la media elegida solo se ha admitido en parte del dominio, basta usar esa parte original medible. No se crea una extensión global de la media ni se prueba su regularidad en todos los grandes campos.",
+    "chart_identity": "Para todo test no negativo, integral W_b(theta,a) F(Psi_b(theta,a),V) da d beta(theta) = integral F(U,V) s_b(U,V) dmu_X(U,V), con 0<=s_b<=1 asignación original del chart; en una parte disjunta s_b es su indicador. Deben incluirse las restricciones originales y, si procede, la restricción adicional K del mismo chart.",
+    "full_density_formula": "W_b=1_{actual_section} 1_K (g0^r sigma0)^p |det P_beta|^-1 [product_{b in A} s(a_phys,b)] |det DN(B)| J_R(a) Phi_X(U(a),V), B=g0 C_rec R(a), a_phys=N(B), U_A=exp(i a_phys)U1, U_F=v_F. Los factores ya incluidos en Phi_X no se repiten; si 1_K ya forma parte de Phi_X, se escribe una sola vez.",
+    "equivalent_density_guard": "Puede emplearse la forma equivalente g0^(p r) product_{b in S} sigma(g0 R_b(a_b)) J_R(a) product_{c in I}|det A_c(U(a))|^-1 Phi_X. Es alternativa a la anterior, nunca multiplicativa. La medida libre es la proyección en coordenadas originales tras delta-eliminación; no lleva sqrt(det(C_rec^T C_rec)).",
+    "finite_mass": "M_b=integral W_b da d beta <= mu_X(total)<infinito, o <= C mu_bare(total) si se escribe la comparación con el bare sin gauge. Puede ser0; no se demuestra masa positiva.",
+    "target_dependence": "En la etapa anterior a resolver pivotes, (variables_de_fluctuacion,V_I)->(U,V_I) conserva el target como segunda coordenada. Su Jacobiano conjunto es triangular; los derivados de U1,C_rec,N,R en V_I no introducen un factor extra. Después se elimina el pivote a V_I fijo. Se requiere una familia conjunta medible y una parametrización admitida; la existencia aislada de charts para cada target no es esa afirmación.",
+    "matched_center_guard": "En el centro1758, I-P_U D_V U1=0 exactamente. Se conserva este fallo de eliminación regular en el target; no aparece su inverso en W_b ni en M_b. Integrar primero V a U raw fijo y después usar una parametrización conjunta es distinto de integrar V a fluctuaciones centradas fijas."
+  },
+  "factor_and_path_ledger": [
+    {
+      "factor": "Datos y prefactores dependientes solo de theta",
+      "treatment": "U1, C_rec, N como familia de mapas, P_beta(U1), original z^(0), g0, sigma0, z de gauge, constantes de normalización y baseline exp[-A(U1)/g0^2-E] permanecen con su valor original de theta a lo largo de f. Su posible dependencia de V_I o xi no invalida la dilatación, porque theta no cambia. Un factor singular en theta no se borra ni se acota por compactitud sin usar la identidad completa."
+    },
+    {
+      "factor": "Reconstrucción y Haar/Jacobiano no lineal",
+      "treatment": "Usar B_f=g0 C_rec(a_D,R_E(f a_E)), N(B_f), todos los outputs seleccionados y sus Haar/determinantes. No usar f R_E(a_E), una media diferente ni un mínimo recalculado a f."
+    },
+    {
+      "factor": "J_R",
+      "treatment": "J_R(theta,f a_E) sobre la rama verdadera. R_D=Id en el conjunto interno original; no se introduce un nuevo determinante f^N_E en el integrando condicional."
+    },
+    {
+      "factor": "Acción exterior y referencia",
+      "treatment": "La acción directa es exp[-<R_E(fa_E),Q_EE R_E(fa_E)>/2]. Si se usa exp[-f^2<a_E,Q_EE a_E>/2], se retiene exactamente Delta_f de1819, incluido su término exterior y toda corrección L_shell.1852 solo elimina la parte mixta bajo su premisa de soporte, no el factor exterior completo."
+    },
+    {
+      "factor": "K, otras características, secciones y rama",
+      "treatment": "El K interno original queda fijo porque R_D=Id. Todas las demás restricciones que dependan de la coordenada exterior se evalúan en f a_E, incluida la pertenencia al chart. Definir primero la densidad sobre su dominio real y luego prolongarla por0; nunca evaluar N fuera del dominio para después multiplicarlo por0. No hace falta que B ni las secciones sean estrelladas."
+    },
+    {
+      "factor": "Restricción exterior estática B",
+      "treatment": "1_B(a_E) puede multiplicar adicionalmente la densidad COMPLETA ya evaluada en f a_E. Una restricción estática acotada disminuye esa densidad solo en ese sentido. No puede sustituir a una característica o peso que formaba parte de W_b(theta,a_D,f a_E)."
+    },
+    {
+      "factor": "Marcas y fuentes",
+      "treatment": "Cada palabra completa, seleccionados, inversas, raíces y ambos marcos se reconstruye en U_f. Para matrices fuente fijas, productos unitarios tienen contracciones escalares acotadas; fuentes exponenciales finitas tienen cota en compactos de las fuentes. Se domina cada coeficiente absoluto por C_J W_b,f, sin suponer pesos complejos positivos."
+    },
+    {
+      "factor": "Medida externa",
+      "treatment": "La base d beta(theta) da_E queda fija. Un peso exterior que dependa de a_E pertenece al W completo y debe recorrer el mismo argumento. No usar además un marginal físico ya ponderado como medida base: duplicaría factores o introduciría el cociente de pesos entre y/f y y en el cambio de variable."
+    }
+  ],
+  "local_L1_derivation": {
+    "hypotheses": [
+      "Densidad completa W_b>=0 conjuntamente medible con M_b finita respecto de d beta da_D de.",
+      "Chart y sector fijos; N_E=r por el número de bonds libres E independientes, sin orientaciones inversas duplicadas ni outputs seleccionados.",
+      "W_b,f(theta,a_D,a_E)=1_B(a_E)W_b(theta,a_D,f a_E) en la representación completa; B medible y fijo en f.",
+      "Se conservan los dominios originales mediante la prolongación por0."
+    ],
+    "calculation": [
+      "Para f>0, integral W_b,f d beta da_D da_E = f^(-N_E) integral 1_{fB}(y) W_b(theta,a_D,y) d beta da_D dy <= f^(-N_E) M_b.",
+      "Para 0<epsilon<1, integral_{epsilon}^{1} integral W_b,f <= M_b integral_{epsilon}^{1} f^(-N_E) df <= (1-epsilon) epsilon^(-N_E) M_b.",
+      "El factor f^(-N_E) solo procede de estimar la masa DESPUES de integrar a_E; no modifica la identidad a a_E fijo ni la medida condicional de1819. N_E=0 tiene su interpretación usual.",
+      "Tonelli para la densidad real y dominación para las marcas, seguido por Fubini y epsilon=1/n, n>=2, da una misma región conull para la familia finita de coeficientes: integral_{epsilon}^{1} integral_{K} |W_b,f^alpha(theta,a_D,a_E)| da_D df < infinito para casi todo (theta,a_E)."
+    ],
+    "almost_everywhere_measures": {
+      "primary_result": "Casi en todas partes respecto de d beta(theta) da_E. Esta base es sigma-finita; el componente V_J conserva la medida gráfica singular compatible.",
+      "physical_chart_marginal": "q_b(theta,a_E)=integral W_b(theta,a_D,a_E) da_D pertenece a L1 de la base. El marginal exterior físico del chart es q_b d beta da_E (con 1_B si se impone B). Por absoluta continuidad, la misma región excepcional tiene masa física del chart0.",
+      "not_shown": "No se ha demostrado una región conull para la ley completa con piezas fuera del chart, ni una afirmación para un target exterior fijado arbitrariamente, ni para cada a_E. No se reemplaza la medida gráfica J por Haar independiente en V_J."
+    },
+    "H_transfer": [
+      "Para cada dato retenido con Q_D real positivo definido y los multiplicadores suaves que1852 proporciona condicionalmente, g_f y 1/g_f están acotados en [epsilon,1] por la clausura del K interno fijo, con constantes dependientes del dato.",
+      "Si el H_f real de1819 satisface exactamente g_f H_f=W_b,f coeficiente a coeficiente (incluido O_f y B si se usa), se deduce H en L1 local(f,a_D) para casi todo ese dato. No se deduce una cota conjunta uniforme para H sobre todos los datos: 1/g_f puede crecer.",
+      "p_f=exp[-<j_f,Q_D^-1 j_f>/2] pertenece a(0,1] en ese fondo real positivo; multiplicarlo no aumenta el valor absoluto. La finitud se probó primero para la contribución sin compensar. No se deduce la finitud sin compensar de una masa compensada ni se cancela p_f en la medida externa sin control."
+    ],
+    "consumer_scope": "Se puede aplicar la formulación distribucional ya especificada por1819 en(0,1) a esas secciones y coeficientes, conservando las derivadas de la densidad cero-extendida entera. No se reevalúa aquí el teorema1819 ni se separan superficies sin hipótesis de productos/trazas."
+  },
+  "findings_and_adverse_limits": [
+    {
+      "id": "F01",
+      "status": "VALIDO; NO_REAPARECE_EL_ATAJO_REFUTADO",
+      "title": "La dependencia del target no destruye el argumento conjunto.",
+      "finding": "La eliminación en el pivote original y el cambio conjunto triangular son compatibles con el cero exacto de1758. El bloque target nulo no es el Jacobiano que se invierte.",
+      "failure_if_violated": "Introducir |det(I-P_U D_V U1)|^-1 o declarar el residual una delta regular en V a coordenadas centradas fijas invalida el argumento en el centro."
+    },
+    {
+      "id": "F02",
+      "status": "PRECISION_NECESARIA",
+      "title": "La medida de Fubini debe especificarse.",
+      "finding": "La expresión dnu(xi) es suficiente si significa la medida gráfica original compatible, independiente de a_E y f. El target activo usa Haar. La formulación con el marginal físico completo sin explicitar su densidad es ambigua y no justifica el cambio de variable mostrado.",
+      "correction": "Usar la base explícita dV_I dv_F da_E con V_J evaluado en M_J^F(v_F), mantener en W todos los pesos dependientes de las coordenadas libres y pasar al marginal físico del chart mediante absoluta continuidad."
+    },
+    {
+      "id": "F03",
+      "status": "CONDICION_NO_PAGADA_POR_COMPACTITUD",
+      "title": "Un chart admitido por separado a cada target no da automáticamente una familia conjunta medible.",
+      "finding": "Se necesitan dominio y selección de rama medibles en theta, inversa local real, pivote original regular y asignación sin duplicación. La fuente proporciona el mecanismo local y1808 lo condiciona expresamente;1856 no instancia una familia física que cierre esas puertas globales.",
+      "correction": "Limitar la conclusión a una familia conjunta realmente admitida. No hace falta un radio común para todos los fondos para este resultado local, pero sí una densidad conjunta bien definida."
+    },
+    {
+      "id": "F04",
+      "status": "VALIDO_SOLO_CON_EL_PRODUCTO_COMPLETO",
+      "title": "La masa original no controla por separado la integral interna despojada de pesos.",
+      "finding": "z^(0), determinantes, Haar, shell, acción exterior, baselines y restricciones pueden compensarse en el producto. Su asignación entre O_f y exp(V_f) es libre solo si el producto sigue siendo exactamente W_b(theta,a_D,f a_E). No se detecta una omisión concreta en la especificación completa leída, pero no se puede aplicar el resultado a otra asignación por nombre.",
+      "correction": "Verificar la igualdad del producto completo, no alegar que un factor se cancela en un cociente normalizado. Un factor externo dependiente solo de theta puede quedar fijo; uno dependiente de a_E no puede congelarse en lugar del factor recorrido."
+    },
+    {
+      "id": "F05",
+      "status": "PRECISION_NECESARIA",
+      "title": "La advertencia sobre pesos estáticos también afecta a sustituciones acotadas.",
+      "finding": "Un factor estático adicional con 0<=h<=1 solo disminuye W_b,f si se conserva íntegro el W evaluado en f a_E. Sustituir h(fa_E) por h(a_E) es distinto y puede romper incluso L1 local lejos de0. No basta decir que el factor estático es acotado.",
+      "countertest": "Ver T02; no es una instancia física."
+    },
+    {
+      "id": "F06",
+      "status": "OBLIGACION_DE_MULTIPLICIDAD",
+      "title": "La inyectividad y la asignación del chart son esenciales para la comparación como submedida.",
+      "finding": "Un chart original inyectivo cuenta cada punto de su imagen una vez, aunque dependa del target; imágenes de targets distintos no duplican el mismo punto del grafo porque V=M(U). Varias ramas que cubren la misma imagen deben repartirse o conservar su multiplicidad explícita. Una cota uniforme finita de multiplicidad permitiría una cota modificada, pero no una identificación como submedida con constante1.",
+      "correction": "No sumar sin más charts superpuestos ni desplegar infinitas copias periódicas de las coordenadas exponenciales."
+    },
+    {
+      "id": "F07",
+      "status": "LIMITE_PRESERVADO",
+      "title": "La desigualdad es dimensional y de volumen fijo.",
+      "finding": "El factor epsilon^(-N_E), los normalizadores de gauge, el número de sectores y las constantes de fuentes dependen del sistema y los parámetros fijados. No resulta ninguna cota uniforme de actividad, perfil, volumen, fondo, acoplamiento o historia."
+    },
+    {
+      "id": "F08",
+      "status": "FALLO_DE_INFERENCIA_ENDPOINT_CONFIRMADO",
+      "title": "Masa finita y L1 local no dan FTC ni trazas.",
+      "finding": "La estimación no controla f=0. Tampoco demuestra continuidad absoluta, derivada distribucional integrable ni trazas en1. Puede probarse finitud de la integral interna a f=1 para casi todo dato aplicando Fubini directamente a W_b, pero eso no identifica una traza del recorrido ni un límite desde f<1.",
+      "countertest": "T03 verifica exactamente el ejemplo radial de1856; T04 muestra que aun acotación no asegura continuidad absoluta."
+    },
+    {
+      "id": "F09",
+      "status": "PREMISAS_CONGELADAS_NO_RESUELTAS",
+      "title": "No cambia el derecho de uso de la ley física.",
+      "finding": "Se conservan el C_delta, p_cut, norma, mean elegido, beta_ref/g1_ref, la discrepancia A1/A0 de1535, la condición de cociente theta_source, el K verdadero y las demás características. No se demuestra cobertura de todo K_C, localización física, Hsharp/source190, P1, una familia simultánea común, igualdad de versiones históricas, normalizador completo no nulo ni admisión de1642."
+    },
+    {
+      "id": "F10",
+      "status": "LIMITE_PRESERVADO",
+      "title": "La positividad real usada no se transfiere a fuentes complejas.",
+      "finding": "Tonelli se aplica al peso bare positivo; las marcas se tratan por valor absoluto y coeficientes. No se presupone una ley de probabilidad compleja, positividad de coeficientes marcados, un logaritmo conectado o que el chart tenga masa positiva."
+    }
+  ],
+  "explicit_adversarial_tests": [
+    {
+      "id": "T01",
+      "kind": "Contraejemplo compacto analítico ya especificado en1758; comprobado, no físico.",
+      "construction": "M(U)=U, U1(V)=V, U=wV en un grupo compacto.",
+      "calculation": "dU dV=dw dV y delta_G(M(U)V^-1)=delta_G(w). En w=I todos los V son raíces y D_V del residual es0. Integrar V como delta regular sería inválido; la medida gráfica conjunta y la eliminación en w siguen bien definidas.",
+      "disposition": "1856 pasa este test porque no usa ese bloque para eliminar el target."
+    },
+    {
+      "id": "T02",
+      "kind": "Falsador finito-dimensional de una asignación estática incorrecta, no una instancia de la fuente.",
+      "construction": "En y en(0,1), c=1/2, h(y)=|y-c|, F(y)=1/|y-c| para y!=c y F(c)=0. W(y)=h(y)F(y) vale1 salvo en c y tiene masa1.",
+      "calculation": "El recorrido completo W(fe), con e en(0,1), es integrable. Si se congela h(e) y solo se recorre F(fe), para cada e en(c,1) aparece h(e)/|fe-c| y una singularidad no integrable en f0=c/e, dentro de(0,1). Así falla L1 local en f para un conjunto exterior de medida positiva, aunque h sea acotado. Como variante de fallo de masa conjunta, h(y)=1/|y-c| y F(y)=|y-c| produce el producto original integrable, pero h(e)F(fe) tiene masa exterior infinita en intervalos de f separados de1.",
+      "disposition": "Justifica exigir todos los factores al mismo argumento. No contradice el recorrido completo escrito en1856; impide aplicar su conclusión a una asignación parcial o a un reemplazo estático de restricciones."
+    },
+    {
+      "id": "T03",
+      "kind": "Ejemplo radial genérico del input, verificado; no físico.",
+      "construction": "W(y)=|y|^(-3/2) en el disco unitario de R^2 y0 fuera.",
+      "calculation": "Integral W=2*pi*integral_0^1 r^(-1/2)dr=4*pi. Para cada e!=0 y f suficientemente pequeño, W(fe)=f^(-3/2)|e|^(-3/2), cuya integral en f cerca de0 diverge.",
+      "disposition": "Refuta la inferencia genérica de FTC/integrabilidad global desde masa original finita. No refuta el kernel ni la fuente físicos."
+    },
+    {
+      "id": "T04",
+      "kind": "Contraejemplo genérico de traza/continuidad absoluta, no físico.",
+      "construction": "En una coordenada exterior y>0, W(y)=1_{0<y<c} con c>0; se toma un e>c fijo.",
+      "calculation": "W(fe) es una función escalón con salto en f=c/e. Es L1 local y acotada, pero su derivada distribucional contiene una masa puntual y no es una función L1. No es absolutamente continua.",
+      "disposition": "La formulación débil conserva esa derivada; L1 no permite convertirla en un FTC con derivada ordinaria ni separar superficies sin hipótesis adicionales."
+    },
+    {
+      "id": "T05",
+      "kind": "Falsador de multiplicidad, no una instancia física.",
+      "construction": "Copiar contablemente muchas veces un chart inyectivo de masa positiva y sumar sus pullbacks sin asignación de partes disjuntas.",
+      "calculation": "La masa física de su imagen sigue siendo finita, pero la suma de densidades tiene masa infinita. Con k copias la masa es k veces la de la imagen.",
+      "disposition": "La afirmación de submedida exige una sola copia o una partición original.1856 lo exige correctamente; no se ha demostrado una cobertura global por tal partición."
+    }
+  ],
+  "remaining_conditions": [
+    "Media original real medible en el soporte usado, con la geometría compatible F_src/I/J y todas las constraints originales retenidas.",
+    "Familia de charts realmente admitida y conjuntamente medible, con el pivote ORIGINAL regular, mapas y ramas reales definidos, inyectividad o asignación explícita que no duplique la imagen.",
+    "Identidad completa de1808 con normalización Haar/delta/g0 y convención P frente a Q correctas; no duplicar determinantes ni eliminar normalizadores de gauge.",
+    "Mismo sector, máscaras, fondo, mínimo, constantes y rama a lo largo de f; el cambio de sección procede solo del argumento f a_E y de las restricciones originales, salvo factores adicionales acotados expresamente mantenidos.",
+    "Todos los factores de coordenadas evaluados en la reconstrucción f correcta, incluido J_R, acción exterior Q_EE, L_shell/Delta_f, Haar, indicadores, baselines y palabras completas.",
+    "Base de Fubini explícita sin un peso a_E-dependiente escondido en dnu ni un marginal físico ponderado utilizado una segunda vez.",
+    "K interno fijo de la ley congelada, con soporte acotado en el chart, sin afirmar que todo K_C queda admitido.",
+    "Para consumir1819 con la simplificación1852: Q_D real positivo definido y sus multipliers admitidos; esta revisión no los prueba nuevamente.",
+    "Fuera del chart, otras ramas y sectores conservan sus propias obligaciones; no se consideran cero en la ley física completa.",
+    "Para endpoints, trazas, derivadas ordinarias, superficies separadas o uniformidad siguen haciendo falta hipótesis y pruebas adicionales."
+  ],
+  "paid_and_unpaid": {
+    "paid": [
+      "La deducción de masa conjunta finita de la densidad completa de una parte gráfica original admitida y correctamente parametrizada.",
+      "La estimación conjunta local en f>0 por dilatación de las coordenadas exteriores independientes.",
+      "La hipótesis local L1 de la densidad completa, y de H_f tras división por el Gaussian fijo-dato, para casi todo dato de ese chart bajo las premisas del consumidor.",
+      "La compatibilidad de ese argumento con la obstrucción1758, sin determinante target nuevo."
+    ],
+    "unpaid": [
+      "Existencia y cobertura física global del chart, admisión de todo K_C o una familia de parámetros físicos.",
+      "Validez para cada dato exterior/target o para el marginal de la ley completa fuera de este chart.",
+      "Control de f=0, trazas, continuidad absoluta o una igualdad integral completa entre endpoints.",
+      "Cotas uniformes, normalización completa, logaritmos/cumulantes conectados, historia o espectro."
+    ]
+  },
+  "physical_admission": false,
+  "candidate1642_admitted": false,
+  "complete_physical_integral_equality_asserted": false,
+  "new_paper": false,
+  "manuscript_changed": false,
+  "assessed_previous_reports": false
+}
