@@ -1,0 +1,36 @@
+{
+  "execution": 1929,
+  "source": {
+    "path": "C:\\Users\\lluis\\Documents\\CodexYangMillsAutopilot\\runtime\\sources\\primary\\balaban-rg-II-cmp116-1104161193.pdf",
+    "sha256": "ee39523a0f7b83af958513c7bd6f9c7731934b40355ef5d6b0f7a68ee6d022fc",
+    "doi": "10.1007/BF01239022",
+    "anchors": "Printed pages2-5, especially page3 (1.5)-(1.7), read text; no full source proof audit"
+  },
+  "fixed_inputs": [
+    {
+      "path": "C:/Trabajo/airr/2026-11-01_execution1920/SOFT-FREE-SPARSE-PARAMETRIX1920.json"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-11-01_execution1921/SOFT-FREE-TAGGED-SQUARE-ROOT1921.json"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-11-01_execution1923/PROTECTED-GAMMA-ERROR-AND-GATES1923.json"
+    }
+  ],
+  "mechanism": "Separate the source propagator localization scale from the auxiliary tagging partition and from the own principal-block parametrix cover.",
+  "source_statement": "CMP116 page3 defines original walk domains as connected unions of several M1 cubes, explicitly M1 instead of M. It separately introduces decoupling cubes of size R1 M1 and, for that example, M. Page5 derives the short-walk e^(16 kappa1) cost and analyticity by using all source regularity/norm bounds.",
+  "disposition": "The own M-core/one-M-halo cover is an auxiliary cover proposed for the actual bare soft precision. It is not the original CMP116 local propagator cover. Geometric tag count16 and Schur convergence do not by themselves establish all the regularity bounds required in CMP116 (1.5), (1.11)-(1.14).",
+  "hypotheses": [
+    "Actual source-law gap, range, row sums and all selected stencil/data must be established on the fixed chart",
+    "Own cover must fit fixed finite periodic geometry and protected wall-connected groups",
+    "For any use in nonlinear source equations, required source operator regularity and bounds must be checked in their actual norms; a scalar Schur estimate alone does not supply discrete derivative bounds"
+  ],
+  "limits": [
+    "No replacement of H,G,H0 source propagators asserted; candidate1922 covariance-only Gaussian family remains a distinct proposal",
+    "No claim of algebraic refutation, failed source theorem, admitted physical parameters or complete marked integral",
+    "Reviewer1925 frozen packet not changed or expanded; this parent clarification is outside its scope"
+  ],
+  "falsifier": "If a claimed transfer relies only on naming the M cover source-original, or replaces all source norm estimates by the Schur bound, its source justification fails. Explicit source-compatible construction and regularity estimates are required.",
+  "level": "literature selected statements read; own physical transfer heuristic and unadmitted",
+  "next": "Retrieve the existing review1925 without restarting it. Retain this source-cover/regularity distinction in its disposition, together with actual stencil, p>=5r, finite-period, Gaussian, nonlinear and1655 gates; do not claim a physical chain."
+}

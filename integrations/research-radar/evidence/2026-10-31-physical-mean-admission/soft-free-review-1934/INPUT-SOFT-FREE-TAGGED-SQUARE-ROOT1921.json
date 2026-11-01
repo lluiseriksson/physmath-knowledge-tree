@@ -1,0 +1,42 @@
+{
+  "execution": 1921,
+  "scope": "Check the1920 actual soft-free construction against the native LM tagging geometry and extend it to the actual auxiliary covariance square root. A real sparse construction and analytic word-family candidate, not a completed marked cluster expansion.",
+  "source": {
+    "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-rg-II-cmp116-1104161193.pdf",
+    "sha256": "ee39523a0f7b83af958513c7bd6f9c7731934b40355ef5d6b0f7a68ee6d022fc",
+    "doi": "10.1007/BF01239022",
+    "text_pages_this_execution": [
+      13,
+      14
+    ],
+    "reading_status": "Selected native localization geometry, square-root representation and factorization statements read; not proof audit"
+  },
+  "fixed_inputs": [
+    {
+      "path": "C:/Trabajo/airr/2026-11-01_execution1920/SOFT-FREE-SPARSE-PARAMETRIX1920.json"
+    },
+    {
+      "path": "C:/Trabajo/airr/marked-rg-manuscript/WORKING-MANUSCRIPT.md"
+    }
+  ],
+  "geometry_check": {
+    "conventions": "Use the original CMP116 current free-position lattice: ordinary localization tiles have side M, and the later tag cubes have side L*M. This M is not the physical logarithmic R1(g). Any transfer to the CMP119 conditional D must keep its actual unit conversion and existing compatible partitions.",
+    "ordinary_tile_candidate": "For a disjoint M-core cube take its one-M enlargement, then intersect with the actual free D only for matrix rows. Keep the entire uncut geometric box as the determining carrier, even across holes. The inverse kernel has rows in that box; its coefficients use the actual Q data on the box with their extra determining radius s_Q. Preserve r_Q (matrix range) and s_Q (data range) as different quantities.",
+    "count": "If max(r_Q,s_Q)<=M/2, the padded box side is at most4M. For original odd L>11 this is strictly smaller than L*M, so one such axis-aligned carrier intersects at most2^4=16 native tag cubes. At a fixed point at most5^4 ordinary enlarged/padded core boxes meet. These follow coordinatewise from the interval lengths and compatible periodic tiling; no arbitrary small L or new M is selected.",
+    "remaining_actual_test": "The r_Q and s_Q bounds must be proved from the actual selected rows, gauge/current stencil and field-data dependence in these units. No numerical actual M or operator constants are supplied. The special protected X0 domain of13 is not an ordinary M box and needs its own core/margin/data test; the sixteen-cube bound is not asserted for X0."
+  },
+  "spectral_shift_extension": {
+    "operator": "Apply1920 to the actual A=Q_DD and to A+lambda I for lambda>=0. Principal block gaps are a+lambda. The added diagonal commutes with all spatial exponential weights and creates no cross-boundary residual. Thus one fixed t=log(1+a/(2 J_Q))/r_Q works for EVERY lambda; replace each2/a kernel prefactor by2/(a+lambda).",
+    "constants": "For the same fixed halo ell and overlap nu, write E_res=2*nu*J_Q*H_(t/2)*exp(-t*(ell-r_Q)/2), eps0=E_res/a and K=2*nu*H_t. The absolute length-n inverse word sum is bounded by K*E_res^n/(a+lambda)^(n+1) in the same Schur norm.",
+    "square_root": "The actual covariance is C_D=A^(-1), so its positive square root is A^(-1/2)=(1/pi) integral_0^infinity lambda^(-1/2)*(A+lambda I)^(-1) d lambda. Termwise integration is justified when eps0<1 by the preceding absolute majorant. The length-n sum is bounded by K*a^(-1/2)*eps0^n*c_n, where c_n=binomial(2n,n)/4^n<=1. The integral identity is integral lambda^(-1/2)/(a+lambda)^(n+1)=pi*c_n*a^(-n-1/2).",
+    "support": "Spectral integration does not enlarge a word carrier. This constructs the covariance square-root words from the SAME actual real free precision. For the source full-covariance square root used with the auxiliary X, run the construction on the full original free list; for the conditional covariance use its actual principal list. Do not confuse those two operators."
+  },
+  "contour_candidate_and_limits": {
+    "native_tagging": "Assign to each whole word the product over the DISTINCT native sigma-cubes meeting its full determining carrier, as in the original source tagging convention. An ordinary length-n word has at most16(n+1) such cubes under the stated stencil/halo test. Absolute convergence on |sigma|<=exp(kappa1) follows from eps0*exp(16*kappa1)<1, with the first-word prefactor multiplied by exp(16*kappa1). This is a concrete additional contour test at the fixed hierarchy, not an assertion that it passes.",
+    "identity_at_one": "At sigma=1 the families recover the original real C_D and square-root operators. Outside that point, independently tagged covariance and square-root series need NOT satisfy square_root(sigma)^2=C(sigma), and independently tagged full/conditional matrices need not preserve their original Schur identities. No such identities are used or claimed.",
+    "actual_source_G": "CMP1162.6-2.10 builds G from several operators and relies on protected-core replacements, complex Gaussian margins and component factorization. Uniform word convergence alone does not prove any of these. The original alpha5 determinant/current errors, auxiliary X, forcing mean and component owners must be tracked in that actual G.",
+    "protected_core": "The source special X0 has tilde(X0)^5 equal to protected TILDE Z0 and keeps a distance of order M from the other localization domains. Ordinary uniform cores do not automatically realize this special domain or its exact conditional reference. No fixed-C independence, deleted corner coupling or invented factorization is restored."
+  },
+  "physical_status": "This candidate supplies a direct real shifted-resolvent/square-root route and a finite ordinary-tile tag count for the original soft free matrix, conditional on the stated actual margins/stencil tests. No common fixed-law complex Gaussian profile, normalized marked sum, parameter tuple, F10 data or history estimate is admitted. No new paper, review, grade, source count or formal result.",
+  "next": "Construct the source protected-core version of the direct free parametrix with the actual X0 determining/data margin and outer core cover. Test component factorization and the actual source G margins before treating ordinary-word convergence as a complex marked interpolation. If those fail, retain the real forcing representation only."
+}

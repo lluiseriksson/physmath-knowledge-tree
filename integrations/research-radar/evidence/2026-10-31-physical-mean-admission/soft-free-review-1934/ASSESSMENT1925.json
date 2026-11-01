@@ -1,0 +1,682 @@
+{
+  "artifact": "ASSESSMENT1925",
+  "language": "es",
+  "review_kind": "Una revisión técnica nueva, focalizada y sin puntuación",
+  "completed_at_utc": "2026-11-01 11:15:23 UTC",
+  "configuration_and_observability": {
+    "requested_model": "gpt-6-astra",
+    "requested_reasoning_effort": "xhigh",
+    "requested_context": "separate, fork none",
+    "observable_task_name": "/root/astra_soft_free_parametrix1925",
+    "actual_model_identity": "No autenticada por una herramienta o metadato verificable en este contexto. No se infiere de la configuración solicitada ni del nombre de la tarea.",
+    "actual_reasoning_effort": "No autenticado. xhigh es la solicitud, no una medición de la ejecución.",
+    "context_and_independence": "Se recibió un encargo separado con reglas globales y los archivos congelados. No se recibió ni se leyó el contenido de revisiones anteriores. No se puede autenticar mediante las herramientas disponibles el parámetro de creación fork=none ni una independencia externa de procedencia.",
+    "review_conduct": "Una sola evaluación continua de este paquete. No se crearon subagentes, no se consultaron otras evaluaciones, no se heredaron notas y no hubo reinicio de la revisión para buscar otro resultado.",
+    "computational_retries": "Hubo dos fallos instrumentales: la serialización de un numpy.bool y el uso accidental del identificador Python reservado nonlocal. Se corrigieron únicamente esos errores de salida/sintaxis; se mantuvieron los ejemplos, semilla y objetivos de prueba. No fueron reinicios de la evaluación. El primer transporte del informe por línea de comandos superó el límite de longitud de Windows; se cambió únicamente el mecanismo de escritura.",
+    "constraints_observed": [
+      "Sin puntuación ni nota global.",
+      "Sin evaluación de manuscrito/PDF del candidato, Capacity,1642 ni revisiones anteriores.",
+      "Sin publicación, cambios en inputs, fuentes, ESTADO u otros chats.",
+      "Fuentes locales consultadas únicamente para anclas pertinentes; no se auditó su prueba global.",
+      "No se afirma paso físico, novedad, certificación formal ni admisión de una familia física."
+    ]
+  },
+  "input_integrity": {
+    "manifest_path": "C:\\Trabajo\\airr\\2026-11-01_execution1925\\FROZEN-MANIFEST1925.json",
+    "expected_manifest_sha256": "dbdac9284f952bf01e7b73b9cff66dd0b6d91f2bd1b58620a84eb880cdc2453f",
+    "observed_manifest_sha256": "dbdac9284f952bf01e7b73b9cff66dd0b6d91f2bd1b58620a84eb880cdc2453f",
+    "manifest_hash_match": true,
+    "inputs": [
+      {
+        "path": "C:\\Trabajo\\airr\\2026-11-01_execution1925\\INPUT-SOFT-FREE-SPARSE-PARAMETRIX1920.json",
+        "bytes": 8092,
+        "sha256_expected": "abaee1c4fd9191f26dbc3cad612b02f7d560bda760f3ef6e3809094b12456987",
+        "sha256_observed": "abaee1c4fd9191f26dbc3cad612b02f7d560bda760f3ef6e3809094b12456987",
+        "hash_match": true,
+        "read": "Íntegro, incluidos alcance, límites, referencias y condiciones; no solo resumen."
+      },
+      {
+        "path": "C:\\Trabajo\\airr\\2026-11-01_execution1925\\INPUT-SOFT-FREE-TAGGED-SQUARE-ROOT1921.json",
+        "bytes": 6355,
+        "sha256_expected": "cb5e4497cf447375ab1c07b4882a4ebfa9e57a84e94c91f7031a58202018bb85",
+        "sha256_observed": "cb5e4497cf447375ab1c07b4882a4ebfa9e57a84e94c91f7031a58202018bb85",
+        "hash_match": true,
+        "read": "Íntegro, incluidos alcance, límites, referencias y condiciones; no solo resumen."
+      },
+      {
+        "path": "C:\\Trabajo\\airr\\2026-11-01_execution1925\\INPUT-PROTECTED-SOFT-FREE-REFERENCE1922.json",
+        "bytes": 7740,
+        "sha256_expected": "2d4a749f937809f467664fca2dfb334fe35ebd2d33843f9321d7010218abae80",
+        "sha256_observed": "2d4a749f937809f467664fca2dfb334fe35ebd2d33843f9321d7010218abae80",
+        "hash_match": true,
+        "read": "Íntegro, incluidos alcance, límites, referencias y condiciones; no solo resumen."
+      },
+      {
+        "path": "C:\\Trabajo\\airr\\2026-11-01_execution1925\\INPUT-PROTECTED-GAMMA-ERROR-AND-GATES1923.json",
+        "bytes": 7618,
+        "sha256_expected": "aea59fdeb8d6cb776161047bcaa9cd59cbc90bf2779852fe623aa333c84a8a80",
+        "sha256_observed": "aea59fdeb8d6cb776161047bcaa9cd59cbc90bf2779852fe623aa333c84a8a80",
+        "hash_match": true,
+        "read": "Íntegro, incluidos alcance, límites, referencias y condiciones; no solo resumen."
+      },
+      {
+        "path": "C:\\Trabajo\\airr\\2026-11-01_execution1925\\INPUT-PROTECTED-GAUSSIAN-COST-AND-CONTOUR1924.json",
+        "bytes": 6843,
+        "sha256_expected": "0516be7c574830a42dd5597b837bf9a7fc4d71d71e76195f98bad7364c4c53f0",
+        "sha256_observed": "0516be7c574830a42dd5597b837bf9a7fc4d71d71e76195f98bad7364c4c53f0",
+        "hash_match": true,
+        "read": "Íntegro, incluidos alcance, límites, referencias y condiciones; no solo resumen."
+      },
+      {
+        "path": "C:\\Trabajo\\airr\\2026-11-01_execution1925\\INPUT-ACTUAL-FIRST-SECTOR-F-INPUT1917.json",
+        "bytes": 6100,
+        "sha256_expected": "ef5662e3cdb8f897278a5afad0dd07d48a7dfbaa6906bba8c7d6f5ae96a8a9b3",
+        "sha256_observed": "ef5662e3cdb8f897278a5afad0dd07d48a7dfbaa6906bba8c7d6f5ae96a8a9b3",
+        "hash_match": true,
+        "read": "Íntegro, incluidos alcance, límites, referencias y condiciones; no solo resumen."
+      },
+      {
+        "path": "C:\\Trabajo\\airr\\2026-11-01_execution1925\\INPUT-LAW-VERSION1535.json",
+        "bytes": 1803,
+        "sha256_expected": "f668b5b57350dcdf9d60b579be927b260d9aaf2138ce4667462d0af4c6ca8388",
+        "sha256_observed": "f668b5b57350dcdf9d60b579be927b260d9aaf2138ce4667462d0af4c6ca8388",
+        "hash_match": true,
+        "read": "Íntegro, incluidos alcance, límites, referencias y condiciones; no solo resumen."
+      },
+      {
+        "path": "C:\\Trabajo\\airr\\2026-11-01_execution1925\\INPUT-LAW-BINDING1559.json",
+        "bytes": 867,
+        "sha256_expected": "a78244cb62773f907346968b16470892a00f1405219d0e9752f17b578af806dd",
+        "sha256_observed": "a78244cb62773f907346968b16470892a00f1405219d0e9752f17b578af806dd",
+        "hash_match": true,
+        "read": "Íntegro, incluidos alcance, límites, referencias y condiciones; no solo resumen."
+      }
+    ],
+    "controlling_interpretation": "Las correcciones de padding1923 controlan la lectura de1921/1922. Para la versión protegida final se usan r_Q,s_Q<=u=floor(M/6), ell=2u, y los tags variables son únicamente los exteriores a Z0prime; los protegidos permanecen a 1.",
+    "source_hashes": [
+      {
+        "path": "C:\\Users\\lluis\\Documents\\CodexYangMillsAutopilot\\runtime\\sources\\primary\\balaban-rg-II-cmp116-1104161193.pdf",
+        "sha256_expected": "ee39523a0f7b83af958513c7bd6f9c7731934b40355ef5d6b0f7a68ee6d022fc",
+        "sha256_observed": "ee39523a0f7b83af958513c7bd6f9c7731934b40355ef5d6b0f7a68ee6d022fc",
+        "hash_match": true,
+        "access": "Solo lectura"
+      },
+      {
+        "path": "C:\\Users\\lluis\\Documents\\CodexYangMillsAutopilot\\runtime\\sources\\primary\\balaban-convergent-cmp119-from-fusion.pdf",
+        "sha256_expected": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+        "sha256_observed": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+        "hash_match": true,
+        "access": "Solo lectura"
+      }
+    ]
+  },
+  "scope": {
+    "assessed": [
+      "Identidad y orden del parametrix de precisión libre real y principal.",
+      "Conjugación exponencial, normas Schur absolutas y convergencia por palabras.",
+      "Resolventes desplazados y representación de A^(-1/2).",
+      "Padding ordinario/especial, cuenta de tags y componentes protegidos.",
+      "Referencia Gamma_ref, error Delta_Gamma y diferencias entre operadores full y condicionales.",
+      "Normalización compensada, reproducción del Gaussian real de extremo y factorización condicionada.",
+      "Comparación absoluta compleja, V_star, reserva de media y determinantes de rango controlado.",
+      "Alternativas de coste total frente a referencia más incremento; condiciones del mismo kappa1.",
+      "Límites de transferencia a la ley y dominio físicos congelados."
+    ],
+    "not_assessed": [
+      "Novedad del método.",
+      "Prueba global de las fuentes.",
+      "Manuscrito y PDF propios o revisiones previas.",
+      "Derivación externa de los consumidores1655/1810 no incluidos íntegramente en el paquete.",
+      "Certificación del stencil real, los márgenes físicos, constantes uniformes o cobertura de todos los sectores.",
+      "Exposición de una tupla física admisible, un perfil marcado completo o una estimación de historia."
+    ],
+    "source_reading": [
+      {
+        "source": "balaban-rg-II-cmp116-1104161193.pdf",
+        "path": "C:\\Users\\lluis\\Documents\\CodexYangMillsAutopilot\\runtime\\sources\\primary\\balaban-rg-II-cmp116-1104161193.pdf",
+        "text_printed_pages_read": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "visually_inspected_printed_pages": [
+          13,
+          17
+        ],
+        "pertinent_anchors": [
+          "p.3: dominios locales de propagadores formados por pequeños conjuntos de cubos M1; tags de la primera localización a escala M.",
+          "p.4: conexión por paredes y localización al anular tags.",
+          "p.13, (2.6)-(2.7): integral auxiliar, dominios especiales, tags LM y resolvente para la raíz.",
+          "p.14, (2.8)-(2.11): estructura de componentes y factorización de actividades.",
+          "pp.15-17, (2.14)-(2.25): perturbación compleja, referencia real, compensación y costes gaussianos."
+        ],
+        "conclusion": "Respalda las anclas estructurales señaladas. No certifica que los nuevos bloques principales M, su stencil y sus constantes sean los dominios locales originales de la fuente. No se copian cuerpos de la prueba."
+      },
+      {
+        "source": "balaban-convergent-cmp119-from-fusion.pdf",
+        "path": "C:\\Users\\lluis\\Documents\\CodexYangMillsAutopilot\\runtime\\sources\\primary\\balaban-convergent-cmp119-from-fusion.pdf",
+        "text_printed_pages_read": [
+          248,
+          249,
+          250,
+          251,
+          252,
+          253
+        ],
+        "visually_inspected_printed_pages": [
+          249
+        ],
+        "pertinent_anchors": [
+          "pp.248-249, (1.12)-(1.16): mínimo original, eliminación lineal seleccionada, precisión C^sharp Delta1 C, corrección de corriente y término soft.",
+          "pp.250-252, (1.18)-(1.25): partición original y modificaciones de borde.",
+          "p.253, (1.26): integral condicional y permanencia de la dependencia en U1."
+        ],
+        "conclusion": "La identificación1917 de v-g0^(-2)V y de la precisión con corriente y gauge soft es coherente con las fórmulas leídas. Estas páginas no proporcionan por sí solas las constantes uniformes ni la transferencia completa requerida."
+      }
+    ]
+  },
+  "executive_decision": {
+    "conditional_mathematical_core": "No se encontró una contradicción algebraica en el núcleo corregido1920-1924 bajo las hipótesis explícitas reforzadas y las convenciones precisadas abajo. La identidad, raíz espectral, error Gamma, comparación gaussiana y cotas de determinantes admiten derivaciones directas.",
+    "source_binding_correction": "Debe distinguirse la cobertura propia de bloques M del candidato de los dominios nativos de propagadores formados por cubos M1 en CMP116. La cita no cierra esa compatibilidad.",
+    "physical_status": "No queda establecida la aplicación a la familia física de la primera integral. Persisten hipótesis físicas abiertas ya reconocidas por el paquete y falta un testigo simultáneo de geometría, dominio, costes y contorno.",
+    "permitted_use": "Conservar como construcción condicional de matrices reales, más una familia auxiliar compleja normalizada y condicionada cuya aplicación física requiere pruebas adicionales.",
+    "not_permitted_by_this_review": "No inferir admisión física, localidad en V, independencia de sectores, control de marcas/historia o reutilización de un presupuesto fuente no identificado.",
+    "fatal_logical_error_found_under_stated_strengthened_hypotheses": false,
+    "caveat": "La ausencia de un contraejemplo al núcleo condicionado no certifica que sus premisas sean verdaderas para Q físico."
+  },
+  "derivations": [
+    {
+      "id": "D01",
+      "topic": "Identidad y multiplicación",
+      "assumptions": "A real simétrica positiva en la lista libre D; I_i partición disjunta; X_i contiene I_i; G_i=(j_i^T A j_i)^(-1). Las coordenadas y transpuestas están expresadas en la métrica escalar real correcta.",
+      "derivation": [
+        "P_i=j_i G_i j_i^T S_i. Descomponer A j_i=j_i A_XiXi+(A j_i-j_i A_XiXi). Entonces A P_i=S_i+(A j_i-j_i A_XiXi)G_i j_i^T S_i=S_i+R_i.",
+        "El factor A j_i-j_i A_XiXi se anula en las filas de X_i; por rango r_Q, sus filas restantes están a distancia <=r_Q de X_i. Las columnas de R_i pertenecen a I_i.",
+        "Sumar da A P=I+R. Si la serie absoluta converge, A[P sum_n(-R)^n]=I. Por tanto A^(-1)=P(I+R)^(-1), con P a la izquierda.",
+        "No es lícito invertir el orden como sum_n(-R)^n P: P y R no conmutan en general. Las potencias están definidas mediante multiplicación ordinaria de matrices, no productos escalares de pesos."
+      ],
+      "result": "Correcto. Los núcleos recortados por agujeros de D y los núcleos ordinarios parciales no alteran esta identidad."
+    },
+    {
+      "id": "D02",
+      "topic": "Conjugación exponencial y resolventes uniformes",
+      "assumptions": "a I<=Q, J_Q controla ambas sumas absolutas de coeficientes en la base escalar, dist es una métrica periódica compatible y todo acoplamiento tiene distancia <=r_Q. El número de índices por posición es fijo.",
+      "derivation": [
+        "Para un y fijo, usar W_x=exp(t dist(x,y)). La función distancia es 1-Lipschitz; las sumas por filas y columnas de W A_X W^(-1)-A_X son <=J_Q(exp(t r_Q)-1).",
+        "Con t=log(1+a/(2J_Q))/r_Q, la perturbación tiene norma de operador <=a/2. El argumento vale para bloques principales arbitrarios, incluso si D tiene agujeros.",
+        "Para A_X+lambda I la perturbación es la misma: lambda I conmuta con W. La inversa conjugada tiene norma <=1/(a+lambda-a/2)<=2/(a+lambda).",
+        "Se obtiene |G_i,lambda(x,y)|<=2 exp(-t dist(x,y))/(a+lambda). No se exige ni se introduce t dependiente de lambda.",
+        "H_v incluye orientaciones/color y puede acotarse por el conteo de la red cuatro-dimensional con la métrica mínima periódica; no por una coordenada lineal no periódica atravesando el corte del toro."
+      ],
+      "result": "Correcto bajo esos controles uniformes. r_Q=0 requiere rama separada: el operador es local por fibras; no necesariamente diagonal entre colores de la misma posición."
+    },
+    {
+      "id": "D03",
+      "topic": "Schur absoluto, suma de palabras y geometría dispersa",
+      "assumptions": "La norma Schur es max(max_filas sum |.|, max_columnas sum |.|); nu controla el solapamiento pertinente; la distancia núcleo/exterior del dominio local es >=ell.",
+      "derivation": [
+        "En cada término A(x,z)G_i(z,y) de un residual, y pertenece a I_i, x está fuera de X_i y dist(x,z)<=r_Q. Por ello dist(z,y)>=ell-r_Q.",
+        "Separar exp(-t d)<=exp[-t(ell-r_Q)/2] exp(-t d/2). Para una columna y hay un solo dueño I_i. Para una fila, sumar sobre los X_i que contienen z introduce a lo sumo nu. Resulta ||sum_i |R_i,lambda|||_Schur<=E_res/(a+lambda).",
+        "Análogamente ||sum_i |P_i,lambda|||_Schur<=K/(a+lambda), con K=2 nu H_t. La submultiplicatividad Schur aplicada a matrices no negativas da la cota K E_res^n/(a+lambda)^(n+1) para la suma absoluta de todas las palabras de longitud n.",
+        "La conectividad de una palabra no proviene de contar su longitud: proviene de que el índice intermedio de cada producto no nulo pertenece al núcleo del factor precedente y a la salida del residual siguiente. Los halos completos conectan esos soportes.",
+        "La unión no exige llenar un balón de radio proporcional a n. Las piezas especiales pueden ser grandes: su volumen pertenece al dueño protegido C_j, y no a un supuesto pequeño bloque ordinario."
+      ],
+      "result": "Las cotas son suficientes y conservadoras; no se detecta un factor de volumen omitido bajo las premisas de solapamiento. eps<1 no paga por sí solo entropía, árboles, contorno ni costes fuente."
+    },
+    {
+      "id": "D04",
+      "topic": "Raíz por integración espectral",
+      "assumptions": "A real estrictamente positiva, el mismo cover sirve para todos los desplazamientos y eps=E_res/a<1.",
+      "derivation": [
+        "A^(-1/2)=(1/pi) integral_0^infinity lambda^(-1/2)(A+lambda I)^(-1) d lambda por cálculo espectral positivo.",
+        "La integral escalar del mayorante de longitud n es pi c_n a^(-n-1/2), con c_n=Gamma(n+1/2)/(sqrt(pi)Gamma(n+1))=binomial(2n,n)/4^n.",
+        "Sumar/integrar en valor absoluto es lícito porque (K/sqrt(a)) sum_n c_n eps^n es finito. En particular, la cota simplificada c_n<=1 utilizada por el paquete es válida.",
+        "Cada integral conserva el soporte y los datos de su palabra. El hecho de que una palabra individual no sea simétrica no impide que la suma en sigma=1 sea la raíz positiva.",
+        "La raíz de Q_DD^(-1) y la raíz del inverso en una lista libre mayor son operadores distintos. La restricción de la segunda no es la primera."
+      ],
+      "result": "Correcto. No se heredan identidades algebraicas entre operadores etiquetados independientemente fuera de sigma=1."
+    },
+    {
+      "id": "D05",
+      "topic": "Padding corregido, cuentas ordinarias y núcleos especiales",
+      "assumptions": "Cobertura rectangular compatible con el toro; M,L fijados; interpretación consistente de índices sobre fronteras; para el paquete final r_Q,s_Q<=u=floor(M/6), M impar y u>0 en el caso no trivial.",
+      "derivation": [
+        "P_i utiliza datos de X_i con padding s_Q. R_i utiliza además una entrada A(x,z) con x fuera de X_i; sus datos pueden llegar a r_Q+s_Q de X_i. Esta es la corrección1923 que debe prevalecer.",
+        "Un núcleo ordinario M con una ampliación M por lado tiene dominio de lado 3M. El carrier completo residual tiene lado <=3M+2(r_Q+s_Q). Bajo la premisa anterior más débil r_Q,s_Q<=M/2 puede alcanzar 5M, no 4M.",
+        "Con L>11, 5M<LM. Un intervalo de longitud estrictamente menor que LM encuentra a lo sumo dos celdas nativas por coordenada; el producto da 16. Bajo la premisa final más fuerte, el lado es <=3M+4u<4M, por lo que 5^4 es una cota holgada de solapamiento ordinario.",
+        "Para la pieza especial: I_star=N_2u(R_j) intersect D, X_star=N_4u(R_j) intersect D. El residual puede requerir N_(4u+r_Q+s_Q), contenido en N_6u. P_star solo requiere N_5u.",
+        "M impar implica 6 floor(M/6)<=M-1; por tanto el padding especial queda estrictamente dentro de una auténtica protección de espesor M. No demuestra que la protección y su conversión de unidades existan en el caso físico.",
+        "Los dominios especiales son disjuntos solamente si se ha demostrado que esos vecindarios completos permanecen en sus C_j propietarios. Entonces añaden como máximo uno al solapamiento.",
+        "El carrier entero C_j es una sobrelocalización legítima para una pieza especial, aunque R_j o X_star sean desconectados. Se requiere la unión por paredes de C_j y no una identificación de grupos basada únicamente en esquinas raw."
+      ],
+      "result": "La corrección aritmética y el conteo son válidos para el cover descrito. La equivalencia con geometría/stencil nativos sigue siendo una premisa física, con la salvedad M frente a M1 identificada en los hallazgos."
+    },
+    {
+      "id": "D06",
+      "topic": "Referencia Gamma y error de contorno",
+      "assumptions": "N_(6u)(R_j) queda en C_j, las piezas especiales no llevan tags exteriores, todos los tags variables tienen |sigma|<=exp(kappa1), kappa1>=0, y Q_Z0,D\\Z0 utiliza sus datos protegidos reales.",
+      "derivation": [
+        "La suma de piezas especiales n=0 tiene norma Schur <=2H_t/sqrt(a), sin nu, por disjunción de sus dominios y núcleos. Multiplicar por Q_Z0,D\\Z0 da K_ref=2J_Q H_t/sqrt(a).",
+        "Los índices exteriores tocados por Q_Z0,D\\Z0 están a distancia <=r_Q<=u de R_j. Un núcleo columna ordinario está fuera de todos los N_2u(R_j). Por tanto el kernel ordinario n=0 que llega a una fila de fuerza recorre al menos u.",
+        "Integrar el kernel desplazado da (2/sqrt(a))exp(-t d). Separar la cola en t/2 y sumar con nu da T_off=(2nu H_(t/2)/sqrt(a))exp(-tu/2).",
+        "Una palabra con n residuales tiene n+1 factores. Cada factor ordinario añade <=16 tags exteriores; una pieza especial añade cero. Usar b_tag^(n+1), b_tag=exp(16kappa1), es una sobrecota segura, aunque los tags se cuenten una sola vez por palabra.",
+        "Con q=eps b_tag<1, los términos n>=1 suman a lo sumo (K/sqrt(a)) b_tag q/(1-q). Los ordinarios n=0 contribuyen b_tag T_off. Tras la multiplicación por Q se obtiene exactamente Delta_Gamma=J_Q b_tag[T_off+(K/sqrt(a))q/(1-q)].",
+        "Gamma_ref real implica ||Im Gamma_sigma||_2<=Delta_Gamma y ||Gamma_sigma||_2<=K_ref+Delta_Gamma. La norma Schur controla la norma l2 usada aquí."
+      ],
+      "result": "Derivación válida. Gamma_ref no tiene por qué ser Gamma con todos los tags exteriores a cero: otras palabras enteramente protegidas pueden sobrevivir. El paquete no necesita esa igualdad, y no debe añadirse."
+    },
+    {
+      "id": "D07",
+      "topic": "Normalización compensada y extremo físico gaussiano",
+      "assumptions": "C0 real definida positiva; transpuesta bilineal; inserción original evaluada en sus variables reales y, si procede, con la media real conservada.",
+      "derivation": [
+        "Para cada X real fijo, la fórmula generadora gaussiana da integral dmu_C0(B) exp[-B^T Gamma X]=(exp[(1/2)X^T Gamma^T C0 Gamma X]) para cualquier Gamma compleja finita. El compensador inverso deja exactamente 1.",
+        "Esto no usa una transpuesta Hermitiana. Reemplazar Gamma^T por Gamma^* rompe la identidad para Gamma compleja.",
+        "En el extremo real, tomar S=Q_DD^(-1/2), E_inner=D\\Z0, B_Einner=P_Einner S X y Gamma=Q_Z0,Einner P_Einner S. B_Einner tiene la covarianza marginal de Q_DD^(-1). La densidad inclinada de B_Z0 tiene media -C0 Gamma X y covarianza C0, la descomposición condicional correcta.",
+        "La ley de B_Z0 reconstruida satisface Cov(B_Z0)=C0+C0 Gamma Gamma^T C0; el bloque cruzado también es el de Q_DD^(-1). Las marcas o potenciales de B_Z0+m_Z0 mantienen el m real.",
+        "Fuera de sigma=1 la expresión es una familia auxiliar, no una nueva ley física ni una afirmación S_sigma^2=C_sigma. La normalización iterada vacía no implica integrabilidad absoluta conjunta ni una cota de una inserción."
+      ],
+      "result": "Correcto con ese alcance. El centro condicional de la parte gaussiana no debe identificarse automáticamente con la esperanza de la ley completa que incluye cortes y potenciales."
+    },
+    {
+      "id": "D08",
+      "topic": "Factorización por componentes y sus límites",
+      "assumptions": "Propietarios de índices disjuntos, carrier completo de cada palabra por paredes, tags sobre todas las celdas exteriores efectivamente utilizadas, y todos los carriers de inserciones y reconstrucciones seleccionadas incluidos antes de agrupar.",
+      "derivation": [
+        "Al anular todos los tags exteriores a Z0prime, una palabra que sobreviva no puede atravesar celdas exteriores. Su carrier conectado permanece en un C_j. Sus columnas auxiliares y filas de fuerza quedan en ese grupo.",
+        "C0=(Q_Z0,Z0)^(-1) es bloque diagonal entre C_j separados por la protección y el rango. Los acoplamientos dentro de un grupo fusionado se mantienen.",
+        "La medida estándar de X, la medida de B y el compensador son entonces productos por grupos, para una inserción que ya es producto por esos grupos. En Gamma_ref esto se ve directamente por las columnas I_star disjuntas.",
+        "El mismo argumento de carriers puede extenderse a cualquier conjunto de tags retenidos: usar componentes de Z0prime unido a las celdas retenidas. Esta extensión requiere la misma propiedad geométrica y la localización de TODAS las inserciones, no solo la acotación numérica de Gamma.",
+        "Un carrier de marca o potencial que une grupos obliga a fusionarlos. La media y el fondo compartidos permanecen como parámetros condicionados. Al reintegrarlos pueden crear correlaciones entre grupos."
+      ],
+      "result": "La factorización auxiliar condicionada es defendible. No es una factorización de sectores físicos, del normalizador completo ni de la historia; no localiza por sí sola U1(V) ni m(V,a_E)."
+    },
+    {
+      "id": "D09",
+      "topic": "Comparación absoluta compleja y V_star",
+      "assumptions": "Gamma=R+iI, C0 real, T_B<=tau_B I_B y T_X<=tau_X P_X con cargas no negativas y apoyos reales identificados. Cada exponente cuadrático se escribe con factor 1/2.",
+      "derivation": [
+        "Tomar valor absoluto del integrando compensado cambia la parte cuadrática X a -1/2 X^T(R^T C0 R-I^T C0 I)X y deja la parte cruzada -B^T R X.",
+        "Con C_t=(C0^(-1)-tau_B I_B)^(-1) y D=C_t-C0, integrar B produce D_B y la precisión X: S_X=I-tau_X P_X-I^T C0 I-R^T D R. El signo de ambos términos de pérdida es negativo.",
+        "d_B=1-tau_B/a>0 garantiza ||C_t||<=1/(a d_B), D>=0 y ||D||<=tau_B/(a^2 d_B). Esto también sigue de una dominación escalar cuando la carga real T_B no conmuta con C0.",
+        "S_X>=s_X I con s_X=1-tau_X-Delta_Gamma^2/a-K_Gamma^2 tau_B/(a^2 d_B). Exigir s_X>0 es una condición suficiente de dominación conjunta, no la condición exacta necesaria.",
+        "La covarianza marginal B del mayorante conjunto es C_t+C_t R S_X^(-1) R^T C_t. Su norma es <=1/(a d_B)+(K_Gamma/(a d_B))^2/s_X=V_star."
+      ],
+      "result": "Correcto. No se necesita añadir un segundo determinante por la parte imaginaria: ya está dentro de S_X."
+    },
+    {
+      "id": "D10",
+      "topic": "Media real y reserva exterior",
+      "assumptions": "El centro gaussiano insertado es m=-f A^(-1)Q_DE a_E con |f|<=1, o se incluye explícitamente ||f|| en la cota. Q>=aI, ||Q||<=B y la reserva exterior disponible es la declarada.",
+      "derivation": [
+        "Una carga (tau_B/2)||B+m||^2 introduce el término lineal tau_B m^T B y el constante (tau_B/2)||m||^2.",
+        "La integral del término lineal bajo el mayorante gaussiano conjunto aporta a lo sumo exp[(tau_B^2 V_star/2)||m||^2]. La carga total de la media es (tau_B/2)(1+tau_B V_star)||m||^2.",
+        "||m||<=|f|(B/a)||a_E||. El Schur exterior de un Q>=aI es >=aI, por minimización en los índices interiores.",
+        "Si |f|<=1 y tau_B(1+tau_B V_star)(B/a)^2<=a/2, queda al menos la mitad del margen gaussiano exterior. Si el f original no está en ese intervalo, la fórmula del paquete debe llevar |f|^2 o la correspondiente norma.",
+        "Este cálculo no elimina los términos de borde, flujo de corte ni las variaciones de la media en las marcas. Tampoco prueba una envolvente uniforme para un V0 compacto arbitrario."
+      ],
+      "result": "El cálculo de reserva es válido condicionalmente. El paquete congelado no define f ni certifica la disponibilidad física de dicha reserva; esa identificación debe acompañar cualquier uso."
+    },
+    {
+      "id": "D11",
+      "topic": "Determinantes, rango y ausencia de doble gasto",
+      "assumptions": "Los determinantes se toman en las métricas reales correctas, n_B es la dimensión escalar raw, P_X es una proyección sobre el apoyo efectivo de la carga auxiliar y n_X=rank P_X.",
+      "derivation": [
+        "Para M>=0 con I-M>=dI, -log det(I-M)<=Tr(M)/d. Aplicado a C0^(1/2)tau_B I_B C0^(1/2), da log D_B<=tau_B n_B/(2a d_B).",
+        "F_sigma=I^T C0 I+R^T D R>=0. Tr(I^T C0 I)<=n_B Delta_Gamma^2/a y Tr(R^T D R)<=n_B K_Gamma^2 tau_B/(a^2 d_B). La carga directa tiene traza tau_X n_X.",
+        "Con S_X>=s_X I se obtiene la cota log D_X del paquete. No hace falta sustituir n_B por la dimensión ambiental total de X; la carga tau_X sí conserva su dimensión real n_X.",
+        "Para referencia real, F_ref=Gamma_ref^T D Gamma_ref. Escribir R=Gamma_ref+E_R y expandir el término cuadrático da ||F_sigma-F_ref||<=Delta_Gamma^2/a+[tau_B/(a^2 d_B)](2K_ref Delta_Gamma+Delta_Gamma^2)=d_F.",
+        "La imagen de F_sigma-F_ref está en la suma de los espacios de filas transpuestos de I,R,Gamma_ref. Su rango es <=3n_B, aunque no sea positivo.",
+        "Si los dos extremos S_ref y S_sigma tienen brecha >=s_min, toda su interpolación afín la tiene. Integrar la derivada de log det y usar |Tr(S_t^(-1)(F_sigma-F_ref))|<=3n_B d_F/s_min prueba el incremento <=3n_B d_F/(2s_min)."
+      ],
+      "result": "Cotas correctas y conservadoras. Debe elegirse una sola organización: coste gaussiano completo, o presupuesto de la misma referencia ya demostrado más incremento. La fuente (2.23)-(2.25) no identifica automáticamente esa referencia nueva con su término alpha5."
+    },
+    {
+      "id": "D12",
+      "topic": "Mismo contorno, presupuesto total y ley congelada",
+      "derivation": [
+        "Las tres condiciones1924 implican q<=1/2 y Delta_Gamma<=Delta_star usando q/(1-q)<=2q. Sus conversiones logarítmicas tienen correctamente 16kappa1,16kappa1 y32kappa1, respectivamente.",
+        "Los términos nulos deben manejarse directamente: no se evalúa log0 ni se supone un intervalo favorable si el término es inexistente.",
+        "El mismo kappa1 debe satisfacer simultáneamente los límites fuente y todos los consumidores del coste total. eps<1 no implica q<1; Delta_Gamma pequeño no sustituye una referencia gaussiana que ya fracasa a error cero.",
+        "Un Delta_star positivo solo puede extraerse de una holgura estricta y real de los márgenes gaussianos, reserva exterior, dominio no lineal y presupuesto total. No puede elegirse como amplitud física nueva.",
+        "n_B y n_X deben convertirse con los factores reales de color, M,L y volumen protegido a la constante A que consumen F_final y mu_corr. Las expresiones exp(512A) y (1-7delta)Lkappa/2-512A se retienen como consumidores declarados; el paquete no permite revalidar su derivación ni pagar con ellos costes todavía sin convertir.",
+        "1535/1559 fijan C_delta, beta_ref, g1_ref y el normalizador completo. Bajar g0 no mejora theta=C_delta/A0. Cambiar el corte o la referencia crea otra ley y requiere la corrección de normalizadores indicada en1559.",
+        "La fórmula de comparación de leyes1559 es correcta cuando las densidades y coordenadas restantes son idénticas: los cocientes de particiones son las probabilidades de K_C dentro de K_D. Es una identidad de comparación, no permiso para redimensionar el corte."
+      ],
+      "result": "Las implicaciones algebraicas de los tests son correctas; falta un testigo común y la identificación de todos sus consumidores en la aplicación física."
+    }
+  ],
+  "findings": [
+    {
+      "id": "R1925-01",
+      "severity": "media",
+      "category": "Vinculación con fuente que requiere corrección o desambiguación",
+      "locations": [
+        "1921.geometry_check.conventions",
+        "1921.geometry_check.ordinary_tile_candidate",
+        "1922.protected_core_construction.outer_cover"
+      ],
+      "new_or_preexisting": "Observación nueva de esta revisión; no es un contraejemplo al álgebra de bloques propios.",
+      "finding": "El texto presenta los bloques ordinarios M como geometría original de localización sin distinguirlos de los dominios locales nativos de los propagadores. CMP116 p.3 describe éstos como pequeños conjuntos de cubos M1, y p.13 conserva esa distinción al introducir tags LM y el dominio especial. Hay un M de localización de actividades/tags y un M1 de dominios de propagadores; no son intercambiables por notación.",
+      "evidence": "Lectura íntegra de pp.3 y13; p.13 inspeccionada visualmente. El candidato puede construir otro parametrix principal sobre una cobertura M, pero esa construcción no es automáticamente el mismo cover fuente.",
+      "impact": "No se pueden atribuir a la fuente el cover propuesto, su stencil ni la correspondencia exacta de constantes sin una conversión de unidades y compatibilidad. La cuenta condicional16 sigue siendo correcta para las cajas descritas.",
+      "required_action": "Denominar la cobertura M como cobertura auxiliar propia y proporcionar la relación fija con las particiones M1/M/LM, las unidades del libre seleccionado y la geometría periódica. No cambiar M ni otra escala de la ley para conseguir el ajuste."
+    },
+    {
+      "id": "R1925-02",
+      "severity": "bloqueante para aplicación física",
+      "category": "Hipótesis físicas abiertas, no error lógico demostrado",
+      "locations": [
+        "1920.physical_binding",
+        "1921.geometry_check.remaining_actual_test",
+        "1922.protected_core_construction.geometric_limit",
+        "1923.constant_definitions.actual_inputs"
+      ],
+      "new_or_preexisting": "Límite ya reconocido en el paquete, conservado íntegramente.",
+      "finding": "No se certifican a,J_Q,r_Q,s_Q ni sus normas/unidades, la separación protegida, la geometría all-sector o la brecha uniforme del Q con corriente y gauge soft. Los teoremas condicionales de matrices no prueban estas premisas físicas.",
+      "evidence": "Los ocho inputs carecen de valores admisibles o demostraciones uniformes de esas propiedades; los propios textos las declaran abiertas. CMP119 muestra la forma de Q y los términos conservados, no cierra por ello todas esas constantes.",
+      "impact": "La versión física del parametrix, la referencia y el error Gamma quedan condicionadas. Una inversión numérica de una matriz de ejemplo no sustituye esta verificación.",
+      "required_action": "Probar esas propiedades para la misma lista libre, reconstrucción seleccionada, fondo U1 y todos los sectores admitidos, conservando ambas escalas de rango matriz y rango de datos."
+    },
+    {
+      "id": "R1925-03",
+      "severity": "media",
+      "category": "Convenciones técnicas y condición omitida en el paquete autocontenido",
+      "locations": [
+        "1921.contour_candidate_and_limits.native_tagging",
+        "1923.component_factorization_check.carriers",
+        "1923.actual_complex_gaussian_gates.mean_reserve"
+      ],
+      "new_or_preexisting": "Precisiones necesarias identificadas en esta revisión.",
+      "finding": "Deben fijarse explícitamente los dueños de índices/celdas de frontera y el hecho de que los tags protegidos valen1. Si 'cubo que toca el carrier' se entiende literalmente como intersección de celdas cerradas, el carrier C_j entero toca celdas exteriores por su pared; no puede simultáneamente usar ese criterio literal y declarar cero tags exteriores para las piezas especiales. Además, f aparece en la media de1923 sin definición ni cota en los ocho inputs.",
+      "evidence": "La prueba de Delta_Gamma retira exactamente las piezas especiales n=0 como Gamma_ref y exige que no se multipliquen por parámetros variables. La reserva de media pierde un factor |f|^2 si |f|>1.",
+      "impact": "No invalida la interpretación natural por celdas propietarias y tags exclusivamente exteriores, pero deja una definición necesaria para usar las fórmulas de forma literal/autocontenida. La reserva escrita solo está justificada con |f|<=1 o la norma correspondiente incorporada.",
+      "required_action": "Especificar una regla consistente de fronteras/interiores; etiquetar el soporte de datos efectivo o sus celdas propietarias, dejando las protegidas a1. Definir f y demostrar |f|<=1, o corregir la reserva con |f|^2. Distinguir el centro gaussiano de una esperanza bajo la ley física con cortes."
+    },
+    {
+      "id": "R1925-04",
+      "severity": "bloqueante para transferencia de localidad/factorización física",
+      "category": "Límite lógico conocido; no contradicción de la afirmación condicionada",
+      "locations": [
+        "1920.physical_binding.data",
+        "1922.compensated_gaussian_identity.reference_factorization",
+        "1923.component_factorization_check.root_rule",
+        "1924.1655_propagation.mean_and_marks"
+      ],
+      "new_or_preexisting": "Límite ya reconocido, confirmado con contraejemplos de inferencias más fuertes.",
+      "finding": "Localidad de entradas de Q respecto de sus datos finos y factorización de variables gaussianas a fondo/media fijos no implican localidad en el campo grueso V ni independencia tras integrar la media o el exterior compartidos.",
+      "evidence": "Q(V)=(2+0.25 tanh(sum V))I tiene rango0 y brecha uniforme pero depende de todas las coordenadas V. Dos B independientes con una misma media exterior aleatoria tienen covarianza condicionada0 y covarianza no condicionada positiva.",
+      "impact": "El candidato no cierra una actividad física localizada ni una correlación de dos raíces por la sola construcción de Gamma. La media real, reconstrucciones, carriers de marcas y flujo de corte siguen necesitando su propio control.",
+      "required_action": "Mantener la limitación explícita y demostrar la transferencia en V y la organización de medias/marcas en la integral exterior antes de invocar localidad o factorización física."
+    },
+    {
+      "id": "R1925-05",
+      "severity": "bloqueante para dominio complejo y densidad marcada",
+      "category": "Hipótesis de aplicación abierta, no fallo de la normalización algebraica",
+      "locations": [
+        "1922.compensated_gaussian_identity.why_square_root_identity_not_needed",
+        "1923.actual_complex_gaussian_gates",
+        "1924.actual_determinant_owners.whole_cost"
+      ],
+      "new_or_preexisting": "Límite ya reconocido, sometido a prueba adversarial.",
+      "finding": "Normalizar la inserción vacía para cada X no controla el integral absoluto conjunto ni una inserción no lineal. La convergencia de palabras en sigma tampoco prueba los márgenes analíticos de las variables de fondo, del chart, de las marcas o del G fuente completo.",
+      "evidence": "Con C0=1 y Gamma=2i, el integral iterado vacío en B vale1 para cada X, pero el mayorante absoluto conjunto tiene precisión X=1-4=-3 y diverge. Las puertas d_B,s_X evitan este contraejemplo, pero sus cargas físicas no están certificadas.",
+      "impact": "No se puede sustituir el dominio complejo fuente por la sola condición q<1 ni usar la normalización para eliminar coste de potenciales.",
+      "required_action": "Demostrar las cargas T_B,T_X y sus apoyos para la densidad/interpolación realmente usadas, junto con dominio analítico y dominación uniforme de las inserciones; conservar cortes y términos de borde."
+    },
+    {
+      "id": "R1925-06",
+      "severity": "bloqueante para coste total",
+      "category": "Contabilidad condicional correcta con identificación física abierta",
+      "locations": [
+        "1924.actual_determinant_owners",
+        "1924.reference_increment_candidate",
+        "1924.1655_propagation.volume_conversion"
+      ],
+      "new_or_preexisting": "Límite ya reconocido; no se encontró doble gasto en la alternativa expresamente formulada.",
+      "finding": "Las cotas de rango y determinante son válidas, pero ni n_X ni las conversiones de dimensión a volumen protegido/final están identificadas numéricamente. Tampoco se ha demostrado que un presupuesto Gaussian fuente existente corresponda a exactamente C0,Gamma_ref,T_B,T_X de esta construcción.",
+      "evidence": "La fuente (2.23)-(2.25) usa su propia referencia y cargas. El paquete impone correctamente la alternativa 'coste completo' o 'referencia verificada más incremento', pero no realiza la correspondencia ni la conversión a A.",
+      "impact": "No hay aún un A total utilizable para los consumidores de contorno, entropía y raíces. Añadir el nuevo coste completo al viejo alpha5 ya cargado sería doble gasto; heredarlo sin identificación sería gasto sin justificar.",
+      "required_action": "Elegir y justificar una sola organización contable, registrar los apoyos/dimensiones reales y transformar una vez esos costes en A total. No ampliar n_X a todo el ambiente por comodidad ni reducirlo sin prueba de apoyo."
+    },
+    {
+      "id": "R1925-07",
+      "severity": "bloqueante para testigo fijo simultáneo",
+      "category": "Condiciones pendientes, no contraejemplo de inexistencia física",
+      "locations": [
+        "1923.actual_complex_gaussian_gates.not_closed",
+        "1924.same_contour_parameter_tests",
+        "1924.1655_propagation.one_chain"
+      ],
+      "new_or_preexisting": "Límite ya reconocido; se mantiene sin suavizar.",
+      "finding": "No se exhibe un mismo conjunto de constantes que satisfaga stencil, q, error Gamma, d_B,s_X, reserva de media, charts, volumen y todos los límites del mismo kappa1. La intersección de esas puertas puede ser vacía para datos fijados.",
+      "evidence": "En general eps<1 no implica eps exp(16kappa1)<1. Por ejemplo eps=10^(-3), kappa1=1 produce q≈8886.11. La referencia debe pasar incluso a Delta_Gamma=0; reducir solo el error no repara un fallo de base.",
+      "impact": "Ni una convergencia real demostrada ni un ejemplo gaussiano favorable autorizan la cadena física. Tampoco se ha probado la imposibilidad física: faltan los datos.",
+      "required_action": "Presentar un único testigo o una prueba de existencia dentro de la ley original, con todas las holguras y consumidores simultáneos. Si falla, conservar la representación real sin cambiar cortes, M o referencia para forzar el resultado."
+    },
+    {
+      "id": "R1925-08",
+      "severity": "bloqueante para identificación de ley completa",
+      "category": "Límites de ley y dominio expresamente abiertos",
+      "locations": [
+        "1917.cutoff_and_domain_gate",
+        "1535.source_prefactor_discrepancy",
+        "1535.old_action_binding_rule",
+        "1559"
+      ],
+      "new_or_preexisting": "Límite previo congelado y pertinente, no revisión heredada.",
+      "finding": "El diccionario1917 es compatible con la integral fuente, pero no convierte globalmente Chi0_prime en un producto libre ni controla el chart y los T_H de borde. La discrepancia del prefactor delta0 sigue sin resolver y no se identifica una acción histórica no indexada con la ley fija.",
+      "evidence": "CMP119 (1.18)-(1.25) contiene una partición y modificaciones de frontera; 1535/1559 conservan explícitamente la discrepancia y la fijación de C_delta/beta_ref.",
+      "impact": "La construcción matricial no cierra el normalizador, los sectores, la acción completa ni la historia de esa ley. No puede cambiarse la ley como reparación técnica.",
+      "required_action": "Mantener el mismo C_delta, esquema beta_ref/g1_ref, normalizador y dominios, y completar el control original de cada rama antes de hacer la transferencia."
+    }
+  ],
+  "adversarial_tests": [
+    {
+      "id": "T01",
+      "method": "Derivación exacta y ejemplo numérico no conmutativo",
+      "setup": "Matriz real SPD cíclica de tamaño18, diagonal 3+0.2 U, vecinos negativos -0.7+0.2 U, enlace de cierre -0.47; semilla NumPy1925. Núcleos de3 índices y halos de2. No es una matriz física ni un testigo de las constantes del paquete.",
+      "results": {
+        "AP_identity_operator_error": 0,
+        "absolute_residual_Schur": 0.012028862771894397,
+        "inverse_error_17_terms": 1.2144915544256994e-16,
+        "wrong_side_inverse_error_17_terms": 0.001870871790233456,
+        "sufficient_epsilon_bound": 140.38187942396806,
+        "sufficient_epsilon_passes": false
+      },
+      "interpretation": "El orden P(-R)^n es correcto y el opuesto falla. El ejemplo confirma también que una cota suficiente conservadora puede fallar aunque la serie concreta converja; no se usa el ejemplo como validación de eps físico."
+    },
+    {
+      "id": "T02",
+      "method": "Cuadratura de resolventes desplazados y comparación espectral",
+      "setup": "La misma matriz T01; lambda=v^2 para eliminar la singularidad lambda^(-1/2); integrar cada longitud n=0,...,11 con scipy.integrate.quad_vec, tolerancias1e-10.",
+      "results": {
+        "root_error_vs_spectral": 4.638876676272007e-15,
+        "word_Schur_norms": [
+          0.7413762271624097,
+          0.002653719333645954,
+          0.00001506852564306954,
+          1.1444393263099422e-7,
+          8.11350205963011e-10,
+          6.19936623777472e-12,
+          3.5685678434855124e-14,
+          3.1976784239475813e-16,
+          2.3192695160019363e-18,
+          1.978956328400801e-20,
+          1.509834275677253e-22,
+          1.2285509324180453e-24
+        ]
+      },
+      "interpretation": "Contraste numérico coherente con la derivación espectral, sin certificación de intervalos ni prueba del dominio físico."
+    },
+    {
+      "id": "T03",
+      "method": "Integral escalar independiente",
+      "setup": "a=1.7 y n=0,1,2,5,10; comparar integral_0^infinity 2/(a+v^2)^(n+1) dv con pi c_n a^(-n-1/2).",
+      "results": {
+        "maximum_absolute_error": 4.440892098500626e-16
+      },
+      "interpretation": "No se detecta un factor pi, a o c_n incorrecto."
+    },
+    {
+      "id": "T04",
+      "method": "Reconstrucción condicional de covarianza",
+      "setup": "Matriz T01; Z0={3,4,5,11,12}, índices base0; C0=A_Z0,Z0^(-1), Gamma=A_Z0,E S_E,: con S=A^(-1/2).",
+      "results": {
+        "error_of_C0_plus_C0_Gamma_GammaT_C0_vs_marginal": 8.443838877289275e-17
+      },
+      "interpretation": "El extremo real reconstruye la marginal correcta, no la inversa principal confundida con una marginal."
+    },
+    {
+      "id": "T05",
+      "method": "Contraste de bloque gaussiano complejo, rango y determinantes",
+      "setup": "C0 SPD4x4, Gamma4x10, referencia real más perturbaciones real/imaginaria, soporte auxiliar de rango6; semilla continua1925 del experimento T01. Cargas tau_B=.07 y tau_X=.06.",
+      "results": {
+        "n_B": 4,
+        "n_X": 6,
+        "ambient_X": 10,
+        "d_B": 0.9668712619153519,
+        "s_X_lower_bound": 0.9259404835166047,
+        "actual_S_X_gap": 0.9369492609778339,
+        "Schur_identity_error": 1.147999687316388e-16,
+        "actual_B_covariance_norm": 0.5452258942211243,
+        "V_star_bound": 0.615443185486765,
+        "logD_B": 0.03993070851452085,
+        "bound_logD_B": 0.0685277128188105,
+        "logD_X": 0.19186767236161467,
+        "bound_logD_X": 0.22476502180397243,
+        "rank_deltaF": 10,
+        "rank_bound": 12,
+        "norm_deltaF": 0.0029834038358818042,
+        "dF_bound": 0.008537307057367813,
+        "absolute_log_increment": 0.002714963726743541,
+        "increment_bound": 0.05467088184769774
+      },
+      "interpretation": "Los signos, Schur, V_star, trazas y rango pasan este contraste; las pruebas algebraicas se dan en D09-D11. No justifica valores físicos."
+    },
+    {
+      "id": "T06",
+      "method": "Enumeración de fases de rejilla y prueba geométrica coordenada a coordenada",
+      "setup": "M=7,13,25; L=13; r_Q=s_Q=floor(M/6); intervalos cerrados enteros y todas las fases módulo M o LM.",
+      "results": [
+        {
+          "M": 7,
+          "u": 1,
+          "six_u": 6,
+          "ordinary_side": 25,
+          "LM": 91,
+          "max_overlap_per_coordinate": 4,
+          "max_tags_per_coordinate": 2
+        },
+        {
+          "M": 13,
+          "u": 2,
+          "six_u": 12,
+          "ordinary_side": 47,
+          "LM": 169,
+          "max_overlap_per_coordinate": 4,
+          "max_tags_per_coordinate": 2
+        },
+        {
+          "M": 25,
+          "u": 4,
+          "six_u": 24,
+          "ordinary_side": 91,
+          "LM": 325,
+          "max_overlap_per_coordinate": 4,
+          "max_tags_per_coordinate": 2
+        }
+      ],
+      "interpretation": "Respalda la cota16 y que 5^4+1 es conservadora bajo las hipótesis reforzadas. Estos M de ensayo no son selecciones nuevas para la ley."
+    },
+    {
+      "id": "T07",
+      "method": "Ataque de esquina a la conectividad protegida",
+      "setup": "Análogo bidimensional: dos cubos raw que solo se tocan en diagonal; formar primero la capa completa de cubos tocantes y después contar componentes por paredes.",
+      "results": {
+        "raw_wall_components": 2,
+        "protected_wall_components_after_full_touching_layer": 1
+      },
+      "interpretation": "Confirma que separar por componentes raw puede inventar factores. La fusión protegida del candidato evita este caso, condicionada a la convención real de protección."
+    },
+    {
+      "id": "T08",
+      "method": "Contraejemplo exacto a normalización como dominación",
+      "setup": "C0=1, Gamma=i h, sin cargas adicionales.",
+      "results": [
+        {
+          "h": 0.5,
+          "iterated_empty_B_integral": 1,
+          "absolute_X_precision": 0.75,
+          "absolute_joint_integrable": true
+        },
+        {
+          "h": 1,
+          "iterated_empty_B_integral": 1,
+          "absolute_X_precision": 0,
+          "absolute_joint_integrable": false
+        },
+        {
+          "h": 2,
+          "iterated_empty_B_integral": 1,
+          "absolute_X_precision": -3,
+          "absolute_joint_integrable": false
+        }
+      ],
+      "interpretation": "No contradice el paquete leído con sus puertas de positividad; refuta la inferencia más fuerte que esas puertas prohíben."
+    },
+    {
+      "id": "T09",
+      "method": "Contraejemplos exactos a dos transferencias no autorizadas",
+      "results": [
+        "B1,B2 independientes N(0,1), m independiente N(0,1): Cov(B1+m,B2+m|m)=0, pero Cov(B1+m,B2+m)=1.",
+        "Q(V)=(2+0.25 tanh(sum_j V_j))I: rango espacial0, brecha>=1.75 y norma<=2.25, pero cada entrada diagonal depende de todos los V_j."
+      ],
+      "interpretation": "La factorización condicionada y el rango fino no son localidad/factorización de la ley exterior. Estos límites están reconocidos en el candidato."
+    },
+    {
+      "id": "T10",
+      "method": "Chequeos de usos indebidos de tags, raíces y contorno",
+      "results": [
+        "Etiquetar por separado S_sigma=sigma S y C_sigma=sigma C da S_sigma^2=sigma^2 C, distinto de C_sigma; solo coincide en el extremo indicado. La compensación no requiere esa identidad.",
+        "Si una pieza especial n=0 recibiese un tag variable interno, Gamma_sigma-Gamma_ref contendría un término de orden cero no incluido en Delta_Gamma. Por eso los tags protegidos deben estar fijados a1.",
+        "eps=0.001 y kappa1=1 dan q=0.001 exp(16)=8886.110520507872, aunque eps<1. Convergencia real no prueba convergencia del contorno.",
+        "Un M con stencil r_Q o s_Q mayor que u no satisface la premisa protegida y no puede repararse simplemente reutilizando la cuenta ordinaria16.",
+        "Si la referencia no satisface d_B/s_X/reserva a error cero, ningún Delta_star positivo extraído de esa referencia puede legitimar los tests."
+      ],
+      "interpretation": "Controles adversariales de condiciones necesarias para las inferencias utilizadas; no se presentan como contraejemplos a la versión condicional correctamente interpretada."
+    }
+  ],
+  "necessary_corrections_and_next_evidence": [
+    "Corregir o aclarar la atribución M/M1; especificar la cobertura propia y su compatibilidad con las particiones fuente y el toro sin retocar la ley.",
+    "Conservar como controlantes los carriers de radio r_Q+s_Q y N_6u; no volver a las versiones4M/N_5u para residuales.",
+    "Hacer explícitos propietarios de frontera, tags únicamente exteriores y parámetros protegidos fijados a1; incluir Q de fuerza, reconstrucción seleccionada y carriers de marcas en la contabilidad de soportes.",
+    "Definir f y su norma admisible en la reserva exterior; distinguir centro gaussiano de esperanza de la ley truncada/no lineal.",
+    "Demostrar uniformemente los datos físicos a,J_Q,r_Q,s_Q y la protección compatible para los sectores y fondos originales.",
+    "Aportar una dominación de la densidad realmente insertada y sus apoyos T_B,T_X; no usar la normalización vacía como estimación.",
+    "Elegir un único dueño de coste gaussiano y justificar la correspondencia de referencia, dimensiones y conversión a A total.",
+    "Dar una sola cadena simultánea de holguras con el mismo kappa1, M,L,C_delta,beta_ref y normalizador; conservar todas las condiciones de medias, marcas, borde, cortes y sectores.",
+    "Mantener abiertos dominio/analiticidad en el fondo complejo, localidad en V e historia hasta demostrarlos; no ascender este dictamen condicional a una conclusión física."
+  ],
+  "final_disposition": {
+    "outcome": "CONSERVAR COMO RESULTADO CONDICIONAL; CORREGIR VINCULACIÓN/CONVENCIONES; APLICACIÓN FÍSICA NO ESTABLECIDA",
+    "concise_conclusion": "El parametrix y la raíz están correctamente ordenados; el error Gamma y la contabilidad gaussiana son defendibles bajo las hipótesis reforzadas. No se detectó un fallo fatal de ese núcleo condicional. Se requiere desambiguar M frente a M1 y completar las condiciones de soporte/media; los márgenes físicos, dominio complejo, propietarios de coste y testigo simultáneo siguen abiertos.",
+    "adverse_findings_policy": "Se conservan íntegros R1925-01 a R1925-08 y todos los resultados adversos de las pruebas. No se sustituyen por una nota ni por una afirmación de éxito físico.",
+    "no_new_claims": [
+      "No prueba de novedad.",
+      "No certificado formal.",
+      "No paso físico ni perfil marcado admitido.",
+      "No juicio sobre manuscrito, revisiones anteriores, Capacity o1642.",
+      "No cambio de ley ni de parámetros autorizado o realizado."
+    ]
+  }
+}

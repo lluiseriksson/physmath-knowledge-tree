@@ -1,0 +1,57 @@
+{
+  "execution": 1924,
+  "scope": "Put the protected Gamma contour error into one actual Gaussian determinant/rate ledger and the SAME kappa1 feasibility checks. Own unreviewed candidate derivation, not physical admission or an independent scalar interval paper.",
+  "source": {
+    "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-rg-II-cmp116-1104161193.pdf",
+    "sha256": "ee39523a0f7b83af958513c7bd6f9c7731934b40355ef5d6b0f7a68ee6d022fc",
+    "doi": "10.1007/BF01239022",
+    "anchors": "Actual Gaussian2.23-2.25 and native contour/volume gates; source geometry/costs already read; no whole proof audit"
+  },
+  "fixed_inputs": [
+    {
+      "path": "C:/Trabajo/airr/2026-11-01_execution1923/PROTECTED-GAMMA-ERROR-AND-GATES1923.json"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-11-01_execution1922/PROTECTED-SOFT-FREE-REFERENCE1922.json"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1655/PROPAGATED-ABSORPTIONS1655.json"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-11-01_execution1810/FIXED-BASE-COMPATIBILITY1810.json"
+    },
+    {
+      "path": "C:/Trabajo/airr/marked-rg-manuscript/WORKING-MANUSCRIPT.md"
+    }
+  ],
+  "actual_determinant_owners": {
+    "matrices": "Keep C0 real on the original raw Z0 group and Gamma_sigma=R+iI. For scalar comparison charges tau_B,tau_X on their ACTUAL supports, C_t=(C0^(-1)-tau_B I_B)^(-1) and D=C_t-C0. Let P_X be the original finite auxiliary charge support. The X comparison precision is S_X=I_X-tau_X P_X-I^T C0 I-R^T D R. C_t and S_X are used with the original actual metrics.",
+    "conditions": "Assume the1923 d_B,s_X positivity gates and use n_B=number of raw scalar free B coordinates, n_X=rank P_X. Then log D_B<=tau_B*n_B/(2 a d_B). Since ||D||<=tau_B/(a^2 d_B), positivity and trace/log bounds give log D_X<=[tau_X*n_X+n_B*(Delta_Gamma^2/a+K_Gamma^2*tau_B/(a^2*d_B))]/(2 s_X).",
+    "why_raw_rank": "Both I^T C0 I and R^T D R have trace bounded by n_B times their operator bound, regardless of the number of ambient auxiliary X coordinates. The tau_X term uses its ACTUAL support dimension n_X. Replacing these by an unlimited ambient-volume count is unnecessary and would lose the source ownership.",
+    "whole_cost": "These two logarithms form ONE Gaussian comparison cost. Source background/baseline, selected-delta, FP, raw Jacobian and other potential factors remain separate. The compensator alone provides no estimate for the inserted nonlinear density."
+  },
+  "reference_increment_candidate": {
+    "baseline": "If an actual reference Gaussian budget has already been verified for the SAME C0,Gamma_ref,T_B,T_X, it can instead be updated by a determinant difference. Define F_sigma=I^T C0 I+R^T D R and F_ref=Gamma_ref^T D Gamma_ref, with Gamma_ref real.",
+    "finite_rank": "For ||Gamma_sigma-Gamma_ref||<=Delta_Gamma, ||F_sigma-F_ref||<=d_F=Delta_Gamma^2/a+tau_B*(2 K_ref Delta_Gamma+Delta_Gamma^2)/(a^2 d_B). Its range is contained in the span of the three transpose row spaces of I,R,Gamma_ref, so rank<=3 n_B.",
+    "log_change": "If I-tau_X P_X-[(1-t)F_ref+t F_sigma]>=s_min I for0<=t<=1, the integral derivative of log determinant gives |log D_X(sigma)-log D_X(ref)|<=3 n_B*d_F/(2 s_min). The B determinant is unchanged. The common gap follows if both endpoint precisions have that lower bound, since this interpolation is affine and real symmetric.",
+    "no_double_count": "Use EITHER the recomputed whole Gaussian cost OR a verified reference budget plus this increment. Do not add the whole cost on top of the original already-charged source Gaussian alpha5 volume term. If reference correspondence is not proved, no old Gaussian budget is inherited."
+  },
+  "same_contour_parameter_tests": {
+    "notation": "Use eps,T_off,K,J_Q,a from1923 and choose a target Delta_star ONLY from actual strict Gaussian/reserve and volume slack. It is not a new source amplitude. Let b_tag=exp(16 kappa1).",
+    "explicit_sufficient_conditions": [
+      "eps*b_tag<=1/2",
+      "J_Q*b_tag*T_off<=Delta_star/2",
+      "2 J_Q*K*eps*b_tag^2/sqrt(a)<=Delta_star/2"
+    ],
+    "consequence": "The1923 exact geometric-series bound then gives Delta_Gamma<=Delta_star. Equivalently test16 kappa1<=log(1/(2 eps)),16 kappa1<=log(Delta_star/(2 J_Q T_off)), and32 kappa1<=log(Delta_star sqrt(a)/(4 J_Q K eps)), with the zero-error terms handled directly rather than log0.",
+    "original_gates": "The SAME actual kappa1 must ALSO satisfy the original strict kappa1<d_prop M/48, kappa1<=delta1 M, kappa1>=4 L kappa+1, nonlinear exp(16 kappa1) chart budgets and every existing source condition. Real stencil/halo and a,J_Q uniformity remain. No favorable kappa1 or M is selected after the fixed law.",
+    "baseline_failure": "A strictly positive target Delta_star requires the reference Gamma_ref to fit the actual Gaussian and mean-reserve gates already at zero error, together with spare total source volume/amplitude budget. Smaller Gamma error or smaller coupling cannot repair a failed fixed reference Gaussian/contour intersection."
+  },
+  "1655_propagation": {
+    "volume_conversion": "Convert n_B and n_X to the actual raw/protected/final source volumes with their scalar/color, L and M factors and component owners. No dimensionless A increment is asserted until this conversion and the reference budget choice above are verified.",
+    "one_chain": "With the resulting TOTAL A, use F_final=exp(512 A) PER connected activity and mu_corr=(1-7delta)L kappa/2-512 A. Keep F_tail per seed component, beta=b*F_tail, b^(-e) for exceptions, original root radii and ordinary/tail caps. The existing entropy, rooted J/K0 and contour choices are consumers of the same total cost.",
+    "mean_and_marks": "The original physical real mean keeps its separate tau_B*(1+tau_B V_star)*(B/a)^2 exterior reserve. The forcing score keeps its distinguished root unless its actual small factor is proved. Physical marks stay on their original retained real inputs; no sigma derivative or normalization may erase crossing, cutoff flux, outer sectors or history."
+  },
+  "status": "The packet1920-1924 now defines an actual bare soft-free candidate interpolation, reference, error and cost ledger. It has not been independently assessed, instantiated at an admissible fixed hierarchy, or matched to the full original complex/marked/history domain. No new paper, grade, formal result, source count or1642 admission.",
+  "next": "Subject the complete finite candidate1920-1924 to ONE focused unscored technical check if no other review is running, preserving exact inputs and all adverse findings. Scope the check to this new parametrix/protected Gaussian construction and its explicit fixed-law limits; do not reopen1645/1482/1879 or seek a grade. Keep actual source geometry/constants and the full physical chain open until proved."
+}

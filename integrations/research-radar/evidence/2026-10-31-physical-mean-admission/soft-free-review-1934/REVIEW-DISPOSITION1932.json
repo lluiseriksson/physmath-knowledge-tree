@@ -1,0 +1,115 @@
+{
+  "execution": 1932,
+  "source": {
+    "path": "C:\\Trabajo\\airr\\2026-11-01_execution1932\\ASSESSMENT1925.json",
+    "sha256": "47e8698c06bfd422130a8a9b1b118f97a0ee6a263d5e61fe631d3d6f821bbb1b"
+  },
+  "fixed_inputs": [
+    {
+      "path": "C:\\Trabajo\\airr\\2026-11-01_execution1932\\FROZEN-MANIFEST1925.json",
+      "sha256": "dbdac9284f952bf01e7b73b9cff66dd0b6d91f2bd1b58620a84eb880cdc2453f"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-11-01_execution1929/SOURCE-COVER-REGULARITY1929.json"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-11-01_execution1927/SOURCE-HIERARCHY-FINITE-DOMAIN1927.json"
+    }
+  ],
+  "status": "REVIEW1925_COMPLETE_INTEGRATED_UNSCORED_PHYSICAL_APPLICATION_OPEN",
+  "report_complete": true,
+  "findings": [
+    {
+      "id": "R1925-01",
+      "severity": "media",
+      "finding_verbatim": "El texto presenta los bloques ordinarios M como geometría original de localización sin distinguirlos de los dominios locales nativos de los propagadores. CMP116 p.3 describe éstos como pequeños conjuntos de cubos M1, y p.13 conserva esa distinción al introducir tags LM y el dominio especial. Hay un M de localización de actividades/tags y un M1 de dominios de propagadores; no son intercambiables por notación.",
+      "required_action_verbatim": "Denominar la cobertura M como cobertura auxiliar propia y proporcionar la relación fija con las particiones M1/M/LM, las unidades del libre seleccionado y la geometría periódica. No cambiar M ni otra escala de la ley para conseguir el ajuste.",
+      "disposition": "attribution_corrected_application_open",
+      "parent_action": "Controlling source-cover clarification1929 distinguishes own M cover from native M1 propagator domains; no source constant or geometry transfer inherited."
+    },
+    {
+      "id": "R1925-02",
+      "severity": "bloqueante para aplicación física",
+      "finding_verbatim": "No se certifican a,J_Q,r_Q,s_Q ni sus normas/unidades, la separación protegida, la geometría all-sector o la brecha uniforme del Q con corriente y gauge soft. Los teoremas condicionales de matrices no prueban estas premisas físicas.",
+      "required_action_verbatim": "Probar esas propiedades para la misma lista libre, reconstrucción seleccionada, fondo U1 y todos los sectores admitidos, conservando ambas escalas de rango matriz y rango de datos.",
+      "disposition": "open_physical_premises",
+      "parent_action": "Actual all-sector gap, Schur sums, stencil range, data range, scalar metric and protected geometry must still be proved;1926 is only a parent stencil candidate outside this review."
+    },
+    {
+      "id": "R1925-03",
+      "severity": "media",
+      "finding_verbatim": "Deben fijarse explícitamente los dueños de índices/celdas de frontera y el hecho de que los tags protegidos valen1. Si 'cubo que toca el carrier' se entiende literalmente como intersección de celdas cerradas, el carrier C_j entero toca celdas exteriores por su pared; no puede simultáneamente usar ese criterio literal y declarar cero tags exteriores para las piezas especiales. Además, f aparece en la media de1923 sin definición ni cota en los ocho inputs.",
+      "required_action_verbatim": "Especificar una regla consistente de fronteras/interiores; etiquetar el soporte de datos efectivo o sus celdas propietarias, dejando las protegidas a1. Definir f y demostrar |f|<=1, o corregir la reserva con |f|^2. Distinguir el centro gaussiano de una esperanza bajo la ley física con cortes.",
+      "disposition": "explicit_conditional_conventions_application_open",
+      "parent_action": "Proposed owner rule and general f-norm reserve below replace ambiguous literal closed-cell touching and unbounded f. Actual geometry and physical f binding remain open."
+    },
+    {
+      "id": "R1925-04",
+      "severity": "bloqueante para transferencia de localidad/factorización física",
+      "finding_verbatim": "Localidad de entradas de Q respecto de sus datos finos y factorización de variables gaussianas a fondo/media fijos no implican localidad en el campo grueso V ni independencia tras integrar la media o el exterior compartidos.",
+      "required_action_verbatim": "Mantener la limitación explícita y demostrar la transferencia en V y la organización de medias/marcas en la integral exterior antes de invocar localidad o factorización física.",
+      "disposition": "open_physical_locality",
+      "parent_action": "Conditional Gaussian factorization remains conditional on real mean/background/exterior. No locality in coarse V or independence after exterior integration inferred."
+    },
+    {
+      "id": "R1925-05",
+      "severity": "bloqueante para dominio complejo y densidad marcada",
+      "finding_verbatim": "Normalizar la inserción vacía para cada X no controla el integral absoluto conjunto ni una inserción no lineal. La convergencia de palabras en sigma tampoco prueba los márgenes analíticos de las variables de fondo, del chart, de las marcas o del G fuente completo.",
+      "required_action_verbatim": "Demostrar las cargas T_B,T_X y sus apoyos para la densidad/interpolación realmente usadas, junto con dominio analítico y dominación uniforme de las inserciones; conservar cortes y términos de borde.",
+      "disposition": "open_marked_analytic_domination",
+      "parent_action": "Identify actual nonlinear insertion, analytic domain, quadratic charges and supports; empty normalization does not dominate marked integral."
+    },
+    {
+      "id": "R1925-06",
+      "severity": "bloqueante para coste total",
+      "finding_verbatim": "Las cotas de rango y determinante son válidas, pero ni n_X ni las conversiones de dimensión a volumen protegido/final están identificadas numéricamente. Tampoco se ha demostrado que un presupuesto Gaussian fuente existente corresponda a exactamente C0,Gamma_ref,T_B,T_X de esta construcción.",
+      "required_action_verbatim": "Elegir y justificar una sola organización contable, registrar los apoyos/dimensiones reales y transformar una vez esos costes en A total. No ampliar n_X a todo el ambiente por comodidad ni reducirlo sin prueba de apoyo.",
+      "disposition": "open_single_cost_ledger",
+      "parent_action": "Choose complete Gaussian cost OR verified identical reference plus increment. Identify scalar dimensions/support and source-volume conversion once; no inherited alpha5 budget."
+    },
+    {
+      "id": "R1925-07",
+      "severity": "bloqueante para testigo fijo simultáneo",
+      "finding_verbatim": "No se exhibe un mismo conjunto de constantes que satisfaga stencil, q, error Gamma, d_B,s_X, reserva de media, charts, volumen y todos los límites del mismo kappa1. La intersección de esas puertas puede ser vacía para datos fijados.",
+      "required_action_verbatim": "Presentar un único testigo o una prueba de existencia dentro de la ley original, con todas las holguras y consumidores simultáneos. Si falla, conservar la representación real sin cambiar cortes, M o referencia para forzar el resultado.",
+      "disposition": "open_simultaneous_witness",
+      "parent_action": "One fixed-law witness must satisfy all strict Gaussian, reserve, stencil, chart, same-kappa1, finite-period and1655 conditions.1927 finite geometry tests remain outside reviewed packet."
+    },
+    {
+      "id": "R1925-08",
+      "severity": "bloqueante para identificación de ley completa",
+      "finding_verbatim": "El diccionario1917 es compatible con la integral fuente, pero no convierte globalmente Chi0_prime en un producto libre ni controla el chart y los T_H de borde. La discrepancia del prefactor delta0 sigue sin resolver y no se identifica una acción histórica no indexada con la ley fija.",
+      "required_action_verbatim": "Mantener el mismo C_delta, esquema beta_ref/g1_ref, normalizador y dominios, y completar el control original de cada rama antes de hacer la transferencia.",
+      "disposition": "open_fixed_law_and_history",
+      "parent_action": "Maintain C_delta,beta_ref,g1_ref, original cutoff, normalizer and boundary T_H/sector rules; source prefactor discrepancy and history unresolved."
+    }
+  ],
+  "parent_clarifications_outside_frozen_review": {
+    "source_cover": "Own M principal-block cover; no identification with native M1 propagator cover. Source1929 controls attribution only, not physical admission.",
+    "tag_ownership": "Proposed auxiliary convention: fix deterministic owners for every scalar bond/data index using the original periodic lattice representatives and half-open cells. A variable tag is assigned only to an exterior owner whose effective data support is actually used; protected owners have tag1. Incidental contact of closed geometric cell boundaries adds no tag. Include all selected reconstruction, forcing and mark data. Whether these owners and complete padded supports obey the actual protected source geometry remains to be proved; this is not a new physical partition.",
+    "mean_reserve": "Keep m=-f A^(-1)Q_DE a_E only when this is the actual Gaussian conditional center. For a general scalar/operator f, write tau_B(1+tau_B V_star)||f||^2(B/a)^2<=a/2. The earlier formula follows only after proving ||f||<=1. No physical f value is chosen, and this center is not the nonlinear/truncated expectation.",
+    "zero_range": "r_Q=0 means independent position fibers, potentially non-diagonal in color; do not assert scalar diagonal precision.",
+    "reference": "Gamma_ref need not equal the full family at all exterior tags zero, since additional entirely protected words can survive. No such equality is used."
+  },
+  "review_limits": {
+    "requested_model": "gpt-6-astra",
+    "requested_reasoning_effort": "xhigh",
+    "requested_context": "separate, fork none",
+    "observable_task_name": "/root/astra_soft_free_parametrix1925",
+    "actual_model_identity": "No autenticada por una herramienta o metadato verificable en este contexto. No se infiere de la configuración solicitada ni del nombre de la tarea.",
+    "actual_reasoning_effort": "No autenticado. xhigh es la solicitud, no una medición de la ejecución.",
+    "context_and_independence": "Se recibió un encargo separado con reglas globales y los archivos congelados. No se recibió ni se leyó el contenido de revisiones anteriores. No se puede autenticar mediante las herramientas disponibles el parámetro de creación fork=none ni una independencia externa de procedencia.",
+    "review_conduct": "Una sola evaluación continua de este paquete. No se crearon subagentes, no se consultaron otras evaluaciones, no se heredaron notas y no hubo reinicio de la revisión para buscar otro resultado.",
+    "computational_retries": "Hubo dos fallos instrumentales: la serialización de un numpy.bool y el uso accidental del identificador Python reservado nonlocal. Se corrigieron únicamente esos errores de salida/sintaxis; se mantuvieron los ejemplos, semilla y objetivos de prueba. No fueron reinicios de la evaluación. El primer transporte del informe por línea de comandos superó el límite de longitud de Windows; se cambió únicamente el mecanismo de escritura.",
+    "constraints_observed": [
+      "Sin puntuación ni nota global.",
+      "Sin evaluación de manuscrito/PDF del candidato, Capacity,1642 ni revisiones anteriores.",
+      "Sin publicación, cambios en inputs, fuentes, ESTADO u otros chats.",
+      "Fuentes locales consultadas únicamente para anclas pertinentes; no se auditó su prueba global.",
+      "No se afirma paso físico, novedad, certificación formal ni admisión de una familia física."
+    ]
+  },
+  "scope": "Eight frozen JSON inputs only; not manuscript, PDF, Capacity or1642. No score, external independence or physical validation inferred. Parent1926-1929 were not reviewed.",
+  "tests_scope": "Ten report tests retained verbatim in exact report. Numerical examples are not interval-certified physical witnesses. Instrumental serialization/syntax and Windows transport failures retained in report; no review restart.",
+  "next": "Work on the actual fixed-law scalar/data supports and marked nonlinear domination, then a single common parameter witness. Keep all eight findings and parent clarifications controlling. Do not restart/repeat review1925 or seek a grade; do not substitute more norm lemmas or generic conditional rank statements for physical obligations."
+}

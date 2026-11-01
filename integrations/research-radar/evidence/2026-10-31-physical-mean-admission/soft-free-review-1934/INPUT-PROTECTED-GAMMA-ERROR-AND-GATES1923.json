@@ -1,0 +1,59 @@
+{
+  "execution": 1923,
+  "scope": "Derive the protected-reference error and the actual compensated Gaussian contour gates for the direct BARE soft-free interpolation. This is a concrete participating-parent candidate at fixed real background, not an admitted physical profile or independent review.",
+  "source": {
+    "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-rg-II-cmp116-1104161193.pdf",
+    "sha256": "ee39523a0f7b83af958513c7bd6f9c7731934b40355ef5d6b0f7a68ee6d022fc",
+    "doi": "10.1007/BF01239022",
+    "anchors": "Original compensated/conditioned Gaussian2.5-2.6, localization2.8-2.10 and comparison2.23; previously read, not globally audited"
+  },
+  "fixed_inputs": [
+    {
+      "path": "C:/Trabajo/airr/2026-11-01_execution1922/PROTECTED-SOFT-FREE-REFERENCE1922.json"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-11-01_execution1921/SOFT-FREE-TAGGED-SQUARE-ROOT1921.json"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-11-01_execution1920/SOFT-FREE-SPARSE-PARAMETRIX1920.json"
+    },
+    {
+      "path": "C:/Trabajo/airr/marked-rg-manuscript/WORKING-MANUSCRIPT.md"
+    }
+  ],
+  "controlling_padding_correction": {
+    "1921": "For R_i the cross-boundary matrix entry can have determining data at distance r_Q+s_Q from X_i. Thus under the weaker r_Q,s_Q<=M/2 premise the ordinary full determining box can have side5M, not4M. Since5M<L*M for original L>11, the sixteen-tag-cube bound is unchanged. P_i alone needs only s_Q padding.",
+    "1922": "For the protected special residual the full data can reach N_(4u+r_Q+s_Q)(R_j), bounded by N_(6u), not N_(5u). P_star alone still uses N_(5u). For the original odd M,6 floor(M/6)<=M-1, so this remains strictly within the one-M protection when the original geometric convention is verified. The correction is retained; earlier artifacts are not rewritten."
+  },
+  "constant_definitions": {
+    "actual_inputs": "Use the actual real a,J_Q,r_Q,s_Q, native fixed M,L, four-dimensional free/color index list and compatible periodic cover from1920-1922. Require r_Q,s_Q<=u=floor(M/6) and the original real chart/gap. No arbitrary later-scale nonlocal precision or retuned hierarchy.",
+    "weight": "Set t=log(1+a/(2 J_Q))/r_Q for r_Q>0; H_v=sup_y sum_x exp(-v dist(x,y)). Let nu conservatively bound all special/ordinary output halos, e.g.5^4+1 on the stated compatible core geometry. Let K=2 nu H_t.",
+    "residual": "The minimum core-to-local-domain margin is ell=2u. Define E_res=2 nu J_Q H_(t/2) exp[-t(2u-r_Q)/2], eps=E_res/a, T_off=(2 nu H_(t/2)/sqrt(a))*exp(-t*u/2), b_tag=exp(16 kappa1), and q=eps*b_tag.",
+    "reference": "Gamma_ref uses the real special n=0 square-root terms of1922. Its norm is bounded by K_ref=2 J_Q H_t/sqrt(a), because special domains are disjoint. This is an auxiliary reference coupling, not a new physical covariance."
+  },
+  "error_derivation": {
+    "off_core": "The Q_Z0,E forcing rows are at most r_Q<=u from the raw core. Every ordinary column core lies outside all N_(2u)(R_j). Hence an ordinary n=0 square-root kernel reaching those rows crosses distance at least u. The shifted inverse bound and its spectral integral give2/sqrt(a) times exp(-t distance). Splitting the tail at t/2 and using the absolute halo count gives T_off before Q_Z0,E and tags.",
+    "residual_words": "Every n>=1 square-root word has absolute aggregate norm <=K/sqrt(a)*eps^n*c_n, c_n<=1. Special factors have determining data inside the protected cover and carry no OUTSIDE tag. Ordinary factors contribute at most16 tag cubes each, so b_tag^(n+1) remains a safe overestimate of every word.",
+    "bound": "If q<1, the whole-word tagged Gamma_sigma obeys ||Gamma_sigma-Gamma_ref||_Schur <=Delta_Gamma=J_Q*b_tag*[T_off+(K/sqrt(a))*q/(1-q)]. The first term pays ordinary off-core n=0 words; the second pays all residual words. All indices and ordinary/special words are summed in absolute row/column norm, not by counting a cancellation.",
+    "real_reference": "Since Gamma_ref is real, ||Im Gamma_sigma||_2<=Delta_Gamma and ||Gamma_sigma||_2<=K_Gamma=K_ref+Delta_Gamma. These are explicit candidate bounds at the fixed native scale and contour. No actual value or strict pass is asserted."
+  },
+  "component_factorization_check": {
+    "carriers": "Assign the whole protected component C_j as the determining carrier of its special factor, which contains its actual N_(6u) data. Ordinary factors carry their full uncut boxes with BOTH r_Q and s_Q padding. This preserves a wall-connected carrier, even when D has holes. The special C_j volume is already a protected-core owner and cannot be charged anew as a small ordinary tile.",
+    "zero_tags": "With all OUTSIDE-Z0prime tags zero, every surviving word has a connected determining carrier inside one protected C_j. Its auxiliary columns and raw forcing rows therefore belong to that same group. Together with the real block structure of C0, this gives factorization of the compensated Gaussian functional for an insertion already decomposed on those protected groups.",
+    "root_rule": "If an actual ordered mark or potential joins groups, its complete carrier must merge them before this statement. Shared physical mean/background/exterior data remain conditioned parameters, then return in the full outer integral. No independence of physical sectors/history or locality of the nonlocal mean is inferred."
+  },
+  "actual_complex_gaussian_gates": {
+    "notation": "C0=(Q_Z0,Z0)^(-1) stays real and ||C0||<=1/a. Use the original nonnegative quadratic charges T_B<=tau_B I and T_X<=tau_X I from the actual source majorant, including all its other residual/determinant charges. They are not replaced by arbitrary favorable numbers.",
+    "criteria": "Set d_B=1-tau_B/a and s_X=1-tau_X-Delta_Gamma^2/a-K_Gamma^2*tau_B/(a^2*d_B). Require d_B>0 and s_X>0. A conservative B covariance bound is V_star=1/(a*d_B)+(K_Gamma/(a*d_B))^2/s_X.",
+    "mean_reserve": "For the original REAL physical mean m=-f Q_DD^(-1) Q_DE a_E, retain the same exterior reserve test tau_B*(1+tau_B*V_star)*(B/a)^2<=a/2. It is the original unshifted/shifted organization of1689/1692, with each completing-square charge and determinant once.",
+    "normalization": "The compensator uses the bilinear Gamma_sigma transpose and normalizes the empty B insertion. For dominated X integration the criteria above are still needed, with determinants det(I-C0 T_B)^(-1/2) and the corresponding X Schur determinant paid in their actual dimensions. No separate imaginary determinant is added twice.",
+    "not_closed": "q<1, the stencil/margin hypotheses, Delta_Gamma, d_B,s_X, exterior reserve and TOTAL1655 exponent/amplitude budget must pass together for the SAME actual fixed constants. This execution does not exhibit that simultaneous witness."
+  },
+  "limits": [
+    "Fine-background locality of actual Q blocks is not yet locality of U1 as a function of coarse V. F10/domain data remain open.",
+    "The physical mean still needs its sparse real forcing response, including mark gradient and hard-cutoff flux.",
+    "Crossing T_H, partial_f V_f, actual potential/mark contour bounds and original sector/full normalizer/history remain.",
+    "No new review, paper, grade, formal certification, source/candidate increment or1642 admission."
+  ],
+  "next": "Check the complete1920-1923 packet for exact source geometry and Gaussian ownership, and test whether the fixed source constants can satisfy the displayed strengthened contour and1655 gates simultaneously. Do not add another independent kernel lemma or use empty-Gaussian normalization as a marked physical bound."
+}

@@ -1,0 +1,48 @@
+{
+  "execution": 1922,
+  "scope": "Construct a protected reference for the direct bare soft-free words and the compensated auxiliary Gaussian actually used for a seeded source coefficient. This addresses the1921 special-core and factorization gate; complex/profile admission remains open.",
+  "source": {
+    "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-rg-II-cmp116-1104161193.pdf",
+    "sha256": "ee39523a0f7b83af958513c7bd6f9c7731934b40355ef5d6b0f7a68ee6d022fc",
+    "doi": "10.1007/BF01239022",
+    "anchors": "2.5-2.10, protected special domain on13; original geometry reading1691 controls tildes",
+    "reading_status": "Source structural anchors reused; no whole source proof or new independent review"
+  },
+  "fixed_inputs": [
+    {
+      "path": "C:/Trabajo/airr/2026-11-01_execution1921/SOFT-FREE-TAGGED-SQUARE-ROOT1921.json"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-11-01_execution1920/SOFT-FREE-SPARSE-PARAMETRIX1920.json"
+    },
+    {
+      "path": "C:/Trabajo/airr/marked-rg-manuscript/WORKING-MANUSCRIPT.md"
+    }
+  ],
+  "bare_operator_scope": "Use only the actual BARE first-step finite-range soft free Q=C_rec^sharp Delta1 C_rec on a supported real U1, including its current correction. The generic later CMP109 leading operator can contain nonlocal minimizer lifts; no finite-range claim for that later operator is made. Original physical domain, cutoffs, mean and background stay unchanged.",
+  "protected_core_construction": {
+    "input_geometry": "Let Z0 be the actual raw free Gaussian integration core and let C_j be the WALL-connected components of the native LM-cover Z0prime of protected TILDE Z0. Include the original one-M touching layer before taking this cover, as corrected1691. Assign raw cores to those components; the diagonal raw-corner pair belongs to one merged protected component, not two independent factors.",
+    "integer_margin": "Set u=floor(M/6). Require the actual matrix range r_Q and determining-data radius s_Q to be at most u in the same native free-position units. Use fine l_infinity neighborhoods N_t; their separation also provides at least t distance in the l1 resolvent metric. M remains the already fixed source scale.",
+    "special_sets": "For each protected component let R_j=Z0 intersect C_j, I_star,j=D intersect N_(2u)(R_j), and X_star,j=D intersect N_(4u)(R_j). Its coefficient data lie in N_(5u)(R_j), contained in the one-M protection since5u<=M. The core-to-domain margin is at least2u. The forcing rows of Q_Rj,D\\Z0 lie in N_u(R_j), hence at least u inside the special core.",
+    "outer_cover": "Use the original ordinary M tiles for all remaining free core indices, subtracting the I_star sets from their core projections. Their local inverse domains remain their one-M enlarged tiles. This is still a disjoint partition of the same D; partial cores cause no change to A P_i=S_i+R_i. The special inverse domains are mutually disjoint inside their protected components, so a conservative total padded overlap is5^4+1. No filled growing neighborhood is introduced.",
+    "geometric_limit": "These inclusions use the literal source touching layer and unit conversion. The actual r_Q,s_Q values and the all-sector fine/coarse placement have not been independently certified. If the original geometry does not provide that one-M margin on every determining input, this special cover is not admitted."
+  },
+  "actual_auxiliary_reference": {
+    "conditional_covariance": "C0=(Q_Z0,Z0)^(-1), a real principal FREE inverse of the original Q_DD. Raw blocks in DIFFERENT protected C_j cannot have a matrix coupling when the range is <=u and the one-M protection separates them; therefore C0 splits only across these protected groups. Keep every coupling within a merged group. This is not a principal hard-covariance identification.",
+    "local_square_root_reference": "For each j set S_ref,j=j_Xstar*(Q_Xstar,Xstar)^(-1/2)*j_Xstar^sharp*S_Istar. It is real and uses only the data in C_j. Set Gamma_ref=Q_Z0,D\\Z0 * P_(D\\Z0) * sum_j S_ref,j. Its auxiliary X columns belong to disjoint Istar groups. This is a REFERENCE coupling matrix, not asserted to be a square root of a new physical covariance.",
+    "endpoint": "The full direct words at sigma=1 give the actual S=Q_DD^(-1/2) and Gamma=Q_Z0,D\\Z0*P_(D\\Z0)*S. Retain C0 fixed on this bare covariance-only localization because its actual finite-range coefficient data are already in the protected region. Background/coarse-data locality beyond this fine-data statement remains open."
+  },
+  "compensated_gaussian_identity": {
+    "formula": "For real positive C0 and ANY finite complex Gamma, integrating over B gives integral dmu_C0(B) exp[-B^T Gamma X-(1/2)X^T Gamma^T C0 Gamma X]=1, pointwise in real X. The transpose is bilinear transpose, not Hermitian adjoint. This is Gaussian completion with its compensator retained.",
+    "actual_conditional_formula": "At Gamma=the actual endpoint and with X standard real Gaussian, B_E=P_E Q_DD^(-1/2)X has the actual marginal covariance. The inner B_Z0 has conditional mean -C0 Gamma X and covariance C0. Thus the compensated integral reproduces the ORIGINAL centered Gaussian coefficient. A physical real exterior mean m stays in the inserted functions as B_Z0+m_Z0; it is not set to0.",
+    "why_square_root_identity_not_needed": "Away from sigma=1, the same compensated formula defines a normalized auxiliary complex family using C0 and Gamma_sigma. It does not require independently tagged S_sigma^2 to equal a tagged covariance. Absolute convergence of the X integral WITH the actual potentials still needs the source Gaussian margins; the formal normalized empty insertion is not a domination estimate.",
+    "reference_factorization": "At Gamma_ref the raw B and auxiliary X variables separate across the protected C_j groups. The compensated functional factors for an actual insertion that is already a product on these groups. Any physical marked carrier or potential joining groups must be merged first. Shared exterior/background data remain fixed parameters and return in the original outer integral, so this is not independence of the physical sectors or history."
+  },
+  "needed_quantitative_check": {
+    "near_reference": "Non-special P_i contributions reaching the forcing rows must cross at least u from their column cores. Words with at least one residual are controlled by the residual epsilon. This suggests a reference error consisting of an exp(-t*u/2) off-core term plus a tagged residual-series term. No complete bound, actual contour pass or primitive ownership constant is declared here.",
+    "complex_gaussian": "Use the SAME actual1692 dB,s,V_star and exterior reserve with Gamma_ref real and the actual Im(Gamma_sigma). Fixed real C0 removes no determinant/tail/source interaction cost. C0 and the source volume charge are paid once per protected group.",
+    "physical_mean": "The real nonlocal mean z=Q_DD^-1 Q_DE a_E still requires the1920 sparse forcing words and their response/locality bookkeeping. Factoring numerical Gaussian variables at fixed m does not localize that mean in the original exterior field."
+  },
+  "confidence": "Unreviewed participating-parent physical operator construction; no source theorem refuted, new formal result, paper, score or physical profile. Candidate1642 remains not admitted.",
+  "next": "Derive and verify the actual Gamma_sigma-Gamma_ref absolute error with the protected special cores, including spectral integration, ordinary tag counts, row/column and source forcing prefactors. Test it in the SAME Gaussian/reserve and1655 parameter chain; if the original fixed scale fails, retain only the real representation rather than changing the law."
+}

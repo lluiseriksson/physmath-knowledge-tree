@@ -1,0 +1,67 @@
+{
+  "execution": 1925,
+  "source": {
+    "path": "C:\\Trabajo\\airr\\2026-11-01_execution1925\\FROZEN-MANIFEST1925.json",
+    "sha256": "dbdac9284f952bf01e7b73b9cff66dd0b6d91f2bd1b58620a84eb880cdc2453f",
+    "scope": "Own frozen input manifest, eight exact JSONs; no foreign source bodies conserved"
+  },
+  "fixed_inputs": [
+    {
+      "path": "C:\\Trabajo\\airr\\2026-11-01_execution1925\\INPUT-SOFT-FREE-SPARSE-PARAMETRIX1920.json",
+      "sha256": "abaee1c4fd9191f26dbc3cad612b02f7d560bda760f3ef6e3809094b12456987"
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-11-01_execution1925\\INPUT-SOFT-FREE-TAGGED-SQUARE-ROOT1921.json",
+      "sha256": "cb5e4497cf447375ab1c07b4882a4ebfa9e57a84e94c91f7031a58202018bb85"
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-11-01_execution1925\\INPUT-PROTECTED-SOFT-FREE-REFERENCE1922.json",
+      "sha256": "2d4a749f937809f467664fca2dfb334fe35ebd2d33843f9321d7010218abae80"
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-11-01_execution1925\\INPUT-PROTECTED-GAMMA-ERROR-AND-GATES1923.json",
+      "sha256": "aea59fdeb8d6cb776161047bcaa9cd59cbc90bf2779852fe623aa333c84a8a80"
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-11-01_execution1925\\INPUT-PROTECTED-GAUSSIAN-COST-AND-CONTOUR1924.json",
+      "sha256": "0516be7c574830a42dd5597b837bf9a7fc4d71d71e76195f98bad7364c4c53f0"
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-11-01_execution1925\\INPUT-ACTUAL-FIRST-SECTOR-F-INPUT1917.json",
+      "sha256": "ef5662e3cdb8f897278a5afad0dd07d48a7dfbaa6906bba8c7d6f5ae96a8a9b3"
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-11-01_execution1925\\INPUT-LAW-VERSION1535.json",
+      "sha256": "f668b5b57350dcdf9d60b579be927b260d9aaf2138ce4667462d0af4c6ca8388"
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-11-01_execution1925\\INPUT-LAW-BINDING1559.json",
+      "sha256": "a78244cb62773f907346968b16470892a00f1405219d0e9752f17b578af806dd"
+    },
+    {
+      "path": "C:\\Users\\lluis\\Documents\\CodexYangMillsAutopilot\\runtime\\sources\\primary\\balaban-rg-II-cmp116-1104161193.pdf",
+      "sha256": "ee39523a0f7b83af958513c7bd6f9c7731934b40355ef5d6b0f7a68ee6d022fc"
+    },
+    {
+      "path": "C:\\Users\\lluis\\Documents\\CodexYangMillsAutopilot\\runtime\\sources\\primary\\balaban-convergent-cmp119-from-fusion.pdf",
+      "sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a"
+    }
+  ],
+  "dispatch": {
+    "at": "2026-11-01T10:57:50.757531+00:00",
+    "agent_task": "/root/astra_soft_free_parametrix1925",
+    "requested_model": "gpt-6-astra",
+    "requested_reasoning_effort": "xhigh",
+    "fork_turns": "none",
+    "observed_identity_effort_isolation_independence": "not authenticated",
+    "review_count_active_at_dispatch": 1,
+    "other_agents": "Only completed reviews observed before dispatch",
+    "status": "running; no report or verdict yet",
+    "output_path": "C:\\Trabajo\\airr\\2026-11-01_execution1925\\ASSESSMENT1925.json",
+    "score_requested": false,
+    "retries_to_improve_judgment": false
+  },
+  "authorization": "User heartbeat authorizes Astra/xhigh reviews and instructs one at a time in separate contexts. This is a new bounded technical candidate, not reopening1645,1482,1879 or a grade request.",
+  "limits": "No manuscript/PDF, Capacity, physical admission, original source theorem novelty or global build assessment. All frozen candidate assumptions and physical domain/constant gates remain open. The review does not itself prove physical source admission or independent human peer review.",
+  "next": "Retrieve ONLY the existing astra_soft_free_parametrix1925 report/task. If still pending, continue useful nondependent work without a replacement reviewer, restart or target grade. When complete verify all frozen hashes and read/preserve the FULL report, every adverse finding and actual model provenance limits before disposition; then update state atomically. No publication or1642 admission follows automatically."
+}
