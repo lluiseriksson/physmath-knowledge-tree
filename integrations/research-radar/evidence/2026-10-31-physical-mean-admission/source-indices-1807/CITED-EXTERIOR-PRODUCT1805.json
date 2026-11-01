@@ -1,0 +1,50 @@
+{
+  "execution": 1805,
+  "status": "NEW_PRIMARY_EVIDENCE_AND_CONDITIONAL_DICTIONARY_PENDING_ASSESSMENT",
+  "derivation": "1805: Newly readable cited Sect.A supplies an explicit coarse-exterior product; evaluate precisely how far it binds the physical split.\n\nFixed scope: unchanged law1559, original K_C/beta_ref, chosen physical mean, torus, minimum and all constraints. The complete1801 assessment remains closed. This is new primary evidence not available to that input, not a repeat or an attempt to improve a grade. No score, whole manuscript or physical admission is proposed.\n\nPRIMARY OBSERVATION. The cited CMP102255-275 Sect.A is now readable. P258 separates a protected small-field region and its neighborhood, fixes fine data V0 outside, and fixes coarse averages inside in (12). P259 subsequently enlarges the fluctuation domain, so (13) and its successors are bounds, not equality of the original full kernel. On p260(18) and p261(22), the exterior coarse delta is explicitly a product indexed by b_prime subset Omega1^c. The subset condition on the BOND is visually present; it must not be silently replaced by b_prime in the INCIDENT LIFT of the continuous complement. Sect.A also keeps the Haar density, nonlinear linearization determinant and the remaining exterior data. Its constraint expansion on p259(14) explicitly invokes the older relative averaging formulas (89)/(63) of CMP98, not the later CMP109 physical mean. Neither that Q, its h/D, gauge choice nor the enlarged cutoff can be transported as an identity into the fixed current physical law.\n\nGEOMETRIC READING TO TEST. For the compatible centered-cell X of1801, a coarse segment wholly contained in the continuous complement of X is equivalent to both its endpoint centers being outside X. A nearest-neighbor coarse segment that meets a selected whole coarse cell has an endpoint in it. With all these definitions fixed, the independent rows split into incident I and wholly exterior J, with crossing rows in I. By the source paths analyzed in1801, for either separately fixed physical mean, a row of J uses only raw fine links outside E_fine(X), and thus only V0 under the sufficient convention F=E_total minus E_fine(X). These are geometric consequences under that convention, not a deduction that every earlier or later source uses it.\n\nOPERATIONAL FINE SPLIT. In Sect.A p260 the fluctuation measure integrates bonds belonging to Omega1, while V0 is retained outside; its text sets Uprime=1 and U1=V0 outside. Interpreted as ordinary integration of independent original fine Haar variables, this operation requires the fine exterior to be the complementary set of variables to those integrated. This is evidence for the typed fine complement, but is NOT an independently explicit set-definition of that complement and NOT proof that the current fixed-law variable list equals it. If one instead lifted the continuous complement incidently, crossing fine bonds would occur in both sets, preventing that independent-variable interpretation. Do not claim this contradicts the source: it distinguishes readings of overloaded notation. The prior boundary-overlap falsifier is unchanged.\n\nCROSS-SOURCE LIMIT. CMP119(1.11)-(1.15) explicitly sends the reader to this Sect.A, while changing regions, gauge fixing and averaging operations. The later exterior delta is compressed into restricted notation. The newly read product in the cited antecedent is positive evidence for a wholly exterior coarse factor, and removes the concern that no such explicit restriction was found in any cited operation. It is not a proved declaration that the later Omega1^(c,(1)) notation has exactly the same index list, nor that its fine exterior is now fully authenticated. A complete physical binding must show that the first-step modifications preserve that active/exterior partition and original free variables, while separately retaining the fixed physical mean and cutoff. The 1985 three-dimensional theorem, its g0=g sqrt(epsilon) power counting and its domain enlargement do not establish the four-dimensional fixed-reference law or its constants.\n\nDISPOSITION PROPOSED. Admit the literal subset-of-complement coarse product as new primary evidence for the cited1985 operation. Admit only the conditional geometric dictionary J=coarse bonds wholly exterior, I=incident coarse bonds, and no loss of crossing rows. Keep actual physical F and the full CMP119/current-law I/J binding open unless the exact displays read here genuinely prove more; any stronger finding must distinguish a source statement from an audited proof. Keep all five1801 objections, including whole-cell operations, periodic divisibility and sufficiency versus necessity. No source theorem is refuted.\n\nFALSIFIER AND NEXT. If the later source explicitly includes a crossing coarse row in its retained exterior delta, this proposed inherited-partition reading fails and the delta support must be evaluated jointly with interior variables. If the fine exterior duplicates an integrated crossing bond, the independent fine-Haar split cannot be used. Resolve these index questions by the precise first-step source definitions; do not switch means or choose new pivots. The actual nonflat inverse A_c, K_C identification, one composed Haar/Lie/scaling Jacobian, physical gauge/source190/Hsharp, P1, coupling amplitudes, simultaneous component absorptions, connected marked normalization and history remain open. Integrate any eventual result into the existing consolidated note, not a separate paper or a graph-confidence promotion.",
+  "source_bindings": [
+    {
+      "path": "D:\\Cache\\airr-primary\\balaban-cmp102-255-275.pdf",
+      "sha256": "b10a444f8122d5e1b2999c54f120c647e33e5ad834943b00285b15bcf8d719f4",
+      "doi": "10.1007/BF01229380",
+      "printed_pages_read": [
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261
+      ],
+      "visually_inspected": [
+        258,
+        260
+      ],
+      "scope": "Sect.A selected definitions and operations; not full UV-stability proof"
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-convergent-cmp119-from-fusion.pdf",
+      "sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+      "printed_pages_read": [
+        247,
+        248,
+        249
+      ],
+      "visually_inspected": [
+        249
+      ],
+      "scope": "Later first-step notation and citation scope, no full proof audit"
+    }
+  ],
+  "prior_context": {
+    "input1801": "C:/Trabajo/airr/2026-11-01_execution1801/PHYSICAL-CENTER-GEOMETRY1801.json",
+    "assessment1801": "C:/Trabajo/airr/2026-11-01_execution1801/ASSESSMENT1801.json",
+    "scope": "Closed conditional geometry plus15 components/5 objections; do not reopen."
+  },
+  "law_binding": {
+    "path": "C:/Trabajo/airr/2026-10-31_execution1559/LAW-BINDING1559.json",
+    "sha256": "a78244cb62773f907346968b16470892a00f1405219d0e9752f17b578af806dd"
+  },
+  "physical_admission": false,
+  "source_candidate_counts_unchanged": true
+}

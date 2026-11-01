@@ -1,0 +1,53 @@
+{
+  "execution": 1806,
+  "status": "NEW_SOURCE_DEFINITION_BINDING_PENDING_ASSESSMENT",
+  "derivation": "1806. The physical source's own determining-set definition, specialized to its first step. New evidence at CMP119(2.2), (2.10)-(2.12), not another generic lemma.\n\nOBJECT AND SCOPE. Preserve the fixed physical mean (one of CMP109(0.4)/(0.12), not an exchange), original torus, original Omega1, independent orientations, minimum, K_C and beta_ref. Previous1801/1805 reports and adverse conclusions are frozen. The new source pages were not the exterior definitions audited in1805. Evaluate whether they now pay the SOURCE raw fine/exterior and active coarse index gate. Do NOT equate those raw indices with the later free-fluctuation exterior of the fixed conditional integral, nor claim physical admission or a new manuscript/PDF assessment.\n\nNEW PRIMARY DEFINITION. CMP119 p255(2.2) defines Gamma0=Omega1^c; Gamma_j=Omega_j^(j) minus Omega_(j+1)^(j), 1<=j<=k-1; Gamma_k=Omega_k^(k); and determining set B=union_j Gamma_j. The paragraph immediately below explicitly makes this definition separately for points, bonds and plaquettes, invoking the convention of Sect.0[I]. P256(2.10) sets the determining data V equal to V_j on Gamma_j. P256(2.11) defines M_B(U) by M^j(U) on Gamma_j, and(2.12) uses exactly those data to define the variational minimum. P256 expressly links V0 and the unchanged integration of the first step. Thus for k=1 there is no intermediate stratum: Gamma0 is fine scale and Gamma1=Omega1^(1) is coarse scale. They are labelled by different scales, not competing subsets of one fine set. M^0 is the zero-fold averaging identity on raw fine links; it is not the site gauge-averaging operator.\n\nTYPED SPECIALIZATION PROPOSED. Write E0 for independent fine bonds and E1 for independent coarse bonds of the ORIGINAL source torus; X=Omega1 as the source union of compatible cubes. Let A=E_fine(X) be its incident fine bond set from CMP109 p251; let I=E_coarse(X) be its incident coarse bond set. Because(2.2) is explicitly meant separately for the bond sets, its fine Gamma0 is the complement E0 minus A AFTER selecting the fine bond stratum. Denote this actual source raw exterior F_src. Its coarse Gamma1 is I. The determining data at first step are therefore (U|F_src, M_I(U)), of different scales. This uses the physical source's OWN later definition to resolve the overloaded first-step notation; it does not borrow CMP96 or infer a convention solely from independent-Haar plausibility. It must be rejected if the separate-strata wording does not justify that operation order, or if the first-step link is inapplicable. Do not assert it just by giving a new definition to F.\n\nPERIODIC AND PIVOT CONSEQUENCES. Retain all source-compatible geometry conditions of1801: odd L>11, genuine compatible Omega1 union, divisibility/alignment of actual partitions, periodic independent representatives, no intersections leaving faces only. The physical beta(c)=b0(c) in the coarse corridor has endpoints in B(c_-) and B(c_+). Every c in I has one coarse endpoint in X and its entire first block in X, so beta(c) has one fine endpoint in X. Thus beta(I) subset A and beta(I) disjoint F_src. The coordinate injection of the original beta on independent rows is already the conditional geometry accepted1801; source(2.2) is the proposed missing binding that lets it apply here. Inverse orientations remain dependent, not extra constraints. CMP119p247(1.8)-(1.9) excludes these same incident-row pivots from Xstar, and p249 counts and eliminates them. This now proposes to close source mask/availability, NOT invertibility of its nonflat coefficient.\n\nCOARSE EXTERIOR AND THE COMPRESSED DELTA. The original physical transformation(0.1) has all independent coarse rows E1. Put J=E1 minus I. For the original compatible whole-cell geometry, these are precisely coarse segments wholly outside X, with crossing rows in I. No claim is made that Gamma0 can be averaged as a global coarse field, or that a coarse exterior is obtained by lifting the geometric complement incidently. Each physical mean row in J uses only its two exterior blocks and their translated straight paths; all fine links in that support belong to F_src. Hence define M_J^F(v) directly by those original local paths on the PARTIAL fine data v, without inventing values on A. This restricted map is extension-independent; M_J(u_A,v)=M_J^F(v).\n\nOPERATIONAL EQUALITY TO TEST. For the original source integral, split the product of fine Haar variables as dU=dv_F du_A. The product coarse graph delta splits into the row factors for I and J. Keeping every original sector characteristic, gauge factor, action and observable inside a single original weight Phi_X(U,V), the source sector reads, weakly jointly in the whole coarse target V,\n  int dv_F delta_J(M_J^F(v) V_J^-1)\n      int du_A Phi_X((u,v),V) delta_I(M_I(u,v) V_I^-1).\nThis is an exact partition of coordinates and original constraints wherever the source integral is defined; it is not the 1985 enlarged-domain bound, not a pointwise regular-fiber assertion at every V, and introduces no determinant, renormalization or normalization factor. A weak test can be checked by integrating V_I,V_J against their normalized Haar measures; both sides evaluate the SAME test function and Phi on V=M(U). It requires integrability along that actual graph; ambient L1 alone is insufficient. For the original bounded finite-volume sector weights this is the ordinary graph measure interpretation, not a proof of uniform bounds. The source compressed delta on p249 is thereby given an operational restricted-row meaning. No fabricated Omega1^(c,(1)) subscript is attributed to the printed formula.\n\nWHAT IS AND IS NOT PAID. Proposed source-only conclusion: the k=1 specialization of the physical determining set and the original full coarse constraint fix F_src/I/J simultaneously, with no duplicated fine crossing link or lost coarse crossing row; the actual original beta is free there. This is evidence from an explicit SOURCE definition plus the original source operation, not a new choice of mean/domain/minor. General source theorem validity, all global log branches and all regularity/minimum hypotheses are not audited by the index argument. If a given branch is only admitted on an original sector, the same sector and its actual graph-domain must remain in Phi, not extended or enlarged.\n\nThe later variables in CMP119(1.15) are free Lie-algebra coordinates on Omega1star after nonlinear linearization and solving the coarse constraints; the conditional integral(1.26) then has an inner free-coordinate region and its complementary free coordinates. Those A_out are NOT simply F_src. The frozen LAW1559 and working manuscript have not yet been supplied with the complete same-coordinate/domain map to this original raw kernel. Thus actual K_C identification, the equality of its marked integral with the original sector, its inverse coefficients and Jacobians remain open. Do not describe source-mask admission as admission of the fixed-law Z_C or of candidate1642. No general source normalized kernel, logZ, nonzero denominator, marked connected sum, history, Hsharp/source190, P1, uniform parameter chain or coupling amplitude is proved.\n\nFALSIFIER. A primary instance that defines Gamma0's bond stratum by geometric-complement-first incident lifting, despite the separate-strata definition, would invalidate the proposed source binding and leave it conditional. A crossing coarse row put into J would invalidate its claimed support. A free-coordinate exterior identified with F_src without the nonlinear/Q reconstruction would invalidate the subsequent K_C bridge. No source theorem is refuted by any of these checks. NEXT: settle the exact extent of source-mask payment, then bind the ORIGINAL nonlinear reconstruction, selected nonflat pivots, Haar/Lie/scaling factors and actual K_C/support/marked operators in one coordinate system. No extra norm/covariance lemma, substitute paper, score or confidence promotion.",
+  "source_bindings": [
+    {
+      "path": "C:\\Users\\lluis\\Documents\\CodexYangMillsAutopilot\\runtime\\sources\\primary\\balaban-convergent-cmp119-from-fusion.pdf",
+      "sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+      "printed_pages_read": [
+        243,
+        247,
+        248,
+        249,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258
+      ],
+      "visually_inspected": [
+        255
+      ],
+      "new_critical_evidence": "Definition(2.2) and explicit point/bond/plaquette strata, first-step link and(2.10)-(2.12). No whole source proof audit."
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-rg-I-cmp109-1104116842.pdf",
+      "sha256": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+      "printed_pages_read": [
+        251,
+        252,
+        253,
+        254
+      ],
+      "scope": "Original geometry and physical means, as already selected"
+    }
+  ],
+  "prior_closed_context": {
+    "report1801": "C:/Trabajo/airr/2026-11-01_execution1801/ASSESSMENT1801.json",
+    "report1805": "C:/Trabajo/airr/2026-11-01_execution1805/ASSESSMENT1805.json",
+    "scope": "No review reopened; new explicit definition may change only its exact scoped index gate if justified."
+  },
+  "law_binding": {
+    "path": "C:/Trabajo/airr/2026-10-31_execution1559/LAW-BINDING1559.json",
+    "sha256": "a78244cb62773f907346968b16470892a00f1405219d0e9752f17b578af806dd"
+  },
+  "working_manuscript": {
+    "path": "C:/Trabajo/airr/marked-rg-manuscript/WORKING-MANUSCRIPT.md",
+    "sha256": "b3042d6ab2a9cb3f4414b818e322953d7088a7a2befa4c1a79b8dcddef2457d2",
+    "read_scope": "Selected existing conditional/free-coordinate descriptions only, not whole manuscript assessment; unchanged"
+  },
+  "physical_admission": false
+}
