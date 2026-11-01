@@ -1,0 +1,329 @@
+{
+  "seed": 1941,
+  "python": "3.12.6",
+  "numpy": "2.2.6",
+  "physical_witness": false,
+  "tests": [
+    {
+      "id": "G1",
+      "kind": "exhaustive_1d_toy_geometry",
+      "n": 7,
+      "h": 13,
+      "cases": 479,
+      "nonvacuous": 84,
+      "min_continuous_gap": 13,
+      "min_incident_endpoint_gap": 12,
+      "claimed_conservative_gap": 9,
+      "violations": [],
+      "limit": "Toy 1D periodic h-cell masks. Raw bad set is h-cell-aligned. Does not instantiate the physical source hierarchy or its indicators."
+    },
+    {
+      "id": "G2",
+      "kind": "seeded_2d_periodic_geometry",
+      "seed": 1941,
+      "n": 9,
+      "h": 13,
+      "trials": 384,
+      "nonvacuous": 359,
+      "min_continuous_gap": 13,
+      "violations": [],
+      "limit": "Tests periodic wrapping, corners, and irregular masks; not a physical d=4 witness."
+    },
+    {
+      "id": "G3",
+      "kind": "insufficient_depth_counterexample",
+      "n": 9,
+      "h": 13,
+      "omega": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ]
+      ],
+      "s": [
+        [
+          1
+        ],
+        [
+          5
+        ]
+      ],
+      "one_erosion": [
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "two_erosions": [
+        [
+          3
+        ]
+      ],
+      "gap_one": 0,
+      "gap_two": 13,
+      "limit": "Counterexample to weakening the two source erosions, not to Eq1.20."
+    },
+    {
+      "id": "G4",
+      "kind": "missing_tilde_counterexample",
+      "n": 9,
+      "h": 13,
+      "raw": [
+        0
+      ],
+      "d_without_tilde": [
+        1
+      ],
+      "continuous_gap": 0,
+      "limit": "Counterexample to deleting the enlargement of R1 prime, not to Eq1.20."
+    },
+    {
+      "id": "A1",
+      "kind": "schur_complement_adversary",
+      "precision": [
+        [
+          2.0,
+          -1.0,
+          0.0
+        ],
+        [
+          -1.0,
+          2.0,
+          -1.0
+        ],
+        [
+          0.0,
+          -1.0,
+          2.0
+        ]
+      ],
+      "direct_far_coupling": 0.0,
+      "schur_after_eliminating_middle": [
+        [
+          1.5,
+          -0.5
+        ],
+        [
+          -0.5,
+          1.5
+        ]
+      ],
+      "limit": "Positive definite finite matrix showing why bare support does not extend to eliminated/history precision."
+    },
+    {
+      "id": "A2",
+      "kind": "nonlocal_selected_solve_adversary",
+      "kappa": 0.25,
+      "equation": "s=a+kappa*P*s",
+      "inverse": [
+        [
+          1.003921568627451,
+          0.25098039215686274,
+          0.06274509803921569,
+          0.01568627450980392
+        ],
+        [
+          0.01568627450980392,
+          1.003921568627451,
+          0.25098039215686274,
+          0.06274509803921569
+        ],
+        [
+          0.06274509803921569,
+          0.01568627450980392,
+          1.003921568627451,
+          0.25098039215686274
+        ],
+        [
+          0.25098039215686274,
+          0.06274509803921569,
+          0.01568627450980392,
+          1.003921568627451
+        ]
+      ],
+      "min_abs_entry": 0.01568627450980392,
+      "limit": "Hypothetical coupled selection. Source corridor equation has no such off-diagonal selected variables."
+    },
+    {
+      "id": "A3",
+      "kind": "bridge_primitive_counterexample",
+      "L": "x*e",
+      "transport": "e -> e+t",
+      "difference": "t*x",
+      "at_t_1_x_0": 0,
+      "at_t_1_x_1": 1,
+      "limit": "Fails exactly when a complete primitive bridges D and changed S."
+    },
+    {
+      "id": "A4",
+      "kind": "hidden_inner_background_counterexample",
+      "L": "-e^2",
+      "transport": "e -> e+H(x), H(x)=x",
+      "difference": "-2*e*x-x^2",
+      "at_e_0_x_0": 0,
+      "at_e_0_x_1": -1,
+      "limit": "Hypothetical inner-dependent H. In the checked source step U1,V,V0,sector are fixed."
+    },
+    {
+      "id": "A5",
+      "kind": "long_mark_counterexample",
+      "mark": "x*e_far",
+      "transport": "e_far -> e_far+t",
+      "mark_difference": "t*x",
+      "limit": "Long complete carrier fails even when mark label/center is near D; original separated four-link carrier does not."
+    },
+    {
+      "id": "A6",
+      "kind": "indicator_halo_counterexample",
+      "indicator": "1{max(abs(x),abs(e))>=1}",
+      "fixed_e": 0,
+      "at_x_0": 0,
+      "at_x_2": 1,
+      "limit": "A bad-event indicator with an inner halo is not exterior merely because its cell label is exterior. If an existing inner good cutoff enforces abs(x)<1, its effective dependence can reduce to e; that reduction must be justified."
+    },
+    {
+      "id": "A7",
+      "kind": "outer_weight_cancellation_counterexample",
+      "outer_points": [
+        -1,
+        1
+      ],
+      "base_mass": [
+        0.5,
+        0.5
+      ],
+      "W": [
+        1,
+        3
+      ],
+      "p": "e",
+      "q": "e",
+      "Z": [
+        2,
+        1,
+        1,
+        2
+      ],
+      "connected_with_W": 0.75,
+      "connected_without_W": 1.0,
+      "limit": "Exact two-point algebra, not a physical sector, proving that a common conditional weight cannot be dropped before outer integration."
+    },
+    {
+      "id": "A8",
+      "kind": "near_boundary_survives",
+      "precision": [
+        [
+          2.0,
+          -1.0,
+          0.0
+        ],
+        [
+          -1.0,
+          2.0,
+          -1.0
+        ],
+        [
+          0.0,
+          -1.0,
+          2.0
+        ]
+      ],
+      "inner_index": 0,
+      "near_exterior": 1,
+      "changed_far_exterior": 2,
+      "conditional_cross_term": "x*e_near",
+      "far_transport": "e_far -> e_far+t",
+      "far_increment": "t*e_near-2*t*e_far-t^2",
+      "limit": "With exponent -a^T Q a/2, exterior increment coexists with nonzero inner/near-boundary interaction."
+    }
+  ],
+  "integrity_recheck": [
+    {
+      "path": "C:\\Trabajo\\airr\\2026-11-01_execution1941\\INPUT-BARE-BOUNDARY-SUPPORT-SEPARATION1939.json",
+      "expected": "5823470699498e79727875e2fab78a1e597b682269245f1e28fc8797977fc9f3",
+      "actual": "5823470699498e79727875e2fab78a1e597b682269245f1e28fc8797977fc9f3",
+      "match": true,
+      "bytes": 9883
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-11-01_execution1941\\INPUT-BARE-BOUNDARY-FOUR-COEFFICIENTS1940.json",
+      "expected": "d5398d038b04091765e8c09fd431a7f932c81b6f67360ed9ae43d440f825257f",
+      "actual": "d5398d038b04091765e8c09fd431a7f932c81b6f67360ed9ae43d440f825257f",
+      "match": true,
+      "bytes": 9985
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-11-01_execution1941\\INPUT-BULK-BOUNDARY-MARKS1662.json",
+      "expected": "f8934aadf589ba3fc30658804fe9cf6e200eef28b25edd6b222b6a683f56f3dd",
+      "actual": "f8934aadf589ba3fc30658804fe9cf6e200eef28b25edd6b222b6a683f56f3dd",
+      "match": true,
+      "bytes": 7397
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-11-01_execution1941\\INPUT-BARE-BOUNDARY-STRUCTURE1694.json",
+      "expected": "d191ee676f268d23ff91920eb9ae49b2202cc5ba3c4e8192988cd7593a888530",
+      "actual": "d191ee676f268d23ff91920eb9ae49b2202cc5ba3c4e8192988cd7593a888530",
+      "match": true,
+      "bytes": 18686
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-11-01_execution1941\\INPUT-BARE-SOFT-FREE-STENCIL1926.json",
+      "expected": "4982431e5b3dbec7ae3d03244aa5d80708975599895c8b901426dbbab40d3680",
+      "actual": "4982431e5b3dbec7ae3d03244aa5d80708975599895c8b901426dbbab40d3680",
+      "match": true,
+      "bytes": 5207
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-11-01_execution1941\\INPUT-ACTUAL-FIRST-SECTOR-F-INPUT1917.json",
+      "expected": "ef5662e3cdb8f897278a5afad0dd07d48a7dfbaa6906bba8c7d6f5ae96a8a9b3",
+      "actual": "ef5662e3cdb8f897278a5afad0dd07d48a7dfbaa6906bba8c7d6f5ae96a8a9b3",
+      "match": true,
+      "bytes": 6100
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-11-01_execution1941\\INPUT-LAW-VERSION1535.json",
+      "expected": "f668b5b57350dcdf9d60b579be927b260d9aaf2138ce4667462d0af4c6ca8388",
+      "actual": "f668b5b57350dcdf9d60b579be927b260d9aaf2138ce4667462d0af4c6ca8388",
+      "match": true,
+      "bytes": 1803
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-11-01_execution1941\\INPUT-LAW-BINDING1559.json",
+      "expected": "a78244cb62773f907346968b16470892a00f1405219d0e9752f17b578af806dd",
+      "actual": "a78244cb62773f907346968b16470892a00f1405219d0e9752f17b578af806dd",
+      "match": true,
+      "bytes": 867
+    },
+    {
+      "path": "C:\\Users\\lluis\\Documents\\CodexYangMillsAutopilot\\runtime\\sources\\primary\\balaban-convergent-cmp119-from-fusion.pdf",
+      "expected": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+      "actual": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+      "match": true,
+      "bytes": 4172827
+    },
+    {
+      "path": "C:\\Users\\lluis\\Documents\\CodexYangMillsAutopilot\\runtime\\sources\\primary\\balaban-rg-I-cmp109-1104116842.pdf",
+      "expected": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+      "actual": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+      "match": true,
+      "bytes": 5490078
+    }
+  ],
+  "manifest_sha256": "fbdaedea2b3ce1f1921c7a718c116b93d57a10d319db036faa730c04c0886dd8"
+}

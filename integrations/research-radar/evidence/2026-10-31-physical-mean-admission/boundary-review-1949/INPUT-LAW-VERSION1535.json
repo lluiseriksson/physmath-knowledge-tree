@@ -1,0 +1,26 @@
+{
+  "status": "explicit_parameterized_first_integral_family_not_a_new_submission_case",
+  "source": {
+    "doi": "10.1007/BF01217741",
+    "pdf_sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+    "anchors": "244,246-250,253 Eq1.18/first1.26",
+    "reading_depth": "selected_definitions_statements;not_full_proof_audit"
+  },
+  "fixed_parameters": ["source-admissible L,d=4,group/norms", "positive integer p", "A0>0", "C_delta>0"],
+  "definitions": {
+    "ell": "log(g0^-2)",
+    "epsilon0": "A0*g0*ell^p",
+    "delta0": "C_delta*g0*ell^p",
+    "theta": "C_delta/A0",
+    "original_raw_domain": "K_(g0,C_delta)=product_free_b {||A_b||_*<delta0/g0};selected_b0(c) are outputs",
+    "first_mean": "a_(p;C_delta)(V) with that EXACT first domain",
+    "full_first_normalizer": "Z_(full;C_delta)=z0(V)*I_(delta0;C_delta)(V)",
+    "old_action": "E_(1;C_delta)=logZ_(full;C_delta)(V)-logZ_(full;C_delta)(I)-beta1(g0)*A(U1(V))"
+  },
+  "source_prefactor_discrepancy": "Printed delta0=g0*A1*p0(g0) and delta0=(A1/A0)*epsilon0 cannot both be identified using p0=A0*ell^p. This binding does not edit the source or assert the two expressions agree.",
+  "no_numerical_convention_selected": true,
+  "old_action_binding_rule": "Every use carries the SAME fixed C_delta. Do not identify a historical unindexed E1/mean with this family unless its exact threshold matches; do not resize the first cutoff after a next event is selected.",
+  "source_ordering_gate": "theta<=theta_source(L,strict chart) must be verified for the fixed constants;g0 smaller alone does not improve theta",
+  "next_conditioning_rule": "An added next raw event changes only the marginal over V;it leaves original K_(g0,C_delta),normalizer,old action and means fixed",
+  "new_grade_paper_case_or_formal_result": false
+}

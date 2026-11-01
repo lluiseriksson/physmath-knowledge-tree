@@ -1,0 +1,52 @@
+{
+  "execution": 1926,
+  "scope": "Trace a conservative actual BARE first-precision stencil/data carrier while the ONE frozen1925 review runs. This parent construction is OUTSIDE that frozen review and inherits no verdict.",
+  "source": {
+    "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-rg-I-cmp109-1104116842.pdf",
+    "sha256": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+    "doi": "10.1007/BF01215223",
+    "text_pages_this_execution": [
+      252,
+      253
+    ],
+    "reading_status": "Original path/mean definitions0.3-0.11 read; not full source proof audited"
+  },
+  "fixed_inputs": [
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1694/BARE-BOUNDARY-STRUCTURE1694.json"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-11-01_execution1917/ACTUAL-FIRST-SECTOR-F-INPUT1917.json"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-11-01_execution1925/FROZEN-MANIFEST1925.json"
+    },
+    {
+      "path": "C:/Trabajo/airr/marked-rg-manuscript/WORKING-MANUSCRIPT.md"
+    }
+  ],
+  "actual_operator": "Q=C_rec^sharp Delta1 C_rec is the leading bare Gaussian of CMP1191.15-1.16 on original free coordinates. Delta1 contains the fine Wilson Hessian, -2<h*C_constraint^(2),J1>, and the original intrablock soft gauge quadratic. Log Haar/selected Jacobian terms remain in the interaction and do not silently redefine this leading Q.",
+  "carrier_argument": {
+    "first_mean": "Source252 shortest root-to-point paths remain within one unit block. Its translated corridor segment and the two endpoint-root paths in0.4 use only the two endpoint blocks of the same coarse bond. The averaged gauge contour0.11 is intrablock. The actual0.4 or0.12 mean stays fixed; both support statements concern geometry, not equality of the nonlinear versions.",
+    "selected_lift": "For a coarse corridor the only selected interblock bridge in its row is its own b0(c), as retained1694. Solving the finite Lie-algebra selected matrix changes its coefficients but not its two-block carrier. It is not a global inverse over all corridors. A selected row and its first/second mean derivatives use the same actual row paths.",
+    "Wilson_part": "After inserting this local C_rec into a fine Wilson plaquette quadratic, its free-input and coefficient data are contained in the union of the unit blocks of the four plaquette vertices. At a block corner this can be four blocks in a two-by-two arrangement; it must not be reduced to two blocks. The bounding side is at most2L in each plaquette direction and L in the remaining directions.",
+    "current_part": "The h*C_constraint^(2) term retains the actual fine current J1. Its row data are the two endpoint blocks together with the fine plaquettes defining that current at the selected bridge. Include their one-step padding; do not infer J1=0. The support statement is for J1 as an external fine-current slot or its original local fine formula, not its derivative through the global minimum.",
+    "gauge_part": "The original averaged soft-gauge contours use intrablock paths; their quadratic and their background data add only the associated unit block. Free principal compression to D removes rows/columns and cannot enlarge these supports.",
+    "conservative_bound": "A deliberately loose common bound is R_bare=8*d*(L+1), d=4, in native fine-position l1 units, covering input-pair range and all displayed original coefficient data. It includes endpoint/block/one-step current padding. Conditional on the actual original row/chart and bond convention above, r_Q<=R_bare and s_Q<=R_bare. This is a parent carrier argument, not a numerical all-history proof."
+  },
+  "fixed_hierarchy_test": "The1922 stencil premise r_Q,s_Q<=floor(M/6) is therefore paid by the explicit sufficient geometry test floor(M/6)>=R_bare in the SAME units. M=L^m and qualitative words such as much larger do not by themselves establish this arithmetic inequality. No new M or L is chosen, and no passing numerical instance is asserted.",
+  "limits": [
+    "Only the leading BARE first-sector Q is covered. Later effective-action/minimizer lifts can be nonlocal; this bound is not inherited by them.",
+    "Local dependence on fine U1,J1 data is distinct from locality of U1 as a function of coarse V or arbitrary exterior V0. F10 remains open.",
+    "Uniform selected-chart and a,J_Q margins and all-sector source geometry are still required. This does not prove the Gamma/contour/1655 tests.",
+    "The1925 reviewer received1920-1924 plus its declared context only. This1926 deduction is not added mid-review or described as assessed."
+  ],
+  "existing_review": {
+    "task": "/root/astra_soft_free_parametrix1925",
+    "observed_status_this_execution": "running",
+    "new_review_started": false,
+    "score_or_restart": false,
+    "frozen_inputs_unchanged": true
+  },
+  "next": "Retrieve ONLY the existing1925 review when available and preserve/read its full report before any disposition. Keep1926 as a separate unreviewed parent stencil argument. Then reconcile any findings with the actual fixed tile/current/chart conventions; do not assume the new carrier bound supplies numerical or complex-domain admission."
+}

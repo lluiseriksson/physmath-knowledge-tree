@@ -1,0 +1,1015 @@
+{
+  "assessment_id": "1941",
+  "created_utc": "2026-11-01T12:21:37.856417+00:00",
+  "language": "es",
+  "evaluation_count": 1,
+  "scoring": "Sin puntuación ni nota solicitada, inferida o asignada.",
+  "requested_configuration": {
+    "model": "gpt-6-astra",
+    "effort": "xhigh",
+    "context": "separate fork none",
+    "observable_limit": "La orden recibida solicita esos valores. Este evaluador no dispone de una atestación del backend que autentique identidad efectiva, esfuerzo, aislamiento de contexto o independencia. No se deducen de la petición ni de un nombre de agente.",
+    "observed_conduct": "Una evaluación continua de las ocho entradas congeladas; no se abrieron informes de evaluaciones anteriores ni se iniciaron subagentes. Las menciones a evaluaciones previas que ya estaban dentro de los INPUT se leyeron como contenido, sin heredar sus conclusiones.",
+    "external_verification_of_independence": false
+  },
+  "scope": {
+    "included": "Propuesta1939-1940: separación entre dominio libre interior y cambios raw de T_H; primitivas originales bare, selección y Jacobianos; raíces Wilson originales de cuatro enlaces; cuatro coeficientes condicionados y peso exterior. Contraste local con CMP119 y CMP109.",
+    "excluded": [
+      "Evaluación de manuscrito/PDF propio",
+      "Capacity",
+      "1642",
+      "Novedad",
+      "Historia completa",
+      "Reevaluación de resultados anteriores",
+      "Auditoría global de las fuentes",
+      "Construcción o admisión de una instancia física simultánea",
+      "Cambios en parámetros, ley, dominio, repositorios, ESTADO u otros chats"
+    ],
+    "fixed_input_count": 8,
+    "transitive_reference_policy": "Las rutas y hashes citados dentro de los INPUT no ampliaron el paquete. No se abrieron sus archivos históricos, el manuscrito ni otros PDF. Los hashes verificados son los del manifiesto, sus ocho archivos INPUT y sus dos PDF; además se comprobó la coincidencia del vínculo1559 con el hash1535.",
+    "write_scope": "C:\\Trabajo\\airr\\2026-11-01_execution1941",
+    "network_or_credentials_used": false
+  },
+  "integrity": {
+    "manifest_path": "C:\\Trabajo\\airr\\2026-11-01_execution1941\\FROZEN-MANIFEST1941.json",
+    "manifest_expected_sha256": "fbdaedea2b3ce1f1921c7a718c116b93d57a10d319db036faa730c04c0886dd8",
+    "manifest_actual_sha256": "fbdaedea2b3ce1f1921c7a718c116b93d57a10d319db036faa730c04c0886dd8",
+    "manifest_match": true,
+    "entries": [
+      {
+        "path": "C:\\Trabajo\\airr\\2026-11-01_execution1941\\INPUT-BARE-BOUNDARY-SUPPORT-SEPARATION1939.json",
+        "expected": "5823470699498e79727875e2fab78a1e597b682269245f1e28fc8797977fc9f3",
+        "actual": "5823470699498e79727875e2fab78a1e597b682269245f1e28fc8797977fc9f3",
+        "match": true,
+        "bytes": 9883
+      },
+      {
+        "path": "C:\\Trabajo\\airr\\2026-11-01_execution1941\\INPUT-BARE-BOUNDARY-FOUR-COEFFICIENTS1940.json",
+        "expected": "d5398d038b04091765e8c09fd431a7f932c81b6f67360ed9ae43d440f825257f",
+        "actual": "d5398d038b04091765e8c09fd431a7f932c81b6f67360ed9ae43d440f825257f",
+        "match": true,
+        "bytes": 9985
+      },
+      {
+        "path": "C:\\Trabajo\\airr\\2026-11-01_execution1941\\INPUT-BULK-BOUNDARY-MARKS1662.json",
+        "expected": "f8934aadf589ba3fc30658804fe9cf6e200eef28b25edd6b222b6a683f56f3dd",
+        "actual": "f8934aadf589ba3fc30658804fe9cf6e200eef28b25edd6b222b6a683f56f3dd",
+        "match": true,
+        "bytes": 7397
+      },
+      {
+        "path": "C:\\Trabajo\\airr\\2026-11-01_execution1941\\INPUT-BARE-BOUNDARY-STRUCTURE1694.json",
+        "expected": "d191ee676f268d23ff91920eb9ae49b2202cc5ba3c4e8192988cd7593a888530",
+        "actual": "d191ee676f268d23ff91920eb9ae49b2202cc5ba3c4e8192988cd7593a888530",
+        "match": true,
+        "bytes": 18686
+      },
+      {
+        "path": "C:\\Trabajo\\airr\\2026-11-01_execution1941\\INPUT-BARE-SOFT-FREE-STENCIL1926.json",
+        "expected": "4982431e5b3dbec7ae3d03244aa5d80708975599895c8b901426dbbab40d3680",
+        "actual": "4982431e5b3dbec7ae3d03244aa5d80708975599895c8b901426dbbab40d3680",
+        "match": true,
+        "bytes": 5207
+      },
+      {
+        "path": "C:\\Trabajo\\airr\\2026-11-01_execution1941\\INPUT-ACTUAL-FIRST-SECTOR-F-INPUT1917.json",
+        "expected": "ef5662e3cdb8f897278a5afad0dd07d48a7dfbaa6906bba8c7d6f5ae96a8a9b3",
+        "actual": "ef5662e3cdb8f897278a5afad0dd07d48a7dfbaa6906bba8c7d6f5ae96a8a9b3",
+        "match": true,
+        "bytes": 6100
+      },
+      {
+        "path": "C:\\Trabajo\\airr\\2026-11-01_execution1941\\INPUT-LAW-VERSION1535.json",
+        "expected": "f668b5b57350dcdf9d60b579be927b260d9aaf2138ce4667462d0af4c6ca8388",
+        "actual": "f668b5b57350dcdf9d60b579be927b260d9aaf2138ce4667462d0af4c6ca8388",
+        "match": true,
+        "bytes": 1803
+      },
+      {
+        "path": "C:\\Trabajo\\airr\\2026-11-01_execution1941\\INPUT-LAW-BINDING1559.json",
+        "expected": "a78244cb62773f907346968b16470892a00f1405219d0e9752f17b578af806dd",
+        "actual": "a78244cb62773f907346968b16470892a00f1405219d0e9752f17b578af806dd",
+        "match": true,
+        "bytes": 867
+      },
+      {
+        "path": "C:\\Users\\lluis\\Documents\\CodexYangMillsAutopilot\\runtime\\sources\\primary\\balaban-convergent-cmp119-from-fusion.pdf",
+        "expected": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+        "actual": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+        "match": true,
+        "bytes": 4172827
+      },
+      {
+        "path": "C:\\Users\\lluis\\Documents\\CodexYangMillsAutopilot\\runtime\\sources\\primary\\balaban-rg-I-cmp109-1104116842.pdf",
+        "expected": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+        "actual": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+        "match": true,
+        "bytes": 5490078
+      }
+    ],
+    "all_ten_entry_hashes_match": true,
+    "all_input_byte_lengths_match": true,
+    "all_eight_input_json_read_in_full": true,
+    "read_completeness_note": "La primera salida conjunta se truncó; se recuperaron completos y se leyeron1940,1662 y1694 por separado.1939,1926,1917,1535 y1559 quedaron completos en la salida inicial. No se usó el truncamiento como lectura íntegra.",
+    "checks_performed": "Verificación inicial mediante SHA256 y segunda verificación independiente por lectura binaria en Python al ejecutar las pruebas. Nueva comprobación final al ensamblar este informe.",
+    "law_binding1559_matches1535": true,
+    "final_recheck": [
+      {
+        "path": "C:\\Trabajo\\airr\\2026-11-01_execution1941\\INPUT-BARE-BOUNDARY-SUPPORT-SEPARATION1939.json",
+        "sha256": "5823470699498e79727875e2fab78a1e597b682269245f1e28fc8797977fc9f3",
+        "match": true
+      },
+      {
+        "path": "C:\\Trabajo\\airr\\2026-11-01_execution1941\\INPUT-BARE-BOUNDARY-FOUR-COEFFICIENTS1940.json",
+        "sha256": "d5398d038b04091765e8c09fd431a7f932c81b6f67360ed9ae43d440f825257f",
+        "match": true
+      },
+      {
+        "path": "C:\\Trabajo\\airr\\2026-11-01_execution1941\\INPUT-BULK-BOUNDARY-MARKS1662.json",
+        "sha256": "f8934aadf589ba3fc30658804fe9cf6e200eef28b25edd6b222b6a683f56f3dd",
+        "match": true
+      },
+      {
+        "path": "C:\\Trabajo\\airr\\2026-11-01_execution1941\\INPUT-BARE-BOUNDARY-STRUCTURE1694.json",
+        "sha256": "d191ee676f268d23ff91920eb9ae49b2202cc5ba3c4e8192988cd7593a888530",
+        "match": true
+      },
+      {
+        "path": "C:\\Trabajo\\airr\\2026-11-01_execution1941\\INPUT-BARE-SOFT-FREE-STENCIL1926.json",
+        "sha256": "4982431e5b3dbec7ae3d03244aa5d80708975599895c8b901426dbbab40d3680",
+        "match": true
+      },
+      {
+        "path": "C:\\Trabajo\\airr\\2026-11-01_execution1941\\INPUT-ACTUAL-FIRST-SECTOR-F-INPUT1917.json",
+        "sha256": "ef5662e3cdb8f897278a5afad0dd07d48a7dfbaa6906bba8c7d6f5ae96a8a9b3",
+        "match": true
+      },
+      {
+        "path": "C:\\Trabajo\\airr\\2026-11-01_execution1941\\INPUT-LAW-VERSION1535.json",
+        "sha256": "f668b5b57350dcdf9d60b579be927b260d9aaf2138ce4667462d0af4c6ca8388",
+        "match": true
+      },
+      {
+        "path": "C:\\Trabajo\\airr\\2026-11-01_execution1941\\INPUT-LAW-BINDING1559.json",
+        "sha256": "a78244cb62773f907346968b16470892a00f1405219d0e9752f17b578af806dd",
+        "match": true
+      },
+      {
+        "path": "C:\\Users\\lluis\\Documents\\CodexYangMillsAutopilot\\runtime\\sources\\primary\\balaban-convergent-cmp119-from-fusion.pdf",
+        "sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+        "match": true
+      },
+      {
+        "path": "C:\\Users\\lluis\\Documents\\CodexYangMillsAutopilot\\runtime\\sources\\primary\\balaban-rg-I-cmp109-1104116842.pdf",
+        "sha256": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+        "match": true
+      }
+    ]
+  },
+  "conclusion": {
+    "conditional_core": "Se sostiene la identidad de soporte para el primer paso bare, a fondo original fijo, en una carta seleccionada admitida y con separación de TODOS los portadores libres completos. No se encontró un contraejemplo que satisfaga esas hipótesis y destruya la exterioridad del multiplicador explícito no expandido.",
+    "source_application": "Las fórmulas originales respaldan la geometría de dos erosiones y una ampliación de R1 prima, la selección por corredor y la permanencia del fondo U1 original. La cota h-4 es conservadora para enlaces incidentes de longitud uno bajo las particiones compatibles originales. El argumento no debe presentarse como una propiedad genérica de cualquier acción efectiva o de cualquier objeto llamado H1.",
+    "physical_admission": "NO establecida. No hay en el paquete una instancia completa que certifique simultáneamente períodos/particiones, índices independientes finales, desigualdad de alcance, cartas, constantes de cutoff, sectores y respuesta exterior bajo la misma ley.",
+    "material_qualification": "La prueba abreviada de portadores de acción no cubre por sí sola las características con halos de1.18-1.25. Su reorganización debe seguir la fuente y sus escalas. Tampoco puede deducirse exterioridad respecto de V de exterioridad respecto del campo libre interior.",
+    "four_coefficients": "La identidad operativa es válida con el mismo peso exterior en vacío,p,q,pq, y con las raíces exteriores transportadas. Ese peso no puede cancelarse antes de la integración exterior.",
+    "boundary_result": "No se obtiene el B^(1) marcado completo, ni desaparecen los clusters próximos a la frontera, ni se deduce decaimiento conectado o control de historia.",
+    "actual_physical_counterexample_found": false,
+    "counterexamples_to_weakened_hypotheses_retained": true
+  },
+  "source_reading": [
+    {
+      "source": "CMP119, Convergent Renormalization Expansions for Lattice Gauge Theories",
+      "path": "C:\\Users\\lluis\\Documents\\CodexYangMillsAutopilot\\runtime\\sources\\primary\\balaban-convergent-cmp119-from-fusion.pdf",
+      "sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+      "printed_pages_full_text": [
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253
+      ],
+      "printed_pages_full_visual": [
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253
+      ],
+      "pdf_index_mapping": "índice PDF cero = página impresa -243",
+      "metadata_only": [
+        243
+      ],
+      "anchors": [
+        {
+          "pages": [
+            245,
+            246
+          ],
+          "equations": [
+            "1.1-1.4"
+          ],
+          "checked": "M,M2,R1, compatibilidad de particiones; h=L M R1 en T1 frente a MR1 en escala L^-1; cubos defectuosos L^2 M2 R1 y sus halos. La tilde no tiene un grosor universal: la excepción para cubos de la segunda partición es explícita."
+        },
+        {
+          "pages": [
+            247,
+            248
+          ],
+          "equations": [
+            "1.5-1.13"
+          ],
+          "checked": "Gauge exponencial intrabloque, variables aproximadas de cutoff, X* incidente con pivotes seleccionados excluidos, Ω1 y mínimo U1 definido por V,V0 y sector."
+        },
+        {
+          "pages": [
+            249,
+            250
+          ],
+          "equations": [
+            "1.14-1.19"
+          ],
+          "checked": "Campo libre tras C, desplazamiento nonlinear h_sel D_tilde, log Haar y log Jacobiano, corriente J1, precisión corregida, cutoff original y partición good/bad. La cancelación lineal es restringida, no J1=0."
+        },
+        {
+          "pages": [
+            251
+          ],
+          "equations": [
+            "1.20",
+            "1.21",
+            "1.22"
+          ],
+          "checked": "D_pre=Ω1^(-2) intersección complemento de tilde(R1 prima); S1=(Ω1 menos Ω1^(-1)) unión R1 raw. Envolturas finales agrandan el complemento. H depende de fondo/coarse cerca de la frontera, no del campo libre interior cuando esos datos están fijados. Cambio en S1*."
+        },
+        {
+          "pages": [
+            252,
+            253
+          ],
+          "equations": [
+            "1.23",
+            "1.24",
+            "1.25",
+            "1.26"
+          ],
+          "checked": "Dos versiones del cambio, Jacobiano por enlace, características transportadas, integral condicional con U1 original, normalizador gaussiano y prefactor positivo de completar cuadrados; colección de términos explícitos y clusters próximos en B^(1)."
+        }
+      ],
+      "depth": "Lectura directa y focalizada; no se verificaron los teoremas de otros trabajos citados ni el argumento global de este artículo."
+    },
+    {
+      "source": "CMP109, Renormalization Group Approach to Lattice Gauge Field Theories I",
+      "path": "C:\\Users\\lluis\\Documents\\CodexYangMillsAutopilot\\runtime\\sources\\primary\\balaban-rg-I-cmp109-1104116842.pdf",
+      "sha256": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+      "printed_pages_full_text": [
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        264,
+        265,
+        266,
+        267,
+        268
+      ],
+      "printed_pages_full_visual": [
+        252,
+        253,
+        254,
+        255,
+        264,
+        265,
+        266,
+        267,
+        268
+      ],
+      "pdf_index_mapping": "índice PDF cero = página impresa -249",
+      "metadata_only": [
+        249
+      ],
+      "additional_pages_reason": "251 define L impar>11, toros y enlaces que intersectan conjuntos.256-257 se leyeron para distinguir fondos/minimizadores y convenciones de cubos de los portadores raw; no se extendió la auditoría a sus teoremas.",
+      "anchors": [
+        {
+          "pages": [
+            251,
+            252,
+            253,
+            254,
+            255
+          ],
+          "equations": [
+            "0.1-0.4",
+            "0.11-0.17"
+          ],
+          "checked": "L impar>11, bloques centrados y caminos ordenados por permutaciones dentro del bloque, segmento trasladado entre dos bloques, dos medias no idénticas con el mismo soporte, gauge intrabloque y primer paso Wilson."
+        },
+        {
+          "pages": [
+            264,
+            265,
+            266
+          ],
+          "equations": [
+            "1.20-1.22",
+            "2.1-2.9"
+          ],
+          "checked": "Contexto de constantes condicionadas; distinción entre paso general con U_k/H_k y primer paso bare; el mapa físico H1 de una minimización no es la reconstrucción finita C."
+        },
+        {
+          "pages": [
+            267,
+            268
+          ],
+          "equations": [
+            "2.10-2.13"
+          ],
+          "checked": "h_sel soportado en b0(c), L Q_tilde h_sel=I, ecuación D_tilde(B)=C_tilde(B-h_sel D_tilde(B)), eliminación seleccionada, Jacobiano y aparición separada de H1/E_k en el paso general."
+        }
+      ],
+      "depth": "Se verificaron directamente los caminos y la estructura de las ecuaciones. La existencia y márgenes uniformes de las cartas citan pruebas externas y no se autenticaron para todos los sectores."
+    }
+  ],
+  "notation_and_law_dictionary": {
+    "h_geom": "h_geom=L M R1 es una longitud en unidades de posición de la red fina nativa T1.",
+    "h_sel": "El h de h D_tilde es un operador lineal de inserción seleccionada, con normalización L Q_tilde h_sel=I. No es h_geom y no se sustituye por1.",
+    "D": "Conjunto de coordenadas libres realmente integrado en1.26 para Λ1 FINAL, tras agrandar componentes pequeñas de su complemento.",
+    "E": "Complemento DISJUNTO de esos índices dentro del conjunto de coordenadas independientes original. No debe construirse tomando dos conjuntos incidentes D* y (D^c)* sin resolver el solapamiento de enlaces fronterizos.",
+    "S": "Índices libres efectivamente cambiados por1.22 dentro de S1*. Se excluyen los pivotes b0(c). Un soporte geométrico de una raíz no sustituye a su portador reconstruido.",
+    "R1_complement": "En1.18 R1^c es relativo a Ω1^(-1); no se reemplaza por el complemento global del toro.",
+    "background": "U1=U1(Ω1,V,V0) original de1.12; Uloc=U1(Ω1 intersección Λ1^c,V) sirve para la localización exterior. No son identificados.",
+    "raw_field": "a es libre y escalado; campo relativo físico reconstruido K_phys(a)=g0 C a-h_sel D_tilde(g0 C a); grupo fino exp(i K_phys(a)) U1.",
+    "leading_precision": "Q=C* Delta1 C, con Delta1=Wilson Hessiano menos curvatura de restricción emparejada con J1, más gauge suave cuadrático, según1.16.",
+    "nonlinear_interaction": "v(g0 C a)-g0^-2 V(g0 C a), incluyendo log sigma y Tr log(I-h_sel D_tilde prime), no solamente un término cúbico Wilson.",
+    "fixed_law": "C_delta, beta_ref, g1_ref y normalizador completo se conservan como1535/1559. No se resolvió ni se usó para cambiar la ley la discrepancia de prefactores delta0 que esos archivos ya declaran."
+  },
+  "audited_derivation": [
+    {
+      "step": "GEO-1",
+      "statement": "Separación continua bajo la geometría original.",
+      "proof": "En la retícula periódica de h-cubos, Ω^(-2) está a una capa completa de la primera capa interior Ω menos Ω^(-1). Como R1 raw está contenido en R1 prima y D_pre está fuera de una capa añadida a R1 prima, también está a una capa completa de raw R1. Con la distancia periódica mínima, dist_infty(D_pre,S1)>=h. Reemplazar componentes del complemento por envolturas rectangulares solo reduce D; la desigualdad no empeora. Los casos D vacío o S vacío son triviales.",
+      "qualification": "Se requieren las particiones compatibles y los complementos de la fuente. El dibujo en una caja no sustituye a la distancia periódica."
+    },
+    {
+      "step": "GEO-2",
+      "statement": "Paso a índices libres y cota h-4.",
+      "proof": "Cada enlace fino que intersecta un conjunto de sitios/celdas tiene longitud uno. Registrando ambos extremos, cada conjunto de índices añade a lo sumo un paso a cada lado de la comparación geométrica; el margen adicional de cuatro pasos cubre esos dos ensanchamientos y redondeos. Excluir pivotes seleccionados elimina índices y no reduce la separación. Por tanto h-4 es una cota conservadora para cualquier partición legítima de esos enlaces incidente/propietario.",
+      "qualification": "No afirma que D* y (D^c)* sean disjuntos. El complemento algebraico debe fijarse antes de escribir Q_DE o la medida interior. El paquete no proporciona una enumeración física concreta de esos índices."
+    },
+    {
+      "step": "LOC-1",
+      "statement": "Selección nonlinear y lineal por corredor.",
+      "proof": "Los caminos de0.3-0.4 o0.11-0.12 asociados al enlace coarse c usan sus dos bloques extremos y el corredor entre ellos. Entre todos los pivotes b0(c prime), solo aparece b0(c). Por ello la ecuación implícita para D_tilde_c contiene su propio valor seleccionado y datos de esos dos bloques, pero ningún D_tilde_c prime. La unicidad en la carta original hace que D_tilde_c sea una función de esos mismos datos. El inverso de su derivada es de dimensión dim(g), por corredor, no una inversa espacial global. La misma observación se aplica a la eliminación lineal C de CMP119249.",
+      "qualification": "Las medias0.4 y0.12 comparten soporte pero no se sustituyen una por otra. Un operador H1 de minimización o una media arbitraria que no use estos caminos no hereda este argumento."
+    },
+    {
+      "step": "LOC-2",
+      "statement": "Jacobiano seleccionado realmente local.",
+      "proof": "La matriz D_tilde prime(A) h_sel es diagonal por corredores. La identidad de determinantes det(I_fine-h_sel D_tilde prime)=det(I_coarse-D_tilde prime h_sel) la convierte en producto de bloques dim(g). En la carta conectada con cero donde el logaritmo está admitido, el logaritmo es la suma de los logaritmos locales, sin fase añadida arbitrariamente. La sustitución A=g0 C a mantiene el soporte de dos bloques. El determinante lineal z^(0) de la eliminación delta sigue separado, como factor de fondo.",
+      "qualification": "La localidad no prueba que todos los bloques sean invertibles con márgenes uniformes en el dominio físico entero."
+    },
+    {
+      "step": "LOC-3",
+      "statement": "Portadores del exponente bare y raíces originales.",
+      "proof": "Una plaqueta fina usa los bloques de sus cuatro vértices, como máximo una disposición dos por dos; reconstruir sus enlaces seleccionados solo añade datos de bloques extremos ya presentes. Un Haar libre usa un enlace; un Haar seleccionado y un bloque del Jacobiano usan dos bloques; el gauge suave usa caminos intrabloque. Las piezas de Taylor y la curvatura de restricción no amplían el soporte más allá de esos portadores y el acolchado local de plaquetas de J1. A U1 fijo no se deriva a través del mínimo. Un Wilson escalar original de cuatro enlaces tiene el mismo portador que la plaqueta.",
+      "range": "La cota muy holgada R_star=8 d (L+1), d=4, en norma l1 de posiciones finas cubre esas cajas y el acolchado de un paso. Un límite de diámetro l1 también limita diámetro sup. No se necesita convertir R_star en una cota del número de colores.",
+      "qualification": "No cubre los halos de todas las características por el mero hecho de cubrir acción y Jacobianos, ni las palabras transportadas largas, ni derivadas del fondo respecto de V."
+    },
+    {
+      "step": "CUT-1",
+      "statement": "Las características necesitan una contabilidad distinta.",
+      "proof": "En1.18 y1.23 hay supremos sobre (cube_tilde^2)*. Una etiqueta de cubo exterior no prueba por sí misma exterioridad de su función. Los factores good son productos de restricciones por enlace y se pueden separar en índices interiores/exteriores usando idempotencia de indicadores. Los factores bad no admiten esa factorización general. Debe usarse la reorganización exacta1.19-1.25 y la geometría de sus halos. La fuente fija para la segunda partición un halo de subcubos: en la nueva escala corresponde a grosor L M2 R1 por capa fina, distinto de h. Con las potencias compatibles y M>M2, M/M2>=L; para L>11, dos de esas capas son menores que h incluso con acolchado incidente. Este argumento de escala y las igualdades de cutoff de la fuente, no R_star por sí solo, sostienen la asignación exterior.",
+      "analytic_gate": "La eliminación de la función aproximada de1.19 y la identidad de los cutoffs después del cambio requieren las desigualdades originales de regularidad y pequeñez. El paquete no las instancia uniformemente con el mismo C_delta.",
+      "prescription": "Retener chi_D en K y empujar los factores exteriores como densidades/indicadores, sin dividir por indicadores que pueden ser cero. Si una rama no admite esta reorganización, no está cubierta por la afirmación completa de W_H exterior."
+    },
+    {
+      "step": "FAC-1",
+      "statement": "Identidad algebraica del multiplicador explícito.",
+      "proof": "Fijar theta=(sector,dominio,U1,V,V0,elección de carta y datos de fondo) y escribir el exponente exacto del kernel retenido K1662 como L_theta(a_D,e)=sum_alpha L_alpha(a_D,e), respetando su asignación original de términos interiores y exteriores. Sea T_theta identidad en D y fuera de S. Si diam(carrier_alpha)<=R_star<dist(D,S), entonces un carrier que toca D no toca S, de modo que su diferencia bajo T es cero. Todo término que puede cambiar carece de entradas en D. Así Delta_theta(e)=L_theta(a_D,T_theta e)-L_theta(a_D,e) es independiente de a_D. El Jacobiano raw es producto de determinantes por enlace y también es exterior porque H y el interruptor g de cada enlace dependen solo de theta y e. No se invoca una aproximación de primer orden para esta identidad.",
+      "operational_formula": "Tomar nu0(dtheta) de como la base original de sectores y coordenadas exteriores. Escribir la densidad original como rho_out(theta,e) K_theta(a_D,e), donde K_theta=chi_D exp(L_theta) es precisamente el kernel1662 con su asignación de términos: por ejemplo el bloque cuadrático EE ya extraído no se reinserta en K. Los factores de fondo independientes de e pueden permanecer en nu0; todos los restantes factores exteriores asignados fuera de K están en rho_out, una sola vez. Entonces W_theta(e)=rho_out(theta,T_theta e) |det D_e T_theta(e)| exp(Delta_theta(e)). Los indicadores exteriores transportados están incluidos en rho_out. No usar una razón de rho_out cuando pueda ser cero. Esta fórmula permite que K retenga algún término puramente exterior si así lo hace la representación fuente; su diferencia queda en Delta y no se cuenta de nuevo en rho_out.",
+      "scope": "Exterior respecto de a_D, no necesariamente local en e,V o U1. Solo el multiplicador explícito no expandido; no es el B^(1) resummado."
+    },
+    {
+      "step": "FAC-2",
+      "statement": "Comprobación gaussiana.",
+      "proof": "Con Q original fijo y alcance de sus acoplamientos menor que la separación, Q_DS=0. Como T e-e está soportado en S, Q_DE(T e-e)=0. El vector de fuerza cruzada y la media de completar cuadrados son idénticos antes/después del cambio distante. Esto no dice que Q_DE e sea cero ni que la covarianza Q_DD^-1 tenga soporte finito.",
+      "qualification": "No se elimina ninguna fibra física ni se sustituye la sección de gauge suave por la axial. Un complemento de Schur o una acción posterior puede perder el alcance finito."
+    },
+    {
+      "step": "MARK-1",
+      "statement": "Transporte de raíces por portador completo.",
+      "proof": "Si el portador libre completo de una raíz fina de cuatro enlaces toca D y su diámetro cumple la cota, no toca S. La raíz es entonces idéntica bajo T aunque cruce la frontera geométrica de D. Si carece de toda entrada interior, conservar W_r(Psi_old(T e;U1)) como factor exterior exacto. Su valor no es1 por ser exterior. Las raíces largas o las comparaciones entre fondos distintos quedan fuera."
+    },
+    {
+      "step": "COEF-1",
+      "statement": "Los cuatro coeficientes y la normalización exterior.",
+      "proof": "Con marcas escalares M_p^H y M_q^H realmente transportadas, K_empty=integral K, K_p=integral K M_p^H, K_q=integral K M_q^H, K_pq=integral K M_p^H M_q^H. Entonces J_S(theta,e)=W_theta(e) K_S(theta,e) para los cuatro S. Equivalentemente se extraen los coeficientes de integral W K (1+eta_p M_p^H)(1+eta_q M_q^H) con eta_p^2=eta_q^2=0. Con la base y asignación de factores de FAC-1, Z_S=integral nu0(dtheta) de W_theta(e) K_S(theta,e). Esa integral conserva la suma de sectores y todos los factores originales exactamente una vez; no se multiplica otra vez por rho_out porque ya está en W. Si Z_empty es finito y no nulo, el conectado es Z_pq/Z_empty-Z_p Z_q/Z_empty^2.",
+      "qualification": "El anillo R escrito en1940 presupone marcas reales; para trazas Wilson complejas se usa C, o el anillo de funciones escalares correspondiente, sin cambiar el argumento. El paquete no fija aquí valores numéricos de las marcas ni un grupo concreto adicional.",
+      "weight": "W puede cancelarse en un cociente estrictamente condicionado a un mismo e donde el cociente exista. No se cancela en la integral exterior ni en los cuatro Z_S."
+    }
+  ],
+  "findings": [
+    {
+      "id": "F01",
+      "type": "supported_conditional_claim",
+      "claim": "Geometría h-4 de1939-1940",
+      "finding": "La lectura visual de1.20 confirma dos erosiones de Ω1, una tilde sobre R1 prima y S1 construido con R1 raw. La ampliación rectangular del complemento solo encoge D. El margen propuesto es conservador bajo la conversión de índices indicada.",
+      "disposition": "Conservar como afirmación condicionada a las particiones y los índices originales; no degradarla a una única erosión.",
+      "evidence": [
+        "CMP119251 Eq1.20",
+        "CMP109251 convención geométrica",
+        "G1",
+        "G2",
+        "G3",
+        "G4"
+      ],
+      "limits": "Las pruebas discretas son de juguete y no validan períodos físicos ni sectores."
+    },
+    {
+      "id": "F02",
+      "type": "operational_definition_caveat",
+      "claim": "Enlaces incidentes frente a propietarios",
+      "finding": "La fuente denota con el mismo conjunto continuo los enlaces que lo intersectan. Los conjuntos incidentes asociados a D y D^c se solapan en el borde; no son automáticamente una partición de variables. Retener ambos extremos es correcto para la distancia, pero no resuelve por sí solo el índice de la integración y Q_DE.",
+      "disposition": "Exigir E=I_free menos I_D y una única asignación de cada coordenada independiente al instanciar1.26. No se encontró que este punto invalide h-4: cualquier asignación legítima de enlaces de longitud uno queda dentro del margen.",
+      "evidence": [
+        "CMP109251",
+        "CMP119247 Eq1.9",
+        "CMP119249 Eq1.15",
+        "CMP119253 Eq1.26"
+      ],
+      "limits": "El paquete no enumera una geometría física final; no se inventó una."
+    },
+    {
+      "id": "F03",
+      "type": "adversarial_objection_resolved",
+      "claim": "Posible solución seleccionada o Jacobiano global no local",
+      "finding": "Para las medias originales0.4/0.12 y el pivote indicado, no hay acoplamiento entre incógnitas seleccionadas de corredores distintos. La factorización del determinante se deduce de esta estructura; no de una cota de decaimiento.",
+      "disposition": "Aceptar la localidad en la carta original única. No transferirla a otras medias, al mínimo U1(V) o a H1.",
+      "evidence": [
+        "CMP109252-254",
+        "CMP109267",
+        "CMP119249",
+        "A2"
+      ],
+      "limits": "No se verificaron márgenes analíticos uniformes ni una carta común para todos los sectores."
+    },
+    {
+      "id": "F04",
+      "type": "supported_range_with_limits",
+      "claim": "Primitivas completas y R_star",
+      "finding": "Wilson reconstruido/cuatro-link, Haar, gauge suave y Jacobiano tienen los portadores finitos descritos. La caja de cuatro bloques para una plaqueta es necesaria en esquinas; la cota32(L+1) es holgada en posición fina. El término de corriente de1.16 no puede omitirse.",
+      "disposition": "Usar la cota solo para el exponente bare original y raíces realmente finas/locales, con toda la reconstrucción.",
+      "evidence": [
+        "CMP119249 Eq1.14-1.16",
+        "CMP1090.2-0.14",
+        "LOC-3"
+      ],
+      "limits": "El límite geométrico no acota derivadas, resolventes, H1, acción histórica ni sensibilidad del fondo coarse."
+    },
+    {
+      "id": "F05",
+      "type": "fixed_background_requirement_verified",
+      "claim": "Dependencia oculta de H respecto del interior",
+      "finding": "H_(1,Lambda1) en1.21 procede de U1 y datos coarse/de borde fijados antes de integrar las fluctuaciones. No se encontró dependencia de a_D en este paso. La dependencia global respecto de V sí permanece y no debe llamarse exterior-local.",
+      "disposition": "La exterioridad sobrevive con theta fijo. Reabrirla si un operador cambia U1, el sector, H, la carta o los datos que fueron condicionados.",
+      "evidence": [
+        "CMP119248 Eq1.12",
+        "CMP119251 Eq1.21-1.22",
+        "A4"
+      ],
+      "limits": "La prueba no justifica derivar el multiplicador con respecto a parámetros físicos como si fuera constante."
+    },
+    {
+      "id": "F06",
+      "type": "proof_completeness_qualification",
+      "claim": "Características absorbidas en W_H",
+      "finding": "R_star y h-4 para primitivas de acción no bastan por sí solos para una función bad con un halo extendido. Es una omisión en la versión abreviada del argumento si se interpreta como prueba de todos los factores. La fuente da la reorganización1.19-1.25 y distingue la escala del halo de la de h; al conservarlas puede justificarse la separación estructural.",
+      "disposition": "Añadir explícitamente CUT-1 como obligación de aplicación; retener sus condiciones analíticas. No declarar una rama admitida solo porque pase h-4>R_star.",
+      "evidence": [
+        "CMP119245-246 convención de tilde y escala",
+        "CMP119250-252 Eq1.18-1.25",
+        "A6"
+      ],
+      "limits": "A6 es un contraejemplo al atajo de etiquetar un factor exterior por su cubo, no un contraejemplo físico a la reorganización original."
+    },
+    {
+      "id": "F07",
+      "type": "valid_exact_identity",
+      "claim": "Multiplicador explícito exterior",
+      "finding": "Con los portadores separados, fondo fijo y cutoffs correctamente asignados, la diferencia del exponente y el Jacobiano raw son funciones exteriores. La palabra almost-local en252 no obliga a introducir una cola en variables libres bare a fondo fijo; puede referirse también a sus datos de fondo.",
+      "disposition": "Aceptar FAC-1 como identidad exacta no expandida en este alcance. No identificarla con el B^(1) resummado.",
+      "evidence": [
+        "CMP119251-253 Eq1.22-1.26",
+        "LOC-1",
+        "LOC-2",
+        "FAC-1",
+        "A3"
+      ],
+      "limits": "Ninguna estimación uniforme de tamaño, integrabilidad exterior o respuesta física sale de esta identidad."
+    },
+    {
+      "id": "F08",
+      "type": "gaussian_scope_limit",
+      "claim": "La fuerza cruzada no cambia",
+      "finding": "Q_DE delta_e=0 se sigue del alcance de Q bare; Q_DE e no desaparece. Las inversas y complementos de Schur pueden conectar puntos que Q no conectaba.",
+      "disposition": "Conservar el chequeo gaussiano limitado de1940; no usarlo para cancelar fibras ni para acciones posteriores. La identidad Ward adicional de1694 no se utilizó ni se validó globalmente aquí.",
+      "evidence": [
+        "CMP119249 Eq1.16",
+        "CMP119253 Eq1.26",
+        "CMP109265-268",
+        "A1",
+        "A8"
+      ],
+      "limits": "No es una cota de media condicional ni una prueba de equivalencia entre gauges."
+    },
+    {
+      "id": "F09",
+      "type": "root_transport_supported",
+      "claim": "Raíces crossing y exteriores",
+      "finding": "Una raíz local que cruza D puede permanecer sin cambio porque su portador reconstruido no alcanza S. Una raíz puramente exterior puede cambiar y debe conservar ese valor. La clasificación por centro o por enlace seleccionado de salida sería incorrecta.",
+      "disposition": "Aceptar la clasificación por portador completo de1940; mantener todas las marcas exteriores transportadas y excluir palabras largas de esta cota.",
+      "evidence": [
+        "CMP109252 Eq0.2",
+        "CMP119249 selección",
+        "MARK-1",
+        "A5"
+      ],
+      "limits": "No prueba localidad de U1(V) ni estimaciones conectadas de dos raíces."
+    },
+    {
+      "id": "F10",
+      "type": "normalization_and_boundary_requirement",
+      "claim": "Cuatro coeficientes con peso exterior conservado",
+      "finding": "La identidad de extracción es correcta. Un factor común condicionado a e modifica la distribución de e después de integrar. Además el kernel mantiene interacciones con el exterior cercano aunque T actúe más lejos; los clusters de frontera no desaparecen.",
+      "disposition": "Conservar W en Z_empty,Z_p,Z_q,Z_pq, el normalizador y el prefactor gaussiano una sola vez, y el B^(1) marcado pendiente.",
+      "evidence": [
+        "CMP119253 Eq1.26 y párrafo posterior",
+        "A7",
+        "A8",
+        "COEF-1"
+      ],
+      "limits": "No implica independencia, cancelación exterior, decaimiento o estimaciones de historia."
+    },
+    {
+      "id": "F11",
+      "type": "exact_map_implementation_caveat",
+      "claim": "Uso operativo de1.22/1.24",
+      "finding": "El cambio usado debe ser A_old=T_H(A_new), con las dos ramas del interruptor indicadas por la fuente. La primera línea de1.22 define el cambio sin ambigüedad. La fórmula abreviada1.24 presenta F(...) con puntos suspensivos; no conviene reconstruir signos o argumentos del BCH por copia parcial.",
+      "disposition": "Definir el Jacobiano por la derivada del mapa exacto1.22, con su rama real admitida y valor absoluto de determinante en la sustitución de Lebesgue. No se certifica aquí una implementación numérica de BCH.",
+      "evidence": [
+        "CMP119251 Eq1.22",
+        "CMP119252 Eq1.24"
+      ],
+      "limits": "No se declara una errata demostrada de la fuente ni un fallo de la identidad del paquete, que usa el Jacobiano exacto."
+    },
+    {
+      "id": "F12",
+      "type": "uninstantiated_physical_gates",
+      "claim": "Del soporte a admisión completa",
+      "finding": "Las entradas fijan una familia y condiciones, pero no una tabla completa de valores, períodos, índices de sectores, márgenes de la carta, eliminación de cutoff ni respuesta exterior. floor(M/6)>=R_star implicaría h-4>R_star para L>11,R1>=1, pero no hay autorización lógica para inferirla de una frase cualitativa ni seleccionar otro M.",
+      "disposition": "No admitir la geometría física completa ni cerrar los costes exteriores. La reducción condicionada sigue siendo utilizable como lema de soporte con hipótesis declaradas.",
+      "evidence": [
+        "INPUT1939 finite_bare_gate",
+        "INPUT1940 limits",
+        "INPUT1926 fixed_hierarchy_test",
+        "INPUT1535",
+        "INPUT1559",
+        "CMP109264 Theorem3"
+      ],
+      "limits": "No se modificó ningún parámetro, ley, dominio o constante y no se presentó un ejemplo de juguete como testigo físico."
+    }
+  ],
+  "adversarial_tests": [
+    {
+      "id": "G1",
+      "kind": "exhaustive_1d_toy_geometry",
+      "n": 7,
+      "h": 13,
+      "cases": 479,
+      "nonvacuous": 84,
+      "min_continuous_gap": 13,
+      "min_incident_endpoint_gap": 12,
+      "claimed_conservative_gap": 9,
+      "violations": [],
+      "limit": "Toy 1D periodic h-cell masks. Raw bad set is h-cell-aligned. Does not instantiate the physical source hierarchy or its indicators."
+    },
+    {
+      "id": "G2",
+      "kind": "seeded_2d_periodic_geometry",
+      "seed": 1941,
+      "n": 9,
+      "h": 13,
+      "trials": 384,
+      "nonvacuous": 359,
+      "min_continuous_gap": 13,
+      "violations": [],
+      "limit": "Tests periodic wrapping, corners, and irregular masks; not a physical d=4 witness."
+    },
+    {
+      "id": "G3",
+      "kind": "insufficient_depth_counterexample",
+      "n": 9,
+      "h": 13,
+      "omega": [
+        [
+          1
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ]
+      ],
+      "s": [
+        [
+          1
+        ],
+        [
+          5
+        ]
+      ],
+      "one_erosion": [
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "two_erosions": [
+        [
+          3
+        ]
+      ],
+      "gap_one": 0,
+      "gap_two": 13,
+      "limit": "Counterexample to weakening the two source erosions, not to Eq1.20."
+    },
+    {
+      "id": "G4",
+      "kind": "missing_tilde_counterexample",
+      "n": 9,
+      "h": 13,
+      "raw": [
+        0
+      ],
+      "d_without_tilde": [
+        1
+      ],
+      "continuous_gap": 0,
+      "limit": "Counterexample to deleting the enlargement of R1 prime, not to Eq1.20."
+    },
+    {
+      "id": "A1",
+      "kind": "schur_complement_adversary",
+      "precision": [
+        [
+          2.0,
+          -1.0,
+          0.0
+        ],
+        [
+          -1.0,
+          2.0,
+          -1.0
+        ],
+        [
+          0.0,
+          -1.0,
+          2.0
+        ]
+      ],
+      "direct_far_coupling": 0.0,
+      "schur_after_eliminating_middle": [
+        [
+          1.5,
+          -0.5
+        ],
+        [
+          -0.5,
+          1.5
+        ]
+      ],
+      "limit": "Positive definite finite matrix showing why bare support does not extend to eliminated/history precision."
+    },
+    {
+      "id": "A2",
+      "kind": "nonlocal_selected_solve_adversary",
+      "kappa": 0.25,
+      "equation": "s=a+kappa*P*s",
+      "inverse": [
+        [
+          1.003921568627451,
+          0.25098039215686274,
+          0.06274509803921569,
+          0.01568627450980392
+        ],
+        [
+          0.01568627450980392,
+          1.003921568627451,
+          0.25098039215686274,
+          0.06274509803921569
+        ],
+        [
+          0.06274509803921569,
+          0.01568627450980392,
+          1.003921568627451,
+          0.25098039215686274
+        ],
+        [
+          0.25098039215686274,
+          0.06274509803921569,
+          0.01568627450980392,
+          1.003921568627451
+        ]
+      ],
+      "min_abs_entry": 0.01568627450980392,
+      "limit": "Hypothetical coupled selection. Source corridor equation has no such off-diagonal selected variables."
+    },
+    {
+      "id": "A3",
+      "kind": "bridge_primitive_counterexample",
+      "L": "x*e",
+      "transport": "e -> e+t",
+      "difference": "t*x",
+      "at_t_1_x_0": 0,
+      "at_t_1_x_1": 1,
+      "limit": "Fails exactly when a complete primitive bridges D and changed S."
+    },
+    {
+      "id": "A4",
+      "kind": "hidden_inner_background_counterexample",
+      "L": "-e^2",
+      "transport": "e -> e+H(x), H(x)=x",
+      "difference": "-2*e*x-x^2",
+      "at_e_0_x_0": 0,
+      "at_e_0_x_1": -1,
+      "limit": "Hypothetical inner-dependent H. In the checked source step U1,V,V0,sector are fixed."
+    },
+    {
+      "id": "A5",
+      "kind": "long_mark_counterexample",
+      "mark": "x*e_far",
+      "transport": "e_far -> e_far+t",
+      "mark_difference": "t*x",
+      "limit": "Long complete carrier fails even when mark label/center is near D; original separated four-link carrier does not."
+    },
+    {
+      "id": "A6",
+      "kind": "indicator_halo_counterexample",
+      "indicator": "1{max(abs(x),abs(e))>=1}",
+      "fixed_e": 0,
+      "at_x_0": 0,
+      "at_x_2": 1,
+      "limit": "A bad-event indicator with an inner halo is not exterior merely because its cell label is exterior. If an existing inner good cutoff enforces abs(x)<1, its effective dependence can reduce to e; that reduction must be justified."
+    },
+    {
+      "id": "A7",
+      "kind": "outer_weight_cancellation_counterexample",
+      "outer_points": [
+        -1,
+        1
+      ],
+      "base_mass": [
+        0.5,
+        0.5
+      ],
+      "W": [
+        1,
+        3
+      ],
+      "p": "e",
+      "q": "e",
+      "Z": [
+        2,
+        1,
+        1,
+        2
+      ],
+      "connected_with_W": 0.75,
+      "connected_without_W": 1.0,
+      "limit": "Exact two-point algebra, not a physical sector, proving that a common conditional weight cannot be dropped before outer integration."
+    },
+    {
+      "id": "A8",
+      "kind": "near_boundary_survives",
+      "precision": [
+        [
+          2.0,
+          -1.0,
+          0.0
+        ],
+        [
+          -1.0,
+          2.0,
+          -1.0
+        ],
+        [
+          0.0,
+          -1.0,
+          2.0
+        ]
+      ],
+      "inner_index": 0,
+      "near_exterior": 1,
+      "changed_far_exterior": 2,
+      "conditional_cross_term": "x*e_near",
+      "far_transport": "e_far -> e_far+t",
+      "far_increment": "t*e_near-2*t*e_far-t^2",
+      "limit": "With exponent -a^T Q a/2, exterior increment coexists with nonzero inner/near-boundary interaction."
+    }
+  ],
+  "experiment_provenance": {
+    "seed": 1941,
+    "python": "3.12.6",
+    "numpy": "2.2.6",
+    "code_path": "C:\\Trabajo\\airr\\2026-11-01_execution1941\\adversarial1941.py",
+    "code_sha256": "1a9c66c1014f60a9291a85b4322273f58e1ae6a5d3dcd3ae8377329fa265d8ab",
+    "results_path": "C:\\Trabajo\\airr\\2026-11-01_execution1941\\adversarial-results1941.json",
+    "results_sha256": "cb6d3d36c14b3868b2cbbde938f72ca04e789be35fa0faeb3e62bb1dd8a7200f",
+    "physical_witness": false,
+    "interpretation": "G1 y G2 son comprobaciones finitas auxiliares de la geometría combinatoria; no sustituyen la prueba geométrica ni verifican la red física4D. Los ejemplos A son adversarios a hipótesis debilitadas y muestran límites lógicos. No son muestras de la medida gauge original.",
+    "coverage": "G1:479 pares de máscaras1D,84 no vacíos; mínima distancia continua13 y de extremos incidentes12 frente al piso conservador9. G2:384 casos2D con semilla1941,359 no vacíos, mínimo13. Sin violaciones del margen probado en esos ensayos."
+  },
+  "instrumental_failures_and_recovery": [
+    {
+      "event": "Extracción inicial de texto PDF",
+      "failure": "UnicodeEncodeError cp1252 al imprimir la primera página; no era un fallo del PDF ni una prueba matemática.",
+      "recovery": "Se estableció PYTHONIOENCODING=utf-8 y se repitió la lectura. No se alteró la fuente."
+    },
+    {
+      "event": "Salidas largas de herramientas",
+      "failure": "La primera lectura conjunta de INPUT y una salida conjunta de ambos PDF se truncaron en la presentación.",
+      "recovery": "Se recuperaron las entradas y páginas faltantes por separado. Las páginas requeridas se leyeron completas y las ecuaciones centrales además se vieron en imágenes."
+    },
+    {
+      "event": "Primera ejecución del experimento",
+      "failure": "SyntaxError en línea116: un paréntesis de cierre adicional en el último dict de records.extend no concordaba con el corchete abierto en98. Línea defectuosa terminaba interaction.')) en vez de interaction.').",
+      "recovery": "Se quitó ese paréntesis, sin cambiar fórmulas ni casos. La ejecución posterior terminó con código0. El código final y sus resultados quedan preservados. No se contó el fallo instrumental como resultado matemático."
+    }
+  ],
+  "remaining_limits": [
+    "La lectura de fuentes fue focalizada; no valida todos sus resultados ni los trabajos citados por ellas.",
+    "No se autenticó la configuración efectiva ni independencia del backend; solo se describe la conducta observable en esta ejecución.",
+    "La independencia respecto de a_D se obtiene a fondo y sector fijos; no equivale a independencia o localidad en V, datos de borde o historia.",
+    "La prueba no construye una carta analítica uniforme ni demuestra la invertibilidad global de T_H para toda la familia de campos.",
+    "Los cutoffs se conservan con sus radios originales. Las condiciones para omitir la función aproximada y para reorganizarlos siguen siendo parte de la admisión de la fuente.",
+    "El exterior conserva baselines, factores delta, Faddeev-Popov, Haar, determinantes, normalización y todas las marcas exteriores. No se afirma un nuevo cambio de ley.",
+    "No se auditó como resultado independiente la identidad Ward de1694 ni su contabilidad detallada de constantes de derivadas, pues no son necesarias para este lema de separación.",
+    "Los ejemplos adversariales se preservan incluso cuando sus hipótesis son excluidas por el caso condicionado que sí sobrevive."
+  ],
+  "final_disposition": {
+    "retain": [
+      "Lema de soporte bare a U1 original fijo y separación completa",
+      "Localidad seleccionada por corredor en la carta original",
+      "Margen h-4 conservador con particiones e índices compatibles",
+      "Identidad exacta de cuatro coeficientes con W exterior retenido",
+      "Raíces finas crossing invariantes bajo este T cuando su portador completo queda separado"
+    ],
+    "must_be_explicit": [
+      "Partición disjunta de índices libres de1.26",
+      "Geometría y reorganización de características con halos, además de R_star",
+      "Mismo fondo/mean/carta y misma ley1535/1559",
+      "Derivada del mapa exacto para su Jacobiano",
+      "Condiciones de finitud/no nulidad cuando se forma un cociente normalizado"
+    ],
+    "not_established": [
+      "Admisión de todos los sectores físicos",
+      "Cotas de respuesta del peso exterior",
+      "B^(1) marcado completo y clusters de frontera",
+      "Decaimiento conectado de raíces",
+      "Transferencia a H1, acciones efectivas posteriores o historia"
+    ],
+    "no_input_or_source_mutation": true,
+    "single_continuous_assessment_completed": true
+  },
+  "temporary_source_renders": {
+    "render_count": 20,
+    "viewed_pages": "CMP119245-253; CMP109252-255,264-268. CMP109256-257 were rendered but only their complete extracted text was read.",
+    "render_metadata": [
+      {
+        "name": "tmp-cmp109-252.png",
+        "sha256": "61e200d0fc2fc5230ed1785605f1e85886c4e911d439d3e844b1817f5abeb246",
+        "bytes": 407280
+      },
+      {
+        "name": "tmp-cmp109-253.png",
+        "sha256": "d45b722f0653b01f06cc050969c0cf8eb6f685fa6c5a753d8dd602f0a660a36f",
+        "bytes": 297528
+      },
+      {
+        "name": "tmp-cmp109-254.png",
+        "sha256": "dd9c80e80389505f6d7a1107ef6c3ee6e3bcde2877274caec3aeef8006261722",
+        "bytes": 369367
+      },
+      {
+        "name": "tmp-cmp109-255.png",
+        "sha256": "d0171caa7bf6a2592c53f3d79b3f48c1ff9f994420292ec341dbf56121557c04",
+        "bytes": 293301
+      },
+      {
+        "name": "tmp-cmp109-256.png",
+        "sha256": "f733e13139356d0ef9cf083e971e7ad297cba847d232f12174f7f5fb8682c35c",
+        "bytes": 377606
+      },
+      {
+        "name": "tmp-cmp109-257.png",
+        "sha256": "7fa372e2db1bd2547724b7804cba910c79f028777ef122da02bd83f1d01412df",
+        "bytes": 346189
+      },
+      {
+        "name": "tmp-cmp109-264.png",
+        "sha256": "3ef3c47b3d9408248f2535060d12afff3fcdc4a1198613089837c2dd388d11e1",
+        "bytes": 317317
+      },
+      {
+        "name": "tmp-cmp109-265.png",
+        "sha256": "0261a4b303a2e9249ecf0aba0151c196e09530528301238b25364555b16e3d8c",
+        "bytes": 362125
+      },
+      {
+        "name": "tmp-cmp109-266.png",
+        "sha256": "477de64380088d64a3025bd5d509e33e0b77332e4d2b1517235f25c3e8b02431",
+        "bytes": 331380
+      },
+      {
+        "name": "tmp-cmp109-267.png",
+        "sha256": "e01e4f22cfbb6496fe9a347eb38de6a6d23d2415540c088058b97510c78496cf",
+        "bytes": 362629
+      },
+      {
+        "name": "tmp-cmp109-268.png",
+        "sha256": "2f890d1c410a4531a912ff92ced8c815e1acbb1d74d53ceff8a7475c8186e1f5",
+        "bytes": 263710
+      },
+      {
+        "name": "tmp-cmp119-245.png",
+        "sha256": "bf6224fbaad9c6a9df22e48b7276c280299fff90d0c77ea37a80be4a40abff7e",
+        "bytes": 354201
+      },
+      {
+        "name": "tmp-cmp119-246.png",
+        "sha256": "b1d9ea82c6e248228bfa0bc26bbed9ebddd9e65308db3ef5678ca2626df9abc0",
+        "bytes": 303617
+      },
+      {
+        "name": "tmp-cmp119-247.png",
+        "sha256": "eb559fa90232ee0d65e237986ce2da5b99e87831522ff5404b290c7b104b972e",
+        "bytes": 299654
+      },
+      {
+        "name": "tmp-cmp119-248.png",
+        "sha256": "074724e6fdc3350fd577a8e9acc0deee456f517c09dbcb7b94c8c85c59fb8751",
+        "bytes": 286242
+      },
+      {
+        "name": "tmp-cmp119-249.png",
+        "sha256": "c4fb2451c376d527cc3bfd7c86725095194a73c46eaa1207d5c42e16ac471e5c",
+        "bytes": 242531
+      },
+      {
+        "name": "tmp-cmp119-250.png",
+        "sha256": "ec96382067cdefe34d34fb51f0896791024e69990832532b34d4d5b5c5d5c6ef",
+        "bytes": 315457
+      },
+      {
+        "name": "tmp-cmp119-251.png",
+        "sha256": "101935a9c55de058d5ed628812fff8d6e5ec34d30a47834969a2a326b273ea4e",
+        "bytes": 321432
+      },
+      {
+        "name": "tmp-cmp119-252.png",
+        "sha256": "d28baf57d27ee067d324746295e19d6dd283527b7926f88f70f530949003d402",
+        "bytes": 315257
+      },
+      {
+        "name": "tmp-cmp119-253.png",
+        "sha256": "f525b7e1ceefd4275f045bc8619292575e4edf1319d1b07f94fae6c0e57094f6",
+        "bytes": 269592
+      }
+    ],
+    "deleted_after_inspection": true,
+    "foreign_source_bodies_copied_to_D_or_Git": false,
+    "source_text_body_saved": false
+  }
+}

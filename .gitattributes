@@ -28,3 +28,7 @@ integrations/research-radar/evidence/2026-10-30-werner-d3-execution/*.zip binary
 
 # Preserve exact frozen1925 inputs, report and parent dispositions.
 integrations/research-radar/evidence/2026-10-31-physical-mean-admission/soft-free-review-1934/*.json -text
+
+# Preserve exact frozen1941 inputs, complete report and recorded experiments.
+integrations/research-radar/evidence/2026-10-31-physical-mean-admission/boundary-review-1949/*.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+integrations/research-radar/evidence/2026-10-31-physical-mean-admission/boundary-review-1949/*.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
