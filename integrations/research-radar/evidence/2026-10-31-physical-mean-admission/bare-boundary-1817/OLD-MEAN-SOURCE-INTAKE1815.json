@@ -1,0 +1,107 @@
+{
+  "kind": "Bounded primary-source intake of the old averaging operator behind the covariance citation; not a new mathematical result or assessment",
+  "at": "2026-11-01T02:39:40.527622+00:00",
+  "sources": [
+    {
+      "path": "C:\\Users\\lluis\\Documents\\CodexYangMillsAutopilot\\runtime\\sources\\primary\\balaban-rg-I-cmp109-1104116842.pdf",
+      "sha256": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+      "doi": "10.1007/BF01215223",
+      "selected_pages": {
+        "text_read": [
+          267
+        ],
+        "visual_this_turn": []
+      },
+      "level": "literature"
+    },
+    {
+      "path": "C:\\Users\\lluis\\Documents\\CodexYangMillsAutopilot\\runtime\\sources\\primary\\cmp99\\1103942769.pdf",
+      "sha256": "39f8033b35838c7bdd14f97c7fb1edb0b35d4190b8b88f31d19d12a72d542861",
+      "doi": "10.1007/BF01240355",
+      "selected_pages": {
+        "text_read": [
+          389,
+          390,
+          392,
+          393,
+          394,
+          427,
+          428
+        ],
+        "visual_this_turn": []
+      },
+      "level": "literature"
+    },
+    {
+      "path": "C:\\Users\\lluis\\Documents\\CodexYangMillsAutopilot\\runtime\\sources\\primary\\balabanfusion.pdf",
+      "sha256": "00cc6b218dcf0e1c2884e135caa1d57b3591df036540b685e7440f30cbd4ff16",
+      "contained_source": "Averaging Operations for Lattice Gauge Theories, CMP98,17-51",
+      "doi": "10.1007/BF01211042",
+      "selected_pages": {
+        "text_read": [
+          31,
+          32,
+          36,
+          39
+        ],
+        "visual_this_turn": [
+          31,
+          36
+        ],
+        "pdf_zero_indices_visual": [
+          308,
+          313
+        ]
+      },
+      "level": "literature"
+    }
+  ],
+  "deduplication": "1812 located actual source decay/domain predicates;1813 extracted the bare current/soft-gauge precision;1814 matched the incident support space and retained the post-shell compensation. None is reopened. This intake follows the specific old-mean definition cited by CMP99, rather than repeating support or gamma estimates.",
+  "findings": [
+    {
+      "locator": "CMP99 p392(3.13), p393(3.14)-(3.15)",
+      "reading": "statement/definition read, no proof audit",
+      "content": "The averaging underlying the old propagator is explicitly the background-dependent operation defined in Averaging Operations(89)-(92). Its one-step linear coefficient is explicitly referred to that paper(124). The symbol Q_j is a composition of those full one-step linear coefficients.",
+      "limit": "Naming Q or matching locality does not identify it with the physical mean(0.4) or(0.12) at a non-flat actual background."
+    },
+    {
+      "locator": "CMP98 p31(89)-(92), fusion PDF zero index308",
+      "reading": "definition text and page visually read",
+      "content": "The old definition includes background-dependent gauge averages and inductive composition. Its locality remains within endpoint blocks; that shared support is weaker than equality of the maps.",
+      "limit": "No full audit of the inductive equality(92), its imports or gauge-average existence. No translation from old anchored blocks to the physical centered blocks is silently performed."
+    },
+    {
+      "locator": "CMP98 p36(121)-(126), fusion PDF zero index313; p39(139)-(140)",
+      "reading": "definition/statement text and p36 visually read; proof not audited",
+      "content": "Equation124 gives the full one-step derivative including additional background-dependent terms. Equation125 separately names its leading transported path average Q0. The surrounding statements bound the remainder in the source small-field regime; p39 retains it as a separate Q-double-prime contribution.",
+      "limit": "The remainder is not declared zero. Its source estimate has source-dependent constants and smallness predicates; it is neither an authenticated numerical bound for the fixed physical family nor a bound for the full current/gauge precision difference. No formula is dropped or promoted into a physical perturbation theorem."
+    },
+    {
+      "locator": "CMP99 pp393-394(3.17)-(3.25)",
+      "reading": "definition text read, no proof audit",
+      "content": "The old gauge density involves its Q-prime site averaging and a covariant-Laplacian projection on the kernel of that average; its Dirichlet/collar conventions are part of the definition.",
+      "limit": "This projection-defined density is not identified with the current finite-step exponential gauge Hessian merely because both are gauge fixings. Exact site/bond spaces and boundary data must be retained."
+    },
+    {
+      "locator": "CMP109 p267(2.11), CMP99 pp427-428(3.155)-(3.158)",
+      "reading": "selected statements text read, previously located context retained",
+      "content": "The later source explicitly relates its quadratic to the old definition with a gauge replacement. The older covariance representation uses the old average/current, axial-zero directions and source regularity assumptions.",
+      "limit": "The citation is a source relation to be implemented with the replacement, not a proof that one may reuse the old inverse unchanged. Earlier hard/soft, current, metric, regularity and boundary objections remain open."
+    }
+  ],
+  "mechanism": "Authenticate the actual full averaging derivative and quadratic constraint current, then the gauge replacement on the same declared spaces; only afterwards can source decay/inverse predicates enter the fixed1810 compatibility test.",
+  "hypotheses": "Original mean version, actual background and trace metrics, mesh/site/bond maps, source compatible domains, admitted logarithms/branches, local gauge regularity and same-family constants. None is newly supplied by this intake.",
+  "falsifier": "A claimed import that substitutes Q0(125) for the full old derivative(124), or equates old and physical means/gauge densities without the original coordinate/current transformations, fails this admission gate. This is a guard against an unsupported inference, not a refutation of the source theorem.",
+  "levels": {
+    "literature": "Selected definitions and statements with exact source locators",
+    "formal": "No formalization/build checked",
+    "heuristic": "The full derivative/current comparison is a possible admission route only",
+    "speculative": "No claimed physical theorem or novelty"
+  },
+  "disposition": "No new review, manuscript edit, lemma paper, graph confidence change or publication. Retain own bibliographic synthesis in the existing admission dossier for later substantive consolidation; do not append another conditional lemma as a substitute.",
+  "preparation_history": "The first draft of the copied orientation script referenced its new outputs as prior inputs. Inspection caught and corrected both paths before execution; no failed execution or state mutation occurred. Orientation then completed exit0. Foreign PDF text and renders were handled only in tool output/memory; none saved in the archive.",
+  "physical_admission": false,
+  "candidate1642_admitted": false,
+  "new_paper": false,
+  "new_review": false
+}

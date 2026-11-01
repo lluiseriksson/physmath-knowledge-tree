@@ -1,0 +1,232 @@
+{
+  "at": "2026-11-01T02:37:21.859232+00:00",
+  "status": "CONDITIONAL_BOUNDARY_DICTIONARY_VALID;POST_SHELL_GAUSSIAN_KERNEL_REQUIRES_EXPLICIT_REMAINDER;NO_PHYSICAL_ADMISSION",
+  "input_sha256": "3d99e9ee4f771782e0c602094a4a94a4db2d97a319dd2253a998b4951c9b3559",
+  "report_sha256": "3491f3a363b7ffc1cbd89f1795ac613150e8283ab2f538a3355493d268f0ca17",
+  "report_bytes": 46276,
+  "report_reading": "First combined display truncated; the entire report was then read in bounded key partitions, including all12 objections,8 source findings,8 falsifiers and all sections. No truncated display treated as full audit.",
+  "requested_configuration": {
+    "requested_model": "GPT-6 Astra",
+    "requested_reasoning_effort": "xhigh",
+    "effective_model_identity": "NO_AUTENTICADA",
+    "effective_reasoning_effort": "NO_AUTENTICADO",
+    "independence": "NO_AUTENTICADA",
+    "qualification": "Se registra la configuración solicitada, sin certificar el modelo efectivo, el esfuerzo efectivo ni la independencia. Este informe procede de una lectura técnica nueva, con los inputs e informes anteriores usados como premisas limitadas.",
+    "additional_reviewers_spawned": false,
+    "assessment_restarted": false,
+    "score_given": false
+  },
+  "objections_retained_integrally": [
+    {
+      "id": "O01",
+      "origin": "1806 y1814",
+      "subject": "Instancia física y geometría efectiva",
+      "status": "NO_INSTANCIADA",
+      "detail": "Se prueba una consecuencia estructural de las convenciones fuente. No hay listas concretas de A,I,D,E, pivotes, mínimos y parámetros ni un testigo de admisión de una familia. Un dominio sub-bloque o un cambio de orden complemento/incidencia invalidaría este argumento. La calificación de1806 sobre el extremo interior del pivote permanece."
+    },
+    {
+      "id": "O02",
+      "origin": "1806",
+      "subject": "Exterior bruto y medida gráfica",
+      "status": "LIMITE_CONSERVADO",
+      "detail": "El F_src de1806 y su partición delta son premisas tipadas y una identidad débil conjunta en el V completo con integrabilidad sobre la gráfica. No se convierten en fibras regulares puntuales para todo V ni se identifican con E o A_out. Las restricciones exteriores globales y el peso de sector permanecen."
+    },
+    {
+      "id": "O03",
+      "origin": "1806/1808/1813",
+      "subject": "Media, mínimo y datos fuente",
+      "status": "PREMISAS_NO_PROBADAS_PARA_TODA_HISTORIA",
+      "detail": "Se conserva una elección entre(0.4) y(0.12), la fuente U1, sus condiciones críticas y regularidad, todos los logs admitidos, el toro, L impar mayor que11, compatibilidades y orientaciones independientes. No se identifican entre versiones los mapas, ni se demuestra admisión para datos exteriores arbitrarios."
+    },
+    {
+      "id": "O04",
+      "origin": "1808 y1814",
+      "subject": "Rama y determinantes seleccionados",
+      "status": "SOLO_LOCAL",
+      "detail": "La invertibilidad del bloque original en0 da un entorno local. La identidad ambiente puede controlar el bloque sobre su rama existente, pero no suministra radio, cota inversa ni cobertura global. Constancia interior es por componente de sección/hoja exterior; sectores, multiplicidades y contribuciones off-chart no se borran."
+    },
+    {
+      "id": "O05",
+      "origin": "1808",
+      "subject": "Shell H y signo BCH",
+      "status": "OBJECIONES_FUENTE_CONSERVADAS",
+      "detail": "H_eff debe estar determinado por los dos fondos: la(1.21) contiene L^(-1) multiplicando el operador H. No se identifica sin ajuste con el H abreviado de(1.22), ni con h/Hsharp. La discrepancia de signo del término BCH entre(1.22) y la abreviatura(1.24) se conserva; se deriva el mapa exacto Log/producto sin inventar una errata. La guardia suave no se promueve a holomorfa."
+    },
+    {
+      "id": "O06",
+      "origin": "1808/LAW1535/LAW1559",
+      "subject": "K_C, ratios y dominio",
+      "status": "NO_COBERTURA_COMPLETA",
+      "detail": "R_D=Id conserva el indicador interior relativo al dominio del mapa. No convierte el chart en producto ni demuestra que cubra todo K_C. C_delta, p_cut y beta_ref quedan fijados; la discrepancia de prefactores A1/A0 y el presupuesto de ratio no se resuelven haciendo g0 menor ni cambiando el cutoff."
+    },
+    {
+      "id": "O07",
+      "origin": "1814",
+      "subject": "Kernel post-shell",
+      "status": "CONDICION_EXPLICITA_REQUERIDA",
+      "detail": "El forzamiento del pullback original es Q_DE R_E(a_E). Usar Q_DE a_E exige conservar L_shell y las interacciones compuestas descritas en este informe. La mera fórmula bare no certifica la densidad completa. No se modifica el input para añadirlo."
+    },
+    {
+      "id": "O08",
+      "origin": "1808/1813",
+      "subject": "Medidas, pares y normalizaciones",
+      "status": "GUARDAS_CONSERVADAS",
+      "detail": "Se mantienen P=LQ, Ph=I, escala g0, sigma0, Haar y todas las adjuntas para los productos declarados. El conteo de filas gruesas no se sustituye por sitios de gauge. Las dos representaciones equivalentes de la medida de1808 no se multiplican entre sí. No se añade jacobiano superficial ni se cancela z^(0), el normalizador de gauge o una dependencia de fondo sin justificación."
+    },
+    {
+      "id": "O09",
+      "origin": "1813",
+      "subject": "Precisión bare y densidad a g0 finito",
+      "status": "DISTINCION_CONSERVADA",
+      "detail": "La corriente y el gauge real original permanecen, con la métrica de traza una sola vez. El G^(2) Hessiano y el coeficiente local seleccionado F2 no se confunden; los tilde seleccionados tampoco se identifican con los C/D variacionales. h no es H ni se afirma H1=I. Haar y Jacobiano modifican en general la Hessiana de la densidad completa; Q_D no la sustituye."
+    },
+    {
+      "id": "O10",
+      "origin": "1665/1813 y fuentes primarias",
+      "subject": "Gauge duro frente a exponencial y covarianzas antiguas",
+      "status": "COMPARACION_ABIERTA",
+      "detail": "CMP99 elimina variables axiales adicionales y usa su media, corriente, productos y condiciones de dominio/collar. El soporte demostrado1814 no proporciona el mapa cuantitativo de reemplazo hard/soft. La referencia al resolvente en CMP116 no borra esa obligación. No se transfieren gamma0, decaimiento ni cotas de inversas."
+    },
+    {
+      "id": "O11",
+      "origin": "1808/1813",
+      "subject": "Localización, parámetros y fuente190",
+      "status": "ABIERTOS",
+      "detail": "Source190/Hsharp, P1, familia geométrica/de acoplamiento simultánea, absorciones, amplitud real beta_ref/g1_ref, todos los retiros de características y las cotas comunes siguen sin probarse. Las expansiones locales a datos fijos no son uniformes en sector, volumen, historia o parámetros dependientes de g0."
+    },
+    {
+      "id": "O12",
+      "origin": "1808 y1814",
+      "subject": "Palabras, normalizador e historia",
+      "status": "SOLO_IDENTIDAD_CONDICIONAL_DE_COEFICIENTES",
+      "detail": "Faltan las palabras concretas si se pretende certificar un soporte particular; todos sus marcos y orden deben comprobarse. No hay no-anulación general de normalizadores, log global, suma conexa uniforme, derivadas de dominio móvil ni cancelación de factores exteriores. Una rama aislada no es el Z_C completo."
+    }
+  ],
+  "source_findings_retained_integrally": [
+    {
+      "id": "S01",
+      "locator": "CMP119 p245; p248(1.10); p251(1.20) y párrafo siguiente",
+      "literal_scope": "La fuente exige compatibilidad de las particiones; define Omega1 como unión de cubos LMR1 y construye Lambda1 por operaciones sobre esos cubos. Después sustituye pequeñas componentes del complemento por paralelepípedos rectangulares que son uniones de los mismos cubos.",
+      "inference": "Ampliar así el complemento solo reduce Lambda1 y conserva su estructura de unión de celdas completas. Con la compatibilidad fuente, esas celdas son uniones de bloques completos de primer nivel. No se elige otra Lambda ni se amplía el dominio de integración.",
+      "limit": "Son definiciones estructurales de la fuente. El input no proporciona valores numéricos, un sector enumerado, un toro concreto ni una lista de sus bonds que permitan certificar una familia física particular."
+    },
+    {
+      "id": "S02",
+      "locator": "CMP109 p251; CMP119 p247(1.8)-(1.9)",
+      "literal_scope": "La fuente usa regiones formadas por cubos compatibles y los bonds que las intersectan. El párrafo anterior a(1.9) especifica al menos un extremo para el conjunto estrella y elimina los b0(c) de filas gruesas incidentes.",
+      "inference": "Se debe seleccionar primero el conjunto incidente tipado. Los cruces hacia Lambda pertenecen al interior incidente, tanto en las filas gruesas como en los pivotes finos correspondientes. No se levanta por incidencia el complemento geométrico para definir A_out.",
+      "limit": "La afirmación de1814 no es válida por esta razón para un dominio arbitrario sub-bloque, una selección de caras aisladas o un conjunto que excluya de su interior los cruces incidentes."
+    },
+    {
+      "id": "S03",
+      "locator": "CMP109 pp252-254(0.3)-(0.4),(0.11)-(0.12)",
+      "literal_scope": "Los contornos de raíces se construyen dentro de B(c_-) y B(c_+); el segmento trasladado [x,x′] une esos bloques, y el segmento de referencia c se descompone en sus links finos. La versión(0.12) promedia contornos con el mismo soporte.",
+      "inference": "Para una fila con ambos bloques extremos exteriores a Lambda, todos esos links permanecen exteriores al conjunto fino incidente de Lambda. La dependencia de la media no lineal está contenida en esos inputs locales, para la versión y ramas originales fijadas.",
+      "limit": "El soporte no se deduce del símbolo de promedio ni de su derivada plana. Se deduce de todos los caminos efectivos, incluido U(-c)/U(c), y no autoriza cambiar la versión de la media."
+    },
+    {
+      "id": "S04",
+      "locator": "CMP109 p267, párrafo de h y ecuación seleccionada; CMP119 p249",
+      "literal_scope": "b0(c) está en c y en el corredor entre sus bloques extremos; h actúa solo en esos pivotes y L Q h=I. Se eliminan los pivotes originales, no un menor escogido de nuevo.",
+      "inference": "Cada pivote de otra fila está en otro corredor y no aparece como input seleccionado de esta fila; el bloque seleccionado es diagonal por fila, con bloques sobre el álgebra de Lie. La invertibilidad de esos bloques reales no se deduce de su ubicación.",
+      "limit": "La fuente describe una solución analítica en su régimen. El input conserva como premisa el entorno efectivamente admitido; no aporta una cota uniforme para todos los sectores."
+    },
+    {
+      "id": "S05",
+      "locator": "CMP119 pp251-252(1.20)-(1.25); p253 primera(1.26)",
+      "literal_scope": "La modificación shell actúa sobre variables libres de S1 estrella. La fuente añade términos producidos por el cambio de variables. La primera(1.26) conserva la forma cuadrática interior, su término cruzado con variables exteriores y las interacciones.",
+      "inference": "La gaussiana usada es una referencia para una integral condicionada en coordenadas libres. La fuente sí conserva correcciones shell; sus símbolos abreviados no permiten suprimirlas de una identidad exacta nueva."
+    },
+    {
+      "id": "S06",
+      "locator": "CMP116 pp12-13(2.5)-(2.6)",
+      "literal_scope": "El cociente de integrales de(2.5) condiciona la medida gaussiana por una partición de variables libres y mantiene el término lineal cruzado. La medida interior y el factor exterior de completar cuadrado son distintos.",
+      "inference": "La precisión interior se restringe antes de invertir. La covarianza de referencia condicionada no se sustituye por el bloque marginal de la inversa global. La geometría particular Z0 de esa expansión no se identifica automáticamente con Lambda1."
+    },
+    {
+      "id": "S07",
+      "locator": "CMP116 p13, después de(2.7)",
+      "literal_scope": "El texto representa C(xI+C*Delta_k C)^(-1)C* mediante la integral antigua(3.185), añadiendo un término de masa que contiene la proyección chi estrella sobre variables libres.",
+      "inference": "Esta remisión trata el resolvente de la precisión libre e introduce expresamente su masa libre. No afirma que pueda eliminarse el gauge exponencial ni equipara por sí sola todos los espacios antiguos y actuales.",
+      "limit": "No se ha auditado de nuevo la construcción completa de ese resolvente ni su comparación con una familia física."
+    },
+    {
+      "id": "S08",
+      "locator": "CMP99 pp427-428, Sección E,(3.155)-(3.158); CMP109 p267 después de(2.11)",
+      "literal_scope": "La covarianza antigua impone exterior nulo, variables axiales nulas y Q1B=0; sus coordenadas libres quitan también los bonds axiales. La fuente posterior menciona el reemplazo del gauge delta por el exponencial.",
+      "inference": "Resolver el soporte fino de1814 solo resuelve esa condición de borde dentro de la familia física simbólica actual. La restricción axial adicional y el reemplazo de operador siguen pendientes. No se transporta gamma0 ni el decaimiento antiguo."
+    }
+  ],
+  "falsifiers_retained_integrally": [
+    {
+      "id": "F01",
+      "test": "Una Lambda realmente de la construcción fuente deja de ser unión de bloques completos bajo sus convenciones originales.",
+      "effect": "Revocaría el argumento de alineación aplicado a ese caso; una región arbitraria no es tal falsificador."
+    },
+    {
+      "id": "F02",
+      "test": "Una fila J de la clase fuente usa, en alguno de sus caminos reales de(0.4)/(0.12) o su marco variable, un link de A_in.",
+      "effect": "Revocaría F_J exterior, P_(J,A_in)=0 y la consecuencia de reconstrucción. No se halló ese uso en las definiciones inspeccionadas."
+    },
+    {
+      "id": "F03",
+      "test": "beta_out intersecta A_in en la misma convención fuente, o el bloque seleccionado exterior real es singular en el punto que se presenta como admitido.",
+      "effect": "El primer caso rompe la correspondencia de índices; el segundo excluye ese punto de la rama local admitida. La disponibilidad geométrica no reemplaza el test de invertibilidad."
+    },
+    {
+      "id": "F04",
+      "test": "pi_A_out C_rec i_D no es cero bajo esos mismos índices, mapa seleccionado y premisas de invertibilidad.",
+      "effect": "Refutaría la identidad lineal. Un ejemplo con otro borde o L3 fuera de la clase no la prueba ni la refuta."
+    },
+    {
+      "id": "F05",
+      "test": "N(B)_A_out varía con a_D dentro de una misma sección conexa, a iguales datos exteriores y con la identidad ambiente y bloque exterior invertible.",
+      "effect": "Contradiría la diferenciación del subsistema. Comparar raíces distintas en secciones desconectadas no es ese test."
+    },
+    {
+      "id": "F06",
+      "test": "Se utiliza el kernel con Q_DE a_E tras un shell no trivial y se omite L_shell o su representación exactamente equivalente.",
+      "effect": "La densidad afirmada cambia por un factor generalmente dependiente del interior. Esta es una omisión de contabilización de factores que debe resolverse antes de reutilizar la identidad completa."
+    },
+    {
+      "id": "F07",
+      "test": "Una palabra clasificada exterior contiene un frame o link variable interior, o se altera su orden al extraer c_p.",
+      "effect": "La clasificación o la identidad literal de coeficientes deja de estar demostrada para esa palabra."
+    },
+    {
+      "id": "F08",
+      "test": "Se promueve Q_D^(-1) a covarianza marginal o física completa, o se transfiere gamma0/hard/190 desde la igualdad de soporte.",
+      "effect": "Es una extrapolación no autorizada por este informe, aunque no refute las identidades locales demostradas."
+    }
+  ],
+  "controlling_disposition": {
+    "source_geometry": "Original whole-cell incident Lambda, original mean version and pivot list only. The structural source support argument pays pi_Aout C_rec i_D=0 and image(C_rec i_D)=kerP intersect {x_Aout=0}; it does not instantiate a physically admitted family.",
+    "precision": "Q_D=C_Lambda^sharp i_Ain^sharp Delta1 i_Ain C_Lambda with original U1, current, soft gauge, metrics and boundary contributions. It is a restricted bare reference, not a full finite-g0 density Hessian or old axial covariance.",
+    "nonlinear_exterior": "Independence of reconstructed A_out is local on an admitted selected branch and constant on each connected fixed-exterior chart section. Retain the exterior inverse sheet or section-component label. Ambient connectedness alone is insufficient. Preserve B^E, selected inside offsets and all original support/multiplicities; no new sector split or discarded complement.",
+    "post_shell_correction": {
+      "material_omission": "The frozen input did not exhibit the exact compensation between the direct pullback Gaussian and the a_E reference. Unqualified equality is not accepted; no retroactive input edit or review restart.",
+      "direct_form": "For r=R_E(a_E), the direct exponent is -1/2<a_D,Q_D a_D>-<a_D,Q_DE r>-1/2<r,Q_EE r>. Its untruncated conditional reference mean is -Q_D^-1 Q_DE r, if real Q_D>0.",
+      "chosen_reference": "If the reference instead uses a_E, keep L_shell=-<a_D,Q_DE(r-a_E)>-1/2[<r,Q_EE r>-<a_E,Q_EE a_E>] exactly in the remaining exponent. The sum of chosen-reference exponent and L_shell equals the direct form by expansion; this is an algebraic disposition, not a new physical estimate.",
+      "full_weight": "Retain original v(g0 C_rec R(a)), V(g0 C_rec R(a)), JR, Haar/selected factors, indicators, marks, outer action and baselines in their exact original locations. Writing v/V at g0 C_rec a instead requires their exact differences too. No BCH sign invention or soft-cutoff holomorphy.",
+      "normalization": "For either selected reference forcing j, normalization is Z_D exp[1/2<j,Q_D^-1 j>] and the original cutoff/support shifts when centering. Covariance Q_D^-1 is reference conditional only, not marginal/full interacting covariance. D empty uses integral/determinant1."
+    },
+    "marked_words": "Only a complete original exterior word including all variable frames/paths is deterministic on the fixed exterior sheet. Preserve scalar contraction tr[JW] or exact noncommutative insertion order. Coefficient extraction needs no division; mixed log needs nonzero I0. Reconstructed A_out words differ from prescribed V0 raw-Fsrc words. All exterior/background/history factors remain inside outer integrations before logarithm.",
+    "unpaid": [
+      "Instancia física admitida y todos los predicados del mínimo",
+      "Toda la cobertura K_C y sus contribuciones originales",
+      "Inversa uniforme y globalización de ramas",
+      "Positividad, gap, decaimiento o comparación con el operador axial antiguo",
+      "Normalizador físico no nulo, log final y control marcado/historia",
+      "Resolución de las objeciones H/escala/BCH, ratio de cutoff y parámetros conservadas"
+    ],
+    "no_overclaim": "No physical instance, full K_C coverage, positivity, inverse/gap/decay, hard-soft comparison, gamma0 transfer,190/Hsharp identification, connected/history bound, manuscript approval or candidate1642 admission. Prior reports and old generic1665 counterexample remain unchanged."
+  },
+  "next": "Do not repeat1814 or publish another minor lemma. Reuse only the exact post-shell decomposition with L_shell and composed weights recorded here; no further review is needed merely to restate that algebra. Next substantive work must identify the actual same-family soft/current operator and its source-admitted gauge/mean/regularity/domain predicates, or establish original nonlinear coverage and marked operational equality on the fixed law. Preserve actual exterior sheet/components, ordered complete words, full normalizers/baselines and all12 objections. Coupled1810 fixed-base conditions remain unevaluated until those same-family inputs are authenticated; full K_C, source190/Hsharp, simultaneous absorptions, normalized connected sum and history remain open.1642 NOT ADMITTED. AIRR/Capacity/PR252 and all previous reviews/checks stay closed.",
+  "physical_admission": false,
+  "candidate1642_admitted": false,
+  "new_paper": false,
+  "manuscript_changed": false,
+  "review_restarted": false,
+  "score": null,
+  "disposition_scope": "Primary agent has integrated the exact report and its explicit algebraic correction without modifying the frozen input/report. This receipt is not a second independent assessment, a new theorem, or a whole source/manuscript/PDF review."
+}

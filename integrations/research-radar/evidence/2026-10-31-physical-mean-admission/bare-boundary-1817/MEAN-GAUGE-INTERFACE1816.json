@@ -1,0 +1,79 @@
+{
+  "kind": "Primary-source mean/gauge interface intake following1815; no new theorem, physical counterexample, review or parameter recipe",
+  "at": "2026-11-01T02:42:37.206156+00:00",
+  "sources": [
+    {
+      "path": "C:\\Users\\lluis\\Documents\\CodexYangMillsAutopilot\\runtime\\sources\\primary\\balabanfusion.pdf",
+      "sha256": "00cc6b218dcf0e1c2884e135caa1d57b3591df036540b685e7440f30cbd4ff16",
+      "contained_source": "Averaging Operations for Lattice Gauge Theories, CMP98,17-51",
+      "doi": "10.1007/BF01211042",
+      "text_pages": [
+        24,
+        25,
+        26,
+        27,
+        28
+      ],
+      "visual_pages": [
+        28
+      ],
+      "visual_pdf_zero_index": 305
+    },
+    {
+      "path": "C:\\Users\\lluis\\Documents\\CodexYangMillsAutopilot\\runtime\\sources\\primary\\balaban-rg-I-cmp109-1104116842.pdf",
+      "sha256": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+      "doi": "10.1007/BF01215223",
+      "text_pages": [
+        252,
+        253,
+        254
+      ],
+      "visual_pages": []
+    }
+  ],
+  "question": "Can the old gauge change be treated as leaving the leading coarse average exactly fixed, permitting a direct physical covariance import?",
+  "source_findings": [
+    {
+      "locator": "CMP98 pp27-28, preceding(61), then(62)-(63)",
+      "reading_level": "selected definitions and derivation read, p28 visually verified; not a full proof audit",
+      "content": "The source deliberately introduces a background-dependent change of gauge. Its discussion distinguishes approximate preservation of the leading Q0 average from the exact new averaging definition after the change. Equation63 contains both endpoint gauge factors, and the later89 packages that new operation.",
+      "deduplication": "1815 located the full derivative124 and leading125; this intake follows why the extra terms appear, rather than re-reading them as a new estimate."
+    },
+    {
+      "locator": "CMP98 p28, displayed gauge variation before(61)",
+      "reading_level": "selected displayed identity and surrounding hypotheses read",
+      "content": "For the linearized gauge variation A -> A-D_V0 lambda, Q0 changes by an initial endpoint site average minus the terminal transported site average. The terminal transport includes a background loop adjoint that cannot be replaced by the identity merely from regularity. The source calls the preservation approximate.",
+      "limit": "The linearized Lie-algebra identity is not the exact finite nonlinear gauge transformation of A. No new nonlinear approximation order or constant is asserted."
+    },
+    {
+      "locator": "CMP109 pp252-254(0.3)-(0.4),(0.11)-(0.14)",
+      "reading_level": "selected definitions/statements read, no complete proof audit",
+      "content": "The physical construction changes the contour family for Euclidean symmetry and introduces averaged root contours and exponential gauge fixing. The statement extending the Averaging Operations results does not provide an equality of the old and new pointwise kernels.",
+      "limit": "The two physical mean versions remain separate; no new universal equivalence or counterexample is claimed."
+    }
+  ],
+  "linearized_residual_dictionary": {
+    "fixed_data": "Use the OLD source blocks, paths, V0 and Ad convention only. This is not yet an old-to-physical centered-block conversion.",
+    "notation": "For the terminal x_prime in B(c_plus), let T_x=Ad[V0(Gamma_(c_minus,x) union (-c))], H_c=Ad[V0(c)], and lambda_plus(x_prime)=(R_(0,c_plus) lambda)(x_prime). Weights are the original L^-d. The loop composition and adjoints retain the order in the p28 display.",
+    "full_linearized_change": "Q0(A-D_V0 lambda)(c)-Q0 A(c) = (Q0_prime lambda)(c_minus) - sum_(x_prime in B(c_plus)) L^-d T_x H_c lambda_plus(x_prime).",
+    "endpoint_zero_case": "When Q0_prime lambda=0 at both endpoints, the same linearized change is -sum L^-d (T_x-I) H_c lambda_plus(x_prime). This is obtained by subtracting H_c times the terminal zero average; no commutation of T_x and H_c is used.",
+    "meaning": "A zero site-average gauge parameter alone does not authorize dropping this residual in a non-flat source background. One must retain the exact map and its derivative/current, or prove the appropriate cancellation or quantitative comparison on the actual family.",
+    "not_inferred": "Nonidentity of some loop does not prove this sum is nonzero for a given lambda; central holonomy has trivial adjoint, and cancellations can occur. No actual admissible non-flat numerical counterexample has been supplied. The residual may vanish in special backgrounds. No Ward identity of the full correctly transformed constraint or gauge-invariant observable is refuted.",
+    "operator_guard": "This Q0 is the leading old path average125, not the full derivative124, not the site average Q0_prime, not the fixed physical P=LQ, not its selected reconstruction C_rec, and not a covariance. The exact transformed constraint has its own endpoint/gauge factors."
+  },
+  "mechanism": "The background loop transports explain why replacing the gauge can modify the coarse constraint and its current. A covariance import must transport the mean/constraint/current and gauge density together. Matching support alone1814 or dropping to a flat leading average does not perform that operation.",
+  "hypotheses_and_limits": "Original small-field background and logarithm domains, old paths, branch choices and Lie pairings retained. No same-family inverse bound, actual source regularity witness, old-centered coordinate map, full K_C coverage or nonzero physical normalizer is supplied.",
+  "falsifier": "For any proposed exact gauge-preservation shortcut, evaluate the displayed residual with its actual admitted background, paths and parameter. A nonzero value rejects that shortcut; a zero value for one parameter/background does not establish the uniform physical import. No new source theorem is challenged.",
+  "levels": {
+    "literature": "Source definitions and displayed linearized variation located and read",
+    "formal": "No formal proof/build audit",
+    "heuristic": "Transporting all mean/current/gauge factors is the admission route to examine",
+    "speculative": "No claim that this route supplies the physical uniform theorem"
+  },
+  "scope_guard": "No new review or score, no repeat of1814 or1645, no manuscript edit or standalone lemma paper. Keep this source synthesis in the existing dossier for one substantive consolidation. The frozen1814 input and report remain unchanged; its post-shell correction and12 objections survive.",
+  "execution_history": "An initial inline PowerShell preparation command failed at shell parsing before execution or file/state mutation. The preparation was moved to an explicit apply_patch Python script and completed. This failure is preserved; no review restart or hidden repair of an evaluated artifact. Primary PDF text/render stayed in tool output or memory, no foreign corpus archived.",
+  "physical_admission": false,
+  "candidate1642_admitted": false,
+  "new_review": false,
+  "new_paper": false
+}
