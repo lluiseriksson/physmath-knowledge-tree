@@ -1,0 +1,52 @@
+{
+  "at": "2026-11-01T07:39:09.726546+00:00",
+  "input": {
+    "path": "C:\\Trabajo\\airr\\2026-11-01_execution1879\\FLAT-COLLAR-INITIAL-TRACE1879.json",
+    "sha256": "6c9f7588eafaac81beeda7b64e8f8614d94ceec22f229c7aa6b6e41263896eff"
+  },
+  "bindings": [
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-convergent-cmp119-from-fusion.pdf",
+      "sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+      "locators": "243 bare kernel and compact group integral;245-249 exact first-step partitions, original proper Omega1, constrained minimum1.12, free-row selected elimination1.14-1.15;250-254 original shell and density1.18-1.30"
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/cmp102_variational/1104114383.pdf",
+      "sha256": "838056b5c578f81d058deb3d394c66d934690e3b94c6cf2956534ec6d211b541",
+      "locators": "277-280 definitions1-7, nonempty regular fixed-average space versus data regularity and Theorem1. Do not bypass the incident-plaquette missing-bond issue by an arbitrary global completion."
+    },
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-rg-I-cmp109-1104116842.pdf",
+      "sha256": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+      "locators": "252-255 actual means0.4/0.12, root contours, gauge-fixing and small-field kernel. All row paths stay in their endpoint blocks and interface on the original chosen convention."
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1535/LAW-VERSION1535.json",
+      "sha256": "f668b5b57350dcdf9d60b579be927b260d9aaf2138ce4667462d0af4c6ca8388"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1559/LAW-BINDING1559.json",
+      "sha256": "a78244cb62773f907346968b16470892a00f1405219d0e9752f17b578af806dd"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-11-01_execution1808/ASSESSMENT-RECEIPT1808.json",
+      "role": "Existing exact local reconstruction/free-row and H_eff qualifications; not rereview of its prior report. Hash supplied in frozen manifest.",
+      "sha256": "4aae42a5938343ee13a69a1814a61fbc1acd14ed972fa12863b436ccd867356d"
+    },
+    {
+      "path": "D:/Proyectos/airr-investigacion/2026-11-01_localized-mixed-data1826/ASSESSMENT-RECEIPT1826.json",
+      "role": "Keep F10 and source partial-data/ambient-extension distinctions. Existing assessment not reopened; hash supplied in manifest.",
+      "sha256": "6b99a097fc673f71599f2487c46c632c49f9ef78309813ded80d56d3555ce655"
+    },
+    {
+      "path": "D:/Proyectos/airr-investigacion/2026-11-01_gamma-guard-correction1872/GAMMA-GUARD-CORRECTION1872.json",
+      "role": "gamma=0 near0; old1867 compact-nonzero-support proof withdrawn. No use of that proof. Hash supplied in manifest.",
+      "sha256": "ed98bd0c6bc92947594121a9433180e06b99e681a4e29e408bb6b74e64fa21a4"
+    }
+  ],
+  "requested_model": "gpt-6-astra",
+  "requested_effort": "xhigh",
+  "requested_context": "separate fork none",
+  "effective_identity_effort_isolation_independence_authenticated": false,
+  "one_assessment_no_score_no_restart": true
+}
