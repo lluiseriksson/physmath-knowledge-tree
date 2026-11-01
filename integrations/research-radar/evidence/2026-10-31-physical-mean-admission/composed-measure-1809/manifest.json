@@ -1,0 +1,25 @@
+{
+  "scope": "Exact own input, complete unscored assessment and controlling receipt. All13 components, five adverse qualifications and18 falsifier tests retained. No foreign PDF/body, private manuscript body, credential or corpus.",
+  "files": [
+    {
+      "path": "PHYSICAL-COMPOSED-RECONSTRUCTION1808.json",
+      "sha256": "0022ce4ee9dad8dc6fa08b521354acfab2e2bdc8e7ac1a6223190f977863d38b",
+      "bytes": 13913
+    },
+    {
+      "path": "ASSESSMENT1808.json",
+      "sha256": "673209e06fea71e3441a1998b0bbb36d5b51f6500b08628800646e7877ab20e3",
+      "bytes": 36181
+    },
+    {
+      "path": "ASSESSMENT-RECEIPT1808.json",
+      "sha256": "4aae42a5938343ee13a69a1814a61fbc1acd14ed972fa12863b436ccd867356d",
+      "bytes": 27879
+    }
+  ],
+  "physical_admission": false,
+  "full_KC_coverage": false,
+  "count_increment": 0,
+  "identity": "Requested Astra/xhigh; effective model, effort and external independence unauthenticated.",
+  "note": "The input is unchanged; the receipt supplies explicit source-H, BCH, domain and convention qualifications. Source files named in provenance grant no access or redistribution permission."
+}

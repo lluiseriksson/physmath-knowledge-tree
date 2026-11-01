@@ -1,0 +1,738 @@
+{
+  "execution": 1809,
+  "assessment_date": "2026-11-01",
+  "assessment_kind": "One bounded editorial-delivery assessment of the appended composed-measure section; no mathematical re-review",
+  "identity_and_independence": {
+    "requested_model_and_effort": "GPT-6 Astra / xhigh",
+    "effective_model_identity_authenticated": false,
+    "effective_reasoning_effort_authenticated": false,
+    "independence_authenticated": false,
+    "statement": "Requested execution labels only. Actual identity, effort and external independence are unauthenticated. This is one delegated editorial assessment, not peer review."
+  },
+  "disposition": {
+    "code": "FAITHFUL_BOUNDED_EDITORIAL_DELIVERY_NO_REQUIRED_CORRECTIONS",
+    "verdict": "The exact proposed append is a faithful, qualified synthesis of the frozen 1808 input, complete report and controlling receipt when read with its explicitly linked complete evidence package. The earlier baseline is byte-identical. No required editorial correction was found within this bounded scope.",
+    "acceptance_scope": "Editorial fidelity and exact local artifact packaging only. The prior mathematical disposition is reported, not reassessed or newly certified.",
+    "required_corrections": [],
+    "physical_admission": false,
+    "full_original_KC_coverage_proved": false,
+    "uniform_history_admission_proved": false,
+    "normalized_physical_marked_completion_proved": false,
+    "connected_or_history_completion_proved": false,
+    "candidate1642_closed": false,
+    "new_formal_result": false,
+    "novelty_established": false,
+    "manuscript_or_source_theorem_assessed": false,
+    "source_candidate_increment": 0,
+    "qualification": "All 13 components and all 18 tests are preserved in full in the linked unchanged report and receipt. The prose is an accurate condensation, not a verbatim enumeration or a new execution of those tests."
+  },
+  "scope_and_method": {
+    "target_snapshot": "C:/Trabajo/airr/2026-11-01_execution1809/PUBLIC-NOTE-PROPOSED1809A.txt",
+    "target_section": "One composed local measure, with its physical admission still open (1808)",
+    "target_lines": {
+      "heading": 199,
+      "last_content": 254
+    },
+    "baseline_used_only_for_binary_prefix_comparison": true,
+    "baseline_prose_reassessed": false,
+    "substantive_evidence_read_in_full": [
+      "PHYSICAL-COMPOSED-RECONSTRUCTION1808.json",
+      "ASSESSMENT1808.json",
+      "ASSESSMENT-RECEIPT1808.json"
+    ],
+    "supplementary_packaging_read": [
+      "PUBLIC-INTEGRATION1809A.json",
+      "composed-measure-1809/manifest.json"
+    ],
+    "instructions_read": [
+      "User-supplied global AGENTS.md instructions",
+      "C:/Trabajo/physmath-knowledge-tree/physical-mean-admission1728/AGENTS.md",
+      "D:/LEEME.md"
+    ],
+    "performed": [
+      "Computed SHA-256 and byte lengths of the exact input, snapshot, baseline, delivery manifest and three evidence files.",
+      "Compared every baseline byte against the proposed snapshot prefix and decoded only the appended suffix for editorial review.",
+      "Read the full frozen 1808 input, report and controlling receipt, using the receipt's explicit qualifications without rewriting either underlying artifact.",
+      "Compared report and receipt component, adverse-qualification and falsifier arrays structurally and mapped each item to the proposed append or its explicit complete-evidence link.",
+      "Checked local relative evidence destinations and manifest bindings. No public-host availability or deployment claim is made."
+    ],
+    "excluded": [
+      "Re-derivation or rerunning of the mathematics or 1808 falsifier tests",
+      "Source-theorem proof audit or source-PDF reading",
+      "Earlier assessment re-review",
+      "Whole-note, private-manuscript, manuscript-PDF or Capacity review",
+      "Novelty or publication-priority assessment",
+      "Independent verification of current source/candidate registry totals or prior release history",
+      "Build, Lean, publication, deployment or live-site assessment"
+    ],
+    "source_bodies_or_private_manuscript_opened_or_copied": false,
+    "external_web_or_source_links_opened": false,
+    "statement": "References to source pages and private working notes are checked only for faithful transmission from the supplied 1808 artifacts; they are not independently authenticated here."
+  },
+  "exact_bindings": {
+    "integration_input": {
+      "path": "C:/Trabajo/airr/2026-11-01_execution1809/PUBLIC-INTEGRATION1809A.json",
+      "bytes": 1992,
+      "sha256_expected": "a11ae66ebc1364bc6fb52ff4c63321dd7dfdced953c00f4f5e392e443cba5858",
+      "sha256_observed": "a11ae66ebc1364bc6fb52ff4c63321dd7dfdced953c00f4f5e392e443cba5858",
+      "match": true
+    },
+    "snapshot": {
+      "path": "C:/Trabajo/airr/2026-11-01_execution1809/PUBLIC-NOTE-PROPOSED1809A.txt",
+      "bytes": 60438,
+      "sha256_expected": "426d5c029e1f004a9131d9ed1e722fa57af2afbb7fe74454de5da7906ee14f69",
+      "sha256_observed": "426d5c029e1f004a9131d9ed1e722fa57af2afbb7fe74454de5da7906ee14f69",
+      "match": true
+    },
+    "baseline": {
+      "path": "C:/Trabajo/airr/2026-11-01_execution1809/PUBLIC-NOTE-BEFORE1809.txt",
+      "bytes": 49280,
+      "sha256_expected": "7a95661745602bd3cda5f4f0eccdfe0321466d2056365cc8d61b19235a27b020",
+      "sha256_observed": "7a95661745602bd3cda5f4f0eccdfe0321466d2056365cc8d61b19235a27b020",
+      "match": true
+    },
+    "delivery_manifest": {
+      "path": "C:/Trabajo/physmath-knowledge-tree/physical-mean-admission1728/integrations/research-radar/evidence/2026-10-31-physical-mean-admission/composed-measure-1809/manifest.json",
+      "sha256_expected": "ce7d5a03d78fd983707cdf052f5d4bc4cf63b1e60c38e8f3a95b4a60bdc836ee",
+      "sha256_observed": "ce7d5a03d78fd983707cdf052f5d4bc4cf63b1e60c38e8f3a95b4a60bdc836ee",
+      "match": true,
+      "local_relative_link_resolves": true,
+      "manifest_physical_admission": false,
+      "manifest_full_KC_coverage": false,
+      "manifest_count_increment": 0
+    },
+    "evidence_directory": "C:/Trabajo/physmath-knowledge-tree/physical-mean-admission1728/integrations/research-radar/evidence/2026-10-31-physical-mean-admission/composed-measure-1809",
+    "evidence_files": [
+      {
+        "path": "PHYSICAL-COMPOSED-RECONSTRUCTION1808.json",
+        "bytes_expected": 13913,
+        "bytes_observed": 13913,
+        "sha256_expected": "0022ce4ee9dad8dc6fa08b521354acfab2e2bdc8e7ac1a6223190f977863d38b",
+        "sha256_observed": "0022ce4ee9dad8dc6fa08b521354acfab2e2bdc8e7ac1a6223190f977863d38b",
+        "match": true,
+        "local_relative_link_resolves": true
+      },
+      {
+        "path": "ASSESSMENT1808.json",
+        "bytes_expected": 36181,
+        "bytes_observed": 36181,
+        "sha256_expected": "673209e06fea71e3441a1998b0bbb36d5b51f6500b08628800646e7877ab20e3",
+        "sha256_observed": "673209e06fea71e3441a1998b0bbb36d5b51f6500b08628800646e7877ab20e3",
+        "match": true,
+        "local_relative_link_resolves": true
+      },
+      {
+        "path": "ASSESSMENT-RECEIPT1808.json",
+        "bytes_expected": 27879,
+        "bytes_observed": 27879,
+        "sha256_expected": "4aae42a5938343ee13a69a1814a61fbc1acd14ed972fa12863b436ccd867356d",
+        "sha256_observed": "4aae42a5938343ee13a69a1814a61fbc1acd14ed972fa12863b436ccd867356d",
+        "match": true,
+        "local_relative_link_resolves": true
+      }
+    ],
+    "receipt_input_and_report_bindings_match": true
+  },
+  "baseline_preservation": {
+    "prefix_compared_bytes": 49280,
+    "every_compared_byte_identical": true,
+    "first_difference": null,
+    "appended_bytes": 11158,
+    "append_sha256": "c289f2aa4348979ec2da8c6c224c5aa61811e52ca63b0571bb766d120e856019",
+    "append_begins_at_zero_based_byte": 49280,
+    "append_begins_at_line": 197,
+    "finding": "The snapshot consists of the exact 49,280-byte baseline followed by the 11,158-byte new suffix. No earlier byte was edited, deleted or reordered.",
+    "limit": "This proves binary preservation of the supplied baseline. It is not approval of older prose or authentication of earlier assessment contents."
+  },
+  "complete_evidence_retention": {
+    "report_component_count": 13,
+    "receipt_component_count": 13,
+    "all_component_objects_structurally_identical": true,
+    "report_adverse_qualification_count": 5,
+    "receipt_adverse_qualification_count": 5,
+    "all_adverse_objects_structurally_identical": true,
+    "report_falsifier_test_count": 18,
+    "receipt_falsifier_test_count": 18,
+    "all_falsifier_objects_structurally_identical": true,
+    "public_prose_full_artifact_links_line": 247,
+    "finding": "The claim that the complete report retains the 13 components, five adverse qualifications and 18 tests is verified. The receipt retains the complete arrays as well as its controlling disposition. Neither file has been silently replaced by a favorable summary.",
+    "prose_condensation_limit": "Not every ancillary condition is repeated verbatim in the prose. In particular explicit positive-g0 wording, branch multiplicity, the nonholomorphic-guard prohibition, the fixed C_delta/A0 ratio and norm-conversion details remain fully recorded in the exact linked report and receipt. Their omission from the condensed narrative does not become an assertion that those conditions are paid."
+  },
+  "component_fidelity": [
+    {
+      "id": "C01_original_physical_reconstruction",
+      "snapshot_lines": [
+        203,
+        205,
+        207,
+        209,
+        211,
+        213
+      ],
+      "disposition": "FAITHFULLY_RETAINED",
+      "finding": "Original C,N and pivots are retained in B=g0 C R(a), x=N(B), U_A=exp(i x)U1_A and U_F=V0. Selected coordinates remain reconstructed outputs; the ambient straightening premise is explicit. The added reverse-link transport agrees with the report's orientation rule.",
+      "limit_preserved": "No replacement of selected outputs by a localized minimum and no full-domain existence claim."
+    },
+    {
+      "id": "C02_P_Q_L",
+      "snapshot_lines": [
+        203,
+        221,
+        223
+      ],
+      "disposition": "FAITHFULLY_RETAINED",
+      "finding": "Undivided P, Q=P/L, real dimension mr, the L^(-mr) conversion and flat L^((d-1)mr) calibration are transmitted accurately.",
+      "limit_preserved": "The calibration is expressly not a nonflat bound or full normalizer identity; source normalizers are retained rather than reidentified from their names."
+    },
+    {
+      "id": "C03_shell_source_and_H",
+      "snapshot_lines": [
+        205,
+        207,
+        209,
+        215
+      ],
+      "disposition": "FAITHFULLY_RETAINED_WITH_RECEIPT_QUALIFICATION",
+      "finding": "The free-shell map uses H_eff, its background definition, the visible L^(-1) source scale and gamma=1 free-link compensation. The unscaled commuting diagnostic is expressly not a source-admitted counterexample.",
+      "limit_preserved": "An ambiguous unscaled H is not silently admitted, and the prior unreviewed notes are not assigned a novelty claim."
+    },
+    {
+      "id": "C04_shell_jacobian",
+      "snapshot_lines": [
+        221,
+        225,
+        231,
+        233,
+        235
+      ],
+      "disposition": "FAITHFULLY_RETAINED",
+      "finding": "Absolute real shell determinants, the exact Log/product derivative, its guarded scalar nonsingularity condition and the constant-guard Haar identity agree with the report and receipt.",
+      "limit_preserved": "BCH ambiguity remains adverse evidence; uniform nonsingularity and image coverage are explicitly open."
+    },
+    {
+      "id": "C05_shell_inner_geometry",
+      "snapshot_lines": [
+        237,
+        243
+      ],
+      "disposition": "FAITHFULLY_RETAINED",
+      "finding": "The assertion is tied to the source's buffered Lambda1/S1 construction and shrinking Lambda1. It yields R_in=a_in in that original geometry.",
+      "limit_preserved": "A shell/inner overlap in the actual original index geometry remains a falsifier. No enumeration of an unspecified history is claimed."
+    },
+    {
+      "id": "C06_fixed_KC",
+      "snapshot_lines": [
+        237,
+        243,
+        254
+      ],
+      "disposition": "FAITHFULLY_RETAINED_WITH_RELATIVE_DOMAIN_QUALIFICATION",
+      "finding": "The fixed C_delta, p_cut and declared norm remain. The indicator identity is relative to D_R, and a conditional chart contribution is K_C intersect D_(a_out).",
+      "limit_preserved": "Neither product-domain structure nor full K_C coverage is inferred; original cutoffs and complementary contributions survive."
+    },
+    {
+      "id": "C07_measure_prefactors",
+      "snapshot_lines": [
+        217,
+        219,
+        221,
+        247
+      ],
+      "disposition": "FAITHFULLY_RETAINED",
+      "finding": "The first density, n Haar versus m group-delta count, sigma0^(n-m), g0^((n-m)r), absolute real determinants and absence of an extra Gram surface factor match the exact evidence.",
+      "limit_preserved": "The overall admitted-branch/support restriction remains. Positive coupling and multiple-preimage bookkeeping are fully retained in the linked C07 rather than rederived here."
+    },
+    {
+      "id": "C08_gauge_counts_and_source_v",
+      "snapshot_lines": [
+        213,
+        223
+      ],
+      "disposition": "FAITHFULLY_RETAINED",
+      "finding": "The coarse-site and coarse-bond counts are distinguished. CMP119's exponential gauge weight is preserved; CMP102 axial-delta deletion is not imported. Source-v Haar/Jacobian double counting is prohibited.",
+      "limit_preserved": "No z, z^(0), exterior delta, sector or original normalizer is set to 1 or newly numerically evaluated."
+    },
+    {
+      "id": "C09_detDN_Pbeta_identity",
+      "snapshot_lines": [
+        203,
+        225
+      ],
+      "disposition": "FAITHFULLY_RETAINED",
+      "finding": "The derivation is explicitly from the ambient identity on an open neighborhood, with N_S(B)=B_S and F'_beta DN_(beta,beta)=P_beta. Its determinant relation is transmitted accurately.",
+      "limit_preserved": "It is not presented as differentiation of an identity available only on the constraint set."
+    },
+    {
+      "id": "C10_raw_group_cancellation",
+      "snapshot_lines": [
+        225,
+        227,
+        229
+      ],
+      "disposition": "FAITHFULLY_RETAINED_WITH_VELOCITY_CONVENTION",
+      "finding": "Left input increments, right output velocity, right-trivialized J, selected Haar cancellation and the second representation of the same density are explicit.",
+      "limit_preserved": "The same support is retained; A_c inverses are replacements rather than extra factors. Other conventions need adjoint transports, and no uniform nonflat lower bound is claimed."
+    },
+    {
+      "id": "C11_inner_outer_normalization",
+      "snapshot_lines": [
+        223,
+        239,
+        241,
+        247
+      ],
+      "disposition": "FAITHFULLY_RETAINED",
+      "finding": "Shell and free exterior Haar factors are outside the fixed-exterior inner integral, cancel only in the identical nonzero inner ratio, and remain in the history measure and its variations. A_c is generally inner-dependent.",
+      "limit_preserved": "No moving-background derivative or full-log-normalizer conclusion is asserted. The explicit P_beta(U1)/z^(0)(V) variation bookkeeping remains fully available in linked C11."
+    },
+    {
+      "id": "C12_original_weight_and_phi",
+      "snapshot_lines": [
+        217,
+        223,
+        237,
+        239
+      ],
+      "disposition": "FAITHFULLY_RETAINED",
+      "finding": "Phi retains the original reconstructed weight, indicators, sectors and consistently placed constants. Spatial phi1, shell gamma and free radius C_delta remain distinct.",
+      "limit_preserved": "No indicator-removal estimate, Gaussian replacement or cutoff alteration is inferred from a measure identity."
+    },
+    {
+      "id": "C13_complete_words_marks",
+      "snapshot_lines": [
+        211,
+        213,
+        241
+      ],
+      "disposition": "FAITHFULLY_RETAINED",
+      "finding": "Complete ordered words retain selected outputs, inverses, roots and endpoint frames. Pure raw-exterior support is distinguished from merely having an outside root. Finite-source domination retains absolute-integrability and real-word boundedness hypotheses.",
+      "limit_preserved": "Only the unnormalized chart integral may be source-differentiated under those conditions. Full normalized logarithms, cumulants, history bounds, moving-background derivatives and full physical marked equality remain open."
+    }
+  ],
+  "all_five_adverse_qualifications_preserved": [
+    {
+      "id": "A1_H_scale",
+      "snapshot_lines": [
+        215,
+        247
+      ],
+      "original_severity": "Required source-convention clarification",
+      "finding": "The receipt's H_eff=(1/i)Log(U1 U_local^(-1)) and H_eff=L^(-1)H_operator on the matching branch are explicitly incorporated into the exposition. The frozen input is not rewritten.",
+      "adverse_status": "RETAINED",
+      "still_not_established": "Unqualified identification of an unscaled source shorthand or actual uniform background matching.",
+      "required_new_correction": null
+    },
+    {
+      "id": "A2_BCH_sign",
+      "snapshot_lines": [
+        231,
+        233,
+        235,
+        247
+      ],
+      "original_severity": "Printed formula ambiguity retained",
+      "finding": "The opposite printed remainder signs remain unresolved. The exact Log/product derivative is used without inventing an erratum or declaring a source theorem false.",
+      "adverse_status": "RETAINED",
+      "still_not_established": "Resolution of the source's abbreviated BCH conventions.",
+      "required_new_correction": null
+    },
+    {
+      "id": "A3_domain_product",
+      "snapshot_lines": [
+        237,
+        247
+      ],
+      "original_severity": "Logical qualification",
+      "finding": "Relative indicator invariance and K_C intersect D_(a_out) replace any unrestricted-product reading. Non-product domains, missing full coverage and complementary contributions are explicit.",
+      "adverse_status": "RETAINED",
+      "still_not_established": "Full K_C admission or a product chart.",
+      "required_new_correction": null
+    },
+    {
+      "id": "A4_left_right_dexp",
+      "snapshot_lines": [
+        225,
+        229,
+        233,
+        247
+      ],
+      "original_severity": "Convention specification",
+      "finding": "Input and output velocity conventions and right-trivialized J are specified; alternative conventions require the appropriate adjoint transports.",
+      "adverse_status": "RETAINED",
+      "still_not_established": "Any convention-independent matrix formula without its transports.",
+      "required_new_correction": null
+    },
+    {
+      "id": "A5_original_cutoff_normalization",
+      "snapshot_lines": [
+        237,
+        247
+      ],
+      "original_severity": "Existing unresolved source issue preserved",
+      "finding": "The original printed A1/A0 discrepancy remains unresolved and the fixed LAW1535/1559 threshold is retained.",
+      "adverse_status": "RETAINED",
+      "still_not_established": "Resolution of both printed prefactors or a new threshold-ratio admission.",
+      "required_new_correction": null
+    }
+  ],
+  "all_18_falsifier_tests_fidelity": [
+    {
+      "id": "T01",
+      "test": "Missing g0 or real dimension",
+      "snapshot_lines": [
+        203,
+        219,
+        221,
+        227
+      ],
+      "finding": "Correct pr=(n-m)r factor is preserved; explicit positive-g0 premise remains in the linked report.",
+      "disposition": "RETAINED_NOT_RERUN"
+    },
+    {
+      "id": "T02",
+      "test": "Missing sigma0",
+      "snapshot_lines": [
+        217,
+        219,
+        221
+      ],
+      "finding": "n fine Haar factors less m group deltas give sigma0^(n-m); no missing scalar introduced.",
+      "disposition": "RETAINED_NOT_RERUN"
+    },
+    {
+      "id": "T03",
+      "test": "Missing P/Q factor L",
+      "snapshot_lines": [
+        203,
+        221
+      ],
+      "finding": "L^(-mr) and the correct flat raw factor are explicit.",
+      "disposition": "RETAINED_NOT_RERUN"
+    },
+    {
+      "id": "T04",
+      "test": "Missing shell/background scale L",
+      "snapshot_lines": [
+        207,
+        215
+      ],
+      "finding": "H_eff and the L^(-1) dictionary are explicit and adverse uncertainty remains.",
+      "disposition": "RETAINED_NOT_RERUN"
+    },
+    {
+      "id": "T05",
+      "test": "Missing i",
+      "snapshot_lines": [
+        203,
+        207,
+        215
+      ],
+      "finding": "The (1/i)Log and (1/(i g0))Log factors are preserved in the declared real-coordinate convention.",
+      "disposition": "RETAINED_NOT_RERUN"
+    },
+    {
+      "id": "T06",
+      "test": "Gauge sites confused with coarse rows",
+      "snapshot_lines": [
+        223
+      ],
+      "finding": "Site and bond-constraint counts are expressly distinct; z is retained.",
+      "disposition": "RETAINED_NOT_RERUN"
+    },
+    {
+      "id": "T07",
+      "test": "Double-counted inverse orientations or gauge removal",
+      "snapshot_lines": [
+        213,
+        223
+      ],
+      "finding": "Reverse links are dependent inverses and the older axial-gauge removal is not transferred.",
+      "disposition": "RETAINED_NOT_RERUN"
+    },
+    {
+      "id": "T08",
+      "test": "Changed norm or cutoff radius",
+      "snapshot_lines": [
+        203,
+        237,
+        243,
+        247
+      ],
+      "finding": "Declared original data and unchanged fixed cutoff are retained. Exact norm-conversion and C_delta/A0 ratio obligations remain in the complete linked evidence; no prose claim pays them.",
+      "disposition": "RETAINED_NOT_RERUN"
+    },
+    {
+      "id": "T09",
+      "test": "Jacobian sign or branch multiplicity",
+      "snapshot_lines": [
+        201,
+        221,
+        229,
+        235,
+        237,
+        247
+      ],
+      "finding": "Absolute determinants, same support and admitted-branch limits remain. The complete linked C07 keeps actual branch multiplicities; local nonsingularity is not promoted to global coverage.",
+      "disposition": "RETAINED_NOT_RERUN"
+    },
+    {
+      "id": "T10",
+      "test": "Double-counted raw selected determinant",
+      "snapshot_lines": [
+        225,
+        227,
+        229
+      ],
+      "finding": "The two densities are explicitly alternative representations and must not be multiplied together.",
+      "disposition": "RETAINED_NOT_RERUN"
+    },
+    {
+      "id": "T11",
+      "test": "Selected outputs replaced by localized minimum",
+      "snapshot_lines": [
+        211,
+        213,
+        241
+      ],
+      "finding": "The original C,N reconstruction and selected links in complete words are retained.",
+      "disposition": "RETAINED_NOT_RERUN"
+    },
+    {
+      "id": "T12",
+      "test": "C-infinity guard treated as analytic",
+      "snapshot_lines": [
+        209,
+        241,
+        247
+      ],
+      "finding": "The guard is described as real smooth and source differentiation is conditional on the real reconstructed integral. No holomorphic-guard claim is made; the explicit prohibition remains in the full linked ledger.",
+      "disposition": "RETAINED_NOT_RERUN"
+    },
+    {
+      "id": "T13",
+      "test": "Shell-inner overlap",
+      "snapshot_lines": [
+        237,
+        243
+      ],
+      "finding": "The original buffered geometry and shrinking preserve separation; an actual overlap remains a falsifier.",
+      "disposition": "RETAINED_NOT_RERUN"
+    },
+    {
+      "id": "T14",
+      "test": "K_C indicator invariance promoted to full admission",
+      "snapshot_lines": [
+        237,
+        243,
+        254
+      ],
+      "finding": "The relative-domain restriction, chart truncation and retained complements explicitly prevent that promotion.",
+      "disposition": "RETAINED_NOT_RERUN"
+    },
+    {
+      "id": "T15",
+      "test": "Exterior factors omitted from outer normalization",
+      "snapshot_lines": [
+        239
+      ],
+      "finding": "Only the identical nonzero conditional inner ratio cancels them; outer/history factors and variations remain.",
+      "disposition": "RETAINED_NOT_RERUN"
+    },
+    {
+      "id": "T16",
+      "test": "Unchanged Phi or original phi1 lost",
+      "snapshot_lines": [
+        217,
+        223,
+        237,
+        239
+      ],
+      "finding": "Original weight and indicators remain; spatial phi1, gamma and C_delta are distinct.",
+      "disposition": "RETAINED_NOT_RERUN"
+    },
+    {
+      "id": "T17",
+      "test": "Original rooted/open word endpoints lost",
+      "snapshot_lines": [
+        213,
+        241
+      ],
+      "finding": "All ordered links, inverse orientations, roots and endpoint frames are expressly retained.",
+      "disposition": "RETAINED_NOT_RERUN"
+    },
+    {
+      "id": "T18",
+      "test": "Positive denominator or log inferred from formal formula",
+      "snapshot_lines": [
+        239,
+        241,
+        243
+      ],
+      "finding": "Absolute integrability is not converted into nonzero full normalization, a normalized log or connected/history estimates.",
+      "disposition": "RETAINED_NOT_RERUN"
+    }
+  ],
+  "open_gate_fidelity": [
+    {
+      "gate": "Actual mean/log neighborhoods and original reference pivots",
+      "location": "Lines 201, 203, 243 and the linked fixed premises",
+      "status": "REMAINS_A_PREMISE_OR_OPEN_PHYSICAL_OBLIGATION",
+      "finding": "An actually admitted real branch is assumed; universal existence is not announced."
+    },
+    {
+      "gate": "Uniform N/C/R one-to-one charts and full original K_C coverage",
+      "location": "Lines 235, 237, 243, 254",
+      "status": "OPEN",
+      "finding": "Uniform nonsingularity, image coverage and complete cutoff admission are explicitly unpaid."
+    },
+    {
+      "gate": "Effective H on actual source backgrounds and source190/Hsharp",
+      "location": "Lines 215, 243 and controlling receipt next",
+      "status": "OPEN",
+      "finding": "The scale dictionary is stated, but source-background/mesh matching and amplitude comparison remain work to do."
+    },
+    {
+      "gate": "P1 and physical local section/localization",
+      "location": "Line 243 and complete linked evidence",
+      "status": "OPEN",
+      "finding": "No determining-set or localization premise is eliminated by the local identity."
+    },
+    {
+      "gate": "Fixed threshold ratio, norm conversions and original indicator removals",
+      "location": "Lines 237, 243, 247 and the report frozen_law/premises_and_open_gates",
+      "status": "OPEN",
+      "finding": "The threshold stays fixed; A1/A0 remains unresolved. The exact C_delta/A0 ratio and all original indicator-removal obligations remain in the complete evidence."
+    },
+    {
+      "gate": "One common parameter family, simultaneous absorptions and coupling amplitudes",
+      "location": "Line 243 and controlling receipt next",
+      "status": "OPEN",
+      "finding": "No failed shared budget is relabeled a local-identity refutation or declared paid; beta_ref/g1_ref matching is retained by the linked full report."
+    },
+    {
+      "gate": "Off-chart/complementary contributions and full outer/history normalizer",
+      "location": "Lines 223, 237, 239, 243",
+      "status": "OPEN",
+      "finding": "Complements, normalization factors and history variations remain."
+    },
+    {
+      "gate": "Moving-background/domain derivatives",
+      "location": "Line 241 and linked C11/C13",
+      "status": "OPEN",
+      "finding": "Finite-source differentiation is not used to claim differentiation in V or moving domains."
+    },
+    {
+      "gate": "Nonzero full marked/unmarked denominators and normalized physical marked equality",
+      "location": "Lines 239, 241, 243, 254",
+      "status": "OPEN",
+      "finding": "Only conditional unnormalized chart differentiation is transmitted; no full normalized marked result is claimed."
+    },
+    {
+      "gate": "Connected cumulants, connected sums and uniform histories",
+      "location": "Lines 241, 243, 254",
+      "status": "OPEN",
+      "finding": "These estimates are expressly left for later work."
+    },
+    {
+      "gate": "Physical admission and candidate1642",
+      "location": "Heading, lines 201, 243, 254 and controlling receipt disposition",
+      "status": "OPEN",
+      "finding": "No physical gate or candidate is closed by this append or this editorial assessment."
+    }
+  ],
+  "claims_and_review_context": {
+    "novelty": {
+      "finding": "No novelty or priority claim is made. Line 215 expressly acknowledges earlier unreviewed working notes' effective output scale; this is supported by receipt prior_notes_context, not by reading those notes.",
+      "opening_sentence_interpretation": "The missing symbolic composition is described relative to the preceding public extension. It is not presented as a first discovery relative to the private manuscript.",
+      "manuscript_claim_made": false,
+      "private_notes_independently_checked": false
+    },
+    "assessment_identity": {
+      "snapshot_line": 249,
+      "finding": "Requested Astra/xhigh is explicitly a requested label, and effective identity, effort and external independence are unauthenticated. The text does not claim peer review."
+    },
+    "prior_reviews": {
+      "finding": "The append confines the 1808 assessment to one local calculation and disclaims whole-note, manuscript/PDF, Capacity and source-theorem review. Earlier note bytes are demonstrably preserved.",
+      "limit": "Earlier reports themselves were not opened or reauthenticated. This assessment does not recertify their status, contents or release checks."
+    },
+    "confidence_layers": {
+      "snapshot_lines": [
+        251,
+        252,
+        253,
+        254
+      ],
+      "finding": "Literature, heuristic, formal and speculative layers are separately labelled. The local assessed composition is not promoted to a new formal/Lean theorem, physical result or graph-confidence change."
+    },
+    "dossier_and_counts": {
+      "finding": "The append remains in the same knowledge dossier and explicitly makes no separate-paper claim. Both manifests specify zero source/candidate increment.",
+      "limit": "The absolute 120/19 registry totals are outside the three 1808 mathematical artifacts and were not independently recounted; this assessment verifies the zero-increment delivery claim, not the entire registry."
+    },
+    "source172_label": {
+      "snapshot_line": 243,
+      "finding": "The source172 label in the open-gate sentence is a cross-reference not resolved by the three 1808 artifacts. It is used only for an explicitly unmatched chart, not as a newly proven fact or admission.",
+      "limit": "No source172 dictionary or prior source assessment was audited here; the controlling gate remains the receipt's actual-source-background/mesh matching obligation.",
+      "required_correction": null
+    },
+    "publication_and_source_access": {
+      "finding": "The linked files are the author's own input, complete assessment and controlling receipt. Provenance paths and source citations do not grant source-body or private-manuscript access. No such body was read or copied in this review.",
+      "live_publication_verified": false
+    }
+  },
+  "concrete_editorial_findings": [
+    {
+      "id": "E01",
+      "kind": "Verified preservation",
+      "finding": "The old baseline is byte-identical; the new section is strictly appended."
+    },
+    {
+      "id": "E02",
+      "kind": "Verified exact delivery",
+      "finding": "Input, full report, controlling receipt and public delivery manifest match the required hashes and byte counts; the new relative links point to those exact local artifacts."
+    },
+    {
+      "id": "E03",
+      "kind": "Verified substantive fidelity",
+      "finding": "All 13 component conclusions and their central limits are represented without upgrading local equivalence to physical admission."
+    },
+    {
+      "id": "E04",
+      "kind": "Adverse evidence retained",
+      "finding": "All five qualifications survive explicitly in the prose and in complete linked arrays. Neither the H-scale diagnostic nor the BCH discrepancy is inflated into a source-admitted counterexample or theorem refutation."
+    },
+    {
+      "id": "E05",
+      "kind": "Verified complete falsifier retention",
+      "finding": "All 18 original test/outcome records remain exact in the linked report and receipt. The public summary does not imply that this editorial assessment reran them."
+    },
+    {
+      "id": "E06",
+      "kind": "Verified gate separation",
+      "finding": "Local symbolic closure is distinguished from full K_C, uniform history, physical, normalized marked and connected/history completion, all of which remain open."
+    },
+    {
+      "id": "E07",
+      "kind": "Verified review boundary",
+      "finding": "No new mathematical review, score, manuscript assessment, peer-review status or authenticated model/independence claim is introduced."
+    },
+    {
+      "id": "E08",
+      "kind": "Bounded packaging limitation",
+      "finding": "The prose is a synthesis; its full conditions and exhaustive test outcomes are supplied by the explicitly linked complete artifacts. Registry totals, source172 cross-reference, source-page truth and live publication remain outside this assessment."
+    }
+  ],
+  "required_exact_corrections": [],
+  "boundary_record": {
+    "only_file_written": "C:/Trabajo/airr/2026-11-01_execution1809/ASSESSMENT1809.json",
+    "note_edited": false,
+    "input1808_edited": false,
+    "report1808_edited": false,
+    "receipt1808_edited": false,
+    "baseline_or_snapshot_edited": false,
+    "other_files_written": false,
+    "delegated_further": false,
+    "work_location": "C:/Trabajo",
+    "durable_preservation": "Parent coordinator is responsible for D: conservation; no extra copy or destination was created by this bounded assessment."
+  },
+  "final_statement": "Accept the proposed appended section as faithful editorial delivery of the exact, qualified 1808 local result and its full adverse evidence. No exact correction is required within this scope. This is not a fresh mathematical verdict and closes no full-K_C, uniform, physical, normalized-marked, connected, history, novelty or manuscript gate."
+}
