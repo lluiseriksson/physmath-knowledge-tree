@@ -1,0 +1,11 @@
+{
+  "status": "same_fixed_Cdelta_and_reference_beta_scheme_explicit_no_law_change",
+  "previous_law_binding_sha256": "f668b5b57350dcdf9d60b579be927b260d9aaf2138ce4667462d0af4c6ca8388",
+  "original_domain": "K_C(g0)=product_free{normA<C_delta*ell^p}; C_delta fixed as1535",
+  "frozen_reference_scheme": "beta_ref and g1_ref^-2=g0^-2-beta_ref retained; no numerical value or new bounded-beta proof",
+  "exact_action": "E_(C,beta_ref)=logZ_C(V)-logZ_C(I)-beta_ref*A(U1(V))",
+  "cross_version_comparison": "If K_C subset K_D and identical other density/coordinates, E_C,betaC-E_D,betaD=log(mu_D,V(K_C))-log(mu_D,I(K_C))-(betaC-betaD)A",
+  "historical_unindexed_E1_identified": false,
+  "source_prefactor_discrepancy_resolved": false,
+  "next": "One simultaneous source-admitted geometry and unchanged-coupling parameter family before connected activity/shell transfer"
+}

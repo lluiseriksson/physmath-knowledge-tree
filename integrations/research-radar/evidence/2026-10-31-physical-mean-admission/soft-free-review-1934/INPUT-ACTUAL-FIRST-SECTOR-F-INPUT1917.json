@@ -1,0 +1,61 @@
+{
+  "execution": 1917,
+  "scope": "Bind the actual CMP119 first-sector nonlinear input to the bare F channel, before importing its polynomial estimate. This is a concrete kernel dictionary, not a declaration that the complete source theorem applies to every physical sector.",
+  "source": {
+    "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-convergent-cmp119-from-fusion.pdf",
+    "sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+    "doi": "10.1007/BF01217741",
+    "text_pages_this_execution": [
+      248,
+      249,
+      250
+    ],
+    "visual_pages_this_execution": [
+      249
+    ],
+    "reading_status": "Displayed first-sector integral, definitions and cutoff paragraph read; not whole proof audit"
+  },
+  "fixed_inputs": [
+    {
+      "path": "C:/Users/lluis/Documents/CodexYangMillsAutopilot/runtime/sources/primary/balaban-rg-I-cmp109-1104116842.pdf",
+      "sha256": "1c2d2e500fd1e6a1a7981fed259cc2354ebcf64e473fd564bfc3f2c4d7dfbe2a",
+      "reading": "printed263-265 text; selected source domain and general transform, not proof audit"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-11-01_execution1916/BARE-F-PRIMED-DOMAIN1916.json"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1535/LAW-VERSION1535.json"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1559/LAW-BINDING1559.json"
+    },
+    {
+      "path": "C:/Trabajo/airr/marked-rg-manuscript/WORKING-MANUSCRIPT.md"
+    }
+  ],
+  "actual_sector_kernel": {
+    "original_inputs": "Fix an ORIGINAL Omega1,V,V0 term of CMP1191.11-1.15 with its actual minimum U1, soft gauge weight and mean. All original exterior delta/gauge/cutoff factors and first baseline remain. The source tildeQ selected constraint is solved with its actual C and selected b0(c) outputs.",
+    "physical_coordinate": "The retained a is the original free coordinate after scaling the relative Lie field by g0 and eliminating the LINEAR selected constraints: Q_tilde C a=0. The true relative fine field entering the original group variables is K(a)=g0*C*a-h*D_tilde(g0*C*a). This identifies the native nonlinear input shape in1.19; it is not an assertion that every later source C or mean equals this one.",
+    "nonlinear_potential": "The actual nonlinear exponent in1.15 is F_first(a)=v(g0*C*a)-g0^(-2)*V(g0*C*a). By the definition under1.16, v consists of log sigma(K) and Tr log(I-h*D_tilde_prime), whereas V collects the higher-than-quadratic action/gauge/current terms from1.14. They are not just the bare cubic Wilson trace, and the Jacobian is not assumed even.",
+    "leading_precision": "Q_first=C^sharp Delta1 C with <A,Delta1 A>=<A,Delta A>-2<h*C_constraint^(2)(A),J1>+G^(2)(A). The constrained-current curvature term and soft-gauge quadratic term stay in this leading precision, not in an arbitrary remainder and not set to zero. All source metrics and normalization conventions remain.",
+    "criticality": "The dangerous linear term cancels on the actual constrained integration subspace as the source explains250. This is weaker than J1=0 as a free field; using the latter would erase a real source term.",
+    "baseline": "The E in the outside factor of1.15 is the original source vacuum/baseline constant. It is not a preceding field-dependent E_k activity. The background exp[-A(U1)/g0^2], Haar/scaling factors, selected delta determinant, FP factors and any subsequently normalized Gaussian determinant remain once."
+  },
+  "cutoff_and_domain_gate": {
+    "original_cutoff": "Chi0_prime in1.15 is still the original approximate-fluctuation restriction and is NOT globally replaced by a product free cutoff. The exact source1.18-1.25 partition removes it only where justified and leaves the bad/boundary factors. The previous1658 mapping still controls that step.",
+    "protected_inner_branch": "Only after that original partition, on a protected complete raw carrier and the actual retained inner free domain, does the physical radius rho=C_delta*ell^p give g0*|a|<=delta0 in its declared norm. Selected outputs are reconstructed. A fixed row/operator bound for THIS C and nonlinear chart is still needed to fit K(a) into the native primed-domain condition of1916.",
+    "boundary_branch": "Crossing/boundary variables keep the exact source T_H composition and their full conditional exterior dependence. They cannot be included in a global sup bound for the simpler protected branch by reusing the same letter a or ignoring a fixed exterior shift.",
+    "source_compatibility": "CMP119248 explicitly cites the FIRST-step linearization formulas of CMP109. The general inductive source also permits different means0.4/0.12. Therefore use the first-step selected map actually cited here and transfer the source proof only after checking its analytic/operator properties; do not identify all means or use different source constants by notation.",
+    "fixed_beta": "The frozen beta_ref/g1_ref and log Z_full action are not changed. Matching this bare first numerator does not identify its later old effective action with a historical unindexed E1."
+  },
+  "what_is_established": "The concrete physical first-sector nonlinear input is the complete v-minus-V expression on the actual selected current-corrected precision. The reference to a bare F channel is now tied to this displayed source integral, rather than an unspecified Jacobian amplitude alpha4. No uniform source constant, proper-domain chart coverage or marked profile is certified by this dictionary.",
+  "next": "Bound the actual first-sector F_first after the original good/bad partition on a source-admitted domain, retaining current, both log Jacobians and boundary T_H terms. Verify the same C/mean/chart operator properties needed by the fixed primed source estimate before applying it. Do not replace Chi0_prime globally or assign the source auxiliary alpha4 to v.",
+  "temporary_render_metadata": {
+    "page": 249,
+    "sha256": "c4fb2451c376d527cc3bfd7c86725095194a73c46eaa1207d5c42e16ac471e5c",
+    "bytes": 242531,
+    "viewed": true,
+    "archived": false
+  }
+}

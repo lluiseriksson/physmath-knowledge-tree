@@ -1,0 +1,54 @@
+{
+  "execution": 1933,
+  "source": {
+    "path": "C:\\Users\\lluis\\Documents\\CodexYangMillsAutopilot\\runtime\\sources\\primary\\balaban-convergent-cmp119-from-fusion.pdf",
+    "sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+    "doi": "10.1007/BF01217741",
+    "text_pages": [
+      271,
+      272,
+      273
+    ],
+    "visual_page": 272,
+    "reading_level": "selected statement and density read, not global proof audited"
+  },
+  "fixed_inputs": [
+    {
+      "path": "C:/Trabajo/airr/2026-11-01_execution1932/REVIEW-DISPOSITION1932.json"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1689/MEAN-CHARGE1689.json"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1692/COMMON-GAUSSIAN-GATES1692.json"
+    },
+    {
+      "path": "C:/Trabajo/airr/2026-10-31_execution1683/REAL-MEAN-LOCALIZATION1683.json"
+    }
+  ],
+  "target": "R1925-03 undefined f and its norm in the real Gaussian mean reserve; do not reopen the review.",
+  "mechanism": "Bind the parent f explicitly to the REAL exterior-field interpolation parameter t of CMP119 (3.28)-(3.29), distinguished from covariance localization sigma and from the coupling interpolation in (3.30).",
+  "source_fact": "Page271 introduces the parameter multiplying the external fluctuation A_k. Page272 (3.28) integrates its derivative over t from0 to1; (3.29) contains the same t A_k in the cross quadratic and interaction. The integration endpoints0,1 were visually checked. The separate t multiplying g_k in (3.30) is a different operation and must not be conflated.",
+  "dictionary": {
+    "f": "For this use only, f := t_ext in[0,1] of source (3.28)-(3.29). Hold it real and fixed during the covariance-only sigma interpolation.",
+    "Gaussian_center": "For actual A=Q_DD and k=Q_DE a_E, the quadratic exponent -1/2 a^T A a-f a^T k has completion center m_f=-f A^(-1)k. This is the Gaussian center, not the expectation with original cutoffs and V_f.",
+    "preserved": "Original external interpolation endpoints, bilinear quadratic, fixed free coordinates, original cutoffs and complete V_f derivative.",
+    "not_preserved_or_supplied": "No complex continuation in f; no mean localization in coarse V; no bounds on V_f, boundary T_H, full marked density or history."
+  },
+  "reserve_disposition": "With this explicit source dictionary, |f|<=1 follows from the real integration interval, so the conditional reserve tau_B(1+tau_B V_star)(B/a)^2<=a/2 is uniform in f without an extra >1 factor. If f means any other scalar/operator, retain the general norm(f)^2 correction1932. This resolves the missing notation for this one branch, not the actual charges or availability of exterior reserve.",
+  "review_scope": "Post-review parent source clarification. Does not change the frozen eight inputs, inherit a review of this change, or close all of R1925-03; index/cell ownership and protected physical geometry remain open.",
+  "falsifier": "If the actual operation changes Q, the integration domain, or covariance-dependent f, or uses f outside[0,1], this dictionary and simplified reserve do not apply. Keep the general norm factor and derive the correct score instead.",
+  "limits": [
+    "All R1925-01 to08 retained. No new physical chain, candidate1642 admission, independent assessment, grade or paper.",
+    "No right to identify historical unindexed action or g1 with the fixed LAW1559 reference.",
+    "A preliminary read of CMP109271-273 concerned different formulas and supplied no evidence for this binding; the supporting source is CMP119271-273 only."
+  ],
+  "level": "literature for source real interval/density; participating-parent conditional algebra for its Gaussian center; physical application still unadmitted",
+  "temporary_render": {
+    "sha256": "e1b4d1e5ca65cc7dfe992c16a1204553126ce896aa5a5700474916f4d82750d5",
+    "bytes": 158776,
+    "viewed": true,
+    "archived": false
+  },
+  "next": "Use the explicit f=t_ext dictionary when carrying the actual marked nonlinear density and its partial_f V_f/cutoff flux through the existing covariance construction. Keep all source-cover, physical gap, support, analytic domination and one-parameter-chain gates open; integrate the complete review and its adverse findings into the knowledge tree without another review or score."
+}

@@ -1,0 +1,74 @@
+{
+  "at": "2026-11-01T10:57:00.579386+00:00",
+  "scope": "ONE new focused unscored technical check of own1920-1924 candidate. Not a manuscript/PDF assessment; no Capacity,1642 admission, source novelty or global build verdict. Do not repeat or inherit closed reviews.",
+  "requested_model": "gpt-6-astra",
+  "requested_reasoning_effort": "xhigh",
+  "context_requested": "separate, fork none",
+  "observed_identity_effort_independence": "not authenticated; do not infer from requested configuration",
+  "inputs": [
+    {
+      "path": "C:\\Trabajo\\airr\\2026-11-01_execution1925\\INPUT-SOFT-FREE-SPARSE-PARAMETRIX1920.json",
+      "original": "C:\\Trabajo\\airr\\2026-11-01_execution1920\\SOFT-FREE-SPARSE-PARAMETRIX1920.json",
+      "bytes": 8092,
+      "sha256": "abaee1c4fd9191f26dbc3cad612b02f7d560bda760f3ef6e3809094b12456987"
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-11-01_execution1925\\INPUT-SOFT-FREE-TAGGED-SQUARE-ROOT1921.json",
+      "original": "C:\\Trabajo\\airr\\2026-11-01_execution1921\\SOFT-FREE-TAGGED-SQUARE-ROOT1921.json",
+      "bytes": 6355,
+      "sha256": "cb5e4497cf447375ab1c07b4882a4ebfa9e57a84e94c91f7031a58202018bb85"
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-11-01_execution1925\\INPUT-PROTECTED-SOFT-FREE-REFERENCE1922.json",
+      "original": "C:\\Trabajo\\airr\\2026-11-01_execution1922\\PROTECTED-SOFT-FREE-REFERENCE1922.json",
+      "bytes": 7740,
+      "sha256": "2d4a749f937809f467664fca2dfb334fe35ebd2d33843f9321d7010218abae80"
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-11-01_execution1925\\INPUT-PROTECTED-GAMMA-ERROR-AND-GATES1923.json",
+      "original": "C:\\Trabajo\\airr\\2026-11-01_execution1923\\PROTECTED-GAMMA-ERROR-AND-GATES1923.json",
+      "bytes": 7618,
+      "sha256": "aea59fdeb8d6cb776161047bcaa9cd59cbc90bf2779852fe623aa333c84a8a80"
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-11-01_execution1925\\INPUT-PROTECTED-GAUSSIAN-COST-AND-CONTOUR1924.json",
+      "original": "C:\\Trabajo\\airr\\2026-11-01_execution1924\\PROTECTED-GAUSSIAN-COST-AND-CONTOUR1924.json",
+      "bytes": 6843,
+      "sha256": "0516be7c574830a42dd5597b837bf9a7fc4d71d71e76195f98bad7364c4c53f0"
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-11-01_execution1925\\INPUT-ACTUAL-FIRST-SECTOR-F-INPUT1917.json",
+      "original": "C:\\Trabajo\\airr\\2026-11-01_execution1917\\ACTUAL-FIRST-SECTOR-F-INPUT1917.json",
+      "bytes": 6100,
+      "sha256": "ef5662e3cdb8f897278a5afad0dd07d48a7dfbaa6906bba8c7d6f5ae96a8a9b3"
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-11-01_execution1925\\INPUT-LAW-VERSION1535.json",
+      "original": "C:\\Trabajo\\airr\\2026-10-31_execution1535\\LAW-VERSION1535.json",
+      "bytes": 1803,
+      "sha256": "f668b5b57350dcdf9d60b579be927b260d9aaf2138ce4667462d0af4c6ca8388"
+    },
+    {
+      "path": "C:\\Trabajo\\airr\\2026-11-01_execution1925\\INPUT-LAW-BINDING1559.json",
+      "original": "C:\\Trabajo\\airr\\2026-10-31_execution1559\\LAW-BINDING1559.json",
+      "bytes": 867,
+      "sha256": "a78244cb62773f907346968b16470892a00f1405219d0e9752f17b578af806dd"
+    }
+  ],
+  "sources": [
+    {
+      "path": "C:\\Users\\lluis\\Documents\\CodexYangMillsAutopilot\\runtime\\sources\\primary\\balaban-rg-II-cmp116-1104161193.pdf",
+      "sha256": "ee39523a0f7b83af958513c7bd6f9c7731934b40355ef5d6b0f7a68ee6d022fc",
+      "read_only": true,
+      "scope": "Selected source binding only; no global proof audit or source redistribution."
+    },
+    {
+      "path": "C:\\Users\\lluis\\Documents\\CodexYangMillsAutopilot\\runtime\\sources\\primary\\balaban-convergent-cmp119-from-fusion.pdf",
+      "sha256": "db1deec2f1cfedfc5210b023a4cc07fe9a3363a3b5bf59e4cac8fac871ffac7a",
+      "read_only": true,
+      "scope": "Selected source binding only; no global proof audit or source redistribution."
+    }
+  ],
+  "output": "C:\\Trabajo\\airr\\2026-11-01_execution1925\\ASSESSMENT1925.json",
+  "instructions": "Read all eight frozen JSON inputs, apply controlling corrections1923 and derive/check conditional algebra, bounds, carrier geometry and Gaussian ownership. Preserve adverse findings; no score, goal grade, restart, source edits or publication. All real source gap/chart/stencil/constant premises remain unverified physical inputs."
+}
