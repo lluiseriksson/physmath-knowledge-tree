@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "observed_on": "2026-10-31",
+  "observed_on": "2026-11-02",
   "coverage": "Directed primary-source radar with version-pinned catalogue metadata. Bibliographic coverage is never proof coverage.",
   "source_cards": [
     {
@@ -2108,6 +2108,37 @@
         "original_theorem_or_proof_read": false
       },
       "reading_evidence": "integrations/research-radar/evidence/2026-10-31-cluster-criterion-source/README.md"
+    },
+    {
+      "id": "malartre-analytic-wick-egorov-2026",
+      "title": "An Egorov-type Theorem for Analytic Wick Observables in Quantum Field Theory",
+      "authors": [
+        "Julien Malartre"
+      ],
+      "url": "https://arxiv.org/abs/2610.39806v1",
+      "kind": "preprint",
+      "published_year": 2026,
+      "first_submitted_at": "2026-10-29T10:50:38Z",
+      "publication_date_precision": "day",
+      "observed_on": "2026-11-02",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Section 2.2, Eq. (2.9), hypothesis (H1) and Theorem 2.1: propagation of a restricted analytic Wick class under a time-dependent quadratic Hamiltonian.",
+      "limits": "Statement read; proof not audited. The double-exponential coefficient weight is stronger than entire analyticity. Own one-mode cosine test excludes a direct import for a nonzero Wilson mark; it does not refute the theorem or exclude indirect representations. No nonlinear RG, normalized marked/history bound or physical admission follows. Journal acceptance not independently verified.",
+      "reuse": "Metadata and own synthesis only; no source body, corpus or evaluation material redistributed.",
+      "anchors": [
+        "domain.analysis",
+        "domain.quantum_field_theory"
+      ],
+      "version_pin": {
+        "arxiv": "2610.39806v1",
+        "html_url": "https://arxiv.org/html/2610.39806v1",
+        "html_sha256": "50b30baac452255e89af4c2497f229283502fa4b9c9089a751f508f9f201a66e",
+        "observed_at": "2026-11-02T00:05:23.975124+00:00",
+        "hash_scope": "Returned HTML bytes, not PDF; response body not retained",
+        "full_proof_audited": false
+      },
+      "reading_evidence": "integrations/research-radar/evidence/2026-11-02-wick-intake/README.md"
     }
   ],
   "candidates": [
@@ -2874,6 +2905,10 @@
     "followup1581": {
       "evidence": "integrations/research-radar/evidence/2026-10-31-real-forest-audit/PUBLIC-PACKET-HASHES.json",
       "scope": "Full exact unscored audit1575 with11frozeninputs, minor nonnegative-t clarification and retained F1–F6; no manuscript/PDF score or formal promotion. Existing DeepMind card reconciled at metadata depth, no duplicate card.119sources/19candidates."
+    },
+    "followup2138": {
+      "evidence": "integrations/research-radar/evidence/2026-11-02-wick-intake/README.md",
+      "scope": "One 29 October preprint newly indexed at selected-statement depth; direct cosine-symbol import rejected by H1. 121 sources, 19 candidates; no canonical graph/confidence change, new paper, review, score or physical admission."
     }
   }
 }
