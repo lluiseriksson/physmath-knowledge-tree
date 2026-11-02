@@ -2139,6 +2139,73 @@
         "full_proof_audited": false
       },
       "reading_evidence": "integrations/research-radar/evidence/2026-11-02-wick-intake/README.md"
+    },
+    {
+      "id": "eriksson-large-field-windowed-2026-v2",
+      "title": "Large-Field Suppression for Lattice Gauge Theories: From Balaban’s Renormalization Group to Conditional Concentration — a Conditional and Windowed Verification",
+      "authors": [
+        "Lluis Eriksson"
+      ],
+      "url": "https://ai.vixra.org/abs/2602.0056",
+      "kind": "preprint",
+      "published_year": 2026,
+      "publication_date_precision": "day",
+      "first_archive_submission": "2026-02-12 19:07:45",
+      "version2_archive_submission": "2026-07-06 21:03:37",
+      "archive_time_zone": "Not specified; no UTC conversion inferred",
+      "observed_on": "2026-11-02",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Historical v2 makes the theorem windowed and conditional on H-SFI and H-P0; it withdraws earlier unconditional sufficiency/all-scale claims and limits the 2D route to fixed beta.",
+      "limits": "Selected hypotheses/corrections read; proof and companion numerical suite not audited. Same author as the repository, not independent support. No current marked-source admission or transfer of its parameter failures to another family.",
+      "reuse": "Metadata and own synthesis only; no PDF body or numerical suite redistributed.",
+      "anchors": [
+        "domain.gauge_theory",
+        "problem.yang_mills_mass_gap"
+      ],
+      "version_pin": {
+        "version": "2602.0056v2",
+        "pdf_url": "https://ai.vixra.org/pdf/2602.0056v2.pdf",
+        "pdf_sha256": "17aa1773c27cd0be4c452b43e2de7d91050e63842af5fec7cfd01ae74d359207",
+        "pdf_bytes": 328405,
+        "observed_at": "2026-11-02T00:53:03.244452+00:00",
+        "full_proof_audited": false,
+        "numerical_suite_executed": false
+      },
+      "reading_evidence": "integrations/research-radar/evidence/2026-11-02-historical-boundaries/README.md"
+    },
+    {
+      "id": "brennecke-lattice-free-energy-2025-v2",
+      "title": "On the Leading Order Term of the Lattice Yang-Mills Free Energy",
+      "authors": [
+        "Christian Brennecke"
+      ],
+      "url": "https://arxiv.org/abs/2511.07297v2",
+      "kind": "preprint",
+      "published_year": 2025,
+      "publication_date_precision": "day",
+      "first_submitted_at": "2025-11-10T16:53:54Z",
+      "version2_submitted_at": "2026-06-09T14:07:16Z",
+      "observed_on": "2026-11-02",
+      "reading_status": "abstract_read",
+      "evidence": "literature",
+      "claim": "Leading-order U(N) lattice free energy, with an explicit computation of a Maxwell-theory constant through adjusted boundary conditions.",
+      "limits": "Abstract/version history read; introduction skimmed; theorem statements and proof not audited. No conditional marked-source estimate, uniform gap, physical mass gap or history result is inferred. Journal notice not independently checked.",
+      "reuse": "Metadata and own synthesis only; no source text redistributed.",
+      "anchors": [
+        "domain.gauge_theory",
+        "domain.analysis"
+      ],
+      "version_pin": {
+        "arxiv": "2511.07297v2",
+        "html_url": "https://arxiv.org/html/2511.07297v2",
+        "html_sha256": "7a2e3e9bfe064ab0113997febb25d577e6e20d055ed05c9538a076b089ab5d15",
+        "html_bytes": 645256,
+        "hash_scope": "Returned HTML bytes, not PDF",
+        "observed_at": "2026-11-02T00:53:02.428441+00:00",
+        "full_proof_audited": false
+      },
+      "reading_evidence": "integrations/research-radar/evidence/2026-11-02-historical-boundaries/README.md"
     }
   ],
   "candidates": [
@@ -2909,6 +2976,10 @@
     "followup2138": {
       "evidence": "integrations/research-radar/evidence/2026-11-02-wick-intake/README.md",
       "scope": "One 29 October preprint newly indexed at selected-statement depth; direct cosine-symbol import rejected by H1. 121 sources, 19 candidates; no canonical graph/confidence change, new paper, review, score or physical admission."
+    },
+    "followup2145": {
+      "evidence": "integrations/research-radar/evidence/2026-11-02-historical-boundaries/README.md",
+      "scope": "Two historical primary versions newly indexed with adverse/reading boundaries; not new publications.123 sources/19 candidates. No current physical admission, new paper, review, score, canonical graph or confidence promotion."
     }
   }
 }
