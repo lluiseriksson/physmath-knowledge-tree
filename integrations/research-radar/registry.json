@@ -2206,6 +2206,71 @@
         "full_proof_audited": false
       },
       "reading_evidence": "integrations/research-radar/evidence/2026-11-02-historical-boundaries/README.md"
+    },
+    {
+      "id": "aronow-lopatto-regional-ym3-2026-v1",
+      "title": "The continuum limit of three-dimensional SU(2) lattice Yang–Mills theory on a torus III: Regional renormalization and large-field control",
+      "authors": [
+        "P. M. Aronow",
+        "Patrick Lopatto"
+      ],
+      "url": "https://hexagonmath.org/2610.00510v1",
+      "kind": "preprint",
+      "published_year": 2026,
+      "publication_date_precision": "day",
+      "version1_archive_date": "2026-10-26",
+      "earlier_posting_claim": "Author note reports GitHub posting on2026-10-17; earliest public date not independently verified.",
+      "observed_on": "2026-11-02",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Theorem19.9 states regional analytic perturbation stability subject to reconstruction, Hessian, domain and incoming-seminorm hypotheses.",
+      "limits": "Selected statement and provenance read; proof/dependency chain not audited. Perturbed frozen parameters stay real. No normalized-density conclusion or transfer to a different four-dimensional conditioned source law. AI/limited Lean claims are author-reported; no complete formalization or human-expert verification established.",
+      "reuse": "Metadata and own synthesis only; no PDF/source body redistributed.",
+      "anchors": [
+        "domain.gauge_theory",
+        "problem.yang_mills_mass_gap"
+      ],
+      "version_pin": {
+        "version": "hexagon:2610.00510v1",
+        "pdf_url": "https://hexagonmath.org/pdf/2610.00510v1",
+        "pdf_sha256": "ed844201649f1e2921e219f01cad360c6c4ddc5e541129d07c981f53256f9299",
+        "pdf_bytes": 1596900,
+        "full_proof_audited": false,
+        "formal_build_verified": false
+      },
+      "reading_evidence": "integrations/research-radar/evidence/2026-11-02-source-domain-limits/README.md"
+    },
+    {
+      "id": "lemoine-universal-wilson-dualities-2026-v2",
+      "title": "Universal dualities for Wilson loops in lattice Yang-Mills",
+      "authors": [
+        "Thibaut Lemoine"
+      ],
+      "url": "https://arxiv.org/abs/2604.16252v2",
+      "kind": "preprint",
+      "published_year": 2026,
+      "publication_date_precision": "day",
+      "first_submitted_at": "2026-04-17T17:11:50Z",
+      "version2_submitted_at": "2026-08-09T20:06:03Z",
+      "observed_on": "2026-11-02",
+      "reading_status": "selected_sections_read",
+      "evidence": "literature",
+      "claim": "Theorem1.4 and Proposition3.6 give a common-bulk defect-ratio representation for Wilson expectations in the stated product-central plaquette setup.",
+      "limits": "Selected statement and short ratio proof read; underlying channel/state-sum proof chain not audited. Ordinary trace normalization differs from normalized marks. No uniform connected weak-coupling complex-source or conditioned-history estimate inferred.",
+      "reuse": "Metadata and own synthesis only; no source body redistributed.",
+      "anchors": [
+        "domain.gauge_theory",
+        "domain.analysis"
+      ],
+      "version_pin": {
+        "arxiv": "2604.16252v2",
+        "html_url": "https://arxiv.org/html/2604.16252v2",
+        "html_sha256": "2d9a1d4eee6d00e9b018c774b6398552a9002188603c8f301d14154aa021e3de",
+        "html_bytes": 1520293,
+        "hash_scope": "HTML response bytes, not PDF",
+        "full_proof_audited": false
+      },
+      "reading_evidence": "integrations/research-radar/evidence/2026-11-02-source-domain-limits/README.md"
     }
   ],
   "candidates": [

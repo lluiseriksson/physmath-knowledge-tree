@@ -1,0 +1,684 @@
+{
+  "seeds": [
+    "domain.gauge_theory",
+    "problem.yang_mills_mass_gap"
+  ],
+  "radius": 1,
+  "nodes": [
+    {
+      "id": "domain.spectral_theory",
+      "kind": "domain",
+      "title": "Spectral theory",
+      "summary": "Eigenvalues, spectra of operators, spectral gaps and trace information.",
+      "confidence": "literature",
+      "tags": [
+        "spectra",
+        "operators",
+        "eigenvalues",
+        "trace"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Analysis.InnerProductSpace.Spectrum"
+        ],
+        "declarations": [
+          "spectrum"
+        ],
+        "targets": [
+          "State finite-dimensional spectral gap toy problems."
+        ]
+      },
+      "questions": [
+        "Can a zero, obstruction or phase transition be reinterpreted as spectral data?"
+      ],
+      "references": [
+        {
+          "label": "J. B. Conway — A Course in Functional Analysis",
+          "url": "https://link.springer.com/book/10.1007/978-1-4757-4383-8",
+          "type": "book",
+          "scope": "claim"
+        },
+        {
+          "label": "mathlib4 — Inner-product-space spectrum documentation",
+          "url": "https://leanprover-community.github.io/mathlib4_docs/Mathlib/Analysis/InnerProductSpace/Spectrum.html",
+          "type": "documentation",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "domain.differential_geometry",
+      "kind": "domain",
+      "title": "Differential geometry",
+      "summary": "Manifolds, tangent structures, connections, curvature and geometric flows.",
+      "confidence": "literature",
+      "tags": [
+        "manifolds",
+        "curvature",
+        "geometry",
+        "flows"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Geometry.Manifold.Basic.SmoothManifoldWithCorners"
+        ],
+        "declarations": [
+          "ChartedSpace"
+        ],
+        "targets": [
+          "Catalog which manifold prerequisites are already formalized."
+        ]
+      },
+      "questions": [
+        "Can an analytic obstruction be rephrased as curvature or geometry?"
+      ],
+      "references": [
+        {
+          "label": "J. M. Lee — Introduction to Smooth Manifolds",
+          "url": "https://link.springer.com/book/10.1007/978-1-4419-9982-5",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "domain.representation_theory",
+      "kind": "domain",
+      "title": "Representation theory",
+      "summary": "Study of algebraic structures through their actions on spaces.",
+      "confidence": "literature",
+      "tags": [
+        "representations",
+        "groups",
+        "symmetry"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.RepresentationTheory.Basic"
+        ],
+        "declarations": [],
+        "targets": [
+          "Use actions as a bridge between algebra, geometry and physics."
+        ]
+      },
+      "questions": [
+        "What symmetry is invisible in the original formulation?"
+      ],
+      "references": [
+        {
+          "label": "W. Fulton and J. Harris — Representation Theory",
+          "url": "https://link.springer.com/book/10.1007/978-1-4612-0979-9",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "domain.quantum_field_theory",
+      "kind": "domain",
+      "title": "Quantum field theory",
+      "summary": "Fields, quantization, path integrals, operator algebras and renormalization heuristics.",
+      "confidence": "heuristic",
+      "tags": [
+        "qft",
+        "fields",
+        "renormalization",
+        "path-integral"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib"
+        ],
+        "declarations": [],
+        "targets": [
+          "Replace informal path-integral claims with finite or algebraic toy models."
+        ]
+      },
+      "questions": [
+        "Which physical heuristic has a finite, constructive or operator-algebraic version?"
+      ],
+      "references": [
+        {
+          "label": "A. Jaffe and E. Witten — Quantum Yang-Mills Theory",
+          "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
+          "type": "paper",
+          "scope": "context"
+        },
+        {
+          "label": "R. Haag — Local Quantum Physics",
+          "url": "https://link.springer.com/book/10.1007/978-3-642-61458-3",
+          "type": "book",
+          "scope": "context"
+        }
+      ]
+    },
+    {
+      "id": "domain.gauge_theory",
+      "kind": "domain",
+      "title": "Gauge theory",
+      "summary": "Connections, curvature, principal bundles, gauge symmetry and Yang-Mills functionals.",
+      "confidence": "literature",
+      "tags": [
+        "gauge",
+        "connections",
+        "curvature",
+        "yang-mills"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Geometry.Manifold.VectorBundle.Basic"
+        ],
+        "declarations": [],
+        "targets": [
+          "Create finite gauge-action models before continuous field theories."
+        ]
+      },
+      "questions": [
+        "Can a gauge-invariant observable expose a spectral gap?"
+      ],
+      "references": [
+        {
+          "label": "A. Jaffe and E. Witten — Quantum Yang-Mills Theory",
+          "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "Efficient Quantum Simulations of Yang-Mills theory with Maximal-tree Gauge (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2608.27267v1",
+          "type": "paper",
+          "scope": "context"
+        },
+        {
+          "label": "Non-Abelian string melting and thermalization in an open lattice gauge theory (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.04117v1",
+          "type": "paper",
+          "scope": "context"
+        },
+        {
+          "label": "On Quasiparticles within the Refined Gribov-Zwanziger Model (v1, reviewed 2026-09-09; context only)",
+          "url": "https://arxiv.org/abs/2609.04423v1",
+          "type": "paper",
+          "scope": "context"
+        }
+      ]
+    },
+    {
+      "id": "problem.yang_mills_mass_gap",
+      "kind": "problem",
+      "title": "Yang-Mills existence and mass gap",
+      "summary": "Construct quantum Yang-Mills theory on four-dimensional space-time and prove a positive mass gap.",
+      "confidence": "literature",
+      "tags": [
+        "millennium",
+        "yang-mills",
+        "gauge",
+        "qft",
+        "mass-gap"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib"
+        ],
+        "declarations": [],
+        "targets": [
+          "Model finite gauge systems and spectral gaps before continuum theory."
+        ]
+      },
+      "questions": [
+        "Which finite or constructive model preserves the gap mechanism?"
+      ],
+      "status": "unsolved",
+      "references": [
+        {
+          "label": "Clay Mathematics Institute — Millennium Prize Problems",
+          "url": "https://www.claymath.org/millennium-problems/",
+          "type": "official",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "bridge.lattice_physical_scaling",
+      "kind": "bridge",
+      "title": "Lattice units to physical distance and mass",
+      "summary": "Separates graph distance from physical scale through d_phys = a n and m_phys = m_lat / a, giving the exact exponent identity m_lat n = m_phys d_phys. Continuum conclusions additionally require calibrated spacing and convergence of renormalized correlators.",
+      "confidence": "formal",
+      "tags": [
+        "lattice",
+        "physical-units",
+        "mass-gap",
+        "continuum-limit"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib",
+          "PhysMathKnowledgeTree.Formal.Microtheorems"
+        ],
+        "declarations": [
+          "physicalExponentIdentity"
+        ],
+        "targets": [
+          "Prove the exact exponent identity, ceiling discretization bounds and block-scale invariance of physical mass."
+        ]
+      },
+      "questions": [
+        "How should the lattice spacing be tied to the renormalization trajectory rather than chosen as an arbitrary coordinate scale?"
+      ],
+      "references": [
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban I",
+          "url": "https://arxiv.org/abs/1108.1335",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "K. G. Wilson and J. Kogut — The renormalization group and the epsilon expansion",
+          "url": "https://doi.org/10.1016/0370-1573(74)90023-4",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "problem.uniform_yang_mills_rg_activity",
+      "kind": "problem",
+      "title": "Uniform one-step Yang-Mills RG activity bound",
+      "summary": "Define the local activity produced by the actual gauge-fixed one-step renormalization integral and prove support, coupling-power and modified-metric decay estimates with constants uniform in volume, cutoff, scale, background and admissible hole geometry.",
+      "confidence": "literature",
+      "status": "unsolved",
+      "tags": [
+        "yang-mills",
+        "renormalization-group",
+        "polymer",
+        "raw-activity"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib"
+        ],
+        "declarations": [],
+        "targets": [
+          "Define the one-step gauge fluctuation identity and concrete raw activity before stating its decay.",
+          "Separate block coercivity, background-Hessian stability, covariance decay, collar localization and local R-operation gain into auditable inputs."
+        ]
+      },
+      "questions": [
+        "Can the physical gauge producer be built without hiding the desired activity estimate inside a package field?",
+        "Which constants are uniform in volume, cutoff, scale, background and hole geometry?"
+      ],
+      "references": [
+        {
+          "label": "A. Jaffe and E. Witten — Quantum Yang-Mills Theory",
+          "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban I",
+          "url": "https://arxiv.org/abs/1108.1335",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban II",
+          "url": "https://arxiv.org/abs/1212.5562",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban III",
+          "url": "https://arxiv.org/abs/1304.0705",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "bridge.target_preserving_ursell_summation",
+      "kind": "bridge",
+      "title": "Target-preserving Ursell summation",
+      "summary": "A target-sensitive cluster estimate keeps the exact union fiber and a spanning incompatibility tree until metric stitching has extracted the desired target exponential. Only afterward may the remaining assignments and tree shapes be enlarged or summed.",
+      "confidence": "formal",
+      "tags": [
+        "ursell",
+        "exact-union",
+        "tree-graph",
+        "target-decay",
+        "locality"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib.Combinatorics.SimpleGraph.Basic",
+          "Mathlib.Data.Finset.Basic"
+        ],
+        "declarations": [
+          "SimpleGraph"
+        ],
+        "targets": [
+          "Define a fixed-union weighted tree term that retains both the target and parent-child incompatibility edges.",
+          "Prove target exponential extraction from metric stitching before replacing the exact fiber by a larger summation domain.",
+          "Record a reusable information-preservation lemma for cluster majorants."
+        ]
+      },
+      "questions": [
+        "What is the weakest local relation that must remain visible until target decay is extracted?",
+        "Can exact-union fibers reduce the tree-shape entropy below a complete-graph majorant?"
+      ],
+      "references": [
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban I",
+          "url": "https://arxiv.org/abs/1108.1335",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban II",
+          "url": "https://arxiv.org/abs/1212.5562",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "R. Kotecký and D. Preiss — Cluster expansion for abstract polymer models",
+          "url": "https://doi.org/10.1007/BF01010924",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "bridge.yang_mills_critical_dimension",
+      "kind": "bridge",
+      "title": "Four-dimensional Yang–Mills as the marginal dimension",
+      "summary": "Canonical power counting gives [A] = (d-2)/2 and [g] = (4-d)/2 for Yang–Mills. Thus d=4 makes the gauge coupling dimensionless and marginal, distinguishing the four-dimensional problem from superrenormalizable lower dimensions and power-counting nonrenormalizable higher dimensions.",
+      "confidence": "literature",
+      "tags": [
+        "yang-mills",
+        "critical-dimension",
+        "power-counting",
+        "marginality"
+      ],
+      "lean": {
+        "imports": [
+          "Mathlib"
+        ],
+        "declarations": [],
+        "targets": [
+          "Formalize the dimensional-analysis equations as rational identities with assumptions clearly separated from the constructive field theory."
+        ]
+      },
+      "questions": [
+        "Which constructive estimates exploit marginal running rather than a fictitious geometrically decaying coupling?"
+      ],
+      "references": [
+        {
+          "label": "A. Jaffe and E. Witten — Quantum Yang-Mills Theory",
+          "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "K. G. Wilson and J. Kogut — The renormalization group and the epsilon expansion",
+          "url": "https://doi.org/10.1016/0370-1573(74)90023-4",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge.geometry.gauge",
+      "source": "domain.differential_geometry",
+      "target": "domain.gauge_theory",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "Gauge theory uses bundles, connections and curvature.",
+      "references": [
+        {
+          "label": "A. Jaffe and E. Witten — Quantum Yang-Mills Theory",
+          "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "J. M. Lee — Introduction to Smooth Manifolds",
+          "url": "https://link.springer.com/book/10.1007/978-1-4419-9982-5",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.gauge.qft",
+      "source": "domain.gauge_theory",
+      "target": "domain.quantum_field_theory",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "Gauge fields form central examples of quantum field theories.",
+      "references": [
+        {
+          "label": "A. Jaffe and E. Witten — Quantum Yang-Mills Theory",
+          "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "R. Haag — Local Quantum Physics",
+          "url": "https://link.springer.com/book/10.1007/978-3-642-61458-3",
+          "type": "book",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.gauge.yang_mills",
+      "source": "domain.gauge_theory",
+      "target": "problem.yang_mills_mass_gap",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "The problem is formulated for quantum Yang-Mills fields.",
+      "references": [
+        {
+          "label": "A. Jaffe and E. Witten — Quantum Yang-Mills Theory",
+          "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "Clay Mathematics Institute — Yang-Mills and the Mass Gap",
+          "url": "https://www.claymath.org/millennium/yang-mills-the-maths-gap/",
+          "type": "official",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.qft.yang_mills",
+      "source": "domain.quantum_field_theory",
+      "target": "problem.yang_mills_mass_gap",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "Existence and mass gap are constructive quantum field theory questions.",
+      "references": [
+        {
+          "label": "A. Jaffe and E. Witten — Quantum Yang-Mills Theory",
+          "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "Clay Mathematics Institute — Yang-Mills and the Mass Gap",
+          "url": "https://www.claymath.org/millennium/yang-mills-the-maths-gap/",
+          "type": "official",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.representation.yang_mills",
+      "source": "domain.representation_theory",
+      "target": "problem.yang_mills_mass_gap",
+      "relation": "suggests",
+      "confidence": "literature",
+      "mechanism": "Compact gauge groups and their representations structure observable sectors.",
+      "references": [
+        {
+          "label": "A. Jaffe and E. Witten — Quantum Yang-Mills Theory",
+          "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.spectral.yang_mills",
+      "source": "domain.spectral_theory",
+      "target": "problem.yang_mills_mass_gap",
+      "relation": "suggests",
+      "confidence": "literature",
+      "mechanism": "A mass gap can be viewed as a spectral gap above the vacuum.",
+      "references": [
+        {
+          "label": "A. Jaffe and E. Witten — Quantum Yang-Mills Theory",
+          "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.gauge.ym_rg_activity",
+      "source": "domain.gauge_theory",
+      "target": "problem.uniform_yang_mills_rg_activity",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "The concrete activity must be derived from gauge fields, gauge fixing, background minimization and the Yang-Mills fluctuation operator.",
+      "references": [
+        {
+          "label": "A. Jaffe and E. Witten — Quantum Yang-Mills Theory",
+          "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban I",
+          "url": "https://arxiv.org/abs/1108.1335",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.ym_rg_activity.yang_mills",
+      "source": "problem.uniform_yang_mills_rg_activity",
+      "target": "problem.yang_mills_mass_gap",
+      "relation": "suggests",
+      "confidence": "heuristic",
+      "mechanism": "A uniform lattice RG activity bound would close a major lattice-stage input, while continuum existence and reconstruction would still remain separate obligations.",
+      "references": [
+        {
+          "label": "A. Jaffe and E. Witten — Quantum Yang-Mills Theory",
+          "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
+          "type": "paper",
+          "scope": "context"
+        },
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban I",
+          "url": "https://arxiv.org/abs/1108.1335",
+          "type": "paper",
+          "scope": "context"
+        }
+      ]
+    },
+    {
+      "id": "edge.lattice_scaling.yang_mills",
+      "source": "bridge.lattice_physical_scaling",
+      "target": "problem.yang_mills_mass_gap",
+      "relation": "obstructs",
+      "confidence": "formal",
+      "mechanism": "A positive decay rate at fixed lattice spacing is not yet a finite physical mass; calibrated spacing, thermodynamic control and correlator convergence are additionally required.",
+      "references": [
+        {
+          "label": "A. Jaffe and E. Witten — Quantum Yang-Mills Theory",
+          "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "K. G. Wilson and J. Kogut — The renormalization group and the epsilon expansion",
+          "url": "https://doi.org/10.1016/0370-1573(74)90023-4",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.target_preserving.yang_mills",
+      "source": "bridge.target_preserving_ursell_summation",
+      "target": "problem.yang_mills_mass_gap",
+      "relation": "suggests",
+      "confidence": "literature",
+      "mechanism": "A uniform target-sensitive H-sharp estimate would close a lattice RG input once the separate gauge-specific raw activity producer is supplied; continuum construction remains separate.",
+      "references": [
+        {
+          "label": "A. Jaffe and E. Witten — Quantum Yang-Mills Theory",
+          "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban I",
+          "url": "https://arxiv.org/abs/1108.1335",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "J. Dimock — The Renormalization Group According to Balaban II",
+          "url": "https://arxiv.org/abs/1212.5562",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.gauge.ym_critical_dimension",
+      "source": "domain.gauge_theory",
+      "target": "bridge.yang_mills_critical_dimension",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "Canonical dimensions of the gauge potential and coupling identify four dimensions as the marginal Yang–Mills case.",
+      "references": [
+        {
+          "label": "A. Jaffe and E. Witten — Quantum Yang-Mills Theory",
+          "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
+          "type": "paper",
+          "scope": "claim"
+        }
+      ]
+    },
+    {
+      "id": "edge.ym_critical_dimension.mass_gap",
+      "source": "bridge.yang_mills_critical_dimension",
+      "target": "problem.yang_mills_mass_gap",
+      "relation": "uses",
+      "confidence": "literature",
+      "mechanism": "The Clay problem is specifically four-dimensional, where the dimensionless coupling makes the constructive ultraviolet analysis critical.",
+      "references": [
+        {
+          "label": "A. Jaffe and E. Witten — Quantum Yang-Mills Theory",
+          "url": "https://www.claymath.org/wp-content/uploads/2022/06/yangmills.pdf",
+          "type": "paper",
+          "scope": "claim"
+        },
+        {
+          "label": "Clay Mathematics Institute — Yang-Mills and the Mass Gap",
+          "url": "https://www.claymath.org/millennium/yang-mills-the-maths-gap/",
+          "type": "official",
+          "scope": "claim"
+        }
+      ]
+    }
+  ],
+  "scope": "Small retrieved context before synthesis. Canonical graph unchanged; graph adjacency is not proof."
+}

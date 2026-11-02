@@ -1,0 +1,69 @@
+{
+  "observed_on": "2026-11-02",
+  "scope": "Primary response/PDF metadata only; no foreign body, source archive or corpus redistributed. Dynamic HTML hashes are response receipts, not immutable content addresses.",
+  "pins": [
+    {
+      "url": "https://hexagonmath.org/2610.00510v1",
+      "at": "2026-11-02T01:53:12.352101+00:00",
+      "status": 200,
+      "bytes": 280288,
+      "sha256": "7f0b2d8cac04f322e098f3e7548f5dc564cb220e045b80297e0b48a67d4e08b2",
+      "hash_scope": "HTTP response bytes; no source body retained"
+    },
+    {
+      "url": "https://hexagonmath.org/src/2610.00510v1/files",
+      "at": "2026-11-02T01:53:13.685749+00:00",
+      "status": 200,
+      "bytes": 27904,
+      "sha256": "90f01757c977d92d0e081b6c15d2acd6dc307e70b15d2dd4340233541575bad0",
+      "hash_scope": "HTTP response bytes; no source body retained"
+    },
+    {
+      "url": "https://hexagonmath.org/api/v1/works/2610.00510v1/source?path=README.md",
+      "at": "2026-11-02T01:53:14.434605+00:00",
+      "status": 200,
+      "bytes": 1532,
+      "sha256": "67554ebe6717a1655505317e5e364c29a2f0d0a9dd393fbada892bfe1b189a40",
+      "hash_scope": "HTTP response bytes; no source body retained"
+    },
+    {
+      "url": "https://arxiv.org/abs/2604.16252v2",
+      "at": "2026-11-02T01:53:14.845418+00:00",
+      "status": 200,
+      "bytes": 40689,
+      "sha256": "4e50f853a3014beca6b3d37144749356b3bcb7af54c77f70ac5b9ae126ec6c81",
+      "hash_scope": "HTTP response bytes; no source body retained"
+    },
+    {
+      "url": "https://arxiv.org/html/2604.16252v2",
+      "at": "2026-11-02T01:53:16.190237+00:00",
+      "status": 200,
+      "bytes": 1520293,
+      "sha256": "2d9a1d4eee6d00e9b018c774b6398552a9002188603c8f301d14154aa021e3de",
+      "hash_scope": "HTTP response bytes; no source body retained"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.00510",
+      "at": "2026-11-02T01:53:16.455071+00:00",
+      "status": 200,
+      "bytes": 39923,
+      "sha256": "004e605867a61261b0b3110ab8b4402370ae0b6493cbb7b60b523c1822099bca",
+      "hash_scope": "HTTP response bytes; no source body retained"
+    },
+    {
+      "url": "https://hexagonmath.org/pdf/2610.00510v1",
+      "bytes": 1596900,
+      "sha256": "ed844201649f1e2921e219f01cad360c6c4ddc5e541129d07c981f53256f9299",
+      "pages": 297,
+      "body_retained": false
+    },
+    {
+      "url": "https://api.github.com/repos/pmaronow/3d-ym-torus/commits/def7355",
+      "at": "2026-11-02T01:56:00.319358+00:00",
+      "status": 422,
+      "response_sha256": "1aac8d3428ff9164e40850850456d42da0275582815d89023b1ca30c15a70aea",
+      "message": "No commit found for SHA: def7355",
+      "scope": "Short source-README commit unresolved in the author-note repository; repository attribution of this body commit not authenticated. No source tree/build audited."
+    }
+  ]
+}
