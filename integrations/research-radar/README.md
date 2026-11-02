@@ -1,5 +1,7 @@
 # Research radar
 
+Latest selected-source comparison: [regional perturbations and Wilson defect ratios](evidence/2026-11-02-source-domain-limits/README.md) records two versioned statements, trace/denominator conventions and rejected direct imports into a different conditioned law. No physical hypothesis, proof confidence or manuscript score is promoted.
+
 Historical-version boundary: [corrected conditional interfaces and free-energy scope](evidence/2026-11-02-historical-boundaries/README.md) indexes two older primary versions, preserving withdrawals, distinct reading depths and current application limits. No new publication, review, physical admission or confidence promotion.
 
 Latest source-intake disposition: [analytic Wick hypothesis versus a direct Wilson symbol](evidence/2026-11-02-wick-intake/README.md) indexes a 29 October preprint at selected-statement depth. The exact cosine coefficient test rejects one direct import; no physical-chain admission, new paper, review, score or formal promotion follows.
