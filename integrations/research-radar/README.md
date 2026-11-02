@@ -1,5 +1,7 @@
 # Research radar
 
+Historical-version boundary: [corrected conditional interfaces and free-energy scope](evidence/2026-11-02-historical-boundaries/README.md) indexes two older primary versions, preserving withdrawals, distinct reading depths and current application limits. No new publication, review, physical admission or confidence promotion.
+
 Latest source-intake disposition: [analytic Wick hypothesis versus a direct Wilson symbol](evidence/2026-11-02-wick-intake/README.md) indexes a 29 October preprint at selected-statement depth. The exact cosine coefficient test rejects one direct import; no physical-chain admission, new paper, review, score or formal promotion follows.
 
 Latest physical-source dictionary: [mean, hard-gap and current admission boundary](notes/2026-10-31-physical-mean-admission.md) distinguishes the actual hard uniform-gap statement, background-dependent mean and real Hsharp-current units. The same note now records the conditional source189 reconstruction, complete focused reports and adverse carrier/log-chart findings. Reading depths remain explicit; no physical gap, marked/history theorem, manuscript score or graph promotion.
