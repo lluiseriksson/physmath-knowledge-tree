@@ -44,6 +44,6 @@ The small retrieved graph context contained `domain.quantum_field_theory`, `doma
 
 ## Directed primary refresh
 
-The accompanying 2 November refresh was directed, not exhaustive. The metadata ledger below records HTTP response hashes and statuses at inventory depth; those are not abstract reading, theorem reading, proof audit or a global build. It covers the configured frontier-lab perimeter as well as arXiv, AIRR, ai.viXra and selected public author repositories. This Wick card alone received the selected-statement reading described above. First-preprint dates are kept distinct from index dates, conference dates and product announcements.
+The accompanying 2 November refresh was directed, not exhaustive. The metadata ledger below records HTTP response hashes and statuses at inventory depth; those are not abstract reading, theorem reading, proof audit or a global build. It covers the configured frontier-lab perimeter as well as arXiv, AIRR and selected public author repositories. This Wick card alone received the selected-statement reading described above. First-preprint dates are kept distinct from index dates, conference dates and product announcements.
 
 See [refresh metadata](REFRESH.json) for response metadata and four observed repository heads. Nine locally cached formal dependency heads matched their existing pins; this is revision resolution only, not a dependency source/build audit. No corpus or benchmark tasks were downloaded.
