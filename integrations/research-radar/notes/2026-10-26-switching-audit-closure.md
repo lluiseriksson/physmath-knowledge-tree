@@ -98,7 +98,7 @@ The [Anthropic announcement](https://www.anthropic.com/research/formal-verificat
 was read at introduction/announcement depth; its software specifications do not
 discharge channel-coding proof obligations. The
 [AIRR author catalogue](https://airr.science/authors/lluis-eriksson/),
-[ai.viXra author index](https://www.ai.vixra.org/author/lluis_eriksson),
+[author index](https://airr.science/),
 and public research-repository metadata were refreshed at inventory depth.
 No exhaustive paper sweep, imported proof build, foreign full-text corpus,
 private-repository inventory or score increase is claimed.

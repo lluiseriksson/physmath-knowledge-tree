@@ -42,7 +42,7 @@ those parameters exceed its declared budget. This is an attributed scope
 check, not a new complexity theorem.
 
 The [13-endpoint refresh](../evidence/2026-10-26-learning771/SOURCES770.json)
-also covers Anthropic, DeepMind, arXiv, AIRR, ai.viXra and selected public owner
+also covers Anthropic, DeepMind, arXiv, AIRR and selected public owner
 repositories. All returned200; DeepMind remains atf153efa8fdc078131e214547781d631e2d257daf.
 The existing Anthropic circuit paper is deduplicated against the24October
 source card and branch-lab comparisons; it is not a fresh candidate. No foreign

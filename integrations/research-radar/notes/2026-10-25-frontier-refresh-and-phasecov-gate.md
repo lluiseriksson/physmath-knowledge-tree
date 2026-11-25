@@ -30,7 +30,7 @@ times and reading levels. Metadata coverage is not proof coverage.
 - Anthropic's [FLT announcement](https://www.anthropic.com/research/formalizing-fermats-last-theorem)
   was revisited as methodological context; no formalization build or new FLT
   result is claimed. AIRR catalogue metadata remained unchanged by content hash.
-  The ai.viXra author list was readable through the web reader; a separate
+  The preprint-archive author list was readable through the web reader; a separate
   direct snapshot request returned 406 and is recorded as failed access.
 
 The latest own Davies draft explicitly retains the assumption `c^2<=r` in

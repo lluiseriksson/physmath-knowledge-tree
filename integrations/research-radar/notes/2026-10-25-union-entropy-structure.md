@@ -215,7 +215,7 @@ limits and the external certificate dependency survive any abbreviated use.
   and catalogue access do not mean their proofs were read.
 - [Anthropic Science](https://www.anthropic.com/science), the
   [AIRR author catalogue](https://airr.science/authors/lluis-eriksson/) and
-  [ai.viXra author catalogue](https://www.ai.vixra.org/author/lluis_eriksson)
+  [author catalogue](https://airr.science/)
   were refreshed at catalogue level on 25Oct2026. This directed refresh is
   not an exhaustive sweep or a novelty determination.
 

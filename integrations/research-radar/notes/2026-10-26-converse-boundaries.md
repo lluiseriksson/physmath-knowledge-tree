@@ -105,7 +105,7 @@ counterexample inside the paper's particular Gaussian fading family.
 ## Directed fresh inventory and duplicate-discovery guard
 
 Thirteen primary endpoints were refreshed, including OpenAI/math,
-Anthropic science, DeepMind, arXiv, AIRR, ai.viXra and public owner repos.
+Anthropic science, DeepMind, arXiv, AIRR and public owner repos.
 This is inventory coverage, not reading every paper or proof.
 OpenAI/math remains 1581d4cbdd69a0faf34b2089614fe2a814316a6a.
 DeepMind/formal-conjectures now points to

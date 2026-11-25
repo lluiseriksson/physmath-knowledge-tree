@@ -142,7 +142,7 @@ This knowledge note is not an AIRR deposit receipt or public-paper record.
 The [dated source record](../checks/entropy-families-sources567.json) pins
 current frontier heads, observed surfaces and private-snapshot hashes.
 OpenAI/math and DeepMind/formal-conjectures heads were unchanged in this
-refresh. ai.viXra returned406 and was not read anew. Surface observation
+refresh. The preprint archive returned406 and was not read anew. Surface observation
 does not mean abstracts, statements or proofs were read; the sweep is
 directed, not exhaustive. No foreign full text is distributed here.
 

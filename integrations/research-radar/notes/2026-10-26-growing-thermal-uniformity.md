@@ -193,7 +193,7 @@ review634 is pending; no grade or publication is presumed.
 
 Ten primary metadata/index requests succeeded. OpenAI/math and
 DeepMind/formal-conjectures retained the commits recorded above.
-Anthropic, DeepMind research, AIRR, ai.viXra and the owner's public
+Anthropic, DeepMind research, AIRR and the owner's public
 repository index were refreshed as inventory, not proof coverage.
 Refresh manifest SHA256:
 9483aee624297e0cdc39023e7f86b430a0cbb0e7b0d67738ecc9ff1014e5d844.
@@ -349,7 +349,7 @@ in the actual witness channel. No new graph edge is inferred.
 
 All ten primary metadata/index requests succeeded on26October2026.
 OpenAI/math and DeepMind/formal-conjectures retained the previously pinned
-commits. Anthropic, DeepMind, AIRR, ai.viXra and public owner-repository
+commits. Anthropic, DeepMind, AIRR and public owner-repository
 indexes were inventoried; this is not exhaustive reading or proof coverage.
 The follow-up literature search was directed, not a priority certificate.
 
@@ -500,7 +500,7 @@ Ten primary index/metadata requests again succeeded; this is inventory,
 not exhaustive reading. OpenAI/math retained commit
 1581d4cbdd69a0faf34b2089614fe2a814316a6a and DeepMind/formal-conjectures
 retained039378b7951df701428aa5c6732a94a149a077e1.
-Anthropic, DeepMind research, AIRR, ai.viXra and public owner-repository
+Anthropic, DeepMind research, AIRR and public owner-repository
 indexes were refreshed without copying their corpora into this repository.
 The additional1312.2251v1 PDF was pinned to
 42b6b0715c4571919a259ebefd90747487236b3bb5e57a4a28bc186460564505.
@@ -553,7 +553,7 @@ corrections, not new imported theorems or a certificate of priority.
 
 Eleven current primary index/metadata requests succeeded. OpenAI/math and
 DeepMind/formal-conjectures retained the commits recorded above. Anthropic,
-DeepMind research, AIRR, ai.viXra and owner-public-repository metadata were
+DeepMind research, AIRR and owner-public-repository metadata were
 refreshed; this is inventory, not proof reading or an exhaustive sweep.
 
 A bounded next research move examines the critical-noise regime rather

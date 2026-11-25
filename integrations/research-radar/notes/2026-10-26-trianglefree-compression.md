@@ -133,7 +133,7 @@ hashes and reading scope. OpenAI/math HEAD was unchanged. Four new DeepMind
 catalogue commits were inventoried; a selected AME(4,6) declaration now links an
 external formal proof, but its local `sorry` placeholder is not a checked proof.
 The older mathematical existence result is not a new discovery here. Anthropic,
-AIRR, ai.viXra and one page of public author-repository metadata were inventoried,
+AIRR and one page of public author-repository metadata were inventoried,
 not exhaustively read. The pinned Bollobás–Nikiforov repository's introductory
 theorem statements were read; no build or full proof audit is asserted.
 

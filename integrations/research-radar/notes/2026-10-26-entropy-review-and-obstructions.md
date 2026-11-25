@@ -115,7 +115,7 @@ are not an infinite-dimensional proof or a reproducible campaign claim.
 The [dated observations](../checks/reset-sources572.json) pin the unchanged
 OpenAI/math and DeepMind/formal-conjectures heads, primary surfaces and
 reading scopes. Anthropic, arXiv, AIRR and the first100 public repository
-records were inventoried; ai.viXra returned406 and was not read anew.
+records were inventoried; the preprint archive returned406 and was not read anew.
 The sweep is directed, not exhaustive; no foreign full-text corpus is
 redistributed. Winter1507.07775v6 Lemma2 and its proof were read for the
 finite-system conditional-entropy modulus. Catalano2604.26874v2 was read

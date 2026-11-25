@@ -13,7 +13,7 @@ those edges proves the inequality below.
 
 The [dated source inventory](../checks/local558-sources.json) records hashes,
 versions and reading scopes for a directed26October refresh of OpenAI/math,
-DeepMind/formal-conjectures, Anthropic, arXiv, AIRR, ai.viXra and the first
+DeepMind/formal-conjectures, Anthropic, arXiv, AIRR and the first
 page of the author's public repositories. Both frontier repository heads
 were unchanged from the preceding observation. Inventory is not abstract,
 statement or proof coverage; no exhaustive sweep is claimed.

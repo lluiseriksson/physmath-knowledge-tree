@@ -39,6 +39,6 @@ Both exceed0.0001 and refute these two specific candidates for the required unif
 
 Next attempt should derive a cost-weighted or one-sided global residual envelope before numerical optimization, retaining every moment and finite-family quantifier. Do not publish these unsuccessful fits as a separate paper or transfer a grade from v3.
 
-Primary sources: https://dlmf.nist.gov/10.9.E1 ; https://arxiv.org/abs/1508.00335v7 . Source response hashes, dates and exact reading scope are in METHOD-SOURCES790.json; the directed refresh787 covers primary AI, arXiv, AIRR, aiViXra and owner repositories and is not exhaustive. No external full text is redistributed.
+Primary sources: https://dlmf.nist.gov/10.9.E1 ; https://arxiv.org/abs/1508.00335v7 . Source response hashes, dates and exact reading scope are in METHOD-SOURCES790.json; the directed refresh787 covers primary AI, arXiv, AIRR and owner repositories and is not exhaustive. No external full text is redistributed.
 
 Native own evidence: [manifest](../evidence/2026-10-27-separator787/MANIFEST790.json).

@@ -144,7 +144,7 @@ retaining the factor structure is still needed. No score is assigned.
   `cc2fa401f4ef6f3a648fdacbf6f91a8f5ac59714`: statement file read. Its
   union-closed-set declarations contain `sorry`; no solved theorem is
   inferred from an inventory or a research-solved label.
-- Anthropic FLT announcement (4 September 2026) and ai.viXra author index
+- Anthropic FLT announcement (4 September 2026) and preprint-archive author index
   were checked at announcement/catalogue level only. No new technical
   consequence for this compression target was established from them.
 
