@@ -206,7 +206,7 @@ try {
   for (const file of ['workspace.js', 'evidence-review.js', 'change-review.js', 'lean-target-audit.js', 'research-dossier.js']) {
     await evaluate(moduleWrapper(readFileSync(join(repositoryRoot, 'src/lib', file), 'utf8')));
   }
-  await evaluate(`(() => {\n${appSource(readFileSync(join(repositoryRoot, 'src/dossier-app.js'), 'utf8'))}\n})()`);
+  await evaluate(`(() => {\n${readFileSync(join(repositoryRoot, 'src/lib/first-visit.js'), 'utf8').replace(/^export\s+/gmu, '')}\n${appSource(readFileSync(join(repositoryRoot, 'src/dossier-app.js'), 'utf8'))}\n})()`);
 
   let ready = false;
   for (let attempt = 0; attempt < 120; attempt += 1) {

@@ -38,7 +38,7 @@ test('new local workbench assets resolve and upstream module dependencies stay r
   const appPath = join(root, 'src/workbench-app.js');
   const imports = [...app.matchAll(/import\s+(?:[^'"]+?\s+from\s+)?['"]([^'"]+)['"]/gu)].map((match) => match[1]);
   assert.deepEqual(new Set(imports), new Set([
-    './lib/research-graph.js', './lib/route-planner.js', './lib/workspace.js', './lib/text.js',
+    './lib/research-graph.js', './lib/route-planner.js', './lib/workspace.js', './lib/text.js', './lib/first-visit.js',
   ]));
   for (const specifier of imports) {
     assert.equal(specifier.startsWith('./lib/') && !specifier.includes('..'), true, specifier);

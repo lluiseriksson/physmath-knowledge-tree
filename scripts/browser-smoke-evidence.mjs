@@ -136,7 +136,7 @@ try {
       String(path).includes('reference-registry') ? registry : String(path).includes('nodes/core') ? nodes : edges });
   })()`);
   const model = stripExports(readFileSync(join(repositoryRoot, 'src/lib/evidence-review.js'), 'utf8'));
-  const app = stripImports(readFileSync(join(repositoryRoot, 'src/evidence-app.js'), 'utf8'));
+  const app = readFileSync(join(repositoryRoot, 'src/lib/first-visit.js'), 'utf8').replace(/^export\s+/gmu, '') + '\n' + stripImports(readFileSync(join(repositoryRoot, 'src/evidence-app.js'), 'utf8'));
   await evaluate(`(() => {\n${model}\n${app}\n})()`);
   let ready = false;
   for (let attempt = 0; attempt < 80; attempt += 1) {

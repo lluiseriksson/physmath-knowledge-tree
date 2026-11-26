@@ -102,7 +102,7 @@ try {
     window.fetch = async () => ({ ok: true, status: 200, json: async () => nodes });
   })()`);
   const model = stripExports(readFileSync(join(root, 'src/lib/run-ledger.js'), 'utf8'));
-  const app = stripImports(readFileSync(join(root, 'src/run-ledger-app.js'), 'utf8'));
+  const app = readFileSync(join(root, 'src/lib/first-visit.js'), 'utf8').replace(/^export\s+/gmu, '') + '\n' + stripImports(readFileSync(join(root, 'src/run-ledger-app.js'), 'utf8'));
   await evaluate(`(() => {\n${model}\n${app}\n})()`);
 
   let ready = false;

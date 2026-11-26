@@ -96,7 +96,7 @@ try {
     HTMLAnchorElement.prototype.click = function click() { window.__downloads.push({ download: this.download, href: this.href }); };
   })()`);
   const model = stripExports(stripImports(readFileSync(join(root, 'src/lib/research-capsule.js'), 'utf8')));
-  const app = stripImports(readFileSync(join(root, 'src/capsule-app.js'), 'utf8'));
+  const app = readFileSync(join(root, 'src/lib/first-visit.js'), 'utf8').replace(/^export\s+/gmu, '') + '\n' + stripImports(readFileSync(join(root, 'src/capsule-app.js'), 'utf8'));
   await evaluate(`(() => { ${stubs}\n${model}\n${app} })()`);
   let ready = false;
   for (let attempt = 0; attempt < 100; attempt += 1) { ready = await evaluate("document.querySelector('#capsule-center')?.hidden === false"); if (ready) break; await new Promise((resolve) => setTimeout(resolve, 25)); }

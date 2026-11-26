@@ -175,7 +175,7 @@ try {
   })()`);
 
   const model = stripExports(readFileSync(join(repositoryRoot, 'src/lib/lean-target-audit.js'), 'utf8'));
-  const app = stripImports(readFileSync(join(repositoryRoot, 'src/formalization-app.js'), 'utf8'));
+  const app = readFileSync(join(repositoryRoot, 'src/lib/first-visit.js'), 'utf8').replace(/^export\s+/gmu, '') + '\n' + stripImports(readFileSync(join(repositoryRoot, 'src/formalization-app.js'), 'utf8'));
   await evaluate(`(() => {\n${model}\n${app}\n})()`);
 
   let ready = false;

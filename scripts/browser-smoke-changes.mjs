@@ -204,7 +204,7 @@ try {
       String(path).endsWith('edges.json') ? edges : String(path).includes('research_moves') ? moves : collections });
   })()`);
   const model = stripExports(readFileSync(join(repositoryRoot, 'src/lib/change-review.js'), 'utf8'));
-  const app = stripImports(readFileSync(join(repositoryRoot, 'src/change-review-app.js'), 'utf8'));
+  const app = readFileSync(join(repositoryRoot, 'src/lib/first-visit.js'), 'utf8').replace(/^export\s+/gmu, '') + '\n' + stripImports(readFileSync(join(repositoryRoot, 'src/change-review-app.js'), 'utf8'));
   await evaluate(`(() => {\n${model}\n${app}\n})()`);
 
   let ready = false;

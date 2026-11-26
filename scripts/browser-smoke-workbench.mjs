@@ -250,7 +250,7 @@ try {
   `;
   await evaluate(prelude);
   const workspaceSource = stripExports(readFileSync(join(filesRoot, 'src/lib/workspace.js'), 'utf8'));
-  const appSource = stripImports(readFileSync(join(filesRoot, 'src/workbench-app.js'), 'utf8'));
+  const appSource = readFileSync(join(filesRoot, 'src/lib/first-visit.js'), 'utf8').replace(/^export\s+/gmu, '') + '\n' + stripImports(readFileSync(join(filesRoot, 'src/workbench-app.js'), 'utf8'));
   await evaluate(`(() => {\n${dependencyStubs}\n${workspaceSource}\n${appSource}\n})()`);
 
   let ready = false;

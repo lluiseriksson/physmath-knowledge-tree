@@ -47,6 +47,7 @@ const SHELL = [
   './src/lib/research-dossier.js',
   './src/lib/run-ledger.js',
   './src/lib/research-capsule.js',
+  './src/lib/first-visit.js',
   './src/lib/research-i18n.js',
   './src/lib/route-planner.js',
   './src/lib/route-bundle.js',
