@@ -1,3 +1,4 @@
+import { firstVisitLanguage } from './lib/first-visit.js';
 import {
   CHANGE_REVIEW_STORAGE_KEY,
   DECISION_STATUSES,
@@ -185,7 +186,7 @@ function saveSetting(key, value) {
 function detectLanguage() {
   const saved = readSetting('language', '');
   if (saved === 'en' || saved === 'es') return saved;
-  return navigator.language?.toLowerCase().startsWith('es') ? 'es' : 'en';
+  return firstVisitLanguage();
 }
 function t(key, variables = {}) {
   let value = STRINGS[state.language]?.[key] ?? STRINGS.en[key] ?? key;

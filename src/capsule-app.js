@@ -1,3 +1,4 @@
+import { firstVisitLanguage } from './lib/first-visit.js';
 import {
   buildResearchCapsule,
   importResearchCapsule,
@@ -93,7 +94,7 @@ const MESSAGES = {
 };
 
 const state = {
-  language: readSetting('language', navigator.language?.toLowerCase().startsWith('es') ? 'es' : 'en'),
+  language: readSetting('language', firstVisitLanguage()),
   theme: readSetting('theme', 'system'), nodes: [], validNodeIds: new Set(), dossier: null,
   ledger: null, selected: new Set(), capsule: null,
 };

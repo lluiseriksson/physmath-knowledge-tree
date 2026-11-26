@@ -1,3 +1,4 @@
+import { firstVisitLanguage } from './lib/first-visit.js';
 import { connectedNeighborhood, indexById, searchNodes } from './lib/research-graph.js';
 import { CONFIDENCE_LEVELS, planResearchRoute, summarizeRouteEvidence } from './lib/route-planner.js';
 import {
@@ -321,7 +322,7 @@ const ui = {
 };
 
 const state = {
-  language: readPreference('language', navigator.language?.toLowerCase().startsWith('es') ? 'es' : 'en'),
+  language: readPreference('language', firstVisitLanguage()),
   theme: readPreference('theme', 'system'),
   nodes: [], edges: [], nodeById: new Map(), validNodeIds: new Set(), library: null, storage: browserStorage(),
   neighborhoodComparison: null, routes: null, notesTimer: null,

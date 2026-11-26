@@ -1,3 +1,4 @@
+import { firstVisitLanguage } from './lib/first-visit.js';
 import { createGraphSnapshot, diffGraphSnapshots, loadChangeReviewState } from './lib/change-review.js';
 import { loadReviewLedger, normalizeReferenceRegistry } from './lib/evidence-review.js';
 import { loadLeanAuditLedger, normalizeLeanCatalog } from './lib/lean-target-audit.js';
@@ -146,7 +147,7 @@ const ui = {
 };
 
 const state = {
-  language: readSetting('language', navigator.language?.toLowerCase().startsWith('es') ? 'es' : 'en'),
+  language: readSetting('language', firstVisitLanguage()),
   theme: readSetting('theme', 'system'), index: null, nodes: [], edges: [], moves: [], collections: [], registry: null,
   currentSnapshot: null, workspaceLibrary: null, evidenceLedger: null, leanCatalog: null, leanLedger: null,
   changeReview: null, dossier: null, renderToken: 0,

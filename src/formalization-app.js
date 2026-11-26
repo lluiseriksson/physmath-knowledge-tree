@@ -1,3 +1,4 @@
+import { firstVisitLanguage } from './lib/first-visit.js';
 import {
   LEAN_AUDIT_STATUSES,
   LEAN_ITEM_TYPES,
@@ -156,7 +157,7 @@ const ui = {
 };
 
 const state = {
-  language: readSetting('language', navigator.language?.toLowerCase().startsWith('es') ? 'es' : 'en'),
+  language: readSetting('language', firstVisitLanguage()),
   theme: readSetting('theme', 'system'), catalog: null, validItemIds: new Set(), ledger: null,
   worklist: [], visible: [], selected: new Set(), activeItemId: '', probe: '',
 };

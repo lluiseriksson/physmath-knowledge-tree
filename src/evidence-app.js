@@ -1,3 +1,4 @@
+import { firstVisitLanguage } from './lib/first-visit.js';
 import {
   IDENTIFIER_KINDS,
   REVIEW_STATUSES,
@@ -190,7 +191,7 @@ const state = {
 function detectLanguage() {
   const saved = readSetting('language', '');
   if (saved === 'en' || saved === 'es') return saved;
-  return navigator.language?.toLowerCase().startsWith('es') ? 'es' : 'en';
+  return firstVisitLanguage();
 }
 function readSetting(key, fallback) {
   try { return localStorage.getItem(`physmath.evidence.${key}`) ?? fallback; } catch { return fallback; }

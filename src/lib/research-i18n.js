@@ -1,3 +1,4 @@
+import { firstVisitLanguage } from './first-visit.js';
 export const researchMessages = {
   en: {
     'nav.skip': 'Skip to the research graph',
@@ -264,7 +265,7 @@ export function detectLanguage() {
   } catch {
     // Storage can be unavailable in strict privacy modes.
   }
-  return navigator.language?.toLowerCase().startsWith('es') ? 'es' : 'en';
+  return firstVisitLanguage();
 }
 
 export function t(language, key, variables = {}) {

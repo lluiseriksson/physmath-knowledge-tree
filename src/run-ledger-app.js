@@ -1,3 +1,4 @@
+import { firstVisitLanguage } from './lib/first-visit.js';
 import {
   buildRunPacket,
   createEmptyRunLedger,
@@ -119,7 +120,7 @@ const MESSAGES = {
 };
 
 const state = {
-  language: readSetting('language', navigator.language?.toLowerCase().startsWith('es') ? 'es' : 'en'),
+  language: readSetting('language', firstVisitLanguage()),
   theme: readSetting('theme', 'system'), nodes: [], nodeById: new Map(), validNodeIds: new Set(),
   ledger: null, visible: [], selected: new Set(), editingId: '', detailId: '',
 };
